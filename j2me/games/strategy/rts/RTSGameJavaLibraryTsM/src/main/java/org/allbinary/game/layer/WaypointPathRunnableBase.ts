@@ -68,7 +68,8 @@ export class WaypointPathRunnableBase
 
     public setRunning(isRunning: boolean){
     //var isRunning = isRunning
-this.runningP= isRunning
+this.runningP= isRunning;
+    
 }
 
 
@@ -81,8 +82,10 @@ this.runningP= isRunning
 
     public setTargetLayer(waypointLayer: PathFindingLayerInterface){
     //var waypointLayer = waypointLayer
-this.targetPathFindingLayer= waypointLayer
-this.setPriority()
+this.targetPathFindingLayer= waypointLayer;
+    
+this.setPriority();
+    
 }
 
 
@@ -91,12 +94,14 @@ this.setPriority()
     var pathFindingLayer: AllBinaryLayer = this.pathFindingLayer as AllBinaryLayer;
         
         
-
+;
+    
 
     var targetLayer: AllBinaryLayer = this.targetPathFindingLayer as AllBinaryLayer;
         
         
-
+;
+    
 
                         if(targetLayer != 
                                     null
@@ -107,13 +112,16 @@ this.setPriority()
     var distance: number = layerDistanceUtil!.getDistance(targetLayer, pathFindingLayer)!;
         
         
-
+;
+    
 
     var distanceCategory: number = distance /70;
         
         
-
-this.priorityP= distanceCategory
+;
+    
+this.priorityP= distanceCategory;
+    
 
                                     }
                                 
@@ -132,7 +140,8 @@ this.priorityP= distanceCategory
 
     public setUnitLayer(unitLayer: PathFindingLayerInterface){
 var unitLayer = unitLayer
-this.pathFindingLayer= unitLayer
+this.pathFindingLayer= unitLayer;
+    
 }
 
 

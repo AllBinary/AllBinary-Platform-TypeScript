@@ -57,14 +57,17 @@ export class CategoryTag extends TableTag {
 public constructor (){
 
             super();
-            this.setTagHelperFactory(CategoryHelperFactory())
-this.setTagRequestHelperFactory(CategoryRequestHelperFactory())
+            this.setTagHelperFactory(CategoryHelperFactory());
+    
+this.setTagRequestHelperFactory(CategoryRequestHelperFactory());
+    
 }
 
 
     public setXsl(value: string){
 var value = value
-this.xsl= value
+this.xsl= value;
+    
 }
 
 
@@ -78,49 +81,61 @@ this.xsl= value
                             getInstance(this.getPropertiesHashMap(), this.pageContext)!;
         
         
+;
+    
 
-
-    var helperClass: KClass<*> = anyType!::class!;
+    var helperClass: Function = anyType!constructor!;
         
         
-
+;
+    
 
     var method: Method = helperClass!.getMethod("viewCategory", 
                             null)!;
         
         
-
+;
+    
 
     var result: string = method.invoke(anyType, 
-                            null) as String;
-        
-        
+                            null);
 
+                         as String;
+        
+        
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
-} catch(e: LicensingException)
+
+                //: 
+} catch(e) 
             {
 
 
 
                             throw e
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
 
     var error: string = "Failed to view a Category";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "viewCategory()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "viewCategory()", e);
+    
 
                                     }
                                 
@@ -145,49 +160,61 @@ this.xsl= value
                             getInstance(this.getPropertiesHashMap(), this.pageContext)!;
         
         
+;
+    
 
-
-    var helperClass: KClass<*> = anyType!::class!;
+    var helperClass: Function = anyType!constructor!;
         
         
-
+;
+    
 
     var method: Method = helperClass!.getMethod("viewCategories", 
                             null)!;
         
         
-
+;
+    
 
     var result: string = method.invoke(anyType, 
-                            null) as String;
-        
-        
+                            null);
 
+                         as String;
+        
+        
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
-} catch(e: LicensingException)
+
+                //: 
+} catch(e) 
             {
 
 
 
                             throw e
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
 
     var error: string = "Failed to view a Categories";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "viewCategories()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "viewCategories()", e);
+    
 
                                     }
                                 
@@ -217,7 +244,8 @@ this.xsl= value
                                 )
                         
                                     {
-                                    this.getPropertiesHashMap()!.put(TransformInfoData.getInstance()!.TEMPLATEFILENAME, this.xsl)
+                                    this.getPropertiesHashMap()!.put(TransformInfoData.getInstance()!.TEMPLATEFILENAME, this.xsl);
+    
 
                         if(this.getCommand()!.compareTo(CategoryData.getInstance()!.VIEW) == 0)
                         
@@ -226,12 +254,14 @@ this.xsl= value
     var output: string = this.viewCategory()!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGEXTRAOUTPUT))
                         
                                     {
-                                    pageContext!.getOut()!.print(output)
+                                    pageContext!.getOut()!.print(output);
+    
 
                                     }
                                 
@@ -246,12 +276,14 @@ this.xsl= value
     var output: string = this.viewCategories()!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGEXTRAOUTPUT))
                         
                                     {
-                                    pageContext!.getOut()!.print(output)
+                                    pageContext!.getOut()!.print(output);
+    
 
                                     }
                                 
@@ -264,6 +296,8 @@ this.xsl= value
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.doStartTag();
+
+                        ;
     
 
                         }
@@ -280,9 +314,12 @@ this.xsl= value
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return SKIP_BODY;
     
-} catch(e: LicensingException)
+
+                //: 
+} catch(e) 
             {
-AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e);
+    
 
 
 
@@ -290,9 +327,12 @@ AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
                         return SKIP_BODY;
     
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
-AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
+    
 
 
 

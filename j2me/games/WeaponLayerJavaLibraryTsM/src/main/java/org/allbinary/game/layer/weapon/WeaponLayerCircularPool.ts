@@ -51,12 +51,17 @@ var otherAngle = otherAngle
 var weaponProperties = weaponProperties
 var scoreable = scoreable
 
-    var weaponLayer: WeaponLayer = super.getNextInstance() as WeaponLayer;
-        
-        
+    var weaponLayer: WeaponLayer = super.getNextInstance();
 
-weaponLayer!.init(x, y, z)
-weaponLayer!.init(sourceLayerInterface, angle, otherAngle, weaponProperties, scoreable)
+                         as WeaponLayer;
+        
+        
+;
+    
+weaponLayer!.init(x, y, z);
+    
+weaponLayer!.init(sourceLayerInterface, angle, otherAngle, weaponProperties, scoreable);
+    
 
 
 

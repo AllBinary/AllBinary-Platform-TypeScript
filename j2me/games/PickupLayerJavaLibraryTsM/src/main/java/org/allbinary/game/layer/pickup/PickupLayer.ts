@@ -84,9 +84,12 @@ public constructor (name: string, remoteInfo: RemoteInfo, viewPosition: ViewPosi
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setCollidableInferface(CollidableAlwaysPickupNeverCollideBehaviorFactory.getInstance())
-this.setLayerWidth(10)
-this.setLayerHeight(10)
+this.setCollidableInferface(CollidableAlwaysPickupNeverCollideBehaviorFactory.getInstance());
+    
+this.setLayerWidth(10);
+    
+this.setLayerHeight(10);
+    
 }
 
 public constructor (name: string, remoteInfo: RemoteInfo, total: number, pickedUpLayerInterfaceFactoryInterface: PickedUpLayerInterfaceFactoryInterface, animationInterface: Animation, rectangle: Rectangle, viewPosition: ViewPosition)                        
@@ -105,10 +108,14 @@ public constructor (name: string, remoteInfo: RemoteInfo, total: number, pickedU
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setCollidableInferface(CollidableAlwaysPickupNeverCollideBehaviorFactory.getInstance())
-this.setLayerWidth(10)
-this.setLayerHeight(10)
-this.init(pickedUpLayerInterfaceFactoryInterface, animationInterface)
+this.setCollidableInferface(CollidableAlwaysPickupNeverCollideBehaviorFactory.getInstance());
+    
+this.setLayerWidth(10);
+    
+this.setLayerHeight(10);
+    
+this.init(pickedUpLayerInterfaceFactoryInterface, animationInterface);
+    
 }
 
 public constructor (name: string, viewPosition: ViewPosition)                        
@@ -145,9 +152,12 @@ public constructor (name: string, total: number, pickedUpLayerInterfaceFactoryIn
     public init(pickedUpLayerInterfaceFactoryInterface: PickedUpLayerInterfaceFactoryInterface, animationInterface: Animation){
     //var pickedUpLayerInterfaceFactoryInterface = pickedUpLayerInterfaceFactoryInterface
     //var animationInterface = animationInterface
-this.pickedUpLayerInterfaceFactoryInterface= pickedUpLayerInterfaceFactoryInterface
-this.animationInterface= animationInterface
-this.setDestroyed(false)
+this.pickedUpLayerInterfaceFactoryInterface= pickedUpLayerInterfaceFactoryInterface;
+    
+this.animationInterface= animationInterface;
+    
+this.setDestroyed(false);
+    
 }
 
 
@@ -155,7 +165,8 @@ this.setDestroyed(false)
 var x = x
 var y = y
 var z = z
-this.setPosition(x, y, z)
+this.setPosition(x, y, z);
+    
 }
 
 
@@ -165,18 +176,22 @@ var graphics = graphics
     var viewPosition: ViewPosition = this.getViewPosition()!;
         
         
-
+;
+    
 
     var viewX: number = viewPosition!.getX()!;
         
         
-
+;
+    
 
     var viewY: number = viewPosition!.getY()!;
         
         
-
-this.animationInterface!.paint(graphics, viewX, viewY)
+;
+    
+this.animationInterface!.paint(graphics, viewX, viewY);
+    
 }
 
 
@@ -186,18 +201,22 @@ var graphics = graphics
     var viewPosition: ViewPosition = this.getViewPosition()!;
         
         
-
+;
+    
 
     var viewX: number = viewPosition!.getX()!;
         
         
-
+;
+    
 
     var viewY: number = viewPosition!.getY()!;
         
         
-
-this.animationInterface!.paintThreed(graphics, viewX, viewY, 3)
+;
+    
+this.animationInterface!.paintThreed(graphics, viewX, viewY, 3);
+    
 }
 
 
@@ -212,7 +231,8 @@ this.animationInterface!.paintThreed(graphics, viewX, viewY, 3)
 
 
     public setPickedUp(){
-this.setDestroyed(true)
+this.setDestroyed(true);
+    
 }
 
 
@@ -228,12 +248,14 @@ this.setDestroyed(true)
 
     public setDestroyed(destroyed: boolean){
 var destroyed = destroyed
-this.destroyed= destroyed
+this.destroyed= destroyed;
+    
 
                         if(this.isDestroyed())
                         
                                     {
-                                    DestroyedLayerProcessor.getInstance()!.add(this)
+                                    DestroyedLayerProcessor.getInstance()!.add(this);
+    
 
                                     }
                                 
@@ -265,8 +287,10 @@ var gl = gl
     var openGLSurfaceChangedInterface: OpenGLSurfaceChangedInterface = this.animationInterface as OpenGLSurfaceChangedInterface;
         
         
-
-openGLSurfaceChangedInterface!.set(gl)
+;
+    
+openGLSurfaceChangedInterface!.set(gl);
+    
 }
 
 

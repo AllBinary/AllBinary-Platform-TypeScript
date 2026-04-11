@@ -18,10 +18,13 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { awt } from "../../../../../../java/awt.js";
 
     
-import { Vector } from "../../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../../java/util/Vector.js";
 
     
 import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
@@ -52,12 +55,14 @@ public constructor (motionRectangles: MotionRectangles)
     var vector: Vector = motionRectangles!.getVector()!;
         
         
-
+;
+    
 
     var size: number = vector.length!;
         
         
-
+;
+    
 
 
 
@@ -69,14 +74,19 @@ public constructor (motionRectangles: MotionRectangles)
 index < size; index++)
         {
 
-    var motionRectangle: MotionRectangle = vector.get(index) as MotionRectangle;
-        
-        
+    var motionRectangle: MotionRectangle = vector.get(index);
 
-vector.add(motionRectangle!.clone())
+                         as MotionRectangle;
+        
+        
+;
+    
+vector.add(motionRectangle!.clone());
+    
 }
 
-consolidateMotionRectangles()
+consolidateMotionRectangles();
+    
 }
 
 
@@ -85,18 +95,22 @@ consolidateMotionRectangles()
     var vector: Vector = this.getVector()!;
         
         
-
-logUtil!.put("Start - Size Before: " +vector.length, this, "consolidateMotionRectangleConstraints")
+;
+    
+logUtil!.put("Start - Size Before: " +vector.length, this, "consolidateMotionRectangleConstraints");
+    
 
     var removeVector: Vector = new Vector();
         
         
-
+;
+    
 
     var size: number = vector.length!;
         
         
-
+;
+    
 
 
 
@@ -108,10 +122,13 @@ logUtil!.put("Start - Size Before: " +vector.length, this, "consolidateMotionRec
 index < size; index++)
         {
 
-    var motionRectangle: MotionRectangle = vector.get(index) as MotionRectangle;
-        
-        
+    var motionRectangle: MotionRectangle = vector.get(index);
 
+                         as MotionRectangle;
+        
+        
+;
+    
 
 
 
@@ -123,45 +140,55 @@ index < size; index++)
 i < vector.length; i++)
         {
 
-    var motionRectangle2: MotionRectangle = vector.get(i) as MotionRectangle;
-        
-        
+    var motionRectangle2: MotionRectangle = vector.get(i);
 
+                         as MotionRectangle;
+        
+        
+;
+    
 
     var rectangle: Rectangle = motionRectangle!.getRectangle()!;
         
         
-
+;
+    
 
     var rectangle2: Rectangle = motionRectangle2!.getRectangle()!;
         
         
-
+;
+    
 
     var x2: number = rectangle.x +rectangle.width;
         
         
-
+;
+    
 
     var y2: number = rectangle.y +rectangle.height;
         
         
-
+;
+    
 
     var rightX: number = rectangle2.x +rectangle2.width;
         
         
-
+;
+    
 
     var bottomY: number = rectangle2.y +rectangle2.height;
         
         
-
+;
+    
 
                         if(rectangle.x <= rectangle2.x && rectangle.y <= rectangle2.y && x2 >= rightX && y2 >= bottomY)
                         
                                     {
-                                    removeVector!.add(motionRectangle2)
+                                    removeVector!.add(motionRectangle2);
+    
 
                                     }
                                 
@@ -169,7 +196,8 @@ i < vector.length; i++)
 
 }
 
-this.remove(removeVector)
+this.remove(removeVector);
+    
 }
 
 
@@ -179,12 +207,14 @@ var removeVector = removeVector
     var vector: Vector = this.getVector()!;
         
         
-
+;
+    
 
     var size: number = removeVector!.length!;
         
         
-
+;
+    
 
 
 
@@ -195,7 +225,8 @@ var removeVector = removeVector
         
 index < size; index++)
         {
-vector.remove(removeVector!.get(index))
+vector.remove(removeVector!.get(index));
+    
 }
 
 }

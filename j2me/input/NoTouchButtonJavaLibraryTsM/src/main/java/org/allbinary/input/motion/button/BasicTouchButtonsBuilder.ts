@@ -55,26 +55,33 @@ export class BasicTouchButtonsBuilder extends BaseTouchInput {
     public getList(): BasicArrayList{
 
         try {
-            logUtil!.put(commonStrings!.START, this, commonStrings!.GET_LIST)
+            logUtil!.put(commonStrings!.START, this, commonStrings!.GET_LIST);
+    
 
     var list: BasicArrayList = new BasicArrayList();
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return list;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_LIST, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_LIST, e);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return BasicArrayListUtil.getInstance()!.getImmutableInstance();
+
+                        ;
     
 }
 

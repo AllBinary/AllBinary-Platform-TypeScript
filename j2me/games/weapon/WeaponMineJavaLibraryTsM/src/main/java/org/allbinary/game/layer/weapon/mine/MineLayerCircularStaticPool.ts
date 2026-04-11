@@ -38,8 +38,10 @@ export class MineLayerCircularStaticPool
             
     public static init(viewPositionFactoryInterface: ViewPositionFactoryInterface){
 var viewPositionFactoryInterface = viewPositionFactoryInterface
-MineCountedPickedUpLayerInterfaceFactory.init()
-WEAPON_LAYER_CIRCULAR_STATIC_POOL.init(MineLayerFactory(viewPositionFactoryInterface), 20)
+MineCountedPickedUpLayerInterfaceFactory.init();
+    
+WEAPON_LAYER_CIRCULAR_STATIC_POOL.init(MineLayerFactory(viewPositionFactoryInterface), 20);
+    
 }
 
 

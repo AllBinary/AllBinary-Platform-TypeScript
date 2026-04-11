@@ -63,8 +63,10 @@ public constructor (name: string){
 
             super();
             var name = name
-this.propertyName= name
-this.cssPropertyValues= CssPropertyValues()
+this.propertyName= name;
+    
+this.cssPropertyValues= CssPropertyValues();
+    
 }
 
 public constructor (node: Node){
@@ -75,13 +77,16 @@ public constructor (node: Node){
     var propertyNode: Node = DomSearchHelper.getNode(DomData.VALUE, node.getChildNodes())!;
         
         
-
-this.propertyName= DomNodeHelper.getTextNodeValue(propertyNode)
+;
+    
+this.propertyName= DomNodeHelper.getTextNodeValue(propertyNode);
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.STYLE))
                         
                                     {
-                                    logUtil!.put("Name: " +this.getName(), this, "CssProperty()")
+                                    logUtil!.put("Name: " +this.getName(), this, "CssProperty()");
+    
 
                                     }
                                 
@@ -89,8 +94,10 @@ this.propertyName= DomNodeHelper.getTextNodeValue(propertyNode)
     var propertyValuesNode: Node = DomSearchHelper.getNode(CssPropertyData.getInstance()!.VALUES, node.getChildNodes())!;
         
         
-
-this.cssPropertyValues= CssPropertyValues(propertyValuesNode)
+;
+    
+this.cssPropertyValues= CssPropertyValues(propertyValuesNode);
+    
 }
 
 
@@ -104,13 +111,15 @@ this.cssPropertyValues= CssPropertyValues(propertyValuesNode)
 }
 
 
-    public toHashMap(): HashMap<Any, Any>{
+    public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
         
         
-
-hashMap!.put(CssPropertyData.getInstance()!.NAME, this.propertyName)
+;
+    
+hashMap!.put(CssPropertyData.getInstance()!.NAME, this.propertyName);
+    
 
 
 
@@ -125,15 +134,17 @@ hashMap!.put(CssPropertyData.getInstance()!.NAME, this.propertyName)
     public toXmlNode(document: Document): Node{
 var document = document
 
-    var hashMap: HashMap<Any, Any> = this.toHashMap()!;
+    var hashMap: HashMap<any, any> = this.toHashMap()!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("CssView HashMap: " +hashMap!.toString(), this, "toXmlNode()")
+                                    logUtil!.put("CssView HashMap: " +hashMap!.toString(), this, "toXmlNode()");
+    
 
                                     }
                                 
@@ -141,8 +152,10 @@ var document = document
     var node: Node = ModDomHelper.createNameValueNodes(document, CssPropertyData.getInstance()!.NAME, this.propertyName)!;
         
         
-
-node.appendChild(this.cssPropertyValues!.toXmlNode(document))
+;
+    
+node.appendChild(this.cssPropertyValues!.toXmlNode(document));
+    
 
 
 

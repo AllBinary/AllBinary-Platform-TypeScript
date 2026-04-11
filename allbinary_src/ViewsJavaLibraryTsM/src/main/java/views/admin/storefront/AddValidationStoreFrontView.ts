@@ -83,12 +83,17 @@ public constructor (transformInfoInterface: TransformInfoInterface)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.newStoreFrontInterface= StoreFront(this.getPageContext()!.getRequest() as HttpServletRequest) as StoreFrontInterface
+this.newStoreFrontInterface= StoreFront(this.getPageContext()!.getRequest();
+
+                         as HttpServletRequest) as StoreFrontInterface;
+    
 
                         if(this.newStoreFrontInterface!.getName() == 
                                     null
                                 )
-                        this.newStoreFrontInterface!.setName(this.getWeblisketSession()!.getStoreName())
+                        this.newStoreFrontInterface!.setName(this.getWeblisketSession()!.getStoreName());
+
+                        
 }
 
 
@@ -99,12 +104,14 @@ this.newStoreFrontInterface= StoreFront(this.getPageContext()!.getRequest() as H
     var valid: Boolean = Boolean.TRUE;
         
         
-
+;
+    
 
                         if(this.newStoreFrontInterface!.isValid() == Boolean.FALSE)
                         
                                     {
-                                    valid= Boolean.FALSE
+                                    valid= Boolean.FALSE;
+    
 
                                     }
                                 
@@ -114,7 +121,8 @@ this.newStoreFrontInterface= StoreFront(this.getPageContext()!.getRequest() as H
                                 )
                         
                                     {
-                                    valid= Boolean.FALSE
+                                    valid= Boolean.FALSE;
+    
 
                                     }
                                 
@@ -123,7 +131,8 @@ this.newStoreFrontInterface= StoreFront(this.getPageContext()!.getRequest() as H
                             isFile())
                         
                                     {
-                                    valid= Boolean.FALSE
+                                    valid= Boolean.FALSE;
+    
 
                                     }
                                 
@@ -133,13 +142,16 @@ this.newStoreFrontInterface= StoreFront(this.getPageContext()!.getRequest() as H
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return valid;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("Failed to validate form", this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put("Failed to validate form", this, commonStrings!.IS_VALID, e);
+    
 
                                     }
                                 
@@ -161,15 +173,21 @@ this.newStoreFrontInterface= StoreFront(this.getPageContext()!.getRequest() as H
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(URLGLOBALS.getMainPath())
-stringBuffer!.append(FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH)
-stringBuffer!.append(this.newStoreFrontInterface!.getName())
+;
+    
+stringBuffer!.append(URLGLOBALS.getMainPath());
+    
+stringBuffer!.append(FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH);
+    
+stringBuffer!.append(this.newStoreFrontInterface!.getName());
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 
@@ -181,12 +199,14 @@ stringBuffer!.append(this.newStoreFrontInterface!.getName())
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
                         if(this.newStoreFrontInterface!.isValid() == Boolean.FALSE)
                         
                                     {
-                                    stringBuffer!.append(this.newStoreFrontInterface!.validationInfo())
+                                    stringBuffer!.append(this.newStoreFrontInterface!.validationInfo());
+    
 
                                     }
                                 
@@ -196,7 +216,8 @@ stringBuffer!.append(this.newStoreFrontInterface!.getName())
                                 )
                         
                                     {
-                                    stringBuffer!.append("Store name already used<br/>")
+                                    stringBuffer!.append("Store name already used<br/>");
+    
 
                                     }
                                 
@@ -205,7 +226,8 @@ stringBuffer!.append(this.newStoreFrontInterface!.getName())
                             isFile())
                         
                                     {
-                                    stringBuffer!.append("Store name clashes with template name<br/>")
+                                    stringBuffer!.append("Store name clashes with template name<br/>");
+    
 
                                     }
                                 
@@ -214,14 +236,19 @@ stringBuffer!.append(this.newStoreFrontInterface!.getName())
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e)
+                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e);
+    
 
                                     }
                                 
@@ -265,6 +292,8 @@ var document = document
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return views.ValidationOnlyTempUtil.getInstance()!.view(this);
+
+                        ;
     
 }
 

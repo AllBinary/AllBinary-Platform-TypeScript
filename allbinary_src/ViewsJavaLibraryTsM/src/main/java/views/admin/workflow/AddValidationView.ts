@@ -70,7 +70,8 @@ public constructor (transformInfoInterface: TransformInfoInterface)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.workFlowInterface= NewWorkFlowFactory.getInstance()!.getInstance(abeClientInformation, this.getPropertiesHashMap(), this.getPageContext())
+this.workFlowInterface= NewWorkFlowFactory.getInstance()!.getInstance(abeClientInformation, this.getPropertiesHashMap(), this.getPageContext());
+    
 }
 
 
@@ -83,13 +84,16 @@ this.workFlowInterface= NewWorkFlowFactory.getInstance()!.getInstance(abeClientI
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return Boolean.TRUE;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("Failed to validate", this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put("Failed to validate", this, commonStrings!.IS_VALID, e);
+    
 
                                     }
                                 
@@ -111,7 +115,8 @@ this.workFlowInterface= NewWorkFlowFactory.getInstance()!.getInstance(abeClientI
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
                         if(WorkFlowEntityFactory.getInstance()!.create2()!.get(this.workFlowInterface!.getName(), this.getTransformInfoInterface()!.getStoreName()) != 
                                     null
@@ -122,11 +127,13 @@ this.workFlowInterface= NewWorkFlowFactory.getInstance()!.getInstance(abeClientI
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Workflow already exist", this, "validationInfo()")
+                                    logUtil!.put("Workflow already exist", this, "validationInfo()");
+    
 
                                     }
                                 
-stringBuffer!.append("The WorkFlow name you selected is already in use.<br/>  Please select another Name.<br />")
+stringBuffer!.append("The WorkFlow name you selected is already in use.<br/>  Please select another Name.<br />");
+    
 
                                     }
                                 
@@ -135,14 +142,19 @@ stringBuffer!.append("The WorkFlow name you selected is already in use.<br/>  Pl
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e)
+                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e);
+    
 
                                     }
                                 

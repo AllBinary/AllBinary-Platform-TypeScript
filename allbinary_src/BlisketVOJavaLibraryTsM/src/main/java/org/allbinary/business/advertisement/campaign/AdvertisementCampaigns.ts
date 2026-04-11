@@ -18,7 +18,10 @@
 
 
 
-import { Vector } from "../../../../../java/util/Vector.js";
+            import Vector from "@ohos.util.Vector";
+        
+
+//import { Vector } from "../../../../../java/util/Vector.js";
 
     
 import { AdvertisementInterface } from "../../../../../org/allbinary/business/advertisement/AdvertisementInterface.js";
@@ -42,13 +45,15 @@ public constructor (vector: Vector){
 
             super();
             var vector = vector
-this.advertisementsVector= advertisementsVector
+this.advertisementsVector= advertisementsVector;
+    
 }
 
 
     public add(advertisementInterface: AdvertisementInterface){
 var advertisementInterface = advertisementInterface
-this.advertisementsVector!.add(advertisementInterface)
+this.advertisementsVector!.add(advertisementInterface);
+    
 }
 
 
@@ -58,7 +63,9 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.advertisementsVector!.get(index) as AdvertisementInterface;
+                        return this.advertisementsVector!.get(index);
+
+                         as AdvertisementInterface;
     
 }
 
@@ -69,6 +76,8 @@ var index = index
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.advertisementsVector!.length;
+
+                        ;
     
 }
 

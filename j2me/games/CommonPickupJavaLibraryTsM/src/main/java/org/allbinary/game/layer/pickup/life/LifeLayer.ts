@@ -62,7 +62,8 @@ var graphics = graphics
 
     public visit(lifeInterface: Life){
 var lifeInterface = lifeInterface
-lifeInterface!.add(1.toShort())
+lifeInterface!.add(1.toShort());
+    
 }
 
 

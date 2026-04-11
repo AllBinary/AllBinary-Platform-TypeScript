@@ -43,24 +43,29 @@ export class InitDbHelperFactory
     //var abeClientInformation = abeClientInformation
 var databaseConnectionInfoInterface = databaseConnectionInfoInterface
 
-    var params: any = {}[] = new Array(1);
+    var params: any[] = new Array(1);
         
         
+;
+    
 
-
-    var classes: KClass<*>[] = new Array(1);
+    var classes: Function[] = new Array(1);
         
         
-
+;
+    
 classes[0]= 
                                     //Otherwise - expression - AssignExpr - value - ClassExpr
-
-params[0]= databaseConnectionInfoInterface as Object
+;
+    
+params[0]= databaseConnectionInfoInterface as Object;
+    
 
     var anyType: any = {} = AbeFactory.getInstance()!.getInstance(abeClientInformation, CLASSNAME, classes, params)!;
         
         
-
+;
+    
 
 
 
@@ -80,7 +85,8 @@ params[0]= databaseConnectionInfoInterface as Object
                             null)!;
         
         
-
+;
+    
 
 
 

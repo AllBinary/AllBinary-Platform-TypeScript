@@ -63,17 +63,20 @@ var basicGameResources = basicGameResources
 var basicColor = basicColor
 
     var animationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface
-
+;
+    
 
                         if(basicColor == BasicColorFactory.getInstance()!.RED)
                         
                                     {
-                                    animationInterfaceFactoryInterface= FeaturedAnimationInterfaceFactoryInterfaceFactory.getInstance()!.get(basicGameResources!.RESOURCE)
+                                    animationInterfaceFactoryInterface= FeaturedAnimationInterfaceFactoryInterfaceFactory.getInstance()!.get(basicGameResources!.RESOURCE);
+    
 
                                     }
                                 
                         else {
-                            animationInterfaceFactoryInterface= NullRotationAnimationFactory.getFactoryInstance()
+                            animationInterfaceFactoryInterface= NullRotationAnimationFactory.getFactoryInstance();
+    
 
                         }
                             

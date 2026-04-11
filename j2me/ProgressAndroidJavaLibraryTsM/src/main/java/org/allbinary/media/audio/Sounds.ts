@@ -65,46 +65,56 @@ public constructor (soundsFactoryInterface: SoundsFactoryInterface){
 
             super();
             var soundsFactoryInterface = soundsFactoryInterface
-this.soundsFactoryInterface= soundsFactoryInterface
+this.soundsFactoryInterface= soundsFactoryInterface;
+    
 }
 
 
                 //@Throws(Error::class)
             
     public init(){
-logUtil!.put(commonStrings!.START, this, commonStrings!.INIT)
+logUtil!.put(commonStrings!.START, this, commonStrings!.INIT);
+    
 
     var commonLabels: CommonLabels = CommonLabels.getInstance()!;
         
         
-
+;
+    
 
     var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
         
         
-
-soundsFactoryInterface!.init()
+;
+    
+soundsFactoryInterface!.init();
+    
 
     var soundInterfaceArray: Sound[] = soundsFactoryInterface!.getSoundInterfaceArray()!;
         
         
-
+;
+    
 
     var smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;
         
         
-
+;
+    
 
     var indexInteger: Integer
-
+;
+    
 
     var indexString: string
-
+;
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
 
 
@@ -119,51 +129,68 @@ i < soundInterfaceArray!.length; i++)
     var soundInterfaceCanBeNull: Sound? = soundInterfaceArray[i];
         
         
-
+;
+    
 
                         if(soundInterfaceCanBeNull != 
                                     null
                                 )
                         
                                     {
-                                    indexInteger= smallIntegerSingletonFactory!.getInstance(i)
-indexString= indexInteger!.toString()
-stringBuffer!.delete(0, stringBuffer!.length())
-stringBuffer!.append(commonLabels!.INDEX_LABEL)
-stringBuffer!.append(indexString)
-stringBuffer!.append(this.soundStrings!.SOUND)
-stringBuffer!.append(soundInterfaceCanBeNull!::class.toString()!)
-logUtil!.put(stringBuffer!.toString(), this, commonStrings!.INIT)
-soundInterfaceCanBeNull!.init()
+                                    indexInteger= smallIntegerSingletonFactory!.getInstance(i);
+    
+indexString= indexInteger!.toString();
+    
+stringBuffer!.delete(0, stringBuffer!.length());
+    
+stringBuffer!.append(commonLabels!.INDEX_LABEL);
+    
+stringBuffer!.append(indexString);
+    
+stringBuffer!.append(this.soundStrings!.SOUND);
+    
+stringBuffer!.append(soundInterfaceCanBeNull!.constructor.name.toString()!);
+    
+logUtil!.put(stringBuffer!.toString(), this, commonStrings!.INIT);
+    
+soundInterfaceCanBeNull!.init();
+    
 progressCanvas!.addPortion(100, StringMaker().
-                            append(this.soundStrings!.INIT_SOUND)!.append(indexString)!.toString())
+                            append(this.soundStrings!.INIT_SOUND)!.append(indexString)!.toString());
+    
 
                                     }
                                 
 }
 
-soundsFactoryInterface!.setInitialized(true)
-logUtil!.put(commonStrings!.END, this, commonStrings!.INIT)
+soundsFactoryInterface!.setInitialized(true);
+    
+logUtil!.put(commonStrings!.END, this, commonStrings!.INIT);
+    
 }
 
 
                 //@Throws(Error::class)
             
     public stopAll(){
-logUtil!.put(commonStrings!.START, this, this.soundStrings!.STOP_ALL)
+logUtil!.put(commonStrings!.START, this, this.soundStrings!.STOP_ALL);
+    
 
     var soundInterfaceArray: Sound[] = soundsFactoryInterface!.getSoundInterfaceArray()!;
         
         
-
+;
+    
 
     var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
         
         
-
+;
+    
 
     var player: Player
-
+;
+    
 
 
 
@@ -180,15 +207,18 @@ index < soundInterfaceArray!.length; index++)
                                 )
                         
                                     {
-                                    player= soundInterfaceArray[index]!.getPlayerP()
+                                    player= soundInterfaceArray[index]!.getPlayerP();
+    
 
                         if(player != 
                                     null
                                 )
                         
                                     {
-                                    player.stop()
-progressCanvas!.addPortion(100, this.soundStrings!.STOPPING_SOUND, index)
+                                    player.stop();
+    
+progressCanvas!.addPortion(100, this.soundStrings!.STOPPING_SOUND, index);
+    
 
                                     }
                                 
@@ -203,20 +233,24 @@ progressCanvas!.addPortion(100, this.soundStrings!.STOPPING_SOUND, index)
                 //@Throws(Error::class)
             
     public closeAll(){
-logUtil!.put(commonStrings!.START, this, this.soundStrings!.CLOSE_ALL)
+logUtil!.put(commonStrings!.START, this, this.soundStrings!.CLOSE_ALL);
+    
 
     var soundInterfaceArray: Sound[] = soundsFactoryInterface!.getSoundInterfaceArray()!;
         
         
-
+;
+    
 
     var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
         
         
-
+;
+    
 
     var player: Player
-
+;
+    
 
 
 
@@ -233,15 +267,18 @@ index < soundInterfaceArray!.length; index++)
                                 )
                         
                                     {
-                                    player= soundInterfaceArray[index]!.getPlayerP()
+                                    player= soundInterfaceArray[index]!.getPlayerP();
+    
 
                         if(player != 
                                     null
                                 )
                         
                                     {
-                                    player.close()
-progressCanvas!.addPortion(100, this.soundStrings!.CLOSING_SOUND, index)
+                                    player.close();
+    
+progressCanvas!.addPortion(100, this.soundStrings!.CLOSING_SOUND, index);
+    
 
                                     }
                                 

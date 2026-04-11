@@ -37,7 +37,9 @@ var anyType = anyType
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Proxy.newProxyInstance(anyType!::class.java.classLoader, anyType!::class.getInterfaces(), InterfaceCastProxy(anyType));
+                        return Proxy.newProxyInstance(anyType!.constructor.name.java.classLoader, anyType!.constructor.name.getInterfaces(), InterfaceCastProxy(anyType));
+
+                        ;
     
 }
 
@@ -47,13 +49,14 @@ private constructor (anyType: any = {}){
 
             super();
             var anyType = anyType
-this.anyType= anyType
+this.anyType= anyType;
+    
 }
 
 
                 //@Throws(Error::class)
             
-    public invoke(proxyObject: any = {}, proxyMethod: Method, proxyArgs: any = {}[]): any = {}{
+    public invoke(proxyObject: any = {}, proxyMethod: Method, proxyArgs: any[]): any = {}{
 var proxyObject = proxyObject
 var proxyMethod = proxyMethod
 var proxyArgs = proxyArgs
@@ -61,20 +64,28 @@ var proxyArgs = proxyArgs
     var methodName: string = proxyMethod!.getName()!;
         
         
+;
+    
 
-
-    var realMethod: Method = this.anyType!.::class.getMethod(methodName, proxyMethod!.getParameterTypes())!;
+    var realMethod: Method = this.anyType!..constructor.name.getMethod(methodName, proxyMethod!.getParameterTypes())!;
         
         
+;
+    
 
+                        if(!realMethod!.isAccessible();
 
-                        if(!realMethod!.isAccessible())
-                        realMethod!.setAccessible(true)
+                        )
+                        realMethod!.setAccessible(true);
+
+                        
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return proxyMethod!.invoke(this.anyType, proxyArgs);
+
+                        ;
     
 }
 

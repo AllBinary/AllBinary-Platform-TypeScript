@@ -18,7 +18,10 @@
 
 
 
-import { Hashtable } from "../../../../java/util/Hashtable.js";
+            import Hashtable from "@ohos.util.HashMap";
+        
+
+//import { Hashtable } from "../../../../java/util/Hashtable.js";
 
     
 import { ArtificialIntelligenceInterface } from "../../../../org/allbinary/ai/ArtificialIntelligenceInterface.js";
@@ -36,7 +39,7 @@ interface ArtificialIntelligenceInterfaceFactoryInterface {
 
                 //@Throws(Error::class)
             
-    getInstance(hashtable: Hashtable<Any, Any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput): ArtificialIntelligenceInterface
+    getInstance(hashtable: Hashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput): ArtificialIntelligenceInterface
 
 }
                 

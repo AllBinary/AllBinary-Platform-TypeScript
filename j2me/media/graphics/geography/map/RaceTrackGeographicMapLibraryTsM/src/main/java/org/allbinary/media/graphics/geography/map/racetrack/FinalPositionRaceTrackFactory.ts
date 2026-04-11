@@ -45,7 +45,8 @@ export class FinalPositionRaceTrackFactory
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static reset(){
-index= FIRST_POSITION
+index= FIRST_POSITION;
+    
 }
 
 private constructor (){

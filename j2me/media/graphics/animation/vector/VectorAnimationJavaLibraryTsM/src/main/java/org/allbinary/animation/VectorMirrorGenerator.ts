@@ -69,7 +69,7 @@ private constructor (){
             }
 
 
-    public getInstance(points: IntArray[][], width: number): IntArray[][]{
+    public getInstance(points: number[][][], width: number): number[][][]{
 var points = points
 var width = width
 
@@ -78,27 +78,33 @@ var width = width
     var pointFactory: PointFactory = PointFactory.getInstance()!;
         
         
-
+;
+    
 
     var pointBasicArrayList: BasicArrayList
+;
+    
 
-
-    var nextPoints: IntArray[]
-
+    var nextPoints: number[][]
+;
+    
 
     var size2: number= 0
-
+;
+    
 
     var size: number = points.length
                 ;
         
         
-
+;
+    
 
     var pointsBasicArrayList: BasicArrayList = new BasicArrayList(size);
         
         
-
+;
+    
 
 
 
@@ -109,9 +115,12 @@ var width = width
         
 frame < size; frame++)
         {
-nextPoints= points[frame]!
-size2= nextPoints!.length
-pointBasicArrayList= BasicArrayList(size2)
+nextPoints= points[frame]!;
+    
+size2= nextPoints!.length;
+    
+pointBasicArrayList= BasicArrayList(size2);
+    
 
 
 
@@ -122,10 +131,12 @@ pointBasicArrayList= BasicArrayList(size2)
         
 index < size2; index++)
         {
-pointBasicArrayList!.add(pointFactory!.getInstance(nextPoints[index]![0]!, nextPoints[index]![1]!))
+pointBasicArrayList!.add(pointFactory!.getInstance(nextPoints[index]![0]!, nextPoints[index]![1]!));
+    
 }
 
-pointsBasicArrayList!.add(pointBasicArrayList)
+pointsBasicArrayList!.add(pointBasicArrayList);
+    
 }
 
 
@@ -138,28 +149,34 @@ pointsBasicArrayList!.add(pointBasicArrayList)
         
 index < points.length; index++)
         {
-pointsBasicArrayList!.add(getInstance(pointsBasicArrayList!.objectArray[index]! as BasicArrayList, width))
+pointsBasicArrayList!.add(getInstance(pointsBasicArrayList!.objectArray[index]! as BasicArrayList, width));
+    
 }
 
 
-    var newPoints: IntArray[][] = vectorAnimationUtil!.toAnimationArrayFromBasicArrayListOfPointBasicArrayList(pointsBasicArrayList)!;
+    var newPoints: number[][][] = vectorAnimationUtil!.toAnimationArrayFromBasicArrayListOfPointBasicArrayList(pointsBasicArrayList)!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return newPoints;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e);
+    
 
 
 
@@ -180,14 +197,19 @@ var width = width
     var graphicsPipe: BasicGraphicsPipeline = new BasicGraphicsPipeline(pointBasicArrayList);
         
         
-
-graphicsPipe!.createMatrix()
-graphicsPipe!.mirror(width)
+;
+    
+graphicsPipe!.createMatrix();
+    
+graphicsPipe!.mirror(width);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return graphicsPipe!.getMatrix();
+
+                        ;
     
 }
 

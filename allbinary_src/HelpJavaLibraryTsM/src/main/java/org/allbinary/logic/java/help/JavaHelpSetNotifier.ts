@@ -18,10 +18,13 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { URL } from "../../../../../java/net/URL.js";
 
     
-import { Vector } from "../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../java/util/Vector.js";
 
     
 import { HelpSet } from "../../../../../javax/help/HelpSet.js";
@@ -53,22 +56,26 @@ var helpSet = helpSet
     var isNotified: boolean = false;
         
         
-
+;
+    
 
     var url: URL = helpSet!.getHelpSetURL()!;
         
         
-
+;
+    
 
     var size: number = vector.length!;
         
         
+;
+    
 
-
-    var urlArray: any = {}[] = vector.toArray()!;
+    var urlArray: any[] = vector.toArray()!;
         
         
-
+;
+    
 
 
 
@@ -83,18 +90,21 @@ i < size; i++)
     var nextURL: URL = urlArray[i]! as URL;
         
         
-
+;
+    
 
                         if(url.toString()!.compareTo(nextURL!.toString()) == 0)
                         
                                     {
-                                    isNotified= true
+                                    isNotified= true;
+    
 
                                     }
                                 
 }
 
-vector.add(url)
+vector.add(url);
+    
 
 
 

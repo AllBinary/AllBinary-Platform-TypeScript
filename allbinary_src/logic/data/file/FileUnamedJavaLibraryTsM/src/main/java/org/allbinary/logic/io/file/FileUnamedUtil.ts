@@ -51,9 +51,12 @@ var string = string
     var simplifiedString: string = string.lowercase()!;
         
         
-
-simplifiedString= simplifiedString!.replace(commonSeps!.SPACE, commonSeps!.UNDERSCORE)
-simplifiedString= simplifiedString!.replace(commonSeps!.DASH, commonSeps!.UNDERSCORE)
+;
+    
+simplifiedString= simplifiedString!.replace(commonSeps!.SPACE, commonSeps!.UNDERSCORE);
+    
+simplifiedString= simplifiedString!.replace(commonSeps!.DASH, commonSeps!.UNDERSCORE);
+    
 
 
 

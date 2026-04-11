@@ -49,22 +49,26 @@ var log = log
     var specialMessage: string = log.getSpecialMessage()!;
         
         
-
+;
+    
 
     var anyType: any = {} = log.getObject()!;
         
         
-
+;
+    
 
     var functionName: string = log.getFunctionName()!;
         
         
-
+;
+    
 
     var exception: any = {} = log.getThrowable()!;
         
         
-
+;
+    
 
 
 

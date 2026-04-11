@@ -66,12 +66,15 @@ public constructor (storeFrontInterface: StoreFrontInterface){
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put("Constructing: StoreFrontView for: " +storeFrontInterface!.getName(), this, commonStrings!.GET_INSTANCE)
+;
+    
+logUtil!.put("Constructing: StoreFrontView for: " +storeFrontInterface!.getName(), this, commonStrings!.GET_INSTANCE);
+    
 
                                     }
                                 
-this.storeFrontInterface= storeFrontInterface
+this.storeFrontInterface= storeFrontInterface;
+    
 }
 
 
@@ -80,25 +83,33 @@ this.storeFrontInterface= storeFrontInterface
     public toXmlNode(document: Document): Node{
 var document = document
 
-    var hashMap: HashMap<Any, Any> = this.storeFrontInterface!.toHashMap()!;
+    var hashMap: HashMap<any, any> = this.storeFrontInterface!.toHashMap()!;
         
         
-
+;
+    
 
     var storeFrontData: StoreFrontData = StoreFrontData.getInstance()!;
         
         
-
-hashMap!.put(storeFrontData!.CURRENTHOMEHOSTNAME, this.storeFrontInterface!.getCurrentHomeHostName())
-hashMap!.put(storeFrontData!.CURRENTHOMEHOSTNAMEPATH, this.storeFrontInterface!.getCurrentHomeHostNamePath())
-hashMap!.put(storeFrontData!.CURRENTHOSTNAME, this.storeFrontInterface!.getCurrentHostName())
-hashMap!.put(storeFrontData!.CURRENTHOSTNAMEPATH, this.storeFrontInterface!.getCurrentHostNamePath())
-hashMap!.put(BasketData.NAME, this.storeFrontInterface!.getBasketName())
+;
+    
+hashMap!.put(storeFrontData!.CURRENTHOMEHOSTNAME, this.storeFrontInterface!.getCurrentHomeHostName());
+    
+hashMap!.put(storeFrontData!.CURRENTHOMEHOSTNAMEPATH, this.storeFrontInterface!.getCurrentHomeHostNamePath());
+    
+hashMap!.put(storeFrontData!.CURRENTHOSTNAME, this.storeFrontInterface!.getCurrentHostName());
+    
+hashMap!.put(storeFrontData!.CURRENTHOSTNAMEPATH, this.storeFrontInterface!.getCurrentHostNamePath());
+    
+hashMap!.put(BasketData.NAME, this.storeFrontInterface!.getBasketName());
+    
 
     var node: Node = ModDomHelper.createNameValueNodes(document, storeFrontData!.NAME, hashMap)!;
         
         
-
+;
+    
 
 
 

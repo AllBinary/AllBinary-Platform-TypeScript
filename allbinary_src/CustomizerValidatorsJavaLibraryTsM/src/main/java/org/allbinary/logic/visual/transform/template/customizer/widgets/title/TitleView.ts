@@ -74,7 +74,8 @@ export class TitleView
 public constructor (){
 
             super();
-            this.title= NAME
+            this.title= NAME;
+    
 }
 
 public constructor (node: Node){
@@ -85,18 +86,22 @@ public constructor (node: Node){
     var titleTextNode: Node = DomSearchHelper.getNode(TitleData.getInstance()!.TEXT, node.getChildNodes())!;
         
         
-
+;
+    
 
     var valueNode: Node = DomSearchHelper.getNode(DomData.VALUE, titleTextNode!.getChildNodes())!;
         
         
-
-this.title= DomNodeHelper.getTextNodeValue(valueNode)
+;
+    
+this.title= DomNodeHelper.getTextNodeValue(valueNode);
+    
 
                         if(StringValidationUtil.getInstance()!.isEmpty(this.title))
                         
                                     {
-                                    this.title= NAME
+                                    this.title= NAME;
+    
 
                                     }
                                 
@@ -104,13 +109,14 @@ this.title= DomNodeHelper.getTextNodeValue(valueNode)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Title: " +this.getTitle(), this, "Consructor()")
+                                    logUtil!.put("Title: " +this.getTitle(), this, "Consructor()");
+    
 
                                     }
                                 
 }
 
-public constructor (hashMap: HashMap<Any, Any>){
+public constructor (hashMap: HashMap<any, any>){
 
             super();
             var hashMap = hashMap
@@ -118,11 +124,13 @@ public constructor (hashMap: HashMap<Any, Any>){
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("HashMap: " +hashMap!.toString(), this, this.commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put("HashMap: " +hashMap!.toString(), this, this.commonStrings!.CONSTRUCTOR);
+    
 
                                     }
                                 
-this.getFormData(hashMap)
+this.getFormData(hashMap);
+    
 }
 
 
@@ -136,27 +144,33 @@ this.getFormData(hashMap)
 }
 
 
-    public getFormData(hashMap: HashMap<Any, Any>){
+    public getFormData(hashMap: HashMap<any, any>){
 var hashMap = hashMap
-this.title= hashMap!.get(TitleData.getInstance()!.TEXT) as String
+this.title= hashMap!.get(TitleData.getInstance()!.TEXT);
+
+                         as String;
+    
 
                         if(StringValidationUtil.getInstance()!.isEmpty(this.title))
                         
                                     {
-                                    this.title= NAME
+                                    this.title= NAME;
+    
 
                                     }
                                 
 }
 
 
-    public toHashMap(): HashMap<Any, Any>{
+    public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
         
         
-
-hashMap!.put(TitleData.getInstance()!.TEXT, this.getTitle())
+;
+    
+hashMap!.put(TitleData.getInstance()!.TEXT, this.getTitle());
+    
 
 
 
@@ -171,15 +185,17 @@ hashMap!.put(TitleData.getInstance()!.TEXT, this.getTitle())
     public toXmlNode(document: Document): Node{
 var document = document
 
-    var hashMap: HashMap<Any, Any> = this.toHashMap()!;
+    var hashMap: HashMap<any, any> = this.toHashMap()!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("TitleView HashMap: " +hashMap!.toString(), this, "toXmlNode()")
+                                    logUtil!.put("TitleView HashMap: " +hashMap!.toString(), this, "toXmlNode()");
+    
 
                                     }
                                 
@@ -188,6 +204,8 @@ var document = document
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return ModDomHelper.createNameValueNodes(document, TitleData.getInstance()!.NAME, hashMap);
+
+                        ;
     
 }
 

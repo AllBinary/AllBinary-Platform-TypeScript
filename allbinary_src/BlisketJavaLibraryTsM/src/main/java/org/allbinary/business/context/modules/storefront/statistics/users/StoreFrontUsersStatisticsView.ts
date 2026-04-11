@@ -45,7 +45,8 @@ public constructor (storeFrontUsersStatisticsInterface: StoreFrontUsersStatistic
 
             super();
             var storeFrontUsersStatisticsInterface = storeFrontUsersStatisticsInterface
-this.storeFrontUsersStatisticsInterface= storeFrontUsersStatisticsInterface
+this.storeFrontUsersStatisticsInterface= storeFrontUsersStatisticsInterface;
+    
 }
 
 
@@ -54,15 +55,17 @@ this.storeFrontUsersStatisticsInterface= storeFrontUsersStatisticsInterface
     public toXmlNode(document: Document): Node{
 var document = document
 
-    var hashMap: HashMap<Any, Any> = this.storeFrontUsersStatisticsInterface!.toHashMap()!;
+    var hashMap: HashMap<any, any> = this.storeFrontUsersStatisticsInterface!.toHashMap()!;
         
         
-
+;
+    
 
     var node: Node = ModDomHelper.createNameValueNodes(document, StoreFrontUsersStatisticsData.getInstance()!.NAME, hashMap)!;
         
         
-
+;
+    
 
 
 

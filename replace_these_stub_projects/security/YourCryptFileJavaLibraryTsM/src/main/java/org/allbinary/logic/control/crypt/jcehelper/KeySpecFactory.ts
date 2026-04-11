@@ -35,7 +35,7 @@ export class KeySpecFactory
         
         
 
-    public static getInstance(algorithm: string, keyData: ByteArray): KeySpec{
+    public static getInstance(algorithm: string, keyData: number[]): KeySpec{
 var algorithm = algorithm
 var keyData = keyData
 

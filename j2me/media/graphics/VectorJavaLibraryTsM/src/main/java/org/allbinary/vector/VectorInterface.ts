@@ -22,9 +22,9 @@
 interface VectorInterface {
         
 
-    getPoints(frame: number): IntArray[]
+    getPoints(frame: number): number[][]
 
-    setPoints(currentPoints: IntArray[][])
+    setPoints(currentPoints: number[][][])
 
 }
                 

@@ -18,10 +18,13 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { Calendar } from "../../java/util/Calendar.js";
 
     
-import { Vector } from "../../java/util/Vector.js";
+
+//import { Vector } from "../../java/util/Vector.js";
 
     
 import { HttpServletRequest } from "../../javax/servlet/http/HttpServletRequest.js";
@@ -111,51 +114,66 @@ public constructor (){
 
     public setCommand(command: string){
 var command = command
-this.command= command
+this.command= command;
+    
 }
 
 
     public setUserName(userName: string){
 var userName = userName
-this.userName= userName
+this.userName= userName;
+    
 }
 
 
     public setPassword(value: string){
 var value = value
-this.password= value
+this.password= value;
+    
 }
 
 
     public setNewPassword(value: string){
 var value = value
-this.newPassword= value
+this.newPassword= value;
+    
 }
 
 
     public setRoles(values: Vector){
 var values = values
-this.roles= values
+this.roles= values;
+    
 }
 
 
     makeSessionValid(storedRole: BasicUserRole, userName: string){
 var storedRole = storedRole
 var userName = userName
-this.weblisketSession!.setAuthenticated()
-this.weblisketSession!.setRole(storedRole)
-this.weblisketSession!.setUserName(userName)
-this.request.removeAttribute(WeblisketSessionData.REMOVABLEUSERNAME)
-this.request.removeAttribute(WeblisketSessionData.REMOVABLEPASSWORD)
+this.weblisketSession!.setAuthenticated();
+    
+this.weblisketSession!.setRole(storedRole);
+    
+this.weblisketSession!.setUserName(userName);
+    
+this.request.removeAttribute(WeblisketSessionData.REMOVABLEUSERNAME);
+    
+this.request.removeAttribute(WeblisketSessionData.REMOVABLEPASSWORD);
+    
 }
 
 
     getFormData(){
-this.authenticated= this.weblisketSession!.getAuthentication()
-this.sessionUserName= this.weblisketSession!.getUserName()
-this.role= this.weblisketSession!.getRole()
-this.attemptsInteger= this.weblisketSession!.getAttempts()
-this.timeout= this.weblisketSession!.getTimeout()
+this.authenticated= this.weblisketSession!.getAuthentication();
+    
+this.sessionUserName= this.weblisketSession!.getUserName();
+    
+this.role= this.weblisketSession!.getRole();
+    
+this.attemptsInteger= this.weblisketSession!.getAttempts();
+    
+this.timeout= this.weblisketSession!.getTimeout();
+    
 }
 
 
@@ -166,12 +184,14 @@ this.timeout= this.weblisketSession!.getTimeout()
                                  && attemptsInteger!.toInt() > 0)
                         
                                     {
-                                    this.weblisketSession!.setAttempts(Integer(attemptsInteger!.toInt() +1))
+                                    this.weblisketSession!.setAttempts(Integer(attemptsInteger!.toInt() +1));
+    
 
                                     }
                                 
                         else {
-                            this.weblisketSession!.setAttempts(Integer(1))
+                            this.weblisketSession!.setAttempts(Integer(1));
+    
 
                         }
                             
@@ -187,22 +207,26 @@ this.timeout= this.weblisketSession!.getTimeout()
     var userName: string = request.getParameter(WeblisketSessionData.REMOVABLEUSERNAME)!;
         
         
-
+;
+    
 
     var password: string = request.getParameter(WeblisketSessionData.REMOVABLEPASSWORD)!;
         
         
-
+;
+    
 
     var newPassword: string = request.getParameter(WeblisketSessionData.REMOVABLENEWPASSWORD)!;
         
         
-
+;
+    
 
     var newReenteredPassword: string = request.getParameter(WeblisketSessionData.REMOVABLEREENTERNEWPASSWORD)!;
         
         
-
+;
+    
 
                         if(newPassword!.compareTo(newReenteredPassword) != 0)
                         
@@ -220,15 +244,20 @@ this.timeout= this.weblisketSession!.getTimeout()
     var installerInfo: InstallerInfo = new InstallerInfo();
         
         
-
+;
+    
 
                         if(installerInfo!.isValid(userName, password))
                         
                                     {
-                                    installerInfo!.setPassword(newPassword)
-installerInfo!.write()
-this.weblisketSession!.setUserName(userName)
-this.weblisketSession!.setPassword(newPassword)
+                                    installerInfo!.setPassword(newPassword);
+    
+installerInfo!.write();
+    
+this.weblisketSession!.setUserName(userName);
+    
+this.weblisketSession!.setPassword(newPassword);
+    
 
 
 
@@ -244,20 +273,25 @@ this.weblisketSession!.setPassword(newPassword)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return false;
     
-} catch(e: LicensingException)
+
+                //: 
+} catch(e) 
             {
 
 
 
                             throw e
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "invalidateSession()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "invalidateSession()", e);
+    
 
                                     }
                                 
@@ -275,21 +309,27 @@ this.weblisketSession!.setPassword(newPassword)
     invalidateSession(): number{
 
         try {
-            this.weblisketSession!.clear()
+            this.weblisketSession!.clear();
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return Integer(TagSupport.EVAL_BODY_INCLUDE).
                             toInt();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "invalidateSession()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "invalidateSession()", e);
+    
 
                                     }
                                 
@@ -319,22 +359,26 @@ this.weblisketSession!.setPassword(newPassword)
     var timeCreated: number = this.weblisketSession!.getCreationTime()!;
         
         
-
+;
+    
 
     var sessionTimout: number = this.role.getSessionTimeout()!;
         
         
-
+;
+    
 
     var calendar: Calendar = Calendar.getInstance()!;
         
         
-
+;
+    
 
     var timeFirst: number = calendar.getTimeInMillis() -sessionTimout;
         
         
-
+;
+    
 
                         if(timeFirst > timeCreated)
                         
@@ -347,14 +391,22 @@ this.weblisketSession!.setPassword(newPassword)
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("Session Is Old - Timeout: ")
-stringBuffer!.appendlong(sessionTimout)
-stringBuffer!.append(" Eval: ")
-stringBuffer!.appendlong(timeFirst)
-stringBuffer!.append(" > ")
-stringBuffer!.appendlong(timeCreated)
-logUtil!.put(stringBuffer!.toString(), this, "isSessionOld()")
+;
+    
+stringBuffer!.append("Session Is Old - Timeout: ");
+    
+stringBuffer!.appendlong(sessionTimout);
+    
+stringBuffer!.append(" Eval: ");
+    
+stringBuffer!.appendlong(timeFirst);
+    
+stringBuffer!.append(" > ");
+    
+stringBuffer!.appendlong(timeCreated);
+    
+logUtil!.put(stringBuffer!.toString(), this, "isSessionOld()");
+    
 
                                     }
                                 
@@ -363,6 +415,8 @@ logUtil!.put(stringBuffer!.toString(), this, "isSessionOld()")
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return Boolean.TRUE.;
+
+                        ;
     
 
                                     }
@@ -375,7 +429,8 @@ logUtil!.put(stringBuffer!.toString(), this, "isSessionOld()")
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.AUTHENTICATION))
                         
                                     {
-                                    logUtil!.put("Role Is Not In Session", this, "isSessionOld()")
+                                    logUtil!.put("Role Is Not In Session", this, "isSessionOld()");
+    
 
                                     }
                                 
@@ -387,14 +442,19 @@ logUtil!.put(stringBuffer!.toString(), this, "isSessionOld()")
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.isRarelyUsedSession();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "isSessionOld()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "isSessionOld()", e);
+    
 
                                     }
                                 
@@ -420,27 +480,32 @@ logUtil!.put(stringBuffer!.toString(), this, "isSessionOld()")
     var timeCreated: number = this.weblisketSession!.getCreationTime()!;
         
         
-
+;
+    
 
     var lastAccess: number = this.weblisketSession!.getLastAccessedTime()!;
         
         
-
+;
+    
 
     var timePassed: number = role.getSessionInactivityTimeout()!;
         
         
-
+;
+    
 
     var calendar: Calendar = Calendar.getInstance()!;
         
         
-
+;
+    
 
     var timeFirst: number = calendar.getTimeInMillis() -lastAccess;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.AUTHENTICATION))
                         
@@ -449,14 +514,22 @@ logUtil!.put(stringBuffer!.toString(), this, "isSessionOld()")
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("Session Is Rarely Used - Timeout: ")
-stringBuffer!.appendlong(lastAccess)
-stringBuffer!.append(" Eval: ")
-stringBuffer!.appendlong(timeFirst)
-stringBuffer!.append(" > ")
-stringBuffer!.appendlong(timePassed)
-logUtil!.put(stringBuffer!.toString(), this, "isRarelyUsedSession()")
+;
+    
+stringBuffer!.append("Session Is Rarely Used - Timeout: ");
+    
+stringBuffer!.appendlong(lastAccess);
+    
+stringBuffer!.append(" Eval: ");
+    
+stringBuffer!.appendlong(timeFirst);
+    
+stringBuffer!.append(" > ");
+    
+stringBuffer!.appendlong(timePassed);
+    
+logUtil!.put(stringBuffer!.toString(), this, "isRarelyUsedSession()");
+    
 
                                     }
                                 
@@ -468,7 +541,8 @@ logUtil!.put(stringBuffer!.toString(), this, "isRarelyUsedSession()")
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.AUTHENTICATION))
                         
                                     {
-                                    logUtil!.put("Role Is Not In Session", this, "isRarelyUsedSession()")
+                                    logUtil!.put("Role Is Not In Session", this, "isRarelyUsedSession()");
+    
 
                                     }
                                 
@@ -489,20 +563,26 @@ logUtil!.put(stringBuffer!.toString(), this, "isRarelyUsedSession()")
     isRoleValid(): boolean{
 
         try {
-            this.makeSessionValid(BasicUserRoleFactory.getInstance()!.INSTALLER, userName)
+            this.makeSessionValid(BasicUserRoleFactory.getInstance()!.INSTALLER, userName);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return Boolean.TRUE.;
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "isRoleValid()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "isRoleValid()", e);
+    
 
                                     }
                                 
@@ -526,26 +606,34 @@ logUtil!.put(stringBuffer!.toString(), this, "isRarelyUsedSession()")
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("Trying New login<p>")
+;
+    
+stringBuffer!.append("Trying New login<p>");
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to set valid role";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "validRole()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "validRole()", e);
+    
 
                                     }
                                 
@@ -565,32 +653,42 @@ stringBuffer!.append("Trying New login<p>")
     invalidRole(): string{
 
         try {
-            this.weblisketSession!.setAuthenticated(false)
+            this.weblisketSession!.setAuthenticated(false);
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("Sorry your username and password is invalid on this page.")
-stringBuffer!.append("Trying New login<p>")
+;
+    
+stringBuffer!.append("Sorry your username and password is invalid on this page.");
+    
+stringBuffer!.append("Trying New login<p>");
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to set role invalid";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "invalidRole()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "invalidRole()", e);
+    
 
                                     }
                                 
@@ -618,7 +716,8 @@ stringBuffer!.append("Trying New login<p>")
     var size: number = roles.length!;
         
         
-
+;
+    
 
 
 
@@ -630,10 +729,13 @@ stringBuffer!.append("Trying New login<p>")
 index < size; index++)
         {
 
-    var mustBeOfRole: BasicUserRole = roles.get(index) as BasicUserRole;
-        
-        
+    var mustBeOfRole: BasicUserRole = roles.get(index);
 
+                         as BasicUserRole;
+        
+        
+;
+    
 
                         if(sessionUserName != 
                                     null
@@ -645,6 +747,8 @@ index < size; index++)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return Boolean.TRUE.;
+
+                        ;
     
 
                                     }
@@ -656,6 +760,8 @@ index < size; index++)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return Boolean.FALSE.;
+
+                        ;
     
 
                                     }
@@ -665,14 +771,19 @@ index < size; index++)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return Boolean.FALSE.;
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "isAuthenticationSessionValid()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "isAuthenticationSessionValid()", e);
+    
 
                                     }
                                 
@@ -696,7 +807,8 @@ index < size; index++)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
                                     {
-                                    logUtil!.put("Starting for User: " +this.userName +" Attempt: " +this.weblisketSession!.getAttempts(), this, "processIfNewLogin()")
+                                    logUtil!.put("Starting for User: " +this.userName +" Attempt: " +this.weblisketSession!.getAttempts(), this, "processIfNewLogin()");
+    
 
                                     }
                                 
@@ -710,22 +822,26 @@ index < size; index++)
                                     {
                                     
     var login: string
-
+;
+    
 
     var installerInfo: InstallerInfo = new InstallerInfo();
         
         
-
+;
+    
 
                         if(installerInfo!.isValid(userName, password))
                         
                                     {
-                                    login= org.allbinary.globals.GLOBALS2.LOGINSUCCESS
+                                    login= org.allbinary.globals.GLOBALS2.LOGINSUCCESS;
+    
 
                                     }
                                 
                         else {
-                            login= org.allbinary.globals.GLOBALS2.LOGINFAILED
+                            login= org.allbinary.globals.GLOBALS2.LOGINFAILED;
+    
 
                         }
                             
@@ -733,40 +849,52 @@ index < size; index++)
                         if(login.compareTo(org.allbinary.globals.GLOBALS2.LOGINSUCCESS) == 0)
                         
                                     {
-                                    this.weblisketSession!.setAttempts(Integer(0))
+                                    this.weblisketSession!.setAttempts(Integer(0));
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return Boolean.TRUE.;
+
+                        ;
     
 
                                     }
                                 
-this.nextAttempt()
+this.nextAttempt();
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return Boolean.FALSE.;
+
+                        ;
     
 
                                     }
                                 
-this.nextAttempt()
+this.nextAttempt();
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return Boolean.FALSE.;
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "processIfNewLogin()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "processIfNewLogin()", e);
+    
 
                                     }
                                 
@@ -790,12 +918,15 @@ this.nextAttempt()
                         if(BooleanUtil.getInstance()!.getFromString(timeout))
                         
                                     {
-                                    this.invalidateSession()
+                                    this.invalidateSession();
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return Boolean.TRUE.;
+
+                        ;
     
 
                                     }
@@ -803,23 +934,29 @@ this.nextAttempt()
 
 
                             {
-                            this.weblisketSession!.setTimeout(BooleanFactory.getInstance()!.TRUE_STRING)
+                            this.weblisketSession!.setTimeout(BooleanFactory.getInstance()!.TRUE_STRING);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return Boolean.FALSE.;
+
+                        ;
     
 
                             }
                     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "isSetToInvalidate()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "isSetToInvalidate()", e);
+    
 
                                     }
                                 
@@ -843,15 +980,22 @@ this.nextAttempt()
     var stringUtil: StringUtil = StringUtil.getInstance()!;
         
         
+;
+    
+this.request= pageContext!.getRequest();
 
-this.request= pageContext!.getRequest() as HttpServletRequest
-this.weblisketSession= BasicWeblisketSession(pageContext)
-this.getFormData()
+                         as HttpServletRequest;
+    
+this.weblisketSession= BasicWeblisketSession(pageContext);
+    
+this.getFormData();
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    logUtil!.put("Started", this, "doStartTag()")
+                                    logUtil!.put("Started", this, "doStartTag()");
+    
 
                                     }
                                 
@@ -869,15 +1013,19 @@ this.getFormData()
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    logUtil!.put("Change Password", this, "doStartTag()")
+                                    logUtil!.put("Change Password", this, "doStartTag()");
+    
 
                                     }
                                 
 
-                        if(!this.changePassword())
+                        if(!this.changePassword();
+
+                        )
                         
                                     {
-                                    pageContext!.getOut()!.print("Password Change Attempt Failed.<p>")
+                                    pageContext!.getOut()!.print("Password Change Attempt Failed.<p>");
+    
 
 
 
@@ -888,7 +1036,8 @@ this.getFormData()
                                     }
                                 
                         else {
-                            pageContext!.getOut()!.print("Password Changed Successfully.<p>")
+                            pageContext!.getOut()!.print("Password Changed Successfully.<p>");
+    
 
 
 
@@ -909,7 +1058,8 @@ this.getFormData()
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    logUtil!.put("INVALIDATESESSION", this, "doStartTag()")
+                                    logUtil!.put("INVALIDATESESSION", this, "doStartTag()");
+    
 
                                     }
                                 
@@ -918,6 +1068,8 @@ this.getFormData()
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.invalidateSession();
+
+                        ;
     
 
                                     }
@@ -935,11 +1087,13 @@ this.getFormData()
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    logUtil!.put("Processing Invalidation", this, "doStartTag()")
+                                    logUtil!.put("Processing Invalidation", this, "doStartTag()");
+    
 
                                     }
                                 
-pageContext!.getOut()!.print("Please login again.<p>")
+pageContext!.getOut()!.print("Please login again.<p>");
+    
 
                         if(command.compareTo(org.allbinary.globals.GLOBALS2.PROCESSBODYIFAUTHENTICATED) == 0)
                         
@@ -971,7 +1125,8 @@ pageContext!.getOut()!.print("Please login again.<p>")
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    logUtil!.put("Preparing session for invalidation", this, "doStartTag()")
+                                    logUtil!.put("Preparing session for invalidation", this, "doStartTag()");
+    
 
                                     }
                                 
@@ -1018,7 +1173,8 @@ pageContext!.getOut()!.print("Please login again.<p>")
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    logUtil!.put("Authenticated session is valid", this, "doStartTag()")
+                                    logUtil!.put("Authenticated session is valid", this, "doStartTag()");
+    
 
                                     }
                                 
@@ -1060,7 +1216,8 @@ pageContext!.getOut()!.print("Please login again.<p>")
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    logUtil!.put("Processing new login.", this, "doStartTag()")
+                                    logUtil!.put("Processing new login.", this, "doStartTag()");
+    
 
                                     }
                                 
@@ -1072,11 +1229,13 @@ pageContext!.getOut()!.print("Please login again.<p>")
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    logUtil!.put("Role is valid - Processing new login", this, "doStartTag()")
+                                    logUtil!.put("Role is valid - Processing new login", this, "doStartTag()");
+    
 
                                     }
                                 
-pageContext!.getOut()!.print(validRole())
+pageContext!.getOut()!.print(validRole());
+    
 
                         if(command.compareTo(org.allbinary.globals.GLOBALS2.PROCESSBODYIFAUTHENTICATED) == 0)
                         
@@ -1108,11 +1267,13 @@ pageContext!.getOut()!.print(validRole())
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    logUtil!.put("Role is not valid - Processing new login", this, "doStartTag()")
+                                    logUtil!.put("Role is not valid - Processing new login", this, "doStartTag()");
+    
 
                                     }
                                 
-pageContext!.getOut()!.print(invalidRole())
+pageContext!.getOut()!.print(invalidRole());
+    
 
                         if(command.compareTo(org.allbinary.globals.GLOBALS2.PROCESSBODYIFAUTHENTICATED) == 0)
                         
@@ -1147,7 +1308,8 @@ pageContext!.getOut()!.print(invalidRole())
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    logUtil!.put("Invalid Login", this, "doStartTag()")
+                                    logUtil!.put("Invalid Login", this, "doStartTag()");
+    
 
                                     }
                                 
@@ -1159,7 +1321,8 @@ pageContext!.getOut()!.print(invalidRole())
                                  && password.compareTo(StringUtil.getInstance()!.EMPTY_STRING) != 0)
                         
                                     {
-                                    pageContext!.getOut()!.print("Sorry your username and/or password is invalid.<p>")
+                                    pageContext!.getOut()!.print("Sorry your username and/or password is invalid.<p>");
+    
 
                                     }
                                 
@@ -1174,14 +1337,22 @@ pageContext!.getOut()!.print(invalidRole())
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("Major authentication error - userName: ")
-stringBuffer!.append(this.userName)
-stringBuffer!.append(" Password: ")
-stringBuffer!.append(this.password)
-stringBuffer!.append(" Command: ")
-stringBuffer!.append(this.command)
-logUtil!.put(stringBuffer!.toString(), this, "doStartTag()")
+;
+    
+stringBuffer!.append("Major authentication error - userName: ");
+    
+stringBuffer!.append(this.userName);
+    
+stringBuffer!.append(" Password: ");
+    
+stringBuffer!.append(this.password);
+    
+stringBuffer!.append(" Command: ");
+    
+stringBuffer!.append(this.command);
+    
+logUtil!.put(stringBuffer!.toString(), this, "doStartTag()");
+    
 
                                     }
                                 
@@ -1220,9 +1391,12 @@ logUtil!.put(stringBuffer!.toString(), this, "doStartTag()")
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return SKIP_BODY;
     
-} catch(e: LicensingException)
+
+                //: 
+} catch(e) 
             {
-AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e);
+    
 
 
 
@@ -1230,9 +1404,12 @@ AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
                         return SKIP_BODY;
     
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
-AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
+    
 
 
 

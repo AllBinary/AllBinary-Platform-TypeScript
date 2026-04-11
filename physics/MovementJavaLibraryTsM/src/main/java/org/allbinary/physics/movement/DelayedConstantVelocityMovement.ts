@@ -69,7 +69,8 @@ var layer = layer
                         if(timeDelayHelper!.isTime(GameTickTimeDelayHelperFactory.getInstance()!.startTime))
                         
                                     {
-                                    super.process(layer)
+                                    super.process(layer);
+    
 
                                     }
                                 

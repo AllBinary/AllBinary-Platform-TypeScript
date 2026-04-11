@@ -52,8 +52,10 @@ var index = index
     var tickableInterface: TickableInterface = layerInterface as TickableInterface;
         
         
-
-tickableInterface!.processTick(allBinaryLayerManager)
+;
+    
+tickableInterface!.processTick(allBinaryLayerManager);
+    
 }
 
 

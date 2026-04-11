@@ -35,15 +35,20 @@ export class J2MEGameInputMapping extends PersistentInputMapping {
             
     public init(abeClientInformation: AbeClientInformationInterface){
     //var abeClientInformation = abeClientInformation
-logUtil!.put(commonStrings!.START, this, commonStrings!.INIT)
-J2MEKeyFactory.getInstance()!.init()
-super.init(abeClientInformation)
+logUtil!.put(commonStrings!.START, this, commonStrings!.INIT);
+    
+J2MEKeyFactory.getInstance()!.init();
+    
+super.init(abeClientInformation);
+    
 
                         if(this.getTotalMapped() == 0 || this.isDefaultNew())
                         
                                     {
-                                    this.getInputMapping()!.add(this.getDefault())
-this.save(abeClientInformation)
+                                    this.getInputMapping()!.add(this.getDefault());
+    
+this.save(abeClientInformation);
+    
 
                                     }
                                 

@@ -37,9 +37,12 @@ export class Life
 public constructor (){
 
             super();
-            this.lives= 0
-this.startLives= 0
-this.maxlives= 0
+            this.lives= 0;
+    
+this.startLives= 0;
+    
+this.maxlives= 0;
+    
 }
 
 public constructor (lives: number, maxlives: number){
@@ -47,7 +50,8 @@ public constructor (lives: number, maxlives: number){
             super();
             var lives = lives
 var maxlives = maxlives
-this.maxlives= maxlives
+this.maxlives= maxlives;
+    
 
                         if(lives > this.maxlives)
                         
@@ -59,8 +63,10 @@ this.maxlives= maxlives
 
                                     }
                                 
-this.lives= lives
-this.startLives= lives
+this.lives= lives;
+    
+this.startLives= lives;
+    
 }
 
 
@@ -76,31 +82,37 @@ this.startLives= lives
 
     public set(lives: number){
 var lives = lives
-this.lives= lives
+this.lives= lives;
+    
 }
 
 
     public reset(){
-this.lives= this.startLives
+this.lives= this.startLives;
+    
 }
 
 
     public add(lives: number){
 var lives = lives
 
-                        if(!this.reachedLimit())
+                        if(!this.reachedLimit();
+
+                        )
                         
                                     {
                                     
                         if(this.lives +lives <= this.getMaxlives())
                         
                                     {
-                                    this.lives= (this.lives +lives).toShort()
+                                    this.lives= (this.lives +lives).toShort();
+    
 
                                     }
                                 
                         else {
-                            this.lives= this.getMaxlives()
+                            this.lives= this.getMaxlives();
+    
 
                         }
                             
@@ -177,19 +189,23 @@ var lives = lives
     public deaths(lives: number){
 var lives = lives
 
-                        if(!this.reachedLimit())
+                        if(!this.reachedLimit();
+
+                        )
                         
                                     {
                                     
                         if(this.lives -lives >= 0)
                         
                                     {
-                                    this.lives= (this.lives -lives).toShort()
+                                    this.lives= (this.lives -lives).toShort();
+    
 
                                     }
                                 
                         else {
-                            this.lives= 0
+                            this.lives= 0;
+    
 
                         }
                             
@@ -211,7 +227,8 @@ var lives = lives
 
     public setStartLives(startLives: number){
 var startLives = startLives
-this.startLives= startLives
+this.startLives= startLives;
+    
 }
 
 

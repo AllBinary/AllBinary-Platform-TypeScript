@@ -58,8 +58,10 @@ public constructor (transformInfoInterface: TransformInfoInterface)
     var billingAddressesEntity: ShippingAddressesEntity = new ShippingAddressesEntity(this.getWeblisketSession()!.getUserName());
         
         
-
-this.streetAddressList= billingAddressesEntity!.get()
+;
+    
+this.streetAddressList= billingAddressesEntity!.get();
+    
 
                         if(this.streetAddressList == 
                                     null
@@ -79,7 +81,8 @@ this.streetAddressList= billingAddressesEntity!.get()
     var size: number = streetAddressList!.size()!;
         
         
-
+;
+    
 
 
 
@@ -91,15 +94,19 @@ this.streetAddressList= billingAddressesEntity!.get()
 index < size; index++)
         {
 
-    var streetAddress: StreetAddress = streetAddressList!.get(index) as StreetAddress;
-        
-        
+    var streetAddress: StreetAddress = streetAddressList!.get(index);
 
+                         as StreetAddress;
+        
+        
+;
+    
 
                         if(streetAddress!.isValid() == Boolean.FALSE)
                         
                                     {
-                                    streetAddressList!.remove(streetAddress)
+                                    streetAddressList!.remove(streetAddress);
+    
 
                                     }
                                 

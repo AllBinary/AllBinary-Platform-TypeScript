@@ -75,14 +75,18 @@ var timer = timer
 
                             //For kotlin this is before the body of the constructor.
                     
-this.timer= timer
-this.set()
+this.timer= timer;
+    
+this.set();
+    
 
     var myFont: MyFont = MyFont.getInstance()!;
         
         
-
-this.offset= myFont!.stringWidth(this.TIME_STRING) +myFont!.stringWidth(3)
+;
+    
+this.offset= myFont!.stringWidth(this.TIME_STRING) +myFont!.stringWidth(3);
+    
 
                         if(direction == 0)
                         
@@ -129,20 +133,25 @@ var timer = timer
 
 
     public update(){
-this.timer.update()
-this.set()
+this.timer.update();
+    
+this.set();
+    
 }
 
 
     set(){
-this.string= timer.getTimeChars()
-totalDigits= timer.getCurrentTotalDigits()
+this.string= timer.getTimeChars();
+    
+totalDigits= timer.getCurrentTotalDigits();
+    
 }
 
 
     public paint(graphics: Graphics){
 var graphics = graphics
-super.paint(graphics, TIME_CHAR_ARRAY, 0, TIME_CHAR_ARRAY.length, string, 0, totalDigits, offset)
+super.paint(graphics, TIME_CHAR_ARRAY, 0, TIME_CHAR_ARRAY.length, string, 0, totalDigits, offset);
+    
 }
 
 

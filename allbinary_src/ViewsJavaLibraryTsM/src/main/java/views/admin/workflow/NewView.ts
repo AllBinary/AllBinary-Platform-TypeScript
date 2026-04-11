@@ -74,11 +74,17 @@ public constructor (transformInfoInterface: TransformInfoInterface)
                             //For kotlin this is before the body of the constructor.
                     
 
-    var httpTransformInfoInterface: TransformInfoHttpInterface = this.getTransformInfoInterface() as TransformInfoHttpInterface;
-        
-        
+    var httpTransformInfoInterface: TransformInfoHttpInterface = this.getTransformInfoInterface();
 
-this.workFlowInterface= NewWorkFlowFactory.getInstance()!.getInstance(abeClientInformation, httpTransformInfoInterface!.getPropertiesHashMap()!.get(DynamicObjectData.NAME) as String)
+                         as TransformInfoHttpInterface;
+        
+        
+;
+    
+this.workFlowInterface= NewWorkFlowFactory.getInstance()!.getInstance(abeClientInformation, httpTransformInfoInterface!.getPropertiesHashMap()!.get(DynamicObjectData.NAME);
+
+                         as String);
+    
 }
 
 
@@ -91,13 +97,16 @@ this.workFlowInterface= NewWorkFlowFactory.getInstance()!.getInstance(abeClientI
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return Boolean.TRUE;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("Failed to validate", this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put("Failed to validate", this, commonStrings!.IS_VALID, e);
+    
 
                                     }
                                 
@@ -119,21 +128,28 @@ this.workFlowInterface= NewWorkFlowFactory.getInstance()!.getInstance(abeClientI
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("Please Contact Administrator")
+;
+    
+stringBuffer!.append("Please Contact Administrator");
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e)
+                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e);
+    
 
                                     }
                                 

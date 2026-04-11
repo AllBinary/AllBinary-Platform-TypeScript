@@ -102,7 +102,8 @@ public constructor (extension: string){
 
             super();
             var extension = extension
-this.extension= extension
+this.extension= extension;
+    
 }
 
 
@@ -127,32 +128,50 @@ var base = base
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(URLGLOBALS.getMainPath())
-stringBuffer!.append(FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH)
-stringBuffer!.append(href)
+;
+    
+stringBuffer!.append(URLGLOBALS.getMainPath());
+    
+stringBuffer!.append(FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH);
+    
+stringBuffer!.append(href);
+    
 
     var abPath: AbPath = AbFilePath(stringBuffer!.toString()) as AbPath;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.XMLLOGGING))
                         
                                     {
-                                    stringBuffer!.delete(0, stringBuffer!.length())
-stringBuffer!.append(ATTEMPT)
-stringBuffer!.append(href)
-stringBuffer!.append(BASE)
-stringBuffer!.append(base)
-stringBuffer!.append(NEW_PATH)
-stringBuffer!.append(abPath!.toString())
-stringBuffer!.append(NOTE)
-stringBuffer!.append(FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH)
-stringBuffer!.append(URL_GLOBAL)
-stringBuffer!.append(REQUIRED_EXTENSION)
-stringBuffer!.append(extension)
-logUtil!.put(stringBuffer!.toString(), this, RESOLVE)
+                                    stringBuffer!.delete(0, stringBuffer!.length());
+    
+stringBuffer!.append(ATTEMPT);
+    
+stringBuffer!.append(href);
+    
+stringBuffer!.append(BASE);
+    
+stringBuffer!.append(base);
+    
+stringBuffer!.append(NEW_PATH);
+    
+stringBuffer!.append(abPath!.toString());
+    
+stringBuffer!.append(NOTE);
+    
+stringBuffer!.append(FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH);
+    
+stringBuffer!.append(URL_GLOBAL);
+    
+stringBuffer!.append(REQUIRED_EXTENSION);
+    
+stringBuffer!.append(extension);
+    
+logUtil!.put(stringBuffer!.toString(), this, RESOLVE);
+    
 
                                     }
                                 
@@ -163,14 +182,18 @@ logUtil!.put(stringBuffer!.toString(), this, RESOLVE)
                         return StreamSource(CryptFileReader(TransformInfoTemplateData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoTemplateData.getInstance()!.ENCRYPTED_EXTENSION).
                             getInputStream(abPath));
     
-} catch(e: TransformerException)
+
+                //: 
+} catch(e) 
             {
 
 
 
                             throw e
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
 
 
@@ -188,17 +211,25 @@ logUtil!.put(stringBuffer!.toString(), this, RESOLVE)
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(URLGLOBALS.getMainPath())
-stringBuffer!.append(FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH)
-stringBuffer!.append(IMPORT_URL)
+;
+    
+stringBuffer!.append(URLGLOBALS.getMainPath());
+    
+stringBuffer!.append(FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH);
+    
+stringBuffer!.append(IMPORT_URL);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
 

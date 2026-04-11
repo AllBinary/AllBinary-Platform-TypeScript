@@ -66,7 +66,8 @@ public constructor (request: HttpServletRequest)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.processMultipartRequest(request)
+this.processMultipartRequest(request);
+    
 }
 
 public constructor (pageContext: PageContext)                        
@@ -79,12 +80,16 @@ public constructor (pageContext: PageContext)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.processMultipartRequest(pageContext!.getRequest() as HttpServletRequest)
+this.processMultipartRequest(pageContext!.getRequest();
+
+                         as HttpServletRequest);
+    
 }
 
 
     setSpecial(){
-this.special= true
+this.special= true;
+    
 }
 
 
@@ -93,15 +98,17 @@ var request = request
 
         try {
             
-    var specialRequest: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var specialRequest: HashMap<any, any> = new HashMap<any, any>();
         
         
-
+;
+    
 
     var multipartRequestList: List = AbFileUploadFactory.getInstance()!.getFileItemStreamList(request)!;
         
         
-
+;
+    
 
                         if(multipartRequestList != 
                                     null
@@ -112,21 +119,24 @@ var request = request
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
                         
                                     {
-                                    logUtil!.put("FileItem List Size: " +multipartRequestList!.size, this, "processMultipartRequest()")
+                                    logUtil!.put("FileItem List Size: " +multipartRequestList!.size, this, "processMultipartRequest()");
+    
 
                                     }
                                 
 
-    var fileItemArray: any = {}[] = multipartRequestList!.toArray()!;
+    var fileItemArray: any[] = multipartRequestList!.toArray()!;
         
         
-
+;
+    
 
     var size: number = fileItemArray!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -141,22 +151,26 @@ index < size; index++)
     var fileItem: FileItem = fileItemArray[index]! as FileItem;
         
         
-
+;
+    
 
     var name: string = fileItem!.getName()!;
         
         
-
+;
+    
 
                         if(StringValidationUtil.getInstance()!.isEmpty(name))
                         
                                     {
-                                    specialRequest!.put(fileItem!.getFieldName(), fileItem!.getString())
+                                    specialRequest!.put(fileItem!.getFieldName(), fileItem!.getString());
+    
 
                                     }
                                 
                         else {
-                            specialRequest!.put(fileItem!.getFieldName(), fileItem)
+                            specialRequest!.put(fileItem!.getFieldName(), fileItem);
+    
 
                         }
                             
@@ -166,38 +180,49 @@ index < size; index++)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
                         
                                     {
-                                    logUtil!.put("Special Request Data: " +specialRequest!.toString(), this, "processMultipartRequest()")
+                                    logUtil!.put("Special Request Data: " +specialRequest!.toString(), this, "processMultipartRequest()");
+    
 
                                     }
                                 
-this.setSpecial()
-this.setMap(specialRequest)
+this.setSpecial();
+    
+this.setMap(specialRequest);
+    
 
                                     }
                                 
-} catch(e: InvalidContentTypeException)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
                         
                                     {
-                                    logUtil!.put("Using Normal RequestParams", this, "processMultipartRequest()")
+                                    logUtil!.put("Using Normal RequestParams", this, "processMultipartRequest()");
+    
 
                                     }
                                 
-super.setMap(request.getParameterMap())
+super.setMap(request.getParameterMap());
+    
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUESTERROR))
                         
                                     {
-                                    logUtil!.put("Should Not Occur", this, "processMultipartRequest()")
+                                    logUtil!.put("Should Not Occur", this, "processMultipartRequest()");
+    
 
                                     }
                                 
-super.setMap(request.getParameterMap())
+super.setMap(request.getParameterMap());
+    
 }
 
 }
@@ -205,7 +230,7 @@ super.setMap(request.getParameterMap())
 
                 //@Throws(Error::class)
             
-    public toHashMap(): HashMap<Any, Any>{
+    public toHashMap(): HashMap<any, any>{
 
                         if(this.special)
                         
@@ -214,7 +239,9 @@ super.setMap(request.getParameterMap())
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getMap() as HashMap<Any, Any>;
+                        return this.getMap();
+
+                         as HashMap<any, any>;
     
 
                                     }
@@ -225,6 +252,8 @@ super.setMap(request.getParameterMap())
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.toHashMap();
+
+                        ;
     
 
                         }

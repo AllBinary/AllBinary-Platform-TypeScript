@@ -30,7 +30,8 @@ public constructor (collidableDestroyableDamageableLayer: SpecialGameInputInterf
 
             super();
             var collidableDestroyableDamageableLayer = collidableDestroyableDamageableLayer
-this.specialGameInputInterface= collidableDestroyableDamageableLayer
+this.specialGameInputInterface= collidableDestroyableDamageableLayer;
+    
 }
 
 

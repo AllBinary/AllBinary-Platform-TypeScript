@@ -60,8 +60,10 @@ public constructor (teamName: string, teamId: number){
             super();
             var teamName = teamName
 var teamId = teamId
-this.setName(teamName)
-this.teamId= teamId
+this.setName(teamName);
+    
+this.teamId= teamId;
+    
 }
 
 
@@ -77,17 +79,24 @@ this.teamId= teamId
 
     public setName(name: string){
     //var name = name
-this.name= name
+this.name= name;
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(GROUP_NAME_LABEL)
-stringBuffer!.append(this.name)
-stringBuffer!.append(ID_LABEL)
-stringBuffer!.appendshort(this.teamId)
-this.string= stringBuffer!.toString()
+;
+    
+stringBuffer!.append(GROUP_NAME_LABEL);
+    
+stringBuffer!.append(this.name);
+    
+stringBuffer!.append(ID_LABEL);
+    
+stringBuffer!.appendshort(this.teamId);
+    
+this.string= stringBuffer!.toString();
+    
 }
 
 

@@ -101,29 +101,36 @@ public constructor (rectangle: Rectangle, backgroundBasicColor: BasicColor, fore
                 //var rectangle = rectangle
     //var backgroundBasicColor = backgroundBasicColor
     //var foregroundBasicColor = foregroundBasicColor
-this.foregroundBasicColor= foregroundBasicColor
-label= NAME
-this.rectangle= rectangle
+this.foregroundBasicColor= foregroundBasicColor;
+    
+label= NAME;
+    
+this.rectangle= rectangle;
+    
 
     var features: Features = Features.getInstance()!;
         
         
-
+;
+    
 
     var isOpenGL: boolean = features.isDefault(OpenGLFeatureFactory.getInstance()!.OPENGL)!;
         
         
-
+;
+    
 
     var BORDER: number = 0;
         
         
-
+;
+    
 
                         if(J2MEUtil.isHTML() || (AndroidUtil.isAndroid() && isOpenGL))
                         
                                     {
-                                    BORDER= MyFont.getInstance()!.charWidth() /2
+                                    BORDER= MyFont.getInstance()!.charWidth() /2;
+    
 
                                     }
                                 
@@ -131,30 +138,36 @@ this.rectangle= rectangle
                         if(AndroidUtil.isAndroid() || J2MEUtil.isJ2SE() || SWTUtil.isSWT)
                         
                                     {
-                                    BORDER= MyFont.getInstance()!.charWidth()
+                                    BORDER= MyFont.getInstance()!.charWidth();
+    
 
                                     }
                                 
                         else {
-                            BORDER= MyFont.getInstance()!.charWidth() *2
+                            BORDER= MyFont.getInstance()!.charWidth() *2;
+    
 
                         }
                             
-this.BORDER= BORDER
+this.BORDER= BORDER;
+    
 
                         if(J2MEUtil.isJ2ME())
                         
                                     {
-                                    this.animationInterface= NullAnimationFactory.getFactoryInstance()!.getInstance(0)
+                                    this.animationInterface= NullAnimationFactory.getFactoryInstance()!.getInstance(0);
+    
 
                                     }
                                 
                         else {
-                            this.animationInterface= RectangleFilledAnimation(this.rectangle.getWidth(), this.rectangle.getHeight(), BasicColorFactory.getInstance()!.TRANSPARENT_GREY)
+                            this.animationInterface= RectangleFilledAnimation(this.rectangle.getWidth(), this.rectangle.getHeight(), BasicColorFactory.getInstance()!.TRANSPARENT_GREY);
+    
 
                         }
                             
-this.init(rectangle)
+this.init(rectangle);
+    
 }
 
 
@@ -162,49 +175,58 @@ this.init(rectangle)
             
     public init(rectangle: Rectangle){
     //var rectangle = rectangle
-this.rectangle= rectangle
+this.rectangle= rectangle;
+    
 
     var myFont: MyFont = MyFont.getInstance()!;
         
         
-
+;
+    
 
     var heightOffset: number = rectangle.getHeight() -(myFont!.DEFAULT_CHAR_HEIGHT *NAME.length);
         
         
-
+;
+    
 
                         if(OpenGLFeatureUtil.getInstance()!.isAnyThreed())
                         
                                     {
-                                    heightOffset -= myFont!.DEFAULT_CHAR_HEIGHT +2
+                                    heightOffset -= myFont!.DEFAULT_CHAR_HEIGHT +2;
+    
 
                         if(AndroidUtil.isAndroid())
                         
                                     {
-                                    heightOffset= myFont!.DEFAULT_CHAR_HEIGHT
+                                    heightOffset= myFont!.DEFAULT_CHAR_HEIGHT;
+    
 
                                     }
                                 
                         else {
-                            heightOffset -= myFont!.DEFAULT_CHAR_HEIGHT +2
+                            heightOffset -= myFont!.DEFAULT_CHAR_HEIGHT +2;
+    
 
                         }
                             
 
                                     }
                                 
-this.offset= (heightOffset shr 1)
+this.offset= (heightOffset shr 1);
+    
 
     var width: number = this.rectangle.getWidth()!;
         
         
-
+;
+    
 
     var height: number = this.rectangle.getHeight()!;
         
         
-
+;
+    
 
                         if(J2MEUtil.isJ2ME())
                         
@@ -217,9 +239,12 @@ this.offset= (heightOffset shr 1)
     var rectangleFilledAnimation: RectangleFilledAnimation = this.animationInterface as RectangleFilledAnimation;
         
         
-
-rectangleFilledAnimation!.setWidth(width)
-rectangleFilledAnimation!.setHeight(height)
+;
+    
+rectangleFilledAnimation!.setWidth(width);
+    
+rectangleFilledAnimation!.setHeight(height);
+    
 
                         }
                             
@@ -236,31 +261,40 @@ rectangleFilledAnimation!.setHeight(height)
     var point: GPoint = this.rectangle.getPoint()!;
         
         
-
+;
+    
 
     var x: number = point.getX()!;
         
         
-
+;
+    
 
     var y: number = point.getY()!;
         
         
-
+;
+    
 
     var width: number = this.rectangle.getWidth()!;
         
         
-
+;
+    
 
     var height: number = this.rectangle.getHeight()!;
         
         
-
-this.animationInterface!.paint(graphics, x, y)
-this.basicSetColorUtil!.setBasicColorP(graphics, this.foregroundBasicColor)
-drawStringUtil!.paintVerticle(graphics, label, x +BORDER, y +offset, 0)
-graphics.drawRect(x, y, width, height)
+;
+    
+this.animationInterface!.paint(graphics, x, y);
+    
+this.basicSetColorUtil!.setBasicColorP(graphics, this.foregroundBasicColor);
+    
+drawStringUtil!.paintVerticle(graphics, label, x +BORDER, y +offset, 0);
+    
+graphics.drawRect(x, y, width, height);
+    
 }
 
 

@@ -55,8 +55,10 @@ public constructor (transformInfoInterface: TransformInfoInterface)
     var billingAddressesEntity: BillingAddressesEntity = new BillingAddressesEntity(this.getWeblisketSession()!.getUserName());
         
         
-
-this.streetAddresses= billingAddressesEntity!.get()
+;
+    
+this.streetAddresses= billingAddressesEntity!.get();
+    
 
                         if(this.streetAddresses == 
                                     null

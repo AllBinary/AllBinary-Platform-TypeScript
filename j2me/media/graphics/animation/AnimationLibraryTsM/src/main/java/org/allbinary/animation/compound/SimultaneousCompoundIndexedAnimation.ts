@@ -49,7 +49,8 @@ public constructor (animationInterfaceArray: Animation[], animationBehavior: Ani
 
                             //For kotlin this is before the body of the constructor.
                     
-this.animationInterfaceArray= animationInterfaceArray
+this.animationInterfaceArray= animationInterfaceArray;
+    
 }
 
 
@@ -57,7 +58,8 @@ this.animationInterfaceArray= animationInterfaceArray
     //var frameIndex = frameIndex
 
     var indexedAnimation: IndexedAnimation
-
+;
+    
 
 
 
@@ -69,8 +71,10 @@ this.animationInterfaceArray= animationInterfaceArray
         
 --index >= 0; )
         {
-indexedAnimation= this.animationInterfaceArray[index]! as IndexedAnimation
-indexedAnimation!.setFrame(frameIndex)
+indexedAnimation= this.animationInterfaceArray[index]! as IndexedAnimation;
+    
+indexedAnimation!.setFrame(frameIndex);
+    
 }
 
 }
@@ -81,12 +85,15 @@ indexedAnimation!.setFrame(frameIndex)
     var indexedAnimation: IndexedAnimation = this.animationInterfaceArray[0]! as IndexedAnimation;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return indexedAnimation!.getFrame();
+
+                        ;
     
 }
 
@@ -96,12 +103,15 @@ indexedAnimation!.setFrame(frameIndex)
     var indexedAnimation: IndexedAnimation = this.animationInterfaceArray[0]! as IndexedAnimation;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return indexedAnimation!.getSize();
+
+                        ;
     
 }
 
@@ -109,7 +119,8 @@ indexedAnimation!.setFrame(frameIndex)
     public previousFrame(){
 
     var indexedAnimation: IndexedAnimation
-
+;
+    
 
 
 
@@ -121,24 +132,28 @@ indexedAnimation!.setFrame(frameIndex)
         
 --index >= 0; )
         {
-indexedAnimation= this.animationInterfaceArray[index]! as IndexedAnimation
-indexedAnimation!.previousFrame()
+indexedAnimation= this.animationInterfaceArray[index]! as IndexedAnimation;
+    
+indexedAnimation!.previousFrame();
+    
 }
 
 }
 
 
-    public setSequence(sequence: IntArray){
+    public setSequence(sequence: number[]){
     //var sequence = sequence
 }
 
 
-    public getSequence(): IntArray{
+    public getSequence(): number[]{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return PrimitiveIntUtil.getArrayInstance();
+
+                        ;
     
 }
 
@@ -157,7 +172,8 @@ indexedAnimation!.previousFrame()
         
 --index >= 0; )
         {
-this.animationInterfaceArray[index]!.nextFrame()
+this.animationInterfaceArray[index]!.nextFrame();
+    
 }
 
 }
@@ -172,7 +188,8 @@ this.animationInterfaceArray[index]!.nextFrame()
                 ;
         
         
-
+;
+    
 
 
 
@@ -183,7 +200,8 @@ this.animationInterfaceArray[index]!.nextFrame()
         
 index < size; index++)
         {
-this.animationInterfaceArray[index]!.paint(graphics, x, y)
+this.animationInterfaceArray[index]!.paint(graphics, x, y);
+    
 }
 
 }
@@ -199,7 +217,8 @@ this.animationInterfaceArray[index]!.paint(graphics, x, y)
                 ;
         
         
-
+;
+    
 
 
 
@@ -210,7 +229,8 @@ this.animationInterfaceArray[index]!.paint(graphics, x, y)
         
 index < size; index++)
         {
-this.animationInterfaceArray[index]!.paintThreed(graphics, x, y, z)
+this.animationInterfaceArray[index]!.paintThreed(graphics, x, y, z);
+    
 }
 
 }
@@ -228,7 +248,8 @@ this.animationInterfaceArray[index]!.paintThreed(graphics, x, y, z)
 
     public setAnimationInterfaceArray(animationInterfaceArray: Animation[]){
     //var animationInterfaceArray = animationInterfaceArray
-this.animationInterfaceArray= animationInterfaceArray
+this.animationInterfaceArray= animationInterfaceArray;
+    
 }
 
 

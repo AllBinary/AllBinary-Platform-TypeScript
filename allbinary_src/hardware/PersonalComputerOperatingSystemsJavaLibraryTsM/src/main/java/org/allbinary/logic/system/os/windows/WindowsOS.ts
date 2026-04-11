@@ -27,7 +27,8 @@ export class WindowsOS extends GenericOperatingSystem {
 public constructor (){
 
             super();
-            this.scalable= true
+            this.scalable= true;
+    
 }
 
 

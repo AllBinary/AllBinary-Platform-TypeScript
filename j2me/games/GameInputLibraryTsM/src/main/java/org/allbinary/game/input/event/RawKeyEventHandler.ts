@@ -69,12 +69,14 @@ export class RawKeyEventHandler
 public constructor (){
 
             super();
-            this.eventListenerInterfaceList= BasicArrayList()
+            this.eventListenerInterfaceList= BasicArrayList();
+    
 }
 
 
     public removeAllListeners(){
-this.eventListenerInterfaceList= BasicArrayList()
+this.eventListenerInterfaceList= BasicArrayList();
+    
 }
 
 
@@ -82,12 +84,14 @@ this.eventListenerInterfaceList= BasicArrayList()
     //var vector = vector
 
     var eventListenerInterface: RawKeyEventListener
-
+;
+    
 
     var size: number = vector.size()!;
         
         
-
+;
+    
 
 
 
@@ -98,8 +102,12 @@ this.eventListenerInterfaceList= BasicArrayList()
         
 index < size; index++)
         {
-eventListenerInterface= vector.get(index) as RawKeyEventListener
-this.addListener(eventListenerInterface)
+eventListenerInterface= vector.get(index);
+
+                         as RawKeyEventListener;
+    
+this.addListener(eventListenerInterface);
+    
 }
 
 }
@@ -108,10 +116,13 @@ this.addListener(eventListenerInterface)
     public addListenerSingleThreaded(eventListenerInterface: RawKeyEventListener){
     //var eventListenerInterface = eventListenerInterface
 
-                        if(!this.eventListenerInterfaceList!.contains(eventListenerInterface))
+                        if(!this.eventListenerInterfaceList!.contains(eventListenerInterface);
+
+                        )
                         
                                     {
-                                    this.eventListenerInterfaceList!.add(eventListenerInterface)
+                                    this.eventListenerInterfaceList!.add(eventListenerInterface);
+    
 
                                     }
                                 
@@ -121,10 +132,13 @@ this.addListener(eventListenerInterface)
     public addListener(eventListenerInterface: RawKeyEventListener){
     //var eventListenerInterface = eventListenerInterface
 
-                        if(!this.eventListenerInterfaceList!.contains(eventListenerInterface))
+                        if(!this.eventListenerInterfaceList!.contains(eventListenerInterface);
+
+                        )
                         
                                     {
-                                    this.eventListenerInterfaceList!.add(eventListenerInterface)
+                                    this.eventListenerInterfaceList!.add(eventListenerInterface);
+    
 
                                     }
                                 
@@ -133,13 +147,15 @@ this.addListener(eventListenerInterface)
 
     public removeListenerSingleThreaded(eventListenerInterface: RawKeyEventListener){
     //var eventListenerInterface = eventListenerInterface
-this.eventListenerInterfaceList!.remove(eventListenerInterface)
+this.eventListenerInterfaceList!.remove(eventListenerInterface);
+    
 }
 
 
     public removeListener(eventListenerInterface: RawKeyEventListener){
     //var eventListenerInterface = eventListenerInterface
-this.eventListenerInterfaceList!.remove(eventListenerInterface)
+this.eventListenerInterfaceList!.remove(eventListenerInterface);
+    
 }
 
 
@@ -151,30 +167,41 @@ this.eventListenerInterfaceList!.remove(eventListenerInterface)
     //var repeated = repeated
 
     var eventListenerInterface: RawKeyEventListener
-
+;
+    
 
     var index: number = 0;
         
         
-
+;
+    
 
         while(index < this.eventListenerInterfaceList!.size())
         {
 
         try {
-            eventListenerInterface= this.eventListenerInterfaceList!.get(index) as RawKeyEventListener
-this.process(keyCode, deviceId, repeated, eventListenerInterface)
-} catch(e: Exception)
+            eventListenerInterface= this.eventListenerInterfaceList!.get(index);
+
+                         as RawKeyEventListener;
+    
+this.process(keyCode, deviceId, repeated, eventListenerInterface);
+    
+
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e);
+    
 }
 
-index++
+index++;
+    
 }
 
 }
@@ -187,7 +214,8 @@ index++
     //var deviceId = deviceId
     //var repeated = repeated
     //var eventListenerInterface = eventListenerInterface
-eventListenerInterface!.onEvent(keyCode, deviceId, repeated)
+eventListenerInterface!.onEvent(keyCode, deviceId, repeated);
+    
 }
 
 
@@ -206,36 +234,51 @@ eventListenerInterface!.onEvent(keyCode, deviceId, repeated)
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(TOTAL_LISTENERS)
-stringBuffer!.appendint(this.eventListenerInterfaceList!.size())
+;
+    
+stringBuffer!.append(TOTAL_LISTENERS);
+    
+stringBuffer!.appendint(this.eventListenerInterfaceList!.size());
+    
 
     var eventListenerInterface: RawKeyEventListener
-
+;
+    
 
     var index: number = 0;
         
         
-
+;
+    
 
         while(index < this.eventListenerInterfaceList!.size())
         {
 
         try {
-            eventListenerInterface= this.eventListenerInterfaceList!.get(index) as RawKeyEventListener
-stringBuffer!.append(LISTENER_LABEL)
-stringBuffer!.append(eventListenerInterface!.toString())
-} catch(e: Exception)
+            eventListenerInterface= this.eventListenerInterfaceList!.get(index);
+
+                         as RawKeyEventListener;
+    
+stringBuffer!.append(LISTENER_LABEL);
+    
+stringBuffer!.append(eventListenerInterface!.toString());
+    
+
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.TOSTRING, e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.TOSTRING, e);
+    
 }
 
-index++
+index++;
+    
 }
 
 
@@ -243,6 +286,8 @@ index++
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

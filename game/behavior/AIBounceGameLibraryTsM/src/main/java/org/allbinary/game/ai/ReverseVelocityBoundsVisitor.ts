@@ -51,13 +51,18 @@ public constructor (layerInterface: LayerInterface){
 
             super();
             var layerInterface = layerInterface
-this.layerInterface= layerInterface
+this.layerInterface= layerInterface;
+    
 
     var velocityInterfaceCompositeInterface: VelocityInterfaceCompositeInterface = layerInterface as VelocityInterfaceCompositeInterface;
         
         
+;
+    
+this.velocityInterface= velocityInterfaceCompositeInterface!.getVelocityProperties();
 
-this.velocityInterface= velocityInterfaceCompositeInterface!.getVelocityProperties() as VelocityInterface
+                         as VelocityInterface;
+    
 }
 
 
@@ -67,6 +72,8 @@ this.velocityInterface= velocityInterfaceCompositeInterface!.getVelocityProperti
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.layerInterface!.getXP();
+
+                        ;
     
 }
 
@@ -77,6 +84,8 @@ this.velocityInterface= velocityInterfaceCompositeInterface!.getVelocityProperti
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.layerInterface!.getYP();
+
+                        ;
     
 }
 
@@ -84,28 +93,36 @@ this.velocityInterface= velocityInterfaceCompositeInterface!.getVelocityProperti
     public minX(){
 
                         if(this.velocityInterface!.getVelocityXBasicDecimalP()!.getUnscaled() < 0)
-                        this.velocityInterface!.getVelocityXBasicDecimalP()!.multiply( -1)
+                        this.velocityInterface!.getVelocityXBasicDecimalP()!.multiply( -1);
+
+                        
 }
 
 
     public maxX(){
 
                         if(this.velocityInterface!.getVelocityXBasicDecimalP()!.getUnscaled() > 0)
-                        this.velocityInterface!.getVelocityXBasicDecimalP()!.multiply( -1)
+                        this.velocityInterface!.getVelocityXBasicDecimalP()!.multiply( -1);
+
+                        
 }
 
 
     public minY(){
 
                         if(this.velocityInterface!.getVelocityYBasicDecimalP()!.getUnscaled() < 0)
-                        this.velocityInterface!.getVelocityYBasicDecimalP()!.multiply( -1)
+                        this.velocityInterface!.getVelocityYBasicDecimalP()!.multiply( -1);
+
+                        
 }
 
 
     public maxY(){
 
                         if(this.velocityInterface!.getVelocityYBasicDecimalP()!.getUnscaled() > 0)
-                        this.velocityInterface!.getVelocityYBasicDecimalP()!.multiply( -1)
+                        this.velocityInterface!.getVelocityYBasicDecimalP()!.multiply( -1);
+
+                        
 }
 
 

@@ -18,10 +18,13 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { HashMap } from "../../../../../../../../java/util/HashMap.js";
 
     
-import { Vector } from "../../../../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../../../../java/util/Vector.js";
 
     
 import { TableMappingInterface } from "../../../../../../../../org/allbinary/data/tables/TableMappingInterface.js";
@@ -39,18 +42,22 @@ public constructor (userEmailEventConfigurationInterface: UserEmailEventConfigur
 
             super();
             var userEmailEventConfigurationInterface = userEmailEventConfigurationInterface
-this.userEmailEventConfigurationInterface= userEmailEventConfigurationInterface
+this.userEmailEventConfigurationInterface= userEmailEventConfigurationInterface;
+    
 }
 
 
-    public toHashMap(): HashMap<Any, Any>{
+    public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
         
         
-
-hashMap!.put(UserEmailEventConfigurationData.NAME, this.userEmailEventConfigurationInterface!.getName())
-hashMap!.put(UserEmailEventConfigurationData.LISTENER_CLASSPATH, this.userEmailEventConfigurationInterface!.getEventListenerClassPath())
+;
+    
+hashMap!.put(UserEmailEventConfigurationData.NAME, this.userEmailEventConfigurationInterface!.getName());
+    
+hashMap!.put(UserEmailEventConfigurationData.LISTENER_CLASSPATH, this.userEmailEventConfigurationInterface!.getEventListenerClassPath());
+    
 
 
 
@@ -79,9 +86,12 @@ hashMap!.put(UserEmailEventConfigurationData.LISTENER_CLASSPATH, this.userEmailE
     var vector: Vector = new Vector();
         
         
-
-vector.add(this.userEmailEventConfigurationInterface!.getName())
-vector.add(this.userEmailEventConfigurationInterface!.getEventListenerClassPath())
+;
+    
+vector.add(this.userEmailEventConfigurationInterface!.getName());
+    
+vector.add(this.userEmailEventConfigurationInterface!.getEventListenerClassPath());
+    
 
 
 

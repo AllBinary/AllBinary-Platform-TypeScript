@@ -53,8 +53,10 @@ public constructor ()
 
     public setStoreName(value: string){
 var value = value
-this.storeName= value
-this.getPropertiesHashMap()!.put(StoreFrontData.getInstance()!.NAME, this.storeName)
+this.storeName= value;
+    
+this.getPropertiesHashMap()!.put(StoreFrontData.getInstance()!.NAME, this.storeName);
+    
 }
 
 
@@ -67,7 +69,8 @@ this.getPropertiesHashMap()!.put(StoreFrontData.getInstance()!.NAME, this.storeN
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    logUtil!.put("Tag Start", this, "doStartTag")
+                                    logUtil!.put("Tag Start", this, "doStartTag");
+    
 
                                     }
                                 
@@ -76,10 +79,15 @@ this.getPropertiesHashMap()!.put(StoreFrontData.getInstance()!.NAME, this.storeN
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.doStartTag();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
+    
 
 
 

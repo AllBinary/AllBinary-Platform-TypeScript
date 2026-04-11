@@ -79,16 +79,21 @@ var soundsFactoryInterface = soundsFactoryInterface
     var logUtil: LogUtil = LogUtil.getInstance()!;
         
         
-
+;
+    
 
     var commonString: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonString!.START, THIS, commonString!.INIT)
-ProgressCanvasFactory.getInstance()!.addPortion(50, "Media Manager")
+;
+    
+logUtil!.put(commonString!.START, THIS, commonString!.INIT);
+    
+ProgressCanvasFactory.getInstance()!.addPortion(50, "Media Manager");
+    
 Sounds(soundsFactoryInterface).
-                            init()
+                            init();
+    
 }
 
 
@@ -97,10 +102,13 @@ Sounds(soundsFactoryInterface).
     public static shutdown(soundsFactoryInterface: SoundsFactoryInterface){
 var soundsFactoryInterface = soundsFactoryInterface
 Sounds(soundsFactoryInterface).
-                            stopAll()
+                            stopAll();
+    
 Sounds(soundsFactoryInterface).
-                            closeAll()
-System.gc()
+                            closeAll();
+    
+System.gc();
+    
 }
 
 
@@ -111,13 +119,16 @@ var type = type
     var logUtil: LogUtil = LogUtil.getInstance()!;
         
         
-
+;
+    
 
     var commonString: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonString!.START, THIS, "creatPlayer(InputStream)")
+;
+    
+logUtil!.put(commonString!.START, THIS, "creatPlayer(InputStream)");
+    
 
 
 
@@ -133,13 +144,16 @@ var locator = locator
     var logUtil: LogUtil = LogUtil.getInstance()!;
         
         
-
+;
+    
 
     var commonString: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonString!.START, THIS, "creatPlayer(locator)")
+;
+    
+logUtil!.put(commonString!.START, THIS, "creatPlayer(locator)");
+    
 
 
 
@@ -164,6 +178,8 @@ var protocol = protocol
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return StringUtil.getInstance()!.getArrayInstance();
+
+                        ;
     
 }
 
@@ -175,6 +191,8 @@ var content_type = content_type
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return StringUtil.getInstance()!.getArrayInstance();
+
+                        ;
     
 }
 

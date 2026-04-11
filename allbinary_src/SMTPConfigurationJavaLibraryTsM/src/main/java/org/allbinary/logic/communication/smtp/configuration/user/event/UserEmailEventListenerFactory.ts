@@ -43,24 +43,30 @@ export class UserEmailEventListenerFactory
     //var userEmailEventConfigurationInterface = userEmailEventConfigurationInterface
     //var userInterface = userInterface
 
-    var params: any = {}[] = new Array(1);
+    var params: any[] = new Array(1);
         
         
+;
+    
 
-
-    var classes: KClass<*>[] = new Array(1);
+    var classes: Function[] = new Array(1);
         
         
-
+;
+    
 classes[0]= 
                                     //Otherwise - expression - AssignExpr - value - ClassExpr
-
-params[0]= userInterface as Object
+;
+    
+params[0]= userInterface as Object;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return AbeFactory.getInstance()!.getInstance(abeClientInformation, userEmailEventConfigurationInterface!.getEventListenerClassPath(), classes, params) as UserEmailEventListenerInterface;
+                        return AbeFactory.getInstance()!.getInstance(abeClientInformation, userEmailEventConfigurationInterface!.getEventListenerClassPath(), classes, params);
+
+                         as UserEmailEventListenerInterface;
     
 }
 

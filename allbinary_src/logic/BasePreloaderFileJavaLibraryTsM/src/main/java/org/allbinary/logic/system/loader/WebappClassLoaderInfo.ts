@@ -34,7 +34,8 @@ export class WebappClassLoaderInfo
 
     public static setLoader(classLoader: ClassLoader){
 var classLoader = classLoader
-WebappClassLoaderInfo.classLoader= classLoader
+WebappClassLoaderInfo.classLoader= classLoader;
+    
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.

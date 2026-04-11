@@ -69,18 +69,22 @@ private constructor (){
     var contextConfigurationData: ContextConfigurationData = ContextConfigurationData.getInstance()!;
         
         
-
+;
+    
 
     var contextConfigurationNode: Node = DomSearchHelper.getNode(contextConfigurationData!.NAME, document.getChildNodes())!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return ContextConfigurationView(contextConfigurationNode).
-                            getContextConfigurationInterface() as ContextConfigurationInterface;
+                            getContextConfigurationInterface();
+
+                         as ContextConfigurationInterface;
     
 }
 
@@ -93,28 +97,34 @@ private constructor (){
     var abPath: AbPath = ContextConfigurationPathUtil.getAbPath(contextName)!;
         
         
-
+;
+    
 
     var contextConfigurationData: ContextConfigurationData = ContextConfigurationData.getInstance()!;
         
         
-
+;
+    
 
     var documentString: string = CryptFileReader(contextConfigurationData!.UNCRYPTED_EXTENSION, contextConfigurationData!.ENCRYPTED_EXTENSION).
                             get(abPath)!;
         
         
-
+;
+    
 
     var document: Document = DomDocumentHelper.create(documentString)!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getInstance(document);
+
+                        ;
     
 }
 

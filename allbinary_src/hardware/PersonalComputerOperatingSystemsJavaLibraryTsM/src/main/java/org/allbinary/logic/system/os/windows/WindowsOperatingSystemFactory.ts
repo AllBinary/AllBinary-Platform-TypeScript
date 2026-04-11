@@ -78,20 +78,24 @@ private constructor (){
     var operatingSystems: OperatingSystems = OperatingSystems.getInstance()!;
         
         
-
+;
+    
 
     var osName: string = SystemProperties.getInstance()!.getName()!;
         
         
-
+;
+    
 
     var operatingSystemInterface: GenericOperatingSystem
-
+;
+    
 
                         if(osName!.compareTo(operatingSystems!.WINDOWS_NT) == 0)
                         
                                     {
-                                    operatingSystemInterface= WindowsOS()
+                                    operatingSystemInterface= WindowsOS();
+    
 
                                     }
                                 
@@ -99,7 +103,8 @@ private constructor (){
                         if(osName!.compareTo(operatingSystems!.WINDOWS_10) == 0)
                         
                                     {
-                                    operatingSystemInterface= WindowsOS()
+                                    operatingSystemInterface= WindowsOS();
+    
 
                                     }
                                 
@@ -107,7 +112,8 @@ private constructor (){
                         if(osName!.compareTo(operatingSystems!.WINDOWS_11) == 0)
                         
                                     {
-                                    operatingSystemInterface= WindowsOS()
+                                    operatingSystemInterface= WindowsOS();
+    
 
                                     }
                                 
@@ -115,7 +121,8 @@ private constructor (){
                         if(osName!.compareTo(operatingSystems!.WINDOWS2000) == 0)
                         
                                     {
-                                    operatingSystemInterface= WindowsOS()
+                                    operatingSystemInterface= WindowsOS();
+    
 
                                     }
                                 
@@ -123,7 +130,8 @@ private constructor (){
                         if(osName!.compareTo(operatingSystems!.WINDOWS_XP) == 0)
                         
                                     {
-                                    operatingSystemInterface= WindowsOS()
+                                    operatingSystemInterface= WindowsOS();
+    
 
                                     }
                                 
@@ -131,7 +139,8 @@ private constructor (){
                         if(osName!.compareTo(operatingSystems!.WINDOWS_VISTA) == 0)
                         
                                     {
-                                    operatingSystemInterface= WindowsOS()
+                                    operatingSystemInterface= WindowsOS();
+    
 
                                     }
                                 
@@ -140,7 +149,8 @@ private constructor (){
                         if(operatingSystems!.isUnknownSpecificOSAllowed())
                         
                                     {
-                                    operatingSystemInterface= WindowsOS()
+                                    operatingSystemInterface= WindowsOS();
+    
 
                                     }
                                 
@@ -161,7 +171,9 @@ private constructor (){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return operatingSystemInterface;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.FACTORYERROR))
@@ -171,8 +183,10 @@ private constructor (){
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e);
+    
 
                                     }
                                 

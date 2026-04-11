@@ -18,7 +18,10 @@
 
 
 
-import { Hashtable } from "../../../../java/util/Hashtable.js";
+            import Hashtable from "@ohos.util.HashMap";
+        
+
+//import { Hashtable } from "../../../../java/util/Hashtable.js";
 
     
 import { ProgressCanvas } from "../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvas.js";
@@ -53,39 +56,54 @@ export class CreateGameRunnable
 
     private readonly demoGameMidlet: DemoGameMidlet
 
-    private readonly hashtable: Hashtable<Any, Any>
+    private readonly hashtable: Hashtable<any, any>
 
     private readonly startGameMidletEvent: DemoGameMidletEvent
-public constructor (demoGameMidlet: DemoGameMidlet, hashtable: Hashtable<Any, Any>){
+public constructor (demoGameMidlet: DemoGameMidlet, hashtable: Hashtable<any, any>){
 
             super();
             var demoGameMidlet = demoGameMidlet
 var hashtable = hashtable
-this.demoGameMidlet= demoGameMidlet
-this.hashtable= hashtable
-this.startGameMidletEvent= DemoGameMidletEvent(this, DemoGameMidletStateFactory.getInstance()!.START_GAME)
+this.demoGameMidlet= demoGameMidlet;
+    
+this.hashtable= hashtable;
+    
+this.startGameMidletEvent= DemoGameMidletEvent(this, DemoGameMidletStateFactory.getInstance()!.START_GAME);
+    
 }
 
 
     public run(){
 
         try {
-            logUtil!.put(commonStrings!.START_RUNNABLE, this, commonStrings!.RUN)
+            logUtil!.put(commonStrings!.START_RUNNABLE, this, commonStrings!.RUN);
+    
 
     var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
         
         
+;
+    
+this.demoGameMidlet!.commandAction(MyCommandsFactory.getInstance()!.SET_DISPLAYABLE, progressCanvas);
+    
+this.demoGameMidlet!.stopGameCanvasRunnableInterface();
+    
+this.demoGameMidlet!.setGameCanvasRunnableInterface(this.demoGameMidlet!.createGameCanvasRunnableInterface());
+    
+this.demoGameMidlet!.getGameCanvasRunnableInterface()!.setLoadStateHashtable(hashtable);
+    
+this.demoGameMidlet!.startGameCanvasRunnableInterface();
+    
+DemoGameMidletEventHandler.getInstance()!.fireEvent(this.startGameMidletEvent);
+    
+logUtil!.put(commonStrings!.END_RUNNABLE, this, commonStrings!.RUN);
+    
 
-this.demoGameMidlet!.commandAction(MyCommandsFactory.getInstance()!.SET_DISPLAYABLE, progressCanvas)
-this.demoGameMidlet!.stopGameCanvasRunnableInterface()
-this.demoGameMidlet!.setGameCanvasRunnableInterface(this.demoGameMidlet!.createGameCanvasRunnableInterface())
-this.demoGameMidlet!.getGameCanvasRunnableInterface()!.setLoadStateHashtable(hashtable)
-this.demoGameMidlet!.startGameCanvasRunnableInterface()
-DemoGameMidletEventHandler.getInstance()!.fireEvent(this.startGameMidletEvent)
-logUtil!.put(commonStrings!.END_RUNNABLE, this, commonStrings!.RUN)
-} catch(e: Exception)
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
+    
 }
 
 }

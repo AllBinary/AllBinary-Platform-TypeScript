@@ -47,7 +47,8 @@ private constructor ()
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setPlayerP(NoPlayer.NO_PLAYER)
+this.setPlayerP(NoPlayer.NO_PLAYER);
+    
 }
 
 

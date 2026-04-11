@@ -51,12 +51,14 @@ var aTheta = aTheta
     var newVector: BasicArrayList = new BasicArrayList();
         
         
-
+;
+    
 
     var size: number = this.pointBasicArrayList!.size()!;
         
         
-
+;
+    
 
 
 
@@ -68,29 +70,37 @@ var aTheta = aTheta
 index < size; index++)
         {
 
-    var secondPoint: GPoint = pointBasicArrayList!.get(index) as GPoint;
-        
-        
+    var secondPoint: GPoint = pointBasicArrayList!.get(index);
 
+                         as GPoint;
+        
+        
+;
+    
 
     var secondX: number = (secondPoint!.getX() *Math.cos(aTheta)) -(secondPoint!.getY() *Math.sin(aTheta));
         
         
-
+;
+    
 
     var secondY: number = (secondPoint!.getX() *Math.sin(aTheta)) +(secondPoint!.getY() *Math.cos(aTheta));
         
         
-
+;
+    
 
     var point: GPoint = PointFactory.getInstance()!.getInstance((secondX.toInt()), (secondY.toInt()))!;
         
         
-
-newVector!.add(point)
+;
+    
+newVector!.add(point);
+    
 }
 
-this.pointBasicArrayList= newVector
+this.pointBasicArrayList= newVector;
+    
 }
 
 

@@ -59,15 +59,20 @@ private constructor (){
 
     public init(view: View){
 var view = view
-super.init(view)
-frameProcessingTimeElapsed= this.getTimeDelayHelper()!.getStartTime()
-bestFrameProcessingTime= Integer.MAX_VALUE
-worstFrameProcessingTime= 0
+super.init(view);
+    
+frameProcessingTimeElapsed= this.getTimeDelayHelper()!.getStartTime();
+    
+bestFrameProcessingTime= Integer.MAX_VALUE;
+    
+worstFrameProcessingTime= 0;
+    
 }
 
 
     public nextFrame(){
-frameProcessingTimeElapsed= System.currentTimeMillis() -frameProcessingTimeElapsed
+frameProcessingTimeElapsed= System.currentTimeMillis() -frameProcessingTimeElapsed;
+    
 
                         if(firstTime != true)
                         
@@ -82,11 +87,13 @@ frameProcessingTimeElapsed= System.currentTimeMillis() -frameProcessingTimeElaps
                                     }
                                 
                         else {
-                            firstTime= false
+                            firstTime= false;
+    
 
                         }
                             
-super.nextFrame()
+super.nextFrame();
+    
 }
 
 
@@ -97,6 +104,8 @@ super.nextFrame()
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return StringMaker().
                             append(super.toString())!.append(" Worst: ")!.appendint(worstFrameProcessingTime)!.append(" Best: ")!.appendint(bestFrameProcessingTime)!.toString();
+
+                        ;
     
 }
 

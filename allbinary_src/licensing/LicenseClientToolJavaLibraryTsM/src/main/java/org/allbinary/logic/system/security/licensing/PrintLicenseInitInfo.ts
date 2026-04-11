@@ -51,15 +51,18 @@ var args = args
     var initInfo: PrintLicenseInitInfo = new PrintLicenseInitInfo(args);
         
         
-
-initInfo!.printInitInfo()
+;
+    
+initInfo!.printInitInfo();
+    
 }
 
 public constructor (options: string[]){
 
             super();
             var options = options
-LicenseInitInfoUtil.getInstance()!.setFilePath(PATH +PATH_GLOBALS.getInstance()!.INIT_PATH)
+LicenseInitInfoUtil.getInstance()!.setFilePath(PATH +PATH_GLOBALS.getInstance()!.INIT_PATH);
+    
 }
 
 
@@ -70,7 +73,8 @@ LicenseInitInfoUtil.getInstance()!.setFilePath(PATH +PATH_GLOBALS.getInstance()!
     var licenseInitInfoUtil: LicenseInitInfoUtil = LicenseInitInfoUtil.getInstance()!;
         
         
-
+;
+    
 
                         if(FileFactory.getInstance()!.isFile(licenseInitInfoUtil!.getFilePath()))
                         
@@ -80,12 +84,15 @@ LicenseInitInfoUtil.getInstance()!.setFilePath(PATH +PATH_GLOBALS.getInstance()!
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return licenseInitInfoUtil!.read();
+
+                        ;
     
 
                                     }
                                 
                         else {
-                            System.out.println("No Licence File at: " +licenseInitInfoUtil!.getFilePath())
+                            System.out.println("No Licence File at: " +licenseInitInfoUtil!.getFilePath());
+    
 
 
 
@@ -105,18 +112,22 @@ LicenseInitInfoUtil.getInstance()!.setFilePath(PATH +PATH_GLOBALS.getInstance()!
     var licenseInitInfo: LicenseInitInfo = this.getLicenseInitInfo()!;
         
         
-
-System.out.println("License ID: " +licenseInitInfo!.getLicenseId())
+;
+    
+System.out.println("License ID: " +licenseInitInfo!.getLicenseId());
+    
 
     var list: BasicArrayList = licenseInitInfo!.getServerList()!;
         
         
-
+;
+    
 
     var size: number = list.size()!;
         
         
-
+;
+    
 
 
 
@@ -127,13 +138,18 @@ System.out.println("License ID: " +licenseInitInfo!.getLicenseId())
         
 index < size; index++)
         {
-System.out.println("Lic Serv: " +list.get(index))
+System.out.println("Lic Serv: " +list.get(index));
+    
 }
 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-System.out.print("Error: " +e)
-e.printStackTrace()
+System.out.print("Error: " +e);
+    
+e.printStackTrace();
+    
 }
 
 }

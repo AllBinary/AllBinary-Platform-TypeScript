@@ -10,7 +10,7 @@ export class Encoder
          {
         
 
-    public static encode(value: ByteArray): string{
+    public static encode(value: number[]): string{
 var value = value
 
 
@@ -21,7 +21,7 @@ var value = value
 }
 
 
-    public static decode(value: string): ByteArray{
+    public static decode(value: string): number[]{
 var value = value
 
 

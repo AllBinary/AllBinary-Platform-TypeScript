@@ -59,8 +59,10 @@ var eventListenerInterface = eventListenerInterface
     var gameMidletEventListener: GameMidletEventListener = eventListenerInterface as GameMidletEventListener;
         
         
-
-gameMidletEventListener!.onGameEnd(eventObject)
+;
+    
+gameMidletEventListener!.onGameEnd(eventObject);
+    
 }
 
 

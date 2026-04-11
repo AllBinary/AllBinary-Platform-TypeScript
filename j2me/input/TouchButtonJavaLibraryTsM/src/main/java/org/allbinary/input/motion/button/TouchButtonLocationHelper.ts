@@ -48,18 +48,26 @@ public constructor (){
     var buttonSize: number = CommonButtons.getInstance()!.STANDARD_BUTTON_SIZE;
         
         
-
+;
+    
 
     var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
         
         
-
-this.totalColumns= displayInfo!.getLastWidth() /buttonSize
-this.totalRows= displayInfo!.getLastHeight() /buttonSize
-this.columnsRemainder= displayInfo!.getLastWidth() % buttonSize
-this.columnsRemainderHalf= (this.columnsRemainder shr 1)
-this.rowsRemainder= displayInfo!.getLastHeight() % buttonSize
-this.rowsRemainderHalf= (this.rowsRemainder shr 1)
+;
+    
+this.totalColumns= displayInfo!.getLastWidth() /buttonSize;
+    
+this.totalRows= displayInfo!.getLastHeight() /buttonSize;
+    
+this.columnsRemainder= displayInfo!.getLastWidth() % buttonSize;
+    
+this.columnsRemainderHalf= (this.columnsRemainder shr 1);
+    
+this.rowsRemainder= displayInfo!.getLastHeight() % buttonSize;
+    
+this.rowsRemainderHalf= (this.rowsRemainder shr 1);
+    
 }
 
 
@@ -128,24 +136,39 @@ this.rowsRemainderHalf= (this.rowsRemainder shr 1)
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("totalColumns: ")
-stringBuffer!.appendint(totalColumns)
-stringBuffer!.append(" totalRows: ")
-stringBuffer!.appendint(totalRows)
-stringBuffer!.append(" columnsRemainder: ")
-stringBuffer!.appendint(columnsRemainder)
-stringBuffer!.append(" rowsRemainder: ")
-stringBuffer!.appendint(rowsRemainder)
-stringBuffer!.append(" columnsRemainderHalf: ")
-stringBuffer!.appendint(columnsRemainderHalf)
-stringBuffer!.append(" rowsRemainderHalf: ")
-stringBuffer!.appendint(rowsRemainderHalf)
+;
+    
+stringBuffer!.append("totalColumns: ");
+    
+stringBuffer!.appendint(totalColumns);
+    
+stringBuffer!.append(" totalRows: ");
+    
+stringBuffer!.appendint(totalRows);
+    
+stringBuffer!.append(" columnsRemainder: ");
+    
+stringBuffer!.appendint(columnsRemainder);
+    
+stringBuffer!.append(" rowsRemainder: ");
+    
+stringBuffer!.appendint(rowsRemainder);
+    
+stringBuffer!.append(" columnsRemainderHalf: ");
+    
+stringBuffer!.appendint(columnsRemainderHalf);
+    
+stringBuffer!.append(" rowsRemainderHalf: ");
+    
+stringBuffer!.appendint(rowsRemainderHalf);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

@@ -18,13 +18,16 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { Calendar } from "../../java/util/Calendar.js";
 
     
 import { HashMap } from "../../java/util/HashMap.js";
 
     
-import { Vector } from "../../java/util/Vector.js";
+
+//import { Vector } from "../../java/util/Vector.js";
 
     
 import { HttpServletRequest } from "../../javax/servlet/http/HttpServletRequest.js";
@@ -81,61 +84,90 @@ export class PermissionItemsRequestHelper extends ModifyTable {
     private timeEntered: string
 
     private lastModified: string
-public constructor (hashMap: HashMap<Any, Any>, pageContext: PageContext){
+public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
             var hashMap = hashMap
 var pageContext = pageContext
-this.request= pageContext!.getRequest() as HttpServletRequest
-this.getFormData()
+this.request= pageContext!.getRequest();
+
+                         as HttpServletRequest;
+    
+this.getFormData();
+    
 }
 
 
     public getFormData(){
-this.id= request.getParameter(BasicItemData.ID)
-this.number= request.getParameter(BasicItemData.NUMBER)
-this.enabled= request.getParameter(EntryData.getInstance()!.ENABLE)
-this.who= request.getParameter(PermissionItemData.WHO)
-this.what= request.getParameter(PermissionItemData.WHAT)
-this.type= request.getParameter(PermissionItemData.TYPE)
-this.remoteAddr= request.getParameter(PermissionItemData.REMOTE_ADDR)
-this.startTime= request.getParameter(PermissionItemData.START_TIME)
-this.endTime= request.getParameter(PermissionItemData.END_TIME)
-this.price= request.getParameter(BasicItemData.PRICE)
-this.timeEntered= request.getParameter(EntryData.getInstance()!.TIMECREATED)
-this.lastModified= request.getParameter(EntryData.getInstance()!.LASTMODIFIED)
+this.id= request.getParameter(BasicItemData.ID);
+    
+this.number= request.getParameter(BasicItemData.NUMBER);
+    
+this.enabled= request.getParameter(EntryData.getInstance()!.ENABLE);
+    
+this.who= request.getParameter(PermissionItemData.WHO);
+    
+this.what= request.getParameter(PermissionItemData.WHAT);
+    
+this.type= request.getParameter(PermissionItemData.TYPE);
+    
+this.remoteAddr= request.getParameter(PermissionItemData.REMOTE_ADDR);
+    
+this.startTime= request.getParameter(PermissionItemData.START_TIME);
+    
+this.endTime= request.getParameter(PermissionItemData.END_TIME);
+    
+this.price= request.getParameter(BasicItemData.PRICE);
+    
+this.timeEntered= request.getParameter(EntryData.getInstance()!.TIMECREATED);
+    
+this.lastModified= request.getParameter(EntryData.getInstance()!.LASTMODIFIED);
+    
 }
 
 
-    getHashMap(): HashMap<Any, Any>{
+    getHashMap(): HashMap<any, any>{
 
-    var values: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var values: HashMap<any, any> = new HashMap<any, any>();
         
         
-
-values.put(BasicItemData.ID, this.id)
-values.put(BasicItemData.NUMBER, this.number)
-values.put(EntryData.getInstance()!.ENABLE, this.enabled)
-values.put(PermissionItemData.WHO, this.who)
-values.put(PermissionItemData.WHAT, this.what)
-values.put(PermissionItemData.TYPE, this.type)
-values.put(PermissionItemData.REMOTE_ADDR, this.remoteAddr)
-values.put(PermissionItemData.START_TIME, this.startTime)
-values.put(PermissionItemData.END_TIME, this.endTime)
-values.put(BasicItemData.PRICE, this.price)
+;
+    
+values.put(BasicItemData.ID, this.id);
+    
+values.put(BasicItemData.NUMBER, this.number);
+    
+values.put(EntryData.getInstance()!.ENABLE, this.enabled);
+    
+values.put(PermissionItemData.WHO, this.who);
+    
+values.put(PermissionItemData.WHAT, this.what);
+    
+values.put(PermissionItemData.TYPE, this.type);
+    
+values.put(PermissionItemData.REMOTE_ADDR, this.remoteAddr);
+    
+values.put(PermissionItemData.START_TIME, this.startTime);
+    
+values.put(PermissionItemData.END_TIME, this.endTime);
+    
+values.put(BasicItemData.PRICE, this.price);
+    
 
     var calendar: Calendar = Calendar.getInstance()!;
         
         
-
+;
+    
 
     var time: string = new calendar.getTimeInMillis() as Long.
-                            toString().toCharArray().concatToString()
-                                ;
+                            toString();
         
         
-
-values.put(EntryData.getInstance()!.LASTMODIFIED, time)
+;
+    
+values.put(EntryData.getInstance()!.LASTMODIFIED, time);
+    
 
 
 
@@ -152,42 +184,59 @@ values.put(EntryData.getInstance()!.LASTMODIFIED, time)
     var calendar: Calendar = Calendar.getInstance()!;
         
         
-
+;
+    
 
     var time: string = new calendar.getTimeInMillis() as Long.
-                            toString().toCharArray().concatToString()
-                                ;
+                            toString();
         
         
-
+;
+    
 
     var values: Vector = new Vector();
         
         
-
-values.add(this.id)
-values.add(this.number)
-values.add(this.enabled)
-values.add(this.who)
-values.add(this.what)
-values.add(this.type)
-values.add(this.remoteAddr)
-values.add(this.startTime)
-values.add(this.endTime)
-values.add(this.price)
-values.add(time)
-values.add(time)
-PermissionItemsEntityFactory.getInstance()!.getPermissionItemsEntityInstance()!.insert(values)
+;
+    
+values.add(this.id);
+    
+values.add(this.number);
+    
+values.add(this.enabled);
+    
+values.add(this.who);
+    
+values.add(this.what);
+    
+values.add(this.type);
+    
+values.add(this.remoteAddr);
+    
+values.add(this.startTime);
+    
+values.add(this.endTime);
+    
+values.add(this.price);
+    
+values.add(time);
+    
+values.add(time);
+    
+PermissionItemsEntityFactory.getInstance()!.getPermissionItemsEntityInstance()!.insert(values);
+    
 
     var success: string = "Successfully inserted " +id +" into items table";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put(success, this, "insert()")
+                                    logUtil!.put(success, this, "insert()");
+    
 
                                     }
                                 
@@ -197,18 +246,22 @@ PermissionItemsEntityFactory.getInstance()!.getPermissionItemsEntityInstance()!.
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to insert " +id +" into items table";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "inserts()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "inserts()", e);
+    
 
                                     }
                                 
@@ -226,17 +279,20 @@ PermissionItemsEntityFactory.getInstance()!.getPermissionItemsEntityInstance()!.
     public delete(): string{
 
         try {
-            PermissionItemsEntityFactory.getInstance()!.getPermissionItemsEntityInstance()!.delete(id)
+            PermissionItemsEntityFactory.getInstance()!.getPermissionItemsEntityInstance()!.delete(id);
+    
 
     var success: string = "Successfully deleted";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put(success, this, "delete()")
+                                    logUtil!.put(success, this, "delete()");
+    
 
                                     }
                                 
@@ -246,18 +302,22 @@ PermissionItemsEntityFactory.getInstance()!.getPermissionItemsEntityInstance()!.
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to delete";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "delete()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "delete()", e);
+    
 
                                     }
                                 
@@ -279,18 +339,22 @@ PermissionItemsEntityFactory.getInstance()!.getPermissionItemsEntityInstance()!.
     var success: string = "Update Pricing Successful";
         
         
+;
+    
 
-
-    var values: HashMap<Any, Any> = this.getHashMap()!;
+    var values: HashMap<any, any> = this.getHashMap()!;
         
         
-
-PermissionItemsEntityFactory.getInstance()!.getPermissionItemsEntityInstance()!.update(values)
+;
+    
+PermissionItemsEntityFactory.getInstance()!.getPermissionItemsEntityInstance()!.update(values);
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put(id +" " +success, this, "update()")
+                                    logUtil!.put(id +" " +success, this, "update()");
+    
 
                                     }
                                 
@@ -300,18 +364,22 @@ PermissionItemsEntityFactory.getInstance()!.getPermissionItemsEntityInstance()!.
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to update: " +id;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "update()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "update()", e);
+    
 
                                     }
                                 

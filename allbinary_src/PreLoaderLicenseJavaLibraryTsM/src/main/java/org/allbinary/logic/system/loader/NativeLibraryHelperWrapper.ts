@@ -42,7 +42,8 @@ public constructor (libraryName: string){
 
             super();
             var libraryName = libraryName
-this.setLibraryName(libraryName)
+this.setLibraryName(libraryName);
+    
 }
 
 
@@ -50,54 +51,69 @@ this.setLibraryName(libraryName)
             
     public load(){
 
-    var params: any = {}[] = new Array(1);
+    var params: any[] = new Array(1);
         
         
+;
+    
+params[0]= getLibraryName();
+    
 
-params[0]= getLibraryName()
-
-    var classes: KClass<*>[] = new Array(1);
+    var classes: Function[] = new Array(1);
         
         
+;
+    
+classes[0]= getLibraryName()!.constructor;
+    
+this.loader= NativeLibraryClassLoader(this.constructor.name.java.classLoader);
+    
 
-classes[0]= getLibraryName()!.::class
-this.loader= NativeLibraryClassLoader(this::class.java.classLoader)
-
-    var myClass: KClass<*> = loader.loadClass("dynamic.NativeLibraryHelper")!;
+    var myClass: Function = loader.loadClass("dynamic.NativeLibraryHelper")!;
         
         
-
+;
+    
 
     var constructor: Constructor = myClass!.getConstructor(classes)!;
         
         
-
-this.anyType= constructor.newInstance(params)
+;
+    
+this.anyType= constructor.newInstance(params);
+    
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
+;
+    
 
-
-    var method: Method = anyType!::class.getMethod(commonStrings!.LOAD, 
+    var method: Method = anyType!.constructor.name.getMethod(commonStrings!.LOAD, 
                             null)!;
         
         
-
+;
+    
 method.invoke(anyType, 
-                            null)
+                            null);
+    
 }
 
 
     public unload(){
 this.anyType= 
                                         null
-                                    
+                                    ;
+    
 this.loader= 
                                         null
-                                    
-System.gc()
-System.gc()
+                                    ;
+    
+System.gc();
+    
+System.gc();
+    
 }
 
 
@@ -123,7 +139,8 @@ System.gc()
 
     public setLibraryName(libraryName: string){
 var libraryName = libraryName
-this.libraryName= libraryName
+this.libraryName= libraryName;
+    
 }
 
 

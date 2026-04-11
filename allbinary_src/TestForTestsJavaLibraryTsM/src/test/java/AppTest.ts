@@ -19,7 +19,8 @@ export class AppTest
         
 
     testAddition(){
-Assertions.assertEquals(2, 1 +1)
+Assertions.assertEquals(2, 1 +1);
+    
 }
 
 
@@ -28,19 +29,24 @@ Assertions.assertEquals(2, 1 +1)
     var expected: string = "Hello World!";
         
         
-
+;
+    
 
     var actual: string = "Hello World!";
         
         
-
-Assertions.assertEquals(expected, actual)
+;
+    
+Assertions.assertEquals(expected, actual);
+    
 }
 
 
     testBooleanAssertions(){
-Assertions.assertTrue(true)
-Assertions.assertFalse(false)
+Assertions.assertTrue(true);
+    
+Assertions.assertFalse(false);
+    
 }
 
 

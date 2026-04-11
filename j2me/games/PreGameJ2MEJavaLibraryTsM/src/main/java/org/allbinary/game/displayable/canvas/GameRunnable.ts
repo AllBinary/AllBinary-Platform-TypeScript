@@ -46,14 +46,16 @@ public constructor (){
 
 
     public run(){
-DisplayInfoSingleton.getInstance()!.process()
+DisplayInfoSingleton.getInstance()!.process();
+    
 }
 
 
                 //@Throws(Error::class)
             
     public processLoopSleep(){
-Thread.sleep(wait)
+Thread.sleep(wait);
+    
 }
 
 

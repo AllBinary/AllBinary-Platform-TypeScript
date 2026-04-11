@@ -18,7 +18,10 @@
 
 
 
-import { Vector } from "../../../../../../../../java/util/Vector.js";
+            import Vector from "@ohos.util.Vector";
+        
+
+//import { Vector } from "../../../../../../../../java/util/Vector.js";
 
     
 import { EntryData } from "../../../../../../../../org/allbinary/business/entry/EntryData.js";
@@ -128,32 +131,49 @@ private constructor (){
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
     var sep: string = AbPathData.getInstance()!.SEPARATOR;
         
         
-
-stringBuffer!.append(sep)
-stringBuffer!.append("generic")
-stringBuffer!.append(sep)
-stringBuffer!.append("user")
-stringBuffer!.append(sep)
-stringBuffer!.append("commerce")
-stringBuffer!.append(sep)
-stringBuffer!.append("money")
-stringBuffer!.append(sep)
-stringBuffer!.append("payment")
-stringBuffer!.append(sep)
-stringBuffer!.append("gateway")
-stringBuffer!.append(sep)
-PAYMENTGATEWAYFILEPATHSTRING= stringBuffer!.toString()
+;
+    
+stringBuffer!.append(sep);
+    
+stringBuffer!.append("generic");
+    
+stringBuffer!.append(sep);
+    
+stringBuffer!.append("user");
+    
+stringBuffer!.append(sep);
+    
+stringBuffer!.append("commerce");
+    
+stringBuffer!.append(sep);
+    
+stringBuffer!.append("money");
+    
+stringBuffer!.append(sep);
+    
+stringBuffer!.append("payment");
+    
+stringBuffer!.append(sep);
+    
+stringBuffer!.append("gateway");
+    
+stringBuffer!.append(sep);
+    
+PAYMENTGATEWAYFILEPATHSTRING= stringBuffer!.toString();
+    
 }
 
 
     public add(paymentType: PaymentType){
 var paymentType = paymentType
-this.paymentTypeVector!.add(paymentType)
+this.paymentTypeVector!.add(paymentType);
+    
 }
 
 
@@ -165,7 +185,8 @@ var paymentTypeString = paymentTypeString
     var size: number = this.paymentTypeVector!.length!;
         
         
-
+;
+    
 
 
 
@@ -177,10 +198,13 @@ var paymentTypeString = paymentTypeString
 i < size; i++)
         {
 
-    var paymentType: PaymentType = this.paymentTypeVector!.get(i) as PaymentType;
-        
-        
+    var paymentType: PaymentType = this.paymentTypeVector!.get(i);
 
+                         as PaymentType;
+        
+        
+;
+    
 
                         if(paymentType!.getBasicPaymentType()!.getName()!.compareTo(paymentTypeString) == 0)
                         
@@ -211,7 +235,8 @@ var storeName = storeName
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PAYMENT))
                         
                                     {
-                                    logUtil!.put("initDefault Payment: " +this.defaultName, this, "initDefault")
+                                    logUtil!.put("initDefault Payment: " +this.defaultName, this, "initDefault");
+    
 
                                     }
                                 
@@ -223,33 +248,43 @@ var storeName = storeName
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(URLGLOBALS.getMainPath())
-stringBuffer!.append(FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH)
-stringBuffer!.append(storeName)
-stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR)
-stringBuffer!.append(PAYMENTGATEWAYFILEPATHSTRING)
+;
+    
+stringBuffer!.append(URLGLOBALS.getMainPath());
+    
+stringBuffer!.append(FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH);
+    
+stringBuffer!.append(storeName);
+    
+stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
+    
+stringBuffer!.append(PAYMENTGATEWAYFILEPATHSTRING);
+    
 
     var abPath: AbPath = AbPath(stringBuffer!.toString(), SHIPPINGMETHODSFILENAME) as AbPath;
         
         
-
+;
+    
 
     var data: string = CryptFileReader(TransformInfoObjectConfigData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoObjectConfigData.getInstance()!.ENCRYPTED_EXTENSION).
                             get(abPath)!;
         
         
-
+;
+    
 
     var document: Document = DomDocumentHelper.create(data)!;
         
         
-
+;
+    
 
     var nodeList: NodeList = document.getElementsByTagName(PaymentGatewaysData.NAME)!;
         
         
-
+;
+    
 
 
 
@@ -264,30 +299,37 @@ index < nodeList!.getLength(); index++)
     var node: Node = nodeList!.item(index)!;
         
         
-
+;
+    
 
     var defaultPaymentGatewayNode: Node = DomSearchHelper.getNode(EntryData.getInstance()!.DEFAULT, node.getChildNodes())!;
         
         
-
+;
+    
 
     var defaultPaymentGatewayNodeValue: string = DomNodeHelper.getTextNodeValue(defaultPaymentGatewayNode)!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PAYMENT))
                         
                                     {
-                                    logUtil!.put("DefaultPaymentGatewayNodeValue: " +defaultPaymentGatewayNodeValue, this, "initDefault")
+                                    logUtil!.put("DefaultPaymentGatewayNodeValue: " +defaultPaymentGatewayNodeValue, this, "initDefault");
+    
 
                                     }
                                 
 
-                        if(!StringValidationUtil.getInstance()!.isEmpty(defaultPaymentGatewayNodeValue))
+                        if(!StringValidationUtil.getInstance()!.isEmpty(defaultPaymentGatewayNodeValue);
+
+                        )
                         
                                     {
-                                    this.defaultName= defaultPaymentGatewayNodeValue
+                                    this.defaultName= defaultPaymentGatewayNodeValue;
+    
 
                                     }
                                 
@@ -307,13 +349,17 @@ var storeName = storeName
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PAYMENT))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.START, this, "getDefault")
+                                    logUtil!.put(this.commonStrings!.START, this, "getDefault");
+    
 
                                     }
                                 
-this.initDefault(storeName)
+this.initDefault(storeName);
+    
 
-                        if(!StringValidationUtil.getInstance()!.isEmpty(this.defaultName))
+                        if(!StringValidationUtil.getInstance()!.isEmpty(this.defaultName);
+
+                        )
                         
                                     {
                                     
@@ -321,6 +367,8 @@ this.initDefault(storeName)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.get(this.defaultName);
+
+                        ;
     
 
                                     }
@@ -339,6 +387,8 @@ var paymentType = paymentType
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.paymentTypeVector!.contains(paymentType);
+
+                        ;
     
 }
 
@@ -349,12 +399,14 @@ var a_PaymentTypeVector = a_PaymentTypeVector
     var diff: Vector = new Vector();
         
         
-
+;
+    
 
     var size: number = this.paymentTypeVector!.length!;
         
         
-
+;
+    
 
 
 
@@ -366,13 +418,20 @@ var a_PaymentTypeVector = a_PaymentTypeVector
 i < size; i++)
         {
 
-    var paymentType: PaymentType = this.paymentTypeVector!.get(i) as PaymentType;
+    var paymentType: PaymentType = this.paymentTypeVector!.get(i);
+
+                         as PaymentType;
         
         
+;
+    
 
+                        if(!a_PaymentTypeVector!.contains(paymentType);
 
-                        if(!a_PaymentTypeVector!.contains(paymentType))
-                        diff.add(paymentType)
+                        )
+                        diff.add(paymentType);
+
+                        
 }
 
 

@@ -27,7 +27,7 @@ export class ParamsUtil
          {
         
 
-    public static viewParams(params: KClass<*>[]): string{
+    public static viewParams(params: Function[]): string{
 var params = params
 
                         if(params != 
@@ -39,7 +39,8 @@ var params = params
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
 
 
@@ -50,8 +51,10 @@ var params = params
         
 index < params.length; index++)
         {
-stringBuffer!.append(" ")
-stringBuffer!.append(params[index]!.getName())
+stringBuffer!.append(" ");
+    
+stringBuffer!.append(params[index]!.getName());
+    
 }
 
 
@@ -59,6 +62,8 @@ stringBuffer!.append(params[index]!.getName())
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 
                                     }

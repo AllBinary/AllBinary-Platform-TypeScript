@@ -132,18 +132,23 @@ private constructor (){
                         if(FileFactory.getInstance()!.isFile(FILE))
                         
                                     {
-                                    this.read()
+                                    this.read();
+    
 
                                     }
                                 
                         else {
-                            this.write()
+                            this.write();
+    
 
                         }
                             
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e);
+    
 }
 
 }
@@ -156,32 +161,38 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
     var openGLFeatureFactory: OpenGLFeatureFactory = OpenGLFeatureFactory.getInstance()!;
         
         
-
+;
+    
 
     var fileInputStreamFactory: FileStreamFactory = FileStreamFactory.getInstance()!;
         
         
-
+;
+    
 
     var fileInputStream: InputStream = fileInputStreamFactory!.getFileInputStreamInstance(StringUtil.getInstance()!.EMPTY_STRING, FILE)!;
         
         
-
+;
+    
 
     var dataInputStream: DataInputStream = new DataInputStream(fileInputStream);
         
         
-
+;
+    
 
     var openGLValue: number = dataInputStream!.readInt()!;
         
         
-
+;
+    
 
                         if(openGLValue == 0)
                         
                                     {
-                                    this.setOpenGL(false)
+                                    this.setOpenGL(false);
+    
 
                                     }
                                 
@@ -189,7 +200,8 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
                         if(openGLValue == 1)
                         
                                     {
-                                    this.setOpenGL(true)
+                                    this.setOpenGL(true);
+    
 
                                     }
                                 
@@ -205,12 +217,14 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
     var version: string = dataInputStream!.readUTF()!;
         
         
-
+;
+    
 
                         if(version.compareTo(openGLFeatureFactory!.OPENGL_AUTO_SELECT.getName()) == 0)
                         
                                     {
-                                    this.setVersionSelector(openGLFeatureFactory!.OPENGL_AUTO_SELECT)
+                                    this.setVersionSelector(openGLFeatureFactory!.OPENGL_AUTO_SELECT);
+    
 
                                     }
                                 
@@ -218,7 +232,8 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
                         if(version.compareTo(openGLFeatureFactory!.OPENGL_MINIMUM.getName()) == 0)
                         
                                     {
-                                    this.setVersionSelector(openGLFeatureFactory!.OPENGL_MINIMUM)
+                                    this.setVersionSelector(openGLFeatureFactory!.OPENGL_MINIMUM);
+    
 
                                     }
                                 
@@ -234,12 +249,14 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
     var type: string = dataInputStream!.readUTF()!;
         
         
-
+;
+    
 
                         if(type.compareTo(openGLFeatureFactory!.OPENGL_AS_GAME_THREAD.getName()) == 0)
                         
                                     {
-                                    this.setType(openGLFeatureFactory!.OPENGL_AS_GAME_THREAD)
+                                    this.setType(openGLFeatureFactory!.OPENGL_AS_GAME_THREAD);
+    
 
                                     }
                                 
@@ -247,7 +264,8 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
                         if(type.compareTo(openGLFeatureFactory!.OPENGL_AND_GAME_HAVE_DIFFERENT_THREADS.getName()) == 0)
                         
                                     {
-                                    this.setType(openGLFeatureFactory!.OPENGL_AND_GAME_HAVE_DIFFERENT_THREADS)
+                                    this.setType(openGLFeatureFactory!.OPENGL_AND_GAME_HAVE_DIFFERENT_THREADS);
+    
 
                                     }
                                 
@@ -263,12 +281,14 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
     var imageColor: string = dataInputStream!.readUTF()!;
         
         
-
+;
+    
 
                         if(imageColor!.compareTo(openGLFeatureFactory!.IMAGE_COLOR_DEPTH_4444.getName()) == 0)
                         
                                     {
-                                    this.setImageColor(openGLFeatureFactory!.IMAGE_COLOR_DEPTH_4444)
+                                    this.setImageColor(openGLFeatureFactory!.IMAGE_COLOR_DEPTH_4444);
+    
 
                                     }
                                 
@@ -276,7 +296,8 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
                         if(imageColor!.compareTo(openGLFeatureFactory!.IMAGE_COLOR_DEPTH_4444.getName()) == 0)
                         
                                     {
-                                    this.setImageColor(openGLFeatureFactory!.IMAGE_COLOR_DEPTH_4444)
+                                    this.setImageColor(openGLFeatureFactory!.IMAGE_COLOR_DEPTH_4444);
+    
 
                                     }
                                 
@@ -284,7 +305,8 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
                         if(imageColor!.compareTo(openGLFeatureFactory!.IMAGE_COLOR_DEPTH_4444.getName()) == 0)
                         
                                     {
-                                    this.setImageColor(openGLFeatureFactory!.IMAGE_COLOR_DEPTH_4444)
+                                    this.setImageColor(openGLFeatureFactory!.IMAGE_COLOR_DEPTH_4444);
+    
 
                                     }
                                 
@@ -300,12 +322,14 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
     var color: string = dataInputStream!.readUTF()!;
         
         
-
+;
+    
 
                         if(color.compareTo(openGLFeatureFactory!.OPENGL_COLOR_DEPTH_4444.getName()) == 0)
                         
                                     {
-                                    this.setColor(openGLFeatureFactory!.OPENGL_COLOR_DEPTH_4444)
+                                    this.setColor(openGLFeatureFactory!.OPENGL_COLOR_DEPTH_4444);
+    
 
                                     }
                                 
@@ -313,7 +337,8 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
                         if(color.compareTo(openGLFeatureFactory!.OPENGL_COLOR_DEPTH_565.getName()) == 0)
                         
                                     {
-                                    this.setColor(openGLFeatureFactory!.OPENGL_COLOR_DEPTH_565)
+                                    this.setColor(openGLFeatureFactory!.OPENGL_COLOR_DEPTH_565);
+    
 
                                     }
                                 
@@ -321,7 +346,8 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
                         if(color.compareTo(openGLFeatureFactory!.OPENGL_COLOR_DEPTH_8888.getName()) == 0)
                         
                                     {
-                                    this.setColor(openGLFeatureFactory!.OPENGL_COLOR_DEPTH_8888)
+                                    this.setColor(openGLFeatureFactory!.OPENGL_COLOR_DEPTH_8888);
+    
 
                                     }
                                 
@@ -333,7 +359,8 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
 
                         }
                             
-PreLogUtil.put("Read Configuration: " +this.toString(), this, "read")
+PreLogUtil.put("Read Configuration: " +this.toString(), this, "read");
+    
 }
 
 
@@ -344,45 +371,60 @@ PreLogUtil.put("Read Configuration: " +this.toString(), this, "read")
     var closeable: Closeable = NullCloseable.NULL_CLOSEABLE;
         
         
-
+;
+    
 
         try {
-            PreLogUtil.put("Write Configuration: " +this.toString(), this, "write")
+            PreLogUtil.put("Write Configuration: " +this.toString(), this, "write");
+    
 
     var fileInputStreamFactory: FileStreamFactory = FileStreamFactory.getInstance()!;
         
         
-
+;
+    
 
     var fileOutputStream: OutputStream = fileInputStreamFactory!.getFileOutputStreamInstance(StringUtil.getInstance()!.EMPTY_STRING, FILE)!;
         
         
-
+;
+    
 
     var dataOutputStream: AbDataOutputStream = new AbDataOutputStream(fileOutputStream);
         
         
-
-closeable= dataOutputStream
+;
+    
+closeable= dataOutputStream;
+    
 
                         if(this.isOpenGL())
                         
                                     {
-                                    dataOutputStream!.writeInt(1)
+                                    dataOutputStream!.writeInt(1);
+    
 
                                     }
                                 
                         else {
-                            dataOutputStream!.writeInt(0)
+                            dataOutputStream!.writeInt(0);
+    
 
                         }
                             
-dataOutputStream!.writeUTF(this.getVersionSelector()!.getName())
-dataOutputStream!.writeUTF(this.getType()!.getName())
-dataOutputStream!.writeUTF(this.getImageColor()!.getName())
-dataOutputStream!.writeUTF(this.getColor()!.getName())
-dataOutputStream!.flush()
-} catch(e: Exception)
+dataOutputStream!.writeUTF(this.getVersionSelector()!.getName());
+    
+dataOutputStream!.writeUTF(this.getType()!.getName());
+    
+dataOutputStream!.writeUTF(this.getImageColor()!.getName());
+    
+dataOutputStream!.writeUTF(this.getColor()!.getName());
+    
+dataOutputStream!.flush();
+    
+
+                //: 
+} catch(e) 
             {
 
 
@@ -391,7 +433,8 @@ dataOutputStream!.flush()
 }
 
          finally {
-            StreamUtil.getInstance()!.close(closeable)
+            StreamUtil.getInstance()!.close(closeable);
+    
 
          }
         
@@ -405,7 +448,8 @@ dataOutputStream!.flush()
     var features: Features = Features.getInstance()!;
         
         
-
+;
+    
 
                         if(ChangedGameFeatureListener.getInstance()!.isChanged(MainFeatureFactory.getInstance()!.STATIC))
                         
@@ -415,19 +459,31 @@ dataOutputStream!.flush()
                         
                                     {
                                     
-                        if(!features.isDefault(OpenGLFeatureFactory.getInstance()!.OPENGL))
+                        if(!features.isDefault(OpenGLFeatureFactory.getInstance()!.OPENGL);
+
+                        )
                         
                                     {
-                                    logUtil!.put("Turning on OpenGL", this, commonStrings!.INIT)
-features.addDefault(OpenGLFeatureFactory.getInstance()!.OPENGL)
-logUtil!.put("Using OpenGL Type Feature: " +this.getType(), this, commonStrings!.INIT)
-features.addDefault(this.getType())
-logUtil!.put("Using OpenGL ImageColor Feature: " +this.getImageColor(), this, commonStrings!.INIT)
-features.addDefault(this.getImageColor())
-logUtil!.put("Using OpenGL Color Feature: " +this.getColor(), this, commonStrings!.INIT)
-features.addDefault(this.getColor())
-logUtil!.put("Using OpenGL Version Selector Feature: " +this.getVersionSelector(), this, commonStrings!.INIT)
-features.addDefault(this.getVersionSelector())
+                                    logUtil!.put("Turning on OpenGL", this, commonStrings!.INIT);
+    
+features.addDefault(OpenGLFeatureFactory.getInstance()!.OPENGL);
+    
+logUtil!.put("Using OpenGL Type Feature: " +this.getType(), this, commonStrings!.INIT);
+    
+features.addDefault(this.getType());
+    
+logUtil!.put("Using OpenGL ImageColor Feature: " +this.getImageColor(), this, commonStrings!.INIT);
+    
+features.addDefault(this.getImageColor());
+    
+logUtil!.put("Using OpenGL Color Feature: " +this.getColor(), this, commonStrings!.INIT);
+    
+features.addDefault(this.getColor());
+    
+logUtil!.put("Using OpenGL Version Selector Feature: " +this.getVersionSelector(), this, commonStrings!.INIT);
+    
+features.addDefault(this.getVersionSelector());
+    
 
                                     }
                                 
@@ -435,7 +491,8 @@ features.addDefault(this.getVersionSelector())
                                     }
                                 
                         else {
-                            logUtil!.put("OpenGL is Off", this, commonStrings!.INIT)
+                            logUtil!.put("OpenGL is Off", this, commonStrings!.INIT);
+    
 
                         }
                             
@@ -444,17 +501,21 @@ features.addDefault(this.getVersionSelector())
                                 
                         else {
                             
-                        if(this.isOpenGL() && !features.isDefault(OpenGLFeatureFactory.getInstance()!.OPENGL))
+                        if(this.isOpenGL() && !features.isDefault(OpenGLFeatureFactory.getInstance()!.OPENGL);
+
+                        )
                         
                                     {
-                                    PreLogUtil.put("OpenGL is set but not Enabled since Statics where not cleared (Reboot or Complete exit is Required)", this, commonStrings!.INIT)
+                                    PreLogUtil.put("OpenGL is set but not Enabled since Statics where not cleared (Reboot or Complete exit is Required)", this, commonStrings!.INIT);
+    
 
                                     }
                                 
 
                         }
                             
-PreLogUtil.put(this.toString(), this, this.commonStrings!.INIT)
+PreLogUtil.put(this.toString(), this, this.commonStrings!.INIT);
+    
 }
 
 
@@ -467,17 +528,20 @@ PreLogUtil.put(this.toString(), this, this.commonStrings!.INIT)
     var features: Features = Features.getInstance()!;
         
         
-
+;
+    
 
     var openGLFeatureFactory: OpenGLFeatureFactory = OpenGLFeatureFactory.getInstance()!;
         
         
-
+;
+    
 
     var modified: boolean = false;
         
         
-
+;
+    
 
                         if(gameFeature == openGLFeatureFactory!.OPENGL)
                         
@@ -487,11 +551,15 @@ PreLogUtil.put(this.toString(), this, this.commonStrings!.INIT)
                         
                                     {
                                     
-                        if(!this.isOpenGL())
+                        if(!this.isOpenGL();
+
+                        )
                         
                                     {
-                                    this.setOpenGL(true)
-modified= true
+                                    this.setOpenGL(true);
+    
+modified= true;
+    
 
                                     }
                                 
@@ -503,8 +571,10 @@ modified= true
                         if(this.isOpenGL())
                         
                                     {
-                                    this.setOpenGL(false)
-modified= true
+                                    this.setOpenGL(false);
+    
+modified= true;
+    
 
                                     }
                                 
@@ -526,8 +596,10 @@ modified= true
                         if(gameFeature != this.getType())
                         
                                     {
-                                    this.setType(gameFeature as OpenGLFeature)
-modified= true
+                                    this.setType(gameFeature as OpenGLFeature);
+    
+modified= true;
+    
 
                                     }
                                 
@@ -549,7 +621,8 @@ modified= true
                         if(this.getImageColor() != gameFeature)
                         
                                     {
-                                    this.setImageColor(gameFeature as OpenGLFeature)
+                                    this.setImageColor(gameFeature as OpenGLFeature);
+    
 
                         if(colorLocked)
                         
@@ -558,7 +631,8 @@ modified= true
                         if(gameFeature == openGLFeatureFactory!.IMAGE_COLOR_DEPTH_4444)
                         
                                     {
-                                    this.setColor(openGLFeatureFactory!.OPENGL_COLOR_DEPTH_4444)
+                                    this.setColor(openGLFeatureFactory!.OPENGL_COLOR_DEPTH_4444);
+    
 
                                     }
                                 
@@ -566,7 +640,8 @@ modified= true
                         if(gameFeature == openGLFeatureFactory!.IMAGE_COLOR_DEPTH_565)
                         
                                     {
-                                    this.setColor(openGLFeatureFactory!.OPENGL_COLOR_DEPTH_565)
+                                    this.setColor(openGLFeatureFactory!.OPENGL_COLOR_DEPTH_565);
+    
 
                                     }
                                 
@@ -574,14 +649,16 @@ modified= true
                         if(gameFeature == openGLFeatureFactory!.IMAGE_COLOR_DEPTH_8888)
                         
                                     {
-                                    this.setColor(openGLFeatureFactory!.OPENGL_COLOR_DEPTH_8888)
+                                    this.setColor(openGLFeatureFactory!.OPENGL_COLOR_DEPTH_8888);
+    
 
                                     }
                                 
 
                                     }
                                 
-modified= true
+modified= true;
+    
 
                                     }
                                 
@@ -603,8 +680,10 @@ modified= true
                         if(this.getColor() != gameFeature)
                         
                                     {
-                                    this.setColor(gameFeature as OpenGLFeature)
-modified= true
+                                    this.setColor(gameFeature as OpenGLFeature);
+    
+modified= true;
+    
 
                                     }
                                 
@@ -622,11 +701,13 @@ modified= true
                         if(features.isFeature(gameFeature))
                         
                                     {
-                                    this.setVersionSelector(gameFeature as OpenGLFeature)
+                                    this.setVersionSelector(gameFeature as OpenGLFeature);
+    
 
                                     }
                                 
-modified= true
+modified= true;
+    
 
                                     }
                                 
@@ -634,7 +715,8 @@ modified= true
                         if(modified)
                         
                                     {
-                                    this.write()
+                                    this.write();
+    
 
                                     }
                                 
@@ -643,7 +725,8 @@ modified= true
 
     public setOpenGL(opengl: boolean){
     //var opengl = opengl
-this.opengl= opengl
+this.opengl= opengl;
+    
 }
 
 
@@ -659,7 +742,8 @@ this.opengl= opengl
 
     public setImageColor(imageColor: OpenGLFeature){
     //var imageColor = imageColor
-this.imageColor= imageColor
+this.imageColor= imageColor;
+    
 }
 
 
@@ -675,7 +759,8 @@ this.imageColor= imageColor
 
     public setColor(color: OpenGLFeature){
     //var color = color
-this.color= color
+this.color= color;
+    
 }
 
 
@@ -691,7 +776,8 @@ this.color= color
 
     public setVersionSelector(versionSelector: OpenGLFeature){
     //var versionSelector = versionSelector
-this.versionSelector= versionSelector
+this.versionSelector= versionSelector;
+    
 }
 
 
@@ -707,7 +793,8 @@ this.versionSelector= versionSelector
 
     public setType(type: OpenGLFeature){
     //var type = type
-this.type= type
+this.type= type;
+    
 }
 
 
@@ -726,27 +813,41 @@ this.type= type
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
     var stringUtil: StringUtil = StringUtil.getInstance()!;
         
         
-
-stringBuffer!.append(" isOpenGL: ")
-stringBuffer!.appendboolean(this.isOpenGL())
-stringBuffer!.append(" VersionSelector: ")
-stringBuffer!.append(stringUtil!.toString(this.getVersionSelector()))
-stringBuffer!.append(" Type: ")
-stringBuffer!.append(stringUtil!.toString(this.getType()))
-stringBuffer!.append(" Image Color: ")
-stringBuffer!.append(stringUtil!.toString(this.getImageColor()))
-stringBuffer!.append(" Color: ")
-stringBuffer!.append(stringUtil!.toString(this.getColor()))
+;
+    
+stringBuffer!.append(" isOpenGL: ");
+    
+stringBuffer!.appendboolean(this.isOpenGL());
+    
+stringBuffer!.append(" VersionSelector: ");
+    
+stringBuffer!.append(stringUtil!.toString(this.getVersionSelector()));
+    
+stringBuffer!.append(" Type: ");
+    
+stringBuffer!.append(stringUtil!.toString(this.getType()));
+    
+stringBuffer!.append(" Image Color: ");
+    
+stringBuffer!.append(stringUtil!.toString(this.getImageColor()));
+    
+stringBuffer!.append(" Color: ");
+    
+stringBuffer!.append(stringUtil!.toString(this.getColor()));
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

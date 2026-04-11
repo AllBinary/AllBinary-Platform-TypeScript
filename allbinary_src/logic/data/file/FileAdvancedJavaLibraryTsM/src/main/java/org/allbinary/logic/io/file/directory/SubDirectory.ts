@@ -59,17 +59,20 @@ var files = files
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
     var NEW_LINE: string = CommonSeps.getInstance()!.NEW_LINE;
         
         
-
+;
+    
 
     var size: number = files.size()!;
         
         
-
+;
+    
 
 
 
@@ -81,12 +84,17 @@ var files = files
 index < size; index++)
         {
 
-    var file: AbFile = files.get(index) as AbFile;
-        
-        
+    var file: AbFile = files.get(index);
 
-stringBuffer!.append(file.getPath())
-stringBuffer!.append(NEW_LINE)
+                         as AbFile;
+        
+        
+;
+    
+stringBuffer!.append(file.getPath());
+    
+stringBuffer!.append(NEW_LINE);
+    
 }
 
 
@@ -94,6 +102,8 @@ stringBuffer!.append(NEW_LINE)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 
@@ -115,6 +125,8 @@ var file = file
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return directory.search(fileFilter, file, true);
+
+                        ;
     
 }
 
@@ -126,6 +138,8 @@ var file = file
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return directory.search(file, true);
+
+                        ;
     
 }
 
@@ -138,6 +152,8 @@ var file = file
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return directory.search(searchValue, file, true);
+
+                        ;
     
 }
 
@@ -150,6 +166,8 @@ var file = file
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return directory.search(level, file, true);
+
+                        ;
     
 }
 

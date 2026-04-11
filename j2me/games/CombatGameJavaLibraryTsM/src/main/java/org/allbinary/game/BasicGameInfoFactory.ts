@@ -37,9 +37,12 @@ private constructor (){
 
     public init(total: number){
 var total = total
-currentReleaseIndex= 0
-currentDestroyIndex= 0
-this.total= total
+currentReleaseIndex= 0;
+    
+currentDestroyIndex= 0;
+    
+this.total= total;
+    
 }
 
 

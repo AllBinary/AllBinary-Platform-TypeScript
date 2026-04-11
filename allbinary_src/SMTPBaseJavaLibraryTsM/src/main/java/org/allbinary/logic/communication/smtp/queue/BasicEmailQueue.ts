@@ -49,7 +49,8 @@ export class BasicEmailQueue extends BasicQueue
                                 )
                         
                                     {
-                                    BasicEmailQueue.basicEmailQueue= BasicEmailQueue()
+                                    BasicEmailQueue.basicEmailQueue= BasicEmailQueue();
+    
 
                                     }
                                 
@@ -76,8 +77,10 @@ private constructor (){
 
     public offer(emailInterface: EmailInterface): boolean{
 var emailInterface = emailInterface
-this.offer(emailInterface as Object)
-this.post(emailInterface)
+this.offer(emailInterface as Object);
+    
+this.post(emailInterface);
+    
 
 
 
@@ -90,7 +93,8 @@ this.post(emailInterface)
 
     remove(emailInterface: EmailInterface){
 var emailInterface = emailInterface
-this.remove(emailInterface as Object)
+this.remove(emailInterface as Object);
+    
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
@@ -114,8 +118,10 @@ var emailInterface = emailInterface
                         if(this.send(emailInterface))
                         
                                     {
-                                    this.remove(emailInterface)
-processAllUnsent()
+                                    this.remove(emailInterface);
+    
+processAllUnsent();
+    
 
                                     }
                                 
@@ -130,7 +136,8 @@ processAllUnsent()
     var size: number = queueVector!.size()!;
         
         
-
+;
+    
 
 
 
@@ -142,16 +149,21 @@ processAllUnsent()
 index < size; index++)
         {
 
-    var emailInterface: EmailInterface = queueVector!.get(index) as EmailInterface;
-        
-        
+    var emailInterface: EmailInterface = queueVector!.get(index);
 
+                         as EmailInterface;
+        
+        
+;
+    
 
                         if(this.send(emailInterface))
                         
                                     {
-                                    this.remove(emailInterface)
-processAllUnsent()
+                                    this.remove(emailInterface);
+    
+processAllUnsent();
+    
 
                                     }
                                 
@@ -169,16 +181,19 @@ var emailInterface = emailInterface
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
                                     {
-                                    logUtil!.put("Sending: " +emailInterface!.log(), this, "send")
+                                    logUtil!.put("Sending: " +emailInterface!.log(), this, "send");
+    
 
                                     }
                                 
-Transport.send(emailInterface!.getMimeMessage())
+Transport.send(emailInterface!.getMimeMessage());
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
                                     {
-                                    logUtil!.put("Email Send Debug: " +emailInterface!.getDebugInfo(), this, "send")
+                                    logUtil!.put("Email Send Debug: " +emailInterface!.getDebugInfo(), this, "send");
+    
 
                                     }
                                 
@@ -188,13 +203,16 @@ Transport.send(emailInterface!.getMimeMessage())
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return true;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
                                     {
-                                    logUtil!.put("Failed Email Send Debug: " +emailInterface!.getDebugInfo(), this, "send", e)
+                                    logUtil!.put("Failed Email Send Debug: " +emailInterface!.getDebugInfo(), this, "send", e);
+    
 
                                     }
                                 

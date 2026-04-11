@@ -113,8 +113,10 @@ var node = node
 
                             //For kotlin this is before the body of the constructor.
                     
-this.init()
-logUtil!.put("Label: " +label, this, this.commonStrings!.CONSTRUCTOR)
+this.init();
+    
+logUtil!.put("Label: " +label, this, this.commonStrings!.CONSTRUCTOR);
+    
 }
 
 public constructor (label: string)                        
@@ -127,27 +129,36 @@ public constructor (label: string)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.init()
-logUtil!.put("Label: " +label, this, this.commonStrings!.CONSTRUCTOR)
+this.init();
+    
+logUtil!.put("Label: " +label, this, this.commonStrings!.CONSTRUCTOR);
+    
 }
 
 
     init(){
-setJPopupMenu(JPopupMenu())
+setJPopupMenu(JPopupMenu());
+    
 
     var jMenuItemEdit: JMenuItem = new JMenuItem(EDIT);
         
         
-
+;
+    
 
     var jMenuItemDelete: JMenuItem = new JMenuItem(DELETE);
         
         
-
-jMenuItemEdit!.addActionListener(this)
-jMenuItemDelete!.addActionListener(this)
-getJPopupMenu()!.add(jMenuItemEdit)
-getJPopupMenu()!.add(jMenuItemDelete)
+;
+    
+jMenuItemEdit!.addActionListener(this);
+    
+jMenuItemDelete!.addActionListener(this);
+    
+getJPopupMenu()!.add(jMenuItemEdit);
+    
+getJPopupMenu()!.add(jMenuItemDelete);
+    
 }
 
 
@@ -186,7 +197,8 @@ var actionEvent = actionEvent
                         if(actionEvent!.getActionCommand()!.compareTo(EDIT) == 0)
                         
                                     {
-                                    this.showDialog()
+                                    this.showDialog();
+    
 
                                     }
                                 
@@ -195,7 +207,8 @@ var actionEvent = actionEvent
 
     public setJPopupMenu(jPopupMenu: JPopupMenu){
 var jPopupMenu = jPopupMenu
-this.jPopupMenu= jPopupMenu
+this.jPopupMenu= jPopupMenu;
+    
 }
 
 

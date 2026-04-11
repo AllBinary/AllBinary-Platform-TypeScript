@@ -50,30 +50,35 @@ export class TransformInfoHttpFactory
 
                 //@Throws(Error::class)
             
-    public static getInstance(propertiesHashMap: HashMap<Any, Any>, pageContext: PageContext): TransformInfoInterface{
+    public static getInstance(propertiesHashMap: HashMap<any, any>, pageContext: PageContext): TransformInfoInterface{
 var propertiesHashMap = propertiesHashMap
 var pageContext = pageContext
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
         
         
-
+;
+    
 
         try {
             
     var weblisketSession: WeblisketSession = new WeblisketSession(propertiesHashMap, pageContext);
         
         
+;
+    
 
+                        if(!StringValidationUtil.getInstance()!.isEmpty(weblisketSession!.getStoreName());
 
-                        if(!StringValidationUtil.getInstance()!.isEmpty(weblisketSession!.getStoreName()))
+                        )
                         
                                     {
                                     
     var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(weblisketSession!.getStoreName())!;
         
         
-
+;
+    
 
                         if(storeFrontInterface != 
                                     null
@@ -110,7 +115,9 @@ var pageContext = pageContext
 
                         }
                             
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORYERROR))
@@ -120,8 +127,10 @@ var pageContext = pageContext
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, "TransformInfoFactory", commonStrings!.GET_INSTANCE, e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, "TransformInfoFactory", commonStrings!.GET_INSTANCE, e);
+    
 
                                     }
                                 

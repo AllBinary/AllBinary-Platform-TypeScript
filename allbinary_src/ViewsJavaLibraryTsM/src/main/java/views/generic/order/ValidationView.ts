@@ -70,7 +70,8 @@ public constructor (transformInfoInterface: TransformInfoInterface)
     var valid: Boolean = Boolean.TRUE;
         
         
-
+;
+    
 
                         if(this.order.isIdValid() == Boolean.FALSE)
                         
@@ -85,7 +86,8 @@ public constructor (transformInfoInterface: TransformInfoInterface)
                                     }
                                 
                         else {
-                            this.orderHistory= OrderHistoryFactory.getInstance(this.order.getId())
+                            this.orderHistory= OrderHistoryFactory.getInstance(this.order.getId());
+    
 
                         if(this.orderHistory == 
                                     null
@@ -105,8 +107,10 @@ public constructor (transformInfoInterface: TransformInfoInterface)
     var orderItems: OrderItemsEntity = new OrderItemsEntity();
         
         
-
-this.basketReview= orderItems!.getBasketReview(this.order.getId())
+;
+    
+this.basketReview= orderItems!.getBasketReview(this.order.getId());
+    
 
                         if(this.basketReview == 
                                     null
@@ -131,13 +135,16 @@ this.basketReview= orderItems!.getBasketReview(this.order.getId())
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return valid;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("Failed to validate form", this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put("Failed to validate form", this, commonStrings!.IS_VALID, e);
+    
 
                                     }
                                 
@@ -159,26 +166,32 @@ this.basketReview= orderItems!.getBasketReview(this.order.getId())
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
                         if(this.order.isIdValid() == Boolean.FALSE)
                         
                                     {
-                                    stringBuffer!.append(this.order.getIdValidationInfo())
+                                    stringBuffer!.append(this.order.getIdValidationInfo());
+    
 
                                     }
                                 
                         else {
-                            this.orderHistory= OrderHistoryFactory.getInstance(this.order.getId())
+                            this.orderHistory= OrderHistoryFactory.getInstance(this.order.getId());
+    
 
                         if(this.orderHistory == 
                                     null
                                  || this.orderHistory!.isValid() == Boolean.FALSE)
                         
                                     {
-                                    stringBuffer!.append("Order History data error for: ")
-stringBuffer!.append(this.order.getId())
-stringBuffer!.append("<br />")
+                                    stringBuffer!.append("Order History data error for: ");
+    
+stringBuffer!.append(this.order.getId());
+    
+stringBuffer!.append("<br />");
+    
 
                                     }
                                 
@@ -186,17 +199,22 @@ stringBuffer!.append("<br />")
     var orderItems: OrderItemsEntity = new OrderItemsEntity();
         
         
-
-this.basketReview= orderItems!.getBasketReview(this.order.getId())
+;
+    
+this.basketReview= orderItems!.getBasketReview(this.order.getId());
+    
 
                         if(this.basketReview == 
                                     null
                                 )
                         
                                     {
-                                    stringBuffer!.append("Order Items data error - does not exist for: ")
-stringBuffer!.append(this.order.getId())
-stringBuffer!.append("<br />")
+                                    stringBuffer!.append("Order Items data error - does not exist for: ");
+    
+stringBuffer!.append(this.order.getId());
+    
+stringBuffer!.append("<br />");
+    
 
                                     }
                                 
@@ -204,9 +222,12 @@ stringBuffer!.append("<br />")
                         if(this.basketReview!.isValid() == Boolean.FALSE)
                         
                                     {
-                                    stringBuffer!.append("Order Items data error - not valid for: ")
-stringBuffer!.append(this.order.getId())
-stringBuffer!.append("<br />")
+                                    stringBuffer!.append("Order Items data error - not valid for: ");
+    
+stringBuffer!.append(this.order.getId());
+    
+stringBuffer!.append("<br />");
+    
 
                                     }
                                 
@@ -218,14 +239,19 @@ stringBuffer!.append("<br />")
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e)
+                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e);
+    
 
                                     }
                                 

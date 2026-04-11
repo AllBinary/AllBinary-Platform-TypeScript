@@ -57,10 +57,14 @@ public constructor (geographicMapInterface: BasicGeographicMap, edgeMinimum: num
 var edgeMinimum = edgeMinimum
 var minPathWeight = minPathWeight
 var maxPathWeight = maxPathWeight
-this.geographicMapInterface= geographicMapInterface
-this.edgeMinimum= edgeMinimum
-this.minPathWeight= minPathWeight
-this.maxPathWeight= maxPathWeight
+this.geographicMapInterface= geographicMapInterface;
+    
+this.edgeMinimum= edgeMinimum;
+    
+this.minPathWeight= minPathWeight;
+    
+this.maxPathWeight= maxPathWeight;
+    
 }
 
 
@@ -90,12 +94,17 @@ var pathList = pathList
 index >= 0; index--)
         {
 
-    var startPathFindingNode: PathFindingNode = startPathFindingNodeList!.get(index) as PathFindingNode;
-        
-        
+    var startPathFindingNode: PathFindingNode = startPathFindingNodeList!.get(index);
 
-pathList!.remove(startPathFindingNode!.geographicMapCellPosition)
-pathList!.add(0, startPathFindingNode!.geographicMapCellPosition)
+                         as PathFindingNode;
+        
+        
+;
+    
+pathList!.remove(startPathFindingNode!.geographicMapCellPosition);
+    
+pathList!.add(0, startPathFindingNode!.geographicMapCellPosition);
+    
 }
 
 }
@@ -135,12 +144,14 @@ var graphPath = graphPath
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
                         if(graphPath!.getEdgeList()!.size() < edgeMinimum)
                         
                                     {
-                                    stringBuffer!.append("Ignoring Small: " +graphPath!.getEdgeList()!.size())
+                                    stringBuffer!.append("Ignoring Small: " +graphPath!.getEdgeList()!.size());
+    
 
                                     }
                                 
@@ -148,7 +159,8 @@ var graphPath = graphPath
                         if(graphPath!.getWeight() <= minPathWeight)
                         
                                     {
-                                    stringBuffer!.append(" Low Weighted Path: " +graphPath!.getWeight())
+                                    stringBuffer!.append(" Low Weighted Path: " +graphPath!.getWeight());
+    
 
                                     }
                                 
@@ -156,7 +168,8 @@ var graphPath = graphPath
                         if(graphPath!.getWeight() >= maxPathWeight)
                         
                                     {
-                                    stringBuffer!.append(" To High Weighted Path: " +graphPath!.getWeight())
+                                    stringBuffer!.append(" To High Weighted Path: " +graphPath!.getWeight());
+    
 
                                     }
                                 
@@ -165,6 +178,8 @@ var graphPath = graphPath
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

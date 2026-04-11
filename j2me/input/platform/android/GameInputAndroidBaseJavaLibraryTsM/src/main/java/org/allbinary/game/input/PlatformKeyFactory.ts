@@ -35,6 +35,8 @@ var keyCode = keyCode
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return AndroidGameKey.getString(keyCode);
+
+                        ;
     
 }
 
@@ -46,6 +48,8 @@ var input = input
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return androidKeyFactory!.isSubmission(input);
+
+                        ;
     
 }
 
@@ -57,6 +61,8 @@ var input = input
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return androidKeyFactory!.isDelete(input);
+
+                        ;
     
 }
 
@@ -68,6 +74,8 @@ var input = input
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return androidKeyFactory!.isBackSpace(input);
+
+                        ;
     
 }
 
@@ -79,6 +87,8 @@ var input = input
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return androidKeyFactory!.isLeft(input);
+
+                        ;
     
 }
 
@@ -90,6 +100,8 @@ var input = input
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return androidKeyFactory!.isRight(input);
+
+                        ;
     
 }
 
@@ -101,6 +113,8 @@ var input = input
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return androidKeyFactory!.isUp(input);
+
+                        ;
     
 }
 
@@ -112,6 +126,8 @@ var input = input
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return androidKeyFactory!.isDown(input);
+
+                        ;
     
 }
 
@@ -123,6 +139,8 @@ var input = input
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return androidKeyFactory!.isEnter(input);
+
+                        ;
     
 }
 

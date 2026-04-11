@@ -42,13 +42,15 @@ public constructor (fileInputStream: FileInputStream){
 
             super();
             var fileInputStream = fileInputStream
-this.fileInputStream= fileInputStream
+this.fileInputStream= fileInputStream;
+    
 }
 
 
     public mark(readlimit: number){
 var readlimit = readlimit
-this.fileInputStream!.mark(readlimit)
+this.fileInputStream!.mark(readlimit);
+    
 }
 
 
@@ -58,6 +60,8 @@ this.fileInputStream!.mark(readlimit)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.fileInputStream!.markSupported();
+
+                        ;
     
 }
 
@@ -66,7 +70,8 @@ this.fileInputStream!.mark(readlimit)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public reset(){
-this.fileInputStream!.reset()
+this.fileInputStream!.reset();
+    
 }
 
 
@@ -78,12 +83,15 @@ this.fileInputStream!.reset()
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.fileInputStream!.available();
+
+                        ;
     
 }
 
 
     public close(){
-this.fileInputStream!.close()
+this.fileInputStream!.close();
+    
 }
 
 
@@ -93,6 +101,8 @@ this.fileInputStream!.close()
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.fileInputStream!.getChannel();
+
+                        ;
     
 }
 
@@ -105,26 +115,30 @@ this.fileInputStream!.close()
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.fileInputStream!.read();
+
+                        ;
     
 }
 
 
                 //@Throws(IOException::class)
             
-    public read(b: ByteArray): number{
+    public read(b: number[]): number{
 var b = b
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.fileInputStream!.read(b);
+
+                        ;
     
 }
 
 
                 //@Throws(IOException::class)
             
-    public read(buffer: ByteArray, offset: number, count: number): number{
+    public read(buffer: number[], offset: number, count: number): number{
 var buffer = buffer
 var offset = offset
 var count = count
@@ -133,6 +147,8 @@ var count = count
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.fileInputStream!.read(buffer, offset, count);
+
+                        ;
     
 }
 
@@ -146,6 +162,8 @@ var n = n
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.fileInputStream!.skip(n);
+
+                        ;
     
 }
 

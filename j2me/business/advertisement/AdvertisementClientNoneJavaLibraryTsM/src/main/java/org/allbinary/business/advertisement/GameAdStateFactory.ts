@@ -55,7 +55,8 @@ export class GameAdStateFactory
             
     public getInstance(softwareInformation: SoftwareInformation): GameAdState{
     //var softwareInformation = softwareInformation
-this.gameAdState= gameAdStateArray[0]!
+this.gameAdState= gameAdStateArray[0]!;
+    
 
 
 

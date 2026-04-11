@@ -55,18 +55,21 @@ export class PaymentTag extends TableTag {
 
     private storeName: string
 
-    private propertiesHashMap: HashMap<Any, Any>
+    private propertiesHashMap: HashMap<any, any>
 public constructor (){
 
             super();
-            this.setTagHelperFactory(PaymentHelperFactory())
-this.setTagRequestHelperFactory(PaymentHelperFactory())
+            this.setTagHelperFactory(PaymentHelperFactory());
+    
+this.setTagRequestHelperFactory(PaymentHelperFactory());
+    
 }
 
 
     public setStoreName(value: string){
 var value = value
-this.storeName= value
+this.storeName= value;
+    
 }
 
 
@@ -80,49 +83,61 @@ this.storeName= value
                             getInstance(this.getPropertiesHashMap(), pageContext)!;
         
         
+;
+    
 
-
-    var addressHelperClass: KClass<*> = anyType!::class!;
+    var addressHelperClass: Function = anyType!constructor!;
         
         
-
+;
+    
 
     var method: Method = addressHelperClass!.getMethod("select", 
                             null)!;
         
         
-
+;
+    
 
     var result: string = method.invoke(anyType, 
-                            null) as String;
-        
-        
+                            null);
 
+                         as String;
+        
+        
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
-} catch(e: LicensingException)
+
+                //: 
+} catch(e) 
             {
 
 
 
                             throw e
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
 
     var error: string = "Failed to select Payment";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "selectPayment()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "selectPayment()", e);
+    
 
                                     }
                                 
@@ -146,8 +161,10 @@ this.storeName= value
                         if(this.isEnabled())
                         
                                     {
-                                    this.propertiesHashMap= HashMap<Any, Any>()
-this.propertiesHashMap!.put(StoreFrontData.getInstance()!.NAME, this.storeName)
+                                    this.propertiesHashMap= HashMap<any, any>();
+    
+this.propertiesHashMap!.put(StoreFrontData.getInstance()!.NAME, this.storeName);
+    
 
                         if(this.getCommand() != 
                                     null
@@ -162,12 +179,14 @@ this.propertiesHashMap!.put(StoreFrontData.getInstance()!.NAME, this.storeName)
     var output: string = this.select()!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGEXTRAOUTPUT))
                         
                                     {
-                                    this.pageContext!.getOut()!.print(output +"<br />")
+                                    this.pageContext!.getOut()!.print(output +"<br />");
+    
 
                                     }
                                 
@@ -186,6 +205,8 @@ this.propertiesHashMap!.put(StoreFrontData.getInstance()!.NAME, this.storeName)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.doStartTag();
+
+                        ;
     
 
                         }
@@ -202,9 +223,12 @@ this.propertiesHashMap!.put(StoreFrontData.getInstance()!.NAME, this.storeName)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return SKIP_BODY;
     
-} catch(e: LicensingException)
+
+                //: 
+} catch(e) 
             {
-AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e);
+    
 
 
 
@@ -212,9 +236,12 @@ AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
                         return SKIP_BODY;
     
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
-AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
+    
 
 
 

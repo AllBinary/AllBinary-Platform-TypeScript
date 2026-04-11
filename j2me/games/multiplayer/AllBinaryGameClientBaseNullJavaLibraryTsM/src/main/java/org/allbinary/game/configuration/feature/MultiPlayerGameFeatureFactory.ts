@@ -41,13 +41,16 @@ private constructor (){
     var gameCommandsFactory: GameCommandsFactory = GameCommandsFactory.getInstance()!;
         
         
-
+;
+    
 
     var canvas: Canvas = anyType as Canvas;
         
         
-
-canvas.addCommand(gameCommandsFactory!.QUIT_COMMAND)
+;
+    
+canvas.addCommand(gameCommandsFactory!.QUIT_COMMAND);
+    
 }
 
 

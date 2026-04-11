@@ -54,7 +54,8 @@ export class BaseMenuBehavior
 
     public initSpecialPaint(allBinaryGameCanvas: AllBinaryGameCanvas){
     //var allBinaryGameCanvas = allBinaryGameCanvas
-allBinaryGameCanvas!.setNonBotPaintableP(NullPaintable.getInstance())
+allBinaryGameCanvas!.setNonBotPaintableP(NullPaintable.getInstance());
+    
 }
 
 

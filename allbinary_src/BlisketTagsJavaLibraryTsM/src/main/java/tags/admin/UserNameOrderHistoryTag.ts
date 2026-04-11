@@ -46,7 +46,8 @@ public constructor ()
 
     public setStatus(value: string){
 var value = value
-this.status= value
+this.status= value;
+    
 }
 
 
@@ -55,8 +56,10 @@ this.status= value
     public doStartTag(): number{
 
         try {
-            this.setName("Range Order History View")
-this.setObjectFile("views.admin.orderhistory.UserNameOrderHistoryView")
+            this.setName("Range Order History View");
+    
+this.setObjectFile("views.admin.orderhistory.UserNameOrderHistoryView");
+    
 
                         if(this.getCommand() != 
                                     null
@@ -83,6 +86,8 @@ this.setObjectFile("views.admin.orderhistory.UserNameOrderHistoryView")
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.doStartTag();
+
+                        ;
     
 
                                     }
@@ -91,9 +96,12 @@ this.setObjectFile("views.admin.orderhistory.UserNameOrderHistoryView")
 
 
                             throw Error("Command Null")
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
+    
 
 
 

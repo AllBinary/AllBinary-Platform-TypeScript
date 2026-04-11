@@ -57,14 +57,17 @@ export class StaticPagesTag extends TableTag {
 public constructor (){
 
             super();
-            this.setTagHelperFactory(StaticPagesHelperFactory())
-this.setTagRequestHelperFactory(StaticPagesRequestHelperFactory())
+            this.setTagHelperFactory(StaticPagesHelperFactory());
+    
+this.setTagRequestHelperFactory(StaticPagesRequestHelperFactory());
+    
 }
 
 
     public setXsl(value: string){
 var value = value
-this.xslFile= value
+this.xslFile= value;
+    
 }
 
 
@@ -78,49 +81,61 @@ this.xslFile= value
                             getInstance(this.getPropertiesHashMap(), this.pageContext)!;
         
         
+;
+    
 
-
-    var helperClass: KClass<*> = anyType!::class!;
+    var helperClass: Function = anyType!constructor!;
         
         
-
+;
+    
 
     var method: Method = helperClass!.getMethod("generateStaticPages", 
                             null)!;
         
         
-
+;
+    
 
     var result: string = method.invoke(anyType, 
-                            null) as String;
-        
-        
+                            null);
 
+                         as String;
+        
+        
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
-} catch(e: LicensingException)
+
+                //: 
+} catch(e) 
             {
 
 
 
                             throw e
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
 
     var error: string = "Failed to generate staticpages table";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "generateStaticPages()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "generateStaticPages()", e);
+    
 
                                     }
                                 
@@ -145,49 +160,61 @@ this.xslFile= value
                             getInstance(this.getPropertiesHashMap(), this.pageContext)!;
         
         
+;
+    
 
-
-    var helperClass: KClass<*> = anyType!::class!;
+    var helperClass: Function = anyType!constructor!;
         
         
-
+;
+    
 
     var method: Method = helperClass!.getMethod("makePublic", 
                             null)!;
         
         
-
+;
+    
 
     var result: string = method.invoke(anyType, 
-                            null) as String;
-        
-        
+                            null);
 
+                         as String;
+        
+        
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
-} catch(e: LicensingException)
+
+                //: 
+} catch(e) 
             {
 
 
 
                             throw e
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
 
     var error: string = "Failed to makePublic";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "makePublic()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "makePublic()", e);
+    
 
                                     }
                                 
@@ -221,17 +248,20 @@ this.xslFile= value
                         if(this.getCommand()!.compareTo(SearchData.GENERATESTATICPAGES) == 0)
                         
                                     {
-                                    this.getPropertiesHashMap()!.put(TransformInfoData.getInstance()!.TEMPLATEFILENAME, this.xslFile)
+                                    this.getPropertiesHashMap()!.put(TransformInfoData.getInstance()!.TEMPLATEFILENAME, this.xslFile);
+    
 
     var output: string = this.generateStaticPages()!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGEXTRAOUTPUT))
                         
                                     {
-                                    this.pageContext!.getOut()!.print(output)
+                                    this.pageContext!.getOut()!.print(output);
+    
 
                                     }
                                 
@@ -246,12 +276,14 @@ this.xslFile= value
     var output: string = this.makePublic()!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGEXTRAOUTPUT))
                         
                                     {
-                                    this.pageContext!.getOut()!.print(output)
+                                    this.pageContext!.getOut()!.print(output);
+    
 
                                     }
                                 
@@ -264,6 +296,8 @@ this.xslFile= value
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.doStartTag();
+
+                        ;
     
 
                         }
@@ -280,9 +314,12 @@ this.xslFile= value
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return SKIP_BODY;
     
-} catch(e: LicensingException)
+
+                //: 
+} catch(e) 
             {
-AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e);
+    
 
 
 
@@ -290,9 +327,12 @@ AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
                         return SKIP_BODY;
     
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
-AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
+    
 
 
 

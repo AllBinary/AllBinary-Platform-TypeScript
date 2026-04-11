@@ -44,70 +44,89 @@ export class BasicNeededTouchButtonsBuilder extends BaseTouchInput {
     public getList(): BasicArrayList{
 
         try {
-            logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
+            logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
+    
 
     var list: BasicArrayList = new BasicArrayList();
         
         
-
+;
+    
 
     var touchButtonLocationHelper: TouchButtonLocationHelper = new TouchButtonLocationHelper();
         
         
-
+;
+    
 
     var basicTouchButtonCellPositionFactory: BasicTouchButtonCellPositionFactory = new BasicTouchButtonCellPositionFactory();
         
         
-
+;
+    
 
     var commonButtons: CommonButtons = CommonButtons.getInstance()!;
         
         
-
+;
+    
 
     var animationInterface: Animation = NullAnimationFactory.getFactoryInstance()!.getInstance(0)!;
         
         
-
+;
+    
 
     var UP: TouchButton = new TouchButton(BasicTouchInputFactory.getInstance()!.UP, animationInterface, animationInterface, commonButtons!.NORMAL_BUTTON, basicTouchButtonCellPositionFactory!.SECOND_FROM_BOTTOM_LEFT, touchButtonLocationHelper!.getColumnsRemainderHalf(), touchButtonLocationHelper!.getRowsRemainderHalf());
         
         
-
+;
+    
 
     var DOWN: TouchButton = new TouchButton(BasicTouchInputFactory.getInstance()!.DOWN, animationInterface, animationInterface, commonButtons!.NORMAL_BUTTON, basicTouchButtonCellPositionFactory!.BOTTOM_LEFT, touchButtonLocationHelper!.getColumnsRemainderHalf(), touchButtonLocationHelper!.getRowsRemainderHalf());
         
         
-
+;
+    
 
     var LEFT: TouchButton = new TouchButton(BasicTouchInputFactory.getInstance()!.LEFT, animationInterface, animationInterface, commonButtons!.NORMAL_BUTTON, basicTouchButtonCellPositionFactory!.BOTTOM_SECOND_FROM_RIGHT, touchButtonLocationHelper!.getColumnsRemainderHalf(), touchButtonLocationHelper!.getRowsRemainderHalf());
         
         
-
+;
+    
 
     var RIGHT: TouchButton = new TouchButton(BasicTouchInputFactory.getInstance()!.RIGHT, animationInterface, animationInterface, commonButtons!.NORMAL_BUTTON, basicTouchButtonCellPositionFactory!.BOTTOM_RIGHT, touchButtonLocationHelper!.getColumnsRemainderHalf(), touchButtonLocationHelper!.getRowsRemainderHalf());
         
         
-
-list.add(UP)
-list.add(DOWN)
-list.add(LEFT)
-list.add(RIGHT)
+;
+    
+list.add(UP);
+    
+list.add(DOWN);
+    
+list.add(LEFT);
+    
+list.add(RIGHT);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return list;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_LIST, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_LIST, e);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return BasicArrayListUtil.getInstance()!.getImmutableInstance();
+
+                        ;
     
 }
 

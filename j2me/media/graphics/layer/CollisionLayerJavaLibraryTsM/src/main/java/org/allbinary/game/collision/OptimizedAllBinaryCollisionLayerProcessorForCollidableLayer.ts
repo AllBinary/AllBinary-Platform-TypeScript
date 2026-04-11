@@ -58,12 +58,14 @@ var startIndex = startIndex
     var collidableInterfaceCompositeInterface: CollidableCompositeLayer = layerInterface as CollidableCompositeLayer;
         
         
-
+;
+    
 
     var collidableBase: CollidableBaseBehavior = collidableInterfaceCompositeInterface!.getCollidableInferface()!;
         
         
-
+;
+    
 
                         if(collidableBase!.isCollidable())
                         
@@ -72,18 +74,22 @@ var startIndex = startIndex
     var layerManager: LayerManager = this.getLayerManager()!;
         
         
-
+;
+    
 
     var size: number = layerManager!.getSize()!;
         
         
-
+;
+    
 
     var collidableInterfaceCompositeInterface2: CollidableCompositeLayer
-
+;
+    
 
     var collidableBase2: CollidableBaseBehavior
-
+;
+    
 
 
 
@@ -94,14 +100,20 @@ var startIndex = startIndex
         
 index < size; index++)
         {
-collidableInterfaceCompositeInterface2= layerManager!.getLayerAt(index) as CollidableCompositeLayer
-collidableBase2= collidableInterfaceCompositeInterface2!.getCollidableInferface()
+collidableInterfaceCompositeInterface2= layerManager!.getLayerAt(index);
+
+                         as CollidableCompositeLayer;
+    
+collidableBase2= collidableInterfaceCompositeInterface2!.getCollidableInferface();
+    
 
                         if(collidableBase2!.isCollidable() && collidableBase!.isCollision(collidableInterfaceCompositeInterface2))
                         
                                     {
-                                    collidableBase!.collide(collidableInterfaceCompositeInterface2)
-collidableBase2!.collide(collidableInterfaceCompositeInterface)
+                                    collidableBase!.collide(collidableInterfaceCompositeInterface2);
+    
+collidableBase2!.collide(collidableInterfaceCompositeInterface);
+    
 
                                     }
                                 

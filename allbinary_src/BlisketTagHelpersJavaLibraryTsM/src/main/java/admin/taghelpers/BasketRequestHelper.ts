@@ -69,7 +69,7 @@ export class BasketRequestHelper extends TagHelper {
 
     private readonly storeFrontInterface: StoreFrontInterface
 
-    private readonly propertiesHashMap: HashMap<Any, Any>
+    private readonly propertiesHashMap: HashMap<any, any>
 
     private readonly pageContext: PageContext
 
@@ -82,42 +82,56 @@ export class BasketRequestHelper extends TagHelper {
     private readonly MAX: number = 200;
         
         
-public constructor (propertiesHashMap: HashMap<Any, Any>, pageContext: PageContext){
+public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
             var propertiesHashMap = propertiesHashMap
 var pageContext = pageContext
-this.propertiesHashMap= propertiesHashMap
-this.pageContext= pageContext
-this.request= pageContext!.getRequest() as HttpServletRequest
+this.propertiesHashMap= propertiesHashMap;
+    
+this.pageContext= pageContext;
+    
+this.request= pageContext!.getRequest();
 
-    var storeName: string = propertiesHashMap!.get(StoreFrontData.getInstance()!.NAME) as String;
+                         as HttpServletRequest;
+    
+
+    var storeName: string = propertiesHashMap!.get(StoreFrontData.getInstance()!.NAME);
+
+                         as String;
         
         
-
+;
+    
 
                         if(storeName != 
                                     null
                                 )
                         
                                     {
-                                    this.storeFrontInterface= StoreFrontFactory.getInstance(storeName)
+                                    this.storeFrontInterface= StoreFrontFactory.getInstance(storeName);
+    
 
                                     }
                                 
                         else {
-                            this.storeFrontInterface= StoreFront()
+                            this.storeFrontInterface= StoreFront();
+    
 
                         }
                             
-this.weblisketSession= WeblisketSession(propertiesHashMap, pageContext)
-this.getFormData()
+this.weblisketSession= WeblisketSession(propertiesHashMap, pageContext);
+    
+this.getFormData();
+    
 }
 
 
     getFormData(){
-this.id= request.getParameter(BasicItemData.ID)
-this.num= request.getParameter(BasketData.ITEMTOTALINBASKET)
+this.id= request.getParameter(BasicItemData.ID);
+    
+this.num= request.getParameter(BasketData.ITEMTOTALINBASKET);
+    
 }
 
 
@@ -136,7 +150,8 @@ this.num= request.getParameter(BasketData.ITEMTOTALINBASKET)
     var basket: BasketInterface = this.weblisketSession!.getOrder()!.getBasket()!;
         
         
-
+;
+    
 
                         if(InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!.getItem(id) == 
                                     null
@@ -152,7 +167,8 @@ this.num= request.getParameter(BasketData.ITEMTOTALINBASKET)
 
                                     }
                                 
-basket.addItem(id, num)
+basket.addItem(id, num);
+    
 
                                     }
                                 
@@ -160,7 +176,8 @@ basket.addItem(id, num)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put("Successfully added item to Basket", this, "addItemToBasket()")
+                                    logUtil!.put("Successfully added item to Basket", this, "addItemToBasket()");
+    
 
                                     }
                                 
@@ -170,13 +187,16 @@ basket.addItem(id, num)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return Boolean.TRUE;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "addItemToBasket()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "addItemToBasket()", e);
+    
 
                                     }
                                 
@@ -204,8 +224,10 @@ basket.addItem(id, num)
     var basket: BasketInterface = this.weblisketSession!.getOrder()!.getBasket()!;
         
         
-
-basket.removeItem(id)
+;
+    
+basket.removeItem(id);
+    
 
                                     }
                                 
@@ -213,7 +235,8 @@ basket.removeItem(id)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put("Successfully removed item from Basket", this, "removeItemFromBasket()")
+                                    logUtil!.put("Successfully removed item from Basket", this, "removeItemFromBasket()");
+    
 
                                     }
                                 
@@ -223,13 +246,16 @@ basket.removeItem(id)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return Boolean.TRUE;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "removeItemFromBasket()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "removeItemFromBasket()", e);
+    
 
                                     }
                                 
@@ -251,19 +277,23 @@ basket.removeItem(id)
     var basket: BasketInterface = this.weblisketSession!.getOrder()!.getBasket()!;
         
         
-
+;
+    
 
                         if(id != 
                                     null
                                  && num != 
                                     null
                                 )
-                        basket.adjustItem(id, num)
+                        basket.adjustItem(id, num);
+
+                        
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put("Successfull Adjusted Basket", this, "adjustBasket()")
+                                    logUtil!.put("Successfull Adjusted Basket", this, "adjustBasket()");
+    
 
                                     }
                                 
@@ -273,13 +303,16 @@ basket.removeItem(id)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return Boolean.TRUE;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "adjustBasket()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "adjustBasket()", e);
+    
 
                                     }
                                 

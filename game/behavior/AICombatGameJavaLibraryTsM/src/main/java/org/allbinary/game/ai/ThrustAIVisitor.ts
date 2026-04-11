@@ -58,16 +58,22 @@ var anyType = anyType
     var basicAI: BasicAI = anyType as BasicAI;
         
         
+;
+    
+basicAI!.processAI(Canvas.UP);
+    
 
-basicAI!.processAI(Canvas.UP)
-} catch(e: Exception)
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.VISIT, e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.VISIT, e);
+    
 }
 
 

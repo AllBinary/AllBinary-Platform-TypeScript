@@ -48,7 +48,8 @@ export class DestroyedLayerProcessor extends BasicLayerProcessor {
         
 
     public static init(){
-DESTROYED_LAYER_PROCESSOR= DestroyedLayerProcessor()
+DESTROYED_LAYER_PROCESSOR= DestroyedLayerProcessor();
+    
 }
 
 
@@ -75,28 +76,34 @@ var allBinaryLayerManager = allBinaryLayerManager
     var list: BasicArrayList = this.getList()!;
         
         
-
+;
+    
 
     var size: number = list.size()!;
         
         
-
+;
+    
 
     var destroyedEventHandler: DestroyedEventHandler = DestroyedEventHandler.getInstance()!;
         
         
-
+;
+    
 
     var destroyEventCircularStaticPool: DestroyEventCircularStaticPool = DestroyEventCircularStaticPool.getInstance()!;
         
         
-
+;
+    
 
     var destroyedEvent: DestroyedEvent
-
+;
+    
 
     var layerInterface: AllBinaryLayer
-
+;
+    
 
 
 
@@ -111,17 +118,22 @@ index < size; index++)
     var layerInterfaceCanBeNull: any = {}? = list.objectArray[index];
         
         
-
+;
+    
 
                         if(layerInterfaceCanBeNull != 
                                     null
                                 )
                         
                                     {
-                                    layerInterface= layerInterfaceCanBeNull as AllBinaryLayer
-allBinaryLayerManager!.remove(layerInterface)
-destroyedEvent= destroyEventCircularStaticPool!.getInstance(layerInterface)
-destroyedEventHandler!.fireEvent(destroyedEvent)
+                                    layerInterface= layerInterfaceCanBeNull as AllBinaryLayer;
+    
+allBinaryLayerManager!.remove(layerInterface);
+    
+destroyedEvent= destroyEventCircularStaticPool!.getInstance(layerInterface);
+    
+destroyedEventHandler!.fireEvent(destroyedEvent);
+    
 
                                     }
                                 
@@ -131,7 +143,8 @@ destroyedEventHandler!.fireEvent(destroyedEvent)
                             
 }
 
-list.clear()
+list.clear();
+    
 }
 
 

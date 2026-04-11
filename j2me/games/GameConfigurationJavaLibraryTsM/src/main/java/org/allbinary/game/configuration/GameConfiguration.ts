@@ -70,12 +70,18 @@ public constructor (name: string, defaultValue: Integer, minValue: Integer, maxV
     //var defaultValue = defaultValue
     //var minValue = minValue
     //var maxValue = maxValue
-this.setName(name)
-this.setDefaultValue(defaultValue)
-this.value= this.getDefaultValue()
-this.setMinValue(minValue)
-this.setMaxValue(maxValue)
-GameConfigurationSingleton.getInstance()!.getHashtable()!.put(this.getName(), this)
+this.setName(name);
+    
+this.setDefaultValue(defaultValue);
+    
+this.value= this.getDefaultValue();
+    
+this.setMinValue(minValue);
+    
+this.setMaxValue(maxValue);
+    
+GameConfigurationSingleton.getInstance()!.getHashtable()!.put(this.getName(), this);
+    
 }
 
 
@@ -91,10 +97,13 @@ GameConfigurationSingleton.getInstance()!.getHashtable()!.put(this.getName(), th
     var oldValue: Integer = this.value;
         
         
-
-this.value= value
+;
+    
+this.value= value;
+    
 GameFeatureEventHandler.getInstance()!.fireEvent(GameFeatureEvent(this, StringMaker().
-                            append(this.name)!.append(" value: from: ")!.appendint(oldValue!.toInt())!.append(" to ")!.appendint(this.value.toInt())!.toString()))
+                            append(this.name)!.append(" value: from: ")!.appendint(oldValue!.toInt())!.append(" to ")!.appendint(this.value.toInt())!.toString()));
+    
 
                                     }
                                 
@@ -113,7 +122,8 @@ GameFeatureEventHandler.getInstance()!.fireEvent(GameFeatureEvent(this, StringMa
 
     public setMaxValue(maxValue: Integer){
     //var maxValue = maxValue
-this.maxValue= maxValue
+this.maxValue= maxValue;
+    
 }
 
 
@@ -129,7 +139,8 @@ this.maxValue= maxValue
 
     public setMinValue(minValue: Integer){
     //var minValue = minValue
-this.minValue= minValue
+this.minValue= minValue;
+    
 }
 
 
@@ -145,7 +156,8 @@ this.minValue= minValue
 
     public setName(name: string){
     //var name = name
-this.name= name
+this.name= name;
+    
 }
 
 
@@ -161,7 +173,8 @@ this.name= name
 
     public setDefaultValue(defaultValue: Integer){
     //var defaultValue = defaultValue
-this.defaultValue= defaultValue
+this.defaultValue= defaultValue;
+    
 }
 
 
@@ -178,7 +191,8 @@ this.defaultValue= defaultValue
                 //@Throws(Error::class)
             
     public setDefault(){
-this.setValue(this.getDefaultValue())
+this.setValue(this.getDefaultValue());
+    
 }
 
 
@@ -187,31 +201,47 @@ this.setValue(this.getDefaultValue())
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("Name: ")
-stringBuffer!.append(this.name)
-stringBuffer!.append(" Min: ")
-stringBuffer!.appendint(this.getMinValue()!.toInt())
-stringBuffer!.append(" Max: ")
-stringBuffer!.appendint(this.getMaxValue()!.toInt())
-stringBuffer!.append(" Value: ")
-stringBuffer!.appendint(this.getValue()!.toInt())
-stringBuffer!.append(" Default: ")
-stringBuffer!.appendint(this.getDefaultValue()!.toInt())
-stringBuffer!.append(" Modifiable: ")
-stringBuffer!.appendboolean(this.isModifiable())
+;
+    
+stringBuffer!.append("Name: ");
+    
+stringBuffer!.append(this.name);
+    
+stringBuffer!.append(" Min: ");
+    
+stringBuffer!.appendint(this.getMinValue()!.toInt());
+    
+stringBuffer!.append(" Max: ");
+    
+stringBuffer!.appendint(this.getMaxValue()!.toInt());
+    
+stringBuffer!.append(" Value: ");
+    
+stringBuffer!.appendint(this.getValue()!.toInt());
+    
+stringBuffer!.append(" Default: ");
+    
+stringBuffer!.appendint(this.getDefaultValue()!.toInt());
+    
+stringBuffer!.append(" Modifiable: ");
+    
+stringBuffer!.appendboolean(this.isModifiable());
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 
 
     public setModifiable(modifiable: Boolean){
 var modifiable = modifiable
-this.modifiable= modifiable
+this.modifiable= modifiable;
+    
 }
 
 

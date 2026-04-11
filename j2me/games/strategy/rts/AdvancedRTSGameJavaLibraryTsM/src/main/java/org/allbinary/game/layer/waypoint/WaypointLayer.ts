@@ -89,16 +89,21 @@ protected constructor (remoteInfo: RemoteInfo, parentLayer: PathFindingLayerInte
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setCollidableInferface(CollidableWaypointBehavior(this, true))
-this.getWaypointBehavior()!.setWaypoint(Waypoint(this, AttackSound.getInstance()))
-this.setAnimationInterface(this.indexedButShouldBeRotationAnimationInterface)
+this.setCollidableInferface(CollidableWaypointBehavior(this, true));
+    
+this.getWaypointBehavior()!.setWaypoint(Waypoint(this, AttackSound.getInstance()));
+    
+this.setAnimationInterface(this.indexedButShouldBeRotationAnimationInterface);
+    
 }
 
 
     public construct(rtsPlayerLayerInterface: RTSPlayerLayerInterface){
 var rtsPlayerLayerInterface = rtsPlayerLayerInterface
-this.percentCompleteP= 100
-this.initVisibility(rtsPlayerLayerInterface)
+this.percentCompleteP= 100;
+    
+this.initVisibility(rtsPlayerLayerInterface);
+    
 }
 
 
@@ -108,7 +113,8 @@ var graphics = graphics
                         if(this.isVisible())
                         
                                     {
-                                    super.paint(graphics)
+                                    super.paint(graphics);
+    
 
                                     }
                                 
@@ -119,10 +125,14 @@ var graphics = graphics
 var allBinaryLayerManager = allBinaryLayerManager
 
         try {
-            this.indexedButShouldBeRotationAnimationInterface!.nextFrame()
-} catch(e: Exception)
+            this.indexedButShouldBeRotationAnimationInterface!.nextFrame();
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "processTick", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "processTick", e);
+    
 }
 
 }
@@ -151,12 +161,14 @@ var damageType = damageType
             
     public setDestroyed(destroyed: boolean){
 var destroyed = destroyed
-super.setDestroyed(destroyed)
+super.setDestroyed(destroyed);
+    
 
                         if(this.isDestroyed())
                         
                                     {
-                                    WaypointCellPositionHistory.getInstance()!.remove(this)
+                                    WaypointCellPositionHistory.getInstance()!.remove(this);
+    
 
                                     }
                                 
@@ -169,6 +181,8 @@ super.setDestroyed(destroyed)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return getStaticType();
+
+                        ;
     
 }
 

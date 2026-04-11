@@ -93,7 +93,8 @@ var categoryName = categoryName
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.START, this, "getInstance(String)")
+                                    logUtil!.put(this.commonStrings!.START, this, "getInstance(String)");
+    
 
                                     }
                                 
@@ -101,20 +102,24 @@ var categoryName = categoryName
     var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = CategoryPropertiesFactory(categoryName) as CategoryPropertiesFactoryInterface;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return Category(categoryPropertiesFactoryInterface) as CategoryInterface;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.ENTITYFACTORYERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(String, int)", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(String, int)", e);
+    
 
                                     }
                                 
@@ -139,7 +144,8 @@ var categoryName = categoryName
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.START, this, "getInstance(CategoryInterface, CategoryInterface, String)")
+                                    logUtil!.put(this.commonStrings!.START, this, "getInstance(CategoryInterface, CategoryInterface, String)");
+    
 
                                     }
                                 
@@ -147,20 +153,24 @@ var categoryName = categoryName
     var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = CategoryPropertiesFactory(categoryName) as CategoryPropertiesFactoryInterface;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return Category(rootCategoryInterface, parentCategoryInterface, categoryPropertiesFactoryInterface) as CategoryInterface;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.ENTITYFACTORYERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(CategoryInterface, CategoryInterface , String, int)", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(CategoryInterface, CategoryInterface , String, int)", e);
+    
 
                                     }
                                 
@@ -183,7 +193,8 @@ var node = node
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.START, this, "getInstance(Node)")
+                                    logUtil!.put(this.commonStrings!.START, this, "getInstance(Node)");
+    
 
                                     }
                                 
@@ -191,20 +202,24 @@ var node = node
     var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = CategoryPropertiesFactory(node) as CategoryPropertiesFactoryInterface;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return Category(categoryPropertiesFactoryInterface) as CategoryInterface;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.ENTITYFACTORYERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(Node, int)", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(Node, int)", e);
+    
 
                                     }
                                 
@@ -229,7 +244,8 @@ var node = node
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.START, this, "getInstance(CategoryInterface, CategoryInterface, Node)")
+                                    logUtil!.put(this.commonStrings!.START, this, "getInstance(CategoryInterface, CategoryInterface, Node)");
+    
 
                                     }
                                 
@@ -237,20 +253,24 @@ var node = node
     var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = CategoryPropertiesFactory(node) as CategoryPropertiesFactoryInterface;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return Category(rootCategoryInterface, parentCategoryInterface, categoryPropertiesFactoryInterface) as CategoryInterface;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.ENTITYFACTORYERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(CategoryInterface, CategoryInterface, Node, int)", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(CategoryInterface, CategoryInterface, Node, int)", e);
+    
 
                                     }
                                 
@@ -265,7 +285,7 @@ var node = node
 }
 
 
-    public getInstance(rootCategoryInterface: CategoryInterface, parentCategoryInterface: CategoryInterface, categoryPropertiesHashMap: HashMap<Any, Any>): CategoryInterface{
+    public getInstance(rootCategoryInterface: CategoryInterface, parentCategoryInterface: CategoryInterface, categoryPropertiesHashMap: HashMap<any, any>): CategoryInterface{
 var rootCategoryInterface = rootCategoryInterface
 var parentCategoryInterface = parentCategoryInterface
 var categoryPropertiesHashMap = categoryPropertiesHashMap
@@ -275,7 +295,8 @@ var categoryPropertiesHashMap = categoryPropertiesHashMap
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.START, this, "getInstance(CategoryInterface, CategoryInterface, HashMap)")
+                                    logUtil!.put(this.commonStrings!.START, this, "getInstance(CategoryInterface, CategoryInterface, HashMap)");
+    
 
                                     }
                                 
@@ -283,20 +304,24 @@ var categoryPropertiesHashMap = categoryPropertiesHashMap
     var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = CategoryPropertiesFactory(categoryPropertiesHashMap) as CategoryPropertiesFactoryInterface;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return Category(rootCategoryInterface, parentCategoryInterface, categoryPropertiesFactoryInterface) as CategoryInterface;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORYERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(CategoryInterface, CategoryInterface, HashMap)", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(CategoryInterface, CategoryInterface, HashMap)", e);
+    
 
                                     }
                                 

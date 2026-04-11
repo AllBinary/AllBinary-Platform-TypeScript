@@ -18,10 +18,13 @@
 
 
 
+            import Hashtable from "@ohos.util.HashMap";
+        
 import { Enumeration } from "../../../../java/util/Enumeration.js";
 
     
-import { Hashtable } from "../../../../java/util/Hashtable.js";
+
+//import { Hashtable } from "../../../../java/util/Hashtable.js";
 
     
 import { Layer } from "../../../../org/allbinary/layer/Layer.js";
@@ -53,46 +56,61 @@ export class LevelLayersFinder
 }
 
 
-    public get(hashtable: Hashtable<Any, Any>): BasicArrayList{
+    public get(hashtable: Hashtable<any, any>): BasicArrayList{
 var hashtable = hashtable
 
     var smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;
         
         
-
+;
+    
 
     var list: BasicArrayList = new BasicArrayList();
         
         
+;
+    
 
-
-    var enumeration: Enumeration<Any?> = hashtable.keys()!;
+    var enumeration: Enumeration<any?> = hashtable.keys()!;
         
         
-
+;
+    
 
         while(enumeration.hasMoreElements())
         {
 
-    var layerHashtable: Hashtable<Any, Any> = hashtable.get(enumeration.nextElement()! as Object) as Hashtable<Any, Any>;
-        
-        
+    var layerHashtable: Hashtable<any, any> = hashtable.get(enumeration.nextElement()!;
 
+                         as Object);
 
-    var integer: Integer = layerHashtable!.get(Layer.ID as Object) as Integer;
+                         as Hashtable<any, any>;
         
         
+;
+    
 
+    var integer: Integer = layerHashtable!.get(Layer.ID as Object);
+
+                         as Integer;
+        
+        
+;
+    
 
     var cachedInteger: Integer = smallIntegerSingletonFactory!.getInstance(integer.toInt())!;
         
         
+;
+    
 
+                        if(!list.contains(cachedInteger);
 
-                        if(!list.contains(cachedInteger))
+                        )
                         
                                     {
-                                    list.add(cachedInteger)
+                                    list.add(cachedInteger);
+    
 
                                     }
                                 

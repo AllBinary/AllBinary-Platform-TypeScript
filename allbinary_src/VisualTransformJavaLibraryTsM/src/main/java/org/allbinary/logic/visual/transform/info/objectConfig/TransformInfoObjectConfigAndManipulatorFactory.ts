@@ -82,20 +82,26 @@ private constructor (){
                             get(objectConfigFileAbPath)!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getInstance(abeClientInformation, transformInfoInterface, DomDocumentHelper.create(data));
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("Could Not Load Object Config", getInstance(), commonStrings!.GET_INSTANCE, e)
+                                    logUtil!.put("Could Not Load Object Config", getInstance(), commonStrings!.GET_INSTANCE, e);
+    
 
                                     }
                                 
@@ -119,11 +125,14 @@ var transformInfoInterface = transformInfoInterface
     var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
         
         
-
+;
+    
 
                         if(transformInfoInterface != 
                                     null
-                                 && !stringValidationUtil!.isEmpty(transformInfoInterface!.getStoreName()))
+                                 && !stringValidationUtil!.isEmpty(transformInfoInterface!.getStoreName());
+
+                        )
                         
                                     {
                                     
@@ -145,20 +154,24 @@ var transformInfoInterface = transformInfoInterface
 
                         }
                             
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed To Get Instance: ";
         
         
-
+;
+    
 
                         if(transformInfoInterface != 
                                     null
                                 )
                         
                                     {
-                                    error= error +transformInfoInterface!.getName()
+                                    error= error +transformInfoInterface!.getName();
+    
 
                                     }
                                 
@@ -166,7 +179,8 @@ var transformInfoInterface = transformInfoInterface
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORYERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, getInstance(), commonStrings!.GET_INSTANCE, e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, getInstance(), commonStrings!.GET_INSTANCE, e);
+    
 
                                     }
                                 
@@ -191,11 +205,14 @@ var transformInfoInterface = transformInfoInterface
     var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
         
         
-
+;
+    
 
                         if(transformInfoInterface != 
                                     null
-                                 && !stringValidationUtil!.isEmpty(transformInfoInterface!.getStoreName()))
+                                 && !stringValidationUtil!.isEmpty(transformInfoInterface!.getStoreName());
+
+                        )
                         
                                     {
                                     
@@ -217,20 +234,24 @@ var transformInfoInterface = transformInfoInterface
 
                         }
                             
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed To Get Instance: ";
         
         
-
+;
+    
 
                         if(transformInfoInterface != 
                                     null
                                 )
                         
                                     {
-                                    error= error +transformInfoInterface!.getName()
+                                    error= error +transformInfoInterface!.getName();
+    
 
                                     }
                                 
@@ -238,7 +259,8 @@ var transformInfoInterface = transformInfoInterface
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORYERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, getInstance(), "getInstance(document)", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, getInstance(), "getInstance(document)", e);
+    
 
                                     }
                                 

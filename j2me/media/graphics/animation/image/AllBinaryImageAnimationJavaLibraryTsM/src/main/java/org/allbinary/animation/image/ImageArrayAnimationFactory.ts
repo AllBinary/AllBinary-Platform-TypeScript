@@ -81,8 +81,10 @@ public constructor (imageArray: Image[], dx: number, dy: number, animationBehavi
 
                             //For kotlin this is before the body of the constructor.
                     
-this.dx= dx
-this.dy= dy
+this.dx= dx;
+    
+this.dy= dy;
+    
 }
 
 public constructor (imageArray: Image[])                        
@@ -102,8 +104,10 @@ public constructor (imageArray: Image[], animationBehaviorFactory: AnimationBeha
             super();
                 //var imageArray = imageArray
     //var animationBehaviorFactory = animationBehaviorFactory
-this.imageArray= imageArray
-this.animationBehaviorFactory= animationBehaviorFactory
+this.imageArray= imageArray;
+    
+this.animationBehaviorFactory= animationBehaviorFactory;
+    
 }
 
 

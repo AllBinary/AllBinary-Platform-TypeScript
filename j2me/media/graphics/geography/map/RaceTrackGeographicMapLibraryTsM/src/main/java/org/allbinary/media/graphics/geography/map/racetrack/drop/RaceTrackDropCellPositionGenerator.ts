@@ -96,12 +96,14 @@ export class RaceTrackDropCellPositionGenerator extends BaseDropCellPositionGene
 protected constructor (){
 
             super();
-            timeDelayHelper= TimeDelayHelper(10000)
+            timeDelayHelper= TimeDelayHelper(10000);
+    
 }
 
 
     init(){
-this.list.clear()
+this.list.clear();
+    
 }
 
 
@@ -110,15 +112,19 @@ this.list.clear()
     public isDropAllowedAt(geographicMapCellPosition: GeographicMapCellPosition): boolean{
     //var geographicMapCellPosition = geographicMapCellPosition
 
-    var raceTrackGeographicMapCellType: RaceTrackGeographicMapCellType = raceTrackGeographicMap!.getCellTypeAt(geographicMapCellPosition) as RaceTrackGeographicMapCellType;
-        
-        
+    var raceTrackGeographicMapCellType: RaceTrackGeographicMapCellType = raceTrackGeographicMap!.getCellTypeAt(geographicMapCellPosition);
 
+                         as RaceTrackGeographicMapCellType;
+        
+        
+;
+    
 
     var raceTrackGeographicMapCellTypeFactory: RaceTrackGeographicMapCellTypeFactory = this.raceTrackGeographicMapCellTypeFactory as RaceTrackGeographicMapCellTypeFactory;
         
         
-
+;
+    
 
                         if(raceTrackGeographicMapCellType == raceTrackGeographicMapCellTypeFactory!.HORIZONTAL_STRAIGHT_ROAD_CELL_TYPE || raceTrackGeographicMapCellType == raceTrackGeographicMapCellTypeFactory!.VERTICAL_STRAIGHT_ROAD_CELL_TYPE)
                         
@@ -146,38 +152,50 @@ this.list.clear()
     public update(allBinaryGameLayerManager: AllBinaryGameLayerManager, geographicMapInterface: BasicGeographicMap){
     //var allBinaryGameLayerManager = allBinaryGameLayerManager
     //var geographicMapInterface = geographicMapInterface
-this.init()
+this.init();
+    
 
     var baseRaceTrackGeographicMap: BaseRaceTrackGeographicMap = geographicMapInterface as BaseRaceTrackGeographicMap;
         
         
+;
+    
+this.raceTrackGeographicMap= baseRaceTrackGeographicMap;
+    
+this.raceTrackGeographicMapCellTypeFactory= baseRaceTrackGeographicMap!.getGeographicMapCellTypeFactory();
 
-this.raceTrackGeographicMap= baseRaceTrackGeographicMap
-this.raceTrackGeographicMapCellTypeFactory= baseRaceTrackGeographicMap!.getGeographicMapCellTypeFactory() as RaceTrackGeographicMapCellTypeFactory
+                         as RaceTrackGeographicMapCellTypeFactory;
+    
 
     var roadGeographicMapCellHistory: GeographicMapCellHistory = RaceTrackRoadsGeographicMapCellHistoryFactory.getInstance()!;
         
         
-
+;
+    
 
     var trackedList: BasicArrayList = roadGeographicMapCellHistory!.getTracked()!;
         
         
-
+;
+    
 
     var geographicMapCellPosition: GeographicMapCellPosition
-
+;
+    
 
     var lastIndex: number = trackedList!.size() -1;
         
         
-
+;
+    
 
     var total: number= 0
-
+;
+    
 
     var ahead: number= 0
-
+;
+    
 
 
 
@@ -188,25 +206,35 @@ this.raceTrackGeographicMapCellTypeFactory= baseRaceTrackGeographicMap!.getGeogr
         
 index > 0; index--)
         {
-geographicMapCellPosition= trackedList!.get(index) as GeographicMapCellPosition
-total= 0
-ahead= index
+geographicMapCellPosition= trackedList!.get(index);
 
-        while(this.isDropAllowedAt(trackedList!.get(ahead) as GeographicMapCellPosition))
+                         as GeographicMapCellPosition;
+    
+total= 0;
+    
+ahead= index;
+    
+
+        while(this.isDropAllowedAt(trackedList!.get(ahead);
+
+                         as GeographicMapCellPosition))
         {
-total++
+total++;
+    
 
                         if(total > STRAIGHTAWAY)
                         
                                     {
-                                    this.list.add(geographicMapCellPosition)
+                                    this.list.add(geographicMapCellPosition);
+    
 break;
 
                     
 
                                     }
                                 
-ahead++
+ahead++;
+    
 
                         if(ahead > lastIndex)
                         
@@ -225,7 +253,8 @@ ahead++
     var size: number = this.list.size()!;
         
         
-
+;
+    
 
 
 
@@ -236,7 +265,8 @@ ahead++
         
 index >= 0; index--)
         {
-this.drop(allBinaryGameLayerManager, index)
+this.drop(allBinaryGameLayerManager, index);
+    
 }
 
 }
@@ -258,8 +288,10 @@ this.drop(allBinaryGameLayerManager, index)
     var index: number = basicArrayListUtil!.getRandomIndex(this.list)!;
         
         
-
-this.drop(allBinaryLayerManager, index)
+;
+    
+this.drop(allBinaryLayerManager, index);
+    
 
                                     }
                                 

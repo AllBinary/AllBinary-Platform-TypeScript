@@ -39,9 +39,12 @@ export class Orientation
 var yaw = yaw
 var pitch = pitch
 var roll = roll
-SINGLETON.yaw.set(yaw)
-SINGLETON.pitch.set(pitch)
-SINGLETON.roll.set(roll)
+SINGLETON.yaw.set(yaw);
+    
+SINGLETON.pitch.set(pitch);
+    
+SINGLETON.roll.set(roll);
+    
 
 
 
@@ -68,9 +71,12 @@ private constructor (yaw: number, pitch: number, roll: number){
             var yaw = yaw
 var pitch = pitch
 var roll = roll
-this.yaw.set(yaw)
-this.pitch.set(pitch)
-this.roll.set(roll)
+this.yaw.set(yaw);
+    
+this.pitch.set(pitch);
+    
+this.roll.set(roll);
+    
 }
 
 
@@ -79,18 +85,27 @@ this.roll.set(roll)
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("Y: ")
-stringBuffer!.append(yaw.toString())
-stringBuffer!.append(" P: ")
-stringBuffer!.append(pitch.toString())
-stringBuffer!.append(" R: ")
-stringBuffer!.append(roll.toString())
+;
+    
+stringBuffer!.append("Y: ");
+    
+stringBuffer!.append(yaw.toString());
+    
+stringBuffer!.append(" P: ");
+    
+stringBuffer!.append(pitch.toString());
+    
+stringBuffer!.append(" R: ");
+    
+stringBuffer!.append(roll.toString());
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

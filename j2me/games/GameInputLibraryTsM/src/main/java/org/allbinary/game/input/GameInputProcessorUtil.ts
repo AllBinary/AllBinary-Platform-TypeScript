@@ -30,12 +30,14 @@ export class GameInputProcessorUtil
     var noInputProcessor: GameInputProcessor = GameInputProcessor.getInstance()!;
         
         
-
+;
+    
 
     var total: number = InputFactory.getInstance()!.MAX;
         
         
-
+;
+    
 
 
 
@@ -50,14 +52,16 @@ index < total; index++)
     var inputProcessorCanBeNull: GameInputProcessor? = inputProcessorArray[index];
         
         
-
+;
+    
 
                         if(inputProcessorCanBeNull == 
                                     null
                                 )
                         
                                     {
-                                    inputProcessorArray[index]= noInputProcessor
+                                    inputProcessorArray[index]= noInputProcessor;
+    
 
                                     }
                                 

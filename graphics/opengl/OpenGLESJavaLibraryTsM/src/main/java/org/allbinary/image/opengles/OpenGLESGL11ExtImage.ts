@@ -64,7 +64,7 @@ export class OpenGLESGL11ExtImage extends OpenGLESImage {
 
     private a: number= 0
 
-    private readonly rectangle: IntArray
+    private readonly rectangle: number[]
 public constructor (image: Image, bitmapFactory: PlatformBitmapBaseFactory, textureFactory: PlatformTextureBaseFactory)                        
 
                             : super(image, bitmapFactory, textureFactory){
@@ -78,10 +78,14 @@ public constructor (image: Image, bitmapFactory: PlatformBitmapBaseFactory, text
                             //For kotlin this is before the body of the constructor.
                     
 this.onDisplayChangeEvent(
-                            null)
+                            null);
+    
 rectangle= intArrayOf(0,this.getHeight(), this.getWidth(),  -this.getHeight();
+
+                        ;
         
-        )
+        );
+    
 }
 
 
@@ -89,11 +93,16 @@ rectangle= intArrayOf(0,this.getHeight(), this.getWidth(),  -this.getHeight();
     //var displayChangeEvent = displayChangeEvent
 
         try {
-            logUtil!.put(commonStrings!.START, this, "onResize")
-this.a= DisplayInfoSingleton.getInstance()!.getLastHeight() -this.getHeight()
-} catch(e: Exception)
+            logUtil!.put(commonStrings!.START, this, "onResize");
+    
+this.a= DisplayInfoSingleton.getInstance()!.getLastHeight() -this.getHeight();
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "onResize", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "onResize", e);
+    
 }
 
 }
@@ -102,20 +111,26 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "onResize", e)
     public set(gl: GL){
     //var gl = gl
 this.onDisplayChangeEvent(
-                            null)
+                            null);
+    
 
     var gl11: GL11 = gl as GL11;
         
         
-
+;
+    
 
                         if(super.initTexture(gl11))
                         
                                     {
-                                    this.textureFactory!.load(gl11, GL10.GL_TEXTURE_2D, 0, this, 0, true)
-gl11.glTexParameteriv(GL10.GL_TEXTURE_2D, GL11Ext.GL_TEXTURE_CROP_RECT_OES, rectangle, 0)
-gl11.glDisable(GL10.GL_TEXTURE_2D)
-OpenGLLogUtil.getInstance()!.logError(gl11, this)
+                                    this.textureFactory!.load(gl11, GL10.GL_TEXTURE_2D, 0, this, 0, true);
+    
+gl11.glTexParameteriv(GL10.GL_TEXTURE_2D, GL11Ext.GL_TEXTURE_CROP_RECT_OES, rectangle, 0);
+    
+gl11.glDisable(GL10.GL_TEXTURE_2D);
+    
+OpenGLLogUtil.getInstance()!.logError(gl11, this);
+    
 
                                     }
                                 
@@ -127,12 +142,16 @@ OpenGLLogUtil.getInstance()!.logError(gl11, this)
     //var x = x
     //var y = y
     //var z = z
-gl.glEnable(GL10.GL_TEXTURE_2D)
-gl.glBindTexture(GL10.GL_TEXTURE_2D, openGLESImageProperties!.textureID)
+gl.glEnable(GL10.GL_TEXTURE_2D);
+    
+gl.glBindTexture(GL10.GL_TEXTURE_2D, openGLESImageProperties!.textureID);
+    
 gl = glgl as GL11Ext
 gl.
-                    glDrawTexfOES(x, a -y, z, this.getWidth(), this.getHeight())
-gl.glDisable(GL10.GL_TEXTURE_2D)
+                    glDrawTexfOES(x, a -y, z, this.getWidth(), this.getHeight());
+    
+gl.glDisable(GL10.GL_TEXTURE_2D);
+    
 }
 
 

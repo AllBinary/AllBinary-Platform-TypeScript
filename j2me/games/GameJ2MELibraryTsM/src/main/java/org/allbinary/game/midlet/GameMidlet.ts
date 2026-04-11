@@ -18,10 +18,13 @@
 
 
 
+            import Hashtable from "@ohos.util.HashMap";
+        
 import { Enumeration } from "../../../../java/util/Enumeration.js";
 
     
-import { Hashtable } from "../../../../java/util/Hashtable.js";
+
+//import { Hashtable } from "../../../../java/util/Hashtable.js";
 
     
 import { Canvas } from "../../../../javax/microedition/lcdui/Canvas.js";
@@ -373,18 +376,26 @@ public constructor (clientInformationFactory: ClientInformationFactory)
 
                             //For kotlin this is before the body of the constructor.
                     
-SmallIntegerSingletonFactory.getInstance()!.init(0x291, 6)
-loadGameForm= CommandForm.NULL_COMMAND_FORM
+SmallIntegerSingletonFactory.getInstance()!.init(0x291, 6);
+    
+loadGameForm= CommandForm.NULL_COMMAND_FORM;
+    
 
     var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
         
         
-
-progressCanvas!.init(this)
-GameFeatureEventHandler.getInstance()!.addListener(ChangedGameFeatureListener.getInstance())
-GamePersistanceSingleton.getInstance()!.clear()
-this.debugInterface= DebugFactory.getInstance()
-this.init()
+;
+    
+progressCanvas!.init(this);
+    
+GameFeatureEventHandler.getInstance()!.addListener(ChangedGameFeatureListener.getInstance());
+    
+GamePersistanceSingleton.getInstance()!.clear();
+    
+this.debugInterface= DebugFactory.getInstance();
+    
+this.init();
+    
 }
 
 
@@ -427,66 +438,81 @@ this.init()
 
 
     pauseApp(){
-this.pauseAppBackground(true)
+this.pauseAppBackground(true);
+    
 
     var gameAdState: GameAdState = gameAdStateFactory!.getCurrentInstance()!;
         
         
-
-gameAdState!.getAdvertisements()!.stopAll()
+;
+    
+gameAdState!.getAdvertisements()!.stopAll();
+    
 }
 
 
     pauseAppBackground(background: boolean){
     //var background = background
-logUtil!.put(commonStrings!.START, this, PAUSE_APP_BACKGROUND)
+logUtil!.put(commonStrings!.START, this, PAUSE_APP_BACKGROUND);
+    
 
                         if(allbinaryGameCanvasRunnableInterface != NullGameCanvasRunnable.NULL_GAME_CANVAS_RUNNABLE)
                         
                                     {
-                                    allbinaryGameCanvasRunnableInterface!.pause()
+                                    allbinaryGameCanvasRunnableInterface!.pause();
+    
 
                                     }
                                 
                         else {
-                            logUtil!.put("<<<<<< Null", this, PAUSE_APP_BACKGROUND)
+                            logUtil!.put("<<<<<< Null", this, PAUSE_APP_BACKGROUND);
+    
 
                         }
                             
-AllBinarySensorManager.getInstance()!.shutdown()
+AllBinarySensorManager.getInstance()!.shutdown();
+    
 }
 
 
     unPauseApp(){
-this.unPauseAppBackground(true)
+this.unPauseAppBackground(true);
+    
 
     var gameAdState: GameAdState = gameAdStateFactory!.getCurrentInstance()!;
         
         
-
-gameAdState!.getAdvertisements()!.startAll()
+;
+    
+gameAdState!.getAdvertisements()!.startAll();
+    
 }
 
 
     unPauseAppBackground(background: boolean){
 var background = background
-logUtil!.put(commonStrings!.START, this, UN_PAUSE_APP_BACKGROUND)
-AllBinarySensorManager.getInstance()!.init()
+logUtil!.put(commonStrings!.START, this, UN_PAUSE_APP_BACKGROUND);
+    
+AllBinarySensorManager.getInstance()!.init();
+    
 
     var gameCanvasRunnableInterface: GameCanvasRunnableInterface = this.allbinaryGameCanvasRunnableInterface;
         
         
-
+;
+    
 
                         if(gameCanvasRunnableInterface != NullGameCanvasRunnable.NULL_GAME_CANVAS_RUNNABLE)
                         
                                     {
-                                    gameCanvasRunnableInterface!.unPause()
+                                    gameCanvasRunnableInterface!.unPause();
+    
 
                                     }
                                 
                         else {
-                            logUtil!.put("<<<<<< Null", this, UN_PAUSE_APP_BACKGROUND)
+                            logUtil!.put("<<<<<< Null", this, UN_PAUSE_APP_BACKGROUND);
+    
 
                         }
                             
@@ -500,22 +526,27 @@ var isProgress = isProgress
     var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
         
         
-
+;
+    
 
                         if(isProgress)
                         
                                     {
-                                    progressCanvas!.start()
-this.commandAction(myCommandsFactory!.SET_DISPLAYABLE, progressCanvas)
+                                    progressCanvas!.start();
+    
+this.commandAction(myCommandsFactory!.SET_DISPLAYABLE, progressCanvas);
+    
 
                                     }
                                 
-this.destroyApp(unconditional)
+this.destroyApp(unconditional);
+    
 
                         if(isProgress)
                         
                                     {
-                                    progressCanvas!.end()
+                                    progressCanvas!.end();
+    
 
                                     }
                                 
@@ -528,39 +559,55 @@ var unconditional = unconditional
     var METHOD_NAME: string = "GameMidlet::destroyApp";
         
         
-
+;
+    
 
         try {
-            PreLogUtil.put(GameStatisticsFactory.getInstance()!.toString(), this, METHOD_NAME)
+            PreLogUtil.put(GameStatisticsFactory.getInstance()!.toString(), this, METHOD_NAME);
+    
 
     var gameAdState: GameAdState = gameAdStateFactory!.getCurrentInstance()!;
         
         
+;
+    
+gameAdState!.getAdvertisements()!.stopAll();
+    
 
-gameAdState!.getAdvertisements()!.stopAll()
+                        if(!this.isDestroyed();
 
-                        if(!this.isDestroyed())
+                        )
                         
                                     {
-                                    this.stopGameCanvasRunnableInterface()
-this.setGameCanvasRunnableInterface(NullGameCanvasRunnable.NULL_GAME_CANVAS_RUNNABLE)
-this.mediaShutdown()
+                                    this.stopGameCanvasRunnableInterface();
+    
+this.setGameCanvasRunnableInterface(NullGameCanvasRunnable.NULL_GAME_CANVAS_RUNNABLE);
+    
+this.mediaShutdown();
+    
 
                                     }
                                 
                         else {
-                            logUtil!.put("Midlet Managment Error: Midlet Should Only Be Destroyed Once", this, METHOD_NAME)
+                            logUtil!.put("Midlet Managment Error: Midlet Should Only Be Destroyed Once", this, METHOD_NAME);
+    
 
                         }
                             
-super.destroyApp(true)
-PreLogUtil.put(commonStrings!.END, this, METHOD_NAME)
-} catch(e: Exception)
+super.destroyApp(true);
+    
+PreLogUtil.put(commonStrings!.END, this, METHOD_NAME);
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, METHOD_NAME, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, METHOD_NAME, e);
+    
 }
 
-logUtil!.put(commonStrings!.END, this, METHOD_NAME)
+logUtil!.put(commonStrings!.END, this, METHOD_NAME);
+    
 }
 
 
@@ -571,51 +618,66 @@ logUtil!.put(commonStrings!.END, this, METHOD_NAME)
     var gameAdState: GameAdState = gameAdStateFactory!.getCurrentInstance()!;
         
         
-
-gameAdState!.getAdvertisements()!.startAll()
+;
+    
+gameAdState!.getAdvertisements()!.startAll();
+    
 
     var START_APP: string = "startApp";
         
         
-
-logUtil!.put(commonStrings!.START, this, START_APP)
+;
+    
+logUtil!.put(commonStrings!.START, this, START_APP);
+    
 
     var gameCanvasRunnableInterface: GameCanvasRunnableInterface = this.allbinaryGameCanvasRunnableInterface;
         
         
-
+;
+    
 
                         if(gameCanvasRunnableInterface == NullGameCanvasRunnable.NULL_GAME_CANVAS_RUNNABLE)
                         
                                     {
-                                    gameMidletStateFactory!.setCurrentGameState(GameState.NO_GAME_STATE)
-this.setDemo()
+                                    gameMidletStateFactory!.setCurrentGameState(GameState.NO_GAME_STATE);
+    
+this.setDemo();
+    
 
                                     }
                                 
                         else {
-                            logUtil!.put("GameCanvasRunnableInterface is available", this, START_APP)
+                            logUtil!.put("GameCanvasRunnableInterface is available", this, START_APP);
+    
 
                         if(gameCanvasRunnableInterface == this.getCurrentDisplayable())
                         
                                     {
-                                    this.unPauseAppBackground(false)
+                                    this.unPauseAppBackground(false);
+    
 
                                     }
                                 
                         else {
-                            logUtil!.put("GameCanvasRunnableInterface is not current displayable", this, START_APP)
+                            logUtil!.put("GameCanvasRunnableInterface is not current displayable", this, START_APP);
+    
 
                         }
                             
 
                         }
                             
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "startApp", e)
-destroyApp(false)
-notifyDestroyed()
+logUtil!.put(commonStrings!.EXCEPTION, this, "startApp", e);
+    
+destroyApp(false);
+    
+notifyDestroyed();
+    
 }
 
 }
@@ -631,14 +693,16 @@ notifyDestroyed()
     var displayableAsString: string = NO_DISPLAYABLE;
         
         
-
+;
+    
 
                         if(displayable != 
                                     null
                                 )
                         
                                     {
-                                    displayableAsString= displayable.toString()
+                                    displayableAsString= displayable.toString();
+    
 
                                     }
                                 
@@ -646,24 +710,28 @@ notifyDestroyed()
     var label: string = NO_COMMAND;
         
         
-
+;
+    
 
                         if(command != 
                                     null
                                 )
                         
                                     {
-                                    label= command.getLabel()
+                                    label= command.getLabel();
+    
 
                                     }
                                 
 PreLogUtil.put(StringMaker().
-                            append(COMMAND_NAME)!.append(label)!.append(DISPLAYABLE)!.append(displayableAsString)!.toString(), this, this.COMMAND_ACTION)
+                            append(COMMAND_NAME)!.append(label)!.append(DISPLAYABLE)!.append(displayableAsString)!.toString(), this, this.COMMAND_ACTION);
+    
 
     var gameCommandsFactory: GameCommandsFactory = GameCommandsFactory.getInstance()!;
         
         
-
+;
+    
 
                         if(command == gameCommandsFactory!.SHOW_GAME_CANVAS)
                         
@@ -672,11 +740,13 @@ PreLogUtil.put(StringMaker().
                         if(this.getDisplay()!.getCurrent() != this.allbinaryGameCanvasRunnableInterface && this.allbinaryGameCanvasRunnableInterface!.getType() != NullGameCanvasRunnable.NULL_GAME_CANVAS_RUNNABLE.getType())
                         
                                     {
-                                    this.setDisplay(this.allbinaryGameCanvasRunnableInterface as Displayable)
+                                    this.setDisplay(this.allbinaryGameCanvasRunnableInterface as Displayable);
+    
 
                                     }
                                 
-this.unPauseAppBackground(false)
+this.unPauseAppBackground(false);
+    
 
                                     }
                                 
@@ -688,10 +758,14 @@ this.unPauseAppBackground(false)
     var menuListener: MenuListener = displayable as MenuListener;
         
         
-
-menuListener!.close()
-this.setDisplay(this.allbinaryGameCanvasRunnableInterface as Displayable)
-this.unPauseAppBackground(false)
+;
+    
+menuListener!.close();
+    
+this.setDisplay(this.allbinaryGameCanvasRunnableInterface as Displayable);
+    
+this.unPauseAppBackground(false);
+    
 
                                     }
                                 
@@ -703,11 +777,13 @@ this.unPauseAppBackground(false)
                         if(GameMidletEventHandler.getInstance()!.getEventListenerInterfaceListP()!.size() == 0)
                         
                                     {
-                                    this.exit(true)
+                                    this.exit(true);
+    
 
                                     }
                                 
-GameMidletEventHandler.getInstance()!.fireEvent(DemoGameMidletEvent(this, DemoGameMidletStateFactory.getInstance()!.NONE))
+GameMidletEventHandler.getInstance()!.fireEvent(DemoGameMidletEvent(this, DemoGameMidletStateFactory.getInstance()!.NONE));
+    
 
                                     }
                                 
@@ -715,7 +791,8 @@ GameMidletEventHandler.getInstance()!.fireEvent(DemoGameMidletEvent(this, DemoGa
                         if(command == gameCommandsFactory!.EXIT_WITHOUT_PROGRESS_COMMAND)
                         
                                     {
-                                    this.exit(false)
+                                    this.exit(false);
+    
 
                                     }
                                 
@@ -735,14 +812,18 @@ GameMidletEventHandler.getInstance()!.fireEvent(DemoGameMidletEvent(this, DemoGa
                         if(command == gameCommandsFactory!.START_COMMAND && this.isDemoLoading())
                         
                                     {
-                                    logUtil!.put("Trying to Start Game Before Loading Complete", this, midletStrings!.COMMAND_ACTION)
+                                    logUtil!.put("Trying to Start Game Before Loading Complete", this, midletStrings!.COMMAND_ACTION);
+    
 
                                     }
                                 
                         else {
-                            this.startedBefore= true
-this.createGame()
-gameMidletStateFactory!.setCurrentGameState(GameState.PLAYING_GAME_STATE)
+                            this.startedBefore= true;
+    
+this.createGame();
+    
+gameMidletStateFactory!.setCurrentGameState(GameState.PLAYING_GAME_STATE);
+    
 
                         }
                             
@@ -750,7 +831,8 @@ gameMidletStateFactory!.setCurrentGameState(GameState.PLAYING_GAME_STATE)
                                     }
                                 
                         else {
-                            logUtil!.put("Starting Game Too Often", this, midletStrings!.COMMAND_ACTION)
+                            logUtil!.put("Starting Game Too Often", this, midletStrings!.COMMAND_ACTION);
+    
 
                         }
                             
@@ -758,7 +840,8 @@ gameMidletStateFactory!.setCurrentGameState(GameState.PLAYING_GAME_STATE)
                                     }
                                 
                         else {
-                            logUtil!.put("Already in playing state", this, COMMAND_ACTION)
+                            logUtil!.put("Already in playing state", this, COMMAND_ACTION);
+    
 
                         }
                             
@@ -773,27 +856,36 @@ gameMidletStateFactory!.setCurrentGameState(GameState.PLAYING_GAME_STATE)
     var inApplicationPurchaseFactory: InApplicationPurchaseFactory = InApplicationPurchaseFactory.getInstance()!;
         
         
-
+;
+    
 
     var list: BasicArrayList = LockableFeatureFactory.getInstance()!.getList()!;
         
         
+;
+    
 
+    var lockableFeature: LockableFeature = list.get(0);
 
-    var lockableFeature: LockableFeature = list.get(0) as LockableFeature;
+                         as LockableFeature;
         
         
+;
+    
 
+                        if(list.size() > 0 && !inApplicationPurchaseFactory!.isPurchased(lockableFeature);
 
-                        if(list.size() > 0 && !inApplicationPurchaseFactory!.isPurchased(lockableFeature))
+                        )
                         
                                     {
-                                    inApplicationPurchaseFactory!.purchase(lockableFeature)
+                                    inApplicationPurchaseFactory!.purchase(lockableFeature);
+    
 
                                     }
                                 
                         else {
-                            TextNotificationUtil.getInstance()!.fireSuccess("Already Purchased")
+                            TextNotificationUtil.getInstance()!.fireSuccess("Already Purchased");
+    
 
                         }
                             
@@ -816,14 +908,19 @@ gameMidletStateFactory!.setCurrentGameState(GameState.PLAYING_GAME_STATE)
     var menuListener: MenuListener = displayable as MenuListener;
         
         
-
-menuListener!.close()
+;
+    
+menuListener!.close();
+    
 
                                     }
                                 
-this.stopGameCanvasRunnableInterface()
-gameMidletStateFactory!.setCurrentGameState(GameState.NO_GAME_STATE)
-this.setDemo()
+this.stopGameCanvasRunnableInterface();
+    
+gameMidletStateFactory!.setCurrentGameState(GameState.NO_GAME_STATE);
+    
+this.setDemo();
+    
 
                                     }
                                 
@@ -834,7 +931,8 @@ this.setDemo()
                         if(command == myCommandsFactory!.RESUME_COMMAND)
                         
                                     {
-                                    this.unPauseAppBackground(false)
+                                    this.unPauseAppBackground(false);
+    
 
                                     }
                                 
@@ -842,7 +940,8 @@ this.setDemo()
                         if(command == myCommandsFactory!.PAUSE_COMMAND)
                         
                                     {
-                                    this.pauseAppBackground(false)
+                                    this.pauseAppBackground(false);
+    
 
                                     }
                                 
@@ -850,8 +949,10 @@ this.setDemo()
                         if(command == myCommandsFactory!.SET_DISPLAYABLE)
                         
                                     {
-                                    this.pauseAppBackground(false)
-this.setDisplay(displayable)
+                                    this.pauseAppBackground(false);
+    
+this.setDisplay(displayable);
+    
 
                                     }
                                 
@@ -859,14 +960,18 @@ this.setDisplay(displayable)
                         if(command == gameCommandsFactory!.SET_MENU_DISPLAYABLE)
                         
                                     {
-                                    this.pauseAppBackground(false)
+                                    this.pauseAppBackground(false);
+    
 
     var menuListener: MenuListener = displayable as MenuListener;
         
         
-
-menuListener!.open()
-this.setDisplay(displayable)
+;
+    
+menuListener!.open();
+    
+this.setDisplay(displayable);
+    
 
                                     }
                                 
@@ -874,14 +979,18 @@ this.setDisplay(displayable)
                         if(command == gameCommandsFactory!.START_TRACE)
                         
                                     {
-                                    this.debugInterface!.start()
+                                    this.debugInterface!.start();
+    
 
     var gameCanvas: AllBinaryGameCanvas = this.allbinaryGameCanvasRunnableInterface as AllBinaryGameCanvas;
         
         
-
-gameCanvas!.addCommand(gameCommandsFactory!.STOP_TRACE)
-gameCanvas!.removeCommand(gameCommandsFactory!.START_TRACE)
+;
+    
+gameCanvas!.addCommand(gameCommandsFactory!.STOP_TRACE);
+    
+gameCanvas!.removeCommand(gameCommandsFactory!.START_TRACE);
+    
 
                                     }
                                 
@@ -889,16 +998,22 @@ gameCanvas!.removeCommand(gameCommandsFactory!.START_TRACE)
                         if(command == gameCommandsFactory!.STOP_TRACE)
                         
                                     {
-                                    this.pauseAppBackground(false)
-this.debugInterface!.stop()
-this.unPauseAppBackground(false)
+                                    this.pauseAppBackground(false);
+    
+this.debugInterface!.stop();
+    
+this.unPauseAppBackground(false);
+    
 
     var gameCanvas: AllBinaryGameCanvas = this.allbinaryGameCanvasRunnableInterface as AllBinaryGameCanvas;
         
         
-
-gameCanvas!.addCommand(gameCommandsFactory!.START_TRACE)
-gameCanvas!.removeCommand(gameCommandsFactory!.STOP_TRACE)
+;
+    
+gameCanvas!.addCommand(gameCommandsFactory!.START_TRACE);
+    
+gameCanvas!.removeCommand(gameCommandsFactory!.STOP_TRACE);
+    
 
                                     }
                                 
@@ -910,12 +1025,14 @@ gameCanvas!.removeCommand(gameCommandsFactory!.STOP_TRACE)
     var tempDisplayable: Displayable = displayable;
         
         
-
+;
+    
 
                         if(tempDisplayable is GameOptionsForm)
                         
                                     {
-                                    GameFeatureFormUtil.getInstance()!.setDefault(tempDisplayable as CommandForm)
+                                    GameFeatureFormUtil.getInstance()!.setDefault(tempDisplayable as CommandForm);
+    
 
                                     }
                                 
@@ -930,7 +1047,8 @@ gameCanvas!.removeCommand(gameCommandsFactory!.STOP_TRACE)
     var tempDisplayable: Displayable = displayable;
         
         
-
+;
+    
 
                         if(tempDisplayable is GameInputMappingCanvas)
                         
@@ -939,12 +1057,15 @@ gameCanvas!.removeCommand(gameCommandsFactory!.STOP_TRACE)
     var gameInputMappingCanvas: GameInputMappingCanvas = tempDisplayable as GameInputMappingCanvas;
         
         
-
-gameInputMappingCanvas!.update()
+;
+    
+gameInputMappingCanvas!.update();
+    
 
                                     }
                                 
-this.commandAction(gameCommandsFactory!.SET_MENU_DISPLAYABLE, this.getInputMappingInstructionsCanvas())
+this.commandAction(gameCommandsFactory!.SET_MENU_DISPLAYABLE, this.getInputMappingInstructionsCanvas());
+    
 
                                     }
                                 
@@ -956,7 +1077,8 @@ this.commandAction(gameCommandsFactory!.SET_MENU_DISPLAYABLE, this.getInputMappi
     var tempDisplayable: Displayable = displayable;
         
         
-
+;
+    
 
                         if(tempDisplayable is HighScoresCanvas)
                         
@@ -965,8 +1087,10 @@ this.commandAction(gameCommandsFactory!.SET_MENU_DISPLAYABLE, this.getInputMappi
     var highScoresCanvas: HighScoresCanvas = tempDisplayable as HighScoresCanvas;
         
         
-
-highScoresCanvas!.updateCommand(command)
+;
+    
+highScoresCanvas!.updateCommand(command);
+    
 
                                     }
                                 
@@ -977,7 +1101,8 @@ highScoresCanvas!.updateCommand(command)
                         if(command == HighScoreCommands.getInstance()!.DISPLAY)
                         
                                     {
-                                    this.commandAction(gameCommandsFactory!.SET_MENU_DISPLAYABLE, this.createHighScoresCanvas())
+                                    this.commandAction(gameCommandsFactory!.SET_MENU_DISPLAYABLE, this.createHighScoresCanvas());
+    
 
                                     }
                                 
@@ -989,9 +1114,12 @@ highScoresCanvas!.updateCommand(command)
     var menuListener: MenuListener = displayable as MenuListener;
         
         
-
-menuListener!.close()
-this.commandAction(GameInputMappingCanvas.DISPLAY, NullCanvas.NULL_CANVAS)
+;
+    
+menuListener!.close();
+    
+this.commandAction(GameInputMappingCanvas.DISPLAY, NullCanvas.NULL_CANVAS);
+    
 
                                     }
                                 
@@ -1003,11 +1131,13 @@ this.commandAction(GameInputMappingCanvas.DISPLAY, NullCanvas.NULL_CANVAS)
                         if(J2MEUtil.isHTML())
                         
                                     {
-                                    this.pauseAppBackground(false)
+                                    this.pauseAppBackground(false);
+    
 
                                     }
                                 
-this.commandAction(gameCommandsFactory!.SET_MENU_DISPLAYABLE, this.getInputMappingCanvas())
+this.commandAction(gameCommandsFactory!.SET_MENU_DISPLAYABLE, this.getInputMappingCanvas());
+    
 
                                     }
                                 
@@ -1019,7 +1149,8 @@ this.commandAction(gameCommandsFactory!.SET_MENU_DISPLAYABLE, this.getInputMappi
     var tempDisplayable: Displayable = displayable;
         
         
-
+;
+    
 
                         if(tempDisplayable is GameInputMappingCanvas)
                         
@@ -1028,8 +1159,10 @@ this.commandAction(gameCommandsFactory!.SET_MENU_DISPLAYABLE, this.getInputMappi
     var gameInputMappingCanvas: GameInputMappingCanvas = tempDisplayable as GameInputMappingCanvas;
         
         
-
-gameInputMappingCanvas!.setDefault()
+;
+    
+gameInputMappingCanvas!.setDefault();
+    
 
                                     }
                                 
@@ -1040,31 +1173,40 @@ gameInputMappingCanvas!.setDefault()
                         if(command == InGameOptionsForm.DISPLAY)
                         
                                     {
-                                    this.pauseAppBackground(false)
+                                    this.pauseAppBackground(false);
+    
 
     var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
         
         
-
-progressCanvas!.addPortion(50, "In Game Options")
+;
+    
+progressCanvas!.addPortion(50, "In Game Options");
+    
 
     var layerManager: AllBinaryGameLayerManager = this.createGameLayerManager()!;
         
         
-
+;
+    
 
     var inGameOptionsFormFactory: InGameOptionsFormFactory = InGameOptionsFormFactory.getInstance()!;
         
         
-
-inGameOptionsFormFactory!.init(this, InGameFeatures(), "Options In Game", layerManager!.getBackgroundBasicColor(), layerManager!.getForegroundBasicColor())
+;
+    
+inGameOptionsFormFactory!.init(this, InGameFeatures(), "Options In Game", layerManager!.getBackgroundBasicColor(), layerManager!.getForegroundBasicColor());
+    
 
     var inGameOptionsForm: CommandForm = inGameOptionsFormFactory!.get()!;
         
         
-
-inGameOptionsForm!.setItemStateListener(this.allbinaryGameCanvasRunnableInterface)
-this.commandAction(gameCommandsFactory!.SET_MENU_DISPLAYABLE, inGameOptionsForm)
+;
+    
+inGameOptionsForm!.setItemStateListener(this.allbinaryGameCanvasRunnableInterface);
+    
+this.commandAction(gameCommandsFactory!.SET_MENU_DISPLAYABLE, inGameOptionsForm);
+    
 
                                     }
                                 
@@ -1073,11 +1215,15 @@ this.commandAction(gameCommandsFactory!.SET_MENU_DISPLAYABLE, inGameOptionsForm)
                         
                                     {
                                     
-    var inGameOptionsForm: InGameOptionsForm = InGameOptionsFormFactory.getInstance()!.get() as InGameOptionsForm;
-        
-        
+    var inGameOptionsForm: InGameOptionsForm = InGameOptionsFormFactory.getInstance()!.get();
 
-GameFeatureFormUtil.getInstance()!.setDefault(inGameOptionsForm)
+                         as InGameOptionsForm;
+        
+        
+;
+    
+GameFeatureFormUtil.getInstance()!.setDefault(inGameOptionsForm);
+    
 
                                     }
                                 
@@ -1085,17 +1231,24 @@ GameFeatureFormUtil.getInstance()!.setDefault(inGameOptionsForm)
                         if(command == gameCommandsFactory!.DISPLAY_OPTIONS)
                         
                                     {
-                                    AllBinaryMediaManager.setMuted(true)
-this.stopAll()
+                                    AllBinaryMediaManager.setMuted(true);
+    
+this.stopAll();
+    
 
     var mainFeatureFactory: MainFeatureFactory = MainFeatureFactory.getInstance()!;
         
         
-
-isFullScreen= features.isFeature(mainFeatureFactory!.FULL_SCREEN)
-ResizableListenerHandler.getInstance()!.fireEvent(true)
-this.setResized(false)
-this.commandAction(gameCommandsFactory!.SET_MENU_DISPLAYABLE, this.getGameOptionsForm())
+;
+    
+isFullScreen= features.isFeature(mainFeatureFactory!.FULL_SCREEN);
+    
+ResizableListenerHandler.getInstance()!.fireEvent(true);
+    
+this.setResized(false);
+    
+this.commandAction(gameCommandsFactory!.SET_MENU_DISPLAYABLE, this.getGameOptionsForm());
+    
 
                                     }
                                 
@@ -1103,28 +1256,39 @@ this.commandAction(gameCommandsFactory!.SET_MENU_DISPLAYABLE, this.getGameOption
                         if(command == gameCommandsFactory!.CLOSE_OPTIONS)
                         
                                     {
-                                    ResizableListenerHandler.getInstance()!.fireEvent(false)
-this.commandAction(gameCommandsFactory!.CLOSE_AND_SHOW_GAME_CANVAS, displayable)
+                                    ResizableListenerHandler.getInstance()!.fireEvent(false);
+    
+this.commandAction(gameCommandsFactory!.CLOSE_AND_SHOW_GAME_CANVAS, displayable);
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("Close isFullScreen/change: ")
-stringBuffer!.appendboolean(isFullScreen)
-stringBuffer!.appendboolean(fullScreenUtil!.isScreenChange(isFullScreen))
-stringBuffer!.append(" isResized: ")
-stringBuffer!.appendboolean(this.isResized())
-PreLogUtil.put(stringBuffer!.toString(), this, COMMAND_ACTION)
+;
+    
+stringBuffer!.append("Close isFullScreen/change: ");
+    
+stringBuffer!.appendboolean(isFullScreen);
+    
+stringBuffer!.appendboolean(fullScreenUtil!.isScreenChange(isFullScreen));
+    
+stringBuffer!.append(" isResized: ");
+    
+stringBuffer!.appendboolean(this.isResized());
+    
+PreLogUtil.put(stringBuffer!.toString(), this, COMMAND_ACTION);
+    
 
                         if(this.isResized() || fullScreenUtil!.isScreenChange(isFullScreen))
                         
                                     {
-                                    this.updateFullScreen()
+                                    this.updateFullScreen();
+    
 
                                     }
                                 
-AllBinaryMediaManager.setMuted(false)
+AllBinaryMediaManager.setMuted(false);
+    
 
                                     }
                                 
@@ -1132,14 +1296,18 @@ AllBinaryMediaManager.setMuted(false)
                         if(command == gameCommandsFactory!.DISPLAY_LOAD_FORM)
                         
                                     {
-                                    this.pauseAppBackground(false)
+                                    this.pauseAppBackground(false);
+    
 
     var keyValuePersistance: KeyValuePersistance = GamePersistanceSingleton.getInstance()!;
         
         
-
-keyValuePersistance!.clear()
-keyValuePersistance!.loadAll(abeClientInformation)
+;
+    
+keyValuePersistance!.clear();
+    
+keyValuePersistance!.loadAll(abeClientInformation);
+    
 
                         if(this.getLoadGameForm() == CommandForm.NULL_COMMAND_FORM)
                         
@@ -1148,17 +1316,21 @@ keyValuePersistance!.loadAll(abeClientInformation)
     var layerManager: AllBinaryGameLayerManager = this.createGameLayerManager()!;
         
         
-
-this.setLoadGameForm(LoadGameForm(this, "Load Game", layerManager!.getBackgroundBasicColor(), layerManager!.getForegroundBasicColor()))
+;
+    
+this.setLoadGameForm(LoadGameForm(this, "Load Game", layerManager!.getBackgroundBasicColor(), layerManager!.getForegroundBasicColor()));
+    
 
                                     }
                                 
                         else {
-                            this.getLoadGameForm()!.update()
+                            this.getLoadGameForm()!.update();
+    
 
                         }
                             
-this.commandAction(gameCommandsFactory!.SET_MENU_DISPLAYABLE, this.getLoadGameForm())
+this.commandAction(gameCommandsFactory!.SET_MENU_DISPLAYABLE, this.getLoadGameForm());
+    
 
                                     }
                                 
@@ -1170,7 +1342,8 @@ this.commandAction(gameCommandsFactory!.SET_MENU_DISPLAYABLE, this.getLoadGameFo
     var index: number = this.getLoadGameForm()!.getSelectedId()!;
         
         
-
+;
+    
 
                         if(index !=  -1)
                         
@@ -1179,17 +1352,24 @@ this.commandAction(gameCommandsFactory!.SET_MENU_DISPLAYABLE, this.getLoadGameFo
     var keyValuePersistance: KeyValuePersistance = GamePersistanceSingleton.getInstance()!;
         
         
-
-this.setStartStateHashtable(keyValuePersistance!.get(index))
+;
+    
+this.setStartStateHashtable(keyValuePersistance!.get(index));
+    
 
     var menuListener: MenuListener = this.getLoadGameForm()!;
         
         
-
-menuListener!.close()
-PreLogUtil.put(BasicMotionGesturesHandler.getInstance()!.toString(), this, COMMAND_ACTION)
-this.commandAction(gameCommandsFactory!.START_COMMAND, NullCanvas.NULL_CANVAS)
-PreLogUtil.put(BasicMotionGesturesHandler.getInstance()!.toString(), this, COMMAND_ACTION)
+;
+    
+menuListener!.close();
+    
+PreLogUtil.put(BasicMotionGesturesHandler.getInstance()!.toString(), this, COMMAND_ACTION);
+    
+this.commandAction(gameCommandsFactory!.START_COMMAND, NullCanvas.NULL_CANVAS);
+    
+PreLogUtil.put(BasicMotionGesturesHandler.getInstance()!.toString(), this, COMMAND_ACTION);
+    
 
                                     }
                                 
@@ -1204,7 +1384,8 @@ PreLogUtil.put(BasicMotionGesturesHandler.getInstance()!.toString(), this, COMMA
     var index: number = this.getLoadGameForm()!.getSelectedText()!;
         
         
-
+;
+    
 
                         if(index !=  -1)
                         
@@ -1213,11 +1394,16 @@ PreLogUtil.put(BasicMotionGesturesHandler.getInstance()!.toString(), this, COMMA
     var keyValuePersistance: KeyValuePersistance = GamePersistanceSingleton.getInstance()!;
         
         
-
-keyValuePersistance!.delete(abeClientInformation, index)
-keyValuePersistance!.clear()
-keyValuePersistance!.loadAll(abeClientInformation, 1)
-this.getLoadGameForm()!.update()
+;
+    
+keyValuePersistance!.delete(abeClientInformation, index);
+    
+keyValuePersistance!.clear();
+    
+keyValuePersistance!.loadAll(abeClientInformation, 1);
+    
+this.getLoadGameForm()!.update();
+    
 
                                     }
                                 
@@ -1232,10 +1418,14 @@ this.getLoadGameForm()!.update()
     var keyValuePersistance: KeyValuePersistance = GamePersistanceSingleton.getInstance()!;
         
         
-
-this.pauseAppBackground(false)
-keyValuePersistance!.save(abeClientInformation, this.getCurrentStateHashtable())
-this.unPauseAppBackground(false)
+;
+    
+this.pauseAppBackground(false);
+    
+keyValuePersistance!.save(abeClientInformation, this.getCurrentStateHashtable());
+    
+this.unPauseAppBackground(false);
+    
 
                                     }
                                 
@@ -1243,7 +1433,8 @@ this.unPauseAppBackground(false)
                         if(command == HighScoreUtil.SUBMIT_TEXTBOX_COMMAND)
                         
                                     {
-                                    logUtil!.put("Submitted Score", this, COMMAND_ACTION)
+                                    logUtil!.put("Submitted Score", this, COMMAND_ACTION);
+    
 
                         if(displayable is HighScoreTextBox)
                         
@@ -1252,13 +1443,17 @@ this.unPauseAppBackground(false)
     var menuListener: HighScoreTextBox = displayable as HighScoreTextBox;
         
         
-
-menuListener!.submitted= true
+;
+    
+menuListener!.submitted= true;
+    
 
                                     }
                                 
-this.allbinaryGameCanvasRunnableInterface!.setHighScoreSubmitted(true)
-this.commandAction(gameCommandsFactory!.CLOSE_AND_SHOW_GAME_CANVAS, displayable)
+this.allbinaryGameCanvasRunnableInterface!.setHighScoreSubmitted(true);
+    
+this.commandAction(gameCommandsFactory!.CLOSE_AND_SHOW_GAME_CANVAS, displayable);
+    
 
                                     }
                                 
@@ -1266,7 +1461,8 @@ this.commandAction(gameCommandsFactory!.CLOSE_AND_SHOW_GAME_CANVAS, displayable)
                         if(command == gameCommandsFactory!.DISPLAY_ABOUT)
                         
                                     {
-                                    this.aboutCommandProcessor!.process(this, gameCommandsFactory!.SET_MENU_DISPLAYABLE, this.getAboutCanvas())
+                                    this.aboutCommandProcessor!.process(this, gameCommandsFactory!.SET_MENU_DISPLAYABLE, this.getAboutCanvas());
+    
 
                                     }
                                 
@@ -1274,7 +1470,8 @@ this.commandAction(gameCommandsFactory!.CLOSE_AND_SHOW_GAME_CANVAS, displayable)
                         if(command == gameCommandsFactory!.OPEN_WEB_URL)
                         
                                     {
-                                    this.webCommandProcessor!.process(this, gameCommandsFactory!.OPEN_WEB_URL, NullCanvas.NULL_CANVAS)
+                                    this.webCommandProcessor!.process(this, gameCommandsFactory!.OPEN_WEB_URL, NullCanvas.NULL_CANVAS);
+    
 
                                     }
                                 
@@ -1286,8 +1483,10 @@ this.commandAction(gameCommandsFactory!.CLOSE_AND_SHOW_GAME_CANVAS, displayable)
     var virtualKeyboardEventHandler: VirtualKeyboardEventHandler = VirtualKeyboardEventHandler.getInstance()!;
         
         
-
-virtualKeyboardEventHandler!.fireEvent(virtualKeyboardEventHandler!.SHOW_EVENT)
+;
+    
+virtualKeyboardEventHandler!.fireEvent(virtualKeyboardEventHandler!.SHOW_EVENT);
+    
 
                                     }
                                 
@@ -1299,37 +1498,46 @@ virtualKeyboardEventHandler!.fireEvent(virtualKeyboardEventHandler!.SHOW_EVENT)
     var mainFeatureFactory: MainFeatureFactory = MainFeatureFactory.getInstance()!;
         
         
-
+;
+    
 
     var isFullScreen: boolean = features.isFeature(mainFeatureFactory!.FULL_SCREEN)!;
         
         
-
+;
+    
 
                         if(isFullScreen)
                         
                                     {
-                                    features.removeDefault(mainFeatureFactory!.FULL_SCREEN)
+                                    features.removeDefault(mainFeatureFactory!.FULL_SCREEN);
+    
 
                                     }
                                 
                         else {
-                            features.addDefault(mainFeatureFactory!.FULL_SCREEN)
+                            features.addDefault(mainFeatureFactory!.FULL_SCREEN);
+    
 
                         }
                             
-this.updateFullScreen()
+this.updateFullScreen();
+    
 
                                     }
                                 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, midletStrings!.COMMAND_ACTION, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, midletStrings!.COMMAND_ACTION, e);
+    
 
                         if(command != GameCommandsFactory.getInstance()!.EXIT_COMMAND)
                         
                                     {
-                                    this.exit(false)
+                                    this.exit(false);
+    
 
                                     }
                                 
@@ -1343,17 +1551,20 @@ logUtil!.put(commonStrings!.EXCEPTION, this, midletStrings!.COMMAND_ACTION, e)
     var mainFeatureFactory: MainFeatureFactory = MainFeatureFactory.getInstance()!;
         
         
-
+;
+    
 
     var isFullScreen: boolean = features.isFeature(mainFeatureFactory!.FULL_SCREEN)!;
         
         
-
+;
+    
 
     var displayable: Displayable = this.getDisplay()!.getCurrent()!;
         
         
-
+;
+    
 
                         if(displayable is Canvas)
                         
@@ -1362,8 +1573,10 @@ logUtil!.put(commonStrings!.EXCEPTION, this, midletStrings!.COMMAND_ACTION, e)
     var canvas: Canvas = displayable as Canvas;
         
         
-
-canvas.setFullScreenMode(isFullScreen)
+;
+    
+canvas.setFullScreenMode(isFullScreen);
+    
 
                                     }
                                 
@@ -1372,7 +1585,8 @@ canvas.setFullScreenMode(isFullScreen)
 
     public onEvent(eventObject: AllBinaryEventObject){
     //var eventObject = eventObject
-ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
+ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
+    
 }
 
 
@@ -1439,61 +1653,79 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
     var threadFactoryUtil: ThreadFactoryUtil = ThreadFactoryUtil.getInstance()!;
         
         
-
-thread= threadFactoryUtil!.getInstance(this.allbinaryGameCanvasRunnableInterface)
+;
+    
+thread= threadFactoryUtil!.getInstance(this.allbinaryGameCanvasRunnableInterface);
+    
 logUtil!.put(StringMaker().
-                            append("Thread Priority: ")!.appendint(thread.getPriority())!.toString(), this, "startGameCanvasRunnableInterface")
-this.allbinaryGameCanvasRunnableInterface!.setThread(thread)
-threadFactoryUtil!.start(thread)
+                            append("Thread Priority: ")!.appendint(thread.getPriority())!.toString(), this, "startGameCanvasRunnableInterface");
+    
+this.allbinaryGameCanvasRunnableInterface!.setThread(thread);
+    
+threadFactoryUtil!.start(thread);
+    
 }
 
 
                 //@Throws(Error::class)
             
     stopGameCanvasRunnableInterface(){
-logUtil!.put(commonStrings!.START, this, gameStrings!.STOP_GAME_CANVAS_RUNNABLE_INTERFACE)
-GameNotificationEventHandler.getInstance()!.removeAllListeners()
-ColorChangeEventHandler.getInstance()!.removeAllListeners()
-GameEventHandlerUtil.removeAllListeners()
+logUtil!.put(commonStrings!.START, this, gameStrings!.STOP_GAME_CANVAS_RUNNABLE_INTERFACE);
+    
+GameNotificationEventHandler.getInstance()!.removeAllListeners();
+    
+ColorChangeEventHandler.getInstance()!.removeAllListeners();
+    
+GameEventHandlerUtil.removeAllListeners();
+    
 
     var gameCanvasRunnableInterface: GameCanvasRunnableInterface = this.allbinaryGameCanvasRunnableInterface;
         
         
-
+;
+    
 
                         if(gameCanvasRunnableInterface != NullGameCanvasRunnable.NULL_GAME_CANVAS_RUNNABLE)
                         
                                     {
-                                    logUtil!.put("Set Running False", this, gameStrings!.STOP_GAME_CANVAS_RUNNABLE_INTERFACE)
-gameCanvasRunnableInterface!.setRunning(false)
+                                    logUtil!.put("Set Running False", this, gameStrings!.STOP_GAME_CANVAS_RUNNABLE_INTERFACE);
+    
+gameCanvasRunnableInterface!.setRunning(false);
+    
 
                                     }
                                 
                         else {
-                            logUtil!.put("StopGame - Could Not Stop", this, gameStrings!.STOP_GAME_CANVAS_RUNNABLE_INTERFACE)
+                            logUtil!.put("StopGame - Could Not Stop", this, gameStrings!.STOP_GAME_CANVAS_RUNNABLE_INTERFACE);
+    
 
                         }
                             
-ThreadUtil.getInstance()!.join(this.thread)
+ThreadUtil.getInstance()!.join(this.thread);
+    
 
     var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
         
         
-
+;
+    
 
                         if(features.isFeature(MainFeatureFactory.getInstance()!.LOAD_ALL))
                         
                                     {
-                                    progressCanvas!.addPortion(50, "Stopped Game Runnable")
+                                    progressCanvas!.addPortion(50, "Stopped Game Runnable");
+    
 
                                     }
                                 
                         else {
-                            progressCanvas!.addPortion(50, "Stopped Main Runnable")
+                            progressCanvas!.addPortion(50, "Stopped Main Runnable");
+    
 
                         }
                             
-logUtil!.put(commonStrings!.END, this, gameStrings!.STOP_GAME_CANVAS_RUNNABLE_INTERFACE)
+logUtil!.put(commonStrings!.END, this, gameStrings!.STOP_GAME_CANVAS_RUNNABLE_INTERFACE);
+    
 }
 
 
@@ -1509,7 +1741,8 @@ logUtil!.put(commonStrings!.END, this, gameStrings!.STOP_GAME_CANVAS_RUNNABLE_IN
 
     public setGameCanvasRunnableInterface(gameCanvasRunnableInterface: GameCanvasRunnableInterface){
     //var gameCanvasRunnableInterface = gameCanvasRunnableInterface
-this.allbinaryGameCanvasRunnableInterface= gameCanvasRunnableInterface
+this.allbinaryGameCanvasRunnableInterface= gameCanvasRunnableInterface;
+    
 }
 
 
@@ -1518,7 +1751,8 @@ this.allbinaryGameCanvasRunnableInterface= gameCanvasRunnableInterface
     var gameInfo: GameInfo = new GameInfo(GameTypeFactory.getInstance()!.SINGLE_PLAYER, GameMode.SERVER, 1, 1);
         
         
-
+;
+    
 
 
 
@@ -1533,12 +1767,15 @@ this.allbinaryGameCanvasRunnableInterface= gameCanvasRunnableInterface
     var layerManager: AllBinaryGameLayerManager = this.createGameLayerManager()!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return GameOptionsFormFactory.getInstance()!.init(this, "Game Options", layerManager!.getBackgroundBasicColor(), layerManager!.getForegroundBasicColor());
+
+                        ;
     
 }
 
@@ -1546,47 +1783,57 @@ this.allbinaryGameCanvasRunnableInterface= gameCanvasRunnableInterface
                 //@Throws(Error::class)
             
     public save(){
-logUtil!.put(commonStrings!.START, this, commonStrings!.SAVE)
+logUtil!.put(commonStrings!.START, this, commonStrings!.SAVE);
+    
 
-    var hashtable: Hashtable<Any, Any> = this.getCurrentStateHashtable()!;
+    var hashtable: Hashtable<any, any> = this.getCurrentStateHashtable()!;
         
         
-
-GamePersistanceSingleton.getInstance()!.save(abeClientInformation, hashtable)
+;
+    
+GamePersistanceSingleton.getInstance()!.save(abeClientInformation, hashtable);
+    
 }
 
 
                 //@Throws(Error::class)
             
-    public getCurrentStateHashtable(): Hashtable<Any, Any>{
-logUtil!.put(commonStrings!.START, this, "getCurrentStateHashtable")
+    public getCurrentStateHashtable(): Hashtable<any, any>{
+logUtil!.put(commonStrings!.START, this, "getCurrentStateHashtable");
+    
 
-    var hashtable: Hashtable<Any, Any> = new Hashtable<Any, Any>();
+    var hashtable: Hashtable<any, any> = new Hashtable<any, any>();
         
         
-
+;
+    
 
                         if(allbinaryGameCanvasRunnableInterface != NullGameCanvasRunnable.NULL_GAME_CANVAS_RUNNABLE)
                         
                                     {
                                     
-    var currentHashtable: Hashtable<Any, Any> = this.allbinaryGameCanvasRunnableInterface!.getCurrentStateHashtable()!;
+    var currentHashtable: Hashtable<any, any> = this.allbinaryGameCanvasRunnableInterface!.getCurrentStateHashtable()!;
         
         
+;
+    
 
-
-    var enumeration: Enumeration<Any?> = currentHashtable!.keys()!;
+    var enumeration: Enumeration<any?> = currentHashtable!.keys()!;
         
         
-
+;
+    
 
     var key: any = {}
-
+;
+    
 
         while(enumeration.hasMoreElements())
         {
-key= enumeration.nextElement()!
-hashtable.put(key, currentHashtable!.get(key as Object))
+key= enumeration.nextElement()!;
+    
+hashtable.put(key, currentHashtable!.get(key as Object));
+    
 }
 
 
@@ -1603,7 +1850,8 @@ hashtable.put(key, currentHashtable!.get(key as Object))
 
     public setLoadGameForm(loadGameForm: LoadGameForm){
     //var loadGameForm = loadGameForm
-this.loadGameForm= loadGameForm
+this.loadGameForm= loadGameForm;
+    
 }
 
 
@@ -1619,7 +1867,8 @@ this.loadGameForm= loadGameForm
 
     public setResized(resized: boolean){
     //var resized = resized
-this.resized= resized
+this.resized= resized;
+    
 }
 
 
@@ -1655,7 +1904,8 @@ this.resized= resized
     var displayable: Displayable = this.getDisplay()!.getCurrent()!;
         
         
-
+;
+    
 
                         if(displayable is DemoCanvas)
                         
@@ -1664,7 +1914,8 @@ this.resized= resized
     var demoCanvas: DemoCanvas = displayable as DemoCanvas;
         
         
-
+;
+    
 
                         if(demoCanvas!.isDemoLoading())
                         

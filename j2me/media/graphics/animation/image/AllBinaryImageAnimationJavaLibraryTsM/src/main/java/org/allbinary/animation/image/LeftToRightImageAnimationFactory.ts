@@ -30,7 +30,7 @@ import { AnimationBehaviorFactory } from "../../../../org/allbinary/animation/An
 
 export class LeftToRightImageAnimationFactory extends BaseImageAnimationFactory {
         
-public constructor (image: Image, sequenceArray: IntArray, dx: number, dy: number)                        
+public constructor (image: Image, sequenceArray: number[], dx: number, dy: number)                        
 
                             : this(image, sequenceArray, dx, dy, AnimationBehaviorFactory.getInstance()){
 
@@ -45,7 +45,7 @@ public constructor (image: Image, sequenceArray: IntArray, dx: number, dy: numbe
                     
 }
 
-public constructor (image: Image, sequenceArray: IntArray, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory)                        
+public constructor (image: Image, sequenceArray: number[], dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory)                        
 
                             : super(image, sequenceArray, image.getWidth(), image.getHeight(), dx, dy, animationBehaviorFactory){
 
@@ -61,7 +61,7 @@ public constructor (image: Image, sequenceArray: IntArray, dx: number, dy: numbe
                     
 }
 
-public constructor (image: Image, sequenceArray: IntArray)                        
+public constructor (image: Image, sequenceArray: number[])                        
 
                             : this(image, sequenceArray, AnimationBehaviorFactory.getInstance()){
 
@@ -74,7 +74,7 @@ public constructor (image: Image, sequenceArray: IntArray)
                     
 }
 
-public constructor (image: Image, sequenceArray: IntArray, animationBehaviorFactory: AnimationBehaviorFactory)                        
+public constructor (image: Image, sequenceArray: number[], animationBehaviorFactory: AnimationBehaviorFactory)                        
 
                             : super(image, sequenceArray, image.getWidth(), image.getHeight(), animationBehaviorFactory){
 
@@ -97,12 +97,14 @@ public constructor (image: Image, sequenceArray: IntArray, animationBehaviorFact
     var scaledImage: Image = animationFactoryImageScaleUtil!.createImage(this.getImage(), this.animationFactoryInitializationVisitor!.width, this.animationFactoryInitializationVisitor!.height, this.scaleProperties!.scaleWidth, this.scaleProperties!.scaleHeight)!;
         
         
-
+;
+    
 
                         if(this.animationFactoryInitializationVisitor!.dx != 0 || this.animationFactoryInitializationVisitor!.dy != 0)
                         
                                     {
-                                    animationFactoryImageScaleUtil!.processAdjust(this)
+                                    animationFactoryImageScaleUtil!.processAdjust(this);
+    
 
 
 

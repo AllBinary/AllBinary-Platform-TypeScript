@@ -35,7 +35,8 @@ export class UserEntityFactory
     var logUtil: LogUtil = LogUtil.getInstance()!;
         
         
-
+;
+    
 
         try {
             
@@ -44,18 +45,22 @@ export class UserEntityFactory
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return org.allbinary.data.tables.user.UserEntity() as UserEntity;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.ENTITYFACTORYERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, "UserEntityFactory", commonStrings!.GET_INSTANCE, e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, "UserEntityFactory", commonStrings!.GET_INSTANCE, e);
+    
 
                                     }
                                 

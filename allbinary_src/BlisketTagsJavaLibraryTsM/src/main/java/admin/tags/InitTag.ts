@@ -27,8 +27,10 @@ export class InitTag extends TableTag {
 public constructor (){
 
             super();
-            this.setTagHelperFactory(InitHelperFactory())
-this.setTagRequestHelperFactory(InitHelperFactory())
+            this.setTagHelperFactory(InitHelperFactory());
+    
+this.setTagRequestHelperFactory(InitHelperFactory());
+    
 }
 
 

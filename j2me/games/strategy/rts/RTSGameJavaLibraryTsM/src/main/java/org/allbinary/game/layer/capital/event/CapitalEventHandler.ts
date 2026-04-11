@@ -44,8 +44,10 @@ var eventListenerInterface = eventListenerInterface
     var capitalEventListenerInterface: CapitalEventListenerInterface = (eventListenerInterface as CapitalEventListenerInterface);
         
         
-
-capitalEventListenerInterface!.onCapitalChangeEvent(eventObject as CapitalEvent)
+;
+    
+capitalEventListenerInterface!.onCapitalChangeEvent(eventObject as CapitalEvent);
+    
 }
 
 

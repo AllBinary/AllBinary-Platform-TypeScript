@@ -63,8 +63,12 @@ public constructor (file: AbFile){
 
             super();
                 //var file = file
-this.fileBasicArrayList= Directory.getInstance()!.search(file)
-this.transformDocumentInterface= TransformDocumentFactory.getInstance() as TransformDocumentInterface
+this.fileBasicArrayList= Directory.getInstance()!.search(file);
+    
+this.transformDocumentInterface= TransformDocumentFactory.getInstance();
+
+                         as TransformDocumentInterface;
+    
 }
 
 
@@ -96,7 +100,8 @@ this.transformDocumentInterface= TransformDocumentFactory.getInstance() as Trans
 
     public setTransformDocumentInterface(transformDocumentInterface: TransformDocumentInterface){
 var transformDocumentInterface = transformDocumentInterface
-this.transformDocumentInterface= transformDocumentInterface
+this.transformDocumentInterface= transformDocumentInterface;
+    
 }
 
 
@@ -118,18 +123,22 @@ this.transformDocumentInterface= transformDocumentInterface
     var dirNode: Node = document.createElement("dir")!;
         
         
-
+;
+    
 
     var size: number = this.fileBasicArrayList!.size()!;
         
         
-
+;
+    
 
     var nextFile: AbFile
-
+;
+    
 
     var fileNode: Node
-
+;
+    
 
 
 
@@ -140,10 +149,15 @@ this.transformDocumentInterface= transformDocumentInterface
         
 index < size; index++)
         {
-nextFile= this.fileBasicArrayList!.get(index) as AbFile
+nextFile= this.fileBasicArrayList!.get(index);
+
+                         as AbFile;
+    
 fileNode= FileDomDataModel(nextFile).
-                            toXmlNode(document)
-dirNode!.appendChild(fileNode)
+                            toXmlNode(document);
+    
+dirNode!.appendChild(fileNode);
+    
 }
 
 
@@ -163,6 +177,8 @@ dirNode!.appendChild(fileNode)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getTransformDocumentInterface()!.getDoc();
+
+                        ;
     
 }
 
@@ -174,13 +190,17 @@ dirNode!.appendChild(fileNode)
     var node: Node = this.toXmlNode(this.getTransformDocumentInterface()!.getDoc())!;
         
         
-
-this.getTransformDocumentInterface()!.getBaseNode()!.appendChild(node)
+;
+    
+this.getTransformDocumentInterface()!.getBaseNode()!.appendChild(node);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return DomDocumentHelper.toString(this.getTransformDocumentInterface()!.getDoc());
+
+                        ;
     
 }
 

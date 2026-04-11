@@ -18,10 +18,13 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { HashMap } from "../../../java/util/HashMap.js";
 
     
-import { Vector } from "../../../java/util/Vector.js";
+
+//import { Vector } from "../../../java/util/Vector.js";
 
     
 import { PageContext } from "../../../javax/servlet/jsp/PageContext.js";
@@ -51,12 +54,13 @@ export class TransformInfoRequestHelper extends ModifyTable {
         
 
     private transformInfoInterface: TransformInfoHttpInterface
-public constructor (propertiesHashMap: HashMap<Any, Any>, pageContext: PageContext){
+public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
             var propertiesHashMap = propertiesHashMap
 var pageContext = pageContext
-this.transformInfoInterface= TransformInfoHttpStoreNoManipulation(propertiesHashMap, pageContext)
+this.transformInfoInterface= TransformInfoHttpStoreNoManipulation(propertiesHashMap, pageContext);
+    
 }
 
 
@@ -67,18 +71,22 @@ this.transformInfoInterface= TransformInfoHttpStoreNoManipulation(propertiesHash
     var success: string = "Updated Successfully";
         
         
+;
+    
 
-
-    var hashMapData: HashMap<Any, Any> = this.transformInfoInterface!.toHashMap()!;
+    var hashMapData: HashMap<any, any> = this.transformInfoInterface!.toHashMap()!;
         
         
-
-TransformInfoEntityBuilder.getInstance()!.update(hashMapData)
+;
+    
+TransformInfoEntityBuilder.getInstance()!.update(hashMapData);
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put(success, this, "update()")
+                                    logUtil!.put(success, this, "update()");
+    
 
                                     }
                                 
@@ -88,18 +96,22 @@ TransformInfoEntityBuilder.getInstance()!.update(hashMapData)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to update storefronts table";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "update()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "update()", e);
+    
 
                                     }
                                 
@@ -121,18 +133,22 @@ TransformInfoEntityBuilder.getInstance()!.update(hashMapData)
     var success: string = "Added TransformInfo Successfully";
         
         
-
+;
+    
 
     var values: Vector = this.transformInfoInterface!.toVector()!;
         
         
-
-TransformInfoEntityBuilder.getInstance()!.insert(values)
+;
+    
+TransformInfoEntityBuilder.getInstance()!.insert(values);
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put(success, this, "insert()")
+                                    logUtil!.put(success, this, "insert()");
+    
 
                                     }
                                 
@@ -142,18 +158,22 @@ TransformInfoEntityBuilder.getInstance()!.insert(values)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to add storefronts table";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "insert()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "insert()", e);
+    
 
                                     }
                                 
@@ -175,13 +195,18 @@ TransformInfoEntityBuilder.getInstance()!.insert(values)
     var success: string = "Delete Successfully";
         
         
+;
+    
+TransformInfoEntityBuilder.getInstance()!.delete(this.transformInfoInterface!.getKey();
 
-TransformInfoEntityBuilder.getInstance()!.delete(this.transformInfoInterface!.getKey() as String)
+                         as String);
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put(success, this, "delete()")
+                                    logUtil!.put(success, this, "delete()");
+    
 
                                     }
                                 
@@ -191,18 +216,22 @@ TransformInfoEntityBuilder.getInstance()!.delete(this.transformInfoInterface!.ge
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to delete storefronts table";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "delete()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "delete()", e);
+    
 
                                     }
                                 

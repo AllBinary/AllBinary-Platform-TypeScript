@@ -28,7 +28,7 @@ export class VectorAnimationFactory
                 , VectorAnimationFactoryInterface {
         
 
-    public getInstance(points: IntArray[][], basicColor: BasicColor): VectorAnimation{
+    public getInstance(points: number[][][], basicColor: BasicColor): VectorAnimation{
     //var points = points
     //var basicColor = basicColor
 

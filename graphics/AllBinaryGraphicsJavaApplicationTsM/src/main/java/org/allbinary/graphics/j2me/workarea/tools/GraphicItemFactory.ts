@@ -50,7 +50,7 @@ export class GraphicItemFactory
 }
 
 
-    private readonly graphicItems: HashMap<Any, Any>
+    private readonly graphicItems: HashMap<any, any>
 
     private readonly DEFAULT: GraphicsItemInterfaceFactoryInterface = new SelectionToolFactory();
         
@@ -58,25 +58,31 @@ export class GraphicItemFactory
 private constructor (){
 
             super();
-            graphicItems= HashMap<Any, Any>()
-graphicItems!.put(LinesGraphicItem.getStaticName(), LinesGraphicItemFactory())
+            graphicItems= HashMap<any, any>();
+    
+graphicItems!.put(LinesGraphicItem.getStaticName(), LinesGraphicItemFactory());
+    
 }
 
 
     public getInstance(itemName: string): GraphicsItemInterfaceFactoryInterface{
 var itemName = itemName
 
-    var graphicsItemInterfaceFactoryInterface: GraphicsItemInterfaceFactoryInterface = graphicItems!.get(itemName) as GraphicsItemInterfaceFactoryInterface;
-        
-        
+    var graphicsItemInterfaceFactoryInterface: GraphicsItemInterfaceFactoryInterface = graphicItems!.get(itemName);
 
+                         as GraphicsItemInterfaceFactoryInterface;
+        
+        
+;
+    
 
                         if(graphicsItemInterfaceFactoryInterface == 
                                     null
                                 )
                         
                                     {
-                                    graphicsItemInterfaceFactoryInterface= DEFAULT
+                                    graphicsItemInterfaceFactoryInterface= DEFAULT;
+    
 
                                     }
                                 
@@ -91,18 +97,20 @@ var itemName = itemName
 
                 //@Throws(Error::class)
             
-    public getInstance(graphicItemNodeList: BasicArrayList): HashMap<Any, Any>{
+    public getInstance(graphicItemNodeList: BasicArrayList): HashMap<any, any>{
 var graphicItemNodeList = graphicItemNodeList
 
     var numberOfItems: number = graphicItemNodeList!.size()!;
         
         
+;
+    
 
-
-    var graphicItemHashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var graphicItemHashMap: HashMap<any, any> = new HashMap<any, any>();
         
         
-
+;
+    
 
                         if(LOGGING.contains(LOGGING.MENUEVENT))
                         
@@ -121,11 +129,15 @@ var graphicItemNodeList = graphicItemNodeList
 index < numberOfItems; index++)
         {
 
-    var graphicItem: GraphicItemInterface = GraphicItemBuilder.getInstance(graphicItemNodeList!.get(index) as Node)!;
-        
-        
+    var graphicItem: GraphicItemInterface = GraphicItemBuilder.getInstance(graphicItemNodeList!.get(index);
 
-graphicItemHashMap!.put(graphicItem!.getTreeNode(), graphicItem)
+                         as Node)!;
+        
+        
+;
+    
+graphicItemHashMap!.put(graphicItem!.getTreeNode(), graphicItem);
+    
 }
 
 

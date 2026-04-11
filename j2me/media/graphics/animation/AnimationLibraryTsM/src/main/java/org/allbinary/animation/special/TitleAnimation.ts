@@ -61,9 +61,9 @@ export class TitleAnimation extends SpecialAnimation {
 
     readonly basicColorArray: BasicColor[]
 
-    readonly dxArray: IntArray
+    readonly dxArray: number[]
 
-    readonly dyArray: IntArray
+    readonly dyArray: number[]
 
     readonly widthP: number
 
@@ -78,7 +78,7 @@ export class TitleAnimation extends SpecialAnimation {
     private readonly displayInfoSingleton: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
         
         
-public constructor (animationInterfaceArray: IndexedAnimation[], basicColorArray: BasicColor[], dxArray: IntArray, dyArray: IntArray)                        
+public constructor (animationInterfaceArray: IndexedAnimation[], basicColorArray: BasicColor[], dxArray: number[], dyArray: number[])                        
 
                             : this(animationInterfaceArray, basicColorArray, dxArray, dyArray, 0, Integer.MIN_VALUE, IndexedAnimationBehavior(1, 250)){
 
@@ -93,7 +93,7 @@ public constructor (animationInterfaceArray: IndexedAnimation[], basicColorArray
                     
 }
 
-public constructor (animationInterfaceArray: IndexedAnimation[], basicColorArray: BasicColor[], dxArray: IntArray, dyArray: IntArray, y: number, width: number)                        
+public constructor (animationInterfaceArray: IndexedAnimation[], basicColorArray: BasicColor[], dxArray: number[], dyArray: number[], y: number, width: number)                        
 
                             : this(animationInterfaceArray, basicColorArray, dxArray, dyArray, y, width, IndexedAnimationBehavior(1, 250)){
 
@@ -110,7 +110,7 @@ public constructor (animationInterfaceArray: IndexedAnimation[], basicColorArray
                     
 }
 
-public constructor (animationInterfaceArray: IndexedAnimation[], basicColorArray: BasicColor[], dxArray: IntArray, dyArray: IntArray, y: number, width: number, animationBehavior: AnimationBehavior)                        
+public constructor (animationInterfaceArray: IndexedAnimation[], basicColorArray: BasicColor[], dxArray: number[], dyArray: number[], y: number, width: number, animationBehavior: AnimationBehavior)                        
 
                             : super(animationBehavior){
 
@@ -126,15 +126,24 @@ public constructor (animationInterfaceArray: IndexedAnimation[], basicColorArray
 
                             //For kotlin this is before the body of the constructor.
                     
-this.lastFrameStartTime= System.currentTimeMillis()
-this.animationInterfaceArray= animationInterfaceArray
-this.sizeP= this.animationInterfaceArray!.length
-this.basicColorArray= basicColorArray
-this.dxArray= dxArray
-this.dyArray= dyArray
-this.y= y
-this.widthP= width
-this.reset()
+this.lastFrameStartTime= System.currentTimeMillis();
+    
+this.animationInterfaceArray= animationInterfaceArray;
+    
+this.sizeP= this.animationInterfaceArray!.length;
+    
+this.basicColorArray= basicColorArray;
+    
+this.dxArray= dxArray;
+    
+this.dyArray= dyArray;
+    
+this.y= y;
+    
+this.widthP= width;
+    
+this.reset();
+    
 }
 
 
@@ -143,23 +152,30 @@ this.reset()
     var currentTime: number = System.currentTimeMillis()!;
         
         
-
+;
+    
 
     var totalTimeElapsed: number = currentTime -lastFrameStartTime;
         
         
+;
+    
 
+    var indexedAnimationBehavior: IndexedAnimationBehavior = this.getAnimationBehavior();
 
-    var indexedAnimationBehavior: IndexedAnimationBehavior = this.getAnimationBehavior() as IndexedAnimationBehavior;
+                         as IndexedAnimationBehavior;
         
         
-
+;
+    
 
                         if(totalTimeElapsed > indexedAnimationBehavior!.frameDelayTime)
                         
                                     {
-                                    this.previousFrame()
-this.lastFrameStartTime= currentTime
+                                    this.previousFrame();
+    
+this.lastFrameStartTime= currentTime;
+    
 
                                     }
                                 
@@ -167,7 +183,8 @@ this.lastFrameStartTime= currentTime
                         if(this.animationInterfaceArray[0]!.getFrame() == 0)
                         
                                     {
-                                    indexedAnimationBehavior!.loopIndex++
+                                    indexedAnimationBehavior!.loopIndex++;
+    
 
                                     }
                                 
@@ -176,10 +193,13 @@ this.lastFrameStartTime= currentTime
 
     public isComplete(): boolean{
 
-    var indexedAnimationBehavior: IndexedAnimationBehavior = this.getAnimationBehavior() as IndexedAnimationBehavior;
-        
-        
+    var indexedAnimationBehavior: IndexedAnimationBehavior = this.getAnimationBehavior();
 
+                         as IndexedAnimationBehavior;
+        
+        
+;
+    
 
                         if(indexedAnimationBehavior!.loopTotal ==  -1 || indexedAnimationBehavior!.loopIndex < indexedAnimationBehavior!.loopTotal || this.getFrame() != 0)
                         
@@ -206,17 +226,19 @@ this.lastFrameStartTime= currentTime
 }
 
 
-    public setSequence(sequence: IntArray){
+    public setSequence(sequence: number[]){
     //var sequence = sequence
 }
 
 
-    public getSequence(): IntArray{
+    public getSequence(): number[]{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return PrimitiveIntUtil.getArrayInstance();
+
+                        ;
     
 }
 
@@ -227,6 +249,8 @@ this.lastFrameStartTime= currentTime
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.animationInterfaceArray[0]!.getSize();
+
+                        ;
     
 }
 
@@ -237,6 +261,8 @@ this.lastFrameStartTime= currentTime
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.animationInterfaceArray[0]!.getFrame();
+
+                        ;
     
 }
 
@@ -253,25 +279,32 @@ this.lastFrameStartTime= currentTime
         
 index < sizeP; index++)
         {
-this.animationInterfaceArray[index]!.setFrame(frame)
+this.animationInterfaceArray[index]!.setFrame(frame);
+    
 }
 
 }
 
 
     public setLastFrame(){
-this.setFrame(this.getSize() -1)
+this.setFrame(this.getSize() -1);
+    
 }
 
 
     public reset(){
-this.setLastFrame()
+this.setLastFrame();
+    
 
-    var indexedAnimationBehavior: IndexedAnimationBehavior = (this.getAnimationBehavior() as IndexedAnimationBehavior);
+    var indexedAnimationBehavior: IndexedAnimationBehavior = (this.getAnimationBehavior();
+
+                         as IndexedAnimationBehavior);
         
         
-
-indexedAnimationBehavior!.reset()
+;
+    
+indexedAnimationBehavior!.reset();
+    
 }
 
 
@@ -286,7 +319,8 @@ indexedAnimationBehavior!.reset()
         
 index < sizeP; index++)
         {
-this.animationInterfaceArray[index]!.previousFrame()
+this.animationInterfaceArray[index]!.previousFrame();
+    
 }
 
 }
@@ -297,8 +331,10 @@ this.animationInterfaceArray[index]!.previousFrame()
     //var frame = frame
     //var x = x
     //var y = y
-this.setFrame(frame)
-this.paint(graphics, x, y)
+this.setFrame(frame);
+    
+this.paint(graphics, x, y);
+    
 }
 
 
@@ -314,21 +350,25 @@ this.paint(graphics, x, y)
     var x: number = 0;
         
         
-
+;
+    
 
                         if(this.widthP != Integer.MIN_VALUE)
                         
                                     {
-                                    x= ((displayInfoSingleton!.getLastWidth() -this.widthP) /2)
+                                    x= ((displayInfoSingleton!.getLastWidth() -this.widthP) /2);
+    
 
                                     }
                                 
 
     var deltaX: number= 0
-
+;
+    
 
     var deltaY: number= 0
-
+;
+    
 
 
 
@@ -339,17 +379,21 @@ this.paint(graphics, x, y)
         
 index < sizeP; index++)
         {
-deltaX= this.dxArray[index] +x
-deltaY= this.dyArray[index] +y
+deltaX= this.dxArray[index] +x;
+    
+deltaY= this.dyArray[index] +y;
+    
 
                         if(this.basicColorArray[index] != CLEAR_COLOR)
                         
                                     {
-                                    this.basicSetColorUtil!.setBasicColorP(graphics, this.basicColorArray[index]!)
+                                    this.basicSetColorUtil!.setBasicColorP(graphics, this.basicColorArray[index]!);
+    
 
                                     }
                                 
-this.animationInterfaceArray[index]!.paint(graphics, deltaX, deltaY)
+this.animationInterfaceArray[index]!.paint(graphics, deltaX, deltaY);
+    
 }
 
 }

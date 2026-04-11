@@ -18,10 +18,13 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { HashMap } from "../../../../../../../../../java/util/HashMap.js";
 
     
-import { Vector } from "../../../../../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../../../../../java/util/Vector.js";
 
     
 import { StoreFrontInterface } from "../../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js";
@@ -59,33 +62,42 @@ public constructor (storeFrontInterface: StoreFrontInterface){
 
             super();
             var storeFrontInterface = storeFrontInterface
-this.subTotalMoney= Money()
-this.shippingCostMoney= Money()
-this.taxesMoney= Money()
-this.totalMoney= Money()
+this.subTotalMoney= Money();
+    
+this.shippingCostMoney= Money();
+    
+this.taxesMoney= Money();
+    
+this.totalMoney= Money();
+    
 
     var orderHistoryEntityInterface: OrderHistoryEntityInterface = OrderHistoryEntityFactory.getInstance()!;
         
         
-
+;
+    
 
     var orderHistoryInterfaceVector: Vector = orderHistoryEntityInterface!.getStoreOrders(storeFrontInterface)!;
         
         
-
+;
+    
 
     var numberOfOrders: number = 0;
         
         
-
+;
+    
 
     var orderHistoryInterface: OrderHistoryInterface
-
+;
+    
 
     var size: number = orderHistoryInterfaceVector!.length!;
         
         
-
+;
+    
 
 
 
@@ -96,15 +108,24 @@ this.totalMoney= Money()
         
 index < size; index++)
         {
-orderHistoryInterface= orderHistoryInterfaceVector!.get(index) as OrderHistoryInterface
-numberOfOrders= numberOfOrders +1
-this.subTotalMoney!.add(orderHistoryInterface!.getSubTotal())
-this.shippingCostMoney!.add(orderHistoryInterface!.getShippingCost())
-this.taxesMoney!.add(orderHistoryInterface!.getTaxes())
-this.totalMoney!.add(orderHistoryInterface!.getTotal())
+orderHistoryInterface= orderHistoryInterfaceVector!.get(index);
+
+                         as OrderHistoryInterface;
+    
+numberOfOrders= numberOfOrders +1;
+    
+this.subTotalMoney!.add(orderHistoryInterface!.getSubTotal());
+    
+this.shippingCostMoney!.add(orderHistoryInterface!.getShippingCost());
+    
+this.taxesMoney!.add(orderHistoryInterface!.getTaxes());
+    
+this.totalMoney!.add(orderHistoryInterface!.getTotal());
+    
 }
 
-this.numberOfOrdersLong= numberOfOrders as Long
+this.numberOfOrdersLong= numberOfOrders as Long;
+    
 }
 
 
@@ -158,22 +179,29 @@ this.numberOfOrdersLong= numberOfOrders as Long
 }
 
 
-    public toHashMap(): HashMap<Any, Any>{
+    public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
         
         
-
+;
+    
 
     var storeFrontOrdersHistoryStatisticsData: StoreFrontOrdersHistoryStatisticsData = StoreFrontOrdersHistoryStatisticsData.getInstance()!;
         
         
-
-hashMap!.put(storeFrontOrdersHistoryStatisticsData!.NUMBEROFORDERS, this.getNumberOfOrders()!.toString())
-hashMap!.put(storeFrontOrdersHistoryStatisticsData!.SUBTOTAL, this.getSubTotal()!.toString())
-hashMap!.put(storeFrontOrdersHistoryStatisticsData!.SHIPPINGCOST, this.getShippingCost()!.toString())
-hashMap!.put(storeFrontOrdersHistoryStatisticsData!.TAXES, this.getTaxes()!.toString())
-hashMap!.put(storeFrontOrdersHistoryStatisticsData!.TOTAL, this.getTotal()!.toString())
+;
+    
+hashMap!.put(storeFrontOrdersHistoryStatisticsData!.NUMBEROFORDERS, this.getNumberOfOrders()!.toString());
+    
+hashMap!.put(storeFrontOrdersHistoryStatisticsData!.SUBTOTAL, this.getSubTotal()!.toString());
+    
+hashMap!.put(storeFrontOrdersHistoryStatisticsData!.SHIPPINGCOST, this.getShippingCost()!.toString());
+    
+hashMap!.put(storeFrontOrdersHistoryStatisticsData!.TAXES, this.getTaxes()!.toString());
+    
+hashMap!.put(storeFrontOrdersHistoryStatisticsData!.TOTAL, this.getTotal()!.toString());
+    
 
 
 

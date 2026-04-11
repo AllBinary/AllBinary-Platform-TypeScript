@@ -87,13 +87,15 @@ public constructor (gameKeyEventList: BasicArrayList, playerInputId: number, gam
 
                             //For kotlin this is before the body of the constructor.
                     
-this.rectangle= rectangle
+this.rectangle= rectangle;
+    
 }
 
 
     public init(rectangle: Rectangle){
     //var rectangle = rectangle
-this.rectangle= rectangle
+this.rectangle= rectangle;
+    
 }
 
 
@@ -106,11 +108,15 @@ this.rectangle= rectangle
                         
                                     {
                                     
-    var gameCanvas: AllBinaryGameCanvas = this.getCanvas() as AllBinaryGameCanvas;
-        
-        
+    var gameCanvas: AllBinaryGameCanvas = this.getCanvas();
 
-gameCanvas!.toggleMenu()
+                         as AllBinaryGameCanvas;
+        
+        
+;
+    
+gameCanvas!.toggleMenu();
+    
 
 
 
@@ -138,25 +144,30 @@ gameCanvas!.toggleMenu()
     var motionInputsIndex: number = this.processMotionInputs()!;
         
         
-
+;
+    
 
     var list: BasicArrayList = this.getGameKeyEventList()!;
         
         
-
+;
+    
 
     var size: number = list.size()!;
         
         
-
+;
+    
 
     var key: number = 0;
         
         
-
+;
+    
 
     var gameKeyEvent: GameKeyEvent
-
+;
+    
 
 
 
@@ -167,14 +178,16 @@ gameCanvas!.toggleMenu()
         
 index < size; index++)
         {
-gameKeyEvent= list.objectArray[index]! as GameKeyEvent
+gameKeyEvent= list.objectArray[index]! as GameKeyEvent;
+    
 
                         if(gameKeyEvent != 
                                     null
                                 )
                         
                                     {
-                                    key= gameKeyEvent!.getKey()
+                                    key= gameKeyEvent!.getKey();
+    
 
                         if(this.processInput(key) == 1)
                         
@@ -190,7 +203,8 @@ gameKeyEvent= list.objectArray[index]! as GameKeyEvent
                                 
 }
 
-this.clear()
+this.clear();
+    
 
                         if(size > 0 || motionInputsIndex >= 0)
                         
@@ -214,9 +228,12 @@ this.clear()
 
                         }
                             
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, GameInputStrings.getInstance()!.PROCESS_INPUT, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, GameInputStrings.getInstance()!.PROCESS_INPUT, e);
+    
 
 
 
@@ -235,7 +252,8 @@ logUtil!.put(commonStrings!.EXCEPTION, this, GameInputStrings.getInstance()!.PRO
     var lastIndex: number = this.motionGestureEventList!.size() -1;
         
         
-
+;
+    
 
                         if(lastIndex >= 0)
                         
@@ -244,12 +262,15 @@ logUtil!.put(commonStrings!.EXCEPTION, this, GameInputStrings.getInstance()!.PRO
     var motionGestureEvent: MotionGestureEvent = this.motionGestureEventList!.objectArray[lastIndex]! as MotionGestureEvent;
         
         
-
-this.processMotionInput(motionGestureEvent)
+;
+    
+this.processMotionInput(motionGestureEvent);
+    
 
                                     }
                                 
-motionGestureEventList!.clear()
+motionGestureEventList!.clear();
+    
 
 
 
@@ -269,7 +290,8 @@ motionGestureEventList!.clear()
                                 )
                         
                                     {
-                                    logUtil!.put("Exception: Bug", this, gameInputStrings!.PROCESS_MOTION_INPUT)
+                                    logUtil!.put("Exception: Bug", this, gameInputStrings!.PROCESS_MOTION_INPUT);
+    
 
 
 
@@ -283,12 +305,14 @@ motionGestureEventList!.clear()
     var touchMotionGestureFactory: TouchMotionGestureFactory = TouchMotionGestureFactory.getInstance()!;
         
         
-
+;
+    
 
     var motionGestureInput: MotionGestureInput = motionGestureEvent!.getMotionGesture()!;
         
         
-
+;
+    
 
                         if(motionGestureInput == touchMotionGestureFactory!.RELEASED)
                         
@@ -297,12 +321,14 @@ motionGestureEventList!.clear()
     var point: GPoint = motionGestureEvent!.getCurrentPoint()!;
         
         
-
+;
+    
 
     var rectPoint: GPoint = rectangle.getPoint()!;
         
         
-
+;
+    
 
                         if(rectangleCollisionUtil!.isInside(rectPoint!.getX(), rectPoint!.getY(), rectangle.getMaxX() +20, rectangle.getMaxY(), point.getX(), point.getY()))
                         
@@ -312,11 +338,15 @@ motionGestureEventList!.clear()
                         
                                     {
                                     
-    var gameCanvas: AllBinaryGameCanvas = this.getCanvas() as AllBinaryGameCanvas;
-        
-        
+    var gameCanvas: AllBinaryGameCanvas = this.getCanvas();
 
-gameCanvas!.toggleMenu()
+                         as AllBinaryGameCanvas;
+        
+        
+;
+    
+gameCanvas!.toggleMenu();
+    
 
                                     }
                                 

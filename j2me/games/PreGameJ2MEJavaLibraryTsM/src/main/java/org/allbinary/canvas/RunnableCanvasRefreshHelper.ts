@@ -30,12 +30,14 @@ public constructor (runnableCanvas: MyCanvas){
 
             super();
             var runnableCanvas = runnableCanvas
-this.runnableCanvas= runnableCanvas
+this.runnableCanvas= runnableCanvas;
+    
 }
 
 
     public process(){
-this.runnableCanvas!.repaint()
+this.runnableCanvas!.repaint();
+    
 }
 
 

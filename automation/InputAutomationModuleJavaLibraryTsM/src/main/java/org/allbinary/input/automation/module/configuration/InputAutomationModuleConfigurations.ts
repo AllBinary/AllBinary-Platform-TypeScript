@@ -64,48 +64,56 @@ export class InputAutomationModuleConfigurations
         
         
 
-    private hashMap: HashMap<Any, Any>
+    private hashMap: HashMap<any, any>
 public constructor (abeClientInformation: AbeClientInformationInterface, file: File){
 
             super();
                 //var abeClientInformation = abeClientInformation
     //var file = file
-this.setHashMap(HashMap<Any, Any>())
+this.setHashMap(HashMap<any, any>());
+    
 
-    var bytes: ByteArray = ByteArray(100000);
+    var bytes: number[] = new Array(100000);
         
         
-
+;
+    
 
     var idFile: FileInputStream = new FileInputStream(file);
         
         
-
+;
+    
 
     var length: number = idFile!.read(bytes)!;
         
         
-
+;
+    
 
     var data: string = new bytes.decodeToString();
         
         
-
+;
+    
 
     var endIndex: number = data.lastIndexOf('>')!;
         
         
-
+;
+    
 
     var document: Document = DomDocumentHelper.create(data.substring(0, endIndex +1))!;
         
         
-
+;
+    
 
     var nodeList: NodeList = document.getElementsByTagName(NewInputAutomationModulesData.NAME)!;
         
         
-
+;
+    
 
                         if(nodeList!.getLength() > 0)
                         
@@ -114,8 +122,10 @@ this.setHashMap(HashMap<Any, Any>())
     var nameNodeList: NodeList = document.getElementsByTagName(InputAutomationModuleData.NAME)!;
         
         
-
-logUtil!.put("Number Of Module(s) Specified: " +nameNodeList!.getLength(), this, "Contructor")
+;
+    
+logUtil!.put("Number Of Module(s) Specified: " +nameNodeList!.getLength(), this, "Contructor");
+    
 
 
 
@@ -130,8 +140,10 @@ index < nameNodeList!.getLength(); index++)
     var node: Node = nameNodeList!.item(index)!;
         
         
-
-this.add(InputAutomationModuleConfiguration(abeClientInformation, node))
+;
+    
+this.add(InputAutomationModuleConfiguration(abeClientInformation, node));
+    
 }
 
 
@@ -144,13 +156,16 @@ public constructor (abeClientInformation: AbeClientInformationInterface, documen
             super();
                 //var abeClientInformation = abeClientInformation
     //var document = document
-this.setHashMap(HashMap<Any, Any>())
+this.setHashMap(HashMap<any, any>());
+    
 
     var nameNodeList: NodeList = document.getElementsByTagName(InputAutomationModuleData.NAME)!;
         
         
-
-logUtil!.put("Number Of Module(s) Specified: " +nameNodeList!.getLength(), this, "Contructor")
+;
+    
+logUtil!.put("Number Of Module(s) Specified: " +nameNodeList!.getLength(), this, "Contructor");
+    
 
 
 
@@ -165,8 +180,10 @@ index < nameNodeList!.getLength(); index++)
     var node: Node = nameNodeList!.item(index)!;
         
         
-
-this.add(InputAutomationModuleConfiguration(abeClientInformation, node))
+;
+    
+this.add(InputAutomationModuleConfiguration(abeClientInformation, node));
+    
 }
 
 }
@@ -175,15 +192,18 @@ public constructor (inputAutomationModuleConfigurationList: List<InputAutomation
 
             super();
                 //var inputAutomationModuleConfigurationList = inputAutomationModuleConfigurationList
-this.setHashMap(HashMap<Any, Any>())
+this.setHashMap(HashMap<any, any>());
+    
 
     var size: number = inputAutomationModuleConfigurationList!.size!;
         
         
-
+;
+    
 
     var inputAutomationModuleConfiguration: InputAutomationModuleConfiguration
-
+;
+    
 
 
 
@@ -194,8 +214,10 @@ this.setHashMap(HashMap<Any, Any>())
         
 index < size; index++)
         {
-inputAutomationModuleConfiguration= inputAutomationModuleConfigurationList!.get(index)
-this.add(inputAutomationModuleConfiguration)
+inputAutomationModuleConfiguration= inputAutomationModuleConfigurationList!.get(index);
+    
+this.add(inputAutomationModuleConfiguration);
+    
 }
 
 }
@@ -203,23 +225,26 @@ this.add(inputAutomationModuleConfiguration)
 public constructor (){
 
             super();
-            this.setHashMap(HashMap<Any, Any>())
+            this.setHashMap(HashMap<any, any>());
+    
 }
 
 
     public add(inputAutomationModuleConfiguration: InputAutomationModuleConfiguration){
     //var inputAutomationModuleConfiguration = inputAutomationModuleConfiguration
-this.getHashMap()!.put(inputAutomationModuleConfiguration!.getClassName(), inputAutomationModuleConfiguration)
+this.getHashMap()!.put(inputAutomationModuleConfiguration!.getClassName(), inputAutomationModuleConfiguration);
+    
 }
 
 
     public remove(inputAutomationModuleConfiguration: InputAutomationModuleConfiguration){
     //var inputAutomationModuleConfiguration = inputAutomationModuleConfiguration
-this.getHashMap()!.remove(inputAutomationModuleConfiguration!.getClassName())
+this.getHashMap()!.remove(inputAutomationModuleConfiguration!.getClassName());
+    
 }
 
 
-    public getHashMap(): HashMap<Any, Any>{
+    public getHashMap(): HashMap<any, any>{
 
 
 
@@ -229,9 +254,10 @@ this.getHashMap()!.remove(inputAutomationModuleConfiguration!.getClassName())
 }
 
 
-    public setHashMap(hashMap: HashMap<Any, Any>){
+    public setHashMap(hashMap: HashMap<any, any>){
 var hashMap = hashMap
-this.hashMap= hashMap
+this.hashMap= hashMap;
+    
 }
 
 

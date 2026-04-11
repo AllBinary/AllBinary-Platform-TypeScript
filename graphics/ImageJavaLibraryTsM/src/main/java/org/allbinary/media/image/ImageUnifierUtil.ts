@@ -68,17 +68,21 @@ private constructor (){
     var ge: GraphicsEnvironment = GraphicsEnvironment.getLocalGraphicsEnvironment()!;
         
         
-
+;
+    
 
     var gd: GraphicsDevice = ge.getDefaultScreenDevice()!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return gd.getDefaultConfiguration();
+
+                        ;
     
 }
 
@@ -90,28 +94,34 @@ var imageUnifierProperties = imageUnifierProperties
     var newBufferedImage: BufferedImage = this.imageUtil!.create(imageUnifierProperties!.getWidth(), imageUnifierProperties!.getHeight())!;
         
         
-
+;
+    
 
     var commonLabels: CommonLabels = CommonLabels.getInstance()!;
         
         
-
-logUtil!.put("Setting Image - " +commonLabels!.WIDTH_LABEL +newBufferedImage!.getWidth() +commonLabels!.HEIGHT_LABEL +newBufferedImage!.getHeight(), this, "getImage")
+;
+    
+logUtil!.put("Setting Image - " +commonLabels!.WIDTH_LABEL +newBufferedImage!.getWidth() +commonLabels!.HEIGHT_LABEL +newBufferedImage!.getHeight(), this, "getImage");
+    
 
     var g: Graphics2D = newBufferedImage!.createGraphics()!;
         
         
-
+;
+    
 
     var columnIndex: number = 0;
         
         
-
+;
+    
 
     var rowIndex: number = 0;
         
         
-
+;
+    
 
 
 
@@ -126,32 +136,40 @@ index < bufferedImageArray!.length; index++)
     var x: number = imageUnifierProperties!.getImageUnifierCell()!.getWidth()!.toInt() *columnIndex++;
         
         
-
+;
+    
 
     var y: number = imageUnifierProperties!.getImageUnifierCell()!.getHeight()!.toInt() *rowIndex;
         
         
-
-logUtil!.put("Adding Image: " +index +" x: " +x +" y: " +y, this, "getImage")
+;
+    
+logUtil!.put("Adding Image: " +index +" x: " +x +" y: " +y, this, "getImage");
+    
 g.drawImage(bufferedImageArray[index]!, x, y, imageUnifierProperties!.getImageUnifierCell()!.getWidth()!.toInt(), imageUnifierProperties!.getImageUnifierCell()!.getHeight()!.toInt(), 
-                            null)
+                            null);
+    
 
     var totalColumnsMinusOne: number = (imageUnifierProperties!.getColumns()!.toInt() -1);
         
         
-
+;
+    
 
                         if(columnIndex > totalColumnsMinusOne)
                         
                                     {
-                                    rowIndex++
-columnIndex= 0
+                                    rowIndex++;
+    
+columnIndex= 0;
+    
 
                                     }
                                 
 }
 
-g.dispose()
+g.dispose();
+    
 
 
 

@@ -137,8 +137,10 @@ public constructor (image: Image, width: number, height: number, dx: number, dy:
 
                             //For kotlin this is before the body of the constructor.
                     
-this.animationFactoryInitializationVisitor!.dx= dx
-this.animationFactoryInitializationVisitor!.dy= dy
+this.animationFactoryInitializationVisitor!.dx= dx;
+    
+this.animationFactoryInitializationVisitor!.dy= dy;
+    
 }
 
 public constructor (image: Image, width: number, height: number, dx: number, dy: number)                        
@@ -172,8 +174,10 @@ public constructor (image: Image, width: number, height: number, dx: number, dy:
 
                             //For kotlin this is before the body of the constructor.
                     
-this.animationFactoryInitializationVisitor!.dx= dx
-this.animationFactoryInitializationVisitor!.dy= dy
+this.animationFactoryInitializationVisitor!.dx= dx;
+    
+this.animationFactoryInitializationVisitor!.dy= dy;
+    
 }
 
 public constructor (image: Image)                        
@@ -214,7 +218,8 @@ public constructor (image: Image, width: number, height: number, animationBehavi
 
                             //For kotlin this is before the body of the constructor.
                     
-this.angleIncrement= (AngleFactory.getInstance()!.TOTAL_ANGLE /GameConfigurationCentral.getInstance()!.getGameControlFidelity()).toShort()
+this.angleIncrement= (AngleFactory.getInstance()!.TOTAL_ANGLE /GameConfigurationCentral.getInstance()!.getGameControlFidelity()).toShort();
+    
 }
 
 public constructor (image: Image, width: number, height: number, angleIncrement: number, animationBehaviorFactory: AnimationBehaviorFactory)                        
@@ -231,7 +236,8 @@ public constructor (image: Image, width: number, height: number, angleIncrement:
 
                             //For kotlin this is before the body of the constructor.
                     
-this.angleIncrement= angleIncrement
+this.angleIncrement= angleIncrement;
+    
 }
 
 
@@ -243,7 +249,8 @@ this.angleIncrement= angleIncrement
                         if(this.animationFactoryInitializationVisitor!.dx != 0 || this.animationFactoryInitializationVisitor!.dy != 0)
                         
                                     {
-                                    animationFactoryImageScaleUtil!.processAdjust(this)
+                                    animationFactoryImageScaleUtil!.processAdjust(this);
+    
 
 
 

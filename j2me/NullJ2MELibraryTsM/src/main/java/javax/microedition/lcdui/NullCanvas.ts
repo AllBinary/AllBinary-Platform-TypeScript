@@ -14,7 +14,7 @@ import { StringUtil } from "../../../org/allbinary/logic/string/StringUtil.js";
 export class NullCanvas extends Canvas {
         
 
-    public static readonly NULL_IMAGE_ARRAY: Image[] = new Array(0);
+    public static readonly NULL_IMAGE_ARRAY: Image[] = [];
         
         
 
@@ -46,7 +46,7 @@ var h = h
 }
 
 
-    public getCommandStack(): Stack<Any>{
+    public getCommandStack(): Stack<any>{
 
 
 

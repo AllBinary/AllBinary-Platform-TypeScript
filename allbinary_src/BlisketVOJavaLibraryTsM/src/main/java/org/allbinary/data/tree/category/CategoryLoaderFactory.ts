@@ -39,7 +39,8 @@ var categoryFactoryInterface = categoryFactoryInterface
     var logUtil: LogUtil = LogUtil.getInstance()!;
         
         
-
+;
+    
 
         try {
             
@@ -48,18 +49,22 @@ var categoryFactoryInterface = categoryFactoryInterface
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return CategoryLoader(categoryFactoryInterface);
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.ENTITYFACTORYERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, "CategoryNodeFactory", commonStrings!.GET_INSTANCE, e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, "CategoryNodeFactory", commonStrings!.GET_INSTANCE, e);
+    
 
                                     }
                                 

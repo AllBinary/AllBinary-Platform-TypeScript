@@ -45,9 +45,12 @@ public constructor (name: string, jPanel: JPanel, helpSet: HelpSet){
             var name = name
 var jPanel = jPanel
 var helpSet = helpSet
-this.name= name
-this.jPanel= jPanel
-this.helpSet= helpSet
+this.name= name;
+    
+this.jPanel= jPanel;
+    
+this.helpSet= helpSet;
+    
 }
 
 public constructor (name: string, jPanel: JPanel){
@@ -55,14 +58,18 @@ public constructor (name: string, jPanel: JPanel){
             super();
             var name = name
 var jPanel = jPanel
-this.name= name
-this.jPanel= jPanel
+this.name= name;
+    
+this.jPanel= jPanel;
+    
 
-    var url: URL = this::class.getResource("/help/Help.hs")!;
+    var url: URL = this.constructor.name.getResource("/help/Help.hs")!;
         
         
-
-this.helpSet= JavaHelpUtil.getInstance()!.getHelpSet(url)
+;
+    
+this.helpSet= JavaHelpUtil.getInstance()!.getHelpSet(url);
+    
 }
 
 

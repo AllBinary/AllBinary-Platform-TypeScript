@@ -89,22 +89,34 @@ public constructor (animationInterface: Animation, movieIndexedAnimationInterfac
 
                             //For kotlin this is before the body of the constructor.
                     
-this.animationInterface= animationInterface
-this.movieIndexedAnimationInterface= movieIndexedAnimationInterface
-this.captionDx= captionDx
-this.captionDy= captionDy
-this.dx= dx
-this.dy= dy
-this.time= time
-this.END_EVENT= AllBinaryEventObject(this)
+this.animationInterface= animationInterface;
+    
+this.movieIndexedAnimationInterface= movieIndexedAnimationInterface;
+    
+this.captionDx= captionDx;
+    
+this.captionDy= captionDy;
+    
+this.dx= dx;
+    
+this.dy= dy;
+    
+this.time= time;
+    
+this.END_EVENT= AllBinaryEventObject(this);
+    
 
     var timePerFrame: number = this.time /this.getSize();
         
         
-
-this.timeDelayHelper= TimeDelayHelper(timePerFrame)
-this.player= player
-this.player.start()
+;
+    
+this.timeDelayHelper= TimeDelayHelper(timePerFrame);
+    
+this.player= player;
+    
+this.player.start();
+    
 }
 
 
@@ -115,7 +127,8 @@ this.player.start()
                         if(this.timeDelayHelper!.isTime(GameTickTimeDelayHelperFactory.getInstance()!.startTime))
                         
                                     {
-                                    this.movieIndexedAnimationInterface!.nextFrame()
+                                    this.movieIndexedAnimationInterface!.nextFrame();
+    
 
                                     }
                                 
@@ -123,7 +136,8 @@ this.player.start()
                         if(this.isLastFrame())
                         
                                     {
-                                    AnimationEventHandler.getInstance()!.fireEvent(this.END_EVENT)
+                                    AnimationEventHandler.getInstance()!.fireEvent(this.END_EVENT);
+    
 
                                     }
                                 
@@ -158,13 +172,15 @@ this.player.start()
 
 
     public previousFrame(){
-this.movieIndexedAnimationInterface!.previousFrame()
+this.movieIndexedAnimationInterface!.previousFrame();
+    
 }
 
 
     public setFrame(index: number){
 var index = index
-this.movieIndexedAnimationInterface!.setFrame(index)
+this.movieIndexedAnimationInterface!.setFrame(index);
+    
 }
 
 
@@ -174,6 +190,8 @@ this.movieIndexedAnimationInterface!.setFrame(index)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.movieIndexedAnimationInterface!.getFrame();
+
+                        ;
     
 }
 
@@ -184,21 +202,25 @@ this.movieIndexedAnimationInterface!.setFrame(index)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.movieIndexedAnimationInterface!.getSize();
+
+                        ;
     
 }
 
 
-    public setSequence(sequence: IntArray){
+    public setSequence(sequence: number[]){
 var sequence = sequence
 }
 
 
-    public getSequence(): IntArray{
+    public getSequence(): number[]{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return PrimitiveIntUtil.getArrayInstance();
+
+                        ;
     
 }
 
@@ -207,8 +229,10 @@ var sequence = sequence
     //var graphics = graphics
     //var x = x
     //var y = y
-this.animationInterface!.paint(graphics, x +this.captionDx, y +this.captionDy)
-this.movieIndexedAnimationInterface!.paint(graphics, x +this.captionDx +dx, y +this.captionDy +dy)
+this.animationInterface!.paint(graphics, x +this.captionDx, y +this.captionDy);
+    
+this.movieIndexedAnimationInterface!.paint(graphics, x +this.captionDx +dx, y +this.captionDy +dy);
+    
 }
 
 
@@ -217,8 +241,10 @@ this.movieIndexedAnimationInterface!.paint(graphics, x +this.captionDx +dx, y +t
     //var x = x
     //var y = y
     //var z = z
-this.animationInterface!.paintThreed(graphics, x +this.captionDx, y +this.captionDy, z)
-this.movieIndexedAnimationInterface!.paintThreed(graphics, x +this.captionDx +dx, y +this.captionDy +dy, z)
+this.animationInterface!.paintThreed(graphics, x +this.captionDx, y +this.captionDy, z);
+    
+this.movieIndexedAnimationInterface!.paintThreed(graphics, x +this.captionDx +dx, y +this.captionDy +dy, z);
+    
 }
 
 

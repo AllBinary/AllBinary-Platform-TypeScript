@@ -26,8 +26,8 @@ export class StoreAppClientInformation extends AbeClientInformation
                 , LongArrayIdentifierInterface {
         
 
-    private readonly longArrayIdentifier: LongArray
-public constructor (name: string, version: string, specialName: string, shortName: string, longArrayIdentifier: LongArray)                        
+    private readonly longArrayIdentifier: number[]
+public constructor (name: string, version: string, specialName: string, shortName: string, longArrayIdentifier: number[])                        
 
                             : super(name, version, specialName, shortName){
 
@@ -41,11 +41,12 @@ var longArrayIdentifier = longArrayIdentifier
 
                             //For kotlin this is before the body of the constructor.
                     
-this.longArrayIdentifier= longArrayIdentifier
+this.longArrayIdentifier= longArrayIdentifier;
+    
 }
 
 
-    public getLongArrayIdentifier(): LongArray{
+    public getLongArrayIdentifier(): number[]{
 
 
 

@@ -18,10 +18,13 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { HashMap } from "../../../../../../../../java/util/HashMap.js";
 
     
-import { Vector } from "../../../../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../../../../java/util/Vector.js";
 
     
 import { StoreFrontInterface } from "../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js";
@@ -40,12 +43,13 @@ public constructor (storeFrontInterface: StoreFrontInterface){
 }
 
 
-    public toHashMap(): HashMap<Any, Any>{
+    public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
         
         
-
+;
+    
 
 
 

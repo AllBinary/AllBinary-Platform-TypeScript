@@ -104,36 +104,47 @@ var rtsInterface = rtsInterface
 
                             //For kotlin this is before the body of the constructor.
                     
-this.rtsInterface= rtsInterface
+this.rtsInterface= rtsInterface;
+    
 
     var DEFAULT_CHAR_HEIGHT: number = myFont!.DEFAULT_CHAR_HEIGHT;
         
         
-
+;
+    
 
     var imageHeight: number = 0;
         
         
-
+;
+    
 
     var image: Image = this.getImage()!;
         
         
-
+;
+    
 
                         if(image != NullCanvas.NULL_IMAGE)
                         
                                     {
-                                    imageHeight= image.getHeight()
+                                    imageHeight= image.getHeight();
+    
 
                                     }
                                 
-this.adjustedCostLabelY=  -yOffset +imageHeight -(3 *DEFAULT_CHAR_HEIGHT)
-this.adjustedCostY=  -yOffset +imageHeight -(2 *DEFAULT_CHAR_HEIGHT)
-this.adjustedCostX= 2 +(DOLLAR.length *(DEFAULT_CHAR_HEIGHT -1))
-this.adjustedLevelY=  -yOffset +imageHeight -DEFAULT_CHAR_HEIGHT
-this.adjustedLevelX= 2 +(LEVEL.length *(DEFAULT_CHAR_HEIGHT -1))
-this.update()
+this.adjustedCostLabelY=  -yOffset +imageHeight -(3 *DEFAULT_CHAR_HEIGHT);
+    
+this.adjustedCostY=  -yOffset +imageHeight -(2 *DEFAULT_CHAR_HEIGHT);
+    
+this.adjustedCostX= 2 +(DOLLAR.length *(DEFAULT_CHAR_HEIGHT -1));
+    
+this.adjustedLevelY=  -yOffset +imageHeight -DEFAULT_CHAR_HEIGHT;
+    
+this.adjustedLevelX= 2 +(LEVEL.length *(DEFAULT_CHAR_HEIGHT -1));
+    
+this.update();
+    
 }
 
 
@@ -148,8 +159,10 @@ this.update()
 
 
     public update(){
-this.costString= this.primitiveLongUtil!.getCharArray(this.getRtsInterface()!.getUpgradeCost())
-this.levelString= this.primitiveLongUtil!.getCharArray(this.getRtsInterface()!.getLevel())
+this.costString= this.primitiveLongUtil!.getCharArray(this.getRtsInterface()!.getUpgradeCost());
+    
+this.levelString= this.primitiveLongUtil!.getCharArray(this.getRtsInterface()!.getLevel());
+    
 }
 
 
@@ -157,17 +170,24 @@ this.levelString= this.primitiveLongUtil!.getCharArray(this.getRtsInterface()!.g
 var graphics = graphics
 var x = x
 var y = y
-super.paint(graphics, x, y)
+super.paint(graphics, x, y);
+    
 
     var xa: number = x +2;
         
         
-
-graphics.drawString(COST, xa, y +this.adjustedCostLabelY, 0)
-graphics.drawString(DOLLAR, xa, y +this.adjustedCostY, 0)
-graphics.drawChars(costString, 0, this.costLength, x +this.adjustedCostX, y +this.adjustedCostY, 0)
-graphics.drawString(LEVEL, xa, y +this.adjustedLevelY, 0)
-graphics.drawChars(levelString, 0, this.levelLength, x +this.adjustedLevelX, y +this.adjustedLevelY, 0)
+;
+    
+graphics.drawString(COST, xa, y +this.adjustedCostLabelY, 0);
+    
+graphics.drawString(DOLLAR, xa, y +this.adjustedCostY, 0);
+    
+graphics.drawChars(costString, 0, this.costLength, x +this.adjustedCostX, y +this.adjustedCostY, 0);
+    
+graphics.drawString(LEVEL, xa, y +this.adjustedLevelY, 0);
+    
+graphics.drawChars(levelString, 0, this.levelLength, x +this.adjustedLevelX, y +this.adjustedLevelY, 0);
+    
 }
 
 

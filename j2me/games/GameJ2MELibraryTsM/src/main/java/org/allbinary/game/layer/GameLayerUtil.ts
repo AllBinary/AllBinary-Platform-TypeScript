@@ -39,17 +39,21 @@ var layer = layer
     var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
         
         
-
+;
+    
 
     var viewPosition: ViewPosition = layer.getViewPosition()!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return isInside(viewPosition!.getX(), viewPosition!.getY(), viewPosition!.getX2(), viewPosition!.getY2(), 0, 0, displayInfo!.getLastWidth(), displayInfo!.getLastHeight());
+
+                        ;
     
 }
 

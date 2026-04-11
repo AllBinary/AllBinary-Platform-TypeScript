@@ -18,10 +18,13 @@
 
 
 
+            import Hashtable from "@ohos.util.HashMap";
+        
 import { IOException } from "../../../../../java/io/IOException.js";
 
     
-import { Hashtable } from "../../../../../java/util/Hashtable.js";
+
+//import { Hashtable } from "../../../../../java/util/Hashtable.js";
 
     
 import { XmlRpcException } from "../../../../../org/apache/xmlrpc/XmlRpcException.js";
@@ -109,23 +112,28 @@ var log = log
     var specialMessage: string = log.getSpecialMessage()!;
         
         
-
+;
+    
 
     var anyType: any = {} = log.getObject()!;
         
         
-
+;
+    
 
     var functionName: string = log.getFunctionName()!;
         
         
-
+;
+    
 
     var exception: any = {} = log.getThrowable()!;
         
         
-
-this.put(specialMessage, anyType, functionName, exception)
+;
+    
+this.put(specialMessage, anyType, functionName, exception);
+    
 }
 
 
@@ -148,7 +156,7 @@ this.put(specialMessage, anyType, functionName, exception)
                         
                                     {
                                     
-                        if(exception::class.toString()!.compareTo(XmlRpcException::class.toString()!) == 0)
+                        if(exception.constructor.name.toString()!.compareTo(XmlRpcException::class.toString()!) == 0)
                         
                                     {
                                     
@@ -161,7 +169,7 @@ this.put(specialMessage, anyType, functionName, exception)
                                     }
                                 
 
-                        if(exception::class.toString()!.compareTo(IOException::class.toString()!) == 0)
+                        if(exception.constructor.name.toString()!.compareTo(IOException::class.toString()!) == 0)
                         
                                     {
                                     
@@ -181,18 +189,20 @@ this.put(specialMessage, anyType, functionName, exception)
     var className: string = CommonStrings.getInstance()!.EMPTY;
         
         
-
-this.isFirstException= false
+;
+    
+this.isFirstException= false;
+    
 
                         if(anyType != 
                                     null
-                                 && anyType!::class.toString()! != 
+                                 && anyType!.constructor.name.toString()! != 
                                     null
                                 )
                         
                                     {
-                                    className= anyType!::class.toString()!.toCharArray().concatToString()
-                                
+                                    className= anyType!.constructor.name.toString()!;
+    
 
                                     }
                                 
@@ -200,10 +210,12 @@ this.isFirstException= false
     var message: string = LogFormatUtil.getInstance()!.get(className, functionName, specialMessage, exception)!;
         
         
-
+;
+    
 
         try {
-            System.out.println("Eeeek")
+            System.out.println("Eeeek");
+    
 
                         if(abeClientInformation == 
                                     null
@@ -218,21 +230,32 @@ this.isFirstException= false
                                     }
                                 
 
-    var hashtable: Hashtable<Any, Any> = abeClientInformation!.toHashtable()!;
+    var hashtable: Hashtable<any, any> = abeClientInformation!.toHashtable()!;
         
         
-
-stringBuffer!.delete(0, stringBuffer!.length())
-stringBuffer!.append(message)
-stringBuffer!.append(CommonSeps.getInstance()!.SPACE)
-stringBuffer!.append(SpecialMessageUtil.getInstance()!.get())
-hashtable.put("message", stringBuffer!.toString())
+;
+    
+stringBuffer!.delete(0, stringBuffer!.length());
+    
+stringBuffer!.append(message);
+    
+stringBuffer!.append(CommonSeps.getInstance()!.SPACE);
+    
+stringBuffer!.append(SpecialMessageUtil.getInstance()!.get());
+    
+hashtable.put("message", stringBuffer!.toString());
+    
 XmlRpcRemoteLogClient(abeClientInformation).
-                            get(hashtable)
-} catch(e: Throwable)
+                            get(hashtable);
+    
+
+                //: 
+} catch(e) 
             {
-System.out.println("Exception")
-e.printStackTrace()
+System.out.println("Exception");
+    
+e.printStackTrace();
+    
 }
 
 

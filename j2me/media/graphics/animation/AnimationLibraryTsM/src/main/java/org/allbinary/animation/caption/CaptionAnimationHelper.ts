@@ -67,7 +67,8 @@ public constructor (captionAnimation: Animation, captionDx: number, captionDy: n
     //var captionDy = captionDy
     //var dx = dx
     //var dy = dy
-this.captionAnimation= CaptionAnimation(captionAnimation, this.textAnimation, captionDx, captionDy, dx, dy)
+this.captionAnimation= CaptionAnimation(captionAnimation, this.textAnimation, captionDx, captionDy, dx, dy);
+    
 }
 
 
@@ -103,7 +104,8 @@ this.captionAnimation= CaptionAnimation(captionAnimation, this.textAnimation, ca
                         if(this.timeHelper!.isTime(GameTickTimeDelayHelperFactory.getInstance()!.startTime))
                         
                                     {
-                                    this.animation= NullAnimationFactory.getFactoryInstance()!.getInstance(0)
+                                    this.animation= NullAnimationFactory.getFactoryInstance()!.getInstance(0);
+    
 
                                     }
                                 
@@ -113,10 +115,14 @@ this.captionAnimation= CaptionAnimation(captionAnimation, this.textAnimation, ca
     public update(message: string, basicColor: BasicColor){
 var message = message
 var basicColor = basicColor
-this.textAnimation!.setBasicColorP(basicColor)
-this.textAnimation!.setText(message)
-this.animation= this.captionAnimation
-this.timeHelper!.setStartTime()
+this.textAnimation!.setBasicColorP(basicColor);
+    
+this.textAnimation!.setText(message);
+    
+this.animation= this.captionAnimation;
+    
+this.timeHelper!.setStartTime();
+    
 }
 
 
@@ -124,7 +130,8 @@ this.timeHelper!.setStartTime()
 var graphics = graphics
 var x = x
 var y = y
-this.animation.paint(graphics, x, y)
+this.animation.paint(graphics, x, y);
+    
 }
 
 

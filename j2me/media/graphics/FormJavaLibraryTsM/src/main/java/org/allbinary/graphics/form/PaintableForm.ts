@@ -38,7 +38,7 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 export class PaintableForm extends CustomForm {
         
 
-    public static readonly NULL_PAINTABLE_FORM: PaintableForm = new PaintableForm(StringUtil.getInstance()!.EMPTY_STRING, new Array(0), RectangleFactory.SINGLETON, FormTypeFactory.getInstance()!.NULL_FORM_TYPE, BasicColorFactory.getInstance()!.BLACK, BasicColorFactory.getInstance()!.WHITE);
+    public static readonly NULL_PAINTABLE_FORM: PaintableForm = new PaintableForm(StringUtil.getInstance()!.EMPTY_STRING, [], RectangleFactory.SINGLETON, FormTypeFactory.getInstance()!.NULL_FORM_TYPE, BasicColorFactory.getInstance()!.BLACK, BasicColorFactory.getInstance()!.WHITE);
         
         
 
@@ -72,13 +72,18 @@ public constructor (title: string, items: CustomItem[], rectangle: Rectangle, fo
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setSelectedIndex(0)
+this.setSelectedIndex(0);
+    
 
         try {
-            this.init(rectangle, formType)
-} catch(e: Exception)
+            this.init(rectangle, formType);
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e);
+    
 }
 
 }
@@ -89,15 +94,20 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
     public init(rectangle: Rectangle, formType: FormType){
     //var rectangle = rectangle
     //var formType = formType
-this.rectangle= rectangle
+this.rectangle= rectangle;
+    
 
     var point: GPoint = this.rectangle.getPoint()!;
         
         
-
-this.x= point.getX()
-this.y= point.getY()
-this.formType= formType
+;
+    
+this.x= point.getX();
+    
+this.y= point.getY();
+    
+this.formType= formType;
+    
 }
 
 
@@ -107,6 +117,8 @@ this.formType= formType
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.rectangle.getWidth();
+
+                        ;
     
 }
 

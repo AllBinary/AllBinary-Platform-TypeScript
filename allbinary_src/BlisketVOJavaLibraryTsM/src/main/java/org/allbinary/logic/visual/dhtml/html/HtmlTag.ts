@@ -27,18 +27,20 @@ export class HtmlTag
          {
         
 
-    otherAttributes: HashMap<Any, Any>
+    otherAttributes: HashMap<any, any>
 public constructor (){
 
             super();
-            this.otherAttributes= HashMap<Any, Any>()
+            this.otherAttributes= HashMap<any, any>();
+    
 }
 
 
     public addAttribute(key: string, value: string){
 var key = key
 var value = value
-this.otherAttributes!.put(key, value)
+this.otherAttributes!.put(key, value);
+    
 }
 
 

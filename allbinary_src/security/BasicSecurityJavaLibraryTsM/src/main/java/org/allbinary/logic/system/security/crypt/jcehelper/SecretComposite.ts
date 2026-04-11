@@ -42,49 +42,59 @@ export class SecretComposite extends BaseSecretComposite {
 
     private readonly secretKey: SecretKey
 
-    private key: ByteArray
-public constructor (secretKey: SecretKey, cipher: Cipher, key: ByteArray){
+    private key: number[]
+public constructor (secretKey: SecretKey, cipher: Cipher, key: number[]){
 
             super();
                 //var secretKey = secretKey
     //var cipher = cipher
     //var key = key
-this.secretKey= secretKey
-this.cipher= cipher
-this.key= key
+this.secretKey= secretKey;
+    
+this.cipher= cipher;
+    
+this.key= key;
+    
 }
 
 
                 //@Throws(Error::class)
             
-    public encrypt(array: ByteArray): ByteArray{
+    public encrypt(array: number[]): number[]{
 var array = array
-array= this.mutilate(array)
-cipher.init(Cipher.ENCRYPT_MODE, secretKey)
+array= this.mutilate(array);
+    
+cipher.init(Cipher.ENCRYPT_MODE, secretKey);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return cipher.doFinal(array);
+
+                        ;
     
 }
 
 
                 //@Throws(Error::class)
             
-    public decrypt(array: ByteArray): ByteArray{
+    public decrypt(array: number[]): number[]{
 var array = array
-cipher.init(Cipher.DECRYPT_MODE, secretKey)
+cipher.init(Cipher.DECRYPT_MODE, secretKey);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.mutilate(cipher.doFinal(array));
+
+                        ;
     
 }
 
 
-    mutilate(array: ByteArray): ByteArray{
+    mutilate(array: number[]): number[]{
 var array = array
 
 
@@ -100,12 +110,14 @@ index < key.length; index++)
     var value: number = key[index]!;
         
         
-
+;
+    
 
                         if(value < 8 && value > 0)
                         
                                     {
-                                    array= byteUtil!.xorByte(array, value.toInt())
+                                    array= byteUtil!.xorByte(array, value.toInt());
+    
 
                                     }
                                 

@@ -55,7 +55,8 @@ public constructor (isHighestBest: boolean){
 
             super();
                 //var isHighestBest = isHighestBest
-this.isHighestBest= isHighestBest
+this.isHighestBest= isHighestBest;
+    
 }
 
 
@@ -76,71 +77,93 @@ this.isHighestBest= isHighestBest
 }
 
 
-    public compare(recordOne: ByteArray, recordTwo: ByteArray): number{
+    public compare(recordOne: number[], recordTwo: number[]): number{
     //var recordOne = recordOne
     //var recordTwo = recordTwo
 
     var byteArrayInputStreamOne: ByteArrayInputStream = new ByteArrayInputStream(recordOne);
         
         
-
+;
+    
 
     var inputStreamOne: DataInputStream = new DataInputStream(byteArrayInputStreamOne);
         
         
-
+;
+    
 
     var byteArrayInputStreamTwo: ByteArrayInputStream = new ByteArrayInputStream(recordTwo);
         
         
-
+;
+    
 
     var inputStreamTwo: DataInputStream = new DataInputStream(byteArrayInputStreamTwo);
         
         
-
+;
+    
 
     var scoreOne: number = 0;
         
         
-
+;
+    
 
     var scoreTwo: number = 0;
         
         
-
+;
+    
 
         try {
-            inputStreamOne!.readUTF()
-inputStreamTwo!.readUTF()
-scoreOne= inputStreamOne!.readLong()
-scoreTwo= inputStreamTwo!.readLong()
-} catch(e: EOFException)
+            inputStreamOne!.readUTF();
+    
+inputStreamTwo!.readUTF();
+    
+scoreOne= inputStreamOne!.readLong();
+    
+scoreTwo= inputStreamTwo!.readLong();
+    
+
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, "compare", e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, "compare", e);
+    
 }
- catch(e: IOException)
+
+                //: 
+ catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, "compare", e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, "compare", e);
+    
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, "compare", e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, "compare", e);
+    
 }
 
 
@@ -152,6 +175,8 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "compare", e)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getHighTooLow(scoreOne, scoreTwo);
+
+                        ;
     
 
                                     }
@@ -162,6 +187,8 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "compare", e)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getLowTooHigh(scoreOne, scoreTwo);
+
+                        ;
     
 
                         }

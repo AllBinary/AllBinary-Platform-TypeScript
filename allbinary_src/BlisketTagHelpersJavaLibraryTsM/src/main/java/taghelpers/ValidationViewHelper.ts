@@ -46,7 +46,7 @@ export class ValidationViewHelper extends ViewHelper
         
 
     private viewInterface: ValidationComponentInterface
-public constructor (hashMap: HashMap<Any, Any>, pageContext: PageContext)                        
+public constructor (hashMap: HashMap<any, any>, pageContext: PageContext)                        
 
                             : super(hashMap, pageContext){
 
@@ -57,12 +57,16 @@ var pageContext = pageContext
 
                             //For kotlin this is before the body of the constructor.
                     
-viewInterface= this.getViewObject() as ValidationComponentInterface
+viewInterface= this.getViewObject();
+
+                         as ValidationComponentInterface;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPER))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
+    
 
                                     }
                                 
@@ -76,7 +80,8 @@ viewInterface= this.getViewObject() as ValidationComponentInterface
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPER))
                         
                                     {
-                                    logUtil!.put("Started", this, commonStrings!.IS_VALID)
+                                    logUtil!.put("Started", this, commonStrings!.IS_VALID);
+    
 
                                     }
                                 
@@ -85,14 +90,19 @@ viewInterface= this.getViewObject() as ValidationComponentInterface
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return viewInterface!.isValid();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e);
+    
 
                                     }
                                 
@@ -115,14 +125,19 @@ viewInterface= this.getViewObject() as ValidationComponentInterface
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return viewInterface!.validationInfo();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "validationInfo()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "validationInfo()", e);
+    
 
                                     }
                                 
@@ -145,14 +160,19 @@ viewInterface= this.getViewObject() as ValidationComponentInterface
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return viewInterface!.toValidationInfoDoc();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "toValidationInfoDoc()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "toValidationInfoDoc()", e);
+    
 
                                     }
                                 
@@ -176,14 +196,19 @@ var document = document
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return viewInterface!.toValidationInfoNode(document);
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "toValidationInfoNode()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "toValidationInfoNode()", e);
+    
 
                                     }
                                 

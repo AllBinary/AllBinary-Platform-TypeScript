@@ -41,7 +41,7 @@ interface TransformInfoInterface extends TableMappingInterface {
 
                 //@Throws(Error::class)
             
-    public override(hashMap: HashMap<Any, Any>)
+    public override(hashMap: HashMap<any, any>)
 
     public getName(): string
 

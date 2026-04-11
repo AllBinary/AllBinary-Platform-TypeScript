@@ -40,14 +40,16 @@ var node = node
             ;
         
         
-
+;
+    
 
                         if(DomSearchHelper.getNodeNoThrow(KeyboardActionScriptInputData.NAME, node.getChildNodes()) != 
                                     null
                                 )
                         
                                     {
-                                    profileActionScriptInputInterface= KeyboardActionScriptInput(node)
+                                    profileActionScriptInputInterface= KeyboardActionScriptInput(node);
+    
 
                                     }
                                 
@@ -57,7 +59,8 @@ var node = node
                                 )
                         
                                     {
-                                    profileActionScriptInputInterface= MouseActionScriptInput(node)
+                                    profileActionScriptInputInterface= MouseActionScriptInput(node);
+    
 
                                     }
                                 

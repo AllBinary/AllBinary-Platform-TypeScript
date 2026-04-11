@@ -54,14 +54,17 @@ var maxPaths = maxPaths
         
 index >= this.maxConcurrentPaths; index--)
         {
-this.list.add(BasicArrayList(maxPaths))
+this.list.add(BasicArrayList(maxPaths));
+    
 }
 
-this.maxConcurrentPaths= maxConcurrentPaths
+this.maxConcurrentPaths= maxConcurrentPaths;
+    
 
                                     }
                                 
-this.maxPaths= maxPaths
+this.maxPaths= maxPaths;
+    
 }
 
 
@@ -74,7 +77,9 @@ this.maxPaths= maxPaths
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.list.remove(0) as BasicArrayList;
+                        return this.list.remove(0);
+
+                         as BasicArrayList;
     
 
                                     }
@@ -94,8 +99,10 @@ this.maxPaths= maxPaths
 
     public release(list: BasicArrayList){
 var list = list
-list.clear()
-this.list.add(list)
+list.clear();
+    
+this.list.add(list);
+    
 }
 
 

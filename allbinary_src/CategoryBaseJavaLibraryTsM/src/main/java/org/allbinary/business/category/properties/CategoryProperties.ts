@@ -18,10 +18,13 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { HashMap } from "../../../../../java/util/HashMap.js";
 
     
-import { Vector } from "../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../java/util/Vector.js";
 
     
 import { CategoryData } from "../../../../../org/allbinary/business/category/CategoryData.js";
@@ -83,21 +86,24 @@ public constructor (name: string){
 
             super();
             var name = name
-this.category= name
+this.category= name;
+    
 }
 
 public constructor (node: Node){
 
             super();
             var node = node
-this.category= CategoryUtil.getNameFromNode(node)
+this.category= CategoryUtil.getNameFromNode(node);
+    
 }
 
-public constructor (categoryPropertiesHashMap: HashMap<Any, Any>){
+public constructor (categoryPropertiesHashMap: HashMap<any, any>){
 
             super();
             var categoryPropertiesHashMap = categoryPropertiesHashMap
-this.category= .toCharArray()
+this.category= .toCharArray();
+    
 }
 
 
@@ -126,7 +132,9 @@ this.category= .toCharArray()
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getValue() as Object;
+                        return this.getValue();
+
+                         as Object;
     
 }
 
@@ -149,22 +157,26 @@ var categoryHierarchyInterface = categoryHierarchyInterface
     var abPathData: AbPathData = AbPathData.getInstance()!;
         
         
-
+;
+    
 
     var pathStringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
     var list: BasicArrayList = new BasicArrayList();
         
         
-
+;
+    
 
     var nextParentCategoryInterface: CategoryInterface = categoryHierarchyInterface!.getParent()!;
         
         
-
+;
+    
 
                         if(this != nextParentCategoryInterface!.getProperties())
                         
@@ -173,7 +185,8 @@ var categoryHierarchyInterface = categoryHierarchyInterface
     var depthIndex: number = 0;
         
         
-
+;
+    
 
         while(nextParentCategoryInterface != 
                                     null
@@ -193,13 +206,16 @@ var categoryHierarchyInterface = categoryHierarchyInterface
                         if(nextParentCategoryInterface!.getProperties()!.isRoot())
                         
                                     {
-                                    list.add(0, nextParentCategoryInterface!.getPath()!.toString())
+                                    list.add(0, nextParentCategoryInterface!.getPath()!.toString());
+    
 
                                     }
                                 
                         else {
-                            pathStringBuffer!.delete(0, pathStringBuffer!.length())
-list.add(0, pathStringBuffer!.append(abPathData!.SEPARATOR)!.append(nextParentCategoryInterface!.getProperties()!.getValue())!.toString())
+                            pathStringBuffer!.delete(0, pathStringBuffer!.length());
+    
+list.add(0, pathStringBuffer!.append(abPathData!.SEPARATOR)!.append(nextParentCategoryInterface!.getProperties()!.getValue())!.toString());
+    
 
                         }
                             
@@ -213,8 +229,10 @@ list.add(0, pathStringBuffer!.append(abPathData!.SEPARATOR)!.append(nextParentCa
 
                                     }
                                 
-nextParentCategoryInterface= nextParentCategoryInterface!.getHierarchy()!.getParent()
-depthIndex++
+nextParentCategoryInterface= nextParentCategoryInterface!.getHierarchy()!.getParent();
+    
+depthIndex++;
+    
 
                         if(depthIndex > MAXDEPTH)
                         
@@ -231,13 +249,16 @@ depthIndex++
 
                                     }
                                 
-pathStringBuffer!.delete(0, pathStringBuffer!.length())
-pathStringBuffer!.append(abPathData!.SEPARATOR)!.append(this.getValue())
+pathStringBuffer!.delete(0, pathStringBuffer!.length());
+    
+pathStringBuffer!.append(abPathData!.SEPARATOR)!.append(this.getValue());
+    
 
     var size: number = list.size()!;
         
         
-
+;
+    
 
 
 
@@ -248,15 +269,20 @@ pathStringBuffer!.append(abPathData!.SEPARATOR)!.append(this.getValue())
         
 index < size; index++)
         {
-pathStringBuffer!.append(list.get(index) as String)
+pathStringBuffer!.append(list.get(index);
+
+                         as String);
+    
 }
 
-pathStringBuffer!.append(abPathData!.SEPARATOR)
+pathStringBuffer!.append(abPathData!.SEPARATOR);
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
                         
                                     {
-                                    logUtil!.put("path = " +pathStringBuffer!.toString(), this, "getPath")
+                                    logUtil!.put("path = " +pathStringBuffer!.toString(), this, "getPath");
+    
 
                                     }
                                 
@@ -291,7 +317,8 @@ pathStringBuffer!.append(abPathData!.SEPARATOR)
 
     public setValue(value: string){
 var value = value
-this.category= value
+this.category= value;
+    
 }
 
 
@@ -300,12 +327,14 @@ this.category= value
     var returnBoolean: Boolean = Boolean.FALSE;
         
         
-
+;
+    
 
                         if(StringValidationUtil.getInstance()!.isValidRequired(this.category, 1, AbSqlData.MAXSTRING))
                         
                                     {
-                                    returnBoolean= Boolean.TRUE
+                                    returnBoolean= Boolean.TRUE;
+    
 
                                     }
                                 
@@ -318,13 +347,15 @@ this.category= value
 }
 
 
-    public toHashMap(): HashMap<Any, Any>{
+    public toHashMap(): HashMap<any, any>{
 
-    var categoryHashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var categoryHashMap: HashMap<any, any> = new HashMap<any, any>();
         
         
-
-categoryHashMap!.put(CategoryData.getInstance()!.NAME, this.category)
+;
+    
+categoryHashMap!.put(CategoryData.getInstance()!.NAME, this.category);
+    
 
 
 
@@ -339,8 +370,10 @@ categoryHashMap!.put(CategoryData.getInstance()!.NAME, this.category)
     var categoryVector: Vector = new Vector();
         
         
-
-categoryVector!.add(category)
+;
+    
+categoryVector!.add(category);
+    
 
 
 

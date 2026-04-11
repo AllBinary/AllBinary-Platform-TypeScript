@@ -18,7 +18,10 @@
 
 
 
-import { Hashtable } from "../../../../java/util/Hashtable.js";
+            import Hashtable from "@ohos.util.HashMap";
+        
+
+//import { Hashtable } from "../../../../java/util/Hashtable.js";
 
     
 import { BasicAnimationInterfaceFactoryInterface } from "../../../../org/allbinary/animation/BasicAnimationInterfaceFactoryInterface.js";
@@ -66,11 +69,11 @@ export class BaseResourceAnimationInterfaceFactoryInterfaceFactory
         
         
 
-    private readonly hashtable: Hashtable<Any, Any>
+    private readonly hashtable: Hashtable<any, any>
 
-    private readonly rectangleHashtable: Hashtable<Any, Any>
+    private readonly rectangleHashtable: Hashtable<any, any>
 
-    private readonly rectangleArrayOfArraysHashtable: Hashtable<Any, Any>
+    private readonly rectangleArrayOfArraysHashtable: Hashtable<any, any>
 
     private readonly name: string
 
@@ -79,23 +82,31 @@ public constructor (name: string){
 
             super();
                 //var name = name
-this.hashtable= Hashtable<Any, Any>()
-this.rectangleHashtable= Hashtable<Any, Any>()
-this.rectangleArrayOfArraysHashtable= Hashtable<Any, Any>()
-this.name= name
+this.hashtable= Hashtable<any, any>();
+    
+this.rectangleHashtable= Hashtable<any, any>();
+    
+this.rectangleArrayOfArraysHashtable= Hashtable<any, any>();
+    
+this.name= name;
+    
 }
 
-public constructor (name: string, hashtable: Hashtable<Any, Any>, rectangleHashtable: Hashtable<Any, Any>, rectangleArrayHashtable: Hashtable<Any, Any>){
+public constructor (name: string, hashtable: Hashtable<any, any>, rectangleHashtable: Hashtable<any, any>, rectangleArrayHashtable: Hashtable<any, any>){
 
             super();
                 //var name = name
     //var hashtable = hashtable
     //var rectangleHashtable = rectangleHashtable
     //var rectangleArrayHashtable = rectangleArrayHashtable
-this.hashtable= hashtable
-this.rectangleHashtable= rectangleHashtable
-this.rectangleArrayOfArraysHashtable= rectangleArrayHashtable
-this.name= name
+this.hashtable= hashtable;
+    
+this.rectangleHashtable= rectangleHashtable;
+    
+this.rectangleArrayOfArraysHashtable= rectangleArrayHashtable;
+    
+this.name= name;
+    
 }
 
 
@@ -117,10 +128,13 @@ this.name= name
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
+;
+    
 logUtil!.put(StringMaker().
-                            append("Available List of Animations: ")!.append(hashtable.toString())!.toString(), this, commonStrings!.INIT)
-this.setInitialized(true)
+                            append("Available List of Animations: ")!.append(hashtable.toString())!.toString(), this, commonStrings!.INIT);
+    
+this.setInitialized(true);
+    
 }
 
 
@@ -149,7 +163,8 @@ this.setInitialized(true)
 
                                     }
                                 
-hashtable.put(resource, animationInterfaceFactoryInterface)
+hashtable.put(resource, animationInterfaceFactoryInterface);
+    
 }
 
 
@@ -161,7 +176,8 @@ hashtable.put(resource, animationInterfaceFactoryInterface)
     var basicAnimationInterfaceFactoryInterfaceCanBeNull: any = {}? = hashtable.get(resource as Object);
         
         
-
+;
+    
 
                         if(basicAnimationInterfaceFactoryInterfaceCanBeNull == 
                                     null
@@ -194,7 +210,8 @@ hashtable.put(resource, animationInterfaceFactoryInterface)
     var rectangleCanBeNull: any = {}? = rectangleHashtable!.get(resource as Object);
         
         
-
+;
+    
 
                         if(rectangleCanBeNull == 
                                     null
@@ -224,7 +241,8 @@ hashtable.put(resource, animationInterfaceFactoryInterface)
     public addRectangle(resource: string, rectangle: Rectangle){
     //var resource = resource
     //var rectangle = rectangle
-rectangleHashtable!.put(resource, rectangle)
+rectangleHashtable!.put(resource, rectangle);
+    
 }
 
 
@@ -236,7 +254,9 @@ rectangleHashtable!.put(resource, rectangle)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return rectangleArrayOfArraysHashtable!.get(resource as Object)as Array<Rectangle[]?>;
+                        return rectangleArrayOfArraysHashtable!.get(resource as Object);
+
+                        as Array<Rectangle[]?>;
     
 }
 
@@ -246,7 +266,8 @@ rectangleHashtable!.put(resource, rectangle)
     public addRectangleArrayOfArrays(resource: string, rectangleArrayOfArrays: Rectangle[][]){
     //var resource = resource
     //var rectangleArrayOfArrays = rectangleArrayOfArrays
-rectangleArrayOfArraysHashtable!.put(resource, rectangleArrayOfArrays)
+rectangleArrayOfArraysHashtable!.put(resource, rectangleArrayOfArrays);
+    
 }
 
 
@@ -266,7 +287,8 @@ rectangleArrayOfArraysHashtable!.put(resource, rectangleArrayOfArrays)
     var resourceLoadingLevelFactory: ResourceLoadingLevelFactory = ResourceLoadingLevelFactory.getInstance()!;
         
         
-
+;
+    
 
                         if(level == resourceLoadingLevelFactory!.LOAD_ALL.getLevel())
                         
@@ -299,12 +321,14 @@ rectangleArrayOfArraysHashtable!.put(resource, rectangleArrayOfArrays)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return StringMaker().
-                            append(this::class.toString()!)!.append(CommonSeps.getInstance()!.SEMICOLON)!.append(CommonSeps.getInstance()!.SPACE)!.append(this.name)!.toString();
+                            append(this.constructor.name.toString()!)!.append(CommonSeps.getInstance()!.SEMICOLON)!.append(CommonSeps.getInstance()!.SPACE)!.append(this.name)!.toString();
+
+                        ;
     
 }
 
 
-    public getHashtable(): Hashtable<Any, Any>{
+    public getHashtable(): Hashtable<any, any>{
 
 
 
@@ -314,7 +338,7 @@ rectangleArrayOfArraysHashtable!.put(resource, rectangleArrayOfArrays)
 }
 
 
-    public getRectangleHashtable(): Hashtable<Any, Any>{
+    public getRectangleHashtable(): Hashtable<any, any>{
 
 
 
@@ -324,7 +348,7 @@ rectangleArrayOfArraysHashtable!.put(resource, rectangleArrayOfArrays)
 }
 
 
-    public getRectangleArrayOfArraysHashtable(): Hashtable<Any, Any>{
+    public getRectangleArrayOfArraysHashtable(): Hashtable<any, any>{
 
 
 
@@ -336,7 +360,8 @@ rectangleArrayOfArraysHashtable!.put(resource, rectangleArrayOfArrays)
 
     setInitialized(initialized: boolean){
 var initialized = initialized
-this.initialized= initialized
+this.initialized= initialized;
+    
 }
 
 

@@ -45,7 +45,8 @@ public constructor (){
 
     public setListener(enableListener: IntermissionEnableListenerInterface){
 var enableListener = enableListener
-this.intermissionEnableListener= enableListener
+this.intermissionEnableListener= enableListener;
+    
 }
 
 
@@ -61,16 +62,19 @@ this.intermissionEnableListener= enableListener
 
     public setEnabled(enabled: boolean){
 var enabled = enabled
-this.enabled= enabled
+this.enabled= enabled;
+    
 
                         if(this.isEnabled())
                         
                                     {
-                                    this.getTimeDelayHelper()!.setStartTime()
+                                    this.getTimeDelayHelper()!.setStartTime();
+    
 
                                     }
                                 
-this.intermissionEnableListener!.notifyIntermission(enabled)
+this.intermissionEnableListener!.notifyIntermission(enabled);
+    
 }
 
 

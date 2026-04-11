@@ -44,9 +44,12 @@ public constructor (ram: Integer, projectile: Integer, drops: Integer){
             var ram = ram
 var projectile = projectile
 var drops = drops
-this.setRam(ram)
-this.setProjectile(projectile)
-this.setDrops(drops)
+this.setRam(ram);
+    
+this.setProjectile(projectile);
+    
+this.setDrops(drops);
+    
 }
 
 
@@ -62,7 +65,8 @@ this.setDrops(drops)
 
     public setRam(ram: Integer){
 var ram = ram
-this.ram= ram
+this.ram= ram;
+    
 }
 
 
@@ -78,7 +82,8 @@ this.ram= ram
 
     public setProjectile(projectile: Integer){
 var projectile = projectile
-this.projectile= projectile
+this.projectile= projectile;
+    
 }
 
 
@@ -94,7 +99,8 @@ this.projectile= projectile
 
     public setDrops(drops: Integer){
 var drops = drops
-this.drops= drops
+this.drops= drops;
+    
 }
 
 

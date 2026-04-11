@@ -18,10 +18,13 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { awt } from "../../../../../../java/awt.js";
 
     
-import { Vector } from "../../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../../java/util/Vector.js";
 
     
 import { ImageComparisonResult } from "../../../../../../org/allbinary/media/image/comparison/ImageComparisonResult.js";
@@ -47,7 +50,8 @@ public constructor (imageComparisonResult: ImageComparisonResult)
 
                             //For kotlin this is before the body of the constructor.
                     
-createMotionRectangles(imageComparisonResult)
+createMotionRectangles(imageComparisonResult);
+    
 }
 
 
@@ -59,12 +63,14 @@ var imageComparisonInfo = imageComparisonInfo
     var vector: Vector = imageComparisonInfo!.getNonMatchingPixelVector()!;
         
         
-
+;
+    
 
     var size: number = vector.length!;
         
         
-
+;
+    
 
 
 
@@ -76,11 +82,15 @@ var imageComparisonInfo = imageComparisonInfo
 index < size; index++)
         {
 
-    var pixelDelta: PixelDelta = vector.get(index) as PixelDelta;
-        
-        
+    var pixelDelta: PixelDelta = vector.get(index);
 
-addPixelDeltaToAMotionRectangle(pixelDelta)
+                         as PixelDelta;
+        
+        
+;
+    
+addPixelDeltaToAMotionRectangle(pixelDelta);
+    
 }
 
 }
@@ -94,12 +104,14 @@ var pixelDelta = pixelDelta
     var vector: Vector = this.getVector()!;
         
         
-
+;
+    
 
     var size: number = vector.length!;
         
         
-
+;
+    
 
 
 
@@ -111,10 +123,13 @@ var pixelDelta = pixelDelta
 index < size; index++)
         {
 
-    var motionRectangle: MotionRectangle = vector.get(index) as MotionRectangle;
-        
-        
+    var motionRectangle: MotionRectangle = vector.get(index);
 
+                         as MotionRectangle;
+        
+        
+;
+    
 
                         if(shouldPixelDeltaPartOfMotionRectangle(motionRectangle, pixelDelta))
                         
@@ -123,17 +138,20 @@ index < size; index++)
     var newWidth: number = pixelDelta!.getPoint()!.getX() -motionRectangle!.getRectangle()!.x;
         
         
-
+;
+    
 
     var newHeight: number = pixelDelta!.getPoint()!.getY() -motionRectangle!.getRectangle()!.y;
         
         
-
+;
+    
 
                         if(newWidth < motionRectangle!.getRectangle()!.width)
                         
                                     {
-                                    newWidth= motionRectangle!.getRectangle()!.width
+                                    newWidth= motionRectangle!.getRectangle()!.width;
+    
 
                                     }
                                 
@@ -141,11 +159,13 @@ index < size; index++)
                         if(newHeight < motionRectangle!.getRectangle()!.height)
                         
                                     {
-                                    newHeight= motionRectangle!.getRectangle()!.height
+                                    newHeight= motionRectangle!.getRectangle()!.height;
+    
 
                                     }
                                 
-motionRectangle!.getRectangle()!.setSize(newWidth, newHeight)
+motionRectangle!.getRectangle()!.setSize(newWidth, newHeight);
+    
 
 
 
@@ -171,21 +191,27 @@ motionRectangle!.getRectangle()!.setSize(newWidth, newHeight)
     addPixelDeltaToAMotionRectangle(pixelDelta: PixelDelta){
 var pixelDelta = pixelDelta
 
-                        if(!addPixelDeltaToExistingMotionRectangle(pixelDelta))
+                        if(!addPixelDeltaToExistingMotionRectangle(pixelDelta);
+
+                        )
                         
                                     {
                                     
     var newRectangle: Rectangle = new Rectangle(pixelDelta!.getPoint()!.getX(), pixelDelta!.getPoint()!.getY(), 1, 1);
         
         
-
+;
+    
 
     var motionRectangle: MotionRectangle = new MotionRectangle(newRectangle);
         
         
-
-motionRectangle!.getPixelDeltaVector()!.add(pixelDelta)
-this.getVector()!.add(motionRectangle)
+;
+    
+motionRectangle!.getPixelDeltaVector()!.add(pixelDelta);
+    
+this.getVector()!.add(motionRectangle);
+    
 
                                     }
                                 
@@ -201,7 +227,8 @@ var pixelDelta = pixelDelta
     var isPixelLeftOfTheRectangle: boolean = false;
         
         
-
+;
+    
 
                         if(motionRectangle!.getRectangle()!.y > pixelDelta!.getPoint()!.getY())
                         
@@ -217,7 +244,8 @@ var pixelDelta = pixelDelta
                         if(motionRectangle!.getRectangle()!.x > pixelDelta!.getPoint()!.getX())
                         
                                     {
-                                    isPixelLeftOfTheRectangle= true
+                                    isPixelLeftOfTheRectangle= true;
+    
 
                                     }
                                 
@@ -230,6 +258,8 @@ var pixelDelta = pixelDelta
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return isPixelDeltaLikelyPartOfMotionRectangle(motionRectangle, pixelDelta);
+
+                        ;
     
 
                                     }
@@ -252,22 +282,26 @@ var pixelDelta = pixelDelta
     var maxX: number = motionRectangle!.getRectangle()!.x +motionRectangle!.getRectangle()!.width;
         
         
-
+;
+    
 
     var maxY: number = motionRectangle!.getRectangle()!.y +motionRectangle!.getRectangle()!.height;
         
         
-
+;
+    
 
     var horizontalDistance: number = pixelDelta!.getPoint()!.getX() -maxX;
         
         
-
+;
+    
 
     var verticalDistance: number = pixelDelta!.getPoint()!.getY() -maxY;
         
         
-
+;
+    
 
                         if(horizontalDistance < MAX_PIXEL_DISTANCE_THRESHOLD && verticalDistance < MAX_PIXEL_DISTANCE_THRESHOLD)
                         

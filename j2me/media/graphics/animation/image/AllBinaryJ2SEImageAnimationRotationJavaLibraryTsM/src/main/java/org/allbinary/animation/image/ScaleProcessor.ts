@@ -71,10 +71,14 @@ export class ScaleProcessor extends ScaleBaseProcessor {
     //var maxScaleY = maxScaleY
 
         try {
-            imageScaleUtil!.scale(originalImage, originalImageArray, ximageToShowArray, unused, scaleX, scaleY, maxScaleX, maxScaleY)
-} catch(e: Exception)
+            imageScaleUtil!.scale(originalImage, originalImageArray, ximageToShowArray, unused, scaleX, scaleY, maxScaleX, maxScaleY);
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.UPDATE, e)
+logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.UPDATE, e);
+    
 }
 
 }

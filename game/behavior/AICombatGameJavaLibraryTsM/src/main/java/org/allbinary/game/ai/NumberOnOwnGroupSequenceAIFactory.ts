@@ -18,7 +18,10 @@
 
 
 
-import { Hashtable } from "../../../../java/util/Hashtable.js";
+            import Hashtable from "@ohos.util.HashMap";
+        
+
+//import { Hashtable } from "../../../../java/util/Hashtable.js";
 
     
 import { ArtificialIntelligenceInterface } from "../../../../org/allbinary/ai/ArtificialIntelligenceInterface.js";
@@ -54,7 +57,7 @@ export class NumberOnOwnGroupSequenceAIFactory
 
                 //@Throws(Error::class)
             
-    public getInstance(hashtable: Hashtable<Any, Any>, artificialIntelligenceInterface: ArtificialIntelligenceInterface[], ownerLayerInterface: AllBinaryLayer, gameInput: GameInput): ArtificialIntelligenceInterface{
+    public getInstance(hashtable: Hashtable<any, any>, artificialIntelligenceInterface: ArtificialIntelligenceInterface[], ownerLayerInterface: AllBinaryLayer, gameInput: GameInput): ArtificialIntelligenceInterface{
     //var hashtable = hashtable
     //var artificialIntelligenceInterface = artificialIntelligenceInterface
     //var ownerLayerInterface = ownerLayerInterface
@@ -63,12 +66,14 @@ export class NumberOnOwnGroupSequenceAIFactory
     var integerArray: Integer[] = NumberInSameGroupSequence.getInstance()!.NUMBER_ON_SAME_TEAM_SEQUENCE;
         
         
-
+;
+    
 
     var list: BasicArrayList = new BasicArrayList();
         
         
-
+;
+    
 
 
 
@@ -83,7 +88,8 @@ index < integerArray!.length; index++)
     var integerCanBeNull: any = {}? = hashtable.get(integerArray[index]! as Object);
         
         
-
+;
+    
 
                         if(integerCanBeNull == 
                                     null
@@ -96,25 +102,34 @@ index < integerArray!.length; index++)
 
                                     }
                                 
-list.add(integerCanBeNull)
+list.add(integerCanBeNull);
+    
 }
 
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("Total AI Properties: ")
-stringBuffer!.appendint(list.size())
-stringBuffer!.append(" == Total AI: ")
-stringBuffer!.appendint(artificialIntelligenceInterface!.length)
-stringBuffer!.append(" + 1")
+;
+    
+stringBuffer!.append("Total AI Properties: ");
+    
+stringBuffer!.appendint(list.size());
+    
+stringBuffer!.append(" == Total AI: ");
+    
+stringBuffer!.appendint(artificialIntelligenceInterface!.length);
+    
+stringBuffer!.append(" + 1");
+    
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE)
+;
+    
+logUtil!.put(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE);
+    
 
                         if(artificialIntelligenceInterface!.length -1 > list.size())
                         
@@ -141,7 +156,8 @@ logUtil!.put(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE)
     var numberOnSameTeam: Integer[] = new Array(list.size());
         
         
-
+;
+    
 
 
 
@@ -152,7 +168,8 @@ logUtil!.put(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE)
         
 index < numberOnSameTeam!.length; index++)
         {
-numberOnSameTeam[index]= list.objectArray[index]! as Integer
+numberOnSameTeam[index]= list.objectArray[index]! as Integer;
+    
 }
 
 

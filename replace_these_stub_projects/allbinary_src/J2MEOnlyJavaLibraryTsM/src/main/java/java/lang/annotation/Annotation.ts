@@ -8,7 +8,7 @@
 interface Annotation {
         
 
-    annotationType(): KClass<*>
+    annotationType(): Function
 
 }
                 

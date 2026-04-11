@@ -33,10 +33,14 @@ export class NoMotionRectangleConstraints extends MotionRectangleConstraints {
 public constructor (){
 
             super();
-            this.setMinDimension(Dimension(0, 0))
-this.setMinArea(0)
-this.setMaxDimension(Dimension(Integer.MAX_VALUE, Integer.MAX_VALUE))
-this.setMaxMotionRectangles(.MAX_VALUE())
+            this.setMinDimension(Dimension(0, 0));
+    
+this.setMinArea(0);
+    
+this.setMaxDimension(Dimension(Integer.MAX_VALUE, Integer.MAX_VALUE));
+    
+this.setMaxMotionRectangles(.MAX_VALUE());
+    
 }
 
 

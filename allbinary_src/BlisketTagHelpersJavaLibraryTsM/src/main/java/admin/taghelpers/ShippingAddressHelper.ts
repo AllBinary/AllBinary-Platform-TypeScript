@@ -81,31 +81,40 @@ export class ShippingAddressHelper extends BasicTable {
     private streetAddress: StreetAddress
 
     private readonly portion: Portion
-public constructor (hashMap: HashMap<Any, Any>, pageContext: PageContext){
+public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
             var hashMap = hashMap
 var pageContext = pageContext
-this.request= pageContext!.getRequest() as HttpServletRequest
-this.weblisketSession= WeblisketSession(hashMap, pageContext)
-this.portion= Portion(hashMap)
-this.getAddressForm()
+this.request= pageContext!.getRequest();
+
+                         as HttpServletRequest;
+    
+this.weblisketSession= WeblisketSession(hashMap, pageContext);
+    
+this.portion= Portion(hashMap);
+    
+this.getAddressForm();
+    
 }
 
 
     getAddressForm(){
-this.userName= request.getParameter(UserData.USERNAME)
+this.userName= request.getParameter(UserData.USERNAME);
+    
 
                         if(this.userName == 
                                     null
                                 )
                         
                                     {
-                                    this.userName= request.getParameter(WeblisketSessionData.REMOVABLEUSERNAME)
+                                    this.userName= request.getParameter(WeblisketSessionData.REMOVABLEUSERNAME);
+    
 
                                     }
                                 
-this.streetAddress= StreetAddress(request)
+this.streetAddress= StreetAddress(request);
+    
 }
 
 
@@ -117,12 +126,14 @@ this.streetAddress= StreetAddress(request)
                             drop()!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put(success, this, commonStrings!.DROP)
+                                    logUtil!.put(success, this, commonStrings!.DROP);
+    
 
                                     }
                                 
@@ -132,18 +143,22 @@ this.streetAddress= StreetAddress(request)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to drop Admin table";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.DROP, e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.DROP, e);
+    
 
                                     }
                                 
@@ -166,12 +181,14 @@ this.streetAddress= StreetAddress(request)
                             createTable()!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put(success, this, "create()")
+                                    logUtil!.put(success, this, "create()");
+    
 
                                     }
                                 
@@ -181,18 +198,22 @@ this.streetAddress= StreetAddress(request)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to create user table";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "create()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "create()", e);
+    
 
                                     }
                                 
@@ -214,17 +235,20 @@ this.streetAddress= StreetAddress(request)
     var success: string = "Restore Successful";
         
         
-
+;
+    
 
     var result: string = AbSqlTableUtil.getInstance()!.restoreTable(ShippingAddressesEntity(StringUtil.getInstance()!.EMPTY_STRING), portion)!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put(success, this, "restore()")
+                                    logUtil!.put(success, this, "restore()");
+    
 
                                     }
                                 
@@ -234,18 +258,22 @@ this.streetAddress= StreetAddress(request)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to restore backup";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "restore()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "restore()", e);
+    
 
                                     }
                                 
@@ -267,17 +295,20 @@ this.streetAddress= StreetAddress(request)
     var success: string = "Backup Successful";
         
         
-
+;
+    
 
     var result: string = AbSqlTableUtil.getInstance()!.backupTable(ShippingAddressesEntity(StringUtil.getInstance()!.EMPTY_STRING))!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put(success, this, "backup()")
+                                    logUtil!.put(success, this, "backup()");
+    
 
                                     }
                                 
@@ -287,18 +318,22 @@ this.streetAddress= StreetAddress(request)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to make backup";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "backup()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "backup()", e);
+    
 
                                     }
                                 
@@ -320,13 +355,16 @@ this.streetAddress= StreetAddress(request)
     var success: string = "Successfully Added Shipping Address";
         
         
-
-ShippingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!.getUserName())!.add(this.streetAddress)
+;
+    
+ShippingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!.getUserName())!.add(this.streetAddress);
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put(success, this, "insert")
+                                    logUtil!.put(success, this, "insert");
+    
 
                                     }
                                 
@@ -336,18 +374,22 @@ ShippingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to add Shipping streetAddress";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "insert", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "insert", e);
+    
 
                                     }
                                 
@@ -369,13 +411,16 @@ ShippingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!
     var success: string = "Successfully Updated Shipping Address";
         
         
-
-ShippingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!.getUserName())!.update(this.streetAddress)
+;
+    
+ShippingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!.getUserName())!.update(this.streetAddress);
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put("Successfull update of a Users Shipping Address table", this, "update()")
+                                    logUtil!.put("Successfull update of a Users Shipping Address table", this, "update()");
+    
 
                                     }
                                 
@@ -385,18 +430,22 @@ ShippingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed update of a Users Shipping Address Table";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "update", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "update", e);
+    
 
                                     }
                                 
@@ -418,14 +467,16 @@ ShippingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!
     var streetAddress: StreetAddress = BillingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!.getUserName())!.getDefault()!;
         
         
-
+;
+    
 
                         if(streetAddress != 
                                     null
                                 )
                         
                                     {
-                                    ShippingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!.getUserName())!.add(streetAddress)
+                                    ShippingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!.getUserName())!.add(streetAddress);
+    
 
                                     }
                                 
@@ -445,18 +496,22 @@ ShippingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return StringUtil.getInstance()!.EMPTY_STRING;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed Setting Shipping address to Billing Address";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "setToBillingAddress()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "setToBillingAddress()", e);
+    
 
                                     }
                                 
@@ -478,13 +533,16 @@ ShippingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!
     var success: string = "Successfully Removed Shipping Address";
         
         
-
-ShippingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!.getUserName())!.remove(Integer(this.streetAddress!.getId()))
+;
+    
+ShippingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!.getUserName())!.remove(Integer(this.streetAddress!.getId()));
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put(success, this, "remove()")
+                                    logUtil!.put(success, this, "remove()");
+    
 
                                     }
                                 
@@ -494,18 +552,22 @@ ShippingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to remove Shipping Address";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "remove()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "remove()", e);
+    
 
                                     }
                                 
@@ -527,13 +589,16 @@ ShippingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!
     var success: string = "Successfully Set Shipping Address";
         
         
-
-ShippingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!.getUserName())!.setDefault(this.streetAddress!.getId())
+;
+    
+ShippingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!.getUserName())!.setDefault(this.streetAddress!.getId());
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put(success, this, "set()")
+                                    logUtil!.put(success, this, "set()");
+    
 
                                     }
                                 
@@ -543,18 +608,22 @@ ShippingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to set Shipping Address";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "set()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "set()", e);
+    
 
                                     }
                                 

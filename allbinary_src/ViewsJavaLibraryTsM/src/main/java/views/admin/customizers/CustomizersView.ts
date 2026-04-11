@@ -18,10 +18,13 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { Arrays } from "../../../java/util/Arrays.js";
 
     
-import { Vector } from "../../../java/util/Vector.js";
+
+//import { Vector } from "../../../java/util/Vector.js";
 
     
 import { TransformInfoEntityBuilder } from "../../../org/allbinary/data/tables/transform/info/TransformInfoEntityBuilder.js";
@@ -99,7 +102,8 @@ public constructor (transformInfoInterface: TransformInfoInterface)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.customizersVector= TransformInfoEntityBuilder.getInstance()!.getNames(this.getWeblisketSession()!.getStoreName())
+this.customizersVector= TransformInfoEntityBuilder.getInstance()!.getNames(this.getWeblisketSession()!.getStoreName());
+    
 }
 
 
@@ -111,17 +115,20 @@ this.customizersVector= TransformInfoEntityBuilder.getInstance()!.getNames(this.
     var node: Node = document.createElement(TransformTemplateCustomizersData.NAME)!;
         
         
-
+;
+    
 
     var unsortedCustomizerViewVector: Vector = new Vector();
         
         
-
+;
+    
 
     var size: number = customizersVector!.length!;
         
         
-
+;
+    
 
 
 
@@ -133,26 +140,34 @@ this.customizersVector= TransformInfoEntityBuilder.getInstance()!.getNames(this.
 index < size; index++)
         {
 
-    var viewName: string = customizersVector!.get(index) as String;
-        
-        
+    var viewName: string = customizersVector!.get(index);
 
+                         as String;
+        
+        
+;
+    
 
                         if(viewName!.indexOf(CustomizerTransformInfoData.NAME) > 0 && viewName!.indexOf(GLOBALS2.EDIT) > 0 && viewName!.indexOf(BodyData.getInstance()!.VIEWNAMEKEY) > 0 && viewName!.indexOf(TitleData.getInstance()!.VIEWNAMEKEY) > 0)
                         
                                     {
-                                    unsortedCustomizerViewVector!.add(viewName)
+                                    unsortedCustomizerViewVector!.add(viewName);
+    
 
                                     }
                                 
 }
 
 
-    var objectArray: any = {}[] = unsortedCustomizerViewVector!.toArray() as Array<Any?>;
-        
-        
+    var objectArray: any[] = unsortedCustomizerViewVector!.toArray();
 
-Arrays.sort(objectArray, StringComparator())
+                         as Array<any?>;
+        
+        
+;
+    
+Arrays.sort(objectArray, StringComparator());
+    
 
 
 
@@ -167,13 +182,16 @@ index < objectArray!.length; index++)
     var viewName: string = objectArray[index]! as String;
         
         
-
+;
+    
 
     var viewNameNode: Node = ModDomHelper.createNameValueNodes(document, TransformTemplateCustomizerData.NAME, viewName, TransformTemplateCustomizerUtil.getInstance()!.getPageNameHack(viewName, this.getWeblisketSession()!.getStoreName()))!;
         
         
-
-node.appendChild(viewNameNode)
+;
+    
+node.appendChild(viewNameNode);
+    
 }
 
 
@@ -182,13 +200,16 @@ node.appendChild(viewNameNode)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return node;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.XSLLOGGINGERROR))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.FAILURE, this, "toXmlNode", e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, "toXmlNode", e);
+    
 
                                     }
                                 
@@ -204,7 +225,8 @@ node.appendChild(viewNameNode)
 
 
     public addDomNodeInterfaces(){
-this.addDomNodeInterface(this as DomNodeInterface)
+this.addDomNodeInterface(this as DomNodeInterface);
+    
 }
 
 
@@ -213,20 +235,26 @@ this.addDomNodeInterface(this as DomNodeInterface)
     public view(): string{
 
         try {
-            this.addDomNodeInterfaces()
+            this.addDomNodeInterfaces();
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.view();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e);
+    
 
                                     }
                                 

@@ -69,7 +69,8 @@ export class InputAutomationRobotBundleActivator
 public constructor (){
 
             super();
-            this.init()
+            this.init();
+    
 }
 
 
@@ -87,7 +88,8 @@ public constructor (){
             
     public registerAsService(bundleContext: BundleContext){
 var bundleContext = bundleContext
-OSGIActivatorUtil.registerAsService(bundleContext, getServiceFactory(), InputAutomationRobotServiceInterface::class.toString()!)
+OSGIActivatorUtil.registerAsService(bundleContext, getServiceFactory(), InputAutomationRobotServiceInterface::class.toString()!);
+    
 }
 
 
@@ -99,7 +101,8 @@ var context = context
     var serviceReference: ServiceReference = context.getServiceReference(InputAutomationRobotChangeListener::class.toString()!)!;
         
         
-
+;
+    
 
                         if(serviceReference != 
                                     null
@@ -107,10 +110,13 @@ var context = context
                         
                                     {
                                     
-    var inputAutomationRobotChangeListener: InputAutomationRobotChangeListener = context.getService(serviceReference) as InputAutomationRobotChangeListener;
-        
-        
+    var inputAutomationRobotChangeListener: InputAutomationRobotChangeListener = context.getService(serviceReference);
 
+                         as InputAutomationRobotChangeListener;
+        
+        
+;
+    
 
                         if(inputAutomationRobotChangeListener == 
                                     null
@@ -127,7 +133,8 @@ var context = context
                                     }
                                 
                         else {
-                            logUtil!.put("No ServiceReference: " +InputAutomationRobotChangeListener::class.toString()!, this, "getInputAutomationRobotChangeListener")
+                            logUtil!.put("No ServiceReference: " +InputAutomationRobotChangeListener::class.toString()!, this, "getInputAutomationRobotChangeListener");
+    
 
 
 
@@ -144,12 +151,14 @@ var context = context
 var context = context
 
         try {
-            logUtil!.put(this.commonStrings!.START, this, "addRobots")
+            logUtil!.put(this.commonStrings!.START, this, "addRobots");
+    
 
     var inputAutomationRobotChangeListener: InputAutomationRobotChangeListener = this.getInputAutomationRobotChangeListener(context)!;
         
         
-
+;
+    
 
                         if(inputAutomationRobotChangeListener != 
                                     null
@@ -170,16 +179,21 @@ index < this.getInputRobotInterface()!.length; index++)
     var inputAutomationRobotChangeEvent: InputAutomationRobotChangeEvent = InputAutomationRobotUtil.getChangeEvent(this.getInputRobotInterface()[index]!)!;
         
         
-
-inputAutomationRobotChangeListener!.onAdd(inputAutomationRobotChangeEvent)
+;
+    
+inputAutomationRobotChangeListener!.onAdd(inputAutomationRobotChangeEvent);
+    
 }
 
 
                                     }
                                 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, this, "addModules")
+logUtil!.put(this.commonStrings!.EXCEPTION, this, "addModules");
+    
 }
 
 }
@@ -189,12 +203,14 @@ logUtil!.put(this.commonStrings!.EXCEPTION, this, "addModules")
 var context = context
 
         try {
-            logUtil!.put(this.commonStrings!.START, this, "removeRobots")
+            logUtil!.put(this.commonStrings!.START, this, "removeRobots");
+    
 
     var inputAutomationRobotChangeListener: InputAutomationRobotChangeListener = this.getInputAutomationRobotChangeListener(context)!;
         
         
-
+;
+    
 
                         if(inputAutomationRobotChangeListener != 
                                     null
@@ -215,16 +231,21 @@ index < this.getInputRobotInterface()!.length; index++)
     var inputAutomationRobotChangeEvent: InputAutomationRobotChangeEvent = InputAutomationRobotUtil.getChangeEvent(this.getInputRobotInterface()[index]!)!;
         
         
-
-inputAutomationRobotChangeListener!.onRemove(inputAutomationRobotChangeEvent)
+;
+    
+inputAutomationRobotChangeListener!.onRemove(inputAutomationRobotChangeEvent);
+    
 }
 
 
                                     }
                                 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, this, "removeRobots")
+logUtil!.put(this.commonStrings!.EXCEPTION, this, "removeRobots");
+    
 }
 
 }
@@ -234,9 +255,12 @@ logUtil!.put(this.commonStrings!.EXCEPTION, this, "removeRobots")
             
     public start(context: BundleContext){
 var context = context
-logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.START)
-this.addRobots(context)
-this.registerAsService(context)
+logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.START);
+    
+this.addRobots(context);
+    
+this.registerAsService(context);
+    
 }
 
 
@@ -244,8 +268,10 @@ this.registerAsService(context)
             
     public stop(context: BundleContext){
 var context = context
-logUtil!.put("Stop", this, this.commonStrings!.START)
-this.removeRobots(context)
+logUtil!.put("Stop", this, this.commonStrings!.START);
+    
+this.removeRobots(context);
+    
 }
 
 
@@ -261,7 +287,8 @@ this.removeRobots(context)
 
     setServiceFactory(serviceObject: ServiceFactory){
 var serviceObject = serviceObject
-this.serviceFactory= serviceObject
+this.serviceFactory= serviceObject;
+    
 }
 
 
@@ -277,7 +304,8 @@ this.serviceFactory= serviceObject
 
     public setInputRobotInterface(inputRobotInterface: InputRobotInterface[]){
 var inputRobotInterface = inputRobotInterface
-this.inputRobotInterface= inputRobotInterface
+this.inputRobotInterface= inputRobotInterface;
+    
 }
 
 

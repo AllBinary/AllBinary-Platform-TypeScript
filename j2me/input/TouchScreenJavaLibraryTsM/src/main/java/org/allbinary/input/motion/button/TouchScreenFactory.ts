@@ -68,16 +68,22 @@ private constructor (){
             super();
             
         try {
-            this.setTouch(true)
-this.setMultiTouch(false)
-} catch(e: Exception)
+            this.setTouch(true);
+    
+this.setMultiTouch(false);
+    
+
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, SINGLETON, commonStrings!.GET_INSTANCE, e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, SINGLETON, commonStrings!.GET_INSTANCE, e);
+    
 }
 
 }
@@ -85,7 +91,8 @@ logUtil!.put(commonStrings!.EXCEPTION, SINGLETON, commonStrings!.GET_INSTANCE, e
 
     public setMultiTouch(multiTouch: boolean){
 var multiTouch = multiTouch
-this.multiTouch= multiTouch
+this.multiTouch= multiTouch;
+    
 }
 
 
@@ -101,7 +108,8 @@ this.multiTouch= multiTouch
 
     public setTouch(touch: boolean){
 var touch = touch
-this.touch= touch
+this.touch= touch;
+    
 }
 
 
@@ -117,7 +125,8 @@ this.touch= touch
 
     public setMultiTouchDistinct(multiTouchDistinct: boolean){
 var multiTouchDistinct = multiTouchDistinct
-this.multiTouchDistinct= multiTouchDistinct
+this.multiTouchDistinct= multiTouchDistinct;
+    
 }
 
 
@@ -133,7 +142,8 @@ this.multiTouchDistinct= multiTouchDistinct
 
     public setTouchScreenType(touchScreenType: TouchScreenType){
 var touchScreenType = touchScreenType
-this.touchScreenType= touchScreenType
+this.touchScreenType= touchScreenType;
+    
 }
 
 
@@ -152,20 +162,31 @@ this.touchScreenType= touchScreenType
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("TouchScreen: ")
-stringBuffer!.appendboolean(this.isTouch())
-stringBuffer!.append(" MultiTouch: ")
-stringBuffer!.appendboolean(this.isMultiTouch())
-stringBuffer!.append(" Distinct MultiTouch: ")
-stringBuffer!.appendboolean(this.isMultiTouchDistinct())
-stringBuffer!.append(" TouchScreenType: ")
-stringBuffer!.append(StringUtil.getInstance()!.toString(this.getTouchScreenType()))
+;
+    
+stringBuffer!.append("TouchScreen: ");
+    
+stringBuffer!.appendboolean(this.isTouch());
+    
+stringBuffer!.append(" MultiTouch: ");
+    
+stringBuffer!.appendboolean(this.isMultiTouch());
+    
+stringBuffer!.append(" Distinct MultiTouch: ");
+    
+stringBuffer!.appendboolean(this.isMultiTouchDistinct());
+    
+stringBuffer!.append(" TouchScreenType: ");
+    
+stringBuffer!.append(StringUtil.getInstance()!.toString(this.getTouchScreenType()));
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

@@ -67,7 +67,8 @@ public constructor (name: string)
             
     public init(level: number){
 var level = level
-this.init(ImageCacheFactory.getInstance(), level)
+this.init(ImageCacheFactory.getInstance(), level);
+    
 }
 
 
@@ -89,7 +90,8 @@ var level = level
 
                                     }
                                 
-super.init(level)
+super.init(level);
+    
 }
 
 
@@ -99,7 +101,8 @@ var level = level
     var resourceLoadingLevelFactory: ResourceLoadingLevelFactory = ResourceLoadingLevelFactory.getInstance()!;
         
         
-
+;
+    
 
                         if(level == resourceLoadingLevelFactory!.LOAD_TOUCH.getLevel())
                         
@@ -119,6 +122,8 @@ var level = level
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.isLoadingLevel(level);
+
+                        ;
     
 
                         }
@@ -128,7 +133,9 @@ var level = level
 
     public isFeature(): boolean{
 
-                        if(!Features.getInstance()!.isDefault(OpenGLFeatureFactory.getInstance()!.OPENGL))
+                        if(!Features.getInstance()!.isDefault(OpenGLFeatureFactory.getInstance()!.OPENGL);
+
+                        )
                         
                                     {
                                     

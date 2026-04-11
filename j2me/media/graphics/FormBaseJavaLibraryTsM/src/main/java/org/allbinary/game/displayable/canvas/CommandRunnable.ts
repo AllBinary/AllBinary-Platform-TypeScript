@@ -56,30 +56,40 @@ public constructor (commandFormInputProcessor: CommandFormInputProcessor, comman
             super();
             var commandFormInputProcessor = commandFormInputProcessor
 var command = command
-this.commandFormInputProcessor= commandFormInputProcessor
-this.command= command
+this.commandFormInputProcessor= commandFormInputProcessor;
+    
+this.command= command;
+    
 }
 
 
     public run(){
 
         try {
-            logUtil!.put(commonStrings!.START_RUNNABLE, this, commonStrings!.RUN)
+            logUtil!.put(commonStrings!.START_RUNNABLE, this, commonStrings!.RUN);
+    
 
     var canvas: MyCanvas = this.commandFormInputProcessor!.getCanvas()!;
         
         
-
+;
+    
 
     var commandListener: CommandListener = canvas.getCustomCommandListener()!;
         
         
+;
+    
+commandListener!.commandAction(command, canvas);
+    
+logUtil!.put(commonStrings!.END_RUNNABLE, this, commonStrings!.RUN);
+    
 
-commandListener!.commandAction(command, canvas)
-logUtil!.put(commonStrings!.END_RUNNABLE, this, commonStrings!.RUN)
-} catch(e: Exception)
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
+    
 }
 
 }

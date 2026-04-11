@@ -72,7 +72,8 @@ var orderReview = orderReview
     var gatewayName: string = orderReview!.getPaymentMethod()!;
         
         
-
+;
+    
 
                         if(gatewayName != 
                                     null
@@ -83,17 +84,20 @@ var orderReview = orderReview
     var paymentType: PaymentType = PaymentTypeUtil.getInstance()!.get(gatewayName)!;
         
         
-
+;
+    
 
     var paymentTransactionInterfaceFactoryInterface: PaymentTransactionInterfaceFactoryInterface = paymentType!.getPaymentTransactionInterfaceFactoryInterface()!;
         
         
-
+;
+    
 
     var paymentTransactionInterface: PaymentTransactionInterface = paymentTransactionInterfaceFactoryInterface!.getInstance(orderReview)!;
         
         
-
+;
+    
 
 
 
@@ -107,7 +111,9 @@ var orderReview = orderReview
 
 
                             throw Error("Failed to create PaymentTransactionInterface: " +"GatewayName is: " +gatewayName)
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PAYMENTERROR))
@@ -117,8 +123,10 @@ var orderReview = orderReview
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put("Failed to generate test data", this, commonStrings!.GET_INSTANCE, e)
+;
+    
+logUtil!.put("Failed to generate test data", this, commonStrings!.GET_INSTANCE, e);
+    
 
                                     }
                                 

@@ -53,35 +53,43 @@ public constructor (anyType: any = {})
 
         try {
             
-    var helperClass: KClass<*> = this.getWorkFlowObject()!.::class!;
+    var helperClass: Function = this.getWorkFlowObject()!.constructor!;
         
         
-
+;
+    
 
     var method: Method = helperClass!.getMethod("getStoreName", 
                             null)!;
         
         
-
+;
+    
 
     var result: string = method.invoke(this.getWorkFlowObject(), 
-                            null) as String;
-        
-        
+                            null);
 
+                         as String;
+        
+        
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Reflection Exception";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
@@ -90,8 +98,10 @@ public constructor (anyType: any = {})
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, "getStoreName()", e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, "getStoreName()", e);
+    
 
                                     }
                                 

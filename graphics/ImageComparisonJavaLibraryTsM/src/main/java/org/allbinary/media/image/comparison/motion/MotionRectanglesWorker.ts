@@ -18,7 +18,10 @@
 
 
 
-import { Vector } from "../../../../../../java/util/Vector.js";
+            import Vector from "@ohos.util.Vector";
+        
+
+//import { Vector } from "../../../../../../java/util/Vector.js";
 
     
 import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
@@ -74,20 +77,24 @@ public constructor (motionRectangleConstraintsInterface: MotionRectangleConstrai
 
             super();
                 //var motionRectangleConstraintsInterface = motionRectangleConstraintsInterface
-this.motionRectangleConstraintsInterface= motionRectangleConstraintsInterface
+this.motionRectangleConstraintsInterface= motionRectangleConstraintsInterface;
+    
 }
 
 
     public onImageComparisonResultsEvent(imageComparisonResultsEvent: ImageComparisonResultsEvent){
     //var imageComparisonResultsEvent = imageComparisonResultsEvent
-this.imageComparisonInfoVector!.add(imageComparisonResultsEvent)
-this.run()
+this.imageComparisonInfoVector!.add(imageComparisonResultsEvent);
+    
+this.run();
+    
 }
 
 
     public onEvent(allBinaryEventObject: AllBinaryEventObject){
     //var allBinaryEventObject = allBinaryEventObject
-this.onImageComparisonResultsEvent(allBinaryEventObject as ImageComparisonResultsEvent)
+this.onImageComparisonResultsEvent(allBinaryEventObject as ImageComparisonResultsEvent);
+    
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
@@ -105,60 +112,88 @@ this.onImageComparisonResultsEvent(allBinaryEventObject as ImageComparisonResult
 
     public setRunning(running: boolean){
     //var running = running
-this.running= running
+this.running= running;
+    
 }
 
 
     public run(){
 
         try {
-            logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.RUN)
-this.setRunning(true)
+            logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.RUN);
+    
+this.setRunning(true);
+    
 
     var timeHelper: TimeDelayHelper = new TimeDelayHelper(1000);
         
         
+;
+    
+timeHelper!.setStartTime();
+    
 
-timeHelper!.setStartTime()
+    var imageComparisonResultsEvent: ImageComparisonResultsEvent = this.imageComparisonInfoVector!.get(0);
 
-    var imageComparisonResultsEvent: ImageComparisonResultsEvent = this.imageComparisonInfoVector!.get(0) as ImageComparisonResultsEvent;
+                         as ImageComparisonResultsEvent;
         
         
+;
+    
 
+    var imageComparisonInfo: ImageComparisonResult = imageComparisonResultsEvent!.getImageComparisonResult();
 
-    var imageComparisonInfo: ImageComparisonResult = imageComparisonResultsEvent!.getImageComparisonResult() as ImageComparisonResult;
+                         as ImageComparisonResult;
         
         
-
-logUtil!.put(imageComparisonInfo!.toString(), this, this.commonStrings!.RUN)
+;
+    
+logUtil!.put(imageComparisonInfo!.toString(), this, this.commonStrings!.RUN);
+    
 
     var allMotionRectangles: AllMotionRectangles = new AllMotionRectangles(imageComparisonInfo);
         
         
-
-AllMotionRectanglesResultsCacheSingleton.getInstance()!.add(MotionRectanglesResultsFrameCacheable(allMotionRectangles, imageComparisonInfo!.getFrameTwo()))
+;
+    
+AllMotionRectanglesResultsCacheSingleton.getInstance()!.add(MotionRectanglesResultsFrameCacheable(allMotionRectangles, imageComparisonInfo!.getFrameTwo()));
+    
 
     var consolidatedMotionRectangles: ConsolidateMotionRectangles = new ConsolidateMotionRectangles(allMotionRectangles);
         
         
-
-ConsolidatedMotionRectanglesResultsCacheSingleton.getInstance()!.add(MotionRectanglesResultsFrameCacheable(consolidatedMotionRectangles, imageComparisonInfo!.getFrameTwo()))
+;
+    
+ConsolidatedMotionRectanglesResultsCacheSingleton.getInstance()!.add(MotionRectanglesResultsFrameCacheable(consolidatedMotionRectangles, imageComparisonInfo!.getFrameTwo()));
+    
 
     var constrainedMotionRectangles: ConstrainedMotionRectangles = new ConstrainedMotionRectangles(this.motionRectangleConstraintsInterface, consolidatedMotionRectangles);
         
         
+;
+    
+constrainedMotionRectangles!.applyMotionRectangleConstraints(consolidatedMotionRectangles);
+    
+ConstrainedMotionRectanglesResultsCacheSingleton.getInstance()!.add(MotionRectanglesResultsFrameCacheable(constrainedMotionRectangles, imageComparisonInfo!.getFrameTwo()));
+    
+this.fireEvent(MotionRectanglesResultsEvent(this, imageComparisonInfo!.getFrameTwo(), constrainedMotionRectangles as MotionRectangles));
+    
+this.imageComparisonInfoVector!.remove(imageComparisonResultsEvent);
+    
+this.index++;
+    
+logUtil!.put(CommonLabels.getInstance()!.ELAPSED +timeHelper!.getElapsed(), this, this.commonStrings!.RUN);
+    
+this.setRunning(false);
+    
+logUtil!.put(this.commonStrings!.END, this, this.commonStrings!.RUN);
+    
 
-constrainedMotionRectangles!.applyMotionRectangleConstraints(consolidatedMotionRectangles)
-ConstrainedMotionRectanglesResultsCacheSingleton.getInstance()!.add(MotionRectanglesResultsFrameCacheable(constrainedMotionRectangles, imageComparisonInfo!.getFrameTwo()))
-this.fireEvent(MotionRectanglesResultsEvent(this, imageComparisonInfo!.getFrameTwo(), constrainedMotionRectangles as MotionRectangles))
-this.imageComparisonInfoVector!.remove(imageComparisonResultsEvent)
-this.index++
-logUtil!.put(CommonLabels.getInstance()!.ELAPSED +timeHelper!.getElapsed(), this, this.commonStrings!.RUN)
-this.setRunning(false)
-logUtil!.put(this.commonStrings!.END, this, this.commonStrings!.RUN)
-} catch(e: Exception)
+                //: 
+} catch(e) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e)
+logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e);
+    
 }
 
 }

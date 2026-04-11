@@ -73,24 +73,34 @@ private constructor (){
 var columns = columns
 var rows = rows
 this.cellPositionArray= Array(columns) { arrayOfNulls<CellPosition?>(rows) }
-                                                            
-this.columns= columns
-this.rows= rows
+                                                            ;
+    
+this.columns= columns;
+    
+this.rows= rows;
+    
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
+;
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("Init: columns: ")
-stringBuffer!.appendint(columns)
-stringBuffer!.append(" rows: ")
-stringBuffer!.appendint(rows)
-logUtil!.put(stringBuffer!.toString(), this, commonStrings!.INIT)
+;
+    
+stringBuffer!.append("Init: columns: ");
+    
+stringBuffer!.appendint(columns);
+    
+stringBuffer!.append(" rows: ");
+    
+stringBuffer!.appendint(rows);
+    
+logUtil!.put(stringBuffer!.toString(), this, commonStrings!.INIT);
+    
 
 
 
@@ -111,7 +121,8 @@ column < columns; column++)
         
 row < rows; row++)
         {
-this.createInstance(column, row)
+this.createInstance(column, row);
+    
 }
 
 }
@@ -130,15 +141,19 @@ var i_row = i_row
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return cellPositionArray[i_column]![i_row]!;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
+;
+    
 logUtil!.put(StringMaker().
-                            append("columns: ")!.appendint(this.getColumns())!.append(" rows: ")!.appendint(this.getRows())!.append(" col: ")!.appendint(i_column)!.append(" row: ")!.appendint(i_row)!.toString(), this, commonStrings!.GET_INSTANCE, e)
+                            append("columns: ")!.appendint(this.getColumns())!.append(" rows: ")!.appendint(this.getRows())!.append(" col: ")!.appendint(i_column)!.append(" row: ")!.appendint(i_row)!.toString(), this, commonStrings!.GET_INSTANCE, e);
+    
 
 
 
@@ -157,15 +172,18 @@ var i_row = i_row
     var cellPositionCanBeNull: CellPosition? = cellPositionArray[i_column]![i_row];
         
         
-
+;
+    
 
                         if(cellPositionCanBeNull == 
                                     null
                                 )
                         
                                     {
-                                    cellPositionCanBeNull= CellPosition(i_column, i_row, this.columns, this.rows)
-cellPositionArray[i_column]![i_row]= cellPositionCanBeNull
+                                    cellPositionCanBeNull= CellPosition(i_column, i_row, this.columns, this.rows);
+    
+cellPositionArray[i_column]![i_row]= cellPositionCanBeNull;
+    
 
                                     }
                                 

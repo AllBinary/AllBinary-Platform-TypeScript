@@ -53,7 +53,8 @@ public constructor ()
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setTable(tableName)
+this.setTable(tableName);
+    
 }
 
 
@@ -62,16 +63,19 @@ this.setTable(tableName)
     public getStoreFrontInterface(name: string): BasicStoreFrontInterface{
 var name = name
 
-    var keysAndValues: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();
         
         
+;
+    
+keysAndValues!.put(StoreFrontData.getInstance()!.NAME, name);
+    
 
-keysAndValues!.put(StoreFrontData.getInstance()!.NAME, name)
-
-    var storeHashMap: HashMap<Any, Any> = super.getRow(keysAndValues)!;
+    var storeHashMap: HashMap<any, any> = super.getRow(keysAndValues)!;
         
         
-
+;
+    
 
                         if(storeHashMap == 
                                     null
@@ -82,7 +86,8 @@ keysAndValues!.put(StoreFrontData.getInstance()!.NAME, name)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.FACTORYERROR))
                         
                                     {
-                                    logUtil!.put("StoreFront: " +storeHashMap!.toString(), this, "getStore()")
+                                    logUtil!.put("StoreFront: " +storeHashMap!.toString(), this, "getStore()");
+    
 
                                     }
                                 

@@ -38,14 +38,15 @@ export class BaseSoundsFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new Array(0);
+                        return [];
     
 }
 
 
     public setInitialized(initialized: boolean){
 var initialized = initialized
-this.initialized= initialized
+this.initialized= initialized;
+    
 }
 
 

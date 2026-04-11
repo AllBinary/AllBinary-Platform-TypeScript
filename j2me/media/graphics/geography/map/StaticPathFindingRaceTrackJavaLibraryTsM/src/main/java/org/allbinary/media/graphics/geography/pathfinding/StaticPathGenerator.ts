@@ -76,7 +76,8 @@ export class StaticPathGenerator
 protected constructor (){
 
             super();
-            PreLogUtil.put("Using Static Path Finding", this, CommonStrings.getInstance()!.CONSTRUCTOR)
+            PreLogUtil.put("Using Static Path Finding", this, CommonStrings.getInstance()!.CONSTRUCTOR);
+    
 }
 
 
@@ -97,18 +98,22 @@ protected constructor (){
     var list: BasicArrayList = new BasicArrayList();
         
         
-
+;
+    
 
     var size: number = pathList!.size()!;
         
         
-
+;
+    
 
     var basicGeographicMapCellPosition: CellPosition
-
+;
+    
 
     var geographicMapCellPosition: GeographicMapCellPosition
-
+;
+    
 
 
 
@@ -119,9 +124,14 @@ protected constructor (){
         
 index < size; index++)
         {
-basicGeographicMapCellPosition= pathList!.get(index) as CellPosition
-geographicMapCellPosition= geographicMapCellPositionFactory!.getInstance(basicGeographicMapCellPosition!.getColumn(), basicGeographicMapCellPosition!.getRow())
-list.add(geographicMapCellPosition)
+basicGeographicMapCellPosition= pathList!.get(index);
+
+                         as CellPosition;
+    
+geographicMapCellPosition= geographicMapCellPositionFactory!.getInstance(basicGeographicMapCellPosition!.getColumn(), basicGeographicMapCellPosition!.getRow());
+    
+list.add(geographicMapCellPosition);
+    
 }
 
 
@@ -144,57 +154,68 @@ list.add(geographicMapCellPosition)
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
+;
+    
 
         try {
             
     var pathCacheFactory: PathCacheFactory = PathCacheFactory.getInstance()!;
         
         
-
+;
+    
 
     var mapIdInteger: Integer = geographicMapInterface!.getAllBinaryTiledLayer()!.getDataId()!;
         
         
-
+;
+    
 
     var list: BasicArrayList = pathCacheFactory!.getInstance(mapIdInteger)!;
         
         
-
+;
+    
 
                         if(list == basicArrayListUtil!.getImmutableInstance())
                         
                                     {
-                                    list= BasicArrayList()
+                                    list= BasicArrayList();
+    
 
     var smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;
         
         
-
+;
+    
 
     var geographicMapCellPositionFactory: BasicGeographicMapCellPositionFactory = geographicMapInterface!.getGeographicMapCellPositionFactory()!;
         
         
-
+;
+    
 
     var id: number = PathData.getInstance()!.OFFSET +mapIdInteger!.toInt();
         
         
-
+;
+    
 
     var basicList: BasicArrayList = pathCacheFactory!.getInstance(smallIntegerSingletonFactory!.getInstance(id))!;
         
         
-
+;
+    
 
     var size: number = basicList!.size()!;
         
         
-
+;
+    
 
     var pathList: BasicArrayList
-
+;
+    
 
 
 
@@ -205,26 +226,36 @@ list.add(geographicMapCellPosition)
         
 index < size; index++)
         {
-pathList= this.getGeographicMapCellPositionListFromBasicGeographicMapCellPositionList(geographicMapCellPositionFactory, basicList!.get(index) as BasicArrayList)
-list.add(pathList)
+pathList= this.getGeographicMapCellPositionListFromBasicGeographicMapCellPositionList(geographicMapCellPositionFactory, basicList!.get(index);
+
+                         as BasicArrayList);
+    
+list.add(pathList);
+    
 }
 
-pathCacheFactory!.add(mapIdInteger, list)
-pathCacheFactory!.remove(smallIntegerSingletonFactory!.getInstance(id))
+pathCacheFactory!.add(mapIdInteger, list);
+    
+pathCacheFactory!.remove(smallIntegerSingletonFactory!.getInstance(id));
+    
 
                                     }
                                 
 logUtil!.put(StringMaker().
-                            append("Using Cached Path(s): ")!.append(StringUtil.getInstance()!.toString(list))!.toString(), this, commonStrings!.GET_INSTANCE)
+                            append("Using Cached Path(s): ")!.append(StringUtil.getInstance()!.toString(list))!.toString(), this, commonStrings!.GET_INSTANCE);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return list;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e);
+    
 
 
 

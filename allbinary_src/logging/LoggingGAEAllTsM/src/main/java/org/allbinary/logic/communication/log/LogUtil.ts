@@ -69,23 +69,28 @@ private constructor (){
     var specialMessage: string = log.getSpecialMessage()!;
         
         
-
+;
+    
 
     var anyType: any = {} = log.getObject()!;
         
         
-
+;
+    
 
     var functionName: string = log.getFunctionName()!;
         
         
-
+;
+    
 
     var exception: any = {} = log.getThrowable()!;
         
         
-
-this.put(specialMessage, anyType, functionName, exception)
+;
+    
+this.put(specialMessage, anyType, functionName, exception);
+    
 }
 
 
@@ -93,7 +98,8 @@ this.put(specialMessage, anyType, functionName, exception)
     //var specialMessage = specialMessage
     //var anyType = anyType
     //var functionName = functionName
-this.put(specialMessage, anyType, functionName, NullUtil.getInstance()!.NULL_OBJECT)
+this.put(specialMessage, anyType, functionName, NullUtil.getInstance()!.NULL_OBJECT);
+    
 }
 
 
@@ -108,19 +114,22 @@ this.put(specialMessage, anyType, functionName, NullUtil.getInstance()!.NULL_OBJ
     var className: string = CommonStrings.getInstance()!.EMPTY;
         
         
+;
+    
 
-
-    var clazz: KClass<*> = anyType!::class!;
+    var clazz: Function = anyType!constructor!;
         
         
-
+;
+    
 
                         if(clazz.toString()! != 
                                     null
                                 )
                         
                                     {
-                                    className= clazz.toString()!
+                                    className= clazz.toString()!;
+    
 
                                     }
                                 
@@ -128,23 +137,28 @@ this.put(specialMessage, anyType, functionName, NullUtil.getInstance()!.NULL_OBJ
     var message: string = logFormatUtil!.getS(className, functionName, specialMessage)!;
         
         
-
+;
+    
 
                         if(exception != 
                                     null
                                 )
                         
                                     {
-                                    logger.log(Level.SEVERE, message, exception)
+                                    logger.log(Level.SEVERE, message, exception);
+    
 
                                     }
                                 
                         else {
-                            logger.log(Level.INFO, message)
+                            logger.log(Level.INFO, message);
+    
 
                         }
                             
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 }
 

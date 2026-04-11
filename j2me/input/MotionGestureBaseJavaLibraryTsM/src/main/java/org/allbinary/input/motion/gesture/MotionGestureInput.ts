@@ -42,8 +42,10 @@ var name = name
     var inputFactory: InputFactory = InputFactory.getInstance()!;
         
         
-
-inputFactory!.add(this.getId(), this)
+;
+    
+inputFactory!.add(this.getId(), this);
+    
 }
 
 

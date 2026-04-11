@@ -84,12 +84,15 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("View Name: " +transformInfoInterface!.getName(), this, "CustomUriTransformView()")
+                                    logUtil!.put("View Name: " +transformInfoInterface!.getName(), this, "CustomUriTransformView()");
+    
 
                                     }
                                 
-this.setTransformInfoInterface(transformInfoInterface)
-this.setTransformDocumentInterface(TransformDocumentFactory.getInstance())
+this.setTransformInfoInterface(transformInfoInterface);
+    
+this.setTransformDocumentInterface(TransformDocumentFactory.getInstance());
+    
 }
 
 
@@ -119,7 +122,8 @@ this.setTransformDocumentInterface(TransformDocumentFactory.getInstance())
 
     public setTransformInfoInterface(transformInfoInterface: TransformInfoInterface){
 var transformInfoInterface = transformInfoInterface
-this.transformInfoInterface= transformInfoInterface
+this.transformInfoInterface= transformInfoInterface;
+    
 }
 
 
@@ -135,7 +139,8 @@ this.transformInfoInterface= transformInfoInterface
 
     public setTransformDocumentInterface(transformDocumentInterface: TransformDocumentInterface){
 var transformDocumentInterface = transformDocumentInterface
-this.transformDocumentInterface= transformDocumentInterface
+this.transformDocumentInterface= transformDocumentInterface;
+    
 }
 
 
@@ -145,6 +150,8 @@ this.transformDocumentInterface= transformDocumentInterface
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.transformDocumentInterface!.getDoc();
+
+                        ;
     
 }
 
@@ -156,19 +163,22 @@ this.transformDocumentInterface= transformDocumentInterface
     var document: Document = this.getTransformInfoInterface()!.getDataDocument()!;
         
         
-
+;
+    
 
     var dataNode: Node = this.getTransformDocumentInterface()!.getDoc()!.importNode(document.getFirstChild(), true)!;
         
         
-
+;
+    
 
                         if(dataNode != 
                                     null
                                 )
                         
                                     {
-                                    this.getTransformDocumentInterface()!.getBaseNode()!.appendChild(dataNode)
+                                    this.getTransformDocumentInterface()!.getBaseNode()!.appendChild(dataNode);
+    
 
                                     }
                                 
@@ -177,6 +187,8 @@ this.transformDocumentInterface= transformDocumentInterface
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getTransformDocumentInterface()!.getDoc();
+
+                        ;
     
 }
 
@@ -190,26 +202,31 @@ this.transformDocumentInterface= transformDocumentInterface
     var success: string = DomDocumentHelper.toString(this.getDoc())!;
         
         
-
+;
+    
 
     var result: string = TransformInfoCustomUriTransformer(this.abeClientInformation, this.getTransformInfoInterface()).
                             translate(success)!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e);
+    
 
                                     }
                                 

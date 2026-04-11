@@ -66,12 +66,17 @@ var string = string
 var seconds = seconds
 var basicColor = basicColor
 
-                        if(!this.stringList!.contains(string))
+                        if(!this.stringList!.contains(string);
+
+                        )
                         
                                     {
-                                    this.stringList!.add(string)
-this.timeList!.add(seconds)
-this.colorList!.add(basicColor)
+                                    this.stringList!.add(string);
+    
+this.timeList!.add(seconds);
+    
+this.colorList!.add(basicColor);
+    
 
                                     }
                                 
@@ -79,9 +84,12 @@ this.colorList!.add(basicColor)
 
 
     public clear(){
-this.stringList!.clear()
-this.timeList!.clear()
-this.colorList!.clear()
+this.stringList!.clear();
+    
+this.timeList!.clear();
+    
+this.colorList!.clear();
+    
 }
 
 
@@ -91,6 +99,8 @@ this.colorList!.clear()
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.stringList!.size();
+
+                        ;
     
 }
 

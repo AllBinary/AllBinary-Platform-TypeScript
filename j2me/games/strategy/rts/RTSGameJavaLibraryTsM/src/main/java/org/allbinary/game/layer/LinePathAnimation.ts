@@ -52,7 +52,8 @@ export class LinePathAnimation
     //var point = point
     //var nextPoint = nextPoint
     //var tiledLayer = tiledLayer
-graphics.drawLine(nextPoint!.getX(), nextPoint!.getY(), point.getX(), point.getY())
+graphics.drawLine(nextPoint!.getX(), nextPoint!.getY(), point.getX(), point.getY());
+    
 }
 
 

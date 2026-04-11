@@ -62,6 +62,8 @@ public constructor (categoryPropertiesInterface: CategoryPropertiesInterface)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.categoryPropertiesInterface!.isValid();
+
+                        ;
     
 }
 
@@ -75,21 +77,28 @@ public constructor (categoryPropertiesInterface: CategoryPropertiesInterface)
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(this.categoryPropertiesInterface!.validationInfo())
+;
+    
+stringBuffer!.append(this.categoryPropertiesInterface!.validationInfo());
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("Failed to generate validation info error", this, "validationInfo()", e)
+                                    logUtil!.put("Failed to generate validation info error", this, "validationInfo()", e);
+    
 
                                     }
                                 

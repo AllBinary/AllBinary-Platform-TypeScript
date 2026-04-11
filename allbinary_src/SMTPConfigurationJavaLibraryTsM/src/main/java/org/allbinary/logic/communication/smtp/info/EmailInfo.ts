@@ -51,14 +51,17 @@ public constructor (basicEmailInfo: BasicEmailInfo){
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
+;
+    
+logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
+    
 
                                     }
                                 
 this.init(basicEmailInfo, 
                             null, 
-                            null)
+                            null);
+    
 }
 
 public constructor (basicEmailInfo: BasicEmailInfo, htmlAttachment: string, contentBase: string){
@@ -75,14 +78,17 @@ var contentBase = contentBase
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
+;
+    
+logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
+    
 
                                     }
                                 
 this.init(basicEmailInfo, 
                             null, 
-                            null)
+                            null);
+    
 }
 
 
@@ -90,9 +96,12 @@ this.init(basicEmailInfo,
 var basicEmailInfo = basicEmailInfo
 var htmlAttachment = htmlAttachment
 var contentBase = contentBase
-this.basicEmailInfo= basicEmailInfo
-this.htmlAttachment= htmlAttachment
-this.contentBase= contentBase
+this.basicEmailInfo= basicEmailInfo;
+    
+this.htmlAttachment= htmlAttachment;
+    
+this.contentBase= contentBase;
+    
 }
 
 

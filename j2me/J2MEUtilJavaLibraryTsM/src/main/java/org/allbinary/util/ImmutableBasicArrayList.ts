@@ -37,13 +37,15 @@ public constructor (name: string, size: number)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.name= name
+this.name= name;
+    
 }
 
 
     public add(e: any = {}): boolean{
 var e = e
-ForcedLogUtil.log(this.name, this)
+ForcedLogUtil.log(this.name, this);
+    
 
 
 
@@ -56,7 +58,8 @@ ForcedLogUtil.log(this.name, this)
     public add(index: number, element: any = {}){
 var index = index
 var element = element
-ForcedLogUtil.log(this.name, this)
+ForcedLogUtil.log(this.name, this);
+    
 }
 
 

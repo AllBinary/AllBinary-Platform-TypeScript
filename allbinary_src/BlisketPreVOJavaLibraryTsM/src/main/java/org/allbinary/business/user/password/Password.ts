@@ -18,13 +18,16 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { HashMap } from "../../../../../java/util/HashMap.js";
 
     
 import { Random } from "../../../../../java/util/Random.js";
 
     
-import { Vector } from "../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../java/util/Vector.js";
 
     
 import { EntryData } from "../../../../../org/allbinary/business/entry/EntryData.js";
@@ -63,13 +66,15 @@ public constructor (password: string){
 
             super();
             var password = password
-this.password= password
+this.password= password;
+    
 }
 
 
     public set(value: string){
 var value = value
-this.password= value
+this.password= value;
+    
 }
 
 
@@ -88,35 +93,42 @@ this.password= value
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
+;
+    
 
         try {
             
     var valid: Boolean = Boolean.TRUE;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VALIDATION))
                         
                                     {
-                                    logUtil!.put("Password: " +this.password, this, commonStrings!.IS_VALID)
+                                    logUtil!.put("Password: " +this.password, this, commonStrings!.IS_VALID);
+    
 
                                     }
                                 
 
-                        if(!StringValidationUtil.getInstance()!.isValidRequired(this.password, 6, UserData.MAXLEN))
+                        if(!StringValidationUtil.getInstance()!.isValidRequired(this.password, 6, UserData.MAXLEN);
+
+                        )
                         
                                     {
                                     
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VALIDATION))
                         
                                     {
-                                    logUtil!.put("Password is invalid", this, commonStrings!.IS_VALID)
+                                    logUtil!.put("Password is invalid", this, commonStrings!.IS_VALID);
+    
 
                                     }
                                 
-valid= Boolean.FALSE
+valid= Boolean.FALSE;
+    
 
                                     }
                                 
@@ -126,13 +138,16 @@ valid= Boolean.FALSE
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return valid;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VALIDATIONERROR))
                         
                                     {
-                                    logUtil!.put("Failed to validate form", "Password", commonStrings!.IS_VALID, e)
+                                    logUtil!.put("Failed to validate form", "Password", commonStrings!.IS_VALID, e);
+    
 
                                     }
                                 
@@ -149,7 +164,9 @@ valid= Boolean.FALSE
 
     public getValidationInfo(): string{
 
-                        if(!StringValidationUtil.getInstance()!.isValidRequired(this.password, 6, UserData.MAXLEN))
+                        if(!StringValidationUtil.getInstance()!.isValidRequired(this.password, 6, UserData.MAXLEN);
+
+                        )
                         
                                     {
                                     
@@ -165,7 +182,8 @@ valid= Boolean.FALSE
     var stringUtil: StringUtil = StringUtil.getInstance()!;
         
         
-
+;
+    
 
 
 
@@ -177,23 +195,29 @@ valid= Boolean.FALSE
 
     public toVector(secret: string): Vector{
 var secret = secret
-this.password= StringUtil.getInstance()!.getInstance(this.password)
+this.password= StringUtil.getInstance()!.getInstance(this.password);
+    
 
     var random: number = Random().
                             nextInt(SuperCrypt.KEYMAX)!;
         
         
-
+;
+    
 
     var vector: Vector = new Vector();
         
         
-
+;
+    
 vector.add(Integer(random).
-                            toString())
-vector.add(secret)
+                            toString());
+    
+vector.add(secret);
+    
 vector.add(SuperCrypt(random).
-                            encrypt(password))
+                            encrypt(password));
+    
 
 
 
@@ -203,25 +227,31 @@ vector.add(SuperCrypt(random).
 }
 
 
-    public toHashMap(secret: string): HashMap<Any, Any>{
+    public toHashMap(secret: string): HashMap<any, any>{
 var secret = secret
-this.password= StringUtil.getInstance()!.getInstance(this.password)
+this.password= StringUtil.getInstance()!.getInstance(this.password);
+    
 
-    var values: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var values: HashMap<any, any> = new HashMap<any, any>();
         
         
-
+;
+    
 
     var random: number = Random().
                             nextInt(SuperCrypt.KEYMAX)!;
         
         
-
+;
+    
 values.put(EntryData.getInstance()!.ENCRYPTION, Integer(random).
-                            toString())
-values.put(UserData.SECRET, secret)
+                            toString());
+    
+values.put(UserData.SECRET, secret);
+    
 values.put(UserData.PASSWORD, SuperCrypt(random).
-                            encrypt(this.password))
+                            encrypt(this.password));
+    
 
 
 

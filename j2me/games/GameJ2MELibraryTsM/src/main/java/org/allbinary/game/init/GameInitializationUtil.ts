@@ -76,7 +76,8 @@ export class GameInitializationUtil
     var mainFeatureFactory: MainFeatureFactory = MainFeatureFactory.getInstance()!;
         
         
-
+;
+    
 
                         if(ChangedGameFeatureListener.getInstance()!.isChanged(mainFeatureFactory!.STATIC))
                         
@@ -85,17 +86,20 @@ export class GameInitializationUtil
     var gameInitializationInterface: GameInitializationInterface = gameInitializationInterfaceFactoryInterface!.getInstance()!;
         
         
-
+;
+    
 
     var features: Features = Features.getInstance()!;
         
         
-
+;
+    
 
                         if(features.isFeature(mainFeatureFactory!.LOAD_ALL))
                         
                                     {
-                                    this.initGame(abeClientInformation, canvas, gameInitializationInterfaceFactoryInterface)
+                                    this.initGame(abeClientInformation, canvas, gameInitializationInterfaceFactoryInterface);
+    
 
                                     }
                                 
@@ -107,9 +111,12 @@ export class GameInitializationUtil
     var resourceLoadingLevelFactory: ResourceLoadingLevelFactory = ResourceLoadingLevelFactory.getInstance()!;
         
         
-
-gameInitializationInterface!.init(abeClientInformation, canvas.getCustomCommandListener(), resourceLoadingLevelFactory!.LOAD_EARLY.getLevel())
-this.EVENT.setResourceLoadingLevel(resourceLoadingLevelFactory!.LOAD_EARLY)
+;
+    
+gameInitializationInterface!.init(abeClientInformation, canvas.getCustomCommandListener(), resourceLoadingLevelFactory!.LOAD_EARLY.getLevel());
+    
+this.EVENT.setResourceLoadingLevel(resourceLoadingLevelFactory!.LOAD_EARLY);
+    
 
                                     }
                                 
@@ -121,7 +128,8 @@ this.EVENT.setResourceLoadingLevel(resourceLoadingLevelFactory!.LOAD_EARLY)
 
                         }
                             
-GameInitializedEventHandler.getInstance()!.fireEvent(EVENT)
+GameInitializedEventHandler.getInstance()!.fireEvent(EVENT);
+    
 
                                     }
                                 
@@ -142,16 +150,22 @@ GameInitializedEventHandler.getInstance()!.fireEvent(EVENT)
     var gameInitializationInterface: GameInitializationInterface = gameInitializationInterfaceFactoryInterface!.getInstance()!;
         
         
-
+;
+    
 
     var resourceLoadingLevelFactory: ResourceLoadingLevelFactory = ResourceLoadingLevelFactory.getInstance()!;
         
         
-
-gameInitializationInterface!.init(abeClientInformation, canvas.getCustomCommandListener(), resourceLoadingLevelFactory!.LOAD_ALL.getLevel())
-this.EVENT.setResourceLoadingLevel(resourceLoadingLevelFactory!.LOAD_ALL)
-GameInitializedEventHandler.getInstance()!.fireEvent(EVENT)
-ChangedGameFeatureListener.getInstance()!.remove(MainFeatureFactory.getInstance()!.STATIC)
+;
+    
+gameInitializationInterface!.init(abeClientInformation, canvas.getCustomCommandListener(), resourceLoadingLevelFactory!.LOAD_ALL.getLevel());
+    
+this.EVENT.setResourceLoadingLevel(resourceLoadingLevelFactory!.LOAD_ALL);
+    
+GameInitializedEventHandler.getInstance()!.fireEvent(EVENT);
+    
+ChangedGameFeatureListener.getInstance()!.remove(MainFeatureFactory.getInstance()!.STATIC);
+    
 
                                     }
                                 

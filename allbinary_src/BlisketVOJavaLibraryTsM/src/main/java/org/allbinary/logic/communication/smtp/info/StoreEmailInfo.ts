@@ -62,13 +62,17 @@ var textBody = textBody
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
+;
+    
+logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
+    
 
                                     }
                                 
-this.storeFrontInterface= storeFrontInterface
-this.init()
+this.storeFrontInterface= storeFrontInterface;
+    
+this.init();
+    
 }
 
 
@@ -79,13 +83,16 @@ this.init()
     var contextConfigurationInterface: ContextConfigurationInterface = storeFrontInterface!.getContextConfigurationInterface()!;
         
         
-
+;
+    
 
     var emailServerConfigurationInterface: EmailServerConfigurationInterface = contextConfigurationInterface!.getEmailServerConfigurationInterface()!;
         
         
-
-this.setEmailServerConfigurationInterface(emailServerConfigurationInterface)
+;
+    
+this.setEmailServerConfigurationInterface(emailServerConfigurationInterface);
+    
 }
 
 

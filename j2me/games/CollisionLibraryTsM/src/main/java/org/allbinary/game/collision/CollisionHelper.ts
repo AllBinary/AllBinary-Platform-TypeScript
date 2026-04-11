@@ -35,7 +35,8 @@ public constructor (sourceLayerInterface: AllBinaryLayer){
 
             super();
             var sourceLayerInterface = sourceLayerInterface
-this.sourceLayerInterface= sourceLayerInterface
+this.sourceLayerInterface= sourceLayerInterface;
+    
 }
 
 
@@ -62,7 +63,8 @@ var layerInterface = layerInterface
 
     public setOwnerLayerInterface(sourceLayerInterface: AllBinaryLayer){
 var sourceLayerInterface = sourceLayerInterface
-this.sourceLayerInterface= sourceLayerInterface
+this.sourceLayerInterface= sourceLayerInterface;
+    
 }
 
 

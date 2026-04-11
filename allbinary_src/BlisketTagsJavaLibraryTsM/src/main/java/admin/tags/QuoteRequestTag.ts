@@ -54,14 +54,17 @@ export class QuoteRequestTag extends TableTag {
 public constructor (){
 
             super();
-            this.setTagHelperFactory(QuoteHelperFactory())
-this.setTagRequestHelperFactory(QuoteRequestHelperFactory())
+            this.setTagHelperFactory(QuoteHelperFactory());
+    
+this.setTagRequestHelperFactory(QuoteRequestHelperFactory());
+    
 }
 
 
     public setStoreName(storeName: string){
 var storeName = storeName
-this.storeName= storeName
+this.storeName= storeName;
+    
 }
 
 
@@ -75,49 +78,61 @@ this.storeName= storeName
                             getInstance(this.getPropertiesHashMap(), pageContext)!;
         
         
+;
+    
 
-
-    var helperClass: KClass<*> = anyType!::class!;
+    var helperClass: Function = anyType!constructor!;
         
         
-
+;
+    
 
     var method: Method = helperClass!.getMethod("email", 
                             null)!;
         
         
-
+;
+    
 
     var result: string = method.invoke(anyType, 
-                            null) as String;
-        
-        
+                            null);
 
+                         as String;
+        
+        
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
-} catch(e: LicensingException)
+
+                //: 
+} catch(e) 
             {
 
 
 
                             throw e
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
 
     var error: string = "Failed to send QuoteRequest emails";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "sendEmail()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "sendEmail()", e);
+    
 
                                     }
                                 
@@ -143,12 +158,14 @@ this.storeName= storeName
                                 )
                         
                                     {
-                                    this.getPropertiesHashMap()!.put(StoreFrontData.getInstance()!.NAME, this.storeName)
+                                    this.getPropertiesHashMap()!.put(StoreFrontData.getInstance()!.NAME, this.storeName);
+    
 
                         if(this.getCommand()!.compareTo("EMAIL") == 0)
                         
                                     {
-                                    this.email()
+                                    this.email();
+    
 
 
 
@@ -164,6 +181,8 @@ this.storeName= storeName
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.doStartTag();
+
+                        ;
     
 
                         }
@@ -177,9 +196,12 @@ this.storeName= storeName
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return SKIP_BODY;
     
-} catch(e: LicensingException)
+
+                //: 
+} catch(e) 
             {
-AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e);
+    
 
 
 
@@ -187,9 +209,12 @@ AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
                         return SKIP_BODY;
     
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
-AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
+    
 
 
 

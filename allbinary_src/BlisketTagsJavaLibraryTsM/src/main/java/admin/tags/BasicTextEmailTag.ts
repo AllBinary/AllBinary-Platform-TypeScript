@@ -58,13 +58,15 @@ public constructor (){
 
     public setSubject(value: string){
 var value = value
-this.subject= value
+this.subject= value;
+    
 }
 
 
     public setBody(value: string){
 var value = value
-this.body= value
+this.body= value;
+    
 }
 
 
@@ -72,44 +74,54 @@ this.body= value
 
         try {
             
-    var propertiesHashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var propertiesHashMap: HashMap<any, any> = new HashMap<any, any>();
         
         
-
-propertiesHashMap!.put("Subject", this.subject)
-propertiesHashMap!.put("Body", this.body)
+;
+    
+propertiesHashMap!.put("Subject", this.subject);
+    
+propertiesHashMap!.put("Body", this.body);
+    
 
     var anyType: any = {} = BasicTextEmailHelperFactory().
                             getInstance(propertiesHashMap, this.pageContext)!;
         
         
+;
+    
 
-
-    var method: Method = anyType!::class.getMethod("send", 
+    var method: Method = anyType!.constructor.name.getMethod("send", 
                             null)!;
         
         
-
+;
+    
 method.invoke(anyType, 
-                            null)
+                            null);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return "Email Sent";
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to Send Email.";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "send()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "send()", e);
+    
 
                                     }
                                 
@@ -129,16 +141,20 @@ method.invoke(anyType,
     public doStartTag(): number{
 
         try {
-            this.pageContext!.getOut()!.print(this.send())
+            this.pageContext!.getOut()!.print(this.send());
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return SKIP_BODY;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
+    
 
 
 

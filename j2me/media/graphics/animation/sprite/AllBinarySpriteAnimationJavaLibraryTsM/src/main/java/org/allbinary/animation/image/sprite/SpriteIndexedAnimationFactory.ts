@@ -93,9 +93,12 @@ public constructor (image: Image, basicColorArray: BasicColor[], width: number, 
 
                             //For kotlin this is before the body of the constructor.
                     
-this.basicColorArray= basicColorArray
-this.animationFactoryInitializationVisitor!.dx= dx
-this.animationFactoryInitializationVisitor!.dy= dy
+this.basicColorArray= basicColorArray;
+    
+this.animationFactoryInitializationVisitor!.dx= dx;
+    
+this.animationFactoryInitializationVisitor!.dy= dy;
+    
 }
 
 public constructor (image: Image, basicColorArray: BasicColor[], width: number, height: number)                        
@@ -127,14 +130,18 @@ public constructor (image: Image, basicColorArray: BasicColor[], width: number, 
 
                             //For kotlin this is before the body of the constructor.
                     
-this.basicColorArray= basicColorArray
-this.animationFactoryInitializationVisitor!.dx=  -(this.animationFactoryInitializationVisitor!.width shr 2)
-this.animationFactoryInitializationVisitor!.dy=  -(this.animationFactoryInitializationVisitor!.height shr 2)
+this.basicColorArray= basicColorArray;
+    
+this.animationFactoryInitializationVisitor!.dx=  -(this.animationFactoryInitializationVisitor!.width shr 2);
+    
+this.animationFactoryInitializationVisitor!.dy=  -(this.animationFactoryInitializationVisitor!.height shr 2);
+    
 
                         if(AndroidUtil.isAndroid())
                         
                                     {
-                                    this.animationFactoryInitializationVisitor!.dx += 3
+                                    this.animationFactoryInitializationVisitor!.dx += 3;
+    
 
                                     }
                                 
@@ -171,8 +178,10 @@ public constructor (image: Image, width: number, height: number, dx: number, dy:
 
                             //For kotlin this is before the body of the constructor.
                     
-this.animationFactoryInitializationVisitor!.dx= dx
-this.animationFactoryInitializationVisitor!.dy= dy
+this.animationFactoryInitializationVisitor!.dx= dx;
+    
+this.animationFactoryInitializationVisitor!.dy= dy;
+    
 }
 
 public constructor (image: Image, width: number, height: number)                        
@@ -213,7 +222,8 @@ public constructor (image: Image, width: number, height: number, animationBehavi
     var sprite: Sprite = animationFactorySpriteScaleUtil!.createImage(this.getImage(), this.animationFactoryInitializationVisitor!.width, this.animationFactoryInitializationVisitor!.height, this.scaleProperties!.scaleWidth, this.scaleProperties!.scaleHeight)!;
         
         
-
+;
+    
 
                         if(this.animationFactoryInitializationVisitor!.dx != 0 || this.animationFactoryInitializationVisitor!.dy != 0)
                         
@@ -249,6 +259,8 @@ public constructor (image: Image, width: number, height: number, animationBehavi
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getInstance(0);
+
+                        ;
     
 }
 

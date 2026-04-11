@@ -48,7 +48,8 @@ export class MotionInputMappingEventListener
 
     public onEvent(eventObject: AllBinaryEventObject){
 var eventObject = eventObject
-ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
+ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
+    
 }
 
 
@@ -56,8 +57,10 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
             
     public onInputMappingEvent(inputMappingEvent: InputMappingEvent){
 var inputMappingEvent = inputMappingEvent
-GameKeyCompleteMotionGestureInputEventFactory.getInstance()!.updateAll()
-BasicTouchInputFactory.getInstance()!.updateAll(inputMappingEvent!.getInputToGameKeyMapping())
+GameKeyCompleteMotionGestureInputEventFactory.getInstance()!.updateAll();
+    
+BasicTouchInputFactory.getInstance()!.updateAll(inputMappingEvent!.getInputToGameKeyMapping());
+    
 }
 
 

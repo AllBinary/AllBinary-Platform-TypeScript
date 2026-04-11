@@ -103,7 +103,7 @@ export class TrueTypeFontUtil extends TrueTypeFontUtilBase {
         
         
 
-    private readonly widthFloatArray: FloatArray
+    private readonly widthFloatArray: number[]
 
     public fontImage: OpenGLESImage = OpenGLESImage.NULL_OPENGL_IMAGE;
         
@@ -123,12 +123,14 @@ private constructor ()
                         if(AvianUtil.isAvian())
                         
                                     {
-                                    widthFloatArray= FloatArray()
+                                    widthFloatArray= new Array();
+    
 
                                     }
                                 
                         else {
-                            widthFloatArray= FloatArray()
+                            widthFloatArray= new Array();
+    
 
                         }
                             
@@ -143,6 +145,7 @@ this.widthScale= (this.scale == 2)
                                         //Otherwise - expression - elseExpr - DoubleLiteralExpr
 ;
 
+    ;
     
 }
 
@@ -162,12 +165,14 @@ this.widthScale= (this.scale == 2)
     var canvasStrings: CanvasStrings = CanvasStrings.getInstance()!;
         
         
-
+;
+    
 
     var openGLCapabilities: OpenGLCapabilities = OpenGLCapabilities.getInstance()!;
         
         
-
+;
+    
 
                         if(openGLCapabilities!.isTextureSizeValid(1024) && this.scale == 2)
                         
@@ -176,14 +181,20 @@ this.widthScale= (this.scale == 2)
     var FONT_ATLAS_1024: string = "/font_1024.png";
         
         
-
+;
+    
 
     var image: Image = Image.createImage(ResourceUtil.getInstance()!.getResourceAsStream(FONT_ATLAS_1024))!;
         
         
+;
+    
+image.setName(canvasStrings!.FONT_ATLAS);
+    
+this.fontImage= this.preResourceImageUtil!.encapsulate(image);
 
-image.setName(canvasStrings!.FONT_ATLAS)
-this.fontImage= this.preResourceImageUtil!.encapsulate(image) as OpenGLESImage
+                         as OpenGLESImage;
+    
 
                                     }
                                 
@@ -195,14 +206,20 @@ this.fontImage= this.preResourceImageUtil!.encapsulate(image) as OpenGLESImage
     var FONT_ATLAS_512: string = "/font_512.png";
         
         
-
+;
+    
 
     var image: Image = Image.createImage(ResourceUtil.getInstance()!.getResourceAsStream(FONT_ATLAS_512))!;
         
         
+;
+    
+image.setName(canvasStrings!.FONT_ATLAS);
+    
+this.fontImage= this.preResourceImageUtil!.encapsulate(image);
 
-image.setName(canvasStrings!.FONT_ATLAS)
-this.fontImage= this.preResourceImageUtil!.encapsulate(image) as OpenGLESImage
+                         as OpenGLESImage;
+    
 
                                     }
                                 
@@ -211,14 +228,20 @@ this.fontImage= this.preResourceImageUtil!.encapsulate(image) as OpenGLESImage
     var FONT_ATLAS_512: string = "/font_512.png";
         
         
-
+;
+    
 
     var image: Image = Image.createImage(ResourceUtil.getInstance()!.getResourceAsStream(FONT_ATLAS_512))!;
         
         
+;
+    
+image.setName(canvasStrings!.FONT_ATLAS);
+    
+this.fontImage= this.preResourceImageUtil!.encapsulate(image);
 
-image.setName(canvasStrings!.FONT_ATLAS)
-this.fontImage= this.preResourceImageUtil!.encapsulate(image) as OpenGLESImage
+                         as OpenGLESImage;
+    
 
                         }
                             
@@ -241,14 +264,18 @@ this.fontImage= this.preResourceImageUtil!.encapsulate(image) as OpenGLESImage
 
                         }
                             
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-PreLogUtil.put(commonStrings!.EXCEPTION, this, commonStrings!.EXCEPTION, e)
+;
+    
+PreLogUtil.put(commonStrings!.EXCEPTION, this, commonStrings!.EXCEPTION, e);
+    
 
 
 
@@ -264,27 +291,33 @@ PreLogUtil.put(commonStrings!.EXCEPTION, this, commonStrings!.EXCEPTION, e)
                             null, cellSize, BasicColorFactory.getInstance()!.WHITE)!;
         
         
-
+;
+    
 
     var imageLoader: ImageLoader = new ImageLoader();
         
         
-
+;
+    
 
     var imageData: ImageData = image = imageimage as SwtMutableImage
 image.
                     image.getImageData()!;
         
         
-
-imageData!.transparentPixel= imageData!.getPixel(0, 0)
+;
+    
+imageData!.transparentPixel= imageData!.getPixel(0, 0);
+    
 imageLoader!.data= 
                                                 [
                                                     imageData;
         
         
-                                                ]
-imageLoader!.save(CommonSeps.getInstance()!.PERIOD +CanvasStrings.getInstance()!.FONT_ATLAS, SWT.IMAGE_PNG)
+                                                ];
+    
+imageLoader!.save(CommonSeps.getInstance()!.PERIOD +CanvasStrings.getInstance()!.FONT_ATLAS, SWT.IMAGE_PNG);
+    
 }
 
 
@@ -296,59 +329,72 @@ imageLoader!.save(CommonSeps.getInstance()!.PERIOD +CanvasStrings.getInstance()!
     var cellsPerRow2: number = CELLS_PER_ROW *2;
         
         
-
+;
+    
 
     var cellsPerRow3: number = CELLS_PER_ROW *3;
         
         
-
+;
+    
 
     var cellsPerRow4: number = CELLS_PER_ROW *4;
         
         
-
+;
+    
 
     var cellsPerRow5: number = CELLS_PER_ROW *5;
         
         
-
+;
+    
 
     var cellsPerRow6: number = CELLS_PER_ROW *6;
         
         
-
+;
+    
 
     var cellsPerRow7: number = CELLS_PER_ROW *7;
         
         
-
+;
+    
 
     var image: Image = Image.createImage(textureSize, textureSize)!;
         
         
-
+;
+    
 
     var graphics: Graphics = image.getGraphics()!;
         
         
-
-graphics.setColor(basicColor!.toInt())
+;
+    
+graphics.setColor(basicColor!.toInt());
+    
 
     var biggestHeight: number = 0;
         
         
-
+;
+    
 
     var bounds: Rectangle = new Rectangle(PointFactory.getInstance()!.getInstance(0, 0), cellSize, cellSize);
         
         
-
+;
+    
 
     var x: number= 0
-
+;
+    
 
     var y: number= 0
-
+;
+    
 
 
 
@@ -359,15 +405,21 @@ graphics.setColor(basicColor!.toInt())
         
 index < size; index++)
         {
-characterArray[0]= pattern[index]
-_characterWidth[index]= bounds.getMaxX()
+characterArray[0]= pattern[index];
+    
+_characterWidth[index]= bounds.getMaxX();
+    
 
                         if(bounds.getMaxY() -bounds.getPoint()!.getX() > biggestHeight)
                         biggestHeight= bounds.getMaxY() -bounds.getPoint()!.getX()
-x= (index % CELLS_PER_ROW) *cellSize
-x += (cellSize shr 1)
-x -= (_characterWidth[index] shr 1)
-y=  -(cellSize shr 1)
+x= (index % CELLS_PER_ROW) *cellSize;
+    
+x += (cellSize shr 1);
+    
+x -= (_characterWidth[index] shr 1);
+    
+y=  -(cellSize shr 1);
+    
 
                         if(index >= CELLS_PER_ROW)
                         y += cellSize
@@ -389,9 +441,12 @@ y=  -(cellSize shr 1)
 
                         if(index >= cellsPerRow7)
                         y += cellSize
-y += cellSize
-y -= (cellSize shr 2)
-graphics.drawChar(characterArray[0]!, x, y, 0)
+y += cellSize;
+    
+y -= (cellSize shr 2);
+    
+graphics.drawChar(characterArray[0]!, x, y, 0);
+    
 }
 
 
@@ -403,14 +458,15 @@ graphics.drawChar(characterArray[0]!, x, y, 0)
 }
 
 
-    public getFontWidths(filename: string, fontSize: number): IntArray{
+    public getFontWidths(filename: string, fontSize: number): number[]{
 var filename = filename
 var fontSize = fontSize
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
+;
+    
 
 
 
@@ -421,12 +477,14 @@ var fontSize = fontSize
         
 index < size; index++)
         {
-characterArray[0]= pattern[index]
+characterArray[0]= pattern[index];
+    
 
                         if(characterArray[0] == ' ')
                         
                                     {
-                                    _characterWidth[index]= (fontSize /4)
+                                    _characterWidth[index]= (fontSize /4);
+    
 
                                     }
                                 
@@ -435,13 +493,16 @@ characterArray[0]= pattern[index]
     var shortPatternIndex: number = this.shortPattern!.indexOf(characterArray[0]!)!;
         
         
-
+;
+    
 
     var w: number = (widthFloatArray[shortPatternIndex] /75).toInt() +19;
         
         
-
-_characterWidth[index]= w.toInt()
+;
+    
+_characterWidth[index]= w.toInt();
+    
 
                         if(characterArray[0] == '.' || characterArray[0] == '1')
                         _characterWidth[index] += 4
@@ -463,7 +524,8 @@ _characterWidth[index]= w.toInt()
 
                         }
                             
-_characterWidth[index] *= this.widthScale
+_characterWidth[index] *= this.widthScale;
+    
 }
 
 

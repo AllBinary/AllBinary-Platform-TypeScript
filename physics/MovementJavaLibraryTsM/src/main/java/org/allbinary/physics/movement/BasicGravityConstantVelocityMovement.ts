@@ -35,7 +35,11 @@ export class BasicGravityConstantVelocityMovement extends BasicConstantVelocityM
         
 public constructor (speedBasicDecimal: BasicDecimal)                        
 
-                            : super(speedBasicDecimal, VelocityProperties(speedBasicDecimal!.getUnscaled().toInt(), speedBasicDecimal!.getUnscaled().toInt())){
+                            : super(speedBasicDecimal, VelocityProperties(speedBasicDecimal!.getUnscaled();
+
+                        .toInt(), speedBasicDecimal!.getUnscaled();
+
+                        .toInt())){
 
             super();
             var speedBasicDecimal = speedBasicDecimal
@@ -54,8 +58,10 @@ public constructor (speedBasicDecimal: BasicDecimal)
             
     public process(layer: AllBinaryGameLayer){
 var layer = layer
-super.process(layer)
-gravityUtil!.process(this.getVelocityProperties())
+super.process(layer);
+    
+gravityUtil!.process(this.getVelocityProperties());
+    
 }
 
 

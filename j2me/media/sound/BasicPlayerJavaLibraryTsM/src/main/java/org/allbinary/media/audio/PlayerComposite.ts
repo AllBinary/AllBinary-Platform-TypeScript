@@ -70,8 +70,10 @@ public constructor (player: Player){
 
             super();
                 //var player = player
-this.player= player
-this.timeElapsedHelper!.delay= 570
+this.player= player;
+    
+this.timeElapsedHelper!.delay= 570;
+    
 }
 
 public constructor (player: Player, repeatTime: number){
@@ -79,31 +81,37 @@ public constructor (player: Player, repeatTime: number){
             super();
                 //var player = player
     //var repeatTime = repeatTime
-this.player= player
-this.timeElapsedHelper!.delay= repeatTime
+this.player= player;
+    
+this.timeElapsedHelper!.delay= repeatTime;
+    
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public addPlayerListener(playerListener: PlayerListener){
 var playerListener = playerListener
-this.player.addPlayerListener(playerListener)
+this.player.addPlayerListener(playerListener);
+    
 }
 
 
     public removePlayerListener(playerListener: PlayerListener){
 var playerListener = playerListener
-this.player.removePlayerListener(playerListener)
+this.player.removePlayerListener(playerListener);
+    
 }
 
 
     public close(){
-this.player.close()
+this.player.close();
+    
 }
 
 
     public deallocate(){
-this.player.deallocate()
+this.player.deallocate();
+    
 }
 
 
@@ -113,6 +121,8 @@ this.player.deallocate()
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.player.getContentType();
+
+                        ;
     
 }
 
@@ -123,6 +133,8 @@ this.player.deallocate()
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.player.getDuration();
+
+                        ;
     
 }
 
@@ -133,6 +145,8 @@ this.player.deallocate()
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.player.getMediaTime();
+
+                        ;
     
 }
 
@@ -140,10 +154,14 @@ this.player.deallocate()
     public prefetch(){
 
         try {
-            this.player.prefetch()
-} catch(e: Exception)
+            this.player.prefetch();
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "prefetch", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "prefetch", e);
+    
 }
 
 }
@@ -152,10 +170,14 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "prefetch", e)
     public realize(){
 
         try {
-            this.player.realize()
-} catch(e: Exception)
+            this.player.realize();
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "realize", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "realize", e);
+    
 }
 
 }
@@ -167,13 +189,16 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "realize", e)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.player.getState();
+
+                        ;
     
 }
 
 
     public setLoopCount(count: number){
 var count = count
-this.player.setLoopCount(count)
+this.player.setLoopCount(count);
+    
 }
 
 
@@ -186,10 +211,15 @@ var now = now
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.player.setMediaTime(now);
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "setMediaTime", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "setMediaTime", e);
+    
 
 
 
@@ -212,13 +242,17 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "setMediaTime", e)
                         if(timeElapsedHelper!.isTime(gameTickTimeDelayHelper!.startTime))
                         
                                     {
-                                    this.player.start()
+                                    this.player.start();
+    
 
                                     }
                                 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.START_METHOD_NAME, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.START_METHOD_NAME, e);
+    
 }
 
 }
@@ -227,10 +261,14 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.START_METHOD_NAME, e
     public stop(){
 
         try {
-            this.player.stop()
-} catch(e: Exception)
+            this.player.stop();
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "stop", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "stop", e);
+    
 }
 
 }
@@ -243,6 +281,8 @@ var controlType = controlType
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.player.getControl(controlType);
+
+                        ;
     
 }
 
@@ -253,6 +293,8 @@ var controlType = controlType
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getControls();
+
+                        ;
     
 }
 
@@ -264,8 +306,10 @@ var controlType = controlType
     var controllable2: Controllable2 = (this.player as Controllable2);
         
         
-
-controllable2.setVolume(leftVolume, rightVolume)
+;
+    
+controllable2.setVolume(leftVolume, rightVolume);
+    
 }
 
 

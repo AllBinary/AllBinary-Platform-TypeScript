@@ -113,8 +113,10 @@ public constructor (groupInterface: Group[])
     var basicColorFactory: BasicColorFactory = BasicColorFactory.getInstance()!;
         
         
-
-this.noMoneyGameNotificationEvent= GameNotificationEvent(this, RTSGameStrings.getInstance()!.NO_MONEY, SmallIntegerSingletonFactory.getInstance()!.getInstance(2), basicColorFactory!.WHITE, BooleanFactory.getInstance()!.FALSE)
+;
+    
+this.noMoneyGameNotificationEvent= GameNotificationEvent(this, RTSGameStrings.getInstance()!.NO_MONEY, SmallIntegerSingletonFactory.getInstance()!.getInstance(2), basicColorFactory!.WHITE, BooleanFactory.getInstance()!.FALSE);
+    
 }
 
 
@@ -122,18 +124,22 @@ this.noMoneyGameNotificationEvent= GameNotificationEvent(this, RTSGameStrings.ge
             
     public setAllBinaryGameLayerManager(allBinaryGameLayerManager: AllBinaryGameLayerManager){
     //var allBinaryGameLayerManager = allBinaryGameLayerManager
-super.setAllBinaryGameLayerManager(allBinaryGameLayerManager)
+super.setAllBinaryGameLayerManager(allBinaryGameLayerManager);
+    
 
     var geographicMapCompositeInterface: GeographicMapCompositeInterface = allBinaryGameLayerManager as GeographicMapCompositeInterface;
         
         
-
+;
+    
 
     var geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;
         
         
-
-this.noMoneyGameNotificationEvent!.setBasicColorP(geographicMapInterface!.getForegroundBasicColor())
+;
+    
+this.noMoneyGameNotificationEvent!.setBasicColorP(geographicMapInterface!.getForegroundBasicColor());
+    
 }
 
 
@@ -145,28 +151,34 @@ this.noMoneyGameNotificationEvent!.setBasicColorP(geographicMapInterface!.getFor
     //var layerManager = layerManager
     //var item = item
     //var itemIndex = itemIndex
-super.process(layerManager)
+super.process(layerManager);
+    
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
+;
+    
 
     var stringMaker: StringMaker = new StringMaker();
         
         
-
+;
+    
 
     var technologyRTSInterfaceImageItem: TechnologyRTSInterfaceImageItem = item as TechnologyRTSInterfaceImageItem;
         
         
-
+;
+    
 
     var rtsInterface: RTSInterface = technologyRTSInterfaceImageItem!.getRtsInterface()!;
         
         
-
-logUtil!.put(stringMaker!.append("isUpgradeable: ")!.appendboolean(rtsInterface!.isUpgradeable())!.toString(), this, commonStrings!.PROCESS)
+;
+    
+logUtil!.put(stringMaker!.append("isUpgradeable: ")!.appendboolean(rtsInterface!.isUpgradeable())!.toString(), this, commonStrings!.PROCESS);
+    
 
                         if(rtsInterface!.isUpgradeable())
                         
@@ -175,33 +187,46 @@ logUtil!.put(stringMaker!.append("isUpgradeable: ")!.appendboolean(rtsInterface!
     var cost: number = rtsInterface!.getUpgradeCost()!;
         
         
-
+;
+    
 
     var capital: Capital = rtsPlayerLayerInterface!.getCapital()!;
         
         
-
-stringMaker!.delete(0, stringMaker!.length())
-logUtil!.put(stringMaker!.appendint(cost)!.append("<=")!.appendint(capital.getTotalMoney())!.toString(), this, commonStrings!.PROCESS)
+;
+    
+stringMaker!.delete(0, stringMaker!.length());
+    
+logUtil!.put(stringMaker!.appendint(cost)!.append("<=")!.appendint(capital.getTotalMoney())!.toString(), this, commonStrings!.PROCESS);
+    
 
                         if(cost <= capital.getTotalMoney())
                         
                                     {
-                                    rtsPlayerLayerInterface!.add(BuildingSound.getInstance())
-capital.removeMoney(cost)
-rtsInterface!.upgrade()
-technologyRTSInterfaceImageItem!.update()
-TechEventHandler.getInstance()!.fireEvent(EVENT)
+                                    rtsPlayerLayerInterface!.add(BuildingSound.getInstance());
+    
+capital.removeMoney(cost);
+    
+rtsInterface!.upgrade();
+    
+technologyRTSInterfaceImageItem!.update();
+    
+TechEventHandler.getInstance()!.fireEvent(EVENT);
+    
 
                                     }
                                 
                         else {
-                            rtsPlayerLayerInterface!.add(ErrorSound.getInstance())
+                            rtsPlayerLayerInterface!.add(ErrorSound.getInstance());
+    
 
-                        if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface())
+                        if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface();
+
+                        )
                         
                                     {
-                                    GameNotificationEventHandler.getInstance()!.fireEvent(noMoneyGameNotificationEvent)
+                                    GameNotificationEventHandler.getInstance()!.fireEvent(noMoneyGameNotificationEvent);
+    
 
                                     }
                                 

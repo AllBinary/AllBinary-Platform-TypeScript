@@ -90,8 +90,10 @@ public constructor (transformInfoInterface: TransformInfoInterface)
                 //@Throws(Error::class)
             
     public addDomNodeInterfaces(){
-this.addDomNodeInterface(this.titleBody as DomNodeInterface)
-this.addDomNodeInterface(this as DomNodeInterface)
+this.addDomNodeInterface(this.titleBody as DomNodeInterface);
+    
+this.addDomNodeInterface(this as DomNodeInterface);
+    
 }
 
 
@@ -103,12 +105,14 @@ var document = document
     var pageName: string = TransformTemplateCustomizerUtil.getInstance()!.getPageNameHack(this.getTransformInfoInterface()!.getName(), this.getWeblisketSession()!.getStoreName())!;
         
         
-
+;
+    
 
                         if(StringValidationUtil.getInstance()!.isEmpty(pageName))
                         
                                     {
-                                    pageName= NAME
+                                    pageName= NAME;
+    
 
                                     }
                                 
@@ -117,6 +121,8 @@ var document = document
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return ModDomHelper.createNameValueNodes(document, PageData.getInstance()!.NAME, pageName);
+
+                        ;
     
 }
 
@@ -130,26 +136,33 @@ var document = document
     var success: string = DomDocumentHelper.toString(this.getDoc())!;
         
         
-
+;
+    
 
     var result: string = StoreTransformer(this.abeClientInformation, this.getTransformInfoInterface()).
                             translate(success)!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return StringEscapeUtils.unescapeHtml3(result);
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e);
+    
 
                                     }
                                 

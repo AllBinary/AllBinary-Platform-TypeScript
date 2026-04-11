@@ -24,14 +24,18 @@ export class ColorChooser extends javax.swing.JPanel {
 public constructor (){
 
             super();
-            initComponents()
+            initComponents();
+    
 }
 
 
     initComponents(){
-jColorChooser1= javax.swing.JColorChooser()
-setLayout(java.awt.BorderLayout())
-add(jColorChooser1, java.awt.BorderLayout.CENTER)
+jColorChooser1= javax.swing.JColorChooser();
+    
+setLayout(java.awt.BorderLayout());
+    
+add(jColorChooser1, java.awt.BorderLayout.CENTER);
+    
 }
 
 

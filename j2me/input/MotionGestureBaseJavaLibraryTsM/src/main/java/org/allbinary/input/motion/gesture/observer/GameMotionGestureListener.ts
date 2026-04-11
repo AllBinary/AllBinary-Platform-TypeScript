@@ -73,68 +73,80 @@ public constructor (signed: CompleteMotionGestureListenerInterface){
 
             super();
             var signed = signed
-logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
-this.signed= signed
+logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
+    
+this.signed= signed;
+    
 }
 
 
     public onEvent(eventObject: AllBinaryEventObject){
 var eventObject = eventObject
-ForcedLogUtil.log(commonStrings!.NOT_IMPLEMENTED, this)
+ForcedLogUtil.log(commonStrings!.NOT_IMPLEMENTED, this);
+    
 }
 
 
     public onUpMotionGestureEvent(ev: MotionGestureEvent){
 var ev = ev
-onMotionGestureEvent(ev)
+onMotionGestureEvent(ev);
+    
 }
 
 
     public onDownMotionGestureEvent(ev: MotionGestureEvent){
 var ev = ev
-onMotionGestureEvent(ev)
+onMotionGestureEvent(ev);
+    
 }
 
 
     public onLeftMotionGestureEvent(ev: MotionGestureEvent){
 var ev = ev
-onMotionGestureEvent(ev)
+onMotionGestureEvent(ev);
+    
 }
 
 
     public onRightMotionGestureEvent(ev: MotionGestureEvent){
 var ev = ev
-onMotionGestureEvent(ev)
+onMotionGestureEvent(ev);
+    
 }
 
 
     public onDiagonalDownRightMotionGestureEvent(ev: MotionGestureEvent){
 var ev = ev
-onMotionGestureEvent(ev)
+onMotionGestureEvent(ev);
+    
 }
 
 
     public onDiagonalDownLeftMotionGestureEvent(ev: MotionGestureEvent){
 var ev = ev
-onMotionGestureEvent(ev)
+onMotionGestureEvent(ev);
+    
 }
 
 
     public onDiagonalUpRightMotionGestureEvent(ev: MotionGestureEvent){
 var ev = ev
-onMotionGestureEvent(ev)
+onMotionGestureEvent(ev);
+    
 }
 
 
     public onDiagonalUpLeftMotionGestureEvent(ev: MotionGestureEvent){
 var ev = ev
-onMotionGestureEvent(ev)
+onMotionGestureEvent(ev);
+    
 }
 
 
     public onPressedMotionGestureEvent(ev: MotionGestureEvent){
 var ev = ev
-touchGestureCollection!.add(ev.getMotionGesture())
+touchGestureCollection!.add(ev.getMotionGesture());
+    
 }
 
 
@@ -142,19 +154,28 @@ touchGestureCollection!.add(ev.getMotionGesture())
 var ev = ev
 
         try {
-            touchGestureCollection!.add(ev.getMotionGesture())
-signed.onMotionGestureCompleted(touchGestureCollection)
-touchGestureCollection!.clear()
-} catch(e: Exception)
+            touchGestureCollection!.add(ev.getMotionGesture());
+    
+signed.onMotionGestureCompleted(touchGestureCollection);
+    
+touchGestureCollection!.clear();
+    
+
+                //: 
+} catch(e) 
             {
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(commonStrings!.EXCEPTION_LABEL)
-stringBuffer!.append(StringUtil.getInstance()!.toString(ev.getMotionGesture()))
-logUtil!.put(stringBuffer!.toString(), this, "release", e)
+;
+    
+stringBuffer!.append(commonStrings!.EXCEPTION_LABEL);
+    
+stringBuffer!.append(StringUtil.getInstance()!.toString(ev.getMotionGesture()));
+    
+logUtil!.put(stringBuffer!.toString(), this, "release", e);
+    
 }
 
 }
@@ -168,12 +189,14 @@ var ev = ev
     var motionGestureInput: MotionGestureInput = ev.getMotionGesture()!;
         
         
-
+;
+    
 
                         if(motionGestureInput == TouchMotionGestureFactory.getInstance()!.PRESSED)
                         
                                     {
-                                    this.onPressedMotionGestureEvent(ev)
+                                    this.onPressedMotionGestureEvent(ev);
+    
 
                                     }
                                 
@@ -181,28 +204,39 @@ var ev = ev
                         if(motionGestureInput == TouchMotionGestureFactory.getInstance()!.RELEASED)
                         
                                     {
-                                    this.released(ev)
+                                    this.released(ev);
+    
 
                                     }
                                 
                         else {
-                            motionGestureCollection!.add(motionGestureInput)
-signed.onMotionGestureCompleted(motionGestureCollection)
-motionGestureCollection!.clear()
-touchGestureCollection!.clear()
+                            motionGestureCollection!.add(motionGestureInput);
+    
+signed.onMotionGestureCompleted(motionGestureCollection);
+    
+motionGestureCollection!.clear();
+    
+touchGestureCollection!.clear();
+    
 
                         }
                             
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(commonStrings!.EXCEPTION_LABEL)
-stringBuffer!.append(StringUtil.getInstance()!.toString(ev.getMotionGesture()))
-logUtil!.put(stringBuffer!.toString(), this, "onMotionGestureEvent", e)
+;
+    
+stringBuffer!.append(commonStrings!.EXCEPTION_LABEL);
+    
+stringBuffer!.append(StringUtil.getInstance()!.toString(ev.getMotionGesture()));
+    
+logUtil!.put(stringBuffer!.toString(), this, "onMotionGestureEvent", e);
+    
 }
 
 }

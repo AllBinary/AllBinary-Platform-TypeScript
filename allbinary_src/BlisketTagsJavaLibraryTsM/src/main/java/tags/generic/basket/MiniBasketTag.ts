@@ -44,8 +44,10 @@ public constructor (){
     public doStartTag(): number{
 
         try {
-            this.setName("Mini Basket View")
-this.setObjectFile("views.generic.basket.mini.ValidationView")
+            this.setName("Mini Basket View");
+    
+this.setObjectFile("views.generic.basket.mini.ValidationView");
+    
 
                         if(this.getCommand() != 
                                     null
@@ -72,6 +74,8 @@ this.setObjectFile("views.generic.basket.mini.ValidationView")
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.doStartTag();
+
+                        ;
     
 
                                     }
@@ -80,9 +84,12 @@ this.setObjectFile("views.generic.basket.mini.ValidationView")
 
 
                             throw Error("Command Null")
-} catch(e: LicensingException)
+
+                //: 
+} catch(e) 
             {
-AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e);
+    
 
 
 
@@ -90,9 +97,12 @@ AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
                         return SKIP_BODY;
     
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
-AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
+    
 
 
 

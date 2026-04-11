@@ -33,7 +33,7 @@ export class CustomMapGeneratorBase
 }
 
 
-    public getCustomMapArray(): IntArray[]{
+    public getCustomMapArray(): number[][]{
 
 
 

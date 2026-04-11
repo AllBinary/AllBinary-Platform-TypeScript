@@ -44,16 +44,19 @@ var paintableInterface = paintableInterface
 var width = width
 var height = height
 
-    var image: Image = GameFeatureImageCacheFactory.getInstance()!.get(instance::class.toString()!, width, height)!;
+    var image: Image = GameFeatureImageCacheFactory.getInstance()!.get(instance.constructor.name.toString()!, width, height)!;
         
         
-
+;
+    
 
     var graphics: Graphics = image.getGraphics()!;
         
         
-
-paintableInterface!.paint(graphics)
+;
+    
+paintableInterface!.paint(graphics);
+    
 
 
 

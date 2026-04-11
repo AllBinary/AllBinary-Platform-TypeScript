@@ -76,7 +76,7 @@ export class BaseGameInitialization
                 , GameInitializationInterface {
         
 
-    public static readonly NULL_BASE_GAME_INITIALIZATION: BaseGameInitialization = new BaseGameInitialization(new Array(0), 0);
+    public static readonly NULL_BASE_GAME_INITIALIZATION: BaseGameInitialization = new BaseGameInitialization([], 0);
         
         
 
@@ -106,8 +106,10 @@ public constructor (resourceInitializationArray: ResourceInitialization[], porti
             super();
                 //var resourceInitializationArray = resourceInitializationArray
     //var portion = portion
-this.resourceInitializationArray= resourceInitializationArray
-this.portion= portion
+this.resourceInitializationArray= resourceInitializationArray;
+    
+this.portion= portion;
+    
 }
 
 
@@ -127,9 +129,12 @@ var portion = portion
                         if(ChangedGameFeatureListener.getInstance()!.isChanged(InputFeatureFactory.getInstance()!.INPUT_MAPPING))
                         
                                     {
-                                    PlatformInputMappingFactory.getInstance()!.getPersistentInputMappingInstance()!.init(abeClientInformation)
-ProgressCanvasFactory.getInstance()!.addPortion(50, "Game Keys")
-ChangedGameFeatureListener.getInstance()!.remove(InputFeatureFactory.getInstance()!.INPUT_MAPPING)
+                                    PlatformInputMappingFactory.getInstance()!.getPersistentInputMappingInstance()!.init(abeClientInformation);
+    
+ProgressCanvasFactory.getInstance()!.addPortion(50, "Game Keys");
+    
+ChangedGameFeatureListener.getInstance()!.remove(InputFeatureFactory.getInstance()!.INPUT_MAPPING);
+    
 
                                     }
                                 
@@ -146,41 +151,59 @@ ChangedGameFeatureListener.getInstance()!.remove(InputFeatureFactory.getInstance
     var resourceLoadingLevelFactory: ResourceLoadingLevelFactory = ResourceLoadingLevelFactory.getInstance()!;
         
         
+;
+    
 
+                        if(!this.isInitialized();
 
-                        if(!this.isInitialized() && (level == resourceLoadingLevelFactory!.LOAD_ALL.getLevel() || level == resourceLoadingLevelFactory!.LOAD_EARLY.getLevel()))
+                         && (level == resourceLoadingLevelFactory!.LOAD_ALL.getLevel() || level == resourceLoadingLevelFactory!.LOAD_EARLY.getLevel()))
                         
                                     {
                                     
     var localPortion: number = 40;
         
         
-
+;
+    
 
                         if(level == resourceLoadingLevelFactory!.LOAD_EARLY.getLevel())
                         
                                     {
-                                    localPortion= 8
+                                    localPortion= 8;
+    
 
                                     }
                                 
-this.setInitialized(true)
-this.initKey(getPortion())
-this.initKeyMapping(abeClientInformation, getPortion())
-GameKeyEventFactory.getInstance()!.init()
+this.setInitialized(true);
+    
+this.initKey(getPortion());
+    
+this.initKeyMapping(abeClientInformation, getPortion());
+    
+GameKeyEventFactory.getInstance()!.init();
+    
 
     var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
         
         
-
-progressCanvas!.addPortion(localPortion, "Game Key Events")
-BasicTouchInputFactory.getInstance()!.init(PlatformInputMappingFactory.getInstance()!.getPersistentInputMappingInstance()!.getInputMapping())
-progressCanvas!.addPortion(localPortion, "Touch Input")
-CompleteMotionGestureInputToGameMotionGestureInput.getInstance()!.init()
-progressCanvas!.addPortion(localPortion, "Motion Input")
-GameFeatureImageCacheFactory.init()
-progressCanvas!.addPortion(localPortion, "Image Cache")
-this.resourceInitializationArray[EARLY_RESOURCES]!.init()
+;
+    
+progressCanvas!.addPortion(localPortion, "Game Key Events");
+    
+BasicTouchInputFactory.getInstance()!.init(PlatformInputMappingFactory.getInstance()!.getPersistentInputMappingInstance()!.getInputMapping());
+    
+progressCanvas!.addPortion(localPortion, "Touch Input");
+    
+CompleteMotionGestureInputToGameMotionGestureInput.getInstance()!.init();
+    
+progressCanvas!.addPortion(localPortion, "Motion Input");
+    
+GameFeatureImageCacheFactory.init();
+    
+progressCanvas!.addPortion(localPortion, "Image Cache");
+    
+this.resourceInitializationArray[EARLY_RESOURCES]!.init();
+    
 
                                     }
                                 
@@ -199,13 +222,16 @@ var level = level
     var resourceLoadingLevelFactory: ResourceLoadingLevelFactory = ResourceLoadingLevelFactory.getInstance()!;
         
         
-
+;
+    
 
                         if(this.resourceAnimationChange() && level == resourceLoadingLevelFactory!.LOAD_EARLY.getLevel())
                         
                                     {
-                                    this.clearResources()
-this.resourceInitializationArray[this.EARLY_CHANGABLE_RESOURCES]!.init()
+                                    this.clearResources();
+    
+this.resourceInitializationArray[this.EARLY_CHANGABLE_RESOURCES]!.init();
+    
 
                                     }
                                 
@@ -217,7 +243,8 @@ this.resourceInitializationArray[this.EARLY_CHANGABLE_RESOURCES]!.init()
                         if(this.allLoaded)
                         
                                     {
-                                    this.clearResources()
+                                    this.clearResources();
+    
 
                                     }
                                 
@@ -225,12 +252,15 @@ this.resourceInitializationArray[this.EARLY_CHANGABLE_RESOURCES]!.init()
                         if(FeaturedAnimationInterfaceFactoryInterfaceFactory.getInstance()!.getList()!.size() == 0)
                         
                                     {
-                                    this.resourceInitializationArray[this.EARLY_CHANGABLE_RESOURCES]!.init()
+                                    this.resourceInitializationArray[this.EARLY_CHANGABLE_RESOURCES]!.init();
+    
 
                                     }
                                 
-this.resourceInitializationArray[this.GAME_CHANGABLE_RESOURCES]!.init()
-this.allLoaded= true
+this.resourceInitializationArray[this.GAME_CHANGABLE_RESOURCES]!.init();
+    
+this.allLoaded= true;
+    
 
                                     }
                                 
@@ -242,12 +272,14 @@ this.allLoaded= true
     var changedGameFeatureListener: ChangedGameFeatureListener = ChangedGameFeatureListener.getInstance()!;
         
         
-
+;
+    
 
     var gameConfigurationCentral: GameConfigurationCentral = GameConfigurationCentral.getInstance()!;
         
         
-
+;
+    
 
                         if(changedGameFeatureListener!.isChanged(gameConfigurationCentral!.SCALE))
                         
@@ -284,21 +316,27 @@ this.allLoaded= true
 
 
     clearResources(){
-this.allLoaded= false
-GameFeatureImageCacheFactory.releaseAll()
+this.allLoaded= false;
+    
+GameFeatureImageCacheFactory.releaseAll();
+    
 
     var featuredAnimationInterfaceFactoryInterfaceFactory: FeaturedAnimationInterfaceFactoryInterfaceFactory = FeaturedAnimationInterfaceFactoryInterfaceFactory.getInstance()!;
         
         
-
-featuredAnimationInterfaceFactoryInterfaceFactory!.clear()
-FeaturedResourceRelativeRelationshipFactory.getInstance()!.clear()
+;
+    
+featuredAnimationInterfaceFactoryInterfaceFactory!.clear();
+    
+FeaturedResourceRelativeRelationshipFactory.getInstance()!.clear();
+    
 }
 
 
     setGameInitialized(gameInitialized: boolean){
 var gameInitialized = gameInitialized
-this.gameInitialized= gameInitialized
+this.gameInitialized= gameInitialized;
+    
 }
 
 
@@ -324,7 +362,8 @@ this.gameInitialized= gameInitialized
 
     public setInitialized(initialized: boolean){
 var initialized = initialized
-this.initialized= initialized
+this.initialized= initialized;
+    
 }
 
 

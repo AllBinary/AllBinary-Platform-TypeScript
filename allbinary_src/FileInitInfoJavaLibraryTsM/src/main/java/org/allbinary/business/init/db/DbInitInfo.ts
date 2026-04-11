@@ -112,17 +112,20 @@ var read = read
 
                             //For kotlin this is before the body of the constructor.
                     
-this.initFileName= initFileName
+this.initFileName= initFileName;
+    
 
                         if(read)
                         
                                     {
-                                    this.updateIfNeeded()
+                                    this.updateIfNeeded();
+    
 
                                     }
                                 
                         else {
-                            this.setHasRead(true)
+                            this.setHasRead(true);
+    
 
                         }
                             
@@ -134,12 +137,14 @@ this.initFileName= initFileName
     var url: string = super.getUrl()!;
         
         
-
+;
+    
 
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.PRELOADER))
                         
                                     {
-                                    PreLogUtil.put(this.httpData!.URL_LABEL +url, this, GET_URL)
+                                    PreLogUtil.put(this.httpData!.URL_LABEL +url, this, GET_URL);
+    
 
                                     }
                                 
@@ -159,91 +164,116 @@ this.initFileName= initFileName
     var PATH: AbPath = new AbPath(URLGLOBALS.getWebappPath() +PACKAGE);
         
         
-
-this.directory.create(PATH)
+;
+    
+this.directory.create(PATH);
+    
 
     var FILEABPATH: AbPath = new AbPath(URLGLOBALS.getWebappPath() +PACKAGE, this.initFileName);
         
         
-
+;
+    
 
         try {
             
     var newFile: AbFile = new AbFile(FILEABPATH);
         
         
-
-newFile!.createNewFile()
+;
+    
+newFile!.createNewFile();
+    
 
     var dataOutputStream: AbDataOutputStream = DataOutputStreamFactory.getInstance()!.getInstance(newFile)!;
         
         
-
+;
+    
 
         try {
             
-    var cryptedJdbcDriver: ByteArray = WeakCrypt(1).
+    var cryptedJdbcDriver: number[] = WeakCrypt(1).
                             encrypt(this.getJdbcDriver())!.encodeToByteArray()!;
         
         
+;
+    
 
-
-    var cryptedName: ByteArray = WeakCrypt(2).
+    var cryptedName: number[] = WeakCrypt(2).
                             encrypt(this.getName())!.encodeToByteArray()!;
         
         
+;
+    
 
-
-    var cryptedUserName: ByteArray = WeakCrypt(3).
+    var cryptedUserName: number[] = WeakCrypt(3).
                             encrypt(this.getUserName())!.encodeToByteArray()!;
         
         
+;
+    
 
-
-    var cryptedPassword: ByteArray = WeakCrypt(4).
+    var cryptedPassword: number[] = WeakCrypt(4).
                             encrypt(this.getPassword())!.encodeToByteArray()!;
         
         
+;
+    
 
-
-    var cryptedSchema: ByteArray = WeakCrypt(5).
+    var cryptedSchema: number[] = WeakCrypt(5).
                             encrypt(this.getSchema())!.encodeToByteArray()!;
         
         
+;
+    
 
-
-    var cryptedServer: ByteArray = WeakCrypt(6).
+    var cryptedServer: number[] = WeakCrypt(6).
                             encrypt(this.getServer())!.encodeToByteArray()!;
         
         
+;
+    
 
-
-    var cryptedPort: ByteArray = WeakCrypt(7).
+    var cryptedPort: number[] = WeakCrypt(7).
                             encrypt(this.getPort())!.encodeToByteArray()!;
         
         
-
-dataOutputStream!.writeUTF(DatabaseEncoder.encode(cryptedJdbcDriver))
-dataOutputStream!.writeUTF(DatabaseEncoder.encode(cryptedName))
-dataOutputStream!.writeUTF(DatabaseEncoder.encode(cryptedUserName))
-dataOutputStream!.writeUTF(DatabaseEncoder.encode(cryptedPassword))
-dataOutputStream!.writeUTF(DatabaseEncoder.encode(cryptedSchema))
-dataOutputStream!.writeUTF(DatabaseEncoder.encode(cryptedServer))
-dataOutputStream!.writeUTF(DatabaseEncoder.encode(cryptedPort))
-hasRead= false
+;
+    
+dataOutputStream!.writeUTF(DatabaseEncoder.encode(cryptedJdbcDriver));
+    
+dataOutputStream!.writeUTF(DatabaseEncoder.encode(cryptedName));
+    
+dataOutputStream!.writeUTF(DatabaseEncoder.encode(cryptedUserName));
+    
+dataOutputStream!.writeUTF(DatabaseEncoder.encode(cryptedPassword));
+    
+dataOutputStream!.writeUTF(DatabaseEncoder.encode(cryptedSchema));
+    
+dataOutputStream!.writeUTF(DatabaseEncoder.encode(cryptedServer));
+    
+dataOutputStream!.writeUTF(DatabaseEncoder.encode(cryptedPort));
+    
+hasRead= false;
+    
 
          finally {
-            StreamUtil.getInstance()!.close(dataOutputStream)
+            StreamUtil.getInstance()!.close(dataOutputStream);
+    
 
          }
         
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.PRELOADERERROR))
                         
                                     {
-                                    PreLogUtil.put("Failed Write: " +FILEABPATH.toString(), this, "write", e)
+                                    PreLogUtil.putOE("Failed Write: " +FILEABPATH.toString(), this, "write", e);
+    
 
                                     }
                                 
@@ -259,14 +289,16 @@ hasRead= false
     var FILEABPATH: AbPath = new AbPath(URLGLOBALS.getWebappPath() +PACKAGE, this.initFileName);
         
         
-
+;
+    
 
         try {
             
     var file: AbFile = new AbFile(FILEABPATH);
         
         
-
+;
+    
 
                         if(file.isFile())
                         
@@ -275,71 +307,89 @@ hasRead= false
     var iFile: AbFileInputStream = new AbFileInputStream(file);
         
         
-
+;
+    
 
     var iData: AbDataInputStream = new AbDataInputStream(iFile);
         
         
-
+;
+    
 
         try {
             
     var decryptedJdbcDriver: string = new decode.toCharArray();
         
         
-
+;
+    
 
     var decryptedName: string = new decode.toCharArray();
         
         
-
+;
+    
 
     var decryptedUserName: string = new decode.toCharArray();
         
         
-
+;
+    
 
     var decryptedPassword: string = new decode.toCharArray();
         
         
-
+;
+    
 
     var decryptedSchema: string = new decode.toCharArray();
         
         
-
+;
+    
 
     var decryptedServer: string = new decode.toCharArray();
         
         
-
+;
+    
 
     var decryptedPort: string = new decode.toCharArray();
         
         
-
+;
+    
 this.setJdbcDriver(WeakCrypt(1).
-                            decrypt(decryptedJdbcDriver))
+                            decrypt(decryptedJdbcDriver));
+    
 this.setName(WeakCrypt(2).
-                            decrypt(decryptedName))
+                            decrypt(decryptedName));
+    
 this.setUserName(WeakCrypt(3).
-                            decrypt(decryptedUserName))
+                            decrypt(decryptedUserName));
+    
 this.setPassword(WeakCrypt(4).
-                            decrypt(decryptedPassword))
+                            decrypt(decryptedPassword));
+    
 this.setSchema(WeakCrypt(5).
-                            decrypt(decryptedSchema))
+                            decrypt(decryptedSchema));
+    
 this.setServer(WeakCrypt(6).
-                            decrypt(decryptedServer))
+                            decrypt(decryptedServer));
+    
 this.setPort(WeakCrypt(7).
-                            decrypt(decryptedPort))
+                            decrypt(decryptedPort));
+    
 
     var stringUtil: StringUtil = StringUtil.getInstance()!;
         
         
-
+;
+    
 
          finally {
-            StreamUtil.getInstance()!.close(iData)
+            StreamUtil.getInstance()!.close(iData);
+    
 
          }
         
@@ -347,25 +397,30 @@ this.setPort(WeakCrypt(7).
                                     }
                                 
                         else {
-                            hasRead= false
+                            hasRead= false;
+    
 
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.PRELOADER))
                         
                                     {
-                                    PreLogUtil.put("Not a File - Failed Loading: " +FILEABPATH.toString(), this, commonStrings!.LOAD)
+                                    PreLogUtil.put("Not a File - Failed Loading: " +FILEABPATH.toString(), this, commonStrings!.LOAD);
+    
 
                                     }
                                 
 
                         }
                             
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.PRELOADERERROR))
                         
                                     {
-                                    PreLogUtil.put("Failed Loading: " +FILEABPATH.toString(), this, commonStrings!.LOAD, e)
+                                    PreLogUtil.putOE("Failed Loading: " +FILEABPATH.toString(), this, commonStrings!.LOAD, e);
+    
 
                                     }
                                 
@@ -376,7 +431,8 @@ this.setPort(WeakCrypt(7).
 
     public setHasRead(value: boolean){
 var value = value
-this.hasRead= value
+this.hasRead= value;
+    
 }
 
 
@@ -387,18 +443,23 @@ this.hasRead= value
                         if(!hasRead)
                         
                                     {
-                                    hasRead= true
-this.load()
+                                    hasRead= true;
+    
+this.load();
+    
 
                                     }
                                 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.PRELOADERERROR))
                         
                                     {
-                                    PreLogUtil.put(commonStrings!.EXCEPTION, this, "updateIfNeeded", e)
+                                    PreLogUtil.putOE(commonStrings!.EXCEPTION, this, "updateIfNeeded", e);
+    
 
                                     }
                                 
@@ -408,12 +469,14 @@ this.load()
 
 
     public getName(): string{
-this.updateIfNeeded()
+this.updateIfNeeded();
+    
 
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.PRELOADER))
                         
                                     {
-                                    PreLogUtil.put("Name: " +super.getName(), this, "getName")
+                                    PreLogUtil.put("Name: " +super.getName(), this, "getName");
+    
 
                                     }
                                 
@@ -422,17 +485,21 @@ this.updateIfNeeded()
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.getName();
+
+                        ;
     
 }
 
 
     public getUserName(): string{
-this.updateIfNeeded()
+this.updateIfNeeded();
+    
 
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.PRELOADER))
                         
                                     {
-                                    PreLogUtil.put("Name: " +super.getUserName(), this, "getUserName")
+                                    PreLogUtil.put("Name: " +super.getUserName(), this, "getUserName");
+    
 
                                     }
                                 
@@ -441,50 +508,64 @@ this.updateIfNeeded()
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.getUserName();
+
+                        ;
     
 }
 
 
     public getPassword(): string{
-this.updateIfNeeded()
+this.updateIfNeeded();
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.getPassword();
+
+                        ;
     
 }
 
 
     public getSchema(): string{
-this.updateIfNeeded()
+this.updateIfNeeded();
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.getSchema();
+
+                        ;
     
 }
 
 
     public getServer(): string{
-this.updateIfNeeded()
+this.updateIfNeeded();
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.getServer();
+
+                        ;
     
 }
 
 
     public getPort(): string{
-this.updateIfNeeded()
+this.updateIfNeeded();
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.getPort();
+
+                        ;
     
 }
 

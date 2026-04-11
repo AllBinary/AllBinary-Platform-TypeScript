@@ -37,7 +37,8 @@ var whatChanged = whatChanged
 
                             //For kotlin this is before the body of the constructor.
                     
-this.whatChanged= whatChanged
+this.whatChanged= whatChanged;
+    
 }
 
 
@@ -57,6 +58,8 @@ this.whatChanged= whatChanged
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getSource();
+
+                        ;
     
 }
 

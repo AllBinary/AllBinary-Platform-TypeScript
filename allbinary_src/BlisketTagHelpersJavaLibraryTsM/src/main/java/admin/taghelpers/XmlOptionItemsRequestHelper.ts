@@ -18,13 +18,16 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { Calendar } from "../../java/util/Calendar.js";
 
     
 import { HashMap } from "../../java/util/HashMap.js";
 
     
-import { Vector } from "../../java/util/Vector.js";
+
+//import { Vector } from "../../java/util/Vector.js";
 
     
 import { HttpServletRequest } from "../../javax/servlet/http/HttpServletRequest.js";
@@ -67,47 +70,62 @@ export class XmlOptionItemsRequestHelper extends ModifyTable {
     private timeEntered: string
 
     private lastModified: string
-public constructor (hashMap: HashMap<Any, Any>, pageContext: PageContext){
+public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
             var hashMap = hashMap
 var pageContext = pageContext
-this.request= pageContext!.getRequest() as HttpServletRequest
-this.getFormData()
+this.request= pageContext!.getRequest();
+
+                         as HttpServletRequest;
+    
+this.getFormData();
+    
 }
 
 
     public getFormData(){
-this.id= request.getParameter(BasicItemData.ID)
-this.xmlFileStatus= request.getParameter(XmlOptionItemData.XML_FILE_STATUS)
-this.optionXmlFile= request.getParameter(XmlOptionItemData.OPTION_XML_FILE)
-this.timeEntered= request.getParameter(EntryData.getInstance()!.TIMECREATED)
-this.lastModified= request.getParameter(EntryData.getInstance()!.LASTMODIFIED)
+this.id= request.getParameter(BasicItemData.ID);
+    
+this.xmlFileStatus= request.getParameter(XmlOptionItemData.XML_FILE_STATUS);
+    
+this.optionXmlFile= request.getParameter(XmlOptionItemData.OPTION_XML_FILE);
+    
+this.timeEntered= request.getParameter(EntryData.getInstance()!.TIMECREATED);
+    
+this.lastModified= request.getParameter(EntryData.getInstance()!.LASTMODIFIED);
+    
 }
 
 
-    getHashMap(): HashMap<Any, Any>{
+    getHashMap(): HashMap<any, any>{
 
-    var values: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var values: HashMap<any, any> = new HashMap<any, any>();
         
         
-
-values.put(BasicItemData.ID, this.id)
-values.put(XmlOptionItemData.XML_FILE_STATUS, this.xmlFileStatus)
-values.put(XmlOptionItemData.OPTION_XML_FILE, this.optionXmlFile)
+;
+    
+values.put(BasicItemData.ID, this.id);
+    
+values.put(XmlOptionItemData.XML_FILE_STATUS, this.xmlFileStatus);
+    
+values.put(XmlOptionItemData.OPTION_XML_FILE, this.optionXmlFile);
+    
 
     var calendar: Calendar = Calendar.getInstance()!;
         
         
-
+;
+    
 
     var time: string = new calendar.getTimeInMillis() as Long.
-                            toString().toCharArray().concatToString()
-                                ;
+                            toString();
         
         
-
-values.put(EntryData.getInstance()!.LASTMODIFIED, time)
+;
+    
+values.put(EntryData.getInstance()!.LASTMODIFIED, time);
+    
 
 
 
@@ -124,35 +142,45 @@ values.put(EntryData.getInstance()!.LASTMODIFIED, time)
     var calendar: Calendar = Calendar.getInstance()!;
         
         
-
+;
+    
 
     var time: string = new calendar.getTimeInMillis() as Long.
-                            toString().toCharArray().concatToString()
-                                ;
+                            toString();
         
         
-
+;
+    
 
     var values: Vector = new Vector();
         
         
-
-values.add(this.id)
-values.add(this.xmlFileStatus)
-values.add(this.optionXmlFile)
-values.add(time)
-values.add(time)
-XmlOptionItemsEntityFactory.getInstance()!.getXmlOptionItemsEntityInstance()!.insert(values)
+;
+    
+values.add(this.id);
+    
+values.add(this.xmlFileStatus);
+    
+values.add(this.optionXmlFile);
+    
+values.add(time);
+    
+values.add(time);
+    
+XmlOptionItemsEntityFactory.getInstance()!.getXmlOptionItemsEntityInstance()!.insert(values);
+    
 
     var success: string = "Successfully inserted " +id +" into items table";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put(success, this, "insert()")
+                                    logUtil!.put(success, this, "insert()");
+    
 
                                     }
                                 
@@ -162,18 +190,22 @@ XmlOptionItemsEntityFactory.getInstance()!.getXmlOptionItemsEntityInstance()!.in
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to insert " +id +" into items table";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "inserts()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "inserts()", e);
+    
 
                                     }
                                 
@@ -191,17 +223,20 @@ XmlOptionItemsEntityFactory.getInstance()!.getXmlOptionItemsEntityInstance()!.in
     public delete(): string{
 
         try {
-            XmlOptionItemsEntityFactory.getInstance()!.getXmlOptionItemsEntityInstance()!.delete(id)
+            XmlOptionItemsEntityFactory.getInstance()!.getXmlOptionItemsEntityInstance()!.delete(id);
+    
 
     var success: string = "Successfully deleted";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put(success, this, "delete()")
+                                    logUtil!.put(success, this, "delete()");
+    
 
                                     }
                                 
@@ -211,18 +246,22 @@ XmlOptionItemsEntityFactory.getInstance()!.getXmlOptionItemsEntityInstance()!.in
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to delete";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "delete()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "delete()", e);
+    
 
                                     }
                                 
@@ -244,18 +283,22 @@ XmlOptionItemsEntityFactory.getInstance()!.getXmlOptionItemsEntityInstance()!.in
     var success: string = "Update Successful";
         
         
+;
+    
 
-
-    var values: HashMap<Any, Any> = this.getHashMap()!;
+    var values: HashMap<any, any> = this.getHashMap()!;
         
         
-
-XmlOptionItemsEntityFactory.getInstance()!.getXmlOptionItemsEntityInstance()!.update(values)
+;
+    
+XmlOptionItemsEntityFactory.getInstance()!.getXmlOptionItemsEntityInstance()!.update(values);
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put(id +" " +success, this, "update()")
+                                    logUtil!.put(id +" " +success, this, "update()");
+    
 
                                     }
                                 
@@ -265,18 +308,22 @@ XmlOptionItemsEntityFactory.getInstance()!.getXmlOptionItemsEntityInstance()!.up
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to update: " +id;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "update()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "update()", e);
+    
 
                                     }
                                 

@@ -50,14 +50,17 @@ public constructor ()
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setTagHelperFactory(InventoryHelperFactory())
-this.setTagRequestHelperFactory(InventoryRequestHelperFactory())
+this.setTagHelperFactory(InventoryHelperFactory());
+    
+this.setTagRequestHelperFactory(InventoryRequestHelperFactory());
+    
 }
 
 
     public setStoreName(value: string){
 var value = value
-this.storeName= value
+this.storeName= value;
+    
 }
 
 
@@ -84,10 +87,14 @@ this.storeName= value
     var parentTag: Tag = this.getParent()!;
         
         
-
-ParentInventoryTagHelper.getInstance()!.isValid(this, parentTag)
-this.getPropertiesHashMap()!.put(AbTagData.PARENT, parentTag)
-this.getPropertiesHashMap()!.put(StoreFrontData.getInstance()!.NAME, this.storeName)
+;
+    
+ParentInventoryTagHelper.getInstance()!.isValid(this, parentTag);
+    
+this.getPropertiesHashMap()!.put(AbTagData.PARENT, parentTag);
+    
+this.getPropertiesHashMap()!.put(StoreFrontData.getInstance()!.NAME, this.storeName);
+    
 
                                     }
                                 
@@ -96,6 +103,8 @@ this.getPropertiesHashMap()!.put(StoreFrontData.getInstance()!.NAME, this.storeN
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.doStartTag();
+
+                        ;
     
 
                                     }
@@ -109,9 +118,12 @@ this.getPropertiesHashMap()!.put(StoreFrontData.getInstance()!.NAME, this.storeN
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return SKIP_BODY;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
+    
 
 
 

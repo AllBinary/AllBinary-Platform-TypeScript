@@ -36,7 +36,7 @@ export class ScrollSelectionFormNoneFactory
          {
         
 
-    private static readonly instance: ScrollSelectionForm = new ScrollSelectionForm(StringUtil.getInstance()!.EMPTY_STRING, new Array(0), RectangleFactory.SINGLETON, FormTypeFactory.getInstance()!.HORIZONTAL_FORM, 0, BasicColorFactory.getInstance()!.BLACK, BasicColorFactory.getInstance()!.WHITE);
+    private static readonly instance: ScrollSelectionForm = new ScrollSelectionForm(StringUtil.getInstance()!.EMPTY_STRING, [], RectangleFactory.SINGLETON, FormTypeFactory.getInstance()!.HORIZONTAL_FORM, 0, BasicColorFactory.getInstance()!.BLACK, BasicColorFactory.getInstance()!.WHITE);
         
         
 

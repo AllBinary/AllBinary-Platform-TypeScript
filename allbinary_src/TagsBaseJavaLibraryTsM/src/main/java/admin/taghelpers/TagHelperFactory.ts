@@ -43,7 +43,7 @@ export class TagHelperFactory
 
                 //@Throws(Error::class, LicensingException::class)
             
-    public getInstance(hashMap: HashMap<Any, Any>, pageContext: PageContext): any = {}{
+    public getInstance(hashMap: HashMap<any, any>, pageContext: PageContext): any = {}{
     //var hashMap = hashMap
     //var pageContext = pageContext
 

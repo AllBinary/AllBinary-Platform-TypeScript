@@ -68,8 +68,10 @@ protected constructor (gameInputMappingArray: GameInputMapping[], basicColor: Ba
 
                             //For kotlin this is before the body of the constructor.
                     
-this.gameInputMappingArray= gameInputMappingArray
-this.update(NONE, NONE)
+this.gameInputMappingArray= gameInputMappingArray;
+    
+this.update(NONE, NONE);
+    
 }
 
 
@@ -80,37 +82,45 @@ this.update(NONE, NONE)
     var gameKeyMapping: PersistentInputMapping = PlatformInputMappingFactory.getInstance()!.getPersistentInputMappingInstance()!;
         
         
-
+;
+    
 
     var EQUAL: string = " = ";
         
         
-
+;
+    
 
     var stringMaker: StringMaker = new StringMaker();
         
         
-
+;
+    
 
     var size: number = gameInputMappingArray!.length
                 ;
         
         
-
+;
+    
 
     var keyInfo: string[] = new Array(size);
         
         
-
+;
+    
 
     var gameInputMapping: GameInputMapping
-
+;
+    
 
     var gameKey: GameKey
-
+;
+    
 
     var list: BasicArrayList
-
+;
+    
 
 
 
@@ -121,14 +131,20 @@ this.update(NONE, NONE)
         
 index < size; index++)
         {
-gameInputMapping= gameInputMappingArray[index]!
-gameKey= gameInputMapping!.getGameKey()
-list= gameKeyMapping!.getInputMapping()!.getMappedInput(gameKey)
-stringMaker!.delete(0, stringMaker!.length())
-keyInfo[index]= stringMaker!.append(gameInputMapping!.getName())!.append(EQUAL)!.append(this.get(list))!.toString()
+gameInputMapping= gameInputMappingArray[index]!;
+    
+gameKey= gameInputMapping!.getGameKey();
+    
+list= gameKeyMapping!.getInputMapping()!.getMappedInput(gameKey);
+    
+stringMaker!.delete(0, stringMaker!.length());
+    
+keyInfo[index]= stringMaker!.append(gameInputMapping!.getName())!.append(EQUAL)!.append(this.get(list))!.toString();
+    
 }
 
-super.setInputInfoP(keyInfo)
+super.setInputInfoP(keyInfo);
+    
 }
 
 
@@ -138,25 +154,30 @@ super.setInputInfoP(keyInfo)
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
         
         
-
+;
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
     var AND: string = "and ";
         
         
-
+;
+    
 
     var key: Input
-
+;
+    
 
     var size: number = keyList!.size()!;
         
         
-
+;
+    
 
 
 
@@ -167,8 +188,10 @@ super.setInputInfoP(keyInfo)
         
 index < size; index++)
         {
-key= keyList!.objectArray[index]! as Input
-stringBuffer!.append(key.getName())
+key= keyList!.objectArray[index]! as Input;
+    
+stringBuffer!.append(key.getName());
+    
 
                         if(index +1 < keyList!.size())
                         
@@ -177,7 +200,8 @@ stringBuffer!.append(key.getName())
                         if(keyList!.size() == 2)
                         
                                     {
-                                    stringBuffer!.append(commonSeps!.SPACE)!.append(AND)
+                                    stringBuffer!.append(commonSeps!.SPACE)!.append(AND);
+    
 
                                     }
                                 
@@ -186,13 +210,16 @@ stringBuffer!.append(key.getName())
                         if(index +2 == keyList!.size())
                         
                                     {
-                                    stringBuffer!.append(commonSeps!.COMMA_SEP)
-stringBuffer!.append(AND)
+                                    stringBuffer!.append(commonSeps!.COMMA_SEP);
+    
+stringBuffer!.append(AND);
+    
 
                                     }
                                 
                         else {
-                            stringBuffer!.append(commonSeps!.COMMA_SEP)
+                            stringBuffer!.append(commonSeps!.COMMA_SEP);
+    
 
                         }
                             
@@ -209,6 +236,8 @@ stringBuffer!.append(AND)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

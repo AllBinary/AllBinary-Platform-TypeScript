@@ -18,10 +18,13 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { HashMap } from "../../../../../../../../java/util/HashMap.js";
 
     
-import { Vector } from "../../../../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../../../../java/util/Vector.js";
 
     
 import { StoreFrontInterface } from "../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js";
@@ -53,22 +56,26 @@ public constructor (storeFrontInterface: StoreFrontInterface){
 
             super();
             var storeFrontInterface = storeFrontInterface
-this.totalInventorySaleValueMoney= Money()
+this.totalInventorySaleValueMoney= Money();
+    
 
     var inventoryEntityInterface: InventoryEntityInterface = InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!;
         
         
-
+;
+    
 
     var itemVector: Vector = inventoryEntityInterface!.getItems(storeFrontInterface)!;
         
         
-
+;
+    
 
     var size: number = itemVector!.length!;
         
         
-
+;
+    
 
 
 
@@ -80,23 +87,31 @@ this.totalInventorySaleValueMoney= Money()
 index < size; index++)
         {
 
-    var itemInterface: ItemInterface = itemVector!.get(index) as ItemInterface;
-        
-        
+    var itemInterface: ItemInterface = itemVector!.get(index);
 
+                         as ItemInterface;
+        
+        
+;
+    
 
     var numberInStock: number = Integer.valueOf(itemInterface!.getNumber())!.toInt()!;
         
         
-
-this.totalNumberOfItems= this.totalNumberOfItems +numberInStock
+;
+    
+this.totalNumberOfItems= this.totalNumberOfItems +numberInStock;
+    
 
     var itemPriceMoney: Money = itemInterface!.getPrice()!;
         
         
-
-itemPriceMoney!.multiply(numberInStock)
-this.totalInventorySaleValueMoney!.add(itemPriceMoney!.toString())
+;
+    
+itemPriceMoney!.multiply(numberInStock);
+    
+this.totalInventorySaleValueMoney!.add(itemPriceMoney!.toString());
+    
 }
 
 }
@@ -122,14 +137,17 @@ this.totalInventorySaleValueMoney!.add(itemPriceMoney!.toString())
 }
 
 
-    public toHashMap(): HashMap<Any, Any>{
+    public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
         
         
-
-hashMap!.put(StoreFrontInventoryStatisticsData.getInstance()!.NUMBEROFITEMS, this.getNumber()!.toString())
-hashMap!.put(StoreFrontInventoryStatisticsData.getInstance()!.TOTALVALUE, this.getTotal()!.toString())
+;
+    
+hashMap!.put(StoreFrontInventoryStatisticsData.getInstance()!.NUMBEROFITEMS, this.getNumber()!.toString());
+    
+hashMap!.put(StoreFrontInventoryStatisticsData.getInstance()!.TOTALVALUE, this.getTotal()!.toString());
+    
 
 
 

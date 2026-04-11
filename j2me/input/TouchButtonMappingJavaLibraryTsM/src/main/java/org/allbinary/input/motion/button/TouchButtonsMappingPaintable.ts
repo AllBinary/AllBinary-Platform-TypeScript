@@ -58,23 +58,30 @@ public constructor (basicColor: BasicColor){
 
             super();
             var basicColor = basicColor
-this.foregroundColor= basicColor!.toInt()
-this.init()
+this.foregroundColor= basicColor!.toInt();
+    
+this.init();
+    
 }
 
 
     init(){
 
         try {
-            this.paintableTable= this.createPaintableTable()
-} catch(e: Exception)
+            this.paintableTable= this.createPaintableTable();
+    
+
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, "updateRectangle", e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, "updateRectangle", e);
+    
 }
 
 }
@@ -87,28 +94,33 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "updateRectangle", e)
     var totalColumns: number = touchButtonLocationHelper!.getTotalColumns()!;
         
         
-
+;
+    
 
     var totalRows: number = touchButtonLocationHelper!.getTotalRows()!;
         
         
-
+;
+    
 
     var paintableTable: Paintable[][] = Array(totalColumns) { arrayOfNulls<Paintable?>(totalRows) }
                                                             ;
         
         
-
+;
+    
 
     var cellPositionFactory: CellPositionFactory = CellPositionFactory.getInstance()!;
         
         
-
+;
+    
 
     var commonButtons: CommonButtons = CommonButtons.getInstance()!;
         
         
-
+;
+    
 
 
 
@@ -129,7 +141,8 @@ index >= 0; index--)
         
 rowIndex >= 0; rowIndex--)
         {
-paintableTable[index]![rowIndex]= TouchButton(BasicTouchInputFactory.getInstance()!.NONE, TouchButtonBlankResource.getInstance(), commonButtons!.NORMAL_BUTTON, cellPositionFactory!.getInstance(index, rowIndex), this.touchButtonLocationHelper!.getColumnsRemainderHalf(), this.touchButtonLocationHelper!.getRowsRemainderHalf())
+paintableTable[index]![rowIndex]= TouchButton(BasicTouchInputFactory.getInstance()!.NONE, TouchButtonBlankResource.getInstance(), commonButtons!.NORMAL_BUTTON, cellPositionFactory!.getInstance(index, rowIndex), this.touchButtonLocationHelper!.getColumnsRemainderHalf(), this.touchButtonLocationHelper!.getRowsRemainderHalf());
+    
 }
 
 }
@@ -149,12 +162,14 @@ var graphics = graphics
     var totalColumns: number = touchButtonLocationHelper!.getTotalColumns()!;
         
         
-
+;
+    
 
     var totalRows: number = touchButtonLocationHelper!.getTotalRows()!;
         
         
-
+;
+    
 
 
 
@@ -175,7 +190,8 @@ index >= 0; index--)
         
 rowIndex >= 0; rowIndex--)
         {
-paintableTable[index]![rowIndex]!.paint(graphics)
+paintableTable[index]![rowIndex]!.paint(graphics);
+    
 }
 
 }

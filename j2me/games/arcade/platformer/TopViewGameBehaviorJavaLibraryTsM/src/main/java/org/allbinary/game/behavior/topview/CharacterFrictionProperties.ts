@@ -39,9 +39,12 @@ public constructor (airFriction: number, waterFriction: number, collisionFrictio
             var airFriction = airFriction
 var waterFriction = waterFriction
 var collisionFriction = collisionFriction
-AIR_FRICTION_NOMINATOR= FrictionData.getFrictionDenominator() -airFriction
-COLLISION_FRICTION_NOMINATOR= FrictionData.getFrictionDenominator() -collisionFriction
-WATER_FRICTION_NOMINATOR= FrictionData.getFrictionDenominator() -waterFriction
+AIR_FRICTION_NOMINATOR= FrictionData.getFrictionDenominator() -airFriction;
+    
+COLLISION_FRICTION_NOMINATOR= FrictionData.getFrictionDenominator() -collisionFriction;
+    
+WATER_FRICTION_NOMINATOR= FrictionData.getFrictionDenominator() -waterFriction;
+    
 }
 
 

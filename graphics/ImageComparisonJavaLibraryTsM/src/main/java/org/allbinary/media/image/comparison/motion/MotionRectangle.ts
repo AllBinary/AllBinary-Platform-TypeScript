@@ -18,10 +18,13 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { awt } from "../../../../../../java/awt.js";
 
     
-import { Vector } from "../../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../../java/util/Vector.js";
 
     
 
@@ -38,8 +41,10 @@ public constructor (rectangle: Rectangle){
 
             super();
             var rectangle = rectangle
-this.setRectangle(rectangle)
-this.setPixelDeltaVector(Vector())
+this.setRectangle(rectangle);
+    
+this.setPixelDeltaVector(Vector());
+    
 }
 
 
@@ -55,7 +60,8 @@ this.setPixelDeltaVector(Vector())
 
     public setRectangle(rectangle: Rectangle){
 var rectangle = rectangle
-this.rectangle= rectangle
+this.rectangle= rectangle;
+    
 }
 
 
@@ -71,17 +77,24 @@ this.rectangle= rectangle
 
     public setPixelDeltaVector(pixelDeltaVector: Vector){
 var pixelDeltaVector = pixelDeltaVector
-this.pixelDeltaVector= pixelDeltaVector
+this.pixelDeltaVector= pixelDeltaVector;
+    
 }
 
 
     public clone(): any = {}{
 
-    var motionRectangle: MotionRectangle = new MotionRectangle(this.getRectangle()!.clone() as Rectangle);
-        
-        
+    var motionRectangle: MotionRectangle = new MotionRectangle(this.getRectangle()!.clone();
 
-motionRectangle!.setPixelDeltaVector(this.getPixelDeltaVector()!.clone() as Vector)
+                         as Rectangle);
+        
+        
+;
+    
+motionRectangle!.setPixelDeltaVector(this.getPixelDeltaVector()!.clone();
+
+                         as Vector);
+    
 
 
 

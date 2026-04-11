@@ -18,6 +18,8 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { Connection } from "../../../../../../../java/sql/Connection.js";
 
     
@@ -30,7 +32,8 @@ import { SQLException } from "../../../../../../../java/sql/SQLException.js";
 import { HashMap } from "../../../../../../../java/util/HashMap.js";
 
     
-import { Vector } from "../../../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../../../java/util/Vector.js";
 
     
 import { LogUtil } from "../../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
@@ -63,7 +66,7 @@ export class SqlConnectionPool
         
         
 
-    private connectionHashMap: HashMap<Any, Any> = 
+    private connectionHashMap: HashMap<any, any> = 
                 null
             ;
         
@@ -125,12 +128,14 @@ var url = url
                                 )
                         
                                     {
-                                    this.connectionHashMap= HashMap<Any, Any>()
+                                    this.connectionHashMap= HashMap<any, any>();
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGPOOL))
                         
                                     {
-                                    logUtil!.put(FIRST_NEW_CONNECTION_CREATED +url, this, METHOD_GET)
+                                    logUtil!.put(FIRST_NEW_CONNECTION_CREATED +url, this, METHOD_GET);
+    
 
                                     }
                                 
@@ -139,23 +144,29 @@ var url = url
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return DriverManager.getConnection(url);
+
+                        ;
     
 
                                     }
                                 
                         else {
                             
-    var connectionVector: Vector = this.connectionHashMap!.get(url as Object) as Vector;
-        
-        
+    var connectionVector: Vector = this.connectionHashMap!.get(url as Object);
 
+                         as Vector;
+        
+        
+;
+    
 
                         if(connectionVector == 
                                     null
                                 )
                         
                                     {
-                                    connectionVector= Vector()
+                                    connectionVector= Vector();
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGPOOL))
                         
@@ -164,12 +175,18 @@ var url = url
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(FIRST)
-stringBuffer!.append(NEW_CONNECTION_FOR)
-stringBuffer!.append(url)
-stringBuffer!.append(CREATED)
-logUtil!.put(stringBuffer!.toString(), this, METHOD_GET)
+;
+    
+stringBuffer!.append(FIRST);
+    
+stringBuffer!.append(NEW_CONNECTION_FOR);
+    
+stringBuffer!.append(url);
+    
+stringBuffer!.append(CREATED);
+    
+logUtil!.put(stringBuffer!.toString(), this, METHOD_GET);
+    
 
                                     }
                                 
@@ -178,6 +195,8 @@ logUtil!.put(stringBuffer!.toString(), this, METHOD_GET)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return DriverManager.getConnection(url);
+
+                        ;
     
 
                                     }
@@ -191,7 +210,8 @@ logUtil!.put(stringBuffer!.toString(), this, METHOD_GET)
                         
                                     {
                                     logUtil!.put(StringBuilder().
-                            append(NEW_CONNECTION_FOR)!.append(url)!.append(CREATED)!.toString(), this, METHOD_GET)
+                            append(NEW_CONNECTION_FOR)!.append(url)!.append(CREATED)!.toString(), this, METHOD_GET);
+    
 
                                     }
                                 
@@ -200,6 +220,8 @@ logUtil!.put(stringBuffer!.toString(), this, METHOD_GET)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return DriverManager.getConnection(url);
+
+                        ;
     
 
                                     }
@@ -209,12 +231,14 @@ logUtil!.put(stringBuffer!.toString(), this, METHOD_GET)
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
     var size: number = connectionVector!.length!;
         
         
-
+;
+    
 
 
 
@@ -226,27 +250,41 @@ logUtil!.put(stringBuffer!.toString(), this, METHOD_GET)
 i < size; i++)
         {
 
-    var sqlConnection: Connection = connectionVector!.get(i) as Connection;
+    var sqlConnection: Connection = connectionVector!.get(i);
+
+                         as Connection;
         
         
+;
+    
 
+                        if(!sqlConnection!.isClosed();
 
-                        if(!sqlConnection!.isClosed())
+                        )
                         
                                     {
-                                    connectionVector!.remove(sqlConnection)
-this.connectionHashMap!.put(url, connectionVector)
+                                    connectionVector!.remove(sqlConnection);
+    
+this.connectionHashMap!.put(url, connectionVector);
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGPOOL))
                         
                                     {
-                                    stringBuffer!.delete(0, stringBuffer!.length())
-stringBuffer!.append(NUMBER_OF_SQL_CONNECTIONS_FOR)
-stringBuffer!.append(url)
-stringBuffer!.append(IS)
-stringBuffer!.appendint(connectionVector!.length)
-logUtil!.put(NUMBER_OF_SQL_CONNECTION_VECTORS +this.connectionHashMap!.size, this, METHOD_GET)
-logUtil!.put(stringBuffer!.toString(), this, METHOD_GET)
+                                    stringBuffer!.delete(0, stringBuffer!.length());
+    
+stringBuffer!.append(NUMBER_OF_SQL_CONNECTIONS_FOR);
+    
+stringBuffer!.append(url);
+    
+stringBuffer!.append(IS);
+    
+stringBuffer!.appendint(connectionVector!.length);
+    
+logUtil!.put(NUMBER_OF_SQL_CONNECTION_VECTORS +this.connectionHashMap!.size, this, METHOD_GET);
+    
+logUtil!.put(stringBuffer!.toString(), this, METHOD_GET);
+    
 
                                     }
                                 
@@ -275,11 +313,16 @@ logUtil!.put(stringBuffer!.toString(), this, METHOD_GET)
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(NEW_CONNECTION_FOR)
-stringBuffer!.append(url)
-stringBuffer!.append(CREATED)
-logUtil!.put(stringBuffer!.toString(), this, METHOD_GET)
+;
+    
+stringBuffer!.append(NEW_CONNECTION_FOR);
+    
+stringBuffer!.append(url);
+    
+stringBuffer!.append(CREATED);
+    
+logUtil!.put(stringBuffer!.toString(), this, METHOD_GET);
+    
 
                                     }
                                 
@@ -288,6 +331,8 @@ logUtil!.put(stringBuffer!.toString(), this, METHOD_GET)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return DriverManager.getConnection(url);
+
+                        ;
     
 }
 
@@ -299,38 +344,50 @@ logUtil!.put(stringBuffer!.toString(), this, METHOD_GET)
 var url = url
 var sqlConnection = sqlConnection
 
-                        if(!sqlConnection!.isClosed())
+                        if(!sqlConnection!.isClosed();
+
+                        )
                         
                                     {
                                     
     var connectionVector: Vector
-
+;
+    
 
                         if(this.connectionHashMap == 
                                     null
                                 )
                         
                                     {
-                                    this.connectionHashMap= HashMap<Any, Any>()
-connectionVector= Vector()
-connectionVector!.add(sqlConnection)
+                                    this.connectionHashMap= HashMap<any, any>();
+    
+connectionVector= Vector();
+    
+connectionVector!.add(sqlConnection);
+    
 
                                     }
                                 
                         else {
-                            connectionVector= this.connectionHashMap!.get(url as Object) as Vector
+                            connectionVector= this.connectionHashMap!.get(url as Object);
+
+                         as Vector;
+    
 
                         if(connectionVector == 
                                     null
                                 )
                         
                                     {
-                                    connectionVector= Vector()
+                                    connectionVector= Vector();
+    
 
                                     }
                                 
-connectionVector!.add(sqlConnection)
-this.connectionHashMap!.put(url, connectionVector)
+connectionVector!.add(sqlConnection);
+    
+this.connectionHashMap!.put(url, connectionVector);
+    
 
                         }
                             
@@ -342,13 +399,20 @@ this.connectionHashMap!.put(url, connectionVector)
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(NUMBER_OF_SQL_CONNECTIONS_FOR)
-stringBuffer!.append(url)
-stringBuffer!.append(IS)
-stringBuffer!.appendint(connectionVector!.length)
-logUtil!.put(NUMBER_OF_SQL_CONNECTION_VECTORS +this.connectionHashMap!.size, this, METHOD_ADD)
-logUtil!.put(stringBuffer!.toString(), this, METHOD_ADD)
+;
+    
+stringBuffer!.append(NUMBER_OF_SQL_CONNECTIONS_FOR);
+    
+stringBuffer!.append(url);
+    
+stringBuffer!.append(IS);
+    
+stringBuffer!.appendint(connectionVector!.length);
+    
+logUtil!.put(NUMBER_OF_SQL_CONNECTION_VECTORS +this.connectionHashMap!.size, this, METHOD_ADD);
+    
+logUtil!.put(stringBuffer!.toString(), this, METHOD_ADD);
+    
 
                                     }
                                 
@@ -359,7 +423,8 @@ logUtil!.put(stringBuffer!.toString(), this, METHOD_ADD)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGPOOL))
                         
                                     {
-                                    logUtil!.put(CONNECTION_ALLREADY_CLOSED, this, METHOD_ADD)
+                                    logUtil!.put(CONNECTION_ALLREADY_CLOSED, this, METHOD_ADD);
+    
 
                                     }
                                 

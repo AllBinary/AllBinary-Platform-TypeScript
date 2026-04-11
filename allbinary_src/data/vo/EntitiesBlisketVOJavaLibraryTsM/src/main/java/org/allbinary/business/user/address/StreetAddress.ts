@@ -94,68 +94,98 @@ public constructor (node: Node){
     var nameNode: Node = DomSearchHelper.getNode(StreetAddressData.NAME, node.getChildNodes())!;
         
         
-
-this.name= DomNodeHelper.getTextNodeValue(nameNode)
+;
+    
+this.name= DomNodeHelper.getTextNodeValue(nameNode);
+    
 
     var streetNode: Node = DomSearchHelper.getNode(StreetAddressData.STREET, node.getChildNodes())!;
         
         
-
-this.street= DomNodeHelper.getTextNodeValue(streetNode)
+;
+    
+this.street= DomNodeHelper.getTextNodeValue(streetNode);
+    
 
     var cityNode: Node = DomSearchHelper.getNode(StreetAddressData.CITY, node.getChildNodes())!;
         
         
-
-this.city= DomNodeHelper.getTextNodeValue(cityNode)
+;
+    
+this.city= DomNodeHelper.getTextNodeValue(cityNode);
+    
 
     var stateNode: Node = DomSearchHelper.getNode(StreetAddressData.STATE, node.getChildNodes())!;
         
         
-
-this.state= DomNodeHelper.getTextNodeValue(stateNode)
+;
+    
+this.state= DomNodeHelper.getTextNodeValue(stateNode);
+    
 
     var codeNode: Node = DomSearchHelper.getNode(StreetAddressData.CODE, node.getChildNodes())!;
         
         
-
-this.code= DomNodeHelper.getTextNodeValue(codeNode)
+;
+    
+this.code= DomNodeHelper.getTextNodeValue(codeNode);
+    
 
     var countryNode: Node = DomSearchHelper.getNode(StreetAddressData.COUNTRY, node.getChildNodes())!;
         
         
-
-this.country= DomNodeHelper.getTextNodeValue(countryNode)
-this.log()
+;
+    
+this.country= DomNodeHelper.getTextNodeValue(countryNode);
+    
+this.log();
+    
 }
 
 public constructor (streetAddress: StreetAddress){
 
             super();
             var streetAddress = streetAddress
-this.id= streetAddress!.getId()
-this.name= streetAddress!.getName()
-this.street= streetAddress!.getStreet()
-this.city= streetAddress!.getCity()
-this.state= streetAddress!.getState()
-this.code= streetAddress!.getCode()
-this.country= streetAddress!.getCountry()
-this.isDefault= streetAddress!.isDefault()
-this.log()
+this.id= streetAddress!.getId();
+    
+this.name= streetAddress!.getName();
+    
+this.street= streetAddress!.getStreet();
+    
+this.city= streetAddress!.getCity();
+    
+this.state= streetAddress!.getState();
+    
+this.code= streetAddress!.getCode();
+    
+this.country= streetAddress!.getCountry();
+    
+this.isDefault= streetAddress!.isDefault();
+    
+this.log();
+    
 }
 
 public constructor (request: HttpServletRequest){
 
             super();
             var request = request
-this.setId(request.getParameter(StreetAddressData.ID))
-this.setName(request.getParameter(StreetAddressData.NAME))
-this.setStreet(request.getParameter(StreetAddressData.STREET))
-this.setCity(request.getParameter(StreetAddressData.CITY))
-this.setState(request.getParameter(StreetAddressData.STATE))
-this.setCode(request.getParameter(StreetAddressData.CODE))
-this.setCountry(request.getParameter(StreetAddressData.COUNTRY))
-this.log()
+this.setId(request.getParameter(StreetAddressData.ID));
+    
+this.setName(request.getParameter(StreetAddressData.NAME));
+    
+this.setStreet(request.getParameter(StreetAddressData.STREET));
+    
+this.setCity(request.getParameter(StreetAddressData.CITY));
+    
+this.setState(request.getParameter(StreetAddressData.STATE));
+    
+this.setCode(request.getParameter(StreetAddressData.CODE));
+    
+this.setCountry(request.getParameter(StreetAddressData.COUNTRY));
+    
+this.log();
+    
 }
 
 public constructor (name: string, street: string, city: string, state: string, code: string, country: string){
@@ -167,47 +197,81 @@ var city = city
 var state = state
 var code = code
 var country = country
-this.name= name
-this.street= street
-this.city= city
-this.state= state
-this.code= code
-this.country= country
-this.log()
+this.name= name;
+    
+this.street= street;
+    
+this.city= city;
+    
+this.state= state;
+    
+this.code= code;
+    
+this.country= country;
+    
+this.log();
+    
 }
 
-public constructor (address: HashMap<Any, Any>){
+public constructor (address: HashMap<any, any>){
 
             super();
             var address = address
-this.id= address.get(StreetAddressData.ID) as String
-this.name= address.get(StreetAddressData.NAME) as String
-this.street= address.get(StreetAddressData.STREET) as String
-this.city= address.get(StreetAddressData.CITY) as String
-this.state= address.get(StreetAddressData.STATE) as String
-this.code= address.get(StreetAddressData.CODE) as String
-this.country= address.get(StreetAddressData.COUNTRY) as String
+this.id= address.get(StreetAddressData.ID);
 
-    var def: string = address.get(StreetAddressData.DEFAULT) as String;
+                         as String;
+    
+this.name= address.get(StreetAddressData.NAME);
+
+                         as String;
+    
+this.street= address.get(StreetAddressData.STREET);
+
+                         as String;
+    
+this.city= address.get(StreetAddressData.CITY);
+
+                         as String;
+    
+this.state= address.get(StreetAddressData.STATE);
+
+                         as String;
+    
+this.code= address.get(StreetAddressData.CODE);
+
+                         as String;
+    
+this.country= address.get(StreetAddressData.COUNTRY);
+
+                         as String;
+    
+
+    var def: string = address.get(StreetAddressData.DEFAULT);
+
+                         as String;
         
         
-
+;
+    
 
                         if(def != 
                                     null
                                  && def.compareTo(StreetAddressData.DEFAULT) == 0)
                         
                                     {
-                                    this.isDefault= true
+                                    this.isDefault= true;
+    
 
                                     }
                                 
                         else {
-                            this.isDefault= false
+                            this.isDefault= false;
+    
 
                         }
                             
-this.log()
+this.log();
+    
 }
 
 
@@ -216,7 +280,8 @@ this.log()
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put("Created Address: \n" +this.toHashMap(), this, "log")
+                                    logUtil!.put("Created Address: \n" +this.toHashMap(), this, "log");
+    
 
                                     }
                                 
@@ -225,43 +290,50 @@ this.log()
 
     public setId(id: string){
 var id = id
-this.id= id
+this.id= id;
+    
 }
 
 
     public setName(name: string){
 var name = name
-this.name= name
+this.name= name;
+    
 }
 
 
     public setStreet(value: string){
 var value = value
-this.street= value
+this.street= value;
+    
 }
 
 
     public setCity(value: string){
 var value = value
-this.city= value
+this.city= value;
+    
 }
 
 
     public setState(value: string){
 var value = value
-this.state= value
+this.state= value;
+    
 }
 
 
     public setCode(value: string){
 var value = value
-this.code= value
+this.code= value;
+    
 }
 
 
     public setCountry(value: string){
 var value = value
-this.country= value
+this.country= value;
+    
 }
 
 
@@ -350,7 +422,8 @@ this.country= value
     var EMPTY_STRING: string = StringUtil.getInstance()!.EMPTY_STRING;
         
         
-
+;
+    
 
                         if(this.getName() == 
                                     null
@@ -390,7 +463,8 @@ this.country= value
     var EMPTY_STRING: string = StringUtil.getInstance()!.EMPTY_STRING;
         
         
-
+;
+    
 
                         if(this.getName() == 
                                     null
@@ -430,64 +504,91 @@ this.country= value
     var stringBuffer: StringBuilder = new StringBuilder();
         
         
-
-stringBuffer!.append("Address Failed To Validate - All fields must contain data.<br></br>")
+;
+    
+stringBuffer!.append("Address Failed To Validate - All fields must contain data.<br></br>");
+    
 
     var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
         
         
+;
+    
 
+                        if(!stringValidationUtil!.isValidRequired(this.getName(), StreetAddressData.MIN, StreetAddressData.MAX);
 
-                        if(!stringValidationUtil!.isValidRequired(this.getName(), StreetAddressData.MIN, StreetAddressData.MAX))
+                        )
                         
                                     {
-                                    stringBuffer!.append("Please enter a valid name")
-stringBuffer!.append("<br></br>")
+                                    stringBuffer!.append("Please enter a valid name");
+    
+stringBuffer!.append("<br></br>");
+    
 
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidRequired(this.getStreet(), StreetAddressData.MIN, StreetAddressData.MAX))
+                        if(!stringValidationUtil!.isValidRequired(this.getStreet(), StreetAddressData.MIN, StreetAddressData.MAX);
+
+                        )
                         
                                     {
-                                    stringBuffer!.append("Please enter a valid street")
-stringBuffer!.append("<br></br>")
+                                    stringBuffer!.append("Please enter a valid street");
+    
+stringBuffer!.append("<br></br>");
+    
 
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidRequired(this.getCity(), StreetAddressData.MIN, StreetAddressData.MAX))
+                        if(!stringValidationUtil!.isValidRequired(this.getCity(), StreetAddressData.MIN, StreetAddressData.MAX);
+
+                        )
                         
                                     {
-                                    stringBuffer!.append("Please enter a valid city")
-stringBuffer!.append("<br></br>")
+                                    stringBuffer!.append("Please enter a valid city");
+    
+stringBuffer!.append("<br></br>");
+    
 
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidRequired(this.getState(), StreetAddressData.MIN, StreetAddressData.MAX))
+                        if(!stringValidationUtil!.isValidRequired(this.getState(), StreetAddressData.MIN, StreetAddressData.MAX);
+
+                        )
                         
                                     {
-                                    stringBuffer!.append("Please enter a valid state")
-stringBuffer!.append("<br></br>")
+                                    stringBuffer!.append("Please enter a valid state");
+    
+stringBuffer!.append("<br></br>");
+    
 
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidRequired(this.getCode(), StreetAddressData.MIN, StreetAddressData.MAX))
+                        if(!stringValidationUtil!.isValidRequired(this.getCode(), StreetAddressData.MIN, StreetAddressData.MAX);
+
+                        )
                         
                                     {
-                                    stringBuffer!.append("Please enter a valid zipcode")
-stringBuffer!.append("<br></br>")
+                                    stringBuffer!.append("Please enter a valid zipcode");
+    
+stringBuffer!.append("<br></br>");
+    
 
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidRequired(this.getCountry(), StreetAddressData.MIN, StreetAddressData.MAX))
+                        if(!stringValidationUtil!.isValidRequired(this.getCountry(), StreetAddressData.MIN, StreetAddressData.MAX);
+
+                        )
                         
                                     {
-                                    stringBuffer!.append("Please enter a valid country")
-stringBuffer!.append("<br></br>")
+                                    stringBuffer!.append("Please enter a valid country");
+    
+stringBuffer!.append("<br></br>");
+    
 
                                     }
                                 
@@ -496,6 +597,8 @@ stringBuffer!.append("<br></br>")
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 
@@ -518,15 +621,19 @@ var document = document
     var node: Node = document.createElement(StreetAddressData.FORM)!;
         
         
-
-node.appendChild(this.toXmlNode(document))
+;
+    
+node.appendChild(this.toXmlNode(document));
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return node;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
@@ -536,8 +643,10 @@ node.appendChild(this.toXmlNode(document))
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, "toValidationInfoNode", e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, "toValidationInfoNode", e);
+    
 
                                     }
                                 
@@ -552,19 +661,27 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "toValidationInfoNode", e)
 }
 
 
-    public toHashMap(): HashMap<Any, Any>{
+    public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
         
         
-
-hashMap!.put(StreetAddressData.ID, this.id)
-hashMap!.put(StreetAddressData.NAME, this.name)
-hashMap!.put(StreetAddressData.STREET, this.street)
-hashMap!.put(StreetAddressData.CITY, this.city)
-hashMap!.put(StreetAddressData.STATE, this.state)
-hashMap!.put(StreetAddressData.CODE, this.code)
-hashMap!.put(StreetAddressData.COUNTRY, this.country)
+;
+    
+hashMap!.put(StreetAddressData.ID, this.id);
+    
+hashMap!.put(StreetAddressData.NAME, this.name);
+    
+hashMap!.put(StreetAddressData.STREET, this.street);
+    
+hashMap!.put(StreetAddressData.CITY, this.city);
+    
+hashMap!.put(StreetAddressData.STATE, this.state);
+    
+hashMap!.put(StreetAddressData.CODE, this.code);
+    
+hashMap!.put(StreetAddressData.COUNTRY, this.country);
+    
 
 
 
@@ -582,33 +699,39 @@ var document = document
     var stringUtil: StringUtil = StringUtil.getInstance()!;
         
         
+;
+    
 
-
-    var hashMap: HashMap<Any, Any> = this.toHashMap()!;
+    var hashMap: HashMap<any, any> = this.toHashMap()!;
         
         
-
+;
+    
 
     var keySet: Set = hashMap!.keys!;
         
         
+;
+    
 
-
-    var keyArray: any = {}[] = keySet!.toTypedArray()!;
+    var keyArray: any[] = keySet!.toTypedArray()!;
         
         
-
+;
+    
 
     var size: number = keyArray!.length
                 ;
         
         
-
+;
+    
 
     var node: Node = document.createElement(StreetAddressData.ADDRESS)!;
         
         
-
+;
+    
 
 
 
@@ -623,13 +746,18 @@ i < size; i++)
     var name: string = keyArray[i]! as String;
         
         
+;
+    
 
+    var value: string = stringUtil!.getInstance(hashMap!.get(name as Object);
 
-    var value: string = stringUtil!.getInstance(hashMap!.get(name as Object) as String)!;
+                         as String)!;
         
         
-
-node.appendChild(ModDomHelper.createNameValueNodes(document, name, value))
+;
+    
+node.appendChild(ModDomHelper.createNameValueNodes(document, name, value));
+    
 }
 
 

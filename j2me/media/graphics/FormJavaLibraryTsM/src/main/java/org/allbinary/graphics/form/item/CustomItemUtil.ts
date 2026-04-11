@@ -38,7 +38,7 @@ export class CustomItemUtil
 }
 
 
-    public readonly CUSTOM_ITEM_ARRAY: CustomItem[] = new Array(0);
+    public readonly CUSTOM_ITEM_ARRAY: CustomItem[] = [];
         
         
 

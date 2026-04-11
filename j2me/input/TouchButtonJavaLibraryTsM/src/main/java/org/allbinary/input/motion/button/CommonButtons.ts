@@ -59,12 +59,14 @@ private constructor (){
     var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
         
         
-
+;
+    
 
     var commonButtonSize: number = 128;
         
         
-
+;
+    
 
         while(commonButtonSize > 64)
         {
@@ -72,22 +74,26 @@ private constructor (){
     var totalColumns: number = displayInfo!.getLastWidth() /commonButtonSize;
         
         
-
+;
+    
 
     var totalRows: number = displayInfo!.getLastHeight() /commonButtonSize;
         
         
-
+;
+    
 
     var max: number = totalColumns;
         
         
-
+;
+    
 
                         if(totalRows > max)
                         
                                     {
-                                    max= totalRows
+                                    max= totalRows;
+    
 
                                     }
                                 
@@ -101,12 +107,16 @@ private constructor (){
 
                                     }
                                 
-commonButtonSize= commonButtonSize shr 1
+commonButtonSize= commonButtonSize shr 1;
+    
 }
 
-STANDARD_BUTTON_SIZE= commonButtonSize
-NORMAL_BUTTON= Rectangle(PointFactory.getInstance()!.ZERO_ZERO, STANDARD_BUTTON_SIZE, STANDARD_BUTTON_SIZE)
-LARGE_BUTTON= Rectangle(PointFactory.getInstance()!.ZERO_ZERO, STANDARD_BUTTON_SIZE shl 1, STANDARD_BUTTON_SIZE shl 1)
+STANDARD_BUTTON_SIZE= commonButtonSize;
+    
+NORMAL_BUTTON= Rectangle(PointFactory.getInstance()!.ZERO_ZERO, STANDARD_BUTTON_SIZE, STANDARD_BUTTON_SIZE);
+    
+LARGE_BUTTON= Rectangle(PointFactory.getInstance()!.ZERO_ZERO, STANDARD_BUTTON_SIZE shl 1, STANDARD_BUTTON_SIZE shl 1);
+    
 }
 
 

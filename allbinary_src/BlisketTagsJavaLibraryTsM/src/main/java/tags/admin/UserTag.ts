@@ -46,8 +46,10 @@ public constructor (){
 
     public setRole(value: string){
 var value = value
-this.role= value
-this.getPropertiesHashMap()!.put(UserRoleData.NAME, this.role)
+this.role= value;
+    
+this.getPropertiesHashMap()!.put(UserRoleData.NAME, this.role);
+    
 }
 
 
@@ -66,8 +68,10 @@ this.getPropertiesHashMap()!.put(UserRoleData.NAME, this.role)
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.NEW) == 0)
                         
                                     {
-                                    this.setName("New User View")
-this.setObjectFile("views.admin.user.NewUserView")
+                                    this.setName("New User View");
+    
+this.setObjectFile("views.admin.user.NewUserView");
+    
 
                                     }
                                 
@@ -75,8 +79,10 @@ this.setObjectFile("views.admin.user.NewUserView")
                         if(this.getCommand()!.compareTo(this.commonStrings!.INSERT) == 0 || this.getCommand()!.compareTo(SqlStrings.getInstance()!.INSERT_INTO) == 0)
                         
                                     {
-                                    this.setName("Add Validation User View")
-this.setObjectFile("views.admin.user.AddValidationUserView")
+                                    this.setName("Add Validation User View");
+    
+this.setObjectFile("views.admin.user.AddValidationUserView");
+    
 
                                     }
                                 
@@ -84,8 +90,10 @@ this.setObjectFile("views.admin.user.AddValidationUserView")
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.VIEW) == 0)
                         
                                     {
-                                    this.setName("Validation User View")
-this.setObjectFile("views.admin.user.ViewValidationUserView")
+                                    this.setName("Validation User View");
+    
+this.setObjectFile("views.admin.user.ViewValidationUserView");
+    
 
                                     }
                                 
@@ -93,8 +101,10 @@ this.setObjectFile("views.admin.user.ViewValidationUserView")
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.EDIT) == 0)
                         
                                     {
-                                    this.setName("Validation User View")
-this.setObjectFile("views.admin.user.EditValidationUserView")
+                                    this.setName("Validation User View");
+    
+this.setObjectFile("views.admin.user.EditValidationUserView");
+    
 
                                     }
                                 
@@ -102,8 +112,10 @@ this.setObjectFile("views.admin.user.EditValidationUserView")
                         if(this.getCommand()!.compareTo(this.commonStrings!.UPDATE) == 0 || this.getCommand()!.compareTo(SqlStrings.getInstance()!.UPDATE) == 0)
                         
                                     {
-                                    this.setName("Update Validation User View")
-this.setObjectFile("views.admin.user.UpdateValidationUserView")
+                                    this.setName("Update Validation User View");
+    
+this.setObjectFile("views.admin.user.UpdateValidationUserView");
+    
 
                                     }
                                 
@@ -111,8 +123,10 @@ this.setObjectFile("views.admin.user.UpdateValidationUserView")
                         if(this.getCommand()!.compareTo(this.commonStrings!.DELETE) == 0)
                         
                                     {
-                                    this.setName("Delete Validation User View")
-this.setObjectFile("views.admin.user.DeleteValidationUserView")
+                                    this.setName("Delete Validation User View");
+    
+this.setObjectFile("views.admin.user.DeleteValidationUserView");
+    
 
                                     }
                                 
@@ -173,6 +187,8 @@ this.setObjectFile("views.admin.user.DeleteValidationUserView")
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.doStartTag();
+
+                        ;
     
 
                                     }
@@ -181,9 +197,12 @@ this.setObjectFile("views.admin.user.DeleteValidationUserView")
 
 
                             throw Error("Command Null")
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
+    
 
 
 

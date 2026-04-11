@@ -45,28 +45,34 @@ public constructor (costFromStart: number, costToGoal: number){
             super();
                 //var costFromStart = costFromStart
     //var costToGoal = costToGoal
-this.costFromStartP= costFromStart
-this.costToEndP= costToGoal
-this.setTotalCost()
+this.costFromStartP= costFromStart;
+    
+this.costToEndP= costToGoal;
+    
+this.setTotalCost();
+    
 }
 
 
     public setCostToEnd(costToEnd: number){
     //var costToEnd = costToEnd
-this.costToEndP= costToEnd
+this.costToEndP= costToEnd;
+    
 }
 
 
     public setTotalCost(totalCost: number){
     //var totalCost = totalCost
-this.totalCostP= totalCost
+this.totalCostP= totalCost;
+    
 }
 
 
                 //@Throws(Error::class)
             
     public setTotalCost(){
-this.totalCostP= costFromStartP +costToEndP
+this.totalCostP= costFromStartP +costToEndP;
+    
 
                         if(this.totalCostP > pathFindingNodeCostInfoData!.MAX_NODE_COST)
                         
@@ -83,13 +89,15 @@ this.totalCostP= costFromStartP +costToEndP
 
     public setCostFromStart(cost: number){
     //var cost = cost
-this.costFromStartP= cost
+this.costFromStartP= cost;
+    
 }
 
 
     public addCostFromStart(cost: number){
     //var cost = cost
-this.costFromStartP += cost
+this.costFromStartP += cost;
+    
 }
 
 
@@ -100,6 +108,8 @@ var pathFindingNodeCostInfo = pathFindingNodeCostInfo
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return java.lang.Long.compare(this.totalCostP, pathFindingNodeCostInfo!.totalCostP);
+
+                        ;
     
 }
 
@@ -109,20 +119,31 @@ var pathFindingNodeCostInfo = pathFindingNodeCostInfo
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(this::class.toString()!)
-stringBuffer!.append(CommonLabels.getInstance()!.COLON_SEP)
-stringBuffer!.append("CostFromStart: ")
-stringBuffer!.appendlong(this.costFromStartP)
-stringBuffer!.append(" CostToEnd: ")
-stringBuffer!.appendlong(this.costToEndP)
-stringBuffer!.append(" TotalCost: ")
-stringBuffer!.appendlong(this.totalCostP)
+;
+    
+stringBuffer!.append(this.constructor.name.toString()!);
+    
+stringBuffer!.append(CommonLabels.getInstance()!.COLON_SEP);
+    
+stringBuffer!.append("CostFromStart: ");
+    
+stringBuffer!.appendlong(this.costFromStartP);
+    
+stringBuffer!.append(" CostToEnd: ");
+    
+stringBuffer!.appendlong(this.costToEndP);
+    
+stringBuffer!.append(" TotalCost: ");
+    
+stringBuffer!.appendlong(this.totalCostP);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

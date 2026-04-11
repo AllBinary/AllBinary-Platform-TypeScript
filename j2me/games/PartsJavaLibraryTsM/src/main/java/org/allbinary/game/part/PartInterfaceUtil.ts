@@ -24,7 +24,7 @@ export class PartInterfaceUtil
          {
         
 
-    private static readonly SINGLETON: PartInterface[] = new Array(0);
+    private static readonly SINGLETON: PartInterface[] = [];
         
         
 

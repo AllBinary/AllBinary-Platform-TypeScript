@@ -43,7 +43,7 @@ export class AllBinaryLayerManager extends LayerManager {
         
         
 
-    private basicLayerProcessorArray: LayerProcessor[] = new Array(0);
+    private basicLayerProcessorArray: LayerProcessor[] = [];
         
         
 protected constructor (){
@@ -64,7 +64,8 @@ protected constructor (){
 
     public setLayerProcessorArray(layerProcessorArray: LayerProcessor[]){
     //var layerProcessorArray = layerProcessorArray
-this.basicLayerProcessorArray= layerProcessorArray
+this.basicLayerProcessorArray= layerProcessorArray;
+    
 }
 
 
@@ -74,7 +75,8 @@ this.basicLayerProcessorArray= layerProcessorArray
                 ;
         
         
-
+;
+    
 
 
 
@@ -89,7 +91,8 @@ index < size; index++)
     var layerProcessorInterface: LayerProcessor = basicLayerProcessorArray[index]!;
         
         
-
+;
+    
 }
 
 }
@@ -100,11 +103,15 @@ index < size; index++)
     public append(layerInterface: AllBinaryLayer){
     //var layerInterface = layerInterface
 
-                        if(!this.contains(layerInterface))
+                        if(!this.contains(layerInterface);
+
+                        )
                         
                                     {
-                                    this.appendProcessors(layerInterface)
-super.append(layerInterface)
+                                    this.appendProcessors(layerInterface);
+    
+super.append(layerInterface);
+    
 
                                     }
                                 
@@ -117,11 +124,15 @@ super.append(layerInterface)
     //var layerInterface = layerInterface
     //var index = index
 
-                        if(!this.contains(layerInterface))
+                        if(!this.contains(layerInterface);
+
+                        )
                         
                                     {
-                                    this.appendProcessors(layerInterface)
-super.append(layerInterface, index)
+                                    this.appendProcessors(layerInterface);
+    
+super.append(layerInterface, index);
+    
 
                                     }
                                 
@@ -132,11 +143,14 @@ super.append(layerInterface, index)
             
     appendProcessors(layerInterface: AllBinaryLayer){
     //var layerInterface = layerInterface
-this.createLayerManagerEvent!.setLayerInterface(layerInterface)
-layerManagerEventHandler!.fireEvent(this.createLayerManagerEvent)
+this.createLayerManagerEvent!.setLayerInterface(layerInterface);
+    
+layerManagerEventHandler!.fireEvent(this.createLayerManagerEvent);
+    
 
     var layerProcessorInterface: LayerProcessor
-
+;
+    
 
 
 
@@ -148,12 +162,14 @@ layerManagerEventHandler!.fireEvent(this.createLayerManagerEvent)
         
 --index >= 0; )
         {
-layerProcessorInterface= basicLayerProcessorArray[index]!
+layerProcessorInterface= basicLayerProcessorArray[index]!;
+    
 
                         if(layerProcessorInterface!.isProcessorLayer(layerInterface))
                         
                                     {
-                                    layerProcessorInterface!.getLayerManager()!.append(layerInterface)
+                                    layerProcessorInterface!.getLayerManager()!.append(layerInterface);
+    
 
                                     }
                                 
@@ -167,11 +183,14 @@ layerProcessorInterface= basicLayerProcessorArray[index]!
 
     public remove(layerInterface: AllBinaryLayer){
     //var layerInterface = layerInterface
-deleteLayerManagerEvent!.setLayerInterface(layerInterface)
-layerManagerEventHandler!.fireDeleteEvent(this.deleteLayerManagerEvent)
+deleteLayerManagerEvent!.setLayerInterface(layerInterface);
+    
+layerManagerEventHandler!.fireDeleteEvent(this.deleteLayerManagerEvent);
+    
 
     var layerProcessorInterface: LayerProcessor
-
+;
+    
 
 
 
@@ -183,11 +202,14 @@ layerManagerEventHandler!.fireDeleteEvent(this.deleteLayerManagerEvent)
         
 --index >= 0; )
         {
-layerProcessorInterface= basicLayerProcessorArray[index]!
-layerProcessorInterface!.getLayerManager()!.remove(layerInterface)
+layerProcessorInterface= basicLayerProcessorArray[index]!;
+    
+layerProcessorInterface!.getLayerManager()!.remove(layerInterface);
+    
 }
 
-super.remove(layerInterface)
+super.remove(layerInterface);
+    
 }
 
 
@@ -196,13 +218,15 @@ super.remove(layerInterface)
     public process(){
 
     var layerProcessorInterface: LayerProcessor
-
+;
+    
 
     var size: number = this.basicLayerProcessorArray!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -213,8 +237,10 @@ super.remove(layerInterface)
         
 index < size; index++)
         {
-layerProcessorInterface= basicLayerProcessorArray[index]!
-layerProcessorInterface!.process(this)
+layerProcessorInterface= basicLayerProcessorArray[index]!;
+    
+layerProcessorInterface!.process(this);
+    
 }
 
 }
@@ -225,13 +251,15 @@ layerProcessorInterface!.process(this)
     public cleanup(){
 
     var layerProcessorInterface: LayerProcessor
-
+;
+    
 
     var size: number = this.basicLayerProcessorArray!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -242,11 +270,14 @@ layerProcessorInterface!.process(this)
         
 index < size; index++)
         {
-layerProcessorInterface= basicLayerProcessorArray[index]!
-layerProcessorInterface!.getLayerManager()!.cleanup()
+layerProcessorInterface= basicLayerProcessorArray[index]!;
+    
+layerProcessorInterface!.getLayerManager()!.cleanup();
+    
 }
 
-super.cleanup()
+super.cleanup();
+    
 }
 
 

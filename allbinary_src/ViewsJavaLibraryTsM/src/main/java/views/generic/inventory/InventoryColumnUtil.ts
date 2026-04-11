@@ -18,10 +18,13 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { HashMap } from "../../../java/util/HashMap.js";
 
     
-import { Vector } from "../../../java/util/Vector.js";
+
+//import { Vector } from "../../../java/util/Vector.js";
 
     
 import { BasicItemData } from "../../../org/allbinary/business/user/commerce/inventory/item/BasicItemData.js";
@@ -64,22 +67,26 @@ export class InventoryColumnUtil
 var inventoryEntity = inventoryEntity
 var category = category
 var column = column
-logUtil!.put("Start Category: " +category, this, "getKeywords")
+logUtil!.put("Start Category: " +category, this, "getKeywords");
+    
 
     var keywords: Vector = new Vector();
         
         
-
+;
+    
 
     var vectorOfHashMaps: Vector = inventoryEntity!.getAllRows()!;
         
         
-
+;
+    
 
     var size: number = vectorOfHashMaps!.length!;
         
         
-
+;
+    
 
 
 
@@ -91,20 +98,29 @@ logUtil!.put("Start Category: " +category, this, "getKeywords")
 index < size; index++)
         {
 
-    var hashMap: HashMap<Any, Any> = vectorOfHashMaps!.get(index as Object) as HashMap<Any, Any>;
+    var hashMap: HashMap<any, any> = vectorOfHashMaps!.get(index as Object);
+
+                         as HashMap<any, any>;
         
         
+;
+    
 
+    var categoryName: string = hashMap!.get(BasicItemData.CATEGORY);
 
-    var categoryName: string = hashMap!.get(BasicItemData.CATEGORY) as String;
+                         as String;
         
         
+;
+    
 
+                        if(!StringValidationUtil.getInstance()!.isEmpty(categoryName);
 
-                        if(!StringValidationUtil.getInstance()!.isEmpty(categoryName) && categoryName!.startsWith(category))
+                         && categoryName!.startsWith(category))
                         
                                     {
-                                    keywords.add(hashMap!.get(column as Object))
+                                    keywords.add(hashMap!.get(column as Object));
+    
 
                                     }
                                 

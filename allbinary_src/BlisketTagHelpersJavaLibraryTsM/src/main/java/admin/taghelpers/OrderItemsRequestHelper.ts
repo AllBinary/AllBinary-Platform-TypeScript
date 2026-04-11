@@ -57,20 +57,27 @@ export class OrderItemsRequestHelper extends TagHelper {
     private groupId: string
 
     private status: string
-public constructor (hashMap: HashMap<Any, Any>, pageContext: PageContext){
+public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
             var hashMap = hashMap
 var pageContext = pageContext
-this.request= pageContext!.getRequest() as HttpServletRequest
-this.getFormData()
+this.request= pageContext!.getRequest();
+
+                         as HttpServletRequest;
+    
+this.getFormData();
+    
 }
 
 
     getFormData(){
-this.id= request.getParameter(OrderData.ID)
-this.groupId= request.getParameter(ShippingMethodData.GROUP)
-this.status= request.getParameter(OrderHistoryData.STATUS)
+this.id= request.getParameter(OrderData.ID);
+    
+this.groupId= request.getParameter(ShippingMethodData.GROUP);
+    
+this.status= request.getParameter(OrderHistoryData.STATUS);
+    
 }
 
 
@@ -87,13 +94,16 @@ var newStatus = newStatus
     var success: string = "Status successfully set to: " +newStatus;
         
         
-
-OrderItemsEntityFactory.getInstance()!.setStatus(id, groupId, newStatus)
+;
+    
+OrderItemsEntityFactory.getInstance()!.setStatus(id, groupId, newStatus);
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put(success, this, "setOrderStatus(newStatus)")
+                                    logUtil!.put(success, this, "setOrderStatus(newStatus)");
+    
 
                                     }
                                 
@@ -103,18 +113,22 @@ OrderItemsEntityFactory.getInstance()!.setStatus(id, groupId, newStatus)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to view order table";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "setOrderStatus(newStatus)", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "setOrderStatus(newStatus)", e);
+    
 
                                     }
                                 
@@ -136,13 +150,16 @@ OrderItemsEntityFactory.getInstance()!.setStatus(id, groupId, newStatus)
     var success: string = "Status successfully set to: " +this.status;
         
         
-
-OrderItemsEntityFactory.getInstance()!.setStatus(id, groupId, this.status)
+;
+    
+OrderItemsEntityFactory.getInstance()!.setStatus(id, groupId, this.status);
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put(success, this, "setOrderStatus(newStatus)")
+                                    logUtil!.put(success, this, "setOrderStatus(newStatus)");
+    
 
                                     }
                                 
@@ -152,18 +169,22 @@ OrderItemsEntityFactory.getInstance()!.setStatus(id, groupId, this.status)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to view order table";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "setOrderStatus(newStatus)", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "setOrderStatus(newStatus)", e);
+    
 
                                     }
                                 

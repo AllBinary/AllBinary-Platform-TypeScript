@@ -123,7 +123,8 @@ public constructor (ownerLayer: PathFindingLayerInterface, sound: Sound)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.ownerLayer= ownerLayer
+this.ownerLayer= ownerLayer;
+    
 }
 
 
@@ -131,22 +132,26 @@ this.ownerLayer= ownerLayer
             
     public setAllBinaryGameLayerManager(allBinaryGameLayerManager: AllBinaryGameLayerManager){
     //var allBinaryGameLayerManager = allBinaryGameLayerManager
-super.setAllBinaryGameLayerManager(allBinaryGameLayerManager)
+super.setAllBinaryGameLayerManager(allBinaryGameLayerManager);
+    
 
     var geographicMapCompositeInterface: GeographicMapCompositeInterface = allBinaryGameLayerManager as GeographicMapCompositeInterface;
         
         
-
+;
+    
 
     var geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;
         
         
-
+;
+    
 
     var tiledLayer: AllBinaryTiledLayer = geographicMapInterface!.getAllBinaryTiledLayer()!;
         
         
-
+;
+    
 
                         if(paths != basicArrayListUtil!.NULL_ARRAY_OF_ARRAY)
                         
@@ -158,9 +163,11 @@ super.setAllBinaryGameLayerManager(allBinaryGameLayerManager)
 
                                     }
                                 
-this.endList= this.ownerLayer!.getEndGeographicMapCellPositionList()
+this.endList= this.ownerLayer!.getEndGeographicMapCellPositionList();
+    
 this.paths= Array(tiledLayer!.getColumns()) { arrayOfNulls<BasicArrayList?>(tiledLayer!.getRows()) }
-                                                            
+                                                            ;
+    
 }
 
 
@@ -191,12 +198,14 @@ this.paths= Array(tiledLayer!.getColumns()) { arrayOfNulls<BasicArrayList?>(tile
     var pathsList: BasicArrayList = this.paths[columnIndex]![rowIndex]!;
         
         
-
+;
+    
 
                         if(pathsList != basicArrayListUtil!.getImmutableInstance())
                         
                                     {
-                                    BasicGeographicMapExtractedPathsCacheFactory.getInstance()!.release(pathsList)
+                                    BasicGeographicMapExtractedPathsCacheFactory.getInstance()!.release(pathsList);
+    
 
                                     }
                                 
@@ -228,13 +237,16 @@ this.paths= Array(tiledLayer!.getColumns()) { arrayOfNulls<BasicArrayList?>(tile
     var pathsList: BasicArrayList = this.paths[geographicMapCellPosition!.getColumn()]![geographicMapCellPosition!.getRow()]!;
         
         
-
+;
+    
 
                         if(pathsList == basicArrayListUtil!.getImmutableInstance())
                         
                                     {
-                                    pathsList= this.createPaths(geographicMapCellPosition)
-this.paths[geographicMapCellPosition!.getColumn()]![geographicMapCellPosition!.getRow()]= pathsList
+                                    pathsList= this.createPaths(geographicMapCellPosition);
+    
+this.paths[geographicMapCellPosition!.getColumn()]![geographicMapCellPosition!.getRow()]= pathsList;
+    
 
                                     }
                                 
@@ -250,10 +262,13 @@ this.paths[geographicMapCellPosition!.getColumn()]![geographicMapCellPosition!.g
     getEndGeographicMapCellPosition(startGeographicMapCellPosition: GeographicMapCellPosition): GeographicMapCellPosition{
     //var startGeographicMapCellPosition = startGeographicMapCellPosition
 
-    var endGeographicMapCellPosition: GeographicMapCellPosition = basicArrayListUtil!.getRandom(this.endList) as GeographicMapCellPosition;
-        
-        
+    var endGeographicMapCellPosition: GeographicMapCellPosition = basicArrayListUtil!.getRandom(this.endList);
 
+                         as GeographicMapCellPosition;
+        
+        
+;
+    
 
                         if(startGeographicMapCellPosition == endGeographicMapCellPosition)
                         
@@ -268,7 +283,10 @@ this.paths[geographicMapCellPosition!.getColumn()]![geographicMapCellPosition!.g
         
 index >= 0; index--)
         {
-endGeographicMapCellPosition= this.endList!.get(index) as GeographicMapCellPosition
+endGeographicMapCellPosition= this.endList!.get(index);
+
+                         as GeographicMapCellPosition;
+    
 
                         if(startGeographicMapCellPosition != endGeographicMapCellPosition)
                         
@@ -306,6 +324,8 @@ endGeographicMapCellPosition= this.endList!.get(index) as GeographicMapCellPosit
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return basicArrayListUtil!.getImmutableInstance();
+
+                        ;
     
 
                                     }
@@ -314,7 +334,8 @@ endGeographicMapCellPosition= this.endList!.get(index) as GeographicMapCellPosit
     var endGeographicMapCellPosition: GeographicMapCellPosition = this.getEndGeographicMapCellPosition(startGeographicMapCellPosition)!;
         
         
-
+;
+    
 
                         if(endGeographicMapCellPosition == 
                                     null
@@ -326,6 +347,8 @@ endGeographicMapCellPosition= this.endList!.get(index) as GeographicMapCellPosit
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return basicArrayListUtil!.getImmutableInstance();
+
+                        ;
     
 
                                     }
@@ -343,6 +366,8 @@ endGeographicMapCellPosition= this.endList!.get(index) as GeographicMapCellPosit
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return basicArrayListUtil!.getImmutableInstance();
+
+                        ;
     
 
                                     }
@@ -362,45 +387,58 @@ endGeographicMapCellPosition= this.endList!.get(index) as GeographicMapCellPosit
     var geographicMapCompositeInterface: GeographicMapCompositeInterface = this.allBinaryGameLayerManagerP as GeographicMapCompositeInterface;
         
         
-
+;
+    
 
     var geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;
         
         
-
+;
+    
 
     var raceTrackGeographicMap: RaceTrackGeographicMap = geographicMapInterface as RaceTrackGeographicMap;
         
         
-
+;
+    
 
     var raceTrackGeographicMapCellTypeFactory: GeographicMapCellTypeFactory = raceTrackGeographicMap!.getGeographicMapCellTypeFactory()!;
         
         
+;
+    
 
+    var customMapGenerator: CustomMapGenerator = raceTrackGeographicMap!.getCustomMapGenerator();
 
-    var customMapGenerator: CustomMapGenerator = raceTrackGeographicMap!.getCustomMapGenerator() as CustomMapGenerator;
+                         as CustomMapGenerator;
         
         
+;
+    
+customMapGenerator!.copyMapIntoCustomMap();
+    
 
-customMapGenerator!.copyMapIntoCustomMap()
-
-    var customMapArray: IntArray[] = customMapGenerator!.getCustomMapArray()!;
+    var customMapArray: number[][] = customMapGenerator!.getCustomMapArray()!;
         
         
-
-customMapArray[startGeographicMapCellPosition!.getRow()]![startGeographicMapCellPosition!.getColumn()]= raceTrackGeographicMapCellTypeFactory!.getStartType()
-customMapArray[endGeographicMapCellPosition!.getRow()]![endGeographicMapCellPosition!.getColumn()]= raceTrackGeographicMapCellTypeFactory!.getEndType()
+;
+    
+customMapArray[startGeographicMapCellPosition!.getRow()]![startGeographicMapCellPosition!.getColumn()]= raceTrackGeographicMapCellTypeFactory!.getStartType();
+    
+customMapArray[endGeographicMapCellPosition!.getRow()]![endGeographicMapCellPosition!.getColumn()]= raceTrackGeographicMapCellTypeFactory!.getEndType();
+    
 
     var pathFindingInfo: PathFindingInfo = PathFindingInfoFactory.getInstance()!.getInstance(raceTrackGeographicMap, customMapArray)!;
         
         
-
+;
+    
 
     var list: BasicArrayList = PathGenerator.getInstance()!.getInstanceNoCache(geographicMapInterface, pathFindingInfo, 2)!;
         
         
-
+;
+    
 
                         if(list.size() < 1)
                         
@@ -423,7 +461,8 @@ customMapArray[endGeographicMapCellPosition!.getRow()]![endGeographicMapCellPosi
 
     public onEvent(eventObject: AllBinaryEventObject){
     //var eventObject = eventObject
-ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
+ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
+    
 }
 
 
@@ -453,7 +492,8 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
         
 --rowIndex >= 0; )
         {
-this.paths[columnIndex]![rowIndex]= basicArrayListUtil!.getImmutableInstance()
+this.paths[columnIndex]![rowIndex]= basicArrayListUtil!.getImmutableInstance();
+    
 }
 
 }
@@ -462,8 +502,10 @@ this.paths[columnIndex]![rowIndex]= basicArrayListUtil!.getImmutableInstance()
 
 
     public reset(){
-this.getConnectedWaypointList()!.clear()
-this.releaseCachedPaths()
+this.getConnectedWaypointList()!.clear();
+    
+this.releaseCachedPaths();
+    
 }
 
 
@@ -488,35 +530,45 @@ this.releaseCachedPaths()
     var size: number = this.getConnectedWaypointList()!.size()!;
         
         
-
+;
+    
 
                         if(size > 0)
                         
                                     {
                                     
-    var unitWaypointBehavior: UnitWaypointBehavior = unitLayer!.getWaypointBehavior() as UnitWaypointBehavior;
-        
-        
+    var unitWaypointBehavior: UnitWaypointBehavior = unitLayer!.getWaypointBehavior();
 
+                         as UnitWaypointBehavior;
+        
+        
+;
+    
 
         while(this.getConnectedWaypointList()!.size() > 0)
         {
 
-    var rtsLayer: CollidableDestroyableDamageableLayer = this.getConnectedWaypointList()!.get(0) as CollidableDestroyableDamageableLayer;
-        
-        
+    var rtsLayer: CollidableDestroyableDamageableLayer = this.getConnectedWaypointList()!.get(0);
 
+                         as CollidableDestroyableDamageableLayer;
+        
+        
+;
+    
 
                         if(rtsLayer!.isDestroyed())
                         
                                     {
-                                    this.getConnectedWaypointList()!.remove(rtsLayer)
+                                    this.getConnectedWaypointList()!.remove(rtsLayer);
+    
 
                                     }
                                 
                         else {
-                            unitLayer!.handleCost(this.ownerLayer)
-unitWaypointBehavior!.insertWaypoint(0, rtsLayer)
+                            unitLayer!.handleCost(this.ownerLayer);
+    
+unitWaypointBehavior!.insertWaypoint(0, rtsLayer);
+    
 break;
 
                     

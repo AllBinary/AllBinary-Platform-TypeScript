@@ -18,13 +18,16 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { Calendar } from "../../../../../java/util/Calendar.js";
 
     
 import { HashMap } from "../../../../../java/util/HashMap.js";
 
     
-import { Vector } from "../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../java/util/Vector.js";
 
     
 import { HttpServletRequest } from "../../../../../javax/servlet/http/HttpServletRequest.js";
@@ -155,8 +158,10 @@ export class User
 public constructor (){
 
             super();
-            this.userConfigurationInterface= UserConfigurationInterfaceFactory.getInstance()
-this.password= Password(StringUtil.getInstance()!.EMPTY_STRING)
+            this.userConfigurationInterface= UserConfigurationInterfaceFactory.getInstance();
+    
+this.password= Password(StringUtil.getInstance()!.EMPTY_STRING);
+    
 }
 
 public constructor (request: HttpServletRequest){
@@ -164,91 +169,173 @@ public constructor (request: HttpServletRequest){
             super();
                 //var request = request
 this.getFormData(RequestParams(request).
-                            toHashMap())
-this.userConfigurationInterface= UserConfigurationInterfaceFactory.getInstance(this.getRole())
+                            toHashMap());
+    
+this.userConfigurationInterface= UserConfigurationInterfaceFactory.getInstance(this.getRole());
+    
 }
 
-public constructor (userHashMap: HashMap<Any, Any>){
+public constructor (userHashMap: HashMap<any, any>){
 
             super();
                 //var userHashMap = userHashMap
-this.getFormData(userHashMap)
-this.userConfigurationInterface= UserConfigurationInterfaceFactory.getInstance(this.getRole())
+this.getFormData(userHashMap);
+    
+this.userConfigurationInterface= UserConfigurationInterfaceFactory.getInstance(this.getRole());
+    
 }
 
 
                 //@Throws(Error::class)
             
-    public getFormData(userHashMap: HashMap<Any, Any>){
+    public getFormData(userHashMap: HashMap<any, any>){
     //var userHashMap = userHashMap
 this.userName= UserName(userHashMap).
-                            get()
+                            get();
+    
 
     var stringUtil: StringUtil = StringUtil.getInstance()!;
         
         
+;
+    
 
+    var passwordString: string = stringUtil!.getInstance(userHashMap!.get(UserData.PASSWORD);
 
-    var passwordString: string = stringUtil!.getInstance(userHashMap!.get(UserData.PASSWORD) as String)!;
+                         as String)!;
         
         
-
+;
+    
 
     var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
         
         
-
+;
+    
 
                         if(stringValidationUtil!.isEmpty(this.userName) && stringValidationUtil!.isEmpty(passwordString))
                         
                                     {
-                                    this.userName= stringUtil!.getInstance(userHashMap!.get(WeblisketSessionData.REMOVABLEUSERNAME) as String)
-passwordString= stringUtil!.getInstance(userHashMap!.get(WeblisketSessionData.REMOVABLEPASSWORD) as String)
+                                    this.userName= stringUtil!.getInstance(userHashMap!.get(WeblisketSessionData.REMOVABLEUSERNAME);
+
+                         as String);
+    
+passwordString= stringUtil!.getInstance(userHashMap!.get(WeblisketSessionData.REMOVABLEPASSWORD);
+
+                         as String);
+    
 
                                     }
                                 
 
-    var encryption: string = stringUtil!.getInstance(userHashMap!.get(EntryData.getInstance()!.ENCRYPTION) as String)!;
+    var encryption: string = stringUtil!.getInstance(userHashMap!.get(EntryData.getInstance()!.ENCRYPTION);
+
+                         as String)!;
         
         
+;
+    
 
+    var secret: string = stringUtil!.getInstance(userHashMap!.get(UserData.SECRET);
 
-    var secret: string = stringUtil!.getInstance(userHashMap!.get(UserData.SECRET) as String)!;
+                         as String)!;
         
         
+;
+    
+this.password= Password(passwordString);
+    
+this.prefixName= stringUtil!.getInstance(userHashMap!.get(UserData.PREFIXNAME);
 
-this.password= Password(passwordString)
-this.prefixName= stringUtil!.getInstance(userHashMap!.get(UserData.PREFIXNAME) as String)
-this.firstName= stringUtil!.getInstance(userHashMap!.get(UserData.FIRSTNAME) as String)
-this.lastName= stringUtil!.getInstance(userHashMap!.get(UserData.LASTNAME) as String)
-this.middleName= stringUtil!.getInstance(userHashMap!.get(UserData.MIDDLENAME) as String)
-this.suffixName= stringUtil!.getInstance(userHashMap!.get(UserData.SUFFIXNAME) as String)
-this.company= stringUtil!.getInstance(userHashMap!.get(UserData.COMPANY) as String)
-this.positionAtCompany= stringUtil!.getInstance(userHashMap!.get(UserData.POSITIONATCOMPANY) as String)
-this.mainEmail= stringUtil!.getInstance(userHashMap!.get(UserData.MAINEMAIL) as String)
-this.secondaryEmail= stringUtil!.getInstance(userHashMap!.get(UserData.SECONDARYEMAIL) as String)
-this.homePhone= stringUtil!.getInstance(userHashMap!.get(UserData.HOMEPHONE) as String)
-this.cellPhone= stringUtil!.getInstance(userHashMap!.get(UserData.CELLPHONE) as String)
-this.workPhone= stringUtil!.getInstance(userHashMap!.get(UserData.WORKPHONE) as String)
-this.otherContact= stringUtil!.getInstance(userHashMap!.get(UserData.OTHERCONTACT) as String)
-this.electronicDevice= stringUtil!.getInstance(userHashMap!.get(UserData.ELECTRONICDEVICE) as String)
-this.fax= stringUtil!.getInstance(userHashMap!.get(UserData.FAX) as String)
-this.role= UserRoleB.getRole(userHashMap!.get(UserRoleData.NAME.toString()) as String)
-this.permissions= stringUtil!.getInstance(userHashMap!.get(UserData.PERMISSIONS) as String)
+                         as String);
+    
+this.firstName= stringUtil!.getInstance(userHashMap!.get(UserData.FIRSTNAME);
 
-                        if(!stringValidationUtil!.isEmpty(this.permissions) && this.permissions.compareTo(StoreFrontData.getInstance()!.NAME) == 0)
-                        this.permissions= stringUtil!.getInstance(userHashMap!.get(StoreFrontData.getInstance()!.NAME) as String)
+                         as String);
+    
+this.lastName= stringUtil!.getInstance(userHashMap!.get(UserData.LASTNAME);
+
+                         as String);
+    
+this.middleName= stringUtil!.getInstance(userHashMap!.get(UserData.MIDDLENAME);
+
+                         as String);
+    
+this.suffixName= stringUtil!.getInstance(userHashMap!.get(UserData.SUFFIXNAME);
+
+                         as String);
+    
+this.company= stringUtil!.getInstance(userHashMap!.get(UserData.COMPANY);
+
+                         as String);
+    
+this.positionAtCompany= stringUtil!.getInstance(userHashMap!.get(UserData.POSITIONATCOMPANY);
+
+                         as String);
+    
+this.mainEmail= stringUtil!.getInstance(userHashMap!.get(UserData.MAINEMAIL);
+
+                         as String);
+    
+this.secondaryEmail= stringUtil!.getInstance(userHashMap!.get(UserData.SECONDARYEMAIL);
+
+                         as String);
+    
+this.homePhone= stringUtil!.getInstance(userHashMap!.get(UserData.HOMEPHONE);
+
+                         as String);
+    
+this.cellPhone= stringUtil!.getInstance(userHashMap!.get(UserData.CELLPHONE);
+
+                         as String);
+    
+this.workPhone= stringUtil!.getInstance(userHashMap!.get(UserData.WORKPHONE);
+
+                         as String);
+    
+this.otherContact= stringUtil!.getInstance(userHashMap!.get(UserData.OTHERCONTACT);
+
+                         as String);
+    
+this.electronicDevice= stringUtil!.getInstance(userHashMap!.get(UserData.ELECTRONICDEVICE);
+
+                         as String);
+    
+this.fax= stringUtil!.getInstance(userHashMap!.get(UserData.FAX);
+
+                         as String);
+    
+this.role= UserRoleB.getRole(userHashMap!.get(UserRoleData.NAME.toString());
+
+                         as String);
+    
+this.permissions= stringUtil!.getInstance(userHashMap!.get(UserData.PERMISSIONS);
+
+                         as String);
+    
+
+                        if(!stringValidationUtil!.isEmpty(this.permissions);
+
+                         && this.permissions.compareTo(StoreFrontData.getInstance()!.NAME) == 0)
+                        this.permissions= stringUtil!.getInstance(userHashMap!.get(StoreFrontData.getInstance()!.NAME);
+
+                         as String)
                              else 
                         if(this.permissions == 
                                     null
                                 )
                         
                                     {
-                                    this.permissions= "No Permissions"
+                                    this.permissions= "No Permissions";
+    
 
                                     }
                                 
-this.enable= stringUtil!.getInstance(userHashMap!.get(EntryData.getInstance()!.ENABLE) as String)
+this.enable= stringUtil!.getInstance(userHashMap!.get(EntryData.getInstance()!.ENABLE);
+
+                         as String);
+    
 }
 
 
@@ -259,20 +346,27 @@ this.enable= stringUtil!.getInstance(userHashMap!.get(EntryData.getInstance()!.E
     var valid: Boolean = Boolean.TRUE;
         
         
+;
+    
 
+                        if(!UserName.getInstance()!.isValid(this.userName);
 
-                        if(!UserName.getInstance()!.isValid(this.userName))
+                        )
                         
                                     {
-                                    valid= Boolean.FALSE
+                                    valid= Boolean.FALSE;
+    
 
                                     }
                                 
 
-                        if(!this.password.isValid())
+                        if(!this.password.isValid();
+
+                        )
                         
                                     {
-                                    valid= Boolean.FALSE
+                                    valid= Boolean.FALSE;
+    
 
                                     }
                                 
@@ -280,28 +374,38 @@ this.enable= stringUtil!.getInstance(userHashMap!.get(EntryData.getInstance()!.E
     var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
         
         
+;
+    
 
+                        if(!stringValidationUtil!.isValidRequired(firstName, 1, UserData.MAXLEN);
 
-                        if(!stringValidationUtil!.isValidRequired(firstName, 1, UserData.MAXLEN))
+                        )
                         
                                     {
-                                    valid= Boolean.FALSE
+                                    valid= Boolean.FALSE;
+    
 
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidRequired(lastName, 1, UserData.MAXLEN))
+                        if(!stringValidationUtil!.isValidRequired(lastName, 1, UserData.MAXLEN);
+
+                        )
                         
                                     {
-                                    valid= Boolean.FALSE
+                                    valid= Boolean.FALSE;
+    
 
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidRequired(this.mainEmail, 1, UserData.MAXLEN) || this.mainEmail!.indexOf("@") ==  -1)
+                        if(!stringValidationUtil!.isValidRequired(this.mainEmail, 1, UserData.MAXLEN);
+
+                         || this.mainEmail!.indexOf("@") ==  -1)
                         
                                     {
-                                    valid= Boolean.FALSE
+                                    valid= Boolean.FALSE;
+    
 
                                     }
                                 
@@ -311,7 +415,9 @@ this.enable= stringUtil!.getInstance(userHashMap!.get(EntryData.getInstance()!.E
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return valid;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VALIDATIONERROR))
@@ -321,8 +427,10 @@ this.enable= stringUtil!.getInstance(userHashMap!.get(EntryData.getInstance()!.E
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put("Failed to validate form", this, commonStrings!.IS_VALID, e)
+;
+    
+logUtil!.put("Failed to validate form", this, commonStrings!.IS_VALID, e);
+    
 
                                     }
                                 
@@ -344,35 +452,48 @@ logUtil!.put("Failed to validate form", this, commonStrings!.IS_VALID, e)
     var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
         
         
-
+;
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
+;
+    
+stringBuffer!.append(UserName.getValidationInfo(this.userName));
+    
+stringBuffer!.append(this.password.getValidationInfo());
+    
 
-stringBuffer!.append(UserName.getValidationInfo(this.userName))
-stringBuffer!.append(this.password.getValidationInfo())
+                        if(!stringValidationUtil!.isValidRequired(firstName, 1, UserData.MAXLEN);
 
-                        if(!stringValidationUtil!.isValidRequired(firstName, 1, UserData.MAXLEN))
+                        )
                         
                                     {
-                                    stringBuffer!.append("Please enter a valid First Name.<br />")
+                                    stringBuffer!.append("Please enter a valid First Name.<br />");
+    
 
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidRequired(lastName, 1, UserData.MAXLEN))
+                        if(!stringValidationUtil!.isValidRequired(lastName, 1, UserData.MAXLEN);
+
+                        )
                         
                                     {
-                                    stringBuffer!.append("Please enter a valid Last Name.<br />")
+                                    stringBuffer!.append("Please enter a valid Last Name.<br />");
+    
 
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidRequired(this.mainEmail, 1, UserData.MAXLEN) || this.mainEmail!.indexOf("@") ==  -1)
+                        if(!stringValidationUtil!.isValidRequired(this.mainEmail, 1, UserData.MAXLEN);
+
+                         || this.mainEmail!.indexOf("@") ==  -1)
                         
                                     {
-                                    stringBuffer!.append("Please enter a valid email address.<br />")
+                                    stringBuffer!.append("Please enter a valid email address.<br />");
+    
 
                                     }
                                 
@@ -381,14 +502,19 @@ stringBuffer!.append(this.password.getValidationInfo())
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e)
+                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e);
+    
 
                                     }
                                 
@@ -405,143 +531,167 @@ stringBuffer!.append(this.password.getValidationInfo())
 
     public setUserName(value: string){
 var value = value
-this.userName= value
+this.userName= value;
+    
 }
 
 
     public setPrefixName(value: string){
 var value = value
-this.prefixName= value
+this.prefixName= value;
+    
 }
 
 
     public setFirstName(value: string){
 var value = value
-this.firstName= value
+this.firstName= value;
+    
 }
 
 
     public setLastName(value: string){
 var value = value
-this.lastName= value
+this.lastName= value;
+    
 }
 
 
     public setMiddleName(value: string){
 var value = value
-this.middleName= value
+this.middleName= value;
+    
 }
 
 
     public setSuffixName(value: string){
 var value = value
-this.suffixName= value
+this.suffixName= value;
+    
 }
 
 
     public setCompany(value: string){
 var value = value
-this.company= value
+this.company= value;
+    
 }
 
 
     public setPositionAtCompany(value: string){
 var value = value
-this.positionAtCompany= value
+this.positionAtCompany= value;
+    
 }
 
 
     public setMainEmail(value: string){
 var value = value
-this.mainEmail= value
+this.mainEmail= value;
+    
 }
 
 
     public setSecondaryEmail(value: string){
 var value = value
-this.secondaryEmail= value
+this.secondaryEmail= value;
+    
 }
 
 
     public setHomePhone(value: string){
 var value = value
-this.homePhone= value
+this.homePhone= value;
+    
 }
 
 
     public setCellPhone(value: string){
 var value = value
-this.cellPhone= value
+this.cellPhone= value;
+    
 }
 
 
     public setWorkPhone(value: string){
 var value = value
-this.workPhone= value
+this.workPhone= value;
+    
 }
 
 
     public setOtherContact(value: string){
 var value = value
-this.otherContact= value
+this.otherContact= value;
+    
 }
 
 
     public setElectronicContact(value: string){
 var value = value
-this.electronicDevice= value
+this.electronicDevice= value;
+    
 }
 
 
     public setFax(value: string){
 var value = value
-this.fax= value
+this.fax= value;
+    
 }
 
 
     public setRole(role: UserRole){
 var role = role
-this.role= role
+this.role= role;
+    
 }
 
 
     public setPermissions(value: string){
 var value = value
-this.permissions= value
+this.permissions= value;
+    
 }
 
 
     public setEncryption(value: string){
 var value = value
-this.encryption= value
+this.encryption= value;
+    
 }
 
 
     public setSecret(value: string){
 var value = value
-this.secret= value
+this.secret= value;
+    
 }
 
 
     public setPassword(value: string){
 var value = value
-this.password.set(value)
+this.password.set(value);
+    
 }
 
 
     public enable(){
-this.setEnable("Yes")
+this.setEnable("Yes");
+    
 }
 
 
     public disable(){
-this.setEnable("No")
+this.setEnable("No");
+    
 }
 
 
     public setEnable(enable: string){
 var enable = enable
-this.enable= enable
+this.enable= enable;
+    
 }
 
 
@@ -751,6 +901,8 @@ this.enable= enable
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.password.get();
+
+                        ;
     
 }
 
@@ -762,47 +914,73 @@ this.enable= enable
     var values: Vector = new Vector();
         
         
-
-values.add(userName)
-values.add(prefixName)
-values.add(firstName)
-values.add(lastName)
-values.add(middleName)
-values.add(suffixName)
-values.add(company)
-values.add(positionAtCompany)
-values.add(mainEmail)
-values.add(secondaryEmail)
-values.add(homePhone)
-values.add(cellPhone)
-values.add(workPhone)
-values.add(otherContact)
-values.add(electronicDevice)
-values.add(fax)
-values.add(this.getRole()!.toString())
+;
+    
+values.add(userName);
+    
+values.add(prefixName);
+    
+values.add(firstName);
+    
+values.add(lastName);
+    
+values.add(middleName);
+    
+values.add(suffixName);
+    
+values.add(company);
+    
+values.add(positionAtCompany);
+    
+values.add(mainEmail);
+    
+values.add(secondaryEmail);
+    
+values.add(homePhone);
+    
+values.add(cellPhone);
+    
+values.add(workPhone);
+    
+values.add(otherContact);
+    
+values.add(electronicDevice);
+    
+values.add(fax);
+    
+values.add(this.getRole()!.toString());
+    
 
     var userConfigurationDomDocumentMapping: UserConfigurationDomDocumentMapping = new UserConfigurationDomDocumentMapping(this.getUserConfigurationInterface());
         
         
-
-values.add(userConfigurationDomDocumentMapping!.toDomDocumentString())
-values.add(this.permissions)
-values.addAll(this.password.toVector(this.secret))
-values.add(this.enable)
+;
+    
+values.add(userConfigurationDomDocumentMapping!.toDomDocumentString());
+    
+values.add(this.permissions);
+    
+values.addAll(this.password.toVector(this.secret));
+    
+values.add(this.enable);
+    
 
     var calendar: Calendar = Calendar.getInstance()!;
         
         
-
+;
+    
 
     var time: string = new calendar.getTimeInMillis() as Long.
-                            toString().toCharArray().concatToString()
-                                ;
+                            toString();
         
         
-
-values.add(time)
-values.add(time)
+;
+    
+values.add(time);
+    
+values.add(time);
+    
 
 
 
@@ -814,35 +992,53 @@ values.add(time)
 
                 //@Throws(Error::class)
             
-    public toHashMap(): HashMap<Any, Any>{
+    public toHashMap(): HashMap<any, any>{
 
-    var values: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var values: HashMap<any, any> = new HashMap<any, any>();
         
         
-
-values.put(UserData.USERNAME, userName)
-values.put(UserData.PREFIXNAME, prefixName)
-values.put(UserData.FIRSTNAME, firstName)
-values.put(UserData.LASTNAME, lastName)
-values.put(UserData.MIDDLENAME, middleName)
-values.put(UserData.SUFFIXNAME, suffixName)
-values.put(UserData.COMPANY, company)
-values.put(UserData.POSITIONATCOMPANY, positionAtCompany)
-values.put(UserData.MAINEMAIL, mainEmail)
-values.put(UserData.SECONDARYEMAIL, secondaryEmail)
-values.put(UserData.HOMEPHONE, homePhone)
-values.put(UserData.CELLPHONE, cellPhone)
-values.put(UserData.WORKPHONE, workPhone)
-values.put(UserData.OTHERCONTACT, otherContact)
-values.put(UserData.ELECTRONICDEVICE, electronicDevice)
-values.put(UserData.FAX, fax)
+;
+    
+values.put(UserData.USERNAME, userName);
+    
+values.put(UserData.PREFIXNAME, prefixName);
+    
+values.put(UserData.FIRSTNAME, firstName);
+    
+values.put(UserData.LASTNAME, lastName);
+    
+values.put(UserData.MIDDLENAME, middleName);
+    
+values.put(UserData.SUFFIXNAME, suffixName);
+    
+values.put(UserData.COMPANY, company);
+    
+values.put(UserData.POSITIONATCOMPANY, positionAtCompany);
+    
+values.put(UserData.MAINEMAIL, mainEmail);
+    
+values.put(UserData.SECONDARYEMAIL, secondaryEmail);
+    
+values.put(UserData.HOMEPHONE, homePhone);
+    
+values.put(UserData.CELLPHONE, cellPhone);
+    
+values.put(UserData.WORKPHONE, workPhone);
+    
+values.put(UserData.OTHERCONTACT, otherContact);
+    
+values.put(UserData.ELECTRONICDEVICE, electronicDevice);
+    
+values.put(UserData.FAX, fax);
+    
 
                         if(this.getRole() != 
                                     null
                                 )
                         
                                     {
-                                    values.put(UserRoleData.NAME.toString(), this.getRole()!.toString())
+                                    values.put(UserRoleData.NAME.toString(), this.getRole()!.toString());
+    
 
                                     }
                                 
@@ -850,24 +1046,31 @@ values.put(UserData.FAX, fax)
     var userConfigurationDomDocumentMapping: UserConfigurationDomDocumentMapping = new UserConfigurationDomDocumentMapping(this.getUserConfigurationInterface());
         
         
-
-values.put(UserData.CONFIGURATION, userConfigurationDomDocumentMapping!.toDomDocumentString())
-values.put(UserData.PERMISSIONS, this.permissions)
-values.putAll(this.password.toHashMap(this.secret))
-values.put(EntryData.getInstance()!.ENABLE, this.enable)
+;
+    
+values.put(UserData.CONFIGURATION, userConfigurationDomDocumentMapping!.toDomDocumentString());
+    
+values.put(UserData.PERMISSIONS, this.permissions);
+    
+values.putAll(this.password.toHashMap(this.secret));
+    
+values.put(EntryData.getInstance()!.ENABLE, this.enable);
+    
 
     var calendar: Calendar = Calendar.getInstance()!;
         
         
-
+;
+    
 
     var time: string = new calendar.getTimeInMillis() as Long.
-                            toString().toCharArray().concatToString()
-                                ;
+                            toString();
         
         
-
-values.put(EntryData.getInstance()!.LASTMODIFIED, time)
+;
+    
+values.put(EntryData.getInstance()!.LASTMODIFIED, time);
+    
 
 
 
@@ -877,21 +1080,26 @@ values.put(EntryData.getInstance()!.LASTMODIFIED, time)
 }
 
 
-    public toPasswordHashMap(): HashMap<Any, Any>{
+    public toPasswordHashMap(): HashMap<any, any>{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.password.toHashMap(this.secret);
+
+                        ;
     
 }
 
 
     public validateSession(weblisketSession: WeblisketSessionInterface){
 var weblisketSession = weblisketSession
-weblisketSession!.setAuthenticated()
-weblisketSession!.setRole(this.getRole())
-weblisketSession!.setUserName(this.getUserName())
+weblisketSession!.setAuthenticated();
+    
+weblisketSession!.setRole(this.getRole());
+    
+weblisketSession!.setUserName(this.getUserName());
+    
 }
 
 
@@ -955,7 +1163,8 @@ var document = document
 
     public setUserConfigurationInterface(userConfigurationInterface: UserConfigurationInterface){
 var userConfigurationInterface = userConfigurationInterface
-this.userConfigurationInterface= userConfigurationInterface
+this.userConfigurationInterface= userConfigurationInterface;
+    
 }
 
 

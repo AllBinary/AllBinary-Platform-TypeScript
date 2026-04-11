@@ -53,7 +53,8 @@ public constructor (){
     var stringUtil: StringUtil = StringUtil.getInstance()!;
         
         
-
+;
+    
 
 
 
@@ -64,7 +65,8 @@ public constructor (){
         
 index < STRING_ARRAY.length; index++)
         {
-this.STRING_ARRAY[index]= stringUtil!.EMPTY_STRING
+this.STRING_ARRAY[index]= stringUtil!.EMPTY_STRING;
+    
 }
 
 }
@@ -72,19 +74,24 @@ this.STRING_ARRAY[index]= stringUtil!.EMPTY_STRING
 
     public init(view: View){
 var view = view
-super.init()
-this.view= ViewWrapper(view)
-this.totalOnDraws= 0
+super.init();
+    
+this.view= ViewWrapper(view);
+    
+this.totalOnDraws= 0;
+    
 }
 
 
     public process(){
-view.postInvalidate()
+view.postInvalidate();
+    
 }
 
 
     public nextOnDraw(){
-this.totalOnDraws++
+this.totalOnDraws++;
+    
 }
 
 
@@ -101,7 +108,8 @@ this.totalOnDraws++
     var stringArray: string[] = super.toStringArray()!;
         
         
-
+;
+    
 
 
 
@@ -112,19 +120,26 @@ this.totalOnDraws++
         
 index < stringArray!.length; index++)
         {
-STRING_ARRAY[index]= stringArray[index]!
+STRING_ARRAY[index]= stringArray[index]!;
+    
 }
 
 
     var totalTime: number = getTimeDelayHelper()!.getElapsed(this.gameTickTimeDelayHelper!.startTime)!;
         
         
-
-totalTime= (totalTime /10000)
-STRING_ARRAY[10]= TOTAL_ONDRAWS
-STRING_ARRAY[11]= (this.totalOnDraws).toString()
-STRING_ARRAY[12]= ONDRAWS_RATE
-STRING_ARRAY[13]= (this.totalOnDraws /totalTime).toString()
+;
+    
+totalTime= (totalTime /10000);
+    
+STRING_ARRAY[10]= TOTAL_ONDRAWS;
+    
+STRING_ARRAY[11]= (this.totalOnDraws).toString();
+    
+STRING_ARRAY[12]= ONDRAWS_RATE;
+    
+STRING_ARRAY[13]= (this.totalOnDraws /totalTime).toString();
+    
 
 
 
@@ -139,8 +154,10 @@ STRING_ARRAY[13]= (this.totalOnDraws /totalTime).toString()
     var totalTime: number = getTimeDelayHelper()!.getElapsed(this.gameTickTimeDelayHelper!.startTime)!;
         
         
-
-totalTime= (totalTime /1000)
+;
+    
+totalTime= (totalTime /1000);
+    
 
                         if(totalTime > 0)
                         
@@ -149,21 +166,28 @@ totalTime= (totalTime /1000)
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(super.toString(totalTime))
+;
+    
+stringBuffer!.append(super.toString(totalTime));
+    
 
                         if(this.totalOnDraws > 0)
                         
                                     {
-                                    stringBuffer!.append(TOTAL_ONDRAWS)
-stringBuffer!.append(totalOnDraws.toString())
-stringBuffer!.append(ONDRAWS_RATE)
+                                    stringBuffer!.append(TOTAL_ONDRAWS);
+    
+stringBuffer!.append(totalOnDraws.toString());
+    
+stringBuffer!.append(ONDRAWS_RATE);
+    
 
     var drawsOverTime: string = (this.totalOnDraws /totalTime).toString()!;
         
         
-
-stringBuffer!.append(drawsOverTime)
+;
+    
+stringBuffer!.append(drawsOverTime);
+    
 
                                     }
                                 
@@ -172,6 +196,8 @@ stringBuffer!.append(drawsOverTime)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 
                                     }

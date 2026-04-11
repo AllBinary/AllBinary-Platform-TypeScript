@@ -62,7 +62,8 @@ var geographicMapCellPosition = geographicMapCellPosition
     var layerInterface: AllBinaryLayer = DropCellPositionHistory.getInstance()!.getLayerInterface(geographicMapCellPosition)!;
         
         
-
+;
+    
 
 
 

@@ -59,26 +59,31 @@ public constructor (transformInfoInterface: TransformInfoInterface)
     var success: string = DomDocumentHelper.toString(this.getDoc())!;
         
         
-
+;
+    
 
     var result: string = CompoundTransform(this.getTransformInfoInterface()).
                             translate(success)!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e);
+    
 
                                     }
                                 

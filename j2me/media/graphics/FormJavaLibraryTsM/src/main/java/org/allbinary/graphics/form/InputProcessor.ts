@@ -33,14 +33,16 @@ public constructor (playerGameInputCompositeInterface: PlayerGameInputCompositeI
 
             super();
             var playerGameInputCompositeInterface = playerGameInputCompositeInterface
-this.playerGameInputCompositeInterface= playerGameInputCompositeInterface
+this.playerGameInputCompositeInterface= playerGameInputCompositeInterface;
+    
 }
 
 
                 //@Throws(Error::class)
             
     public process(){
-this.playerGameInputCompositeInterface!.getPlayerGameInput()!.update()
+this.playerGameInputCompositeInterface!.getPlayerGameInput()!.update();
+    
 }
 
 

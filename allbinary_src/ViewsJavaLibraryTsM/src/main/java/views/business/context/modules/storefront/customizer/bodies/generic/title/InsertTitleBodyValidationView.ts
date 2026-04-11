@@ -73,12 +73,14 @@ public constructor (transformInfoInterface: TransformInfoInterface)
                             //For kotlin this is before the body of the constructor.
                     
 
-    var requestHashMap: HashMap<Any, Any> = RequestParams(this.getPageContext()).
+    var requestHashMap: HashMap<any, any> = RequestParams(this.getPageContext()).
                             toHashMap()!;
         
         
-
-this.titleBody= TitleBodyValidation(requestHashMap)
+;
+    
+this.titleBody= TitleBodyValidation(requestHashMap);
+    
 }
 
 
@@ -101,7 +103,8 @@ this.titleBody= TitleBodyValidation(requestHashMap)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Started Validation", this, commonStrings!.IS_VALID)
+                                    logUtil!.put("Started Validation", this, commonStrings!.IS_VALID);
+    
 
                                     }
                                 
@@ -109,12 +112,14 @@ this.titleBody= TitleBodyValidation(requestHashMap)
     var isValid: Boolean = this.titleBody!.isValid()!;
         
         
-
+;
+    
 
                         if(isValid == Boolean.TRUE)
                         
                                     {
-                                    CustomizerUtil.getInstance()!.insert(this.getTransformInfoInterface(), this.titleBody as DomNodeInterface)
+                                    CustomizerUtil.getInstance()!.insert(this.getTransformInfoInterface(), this.titleBody as DomNodeInterface);
+    
 
                                     }
                                 
@@ -124,13 +129,16 @@ this.titleBody= TitleBodyValidation(requestHashMap)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return isValid;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("Failed to validate", this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put("Failed to validate", this, commonStrings!.IS_VALID, e);
+    
 
                                     }
                                 
@@ -152,21 +160,28 @@ this.titleBody= TitleBodyValidation(requestHashMap)
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(this.titleBody!.validationInfo())
+;
+    
+stringBuffer!.append(this.titleBody!.validationInfo());
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e)
+                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e);
+    
 
                                     }
                                 
@@ -212,14 +227,19 @@ var document = document
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return StoreCustomizerComponentUtil.getInstance()!.generate(this.abeClientInformation, this.getTransformInfoInterface());
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e);
+    
 
                                     }
                                 

@@ -67,7 +67,8 @@ public constructor (gameOptionsForm: GameOptionsForm){
 
             super();
             var gameOptionsForm = gameOptionsForm
-this.gameOptionsForm= gameOptionsForm
+this.gameOptionsForm= gameOptionsForm;
+    
 }
 
 
@@ -80,25 +81,32 @@ var item = item
     var itemLabel: string = item.getLabel()!;
         
         
-
+;
+    
 logUtil!.put(StringMaker().
-                            append(CommonLabels.getInstance()!.ITEM_LABEL)!.append(itemLabel)!.toString(), this, MidletStrings.getInstance()!.COMMAND_ACTION)
+                            append(CommonLabels.getInstance()!.ITEM_LABEL)!.append(itemLabel)!.toString(), this, MidletStrings.getInstance()!.COMMAND_ACTION);
+    
 
                         if(item is GameConfigurationGauge)
                         
                                     {
-                                    GameConfigurationUtil.getInstance()!.change(this.gameOptionsForm, item as GameConfigurationGauge)
+                                    GameConfigurationUtil.getInstance()!.change(this.gameOptionsForm, item as GameConfigurationGauge);
+    
 
                                     }
                                 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, MidletStrings.getInstance()!.COMMAND_ACTION, e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, MidletStrings.getInstance()!.COMMAND_ACTION, e);
+    
 }
 
 }

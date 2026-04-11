@@ -56,23 +56,36 @@ var args = args
     var commonPhoneStrings: CommonPhoneStrings = CommonPhoneStrings.getInstance()!;
         
         
-
+;
+    
 
     var list: BasicArrayList = new BasicArrayList();
         
         
-
-list.add(commonPhoneStrings!.ONE)
-list.add(commonPhoneStrings!.TWO)
-list.add(commonPhoneStrings!.THREE)
-list.add(commonPhoneStrings!.FOUR)
-list.add(commonPhoneStrings!.FIVE)
-list.add(commonPhoneStrings!.SIX)
-list.add(commonPhoneStrings!.SEVEN)
-list.add(commonPhoneStrings!.EIGHT)
-list.add(commonPhoneStrings!.NINE)
-BasicArrayListUtil.getInstance()!.reverse(list)
-System.out.println(list)
+;
+    
+list.add(commonPhoneStrings!.ONE);
+    
+list.add(commonPhoneStrings!.TWO);
+    
+list.add(commonPhoneStrings!.THREE);
+    
+list.add(commonPhoneStrings!.FOUR);
+    
+list.add(commonPhoneStrings!.FIVE);
+    
+list.add(commonPhoneStrings!.SIX);
+    
+list.add(commonPhoneStrings!.SEVEN);
+    
+list.add(commonPhoneStrings!.EIGHT);
+    
+list.add(commonPhoneStrings!.NINE);
+    
+BasicArrayListUtil.getInstance()!.reverse(list);
+    
+System.out.println(list);
+    
 }
 
 
@@ -95,7 +108,8 @@ var list = list
     var i_random: number = this.getRandomIndex(list)!;
         
         
-
+;
+    
 
 
 
@@ -112,6 +126,8 @@ var list = list
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return myRandomFactory!.getAbsoluteNextInt(list.size());
+
+                        ;
     
 }
 
@@ -122,18 +138,22 @@ var list = list
     var lastMinusOneIndex: number = list.size() -2;
         
         
-
+;
+    
 
     var temp: any = {}
-
+;
+    
 
     var size: number = lastMinusOneIndex /2;
         
         
-
+;
+    
 
     var secondSwapIndex: number= 0
-
+;
+    
 
 
 
@@ -144,10 +164,14 @@ var list = list
         
 index <= size; index++)
         {
-secondSwapIndex= lastMinusOneIndex -index
-temp= list.remove(index)
-list.add(index, list.remove(secondSwapIndex))
-list.add(secondSwapIndex +1, temp)
+secondSwapIndex= lastMinusOneIndex -index;
+    
+temp= list.remove(index);
+    
+list.add(index, list.remove(secondSwapIndex));
+    
+list.add(secondSwapIndex +1, temp);
+    
 }
 
 }
@@ -159,19 +183,24 @@ list.add(secondSwapIndex +1, temp)
     var S_LABEL: string = " s: ";
         
         
-
+;
+    
 
     var size: number = list.size()!;
         
         
-
+;
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(CommonLabels.getInstance()!.TOTAL_LABEL)
-stringBuffer!.appendint(size)
+;
+    
+stringBuffer!.append(CommonLabels.getInstance()!.TOTAL_LABEL);
+    
+stringBuffer!.appendint(size);
+    
 
 
 
@@ -186,9 +215,12 @@ index >= 0; index--)
     var usedList: BasicArrayList = list.objectArray[index]! as BasicArrayList;
         
         
-
-stringBuffer!.append(S_LABEL)
-stringBuffer!.appendint(usedList!.size())
+;
+    
+stringBuffer!.append(S_LABEL);
+    
+stringBuffer!.appendint(usedList!.size());
+    
 }
 
 
@@ -196,6 +228,8 @@ stringBuffer!.appendint(usedList!.size())
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

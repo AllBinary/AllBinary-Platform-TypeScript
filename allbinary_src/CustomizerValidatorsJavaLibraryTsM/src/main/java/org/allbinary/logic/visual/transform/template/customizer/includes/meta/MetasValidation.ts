@@ -18,7 +18,10 @@
 
 
 
-import { Vector } from "../../../../../../../../../java/util/Vector.js";
+            import Vector from "@ohos.util.Vector";
+        
+
+//import { Vector } from "../../../../../../../../../java/util/Vector.js";
 
     
 import { StoreFrontFactory } from "../../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontFactory.js";
@@ -73,31 +76,40 @@ public constructor (storeName: string){
 
             super();
             var storeName = storeName
-this.storeFrontInterface= StoreFrontFactory.getInstance(storeName)
-this.metaValidationVector= Vector()
+this.storeFrontInterface= StoreFrontFactory.getInstance(storeName);
+    
+this.metaValidationVector= Vector();
+    
 
     var contentValue: string = this.storeFrontInterface!.getName() +" E-Commerce Site";
         
         
-
+;
+    
 
     var keywordsMetaValidation: MetaValidation = new MetaValidation(HtmlMetaAttributeDataFactory.getInstance()!.NAME, "Keywords", HtmlMetaAttributeValuesData.getInstance()!.KEYWORDS, contentValue);
         
         
-
+;
+    
 
     var abstractMetaValidation: MetaValidation = new MetaValidation(HtmlMetaAttributeDataFactory.getInstance()!.NAME, "Abstract", HtmlMetaAttributeValuesData.getInstance()!.ABSTRACT, contentValue);
         
         
-
+;
+    
 
     var descriptionMetaValidation: MetaValidation = new MetaValidation(HtmlMetaAttributeDataFactory.getInstance()!.NAME, "Description", HtmlMetaAttributeValuesData.getInstance()!.DESCRIPTION, contentValue);
         
         
-
-this.metaValidationVector!.add(keywordsMetaValidation)
-this.metaValidationVector!.add(abstractMetaValidation)
-this.metaValidationVector!.add(descriptionMetaValidation)
+;
+    
+this.metaValidationVector!.add(keywordsMetaValidation);
+    
+this.metaValidationVector!.add(abstractMetaValidation);
+    
+this.metaValidationVector!.add(descriptionMetaValidation);
+    
 }
 
 public constructor (document: Document){
@@ -118,20 +130,24 @@ public constructor (document: Document){
     var valid: Boolean = Boolean.TRUE;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return valid;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put("Failed to validate form", this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put("Failed to validate form", this, commonStrings!.IS_VALID, e);
+    
 
                                     }
                                 
@@ -153,20 +169,26 @@ public constructor (document: Document){
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e)
+                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e);
+    
 
                                     }
                                 
@@ -210,18 +232,23 @@ var document = document
     var node: Node = document.createElement(HtmlMetasData.getInstance()!.NAME)!;
         
         
+;
+    
 
+    var metaArray: MetaValidation[] = this.metaValidationVector!.toArray([]);
 
-    var metaArray: MetaValidation[] = this.metaValidationVector!.toArray(new Array(0)) as Array<MetaValidation?>;
+                         as Array<MetaValidation?>;
         
         
-
+;
+    
 
     var size: number = metaArray!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -236,8 +263,10 @@ i < size; i++)
     var metaValidation: MetaValidation = metaArray[i]!;
         
         
-
-node.appendChild(metaValidation!.toXmlNode(document))
+;
+    
+node.appendChild(metaValidation!.toXmlNode(document));
+    
 }
 
 

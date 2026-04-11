@@ -86,18 +86,20 @@ export class Cpu
         
         
 
-    private cpuHashMap: HashMap<Any, Any>
+    private cpuHashMap: HashMap<any, any>
 public constructor (filePath: string){
 
             super();
             var filePath = filePath
-this.init(filePath)
+this.init(filePath);
+    
 }
 
 public constructor (){
 
             super();
-            this.init(CPUFILE)
+            this.init(CPUFILE);
+    
 }
 
 
@@ -111,18 +113,23 @@ var filePath = filePath
             ;
         
         
-
+;
+    
 
         try {
-            init(lineNumberReader, filePath)
-} catch(e: Exception)
+            init(lineNumberReader, filePath);
+    
+
+                //: 
+} catch(e) 
             {
 
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.OS))
                         
                                     {
                                     logUtil!.put(StringMaker().
-                            append("Cpu Data: ")!.append(this.toString())!.toString(), this, this.commonStrings!.CONSTRUCTOR, e)
+                            append("Cpu Data: ")!.append(this.toString())!.toString(), this, this.commonStrings!.CONSTRUCTOR, e);
+    
 
                                     }
                                 
@@ -146,9 +153,12 @@ var filePath = filePath
     var fileReader: FileReader = new FileReader(filePath);
         
         
-
-lineNumberReader= LineNumberReader(fileReader)
-cpuHashMap= HashMap<Any, Any>()
+;
+    
+lineNumberReader= LineNumberReader(fileReader);
+    
+cpuHashMap= HashMap<any, any>();
+    
 
                         if(lineNumberReader == 
                                     null
@@ -159,26 +169,34 @@ cpuHashMap= HashMap<Any, Any>()
     var fileVector: BasicArrayList = SubDirectory.getInstance()!.search(filePath, AbFile(FilePathData.getInstance()!.SEPARATOR))!;
         
         
-
+;
+    
 
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.OS))
                         
                                     {
                                     logUtil!.put(StringMaker().
-                            append("Cpu File Vector Size: ")!.appendint(fileVector!.size())!.toString(), this, this.commonStrings!.CONSTRUCTOR)
+                            append("Cpu File Vector Size: ")!.appendint(fileVector!.size())!.toString(), this, this.commonStrings!.CONSTRUCTOR);
+    
 
                                     }
                                 
 
-                        if(!fileVector!.isEmpty())
+                        if(!fileVector!.isEmpty();
+
+                        )
                         
                                     {
                                     
-    var file: AbFile = fileVector!.get(0) as AbFile;
-        
-        
+    var file: AbFile = fileVector!.get(0);
 
-lineNumberReader= LineNumberReader(FileReader(file.getPath()))
+                         as AbFile;
+        
+        
+;
+    
+lineNumberReader= LineNumberReader(FileReader(file.getPath()));
+    
 
                                     }
                                 
@@ -195,7 +213,8 @@ lineNumberReader= LineNumberReader(FileReader(file.getPath()))
     var nextLine: string = lineNumberReader!.readLine()!;
         
         
-
+;
+    
 
         while(lineNumberReader != 
                                     null
@@ -207,7 +226,8 @@ lineNumberReader= LineNumberReader(FileReader(file.getPath()))
     var index: number = nextLine!.indexOf(':')!;
         
         
-
+;
+    
 
                         if(index >= 0)
                         
@@ -216,45 +236,65 @@ lineNumberReader= LineNumberReader(FileReader(file.getPath()))
     var key: string = nextLine!.substring(0, index)!;
         
         
-
+;
+    
 
     var valueIndex: number = index +1;
         
         
-
+;
+    
 
     var value: string = nextLine!.substring(valueIndex, nextLine!.length)!;
         
         
-
+;
+    
 
                         if(key.indexOf(CpuInfo.PROCESSOR.toString()) >= 0)
-                        cpuHashMap!.put(CpuInfo.PROCESSOR, value)
+                        cpuHashMap!.put(CpuInfo.PROCESSOR, value);
+
+                        
 
                         if(key.indexOf(CpuInfo.VENDORID.toString()) >= 0)
-                        cpuHashMap!.put(CpuInfo.VENDORID, value)
+                        cpuHashMap!.put(CpuInfo.VENDORID, value);
+
+                        
 
                         if(key.indexOf(CpuInfo.CPUFAMILY.toString()) >= 0)
-                        cpuHashMap!.put(CpuInfo.CPUFAMILY, value)
+                        cpuHashMap!.put(CpuInfo.CPUFAMILY, value);
+
+                        
 
                         if(key.indexOf(CpuInfo.MODEL.toString()) >= 0)
-                        cpuHashMap!.put(CpuInfo.MODEL, value)
+                        cpuHashMap!.put(CpuInfo.MODEL, value);
+
+                        
 
                         if(key.indexOf(CpuInfo.MODELNAME.toString()) >= 0)
-                        cpuHashMap!.put(CpuInfo.MODELNAME, value)
+                        cpuHashMap!.put(CpuInfo.MODELNAME, value);
+
+                        
 
                         if(key.indexOf(CpuInfo.STEPPING.toString()) >= 0)
-                        cpuHashMap!.put(CpuInfo.STEPPING, value)
+                        cpuHashMap!.put(CpuInfo.STEPPING, value);
+
+                        
 
                         if(key.indexOf(CpuInfo.CPUMHZ.toString()) >= 0)
-                        cpuHashMap!.put(CpuInfo.CPUMHZ, value)
+                        cpuHashMap!.put(CpuInfo.CPUMHZ, value);
+
+                        
 
                         if(key.indexOf(CpuInfo.CACHESIZE.toString()) >= 0)
-                        cpuHashMap!.put(CpuInfo.CACHESIZE, value)
+                        cpuHashMap!.put(CpuInfo.CACHESIZE, value);
+
+                        
 
                                     }
                                 
-nextLine= lineNumberReader!.readLine()
+nextLine= lineNumberReader!.readLine();
+    
 }
 
 
@@ -266,7 +306,9 @@ nextLine= lineNumberReader!.readLine()
                         if(lineNumberReader != 
                                     null
                                 )
-                        lineNumberReader!.close()
+                        lineNumberReader!.close();
+
+                        
 
          }
         
@@ -278,7 +320,9 @@ nextLine= lineNumberReader!.readLine()
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return cpuHashMap!.get(CpuInfo.PROCESSOR) as String;
+                        return cpuHashMap!.get(CpuInfo.PROCESSOR);
+
+                         as String;
     
 }
 
@@ -288,7 +332,9 @@ nextLine= lineNumberReader!.readLine()
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return cpuHashMap!.get(CpuInfo.VENDORID) as String;
+                        return cpuHashMap!.get(CpuInfo.VENDORID);
+
+                         as String;
     
 }
 
@@ -298,7 +344,9 @@ nextLine= lineNumberReader!.readLine()
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return cpuHashMap!.get(CpuInfo.CPUFAMILY) as String;
+                        return cpuHashMap!.get(CpuInfo.CPUFAMILY);
+
+                         as String;
     
 }
 
@@ -308,7 +356,9 @@ nextLine= lineNumberReader!.readLine()
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return cpuHashMap!.get(CpuInfo.MODEL) as String;
+                        return cpuHashMap!.get(CpuInfo.MODEL);
+
+                         as String;
     
 }
 
@@ -318,7 +368,9 @@ nextLine= lineNumberReader!.readLine()
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return cpuHashMap!.get(CpuInfo.MODELNAME) as String;
+                        return cpuHashMap!.get(CpuInfo.MODELNAME);
+
+                         as String;
     
 }
 
@@ -328,7 +380,9 @@ nextLine= lineNumberReader!.readLine()
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return cpuHashMap!.get(CpuInfo.STEPPING) as String;
+                        return cpuHashMap!.get(CpuInfo.STEPPING);
+
+                         as String;
     
 }
 
@@ -338,7 +392,9 @@ nextLine= lineNumberReader!.readLine()
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return cpuHashMap!.get(CpuInfo.CPUMHZ) as String;
+                        return cpuHashMap!.get(CpuInfo.CPUMHZ);
+
+                         as String;
     
 }
 
@@ -348,7 +404,9 @@ nextLine= lineNumberReader!.readLine()
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return cpuHashMap!.get(CpuInfo.CACHESIZE) as String;
+                        return cpuHashMap!.get(CpuInfo.CACHESIZE);
+
+                         as String;
     
 }
 
@@ -380,37 +438,57 @@ var componentInterface = componentInterface
     var commonLabels: CommonLabels = CommonLabels.getInstance()!;
         
         
-
+;
+    
 
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
         
         
-
+;
+    
 
     var stringMaker: StringMaker = new StringMaker();
         
         
-
-stringMaker!.append(CpuInfo.PROCESSOR.toString())!.append(commonLabels!.COLON_SEP)!.append(this.getProcessor())
-stringMaker!.append(commonSeps!.NEW_LINE)
-stringMaker!.append(CpuInfo.VENDORID.toString())!.append(commonLabels!.COLON_SEP)!.append(this.getVendorId())
-stringMaker!.append(commonSeps!.NEW_LINE)
-stringMaker!.append(CpuInfo.CPUFAMILY.toString())!.append(commonLabels!.COLON_SEP)!.append(this.getCpuFamily())
-stringMaker!.append(commonSeps!.NEW_LINE)
-stringMaker!.append(CpuInfo.MODEL.toString())!.append(commonLabels!.COLON_SEP)!.append(this.getModel())
-stringMaker!.append(commonSeps!.NEW_LINE)
-stringMaker!.append(CpuInfo.MODELNAME.toString())!.append(commonLabels!.COLON_SEP)!.append(this.getModelName())
-stringMaker!.append(commonSeps!.NEW_LINE)
-stringMaker!.append(CpuInfo.STEPPING.toString())!.append(commonLabels!.COLON_SEP)!.append(this.getStepping())
-stringMaker!.append(commonSeps!.NEW_LINE)
-stringMaker!.append(CpuInfo.CPUMHZ.toString())!.append(commonLabels!.COLON_SEP)!.append(this.getCpuSpeed())
-stringMaker!.append(commonSeps!.NEW_LINE)
-stringMaker!.append(CpuInfo.CACHESIZE.toString())!.append(commonLabels!.COLON_SEP)!.append(this.getCacheSize())
+;
+    
+stringMaker!.append(CpuInfo.PROCESSOR.toString())!.append(commonLabels!.COLON_SEP)!.append(this.getProcessor());
+    
+stringMaker!.append(commonSeps!.NEW_LINE);
+    
+stringMaker!.append(CpuInfo.VENDORID.toString())!.append(commonLabels!.COLON_SEP)!.append(this.getVendorId());
+    
+stringMaker!.append(commonSeps!.NEW_LINE);
+    
+stringMaker!.append(CpuInfo.CPUFAMILY.toString())!.append(commonLabels!.COLON_SEP)!.append(this.getCpuFamily());
+    
+stringMaker!.append(commonSeps!.NEW_LINE);
+    
+stringMaker!.append(CpuInfo.MODEL.toString())!.append(commonLabels!.COLON_SEP)!.append(this.getModel());
+    
+stringMaker!.append(commonSeps!.NEW_LINE);
+    
+stringMaker!.append(CpuInfo.MODELNAME.toString())!.append(commonLabels!.COLON_SEP)!.append(this.getModelName());
+    
+stringMaker!.append(commonSeps!.NEW_LINE);
+    
+stringMaker!.append(CpuInfo.STEPPING.toString())!.append(commonLabels!.COLON_SEP)!.append(this.getStepping());
+    
+stringMaker!.append(commonSeps!.NEW_LINE);
+    
+stringMaker!.append(CpuInfo.CPUMHZ.toString())!.append(commonLabels!.COLON_SEP)!.append(this.getCpuSpeed());
+    
+stringMaker!.append(commonSeps!.NEW_LINE);
+    
+stringMaker!.append(CpuInfo.CACHESIZE.toString())!.append(commonLabels!.COLON_SEP)!.append(this.getCacheSize());
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringMaker!.toString();
+
+                        ;
     
 }
 

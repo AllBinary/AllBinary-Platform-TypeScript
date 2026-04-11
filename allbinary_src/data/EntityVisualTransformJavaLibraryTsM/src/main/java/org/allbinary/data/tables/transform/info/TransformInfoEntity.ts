@@ -18,10 +18,13 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { HashMap } from "../../../../../../java/util/HashMap.js";
 
     
-import { Vector } from "../../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../../java/util/Vector.js";
 
     
 import { PageContext } from "../../../../../../javax/servlet/jsp/PageContext.js";
@@ -106,10 +109,14 @@ var transformInfoFactoryInterface = transformInfoFactoryInterface
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setTableName(tableName)
-this.transformInfoObjectConfigGeneratorFactoryInterface= transformInfoObjectConfigGeneratorFactoryInterface
-this.transformInfoObjectConfigAndManipulatorFactoryInterface= transformInfoObjectConfigAndManipulatorFactoryInterface
-this.transformInfoFactoryInterface= transformInfoFactoryInterface
+this.setTableName(tableName);
+    
+this.transformInfoObjectConfigGeneratorFactoryInterface= transformInfoObjectConfigGeneratorFactoryInterface;
+    
+this.transformInfoObjectConfigAndManipulatorFactoryInterface= transformInfoObjectConfigAndManipulatorFactoryInterface;
+    
+this.transformInfoFactoryInterface= transformInfoFactoryInterface;
+    
 }
 
 
@@ -117,22 +124,27 @@ this.transformInfoFactoryInterface= transformInfoFactoryInterface
 var values = values
 
         try {
-            super.insert(values)
+            super.insert(values);
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.SUCCESS, this, INSERT)
+                                    logUtil!.put(this.commonStrings!.SUCCESS, this, INSERT);
+    
 
                                     }
                                 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.FAILURE, this, INSERT, e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, INSERT, e);
+    
 
                                     }
                                 
@@ -145,22 +157,27 @@ var values = values
 var value = value
 
         try {
-            super.deleteWhere(TransformInfoData.getInstance()!.NAME, value)
+            super.deleteWhere(TransformInfoData.getInstance()!.NAME, value);
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.SUCCESS, this, commonStrings!.delete)
+                                    logUtil!.put(this.commonStrings!.SUCCESS, this, commonStrings!.delete);
+    
 
                                     }
                                 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.FAILURE, this, commonStrings!.delete, e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, commonStrings!.delete, e);
+    
 
                                     }
                                 
@@ -171,7 +188,7 @@ var value = value
 
                 //@Throws(Error::class)
             
-    public get(name: string, propertiesHashMap: HashMap<Any, Any>, pageContext: PageContext): TransformInfoInterface{
+    public get(name: string, propertiesHashMap: HashMap<any, any>, pageContext: PageContext): TransformInfoInterface{
 var name = name
 var propertiesHashMap = propertiesHashMap
 var pageContext = pageContext
@@ -179,18 +196,22 @@ var pageContext = pageContext
     var transformInfoData: TransformInfoData = TransformInfoData.getInstance()!;
         
         
+;
+    
 
-
-    var keysAndValues: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();
         
         
+;
+    
+keysAndValues!.put(transformInfoData!.NAME, name);
+    
 
-keysAndValues!.put(transformInfoData!.NAME, name)
-
-    var hashMap: HashMap<Any, Any> = super.getRow(keysAndValues)!;
+    var hashMap: HashMap<any, any> = super.getRow(keysAndValues)!;
         
         
-
+;
+    
 
                         if(hashMap != 
                                     null
@@ -201,7 +222,8 @@ keysAndValues!.put(transformInfoData!.NAME, name)
     var anyType: any = {} = hashMap!.get(transformInfoData!.OBJECTCONFIG)!;
         
         
-
+;
+    
 
                         if(anyType != 
                                     null
@@ -212,8 +234,10 @@ keysAndValues!.put(transformInfoData!.NAME, name)
     var string: string = anyType as String;
         
         
-
-hashMap!.put(transformInfoData!.OBJECTCONFIG, decode.toCharArray())
+;
+    
+hashMap!.put(transformInfoData!.OBJECTCONFIG, decode.toCharArray());
+    
 
                                     }
                                 
@@ -221,7 +245,8 @@ hashMap!.put(transformInfoData!.OBJECTCONFIG, decode.toCharArray())
     var objectData: any = {} = hashMap!.get(transformInfoData!.DATA)!;
         
         
-
+;
+    
 
                         if(objectData != 
                                     null
@@ -232,8 +257,10 @@ hashMap!.put(transformInfoData!.OBJECTCONFIG, decode.toCharArray())
     var string: string = objectData as String;
         
         
-
-hashMap!.put(transformInfoData!.DATA, decode.toCharArray())
+;
+    
+hashMap!.put(transformInfoData!.DATA, decode.toCharArray());
+    
 
                                     }
                                 
@@ -242,6 +269,8 @@ hashMap!.put(transformInfoData!.DATA, decode.toCharArray())
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.transformInfoFactoryInterface!.getInstance(hashMap, propertiesHashMap, pageContext);
+
+                        ;
     
 
                                     }
@@ -267,17 +296,20 @@ var storeName = storeName
     var objectConfigVector: Vector = new Vector();
         
         
-
+;
+    
 
     var objectConfigColumnVector: Vector = this.getColumnWhere(TransformInfoData.getInstance()!.OBJECTCONFIG, StoreFrontData.getInstance()!.NAME, storeName)!;
         
         
-
+;
+    
 
     var size: number = objectConfigColumnVector!.length!;
         
         
-
+;
+    
 
 
 
@@ -289,12 +321,17 @@ var storeName = storeName
 i < size; i++)
         {
 
-    var objectConfigString: string = objectConfigColumnVector!.get(i) as String;
-        
-        
+    var objectConfigString: string = objectConfigColumnVector!.get(i);
 
-objectConfigString= decode.toCharArray()
-objectConfigVector!.add(this.transformInfoObjectConfigAndManipulatorFactoryInterface!.getInstance(abeClientInformation, this as TransformInfoInterface, DomDocumentHelper.create(objectConfigString)))
+                         as String;
+        
+        
+;
+    
+objectConfigString= decode.toCharArray();
+    
+objectConfigVector!.add(this.transformInfoObjectConfigAndManipulatorFactoryInterface!.getInstance(abeClientInformation, this as TransformInfoInterface, DomDocumentHelper.create(objectConfigString)));
+    
 }
 
 
@@ -314,17 +351,20 @@ var storeName = storeName
     var viewNameVector: Vector = new Vector();
         
         
-
+;
+    
 
     var columnVector: Vector = this.getColumnWhere(TransformInfoData.getInstance()!.NAME, StoreFrontData.getInstance()!.NAME, storeName)!;
         
         
-
+;
+    
 
     var size: number = columnVector!.length!;
         
         
-
+;
+    
 
 
 
@@ -336,11 +376,15 @@ var storeName = storeName
 i < size; i++)
         {
 
-    var viewNameString: string = columnVector!.get(i) as String;
-        
-        
+    var viewNameString: string = columnVector!.get(i);
 
-viewNameVector!.add(viewNameString)
+                         as String;
+        
+        
+;
+    
+viewNameVector!.add(viewNameString);
+    
 }
 
 
@@ -357,46 +401,79 @@ viewNameVector!.add(viewNameString)
     var transformInfoData: TransformInfoData = TransformInfoData.getInstance()!;
         
         
-
+;
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)
-stringBuffer!.append(tableName)
-stringBuffer!.append(this.sqlStrings!.START)
-stringBuffer!.append(transformInfoData!.NAME)
-stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-stringBuffer!.append(StoreFrontData.getInstance()!.NAME)
-stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-stringBuffer!.append(transformInfoData!.OBJECTFILENAME)
-stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-stringBuffer!.append(transformInfoData!.OBJECT)
-stringBuffer!.append(this.sqlTypeStrings!.BLOB_NOT_NULL)
-stringBuffer!.append(transformInfoData!.OBJECTCONFIGFILENAME)
-stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-stringBuffer!.append(transformInfoData!.OBJECTCONFIG)
-stringBuffer!.append(this.sqlTypeStrings!.BLOB_NOT_NULL)
-stringBuffer!.append(transformInfoData!.TEMPLATEFILENAME)
-stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-stringBuffer!.append(transformInfoData!.TEMPLATE)
-stringBuffer!.append(this.sqlTypeStrings!.BLOB_NOT_NULL)
-stringBuffer!.append(transformInfoData!.DATAFILENAME)
-stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-stringBuffer!.append(transformInfoData!.DATA)
-stringBuffer!.append(this.sqlTypeStrings!.BLOB_NOT_NULL)
-stringBuffer!.append(EntryData.getInstance()!.LASTMODIFIED)
-stringBuffer!.append(EntryData.getInstance()!.TIMECREATED)
-stringBuffer!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)
-stringBuffer!.append(this.sqlStrings!.PRIMARY_KEY)
-stringBuffer!.append(transformInfoData!.NAME)
-stringBuffer!.append(this.sqlStrings!.END)
+;
+    
+stringBuffer!.append(this.sqlStrings!.CREATE_TABLE);
+    
+stringBuffer!.append(tableName);
+    
+stringBuffer!.append(this.sqlStrings!.START);
+    
+stringBuffer!.append(transformInfoData!.NAME);
+    
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
+    
+stringBuffer!.append(StoreFrontData.getInstance()!.NAME);
+    
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
+    
+stringBuffer!.append(transformInfoData!.OBJECTFILENAME);
+    
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
+    
+stringBuffer!.append(transformInfoData!.OBJECT);
+    
+stringBuffer!.append(this.sqlTypeStrings!.BLOB_NOT_NULL);
+    
+stringBuffer!.append(transformInfoData!.OBJECTCONFIGFILENAME);
+    
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
+    
+stringBuffer!.append(transformInfoData!.OBJECTCONFIG);
+    
+stringBuffer!.append(this.sqlTypeStrings!.BLOB_NOT_NULL);
+    
+stringBuffer!.append(transformInfoData!.TEMPLATEFILENAME);
+    
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
+    
+stringBuffer!.append(transformInfoData!.TEMPLATE);
+    
+stringBuffer!.append(this.sqlTypeStrings!.BLOB_NOT_NULL);
+    
+stringBuffer!.append(transformInfoData!.DATAFILENAME);
+    
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
+    
+stringBuffer!.append(transformInfoData!.DATA);
+    
+stringBuffer!.append(this.sqlTypeStrings!.BLOB_NOT_NULL);
+    
+stringBuffer!.append(EntryData.getInstance()!.LASTMODIFIED);
+    
+stringBuffer!.append(EntryData.getInstance()!.TIMECREATED);
+    
+stringBuffer!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL);
+    
+stringBuffer!.append(this.sqlStrings!.PRIMARY_KEY);
+    
+stringBuffer!.append(transformInfoData!.NAME);
+    
+stringBuffer!.append(this.sqlStrings!.END);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 
@@ -407,13 +484,18 @@ stringBuffer!.append(this.sqlStrings!.END)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.createTable(this.createTableStatement());
+
+                        ;
     
 }
 
 
-    public update(updatedValues: HashMap<Any, Any>){
+    public update(updatedValues: HashMap<any, any>){
 var updatedValues = updatedValues
-super.updateWhere(TransformInfoData.getInstance()!.NAME, updatedValues!.get(TransformInfoData.getInstance()!.NAME) as String, updatedValues)
+super.updateWhere(TransformInfoData.getInstance()!.NAME, updatedValues!.get(TransformInfoData.getInstance()!.NAME);
+
+                         as String, updatedValues);
+    
 }
 
 
@@ -423,6 +505,8 @@ super.updateWhere(TransformInfoData.getInstance()!.NAME, updatedValues!.get(Tran
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.dropTable();
+
+                        ;
     
 }
 

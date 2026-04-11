@@ -25,7 +25,7 @@ import { HashMap } from "../../../../../../java/util/HashMap.js";
 interface RequestMapInterface {
         
 
-    getRequestHashMap(): HashMap<Any, Any>
+    getRequestHashMap(): HashMap<any, any>
 
 }
                 

@@ -69,18 +69,22 @@ private constructor (){
     var byteArrayOutputStream: ByteArrayOutputStream = new ByteArrayOutputStream();
         
         
-
+;
+    
 
     var printStream: PrintStream = new PrintStream(byteArrayOutputStream);
         
         
-
-e.printStackTrace(printStream)
+;
+    
+e.printStackTrace(printStream);
+    
 
     var output: string = byteArrayOutputStream!.toString()!;
         
         
-
+;
+    
 
                         if(output != 
                                     null

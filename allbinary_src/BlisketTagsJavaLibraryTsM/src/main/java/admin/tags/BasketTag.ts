@@ -63,7 +63,7 @@ export class BasketTag extends CustomTagSupport {
 
     private storeName: string
 
-    private propertiesHashMap: HashMap<Any, Any>
+    private propertiesHashMap: HashMap<any, any>
 public constructor (){
 
             super();
@@ -72,13 +72,15 @@ public constructor (){
 
     public setCommand(command: string){
 var command = command
-this.command= command
+this.command= command;
+    
 }
 
 
     public setStoreName(value: string){
 var value = value
-this.storeName= value
+this.storeName= value;
+    
 }
 
 
@@ -92,39 +94,51 @@ this.storeName= value
                             getInstance(this.propertiesHashMap, this.pageContext)!;
         
         
+;
+    
 
-
-    var method: Method = anyType!::class.getMethod("isBasketEmpty", 
+    var method: Method = anyType!.constructor.name.getMethod("isBasketEmpty", 
                             null)!;
         
         
-
+;
+    
 
     var emptyBoolean: Boolean = method.invoke(anyType, 
-                            null) as Boolean;
-        
-        
+                            null);
 
+                         as Boolean;
+        
+        
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return emptyBoolean;
+
+                        ;
     
-} catch(e: LicensingException)
+
+                //: 
+} catch(e) 
             {
 
 
 
                             throw e
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "isBasketEmpty()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "isBasketEmpty()", e);
+    
 
                                     }
                                 
@@ -149,44 +163,57 @@ this.storeName= value
                             getInstance(this.propertiesHashMap, this.pageContext)!;
         
         
+;
+    
 
-
-    var method: Method = anyType!::class.getMethod("addItemToBasket", 
+    var method: Method = anyType!.constructor.name.getMethod("addItemToBasket", 
                             null)!;
         
         
-
+;
+    
 
     var emptyBoolean: Boolean = method.invoke(anyType, 
-                            null) as Boolean;
-        
-        
+                            null);
 
+                         as Boolean;
+        
+        
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return emptyBoolean;
+
+                        ;
     
-} catch(e: LicensingException)
+
+                //: 
+} catch(e) 
             {
 
 
 
                             throw e
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
 
     var error: string = "Failed to add item from Basket";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "addItemToBasket()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "addItemToBasket()", e);
+    
 
                                     }
                                 
@@ -211,44 +238,57 @@ this.storeName= value
                             getInstance(this.propertiesHashMap, this.pageContext)!;
         
         
+;
+    
 
-
-    var method: Method = anyType!::class.getMethod("removeItemFromBasket", 
+    var method: Method = anyType!.constructor.name.getMethod("removeItemFromBasket", 
                             null)!;
         
         
-
+;
+    
 
     var emptyBoolean: Boolean = method.invoke(anyType, 
-                            null) as Boolean;
-        
-        
+                            null);
 
+                         as Boolean;
+        
+        
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return emptyBoolean;
+
+                        ;
     
-} catch(e: LicensingException)
+
+                //: 
+} catch(e) 
             {
 
 
 
                             throw e
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
 
     var error: string = "Failed to remove item from Basket";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "removeItemFromBasket()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "removeItemFromBasket()", e);
+    
 
                                     }
                                 
@@ -273,44 +313,57 @@ this.storeName= value
                             getInstance(this.propertiesHashMap, this.pageContext)!;
         
         
+;
+    
 
-
-    var method: Method = anyType!::class.getMethod("adjustBasket", 
+    var method: Method = anyType!.constructor.name.getMethod("adjustBasket", 
                             null)!;
         
         
-
+;
+    
 
     var emptyBoolean: Boolean = method.invoke(anyType, 
-                            null) as Boolean;
-        
-        
+                            null);
 
+                         as Boolean;
+        
+        
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return emptyBoolean;
+
+                        ;
     
-} catch(e: LicensingException)
+
+                //: 
+} catch(e) 
             {
 
 
 
                             throw e
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
 
     var error: string = "Failed to Adjust Basket";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "adjustBasket()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "adjustBasket()", e);
+    
 
                                     }
                                 
@@ -336,17 +389,22 @@ this.storeName= value
                                 )
                         
                                     {
-                                    this.propertiesHashMap= HashMap<Any, Any>()
-this.propertiesHashMap!.put(StoreFrontData.getInstance()!.NAME, this.storeName)
+                                    this.propertiesHashMap= HashMap<any, any>();
+    
+this.propertiesHashMap!.put(StoreFrontData.getInstance()!.NAME, this.storeName);
+    
 
                         if(command.compareTo(BasketData.INSERT) == 0)
                         
                                     {
                                     
-                        if(!this.addItemToBasket())
+                        if(!this.addItemToBasket();
+
+                        )
                         
                                     {
-                                    this.pageContext!.getOut()!.println("Item is not currently being sold.<p/>")
+                                    this.pageContext!.getOut()!.println("Item is not currently being sold.<p/>");
+    
 
                                     }
                                 
@@ -357,7 +415,8 @@ this.propertiesHashMap!.put(StoreFrontData.getInstance()!.NAME, this.storeName)
                         if(command.compareTo(BasketData.DELETE) == 0)
                         
                                     {
-                                    this.removeItemFromBasket()
+                                    this.removeItemFromBasket();
+    
 
                                     }
                                 
@@ -365,7 +424,8 @@ this.propertiesHashMap!.put(StoreFrontData.getInstance()!.NAME, this.storeName)
                         if(command.compareTo(BasketData.ADJUST) == 0)
                         
                                     {
-                                    this.adjustBasket()
+                                    this.adjustBasket();
+    
 
                                     }
                                 
@@ -396,9 +456,12 @@ this.propertiesHashMap!.put(StoreFrontData.getInstance()!.NAME, this.storeName)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return SKIP_BODY;
     
-} catch(e: LicensingException)
+
+                //: 
+} catch(e) 
             {
-AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e);
+    
 
 
 
@@ -406,9 +469,12 @@ AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
                         return SKIP_BODY;
     
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
-AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
+    
 
 
 

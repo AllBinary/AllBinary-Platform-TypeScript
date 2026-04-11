@@ -30,8 +30,10 @@ export class CustomItemsTag extends TableTag {
 public constructor (){
 
             super();
-            this.setTagHelperFactory(CustomItemsHelperFactory())
-this.setTagRequestHelperFactory(CustomItemsRequestHelperFactory())
+            this.setTagHelperFactory(CustomItemsHelperFactory());
+    
+this.setTagRequestHelperFactory(CustomItemsRequestHelperFactory());
+    
 }
 
 

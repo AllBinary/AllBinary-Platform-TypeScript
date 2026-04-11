@@ -61,24 +61,33 @@ public constructor (categoryInterface: StoreThemeCategoryInterface)
     var node: Node = super.toXmlNode(document)!;
         
         
+;
+    
 
+    var storeThemeCategoryInterface: StoreThemeCategoryInterface = this.getCategoryInterface();
 
-    var storeThemeCategoryInterface: StoreThemeCategoryInterface = this.getCategoryInterface() as StoreThemeCategoryInterface;
+                         as StoreThemeCategoryInterface;
         
         
+;
+    
 
+    var themeValidationArray: ThemeValidation[] = storeThemeCategoryInterface!.getThemes()!.toArray();
 
-    var themeValidationArray: ThemeValidation[] = storeThemeCategoryInterface!.getThemes()!.toArray() as Array<ThemeValidation?>;
+                         as Array<ThemeValidation?>;
         
         
-
-Arrays.sort(themeValidationArray, ThemeComparator())
+;
+    
+Arrays.sort(themeValidationArray, ThemeComparator());
+    
 
     var size: number = themeValidationArray!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -93,8 +102,10 @@ index < size; index++)
     var themeValidation: ThemeValidation = themeValidationArray[index]! as ThemeValidation;
         
         
-
-node.appendChild(themeValidation!.toXmlNode(document))
+;
+    
+node.appendChild(themeValidation!.toXmlNode(document));
+    
 }
 
 

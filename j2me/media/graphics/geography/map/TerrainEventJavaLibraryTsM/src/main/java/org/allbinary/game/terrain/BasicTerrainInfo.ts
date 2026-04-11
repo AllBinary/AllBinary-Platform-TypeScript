@@ -39,7 +39,8 @@ public constructor (angle: Angle){
 
             super();
             var angle = angle
-this.angle= angle
+this.angle= angle;
+    
 }
 
 
@@ -55,7 +56,8 @@ this.angle= angle
 
     public setAngle(angle: Angle){
 var angle = angle
-this.angle= angle
+this.angle= angle;
+    
 }
 
 

@@ -43,8 +43,10 @@ var bufferedImage = bufferedImage
 
                             //For kotlin this is before the body of the constructor.
                     
-this.frame= frame
-setBufferedImage(bufferedImage)
+this.frame= frame;
+    
+setBufferedImage(bufferedImage);
+    
 }
 
 
@@ -60,7 +62,8 @@ setBufferedImage(bufferedImage)
 
     setBufferedImage(bufferedImage: BufferedImage){
 var bufferedImage = bufferedImage
-this.bufferedImage= bufferedImage
+this.bufferedImage= bufferedImage;
+    
 }
 
 

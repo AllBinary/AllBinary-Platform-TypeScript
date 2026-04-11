@@ -32,12 +32,14 @@ export class Points
 public constructor (){
 
             super();
-            this.pointVector= BasicArrayList()
+            this.pointVector= BasicArrayList();
+    
 }
 
 
     public init(){
-this.pointVector!.clear()
+this.pointVector!.clear();
+    
 }
 
 
@@ -53,7 +55,8 @@ this.pointVector!.clear()
 
     public addPoints(vector: BasicArrayList){
 var vector = vector
-this.pointVector!.addAll2(vector)
+this.pointVector!.addAll2(vector);
+    
 }
 
 
@@ -90,6 +93,8 @@ this.pointVector!.addAll2(vector)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.pointVector!.size();
+
+                        ;
     
 }
 

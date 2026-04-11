@@ -91,67 +91,87 @@ public constructor (transformInfoInterface: TransformInfoInterface)
     var isValid: Boolean = Boolean.TRUE;
         
         
-
+;
+    
 
     var categoryFactoryInterface: CategoryFactoryInterface = new StoreThemeCategoryFactory(this.getTransformInfoInterface());
         
         
-
+;
+    
 
     var categoryLoaderInterface: CategoryLoaderInterface = CategoryLoaderFactory.getInstance(categoryFactoryInterface)!;
         
         
+;
+    
 
+    var rootStoreThemeCategoryInterface: StoreThemeCategoryInterface = categoryFactoryInterface!.getRootInstance();
 
-    var rootStoreThemeCategoryInterface: StoreThemeCategoryInterface = categoryFactoryInterface!.getRootInstance() as StoreThemeCategoryInterface;
+                         as StoreThemeCategoryInterface;
         
         
+;
+    
 
+    var storeThemeCategoryInterface: StoreThemeCategoryInterface = categoryLoaderInterface!.getAll(rootStoreThemeCategoryInterface as CategoryInterface);
 
-    var storeThemeCategoryInterface: StoreThemeCategoryInterface = categoryLoaderInterface!.getAll(rootStoreThemeCategoryInterface as CategoryInterface) as StoreThemeCategoryInterface;
+                         as StoreThemeCategoryInterface;
         
         
-
-this.validationInterface= StoreThemeCategoryPathValidationView(storeThemeCategoryInterface as StoreThemeCategoryInterface)
-isValid= this.validationInterface!.isValid()
+;
+    
+this.validationInterface= StoreThemeCategoryPathValidationView(storeThemeCategoryInterface as StoreThemeCategoryInterface);
+    
+isValid= this.validationInterface!.isValid();
+    
 
     var domNodeInterface: DomNodeInterface = this.validationInterface as DomNodeInterface;
         
         
-
+;
+    
 
     var document: Document = DomDocumentHelper.create()!;
         
         
-
-document.appendChild(domNodeInterface!.toXmlNode(document))
+;
+    
+document.appendChild(domNodeInterface!.toXmlNode(document));
+    
 
     var documentString: string = DomDocumentHelper.toString(document)!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("Setting Data: " +documentString, this, this.commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put("Setting Data: " +documentString, this, this.commonStrings!.CONSTRUCTOR);
+    
 
                                     }
                                 
-this.getTransformInfoInterface()!.setData(documentString)
+this.getTransformInfoInterface()!.setData(documentString);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return isValid;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("Failed to validate", this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put("Failed to validate", this, commonStrings!.IS_VALID, e);
+    
 
                                     }
                                 
@@ -173,21 +193,28 @@ this.getTransformInfoInterface()!.setData(documentString)
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(this.validationInterface!.validationInfo())
+;
+    
+stringBuffer!.append(this.validationInterface!.validationInfo());
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e)
+                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e);
+    
 
                                     }
                                 

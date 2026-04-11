@@ -46,27 +46,36 @@ public constructor (genericProfileActionJPanel: GenericProfileActionJPanel, prof
             super();
             var genericProfileActionJPanel = genericProfileActionJPanel
 var profileActionScriptConditionInterface = profileActionScriptConditionInterface
-initComponents()
-this.genericProfileActionJPanel= genericProfileActionJPanel
-this.profileActionScriptConditionInterface= profileActionScriptConditionInterface
+initComponents();
+    
+this.genericProfileActionJPanel= genericProfileActionJPanel;
+    
+this.profileActionScriptConditionInterface= profileActionScriptConditionInterface;
+    
 }
 
 
     initComponents(){
-removeJButton= javax.swing.JButton()
-setLayout(java.awt.GridLayout())
-removeJButton!.setText("Remove")
+removeJButton= javax.swing.JButton();
+    
+setLayout(java.awt.GridLayout());
+    
+removeJButton!.setText("Remove");
+    
 removeJButton!.addActionListener(object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
 var evt = evt
-removeJButtonActionPerformed(evt)
+removeJButtonActionPerformed(evt);
+    
 }
 
                                 }
-                            )
-add(removeJButton)
+                            );
+    
+add(removeJButton);
+    
 }
 
 
@@ -76,14 +85,16 @@ var evt = evt
     var genericProfileAction: GenericProfileAction = this.genericProfileActionJPanel!.getGenericProfileAction()!;
         
         
-
+;
+    
 
                         if(genericProfileAction == 
                                     null
                                 )
                         
                                     {
-                                    logUtil!.put("GenericProfileAction was null", this, "removeJButtonActionPerformed")
+                                    logUtil!.put("GenericProfileAction was null", this, "removeJButtonActionPerformed");
+    
 
 
 
@@ -93,8 +104,10 @@ var evt = evt
 
                                     }
                                 
-genericProfileAction!.getGenericProfileActionScript()!.removeCondition(this.profileActionScriptConditionInterface)
-this.genericProfileActionJPanel!.updateProfileActionUI()
+genericProfileAction!.getGenericProfileActionScript()!.removeCondition(this.profileActionScriptConditionInterface);
+    
+this.genericProfileActionJPanel!.updateProfileActionUI();
+    
 }
 
 

@@ -36,17 +36,20 @@ var path = path
     var abPathData: AbPathData = AbPathData.getInstance()!;
         
         
-
+;
+    
 
     var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
         
         
-
+;
+    
 
     var filePathData: FilePathData = FilePathData.getInstance()!;
         
         
-
+;
+    
 
                         if(stringValidationUtil!.isEmpty(path))
                         
@@ -60,7 +63,8 @@ var path = path
 
                                     }
                                 
-path= path.replace(abPathData!.SEPARATORCHAR, filePathData!.SEPARATORCHAR)
+path= path.replace(abPathData!.SEPARATORCHAR, filePathData!.SEPARATORCHAR);
+    
 
 
 

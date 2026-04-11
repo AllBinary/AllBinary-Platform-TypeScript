@@ -66,7 +66,8 @@ public constructor (transformInfoInterface: TransformInfoInterface)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.styleValidationInterface= CssStyleValidation()
+this.styleValidationInterface= CssStyleValidation();
+    
 }
 
 
@@ -88,7 +89,8 @@ this.styleValidationInterface= CssStyleValidation()
             
 
                             {
-                            CustomizerUtil.getInstance()!.insert(this.getTransformInfoInterface(), this.styleValidationInterface as DomNodeInterface)
+                            CustomizerUtil.getInstance()!.insert(this.getTransformInfoInterface(), this.styleValidationInterface as DomNodeInterface);
+    
 
                             }
                     
@@ -98,13 +100,16 @@ this.styleValidationInterface= CssStyleValidation()
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return Boolean.TRUE;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("Failed to validate", this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put("Failed to validate", this, commonStrings!.IS_VALID, e);
+    
 
                                     }
                                 
@@ -126,21 +131,28 @@ this.styleValidationInterface= CssStyleValidation()
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(this.styleValidationInterface!.validationInfo())
+;
+    
+stringBuffer!.append(this.styleValidationInterface!.validationInfo());
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e)
+                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e);
+    
 
                                     }
                                 
@@ -184,6 +196,8 @@ var document = document
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return views.ValidationOnlyTempUtil.getInstance()!.view(this);
+
+                        ;
     
 }
 

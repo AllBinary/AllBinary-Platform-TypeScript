@@ -55,14 +55,17 @@ export class StatusFactory
 
     public setStatusNoLog(status: string){
 var status = status
-MyFrame.statusJLabel!.setText(status)
+MyFrame.statusJLabel!.setText(status);
+    
 }
 
 
     public setStatus(status: string){
 var status = status
-setStatusNoLog(status)
-logUtil!.put(STATUS_LABEL +status, this, SETSTATUS)
+setStatusNoLog(status);
+    
+logUtil!.put(STATUS_LABEL +status, this, SETSTATUS);
+    
 }
 
 

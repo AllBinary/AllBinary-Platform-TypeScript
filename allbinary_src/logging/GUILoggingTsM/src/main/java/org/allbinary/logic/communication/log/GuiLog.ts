@@ -67,21 +67,25 @@ var msg = msg
     var error: JDialog = new JDialog();
         
         
-
+;
+    
 
     var size: number = msg.length *9;
         
         
-
+;
+    
 
     var x: number = size;
         
         
-
+;
+    
 
                         if(x > 550)
                         x= 550
-error.getContentPane()!.setLayout(GridLayout(1, 1))
+error.getContentPane()!.setLayout(GridLayout(1, 1));
+    
 
                         if(size > 255)
                         
@@ -90,9 +94,12 @@ error.getContentPane()!.setLayout(GridLayout(1, 1))
     var y: number = 550;
         
         
-
-error.setSize(x, y)
-error.getContentPane()!.add(javax.swing.JScrollPane(javax.swing.JTextArea(msg)))
+;
+    
+error.setSize(x, y);
+    
+error.getContentPane()!.add(javax.swing.JScrollPane(javax.swing.JTextArea(msg)));
+    
 
                                     }
                                 
@@ -104,13 +111,17 @@ error.getContentPane()!.add(javax.swing.JScrollPane(javax.swing.JTextArea(msg)))
     var y: number = 50;
         
         
-
-error.setSize(x, y)
-error.getContentPane()!.add(javax.swing.JScrollPane(javax.swing.JLabel(msg)))
+;
+    
+error.setSize(x, y);
+    
+error.getContentPane()!.add(javax.swing.JScrollPane(javax.swing.JLabel(msg)));
+    
 
                                     }
                                 
-error.show()
+error.show();
+    
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
@@ -125,6 +136,8 @@ var functionName = functionName
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.put(specialMessage, anyType, functionName, 
                             null);
+
+                        ;
     
 }
 
@@ -138,21 +151,27 @@ var exception = exception
 
         try {
             
-    var data: string = logFormatUtil!.get(specialMessage, anyType!::class.toString()!, functionName, exception)!;
+    var data: string = logFormatUtil!.get(specialMessage, anyType!.constructor.name.toString()!, functionName, exception)!;
         
         
-
-this.showDialog(data)
-System.out.println(data)
+;
+    
+this.showDialog(data);
+    
+System.out.println(data);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return data;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-PreLogUtil.put(commonStrings!.EXCEPTION, this, "put", e)
+PreLogUtil.putOE(commonStrings!.EXCEPTION, this, "put", e);
+    
 
 
 
@@ -175,6 +194,8 @@ var functionName = functionName
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.put(specialMessage, className, functionName, 
                             null);
+
+                        ;
     
 }
 
@@ -191,18 +212,24 @@ var exception = exception
     var data: string = logFormatUtil!.get(specialMessage, className, functionName, exception)!;
         
         
-
-this.showDialog(data)
-System.out.println(data)
+;
+    
+this.showDialog(data);
+    
+System.out.println(data);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return data;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-PreLogUtil.put(commonStrings!.EXCEPTION, this, "put", e)
+PreLogUtil.putOE(commonStrings!.EXCEPTION, this, "put", e);
+    
 
 
 

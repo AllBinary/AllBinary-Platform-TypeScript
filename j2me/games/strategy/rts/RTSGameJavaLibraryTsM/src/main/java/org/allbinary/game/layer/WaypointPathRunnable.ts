@@ -43,17 +43,20 @@ public constructor (){
     public run(){
 
         try {
-            pathFindingLayer!.getWaypointRunnableLogHelper()!.start(pathFindingLayer)
+            pathFindingLayer!.getWaypointRunnableLogHelper()!.start(pathFindingLayer);
+    
 
     var waypointBehavior: WaypointBehaviorBase = pathFindingLayer!.getWaypointBehavior()!;
         
         
-
+;
+    
 
     var geographicMapCellPosition: GeographicMapCellPosition = pathFindingLayer!.getCurrentGeographicMapCellPosition()!;
         
         
-
+;
+    
 
                         if(geographicMapCellPosition == 
                                     null
@@ -67,18 +70,26 @@ public constructor (){
 
                                     }
                                 
-waypointBehavior!.setWaypointPathsList(this.targetPathFindingLayer!.getWaypointBehavior()!.getWaypoint()!.getPathsList(geographicMapCellPosition))
-pathFindingLayer!.getWaypointRunnableLogHelper()!.end(pathFindingLayer)
-Thread.sleep(15.toLong() +(this.priorityP *2))
-} catch(e: Exception)
+waypointBehavior!.setWaypointPathsList(this.targetPathFindingLayer!.getWaypointBehavior()!.getWaypoint()!.getPathsList(geographicMapCellPosition));
+    
+pathFindingLayer!.getWaypointRunnableLogHelper()!.end(pathFindingLayer);
+    
+Thread.sleep(15.toLong() +(this.priorityP *2));
+    
+
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
-this.setRunning(false)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
+    
+this.setRunning(false);
+    
 }
 
 }

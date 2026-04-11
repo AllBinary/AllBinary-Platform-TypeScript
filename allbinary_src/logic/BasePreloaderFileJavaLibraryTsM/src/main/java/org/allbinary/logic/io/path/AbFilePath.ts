@@ -35,10 +35,14 @@ public constructor (aPath: string)
     var abPathUtil: PathUtil = PathUtil.getInstance()!;
         
         
-
-this.schema= this.getSchema(aPath)
-this.setName(abPathUtil!.getNameFromPath(aPath))
-this.setPath(abPathUtil!.adjust(this.getPath(abPathUtil!.removeNameFromPath(aPath)!.toString())))
+;
+    
+this.schema= this.getSchema(aPath);
+    
+this.setName(abPathUtil!.getNameFromPath(aPath));
+    
+this.setPath(abPathUtil!.adjust(this.getPath(abPathUtil!.removeNameFromPath(aPath)!.toString())));
+    
 }
 
 

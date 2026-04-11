@@ -49,6 +49,8 @@ var colorDelta = colorDelta
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return StringMaker().
                             appendint(point.hashCode())!.append(CommonSeps.getInstance()!.UNDERSCORE)!.append(colorDelta!.getKey()!.toString())!.toString();
+
+                        ;
     
 }
 
@@ -63,9 +65,12 @@ public constructor (point: GPoint, colorDelta: ColorDelta){
             super();
             var point = point
 var colorDelta = colorDelta
-this.setPoint(point)
-this.setColorDelta(colorDelta)
-this.key= PixelDelta.getKey(this.getPoint(), this.getColorDelta())
+this.setPoint(point);
+    
+this.setColorDelta(colorDelta);
+    
+this.key= PixelDelta.getKey(this.getPoint(), this.getColorDelta());
+    
 }
 
 
@@ -91,7 +96,8 @@ this.key= PixelDelta.getKey(this.getPoint(), this.getColorDelta())
 
     public setPoint(point: GPoint){
 var point = point
-this.point= point
+this.point= point;
+    
 }
 
 
@@ -107,7 +113,8 @@ this.point= point
 
     public setColorDelta(colorDelta: ColorDelta){
 var colorDelta = colorDelta
-this.colorDelta= colorDelta
+this.colorDelta= colorDelta;
+    
 }
 
 
@@ -118,6 +125,8 @@ this.colorDelta= colorDelta
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return StringMaker().
                             append("PixelDelta: Point: ")!.append(point.toString())!.append(CommonSeps.getInstance()!.SPACE)!.append(colorDelta!.toString())!.toString();
+
+                        ;
     
 }
 

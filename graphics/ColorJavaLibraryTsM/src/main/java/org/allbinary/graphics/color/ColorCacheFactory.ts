@@ -53,25 +53,34 @@ export class ColorCacheFactory
     var logUtil: LogUtil = LogUtil.getInstance()!;
         
         
-
+;
+    
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
+;
+    
 
     var STATIC_BLOCK: string = "Static Block";
         
         
-
+;
+    
 
         try {
-            logUtil!.put(commonStrings!.START, ColorCacheFactory::class, STATIC_BLOCK)
-cacheInterface= AutomaticCacheInterfaceFactory.getInstance(ColorCacheableFactory(), CacheTypeFactory.getInstance()!.CACHE, CachePolicyFactory.getInstance()!.THIRTY_MINUTES_TEN_THOUSAND_MAX)
-logUtil!.put(commonStrings!.END, ColorCacheFactory::class, STATIC_BLOCK)
-} catch(e: Exception)
+            logUtil!.put(commonStrings!.START, ColorCacheFactory::class, STATIC_BLOCK);
+    
+cacheInterface= AutomaticCacheInterfaceFactory.getInstance(ColorCacheableFactory(), CacheTypeFactory.getInstance()!.CACHE, CachePolicyFactory.getInstance()!.THIRTY_MINUTES_TEN_THOUSAND_MAX);
+    
+logUtil!.put(commonStrings!.END, ColorCacheFactory::class, STATIC_BLOCK);
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, ColorCacheFactory::class, STATIC_BLOCK, e)
+logUtil!.put(commonStrings!.EXCEPTION, ColorCacheFactory::class, STATIC_BLOCK, e);
+    
 }
 
 }

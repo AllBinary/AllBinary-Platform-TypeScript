@@ -45,12 +45,13 @@ export class XmlOptionItemsHelper extends BasicTable {
         
 
     private readonly portion: Portion
-public constructor (hashMap: HashMap<Any, Any>, pageContext: PageContext){
+public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
             var hashMap = hashMap
 var pageContext = pageContext
-this.portion= Portion(hashMap)
+this.portion= Portion(hashMap);
+    
 }
 
 
@@ -61,12 +62,14 @@ this.portion= Portion(hashMap)
     var success: string = XmlOptionItemsEntityFactory.getInstance()!.getXmlOptionItemsEntityInstance()!.createTable()!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put(success, this, "create()")
+                                    logUtil!.put(success, this, "create()");
+    
 
                                     }
                                 
@@ -76,18 +79,22 @@ this.portion= Portion(hashMap)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to create table";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "create()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "create()", e);
+    
 
                                     }
                                 
@@ -109,12 +116,14 @@ this.portion= Portion(hashMap)
     var success: string = XmlOptionItemsEntityFactory.getInstance()!.getXmlOptionItemsEntityInstance()!.dropTable()!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put(success, this, commonStrings!.DROP)
+                                    logUtil!.put(success, this, commonStrings!.DROP);
+    
 
                                     }
                                 
@@ -124,18 +133,22 @@ this.portion= Portion(hashMap)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to drop pricing tables";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.DROP, e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.DROP, e);
+    
 
                                     }
                                 
@@ -157,17 +170,20 @@ this.portion= Portion(hashMap)
     var success: string = "Restore Successful";
         
         
-
+;
+    
 
     var result: string = AbSqlTableUtil.getInstance()!.restoreTable(XmlOptionItemsEntityFactory.getInstance()!.getXmlOptionItemsEntityInstance(), portion)!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put(success, this, "restore()")
+                                    logUtil!.put(success, this, "restore()");
+    
 
                                     }
                                 
@@ -177,18 +193,22 @@ this.portion= Portion(hashMap)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to restore backup";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "restore()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "restore()", e);
+    
 
                                     }
                                 
@@ -210,17 +230,20 @@ this.portion= Portion(hashMap)
     var success: string = "Restore Successful";
         
         
-
+;
+    
 
     var result: string = AbSqlTableUtil.getInstance()!.backupTable(XmlOptionItemsEntityFactory.getInstance()!.getXmlOptionItemsEntityInstance())!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put(success, this, "backup()")
+                                    logUtil!.put(success, this, "backup()");
+    
 
                                     }
                                 
@@ -230,18 +253,22 @@ this.portion= Portion(hashMap)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to make backup";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "backup()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "backup()", e);
+    
 
                                     }
                                 

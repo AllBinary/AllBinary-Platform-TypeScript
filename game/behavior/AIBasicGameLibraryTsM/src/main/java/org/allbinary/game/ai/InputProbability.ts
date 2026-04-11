@@ -18,7 +18,10 @@
 
 
 
-import { Hashtable } from "../../../../java/util/Hashtable.js";
+            import Hashtable from "@ohos.util.HashMap";
+        
+
+//import { Hashtable } from "../../../../java/util/Hashtable.js";
 
     
 import { SmallIntegerSingletonFactory } from "../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js";
@@ -51,10 +54,14 @@ public constructor (likelyhoodIntegerArray: Integer[][], repeatLikelyhoodInteger
 var repeatLikelyhoodIntegerArray = repeatLikelyhoodIntegerArray
 var max = max
 var timeDelayHelper = timeDelayHelper
-this.likelyhoodIntegerArray= likelyhoodIntegerArray
-this.repeatLikelyhoodIntegerArray= repeatLikelyhoodIntegerArray
-this.max= max
-this.timeDelayHelper= timeDelayHelper
+this.likelyhoodIntegerArray= likelyhoodIntegerArray;
+    
+this.repeatLikelyhoodIntegerArray= repeatLikelyhoodIntegerArray;
+    
+this.max= max;
+    
+this.timeDelayHelper= timeDelayHelper;
+    
 }
 
 
@@ -98,13 +105,15 @@ this.timeDelayHelper= timeDelayHelper
 }
 
 
-    public toHashtable(): Hashtable<Any, Any>{
+    public toHashtable(): Hashtable<any, any>{
 
-    var hashtable: Hashtable<Any, Any> = new Hashtable<Any, Any>();
+    var hashtable: Hashtable<any, any> = new Hashtable<any, any>();
         
         
-
-hashtable.put(INPUT_PROBABILITY, this)
+;
+    
+hashtable.put(INPUT_PROBABILITY, this);
+    
 
 
 

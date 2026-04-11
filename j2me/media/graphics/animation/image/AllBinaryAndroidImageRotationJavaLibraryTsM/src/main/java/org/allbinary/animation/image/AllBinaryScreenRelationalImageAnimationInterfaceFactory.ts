@@ -80,8 +80,10 @@ public constructor (image: Image, animationBehaviorFactory: AnimationBehaviorFac
     var androidImageInterface: AndroidImageInterface = lastImage as AndroidImageInterface;
         
         
-
-androidImageInterface!.getBitmap()!.recycle()
+;
+    
+androidImageInterface!.getBitmap()!.recycle();
+    
 
                                     }
                                 
@@ -89,8 +91,10 @@ androidImageInterface!.getBitmap()!.recycle()
     var scale: number = ScreenRelationalUtil.getInstance()!.getScale(image)!;
         
         
-
-lastImage= ImageScaleUtil.getInstance()!.createImage(GameFeatureImageCacheFactory.getInstance(), this.getImage(), scale, scale, false)
+;
+    
+lastImage= ImageScaleUtil.getInstance()!.createImage(GameFeatureImageCacheFactory.getInstance(), this.getImage(), scale, scale, false);
+    
 }
 
 

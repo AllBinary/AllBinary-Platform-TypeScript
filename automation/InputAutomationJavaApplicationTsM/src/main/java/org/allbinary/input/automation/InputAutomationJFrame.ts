@@ -134,21 +134,27 @@ export class InputAutomationJFrame extends javax.swing.JFrame
 
 
     public static destroy(){
-INPUTAUTOMATION_JFRAME.setVisible(false)
+INPUTAUTOMATION_JFRAME.setVisible(false);
+    
 }
 
 
     public static create(inputAutomationBundleActivatorListenerInterface: InputAutomationBundleActivatorListenerInterface){
     //var inputAutomationBundleActivatorListenerInterface = inputAutomationBundleActivatorListenerInterface
-LogConfigTypeFactory.getInstance()
+LogConfigTypeFactory.getInstance();
+    
 
     var appUrlGlobals: AppUrlGlobals = new AppUrlGlobals();
         
         
-
-appUrlGlobals!.setWebappPath("G:/mnt/bc/mydev/work_automation/automation/run/")
-URLGLOBALS.init(appUrlGlobals)
-WebappClassLoaderInfo.setLoader(appUrlGlobals!::class.java.classLoader)
+;
+    
+appUrlGlobals!.setWebappPath("G:/mnt/bc/mydev/work_automation/automation/run/");
+    
+URLGLOBALS.init(appUrlGlobals);
+    
+WebappClassLoaderInfo.setLoader(appUrlGlobals!.constructor.name.java.classLoader);
+    
 java.awt.EventQueue.invokeLater(object: ARunnable()
                                 {
                                 
@@ -157,38 +163,50 @@ java.awt.EventQueue.invokeLater(object: ARunnable()
     var logUtil: LogUtil = LogUtil.getInstance()!;
         
         
-
+;
+    
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
+;
+    
 
         try {
-            logUtil!.put("Running", this, commonStrings!.RUN)
-INPUTAUTOMATION_JFRAME= InputAutomationJFrame()
-InputRobotFactory.getInstance()!.addListener(InputAutomationJFrame.getInstance())
+            logUtil!.put("Running", this, commonStrings!.RUN);
+    
+INPUTAUTOMATION_JFRAME= InputAutomationJFrame();
+    
+InputRobotFactory.getInstance()!.addListener(InputAutomationJFrame.getInstance());
+    
 
                         if(inputAutomationBundleActivatorListenerInterface != 
                                     null
                                 )
                         
                                     {
-                                    inputAutomationBundleActivatorListenerInterface!.registerAsService()
-inputAutomationBundleActivatorListenerInterface!.useServices()
+                                    inputAutomationBundleActivatorListenerInterface!.registerAsService();
+    
+inputAutomationBundleActivatorListenerInterface!.useServices();
+    
 
                                     }
                                 
-INPUTAUTOMATION_JFRAME.setVisible(true)
-} catch(e: Exception)
+INPUTAUTOMATION_JFRAME.setVisible(true);
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
+    
 }
 
 }
 
                                 }
-                            )
+                            );
+    
 }
 
 
@@ -197,7 +215,8 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
     public static main(args: string[]){
 var args = args
 InputAutomationJFrame.create(
-                            null)
+                            null);
+    
 }
 
 
@@ -225,269 +244,382 @@ InputAutomationJFrame.create(
 public constructor (){
 
             super();
-            initComponents()
+            initComponents();
+    
 
-    var url: URL = this::class.getResource("/help/Help.hs")!;
+    var url: URL = this.constructor.name.getResource("/help/Help.hs")!;
         
         
-
-logUtil!.put("URL: " +url, this, this.commonStrings!.CONSTRUCTOR)
-helpSet= JavaHelpUtil.getInstance()!.getHelpSet(url)
-url= this::class.getResource("/resources/allbinaryicon8bit.jpg")
+;
+    
+logUtil!.put("URL: " +url, this, this.commonStrings!.CONSTRUCTOR);
+    
+helpSet= JavaHelpUtil.getInstance()!.getHelpSet(url);
+    
+url= this.constructor.name.getResource("/resources/allbinaryicon8bit.jpg");
+    
 
     var imageIcon: ImageIcon = new ImageIcon(url);
         
         
-
-this.setIconImage(imageIcon!.getImage())
-this.init()
+;
+    
+this.setIconImage(imageIcon!.getImage());
+    
+this.init();
+    
 }
 
 
     public helpSetAdded(helpSetEvent: HelpSetEvent){
     //var helpSetEvent = helpSetEvent
-this.helpSet!.add(helpSetEvent!.getHelpSet())
+this.helpSet!.add(helpSetEvent!.getHelpSet());
+    
 }
 
 
     public helpSetRemoved(helpSetEvent: HelpSetEvent){
     //var helpSetEvent = helpSetEvent
-this.helpSet!.remove(helpSetEvent!.getHelpSet())
+this.helpSet!.remove(helpSetEvent!.getHelpSet());
+    
 }
 
 
                 //@Throws(Error::class)
             
     init(){
-InputAutomationConfigurationFactory.init(InputAutomationClientInformationFactory.getInstance())
-this.inputAutomationModuleFactory= InputAutomationModuleFactoryFactory(this)
+InputAutomationConfigurationFactory.init(InputAutomationClientInformationFactory.getInstance());
+    
+this.inputAutomationModuleFactory= InputAutomationModuleFactoryFactory(this);
+    
  = 
 .
-                    execute()
-this.gameRobotJTabbedPane!.setEnabledAt(1, false)
-this.gameRobotJTabbedPane!.setSelectedIndex(0)
+                    execute();
+    
+this.gameRobotJTabbedPane!.setEnabledAt(1, false);
+    
+this.gameRobotJTabbedPane!.setSelectedIndex(0);
+    
 }
 
 
     initComponents(){
-noModuleSelectedJDialog= javax.swing.JDialog()
-noModuleSelectedJLabel= javax.swing.JLabel()
-gameRobotJTabbedPane= javax.swing.JTabbedPane()
-inputAutomationModuleJPanel= javax.swing.JPanel()
-jScrollPane1= javax.swing.JScrollPane()
-inputAutomationModuleJList= javax.swing.JList()
-automationModuleConfigurationJPanel= javax.swing.JPanel()
-mainJMenuBar= javax.swing.JMenuBar()
-processingJMenu= javax.swing.JMenu()
-startJMenuItem= javax.swing.JMenuItem()
-stopJMenuItem= javax.swing.JMenuItem()
-optionsJMenu= javax.swing.JMenu()
-stopOnFocusJCheckBoxMenuItem= javax.swing.JCheckBoxMenuItem()
-toolsJMenu= javax.swing.JMenu()
-helpJMenuItem= javax.swing.JMenuItem()
-updatesJMenuItem= javax.swing.JMenuItem()
-subscriptionJMenuItem= javax.swing.JMenuItem()
-modulesJMenuItem= javax.swing.JMenuItem()
-aboutJMenuItem= javax.swing.JMenuItem()
-noModuleSelectedJDialog!.setMinimumSize(java.awt.Dimension(200, 100))
-noModuleSelectedJLabel!.setText("Please Select A Module")
+noModuleSelectedJDialog= javax.swing.JDialog();
+    
+noModuleSelectedJLabel= javax.swing.JLabel();
+    
+gameRobotJTabbedPane= javax.swing.JTabbedPane();
+    
+inputAutomationModuleJPanel= javax.swing.JPanel();
+    
+jScrollPane1= javax.swing.JScrollPane();
+    
+inputAutomationModuleJList= javax.swing.JList();
+    
+automationModuleConfigurationJPanel= javax.swing.JPanel();
+    
+mainJMenuBar= javax.swing.JMenuBar();
+    
+processingJMenu= javax.swing.JMenu();
+    
+startJMenuItem= javax.swing.JMenuItem();
+    
+stopJMenuItem= javax.swing.JMenuItem();
+    
+optionsJMenu= javax.swing.JMenu();
+    
+stopOnFocusJCheckBoxMenuItem= javax.swing.JCheckBoxMenuItem();
+    
+toolsJMenu= javax.swing.JMenu();
+    
+helpJMenuItem= javax.swing.JMenuItem();
+    
+updatesJMenuItem= javax.swing.JMenuItem();
+    
+subscriptionJMenuItem= javax.swing.JMenuItem();
+    
+modulesJMenuItem= javax.swing.JMenuItem();
+    
+aboutJMenuItem= javax.swing.JMenuItem();
+    
+noModuleSelectedJDialog!.setMinimumSize(java.awt.Dimension(200, 100));
+    
+noModuleSelectedJLabel!.setText("Please Select A Module");
+    
 
     var noModuleSelectedJDialogLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(noModuleSelectedJDialog!.getContentPane());
         
         
-
-noModuleSelectedJDialog!.getContentPane()!.setLayout(noModuleSelectedJDialogLayout)
-noModuleSelectedJDialogLayout!.setHorizontalGroup(noModuleSelectedJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(noModuleSelectedJDialogLayout!.createSequentialGroup()!.addContainerGap()!.addComponent(noModuleSelectedJLabel)!.addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-noModuleSelectedJDialogLayout!.setVerticalGroup(noModuleSelectedJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addComponent(noModuleSelectedJLabel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 48, Short.MAX_VALUE))
-setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE)
-setMinimumSize(java.awt.Dimension(325, 215))
-setResizable(false)
+;
+    
+noModuleSelectedJDialog!.getContentPane()!.setLayout(noModuleSelectedJDialogLayout);
+    
+noModuleSelectedJDialogLayout!.setHorizontalGroup(noModuleSelectedJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(noModuleSelectedJDialogLayout!.createSequentialGroup()!.addContainerGap()!.addComponent(noModuleSelectedJLabel)!.addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)));
+    
+noModuleSelectedJDialogLayout!.setVerticalGroup(noModuleSelectedJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addComponent(noModuleSelectedJLabel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 48, Short.MAX_VALUE));
+    
+setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+    
+setMinimumSize(java.awt.Dimension(325, 215));
+    
+setResizable(false);
+    
 addWindowFocusListener(object: java.awt.event.WindowFocusListener()
                                 {
                                 
     public windowGainedFocus(evt: java.awt.event.WindowEvent){
 var evt = evt
-formWindowGainedFocus(evt)
+formWindowGainedFocus(evt);
+    
 }
 
     public windowLostFocus(evt: java.awt.event.WindowEvent){
 var evt = evt
-formWindowLostFocus(evt)
+formWindowLostFocus(evt);
+    
 }
 
                                 }
-                            )
+                            );
+    
 addFocusListener(object: java.awt.event.FocusAdapter()
                                 {
                                 
     public focusGained(evt: java.awt.event.FocusEvent){
 var evt = evt
-formFocusGained(evt)
+formFocusGained(evt);
+    
 }
 
     public focusLost(evt: java.awt.event.FocusEvent){
 var evt = evt
-formFocusLost(evt)
+formFocusLost(evt);
+    
 }
 
                                 }
-                            )
-gameRobotJTabbedPane!.setMinimumSize(java.awt.Dimension(320, 200))
-inputAutomationModuleJList!.setMinimumSize(java.awt.Dimension(200, 0))
+                            );
+    
+gameRobotJTabbedPane!.setMinimumSize(java.awt.Dimension(320, 200));
+    
+inputAutomationModuleJList!.setMinimumSize(java.awt.Dimension(200, 0));
+    
 inputAutomationModuleJList!.addListSelectionListener(object: javax.swing.event.ListSelectionListener()
                                 {
                                 
     public valueChanged(evt: javax.swing.event.ListSelectionEvent){
 var evt = evt
-inputAutomationModuleJListValueChanged(evt)
+inputAutomationModuleJListValueChanged(evt);
+    
 }
 
                                 }
-                            )
-jScrollPane1!.setViewportView(inputAutomationModuleJList)
+                            );
+    
+jScrollPane1!.setViewportView(inputAutomationModuleJList);
+    
 
     var inputAutomationModuleJPanelLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(inputAutomationModuleJPanel);
         
         
-
-inputAutomationModuleJPanel!.setLayout(inputAutomationModuleJPanelLayout)
-inputAutomationModuleJPanelLayout!.setHorizontalGroup(inputAutomationModuleJPanelLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(inputAutomationModuleJPanelLayout!.createSequentialGroup()!.addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE)!.addContainerGap(367, Short.MAX_VALUE)))
-inputAutomationModuleJPanelLayout!.setVerticalGroup(inputAutomationModuleJPanelLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(inputAutomationModuleJPanelLayout!.createSequentialGroup()!.addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 330, javax.swing.GroupLayout.PREFERRED_SIZE)!.addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-gameRobotJTabbedPane!.addTab("Modules", inputAutomationModuleJPanel)
+;
+    
+inputAutomationModuleJPanel!.setLayout(inputAutomationModuleJPanelLayout);
+    
+inputAutomationModuleJPanelLayout!.setHorizontalGroup(inputAutomationModuleJPanelLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(inputAutomationModuleJPanelLayout!.createSequentialGroup()!.addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE)!.addContainerGap(367, Short.MAX_VALUE)));
+    
+inputAutomationModuleJPanelLayout!.setVerticalGroup(inputAutomationModuleJPanelLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(inputAutomationModuleJPanelLayout!.createSequentialGroup()!.addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 330, javax.swing.GroupLayout.PREFERRED_SIZE)!.addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)));
+    
+gameRobotJTabbedPane!.addTab("Modules", inputAutomationModuleJPanel);
+    
 
     var automationModuleConfigurationJPanelLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(automationModuleConfigurationJPanel);
         
         
-
-automationModuleConfigurationJPanel!.setLayout(automationModuleConfigurationJPanelLayout)
-automationModuleConfigurationJPanelLayout!.setHorizontalGroup(automationModuleConfigurationJPanelLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGap(0, 566, Short.MAX_VALUE))
-automationModuleConfigurationJPanelLayout!.setVerticalGroup(automationModuleConfigurationJPanelLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGap(0, 334, Short.MAX_VALUE))
-gameRobotJTabbedPane!.addTab("Configuration", automationModuleConfigurationJPanel)
-processingJMenu!.setText("Processing")
-processingJMenu!.setToolTipText("Set module processing state")
-startJMenuItem!.setText(this.commonStrings!.START)
+;
+    
+automationModuleConfigurationJPanel!.setLayout(automationModuleConfigurationJPanelLayout);
+    
+automationModuleConfigurationJPanelLayout!.setHorizontalGroup(automationModuleConfigurationJPanelLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGap(0, 566, Short.MAX_VALUE));
+    
+automationModuleConfigurationJPanelLayout!.setVerticalGroup(automationModuleConfigurationJPanelLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGap(0, 334, Short.MAX_VALUE));
+    
+gameRobotJTabbedPane!.addTab("Configuration", automationModuleConfigurationJPanel);
+    
+processingJMenu!.setText("Processing");
+    
+processingJMenu!.setToolTipText("Set module processing state");
+    
+startJMenuItem!.setText(this.commonStrings!.START);
+    
 startJMenuItem!.addActionListener(object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
 var evt = evt
-startJMenuItemActionPerformed(evt)
+startJMenuItemActionPerformed(evt);
+    
 }
 
                                 }
-                            )
-processingJMenu!.add(startJMenuItem)
-stopJMenuItem!.setText("Stop")
+                            );
+    
+processingJMenu!.add(startJMenuItem);
+    
+stopJMenuItem!.setText("Stop");
+    
 stopJMenuItem!.addActionListener(object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
 var evt = evt
-stopJMenuItemActionPerformed(evt)
+stopJMenuItemActionPerformed(evt);
+    
 }
 
                                 }
-                            )
-processingJMenu!.add(stopJMenuItem)
-mainJMenuBar!.add(processingJMenu)
-optionsJMenu!.setText("Options")
+                            );
+    
+processingJMenu!.add(stopJMenuItem);
+    
+mainJMenuBar!.add(processingJMenu);
+    
+optionsJMenu!.setText("Options");
+    
 optionsJMenu!.addActionListener(object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
 var evt = evt
-optionsJMenuActionPerformed(evt)
+optionsJMenuActionPerformed(evt);
+    
 }
 
                                 }
-                            )
-stopOnFocusJCheckBoxMenuItem!.setSelected(true)
-stopOnFocusJCheckBoxMenuItem!.setEnabled(false)
-stopOnFocusJCheckBoxMenuItem!.setLabel("Stop Module On Focus")
+                            );
+    
+stopOnFocusJCheckBoxMenuItem!.setSelected(true);
+    
+stopOnFocusJCheckBoxMenuItem!.setEnabled(false);
+    
+stopOnFocusJCheckBoxMenuItem!.setLabel("Stop Module On Focus");
+    
 stopOnFocusJCheckBoxMenuItem!.addActionListener(object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
 var evt = evt
-stopOnFocusJCheckBoxMenuItemActionPerformed(evt)
+stopOnFocusJCheckBoxMenuItemActionPerformed(evt);
+    
 }
 
                                 }
-                            )
-optionsJMenu!.add(stopOnFocusJCheckBoxMenuItem)
-mainJMenuBar!.add(optionsJMenu)
-toolsJMenu!.setText("Help")
-helpJMenuItem!.setText("Help")
+                            );
+    
+optionsJMenu!.add(stopOnFocusJCheckBoxMenuItem);
+    
+mainJMenuBar!.add(optionsJMenu);
+    
+toolsJMenu!.setText("Help");
+    
+helpJMenuItem!.setText("Help");
+    
 helpJMenuItem!.addActionListener(object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
 var evt = evt
-helpJMenuItemActionPerformed(evt)
+helpJMenuItemActionPerformed(evt);
+    
 }
 
                                 }
-                            )
-toolsJMenu!.add(helpJMenuItem)
-updatesJMenuItem!.setText("Updates")
+                            );
+    
+toolsJMenu!.add(helpJMenuItem);
+    
+updatesJMenuItem!.setText("Updates");
+    
 updatesJMenuItem!.addActionListener(object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
 var evt = evt
-updatesJMenuItemActionPerformed(evt)
+updatesJMenuItemActionPerformed(evt);
+    
 }
 
                                 }
-                            )
-toolsJMenu!.add(updatesJMenuItem)
-subscriptionJMenuItem!.setText("Subscription")
+                            );
+    
+toolsJMenu!.add(updatesJMenuItem);
+    
+subscriptionJMenuItem!.setText("Subscription");
+    
 subscriptionJMenuItem!.addActionListener(object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
 var evt = evt
-subscriptionJMenuItemActionPerformed(evt)
+subscriptionJMenuItemActionPerformed(evt);
+    
 }
 
                                 }
-                            )
-toolsJMenu!.add(subscriptionJMenuItem)
-modulesJMenuItem!.setText("Module Manager")
+                            );
+    
+toolsJMenu!.add(subscriptionJMenuItem);
+    
+modulesJMenuItem!.setText("Module Manager");
+    
 modulesJMenuItem!.addActionListener(object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
 var evt = evt
-modulesJMenuItemActionPerformed(evt)
+modulesJMenuItemActionPerformed(evt);
+    
 }
 
                                 }
-                            )
-toolsJMenu!.add(modulesJMenuItem)
-aboutJMenuItem!.setText("About")
+                            );
+    
+toolsJMenu!.add(modulesJMenuItem);
+    
+aboutJMenuItem!.setText("About");
+    
 aboutJMenuItem!.addActionListener(object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
 var evt = evt
-aboutJMenuItemActionPerformed(evt)
+aboutJMenuItemActionPerformed(evt);
+    
 }
 
                                 }
-                            )
-toolsJMenu!.add(aboutJMenuItem)
-mainJMenuBar!.add(toolsJMenu)
-setJMenuBar(mainJMenuBar)
+                            );
+    
+toolsJMenu!.add(aboutJMenuItem);
+    
+mainJMenuBar!.add(toolsJMenu);
+    
+setJMenuBar(mainJMenuBar);
+    
 
     var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(getContentPane());
         
         
-
-getContentPane()!.setLayout(layout)
-layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addComponent(gameRobotJTabbedPane, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 571, Short.MAX_VALUE))
-layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addComponent(gameRobotJTabbedPane, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 359, Short.MAX_VALUE))
-pack()
+;
+    
+getContentPane()!.setLayout(layout);
+    
+layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addComponent(gameRobotJTabbedPane, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 571, Short.MAX_VALUE));
+    
+layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addComponent(gameRobotJTabbedPane, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 359, Short.MAX_VALUE));
+    
+pack();
+    
 }
 
 
@@ -495,10 +627,14 @@ pack()
 var evt = evt
 
         try {
-            Desktop.getDesktop()!.browse(uri)
-} catch(e: Exception)
+            Desktop.getDesktop()!.browse(uri);
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, this, "subscriptionJMenuItemActionPerformed", e)
+logUtil!.put(this.commonStrings!.EXCEPTION, this, "subscriptionJMenuItemActionPerformed", e);
+    
 }
 
 }
@@ -508,10 +644,14 @@ logUtil!.put(this.commonStrings!.EXCEPTION, this, "subscriptionJMenuItemActionPe
 var evt = evt
 
         try {
-            Desktop.getDesktop()!.browse(uri)
-} catch(e: Exception)
+            Desktop.getDesktop()!.browse(uri);
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, this, "updatesJMenuItemActionPerformed", e)
+logUtil!.put(this.commonStrings!.EXCEPTION, this, "updatesJMenuItemActionPerformed", e);
+    
 }
 
 }
@@ -523,9 +663,12 @@ var evt = evt
     var textJDialog: JDialog = new BasicTextJDialog("Copyright (c) 2002-2007 AllBinary");
         
         
-
-textJDialog!.setVisible(true)
-textJDialog!.setLocationRelativeTo(this)
+;
+    
+textJDialog!.setVisible(true);
+    
+textJDialog!.setLocationRelativeTo(this);
+    
 }
 
 
@@ -534,10 +677,14 @@ var evt = evt
 
         try {
             DesktopBundle().
-                            start()
-} catch(e: Exception)
+                            start();
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, this, "modulesJMenuItemActionPerformed", e)
+logUtil!.put(this.commonStrings!.EXCEPTION, this, "modulesJMenuItemActionPerformed", e);
+    
 }
 
 }
@@ -545,7 +692,8 @@ logUtil!.put(this.commonStrings!.EXCEPTION, this, "modulesJMenuItemActionPerform
 
     helpJMenuItemActionPerformed(evt: java.awt.event.ActionEvent){
 var evt = evt
-JavaHelpUtil.getInstance()!.show(helpSet)
+JavaHelpUtil.getInstance()!.show(helpSet);
+    
 }
 
 
@@ -561,7 +709,8 @@ var evt = evt
 
     formWindowLostFocus(evt: java.awt.event.WindowEvent){
 var evt = evt
-logUtil!.put("Nothing", this, "focusLost")
+logUtil!.put("Nothing", this, "focusLost");
+    
 }
 
 
@@ -571,14 +720,16 @@ var evt = evt
                         if(this.stopOnFocusJCheckBoxMenuItem!.isSelected())
                         
                                     {
-                                    logUtil!.put("Stopping", this, "focusGained")
+                                    logUtil!.put("Stopping", this, "focusGained");
+    
 
                         if(this.runnableInterface != 
                                     null
                                 )
                         
                                     {
-                                    this.runnableInterface!.setRunning(false)
+                                    this.runnableInterface!.setRunning(false);
+    
 
                                     }
                                 
@@ -603,39 +754,56 @@ var evt = evt
 
         try {
             
-    var gameAutomationRobotModuleNameString: string = this.inputAutomationModuleJList!.getSelectedValue() as String;
-        
-        
+    var gameAutomationRobotModuleNameString: string = this.inputAutomationModuleJList!.getSelectedValue();
 
+                         as String;
+        
+        
+;
+    
 
                         if(gameAutomationRobotModuleNameString != 
                                     null
                                 )
                         
                                     {
-                                    this.inputAutomationModuleInterface= this.inputAutomationModuleFactory!.getInstance(gameAutomationRobotModuleNameString)
-this.getAutomationModuleConfigurationJPanel()!.removeAll()
+                                    this.inputAutomationModuleInterface= this.inputAutomationModuleFactory!.getInstance(gameAutomationRobotModuleNameString);
+    
+this.getAutomationModuleConfigurationJPanel()!.removeAll();
+    
 
-    var layout: javax.swing.GroupLayout = this.getAutomationModuleConfigurationJPanel()!.getLayout() as javax.swing.GroupLayout;
+    var layout: javax.swing.GroupLayout = this.getAutomationModuleConfigurationJPanel()!.getLayout();
+
+                         as javax.swing.GroupLayout;
         
         
-
-layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGap(0, 395, Short.MAX_VALUE)!.addComponent(inputAutomationModuleInterface!.getConfigurationJPanel(), javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGap(0, 256, Short.MAX_VALUE)!.addComponent(inputAutomationModuleInterface!.getConfigurationJPanel(), javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-this.gameRobotJTabbedPane!.setEnabledAt(1, true)
-logUtil!.put("Setting Module: " +gameAutomationRobotModuleNameString +" and Configuration JPanel", this, "gameAutomationRobotModuleJListValueChanged")
+;
+    
+layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGap(0, 395, Short.MAX_VALUE)!.addComponent(inputAutomationModuleInterface!.getConfigurationJPanel(), javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE));
+    
+layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGap(0, 256, Short.MAX_VALUE)!.addComponent(inputAutomationModuleInterface!.getConfigurationJPanel(), javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE));
+    
+this.gameRobotJTabbedPane!.setEnabledAt(1, true);
+    
+logUtil!.put("Setting Module: " +gameAutomationRobotModuleNameString +" and Configuration JPanel", this, "gameAutomationRobotModuleJListValueChanged");
+    
 
                                     }
                                 
                         else {
-                            logUtil!.put("Module name was null", this, "gameAutomationRobotModuleJListValueChanged")
-this.gameRobotJTabbedPane!.setEnabledAt(1, false)
+                            logUtil!.put("Module name was null", this, "gameAutomationRobotModuleJListValueChanged");
+    
+this.gameRobotJTabbedPane!.setEnabledAt(1, false);
+    
 
                         }
                             
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, this, "gameAutomationRobotModuleJListValueChanged", e)
+logUtil!.put(this.commonStrings!.EXCEPTION, this, "gameAutomationRobotModuleJListValueChanged", e);
+    
 }
 
 }
@@ -649,13 +817,16 @@ var evt = evt
                                 )
                         
                                     {
-                                    this.runnableInterface!.setRunning(false)
+                                    this.runnableInterface!.setRunning(false);
+    
 
                                     }
                                 
                         else {
-                            this.noModuleSelectedJDialog!.setVisible(true)
-this.noModuleSelectedJDialog!.setLocationRelativeTo(this)
+                            this.noModuleSelectedJDialog!.setVisible(true);
+    
+this.noModuleSelectedJDialog!.setLocationRelativeTo(this);
+    
 
                         }
                             
@@ -666,30 +837,38 @@ this.noModuleSelectedJDialog!.setLocationRelativeTo(this)
 var evt = evt
 
         try {
-            logUtil!.put("Starting", this, "startJMenuItemActionPerformed")
+            logUtil!.put("Starting", this, "startJMenuItemActionPerformed");
+    
 
                         if(inputAutomationModuleInterface != 
                                     null
                                 )
                         
                                     {
-                                    this.runnableInterface= inputAutomationModuleInterface!.getInstance()
+                                    this.runnableInterface= inputAutomationModuleInterface!.getInstance();
+    
 
                         if(this.runnableInterface != 
                                     null
                                 )
                         
                                     {
-                                    this.thread= Thread(this.runnableInterface)
-thread.setPriority(Thread.MIN_PRIORITY +1)
-thread.start()
+                                    this.thread= Thread(this.runnableInterface);
+    
+thread.setPriority(Thread.MIN_PRIORITY +1);
+    
+thread.start();
+    
 
                                     }
                                 
                         else {
-                            logUtil!.put("Runnnable was null", this, "startJMenuItemActionPerformed")
-this.noModuleSelectedJDialog!.setVisible(true)
-this.noModuleSelectedJDialog!.setLocationRelativeTo(this)
+                            logUtil!.put("Runnnable was null", this, "startJMenuItemActionPerformed");
+    
+this.noModuleSelectedJDialog!.setVisible(true);
+    
+this.noModuleSelectedJDialog!.setLocationRelativeTo(this);
+    
 
                         }
                             
@@ -697,15 +876,21 @@ this.noModuleSelectedJDialog!.setLocationRelativeTo(this)
                                     }
                                 
                         else {
-                            logUtil!.put("InputAutomationModuleInterface was null", this, "startJMenuItemActionPerformed")
-this.noModuleSelectedJDialog!.setVisible(true)
-this.noModuleSelectedJDialog!.setLocationRelativeTo(this)
+                            logUtil!.put("InputAutomationModuleInterface was null", this, "startJMenuItemActionPerformed");
+    
+this.noModuleSelectedJDialog!.setVisible(true);
+    
+this.noModuleSelectedJDialog!.setLocationRelativeTo(this);
+    
 
                         }
                             
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, this, "startJMenuItemActionPerformed", e)
+logUtil!.put(this.commonStrings!.EXCEPTION, this, "startJMenuItemActionPerformed", e);
+    
 }
 
 }
@@ -723,7 +908,8 @@ logUtil!.put(this.commonStrings!.EXCEPTION, this, "startJMenuItemActionPerformed
 
     public setAutomationModuleConfigurationJPanel(automationModuleConfigurationJPanel: javax.swing.JPanel){
 var automationModuleConfigurationJPanel = automationModuleConfigurationJPanel
-this.automationModuleConfigurationJPanel= automationModuleConfigurationJPanel
+this.automationModuleConfigurationJPanel= automationModuleConfigurationJPanel;
+    
 }
 
 
@@ -731,11 +917,16 @@ this.automationModuleConfigurationJPanel= automationModuleConfigurationJPanel
 var inputAutomationRobotChangeEvent = inputAutomationRobotChangeEvent
 
         try {
-            logUtil!.put(this.commonStrings!.START, this, "onAdd")
-InputRobotFactory.getInstance()!.add(inputAutomationRobotChangeEvent!.getInputAutomationRobotInterfaceWrapper()!.getInputRobotInterface())
-} catch(e: Exception)
+            logUtil!.put(this.commonStrings!.START, this, "onAdd");
+    
+InputRobotFactory.getInstance()!.add(inputAutomationRobotChangeEvent!.getInputAutomationRobotInterfaceWrapper()!.getInputRobotInterface());
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, this, "onAdd", e)
+logUtil!.put(this.commonStrings!.EXCEPTION, this, "onAdd", e);
+    
 }
 
 }
@@ -745,11 +936,16 @@ logUtil!.put(this.commonStrings!.EXCEPTION, this, "onAdd", e)
 var inputAutomationRobotChangeEvent = inputAutomationRobotChangeEvent
 
         try {
-            logUtil!.put(this.commonStrings!.START, this, "onRemove")
-InputRobotFactory.getInstance()!.add(inputAutomationRobotChangeEvent!.getInputAutomationRobotInterfaceWrapper()!.getInputRobotInterface())
-} catch(e: Exception)
+            logUtil!.put(this.commonStrings!.START, this, "onRemove");
+    
+InputRobotFactory.getInstance()!.add(inputAutomationRobotChangeEvent!.getInputAutomationRobotInterfaceWrapper()!.getInputRobotInterface());
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, this, "onRemove", e)
+logUtil!.put(this.commonStrings!.EXCEPTION, this, "onRemove", e);
+    
 }
 
 }
@@ -759,17 +955,24 @@ logUtil!.put(this.commonStrings!.EXCEPTION, this, "onRemove", e)
     //var inputAutomationConfigurationChangeEvent = inputAutomationConfigurationChangeEvent
 
         try {
-            logUtil!.put(this.commonStrings!.START, this, "onAdd")
+            logUtil!.put(this.commonStrings!.START, this, "onAdd");
+    
 
     var inputAutomationModuleConfigurations: InputAutomationModuleConfigurations = InputAutomationModuleConfigurationsSingletonFactory.getInstance()!;
         
         
+;
+    
+inputAutomationModuleConfigurations!.add(inputAutomationConfigurationChangeEvent!.getInputAutomationModuleConfiguration());
+    
+this.init();
+    
 
-inputAutomationModuleConfigurations!.add(inputAutomationConfigurationChangeEvent!.getInputAutomationModuleConfiguration())
-this.init()
-} catch(e: Exception)
+                //: 
+} catch(e) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, this, "onAdd", e)
+logUtil!.put(this.commonStrings!.EXCEPTION, this, "onAdd", e);
+    
 }
 
 }
@@ -779,22 +982,30 @@ logUtil!.put(this.commonStrings!.EXCEPTION, this, "onAdd", e)
 var inputAutomationConfigurationChangeEvent = inputAutomationConfigurationChangeEvent
 
         try {
-            logUtil!.put(this.commonStrings!.START, this, "onRemove")
+            logUtil!.put(this.commonStrings!.START, this, "onRemove");
+    
 
     var inputAutomationConfiguration: InputAutomationConfiguration = InputAutomationConfigurationFactory.getInstance()!;
         
         
-
+;
+    
 
     var inputAutomationModuleConfigurations: InputAutomationModuleConfigurations = new InputAutomationModuleConfigurations(inputAutomationConfiguration!.getInputAutomationModuleConfigurationList());
         
         
+;
+    
+inputAutomationModuleConfigurations!.remove(inputAutomationConfigurationChangeEvent!.getInputAutomationModuleConfiguration());
+    
+this.init();
+    
 
-inputAutomationModuleConfigurations!.remove(inputAutomationConfigurationChangeEvent!.getInputAutomationModuleConfiguration())
-this.init()
-} catch(e: Exception)
+                //: 
+} catch(e) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, this, "onRemove", e)
+logUtil!.put(this.commonStrings!.EXCEPTION, this, "onRemove", e);
+    
 }
 
 }

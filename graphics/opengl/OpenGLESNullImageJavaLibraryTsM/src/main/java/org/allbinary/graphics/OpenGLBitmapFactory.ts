@@ -52,7 +52,8 @@ public constructor (bitmapConfig: any = {}){
 
             super();
                 //var bitmapConfig = bitmapConfig
-this.bitmapConfig= bitmapConfig
+this.bitmapConfig= bitmapConfig;
+    
 }
 
 

@@ -79,20 +79,27 @@ export class OrderHistoryRequestHelper extends TagHelper {
     private groupId: string
 
     private status: string
-public constructor (hashMap: HashMap<Any, Any>, pageContext: PageContext){
+public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
             var hashMap = hashMap
 var pageContext = pageContext
-this.request= pageContext!.getRequest() as HttpServletRequest
-this.getFormData()
+this.request= pageContext!.getRequest();
+
+                         as HttpServletRequest;
+    
+this.getFormData();
+    
 }
 
 
     getFormData(){
-this.id= request.getParameter(OrderData.ID)
-this.groupId= request.getParameter(ShippingMethodData.GROUP)
-this.status= request.getParameter(OrderHistoryData.STATUS)
+this.id= request.getParameter(OrderData.ID);
+    
+this.groupId= request.getParameter(ShippingMethodData.GROUP);
+    
+this.status= request.getParameter(OrderHistoryData.STATUS);
+    
 }
 
 
@@ -107,12 +114,14 @@ this.status= request.getParameter(OrderHistoryData.STATUS)
                         if(OrderItemsEntityFactory.getInstance()!.isEverythingShipped(id))
                         
                                     {
-                                    this.status= OrderHistoryData.SHIPPED
+                                    this.status= OrderHistoryData.SHIPPED;
+    
 
                                     }
                                 
                         else {
-                            this.status= OrderHistoryData.PARTIALLYSHIPPED
+                            this.status= OrderHistoryData.PARTIALLYSHIPPED;
+    
 
                         }
                             
@@ -123,13 +132,16 @@ this.status= request.getParameter(OrderHistoryData.STATUS)
     var success: string = "Status successfully set to: " +this.status;
         
         
-
-OrderHistoryEntityFactory.getInstance()!.setStatus(id, this.status)
+;
+    
+OrderHistoryEntityFactory.getInstance()!.setStatus(id, this.status);
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put("Success", this, "setOrderStatus()")
+                                    logUtil!.put("Success", this, "setOrderStatus()");
+    
 
                                     }
                                 
@@ -139,18 +151,22 @@ OrderHistoryEntityFactory.getInstance()!.setStatus(id, this.status)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to set order status";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "setOrderStatus()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "setOrderStatus()", e);
+    
 
                                     }
                                 
@@ -178,20 +194,25 @@ var newStatus = newStatus
     var success: string = "Status successfully set to: " +newStatus;
         
         
-
-OrderHistoryEntityFactory.getInstance()!.setStatus(id, newStatus)
+;
+    
+OrderHistoryEntityFactory.getInstance()!.setStatus(id, newStatus);
+    
 
     var orderHistory: OrderHistory = OrderHistoryEntityFactory.getInstance()!.getOrder(id)!;
         
         
-
+;
+    
 OrderStatusEmail(this.abeClientInformation, orderHistory).
-                            process()
+                            process();
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put("Success", this, "setOrderStatus()")
+                                    logUtil!.put("Success", this, "setOrderStatus()");
+    
 
                                     }
                                 
@@ -201,18 +222,22 @@ OrderStatusEmail(this.abeClientInformation, orderHistory).
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to view order table";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "setOrderStatus(newStatus)", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "setOrderStatus(newStatus)", e);
+    
 
                                     }
                                 

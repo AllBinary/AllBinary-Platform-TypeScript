@@ -46,7 +46,8 @@ public constructor (allBinaryGameCanvas: AllBinaryGameCanvas){
 
             super();
             var allBinaryGameCanvas = allBinaryGameCanvas
-this.allBinaryGameCanvas= allBinaryGameCanvas
+this.allBinaryGameCanvas= allBinaryGameCanvas;
+    
 }
 
 
@@ -67,28 +68,35 @@ this.allBinaryGameCanvas= allBinaryGameCanvas
     var features: Features = Features.getInstance()!;
         
         
-
+;
+    
 
     var isOpenGL: boolean = features.isDefault(OpenGLFeatureFactory.getInstance()!.OPENGL)!;
         
         
-
+;
+    
 
                         if(isOpenGL)
                         
                                     {
-                                    allBinaryGameCanvas!.processSleep()
+                                    allBinaryGameCanvas!.processSleep();
+    
 
                                     }
                                 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
+    
 }
 
 

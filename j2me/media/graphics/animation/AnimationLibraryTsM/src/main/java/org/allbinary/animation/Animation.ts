@@ -69,7 +69,8 @@ protected constructor (){
 
     public setAlpha(alpha: number){
     //var alpha = alpha
-this.alphaP= alpha
+this.alphaP= alpha;
+    
 }
 
 
@@ -83,7 +84,8 @@ this.alphaP= alpha
     //var graphics = graphics
     //var x = x
     //var y = y
-this.basicSetColorUtil!.setBasicColorP(graphics, this.getBasicColorP(), this.getColor())
+this.basicSetColorUtil!.setBasicColorP(graphics, this.getBasicColorP(), this.getColor());
+    
 }
 
 
@@ -117,8 +119,10 @@ this.basicSetColorUtil!.setBasicColorP(graphics, this.getBasicColorP(), this.get
 
     public setBasicColorP(basicColor: BasicColor){
     //var basicColor = basicColor
-this.basicColor= basicColor
-this.colorP= this.basicColor!.toInt()
+this.basicColor= basicColor;
+    
+this.colorP= this.basicColor!.toInt();
+    
 }
 
 
@@ -134,8 +138,10 @@ this.colorP= this.basicColor!.toInt()
 
     public changeBasicColor(basicColor: BasicColor){
     //var basicColor = basicColor
-this.changeBasicColorP= basicColor
-this.changeColorP= this.changeBasicColorP!.toInt()
+this.changeBasicColorP= basicColor;
+    
+this.changeColorP= this.changeBasicColorP!.toInt();
+    
 }
 
 

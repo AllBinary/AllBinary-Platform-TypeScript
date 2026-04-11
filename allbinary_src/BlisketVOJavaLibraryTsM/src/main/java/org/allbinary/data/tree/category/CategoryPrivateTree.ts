@@ -68,12 +68,15 @@ public constructor (categoryFactoryInterface: CategoryFactoryInterface){
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.START, this, "CategoryPrivateTree(CategoryFactoryInterface categoryFactoryInterface)")
+;
+    
+logUtil!.put(commonStrings!.START, this, "CategoryPrivateTree(CategoryFactoryInterface categoryFactoryInterface)");
+    
 
                                     }
                                 
-this.categoryFactoryInterface= categoryFactoryInterface
+this.categoryFactoryInterface= categoryFactoryInterface;
+    
 }
 
 
@@ -86,7 +89,8 @@ var categoryInterface = categoryInterface
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put("Saving Category File: " +categoryInterface!.getFilePath(), this, "save()")
+                                    logUtil!.put("Saving Category File: " +categoryInterface!.getFilePath(), this, "save()");
+    
 
                                     }
                                 
@@ -95,18 +99,22 @@ var categoryInterface = categoryInterface
                             toXmlDoc()!;
         
         
-
+;
+    
 
     var cryptFileWriter: CryptFileWriter = new CryptFileWriter(CategoryData.getInstance()!.UNCRYPTED_EXTENSION, CategoryData.getInstance()!.ENCRYPTED_EXTENSION);
         
         
-
-cryptFileWriter!.write(categoryInterface!.getFilePath(), document)
+;
+    
+cryptFileWriter!.write(categoryInterface!.getFilePath(), document);
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put("end", this, "save()")
+                                    logUtil!.put("end", this, "save()");
+    
 
                                     }
                                 
@@ -126,7 +134,8 @@ var categoryInterface = categoryInterface
     var categoryFile: AbFile = new AbFile(categoryInterface!.getFilePath());
         
         
-
+;
+    
 
                         if(categoryFile!.delete())
                         
@@ -135,7 +144,8 @@ var categoryInterface = categoryInterface
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put("Removed: " +categoryInterface!.getFilePath(), this, "delete(CategoryInterface)")
+                                    logUtil!.put("Removed: " +categoryInterface!.getFilePath(), this, "delete(CategoryInterface)");
+    
 
                                     }
                                 
@@ -150,7 +160,8 @@ var categoryInterface = categoryInterface
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put("Not a leaf unable to remove", this, "delete(CategoryInterface)")
+                                    logUtil!.put("Not a leaf unable to remove", this, "delete(CategoryInterface)");
+    
 
                                     }
                                 

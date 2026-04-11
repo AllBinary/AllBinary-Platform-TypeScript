@@ -67,21 +67,24 @@ var resource = resource
     var inputStream: InputStream = resource.javaClass.getResourceAsStream(resource)!;
         
         
-
-
-                        if(inputStream == 
-                                    null
-                                )
-                        
-                                    {
-                                    inputStream= this.getResourceAsStream(resource, 2)
+;
+    
 
                         if(inputStream == 
                                     null
                                 )
                         
                                     {
-                                    inputStream= this.getResourceAsStream(resource, 1)
+                                    inputStream= this.getResourceAsStream(resource, 2);
+    
+
+                        if(inputStream == 
+                                    null
+                                )
+                        
+                                    {
+                                    inputStream= this.getResourceAsStream(resource, 1);
+    
 
                         if(inputStream == 
                                     null
@@ -92,26 +95,32 @@ var resource = resource
     var stringMaker: StringMaker = new StringMaker();
         
         
-
+;
+    
 
     var index: number = resource.lastIndexOf('/')!;
         
         
-
+;
+    
 
     var resourcePath: string = resource.substring(index +1)!;
         
         
-
-inputStream= resource.javaClass.getResourceAsStream(resourcePath)
+;
+    
+inputStream= resource.javaClass.getResourceAsStream(resourcePath);
+    
 
                         if(inputStream == 
                                     null
                                 )
                         
                                     {
-                                    resourcePath= resource.substring(index)
-inputStream= resource.javaClass.getResourceAsStream(resourcePath)
+                                    resourcePath= resource.substring(index);
+    
+inputStream= resource.javaClass.getResourceAsStream(resourcePath);
+    
 
                         if(inputStream == 
                                     null
@@ -122,41 +131,54 @@ inputStream= resource.javaClass.getResourceAsStream(resourcePath)
     var RES: string = "res";
         
         
-
-resourcePath= stringMaker!.append(RES)!.append(resource.substring(index))!.toString()
-inputStream= resource.javaClass.getResourceAsStream(resourcePath)
+;
+    
+resourcePath= stringMaker!.append(RES)!.append(resource.substring(index))!.toString();
+    
+inputStream= resource.javaClass.getResourceAsStream(resourcePath);
+    
 
                         if(inputStream == 
                                     null
                                 )
                         
                                     {
-                                    stringMaker!.delete(0, stringMaker!.length())
-resourcePath= stringMaker!.append("/")!.append(RES)!.append(resource.substring(index))!.toString()
-inputStream= resource.javaClass.getResourceAsStream(resourcePath)
+                                    stringMaker!.delete(0, stringMaker!.length());
+    
+resourcePath= stringMaker!.append("/")!.append(RES)!.append(resource.substring(index))!.toString();
+    
+inputStream= resource.javaClass.getResourceAsStream(resourcePath);
+    
 
     var COLON: string = CommonSeps.getInstance()!.COLON;
         
         
-
-
-                        if(inputStream == 
-                                    null
-                                )
-                        
-                                    {
-                                    stringMaker!.delete(0, stringMaker!.length())
-resourcePath= stringMaker!.append(RES)!.append(COLON)!.append(resource.substring(index))!.toString()
-inputStream= resource.javaClass.getResourceAsStream(resourcePath)
+;
+    
 
                         if(inputStream == 
                                     null
                                 )
                         
                                     {
-                                    stringMaker!.delete(0, stringMaker!.length())
-resourcePath= stringMaker!.append(RES)!.append(COLON)!.append(resource.substring(index +1))!.toString()
-inputStream= resource.javaClass.getResourceAsStream(resourcePath)
+                                    stringMaker!.delete(0, stringMaker!.length());
+    
+resourcePath= stringMaker!.append(RES)!.append(COLON)!.append(resource.substring(index))!.toString();
+    
+inputStream= resource.javaClass.getResourceAsStream(resourcePath);
+    
+
+                        if(inputStream == 
+                                    null
+                                )
+                        
+                                    {
+                                    stringMaker!.delete(0, stringMaker!.length());
+    
+resourcePath= stringMaker!.append(RES)!.append(COLON)!.append(resource.substring(index +1))!.toString();
+    
+inputStream= resource.javaClass.getResourceAsStream(resourcePath);
+    
 
                         if(inputStream == 
                                     null
@@ -167,26 +189,34 @@ inputStream= resource.javaClass.getResourceAsStream(resourcePath)
     var RESOURCE_STRING: string = "resource";
         
         
-
-stringMaker!.delete(0, stringMaker!.length())
-resourcePath= stringMaker!.append(RESOURCE_STRING)!.append(COLON)!.append(resource.substring(index))!.toString()
-inputStream= resource.javaClass.getResourceAsStream(resourcePath)
-
-                        if(inputStream == 
-                                    null
-                                )
-                        
-                                    {
-                                    stringMaker!.delete(0, stringMaker!.length())
-resourcePath= stringMaker!.append(RESOURCE_STRING)!.append(COLON)!.append(resource.substring(index +1))!.toString()
-inputStream= resource.javaClass.getResourceAsStream(resourcePath)
+;
+    
+stringMaker!.delete(0, stringMaker!.length());
+    
+resourcePath= stringMaker!.append(RESOURCE_STRING)!.append(COLON)!.append(resource.substring(index))!.toString();
+    
+inputStream= resource.javaClass.getResourceAsStream(resourcePath);
+    
 
                         if(inputStream == 
                                     null
                                 )
                         
                                     {
-                                    stringMaker!.delete(0, stringMaker!.length())
+                                    stringMaker!.delete(0, stringMaker!.length());
+    
+resourcePath= stringMaker!.append(RESOURCE_STRING)!.append(COLON)!.append(resource.substring(index +1))!.toString();
+    
+inputStream= resource.javaClass.getResourceAsStream(resourcePath);
+    
+
+                        if(inputStream == 
+                                    null
+                                )
+                        
+                                    {
+                                    stringMaker!.delete(0, stringMaker!.length());
+    
 
 
 
@@ -242,22 +272,26 @@ var startIndex = startIndex
     var stringMaker: StringMaker = new StringMaker();
         
         
-
+;
+    
 
     var index: number = resource.indexOf(CommonSeps.getInstance()!.COLON)!;
         
         
-
+;
+    
 
     var resourcePath: string = resource.substring(index +startIndex)!;
         
         
-
+;
+    
 
     var inputStream: InputStream = resource.javaClass.getResourceAsStream(resourcePath)!;
         
         
-
+;
+    
 
                         if(inputStream != 
                                     null

@@ -61,13 +61,15 @@ public constructor (){
 
     public setCommand(command: string){
 var command = command
-this.command= command
+this.command= command;
+    
 }
 
 
     public setWebappPath(value: string){
 var value = value
-this.webappPath= value
+this.webappPath= value;
+    
 }
 
 
@@ -80,16 +82,22 @@ this.webappPath= value
     var urlGlobals: AppUrlGlobals = new AppUrlGlobals();
         
         
+;
+    
+urlGlobals!.setWebappPath(this.webappPath);
+    
+URLGLOBALS.init(urlGlobals);
+    
 
-urlGlobals!.setWebappPath(this.webappPath)
-URLGLOBALS.init(urlGlobals)
-} catch(e: Exception)
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "setCustomLoaderWebappPath()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "setCustomLoaderWebappPath()", e);
+    
 
                                     }
                                 
@@ -107,7 +115,8 @@ URLGLOBALS.init(urlGlobals)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.START, this, "doStartTag()")
+                                    logUtil!.put(this.commonStrings!.START, this, "doStartTag()");
+    
 
                                     }
                                 
@@ -121,7 +130,8 @@ URLGLOBALS.init(urlGlobals)
                         if(command.compareTo(GLOBALS2.SET) == 0)
                         
                                     {
-                                    this.setCustomLoaderWebappPath()
+                                    this.setCustomLoaderWebappPath();
+    
 
                                     }
                                 
@@ -134,9 +144,12 @@ URLGLOBALS.init(urlGlobals)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return SKIP_BODY;
     
-} catch(e: LicensingException)
+
+                //: 
+} catch(e) 
             {
-AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e);
+    
 
 
 
@@ -144,9 +157,12 @@ AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
                         return SKIP_BODY;
     
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
-AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
+    
 
 
 

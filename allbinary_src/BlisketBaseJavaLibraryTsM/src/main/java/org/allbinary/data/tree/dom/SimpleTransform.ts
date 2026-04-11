@@ -53,8 +53,10 @@ public constructor (xsltFilePath: AbPath, dataFilePath: AbPath){
             super();
             var xsltFilePath = xsltFilePath
 var dataFilePath = dataFilePath
-this.xsltFilePath= xsltFilePath
-this.dataFilePath= dataFilePath
+this.xsltFilePath= xsltFilePath;
+    
+this.dataFilePath= dataFilePath;
+    
 }
 
 
@@ -65,17 +67,20 @@ this.dataFilePath= dataFilePath
     var inputStream: AbFileLocalInputStream = new AbFileLocalInputStream(AbFile(xsltFilePath));
         
         
-
+;
+    
 
     var document: Document = DomDocumentHelper.create(AbFileLocalInputStream(AbFile(dataFilePath)))!;
         
         
-
+;
+    
 
     var result: string = XslHelper.getInstance()!.translate(StreamSource(inputStream), StreamSource(StringBufferInputStream(DomDocumentHelper.toString(document))))!;
         
         
-
+;
+    
 
 
 

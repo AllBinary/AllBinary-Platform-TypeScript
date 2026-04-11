@@ -41,7 +41,7 @@ public constructor ()
                     
 }
 
-public constructor (userHashMap: HashMap<Any, Any>)                        
+public constructor (userHashMap: HashMap<any, any>)                        
 
                             : super(userHashMap){
 
@@ -56,14 +56,17 @@ public constructor (userHashMap: HashMap<Any, Any>)
 
     public validateSession(weblisketSession: WeblisketSessionInterface){
 var weblisketSession = weblisketSession
-super.validateSession(weblisketSession)
-this.updateSession(weblisketSession)
+super.validateSession(weblisketSession);
+    
+this.updateSession(weblisketSession);
+    
 }
 
 
     public updateSession(weblisketSession: WeblisketSessionInterface){
 var weblisketSession = weblisketSession
-weblisketSession!.setStoreName(this.getPermissions())
+weblisketSession!.setStoreName(this.getPermissions());
+    
 }
 
 

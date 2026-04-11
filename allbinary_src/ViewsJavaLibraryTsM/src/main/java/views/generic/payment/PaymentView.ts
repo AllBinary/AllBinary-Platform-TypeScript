@@ -18,7 +18,10 @@
 
 
 
-import { Vector } from "../../../java/util/Vector.js";
+            import Vector from "@ohos.util.Vector";
+        
+
+//import { Vector } from "../../../java/util/Vector.js";
 
     
 import { Payment } from "../../../org/allbinary/business/user/commerce/money/payment/Payment.js";
@@ -79,18 +82,22 @@ var document = document
     var paymentNode: Node = document.createElement(PaymentData.PAYMENT)!;
         
         
-
-document.appendChild(paymentNode)
+;
+    
+document.appendChild(paymentNode);
+    
 
     var paymentVector: Vector = PaymentEntityFactory.getInstance()!.getPaymentEntityInstance()!.get(this.getWeblisketSession()!.getUserName())!;
         
         
-
+;
+    
 
     var size: number = paymentVector!.length!;
         
         
-
+;
+    
 
 
 
@@ -102,11 +109,15 @@ document.appendChild(paymentNode)
 index < size; index++)
         {
 
-    var payment: Payment = paymentVector!.get(index) as Payment;
-        
-        
+    var payment: Payment = paymentVector!.get(index);
 
-paymentNode!.appendChild(payment.toXmlNode(document))
+                         as Payment;
+        
+        
+;
+    
+paymentNode!.appendChild(payment.toXmlNode(document));
+    
 }
 
 
@@ -115,13 +126,16 @@ paymentNode!.appendChild(payment.toXmlNode(document))
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return paymentNode;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.FAILURE, this, "toXmlNode", e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, "toXmlNode", e);
+    
 
                                     }
                                 
@@ -135,32 +149,40 @@ paymentNode!.appendChild(payment.toXmlNode(document))
 
 
     public addDomNodeInterfaces(){
-this.addDomNodeInterface(this as DomNodeInterface)
+this.addDomNodeInterface(this as DomNodeInterface);
+    
 }
 
 
     public view(): string{
 
         try {
-            this.addDomNodeInterfaces()
+            this.addDomNodeInterfaces();
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.view();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to view Payment";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e);
+    
 
                                     }
                                 

@@ -18,7 +18,10 @@
 
 
 
-import { Hashtable } from "../../../../../java/util/Hashtable.js";
+            import Hashtable from "@ohos.util.HashMap";
+        
+
+//import { Hashtable } from "../../../../../java/util/Hashtable.js";
 
     
 import { ChangedGameFeatureListener } from "../../../../../org/allbinary/game/configuration/event/ChangedGameFeatureListener.js";
@@ -30,7 +33,7 @@ export class Feature
          {
         
 
-    private hashtable: Hashtable<Any, Any> = new Hashtable<Any, Any>();
+    private hashtable: Hashtable<any, any> = new Hashtable<any, any>();
         
         
 
@@ -40,7 +43,9 @@ var name = name
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return hashtable.get(name as Object) as Feature;
+                        return hashtable.get(name as Object);
+
+                         as Feature;
     
 }
 
@@ -48,7 +53,8 @@ var name = name
     static add(name: string, gameFeature: Feature){
 var name = name
 var gameFeature = gameFeature
-hashtable.put(name, gameFeature)
+hashtable.put(name, gameFeature);
+    
 }
 
 
@@ -57,9 +63,12 @@ public constructor (name: string){
 
             super();
             var name = name
-this.name= name
-add(name, this)
-ChangedGameFeatureListener.getInstance()!.add(this)
+this.name= name;
+    
+add(name, this);
+    
+ChangedGameFeatureListener.getInstance()!.add(this);
+    
 }
 
 
@@ -69,6 +78,8 @@ ChangedGameFeatureListener.getInstance()!.add(this)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return getName();
+
+                        ;
     
 }
 

@@ -51,10 +51,14 @@ public constructor (textFieldItem: TextFieldItem, min: number, max: number, allo
 var min = min
 var max = max
 var allowOnEmpty = allowOnEmpty
-this.textFieldItem= textFieldItem
-this.min= min
-this.max= max
-this.allowOnEmpty= allowOnEmpty
+this.textFieldItem= textFieldItem;
+    
+this.min= min;
+    
+this.max= max;
+    
+this.allowOnEmpty= allowOnEmpty;
+    
 }
 
 
@@ -63,22 +67,26 @@ this.allowOnEmpty= allowOnEmpty
     var booleanFactory: BooleanFactory = BooleanFactory.getInstance()!;
         
         
-
+;
+    
 
     var result: Boolean = booleanFactory!.TRUE;
         
         
-
+;
+    
 
     var string: string = this.textFieldItem!.getString()!;
         
         
-
+;
+    
 
     var textLength: number = string.length!;
         
         
-
+;
+    
 
                         if((textLength == 0 && this.allowOnEmpty) || textLength > this.min && textLength < this.max)
                         
@@ -91,7 +99,8 @@ this.allowOnEmpty= allowOnEmpty
                         if(textLength < this.min)
                         
                                     {
-                                    result= booleanFactory!.FALSE
+                                    result= booleanFactory!.FALSE;
+    
 
                                     }
                                 
@@ -99,7 +108,8 @@ this.allowOnEmpty= allowOnEmpty
                         if(textLength > this.max)
                         
                                     {
-                                    result= booleanFactory!.FALSE
+                                    result= booleanFactory!.FALSE;
+    
 
                                     }
                                 
@@ -120,17 +130,20 @@ this.allowOnEmpty= allowOnEmpty
     var list: BasicArrayList = new BasicArrayList();
         
         
-
+;
+    
 
     var string: string = this.textFieldItem!.getString()!;
         
         
-
+;
+    
 
     var textLength: number = string.length!;
         
         
-
+;
+    
 
                         if(textLength > this.min && textLength < this.max)
                         
@@ -143,18 +156,21 @@ this.allowOnEmpty= allowOnEmpty
     var label: string = this.textFieldItem!.getLabel()!;
         
         
-
+;
+    
 
     var name: string = label.substring(0, label.length -2)!;
         
         
-
+;
+    
 
                         if(textLength < this.min)
                         
                                     {
                                     list.add(StringMaker().
-                            append(name)!.append(" is to short")!.toString())
+                            append(name)!.append(" is to short")!.toString());
+    
 
                                     }
                                 
@@ -163,7 +179,8 @@ this.allowOnEmpty= allowOnEmpty
                         
                                     {
                                     list.add(StringMaker().
-                            append(name)!.append(" is to long")!.toString())
+                            append(name)!.append(" is to long")!.toString());
+    
 
                                     }
                                 

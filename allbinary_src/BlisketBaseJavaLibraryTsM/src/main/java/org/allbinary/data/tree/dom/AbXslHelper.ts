@@ -63,6 +63,8 @@ export class AbXslHelper
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.translate(xslFile!.getAbsolutePath(), xmlFile!.getAbsolutePath());
+
+                        ;
     
 }
 
@@ -77,6 +79,8 @@ export class AbXslHelper
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.translate(xslPath!.getPath(), xmlPath!.getPath());
+
+                        ;
     
 }
 
@@ -92,14 +96,19 @@ export class AbXslHelper
     var outputStream: ByteArrayOutputStream = new ByteArrayOutputStream();
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return XslHelper.getInstance()!.translate(StreamSource(xsltFilePath), StreamSource(xmlFilePath), StreamResult(outputStream))!.toString();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
 

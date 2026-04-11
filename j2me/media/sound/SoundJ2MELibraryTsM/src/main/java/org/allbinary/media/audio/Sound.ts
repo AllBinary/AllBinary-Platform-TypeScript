@@ -44,7 +44,8 @@ protected constructor (resource: string){
 
             super();
             var resource = resource
-this.resource= resource
+this.resource= resource;
+    
 }
 
 
@@ -70,7 +71,8 @@ this.resource= resource
 
     public setPlayerP(player: Player){
     //var player = player
-this.player= player
+this.player= player;
+    
 }
 
 
@@ -93,15 +95,20 @@ this.player= player
     public run(){
 
         try {
-            this.player.start()
-} catch(e: Exception)
+            this.player.start();
+    
+
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-PreLogUtil.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN)
+;
+    
+PreLogUtil.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN);
+    
 }
 
 }

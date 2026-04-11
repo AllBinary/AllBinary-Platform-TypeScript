@@ -78,14 +78,19 @@ public constructor (){
 var value = value
 
         try {
-            newFile!.createNewFile()
+            newFile!.createNewFile();
+    
 
     var idData: AbDataOutputStream = DataOutputStreamFactory.getInstance()!.getInstance(newFile)!;
         
         
+;
+    
+idData!.writeLong(value);
+    
 
-idData!.writeLong(value)
-} catch(e: Exception)
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.IDLOGGING))
@@ -95,8 +100,10 @@ idData!.writeLong(value)
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, "initialize", e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, "initialize", e);
+    
 
                                     }
                                 
@@ -111,7 +118,8 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "initialize", e)
     public setFile(filePathName: string, name: string){
 var filePathName = filePathName
 var name = name
-newFile= AbFile(filePathName)
+newFile= AbFile(filePathName);
+    
 }
 
 
@@ -125,42 +133,55 @@ newFile= AbFile(filePathName)
             ;
         
         
-
+;
+    
 
     var idOutData: AbDataOutputStream = 
                 null
             ;
         
         
-
+;
+    
 
         try {
             
     var idFile: AbFileInputStream = new AbFileInputStream(this.newFile);
         
         
-
-idData= AbDataInputStream(idFile)
-id= idData!.readLong()
+;
+    
+idData= AbDataInputStream(idFile);
+    
+id= idData!.readLong();
+    
 
     var idOutFile: AbFileOutputStream = new AbFileOutputStream(this.newFile);
         
         
-
-idOutData= AbDataOutputStream(idOutFile)
-idOutData!.writeLong(id +1)
+;
+    
+idOutData= AbDataOutputStream(idOutFile);
+    
+idOutData!.writeLong(id +1);
+    
 
     var idLong: Long = new id as Long;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return idLong!.toString();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.IDLOGGING))
@@ -170,8 +191,10 @@ idOutData!.writeLong(id +1)
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, "getNext", e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, "getNext", e);
+    
 
                                     }
                                 
@@ -184,8 +207,10 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "getNext", e)
 }
 
          finally {
-            StreamUtil.getInstance()!.close(idData)
-StreamUtil.getInstance()!.close(idOutData)
+            StreamUtil.getInstance()!.close(idData);
+    
+StreamUtil.getInstance()!.close(idOutData);
+    
 
          }
         

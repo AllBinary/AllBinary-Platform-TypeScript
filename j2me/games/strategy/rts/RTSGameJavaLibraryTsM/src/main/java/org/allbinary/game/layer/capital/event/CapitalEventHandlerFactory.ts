@@ -30,7 +30,8 @@ export class CapitalEventHandlerFactory
     private static readonly capitalEventHandlerArray: CapitalEventHandler[]
 
                 init{
-capitalEventHandlerArray= new Array(10)
+capitalEventHandlerArray= new Array(10);
+    
 
 
 
@@ -41,7 +42,8 @@ capitalEventHandlerArray= new Array(10)
         
 index >= 0; index--)
         {
-capitalEventHandlerArray[index]= CapitalEventHandler()
+capitalEventHandlerArray[index]= CapitalEventHandler();
+    
 }
 
 }
@@ -52,7 +54,9 @@ var groupInterface = groupInterface
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return capitalEventHandlerArray[groupInterface!.getGroupId().toInt()]!;
+                        return capitalEventHandlerArray[groupInterface!.getGroupId();
+
+                        .toInt()]!;
     
 }
 
@@ -68,7 +72,8 @@ var groupInterface = groupInterface
         
 index >= 0; index--)
         {
-capitalEventHandlerArray[index]!.removeAllListeners()
+capitalEventHandlerArray[index]!.removeAllListeners();
+    
 }
 
 }

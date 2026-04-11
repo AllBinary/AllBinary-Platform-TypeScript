@@ -64,22 +64,27 @@ private constructor (){
 
                 //@Throws(Error::class)
             
-    public getInstance(geographicMapInterface: BasicGeographicMap, graphArray: IntArray[]): PathFindingInfo{
+    public getInstance(geographicMapInterface: BasicGeographicMap, graphArray: number[][]): PathFindingInfo{
     //var geographicMapInterface = geographicMapInterface
     //var graphArray = graphArray
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-PreLogUtil.put(commonStrings!.START, this, commonStrings!.GET_INSTANCE)
+;
+    
+PreLogUtil.put(commonStrings!.START, this, commonStrings!.GET_INSTANCE);
+    
 
     var pathFindingInfo: PathFindingInfo = new PathFindingInfo(PathFindingNodeCostInfoFactoryBase());
         
         
-
-RaceTrackRoadsGeographicMapCellHistoryFactory.getInstance()!.init()
-this.init(geographicMapInterface, pathFindingInfo, graphArray)
+;
+    
+RaceTrackRoadsGeographicMapCellHistoryFactory.getInstance()!.init();
+    
+this.init(geographicMapInterface, pathFindingInfo, graphArray);
+    
 
 
 

@@ -18,7 +18,10 @@
 
 
 
-import { Hashtable } from "../../../java/util/Hashtable.js";
+            import Hashtable from "@ohos.util.HashMap";
+        
+
+//import { Hashtable } from "../../../java/util/Hashtable.js";
 
     
 
@@ -41,17 +44,20 @@ export class KeyValueFactory
 }
 
 
-    public readonly MAP: Hashtable<Any, Any> = new Hashtable<Any, Any>();
+    public readonly MAP: Hashtable<any, any> = new Hashtable<any, any>();
         
         
 
     public get(key: string): string{
 var key = key
 
-    var value: string = MAP.get(key as Object) as String;
-        
-        
+    var value: string = MAP.get(key as Object);
 
+                         as String;
+        
+        
+;
+    
 
                         if(value == 
                                     null

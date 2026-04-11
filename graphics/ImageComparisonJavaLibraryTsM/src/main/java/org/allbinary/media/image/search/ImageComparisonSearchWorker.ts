@@ -18,10 +18,13 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { BufferedImage } from "../../../../../java/awt/image/BufferedImage.js";
 
     
-import { Vector } from "../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../java/util/Vector.js";
 
     
 import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
@@ -75,21 +78,26 @@ public constructor (imageSearchConstraintsInterface: ImageComparisonSearchConstr
 
             super();
             var imageSearchConstraintsInterface = imageSearchConstraintsInterface
-this.imageComparisonInfoVector= Vector()
-this.imageSearchConstraintsInterface= imageSearchConstraintsInterface
+this.imageComparisonInfoVector= Vector();
+    
+this.imageSearchConstraintsInterface= imageSearchConstraintsInterface;
+    
 }
 
 
     public onImageComparisonResultsEvent(imageComparisonResultsEvent: ImageComparisonResultsEvent){
 var imageComparisonResultsEvent = imageComparisonResultsEvent
-this.imageComparisonInfoVector!.add(imageComparisonResultsEvent!.getImageComparisonResult())
-this.run()
+this.imageComparisonInfoVector!.add(imageComparisonResultsEvent!.getImageComparisonResult());
+    
+this.run();
+    
 }
 
 
     public onEvent(allBinaryEventObject: AllBinaryEventObject){
 var allBinaryEventObject = allBinaryEventObject
-this.onImageComparisonResultsEvent(allBinaryEventObject as ImageComparisonResultsEvent)
+this.onImageComparisonResultsEvent(allBinaryEventObject as ImageComparisonResultsEvent);
+    
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
@@ -107,40 +115,58 @@ this.onImageComparisonResultsEvent(allBinaryEventObject as ImageComparisonResult
 
     public setRunning(running: boolean){
 var running = running
-this.running= running
+this.running= running;
+    
 }
 
 
     public run(){
 
         try {
-            logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.RUN)
-this.setRunning(true)
+            logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.RUN);
+    
+this.setRunning(true);
+    
 
     var timeHelper: TimeDelayHelper = new TimeDelayHelper(1000);
         
         
+;
+    
+timeHelper!.setStartTime();
+    
 
-timeHelper!.setStartTime()
+    var imageComparisonInfo: ImageComparisonResult = this.imageComparisonInfoVector!.get(0);
 
-    var imageComparisonInfo: ImageComparisonResult = this.imageComparisonInfoVector!.get(0) as ImageComparisonResult;
+                         as ImageComparisonResult;
         
         
-
-logUtil!.put(imageComparisonInfo!.toString(), this, this.commonStrings!.RUN)
+;
+    
+logUtil!.put(imageComparisonInfo!.toString(), this, this.commonStrings!.RUN);
+    
 
     var latestBufferedImage: BufferedImage = imageComparisonInfo!.getBufferedImages()[1]!;
         
         
+;
+    
+this.imageComparisonInfoVector!.remove(imageComparisonInfo);
+    
+this.index++;
+    
+logUtil!.put(CommonLabels.getInstance()!.ELAPSED +timeHelper!.getElapsed(), this, this.commonStrings!.RUN);
+    
+this.setRunning(false);
+    
+logUtil!.put(this.commonStrings!.END, this, this.commonStrings!.RUN);
+    
 
-this.imageComparisonInfoVector!.remove(imageComparisonInfo)
-this.index++
-logUtil!.put(CommonLabels.getInstance()!.ELAPSED +timeHelper!.getElapsed(), this, this.commonStrings!.RUN)
-this.setRunning(false)
-logUtil!.put(this.commonStrings!.END, this, this.commonStrings!.RUN)
-} catch(e: Exception)
+                //: 
+} catch(e) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e)
+logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e);
+    
 }
 
 }

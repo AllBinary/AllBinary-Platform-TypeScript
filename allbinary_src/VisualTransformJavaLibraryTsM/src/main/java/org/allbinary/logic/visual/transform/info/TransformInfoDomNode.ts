@@ -63,7 +63,8 @@ public constructor (node: Node){
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Constructing TransformInfo From TransformInfoDomNode: " +node.getNodeName(), this, "TransformInfoDomNode(Node node)")
+                                    logUtil!.put("Constructing TransformInfo From TransformInfoDomNode: " +node.getNodeName(), this, "TransformInfoDomNode(Node node)");
+    
 
                                     }
                                 
@@ -71,27 +72,34 @@ public constructor (node: Node){
     var transformInfoData: TransformInfoData = TransformInfoData.getInstance()!;
         
         
-
+;
+    
 
     var attributes: NamedNodeMap = node.getAttributes()!;
         
         
+;
+    
 
+    var attrNode: Attr = attributes.getNamedItem(transformInfoData!.NAME);
 
-    var attrNode: Attr = attributes.getNamedItem(transformInfoData!.NAME) as Attr;
+                         as Attr;
         
         
-
+;
+    
 
     var name: string = attrNode!.getValue()!;
         
         
-
+;
+    
 
     var nodeList: NodeList = node.getChildNodes()!;
         
         
-
+;
+    
 
                         if(nodeList!.getLength() > 1)
                         
@@ -104,13 +112,20 @@ public constructor (node: Node){
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("Constructing Complete TransformInfo Node For: ")
-stringBuffer!.append(name)
-stringBuffer!.append(" with ")
-stringBuffer!.appendint(nodeList!.getLength())
-stringBuffer!.append(" children")
-logUtil!.put(stringBuffer!.toString(), this, "TransformInfoObjectConfigComponent(Node node)")
+;
+    
+stringBuffer!.append("Constructing Complete TransformInfo Node For: ");
+    
+stringBuffer!.append(name);
+    
+stringBuffer!.append(" with ");
+    
+stringBuffer!.appendint(nodeList!.getLength());
+    
+stringBuffer!.append(" children");
+    
+logUtil!.put(stringBuffer!.toString(), this, "TransformInfoObjectConfigComponent(Node node)");
+    
 
                                     }
                                 
@@ -118,43 +133,52 @@ logUtil!.put(stringBuffer!.toString(), this, "TransformInfoObjectConfigComponent
     var objectFileNameNode: Node = DomSearchHelper.getNode(transformInfoData!.OBJECTFILENAME, nodeList)!;
         
         
-
+;
+    
 
     var objectFileName: string = DomNodeHelper.getTextNodeValue(objectFileNameNode)!;
         
         
-
+;
+    
 
     var objectConfigFileNameNode: Node = DomSearchHelper.getNode(transformInfoData!.OBJECTCONFIGFILENAME, nodeList)!;
         
         
-
+;
+    
 
     var objectConfigFileName: string = DomNodeHelper.getTextNodeValue(objectConfigFileNameNode)!;
         
         
-
+;
+    
 
     var templateFileNameNode: Node = DomSearchHelper.getNode(transformInfoData!.TEMPLATEFILENAME, nodeList)!;
         
         
-
+;
+    
 
     var templateFileName: string = DomNodeHelper.getTextNodeValue(templateFileNameNode)!;
         
         
-
+;
+    
 
     var dataFileNameNode: Node = DomSearchHelper.getNode(transformInfoData!.DATAFILENAME, nodeList)!;
         
         
-
+;
+    
 
     var dataFileName: string = DomNodeHelper.getTextNodeValue(dataFileNameNode)!;
         
         
-
-this.transformInfoInterface= TransformInfo(name, objectFileName, objectConfigFileName, templateFileName, dataFileName) as TransformInfoInterface
+;
+    
+this.transformInfoInterface= TransformInfo(name, objectFileName, objectConfigFileName, templateFileName, dataFileName) as TransformInfoInterface;
+    
 
                                     }
                                 
@@ -167,37 +191,50 @@ this.transformInfoInterface= TransformInfo(name, objectFileName, objectConfigFil
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("Constructing Partial TransformInfo Node For: ")
-stringBuffer!.append(name)
-stringBuffer!.append(" with ")
-stringBuffer!.appendint(nodeList!.getLength())
-stringBuffer!.append(" children")
-logUtil!.put(stringBuffer!.toString(), this, "TransformInfoObjectConfigComponent(Node node)")
+;
+    
+stringBuffer!.append("Constructing Partial TransformInfo Node For: ");
+    
+stringBuffer!.append(name);
+    
+stringBuffer!.append(" with ");
+    
+stringBuffer!.appendint(nodeList!.getLength());
+    
+stringBuffer!.append(" children");
+    
+logUtil!.put(stringBuffer!.toString(), this, "TransformInfoObjectConfigComponent(Node node)");
+    
 
                                     }
                                 
-this.transformInfoInterface= TransformInfo(name) as TransformInfoInterface
+this.transformInfoInterface= TransformInfo(name) as TransformInfoInterface;
+    
 
                         }
                             
 
-    var templateAttrNode: Attr = attributes.getNamedItem(transformInfoData!.MAPPED) as Attr;
-        
-        
+    var templateAttrNode: Attr = attributes.getNamedItem(transformInfoData!.MAPPED);
 
+                         as Attr;
+        
+        
+;
+    
 
                         if(templateAttrNode != 
                                     null
                                 )
                         
                                     {
-                                    this.mappedName= templateAttrNode!.getValue()
+                                    this.mappedName= templateAttrNode!.getValue();
+    
 
                                     }
                                 
                         else {
-                            this.mappedName= this.getTransformInfoInterface()!.getName()
+                            this.mappedName= this.getTransformInfoInterface()!.getName();
+    
 
                         }
                             
@@ -207,8 +244,10 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
             super();
             var transformInfoInterface = transformInfoInterface
-this.transformInfoInterface= transformInfoInterface
-this.mappedName= transformInfoInterface!.getName()
+this.transformInfoInterface= transformInfoInterface;
+    
+this.mappedName= transformInfoInterface!.getName();
+    
 }
 
 public constructor (transformInfoInterface: TransformInfoInterface, mappedName: string){
@@ -216,8 +255,10 @@ public constructor (transformInfoInterface: TransformInfoInterface, mappedName: 
             super();
             var transformInfoInterface = transformInfoInterface
 var mappedName = mappedName
-this.transformInfoInterface= transformInfoInterface
-this.mappedName= mappedName
+this.transformInfoInterface= transformInfoInterface;
+    
+this.mappedName= mappedName;
+    
 }
 
 public constructor (name: string, mappedName: string){
@@ -225,8 +266,10 @@ public constructor (name: string, mappedName: string){
             super();
             var name = name
 var mappedName = mappedName
-this.transformInfoInterface= TransformInfo(name)
-this.mappedName= mappedName
+this.transformInfoInterface= TransformInfo(name);
+    
+this.mappedName= mappedName;
+    
 }
 
 
@@ -255,20 +298,26 @@ this.mappedName= mappedName
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("<transform:component name=\"")
-stringBuffer!.append("body")
-stringBuffer!.append("\"/>")
+;
+    
+stringBuffer!.append("<transform:component name=\"");
+    
+stringBuffer!.append("body");
+    
+stringBuffer!.append("\"/>");
+    
 
     var key: string = stringBuffer!.toString()!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Component Key: " +key, this, "getReplaceKey()")
+                                    logUtil!.put("Component Key: " +key, this, "getReplaceKey()");
+    
 
                                     }
                                 

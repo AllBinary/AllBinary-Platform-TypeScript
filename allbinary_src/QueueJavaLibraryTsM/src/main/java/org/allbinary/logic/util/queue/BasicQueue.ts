@@ -18,7 +18,10 @@
 
 
 
-import { Vector } from "../../../../../java/util/Vector.js";
+            import Vector from "@ohos.util.Vector";
+        
+
+//import { Vector } from "../../../../../java/util/Vector.js";
 
     
 
@@ -41,7 +44,8 @@ protected constructor (){
 
     offer(anyType: any = {}): boolean{
 var anyType = anyType
-this.queueVector!.add(anyType)
+this.queueVector!.add(anyType);
+    
 
 
 
@@ -54,7 +58,8 @@ this.queueVector!.add(anyType)
 
     remove(anyType: any = {}){
 var anyType = anyType
-this.queueVector!.remove(anyType)
+this.queueVector!.remove(anyType);
+    
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
@@ -64,8 +69,10 @@ this.queueVector!.remove(anyType)
     var anyType: any = {} = this.queueVector!.lastElement()!;
         
         
-
-this.queueVector!.remove(anyType)
+;
+    
+this.queueVector!.remove(anyType);
+    
 
 
 

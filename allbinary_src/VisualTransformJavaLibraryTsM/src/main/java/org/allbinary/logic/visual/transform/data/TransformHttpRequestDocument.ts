@@ -85,45 +85,60 @@ var weblisketSession = weblisketSession
 
         try {
             
-    var contentType: string = AcceptableResponseGenerator.getInstance()!.get(pageContext!.getRequest() as HttpServletRequest)!;
-        
-        
+    var contentType: string = AcceptableResponseGenerator.getInstance()!.get(pageContext!.getRequest();
 
-this.document= DomDocumentHelper.create()
+                         as HttpServletRequest)!;
+        
+        
+;
+    
+this.document= DomDocumentHelper.create();
+    
 
     var contentTypeNode: Node = document.createElement(contentType)!;
         
         
-
+;
+    
 
     var languageTypeNode: Node = document.createElement(language)!;
         
         
-
+;
+    
 
     var localTypeNode: Node = document.createElement(local)!;
         
         
-
-this.baseNode= localTypeNode
-languageTypeNode!.appendChild(localTypeNode)
-contentTypeNode!.appendChild(languageTypeNode)
-document.appendChild(contentTypeNode)
+;
+    
+this.baseNode= localTypeNode;
+    
+languageTypeNode!.appendChild(localTypeNode);
+    
+contentTypeNode!.appendChild(languageTypeNode);
+    
+document.appendChild(contentTypeNode);
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(this.log(), this, this.commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put(this.log(), this, this.commonStrings!.CONSTRUCTOR);
+    
 
                                     }
                                 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, this.commonStrings!.CONSTRUCTOR, e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, this.commonStrings!.CONSTRUCTOR, e);
+    
 
                                     }
                                 
@@ -145,34 +160,46 @@ public constructor (searchRequest: SearchRequest){
     var contentType: string = searchRequest!.getContentType()!;
         
         
-
-this.document= DomDocumentHelper.create()
+;
+    
+this.document= DomDocumentHelper.create();
+    
 
     var contentTypeNode: Node = document.createElement(contentType)!;
         
         
-
+;
+    
 
     var languageTypeNode: Node = document.createElement(language)!;
         
         
-
+;
+    
 
     var localTypeNode: Node = document.createElement(local)!;
         
         
+;
+    
+this.baseNode= localTypeNode;
+    
+languageTypeNode!.appendChild(localTypeNode);
+    
+contentTypeNode!.appendChild(languageTypeNode);
+    
+document.appendChild(contentTypeNode);
+    
 
-this.baseNode= localTypeNode
-languageTypeNode!.appendChild(localTypeNode)
-contentTypeNode!.appendChild(languageTypeNode)
-document.appendChild(contentTypeNode)
-} catch(e: Exception)
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, this.commonStrings!.CONSTRUCTOR, e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, this.commonStrings!.CONSTRUCTOR, e);
+    
 
                                     }
                                 
@@ -212,30 +239,38 @@ document.appendChild(contentTypeNode)
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
                         if(this.baseNode != 
                                     null
                                 )
                         
                                     {
-                                    stringBuffer!.append("BaseNode: ")
-stringBuffer!.append(this.baseNode!.getNodeName())
+                                    stringBuffer!.append("BaseNode: ");
+    
+stringBuffer!.append(this.baseNode!.getNodeName());
+    
 
                                     }
                                 
                         else {
-                            stringBuffer!.append("Log-Error: BaseNode is Null")
+                            stringBuffer!.append("Log-Error: BaseNode is Null");
+    
 
                         }
                             
-stringBuffer!.append("\nDocument: ")
-stringBuffer!.append(DomDocumentHelper.toString(document))
+stringBuffer!.append("\nDocument: ");
+    
+stringBuffer!.append(DomDocumentHelper.toString(document));
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

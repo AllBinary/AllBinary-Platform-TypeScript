@@ -92,53 +92,70 @@ var pointVector = pointVector
     var tempPointVector: BasicArrayList = PointsUtil.getInstance()!.doTransforms(pointVector, Double(canvasDom!.getAngle()), PointFactory.getInstance()!.getInstance(canvasDom!.getDimension()!.getWidth(), canvasDom!.getDimension()!.getHeight()))!;
         
         
-
+;
+    
 
     var document: org.w3c.dom.Document = WorkAreaJPanel.getDocument()!;
         
         
+;
+    
 
+    var linesNode: Node = document.createElement(LINES);
 
-    var linesNode: Node = document.createElement(LINES) as Node;
+                         as Node;
         
         
-
+;
+    
 
     var size2: number = tempPointVector!.size()!;
         
         
-
+;
+    
 
     var size: number = pointVector!.size()!;
         
         
-
+;
+    
 
     var firstPoint: GPoint = 
                 null
             ;
         
         
-
+;
+    
 
     var rotatedFirstPoint: GPoint = 
                 null
             ;
         
         
-
+;
+    
 
     var index: number = 0;
         
         
-
+;
+    
 
                         if(index < size && index < size2)
                         
                                     {
-                                    rotatedFirstPoint= tempPointVector!.get(index) as GPoint
-firstPoint= pointVector!.get(index) as GPoint
-index++
+                                    rotatedFirstPoint= tempPointVector!.get(index);
+
+                         as GPoint;
+    
+firstPoint= pointVector!.get(index);
+
+                         as GPoint;
+    
+index++;
+    
 
                                     }
                                 
@@ -146,48 +163,69 @@ index++
         while(index < size && index < size2)
         {
 
-    var lineNode: Node = document.createElement(LINE) as Node;
-        
-        
+    var lineNode: Node = document.createElement(LINE);
 
-
-    var rotatedSecondPoint: GPoint = tempPointVector!.get(index) as GPoint;
+                         as Node;
         
         
+;
+    
 
+    var rotatedSecondPoint: GPoint = tempPointVector!.get(index);
 
-    var secondPoint: GPoint = pointVector!.get(index) as GPoint;
+                         as GPoint;
         
         
+;
+    
 
+    var secondPoint: GPoint = pointVector!.get(index);
+
+                         as GPoint;
+        
+        
+;
+    
 
     var pointOneNode: Node = this.getPointNode(firstPoint, this.POINTONE)!;
         
         
-
+;
+    
 
     var pointTwoNode: Node = this.getPointNode(secondPoint, this.POINTTWO)!;
         
         
-
+;
+    
 
     var rotatedPointOneNode: Node = this.getPointNode(rotatedFirstPoint, this.ROTATEDPOINTONE)!;
         
         
-
+;
+    
 
     var rotatedPointTwoNode: Node = this.getPointNode(rotatedSecondPoint, this.ROTATEDPOINTTWO)!;
         
         
-
-lineNode!.appendChild(pointOneNode)
-lineNode!.appendChild(pointTwoNode)
-lineNode!.appendChild(rotatedPointOneNode)
-lineNode!.appendChild(rotatedPointTwoNode)
-firstPoint= secondPoint
-rotatedFirstPoint= rotatedSecondPoint
-linesNode!.appendChild(lineNode)
-index++
+;
+    
+lineNode!.appendChild(pointOneNode);
+    
+lineNode!.appendChild(pointTwoNode);
+    
+lineNode!.appendChild(rotatedPointOneNode);
+    
+lineNode!.appendChild(rotatedPointTwoNode);
+    
+firstPoint= secondPoint;
+    
+rotatedFirstPoint= rotatedSecondPoint;
+    
+linesNode!.appendChild(lineNode);
+    
+index++;
+    
 }
 
 
@@ -206,36 +244,56 @@ var pointName = pointName
     var document: org.w3c.dom.Document = WorkAreaJPanel.getDocument()!;
         
         
+;
+    
 
+    var pointNode: Node = document.createElement(pointName);
 
-    var pointNode: Node = document.createElement(pointName) as Node;
+                         as Node;
         
         
+;
+    
 
+    var xNode: Node = document.createElement(PositionStrings.getInstance()!.X);
 
-    var xNode: Node = document.createElement(PositionStrings.getInstance()!.X) as Node;
+                         as Node;
         
         
+;
+    
 
+    var xTextNode: Node = document.createTextNode(Integer.toString(point.getX()));
 
-    var xTextNode: Node = document.createTextNode(Integer.toString(point.getX())) as Node;
+                         as Node;
         
         
+;
+    
+xNode!.appendChild(xTextNode);
+    
 
-xNode!.appendChild(xTextNode)
+    var yNode: Node = document.createElement(PositionStrings.getInstance()!.Y);
 
-    var yNode: Node = document.createElement(PositionStrings.getInstance()!.Y) as Node;
+                         as Node;
         
         
+;
+    
 
+    var yTextNode: Node = document.createTextNode(Integer.toString(point.getY()));
 
-    var yTextNode: Node = document.createTextNode(Integer.toString(point.getY())) as Node;
+                         as Node;
         
         
-
-yNode!.appendChild(yTextNode)
-pointNode!.appendChild(xNode)
-pointNode!.appendChild(yNode)
+;
+    
+yNode!.appendChild(yTextNode);
+    
+pointNode!.appendChild(xNode);
+    
+pointNode!.appendChild(yNode);
+    
 
 
 

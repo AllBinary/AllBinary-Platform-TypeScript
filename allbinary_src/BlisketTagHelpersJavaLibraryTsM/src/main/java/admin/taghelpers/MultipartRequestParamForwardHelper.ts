@@ -18,10 +18,13 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { HashMap } from "../../java/util/HashMap.js";
 
     
-import { Vector } from "../../java/util/Vector.js";
+
+//import { Vector } from "../../java/util/Vector.js";
 
     
 import { PageContext } from "../../javax/servlet/jsp/PageContext.js";
@@ -78,11 +81,16 @@ var page = page
 var command = command
 var paramVector = paramVector
 var pageContext = pageContext
-this.pageContext= pageContext
-this.page= page
-this.command= command
-this.paramVector= paramVector
-this.requestMapInterface= InventoryItemViewParentTagHelper.getInstance()!.getRequestMapInterface(parentHelperTag)
+this.pageContext= pageContext;
+    
+this.page= page;
+    
+this.command= command;
+    
+this.paramVector= paramVector;
+    
+this.requestMapInterface= InventoryItemViewParentTagHelper.getInstance()!.getRequestMapInterface(parentHelperTag);
+    
 }
 
 
@@ -99,30 +107,39 @@ this.requestMapInterface= InventoryItemViewParentTagHelper.getInstance()!.getReq
     var params: string = this.getParams()!;
         
         
-
+;
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(page)
-stringBuffer!.append(params)
-this.pageContext!.forward(stringBuffer!.toString())
+;
+    
+stringBuffer!.append(page);
+    
+stringBuffer!.append(params);
+    
+this.pageContext!.forward(stringBuffer!.toString());
+    
 
                                     }
                                 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "forward()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "forward()", e);
+    
 
                                     }
                                 
@@ -136,37 +153,44 @@ this.pageContext!.forward(stringBuffer!.toString())
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
         
         
-
+;
+    
 
     var AMP: string = commonSeps!.AMPERSAND;
         
         
-
+;
+    
 
     var QUESTION: string = commonSeps!.QUESTION;
         
         
-
+;
+    
 
     var EQUALS: string = commonSeps!.EQUALS;
         
         
+;
+    
 
-
-    var hashMap: HashMap<Any, Any> = this.requestMapInterface!.getRequestHashMap()!;
+    var hashMap: HashMap<any, any> = this.requestMapInterface!.getRequestHashMap()!;
         
         
-
+;
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
     var size: number = this.paramVector!.length!;
         
         
-
+;
+    
 
 
 
@@ -178,31 +202,42 @@ this.pageContext!.forward(stringBuffer!.toString())
 index < size; index++)
         {
 
-    var key: string = this.paramVector!.get(index) as String;
-        
-        
+    var key: string = this.paramVector!.get(index);
 
-
-    var value: string = hashMap!.get(key as Object) as String;
+                         as String;
         
         
+;
+    
 
+    var value: string = hashMap!.get(key as Object);
+
+                         as String;
+        
+        
+;
+    
 
                         if(index != 0)
                         
                                     {
-                                    stringBuffer!.append(AMP)
+                                    stringBuffer!.append(AMP);
+    
 
                                     }
                                 
                         else {
-                            stringBuffer!.append(QUESTION)
+                            stringBuffer!.append(QUESTION);
+    
 
                         }
                             
-stringBuffer!.append(key)
-stringBuffer!.append(EQUALS)
-stringBuffer!.append(value)
+stringBuffer!.append(key);
+    
+stringBuffer!.append(EQUALS);
+    
+stringBuffer!.append(value);
+    
 }
 
 
@@ -210,23 +245,31 @@ stringBuffer!.append(value)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 
 
     shouldForward(): boolean{
 
-    var hashMap: HashMap<Any, Any> = this.requestMapInterface!.getRequestHashMap()!;
+    var hashMap: HashMap<any, any> = this.requestMapInterface!.getRequestHashMap()!;
         
         
+;
+    
 
+    var requestCommand: string = hashMap!.get(GLOBALS2.ADMINCOMMAND);
 
-    var requestCommand: string = hashMap!.get(GLOBALS2.ADMINCOMMAND) as String;
+                         as String;
         
         
+;
+    
 
+                        if(StringValidationUtil.getInstance()!.isEmpty(command) || (!StringValidationUtil.getInstance()!.isEmpty(requestCommand);
 
-                        if(StringValidationUtil.getInstance()!.isEmpty(command) || (!StringValidationUtil.getInstance()!.isEmpty(requestCommand) && command.compareTo(requestCommand) == 0))
+                         && command.compareTo(requestCommand) == 0))
                         
                                     {
                                     

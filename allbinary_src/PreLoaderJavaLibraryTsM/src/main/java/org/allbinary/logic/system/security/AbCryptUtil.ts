@@ -64,7 +64,7 @@ private constructor (){
 
                 //@Throws(Error::class)
             
-    public decrypt(inputStream: InputStream, key: string): ByteArray{
+    public decrypt(inputStream: InputStream, key: string): number[]{
     //var inputStream = inputStream
     //var key = key
 
@@ -73,26 +73,36 @@ private constructor (){
             ;
         
         
-
+;
+    
 
         try {
-            outputStream= streamUtil!.get(inputStream, ByteArrayOutputStream(), ByteArray(16384)) as ByteArrayOutputStream
+            outputStream= streamUtil!.get(inputStream, ByteArrayOutputStream(), new Array(16384));
+
+                         as ByteArrayOutputStream;
+    
 
     var abCrypt: AbCrypt = new AbCrypt(KeySpecFactory.getInstance()!.DESEDE);
         
         
-
-abCrypt!.init(key)
+;
+    
+abCrypt!.init(key);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return abCrypt!.decrypt(outputStream!.toByteArray());
+
+                        ;
     
 
          finally {
-            streamUtil!.close(outputStream)
-streamUtil!.close(inputStream)
+            streamUtil!.close(outputStream);
+    
+streamUtil!.close(inputStream);
+    
 
          }
         

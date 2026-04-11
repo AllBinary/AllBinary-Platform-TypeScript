@@ -18,6 +18,8 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { Calendar } from "../../../../../../java/util/Calendar.js";
 
     
@@ -27,7 +29,8 @@ import { HashMap } from "../../../../../../java/util/HashMap.js";
 import { Set } from "../../../../../../java/util/Set.js";
 
     
-import { Vector } from "../../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../../java/util/Vector.js";
 
     
 import { PageContext } from "../../../../../../javax/servlet/jsp/PageContext.js";
@@ -94,17 +97,21 @@ export class BasicWorkFlow
 public constructor (){
 
             super();
-            this.workFlowName= StringUtil.getInstance()!.EMPTY_STRING
-this.workFlowDoc= DomDocumentHelper.create()
+            this.workFlowName= StringUtil.getInstance()!.EMPTY_STRING;
+    
+this.workFlowDoc= DomDocumentHelper.create();
+    
 
     var workFlowNode: Node = this.workFlowDoc!.createElement(WorkFlowData.getInstance()!.WORKFLOW)!;
         
         
-
-this.workFlowDoc!.appendChild(workFlowNode)
+;
+    
+this.workFlowDoc!.appendChild(workFlowNode);
+    
 }
 
-public constructor (hashMap: HashMap<Any, Any>, pageContext: PageContext){
+public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
             var hashMap = hashMap
@@ -113,25 +120,43 @@ var pageContext = pageContext
     var weblisketSession: WeblisketSession = new WeblisketSession(hashMap, pageContext);
         
         
+;
+    
+this.storeName= weblisketSession!.getStoreName();
+    
 
-this.storeName= weblisketSession!.getStoreName()
-
-    var requestHashMap: HashMap<Any, Any> = RequestParams(pageContext).
+    var requestHashMap: HashMap<any, any> = RequestParams(pageContext).
                             toHashMap()!;
         
         
+;
+    
+this.workFlowName= requestHashMap!.get(WorkFlowData.getInstance()!.NAME);
 
-this.workFlowName= requestHashMap!.get(WorkFlowData.getInstance()!.NAME) as String
-this.workFlowDoc= DomDocumentHelper.create(requestHashMap!.get(WorkFlowData.getInstance()!.DATA) as String)
+                         as String;
+    
+this.workFlowDoc= DomDocumentHelper.create(requestHashMap!.get(WorkFlowData.getInstance()!.DATA);
+
+                         as String);
+    
 }
 
-public constructor (hashMap: HashMap<Any, Any>){
+public constructor (hashMap: HashMap<any, any>){
 
             super();
             var hashMap = hashMap
-this.workFlowName= hashMap!.get(WorkFlowData.getInstance()!.NAME) as String
-this.storeName= hashMap!.get(StoreFrontData.getInstance()!.NAME) as String
-this.workFlowDoc= DomDocumentHelper.create(hashMap!.get(WorkFlowData.getInstance()!.DATA) as String)
+this.workFlowName= hashMap!.get(WorkFlowData.getInstance()!.NAME);
+
+                         as String;
+    
+this.storeName= hashMap!.get(StoreFrontData.getInstance()!.NAME);
+
+                         as String;
+    
+this.workFlowDoc= DomDocumentHelper.create(hashMap!.get(WorkFlowData.getInstance()!.DATA);
+
+                         as String);
+    
 }
 
 
@@ -160,7 +185,9 @@ this.workFlowDoc= DomDocumentHelper.create(hashMap!.get(WorkFlowData.getInstance
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getName() as Object;
+                        return this.getName();
+
+                         as Object;
     
 }
 
@@ -172,24 +199,31 @@ this.workFlowDoc= DomDocumentHelper.create(hashMap!.get(WorkFlowData.getInstance
     var values: Vector = new Vector();
         
         
-
-values.add(this.workFlowName)
-values.add(this.storeName)
-values.add(DomDocumentHelper.toString(this.workFlowDoc))
+;
+    
+values.add(this.workFlowName);
+    
+values.add(this.storeName);
+    
+values.add(DomDocumentHelper.toString(this.workFlowDoc));
+    
 
     var calendar: Calendar = Calendar.getInstance()!;
         
         
-
+;
+    
 
     var time: string = new calendar.getTimeInMillis() as Long.
-                            toString().toCharArray().concatToString()
-                                ;
+                            toString();
         
         
-
-values.add(time)
-values.add(time)
+;
+    
+values.add(time);
+    
+values.add(time);
+    
 
 
 
@@ -201,28 +235,34 @@ values.add(time)
 
                 //@Throws(Error::class)
             
-    public toHashMap(): HashMap<Any, Any>{
+    public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
         
         
-
-hashMap!.put(WorkFlowData.getInstance()!.NAME, this.workFlowName)
-hashMap!.put(StoreFrontData.getInstance()!.NAME, this.storeName)
-hashMap!.put(WorkFlowData.getInstance()!.DATA, DomDocumentHelper.toString(this.workFlowDoc))
+;
+    
+hashMap!.put(WorkFlowData.getInstance()!.NAME, this.workFlowName);
+    
+hashMap!.put(StoreFrontData.getInstance()!.NAME, this.storeName);
+    
+hashMap!.put(WorkFlowData.getInstance()!.DATA, DomDocumentHelper.toString(this.workFlowDoc));
+    
 
     var calendar: Calendar = Calendar.getInstance()!;
         
         
-
+;
+    
 
     var time: string = new calendar.getTimeInMillis() as Long.
-                            toString().toCharArray().concatToString()
-                                ;
+                            toString();
         
         
-
-hashMap!.put(EntryData.getInstance()!.LASTMODIFIED, time)
+;
+    
+hashMap!.put(EntryData.getInstance()!.LASTMODIFIED, time);
+    
 
 
 
@@ -237,31 +277,36 @@ var document = document
 
         try {
             
-    var hashMap: HashMap<Any, Any> = this.toHashMap()!;
+    var hashMap: HashMap<any, any> = this.toHashMap()!;
         
         
-
+;
+    
 
     var keySet: Set = hashMap!.keys!;
         
         
-
+;
+    
 
     var node: Node = document.createElement(WorkFlowData.getInstance()!.WORKFLOW)!;
         
         
+;
+    
 
-
-    var nameArray: any = {}[] = keySet!.toTypedArray()!;
+    var nameArray: any[] = keySet!.toTypedArray()!;
         
         
-
+;
+    
 
     var size: number = nameArray!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -276,13 +321,18 @@ index < size; index++)
     var name: string = nameArray[index]! as String;
         
         
+;
+    
 
+    var value: string = hashMap!.get(name as Object);
 
-    var value: string = hashMap!.get(name as Object) as String;
+                         as String;
         
         
-
-node.appendChild(ModDomHelper.createNameValueNodes(document, name, value))
+;
+    
+node.appendChild(ModDomHelper.createNameValueNodes(document, name, value));
+    
 }
 
 
@@ -291,13 +341,16 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, name, value))
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return node;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "toXmlNode()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "toXmlNode()", e);
+    
 
                                     }
                                 
@@ -321,13 +374,16 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, name, value))
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.workFlowDoc;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "toXmlDoc()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "toXmlDoc()", e);
+    
 
                                     }
                                 
@@ -349,14 +405,16 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, name, value))
     var returnBoolean: Boolean = Boolean.TRUE;
         
         
-
+;
+    
 
                         if(this.workFlowName == 
                                     null
                                 )
                         
                                     {
-                                    returnBoolean= Boolean.FALSE
+                                    returnBoolean= Boolean.FALSE;
+    
 
                                     }
                                 
@@ -366,13 +424,16 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, name, value))
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return returnBoolean;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put("Failed to validate", this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put("Failed to validate", this, commonStrings!.IS_VALID, e);
+    
 
                                     }
                                 
@@ -394,25 +455,33 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, name, value))
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
                         if(this.workFlowName == 
                                     null
                                 )
-                        stringBuffer!.append("No WorkFlow name specified.")
+                        stringBuffer!.append("No WorkFlow name specified.");
+
+                        
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e)
+                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e);
+    
 
                                     }
                                 

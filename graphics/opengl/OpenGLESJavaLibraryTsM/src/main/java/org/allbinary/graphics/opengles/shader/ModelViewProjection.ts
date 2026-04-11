@@ -38,7 +38,7 @@ export class ModelViewProjection
 }
 
 
-    public get(): FloatArray{
+    public get(): number[]{
 
 
 

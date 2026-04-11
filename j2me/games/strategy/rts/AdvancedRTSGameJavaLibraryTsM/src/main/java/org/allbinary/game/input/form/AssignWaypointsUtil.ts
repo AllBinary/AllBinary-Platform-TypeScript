@@ -88,12 +88,16 @@ var ownerAdvancedRTSGameLayer = ownerAdvancedRTSGameLayer
     var list: BasicArrayList = ownerAdvancedRTSGameLayer!.getWaypointBehavior()!.getOwnedWaypointList()!;
         
         
+;
+    
 
+    var unitWaypointBehavior: UnitWaypointBehavior = unitLayer!.getWaypointBehavior();
 
-    var unitWaypointBehavior: UnitWaypointBehavior = unitLayer!.getWaypointBehavior() as UnitWaypointBehavior;
+                         as UnitWaypointBehavior;
         
         
-
+;
+    
 
 
 
@@ -105,36 +109,48 @@ var ownerAdvancedRTSGameLayer = ownerAdvancedRTSGameLayer
 index >= 0; index--)
         {
 
-    var waypointLayer: RTSLayer = list.get(index) as RTSLayer;
-        
-        
+    var waypointLayer: RTSLayer = list.get(index);
 
-WAYPOINT_EVENT.setRtsLayer(waypointLayer)
-unitWaypointBehavior!.onWaypointEvent(WAYPOINT_EVENT)
+                         as RTSLayer;
+        
+        
+;
+    
+WAYPOINT_EVENT.setRtsLayer(waypointLayer);
+    
+unitWaypointBehavior!.onWaypointEvent(WAYPOINT_EVENT);
+    
 }
 
 
     var waypointLayer: PathFindingLayerInterface = PrimaryWaypointHelper.getInstance()!.getWaypointLayer()!;
         
         
-
+;
+    
 
                         if(waypointLayer != NullPathFindingLayer.NULL_PATH_FINDING_LAYER)
                         
                                     {
-                                    WAYPOINT_EVENT.setRtsLayer(waypointLayer)
-unitWaypointBehavior!.onWaypointEvent(WAYPOINT_EVENT)
+                                    WAYPOINT_EVENT.setRtsLayer(waypointLayer);
+    
+unitWaypointBehavior!.onWaypointEvent(WAYPOINT_EVENT);
+    
 
                                     }
                                 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, "set", e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, "set", e);
+    
 }
 
 }

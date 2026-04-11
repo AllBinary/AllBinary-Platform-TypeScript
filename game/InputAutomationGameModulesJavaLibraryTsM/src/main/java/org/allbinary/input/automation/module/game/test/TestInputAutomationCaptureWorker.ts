@@ -18,13 +18,16 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { HashMap } from "../../../../../../../java/util/HashMap.js";
 
     
 import { Set } from "../../../../../../../java/util/Set.js";
 
     
-import { Vector } from "../../../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../../../java/util/Vector.js";
 
     
 import { AbstractInputAutomationWorker } from "../../../../../../../org/allbinary/input/automation/module/AbstractInputAutomationWorker.js";
@@ -95,8 +98,10 @@ var motionRectangleConstraintsInterface = motionRectangleConstraintsInterface
 
                             //For kotlin this is before the body of the constructor.
                     
-logUtil!.put(MESSAGE, this, commonStrings!.CONSTRUCTOR)
-this.setGenericProfileActions(genericProfileActions)
+logUtil!.put(MESSAGE, this, commonStrings!.CONSTRUCTOR);
+    
+this.setGenericProfileActions(genericProfileActions);
+    
 }
 
 
@@ -104,41 +109,50 @@ this.setGenericProfileActions(genericProfileActions)
             
     public processDataWorkerResults(){
 
-    var cacheInterface: J2SECacheInterface = CapturedBufferedImagesCacheSingleton.getInstance() as J2SECacheInterface;
-        
-        
+    var cacheInterface: J2SECacheInterface = CapturedBufferedImagesCacheSingleton.getInstance();
 
+                         as J2SECacheInterface;
+        
+        
+;
+    
 
                         if(cacheInterface!.keySet()!.size() > 0)
                         
                                     {
-                                    logUtil!.put(IMAGE_AVAILABLE_SO_PROCESSING, this, PROCESS_DATA_WORKER_RESULTS)
+                                    logUtil!.put(IMAGE_AVAILABLE_SO_PROCESSING, this, PROCESS_DATA_WORKER_RESULTS);
+    
 
     var anyType: any = {} = cacheInterface!.keySet()!.toTypedArray()[0]!;
         
         
+;
+    
 
-
-    var hashMap: HashMap<Any, Any> = this.getGenericProfileActions()!.getHashMap()!;
+    var hashMap: HashMap<any, any> = this.getGenericProfileActions()!.getHashMap()!;
         
         
-
+;
+    
 
     var set: Set = hashMap!.keys!;
         
         
+;
+    
 
-
-    var actionNameArray: any = {}[] = set.toArray()!;
+    var actionNameArray: any[] = set.toArray()!;
         
         
-
+;
+    
 
     var size: number = actionNameArray!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -153,30 +167,38 @@ index < size; index++)
     var actionNameString: string = actionNameArray[index]! as String;
         
         
+;
+    
 
+    var genericProfileAction: GenericProfileAction = hashMap!.get(actionNameString as Object);
 
-    var genericProfileAction: GenericProfileAction = hashMap!.get(actionNameString as Object) as GenericProfileAction;
+                         as GenericProfileAction;
         
         
-
+;
+    
 
     var genericProfileActionScript: GenericProfileActionScript = genericProfileAction!.getGenericProfileActionScript()!;
         
         
-
+;
+    
 
     var vector: Vector = genericProfileActionScript!.getProfileActionConditionInterfaceVector()!;
         
         
-
+;
+    
 }
 
-cacheInterface!.get(anyType)
+cacheInterface!.get(anyType);
+    
 
                                     }
                                 
                         else {
-                            logUtil!.put(IMAGE_NOT_AVAILABLE, this, PROCESS_DATA_WORKER_RESULTS)
+                            logUtil!.put(IMAGE_NOT_AVAILABLE, this, PROCESS_DATA_WORKER_RESULTS);
+    
 
                         }
                             
@@ -186,9 +208,12 @@ cacheInterface!.get(anyType)
                 //@Throws(Error::class)
             
     public process(){
-logUtil!.put(commonStrings!.START, this, commonStrings!.PROCESS)
-this.startDataWorkers()
-this.processDataWorkerResults()
+logUtil!.put(commonStrings!.START, this, commonStrings!.PROCESS);
+    
+this.startDataWorkers();
+    
+this.processDataWorkerResults();
+    
 }
 
 
@@ -204,7 +229,8 @@ this.processDataWorkerResults()
 
     public setGenericProfileActions(genericProfileActions: GenericProfileActions){
 var genericProfileActions = genericProfileActions
-this.genericProfileActions= genericProfileActions
+this.genericProfileActions= genericProfileActions;
+    
 }
 
 

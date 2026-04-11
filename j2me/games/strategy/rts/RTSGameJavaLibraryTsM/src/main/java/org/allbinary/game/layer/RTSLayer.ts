@@ -18,7 +18,10 @@
 
 
 
-import { Hashtable } from "../../../../java/util/Hashtable.js";
+            import Hashtable from "@ohos.util.HashMap";
+        
+
+//import { Hashtable } from "../../../../java/util/Hashtable.js";
 
     
 import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
@@ -279,7 +282,7 @@ export class RTSLayer extends MultiPlayerGameLayer
 
     private readonly rootName: string
 
-    readonly hashtable: Hashtable<Any, Any> = new Hashtable<Any, Any>();
+    readonly hashtable: Hashtable<any, any> = new Hashtable<any, any>();
         
         
 
@@ -369,29 +372,56 @@ protected constructor (remoteInfo: RemoteInfo, groupInterface: Group[], rootName
 
                             //For kotlin this is before the body of the constructor.
                     
-this.initInputProcessors()
-this.rootName= rootName
-this.healthInterface= healthInterface
-this.rtsFormInput= rtsFormInput
-this.setPosition(x, y, z)
-this.verticleBuildAnimationInterface= verticleBuildAnimationInterfaceFactoryInterface!.getInstance(0) as IndexedAnimation
-this.buildAnimationInterface= buildAnimationInterfaceFactoryInterface!.getInstance(0)
-this.baseAnimationInterface= baseAnimationInterfaceFactoryInterface!.getInstance(0)
-this.emptyAnimationInterface= emptyAnimationInterfaceFactoryInterface!.getInstance(0) as IndexedAnimation
-this.indexedButShouldBeRotationAnimationInterface= animationInterfaceFactoryInterface!.getInstance(0) as IndexedAnimation
-this.initAnimationInterface= this.indexedButShouldBeRotationAnimationInterface
-this.destroyAnimationInterface= proceduralAnimationInterfaceFactoryInterface!.getInstance(this.indexedButShouldBeRotationAnimationInterface) as IndexedAnimation
+this.initInputProcessors();
+    
+this.rootName= rootName;
+    
+this.healthInterface= healthInterface;
+    
+this.rtsFormInput= rtsFormInput;
+    
+this.setPosition(x, y, z);
+    
+this.verticleBuildAnimationInterface= verticleBuildAnimationInterfaceFactoryInterface!.getInstance(0);
+
+                         as IndexedAnimation;
+    
+this.buildAnimationInterface= buildAnimationInterfaceFactoryInterface!.getInstance(0);
+    
+this.baseAnimationInterface= baseAnimationInterfaceFactoryInterface!.getInstance(0);
+    
+this.emptyAnimationInterface= emptyAnimationInterfaceFactoryInterface!.getInstance(0);
+
+                         as IndexedAnimation;
+    
+this.indexedButShouldBeRotationAnimationInterface= animationInterfaceFactoryInterface!.getInstance(0);
+
+                         as IndexedAnimation;
+    
+this.initAnimationInterface= this.indexedButShouldBeRotationAnimationInterface;
+    
+this.destroyAnimationInterface= proceduralAnimationInterfaceFactoryInterface!.getInstance(this.indexedButShouldBeRotationAnimationInterface);
+
+                         as IndexedAnimation;
+    
 
     var animation: Animation = NullAnimationFactory.getFactoryInstance()!.getInstance(0)!;
         
         
-
-this.rangeAnimation= animation
-this.initRangeAnimation= animation
-this.sensorRangeAnimation= animation
-this.initSensorRangeAnimation= animation
-this.animationInterface= this.initAnimationInterface
-this.geographicMapCellPositionAreaBase= GeographicMapCellPositionArea(this)
+;
+    
+this.rangeAnimation= animation;
+    
+this.initRangeAnimation= animation;
+    
+this.sensorRangeAnimation= animation;
+    
+this.initSensorRangeAnimation= animation;
+    
+this.animationInterface= this.initAnimationInterface;
+    
+this.geographicMapCellPositionAreaBase= GeographicMapCellPositionArea(this);
+    
 }
 
 protected constructor (remoteInfo: RemoteInfo)                        
@@ -404,32 +434,52 @@ protected constructor (remoteInfo: RemoteInfo)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.initInputProcessors()
-this.rtsFormInput= NullRTSFormInputFactory.getInstance()
+this.initInputProcessors();
+    
+this.rtsFormInput= NullRTSFormInputFactory.getInstance();
+    
 
     var animation: Animation = NullAnimationFactory.getFactoryInstance()!.getInstance(0)!;
         
         
+;
+    
+this.baseAnimationInterface= animation;
+    
+this.buildAnimationInterface= animation;
+    
+this.rangeAnimation= animation;
+    
+this.initRangeAnimation= animation;
+    
+this.sensorRangeAnimation= animation;
+    
+this.initSensorRangeAnimation= animation;
+    
+this.animationInterface= animation;
+    
 
-this.baseAnimationInterface= animation
-this.buildAnimationInterface= animation
-this.rangeAnimation= animation
-this.initRangeAnimation= animation
-this.sensorRangeAnimation= animation
-this.initSensorRangeAnimation= animation
-this.animationInterface= animation
+    var indexedAnimation: IndexedAnimation = NullIndexedAnimationFactory.getFactoryInstance()!.getInstance(0);
 
-    var indexedAnimation: IndexedAnimation = NullIndexedAnimationFactory.getFactoryInstance()!.getInstance(0) as IndexedAnimation;
+                         as IndexedAnimation;
         
         
-
-this.indexedButShouldBeRotationAnimationInterface= indexedAnimation
-this.initAnimationInterface= indexedAnimation
-this.emptyAnimationInterface= indexedAnimation
-this.destroyAnimationInterface= indexedAnimation
-this.verticleBuildAnimationInterface= indexedAnimation
-this.rootName= StringUtil.getInstance()!.EMPTY_STRING
-this.geographicMapCellPositionAreaBase= GeographicMapCellPositionAreaBase.NULL_GEOGRPAHIC_MAP_POSITION_AREA_BASE
+;
+    
+this.indexedButShouldBeRotationAnimationInterface= indexedAnimation;
+    
+this.initAnimationInterface= indexedAnimation;
+    
+this.emptyAnimationInterface= indexedAnimation;
+    
+this.destroyAnimationInterface= indexedAnimation;
+    
+this.verticleBuildAnimationInterface= indexedAnimation;
+    
+this.rootName= StringUtil.getInstance()!.EMPTY_STRING;
+    
+this.geographicMapCellPositionAreaBase= GeographicMapCellPositionAreaBase.NULL_GEOGRPAHIC_MAP_POSITION_AREA_BASE;
+    
 }
 
 
@@ -437,29 +487,38 @@ this.geographicMapCellPositionAreaBase= GeographicMapCellPositionAreaBase.NULL_G
             
     public setAllBinaryGameLayerManager(allBinaryGameLayerManager: AllBinaryGameLayerManager){
     //var allBinaryGameLayerManager = allBinaryGameLayerManager
-super.setAllBinaryGameLayerManager(allBinaryGameLayerManager)
+super.setAllBinaryGameLayerManager(allBinaryGameLayerManager);
+    
 
     var geographicMapCompositeInterface: GeographicMapCompositeInterface = this.allBinaryGameLayerManagerP as GeographicMapCompositeInterface;
         
         
-
+;
+    
 
     var geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;
         
         
-
+;
+    
 
     var tiledLayer: AllBinaryTiledLayer = geographicMapInterface!.getAllBinaryTiledLayer()!;
         
         
+;
+    
 
+    var viewPosition2: TileLayerPositionIntoViewPosition = this.getViewPosition();
 
-    var viewPosition2: TileLayerPositionIntoViewPosition = this.getViewPosition() as TileLayerPositionIntoViewPosition;
+                         as TileLayerPositionIntoViewPosition;
         
         
-
-viewPosition2!.setTiledLayer(tiledLayer)
-this.updateWaypointBehavior(geographicMapInterface)
+;
+    
+viewPosition2!.setTiledLayer(tiledLayer);
+    
+this.updateWaypointBehavior(geographicMapInterface);
+    
 }
 
 
@@ -467,7 +526,8 @@ this.updateWaypointBehavior(geographicMapInterface)
             
     public updateWaypointBehavior(geographicMapInterface: BasicGeographicMap){
     //var geographicMapInterface = geographicMapInterface
-this.geographicMapCellPositionAreaBase!.update(geographicMapInterface)
+this.geographicMapCellPositionAreaBase!.update(geographicMapInterface);
+    
 }
 
 
@@ -475,16 +535,22 @@ this.geographicMapCellPositionAreaBase!.update(geographicMapInterface)
             
     public construct(rtsPlayerLayerInterface: RTSPlayerLayerInterface){
     //var rtsPlayerLayerInterface = rtsPlayerLayerInterface
-ViewPositionEventHandler.getInstance()!.addListener(this as AllBinaryLayer)
-this.animationInterface= this.buildAnimationInterface
-this.hackVerticleBuild= 0
+ViewPositionEventHandler.getInstance()!.addListener(this as AllBinaryLayer);
+    
+this.animationInterface= this.buildAnimationInterface;
+    
+this.hackVerticleBuild= 0;
+    
 }
 
 
     public select(){
-this.rangeAnimation= this.initRangeAnimation
-this.sensorRangeAnimation= this.initSensorRangeAnimation
-this.setSelected(true)
+this.rangeAnimation= this.initRangeAnimation;
+    
+this.sensorRangeAnimation= this.initSensorRangeAnimation;
+    
+this.setSelected(true);
+    
 }
 
 
@@ -493,16 +559,21 @@ this.setSelected(true)
     var animation: Animation = NullAnimationFactory.getFactoryInstance()!.getInstance(0)!;
         
         
-
-this.rangeAnimation= animation
-this.sensorRangeAnimation= animation
-this.setSelected(false)
+;
+    
+this.rangeAnimation= animation;
+    
+this.sensorRangeAnimation= animation;
+    
+this.setSelected(false);
+    
 }
 
 
     setSelected(selected: boolean){
 var selected = selected
-this.selected= selected
+this.selected= selected;
+    
 }
 
 
@@ -537,7 +608,8 @@ this.selected= selected
 
 
     public initInputProcessors(){
-GameInputProcessorUtil.init(this.inputProcessorArray)
+GameInputProcessorUtil.init(this.inputProcessorArray);
+    
 }
 
 
@@ -545,7 +617,8 @@ GameInputProcessorUtil.init(this.inputProcessorArray)
             
     public processBuiltTick(allBinaryLayerManager: AllBinaryLayerManager){
     //var allBinaryLayerManager = allBinaryLayerManager
-this.animationInterface= this.indexedButShouldBeRotationAnimationInterface
+this.animationInterface= this.indexedButShouldBeRotationAnimationInterface;
+    
 }
 
 
@@ -557,18 +630,23 @@ this.animationInterface= this.indexedButShouldBeRotationAnimationInterface
                         if(this.isCompleted())
                         
                                     {
-                                    this.processBuiltTick(allBinaryLayerManager)
+                                    this.processBuiltTick(allBinaryLayerManager);
+    
 
                                     }
                                 
                         else {
-                            this.build()
+                            this.build();
+    
 
                         }
                             
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "processTick", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "processTick", e);
+    
 }
 
 }
@@ -599,23 +677,28 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "processTick", e)
 
     public paint(graphics: Graphics){
     //var graphics = graphics
-super.paintFirst(graphics)
+super.paintFirst(graphics);
+    
 
     var viewPosition: ViewPosition = this.getViewPosition()!;
         
         
-
+;
+    
 
     var viewX: number = viewPosition!.getX()!;
         
         
-
+;
+    
 
     var viewY: number = viewPosition!.getY()!;
         
         
-
-this.getAnimationInterface()!.paint(graphics, viewX, viewY)
+;
+    
+this.getAnimationInterface()!.paint(graphics, viewX, viewY);
+    
 }
 
 
@@ -642,12 +725,14 @@ this.getAnimationInterface()!.paint(graphics, viewX, viewY)
         
 
     public downgrade(){
-rtsLayerUtil!.downgrade(this)
+rtsLayerUtil!.downgrade(this);
+    
 }
 
 
     public upgrade(){
-rtsLayerUtil!.upgrade(this)
+rtsLayerUtil!.upgrade(this);
+    
 }
 
 
@@ -685,14 +770,19 @@ rtsLayerUtil!.upgrade(this)
                         if(this.buildFrameTimeHelper!.isTime())
                         
                                     {
-                                    this.animationInterface= this.buildAnimationInterface
-this.verticleBuildAnimationInterface!.nextFrame()
-this.hackVerticleBuild++
+                                    this.animationInterface= this.buildAnimationInterface;
+    
+this.verticleBuildAnimationInterface!.nextFrame();
+    
+this.hackVerticleBuild++;
+    
 
                                     }
                                 
-this.percentCompleteP= 100 *this.hackVerticleBuild /BUILD_VALUE
-this.getHudPaintable()!.updateInfo()
+this.percentCompleteP= 100 *this.hackVerticleBuild /BUILD_VALUE;
+    
+this.getHudPaintable()!.updateInfo();
+    
 }
 
 
@@ -712,6 +802,8 @@ this.getHudPaintable()!.updateInfo()
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return rtsLayerUtil!.getCost(this);
+
+                        ;
     
 }
 
@@ -722,6 +814,8 @@ this.getHudPaintable()!.updateInfo()
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return rtsLayerUtil!.getDowngradeCost(this);
+
+                        ;
     
 }
 
@@ -732,6 +826,8 @@ this.getHudPaintable()!.updateInfo()
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return rtsLayerUtil!.getUpgradeCost(this);
+
+                        ;
     
 }
 
@@ -802,7 +898,8 @@ this.getHudPaintable()!.updateInfo()
 
     public setLevel(level: number){
 var level = level
-this.level= level
+this.level= level;
+    
 }
 
 
@@ -828,7 +925,8 @@ this.level= level
 
     public setAnimationInterface(animationInterface: Animation){
     //var animationInterface = animationInterface
-this.animationInterface= animationInterface
+this.animationInterface= animationInterface;
+    
 }
 
 
@@ -844,13 +942,16 @@ this.animationInterface= animationInterface
     var anotherTargetDistance: number = layerDistanceUtil!.getDistance(this as AllBinaryLayer, targetGameLayer as AllBinaryLayer)!;
         
         
-
+;
+    
 
     var waypointBehaviorBase: WaypointBehaviorBase = this.getWaypointBehavior()!;
         
         
-
-waypointBehaviorBase!.setTarget(targetGameLayer as PathFindingLayerInterface, anotherTargetDistance)
+;
+    
+waypointBehaviorBase!.setTarget(targetGameLayer as PathFindingLayerInterface, anotherTargetDistance);
+    
 }
 
 
@@ -882,7 +983,8 @@ waypointBehaviorBase!.setTarget(targetGameLayer as PathFindingLayerInterface, an
 
     public setMaxLevel(maxLevel: number){
     //var maxLevel = maxLevel
-this.maxLevel= maxLevel
+this.maxLevel= maxLevel;
+    
 }
 
 
@@ -898,7 +1000,8 @@ this.maxLevel= maxLevel
 
     public setHealthInterface(healthInterface: Health){
     //var healthInterface = healthInterface
-this.healthInterface= healthInterface
+this.healthInterface= healthInterface;
+    
 }
 
 
@@ -928,13 +1031,16 @@ this.healthInterface= healthInterface
             
     public setDestroyed(destroyed: boolean){
     //var destroyed = destroyed
-this.destroyed= destroyed
+this.destroyed= destroyed;
+    
 
                         if(this.isDestroyed())
                         
                                     {
-                                    DestroyedLayerProcessor.getInstance()!.add(this)
-ViewPositionEventHandler.getInstance()!.removeListener(this)
+                                    DestroyedLayerProcessor.getInstance()!.add(this);
+    
+ViewPositionEventHandler.getInstance()!.removeListener(this);
+    
 
                                     }
                                 
@@ -947,6 +1053,8 @@ ViewPositionEventHandler.getInstance()!.removeListener(this)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.geographicMapCellPositionAreaBase!.getOccupyingGeographicMapCellPositionList();
+
+                        ;
     
 }
 
@@ -1221,13 +1329,15 @@ var resource = resource
 
     public setFrame(index: number){
 var index = index
-this.getRotationAnimationInterface()!.setFrame(index)
+this.getRotationAnimationInterface()!.setFrame(index);
+    
 }
 
 
     public setRotationAnimationInterface(rotationAnimationInterface: RotationAnimation){
     //var rotationAnimationInterface = rotationAnimationInterface
-this.indexedButShouldBeRotationAnimationInterface= rotationAnimationInterface
+this.indexedButShouldBeRotationAnimationInterface= rotationAnimationInterface;
+    
 }
 
 

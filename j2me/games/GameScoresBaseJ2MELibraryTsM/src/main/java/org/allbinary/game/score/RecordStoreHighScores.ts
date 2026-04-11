@@ -18,6 +18,8 @@
 
 
 
+            import Hashtable from "@ohos.util.HashMap";
+        
 import { ByteArrayInputStream } from "../../../../java/io/ByteArrayInputStream.js";
 
     
@@ -30,7 +32,8 @@ import { EOFException } from "../../../../java/io/EOFException.js";
 import { IOException } from "../../../../java/io/IOException.js";
 
     
-import { Hashtable } from "../../../../java/util/Hashtable.js";
+
+//import { Hashtable } from "../../../../java/util/Hashtable.js";
 
     
 import { RecordComparator } from "../../../../javax/microedition/rms/RecordComparator.js";
@@ -88,7 +91,7 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 export class RecordStoreHighScores extends HighScores {
         
 
-    private static readonly hashTable: Hashtable<Any, Any> = new Hashtable<Any, Any>();
+    private static readonly hashTable: Hashtable<any, any> = new Hashtable<any, any>();
         
         
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
@@ -104,7 +107,8 @@ export class RecordStoreHighScores extends HighScores {
     var highScoresCanBeNull: any = {}? = hashTable!.get(highScoreName as Object);
         
         
-
+;
+    
 
                         if(highScoresCanBeNull == 
                                     null
@@ -115,8 +119,10 @@ export class RecordStoreHighScores extends HighScores {
     var highScores: HighScores = new RecordStoreHighScores(abeClientInformation, gameInfo, highScoreName, heading, columnTwoHeading, recordComparatorInterface);
         
         
-
-hashTable!.put(highScores!.getName(), highScores)
+;
+    
+hashTable!.put(highScores!.getName(), highScores);
+    
 
 
 
@@ -175,10 +181,14 @@ private constructor (abeClientInformation: AbeClientInformationInterface, gameIn
 
                             //For kotlin this is before the body of the constructor.
                     
-this.abeClientInformation= abeClientInformation
-this.gameInfo= gameInfo
-this.recordComparatorInterface= recordComparatorInterface
-this.load()
+this.abeClientInformation= abeClientInformation;
+    
+this.gameInfo= gameInfo;
+    
+this.recordComparatorInterface= recordComparatorInterface;
+    
+this.load();
+    
 }
 
 
@@ -190,6 +200,8 @@ this.load()
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return platformRecordIdUtil!.getRecordId(abeClientInformation, StringMaker().
                             append(CommonSeps.getInstance()!.UNDERSCORE)!.append(this.getName())!.append(RECORD_ID)!.toString());
+
+                        ;
     
 }
 
@@ -201,43 +213,60 @@ this.load()
     var recordStore: RecordStore = NullRecordStore.NULL_RECORD_STORE;
         
         
-
+;
+    
 
         try {
             logUtil!.put(StringMaker().
-                            append("Adding HighScore: ")!.appendlong(newHighScore!.getScore())!.toString(), this, commonStrings!.ADD)
+                            append("Adding HighScore: ")!.appendlong(newHighScore!.getScore())!.toString(), this, commonStrings!.ADD);
+    
 
                         if(this.isTooManyHighScores())
                         
                                     {
-                                    logUtil!.put("Removing Lowest Score", this, commonStrings!.ADD)
-this.removeLowestHighScore()
+                                    logUtil!.put("Removing Lowest Score", this, commonStrings!.ADD);
+    
+this.removeLowestHighScore();
+    
 
                                     }
                                 
-recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation), true)
+recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation), true);
+    
 
-    var highScoreBytes: ByteArray = newHighScore!.getAsBytes()!;
+    var highScoreBytes: number[] = newHighScore!.getAsBytes()!;
         
         
-
+;
+    
 
     var recordId: number = recordStore!.addRecord(highScoreBytes, 0, highScoreBytes!.length)!;
         
         
+;
+    
+this.load();
+    
 
-this.load()
-} catch(e: RecordStoreException)
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.ADD, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.ADD, e);
+    
 }
- catch(e: IOException)
+
+                //: 
+ catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.ADD, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.ADD, e);
+    
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.ADD, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.ADD, e);
+    
 }
 
          finally {
@@ -249,14 +278,19 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.ADD, e)
                                 )
                         
                                     {
-                                    PreLogUtil.put("Closing RecordStore", this, commonStrings!.ADD)
-recordStore!.closeRecordStore()
+                                    PreLogUtil.put("Closing RecordStore", this, commonStrings!.ADD);
+    
+recordStore!.closeRecordStore();
+    
 
                                     }
                                 
-} catch(e: RecordStoreException)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.ADD, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.ADD, e);
+    
 }
 
 
@@ -270,34 +304,42 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.ADD, e)
     var recordStore: RecordStore = NullRecordStore.NULL_RECORD_STORE;
         
         
-
+;
+    
 
         try {
-            recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation), true)
+            recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation), true);
+    
 
     var recordEnum: RecordEnumeration = recordStore!.enumerateRecords(NullRecordFilter.NULL_RECORD_FILTER, NullRecordComparator.NULL_RECORD_COMPARATOR, true)!;
         
         
-
+;
+    
 
     var scoreComparator: ScoreComparator = (this.recordComparatorInterface as ScoreComparator);
         
         
-
+;
+    
 
     var bestHighScore: HighScore = new HighScore( -1, "none", GameInfo.NONE, scoreComparator!.getBestScore());
         
         
+;
+    
 
-
-    var recordAsBytes: ByteArray
-
+    var recordAsBytes: number[]
+;
+    
 
     var byteArrayInputStream: ByteArrayInputStream
-
+;
+    
 
     var inputStream: DataInputStream
-
+;
+    
 
         while(recordEnum!.hasNextElement())
         {
@@ -305,36 +347,44 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.ADD, e)
     var id: number = recordEnum!.nextRecordId()!;
         
         
-
-recordAsBytes= recordStore!.getRecord(id)
+;
+    
+recordAsBytes= recordStore!.getRecord(id);
+    
 
                         if(recordAsBytes != 
                                     null
                                 )
                         
                                     {
-                                    byteArrayInputStream= ByteArrayInputStream(recordAsBytes)
-inputStream= DataInputStream(byteArrayInputStream)
+                                    byteArrayInputStream= ByteArrayInputStream(recordAsBytes);
+    
+inputStream= DataInputStream(byteArrayInputStream);
+    
 
     var name: string = inputStream!.readUTF()!;
         
         
-
+;
+    
 
     var nextScore: number = inputStream!.readLong()!;
         
         
-
+;
+    
 
     var nextCurrentHighScore: HighScore = new HighScore(id, name, GameInfo.NONE, nextScore);
         
         
-
+;
+    
 
                         if(this.recordComparatorInterface!.compare(nextCurrentHighScore!.getAsBytes(), bestHighScore!.getAsBytes()) == RecordComparator.FOLLOWS)
                         
                                     {
-                                    bestHighScore= nextCurrentHighScore
+                                    bestHighScore= nextCurrentHighScore;
+    
 
                                     }
                                 
@@ -348,18 +398,26 @@ inputStream= DataInputStream(byteArrayInputStream)
                         
                                     {
                                     logUtil!.put(StringMaker().
-                            append("Removing Lowest HighScore: ")!.appendlong(bestHighScore!.getScore())!.toString(), this, commonStrings!.LOAD)
-recordStore!.deleteRecord(bestHighScore!.getId())
+                            append("Removing Lowest HighScore: ")!.appendlong(bestHighScore!.getScore())!.toString(), this, commonStrings!.LOAD);
+    
+recordStore!.deleteRecord(bestHighScore!.getId());
+    
 
                                     }
                                 
-} catch(e: RecordStoreException)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "removeLowestHighScore", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "removeLowestHighScore", e);
+    
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "removeLowestHighScore", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "removeLowestHighScore", e);
+    
 }
 
          finally {
@@ -371,14 +429,19 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "removeLowestHighScore", e)
                                 )
                         
                                     {
-                                    PreLogUtil.put("Closing RecordStore", this, "removeLowestHighScore")
-recordStore!.closeRecordStore()
+                                    PreLogUtil.put("Closing RecordStore", this, "removeLowestHighScore");
+    
+recordStore!.closeRecordStore();
+    
 
                                     }
                                 
-} catch(e: RecordStoreException)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "removeLowestHighScore", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "removeLowestHighScore", e);
+    
 }
 
 
@@ -392,25 +455,32 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "removeLowestHighScore", e)
     var recordStore: RecordStore = NullRecordStore.NULL_RECORD_STORE;
         
         
-
+;
+    
 
         try {
-            recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation), true)
-this.setList(BasicArrayList())
+            recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation), true);
+    
+this.setList(BasicArrayList());
+    
 
     var recordEnum: RecordEnumeration = recordStore!.enumerateRecords(NullRecordFilter.NULL_RECORD_FILTER, NullRecordComparator.NULL_RECORD_COMPARATOR, true)!;
         
         
+;
+    
 
-
-    var recordAsBytes: ByteArray
-
+    var recordAsBytes: number[]
+;
+    
 
     var byteArrayInputStream: ByteArrayInputStream
-
+;
+    
 
     var inputStream: DataInputStream
-
+;
+    
 
         while(recordEnum!.hasNextElement())
         {
@@ -418,48 +488,58 @@ this.setList(BasicArrayList())
     var id: number = recordEnum!.nextRecordId()!;
         
         
-
-recordAsBytes= recordStore!.getRecord(id)
+;
+    
+recordAsBytes= recordStore!.getRecord(id);
+    
 
                         if(recordAsBytes != 
                                     null
                                 )
                         
                                     {
-                                    byteArrayInputStream= ByteArrayInputStream(recordAsBytes)
-inputStream= DataInputStream(byteArrayInputStream)
+                                    byteArrayInputStream= ByteArrayInputStream(recordAsBytes);
+    
+inputStream= DataInputStream(byteArrayInputStream);
+    
 
         try {
             
     var name: string = inputStream!.readUTF()!;
         
         
-
+;
+    
 
     var score: number = inputStream!.readLong()!;
         
         
-
+;
+    
 
     var newHighScore: HighScore = new HighScore(id, name, GameInfo.NONE, score);
         
         
-
+;
+    
 
     var list: BasicArrayList = this.getList()!;
         
         
-
+;
+    
 
     var size: number = list.size()!;
         
         
-
+;
+    
 
     var lastIndex: number = size;
         
         
-
+;
+    
 
 
 
@@ -474,12 +554,14 @@ index < size; index++)
     var highScore: HighScore = list.objectArray[index]! as HighScore;
         
         
-
+;
+    
 
                         if(this.recordComparatorInterface!.compare(newHighScore!.getAsBytes(), highScore!.getAsBytes()) == RecordComparator.PRECEDES)
                         
                                     {
-                                    lastIndex= index
+                                    lastIndex= index;
+    
 break;
 
                     
@@ -488,10 +570,14 @@ break;
                                 
 }
 
-list.add(lastIndex, newHighScore)
-} catch(e: EOFException)
+list.add(lastIndex, newHighScore);
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put("EOF", this, commonStrings!.LOAD, e)
+logUtil!.put("EOF", this, commonStrings!.LOAD, e);
+    
 
 
 
@@ -503,21 +589,33 @@ logUtil!.put("EOF", this, commonStrings!.LOAD, e)
                                 
 }
 
-} catch(e: RecordStoreNotFoundException)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put("No High Scores", this, commonStrings!.LOAD, e)
+logUtil!.put("No High Scores", this, commonStrings!.LOAD, e);
+    
 }
- catch(e: RecordStoreException)
+
+                //: 
+ catch(e) 
             {
-logUtil!.put(commonStrings!.UNKNOWN, this, commonStrings!.LOAD, e)
+logUtil!.put(commonStrings!.UNKNOWN, this, commonStrings!.LOAD, e);
+    
 }
- catch(e: IOException)
+
+                //: 
+ catch(e) 
             {
-logUtil!.put(commonStrings!.UNKNOWN, this, commonStrings!.LOAD, e)
+logUtil!.put(commonStrings!.UNKNOWN, this, commonStrings!.LOAD, e);
+    
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
-logUtil!.put(commonStrings!.UNKNOWN, this, commonStrings!.LOAD, e)
+logUtil!.put(commonStrings!.UNKNOWN, this, commonStrings!.LOAD, e);
+    
 }
 
          finally {
@@ -529,14 +627,19 @@ logUtil!.put(commonStrings!.UNKNOWN, this, commonStrings!.LOAD, e)
                                 )
                         
                                     {
-                                    PreLogUtil.put("Closing RecordStore", this, commonStrings!.LOAD)
-recordStore!.closeRecordStore()
+                                    PreLogUtil.put("Closing RecordStore", this, commonStrings!.LOAD);
+    
+recordStore!.closeRecordStore();
+    
 
                                     }
                                 
-} catch(e: RecordStoreException)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.LOAD, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.LOAD, e);
+    
 }
 
 
@@ -563,7 +666,8 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.LOAD, e)
                                 
                         else {
                             logUtil!.put(StringMaker().
-                            append("HighScores RecordStore Max Reached: ")!.appendint(this.MAXHIGHSCORES)!.toString(), this, "isTooManyHighScores")
+                            append("HighScores RecordStore Max Reached: ")!.appendint(this.MAXHIGHSCORES)!.toString(), this, "isTooManyHighScores");
+    
 
 
 
@@ -584,10 +688,13 @@ var newHighScore = newHighScore
 
         try {
             
-                        if(!this.isTooManyHighScores())
+                        if(!this.isTooManyHighScores();
+
+                        )
                         
                                     {
-                                    logUtil!.put("Slot Available for a High Score", this, "isBestScore")
+                                    logUtil!.put("Slot Available for a High Score", this, "isBestScore");
+    
 
 
 
@@ -602,12 +709,14 @@ var newHighScore = newHighScore
     var list: BasicArrayList = this.getList()!;
         
         
-
+;
+    
 
     var size: number = list.size()!;
         
         
-
+;
+    
 
 
 
@@ -622,12 +731,14 @@ index < size; index++)
     var highScore: HighScore = list.objectArray[index]! as HighScore;
         
         
-
+;
+    
 
                         if(recordComparatorInterface!.compare(newHighScore!.getAsBytes(), highScore!.getAsBytes()) == RecordComparator.FOLLOWS)
                         
                                     {
-                                    logUtil!.put("Obtained a High Score", this, "isBestScore")
+                                    logUtil!.put("Obtained a High Score", this, "isBestScore");
+    
 
 
 
@@ -642,16 +753,20 @@ index < size; index++)
 
                         }
                             
-logUtil!.put("Not a High Score", this, "isBestScore")
+logUtil!.put("Not a High Score", this, "isBestScore");
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return false;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.ADD, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.ADD, e);
+    
 
 
 
@@ -666,18 +781,22 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.ADD, e)
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(super.toString())
+;
+    
+stringBuffer!.append(super.toString());
+    
 
     var list: BasicArrayList = this.getList()!;
         
         
-
+;
+    
 
     var size: number = list.size()!;
         
         
-
+;
+    
 
 
 
@@ -692,9 +811,12 @@ index < size; index++)
     var highScore: HighScore = list.objectArray[index]! as HighScore;
         
         
-
-stringBuffer!.append(highScore!.getScoreString())
-stringBuffer!.append(CommonSeps.getInstance()!.COMMA_SEP)
+;
+    
+stringBuffer!.append(highScore!.getScoreString());
+    
+stringBuffer!.append(CommonSeps.getInstance()!.COMMA_SEP);
+    
 }
 
 
@@ -702,6 +824,8 @@ stringBuffer!.append(CommonSeps.getInstance()!.COMMA_SEP)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

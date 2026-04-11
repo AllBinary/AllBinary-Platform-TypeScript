@@ -57,12 +57,18 @@ public constructor (){
     var inputAutomationModuleInterfaceArray: InputAutomationModuleFactoryInterface[] = new Array(1);
         
         
+;
+    
+inputAutomationModuleInterfaceArray[0]= GenericModuleFactory();
+    
+this.setInputAutomationModuleInterfaceArray(inputAutomationModuleInterfaceArray);
+    
 
-inputAutomationModuleInterfaceArray[0]= GenericModuleFactory()
-this.setInputAutomationModuleInterfaceArray(inputAutomationModuleInterfaceArray)
-} catch(e: Exception)
+                //: 
+} catch(e) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.CONSTRUCTOR, e)
+logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.CONSTRUCTOR, e);
+    
 }
 
 }

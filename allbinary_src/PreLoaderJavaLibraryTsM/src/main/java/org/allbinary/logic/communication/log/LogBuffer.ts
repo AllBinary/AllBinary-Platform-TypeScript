@@ -18,7 +18,10 @@
 
 
 
-import { Vector } from "../../../../../java/util/Vector.js";
+            import Vector from "@ohos.util.Vector";
+        
+
+//import { Vector } from "../../../../../java/util/Vector.js";
 
     
 
@@ -35,13 +38,15 @@ export class LogBuffer
 public constructor (){
 
             super();
-            this.logEntryVector= Vector()
+            this.logEntryVector= Vector();
+    
 }
 
 
     public add(log: Log){
 var log = log
-this.logEntryVector!.add(log)
+this.logEntryVector!.add(log);
+    
 }
 
 
@@ -50,7 +55,8 @@ this.logEntryVector!.add(log)
     var size: number = this.logEntryVector!.length!;
         
         
-
+;
+    
 
 
 
@@ -62,11 +68,15 @@ this.logEntryVector!.add(log)
 index < size; index++)
         {
 
-    var log: Log = this.logEntryVector!.get(index) as Log;
-        
-        
+    var log: Log = this.logEntryVector!.get(index);
 
-logUtil!.put(log)
+                         as Log;
+        
+        
+;
+    
+logUtil!.put(log);
+    
 }
 
 }

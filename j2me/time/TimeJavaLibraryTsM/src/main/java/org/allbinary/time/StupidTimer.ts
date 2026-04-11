@@ -53,15 +53,19 @@ export class StupidTimer
     visitBool(visitorInterface: Visitor): boolean{
     //var visitorInterface = visitorInterface
 
-    var result: Boolean = visitorInterface!.visit(nullUtil!.NULL_OBJECT) as Boolean;
-        
-        
+    var result: Boolean = visitorInterface!.visit(nullUtil!.NULL_OBJECT);
 
+                         as Boolean;
+        
+        
+;
+    
 
     var result2: boolean = result!;
         
         
-
+;
+    
 
 
 
@@ -80,19 +84,23 @@ export class StupidTimer
     var tookTooLong: boolean = false;
         
         
-
+;
+    
 
     var WAITING_FOR: string = "Waiting for: ";
         
         
-
+;
+    
 PreLogUtil.put(StringMaker().
-                            append(WAITING_FOR)!.append(StringUtil.getInstance()!.toString(visitorInterface))!.toString(), this, commonStrings!.VISIT)
+                            append(WAITING_FOR)!.append(StringUtil.getInstance()!.toString(visitorInterface))!.toString(), this, commonStrings!.VISIT);
+    
 
     var index: number = 0;
         
         
-
+;
+    
 
         while(this.visitBool(visitorInterface))
         {
@@ -101,11 +109,13 @@ PreLogUtil.put(StringMaker().
                         
                                     {
                                     PreLogUtil.put(StringMaker().
-                            append(WAITING_FOR)!.appendint(index)!.toString(), this, commonStrings!.VISIT)
+                            append(WAITING_FOR)!.appendint(index)!.toString(), this, commonStrings!.VISIT);
+    
 
                                     }
                                 
-index++
+index++;
+    
 
         
         //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
@@ -113,14 +123,16 @@ index++
 
         //mutex.withLock
         {
-this.threadObjectUtil!.waitObject(this, 1800)
+this.threadObjectUtil!.waitObject(this, 1800);
+    
 }
 
 
                         if(timeDelayHelper!.isTime())
                         
                                     {
-                                    tookTooLong= true
+                                    tookTooLong= true;
+    
 break;
 
                     
@@ -134,12 +146,14 @@ break;
                         
                                     {
                                     logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.VISIT, Error(StringMaker().
-                            append("Took Too Long: ")!.append(StringUtil.getInstance()!.toString(visitorInterface))!.toString()))
+                            append("Took Too Long: ")!.append(StringUtil.getInstance()!.toString(visitorInterface))!.toString()));
+    
 
                                     }
                                 
                         else {
-                            PreLogUtil.put(timeDelayHelper!.toString(), this, commonStrings!.VISIT)
+                            PreLogUtil.put(timeDelayHelper!.toString(), this, commonStrings!.VISIT);
+    
 
                         }
                             
@@ -156,7 +170,8 @@ break;
 
         //mutex.withLock
         {
-this.threadObjectUtil!.notifyObject(this)
+this.threadObjectUtil!.notifyObject(this);
+    
 }
 
 }

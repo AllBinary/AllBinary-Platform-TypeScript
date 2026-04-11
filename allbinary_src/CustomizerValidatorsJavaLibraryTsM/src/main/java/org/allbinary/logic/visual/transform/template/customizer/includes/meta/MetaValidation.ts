@@ -77,12 +77,14 @@ public constructor (htmlMetaAttributeData: HtmlMetaAttributeData, label: string,
 var label = label
 var attributeValue = attributeValue
 var contentValue = contentValue
-this.label= label
+this.label= label;
+    
 
                         if(htmlMetaAttributeData!.equals(HtmlMetaAttributeDataFactory.getInstance()!.HTTP_EQUIV))
                         
                                     {
-                                    this.httpEquiv= attributeValue
+                                    this.httpEquiv= attributeValue;
+    
 
                                     }
                                 
@@ -90,11 +92,13 @@ this.label= label
                         if(htmlMetaAttributeData!.equals(HtmlMetaAttributeDataFactory.getInstance()!.NAME))
                         
                                     {
-                                    this.name= attributeValue
+                                    this.name= attributeValue;
+    
 
                                     }
                                 
-this.content= contentValue
+this.content= contentValue;
+    
 }
 
 public constructor (document: Document){
@@ -115,20 +119,24 @@ public constructor (document: Document){
     var valid: Boolean = Boolean.TRUE;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return valid;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put("Failed to validate form", this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put("Failed to validate form", this, commonStrings!.IS_VALID, e);
+    
 
                                     }
                                 
@@ -150,20 +158,26 @@ public constructor (document: Document){
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e)
+                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e);
+    
 
                                     }
                                 
@@ -199,21 +213,27 @@ var document = document
 }
 
 
-    public toHashMap(): HashMap<Any, Any>{
+    public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
         
         
-
+;
+    
 
     var htmlMetaAttributeDataFactory: HtmlMetaAttributeDataFactory = HtmlMetaAttributeDataFactory.getInstance()!;
         
         
-
-hashMap!.put(HtmlMetaData.getInstance()!.LABEL.toString(), this.label)
-hashMap!.put(htmlMetaAttributeDataFactory!.NAME.toString(), this.name)
-hashMap!.put(htmlMetaAttributeDataFactory!.HTTP_EQUIV.toString(), this.httpEquiv)
-hashMap!.put(htmlMetaAttributeDataFactory!.CONTENT.toString(), this.content)
+;
+    
+hashMap!.put(HtmlMetaData.getInstance()!.LABEL.toString(), this.label);
+    
+hashMap!.put(htmlMetaAttributeDataFactory!.NAME.toString(), this.name);
+    
+hashMap!.put(htmlMetaAttributeDataFactory!.HTTP_EQUIV.toString(), this.httpEquiv);
+    
+hashMap!.put(htmlMetaAttributeDataFactory!.CONTENT.toString(), this.content);
+    
 
 
 
@@ -231,7 +251,8 @@ var document = document
     var node: Node = ModDomHelper.createNameValueNodes(document, HtmlMetaData.getInstance()!.NAME.toString(), this.toHashMap())!;
         
         
-
+;
+    
 
 
 

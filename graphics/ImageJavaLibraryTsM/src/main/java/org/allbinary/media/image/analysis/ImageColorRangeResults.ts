@@ -32,7 +32,8 @@ export class ImageColorRangeResults
 public constructor (){
 
             super();
-            this.setColorRangeInterface(ColorRange() as ColorRangeInterface)
+            this.setColorRangeInterface(ColorRange() as ColorRangeInterface);
+    
 }
 
 
@@ -48,7 +49,8 @@ public constructor (){
 
     public setColorRangeInterface(colorRangeInterface: ColorRangeInterface){
 var colorRangeInterface = colorRangeInterface
-this.colorRangeInterface= colorRangeInterface
+this.colorRangeInterface= colorRangeInterface;
+    
 }
 
 
@@ -64,12 +66,14 @@ this.colorRangeInterface= colorRangeInterface
 
     public setMatchingPixelsChecked(matchingPixelsChecked: number){
 var matchingPixelsChecked = matchingPixelsChecked
-this.matchingPixelsChecked= matchingPixelsChecked
+this.matchingPixelsChecked= matchingPixelsChecked;
+    
 }
 
 
     public addMatchingPixelsChecked(){
-this.matchingPixelsChecked++
+this.matchingPixelsChecked++;
+    
 }
 
 
@@ -84,13 +88,15 @@ this.matchingPixelsChecked++
 
 
     public addTotalPixelsChecked(){
-totalPixelsChecked++
+totalPixelsChecked++;
+    
 }
 
 
     public setTotalPixelsChecked(totalPixelsChecked: number){
 var totalPixelsChecked = totalPixelsChecked
-this.totalPixelsChecked= totalPixelsChecked
+this.totalPixelsChecked= totalPixelsChecked;
+    
 }
 
 
@@ -99,7 +105,9 @@ this.totalPixelsChecked= totalPixelsChecked
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return (this.getMatchingPixelsChecked().toFloat() /this.getTotalPixelsChecked());
+                        return (this.getMatchingPixelsChecked();
+
+                        .toFloat() /this.getTotalPixelsChecked());
     
 }
 

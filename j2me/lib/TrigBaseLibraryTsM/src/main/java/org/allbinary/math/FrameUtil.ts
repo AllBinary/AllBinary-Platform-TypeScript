@@ -62,12 +62,15 @@ private constructor (){
     var frameAngle: number = angleIncrement *frame -90;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.adjustAngleToFrameAngle(frameAngle);
+
+                        ;
     
 }
 
@@ -78,16 +81,19 @@ var currentAngle = currentAngle
     var angleFactory: AngleFactory = AngleFactory.getInstance()!;
         
         
-
+;
+    
 
                         if(currentAngle > 359)
                         
                                     {
-                                    currentAngle= (currentAngle -angleFactory!.TOTAL_ANGLE)
+                                    currentAngle= (currentAngle -angleFactory!.TOTAL_ANGLE);
+    
 
         while(currentAngle > 359)
         {
-currentAngle= (currentAngle -angleFactory!.TOTAL_ANGLE)
+currentAngle= (currentAngle -angleFactory!.TOTAL_ANGLE);
+    
 }
 
 
@@ -97,11 +103,13 @@ currentAngle= (currentAngle -angleFactory!.TOTAL_ANGLE)
                         if(currentAngle < 0)
                         
                                     {
-                                    currentAngle= (currentAngle +angleFactory!.TOTAL_ANGLE)
+                                    currentAngle= (currentAngle +angleFactory!.TOTAL_ANGLE);
+    
 
         while(currentAngle < 0)
         {
-currentAngle= (currentAngle +angleFactory!.TOTAL_ANGLE)
+currentAngle= (currentAngle +angleFactory!.TOTAL_ANGLE);
+    
 }
 
 

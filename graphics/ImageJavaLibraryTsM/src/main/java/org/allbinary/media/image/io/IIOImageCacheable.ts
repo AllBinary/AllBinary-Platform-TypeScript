@@ -44,7 +44,8 @@ public constructor (key: string){
 
             super();
             var key = key
-this.key= key
+this.key= key;
+    
 }
 
 
@@ -62,7 +63,8 @@ this.key= key
 var bufferedImage = bufferedImage
 this.setIioImage(IIOImage(bufferedImage, 
                             null, 
-                            null))
+                            null));
+    
 }
 
 
@@ -78,7 +80,8 @@ this.setIioImage(IIOImage(bufferedImage,
 
     setIioImage(iioImage: IIOImage){
 var iioImage = iioImage
-this.iioImage= iioImage
+this.iioImage= iioImage;
+    
 }
 
 
@@ -87,14 +90,19 @@ this.iioImage= iioImage
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(this::class.toString()!)
-stringBuffer!.append(" Reusable IIOImage")
+;
+    
+stringBuffer!.append(this.constructor.name.toString()!);
+    
+stringBuffer!.append(" Reusable IIOImage");
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

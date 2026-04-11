@@ -65,17 +65,24 @@ var p_c = p_c
     var b: ByteBuffer = ByteBuffer.allocateDirect(3 *BYTES_PER_FLOAT)!;
         
         
-
-b.order(ByteOrder.nativeOrder())
+;
+    
+b.order(ByteOrder.nativeOrder());
+    
 
     var buffer: FloatBuffer = b.asFloatBuffer()!;
         
         
-
-buffer.put(p_a)
-buffer.put(p_b)
-buffer.put(p_c)
-this.position(buffer, 0)
+;
+    
+buffer.put(p_a);
+    
+buffer.put(p_b);
+    
+buffer.put(p_c);
+    
+this.position(buffer, 0);
+    
 
 
 
@@ -94,18 +101,26 @@ var p_d = p_d
     var b: ByteBuffer = ByteBuffer.allocateDirect(4 *BYTES_PER_FLOAT)!;
         
         
-
-b.order(ByteOrder.nativeOrder())
+;
+    
+b.order(ByteOrder.nativeOrder());
+    
 
     var buffer: FloatBuffer = b.asFloatBuffer()!;
         
         
-
-buffer.put(p_a)
-buffer.put(p_b)
-buffer.put(p_c)
-buffer.put(p_d)
-this.position(buffer, 0)
+;
+    
+buffer.put(p_a);
+    
+buffer.put(p_b);
+    
+buffer.put(p_c);
+    
+buffer.put(p_d);
+    
+this.position(buffer, 0);
+    
 
 
 
@@ -121,28 +136,37 @@ this.position(buffer, 0)
     var b: ByteBuffer = ByteBuffer.allocateDirect(byteBuffer!.limit() *BYTES_PER_FLOAT)!;
         
         
-
-b.order(ByteOrder.nativeOrder())
+;
+    
+b.order(ByteOrder.nativeOrder());
+    
 
     var buffer: FloatBuffer = b.asFloatBuffer()!;
         
         
-
+;
+    
 
     var unsigned: number= 0
-
+;
+    
 
     var v: number= 0.0f
-
+;
+    
 
         while(byteBuffer!.hasRemaining())
         {
-unsigned= byteBuffer!.get() and 0xFF
-v= (unsigned.toFloat()) /255f
-buffer.put(v)
+unsigned= byteBuffer!.get() and 0xFF;
+    
+v= (unsigned.toFloat()) /255f;
+    
+buffer.put(v);
+    
 }
 
-this.position(buffer, 0)
+this.position(buffer, 0);
+    
 
 
 
@@ -160,11 +184,13 @@ this.position(buffer, 0)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return buffer.position(newPosition);
+
+                        ;
     
 }
 
 
-    public rotateUVs(uvs: FloatArray, angleDegrees: number, pivotU: number, pivotV: number){
+    public rotateUVs(uvs: number[], angleDegrees: number, pivotU: number, pivotV: number){
     //var uvs = uvs
     //var angleDegrees = angleDegrees
     //var pivotU = pivotU
@@ -173,17 +199,20 @@ this.position(buffer, 0)
     var angleRad: number = Math.toRadians(angleDegrees)!;
         
         
-
+;
+    
 
     var cosA: number = Math.cos(angleRad)!;
         
         
-
+;
+    
 
     var sinA: number = Math.sin(angleRad)!;
         
         
-
+;
+    
 
 
 
@@ -198,34 +227,42 @@ i < uvs.length; )
     var u: number = uvs[i]!;
         
         
-
+;
+    
 
     var v: number = uvs[i +1]!;
         
         
-
+;
+    
 
     var du: number = u -pivotU;
         
         
-
+;
+    
 
     var dv: number = v -pivotV;
         
         
-
+;
+    
 
     var ru: number = (du *cosA -dv *sinA).toFloat() +pivotU;
         
         
-
+;
+    
 
     var rv: number = (du *sinA +dv *cosA).toFloat() +pivotV;
         
         
-
-uvs[i]= ru
-uvs[i +1]= rv
+;
+    
+uvs[i]= ru;
+    
+uvs[i +1]= rv;
+    
 }
 
 }

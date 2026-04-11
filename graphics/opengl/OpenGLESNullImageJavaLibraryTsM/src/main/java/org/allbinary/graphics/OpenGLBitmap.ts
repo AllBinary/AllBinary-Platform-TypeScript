@@ -16,11 +16,12 @@ public constructor (bitmap: any = {}){
 
             super();
                 //var bitmap = bitmap
-this.bitmap= bitmap
+this.bitmap= bitmap;
+    
 }
 
 
-    public getPixels(pixels: IntArray, offset: number, stride: number, x: number, y: number, width: number, height: number){
+    public getPixels(pixels: number[], offset: number, stride: number, x: number, y: number, width: number, height: number){
 var pixels = pixels
 var offset = offset
 var stride = stride
@@ -31,7 +32,7 @@ var height = height
 }
 
 
-    public setPixels(pixels: IntArray, offset: number, stride: number, x: number, y: number, width: number, height: number){
+    public setPixels(pixels: number[], offset: number, stride: number, x: number, y: number, width: number, height: number){
 var pixels = pixels
 var offset = offset
 var stride = stride

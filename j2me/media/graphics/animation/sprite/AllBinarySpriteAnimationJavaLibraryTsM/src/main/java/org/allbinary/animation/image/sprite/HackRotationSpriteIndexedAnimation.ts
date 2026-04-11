@@ -59,8 +59,10 @@ public constructor (sprite: Sprite, image: Image, angleInfo: AngleInfo, animatio
 
                             //For kotlin this is before the body of the constructor.
                     
-this.sprite= sprite
-this.image= image
+this.sprite= sprite;
+    
+this.image= image;
+    
 }
 
 
@@ -72,6 +74,8 @@ this.image= image
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getSize();
+
+                        ;
     
 }
 
@@ -81,8 +85,10 @@ this.image= image
     //var frame = frame
     //var x = x
     //var y = y
-this.setFrame(frame)
-this.paint(g, x, y)
+this.setFrame(frame);
+    
+this.paint(g, x, y);
+    
 }
 
 
@@ -90,24 +96,29 @@ this.paint(g, x, y)
     //var g = g
     //var x = x
     //var y = y
-this.sprite.setPosition(x, y)
-this.paint(g)
+this.sprite.setPosition(x, y);
+    
+this.paint(g);
+    
 }
 
 
     paint(g: Graphics){
     //var g = g
-this.sprite.paint(g)
+this.sprite.paint(g);
+    
 }
 
 
     public nextRotation(){
-this.sprite.nextFrame()
+this.sprite.nextFrame();
+    
 }
 
 
     public previousRotation(){
-this.sprite.prevFrame()
+this.sprite.prevFrame();
+    
 }
 
 
@@ -117,13 +128,16 @@ this.sprite.prevFrame()
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.sprite.getRawFrameCount();
+
+                        ;
     
 }
 
 
     public setFrame(frame: number){
     //var frame = frame
-this.sprite.setFrame(frame)
+this.sprite.setFrame(frame);
+    
 }
 
 
@@ -133,21 +147,25 @@ this.sprite.setFrame(frame)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.sprite.getFrame();
+
+                        ;
     
 }
 
 
-    public setSequence(sequence: IntArray){
+    public setSequence(sequence: number[]){
     //var sequence = sequence
 }
 
 
-    public getSequence(): IntArray{
+    public getSequence(): number[]{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return PrimitiveIntUtil.getArrayInstance();
+
+                        ;
     
 }
 

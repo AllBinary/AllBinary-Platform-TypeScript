@@ -18,10 +18,13 @@
 
 
 
+            import Hashtable from "@ohos.util.HashMap";
+        
 import { Enumeration } from "../../../../../java/util/Enumeration.js";
 
     
-import { Hashtable } from "../../../../../java/util/Hashtable.js";
+
+//import { Hashtable } from "../../../../../java/util/Hashtable.js";
 
     
 import { ChoiceGroup } from "../../../../../javax/microedition/lcdui/ChoiceGroup.js";
@@ -82,40 +85,50 @@ var choiceGroup = choiceGroup
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
     var METHOD_NAME: string = "setDefault";
         
         
-
+;
+    
 
     var SELECTED_ARRAY_RETURN: string = "selectedArray_return[";
         
         
-
+;
+    
 
     var SELECTED_SEP: string = "] = ";
         
         
+;
+    
 
-
-    var selectedArray_return: BooleanArray = BooleanArray(choiceGroup!.size());
+    var selectedArray_return: boolean[] = new Array(choiceGroup!.size());
         
         
-
+;
+    
 
     var total: number = choiceGroup!.getSelectedFlags(selectedArray_return)!;
         
         
-
-stringBuffer!.append("Multiple Total Choices: ")
-stringBuffer!.appendint(total)
-logUtil!.put(stringBuffer!.toString(), this, METHOD_NAME)
+;
+    
+stringBuffer!.append("Multiple Total Choices: ");
+    
+stringBuffer!.appendint(total);
+    
+logUtil!.put(stringBuffer!.toString(), this, METHOD_NAME);
+    
 
     var features: Features = Features.getInstance()!;
         
         
-
+;
+    
 
 
 
@@ -130,35 +143,48 @@ index < selectedArray_return!.length; index++)
     var isSelected: boolean = selectedArray_return[index]!;
         
         
-
-stringBuffer!.delete(0, stringBuffer!.length())
-stringBuffer!.append(SELECTED_ARRAY_RETURN)
-stringBuffer!.appendint(index)
-stringBuffer!.append(SELECTED_SEP)
-stringBuffer!.appendboolean(isSelected)
-logUtil!.put(stringBuffer!.toString(), this, METHOD_NAME)
+;
+    
+stringBuffer!.delete(0, stringBuffer!.length());
+    
+stringBuffer!.append(SELECTED_ARRAY_RETURN);
+    
+stringBuffer!.appendint(index);
+    
+stringBuffer!.append(SELECTED_SEP);
+    
+stringBuffer!.appendboolean(isSelected);
+    
+logUtil!.put(stringBuffer!.toString(), this, METHOD_NAME);
+    
 
     var selectedChoiceLabel: string = choiceGroup!.getString(index)!;
         
         
-
+;
+    
 
     var gameFeature: Feature = Feature.getInstance(selectedChoiceLabel)!;
         
         
-
+;
+    
 
                         if(features.isDefault(gameFeature))
                         
                                     {
-                                    features.add(gameFeature)
-choiceGroup!.setSelectedIndex(index, true)
+                                    features.add(gameFeature);
+    
+choiceGroup!.setSelectedIndex(index, true);
+    
 
                                     }
                                 
                         else {
-                            features.remove(gameFeature)
-choiceGroup!.setSelectedIndex(index, false)
+                            features.remove(gameFeature);
+    
+choiceGroup!.setSelectedIndex(index, false);
+    
 
                         }
                             
@@ -175,40 +201,50 @@ var choiceGroup = choiceGroup
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
     var METHOD_NAME: string = "updateMultiple";
         
         
-
+;
+    
 
     var SELECTED_ARRAY_RETURN: string = "selectedArray_return[";
         
         
-
+;
+    
 
     var SELECTED_SEP: string = "] = ";
         
         
+;
+    
 
-
-    var selectedArray_return: BooleanArray = BooleanArray(choiceGroup!.size());
+    var selectedArray_return: boolean[] = new Array(choiceGroup!.size());
         
         
-
+;
+    
 
     var total: number = choiceGroup!.getSelectedFlags(selectedArray_return)!;
         
         
-
-stringBuffer!.append("Multiple Total Choices: ")
-stringBuffer!.appendint(total)
-logUtil!.put(stringBuffer!.toString(), this, METHOD_NAME)
+;
+    
+stringBuffer!.append("Multiple Total Choices: ");
+    
+stringBuffer!.appendint(total);
+    
+logUtil!.put(stringBuffer!.toString(), this, METHOD_NAME);
+    
 
     var features: Features = Features.getInstance()!;
         
         
-
+;
+    
 
 
 
@@ -223,36 +259,49 @@ index < selectedArray_return!.length; index++)
     var isSelected: boolean = selectedArray_return[index]!;
         
         
-
-stringBuffer!.delete(0, stringBuffer!.length())
-stringBuffer!.append(SELECTED_ARRAY_RETURN)
-stringBuffer!.appendint(index)
-stringBuffer!.append(SELECTED_SEP)
-stringBuffer!.appendboolean(isSelected)
-logUtil!.put(stringBuffer!.toString(), this, METHOD_NAME)
+;
+    
+stringBuffer!.delete(0, stringBuffer!.length());
+    
+stringBuffer!.append(SELECTED_ARRAY_RETURN);
+    
+stringBuffer!.appendint(index);
+    
+stringBuffer!.append(SELECTED_SEP);
+    
+stringBuffer!.appendboolean(isSelected);
+    
+logUtil!.put(stringBuffer!.toString(), this, METHOD_NAME);
+    
 
     var selectedChoiceLabel: string = choiceGroup!.getString(index)!;
         
         
-
+;
+    
 
     var gameFeature: Feature = Feature.getInstance(selectedChoiceLabel)!;
         
         
-
+;
+    
 
                         if(!isSelected && features.isFeature(gameFeature))
                         
                                     {
-                                    features.remove(gameFeature)
+                                    features.remove(gameFeature);
+    
 
                                     }
                                 
                              else 
-                        if(isSelected && !features.isFeature(gameFeature))
+                        if(isSelected && !features.isFeature(gameFeature);
+
+                        )
                         
                                     {
-                                    features.add(gameFeature)
+                                    features.add(gameFeature);
+    
 
                                     }
                                 
@@ -269,35 +318,44 @@ var choiceGroup = choiceGroup
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
     var METHOD_NAME: string = "updateExclusive";
         
         
-
+;
+    
 
     var SELECTED_ARRAY_RETURN: string = "selectedArray_return[";
         
         
-
+;
+    
 
     var SELECTED_SEP: string = "] = ";
         
         
+;
+    
 
-
-    var selectedArray_return: BooleanArray = BooleanArray(choiceGroup!.size());
+    var selectedArray_return: boolean[] = new Array(choiceGroup!.size());
         
         
-
+;
+    
 
     var total: number = choiceGroup!.getSelectedFlags(selectedArray_return)!;
         
         
-
-stringBuffer!.append("Exclusive Total Choices: 1==")
-stringBuffer!.appendint(total)
-logUtil!.put(stringBuffer!.toString(), this, METHOD_NAME)
+;
+    
+stringBuffer!.append("Exclusive Total Choices: 1==");
+    
+stringBuffer!.appendint(total);
+    
+logUtil!.put(stringBuffer!.toString(), this, METHOD_NAME);
+    
 
 
 
@@ -312,13 +370,20 @@ index < selectedArray_return!.length; index++)
     var isSelected: boolean = selectedArray_return[index]!;
         
         
-
-stringBuffer!.delete(0, stringBuffer!.length())
-stringBuffer!.append(SELECTED_ARRAY_RETURN)
-stringBuffer!.appendint(index)
-stringBuffer!.append(SELECTED_SEP)
-stringBuffer!.appendboolean(isSelected)
-logUtil!.put(stringBuffer!.toString(), this, METHOD_NAME)
+;
+    
+stringBuffer!.delete(0, stringBuffer!.length());
+    
+stringBuffer!.append(SELECTED_ARRAY_RETURN);
+    
+stringBuffer!.appendint(index);
+    
+stringBuffer!.append(SELECTED_SEP);
+    
+stringBuffer!.appendboolean(isSelected);
+    
+logUtil!.put(stringBuffer!.toString(), this, METHOD_NAME);
+    
 
                         if(isSelected)
                         
@@ -327,8 +392,10 @@ logUtil!.put(stringBuffer!.toString(), this, METHOD_NAME)
     var selectedChoiceLabel: string = choiceGroup!.getString(index)!;
         
         
-
-updateExclusive(selectedChoiceLabel)
+;
+    
+updateExclusive(selectedChoiceLabel);
+    
 
                                     }
                                 
@@ -340,18 +407,22 @@ updateExclusive(selectedChoiceLabel)
     public isExclusive(itemLabel: string): boolean{
 var itemLabel = itemLabel
 
-    var enumeration: Enumeration<Any?> = GameFeatureChoiceGroups.getExclusiveInstance()!.get()!.keys()!;
+    var enumeration: Enumeration<any?> = GameFeatureChoiceGroups.getExclusiveInstance()!.get()!.keys()!;
         
         
-
+;
+    
 
         while(enumeration.hasMoreElements())
         {
 
-    var name: string = enumeration.nextElement()! as String;
-        
-        
+    var name: string = enumeration.nextElement()!;
 
+                         as String;
+        
+        
+;
+    
 
                         if(itemLabel!.compareTo(name) == 0)
                         
@@ -381,34 +452,41 @@ var itemLabel = itemLabel
     updateExclusive(selectedChoiceLabel: string){
     //var selectedChoiceLabel = selectedChoiceLabel
 logUtil!.put(StringMaker().
-                            append(CommonLabels.getInstance()!.ITEM_LABEL)!.append(selectedChoiceLabel)!.toString(), this, "updateExclusive")
+                            append(CommonLabels.getInstance()!.ITEM_LABEL)!.append(selectedChoiceLabel)!.toString(), this, "updateExclusive");
+    
 
     var gameFeature: Feature = Feature.getInstance(selectedChoiceLabel)!;
         
         
+;
+    
 
-
-    var hashtable: Hashtable<Any, Any> = GameFeatureChoiceGroups.getExclusiveInstance()!.get()!;
+    var hashtable: Hashtable<any, any> = GameFeatureChoiceGroups.getExclusiveInstance()!.get()!;
         
         
+;
+    
 
-
-    var objectArray: any = {}[] = HashtableUtil.getInstance()!.getKeysAsArray(hashtable)!;
+    var objectArray: any[] = HashtableUtil.getInstance()!.getKeysAsArray(hashtable)!;
         
         
-
+;
+    
 
     var basicArrayList: BasicArrayList
-
+;
+    
 
     var anyType: any = {}
-
+;
+    
 
     var size: number = objectArray!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -419,9 +497,14 @@ logUtil!.put(StringMaker().
         
 index < size; index++)
         {
-anyType= objectArray[index]! as Object
-basicArrayList= hashtable.get(anyType as Object) as BasicArrayList
-updateExclusive(gameFeature, basicArrayList)
+anyType= objectArray[index]! as Object;
+    
+basicArrayList= hashtable.get(anyType as Object);
+
+                         as BasicArrayList;
+    
+updateExclusive(gameFeature, basicArrayList);
+    
 }
 
 }
@@ -440,17 +523,20 @@ var list = list
     var features: Features = Features.getInstance()!;
         
         
-
+;
+    
 
     var addIndex: number = list.indexOf(gameFeature)!;
         
         
-
+;
+    
 
     var size: number = list.size()!;
         
         
-
+;
+    
 
 
 
@@ -465,12 +551,14 @@ index < size; index++)
                         if(addIndex != index)
                         
                                     {
-                                    features.remove(list.objectArray[index]! as Feature)
+                                    features.remove(list.objectArray[index]! as Feature);
+    
 
                                     }
                                 
                         else {
-                            features.add(list.objectArray[index]! as Feature)
+                            features.add(list.objectArray[index]! as Feature);
+    
 
                         }
                             

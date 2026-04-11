@@ -41,26 +41,31 @@ public constructor (){
 
 
     public update(){
-this.initUpdatePaintable!.update()
+this.initUpdatePaintable!.update();
+    
 }
 
 
     public paint(graphics: Graphics){
 var graphics = graphics
-this.initUpdatePaintable!.paint(graphics)
+this.initUpdatePaintable!.paint(graphics);
+    
 }
 
 
     public updateRTSLayerInfo(hudPaintable: InitUpdatePaintable){
 var hudPaintable = hudPaintable
-this.initUpdatePaintable= hudPaintable
+this.initUpdatePaintable= hudPaintable;
+    
 }
 
 
     public updateRTSLayerInfo(hudPaintable: SelectionHudPaintable){
 var hudPaintable = hudPaintable
-hudPaintable!.updateSelectionInfo()
-this.initUpdatePaintable= hudPaintable
+hudPaintable!.updateSelectionInfo();
+    
+this.initUpdatePaintable= hudPaintable;
+    
 }
 
 

@@ -56,7 +56,7 @@ export class TransformInfoHttpStore extends TransformInfoHttp
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
         
         
-public constructor (propertiesHashMap: HashMap<Any, Any>, pageContext: PageContext)                        
+public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext)                        
 
                             : super(propertiesHashMap, pageContext, true){
 
@@ -71,13 +71,14 @@ var pageContext = pageContext
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Properties HashMap: " +propertiesHashMap!.toString(), this, this.commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put("Properties HashMap: " +propertiesHashMap!.toString(), this, this.commonStrings!.CONSTRUCTOR);
+    
 
                                     }
                                 
 }
 
-public constructor (databaseHashMap: HashMap<Any, Any>, propertiesHashMap: HashMap<Any, Any>, pageContext: PageContext)                        
+public constructor (databaseHashMap: HashMap<any, any>, propertiesHashMap: HashMap<any, any>, pageContext: PageContext)                        
 
                             : super(databaseHashMap, propertiesHashMap, pageContext){
 
@@ -97,19 +98,28 @@ var pageContext = pageContext
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("Database HashMap: ")
-stringBuffer!.append(databaseHashMap!.toString())
-stringBuffer!.append("\nProperties HashMap: ")
-stringBuffer!.append(propertiesHashMap!.toString())
-logUtil!.put(stringBuffer!.toString(), this, "Constructor(HashMap, HashMap , PageContext)")
+;
+    
+stringBuffer!.append("Database HashMap: ");
+    
+stringBuffer!.append(databaseHashMap!.toString());
+    
+stringBuffer!.append("\nProperties HashMap: ");
+    
+stringBuffer!.append(propertiesHashMap!.toString());
+    
+logUtil!.put(stringBuffer!.toString(), this, "Constructor(HashMap, HashMap , PageContext)");
+    
 
                                     }
                                 
-this.setStoreName(databaseHashMap!.get(StoreFrontData.getInstance()!.NAME) as String)
+this.setStoreName(databaseHashMap!.get(StoreFrontData.getInstance()!.NAME);
+
+                         as String);
+    
 }
 
-public constructor (storeFrontInterface: StoreFrontInterface, propertiesHashMap: HashMap<Any, Any>, pageContext: PageContext)                        
+public constructor (storeFrontInterface: StoreFrontInterface, propertiesHashMap: HashMap<any, any>, pageContext: PageContext)                        
 
                             : super(propertiesHashMap, pageContext){
 
@@ -125,11 +135,13 @@ var pageContext = pageContext
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Properties HashMap: " +propertiesHashMap!.toString(), this, this.commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put("Properties HashMap: " +propertiesHashMap!.toString(), this, this.commonStrings!.CONSTRUCTOR);
+    
 
                                     }
                                 
-this.setStoreName(storeFrontInterface!.getName())
+this.setStoreName(storeFrontInterface!.getName());
+    
 }
 
 
@@ -140,16 +152,23 @@ this.setStoreName(storeFrontInterface!.getName())
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(URLGLOBALS.getMainPath())
-stringBuffer!.append(FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH)
-stringBuffer!.append(this.getStoreName())
-stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR)
+;
+    
+stringBuffer!.append(URLGLOBALS.getMainPath());
+    
+stringBuffer!.append(FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH);
+    
+stringBuffer!.append(this.getStoreName());
+    
+stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

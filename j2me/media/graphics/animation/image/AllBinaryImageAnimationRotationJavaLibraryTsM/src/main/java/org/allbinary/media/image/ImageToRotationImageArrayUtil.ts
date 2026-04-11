@@ -56,18 +56,22 @@ var totalAngle = totalAngle
     var imageRotationUtil: ImageRotationUtil = ImageRotationUtil.getInstance()!;
         
         
-
+;
+    
 
     var totalFrames: number = totalAngle /angleIncrement;
         
         
-
+;
+    
 
     var imageArray: Image[] = new Array(totalFrames);
         
         
-
-imageArray[0]= image
+;
+    
+imageArray[0]= image;
+    
 
 
 
@@ -78,7 +82,8 @@ imageArray[0]= image
         
 index < totalFrames; index++)
         {
-imageArray[index]= imageRotationUtil!.createRotatedImage(image, index *angleIncrement)
+imageArray[index]= imageRotationUtil!.createRotatedImage(image, index *angleIncrement);
+    
 }
 
 

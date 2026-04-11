@@ -82,9 +82,12 @@ export class Features
 private constructor (){
 
             super();
-            list= BasicArrayList()
-defaultList= BasicArrayList()
-this.init()
+            list= BasicArrayList();
+    
+defaultList= BasicArrayList();
+    
+this.init();
+    
 }
 
 
@@ -92,12 +95,16 @@ this.init()
             
     public addDefault(gameFeature: Feature){
     //var gameFeature = gameFeature
-this.add(gameFeature)
+this.add(gameFeature);
+    
 
-                        if(!defaultList!.contains(gameFeature))
+                        if(!defaultList!.contains(gameFeature);
+
+                        )
                         
                                     {
-                                    defaultList!.add(gameFeature)
+                                    defaultList!.add(gameFeature);
+    
 
                                     }
                                 
@@ -109,13 +116,18 @@ this.add(gameFeature)
     public add(gameFeature: Feature){
     //var gameFeature = gameFeature
 
-                        if(!list.contains(gameFeature))
+                        if(!list.contains(gameFeature);
+
+                        )
                         
                                     {
                                     logUtil!.put(StringMaker().
-                            append(CommonLabels.getInstance()!.START_LABEL)!.append(gameFeature!.toString())!.toString(), this, commonStrings!.ADD)
-list.add(gameFeature)
-GameFeatureEventHandler.getInstance()!.fireEvent(GameFeatureEvent(gameFeature, gameFeature!.toString()))
+                            append(CommonLabels.getInstance()!.START_LABEL)!.append(gameFeature!.toString())!.toString(), this, commonStrings!.ADD);
+    
+list.add(gameFeature);
+    
+GameFeatureEventHandler.getInstance()!.fireEvent(GameFeatureEvent(gameFeature, gameFeature!.toString()));
+    
 
                                     }
                                 
@@ -127,9 +139,12 @@ GameFeatureEventHandler.getInstance()!.fireEvent(GameFeatureEvent(gameFeature, g
     public removeDefault(gameFeature: Feature){
     //var gameFeature = gameFeature
 logUtil!.put(StringMaker().
-                            append(CommonLabels.getInstance()!.START_LABEL)!.append(gameFeature!.toString())!.toString(), this, "removeDefault")
-this.remove(gameFeature)
-defaultList!.remove(gameFeature)
+                            append(CommonLabels.getInstance()!.START_LABEL)!.append(gameFeature!.toString())!.toString(), this, "removeDefault");
+    
+this.remove(gameFeature);
+    
+defaultList!.remove(gameFeature);
+    
 }
 
 
@@ -141,9 +156,12 @@ defaultList!.remove(gameFeature)
                         if(list.contains(gameFeature))
                         
                                     {
-                                    logUtil!.put(commonStrings!.START, this, commonStrings!.REMOVE)
-list.remove(gameFeature)
-GameFeatureEventHandler.getInstance()!.fireEvent(GameFeatureEvent(gameFeature, gameFeature!.toString()))
+                                    logUtil!.put(commonStrings!.START, this, commonStrings!.REMOVE);
+    
+list.remove(gameFeature);
+    
+GameFeatureEventHandler.getInstance()!.fireEvent(GameFeatureEvent(gameFeature, gameFeature!.toString()));
+    
 
                                     }
                                 
@@ -157,56 +175,79 @@ GameFeatureEventHandler.getInstance()!.fireEvent(GameFeatureEvent(gameFeature, g
     var gameFeatureFactory: GameFeatureFactory = GameFeatureFactory.getInstance()!;
         
         
-
+;
+    
 
     var inputFeatureFactory: InputFeatureFactory = InputFeatureFactory.getInstance()!;
         
         
-
+;
+    
 
     var sensorFeatureFactory: SensorFeatureFactory = SensorFeatureFactory.getInstance()!;
         
         
-
+;
+    
 
     var touchFeatureFactory: TouchFeatureFactory = TouchFeatureFactory.getInstance()!;
         
         
-
-this.addDefault(gameFeatureFactory!.ARTIFICIAL_INTELLEGENCE_PROCESSOR)
-this.addDefault(gameFeatureFactory!.COLLIDABLE_INTERFACE_LAYER_PROCESSOR)
-this.addDefault(gameFeatureFactory!.GAME_INPUT_LAYER_PROCESSOR)
-this.addDefault(gameFeatureFactory!.TICKABLE_LAYER_PROCESSOR)
-this.addDefault(inputFeatureFactory!.MULTI_KEY_PRESS)
-this.addDefault(inputFeatureFactory!.REMOVE_DUPLICATE_KEY_PRESSES)
-this.addDefault(gameFeatureFactory!.SCREEN_SHAKE)
-this.addDefault(gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION)
+;
+    
+this.addDefault(gameFeatureFactory!.ARTIFICIAL_INTELLEGENCE_PROCESSOR);
+    
+this.addDefault(gameFeatureFactory!.COLLIDABLE_INTERFACE_LAYER_PROCESSOR);
+    
+this.addDefault(gameFeatureFactory!.GAME_INPUT_LAYER_PROCESSOR);
+    
+this.addDefault(gameFeatureFactory!.TICKABLE_LAYER_PROCESSOR);
+    
+this.addDefault(inputFeatureFactory!.MULTI_KEY_PRESS);
+    
+this.addDefault(inputFeatureFactory!.REMOVE_DUPLICATE_KEY_PRESSES);
+    
+this.addDefault(gameFeatureFactory!.SCREEN_SHAKE);
+    
+this.addDefault(gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION);
+    
 
     var operatingSystemInterface: GenericOperatingSystem = OperatingSystemFactory.getInstance()!.getOperatingSystemInstance()!;
         
         
-
+;
+    
 
                         if(operatingSystemInterface!.isOverScan())
                         
                                     {
-                                    this.addDefault(sensorFeatureFactory!.NO_ORIENTATION)
-this.addDefault(touchFeatureFactory!.HIDE_SCREEN_BUTTONS)
+                                    this.addDefault(sensorFeatureFactory!.NO_ORIENTATION);
+    
+this.addDefault(touchFeatureFactory!.HIDE_SCREEN_BUTTONS);
+    
 
                                     }
                                 
                         else {
-                            this.addDefault(sensorFeatureFactory!.ORIENTATION_SENSORS)
-this.addDefault(touchFeatureFactory!.AUTO_HIDE_SHOW_SCREEN_BUTTONS)
+                            this.addDefault(sensorFeatureFactory!.ORIENTATION_SENSORS);
+    
+this.addDefault(touchFeatureFactory!.AUTO_HIDE_SHOW_SCREEN_BUTTONS);
+    
 
                         }
                             
-this.addDefault(touchFeatureFactory!.TOUCH_ENABLED)
-this.addDefault(MainFeatureFactory.getInstance()!.FULL_SCREEN)
-this.addDefault(MainFeatureFactory.getInstance()!.LOAD_ONDEMAND)
-} catch(e: Exception)
+this.addDefault(touchFeatureFactory!.TOUCH_ENABLED);
+    
+this.addDefault(MainFeatureFactory.getInstance()!.FULL_SCREEN);
+    
+this.addDefault(MainFeatureFactory.getInstance()!.LOAD_ONDEMAND);
+    
+
+                //: 
+} catch(e) 
             {
-PreLogUtil.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e)
+PreLogUtil.putOE(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e);
+    
 }
 
 }
@@ -219,6 +260,8 @@ var gameFeature = gameFeature
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return defaultList!.contains(gameFeature);
+
+                        ;
     
 }
 
@@ -230,6 +273,8 @@ var gameFeature = gameFeature
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.list.contains(gameFeature);
+
+                        ;
     
 }
 
@@ -242,12 +287,14 @@ var gameFeature = gameFeature
                         if(this.isFeature(gameFeature))
                         
                                     {
-                                    this.remove(gameFeature)
+                                    this.remove(gameFeature);
+    
 
                                     }
                                 
                         else {
-                            this.add(gameFeature)
+                            this.add(gameFeature);
+    
 
                         }
                             

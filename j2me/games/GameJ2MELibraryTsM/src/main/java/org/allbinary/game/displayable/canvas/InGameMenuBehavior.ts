@@ -44,13 +44,15 @@ export class InGameMenuBehavior extends BaseMenuBehavior {
     public onDisplayChangeEvent(allBinaryGameCanvas: AllBinaryGameCanvas, displayChangeEvent: DisplayChangeEvent){
     //var allBinaryGameCanvas = allBinaryGameCanvas
     //var displayChangeEvent = displayChangeEvent
-allBinaryGameCanvas!.updateMenu(displayChangeEvent)
+allBinaryGameCanvas!.updateMenu(displayChangeEvent);
+    
 }
 
 
     public initSpecialPaint(allBinaryGameCanvas: AllBinaryGameCanvas){
     //var allBinaryGameCanvas = allBinaryGameCanvas
-allBinaryGameCanvas!.setNonBotPaintableP(GameCanvasNonBotPaintable(allBinaryGameCanvas))
+allBinaryGameCanvas!.setNonBotPaintableP(GameCanvasNonBotPaintable(allBinaryGameCanvas));
+    
 }
 
 
@@ -58,7 +60,8 @@ allBinaryGameCanvas!.setNonBotPaintableP(GameCanvasNonBotPaintable(allBinaryGame
             
     public initMenu(allBinaryGameCanvas: AllBinaryGameCanvas){
     //var allBinaryGameCanvas = allBinaryGameCanvas
-allBinaryGameCanvas!.initMenu2()
+allBinaryGameCanvas!.initMenu2();
+    
 }
 
 
@@ -66,7 +69,8 @@ allBinaryGameCanvas!.initMenu2()
             
     public updateMenu(allBinaryGameCanvas: AllBinaryGameCanvas){
     //var allBinaryGameCanvas = allBinaryGameCanvas
-allBinaryGameCanvas!.initMenu2()
+allBinaryGameCanvas!.initMenu2();
+    
 }
 
 
@@ -74,13 +78,15 @@ allBinaryGameCanvas!.initMenu2()
             
     public popupMenu(allBinaryGameCanvas: AllBinaryGameCanvas){
     //var allBinaryGameCanvas = allBinaryGameCanvas
-allBinaryGameCanvas!.popupMenu2()
+allBinaryGameCanvas!.popupMenu2();
+    
 }
 
 
     public closeMenu(allBinaryGameCanvas: AllBinaryGameCanvas){
     //var allBinaryGameCanvas = allBinaryGameCanvas
-allBinaryGameCanvas!.closeMenu2()
+allBinaryGameCanvas!.closeMenu2();
+    
 }
 
 

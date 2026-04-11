@@ -36,7 +36,8 @@ export class SensorGameUpdateProcessor
 
     setInputSensor(inputSensor: AllBinarySensor){
 var inputSensor = inputSensor
-this.inputSensor= inputSensor
+this.inputSensor= inputSensor;
+    
 }
 
 
@@ -92,7 +93,8 @@ var anyType = anyType
 
 
     setNoSensors(){
-this.setInputSensor(NoAllBinarySensor.getInstance())
+this.setInputSensor(NoAllBinarySensor.getInstance());
+    
 }
 
 

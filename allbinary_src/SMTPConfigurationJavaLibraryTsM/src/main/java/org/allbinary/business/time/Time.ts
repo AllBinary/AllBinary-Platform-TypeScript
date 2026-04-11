@@ -29,14 +29,16 @@ public constructor (time: string){
 
             super();
             var time = time
-this.timeLong= time as Long
+this.timeLong= time as Long;
+    
 }
 
 public constructor (time: number){
 
             super();
             var time = time
-this.timeLong= time as Long
+this.timeLong= time as Long;
+    
 }
 
 
@@ -56,6 +58,8 @@ this.timeLong= time as Long
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.timeLong!.longValue();
+
+                        ;
     
 }
 
@@ -66,6 +70,8 @@ this.timeLong= time as Long
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getLong()!.toString();
+
+                        ;
     
 }
 

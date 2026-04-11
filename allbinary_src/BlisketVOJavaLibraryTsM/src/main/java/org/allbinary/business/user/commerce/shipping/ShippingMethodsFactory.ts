@@ -18,7 +18,10 @@
 
 
 
-import { Vector } from "../../../../../../java/util/Vector.js";
+            import Vector from "@ohos.util.Vector";
+        
+
+//import { Vector } from "../../../../../../java/util/Vector.js";
 
     
 import { DynamicObjectData } from "../../../../../../org/allbinary/business/DynamicObjectData.js";
@@ -94,18 +97,26 @@ export class ShippingMethodsFactory
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
     var sep: string = AbPathData.getInstance()!.SEPARATOR;
         
         
-
-stringBuffer!.append(sep)
-stringBuffer!.append("generic")
-stringBuffer!.append(sep)
-stringBuffer!.append("shipping")
-stringBuffer!.append(sep)
-SHIPPINGMETHODSFILEPATHSTRING= stringBuffer!.toString()
+;
+    
+stringBuffer!.append(sep);
+    
+stringBuffer!.append("generic");
+    
+stringBuffer!.append(sep);
+    
+stringBuffer!.append("shipping");
+    
+stringBuffer!.append(sep);
+    
+SHIPPINGMETHODSFILEPATHSTRING= stringBuffer!.toString();
+    
 }
 
     private static readonly SHIPPINGMETHODSFILENAME: string = "shippingMethods.xml";
@@ -126,35 +137,47 @@ public constructor (abeClientInformation: AbeClientInformationInterface, storeFr
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
     var sep: string = AbPathData.getInstance()!.SEPARATOR;
         
         
-
-stringBuffer!.append(URLGLOBALS.getMainPath())
-stringBuffer!.append(FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH)
-stringBuffer!.append(storeFrontInterface!.getName())
-stringBuffer!.append(sep)
-stringBuffer!.append(this.SHIPPINGMETHODSFILEPATHSTRING)
+;
+    
+stringBuffer!.append(URLGLOBALS.getMainPath());
+    
+stringBuffer!.append(FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH);
+    
+stringBuffer!.append(storeFrontInterface!.getName());
+    
+stringBuffer!.append(sep);
+    
+stringBuffer!.append(this.SHIPPINGMETHODSFILEPATHSTRING);
+    
 
     var abPath: AbPath = AbPath(stringBuffer!.toString(), this.SHIPPINGMETHODSFILENAME) as AbPath;
         
         
-
+;
+    
 
     var data: string = CryptFileReader(TransformInfoObjectConfigData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoObjectConfigData.getInstance()!.ENCRYPTED_EXTENSION).
                             get(abPath)!;
         
         
-
-this.document= DomDocumentHelper.create(data)
-this.shippingVector= Vector()
+;
+    
+this.document= DomDocumentHelper.create(data);
+    
+this.shippingVector= Vector();
+    
 
     var nodeList: NodeList = document.getElementsByTagName(ShippingMethodsData.NAME)!;
         
         
-
+;
+    
 
 
 
@@ -169,43 +192,54 @@ index < nodeList!.getLength(); index++)
     var node: Node = nodeList!.item(index)!;
         
         
-
+;
+    
 
     var shippingMethodNodeChildren: NodeList = node.getChildNodes()!;
         
         
-
+;
+    
 
     var shippingMethodNameNode: Node = DomSearchHelper.getNode(ShippingMethodData.NAME, shippingMethodNodeChildren)!;
         
         
-
+;
+    
 
     var classNameNode: Node = DomSearchHelper.getNode(DynamicObjectData.NAME, shippingMethodNameNode!.getChildNodes())!;
         
         
-
+;
+    
 
     var shippingMethodClassName: string = DomNodeHelper.getTextNodeValue(classNameNode)!;
         
         
+;
+    
 
+    var shippingMethodInterface: ShippingInterface = AbeFactory.getInstance()!.getInstance(abeClientInformation, shippingMethodClassName);
 
-    var shippingMethodInterface: ShippingInterface = AbeFactory.getInstance()!.getInstance(abeClientInformation, shippingMethodClassName) as ShippingInterface;
+                         as ShippingInterface;
         
         
-
-shippingVector!.add(shippingMethodInterface)
+;
+    
+shippingVector!.add(shippingMethodInterface);
+    
 
     var defaultShippingMethodNameNode: Node = DomSearchHelper.getNode(ShippingMethodData.DEFAULT, shippingMethodNameNode!.getChildNodes())!;
         
         
-
+;
+    
 
     var defaultShippingMethodNameNodeValue: string = DomNodeHelper.getTextNodeValue(defaultShippingMethodNameNode)!;
         
         
-
+;
+    
 
                         if(defaultShippingMethodNameNodeValue != 
                                     null
@@ -217,9 +251,12 @@ shippingVector!.add(shippingMethodInterface)
                         if(shippingVector!.length < 1)
                         
                                     {
-                                    this.defaultShippingMethodInterface= BasicWeightShippingModuleView()
-shippingVector!.add(this.defaultShippingMethodInterface)
-shippingVector!.add(NoShippingModuleView())
+                                    this.defaultShippingMethodInterface= BasicWeightShippingModuleView();
+    
+shippingVector!.add(this.defaultShippingMethodInterface);
+    
+shippingVector!.add(NoShippingModuleView());
+    
 
                                     }
                                 

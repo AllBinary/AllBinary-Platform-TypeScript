@@ -98,9 +98,11 @@ var viewDocumentInterface = viewDocumentInterface
     var document: Document = DomDocumentHelper.create()!;
         
         
-
+;
+    
 document.appendChild(CategoryView(this.getCategoryInterface()).
-                            toXmlNode(document))
+                            toXmlNode(document));
+    
 
 
 

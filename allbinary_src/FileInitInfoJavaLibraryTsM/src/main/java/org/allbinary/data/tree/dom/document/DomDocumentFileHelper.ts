@@ -65,8 +65,12 @@ var xmlFile = xmlFile
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return DomDocumentHelper.create(AbFileInputStream(xmlFile));
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
 
@@ -88,42 +92,54 @@ var document = document
             ;
         
         
-
+;
+    
 
         try {
             
     var copyTransformerFactory: TransformerFactory = TransformerFactory.newInstance()!;
         
         
-
+;
+    
 
     var copyTransformer: Transformer = copyTransformerFactory!.newTransformer()!;
         
         
-
+;
+    
 
     var domSource: DOMSource = new DOMSource(document);
         
         
-
+;
+    
 
                         if(file.isFile())
                         
                                     {
-                                    file.delete()
+                                    file.delete();
+    
 
                                     }
                                 
-file.createNewFile()
-dataOutputStream= DataOutputStreamFactory.getInstance()!.getInstance(file)
+file.createNewFile();
+    
+dataOutputStream= DataOutputStreamFactory.getInstance()!.getInstance(file);
+    
 
     var streamResult: StreamResult = new StreamResult(dataOutputStream);
         
         
+;
+    
+copyTransformer!.transform(domSource, streamResult);
+    
+dataOutputStream!.flush();
+    
 
-copyTransformer!.transform(domSource, streamResult)
-dataOutputStream!.flush()
-} catch(e: Exception)
+                //: 
+} catch(e) 
             {
 
 
@@ -132,7 +148,8 @@ dataOutputStream!.flush()
 }
 
          finally {
-            StreamUtil.getInstance()!.close(dataOutputStream)
+            StreamUtil.getInstance()!.close(dataOutputStream);
+    
 
          }
         

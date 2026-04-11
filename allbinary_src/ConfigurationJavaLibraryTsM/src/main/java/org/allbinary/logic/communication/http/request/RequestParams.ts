@@ -69,29 +69,35 @@ export class RequestParams
 public constructor (){
 
             super();
-            logUtil!.put("New RequestParams Size: 0", this, this.commonStrings!.CONSTRUCTOR)
+            logUtil!.put("New RequestParams Size: 0", this, this.commonStrings!.CONSTRUCTOR);
+    
 }
 
 public constructor (request: HttpServletRequest){
 
             super();
             var request = request
-map= request.getParameterMap()
-logUtil!.put("RequestParams Size: " +this.getMap()!.keySet()!.size(), this, this.commonStrings!.CONSTRUCTOR)
+map= request.getParameterMap();
+    
+logUtil!.put("RequestParams Size: " +this.getMap()!.keySet()!.size(), this, this.commonStrings!.CONSTRUCTOR);
+    
 }
 
 public constructor (pageContext: PageContext){
 
             super();
             var pageContext = pageContext
-map= pageContext!.getRequest()!.getParameterMap()
-logUtil!.put("Request Params Size: " +this.getMap()!.keySet()!.size(), this, this.commonStrings!.CONSTRUCTOR)
+map= pageContext!.getRequest()!.getParameterMap();
+    
+logUtil!.put("Request Params Size: " +this.getMap()!.keySet()!.size(), this, this.commonStrings!.CONSTRUCTOR);
+    
 }
 
 
     setMap(map: Map){
 var map = map
-this.map= map
+this.map= map;
+    
 }
 
 
@@ -121,28 +127,33 @@ var document = document
     var node: Node = document.createElement(RequestData.REQUEST)!;
         
         
-
+;
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
     var keys: Set = map.keySet()!;
         
         
+;
+    
 
-
-    var keyArray: any = {}[] = keys.toArray()!;
+    var keyArray: any[] = keys.toArray()!;
         
         
-
+;
+    
 
     var size: number = keyArray!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -157,21 +168,32 @@ i < size; i++)
     var key: string = keyArray[i]! as String;
         
         
+;
+    
 
+    var values: string[] = map.get(key);
 
-    var values: string[] = map.get(key) as Array<String?>;
+                         as Array<String?>;
         
         
-
-stringBuffer!.delete(0, stringBuffer!.length())
-stringBuffer!.append(KEY)
-stringBuffer!.append(key)
-stringBuffer!.append(VALUE)
-stringBuffer!.append(values[0]!)
-logUtil!.put(stringBuffer!.toString(), this, "toXmlNode(document)")
+;
+    
+stringBuffer!.delete(0, stringBuffer!.length());
+    
+stringBuffer!.append(KEY);
+    
+stringBuffer!.append(key);
+    
+stringBuffer!.append(VALUE);
+    
+stringBuffer!.append(values[0]!);
+    
+logUtil!.put(stringBuffer!.toString(), this, "toXmlNode(document)");
+    
 node.appendChild(ModDomHelper.createNameValueNodes(document, RequestData.PARAMETER, key.toCharArray()
                                         .slice(0, ).join('')
-                                    , .toCharArray()))
+                                    , .toCharArray()));
+    
 }
 
 
@@ -180,9 +202,12 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, RequestData.PARAMET
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return node;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "toXmlNode(document)", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "toXmlNode(document)", e);
+    
 
 
 
@@ -196,33 +221,38 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "toXmlNode(document)", e)
 
                 //@Throws(Error::class)
             
-    public toHashMap(): HashMap<Any, Any>{
+    public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
         
         
-
+;
+    
 
     var keys: Set = map.keySet()!;
         
         
+;
+    
 
-
-    var keyArray: any = {}[] = keys.toArray()!;
+    var keyArray: any[] = keys.toArray()!;
         
         
-
+;
+    
 
     var size: number = keyArray!.length
                 ;
         
         
-
+;
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
 
 
@@ -237,23 +267,34 @@ i < size; i++)
     var key: string = keyArray[i]! as String;
         
         
+;
+    
 
+    var values: string[] = map.get(key);
 
-    var values: string[] = map.get(key) as Array<String?>;
+                         as Array<String?>;
         
         
-
+;
+    
 hashMap!.put(key.toCharArray()
                                         .slice(0, ).join('')
-                                    , .toCharArray())
+                                    , .toCharArray());
+    
 }
 
-stringBuffer!.delete(0, stringBuffer!.length())
-stringBuffer!.append("RequestParams: ")
-stringBuffer!.append(this.map.toString())
-stringBuffer!.append("\ntoHashMap: ")
-stringBuffer!.append(hashMap!.toString())
-logUtil!.put(stringBuffer!.toString(), this, "toHashMap()")
+stringBuffer!.delete(0, stringBuffer!.length());
+    
+stringBuffer!.append("RequestParams: ");
+    
+stringBuffer!.append(this.map.toString());
+    
+stringBuffer!.append("\ntoHashMap: ");
+    
+stringBuffer!.append(hashMap!.toString());
+    
+logUtil!.put(stringBuffer!.toString(), this, "toHashMap()");
+    
 
 
 

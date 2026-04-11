@@ -18,7 +18,10 @@
 
 
 
-import { Hashtable } from "../../../../../java/util/Hashtable.js";
+            import Hashtable from "@ohos.util.HashMap";
+        
+
+//import { Hashtable } from "../../../../../java/util/Hashtable.js";
 
     
 import { Input } from "../../../../../org/allbinary/game/input/Input.js";
@@ -56,7 +59,7 @@ export class InputMapping
         
         
 
-    private readonly hashtable: Hashtable<Any, Any> = new Hashtable<Any, Any>();
+    private readonly hashtable: Hashtable<any, any> = new Hashtable<any, any>();
         
         
 
@@ -75,6 +78,8 @@ protected constructor (){
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.hashtable.length;
+
+                        ;
     
 }
 
@@ -100,8 +105,10 @@ protected constructor (){
 
 
     removeAll(){
-this.hashtable.clear()
-this.mappedList!.clear()
+this.hashtable.clear();
+    
+this.mappedList!.clear();
+    
 }
 
 
@@ -112,44 +119,66 @@ this.mappedList!.clear()
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
     var stringUtil: StringUtil = StringUtil.getInstance()!;
         
         
-
-stringBuffer!.append(CommonLabels.getInstance()!.START_LABEL)
-stringBuffer!.append(stringUtil!.toString(input))
-stringBuffer!.append(" == ")
-stringBuffer!.append(stringUtil!.toString(mappedToInput))
-logUtil!.put(stringBuffer!.toString(), this, "InputMapping::remove")
+;
+    
+stringBuffer!.append(CommonLabels.getInstance()!.START_LABEL);
+    
+stringBuffer!.append(stringUtil!.toString(input));
+    
+stringBuffer!.append(" == ");
+    
+stringBuffer!.append(stringUtil!.toString(mappedToInput));
+    
+logUtil!.put(stringBuffer!.toString(), this, "InputMapping::remove");
+    
 
     var list: BasicArrayList = this.getMappedInput(input)!;
         
         
-
+;
+    
 
                         if(list.contains(mappedToInput))
                         
                                     {
-                                    list.remove(mappedToInput)
-this.mappedList!.remove(mappedToInput)
-stringBuffer!.delete(0, stringBuffer!.length())
-stringBuffer!.append("Removed: ")
-stringBuffer!.append(stringUtil!.toString(input))
-stringBuffer!.append(" == ")
-stringBuffer!.append(stringUtil!.toString(mappedToInput))
-logUtil!.put(stringBuffer!.toString(), this, "InputMapping::remove")
+                                    list.remove(mappedToInput);
+    
+this.mappedList!.remove(mappedToInput);
+    
+stringBuffer!.delete(0, stringBuffer!.length());
+    
+stringBuffer!.append("Removed: ");
+    
+stringBuffer!.append(stringUtil!.toString(input));
+    
+stringBuffer!.append(" == ");
+    
+stringBuffer!.append(stringUtil!.toString(mappedToInput));
+    
+logUtil!.put(stringBuffer!.toString(), this, "InputMapping::remove");
+    
 
                                     }
                                 
                         else {
-                            stringBuffer!.delete(0, stringBuffer!.length())
-stringBuffer!.append("Not Deleted: ")
-stringBuffer!.append(stringUtil!.toString(input))
-stringBuffer!.append(" == ")
-stringBuffer!.append(stringUtil!.toString(mappedToInput))
-logUtil!.put(stringBuffer!.toString(), this, "InputMapping::remove")
+                            stringBuffer!.delete(0, stringBuffer!.length());
+    
+stringBuffer!.append("Not Deleted: ");
+    
+stringBuffer!.append(stringUtil!.toString(input));
+    
+stringBuffer!.append(" == ");
+    
+stringBuffer!.append(stringUtil!.toString(mappedToInput));
+    
+logUtil!.put(stringBuffer!.toString(), this, "InputMapping::remove");
+    
 
                         }
                             
@@ -174,13 +203,18 @@ logUtil!.put(stringBuffer!.toString(), this, "InputMapping::remove")
     var list: BasicArrayList = this.getMappedInput(input)!;
         
         
+;
+    
 
+                        if(!list.contains(mappedToInput);
 
-                        if(!list.contains(mappedToInput))
+                        )
                         
                                     {
-                                    list.add(mappedToInput)
-this.mappedList!.add(mappedToInput)
+                                    list.add(mappedToInput);
+    
+this.mappedList!.add(mappedToInput);
+    
 
                                     }
                                 
@@ -194,6 +228,8 @@ this.mappedList!.add(mappedToInput)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.mappedList!.contains(input);
+
+                        ;
     
 }
 
@@ -204,7 +240,8 @@ this.mappedList!.add(mappedToInput)
     var mappingInputCanBeNullList: any = {}? = this.hashtable.get(id as Object);
         
         
-
+;
+    
 
                         if(mappingInputCanBeNullList == 
                                     null
@@ -215,8 +252,10 @@ this.mappedList!.add(mappedToInput)
     var list: BasicArrayList = new BasicArrayList();
         
         
-
-this.hashtable.put(id, list)
+;
+    
+this.hashtable.put(id, list);
+    
 
 
 
@@ -235,7 +274,7 @@ this.hashtable.put(id, list)
 }
 
 
-    public getHashtable(): Hashtable<Any, Any>{
+    public getHashtable(): Hashtable<any, any>{
 
 
 

@@ -18,10 +18,13 @@
 
 
 
+            import Hashtable from "@ohos.util.HashMap";
+        
 import { Enumeration } from "../../../java/util/Enumeration.js";
 
     
-import { Hashtable } from "../../../java/util/Hashtable.js";
+
+//import { Hashtable } from "../../../java/util/Hashtable.js";
 
     
 
@@ -44,14 +47,15 @@ export class HashtableUtil
 }
 
 
-    public putAll(fromHashtable: Hashtable<Any, Any>, hashtable: Hashtable<Any, Any>){
+    public putAll(fromHashtable: Hashtable<any, any>, hashtable: Hashtable<any, any>){
 var fromHashtable = fromHashtable
 var hashtable = hashtable
 
-    var enumeration: Enumeration<Any?> = fromHashtable!.keys()!;
+    var enumeration: Enumeration<any?> = fromHashtable!.keys()!;
         
         
-
+;
+    
 
         while(enumeration.hasMoreElements())
         {
@@ -59,12 +63,14 @@ var hashtable = hashtable
     var key: any = {} = enumeration.nextElement()!!;
         
         
-
+;
+    
 
     var value: any = {} = hashtable.get(key as Object)!;
         
         
-
+;
+    
 
                         if(value == 
                                     null
@@ -75,7 +81,8 @@ var hashtable = hashtable
                                     }
                                 
                         else {
-                            hashtable.put(key, value)
+                            hashtable.put(key, value);
+    
 
                         }
                             
@@ -84,27 +91,31 @@ var hashtable = hashtable
 }
 
 
-    public getKeysAsArray(hashtable: Hashtable<Any, Any>): any = {}[]{
+    public getKeysAsArray(hashtable: Hashtable<any, any>): any[]{
 var hashtable = hashtable
 
-    var objectArray: any = {}[] = new Array(hashtable.length);
+    var objectArray: any[] = new Array(hashtable.length);
         
         
-
+;
+    
 
     var index: number = 0;
         
         
+;
+    
 
-
-    var enumeration: Enumeration<Any?> = hashtable.keys()!;
+    var enumeration: Enumeration<any?> = hashtable.keys()!;
         
         
-
+;
+    
 
         while(enumeration.hasMoreElements())
         {
-objectArray[index++]= enumeration.nextElement()!
+objectArray[index++]= enumeration.nextElement()!;
+    
 }
 
 
@@ -116,22 +127,25 @@ objectArray[index++]= enumeration.nextElement()!
 }
 
 
-    public getKeysAsList(hashtable: Hashtable<Any, Any>): BasicArrayList{
+    public getKeysAsList(hashtable: Hashtable<any, any>): BasicArrayList{
 var hashtable = hashtable
 
     var list: BasicArrayList = new BasicArrayList(hashtable.length);
         
         
+;
+    
 
-
-    var enumeration: Enumeration<Any?> = hashtable.keys()!;
+    var enumeration: Enumeration<any?> = hashtable.keys()!;
         
         
-
+;
+    
 
         while(enumeration.hasMoreElements())
         {
-list.add(enumeration.nextElement()!)
+list.add(enumeration.nextElement()!);
+    
 }
 
 

@@ -87,8 +87,10 @@ public constructor (text: string, fontSize: number, dx: number, dy: number)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.dx= dx
-this.dy= dy
+this.dx= dx;
+    
+this.dy= dy;
+    
 }
 
 public constructor (text: string, fontSize: number, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory)                        
@@ -105,8 +107,10 @@ public constructor (text: string, fontSize: number, dx: number, dy: number, anim
 
                             //For kotlin this is before the body of the constructor.
                     
-this.dx= dx
-this.dy= dy
+this.dx= dx;
+    
+this.dy= dy;
+    
 }
 
 public constructor (text: string, fontSize: number)                        
@@ -128,12 +132,18 @@ public constructor (text: string, fontSize: number, animationBehaviorFactory: An
                 //var text = text
     //var fontSize = fontSize
     //var animationBehaviorFactory = animationBehaviorFactory
-this.scaleProperties= ScaleProperties()
-this.text= text
-this.scaleProperties!.scaleHeight= fontSize.toInt() -(fontSize /4)
-this.initScaleHeight= this.scaleProperties!.scaleHeight
-this.animationBehaviorFactory= animationBehaviorFactory
-this.font= Font.getFont(Font.FACE_SYSTEM, Font.STYLE_PLAIN, this.initScaleHeight)
+this.scaleProperties= ScaleProperties();
+    
+this.text= text;
+    
+this.scaleProperties!.scaleHeight= fontSize.toInt() -(fontSize /4);
+    
+this.initScaleHeight= this.scaleProperties!.scaleHeight;
+    
+this.animationBehaviorFactory= animationBehaviorFactory;
+    
+this.font= Font.getFont(Font.FACE_SYSTEM, Font.STYLE_PLAIN, this.initScaleHeight);
+    
 }
 
 
@@ -143,21 +153,25 @@ this.font= Font.getFont(Font.FACE_SYSTEM, Font.STYLE_PLAIN, this.initScaleHeight
     //var instanceId = instanceId
 
     var customTextAnimation: CustomTextAnimation
-
+;
+    
 
                         if(dx != 0 || dy != 0)
                         
                                     {
-                                    customTextAnimation= AdjustCustomTextAnimation(text, this.scaleProperties!.scaleHeight, dx, dy, this.animationBehaviorFactory!.getOrCreateInstance())
+                                    customTextAnimation= AdjustCustomTextAnimation(text, this.scaleProperties!.scaleHeight, dx, dy, this.animationBehaviorFactory!.getOrCreateInstance());
+    
 
                                     }
                                 
                         else {
-                            customTextAnimation= CustomTextAnimation(text, this.scaleProperties!.scaleHeight, this.animationBehaviorFactory!.getOrCreateInstance())
+                            customTextAnimation= CustomTextAnimation(text, this.scaleProperties!.scaleHeight, this.animationBehaviorFactory!.getOrCreateInstance());
+    
 
                         }
                             
-customTextAnimation!.setBasicColorP(basicColor)
+customTextAnimation!.setBasicColorP(basicColor);
+    
 
 
 
@@ -178,6 +192,8 @@ customTextAnimation!.setBasicColorP(basicColor)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return font.stringWidth(this.text);
+
+                        ;
     
 }
 
@@ -188,6 +204,8 @@ customTextAnimation!.setBasicColorP(basicColor)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return font.getHeight();
+
+                        ;
     
 }
 

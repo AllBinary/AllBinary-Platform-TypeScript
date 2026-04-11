@@ -50,7 +50,8 @@ public constructor (allBinaryGameCanvas: AllBinaryGameCanvas){
 
             super();
             var allBinaryGameCanvas = allBinaryGameCanvas
-this.allBinaryGameCanvas= allBinaryGameCanvas
+this.allBinaryGameCanvas= allBinaryGameCanvas;
+    
 }
 
 
@@ -65,26 +66,37 @@ this.allBinaryGameCanvas= allBinaryGameCanvas
     var allBinaryGameCanvas: AllBinaryGameCanvas = this.allBinaryGameCanvas;
         
         
+;
+    
+allBinaryGameCanvas!.getLoopTimeHelperP()!.setStartTime(gameTickTimeDelayHelper!.setStartTime());
+    
+gameTickDisplayInfoSingleton!.update();
+    
+allBinaryGameCanvas!.processGame();
+    
 
-allBinaryGameCanvas!.getLoopTimeHelperP()!.setStartTime(gameTickTimeDelayHelper!.setStartTime())
-gameTickDisplayInfoSingleton!.update()
-allBinaryGameCanvas!.processGame()
+                        if(!allBinaryGameCanvas!.isRunning();
 
-                        if(!allBinaryGameCanvas!.isRunning() || allBinaryGameCanvas!.isPaused())
+                         || allBinaryGameCanvas!.isPaused())
                         
                                     {
-                                    allBinaryGameCanvas!.notifyDonePainting()
+                                    allBinaryGameCanvas!.notifyDonePainting();
+    
 
                                     }
                                 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
+    
 }
 
 }

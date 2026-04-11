@@ -57,21 +57,26 @@ public constructor (document: Document){
     var node: Node = DomSearchHelper.getNode(AdvertisementAreaData.getInstance()!.NAME, document.getChildNodes())!;
         
         
-
-this.displayInBrowserContraintsInterface= DisplayInBrowserContraints(node)
-this.twoDimensionConstraintsInterface= TwoDimensionalConstraint(node)
+;
+    
+this.displayInBrowserContraintsInterface= DisplayInBrowserContraints(node);
+    
+this.twoDimensionConstraintsInterface= TwoDimensionalConstraint(node);
+    
 }
 
 
     public setDisplayInBrowserContraints(displayInBrowserContraintsInterface: DisplayInBrowserContraintsInterface){
 var displayInBrowserContraintsInterface = displayInBrowserContraintsInterface
-this.displayInBrowserContraintsInterface= displayInBrowserContraintsInterface
+this.displayInBrowserContraintsInterface= displayInBrowserContraintsInterface;
+    
 }
 
 
     public getTwoDimensionContraints(twoDimensionConstraintsInterface: TwoDimensionalConstraintInterface){
 var twoDimensionConstraintsInterface = twoDimensionConstraintsInterface
-this.twoDimensionConstraintsInterface= twoDimensionConstraintsInterface
+this.twoDimensionConstraintsInterface= twoDimensionConstraintsInterface;
+    
 }
 
 

@@ -19,11 +19,12 @@ public constructor (bitmap: any = {}){
 
             super();
                 //var bitmap = bitmap
-this.bitmap= bitmap as Bitmap
+this.bitmap= bitmap as Bitmap;
+    
 }
 
 
-    public getPixels(pixels: IntArray, offset: number, stride: number, x: number, y: number, width: number, height: number){
+    public getPixels(pixels: number[], offset: number, stride: number, x: number, y: number, width: number, height: number){
 var pixels = pixels
 var offset = offset
 var stride = stride
@@ -31,11 +32,12 @@ var x = x
 var y = y
 var width = width
 var height = height
-this.bitmap.getPixels(pixels, offset, stride, x, y, width, height)
+this.bitmap.getPixels(pixels, offset, stride, x, y, width, height);
+    
 }
 
 
-    public setPixels(pixels: IntArray, offset: number, stride: number, x: number, y: number, width: number, height: number){
+    public setPixels(pixels: number[], offset: number, stride: number, x: number, y: number, width: number, height: number){
 var pixels = pixels
 var offset = offset
 var stride = stride
@@ -43,7 +45,8 @@ var x = x
 var y = y
 var width = width
 var height = height
-this.bitmap.setPixels(pixels, offset, stride, x, y, width, height)
+this.bitmap.setPixels(pixels, offset, stride, x, y, width, height);
+    
 }
 
 
@@ -53,6 +56,8 @@ this.bitmap.setPixels(pixels, offset, stride, x, y, width, height)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.bitmap.getWidth();
+
+                        ;
     
 }
 
@@ -63,12 +68,15 @@ this.bitmap.setPixels(pixels, offset, stride, x, y, width, height)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.bitmap.getHeight();
+
+                        ;
     
 }
 
 
     public recycle(){
-this.bitmap.recycle()
+this.bitmap.recycle();
+    
 }
 
 

@@ -63,8 +63,10 @@ public constructor (animationInterface: Animation, weaponLayerCircularStaticPool
 
                             //For kotlin this is before the body of the constructor.
                     
-this.total= 2
-this.weaponLayerCircularStaticPool= weaponLayerCircularStaticPool
+this.total= 2;
+    
+this.weaponLayerCircularStaticPool= weaponLayerCircularStaticPool;
+    
 }
 
 public constructor (animationInterface: Animation, sourceLayerInterface: AllBinaryLayer, weaponLayerCircularStaticPool: WeaponLayerCircularPool, total: number, weaponProperties: WeaponProperties, scoreableInterface: ScoreableInterface, relativeRelationship: RelativeRelationship)                        
@@ -83,8 +85,10 @@ public constructor (animationInterface: Animation, sourceLayerInterface: AllBina
 
                             //For kotlin this is before the body of the constructor.
                     
-this.total= total
-this.weaponLayerCircularStaticPool= weaponLayerCircularStaticPool
+this.total= total;
+    
+this.weaponLayerCircularStaticPool= weaponLayerCircularStaticPool;
+    
 }
 
 
@@ -104,20 +108,24 @@ this.weaponLayerCircularStaticPool= weaponLayerCircularStaticPool
     var increment: number = ((this.total -1) /TOTAL_ANGLE).toShort();
         
         
-
+;
+    
 
     var minAngle: number = (angle -((increment *total) shr 1)).toShort();
         
         
-
+;
+    
 
     var next: number = 0;
         
         
-
+;
+    
 
     var weaponLayer: WeaponLayer
-
+;
+    
 
 
 
@@ -128,9 +136,12 @@ this.weaponLayerCircularStaticPool= weaponLayerCircularStaticPool
         
 index < total; index++)
         {
-weaponLayer= weaponLayerCircularStaticPool!.getInstance(this.getOwnerLayerInterface(), this.relativeRelationship!.getX(), this.relativeRelationship!.getY(), 0, (minAngle +increment).toInt(), otherAngle.toInt(), weaponProperties, scoreableInterface)
-allbinaryLayerManager!.append(weaponLayer)
-next += increment
+weaponLayer= weaponLayerCircularStaticPool!.getInstance(this.getOwnerLayerInterface(), this.relativeRelationship!.getX(), this.relativeRelationship!.getY(), 0, (minAngle +increment).toInt(), otherAngle.toInt(), weaponProperties, scoreableInterface);
+    
+allbinaryLayerManager!.append(weaponLayer);
+    
+next += increment;
+    
 }
 
 }

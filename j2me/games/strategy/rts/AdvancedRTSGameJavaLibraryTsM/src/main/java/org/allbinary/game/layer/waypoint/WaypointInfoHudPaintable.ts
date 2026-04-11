@@ -48,7 +48,8 @@ export class WaypointInfoHudPaintable extends SelectionHudPaintable {
 public constructor (){
 
             super();
-            keyvalueDrawString= KeyValueDrawString("Owner: ", this.textX)
+            keyvalueDrawString= KeyValueDrawString("Owner: ", this.textX);
+    
 }
 
 
@@ -57,29 +58,38 @@ public constructor (){
     var rtsLayer: RTSLayer = this.rtsLayerP as RTSLayer;
         
         
-
-this.setName(rtsLayer!.getName())
-this.setAnimationInterface(rtsLayer!.getVerticleBuildAnimationInterface())
-this.keyvalueDrawString!.update(rtsLayer!.getParentLayer()!.getName())
+;
+    
+this.setName(rtsLayer!.getName());
+    
+this.setAnimationInterface(rtsLayer!.getVerticleBuildAnimationInterface());
+    
+this.keyvalueDrawString!.update(rtsLayer!.getParentLayer()!.getName());
+    
 }
 
 
     public paint(graphics: Graphics){
 var graphics = graphics
-super.paint(graphics)
+super.paint(graphics);
+    
 
     var textLine2Y: number = (y +myFont!.DEFAULT_CHAR_HEIGHT);
         
         
-
-this.keyvalueDrawString!.paint(graphics, textLine2Y)
-this.getAnimationInterface()!.paint(graphics, this.imageX, y)
+;
+    
+this.keyvalueDrawString!.paint(graphics, textLine2Y);
+    
+this.getAnimationInterface()!.paint(graphics, this.imageX, y);
+    
 }
 
 
     public setRtsLayer(rtsLayer: RTSLayer){
 var rtsLayer = rtsLayer
-this.rtsLayerP= rtsLayer
+this.rtsLayerP= rtsLayer;
+    
 }
 
 

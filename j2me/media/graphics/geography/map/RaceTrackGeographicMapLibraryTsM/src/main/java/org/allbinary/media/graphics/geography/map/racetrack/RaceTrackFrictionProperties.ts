@@ -35,8 +35,10 @@ public constructor (roadFriction: number, groundFriction: number){
             super();
             var roadFriction = roadFriction
 var groundFriction = groundFriction
-ROAD_FRICTION_NOMINATOR= FrictionData.getFrictionDenominator() -roadFriction
-GROUND_FRICTION_NOMINATOR= FrictionData.getFrictionDenominator() -groundFriction
+ROAD_FRICTION_NOMINATOR= FrictionData.getFrictionDenominator() -roadFriction;
+    
+GROUND_FRICTION_NOMINATOR= FrictionData.getFrictionDenominator() -groundFriction;
+    
 }
 
 

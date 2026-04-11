@@ -18,7 +18,10 @@
 
 
 
-import { Vector } from "../../../../../../../java/util/Vector.js";
+            import Vector from "@ohos.util.Vector";
+        
+
+//import { Vector } from "../../../../../../../java/util/Vector.js";
 
     
 import { DomDocumentMappingInterface } from "../../../../../../../org/allbinary/data/tree/dom/document/mapping/DomDocumentMappingInterface.js";

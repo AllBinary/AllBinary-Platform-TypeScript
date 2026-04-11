@@ -39,32 +39,40 @@ var id = id
     var logUtil: LogUtil = LogUtil.getInstance()!;
         
         
-
+;
+    
 
         try {
             
     var orderHistoryEntityInterface: OrderHistoryEntity = new org.allbinary.data.tables.user.commerce.inventory.order.OrderHistoryEntity();
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return orderHistoryEntityInterface!.getOrder(id) as OrderHistory;
+                        return orderHistoryEntityInterface!.getOrder(id);
+
+                         as OrderHistory;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.FACTORYERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, "OrderHistoryFactory", commonStrings!.GET_INSTANCE, e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, "OrderHistoryFactory", commonStrings!.GET_INSTANCE, e);
+    
 
                                     }
                                 

@@ -48,8 +48,10 @@ public constructor (basicAnimationInterfaceFactoryInterfaceArray: AnimationInter
             super();
                 //var basicAnimationInterfaceFactoryInterfaceArray = basicAnimationInterfaceFactoryInterfaceArray
     //var animationBehaviorFactory = animationBehaviorFactory
-this.basicAnimationInterfaceFactoryInterfaceArrayP= basicAnimationInterfaceFactoryInterfaceArray
-this.animationBehaviorFactory= animationBehaviorFactory
+this.basicAnimationInterfaceFactoryInterfaceArrayP= basicAnimationInterfaceFactoryInterfaceArray;
+    
+this.animationBehaviorFactory= animationBehaviorFactory;
+    
 }
 
 
@@ -62,12 +64,14 @@ this.animationBehaviorFactory= animationBehaviorFactory
                 ;
         
         
-
+;
+    
 
     var animationInterfaceArray: Animation[] = this.createArray(size)!;
         
         
-
+;
+    
 
 
 
@@ -78,7 +82,8 @@ this.animationBehaviorFactory= animationBehaviorFactory
         
 index < size; index++)
         {
-animationInterfaceArray[index]= this.basicAnimationInterfaceFactoryInterfaceArrayP[index]!.getInstance(instanceId)
+animationInterfaceArray[index]= this.basicAnimationInterfaceFactoryInterfaceArrayP[index]!.getInstance(instanceId);
+    
 }
 
 
@@ -86,6 +91,8 @@ animationInterfaceArray[index]= this.basicAnimationInterfaceFactoryInterfaceArra
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getInstance(animationInterfaceArray);
+
+                        ;
     
 }
 
@@ -108,6 +115,8 @@ animationInterfaceArray[index]= this.basicAnimationInterfaceFactoryInterfaceArra
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return NullAnimationFactory.getFactoryInstance()!.getInstance(0);
+
+                        ;
     
 }
 
@@ -129,7 +138,8 @@ animationInterfaceArray[index]= this.basicAnimationInterfaceFactoryInterfaceArra
                 ;
         
         
-
+;
+    
 
 
 
@@ -140,7 +150,8 @@ animationInterfaceArray[index]= this.basicAnimationInterfaceFactoryInterfaceArra
         
 index < size; index++)
         {
-this.basicAnimationInterfaceFactoryInterfaceArrayP[index]!.setInitialScale(scaleProperties)
+this.basicAnimationInterfaceFactoryInterfaceArrayP[index]!.setInitialScale(scaleProperties);
+    
 }
 
 }

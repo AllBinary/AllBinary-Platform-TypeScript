@@ -18,10 +18,13 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { HashMap } from "../../../../../java/util/HashMap.js";
 
     
-import { Vector } from "../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../java/util/Vector.js";
 
     
 import { BasicDataTableInterface } from "../../../../../org/allbinary/data/tables/BasicDataTableInterface.js";
@@ -37,7 +40,7 @@ interface StaticPagesEntityInterface extends BasicDataTableInterface {
 
     public insert(values: Vector)
 
-    public update(updatedValues: HashMap<Any, Any>)
+    public update(updatedValues: HashMap<any, any>)
 
 }
                 

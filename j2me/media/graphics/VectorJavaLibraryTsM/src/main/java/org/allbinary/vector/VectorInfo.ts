@@ -28,20 +28,24 @@ export class VectorInfo
 
     private height: number
 
-    private points: IntArray[]
+    private points: number[][]
 
     private totalFrames: number
-public constructor (width: number, height: number, points: IntArray[], totalFrames: number){
+public constructor (width: number, height: number, points: number[][], totalFrames: number){
 
             super();
             var width = width
 var height = height
 var points = points
 var totalFrames = totalFrames
-this.width= width
-this.height= height
-this.points= points
-this.totalFrames= totalFrames
+this.width= width;
+    
+this.height= height;
+    
+this.points= points;
+    
+this.totalFrames= totalFrames;
+    
 }
 
 
@@ -57,7 +61,8 @@ this.totalFrames= totalFrames
 
     setWidth(width: number){
 var width = width
-this.width= width
+this.width= width;
+    
 }
 
 
@@ -73,11 +78,12 @@ this.width= width
 
     setHeight(height: number){
 var height = height
-this.height= height
+this.height= height;
+    
 }
 
 
-    public getPoints(): IntArray[]{
+    public getPoints(): number[][]{
 
 
 
@@ -87,9 +93,10 @@ this.height= height
 }
 
 
-    setPoints(points: IntArray[]){
+    setPoints(points: number[][]){
 var points = points
-this.points= points
+this.points= points;
+    
 }
 
 
@@ -105,7 +112,8 @@ this.points= points
 
     setTotalFrames(totalFrames: number){
 var totalFrames = totalFrames
-this.totalFrames= totalFrames
+this.totalFrames= totalFrames;
+    
 }
 
 

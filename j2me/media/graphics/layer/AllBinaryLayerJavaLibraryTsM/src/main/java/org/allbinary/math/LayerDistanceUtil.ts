@@ -58,17 +58,21 @@ export class LayerDistanceUtil
     var dx: number = (layerInterface!.getXP() +layerInterface!.getHalfWidth()) -(layerInterface2!.getXP() +layerInterface2!.getHalfWidth());
         
         
-
+;
+    
 
     var dy: number = (layerInterface!.getYP() +layerInterface!.getHalfHeight()) -(layerInterface2!.getYP() +layerInterface2!.getHalfHeight());
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return mathUtil!.sqrt((dx *dx) +(dy *dy)).toInt();
+                        return mathUtil!.sqrt((dx *dx) +(dy *dy));
+
+                        .toInt();
     
 }
 
@@ -80,22 +84,27 @@ export class LayerDistanceUtil
     var dx: number = (layerInterface!.getXP() +layerInterface!.getHalfWidth()) -(layerInterface2!.getXP() +layerInterface2!.getHalfWidth());
         
         
-
+;
+    
 
     var dy: number = (layerInterface!.getYP() +layerInterface!.getHalfHeight()) -(layerInterface2!.getYP() +layerInterface2!.getHalfHeight());
         
         
-
+;
+    
 
     var dz: number = (layerInterface!.getZP() +layerInterface!.getHalfDepth()) -(layerInterface2!.getZP() +layerInterface2!.getHalfDepth());
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return mathUtil!.sqrt((dx *dx) +(dy *dy) +(dz *dz)).toInt();
+                        return mathUtil!.sqrt((dx *dx) +(dy *dy) +(dz *dz));
+
+                        .toInt();
     
 }
 
@@ -107,17 +116,21 @@ export class LayerDistanceUtil
     var dx: number = layerInterface!.getXP() -point.getX();
         
         
-
+;
+    
 
     var dy: number = layerInterface!.getYP() -point.getY();
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return mathUtil!.sqrt((dx *dx) +(dy *dy)).toInt();
+                        return mathUtil!.sqrt((dx *dx) +(dy *dy));
+
+                        .toInt();
     
 }
 

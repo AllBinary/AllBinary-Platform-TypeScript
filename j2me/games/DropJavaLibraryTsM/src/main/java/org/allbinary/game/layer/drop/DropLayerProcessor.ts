@@ -61,12 +61,14 @@ var allBinaryLayerManager = allBinaryLayerManager
     var list: BasicArrayList = this.getList()!;
         
         
-
+;
+    
 
     var size: number = list.size()!;
         
         
-
+;
+    
 
 
 
@@ -81,16 +83,22 @@ index < size; index++)
     var layerInterface: AllBinaryLayer = list.objectArray[index]! as AllBinaryLayer;
         
         
-
+;
+    
 
     var dropLayerInterface: DropLayerInterface = layerInterface as DropLayerInterface;
         
         
+;
+    
+allBinaryLayerManager!.append(dropLayerInterface!.getDroppedLayer();
 
-allBinaryLayerManager!.append(dropLayerInterface!.getDroppedLayer() as AllBinaryLayer)
+                         as AllBinaryLayer);
+    
 }
 
-list.clear()
+list.clear();
+    
 }
 
 

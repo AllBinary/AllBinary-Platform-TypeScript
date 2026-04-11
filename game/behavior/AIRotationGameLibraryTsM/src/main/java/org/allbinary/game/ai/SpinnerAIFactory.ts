@@ -18,7 +18,10 @@
 
 
 
-import { Hashtable } from "../../../../java/util/Hashtable.js";
+            import Hashtable from "@ohos.util.HashMap";
+        
+
+//import { Hashtable } from "../../../../java/util/Hashtable.js";
 
     
 import { Canvas } from "../../../../javax/microedition/lcdui/Canvas.js";
@@ -40,15 +43,16 @@ export class SpinnerAIFactory
                 , ArtificialIntelligenceInterfaceFactoryInterface {
         
 
-    public getInstance(hashtable: Hashtable<Any, Any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput): ArtificialIntelligenceInterface{
+    public getInstance(hashtable: Hashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput): ArtificialIntelligenceInterface{
 var hashtable = hashtable
 var ownerLayerInterface = ownerLayerInterface
 var gameInput = gameInput
 
-    var direction: IntArray = intArrayOf(Canvas.LEFT);
+    var direction: number[] = intArrayOf(Canvas.LEFT);
         
         
-
+;
+    
 
 
 

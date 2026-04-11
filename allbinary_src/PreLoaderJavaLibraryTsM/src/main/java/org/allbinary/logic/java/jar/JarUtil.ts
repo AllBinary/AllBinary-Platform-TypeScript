@@ -44,7 +44,8 @@ export class JarUtil
     public static main(args: string[]){
 var args = args
 JarUtil(URL("file:///G:/mnt/bc/mydev/working/j2me/MiniSpaceWars/MiniSpaceWars/dist/MiniSpaceWars.jar")).
-                            show()
+                            show();
+    
 }
 
 
@@ -53,28 +54,32 @@ public constructor (jarURL: URL){
 
             super();
             var jarURL = jarURL
-this.jarURL= jarURL
+this.jarURL= jarURL;
+    
 }
 
 
     public show(){
 
-    var cache: ByteArray = ByteArray(1024);
+    var cache: number[] = new Array(1024);
         
         
-
+;
+    
 
         try {
             
     var conn: URLConnection = jarURL!.openConnection()!;
         
         
-
+;
+    
 
     var jis: JarInputStream = new JarInputStream(conn.getInputStream());
         
         
-
+;
+    
 
         while(true)
         {
@@ -82,7 +87,8 @@ this.jarURL= jarURL
     var entry: JarEntry = jis.getNextJarEntry()!;
         
         
-
+;
+    
 
                         if(entry != 
                                     null
@@ -90,58 +96,69 @@ this.jarURL= jarURL
                         
                                     {
                                     
-                        if(!entry.isDirectory())
+                        if(!entry.isDirectory();
+
+                        )
                         
                                     {
                                     
     var offset: number = 0;
         
         
-
+;
+    
 
     var i: number = 0;
         
         
-
+;
+    
 
         while((i= jis.read(cache, offset, cache.length -offset)) !=  -1)
         {
-offset += i
+offset += i;
+    
 
                         if(offset >= cache.length)
                         
                                     {
                                     
-    var newcache: ByteArray = ByteArray(cache.length +1024);
+    var newcache: number[] = new Array(cache.length +1024);
         
         
-
+;
+    
 
 
 
         for (let i = 0; i < ; i++) {
             newcache[0 + i] = cache[i]!;
         }
+    ;
     
-cache= newcache
+cache= newcache;
+    
 
                                     }
                                 
 }
 
 
-    var tmp: ByteArray = ByteArray(offset);
+    var tmp: number[] = new Array(offset);
         
         
-
+;
+    
 
 
 
         for (let i = 0; i < offset; i++) {
             tmp[0 + i] = cache[i]!;
         }
+    ;
     
-System.out.println(entry.getName())
+System.out.println(entry.getName());
+    
 
                                     }
                                 
@@ -157,10 +174,14 @@ System.out.println(entry.getName())
                             
 }
 
-} catch(ex: IOException)
+
+                //: 
+} catch(ex) 
             {
-System.err.println(ex)
-ex.printStackTrace()
+System.err.println(ex);
+    
+ex.printStackTrace();
+    
 }
 
 }

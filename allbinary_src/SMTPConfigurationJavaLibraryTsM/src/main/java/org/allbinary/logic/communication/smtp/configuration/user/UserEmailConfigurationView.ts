@@ -78,34 +78,41 @@ public constructor (node: Node){
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.CONSTRUCTOR, this, this.commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put(this.commonStrings!.CONSTRUCTOR, this, this.commonStrings!.CONSTRUCTOR);
+    
 
                                     }
                                 
-this.userEmailConfigurationInterface= UserEmailConfiguration() as UserEmailConfigurationInterface
+this.userEmailConfigurationInterface= UserEmailConfiguration() as UserEmailConfigurationInterface;
+    
 
     var childNodeList: NodeList = node.getChildNodes()!;
         
         
-
+;
+    
 
     var userEmailEventsConfigurationNode: Node = DomSearchHelper.getNodeNoThrow(UserEmailEventsConfigurationData.NAME, childNodeList)!;
         
         
-
+;
+    
 
     var userEmailEventsConfigurationView: UserEmailEventsConfigurationView = new UserEmailEventsConfigurationView(userEmailEventsConfigurationNode);
         
         
-
-this.userEmailConfigurationInterface!.setUserEmailEventsConfigurationInterface(userEmailEventsConfigurationView!.getUserEmailEventsConfigurationInterface())
+;
+    
+this.userEmailConfigurationInterface!.setUserEmailEventsConfigurationInterface(userEmailEventsConfigurationView!.getUserEmailEventsConfigurationInterface());
+    
 }
 
 public constructor (userEmailConfigurationInterface: UserEmailConfigurationInterface){
 
             super();
             var userEmailConfigurationInterface = userEmailConfigurationInterface
-this.userEmailConfigurationInterface= userEmailConfigurationInterface
+this.userEmailConfigurationInterface= userEmailConfigurationInterface;
+    
 }
 
 
@@ -127,33 +134,40 @@ var document = document
     var emailConfigurationMapping: UserEmailConfigurationMapping = new UserEmailConfigurationMapping(this.userEmailConfigurationInterface);
         
         
+;
+    
 
-
-    var hashMap: HashMap<Any, Any> = emailConfigurationMapping!.toHashMap()!;
+    var hashMap: HashMap<any, any> = emailConfigurationMapping!.toHashMap()!;
         
         
-
+;
+    
 
     var node: Node = ModDomHelper.createNameValueNodes(document, UserEmailConfigurationData.NAME, hashMap)!;
         
         
-
+;
+    
 
     var userEmailConfigurationInterface: UserEmailConfigurationInterface = this.getEmailConfigurationInterface()!;
         
         
-
+;
+    
 
     var userEmailEventsConfigurationInterface: UserEmailEventsConfigurationInterface = userEmailConfigurationInterface!.getUserEmailEventsConfigurationInterface()!;
         
         
-
+;
+    
 
     var userEmailEventsConfigurationView: UserEmailEventsConfigurationView = new UserEmailEventsConfigurationView(userEmailEventsConfigurationInterface);
         
         
-
-node.appendChild(userEmailEventsConfigurationView!.toXmlNode(document))
+;
+    
+node.appendChild(userEmailEventsConfigurationView!.toXmlNode(document));
+    
 
 
 

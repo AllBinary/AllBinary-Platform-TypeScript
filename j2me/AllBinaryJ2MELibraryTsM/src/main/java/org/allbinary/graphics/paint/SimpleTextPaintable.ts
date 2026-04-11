@@ -45,8 +45,10 @@ public constructor (text: string, basicColor: BasicColor){
             super();
                 //var text = text
     //var basicColor = basicColor
-this.text= text
-this.basicColor= basicColor
+this.text= text;
+    
+this.basicColor= basicColor;
+    
 }
 
 
@@ -64,25 +66,31 @@ this.basicColor= basicColor
     var myFont: MyFont = MyFont.getInstance()!;
         
         
-
+;
+    
 
     var width: number = this.displayInfoSingleton!.getLast()[this.displayInfoSingleton!.WIDTH]!;
         
         
-
+;
+    
 
     var topScoresWidth: number = (graphics.getFont()!.stringWidth(this.text) shr 1);
         
         
-
-graphics.setColor(this.getBasicColorP()!.toInt())
-graphics.drawString(this.text, (width shr 1) -topScoresWidth, myFont!.DEFAULT_CHAR_HEIGHT *3, anchor)
+;
+    
+graphics.setColor(this.getBasicColorP()!.toInt());
+    
+graphics.drawString(this.text, (width shr 1) -topScoresWidth, myFont!.DEFAULT_CHAR_HEIGHT *3, anchor);
+    
 }
 
 
     public setBasicColorP(basicColor: BasicColor){
     //var basicColor = basicColor
-this.basicColor= basicColor
+this.basicColor= basicColor;
+    
 }
 
 
@@ -98,7 +106,8 @@ this.basicColor= basicColor
 
     public setText(text: string){
     //var text = text
-this.text= text
+this.text= text;
+    
 }
 
 

@@ -18,7 +18,10 @@
 
 
 
-import { Vector } from "../../../../../../java/util/Vector.js";
+            import Vector from "@ohos.util.Vector";
+        
+
+//import { Vector } from "../../../../../../java/util/Vector.js";
 
     
 import { ImageComparisonResult } from "../../../../../../org/allbinary/media/image/comparison/ImageComparisonResult.js";
@@ -44,9 +47,12 @@ public constructor (name: string, imageComparisonResult: ImageComparisonResult){
             super();
             var name = name
 var imageComparisonResult = imageComparisonResult
-this.name= name
-this.setImageComparisonResult(imageComparisonResult)
-this.setVector(Vector())
+this.name= name;
+    
+this.setImageComparisonResult(imageComparisonResult);
+    
+this.setVector(Vector());
+    
 }
 
 
@@ -62,7 +68,8 @@ this.setVector(Vector())
 
     public setVector(rectangleVector: Vector){
 var rectangleVector = rectangleVector
-this.rectangleVector= rectangleVector
+this.rectangleVector= rectangleVector;
+    
 }
 
 
@@ -88,7 +95,8 @@ this.rectangleVector= rectangleVector
 
     public setImageComparisonResult(imageComparisonResult: ImageComparisonResult){
 var imageComparisonResult = imageComparisonResult
-this.imageComparisonResult= imageComparisonResult
+this.imageComparisonResult= imageComparisonResult;
+    
 }
 
 

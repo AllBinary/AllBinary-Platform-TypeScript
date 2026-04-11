@@ -18,10 +18,13 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { HashMap } from "../../../java/util/HashMap.js";
 
     
-import { Vector } from "../../../java/util/Vector.js";
+
+//import { Vector } from "../../../java/util/Vector.js";
 
     
 import { StoreFrontInterface } from "../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js";
@@ -98,7 +101,8 @@ public constructor (searchRequest: SearchRequest)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.searchRequest= searchRequest
+this.searchRequest= searchRequest;
+    
 }
 
 
@@ -111,24 +115,30 @@ this.searchRequest= searchRequest
     var storeFront: StoreFrontInterface = this.searchRequest!.getStoreFront()!;
         
         
-
+;
+    
 
     var searchParams: SearchParams = this.searchRequest!.getParams()!;
         
         
+;
+    
 
-
-    var columnValueHashMap: HashMap<Any, Any> = searchParams!.get()!;
+    var columnValueHashMap: HashMap<any, any> = searchParams!.get()!;
         
         
-
+;
+    
 
     var file: string = StaticPagesEntity().
                             getFile(storeFront!.getName(), Replace("-", CommonSeps.getInstance()!.SPACE).
-                            all(columnValueHashMap!.get(BasicItemData.KEYWORDS) as String))!;
-        
-        
+                            all(columnValueHashMap!.get(BasicItemData.KEYWORDS);
 
+                         as String))!;
+        
+        
+;
+    
 
                         if(StringValidationUtil.getInstance()!.isEmpty(file))
                         
@@ -147,20 +157,29 @@ this.searchRequest= searchRequest
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(storeFront!.getCurrentHostName())
-stringBuffer!.append(storeFront!.getCurrentHostNamePath())
-stringBuffer!.append(storeFront!.getStaticPath())
-stringBuffer!.append(file)
-stringBuffer!.append(this.searchRequest!.getParams()!.getEndPage())
-stringBuffer!.append(AbPathData.getInstance()!.EXTENSION_SEP)
-stringBuffer!.append(InputOutputTypeData.getInstance()!.DEFAULT)
+;
+    
+stringBuffer!.append(storeFront!.getCurrentHostName());
+    
+stringBuffer!.append(storeFront!.getCurrentHostNamePath());
+    
+stringBuffer!.append(storeFront!.getStaticPath());
+    
+stringBuffer!.append(file);
+    
+stringBuffer!.append(this.searchRequest!.getParams()!.getEndPage());
+    
+stringBuffer!.append(AbPathData.getInstance()!.EXTENSION_SEP);
+    
+stringBuffer!.append(InputOutputTypeData.getInstance()!.DEFAULT);
+    
 
     var filePath: string = Replace(CommonSeps.getInstance()!.SPACE, "%20").
                             all(stringBuffer!.toString())!;
         
         
-
+;
+    
 
 
 
@@ -170,13 +189,16 @@ stringBuffer!.append(InputOutputTypeData.getInstance()!.DEFAULT)
 
                         }
                             
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PRODUCTSEARCHLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.FAILURE, this, "searchSingleStaticPage", e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, "searchSingleStaticPage", e);
+    
 
                                     }
                                 
@@ -198,20 +220,24 @@ stringBuffer!.append(InputOutputTypeData.getInstance()!.DEFAULT)
     var str: string[] = search()!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return str[this.searchRequest!.getParams()!.getStartPageInt()!.toInt()]!;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PRODUCTSEARCHLOGGINGERROR))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.FAILURE, this, "searchSingleDynamicPage", e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, "searchSingleDynamicPage", e);
+    
 
                                     }
                                 
@@ -231,22 +257,27 @@ stringBuffer!.append(InputOutputTypeData.getInstance()!.DEFAULT)
     var abeClientInformation: AbeClientInformationInterface = ServiceClientInformationInterfaceFactory.getInstance()!;
         
         
-
+;
+    
 
     var inventorySearchUtil: InventorySearchUtil = InventorySearchUtil.getInstance()!;
         
         
-
+;
+    
 
     var vector: Vector = inventorySearchUtil!.getBasicItemIdColumn(searchRequest)!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return inventorySearchUtil!.search(abeClientInformation, searchRequest, vector);
+
+                        ;
     
 }
 
@@ -259,12 +290,15 @@ var product = product
     var abeClientInformation: AbeClientInformationInterface = ServiceClientInformationInterfaceFactory.getInstance()!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return InventorySearchProductUtil.getInstance()!.getProduct(abeClientInformation, searchRequest, product);
+
+                        ;
     
 }
 

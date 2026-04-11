@@ -48,7 +48,8 @@ var thread = thread
 
     public setRunning(running: boolean){
 var running = running
-this.running= running
+this.running= running;
+    
 }
 
 

@@ -55,8 +55,10 @@ var index = index
     var tickableInterface: AllBinaryGameLayer = layerInterface as AllBinaryGameLayer;
         
         
-
-tickableInterface!.processTick(allBinaryLayerManager)
+;
+    
+tickableInterface!.processTick(allBinaryLayerManager);
+    
 }
 
 

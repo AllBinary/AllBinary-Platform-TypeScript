@@ -18,6 +18,8 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { ResultSet } from "../../../../../java/sql/ResultSet.js";
 
     
@@ -30,7 +32,8 @@ import { HashMap } from "../../../../../java/util/HashMap.js";
 import { Set } from "../../../../../java/util/Set.js";
 
     
-import { Vector } from "../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../java/util/Vector.js";
 
     
 import { DbConnectionInfo } from "../../../../../org/allbinary/business/init/db/DbConnectionInfo.js";
@@ -157,7 +160,7 @@ public constructor (databaseConnectionInfoInterface: DbConnectionInfo)
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
-    public updateWhere(key: string, value: string, updatedKeyValuePairs: HashMap<Any, Any>){
+    public updateWhere(key: string, value: string, updatedKeyValuePairs: HashMap<any, any>){
     //var key = key
     //var value = value
     //var updatedKeyValuePairs = updatedKeyValuePairs
@@ -165,23 +168,29 @@ public constructor (databaseConnectionInfoInterface: DbConnectionInfo)
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(this.sqlStrings!.UPDATE)
-stringBuffer!.append(this.getTableName())
-stringBuffer!.append(this.sqlStrings!.SET)
+;
+    
+stringBuffer!.append(this.sqlStrings!.UPDATE);
+    
+stringBuffer!.append(this.getTableName());
+    
+stringBuffer!.append(this.sqlStrings!.SET);
+    
 
         try {
             
-    var keyArray: any = {}[] = updatedKeyValuePairs!.keySet()!.toTypedArray()!;
+    var keyArray: any[] = updatedKeyValuePairs!.keySet()!.toTypedArray()!;
         
         
-
+;
+    
 
     var size: number = keyArray!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -196,69 +205,92 @@ i < size; i++)
     var columnName: string = keyArray[i]!.toString()!;
         
         
+;
+    
+stringBuffer!.append(this.commonSeps!.SPACE);
+    
+stringBuffer!.append(columnName);
+    
+stringBuffer!.append(EQUAL_QUOTE);
+    
 
-stringBuffer!.append(this.commonSeps!.SPACE)
-stringBuffer!.append(columnName)
-stringBuffer!.append(EQUAL_QUOTE)
+    var columnValue: string = updatedKeyValuePairs!.get(columnName);
 
-    var columnValue: string = updatedKeyValuePairs!.get(columnName) as String;
+                         as String;
         
         
-
+;
+    
 
                         if(columnValue == 
                                     null
                                 )
                         
                                     {
-                                    columnValue= this.stringUtil!.EMPTY_STRING
+                                    columnValue= this.stringUtil!.EMPTY_STRING;
+    
 
                                     }
                                 
                         else {
                             columnValue= Replace(sqlStrings!.CLOSE_QUOTE, ESCAPE_QUOTES).
-                            all(columnValue)
+                            all(columnValue);
+    
 
                         }
                             
-stringBuffer!.append(this.getValue(columnValue))
-stringBuffer!.append(sqlStrings!.CLOSE_QUOTE)
+stringBuffer!.append(this.getValue(columnValue));
+    
+stringBuffer!.append(sqlStrings!.CLOSE_QUOTE);
+    
 
                         if(i < size -1)
                         
                                     {
-                                    stringBuffer!.append(this.commonSeps!.COMMA)
+                                    stringBuffer!.append(this.commonSeps!.COMMA);
+    
 
                                     }
                                 
 }
 
-stringBuffer!.append(sqlStrings!.WHERE)
-stringBuffer!.append(key)
-stringBuffer!.append(sqlStrings!.EQUAL_QUOTE)
-stringBuffer!.append(this.getValue(value))
-stringBuffer!.append(sqlStrings!.CLOSE_QUOTE)
+stringBuffer!.append(sqlStrings!.WHERE);
+    
+stringBuffer!.append(key);
+    
+stringBuffer!.append(sqlStrings!.EQUAL_QUOTE);
+    
+stringBuffer!.append(this.getValue(value));
+    
+stringBuffer!.append(sqlStrings!.CLOSE_QUOTE);
+    
 
     var sqlStatement: string = stringBuffer!.toString()!;
         
         
-
-this.executeSQLStatement(sqlStatement)
+;
+    
+this.executeSQLStatement(sqlStatement);
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.SUCCESS_SQL_STATEMENT +sqlStatement, this, METHOD_UPDATE_WHERE)
+                                    logUtil!.put(this.SUCCESS_SQL_STATEMENT +sqlStatement, this, METHOD_UPDATE_WHERE);
+    
 
                                     }
                                 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
                                     {
-                                    logUtil!.put(this.FAILED_SQL_STATEMENT +stringBuffer, this, METHOD_UPDATE_WHERE, e)
+                                    logUtil!.put(this.FAILED_SQL_STATEMENT +stringBuffer, this, METHOD_UPDATE_WHERE, e);
+    
 
                                     }
                                 
@@ -270,30 +302,36 @@ this.executeSQLStatement(sqlStatement)
                 //@Throws(Error::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
-    public updateWhere(whereKeyValuePairs: HashMap<Any, Any>, updatedKeyValuePairs: HashMap<Any, Any>){
+    public updateWhere(whereKeyValuePairs: HashMap<any, any>, updatedKeyValuePairs: HashMap<any, any>){
     //var whereKeyValuePairs = whereKeyValuePairs
     //var updatedKeyValuePairs = updatedKeyValuePairs
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(this.sqlStrings!.UPDATE)
-stringBuffer!.append(this.getTableName())
-stringBuffer!.append(this.sqlStrings!.SET)
+;
+    
+stringBuffer!.append(this.sqlStrings!.UPDATE);
+    
+stringBuffer!.append(this.getTableName());
+    
+stringBuffer!.append(this.sqlStrings!.SET);
+    
 
         try {
             
-    var keyArray: any = {}[] = updatedKeyValuePairs!.keySet()!.toTypedArray()!;
+    var keyArray: any[] = updatedKeyValuePairs!.keySet()!.toTypedArray()!;
         
         
-
+;
+    
 
     var size: number = keyArray!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -308,68 +346,85 @@ i < size; i++)
     var columnName: string = keyArray[i]!.toString()!;
         
         
-
-stringBuffer!.append(this.commonSeps!.SPACE)
-stringBuffer!.append(columnName)
-stringBuffer!.append(this.EQUAL_QUOTE)
+;
+    
+stringBuffer!.append(this.commonSeps!.SPACE);
+    
+stringBuffer!.append(columnName);
+    
+stringBuffer!.append(this.EQUAL_QUOTE);
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(COLUMN_NAME_LABEL +columnName, this, METHOD_UPDATE_WHERE)
+                                    logUtil!.put(COLUMN_NAME_LABEL +columnName, this, METHOD_UPDATE_WHERE);
+    
 
                                     }
                                 
 
-    var columnValue: string = updatedKeyValuePairs!.get(columnName) as String;
-        
-        
+    var columnValue: string = updatedKeyValuePairs!.get(columnName);
 
+                         as String;
+        
+        
+;
+    
 
                         if(columnValue == 
                                     null
                                 )
                         
                                     {
-                                    columnValue= this.stringUtil!.EMPTY_STRING
+                                    columnValue= this.stringUtil!.EMPTY_STRING;
+    
 
                                     }
                                 
                         else {
                             columnValue= Replace(sqlStrings!.CLOSE_QUOTE, this.ESCAPE_QUOTES).
-                            all(columnValue)
+                            all(columnValue);
+    
 
                         }
                             
-stringBuffer!.append(this.getValue(columnValue))
-stringBuffer!.append(sqlStrings!.CLOSE_QUOTE)
+stringBuffer!.append(this.getValue(columnValue));
+    
+stringBuffer!.append(sqlStrings!.CLOSE_QUOTE);
+    
 
                         if(i < size -1)
                         
                                     {
-                                    stringBuffer!.append(this.commonSeps!.COMMA)
+                                    stringBuffer!.append(this.commonSeps!.COMMA);
+    
 
                                     }
                                 
 }
 
-stringBuffer!.append(sqlStrings!.WHERE)
+stringBuffer!.append(sqlStrings!.WHERE);
+    
 
     var set: Set = whereKeyValuePairs!.keySet()!;
         
         
+;
+    
 
-
-    var keyArray2: any = {}[] = set.toArray()!;
+    var keyArray2: any[] = set.toArray()!;
         
         
-
+;
+    
 
     var size2: number = keyArray2!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -384,24 +439,33 @@ i < size2; i++)
     var key: string = keyArray2[i]! as String;
         
         
+;
+    
 
+    var value: string = whereKeyValuePairs!.get(key);
 
-    var value: string = whereKeyValuePairs!.get(key) as String;
+                         as String;
         
         
-
+;
+    
 
 
                             {
-                            stringBuffer!.append(key)
-stringBuffer!.append(sqlStrings!.EQUAL_QUOTE)
-stringBuffer!.append(this.getValue(value))
-stringBuffer!.append(sqlStrings!.CLOSE_QUOTE)
+                            stringBuffer!.append(key);
+    
+stringBuffer!.append(sqlStrings!.EQUAL_QUOTE);
+    
+stringBuffer!.append(this.getValue(value));
+    
+stringBuffer!.append(sqlStrings!.CLOSE_QUOTE);
+    
 
                         if(i < size2 -1)
                         
                                     {
-                                    stringBuffer!.append(sqlStrings!.AND)
+                                    stringBuffer!.append(sqlStrings!.AND);
+    
 
                                     }
                                 
@@ -414,23 +478,29 @@ stringBuffer!.append(sqlStrings!.CLOSE_QUOTE)
     var sqlStatement: string = stringBuffer!.toString()!;
         
         
-
-this.executeSQLStatement(sqlStatement)
+;
+    
+this.executeSQLStatement(sqlStatement);
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.SUCCESS_SQL_STATEMENT +sqlStatement, this, METHOD_UPDATE_WHERE)
+                                    logUtil!.put(this.SUCCESS_SQL_STATEMENT +sqlStatement, this, METHOD_UPDATE_WHERE);
+    
 
                                     }
                                 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
                                     {
-                                    logUtil!.put(this.FAILED_SQL_STATEMENT +stringBuffer, this, METHOD_UPDATE_WHERE, e)
+                                    logUtil!.put(this.FAILED_SQL_STATEMENT +stringBuffer, this, METHOD_UPDATE_WHERE, e);
+    
 
                                     }
                                 
@@ -451,38 +521,53 @@ this.executeSQLStatement(sqlStatement)
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(this.sqlStrings!.DELETE)
-stringBuffer!.append(this.sqlStrings!.FROM)
-stringBuffer!.append(this.getTableName())
-stringBuffer!.append(sqlStrings!.WHERE)
-stringBuffer!.append(key)
-stringBuffer!.append(sqlStrings!.EQUAL_QUOTE)
-stringBuffer!.append(value)
-stringBuffer!.append(sqlStrings!.CLOSE_QUOTE)
+;
+    
+stringBuffer!.append(this.sqlStrings!.DELETE);
+    
+stringBuffer!.append(this.sqlStrings!.FROM);
+    
+stringBuffer!.append(this.getTableName());
+    
+stringBuffer!.append(sqlStrings!.WHERE);
+    
+stringBuffer!.append(key);
+    
+stringBuffer!.append(sqlStrings!.EQUAL_QUOTE);
+    
+stringBuffer!.append(value);
+    
+stringBuffer!.append(sqlStrings!.CLOSE_QUOTE);
+    
 
         try {
             
     var sqlStatement: string = stringBuffer!.toString()!;
         
         
-
-this.executeSQLStatement(sqlStatement)
+;
+    
+this.executeSQLStatement(sqlStatement);
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.SUCCESS_SQL_STATEMENT +sqlStatement, this, this.METHOD_DELETE_WHERE)
+                                    logUtil!.put(this.SUCCESS_SQL_STATEMENT +sqlStatement, this, this.METHOD_DELETE_WHERE);
+    
 
                                     }
                                 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
                                     {
-                                    logUtil!.put(this.FAILED_SQL_STATEMENT +stringBuffer!.toString(), this, this.METHOD_DELETE_WHERE, e)
+                                    logUtil!.put(this.FAILED_SQL_STATEMENT +stringBuffer!.toString(), this, this.METHOD_DELETE_WHERE, e);
+    
 
                                     }
                                 
@@ -492,35 +577,43 @@ this.executeSQLStatement(sqlStatement)
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
-    public deleteWhere(keysAndValues: HashMap<Any, Any>){
+    public deleteWhere(keysAndValues: HashMap<any, any>){
     //var keysAndValues = keysAndValues
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(this.sqlStrings!.DELETE)
-stringBuffer!.append(this.sqlStrings!.FROM)
-stringBuffer!.append(this.getTableName())
-stringBuffer!.append(this.sqlStrings!.WHERE)
+;
+    
+stringBuffer!.append(this.sqlStrings!.DELETE);
+    
+stringBuffer!.append(this.sqlStrings!.FROM);
+    
+stringBuffer!.append(this.getTableName());
+    
+stringBuffer!.append(this.sqlStrings!.WHERE);
+    
 
         try {
             
     var set: Set = keysAndValues!.keySet()!;
         
         
+;
+    
 
-
-    var keyArray: any = {}[] = set.toArray()!;
+    var keyArray: any[] = set.toArray()!;
         
         
-
+;
+    
 
     var size: number = keyArray!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -535,21 +628,28 @@ i < size; i++)
     var key: string = keyArray[i]! as String;
         
         
-
+;
+    
 
     var value: string = new .toCharArray();
         
         
-
-stringBuffer!.append(key)
-stringBuffer!.append(this.sqlStrings!.EQUAL_QUOTE)
-stringBuffer!.append(this.getValue(value))
-stringBuffer!.append(this.sqlStrings!.CLOSE_QUOTE)
+;
+    
+stringBuffer!.append(key);
+    
+stringBuffer!.append(this.sqlStrings!.EQUAL_QUOTE);
+    
+stringBuffer!.append(this.getValue(value));
+    
+stringBuffer!.append(this.sqlStrings!.CLOSE_QUOTE);
+    
 
                         if(i < size -1)
                         
                                     {
-                                    stringBuffer!.append(this.sqlStrings!.AND)
+                                    stringBuffer!.append(this.sqlStrings!.AND);
+    
 
                                     }
                                 
@@ -559,23 +659,29 @@ stringBuffer!.append(this.sqlStrings!.CLOSE_QUOTE)
     var sqlStatement: string = stringBuffer!.toString()!;
         
         
-
-this.executeSQLStatement(sqlStatement)
+;
+    
+this.executeSQLStatement(sqlStatement);
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.SUCCESS_SQL_STATEMENT +sqlStatement, this, this.METHOD_DELETE_WHERE)
+                                    logUtil!.put(this.SUCCESS_SQL_STATEMENT +sqlStatement, this, this.METHOD_DELETE_WHERE);
+    
 
                                     }
                                 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
                                     {
-                                    logUtil!.put(this.FAILED_SQL_STATEMENT +stringBuffer!.toString(), this, this.METHOD_DELETE_WHERE, e)
+                                    logUtil!.put(this.FAILED_SQL_STATEMENT +stringBuffer!.toString(), this, this.METHOD_DELETE_WHERE, e);
+    
 
                                     }
                                 
@@ -590,10 +696,14 @@ this.executeSQLStatement(sqlStatement)
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(this.sqlStrings!.INSERT_INTO)
-stringBuffer!.append(this.getTableName())
-stringBuffer!.append(this.sqlStrings!.VALUES)
+;
+    
+stringBuffer!.append(this.sqlStrings!.INSERT_INTO);
+    
+stringBuffer!.append(this.getTableName());
+    
+stringBuffer!.append(this.sqlStrings!.VALUES);
+    
 
         try {
             
@@ -607,46 +717,64 @@ stringBuffer!.append(this.sqlStrings!.VALUES)
 i < values.length -1; i++)
         {
 
-    var value: string = this.getValue(values.get(i) as String)!;
-        
-        
+    var value: string = this.getValue(values.get(i);
 
+                         as String)!;
+        
+        
+;
+    
 value= Replace(this.sqlStrings!.ESCAPE, this.sqlStrings!.DOUBLE_ESCAPE).
-                            all(value)
-stringBuffer!.append(value)
-stringBuffer!.append(this.sqlStrings!.SINGLE_QUOTE_COMMA_SEP)
+                            all(value);
+    
+stringBuffer!.append(value);
+    
+stringBuffer!.append(this.sqlStrings!.SINGLE_QUOTE_COMMA_SEP);
+    
 }
 
 
-    var value: string = this.getValue(values.lastElement() as String)!;
-        
-        
+    var value: string = this.getValue(values.lastElement();
 
+                         as String)!;
+        
+        
+;
+    
 value= Replace(this.sqlStrings!.ESCAPE, this.sqlStrings!.DOUBLE_ESCAPE).
-                            all(value)
-stringBuffer!.append(value)
-stringBuffer!.append(INSERT_END)
+                            all(value);
+    
+stringBuffer!.append(value);
+    
+stringBuffer!.append(INSERT_END);
+    
 
     var sqlStatement: string = stringBuffer!.toString()!;
         
         
-
-this.executeSQLStatement(sqlStatement)
+;
+    
+this.executeSQLStatement(sqlStatement);
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.SUCCESS_SQL_STATEMENT +sqlStatement, this, INSERT)
+                                    logUtil!.put(this.SUCCESS_SQL_STATEMENT +sqlStatement, this, INSERT);
+    
 
                                     }
                                 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
                                     {
-                                    logUtil!.put(this.FAILED_SQL_STATEMENT +stringBuffer!.toString(), this, INSERT, e)
+                                    logUtil!.put(this.FAILED_SQL_STATEMENT +stringBuffer!.toString(), this, INSERT, e);
+    
 
                                     }
                                 
@@ -655,41 +783,49 @@ this.executeSQLStatement(sqlStatement)
 }
 
 
-    public getRow(keysAndValues: HashMap<Any, Any>): HashMap<Any, Any>{
+    public getRow(keysAndValues: HashMap<any, any>): HashMap<any, any>{
     //var keysAndValues = keysAndValues
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(this.sqlStrings!.SELECT_ALL_FROM)
-stringBuffer!.append(this.getTableName())
-stringBuffer!.append(sqlStrings!.WHERE)
+;
+    
+stringBuffer!.append(this.sqlStrings!.SELECT_ALL_FROM);
+    
+stringBuffer!.append(this.getTableName());
+    
+stringBuffer!.append(sqlStrings!.WHERE);
+    
 
         try {
             
-    var result: HashMap<Any, Any> = 
+    var result: HashMap<any, any> = 
                 null
             ;
         
         
-
+;
+    
 
     var set: Set = keysAndValues!.keySet()!;
         
         
+;
+    
 
-
-    var keyArray: any = {}[] = set.toArray()!;
+    var keyArray: any[] = set.toArray()!;
         
         
-
+;
+    
 
     var size: number = keyArray!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -704,21 +840,28 @@ index < size; index++)
     var key: string = keyArray[index]! as String;
         
         
-
+;
+    
 
     var value: string = new .toCharArray();
         
         
-
-stringBuffer!.append(key)
-stringBuffer!.append(sqlStrings!.EQUAL_QUOTE)
-stringBuffer!.append(this.getValue(value))
-stringBuffer!.append(sqlStrings!.CLOSE_QUOTE)
+;
+    
+stringBuffer!.append(key);
+    
+stringBuffer!.append(sqlStrings!.EQUAL_QUOTE);
+    
+stringBuffer!.append(this.getValue(value));
+    
+stringBuffer!.append(sqlStrings!.CLOSE_QUOTE);
+    
 
                         if(index < size -1)
                         
                                     {
-                                    stringBuffer!.append(sqlStrings!.AND)
+                                    stringBuffer!.append(sqlStrings!.AND);
+    
 
                                     }
                                 
@@ -728,12 +871,14 @@ stringBuffer!.append(sqlStrings!.CLOSE_QUOTE)
     var sqlStatement: string = stringBuffer!.toString()!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(sqlStrings!.SQL_STATEMENT_LABEL +sqlStatement, this, this.METHOD_GET_ROW)
+                                    logUtil!.put(sqlStrings!.SQL_STATEMENT_LABEL +sqlStatement, this, this.METHOD_GET_ROW);
+    
 
                                     }
                                 
@@ -741,21 +886,25 @@ stringBuffer!.append(sqlStrings!.CLOSE_QUOTE)
     var rset: ResultSet = this.executeSQLStatement(sqlStatement)!;
         
         
-
+;
+    
 
     var resultSetMetaData: ResultSetMetaData = rset.getMetaData()!;
         
         
-
+;
+    
 
         while(rset.next())
         {
-result= HashMap<Any, Any>()
+result= HashMap<any, any>();
+    
 
     var columnCount: number = resultSetMetaData!.getColumnCount()!;
         
         
-
+;
+    
 
 
 
@@ -770,20 +919,24 @@ index <= columnCount; index++)
     var columnName: string = resultSetMetaData!.getColumnName(index)!;
         
         
-
+;
+    
 
     var field: string = rset.getString(columnName)!;
         
         
-
-result.put(columnName, field)
+;
+    
+result.put(columnName, field);
+    
 }
 
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(ROW_VALUE_LABEL +result.toString(), this, this.METHOD_GET_ROW)
+                                    logUtil!.put(ROW_VALUE_LABEL +result.toString(), this, this.METHOD_GET_ROW);
+    
 
                                     }
                                 
@@ -799,7 +952,8 @@ result.put(columnName, field)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
                                     {
-                                    logUtil!.put(NO_RESULTS_IN_RESULT_SET, this, this.METHOD_GET_ROW)
+                                    logUtil!.put(NO_RESULTS_IN_RESULT_SET, this, this.METHOD_GET_ROW);
+    
 
                                     }
                                 
@@ -809,13 +963,16 @@ result.put(columnName, field)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
                                     {
-                                    logUtil!.put(this.FAILED_SQL_STATEMENT +stringBuffer, this, this.METHOD_GET_ROW, e)
+                                    logUtil!.put(this.FAILED_SQL_STATEMENT +stringBuffer, this, this.METHOD_GET_ROW, e);
+    
 
                                     }
                                 
@@ -830,51 +987,61 @@ result.put(columnName, field)
 }
 
 
-    public getRows(keysAndValues: HashMap<Any, Any>): Vector{
+    public getRows(keysAndValues: HashMap<any, any>): Vector{
     //var keysAndValues = keysAndValues
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getRows(keysAndValues, StringUtil.getInstance()!.EMPTY_STRING);
+
+                        ;
     
 }
 
 
-    public getRows(keysAndValues: HashMap<Any, Any>, more: string): Vector{
+    public getRows(keysAndValues: HashMap<any, any>, more: string): Vector{
     //var keysAndValues = keysAndValues
     //var more = more
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(this.sqlStrings!.SELECT_ALL_FROM)
-stringBuffer!.append(this.getTableName())
-stringBuffer!.append(sqlStrings!.WHERE)
+;
+    
+stringBuffer!.append(this.sqlStrings!.SELECT_ALL_FROM);
+    
+stringBuffer!.append(this.getTableName());
+    
+stringBuffer!.append(sqlStrings!.WHERE);
+    
 
         try {
             
     var rows: Vector = new Vector();
         
         
-
+;
+    
 
     var set: Set = keysAndValues!.keySet()!;
         
         
+;
+    
 
-
-    var keyArray: any = {}[] = set.toArray()!;
+    var keyArray: any[] = set.toArray()!;
         
         
-
+;
+    
 
     var size: number = keyArray!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -889,21 +1056,28 @@ index < size; index++)
     var key: string = keyArray[index]! as String;
         
         
-
+;
+    
 
     var value: string = new .toCharArray();
         
         
-
-stringBuffer!.append(key)
-stringBuffer!.append(sqlStrings!.EQUAL_QUOTE)
-stringBuffer!.append(this.getValue(value))
-stringBuffer!.append(sqlStrings!.CLOSE_QUOTE)
+;
+    
+stringBuffer!.append(key);
+    
+stringBuffer!.append(sqlStrings!.EQUAL_QUOTE);
+    
+stringBuffer!.append(this.getValue(value));
+    
+stringBuffer!.append(sqlStrings!.CLOSE_QUOTE);
+    
 
                         if(index < size -1)
                         
                                     {
-                                    stringBuffer!.append(sqlStrings!.AND)
+                                    stringBuffer!.append(sqlStrings!.AND);
+    
 
                                     }
                                 
@@ -913,39 +1087,46 @@ stringBuffer!.append(sqlStrings!.CLOSE_QUOTE)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(sqlStrings!.SQL_STATEMENT_LABEL +stringBuffer, this, this.METHOD_GET_ROWS)
+                                    logUtil!.put(sqlStrings!.SQL_STATEMENT_LABEL +stringBuffer, this, this.METHOD_GET_ROWS);
+    
 
                                     }
                                 
-stringBuffer!.append(more)
+stringBuffer!.append(more);
+    
 
     var sqlStatement: string = stringBuffer!.toString()!;
         
         
-
+;
+    
 
     var rset: ResultSet = this.executeSQLStatement(sqlStatement)!;
         
         
-
+;
+    
 
     var resultSetMetaData: ResultSetMetaData = rset.getMetaData()!;
         
         
-
+;
+    
 
         while(rset.next())
         {
 
-    var result: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var result: HashMap<any, any> = new HashMap<any, any>();
         
         
-
+;
+    
 
     var columnCount: number = resultSetMetaData!.getColumnCount()!;
         
         
-
+;
+    
 
 
 
@@ -960,29 +1141,35 @@ index <= columnCount; index++)
     var columnName: string = resultSetMetaData!.getColumnName(index)!;
         
         
-
+;
+    
 
     var field: string = rset.getString(columnName)!;
         
         
-
-result.put(columnName, field)
+;
+    
+result.put(columnName, field);
+    
 }
 
 
     var resultAsString: string = result.toString()!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.GET_ROW +resultAsString, this, this.METHOD_GET_ROWS)
+                                    logUtil!.put(this.GET_ROW +resultAsString, this, this.METHOD_GET_ROWS);
+    
 
                                     }
                                 
-rows.add(result)
+rows.add(result);
+    
 }
 
 
@@ -991,13 +1178,16 @@ rows.add(result)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return rows;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
                                     {
-                                    logUtil!.put(this.FAILED_SQL_STATEMENT +stringBuffer, this, this.METHOD_GET_ROWS, e)
+                                    logUtil!.put(this.FAILED_SQL_STATEMENT +stringBuffer, this, this.METHOD_GET_ROWS, e);
+    
 
                                     }
                                 
@@ -1017,16 +1207,20 @@ rows.add(result)
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(this.sqlStrings!.SELECT_ALL_FROM)
-stringBuffer!.append(this.getTableName())
+;
+    
+stringBuffer!.append(this.sqlStrings!.SELECT_ALL_FROM);
+    
+stringBuffer!.append(this.getTableName());
+    
 
         try {
             
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(sqlStrings!.SQL_STATEMENT_LABEL +stringBuffer, this, this.METHOD_GET_ALL_ROWS)
+                                    logUtil!.put(sqlStrings!.SQL_STATEMENT_LABEL +stringBuffer, this, this.METHOD_GET_ALL_ROWS);
+    
 
                                     }
                                 
@@ -1034,35 +1228,41 @@ stringBuffer!.append(this.getTableName())
     var rows: Vector = new Vector();
         
         
-
+;
+    
 
     var sqlStatement: string = stringBuffer!.toString()!;
         
         
-
+;
+    
 
     var rset: ResultSet = this.executeSQLStatement(sqlStatement)!;
         
         
-
+;
+    
 
     var resultSetMetaData: ResultSetMetaData = rset.getMetaData()!;
         
         
-
+;
+    
 
         while(rset.next())
         {
 
-    var result: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var result: HashMap<any, any> = new HashMap<any, any>();
         
         
-
+;
+    
 
     var columnCount: number = resultSetMetaData!.getColumnCount()!;
         
         
-
+;
+    
 
 
 
@@ -1077,24 +1277,29 @@ index <= columnCount; index++)
     var columnName: string = resultSetMetaData!.getColumnName(index)!;
         
         
-
+;
+    
 
     var field: string = rset.getString(columnName)!;
         
         
-
-result.put(columnName, field)
+;
+    
+result.put(columnName, field);
+    
 }
 
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(ROW_VALUES_LABEL +result.toString(), this, this.METHOD_GET_ALL_ROWS)
+                                    logUtil!.put(ROW_VALUES_LABEL +result.toString(), this, this.METHOD_GET_ALL_ROWS);
+    
 
                                     }
                                 
-rows.add(result)
+rows.add(result);
+    
 }
 
 
@@ -1103,13 +1308,16 @@ rows.add(result)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return rows;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
                                     {
-                                    logUtil!.put(this.FAILED_SQL_STATEMENT +stringBuffer, this, this.METHOD_GET_ALL_ROWS, e)
+                                    logUtil!.put(this.FAILED_SQL_STATEMENT +stringBuffer, this, this.METHOD_GET_ALL_ROWS, e);
+    
 
                                     }
                                 
@@ -1124,7 +1332,7 @@ rows.add(result)
 }
 
 
-    public getRowsWhereBetween(whereKeyValuePairs: HashMap<Any, Any>, betweenColumn: string, smallest: string, largest: string): Vector{
+    public getRowsWhereBetween(whereKeyValuePairs: HashMap<any, any>, betweenColumn: string, smallest: string, largest: string): Vector{
     //var whereKeyValuePairs = whereKeyValuePairs
     //var betweenColumn = betweenColumn
     //var smallest = smallest
@@ -1133,39 +1341,49 @@ rows.add(result)
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(this.sqlStrings!.SELECT_ALL_FROM)
-stringBuffer!.append(this.getTableName())
+;
+    
+stringBuffer!.append(this.sqlStrings!.SELECT_ALL_FROM);
+    
+stringBuffer!.append(this.getTableName());
+    
 
         try {
             
     var rows: Vector = new Vector();
         
         
-
-stringBuffer!.append(sqlStrings!.WHERE)
+;
+    
+stringBuffer!.append(sqlStrings!.WHERE);
+    
 
     var set: Set = whereKeyValuePairs!.keySet()!;
         
         
-
+;
+    
 
     var key: string
-
+;
+    
 
     var value: string
+;
+    
 
-
-    var keyArray: any = {}[] = set.toArray()!;
+    var keyArray: any[] = set.toArray()!;
         
         
-
+;
+    
 
     var size: number = keyArray!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -1176,34 +1394,54 @@ stringBuffer!.append(sqlStrings!.WHERE)
         
 index < size; index++)
         {
-key= keyArray[index]! as String
-value= whereKeyValuePairs!.get(key) as String
-stringBuffer!.append(key)
-stringBuffer!.append(sqlStrings!.EQUAL_QUOTE)
-stringBuffer!.append(this.getValue(value))
-stringBuffer!.append(sqlStrings!.CLOSE_QUOTE)
-stringBuffer!.append(sqlStrings!.AND)
+key= keyArray[index]! as String;
+    
+value= whereKeyValuePairs!.get(key);
+
+                         as String;
+    
+stringBuffer!.append(key);
+    
+stringBuffer!.append(sqlStrings!.EQUAL_QUOTE);
+    
+stringBuffer!.append(this.getValue(value));
+    
+stringBuffer!.append(sqlStrings!.CLOSE_QUOTE);
+    
+stringBuffer!.append(sqlStrings!.AND);
+    
 }
 
-stringBuffer!.append(betweenColumn)
-stringBuffer!.append(this.sqlStrings!.MORE_THAN_QUOTE)
-stringBuffer!.append(smallest)
-stringBuffer!.append(sqlStrings!.CLOSE_QUOTE)
-stringBuffer!.append(sqlStrings!.AND)
-stringBuffer!.append(betweenColumn)
-stringBuffer!.append(this.sqlStrings!.LESS_THAN_QUOTE)
-stringBuffer!.append(largest)
-stringBuffer!.append(sqlStrings!.CLOSE_QUOTE)
+stringBuffer!.append(betweenColumn);
+    
+stringBuffer!.append(this.sqlStrings!.MORE_THAN_QUOTE);
+    
+stringBuffer!.append(smallest);
+    
+stringBuffer!.append(sqlStrings!.CLOSE_QUOTE);
+    
+stringBuffer!.append(sqlStrings!.AND);
+    
+stringBuffer!.append(betweenColumn);
+    
+stringBuffer!.append(this.sqlStrings!.LESS_THAN_QUOTE);
+    
+stringBuffer!.append(largest);
+    
+stringBuffer!.append(sqlStrings!.CLOSE_QUOTE);
+    
 
     var sqlStatement: string = stringBuffer!.toString()!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(sqlStrings!.SQL_STATEMENT_LABEL +sqlStatement, this, METHOD_GET_ROWS_WHERE_BETWEEN)
+                                    logUtil!.put(sqlStrings!.SQL_STATEMENT_LABEL +sqlStatement, this, METHOD_GET_ROWS_WHERE_BETWEEN);
+    
 
                                     }
                                 
@@ -1211,33 +1449,43 @@ stringBuffer!.append(sqlStrings!.CLOSE_QUOTE)
     var rset: ResultSet = this.executeSQLStatement(sqlStatement)!;
         
         
-
+;
+    
 
     var resultSetMetaData: ResultSetMetaData = rset.getMetaData()!;
         
         
+;
+    
 
-
-    var result: HashMap<Any, Any>
-
+    var result: HashMap<any, any>
+;
+    
 
     var columnNames: Vector
-
+;
+    
 
     var columnCount: number= 0
-
+;
+    
 
     var columnName: string
-
+;
+    
 
     var field: string
-
+;
+    
 
         while(rset.next())
         {
-result= HashMap<Any, Any>()
-columnNames= Vector()
-columnCount= resultSetMetaData!.getColumnCount()
+result= HashMap<any, any>();
+    
+columnNames= Vector();
+    
+columnCount= resultSetMetaData!.getColumnCount();
+    
 
 
 
@@ -1248,20 +1496,25 @@ columnCount= resultSetMetaData!.getColumnCount()
         
 index <= columnCount; index++)
         {
-columnName= resultSetMetaData!.getColumnName(index)
-field= rset.getString(columnName)
-result.put(columnName, field)
+columnName= resultSetMetaData!.getColumnName(index);
+    
+field= rset.getString(columnName);
+    
+result.put(columnName, field);
+    
 }
 
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(ROW_VALUE_LABEL +result.toString(), this, METHOD_GET_ROWS_WHERE_BETWEEN)
+                                    logUtil!.put(ROW_VALUE_LABEL +result.toString(), this, METHOD_GET_ROWS_WHERE_BETWEEN);
+    
 
                                     }
                                 
-rows.add(result)
+rows.add(result);
+    
 }
 
 
@@ -1270,13 +1523,16 @@ rows.add(result)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return rows;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
                                     {
-                                    logUtil!.put(this.FAILED_SQL_STATEMENT +stringBuffer, this, METHOD_GET_ROWS_WHERE_BETWEEN, e)
+                                    logUtil!.put(this.FAILED_SQL_STATEMENT +stringBuffer, this, METHOD_GET_ROWS_WHERE_BETWEEN, e);
+    
 
                                     }
                                 
@@ -1299,36 +1555,52 @@ rows.add(result)
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(this.sqlStrings!.SELECT_ALL_FROM)
-stringBuffer!.append(this.getTableName())
+;
+    
+stringBuffer!.append(this.sqlStrings!.SELECT_ALL_FROM);
+    
+stringBuffer!.append(this.getTableName());
+    
 
         try {
             
     var rows: Vector = new Vector();
         
         
-
-stringBuffer!.append(sqlStrings!.WHERE)
-stringBuffer!.append(betweenColumn)
-stringBuffer!.append(this.sqlStrings!.MORE_THAN_QUOTE)
-stringBuffer!.append(smallest)
-stringBuffer!.append(sqlStrings!.CLOSE_QUOTE)
-stringBuffer!.append(sqlStrings!.AND)
-stringBuffer!.append(betweenColumn)
-stringBuffer!.append(this.sqlStrings!.LESS_THAN_QUOTE)
-stringBuffer!.append(largest)
-stringBuffer!.append(sqlStrings!.CLOSE_QUOTE)
+;
+    
+stringBuffer!.append(sqlStrings!.WHERE);
+    
+stringBuffer!.append(betweenColumn);
+    
+stringBuffer!.append(this.sqlStrings!.MORE_THAN_QUOTE);
+    
+stringBuffer!.append(smallest);
+    
+stringBuffer!.append(sqlStrings!.CLOSE_QUOTE);
+    
+stringBuffer!.append(sqlStrings!.AND);
+    
+stringBuffer!.append(betweenColumn);
+    
+stringBuffer!.append(this.sqlStrings!.LESS_THAN_QUOTE);
+    
+stringBuffer!.append(largest);
+    
+stringBuffer!.append(sqlStrings!.CLOSE_QUOTE);
+    
 
     var sqlStatement: string = stringBuffer!.toString()!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(sqlStrings!.SQL_STATEMENT_LABEL +sqlStatement, this, METHOD_GET_ROWS_WHERE_BETWEEN)
+                                    logUtil!.put(sqlStrings!.SQL_STATEMENT_LABEL +sqlStatement, this, METHOD_GET_ROWS_WHERE_BETWEEN);
+    
 
                                     }
                                 
@@ -1336,33 +1608,43 @@ stringBuffer!.append(sqlStrings!.CLOSE_QUOTE)
     var rset: ResultSet = this.executeSQLStatement(sqlStatement)!;
         
         
-
+;
+    
 
     var resultSetMetaData: ResultSetMetaData = rset.getMetaData()!;
         
         
-
+;
+    
 
     var columnName: string
-
+;
+    
 
     var field: string
+;
+    
 
-
-    var result: HashMap<Any, Any>
-
+    var result: HashMap<any, any>
+;
+    
 
     var columnNames: Vector
-
+;
+    
 
     var columnCount: number= 0
-
+;
+    
 
         while(rset.next())
         {
-result= HashMap<Any, Any>()
-columnNames= Vector()
-columnCount= resultSetMetaData!.getColumnCount()
+result= HashMap<any, any>();
+    
+columnNames= Vector();
+    
+columnCount= resultSetMetaData!.getColumnCount();
+    
 
 
 
@@ -1373,20 +1655,25 @@ columnCount= resultSetMetaData!.getColumnCount()
         
 index <= columnCount; index++)
         {
-columnName= resultSetMetaData!.getColumnName(index)
-field= rset.getString(columnName)
-result.put(columnName, field)
+columnName= resultSetMetaData!.getColumnName(index);
+    
+field= rset.getString(columnName);
+    
+result.put(columnName, field);
+    
 }
 
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(ROW_VALUE_LABEL +result.toString(), this, METHOD_GET_ROWS_WHERE_BETWEEN)
+                                    logUtil!.put(ROW_VALUE_LABEL +result.toString(), this, METHOD_GET_ROWS_WHERE_BETWEEN);
+    
 
                                     }
                                 
-rows.add(result)
+rows.add(result);
+    
 }
 
 
@@ -1395,13 +1682,16 @@ rows.add(result)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return rows;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
                                     {
-                                    logUtil!.put(this.FAILED_SQL_STATEMENT +stringBuffer, this, METHOD_GET_ROWS_WHERE_BETWEEN, e)
+                                    logUtil!.put(this.FAILED_SQL_STATEMENT +stringBuffer, this, METHOD_GET_ROWS_WHERE_BETWEEN, e);
+    
 
                                     }
                                 

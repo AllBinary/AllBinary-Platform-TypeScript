@@ -45,7 +45,8 @@ public constructor (booleanVisitorInterface: VisitorInterface){
 
             super();
             var booleanVisitorInterface = booleanVisitorInterface
-this.booleanVisitorInterface= booleanVisitorInterface
+this.booleanVisitorInterface= booleanVisitorInterface;
+    
 }
 
 
@@ -55,14 +56,18 @@ var file = file
     var abFile: AbFile = FileWrapperUtil.wrapFile(file)!;
         
         
+;
+    
 
+    var isFileAcceptable: boolean = visit = this.booleanVisitorInterface!.visit(abFile);
 
-    var isFileAcceptable: boolean = visit = this.booleanVisitorInterface!.visit(abFile)visit as Boolean
+                        visit as Boolean
 visit.
                     !;
         
         
-
+;
+    
 
 
 
@@ -75,12 +80,15 @@ visit.
     public accept(file: AbFile): boolean{
 var file = file
 
-    var isFileAcceptable: boolean = visit = this.booleanVisitorInterface!.visit(file)visit as Boolean
+    var isFileAcceptable: boolean = visit = this.booleanVisitorInterface!.visit(file);
+
+                        visit as Boolean
 visit.
                     !;
         
         
-
+;
+    
 
 
 

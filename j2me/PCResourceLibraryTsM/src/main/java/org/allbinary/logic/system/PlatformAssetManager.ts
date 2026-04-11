@@ -52,12 +52,14 @@ export class PlatformAssetManager
     var resourceUtil: ResourceUtil = ResourceUtil.getInstance()!;
         
         
-
+;
+    
 
     var inputStream: InputStream = resourceUtil!.getResourceAsStream(resource)!;
         
         
-
+;
+    
 
 
 

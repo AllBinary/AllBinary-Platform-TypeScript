@@ -62,10 +62,14 @@ public constructor (before: string, type: string, name: string, after: string){
 var type = type
 var name = name
 var after = after
-this.before= before
-this.type= type
-this.name= name
-this.after= after
+this.before= before;
+    
+this.type= type;
+    
+this.name= name;
+    
+this.after= after;
+    
 }
 
 
@@ -74,31 +78,43 @@ this.after= after
     var stringUtil: StringUtil = StringUtil.getInstance()!;
         
         
-
+;
+    
 
     var result: string = stringUtil!.EMPTY_STRING;
         
         
+;
+    
 
-
-    var attributeKeys: any = {}[] = otherAttributes!.keySet()!.toTypedArray()!;
+    var attributeKeys: any[] = otherAttributes!.keySet()!.toTypedArray()!;
         
         
-
+;
+    
 
     var attributeSize: number = attributeKeys!.length
                 ;
         
         
-
-result= before
-result += STARTINPUT
-result += TYPE
-result += type
-result += "\" "
-result += NAME
-result += name
-result += "\" "
+;
+    
+result= before;
+    
+result += STARTINPUT;
+    
+result += TYPE;
+    
+result += type;
+    
+result += "\" ";
+    
+result += NAME;
+    
+result += name;
+    
+result += "\" ";
+    
 
 
 
@@ -113,30 +129,41 @@ i < attributeSize; i++)
     var key: string = attributeKeys[i]! as String;
         
         
+;
+    
 
+    var value: string = otherAttributes!.get(key);
 
-    var value: string = otherAttributes!.get(key) as String;
+                         as String;
         
         
-
+;
+    
 
                         if(value != 
                                     null
                                  && value.compareTo(stringUtil!.EMPTY_STRING) != 0)
                         
                                     {
-                                    result += key
-result += "=\""
-result += value
-result += "\" "
+                                    result += key;
+    
+result += "=\"";
+    
+result += value;
+    
+result += "\" ";
+    
 
                                     }
                                 
 }
 
-result += END
-result += ENDINPUT
-result += after
+result += END;
+    
+result += ENDINPUT;
+    
+result += after;
+    
 
 
 

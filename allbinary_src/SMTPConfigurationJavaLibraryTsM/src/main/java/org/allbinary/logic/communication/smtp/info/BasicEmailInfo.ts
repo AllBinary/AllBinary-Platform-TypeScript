@@ -61,13 +61,17 @@ var textBody = textBody
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
+;
+    
+logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
+    
 
                                     }
                                 
-this.subject= subject
-this.textBody= textBody
+this.subject= subject;
+    
+this.textBody= textBody;
+    
 }
 
 
@@ -103,7 +107,8 @@ this.textBody= textBody
 
     public setEmailServerConfigurationInterface(emailServerConfigurationInterface: EmailServerConfigurationInterface){
 var emailServerConfigurationInterface = emailServerConfigurationInterface
-this.emailServerConfigurationInterface= emailServerConfigurationInterface
+this.emailServerConfigurationInterface= emailServerConfigurationInterface;
+    
 }
 
 
@@ -112,18 +117,27 @@ this.emailServerConfigurationInterface= emailServerConfigurationInterface
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(this.getEmailServerConfigurationInterface()!.toString())
-stringBuffer!.append(CommonSeps.getInstance()!.NEW_LINE)
-stringBuffer!.append("Subject: \n")
-stringBuffer!.append(this.getSubject())
-stringBuffer!.append("\nText Body: \n")
-stringBuffer!.append(this.getTextBody())
+;
+    
+stringBuffer!.append(this.getEmailServerConfigurationInterface()!.toString());
+    
+stringBuffer!.append(CommonSeps.getInstance()!.NEW_LINE);
+    
+stringBuffer!.append("Subject: \n");
+    
+stringBuffer!.append(this.getSubject());
+    
+stringBuffer!.append("\nText Body: \n");
+    
+stringBuffer!.append(this.getTextBody());
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

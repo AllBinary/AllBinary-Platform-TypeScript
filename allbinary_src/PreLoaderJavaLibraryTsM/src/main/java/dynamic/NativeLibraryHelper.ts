@@ -29,12 +29,14 @@ public constructor (library: string){
 
             super();
             var library = library
-this.library= library
+this.library= library;
+    
 }
 
 
     public load(){
-System.loadLibrary(library)
+System.loadLibrary(library);
+    
 }
 
 

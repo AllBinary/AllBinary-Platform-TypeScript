@@ -85,6 +85,8 @@ private constructor (){
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.createImage(imageCache, originalImage, scaleNominatorX, scaleDenominatorX, scaleNominatorY, scaleDenominatorY, cached, true);
+
+                        ;
     
 }
 
@@ -104,39 +106,47 @@ private constructor (){
     var width: number = originalImage!.getWidth()!;
         
         
-
+;
+    
 
     var height: number = originalImage!.getHeight()!;
         
         
-
+;
+    
 
     var scaleX: number = scaleNominatorX /scaleDenominatorX;
         
         
-
+;
+    
 
     var scaleY: number = scaleNominatorY /scaleDenominatorY;
         
         
-
+;
+    
 
     var image: Image
-
+;
+    
 
                         if(cached)
                         
                                     {
-                                    image= imageCache!.get(this::class.toString()!, (width *scaleX).toInt(), (height *scaleY).toInt())
+                                    image= imageCache!.get(this.constructor.name.toString()!, (width *scaleX).toInt(), (height *scaleY).toInt());
+    
 
                                     }
                                 
                         else {
-                            image= imageCache!.get("createImage", (width *scaleX).toInt(), (height *scaleY).toInt())
+                            image= imageCache!.get("createImage", (width *scaleX).toInt(), (height *scaleY).toInt());
+    
 
                         }
                             
-this.scale(originalImage, image, scaleX, scaleY, true)
+this.scale(originalImage, image, scaleX, scaleY, true);
+    
 
 
 
@@ -161,11 +171,13 @@ this.scale(originalImage, image, scaleX, scaleY, true)
                         if(maxScaleX *originalImage!.getWidth() > originalImageArray[0]!.getWidth() || maxScaleY *originalImage!.getHeight() > originalImageArray[0]!.getHeight())
                         
                                     {
-                                    originalImageArray[0]= this.imageCreationUtil!.createImage(originalImage!.getWidth(), originalImage!.getHeight(), maxScaleX, maxScaleY)
+                                    originalImageArray[0]= this.imageCreationUtil!.createImage(originalImage!.getWidth(), originalImage!.getHeight(), maxScaleX, maxScaleY);
+    
 
                                     }
                                 
-this.scale(originalImage, originalImageArray[0]!, scaleX, scaleY, false)
+this.scale(originalImage, originalImageArray[0]!, scaleX, scaleY, false);
+    
 }
 
 
@@ -179,33 +191,41 @@ this.scale(originalImage, originalImageArray[0]!, scaleX, scaleY, false)
     var bufferedImage: BufferedImage = this.imageUtil!.getBufferedImage(originalImage)!;
         
         
-
+;
+    
 
     var newBufferedImage: BufferedImage = this.imageUtil!.getBufferedImage(newMaxSizeImage)!;
         
         
-
+;
+    
 
     var at: AffineTransform = AffineTransform.getScaleInstance(scaleX, scaleY)!;
         
         
-
+;
+    
 
     var g: Graphics2D = newBufferedImage!.createGraphics()!;
         
         
-
+;
+    
 
                         if(clear)
                         
                                     {
-                                    g.setBackground(imageJ2SEUtil!.TRANSPARENT_COLOR)
-g.clearRect(0, 0, newBufferedImage!.getWidth(), newBufferedImage!.getHeight())
+                                    g.setBackground(imageJ2SEUtil!.TRANSPARENT_COLOR);
+    
+g.clearRect(0, 0, newBufferedImage!.getWidth(), newBufferedImage!.getHeight());
+    
 
                                     }
                                 
-g.drawRenderedImage(bufferedImage, at)
-g.dispose()
+g.drawRenderedImage(bufferedImage, at);
+    
+g.dispose();
+    
 }
 
 

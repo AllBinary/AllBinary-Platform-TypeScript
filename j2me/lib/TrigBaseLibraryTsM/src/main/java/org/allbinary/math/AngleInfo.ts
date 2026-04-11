@@ -57,7 +57,8 @@ private constructor (angleIncrementInfo: AngleIncrementInfo){
 
             super();
             var angleIncrementInfo = angleIncrementInfo
-this.angleIncrementInfo= angleIncrementInfo
+this.angleIncrementInfo= angleIncrementInfo;
+    
 }
 
 
@@ -71,8 +72,12 @@ var frame = frame
     var newAngle: number = this.angleIncrementInfo!.getAngleIncrement() *frame -90;
         
         
+;
+    
+this.setAngle(frameUtil!.adjustAngleToFrameAngle(newAngle);
 
-this.setAngle(frameUtil!.adjustAngleToFrameAngle(newAngle).toShort())
+                        .toShort());
+    
 }
 
 
@@ -88,7 +93,8 @@ this.setAngle(frameUtil!.adjustAngleToFrameAngle(newAngle).toShort())
 
     public setAngle(angle: number){
 var angle = angle
-this.angle= angle
+this.angle= angle;
+    
 }
 
 
@@ -107,16 +113,23 @@ this.angle= angle
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(ANGLE)
-stringBuffer!.appendshort(this.angle)
-stringBuffer!.append(CommonSeps.getInstance()!.SPACE)
-stringBuffer!.append(StringUtil.getInstance()!.toString(this.getAngleIncrementInfo()))
+;
+    
+stringBuffer!.append(ANGLE);
+    
+stringBuffer!.appendshort(this.angle);
+    
+stringBuffer!.append(CommonSeps.getInstance()!.SPACE);
+    
+stringBuffer!.append(StringUtil.getInstance()!.toString(this.getAngleIncrementInfo()));
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

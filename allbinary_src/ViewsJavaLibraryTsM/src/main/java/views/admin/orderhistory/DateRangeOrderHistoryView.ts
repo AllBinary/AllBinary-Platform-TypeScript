@@ -18,10 +18,13 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { Calendar } from "../../../java/util/Calendar.js";
 
     
-import { Vector } from "../../../java/util/Vector.js";
+
+//import { Vector } from "../../../java/util/Vector.js";
 
     
 import { HttpServletRequest } from "../../../javax/servlet/http/HttpServletRequest.js";
@@ -161,32 +164,52 @@ public constructor (transformInfoInterface: TransformInfoInterface)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.request= this.getPageContext()!.getRequest() as HttpServletRequest
-this.getFormData()
+this.request= this.getPageContext()!.getRequest();
+
+                         as HttpServletRequest;
+    
+this.getFormData();
+    
 }
 
 
     getFormData(){
-this.dateType= request.getParameter(OrderHistoryData.DATETYPE)
-this.preprocessing= request.getParameter(OrderHistoryData.PREPROCESSINGNAME)
-this.shipped= request.getParameter(OrderHistoryData.SHIPPEDNAME)
-this.partiallyShipped= request.getParameter(OrderHistoryData.PARTIALLYSHIPPEDNAME)
-this.processing= request.getParameter(OrderHistoryData.PROCESSINGNAME)
-this.cancelled= request.getParameter(OrderHistoryData.CANCELLEDNAME)
-this.fromYear= request.getParameter(OrderHistoryData.FROMYEAR)
-this.fromMonth= request.getParameter(OrderHistoryData.FROMMONTH)
-this.fromDay= request.getParameter(OrderHistoryData.FROMDAY)
-this.fromHour= request.getParameter(OrderHistoryData.FROMHOUR)
-this.toYear= request.getParameter(OrderHistoryData.TOYEAR)
-this.toMonth= request.getParameter(OrderHistoryData.TOMONTH)
-this.toDay= request.getParameter(OrderHistoryData.TODAY)
-this.toHour= request.getParameter(OrderHistoryData.TOHOUR)
-this.command= request.getParameter(GLOBALS2.ADMINCOMMAND)
+this.dateType= request.getParameter(OrderHistoryData.DATETYPE);
+    
+this.preprocessing= request.getParameter(OrderHistoryData.PREPROCESSINGNAME);
+    
+this.shipped= request.getParameter(OrderHistoryData.SHIPPEDNAME);
+    
+this.partiallyShipped= request.getParameter(OrderHistoryData.PARTIALLYSHIPPEDNAME);
+    
+this.processing= request.getParameter(OrderHistoryData.PROCESSINGNAME);
+    
+this.cancelled= request.getParameter(OrderHistoryData.CANCELLEDNAME);
+    
+this.fromYear= request.getParameter(OrderHistoryData.FROMYEAR);
+    
+this.fromMonth= request.getParameter(OrderHistoryData.FROMMONTH);
+    
+this.fromDay= request.getParameter(OrderHistoryData.FROMDAY);
+    
+this.fromHour= request.getParameter(OrderHistoryData.FROMHOUR);
+    
+this.toYear= request.getParameter(OrderHistoryData.TOYEAR);
+    
+this.toMonth= request.getParameter(OrderHistoryData.TOMONTH);
+    
+this.toDay= request.getParameter(OrderHistoryData.TODAY);
+    
+this.toHour= request.getParameter(OrderHistoryData.TOHOUR);
+    
+this.command= request.getParameter(GLOBALS2.ADMINCOMMAND);
+    
 }
 
 
     public addDomNodeInterfaces(){
-this.addDomNodeInterface(this as DomNodeInterface)
+this.addDomNodeInterface(this as DomNodeInterface);
+    
 }
 
 
@@ -195,20 +218,26 @@ this.addDomNodeInterface(this as DomNodeInterface)
     public view(): string{
 
         try {
-            this.addDomNodeInterfaces()
+            this.addDomNodeInterfaces();
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.view();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e);
+    
 
                                     }
                                 
@@ -233,13 +262,20 @@ var document = document
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("Attempt to View orders in (fromDate=")
-stringBuffer!.append(this.fromDate)
-stringBuffer!.append(",toDate=")
-stringBuffer!.append(this.toDate)
-stringBuffer!.append(") and status")
-logUtil!.put(stringBuffer!.toString(), this, "view")
+;
+    
+stringBuffer!.append("Attempt to View orders in (fromDate=");
+    
+stringBuffer!.append(this.fromDate);
+    
+stringBuffer!.append(",toDate=");
+    
+stringBuffer!.append(this.toDate);
+    
+stringBuffer!.append(") and status");
+    
+logUtil!.put(stringBuffer!.toString(), this, "view");
+    
 
                                     }
                                 
@@ -247,7 +283,8 @@ logUtil!.put(stringBuffer!.toString(), this, "view")
     var node: Node = document.createElement(OrderData.ORDERS)!;
         
         
-
+;
+    
 
                         if(preprocessing != 
                                     null
@@ -258,7 +295,8 @@ logUtil!.put(stringBuffer!.toString(), this, "view")
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Adding Preprocessing Orders", this, "toXmlNode")
+                                    logUtil!.put("Adding Preprocessing Orders", this, "toXmlNode");
+    
 
                                     }
                                 
@@ -266,12 +304,14 @@ logUtil!.put(stringBuffer!.toString(), this, "view")
     var orderHistoryVector: Vector = OrderHistoryEntityFactory.getInstance()!.getOrders(OrderHistoryData.PREPROCESSING, fromDate, toDate)!;
         
         
-
+;
+    
 
     var size: number = orderHistoryVector!.length!;
         
         
-
+;
+    
 
 
 
@@ -283,11 +323,15 @@ logUtil!.put(stringBuffer!.toString(), this, "view")
 index < size; index++)
         {
 
-    var orderHistory: OrderHistory = orderHistoryVector!.get(index) as OrderHistory;
-        
-        
+    var orderHistory: OrderHistory = orderHistoryVector!.get(index);
 
-node.appendChild(orderHistory!.toXmlNode(document))
+                         as OrderHistory;
+        
+        
+;
+    
+node.appendChild(orderHistory!.toXmlNode(document));
+    
 }
 
 
@@ -303,7 +347,8 @@ node.appendChild(orderHistory!.toXmlNode(document))
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Adding Shipped Orders", this, "toXmlNode")
+                                    logUtil!.put("Adding Shipped Orders", this, "toXmlNode");
+    
 
                                     }
                                 
@@ -311,12 +356,14 @@ node.appendChild(orderHistory!.toXmlNode(document))
     var orderHistoryVector: Vector = OrderHistoryEntityFactory.getInstance()!.getOrders(OrderHistoryData.SHIPPED, fromDate, toDate)!;
         
         
-
+;
+    
 
     var size: number = orderHistoryVector!.length!;
         
         
-
+;
+    
 
 
 
@@ -328,11 +375,15 @@ node.appendChild(orderHistory!.toXmlNode(document))
 index < size; index++)
         {
 
-    var orderHistory: OrderHistory = orderHistoryVector!.get(index) as OrderHistory;
-        
-        
+    var orderHistory: OrderHistory = orderHistoryVector!.get(index);
 
-node.appendChild(orderHistory!.toXmlNode(document))
+                         as OrderHistory;
+        
+        
+;
+    
+node.appendChild(orderHistory!.toXmlNode(document));
+    
 }
 
 
@@ -348,7 +399,8 @@ node.appendChild(orderHistory!.toXmlNode(document))
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Adding Partially Shipped Orders", this, "toDomNode")
+                                    logUtil!.put("Adding Partially Shipped Orders", this, "toDomNode");
+    
 
                                     }
                                 
@@ -356,12 +408,14 @@ node.appendChild(orderHistory!.toXmlNode(document))
     var orderHistoryVector: Vector = OrderHistoryEntityFactory.getInstance()!.getOrders(OrderHistoryData.PARTIALLYSHIPPED, fromDate, toDate)!;
         
         
-
+;
+    
 
     var size: number = orderHistoryVector!.length!;
         
         
-
+;
+    
 
 
 
@@ -373,11 +427,15 @@ node.appendChild(orderHistory!.toXmlNode(document))
 index < size; index++)
         {
 
-    var orderHistory: OrderHistory = orderHistoryVector!.get(index) as OrderHistory;
-        
-        
+    var orderHistory: OrderHistory = orderHistoryVector!.get(index);
 
-node.appendChild(orderHistory!.toXmlNode(document))
+                         as OrderHistory;
+        
+        
+;
+    
+node.appendChild(orderHistory!.toXmlNode(document));
+    
 }
 
 
@@ -393,7 +451,8 @@ node.appendChild(orderHistory!.toXmlNode(document))
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Adding Processing Orders", this, "toXmlNode")
+                                    logUtil!.put("Adding Processing Orders", this, "toXmlNode");
+    
 
                                     }
                                 
@@ -401,12 +460,14 @@ node.appendChild(orderHistory!.toXmlNode(document))
     var orderHistoryVector: Vector = OrderHistoryEntityFactory.getInstance()!.getOrders(OrderHistoryData.PROCESSING, fromDate, toDate)!;
         
         
-
+;
+    
 
     var size: number = orderHistoryVector!.length!;
         
         
-
+;
+    
 
 
 
@@ -418,11 +479,15 @@ node.appendChild(orderHistory!.toXmlNode(document))
 index < size; index++)
         {
 
-    var orderHistory: OrderHistory = orderHistoryVector!.get(index) as OrderHistory;
-        
-        
+    var orderHistory: OrderHistory = orderHistoryVector!.get(index);
 
-node.appendChild(orderHistory!.toXmlNode(document))
+                         as OrderHistory;
+        
+        
+;
+    
+node.appendChild(orderHistory!.toXmlNode(document));
+    
 }
 
 
@@ -438,7 +503,8 @@ node.appendChild(orderHistory!.toXmlNode(document))
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Adding Cancelled Orders", this, "view")
+                                    logUtil!.put("Adding Cancelled Orders", this, "view");
+    
 
                                     }
                                 
@@ -446,12 +512,14 @@ node.appendChild(orderHistory!.toXmlNode(document))
     var orderHistoryVector: Vector = OrderHistoryEntityFactory.getInstance()!.getOrders(OrderHistoryData.CANCELLED, fromDate, toDate)!;
         
         
-
+;
+    
 
     var size: number = orderHistoryVector!.length!;
         
         
-
+;
+    
 
 
 
@@ -463,35 +531,48 @@ node.appendChild(orderHistory!.toXmlNode(document))
 index < size; index++)
         {
 
-    var orderHistory: OrderHistory = orderHistoryVector!.get(index) as OrderHistory;
-        
-        
+    var orderHistory: OrderHistory = orderHistoryVector!.get(index);
 
-node.appendChild(orderHistory!.toXmlNode(document))
+                         as OrderHistory;
+        
+        
+;
+    
+node.appendChild(orderHistory!.toXmlNode(document));
+    
 }
 
 
                                     }
                                 
-node.appendChild(ModDomHelper.createNameValueNodes(document, OrderHistoryData.PREPROCESSINGNAME, OrderHistoryData.PREPROCESSING))
-node.appendChild(ModDomHelper.createNameValueNodes(document, OrderHistoryData.PROCESSINGNAME, OrderHistoryData.PROCESSING))
-node.appendChild(ModDomHelper.createNameValueNodes(document, OrderHistoryData.CANCELLEDNAME, OrderHistoryData.CANCELLED))
-node.appendChild(ModDomHelper.createNameValueNodes(document, OrderHistoryData.PARTIALLYSHIPPEDNAME, OrderHistoryData.PARTIALLYSHIPPED))
-node.appendChild(ModDomHelper.createNameValueNodes(document, OrderHistoryData.SHIPPEDNAME, OrderHistoryData.SHIPPED))
-node.appendChild(ModDomHelper.createNameValueNodes(document, GLOBALS2.VIEWNAME, GLOBALS2.VIEW))
+node.appendChild(ModDomHelper.createNameValueNodes(document, OrderHistoryData.PREPROCESSINGNAME, OrderHistoryData.PREPROCESSING));
+    
+node.appendChild(ModDomHelper.createNameValueNodes(document, OrderHistoryData.PROCESSINGNAME, OrderHistoryData.PROCESSING));
+    
+node.appendChild(ModDomHelper.createNameValueNodes(document, OrderHistoryData.CANCELLEDNAME, OrderHistoryData.CANCELLED));
+    
+node.appendChild(ModDomHelper.createNameValueNodes(document, OrderHistoryData.PARTIALLYSHIPPEDNAME, OrderHistoryData.PARTIALLYSHIPPED));
+    
+node.appendChild(ModDomHelper.createNameValueNodes(document, OrderHistoryData.SHIPPEDNAME, OrderHistoryData.SHIPPED));
+    
+node.appendChild(ModDomHelper.createNameValueNodes(document, GLOBALS2.VIEWNAME, GLOBALS2.VIEW));
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return node;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.XSLLOGGINGERROR))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.FAILURE, this, "toXmlNode", e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, "toXmlNode", e);
+    
 
                                     }
                                 
@@ -513,14 +594,16 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, GLOBALS2.VIEWNAME, 
     var isValid: Boolean = Boolean.TRUE;
         
         
-
+;
+    
 
                         if(dateType == 
                                     null
                                  || (dateType!.compareTo(OrderHistoryData.TYPELONG) != 0 && dateType!.compareTo(OrderHistoryData.TYPECAESAR) != 0))
                         
                                     {
-                                    isValid= Boolean.FALSE
+                                    isValid= Boolean.FALSE;
+    
 
                                     }
                                 
@@ -538,17 +621,20 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, GLOBALS2.VIEWNAME, 
     var calendar: Calendar = Calendar.getInstance()!;
         
         
-
+;
+    
 
     var currentTime: number = calendar.getTimeInMillis()!;
         
         
-
+;
+    
 
     var rangeDate: string = StringUtil.getInstance()!.EMPTY_STRING;
         
         
-
+;
+    
 
                         if(command.compareTo(VIEWORDERSINLASTHOUR) == 0)
                         
@@ -557,9 +643,11 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, GLOBALS2.VIEWNAME, 
     var oneHour: number = 60.toLong() *60 *1000;
         
         
-
+;
+    
 rangeDate= oneHour as Long.
-                            toString()
+                            toString();
+    
 
                                     }
                                 
@@ -571,9 +659,11 @@ rangeDate= oneHour as Long.
     var oneDay: number = 24.toLong() *60 *60 *1000;
         
         
-
+;
+    
 rangeDate= oneDay as Long.
-                            toString()
+                            toString();
+    
 
                                     }
                                 
@@ -585,9 +675,11 @@ rangeDate= oneDay as Long.
     var oneWeek: number = 7.toLong() *24 *60 *60 *1000;
         
         
-
+;
+    
 rangeDate= oneWeek as Long.
-                            toString()
+                            toString();
+    
 
                                     }
                                 
@@ -599,9 +691,11 @@ rangeDate= oneWeek as Long.
     var thirtyDays: number = 30.toLong() *24 *60 *60 *1000;
         
         
-
+;
+    
 rangeDate= thirtyDays as Long.
-                            toString()
+                            toString();
+    
 
                                     }
                                 
@@ -610,7 +704,8 @@ rangeDate= thirtyDays as Long.
                         
                                     {
                                     rangeDate= currentTime as Long.
-                            toString()
+                            toString();
+    
 
                                     }
                                 
@@ -619,17 +714,20 @@ rangeDate= thirtyDays as Long.
                             longValue()!;
         
         
-
+;
+    
 this.fromDate= currentTime -rangeDateLong as Long.
-                            toString()
+                            toString();
+    
 
     var time: string = new currentTime as Long.
-                            toString().toCharArray().concatToString()
-                                ;
+                            toString();
         
         
-
-this.toDate= time
+;
+    
+this.toDate= time;
+    
 
                                     }
                                 
@@ -641,13 +739,18 @@ this.toDate= time
     var calendar: Calendar = Calendar.getInstance()!;
         
         
-
-TimeUtil.getInstance()!.setCalendar(calendar, fromYear, fromMonth, fromDay, fromHour)
+;
+    
+TimeUtil.getInstance()!.setCalendar(calendar, fromYear, fromMonth, fromDay, fromHour);
+    
 this.fromDate= calendar.getTimeInMillis() as Long.
-                            toString()
-TimeUtil.getInstance()!.setCalendar(calendar, toYear, toMonth, toDay, toHour)
+                            toString();
+    
+TimeUtil.getInstance()!.setCalendar(calendar, toYear, toMonth, toDay, toHour);
+    
 this.toDate= calendar.getTimeInMillis() as Long.
-                            toString()
+                            toString();
+    
 
                                     }
                                 
@@ -655,7 +758,8 @@ this.toDate= calendar.getTimeInMillis() as Long.
                         if(StringValidationUtil.getInstance()!.isEmpty(toDate) || toDate!.length > MAXLEN)
                         
                                     {
-                                    isValid= Boolean.FALSE
+                                    isValid= Boolean.FALSE;
+    
 
                                     }
                                 
@@ -663,7 +767,8 @@ this.toDate= calendar.getTimeInMillis() as Long.
                         if(StringValidationUtil.getInstance()!.isEmpty(fromDate) || fromDate!.length > MAXLEN)
                         
                                     {
-                                    isValid= Boolean.FALSE
+                                    isValid= Boolean.FALSE;
+    
 
                                     }
                                 
@@ -678,13 +783,20 @@ this.toDate= calendar.getTimeInMillis() as Long.
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("Attempt to View orders in (fromDate=")
-stringBuffer!.append(this.fromDate)
-stringBuffer!.append(",toDate=")
-stringBuffer!.append(this.toDate)
-stringBuffer!.append(")")
-logUtil!.put(stringBuffer!.toString(), this, commonStrings!.IS_VALID)
+;
+    
+stringBuffer!.append("Attempt to View orders in (fromDate=");
+    
+stringBuffer!.append(this.fromDate);
+    
+stringBuffer!.append(",toDate=");
+    
+stringBuffer!.append(this.toDate);
+    
+stringBuffer!.append(")");
+    
+logUtil!.put(stringBuffer!.toString(), this, commonStrings!.IS_VALID);
+    
 
                                     }
                                 
@@ -694,13 +806,16 @@ logUtil!.put(stringBuffer!.toString(), this, commonStrings!.IS_VALID)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return isValid;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Exception in validation", this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put("Exception in validation", this, commonStrings!.IS_VALID, e);
+    
 
                                     }
                                 
@@ -745,14 +860,16 @@ var document = document
     var result: StringMaker = new StringMaker();
         
         
-
+;
+    
 
                         if(dateType == 
                                     null
                                  || (dateType!.compareTo(OrderHistoryData.TYPELONG) != 0 && dateType!.compareTo(OrderHistoryData.TYPECAESAR) != 0))
                         
                                     {
-                                    result.append("DATETYPE not recognized")
+                                    result.append("DATETYPE not recognized");
+    
 
                                     }
                                 
@@ -760,7 +877,8 @@ var document = document
                         if(StringValidationUtil.getInstance()!.isEmpty(toDate) || toDate!.length > MAXLEN)
                         
                                     {
-                                    result.append("Invalid To Date")
+                                    result.append("Invalid To Date");
+    
 
                                     }
                                 
@@ -768,7 +886,8 @@ var document = document
                         if(StringValidationUtil.getInstance()!.isEmpty(fromDate) || fromDate!.length > MAXLEN)
                         
                                     {
-                                    result.append("Invalid From Date")
+                                    result.append("Invalid From Date");
+    
 
                                     }
                                 
@@ -777,14 +896,19 @@ var document = document
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result.toString();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e)
+                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e);
+    
 
                                     }
                                 

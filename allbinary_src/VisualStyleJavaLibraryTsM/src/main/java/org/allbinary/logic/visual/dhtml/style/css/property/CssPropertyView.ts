@@ -46,14 +46,16 @@ public constructor (name: string){
 
             super();
             var name = name
-this.cssProperty= CssProperty(name)
+this.cssProperty= CssProperty(name);
+    
 }
 
 public constructor (node: Node){
 
             super();
             var node = node
-this.cssProperty= CssProperty(node)
+this.cssProperty= CssProperty(node);
+    
 }
 
 
@@ -76,6 +78,8 @@ var document = document
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.cssProperty!.toXmlNode(document);
+
+                        ;
     
 }
 

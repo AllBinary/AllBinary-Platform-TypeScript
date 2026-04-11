@@ -56,7 +56,8 @@ public constructor (imageComparatorConstraintsInterface: ImageComparatorConstrai
 
             super();
                 //var imageComparatorConstraintsInterface = imageComparatorConstraintsInterface
-this.imageComparatorConstraintsInterface= imageComparatorConstraintsInterface
+this.imageComparatorConstraintsInterface= imageComparatorConstraintsInterface;
+    
 }
 
 
@@ -69,7 +70,8 @@ this.imageComparatorConstraintsInterface= imageComparatorConstraintsInterface
     var isCollsionWithAvoidRectangles: boolean = this.imageComparatorConstraintsInterface!.isCollisionWithAvoidRectangles(point)!;
         
         
-
+;
+    
 
                         if(!isCollsionWithAvoidRectangles)
                         
@@ -78,47 +80,60 @@ this.imageComparatorConstraintsInterface= imageComparatorConstraintsInterface
     var rgb1: number = imageComparisonInfo!.getBufferedImages()[0]!.getRGB(point.getX(), point.getY())!;
         
         
-
+;
+    
 
     var rgb2: number = imageComparisonInfo!.getBufferedImages()[1]!.getRGB(point.getX(), point.getY())!;
         
         
-
+;
+    
 
     var automaticCacheInterface: AutomaticCacheInterface = ColorCacheFactory.getInstance()!;
         
         
-
+;
+    
 
     var colorInteger: Integer = Integer(Integer.valueOf(rgb1))!;
         
         
+;
+    
 
+    var colorCacheable: ColorCacheable = automaticCacheInterface!.get(colorInteger);
 
-    var colorCacheable: ColorCacheable = automaticCacheInterface!.get(colorInteger) as ColorCacheable;
+                         as ColorCacheable;
         
         
-
+;
+    
 
     var color: Color = colorCacheable!.getColor()!;
         
         
-
+;
+    
 
     var colorInteger2: Integer = Integer(Integer.valueOf(rgb2))!;
         
         
+;
+    
 
+    var colorCacheable2: ColorCacheable = automaticCacheInterface!.get(colorInteger);
 
-    var colorCacheable2: ColorCacheable = automaticCacheInterface!.get(colorInteger) as ColorCacheable;
+                         as ColorCacheable;
         
         
-
+;
+    
 
     var color2: Color = colorCacheable!.getColor()!;
         
         
-
+;
+    
 
                         if(this.imageComparatorConstraintsInterface!.isColorAllowed(0, point, color) || this.imageComparatorConstraintsInterface!.isColorAllowed(1, point, color2))
                         
@@ -127,12 +142,14 @@ this.imageComparatorConstraintsInterface= imageComparatorConstraintsInterface
                         if(Math.abs(rgb1 -rgb2) <= imageComparisonInfo!.getTolerance())
                         
                                     {
-                                    imageComparisonInfo!.pixelsThatMatch++
+                                    imageComparisonInfo!.pixelsThatMatch++;
+    
 
                                     }
                                 
                         else {
-                            imageComparisonInfo!.add(PixelDeltaFactory.getInstance(point.getX(), point.getY(), rgb1, rgb2))
+                            imageComparisonInfo!.add(PixelDeltaFactory.getInstance(point.getX(), point.getY(), rgb1, rgb2));
+    
 
                         }
                             
@@ -143,7 +160,8 @@ this.imageComparatorConstraintsInterface= imageComparatorConstraintsInterface
                                     }
                                 
                         else {
-                            imageComparisonInfo!.pixelsIgnored++
+                            imageComparisonInfo!.pixelsIgnored++;
+    
 
                         }
                             
@@ -163,6 +181,8 @@ this.imageComparatorConstraintsInterface= imageComparatorConstraintsInterface
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.compare(bufferedImage1, bufferedImage2, frameOne, frameTwo, tolerance, StringUtil.getInstance()!.EMPTY_STRING);
+
+                        ;
     
 }
 
@@ -195,7 +215,8 @@ this.imageComparatorConstraintsInterface= imageComparatorConstraintsInterface
     var imageComparisonInfo: ImageComparisonResult = new ImageComparisonResult(name, bufferedImage1, bufferedImage2, frameOne, frameTwo, tolerance);
         
         
-
+;
+    
 
 
 
@@ -216,7 +237,8 @@ indexY < imageComparisonInfo!.imageHeight; indexY++)
         
 indexX < imageComparisonInfo!.imageWidth; indexX++)
         {
-this.process(imageComparisonInfo, PointFactory.getInstance()!.getInstance(indexX, indexY))
+this.process(imageComparisonInfo, PointFactory.getInstance()!.getInstance(indexX, indexY));
+    
 
                         if(imageComparisonInfo!.getNonMatchingPixelVector()!.size() > this.imageComparatorConstraintsInterface!.getMaxNonMatchingPixelDeltas())
                         

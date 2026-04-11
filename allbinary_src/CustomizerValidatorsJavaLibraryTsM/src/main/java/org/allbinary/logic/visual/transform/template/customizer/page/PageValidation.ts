@@ -64,7 +64,8 @@ export class PageValidation extends Validation
 public constructor (){
 
             super();
-            this.title= TitleValidation()
+            this.title= TitleValidation();
+    
 }
 
 public constructor (document: Document){
@@ -75,21 +76,25 @@ public constructor (document: Document){
     var node: Node = DomSearchHelper.getNode(TitleData.getInstance()!.NAME, document.getElementsByTagName(PageData.getInstance()!.NAME))!;
         
         
-
-this.title= TitleValidation(node)
+;
+    
+this.title= TitleValidation(node);
+    
 }
 
-public constructor (hashMap: HashMap<Any, Any>){
+public constructor (hashMap: HashMap<any, any>){
 
             super();
             var hashMap = hashMap
-this.getFormData(hashMap)
+this.getFormData(hashMap);
+    
 }
 
 
-    public getFormData(hashMap: HashMap<Any, Any>){
+    public getFormData(hashMap: HashMap<any, any>){
 var hashMap = hashMap
-this.title= TitleValidation(hashMap)
+this.title= TitleValidation(hashMap);
+    
 }
 
 
@@ -100,28 +105,34 @@ this.title= TitleValidation(hashMap)
     var valid: Boolean = Boolean.TRUE;
         
         
-
-
-                        if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
-                        
-                                    {
-                                    logUtil!.put("PageValidation", this, commonStrings!.IS_VALID)
-
-                                    }
-                                
-
-                        if(!this.title.isValid())
-                        
-                                    {
-                                    valid= Boolean.FALSE
-
-                                    }
-                                
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("PageValidation: " +valid, this, commonStrings!.IS_VALID)
+                                    logUtil!.put("PageValidation", this, commonStrings!.IS_VALID);
+    
+
+                                    }
+                                
+
+                        if(!this.title.isValid();
+
+                        )
+                        
+                                    {
+                                    valid= Boolean.FALSE;
+    
+
+                                    }
+                                
+
+                        if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
+                        
+                                    {
+                                    logUtil!.put("PageValidation: " +valid, this, commonStrings!.IS_VALID);
+    
 
                                     }
                                 
@@ -131,13 +142,16 @@ this.title= TitleValidation(hashMap)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return valid;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put("Failed to validate form", this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put("Failed to validate form", this, commonStrings!.IS_VALID, e);
+    
 
                                     }
                                 
@@ -159,12 +173,16 @@ this.title= TitleValidation(hashMap)
     var stringBuffer: StringMaker = new StringMaker();
         
         
+;
+    
 
+                        if(!this.title.isValid();
 
-                        if(!this.title.isValid())
+                        )
                         
                                     {
-                                    stringBuffer!.append(this.title.validationInfo())
+                                    stringBuffer!.append(this.title.validationInfo());
+    
 
                                     }
                                 
@@ -173,14 +191,19 @@ this.title= TitleValidation(hashMap)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e)
+                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e);
+    
 
                                     }
                                 
@@ -224,8 +247,10 @@ var document = document
     var node: Node = document.createElement(PageData.getInstance()!.NAME)!;
         
         
-
-node.appendChild(this.title.toXmlNode(document))
+;
+    
+node.appendChild(this.title.toXmlNode(document));
+    
 
 
 

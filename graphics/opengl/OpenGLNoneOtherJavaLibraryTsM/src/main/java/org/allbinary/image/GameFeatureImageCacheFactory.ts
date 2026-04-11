@@ -30,17 +30,21 @@ export class GameFeatureImageCacheFactory
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return ImageCacheFactory.getInstance();
+
+                        ;
     
 }
 
 
     public static init(){
-ImageCacheFactory.init()
+ImageCacheFactory.init();
+    
 }
 
 
     public static releaseAll(){
-ImageCacheFactory.getInstance()!.releaseAll()
+ImageCacheFactory.getInstance()!.releaseAll();
+    
 }
 
 

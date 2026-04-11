@@ -18,7 +18,10 @@
 
 
 
-import { Hashtable } from "../../../java/util/Hashtable.js";
+            import Hashtable from "@ohos.util.HashMap";
+        
+
+//import { Hashtable } from "../../../java/util/Hashtable.js";
 
     
 import { Command } from "../../../javax/microedition/lcdui/Command.js";
@@ -63,14 +66,15 @@ export class CommandUriAction
         
         
 
-    private hashtable: Hashtable<Any, Any> = new Hashtable<Any, Any>();
+    private hashtable: Hashtable<any, any> = new Hashtable<any, any>();
         
         
 
     public add(command: Command, url: string){
 var command = command
 var url = url
-hashtable.put(command, url)
+hashtable.put(command, url);
+    
 }
 
 
@@ -82,16 +86,22 @@ var command = command
     var intent: Intent = getIntent(command)!;
         
         
+;
+    
+ResourceUtil.getInstance()!.getContext()!.startActivity(intent);
+    
 
-ResourceUtil.getInstance()!.getContext()!.startActivity(intent)
-} catch(e: Exception)
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e);
+    
 }
 
 }
@@ -100,20 +110,25 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e)
     public getIntent(command: Command): Intent{
 var command = command
 
-    var url: string = hashtable.get(command as Object) as String;
-        
-        
+    var url: string = hashtable.get(command as Object);
 
+                         as String;
+        
+        
+;
+    
 
     var uri: Uri = Uri.parse(url)!;
         
         
-
+;
+    
 
     var intent: Intent = new Intent(Intent.ACTION_VIEW, uri);
         
         
-
+;
+    
 
 
 

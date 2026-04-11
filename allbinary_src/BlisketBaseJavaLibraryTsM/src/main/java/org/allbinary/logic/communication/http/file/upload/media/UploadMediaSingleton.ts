@@ -58,7 +58,8 @@ export class UploadMediaSingleton
                                 )
                         
                                     {
-                                    UploadMediaSingleton.uploadMedia= UploadMediaSingleton()
+                                    UploadMediaSingleton.uploadMedia= UploadMediaSingleton();
+    
 
                                     }
                                 
@@ -79,35 +80,41 @@ export class UploadMediaSingleton
         
         
 
-    private readerFileTypesHashMap: HashMap<Any, Any>
+    private readerFileTypesHashMap: HashMap<any, any>
 
-    private writerFileTypesHashMap: HashMap<Any, Any>
+    private writerFileTypesHashMap: HashMap<any, any>
 private constructor (){
 
             super();
-            this.readerFileTypesHashMap= HashMap<Any, Any>()
-this.writerFileTypesHashMap= HashMap<Any, Any>()
+            this.readerFileTypesHashMap= HashMap<any, any>();
+    
+this.writerFileTypesHashMap= HashMap<any, any>();
+    
 
-    var hashMap: HashMap<Any, Any> = MediaData.toHashMap()!;
+    var hashMap: HashMap<any, any> = MediaData.toHashMap()!;
         
         
-
+;
+    
 
     var set: Set = hashMap!.keys!;
         
         
+;
+    
 
-
-    var mediaDataNameArray: any = {}[] = set.toArray()!;
+    var mediaDataNameArray: any[] = set.toArray()!;
         
         
-
+;
+    
 
     var size: number = mediaDataNameArray!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -122,30 +129,38 @@ index < size; index++)
     var mediaDataName: string = mediaDataNameArray[index]! as String;
         
         
+;
+    
 
+    var mediaData: MediaData = hashMap!.get(mediaDataName as Object);
 
-    var mediaData: MediaData = hashMap!.get(mediaDataName as Object) as MediaData;
+                         as MediaData;
         
         
-
-this.readerFileTypesHashMap!.put(mediaData!.getName(), mediaData!.getType())
+;
+    
+this.readerFileTypesHashMap!.put(mediaData!.getName(), mediaData!.getType());
+    
 }
 
 
     var mediaIOUtil: MediaIOUtil = MediaIOUtil.getInstance()!;
         
         
-
+;
+    
 
     var RESIZABLE_MEDIA: string = MediaTypeData.getInstance()!.RESIZABLE_MEDIA;
         
         
-
+;
+    
 
     var readerFileTypes: string[] = mediaIOUtil!.getReaderFormatNames()!;
         
         
-
+;
+    
 
 
 
@@ -156,14 +171,16 @@ this.readerFileTypesHashMap!.put(mediaData!.getName(), mediaData!.getType())
         
 index < readerFileTypes!.length; index++)
         {
-this.readerFileTypesHashMap!.put(readerFileTypes[index]!, RESIZABLE_MEDIA)
+this.readerFileTypesHashMap!.put(readerFileTypes[index]!, RESIZABLE_MEDIA);
+    
 }
 
 
     var writerFileTypes: string[] = mediaIOUtil!.getWriterFormatNames()!;
         
         
-
+;
+    
 
 
 
@@ -174,7 +191,8 @@ this.readerFileTypesHashMap!.put(readerFileTypes[index]!, RESIZABLE_MEDIA)
         
 index < writerFileTypes!.length; index++)
         {
-this.writerFileTypesHashMap!.put(writerFileTypes[index]!, RESIZABLE_MEDIA)
+this.writerFileTypesHashMap!.put(writerFileTypes[index]!, RESIZABLE_MEDIA);
+    
 }
 
 
@@ -185,12 +203,18 @@ this.writerFileTypesHashMap!.put(writerFileTypes[index]!, RESIZABLE_MEDIA)
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("Supported Media Readers: ")
-stringBuffer!.append(this.readerFileTypesHashMap!.toString())
-stringBuffer!.append(" Writers: ")
-stringBuffer!.append(this.writerFileTypesHashMap!.toString())
-logUtil!.put(stringBuffer!.toString(), this, this.commonStrings!.CONSTRUCTOR)
+;
+    
+stringBuffer!.append("Supported Media Readers: ");
+    
+stringBuffer!.append(this.readerFileTypesHashMap!.toString());
+    
+stringBuffer!.append(" Writers: ");
+    
+stringBuffer!.append(this.writerFileTypesHashMap!.toString());
+    
+logUtil!.put(stringBuffer!.toString(), this, this.commonStrings!.CONSTRUCTOR);
+    
 
                                     }
                                 
@@ -204,6 +228,8 @@ var mediaFileType = mediaFileType
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.readerFileTypesHashMap!.containsKey(mediaFileType);
+
+                        ;
     
 }
 
@@ -215,6 +241,8 @@ var mediaFileType = mediaFileType
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.readerFileTypesHashMap!.containsKey(mediaFileType);
+
+                        ;
     
 }
 
@@ -250,6 +278,8 @@ var aMediaType = aMediaType
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.isMedia(mediaFileType, aMediaType, this.readerFileTypesHashMap);
+
+                        ;
     
 }
 
@@ -262,11 +292,13 @@ var aMediaType = aMediaType
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.isMedia(mediaFileType, aMediaType, this.writerFileTypesHashMap);
+
+                        ;
     
 }
 
 
-    isMedia(mediaFileType: string, aMediaType: string, hashMap: HashMap<Any, Any>): boolean{
+    isMedia(mediaFileType: string, aMediaType: string, hashMap: HashMap<any, any>): boolean{
 var mediaFileType = mediaFileType
 var aMediaType = aMediaType
 var hashMap = hashMap
@@ -275,10 +307,13 @@ var hashMap = hashMap
                         
                                     {
                                     
-    var mediaType: string = hashMap!.get(mediaFileType as Object) as String;
-        
-        
+    var mediaType: string = hashMap!.get(mediaFileType as Object);
 
+                         as String;
+        
+        
+;
+    
 
                         if(mediaType!.compareTo(aMediaType) == 0)
                         

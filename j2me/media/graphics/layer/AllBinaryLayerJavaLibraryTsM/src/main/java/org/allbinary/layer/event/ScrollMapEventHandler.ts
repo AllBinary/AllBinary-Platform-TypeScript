@@ -59,8 +59,10 @@ var eventListenerInterface = eventListenerInterface
     var scrollMapEventListenerInterface: ScrollMapEventListenerInterface = (eventListenerInterface as ScrollMapEventListenerInterface);
         
         
-
-scrollMapEventListenerInterface!.onMoveEvent(eventObject as ScrollMapEvent)
+;
+    
+scrollMapEventListenerInterface!.onMoveEvent(eventObject as ScrollMapEvent);
+    
 }
 
 

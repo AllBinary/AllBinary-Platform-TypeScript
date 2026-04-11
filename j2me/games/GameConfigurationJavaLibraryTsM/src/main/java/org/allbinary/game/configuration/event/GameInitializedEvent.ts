@@ -51,8 +51,10 @@ public constructor (anyType: any = {})
 
     public setLevel(level: number){
 var level = level
-this.level= level
-this.resourceLoadingLevel= ResourceLoadingLevelFactory.getInstance()!.LEVEL
+this.level= level;
+    
+this.resourceLoadingLevel= ResourceLoadingLevelFactory.getInstance()!.LEVEL;
+    
 }
 
 
@@ -68,8 +70,10 @@ this.resourceLoadingLevel= ResourceLoadingLevelFactory.getInstance()!.LEVEL
 
     public setResourceLoadingLevel(resourceLoadingLevel: ResourceLoadingLevel){
 var resourceLoadingLevel = resourceLoadingLevel
-this.resourceLoadingLevel= resourceLoadingLevel
-level= this.resourceLoadingLevel!.getLevel()
+this.resourceLoadingLevel= resourceLoadingLevel;
+    
+level= this.resourceLoadingLevel!.getLevel();
+    
 }
 
 

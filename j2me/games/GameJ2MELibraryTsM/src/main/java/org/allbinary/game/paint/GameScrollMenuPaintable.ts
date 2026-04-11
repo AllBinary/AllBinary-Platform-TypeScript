@@ -62,14 +62,17 @@ var basicColor = basicColor
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setColor(basicColor)
-ColorChangeEventHandler.getInstance()!.addListener(this)
+this.setColor(basicColor);
+    
+ColorChangeEventHandler.getInstance()!.addListener(this);
+    
 }
 
 
     public setState(state: number){
 var state = state
-this.setCurrentStatePaintable(this.getMainDemoStatePaintable())
+this.setCurrentStatePaintable(this.getMainDemoStatePaintable());
+    
 }
 
 
@@ -81,22 +84,33 @@ var eventObject = eventObject
     setColor(basicColor: BasicColor){
 var basicColor = basicColor
 
-    var mainGameDemoStatePaintable: MainGameDemoStatePaintable = this.getMainDemoStatePaintable() as MainGameDemoStatePaintable;
-        
-        
+    var mainGameDemoStatePaintable: MainGameDemoStatePaintable = this.getMainDemoStatePaintable();
 
-
-    var formPaintable: FormPaintable = mainGameDemoStatePaintable!.getMenuPaintableInterface() as FormPaintable;
+                         as MainGameDemoStatePaintable;
         
         
+;
+    
 
+    var formPaintable: FormPaintable = mainGameDemoStatePaintable!.getMenuPaintableInterface();
 
-    var scrollSelectionForm: ScrollSelectionForm = formPaintable!.getForm() as ScrollSelectionForm;
+                         as FormPaintable;
         
         
+;
+    
 
-mainGameDemoStatePaintable!.getOwnershipPaintableInterface()!.setBasicColorP(basicColor)
-scrollSelectionForm!.setButtonBasicColor(basicColor)
+    var scrollSelectionForm: ScrollSelectionForm = formPaintable!.getForm();
+
+                         as ScrollSelectionForm;
+        
+        
+;
+    
+mainGameDemoStatePaintable!.getOwnershipPaintableInterface()!.setBasicColorP(basicColor);
+    
+scrollSelectionForm!.setButtonBasicColor(basicColor);
+    
 
 
 
@@ -108,22 +122,27 @@ scrollSelectionForm!.setButtonBasicColor(basicColor)
 index >= 0; index--)
         {
 
-    var item: TextItem = scrollSelectionForm!.get(index) as TextItem;
-        
-        
+    var item: TextItem = scrollSelectionForm!.get(index);
 
+                         as TextItem;
+        
+        
+;
+    
 
     var stringComponent: StringComponent = item.getLabelStringComponent()!;
         
         
-
+;
+    
 
                         if(stringComponent != 
                                     null
                                 )
                         
                                     {
-                                    stringComponent!.setForegroundBasicColor(basicColor)
+                                    stringComponent!.setForegroundBasicColor(basicColor);
+    
 
                                     }
                                 

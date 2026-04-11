@@ -119,20 +119,29 @@ public constructor (requiresOpenGLVersion: string, shaderArray: Shader[], compos
     //var colorOpenGLProcessor = colorOpenGLProcessor
     //var vertexOpenGLProcessor = vertexOpenGLProcessor
     //var disableProgramShaderOpenGLProcessor = disableProgramShaderOpenGLProcessor
-this.requiresOpenGLVersion= requiresOpenGLVersion
-this.shaderArray= shaderArray
-this.shaderInitializer= shaderInitializer
-this.compositeShaderUpdater= compositeShaderUpdater
-this.modelViewProjection= modelViewProjection
-this.colorOpenGLProcessor= colorOpenGLProcessor
-this.vertexOpenGLProcessor= vertexOpenGLProcessor
-this.disableProgramShaderOpenGLProcessor= disableProgramShaderOpenGLProcessor
+this.requiresOpenGLVersion= requiresOpenGLVersion;
+    
+this.shaderArray= shaderArray;
+    
+this.shaderInitializer= shaderInitializer;
+    
+this.compositeShaderUpdater= compositeShaderUpdater;
+    
+this.modelViewProjection= modelViewProjection;
+    
+this.colorOpenGLProcessor= colorOpenGLProcessor;
+    
+this.vertexOpenGLProcessor= vertexOpenGLProcessor;
+    
+this.disableProgramShaderOpenGLProcessor= disableProgramShaderOpenGLProcessor;
+    
 }
 
 
     public init(gl: GL10){
 var gl = gl
-this.programHandle= this.shaderInitializer!.init(gl, this.shaderArray, this.compositeShaderUpdater!.attributeArray)
+this.programHandle= this.shaderInitializer!.init(gl, this.shaderArray, this.compositeShaderUpdater!.attributeArray);
+    
 }
 
 

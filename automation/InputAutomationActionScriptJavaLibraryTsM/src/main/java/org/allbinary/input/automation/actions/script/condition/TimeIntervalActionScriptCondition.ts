@@ -75,7 +75,8 @@ public constructor (node: Node)
     var actionNode: Node = DomSearchHelper.getNode(TimeIntervalActionScriptConditionData.NAME, node.getChildNodes())!;
         
         
-
+;
+    
 
                         if(actionNode != 
                                     null
@@ -86,7 +87,8 @@ public constructor (node: Node)
     var nodeList: NodeList = actionNode!.getChildNodes()!;
         
         
-
+;
+    
 
 
 
@@ -101,7 +103,8 @@ index < nodeList!.getLength(); index++)
     var childNode: Node = nodeList!.item(index)!;
         
         
-
+;
+    
 
                         if(childNode!.getNodeName()!.compareTo(TimeIntervalActionScriptConditionData.TIME) == 0)
                         
@@ -110,8 +113,10 @@ index < nodeList!.getLength(); index++)
     var interval: string = DomNodeHelper.getTextNodeValue(childNode)!;
         
         
-
-this.setTimeDelayHelper(TimeDelayHelper(Integer(Integer.valueOf(interval))))
+;
+    
+this.setTimeDelayHelper(TimeDelayHelper(Integer(Integer.valueOf(interval))));
+    
 
                                     }
                                 
@@ -136,7 +141,8 @@ this.setTimeDelayHelper(TimeDelayHelper(Integer(Integer.valueOf(interval))))
 
                         }
                             
-this.init()
+this.init();
+    
 }
 
 public constructor ()                        
@@ -148,29 +154,36 @@ public constructor ()
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setTimeDelayHelper(TimeDelayHelper(0))
-this.init()
+this.setTimeDelayHelper(TimeDelayHelper(0));
+    
+this.init();
+    
 }
 
 
     init(){
-this.timeIntervalActionScriptConditionJPanel= TimeIntervalActionScriptConditionJPanel(this)
+this.timeIntervalActionScriptConditionJPanel= TimeIntervalActionScriptConditionJPanel(this);
+    
 }
 
 
     public showDialog(){
-this.timeIntervalActionScriptConditionJPanel!.getTimeIntervalActionJDialog()!.setVisible(true)
+this.timeIntervalActionScriptConditionJPanel!.getTimeIntervalActionJDialog()!.setVisible(true);
+    
 }
 
 
-    public toHashMap(): HashMap<Any, Any>{
+    public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
         
         
-
-hashMap!.put(TimeIntervalActionScriptConditionData.TIME, Integer.toString(this.timeHelper!.delay))
-logUtil!.put("HashMap: " +hashMap!.toString(), this, "toHashMap()")
+;
+    
+hashMap!.put(TimeIntervalActionScriptConditionData.TIME, Integer.toString(this.timeHelper!.delay));
+    
+logUtil!.put("HashMap: " +hashMap!.toString(), this, "toHashMap()");
+    
 
 
 
@@ -188,8 +201,10 @@ var document = document
     var node: Node = super.toXmlNode(document)!;
         
         
-
-node.appendChild(ModDomHelper.createNodeWithValueNodes(document, TimeIntervalActionScriptConditionData.NAME, this.toHashMap()))
+;
+    
+node.appendChild(ModDomHelper.createNodeWithValueNodes(document, TimeIntervalActionScriptConditionData.NAME, this.toHashMap()));
+    
 
 
 
@@ -200,7 +215,8 @@ node.appendChild(ModDomHelper.createNodeWithValueNodes(document, TimeIntervalAct
 
 
     public log(){
-logUtil!.put("Time Interval: " +this.timeHelper!.delay, this, "log")
+logUtil!.put("Time Interval: " +this.timeHelper!.delay, this, "log");
+    
 }
 
 
@@ -216,7 +232,8 @@ logUtil!.put("Time Interval: " +this.timeHelper!.delay, this, "log")
 
     public setTimeDelayHelper(timeHelper: TimeDelayHelper){
     //var timeHelper = timeHelper
-this.timeHelper= timeHelper
+this.timeHelper= timeHelper;
+    
 }
 
 
@@ -228,17 +245,21 @@ var frame = frame
     var timeHelper: TimeDelayHelper = this.getTimeDelayHelper()!;
         
         
-
+;
+    
 
                         if(timeHelper!.isTime())
                         
                                     {
-                                    timeHelper!.setStartTime()
+                                    timeHelper!.setStartTime();
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.shouldProcess(frame);
+
+                        ;
     
 
                                     }

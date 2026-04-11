@@ -45,8 +45,10 @@ public constructor (text: string, fontSize: number, dx: number, dy: number, anim
 
                             //For kotlin this is before the body of the constructor.
                     
-this.dx= dx
-this.dy= dy
+this.dx= dx;
+    
+this.dy= dy;
+    
 }
 
 
@@ -62,7 +64,8 @@ this.dy= dy
 
     public setDx(dx: number){
 var dx = dx
-this.dx= dx
+this.dx= dx;
+    
 }
 
 
@@ -78,7 +81,8 @@ this.dx= dx
 
     public setDy(dy: number){
 var dy = dy
-this.dy= dy
+this.dy= dy;
+    
 }
 
 
@@ -86,7 +90,8 @@ this.dy= dy
     //var graphics = graphics
     //var x = x
     //var y = y
-super.paint(graphics, x +this.dx, y +this.dy)
+super.paint(graphics, x +this.dx, y +this.dy);
+    
 }
 
 

@@ -22,7 +22,7 @@
 interface LongArrayIdentifierInterface {
         
 
-    getLongArrayIdentifier(): LongArray
+    getLongArrayIdentifier(): number[]
 
 }
                 

@@ -106,16 +106,21 @@ export class AllBinaryMediaManager
     var logUtil: LogUtil = LogUtil.getInstance()!;
         
         
-
+;
+    
 
     var commonString: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonString!.START, THIS, commonString!.INIT)
-ProgressCanvasFactory.getInstance()!.addPortion(50, "Media Manager")
+;
+    
+logUtil!.put(commonString!.START, THIS, commonString!.INIT);
+    
+ProgressCanvasFactory.getInstance()!.addPortion(50, "Media Manager");
+    
 Sounds(soundsFactoryInterface).
-                            init()
+                            init();
+    
 }
 
 
@@ -124,10 +129,13 @@ Sounds(soundsFactoryInterface).
     public static shutdown(soundsFactoryInterface: SoundsFactoryInterface){
     //var soundsFactoryInterface = soundsFactoryInterface
 Sounds(soundsFactoryInterface).
-                            stopAll()
+                            stopAll();
+    
 Sounds(soundsFactoryInterface).
-                            closeAll()
-System.gc()
+                            closeAll();
+    
+System.gc();
+    
 }
 
 
@@ -148,6 +156,8 @@ System.gc()
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return createPlayer(ByteArrayInputStream(NullUtil.getInstance()!.NULL_BYTE_ARRAY), AudioContentTypeDataFactory.getInstance()!.MIME_AUDIO_TONE.getName());
+
+                        ;
     
 
                                     }
@@ -162,31 +172,38 @@ System.gc()
     var inputStream: InputStream = ResourceUtil.getInstance()!.getResourceAsStream(resource)!;
         
         
-
+;
+    
 
     var bufferedInputStream: BufferedInputStream = new BufferedInputStream(inputStream);
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return PCClipWavPlayer(bufferedInputStream);
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
         
         
-
+;
+    
 
     var commonString: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonString!.EXCEPTION, THIS, CREATE_PLAYER, e)
+;
+    
+logUtil!.put(commonString!.EXCEPTION, THIS, CREATE_PLAYER, e);
+    
 
 
 

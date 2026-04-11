@@ -86,17 +86,24 @@ var basicColor = basicColor
 
                             //For kotlin this is before the body of the constructor.
                     
-this.PREPEND_STRING= prependString!.toCharArray()
+this.PREPEND_STRING= prependString!.toCharArray();
+    
 
     var myFont: MyFont = MyFont.getInstance()!;
         
         
-
-this.offset= myFont!.stringWidth(prependString) +myFont!.charWidth()
-this.valueString= PrimitiveLongSingleton.getInstance()!.NUMBER_CHAR_ARRAYS[0]!
-this.primitiveLongUtil= PrimitiveLongUtil(max +1)
-this.max= max
-this.value= 0
+;
+    
+this.offset= myFont!.stringWidth(prependString) +myFont!.charWidth();
+    
+this.valueString= PrimitiveLongSingleton.getInstance()!.NUMBER_CHAR_ARRAYS[0]!;
+    
+this.primitiveLongUtil= PrimitiveLongUtil(max +1);
+    
+this.max= max;
+    
+this.value= 0;
+    
 }
 
 public constructor (prependString: string, max: number, location: number, direction: number, maxHeight: number, maxWidth: number, bufferZone: number, basicColor: BasicColor)                        
@@ -116,17 +123,24 @@ var basicColor = basicColor
 
                             //For kotlin this is before the body of the constructor.
                     
-this.PREPEND_STRING= prependString!.toCharArray()
+this.PREPEND_STRING= prependString!.toCharArray();
+    
 
     var myFont: MyFont = MyFont.getInstance()!;
         
         
-
-this.offset= myFont!.stringWidth(prependString) +myFont!.charWidth()
-this.valueString= PrimitiveLongSingleton.getInstance()!.NUMBER_CHAR_ARRAYS[0]!
-this.primitiveLongUtil= PrimitiveLongUtil(max +1)
-this.max= max
-this.value= 0
+;
+    
+this.offset= myFont!.stringWidth(prependString) +myFont!.charWidth();
+    
+this.valueString= PrimitiveLongSingleton.getInstance()!.NUMBER_CHAR_ARRAYS[0]!;
+    
+this.primitiveLongUtil= PrimitiveLongUtil(max +1);
+    
+this.max= max;
+    
+this.value= 0;
+    
 
                         if(direction == 0)
                         
@@ -153,35 +167,42 @@ this.value= 0
 
     public add(value: number){
 var value = value
-this.set(this.value +value)
+this.set(this.value +value);
+    
 }
 
 
     public set(value: number){
 var value = value
-this.value= value
+this.value= value;
+    
 
                         if(this.value > this.max)
                         
                                     {
-                                    this.value= 0
+                                    this.value= 0;
+    
 
                                     }
                                 
-this.valueString= this.primitiveLongUtil!.getCharArray(this.value)
-this.valueTotalDigits= this.primitiveLongUtil!.getCurrentTotalDigits()
+this.valueString= this.primitiveLongUtil!.getCharArray(this.value);
+    
+this.valueTotalDigits= this.primitiveLongUtil!.getCurrentTotalDigits();
+    
 }
 
 
     public reduce(value: number){
 var value = value
-this.set(this.value -value)
+this.set(this.value -value);
+    
 }
 
 
     public paint(graphics: Graphics){
 var graphics = graphics
-super.paint(graphics, PREPEND_STRING, 0, PREPEND_STRING.length, this.valueString, 0, this.valueTotalDigits, offset)
+super.paint(graphics, PREPEND_STRING, 0, PREPEND_STRING.length, this.valueString, 0, this.valueTotalDigits, offset);
+    
 }
 
 
@@ -193,26 +214,33 @@ var y = y
     var charArray: string[] = PREPEND_STRING;
         
         
-
+;
+    
 
     var len: number = PREPEND_STRING.length
                 ;
         
         
-
+;
+    
 
     var charArray2: string[] = this.valueString;
         
         
-
+;
+    
 
     var len2: number = this.valueTotalDigits;
         
         
-
-this.basicSetColorUtil!.setBasicColorP(graphics, getBasicColorP())
-graphics.drawChars(charArray, 0, len, x, y, 0)
-graphics.drawChars(charArray2, 0, len2, x -this.offset, y, 0)
+;
+    
+this.basicSetColorUtil!.setBasicColorP(graphics, getBasicColorP());
+    
+graphics.drawChars(charArray, 0, len, x, y, 0);
+    
+graphics.drawChars(charArray2, 0, len2, x -this.offset, y, 0);
+    
 }
 
 

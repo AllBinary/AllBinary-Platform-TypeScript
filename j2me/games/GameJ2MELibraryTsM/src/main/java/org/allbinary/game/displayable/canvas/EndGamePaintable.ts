@@ -33,13 +33,15 @@ public constructor (gameCanvas: AllBinaryGameCanvas){
 
             super();
             var gameCanvas = gameCanvas
-this.gameCanvas= gameCanvas
+this.gameCanvas= gameCanvas;
+    
 }
 
 
     public paint(graphics: Graphics){
 var graphics = graphics
-gameCanvas!.paintGameOver(graphics)
+gameCanvas!.paintGameOver(graphics);
+    
 }
 
 

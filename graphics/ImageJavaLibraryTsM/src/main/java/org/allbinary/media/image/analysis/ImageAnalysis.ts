@@ -68,22 +68,26 @@ var colorRangeInterface = colorRangeInterface
     var imageAnalysisResults: ImageAnalysisResults = new ImageAnalysisResults();
         
         
-
+;
+    
 
     var redTotal: number = 0;
         
         
-
+;
+    
 
     var greenTotal: number = 0;
         
         
-
+;
+    
 
     var blueTotal: number = 0;
         
         
-
+;
+    
 
 
 
@@ -108,22 +112,32 @@ indexX < bufferedImage!.getWidth(); indexX++)
     var keyInteger: Integer = Integer(Integer.valueOf(bufferedImage!.getRGB(indexX, indexY)))!;
         
         
+;
+    
 
+    var colorCacheable: ColorCacheable = ColorCacheFactory.getInstance()!.get(keyInteger);
 
-    var colorCacheable: ColorCacheable = ColorCacheFactory.getInstance()!.get(keyInteger) as ColorCacheable;
+                         as ColorCacheable;
         
         
-
+;
+    
 
     var color: Color = colorCacheable!.getColor()!;
         
         
-
-processColorRangeResults(imageAnalysisResults, colorRangeInterface, color)
-processImageColorResults(imageAnalysisResults!.getImageColorResults(), colorRangeInterface, color)
-redTotal += color.getRed()
-greenTotal += color.getGreen()
-blueTotal += color.getBlue()
+;
+    
+processColorRangeResults(imageAnalysisResults, colorRangeInterface, color);
+    
+processImageColorResults(imageAnalysisResults!.getImageColorResults(), colorRangeInterface, color);
+    
+redTotal += color.getRed();
+    
+greenTotal += color.getGreen();
+    
+blueTotal += color.getBlue();
+    
 }
 
 }
@@ -132,15 +146,20 @@ blueTotal += color.getBlue()
     var totalPixels: number = imageAnalysisResults!.getImageColorRangeResults()!.getTotalPixelsChecked()!;
         
         
-
+;
+    
 
     var colorAverage: ColorAverage = imageAnalysisResults!.getImageColorResults()!.getColorAverage()!;
         
         
-
-colorAverage!.setAvgRed(redTotal.toFloat() /totalPixels)
-colorAverage!.setAvgGreen(greenTotal.toFloat() /totalPixels)
-colorAverage!.setAvgBlue(blueTotal.toFloat() /totalPixels)
+;
+    
+colorAverage!.setAvgRed(redTotal.toFloat() /totalPixels);
+    
+colorAverage!.setAvgGreen(greenTotal.toFloat() /totalPixels);
+    
+colorAverage!.setAvgBlue(blueTotal.toFloat() /totalPixels);
+    
 
 
 
@@ -158,7 +177,8 @@ var color = color
                         if(colorRangeInterface!.isInRange(color))
                         
                                     {
-                                    imageAnalysisResults!.getImageColorRangeResults()!.addMatchingPixelsChecked()
+                                    imageAnalysisResults!.getImageColorRangeResults()!.addMatchingPixelsChecked();
+    
 
                                     }
                                 
@@ -166,7 +186,8 @@ var color = color
                             
                         }
                             
-imageAnalysisResults!.getImageColorRangeResults()!.addTotalPixelsChecked()
+imageAnalysisResults!.getImageColorRangeResults()!.addTotalPixelsChecked();
+    
 }
 
 
@@ -178,7 +199,8 @@ var color = color
                         if(color.getRed() < imageColorResults!.getColorRange()!.getMinRed())
                         
                                     {
-                                    imageColorResults!.getColorRange()!.setMinRed(color.getRed())
+                                    imageColorResults!.getColorRange()!.setMinRed(color.getRed());
+    
 
                                     }
                                 
@@ -186,7 +208,8 @@ var color = color
                         if(color.getGreen() < imageColorResults!.getColorRange()!.getMinGreen())
                         
                                     {
-                                    imageColorResults!.getColorRange()!.setMinGreen(color.getGreen())
+                                    imageColorResults!.getColorRange()!.setMinGreen(color.getGreen());
+    
 
                                     }
                                 
@@ -194,7 +217,8 @@ var color = color
                         if(color.getBlue() < imageColorResults!.getColorRange()!.getMinBlue())
                         
                                     {
-                                    imageColorResults!.getColorRange()!.setMinBlue(color.getBlue())
+                                    imageColorResults!.getColorRange()!.setMinBlue(color.getBlue());
+    
 
                                     }
                                 
@@ -202,7 +226,8 @@ var color = color
                         if(color.getRed() > imageColorResults!.getColorRange()!.getMaxRed())
                         
                                     {
-                                    imageColorResults!.getColorRange()!.setMaxRed(color.getRed())
+                                    imageColorResults!.getColorRange()!.setMaxRed(color.getRed());
+    
 
                                     }
                                 
@@ -210,7 +235,8 @@ var color = color
                         if(color.getGreen() > imageColorResults!.getColorRange()!.getMaxGreen())
                         
                                     {
-                                    imageColorResults!.getColorRange()!.setMaxGreen(color.getGreen())
+                                    imageColorResults!.getColorRange()!.setMaxGreen(color.getGreen());
+    
 
                                     }
                                 
@@ -218,7 +244,8 @@ var color = color
                         if(color.getBlue() > imageColorResults!.getColorRange()!.getMaxBlue())
                         
                                     {
-                                    imageColorResults!.getColorRange()!.setMaxBlue(color.getBlue())
+                                    imageColorResults!.getColorRange()!.setMaxBlue(color.getBlue());
+    
 
                                     }
                                 
@@ -243,13 +270,16 @@ var colorRangeInterface = colorRangeInterface
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(CommonLabels.getInstance()!.START +colorRangeInterface!.toString(), this, commonStrings!.PROCESS)
+;
+    
+logUtil!.put(CommonLabels.getInstance()!.START +colorRangeInterface!.toString(), this, commonStrings!.PROCESS);
+    
 
     var imageAnalysisResultsArray: ImageAnalysisResults[] = new Array(bufferedImageArray!.length);
         
         
-
+;
+    
 
 
 
@@ -260,7 +290,8 @@ logUtil!.put(CommonLabels.getInstance()!.START +colorRangeInterface!.toString(),
         
 index < bufferedImageArray!.length; index++)
         {
-imageAnalysisResultsArray[index]= ImageAnalysis.process(bufferedImageArray[index]!, colorRangeInterface)
+imageAnalysisResultsArray[index]= ImageAnalysis.process(bufferedImageArray[index]!, colorRangeInterface);
+    
 }
 
 

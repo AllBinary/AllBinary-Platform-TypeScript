@@ -59,14 +59,20 @@ export class MyCanvasEventService
 
     public static addListener(listener: MyCanvasEventListener){
 var listener = listener
-listenerList!.add(listener::class as Class<*>, listener as java.util.EventListener)
+listenerList!.add(listenerconstructor;
+
+                         as Class<*>, listener as java.util.EventListener);
+    
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static removeListener(listener: MyCanvasEventListener){
 var listener = listener
-listenerList!.remove(listener::class as Class<*>, listener as java.util.EventListener)
+listenerList!.remove(listenerconstructor;
+
+                         as Class<*>, listener as java.util.EventListener);
+    
 }
 
 
@@ -76,10 +82,11 @@ listenerList!.remove(listener::class as Class<*>, listener as java.util.EventLis
     public static fire(evt: MyCanvasEvent){
 var evt = evt
 
-    var listeners: any = {}[] = listenerList!.getListenerList()!;
+    var listeners: any[] = listenerList!.getListenerList()!;
         
         
-
+;
+    
 
 
 
@@ -91,7 +98,7 @@ var evt = evt
 i < listeners.length; )
         {
 
-                        if(listeners[i] == listeners[i +1]!.::class)
+                        if(listeners[i] == listeners[i +1]!.constructor)
                         
                                     {
                                     
@@ -100,7 +107,8 @@ i < listeners.length; )
                                     {
                                      = listeners[i +1]! as MyCanvasEventListener
 .
-                    delete(evt)
+                    delete(evt);
+    
 
                                     }
                                 
@@ -110,7 +118,8 @@ i < listeners.length; )
                                     {
                                      = listeners[i +1]! as MyCanvasEventListener
 .
-                    duplicate(evt)
+                    duplicate(evt);
+    
 
                                     }
                                 
@@ -120,7 +129,8 @@ i < listeners.length; )
                                     {
                                      = listeners[i +1]! as MyCanvasEventListener
 .
-                    select(evt)
+                    select(evt);
+    
 
                                     }
                                 
@@ -130,7 +140,8 @@ i < listeners.length; )
                                     {
                                      = listeners[i +1]! as MyCanvasEventListener
 .
-                    rotate(evt)
+                    rotate(evt);
+    
 
                                     }
                                 
@@ -140,7 +151,8 @@ i < listeners.length; )
                                     {
                                      = listeners[i +1]! as MyCanvasEventListener
 .
-                    explode(evt)
+                    explode(evt);
+    
 
                                     }
                                 
@@ -150,7 +162,8 @@ i < listeners.length; )
                                     {
                                      = listeners[i +1]! as MyCanvasEventListener
 .
-                    autoExplode(evt)
+                    autoExplode(evt);
+    
 
                                     }
                                 
@@ -160,7 +173,8 @@ i < listeners.length; )
                                     {
                                      = listeners[i +1]! as MyCanvasEventListener
 .
-                    center(evt)
+                    center(evt);
+    
 
                                     }
                                 

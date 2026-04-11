@@ -18,7 +18,10 @@
 
 
 
-import { Hashtable } from "../../../../../../java/util/Hashtable.js";
+            import Hashtable from "@ohos.util.HashMap";
+        
+
+//import { Hashtable } from "../../../../../../java/util/Hashtable.js";
 
     
 import { GenericOperatingSystem } from "../../../../../../org/allbinary/logic/system/os/GenericOperatingSystem.js";
@@ -49,7 +52,7 @@ interface AbeClientInformationInterface {
 
     getNumberOfLicenseServers(): number
 
-    toHashtable(): Hashtable<Any, Any>
+    toHashtable(): Hashtable<any, any>
 
     isSameId(alicenseId: string): boolean
 

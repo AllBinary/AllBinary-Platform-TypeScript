@@ -64,11 +64,13 @@ public constructor (transformInfoInterface: TransformInfoInterface)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("View Name: " +transformInfoInterface!.getName(), this, this.commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put("View Name: " +transformInfoInterface!.getName(), this, this.commonStrings!.CONSTRUCTOR);
+    
 
                                     }
                                 
-this.setTransformDocumentInterface(TransformStoreDocumentFactory.getInstance(this.getPageContext(), this.getWeblisketSession()))
+this.setTransformDocumentInterface(TransformStoreDocumentFactory.getInstance(this.getPageContext(), this.getWeblisketSession()));
+    
 }
 
 
@@ -81,35 +83,42 @@ this.setTransformDocumentInterface(TransformStoreDocumentFactory.getInstance(thi
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.START, this, "view")
+                                    logUtil!.put(this.commonStrings!.START, this, "view");
+    
 
                                     }
                                 
-this.toXmlDoc()
+this.toXmlDoc();
+    
 
     var success: string = DomDocumentHelper.toString(this.getDoc())!;
         
         
-
+;
+    
 
     var result: string = StoreTransformer(this.abeClientInformation, this.getTransformInfoInterface()).
                             translate(success)!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view", e);
+    
 
                                     }
                                 

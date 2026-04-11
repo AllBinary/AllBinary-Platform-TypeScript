@@ -61,22 +61,26 @@ public constructor (poolName: string, numThreads: number)
     public runTask(task: Runnable){
 var task = task
 logUtil!.put(StringMaker().
-                            append(StringUtil.getInstance()!.toString(task))!.appendlong(System.currentTimeMillis())!.toString(), this, this.threadPoolStrings!.ADD_TASK)
-super.runTask(task)
+                            append(StringUtil.getInstance()!.toString(task))!.appendlong(System.currentTimeMillis())!.toString(), this, this.threadPoolStrings!.ADD_TASK);
+    
+super.runTask(task);
+    
 }
 
 
     startTask(task: Runnable){
 var task = task
 logUtil!.put(StringMaker().
-                            append(this.threadPoolStrings!.START_TASK)!.append(StringUtil.getInstance()!.toString(task))!.appendlong(System.currentTimeMillis())!.toString(), this, commonStrings!.RUN)
+                            append(this.threadPoolStrings!.START_TASK)!.append(StringUtil.getInstance()!.toString(task))!.appendlong(System.currentTimeMillis())!.toString(), this, commonStrings!.RUN);
+    
 }
 
 
     completedTask(task: Runnable){
 var task = task
 logUtil!.put(StringMaker().
-                            append(this.threadPoolStrings!.COMPLETE_TASK)!.append(StringUtil.getInstance()!.toString(task))!.appendlong(System.currentTimeMillis())!.toString(), this, commonStrings!.RUN)
+                            append(this.threadPoolStrings!.COMPLETE_TASK)!.append(StringUtil.getInstance()!.toString(task))!.appendlong(System.currentTimeMillis())!.toString(), this, commonStrings!.RUN);
+    
 }
 
 

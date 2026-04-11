@@ -30,8 +30,10 @@ export class PermissionItemsTag extends TableTag {
 public constructor (){
 
             super();
-            this.setTagHelperFactory(PermissionItemsHelperFactory())
-this.setTagRequestHelperFactory(PermissionItemsRequestHelperFactory())
+            this.setTagHelperFactory(PermissionItemsHelperFactory());
+    
+this.setTagRequestHelperFactory(PermissionItemsRequestHelperFactory());
+    
 }
 
 

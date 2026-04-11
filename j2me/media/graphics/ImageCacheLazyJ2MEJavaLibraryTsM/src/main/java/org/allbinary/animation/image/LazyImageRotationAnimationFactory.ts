@@ -50,9 +50,12 @@ public constructor (layoutIndex: number, associatedLazyAnimationId: number, anim
                 //var layoutIndex = layoutIndex
     //var associatedLazyAnimationId = associatedLazyAnimationId
     //var animationInterfaceFactoryInterface = animationInterfaceFactoryInterface
-this.layoutIndex= layoutIndex
-this.animationInterfaceFactoryInterface= animationInterfaceFactoryInterface
-ImageCacheFactory.getInstance()!.hasAnyLazyAnimationFactories= true
+this.layoutIndex= layoutIndex;
+    
+this.animationInterfaceFactoryInterface= animationInterfaceFactoryInterface;
+    
+ImageCacheFactory.getInstance()!.hasAnyLazyAnimationFactories= true;
+    
 }
 
 
@@ -64,12 +67,15 @@ ImageCacheFactory.getInstance()!.hasAnyLazyAnimationFactories= true
                         if(this.animationInterfaceFactoryInterface!.getImage()!.isReady())
                         
                                     {
-                                    this.animationInterfaceFactoryInterface!.setInitialScale(scaleProperties)
+                                    this.animationInterfaceFactoryInterface!.setInitialScale(scaleProperties);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.animationInterfaceFactoryInterface!.getInstance(instanceId);
+
+                        ;
     
 
                                     }
@@ -89,7 +95,8 @@ ImageCacheFactory.getInstance()!.hasAnyLazyAnimationFactories= true
 
     public setInitialScale(scaleProperties: ScaleProperties){
     //var scaleProperties = scaleProperties
-this.scaleProperties= scaleProperties
+this.scaleProperties= scaleProperties;
+    
 }
 
 

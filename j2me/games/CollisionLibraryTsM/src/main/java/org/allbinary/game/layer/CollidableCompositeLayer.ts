@@ -73,8 +73,10 @@ public constructor (layerInfo: Rectangle, viewPosition: ViewPosition, collidable
 
                             //For kotlin this is before the body of the constructor.
                     
-this.collidableInferface= CollidableNeverCollideBehaviorFactory.getInstance()
-this.setCollidableInferface(collidableInferface)
+this.collidableInferface= CollidableNeverCollideBehaviorFactory.getInstance();
+    
+this.setCollidableInferface(collidableInferface);
+    
 }
 
 public constructor (name: string, layerInfo: Rectangle, viewPosition: ViewPosition, collidableInferface: CollidableBaseBehavior)                        
@@ -90,8 +92,10 @@ public constructor (name: string, layerInfo: Rectangle, viewPosition: ViewPositi
 
                             //For kotlin this is before the body of the constructor.
                     
-this.collidableInferface= CollidableNeverCollideBehaviorFactory.getInstance()
-this.setCollidableInferface(collidableInferface)
+this.collidableInferface= CollidableNeverCollideBehaviorFactory.getInstance();
+    
+this.setCollidableInferface(collidableInferface);
+    
 }
 
 public constructor (layerInfo: Rectangle, viewPosition: ViewPosition)                        
@@ -105,7 +109,8 @@ public constructor (layerInfo: Rectangle, viewPosition: ViewPosition)
 
                             //For kotlin this is before the body of the constructor.
                     
-collidableInferface= CollidableNeverCollideBehaviorFactory.getInstance()
+collidableInferface= CollidableNeverCollideBehaviorFactory.getInstance();
+    
 }
 
 public constructor (name: string, layerInfo: Rectangle, viewPosition: ViewPosition)                        
@@ -120,7 +125,8 @@ public constructor (name: string, layerInfo: Rectangle, viewPosition: ViewPositi
 
                             //For kotlin this is before the body of the constructor.
                     
-collidableInferface= CollidableNeverCollideBehaviorFactory.getInstance()
+collidableInferface= CollidableNeverCollideBehaviorFactory.getInstance();
+    
 }
 
 public constructor (layerInfo: Rectangle)                        
@@ -133,17 +139,21 @@ public constructor (layerInfo: Rectangle)
 
                             //For kotlin this is before the body of the constructor.
                     
-collidableInferface= CollidableNeverCollideBehaviorFactory.getInstance()
+collidableInferface= CollidableNeverCollideBehaviorFactory.getInstance();
+    
 }
 
 
     public getArtificialIntelligenceInterface(): ArtificialIntelligenceInterface{
-ForcedLogUtil.log(commonStrings!.NOT_IMPLEMENTED, this)
+ForcedLogUtil.log(commonStrings!.NOT_IMPLEMENTED, this);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return ArtificialIntelligence.getInstance();
+
+                        ;
     
 }
 
@@ -160,7 +170,8 @@ ForcedLogUtil.log(commonStrings!.NOT_IMPLEMENTED, this)
 
     public setCollidableInferface(collidableInferface: CollidableBaseBehavior){
     //var collidableInferface = collidableInferface
-this.collidableInferface= collidableInferface
+this.collidableInferface= collidableInferface;
+    
 }
 
 
@@ -180,10 +191,14 @@ this.collidableInferface= collidableInferface
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
         
         
-
-super.toString(stringBuffer)
-stringBuffer!.append(commonSeps!.NEW_LINE)
-stringBuffer!.append(this.getCollidableInferface()!.toString())
+;
+    
+super.toString(stringBuffer);
+    
+stringBuffer!.append(commonSeps!.NEW_LINE);
+    
+stringBuffer!.append(this.getCollidableInferface()!.toString());
+    
 }
 
 
@@ -192,13 +207,17 @@ stringBuffer!.append(this.getCollidableInferface()!.toString())
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-this.toString(stringBuffer)
+;
+    
+this.toString(stringBuffer);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

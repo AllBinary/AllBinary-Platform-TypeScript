@@ -218,14 +218,18 @@ public constructor (gameCanvas: AllBinaryGameCanvas, inputList: BasicArrayList, 
 
                             //For kotlin this is before the body of the constructor.
                     
-this.touchButtonsBuilderFactory= touchButtonsBuilderFactory
+this.touchButtonsBuilderFactory= touchButtonsBuilderFactory;
+    
 
     var basicColorFactory: BasicColorFactory = BasicColorFactory.getInstance()!;
         
         
-
-this.notYoursGameNotificationEvent= GameNotificationEvent(this, RTSGameStrings.getInstance()!.NOT_YOURS, SmallIntegerSingletonFactory.getInstance()!.getInstance(2), basicColorFactory!.PINK, BooleanFactory.getInstance()!.FALSE)
-BasicMotionGesturesHandler.getInstance()!.addListener(this)
+;
+    
+this.notYoursGameNotificationEvent= GameNotificationEvent(this, RTSGameStrings.getInstance()!.NOT_YOURS, SmallIntegerSingletonFactory.getInstance()!.getInstance(2), basicColorFactory!.PINK, BooleanFactory.getInstance()!.FALSE);
+    
+BasicMotionGesturesHandler.getInstance()!.addListener(this);
+    
 }
 
 
@@ -237,13 +241,16 @@ BasicMotionGesturesHandler.getInstance()!.addListener(this)
     var geographicMapCompositeInterface: GeographicMapCompositeInterface = allBinaryGameLayerManager as GeographicMapCompositeInterface;
         
         
-
+;
+    
 
     var geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;
         
         
-
-this.notYoursGameNotificationEvent!.setBasicColorP(geographicMapInterface!.getForegroundBasicColor())
+;
+    
+this.notYoursGameNotificationEvent!.setBasicColorP(geographicMapInterface!.getForegroundBasicColor());
+    
 }
 
 
@@ -252,20 +259,25 @@ this.notYoursGameNotificationEvent!.setBasicColorP(geographicMapInterface!.getFo
     processDraggingMotionInput(layerManager: AllBinaryLayerManager): boolean{
     //var layerManager = layerManager
 
-    var motionGestureEvent: MotionGestureEvent = this.getMotionGestureInputList()!.get(this.getMotionGestureInputList()!.size() -1) as MotionGestureEvent;
-        
-        
+    var motionGestureEvent: MotionGestureEvent = this.getMotionGestureInputList()!.get(this.getMotionGestureInputList()!.size() -1);
 
+                         as MotionGestureEvent;
+        
+        
+;
+    
 
     var motionGestureInput: MotionGestureInput = motionGestureEvent!.getMotionGesture()!;
         
         
-
+;
+    
 
     var rtsFormInput: RTSFormInput = this.getSelectedRtsFormInput()!;
         
         
-
+;
+    
 
                         if(motionGestureInput == PRESSED)
                         
@@ -274,12 +286,14 @@ this.notYoursGameNotificationEvent!.setBasicColorP(geographicMapInterface!.getFo
     var point: GPoint = motionGestureEvent!.getCurrentPoint()!;
         
         
-
+;
+    
 
                         if(this.getRtsPlayerLayerInterface()!.getCurrentScrollSelectionForm()!.isInForm(point))
                         
                                     {
-                                    isDragging= rtsFormInput!.processSticky(this.getSelectedRtsLayer(), this.getRtsPlayerLayerInterface(), layerManager, point)
+                                    isDragging= rtsFormInput!.processSticky(this.getSelectedRtsLayer(), this.getRtsPlayerLayerInterface(), layerManager, point);
+    
 
                                     }
                                 
@@ -294,12 +308,14 @@ this.notYoursGameNotificationEvent!.setBasicColorP(geographicMapInterface!.getFo
     var point: GPoint = motionGestureEvent!.getCurrentPoint()!;
         
         
-
+;
+    
 
                         if(this.getRtsPlayerLayerInterface()!.getCurrentScrollSelectionForm()!.isInForm(point))
                         
                                     {
-                                    rtsFormInput!.process(this.getSelectedRtsLayer(), this.getRtsPlayerLayerInterface(), layerManager, point)
+                                    rtsFormInput!.process(this.getSelectedRtsLayer(), this.getRtsPlayerLayerInterface(), layerManager, point);
+    
 
                                     }
                                 
@@ -311,22 +327,31 @@ this.notYoursGameNotificationEvent!.setBasicColorP(geographicMapInterface!.getFo
     var previousRtsFormInput: RTSFormInput = rtsFormInput;
         
         
-
-this.select(motionGestureEvent)
-this.getSelectedBuildingPlayerGameInput()!.selectAllPreselected()
-previousRtsFormInput!.process(this.getSelectedRtsLayer(), this.getRtsPlayerLayerInterface(), layerManager, point)
-this.getSelectedBuildingPlayerGameInput()!.deselectAllPreselected()
+;
+    
+this.select(motionGestureEvent);
+    
+this.getSelectedBuildingPlayerGameInput()!.selectAllPreselected();
+    
+previousRtsFormInput!.process(this.getSelectedRtsLayer(), this.getRtsPlayerLayerInterface(), layerManager, point);
+    
+this.getSelectedBuildingPlayerGameInput()!.deselectAllPreselected();
+    
 
                                     }
                                 
                         else {
-                            this.select(motionGestureEvent)
+                            this.select(motionGestureEvent);
+    
 
                         }
                             
-rtsFormInput!.setStickyItemSelected(false)
-rtsFormInput!.setSelectedStickyItem(CustomItem.NULL_CUSTOM_ITEM)
-rtsFormInput!.setSelectedStickyItemIndex( -1)
+rtsFormInput!.setStickyItemSelected(false);
+    
+rtsFormInput!.setSelectedStickyItem(CustomItem.NULL_CUSTOM_ITEM);
+    
+rtsFormInput!.setSelectedStickyItemIndex( -1);
+    
 
 
 
@@ -378,33 +403,40 @@ rtsFormInput!.setSelectedStickyItemIndex( -1)
     var rtsLayerList: BasicArrayList = this.getRtsPlayerLayerInterface()!.getPlayerOwnedRTSLayers()!.rtsLayerList;
         
         
-
+;
+    
 
     var rectX1: number = this.startPoint!.getX()!;
         
         
-
+;
+    
 
     var rectY1: number = this.startPoint!.getY()!;
         
         
-
+;
+    
 
     var rectX2: number = this.endPoint!.getX()!;
         
         
-
+;
+    
 
     var rectY2: number = this.endPoint!.getY()!;
         
         
-
+;
+    
 
                         if(rectX1 > rectX2)
                         
                                     {
-                                    rectX2= rectX1
-rectX1= this.endPoint!.getX()
+                                    rectX2= rectX1;
+    
+rectX1= this.endPoint!.getX();
+    
 
                                     }
                                 
@@ -412,8 +444,10 @@ rectX1= this.endPoint!.getX()
                         if(rectY1 > rectY2)
                         
                                     {
-                                    rectY2= rectY1
-rectY1= this.endPoint!.getY()
+                                    rectY2= rectY1;
+    
+rectY1= this.endPoint!.getY();
+    
 
                                     }
                                 
@@ -421,19 +455,30 @@ rectY1= this.endPoint!.getY()
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(AT)
-stringBuffer!.appendint(rectX1)
-stringBuffer!.append(SPACE)
-stringBuffer!.appendint(rectY1)
-stringBuffer!.append(SPACE)
-stringBuffer!.appendint(rectX2)
-stringBuffer!.append(SPACE)
-stringBuffer!.appendint(rectY2)
-logUtil!.put(stringBuffer!.toString(), this, METHOD)
+;
+    
+stringBuffer!.append(AT);
+    
+stringBuffer!.appendint(rectX1);
+    
+stringBuffer!.append(SPACE);
+    
+stringBuffer!.appendint(rectY1);
+    
+stringBuffer!.append(SPACE);
+    
+stringBuffer!.appendint(rectX2);
+    
+stringBuffer!.append(SPACE);
+    
+stringBuffer!.appendint(rectY2);
+    
+logUtil!.put(stringBuffer!.toString(), this, METHOD);
+    
 
     var rtsLayer: RTSLayer
-
+;
+    
 
 
 
@@ -444,24 +489,39 @@ logUtil!.put(stringBuffer!.toString(), this, METHOD)
         
 index >= 0; index--)
         {
-rtsLayer= rtsLayerList!.get(index) as RTSLayer
-stringBuffer!.delete(0, stringBuffer!.length())
-stringBuffer!.append(POSSIBLE)
-stringBuffer!.append(rtsLayer!.getName())
-stringBuffer!.append(SPACE)
-stringBuffer!.append(AT)
-stringBuffer!.appendint((rtsLayer!.getViewPosition()!.getX() +rtsLayer!.getHalfWidth()))
-stringBuffer!.append(SPACE)
-stringBuffer!.appendint((rtsLayer!.getViewPosition()!.getY() +rtsLayer!.getHalfHeight()))
-logUtil!.put(stringBuffer!.toString(), this, METHOD)
+rtsLayer= rtsLayerList!.get(index);
+
+                         as RTSLayer;
+    
+stringBuffer!.delete(0, stringBuffer!.length());
+    
+stringBuffer!.append(POSSIBLE);
+    
+stringBuffer!.append(rtsLayer!.getName());
+    
+stringBuffer!.append(SPACE);
+    
+stringBuffer!.append(AT);
+    
+stringBuffer!.appendint((rtsLayer!.getViewPosition()!.getX() +rtsLayer!.getHalfWidth()));
+    
+stringBuffer!.append(SPACE);
+    
+stringBuffer!.appendint((rtsLayer!.getViewPosition()!.getY() +rtsLayer!.getHalfHeight()));
+    
+logUtil!.put(stringBuffer!.toString(), this, METHOD);
+    
 
                         if(rectangleCollisionUtil!.isInside(rectX1, rectY1, rectX2, rectY2, rtsLayer!.getViewPosition()!.getX() +rtsLayer!.getHalfWidth(), rtsLayer!.getViewPosition()!.getY() +rtsLayer!.getHalfHeight()))
                         
                                     {
                                     logUtil!.put(StringMaker().
-                            append(ADDING)!.append(rtsLayer!.getName())!.toString(), this, METHOD)
-rtsLayer!.select()
-this.getSelectedBuildingPlayerGameInput()!.addSelectedRTSLayer(rtsLayer)
+                            append(ADDING)!.append(rtsLayer!.getName())!.toString(), this, METHOD);
+    
+rtsLayer!.select();
+    
+this.getSelectedBuildingPlayerGameInput()!.addSelectedRTSLayer(rtsLayer);
+    
 
                                     }
                                 
@@ -471,7 +531,8 @@ this.getSelectedBuildingPlayerGameInput()!.addSelectedRTSLayer(rtsLayer)
     var gameLayer: CollidableDestroyableDamageableLayer = this.getSelectedBuildingPlayerGameInput()!.getLastSelectedRtsLayer()!;
         
         
-
+;
+    
 
                         if(gameLayer != CollidableDestroyableDamageableLayer.NULL_COLLIDABLE_DESTROYABLE_DAMAGE_LAYER)
                         
@@ -480,20 +541,24 @@ this.getSelectedBuildingPlayerGameInput()!.addSelectedRTSLayer(rtsLayer)
     var lastRTSLayer: RTSLayer = gameLayer as RTSLayer;
         
         
-
+;
+    
 
                         if(lastRTSLayer!.getScrollSelectionForm() != ScrollSelectionForm.NULL_SCROLL_SELECTION_FORM)
                         
                                     {
-                                    this.updateForm(lastRTSLayer!.getScrollSelectionForm(), lastRTSLayer!.getRTSFormInput())
-this.setSelectedRtsLayer(lastRTSLayer)
+                                    this.updateForm(lastRTSLayer!.getScrollSelectionForm(), lastRTSLayer!.getRTSFormInput());
+    
+this.setSelectedRtsLayer(lastRTSLayer);
+    
 
                                     }
                                 
 
                                     }
                                 
-this.updatePaintable()
+this.updatePaintable();
+    
 }
 
 
@@ -512,26 +577,33 @@ this.updatePaintable()
 index >= 0; index--)
         {
 
-    var motionGestureEvent: MotionGestureEvent = this.getMotionGestureInputList()!.get(index) as MotionGestureEvent;
-        
-        
+    var motionGestureEvent: MotionGestureEvent = this.getMotionGestureInputList()!.get(index);
 
+                         as MotionGestureEvent;
+        
+        
+;
+    
 
     var motionGestureInput: MotionGestureInput = motionGestureEvent!.getMotionGesture()!;
         
         
-
+;
+    
 
     var point: GPoint = motionGestureEvent!.getCurrentPoint()!;
         
         
-
+;
+    
 
                         if(motionGestureInput == touchMotionGestureFactory!.PRESSED)
                         
                                     {
-                                    this.startPoint= point
-this.endPoint= point
+                                    this.startPoint= point;
+    
+this.endPoint= point;
+    
 
                                     }
                                 
@@ -539,15 +611,20 @@ this.endPoint= point
                         if(motionGestureInput == touchMotionGestureFactory!.RELEASED)
                         
                                     {
-                                    this.endPoint= point
-this.makeSelection()
-this.startPoint= PointFactory.getInstance()!.ZERO_ZERO
-this.endPoint= PointFactory.getInstance()!.ZERO_ZERO
+                                    this.endPoint= point;
+    
+this.makeSelection();
+    
+this.startPoint= PointFactory.getInstance()!.ZERO_ZERO;
+    
+this.endPoint= PointFactory.getInstance()!.ZERO_ZERO;
+    
 
                                     }
                                 
                         else {
-                            this.endPoint= point
+                            this.endPoint= point;
+    
 
                         }
                             
@@ -568,12 +645,14 @@ this.endPoint= PointFactory.getInstance()!.ZERO_ZERO
     var endDrag: boolean = this.processDraggingMotionInput(layerManager)!;
         
         
-
+;
+    
 
                         if(!isDragging)
                         
                                     {
-                                    this.processSelectionBoxMotionInput(layerManager)
+                                    this.processSelectionBoxMotionInput(layerManager);
+    
 
                                     }
                                 
@@ -581,14 +660,16 @@ this.endPoint= PointFactory.getInstance()!.ZERO_ZERO
                         if(endDrag)
                         
                                     {
-                                    isDragging= false
+                                    isDragging= false;
+    
 
                                     }
                                 
 
                                     }
                                 
-getMotionGestureInputList()!.clear()
+getMotionGestureInputList()!.clear();
+    
 }
 
 
@@ -598,11 +679,15 @@ getMotionGestureInputList()!.clear()
     var logUtil: LogUtil = LogUtil.getInstance()!;
         
         
-
+;
+    
 logUtil!.put(StringMaker().
-                            append(CommonLabels.getInstance()!.START)!.append(StringUtil.getInstance()!.toString(selectedRtsFormInput))!.toString(), this, "setSelectedRtsFormInput")
-super.setSelectedRtsFormInput(selectedRtsFormInput)
-this.setSelectedRtsLayer(CollidableDestroyableDamageableLayer.NULL_COLLIDABLE_DESTROYABLE_DAMAGE_LAYER)
+                            append(CommonLabels.getInstance()!.START)!.append(StringUtil.getInstance()!.toString(selectedRtsFormInput))!.toString(), this, "setSelectedRtsFormInput");
+    
+super.setSelectedRtsFormInput(selectedRtsFormInput);
+    
+this.setSelectedRtsLayer(CollidableDestroyableDamageableLayer.NULL_COLLIDABLE_DESTROYABLE_DAMAGE_LAYER);
+    
 }
 
 
@@ -612,21 +697,28 @@ this.setSelectedRtsLayer(CollidableDestroyableDamageableLayer.NULL_COLLIDABLE_DE
     var scrollSelectionForm: ScrollSelectionForm = rtsLayer!.getScrollSelectionForm()!;
         
         
-
+;
+    
 
                         if(scrollSelectionForm != ScrollSelectionForm.NULL_SCROLL_SELECTION_FORM && this.getRtsPlayerLayerInterface()!.getGroupInterface()[0] == rtsLayer!.getGroupInterface()[0])
                         
                                     {
-                                    this.updateForm(scrollSelectionForm, rtsLayer!.getRTSFormInput())
-this.getSelectedBuildingPlayerGameInput()!.setSelectedRTSLayer(CollidableDestroyableDamageableLayer.NULL_COLLIDABLE_DESTROYABLE_DAMAGE_LAYER)
-this.setSelectedRtsLayer(rtsLayer)
+                                    this.updateForm(scrollSelectionForm, rtsLayer!.getRTSFormInput());
+    
+this.getSelectedBuildingPlayerGameInput()!.setSelectedRTSLayer(CollidableDestroyableDamageableLayer.NULL_COLLIDABLE_DESTROYABLE_DAMAGE_LAYER);
+    
+this.setSelectedRtsLayer(rtsLayer);
+    
 
                                     }
                                 
                         else {
-                            this.getRtsPlayerLayerInterface()!.setCurrentScrollSelectionForm(this.getRtsPlayerLayerInterface()!.getBuildingScrollSelectionForm())
-this.setSelectedRtsFormInput(this.getRtsPlayerLayerInterface()!.getRTSFormInput())
-this.getSelectedBuildingPlayerGameInput()!.setSelectedRTSLayer(CollidableDestroyableDamageableLayer.NULL_COLLIDABLE_DESTROYABLE_DAMAGE_LAYER)
+                            this.getRtsPlayerLayerInterface()!.setCurrentScrollSelectionForm(this.getRtsPlayerLayerInterface()!.getBuildingScrollSelectionForm());
+    
+this.setSelectedRtsFormInput(this.getRtsPlayerLayerInterface()!.getRTSFormInput());
+    
+this.getSelectedBuildingPlayerGameInput()!.setSelectedRTSLayer(CollidableDestroyableDamageableLayer.NULL_COLLIDABLE_DESTROYABLE_DAMAGE_LAYER);
+    
 
                         }
                             
@@ -636,8 +728,10 @@ this.getSelectedBuildingPlayerGameInput()!.setSelectedRTSLayer(CollidableDestroy
     updateForm(scrollSelectionForm: ScrollSelectionForm, rtfFormInput: RTSFormInput){
     //var scrollSelectionForm = scrollSelectionForm
     //var rtfFormInput = rtfFormInput
-this.getRtsPlayerLayerInterface()!.setCurrentScrollSelectionForm(scrollSelectionForm)
-this.setSelectedRtsFormInput(rtfFormInput)
+this.getRtsPlayerLayerInterface()!.setCurrentScrollSelectionForm(scrollSelectionForm);
+    
+this.setSelectedRtsFormInput(rtfFormInput);
+    
 }
 
 
@@ -650,8 +744,10 @@ this.setSelectedRtsFormInput(rtfFormInput)
                         if(rtSLayer != CollidableDestroyableDamageableLayer.NULL_COLLIDABLE_DESTROYABLE_DAMAGE_LAYER && this.getRtsPlayerLayerInterface()!.getGroupInterface()[0] != rtSLayer!.getGroupInterface()[0])
                         
                                     {
-                                    this.getRtsPlayerLayerInterface()!.add(ErrorSound.getInstance())
-GameNotificationEventHandler.getInstance()!.fireEvent(notYoursGameNotificationEvent)
+                                    this.getRtsPlayerLayerInterface()!.add(ErrorSound.getInstance());
+    
+GameNotificationEventHandler.getInstance()!.fireEvent(notYoursGameNotificationEvent);
+    
 
 
 
@@ -665,19 +761,24 @@ GameNotificationEventHandler.getInstance()!.fireEvent(notYoursGameNotificationEv
     var gameCanvas: AllBinaryGameCanvas = this.getGameCanvas()!;
         
         
-
+;
+    
 
                         if(rtSLayer != CollidableDestroyableDamageableLayer.NULL_COLLIDABLE_DESTROYABLE_DAMAGE_LAYER)
                         
                                     {
-                                    this.getRtsPlayerLayerInterface()!.add(SelectBuildingSound.getInstance())
+                                    this.getRtsPlayerLayerInterface()!.add(SelectBuildingSound.getInstance());
+    
 
     var rtsLayer: RTSLayer = rtSLayer as RTSLayer;
         
         
-
-rtsLayer!.select()
-this.updateForm(rtsLayer)
+;
+    
+rtsLayer!.select();
+    
+this.updateForm(rtsLayer);
+    
 
                         if(gameCanvas!.getGameState() == GameState.PLAYING_GAME_STATE)
                         
@@ -686,12 +787,14 @@ this.updateForm(rtsLayer)
                         if(rtsLayer!.isSelfUpgradeable())
                         
                                     {
-                                    gameCanvas!.updateCurrentTouchInputFactory(RTSTouchButtonsBuilder())
+                                    gameCanvas!.updateCurrentTouchInputFactory(RTSTouchButtonsBuilder());
+    
 
                                     }
                                 
                         else {
-                            gameCanvas!.updateCurrentTouchInputFactory(NoBuildingSelectedTouchButtonsBuilder())
+                            gameCanvas!.updateCurrentTouchInputFactory(NoBuildingSelectedTouchButtonsBuilder());
+    
 
                         }
                             
@@ -703,18 +806,21 @@ this.updateForm(rtsLayer)
     var endLevelTouchButtonsBuilder: EndLevelTouchButtonsBuilder = new EndLevelTouchButtonsBuilder();
         
         
-
+;
+    
 
                         if(this.touchButtonsBuilderFactory != 
                                     null
                                 )
                         
                                     {
-                                    endLevelTouchButtonsBuilder!.add(this.touchButtonsBuilderFactory!.getInstance())
+                                    endLevelTouchButtonsBuilder!.add(this.touchButtonsBuilderFactory!.getInstance());
+    
 
                                     }
                                 
-gameCanvas!.updateCurrentTouchInputFactory(endLevelTouchButtonsBuilder)
+gameCanvas!.updateCurrentTouchInputFactory(endLevelTouchButtonsBuilder);
+    
 
                         }
                             
@@ -722,15 +828,20 @@ gameCanvas!.updateCurrentTouchInputFactory(endLevelTouchButtonsBuilder)
                                     }
                                 
                         else {
-                            logUtil!.put("Set Player Default Form", this, "setSelectedRTSLayer")
-this.getRtsPlayerLayerInterface()!.setCurrentScrollSelectionForm(this.getRtsPlayerLayerInterface()!.getBuildingScrollSelectionForm())
-this.setSelectedRtsFormInput(this.getRtsPlayerLayerInterface()!.getRTSFormInput())
-this.getSelectedBuildingPlayerGameInput()!.setSelectedRTSLayer(CollidableDestroyableDamageableLayer.NULL_COLLIDABLE_DESTROYABLE_DAMAGE_LAYER)
+                            logUtil!.put("Set Player Default Form", this, "setSelectedRTSLayer");
+    
+this.getRtsPlayerLayerInterface()!.setCurrentScrollSelectionForm(this.getRtsPlayerLayerInterface()!.getBuildingScrollSelectionForm());
+    
+this.setSelectedRtsFormInput(this.getRtsPlayerLayerInterface()!.getRTSFormInput());
+    
+this.getSelectedBuildingPlayerGameInput()!.setSelectedRTSLayer(CollidableDestroyableDamageableLayer.NULL_COLLIDABLE_DESTROYABLE_DAMAGE_LAYER);
+    
 
                         if(gameCanvas!.getGameState() == GameState.PLAYING_GAME_STATE)
                         
                                     {
-                                    gameCanvas!.updateCurrentTouchInputFactory(NoBuildingSelectedTouchButtonsBuilder())
+                                    gameCanvas!.updateCurrentTouchInputFactory(NoBuildingSelectedTouchButtonsBuilder());
+    
 
                                     }
                                 
@@ -739,27 +850,33 @@ this.getSelectedBuildingPlayerGameInput()!.setSelectedRTSLayer(CollidableDestroy
     var endLevelNoBuildingSelectedTouchButtonsBuilder: EndLevelNoBuildingSelectedTouchButtonsBuilder = new EndLevelNoBuildingSelectedTouchButtonsBuilder();
         
         
-
+;
+    
 
                         if(this.touchButtonsBuilderFactory != 
                                     null
                                 )
                         
                                     {
-                                    endLevelNoBuildingSelectedTouchButtonsBuilder!.add(this.touchButtonsBuilderFactory!.getInstance())
+                                    endLevelNoBuildingSelectedTouchButtonsBuilder!.add(this.touchButtonsBuilderFactory!.getInstance());
+    
 
                                     }
                                 
-gameCanvas!.updateCurrentTouchInputFactory(endLevelNoBuildingSelectedTouchButtonsBuilder)
+gameCanvas!.updateCurrentTouchInputFactory(endLevelNoBuildingSelectedTouchButtonsBuilder);
+    
 
                         }
                             
 
                         }
                             
-this.getSelectedRtsFormInput()!.setSelectedGeographicCellPosition(geographicMapCellPosition)
-this.getSelectedBuildingPlayerGameInput()!.setSelectedRTSLayer(rtSLayer)
-this.updatePaintable()
+this.getSelectedRtsFormInput()!.setSelectedGeographicCellPosition(geographicMapCellPosition);
+    
+this.getSelectedBuildingPlayerGameInput()!.setSelectedRTSLayer(rtSLayer);
+    
+this.updatePaintable();
+    
 }
 
 
@@ -772,24 +889,32 @@ this.updatePaintable()
     var list: BasicArrayList = this.getSelectedBuildingPlayerGameInput()!.getSelectedBasicArrayList()!;
         
         
-
+;
+    
 
                         if(list.size() > 1)
                         
                                     {
                                     
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface = this.getGameCanvas() as GeographicMapCompositeInterface;
-        
-        
+    var geographicMapCompositeInterface: GeographicMapCompositeInterface = this.getGameCanvas();
 
+                         as GeographicMapCompositeInterface;
+        
+        
+;
+    
 
     var geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;
         
         
-
-multiSelectPaintable!.setBasicColorP(geographicMapInterface!.getForegroundBasicColor())
-multiSelectPaintable!.update(list)
-this.getRTSLayerInfoPaintable()!.updateRTSLayerInfo(multiSelectPaintable)
+;
+    
+multiSelectPaintable!.setBasicColorP(geographicMapInterface!.getForegroundBasicColor());
+    
+multiSelectPaintable!.update(list);
+    
+this.getRTSLayerInfoPaintable()!.updateRTSLayerInfo(multiSelectPaintable);
+    
 
                                     }
                                 
@@ -798,16 +923,21 @@ this.getRTSLayerInfoPaintable()!.updateRTSLayerInfo(multiSelectPaintable)
                         
                                     {
                                     
-    var rtsLayer: RTSLayer = list.get(0) as RTSLayer;
-        
-        
+    var rtsLayer: RTSLayer = list.get(0);
 
-this.getRTSLayerInfoPaintable()!.updateRTSLayerInfo(rtsLayer!.createHudPaintable())
+                         as RTSLayer;
+        
+        
+;
+    
+this.getRTSLayerInfoPaintable()!.updateRTSLayerInfo(rtsLayer!.createHudPaintable());
+    
 
                                     }
                                 
                         else {
-                            this.getRTSLayerInfoPaintable()!.updateRTSLayerInfo(NullInitUpdatePaintable.getInstance())
+                            this.getRTSLayerInfoPaintable()!.updateRTSLayerInfo(NullInitUpdatePaintable.getInstance());
+    
 
                         }
                             
@@ -816,38 +946,46 @@ this.getRTSLayerInfoPaintable()!.updateRTSLayerInfo(rtsLayer!.createHudPaintable
 
     public paint(graphics: Graphics){
     //var graphics = graphics
-super.paint(graphics)
+super.paint(graphics);
+    
 
                         if(this.startPoint != PointFactory.getInstance()!.ZERO_ZERO && this.endPoint != PointFactory.getInstance()!.ZERO_ZERO)
                         
                                     {
-                                    graphics.setColor(BasicColorFactory.getInstance()!.RED.toInt())
+                                    graphics.setColor(BasicColorFactory.getInstance()!.RED.toInt());
+    
 
     var rectX1: number = this.startPoint!.getX()!;
         
         
-
+;
+    
 
     var rectY1: number = this.startPoint!.getY()!;
         
         
-
+;
+    
 
     var rectX2: number = this.endPoint!.getX()!;
         
         
-
+;
+    
 
     var rectY2: number = this.endPoint!.getY()!;
         
         
-
+;
+    
 
                         if(rectX1 > rectX2)
                         
                                     {
-                                    rectX2= rectX1
-rectX1= this.endPoint!.getX()
+                                    rectX2= rectX1;
+    
+rectX1= this.endPoint!.getX();
+    
 
                                     }
                                 
@@ -855,12 +993,15 @@ rectX1= this.endPoint!.getX()
                         if(rectY1 > rectY2)
                         
                                     {
-                                    rectY2= rectY1
-rectY1= this.endPoint!.getY()
+                                    rectY2= rectY1;
+    
+rectY1= this.endPoint!.getY();
+    
 
                                     }
                                 
-graphics.drawRect(rectX1, rectY1, rectX2 -rectX1, rectY2 -rectY1)
+graphics.drawRect(rectX1, rectY1, rectX2 -rectX1, rectY2 -rectY1);
+    
 
                                     }
                                 
@@ -869,7 +1010,8 @@ graphics.drawRect(rectX1, rectY1, rectX2 -rectX1, rectY2 -rectY1)
 
     public onMotionGestureEvent(motionGestureEvent: MotionGestureEvent){
     //var motionGestureEvent = motionGestureEvent
-getMotionGestureInputList()!.add(motionGestureEvent)
+getMotionGestureInputList()!.add(motionGestureEvent);
+    
 }
 
 
@@ -885,7 +1027,8 @@ getMotionGestureInputList()!.add(motionGestureEvent)
 
     setSelectedRtsLayer(selectedRtsLayer: CollidableDestroyableDamageableLayer){
     //var selectedRtsLayer = selectedRtsLayer
-this.selectedRtsLayer= selectedRtsLayer
+this.selectedRtsLayer= selectedRtsLayer;
+    
 }
 
 

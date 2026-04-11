@@ -90,14 +90,22 @@ export class InputAutomationBundleActivator
     //var bundleContext = bundleContext
 
         try {
-            logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.START)
-this.bundleContext= bundleContext
-moduleManagementThread= Thread(InputAutomationNewBundleRunnable(this))
-moduleManagementThread!.start()
-InputAutomationJFrame.create(this)
-} catch(e: Exception)
+            logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.START);
+    
+this.bundleContext= bundleContext;
+    
+moduleManagementThread= Thread(InputAutomationNewBundleRunnable(this));
+    
+moduleManagementThread!.start();
+    
+InputAutomationJFrame.create(this);
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.START, e)
+logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.START, e);
+    
 
 
 
@@ -110,8 +118,10 @@ logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.START, e)
                 //@Throws(Error::class)
             
     public registerAsService(){
-OSGIActivatorUtil.registerAsService(this.getBundleContext(), InputAutomationServiceFactory.getInstance(), InputAutomationConfigurationModuleChangeListener::class.toString()!)
-OSGIActivatorUtil.registerAsService(this.getBundleContext(), InputAutomationServiceFactory.getInstance(), InputAutomationRobotChangeListener::class.toString()!)
+OSGIActivatorUtil.registerAsService(this.getBundleContext(), InputAutomationServiceFactory.getInstance(), InputAutomationConfigurationModuleChangeListener::class.toString()!);
+    
+OSGIActivatorUtil.registerAsService(this.getBundleContext(), InputAutomationServiceFactory.getInstance(), InputAutomationRobotChangeListener::class.toString()!);
+    
 }
 
 
@@ -119,9 +129,11 @@ OSGIActivatorUtil.registerAsService(this.getBundleContext(), InputAutomationServ
             
     public useServices(){
 InputAutomationRobotServiceConsumer(this.getBundleContext()).
-                            process()
+                            process();
+    
 InputAutomationModuleServiceConsumer(this.getBundleContext()).
-                            process()
+                            process();
+    
 }
 
 
@@ -129,19 +141,22 @@ InputAutomationModuleServiceConsumer(this.getBundleContext()).
             
     public stop(context: BundleContext){
     //var context = context
-logUtil!.put(this.commonStrings!.START, this, "stop")
+logUtil!.put(this.commonStrings!.START, this, "stop");
+    
 
                         if(InputAutomationJFrame.getInstance() != 
                                     null
                                 )
                         
                                     {
-                                    InputAutomationJFrame.destroy()
+                                    InputAutomationJFrame.destroy();
+    
 
                                     }
                                 
                         else {
-                            logUtil!.put("Nothing to stop", this, "stop")
+                            logUtil!.put("Nothing to stop", this, "stop");
+    
 
                         }
                             

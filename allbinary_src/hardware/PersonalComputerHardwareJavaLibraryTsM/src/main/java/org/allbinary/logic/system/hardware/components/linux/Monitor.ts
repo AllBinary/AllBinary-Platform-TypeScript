@@ -37,7 +37,8 @@ public constructor (data: string){
 
             super();
             var data = data
-this.data= data
+this.data= data;
+    
 }
 
 

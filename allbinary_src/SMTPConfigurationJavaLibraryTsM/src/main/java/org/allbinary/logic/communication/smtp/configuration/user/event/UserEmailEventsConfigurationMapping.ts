@@ -18,10 +18,13 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { HashMap } from "../../../../../../../../java/util/HashMap.js";
 
     
-import { Vector } from "../../../../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../../../../java/util/Vector.js";
 
     
 import { TableMappingInterface } from "../../../../../../../../org/allbinary/data/tables/TableMappingInterface.js";
@@ -39,16 +42,18 @@ public constructor (userEmailEventsConfigurationInterface: UserEmailEventsConfig
 
             super();
             var userEmailEventsConfigurationInterface = userEmailEventsConfigurationInterface
-this.userEmailEventsConfigurationInterface= userEmailEventsConfigurationInterface
+this.userEmailEventsConfigurationInterface= userEmailEventsConfigurationInterface;
+    
 }
 
 
-    public toHashMap(): HashMap<Any, Any>{
+    public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
         
         
-
+;
+    
 
 
 
@@ -77,7 +82,8 @@ this.userEmailEventsConfigurationInterface= userEmailEventsConfigurationInterfac
     var vector: Vector = new Vector();
         
         
-
+;
+    
 
 
 

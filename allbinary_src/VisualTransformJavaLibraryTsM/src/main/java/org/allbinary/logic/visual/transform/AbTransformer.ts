@@ -65,7 +65,8 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
             super();
             var transformInfoInterface = transformInfoInterface
-this.transformInfoInterface= transformInfoInterface
+this.transformInfoInterface= transformInfoInterface;
+    
 }
 
 
@@ -81,13 +82,15 @@ this.transformInfoInterface= transformInfoInterface
 
     public setInputStream(inputStream: InputStream){
 var inputStream = inputStream
-this.inputStream= inputStream
+this.inputStream= inputStream;
+    
 }
 
 
     public setURIResolver(uriResolver: URIResolver){
 var uriResolver = uriResolver
-this.uriResolver= uriResolver
+this.uriResolver= uriResolver;
+    
 }
 
 
@@ -131,7 +134,8 @@ var xmlDocumentStr = xmlDocumentStr
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.XMLLOGGING))
                         
                                     {
-                                    logUtil!.put("xml: \n" +xmlDocumentStr, this, "translate(String xmlDocumentStr)")
+                                    logUtil!.put("xml: \n" +xmlDocumentStr, this, "translate(String xmlDocumentStr)");
+    
 
                                     }
                                 
@@ -152,12 +156,14 @@ var xmlDocumentStr = xmlDocumentStr
     var result: string = XslHelper.getInstance()!.translate(this.getURIResolver(), StreamSource(this.getInputStream()), StreamSource(StringBufferInputStream(xmlDocumentStr)))!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.XSLLOGGING))
                         
                                     {
-                                    logUtil!.put("translated xml: " +result, this, "translate(String xmlDocumentStr)")
+                                    logUtil!.put("translated xml: " +result, this, "translate(String xmlDocumentStr)");
+    
 
                                     }
                                 
@@ -165,20 +171,26 @@ var xmlDocumentStr = xmlDocumentStr
     var transformInfoObjectConfigGeneratorInterface: TransformInfoObjectConfigGenerator = TransformInfoObjectConfigGeneratorFactory.getInstance()!.getInstance(this.getTransformInfoInterface())!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return transformInfoObjectConfigGeneratorInterface!.process(result);
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put(this.transformInfoInterface!.log(), this, "translate(document)", e)
+                                    logUtil!.put(this.transformInfoInterface!.log(), this, "translate(document)", e);
+    
 
                                     }
                                 

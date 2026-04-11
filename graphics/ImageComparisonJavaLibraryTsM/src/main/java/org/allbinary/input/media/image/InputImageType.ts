@@ -18,10 +18,13 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { HashMap } from "../../../../../java/util/HashMap.js";
 
     
-import { Vector } from "../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../java/util/Vector.js";
 
     
 
@@ -30,7 +33,7 @@ export class InputImageType
          {
         
 
-    private hashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+    private hashMap: HashMap<any, any> = new HashMap<any, any>();
         
         
 
@@ -56,7 +59,9 @@ var imageTypeString = imageTypeString
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return hashMap!.get(imageTypeString as Object) as InputImageType;
+                        return hashMap!.get(imageTypeString as Object);
+
+                         as InputImageType;
     
 }
 
@@ -79,10 +84,14 @@ private constructor (name: string, index: number){
             super();
             var name = name
 var index = index
-this.name= name
-this.index= index
-TYPE_VECTOR.add(this)
-this.hashMap!.put(this.getName(), this)
+this.name= name;
+    
+this.index= index;
+    
+TYPE_VECTOR.add(this);
+    
+this.hashMap!.put(this.getName(), this);
+    
 }
 
 

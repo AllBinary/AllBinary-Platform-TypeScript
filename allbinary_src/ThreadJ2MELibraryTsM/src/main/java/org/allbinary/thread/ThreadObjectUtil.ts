@@ -30,7 +30,8 @@ export class ThreadObjectUtil
 
     public notifyObject(anyType: Object){
 var anyType = anyType
-anyType!.notify()
+anyType!.notify();
+    
 }
 
 
@@ -38,7 +39,8 @@ anyType!.notify()
             
     public waitObject(anyType: Object){
 var anyType = anyType
-anyType!.wait()
+anyType!.wait();
+    
 }
 
 
@@ -47,7 +49,8 @@ anyType!.wait()
     public waitObject(anyType: Object, delay: number){
 var anyType = anyType
 var delay = delay
-anyType!.wait(delay)
+anyType!.wait(delay);
+    
 }
 
 

@@ -82,6 +82,8 @@ export class ThreadFactoryUtil
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getInstance(runnable, runnable.getType());
+
+                        ;
     
 }
 
@@ -93,6 +95,8 @@ export class ThreadFactoryUtil
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getInstance(runnable, runnable.getType());
+
+                        ;
     
 }
 
@@ -104,7 +108,8 @@ export class ThreadFactoryUtil
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
+;
+    
 
                         if(J2MEUtil.isHTML())
                         
@@ -117,27 +122,34 @@ export class ThreadFactoryUtil
     var demoGameSingleThreadStartRunnable: RunnableCanvasSingleThreadStartRunnable = new RunnableCanvasSingleThreadStartRunnable(runnable as RunnableCanvas);
         
         
-
+;
+    
 PreLogUtil.put(StringMaker().
-                            append("Using Pseudo Thread for DemoCanvas/AllBinaryGameCanvas under PlayN/HTML5: ")!.append(StringUtil.getInstance()!.toString(runnable))!.toString(), this, commonStrings!.CONSTRUCTOR)
+                            append("Using Pseudo Thread for DemoCanvas/AllBinaryGameCanvas under PlayN/HTML5: ")!.append(StringUtil.getInstance()!.toString(runnable))!.toString(), this, commonStrings!.CONSTRUCTOR);
+    
 
     var primaryThreadPool: ThreadPool = PrimaryThreadPool.getInstance()!;
         
         
-
-primaryThreadPool!.runTask(demoGameSingleThreadStartRunnable)
+;
+    
+primaryThreadPool!.runTask(demoGameSingleThreadStartRunnable);
+    
 
                                     }
                                 
                         else {
                             PreLogUtil.put(StringMaker().
-                            append("Using Pseudo Thread for Runnable under PlayN/HTML5: ")!.append(StringUtil.getInstance()!.toString(runnable))!.toString(), this, commonStrings!.CONSTRUCTOR)
+                            append("Using Pseudo Thread for Runnable under PlayN/HTML5: ")!.append(StringUtil.getInstance()!.toString(runnable))!.toString(), this, commonStrings!.CONSTRUCTOR);
+    
 
     var primaryThreadPool: ThreadPool = PrimaryThreadPool.getInstance()!;
         
         
-
-primaryThreadPool!.runTask(runnable)
+;
+    
+primaryThreadPool!.runTask(runnable);
+    
 
                         }
                             
@@ -148,8 +160,10 @@ primaryThreadPool!.runTask(runnable)
     var thread: Thread = new Thread(runnable, runnable.toString());
         
         
-
-logUtil!.put(thread.toString(), this, commonStrings!.CONSTRUCTOR)
+;
+    
+logUtil!.put(thread.toString(), this, commonStrings!.CONSTRUCTOR);
+    
 
 
 
@@ -161,7 +175,8 @@ logUtil!.put(thread.toString(), this, commonStrings!.CONSTRUCTOR)
 
     public start(thread: Thread){
     //var thread = thread
-thread.start()
+thread.start();
+    
 }
 
 

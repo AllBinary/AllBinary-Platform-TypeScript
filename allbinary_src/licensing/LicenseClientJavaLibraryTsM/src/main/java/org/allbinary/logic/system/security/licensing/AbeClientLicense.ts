@@ -18,10 +18,16 @@
 
 
 
-import { Hashtable } from "../../../../../../java/util/Hashtable.js";
+            import Vector from "@ohos.util.Vector";
+        
+            import Hashtable from "@ohos.util.HashMap";
+        
+
+//import { Hashtable } from "../../../../../../java/util/Hashtable.js";
 
     
-import { Vector } from "../../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../../java/util/Vector.js";
 
     
 import { StringMaker } from "../../../../../../org/allbinary/logic/string/StringMaker.js";
@@ -43,13 +49,14 @@ export class AbeClientLicense
                 , AbeLicenseInterface {
         
 
-    public static hasRequiredKeys(resultHashtable: Hashtable<Any, Any>): boolean{
+    public static hasRequiredKeys(resultHashtable: Hashtable<any, any>): boolean{
 var resultHashtable = resultHashtable
 
     var abeClientInformationData: AbeClientInformationData = AbeClientInformationData.getInstance()!;
         
         
-
+;
+    
 
                         if(resultHashtable!.containsKey(abeClientInformationData!.LICENSEID) && resultHashtable!.containsKey(abeClientInformationData!.LICENSESERVERS) && resultHashtable!.containsKey(abeClientInformationData!.KEY) && resultHashtable!.containsKey(abeClientInformationData!.LICENSE_TYPE))
                         
@@ -76,7 +83,7 @@ var resultHashtable = resultHashtable
 }
 
 
-    private hashtable: Hashtable<Any, Any>
+    private hashtable: Hashtable<any, any>
 
     private id: string
 
@@ -85,21 +92,24 @@ var resultHashtable = resultHashtable
     private special: string
 
     private licenseType: LicenseType
-public constructor (hashtable: Hashtable<Any, Any>){
+public constructor (hashtable: Hashtable<any, any>){
 
             super();
             var hashtable = hashtable
-this.hashtable= Hashtable<Any, Any>()
+this.hashtable= Hashtable<any, any>();
+    
 
     var abeClientInformationData: AbeClientInformationData = AbeClientInformationData.getInstance()!;
         
         
-
+;
+    
 
     var keyValue: any = {} = hashtable.get(abeClientInformationData!.KEY)!;
         
         
-
+;
+    
 
                         if(keyValue != 
                                     null
@@ -110,25 +120,34 @@ this.hashtable= Hashtable<Any, Any>()
                         if(keyValue is String)
                         
                                     {
-                                    this.hashtable.put(abeClientInformationData!.KEY, keyValue)
+                                    this.hashtable.put(abeClientInformationData!.KEY, keyValue);
+    
 
                                     }
                                 
 
                                     }
                                 
-this.id= hashtable.get(abeClientInformationData!.LICENSEID) as String
+this.id= hashtable.get(abeClientInformationData!.LICENSEID);
 
-    var vector: Vector = hashtable.get(abeClientInformationData!.LICENSESERVERS) as Vector;
+                         as String;
+    
+
+    var vector: Vector = hashtable.get(abeClientInformationData!.LICENSESERVERS);
+
+                         as Vector;
         
         
-
-this.servers= BasicArrayList()
+;
+    
+this.servers= BasicArrayList();
+    
 
     var size: number = vector.length!;
         
         
-
+;
+    
 
 
 
@@ -139,21 +158,30 @@ this.servers= BasicArrayList()
         
 index < size; index++)
         {
-this.servers.add(vector.get(index))
+this.servers.add(vector.get(index));
+    
 }
 
 
     var stringUtil: StringUtil = StringUtil.getInstance()!;
         
         
+;
+    
+this.setSpecial(stringUtil!.getInstance(hashtable.get(abeClientInformationData!.SPECIAL);
 
-this.setSpecial(stringUtil!.getInstance(hashtable.get(abeClientInformationData!.SPECIAL) as String))
+                         as String));
+    
 
-    var licenseTypeString: string = stringUtil!.getInstance(hashtable.get(abeClientInformationData!.LICENSE_TYPE) as String)!;
+    var licenseTypeString: string = stringUtil!.getInstance(hashtable.get(abeClientInformationData!.LICENSE_TYPE);
+
+                         as String)!;
         
         
-
-this.licenseType= LicenseTypeFactory.getInstance()!.getInstance(licenseTypeString)
+;
+    
+this.licenseType= LicenseTypeFactory.getInstance()!.getInstance(licenseTypeString);
+    
 }
 
 
@@ -163,6 +191,8 @@ this.licenseType= LicenseTypeFactory.getInstance()!.getInstance(licenseTypeStrin
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.isValid();
+
+                        ;
     
 }
 
@@ -173,7 +203,9 @@ var keyName = keyName
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return hashtable.get(keyName as Object) as String;
+                        return hashtable.get(keyName as Object);
+
+                         as String;
     
 }
 
@@ -203,9 +235,12 @@ var keyName = keyName
     var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
         
         
+;
+    
 
+                        if(!stringValidationUtil!.isEmpty(this.getKey(AbeClientInformationData.getInstance()!.KEY));
 
-                        if(!stringValidationUtil!.isEmpty(this.getKey(AbeClientInformationData.getInstance()!.KEY)))
+                        )
                         
                                     {
                                     
@@ -231,31 +266,44 @@ var keyName = keyName
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
     var BREAK: string = "<br/>";
         
         
-
-stringBuffer!.append("License Id: ")
-stringBuffer!.append(this.getLicenseId())
-stringBuffer!.append(BREAK)
-stringBuffer!.append("Is Valid: ")
-stringBuffer!.appendboolean(this.isValid())
-stringBuffer!.append(BREAK)
-stringBuffer!.append("Keys: ")
-stringBuffer!.append(this.hashtable.toString())
-stringBuffer!.append(BREAK)
+;
+    
+stringBuffer!.append("License Id: ");
+    
+stringBuffer!.append(this.getLicenseId());
+    
+stringBuffer!.append(BREAK);
+    
+stringBuffer!.append("Is Valid: ");
+    
+stringBuffer!.appendboolean(this.isValid());
+    
+stringBuffer!.append(BREAK);
+    
+stringBuffer!.append("Keys: ");
+    
+stringBuffer!.append(this.hashtable.toString());
+    
+stringBuffer!.append(BREAK);
+    
 
     var serverVector: BasicArrayList = this.getServers()!;
         
         
-
+;
+    
 
     var size: number = serverVector!.size()!;
         
         
-
+;
+    
 
 
 
@@ -267,13 +315,19 @@ stringBuffer!.append(BREAK)
 index < size; index++)
         {
 
-    var nextServerString: string = serverVector!.get(index) as String;
-        
-        
+    var nextServerString: string = serverVector!.get(index);
 
-stringBuffer!.append("Server: ")
-stringBuffer!.append(nextServerString)
-stringBuffer!.append(BREAK)
+                         as String;
+        
+        
+;
+    
+stringBuffer!.append("Server: ");
+    
+stringBuffer!.append(nextServerString);
+    
+stringBuffer!.append(BREAK);
+    
 }
 
 
@@ -281,13 +335,16 @@ stringBuffer!.append(BREAK)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 
 
     setSpecial(special: string){
 var special = special
-this.special= special
+this.special= special;
+    
 }
 
 

@@ -18,10 +18,13 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { HashMap } from "../../java/util/HashMap.js";
 
     
-import { Vector } from "../../java/util/Vector.js";
+
+//import { Vector } from "../../java/util/Vector.js";
 
     
 import { PageContext } from "../../javax/servlet/jsp/PageContext.js";
@@ -57,27 +60,33 @@ export class DownloadItemsRequestHelper extends ModifyTable {
         
 
     private readonly downloadableItem: DownloadableItem
-public constructor (hashMap: HashMap<Any, Any>, pageContext: PageContext){
+public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
             var hashMap = hashMap
 var pageContext = pageContext
 
-    var inventoryTag: HelperTag = hashMap!.get(AbTagData.PARENT) as HelperTag;
-        
-        
+    var inventoryTag: HelperTag = hashMap!.get(AbTagData.PARENT);
 
+                         as HelperTag;
+        
+        
+;
+    
 
     var inventoryItemViewParentTagHelper: InventoryItemViewParentTagHelper = InventoryItemViewParentTagHelper.getInstance()!;
         
         
-
+;
+    
 
     var downloadableInventoryItemView: DownloadableInventoryItemView = inventoryItemViewParentTagHelper!.getDownloadableInventoryItemView(inventoryTag)!;
         
         
-
-this.downloadableItem= downloadableInventoryItemView!.getDownloadableItem()
+;
+    
+this.downloadableItem= downloadableInventoryItemView!.getDownloadableItem();
+    
 }
 
 
@@ -88,18 +97,22 @@ this.downloadableItem= downloadableInventoryItemView!.getDownloadableItem()
     var vector: Vector = this.downloadableItem!.toVector()!;
         
         
-
-DownloadItemsEntityFactory.getInstance()!.getDownloadItemsEntityInstance()!.insert(vector)
+;
+    
+DownloadItemsEntityFactory.getInstance()!.getDownloadItemsEntityInstance()!.insert(vector);
+    
 
     var success: string = "Successfully inserted " +this.downloadableItem!.getId() +" into downloaditems table";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put(success, this, "insert()")
+                                    logUtil!.put(success, this, "insert()");
+    
 
                                     }
                                 
@@ -109,18 +122,22 @@ DownloadItemsEntityFactory.getInstance()!.getDownloadItemsEntityInstance()!.inse
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to insert " +this.downloadableItem!.getId() +" into downloaditems table";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "inserts()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "inserts()", e);
+    
 
                                     }
                                 
@@ -138,17 +155,20 @@ DownloadItemsEntityFactory.getInstance()!.getDownloadItemsEntityInstance()!.inse
     public delete(): string{
 
         try {
-            DownloadItemsEntityFactory.getInstance()!.getDownloadItemsEntityInstance()!.delete(this.downloadableItem!.getId())
+            DownloadItemsEntityFactory.getInstance()!.getDownloadItemsEntityInstance()!.delete(this.downloadableItem!.getId());
+    
 
     var success: string = "Successfully deleted";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put(success, this, "delete()")
+                                    logUtil!.put(success, this, "delete()");
+    
 
                                     }
                                 
@@ -158,18 +178,22 @@ DownloadItemsEntityFactory.getInstance()!.getDownloadItemsEntityInstance()!.inse
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to delete";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "delete()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "delete()", e);
+    
 
                                     }
                                 
@@ -191,18 +215,22 @@ DownloadItemsEntityFactory.getInstance()!.getDownloadItemsEntityInstance()!.inse
     var success: string = "Update Successful";
         
         
+;
+    
 
-
-    var values: HashMap<Any, Any> = this.downloadableItem!.toHashMap()!;
+    var values: HashMap<any, any> = this.downloadableItem!.toHashMap()!;
         
         
-
-DownloadItemsEntityFactory.getInstance()!.getDownloadItemsEntityInstance()!.update(values)
+;
+    
+DownloadItemsEntityFactory.getInstance()!.getDownloadItemsEntityInstance()!.update(values);
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put(this.downloadableItem!.getId() +CommonSeps.getInstance()!.SPACE +success, this, "update()")
+                                    logUtil!.put(this.downloadableItem!.getId() +CommonSeps.getInstance()!.SPACE +success, this, "update()");
+    
 
                                     }
                                 
@@ -212,18 +240,22 @@ DownloadItemsEntityFactory.getInstance()!.getDownloadItemsEntityInstance()!.upda
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to update: " +this.downloadableItem!.getId();
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "update()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "update()", e);
+    
 
                                     }
                                 

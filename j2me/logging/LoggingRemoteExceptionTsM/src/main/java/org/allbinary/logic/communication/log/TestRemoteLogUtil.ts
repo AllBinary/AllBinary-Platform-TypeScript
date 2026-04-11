@@ -38,24 +38,29 @@ export class TestRemoteLogUtil
             
     public static main(args: string[]){
 var args = args
-TestRemoteLogUtil()
+TestRemoteLogUtil();
+    
 }
 
 public constructor (){
 
             super();
-            Globals.getInstance()!.init(this::class.java.classLoader, PATH)
+            Globals.getInstance()!.init(this.constructor.name.java.classLoader, PATH);
+    
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
         
         
-
+;
+    
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, "Test", "TestClass", Error("Pretend Exception"))
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, "Test", "TestClass", Error("Pretend Exception"));
+    
 }
 
 

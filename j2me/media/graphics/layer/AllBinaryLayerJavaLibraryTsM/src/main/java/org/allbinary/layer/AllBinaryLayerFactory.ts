@@ -36,7 +36,8 @@ public constructor (rectangle: Rectangle){
 
             super();
             var rectangle = rectangle
-this.rectangle= rectangle
+this.rectangle= rectangle;
+    
 }
 
 

@@ -43,7 +43,7 @@ export class GenericProfileDataWorkerType
                 , GenericProfileDataWorkerTypeInterface {
         
 
-    private hashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+    private hashMap: HashMap<any, any> = new HashMap<any, any>();
         
         
 
@@ -69,12 +69,15 @@ var node = node
     var name: string = DomNodeHelper.getTextNodeValue(node)!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return hashMap!.get(name as Object) as GenericProfileDataWorkerType;
+                        return hashMap!.get(name as Object);
+
+                         as GenericProfileDataWorkerType;
     
 }
 
@@ -84,8 +87,10 @@ public constructor (name: string){
 
             super();
             var name = name
-this.setName(name)
-hashMap!.put(this.getName(), this)
+this.setName(name);
+    
+hashMap!.put(this.getName(), this);
+    
 }
 
 
@@ -101,7 +106,8 @@ hashMap!.put(this.getName(), this)
 
     public setName(name: string){
 var name = name
-this.name= name
+this.name= name;
+    
 }
 
 
@@ -113,7 +119,8 @@ var document = document
     var node: Node = ModDomHelper.createTextNode(document, GenericProfileDataWorkerData.NAME, name)!;
         
         
-
+;
+    
 
 
 

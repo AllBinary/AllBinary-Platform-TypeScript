@@ -39,8 +39,10 @@ protected constructor (aBasicUserRole: BasicUserRole, aUserFactoryInterface: Use
             super();
             var aBasicUserRole = aBasicUserRole
 var aUserFactoryInterface = aUserFactoryInterface
-this.basicUserRole= aBasicUserRole
-this.userFactoryInterface= aUserFactoryInterface
+this.basicUserRole= aBasicUserRole;
+    
+this.userFactoryInterface= aUserFactoryInterface;
+    
 }
 
 
@@ -50,6 +52,8 @@ this.userFactoryInterface= aUserFactoryInterface
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.basicUserRole!.toString();
+
+                        ;
     
 }
 
@@ -82,6 +86,8 @@ this.userFactoryInterface= aUserFactoryInterface
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.basicUserRole!.getSessionTimeout();
+
+                        ;
     
 }
 
@@ -92,6 +98,8 @@ this.userFactoryInterface= aUserFactoryInterface
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.basicUserRole!.getSessionInactivityTimeout();
+
+                        ;
     
 }
 

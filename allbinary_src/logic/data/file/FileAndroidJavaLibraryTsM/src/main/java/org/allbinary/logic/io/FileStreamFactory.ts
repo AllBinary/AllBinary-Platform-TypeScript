@@ -52,7 +52,8 @@ private constructor (context: Context){
 
             super();
                 //var context = context
-this.context= context
+this.context= context;
+    
 }
 
 
@@ -79,8 +80,10 @@ this.context= context
     var context: Context = this.getContext()!;
         
         
-
-context.deleteFile(fileName)
+;
+    
+context.deleteFile(fileName);
+    
 
 
 
@@ -95,7 +98,8 @@ context.deleteFile(fileName)
     public delete(path: string, fileName: string){
     //var path = path
     //var fileName = fileName
-this.getContext()!.deleteFile(fileName)
+this.getContext()!.deleteFile(fileName);
+    
 }
 
 

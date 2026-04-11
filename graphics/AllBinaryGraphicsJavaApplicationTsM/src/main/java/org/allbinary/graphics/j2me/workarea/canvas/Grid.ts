@@ -53,10 +53,14 @@ public constructor (grid: Grid){
 
             super();
             var grid = grid
-this.grid= grid.grid
-this.showGrid(grid.isGridOn)
-this.isGridPossible= grid.isGridPossible
-this.setZoom(grid.getZoom())
+this.grid= grid.grid;
+    
+this.showGrid(grid.isGridOn);
+    
+this.isGridPossible= grid.isGridPossible;
+    
+this.setZoom(grid.getZoom());
+    
 }
 
 
@@ -102,22 +106,26 @@ this.setZoom(grid.getZoom())
 
     public showGrid(value: boolean){
 var value = value
-this.isGridOn= value
+this.isGridOn= value;
+    
 }
 
 
     public setZoom(zoom: number){
 var zoom = zoom
-this.zoom= zoom
+this.zoom= zoom;
+    
 
                         if(this.zoom < 1)
                         
                                     {
-                                    zoom= 1
+                                    zoom= 1;
+    
 
                                     }
                                 
-this.isChanged= true
+this.isChanged= true;
+    
 }
 
 

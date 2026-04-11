@@ -45,7 +45,8 @@ public constructor (storeFrontOrdersHistoryStatisticsInterface: StoreFrontOrders
 
             super();
             var storeFrontOrdersHistoryStatisticsInterface = storeFrontOrdersHistoryStatisticsInterface
-this.storeFrontOrdersHistoryStatisticsInterface= storeFrontOrdersHistoryStatisticsInterface
+this.storeFrontOrdersHistoryStatisticsInterface= storeFrontOrdersHistoryStatisticsInterface;
+    
 }
 
 
@@ -54,15 +55,17 @@ this.storeFrontOrdersHistoryStatisticsInterface= storeFrontOrdersHistoryStatisti
     public toXmlNode(document: Document): Node{
 var document = document
 
-    var hashMap: HashMap<Any, Any> = this.storeFrontOrdersHistoryStatisticsInterface!.toHashMap()!;
+    var hashMap: HashMap<any, any> = this.storeFrontOrdersHistoryStatisticsInterface!.toHashMap()!;
         
         
-
+;
+    
 
     var node: Node = ModDomHelper.createNameValueNodes(document, StoreFrontOrdersHistoryStatisticsData.getInstance()!.NAME, hashMap)!;
         
         
-
+;
+    
 
 
 

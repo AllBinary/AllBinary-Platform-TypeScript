@@ -68,58 +68,76 @@ public constructor ()
                             getInstance(this.getPropertiesHashMap(), this.pageContext)!;
         
         
+;
+    
 
-
-    var addressHelperClass: KClass<*> = anyType!::class!;
+    var addressHelperClass: Function = anyType!constructor!;
         
         
-
+;
+    
 
     var method: Method = addressHelperClass!.getMethod("search", 
                             null)!;
         
         
-
+;
+    
 
     var result: string = method.invoke(anyType, 
-                            null) as String;
-        
-        
+                            null);
 
-pageContext!.getOut()!.print(result)
-} catch(e: LicensingException)
+                         as String;
+        
+        
+;
+    
+pageContext!.getOut()!.print(result);
+    
+
+                //: 
+} catch(e) 
             {
 
 
 
                             throw e
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
 
     var error: string = "Failed to search Inventory by keyword";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "search()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "search()", e);
+    
 
                                     }
                                 
 
         try {
-            pageContext!.getOut()!.print(error +"<br>")
-pageContext!.getOut()!.print("Exception: " +e +"<br>")
-} catch(e2: Exception)
+            pageContext!.getOut()!.print(error +"<br>");
+    
+pageContext!.getOut()!.print("Exception: " +e +"<br>");
+    
+
+                //: 
+} catch(e2) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.LICENSINGERROR))
                         
                                     {
-                                    logUtil!.put("Exception in Exception Handling", this, "search()", e)
+                                    logUtil!.put("Exception in Exception Handling", this, "search()", e);
+    
 
                                     }
                                 
@@ -140,58 +158,76 @@ pageContext!.getOut()!.print("Exception: " +e +"<br>")
                             getInstance(this.getPropertiesHashMap(), this.pageContext)!;
         
         
+;
+    
 
-
-    var helperClass: KClass<*> = anyType!::class!;
+    var helperClass: Function = anyType!constructor!;
         
         
-
+;
+    
 
     var method: Method = helperClass!.getMethod("viewSummary", 
                             null)!;
         
         
-
+;
+    
 
     var result: string = method.invoke(anyType, 
-                            null) as String;
-        
-        
+                            null);
 
-pageContext!.getOut()!.print(result)
-} catch(e: LicensingException)
+                         as String;
+        
+        
+;
+    
+pageContext!.getOut()!.print(result);
+    
+
+                //: 
+} catch(e) 
             {
 
 
 
                             throw e
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
 
     var error: string = "Failed to View Summary";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "viewSummary()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "viewSummary()", e);
+    
 
                                     }
                                 
 
         try {
-            pageContext!.getOut()!.print(error +"<br>")
-pageContext!.getOut()!.print("Exception: " +e +"<br>")
-} catch(e2: Exception)
+            pageContext!.getOut()!.print(error +"<br>");
+    
+pageContext!.getOut()!.print("Exception: " +e +"<br>");
+    
+
+                //: 
+} catch(e2) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.LICENSINGERROR))
                         
                                     {
-                                    logUtil!.put("Exception in Exception Handling", this, "viewSummary())", e)
+                                    logUtil!.put("Exception in Exception Handling", this, "viewSummary())", e);
+    
 
                                     }
                                 
@@ -217,9 +253,12 @@ pageContext!.getOut()!.print("Exception: " +e +"<br>")
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.SEARCH) == 0)
                         
                                     {
-                                    this.setName("Basic Search Inventory View")
-this.setObjectFile("views.generic.inventory.AutoSearchValidationInventoryView")
-this.search()
+                                    this.setName("Basic Search Inventory View");
+    
+this.setObjectFile("views.generic.inventory.AutoSearchValidationInventoryView");
+    
+this.search();
+    
 
 
 
@@ -233,9 +272,12 @@ this.search()
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.VIEWSUMMARY) == 0)
                         
                                     {
-                                    this.setName("Basic Inventory View")
-this.setObjectFile("views.generic.inventory.AutoValidationInventoryView")
-this.viewSummary()
+                                    this.setName("Basic Inventory View");
+    
+this.setObjectFile("views.generic.inventory.AutoValidationInventoryView");
+    
+this.viewSummary();
+    
 
 
 
@@ -249,13 +291,17 @@ this.viewSummary()
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.VIEW) == 0)
                         
                                     {
-                                    this.setName("Basic Inventory View")
-this.setObjectFile("views.generic.inventory.AutoValidationInventoryView")
+                                    this.setName("Basic Inventory View");
+    
+this.setObjectFile("views.generic.inventory.AutoValidationInventoryView");
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.doStartTag();
+
+                        ;
     
 
                                     }
@@ -275,9 +321,12 @@ this.setObjectFile("views.generic.inventory.AutoValidationInventoryView")
 
 
                             throw Error("Command Null")
-} catch(e: LicensingException)
+
+                //: 
+} catch(e) 
             {
-AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e);
+    
 
 
 
@@ -285,9 +334,12 @@ AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
                         return SKIP_BODY;
     
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
-AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
+    
 
 
 

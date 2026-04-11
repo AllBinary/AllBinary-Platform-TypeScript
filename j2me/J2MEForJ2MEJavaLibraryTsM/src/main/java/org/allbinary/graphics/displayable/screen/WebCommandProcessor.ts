@@ -74,15 +74,20 @@ export class WebCommandProcessor
     //var canvas = canvas
 
         try {
-            list.remove(0)
-} catch(e: Exception)
+            list.remove(0);
+    
+
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e);
+    
 }
 
 }

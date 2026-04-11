@@ -18,7 +18,10 @@
 
 
 
-import { Hashtable } from "../../../../java/util/Hashtable.js";
+            import Hashtable from "@ohos.util.HashMap";
+        
+
+//import { Hashtable } from "../../../../java/util/Hashtable.js";
 
     
 import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
@@ -46,12 +49,14 @@ export class GameConfigurationSingleton
 
     private list: BasicArrayList
 
-    private hashtable: Hashtable<Any, Any>
+    private hashtable: Hashtable<any, any>
 private constructor (){
 
             super();
-            list= BasicArrayList()
-hashtable= Hashtable<Any, Any>()
+            list= BasicArrayList();
+    
+hashtable= Hashtable<any, any>();
+    
 }
 
 
@@ -61,7 +66,9 @@ var name = name
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return hashtable.get(name as Object) as GameConfiguration;
+                        return hashtable.get(name as Object);
+
+                         as GameConfiguration;
     
 }
 
@@ -78,11 +85,12 @@ var name = name
 
     public add(gameConfiguration: GameConfiguration){
 var gameConfiguration = gameConfiguration
-list.add(gameConfiguration)
+list.add(gameConfiguration);
+    
 }
 
 
-    public getHashtable(): Hashtable<Any, Any>{
+    public getHashtable(): Hashtable<any, any>{
 
 
 

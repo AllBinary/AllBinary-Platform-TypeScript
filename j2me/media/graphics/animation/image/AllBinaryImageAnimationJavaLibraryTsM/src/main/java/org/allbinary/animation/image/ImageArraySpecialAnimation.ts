@@ -58,7 +58,8 @@ public constructor (imageArray: Image[], animationBehavior: AnimationBehavior)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.reset()
+this.reset();
+    
 }
 
 
@@ -77,13 +78,16 @@ this.reset()
 
 
     public setLastFrame(){
-this.circularIndexUtil!.setIndex(this.circularIndexUtil!.getSize() -1)
+this.circularIndexUtil!.setIndex(this.circularIndexUtil!.getSize() -1);
+    
 }
 
 
     public reset(){
-this.setFrame(this.getSize() -1)
-loopCount= 0
+this.setFrame(this.getSize() -1);
+    
+loopCount= 0;
+    
 }
 
 
@@ -96,12 +100,14 @@ loopCount= 0
                         if(timeDelayHelper!.isTime(GameTickTimeDelayHelperFactory.getInstance()!.startTime))
                         
                                     {
-                                    this.previousFrame()
+                                    this.previousFrame();
+    
 
                         if(this.getFrame() == 0)
                         
                                     {
-                                    loopCount++
+                                    loopCount++;
+    
 
                                     }
                                 
@@ -149,9 +155,12 @@ loopCount= 0
     //var graphics = graphics
 var x = x
 var y = y
-x= DisplayInfoSingleton.getInstance()!.getLastHalfWidth() -(this.getImage(this.circularIndexUtil!.getIndex())!.getWidth() shr 1)
-y= 5
-super.paint(graphics, x, y)
+x= DisplayInfoSingleton.getInstance()!.getLastHalfWidth() -(this.getImage(this.circularIndexUtil!.getIndex())!.getWidth() shr 1);
+    
+y= 5;
+    
+super.paint(graphics, x, y);
+    
 }
 
 

@@ -30,21 +30,25 @@ export class MethodUtil
          {
         
 
-    public static viewAll(myClass: KClass<*>, lineBreak: string): string{
+    public static viewAll(myClass: Function, lineBreak: string): string{
 var myClass = myClass
 var lineBreak = lineBreak
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
     var method: Method[] = myClass!.getMethods()!;
         
         
-
-stringBuffer!.append("Methods: ")
-stringBuffer!.append(lineBreak)
+;
+    
+stringBuffer!.append("Methods: ");
+    
+stringBuffer!.append(lineBreak);
+    
 
 
 
@@ -55,13 +59,20 @@ stringBuffer!.append(lineBreak)
         
 index < method.length; index++)
         {
-stringBuffer!.append(method[index]!.getReturnType()!.getName())
-stringBuffer!.append(" ")
-stringBuffer!.append(method[index]!.getName())
-stringBuffer!.append("(")
-ParamsUtil.viewParams(method[index]!.getParameterTypes())
-stringBuffer!.append(")")
-stringBuffer!.append(lineBreak)
+stringBuffer!.append(method[index]!.getReturnType()!.getName());
+    
+stringBuffer!.append(" ");
+    
+stringBuffer!.append(method[index]!.getName());
+    
+stringBuffer!.append("(");
+    
+ParamsUtil.viewParams(method[index]!.getParameterTypes());
+    
+stringBuffer!.append(")");
+    
+stringBuffer!.append(lineBreak);
+    
 }
 
 
@@ -69,6 +80,8 @@ stringBuffer!.append(lineBreak)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

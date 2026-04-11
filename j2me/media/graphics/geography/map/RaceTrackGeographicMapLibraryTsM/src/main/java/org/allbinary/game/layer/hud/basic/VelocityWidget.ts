@@ -85,15 +85,20 @@ var basicColor = basicColor
 
                             //For kotlin this is before the body of the constructor.
                     
-this.maxVelocity= powerOfTenVelocity
-this.velocity= 0
-this.primitiveLongUtil= PrimitiveLongUtil(powerOfTenVelocity)
+this.maxVelocity= powerOfTenVelocity;
+    
+this.velocity= 0;
+    
+this.primitiveLongUtil= PrimitiveLongUtil(powerOfTenVelocity);
+    
 
     var myFont: MyFont = MyFont.getInstance()!;
         
         
-
-this.offset= myFont!.stringWidth(this.primitiveLongUtil!.getMaxDigits()) +myFont!.stringWidth(2)
+;
+    
+this.offset= myFont!.stringWidth(this.primitiveLongUtil!.getMaxDigits()) +myFont!.stringWidth(2);
+    
 }
 
 
@@ -109,7 +114,8 @@ this.offset= myFont!.stringWidth(this.primitiveLongUtil!.getMaxDigits()) +myFont
 
     public add(value: number){
 var value = value
-this.set(this.velocity +value)
+this.set(this.velocity +value);
+    
 }
 
 
@@ -119,13 +125,16 @@ var value = value
     var lastVelocity: number = this.velocity;
         
         
-
-this.velocity= value
+;
+    
+this.velocity= value;
+    
 
                         if(this.velocity > this.maxVelocity)
                         
                                     {
-                                    this.velocity= 0
+                                    this.velocity= 0;
+    
 
                                     }
                                 
@@ -133,17 +142,20 @@ this.velocity= value
                         if(lastVelocity != this.velocity)
                         
                                     {
-                                    this.string= primitiveLongUtil!.getCharArray(this.velocity *18)
+                                    this.string= primitiveLongUtil!.getCharArray(this.velocity *18);
+    
 
                         if(OpenGLFeatureUtil.getInstance()!.isAnyThreed())
                         
                                     {
-                                    this.totalDigits= primitiveLongUtil!.getCurrentTotalDigits() +1
+                                    this.totalDigits= primitiveLongUtil!.getCurrentTotalDigits() +1;
+    
 
                                     }
                                 
                         else {
-                            this.totalDigits= primitiveLongUtil!.getCurrentTotalDigits()
+                            this.totalDigits= primitiveLongUtil!.getCurrentTotalDigits();
+    
 
                         }
                             
@@ -151,8 +163,10 @@ this.velocity= value
     var myFont: MyFont = MyFont.getInstance()!;
         
         
-
-this.offset2= this.offset -myFont!.stringWidth(this.totalDigits) -myFont!.stringWidth(2)
+;
+    
+this.offset2= this.offset -myFont!.stringWidth(this.totalDigits) -myFont!.stringWidth(2);
+    
 
                                     }
                                 
@@ -161,13 +175,15 @@ this.offset2= this.offset -myFont!.stringWidth(this.totalDigits) -myFont!.string
 
     public reduce(value: number){
 var value = value
-this.set(this.velocity -value)
+this.set(this.velocity -value);
+    
 }
 
 
     public paint(graphics: Graphics){
 var graphics = graphics
-super.paint(graphics, string, 0, this.totalDigits, KILOMETERS_PER_HOUR_STR, 0, this.totalChars, offset2, offset)
+super.paint(graphics, string, 0, this.totalDigits, KILOMETERS_PER_HOUR_STR, 0, this.totalChars, offset2, offset);
+    
 }
 
 

@@ -55,7 +55,8 @@ public constructor (raceTrackInfo: RaceTrackInfo, raceTrackData: RaceTrackData, 
 
                             //For kotlin this is before the body of the constructor.
                     
-this.customMapGenerator= customMapGeneratorBaseFactory!.getInstance(this)
+this.customMapGenerator= customMapGeneratorBaseFactory!.getInstance(this);
+    
 }
 
 public constructor (raceTrackInfo: RaceTrackInfo, raceTrackData: RaceTrackData, tiledLayerFactoryInterface: AllBinaryTiledLayerFactoryInterface, geographicMapCellPositionFactoryInterface: GeographicMapCellPositionFactoryInterface, geographicMapCellTypeFactory: GeographicMapCellTypeFactory, customMapGeneratorBaseFactory: CustomMapGeneratorBaseFactory)                        
@@ -91,10 +92,11 @@ public constructor (raceTrackInfo: RaceTrackInfo, raceTrackData: RaceTrackData, 
     public isValid(geographicMapCellPosition: GeographicMapCellPosition): boolean{
     //var geographicMapCellPosition = geographicMapCellPosition
 
-    var customMapArray: IntArray[] = this.customMapGenerator!.getCustomMapArray()!;
+    var customMapArray: number[][] = this.customMapGenerator!.getCustomMapArray()!;
         
         
-
+;
+    
 
                         if(geographicMapCellPosition!.getColumn() >= customMapArray[0]!.length)
                         
@@ -103,12 +105,18 @@ public constructor (raceTrackInfo: RaceTrackInfo, raceTrackData: RaceTrackData, 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("Column: ")
-stringBuffer!.appendint(geographicMapCellPosition!.getColumn())
-stringBuffer!.append(" not in: ")
-stringBuffer!.appendint(customMapArray[0]!.length)
-logUtil!.put(stringBuffer!.toString(), this, commonStrings!.IS_VALID)
+;
+    
+stringBuffer!.append("Column: ");
+    
+stringBuffer!.appendint(geographicMapCellPosition!.getColumn());
+    
+stringBuffer!.append(" not in: ");
+    
+stringBuffer!.appendint(customMapArray[0]!.length);
+    
+logUtil!.put(stringBuffer!.toString(), this, commonStrings!.IS_VALID);
+    
 
                         if(geographicMapCellPosition!.getColumn() == customMapArray[0]!.length)
                         
@@ -143,12 +151,18 @@ logUtil!.put(stringBuffer!.toString(), this, commonStrings!.IS_VALID)
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("Row: ")
-stringBuffer!.appendint(geographicMapCellPosition!.getRow())
-stringBuffer!.append(" not in: ")
-stringBuffer!.appendint(customMapArray!.length)
-logUtil!.put(stringBuffer!.toString(), this, commonStrings!.IS_VALID)
+;
+    
+stringBuffer!.append("Row: ");
+    
+stringBuffer!.appendint(geographicMapCellPosition!.getRow());
+    
+stringBuffer!.append(" not in: ");
+    
+stringBuffer!.appendint(customMapArray!.length);
+    
+logUtil!.put(stringBuffer!.toString(), this, commonStrings!.IS_VALID);
+    
 
                         if(geographicMapCellPosition!.getRow() == customMapArray!.length)
                         

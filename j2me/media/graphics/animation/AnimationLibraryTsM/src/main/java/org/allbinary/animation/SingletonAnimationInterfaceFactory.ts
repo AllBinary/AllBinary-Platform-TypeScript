@@ -34,7 +34,8 @@ public constructor (animationInterface: Animation){
 
             super();
                 //var animationInterface = animationInterface
-this.animationInterface= animationInterface
+this.animationInterface= animationInterface;
+    
 }
 
 

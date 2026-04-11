@@ -18,7 +18,10 @@
 
 
 
-import { Vector } from "../../../../../../../../../../java/util/Vector.js";
+            import Vector from "@ohos.util.Vector";
+        
+
+//import { Vector } from "../../../../../../../../../../java/util/Vector.js";
 
     
 import { InputImageIOInterfaceFactory } from "../../../../../../../../../../org/allbinary/input/media/image/InputImageIOInterfaceFactory.js";
@@ -51,28 +54,34 @@ export class ImageActionScriptOutputProcessor
     var logUtil: LogUtil = LogUtil.getInstance()!;
         
         
-
+;
+    
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put("Start - Processing at: " +imageActionScriptOutputInterface!.toString(), "ImageActionScriptOutputProcessor", commonStrings!.PROCESS)
+;
+    
+logUtil!.put("Start - Processing at: " +imageActionScriptOutputInterface!.toString(), "ImageActionScriptOutputProcessor", commonStrings!.PROCESS);
+    
 
     var imageTypes: ImageTypes = imageActionScriptOutputInterface!.getImageTypes()!;
         
         
-
+;
+    
 
     var vector: Vector = imageTypes!.getVector()!;
         
         
-
+;
+    
 
     var size: number = vector.length!;
         
         
-
+;
+    
 
 
 
@@ -84,16 +93,21 @@ logUtil!.put("Start - Processing at: " +imageActionScriptOutputInterface!.toStri
 index < size; index++)
         {
 
-    var imageType: InputImageType = vector.get(index) as InputImageType;
-        
-        
+    var imageType: InputImageType = vector.get(index);
 
+                         as InputImageType;
+        
+        
+;
+    
 
     var imageIOInterface: ImageIOInterface = InputImageIOInterfaceFactory.getInstance(imageType)!;
         
         
-
-imageIOInterface!.save(frame)
+;
+    
+imageIOInterface!.save(frame);
+    
 }
 
 }

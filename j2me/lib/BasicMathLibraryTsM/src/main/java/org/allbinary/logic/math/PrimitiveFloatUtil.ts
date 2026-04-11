@@ -24,12 +24,12 @@ export class PrimitiveFloatUtil
          {
         
 
-    public static getArrayInstance(): FloatArray{
+    public static getArrayInstance(): number[]{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return FloatArray(0);
+                        return [];
     
 }
 

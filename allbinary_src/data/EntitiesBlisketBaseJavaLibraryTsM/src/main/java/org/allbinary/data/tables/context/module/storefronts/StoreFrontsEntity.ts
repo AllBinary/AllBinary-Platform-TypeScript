@@ -18,10 +18,13 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { HashMap } from "../../../../../../../java/util/HashMap.js";
 
     
-import { Vector } from "../../../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../../../java/util/Vector.js";
 
     
 import { StoreFront } from "../../../../../../../org/allbinary/business/context/modules/storefront/StoreFront.js";
@@ -66,7 +69,8 @@ public constructor ()
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setTableName(tableName)
+this.setTableName(tableName);
+    
 }
 
 
@@ -74,22 +78,27 @@ this.setTableName(tableName)
 var values = values
 
         try {
-            super.insert(values)
+            super.insert(values);
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.SUCCESS, this, INSERT)
+                                    logUtil!.put(this.commonStrings!.SUCCESS, this, INSERT);
+    
 
                                     }
                                 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.FAILURE, this, INSERT, e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, INSERT, e);
+    
 
                                     }
                                 
@@ -102,22 +111,27 @@ var values = values
 var value = value
 
         try {
-            super.deleteWhere(StoreFrontData.getInstance()!.NAME, value)
+            super.deleteWhere(StoreFrontData.getInstance()!.NAME, value);
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.SUCCESS, this, commonStrings!.delete)
+                                    logUtil!.put(this.commonStrings!.SUCCESS, this, commonStrings!.delete);
+    
 
                                     }
                                 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.FAILURE, this, commonStrings!.delete, e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, commonStrings!.delete, e);
+    
 
                                     }
                                 
@@ -131,16 +145,19 @@ var value = value
     public getStoreFrontInterface(name: string): StoreFront{
 var name = name
 
-    var keysAndValues: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();
         
         
+;
+    
+keysAndValues!.put(StoreFrontData.getInstance()!.NAME, name);
+    
 
-keysAndValues!.put(StoreFrontData.getInstance()!.NAME, name)
-
-    var storeHashMap: HashMap<Any, Any> = super.getRow(keysAndValues)!;
+    var storeHashMap: HashMap<any, any> = super.getRow(keysAndValues)!;
         
         
-
+;
+    
 
                         if(storeHashMap != 
                                     null
@@ -174,7 +191,8 @@ keysAndValues!.put(StoreFrontData.getInstance()!.NAME, name)
     var storeFrontNames: Vector = super.getColumn(StoreFrontData.getInstance()!.NAME)!;
         
         
-
+;
+    
 
 
 
@@ -184,9 +202,12 @@ keysAndValues!.put(StoreFrontData.getInstance()!.NAME, name)
 }
 
 
-    public update(updatedValues: HashMap<Any, Any>){
+    public update(updatedValues: HashMap<any, any>){
 var updatedValues = updatedValues
-super.updateWhere(StoreFrontData.getInstance()!.NAME, updatedValues!.get(StoreFrontData.getInstance()!.NAME) as String, updatedValues)
+super.updateWhere(StoreFrontData.getInstance()!.NAME, updatedValues!.get(StoreFrontData.getInstance()!.NAME);
+
+                         as String, updatedValues);
+    
 }
 
 
@@ -195,77 +216,141 @@ super.updateWhere(StoreFrontData.getInstance()!.NAME, updatedValues!.get(StoreFr
     var storeFrontData: StoreFrontData = StoreFrontData.getInstance()!;
         
         
-
+;
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)
-stringBuffer!.append(tableName)
-stringBuffer!.append(this.sqlStrings!.START)
-stringBuffer!.append(storeFrontData!.NAME)
-stringBuffer!.append(this.sqlTypeStrings!.SIXTY_CHAR_COLUMN_NOT_NULL)
-stringBuffer!.append(storeFrontData!.HOMEHOSTNAME)
-stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-stringBuffer!.append(storeFrontData!.HOMEHOSTNAMEPATH)
-stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-stringBuffer!.append(storeFrontData!.HOSTNAME)
-stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-stringBuffer!.append(storeFrontData!.HOSTNAMEPATH)
-stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-stringBuffer!.append(storeFrontData!.TESTHOMEHOSTNAME)
-stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-stringBuffer!.append(storeFrontData!.TESTHOMEHOSTNAMEPATH)
-stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-stringBuffer!.append(storeFrontData!.TESTHOSTNAME)
-stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-stringBuffer!.append(storeFrontData!.TESTHOSTNAMEPATH)
-stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-stringBuffer!.append(storeFrontData!.IMAGEPATH)
-stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-stringBuffer!.append(storeFrontData!.STATICPATH)
-stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-stringBuffer!.append(storeFrontData!.CATEGORYPATH)
-stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-stringBuffer!.append(storeFrontData!.INVENTORYCONTROL)
-stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-stringBuffer!.append(storeFrontData!.CONFIGURATION)
-stringBuffer!.append(this.sqlTypeStrings!.BLOB_NOT_NULL)
-stringBuffer!.append(storeFrontData!.SUBSTORES)
-stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-stringBuffer!.append(storeFrontData!.TAGLOCATION)
-stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-stringBuffer!.append(storeFrontData!.PACKAGELOCATION)
-stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-stringBuffer!.append(storeFrontData!.FTP)
-stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-stringBuffer!.append(storeFrontData!.FTPPATH)
-stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-stringBuffer!.append(storeFrontData!.FTPUSERNAME)
-stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-stringBuffer!.append(storeFrontData!.FTPPASSWORD)
-stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-stringBuffer!.append(storeFrontData!.TESTFTP)
-stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-stringBuffer!.append(storeFrontData!.TESTFTPPATH)
-stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-stringBuffer!.append(storeFrontData!.TESTFTPUSERNAME)
-stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-stringBuffer!.append(storeFrontData!.TESTFTPPASSWORD)
-stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-stringBuffer!.append(EntryData.getInstance()!.TIMECREATED)
-stringBuffer!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)
-stringBuffer!.append(EntryData.getInstance()!.getInstance()!.LASTMODIFIED)
-stringBuffer!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)
-stringBuffer!.append(this.sqlStrings!.PRIMARY_KEY)
-stringBuffer!.append(storeFrontData!.NAME)
-stringBuffer!.append(this.sqlStrings!.END)
+;
+    
+stringBuffer!.append(this.sqlStrings!.CREATE_TABLE);
+    
+stringBuffer!.append(tableName);
+    
+stringBuffer!.append(this.sqlStrings!.START);
+    
+stringBuffer!.append(storeFrontData!.NAME);
+    
+stringBuffer!.append(this.sqlTypeStrings!.SIXTY_CHAR_COLUMN_NOT_NULL);
+    
+stringBuffer!.append(storeFrontData!.HOMEHOSTNAME);
+    
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
+    
+stringBuffer!.append(storeFrontData!.HOMEHOSTNAMEPATH);
+    
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
+    
+stringBuffer!.append(storeFrontData!.HOSTNAME);
+    
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
+    
+stringBuffer!.append(storeFrontData!.HOSTNAMEPATH);
+    
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
+    
+stringBuffer!.append(storeFrontData!.TESTHOMEHOSTNAME);
+    
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
+    
+stringBuffer!.append(storeFrontData!.TESTHOMEHOSTNAMEPATH);
+    
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
+    
+stringBuffer!.append(storeFrontData!.TESTHOSTNAME);
+    
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
+    
+stringBuffer!.append(storeFrontData!.TESTHOSTNAMEPATH);
+    
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
+    
+stringBuffer!.append(storeFrontData!.IMAGEPATH);
+    
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
+    
+stringBuffer!.append(storeFrontData!.STATICPATH);
+    
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
+    
+stringBuffer!.append(storeFrontData!.CATEGORYPATH);
+    
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
+    
+stringBuffer!.append(storeFrontData!.INVENTORYCONTROL);
+    
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
+    
+stringBuffer!.append(storeFrontData!.CONFIGURATION);
+    
+stringBuffer!.append(this.sqlTypeStrings!.BLOB_NOT_NULL);
+    
+stringBuffer!.append(storeFrontData!.SUBSTORES);
+    
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
+    
+stringBuffer!.append(storeFrontData!.TAGLOCATION);
+    
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
+    
+stringBuffer!.append(storeFrontData!.PACKAGELOCATION);
+    
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
+    
+stringBuffer!.append(storeFrontData!.FTP);
+    
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
+    
+stringBuffer!.append(storeFrontData!.FTPPATH);
+    
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
+    
+stringBuffer!.append(storeFrontData!.FTPUSERNAME);
+    
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
+    
+stringBuffer!.append(storeFrontData!.FTPPASSWORD);
+    
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
+    
+stringBuffer!.append(storeFrontData!.TESTFTP);
+    
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
+    
+stringBuffer!.append(storeFrontData!.TESTFTPPATH);
+    
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
+    
+stringBuffer!.append(storeFrontData!.TESTFTPUSERNAME);
+    
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
+    
+stringBuffer!.append(storeFrontData!.TESTFTPPASSWORD);
+    
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
+    
+stringBuffer!.append(EntryData.getInstance()!.TIMECREATED);
+    
+stringBuffer!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL);
+    
+stringBuffer!.append(EntryData.getInstance()!.getInstance()!.LASTMODIFIED);
+    
+stringBuffer!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL);
+    
+stringBuffer!.append(this.sqlStrings!.PRIMARY_KEY);
+    
+stringBuffer!.append(storeFrontData!.NAME);
+    
+stringBuffer!.append(this.sqlStrings!.END);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 
@@ -276,6 +361,8 @@ stringBuffer!.append(this.sqlStrings!.END)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.createTable(this.createTableStatement());
+
+                        ;
     
 }
 
@@ -286,6 +373,8 @@ stringBuffer!.append(this.sqlStrings!.END)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.dropTable();
+
+                        ;
     
 }
 

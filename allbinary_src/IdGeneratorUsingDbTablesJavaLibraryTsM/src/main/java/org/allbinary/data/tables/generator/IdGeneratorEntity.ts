@@ -18,13 +18,16 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { Calendar } from "../../../../../java/util/Calendar.js";
 
     
 import { HashMap } from "../../../../../java/util/HashMap.js";
 
     
-import { Vector } from "../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../java/util/Vector.js";
 
     
 import { EntryData } from "../../../../../org/allbinary/business/entry/EntryData.js";
@@ -71,8 +74,10 @@ public constructor ()
                             //For kotlin this is before the body of the constructor.
                     
 this.tableData= StringBuilder().
-                            append(this.sqlStrings!.CREATE_TABLE)!.append(tableName)!.append(this.sqlStrings!.START)!.append(NAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(VALUE)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(this.sqlStrings!.PRIMARY_KEY)!.append(NAME)!.append(this.sqlStrings!.END)!.toString()
-super.setTableName(tableName)
+                            append(this.sqlStrings!.CREATE_TABLE)!.append(tableName)!.append(this.sqlStrings!.START)!.append(NAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(VALUE)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(this.sqlStrings!.PRIMARY_KEY)!.append(NAME)!.append(this.sqlStrings!.END)!.toString();
+    
+super.setTableName(tableName);
+    
 }
 
 
@@ -81,16 +86,19 @@ super.setTableName(tableName)
     public get(name: string): Long{
 var name = name
 
-    var keysAndValues: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();
         
         
+;
+    
+keysAndValues!.put(NAME, name);
+    
 
-keysAndValues!.put(NAME, name)
-
-    var hashMap: HashMap<Any, Any> = super.getRow(keysAndValues)!;
+    var hashMap: HashMap<any, any> = super.getRow(keysAndValues)!;
         
         
-
+;
+    
 
                         if(
                                     (get as String).compareTo(name) != 0)
@@ -104,15 +112,20 @@ keysAndValues!.put(NAME, name)
                                     }
                                 
 
-    var value: string = hashMap!.get(VALUE as Object) as String;
-        
-        
+    var value: string = hashMap!.get(VALUE as Object);
 
+                         as String;
+        
+        
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return Long.parseLong(value);
+
+                        ;
     
 }
 
@@ -121,11 +134,16 @@ keysAndValues!.put(NAME, name)
 var values = values
 
         try {
-            super.insert(values)
-logUtil!.put(this.commonStrings!.SUCCESS, this, INSERT)
-} catch(e: Exception)
+            super.insert(values);
+    
+logUtil!.put(this.commonStrings!.SUCCESS, this, INSERT);
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(this.commonStrings!.FAILURE, this, INSERT, e)
+logUtil!.put(this.commonStrings!.FAILURE, this, INSERT, e);
+    
 }
 
 }
@@ -135,11 +153,16 @@ logUtil!.put(this.commonStrings!.FAILURE, this, INSERT, e)
 var value = value
 
         try {
-            super.deleteWhere(NAME, value)
-logUtil!.put(this.commonStrings!.SUCCESS, this, commonStrings!.delete)
-} catch(e: Exception)
+            super.deleteWhere(NAME, value);
+    
+logUtil!.put(this.commonStrings!.SUCCESS, this, commonStrings!.delete);
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(this.commonStrings!.FAILURE, this, commonStrings!.delete, e)
+logUtil!.put(this.commonStrings!.FAILURE, this, commonStrings!.delete, e);
+    
 }
 
 }
@@ -149,19 +172,26 @@ logUtil!.put(this.commonStrings!.FAILURE, this, commonStrings!.delete, e)
 var name = name
 var value = value
 
-    var map: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var map: HashMap<any, any> = new HashMap<any, any>();
         
         
-
-map.put(NAME, name)
-map.put(VALUE, value.toString())
-this.update(map)
+;
+    
+map.put(NAME, name);
+    
+map.put(VALUE, value.toString());
+    
+this.update(map);
+    
 }
 
 
-    public update(hashMap: HashMap<Any, Any>){
+    public update(hashMap: HashMap<any, any>){
 var hashMap = hashMap
-super.updateWhere(NAME, hashMap!.get(NAME as Object) as String, hashMap)
+super.updateWhere(NAME, hashMap!.get(NAME as Object);
+
+                         as String, hashMap);
+    
 }
 
 
@@ -170,7 +200,8 @@ super.updateWhere(NAME, hashMap!.get(NAME as Object) as String, hashMap)
     var returnStr: string = super.createTable(tableData)!;
         
         
-
+;
+    
 
 
 
@@ -186,6 +217,8 @@ super.updateWhere(NAME, hashMap!.get(NAME as Object) as String, hashMap)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.dropTable();
+
+                        ;
     
 }
 

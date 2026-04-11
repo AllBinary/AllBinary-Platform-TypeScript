@@ -18,7 +18,10 @@
 
 
 
-import { Hashtable } from "../../../../../java/util/Hashtable.js";
+            import Hashtable from "@ohos.util.HashMap";
+        
+
+//import { Hashtable } from "../../../../../java/util/Hashtable.js";
 
     
 import { Canvas } from "../../../../../javax/microedition/lcdui/Canvas.js";
@@ -78,7 +81,7 @@ export class PacePatrolAI extends BasePatrolAI
     isFollowLimitedByTerrain: boolean = false;
         
         
-public constructor (hashtable: Hashtable<Any, Any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput)                        
+public constructor (hashtable: Hashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput)                        
 
                             : super(hashtable, ownerLayerInterface, gameInput){
 
@@ -90,8 +93,10 @@ var gameInput = gameInput
 
                             //For kotlin this is before the body of the constructor.
                     
-TrackingEventHandler.getInstance()!.addListener(this)
-this.trackingList= BasicArrayList()
+TrackingEventHandler.getInstance()!.addListener(this);
+    
+this.trackingList= BasicArrayList();
+    
 }
 
 
@@ -99,17 +104,20 @@ this.trackingList= BasicArrayList()
             
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager
-this.update()
+this.update();
+    
 
     var direction: Direction = this.setFiringDirectionForTargetIfInRange()!;
         
         
-
+;
+    
 
     var directionFactory: DirectionFactory = DirectionFactory.getInstance()!;
         
         
-
+;
+    
 
                         if(direction == directionFactory!.LEFT)
                         
@@ -118,14 +126,19 @@ this.update()
                         if(this.lastKeyDirection != keyDirection || !this.isFollowLimitedByTerrain)
                         
                                     {
-                                    super.processAI(Canvas.LEFT)
+                                    super.processAI(Canvas.LEFT);
+    
 
                                     }
                                 
-keyDirection= Canvas.LEFT
-this.lastKeyDirection= keyDirection
-xTotalDistance= 0
-super.processAI(Canvas.KEY_NUM1)
+keyDirection= Canvas.LEFT;
+    
+this.lastKeyDirection= keyDirection;
+    
+xTotalDistance= 0;
+    
+super.processAI(Canvas.KEY_NUM1);
+    
 
                                     }
                                 
@@ -137,19 +150,25 @@ super.processAI(Canvas.KEY_NUM1)
                         if(this.lastKeyDirection != keyDirection || !this.isFollowLimitedByTerrain)
                         
                                     {
-                                    super.processAI(Canvas.RIGHT)
+                                    super.processAI(Canvas.RIGHT);
+    
 
                                     }
                                 
-keyDirection= Canvas.RIGHT
-this.lastKeyDirection= keyDirection
-xTotalDistance= 0
-super.processAI(Canvas.KEY_NUM1)
+keyDirection= Canvas.RIGHT;
+    
+this.lastKeyDirection= keyDirection;
+    
+xTotalDistance= 0;
+    
+super.processAI(Canvas.KEY_NUM1);
+    
 
                                     }
                                 
                         else {
-                            super.processAI(this.keyDirection)
+                            super.processAI(this.keyDirection);
+    
 
                         }
                             
@@ -161,31 +180,38 @@ super.processAI(Canvas.KEY_NUM1)
     var directionFactory: DirectionFactory = DirectionFactory.getInstance()!;
         
         
-
+;
+    
 
     var ownerLayerInterface: AllBinaryLayer = this.getOwnerLayerInterface()!;
         
         
-
+;
+    
 
     var direction: Direction = directionFactory!.NOT_BORDERED_WITH;
         
         
-
+;
+    
 
     var lastTrackingEvent: TrackingEvent
-
+;
+    
 
     var lastTrackingLayerInterface: LayerInterface
-
+;
+    
 
     var directionCompositeInterface: DirectionCompositeInterface
-
+;
+    
 
     var size: number = this.trackingList!.size()!;
         
         
-
+;
+    
 
 
 
@@ -196,38 +222,48 @@ super.processAI(Canvas.KEY_NUM1)
         
 index < size; index++)
         {
-lastTrackingEvent= this.trackingList!.get(0) as TrackingEvent
-lastTrackingLayerInterface= lastTrackingEvent!.getLayerInterface()
+lastTrackingEvent= this.trackingList!.get(0);
+
+                         as TrackingEvent;
+    
+lastTrackingLayerInterface= lastTrackingEvent!.getLayerInterface();
+    
 
     var x: number = lastTrackingLayerInterface!.getXP()!;
         
         
-
+;
+    
 
     var y: number = lastTrackingLayerInterface!.getYP()!;
         
         
-
+;
+    
 
     var yDistance: number = ownerLayerInterface!.getYP() -y -ownerLayerInterface!.getHeight();
         
         
-
+;
+    
 
     var xDistance: number = ownerLayerInterface!.getXP() -x -ownerLayerInterface!.getWidth();
         
         
-
+;
+    
 
     var absXDistance: number = Math.abs(xDistance)!;
         
         
-
+;
+    
 
     var absYDistance: number = Math.abs(yDistance)!;
         
         
-
+;
+    
 
                         if(absYDistance <= 100)
                         
@@ -236,12 +272,16 @@ lastTrackingLayerInterface= lastTrackingEvent!.getLayerInterface()
                         if(absXDistance < getFiringDistance() /2)
                         
                                     {
-                                    directionCompositeInterface= this.getOwnerLayerInterface() as DirectionCompositeInterface
+                                    directionCompositeInterface= this.getOwnerLayerInterface();
+
+                         as DirectionCompositeInterface;
+    
 
                         if(xDistance < 0 && directionCompositeInterface!.getDirection() == directionFactory!.RIGHT)
                         
                                     {
-                                    direction= directionFactory!.RIGHT
+                                    direction= directionFactory!.RIGHT;
+    
 
                                     }
                                 
@@ -249,7 +289,8 @@ lastTrackingLayerInterface= lastTrackingEvent!.getLayerInterface()
                         if(xDistance > 0 && directionCompositeInterface!.getDirection() == directionFactory!.LEFT)
                         
                                     {
-                                    direction= directionFactory!.LEFT
+                                    direction= directionFactory!.LEFT;
+    
 
                                     }
                                 
@@ -276,14 +317,17 @@ lastTrackingLayerInterface= lastTrackingEvent!.getLayerInterface()
 
     public onEvent(eventObject: AllBinaryEventObject){
 var eventObject = eventObject
-ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
+ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
+    
 }
 
 
     public onMovement(trackingEvent: TrackingEvent){
 var trackingEvent = trackingEvent
-this.trackingList!.clear()
-this.trackingList!.add(trackingEvent)
+this.trackingList!.clear();
+    
+this.trackingList!.add(trackingEvent);
+    
 }
 
 
@@ -299,7 +343,8 @@ this.trackingList!.add(trackingEvent)
 
     public setFiringDistance(firingDistance: number){
 var firingDistance = firingDistance
-this.firingDistance= firingDistance
+this.firingDistance= firingDistance;
+    
 }
 
 

@@ -76,24 +76,32 @@ index < size; index++)
     var geographicMapInterface: BasicGeographicMap = raceTrackGeographicMapInterfaceFactoryInterface!.getTrackInstance(SmallIntegerSingletonFactory.getInstance()!.getInstance(index))!;
         
         
-
+;
+    
 
     var list: BasicArrayList = PathGenerator.getInstance()!.getInstance(geographicMapInterface, RaceTrackRoadsGeographicMapCellHistoryFactory.getInstance(), pathFindingInfo, 10)!;
         
         
-
-System.out.println("Track " +index)
-this.printPaths(list)
+;
+    
+System.out.println("Track " +index);
+    
+this.printPaths(list);
+    
 }
 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e);
+    
 }
 
 }

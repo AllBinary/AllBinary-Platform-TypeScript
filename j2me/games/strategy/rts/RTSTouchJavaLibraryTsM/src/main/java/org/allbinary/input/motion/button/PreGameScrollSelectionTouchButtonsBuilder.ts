@@ -38,59 +38,75 @@ export class PreGameScrollSelectionTouchButtonsBuilder extends BaseTouchInput {
     public getList(): BasicArrayList{
 
         try {
-            logUtil!.put(commonStrings!.START, this, commonStrings!.GET_LIST)
+            logUtil!.put(commonStrings!.START, this, commonStrings!.GET_LIST);
+    
 
     var list: BasicArrayList = new BasicArrayList();
         
         
-
+;
+    
 
     var touchButtonLocationHelper: TouchButtonLocationHelper = new TouchButtonLocationHelper();
         
         
-
+;
+    
 
     var commonButtons: CommonButtons = CommonButtons.getInstance()!;
         
         
-
+;
+    
 
     var basicTouchButtonCellPositionFactory: BasicTouchButtonCellPositionFactory = new BasicTouchButtonCellPositionFactory();
         
         
-
+;
+    
 
     var LEFT: TouchButton = new TouchButton(BasicTouchInputFactory.getInstance()!.LEFT, TouchButtonStrafeLeftResource.getInstance(), commonButtons!.NORMAL_BUTTON, basicTouchButtonCellPositionFactory!.TOP_LEFT, touchButtonLocationHelper!.getColumnsRemainderHalf(), touchButtonLocationHelper!.getRowsRemainderHalf());
         
         
-
+;
+    
 
     var RIGHT: TouchButton = new TouchButton(BasicTouchInputFactory.getInstance()!.RIGHT, TouchButtonStrafeRightResource.getInstance(), commonButtons!.NORMAL_BUTTON, basicTouchButtonCellPositionFactory!.TOP_RIGHT, touchButtonLocationHelper!.getColumnsRemainderHalf(), touchButtonLocationHelper!.getRowsRemainderHalf());
         
         
-
+;
+    
 
     var START: TouchButton = new TouchButton(BasicTouchInputFactory.getInstance()!.SPECIAL_BUTTON_FIVE, TouchButtonStartResource.getInstance(), commonButtons!.NORMAL_BUTTON, basicTouchButtonCellPositionFactory!.BOTTOM_RIGHT, touchButtonLocationHelper!.getColumnsRemainderHalf(), touchButtonLocationHelper!.getRowsRemainderHalf());
         
         
-
-list.add(LEFT)
-list.add(RIGHT)
-list.add(START)
+;
+    
+list.add(LEFT);
+    
+list.add(RIGHT);
+    
+list.add(START);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return list;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_LIST, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_LIST, e);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return BasicArrayListUtil.getInstance()!.getImmutableInstance();
+
+                        ;
     
 }
 

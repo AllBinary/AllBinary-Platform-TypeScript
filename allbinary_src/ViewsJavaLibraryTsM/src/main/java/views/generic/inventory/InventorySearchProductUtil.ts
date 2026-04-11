@@ -18,7 +18,10 @@
 
 
 
-import { Vector } from "../../../java/util/Vector.js";
+            import Vector from "@ohos.util.Vector";
+        
+
+//import { Vector } from "../../../java/util/Vector.js";
 
     
 import { BasicItemView } from "../../../org/allbinary/business/user/commerce/inventory/item/BasicItemView.js";
@@ -107,12 +110,14 @@ var product = product
     var inventoryEntityInterface: InventoryEntity = InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!;
         
         
-
+;
+    
 
     var itemInterface: ItemInterface = inventoryEntityInterface!.getItem(product)!;
         
         
-
+;
+    
 
                         if(itemInterface != 
                                     null
@@ -123,20 +128,24 @@ var product = product
     var viewDocumentInterface: TransformDocumentInterface = TransformStoreDocumentFactory.getInstance(searchRequest)!;
         
         
-
+;
+    
 viewDocumentInterface!.getBaseNode()!.appendChild(BasicItemView(itemInterface, Vector()).
-                            toXmlNode(viewDocumentInterface!.getDoc()))
+                            toXmlNode(viewDocumentInterface!.getDoc()));
+    
 
     var success: string = DomDocumentHelper.toString(viewDocumentInterface!.getDoc())!;
         
         
-
+;
+    
 
     var outputStr: string = StoreTransformer(abeClientInformation, TransformInfoHttpSearch(searchRequest) as TransformInfoInterface).
                             translate(success)!;
         
         
-
+;
+    
 
 
 
@@ -156,13 +165,16 @@ viewDocumentInterface!.getBaseNode()!.appendChild(BasicItemView(itemInterface, V
 
                         }
                             
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PRODUCTSEARCHLOGGINGERROR))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.FAILURE, this, "getProduct", e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, "getProduct", e);
+    
 
                                     }
                                 

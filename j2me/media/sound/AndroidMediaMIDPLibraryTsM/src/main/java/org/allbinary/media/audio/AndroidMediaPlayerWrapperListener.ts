@@ -62,18 +62,22 @@ public constructor (androidMediaPlayerWrapper: AndroidMediaPlayerWrapper, listen
     //var listeningLevel = listeningLevel
 
         try {
-            logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
-this.androidMediaPlayerWrapper= androidMediaPlayerWrapper
+            logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
+    
+this.androidMediaPlayerWrapper= androidMediaPlayerWrapper;
+    
 
     var mediaPlayer: MediaPlayer = androidMediaPlayerWrapper!.getMediaPlayer()!;
         
         
-
+;
+    
 
                         if(listeningLevel == 1)
                         
                                     {
-                                    mediaPlayer!.setOnCompletionListener(mOnCompletionListener)
+                                    mediaPlayer!.setOnCompletionListener(mOnCompletionListener);
+    
 
                                     }
                                 
@@ -85,9 +89,12 @@ this.androidMediaPlayerWrapper= androidMediaPlayerWrapper
 
                         }
                             
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e);
+    
 }
 
 }
@@ -98,20 +105,30 @@ public constructor (androidMediaPlayerWrapper: AndroidMediaPlayerWrapper){
                 //var androidMediaPlayerWrapper = androidMediaPlayerWrapper
 
         try {
-            logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
-this.androidMediaPlayerWrapper= androidMediaPlayerWrapper
+            logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
+    
+this.androidMediaPlayerWrapper= androidMediaPlayerWrapper;
+    
 
     var mediaPlayer: MediaPlayer = androidMediaPlayerWrapper!.getMediaPlayer()!;
         
         
+;
+    
+mediaPlayer!.setOnCompletionListener(mOnCompletionListener);
+    
+mediaPlayer!.setOnBufferingUpdateListener(mOnBufferingUpdateListener);
+    
+mediaPlayer!.setOnPreparedListener(mOnPreparedListener);
+    
+mediaPlayer!.setOnErrorListener(mOnErrorListener);
+    
 
-mediaPlayer!.setOnCompletionListener(mOnCompletionListener)
-mediaPlayer!.setOnBufferingUpdateListener(mOnBufferingUpdateListener)
-mediaPlayer!.setOnPreparedListener(mOnPreparedListener)
-mediaPlayer!.setOnErrorListener(mOnErrorListener)
-} catch(e: Exception)
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e);
+    
 }
 
 }
@@ -197,8 +214,10 @@ export inner class MediaPlayerOnCompletionListener
     //var mediaPlayer = mediaPlayer
     //var i = i
 logUtil!.put(StringMaker().
-                            append("Update buffer: ")!.appendint(i)!.append("%")!.toString(), this, AndroidMediaPlayerWrapperListener.ON_BUFFERING_UPDATE)
-this@AndroidMediaPlayerWrapperListener.androidMediaPlayerWrapper!.update(PlayerListener.DEVICE_UNAVAILABLE)
+                            append("Update buffer: ")!.appendint(i)!.append("%")!.toString(), this, AndroidMediaPlayerWrapperListener.ON_BUFFERING_UPDATE);
+    
+this@AndroidMediaPlayerWrapperListener.androidMediaPlayerWrapper!.update(PlayerListener.DEVICE_UNAVAILABLE);
+    
 }
 
                                 }
@@ -211,8 +230,10 @@ this@AndroidMediaPlayerWrapperListener.androidMediaPlayerWrapper!.update(PlayerL
                                 
     public onPrepared(mp: MediaPlayer){
     //var mp = mp
-logUtil!.put(commonStrings!.START, this, AndroidMediaPlayerWrapperListener.ON_PREPARE)
-this@AndroidMediaPlayerWrapperListener.androidMediaPlayerWrapper!.update(PlayerListener.DEVICE_AVAILABLE)
+logUtil!.put(commonStrings!.START, this, AndroidMediaPlayerWrapperListener.ON_PREPARE);
+    
+this@AndroidMediaPlayerWrapperListener.androidMediaPlayerWrapper!.update(PlayerListener.DEVICE_AVAILABLE);
+    
 }
 
                                 }
@@ -228,8 +249,10 @@ this@AndroidMediaPlayerWrapperListener.androidMediaPlayerWrapper!.update(PlayerL
     //var what = what
     //var extra = extra
 logUtil!.put(StringMaker().
-                            append(CommonLabels.getInstance()!.START_LABEL)!.append("What: ")!.appendint(what)!.append(" Extra: ")!.appendint(extra)!.toString(), this, AndroidMediaPlayerWrapperListener.ON_ERROR)
-this@AndroidMediaPlayerWrapperListener.androidMediaPlayerWrapper!.update(PlayerListener.ERROR)
+                            append(CommonLabels.getInstance()!.START_LABEL)!.append("What: ")!.appendint(what)!.append(" Extra: ")!.appendint(extra)!.toString(), this, AndroidMediaPlayerWrapperListener.ON_ERROR);
+    
+this@AndroidMediaPlayerWrapperListener.androidMediaPlayerWrapper!.update(PlayerListener.ERROR);
+    
 
 
 
@@ -248,8 +271,10 @@ this@AndroidMediaPlayerWrapperListener.androidMediaPlayerWrapper!.update(PlayerL
                                 
     public onCompletion(mp: MediaPlayer){
     //var mp = mp
-logUtil!.put(commonStrings!.START, this, AndroidMediaPlayerWrapperListener.ON_COMPLETE)
-this@AndroidMediaPlayerWrapperListener.androidMediaPlayerWrapper!.update(PlayerListener.END_OF_MEDIA)
+logUtil!.put(commonStrings!.START, this, AndroidMediaPlayerWrapperListener.ON_COMPLETE);
+    
+this@AndroidMediaPlayerWrapperListener.androidMediaPlayerWrapper!.update(PlayerListener.END_OF_MEDIA);
+    
 }
 
                                 }

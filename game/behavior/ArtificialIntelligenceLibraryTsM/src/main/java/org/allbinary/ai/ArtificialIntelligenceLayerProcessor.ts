@@ -52,8 +52,10 @@ var index = index
     var artificialIntelligenceCompositeInterface: ArtificialIntelligenceCompositeInterface = layerInterface as ArtificialIntelligenceCompositeInterface;
         
         
-
-artificialIntelligenceCompositeInterface!.getArtificialIntelligenceInterface()!.processAI(allBinaryLayerManager)
+;
+    
+artificialIntelligenceCompositeInterface!.getArtificialIntelligenceInterface()!.processAI(allBinaryLayerManager);
+    
 }
 
 

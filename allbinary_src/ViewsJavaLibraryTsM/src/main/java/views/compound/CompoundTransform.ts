@@ -69,17 +69,22 @@ public constructor (transformInfoInterface: TransformInfoInterface)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setURIResolver(StoreUriResolver(this.getTransformInfoInterface(), this.getURIResolver() as BasicUriResolver) as URIResolver)
+this.setURIResolver(StoreUriResolver(this.getTransformInfoInterface(), this.getURIResolver();
+
+                         as BasicUriResolver) as URIResolver);
+    
 
     var objectConfig: CompoundContextTransformInfoObjectConfig = new CompoundContextTransformInfoObjectConfig(this.abeClientInformation, this.getTransformInfoInterface(), this.getTransformInfoInterface()!.getObjectConfigInterface()!.toXmlDoc());
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("\nObjectConfig: \n" +objectConfig!.toString(), this, "CompoundTransform(")
+                                    logUtil!.put("\nObjectConfig: \n" +objectConfig!.toString(), this, "CompoundTransform(");
+    
 
                                     }
                                 
@@ -87,8 +92,10 @@ this.setURIResolver(StoreUriResolver(this.getTransformInfoInterface(), this.getU
     var templateInputStream: InputStream = objectConfig!.createInputStream()!;
         
         
-
-this.setInputStream(templateInputStream)
+;
+    
+this.setInputStream(templateInputStream);
+    
 }
 
 

@@ -18,7 +18,10 @@
 
 
 
-import { Vector } from "../../../../../../java/util/Vector.js";
+            import Vector from "@ohos.util.Vector";
+        
+
+//import { Vector } from "../../../../../../java/util/Vector.js";
 
     
 import { StoreFrontInterface } from "../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js";
@@ -60,9 +63,11 @@ public constructor (abeClientInformation: AbeClientInformationInterface, storeFr
                 //var abeClientInformation = abeClientInformation
     //var storeFrontInterface = storeFrontInterface
 this.defaultShippingMethodInterface= ShippingMethodsFactory(abeClientInformation, storeFrontInterface).
-                            getDefaultInstance()
+                            getDefaultInstance();
+    
 this.shippingVector= ShippingMethodsFactory(abeClientInformation, storeFrontInterface).
-                            getInstance()
+                            getInstance();
+    
 }
 
 
@@ -82,12 +87,14 @@ this.shippingVector= ShippingMethodsFactory(abeClientInformation, storeFrontInte
 var name = name
 
     var shipping: ShippingInterface
-
+;
+    
 
     var size: number = shippingVector!.length!;
         
         
-
+;
+    
 
 
 
@@ -98,7 +105,10 @@ var name = name
         
 index < size; index++)
         {
-shipping= shippingVector!.get(index) as ShippingInterface
+shipping= shippingVector!.get(index);
+
+                         as ShippingInterface;
+    
 
                         if(name.compareTo(shipping.getName()) == 0)
                         
@@ -113,12 +123,14 @@ shipping= shippingVector!.get(index) as ShippingInterface
     var error: string = "Error Finding Shipping: " +name;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SHIPPINGERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "getShippingInterface(String name)")
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "getShippingInterface(String name)");
+    
 
                                     }
                                 

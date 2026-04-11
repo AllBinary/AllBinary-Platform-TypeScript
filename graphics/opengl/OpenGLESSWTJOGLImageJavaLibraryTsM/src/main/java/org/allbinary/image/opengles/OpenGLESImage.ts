@@ -115,10 +115,14 @@ public constructor (image: Image, bitmapFactory: PlatformBitmapBaseFactory, text
 
                             //For kotlin this is before the body of the constructor.
                     
-this.openGLBitmap= bitmapFactory!.createBitmap(image)
-this.textureFactory= textureFactory
-OpenGLImageCacheFactory.getInstance()!.init(this)
-this.platformImage= OpenGLESPostLoadPlatformImage.getInstance()
+this.openGLBitmap= bitmapFactory!.createBitmap(image);
+    
+this.textureFactory= textureFactory;
+    
+OpenGLImageCacheFactory.getInstance()!.init(this);
+    
+this.platformImage= OpenGLESPostLoadPlatformImage.getInstance();
+    
 }
 
 
@@ -156,31 +160,44 @@ var gl = gl
     initTexture(gl: GL10): boolean{
 var gl = gl
 
-                        if(!texture2dList!.contains(this))
+                        if(!texture2dList!.contains(this);
+
+                        )
                         
                                     {
-                                    texture2dList!.add(this)
+                                    texture2dList!.add(this);
+    
 
-    var textures: IntArray = IntArray(1);
+    var textures: number[] = new Array(1);
         
         
-
-gl.glEnable(GL10.GL_TEXTURE_2D)
+;
+    
+gl.glEnable(GL10.GL_TEXTURE_2D);
+    
 
                         if(this.openGLESImageProperties!.textureID !=  -1)
                         
                                     {
-                                    textures[0]= this.openGLESImageProperties!.textureID
-gl.glDeleteTextures(1, textures, 0)
+                                    textures[0]= this.openGLESImageProperties!.textureID;
+    
+gl.glDeleteTextures(1, textures, 0);
+    
 
                                     }
                                 
-gl.glGenTextures(1, textures, 0)
-this.openGLESImageProperties!.textureID= textures[0]!
-gl.glBindTexture(GL10.GL_TEXTURE_2D, this.openGLESImageProperties!.textureID)
-gl.glTexParameterf(GL10.GL_TEXTURE_2D, GL10.GL_TEXTURE_MIN_FILTER, GL10.GL_NEAREST)
-gl.glTexParameterf(GL10.GL_TEXTURE_2D, GL10.GL_TEXTURE_WRAP_S, GL10.GL_CLAMP_TO_EDGE)
-gl.glTexParameterf(GL10.GL_TEXTURE_2D, GL10.GL_TEXTURE_WRAP_T, GL10.GL_CLAMP_TO_EDGE)
+gl.glGenTextures(1, textures, 0);
+    
+this.openGLESImageProperties!.textureID= textures[0]!;
+    
+gl.glBindTexture(GL10.GL_TEXTURE_2D, this.openGLESImageProperties!.textureID);
+    
+gl.glTexParameterf(GL10.GL_TEXTURE_2D, GL10.GL_TEXTURE_MIN_FILTER, GL10.GL_NEAREST);
+    
+gl.glTexParameterf(GL10.GL_TEXTURE_2D, GL10.GL_TEXTURE_WRAP_S, GL10.GL_CLAMP_TO_EDGE);
+    
+gl.glTexParameterf(GL10.GL_TEXTURE_2D, GL10.GL_TEXTURE_WRAP_T, GL10.GL_CLAMP_TO_EDGE);
+    
 
 
 
@@ -235,13 +252,16 @@ var z = z
     var graphicsStrings: GraphicsStrings = GraphicsStrings.getInstance()!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return StringMaker().
                             append(this.getName())!.append(super.toString())!.append(graphicsStrings!.OPACITY)!.appendfloat(this.openGLESImageProperties!.alphaf)!.toString();
+
+                        ;
     
 }
 

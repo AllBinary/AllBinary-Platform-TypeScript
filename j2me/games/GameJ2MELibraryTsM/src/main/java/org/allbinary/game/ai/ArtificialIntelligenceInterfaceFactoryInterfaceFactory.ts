@@ -18,7 +18,10 @@
 
 
 
-import { Hashtable } from "../../../../java/util/Hashtable.js";
+            import Hashtable from "@ohos.util.HashMap";
+        
+
+//import { Hashtable } from "../../../../java/util/Hashtable.js";
 
     
 import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
@@ -52,27 +55,33 @@ export class ArtificialIntelligenceInterfaceFactoryInterfaceFactory
         
 
     public clear(){
-list= BasicArrayList()
+list= BasicArrayList();
+    
 }
 
 
-    public getInstance(hashtable: Hashtable<Any, Any>): ArtificialIntelligenceInterfaceFactoryInterface{
+    public getInstance(hashtable: Hashtable<any, any>): ArtificialIntelligenceInterfaceFactoryInterface{
 var hashtable = hashtable
 
-    var typeInteger: Integer = hashtable.get(BasicAI.ID as Object) as Integer;
-        
-        
+    var typeInteger: Integer = hashtable.get(BasicAI.ID as Object);
 
+                         as Integer;
+        
+        
+;
+    
 
     var type: number = typeInteger!.toInt()!;
         
         
-
+;
+    
 
     var artificialIntelligenceInterfaceFactoryInterface: ArtificialIntelligenceInterfaceFactoryInterface = list.objectArray[type -1]! as ArtificialIntelligenceInterfaceFactoryInterface;
         
         
-
+;
+    
 
 
 
@@ -84,7 +93,8 @@ var hashtable = hashtable
 
     public add(artificialIntelligenceInterfaceFactoryInterface: ArtificialIntelligenceInterfaceFactoryInterface){
 var artificialIntelligenceInterfaceFactoryInterface = artificialIntelligenceInterfaceFactoryInterface
-list.add(artificialIntelligenceInterfaceFactoryInterface)
+list.add(artificialIntelligenceInterfaceFactoryInterface);
+    
 }
 
 

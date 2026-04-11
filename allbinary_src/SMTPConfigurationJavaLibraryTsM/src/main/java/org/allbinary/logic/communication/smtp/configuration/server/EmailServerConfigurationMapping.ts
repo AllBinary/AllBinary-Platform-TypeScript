@@ -18,10 +18,13 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { HashMap } from "../../../../../../../java/util/HashMap.js";
 
     
-import { Vector } from "../../../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../../../java/util/Vector.js";
 
     
 import { TableMappingInterface } from "../../../../../../../org/allbinary/data/tables/TableMappingInterface.js";
@@ -39,19 +42,24 @@ public constructor (emailServerConfigurationInterface: EmailServerConfigurationI
 
             super();
             var emailServerConfigurationInterface = emailServerConfigurationInterface
-this.emailServerConfigurationInterface= emailServerConfigurationInterface
+this.emailServerConfigurationInterface= emailServerConfigurationInterface;
+    
 }
 
 
-    public toHashMap(): HashMap<Any, Any>{
+    public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
         
         
-
-hashMap!.put(EmailServerConfigurationData.SERVER, this.emailServerConfigurationInterface!.getSmtpServer())
-hashMap!.put(EmailServerConfigurationData.ACCOUNT, this.emailServerConfigurationInterface!.getAccountName())
-hashMap!.put(EmailServerConfigurationData.PASSWORD, this.emailServerConfigurationInterface!.getPassword())
+;
+    
+hashMap!.put(EmailServerConfigurationData.SERVER, this.emailServerConfigurationInterface!.getSmtpServer());
+    
+hashMap!.put(EmailServerConfigurationData.ACCOUNT, this.emailServerConfigurationInterface!.getAccountName());
+    
+hashMap!.put(EmailServerConfigurationData.PASSWORD, this.emailServerConfigurationInterface!.getPassword());
+    
 
 
 
@@ -80,8 +88,10 @@ hashMap!.put(EmailServerConfigurationData.PASSWORD, this.emailServerConfiguratio
     var vector: Vector = new Vector();
         
         
-
-vector.add(this.emailServerConfigurationInterface!.getSmtpServer())
+;
+    
+vector.add(this.emailServerConfigurationInterface!.getSmtpServer());
+    
 
 
 

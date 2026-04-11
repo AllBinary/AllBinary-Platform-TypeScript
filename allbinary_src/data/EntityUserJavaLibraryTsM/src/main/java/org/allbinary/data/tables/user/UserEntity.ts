@@ -18,10 +18,13 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { HashMap } from "../../../../../java/util/HashMap.js";
 
     
-import { Vector } from "../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../java/util/Vector.js";
 
     
 import { StoreFrontData } from "../../../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js";
@@ -121,7 +124,8 @@ public constructor ()
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setTableName(tableName)
+this.setTableName(tableName);
+    
 }
 
 
@@ -129,22 +133,27 @@ this.setTableName(tableName)
 var values = values
 
         try {
-            super.insert(values)
+            super.insert(values);
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.SUCCESS, this, INSERT)
+                                    logUtil!.put(this.commonStrings!.SUCCESS, this, INSERT);
+    
 
                                     }
                                 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.FAILURE, this, INSERT, e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, INSERT, e);
+    
 
                                     }
                                 
@@ -161,6 +170,8 @@ var values = values
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return getUsersWithRole(UserRoleFactory.getInstance()!.ADMINISTRATOR);
+
+                        ;
     
 }
 
@@ -170,27 +181,33 @@ var values = values
     public getStoreManagers(storeFrontInterface: StoreFrontInterface): Vector{
 var storeFrontInterface = storeFrontInterface
 
-    var keysAndValues: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();
         
         
-
+;
+    
 
     var usersVector: Vector = new Vector();
         
         
-
-keysAndValues!.put(UserRoleData.NAME.toString(), UserRoleFactory.getInstance()!.STOREMANAGER.toString())
-keysAndValues!.put(UserData.PERMISSIONS, storeFrontInterface!.getName())
+;
+    
+keysAndValues!.put(UserRoleData.NAME.toString(), UserRoleFactory.getInstance()!.STOREMANAGER.toString());
+    
+keysAndValues!.put(UserData.PERMISSIONS, storeFrontInterface!.getName());
+    
 
     var usersHashMapVector: Vector = super.getRows(keysAndValues)!;
         
         
-
+;
+    
 
     var size: number = usersHashMapVector!.length!;
         
         
-
+;
+    
 
 
 
@@ -202,15 +219,20 @@ keysAndValues!.put(UserData.PERMISSIONS, storeFrontInterface!.getName())
 i < size; i++)
         {
 
-    var userHashMap: HashMap<Any, Any> = usersHashMapVector!.get(i as Object) as HashMap<Any, Any>;
-        
-        
+    var userHashMap: HashMap<any, any> = usersHashMapVector!.get(i as Object);
 
+                         as HashMap<any, any>;
+        
+        
+;
+    
 
                         if(userHashMap != 
                                     null
                                 )
-                        usersVector!.add(User(userHashMap))
+                        usersVector!.add(User(userHashMap));
+
+                        
 }
 
 
@@ -230,6 +252,8 @@ i < size; i++)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return getUsersWithRole(UserRoleFactory.getInstance()!.CUSTOMER);
+
+                        ;
     
 }
 
@@ -239,26 +263,31 @@ i < size; i++)
     public getUsersWithRole(userRole: UserRole): Vector{
 var userRole = userRole
 
-    var keysAndValues: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();
         
         
-
+;
+    
 
     var usersVector: Vector = new Vector();
         
         
-
-keysAndValues!.put(UserRoleData.NAME.toString(), userRole!.toString())
+;
+    
+keysAndValues!.put(UserRoleData.NAME.toString(), userRole!.toString());
+    
 
     var usersHashMapVector: Vector = super.getRows(keysAndValues)!;
         
         
-
+;
+    
 
     var size: number = usersHashMapVector!.length!;
         
         
-
+;
+    
 
 
 
@@ -270,15 +299,20 @@ keysAndValues!.put(UserRoleData.NAME.toString(), userRole!.toString())
 index < size; index++)
         {
 
-    var userHashMap: HashMap<Any, Any> = usersHashMapVector!.get(index as Object) as HashMap<Any, Any>;
-        
-        
+    var userHashMap: HashMap<any, any> = usersHashMapVector!.get(index as Object);
 
+                         as HashMap<any, any>;
+        
+        
+;
+    
 
                         if(userHashMap != 
                                     null
                                 )
-                        usersVector!.add(User(userHashMap))
+                        usersVector!.add(User(userHashMap));
+
+                        
 }
 
 
@@ -295,26 +329,31 @@ index < size; index++)
     public getUsers(storeFrontInterface: StoreFrontInterface): Vector{
 var storeFrontInterface = storeFrontInterface
 
-    var keysAndValues: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();
         
         
-
+;
+    
 
     var usersVector: Vector = new Vector();
         
         
-
-keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeFrontInterface!.getName())
+;
+    
+keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeFrontInterface!.getName());
+    
 
     var usersHashMapVector: Vector = super.getRows(keysAndValues)!;
         
         
-
+;
+    
 
     var size: number = usersHashMapVector!.length!;
         
         
-
+;
+    
 
 
 
@@ -326,15 +365,20 @@ keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeFrontInterface!.getN
 index < size; index++)
         {
 
-    var userHashMap: HashMap<Any, Any> = usersHashMapVector!.get(index as Object) as HashMap<Any, Any>;
-        
-        
+    var userHashMap: HashMap<any, any> = usersHashMapVector!.get(index as Object);
 
+                         as HashMap<any, any>;
+        
+        
+;
+    
 
                         if(userHashMap != 
                                     null
                                 )
-                        usersVector!.add(User(userHashMap))
+                        usersVector!.add(User(userHashMap));
+
+                        
 }
 
 
@@ -351,16 +395,19 @@ index < size; index++)
     public getUser(userName: string): UserInterface{
 var userName = userName
 
-    var row: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var row: HashMap<any, any> = new HashMap<any, any>();
         
         
+;
+    
+row.put(UserData.USERNAME, userName);
+    
 
-row.put(UserData.USERNAME, userName)
-
-    var userHashMap: HashMap<Any, Any> = super.getRow(row)!;
+    var userHashMap: HashMap<any, any> = super.getRow(row)!;
         
         
-
+;
+    
 
                         if(userHashMap != 
                                     null
@@ -372,6 +419,8 @@ row.put(UserData.USERNAME, userName)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return CreateUserFactory.getInstance(userHashMap);
+
+                        ;
     
 
                                     }
@@ -394,22 +443,27 @@ var key = key
 var value = value
 
         try {
-            super.deleteWhere(key, value)
+            super.deleteWhere(key, value);
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.SUCCESS, this, "deleteWhere")
+                                    logUtil!.put(this.commonStrings!.SUCCESS, this, "deleteWhere");
+    
 
                                     }
                                 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.FAILURE, this, "deleteWhere", e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, "deleteWhere", e);
+    
 
                                     }
                                 
@@ -427,17 +481,20 @@ var password = password
     var isUserNameAndPasswordCorrect: number = 0;
         
         
-
+;
+    
 
     var result: string = super.getField(UserData.USERNAME, userName, UserData.PASSWORD)!;
         
         
-
+;
+    
 
     var encryption: string = super.getField(UserData.USERNAME, userName, EntryData.getInstance()!.ENCRYPTION)!;
         
         
-
+;
+    
 
                         if(encryption != 
                                     null
@@ -450,7 +507,8 @@ var password = password
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put("Command Success but login failed for user: " +userName +" because user did not exist", this, "login")
+                                    logUtil!.put("Command Success but login failed for user: " +userName +" because user did not exist", this, "login");
+    
 
                                     }
                                 
@@ -475,14 +533,22 @@ var password = password
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(COMMAND_SUCCESS_FOR_USER)
-stringBuffer!.append(userName)
-stringBuffer!.append(PASSWORD_LABEL)
-stringBuffer!.append(password)
-stringBuffer!.append(EQUALS)
-stringBuffer!.append(result)
-logUtil!.put(stringBuffer!.toString(), this, "login")
+;
+    
+stringBuffer!.append(COMMAND_SUCCESS_FOR_USER);
+    
+stringBuffer!.append(userName);
+    
+stringBuffer!.append(PASSWORD_LABEL);
+    
+stringBuffer!.append(password);
+    
+stringBuffer!.append(EQUALS);
+    
+stringBuffer!.append(result);
+    
+logUtil!.put(stringBuffer!.toString(), this, "login");
+    
 
                                     }
                                 
@@ -504,17 +570,26 @@ logUtil!.put(stringBuffer!.toString(), this, "login")
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(COMMAND_SUCCESS_BUT_LOGIN_FAILED)
-stringBuffer!.append(userName)
-stringBuffer!.append(INVALID_PASSWORD_LABEL)
+;
+    
+stringBuffer!.append(COMMAND_SUCCESS_BUT_LOGIN_FAILED);
+    
+stringBuffer!.append(userName);
+    
+stringBuffer!.append(INVALID_PASSWORD_LABEL);
+    
 stringBuffer!.append(SuperCrypt(Integer(encryption).
                             toInt()).
-                            encrypt(password))
-stringBuffer!.append(NOT_EQUAL)
-stringBuffer!.append(result)
-stringBuffer!.append(END_QUOTES)
-logUtil!.put(stringBuffer!.toString(), this, "login")
+                            encrypt(password));
+    
+stringBuffer!.append(NOT_EQUAL);
+    
+stringBuffer!.append(result);
+    
+stringBuffer!.append(END_QUOTES);
+    
+logUtil!.put(stringBuffer!.toString(), this, "login");
+    
 
                                     }
                                 
@@ -527,13 +602,16 @@ logUtil!.put(stringBuffer!.toString(), this, "login")
 
                         }
                             
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.FAILURE, this, "login", e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, "login", e);
+    
 
                                     }
                                 
@@ -548,10 +626,11 @@ logUtil!.put(stringBuffer!.toString(), this, "login")
 }
 
 
-    public update(userName: string, updatedValues: HashMap<Any, Any>){
+    public update(userName: string, updatedValues: HashMap<any, any>){
 var userName = userName
 var updatedValues = updatedValues
-super.updateWhere(UserData.USERNAME, userName, updatedValues)
+super.updateWhere(UserData.USERNAME, userName, updatedValues);
+    
 }
 
 
@@ -561,6 +640,8 @@ super.updateWhere(UserData.USERNAME, userName, updatedValues)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.dropTable();
+
+                        ;
     
 }
 
@@ -570,18 +651,23 @@ super.updateWhere(UserData.USERNAME, userName, updatedValues)
     var entryData: EntryData = EntryData.getInstance()!;
         
         
-
+;
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(tableName)!.append(this.sqlStrings!.START)!.append(UserData.USERNAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(UserData.PREFIXNAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(UserData.FIRSTNAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(UserData.LASTNAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(UserData.MIDDLENAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(UserData.SUFFIXNAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(UserData.COMPANY)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(UserData.POSITIONATCOMPANY)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(UserData.MAINEMAIL)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(UserData.SECONDARYEMAIL)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(UserData.HOMEPHONE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(UserData.CELLPHONE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(UserData.WORKPHONE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(UserData.OTHERCONTACT)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(UserData.ELECTRONICDEVICE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(UserData.FAX)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(UserRoleData.NAME.toString())!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(UserData.CONFIGURATION)!.append(this.sqlTypeStrings!.BLOB_NOT_NULL)!.append(UserData.PERMISSIONS)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(entryData!.ENCRYPTION)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(UserData.SECRET)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(UserData.PASSWORD)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(entryData!.ENABLE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(entryData!.TIMECREATED)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(entryData!.LASTMODIFIED)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(this.sqlStrings!.PRIMARY_KEY)!.append(UserData.USERNAME)!.append(this.sqlStrings!.END)
+;
+    
+stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(tableName)!.append(this.sqlStrings!.START)!.append(UserData.USERNAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(UserData.PREFIXNAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(UserData.FIRSTNAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(UserData.LASTNAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(UserData.MIDDLENAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(UserData.SUFFIXNAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(UserData.COMPANY)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(UserData.POSITIONATCOMPANY)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(UserData.MAINEMAIL)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(UserData.SECONDARYEMAIL)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(UserData.HOMEPHONE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(UserData.CELLPHONE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(UserData.WORKPHONE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(UserData.OTHERCONTACT)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(UserData.ELECTRONICDEVICE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(UserData.FAX)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(UserRoleData.NAME.toString())!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(UserData.CONFIGURATION)!.append(this.sqlTypeStrings!.BLOB_NOT_NULL)!.append(UserData.PERMISSIONS)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(entryData!.ENCRYPTION)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(UserData.SECRET)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(UserData.PASSWORD)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(entryData!.ENABLE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(entryData!.TIMECREATED)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(entryData!.LASTMODIFIED)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(this.sqlStrings!.PRIMARY_KEY)!.append(UserData.USERNAME)!.append(this.sqlStrings!.END);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 
@@ -592,6 +678,8 @@ stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(tableName)!.append(t
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.createTable(this.createTableStatement());
+
+                        ;
     
 }
 

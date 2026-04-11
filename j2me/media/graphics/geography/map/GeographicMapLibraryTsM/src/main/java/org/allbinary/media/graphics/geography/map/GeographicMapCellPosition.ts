@@ -53,19 +53,24 @@ var height = height
     var x: number = this.getColumn() *width;
         
         
-
+;
+    
 
     var y: number = this.getRow() *height;
         
         
-
+;
+    
 
     var pointFactory: PointFactory = PointFactory.getInstance()!;
         
         
-
-this.point= pointFactory!.getInstance(x, y)
-this.midPoint= pointFactory!.getInstance(x +(width shr 1), y +(height shr 1))
+;
+    
+this.point= pointFactory!.getInstance(x, y);
+    
+this.midPoint= pointFactory!.getInstance(x +(width shr 1), y +(height shr 1));
+    
 }
 
 
@@ -91,7 +96,8 @@ this.midPoint= pointFactory!.getInstance(x +(width shr 1), y +(height shr 1))
 
     public setMidPoint(midPoint: GPoint){
 var midPoint = midPoint
-this.midPoint= midPoint
+this.midPoint= midPoint;
+    
 }
 
 

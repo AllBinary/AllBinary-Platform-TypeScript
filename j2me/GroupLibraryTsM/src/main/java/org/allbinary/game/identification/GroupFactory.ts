@@ -54,7 +54,7 @@ export class GroupFactory
         
         
 
-    public readonly NULL_GROUP_ARRAY: Group[] = new Array(0);
+    public readonly NULL_GROUP_ARRAY: Group[] = [];
         
         
 
@@ -71,8 +71,10 @@ export class GroupFactory
     var group: Group = list.objectArray[index]! as Group;
         
         
-
-index++
+;
+    
+index++;
+    
 
 
 
@@ -88,8 +90,10 @@ index++
     var group: Group = this.getNextGroup()!;
         
         
-
-group.setName(name)
+;
+    
+group.setName(name);
+    
 
 
 
@@ -106,24 +110,30 @@ var nameArray = nameArray
     var stringMaker: StringMaker = new StringMaker();
         
         
-
+;
+    
 
     var stringUtil: StringUtil = StringUtil.getInstance()!;
         
         
-
+;
+    
 
     var TEAM: string = "Team ";
         
         
-
-list.clear()
-index= 0
+;
+    
+list.clear();
+    
+index= 0;
+    
 
     var size: number = list.size()!;
         
         
-
+;
+    
 
         while(size < groups)
         {
@@ -131,23 +141,29 @@ index= 0
     var name: string = stringUtil!.EMPTY_STRING;
         
         
-
+;
+    
 
                         if(size < nameArray!.length)
                         
                                     {
-                                    name= nameArray[size]!
+                                    name= nameArray[size]!;
+    
 
                                     }
                                 
                         else {
-                            stringMaker!.delete(0, stringMaker!.length())
-name= stringMaker!.append(TEAM)!.appendint(size)!.toString()
+                            stringMaker!.delete(0, stringMaker!.length());
+    
+name= stringMaker!.append(TEAM)!.appendint(size)!.toString();
+    
 
                         }
                             
-list.add(Group(name, (size +3).toShort()))
-size++
+list.add(Group(name, (size +3).toShort()));
+    
+size++;
+    
 }
 
 }

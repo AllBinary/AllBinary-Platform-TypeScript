@@ -101,15 +101,20 @@ public constructor (cmdListener: CommandListener, label: string, text: string, m
     var stringUtil: StringUtil = StringUtil.getInstance()!;
         
         
-
+;
+    
 
     var textFieldItem: TextFieldItem = new TextFieldItem(this, TextItemVisitor(), stringUtil!.EMPTY_STRING, stringUtil!.EMPTY_STRING, maxSize, 0, stringUtil!.EMPTY_STRING, font, backgroundBasicColor, foregroundBasicColor);
         
         
-
-textFieldItem!.setString(text)
-this.textFieldItem= textFieldItem
-this.setTitle(label)
+;
+    
+textFieldItem!.setString(text);
+    
+this.textFieldItem= textFieldItem;
+    
+this.setTitle(label);
+    
 }
 
 
@@ -126,26 +131,31 @@ this.setTitle(label)
     //var deviceId = deviceId
     //var repeated = repeated
 logUtil!.put(StringMaker().
-                            append(commonStrings!.START)!.appendint(keyCode)!.toString(), this, "onEvent")
-this.keyPressed(keyCode, deviceId)
+                            append(commonStrings!.START)!.appendint(keyCode)!.toString(), this, "onEvent");
+    
+this.keyPressed(keyCode, deviceId);
+    
 }
 
 
     public keyPressed(keyCode: number){
     //var keyCode = keyCode
-this.keyPressed(keyCode, 0)
+this.keyPressed(keyCode, 0);
+    
 }
 
 
     public keyReleased(keyCode: number){
     //var keyCode = keyCode
-this.keyReleased(keyCode, 0)
+this.keyReleased(keyCode, 0);
+    
 }
 
 
     public keyRepeated(keyCode: number){
     //var keyCode = keyCode
-this.keyRepeated(keyCode, 0)
+this.keyRepeated(keyCode, 0);
+    
 }
 
 
@@ -155,33 +165,41 @@ this.keyRepeated(keyCode, 0)
 
         try {
             logUtil!.put(StringMaker().
-                            append(CommonSeps.getInstance()!.SPACE)!.appendint(keyCode)!.toString(), this, gameInputStrings!.KEY_PRESSED)
+                            append(CommonSeps.getInstance()!.SPACE)!.appendint(keyCode)!.toString(), this, gameInputStrings!.KEY_PRESSED);
+    
 
     var platformKeyFactory: PlatformKeyFactory = PlatformKeyFactory.getInstance()!;
         
         
-
+;
+    
 
     var input: Input = inputFactory!.getInstance(keyCode)!;
         
         
-
+;
+    
 
                         if(platformKeyFactory!.isSubmission(input))
                         
                                     {
-                                    this.submit()
+                                    this.submit();
+    
 
                                     }
                                 
                         else {
-                            this.textFieldItem!.keyPressed(keyCode)
+                            this.textFieldItem!.keyPressed(keyCode);
+    
 
                         }
                             
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, gameInputStrings!.KEY_PRESSED, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, gameInputStrings!.KEY_PRESSED, e);
+    
 }
 
 }
@@ -195,19 +213,27 @@ logUtil!.put(commonStrings!.EXCEPTION, this, gameInputStrings!.KEY_PRESSED, e)
 
     public paint(graphics: Graphics){
     //var graphics = graphics
-graphics.setColor(this.backgroundColor)
-graphics.fillRect(0, 0, this.displayInfoSingleton!.getLastWidth(), this.displayInfoSingleton!.getLastHeight())
-graphics.setColor(this.foregroundColor)
+graphics.setColor(this.backgroundColor);
+    
+graphics.fillRect(0, 0, this.displayInfoSingleton!.getLastWidth(), this.displayInfoSingleton!.getLastHeight());
+    
+graphics.setColor(this.foregroundColor);
+    
 
-                        if(!J2MEUtil.isJ2ME())
+                        if(!J2MEUtil.isJ2ME();
+
+                        )
                         
                                     {
-                                    graphics.drawString(this.getTitle(), 8, 1, 0)
+                                    graphics.drawString(this.getTitle(), 8, 1, 0);
+    
 
                                     }
                                 
-this.paint(graphics, 8, graphics.getFont()!.getHeight() +2)
-super.paint(graphics)
+this.paint(graphics, 8, graphics.getFont()!.getHeight() +2);
+    
+super.paint(graphics);
+    
 }
 
 
@@ -215,7 +241,8 @@ super.paint(graphics)
     //var graphics = graphics
     //var x = x
     //var y = y
-textFieldItem!.paint(graphics, x, y)
+textFieldItem!.paint(graphics, x, y);
+    
 }
 
 

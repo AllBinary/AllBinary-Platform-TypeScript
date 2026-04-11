@@ -76,39 +76,48 @@ public constructor (viewPosition: ViewPosition)
 var x = x
 var y = y
 var z = z
-this.setPosition(x +5, y +5, z)
-this.viewPositionEventHandler!.addListener(this as AllBinaryLayer)
-SecondaryPlayerQueueFactory.getInstance()!.add(DropWeaponSound.getInstance())
+this.setPosition(x +5, y +5, z);
+    
+this.viewPositionEventHandler!.addListener(this as AllBinaryLayer);
+    
+SecondaryPlayerQueueFactory.getInstance()!.add(DropWeaponSound.getInstance());
+    
 }
 
 
     public damage(damage: number, damageType: number){
 var damage = damage
 var damageType = damageType
-this.totalDamage= this.getInitDamage() +1
+this.totalDamage= this.getInitDamage() +1;
+    
 }
 
 
     public getDamage(damageType: number): number{
 var damageType = damageType
-super.getDamage(damageType)
+super.getDamage(damageType);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getInitDamage();
+
+                        ;
     
 }
 
 
     public setDestroyed(destroyed: boolean){
 var destroyed = destroyed
-super.setDestroyed(destroyed)
+super.setDestroyed(destroyed);
+    
 
                         if(this.isDestroyed())
                         
                                     {
-                                    this.viewPositionEventHandler!.removeListener(this)
+                                    this.viewPositionEventHandler!.removeListener(this);
+    
 
                                     }
                                 

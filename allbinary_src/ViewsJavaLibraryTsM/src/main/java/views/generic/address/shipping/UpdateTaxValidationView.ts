@@ -18,7 +18,10 @@
 
 
 
-import { Vector } from "../../../../java/util/Vector.js";
+            import Vector from "@ohos.util.Vector";
+        
+
+//import { Vector } from "../../../../java/util/Vector.js";
 
     
 import { StoreFrontFactory } from "../../../../org/allbinary/business/context/modules/storefront/StoreFrontFactory.js";
@@ -71,12 +74,14 @@ public constructor (transformInfoInterface: TransformInfoInterface)
                 //@Throws(Error::class)
             
     public isValid(): Boolean{
-this.streetAddress= StreetAddress(this.getRequest())
+this.streetAddress= StreetAddress(this.getRequest());
+    
 
     var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(this.getTransformInfoInterface()!.getStoreName())!;
         
         
-
+;
+    
 
                         if(TaxFactory.getInstance()!.getInstance(this.abeClientInformation, storeFrontInterface)!.isValid(this.streetAddress, storeFrontInterface) == Boolean.FALSE)
                         
@@ -94,12 +99,14 @@ this.streetAddress= StreetAddress(this.getRequest())
     var billingAddressesEntity: ShippingAddressesEntity = new ShippingAddressesEntity(this.getWeblisketSession()!.getUserName());
         
         
-
+;
+    
 
     var streetAddressList: Vector = billingAddressesEntity!.get()!;
         
         
-
+;
+    
 
                         if(streetAddressList == 
                                     null
@@ -119,12 +126,14 @@ this.streetAddress= StreetAddress(this.getRequest())
     var count: number = 0;
         
         
-
+;
+    
 
     var size: number = streetAddressList!.length!;
         
         
-
+;
+    
 
 
 
@@ -136,15 +145,19 @@ this.streetAddress= StreetAddress(this.getRequest())
 index < size; index++)
         {
 
-    var aStreetAddress: StreetAddress = streetAddressList!.get(index) as StreetAddress;
-        
-        
+    var aStreetAddress: StreetAddress = streetAddressList!.get(index);
 
+                         as StreetAddress;
+        
+        
+;
+    
 
                         if(aStreetAddress!.getName()!.compareTo(ShippingAddressData.TAX) == 0)
                         
                                     {
-                                    count++
+                                    count++;
+    
 
                                     }
                                 

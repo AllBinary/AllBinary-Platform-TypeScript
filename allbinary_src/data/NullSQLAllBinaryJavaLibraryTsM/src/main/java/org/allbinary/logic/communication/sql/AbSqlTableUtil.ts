@@ -80,7 +80,8 @@ var abSqlTable = abSqlTable
     var tableName: string = abSqlTable!.getTableName()!;
         
         
-
+;
+    
 
 
 
@@ -98,20 +99,27 @@ var portion = portion
     var tableName: string = abSqlTable!.getTableName()!;
         
         
-
+;
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(TABLE_LABEL)
-stringBuffer!.append(tableName)
-stringBuffer!.append(" Restoration Failed")
+;
+    
+stringBuffer!.append(TABLE_LABEL);
+    
+stringBuffer!.append(tableName);
+    
+stringBuffer!.append(" Restoration Failed");
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

@@ -64,22 +64,28 @@ index > min_x.toInt(); )
     var colorInteger: Integer = Integer(Integer.valueOf(bufferedImage!.getRGB(index, y.toInt())))!;
         
         
-
+;
+    
 
     var automaticCacheInterface: AutomaticCacheInterface = ColorCacheFactory.getInstance()!;
         
         
+;
+    
 
+    var colorCacheable: ColorCacheable = automaticCacheInterface!.get(colorInteger);
 
-    var colorCacheable: ColorCacheable = automaticCacheInterface!.get(colorInteger) as ColorCacheable;
+                         as ColorCacheable;
         
         
-
+;
+    
 
     var color: Color = colorCacheable!.getColor()!;
         
         
-
+;
+    
 
                         if(color.getRed() < MAX && color.getGreen() < MAX && color.getBlue() < MAX)
                         

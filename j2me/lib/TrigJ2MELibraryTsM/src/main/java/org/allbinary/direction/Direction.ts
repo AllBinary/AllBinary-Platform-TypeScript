@@ -56,11 +56,16 @@ var direction = direction
 var otherName = otherName
 var value = value
 var frameFactor = frameFactor
-this.name= name
-this.otherName= otherName
-this.value= value
-this.frameFactor= frameFactor
-directionArray[value]= this
+this.name= name;
+    
+this.otherName= otherName;
+    
+this.value= value;
+    
+this.frameFactor= frameFactor;
+    
+directionArray[value]= this;
+    
 }
 
  constructor (name: string, otherName: string, value: number){
@@ -69,11 +74,16 @@ directionArray[value]= this
             var name = name
 var otherName = otherName
 var value = value
-this.name= name
-this.otherName= otherName
-this.value= value
-this.frameFactor= 0
-directionArray[value]= this
+this.name= name;
+    
+this.otherName= otherName;
+    
+this.value= value;
+    
+this.frameFactor= 0;
+    
+directionArray[value]= this;
+    
 }
 
 
@@ -122,18 +132,27 @@ directionArray[value]= this
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("Direction: ")
-stringBuffer!.append(this.getName())
-stringBuffer!.append(" Or: ")
-stringBuffer!.append(this.getOtherName())
-stringBuffer!.append(" Value: ")
-stringBuffer!.appendint(this.value)
+;
+    
+stringBuffer!.append("Direction: ");
+    
+stringBuffer!.append(this.getName());
+    
+stringBuffer!.append(" Or: ");
+    
+stringBuffer!.append(this.getOtherName());
+    
+stringBuffer!.append(" Value: ");
+    
+stringBuffer!.appendint(this.value);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

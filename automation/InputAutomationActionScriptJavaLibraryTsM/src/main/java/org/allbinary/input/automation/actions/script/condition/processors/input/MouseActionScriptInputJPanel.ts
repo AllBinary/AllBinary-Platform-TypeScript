@@ -65,19 +65,28 @@ public constructor (mouseActionScriptInputInterface: MouseActionScriptInputInter
 
             super();
                 //var mouseActionScriptInputInterface = mouseActionScriptInputInterface
-logUtil!.put(CommonLabels.getInstance()!.START +mouseActionScriptInputInterface, this, commonStrings!.CONSTRUCTOR)
-initComponents()
-this.mouseActionScriptInputInterface= mouseActionScriptInputInterface
+logUtil!.put(CommonLabels.getInstance()!.START +mouseActionScriptInputInterface, this, commonStrings!.CONSTRUCTOR);
+    
+initComponents();
+    
+this.mouseActionScriptInputInterface= mouseActionScriptInputInterface;
+    
 
     var defaultComboBoxModel: DefaultComboBoxModel = new DefaultComboBoxModel();
         
         
-
-defaultComboBoxModel!.addElement(TempInputRobotNames.LOW_NAME)
-defaultComboBoxModel!.addElement(TempInputRobotNames.SYS_NAME)
-defaultComboBoxModel!.addElement(InputRobot.NAME)
-this.inputAutomationTypeJComboBox!.setModel(defaultComboBoxModel)
-this.set()
+;
+    
+defaultComboBoxModel!.addElement(TempInputRobotNames.LOW_NAME);
+    
+defaultComboBoxModel!.addElement(TempInputRobotNames.SYS_NAME);
+    
+defaultComboBoxModel!.addElement(InputRobot.NAME);
+    
+this.inputAutomationTypeJComboBox!.setModel(defaultComboBoxModel);
+    
+this.set();
+    
 }
 
 
@@ -86,18 +95,22 @@ this.set()
     var inputTypeComboBoxModel: ComboBoxModel = this.inputAutomationTypeJComboBox!.getModel()!;
         
         
-
-inputTypeComboBoxModel!.setSelectedItem(this.mouseActionScriptInputInterface!.getInputRobotInterface()!.getName())
+;
+    
+inputTypeComboBoxModel!.setSelectedItem(this.mouseActionScriptInputInterface!.getInputRobotInterface()!.getName());
+    
 
                         if((this.mouseActionScriptInputInterface!.getButtonClicks() and InputEvent.BUTTON1_MASK) != 0)
                         
                                     {
-                                    this.button1JCheckBox!.setSelected(true)
+                                    this.button1JCheckBox!.setSelected(true);
+    
 
                                     }
                                 
                         else {
-                            this.button1JCheckBox!.setSelected(false)
+                            this.button1JCheckBox!.setSelected(false);
+    
 
                         }
                             
@@ -105,19 +118,25 @@ inputTypeComboBoxModel!.setSelectedItem(this.mouseActionScriptInputInterface!.ge
                         if((this.mouseActionScriptInputInterface!.getButtonClicks() and InputEvent.BUTTON2_MASK) != 0)
                         
                                     {
-                                    this.button2JCheckBox!.setSelected(true)
+                                    this.button2JCheckBox!.setSelected(true);
+    
 
                                     }
                                 
                         else {
-                            this.button2JCheckBox!.setSelected(false)
+                            this.button2JCheckBox!.setSelected(false);
+    
 
                         }
                             
-this.mouseDelayJTextField!.setText(this.mouseActionScriptInputInterface!.getTime().toString())
-this.mouseXJTextField!.setText(this.mouseActionScriptInputInterface!.getPoint()!.x.toString())
-this.mouseYJTextField!.setText(this.mouseActionScriptInputInterface!.getPoint()!.y.toString())
-this.mouseActionScriptInputInterface!.log()
+this.mouseDelayJTextField!.setText(this.mouseActionScriptInputInterface!.getTime().toString());
+    
+this.mouseXJTextField!.setText(this.mouseActionScriptInputInterface!.getPoint()!.x.toString());
+    
+this.mouseYJTextField!.setText(this.mouseActionScriptInputInterface!.getPoint()!.y.toString());
+    
+this.mouseActionScriptInputInterface!.log();
+    
 }
 
 
@@ -128,17 +147,24 @@ this.mouseActionScriptInputInterface!.log()
     var comboBoxModel: ComboBoxModel = this.inputAutomationTypeJComboBox!.getModel()!;
         
         
+;
+    
 
+    var selectedItem: string = comboBoxModel!.getSelectedItem();
 
-    var selectedItem: string = comboBoxModel!.getSelectedItem() as String;
+                         as String;
         
         
+;
+    
 
+                        if(!StringValidationUtil.getInstance()!.isEmpty(selectedItem);
 
-                        if(!StringValidationUtil.getInstance()!.isEmpty(selectedItem))
+                        )
                         
                                     {
-                                    this.mouseActionScriptInputInterface!.setInputRobotInterface(InputRobotFactory.getInstance()!.get(selectedItem))
+                                    this.mouseActionScriptInputInterface!.setInputRobotInterface(InputRobotFactory.getInstance()!.get(selectedItem));
+    
 
                                     }
                                 
@@ -148,9 +174,12 @@ this.mouseActionScriptInputInterface!.log()
                 //@Throws(Error::class)
             
     update(){
-this.updateInputType()
-this.mouseActionScriptInputInterface!.setTime(getText.valueOf())
-logUtil!.put("Button State: " +this.mouseActionScriptInputInterface!.getButtonClicks(), this, "update")
+this.updateInputType();
+    
+this.mouseActionScriptInputInterface!.setTime(getText.valueOf());
+    
+logUtil!.put("Button State: " +this.mouseActionScriptInputInterface!.getButtonClicks(), this, "update");
+    
 
                         if(this.button1JCheckBox!.isSelected())
                         
@@ -159,8 +188,10 @@ logUtil!.put("Button State: " +this.mouseActionScriptInputInterface!.getButtonCl
                         if((this.mouseActionScriptInputInterface!.getButtonClicks() and InputEvent.BUTTON1_MASK) == 0)
                         
                                     {
-                                    this.mouseActionScriptInputInterface!.setButtonClicks(this.mouseActionScriptInputInterface!.getButtonClicks() or InputEvent.BUTTON1_MASK)
-logUtil!.put("Button 1 Selected: " +this.mouseActionScriptInputInterface!.getButtonClicks(), this, "update")
+                                    this.mouseActionScriptInputInterface!.setButtonClicks(this.mouseActionScriptInputInterface!.getButtonClicks() or InputEvent.BUTTON1_MASK);
+    
+logUtil!.put("Button 1 Selected: " +this.mouseActionScriptInputInterface!.getButtonClicks(), this, "update");
+    
 
                                     }
                                 
@@ -172,8 +203,10 @@ logUtil!.put("Button 1 Selected: " +this.mouseActionScriptInputInterface!.getBut
                         if((this.mouseActionScriptInputInterface!.getButtonClicks() and InputEvent.BUTTON1_MASK) != 0)
                         
                                     {
-                                    this.mouseActionScriptInputInterface!.setButtonClicks(this.mouseActionScriptInputInterface!.getButtonClicks() xor InputEvent.BUTTON1_MASK)
-logUtil!.put("Button 1 Deselected: " +this.mouseActionScriptInputInterface!.getButtonClicks(), this, "update")
+                                    this.mouseActionScriptInputInterface!.setButtonClicks(this.mouseActionScriptInputInterface!.getButtonClicks() xor InputEvent.BUTTON1_MASK);
+    
+logUtil!.put("Button 1 Deselected: " +this.mouseActionScriptInputInterface!.getButtonClicks(), this, "update");
+    
 
                                     }
                                 
@@ -188,8 +221,10 @@ logUtil!.put("Button 1 Deselected: " +this.mouseActionScriptInputInterface!.getB
                         if((this.mouseActionScriptInputInterface!.getButtonClicks() and InputEvent.BUTTON2_MASK) == 0)
                         
                                     {
-                                    this.mouseActionScriptInputInterface!.setButtonClicks(this.mouseActionScriptInputInterface!.getButtonClicks() or InputEvent.BUTTON2_MASK)
-logUtil!.put("Button 2 Selected: " +this.mouseActionScriptInputInterface!.getButtonClicks(), this, "update")
+                                    this.mouseActionScriptInputInterface!.setButtonClicks(this.mouseActionScriptInputInterface!.getButtonClicks() or InputEvent.BUTTON2_MASK);
+    
+logUtil!.put("Button 2 Selected: " +this.mouseActionScriptInputInterface!.getButtonClicks(), this, "update");
+    
 
                                     }
                                 
@@ -201,8 +236,10 @@ logUtil!.put("Button 2 Selected: " +this.mouseActionScriptInputInterface!.getBut
                         if((this.mouseActionScriptInputInterface!.getButtonClicks() and InputEvent.BUTTON2_MASK) != 0)
                         
                                     {
-                                    this.mouseActionScriptInputInterface!.setButtonClicks(this.mouseActionScriptInputInterface!.getButtonClicks() xor InputEvent.BUTTON2_MASK)
-logUtil!.put("Button 2 Deselected: " +this.mouseActionScriptInputInterface!.getButtonClicks(), this, "update")
+                                    this.mouseActionScriptInputInterface!.setButtonClicks(this.mouseActionScriptInputInterface!.getButtonClicks() xor InputEvent.BUTTON2_MASK);
+    
+logUtil!.put("Button 2 Deselected: " +this.mouseActionScriptInputInterface!.getButtonClicks(), this, "update");
+    
 
                                     }
                                 
@@ -213,12 +250,16 @@ logUtil!.put("Button 2 Deselected: " +this.mouseActionScriptInputInterface!.getB
     var mouseXString: string = this.mouseXJTextField!.getText()!;
         
         
+;
+    
 
+                        if(!StringValidationUtil.getInstance()!.isEmpty(mouseXString);
 
-                        if(!StringValidationUtil.getInstance()!.isEmpty(mouseXString) && StringValidationUtil.getInstance()!.isNumber(mouseXString))
+                         && StringValidationUtil.getInstance()!.isNumber(mouseXString))
                         
                                     {
-                                    this.mouseActionScriptInputInterface!.getPoint()!.x= Integer.parseInt(mouseXString)
+                                    this.mouseActionScriptInputInterface!.getPoint()!.x= Integer.parseInt(mouseXString);
+    
 
                                     }
                                 
@@ -226,16 +267,21 @@ logUtil!.put("Button 2 Deselected: " +this.mouseActionScriptInputInterface!.getB
     var mouseYString: string = this.mouseYJTextField!.getText()!;
         
         
+;
+    
 
+                        if(!StringValidationUtil.getInstance()!.isEmpty(mouseYString);
 
-                        if(!StringValidationUtil.getInstance()!.isEmpty(mouseYString) && StringValidationUtil.getInstance()!.isNumber(mouseYString))
+                         && StringValidationUtil.getInstance()!.isNumber(mouseYString))
                         
                                     {
-                                    this.mouseActionScriptInputInterface!.getPoint()!.y= Integer.parseInt(mouseYString)
+                                    this.mouseActionScriptInputInterface!.getPoint()!.y= Integer.parseInt(mouseYString);
+    
 
                                     }
                                 
-this.mouseActionScriptInputInterface!.log()
+this.mouseActionScriptInputInterface!.log();
+    
 }
 
 
@@ -251,95 +297,148 @@ this.mouseActionScriptInputInterface!.log()
 
     public setMouseActionJDialog(mouseActionJDialog: javax.swing.JDialog){
 var mouseActionJDialog = mouseActionJDialog
-this.mouseActionJDialog= mouseActionJDialog
+this.mouseActionJDialog= mouseActionJDialog;
+    
 }
 
 
     initComponents(){
-mouseActionJDialog= javax.swing.JDialog()
-titleJLabel= javax.swing.JLabel()
-okJButton= javax.swing.JButton()
-jLabel2= javax.swing.JLabel()
-jLabel3= javax.swing.JLabel()
-button1JCheckBox= javax.swing.JCheckBox()
-button2JCheckBox= javax.swing.JCheckBox()
-jLabel4= javax.swing.JLabel()
-mouseXJTextField= javax.swing.JTextField()
-jLabel5= javax.swing.JLabel()
-mouseYJTextField= javax.swing.JTextField()
-inputTypeJLabel= javax.swing.JLabel()
-inputAutomationTypeJComboBox= javax.swing.JComboBox()
-jLabel6= javax.swing.JLabel()
-mouseDelayJTextField= javax.swing.JTextField()
-mouseActionJButton= javax.swing.JButton()
-jLabel1= javax.swing.JLabel()
-mouseActionJDialog!.setMinimumSize(java.awt.Dimension(275, 185))
-titleJLabel!.setText("Mouse Input Options")
-okJButton!.setText("OK")
+mouseActionJDialog= javax.swing.JDialog();
+    
+titleJLabel= javax.swing.JLabel();
+    
+okJButton= javax.swing.JButton();
+    
+jLabel2= javax.swing.JLabel();
+    
+jLabel3= javax.swing.JLabel();
+    
+button1JCheckBox= javax.swing.JCheckBox();
+    
+button2JCheckBox= javax.swing.JCheckBox();
+    
+jLabel4= javax.swing.JLabel();
+    
+mouseXJTextField= javax.swing.JTextField();
+    
+jLabel5= javax.swing.JLabel();
+    
+mouseYJTextField= javax.swing.JTextField();
+    
+inputTypeJLabel= javax.swing.JLabel();
+    
+inputAutomationTypeJComboBox= javax.swing.JComboBox();
+    
+jLabel6= javax.swing.JLabel();
+    
+mouseDelayJTextField= javax.swing.JTextField();
+    
+mouseActionJButton= javax.swing.JButton();
+    
+jLabel1= javax.swing.JLabel();
+    
+mouseActionJDialog!.setMinimumSize(java.awt.Dimension(275, 185));
+    
+titleJLabel!.setText("Mouse Input Options");
+    
+okJButton!.setText("OK");
+    
 okJButton!.addActionListener(object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
 var evt = evt
-okJButtonActionPerformed(evt)
+okJButtonActionPerformed(evt);
+    
 }
 
                                 }
-                            )
-jLabel2!.setText("Buttons:")
-jLabel3!.setText("Move To:")
-button1JCheckBox!.setText(CommonPhoneStrings.getInstance()!.ONE)
-button1JCheckBox!.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0))
-button1JCheckBox!.setMargin(java.awt.Insets(0, 0, 0, 0))
-button2JCheckBox!.setText(CommonPhoneStrings.getInstance()!.TWO)
-button2JCheckBox!.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0))
-button2JCheckBox!.setMargin(java.awt.Insets(0, 0, 0, 0))
+                            );
+    
+jLabel2!.setText("Buttons:");
+    
+jLabel3!.setText("Move To:");
+    
+button1JCheckBox!.setText(CommonPhoneStrings.getInstance()!.ONE);
+    
+button1JCheckBox!.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
+    
+button1JCheckBox!.setMargin(java.awt.Insets(0, 0, 0, 0));
+    
+button2JCheckBox!.setText(CommonPhoneStrings.getInstance()!.TWO);
+    
+button2JCheckBox!.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
+    
+button2JCheckBox!.setMargin(java.awt.Insets(0, 0, 0, 0));
+    
 button2JCheckBox!.addActionListener(object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
 var evt = evt
-button2JCheckBoxActionPerformed(evt)
+button2JCheckBoxActionPerformed(evt);
+    
 }
 
                                 }
-                            )
-jLabel4!.setText("x:")
-mouseXJTextField!.setText(CommonPhoneStrings.getInstance()!.ZERO)
-jLabel5!.setText("y:")
-mouseYJTextField!.setText(CommonPhoneStrings.getInstance()!.ZERO)
-inputTypeJLabel!.setText("Input Type:")
-jLabel6!.setText("Delay:")
-mouseDelayJTextField!.setText("100")
+                            );
+    
+jLabel4!.setText("x:");
+    
+mouseXJTextField!.setText(CommonPhoneStrings.getInstance()!.ZERO);
+    
+jLabel5!.setText("y:");
+    
+mouseYJTextField!.setText(CommonPhoneStrings.getInstance()!.ZERO);
+    
+inputTypeJLabel!.setText("Input Type:");
+    
+jLabel6!.setText("Delay:");
+    
+mouseDelayJTextField!.setText("100");
+    
 
     var mouseActionJDialogLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(mouseActionJDialog!.getContentPane());
         
         
-
-mouseActionJDialog!.getContentPane()!.setLayout(mouseActionJDialogLayout)
-mouseActionJDialogLayout!.setHorizontalGroup(mouseActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(mouseActionJDialogLayout!.createSequentialGroup()!.addContainerGap()!.addGroup(mouseActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addComponent(inputTypeJLabel)!.addGroup(javax.swing.GroupLayout.Alignment.TRAILING, mouseActionJDialogLayout!.createSequentialGroup()!.addGroup(mouseActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(javax.swing.GroupLayout.Alignment.TRAILING, mouseActionJDialogLayout!.createSequentialGroup()!.addComponent(jLabel2)!.addGap(25, 25, 25))!.addGroup(mouseActionJDialogLayout!.createSequentialGroup()!.addGroup(mouseActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addComponent(jLabel3)!.addComponent(jLabel6))!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))!.addGroup(mouseActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addComponent(mouseDelayJTextField, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 154, Short.MAX_VALUE)!.addGroup(mouseActionJDialogLayout!.createSequentialGroup()!.addComponent(titleJLabel)!.addGap(45, 45, 45))!.addGroup(javax.swing.GroupLayout.Alignment.TRAILING, mouseActionJDialogLayout!.createSequentialGroup()!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(inputAutomationTypeJComboBox, 0, 154, Short.MAX_VALUE))!.addGroup(mouseActionJDialogLayout!.createSequentialGroup()!.addComponent(button1JCheckBox)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(button2JCheckBox))!.addGroup(mouseActionJDialogLayout!.createSequentialGroup()!.addGroup(mouseActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)!.addGroup(mouseActionJDialogLayout!.createSequentialGroup()!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(okJButton))!.addGroup(mouseActionJDialogLayout!.createSequentialGroup()!.addComponent(jLabel4)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 5, Short.MAX_VALUE)!.addComponent(mouseXJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)))!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(jLabel5)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(mouseYJTextField, javax.swing.GroupLayout.DEFAULT_SIZE, 62, Short.MAX_VALUE)))))!.addContainerGap()))
-mouseActionJDialogLayout!.setVerticalGroup(mouseActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(mouseActionJDialogLayout!.createSequentialGroup()!.addComponent(titleJLabel)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addGroup(mouseActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)!.addComponent(inputTypeJLabel)!.addComponent(inputAutomationTypeJComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addGroup(mouseActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)!.addGroup(mouseActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)!.addComponent(button1JCheckBox)!.addComponent(button2JCheckBox)))!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addGroup(mouseActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)!.addComponent(jLabel6)!.addComponent(mouseDelayJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addGroup(mouseActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)!.addComponent(jLabel3)!.addComponent(jLabel4)!.addComponent(jLabel5)!.addComponent(mouseYJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)!.addComponent(mouseXJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)!.addComponent(okJButton)!.addContainerGap()))
-setMinimumSize(java.awt.Dimension(100, 0))
-mouseActionJButton!.setText("Edit")
+;
+    
+mouseActionJDialog!.getContentPane()!.setLayout(mouseActionJDialogLayout);
+    
+mouseActionJDialogLayout!.setHorizontalGroup(mouseActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(mouseActionJDialogLayout!.createSequentialGroup()!.addContainerGap()!.addGroup(mouseActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addComponent(inputTypeJLabel)!.addGroup(javax.swing.GroupLayout.Alignment.TRAILING, mouseActionJDialogLayout!.createSequentialGroup()!.addGroup(mouseActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(javax.swing.GroupLayout.Alignment.TRAILING, mouseActionJDialogLayout!.createSequentialGroup()!.addComponent(jLabel2)!.addGap(25, 25, 25))!.addGroup(mouseActionJDialogLayout!.createSequentialGroup()!.addGroup(mouseActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addComponent(jLabel3)!.addComponent(jLabel6))!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))!.addGroup(mouseActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addComponent(mouseDelayJTextField, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 154, Short.MAX_VALUE)!.addGroup(mouseActionJDialogLayout!.createSequentialGroup()!.addComponent(titleJLabel)!.addGap(45, 45, 45))!.addGroup(javax.swing.GroupLayout.Alignment.TRAILING, mouseActionJDialogLayout!.createSequentialGroup()!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(inputAutomationTypeJComboBox, 0, 154, Short.MAX_VALUE))!.addGroup(mouseActionJDialogLayout!.createSequentialGroup()!.addComponent(button1JCheckBox)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(button2JCheckBox))!.addGroup(mouseActionJDialogLayout!.createSequentialGroup()!.addGroup(mouseActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)!.addGroup(mouseActionJDialogLayout!.createSequentialGroup()!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(okJButton))!.addGroup(mouseActionJDialogLayout!.createSequentialGroup()!.addComponent(jLabel4)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 5, Short.MAX_VALUE)!.addComponent(mouseXJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)))!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(jLabel5)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(mouseYJTextField, javax.swing.GroupLayout.DEFAULT_SIZE, 62, Short.MAX_VALUE)))))!.addContainerGap()));
+    
+mouseActionJDialogLayout!.setVerticalGroup(mouseActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(mouseActionJDialogLayout!.createSequentialGroup()!.addComponent(titleJLabel)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addGroup(mouseActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)!.addComponent(inputTypeJLabel)!.addComponent(inputAutomationTypeJComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addGroup(mouseActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)!.addGroup(mouseActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)!.addComponent(button1JCheckBox)!.addComponent(button2JCheckBox)))!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addGroup(mouseActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)!.addComponent(jLabel6)!.addComponent(mouseDelayJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addGroup(mouseActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)!.addComponent(jLabel3)!.addComponent(jLabel4)!.addComponent(jLabel5)!.addComponent(mouseYJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)!.addComponent(mouseXJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)!.addComponent(okJButton)!.addContainerGap()));
+    
+setMinimumSize(java.awt.Dimension(100, 0));
+    
+mouseActionJButton!.setText("Edit");
+    
 mouseActionJButton!.addActionListener(object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
 var evt = evt
-mouseActionJButtonActionPerformed(evt)
+mouseActionJButtonActionPerformed(evt);
+    
 }
 
                                 }
-                            )
-jLabel1!.setText("Mouse:")
+                            );
+    
+jLabel1!.setText("Mouse:");
+    
 
     var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);
         
         
-
-this.setLayout(layout)
-layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(layout.createSequentialGroup()!.addComponent(jLabel1)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 36, Short.MAX_VALUE)!.addComponent(mouseActionJButton)))
-layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)!.addComponent(jLabel1)!.addComponent(mouseActionJButton)))
+;
+    
+this.setLayout(layout);
+    
+layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(layout.createSequentialGroup()!.addComponent(jLabel1)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 36, Short.MAX_VALUE)!.addComponent(mouseActionJButton)));
+    
+layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)!.addComponent(jLabel1)!.addComponent(mouseActionJButton)));
+    
 }
 
 
@@ -352,11 +451,16 @@ var evt = evt
 var evt = evt
 
         try {
-            this.update()
-this.getMouseActionJDialog()!.setVisible(false)
-} catch(e: Exception)
+            this.update();
+    
+this.getMouseActionJDialog()!.setVisible(false);
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "okButtonActionPerformed", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "okButtonActionPerformed", e);
+    
 }
 
 }
@@ -364,7 +468,8 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "okButtonActionPerformed", e)
 
     mouseActionJButtonActionPerformed(evt: java.awt.event.ActionEvent){
 var evt = evt
-this.getMouseActionJDialog()!.setVisible(true)
+this.getMouseActionJDialog()!.setVisible(true);
+    
 }
 
 

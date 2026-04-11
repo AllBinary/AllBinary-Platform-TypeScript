@@ -43,7 +43,8 @@ public constructor (anyType: any = {})
 
     public setBasicColorP(basicColor: BasicColor){
 var basicColor = basicColor
-this.basicColor= basicColor
+this.basicColor= basicColor;
+    
 }
 
 

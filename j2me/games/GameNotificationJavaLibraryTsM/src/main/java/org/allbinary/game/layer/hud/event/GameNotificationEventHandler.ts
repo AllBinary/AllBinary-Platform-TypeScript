@@ -66,26 +66,31 @@ private constructor (){
     var eventListenerInterface: EventListenerInterface = NullEventListener.NULL_EVENT_LISTENER;
         
         
-
+;
+    
 
     var list: BasicArrayList = this.eventListenerInterfaceList;
         
         
-
+;
+    
 
                         if(list.size() > 0)
                         
                                     {
-                                    eventListenerInterface= list.objectArray[0]! as EventListenerInterface
+                                    eventListenerInterface= list.objectArray[0]! as EventListenerInterface;
+    
 
                                     }
                                 
-super.removeAllListeners()
+super.removeAllListeners();
+    
 
                         if(eventListenerInterface != NullEventListener.NULL_EVENT_LISTENER)
                         
                                     {
-                                    this.addListener(eventListenerInterface)
+                                    this.addListener(eventListenerInterface);
+    
 
                                     }
                                 
@@ -114,8 +119,10 @@ var eventListenerInterface = eventListenerInterface
     var gameNotificationListenerInterface: GameNotificationListenerInterface = eventListenerInterface as GameNotificationListenerInterface;
         
         
-
-gameNotificationListenerInterface!.onGameNotificationEvent(eventObject as GameNotificationEvent)
+;
+    
+gameNotificationListenerInterface!.onGameNotificationEvent(eventObject as GameNotificationEvent);
+    
 }
 
 

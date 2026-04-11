@@ -42,7 +42,8 @@ public constructor (column: number, row: number, columns: number, rows: number, 
 
                             //For kotlin this is before the body of the constructor.
                     
-this.geologicalResource= geologicalResource
+this.geologicalResource= geologicalResource;
+    
 }
 
 

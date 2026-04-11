@@ -61,24 +61,29 @@ export class DomDocumentHelper
     var factory: DocumentBuilderFactory = DocumentBuilderFactory.newInstance()!;
         
         
-
+;
+    
 
     var builder: DocumentBuilder = factory.newDocumentBuilder()!;
         
         
-
+;
+    
 
     var document: Document = builder.newDocument()!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return document;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
 
@@ -101,24 +106,29 @@ var inputStream = inputStream
     var factory: DocumentBuilderFactory = DocumentBuilderFactory.newInstance()!;
         
         
-
+;
+    
 
     var builder: DocumentBuilder = factory.newDocumentBuilder()!;
         
         
-
+;
+    
 
     var document: Document = builder.parse(inputStream)!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return document;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
 
@@ -139,24 +149,29 @@ var xmlString = xmlString
     var factory: DocumentBuilderFactory = DocumentBuilderFactory.newInstance()!;
         
         
-
+;
+    
 
     var builder: DocumentBuilder = factory.newDocumentBuilder()!;
         
         
-
+;
+    
 
     var document: Document = builder.parse(StringBufferInputStream(xmlString))!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return document;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
 
@@ -177,35 +192,45 @@ var document = document
     var domSource: DOMSource = new DOMSource(document);
         
         
-
+;
+    
 
     var byteArrayOutputStream: ByteArrayOutputStream = new ByteArrayOutputStream();
         
         
-
+;
+    
 
     var streamResult: StreamResult = new StreamResult(byteArrayOutputStream);
         
         
-
+;
+    
 
     var copyTransformerFactory: TransformerFactory = TransformerFactory.newInstance()!;
         
         
-
+;
+    
 
     var copyTransformer: Transformer = copyTransformerFactory!.newTransformer()!;
         
         
-
-copyTransformer!.transform(domSource, streamResult)
+;
+    
+copyTransformer!.transform(domSource, streamResult);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return byteArrayOutputStream!.toString();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
 

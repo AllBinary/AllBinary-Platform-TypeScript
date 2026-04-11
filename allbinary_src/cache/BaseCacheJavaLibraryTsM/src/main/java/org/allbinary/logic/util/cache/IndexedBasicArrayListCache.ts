@@ -46,7 +46,8 @@ public constructor (size: number){
 
             super();
             var size = size
-this.init(size)
+this.init(size);
+    
 }
 
 
@@ -58,7 +59,8 @@ var size = size
                         if(this.size < size)
                         
                                     {
-                                    this.list.ensureCapacity(size)
+                                    this.list.ensureCapacity(size);
+    
 
 
 
@@ -69,10 +71,12 @@ var size = size
         
 index >= this.size; index--)
         {
-this.add()
+this.add();
+    
 }
 
-this.size= size
+this.size= size;
+    
 
                                     }
                                 
@@ -100,7 +104,8 @@ var index = index
             
     public add(anyType: any = {}){
 var anyType = anyType
-this.list.add(anyType)
+this.list.add(anyType);
+    
 }
 
 
@@ -108,7 +113,8 @@ this.list.add(anyType)
             
     public add(cacheableInterface: CacheableInterface){
 var cacheableInterface = cacheableInterface
-this.list.add(cacheableInterface)
+this.list.add(cacheableInterface);
+    
 }
 
 
@@ -124,7 +130,8 @@ var cacheableInterfaces = cacheableInterfaces
 
 
     public clear(){
-index= 0
+index= 0;
+    
 }
 
 

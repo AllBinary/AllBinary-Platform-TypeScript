@@ -18,13 +18,16 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { FileChannel } from "../../../../../java/nio/channels/FileChannel.js";
 
     
 import { FileLock } from "../../../../../java/nio/channels/FileLock.js";
 
     
-import { Vector } from "../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../java/util/Vector.js";
 
     
 import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
@@ -74,12 +77,14 @@ var isReturnOnFailure = isReturnOnFailure
     var fileLockVector: Vector = new Vector();
         
         
-
+;
+    
 
     var size: number = vector.length!;
         
         
-
+;
+    
 
 
 
@@ -91,23 +96,29 @@ var isReturnOnFailure = isReturnOnFailure
 index < size; index++)
         {
 
-    var file: AbFile = vector.get(index) as AbFile;
-        
-        
+    var file: AbFile = vector.get(index);
 
+                         as AbFile;
+        
+        
+;
+    
 
     var fileLock: FileLock = getLock(file)!;
         
         
-
+;
+    
 
                         if(fileLock != 
                                     null
                                 )
                         
                                     {
-                                    logUtil!.put("File Lock Obtained: " +file.getAbsolutePath(), this, "getAll")
-fileLockVector!.add(fileLock)
+                                    logUtil!.put("File Lock Obtained: " +file.getAbsolutePath(), this, "getAll");
+    
+fileLockVector!.add(fileLock);
+    
 
                                     }
                                 
@@ -115,7 +126,8 @@ fileLockVector!.add(fileLock)
                         if(isReturnOnFailure)
                         
                                     {
-                                    logUtil!.put("Total Locks Obtained: " +fileLockVector!.length, this, "getAll")
+                                    logUtil!.put("Total Locks Obtained: " +fileLockVector!.length, this, "getAll");
+    
 
 
 
@@ -127,7 +139,8 @@ fileLockVector!.add(fileLock)
                                 
 }
 
-logUtil!.put("Total Locks Obtained: " +fileLockVector!.length, this, "getAll")
+logUtil!.put("Total Locks Obtained: " +fileLockVector!.length, this, "getAll");
+    
 
 
 
@@ -146,6 +159,8 @@ var vector = vector
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return getAll(vector, false);
+
+                        ;
     
 }
 
@@ -158,7 +173,8 @@ var vector = vector
     var fileLockVector: Vector = getAll(vector, true)!;
         
         
-
+;
+    
 
                         if(vector.length != fileLockVector!.length)
                         
@@ -196,10 +212,15 @@ var file = file
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return getLock(AbFileOutputStream(file, true));
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put("Exception returns null", this, "getLock", e)
+logUtil!.put("Exception returns null", this, "getLock", e);
+    
 
 
 
@@ -225,16 +246,20 @@ var fileOutputStream = fileOutputStream
     var fileLock: FileLock = getLock(fileOutputStream!.getChannel())!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return fileLock;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put("Exception returns null", this, "getLock", e)
+logUtil!.put("Exception returns null", this, "getLock", e);
+    
 
 
 
@@ -244,8 +269,10 @@ logUtil!.put("Exception returns null", this, "getLock", e)
 }
 
          finally {
-            logUtil!.put("Finally - Closing FileOutputStream", this, "getLock")
-StreamUtil.getInstance()!.close(fileOutputStream)
+            logUtil!.put("Finally - Closing FileOutputStream", this, "getLock");
+    
+StreamUtil.getInstance()!.close(fileOutputStream);
+    
 
          }
         
@@ -262,16 +289,20 @@ var fileChannel = fileChannel
     var fileLock: FileLock = fileChannel!.tryLock()!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return fileLock;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put("Exception returns null", this, "getLock", e)
+logUtil!.put("Exception returns null", this, "getLock", e);
+    
 
 
 
@@ -281,8 +312,10 @@ logUtil!.put("Exception returns null", this, "getLock", e)
 }
 
          finally {
-            logUtil!.put("Finally - Closing FileChannel", this, "getLock")
-fileChannel!.close()
+            logUtil!.put("Finally - Closing FileChannel", this, "getLock");
+    
+fileChannel!.close();
+    
 
          }
         

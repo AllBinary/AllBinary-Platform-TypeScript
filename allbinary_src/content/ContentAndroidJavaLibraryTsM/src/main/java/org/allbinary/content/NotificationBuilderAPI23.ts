@@ -51,7 +51,8 @@ var pendingIntent = pendingIntent
                             setSmallIcon(integer.toInt())!.setTicker(message)!.setWhen(System.currentTimeMillis())!.setContentTitle(command.getLabel())!.setContentText(message)!.setContentIntent(pendingIntent)!.build()!;
         
         
-
+;
+    
 
 
 

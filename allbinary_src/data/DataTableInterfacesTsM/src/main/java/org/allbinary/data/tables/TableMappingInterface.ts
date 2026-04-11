@@ -18,10 +18,13 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { HashMap } from "../../../../java/util/HashMap.js";
 
     
-import { Vector } from "../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../java/util/Vector.js";
 
     
 
@@ -38,7 +41,7 @@ interface TableMappingInterface {
 
                 //@Throws(Error::class)
             
-    public toHashMap(): HashMap<Any, Any>
+    public toHashMap(): HashMap<any, any>
 
 }
                 

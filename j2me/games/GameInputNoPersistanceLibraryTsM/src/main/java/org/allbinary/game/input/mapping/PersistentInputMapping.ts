@@ -18,10 +18,13 @@
 
 
 
+            import Hashtable from "@ohos.util.HashMap";
+        
 import { Enumeration } from "../../../../../java/util/Enumeration.js";
 
     
-import { Hashtable } from "../../../../../java/util/Hashtable.js";
+
+//import { Hashtable } from "../../../../../java/util/Hashtable.js";
 
     
 import { GamePersistanceStrings } from "../../../../../org/allbinary/game/configuration/persistance/GamePersistanceStrings.js";
@@ -90,14 +93,16 @@ export class PersistentInputMapping
 protected constructor (){
 
             super();
-            inputPersistance= InputPersistance(GamePersistanceStrings.getInstance()!.SAVED_INPUT_CONFIGURATION_RECORD_ID)
+            inputPersistance= InputPersistance(GamePersistanceStrings.getInstance()!.SAVED_INPUT_CONFIGURATION_RECORD_ID);
+    
 }
 
 protected constructor (name: string){
 
             super();
             var name = name
-inputPersistance= InputPersistance(name)
+inputPersistance= InputPersistance(name);
+    
 }
 
 
@@ -107,6 +112,8 @@ inputPersistance= InputPersistance(name)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getInputMapping()!.getHashtable()!.size;
+
+                        ;
     
 }
 
@@ -135,9 +142,12 @@ inputPersistance= InputPersistance(name)
             
     public setDefault(abeClientInformation: AbeClientInformationInterface){
     //var abeClientInformation = abeClientInformation
-this.getInputMapping()!.removeAll()
-this.getInputMapping()!.add(this.getDefault())
-this.save(abeClientInformation)
+this.getInputMapping()!.removeAll();
+    
+this.getInputMapping()!.add(this.getDefault());
+    
+this.save(abeClientInformation);
+    
 }
 
 
@@ -145,8 +155,10 @@ this.save(abeClientInformation)
             
     public update(abeClientInformation: AbeClientInformationInterface){
     //var abeClientInformation = abeClientInformation
-this.inputPersistance!.deleteAll(abeClientInformation)
-this.save(abeClientInformation)
+this.inputPersistance!.deleteAll(abeClientInformation);
+    
+this.save(abeClientInformation);
+    
 }
 
 
@@ -158,15 +170,18 @@ this.save(abeClientInformation)
             
     public save(abeClientInformation: AbeClientInformationInterface){
     //var abeClientInformation = abeClientInformation
-inputPersistance!.save(abeClientInformation, this.getInputMapping()!.getHashtable())
-inputMappingEvent!.setInputToGameKeyMapping(this.getInputMapping())
+inputPersistance!.save(abeClientInformation, this.getInputMapping()!.getHashtable());
+    
+inputMappingEvent!.setInputToGameKeyMapping(this.getInputMapping());
+    
 
                         if(this.getInputMappingEventListenerInterface() != 
                                     null
                                 )
                         
                                     {
-                                    this.getInputMappingEventListenerInterface()!.onInputMappingEvent(inputMappingEvent)
+                                    this.getInputMappingEventListenerInterface()!.onInputMappingEvent(inputMappingEvent);
+    
 
                                     }
                                 
@@ -177,45 +192,60 @@ inputMappingEvent!.setInputToGameKeyMapping(this.getInputMapping())
             
     public init(abeClientInformation: AbeClientInformationInterface){
     //var abeClientInformation = abeClientInformation
-logUtil!.put(commonStrings!.START, this, commonStrings!.INIT)
+logUtil!.put(commonStrings!.START, this, commonStrings!.INIT);
+    
 
         try {
-            inputPersistance!.loadAll(abeClientInformation)
-} catch(e: Exception)
+            inputPersistance!.loadAll(abeClientInformation);
+    
+
+                //: 
+} catch(e) 
             {
-PreLogUtil.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e)
-inputPersistance!.deleteRecoreStore(abeClientInformation)
-this.setDefault(abeClientInformation)
-inputPersistance!.loadAll(abeClientInformation)
+PreLogUtil.putOE(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e);
+    
+inputPersistance!.deleteRecoreStore(abeClientInformation);
+    
+this.setDefault(abeClientInformation);
+    
+inputPersistance!.loadAll(abeClientInformation);
+    
 }
 
 
     var list: BasicArrayList = inputPersistance!.getList()!;
         
         
-
+;
+    
 
     var totalMappedTo: number = 0;
         
         
-
+;
+    
 
     var size: number = list.size()!;
         
         
+;
+    
 
+    var hashtable: Hashtable<any, any>
+;
+    
 
-    var hashtable: Hashtable<Any, Any>
-
-
-    var enumeration: Enumeration<Any?>
-
+    var enumeration: Enumeration<any?>
+;
+    
 
     var mappedToInput: Input
-
+;
+    
 
     var gameActionInput: Input
-
+;
+    
 
 
 
@@ -226,15 +256,25 @@ inputPersistance!.loadAll(abeClientInformation)
         
 index < size; index++)
         {
-hashtable= list.objectArray[index]! as Hashtable<Any, Any>
-enumeration= hashtable.keys()
+hashtable= list.objectArray[index]! as Hashtable<any, any>;
+    
+enumeration= hashtable.keys();
+    
 
         while(enumeration.hasMoreElements())
         {
-mappedToInput= enumeration.nextElement()! as Input
-gameActionInput= hashtable.get(mappedToInput as Object) as Input
-totalMappedTo++
-this.getInputMapping()!.add(gameActionInput, mappedToInput)
+mappedToInput= enumeration.nextElement()!;
+
+                         as Input;
+    
+gameActionInput= hashtable.get(mappedToInput as Object);
+
+                         as Input;
+    
+totalMappedTo++;
+    
+this.getInputMapping()!.add(gameActionInput, mappedToInput);
+    
 }
 
 }
@@ -243,18 +283,25 @@ this.getInputMapping()!.add(gameActionInput, mappedToInput)
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("End - Total Loaded Keys Mapped: ")
-stringBuffer!.appendint(this.getTotalMapped())
-stringBuffer!.append(" to: ")
-stringBuffer!.appendint(totalMappedTo)
-logUtil!.put(stringBuffer!.toString(), this, commonStrings!.INIT)
+;
+    
+stringBuffer!.append("End - Total Loaded Keys Mapped: ");
+    
+stringBuffer!.appendint(this.getTotalMapped());
+    
+stringBuffer!.append(" to: ");
+    
+stringBuffer!.appendint(totalMappedTo);
+    
+logUtil!.put(stringBuffer!.toString(), this, commonStrings!.INIT);
+    
 }
 
 
     public setInputMappingEventListenerInterface(inputMappingEventListenerInterface: InputMappingEventListenerInterface){
 var inputMappingEventListenerInterface = inputMappingEventListenerInterface
-this.inputMappingEventListenerInterface= inputMappingEventListenerInterface
+this.inputMappingEventListenerInterface= inputMappingEventListenerInterface;
+    
 }
 
 

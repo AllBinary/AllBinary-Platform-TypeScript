@@ -84,7 +84,8 @@ var name = name
     var fileName: string = DEFAULT_PROFILE_ACTIONS_PATH +name +".xml";
         
         
-
+;
+    
 
 
 
@@ -104,15 +105,18 @@ var name = name
 
     private actionsDefaultListModelHelper: DefaultListModelHelper
 
-    private hashMap: HashMap<Any, Any>
+    private hashMap: HashMap<any, any>
 public constructor (genericProfileActionsJPanel: GenericProfileActionsJPanel, name: string){
 
             super();
             var genericProfileActionsJPanel = genericProfileActionsJPanel
 var name = name
-this.setName(name)
-this.init(genericProfileActionsJPanel)
-this.load()
+this.setName(name);
+    
+this.init(genericProfileActionsJPanel);
+    
+this.load();
+    
 }
 
 public constructor (genericProfileActionsJPanel: GenericProfileActionsJPanel, abPath: AbPath, name: string){
@@ -121,9 +125,12 @@ public constructor (genericProfileActionsJPanel: GenericProfileActionsJPanel, ab
             var genericProfileActionsJPanel = genericProfileActionsJPanel
 var abPath = abPath
 var name = name
-this.setName(name)
-this.init(genericProfileActionsJPanel)
-this.load()
+this.setName(name);
+    
+this.init(genericProfileActionsJPanel);
+    
+this.load();
+    
 }
 
 public constructor (genericProfileActionsJPanel: GenericProfileActionsJPanel, fileInputStream: FileInputStream, name: string){
@@ -132,9 +139,12 @@ public constructor (genericProfileActionsJPanel: GenericProfileActionsJPanel, fi
             var genericProfileActionsJPanel = genericProfileActionsJPanel
 var fileInputStream = fileInputStream
 var name = name
-this.setName(name)
-this.init(genericProfileActionsJPanel)
-this.fileInit(fileInputStream)
+this.setName(name);
+    
+this.init(genericProfileActionsJPanel);
+    
+this.fileInit(fileInputStream);
+    
 }
 
 
@@ -142,9 +152,12 @@ this.fileInit(fileInputStream)
             
     init(genericProfileActionsJPanel: GenericProfileActionsJPanel){
 var genericProfileActionsJPanel = genericProfileActionsJPanel
-this.setGenericProfileActionsJPanel(genericProfileActionsJPanel)
-this.actionsDefaultListModelHelper= DefaultListModelHelper()
-this.setHashMap(HashMap<Any, Any>())
+this.setGenericProfileActionsJPanel(genericProfileActionsJPanel);
+    
+this.actionsDefaultListModelHelper= DefaultListModelHelper();
+    
+this.setHashMap(HashMap<any, any>());
+    
 }
 
 
@@ -155,13 +168,16 @@ this.setHashMap(HashMap<Any, Any>())
     var idFile: FileOutputStream = new FileOutputStream(DEFAULT_PROFILE_ACTIONS_PATH +getName() +".xml");
         
         
-
+;
+    
 
     var idOutData: DataOutputStream = new DataOutputStream(idFile);
         
         
-
-idOutData!.writeBytes(DomDocumentHelper.toString(this.toXmlDoc()))
+;
+    
+idOutData!.writeBytes(DomDocumentHelper.toString(this.toXmlDoc()));
+    
 }
 
 
@@ -172,7 +188,8 @@ idOutData!.writeBytes(DomDocumentHelper.toString(this.toXmlDoc()))
     var file: File = getFile(getName())!;
         
         
-
+;
+    
 
                         if(file.isFile())
                         
@@ -181,13 +198,16 @@ idOutData!.writeBytes(DomDocumentHelper.toString(this.toXmlDoc()))
     var idFile: FileInputStream = new FileInputStream(file);
         
         
-
-this.fileInit(idFile)
+;
+    
+this.fileInit(idFile);
+    
 
                                     }
                                 
                         else {
-                            logUtil!.put("No Profile: " +file.getAbsolutePath(), this, "Contructor")
+                            logUtil!.put("No Profile: " +file.getAbsolutePath(), this, "Contructor");
+    
 
                         }
                             
@@ -199,36 +219,43 @@ this.fileInit(idFile)
     fileInit(fileInputStream: FileInputStream){
 var fileInputStream = fileInputStream
 
-    var bytes: ByteArray = ByteArray(100000);
+    var bytes: number[] = new Array(100000);
         
         
-
+;
+    
 
     var length: number = fileInputStream!.read(bytes)!;
         
         
-
+;
+    
 
     var data: string = new bytes.decodeToString();
         
         
-
+;
+    
 
     var endIndex: number = data.lastIndexOf('>')!;
         
         
-
+;
+    
 
     var document: Document = DomDocumentHelper.create(data.substring(0, endIndex +1))!;
         
         
-
+;
+    
 
     var nameNodeList: NodeList = document.getElementsByTagName(GenericProfileActionsData.NAME)!;
         
         
-
-logUtil!.put("Number Of Profiles Specified: " +nameNodeList!.getLength(), this, "Contructor")
+;
+    
+logUtil!.put("Number Of Profiles Specified: " +nameNodeList!.getLength(), this, "Contructor");
+    
 
 
 
@@ -243,19 +270,22 @@ index < nameNodeList!.getLength(); index++)
     var node: Node = nameNodeList!.item(index)!;
         
         
-
+;
+    
 
     var nodeList: NodeList = node.getChildNodes()!;
         
         
-
+;
+    
 
                         if(nodeList != 
                                     null
                                 )
                         
                                     {
-                                    this.initActions(nodeList)
+                                    this.initActions(nodeList);
+    
 
                                     }
                                 
@@ -269,8 +299,10 @@ index < nameNodeList!.getLength(); index++)
                             
 }
 
-logUtil!.put("Loaded: " +this.getHashMap()!.size +" Configuration Profile Action(s)", this, "Contructor")
-this.getDefaultListModelHelper()!.initDefaultModelList()
+logUtil!.put("Loaded: " +this.getHashMap()!.size +" Configuration Profile Action(s)", this, "Contructor");
+    
+this.getDefaultListModelHelper()!.initDefaultModelList();
+    
 }
 
 
@@ -292,7 +324,8 @@ index < nodeList!.getLength(); index++)
     var actionNode: Node = nodeList!.item(index)!;
         
         
-
+;
+    
 
                         if(actionNode != 
                                     null
@@ -303,9 +336,12 @@ index < nodeList!.getLength(); index++)
     var genericConfigurationProfileAction: GenericProfileAction = new GenericProfileAction(this.getGenericProfileActionsJPanel()!.getGenericProfileActionJPanel(), actionNode);
         
         
-
-this.getHashMap()!.put(genericConfigurationProfileAction!.getName(), genericConfigurationProfileAction)
-this.getDefaultListModelHelper()!.add(genericConfigurationProfileAction!.getName())
+;
+    
+this.getHashMap()!.put(genericConfigurationProfileAction!.getName(), genericConfigurationProfileAction);
+    
+this.getDefaultListModelHelper()!.add(genericConfigurationProfileAction!.getName());
+    
 
                                     }
                                 
@@ -338,7 +374,9 @@ var string = string
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getHashMap()!.get(string as Object) as GenericProfileAction;
+                        return this.getHashMap()!.get(string as Object);
+
+                         as GenericProfileAction;
     
 }
 
@@ -351,11 +389,16 @@ var name = name
     var genericProfileAction: GenericProfileAction = new GenericProfileAction(name);
         
         
-
-this.getHashMap()!.put(genericProfileAction!.getName(), genericProfileAction)
-this.getDefaultListModelHelper()!.add(genericProfileAction!.getName())
-this.getDefaultListModelHelper()!.initDefaultModelList()
-this.save()
+;
+    
+this.getHashMap()!.put(genericProfileAction!.getName(), genericProfileAction);
+    
+this.getDefaultListModelHelper()!.add(genericProfileAction!.getName());
+    
+this.getDefaultListModelHelper()!.initDefaultModelList();
+    
+this.save();
+    
 }
 
 
@@ -363,20 +406,26 @@ this.save()
             
     public remove(name: string){
 var name = name
-this.getHashMap()!.remove(name)
-this.getDefaultListModelHelper()!.remove(name)
-this.getDefaultListModelHelper()!.initDefaultModelList()
-this.save()
+this.getHashMap()!.remove(name);
+    
+this.getDefaultListModelHelper()!.remove(name);
+    
+this.getDefaultListModelHelper()!.initDefaultModelList();
+    
+this.save();
+    
 }
 
 
-    public toHashMap(): HashMap<Any, Any>{
+    public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
         
         
-
-logUtil!.put("HashMap: " +hashMap!.toString(), this, "toHashMap()")
+;
+    
+logUtil!.put("HashMap: " +hashMap!.toString(), this, "toHashMap()");
+    
 
 
 
@@ -394,23 +443,27 @@ var document = document
     var node: Node = document.createElement(GenericProfileActionsData.NAME)!;
         
         
-
+;
+    
 
     var set: Set = this.getHashMap()!.keys!;
         
         
+;
+    
 
-
-    var actionNameArray: any = {}[] = set.toArray()!;
+    var actionNameArray: any[] = set.toArray()!;
         
         
-
+;
+    
 
     var size: number = actionNameArray!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -425,13 +478,18 @@ index < size; index++)
     var nextActionName: string = actionNameArray[index]! as String;
         
         
+;
+    
 
+    var nextGenericProfileAction: GenericProfileAction = this.getAction(nextActionName);
 
-    var nextGenericProfileAction: GenericProfileAction = this.getAction(nextActionName) as GenericProfileAction;
+                         as GenericProfileAction;
         
         
-
-node.appendChild(nextGenericProfileAction!.toXmlNode(document))
+;
+    
+node.appendChild(nextGenericProfileAction!.toXmlNode(document));
+    
 }
 
 
@@ -450,13 +508,16 @@ node.appendChild(nextGenericProfileAction!.toXmlNode(document))
     var document: Document = DomDocumentHelper.create()!;
         
         
-
+;
+    
 
     var node: Node = this.toXmlNode(document)!;
         
         
-
-document.appendChild(node)
+;
+    
+document.appendChild(node);
+    
 
 
 
@@ -478,11 +539,12 @@ document.appendChild(node)
 
     public setGenericProfileActionsJPanel(genericProfileActionsJPanel: GenericProfileActionsJPanel){
 var genericProfileActionsJPanel = genericProfileActionsJPanel
-this.genericProfileActionsJPanel= genericProfileActionsJPanel
+this.genericProfileActionsJPanel= genericProfileActionsJPanel;
+    
 }
 
 
-    public getHashMap(): HashMap<Any, Any>{
+    public getHashMap(): HashMap<any, any>{
 
 
 
@@ -492,9 +554,10 @@ this.genericProfileActionsJPanel= genericProfileActionsJPanel
 }
 
 
-    public setHashMap(hashMap: HashMap<Any, Any>){
+    public setHashMap(hashMap: HashMap<any, any>){
 var hashMap = hashMap
-this.hashMap= hashMap
+this.hashMap= hashMap;
+    
 }
 
 
@@ -510,7 +573,8 @@ this.hashMap= hashMap
 
     public setName(name: string){
 var name = name
-this.name= name
+this.name= name;
+    
 }
 
 

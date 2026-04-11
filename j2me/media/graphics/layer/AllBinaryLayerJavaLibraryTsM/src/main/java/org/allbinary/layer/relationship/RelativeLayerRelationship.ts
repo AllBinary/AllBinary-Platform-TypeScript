@@ -69,7 +69,8 @@ var typesAllowedList = typesAllowedList
 
                             //For kotlin this is before the body of the constructor.
                     
-this.layer= layer
+this.layer= layer;
+    
 }
 
 

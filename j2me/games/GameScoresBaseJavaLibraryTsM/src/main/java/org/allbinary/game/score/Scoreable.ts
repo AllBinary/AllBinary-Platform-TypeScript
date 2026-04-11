@@ -37,25 +37,29 @@ public constructor (points: number){
 
             super();
             var points = points
-this.points= points
+this.points= points;
+    
 }
 
 
     public addPoints(points: number){
 var points = points
-this.points += points
+this.points += points;
+    
 }
 
 
     public removePoints(points: number){
 var points = points
-this.points -= points
+this.points -= points;
+    
 }
 
 
     setPoints(points: number){
 var points = points
-this.points= points
+this.points= points;
+    
 }
 
 

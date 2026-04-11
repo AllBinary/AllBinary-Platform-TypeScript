@@ -80,8 +80,10 @@ var name = name
     var inputFactory: InputFactory = InputFactory.getInstance()!;
         
         
-
-inputFactory!.add(this.getId(), this)
+;
+    
+inputFactory!.add(this.getId(), this);
+    
 }
 
 
@@ -93,16 +95,22 @@ var inputToGameKeyMapping = inputToGameKeyMapping
     var gameKey: GameKey = inputToGameKeyMapping!.getInstance(this.getId())!;
         
         
+;
+    
+this.gameKeyEvent= this.gameKeyEventFactory!.getInstance(this, gameKey);
+    
 
-this.gameKeyEvent= this.gameKeyEventFactory!.getInstance(this, gameKey)
-} catch(e: Exception)
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.UPDATE, e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.UPDATE, e);
+    
 }
 
 }

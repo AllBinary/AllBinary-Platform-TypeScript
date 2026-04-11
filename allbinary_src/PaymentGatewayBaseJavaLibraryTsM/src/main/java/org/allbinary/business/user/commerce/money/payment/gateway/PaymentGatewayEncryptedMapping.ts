@@ -18,10 +18,13 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { HashMap } from "../../../../../../../../java/util/HashMap.js";
 
     
-import { Vector } from "../../../../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../../../../java/util/Vector.js";
 
     
 import { TableMappingInterface } from "../../../../../../../../org/allbinary/data/tables/TableMappingInterface.js";
@@ -39,18 +42,21 @@ public constructor (paymentGatewayInterface: PaymentGatewayInterface){
 
             super();
             var paymentGatewayInterface = paymentGatewayInterface
-this.paymentGatewayInterface= paymentGatewayInterface
+this.paymentGatewayInterface= paymentGatewayInterface;
+    
 }
 
 
                 //@Throws(Error::class)
             
-    public toHashMap(): HashMap<Any, Any>{
+    public toHashMap(): HashMap<any, any>{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.paymentGatewayInterface!.toHashMap(true);
+
+                        ;
     
 }
 
@@ -61,6 +67,8 @@ this.paymentGatewayInterface= paymentGatewayInterface
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.paymentGatewayInterface!.toVector(true);
+
+                        ;
     
 }
 
@@ -72,7 +80,9 @@ this.paymentGatewayInterface= paymentGatewayInterface
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.paymentGatewayInterface!.getKey() as Object;
+                        return this.paymentGatewayInterface!.getKey();
+
+                         as Object;
     
 }
 

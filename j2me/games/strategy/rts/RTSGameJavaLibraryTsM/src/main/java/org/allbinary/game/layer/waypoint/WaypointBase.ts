@@ -78,7 +78,8 @@ public constructor (sound: Sound){
 
             super();
                 //var sound = sound
-this.sound= sound
+this.sound= sound;
+    
 }
 
 
@@ -96,7 +97,8 @@ this.sound= sound
             
     public setAllBinaryGameLayerManager(allBinaryGameLayerManager: AllBinaryGameLayerManager){
     //var allBinaryGameLayerManager = allBinaryGameLayerManager
-this.allBinaryGameLayerManagerP= allBinaryGameLayerManager
+this.allBinaryGameLayerManagerP= allBinaryGameLayerManager;
+    
 }
 
 
@@ -112,7 +114,8 @@ this.allBinaryGameLayerManagerP= allBinaryGameLayerManager
 
     public onEvent(eventObject: AllBinaryEventObject){
     //var eventObject = eventObject
-ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
+ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
+    
 }
 
 

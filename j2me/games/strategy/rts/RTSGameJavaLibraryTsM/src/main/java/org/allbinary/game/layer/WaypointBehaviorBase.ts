@@ -58,7 +58,8 @@ export class WaypointBehaviorBase
 public constructor (){
 
             super();
-            this.ownedWaypointList= BasicArrayList(1)
+            this.ownedWaypointList= BasicArrayList(1);
+    
 }
 
 
@@ -67,7 +68,9 @@ public constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this::class.toString()!;
+                        return this.constructor.name.toString()!;
+
+                        ;
     
 }
 
@@ -111,7 +114,8 @@ public constructor (){
 
     public setWaypoint(waypoint: WaypointBase){
     //var waypoint = waypoint
-this.waypoint= waypoint
+this.waypoint= waypoint;
+    
 }
 
 

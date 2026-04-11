@@ -85,6 +85,8 @@ private constructor (){
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.createImage(originalImage);
+
+                        ;
     
 }
 
@@ -97,12 +99,14 @@ private constructor (){
     var image: Image = imageCreationUtil!.getInstance(originalImage!.getWidth(), originalImage!.getHeight())!;
         
         
-
+;
+    
 
                         if(image.isMutable())
                         
                                     {
-                                    image.getGraphics()!.drawImage(originalImage, 0, 0, anchor)
+                                    image.getGraphics()!.drawImage(originalImage, 0, 0, anchor);
+    
 
 
 
@@ -133,12 +137,14 @@ private constructor (){
     var newWidth: number = (originalImage!.getWidth() *canvasScale).toInt();
         
         
-
+;
+    
 
     var newHeight: number = (originalImage!.getHeight() *canvasScale).toInt();
         
         
-
+;
+    
 
                         if(resize)
                         
@@ -147,7 +153,8 @@ private constructor (){
                         if(newWidth < newHeight)
                         
                                     {
-                                    newWidth= newHeight
+                                    newWidth= newHeight;
+    
 
                                     }
                                 
@@ -155,7 +162,8 @@ private constructor (){
                         if(newHeight < newWidth)
                         
                                     {
-                                    newHeight= newWidth
+                                    newHeight= newWidth;
+    
 
                                     }
                                 
@@ -166,7 +174,8 @@ private constructor (){
     var image: Image = imageCreationUtil!.getInstance(newWidth, newHeight)!;
         
         
-
+;
+    
 
                         if(image.isMutable())
                         
@@ -175,18 +184,22 @@ private constructor (){
     var halfWidthDelta: number = (newWidth -originalImage!.getWidth()) /2;
         
         
-
+;
+    
 
     var halfHeightDelta: number = (newHeight -originalImage!.getHeight()) /2;
         
         
-
+;
+    
 
     var graphics: Graphics = image.getGraphics()!;
         
         
-
-graphics.drawImage(originalImage, halfWidthDelta, halfHeightDelta, anchor)
+;
+    
+graphics.drawImage(originalImage, halfWidthDelta, halfHeightDelta, anchor);
+    
 
 
 

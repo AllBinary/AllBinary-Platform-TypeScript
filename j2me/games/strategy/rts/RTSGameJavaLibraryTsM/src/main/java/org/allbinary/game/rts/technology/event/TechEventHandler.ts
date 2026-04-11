@@ -58,8 +58,10 @@ var eventListenerInterface = eventListenerInterface
     var techEventListenerInterface: TechEventListenerInterface = (eventListenerInterface as TechEventListenerInterface);
         
         
-
-techEventListenerInterface!.onTechEvent(eventObject)
+;
+    
+techEventListenerInterface!.onTechEvent(eventObject);
+    
 }
 
 

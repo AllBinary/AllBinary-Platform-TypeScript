@@ -30,7 +30,7 @@ export class GeographicMapCellType
          {
         
 
-    public static readonly NULL_GEOGRAPHIC_MAP_CELL_TYPE_ARRAY: GeographicMapCellType[] = new Array(0);
+    public static readonly NULL_GEOGRAPHIC_MAP_CELL_TYPE_ARRAY: GeographicMapCellType[] = [];
         
         
 
@@ -60,7 +60,8 @@ public constructor (type: number, reset: number){
             super();
                 //var type = type
     //var reset = reset
-this.type= type
+this.type= type;
+    
 
                         if(type != Integer.MIN_VALUE)
                         
@@ -69,19 +70,22 @@ this.type= type
     var geographicMapCellTypeFactory: GeographicMapCellTypeFactory = GeographicMapCellTypeFactory.getInstance()!;
         
         
-
+;
+    
 
     var geographicMapCellTypeArray: GeographicMapCellType[] = geographicMapCellTypeFactory!.getGeographicMapCellTypeArray()!;
         
         
-
+;
+    
 
                         if(geographicMapCellTypeArray[type] == 
                                     null
                                  || reset == 1)
                         
                                     {
-                                    geographicMapCellTypeArray[type]= this
+                                    geographicMapCellTypeArray[type]= this;
+    
 
                                     }
                                 
@@ -122,6 +126,8 @@ this.type= type
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return SmallIntegerSingletonFactory.getInstance()!.getInstance(this.type)!.toString();
+
+                        ;
     
 }
 

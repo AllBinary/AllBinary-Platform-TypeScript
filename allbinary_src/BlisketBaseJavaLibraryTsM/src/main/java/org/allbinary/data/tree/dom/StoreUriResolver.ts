@@ -79,8 +79,10 @@ public constructor (parentTransformInfoInterface: TransformInfoInterface, basicU
             super();
             var parentTransformInfoInterface = parentTransformInfoInterface
 var basicURIResolver = basicURIResolver
-this.parentTransformInfoInterface= parentTransformInfoInterface
-this.basicURIResolver= basicURIResolver
+this.parentTransformInfoInterface= parentTransformInfoInterface;
+    
+this.basicURIResolver= basicURIResolver;
+    
 }
 
 
@@ -95,17 +97,20 @@ var base = base
     var transformInfoHttpStoreInterface: TransformInfoHttpStoreInterface = parentTransformInfoInterface as TransformInfoHttpStoreInterface;
         
         
-
+;
+    
 
     var fileAbPath: AbPath = AbFilePath(URLGLOBALS.getMainPath() +FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH +transformInfoHttpStoreInterface!.getStoreName() +AbPathData.getInstance()!.SEPARATOR +href) as AbPath;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.XMLLOGGING))
                         
                                     {
-                                    logUtil!.put("attempt to use xsl:import: href=" +href +"\nBase= " +base +"\nNew path= " +fileAbPath!.toString() +"\nNote: " +FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH +" is a urlglobal" +"\nRequired Extension: " +this.basicURIResolver!.getExtension(), this, "resolve")
+                                    logUtil!.put("attempt to use xsl:import: href=" +href +"\nBase= " +base +"\nNew path= " +fileAbPath!.toString() +"\nNote: " +FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH +" is a urlglobal" +"\nRequired Extension: " +this.basicURIResolver!.getExtension(), this, "resolve");
+    
 
                                     }
                                 
@@ -116,14 +121,18 @@ var base = base
                         return StreamSource(CryptFileReader(TransformInfoTemplateData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoTemplateData.getInstance()!.ENCRYPTED_EXTENSION).
                             getInputStream(fileAbPath));
     
-} catch(e: TransformerException)
+
+                //: 
+} catch(e) 
             {
 
 
 
                             throw e
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
 
 
@@ -143,7 +152,9 @@ var base = base
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return URLGLOBALS.getMainPath() +FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH +"{Store Name if Any}/{import url}";
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
 

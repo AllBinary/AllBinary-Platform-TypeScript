@@ -43,7 +43,8 @@ var boundsVisitorInterface = boundsVisitorInterface
                         if(boundsVisitorInterface!.getX() > this.rectangle.getMaxX())
                         
                                     {
-                                    boundsVisitorInterface!.maxX()
+                                    boundsVisitorInterface!.maxX();
+    
 
                                     }
                                 
@@ -51,7 +52,8 @@ var boundsVisitorInterface = boundsVisitorInterface
                         if(boundsVisitorInterface!.getY() > this.rectangle.getMaxY())
                         
                                     {
-                                    boundsVisitorInterface!.maxY()
+                                    boundsVisitorInterface!.maxY();
+    
 
                                     }
                                 
@@ -59,7 +61,8 @@ var boundsVisitorInterface = boundsVisitorInterface
                         if(boundsVisitorInterface!.getX() < this.rectangle.getPoint()!.getX())
                         
                                     {
-                                    boundsVisitorInterface!.minX()
+                                    boundsVisitorInterface!.minX();
+    
 
                                     }
                                 
@@ -67,7 +70,8 @@ var boundsVisitorInterface = boundsVisitorInterface
                         if(boundsVisitorInterface!.getY() < this.rectangle.getPoint()!.getY())
                         
                                     {
-                                    boundsVisitorInterface!.minY()
+                                    boundsVisitorInterface!.minY();
+    
 
                                     }
                                 

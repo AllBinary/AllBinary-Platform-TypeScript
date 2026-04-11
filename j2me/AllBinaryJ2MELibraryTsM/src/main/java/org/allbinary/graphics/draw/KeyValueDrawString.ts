@@ -49,18 +49,24 @@ public constructor (label: string, x: number){
             super();
             var label = label
 var x = x
-this.LABEL= label
-this.labelWidth= MyFont.getInstance()!.stringWidth(LABEL) -LABEL.length
-this.labelX= x
-this.valueX= this.labelWidth +x
+this.LABEL= label;
+    
+this.labelWidth= MyFont.getInstance()!.stringWidth(LABEL) -LABEL.length;
+    
+this.labelX= x;
+    
+this.valueX= this.labelWidth +x;
+    
 }
 
 
     public paint(graphics: Graphics, y: number){
     //var graphics = graphics
     //var y = y
-graphics.drawString(this.LABEL, this.labelX, y, 0)
-graphics.drawString(this.value, this.valueX, y, 0)
+graphics.drawString(this.LABEL, this.labelX, y, 0);
+    
+graphics.drawString(this.value, this.valueX, y, 0);
+    
 }
 
 

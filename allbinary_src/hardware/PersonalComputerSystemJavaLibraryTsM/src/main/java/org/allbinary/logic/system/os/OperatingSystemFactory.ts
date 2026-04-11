@@ -100,33 +100,40 @@ private constructor (){
     var operatingSystems: OperatingSystems = OperatingSystems.getInstance()!;
         
         
-
+;
+    
 
     var systemProperties: SystemProperties = SystemProperties.getInstance()!;
         
         
-
+;
+    
 
     var osName: string = systemProperties!.getName()!;
         
         
-
+;
+    
 
     var osArch: string = systemProperties!.getArch()!;
         
         
-
+;
+    
 
     var osVersion: string = systemProperties!.getVersion()!;
         
         
-
+;
+    
 
                         if(!this.hasDetected)
                         
                                     {
-                                    logUtil!.put("osName: " +osName, this, commonStrings!.GET_INSTANCE)
-this.hasDetected= true
+                                    logUtil!.put("osName: " +osName, this, commonStrings!.GET_INSTANCE);
+    
+this.hasDetected= true;
+    
 
                         if(osName!.indexOf(operatingSystems!.LINUX) >= 0)
                         
@@ -135,11 +142,13 @@ this.hasDetected= true
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.FACTORYERROR))
                         
                                     {
-                                    logUtil!.put("Found a Linux OS", this, commonStrings!.GET_INSTANCE)
+                                    logUtil!.put("Found a Linux OS", this, commonStrings!.GET_INSTANCE);
+    
 
                                     }
                                 
-this.genericOperatingSystem= LinuxOperatingSystemFactory.getInstance()!.getOperatingSystemInstance()
+this.genericOperatingSystem= LinuxOperatingSystemFactory.getInstance()!.getOperatingSystemInstance();
+    
 
                                     }
                                 
@@ -151,11 +160,13 @@ this.genericOperatingSystem= LinuxOperatingSystemFactory.getInstance()!.getOpera
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.FACTORYERROR))
                         
                                     {
-                                    logUtil!.put("Found a Windows OS", this, commonStrings!.GET_INSTANCE)
+                                    logUtil!.put("Found a Windows OS", this, commonStrings!.GET_INSTANCE);
+    
 
                                     }
                                 
-this.genericOperatingSystem= WindowsOperatingSystemFactory.getInstance()!.getOperatingSystemInstance()
+this.genericOperatingSystem= WindowsOperatingSystemFactory.getInstance()!.getOperatingSystemInstance();
+    
 
                                     }
                                 
@@ -167,11 +178,13 @@ this.genericOperatingSystem= WindowsOperatingSystemFactory.getInstance()!.getOpe
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.FACTORYERROR))
                         
                                     {
-                                    logUtil!.put("Found a Solaris OS", this, commonStrings!.GET_INSTANCE)
+                                    logUtil!.put("Found a Solaris OS", this, commonStrings!.GET_INSTANCE);
+    
 
                                     }
                                 
-this.genericOperatingSystem= SolarisOperatingSystemFactory.getInstance()!.getOperatingSystemInstance()
+this.genericOperatingSystem= SolarisOperatingSystemFactory.getInstance()!.getOperatingSystemInstance();
+    
 
                                     }
                                 
@@ -189,9 +202,12 @@ this.genericOperatingSystem= SolarisOperatingSystemFactory.getInstance()!.getOpe
                             append("OperatingSystem Info: ")!.append(StringUtil.getInstance()!.toString(this.genericOperatingSystem))!.toString(), this, commonStrings!.GET_INSTANCE)!;
         
         
-
-System.out.println(log.toString())
-logUtil!.put(log)
+;
+    
+System.out.println(log.toString());
+    
+logUtil!.put(log);
+    
 
                                     }
                                 
@@ -201,13 +217,16 @@ logUtil!.put(log)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.genericOperatingSystem;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.FACTORYERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e);
+    
 
                                     }
                                 

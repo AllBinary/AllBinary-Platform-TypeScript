@@ -76,19 +76,25 @@ var foregroundBasicColor = foregroundBasicColor
                         if(SINGLETON == CommandForm.NULL_COMMAND_FORM)
                         
                                     {
-                                    initInterface!.init()
-SINGLETON= InGameOptionsForm(commandListener, title, backgrounBasicColor, foregroundBasicColor)
+                                    initInterface!.init();
+    
+SINGLETON= InGameOptionsForm(commandListener, title, backgrounBasicColor, foregroundBasicColor);
+    
 
                                     }
                                 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e);
+    
 }
 
 }

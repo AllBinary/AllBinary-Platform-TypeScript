@@ -39,14 +39,16 @@ var y = y
     var point: Point = pointArray[x]![y]!;
         
         
-
+;
+    
 
                         if(point == 
                                     null
                                 )
                         
                                     {
-                                    point= pointArray[x]![y]= Point(x, y)
+                                    point= pointArray[x]![y]= Point(x, y);
+    
 
                                     }
                                 

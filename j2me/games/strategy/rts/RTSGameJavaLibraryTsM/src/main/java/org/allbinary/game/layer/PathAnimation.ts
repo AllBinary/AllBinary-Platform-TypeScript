@@ -74,8 +74,10 @@ public constructor (pathFindingLayer: PathFindingLayerInterface, linePathAnimati
             super();
                 //var pathFindingLayer = pathFindingLayer
     //var linePathAnimation = linePathAnimation
-this.pathFindingLayer= pathFindingLayer
-this.linePathAnimation= linePathAnimation
+this.pathFindingLayer= pathFindingLayer;
+    
+this.linePathAnimation= linePathAnimation;
+    
 }
 
 
@@ -83,7 +85,8 @@ this.linePathAnimation= linePathAnimation
             
     public setAllBinaryGameLayerManager(allBinaryGameLayerManager: AllBinaryGameLayerManager){
     //var allBinaryGameLayerManager = allBinaryGameLayerManager
-this.allBinaryGameLayerManagerP= allBinaryGameLayerManager
+this.allBinaryGameLayerManagerP= allBinaryGameLayerManager;
+    
 }
 
 
@@ -115,7 +118,8 @@ this.allBinaryGameLayerManagerP= allBinaryGameLayerManager
     var waypointBehaviorBase: WaypointBehaviorBase = this.pathFindingLayer!.getWaypointBehavior()!;
         
         
-
+;
+    
 
                         if(waypointBehaviorBase != 
                                     null
@@ -126,17 +130,20 @@ this.allBinaryGameLayerManagerP= allBinaryGameLayerManager
     var geographicMapCellHistory: GeographicMapCellHistory = waypointBehaviorBase!.getCurrentGeographicMapCellHistory()!;
         
         
-
+;
+    
 
     var list: BasicArrayList = geographicMapCellHistory!.getTracked()!;
         
         
-
+;
+    
 
     var size: number = list.size()!;
         
         
-
+;
+    
 
                         if(size > 0)
                         
@@ -145,33 +152,40 @@ this.allBinaryGameLayerManagerP= allBinaryGameLayerManager
     var geographicMapCompositeInterface: GeographicMapCompositeInterface = this.allBinaryGameLayerManagerP as GeographicMapCompositeInterface;
         
         
-
+;
+    
 
     var geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;
         
         
-
+;
+    
 
     var tiledLayer: AllBinaryTiledLayer = geographicMapInterface!.getAllBinaryTiledLayer()!;
         
         
-
+;
+    
 
     var geographicMapCellPosition: GeographicMapCellPosition = SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION;
         
         
-
+;
+    
 
     var nextPoint: GPoint
-
+;
+    
 
     var point: GPoint
-
+;
+    
 
     var start: number = size -2;
         
         
-
+;
+    
 
 
 
@@ -186,8 +200,10 @@ index < size -1; index++)
                         if(index == start)
                         
                                     {
-                                    this.setBasicColorP(this.startColor)
-this.basicSetColorUtil!.setBasicColorP(graphics, this.getBasicColorP(), this.getColor())
+                                    this.setBasicColorP(this.startColor);
+    
+this.basicSetColorUtil!.setBasicColorP(graphics, this.getBasicColorP(), this.getColor());
+    
 
                                     }
                                 
@@ -195,22 +211,35 @@ this.basicSetColorUtil!.setBasicColorP(graphics, this.getBasicColorP(), this.get
                         if(geographicMapCellHistory!.isVisited(geographicMapCellPosition))
                         
                                     {
-                                    this.setBasicColorP(this.endColor)
-this.basicSetColorUtil!.setBasicColorP(graphics, this.getBasicColorP(), this.getColor())
+                                    this.setBasicColorP(this.endColor);
+    
+this.basicSetColorUtil!.setBasicColorP(graphics, this.getBasicColorP(), this.getColor());
+    
 
                                     }
                                 
                         else {
-                            this.setBasicColorP(this.middleColor)
-this.basicSetColorUtil!.setBasicColorP(graphics, this.getBasicColorP(), this.getColor())
+                            this.setBasicColorP(this.middleColor);
+    
+this.basicSetColorUtil!.setBasicColorP(graphics, this.getBasicColorP(), this.getColor());
+    
 
                         }
                             
-geographicMapCellPosition= list.get(index) as GeographicMapCellPosition
-point= geographicMapCellPosition!.getMidPoint()
-geographicMapCellPosition= list.get(index +1) as GeographicMapCellPosition
-nextPoint= geographicMapCellPosition!.getMidPoint()
-this.linePathAnimation!.paint(graphics, point, nextPoint, tiledLayer)
+geographicMapCellPosition= list.get(index);
+
+                         as GeographicMapCellPosition;
+    
+point= geographicMapCellPosition!.getMidPoint();
+    
+geographicMapCellPosition= list.get(index +1);
+
+                         as GeographicMapCellPosition;
+    
+nextPoint= geographicMapCellPosition!.getMidPoint();
+    
+this.linePathAnimation!.paint(graphics, point, nextPoint, tiledLayer);
+    
 }
 
 
@@ -219,9 +248,12 @@ this.linePathAnimation!.paint(graphics, point, nextPoint, tiledLayer)
 
                                     }
                                 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put("Cleared Target", this, "paint")
+logUtil!.put("Cleared Target", this, "paint");
+    
 }
 
 }

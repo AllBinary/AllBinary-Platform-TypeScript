@@ -85,10 +85,14 @@ public constructor (gameCanvas: AllBinaryGameCanvas){
     var myCanvas: MyCanvas = (this.gameCanvas as MyCanvas);
         
         
-
-myCanvas!.draw(this.offScreenImage[this.circularIndexUtil!.getIndex()]!.getGraphics())
-this.circularIndexUtil!.next()
-this.drawCircularIndexUtil!.next()
+;
+    
+myCanvas!.draw(this.offScreenImage[this.circularIndexUtil!.getIndex()]!.getGraphics());
+    
+this.circularIndexUtil!.next();
+    
+this.drawCircularIndexUtil!.next();
+    
 }
 
 
@@ -98,8 +102,10 @@ this.drawCircularIndexUtil!.next()
 
     public paint(graphics: Graphics){
 var graphics = graphics
-this.previousImage= this.offScreenImage[this.drawCircularIndexUtil!.getIndex()]!
-graphics.drawImage(this.previousImage, 0, 0, anchor)
+this.previousImage= this.offScreenImage[this.drawCircularIndexUtil!.getIndex()]!;
+    
+graphics.drawImage(this.previousImage, 0, 0, anchor);
+    
 }
 
 

@@ -38,10 +38,12 @@ public constructor (key: any = {}){
 
             super();
             var key = key
-this.key= key
+this.key= key;
+    
 this.color= Color(key = keykey as Integer
 key.
-                    toInt())
+                    toInt());
+    
 }
 
 
@@ -67,7 +69,8 @@ key.
 
     public setColor(color: Color){
 var color = color
-this.color= color
+this.color= color;
+    
 }
 
 

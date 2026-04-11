@@ -59,8 +59,10 @@ private constructor (){
     var inputMappingEventListenerInterface: InputMappingEventListenerInterface = eventListenerInterface as InputMappingEventListenerInterface;
         
         
-
-inputMappingEventListenerInterface!.onInputMappingEvent(eventObject as InputMappingEvent)
+;
+    
+inputMappingEventListenerInterface!.onInputMappingEvent(eventObject as InputMappingEvent);
+    
 }
 
 

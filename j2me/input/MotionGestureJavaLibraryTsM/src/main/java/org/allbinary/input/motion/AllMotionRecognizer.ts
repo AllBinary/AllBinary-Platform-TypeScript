@@ -61,9 +61,12 @@ export class AllMotionRecognizer extends MotionRecognizer {
 public constructor (){
 
             super();
-            this.id= index++
-this.motionGestureRecognizer= MotionGestureRecognizer(id)
-this.touchButtonRecognizer= TouchButtonRecognizer()
+            this.id= index++;
+    
+this.motionGestureRecognizer= MotionGestureRecognizer(id);
+    
+this.touchButtonRecognizer= TouchButtonRecognizer();
+    
 }
 
 
@@ -78,7 +81,8 @@ this.touchButtonRecognizer= TouchButtonRecognizer()
                         if(this.touchButtonRecognizer!.pressTouchButtonInput(x, y, deviceId))
                         
                                     {
-                                    touchButtonProcessing= true
+                                    touchButtonProcessing= true;
+    
 
                                     }
                                 
@@ -87,13 +91,19 @@ this.touchButtonRecognizer= TouchButtonRecognizer()
                         
                                     {
                                     
-    var point: CustomGPoint = pointCircularPool!.getNextInstance() as CustomGPoint;
-        
-        
+    var point: CustomGPoint = pointCircularPool!.getNextInstance();
 
-point.setX(x)
-point.setY(y)
-this.motionGestureRecognizer!.processPressedMotionEvent(point, deviceId, modifiers)
+                         as CustomGPoint;
+        
+        
+;
+    
+point.setX(x);
+    
+point.setY(y);
+    
+this.motionGestureRecognizer!.processPressedMotionEvent(point, deviceId, modifiers);
+    
 
                                     }
                                 
@@ -119,13 +129,19 @@ this.motionGestureRecognizer!.processPressedMotionEvent(point, deviceId, modifie
                         
                                     {
                                     
-    var point: CustomGPoint = pointCircularPool!.getNextInstance() as CustomGPoint;
-        
-        
+    var point: CustomGPoint = pointCircularPool!.getNextInstance();
 
-point.setX(x)
-point.setY(y)
-this.motionGestureRecognizer!.processReleasedMotionEvent(point, deviceId, modifiers)
+                         as CustomGPoint;
+        
+        
+;
+    
+point.setX(x);
+    
+point.setY(y);
+    
+this.motionGestureRecognizer!.processReleasedMotionEvent(point, deviceId, modifiers);
+    
 
                                     }
                                 
@@ -133,7 +149,8 @@ this.motionGestureRecognizer!.processReleasedMotionEvent(point, deviceId, modifi
                         if(touchButtonProcessing)
                         
                                     {
-                                    touchButtonProcessing= false
+                                    touchButtonProcessing= false;
+    
 
                                     }
                                 
@@ -151,7 +168,8 @@ this.motionGestureRecognizer!.processReleasedMotionEvent(point, deviceId, modifi
                         if(touchButtonProcessing)
                         
                                     {
-                                    this.touchButtonRecognizer!.pressTouchButtonInput(x, y, deviceId)
+                                    this.touchButtonRecognizer!.pressTouchButtonInput(x, y, deviceId);
+    
 
                                     }
                                 
@@ -160,13 +178,19 @@ this.motionGestureRecognizer!.processReleasedMotionEvent(point, deviceId, modifi
                         
                                     {
                                     
-    var point: CustomGPoint = pointCircularPool!.getNextInstance() as CustomGPoint;
-        
-        
+    var point: CustomGPoint = pointCircularPool!.getNextInstance();
 
-point.setX(x)
-point.setY(y)
-this.motionGestureRecognizer!.processDraggedMotionEvent(point, deviceId, modifiers)
+                         as CustomGPoint;
+        
+        
+;
+    
+point.setX(x);
+    
+point.setY(y);
+    
+this.motionGestureRecognizer!.processDraggedMotionEvent(point, deviceId, modifiers);
+    
 
                                     }
                                 
@@ -188,16 +212,24 @@ this.motionGestureRecognizer!.processDraggedMotionEvent(point, deviceId, modifie
                         if(x != lastX || y != lastY)
                         
                                     {
-                                    this.lastX= x
-this.lastY= y
+                                    this.lastX= x;
+    
+this.lastY= y;
+    
 
-    var point: CustomGPoint = pointCircularPool!.getNextInstance() as CustomGPoint;
+    var point: CustomGPoint = pointCircularPool!.getNextInstance();
+
+                         as CustomGPoint;
         
         
-
-point.setX(x)
-point.setY(y)
-this.motionGestureRecognizer!.processMovedMotionEvent(point, deviceId, modifiers)
+;
+    
+point.setX(x);
+    
+point.setY(y);
+    
+this.motionGestureRecognizer!.processMovedMotionEvent(point, deviceId, modifiers);
+    
 
                                     }
                                 

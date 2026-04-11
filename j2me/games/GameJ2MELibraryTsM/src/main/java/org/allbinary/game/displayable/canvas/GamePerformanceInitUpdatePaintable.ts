@@ -44,11 +44,11 @@ export class GamePerformanceInitUpdatePaintable extends InitUpdatePaintable {
         
         
 
-    private readonly yArray: IntArray = intArrayOf(halfHeight +30,halfHeight +30,halfHeight +30 +15,halfHeight +30 +15,halfHeight +30 +30,halfHeight +30 +30,halfHeight +30 +45,halfHeight +30 +45);
+    private readonly yArray: number[] = intArrayOf(halfHeight +30,halfHeight +30,halfHeight +30 +15,halfHeight +30 +15,halfHeight +30 +30,halfHeight +30 +30,halfHeight +30 +45,halfHeight +30 +45);
         
         
 
-    private baseRefreshHelperCharArray: string[][] = new Array(0) { new Array(0) };
+    private baseRefreshHelperCharArray: string[][] = new Array(0) [0];
         
         
 
@@ -57,7 +57,8 @@ export class GamePerformanceInitUpdatePaintable extends InitUpdatePaintable {
 
 
     public update(){
-baseRefreshHelperCharArray= GameStatisticsFactory.getInstance()!.toCharArray()
+baseRefreshHelperCharArray= GameStatisticsFactory.getInstance()!.toCharArray();
+    
 }
 
 
@@ -71,25 +72,32 @@ var graphics = graphics
     var myFont: MyFont = MyFont.getInstance()!;
         
         
-
-graphics.setColor(RED)
+;
+    
+graphics.setColor(RED);
+    
 
     var charArray: string[]
-
+;
+    
 
     var charArray2: string[]
-
+;
+    
 
     var size2: number= 0
-
+;
+    
 
     var size3: number= 0
-
+;
+    
 
     var size: number = baseRefreshHelperCharArray!.length -2;
         
         
-
+;
+    
 
 
 
@@ -100,12 +108,18 @@ graphics.setColor(RED)
         
 index >= 0; )
         {
-charArray= baseRefreshHelperCharArray[index]!
-charArray2= baseRefreshHelperCharArray[index +1]!
-size2= charArray!.length
-size3= charArray2!.length
-graphics.drawChars(charArray, 0, size2, 0, yArray[index]!, 0)
-graphics.drawChars(charArray2, 0, size3, size2 *myFont!.stringWidth(2), yArray[index +1]!, 0)
+charArray= baseRefreshHelperCharArray[index]!;
+    
+charArray2= baseRefreshHelperCharArray[index +1]!;
+    
+size2= charArray!.length;
+    
+size3= charArray2!.length;
+    
+graphics.drawChars(charArray, 0, size2, 0, yArray[index]!, 0);
+    
+graphics.drawChars(charArray2, 0, size3, size2 *myFont!.stringWidth(2), yArray[index +1]!, 0);
+    
 }
 
 }

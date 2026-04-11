@@ -55,37 +55,44 @@ var allBinaryLayerManager = allBinaryLayerManager
     var ownerLayerInterface: AllBinaryLayer = this.getOwnerLayerInterface()!;
         
         
-
+;
+    
 
     var x: number = ownerLayerInterface!.getXP()!;
         
         
-
+;
+    
 
     var y: number = ownerLayerInterface!.getYP()!;
         
         
-
+;
+    
 
     var halfWidth: number = ownerLayerInterface!.getHalfWidth()!;
         
         
-
+;
+    
 
     var halfHeight: number = ownerLayerInterface!.getHalfHeight()!;
         
         
-
+;
+    
 
     var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
         
         
-
+;
+    
 
                         if(x > displayInfo!.getLastWidth() -halfWidth)
                         
                                     {
-                                    ownerLayerInterface!.setPosition(halfWidth +1, y, ownerLayerInterface!.getZP())
+                                    ownerLayerInterface!.setPosition(halfWidth +1, y, ownerLayerInterface!.getZP());
+    
 
                                     }
                                 
@@ -93,7 +100,8 @@ var allBinaryLayerManager = allBinaryLayerManager
                         if(y > displayInfo!.getLastHeight() -halfHeight)
                         
                                     {
-                                    ownerLayerInterface!.setPosition(x, halfHeight +1, ownerLayerInterface!.getZP())
+                                    ownerLayerInterface!.setPosition(x, halfHeight +1, ownerLayerInterface!.getZP());
+    
 
                                     }
                                 
@@ -101,7 +109,8 @@ var allBinaryLayerManager = allBinaryLayerManager
                         if(x <  -halfWidth)
                         
                                     {
-                                    ownerLayerInterface!.setPosition(displayInfo!.getLastWidth() -halfWidth, y, ownerLayerInterface!.getZP())
+                                    ownerLayerInterface!.setPosition(displayInfo!.getLastWidth() -halfWidth, y, ownerLayerInterface!.getZP());
+    
 
                                     }
                                 
@@ -109,7 +118,8 @@ var allBinaryLayerManager = allBinaryLayerManager
                         if(y <  -halfHeight)
                         
                                     {
-                                    ownerLayerInterface!.setPosition(x, displayInfo!.getLastHeight() -halfHeight, ownerLayerInterface!.getZP())
+                                    ownerLayerInterface!.setPosition(x, displayInfo!.getLastHeight() -halfHeight, ownerLayerInterface!.getZP());
+    
 
                                     }
                                 

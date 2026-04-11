@@ -66,7 +66,8 @@ public constructor (imageArray: Image[], animationBehavior: AnimationBehavior)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setImageArray(imageArray)
+this.setImageArray(imageArray);
+    
 }
 
 
@@ -78,23 +79,28 @@ this.setImageArray(imageArray)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getSize();
+
+                        ;
     
 }
 
 
     public nextFrame(){
-this.circularIndexUtil!.next()
+this.circularIndexUtil!.next();
+    
 }
 
 
     public previousFrame(){
-this.circularIndexUtil!.previous()
+this.circularIndexUtil!.previous();
+    
 }
 
 
     public setFrame(index: number){
 var index = index
-this.circularIndexUtil!.setIndex(index)
+this.circularIndexUtil!.setIndex(index);
+    
 }
 
 
@@ -104,6 +110,8 @@ this.circularIndexUtil!.setIndex(index)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.circularIndexUtil!.getIndex();
+
+                        ;
     
 }
 
@@ -118,17 +126,19 @@ this.circularIndexUtil!.setIndex(index)
 }
 
 
-    public setSequence(sequence: IntArray){
+    public setSequence(sequence: number[]){
 var sequence = sequence
 }
 
 
-    public getSequence(): IntArray{
+    public getSequence(): number[]{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return PrimitiveIntUtil.getArrayInstance();
+
+                        ;
     
 }
 
@@ -156,9 +166,12 @@ var index = index
 
     setImageArray(imageArray: Image[]){
 var imageArray = imageArray
-this.imageArray= imageArray
-this.totalFrames= imageArray!.length
-this.circularIndexUtil= CircularIndexUtil.getInstance(this.totalFrames)
+this.imageArray= imageArray;
+    
+this.totalFrames= imageArray!.length;
+    
+this.circularIndexUtil= CircularIndexUtil.getInstance(this.totalFrames);
+    
 }
 
 
@@ -170,7 +183,8 @@ this.circularIndexUtil= CircularIndexUtil.getInstance(this.totalFrames)
 var graphics = graphics
 var x = x
 var y = y
-graphics.drawImage(this.imageArray[this.circularIndexUtil!.getIndex()]!, x, y, anchor)
+graphics.drawImage(this.imageArray[this.circularIndexUtil!.getIndex()]!, x, y, anchor);
+    
 }
 
 

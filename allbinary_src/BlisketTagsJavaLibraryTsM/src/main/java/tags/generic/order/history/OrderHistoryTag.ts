@@ -59,7 +59,8 @@ public constructor (){
 
     public setStatus(value: string){
 var value = value
-this.status= value
+this.status= value;
+    
 }
 
 
@@ -73,49 +74,61 @@ this.status= value
                             getInstance(this.getPropertiesHashMap(), pageContext)!;
         
         
+;
+    
 
-
-    var helperClass: KClass<*> = anyType!::class!;
+    var helperClass: Function = anyType!constructor!;
         
         
-
+;
+    
 
     var method: Method = helperClass!.getMethod("setOrderStatus", 
                             null)!;
         
         
-
+;
+    
 
     var result: string = method.invoke(anyType, 
-                            null) as String;
-        
-        
+                            null);
 
+                         as String;
+        
+        
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
-} catch(e: LicensingException)
+
+                //: 
+} catch(e) 
             {
 
 
 
                             throw e
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
 
     var error: string = "Failed to view order table";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "setOrderStatus()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "setOrderStatus()", e);
+    
 
                                     }
                                 
@@ -135,8 +148,10 @@ this.status= value
     public doStartTag(): number{
 
         try {
-            this.setName("Basic Order History View")
-this.setObjectFile("views.generic.order.history.ValidationView")
+            this.setName("Basic Order History View");
+    
+this.setObjectFile("views.generic.order.history.ValidationView");
+    
 
                         if(this.getCommand() != 
                                     null
@@ -147,8 +162,10 @@ this.setObjectFile("views.generic.order.history.ValidationView")
                         if(this.getCommand()!.compareTo(OrderHistoryData.SETSTATUS) == 0)
                         
                                     {
-                                    this.getPropertiesHashMap()!.put(OrderHistoryData.STATUS, this.status)
-pageContext!.getOut()!.print(this.setOrderStatus())
+                                    this.getPropertiesHashMap()!.put(OrderHistoryData.STATUS, this.status);
+    
+pageContext!.getOut()!.print(this.setOrderStatus());
+    
 
                                     }
                                 
@@ -172,6 +189,8 @@ pageContext!.getOut()!.print(this.setOrderStatus())
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.doStartTag();
+
+                        ;
     
 
                                     }
@@ -180,9 +199,12 @@ pageContext!.getOut()!.print(this.setOrderStatus())
 
 
                             throw Error("Command Null")
-} catch(e: LicensingException)
+
+                //: 
+} catch(e) 
             {
-AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e);
+    
 
 
 
@@ -190,9 +212,12 @@ AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
                         return SKIP_BODY;
     
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
-AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
+    
 
 
 

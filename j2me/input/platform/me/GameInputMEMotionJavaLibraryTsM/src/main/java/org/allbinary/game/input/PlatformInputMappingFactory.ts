@@ -62,18 +62,23 @@ export class PlatformInputMappingFactory
                         if(SINGLETON == PersistentInputMapping.NULL_PERSISTENT_INPUT_MAPPING)
                         
                                     {
-                                    SINGLETON= MotionJ2MEGameInputMapping()
+                                    SINGLETON= MotionJ2MEGameInputMapping();
+    
 
                                     }
                                 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e);
+    
 }
 
 

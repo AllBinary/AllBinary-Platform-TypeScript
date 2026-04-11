@@ -74,12 +74,18 @@ var location = location
 
                             //For kotlin this is before the body of the constructor.
                     
-this.basicColor= this.basicColorFactory!.GREEN
-this.colorP= this.basicColor!.toInt()
-rectangle= Rectangle(0, 0, 1, 1, this.basicColor)
-rectangle.setDoubleSidedEnabled(true)
-rectangle.setNormalsEnabled(false)
-rectangle.setTexturesEnabled(false)
+this.basicColor= this.basicColorFactory!.GREEN;
+    
+this.colorP= this.basicColor!.toInt();
+    
+rectangle= Rectangle(0, 0, 1, 1, this.basicColor);
+    
+rectangle.setDoubleSidedEnabled(true);
+    
+rectangle.setNormalsEnabled(false);
+    
+rectangle.setTexturesEnabled(false);
+    
 }
 
 
@@ -88,12 +94,14 @@ rectangle.setTexturesEnabled(false)
     var colorBufferList: ColorBufferList = rectangle.getVertices()!.getColor4BufferList()!;
         
         
-
+;
+    
 
     var size: number = colorBufferList!.size()!;
         
         
-
+;
+    
 
 
 
@@ -104,7 +112,8 @@ rectangle.setTexturesEnabled(false)
         
 --index >= 0; )
         {
-colorBufferList!.set(index, this.basicColor)
+colorBufferList!.set(index, this.basicColor);
+    
 }
 
 }
@@ -115,58 +124,70 @@ colorBufferList!.set(index, this.basicColor)
     var number3dBufferList: Number3dBufferList = rectangle.getVertices()!.getPointsOnFacesNumber3dBufferList()!;
         
         
-
+;
+    
 
     var width: number = x2;
         
         
-
+;
+    
 
     var height: number = this.thickness *2;
         
         
-
+;
+    
 
     var segsH: number = 1;
         
         
-
+;
+    
 
     var segsW: number = 1;
         
         
-
+;
+    
 
     var row: number= 0
-
+;
+    
 
     var col: number= 0
-
+;
+    
 
     var w: number = width /segsW;
         
         
-
+;
+    
 
     var h: number = height /segsH;
         
         
-
+;
+    
 
     var width5: number = width /2f;
         
         
-
+;
+    
 
     var height5: number = height /2f;
         
         
-
+;
+    
 
     var index: number = 0;
         
         
-
+;
+    
 
 
 
@@ -181,7 +202,8 @@ colorBufferList!.set(index, this.basicColor)
                         for (
     col <= segsW; col++)
         {
-number3dBufferList!.set(index++, col.toFloat() *w -width5, row.toFloat() *h -height5, 0f)
+number3dBufferList!.set(index++, col.toFloat() *w -width5, row.toFloat() *h -height5, 0f);
+    
 }
 
 }
@@ -191,9 +213,12 @@ number3dBufferList!.set(index++, col.toFloat() *w -width5, row.toFloat() *h -hei
 
     public onHealthChange(newX2: number){
     //var newX2 = newX2
-super.onHealthChange(newX2)
-this.updateColor()
-this.updateSize()
+super.onHealthChange(newX2);
+    
+this.updateColor();
+    
+this.updateSize();
+    
 }
 
 
@@ -210,26 +235,38 @@ this.updateSize()
     var openGLESGraphics: OpenGLESGraphics = graphics as OpenGLESGraphics;
         
         
-
+;
+    
 
     var gl: GL10 = openGLESGraphics!.getGl10()!;
         
         
-
+;
+    
 
     var viewPosition: ViewPosition = this.allbinaryLayer!.getViewPosition()!;
         
         
-
+;
+    
 
     var positionNumber3d: Number3d = this.rectangle.getPosition()!;
         
         
+;
+    
+positionNumber3d!.x=  -(viewPosition!.getX();
 
-positionNumber3d!.x=  -(viewPosition!.getX().toFloat())
-positionNumber3d!.z=  -(viewPosition!.getY().toFloat())
-positionNumber3d!.y= viewPosition!.getZ() +this.allbinaryLayer!.getHeight()
-object3dProcessor!.drawObject(gl, this.rectangle)
+                        .toFloat());
+    
+positionNumber3d!.z=  -(viewPosition!.getY();
+
+                        .toFloat());
+    
+positionNumber3d!.y= viewPosition!.getZ() +this.allbinaryLayer!.getHeight();
+    
+object3dProcessor!.drawObject(gl, this.rectangle);
+    
 }
 
 

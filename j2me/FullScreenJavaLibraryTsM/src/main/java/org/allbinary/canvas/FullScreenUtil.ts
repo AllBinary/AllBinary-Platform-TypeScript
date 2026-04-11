@@ -57,14 +57,16 @@ export class FullScreenUtil
     //var commandListener = commandListener
 fullScreenInterface = fullScreenInterfacefullScreenInterface as RunnableCanvas
 fullScreenInterface.
-                    waitOnNotify(0)
+                    waitOnNotify(0);
+    
 
                         if(commandListener != 
                                     null
                                 )
                         
                                     {
-                                    this.init(fullScreenInterface)
+                                    this.init(fullScreenInterface);
+    
 
                                     }
                                 
@@ -77,22 +79,26 @@ fullScreenInterface.
     var mainFeatureFactory: MainFeatureFactory = MainFeatureFactory.getInstance()!;
         
         
-
+;
+    
 
     var features: Features = Features.getInstance()!;
         
         
-
+;
+    
 
                         if(features.isFeature(mainFeatureFactory!.FULL_SCREEN))
                         
                                     {
-                                    fullScreenInterface!.setFullScreenMode(true)
+                                    fullScreenInterface!.setFullScreenMode(true);
+    
 
                                     }
                                 
                         else {
-                            fullScreenInterface!.setFullScreenMode(false)
+                            fullScreenInterface!.setFullScreenMode(false);
+    
 
                         }
                             
@@ -105,12 +111,14 @@ var isFullScreen = isFullScreen
     var mainFeatureFactory: MainFeatureFactory = MainFeatureFactory.getInstance()!;
         
         
-
+;
+    
 
     var features: Features = Features.getInstance()!;
         
         
-
+;
+    
 
                         if(features.isFeature(mainFeatureFactory!.FULL_SCREEN) != isFullScreen)
                         
@@ -140,6 +148,8 @@ var isFullScreen = isFullScreen
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return isScreenChange(fullScreenInterface!.isFullScreenMode());
+
+                        ;
     
 }
 

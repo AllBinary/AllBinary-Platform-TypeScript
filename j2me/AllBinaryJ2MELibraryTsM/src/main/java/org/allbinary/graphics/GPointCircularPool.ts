@@ -31,8 +31,10 @@ public constructor (size: number){
 
             super();
             var size = size
-this.circularIndexUtil= CircularIndexUtil.getInstance(size)
-this.OBJECT_ARRAY= new Array(size)
+this.circularIndexUtil= CircularIndexUtil.getInstance(size);
+    
+this.OBJECT_ARRAY= new Array(size);
+    
 
 
 
@@ -43,7 +45,8 @@ this.OBJECT_ARRAY= new Array(size)
         
 index >= 0; index--)
         {
-this.OBJECT_ARRAY[index]= CustomGPoint(0, 0)
+this.OBJECT_ARRAY[index]= CustomGPoint(0, 0);
+    
 }
 
 }

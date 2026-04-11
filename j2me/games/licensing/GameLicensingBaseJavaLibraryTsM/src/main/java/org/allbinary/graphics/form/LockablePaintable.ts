@@ -46,7 +46,8 @@ public constructor (lockedIndex: number){
 
             super();
             var lockedIndex = lockedIndex
-this.lockedIndex= lockedIndex
+this.lockedIndex= lockedIndex;
+    
 }
 
 
@@ -59,7 +60,8 @@ var y = y
                         if(LockedUtil.getInstance()!.isLockedFeature() && currentIndex >= this.getLockedIndex())
                         
                                     {
-                                    this.getAnimation()!.paint(graphics, x, y)
+                                    this.getAnimation()!.paint(graphics, x, y);
+    
 
                                     }
                                 

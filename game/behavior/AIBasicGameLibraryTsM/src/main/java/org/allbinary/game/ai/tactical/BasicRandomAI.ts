@@ -57,7 +57,7 @@ export class BasicRandomAI extends BasicAI {
 
     private readonly visitor: Visitor
 
-    private readonly keyArray: IntArray = intArrayOf(Canvas.UP,Canvas.DOWN,Canvas.LEFT,Canvas.RIGHT,Canvas.KEY_NUM1,Canvas.KEY_NUM7,Canvas.KEY_NUM9);
+    private readonly keyArray: number[] = intArrayOf(Canvas.UP,Canvas.DOWN,Canvas.LEFT,Canvas.RIGHT,Canvas.KEY_NUM1,Canvas.KEY_NUM7,Canvas.KEY_NUM9);
         
         
 public constructor (ownerLayerInterface: AllBinaryLayer, gameInput: GameInput, inputProbability: InputProbability, visitor: Visitor)                        
@@ -73,8 +73,10 @@ var visitor = visitor
 
                             //For kotlin this is before the body of the constructor.
                     
-this.inputProbability= inputProbability
-this.visitor= visitor
+this.inputProbability= inputProbability;
+    
+this.visitor= visitor;
+    
 }
 
 
@@ -90,22 +92,26 @@ var allBinaryLayerManager = allBinaryLayerManager
                         if(this.inputProbability!.getTimeDelayHelper()!.isTime(GameTickTimeDelayHelperFactory.getInstance()!.startTime))
                         
                                     {
-                                    i_random= myRandomFactory!.getAbsoluteNextInt(this.inputProbability!.getMax())
+                                    i_random= myRandomFactory!.getAbsoluteNextInt(this.inputProbability!.getMax());
+    
 
     var repeat: boolean = false;
         
         
-
+;
+    
 
     var repeatLikelyhoodIntegerArray: Integer[] = this.inputProbability!.getRepeatLikelyhoodIntegerArray()!;
         
         
-
+;
+    
 
                         if(this.getLastKey() !=  -1 && repeatLikelyhoodIntegerArray[this.getLastKey()]!.toInt() >= i_random)
                         
                                     {
-                                    repeat= true
+                                    repeat= true;
+    
 
                                     }
                                 
@@ -117,17 +123,21 @@ var allBinaryLayerManager = allBinaryLayerManager
     var likelyhoodIntegerArray: Integer[][] = this.inputProbability!.getLikelyhoodIntegerArray()!;
         
         
-
-i_random= myRandomFactory!.getAbsoluteNextInt(this.inputProbability!.getMax())
+;
+    
+i_random= myRandomFactory!.getAbsoluteNextInt(this.inputProbability!.getMax());
+    
 
     var size: number = keyArray!.length
                 ;
         
         
-
+;
+    
 
     var likelyhoodIntegerKeyArray: Integer[]
-
+;
+    
 
 
 
@@ -142,8 +152,10 @@ index < size; index++)
     var key: number = keyArray[index]!;
         
         
-
-likelyhoodIntegerKeyArray= likelyhoodIntegerArray[key]!
+;
+    
+likelyhoodIntegerKeyArray= likelyhoodIntegerArray[key]!;
+    
 
                         if(likelyhoodIntegerArray!.length >= key && likelyhoodIntegerKeyArray[0] != 
                                     null
@@ -154,7 +166,8 @@ likelyhoodIntegerKeyArray= likelyhoodIntegerArray[key]!
                         if(i_random >= likelyhoodIntegerKeyArray[0]!.toInt() && i_random < likelyhoodIntegerKeyArray[1]!.toInt())
                         
                                     {
-                                    this.setLastKey(key)
+                                    this.setLastKey(key);
+    
 break;
 
                     
@@ -169,7 +182,8 @@ break;
 
                                     }
                                 
-this.visitor.visit(this)
+this.visitor.visit(this);
+    
 
                                     }
                                 

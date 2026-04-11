@@ -34,7 +34,8 @@ public constructor (max: number){
             super();
             var max = max
 this.pathFindingNodeCostInfoAdjacencyList= Array(max) { arrayOfNulls<PathFindingNodeCostInfo?>(max) }
-                                                            
+                                                            ;
+    
 }
 
 
@@ -46,7 +47,8 @@ this.pathFindingNodeCostInfoAdjacencyList= Array(max) { arrayOfNulls<PathFinding
     //var geographicMapCellPosition = geographicMapCellPosition
     //var costFromStart = costFromStart
     //var costToEnd = costToEnd
-this.getInstance(goingToGeographicMapCellPosition, geographicMapCellPosition, costFromStart, costToEnd)
+this.getInstance(goingToGeographicMapCellPosition, geographicMapCellPosition, costFromStart, costToEnd);
+    
 }
 
 
@@ -61,23 +63,30 @@ this.getInstance(goingToGeographicMapCellPosition, geographicMapCellPosition, co
     var pathFindingNodeCostInfo: PathFindingNodeCostInfo = this.getInstance(goingToGeographicMapCellPosition, geographicMapCellPosition)!;
         
         
-
+;
+    
 
                         if(pathFindingNodeCostInfo == 
                                     null
                                 )
                         
                                     {
-                                    pathFindingNodeCostInfo= PathFindingNodeCostInfo(costFromStart, costToEnd)
-pathFindingNodeCostInfo!.setTotalCost()
-this.pathFindingNodeCostInfoAdjacencyList[geographicMapCellPosition!.getId()]![goingToGeographicMapCellPosition!.getId()]= pathFindingNodeCostInfo
+                                    pathFindingNodeCostInfo= PathFindingNodeCostInfo(costFromStart, costToEnd);
+    
+pathFindingNodeCostInfo!.setTotalCost();
+    
+this.pathFindingNodeCostInfoAdjacencyList[geographicMapCellPosition!.getId()]![goingToGeographicMapCellPosition!.getId()]= pathFindingNodeCostInfo;
+    
 
                                     }
                                 
                         else {
-                            pathFindingNodeCostInfo!.setCostFromStart(costFromStart)
-pathFindingNodeCostInfo!.setCostToEnd(costToEnd)
-pathFindingNodeCostInfo!.setTotalCost()
+                            pathFindingNodeCostInfo!.setCostFromStart(costFromStart);
+    
+pathFindingNodeCostInfo!.setCostToEnd(costToEnd);
+    
+pathFindingNodeCostInfo!.setTotalCost();
+    
 
                         }
                             

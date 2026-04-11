@@ -33,7 +33,8 @@ export class OnlyTouchButtonRecognizer extends MotionRecognizer {
 public constructor (){
 
             super();
-            this.touchButtonRecognizer= TouchButtonRecognizer()
+            this.touchButtonRecognizer= TouchButtonRecognizer();
+    
 }
 
 
@@ -48,7 +49,8 @@ var modifiers = modifiers
                         if(this.touchButtonRecognizer!.pressTouchButtonInput(x, y, deviceId))
                         
                                     {
-                                    touchButtonProcessing= true
+                                    touchButtonProcessing= true;
+    
 
                                     }
                                 
@@ -66,7 +68,8 @@ var modifiers = modifiers
                         if(touchButtonProcessing)
                         
                                     {
-                                    touchButtonProcessing= false
+                                    touchButtonProcessing= false;
+    
 
                                     }
                                 
@@ -97,7 +100,8 @@ var modifiers = modifiers
                         if(touchButtonProcessing)
                         
                                     {
-                                    this.touchButtonRecognizer!.pressTouchButtonInput(x, y, deviceId)
+                                    this.touchButtonRecognizer!.pressTouchButtonInput(x, y, deviceId);
+    
 
                                     }
                                 

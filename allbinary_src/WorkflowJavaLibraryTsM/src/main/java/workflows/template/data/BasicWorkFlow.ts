@@ -72,10 +72,10 @@ export class BasicWorkFlow
 
     private validationDomNodeInterface: ValidationComponentInterface
 
-    private propertiesHashMap: HashMap<Any, Any>
+    private propertiesHashMap: HashMap<any, any>
 
     private pageContext: PageContext
-public constructor (propertiesHashMap: HashMap<Any, Any>, pageContext: PageContext){
+public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
             var propertiesHashMap = propertiesHashMap
@@ -84,13 +84,19 @@ var pageContext = pageContext
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.WORKFLOW))
                         
                                     {
-                                    logUtil!.put("Properties: " +propertiesHashMap!.toString(), this, "BasicWorkFlow()")
+                                    logUtil!.put("Properties: " +propertiesHashMap!.toString(), this, "BasicWorkFlow()");
+    
 
                                     }
                                 
-this.propertiesHashMap= propertiesHashMap
-this.pageContext= pageContext
-this.validationDomNodeInterface= TransformFactory.getInstance()!.getInstance(abeClientInformation, propertiesHashMap, pageContext) as ValidationComponentInterface
+this.propertiesHashMap= propertiesHashMap;
+    
+this.pageContext= pageContext;
+    
+this.validationDomNodeInterface= TransformFactory.getInstance()!.getInstance(abeClientInformation, propertiesHashMap, pageContext);
+
+                         as ValidationComponentInterface;
+    
 }
 
 
@@ -101,12 +107,14 @@ this.validationDomNodeInterface= TransformFactory.getInstance()!.getInstance(abe
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getPropertiesHashMap()!.get(WorkFlowData.getInstance()!.NAME) as String;
+                        return this.getPropertiesHashMap()!.get(WorkFlowData.getInstance()!.NAME);
+
+                         as String;
     
 }
 
 
-    getPropertiesHashMap(): HashMap<Any, Any>{
+    getPropertiesHashMap(): HashMap<any, any>{
 
 
 
@@ -133,7 +141,8 @@ this.validationDomNodeInterface= TransformFactory.getInstance()!.getInstance(abe
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.WORKFLOW))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.START, this, commonStrings!.PROCESS)
+                                    logUtil!.put(this.commonStrings!.START, this, commonStrings!.PROCESS);
+    
 
                                     }
                                 
@@ -141,23 +150,29 @@ this.validationDomNodeInterface= TransformFactory.getInstance()!.getInstance(abe
                         if(this.validationDomNodeInterface!.isValid())
                         
                                     {
-                                    pageContext!.getOut()!.print(this.validationDomNodeInterface!.view())
+                                    pageContext!.getOut()!.print(this.validationDomNodeInterface!.view());
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return Integer(Integer.valueOf(TagSupport.EVAL_BODY_INCLUDE));
+
+                        ;
     
 
                                     }
                                 
                         else {
-                            pageContext!.getOut()!.print(this.validationDomNodeInterface!.validationInfo())
+                            pageContext!.getOut()!.print(this.validationDomNodeInterface!.validationInfo());
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return Integer(Integer.valueOf(TagSupport.SKIP_BODY));
+
+                        ;
     
 
                         }

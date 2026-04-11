@@ -47,8 +47,10 @@ public constructor (){
     public doStartTag(): number{
 
         try {
-            this.setName("Basic Payment View")
-this.setObjectFile("views.generic.payment.ValidationView")
+            this.setName("Basic Payment View");
+    
+this.setObjectFile("views.generic.payment.ValidationView");
+    
 
                         if(this.getCommand() != 
                                     null
@@ -108,6 +110,8 @@ this.setObjectFile("views.generic.payment.ValidationView")
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.doStartTag();
+
+                        ;
     
 
                                     }
@@ -116,9 +120,12 @@ this.setObjectFile("views.generic.payment.ValidationView")
 
 
                             throw Error("Command Null")
-} catch(e: LicensingException)
+
+                //: 
+} catch(e) 
             {
-AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e);
+    
 
 
 
@@ -126,9 +133,12 @@ AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
                         return SKIP_BODY;
     
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
-AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
+    
 
 
 

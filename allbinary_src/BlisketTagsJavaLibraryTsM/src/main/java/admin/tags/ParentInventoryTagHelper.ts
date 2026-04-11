@@ -70,12 +70,18 @@ var parentTag = parentTag
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("Must have at least a ")
-stringBuffer!.append("tags.HelperTag")
-stringBuffer!.append(" as parent")
-stringBuffer!.append("and not: ")
-stringBuffer!.append(parentTag!::class.toString()!)
+;
+    
+stringBuffer!.append("Must have at least a ");
+    
+stringBuffer!.append("tags.HelperTag");
+    
+stringBuffer!.append(" as parent");
+    
+stringBuffer!.append("and not: ");
+    
+stringBuffer!.append(parentTag!.constructor.name.toString()!);
+    
 
 
 

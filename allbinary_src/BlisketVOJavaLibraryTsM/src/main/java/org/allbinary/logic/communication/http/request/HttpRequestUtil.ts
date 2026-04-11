@@ -52,12 +52,14 @@ var requestPath = requestPath
     var beginIndex: number = requestPath!.lastIndexOf(AbPathData.getInstance()!.SEPARATOR)!;
         
         
-
+;
+    
 
                         if(beginIndex < 0)
                         
                                     {
-                                    beginIndex= requestPath!.lastIndexOf("\\")
+                                    beginIndex= requestPath!.lastIndexOf("\\");
+    
 
                                     }
                                 
@@ -78,7 +80,8 @@ var requestPath = requestPath
     var beginIndex: number = this.getLastSeparatorIndex(requestPath)!;
         
         
-
+;
+    
 
                         if(beginIndex < 0)
                         
@@ -98,6 +101,8 @@ var requestPath = requestPath
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return requestPath!.substring(beginIndex +1);
+
+                        ;
     
 
                         }

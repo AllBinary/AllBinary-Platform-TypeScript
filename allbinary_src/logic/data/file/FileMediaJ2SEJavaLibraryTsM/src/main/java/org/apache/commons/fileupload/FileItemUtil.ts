@@ -55,7 +55,7 @@ export class FileItemUtil
 
                 //@Throws(Error::class)
             
-    public getString(byteArray: ByteArray): string{
+    public getString(byteArray: number[]): string{
 var byteArray = byteArray
 
 
@@ -83,36 +83,42 @@ var fileItem = fileItem
 
                 //@Throws(Error::class)
             
-    public getBytes(fileItem: FileItemStream): ByteArray{
+    public getBytes(fileItem: FileItemStream): number[]{
 var fileItem = fileItem
 
     var streamUtil: StreamUtil = StreamUtil.getInstance()!;
         
         
-
+;
+    
 
     var inputStream: InputStream = 
                 null
             ;
         
         
-
+;
+    
 
     var outputStream: ByteArrayOutputStream = 
                 null
             ;
         
         
-
+;
+    
 
         try {
-            inputStream= fileItem!.openStream()
-outputStream= ByteArrayOutputStream()
+            inputStream= fileItem!.openStream();
+    
+outputStream= ByteArrayOutputStream();
+    
 
                         if(fileItem!.isFormField())
                         
                                     {
-                                    logUtil!.put("FileItemStream FieldName: " +fileItem!.getFieldName(), this, "write()")
+                                    logUtil!.put("FileItemStream FieldName: " +fileItem!.getFieldName(), this, "write()");
+    
 
                                     }
                                 
@@ -121,26 +127,39 @@ outputStream= ByteArrayOutputStream()
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("Uploaded File FieldName: ")
-stringBuffer!.append(fileItem!.getFieldName())
-stringBuffer!.append(" name = ")
-stringBuffer!.append(fileItem!.getName())
-logUtil!.put(stringBuffer!.toString(), this, "write()")
+;
+    
+stringBuffer!.append("Uploaded File FieldName: ");
+    
+stringBuffer!.append(fileItem!.getFieldName());
+    
+stringBuffer!.append(" name = ");
+    
+stringBuffer!.append(fileItem!.getName());
+    
+logUtil!.put(stringBuffer!.toString(), this, "write()");
+    
 
                         }
                             
-outputStream= streamUtil!.get(inputStream, outputStream, ByteArray(16384)) as ByteArrayOutputStream
+outputStream= streamUtil!.get(inputStream, outputStream, new Array(16384));
+
+                         as ByteArrayOutputStream;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return outputStream!.toByteArray();
+
+                        ;
     
 
          finally {
-            streamUtil!.close(outputStream)
-streamUtil!.close(inputStream)
+            streamUtil!.close(outputStream);
+    
+streamUtil!.close(inputStream);
+    
 
          }
         
@@ -152,7 +171,8 @@ streamUtil!.close(inputStream)
     public write(fileItem: FileItem, file: AbFile){
 var fileItem = fileItem
 var file = file
-fileItem!.write(AbFileNativeUtil.get(file))
+fileItem!.write(AbFileNativeUtil.get(file));
+    
 }
 
 

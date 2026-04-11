@@ -90,7 +90,8 @@ export class PathFindingInfoFactory extends BasePathFindingInfoFactory {
 
     public static init(max: number){
 var max = max
-instance= PathFindingInfoFactory(SimplePathFinderGraphVisitorFactory(1, 1, Integer.MAX_VALUE), max)
+instance= PathFindingInfoFactory(SimplePathFinderGraphVisitorFactory(1, 1, Integer.MAX_VALUE), max);
+    
 }
 
 
@@ -114,29 +115,42 @@ private constructor (pathFinderGraphVisitorFactoryInterface: PathFinderGraphVisi
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
+;
+    
+PreLogUtil.put("Using Dynamic Path Finding", this, commonStrings!.GET_INSTANCE);
+    
+this.basicGeographicMapPathFinder= BasicGeographicMapPathFinder(max);
+    
+this.pathFindingInfo= PathFindingInfo(PathFindingNodeCostInfoFactory(max));
+    
+this.basicGeographicMapGraph= BasicGeographicMapGraph(pathFindingInfo!.getPathFindingNodeCostInfoFactoryInterface();
 
-PreLogUtil.put("Using Dynamic Path Finding", this, commonStrings!.GET_INSTANCE)
-this.basicGeographicMapPathFinder= BasicGeographicMapPathFinder(max)
-this.pathFindingInfo= PathFindingInfo(PathFindingNodeCostInfoFactory(max))
-this.basicGeographicMapGraph= BasicGeographicMapGraph(pathFindingInfo!.getPathFindingNodeCostInfoFactoryInterface() as PathFindingNodeCostInfoFactory)
-this.pathFinderGraphVisitorFactoryInterface= pathFinderGraphVisitorFactoryInterface
+                         as PathFindingNodeCostInfoFactory);
+    
+this.pathFinderGraphVisitorFactoryInterface= pathFinderGraphVisitorFactoryInterface;
+    
 }
 
 
                 //@Throws(Error::class)
             
-    public getInstance(geographicMapInterface: BasicGeographicMap, mapArray: IntArray[]): PathFindingInfo{
+    public getInstance(geographicMapInterface: BasicGeographicMap, mapArray: number[][]): PathFindingInfo{
     //var geographicMapInterface = geographicMapInterface
     //var mapArray = mapArray
 
     var pathFindingInfo: PathFindingInfo = new PathFindingInfo(this.pathFindingInfo!.getPathFindingNodeCostInfoFactoryInterface());
         
         
-
-RaceTrackRoadsGeographicMapCellHistoryFactory.getInstance()!.init()
-this.init(geographicMapInterface, pathFindingInfo, mapArray)
-this.basicGeographicMapPathFinder!.init(geographicMapInterface, basicGeographicMapGraph, pathFinderGraphVisitorFactoryInterface!.getInstance(geographicMapInterface))
-pathFindingInfo!.setPathFinder(basicGeographicMapPathFinder)
+;
+    
+RaceTrackRoadsGeographicMapCellHistoryFactory.getInstance()!.init();
+    
+this.init(geographicMapInterface, pathFindingInfo, mapArray);
+    
+this.basicGeographicMapPathFinder!.init(geographicMapInterface, basicGeographicMapGraph, pathFinderGraphVisitorFactoryInterface!.getInstance(geographicMapInterface));
+    
+pathFindingInfo!.setPathFinder(basicGeographicMapPathFinder);
+    
 
 
 
@@ -148,18 +162,20 @@ pathFindingInfo!.setPathFinder(basicGeographicMapPathFinder)
 
                 //@Throws(Error::class)
             
-    public init(geographicMapInterface: BasicGeographicMap, pathFindingInfo: PathFindingInfo, mapArray: IntArray[]){
+    public init(geographicMapInterface: BasicGeographicMap, pathFindingInfo: PathFindingInfo, mapArray: number[][]){
     //var geographicMapInterface = geographicMapInterface
     //var pathFindingInfo = pathFindingInfo
     //var mapArray = mapArray
-super.init(geographicMapInterface, pathFindingInfo, mapArray)
-this.buildPathFindingNodes(geographicMapInterface, pathFindingInfo, mapArray)
+super.init(geographicMapInterface, pathFindingInfo, mapArray);
+    
+this.buildPathFindingNodes(geographicMapInterface, pathFindingInfo, mapArray);
+    
 }
 
 
                 //@Throws(Error::class)
             
-    buildPathFindingNodes(geographicMapInterface: BasicGeographicMap, pathFindingInfo: PathFindingInfo, mapArray: IntArray[], cellPosition: GeographicMapCellPosition){
+    buildPathFindingNodes(geographicMapInterface: BasicGeographicMap, pathFindingInfo: PathFindingInfo, mapArray: number[][], cellPosition: GeographicMapCellPosition){
     //var geographicMapInterface = geographicMapInterface
     //var pathFindingInfo = pathFindingInfo
     //var mapArray = mapArray
@@ -168,52 +184,64 @@ this.buildPathFindingNodes(geographicMapInterface, pathFindingInfo, mapArray)
     var geographicMapCellPositionFactory: BasicGeographicMapCellPositionFactory = geographicMapInterface!.getGeographicMapCellPositionFactory()!;
         
         
-
+;
+    
 
     var cellTypeId: number = mapArray[cellPosition!.getRow()]![cellPosition!.getColumn()]!;
         
         
-
+;
+    
 
     var geographicMapCellType: GeographicMapCellType = GeographicMapCellTypeFactory.getInstance()!.getInstance(geographicMapInterface!.getCellTypeFromMapCellTypeInt(cellTypeId))!;
         
         
-
+;
+    
 
     var raceTrackGeographicMapCellType: RaceTrackGeographicMapCellType = geographicMapCellType as RaceTrackGeographicMapCellType;
         
         
-
+;
+    
 
     var allBinaryTiledLayer: AllBinaryTiledLayer = geographicMapInterface!.getAllBinaryTiledLayer()!;
         
         
-
+;
+    
 
     var pathFindingNodeCostInfoFactoryInterface: PathFindingNodeCostInfoFactoryBase = pathFindingInfo!.getPathFindingNodeCostInfoFactoryInterface()!;
         
         
-
+;
+    
 
     var basicGeographicMapUtil: BasicGeographicMapUtil = BasicGeographicMapUtil.getInstance()!;
         
         
-
+;
+    
 
     var row: number= 0
-
+;
+    
 
     var column: number= 0
-
+;
+    
 
     var goingToGeographicMapCellPosition: GeographicMapCellPosition
-
+;
+    
 
     var costFromStart: number= 0
-
+;
+    
 
     var costToEnd: number= 0
-
+;
+    
 
 
 
@@ -224,16 +252,22 @@ this.buildPathFindingNodes(geographicMapInterface, pathFindingInfo, mapArray)
         
 index < MAX_DIRECTIONS; index++)
         {
-row= basicGeographicMapUtil!.getBorderingRow(index, cellPosition)
-column= basicGeographicMapUtil!.getBorderingColumn(index, cellPosition)
+row= basicGeographicMapUtil!.getBorderingRow(index, cellPosition);
+    
+column= basicGeographicMapUtil!.getBorderingColumn(index, cellPosition);
+    
 
                         if(row < allBinaryTiledLayer!.getRows() && column < allBinaryTiledLayer!.getColumns() && row >= 0 && column >= 0)
                         
                                     {
-                                    goingToGeographicMapCellPosition= geographicMapCellPositionFactory!.getInstance(column, row)
-costFromStart= raceTrackGeographicMapCellType!.getTravelCost()
-costToEnd= costFromStart
-pathFindingNodeCostInfoFactoryInterface!.create(geographicMapInterface, goingToGeographicMapCellPosition, cellPosition, costFromStart, costToEnd)
+                                    goingToGeographicMapCellPosition= geographicMapCellPositionFactory!.getInstance(column, row);
+    
+costFromStart= raceTrackGeographicMapCellType!.getTravelCost();
+    
+costToEnd= costFromStart;
+    
+pathFindingNodeCostInfoFactoryInterface!.create(geographicMapInterface, goingToGeographicMapCellPosition, cellPosition, costFromStart, costToEnd);
+    
 
                                     }
                                 
@@ -244,7 +278,7 @@ pathFindingNodeCostInfoFactoryInterface!.create(geographicMapInterface, goingToG
 
                 //@Throws(Error::class)
             
-    buildPathFindingNodes(geographicMapInterface: BasicGeographicMap, pathFindingInfo: PathFindingInfo, mapArray: IntArray[]){
+    buildPathFindingNodes(geographicMapInterface: BasicGeographicMap, pathFindingInfo: PathFindingInfo, mapArray: number[][]){
     //var geographicMapInterface = geographicMapInterface
     //var pathFindingInfo = pathFindingInfo
     //var mapArray = mapArray
@@ -252,22 +286,26 @@ pathFindingNodeCostInfoFactoryInterface!.create(geographicMapInterface, goingToG
     var geographicMapCellPositionFactory: BasicGeographicMapCellPositionFactory = geographicMapInterface!.getGeographicMapCellPositionFactory()!;
         
         
-
+;
+    
 
     var allBinaryTiledLayer: AllBinaryTiledLayer = geographicMapInterface!.getAllBinaryTiledLayer()!;
         
         
-
+;
+    
 
     var totalColumns: number = allBinaryTiledLayer!.getColumns()!;
         
         
-
+;
+    
 
     var totalRows: number = allBinaryTiledLayer!.getRows()!;
         
         
-
+;
+    
 
 
 
@@ -288,7 +326,8 @@ column < totalColumns; column++)
         
 row < totalRows; row++)
         {
-this.buildPathFindingNodes(geographicMapInterface, pathFindingInfo, mapArray, geographicMapCellPositionFactory!.getInstance(column, row))
+this.buildPathFindingNodes(geographicMapInterface, pathFindingInfo, mapArray, geographicMapCellPositionFactory!.getInstance(column, row));
+    
 }
 
 }

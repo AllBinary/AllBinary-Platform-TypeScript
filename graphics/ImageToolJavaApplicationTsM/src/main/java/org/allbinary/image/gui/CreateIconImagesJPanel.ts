@@ -81,14 +81,18 @@ public constructor (imageProcessorInput: ImageProcessorInput)
 
                             //For kotlin this is before the body of the constructor.
                     
-initComponents()
-this.imageProcessorInput= imageProcessorInput
+initComponents();
+    
+this.imageProcessorInput= imageProcessorInput;
+    
 
     var numberStringArray: string[] = new Array(101);
         
         
-
-numberStringArray[0]= Integer.toString( -1)
+;
+    
+numberStringArray[0]= Integer.toString( -1);
+    
 
 
 
@@ -99,26 +103,30 @@ numberStringArray[0]= Integer.toString( -1)
         
 index < 100; index++)
         {
-numberStringArray[index]= index.toString()
+numberStringArray[index]= index.toString();
+    
 }
 
 
     var araster: Raster = this.imageProcessorInput!.getBufferedImageArray()[0]!.getAlphaRaster()!;
         
         
-
+;
+    
 
                         if(araster == 
                                     null
                                 )
                         
                                     {
-                                    System.out.println("there is no Alpha channel!!!!!!!!!")
+                                    System.out.println("there is no Alpha channel!!!!!!!!!");
+    
 
                                     }
                                 
                         else {
-                            System.out.println("Alpha channel found !")
+                            System.out.println("Alpha channel found !");
+    
 
                         }
                             
@@ -136,59 +144,72 @@ object: Thread()
     var imageUtil: ImageUtil = ImageUtil.getInstance()!;
         
         
-
+;
+    
 
     var stringMaker: StringMaker = new StringMaker();
         
         
-
+;
+    
 
     var imageProcessorInput: ImageProcessorInput = this@CreateIconImagesJPanel.getImageProcessorInput()!;
         
         
-
+;
+    
 
     var files: File[] = imageProcessorInput!.getFiles()!;
         
         
-
+;
+    
 
     var iconWidthList: BasicArrayList = new BasicArrayList();
         
         
-
+;
+    
 
     var iconHeightList: BasicArrayList = new BasicArrayList();
         
         
-
-iconWidthList!.add(864)
-iconHeightList!.add(864)
+;
+    
+iconWidthList!.add(864);
+    
+iconHeightList!.add(864);
+    
 
     var ANDROID: string = "android-icon-";
         
         
-
+;
+    
 
     var IOS: string = "ios-icon-";
         
         
-
+;
+    
 
     var size: number = iconWidthList!.size()!;
         
         
-
+;
+    
 
     var width: number = 0;
         
         
-
+;
+    
 
     var height: number = 0;
         
         
-
+;
+    
 
 
 
@@ -199,22 +220,30 @@ iconHeightList!.add(864)
         
 index2 < size; index2++)
         {
-width= get = iconWidthList!.get(index2)get as Integer
+width= get = iconWidthList!.get(index2);
+
+                        get as Integer
 get.
-                    toInt()
-height= get = iconHeightList!.get(index2)get as Integer
+                    toInt();
+    
+height= get = iconHeightList!.get(index2);
+
+                        get as Integer
 get.
-                    toInt()
+                    toInt();
+    
 
     var generatedBufferedImageArray: BufferedImage[] = imageUtil!.createBufferedImage(imageProcessorInput!.getBufferedImageArray(), width, height, true)!;
         
         
-
+;
+    
 
     var imagePersistanceUtil: ImagePersistanceUtil = ImagePersistanceUtil.getInstance()!;
         
         
-
+;
+    
 
 
 
@@ -229,44 +258,60 @@ index < generatedBufferedImageArray!.length; index++)
     var filePath: string = files[index]!.getAbsolutePath()!;
         
         
-
+;
+    
 
     var endIndex: number = filePath!.lastIndexOf('\\')!;
         
         
-
+;
+    
 
     var path: string = filePath!.substring(0, endIndex +1)!;
         
         
-
-stringMaker!.delete(0, stringMaker!.length())
-stringMaker!.append(path)!.append(ANDROID)!.appendint(width)!.append(CanvasStrings.getInstance()!._PNG)
+;
+    
+stringMaker!.delete(0, stringMaker!.length());
+    
+stringMaker!.append(path)!.append(ANDROID)!.appendint(width)!.append(CanvasStrings.getInstance()!._PNG);
+    
 
     var newFilePath: string = stringMaker!.toString()!;
         
         
-
-imagePersistanceUtil!.saveWithBatik(AbFile(newFilePath), generatedBufferedImageArray[index]!)
-stringMaker!.delete(0, stringMaker!.length())
-stringMaker!.append(path)!.append(IOS)!.appendint(width)!.append(CanvasStrings.getInstance()!._PNG)
-newFilePath= stringMaker!.toString()
-imagePersistanceUtil!.saveWithBatik(AbFile(newFilePath), generatedBufferedImageArray[index]!)
+;
+    
+imagePersistanceUtil!.saveWithBatik(AbFile(newFilePath), generatedBufferedImageArray[index]!);
+    
+stringMaker!.delete(0, stringMaker!.length());
+    
+stringMaker!.append(path)!.append(IOS)!.appendint(width)!.append(CanvasStrings.getInstance()!._PNG);
+    
+newFilePath= stringMaker!.toString();
+    
+imagePersistanceUtil!.saveWithBatik(AbFile(newFilePath), generatedBufferedImageArray[index]!);
+    
 }
 
 }
 
-this@CreateIconImagesJPanel.getParent()!.repaint()
-} catch(e: Exception)
+this@CreateIconImagesJPanel.getParent()!.repaint();
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
+    
 }
 
 }
 
                                 }
                             .
-                            start()
+                            start();
+    
 }
 
 
@@ -282,37 +327,47 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
 
     public setImageProcessorInput(imageProcessorInput: ImageProcessorInput){
 var imageProcessorInput = imageProcessorInput
-this.imageProcessorInput= imageProcessorInput
+this.imageProcessorInput= imageProcessorInput;
+    
 }
 
 
     initComponents(){
-aboveJButton= javax.swing.JButton()
-aboveJButton!.setText("Process")
+aboveJButton= javax.swing.JButton();
+    
+aboveJButton!.setText("Process");
+    
 aboveJButton!.addActionListener(object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
 var evt = evt
-aboveJButtonActionPerformed(evt)
+aboveJButtonActionPerformed(evt);
+    
 }
 
                                 }
-                            )
+                            );
+    
 
     var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);
         
         
-
-this.setLayout(layout)
-layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(layout.createSequentialGroup()!.addComponent(aboveJButton)!.addGap(0, 335, Short.MAX_VALUE)))
-layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(layout.createSequentialGroup()!.addContainerGap()!.addComponent(aboveJButton)!.addContainerGap(286, Short.MAX_VALUE)))
+;
+    
+this.setLayout(layout);
+    
+layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(layout.createSequentialGroup()!.addComponent(aboveJButton)!.addGap(0, 335, Short.MAX_VALUE)));
+    
+layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(layout.createSequentialGroup()!.addContainerGap()!.addComponent(aboveJButton)!.addContainerGap(286, Short.MAX_VALUE)));
+    
 }
 
 
     aboveJButtonActionPerformed(evt: java.awt.event.ActionEvent){
 var evt = evt
-this.process()
+this.process();
+    
 }
 
 

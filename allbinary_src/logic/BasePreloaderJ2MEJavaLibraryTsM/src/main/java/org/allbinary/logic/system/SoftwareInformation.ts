@@ -44,10 +44,13 @@ public constructor (name: string, version: string, shortName: string){
                 //var name = name
     //var version = version
     //var shortName = shortName
-this.name= name
-this.version= version
+this.name= name;
+    
+this.version= version;
+    
 this.shortName= StringMaker().
-                            append(shortName)!.append(KotlinUtil.getShortName())!.toString()
+                            append(shortName)!.append(KotlinUtil.getShortName())!.toString();
+    
 }
 
 
@@ -86,27 +89,37 @@ this.shortName= StringMaker().
     var NAME: string = "Name: ";
         
         
-
+;
+    
 
     var VERSION: string = "Version: ";
         
         
-
+;
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(NAME)
-stringBuffer!.append(this.getName())
-stringBuffer!.append(CommonSeps.getInstance()!.SPACE)
-stringBuffer!.append(VERSION)
-stringBuffer!.append(this.getVersion())
+;
+    
+stringBuffer!.append(NAME);
+    
+stringBuffer!.append(this.getName());
+    
+stringBuffer!.append(CommonSeps.getInstance()!.SPACE);
+    
+stringBuffer!.append(VERSION);
+    
+stringBuffer!.append(this.getVersion());
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

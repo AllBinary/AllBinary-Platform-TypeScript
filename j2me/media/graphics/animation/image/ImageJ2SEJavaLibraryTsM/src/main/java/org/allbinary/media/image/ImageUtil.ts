@@ -115,17 +115,21 @@ private constructor (){
     var ge: GraphicsEnvironment = GraphicsEnvironment.getLocalGraphicsEnvironment()!;
         
         
-
+;
+    
 
     var gd: GraphicsDevice = ge.getDefaultScreenDevice()!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return gd.getDefaultConfiguration();
+
+                        ;
     
 }
 
@@ -137,12 +141,15 @@ private constructor (){
     var graphicsConfiguration: GraphicsConfiguration = this.getDefaultConfiguration()!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return graphicsConfiguration!.createCompatibleImage(width, height, Transparency.TRANSLUCENT);
+
+                        ;
     
 }
 
@@ -158,15 +165,18 @@ private constructor (){
                 ;
         
         
-
+;
+    
 
     var scaledBufferedImageArray: BufferedImage[] = new Array(size);
         
         
-
+;
+    
 
     var bufferedImage: BufferedImage
-
+;
+    
 
 
 
@@ -177,18 +187,22 @@ private constructor (){
         
 index < size; index++)
         {
-bufferedImage= bufferedImageArray[index]!
+bufferedImage= bufferedImageArray[index]!;
+    
 
     var newWidth: number = (bufferedImage!.getWidth() *percent /100).toInt();
         
         
-
+;
+    
 
     var newHeight: number = (bufferedImage!.getHeight() *percent /100).toInt();
         
         
-
-scaledBufferedImageArray[index]= this.createBufferedImage(bufferedImage, newWidth, newHeight, scale)
+;
+    
+scaledBufferedImageArray[index]= this.createBufferedImage(bufferedImage, newWidth, newHeight, scale);
+    
 }
 
 
@@ -211,15 +225,18 @@ scaledBufferedImageArray[index]= this.createBufferedImage(bufferedImage, newWidt
                 ;
         
         
-
+;
+    
 
     var scaledBufferedImageArray: BufferedImage[] = new Array(size);
         
         
-
+;
+    
 
     var bufferedImage: BufferedImage
-
+;
+    
 
 
 
@@ -230,18 +247,22 @@ scaledBufferedImageArray[index]= this.createBufferedImage(bufferedImage, newWidt
         
 index < size; index++)
         {
-bufferedImage= bufferedImageArray[index]!
+bufferedImage= bufferedImageArray[index]!;
+    
 
     var newWidth: number = (bufferedImage!.getWidth() *percent).toInt();
         
         
-
+;
+    
 
     var newHeight: number = (bufferedImage!.getHeight() *percent).toInt();
         
         
-
-scaledBufferedImageArray[index]= this.createBufferedImage(bufferedImage, newWidth, newHeight, scale)
+;
+    
+scaledBufferedImageArray[index]= this.createBufferedImage(bufferedImage, newWidth, newHeight, scale);
+    
 }
 
 
@@ -265,12 +286,14 @@ scaledBufferedImageArray[index]= this.createBufferedImage(bufferedImage, newWidt
                 ;
         
         
-
+;
+    
 
     var scaledBufferedImageArray: BufferedImage[] = new Array(size);
         
         
-
+;
+    
 
 
 
@@ -281,7 +304,8 @@ scaledBufferedImageArray[index]= this.createBufferedImage(bufferedImage, newWidt
         
 index < size; index++)
         {
-scaledBufferedImageArray[index]= this.createBufferedImage(bufferedImageArray[index]!, width, height, scale)
+scaledBufferedImageArray[index]= this.createBufferedImage(bufferedImageArray[index]!, width, height, scale);
+    
 }
 
 
@@ -304,6 +328,8 @@ var newHeight = newHeight
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.createBufferedImage(bufferedImage, newWidth, newHeight, true);
+
+                        ;
     
 }
 
@@ -320,6 +346,8 @@ var newHeight = newHeight
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.createBufferedImage(bufferedImage, newWidth, newHeight, scale, false);
+
+                        ;
     
 }
 
@@ -336,48 +364,58 @@ var newHeight = newHeight
     var width: number = bufferedImage!.getWidth()!;
         
         
-
+;
+    
 
     var height: number = bufferedImage!.getHeight()!;
         
         
-
+;
+    
 
     var d_newWidth: number = newWidth;
         
         
-
+;
+    
 
     var d_newHeight: number = newHeight;
         
         
-
+;
+    
 
     var widthRatio: number = d_newWidth /width;
         
         
-
+;
+    
 
     var heightRatio: number = d_newHeight /height;
         
         
-
+;
+    
 
     var ratioX: number = 1.0;
         
         
-
+;
+    
 
     var ratioY: number = 1.0;
         
         
-
+;
+    
 
                         if(scale)
                         
                                     {
-                                    ratioX= widthRatio
-ratioY= heightRatio
+                                    ratioX= widthRatio;
+    
+ratioY= heightRatio;
+    
 
                                     }
                                 
@@ -385,7 +423,8 @@ ratioY= heightRatio
     var affineTransform: AffineTransform = AffineTransform.getScaleInstance(ratioX, ratioY)!;
         
         
-
+;
+    
 
                         if(!scale && allowTranslate)
                         
@@ -394,13 +433,16 @@ ratioY= heightRatio
     var dx: number = (newWidth -width) /2;
         
         
-
+;
+    
 
     var dy: number = (newHeight -height) /2;
         
         
-
-affineTransform!.translate(dx, dy)
+;
+    
+affineTransform!.translate(dx, dy);
+    
 
                                     }
                                 
@@ -408,13 +450,16 @@ affineTransform!.translate(dx, dy)
     var newBufferedImage: BufferedImage = new BufferedImage(newWidth, newHeight, BufferedImage.TYPE_INT_ARGB_PRE);
         
         
-
+;
+    
 
     var graphics: Graphics2D = newBufferedImage!.createGraphics()!;
         
         
-
-graphics.drawRenderedImage(bufferedImage, affineTransform)
+;
+    
+graphics.drawRenderedImage(bufferedImage, affineTransform);
+    
 
 
 
@@ -434,74 +479,89 @@ var newHeight = newHeight
     var width: number = bufferedImage!.getWidth()!;
         
         
-
+;
+    
 
     var height: number = bufferedImage!.getHeight()!;
         
         
-
+;
+    
 
     var d_newWidth: number = newWidth;
         
         
-
+;
+    
 
     var d_newHeight: number = newHeight;
         
         
-
+;
+    
 
     var widthRatio: number = d_newWidth /width;
         
         
-
+;
+    
 
     var heightRatio: number = d_newHeight /height;
         
         
-
+;
+    
 
     var dx2: number = (newWidth -width).toInt();
         
         
-
+;
+    
 
     var dy2: number = (newHeight -height).toInt();
         
         
-
+;
+    
 
     var dx: number = dx2.toInt() /2;
         
         
-
+;
+    
 
     var dy: number = dy2.toInt() /2;
         
         
-
+;
+    
 
     var dx4: number = dx2.toInt() /4;
         
         
-
+;
+    
 
     var dy4: number = dy2.toInt() /4;
         
         
-
+;
+    
 
     var newBufferedImage: BufferedImage = new BufferedImage(newWidth, newHeight, BufferedImage.TYPE_INT_ARGB_PRE);
         
         
-
+;
+    
 
     var graphics: Graphics2D = newBufferedImage!.createGraphics()!;
         
         
-
+;
+    
 graphics.drawImage(bufferedImage, dx4, dy4, 
-                            null)
+                            null);
+    
 
 
 
@@ -534,15 +594,19 @@ var toolkitImage = toolkitImage
                             null), BufferedImage.TYPE_INT_ARGB);
         
         
-
+;
+    
 
     var g2d: Graphics2D = bufferedImage!.createGraphics()!;
         
         
-
+;
+    
 g2d.drawImage(toolkitImage, 0, 0, 
-                            null)
-g2d.dispose()
+                            null);
+    
+g2d.dispose();
+    
 
 
 
@@ -556,7 +620,8 @@ g2d.dispose()
     //var image = image
 
     var bufferedImage: BufferedImage
-
+;
+    
 
                         if(image.isMutable())
                         
@@ -565,8 +630,12 @@ g2d.dispose()
     var j2seImage: J2SEMutableImage = image as J2SEMutableImage;
         
         
+;
+    
+bufferedImage= j2seImage!.getImage();
 
-bufferedImage= j2seImage!.getImage() as BufferedImage
+                         as BufferedImage;
+    
 
                                     }
                                 
@@ -575,8 +644,12 @@ bufferedImage= j2seImage!.getImage() as BufferedImage
     var j2seImage: J2SEImmutableImage = image as J2SEImmutableImage;
         
         
+;
+    
+bufferedImage= j2seImage!.getImage();
 
-bufferedImage= j2seImage!.getImage() as BufferedImage
+                         as BufferedImage;
+    
 
                         }
                             
@@ -595,24 +668,35 @@ var bufferedImage = bufferedImage
     var commonLabels: CommonLabels = CommonLabels.getInstance()!;
         
         
-
+;
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(" BufferedImage -")
-stringBuffer!.append(commonLabels!.WIDTH_LABEL)
-stringBuffer!.appendint(bufferedImage!.getWidth())
-stringBuffer!.append(commonLabels!.HEIGHT_LABEL)
-stringBuffer!.appendint(bufferedImage!.getHeight())
-stringBuffer!.append(" Type: ")
-stringBuffer!.appendint(bufferedImage!.getType())
+;
+    
+stringBuffer!.append(" BufferedImage -");
+    
+stringBuffer!.append(commonLabels!.WIDTH_LABEL);
+    
+stringBuffer!.appendint(bufferedImage!.getWidth());
+    
+stringBuffer!.append(commonLabels!.HEIGHT_LABEL);
+    
+stringBuffer!.appendint(bufferedImage!.getHeight());
+    
+stringBuffer!.append(" Type: ");
+    
+stringBuffer!.appendint(bufferedImage!.getType());
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

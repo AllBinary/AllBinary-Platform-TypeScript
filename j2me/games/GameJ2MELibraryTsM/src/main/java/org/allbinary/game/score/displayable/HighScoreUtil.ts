@@ -107,45 +107,60 @@ public constructor (highScoresFactoryInterface: HighScoresFactoryInterface, high
     //var cmdListener = cmdListener
     //var name = name
     //var highScore = highScore
-this.highScoresFactoryInterface= highScoresFactoryInterface
-this.highScoresHelper= highScoresHelper
-this.highScoresArray= this.highScoresHelper!.getHighScoresArray()
-this.highScore= highScore
-this.abeClientInformation= abeClientInformation
-this.gameInfo= gameInfo
+this.highScoresFactoryInterface= highScoresFactoryInterface;
+    
+this.highScoresHelper= highScoresHelper;
+    
+this.highScoresArray= this.highScoresHelper!.getHighScoresArray();
+    
+this.highScore= highScore;
+    
+this.abeClientInformation= abeClientInformation;
+    
+this.gameInfo= gameInfo;
+    
 }
 
 
     public setHighScoresArray(highScoresArray: HighScores[]){
     //var highScoresArray = highScoresArray
-this.highScoresArray= highScoresArray
-firstTime= false
-this.saveHighScore()
+this.highScoresArray= highScoresArray;
+    
+firstTime= false;
+    
+this.saveHighScore();
+    
 }
 
 
     public update(name: string){
     //var name = name
-HighScoreNamePersistanceSingleton.getInstance()!.save(abeClientInformation, gameInfo, name)
-this.highScore!.setName(name)
+HighScoreNamePersistanceSingleton.getInstance()!.save(abeClientInformation, gameInfo, name);
+    
+this.highScore!.setName(name);
+    
 }
 
 
     public saveHighScore(){
 logUtil!.put(StringMaker().
-                            append(commonStrings!.START)!.append(StringUtil.getInstance()!.toString(this.highScore))!.toString(), this, "saveHighScore")
+                            append(commonStrings!.START)!.append(StringUtil.getInstance()!.toString(this.highScore))!.toString(), this, "saveHighScore");
+    
 
     var size: number = this.highScoresArray!.length
                 ;
         
         
-
+;
+    
 
                         if(firstTime && size == 0)
                         
                                     {
-                                    logUtil!.put("Games canvas did not give us any HighScores", this, "saveHighScore")
-highScoresFactoryInterface!.fetchHighScores(gameInfo, this)
+                                    logUtil!.put("Games canvas did not give us any HighScores", this, "saveHighScore");
+    
+highScoresFactoryInterface!.fetchHighScores(gameInfo, this);
+    
 
 
 
@@ -157,10 +172,12 @@ highScoresFactoryInterface!.fetchHighScores(gameInfo, this)
                                 
 
     var highScores: HighScores
-
+;
+    
 
     var highScoresAsString: string
-
+;
+    
 
 
 
@@ -171,14 +188,19 @@ highScoresFactoryInterface!.fetchHighScores(gameInfo, this)
         
 index < size; index++)
         {
-highScores= highScoresArray[index]!
-highScores!.addHighScore(this.highScore)
-highScoresAsString= highScores!.toString()
+highScores= highScoresArray[index]!;
+    
+highScores!.addHighScore(this.highScore);
+    
+highScoresAsString= highScores!.toString();
+    
 logUtil!.put(StringMaker().
-                            append("Added/Adding Score: ")!.append(highScoresAsString)!.toString(), this, "saveHighScore")
+                            append("Added/Adding Score: ")!.append(highScoresAsString)!.toString(), this, "saveHighScore");
+    
 }
 
-this.highScoresHelper!.setHighScoresArray(highScoresArray)
+this.highScoresHelper!.setHighScoresArray(highScoresArray);
+    
 }
 
 
@@ -188,8 +210,10 @@ this.highScoresHelper!.setHighScoresArray(highScoresArray)
     var commandListener: CommandListener = myCanvas!.getCustomCommandListener()!;
         
         
-
-commandListener!.commandAction(SUBMIT_TEXTBOX_COMMAND, myCanvas)
+;
+    
+commandListener!.commandAction(SUBMIT_TEXTBOX_COMMAND, myCanvas);
+    
 }
 
 

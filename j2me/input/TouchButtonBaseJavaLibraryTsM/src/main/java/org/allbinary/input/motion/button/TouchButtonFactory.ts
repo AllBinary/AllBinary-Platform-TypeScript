@@ -62,8 +62,10 @@ private constructor (){
 
 
     public defaultList(){
-this.list= LIST
-this.toggle(false, LIST)
+this.list= LIST;
+    
+this.toggle(false, LIST);
+    
 }
 
 
@@ -79,12 +81,14 @@ var list = list
                         if(list != BasicArrayListUtil.getInstance()!.getImmutableInstance())
                         
                                     {
-                                    this.savedList= list
+                                    this.savedList= list;
+    
 
                         if(!this.saved)
                         
                                     {
-                                    this.list= this.savedList
+                                    this.list= this.savedList;
+    
 
                                     }
                                 
@@ -100,9 +104,12 @@ var list = list
                         if(!this.saved)
                         
                                     {
-                                    this.saved= true
-this.savedList= this.list
-this.list= LIST
+                                    this.saved= true;
+    
+this.savedList= this.list;
+    
+this.list= LIST;
+    
 
                                     }
                                 
@@ -114,8 +121,10 @@ this.list= LIST
                                     }
                                 
                         else {
-                            this.list= this.savedList
-this.saved= false
+                            this.list= this.savedList;
+    
+this.saved= false;
+    
 
                         }
                             
@@ -142,7 +151,8 @@ var list = list
 
                                     }
                                 
-this.list= list
+this.list= list;
+    
 }
 
 

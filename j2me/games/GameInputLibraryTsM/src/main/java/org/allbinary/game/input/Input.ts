@@ -40,8 +40,10 @@ public constructor (id: number, name: string){
             super();
             var id = id
 var name = name
-this.setId(id)
-this.setName(name)
+this.setId(id);
+    
+this.setName(name);
+    
 }
 
 
@@ -57,7 +59,8 @@ this.setName(name)
 
     setId(key: number){
 var key = key
-this.id= key
+this.id= key;
+    
 }
 
 
@@ -73,7 +76,8 @@ this.id= key
 
     setName(keyName: string){
 var keyName = keyName
-this.name= keyName
+this.name= keyName;
+    
 }
 
 
@@ -82,16 +86,23 @@ this.name= keyName
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("Name: ")
-stringBuffer!.append(this.getName())
-stringBuffer!.append(" Id: ")
-stringBuffer!.appendint(this.getId())
+;
+    
+stringBuffer!.append("Name: ");
+    
+stringBuffer!.append(this.getName());
+    
+stringBuffer!.append(" Id: ");
+    
+stringBuffer!.appendint(this.getId());
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

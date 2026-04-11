@@ -72,8 +72,10 @@ export class HeadingValidation extends Validation
 public constructor (){
 
             super();
-            this.title= TitleValidation()
-this.logo= LogoValidation()
+            this.title= TitleValidation();
+    
+this.logo= LogoValidation();
+    
 }
 
 public constructor (document: Document){
@@ -84,35 +86,43 @@ public constructor (document: Document){
     var headingNodeList: NodeList = document.getElementsByTagName(HeadingData.NAME)!;
         
         
-
+;
+    
 
     var titleNode: Node = DomSearchHelper.getNode(TitleData.getInstance()!.NAME, headingNodeList!.item(0)!.getChildNodes())!;
         
         
-
+;
+    
 
     var logoNode: Node = DomSearchHelper.getNode(LogoData.getInstance()!.NAME, headingNodeList!.item(0)!.getChildNodes())!;
         
         
-
-this.title= TitleValidation(titleNode)
-this.logo= LogoValidation(logoNode)
+;
+    
+this.title= TitleValidation(titleNode);
+    
+this.logo= LogoValidation(logoNode);
+    
 }
 
-public constructor (hashMap: HashMap<Any, Any>){
+public constructor (hashMap: HashMap<any, any>){
 
             super();
             var hashMap = hashMap
-this.getFormData(hashMap)
+this.getFormData(hashMap);
+    
 }
 
 
                 //@Throws(Error::class)
             
-    public getFormData(hashMap: HashMap<Any, Any>){
+    public getFormData(hashMap: HashMap<any, any>){
 var hashMap = hashMap
-this.title= TitleValidation(hashMap)
-this.logo= LogoValidation(hashMap)
+this.title= TitleValidation(hashMap);
+    
+this.logo= LogoValidation(hashMap);
+    
 }
 
 
@@ -123,51 +133,67 @@ this.logo= LogoValidation(hashMap)
     var valid: Boolean = Boolean.TRUE;
         
         
-
+;
+    
 
     var titleValid: Boolean = Boolean.TRUE;
         
         
-
+;
+    
 
     var logoValid: Boolean = Boolean.TRUE;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.START, this, commonStrings!.IS_VALID)
+                                    logUtil!.put(this.commonStrings!.START, this, commonStrings!.IS_VALID);
+    
 
                                     }
                                 
 
-                        if(!this.title.isValid())
+                        if(!this.title.isValid();
+
+                        )
                         
                                     {
-                                    titleValid= Boolean.FALSE
+                                    titleValid= Boolean.FALSE;
+    
 
                                     }
                                 
 
-                        if(!this.logo.isValid())
+                        if(!this.logo.isValid();
+
+                        )
                         
                                     {
-                                    logoValid= Boolean.FALSE
+                                    logoValid= Boolean.FALSE;
+    
 
                                     }
                                 
                         else {
-                            this.logo.processLogoFile()
+                            this.logo.processLogoFile();
+    
 
                         }
                             
 
-                        if(!titleValid && !logoValid)
+                        if(!titleValid;
+
+                         && !logoValid;
+
+                        )
                         
                                     {
-                                    valid= Boolean.FALSE
+                                    valid= Boolean.FALSE;
+    
 
                                     }
                                 
@@ -175,7 +201,8 @@ this.logo= LogoValidation(hashMap)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("HeadingValidation: " +valid, this, commonStrings!.IS_VALID)
+                                    logUtil!.put("HeadingValidation: " +valid, this, commonStrings!.IS_VALID);
+    
 
                                     }
                                 
@@ -185,13 +212,16 @@ this.logo= LogoValidation(hashMap)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return valid;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put("Failed to validate form", this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put("Failed to validate form", this, commonStrings!.IS_VALID, e);
+    
 
                                     }
                                 
@@ -213,51 +243,69 @@ this.logo= LogoValidation(hashMap)
     var valid: Boolean = Boolean.TRUE;
         
         
-
+;
+    
 
     var titleValid: Boolean = Boolean.TRUE;
         
         
-
+;
+    
 
     var logoValid: Boolean = Boolean.TRUE;
         
         
-
+;
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
+;
+    
 
+                        if(!this.title.isValid();
 
-                        if(!this.title.isValid())
+                        )
                         
                                     {
-                                    titleValid= Boolean.FALSE
+                                    titleValid= Boolean.FALSE;
+    
 
                                     }
                                 
 
-                        if(!this.logo.isValid())
+                        if(!this.logo.isValid();
+
+                        )
                         
                                     {
-                                    logoValid= Boolean.FALSE
+                                    logoValid= Boolean.FALSE;
+    
 
                                     }
                                 
 
-                        if(!titleValid && !logoValid)
+                        if(!titleValid;
+
+                         && !logoValid;
+
+                        )
                         
                                     {
-                                    valid= Boolean.FALSE
+                                    valid= Boolean.FALSE;
+    
 
                                     }
                                 
 
-                        if(!valid)
+                        if(!valid;
+
+                        )
                         
                                     {
-                                    stringBuffer!.append("Include a title and/or logo for the header.")
+                                    stringBuffer!.append("Include a title and/or logo for the header.");
+    
 
                                     }
                                 
@@ -266,14 +314,19 @@ this.logo= LogoValidation(hashMap)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e)
+                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e);
+    
 
                                     }
                                 
@@ -317,9 +370,12 @@ var document = document
     var node: Node = document.createElement(HeadingData.NAME)!;
         
         
-
-node.appendChild(this.logo.toXmlNode(document))
-node.appendChild(this.title.toXmlNode(document))
+;
+    
+node.appendChild(this.logo.toXmlNode(document));
+    
+node.appendChild(this.title.toXmlNode(document));
+    
 
 
 

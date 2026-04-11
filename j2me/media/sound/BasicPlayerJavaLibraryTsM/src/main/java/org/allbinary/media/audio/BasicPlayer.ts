@@ -65,8 +65,10 @@ export class BasicPlayer
 public constructor (){
 
             super();
-            this.setLoopCount(0)
-this.setState(Player.UNREALIZED)
+            this.setLoopCount(0);
+    
+this.setState(Player.UNREALIZED);
+    
 }
 
 
@@ -96,7 +98,7 @@ var controlType = controlType
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new Array(0);
+                        return [];
     
 }
 
@@ -109,10 +111,13 @@ var controlType = controlType
     public addPlayerListener(playerListener: PlayerListener){
 var playerListener = playerListener
 
-                        if(!this.listenersList!.contains(playerListener))
+                        if(!this.listenersList!.contains(playerListener);
+
+                        )
                         
                                     {
-                                    this.listenersList!.add(playerListener)
+                                    this.listenersList!.add(playerListener);
+    
 
                                     }
                                 
@@ -121,7 +126,8 @@ var playerListener = playerListener
 
     public removePlayerListener(playerListener: PlayerListener){
 var playerListener = playerListener
-this.listenersList!.remove(playerListener)
+this.listenersList!.remove(playerListener);
+    
 }
 
 
@@ -138,7 +144,8 @@ this.listenersList!.remove(playerListener)
 
     public setState(state: number){
 var state = state
-this.state= state
+this.state= state;
+    
 }
 
 
@@ -181,7 +188,8 @@ this.state= state
 
     public setLoopCount(count: number){
 var count = count
-this.loopCount= count
+this.loopCount= count;
+    
 }
 
 
@@ -213,7 +221,8 @@ var now = now
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public start(){
-this.setState(Player.STARTED)
+this.setState(Player.STARTED);
+    
 }
 
 
@@ -221,7 +230,8 @@ this.setState(Player.STARTED)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public stop(){
-this.setState(Player.PREFETCHED)
+this.setState(Player.PREFETCHED);
+    
 }
 
 

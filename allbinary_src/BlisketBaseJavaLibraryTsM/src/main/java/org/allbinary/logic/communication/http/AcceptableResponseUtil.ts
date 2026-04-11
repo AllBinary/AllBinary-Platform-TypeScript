@@ -18,7 +18,10 @@
 
 
 
-import { Vector } from "../../../../../java/util/Vector.js";
+            import Vector from "@ohos.util.Vector";
+        
+
+//import { Vector } from "../../../../../java/util/Vector.js";
 
     
 
@@ -42,7 +45,8 @@ export class AcceptableResponseUtil
 
 
                 init{
-AcceptableResponseFactory.getInstance()!.HTML.hashCode()
+AcceptableResponseFactory.getInstance()!.HTML.hashCode();
+    
 }
 
     public readonly candidateVector: Vector = new Vector();
@@ -59,7 +63,9 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return candidateVector!.get(index) as String;
+                        return candidateVector!.get(index);
+
+                         as String;
     
 }
 
@@ -70,7 +76,9 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return tagNameVector!.get(index) as String;
+                        return tagNameVector!.get(index);
+
+                         as String;
     
 }
 
@@ -81,6 +89,8 @@ var index = index
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return candidateVector!.length;
+
+                        ;
     
 }
 

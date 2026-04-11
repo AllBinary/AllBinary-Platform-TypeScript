@@ -32,7 +32,7 @@ export class PropertiesTag extends CommandTag {
         
         
 
-    private propertiesHashMap: HashMap<Any, Any>
+    private propertiesHashMap: HashMap<any, any>
 public constructor (){
 
             super();
@@ -40,15 +40,17 @@ public constructor (){
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
+    
 
                                     }
                                 
-this.propertiesHashMap= HashMap<Any, Any>()
+this.propertiesHashMap= HashMap<any, any>();
+    
 }
 
 
-    getPropertiesHashMap(): HashMap<Any, Any>{
+    getPropertiesHashMap(): HashMap<any, any>{
 
 
 
@@ -63,11 +65,13 @@ this.propertiesHashMap= HashMap<Any, Any>()
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    logUtil!.put("Tag Ended", this, "doEndTag")
+                                    logUtil!.put("Tag Ended", this, "doEndTag");
+    
 
                                     }
                                 
-this.propertiesHashMap= HashMap<Any, Any>()
+this.propertiesHashMap= HashMap<any, any>();
+    
 
 
 

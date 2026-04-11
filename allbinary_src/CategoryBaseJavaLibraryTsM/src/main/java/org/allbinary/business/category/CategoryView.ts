@@ -18,7 +18,10 @@
 
 
 
-import { Vector } from "../../../../java/util/Vector.js";
+            import Vector from "@ohos.util.Vector";
+        
+
+//import { Vector } from "../../../../java/util/Vector.js";
 
     
 import { CategoryPropertiesInterface } from "../../../../org/allbinary/business/category/properties/CategoryPropertiesInterface.js";
@@ -61,7 +64,8 @@ public constructor (categoryInterface: CategoryInterface){
 
             super();
             var categoryInterface = categoryInterface
-this.categoryInterface= categoryInterface
+this.categoryInterface= categoryInterface;
+    
 }
 
 
@@ -83,17 +87,20 @@ var document = document
     var node: Node = document.createElement(CategoryData.getInstance()!.NAME)!;
         
         
-
+;
+    
 
     var childCategoryVector: Vector = this.categoryInterface!.getChildNodes()!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
                         
                                     {
-                                    logUtil!.put("Number Of Children: " +childCategoryVector!.length, this, "toXmlNode")
+                                    logUtil!.put("Number Of Children: " +childCategoryVector!.length, this, "toXmlNode");
+    
 
                                     }
                                 
@@ -101,7 +108,8 @@ var document = document
     var size: number = childCategoryVector!.length!;
         
         
-
+;
+    
 
 
 
@@ -116,19 +124,22 @@ i < size; i++)
     var anyType: any = {} = childCategoryVector!.get(i)!;
         
         
-
+;
+    
 
     var categoryPropertiesInterface: CategoryPropertiesInterface = 
                 null
             ;
         
         
-
+;
+    
 
                         if(InterfaceUtil.isImplemented("CategoryPropertiesInterface", anyType))
                         
                                     {
-                                    categoryPropertiesInterface= anyType as CategoryPropertiesInterface
+                                    categoryPropertiesInterface= anyType as CategoryPropertiesInterface;
+    
 
                                     }
                                 
@@ -140,17 +151,20 @@ i < size; i++)
     var categoryInterface: CategoryInterface = anyType as CategoryInterface;
         
         
-
-categoryPropertiesInterface= categoryInterface!.getProperties()
+;
+    
+categoryPropertiesInterface= categoryInterface!.getProperties();
+    
 
                                     }
                                 
                         else {
                             
-    var isImpl: string = InterfaceUtil.viewAll(anyType!::class, CommonSeps.getInstance()!.NEW_LINE)!;
+    var isImpl: string = InterfaceUtil.viewAll(anyType!constructor, CommonSeps.getInstance()!.NEW_LINE)!;
         
         
-
+;
+    
 
 
 
@@ -163,8 +177,10 @@ categoryPropertiesInterface= categoryInterface!.getProperties()
                             toXmlNode(document)!;
         
         
-
-node.appendChild(childCategoryNode)
+;
+    
+node.appendChild(childCategoryNode);
+    
 }
 
 

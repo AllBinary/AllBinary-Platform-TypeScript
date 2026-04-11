@@ -18,10 +18,13 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { HashMap } from "../../java/util/HashMap.js";
 
     
-import { Vector } from "../../java/util/Vector.js";
+
+//import { Vector } from "../../java/util/Vector.js";
 
     
 import { PageContext } from "../../javax/servlet/jsp/PageContext.js";
@@ -63,22 +66,27 @@ export class InventoryRequestHelper extends ModifyTable {
         
 
     private readonly itemInterface: ItemInterface
-public constructor (propertiesHashMap: HashMap<Any, Any>, pageContext: PageContext){
+public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
             var propertiesHashMap = propertiesHashMap
 var pageContext = pageContext
 
-    var inventoryTag: HelperTag = propertiesHashMap!.get(AbTagData.PARENT) as HelperTag;
-        
-        
+    var inventoryTag: HelperTag = propertiesHashMap!.get(AbTagData.PARENT);
 
+                         as HelperTag;
+        
+        
+;
+    
 
     var itemView: InventoryItemView = InventoryItemViewParentTagHelper.getInstance()!.getInventoryItemView(inventoryTag)!;
         
         
-
-this.itemInterface= itemView!.getItemInterface()
+;
+    
+this.itemInterface= itemView!.getItemInterface();
+    
 }
 
 
@@ -88,26 +96,33 @@ this.itemInterface= itemView!.getItemInterface()
 
         try {
             
-    var dataMappingInterface: TableMappingInterface = this.getItemInterface() as TableMappingInterface;
-        
-        
+    var dataMappingInterface: TableMappingInterface = this.getItemInterface();
 
+                         as TableMappingInterface;
+        
+        
+;
+    
 
     var values: Vector = dataMappingInterface!.toVector()!;
         
         
-
-InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!.insert(values)
+;
+    
+InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!.insert(values);
+    
 
     var success: string = "Successfully Added Product";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put(success, this, "insert()")
+                                    logUtil!.put(success, this, "insert()");
+    
 
                                     }
                                 
@@ -117,18 +132,22 @@ InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!.insert(value
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to add item to Inventory";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "insert()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "insert()", e);
+    
 
                                     }
                                 
@@ -147,36 +166,51 @@ InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!.insert(value
 
         try {
             
-    var dataMappingInterface: TableMappingInterface = this.getItemInterface() as TableMappingInterface;
-        
-        
+    var dataMappingInterface: TableMappingInterface = this.getItemInterface();
 
-
-    var id: string = dataMappingInterface!.getKey() as String;
+                         as TableMappingInterface;
         
         
+;
+    
 
-InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!.deleteWhere(BasicItemData.ID, id)
+    var id: string = dataMappingInterface!.getKey();
+
+                         as String;
+        
+        
+;
+    
+InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!.deleteWhere(BasicItemData.ID, id);
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("Successfully Removed the item with ")
-stringBuffer!.append(BasicItemData.ID)
-stringBuffer!.append("=")
-stringBuffer!.append(id)
-stringBuffer!.append(" from to the Inventory table")
+;
+    
+stringBuffer!.append("Successfully Removed the item with ");
+    
+stringBuffer!.append(BasicItemData.ID);
+    
+stringBuffer!.append("=");
+    
+stringBuffer!.append(id);
+    
+stringBuffer!.append(" from to the Inventory table");
+    
 
     var success: string = stringBuffer!.toString()!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put(success, this, "doStartTag()")
+                                    logUtil!.put(success, this, "doStartTag()");
+    
 
                                     }
                                 
@@ -186,18 +220,22 @@ stringBuffer!.append(" from to the Inventory table")
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to remove item with from Inventory";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "doStartTag()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "doStartTag()", e);
+    
 
                                     }
                                 
@@ -215,18 +253,22 @@ stringBuffer!.append(" from to the Inventory table")
     public update(): string{
 
         try {
-            this.delete()
-this.insert()
+            this.delete();
+    
+this.insert();
+    
 
     var success: string = "Item Successfully Updated";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put(success, this, "update()")
+                                    logUtil!.put(success, this, "update()");
+    
 
                                     }
                                 
@@ -236,18 +278,22 @@ this.insert()
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed To Update Item";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "update()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "update()", e);
+    
 
                                     }
                                 

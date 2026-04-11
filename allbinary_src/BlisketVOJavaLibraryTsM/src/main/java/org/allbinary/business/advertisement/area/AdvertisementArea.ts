@@ -49,25 +49,42 @@ export class AdvertisementArea
     private advertisementAreaConstraintsInterface: AdvertisementAreaConstraintsInterface
 
     private campaign: string
-public constructor (hashMap: HashMap<Any, Any>){
+public constructor (hashMap: HashMap<any, any>){
 
             super();
             var hashMap = hashMap
-this.name= hashMap!.get(AdvertisementAreaData.getInstance()!.NAME) as String
-this.storeName= hashMap!.get(StoreFrontData.getInstance()!.NAME) as String
-this.description= hashMap!.get(AdvertisementAreaData.getInstance()!.DESCRIPTION) as String
+this.name= hashMap!.get(AdvertisementAreaData.getInstance()!.NAME);
 
-    var constraintsDomString: string = hashMap!.get(AdvertisementAreaData.getInstance()!.CONSTRAINTS) as String;
+                         as String;
+    
+this.storeName= hashMap!.get(StoreFrontData.getInstance()!.NAME);
+
+                         as String;
+    
+this.description= hashMap!.get(AdvertisementAreaData.getInstance()!.DESCRIPTION);
+
+                         as String;
+    
+
+    var constraintsDomString: string = hashMap!.get(AdvertisementAreaData.getInstance()!.CONSTRAINTS);
+
+                         as String;
         
         
-
+;
+    
 
     var document: Document = DomDocumentHelper.create(constraintsDomString)!;
         
         
+;
+    
+this.advertisementAreaConstraintsInterface= AdvertisementAreaConstraints(document);
+    
+this.campaign= hashMap!.get(AdvertisementCampaignData.getInstance()!.NAME);
 
-this.advertisementAreaConstraintsInterface= AdvertisementAreaConstraints(document)
-this.campaign= hashMap!.get(AdvertisementCampaignData.getInstance()!.NAME) as String
+                         as String;
+    
 }
 
 
@@ -123,31 +140,36 @@ this.campaign= hashMap!.get(AdvertisementCampaignData.getInstance()!.NAME) as St
 
     public setName(name: string){
 var name = name
-this.name= name
+this.name= name;
+    
 }
 
 
     public setStoreName(storeName: string){
 var storeName = storeName
-this.storeName= storeName
+this.storeName= storeName;
+    
 }
 
 
     public setDescription(description: string){
 var description = description
-this.description= description
+this.description= description;
+    
 }
 
 
     public setConstraints(advertisementConstraintsInterface: AdvertisementAreaConstraintsInterface){
 var advertisementConstraintsInterface = advertisementConstraintsInterface
-this.advertisementAreaConstraintsInterface= advertisementAreaConstraintsInterface
+this.advertisementAreaConstraintsInterface= advertisementAreaConstraintsInterface;
+    
 }
 
 
     public setCampaign(campaign: string){
 var campaign = campaign
-this.campaign= campaign
+this.campaign= campaign;
+    
 }
 
 

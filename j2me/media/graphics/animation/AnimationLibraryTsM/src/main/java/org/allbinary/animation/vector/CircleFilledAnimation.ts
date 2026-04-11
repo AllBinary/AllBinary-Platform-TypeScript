@@ -53,9 +53,12 @@ public constructor (width: number, height: number, basicColor: BasicColor)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.width= width
-this.height= height
-this.setBasicColorP(basicColor)
+this.width= width;
+    
+this.height= height;
+    
+this.setBasicColorP(basicColor);
+    
 }
 
 
@@ -67,8 +70,10 @@ this.setBasicColorP(basicColor)
     //var graphics = graphics
     //var x = x
     //var y = y
-this.basicSetColorUtil!.setBasicColorP(graphics, this.getBasicColorP(), this.getColor())
-graphics.fillRect(x, y, width, height)
+this.basicSetColorUtil!.setBasicColorP(graphics, this.getBasicColorP(), this.getColor());
+    
+graphics.fillRect(x, y, width, height);
+    
 }
 
 

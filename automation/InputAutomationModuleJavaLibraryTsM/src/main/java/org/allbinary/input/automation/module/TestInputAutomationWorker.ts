@@ -56,15 +56,24 @@ export class TestInputAutomationWorker
 public constructor (){
 
             super();
-            this.captureWorker= ScreenCaptureImagesWorker()
-this.changedPixelsImageComparisonResultsWorker= SaveImageComparisonWorker()
-this.saveMotionRectanglesAsImagesWorker= SaveMotionRectanglesResultsWorker()
-this.moveMouseToFirstMotionRectanglesResultsWorker= TestInputForMotionRectanglesResultsWorker()
-this.motionRectanglesWorker!.addListener(this.saveMotionRectanglesAsImagesWorker)
-this.motionRectanglesWorker!.addListener(this.moveMouseToFirstMotionRectanglesResultsWorker)
-this.imageComparisonWorker!.addListener(this.changedPixelsImageComparisonResultsWorker)
-this.imageComparisonWorker!.addListener(this.motionRectanglesWorker)
-this.captureWorker!.addListener(this.imageComparisonWorker)
+            this.captureWorker= ScreenCaptureImagesWorker();
+    
+this.changedPixelsImageComparisonResultsWorker= SaveImageComparisonWorker();
+    
+this.saveMotionRectanglesAsImagesWorker= SaveMotionRectanglesResultsWorker();
+    
+this.moveMouseToFirstMotionRectanglesResultsWorker= TestInputForMotionRectanglesResultsWorker();
+    
+this.motionRectanglesWorker!.addListener(this.saveMotionRectanglesAsImagesWorker);
+    
+this.motionRectanglesWorker!.addListener(this.moveMouseToFirstMotionRectanglesResultsWorker);
+    
+this.imageComparisonWorker!.addListener(this.changedPixelsImageComparisonResultsWorker);
+    
+this.imageComparisonWorker!.addListener(this.motionRectanglesWorker);
+    
+this.captureWorker!.addListener(this.imageComparisonWorker);
+    
 }
 
 

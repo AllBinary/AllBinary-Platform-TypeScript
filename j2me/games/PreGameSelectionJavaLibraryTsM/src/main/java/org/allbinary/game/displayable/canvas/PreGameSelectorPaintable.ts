@@ -47,14 +47,18 @@ public constructor (title: string, preGameScrollSelectionForm: PreGameScrollSele
             super();
             var title = title
 var preGameScrollSelectionForm = preGameScrollSelectionForm
-this.title= title
+this.title= title;
+    
 
     var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
         
         
-
-this.canvasDrawLineString= CanvasDrawLineString(displayInfo!.getLastHalfWidth(), 0)
-this.preGameScrollSelectionForm= preGameScrollSelectionForm
+;
+    
+this.canvasDrawLineString= CanvasDrawLineString(displayInfo!.getLastHalfWidth(), 0);
+    
+this.preGameScrollSelectionForm= preGameScrollSelectionForm;
+    
 }
 
 
@@ -63,16 +67,21 @@ this.preGameScrollSelectionForm= preGameScrollSelectionForm
     var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
         
         
-
-this.canvasDrawLineString= CanvasDrawLineString(displayInfo!.getLastHalfWidth(), 0)
+;
+    
+this.canvasDrawLineString= CanvasDrawLineString(displayInfo!.getLastHalfWidth(), 0);
+    
 }
 
 
     public paint(graphics: Graphics){
 var graphics = graphics
-graphics.setColor(BasicColorFactory.getInstance()!.WHITE.toInt())
-this.canvasDrawLineString!.paint(graphics, title, 0)
-this.getPreGameSelectionForm()!.paint(graphics)
+graphics.setColor(BasicColorFactory.getInstance()!.WHITE.toInt());
+    
+this.canvasDrawLineString!.paint(graphics, title, 0);
+    
+this.getPreGameSelectionForm()!.paint(graphics);
+    
 }
 
 

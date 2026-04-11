@@ -139,7 +139,8 @@ public constructor (abeClientInformation: AbeClientInformationInterface, command
 
                             //For kotlin this is before the body of the constructor.
                     
-logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
+logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
+    
 
                         if(helpPaintable == 
                                     null
@@ -153,56 +154,76 @@ logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
 
                                     }
                                 
-this.abeClientInformation= abeClientInformation
-this.helpPaintable= helpPaintable as InputMappingHelpPaintable
-this.inputMapping= PlatformInputMappingFactory.getInstance()!.getPersistentInputMappingInstance()
-this.paintable= ProcessPaintable()
-this.colorFillPaintable= ColorFillPaintableFactory.getInstance()!.getInstance(allBinaryGameLayerManager!.getBackgroundBasicColor(), false)
+this.abeClientInformation= abeClientInformation;
+    
+this.helpPaintable= helpPaintable as InputMappingHelpPaintable;
+    
+this.inputMapping= PlatformInputMappingFactory.getInstance()!.getPersistentInputMappingInstance();
+    
+this.paintable= ProcessPaintable();
+    
+this.colorFillPaintable= ColorFillPaintableFactory.getInstance()!.getInstance(allBinaryGameLayerManager!.getBackgroundBasicColor(), false);
+    
 }
 
 
     public close(){
-super.close()
-this.paintable.process()
-this.selectedGameKey= NONE
-this.selectedInput= NONE
-this.update()
+super.close();
+    
+this.paintable.process();
+    
+this.selectedGameKey= NONE;
+    
+this.selectedInput= NONE;
+    
+this.update();
+    
 }
 
 
     public initCommands(cmdListener: CommandListener){
 var cmdListener = cmdListener
-this.removeAllCommands()
-this.addCommand(GameCommandsFactory.getInstance()!.CLOSE_AND_SHOW_GAME_CANVAS)
-this.addCommand(GameInputMappingCanvas.DEFAULT)
-this.addCommand(GameInputMappingInstructionsCanvas.DISPLAY)
-this.setCommandListener(cmdListener)
+this.removeAllCommands();
+    
+this.addCommand(GameCommandsFactory.getInstance()!.CLOSE_AND_SHOW_GAME_CANVAS);
+    
+this.addCommand(GameInputMappingCanvas.DEFAULT);
+    
+this.addCommand(GameInputMappingInstructionsCanvas.DISPLAY);
+    
+this.setCommandListener(cmdListener);
+    
 }
 
 
     public keyPressed(keyCode: number){
 var keyCode = keyCode
-this.keyPressed(keyCode, 0)
+this.keyPressed(keyCode, 0);
+    
 }
 
 
     public keyReleased(keyCode: number){
 var keyCode = keyCode
-this.keyReleased(keyCode, 0)
+this.keyReleased(keyCode, 0);
+    
 }
 
 
     public keyRepeated(keyCode: number){
 var keyCode = keyCode
-this.keyRepeated(keyCode, 0)
+this.keyRepeated(keyCode, 0);
+    
 }
 
 
     public keyPressed(keyCode: number, deviceId: number){
 var keyCode = keyCode
 var deviceId = deviceId
-this.addGameKeyEvent(keyCode, false)
-super.keyPressed(keyCode, 0)
+this.addGameKeyEvent(keyCode, false);
+    
+super.keyPressed(keyCode, 0);
+    
 }
 
 
@@ -216,21 +237,28 @@ var repeated = repeated
 
         try {
             logUtil!.put(StringMaker().
-                            append("Raw Device Key Code: ")!.append(Integer.toHexString(keyCode))!.toString(), this, this.gameInputStrings!.ADD_KEY_EVENT)
+                            append("Raw Device Key Code: ")!.append(Integer.toHexString(keyCode))!.toString(), this, this.gameInputStrings!.ADD_KEY_EVENT);
+    
 
     var gameKey: GameKey = this.inputToGameKeyMapping!.getInstance(this, keyCode)!;
         
         
-
+;
+    
 
     var input: Input = inputFactory!.getInstance(keyCode)!;
         
         
+;
+    
+this.process(gameKey, input);
+    
 
-this.process(gameKey, input)
-} catch(e: Exception)
+                //: 
+} catch(e) 
             {
-logUtil!.put("Key Event Error", this, this.gameInputStrings!.ADD_KEY_EVENT, e)
+logUtil!.put("Key Event Error", this, this.gameInputStrings!.ADD_KEY_EVENT, e);
+    
 }
 
 }
@@ -245,22 +273,30 @@ logUtil!.put("Key Event Error", this, this.gameInputStrings!.ADD_KEY_EVENT, e)
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("Start Passed GameKey: ")
-stringBuffer!.append(this.stringUtil!.toString(gameKey))
-stringBuffer!.append(" Input: ")
-stringBuffer!.append(this.stringUtil!.toString(input))
-logUtil!.put(stringBuffer!.toString(), this, commonStrings!.PROCESS)
+;
+    
+stringBuffer!.append("Start Passed GameKey: ");
+    
+stringBuffer!.append(this.stringUtil!.toString(gameKey));
+    
+stringBuffer!.append(" Input: ");
+    
+stringBuffer!.append(this.stringUtil!.toString(input));
+    
+logUtil!.put(stringBuffer!.toString(), this, commonStrings!.PROCESS);
+    
 
                         if(this.selectedGameKey != NONE)
                         
                                     {
-                                    this.gameActionCrud(gameKey, input)
+                                    this.gameActionCrud(gameKey, input);
+    
 
                                     }
                                 
                         else {
-                            this.setSelectedAction(gameKey)
+                            this.setSelectedAction(gameKey);
+    
 
                         }
                             
@@ -270,11 +306,16 @@ logUtil!.put(stringBuffer!.toString(), this, commonStrings!.PROCESS)
     setSelectedAction(gameKey: GameKey){
 var gameKey = gameKey
 logUtil!.put(StringMaker().
-                            append("Selected GameKey: ")!.append(this.stringUtil!.toString(gameKey))!.toString(), this, "setSelectedAction")
-this.selectedGameKey= gameKey
-this.selectedInput= NONE
-this.helpPaintable!.update(this.selectedGameKey, this.selectedInput)
-this.repaintBehavior!.onChangeRepaint(this)
+                            append("Selected GameKey: ")!.append(this.stringUtil!.toString(gameKey))!.toString(), this, "setSelectedAction");
+    
+this.selectedGameKey= gameKey;
+    
+this.selectedInput= NONE;
+    
+this.helpPaintable!.update(this.selectedGameKey, this.selectedInput);
+    
+this.repaintBehavior!.onChangeRepaint(this);
+    
 }
 
 
@@ -287,12 +328,18 @@ this.repaintBehavior!.onChangeRepaint(this)
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("Start GameKey: ")
-stringBuffer!.append(this.stringUtil!.toString(this.selectedGameKey))
-stringBuffer!.append(" Input: ")
-stringBuffer!.append(this.stringUtil!.toString(this.selectedInput))
-logUtil!.put(stringBuffer!.toString(), this, "gameActionCrud")
+;
+    
+stringBuffer!.append("Start GameKey: ");
+    
+stringBuffer!.append(this.stringUtil!.toString(this.selectedGameKey));
+    
+stringBuffer!.append(" Input: ");
+    
+stringBuffer!.append(this.stringUtil!.toString(this.selectedInput));
+    
+logUtil!.put(stringBuffer!.toString(), this, "gameActionCrud");
+    
 
                         if(this.selectedInput == NONE)
                         
@@ -301,26 +348,33 @@ logUtil!.put(stringBuffer!.toString(), this, "gameActionCrud")
     var list: BasicArrayList = inputMapping!.getInputMapping()!.getMappedInput(this.selectedGameKey)!;
         
         
-
+;
+    
 
     var isInputAlreadyMappedToSelectedAction: boolean = list.contains(input)!;
         
         
-
+;
+    
 
                         if(isInputAlreadyMappedToSelectedAction)
                         
                                     {
                                     logUtil!.put(StringMaker().
-                            append("Already Mapped Input: ")!.append(this.stringUtil!.toString(input))!.toString(), this, "gameActionCrud")
-this.selectedInput= input
-this.helpPaintable!.update(this.selectedGameKey, this.selectedInput)
-this.repaintBehavior!.onChangeRepaint(this)
+                            append("Already Mapped Input: ")!.append(this.stringUtil!.toString(input))!.toString(), this, "gameActionCrud");
+    
+this.selectedInput= input;
+    
+this.helpPaintable!.update(this.selectedGameKey, this.selectedInput);
+    
+this.repaintBehavior!.onChangeRepaint(this);
+    
 
                                     }
                                 
                         else {
-                            this.addNewMapping(gameKey, input)
+                            this.addNewMapping(gameKey, input);
+    
 
                         }
                             
@@ -331,12 +385,14 @@ this.repaintBehavior!.onChangeRepaint(this)
                         if(this.inputMapping!.isDelete(input))
                         
                                     {
-                                    this.deleteCurrentMapping()
+                                    this.deleteCurrentMapping();
+    
 
                                     }
                                 
                         else {
-                            this.setSelectedAction(gameKey)
+                            this.setSelectedAction(gameKey);
+    
 
                         }
                             
@@ -352,36 +408,52 @@ this.repaintBehavior!.onChangeRepaint(this)
     var METHOD_NAME: string = "addNewMapping";
         
         
-
-logUtil!.put(commonStrings!.START, this, METHOD_NAME)
+;
+    
+logUtil!.put(commonStrings!.START, this, METHOD_NAME);
+    
 
     var isInputAlreadyMapped: boolean = inputMapping!.getInputMapping()!.isMapped(input)!;
         
         
+;
+    
 
+                        if(!isInputAlreadyMapped && !this.inputMapping!.isSystemInput(input);
 
-                        if(!isInputAlreadyMapped && !this.inputMapping!.isSystemInput(input))
+                        )
                         
                                     {
                                     
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("Add Key Mapping : GameKey: ")
-stringBuffer!.append(this.stringUtil!.toString(this.selectedGameKey))
-stringBuffer!.append(" Input: ")
-stringBuffer!.append(this.stringUtil!.toString(this.selectedInput))
-logUtil!.put(stringBuffer!.toString(), this, METHOD_NAME)
-inputMapping!.getInputMapping()!.add(this.selectedGameKey, input)
-this.selectedInput= input
-this.update()
+;
+    
+stringBuffer!.append("Add Key Mapping : GameKey: ");
+    
+stringBuffer!.append(this.stringUtil!.toString(this.selectedGameKey));
+    
+stringBuffer!.append(" Input: ");
+    
+stringBuffer!.append(this.stringUtil!.toString(this.selectedInput));
+    
+logUtil!.put(stringBuffer!.toString(), this, METHOD_NAME);
+    
+inputMapping!.getInputMapping()!.add(this.selectedGameKey, input);
+    
+this.selectedInput= input;
+    
+this.update();
+    
 
                                     }
                                 
                         else {
-                            logUtil!.put("Unable to add Mapping since one already exists or is MENU, HOME, or BACK key and setting selected action to what it is already mapped to", this, METHOD_NAME)
-this.setSelectedAction(gameKey)
+                            logUtil!.put("Unable to add Mapping since one already exists or is MENU, HOME, or BACK key and setting selected action to what it is already mapped to", this, METHOD_NAME);
+    
+this.setSelectedAction(gameKey);
+    
 
                         }
                             
@@ -395,12 +467,14 @@ this.setSelectedAction(gameKey)
     var METHOD_NAME: string = "deleteCurrentMapping";
         
         
-
+;
+    
 
     var list: BasicArrayList = inputMapping!.getInputMapping()!.getMappedInput(this.selectedGameKey)!;
         
         
-
+;
+    
 
                         if(list.size() > 1)
                         
@@ -409,21 +483,32 @@ this.setSelectedAction(gameKey)
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("Start GameKey: ")
-stringBuffer!.append("Remove Key Mapping: GameKey: ")
-stringBuffer!.append(stringUtil!.toString(this.selectedGameKey))
-stringBuffer!.append(" Input: ")
-stringBuffer!.append(stringUtil!.toString(this.selectedInput))
-logUtil!.put(stringBuffer!.toString(), this, METHOD_NAME)
-inputMapping!.getInputMapping()!.remove(this.selectedGameKey, this.selectedInput)
-this.selectedInput= NONE
-this.update()
+;
+    
+stringBuffer!.append("Start GameKey: ");
+    
+stringBuffer!.append("Remove Key Mapping: GameKey: ");
+    
+stringBuffer!.append(stringUtil!.toString(this.selectedGameKey));
+    
+stringBuffer!.append(" Input: ");
+    
+stringBuffer!.append(stringUtil!.toString(this.selectedInput));
+    
+logUtil!.put(stringBuffer!.toString(), this, METHOD_NAME);
+    
+inputMapping!.getInputMapping()!.remove(this.selectedGameKey, this.selectedInput);
+    
+this.selectedInput= NONE;
+    
+this.update();
+    
 
                                     }
                                 
                         else {
-                            logUtil!.put("Can't Remove Last Key Mapping", this, METHOD_NAME)
+                            logUtil!.put("Can't Remove Last Key Mapping", this, METHOD_NAME);
+    
 
                         }
                             
@@ -433,27 +518,37 @@ this.update()
                 //@Throws(Error::class)
             
     public setDefault(){
-inputMapping!.setDefault(abeClientInformation)
-this.helpPaintable!.update(NONE, NONE)
-this.repaintBehavior!.onChangeRepaint(this)
+inputMapping!.setDefault(abeClientInformation);
+    
+this.helpPaintable!.update(NONE, NONE);
+    
+this.repaintBehavior!.onChangeRepaint(this);
+    
 }
 
 
                 //@Throws(Error::class)
             
     public update(){
-inputMapping!.update(abeClientInformation)
-this.helpPaintable!.update(this.selectedGameKey, this.selectedInput)
-this.repaintBehavior!.onChangeRepaint(this)
+inputMapping!.update(abeClientInformation);
+    
+this.helpPaintable!.update(this.selectedGameKey, this.selectedInput);
+    
+this.repaintBehavior!.onChangeRepaint(this);
+    
 }
 
 
     public paint(graphics: Graphics){
 var graphics = graphics
-this.colorFillPaintable!.paint(graphics)
-this.helpPaintable!.paint(graphics)
-this.paintable.paint(graphics)
-super.paint(graphics)
+this.colorFillPaintable!.paint(graphics);
+    
+this.helpPaintable!.paint(graphics);
+    
+this.paintable.paint(graphics);
+    
+super.paint(graphics);
+    
 }
 
 

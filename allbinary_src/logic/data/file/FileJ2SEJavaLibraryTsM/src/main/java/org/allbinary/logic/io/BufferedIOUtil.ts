@@ -54,21 +54,25 @@ var backupFileBak = backupFileBak
     var line: string = StringUtil.getInstance()!.EMPTY_STRING;
         
         
-
+;
+    
 
     var tmpOut: BufferedWriter = new BufferedWriter(FileWriter(AbFileNativeUtil.get(backupFileBak)));
         
         
-
+;
+    
 
     var tmpIn: BufferedReader = new BufferedReader(FileReader(AbFileNativeUtil.get(backupFile)));
         
         
-
+;
+    
 
         while(true)
         {
-line= tmpIn!.readLine()
+line= tmpIn!.readLine();
+    
 
                         if(line == 
                                     null
@@ -81,11 +85,14 @@ line= tmpIn!.readLine()
 
                                     }
                                 
-tmpOut!.write(line, 0, line.length)
-tmpOut!.newLine()
+tmpOut!.write(line, 0, line.length);
+    
+tmpOut!.newLine();
+    
 }
 
-tmpOut!.flush()
+tmpOut!.flush();
+    
 }
 
 

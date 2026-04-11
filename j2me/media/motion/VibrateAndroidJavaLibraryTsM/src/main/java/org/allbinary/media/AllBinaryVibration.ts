@@ -53,19 +53,23 @@ export class AllBinaryVibration extends AllBinaryVibrationME {
                         if(GameConfigurationCentral.getInstance()!.VIBRATION.getValue()!.toInt() == 0)
                         
                                     {
-                                    VIBRATION= AllBinaryNoVibration.NO_VIBRATION
+                                    VIBRATION= AllBinaryNoVibration.NO_VIBRATION;
+    
 
                                     }
                                 
                         else {
-                            VIBRATION= AllBinaryVibration()
+                            VIBRATION= AllBinaryVibration();
+    
 
                         }
                             
 }
 
 
-    private readonly vibrator: Vibrator = ResourceUtil.getInstance()!.getContext()!.getSystemService(Context.VIBRATOR_SERVICE) as Vibrator;
+    private readonly vibrator: Vibrator = ResourceUtil.getInstance()!.getContext()!.getSystemService(Context.VIBRATOR_SERVICE);
+
+                         as Vibrator;
         
         
 protected constructor (){
@@ -78,7 +82,8 @@ protected constructor (){
 var duration = duration
 var type = type
 var volume = volume
-vibrator.vibrate(duration.toLong())
+vibrator.vibrate(duration.toLong());
+    
 }
 
 

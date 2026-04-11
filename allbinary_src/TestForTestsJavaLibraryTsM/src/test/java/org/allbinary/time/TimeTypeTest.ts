@@ -28,16 +28,23 @@ var hour = hour
     var cal: Calendar = Calendar.getInstance()!;
         
         
-
-cal.set(Calendar.HOUR_OF_DAY, hour)
-cal.set(Calendar.MINUTE, 0)
-cal.set(Calendar.SECOND, 0)
-cal.set(Calendar.MILLISECOND, 0)
+;
+    
+cal.set(Calendar.HOUR_OF_DAY, hour);
+    
+cal.set(Calendar.MINUTE, 0);
+    
+cal.set(Calendar.SECOND, 0);
+    
+cal.set(Calendar.MILLISECOND, 0);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return cal.getTimeInMillis();
+
+                        ;
     
 }
 
@@ -52,7 +59,8 @@ export class TestableTimeTypeUtil extends TimeTypeUtil {
 
             super();
             var hour = hour
-this.hour= hour
+this.hour= hour;
+    
 }
 
 
@@ -95,14 +103,18 @@ this.hour= hour
     var nightUtil: TimeTypeUtil = new TestableTimeTypeUtil(0);
         
         
-
-Assertions.assertEquals(nightUtil!.NIGHT, nightUtil!.getNightOrDay())
+;
+    
+Assertions.assertEquals(nightUtil!.NIGHT, nightUtil!.getNightOrDay());
+    
 
     var dayUtil: TimeTypeUtil = new TestableTimeTypeUtil(12);
         
         
-
-Assertions.assertEquals(dayUtil!.DAY, dayUtil!.getNightOrDay())
+;
+    
+Assertions.assertEquals(dayUtil!.DAY, dayUtil!.getNightOrDay());
+    
 }
 
 
@@ -111,7 +123,8 @@ Assertions.assertEquals(dayUtil!.DAY, dayUtil!.getNightOrDay())
     var util: TimeTypeUtil = new TimeTypeUtil();
         
         
-
+;
+    
 
                     //Otherwise - statement - ForEachStmt
 
@@ -123,7 +136,8 @@ Assertions.assertEquals(dayUtil!.DAY, dayUtil!.getNightOrDay())
     var util: TimeTypeUtil = new TimeTypeUtil();
         
         
-
+;
+    
 
                     //Otherwise - statement - ForEachStmt
 
@@ -138,19 +152,24 @@ Assertions.assertEquals(dayUtil!.DAY, dayUtil!.getNightOrDay())
     var util: TimeTypeUtil = new TimeTypeUtil();
         
         
-
+;
+    
 
     var nightMillis: number = millisForHourLocal(0)!;
         
         
-
+;
+    
 
     var dayMillis: number = millisForHourLocal(12)!;
         
         
-
-Assertions.assertEquals(util.NIGHT, util.getNightOrDay(nightMillis))
-Assertions.assertEquals(util.DAY, util.getNightOrDay(dayMillis))
+;
+    
+Assertions.assertEquals(util.NIGHT, util.getNightOrDay(nightMillis));
+    
+Assertions.assertEquals(util.DAY, util.getNightOrDay(dayMillis));
+    
 }
 
 
@@ -159,7 +178,8 @@ Assertions.assertEquals(util.DAY, util.getNightOrDay(dayMillis))
     var util: TimeTypeUtil = new TimeTypeUtil();
         
         
-
+;
+    
 
                     //Otherwise - statement - ForEachStmt
 
@@ -171,9 +191,12 @@ Assertions.assertEquals(util.DAY, util.getNightOrDay(dayMillis))
     var util: TimeTypeUtil = new TimeTypeUtil();
         
         
-
-Assertions.assertEquals("Night", util.NIGHT)
-Assertions.assertEquals("Day", util.DAY)
+;
+    
+Assertions.assertEquals("Night", util.NIGHT);
+    
+Assertions.assertEquals("Day", util.DAY);
+    
 }
 
 
@@ -182,13 +205,16 @@ Assertions.assertEquals("Day", util.DAY)
     var a: TimeTypeUtil = TimeTypeUtil.getInstance()!;
         
         
-
+;
+    
 
     var b: TimeTypeUtil = TimeTypeUtil.getInstance()!;
         
         
-
-Assertions.assertSame(a, b)
+;
+    
+Assertions.assertSame(a, b);
+    
 }
 
 

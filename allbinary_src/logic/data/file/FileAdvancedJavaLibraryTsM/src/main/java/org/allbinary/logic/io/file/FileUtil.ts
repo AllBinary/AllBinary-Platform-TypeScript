@@ -110,17 +110,20 @@ var fromFile = fromFile
     var newDirectory: string = fromFile!.getPath()!;
         
         
-
+;
+    
 
     var separatorChar: string = java.io.File.separator;
         
         
-
+;
+    
 
                         if(AbFileSystem.getInstance()!.isType("com.vobject.appengine.java.io"))
                         
                                     {
-                                    separatorChar= AbPathData.getInstance()!.SEPARATOR
+                                    separatorChar= AbPathData.getInstance()!.SEPARATOR;
+    
 
                                     }
                                 
@@ -128,13 +131,16 @@ var fromFile = fromFile
     var lastIndex: number = newDirectory!.lastIndexOf(separatorChar)!;
         
         
-
+;
+    
 
                         if(lastIndex >= newDirectory!.length)
                         
                                     {
-                                    newDirectory= newDirectory!.substring(0, newDirectory!.length -1)
-lastIndex= newDirectory!.lastIndexOf(separatorChar)
+                                    newDirectory= newDirectory!.substring(0, newDirectory!.length -1);
+    
+lastIndex= newDirectory!.lastIndexOf(separatorChar);
+    
 
                                     }
                                 
@@ -143,6 +149,8 @@ lastIndex= newDirectory!.lastIndexOf(separatorChar)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return newDirectory!.substring(lastIndex, newDirectory!.length);
+
+                        ;
     
 }
 
@@ -181,8 +189,10 @@ var file = file
     var dataOutputStream: AbDataOutputStream = DataOutputStreamFactory.getInstance()!.getInstance(file)!;
         
         
-
-this.write(inputStream, dataOutputStream)
+;
+    
+this.write(inputStream, dataOutputStream);
+    
 }
 
 
@@ -193,11 +203,16 @@ var inputStream = inputStream
 var dataOutputStream = dataOutputStream
 
         try {
-            dataOutputStream= StreamUtil.getInstance()!.get(inputStream, dataOutputStream, ByteArray(16384)) as AbDataOutputStream
-dataOutputStream!.flush()
+            dataOutputStream= StreamUtil.getInstance()!.get(inputStream, dataOutputStream, new Array(16384));
+
+                         as AbDataOutputStream;
+    
+dataOutputStream!.flush();
+    
 
          finally {
-            StreamUtil.getInstance()!.close(dataOutputStream)
+            StreamUtil.getInstance()!.close(dataOutputStream);
+    
 
          }
         
@@ -206,17 +221,22 @@ dataOutputStream!.flush()
 
                 //@Throws(Error::class)
             
-    public write(inputStream: InputStream, dataOutputStream: AbDataOutputStream, buffer: ByteArray){
+    public write(inputStream: InputStream, dataOutputStream: AbDataOutputStream, buffer: number[]){
 var inputStream = inputStream
 var dataOutputStream = dataOutputStream
 var buffer = buffer
 
         try {
-            dataOutputStream= StreamUtil.getInstance()!.get(inputStream, dataOutputStream, buffer) as AbDataOutputStream
-dataOutputStream!.flush()
+            dataOutputStream= StreamUtil.getInstance()!.get(inputStream, dataOutputStream, buffer);
+
+                         as AbDataOutputStream;
+    
+dataOutputStream!.flush();
+    
 
          finally {
-            StreamUtil.getInstance()!.close(dataOutputStream)
+            StreamUtil.getInstance()!.close(dataOutputStream);
+    
 
          }
         
@@ -230,12 +250,18 @@ var dataInputStream = dataInputStream
 var dataOutputStream = dataOutputStream
 
         try {
-            dataOutputStream= StreamUtil.getInstance()!.get(dataInputStream, dataOutputStream, ByteArray(16384)) as AbDataOutputStream
-dataOutputStream!.flush()
+            dataOutputStream= StreamUtil.getInstance()!.get(dataInputStream, dataOutputStream, new Array(16384));
+
+                         as AbDataOutputStream;
+    
+dataOutputStream!.flush();
+    
 
          finally {
-            StreamUtil.getInstance()!.close(dataOutputStream)
-StreamUtil.getInstance()!.close(dataInputStream)
+            StreamUtil.getInstance()!.close(dataOutputStream);
+    
+StreamUtil.getInstance()!.close(dataInputStream);
+    
 
          }
         
@@ -253,33 +279,40 @@ var cloud = cloud
     var beginIndex: number = file.getPath()!.indexOf(cloud) +cloud.length;
         
         
-
+;
+    
 
     var endIndex: number = file.getPath()!.indexOf(file.getName())!;
         
         
-
+;
+    
 
     var fixedPathString: string = realPath!.toFileSystemString() +file.getPath()!.substring(beginIndex, endIndex);
         
         
-
+;
+    
 
     var fixedPath: AbPath = new AbPath(fixedPathString);
         
         
-
-this.directory.create(fixedPath)
+;
+    
+this.directory.create(fixedPath);
+    
 
     var string: string = fixedPath!.toFileSystemString()!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(logConfigTypeFactory!.FILE))
                         
                                     {
-                                    logUtil!.put(string, getInstance(), "fixPath")
+                                    logUtil!.put(string, getInstance(), "fixPath");
+    
 
                                     }
                                 
@@ -287,7 +320,8 @@ this.directory.create(fixedPath)
     var outPath: AbPath = new AbPath(string, file.getName());
         
         
-
+;
+    
 
 
 
@@ -304,7 +338,8 @@ var file = file
 var path = path
 var realPath = realPath
 var cloud = cloud
-this.copyToCloud(file, path, realPath, cloud, false, false)
+this.copyToCloud(file, path, realPath, cloud, false, false);
+    
 }
 
 
@@ -323,14 +358,18 @@ var overwriteAll = overwriteAll
     var outPath: AbPath = fixPath(file, path, realPath, cloud)!;
         
         
-
+;
+    
 
     var outFile: AbFile = new AbFile(outPath);
         
         
+;
+    
 
+                        if(!this.copyPrepare(file, outFile, overwriteNewer, overwriteAll);
 
-                        if(!this.copyPrepare(file, outFile, overwriteNewer, overwriteAll))
+                        )
                         
                                     {
                                     
@@ -351,13 +390,20 @@ var overwriteAll = overwriteAll
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("Out File: ")
-stringBuffer!.append(outFile!.getPath())
-stringBuffer!.append(" In File: ")
-stringBuffer!.append(file.getPath())
-stringBuffer!.append(" to cloud.")
-logUtil!.put(stringBuffer!.toString(), getInstance(), "copyToCloud")
+;
+    
+stringBuffer!.append("Out File: ");
+    
+stringBuffer!.append(outFile!.getPath());
+    
+stringBuffer!.append(" In File: ");
+    
+stringBuffer!.append(file.getPath());
+    
+stringBuffer!.append(" to cloud.");
+    
+logUtil!.put(stringBuffer!.toString(), getInstance(), "copyToCloud");
+    
 
                                     }
                                 
@@ -368,14 +414,19 @@ logUtil!.put(stringBuffer!.toString(), getInstance(), "copyToCloud")
     var dataOutputStream: AbDataOutputStream = DataOutputStreamFactory.getInstance()!.getInstance(outFile)!;
         
         
-
+;
+    
 
     var fileInputStream: AbFileInputStream = new AbFileLocalInputStream(file);
         
         
+;
+    
+this.copy(fileInputStream, dataOutputStream);
+    
 
-this.copy(fileInputStream, dataOutputStream)
-} catch(e: Exception)
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(logConfigTypeFactory!.FILEERROR))
@@ -385,11 +436,16 @@ this.copy(fileInputStream, dataOutputStream)
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("Error Copying File File: ")
-stringBuffer!.append(file.toString())
-stringBuffer!.append(" to cloud.")
-logUtil!.put(stringBuffer!.toString(), getInstance(), "copyToCloud", e)
+;
+    
+stringBuffer!.append("Error Copying File File: ");
+    
+stringBuffer!.append(file.toString());
+    
+stringBuffer!.append(" to cloud.");
+    
+logUtil!.put(stringBuffer!.toString(), getInstance(), "copyToCloud", e);
+    
 
                                     }
                                 
@@ -407,7 +463,8 @@ logUtil!.put(stringBuffer!.toString(), getInstance(), "copyToCloud", e)
     public copyToCloud(file: AbFile, outFile: AbFile){
 var file = file
 var outFile = outFile
-this.copyToCloud(file, outFile, false, false)
+this.copyToCloud(file, outFile, false, false);
+    
 }
 
 
@@ -424,9 +481,12 @@ var overwriteAll = overwriteAll
     var stringBuffer: StringMaker = new StringMaker();
         
         
+;
+    
 
+                        if(!this.copyPrepare(file, outFile, overwriteNewer, overwriteAll);
 
-                        if(!this.copyPrepare(file, outFile, overwriteNewer, overwriteAll))
+                        )
                         
                                     {
                                     
@@ -443,13 +503,20 @@ var overwriteAll = overwriteAll
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(logConfigTypeFactory!.FILE))
                         
                                     {
-                                    stringBuffer!.delete(0, stringBuffer!.length())
-stringBuffer!.append("Out File: ")
-stringBuffer!.append(outFile!.getPath())
-stringBuffer!.append(" In File: ")
-stringBuffer!.append(file.getPath())
-stringBuffer!.append(" to cloud.")
-logUtil!.put(stringBuffer!.toString(), getInstance(), "copyToCloud")
+                                    stringBuffer!.delete(0, stringBuffer!.length());
+    
+stringBuffer!.append("Out File: ");
+    
+stringBuffer!.append(outFile!.getPath());
+    
+stringBuffer!.append(" In File: ");
+    
+stringBuffer!.append(file.getPath());
+    
+stringBuffer!.append(" to cloud.");
+    
+logUtil!.put(stringBuffer!.toString(), getInstance(), "copyToCloud");
+    
 
                                     }
                                 
@@ -460,14 +527,19 @@ logUtil!.put(stringBuffer!.toString(), getInstance(), "copyToCloud")
     var dataOutputStream: AbDataOutputStream = DataOutputStreamFactory.getInstance()!.getInstance(outFile)!;
         
         
-
+;
+    
 
     var fileInputStream: AbFileInputStream = new AbFileLocalInputStream(file);
         
         
+;
+    
+this.copy(fileInputStream, dataOutputStream);
+    
 
-this.copy(fileInputStream, dataOutputStream)
-} catch(e: Exception)
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(logConfigTypeFactory!.FILEERROR))
@@ -477,11 +549,16 @@ this.copy(fileInputStream, dataOutputStream)
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("Error Copying File File: ")
-stringBuffer!.append(file.toString())
-stringBuffer!.append(" to cloud.")
-logUtil!.put(stringBuffer!.toString(), getInstance(), "copyToCloud", e)
+;
+    
+stringBuffer!.append("Error Copying File File: ");
+    
+stringBuffer!.append(file.toString());
+    
+stringBuffer!.append(" to cloud.");
+    
+logUtil!.put(stringBuffer!.toString(), getInstance(), "copyToCloud", e);
+    
 
                                     }
                                 
@@ -509,7 +586,8 @@ var overwriteAll = overwriteAll
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
                         if(overwriteAll)
                         
@@ -518,15 +596,21 @@ var overwriteAll = overwriteAll
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(logConfigTypeFactory!.FILE))
                         
                                     {
-                                    stringBuffer!.delete(0, stringBuffer!.length())
-stringBuffer!.append("Overwriting File: ")
-stringBuffer!.append(toFile!.getPath())
-logUtil!.put(stringBuffer!.toString(), getInstance(), "copyFile")
+                                    stringBuffer!.delete(0, stringBuffer!.length());
+    
+stringBuffer!.append("Overwriting File: ");
+    
+stringBuffer!.append(toFile!.getPath());
+    
+logUtil!.put(stringBuffer!.toString(), getInstance(), "copyFile");
+    
 
                                     }
                                 
-toFile!.delete()
-toFile!.createNewFile()
+toFile!.delete();
+    
+toFile!.createNewFile();
+    
 
                                     }
                                 
@@ -538,18 +622,27 @@ toFile!.createNewFile()
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(logConfigTypeFactory!.FILE))
                         
                                     {
-                                    stringBuffer!.delete(0, stringBuffer!.length())
-stringBuffer!.append("Newer by: ")
-stringBuffer!.appendlong(fromFile!.lastModified() -toFile!.lastModified())
-stringBuffer!.append("ms ")
-stringBuffer!.append("Copying File: ")
-stringBuffer!.append(toFile!.getPath())
-logUtil!.put(stringBuffer!.toString(), getInstance(), "copyFile")
+                                    stringBuffer!.delete(0, stringBuffer!.length());
+    
+stringBuffer!.append("Newer by: ");
+    
+stringBuffer!.appendlong(fromFile!.lastModified() -toFile!.lastModified());
+    
+stringBuffer!.append("ms ");
+    
+stringBuffer!.append("Copying File: ");
+    
+stringBuffer!.append(toFile!.getPath());
+    
+logUtil!.put(stringBuffer!.toString(), getInstance(), "copyFile");
+    
 
                                     }
                                 
-toFile!.delete()
-toFile!.createNewFile()
+toFile!.delete();
+    
+toFile!.createNewFile();
+    
 
                                     }
                                 
@@ -558,24 +651,31 @@ toFile!.createNewFile()
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(logConfigTypeFactory!.FILE))
                         
                                     {
-                                    stringBuffer!.delete(0, stringBuffer!.length())
-stringBuffer!.append("File Already Exists")
+                                    stringBuffer!.delete(0, stringBuffer!.length());
+    
+stringBuffer!.append("File Already Exists");
+    
 
                         if(overwriteNewer)
                         
                                     {
-                                    stringBuffer!.append(" And Is Not Older")
+                                    stringBuffer!.append(" And Is Not Older");
+    
 
                                     }
                                 
                         else {
-                            stringBuffer!.append(" And Not A In Overwrite Mode")
+                            stringBuffer!.append(" And Not A In Overwrite Mode");
+    
 
                         }
                             
-stringBuffer!.append(CommonLabels.getInstance()!.COLON_SEP)
-stringBuffer!.append(toFile!.getPath())
-logUtil!.put(stringBuffer!.toString(), getInstance(), "copyFile")
+stringBuffer!.append(CommonLabels.getInstance()!.COLON_SEP);
+    
+stringBuffer!.append(toFile!.getPath());
+    
+logUtil!.put(stringBuffer!.toString(), getInstance(), "copyFile");
+    
 
                                     }
                                 
@@ -592,7 +692,8 @@ logUtil!.put(stringBuffer!.toString(), getInstance(), "copyFile")
                                     }
                                 
                         else {
-                            toFile!.createNewFile()
+                            toFile!.createNewFile();
+    
 
                         }
                             
@@ -610,7 +711,8 @@ logUtil!.put(stringBuffer!.toString(), getInstance(), "copyFile")
     copyFile(fromFile: AbFile, toFile: AbFile){
 var fromFile = fromFile
 var toFile = toFile
-this.copyFile(fromFile, toFile, false, false)
+this.copyFile(fromFile, toFile, false, false);
+    
 }
 
 
@@ -631,19 +733,29 @@ var overwriteAll = overwriteAll
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("Copying ")
-stringBuffer!.appendlong(fromFile!.length())
-stringBuffer!.append(" bytes from File: ")
-stringBuffer!.append(fromFile!.getPath())
-stringBuffer!.append(" to: ")
-stringBuffer!.append(toFile!.getPath())
-logUtil!.put(stringBuffer!.toString(), getInstance(), "copyFile")
+;
+    
+stringBuffer!.append("Copying ");
+    
+stringBuffer!.appendlong(fromFile!.length());
+    
+stringBuffer!.append(" bytes from File: ");
+    
+stringBuffer!.append(fromFile!.getPath());
+    
+stringBuffer!.append(" to: ");
+    
+stringBuffer!.append(toFile!.getPath());
+    
+logUtil!.put(stringBuffer!.toString(), getInstance(), "copyFile");
+    
 
                                     }
                                 
 
-                        if(!this.copyPrepare(fromFile, toFile, overwriteNewer, overwriteAll))
+                        if(!this.copyPrepare(fromFile, toFile, overwriteNewer, overwriteAll);
+
+                        )
                         
                                     {
                                     
@@ -659,14 +771,19 @@ logUtil!.put(stringBuffer!.toString(), getInstance(), "copyFile")
     var dataOutputStream: AbDataOutputStream = DataOutputStreamFactory.getInstance()!.getInstance(toFile)!;
         
         
-
+;
+    
 
     var fileInputStream: AbFileInputStream = new AbFileInputStream(fromFile);
         
         
+;
+    
+this.copy(fileInputStream, dataOutputStream);
+    
 
-this.copy(fileInputStream, dataOutputStream)
-} catch(e: Exception)
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(logConfigTypeFactory!.FILEERROR))
@@ -676,12 +793,18 @@ this.copy(fileInputStream, dataOutputStream)
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("Error Copying File fromFile: ")
-stringBuffer!.append(fromFile!.toString())
-stringBuffer!.append(" to: ")
-stringBuffer!.append(toFile!.toString())
-logUtil!.put(stringBuffer!.toString(), getInstance(), "copyFile", e)
+;
+    
+stringBuffer!.append("Error Copying File fromFile: ");
+    
+stringBuffer!.append(fromFile!.toString());
+    
+stringBuffer!.append(" to: ");
+    
+stringBuffer!.append(toFile!.toString());
+    
+logUtil!.put(stringBuffer!.toString(), getInstance(), "copyFile", e);
+    
 
                                     }
                                 
@@ -707,9 +830,12 @@ var total = total
     var file: AbFile = new AbFile(fromDirectoryAbPath);
         
         
+;
+    
 
+                        if(!file.isDirectory();
 
-                        if(!file.isDirectory())
+                        )
                         
                                     {
                                     
@@ -723,53 +849,69 @@ var total = total
     var fileList: BasicArrayList = directory.search(file, true)!;
         
         
-
+;
+    
 
     var size: number = fileList!.size()!;
         
         
-
+;
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("Searched: ")
-stringBuffer!.append(file.getPath())
-stringBuffer!.append(" Total: ")
-stringBuffer!.appendint(size)
+;
+    
+stringBuffer!.append("Searched: ");
+    
+stringBuffer!.append(file.getPath());
+    
+stringBuffer!.append(" Total: ");
+    
+stringBuffer!.appendint(size);
+    
 
     var portion: number = size /total +1;
         
         
-
+;
+    
 
     var start: number = portion *current;
         
         
-
+;
+    
 
     var end: number = start +portion;
         
         
-
+;
+    
 
                         if(end > size)
                         
                                     {
-                                    end= size
+                                    end= size;
+    
 
                                     }
                                 
-stringBuffer!.append(" Section: ")
-stringBuffer!.appendint(start)
-stringBuffer!.append(" - ")
-stringBuffer!.appendint(end)
+stringBuffer!.append(" Section: ");
+    
+stringBuffer!.appendint(start);
+    
+stringBuffer!.append(" - ");
+    
+stringBuffer!.appendint(end);
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(logConfigTypeFactory!.FILE))
                         
                                     {
-                                    logUtil!.put(stringBuffer!.toString(), getInstance(), "copySomeFilesToDirectory()")
+                                    logUtil!.put(stringBuffer!.toString(), getInstance(), "copySomeFilesToDirectory()");
+    
 
                                     }
                                 
@@ -784,10 +926,13 @@ stringBuffer!.appendint(end)
 index < end; index++)
         {
 
-    var nextFile: AbFile = fileList!.get(index) as AbFile;
-        
-        
+    var nextFile: AbFile = fileList!.get(index);
 
+                         as AbFile;
+        
+        
+;
+    
 
                         if(nextFile!.isDirectory())
                         
@@ -801,18 +946,21 @@ index < end; index++)
                             getPath()!;
         
         
-
+;
+    
 
     var beginIndex: number = fromDirectoryAbPath!.getPath()!.length()!;
         
         
-
+;
+    
 
                         if(path.indexOf(URLGLOBALS.getWebappPath()) < 0)
                         
                                     {
                                     beginIndex -= AbPath(URLGLOBALS.getWebappPath()).
-                            getPath()!.length()
+                            getPath()!.length();
+    
 
                                     }
                                 
@@ -820,13 +968,16 @@ index < end; index++)
     var newPath: string = toDirectoryAbPath!.toFileSystemString() +path.substring(beginIndex);
         
         
-
+;
+    
 
     var toFile: AbFile = new AbFile(AbPath(newPath));
         
         
-
-this.copyFile(nextFile, toFile, overwriteNewer, overwriteAll)
+;
+    
+this.copyFile(nextFile, toFile, overwriteNewer, overwriteAll);
+    
 
                         }
                             
@@ -850,12 +1001,18 @@ this.copyFile(nextFile, toFile, overwriteNewer, overwriteAll)
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("Copying Directory from: ")
-stringBuffer!.append(fromFile!.getPath())
-stringBuffer!.append(" to: ")
-stringBuffer!.append(to.getPath())
-logUtil!.put(stringBuffer!.toString(), getInstance(), "copyDirectory")
+;
+    
+stringBuffer!.append("Copying Directory from: ");
+    
+stringBuffer!.append(fromFile!.getPath());
+    
+stringBuffer!.append(" to: ");
+    
+stringBuffer!.append(to.getPath());
+    
+logUtil!.put(stringBuffer!.toString(), getInstance(), "copyDirectory");
+    
 
                                     }
                                 
@@ -863,14 +1020,18 @@ logUtil!.put(stringBuffer!.toString(), getInstance(), "copyDirectory")
     var newDirectory: string = getNewDirectory(fromFile)!;
         
         
-
+;
+    
 
     var newDirectoryAbPath: AbPath = new AbPath(to.getPath() +AbPathData.getInstance()!.SEPARATOR +newDirectory);
         
         
+;
+    
 
+                        if(!this.directory.create(newDirectoryAbPath);
 
-                        if(!this.directory.create(newDirectoryAbPath))
+                        )
                         
                                     {
                                     
@@ -884,13 +1045,15 @@ logUtil!.put(stringBuffer!.toString(), getInstance(), "copyDirectory")
     var fileArray: AbFile[] = FileWrapperUtil.wrapFiles(fromFile!.listFiles())!;
         
         
-
+;
+    
 
     var size: number = fileArray!.length
                 ;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(logConfigTypeFactory!.FILE))
                         
@@ -899,14 +1062,22 @@ logUtil!.put(stringBuffer!.toString(), getInstance(), "copyDirectory")
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("Copying ")
-stringBuffer!.appendint(size)
-stringBuffer!.append(" files from: ")
-stringBuffer!.append(fromFile!.getPath())
-stringBuffer!.append(" to: ")
-stringBuffer!.append(to.getPath())
-logUtil!.put(stringBuffer!.toString(), getInstance(), "copyDirectory")
+;
+    
+stringBuffer!.append("Copying ");
+    
+stringBuffer!.appendint(size);
+    
+stringBuffer!.append(" files from: ");
+    
+stringBuffer!.append(fromFile!.getPath());
+    
+stringBuffer!.append(" to: ");
+    
+stringBuffer!.append(to.getPath());
+    
+logUtil!.put(stringBuffer!.toString(), getInstance(), "copyDirectory");
+    
 
                                     }
                                 
@@ -924,12 +1095,14 @@ index < size; index++)
     var file: AbFile = fileArray[index]!;
         
         
-
+;
+    
 
                         if(file.isFile())
                         
                                     {
-                                    this.copyFile(file, AbFile(newDirectoryAbPath!.toString(), file.getName()))
+                                    this.copyFile(file, AbFile(newDirectoryAbPath!.toString(), file.getName()));
+    
 
                                     }
                                 
@@ -937,7 +1110,8 @@ index < size; index++)
                         if(file.isDirectory())
                         
                                     {
-                                    this.copyDirectory(file, AbFile(newDirectoryAbPath))
+                                    this.copyDirectory(file, AbFile(newDirectoryAbPath));
+    
 
                                     }
                                 
@@ -951,7 +1125,9 @@ index < size; index++)
                             
 }
 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(logConfigTypeFactory!.FILEERROR))
@@ -961,12 +1137,18 @@ index < size; index++)
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("Error Copying Directory fromFile: ")
-stringBuffer!.append(fromFile!.toString())
-stringBuffer!.append(" to: ")
-stringBuffer!.append(to.toString())
-logUtil!.put(stringBuffer!.toString(), getInstance(), "copyDirectory", e)
+;
+    
+stringBuffer!.append("Error Copying Directory fromFile: ");
+    
+stringBuffer!.append(fromFile!.toString());
+    
+stringBuffer!.append(" to: ");
+    
+stringBuffer!.append(to.toString());
+    
+logUtil!.put(stringBuffer!.toString(), getInstance(), "copyDirectory", e);
+    
 
                                     }
                                 
@@ -995,12 +1177,18 @@ var to = to
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("Copying AbPaths from: ")
-stringBuffer!.append(fromAbPath!.toString())
-stringBuffer!.append(" to: ")
-stringBuffer!.append(to.toString())
-logUtil!.put(stringBuffer!.toString(), getInstance(), "copy")
+;
+    
+stringBuffer!.append("Copying AbPaths from: ");
+    
+stringBuffer!.append(fromAbPath!.toString());
+    
+stringBuffer!.append(" to: ");
+    
+stringBuffer!.append(to.toString());
+    
+logUtil!.put(stringBuffer!.toString(), getInstance(), "copy");
+    
 
                                     }
                                 
@@ -1034,12 +1222,14 @@ logUtil!.put(stringBuffer!.toString(), getInstance(), "copy")
     var fromLocationFile: AbFile = new AbFile(fromAbPath);
         
         
-
+;
+    
 
     var toLocationFile: AbFile = new AbFile(to);
         
         
-
+;
+    
 
                         if(fromLocationFile!.isFile())
                         
@@ -1052,8 +1242,10 @@ logUtil!.put(stringBuffer!.toString(), getInstance(), "copy")
     var file: AbFile = new AbFile(toLocationFile, fromLocationFile!.getName());
         
         
-
-this.copyFile(fromLocationFile, file)
+;
+    
+this.copyFile(fromLocationFile, file);
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(logConfigTypeFactory!.FILE))
                         
@@ -1062,14 +1254,22 @@ this.copyFile(fromLocationFile, file)
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("Copied file=")
-stringBuffer!.append(fromLocationFile!.getName())
-stringBuffer!.append(" from: ")
-stringBuffer!.append(fromLocationFile!.getPath())
-stringBuffer!.append(" to: ")
-stringBuffer!.append(toLocationFile!.getPath())
-logUtil!.put(stringBuffer!.toString(), getInstance(), "copy")
+;
+    
+stringBuffer!.append("Copied file=");
+    
+stringBuffer!.append(fromLocationFile!.getName());
+    
+stringBuffer!.append(" from: ");
+    
+stringBuffer!.append(fromLocationFile!.getPath());
+    
+stringBuffer!.append(" to: ");
+    
+stringBuffer!.append(toLocationFile!.getPath());
+    
+logUtil!.put(stringBuffer!.toString(), getInstance(), "copy");
+    
 
                                     }
                                 
@@ -1077,7 +1277,8 @@ logUtil!.put(stringBuffer!.toString(), getInstance(), "copy")
                                     }
                                 
                         else {
-                            this.copyFile(fromLocationFile, toLocationFile)
+                            this.copyFile(fromLocationFile, toLocationFile);
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(logConfigTypeFactory!.FILE))
                         
@@ -1086,13 +1287,20 @@ logUtil!.put(stringBuffer!.toString(), getInstance(), "copy")
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("Copied file with new name ")
-stringBuffer!.append(" from: ")
-stringBuffer!.append(fromLocationFile!.getPath())
-stringBuffer!.append(" to: ")
-stringBuffer!.append(toLocationFile!.getPath())
-logUtil!.put(stringBuffer!.toString(), getInstance(), "copy")
+;
+    
+stringBuffer!.append("Copied file with new name ");
+    
+stringBuffer!.append(" from: ");
+    
+stringBuffer!.append(fromLocationFile!.getPath());
+    
+stringBuffer!.append(" to: ");
+    
+stringBuffer!.append(toLocationFile!.getPath());
+    
+logUtil!.put(stringBuffer!.toString(), getInstance(), "copy");
+    
 
                                     }
                                 
@@ -1114,7 +1322,8 @@ logUtil!.put(stringBuffer!.toString(), getInstance(), "copy")
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(logConfigTypeFactory!.FILE))
                         
                                     {
-                                    logUtil!.put("Copying subdirectories", getInstance(), "copy")
+                                    logUtil!.put("Copying subdirectories", getInstance(), "copy");
+    
 
                                     }
                                 
@@ -1122,7 +1331,8 @@ logUtil!.put(stringBuffer!.toString(), getInstance(), "copy")
     var fileArray: AbFile[] = FileWrapperUtil.wrapFiles(fromLocationFile!.listFiles())!;
         
         
-
+;
+    
 
 
 
@@ -1137,7 +1347,8 @@ index < fileArray!.length; index++)
     var file: AbFile = fileArray[index]!;
         
         
-
+;
+    
 
                         if(file.isFile())
                         
@@ -1146,8 +1357,10 @@ index < fileArray!.length; index++)
     var aFile: AbFile = new AbFile(toLocationFile, file.getName());
         
         
-
-this.copyFile(file, aFile)
+;
+    
+this.copyFile(file, aFile);
+    
 
                                     }
                                 
@@ -1155,7 +1368,8 @@ this.copyFile(file, aFile)
                         if(file.isDirectory())
                         
                                     {
-                                    copyDirectory(file, toLocationFile)
+                                    copyDirectory(file, toLocationFile);
+    
 
                                     }
                                 
@@ -1173,7 +1387,8 @@ this.copyFile(file, aFile)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(logConfigTypeFactory!.FILE))
                         
                                     {
-                                    logUtil!.put("Copied subdirectories", getInstance(), "copy")
+                                    logUtil!.put("Copied subdirectories", getInstance(), "copy");
+    
 
                                     }
                                 
@@ -1185,16 +1400,19 @@ this.copyFile(file, aFile)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(logConfigTypeFactory!.FILE))
                         
                                     {
-                                    logUtil!.put("Copyinhg directory", getInstance(), "copy")
+                                    logUtil!.put("Copyinhg directory", getInstance(), "copy");
+    
 
                                     }
                                 
-copyDirectory(fromLocationFile, toLocationFile)
+copyDirectory(fromLocationFile, toLocationFile);
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(logConfigTypeFactory!.FILE))
                         
                                     {
-                                    logUtil!.put("Copied directory", getInstance(), "copy")
+                                    logUtil!.put("Copied directory", getInstance(), "copy");
+    
 
                                     }
                                 
@@ -1210,7 +1428,9 @@ copyDirectory(fromLocationFile, toLocationFile)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return true;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(logConfigTypeFactory!.FILEERROR))
@@ -1220,12 +1440,18 @@ copyDirectory(fromLocationFile, toLocationFile)
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("Error Copying fromAbPath: ")
-stringBuffer!.append(fromAbPath!.toString())
-stringBuffer!.append(" to: ")
-stringBuffer!.append(to.toString())
-logUtil!.put(stringBuffer!.toString(), getInstance(), "copy", e)
+;
+    
+stringBuffer!.append("Error Copying fromAbPath: ");
+    
+stringBuffer!.append(fromAbPath!.toString());
+    
+stringBuffer!.append(" to: ");
+    
+stringBuffer!.append(to.toString());
+    
+logUtil!.put(stringBuffer!.toString(), getInstance(), "copy", e);
+    
 
                                     }
                                 
@@ -1241,20 +1467,23 @@ logUtil!.put(stringBuffer!.toString(), getInstance(), "copy", e)
     public readAsString(fileName: string): string{
     //var fileName = fileName
 
-    var bytes: ByteArray = ByteArray(1000000);
+    var bytes: number[] = new Array(1000000);
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.readAsString(fileName, bytes);
+
+                        ;
     
 }
 
 
-    public readAsString(fileName: string, bytes: ByteArray): string{
+    public readAsString(fileName: string, bytes: number[]): string{
     //var fileName = fileName
     //var bytes = bytes
 
@@ -1263,15 +1492,18 @@ logUtil!.put(stringBuffer!.toString(), getInstance(), "copy", e)
             ;
         
         
-
+;
+    
 
         try {
-            idFile= FileInputStream(fileName)
+            idFile= FileInputStream(fileName);
+    
 
     var size: number = idFile!.read(bytes)!;
         
         
-
+;
+    
 
                         if(size > 0)
                         
@@ -1285,20 +1517,24 @@ logUtil!.put(stringBuffer!.toString(), getInstance(), "copy", e)
 
                                     }
                                 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(logConfigTypeFactory!.IDLOGGING))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "SmallInsert", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "SmallInsert", e);
+    
 
                                     }
                                 
 }
 
          finally {
-            streamUtil!.close(idFile)
+            streamUtil!.close(idFile);
+    
 
          }
         
@@ -1319,10 +1555,12 @@ logUtil!.put(stringBuffer!.toString(), getInstance(), "copy", e)
                 ;
         
         
-
+;
+    
 
     var skipFile: string
-
+;
+    
 
 
 
@@ -1333,7 +1571,8 @@ logUtil!.put(stringBuffer!.toString(), getInstance(), "copy", e)
         
 index < size; index++)
         {
-skipFile= skipFiles[index]!
+skipFile= skipFiles[index]!;
+    
 
                         if(file.getPath()!.compareTo(skipFile) == 0)
                         
@@ -1381,34 +1620,42 @@ var string = string
             ;
         
         
-
+;
+    
 
         try {
             PreLogUtil.put(StringBuilder().
-                            append(this.WRITE_LABEL)!.append(filePath)!.append(DATA_LABEL)!.append(string)!.toString(), this, this.WRITE_METHOD)
+                            append(this.WRITE_LABEL)!.append(filePath)!.append(DATA_LABEL)!.append(string)!.toString(), this, this.WRITE_METHOD);
+    
 
     var fileInputStreamFactory: FileStreamFactory = FileStreamFactory.getInstance()!;
         
         
-
+;
+    
 
     var fileOutputStream: OutputStream = fileInputStreamFactory!.getFileOutputStreamInstance(StringUtil.getInstance()!.EMPTY_STRING, filePath)!;
         
         
-
-dataOutputStream= AbDataOutputStream(fileOutputStream)
-dataOutputStream!.write(string.encodeToByteArray()0, string.length)
-dataOutputStream!.flush()
+;
+    
+dataOutputStream= AbDataOutputStream(fileOutputStream);
+    
+dataOutputStream!.write(string.encodeToByteArray()0, string.length);
+    
+dataOutputStream!.flush();
+    
 
          finally {
-            StreamUtil.getInstance()!.close(dataOutputStream)
+            StreamUtil.getInstance()!.close(dataOutputStream);
+    
 
          }
         
 }
 
 
-    public loadFileAsList(file: AbFile, max: number, byteArray1: ByteArray): BasicArrayList{
+    public loadFileAsList(file: AbFile, max: number, byteArray1: number[]): BasicArrayList{
     //var file = file
     //var max = max
     //var byteArray1 = byteArray1
@@ -1417,6 +1664,8 @@ dataOutputStream!.flush()
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return FileUtil2.getInstance()!.loadFileAsList(file, max, byteArray1);
+
+                        ;
     
 }
 

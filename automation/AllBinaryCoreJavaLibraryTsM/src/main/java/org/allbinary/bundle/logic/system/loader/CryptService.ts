@@ -83,8 +83,10 @@ export class CryptService
 public constructor (){
 
             super();
-            Globals.getInstance()!.init(this::class.java.classLoader, "./")
-logUtil!.put("Set Globals: " +URLGLOBALS.getWebappPath(), this, this.commonStrings!.CONSTRUCTOR)
+            Globals.getInstance()!.init(this.constructor.name.java.classLoader, "./");
+    
+logUtil!.put("Set Globals: " +URLGLOBALS.getWebappPath(), this, this.commonStrings!.CONSTRUCTOR);
+    
 }
 
 
@@ -98,25 +100,33 @@ logUtil!.put("Set Globals: " +URLGLOBALS.getWebappPath(), this, this.commonStrin
     var key: string = AbKeys.getInstance()!.getKey(abeClientInformation, name)!;
         
         
+;
+    
 
-
-    var decrypted: ByteArray = this.abCryptUtil!.decrypt(inputStream, key)!;
+    var decrypted: number[] = this.abCryptUtil!.decrypt(inputStream, key)!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return ByteArrayInputStream(decrypted);
     
-} catch(e: LicensingException)
+
+                //: 
+} catch(e) 
             {
-this.showLicenseDialog(abeClientInformation, e)
+this.showLicenseDialog(abeClientInformation, e);
+    
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
-this.showLicenseDialog(abeClientInformation, e)
+this.showLicenseDialog(abeClientInformation, e);
+    
 }
 
 
@@ -133,19 +143,22 @@ this.showLicenseDialog(abeClientInformation, e)
     //var e = e
 
         try {
-            logUtil!.put(commonStrings!.EXCEPTION, this, this.commonStrings!.INIT, e)
+            logUtil!.put(commonStrings!.EXCEPTION, this, this.commonStrings!.INIT, e);
+    
 
     var basicTextJDialog: BasicTextJDialog = new BasicTextJDialog(e.message);
         
         
-
+;
+    
 
         try {
             
     var abeLicenseInterface: AbeLicenseInterface = AbeLicenseInterfaceFactory.getInstance()!.getLicenseInstance(abeClientInformation)!;
         
         
-
+;
+    
 
                         if(abeLicenseInterface != AbeNoLicense.getInstance())
                         
@@ -154,23 +167,32 @@ this.showLicenseDialog(abeClientInformation, e)
                         if(abeLicenseInterface!.isValid())
                         
                                     {
-                                    basicTextJDialog!.setText("Subscription Invalid")
+                                    basicTextJDialog!.setText("Subscription Invalid");
+    
 
                                     }
                                 
 
                                     }
                                 
-} catch(e2: LicensingException)
+
+                //: 
+} catch(e2) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, this.commonStrings!.INIT, e2)
+logUtil!.put(commonStrings!.EXCEPTION, this, this.commonStrings!.INIT, e2);
+    
 }
 
-basicTextJDialog!.addCloseListener(ExitCloseListener())
-basicTextJDialog!.setVisible(true)
-} catch(e3: Exception)
+basicTextJDialog!.addCloseListener(ExitCloseListener());
+    
+basicTextJDialog!.setVisible(true);
+    
+
+                //: 
+} catch(e3) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, this.commonStrings!.INIT, e3)
+logUtil!.put(commonStrings!.EXCEPTION, this, this.commonStrings!.INIT, e3);
+    
 }
 
 }

@@ -54,8 +54,10 @@ public constructor (fileName: string){
 
             super();
             var fileName = fileName
-this.fileName= fileName
-string= FileUtil.getInstance()!.readAsString(fileName)
+this.fileName= fileName;
+    
+string= FileUtil.getInstance()!.readAsString(fileName);
+    
 }
 
 
@@ -67,9 +69,12 @@ var end = end
             
     var beginIndex: number= 0
 var endIndex: number= 0
-
-beginIndex= this.string.indexOf(start)
-endIndex= this.string.indexOf(end)
+;
+    
+beginIndex= this.string.indexOf(start);
+    
+endIndex= this.string.indexOf(end);
+    
 
                         if(endIndex > beginIndex && beginIndex >= 0 && endIndex >= 0 && beginIndex < 10 && endIndex < 525)
                         
@@ -78,18 +83,22 @@ endIndex= this.string.indexOf(end)
     var text: string = this.string.substring(endIndex, this.string.length)!;
         
         
-
+;
+    
 
     var idFile: FileOutputStream = new FileOutputStream(this.fileName);
         
         
-
+;
+    
 
     var idOutData: DataOutputStream = new DataOutputStream(idFile);
         
         
-
-idOutData!.writeBytes(text)
+;
+    
+idOutData!.writeBytes(text);
+    
 
 
 
@@ -105,13 +114,16 @@ idOutData!.writeBytes(text)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return false;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.IDLOGGING))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "deleteAtStart", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "deleteAtStart", e);
+    
 
                                     }
                                 
@@ -135,9 +147,12 @@ var newText = newText
             
     var beginIndex: number= 0
 var endIndex: number= 0
-
-beginIndex= this.string.indexOf(start)
-endIndex= this.string.indexOf(end)
+;
+    
+beginIndex= this.string.indexOf(start);
+    
+endIndex= this.string.indexOf(end);
+    
 
                         if(endIndex > beginIndex && beginIndex >= 0 && endIndex >= 0 && beginIndex < 50 && endIndex < 425)
                         
@@ -146,23 +161,28 @@ endIndex= this.string.indexOf(end)
     var newStart: string = this.string.substring(0, beginIndex)!;
         
         
-
+;
+    
 
     var text: string = this.string.substring(endIndex +end.length, this.string.length)!;
         
         
-
+;
+    
 
     var idFile: FileOutputStream = new FileOutputStream(this.fileName);
         
         
-
+;
+    
 
     var idOutData: DataOutputStream = new DataOutputStream(idFile);
         
         
-
-idOutData!.writeBytes(newStart +newText +text)
+;
+    
+idOutData!.writeBytes(newStart +newText +text);
+    
 
 
 
@@ -178,13 +198,16 @@ idOutData!.writeBytes(newStart +newText +text)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return false;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.IDLOGGING))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "deleteAtStart", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "deleteAtStart", e);
+    
 
                                     }
                                 

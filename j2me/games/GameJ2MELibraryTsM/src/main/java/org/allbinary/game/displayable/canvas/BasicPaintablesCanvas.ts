@@ -56,15 +56,19 @@ public constructor (cmdListener: CommandListener, name: string, allBinaryGameLay
 
                             //For kotlin this is before the body of the constructor.
                     
-this.paintableArray= paintableArray
-this.colorFillPaintable= ColorFillPaintableFactory.getInstance()!.getInstance(allBinaryGameLayerManager!.getBackgroundBasicColor(), false)
+this.paintableArray= paintableArray;
+    
+this.colorFillPaintable= ColorFillPaintableFactory.getInstance()!.getInstance(allBinaryGameLayerManager!.getBackgroundBasicColor(), false);
+    
 }
 
 
     public paint(graphics: Graphics){
     //var graphics = graphics
-this.colorFillPaintable!.paint(graphics)
-graphics.setColor(this.foregroundColor)
+this.colorFillPaintable!.paint(graphics);
+    
+graphics.setColor(this.foregroundColor);
+    
 
 
 
@@ -75,10 +79,12 @@ graphics.setColor(this.foregroundColor)
         
 index >= 0; index--)
         {
-this.paintableArray[index]!.paint(graphics)
+this.paintableArray[index]!.paint(graphics);
+    
 }
 
-super.paint(graphics)
+super.paint(graphics);
+    
 }
 
 

@@ -70,26 +70,32 @@ public constructor (transformInfoInterface: TransformInfoInterface)
     var document: Document = CustomizerUtil.getInstance()!.getViewDataForComponentsInObjectConfig(this.getTransformInfoInterface())!;
         
         
-
-this.titleBody= TitleBodyValidation(document)
+;
+    
+this.titleBody= TitleBodyValidation(document);
+    
 
     var isValid: Boolean = this.titleBody!.isValid()!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return isValid;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("Failed to validate", this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put("Failed to validate", this, commonStrings!.IS_VALID, e);
+    
 
                                     }
                                 
@@ -111,21 +117,28 @@ this.titleBody= TitleBodyValidation(document)
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(this.titleBody!.validationInfo())
+;
+    
+stringBuffer!.append(this.titleBody!.validationInfo());
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e)
+                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e);
+    
 
                                     }
                                 

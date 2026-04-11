@@ -18,7 +18,10 @@
 
 
 
-import { Vector } from "../../../../../../java/util/Vector.js";
+            import Vector from "@ohos.util.Vector";
+        
+
+//import { Vector } from "../../../../../../java/util/Vector.js";
 
     
 import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
@@ -57,7 +60,8 @@ export class SaveMotionRectanglesResultsWorker
 public constructor (){
 
             super();
-            this.motionRectanglesVector= Vector()
+            this.motionRectanglesVector= Vector();
+    
 }
 
 
@@ -73,14 +77,17 @@ public constructor (){
 
     public onMotionRectanglesImageComparisonResultsEvent(motionRectanglesResultsEvent: MotionRectanglesResultsEvent){
 var motionRectanglesResultsEvent = motionRectanglesResultsEvent
-this.getMotionRectanglesVector()!.add(motionRectanglesResultsEvent)
-this.run()
+this.getMotionRectanglesVector()!.add(motionRectanglesResultsEvent);
+    
+this.run();
+    
 }
 
 
     public onEvent(allBinaryEventObject: AllBinaryEventObject){
 var allBinaryEventObject = allBinaryEventObject
-this.onMotionRectanglesImageComparisonResultsEvent(allBinaryEventObject as MotionRectanglesResultsEvent)
+this.onMotionRectanglesImageComparisonResultsEvent(allBinaryEventObject as MotionRectanglesResultsEvent);
+    
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
@@ -98,39 +105,55 @@ this.onMotionRectanglesImageComparisonResultsEvent(allBinaryEventObject as Motio
 
     public setRunning(running: boolean){
 var running = running
-this.running= running
+this.running= running;
+    
 }
 
 
     public run(){
 
         try {
-            logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.RUN)
-this.setRunning(true)
+            logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.RUN);
+    
+this.setRunning(true);
+    
 
     var timeHelper: TimeDelayHelper = new TimeDelayHelper(1000);
         
         
+;
+    
+timeHelper!.setStartTime();
+    
 
-timeHelper!.setStartTime()
+    var motionRectanglesResultsEvent: MotionRectanglesResultsEvent = this.getMotionRectanglesVector()!.get(0);
 
-    var motionRectanglesResultsEvent: MotionRectanglesResultsEvent = this.getMotionRectanglesVector()!.get(0) as MotionRectanglesResultsEvent;
+                         as MotionRectanglesResultsEvent;
         
         
-
+;
+    
 
     var motionRectangles: MotionRectangles = motionRectanglesResultsEvent!.getMotionRectangles()!;
         
         
-
+;
+    
 MotionRectanglesImageInputOutput().
-                            save(motionRectangles, motionRectanglesResultsEvent!.getFrame())
-this.getMotionRectanglesVector()!.remove(motionRectangles)
-logUtil!.put(CommonLabels.getInstance()!.ELAPSED +timeHelper!.getElapsed(), this, this.commonStrings!.RUN)
-logUtil!.put(this.commonStrings!.END, this, this.commonStrings!.RUN)
-} catch(e: Exception)
+                            save(motionRectangles, motionRectanglesResultsEvent!.getFrame());
+    
+this.getMotionRectanglesVector()!.remove(motionRectangles);
+    
+logUtil!.put(CommonLabels.getInstance()!.ELAPSED +timeHelper!.getElapsed(), this, this.commonStrings!.RUN);
+    
+logUtil!.put(this.commonStrings!.END, this, this.commonStrings!.RUN);
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e)
+logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e);
+    
 }
 
 }

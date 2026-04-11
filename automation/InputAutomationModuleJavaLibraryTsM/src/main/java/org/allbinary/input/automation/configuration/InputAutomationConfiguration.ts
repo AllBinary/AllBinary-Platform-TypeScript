@@ -114,8 +114,10 @@ public constructor (){
 
     public setInstalled(installed: boolean){
 var installed = installed
-this.installed= installed
-logUtil!.put("Installed: " +installed, this, "setIntalled")
+this.installed= installed;
+    
+logUtil!.put("Installed: " +installed, this, "setIntalled");
+    
 }
 
 
@@ -136,7 +138,8 @@ logUtil!.put("Installed: " +installed, this, "setIntalled")
     var document: Document = DomDocumentHelper.create()!;
         
         
-
+;
+    
 
                     //Otherwise - statement - EmptyStmt
 
@@ -144,21 +147,28 @@ logUtil!.put("Installed: " +installed, this, "setIntalled")
     var file: File = new File(FILENAME);
         
         
-
-FileUtil.getInstance()!.copy(AbPath(file.getAbsolutePath()), AbPath(file.getAbsolutePath() +".bak.xml"))
+;
+    
+FileUtil.getInstance()!.copy(AbPath(file.getAbsolutePath()), AbPath(file.getAbsolutePath() +".bak.xml"));
+    
 
     var jaxbContext: JAXBContext = JAXBContext.newInstance(InputAutomationConfiguration::class)!;
         
         
-
+;
+    
 
     var marshaller: Marshaller = jaxbContext!.createMarshaller()!;
         
         
-
-marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true)
-marshaller.marshal(this, document)
-DomDocumentFileHelper.save(FileWrapperUtil.wrapFile(file), document)
+;
+    
+marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
+    
+marshaller.marshal(this, document);
+    
+DomDocumentFileHelper.save(FileWrapperUtil.wrapFile(file), document);
+    
 }
 
 

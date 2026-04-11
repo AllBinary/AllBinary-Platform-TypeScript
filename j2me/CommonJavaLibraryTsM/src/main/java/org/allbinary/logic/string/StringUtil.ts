@@ -53,7 +53,7 @@ export class StringUtil
         
         
 
-    private readonly stringArray: string[] = new Array(0);
+    private readonly stringArray: string[] = [];
         
         
 private constructor (){
@@ -109,12 +109,14 @@ var string = string
     var count: number = 0;
         
         
-
+;
+    
 
     var size: number = string.length!;
         
         
-
+;
+    
 
 
 
@@ -129,7 +131,8 @@ index < size; index++)
                         if(string[index] == aChar)
                         
                                     {
-                                    count++
+                                    count++;
+    
 
                                     }
                                 
@@ -157,6 +160,8 @@ index < size; index++)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return anyType!.toString();
+
+                        ;
     
 
                                     }

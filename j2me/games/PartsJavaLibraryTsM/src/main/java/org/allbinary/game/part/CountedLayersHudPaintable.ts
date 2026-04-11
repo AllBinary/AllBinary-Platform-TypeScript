@@ -72,11 +72,16 @@ var dropSize = dropSize
 var startIndex = startIndex
 var countedTotalStringColor = countedTotalStringColor
 var countedPartsBorder = countedPartsBorder
-this.partInterfaceArray= partInterfaceArray
-this.startIndex= startIndex
-this.countedTotalStringColor= countedTotalStringColor
-this.countedPartsBorder= countedPartsBorder
-this.dropSize= dropSize
+this.partInterfaceArray= partInterfaceArray;
+    
+this.startIndex= startIndex;
+    
+this.countedTotalStringColor= countedTotalStringColor;
+    
+this.countedPartsBorder= countedPartsBorder;
+    
+this.dropSize= dropSize;
+    
 }
 
 
@@ -86,12 +91,14 @@ var graphics = graphics
     var height: number = myFont!.DEFAULT_CHAR_HEIGHT;
         
         
-
+;
+    
 
                         if(this.dropSize > myFont!.DEFAULT_CHAR_HEIGHT)
                         
                                     {
-                                    height= this.dropSize
+                                    height= this.dropSize;
+    
 
                                     }
                                 
@@ -99,38 +106,47 @@ var graphics = graphics
     var lastWidth: number = DisplayInfoSingleton.getInstance()!.getLastWidth()!;
         
         
-
+;
+    
 
     var count: number = 0;
         
         
-
+;
+    
 
     var widthEdge: number = lastWidth -this.dropSize;
         
         
-
+;
+    
 
     var y: number= 0
-
+;
+    
 
     var size: number = partInterfaceArray!.length
                 ;
         
         
-
+;
+    
 
     var countedLayerInterfaceFactory: CountedLayerInterfaceFactoryPart
-
+;
+    
 
     var pickedUpLayerInterfaceFactoryInterface: PickedUpLayerInterfaceFactoryInterface
-
+;
+    
 
     var layerInterface: AllBinaryLayer
-
+;
+    
 
     var charArray: string[]
-
+;
+    
 
 
 
@@ -141,20 +157,30 @@ var graphics = graphics
         
 index < size; index++)
         {
-countedLayerInterfaceFactory= partInterfaceArray[index]! as CountedLayerInterfaceFactoryPart
+countedLayerInterfaceFactory= partInterfaceArray[index]! as CountedLayerInterfaceFactoryPart;
+    
 
                         if(countedLayerInterfaceFactory!.getTotal() > 0)
                         
                                     {
-                                    pickedUpLayerInterfaceFactoryInterface= countedLayerInterfaceFactory!.getCountedPickedUpLayerInterfaceFactory()
-layerInterface= pickedUpLayerInterfaceFactoryInterface!.getIconLayer()
-y= 40 +(count *height)
-layerInterface!.setPosition(widthEdge, y, layerInterface!.getZP())
-layerInterface!.paint(graphics)
-graphics.setColor(countedTotalStringColor)
-charArray= countedLayerInterfaceFactory!.getTotalString()
-graphics.drawChars(charArray, 0, charArray!.length, widthEdge -countedLayerInterfaceFactory!.getXOffset(), y, 0)
-count++
+                                    pickedUpLayerInterfaceFactoryInterface= countedLayerInterfaceFactory!.getCountedPickedUpLayerInterfaceFactory();
+    
+layerInterface= pickedUpLayerInterfaceFactoryInterface!.getIconLayer();
+    
+y= 40 +(count *height);
+    
+layerInterface!.setPosition(widthEdge, y, layerInterface!.getZP());
+    
+layerInterface!.paint(graphics);
+    
+graphics.setColor(countedTotalStringColor);
+    
+charArray= countedLayerInterfaceFactory!.getTotalString();
+    
+graphics.drawChars(charArray, 0, charArray!.length, widthEdge -countedLayerInterfaceFactory!.getXOffset(), y, 0);
+    
+count++;
+    
 
                                     }
                                 
@@ -164,8 +190,10 @@ count++
                         if(count > 0)
                         
                                     {
-                                    graphics.setColor(countedPartsBorder)
-graphics.drawRect(lastWidth -(XXStringWidth +this.dropSize), 40, XXStringWidth +this.dropSize, (count *height) +3)
+                                    graphics.setColor(countedPartsBorder);
+    
+graphics.drawRect(lastWidth -(XXStringWidth +this.dropSize), 40, XXStringWidth +this.dropSize, (count *height) +3);
+    
 
                                     }
                                 

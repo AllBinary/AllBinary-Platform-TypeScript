@@ -55,7 +55,8 @@ private constructor (context: Context){
 
             super();
             var context = context
-this.context= context
+this.context= context;
+    
 }
 
 
@@ -65,14 +66,17 @@ this.context= context
 var path = path
 
         try {
-            context.openFileInput(path)
+            context.openFileInput(path);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return true;
     
-} catch(e: FileNotFoundException)
+
+                //: 
+} catch(e) 
             {
 
 

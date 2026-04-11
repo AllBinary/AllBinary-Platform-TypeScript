@@ -66,18 +66,22 @@ export class GameConfigurationUtil
     public change(gameOptionsForm: GameOptionsForm, gauge: GameConfigurationGauge){
 var gameOptionsForm = gameOptionsForm
 var gauge = gauge
-this.update(gauge)
+this.update(gauge);
+    
 
     var gameConfigurationSingleton: GameConfigurationSingleton = GameConfigurationSingleton.getInstance()!;
         
         
-
+;
+    
 
     var gameConfiguration: GameConfiguration = gameConfigurationSingleton!.getInstance(gauge.getLabel())!;
         
         
-
-this.updateChallange(gameOptionsForm, gameConfiguration)
+;
+    
+this.updateChallange(gameOptionsForm, gameConfiguration);
+    
 }
 
 
@@ -101,35 +105,48 @@ var gauge = gauge
     var gameConfigurationSingleton: GameConfigurationSingleton = GameConfigurationSingleton.getInstance()!;
         
         
-
+;
+    
 
     var gameConfiguration: GameConfiguration = gameConfigurationSingleton!.getInstance(gauge.getLabel())!;
         
         
-
+;
+    
 
     var smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;
         
         
-
+;
+    
 
     var value: Integer = smallIntegerSingletonFactory!.getInstance(gauge.getValue() +gameConfiguration!.getMinValue()!.toInt())!;
         
         
-
+;
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(GAUGE_UPDATE)
-stringBuffer!.append(gameConfiguration!.getName())
-stringBuffer!.append(FROM)
-stringBuffer!.appendint(gameConfiguration!.getValue()!.toInt())
-stringBuffer!.append(TO)
-stringBuffer!.appendint(value.toInt())
-logUtil!.put(stringBuffer!.toString(), this, commonStrings!.UPDATE)
-gameConfiguration!.setValue(value)
+;
+    
+stringBuffer!.append(GAUGE_UPDATE);
+    
+stringBuffer!.append(gameConfiguration!.getName());
+    
+stringBuffer!.append(FROM);
+    
+stringBuffer!.appendint(gameConfiguration!.getValue()!.toInt());
+    
+stringBuffer!.append(TO);
+    
+stringBuffer!.appendint(value.toInt());
+    
+logUtil!.put(stringBuffer!.toString(), this, commonStrings!.UPDATE);
+    
+gameConfiguration!.setValue(value);
+    
 }
 
 
@@ -141,24 +158,34 @@ var gauge = gauge
     var gameConfigurationSingleton: GameConfigurationSingleton = GameConfigurationSingleton.getInstance()!;
         
         
-
+;
+    
 
     var gameConfiguration: GameConfiguration = gameConfigurationSingleton!.getInstance(gauge.getLabel())!;
         
         
-
+;
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("Gauge Default: ")
-stringBuffer!.append(gameConfiguration!.getName())
-stringBuffer!.append(TO)
-stringBuffer!.appendint(gameConfiguration!.getDefaultValue()!.toInt())
-logUtil!.put(stringBuffer!.toString(), this, "setDefault")
-gauge.setValue(gameConfiguration!.getDefaultValue()!.toInt() -gameConfiguration!.getMinValue()!.toInt())
-gameConfiguration!.setValue(gameConfiguration!.getDefaultValue())
+;
+    
+stringBuffer!.append("Gauge Default: ");
+    
+stringBuffer!.append(gameConfiguration!.getName());
+    
+stringBuffer!.append(TO);
+    
+stringBuffer!.appendint(gameConfiguration!.getDefaultValue()!.toInt());
+    
+logUtil!.put(stringBuffer!.toString(), this, "setDefault");
+    
+gauge.setValue(gameConfiguration!.getDefaultValue()!.toInt() -gameConfiguration!.getMinValue()!.toInt());
+    
+gameConfiguration!.setValue(gameConfiguration!.getDefaultValue());
+    
 }
 
 
@@ -171,26 +198,34 @@ var gameConfiguration = gameConfiguration
     var gameConfigurationSingleton: GameConfigurationSingleton = GameConfigurationSingleton.getInstance()!;
         
         
-
+;
+    
 
     var gameConfigurationCentral: GameConfigurationCentral = GameConfigurationCentral.getInstance()!;
         
         
-
+;
+    
 
                         if(gameConfiguration == gameConfigurationCentral!.CHALLENGE_LEVEL)
                         
                                     {
-                                    logUtil!.put(commonStrings!.START, this, "updateChallange")
-gameConfigurationCentral!.COLLIDE_DAMAGE.setValue(gameConfiguration!.getValue())
-gameConfigurationCentral!.ATTACK_CHALLENGE_LEVEL.setValue(gameConfiguration!.getValue())
-gameConfigurationCentral!.DURABILITY_CHALLENGE_LEVEL.setValue(gameConfiguration!.getValue())
-gameConfigurationCentral!.SPEED_CHALLENGE_LEVEL.setValue(gameConfiguration!.getValue())
+                                    logUtil!.put(commonStrings!.START, this, "updateChallange");
+    
+gameConfigurationCentral!.COLLIDE_DAMAGE.setValue(gameConfiguration!.getValue());
+    
+gameConfigurationCentral!.ATTACK_CHALLENGE_LEVEL.setValue(gameConfiguration!.getValue());
+    
+gameConfigurationCentral!.DURABILITY_CHALLENGE_LEVEL.setValue(gameConfiguration!.getValue());
+    
+gameConfigurationCentral!.SPEED_CHALLENGE_LEVEL.setValue(gameConfiguration!.getValue());
+    
 
     var size: number = gameOptionsForm!.size()!;
         
         
-
+;
+    
 
 
 
@@ -205,7 +240,8 @@ index < size; index++)
     var item: Item = gameOptionsForm!.get(index)!;
         
         
-
+;
+    
 
                         if(item is GameConfigurationGauge)
                         
@@ -214,22 +250,26 @@ index < size; index++)
     var gauge: GameConfigurationGauge = item as GameConfigurationGauge;
         
         
-
+;
+    
 
     var name: string = item.getLabel()!;
         
         
-
+;
+    
 
     var nextGameConfiguration: GameConfiguration = gameConfigurationSingleton!.getInstance(name)!;
         
         
-
+;
+    
 
                         if(nextGameConfiguration == gameConfigurationCentral!.COLLIDE_DAMAGE)
                         
                                     {
-                                    gauge.setValue(gameConfigurationCentral!.COLLIDE_DAMAGE.getValue()!.toInt() -gameConfiguration!.getMinValue()!.toInt())
+                                    gauge.setValue(gameConfigurationCentral!.COLLIDE_DAMAGE.getValue()!.toInt() -gameConfiguration!.getMinValue()!.toInt());
+    
 
                                     }
                                 
@@ -237,7 +277,8 @@ index < size; index++)
                         if(nextGameConfiguration == gameConfigurationCentral!.DURABILITY_CHALLENGE_LEVEL)
                         
                                     {
-                                    gauge.setValue(gameConfigurationCentral!.DURABILITY_CHALLENGE_LEVEL.getValue()!.toInt() -gameConfiguration!.getMinValue()!.toInt())
+                                    gauge.setValue(gameConfigurationCentral!.DURABILITY_CHALLENGE_LEVEL.getValue()!.toInt() -gameConfiguration!.getMinValue()!.toInt());
+    
 
                                     }
                                 
@@ -245,7 +286,8 @@ index < size; index++)
                         if(nextGameConfiguration == gameConfigurationCentral!.ATTACK_CHALLENGE_LEVEL)
                         
                                     {
-                                    gauge.setValue(gameConfigurationCentral!.ATTACK_CHALLENGE_LEVEL.getValue()!.toInt() -gameConfiguration!.getMinValue()!.toInt())
+                                    gauge.setValue(gameConfigurationCentral!.ATTACK_CHALLENGE_LEVEL.getValue()!.toInt() -gameConfiguration!.getMinValue()!.toInt());
+    
 
                                     }
                                 
@@ -253,7 +295,8 @@ index < size; index++)
                         if(nextGameConfiguration == gameConfigurationCentral!.SPEED_CHALLENGE_LEVEL)
                         
                                     {
-                                    gauge.setValue(gameConfigurationCentral!.SPEED_CHALLENGE_LEVEL.getValue()!.toInt() -gameConfiguration!.getMinValue()!.toInt())
+                                    gauge.setValue(gameConfigurationCentral!.SPEED_CHALLENGE_LEVEL.getValue()!.toInt() -gameConfiguration!.getMinValue()!.toInt());
+    
 
                                     }
                                 
@@ -273,14 +316,18 @@ index < size; index++)
         
 
     public updateCompetitionValue(){
-logUtil!.put(commonStrings!.START, this, "updateCompetitionValue")
+logUtil!.put(commonStrings!.START, this, "updateCompetitionValue");
+    
 
     var gameConfigurationCentral: GameConfigurationCentral = GameConfigurationCentral.getInstance()!;
         
         
-
-COMPETITION_VALUE= gameConfigurationCentral!.COLLIDE_DAMAGE.getValue()!.toInt() +gameConfigurationCentral!.ATTACK_CHALLENGE_LEVEL.getValue()!.toInt() +gameConfigurationCentral!.DURABILITY_CHALLENGE_LEVEL.getValue()!.toInt() +gameConfigurationCentral!.SPEED_CHALLENGE_LEVEL.getValue()!.toInt()
-COMPETITION_VALUE= (COMPETITION_VALUE shr 2)
+;
+    
+COMPETITION_VALUE= gameConfigurationCentral!.COLLIDE_DAMAGE.getValue()!.toInt() +gameConfigurationCentral!.ATTACK_CHALLENGE_LEVEL.getValue()!.toInt() +gameConfigurationCentral!.DURABILITY_CHALLENGE_LEVEL.getValue()!.toInt() +gameConfigurationCentral!.SPEED_CHALLENGE_LEVEL.getValue()!.toInt();
+    
+COMPETITION_VALUE= (COMPETITION_VALUE shr 2);
+    
 }
 
 

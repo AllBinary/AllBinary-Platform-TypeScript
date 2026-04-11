@@ -65,7 +65,9 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.serverList!.get(index) as String;
+                        return this.serverList!.get(index);
+
+                         as String;
     
 }
 
@@ -76,31 +78,37 @@ var index = index
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.serverList!.size();
+
+                        ;
     
 }
 
 
     public setLicenseId(value: string){
 var value = value
-this.id= value
+this.id= value;
+    
 }
 
 
     public clearServers(){
-this.serverList!.clear()
+this.serverList!.clear();
+    
 }
 
 
     public setServer(value: string, index: number){
 var value = value
 var index = index
-this.serverList!.add(index, value)
+this.serverList!.add(index, value);
+    
 }
 
 
     public addServer(value: string){
 var value = value
-this.serverList!.add(value)
+this.serverList!.add(value);
+    
 }
 
 
@@ -120,7 +128,8 @@ var servers = servers
                         if(DebugFactory.getInstance() == NoDebug.getInstance())
                         
                                     {
-                                    this.serverList= servers
+                                    this.serverList= servers;
+    
 
                                     }
                                 

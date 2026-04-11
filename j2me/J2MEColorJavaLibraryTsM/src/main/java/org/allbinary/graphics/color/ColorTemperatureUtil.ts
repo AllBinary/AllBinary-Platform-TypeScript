@@ -48,12 +48,14 @@ var thirdTemp = thirdTemp
     var basicColor: BasicColor = basicColorFactory!.RED;
         
         
-
+;
+    
 
                         if(thirdTemp > 3700)
                         
                                     {
-                                    basicColor= basicColorFactory!.PURPLE
+                                    basicColor= basicColorFactory!.PURPLE;
+    
 
                                     }
                                 
@@ -61,7 +63,8 @@ var thirdTemp = thirdTemp
                         if(thirdTemp > 3200)
                         
                                     {
-                                    basicColor= basicColorFactory!.BLUE
+                                    basicColor= basicColorFactory!.BLUE;
+    
 
                                     }
                                 
@@ -69,7 +72,8 @@ var thirdTemp = thirdTemp
                         if(thirdTemp > 2700)
                         
                                     {
-                                    basicColor= basicColorFactory!.PUCE
+                                    basicColor= basicColorFactory!.PUCE;
+    
 
                                     }
                                 
@@ -77,7 +81,8 @@ var thirdTemp = thirdTemp
                         if(thirdTemp > 2200)
                         
                                     {
-                                    basicColor= basicColorFactory!.WHITE
+                                    basicColor= basicColorFactory!.WHITE;
+    
 
                                     }
                                 
@@ -85,7 +90,8 @@ var thirdTemp = thirdTemp
                         if(thirdTemp > 1700)
                         
                                     {
-                                    basicColor= basicColorFactory!.GREEN
+                                    basicColor= basicColorFactory!.GREEN;
+    
 
                                     }
                                 
@@ -93,7 +99,8 @@ var thirdTemp = thirdTemp
                         if(thirdTemp > 1200)
                         
                                     {
-                                    basicColor= basicColorFactory!.YELLOW
+                                    basicColor= basicColorFactory!.YELLOW;
+    
 
                                     }
                                 
@@ -101,7 +108,8 @@ var thirdTemp = thirdTemp
                         if(thirdTemp > 700)
                         
                                     {
-                                    basicColor= basicColorFactory!.ORANGE
+                                    basicColor= basicColorFactory!.ORANGE;
+    
 
                                     }
                                 

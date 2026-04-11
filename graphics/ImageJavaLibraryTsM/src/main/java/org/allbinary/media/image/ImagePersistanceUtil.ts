@@ -92,30 +92,37 @@ var bufferedImage = bufferedImage
     var batikPNGImageWriter: PNGImageWriter = new PNGImageWriter();
         
         
-
+;
+    
 
     var fileOutputStream: AbFileOutputStream = new AbFileOutputStream(file);
         
         
-
+;
+    
 
         try {
-            batikPNGImageWriter!.writeImage(bufferedImage, fileOutputStream)
+            batikPNGImageWriter!.writeImage(bufferedImage, fileOutputStream);
+    
 
          finally {
-            fileOutputStream!.flush()
-StreamUtil.getInstance()!.close(fileOutputStream)
+            fileOutputStream!.flush();
+    
+StreamUtil.getInstance()!.close(fileOutputStream);
+    
 
          }
         
-logUtil!.put("Wrote Image: " +file.getAbsolutePath(), this, commonStrings!.SAVE)
+logUtil!.put("Wrote Image: " +file.getAbsolutePath(), this, commonStrings!.SAVE);
+    
 }
 
 
     public saveWithImageIO(filePath: string, bufferedImage: BufferedImage){
 var filePath = filePath
 var bufferedImage = bufferedImage
-saveWithImageIO(File(filePath), bufferedImage)
+saveWithImageIO(File(filePath), bufferedImage);
+    
 }
 
 
@@ -128,26 +135,32 @@ var bufferedImage = bufferedImage
             ;
         
         
-
+;
+    
 
     var ios: ImageOutputStream = 
                 null
             ;
         
         
-
+;
+    
 
         try {
             
     var iter: Iterator = ImageIO.getImageWritersByFormatName("jpeg")!;
         
         
+;
+    
 
+                        if(!iter.hasNext();
 
-                        if(!iter.hasNext())
+                        )
                         
                                     {
-                                    logUtil!.put("Unable to save image to jpeg file type.", this, commonStrings!.SAVE)
+                                    logUtil!.put("Unable to save image to jpeg file type.", this, commonStrings!.SAVE);
+    
 
 
 
@@ -157,24 +170,37 @@ var bufferedImage = bufferedImage
 
                                     }
                                 
-writer= iter.next() as ImageWriter
-ios= ImageIO.createImageOutputStream(file)
-writer.setOutput(ios)
+writer= iter.next();
+
+                         as ImageWriter;
+    
+ios= ImageIO.createImageOutputStream(file);
+    
+writer.setOutput(ios);
+    
 
     var iwp: ImageWriteParam = writer.getDefaultWriteParam()!;
         
         
-
-iwp.setCompressionMode(ImageWriteParam.MODE_EXPLICIT)
-iwp.setCompressionQuality(0.95f)
+;
+    
+iwp.setCompressionMode(ImageWriteParam.MODE_EXPLICIT);
+    
+iwp.setCompressionQuality(0.95f);
+    
 writer.write(
                             null, IIOImage(bufferedImage, 
                             null, 
-                            null), iwp)
-logUtil!.put("Wrote Image: " +file.getAbsolutePath(), this, commonStrings!.SAVE)
-} catch(e: Exception)
+                            null), iwp);
+    
+logUtil!.put("Wrote Image: " +file.getAbsolutePath(), this, commonStrings!.SAVE);
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.SAVE, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.SAVE, e);
+    
 }
 
          finally {
@@ -186,7 +212,8 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.SAVE, e)
                                 )
                         
                                     {
-                                    ios.flush()
+                                    ios.flush();
+    
 
         try {
             
@@ -195,14 +222,19 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.SAVE, e)
                                 )
                         
                                     {
-                                    logUtil!.put(ios.toString(), ios, commonStrings!.CLOSE)
-ios.close()
+                                    logUtil!.put(ios.toString(), ios, commonStrings!.CLOSE);
+    
+ios.close();
+    
 
                                     }
                                 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, ios, commonStrings!.CLOSE, e)
+logUtil!.put(commonStrings!.EXCEPTION, ios, commonStrings!.CLOSE, e);
+    
 }
 
 
@@ -214,13 +246,17 @@ logUtil!.put(commonStrings!.EXCEPTION, ios, commonStrings!.CLOSE, e)
                                 )
                         
                                     {
-                                    writer.dispose()
+                                    writer.dispose();
+    
 
                                     }
                                 
-} catch(e2: IOException)
+
+                //: 
+} catch(e2) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, this, commonStrings!.SAVE, e2)
+logUtil!.put(this.commonStrings!.EXCEPTION, this, commonStrings!.SAVE, e2);
+    
 }
 
 

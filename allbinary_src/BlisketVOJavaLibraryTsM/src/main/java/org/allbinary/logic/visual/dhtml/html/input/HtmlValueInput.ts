@@ -48,9 +48,12 @@ var after = after
     var stringUtil: StringUtil = StringUtil.getInstance()!;
         
         
-
-this.value= stringUtil!.EMPTY_STRING
-addAttribute(VALUE, value)
+;
+    
+this.value= stringUtil!.EMPTY_STRING;
+    
+addAttribute(VALUE, value);
+    
 }
 
 

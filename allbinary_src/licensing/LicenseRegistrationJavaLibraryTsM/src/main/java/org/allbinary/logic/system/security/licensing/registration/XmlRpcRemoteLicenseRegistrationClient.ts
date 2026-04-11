@@ -18,13 +18,19 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
+            import Hashtable from "@ohos.util.HashMap";
+        
 import { IOException } from "../../../../../../../java/io/IOException.js";
 
     
-import { Hashtable } from "../../../../../../../java/util/Hashtable.js";
+
+//import { Hashtable } from "../../../../../../../java/util/Hashtable.js";
 
     
-import { Vector } from "../../../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../../../java/util/Vector.js";
 
     
 import { CryptInterface } from "../../../../../../../org/allbinary/init/crypt/jcehelper/CryptInterface.js";
@@ -78,7 +84,8 @@ public constructor (clientInfo: AbeClientInformationInterface)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setServer(0)
+this.setServer(0);
+    
 }
 
 
@@ -93,67 +100,92 @@ this.setServer(0)
     var server: string = getClientInfo()!.getLicenseServer(this.getServer())!;
         
         
-
+;
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(TRYING)
-stringBuffer!.appendint(this.getServer())
-stringBuffer!.append(SEP)
-stringBuffer!.append(server)
-logUtil!.put(CommonLabels.getInstance()!.START_LABEL +stringBuffer!.toString(), this, commonStrings!.GET)
+;
+    
+stringBuffer!.append(TRYING);
+    
+stringBuffer!.appendint(this.getServer());
+    
+stringBuffer!.append(SEP);
+    
+stringBuffer!.append(server);
+    
+logUtil!.put(CommonLabels.getInstance()!.START_LABEL +stringBuffer!.toString(), this, commonStrings!.GET);
+    
 
     var param: Vector = new Vector();
         
         
-
+;
+    
 
     var serverUrl: string = getClientInfo()!.getLicenseServer(this.getServer())!;
         
         
-
+;
+    
 
     var index: number = serverUrl!.lastIndexOf("/")!;
         
         
-
-serverUrl= serverUrl!.substring(0, index +1) +PAGE
+;
+    
+serverUrl= serverUrl!.substring(0, index +1) +PAGE;
+    
 
     var xmlRpcClient: XmlRpcClient = new XmlRpcClient(serverUrl);
         
         
-
-this.setClient(xmlRpcClient)
+;
+    
+this.setClient(xmlRpcClient);
+    
 xmlRpcClient!.setBasicAuthentication(
                             null, 
-                            null)
+                            null);
+    
 
-    var hashtable: Hashtable<Any, Any> = anyType as Hashtable<Any, Any>;
+    var hashtable: Hashtable<any, any> = anyType as Hashtable<any, any>;
         
         
-
-logUtil!.put(CLIENT_INFO +hashtable.toString(), this, commonStrings!.GET)
-param.add(hashtable)
+;
+    
+logUtil!.put(CLIENT_INFO +hashtable.toString(), this, commonStrings!.GET);
+    
+param.add(hashtable);
+    
 
     var result: any = {} = xmlRpcClient!.execute(this.getRemoteMethod(), param, cryptInterface)!;
         
         
-
-logUtil!.put(RESULT +result.toString(), this, commonStrings!.GET)
-isOnline= true
+;
+    
+logUtil!.put(RESULT +result.toString(), this, commonStrings!.GET);
+    
+isOnline= true;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
-} catch(e: IOException)
-            {
-logUtil!.put(TRYING_OTHER_SERVERS +ExceptionUtil.getInstance()!.getStackTrace(e), this, commonStrings!.GET)
 
-                        if(!e.getMessage()!.startsWith(HOST_NOT_RESOLVED))
+                //: 
+} catch(e) 
+            {
+logUtil!.put(TRYING_OTHER_SERVERS +ExceptionUtil.getInstance()!.getStackTrace(e), this, commonStrings!.GET);
+    
+
+                        if(!e.getMessage()!.startsWith(HOST_NOT_RESOLVED);
+
+                        )
                         
                                     {
                                     
@@ -161,6 +193,8 @@ logUtil!.put(TRYING_OTHER_SERVERS +ExceptionUtil.getInstance()!.getStackTrace(e)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.tryAnother(anyType);
+
+                        ;
     
 
                                     }
@@ -174,24 +208,34 @@ logUtil!.put(TRYING_OTHER_SERVERS +ExceptionUtil.getInstance()!.getStackTrace(e)
                         }
                             
 }
- catch(e: XmlRpcException)
+
+                //: 
+ catch(e) 
             {
-logUtil!.put(SERVER_REPORTED_ERROR, this, commonStrings!.GET, e)
+logUtil!.put(SERVER_REPORTED_ERROR, this, commonStrings!.GET, e);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.tryAnother(anyType);
+
+                        ;
     
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
-logUtil!.put(UNKNOWN_ERROR, this, commonStrings!.GET, e)
+logUtil!.put(UNKNOWN_ERROR, this, commonStrings!.GET, e);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.tryAnother(anyType);
+
+                        ;
     
 }
 

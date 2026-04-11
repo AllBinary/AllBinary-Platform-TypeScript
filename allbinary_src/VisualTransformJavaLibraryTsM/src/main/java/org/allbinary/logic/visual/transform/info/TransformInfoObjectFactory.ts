@@ -83,30 +83,39 @@ private constructor (){
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put("Creating View: " +transformInfoInterface!.getName(), this, commonStrings!.GET_INSTANCE)
+;
+    
+logUtil!.put("Creating View: " +transformInfoInterface!.getName(), this, commonStrings!.GET_INSTANCE);
+    
 
                                     }
                                 
 
-    var params: any = {}[] = new Array(1);
+    var params: any[] = new Array(1);
         
         
+;
+    
 
-
-    var classes: KClass<*>[] = new Array(1);
+    var classes: Function[] = new Array(1);
         
         
-
+;
+    
 classes[0]= 
                                     //Otherwise - expression - AssignExpr - value - ClassExpr
+;
+    
+params[0]= transformInfoInterface as Object;
+    
 
-params[0]= transformInfoInterface as Object
+    var anyType: TransformInterface = AbeFactory.getInstance()!.getInstance(abeClientInformation, transformInfoInterface!.getObjectFile(), classes, params);
 
-    var anyType: TransformInterface = AbeFactory.getInstance()!.getInstance(abeClientInformation, transformInfoInterface!.getObjectFile(), classes, params) as TransformInterface;
+                         as TransformInterface;
         
         
-
+;
+    
 
                         if(anyType == 
                                     null
@@ -123,11 +132,16 @@ params[0]= transformInfoInterface as Object
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("\nNo Such View Name: ")
-stringBuffer!.append(transformInfoInterface!.getName())
-stringBuffer!.append("\nNo Such View Object: ")
-stringBuffer!.append(transformInfoInterface!.getObjectFile())
+;
+    
+stringBuffer!.append("\nNo Such View Name: ");
+    
+stringBuffer!.append(transformInfoInterface!.getName());
+    
+stringBuffer!.append("\nNo Such View Object: ");
+    
+stringBuffer!.append(transformInfoInterface!.getObjectFile());
+    
 
 
 
@@ -152,20 +166,24 @@ stringBuffer!.append(transformInfoInterface!.getObjectFile())
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return anyType;
     
-} catch(e: LicensingException)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed To Get Instance: ";
         
         
-
+;
+    
 
                         if(transformInfoInterface != 
                                     null
                                 )
                         
                                     {
-                                    error= error +transformInfoInterface!.getName()
+                                    error= error +transformInfoInterface!.getName();
+    
 
                                     }
                                 
@@ -177,8 +195,10 @@ stringBuffer!.append(transformInfoInterface!.getObjectFile())
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(error, this, commonStrings!.GET_INSTANCE, e)
+;
+    
+logUtil!.put(error, this, commonStrings!.GET_INSTANCE, e);
+    
 
                                     }
                                 
@@ -187,20 +207,24 @@ logUtil!.put(error, this, commonStrings!.GET_INSTANCE, e)
 
                             throw e
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
 
     var error: string = "Failed To Get Instance: ";
         
         
-
+;
+    
 
                         if(transformInfoInterface != 
                                     null
                                 )
                         
                                     {
-                                    error= error +transformInfoInterface!.getName()
+                                    error= error +transformInfoInterface!.getName();
+    
 
                                     }
                                 
@@ -212,8 +236,10 @@ logUtil!.put(error, this, commonStrings!.GET_INSTANCE, e)
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(error, this, commonStrings!.GET_INSTANCE, e)
+;
+    
+logUtil!.put(error, this, commonStrings!.GET_INSTANCE, e);
+    
 
                                     }
                                 

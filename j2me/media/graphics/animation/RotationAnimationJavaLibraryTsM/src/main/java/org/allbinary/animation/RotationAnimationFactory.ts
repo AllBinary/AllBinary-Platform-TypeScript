@@ -44,8 +44,10 @@ export class RotationAnimationFactory
 public constructor (){
 
             super();
-            this.totalAngle= AngleFactory.getInstance()!.TOTAL_ANGLE
-this.angleIncrement= (totalAngle /GameConfigurationCentral.getInstance()!.getGameControlFidelity()).toShort()
+            this.totalAngle= AngleFactory.getInstance()!.TOTAL_ANGLE;
+    
+this.angleIncrement= (totalAngle /GameConfigurationCentral.getInstance()!.getGameControlFidelity()).toShort();
+    
 }
 
 public constructor (totalAngle: number, angleIncrement: number){
@@ -53,8 +55,10 @@ public constructor (totalAngle: number, angleIncrement: number){
             super();
             var totalAngle = totalAngle
 var angleIncrement = angleIncrement
-this.totalAngle= totalAngle
-this.angleIncrement= angleIncrement
+this.totalAngle= totalAngle;
+    
+this.angleIncrement= angleIncrement;
+    
 }
 
 

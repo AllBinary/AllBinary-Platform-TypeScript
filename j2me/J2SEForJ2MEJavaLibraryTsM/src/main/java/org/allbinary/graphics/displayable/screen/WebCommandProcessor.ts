@@ -84,18 +84,25 @@ export class WebCommandProcessor
                         if(Desktop.isDesktopSupported() && Desktop.getDesktop()!.isSupported(Desktop.Action.BROWSE))
                         
                                     {
-                                    Desktop.getDesktop()!.browse(URI(list.remove(0) as String))
+                                    Desktop.getDesktop()!.browse(URI(list.remove(0);
+
+                         as String));
+    
 
                                     }
                                 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e);
+    
 }
 
 }

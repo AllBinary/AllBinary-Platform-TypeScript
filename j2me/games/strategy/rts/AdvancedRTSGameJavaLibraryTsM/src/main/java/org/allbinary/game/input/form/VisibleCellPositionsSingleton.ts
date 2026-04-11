@@ -82,15 +82,15 @@ export class VisibleCellPositionsSingleton
 }
 
 
-    private stationaryVisibleCellPositions: ShortArray[] = NullUtil.getInstance()!.NULL_SHORT_ARRAY_ARRAY;
+    private stationaryVisibleCellPositions: number[][] = NullUtil.getInstance()!.NULL_SHORT_ARRAY_ARRAY;
         
         
 
-    private visibleCellPositions: ShortArray[] = NullUtil.getInstance()!.NULL_SHORT_ARRAY_ARRAY;
+    private visibleCellPositions: number[][] = NullUtil.getInstance()!.NULL_SHORT_ARRAY_ARRAY;
         
         
 
-    private currentlyVisibleCellPositions: ShortArray[] = NullUtil.getInstance()!.NULL_SHORT_ARRAY_ARRAY;
+    private currentlyVisibleCellPositions: number[][] = NullUtil.getInstance()!.NULL_SHORT_ARRAY_ARRAY;
         
         
 
@@ -110,35 +110,46 @@ export class VisibleCellPositionsSingleton
 private constructor (){
 
             super();
-            LocalPlayerBuildingEventHandler.getInstance()!.addListener(this)
-ScrollMapEventHandler.getInstance()!.addListener(this)
+            LocalPlayerBuildingEventHandler.getInstance()!.addListener(this);
+    
+ScrollMapEventHandler.getInstance()!.addListener(this);
+    
 }
 
 
     public init(simpleTiledLayer: SimpleTiledLayer){
 var simpleTiledLayer = simpleTiledLayer
-this.paintSimpleTiledLayer= ALL_VISIBLE_TILEDLAYER
-this.currentIndex= 0
+this.paintSimpleTiledLayer= ALL_VISIBLE_TILEDLAYER;
+    
+this.currentIndex= 0;
+    
 
     var rows: number = simpleTiledLayer!.getRows()!;
         
         
-
+;
+    
 
     var columns: number = simpleTiledLayer!.getColumns()!;
         
         
-
-this.stationaryVisibleCellPositions= Array(rows) { ShortArray(columns) }
-this.visibleCellPositions= Array(rows) { ShortArray(columns) }
-this.currentlyVisibleCellPositions= Array(rows) { ShortArray(columns) }
-this.setSimpleTiledLayer(simpleTiledLayer)
+;
+    
+this.stationaryVisibleCellPositions= new Array(rows) [columns];
+    
+this.visibleCellPositions= new Array(rows) [columns];
+    
+this.currentlyVisibleCellPositions= new Array(rows) [columns];
+    
+this.setSimpleTiledLayer(simpleTiledLayer);
+    
 }
 
 
     public onEvent(eventObject: AllBinaryEventObject){
 var eventObject = eventObject
-ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
+ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
+    
 }
 
 
@@ -146,7 +157,8 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
             
     public onBuildingEvent(event: RTSLayerEvent){
 var event = event
-this.paintSimpleTiledLayer= this.simpleTiledLayer
+this.paintSimpleTiledLayer= this.simpleTiledLayer;
+    
 }
 
 
@@ -154,7 +166,8 @@ this.paintSimpleTiledLayer= this.simpleTiledLayer
             
     public onMoveEvent(scrollMapEvent: ScrollMapEvent){
 var scrollMapEvent = scrollMapEvent
-this.move(scrollMapEvent!.getDx(), scrollMapEvent!.getDy())
+this.move(scrollMapEvent!.getDx(), scrollMapEvent!.getDy());
+    
 }
 
 
@@ -171,11 +184,15 @@ var list = list
 index >= 0; index--)
         {
 
-    var cellPosition: CellPosition = list.get(index) as CellPosition;
-        
-        
+    var cellPosition: CellPosition = list.get(index);
 
-this.stationaryVisibleCellPositions[cellPosition!.getRow()]![cellPosition!.getColumn()]++
+                         as CellPosition;
+        
+        
+;
+    
+this.stationaryVisibleCellPositions[cellPosition!.getRow()]![cellPosition!.getColumn()]++;
+    
 }
 
 }
@@ -194,11 +211,15 @@ var list = list
 index >= 0; index--)
         {
 
-    var cellPosition: CellPosition = list.get(index) as CellPosition;
-        
-        
+    var cellPosition: CellPosition = list.get(index);
 
-this.stationaryVisibleCellPositions[cellPosition!.getRow()]![cellPosition!.getColumn()]--
+                         as CellPosition;
+        
+        
+;
+    
+this.stationaryVisibleCellPositions[cellPosition!.getRow()]![cellPosition!.getColumn()]--;
+    
 }
 
 }
@@ -210,12 +231,15 @@ this.stationaryVisibleCellPositions[cellPosition!.getRow()]![cellPosition!.getCo
                         
                                     {
                                     
-    var temp: ShortArray[] = this.currentlyVisibleCellPositions;
+    var temp: number[][] = this.currentlyVisibleCellPositions;
         
         
-
-this.currentlyVisibleCellPositions= this.visibleCellPositions
-this.visibleCellPositions= temp
+;
+    
+this.currentlyVisibleCellPositions= this.visibleCellPositions;
+    
+this.visibleCellPositions= temp;
+    
 
 
 
@@ -236,7 +260,8 @@ index >= 0; index--)
         
 index2 >= 0; index2--)
         {
-this.visibleCellPositions[index]![index2]= this.stationaryVisibleCellPositions[index]![index2]!
+this.visibleCellPositions[index]![index2]= this.stationaryVisibleCellPositions[index]![index2]!;
+    
 }
 
 }
@@ -244,12 +269,14 @@ this.visibleCellPositions[index]![index2]= this.stationaryVisibleCellPositions[i
 
                                     }
                                 
-this.currentIndex++
+this.currentIndex++;
+    
 
                         if(this.currentIndex > 10)
                         
                                     {
-                                    this.currentIndex= 0
+                                    this.currentIndex= 0;
+    
 
                                     }
                                 
@@ -296,11 +323,15 @@ var list = list
 index >= 0; index--)
         {
 
-    var cellPosition: CellPosition = list.get(index) as CellPosition;
-        
-        
+    var cellPosition: CellPosition = list.get(index);
 
-this.visibleCellPositions[cellPosition!.getRow()]![cellPosition!.getColumn()]++
+                         as CellPosition;
+        
+        
+;
+    
+this.visibleCellPositions[cellPosition!.getRow()]![cellPosition!.getColumn()]++;
+    
 }
 
 }
@@ -337,19 +368,22 @@ var cellPosition = cellPosition
     public move(dx: number, dy: number){
 var dx = dx
 var dy = dy
-this.getSimpleTiledLayer()!.move(dx, dy)
+this.getSimpleTiledLayer()!.move(dx, dy);
+    
 }
 
 
     public paint(graphics: Graphics){
 var graphics = graphics
-this.paintSimpleTiledLayer!.paint(graphics, this.currentlyVisibleCellPositions)
+this.paintSimpleTiledLayer!.paint(graphics, this.currentlyVisibleCellPositions);
+    
 }
 
 
     setSimpleTiledLayer(simpleTiledLayer: SimpleTiledLayer){
 var simpleTiledLayer = simpleTiledLayer
-this.simpleTiledLayer= simpleTiledLayer
+this.simpleTiledLayer= simpleTiledLayer;
+    
 }
 
 

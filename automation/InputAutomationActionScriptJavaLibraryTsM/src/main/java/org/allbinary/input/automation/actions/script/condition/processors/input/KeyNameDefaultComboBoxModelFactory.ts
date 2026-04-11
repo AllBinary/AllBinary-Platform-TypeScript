@@ -38,12 +38,14 @@ export class KeyNameDefaultComboBoxModelFactory
     var defaultComboBoxModel: DefaultComboBoxModel = new DefaultComboBoxModel();
         
         
-
+;
+    
 
     var keyArray: Integer[] = KeySingletonFactory.getArray()!;
         
         
-
+;
+    
 
 
 
@@ -58,8 +60,10 @@ index < keyArray!.length; index++)
     var keyAsString: string = KeyEvent.getKeyText(keyArray[index]!)!;
         
         
-
-defaultComboBoxModel!.addElement(keyAsString)
+;
+    
+defaultComboBoxModel!.addElement(keyAsString);
+    
 }
 
 

@@ -59,8 +59,10 @@ public constructor (){
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.VIEW) == 0)
                         
                                     {
-                                    this.setName("Basic Shipping Address View")
-this.setObjectFile("views.generic.address.shipping.ViewShippingAddressesView")
+                                    this.setName("Basic Shipping Address View");
+    
+this.setObjectFile("views.generic.address.shipping.ViewShippingAddressesView");
+    
 
                                     }
                                 
@@ -68,8 +70,10 @@ this.setObjectFile("views.generic.address.shipping.ViewShippingAddressesView")
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.EDIT) == 0)
                         
                                     {
-                                    this.setName("Basic Shipping Address View")
-this.setObjectFile("views.generic.address.shipping.EditShippingAddressesView")
+                                    this.setName("Basic Shipping Address View");
+    
+this.setObjectFile("views.generic.address.shipping.EditShippingAddressesView");
+    
 
                                     }
                                 
@@ -77,8 +81,10 @@ this.setObjectFile("views.generic.address.shipping.EditShippingAddressesView")
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.NEW) == 0)
                         
                                     {
-                                    this.setName("Basic Shipping Address View")
-this.setObjectFile("views.generic.address.shipping.NewShippingAddressesView")
+                                    this.setName("Basic Shipping Address View");
+    
+this.setObjectFile("views.generic.address.shipping.NewShippingAddressesView");
+    
 
                                     }
                                 
@@ -86,8 +92,10 @@ this.setObjectFile("views.generic.address.shipping.NewShippingAddressesView")
                         if(this.getCommand()!.compareTo(this.commonStrings!.INSERT) == 0)
                         
                                     {
-                                    this.setName("Basic Shipping Address View")
-this.setObjectFile("views.generic.address.shipping.AddShippingAddressesView")
+                                    this.setName("Basic Shipping Address View");
+    
+this.setObjectFile("views.generic.address.shipping.AddShippingAddressesView");
+    
 
                                     }
                                 
@@ -95,8 +103,10 @@ this.setObjectFile("views.generic.address.shipping.AddShippingAddressesView")
                         if(this.getCommand()!.compareTo(this.commonStrings!.DELETE) == 0)
                         
                                     {
-                                    this.setName("Basic Shipping Address View")
-this.setObjectFile("views.generic.address.shipping.DeleteShippingAddressesView")
+                                    this.setName("Basic Shipping Address View");
+    
+this.setObjectFile("views.generic.address.shipping.DeleteShippingAddressesView");
+    
 
                                     }
                                 
@@ -104,8 +114,10 @@ this.setObjectFile("views.generic.address.shipping.DeleteShippingAddressesView")
                         if(this.getCommand()!.compareTo(ShippingAddressData.SELECT) == 0)
                         
                                     {
-                                    this.setName("Basic Shipping Address View")
-this.setObjectFile("views.generic.address.shipping.SelectShippingAddressesView")
+                                    this.setName("Basic Shipping Address View");
+    
+this.setObjectFile("views.generic.address.shipping.SelectShippingAddressesView");
+    
 
                                     }
                                 
@@ -113,8 +125,10 @@ this.setObjectFile("views.generic.address.shipping.SelectShippingAddressesView")
                         if(this.getCommand()!.compareTo(ShippingAddressData.SETTOBILLINGADDRESS) == 0)
                         
                                     {
-                                    this.setName("Basic Shipping Address View")
-this.setObjectFile("views.generic.address.shipping.SetShippingAddressesView")
+                                    this.setName("Basic Shipping Address View");
+    
+this.setObjectFile("views.generic.address.shipping.SetShippingAddressesView");
+    
 
                                     }
                                 
@@ -131,6 +145,8 @@ this.setObjectFile("views.generic.address.shipping.SetShippingAddressesView")
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.doStartTag();
+
+                        ;
     
 
                                     }
@@ -139,9 +155,12 @@ this.setObjectFile("views.generic.address.shipping.SetShippingAddressesView")
 
 
                             throw Error("Command Null")
-} catch(e: LicensingException)
+
+                //: 
+} catch(e) 
             {
-AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e);
+    
 
 
 
@@ -149,9 +168,12 @@ AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
                         return SKIP_BODY;
     
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
-AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
+    
 
 
 

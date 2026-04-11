@@ -18,7 +18,10 @@
 
 
 
-import { Vector } from "../../../../../../java/util/Vector.js";
+            import Vector from "@ohos.util.Vector";
+        
+
+//import { Vector } from "../../../../../../java/util/Vector.js";
 
     
 import { ProfileActionScriptConditionInterface } from "../../../../../../org/allbinary/input/automation/actions/script/condition/ProfileActionScriptConditionInterface.js";
@@ -45,18 +48,22 @@ var frame = frame
     var logUtil: LogUtil = LogUtil.getInstance()!;
         
         
-
+;
+    
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.START, "CaptureWorkerUtil", "processProfileActionConditions")
+;
+    
+logUtil!.put(commonStrings!.START, "CaptureWorkerUtil", "processProfileActionConditions");
+    
 
     var size: number = vector.length!;
         
         
-
+;
+    
 
 
 
@@ -68,15 +75,19 @@ logUtil!.put(commonStrings!.START, "CaptureWorkerUtil", "processProfileActionCon
 index < size; index++)
         {
 
-    var profileActionConditionInterface: ProfileActionScriptConditionInterface = vector.get(index) as ProfileActionScriptConditionInterface;
-        
-        
+    var profileActionConditionInterface: ProfileActionScriptConditionInterface = vector.get(index);
 
+                         as ProfileActionScriptConditionInterface;
+        
+        
+;
+    
 
                         if(profileActionConditionInterface!.shouldProcess(frame))
                         
                                     {
-                                    profileActionConditionInterface!.process(frame)
+                                    profileActionConditionInterface!.process(frame);
+    
 
                                     }
                                 

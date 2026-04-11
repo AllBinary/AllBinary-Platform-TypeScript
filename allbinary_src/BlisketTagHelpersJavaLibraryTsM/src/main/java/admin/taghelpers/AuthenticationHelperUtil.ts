@@ -18,7 +18,10 @@
 
 
 
-import { Vector } from "../../java/util/Vector.js";
+            import Vector from "@ohos.util.Vector";
+        
+
+//import { Vector } from "../../java/util/Vector.js";
 
     
 import { BasicUserRole } from "../../org/allbinary/business/user/role/BasicUserRole.js";
@@ -78,7 +81,8 @@ var filePath = filePath
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put(CommonLabels.getInstance()!.START +filePath, this, "isAuthorized()")
+                                    logUtil!.put(CommonLabels.getInstance()!.START +filePath, this, "isAuthorized()");
+    
 
                                     }
                                 
@@ -86,32 +90,38 @@ var filePath = filePath
     var endIndex: number = HttpRequestUtil.getInstance()!.getLastSeparatorIndex(filePath)!;
         
         
-
+;
+    
 
     var fullPath: AbPath = new AbPath(URLGLOBALS.getWebappPath() +filePath!.substring(0, endIndex));
         
         
-
+;
+    
 
     var downloadFilePermissions: HttpFilePermissions = new HttpFilePermissions(fullPath);
         
         
-
+;
+    
 
     var userRoles: Vector = downloadFilePermissions!.getUserRoles()!;
         
         
-
+;
+    
 
     var userRole: UserRole = authenticationHelper!.getRole()!;
         
         
-
+;
+    
 
     var basicUserRole: BasicUserRole = userRole!.getBasicUserRole()!;
         
         
-
+;
+    
 
                         if(userRoles!.contains(basicUserRole))
                         
@@ -120,7 +130,8 @@ var filePath = filePath
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Authorized", this, "isAuthorized()")
+                                    logUtil!.put("Authorized", this, "isAuthorized()");
+    
 
                                     }
                                 
@@ -138,7 +149,8 @@ var filePath = filePath
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Not Authorized: " +basicUserRole!.toString(), this, "isAuthorized()")
+                                    logUtil!.put("Not Authorized: " +basicUserRole!.toString(), this, "isAuthorized()");
+    
 
                                     }
                                 

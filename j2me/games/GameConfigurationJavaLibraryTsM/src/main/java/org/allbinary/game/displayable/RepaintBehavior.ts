@@ -81,17 +81,20 @@ export class RepaintBehavior
     var features: Features = Features.getInstance()!;
         
         
-
+;
+    
 
     var openGLFeatureFactory: OpenGLFeatureFactory = OpenGLFeatureFactory.getInstance()!;
         
         
-
+;
+    
 
                         if(features.isFeature(openGLFeatureFactory!.OPENGL))
                         
                                     {
-                                    DisplayInfoSingleton.getInstance()!.process()
+                                    DisplayInfoSingleton.getInstance()!.process();
+    
 
                                     }
                                 
@@ -103,16 +106,22 @@ export class RepaintBehavior
     public run(){
 
         try {
-            canvas.repaint()
-DisplayInfoSingleton.getInstance()!.process()
-} catch(e: Exception)
+            canvas.repaint();
+    
+DisplayInfoSingleton.getInstance()!.process();
+    
+
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
+    
 }
 
 }
@@ -121,8 +130,10 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
                             , NAME);
         
         
-
-thread.start()
+;
+    
+thread.start();
+    
 
                         }
                             

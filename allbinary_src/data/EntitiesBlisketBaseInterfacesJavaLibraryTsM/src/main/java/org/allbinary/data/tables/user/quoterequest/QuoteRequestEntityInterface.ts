@@ -18,10 +18,13 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { HashMap } from "../../../../../../java/util/HashMap.js";
 
     
-import { Vector } from "../../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../../java/util/Vector.js";
 
     
 import { QuoteRequest } from "../../../../../../org/allbinary/business/user/quoterequest/QuoteRequest.js";
@@ -44,7 +47,7 @@ interface QuoteRequestEntityInterface extends BasicDataTableInterface {
 
     public insert(values: Vector)
 
-    public update(userName: string, updatedValues: HashMap<Any, Any>)
+    public update(userName: string, updatedValues: HashMap<any, any>)
 
 }
                 

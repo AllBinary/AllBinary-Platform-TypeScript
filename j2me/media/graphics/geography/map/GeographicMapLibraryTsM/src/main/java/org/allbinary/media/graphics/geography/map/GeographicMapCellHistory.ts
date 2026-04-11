@@ -63,7 +63,7 @@ export class GeographicMapCellHistory
          {
         
 
-    public static readonly NULL_GEOGRPAHIC_MAP_HISTORY_ARRAY: GeographicMapCellHistory[] = new Array(0);
+    public static readonly NULL_GEOGRPAHIC_MAP_HISTORY_ARRAY: GeographicMapCellHistory[] = [];
         
         
 
@@ -95,9 +95,12 @@ export class GeographicMapCellHistory
 public constructor (){
 
             super();
-            this.list= BasicArrayList()
-this.visitedList= BasicArrayList()
-this.init()
+            this.list= BasicArrayList();
+    
+this.visitedList= BasicArrayList();
+    
+this.init();
+    
 }
 
 
@@ -127,6 +130,8 @@ this.init()
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.list.size();
+
+                        ;
     
 }
 
@@ -137,12 +142,16 @@ this.init()
     var size: number = list.size()!;
         
         
-
-this.list.ensureCapacity(size)
-this.visitedList!.ensureCapacity(size)
+;
+    
+this.list.ensureCapacity(size);
+    
+this.visitedList!.ensureCapacity(size);
+    
 
     var geographicMapCellPosition: GeographicMapCellPosition
-
+;
+    
 
 
 
@@ -153,8 +162,12 @@ this.visitedList!.ensureCapacity(size)
         
 index < size; index++)
         {
-geographicMapCellPosition= list.get(index) as GeographicMapCellPosition
-this.track(geographicMapCellPosition)
+geographicMapCellPosition= list.get(index);
+
+                         as GeographicMapCellPosition;
+    
+this.track(geographicMapCellPosition);
+    
 }
 
 }
@@ -163,11 +176,15 @@ this.track(geographicMapCellPosition)
     public track(geographicMapCellPosition: GeographicMapCellPosition){
     //var geographicMapCellPosition = geographicMapCellPosition
 
-                        if(!this.list.contains(geographicMapCellPosition))
+                        if(!this.list.contains(geographicMapCellPosition);
+
+                        )
                         
                                     {
-                                    this.list.add(geographicMapCellPosition)
-this.visitedList!.add(booleanFactory!.FALSE)
+                                    this.list.add(geographicMapCellPosition);
+    
+this.visitedList!.add(booleanFactory!.FALSE);
+    
 
                                     }
                                 
@@ -200,12 +217,14 @@ var geographicMapCellPosition = geographicMapCellPosition
     var localList: BasicArrayList = this.list;
         
         
-
+;
+    
 
     var index: number = localList!.indexOf(geographicMapCellPosition)!;
         
         
-
+;
+    
 
                         if(localList!.size() > index +1)
                         
@@ -214,7 +233,9 @@ var geographicMapCellPosition = geographicMapCellPosition
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return localList!.get(index +1) as GeographicMapCellPosition;
+                        return localList!.get(index +1);
+
+                         as GeographicMapCellPosition;
     
 
                                     }
@@ -233,20 +254,24 @@ var geographicMapCellPosition = geographicMapCellPosition
     var localList: BasicArrayList = this.list;
         
         
-
+;
+    
 
     var localVisitedList: BasicArrayList = this.visitedList;
         
         
-
+;
+    
 
     var size: number = localVisitedList!.size()!;
         
         
-
+;
+    
 
     var value: Boolean
-
+;
+    
 
 
 
@@ -257,7 +282,10 @@ var geographicMapCellPosition = geographicMapCellPosition
         
 index < size; index++)
         {
-value= this.visitedList!.get(index) as Boolean
+value= this.visitedList!.get(index);
+
+                         as Boolean;
+    
 
                         if(value == booleanFactory!.FALSE)
                         
@@ -266,7 +294,9 @@ value= this.visitedList!.get(index) as Boolean
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return localList!.get(index) as GeographicMapCellPosition;
+                        return localList!.get(index);
+
+                         as GeographicMapCellPosition;
     
 
                                     }
@@ -277,7 +307,9 @@ value= this.visitedList!.get(index) as Boolean
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return localList!.get(0) as GeographicMapCellPosition;
+                        return localList!.get(0);
+
+                         as GeographicMapCellPosition;
     
 }
 
@@ -287,15 +319,18 @@ value= this.visitedList!.get(index) as Boolean
     var localVisitedList: BasicArrayList = this.visitedList;
         
         
-
+;
+    
 
     var size: number = localVisitedList!.size()!;
         
         
-
+;
+    
 
     var value: Boolean
-
+;
+    
 
 
 
@@ -306,7 +341,10 @@ value= this.visitedList!.get(index) as Boolean
         
 index < size; index++)
         {
-value= this.visitedList!.get(index) as Boolean
+value= this.visitedList!.get(index);
+
+                         as Boolean;
+    
 
                         if(value == booleanFactory!.FALSE)
                         
@@ -337,20 +375,24 @@ var pathList = pathList
     var inPathButNotTrackedList: BasicArrayList = new BasicArrayList();
         
         
-
+;
+    
 
     var localList: BasicArrayList = this.list;
         
         
-
+;
+    
 
     var size: number = pathList!.size()!;
         
         
-
+;
+    
 
     var geographicMapCellPosition: GeographicMapCellPosition
-
+;
+    
 
 
 
@@ -361,12 +403,18 @@ var pathList = pathList
         
 index < size; index++)
         {
-geographicMapCellPosition= pathList!.get(index) as GeographicMapCellPosition
+geographicMapCellPosition= pathList!.get(index);
 
-                        if(!localList!.contains(geographicMapCellPosition))
+                         as GeographicMapCellPosition;
+    
+
+                        if(!localList!.contains(geographicMapCellPosition);
+
+                        )
                         
                                     {
-                                    inPathButNotTrackedList!.add(geographicMapCellPosition)
+                                    inPathButNotTrackedList!.add(geographicMapCellPosition);
+    
 
                                     }
                                 
@@ -387,16 +435,20 @@ geographicMapCellPosition= pathList!.get(index) as GeographicMapCellPosition
     var index: number = this.list.indexOf(geographicMapCellPosition)!;
         
         
-
+;
+    
 
                         if(index !=  -1)
                         
                                     {
                                     
-    var value: Boolean = this.visitedList!.get(index) as Boolean;
-        
-        
+    var value: Boolean = this.visitedList!.get(index);
 
+                         as Boolean;
+        
+        
+;
+    
 
                         if(value == booleanFactory!.TRUE)
                         
@@ -432,26 +484,34 @@ geographicMapCellPosition= pathList!.get(index) as GeographicMapCellPosition
     var index: number = this.list.indexOf(geographicMapCellPosition)!;
         
         
-
+;
+    
 
     var value: Boolean
-
+;
+    
 
                         if(index !=  -1)
                         
                                     {
-                                    value= this.visitedList!.get(index) as Boolean
+                                    value= this.visitedList!.get(index);
+
+                         as Boolean;
+    
 
     var TRUE: Boolean = booleanFactory!.TRUE;
         
         
-
+;
+    
 
                         if(value != TRUE)
                         
                                     {
-                                    this.visitedList!.set(index, TRUE)
-this.totalVisited++
+                                    this.visitedList!.set(index, TRUE);
+    
+this.totalVisited++;
+    
 
 
 
@@ -543,17 +603,22 @@ this.totalVisited++
     var size: number = this.getSize()!;
         
         
+;
+    
 
+    var numberRequired: number = (size shl basicDecimal!.getScaledFactor()) /basicDecimal!.getUnscaled();
 
-    var numberRequired: number = (size shl basicDecimal!.getScaledFactor()) /basicDecimal!.getUnscaled().toInt();
+                        .toInt();
         
         
-
+;
+    
 
     var numberNotVisited: number = this.getSize() -1 -this.totalVisited;
         
         
-
+;
+    
 
                         if(size -numberNotVisited > numberRequired)
                         
@@ -587,17 +652,20 @@ this.totalVisited++
     var localVisitedList: BasicArrayList = this.visitedList;
         
         
-
+;
+    
 
     var localFalseBoolean: Boolean = booleanFactory!.FALSE;
         
         
-
+;
+    
 
     var size: number = localVisitedList!.size()!;
         
         
-
+;
+    
 
 
 
@@ -608,10 +676,12 @@ this.totalVisited++
         
 index >= 0; index--)
         {
-localVisitedList!.set(index, localFalseBoolean)
+localVisitedList!.set(index, localFalseBoolean);
+    
 }
 
-this.totalVisited= 0
+this.totalVisited= 0;
+    
 }
 
 
@@ -623,17 +693,20 @@ this.totalVisited= 0
     var x: number = point.getX() -tiledLayer!.getXP();
         
         
-
+;
+    
 
     var y: number = point.getY() -tiledLayer!.getYP();
         
         
-
+;
+    
 
                         if(halfWidth == 0)
                         
                                     {
-                                    this.halfWidth= (graphics.getFont()!.stringWidth(MISSED_INFO) shr 1)
+                                    this.halfWidth= (graphics.getFont()!.stringWidth(MISSED_INFO) shr 1);
+    
 
                                     }
                                 
@@ -641,13 +714,16 @@ this.totalVisited= 0
     var myFont: MyFont = MyFont.getInstance()!;
         
         
-
+;
+    
 
     var height: number = 2 *myFont!.DEFAULT_CHAR_HEIGHT;
         
         
-
-this.animation.paint(graphics, x +halfWidth, y +(height))
+;
+    
+this.animation.paint(graphics, x +halfWidth, y +(height));
+    
 }
 
 
@@ -660,23 +736,28 @@ this.animation.paint(graphics, x +halfWidth, y +(height))
     //var geographicMapInterface = geographicMapInterface
 
         try {
-            graphics.setColor(RED)
+            graphics.setColor(RED);
+    
 
     var localVisitedList: BasicArrayList = this.visitedList;
         
         
-
+;
+    
 
     var size: number = localVisitedList!.size()!;
         
         
-
+;
+    
 
     var geographicMapCellPosition: GeographicMapCellPosition
-
+;
+    
 
     var isCellVisitedBoolean: Boolean
-
+;
+    
 
 
 
@@ -687,35 +768,51 @@ this.animation.paint(graphics, x +halfWidth, y +(height))
         
 --index >= 0; )
         {
-geographicMapCellPosition= list.get(index) as GeographicMapCellPosition
-isCellVisitedBoolean= localVisitedList!.get(index) as Boolean
+geographicMapCellPosition= list.get(index);
 
-                        if(!isCellVisitedBoolean)
+                         as GeographicMapCellPosition;
+    
+isCellVisitedBoolean= localVisitedList!.get(index);
+
+                         as Boolean;
+    
+
+                        if(!isCellVisitedBoolean;
+
+                        )
                         
                                     {
-                                    this.paintNotVisited(graphics, geographicMapInterface!.getAllBinaryTiledLayer(), geographicMapCellPosition!.getPoint())
+                                    this.paintNotVisited(graphics, geographicMapInterface!.getAllBinaryTiledLayer(), geographicMapCellPosition!.getPoint());
+    
 
                                     }
                                 
 }
 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, "paintNotVisited", e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, "paintNotVisited", e);
+    
 }
 
 }
 
 
     public init(){
-this.list.clear()
-this.visitedList!.clear()
-this.totalVisited= 0
+this.list.clear();
+    
+this.visitedList!.clear();
+    
+this.totalVisited= 0;
+    
 }
 
 

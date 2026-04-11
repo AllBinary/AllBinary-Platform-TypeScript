@@ -63,19 +63,22 @@ var gameCanvas = gameCanvas
 
                             //For kotlin this is before the body of the constructor.
                     
-this.canvas= gameCanvas
+this.canvas= gameCanvas;
+    
 }
 
 
     public onMotionGestureEvent(motionGestureEvent: MotionGestureEvent){
 var motionGestureEvent = motionGestureEvent
-motionGestureEventList!.add(motionGestureEvent)
+motionGestureEventList!.add(motionGestureEvent);
+    
 }
 
 
     setCanvas(canvas: MyCanvas){
 var canvas = canvas
-this.canvas= canvas
+this.canvas= canvas;
+    
 }
 
 

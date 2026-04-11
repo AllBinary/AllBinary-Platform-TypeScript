@@ -30,7 +30,7 @@ import { TransformInfoObjectConfigNoManipulationFactory } from "../../../../../.
 
 export class TransformInfoHttpStoreNoManipulation extends TransformInfoHttpStore {
         
-public constructor (propertiesHashMap: HashMap<Any, Any>, pageContext: PageContext)                        
+public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext)                        
 
                             : super(propertiesHashMap, pageContext){
 
@@ -48,8 +48,10 @@ var pageContext = pageContext
             
     setObjectConfigFile(value: string){
 var value = value
-this.setObjectConfigFileName(value)
-this.setObjectConfigInterface(TransformInfoObjectConfigNoManipulationFactory.getInstance()!.getInstance(this, this.getObjectConfigFilePath()))
+this.setObjectConfigFileName(value);
+    
+this.setObjectConfigInterface(TransformInfoObjectConfigNoManipulationFactory.getInstance()!.getInstance(this, this.getObjectConfigFilePath()));
+    
 }
 
 

@@ -44,12 +44,14 @@ export class AllBinaryVibration extends AllBinaryVibrationME {
                         if(GameConfigurationCentral.getInstance()!.VIBRATION.getValue()!.toInt() == 0)
                         
                                     {
-                                    VIBRATION= AllBinaryNoVibration.NO_VIBRATION
+                                    VIBRATION= AllBinaryNoVibration.NO_VIBRATION;
+    
 
                                     }
                                 
                         else {
-                            VIBRATION= AllBinaryVibration()
+                            VIBRATION= AllBinaryVibration();
+    
 
                         }
                             

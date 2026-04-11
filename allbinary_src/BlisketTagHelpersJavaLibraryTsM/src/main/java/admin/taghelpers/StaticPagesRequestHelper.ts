@@ -119,7 +119,7 @@ export class StaticPagesRequestHelper extends AbContext
     private searchParams: SearchParams
 
     private xslFile: string
-public constructor (propertiesHashMap: HashMap<Any, Any>, pageContext: PageContext)                        
+public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext)                        
 
                             : super(propertiesHashMap, pageContext){
 
@@ -130,15 +130,24 @@ var pageContext = pageContext
 
                             //For kotlin this is before the body of the constructor.
                     
-this.request= pageContext!.getRequest() as HttpServletRequest
-this.xslFile= propertiesHashMap!.get(TransformInfoData.getInstance()!.TEMPLATEFILENAME) as String
-this.getFormData()
+this.request= pageContext!.getRequest();
+
+                         as HttpServletRequest;
+    
+this.xslFile= propertiesHashMap!.get(TransformInfoData.getInstance()!.TEMPLATEFILENAME);
+
+                         as String;
+    
+this.getFormData();
+    
 }
 
 
     getFormData(){
-this.storeName= request.getParameter(StoreFrontData.getInstance()!.NAME)
-this.searchParams= SearchParams(this.request)
+this.storeName= request.getParameter(StoreFrontData.getInstance()!.NAME);
+    
+this.searchParams= SearchParams(this.request);
+    
 }
 
 
@@ -151,7 +160,8 @@ this.searchParams= SearchParams(this.request)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
                                     {
-                                    logUtil!.put("Generated Static Pages Notification Email", this, "email")
+                                    logUtil!.put("Generated Static Pages Notification Email", this, "email");
+    
 
                                     }
                                 
@@ -159,56 +169,70 @@ this.searchParams= SearchParams(this.request)
     var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(this.storeName)!;
         
         
-
+;
+    
 
     var adminEmailSubject: string = "Generated Static Pages Email Notification";
         
         
-
+;
+    
 
     var adminEmailTextBody: string = "Generated static pages for store: " +this.storeName;
         
         
-
+;
+    
 
     var adminBasicEmailInfo: BasicEmailInfo = AdminEmailInfo(adminEmailSubject, adminEmailTextBody) as BasicEmailInfo;
         
         
-
+;
+    
 
     var storeAdminBasicEmailInfo: BasicEmailInfo = StoreEmailInfo(storeFrontInterface, adminEmailSubject, adminEmailTextBody) as BasicEmailInfo;
         
         
-
+;
+    
 
     var storeAdminEmailInfo: EmailInfo = new EmailInfo(storeAdminBasicEmailInfo);
         
         
-
+;
+    
 
     var adminEmailInfo: EmailInfo = new EmailInfo(adminBasicEmailInfo);
         
         
-
+;
+    
 
     var adminUserEmailEventHandler: UserEmailEventHandler = AdminUserEmailEventHandlerSingletons.getInstance()!.getInstance(this.abeClientInformation, UserEmailEventNameData.STOREGENERATINGSTATICPAGES)!;
         
         
-
+;
+    
 
     var storeAdminUserEmailEventHandler: UserEmailEventHandler = StoreAdminUserEmailEventHandlerSingletons.getInstance()!.getInstance(UserEmailEventNameData.STOREGENERATINGSTATICPAGES, this.abeClientInformation, storeFrontInterface)!;
         
         
+;
+    
+storeAdminUserEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.STOREGENERATINGSTATICPAGES, storeAdminEmailInfo);
+    
+adminUserEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.STOREGENERATINGSTATICPAGES, adminEmailInfo);
+    
 
-storeAdminUserEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.STOREGENERATINGSTATICPAGES, storeAdminEmailInfo)
-adminUserEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.STOREGENERATINGSTATICPAGES, adminEmailInfo)
-} catch(e: Exception)
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGINGERROR))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.FAILURE, this, "email", e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, "email", e);
+    
 
                                     }
                                 
@@ -224,24 +248,29 @@ adminUserEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.STOREGENERAT
     var contentType: string = AcceptableResponseGenerator.getInstance()!.get(this.request)!;
         
         
-
+;
+    
 
     var searchRequest: SearchRequest = new SearchRequest(
                             null, this.searchParams, xslFile, contentType, this.getPropertiesHashMap(), this.getPageContext());
         
         
-
+;
+    
 
     var success: string = ProductListingFactory.getInstance(searchRequest)!.generateAll(storeName)!;
         
         
-
-this.email()
+;
+    
+this.email();
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put(success, this, "generateStaticPages()")
+                                    logUtil!.put(success, this, "generateStaticPages()");
+    
 
                                     }
                                 
@@ -251,18 +280,22 @@ this.email()
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to generate staticpages table";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "generateStaticPages()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "generateStaticPages()", e);
+    
 
                                     }
                                 
@@ -284,28 +317,34 @@ this.email()
     var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(this.storeName)!;
         
         
-
+;
+    
 
     var fromAbPath: AbPath = new AbPath(storeFrontInterface!.getTestHtmlPath() +storeFrontInterface!.getStaticPath());
         
         
-
+;
+    
 
     var toAbPath: AbPath = new AbPath(URLGLOBALS.getWebappPath() +storeFrontInterface!.getName() +AbPathData.getInstance()!.SEPARATOR +storeFrontInterface!.getStaticPath());
         
         
-
-FileUtil.getInstance()!.copy(fromAbPath, toAbPath)
+;
+    
+FileUtil.getInstance()!.copy(fromAbPath, toAbPath);
+    
 
     var success: string = "Made Public";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put(success, this, "makePublic()")
+                                    logUtil!.put(success, this, "makePublic()");
+    
 
                                     }
                                 
@@ -315,18 +354,22 @@ FileUtil.getInstance()!.copy(fromAbPath, toAbPath)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to makePublic";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "makePublic()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "makePublic()", e);
+    
 
                                     }
                                 

@@ -36,8 +36,8 @@ export class SpinnerAI extends BasicAI {
 
     private isEven: boolean= false
 
-    private direction: IntArray
-public constructor (direction: IntArray, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput)                        
+    private direction: number[]
+public constructor (direction: number[], ownerLayerInterface: AllBinaryLayer, gameInput: GameInput)                        
 
                             : super(ownerLayerInterface, gameInput){
 
@@ -49,7 +49,8 @@ var gameInput = gameInput
 
                             //For kotlin this is before the body of the constructor.
                     
-this.direction= direction
+this.direction= direction;
+    
 }
 
 
@@ -61,14 +62,18 @@ var allBinaryLayerManager = allBinaryLayerManager
                         if(isEven)
                         
                                     {
-                                    super.processAI(this.direction[0]!)
-isEven= false
+                                    super.processAI(this.direction[0]!);
+    
+isEven= false;
+    
 
                                     }
                                 
                         else {
-                            super.processAI(Canvas.KEY_NUM1)
-isEven= true
+                            super.processAI(Canvas.KEY_NUM1);
+    
+isEven= true;
+    
 
                         }
                             

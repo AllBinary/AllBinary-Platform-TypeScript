@@ -109,7 +109,7 @@ var cellSize = cellSize
 }
 
 
-    public getFontWidths(filename: string, fontSize: number): IntArray{
+    public getFontWidths(filename: string, fontSize: number): number[]{
     //var filename = filename
     //var fontSize = fontSize
 

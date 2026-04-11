@@ -61,8 +61,10 @@ public constructor (maxHealth: number){
 
             super();
             var maxHealth = maxHealth
-this.setMaxHealth(maxHealth)
-this.setHealth(maxHealth)
+this.setMaxHealth(maxHealth);
+    
+this.setHealth(maxHealth);
+    
 }
 
 
@@ -72,17 +74,20 @@ var ahealth = ahealth
     var newHealth: number = this.getHealth() +ahealth;
         
         
-
+;
+    
 
                         if(newHealth > this.getMaxHealth())
                         
                                     {
-                                    this.setHealth(this.getMaxHealth())
+                                    this.setHealth(this.getMaxHealth());
+    
 
                                     }
                                 
                         else {
-                            this.setHealth(newHealth)
+                            this.setHealth(newHealth);
+    
 
                         }
                             
@@ -90,7 +95,8 @@ var ahealth = ahealth
 
 
     public heal(){
-this.setHealth(this.getMaxHealth())
+this.setHealth(this.getMaxHealth());
+    
 }
 
 
@@ -131,12 +137,18 @@ var ahealth = ahealth
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("******* Trying to heal when damaging. Damage: ")
-stringBuffer!.appendint(ahealth)
-stringBuffer!.append(CommonSeps.getInstance()!.SPACE)
-stringBuffer!.append(this.toString())
-ForcedLogUtil.log(stringBuffer!.toString(), this)
+;
+    
+stringBuffer!.append("******* Trying to heal when damaging. Damage: ");
+    
+stringBuffer!.appendint(ahealth);
+    
+stringBuffer!.append(CommonSeps.getInstance()!.SPACE);
+    
+stringBuffer!.append(this.toString());
+    
+ForcedLogUtil.log(stringBuffer!.toString(), this);
+    
 
 
 
@@ -150,8 +162,10 @@ ForcedLogUtil.log(stringBuffer!.toString(), this)
     var health: number = this.getHealth() -ahealth;
         
         
-
-this.setHealth(health)
+;
+    
+this.setHealth(health);
+    
 }
 
 
@@ -194,7 +208,8 @@ this.setHealth(health)
 
     public setMaxHealth(maxHealth: number){
 var maxHealth = maxHealth
-this.maxHealth= maxHealth
+this.maxHealth= maxHealth;
+    
 }
 
 
@@ -204,7 +219,8 @@ var health = health
                         if(health > this.getMaxHealth())
                         
                                     {
-                                    this.health= this.getMaxHealth()
+                                    this.health= this.getMaxHealth();
+    
 
                                     }
                                 
@@ -212,12 +228,14 @@ var health = health
                         if(health < 0)
                         
                                     {
-                                    this.health= 0
+                                    this.health= 0;
+    
 
                                     }
                                 
                         else {
-                            this.health= health
+                            this.health= health;
+    
 
                         }
                             
@@ -227,7 +245,8 @@ var health = health
                                 )
                         
                                     {
-                                    this.healthListenerInterface!.onHealthChange()
+                                    this.healthListenerInterface!.onHealthChange();
+    
 
                                     }
                                 
@@ -246,7 +265,8 @@ var health = health
 
     public addListener(healthGraphic: HealthListenerInterface){
 var healthGraphic = healthGraphic
-this.healthListenerInterface= healthGraphic
+this.healthListenerInterface= healthGraphic;
+    
 }
 
 
@@ -255,16 +275,23 @@ this.healthListenerInterface= healthGraphic
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(Health.HEALTH_LABEL)
-stringBuffer!.appendint(this.health)
-stringBuffer!.append(Health.MAX_HEALTH_LABEL)
-stringBuffer!.appendint(this.maxHealth)
+;
+    
+stringBuffer!.append(Health.HEALTH_LABEL);
+    
+stringBuffer!.appendint(this.health);
+    
+stringBuffer!.append(Health.MAX_HEALTH_LABEL);
+    
+stringBuffer!.appendint(this.maxHealth);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

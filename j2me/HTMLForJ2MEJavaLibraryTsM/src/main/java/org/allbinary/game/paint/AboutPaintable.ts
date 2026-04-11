@@ -74,8 +74,10 @@ private constructor (info: string[], developers: string[]){
             super();
             var info = info
 var developers = developers
-this.info= info
-this.developers= developers
+this.info= info;
+    
+this.developers= developers;
+    
 }
 
 
@@ -99,34 +101,41 @@ var graphics = graphics
     var myFont: MyFont = MyFont.getInstance()!;
         
         
-
+;
+    
 
     var halfWidth: number = DisplayInfoSingleton.getInstance()!.getLastHalfWidth()!;
         
         
-
+;
+    
 
     var charHeight: number = myFont!.DEFAULT_CHAR_HEIGHT;
         
         
-
+;
+    
 
     var font: Font = graphics.getFont()!;
         
         
-
+;
+    
 
     var beginWidth: number = (font.stringWidth(this.ABOUT) shr 1);
         
         
-
-graphics.drawString(this.ABOUT, halfWidth -beginWidth, 2 *charHeight, anchor)
+;
+    
+graphics.drawString(this.ABOUT, halfWidth -beginWidth, 2 *charHeight, anchor);
+    
 
     var infoSize: number = this.info.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -137,8 +146,10 @@ graphics.drawString(this.ABOUT, halfWidth -beginWidth, 2 *charHeight, anchor)
         
 index < infoSize; index++)
         {
-beginWidth= (font.stringWidth(this.info[index]!) shr 1)
-graphics.drawString(this.info[index]!, halfWidth -beginWidth, (4 +index) *charHeight, anchor)
+beginWidth= (font.stringWidth(this.info[index]!) shr 1);
+    
+graphics.drawString(this.info[index]!, halfWidth -beginWidth, (4 +index) *charHeight, anchor);
+    
 }
 
 
@@ -146,7 +157,8 @@ graphics.drawString(this.info[index]!, halfWidth -beginWidth, (4 +index) *charHe
                 ;
         
         
-
+;
+    
 
 
 
@@ -157,8 +169,10 @@ graphics.drawString(this.info[index]!, halfWidth -beginWidth, (4 +index) *charHe
         
 index < size; index++)
         {
-beginWidth= (font.stringWidth(this.developers[index]!) shr 1)
-graphics.drawString(this.developers[index]!, halfWidth -beginWidth, (5 +infoSize +index) *charHeight, anchor)
+beginWidth= (font.stringWidth(this.developers[index]!) shr 1);
+    
+graphics.drawString(this.developers[index]!, halfWidth -beginWidth, (5 +infoSize +index) *charHeight, anchor);
+    
 }
 
 }

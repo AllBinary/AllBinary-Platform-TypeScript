@@ -60,43 +60,55 @@ export class ShippingHelper extends TagHelper {
 
     private storeFrontInterface: StoreFrontInterface
 
-    private propertiesHashMap: HashMap<Any, Any>
+    private propertiesHashMap: HashMap<any, any>
 
     private pageContext: PageContext
 
     private request: HttpServletRequest
 
     private shippingType: string
-public constructor (hashMap: HashMap<Any, Any>, pageContext: PageContext){
+public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
             var hashMap = hashMap
 var pageContext = pageContext
-this.propertiesHashMap= propertiesHashMap
-this.pageContext= pageContext
-this.request= pageContext!.getRequest() as HttpServletRequest
+this.propertiesHashMap= propertiesHashMap;
+    
+this.pageContext= pageContext;
+    
+this.request= pageContext!.getRequest();
 
-    var storeName: string = hashMap!.get(StoreFrontData.getInstance()!.NAME) as String;
+                         as HttpServletRequest;
+    
+
+    var storeName: string = hashMap!.get(StoreFrontData.getInstance()!.NAME);
+
+                         as String;
         
         
-
+;
+    
 
                         if(storeName != 
                                     null
                                 )
                         
                                     {
-                                    this.storeFrontInterface= StoreFrontFactory.getInstance(storeName)
+                                    this.storeFrontInterface= StoreFrontFactory.getInstance(storeName);
+    
 
                                     }
                                 
-this.weblisketSession= WeblisketSession(hashMap, pageContext)
-this.getFormData()
+this.weblisketSession= WeblisketSession(hashMap, pageContext);
+    
+this.getFormData();
+    
 }
 
 
     getFormData(){
-this.shippingType= request.getParameter(ShippingMethodData.NAME)
+this.shippingType= request.getParameter(ShippingMethodData.NAME);
+    
 }
 
 
@@ -107,18 +119,22 @@ this.shippingType= request.getParameter(ShippingMethodData.NAME)
     var success: string = "Successfully Set Shipping Type";
         
         
-
+;
+    
 
     var order: OrderInterface = this.weblisketSession!.getOrder()!;
         
         
-
-order.setShippingMethod(shippingType)
+;
+    
+order.setShippingMethod(shippingType);
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put(success, this, "setShippingType()")
+                                    logUtil!.put(success, this, "setShippingType()");
+    
 
                                     }
                                 
@@ -128,18 +144,22 @@ order.setShippingMethod(shippingType)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to view Shipping Type";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "setShippingType()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "setShippingType()", e);
+    
 
                                     }
                                 

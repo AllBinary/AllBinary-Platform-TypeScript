@@ -46,9 +46,13 @@ var arg0 = arg0
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return visit = this.visit(arg0 as Object)visit as Boolean
+                        return visit = this.visit(arg0 as Object);
+
+                        visit as Boolean
 visit.
                     ;
+
+                        ;
     
 }
 
@@ -59,23 +63,27 @@ var anyType = anyType
     var file: File = anyType as File;
         
         
-
+;
+    
 
     var index: number = 1;
         
         
-
+;
+    
 
     var aFile: File = file.getParentFile()!;
         
         
-
+;
+    
 
         while((aFile= aFile!.getParentFile()) != 
                                     null
                                 )
         {
-index++
+index++;
+    
 }
 
 

@@ -38,7 +38,8 @@ export class OpenGLOptions
     var openGLFeatureFactory: OpenGLFeatureFactory = OpenGLFeatureFactory.getInstance()!;
         
         
-
+;
+    
 
                         if(Features.getInstance()!.isFeature(openGLFeatureFactory!.OPENGL_OPTIONS))
                         
@@ -47,25 +48,36 @@ export class OpenGLOptions
     var openGLMultipleList: BasicArrayList = new BasicArrayList();
         
         
-
-openGLMultipleList!.add(openGLFeatureFactory!.OPENGL)
-GameFeatureChoiceGroups.getMultipleInstance()!.add("OpenGL (Complete Restart)", openGLMultipleList)
+;
+    
+openGLMultipleList!.add(openGLFeatureFactory!.OPENGL);
+    
+GameFeatureChoiceGroups.getMultipleInstance()!.add("OpenGL (Complete Restart)", openGLMultipleList);
+    
 
     var openGLVersionSelectorMultipleList: BasicArrayList = new BasicArrayList();
         
         
-
-openGLVersionSelectorMultipleList!.add(openGLFeatureFactory!.OPENGL_AUTO_SELECT)
-openGLVersionSelectorMultipleList!.add(openGLFeatureFactory!.OPENGL_MINIMUM)
-GameFeatureChoiceGroups.getExclusiveInstance()!.add("OpenGL Version Selector", openGLVersionSelectorMultipleList)
+;
+    
+openGLVersionSelectorMultipleList!.add(openGLFeatureFactory!.OPENGL_AUTO_SELECT);
+    
+openGLVersionSelectorMultipleList!.add(openGLFeatureFactory!.OPENGL_MINIMUM);
+    
+GameFeatureChoiceGroups.getExclusiveInstance()!.add("OpenGL Version Selector", openGLVersionSelectorMultipleList);
+    
 
     var openGLImageColorMultipleList: BasicArrayList = new BasicArrayList();
         
         
-
-openGLImageColorMultipleList!.add(openGLFeatureFactory!.IMAGE_COLOR_DEPTH_4444)
-openGLImageColorMultipleList!.add(openGLFeatureFactory!.IMAGE_COLOR_DEPTH_8888)
-GameFeatureChoiceGroups.getExclusiveInstance()!.add("OpenGL Image Color RGBA", openGLImageColorMultipleList)
+;
+    
+openGLImageColorMultipleList!.add(openGLFeatureFactory!.IMAGE_COLOR_DEPTH_4444);
+    
+openGLImageColorMultipleList!.add(openGLFeatureFactory!.IMAGE_COLOR_DEPTH_8888);
+    
+GameFeatureChoiceGroups.getExclusiveInstance()!.add("OpenGL Image Color RGBA", openGLImageColorMultipleList);
+    
 
                                     }
                                 

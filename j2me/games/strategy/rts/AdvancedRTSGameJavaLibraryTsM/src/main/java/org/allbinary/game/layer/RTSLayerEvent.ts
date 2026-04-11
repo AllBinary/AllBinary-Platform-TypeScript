@@ -48,15 +48,21 @@ public constructor (rtsLayer: PathFindingLayerInterface)
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("RTSLayerEvent: \n")
-stringBuffer!.append("RTSLayer: ")
-stringBuffer!.append(this.getRtsLayer()!.toString())
+;
+    
+stringBuffer!.append("RTSLayerEvent: \n");
+    
+stringBuffer!.append("RTSLayer: ");
+    
+stringBuffer!.append(this.getRtsLayer()!.toString());
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 
@@ -73,7 +79,8 @@ stringBuffer!.append(this.getRtsLayer()!.toString())
 
     public setRtsLayer(rtsLayer: PathFindingLayerInterface){
 var rtsLayer = rtsLayer
-this.rtsLayer= rtsLayer
+this.rtsLayer= rtsLayer;
+    
 }
 
 

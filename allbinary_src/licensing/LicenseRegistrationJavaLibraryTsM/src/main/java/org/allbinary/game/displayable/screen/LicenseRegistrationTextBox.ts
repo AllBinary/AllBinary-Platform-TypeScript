@@ -103,11 +103,16 @@ var foregroundBasicColor = foregroundBasicColor
 
     public initCommands(cmdListener: CommandListener){
 var cmdListener = cmdListener
-this.removeAllCommands()
-this.addCommand(GameCommandsFactory.getInstance()!.CLOSE_AND_SHOW_GAME_CANVAS)
-this.addCommand(GameCommandsFactory.getInstance()!.TOGGLE_KEYBOARD)
-this.addCommand(SUBMIT_COMMAND)
-this.setCommandListener(cmdListener)
+this.removeAllCommands();
+    
+this.addCommand(GameCommandsFactory.getInstance()!.CLOSE_AND_SHOW_GAME_CANVAS);
+    
+this.addCommand(GameCommandsFactory.getInstance()!.TOGGLE_KEYBOARD);
+    
+this.addCommand(SUBMIT_COMMAND);
+    
+this.setCommandListener(cmdListener);
+    
 }
 
 
@@ -118,16 +123,24 @@ this.setCommandListener(cmdListener)
     var virtualKeyboardEventHandler: VirtualKeyboardEventHandler = VirtualKeyboardEventHandler.getInstance()!;
         
         
+;
+    
+virtualKeyboardEventHandler!.fireEvent(virtualKeyboardEventHandler!.SHOW_EVENT);
+    
 
-virtualKeyboardEventHandler!.fireEvent(virtualKeyboardEventHandler!.SHOW_EVENT)
-} catch(e: Exception)
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "open", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "open", e);
+    
 }
 
-super.open()
-this.paintable= NullPaintable.getInstance()
-this.repaint()
+super.open();
+    
+this.paintable= NullPaintable.getInstance();
+    
+this.repaint();
+    
 }
 
 
@@ -138,23 +151,33 @@ this.repaint()
     var virtualKeyboardEventHandler: VirtualKeyboardEventHandler = VirtualKeyboardEventHandler.getInstance()!;
         
         
+;
+    
+virtualKeyboardEventHandler!.fireEvent(virtualKeyboardEventHandler!.HIDE_EVENT);
+    
 
-virtualKeyboardEventHandler!.fireEvent(virtualKeyboardEventHandler!.HIDE_EVENT)
-} catch(e: Exception)
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "open", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "open", e);
+    
 }
 
-this.paintable= this.pleaseWaitPaintable
-this.repaint()
-super.close()
+this.paintable= this.pleaseWaitPaintable;
+    
+this.repaint();
+    
+super.close();
+    
 }
 
 
     public paint(graphics: Graphics){
 var graphics = graphics
-super.paint(graphics)
-this.paintable.paint(graphics)
+super.paint(graphics);
+    
+this.paintable.paint(graphics);
+    
 }
 
 
@@ -163,8 +186,10 @@ this.paintable.paint(graphics)
     var commandListener: CommandListener = this.getCustomCommandListener()!;
         
         
-
-commandListener!.commandAction(SUBMIT_COMMAND, this)
+;
+    
+commandListener!.commandAction(SUBMIT_COMMAND, this);
+    
 }
 
 

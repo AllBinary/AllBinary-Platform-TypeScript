@@ -37,19 +37,22 @@ var demoGameMidletState = demoGameMidletState
 
                             //For kotlin this is before the body of the constructor.
                     
-this.demoGameMidletState= demoGameMidletState
+this.demoGameMidletState= demoGameMidletState;
+    
 }
 
 
     public init(anyType: any = {}){
 var anyType = anyType
-this.setSource(anyType)
+this.setSource(anyType);
+    
 }
 
 
     public setDemoGameMidletState(demoGameMidletState: DemoGameMidletState){
 var demoGameMidletState = demoGameMidletState
-this.demoGameMidletState= demoGameMidletState
+this.demoGameMidletState= demoGameMidletState;
+    
 }
 
 

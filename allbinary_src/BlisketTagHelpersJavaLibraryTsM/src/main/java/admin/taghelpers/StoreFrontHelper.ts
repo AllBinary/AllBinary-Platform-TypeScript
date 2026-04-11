@@ -54,27 +54,33 @@ export class StoreFrontHelper extends TagHelper {
     private readonly currentLocation: string
 
     private readonly currentHomeLocation: string
-public constructor (hashMap: HashMap<Any, Any>, pageContext: PageContext){
+public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
             var hashMap = hashMap
 var pageContext = pageContext
 
-    var storeName: string = hashMap!.get(StoreFrontData.getInstance()!.NAME) as String;
-        
-        
+    var storeName: string = hashMap!.get(StoreFrontData.getInstance()!.NAME);
 
+                         as String;
+        
+        
+;
+    
 
                         if(storeName != 
                                     null
                                 )
                         
                                     {
-                                    this.storeFrontInterface= StoreFrontFactory.getInstance(storeName)
+                                    this.storeFrontInterface= StoreFrontFactory.getInstance(storeName);
+    
 this.currentLocation= Replace(CommonSeps.getInstance()!.SPACE, "%20").
-                            all(storeFrontInterface!.getCurrentHostName() +storeFrontInterface!.getCurrentHostNamePath())
+                            all(storeFrontInterface!.getCurrentHostName() +storeFrontInterface!.getCurrentHostNamePath());
+    
 this.currentHomeLocation= Replace(CommonSeps.getInstance()!.SPACE, "%20").
-                            all(storeFrontInterface!.getCurrentHomeHostName() +storeFrontInterface!.getCurrentHomeHostNamePath())
+                            all(storeFrontInterface!.getCurrentHomeHostName() +storeFrontInterface!.getCurrentHomeHostNamePath());
+    
 
                                     }
                                 
@@ -83,10 +89,14 @@ this.currentHomeLocation= Replace(CommonSeps.getInstance()!.SPACE, "%20").
     var stringUtil: StringUtil = StringUtil.getInstance()!;
         
         
-
-this.storeFrontInterface= StoreFront()
-this.currentLocation= stringUtil!.EMPTY_STRING
-this.currentHomeLocation= stringUtil!.EMPTY_STRING
+;
+    
+this.storeFrontInterface= StoreFront();
+    
+this.currentLocation= stringUtil!.EMPTY_STRING;
+    
+this.currentHomeLocation= stringUtil!.EMPTY_STRING;
+    
 
                         }
                             

@@ -66,13 +66,16 @@ var document = document
     var configurationNode: Node = DomSearchHelper.getNode(UserConfigurationData.NAME, document.getChildNodes())!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return UserConfigurationView(configurationNode).
-                            getUserConfigurationInterface() as UserConfigurationInterface;
+                            getUserConfigurationInterface();
+
+                         as UserConfigurationInterface;
     
 }
 
@@ -85,23 +88,28 @@ var userRole = userRole
     var abPath: AbPath = new AbPath(URLGLOBALS.getMainPath() +FREEBLISKET_PATH_GLOBALS.getInstance()!.USERCONFIGURATIONPATH, configurationName +userRole!.toString() +AbPathData.getInstance()!.EXTENSION_SEP +UserConfigurationData.UNCRYPTED_EXTENSION);
         
         
-
+;
+    
 
     var documentString: string = CryptFileReader(UserConfigurationData.UNCRYPTED_EXTENSION, UserConfigurationData.ENCRYPTED_EXTENSION).
                             get(abPath)!;
         
         
-
+;
+    
 
     var document: Document = DomDocumentHelper.create(documentString)!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return UserConfigurationInterfaceFactory.getInstance(document);
+
+                        ;
     
 }
 

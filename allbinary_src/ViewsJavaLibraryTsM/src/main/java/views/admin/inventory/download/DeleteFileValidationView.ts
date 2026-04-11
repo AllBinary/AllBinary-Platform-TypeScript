@@ -18,10 +18,13 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { HashMap } from "../../../../java/util/HashMap.js";
 
     
-import { Vector } from "../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../java/util/Vector.js";
 
     
 import { BasicItemData } from "../../../../org/allbinary/business/user/commerce/inventory/item/BasicItemData.js";
@@ -82,7 +85,8 @@ public constructor (transformInfoInterface: TransformInfoInterface)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.getFormData()
+this.getFormData();
+    
 }
 
 
@@ -90,11 +94,12 @@ this.getFormData()
             
     public getFormData(){
 
-    var hashMap: HashMap<Any, Any> = RequestParams(request).
+    var hashMap: HashMap<any, any> = RequestParams(request).
                             toHashMap()!;
         
         
-
+;
+    
 
                         if(hashMap == 
                                     null
@@ -108,8 +113,14 @@ this.getFormData()
 
                                     }
                                 
-this.id= hashMap!.get(BasicItemData.ID) as String
-this.downloadItemId= hashMap!.get(DownloadItemData.ID) as String
+this.id= hashMap!.get(BasicItemData.ID);
+
+                         as String;
+    
+this.downloadItemId= hashMap!.get(DownloadItemData.ID);
+
+                         as String;
+    
 }
 
 
@@ -119,7 +130,9 @@ this.downloadItemId= hashMap!.get(DownloadItemData.ID) as String
             
                         if(id == 
                                     null
-                                 || !StringValidationUtil.getInstance()!.isNumber(this.id))
+                                 || !StringValidationUtil.getInstance()!.isNumber(this.id);
+
+                        )
                         
                                     {
                                     
@@ -135,8 +148,10 @@ this.downloadItemId= hashMap!.get(DownloadItemData.ID) as String
     var inventoryEntity: InventoryEntity = InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!;
         
         
-
-this.itemInterface= inventoryEntity!.getItem(this.id)
+;
+    
+this.itemInterface= inventoryEntity!.getItem(this.id);
+    
 
                         if(this.itemInterface == 
                                     null
@@ -156,12 +171,14 @@ this.itemInterface= inventoryEntity!.getItem(this.id)
     var downloadItemsEntity: DownloadItemsEntity = DownloadItemsEntityFactory.getInstance()!.getDownloadItemsEntityInstance()!;
         
         
-
+;
+    
 
     var vector: Vector = downloadItemsEntity!.getForItem(this.id, this.downloadItemId)!;
         
         
-
+;
+    
 
                         if(vector.length != 1)
                         
@@ -181,7 +198,9 @@ this.itemInterface= inventoryEntity!.getItem(this.id)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return Boolean.TRUE;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
 
@@ -222,14 +241,18 @@ var document = document
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
                         if(id == 
                                     null
-                                 || !StringValidationUtil.getInstance()!.isNumber(this.id))
+                                 || !StringValidationUtil.getInstance()!.isNumber(this.id);
+
+                        )
                         
                                     {
-                                    stringBuffer!.append("Id is not valid.<br />")
+                                    stringBuffer!.append("Id is not valid.<br />");
+    
 
                                     }
                                 
@@ -239,7 +262,8 @@ var document = document
                                 )
                         
                                     {
-                                    stringBuffer!.append("Item does not exist.<br />")
+                                    stringBuffer!.append("Item does not exist.<br />");
+    
 
                                     }
                                 
@@ -247,17 +271,20 @@ var document = document
     var downloadItemsEntity: DownloadItemsEntity = DownloadItemsEntityFactory.getInstance()!.getDownloadItemsEntityInstance()!;
         
         
-
+;
+    
 
     var vector: Vector = downloadItemsEntity!.getForItem(this.id, this.downloadItemId)!;
         
         
-
+;
+    
 
                         if(vector.length == 0)
                         
                                     {
-                                    stringBuffer!.append("DownloadItem does not exist.<br />")
+                                    stringBuffer!.append("DownloadItem does not exist.<br />");
+    
 
                                     }
                                 
@@ -265,7 +292,8 @@ var document = document
                         if(vector.length > 1)
                         
                                     {
-                                    stringBuffer!.append("To Many DownloadItems exist.<br />")
+                                    stringBuffer!.append("To Many DownloadItems exist.<br />");
+    
 
                                     }
                                 
@@ -274,8 +302,12 @@ var document = document
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
 

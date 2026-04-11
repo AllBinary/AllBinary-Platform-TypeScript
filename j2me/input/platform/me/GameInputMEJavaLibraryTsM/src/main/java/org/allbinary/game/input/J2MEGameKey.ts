@@ -34,7 +34,8 @@ var keyCode = keyCode
     var input: Input = InputFactory.getInstance()!.getInstance(keyCode)!;
         
         
-
+;
+    
 
                         if(input != 
                                     null
@@ -46,6 +47,8 @@ var keyCode = keyCode
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return input.getName();
+
+                        ;
     
 
                                     }
@@ -77,7 +80,8 @@ var keyName = keyName
     var id: number = this.getId()!;
         
         
-
+;
+    
 
                         if(id >= 0)
                         
@@ -86,8 +90,10 @@ var keyName = keyName
     var inputFactory: InputFactory = InputFactory.getInstance()!;
         
         
-
-inputFactory!.add(id, this)
+;
+    
+inputFactory!.add(id, this);
+    
 
                                     }
                                 
@@ -101,6 +107,8 @@ inputFactory!.add(id, this)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return StringMaker().
                             append("J2MEGameKey: ")!.append(super.toString())!.toString();
+
+                        ;
     
 }
 

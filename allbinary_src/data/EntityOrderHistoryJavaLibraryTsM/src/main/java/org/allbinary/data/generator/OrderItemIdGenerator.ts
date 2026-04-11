@@ -41,12 +41,18 @@ public constructor (){
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(URLGLOBALS.getMainPath())
-stringBuffer!.append(PATH_GLOBALS.getInstance()!.INIT_PATH)
-stringBuffer!.append(IDFILE)
-stringBuffer!.append(UniqueIdGenerator.EXT)
-super.setFile(stringBuffer!.toString(), IDFILE)
+;
+    
+stringBuffer!.append(URLGLOBALS.getMainPath());
+    
+stringBuffer!.append(PATH_GLOBALS.getInstance()!.INIT_PATH);
+    
+stringBuffer!.append(IDFILE);
+    
+stringBuffer!.append(UniqueIdGenerator.EXT);
+    
+super.setFile(stringBuffer!.toString(), IDFILE);
+    
 }
 
 

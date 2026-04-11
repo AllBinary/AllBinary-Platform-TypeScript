@@ -65,23 +65,35 @@ private constructor (){
     var smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;
         
         
-
-NUMBER_ON_SAME_TEAM_SEQUENCE_ZERO= smallIntegerSingletonFactory!.getInstance(100)
-NUMBER_ON_SAME_TEAM_SEQUENCE_ONE= smallIntegerSingletonFactory!.getInstance(101)
-NUMBER_ON_SAME_TEAM_SEQUENCE_TWO= smallIntegerSingletonFactory!.getInstance(102)
-NUMBER_ON_SAME_TEAM_SEQUENCE_THREE= smallIntegerSingletonFactory!.getInstance(103)
-NUMBER_ON_SAME_TEAM_SEQUENCE_FOUR= smallIntegerSingletonFactory!.getInstance(104)
-NUMBER_ON_SAME_TEAM_SEQUENCE_FIVE= smallIntegerSingletonFactory!.getInstance(105)
-NUMBER_ON_SAME_TEAM_SEQUENCE_SIX= smallIntegerSingletonFactory!.getInstance(106)
-NUMBER_ON_SAME_TEAM_SEQUENCE_SEVEN= smallIntegerSingletonFactory!.getInstance(107)
-NUMBER_ON_SAME_TEAM_SEQUENCE_EIGHT= smallIntegerSingletonFactory!.getInstance(108)
-NUMBER_ON_SAME_TEAM_SEQUENCE_NINE= smallIntegerSingletonFactory!.getInstance(109)
+;
+    
+NUMBER_ON_SAME_TEAM_SEQUENCE_ZERO= smallIntegerSingletonFactory!.getInstance(100);
+    
+NUMBER_ON_SAME_TEAM_SEQUENCE_ONE= smallIntegerSingletonFactory!.getInstance(101);
+    
+NUMBER_ON_SAME_TEAM_SEQUENCE_TWO= smallIntegerSingletonFactory!.getInstance(102);
+    
+NUMBER_ON_SAME_TEAM_SEQUENCE_THREE= smallIntegerSingletonFactory!.getInstance(103);
+    
+NUMBER_ON_SAME_TEAM_SEQUENCE_FOUR= smallIntegerSingletonFactory!.getInstance(104);
+    
+NUMBER_ON_SAME_TEAM_SEQUENCE_FIVE= smallIntegerSingletonFactory!.getInstance(105);
+    
+NUMBER_ON_SAME_TEAM_SEQUENCE_SIX= smallIntegerSingletonFactory!.getInstance(106);
+    
+NUMBER_ON_SAME_TEAM_SEQUENCE_SEVEN= smallIntegerSingletonFactory!.getInstance(107);
+    
+NUMBER_ON_SAME_TEAM_SEQUENCE_EIGHT= smallIntegerSingletonFactory!.getInstance(108);
+    
+NUMBER_ON_SAME_TEAM_SEQUENCE_NINE= smallIntegerSingletonFactory!.getInstance(109);
+    
 NUMBER_ON_SAME_TEAM_SEQUENCE= 
                                                 [
                                                     NUMBER_ON_SAME_TEAM_SEQUENCE_ZERO,NUMBER_ON_SAME_TEAM_SEQUENCE_ONE,NUMBER_ON_SAME_TEAM_SEQUENCE_THREE,NUMBER_ON_SAME_TEAM_SEQUENCE_FOUR,NUMBER_ON_SAME_TEAM_SEQUENCE_FIVE,NUMBER_ON_SAME_TEAM_SEQUENCE_SIX,NUMBER_ON_SAME_TEAM_SEQUENCE_SEVEN,NUMBER_ON_SAME_TEAM_SEQUENCE_EIGHT,NUMBER_ON_SAME_TEAM_SEQUENCE_NINE;
         
         
-                                                ]
+                                                ];
+    
 }
 
 

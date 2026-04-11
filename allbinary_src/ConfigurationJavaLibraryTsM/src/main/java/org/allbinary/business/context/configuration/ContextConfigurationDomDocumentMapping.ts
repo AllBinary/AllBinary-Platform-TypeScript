@@ -42,7 +42,8 @@ public constructor (contextConfigurationInterface: ContextConfigurationInterface
 
             super();
             var contextConfigurationInterface = contextConfigurationInterface
-this.contextConfigurationInterface= contextConfigurationInterface
+this.contextConfigurationInterface= contextConfigurationInterface;
+    
 }
 
 
@@ -53,14 +54,17 @@ this.contextConfigurationInterface= contextConfigurationInterface
     var document: Document = DomDocumentHelper.create()!;
         
         
-
+;
+    
 
     var node: Node = ContextConfigurationView(this.contextConfigurationInterface).
                             toXmlNode(document)!;
         
         
-
-document.appendChild(node)
+;
+    
+document.appendChild(node);
+    
 
 
 
@@ -78,6 +82,8 @@ document.appendChild(node)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return DomDocumentHelper.toString(this.toXmlDoc());
+
+                        ;
     
 }
 

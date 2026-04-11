@@ -18,7 +18,10 @@
 
 
 
-import { Vector } from "../../../../../../java/util/Vector.js";
+            import Vector from "@ohos.util.Vector";
+        
+
+//import { Vector } from "../../../../../../java/util/Vector.js";
 
     
 import { TransformInfoEntity } from "../../../../../../org/allbinary/data/tables/transform/info/TransformInfoEntity.js";
@@ -92,7 +95,8 @@ var transformInfoInterface = transformInfoInterface
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("View Name: " +customizerTransformInfoInterface!.getName(), this, "getTransformInfoInterfaceToCustomize()")
+                                    logUtil!.put("View Name: " +customizerTransformInfoInterface!.getName(), this, "getTransformInfoInterfaceToCustomize()");
+    
 
                                     }
                                 
@@ -100,22 +104,26 @@ var transformInfoInterface = transformInfoInterface
     var transformInfoEntityInterface: TransformInfoEntity = TransformInfoEntityBuilder.getInstance()!;
         
         
-
+;
+    
 
     var viewName: string = transformInfoInterface!.getName()!;
         
         
-
+;
+    
 
     var httpTransformInfoInterface: TransformInfoHttpInterface = customizerTransformInfoInterface as TransformInfoHttpInterface;
         
         
-
+;
+    
 
     var customizedTransformInfoInterface: TransformInfoInterface = transformInfoEntityInterface!.get(viewName, httpTransformInfoInterface!.getPropertiesHashMap(), httpTransformInfoInterface!.getPageContext())!;
         
         
-
+;
+    
 
 
 
@@ -134,7 +142,8 @@ var transformInfoInterface = transformInfoInterface
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("View Name: " +customizerTransformInfoInterface!.getName(), this, "getTransformInfoObjectConfigComponentNodesToCustomize()")
+                                    logUtil!.put("View Name: " +customizerTransformInfoInterface!.getName(), this, "getTransformInfoObjectConfigComponentNodesToCustomize()");
+    
 
                                     }
                                 
@@ -142,27 +151,33 @@ var transformInfoInterface = transformInfoInterface
     var transformInfoEntityInterface: TransformInfoEntity = TransformInfoEntityBuilder.getInstance()!;
         
         
-
+;
+    
 
     var viewName: string = transformInfoInterface!.getName()!;
         
         
-
+;
+    
 
     var httpTransformInfoInterface: TransformInfoHttpInterface = customizerTransformInfoInterface as TransformInfoHttpInterface;
         
         
-
+;
+    
 
     var customizedTransformInfoInterface: TransformInfoInterface = transformInfoEntityInterface!.get(viewName, httpTransformInfoInterface!.getPropertiesHashMap(), httpTransformInfoInterface!.getPageContext())!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getTransformInfoObjectConfigComponentNodes(customizedTransformInfoInterface);
+
+                        ;
     
 }
 
@@ -175,7 +190,8 @@ var transformInfoInterface = transformInfoInterface
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("View Name: " +transformInfoInterface!.getName(), this, "getTransformInfoObjectConfigComponentNodes()")
+                                    logUtil!.put("View Name: " +transformInfoInterface!.getName(), this, "getTransformInfoObjectConfigComponentNodes()");
+    
 
                                     }
                                 
@@ -183,12 +199,15 @@ var transformInfoInterface = transformInfoInterface
     var transformInfoObjectConfigInterface: TransformInfoObjectConfigInterface = transformInfoInterface!.getObjectConfigInterface()!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return transformInfoObjectConfigInterface!.getTransforms();
+
+                        ;
     
 }
 
@@ -201,7 +220,8 @@ var transformInfoInterface = transformInfoInterface
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("View Name: " +transformInfoInterface!.getName(), this, "getTransformInfoObjectConfigComponentNodes()")
+                                    logUtil!.put("View Name: " +transformInfoInterface!.getName(), this, "getTransformInfoObjectConfigComponentNodes()");
+    
 
                                     }
                                 
@@ -209,12 +229,15 @@ var transformInfoInterface = transformInfoInterface
     var transformInfoObjectConfigInterface: TransformInfoObjectConfigInterface = transformInfoInterface!.getObjectConfigInterface()!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return transformInfoObjectConfigInterface!.getGroupTransforms();
+
+                        ;
     
 }
 
@@ -228,7 +251,8 @@ var domNodeInterface = domNodeInterface
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("View Name: " +transformInfoInterface!.getName(), this, "insert()")
+                                    logUtil!.put("View Name: " +transformInfoInterface!.getName(), this, "insert()");
+    
 
                                     }
                                 
@@ -236,46 +260,59 @@ var domNodeInterface = domNodeInterface
     var transformInfoEntityInterface: TransformInfoEntity = TransformInfoEntityBuilder.getInstance()!;
         
         
-
+;
+    
 
     var allViewsToBeModified: Vector = this.getTransformInfoObjectConfigGroupComponentNodes(transformInfoInterface)!;
         
         
-
+;
+    
 
     var document: Document = DomDocumentHelper.create()!;
         
         
-
-document.appendChild(domNodeInterface!.toXmlNode(document))
+;
+    
+document.appendChild(domNodeInterface!.toXmlNode(document));
+    
 
     var documentString: string = DomDocumentHelper.toString(document)!;
         
         
-
+;
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    stringBuffer!.append("Total Views For Modification: ")
-stringBuffer!.appendint(allViewsToBeModified!.length)
-stringBuffer!.append(" New Xml/Data: ")
-stringBuffer!.append(documentString)
-logUtil!.put(stringBuffer!.toString(), this, "insert()")
+                                    stringBuffer!.append("Total Views For Modification: ");
+    
+stringBuffer!.appendint(allViewsToBeModified!.length);
+    
+stringBuffer!.append(" New Xml/Data: ");
+    
+stringBuffer!.append(documentString);
+    
+logUtil!.put(stringBuffer!.toString(), this, "insert()");
+    
 
                                     }
                                 
-transformInfoInterface!.setData(documentString)
+transformInfoInterface!.setData(documentString);
+    
 
     var size: number = allViewsToBeModified!.length!;
         
         
-
+;
+    
 
 
 
@@ -287,24 +324,33 @@ transformInfoInterface!.setData(documentString)
 index < size; index++)
         {
 
-    var transformInfo: TransformInfo = allViewsToBeModified!.get(index) as TransformInfo;
-        
-        
+    var transformInfo: TransformInfo = allViewsToBeModified!.get(index);
 
+                         as TransformInfo;
+        
+        
+;
+    
 
     var viewNameOfViewToBeModified: string = transformInfo!.getName()!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    stringBuffer!.delete(0, stringBuffer!.length())
-stringBuffer!.append(transformInfoInterface!.getName())
-stringBuffer!.append(" is modifying view: ")
-stringBuffer!.append(viewNameOfViewToBeModified)
-logUtil!.put(stringBuffer!.toString(), this, "insert()")
+                                    stringBuffer!.delete(0, stringBuffer!.length());
+    
+stringBuffer!.append(transformInfoInterface!.getName());
+    
+stringBuffer!.append(" is modifying view: ");
+    
+stringBuffer!.append(viewNameOfViewToBeModified);
+    
+logUtil!.put(stringBuffer!.toString(), this, "insert()");
+    
 
                                     }
                                 
@@ -312,12 +358,14 @@ logUtil!.put(stringBuffer!.toString(), this, "insert()")
     var httpTransformInfoInterface: TransformInfoHttpInterface = transformInfoInterface as TransformInfoHttpInterface;
         
         
-
+;
+    
 
     var specifiedTransformInfoInterface: TransformInfoInterface = transformInfoEntityInterface!.get(viewNameOfViewToBeModified, httpTransformInfoInterface!.getPropertiesHashMap(), httpTransformInfoInterface!.getPageContext())!;
         
         
-
+;
+    
 
                         if(specifiedTransformInfoInterface == 
                                     null
@@ -328,12 +376,18 @@ logUtil!.put(stringBuffer!.toString(), this, "insert()")
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    stringBuffer!.delete(0, stringBuffer!.length())
-stringBuffer!.append(transformInfoInterface!.getName())
-stringBuffer!.append(" is unable to add data to view: ")
-stringBuffer!.append(viewNameOfViewToBeModified)
-stringBuffer!.append(" since it does not exist")
-logUtil!.put(stringBuffer!.toString(), this, "insert()")
+                                    stringBuffer!.delete(0, stringBuffer!.length());
+    
+stringBuffer!.append(transformInfoInterface!.getName());
+    
+stringBuffer!.append(" is unable to add data to view: ");
+    
+stringBuffer!.append(viewNameOfViewToBeModified);
+    
+stringBuffer!.append(" since it does not exist");
+    
+logUtil!.put(stringBuffer!.toString(), this, "insert()");
+    
 
                                     }
                                 
@@ -345,7 +399,8 @@ logUtil!.put(stringBuffer!.toString(), this, "insert()")
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put(transformInfoInterface!.getName() +" is adding data to view: " +viewNameOfViewToBeModified, this, "insert()")
+                                    logUtil!.put(transformInfoInterface!.getName() +" is adding data to view: " +viewNameOfViewToBeModified, this, "insert()");
+    
 
                                     }
                                 
@@ -353,17 +408,25 @@ logUtil!.put(stringBuffer!.toString(), this, "insert()")
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    stringBuffer!.delete(0, stringBuffer!.length())
-stringBuffer!.append(viewNameOfViewToBeModified)
-stringBuffer!.append(" is changing data in ")
-stringBuffer!.append(specifiedTransformInfoInterface!.getDataFilePath()!.toString())
-stringBuffer!.append(" to the following data:\n")
-stringBuffer!.append(documentString)
-logUtil!.put(stringBuffer!.toString(), this, "insert()")
+                                    stringBuffer!.delete(0, stringBuffer!.length());
+    
+stringBuffer!.append(viewNameOfViewToBeModified);
+    
+stringBuffer!.append(" is changing data in ");
+    
+stringBuffer!.append(specifiedTransformInfoInterface!.getDataFilePath()!.toString());
+    
+stringBuffer!.append(" to the following data:\n");
+    
+stringBuffer!.append(documentString);
+    
+logUtil!.put(stringBuffer!.toString(), this, "insert()");
+    
 
                                     }
                                 
-this.write(specifiedTransformInfoInterface, documentString)
+this.write(specifiedTransformInfoInterface, documentString);
+    
 
                         }
                             
@@ -381,7 +444,8 @@ var documentString = documentString
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("View Name: " +specifiedTransformInfoInterface!.getName(), this, "write()")
+                                    logUtil!.put("View Name: " +specifiedTransformInfoInterface!.getName(), this, "write()");
+    
 
                                     }
                                 
@@ -389,9 +453,12 @@ var documentString = documentString
     var transformInfoEntityInterface: TransformInfoEntity = TransformInfoEntityBuilder.getInstance()!;
         
         
-
-specifiedTransformInfoInterface!.setData(documentString)
-transformInfoEntityInterface!.update(specifiedTransformInfoInterface!.toHashMap())
+;
+    
+specifiedTransformInfoInterface!.setData(documentString);
+    
+transformInfoEntityInterface!.update(specifiedTransformInfoInterface!.toHashMap());
+    
 }
 
 
@@ -403,7 +470,8 @@ var transformInfoInterface = transformInfoInterface
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("View Name: " +transformInfoInterface!.getName(), this, "getViewDataForComponentsInObjectConfig()")
+                                    logUtil!.put("View Name: " +transformInfoInterface!.getName(), this, "getViewDataForComponentsInObjectConfig()");
+    
 
                                     }
                                 
@@ -411,22 +479,26 @@ var transformInfoInterface = transformInfoInterface
     var transformInfoObjectConfigInterface: TransformInfoObjectConfigInterface = transformInfoInterface!.getObjectConfigInterface()!;
         
         
-
+;
+    
 
     var allViewsToBeModified: Vector = transformInfoObjectConfigInterface!.getGroupTransforms()!;
         
         
-
+;
+    
 
     var transformInfoEntityInterface: TransformInfoEntity = TransformInfoEntityBuilder.getInstance()!;
         
         
-
+;
+    
 
     var size: number = allViewsToBeModified!.length!;
         
         
-
+;
+    
 
 
 
@@ -438,30 +510,38 @@ var transformInfoInterface = transformInfoInterface
 index < size; index++)
         {
 
-    var nextTransformInfoInterface: TransformInfo = allViewsToBeModified!.get(index) as TransformInfo;
-        
-        
+    var nextTransformInfoInterface: TransformInfo = allViewsToBeModified!.get(index);
 
+                         as TransformInfo;
+        
+        
+;
+    
 
     var viewNameOfViewToBeModified: string = nextTransformInfoInterface!.getName()!;
         
         
-
+;
+    
 
     var httpTransformInfoInterface: TransformInfoHttpInterface = transformInfoInterface as TransformInfoHttpInterface;
         
         
-
+;
+    
 
     var specifiedTransformInfoInterface: TransformInfoInterface = transformInfoEntityInterface!.get(viewNameOfViewToBeModified, httpTransformInfoInterface!.getPropertiesHashMap(), httpTransformInfoInterface!.getPageContext())!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return specifiedTransformInfoInterface!.getDataDocument();
+
+                        ;
     
 }
 

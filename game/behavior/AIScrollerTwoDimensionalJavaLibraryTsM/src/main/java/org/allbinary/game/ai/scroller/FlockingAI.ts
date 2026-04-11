@@ -18,7 +18,10 @@
 
 
 
-import { Hashtable } from "../../../../../java/util/Hashtable.js";
+            import Hashtable from "@ohos.util.HashMap";
+        
+
+//import { Hashtable } from "../../../../../java/util/Hashtable.js";
 
     
 import { Canvas } from "../../../../../javax/microedition/lcdui/Canvas.js";
@@ -56,7 +59,7 @@ export class FlockingAI extends BasicAI {
         
 
     private readonly allowedDistance: number
-public constructor (hashtable: Hashtable<Any, Any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput)                        
+public constructor (hashtable: Hashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput)                        
 
                             : super(ownerLayerInterface, gameInput){
 
@@ -69,11 +72,15 @@ var gameInput = gameInput
                             //For kotlin this is before the body of the constructor.
                     
 
-    var allowedDistance: Integer = hashtable.get(BasePatrolAI.MAX_DISTANCE) as Integer;
-        
-        
+    var allowedDistance: Integer = hashtable.get(BasePatrolAI.MAX_DISTANCE);
 
-this.allowedDistance= allowedDistance!.toInt()
+                         as Integer;
+        
+        
+;
+    
+this.allowedDistance= allowedDistance!.toInt();
+    
 }
 
 
@@ -85,27 +92,32 @@ var allBinaryLayerManager = allBinaryLayerManager
     var maxDistance: number = 0;
         
         
-
+;
+    
 
     var farAllbinaryLayer: AllBinaryLayer = AllBinaryLayer.NULL_ALLBINARY_LAYER;
         
         
-
+;
+    
 
     var groupLayerManagerListener: GroupLayerManagerListener = GroupLayerManagerListener.getInstance()!;
         
         
-
+;
+    
 
     var list: BasicArrayList = groupLayerManagerListener!.getList(BasicGroupFactory.getInstance()!.ENEMY)!;
         
         
-
+;
+    
 
     var size: number = list.size()!;
         
         
-
+;
+    
 
 
 
@@ -117,10 +129,13 @@ var allBinaryLayerManager = allBinaryLayerManager
 index < size; index++)
         {
 
-    var allBinaryLayer: AllBinaryLayer = list.get(index) as AllBinaryLayer;
-        
-        
+    var allBinaryLayer: AllBinaryLayer = list.get(index);
 
+                         as AllBinaryLayer;
+        
+        
+;
+    
 
                         if(allBinaryLayer!.getType() != WeaponLayer.getStaticType())
                         
@@ -129,13 +144,16 @@ index < size; index++)
     var distance: number = this.getXYDistance(allBinaryLayer)!;
         
         
-
+;
+    
 
                         if(distance > maxDistance)
                         
                                     {
-                                    maxDistance= distance
-farAllbinaryLayer= allBinaryLayer
+                                    maxDistance= distance;
+    
+farAllbinaryLayer= allBinaryLayer;
+    
 
                         if(distance > this.allowedDistance)
                         
@@ -166,12 +184,14 @@ farAllbinaryLayer= allBinaryLayer
     var ownerLayerInterface: AllBinaryLayer = this.getOwnerLayerInterface()!;
         
         
-
+;
+    
 
                         if(farAllbinaryLayer!.getXP() < ownerLayerInterface!.getXP())
                         
                                     {
-                                    this.processAI(Canvas.LEFT)
+                                    this.processAI(Canvas.LEFT);
+    
 
                                     }
                                 
@@ -179,7 +199,8 @@ farAllbinaryLayer= allBinaryLayer
                         if(farAllbinaryLayer!.getXP() > ownerLayerInterface!.getXP())
                         
                                     {
-                                    this.processAI(Canvas.RIGHT)
+                                    this.processAI(Canvas.RIGHT);
+    
 
                                     }
                                 
@@ -187,7 +208,8 @@ farAllbinaryLayer= allBinaryLayer
                         if(farAllbinaryLayer!.getYP() > ownerLayerInterface!.getYP())
                         
                                     {
-                                    this.processAI(Canvas.UP)
+                                    this.processAI(Canvas.UP);
+    
 
                                     }
                                 
@@ -195,7 +217,8 @@ farAllbinaryLayer= allBinaryLayer
                         if(farAllbinaryLayer!.getYP() < ownerLayerInterface!.getYP())
                         
                                     {
-                                    this.processAI(Canvas.DOWN)
+                                    this.processAI(Canvas.DOWN);
+    
 
                                     }
                                 
@@ -214,27 +237,32 @@ var allBinaryLayer = allBinaryLayer
     var ownerLayerInterface: AllBinaryLayer = this.getOwnerLayerInterface()!;
         
         
-
+;
+    
 
     var xTotalDistance: number = (allBinaryLayer!.getXP() +allBinaryLayer!.getHalfWidth()) -(ownerLayerInterface!.getXP() +ownerLayerInterface!.getHalfWidth());
         
         
-
+;
+    
 
     var yTotalDistance: number = (allBinaryLayer!.getYP() +allBinaryLayer!.getHalfHeight()) -(ownerLayerInterface!.getYP() +ownerLayerInterface!.getHalfHeight());
         
         
-
+;
+    
 
     var mathUtil: MathUtil = MathUtil.getInstance()!;
         
         
-
+;
+    
 
     var totalDistance: number = mathUtil!.abs(xTotalDistance) +mathUtil!.abs(yTotalDistance);
         
         
-
+;
+    
 
 
 

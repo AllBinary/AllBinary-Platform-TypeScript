@@ -52,10 +52,13 @@ export class DisposalUtil
     public dispose(resource: Resource){
     //var resource = resource
 
-                        if(!resource.isDisposed())
+                        if(!resource.isDisposed();
+
+                        )
                         
                                     {
-                                    resource.dispose()
+                                    resource.dispose();
+    
 
                                     }
                                 

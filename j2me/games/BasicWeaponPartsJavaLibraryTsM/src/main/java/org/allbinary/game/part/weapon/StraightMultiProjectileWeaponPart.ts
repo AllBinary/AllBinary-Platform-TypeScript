@@ -63,8 +63,10 @@ public constructor (animationInterface: Animation, weaponLayerCircularStaticPool
 
                             //For kotlin this is before the body of the constructor.
                     
-this.total= 2
-this.weaponLayerCircularStaticPool= weaponLayerCircularStaticPool
+this.total= 2;
+    
+this.weaponLayerCircularStaticPool= weaponLayerCircularStaticPool;
+    
 }
 
 public constructor (animationInterface: Animation, sourceLayerInterface: AllBinaryLayer, weaponLayerCircularStaticPool: WeaponLayerCircularPool, total: number, weaponProperties: WeaponProperties, scoreableInterface: ScoreableInterface, relativeRelationship: RelativeRelationship)                        
@@ -83,8 +85,10 @@ public constructor (animationInterface: Animation, sourceLayerInterface: AllBina
 
                             //For kotlin this is before the body of the constructor.
                     
-this.total= total
-this.weaponLayerCircularStaticPool= weaponLayerCircularStaticPool
+this.total= total;
+    
+this.weaponLayerCircularStaticPool= weaponLayerCircularStaticPool;
+    
 }
 
 
@@ -104,52 +108,64 @@ this.weaponLayerCircularStaticPool= weaponLayerCircularStaticPool
     var sourceLayerInterface: AllBinaryLayer = this.getOwnerLayerInterface()!;
         
         
-
+;
+    
 
     var reducedWidth: number = (sourceLayerInterface!.getWidth() *8 /10);
         
         
-
+;
+    
 
     var halfWidth: number = (reducedWidth shr 1);
         
         
-
+;
+    
 
     var x: number = this.relativeRelationship!.getX()!;
         
         
-
+;
+    
 
     var y: number = this.relativeRelationship!.getY()!;
         
         
-
+;
+    
 
     var sine: number= 0
-
+;
+    
 
     var beamX: number= 0
-
+;
+    
 
     var cosine: number= 0
-
+;
+    
 
     var beamY: number= 0
-
+;
+    
 
     var weaponLayer: WeaponLayer
-
+;
+    
 
     var increment: number = reducedWidth /(this.total -1);
         
         
-
+;
+    
 
     var next: number =  -halfWidth;
         
         
-
+;
+    
 
 
 
@@ -160,13 +176,20 @@ this.weaponLayerCircularStaticPool= weaponLayerCircularStaticPool
         
 index < total; index++)
         {
-sine= (next *noDecimalTrigTable!.sin(angle.toInt())).toLong()
-beamX= (sine /noDecimalTrigTable!.SCALE).toInt()
-cosine= (next *noDecimalTrigTable!.cos(angle.toInt())).toLong()
-beamY=  -(cosine /noDecimalTrigTable!.SCALE).toInt()
-weaponLayer= weaponLayerCircularStaticPool!.getInstance(sourceLayerInterface, x +beamX, y +beamY, 0, angle.toInt(), otherAngle.toInt(), weaponProperties, scoreableInterface)
-allbinaryLayerManager!.append(weaponLayer)
-next += increment
+sine= (next *noDecimalTrigTable!.sin(angle.toInt())).toLong();
+    
+beamX= (sine /noDecimalTrigTable!.SCALE).toInt();
+    
+cosine= (next *noDecimalTrigTable!.cos(angle.toInt())).toLong();
+    
+beamY=  -(cosine /noDecimalTrigTable!.SCALE).toInt();
+    
+weaponLayer= weaponLayerCircularStaticPool!.getInstance(sourceLayerInterface, x +beamX, y +beamY, 0, angle.toInt(), otherAngle.toInt(), weaponProperties, scoreableInterface);
+    
+allbinaryLayerManager!.append(weaponLayer);
+    
+next += increment;
+    
 }
 
 }

@@ -39,7 +39,8 @@ public constructor (combatGameCanvas: AllBinaryGameCanvas){
 
             super();
             var combatGameCanvas = combatGameCanvas
-this.combatGameCanvas= combatGameCanvas
+this.combatGameCanvas= combatGameCanvas;
+    
 }
 
 

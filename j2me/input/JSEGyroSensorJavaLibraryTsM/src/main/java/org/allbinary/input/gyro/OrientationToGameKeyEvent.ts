@@ -45,7 +45,8 @@ public constructor (){
                         if(Features.getInstance()!.isFeature(SensorFeatureFactory.getInstance()!.NO_ORIENTATION))
                         
                                     {
-                                    allBinaryGyroSensor= NoGyroSensor()
+                                    allBinaryGyroSensor= NoGyroSensor();
+    
 
                                     }
                                 
@@ -62,7 +63,8 @@ public constructor (){
 
     public setAllBinaryGyroSensor(allBinaryGyroSensor: AllBinaryOrientationSensor){
 var allBinaryGyroSensor = allBinaryGyroSensor
-this.allBinaryGyroSensor= allBinaryGyroSensor
+this.allBinaryGyroSensor= allBinaryGyroSensor;
+    
 }
 
 

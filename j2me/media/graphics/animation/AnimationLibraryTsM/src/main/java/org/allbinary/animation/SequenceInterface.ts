@@ -22,9 +22,9 @@
 interface SequenceInterface {
         
 
-    setSequence(sequence: IntArray)
+    setSequence(sequence: number[])
 
-    getSequence(): IntArray
+    getSequence(): number[]
 
 }
                 

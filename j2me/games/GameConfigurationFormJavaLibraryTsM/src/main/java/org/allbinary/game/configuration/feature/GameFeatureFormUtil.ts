@@ -18,7 +18,10 @@
 
 
 
-import { Hashtable } from "../../../../../java/util/Hashtable.js";
+            import Hashtable from "@ohos.util.HashMap";
+        
+
+//import { Hashtable } from "../../../../../java/util/Hashtable.js";
 
     
 import { ChoiceGroup } from "../../../../../javax/microedition/lcdui/ChoiceGroup.js";
@@ -75,7 +78,7 @@ export class GameFeatureFormUtil
         
         
 
-    public getChoiceGroup(hashtable: Hashtable<Any, Any>, name: string, option: number): ChoiceGroup{
+    public getChoiceGroup(hashtable: Hashtable<any, any>, name: string, option: number): ChoiceGroup{
 var hashtable = hashtable
 var name = name
 var option = option
@@ -83,37 +86,46 @@ var option = option
     var stringMaker: StringMaker = new StringMaker();
         
         
-
+;
+    
 
     var choiceGroup: ChoiceGroup = new ChoiceGroup(name, option);
         
         
+;
+    
 
+    var list: BasicArrayList = hashtable.get(name as Object);
 
-    var list: BasicArrayList = hashtable.get(name as Object) as BasicArrayList;
+                         as BasicArrayList;
         
         
-
+;
+    
 
     var features: Features = Features.getInstance()!;
         
         
-
+;
+    
 
     var ADD_CHOICE: string = ": Adding Choice: ";
         
         
-
+;
+    
 
     var GET_CHOICE_GROUP: string = "getChoiceGroup";
         
         
-
+;
+    
 
     var size: number = list.size()!;
         
         
-
+;
+    
 
 
 
@@ -128,15 +140,20 @@ index < size; index++)
     var gameFeature: Feature = list.objectArray[index]! as Feature;
         
         
-
-stringMaker!.delete(0, stringMaker!.length())
-logUtil!.put(stringMaker!.append(name)!.append(ADD_CHOICE)!.append(gameFeature!.toString())!.toString(), this, GET_CHOICE_GROUP)
-choiceGroup!.append(gameFeature!.toString(), NullCanvas.NULL_IMAGE)
+;
+    
+stringMaker!.delete(0, stringMaker!.length());
+    
+logUtil!.put(stringMaker!.append(name)!.append(ADD_CHOICE)!.append(gameFeature!.toString())!.toString(), this, GET_CHOICE_GROUP);
+    
+choiceGroup!.append(gameFeature!.toString(), NullCanvas.NULL_IMAGE);
+    
 
                         if(features.isFeature(gameFeature))
                         
                                     {
-                                    choiceGroup!.setSelectedIndex(index, true)
+                                    choiceGroup!.setSelectedIndex(index, true);
+    
 
                                     }
                                 
@@ -151,7 +168,7 @@ choiceGroup!.append(gameFeature!.toString(), NullCanvas.NULL_IMAGE)
 }
 
 
-    public addChoiceGroup(form: CommandForm, hashtable: Hashtable<Any, Any>, option: number){
+    public addChoiceGroup(form: CommandForm, hashtable: Hashtable<any, any>, option: number){
 var form = form
 var hashtable = hashtable
 var option = option
@@ -159,27 +176,32 @@ var option = option
     var stringMaker: StringMaker = new StringMaker();
         
         
-
+;
+    
 
     var ADDING_CHOICE_GROUP: string = "Adding Choice Group: ";
         
         
-
+;
+    
 
     var ADD_CHOICE_GROUP: string = "addChoiceGroup";
         
         
-
+;
+    
 
     var size: number = hashtable.length!;
         
         
+;
+    
 
-
-    var objectArray: any = {}[] = HashtableUtil.getInstance()!.getKeysAsArray(hashtable)!;
+    var objectArray: any[] = HashtableUtil.getInstance()!.getKeysAsArray(hashtable)!;
         
         
-
+;
+    
 
 
 
@@ -194,10 +216,14 @@ index < size; index++)
     var name: string = objectArray[index]! as String;
         
         
-
-stringMaker!.delete(0, stringMaker!.length())
-logUtil!.put(stringMaker!.append(ADDING_CHOICE_GROUP)!.append(name)!.toString(), this, ADD_CHOICE_GROUP)
-form.append(this.getChoiceGroup(hashtable, name, option))
+;
+    
+stringMaker!.delete(0, stringMaker!.length());
+    
+logUtil!.put(stringMaker!.append(ADDING_CHOICE_GROUP)!.append(name)!.toString(), this, ADD_CHOICE_GROUP);
+    
+form.append(this.getChoiceGroup(hashtable, name, option));
+    
 }
 
 }
@@ -211,7 +237,8 @@ var form = form
     var size: number = form.size()!;
         
         
-
+;
+    
 
 
 
@@ -226,12 +253,14 @@ index < size; index++)
     var item: Item = form.get(index)!;
         
         
-
+;
+    
 
                         if(item is GameConfigurationGauge)
                         
                                     {
-                                    GameConfigurationUtil.getInstance()!.setDefault(item as GameConfigurationGauge)
+                                    GameConfigurationUtil.getInstance()!.setDefault(item as GameConfigurationGauge);
+    
 
                                     }
                                 
@@ -239,7 +268,8 @@ index < size; index++)
                         if(item is ChoiceGroup)
                         
                                     {
-                                    GameFeatureUtil.getInstance()!.setDefault(item as ChoiceGroup)
+                                    GameFeatureUtil.getInstance()!.setDefault(item as ChoiceGroup);
+    
 
                                     }
                                 

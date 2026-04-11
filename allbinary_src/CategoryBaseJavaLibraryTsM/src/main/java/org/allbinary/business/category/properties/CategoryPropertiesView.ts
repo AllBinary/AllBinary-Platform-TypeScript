@@ -45,7 +45,8 @@ public constructor (categoryPropertiesInterface: CategoryPropertiesInterface){
 
             super();
             var categoryPropertiesInterface = categoryPropertiesInterface
-this.categoryPropertiesInterface= categoryPropertiesInterface
+this.categoryPropertiesInterface= categoryPropertiesInterface;
+    
 }
 
 
@@ -57,13 +58,16 @@ var document = document
     var categoryNode: Node = document.createElement(CategoryData.getInstance()!.NAME)!;
         
         
-
+;
+    
 
     var newCategoryNode: Element = categoryNode as Element;
         
         
-
-newCategoryNode!.setAttribute(CategoryData.getInstance()!.LABEL, this.categoryPropertiesInterface!.getValue())
+;
+    
+newCategoryNode!.setAttribute(CategoryData.getInstance()!.LABEL, this.categoryPropertiesInterface!.getValue());
+    
 
 
 

@@ -78,20 +78,24 @@ private constructor (){
     var operatingSystems: OperatingSystems = OperatingSystems.getInstance()!;
         
         
-
+;
+    
 
     var osName: string = SystemProperties.getInstance()!.getName()!;
         
         
-
+;
+    
 
     var operatingSystemInterface: GenericOperatingSystem
-
+;
+    
 
                         if(osName!.compareTo(operatingSystems!.LINUX) == 0)
                         
                                     {
-                                    operatingSystemInterface= LinuxOS()
+                                    operatingSystemInterface= LinuxOS();
+    
 
                                     }
                                 
@@ -100,7 +104,8 @@ private constructor (){
                         if(operatingSystems!.isUnknownSpecificOSAllowed())
                         
                                     {
-                                    operatingSystemInterface= LinuxOS()
+                                    operatingSystemInterface= LinuxOS();
+    
 
                                     }
                                 
@@ -121,7 +126,9 @@ private constructor (){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return operatingSystemInterface;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.FACTORYERROR))
@@ -131,8 +138,10 @@ private constructor (){
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e);
+    
 
                                     }
                                 

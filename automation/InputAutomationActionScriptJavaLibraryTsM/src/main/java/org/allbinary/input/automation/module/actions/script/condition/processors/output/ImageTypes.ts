@@ -18,7 +18,10 @@
 
 
 
-import { Vector } from "../../../../../../../../../../java/util/Vector.js";
+            import Vector from "@ohos.util.Vector";
+        
+
+//import { Vector } from "../../../../../../../../../../java/util/Vector.js";
 
     
 import { DomNodeHelper } from "../../../../../../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js";
@@ -48,13 +51,14 @@ export class ImageTypes
          {
         
 
-    public static valueOf(anyType: any = {}[]): ImageTypes{
+    public static valueOf(anyType: any[]): ImageTypes{
 var anyType = anyType
 
     var imageTypes: ImageTypes = new ImageTypes();
         
         
-
+;
+    
 
 
 
@@ -69,8 +73,10 @@ index < anyType!.length; index++)
     var imageType: InputImageType = InputImageType.getInstance(anyType[index]! as String)!;
         
         
-
-imageTypes!.getVector()!.add(imageType)
+;
+    
+imageTypes!.getVector()!.add(imageType);
+    
 }
 
 
@@ -98,7 +104,8 @@ public constructor (node: Node){
     var nodeList: NodeList = node.getChildNodes()!;
         
         
-
+;
+    
 
 
 
@@ -113,7 +120,8 @@ index < nodeList!.getLength(); index++)
     var childNode: Node = nodeList!.item(index)!;
         
         
-
+;
+    
 
                         if(childNode!.getNodeName()!.compareTo(ImageActionScriptOutputData.TYPE) == 0)
                         
@@ -122,8 +130,10 @@ index < nodeList!.getLength(); index++)
     var nextImageTypeString: string = DomNodeHelper.getTextNodeValue(childNode)!;
         
         
-
-this.getVector()!.add(InputImageType.getInstance(nextImageTypeString))
+;
+    
+this.getVector()!.add(InputImageType.getInstance(nextImageTypeString));
+    
 
                                     }
                                 
@@ -158,12 +168,14 @@ var document = document
     var newNode: Node = document.createElement(ImageActionScriptOutputData.TYPES)!;
         
         
-
+;
+    
 
     var size: number = vector.length!;
         
         
-
+;
+    
 
 
 
@@ -175,11 +187,15 @@ var document = document
 index < size; index++)
         {
 
-    var imageType: InputImageType = vector.get(index) as InputImageType;
-        
-        
+    var imageType: InputImageType = vector.get(index);
 
-newNode!.appendChild(ModDomHelper.createTextNode(document, ImageActionScriptOutputData.TYPE, imageType!.getName()))
+                         as InputImageType;
+        
+        
+;
+    
+newNode!.appendChild(ModDomHelper.createTextNode(document, ImageActionScriptOutputData.TYPE, imageType!.getName()));
+    
 }
 
 
@@ -196,13 +212,16 @@ newNode!.appendChild(ModDomHelper.createTextNode(document, ImageActionScriptOutp
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("ImageTypes: ")
+;
+    
+stringBuffer!.append("ImageTypes: ");
+    
 
     var size: number = vector.length!;
         
         
-
+;
+    
 
 
 
@@ -214,14 +233,20 @@ stringBuffer!.append("ImageTypes: ")
 index < size; index++)
         {
 
-    var imageType: InputImageType = vector.get(index) as InputImageType;
-        
-        
+    var imageType: InputImageType = vector.get(index);
 
-stringBuffer!.append(imageType!.getName())
+                         as InputImageType;
+        
+        
+;
+    
+stringBuffer!.append(imageType!.getName());
+    
 
                         if(index < size -1)
-                        stringBuffer!.append(", ")
+                        stringBuffer!.append(", ");
+
+                        
 }
 
 
@@ -229,6 +254,8 @@ stringBuffer!.append(imageType!.getName())
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

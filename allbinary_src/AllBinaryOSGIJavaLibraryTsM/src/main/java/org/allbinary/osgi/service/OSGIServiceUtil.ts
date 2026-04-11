@@ -18,7 +18,10 @@
 
 
 
-import { Vector } from "../../../../java/util/Vector.js";
+            import Vector from "@ohos.util.Vector";
+        
+
+//import { Vector } from "../../../../java/util/Vector.js";
 
     
 import { BundleContext } from "../../../../org/osgi/framework/BundleContext.js";
@@ -71,7 +74,8 @@ private constructor (){
     var vector: Vector = new Vector();
         
         
-
+;
+    
 
                         if(serviceReferences != 
                                     null
@@ -83,8 +87,10 @@ private constructor (){
                 ;
         
         
-
-logUtil!.put("Service References: " +size, this, "getServicesObjectVector")
+;
+    
+logUtil!.put("Service References: " +size, this, "getServicesObjectVector");
+    
 
 
 
@@ -99,7 +105,8 @@ index < size; index++)
     var serviceReference: ServiceReference = serviceReferences[index]!;
         
         
-
+;
+    
 
                         if(serviceReference != 
                                     null
@@ -107,10 +114,13 @@ index < size; index++)
                         
                                     {
                                     
-    var osgiServiceInterface: OSGIServiceInterface = bundleContext!.getService(serviceReference) as OSGIServiceInterface;
-        
-        
+    var osgiServiceInterface: OSGIServiceInterface = bundleContext!.getService(serviceReference);
 
+                         as OSGIServiceInterface;
+        
+        
+;
+    
 
                         if(osgiServiceInterface == 
                                     null
@@ -124,7 +134,8 @@ index < size; index++)
 
                                     }
                                 
-vector.add(osgiServiceInterface)
+vector.add(osgiServiceInterface);
+    
 
                                     }
                                 

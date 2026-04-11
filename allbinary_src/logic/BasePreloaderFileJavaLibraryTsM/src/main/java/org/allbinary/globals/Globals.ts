@@ -72,49 +72,73 @@ var pathString = pathString
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
+;
+    
 
     var appUrlGlobals: AppUrlGlobals = new AppUrlGlobals();
         
         
-
-appUrlGlobals!.setWebappPath(pathString)
-URLGLOBALS.init(appUrlGlobals)
-WebappClassLoaderInfo.setLoader(classLoader)
+;
+    
+appUrlGlobals!.setWebappPath(pathString);
+    
+URLGLOBALS.init(appUrlGlobals);
+    
+WebappClassLoaderInfo.setLoader(classLoader);
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("Setting Up AllBinary System Configuration Args: ")
-stringBuffer!.append(pathString)
-stringBuffer!.append(" ClassLoader: ")
-stringBuffer!.append(classLoader!::class.toString()!)
-logUtil!.put(stringBuffer!.toString(), this, commonStrings!.INIT)
+;
+    
+stringBuffer!.append("Setting Up AllBinary System Configuration Args: ");
+    
+stringBuffer!.append(pathString);
+    
+stringBuffer!.append(" ClassLoader: ");
+    
+stringBuffer!.append(classLoader!.constructor.name.toString()!);
+    
+logUtil!.put(stringBuffer!.toString(), this, commonStrings!.INIT);
+    
 
     var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
         
         
-
+;
+    
 
                         if(stringValidationUtil!.isEmpty(pathString))
                         
                                     {
-                                    stringBuffer!.delete(0, stringBuffer!.length())
-stringBuffer!.append("No Path Provided. Using Process Path: ")
-stringBuffer!.append(pathString)
-stringBuffer!.append(CommonSeps.getInstance()!.SPACE)
-stringBuffer!.append(CommonSeps.getInstance()!.EQUALS)
-stringBuffer!.append(CommonSeps.getInstance()!.SPACE)
-stringBuffer!.append(URLGLOBALS.getWebappPath())
-logUtil!.put(stringBuffer!.toString(), this, commonStrings!.INIT)
+                                    stringBuffer!.delete(0, stringBuffer!.length());
+    
+stringBuffer!.append("No Path Provided. Using Process Path: ");
+    
+stringBuffer!.append(pathString);
+    
+stringBuffer!.append(CommonSeps.getInstance()!.SPACE);
+    
+stringBuffer!.append(CommonSeps.getInstance()!.EQUALS);
+    
+stringBuffer!.append(CommonSeps.getInstance()!.SPACE);
+    
+stringBuffer!.append(URLGLOBALS.getWebappPath());
+    
+logUtil!.put(stringBuffer!.toString(), this, commonStrings!.INIT);
+    
 
                                     }
                                 
-stringBuffer!.delete(0, stringBuffer!.length())
-stringBuffer!.append("Webapp Path Set To: ")
-stringBuffer!.append(URLGLOBALS.getWebappPath())
-logUtil!.put(stringBuffer!.toString(), this, commonStrings!.INIT)
+stringBuffer!.delete(0, stringBuffer!.length());
+    
+stringBuffer!.append("Webapp Path Set To: ");
+    
+stringBuffer!.append(URLGLOBALS.getWebappPath());
+    
+logUtil!.put(stringBuffer!.toString(), this, commonStrings!.INIT);
+    
 }
 
 

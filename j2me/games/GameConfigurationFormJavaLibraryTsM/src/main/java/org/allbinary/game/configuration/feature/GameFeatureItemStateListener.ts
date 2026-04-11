@@ -65,10 +65,13 @@ export class GameFeatureItemStateListener
     public static add(gameFeature: GameFeature){
 var gameFeature = gameFeature
 
-                        if(!GameFeatureItemStateListener.toggleList!.contains(gameFeature))
+                        if(!GameFeatureItemStateListener.toggleList!.contains(gameFeature);
+
+                        )
                         
                                     {
-                                    GameFeatureItemStateListener.toggleList!.add(gameFeature)
+                                    GameFeatureItemStateListener.toggleList!.add(gameFeature);
+    
 
                                     }
                                 
@@ -84,20 +87,30 @@ public constructor (gameOptionsForm: GameOptionsForm){
 
             super();
             var gameOptionsForm = gameOptionsForm
-this.gameOptionsForm= gameOptionsForm
+this.gameOptionsForm= gameOptionsForm;
+    
 
     var gameFeatureFactory: GameFeatureFactory = GameFeatureFactory.getInstance()!;
         
         
-
-GameFeatureItemStateListener.add(gameFeatureFactory!.ARTIFICIAL_INTELLEGENCE_PROCESSOR)
-GameFeatureItemStateListener.add(gameFeatureFactory!.COLLIDABLE_INTERFACE_LAYER_PROCESSOR)
-GameFeatureItemStateListener.add(gameFeatureFactory!.DAMAGE_FLOATERS)
-GameFeatureItemStateListener.add(gameFeatureFactory!.DROPPED_ITEMS)
-GameFeatureItemStateListener.add(gameFeatureFactory!.GAME_INPUT_LAYER_PROCESSOR)
-GameFeatureItemStateListener.add(gameFeatureFactory!.HEALTH_BARS)
-GameFeatureItemStateListener.add(gameFeatureFactory!.SOUND)
-GameFeatureItemStateListener.add(gameFeatureFactory!.TICKABLE_LAYER_PROCESSOR)
+;
+    
+GameFeatureItemStateListener.add(gameFeatureFactory!.ARTIFICIAL_INTELLEGENCE_PROCESSOR);
+    
+GameFeatureItemStateListener.add(gameFeatureFactory!.COLLIDABLE_INTERFACE_LAYER_PROCESSOR);
+    
+GameFeatureItemStateListener.add(gameFeatureFactory!.DAMAGE_FLOATERS);
+    
+GameFeatureItemStateListener.add(gameFeatureFactory!.DROPPED_ITEMS);
+    
+GameFeatureItemStateListener.add(gameFeatureFactory!.GAME_INPUT_LAYER_PROCESSOR);
+    
+GameFeatureItemStateListener.add(gameFeatureFactory!.HEALTH_BARS);
+    
+GameFeatureItemStateListener.add(gameFeatureFactory!.SOUND);
+    
+GameFeatureItemStateListener.add(gameFeatureFactory!.TICKABLE_LAYER_PROCESSOR);
+    
 }
 
 
@@ -109,14 +122,17 @@ var item = item
     var itemLabel: string = item.getLabel()!;
         
         
-
+;
+    
 logUtil!.put(StringMaker().
-                            append(CommonLabels.getInstance()!.ITEM_LABEL)!.append(itemLabel)!.toString(), this, "itemStateChanged")
+                            append(CommonLabels.getInstance()!.ITEM_LABEL)!.append(itemLabel)!.toString(), this, "itemStateChanged");
+    
 
                         if(item is GameConfigurationGauge)
                         
                                     {
-                                    GameConfigurationUtil.getInstance()!.change(this.gameOptionsForm, item as GameConfigurationGauge)
+                                    GameConfigurationUtil.getInstance()!.change(this.gameOptionsForm, item as GameConfigurationGauge);
+    
 
                                     }
                                 
@@ -128,31 +144,38 @@ logUtil!.put(StringMaker().
     var gameFeatureUtil: GameFeatureUtil = GameFeatureUtil.getInstance()!;
         
         
-
+;
+    
 
                         if(gameFeatureUtil!.isExclusive(itemLabel))
                         
                                     {
-                                    gameFeatureUtil!.updateExclusive(item as ChoiceGroup)
+                                    gameFeatureUtil!.updateExclusive(item as ChoiceGroup);
+    
 
                                     }
                                 
                         else {
-                            gameFeatureUtil!.updateMultiple(item as ChoiceGroup)
+                            gameFeatureUtil!.updateMultiple(item as ChoiceGroup);
+    
 
                         }
                             
 
                                     }
                                 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, "itemStateChanged", e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, "itemStateChanged", e);
+    
 }
 
 }

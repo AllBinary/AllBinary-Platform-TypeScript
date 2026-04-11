@@ -67,11 +67,13 @@ public constructor (transformInfoInterface: TransformInfoInterface)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("View Name: " +transformInfoInterface!.getName(), this, "NewTitleBodyValidationView()")
+                                    logUtil!.put("View Name: " +transformInfoInterface!.getName(), this, "NewTitleBodyValidationView()");
+    
 
                                     }
                                 
-this.titleBody= TitleBodyValidation()
+this.titleBody= TitleBodyValidation();
+    
 }
 
 
@@ -94,14 +96,16 @@ this.titleBody= TitleBodyValidation()
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("View Name: " +this.getTransformInfoInterface()!.getName(), this, commonStrings!.IS_VALID)
+                                    logUtil!.put("View Name: " +this.getTransformInfoInterface()!.getName(), this, commonStrings!.IS_VALID);
+    
 
                                     }
                                 
 
 
                             {
-                            CustomizerUtil.getInstance()!.insert(this.getTransformInfoInterface(), this.titleBody as DomNodeInterface)
+                            CustomizerUtil.getInstance()!.insert(this.getTransformInfoInterface(), this.titleBody as DomNodeInterface);
+    
 
                             }
                     
@@ -111,13 +115,16 @@ this.titleBody= TitleBodyValidation()
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return Boolean.TRUE;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("Failed to validate", this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put("Failed to validate", this, commonStrings!.IS_VALID, e);
+    
 
                                     }
                                 
@@ -139,21 +146,28 @@ this.titleBody= TitleBodyValidation()
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(this.titleBody!.validationInfo())
+;
+    
+stringBuffer!.append(this.titleBody!.validationInfo());
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e)
+                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e);
+    
 
                                     }
                                 
@@ -197,6 +211,8 @@ var document = document
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return views.ValidationOnlyTempUtil.getInstance()!.view(this);
+
+                        ;
     
 }
 

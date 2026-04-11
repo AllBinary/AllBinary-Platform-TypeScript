@@ -100,83 +100,106 @@ public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface)
 
     public setName(value: string){
 var value = value
-this.name= value
-this.getPropertiesHashMap()!.put(TransformInfoData.getInstance()!.NAME, this.name)
+this.name= value;
+    
+this.getPropertiesHashMap()!.put(TransformInfoData.getInstance()!.NAME, this.name);
+    
 }
 
 
     public setStoreName(value: string){
 var value = value
-this.storeName= value
-this.getPropertiesHashMap()!.put(StoreFrontData.getInstance()!.NAME, this.storeName)
+this.storeName= value;
+    
+this.getPropertiesHashMap()!.put(StoreFrontData.getInstance()!.NAME, this.storeName);
+    
 }
 
 
     public setObjectFile(value: string){
 var value = value
-this.objectFile= value
-this.getPropertiesHashMap()!.put(TransformInfoData.getInstance()!.OBJECTFILENAME, this.objectFile)
+this.objectFile= value;
+    
+this.getPropertiesHashMap()!.put(TransformInfoData.getInstance()!.OBJECTFILENAME, this.objectFile);
+    
 }
 
 
     public setObject(value: string){
 var value = value
-this.anyType= value
-this.getPropertiesHashMap()!.put(TransformInfoData.getInstance()!.OBJECT, this.anyType)
+this.anyType= value;
+    
+this.getPropertiesHashMap()!.put(TransformInfoData.getInstance()!.OBJECT, this.anyType);
+    
 }
 
 
     public setTemplateFile(value: string){
 var value = value
-this.templateFile= value
-this.getPropertiesHashMap()!.put(TransformInfoData.getInstance()!.TEMPLATEFILENAME, this.templateFile)
+this.templateFile= value;
+    
+this.getPropertiesHashMap()!.put(TransformInfoData.getInstance()!.TEMPLATEFILENAME, this.templateFile);
+    
 }
 
 
     public setTemplate(value: string){
 var value = value
-this.template= value
-this.getPropertiesHashMap()!.put(TransformInfoData.getInstance()!.TEMPLATE, this.template)
+this.template= value;
+    
+this.getPropertiesHashMap()!.put(TransformInfoData.getInstance()!.TEMPLATE, this.template);
+    
 }
 
 
     public setDataFile(value: string){
 var value = value
-this.dataFile= value
-this.getPropertiesHashMap()!.put(TransformInfoData.getInstance()!.DATAFILENAME, this.dataFile)
+this.dataFile= value;
+    
+this.getPropertiesHashMap()!.put(TransformInfoData.getInstance()!.DATAFILENAME, this.dataFile);
+    
 }
 
 
     public setData(value: string){
 var value = value
-this.data= value
-this.getPropertiesHashMap()!.put(TransformInfoData.getInstance()!.DATA, this.data)
+this.data= value;
+    
+this.getPropertiesHashMap()!.put(TransformInfoData.getInstance()!.DATA, this.data);
+    
 }
 
 
     public setObjectConfigFile(value: string){
 var value = value
-this.objectConfigFile= value
-this.getPropertiesHashMap()!.put(TransformInfoData.getInstance()!.OBJECTCONFIGFILENAME, this.objectConfigFile)
+this.objectConfigFile= value;
+    
+this.getPropertiesHashMap()!.put(TransformInfoData.getInstance()!.OBJECTCONFIGFILENAME, this.objectConfigFile);
+    
 }
 
 
     public setObjectConfig(value: string){
 var value = value
-this.objectConfig= value
-this.getPropertiesHashMap()!.put(TransformInfoData.getInstance()!.OBJECTCONFIG, this.objectConfig)
+this.objectConfig= value;
+    
+this.getPropertiesHashMap()!.put(TransformInfoData.getInstance()!.OBJECTCONFIG, this.objectConfig);
+    
 }
 
 
     public setType(value: string){
 var value = value
-this.type= value
-this.getPropertiesHashMap()!.put(OutputTypeData.getInstance()!.NAME, this.type)
+this.type= value;
+    
+this.getPropertiesHashMap()!.put(OutputTypeData.getInstance()!.NAME, this.type);
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    logUtil!.put("TransformInfoTag type set: " +this.type, this, "setType")
+                                    logUtil!.put("TransformInfoTag type set: " +this.type, this, "setType");
+    
 
                                     }
                                 
@@ -213,10 +236,15 @@ this.getPropertiesHashMap()!.put(OutputTypeData.getInstance()!.NAME, this.type)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.doStartTag();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
+    
 
 
 

@@ -54,7 +54,8 @@ public constructor (node: Node){
 
     public setMountable(mountable: boolean){
 var mountable = mountable
-this.mountable= mountable
+this.mountable= mountable;
+    
 }
 
 
@@ -70,7 +71,8 @@ this.mountable= mountable
 
     public setFrameable(frameable: boolean){
 var frameable = frameable
-this.frameable= frameable
+this.frameable= frameable;
+    
 }
 
 
@@ -86,7 +88,8 @@ this.frameable= frameable
 
     public setQuickFrameable(quickFrameable: boolean){
 var quickFrameable = quickFrameable
-this.quickFrameable= quickFrameable
+this.quickFrameable= quickFrameable;
+    
 }
 
 
@@ -102,7 +105,8 @@ this.quickFrameable= quickFrameable
 
     public setMountedLink(mountedLink: string){
 var mountedLink = mountedLink
-this.mountedLink= mountedLink
+this.mountedLink= mountedLink;
+    
 }
 
 

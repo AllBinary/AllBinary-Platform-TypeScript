@@ -18,7 +18,10 @@
 
 
 
-import { Vector } from "../../../java/util/Vector.js";
+            import Vector from "@ohos.util.Vector";
+        
+
+//import { Vector } from "../../../java/util/Vector.js";
 
     
 import { HttpServletRequest } from "../../../javax/servlet/http/HttpServletRequest.js";
@@ -106,18 +109,28 @@ public constructor (transformInfoInterface: TransformInfoInterface)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.request= this.getPageContext()!.getRequest() as HttpServletRequest
-this.userName= request.getParameter(UserData.USERNAME)
-this.preprocessing= request.getParameter(OrderHistoryData.PREPROCESSINGNAME)
-this.shipped= request.getParameter(OrderHistoryData.SHIPPEDNAME)
-this.partiallyShipped= request.getParameter(OrderHistoryData.PARTIALLYSHIPPEDNAME)
-this.processing= request.getParameter(OrderHistoryData.PROCESSINGNAME)
-this.cancelled= request.getParameter(OrderHistoryData.CANCELLEDNAME)
+this.request= this.getPageContext()!.getRequest();
+
+                         as HttpServletRequest;
+    
+this.userName= request.getParameter(UserData.USERNAME);
+    
+this.preprocessing= request.getParameter(OrderHistoryData.PREPROCESSINGNAME);
+    
+this.shipped= request.getParameter(OrderHistoryData.SHIPPEDNAME);
+    
+this.partiallyShipped= request.getParameter(OrderHistoryData.PARTIALLYSHIPPEDNAME);
+    
+this.processing= request.getParameter(OrderHistoryData.PROCESSINGNAME);
+    
+this.cancelled= request.getParameter(OrderHistoryData.CANCELLEDNAME);
+    
 }
 
 
     public addDomNodeInterfaces(){
-this.addDomNodeInterface(this as DomNodeInterface)
+this.addDomNodeInterface(this as DomNodeInterface);
+    
 }
 
 
@@ -126,20 +139,26 @@ this.addDomNodeInterface(this as DomNodeInterface)
     public view(): string{
 
         try {
-            this.addDomNodeInterfaces()
+            this.addDomNodeInterfaces();
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.view();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e);
+    
 
                                     }
                                 
@@ -160,22 +179,26 @@ var document = document
     var node: Node = document.createElement(OrderData.ORDERS)!;
         
         
-
+;
+    
 
     var orderHistoryEntity: OrderHistoryEntity = new OrderHistoryEntity();
         
         
-
+;
+    
 
     var orderReviewVector: Vector = orderHistoryEntity!.getOrders(this.userName)!;
         
         
-
+;
+    
 
     var size: number = orderReviewVector!.length!;
         
         
-
+;
+    
 
 
 
@@ -187,50 +210,66 @@ var document = document
 index < size; index++)
         {
 
-    var orderHistory: OrderHistory = orderReviewVector!.get(index) as OrderHistory;
-        
-        
+    var orderHistory: OrderHistory = orderReviewVector!.get(index);
 
+                         as OrderHistory;
+        
+        
+;
+    
 
     var orderHistoryNode: Node = orderHistory!.toXmlNode(document)!;
         
         
-
+;
+    
 
     var orderNode: Node = document.createElement(orderHistory!.getPaymentMethod())!;
         
         
-
-node.appendChild(orderHistory!.toXmlNode(document))
+;
+    
+node.appendChild(orderHistory!.toXmlNode(document));
+    
 }
 
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Attempt to View a users order history", this, "view")
+                                    logUtil!.put("Attempt to View a users order history", this, "view");
+    
 
                                     }
                                 
-node.appendChild(ModDomHelper.createNameValueNodes(document, OrderHistoryData.PREPROCESSINGNAME, OrderHistoryData.PREPROCESSING))
-node.appendChild(ModDomHelper.createNameValueNodes(document, OrderHistoryData.PROCESSINGNAME, OrderHistoryData.PROCESSING))
-node.appendChild(ModDomHelper.createNameValueNodes(document, OrderHistoryData.CANCELLEDNAME, OrderHistoryData.CANCELLED))
-node.appendChild(ModDomHelper.createNameValueNodes(document, OrderHistoryData.PARTIALLYSHIPPEDNAME, OrderHistoryData.PARTIALLYSHIPPED))
-node.appendChild(ModDomHelper.createNameValueNodes(document, OrderHistoryData.SHIPPEDNAME, OrderHistoryData.SHIPPED))
-node.appendChild(ModDomHelper.createNameValueNodes(document, GLOBALS2.VIEWNAME, GLOBALS2.VIEW))
+node.appendChild(ModDomHelper.createNameValueNodes(document, OrderHistoryData.PREPROCESSINGNAME, OrderHistoryData.PREPROCESSING));
+    
+node.appendChild(ModDomHelper.createNameValueNodes(document, OrderHistoryData.PROCESSINGNAME, OrderHistoryData.PROCESSING));
+    
+node.appendChild(ModDomHelper.createNameValueNodes(document, OrderHistoryData.CANCELLEDNAME, OrderHistoryData.CANCELLED));
+    
+node.appendChild(ModDomHelper.createNameValueNodes(document, OrderHistoryData.PARTIALLYSHIPPEDNAME, OrderHistoryData.PARTIALLYSHIPPED));
+    
+node.appendChild(ModDomHelper.createNameValueNodes(document, OrderHistoryData.SHIPPEDNAME, OrderHistoryData.SHIPPED));
+    
+node.appendChild(ModDomHelper.createNameValueNodes(document, GLOBALS2.VIEWNAME, GLOBALS2.VIEW));
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return node;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.XSLLOGGINGERROR))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.FAILURE, this, "toXmlNode", e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, "toXmlNode", e);
+    
 
                                     }
                                 
@@ -250,7 +289,8 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, GLOBALS2.VIEWNAME, 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Started", this, commonStrings!.IS_VALID)
+                                    logUtil!.put("Started", this, commonStrings!.IS_VALID);
+    
 
                                     }
                                 

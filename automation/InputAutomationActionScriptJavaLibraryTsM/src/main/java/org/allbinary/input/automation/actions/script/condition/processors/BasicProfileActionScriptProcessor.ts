@@ -68,22 +68,30 @@ public constructor (label: string)
 
     public actionPerformed(actionEvent: ActionEvent){
 var actionEvent = actionEvent
-super.actionPerformed(actionEvent)
+super.actionPerformed(actionEvent);
+    
 
                         if(actionEvent!.getActionCommand()!.compareTo(DELETE) == 0)
                         
                                     {
                                     
-                        if(this.getParent() is ProfileActionScriptConditionInterface)
+                        if(this.getParent();
+
+                         is ProfileActionScriptConditionInterface)
                         
                                     {
                                     
-    var profileActionScriptConditionInterface: ProfileActionScriptConditionInterface = this.getParent() as ProfileActionScriptConditionInterface;
-        
-        
+    var profileActionScriptConditionInterface: ProfileActionScriptConditionInterface = this.getParent();
 
-profileActionScriptConditionInterface!.removeProcessor(this as ProfileActionScriptProcessorInterface)
-JTreeInterfaceFactory.getInstance()!.getJTreeInterface()!.updateJTree()
+                         as ProfileActionScriptConditionInterface;
+        
+        
+;
+    
+profileActionScriptConditionInterface!.removeProcessor(this as ProfileActionScriptProcessorInterface);
+    
+JTreeInterfaceFactory.getInstance()!.getJTreeInterface()!.updateJTree();
+    
 
                                     }
                                 
@@ -101,7 +109,8 @@ var document = document
     var node: Node = document.createElement(GenericProfileActionScriptProcessorData.NAME)!;
         
         
-
+;
+    
 
 
 

@@ -18,13 +18,16 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { Calendar } from "../../../../../java/util/Calendar.js";
 
     
 import { HashMap } from "../../../../../java/util/HashMap.js";
 
     
-import { Vector } from "../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../java/util/Vector.js";
 
     
 import { HttpServletRequest } from "../../../../../javax/servlet/http/HttpServletRequest.js";
@@ -93,26 +96,45 @@ var request = request
     var quoteRequestData: QuoteRequestData = QuoteRequestData.getInstance()!;
         
         
-
+;
+    
 this.id= QuoteRequestIdGenerator().
-                            getNext()
-this.setUserName(userName)
-this.setProjectInfo(request.getParameter(quoteRequestData!.PROJECT_INFO) as String)
-this.setUserComments(request.getParameter(quoteRequestData!.CUSTOMER_COMMENTS) as String)
-this.setBudget(request.getParameter(quoteRequestData!.BUDGET) as String)
-this.setTimeFrame(request.getParameter(quoteRequestData!.TIMEFRAME) as String)
-this.setComments(request.getParameter(quoteRequestData!.COMMENTS) as String)
+                            getNext();
+    
+this.setUserName(userName);
+    
+this.setProjectInfo(request.getParameter(quoteRequestData!.PROJECT_INFO);
+
+                         as String);
+    
+this.setUserComments(request.getParameter(quoteRequestData!.CUSTOMER_COMMENTS);
+
+                         as String);
+    
+this.setBudget(request.getParameter(quoteRequestData!.BUDGET);
+
+                         as String);
+    
+this.setTimeFrame(request.getParameter(quoteRequestData!.TIMEFRAME);
+
+                         as String);
+    
+this.setComments(request.getParameter(quoteRequestData!.COMMENTS);
+
+                         as String);
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPER))
                         
                                     {
-                                    logUtil!.put("Created with: " +this.toHashMap(), this, this.commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put("Created with: " +this.toHashMap(), this, this.commonStrings!.CONSTRUCTOR);
+    
 
                                     }
                                 
 }
 
-public constructor (hashMap: HashMap<Any, Any>){
+public constructor (hashMap: HashMap<any, any>){
 
             super();
             var hashMap = hashMap
@@ -120,19 +142,42 @@ public constructor (hashMap: HashMap<Any, Any>){
     var quoteRequestData: QuoteRequestData = QuoteRequestData.getInstance()!;
         
         
+;
+    
+this.id= hashMap!.get(quoteRequestData!.ID);
 
-this.id= hashMap!.get(quoteRequestData!.ID) as String
-this.setUserName(hashMap!.get(UserData.USERNAME) as String)
-this.setProjectInfo(hashMap!.get(quoteRequestData!.PROJECT_INFO) as String)
-this.setUserComments(hashMap!.get(quoteRequestData!.CUSTOMER_COMMENTS) as String)
-this.setBudget(hashMap!.get(quoteRequestData!.BUDGET) as String)
-this.setTimeFrame(hashMap!.get(quoteRequestData!.TIMEFRAME) as String)
-this.setComments(hashMap!.get(quoteRequestData!.COMMENTS) as String)
+                         as String;
+    
+this.setUserName(hashMap!.get(UserData.USERNAME);
+
+                         as String);
+    
+this.setProjectInfo(hashMap!.get(quoteRequestData!.PROJECT_INFO);
+
+                         as String);
+    
+this.setUserComments(hashMap!.get(quoteRequestData!.CUSTOMER_COMMENTS);
+
+                         as String);
+    
+this.setBudget(hashMap!.get(quoteRequestData!.BUDGET);
+
+                         as String);
+    
+this.setTimeFrame(hashMap!.get(quoteRequestData!.TIMEFRAME);
+
+                         as String);
+    
+this.setComments(hashMap!.get(quoteRequestData!.COMMENTS);
+
+                         as String);
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPER))
                         
                                     {
-                                    logUtil!.put("Created with: " +this.toHashMap(), this, this.commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put("Created with: " +this.toHashMap(), this, this.commonStrings!.CONSTRUCTOR);
+    
 
                                     }
                                 
@@ -146,14 +191,16 @@ this.setComments(hashMap!.get(quoteRequestData!.COMMENTS) as String)
     var valid: Boolean = Boolean.TRUE;
         
         
-
+;
+    
 
                         if(userName == 
                                     null
                                  || userName!.length < 4 || userName!.length > 250)
                         
                                     {
-                                    valid= Boolean.FALSE
+                                    valid= Boolean.FALSE;
+    
 
                                     }
                                 
@@ -163,7 +210,8 @@ this.setComments(hashMap!.get(quoteRequestData!.COMMENTS) as String)
                                  || this.projectInfo!.length < 0 || this.projectInfo!.length > AbSqlData.MAXBLOB)
                         
                                     {
-                                    valid= Boolean.FALSE
+                                    valid= Boolean.FALSE;
+    
 
                                     }
                                 
@@ -173,7 +221,8 @@ this.setComments(hashMap!.get(quoteRequestData!.COMMENTS) as String)
                                  || this.userComments!.length < 0 || this.userComments!.length > AbSqlData.MAXBLOB)
                         
                                     {
-                                    valid= Boolean.FALSE
+                                    valid= Boolean.FALSE;
+    
 
                                     }
                                 
@@ -183,7 +232,8 @@ this.setComments(hashMap!.get(quoteRequestData!.COMMENTS) as String)
                                  || this.budget.length < 0 || this.budget.length > AbSqlData.MAXBLOB)
                         
                                     {
-                                    valid= Boolean.FALSE
+                                    valid= Boolean.FALSE;
+    
 
                                     }
                                 
@@ -193,7 +243,8 @@ this.setComments(hashMap!.get(quoteRequestData!.COMMENTS) as String)
                                  || this.timeFrame!.length < 0 || this.timeFrame!.length > AbSqlData.MAXBLOB)
                         
                                     {
-                                    valid= Boolean.FALSE
+                                    valid= Boolean.FALSE;
+    
 
                                     }
                                 
@@ -203,7 +254,8 @@ this.setComments(hashMap!.get(quoteRequestData!.COMMENTS) as String)
                                  || this.comments.length < 0 || this.comments.length > AbSqlData.MAXBLOB)
                         
                                     {
-                                    valid= Boolean.FALSE
+                                    valid= Boolean.FALSE;
+    
 
                                     }
                                 
@@ -213,13 +265,16 @@ this.setComments(hashMap!.get(quoteRequestData!.COMMENTS) as String)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return valid;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put("Failed to validate form", this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put("Failed to validate form", this, commonStrings!.IS_VALID, e);
+    
 
                                     }
                                 
@@ -241,14 +296,16 @@ this.setComments(hashMap!.get(quoteRequestData!.COMMENTS) as String)
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
                         if(userName == 
                                     null
                                  || userName!.length < 4 || userName!.length > 250)
                         
                                     {
-                                    stringBuffer!.append("Please enter a User Name with more than 4 characters.<br>")
+                                    stringBuffer!.append("Please enter a User Name with more than 4 characters.<br>");
+    
 
                                     }
                                 
@@ -258,7 +315,8 @@ this.setComments(hashMap!.get(quoteRequestData!.COMMENTS) as String)
                                  || this.projectInfo!.length < 0 || this.projectInfo!.length > AbSqlData.MAXBLOB)
                         
                                     {
-                                    stringBuffer!.append("Please enter Project Info with less than " +AbSqlData.MAXBLOB +" characters.<br>")
+                                    stringBuffer!.append("Please enter Project Info with less than " +AbSqlData.MAXBLOB +" characters.<br>");
+    
 
                                     }
                                 
@@ -268,7 +326,8 @@ this.setComments(hashMap!.get(quoteRequestData!.COMMENTS) as String)
                                  || this.userComments!.length < 0 || this.userComments!.length > AbSqlData.MAXBLOB)
                         
                                     {
-                                    stringBuffer!.append("Please enter User Comments with less than " +AbSqlData.MAXBLOB +" characters.<br>")
+                                    stringBuffer!.append("Please enter User Comments with less than " +AbSqlData.MAXBLOB +" characters.<br>");
+    
 
                                     }
                                 
@@ -278,7 +337,8 @@ this.setComments(hashMap!.get(quoteRequestData!.COMMENTS) as String)
                                  || this.budget.length < 0 || this.budget.length > AbSqlData.MAXBLOB)
                         
                                     {
-                                    stringBuffer!.append("Please enter Budget with less than " +AbSqlData.MAXBLOB +" characters.<br>")
+                                    stringBuffer!.append("Please enter Budget with less than " +AbSqlData.MAXBLOB +" characters.<br>");
+    
 
                                     }
                                 
@@ -288,7 +348,8 @@ this.setComments(hashMap!.get(quoteRequestData!.COMMENTS) as String)
                                  || this.timeFrame!.length < 0 || this.timeFrame!.length > AbSqlData.MAXBLOB)
                         
                                     {
-                                    stringBuffer!.append("Please enter time frame with less than " +AbSqlData.MAXBLOB +" characters.<br>")
+                                    stringBuffer!.append("Please enter time frame with less than " +AbSqlData.MAXBLOB +" characters.<br>");
+    
 
                                     }
                                 
@@ -298,7 +359,8 @@ this.setComments(hashMap!.get(quoteRequestData!.COMMENTS) as String)
                                  || this.comments.length < 0 || this.comments.length > AbSqlData.MAXBLOB)
                         
                                     {
-                                    stringBuffer!.append("Please enter comments with less than " +AbSqlData.MAXBLOB +" characters.<br>")
+                                    stringBuffer!.append("Please enter comments with less than " +AbSqlData.MAXBLOB +" characters.<br>");
+    
 
                                     }
                                 
@@ -307,14 +369,19 @@ this.setComments(hashMap!.get(quoteRequestData!.COMMENTS) as String)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e)
+                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e);
+    
 
                                     }
                                 
@@ -334,28 +401,39 @@ this.setComments(hashMap!.get(quoteRequestData!.COMMENTS) as String)
     var values: Vector = new Vector();
         
         
-
-values.add(id)
-values.add(userName)
-values.add(this.projectInfo)
-values.add(this.userComments)
-values.add(this.budget)
-values.add(this.timeFrame)
-values.add(this.comments)
+;
+    
+values.add(id);
+    
+values.add(userName);
+    
+values.add(this.projectInfo);
+    
+values.add(this.userComments);
+    
+values.add(this.budget);
+    
+values.add(this.timeFrame);
+    
+values.add(this.comments);
+    
 
     var calendar: Calendar = Calendar.getInstance()!;
         
         
-
+;
+    
 
     var time: string = new calendar.getTimeInMillis() as Long.
-                            toString().toCharArray().concatToString()
-                                ;
+                            toString();
         
         
-
-values.add(time)
-values.add(time)
+;
+    
+values.add(time);
+    
+values.add(time);
+    
 
 
 
@@ -365,36 +443,46 @@ values.add(time)
 }
 
 
-    public toHashMap(): HashMap<Any, Any>{
+    public toHashMap(): HashMap<any, any>{
 
     var quoteRequestData: QuoteRequestData = QuoteRequestData.getInstance()!;
         
         
+;
+    
 
-
-    var values: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var values: HashMap<any, any> = new HashMap<any, any>();
         
         
-
-values.put(UserData.USERNAME, userName)
-values.put(quoteRequestData!.PROJECT_INFO, this.projectInfo)
-values.put(quoteRequestData!.CUSTOMER_COMMENTS, this.userComments)
-values.put(quoteRequestData!.BUDGET, this.budget)
-values.put(quoteRequestData!.TIMEFRAME, this.timeFrame)
-values.put(quoteRequestData!.COMMENTS, this.comments)
+;
+    
+values.put(UserData.USERNAME, userName);
+    
+values.put(quoteRequestData!.PROJECT_INFO, this.projectInfo);
+    
+values.put(quoteRequestData!.CUSTOMER_COMMENTS, this.userComments);
+    
+values.put(quoteRequestData!.BUDGET, this.budget);
+    
+values.put(quoteRequestData!.TIMEFRAME, this.timeFrame);
+    
+values.put(quoteRequestData!.COMMENTS, this.comments);
+    
 
     var calendar: Calendar = Calendar.getInstance()!;
         
         
-
+;
+    
 
     var time: string = new calendar.getTimeInMillis() as Long.
-                            toString().toCharArray().concatToString()
-                                ;
+                            toString();
         
         
-
-values.put(EntryData.getInstance()!.LASTMODIFIED, time)
+;
+    
+values.put(EntryData.getInstance()!.LASTMODIFIED, time);
+    
 
 
 
@@ -406,42 +494,49 @@ values.put(EntryData.getInstance()!.LASTMODIFIED, time)
 
     public setUserName(value: string){
 var value = value
-this.userName= value
+this.userName= value;
+    
 }
 
 
     public setProjectInfo(value: string){
 var value = value
-this.projectInfo= value
+this.projectInfo= value;
+    
 }
 
 
     public setUserComments(value: string){
 var value = value
-this.userComments= value
+this.userComments= value;
+    
 }
 
 
     public setBudget(value: string){
 var value = value
-this.budget= value
+this.budget= value;
+    
 }
 
 
     public setTimeFrame(value: string){
 var value = value
-this.timeFrame= value
+this.timeFrame= value;
+    
 }
 
 
     public setComments(value: string){
 var value = value
-this.comments= value
+this.comments= value;
+    
 
     var stringUtil: StringUtil = StringUtil.getInstance()!;
         
         
-
+;
+    
 
                         if(this.comments == 
                                     null

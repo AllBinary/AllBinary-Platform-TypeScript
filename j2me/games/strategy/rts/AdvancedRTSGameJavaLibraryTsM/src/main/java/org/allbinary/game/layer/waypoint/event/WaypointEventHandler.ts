@@ -47,8 +47,10 @@ var eventListenerInterface = eventListenerInterface
     var waypointEventListenerInterface: WaypointEventListenerInterface = (eventListenerInterface as WaypointEventListenerInterface);
         
         
-
-waypointEventListenerInterface!.onWaypointEvent(eventObject as RTSLayerEvent)
+;
+    
+waypointEventListenerInterface!.onWaypointEvent(eventObject as RTSLayerEvent);
+    
 }
 
 

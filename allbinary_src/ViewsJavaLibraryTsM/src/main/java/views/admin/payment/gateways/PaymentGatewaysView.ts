@@ -18,10 +18,13 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { HashMap } from "../../../../java/util/HashMap.js";
 
     
-import { Vector } from "../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../java/util/Vector.js";
 
     
 import { EntryData } from "../../../../org/allbinary/business/entry/EntryData.js";
@@ -81,7 +84,8 @@ var gatewayVector = gatewayVector
 
                             //For kotlin this is before the body of the constructor.
                     
-this.paymentGatewayVector= gatewayVector
+this.paymentGatewayVector= gatewayVector;
+    
 }
 
 
@@ -95,17 +99,20 @@ var document = document
     var storeName: string = this.getTransformInfoInterface()!.getStoreName()!;
         
         
-
+;
+    
 
     var paymentGatewaysNode: Node = document.createElement(PaymentGatewaysData.NAME)!;
         
         
-
+;
+    
 
     var size: number = this.paymentGatewayVector!.length!;
         
         
-
+;
+    
 
 
 
@@ -117,22 +124,29 @@ var document = document
 index < size; index++)
         {
 
-    var paymentType: BasicPaymentType = this.paymentGatewayVector!.get(index) as BasicPaymentType;
-        
-        
+    var paymentType: BasicPaymentType = this.paymentGatewayVector!.get(index);
 
-
-    var hashMap: HashMap<Any, Any> = paymentType!.toHashMap()!;
+                         as BasicPaymentType;
         
         
+;
+    
 
-hashMap!.put(EntryData.getInstance()!.DEFAULT, PaymentTypeUtil.getInstance()!.getDefault(storeName)!.getBasicPaymentType()!.getName())
+    var hashMap: HashMap<any, any> = paymentType!.toHashMap()!;
+        
+        
+;
+    
+hashMap!.put(EntryData.getInstance()!.DEFAULT, PaymentTypeUtil.getInstance()!.getDefault(storeName)!.getBasicPaymentType()!.getName());
+    
 
     var paymentGatewayNode: Node = ModDomHelper.createNodeWithValueNodes(document, PaymentGatewayData.NAME.toString(), hashMap)!;
         
         
-
-paymentGatewaysNode!.appendChild(paymentGatewayNode)
+;
+    
+paymentGatewaysNode!.appendChild(paymentGatewayNode);
+    
 }
 
 
@@ -141,13 +155,16 @@ paymentGatewaysNode!.appendChild(paymentGatewayNode)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return paymentGatewaysNode;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.XSLLOGGINGERROR))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.FAILURE, this, "toXmlNode", e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, "toXmlNode", e);
+    
 
                                     }
                                 
@@ -161,32 +178,40 @@ paymentGatewaysNode!.appendChild(paymentGatewayNode)
 
 
     public addDomNodeInterfaces(){
-this.addDomNodeInterface(this as DomNodeInterface)
+this.addDomNodeInterface(this as DomNodeInterface);
+    
 }
 
 
     public view(): string{
 
         try {
-            this.addDomNodeInterfaces()
+            this.addDomNodeInterfaces();
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.view();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to view payment gateways";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e);
+    
 
                                     }
                                 

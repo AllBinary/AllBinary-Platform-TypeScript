@@ -55,7 +55,8 @@ protected constructor (rectangle: Rectangle){
 
             super();
             var rectangle = rectangle
-this.rectangle= rectangle
+this.rectangle= rectangle;
+    
 }
 
 
@@ -76,13 +77,15 @@ var boundsVisitorInterface = boundsVisitorInterface
 
     public onEvent(eventObject: AllBinaryEventObject){
 var eventObject = eventObject
-ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
+ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
+    
 }
 
 
     public onBoundsChangeEvent(boundsChangeEvent: BoundsChangeEvent){
 var boundsChangeEvent = boundsChangeEvent
-this.rectangle= boundsChangeEvent!.getRectangle()
+this.rectangle= boundsChangeEvent!.getRectangle();
+    
 }
 
 

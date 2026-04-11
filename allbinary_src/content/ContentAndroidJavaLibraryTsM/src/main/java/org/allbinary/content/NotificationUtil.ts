@@ -72,7 +72,9 @@ export class NotificationUtil
         
         
 
-    private notificationManager: NotificationManager = ResourceUtil.getInstance()!.getContext()!.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager;
+    private notificationManager: NotificationManager = ResourceUtil.getInstance()!.getContext()!.getSystemService(Context.NOTIFICATION_SERVICE);
+
+                         as NotificationManager;
         
         
 
@@ -84,17 +86,20 @@ private constructor (){
     var SDK_VERSION: number = AndroidInfoFactory.getInstance()!.getVersion()!;
         
         
-
+;
+    
 
                         if(SDK_VERSION > 22)
                         
                                     {
-                                    notificationBuilder= NotificationBuilderAPI23()
+                                    notificationBuilder= NotificationBuilderAPI23();
+    
 
                                     }
                                 
                         else {
-                            notificationBuilder= NotificationBuilder.NULL_NOTIFICATION_BUILDER
+                            notificationBuilder= NotificationBuilder.NULL_NOTIFICATION_BUILDER;
+    
 
                         }
                             
@@ -109,27 +114,32 @@ private constructor (){
     var context: Context = ResourceUtil.getInstance()!.getContext()!;
         
         
-
+;
+    
 
     var intent: Intent = CommandUriAction.getInstance()!.getIntent(command)!;
         
         
-
+;
+    
 
     var integer: Integer = ResourceUtil.getInstance()!.getResourceId(resource)!;
         
         
-
+;
+    
 
     var FLAG_IMMUTABLE: number = 1 shl 26;
         
         
-
+;
+    
 
     var SDK_VERSION: number = AndroidInfoFactory.getInstance()!.getVersion()!;
         
         
-
+;
+    
 
     var pendingIntent: PendingIntent = PendingIntent.getActivity(context, 0, intent, SDK_VERSION > 22
                         ?       
@@ -141,7 +151,8 @@ private constructor (){
     )!;
         
         
-
+;
+    
 
                         if(notificationBuilder == 
                                     null
@@ -152,8 +163,10 @@ private constructor (){
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.NOT_IMPLEMENTED)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.NOT_IMPLEMENTED);
+    
 
 
 
@@ -163,7 +176,8 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.NOT_IMPLEMENTED)
 
                                     }
                                 
-notificationBuilder!.build(context, command, message, integer, pendingIntent)
+notificationBuilder!.build(context, command, message, integer, pendingIntent);
+    
 }
 
 

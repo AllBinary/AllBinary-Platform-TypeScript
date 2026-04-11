@@ -27,7 +27,7 @@ interface LayerPlacementInterfaceBasicArrayListFactoryInterface {
 
     getInstance(): BasicArrayList
 
-    getOnDemandResources(): IntArray
+    getOnDemandResources(): number[]
 
 }
                 

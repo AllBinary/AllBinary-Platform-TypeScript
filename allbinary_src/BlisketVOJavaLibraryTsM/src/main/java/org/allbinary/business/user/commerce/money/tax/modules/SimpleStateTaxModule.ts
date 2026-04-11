@@ -118,25 +118,31 @@ public constructor (){
     public getTaxRate(streetAddress: StreetAddress, storeFrontInterface: StoreFrontInterface): Float{
 var streetAddress = streetAddress
 var storeFrontInterface = storeFrontInterface
-this.streetAddress= streetAddress
-this.storeFrontInterface= storeFrontInterface
+this.streetAddress= streetAddress;
+    
+this.storeFrontInterface= storeFrontInterface;
+    
 
     var fileAbPath: AbPath = new AbPath(URLGLOBALS.getMainPath() +FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH +this.storeFrontInterface!.getName() +this.STATETAXPATH, this.STATETAXFILE);
         
         
-
+;
+    
 
     var data: string = CryptFileReader(TransformInfoObjectConfigData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoObjectConfigData.getInstance()!.ENCRYPTED_EXTENSION).
                             get(fileAbPath)!;
         
         
-
-this.document= DomDocumentHelper.create(data)
+;
+    
+this.document= DomDocumentHelper.create(data);
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAX))
                         
                                     {
-                                    logUtil!.put("Tax Doc: " +DomDocumentHelper.toString(document), this, "getTaxRate")
+                                    logUtil!.put("Tax Doc: " +DomDocumentHelper.toString(document), this, "getTaxRate");
+    
 
                                     }
                                 
@@ -144,18 +150,22 @@ this.document= DomDocumentHelper.create(data)
     var state: string = this.streetAddress!.getState()!;
         
         
-
+;
+    
 
     var country: string = this.streetAddress!.getCountry()!;
         
         
-
-state= state.uppercase()
+;
+    
+state= state.uppercase();
+    
 
     var nodeList: NodeList = document.getElementsByTagName(TaxData.NAME)!;
         
         
-
+;
+    
 
 
 
@@ -170,29 +180,38 @@ index < nodeList!.getLength(); index++)
     var node: Node = nodeList!.item(index)!;
         
         
-
+;
+    
 
     var taxNodeChildren: NodeList = node.getChildNodes()!;
         
         
-
+;
+    
 
     var streetAddressNode: Node = DomSearchHelper.getNode(StreetAddressData.NAME, taxNodeChildren)!;
         
         
-
+;
+    
 
     var taxableStreetAddress: StreetAddress = new StreetAddress(streetAddressNode);
         
         
-
+;
+    
 
     var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
         
         
+;
+    
 
+                        if(!stringValidationUtil!.isEmpty(country);
 
-                        if(!stringValidationUtil!.isEmpty(country) && !stringValidationUtil!.isEmpty(taxableStreetAddress!.getCountry()) && country.compareTo(taxableStreetAddress!.getCountry()) == 0)
+                         && !stringValidationUtil!.isEmpty(taxableStreetAddress!.getCountry());
+
+                         && country.compareTo(taxableStreetAddress!.getCountry()) == 0)
                         
                                     {
                                     
@@ -207,18 +226,21 @@ index < nodeList!.getLength(); index++)
     var rateNode: Node = DomSearchHelper.getNode(TaxData.RATE, taxNodeChildren)!;
         
         
-
+;
+    
 
     var taxRate: string = DomNodeHelper.getTextNodeValue(rateNode)!;
         
         
-
+;
+    
 
     var taxRateFloat: Float = new Float(Float(taxRate).
                             toFloat() *.01);
         
         
-
+;
+    
 
 
 
@@ -247,25 +269,31 @@ var streetAddress = streetAddress
 var storeFrontInterface = storeFrontInterface
 
         try {
-            this.streetAddress= streetAddress
-this.storeFrontInterface= storeFrontInterface
+            this.streetAddress= streetAddress;
+    
+this.storeFrontInterface= storeFrontInterface;
+    
 
     var fileAbPath: AbPath = new AbPath(URLGLOBALS.getMainPath() +FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH +this.storeFrontInterface!.getName() +this.STATETAXPATH, this.STATETAXFILE);
         
         
-
+;
+    
 
     var data: string = CryptFileReader(TransformInfoObjectConfigData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoObjectConfigData.getInstance()!.ENCRYPTED_EXTENSION).
                             get(fileAbPath)!;
         
         
-
-this.document= DomDocumentHelper.create(data)
+;
+    
+this.document= DomDocumentHelper.create(data);
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAX))
                         
                                     {
-                                    logUtil!.put("Tax Doc: " +DomDocumentHelper.toString(document), this, commonStrings!.IS_VALID)
+                                    logUtil!.put("Tax Doc: " +DomDocumentHelper.toString(document), this, commonStrings!.IS_VALID);
+    
 
                                     }
                                 
@@ -273,17 +301,20 @@ this.document= DomDocumentHelper.create(data)
     var country: string = this.streetAddress!.getCountry()!;
         
         
-
+;
+    
 
     var rootNode: Node = this.document.getElementsByTagName(TransformInfoObjectConfigData.getInstance()!.NAME)!.item(0)!;
         
         
-
+;
+    
 
     var nodeList: NodeList = document.getElementsByTagName(TaxData.NAME)!;
         
         
-
+;
+    
 
 
 
@@ -298,17 +329,20 @@ index < nodeList!.getLength(); index++)
     var node: Node = nodeList!.item(index)!;
         
         
-
+;
+    
 
     var taxNodeChildren: NodeList = node.getChildNodes()!;
         
         
-
+;
+    
 
     var streetAddressNode: Node = DomSearchHelper.getNode(StreetAddressData.NAME, taxNodeChildren)!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAX))
                         
@@ -317,14 +351,22 @@ index < nodeList!.getLength(); index++)
     var stringBuffer: StringBuilder = new StringBuilder();
         
         
-
-stringBuffer!.append("StreetAddress Node: ")
-stringBuffer!.append(streetAddressNode!.getNodeName())
-stringBuffer!.append(" Value: ")
-stringBuffer!.append(streetAddressNode!.getNodeValue())
-stringBuffer!.append(" Number Of Children: ")
-stringBuffer!.append(streetAddressNode!.getChildNodes()!.getLength())
-logUtil!.put(stringBuffer!.toString(), this, commonStrings!.IS_VALID)
+;
+    
+stringBuffer!.append("StreetAddress Node: ");
+    
+stringBuffer!.append(streetAddressNode!.getNodeName());
+    
+stringBuffer!.append(" Value: ");
+    
+stringBuffer!.append(streetAddressNode!.getNodeValue());
+    
+stringBuffer!.append(" Number Of Children: ");
+    
+stringBuffer!.append(streetAddressNode!.getChildNodes()!.getLength());
+    
+logUtil!.put(stringBuffer!.toString(), this, commonStrings!.IS_VALID);
+    
 
                                     }
                                 
@@ -332,14 +374,20 @@ logUtil!.put(stringBuffer!.toString(), this, commonStrings!.IS_VALID)
     var taxableStreetAddress: StreetAddress = new StreetAddress(streetAddressNode);
         
         
-
+;
+    
 
     var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
         
         
+;
+    
 
+                        if(!stringValidationUtil!.isEmpty(country);
 
-                        if(!stringValidationUtil!.isEmpty(country) && !stringValidationUtil!.isEmpty(taxableStreetAddress!.getCountry()) && taxableStreetAddress!.getCountry()!.compareTo(ALL) == 0)
+                         && !stringValidationUtil!.isEmpty(taxableStreetAddress!.getCountry());
+
+                         && taxableStreetAddress!.getCountry()!.compareTo(ALL) == 0)
                         
                                     {
                                     
@@ -352,14 +400,19 @@ logUtil!.put(stringBuffer!.toString(), this, commonStrings!.IS_VALID)
                                     }
                                 
 
-                        if(!stringValidationUtil!.isEmpty(country) && !stringValidationUtil!.isEmpty(taxableStreetAddress!.getCountry()) && country.compareTo(taxableStreetAddress!.getCountry()) == 0)
+                        if(!stringValidationUtil!.isEmpty(country);
+
+                         && !stringValidationUtil!.isEmpty(taxableStreetAddress!.getCountry());
+
+                         && country.compareTo(taxableStreetAddress!.getCountry()) == 0)
                         
                                     {
                                     
     var state: string = this.streetAddress!.getState()!;
         
         
-
+;
+    
 
                         if(state != 
                                     null
@@ -386,13 +439,16 @@ logUtil!.put(stringBuffer!.toString(), this, commonStrings!.IS_VALID)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return Boolean.FALSE;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("Failed to validate", this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put("Failed to validate", this, commonStrings!.IS_VALID, e);
+    
 
                                     }
                                 

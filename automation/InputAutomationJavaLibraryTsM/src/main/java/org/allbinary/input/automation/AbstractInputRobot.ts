@@ -42,7 +42,8 @@ public constructor (helpSet: HelpSet){
 
             super();
             var helpSet = helpSet
-this.setHelpSet(helpSet)
+this.setHelpSet(helpSet);
+    
 }
 
 
@@ -58,8 +59,10 @@ this.setHelpSet(helpSet)
 
     public mouseMove(point: Point){
 var point = point
-this.mouseMove(point.x, point.y)
-logUtil!.put("Moved Mouse To: x: " +point.x +" y: " +point.y, this, "moveMouse")
+this.mouseMove(point.x, point.y);
+    
+logUtil!.put("Moved Mouse To: x: " +point.x +" y: " +point.y, this, "moveMouse");
+    
 }
 
 
@@ -73,9 +76,12 @@ var y = y
     var point: Point = PointHelper.getCenterPoint(rectangle)!;
         
         
-
-this.mouseMove(point.x +x, point.y +y)
-logUtil!.put("Moved Mouse To: x: " +point.x +" y: " +point.y +" in the middle of: " +rectangle, this, "moveMouseToTarget")
+;
+    
+this.mouseMove(point.x +x, point.y +y);
+    
+logUtil!.put("Moved Mouse To: x: " +point.x +" y: " +point.y +" in the middle of: " +rectangle, this, "moveMouseToTarget");
+    
 }
 
 
@@ -83,7 +89,8 @@ logUtil!.put("Moved Mouse To: x: " +point.x +" y: " +point.y +" in the middle of
             
     public mouseMoveToTarget(rectangle: Rectangle){
 var rectangle = rectangle
-this.mouseMoveToTarget(rectangle, 0, 0)
+this.mouseMoveToTarget(rectangle, 0, 0);
+    
 }
 
 
@@ -99,7 +106,8 @@ var y = y
 
     setHelpSet(helpSet: HelpSet){
 var helpSet = helpSet
-this.helpSet= helpSet
+this.helpSet= helpSet;
+    
 }
 
 

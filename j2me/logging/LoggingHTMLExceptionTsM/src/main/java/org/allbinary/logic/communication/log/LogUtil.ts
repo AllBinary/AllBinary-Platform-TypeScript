@@ -78,23 +78,28 @@ private constructor (){
     var specialMessage: string = log.getSpecialMessage()!;
         
         
-
+;
+    
 
     var anyType: any = {} = log.getObject()!;
         
         
-
+;
+    
 
     var functionName: string = log.getFunctionName()!;
         
         
-
+;
+    
 
     var exception: any = {} = log.getThrowable()!;
         
         
-
-put(specialMessage, anyType, functionName, exception)
+;
+    
+put(specialMessage, anyType, functionName, exception);
+    
 }
 
 
@@ -106,14 +111,16 @@ put(specialMessage, anyType, functionName, exception)
     var className: string = PreLogUtil.getClassName(anyType)!;
         
         
-
+;
+    
 
                         if(className == 
                                     null
                                 )
                         
                                     {
-                                    className= CommonStrings.getInstance()!.EMPTY
+                                    className= CommonStrings.getInstance()!.EMPTY;
+    
 
                                     }
                                 
@@ -121,8 +128,10 @@ put(specialMessage, anyType, functionName, exception)
     var message: string = logFormatUtil!.get(className, functionName, specialMessage)!;
         
         
-
-PlayN.log()!.debug(LOG_SUCCESS +message)
+;
+    
+PlayN.log()!.debug(LOG_SUCCESS +message);
+    
 }
 
 
@@ -135,14 +144,16 @@ PlayN.log()!.debug(LOG_SUCCESS +message)
     var className: string = PreLogUtil.getClassName(anyType)!;
         
         
-
+;
+    
 
                         if(className == 
                                     null
                                 )
                         
                                     {
-                                    className= CommonStrings.getInstance()!.EMPTY
+                                    className= CommonStrings.getInstance()!.EMPTY;
+    
 
                                     }
                                 
@@ -150,19 +161,22 @@ PlayN.log()!.debug(LOG_SUCCESS +message)
     var message: string = logFormatUtil!.get(className, functionName, specialMessage, exception)!;
         
         
-
+;
+    
 
                         if(exception != 
                                     null
                                 )
                         
                                     {
-                                    PlayN.log()!.error(LOG_SUCCESS +message, exception as Error)
+                                    PlayN.log()!.error(LOG_SUCCESS +message, exception as Error);
+    
 
                                     }
                                 
                         else {
-                            PlayN.log()!.debug(LOG_SUCCESS +message)
+                            PlayN.log()!.debug(LOG_SUCCESS +message);
+    
 
                         }
                             

@@ -38,8 +38,10 @@ protected constructor (){
     public init(allbinaryLayerFactoryInterface: AllBinaryLayerFactoryInterface, total: number){
 var allbinaryLayerFactoryInterface = allbinaryLayerFactoryInterface
 var total = total
-this.circularIndexUtil= CircularIndexUtil.getInstance(total)
-OBJECT_ARRAY= new Array(total)
+this.circularIndexUtil= CircularIndexUtil.getInstance(total);
+    
+OBJECT_ARRAY= new Array(total);
+    
 
 
 
@@ -50,7 +52,8 @@ OBJECT_ARRAY= new Array(total)
         
 localIndex < total; localIndex++)
         {
-OBJECT_ARRAY[localIndex]= allbinaryLayerFactoryInterface!.getInstance()
+OBJECT_ARRAY[localIndex]= allbinaryLayerFactoryInterface!.getInstance();
+    
 }
 
 }

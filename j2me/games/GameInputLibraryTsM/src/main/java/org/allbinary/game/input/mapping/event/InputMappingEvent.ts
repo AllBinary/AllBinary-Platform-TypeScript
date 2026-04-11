@@ -46,7 +46,8 @@ public constructor (anyType: any = {})
 
     public setInputToGameKeyMapping(inputToGameKeyMapping: InputToGameKeyMapping){
 var inputToGameKeyMapping = inputToGameKeyMapping
-this.inputToGameKeyMapping= inputToGameKeyMapping
+this.inputToGameKeyMapping= inputToGameKeyMapping;
+    
 }
 
 

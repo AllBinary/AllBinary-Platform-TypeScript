@@ -18,10 +18,13 @@
 
 
 
+            import Hashtable from "@ohos.util.HashMap";
+        
 import { Enumeration } from "../../../../java/util/Enumeration.js";
 
     
-import { Hashtable } from "../../../../java/util/Hashtable.js";
+
+//import { Hashtable } from "../../../../java/util/Hashtable.js";
 
     
 import { GPoint } from "../../../../org/allbinary/graphics/GPoint.js";
@@ -56,8 +59,10 @@ public constructor (layerInterfaceVisitor: LayerInterfaceVisitor, dimension: GPo
             super();
                 //var layerInterfaceVisitor = layerInterfaceVisitor
     //var dimension = dimension
-this.layerInterfaceVisitor= layerInterfaceVisitor
-this.dimension= dimension
+this.layerInterfaceVisitor= layerInterfaceVisitor;
+    
+this.dimension= dimension;
+    
 }
 
 
@@ -69,10 +74,12 @@ this.dimension= dimension
     var size: number = list.size()!;
         
         
-
+;
+    
 
     var layerPlacementInterface: LayerPlacementInterface
-
+;
+    
 
 
 
@@ -83,8 +90,10 @@ this.dimension= dimension
         
 index < size; index++)
         {
-layerPlacementInterface= list.objectArray[index]! as LayerPlacementInterface
-this.process(layerPlacementInterface)
+layerPlacementInterface= list.objectArray[index]! as LayerPlacementInterface;
+    
+this.process(layerPlacementInterface);
+    
 }
 
 }
@@ -98,50 +107,71 @@ this.process(layerPlacementInterface)
     var relativePoint: GPoint = this.getPoint(layerPlacementInterface)!;
         
         
-
+;
+    
 
     var layerInterfaceFactory: LayerInterfaceFactory = LayerInterfaceFactory.getInstance()!;
         
         
+;
+    
 
-
-    var hashtable: Hashtable<Any, Any> = layerPlacementInterface!.getInstance()!;
+    var hashtable: Hashtable<any, any> = layerPlacementInterface!.getInstance()!;
         
         
+;
+    
 
-
-    var enumeration: Enumeration<Any?> = hashtable.keys()!;
+    var enumeration: Enumeration<any?> = hashtable.keys()!;
         
         
-
+;
+    
 
     var point: GPoint
+;
+    
 
-
-    var layerHashtable: Hashtable<Any, Any>
-
+    var layerHashtable: Hashtable<any, any>
+;
+    
 
     var x: number= 0
-
+;
+    
 
     var y: number= 0
-
+;
+    
 
     var z: number= 0
-
+;
+    
 
     var layerInterface: AllBinaryLayer
-
+;
+    
 
         while(enumeration.hasMoreElements())
         {
-point= enumeration.nextElement()! as GPoint
-layerHashtable= hashtable.get(point as Object) as Hashtable<Any, Any>
-x= point.getX() +relativePoint!.getX()
-y= point.getY() +relativePoint!.getY()
-z= point.getZ() +relativePoint!.getZ()
-layerInterface= layerInterfaceFactory!.getInstance(layerHashtable, x, y, z)
-layerInterfaceVisitor!.visit(layerInterface)
+point= enumeration.nextElement()!;
+
+                         as GPoint;
+    
+layerHashtable= hashtable.get(point as Object);
+
+                         as Hashtable<any, any>;
+    
+x= point.getX() +relativePoint!.getX();
+    
+y= point.getY() +relativePoint!.getY();
+    
+z= point.getZ() +relativePoint!.getZ();
+    
+layerInterface= layerInterfaceFactory!.getInstance(layerHashtable, x, y, z);
+    
+layerInterfaceVisitor!.visit(layerInterface);
+    
 }
 
 }
@@ -155,7 +185,8 @@ layerInterfaceVisitor!.visit(layerInterface)
     var layerPlacementType: LayerPlacementType = layerPlacementInterface!.getLayerType()!;
         
         
-
+;
+    
 
                         if(layerPlacementType == LayerPlacementTypeFactory.getInstance()!.MAP)
                         
@@ -164,27 +195,33 @@ layerInterfaceVisitor!.visit(layerInterface)
     var width: number = layerPlacementInterface!.getWidth()!;
         
         
-
+;
+    
 
     var height: number = layerPlacementInterface!.getHeight()!;
         
         
-
+;
+    
 
     var x: number = ((dimension.getX() -width) /2);
         
         
-
+;
+    
 
     var y: number = ((dimension.getY() -height) /2);
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return PointFactory.getInstance()!.getInstance(x, y);
+
+                        ;
     
 
                                     }
@@ -197,27 +234,33 @@ layerInterfaceVisitor!.visit(layerInterface)
     var width: number = layerPlacementInterface!.getWidth()!;
         
         
-
+;
+    
 
     var height: number = layerPlacementInterface!.getHeight()!;
         
         
-
+;
+    
 
     var x: number = ((dimension.getX() -width) /2);
         
         
-
+;
+    
 
     var y: number =  -height;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return PointFactory.getInstance()!.getInstance(x, y);
+
+                        ;
     
 
                                     }

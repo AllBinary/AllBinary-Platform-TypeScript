@@ -157,28 +157,33 @@ public constructor (map: Map){
     var stringBuffer: StringMaker = new StringMaker();
         
         
+;
+    
 
-
-    var hashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
         
         
-
+;
+    
 
     var keys: Set = map.keySet()!;
         
         
+;
+    
 
-
-    var keyArray: any = {}[] = keys.toArray()!;
+    var keyArray: any[] = keys.toArray()!;
         
         
-
+;
+    
 
     var size: number = keyArray!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -193,35 +198,48 @@ index < size; index++)
     var key: string = keyArray[index]! as String;
         
         
+;
+    
 
+    var values: string[] = map.get(key);
 
-    var values: string[] = map.get(key) as Array<String?>;
+                         as Array<String?>;
         
         
-
+;
+    
 hashMap!.put(key.toCharArray()
                                         .slice(0, ).join('')
-                                    , .toCharArray())
-stringBuffer!.delete(0, stringBuffer!.length())
-stringBuffer!.append("key: ")
-stringBuffer!.append(key)
-stringBuffer!.append(" Value: ")
-stringBuffer!.append(values[0]!)
-logUtil!.put(stringBuffer!.toString(), this, "getFormData()")
+                                    , .toCharArray());
+    
+stringBuffer!.delete(0, stringBuffer!.length());
+    
+stringBuffer!.append("key: ");
+    
+stringBuffer!.append(key);
+    
+stringBuffer!.append(" Value: ");
+    
+stringBuffer!.append(values[0]!);
+    
+logUtil!.put(stringBuffer!.toString(), this, "getFormData()");
+    
 }
 
-this.getFormData(hashMap)
+this.getFormData(hashMap);
+    
 }
 
-public constructor (initHashMap: HashMap<Any, Any>){
+public constructor (initHashMap: HashMap<any, any>){
 
             super();
             var initHashMap = initHashMap
-this.getFormData(initHashMap)
+this.getFormData(initHashMap);
+    
 }
 
 
-    public getFormData(hashMap: HashMap<Any, Any>){
+    public getFormData(hashMap: HashMap<any, any>){
 var hashMap = hashMap
 
         try {
@@ -229,45 +247,154 @@ var hashMap = hashMap
     var initializerData: InitializerData = InitializerData.getInstance()!;
         
         
+;
+    
+userJdbcDriver= hashMap!.get(initializerData!.CUSTOMERJDBCDRIVER);
 
-userJdbcDriver= hashMap!.get(initializerData!.CUSTOMERJDBCDRIVER) as String
-userName= hashMap!.get(initializerData!.CUSTOMERNAME) as String
-userUserName= hashMap!.get(initializerData!.CUSTOMERUSERNAME) as String
-userPassword= hashMap!.get(initializerData!.CUSTOMERPASSWORD) as String
-userSchema= hashMap!.get(initializerData!.CUSTOMERSCHEMA) as String
-userServer= hashMap!.get(initializerData!.CUSTOMERSERVER) as String
-userPort= hashMap!.get(initializerData!.CUSTOMERPORT) as String
-historyJdbcDriver= hashMap!.get(initializerData!.HISTORYJDBCDRIVER) as String
-historyName= hashMap!.get(initializerData!.HISTORYNAME) as String
-historyUserName= hashMap!.get(initializerData!.HISTORYUSERNAME) as String
-historyPassword= hashMap!.get(initializerData!.HISTORYPASSWORD) as String
-historySchema= hashMap!.get(initializerData!.HISTORYSCHEMA) as String
-historyServer= hashMap!.get(initializerData!.HISTORYSERVER) as String
-historyPort= hashMap!.get(initializerData!.HISTORYPORT) as String
-logJdbcDriver= hashMap!.get(initializerData!.LOGJDBCDRIVER) as String
-logName= hashMap!.get(initializerData!.LOGNAME) as String
-logUserName= hashMap!.get(initializerData!.LOGUSERNAME) as String
-logPassword= hashMap!.get(initializerData!.LOGPASSWORD) as String
-logSchema= hashMap!.get(initializerData!.LOGSCHEMA) as String
-logServer= hashMap!.get(initializerData!.LOGSERVER) as String
-logPort= hashMap!.get(initializerData!.LOGPORT) as String
-inventoryJdbcDriver= hashMap!.get(initializerData!.INVENTORYJDBCDRIVER) as String
-inventoryName= hashMap!.get(initializerData!.INVENTORYNAME) as String
-inventoryUserName= hashMap!.get(initializerData!.INVENTORYUSERNAME) as String
-inventoryPassword= hashMap!.get(initializerData!.INVENTORYPASSWORD) as String
-inventorySchema= hashMap!.get(initializerData!.INVENTORYSCHEMA) as String
-inventoryServer= hashMap!.get(initializerData!.INVENTORYSERVER) as String
-inventoryPort= hashMap!.get(initializerData!.INVENTORYPORT) as String
-staticPagesJdbcDriver= hashMap!.get(initializerData!.STATICPAGESJDBCDRIVER) as String
-staticPagesName= hashMap!.get(initializerData!.STATICPAGESNAME) as String
-staticPagesUserName= hashMap!.get(initializerData!.STATICPAGESUSERNAME) as String
-staticPagesPassword= hashMap!.get(initializerData!.STATICPAGESPASSWORD) as String
-staticPagesSchema= hashMap!.get(initializerData!.STATICPAGESSCHEMA) as String
-staticPagesServer= hashMap!.get(initializerData!.STATICPAGESSERVER) as String
-staticPagesPort= hashMap!.get(initializerData!.STATICPAGESPORT) as String
-} catch(e: Exception)
+                         as String;
+    
+userName= hashMap!.get(initializerData!.CUSTOMERNAME);
+
+                         as String;
+    
+userUserName= hashMap!.get(initializerData!.CUSTOMERUSERNAME);
+
+                         as String;
+    
+userPassword= hashMap!.get(initializerData!.CUSTOMERPASSWORD);
+
+                         as String;
+    
+userSchema= hashMap!.get(initializerData!.CUSTOMERSCHEMA);
+
+                         as String;
+    
+userServer= hashMap!.get(initializerData!.CUSTOMERSERVER);
+
+                         as String;
+    
+userPort= hashMap!.get(initializerData!.CUSTOMERPORT);
+
+                         as String;
+    
+historyJdbcDriver= hashMap!.get(initializerData!.HISTORYJDBCDRIVER);
+
+                         as String;
+    
+historyName= hashMap!.get(initializerData!.HISTORYNAME);
+
+                         as String;
+    
+historyUserName= hashMap!.get(initializerData!.HISTORYUSERNAME);
+
+                         as String;
+    
+historyPassword= hashMap!.get(initializerData!.HISTORYPASSWORD);
+
+                         as String;
+    
+historySchema= hashMap!.get(initializerData!.HISTORYSCHEMA);
+
+                         as String;
+    
+historyServer= hashMap!.get(initializerData!.HISTORYSERVER);
+
+                         as String;
+    
+historyPort= hashMap!.get(initializerData!.HISTORYPORT);
+
+                         as String;
+    
+logJdbcDriver= hashMap!.get(initializerData!.LOGJDBCDRIVER);
+
+                         as String;
+    
+logName= hashMap!.get(initializerData!.LOGNAME);
+
+                         as String;
+    
+logUserName= hashMap!.get(initializerData!.LOGUSERNAME);
+
+                         as String;
+    
+logPassword= hashMap!.get(initializerData!.LOGPASSWORD);
+
+                         as String;
+    
+logSchema= hashMap!.get(initializerData!.LOGSCHEMA);
+
+                         as String;
+    
+logServer= hashMap!.get(initializerData!.LOGSERVER);
+
+                         as String;
+    
+logPort= hashMap!.get(initializerData!.LOGPORT);
+
+                         as String;
+    
+inventoryJdbcDriver= hashMap!.get(initializerData!.INVENTORYJDBCDRIVER);
+
+                         as String;
+    
+inventoryName= hashMap!.get(initializerData!.INVENTORYNAME);
+
+                         as String;
+    
+inventoryUserName= hashMap!.get(initializerData!.INVENTORYUSERNAME);
+
+                         as String;
+    
+inventoryPassword= hashMap!.get(initializerData!.INVENTORYPASSWORD);
+
+                         as String;
+    
+inventorySchema= hashMap!.get(initializerData!.INVENTORYSCHEMA);
+
+                         as String;
+    
+inventoryServer= hashMap!.get(initializerData!.INVENTORYSERVER);
+
+                         as String;
+    
+inventoryPort= hashMap!.get(initializerData!.INVENTORYPORT);
+
+                         as String;
+    
+staticPagesJdbcDriver= hashMap!.get(initializerData!.STATICPAGESJDBCDRIVER);
+
+                         as String;
+    
+staticPagesName= hashMap!.get(initializerData!.STATICPAGESNAME);
+
+                         as String;
+    
+staticPagesUserName= hashMap!.get(initializerData!.STATICPAGESUSERNAME);
+
+                         as String;
+    
+staticPagesPassword= hashMap!.get(initializerData!.STATICPAGESPASSWORD);
+
+                         as String;
+    
+staticPagesSchema= hashMap!.get(initializerData!.STATICPAGESSCHEMA);
+
+                         as String;
+    
+staticPagesServer= hashMap!.get(initializerData!.STATICPAGESSERVER);
+
+                         as String;
+    
+staticPagesPort= hashMap!.get(initializerData!.STATICPAGESPORT);
+
+                         as String;
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put("Unable to get form data", this, "getFormData()", e)
+logUtil!.put("Unable to get form data", this, "getFormData()", e);
+    
 }
 
 }
@@ -277,14 +404,17 @@ logUtil!.put("Unable to get form data", this, "getFormData()", e)
 var jdbcDriverClassPathString = jdbcDriverClassPathString
 
         try {
-            Class.forName(jdbcDriverClassPathString)!.newInstance()
+            Class.forName(jdbcDriverClassPathString)!.newInstance();
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return true;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PRELOADERERROR))
@@ -294,8 +424,10 @@ var jdbcDriverClassPathString = jdbcDriverClassPathString
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e);
+    
 
                                     }
                                 
@@ -315,12 +447,16 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e)
     var isValid: boolean = true;
         
         
+;
+    
 
+                        if(!this.isJdbcDriverValid(this.userJdbcDriver);
 
-                        if(!this.isJdbcDriverValid(this.userJdbcDriver))
+                        )
                         
                                     {
-                                    isValid= false
+                                    isValid= false;
+    
 
                                     }
                                 
@@ -328,156 +464,214 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e)
     var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
         
         
+;
+    
 
+                        if(!stringValidationUtil!.isValidRequired(userName, MIN, MAXDB);
 
-                        if(!stringValidationUtil!.isValidRequired(userName, MIN, MAXDB))
+                        )
                         
                                     {
-                                    isValid= false
+                                    isValid= false;
+    
 
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidRequired(userUserName, MIN, MAX))
+                        if(!stringValidationUtil!.isValidRequired(userUserName, MIN, MAX);
+
+                        )
                         
                                     {
-                                    isValid= false
+                                    isValid= false;
+    
 
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidNotRequired(userPassword, MINPASSWORD, MAX))
+                        if(!stringValidationUtil!.isValidNotRequired(userPassword, MINPASSWORD, MAX);
+
+                        )
                         
                                     {
-                                    isValid= false
+                                    isValid= false;
+    
 
                                     }
                                 
 
-                        if(!this.isJdbcDriverValid(this.historyJdbcDriver))
+                        if(!this.isJdbcDriverValid(this.historyJdbcDriver);
+
+                        )
                         
                                     {
-                                    isValid= false
+                                    isValid= false;
+    
 
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidRequired(historyName, MIN, MAXDB))
+                        if(!stringValidationUtil!.isValidRequired(historyName, MIN, MAXDB);
+
+                        )
                         
                                     {
-                                    isValid= false
+                                    isValid= false;
+    
 
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidRequired(historyUserName, MIN, MAX))
+                        if(!stringValidationUtil!.isValidRequired(historyUserName, MIN, MAX);
+
+                        )
                         
                                     {
-                                    isValid= false
+                                    isValid= false;
+    
 
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidNotRequired(historyPassword, MINPASSWORD, MAX))
+                        if(!stringValidationUtil!.isValidNotRequired(historyPassword, MINPASSWORD, MAX);
+
+                        )
                         
                                     {
-                                    isValid= false
+                                    isValid= false;
+    
 
                                     }
                                 
 
-                        if(!this.isJdbcDriverValid(this.logJdbcDriver))
+                        if(!this.isJdbcDriverValid(this.logJdbcDriver);
+
+                        )
                         
                                     {
-                                    isValid= false
+                                    isValid= false;
+    
 
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidRequired(this.logName, MIN, MAXDB))
+                        if(!stringValidationUtil!.isValidRequired(this.logName, MIN, MAXDB);
+
+                        )
                         
                                     {
-                                    isValid= false
+                                    isValid= false;
+    
 
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidRequired(this.logUserName, MIN, MAX))
+                        if(!stringValidationUtil!.isValidRequired(this.logUserName, MIN, MAX);
+
+                        )
                         
                                     {
-                                    isValid= false
+                                    isValid= false;
+    
 
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidNotRequired(this.logPassword, MINPASSWORD, MAX))
+                        if(!stringValidationUtil!.isValidNotRequired(this.logPassword, MINPASSWORD, MAX);
+
+                        )
                         
                                     {
-                                    isValid= false
+                                    isValid= false;
+    
 
                                     }
                                 
 
-                        if(!this.isJdbcDriverValid(this.inventoryJdbcDriver))
+                        if(!this.isJdbcDriverValid(this.inventoryJdbcDriver);
+
+                        )
                         
                                     {
-                                    isValid= false
+                                    isValid= false;
+    
 
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidRequired(inventoryName, MIN, MAXDB))
+                        if(!stringValidationUtil!.isValidRequired(inventoryName, MIN, MAXDB);
+
+                        )
                         
                                     {
-                                    isValid= false
+                                    isValid= false;
+    
 
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidRequired(inventoryUserName, MIN, MAX))
+                        if(!stringValidationUtil!.isValidRequired(inventoryUserName, MIN, MAX);
+
+                        )
                         
                                     {
-                                    isValid= false
+                                    isValid= false;
+    
 
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidNotRequired(inventoryPassword, MINPASSWORD, MAX))
+                        if(!stringValidationUtil!.isValidNotRequired(inventoryPassword, MINPASSWORD, MAX);
+
+                        )
                         
                                     {
-                                    isValid= false
+                                    isValid= false;
+    
 
                                     }
                                 
 
-                        if(!this.isJdbcDriverValid(this.staticPagesJdbcDriver))
+                        if(!this.isJdbcDriverValid(this.staticPagesJdbcDriver);
+
+                        )
                         
                                     {
-                                    isValid= false
+                                    isValid= false;
+    
 
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidRequired(staticPagesName, MIN, MAXDB))
+                        if(!stringValidationUtil!.isValidRequired(staticPagesName, MIN, MAXDB);
+
+                        )
                         
                                     {
-                                    isValid= false
+                                    isValid= false;
+    
 
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidRequired(staticPagesUserName, MIN, MAX))
+                        if(!stringValidationUtil!.isValidRequired(staticPagesUserName, MIN, MAX);
+
+                        )
                         
                                     {
-                                    isValid= false
+                                    isValid= false;
+    
 
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidNotRequired(staticPagesPassword, MINPASSWORD, MAX))
+                        if(!stringValidationUtil!.isValidNotRequired(staticPagesPassword, MINPASSWORD, MAX);
+
+                        )
                         
                                     {
-                                    isValid= false
+                                    isValid= false;
+    
 
                                     }
                                 
@@ -496,15 +690,21 @@ var jdbcDriver = jdbcDriver
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("The JDBC driver (")
-stringBuffer!.append(jdbcDriver)
-stringBuffer!.append(") you have provided is not valid.<br/>")
+;
+    
+stringBuffer!.append("The JDBC driver (");
+    
+stringBuffer!.append(jdbcDriver);
+    
+stringBuffer!.append(") you have provided is not valid.<br/>");
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 
@@ -514,21 +714,33 @@ stringBuffer!.append(") you have provided is not valid.<br/>")
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("The following describes the possible problems and solutions regarding the Jdbc Driver error(s):<p/>")
-stringBuffer!.append("1. A JDBC driver you specified is not in your classpath.<br/>")
-stringBuffer!.append("Solution 1: Move the JDBC driver into any directory specified in the existing classpath. <br/>")
-stringBuffer!.append("Solution 2: Add the directory that contains the JDBC driver to the classpath.<br/>")
-stringBuffer!.append("Solution 3: Add the JDBC driver to the WEB-INF/lib directory where you installed this webapp.<br/>")
-stringBuffer!.append("2. The JDBC driver you specified does not exit.<br/>")
-stringBuffer!.append("Solution: Get a JDBC driver. <br/>")
-stringBuffer!.append("3. The JDBC driver you specified is not valid.<br/>")
-stringBuffer!.append("Solution: Use a valid JDBC driver.<p/>")
+;
+    
+stringBuffer!.append("The following describes the possible problems and solutions regarding the Jdbc Driver error(s):<p/>");
+    
+stringBuffer!.append("1. A JDBC driver you specified is not in your classpath.<br/>");
+    
+stringBuffer!.append("Solution 1: Move the JDBC driver into any directory specified in the existing classpath. <br/>");
+    
+stringBuffer!.append("Solution 2: Add the directory that contains the JDBC driver to the classpath.<br/>");
+    
+stringBuffer!.append("Solution 3: Add the JDBC driver to the WEB-INF/lib directory where you installed this webapp.<br/>");
+    
+stringBuffer!.append("2. The JDBC driver you specified does not exit.<br/>");
+    
+stringBuffer!.append("Solution: Get a JDBC driver. <br/>");
+    
+stringBuffer!.append("3. The JDBC driver you specified is not valid.<br/>");
+    
+stringBuffer!.append("Solution: Use a valid JDBC driver.<p/>");
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 
@@ -538,18 +750,24 @@ stringBuffer!.append("Solution: Use a valid JDBC driver.<p/>")
     var isJdbcDriversValid: boolean = true;
         
         
-
+;
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
+;
+    
 
+                        if(!this.isJdbcDriverValid(this.userJdbcDriver);
 
-                        if(!this.isJdbcDriverValid(this.userJdbcDriver))
+                        )
                         
                                     {
-                                    isJdbcDriversValid= false
-stringBuffer!.append(this.getJdbcDriverValidationInfo(this.userJdbcDriver))
+                                    isJdbcDriversValid= false;
+    
+stringBuffer!.append(this.getJdbcDriverValidationInfo(this.userJdbcDriver));
+    
 
                                     }
                                 
@@ -557,160 +775,222 @@ stringBuffer!.append(this.getJdbcDriverValidationInfo(this.userJdbcDriver))
     var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
         
         
+;
+    
 
+                        if(!stringValidationUtil!.isValidRequired(userName, MIN, MAXDB);
 
-                        if(!stringValidationUtil!.isValidRequired(userName, MIN, MAXDB))
+                        )
                         
                                     {
-                                    stringBuffer!.append("User db name should be < " +MAXDB +" and > " +MIN +" characters in length.<br />")
+                                    stringBuffer!.append("User db name should be < " +MAXDB +" and > " +MIN +" characters in length.<br />");
+    
 
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidRequired(userUserName, MIN, MAX))
+                        if(!stringValidationUtil!.isValidRequired(userUserName, MIN, MAX);
+
+                        )
                         
                                     {
-                                    stringBuffer!.append("User db username should be < " +MAX +" and > " +MIN +" characters in length.<br />")
+                                    stringBuffer!.append("User db username should be < " +MAX +" and > " +MIN +" characters in length.<br />");
+    
 
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidNotRequired(userPassword, MINPASSWORD, MAX))
+                        if(!stringValidationUtil!.isValidNotRequired(userPassword, MINPASSWORD, MAX);
+
+                        )
                         
                                     {
-                                    stringBuffer!.append("User DB password should be < " +MAX +" and > " +MINPASSWORD +" characters in length.<br />")
+                                    stringBuffer!.append("User DB password should be < " +MAX +" and > " +MINPASSWORD +" characters in length.<br />");
+    
 
                                     }
                                 
 
-                        if(!this.isJdbcDriverValid(this.historyJdbcDriver))
+                        if(!this.isJdbcDriverValid(this.historyJdbcDriver);
+
+                        )
                         
                                     {
-                                    isJdbcDriversValid= false
-stringBuffer!.append(this.getJdbcDriverValidationInfo(this.historyJdbcDriver))
+                                    isJdbcDriversValid= false;
+    
+stringBuffer!.append(this.getJdbcDriverValidationInfo(this.historyJdbcDriver));
+    
 
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidRequired(historyName, MIN, MAXDB))
+                        if(!stringValidationUtil!.isValidRequired(historyName, MIN, MAXDB);
+
+                        )
                         
                                     {
-                                    stringBuffer!.append("History db should be < " +MAXDB +" and > " +MIN +" characters in length.<br />")
+                                    stringBuffer!.append("History db should be < " +MAXDB +" and > " +MIN +" characters in length.<br />");
+    
 
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidRequired(historyUserName, MIN, MAX))
+                        if(!stringValidationUtil!.isValidRequired(historyUserName, MIN, MAX);
+
+                        )
                         
                                     {
-                                    stringBuffer!.append("History db username should be < " +MAX +" and > " +MIN +" characters in length.<br />")
+                                    stringBuffer!.append("History db username should be < " +MAX +" and > " +MIN +" characters in length.<br />");
+    
 
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidNotRequired(historyPassword, MINPASSWORD, MAX))
+                        if(!stringValidationUtil!.isValidNotRequired(historyPassword, MINPASSWORD, MAX);
+
+                        )
                         
                                     {
-                                    stringBuffer!.append("History db password should be < " +MAX +" and > " +MINPASSWORD +" characters in length.<br />")
+                                    stringBuffer!.append("History db password should be < " +MAX +" and > " +MINPASSWORD +" characters in length.<br />");
+    
 
                                     }
                                 
 
-                        if(!this.isJdbcDriverValid(this.logJdbcDriver))
+                        if(!this.isJdbcDriverValid(this.logJdbcDriver);
+
+                        )
                         
                                     {
-                                    isJdbcDriversValid= false
-stringBuffer!.append(this.getJdbcDriverValidationInfo(this.logJdbcDriver))
+                                    isJdbcDriversValid= false;
+    
+stringBuffer!.append(this.getJdbcDriverValidationInfo(this.logJdbcDriver));
+    
 
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidRequired(this.logName, MIN, MAXDB))
+                        if(!stringValidationUtil!.isValidRequired(this.logName, MIN, MAXDB);
+
+                        )
                         
                                     {
-                                    stringBuffer!.append("Log db should be < " +MAXDB +" and > " +MIN +" characters in length.<br />")
+                                    stringBuffer!.append("Log db should be < " +MAXDB +" and > " +MIN +" characters in length.<br />");
+    
 
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidRequired(this.logUserName, MIN, MAX))
+                        if(!stringValidationUtil!.isValidRequired(this.logUserName, MIN, MAX);
+
+                        )
                         
                                     {
-                                    stringBuffer!.append("Log db username should be < " +MAX +" and > " +MIN +" characters in length.<br />")
+                                    stringBuffer!.append("Log db username should be < " +MAX +" and > " +MIN +" characters in length.<br />");
+    
 
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidNotRequired(this.logPassword, MINPASSWORD, MAX))
+                        if(!stringValidationUtil!.isValidNotRequired(this.logPassword, MINPASSWORD, MAX);
+
+                        )
                         
                                     {
-                                    stringBuffer!.append("Log db password should be < " +MAX +" and > " +MINPASSWORD +" characters in length.<br />")
+                                    stringBuffer!.append("Log db password should be < " +MAX +" and > " +MINPASSWORD +" characters in length.<br />");
+    
 
                                     }
                                 
 
-                        if(!this.isJdbcDriverValid(this.inventoryJdbcDriver))
+                        if(!this.isJdbcDriverValid(this.inventoryJdbcDriver);
+
+                        )
                         
                                     {
-                                    isJdbcDriversValid= false
-stringBuffer!.append(this.getJdbcDriverValidationInfo(this.inventoryJdbcDriver))
+                                    isJdbcDriversValid= false;
+    
+stringBuffer!.append(this.getJdbcDriverValidationInfo(this.inventoryJdbcDriver));
+    
 
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidRequired(inventoryName, MIN, MAXDB))
+                        if(!stringValidationUtil!.isValidRequired(inventoryName, MIN, MAXDB);
+
+                        )
                         
                                     {
-                                    stringBuffer!.append("Inventory db should be < " +MAXDB +" and > " +MIN +" characters in length.<br />")
+                                    stringBuffer!.append("Inventory db should be < " +MAXDB +" and > " +MIN +" characters in length.<br />");
+    
 
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidRequired(inventoryUserName, MIN, MAX))
+                        if(!stringValidationUtil!.isValidRequired(inventoryUserName, MIN, MAX);
+
+                        )
                         
                                     {
-                                    stringBuffer!.append("Inventory db username should be < " +MAX +" and > " +MIN +" characters in length.<br />")
+                                    stringBuffer!.append("Inventory db username should be < " +MAX +" and > " +MIN +" characters in length.<br />");
+    
 
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidNotRequired(inventoryPassword, MINPASSWORD, MAX))
+                        if(!stringValidationUtil!.isValidNotRequired(inventoryPassword, MINPASSWORD, MAX);
+
+                        )
                         
                                     {
-                                    stringBuffer!.append("Inventory DB password should be < " +MAX +" and > " +MINPASSWORD +" characters in length.<br />")
+                                    stringBuffer!.append("Inventory DB password should be < " +MAX +" and > " +MINPASSWORD +" characters in length.<br />");
+    
 
                                     }
                                 
 
-                        if(!this.isJdbcDriverValid(this.staticPagesJdbcDriver))
+                        if(!this.isJdbcDriverValid(this.staticPagesJdbcDriver);
+
+                        )
                         
                                     {
-                                    isJdbcDriversValid= false
-stringBuffer!.append(this.getJdbcDriverValidationInfo(this.staticPagesJdbcDriver))
+                                    isJdbcDriversValid= false;
+    
+stringBuffer!.append(this.getJdbcDriverValidationInfo(this.staticPagesJdbcDriver));
+    
 
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidRequired(staticPagesName, MIN, MAXDB))
+                        if(!stringValidationUtil!.isValidRequired(staticPagesName, MIN, MAXDB);
+
+                        )
                         
                                     {
-                                    stringBuffer!.append("Static Pages db should be < " +MAXDB +" and > " +MIN +" characters in length.<br />")
+                                    stringBuffer!.append("Static Pages db should be < " +MAXDB +" and > " +MIN +" characters in length.<br />");
+    
 
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidRequired(staticPagesUserName, MIN, MAX))
+                        if(!stringValidationUtil!.isValidRequired(staticPagesUserName, MIN, MAX);
+
+                        )
                         
                                     {
-                                    stringBuffer!.append("Static Pages db username should be < " +MAX +" and > " +MIN +" characters in length.<br />")
+                                    stringBuffer!.append("Static Pages db username should be < " +MAX +" and > " +MIN +" characters in length.<br />");
+    
 
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidNotRequired(staticPagesPassword, MINPASSWORD, MAX))
+                        if(!stringValidationUtil!.isValidNotRequired(staticPagesPassword, MINPASSWORD, MAX);
+
+                        )
                         
                                     {
-                                    stringBuffer!.append("Static Pages DB password should be < " +MAX +" and > " +MINPASSWORD +" characters in length.<br />")
+                                    stringBuffer!.append("Static Pages DB password should be < " +MAX +" and > " +MINPASSWORD +" characters in length.<br />");
+    
 
                                     }
                                 
@@ -718,7 +998,8 @@ stringBuffer!.append(this.getJdbcDriverValidationInfo(this.staticPagesJdbcDriver
                         if(!isJdbcDriversValid)
                         
                                     {
-                                    stringBuffer!.append(getJdbcDriverSolutionInfo())
+                                    stringBuffer!.append(getJdbcDriverSolutionInfo());
+    
 
                                     }
                                 
@@ -727,6 +1008,8 @@ stringBuffer!.append(this.getJdbcDriverValidationInfo(this.staticPagesJdbcDriver
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 
@@ -734,78 +1017,130 @@ stringBuffer!.append(this.getJdbcDriverValidationInfo(this.staticPagesJdbcDriver
                 //@Throws(Error::class)
             
     public set(){
-logUtil!.put("Creating DB connection files", this, "set()")
+logUtil!.put("Creating DB connection files", this, "set()");
+    
 
     var userDbInitInfo: UserDbInitInfo = new UserDbInitInfo(false);
         
         
-
-userDbInitInfo!.setJdbcDriver(this.userJdbcDriver)
-userDbInitInfo!.setName(userName)
-userDbInitInfo!.setUserName(userUserName)
-userDbInitInfo!.setPassword(userPassword)
-userDbInitInfo!.setSchema(userSchema)
-userDbInitInfo!.setServer(userServer)
-userDbInitInfo!.setPort(userPort)
-userDbInitInfo!.setHasRead(true)
-userDbInitInfo!.write()
+;
+    
+userDbInitInfo!.setJdbcDriver(this.userJdbcDriver);
+    
+userDbInitInfo!.setName(userName);
+    
+userDbInitInfo!.setUserName(userUserName);
+    
+userDbInitInfo!.setPassword(userPassword);
+    
+userDbInitInfo!.setSchema(userSchema);
+    
+userDbInitInfo!.setServer(userServer);
+    
+userDbInitInfo!.setPort(userPort);
+    
+userDbInitInfo!.setHasRead(true);
+    
+userDbInitInfo!.write();
+    
 
     var historyDbInitInfo: HistoryDbInitInfo = new HistoryDbInitInfo(false);
         
         
-
-historyDbInitInfo!.setJdbcDriver(this.historyJdbcDriver)
-historyDbInitInfo!.setName(historyName)
-historyDbInitInfo!.setUserName(historyUserName)
-historyDbInitInfo!.setPassword(historyPassword)
-historyDbInitInfo!.setSchema(historySchema)
-historyDbInitInfo!.setServer(historyServer)
-historyDbInitInfo!.setPort(historyPort)
-historyDbInitInfo!.setHasRead(true)
-historyDbInitInfo!.write()
+;
+    
+historyDbInitInfo!.setJdbcDriver(this.historyJdbcDriver);
+    
+historyDbInitInfo!.setName(historyName);
+    
+historyDbInitInfo!.setUserName(historyUserName);
+    
+historyDbInitInfo!.setPassword(historyPassword);
+    
+historyDbInitInfo!.setSchema(historySchema);
+    
+historyDbInitInfo!.setServer(historyServer);
+    
+historyDbInitInfo!.setPort(historyPort);
+    
+historyDbInitInfo!.setHasRead(true);
+    
+historyDbInitInfo!.write();
+    
 
     var logDbInitInfo: LogDbInitInfo = new LogDbInitInfo(false);
         
         
-
-logDbInitInfo!.setJdbcDriver(this.logJdbcDriver)
-logDbInitInfo!.setName(this.logName)
-logDbInitInfo!.setUserName(this.logUserName)
-logDbInitInfo!.setPassword(this.logPassword)
-logDbInitInfo!.setSchema(this.logSchema)
-logDbInitInfo!.setServer(this.logServer)
-logDbInitInfo!.setPort(this.logPort)
-logDbInitInfo!.setHasRead(true)
-logDbInitInfo!.write()
+;
+    
+logDbInitInfo!.setJdbcDriver(this.logJdbcDriver);
+    
+logDbInitInfo!.setName(this.logName);
+    
+logDbInitInfo!.setUserName(this.logUserName);
+    
+logDbInitInfo!.setPassword(this.logPassword);
+    
+logDbInitInfo!.setSchema(this.logSchema);
+    
+logDbInitInfo!.setServer(this.logServer);
+    
+logDbInitInfo!.setPort(this.logPort);
+    
+logDbInitInfo!.setHasRead(true);
+    
+logDbInitInfo!.write();
+    
 
     var staticPagesDbInitInfo: StaticPagesDbInitInfo = new StaticPagesDbInitInfo(false);
         
         
-
-staticPagesDbInitInfo!.setJdbcDriver(this.staticPagesJdbcDriver)
-staticPagesDbInitInfo!.setName(staticPagesName)
-staticPagesDbInitInfo!.setUserName(staticPagesUserName)
-staticPagesDbInitInfo!.setPassword(staticPagesPassword)
-staticPagesDbInitInfo!.setSchema(staticPagesSchema)
-staticPagesDbInitInfo!.setServer(staticPagesServer)
-staticPagesDbInitInfo!.setPort(staticPagesPort)
-staticPagesDbInitInfo!.setHasRead(true)
-staticPagesDbInitInfo!.write()
+;
+    
+staticPagesDbInitInfo!.setJdbcDriver(this.staticPagesJdbcDriver);
+    
+staticPagesDbInitInfo!.setName(staticPagesName);
+    
+staticPagesDbInitInfo!.setUserName(staticPagesUserName);
+    
+staticPagesDbInitInfo!.setPassword(staticPagesPassword);
+    
+staticPagesDbInitInfo!.setSchema(staticPagesSchema);
+    
+staticPagesDbInitInfo!.setServer(staticPagesServer);
+    
+staticPagesDbInitInfo!.setPort(staticPagesPort);
+    
+staticPagesDbInitInfo!.setHasRead(true);
+    
+staticPagesDbInitInfo!.write();
+    
 
     var inventoryDbInitInfo: InventoryDbInitInfo = new InventoryDbInitInfo(false);
         
         
-
-inventoryDbInitInfo!.setJdbcDriver(this.inventoryJdbcDriver)
-inventoryDbInitInfo!.setName(inventoryName)
-inventoryDbInitInfo!.setUserName(inventoryUserName)
-inventoryDbInitInfo!.setPassword(inventoryPassword)
-inventoryDbInitInfo!.setSchema(inventorySchema)
-inventoryDbInitInfo!.setServer(inventoryServer)
-inventoryDbInitInfo!.setPort(inventoryPort)
-inventoryDbInitInfo!.setHasRead(true)
-inventoryDbInitInfo!.write()
-logUtil!.put("Created DB connection files", this, "set()")
+;
+    
+inventoryDbInitInfo!.setJdbcDriver(this.inventoryJdbcDriver);
+    
+inventoryDbInitInfo!.setName(inventoryName);
+    
+inventoryDbInitInfo!.setUserName(inventoryUserName);
+    
+inventoryDbInitInfo!.setPassword(inventoryPassword);
+    
+inventoryDbInitInfo!.setSchema(inventorySchema);
+    
+inventoryDbInitInfo!.setServer(inventoryServer);
+    
+inventoryDbInitInfo!.setPort(inventoryPort);
+    
+inventoryDbInitInfo!.setHasRead(true);
+    
+inventoryDbInitInfo!.write();
+    
+logUtil!.put("Created DB connection files", this, "set()");
+    
 }
 
 

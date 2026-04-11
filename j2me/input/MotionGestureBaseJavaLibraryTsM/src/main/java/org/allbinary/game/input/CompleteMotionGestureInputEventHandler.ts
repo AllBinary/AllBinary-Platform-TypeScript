@@ -66,10 +66,13 @@ private constructor (){
     public addListener(completeMotionGestureInputEventListener: CompleteMotionGestureInputEventListener){
 var completeMotionGestureInputEventListener = completeMotionGestureInputEventListener
 
-                        if(!list.contains(completeMotionGestureInputEventListener))
+                        if(!list.contains(completeMotionGestureInputEventListener);
+
+                        )
                         
                                     {
-                                    list.add(completeMotionGestureInputEventListener)
+                                    list.add(completeMotionGestureInputEventListener);
+    
 
                                     }
                                 
@@ -77,15 +80,19 @@ var completeMotionGestureInputEventListener = completeMotionGestureInputEventLis
 
 
     public removeAllListeners(){
-this.list.clear()
-super.removeAllListeners()
+this.list.clear();
+    
+super.removeAllListeners();
+    
 }
 
 
     public removeListener(eventListenerInterface: EventListenerInterface){
 var eventListenerInterface = eventListenerInterface
-this.list.remove(eventListenerInterface)
-super.removeListener(eventListenerInterface)
+this.list.remove(eventListenerInterface);
+    
+super.removeListener(eventListenerInterface);
+    
 }
 
 
@@ -109,16 +116,22 @@ var eventObject = eventObject
     var completeMotionGestureInputEventListener: CompleteMotionGestureInputEventListener = this.list.objectArray[index]! as CompleteMotionGestureInputEventListener;
         
         
+;
+    
+completeMotionGestureInputEventListener!.onCompleteMotionGestureInputEvent(eventObject as CompleteMotionGestureInputEvent);
+    
 
-completeMotionGestureInputEventListener!.onCompleteMotionGestureInputEvent(eventObject as CompleteMotionGestureInputEvent)
-} catch(e: Exception)
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e);
+    
 }
 
 }
 
-super.fireEvent(eventObject)
+super.fireEvent(eventObject);
+    
 }
 
 
@@ -131,8 +144,10 @@ var eventListenerInterface = eventListenerInterface
     var completeMotionGestureInputEventListenerInterface: CompleteMotionGestureInputEventListenerInterface = eventListenerInterface as CompleteMotionGestureInputEventListenerInterface;
         
         
-
-completeMotionGestureInputEventListenerInterface!.onCompleteMotionGestureInputEvent(eventObject as CompleteMotionGestureInputEvent)
+;
+    
+completeMotionGestureInputEventListenerInterface!.onCompleteMotionGestureInputEvent(eventObject as CompleteMotionGestureInputEvent);
+    
 }
 
 

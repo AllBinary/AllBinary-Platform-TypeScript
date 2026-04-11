@@ -38,8 +38,10 @@ public constructor (list: BasicArrayList, commandAction: CompleteMotionGestureIn
             super();
             var list = list
 var commandAction = commandAction
-this.list= list
-this.motionGestureAction= commandAction
+this.list= list;
+    
+this.motionGestureAction= commandAction;
+    
 }
 
 
@@ -55,7 +57,8 @@ this.motionGestureAction= commandAction
 
     public setMotionGestures(list: BasicArrayList){
 var list = list
-this.list= list
+this.list= list;
+    
 }
 
 
@@ -71,7 +74,8 @@ this.list= list
 
     public setMotionGestureAction(commandAction: CompleteMotionGestureInputEvent){
 var commandAction = commandAction
-this.motionGestureAction= commandAction
+this.motionGestureAction= commandAction;
+    
 }
 
 
@@ -81,7 +85,8 @@ var aList = aList
     var size: number = aList!.size()!;
         
         
-
+;
+    
 
                         if(this.list.size() != size)
                         

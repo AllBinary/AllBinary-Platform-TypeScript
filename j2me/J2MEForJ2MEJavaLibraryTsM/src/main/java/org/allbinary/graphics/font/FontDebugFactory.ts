@@ -47,7 +47,8 @@ export class FontDebugFactory
     public setFont(font: Font, graphics: Graphics){
     //var font = font
     //var graphics = graphics
-graphics.setFont(font)
+graphics.setFont(font);
+    
 }
 
 

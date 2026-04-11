@@ -42,10 +42,14 @@ public constructor (tireFriction: number, brakeFriction: number, airFriction: nu
 var brakeFriction = brakeFriction
 var airFriction = airFriction
 var crashFriction = crashFriction
-TIRE_FRICTION_NOMINATOR= FrictionData.getFrictionDenominator() -tireFriction
-BRAKE_FRICTION_NOMINATOR= FrictionData.getFrictionDenominator() -brakeFriction
-AIR_FRICTION_NOMINATOR= FrictionData.getFrictionDenominator() -airFriction
-CRASH_FRICTION_NOMINATOR= FrictionData.getFrictionDenominator() -crashFriction
+TIRE_FRICTION_NOMINATOR= FrictionData.getFrictionDenominator() -tireFriction;
+    
+BRAKE_FRICTION_NOMINATOR= FrictionData.getFrictionDenominator() -brakeFriction;
+    
+AIR_FRICTION_NOMINATOR= FrictionData.getFrictionDenominator() -airFriction;
+    
+CRASH_FRICTION_NOMINATOR= FrictionData.getFrictionDenominator() -crashFriction;
+    
 }
 
 

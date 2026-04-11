@@ -42,7 +42,8 @@ var list = list
     var size: number = list.size()!;
         
         
-
+;
+    
 
 
 
@@ -57,9 +58,11 @@ index < size; index++)
     var anyType: any = {} = list.get(index)!;
         
         
-
+;
+    
 PreLogUtil.put(StringMaker().
-                            append("pathList.add(cellPositionFactory.getInstance")!.append(anyType!.toString())!.append(");")!.toString(), this, "printPath")
+                            append("pathList.add(cellPositionFactory.getInstance")!.append(anyType!.toString())!.append(");")!.toString(), this, "printPath");
+    
 }
 
 }
@@ -71,7 +74,8 @@ var list = list
     var size: number = list.size()!;
         
         
-
+;
+    
 
 
 
@@ -83,8 +87,12 @@ var list = list
 index < size; index++)
         {
 System.out.println(StringMaker().
-                            append(" Path ")!.appendint(index)!.append(CommonLabels.getInstance()!.COLON_SEP)!.toString())
-this.printPath(list.get(index) as BasicArrayList)
+                            append(" Path ")!.appendint(index)!.append(CommonLabels.getInstance()!.COLON_SEP)!.toString());
+    
+this.printPath(list.get(index);
+
+                         as BasicArrayList);
+    
 }
 
 }

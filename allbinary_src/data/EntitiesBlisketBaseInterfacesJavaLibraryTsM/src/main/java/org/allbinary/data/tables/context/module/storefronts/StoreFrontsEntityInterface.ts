@@ -18,10 +18,13 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { HashMap } from "../../../../../../../java/util/HashMap.js";
 
     
-import { Vector } from "../../../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../../../java/util/Vector.js";
 
     
 import { StoreFrontInterface } from "../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js";
@@ -44,7 +47,7 @@ interface StoreFrontsEntityInterface extends BasicDataTableInterface {
 
     public insert(values: Vector)
 
-    public update(updatedValues: HashMap<Any, Any>)
+    public update(updatedValues: HashMap<any, any>)
 
 }
                 

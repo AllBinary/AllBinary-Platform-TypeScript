@@ -43,34 +43,41 @@ private constructor (){
             }
 
 
-    public xor(array: ByteArray, mask: number): ByteArray{
+    public xor(array: number[], mask: number): number[]{
     //var array = array
     //var mask = mask
 
-    var bytes: ByteArray = ByteArray(array.length);
+    var bytes: number[] = new Array(array.length);
         
         
-
+;
+    
 
     var size: number = array.length
                 ;
         
         
-
+;
+    
 
     var index: number = 0;
         
         
-
+;
+    
 
     var currentByte: number
-
+;
+    
 
         while(index < size)
         {
-currentByte= array[index]!
-bytes[index]= (currentByte xor mask).toByte()
-index++
+currentByte= array[index]!;
+    
+bytes[index]= (currentByte xor mask).toByte();
+    
+index++;
+    
 }
 
 
@@ -82,29 +89,34 @@ index++
 }
 
 
-    public not(array: ByteArray): ByteArray{
+    public not(array: number[]): number[]{
     //var array = array
 
-    var bytes: ByteArray = ByteArray(array.length);
+    var bytes: number[] = new Array(array.length);
         
         
-
+;
+    
 
     var size: number = array.length
                 ;
         
         
-
+;
+    
 
     var index: number = 0;
         
         
-
+;
+    
 
         while(index < size)
         {
-bytes[index]= array[index].inv().toByte()
-index++
+bytes[index]= array[index].inv().toByte();
+    
+index++;
+    
 }
 
 
@@ -116,14 +128,15 @@ index++
 }
 
 
-    public xorByte(array: ByteArray, index: number): ByteArray{
+    public xorByte(array: number[], index: number): number[]{
     //var array = array
     //var index = index
 
     var mask: number = 0;
         
         
-
+;
+    
 
                         if(index == 0)
                         mask= 1
@@ -153,11 +166,13 @@ index++
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.xor(array, mask);
+
+                        ;
     
 }
 
 
-    public compare(newByteArray: ByteArray, oldByteArray: ByteArray): boolean{
+    public compare(newByteArray: number[], oldByteArray: number[]): boolean{
     //var newByteArray = newByteArray
     //var oldByteArray = oldByteArray
 
@@ -182,7 +197,8 @@ index++
                 ;
         
         
-
+;
+    
 
 
 
@@ -217,7 +233,7 @@ index < size; index++)
 }
 
 
-    public compare(newByteArray: ByteArray, newSize: number, oldByteArray: ByteArray, stats: IntArray): boolean{
+    public compare(newByteArray: number[], newSize: number, oldByteArray: number[], stats: number[]): boolean{
     //var newByteArray = newByteArray
     //var newSize = newSize
     //var oldByteArray = oldByteArray
@@ -226,9 +242,12 @@ index < size; index++)
                         if(newSize != oldByteArray!.length)
                         
                                     {
-                                    stats[0]=  -1
-stats[2]= newSize
-stats[3]= oldByteArray!.length
+                                    stats[0]=  -1;
+    
+stats[2]= newSize;
+    
+stats[3]= oldByteArray!.length;
+    
 
 
 
@@ -239,16 +258,19 @@ stats[3]= oldByteArray!.length
                                     }
                                 
                         else {
-                            stats[0]= newSize
+                            stats[0]= newSize;
+    
 
                         }
                             
-stats[1]= 0
+stats[1]= 0;
+    
 
     var size: number = newSize;
         
         
-
+;
+    
 
 
 
@@ -272,7 +294,8 @@ index < size; index++)
 
                                     }
                                 
-stats[1]++
+stats[1]++;
+    
 }
 
 

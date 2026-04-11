@@ -146,10 +146,14 @@ public constructor (groupInterface: Group[], layerInfo: Rectangle, viewPosition:
 
                             //For kotlin this is before the body of the constructor.
                     
-this.initWidth= layerInfo!.getWidth()
-this.initHeight= layerInfo!.getHeight()
-this.groupInterface= groupInterface
-this.pickupBehavior= PickupBehavior.NULL_PICKUP_BEHAVIOR
+this.initWidth= layerInfo!.getWidth();
+    
+this.initHeight= layerInfo!.getHeight();
+    
+this.groupInterface= groupInterface;
+    
+this.pickupBehavior= PickupBehavior.NULL_PICKUP_BEHAVIOR;
+    
 }
 
 public constructor (groupInterface: Group[], name: string, layerInfo: Rectangle, viewPosition: ViewPosition)                        
@@ -165,17 +169,22 @@ public constructor (groupInterface: Group[], name: string, layerInfo: Rectangle,
 
                             //For kotlin this is before the body of the constructor.
                     
-this.initWidth= layerInfo!.getWidth()
-this.initHeight= layerInfo!.getHeight()
-this.groupInterface= groupInterface
-this.pickupBehavior= PickupBehavior.NULL_PICKUP_BEHAVIOR
+this.initWidth= layerInfo!.getWidth();
+    
+this.initHeight= layerInfo!.getHeight();
+    
+this.groupInterface= groupInterface;
+    
+this.pickupBehavior= PickupBehavior.NULL_PICKUP_BEHAVIOR;
+    
 }
 
 
                 //@Throws(Error::class)
             
     public initPosition(){
-this.setPosition(this.initX, this.initY, this.initZ)
+this.setPosition(this.initX, this.initY, this.initZ);
+    
 }
 
 
@@ -185,15 +194,19 @@ this.setPosition(this.initX, this.initY, this.initZ)
     //var x = x
     //var y = y
     //var z = z
-this.initX= x
-this.initY= y
-this.initZ= z
+this.initX= x;
+    
+this.initY= y;
+    
+this.initZ= z;
+    
 }
 
 
     public paint(graphics: Graphics){
     //var graphics = graphics
-super.paint(graphics)
+super.paint(graphics);
+    
 }
 
 
@@ -242,7 +255,8 @@ super.paint(graphics)
 
     public setGroupInterface(teamInterface: Group[]){
     //var teamInterface = teamInterface
-this.groupInterface= teamInterface
+this.groupInterface= teamInterface;
+    
 }
 
 
@@ -250,7 +264,8 @@ this.groupInterface= teamInterface
             
     public setAllBinaryGameLayerManager(allBinaryGameLayerManager: AllBinaryGameLayerManager){
     //var allBinaryGameLayerManager = allBinaryGameLayerManager
-this.allBinaryGameLayerManagerP= allBinaryGameLayerManager
+this.allBinaryGameLayerManagerP= allBinaryGameLayerManager;
+    
 
                         if(this.allBinaryGameLayerManagerP == 
                                     null
@@ -279,7 +294,8 @@ this.allBinaryGameLayerManagerP= allBinaryGameLayerManager
 
     setReadyForExplosion(isReadyForExplosion: boolean){
     //var isReadyForExplosion = isReadyForExplosion
-this.readyForExplosion= isReadyForExplosion
+this.readyForExplosion= isReadyForExplosion;
+    
 }
 
 
@@ -470,7 +486,8 @@ this.readyForExplosion= isReadyForExplosion
 
     public setPickupBehavior(pickupBehavior: PickupBehavior){
     //var pickupBehavior = pickupBehavior
-this.pickupBehavior= pickupBehavior
+this.pickupBehavior= pickupBehavior;
+    
 }
 
 
@@ -483,7 +500,8 @@ this.pickupBehavior= pickupBehavior
 
     public setPartInterfaceArray(partInterfaceArray: PartInterface[]){
     //var partInterfaceArray = partInterfaceArray
-this.partInterfaceArrayP= partInterfaceArray
+this.partInterfaceArrayP= partInterfaceArray;
+    
 }
 
 
@@ -503,25 +521,31 @@ this.partInterfaceArrayP= partInterfaceArray
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
         
         
-
+;
+    
 
     var positionStrings: PositionStrings = PositionStrings.getInstance()!;
         
         
-
-super.toString(stringBuffer)
-stringBuffer!.append(commonSeps!.NEW_LINE)
+;
+    
+super.toString(stringBuffer);
+    
+stringBuffer!.append(commonSeps!.NEW_LINE);
+    
 
     var groupInterfaceArray: Group[] = this.getGroupInterface()!;
         
         
-
+;
+    
 
     var size: number = groupInterfaceArray!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -532,38 +556,55 @@ stringBuffer!.append(commonSeps!.NEW_LINE)
         
 index < size; index++)
         {
-stringBuffer!.append(groupInterfaceArray[index]!.toString())
-stringBuffer!.append(commonSeps!.COMMA)
+stringBuffer!.append(groupInterfaceArray[index]!.toString());
+    
+stringBuffer!.append(commonSeps!.COMMA);
+    
 }
 
 
     var pickupBehavior: PickupBehavior = this.getPickupBehavior()!;
         
         
-
+;
+    
 
                         if(pickupBehavior != 
                                     null
                                 )
                         
                                     {
-                                    stringBuffer!.append(commonSeps!.NEW_LINE)
-stringBuffer!.append(pickupBehavior!.toString())
+                                    stringBuffer!.append(commonSeps!.NEW_LINE);
+    
+stringBuffer!.append(pickupBehavior!.toString());
+    
 
                                     }
                                 
-stringBuffer!.append(commonSeps!.NEW_LINE)
-stringBuffer!.append(READYFOREXPLOSION)
-stringBuffer!.appendboolean(readyForExplosion)
-stringBuffer!.append(commonSeps!.NEW_LINE)
-stringBuffer!.append(commonStrings!.INIT)
-stringBuffer!.append(commonSeps!.SPACE)
-stringBuffer!.append(positionStrings!.X_LABEL)
-stringBuffer!.appendint(initX)
-stringBuffer!.append(positionStrings!.Y_LABEL)
-stringBuffer!.appendint(initX)
-stringBuffer!.append(positionStrings!.Z_LABEL)
-stringBuffer!.appendint(initZ)
+stringBuffer!.append(commonSeps!.NEW_LINE);
+    
+stringBuffer!.append(READYFOREXPLOSION);
+    
+stringBuffer!.appendboolean(readyForExplosion);
+    
+stringBuffer!.append(commonSeps!.NEW_LINE);
+    
+stringBuffer!.append(commonStrings!.INIT);
+    
+stringBuffer!.append(commonSeps!.SPACE);
+    
+stringBuffer!.append(positionStrings!.X_LABEL);
+    
+stringBuffer!.appendint(initX);
+    
+stringBuffer!.append(positionStrings!.Y_LABEL);
+    
+stringBuffer!.appendint(initX);
+    
+stringBuffer!.append(positionStrings!.Z_LABEL);
+    
+stringBuffer!.appendint(initZ);
+    
 }
 
 
@@ -572,13 +613,17 @@ stringBuffer!.appendint(initZ)
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-this.toString(stringBuffer)
+;
+    
+this.toString(stringBuffer);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

@@ -62,7 +62,8 @@ var startIndex = startIndex
     var size: number = layerManager!.getSize()!;
         
         
-
+;
+    
 
 
 
@@ -74,11 +75,15 @@ var startIndex = startIndex
 index < size; index++)
         {
 
-    var collidableInterfaceCompositeInterface2: CollidableInterfaceCompositeInterface = layerManager!.getLayerAt(index) as CollidableInterfaceCompositeInterface;
-        
-        
+    var collidableInterfaceCompositeInterface2: CollidableInterfaceCompositeInterface = layerManager!.getLayerAt(index);
 
-this.collide(layerManager, collidableInterfaceCompositeInterface, collidableInterfaceCompositeInterface2)
+                         as CollidableInterfaceCompositeInterface;
+        
+        
+;
+    
+this.collide(layerManager, collidableInterfaceCompositeInterface, collidableInterfaceCompositeInterface2);
+    
 }
 
 }
@@ -94,12 +99,14 @@ var collidableInterfaceCompositeInterface2 = collidableInterfaceCompositeInterfa
     var collidableBase2: CollidableBaseBehavior = collidableInterfaceCompositeInterface2!.getCollidableInferface()!;
         
         
-
+;
+    
 
     var collidableBase: CollidableBaseBehavior = collidableInterfaceCompositeInterface!.getCollidableInferface()!;
         
         
-
+;
+    
 
                         if(collidableBase2!.isCollidable())
                         
@@ -108,8 +115,10 @@ var collidableInterfaceCompositeInterface2 = collidableInterfaceCompositeInterfa
                         if(collidableBase!.isCollision(collidableInterfaceCompositeInterface2))
                         
                                     {
-                                    collidableBase!.collide(collidableInterfaceCompositeInterface2)
-collidableBase2!.collide(collidableInterfaceCompositeInterface)
+                                    collidableBase!.collide(collidableInterfaceCompositeInterface2);
+    
+collidableBase2!.collide(collidableInterfaceCompositeInterface);
+    
 
                                     }
                                 

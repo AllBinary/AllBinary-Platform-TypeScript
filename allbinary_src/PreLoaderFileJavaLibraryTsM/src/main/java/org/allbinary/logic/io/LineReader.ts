@@ -62,17 +62,25 @@ public constructor (fileName: string){
 
         try {
             
-    var bytes: ByteArray = ByteArray(100000);
+    var bytes: number[] = new Array(100000);
         
         
+;
+    
+this.fileName= fileName;
+    
+idFile= AbFileInputStream(fileName);
+    
+idFile!.read(bytes);
+    
+string= bytes.decodeToString();
+    
 
-this.fileName= fileName
-idFile= AbFileInputStream(fileName)
-idFile!.read(bytes)
-string= bytes.decodeToString()
-} catch(e: Exception)
+                //: 
+} catch(e) 
             {
-logUtil!.put("File: " +fileName, this, "LineReader", e)
+logUtil!.put("File: " +fileName, this, "LineReader", e);
+    
 
 
                             {
@@ -91,7 +99,8 @@ logUtil!.put("File: " +fileName, this, "LineReader", e)
     var nextIndex: number = string.indexOf(CommonSeps.getInstance()!.NEW_LINE, index)!;
         
         
-
+;
+    
 
                         if(nextIndex ==  -1)
                         
@@ -111,9 +120,12 @@ logUtil!.put("File: " +fileName, this, "LineReader", e)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return true;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "hasNext", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "hasNext", e);
+    
 
 
                             {
@@ -140,7 +152,8 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "hasNext", e)
     var nextIndex: number = string.indexOf(CommonSeps.getInstance()!.NEW_LINE, index)!;
         
         
-
+;
+    
 
                         if(nextIndex ==  -1)
                         
@@ -156,17 +169,22 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "hasNext", e)
     var temp: string = string.substring(index, nextIndex)!;
         
         
-
-index= nextIndex +1
+;
+    
+index= nextIndex +1;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return temp;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "next", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "next", e);
+    
 
 
                             {

@@ -60,13 +60,15 @@ public constructor (node: Node){
 
     public setHeight(heightSizeConstraintInterface: SizeConstraintInterface){
 var heightSizeConstraintInterface = heightSizeConstraintInterface
-this.heightSizeConstraintInterface= heightSizeConstraintInterface
+this.heightSizeConstraintInterface= heightSizeConstraintInterface;
+    
 }
 
 
     public setWidth(widthSizeConstraintInterface: SizeConstraintInterface){
 var widthSizeConstraintInterface = widthSizeConstraintInterface
-this.widthSizeConstraintInterface= widthSizeConstraintInterface
+this.widthSizeConstraintInterface= widthSizeConstraintInterface;
+    
 }
 
 

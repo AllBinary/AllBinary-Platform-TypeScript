@@ -95,7 +95,8 @@ export class ProgressCanvas extends RunnableCanvas
                                 
     public paint(graphics: Graphics){
 var graphics = graphics
-paint2(graphics)
+paint2(graphics);
+    
 }
 
                                 }
@@ -145,7 +146,8 @@ paint2(graphics)
                 //@Throws(Error::class)
             
     public process(){
-pathFindingThreadPool!.runAPriorityTask()
+pathFindingThreadPool!.runAPriorityTask();
+    
 }
 
                                 }
@@ -159,9 +161,12 @@ pathFindingThreadPool!.runAPriorityTask()
  constructor (){
 
             super();
-            this.paintable= NullPaintable.getInstance()
-this.backgroundBasicColor= BasicColorFactory.getInstance()!.WHITE
-this.gauge= CustomGaugeItem.NULL_GAUGE_ITEM
+            this.paintable= NullPaintable.getInstance();
+    
+this.backgroundBasicColor= BasicColorFactory.getInstance()!.WHITE;
+    
+this.gauge= CustomGaugeItem.NULL_GAUGE_ITEM;
+    
 }
 
  constructor (title: string, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
@@ -170,14 +175,17 @@ this.gauge= CustomGaugeItem.NULL_GAUGE_ITEM
                 //var title = title
     //var backgroundBasicColor = backgroundBasicColor
     //var foregroundBasicColor = foregroundBasicColor
-this.backgroundBasicColor= backgroundBasicColor
-this.gauge= CustomGaugeItem(StringUtil.getInstance()!.EMPTY_STRING, maxValue.toInt(), 0, backgroundBasicColor, foregroundBasicColor)
+this.backgroundBasicColor= backgroundBasicColor;
+    
+this.gauge= CustomGaugeItem(StringUtil.getInstance()!.EMPTY_STRING, maxValue.toInt(), 0, backgroundBasicColor, foregroundBasicColor);
+    
 }
 
 
     public init(gameMidlet: AllBinaryMidlet){
 var gameMidlet = gameMidlet
-this.allbinaryMidlet= gameMidlet
+this.allbinaryMidlet= gameMidlet;
+    
 }
 
 
@@ -204,15 +212,24 @@ var cmdListener = cmdListener
 
 
     public start(){
-logUtil!.put(commonStrings!.START, this, commonStrings!.START_METHOD_NAME)
-this.setBackground(true)
-this.gauge.setHeight(30)
-this.gauge.setLabel(commonStrings!.PLEASE_WAIT)
-this.setText(TEXT)
-this.setValue(0)
-this.inGameProcessor= Processor.getInstance()
-this.paintable= GAUGE_PAINTABLE
-this.inProgress= true
+logUtil!.put(commonStrings!.START, this, commonStrings!.START_METHOD_NAME);
+    
+this.setBackground(true);
+    
+this.gauge.setHeight(30);
+    
+this.gauge.setLabel(commonStrings!.PLEASE_WAIT);
+    
+this.setText(TEXT);
+    
+this.setValue(0);
+    
+this.inGameProcessor= Processor.getInstance();
+    
+this.paintable= GAUGE_PAINTABLE;
+    
+this.inProgress= true;
+    
 }
 
 
@@ -226,45 +243,64 @@ this.inProgress= true
 
     public startBackground(background: boolean){
 var background = background
-logUtil!.put(commonStrings!.START, this, START_BACKGROUND)
+logUtil!.put(commonStrings!.START, this, START_BACKGROUND);
+    
 
     var myFont: MyFont = MyFont.getInstance()!;
         
         
-
-this.setBackground(background)
-this.gauge.setHeight(myFont!.DEFAULT_CHAR_HEIGHT +2)
-this.gauge.setLabel(backgroundLabel)
-this.setText(TEXT)
-this.setValue(0)
-this.inGameProcessor= Processor.getInstance()
-this.paintable= GAUGE_PAINTABLE
+;
+    
+this.setBackground(background);
+    
+this.gauge.setHeight(myFont!.DEFAULT_CHAR_HEIGHT +2);
+    
+this.gauge.setLabel(backgroundLabel);
+    
+this.setText(TEXT);
+    
+this.setValue(0);
+    
+this.inGameProcessor= Processor.getInstance();
+    
+this.paintable= GAUGE_PAINTABLE;
+    
 }
 
 
     public endActual(){
-this.allbinaryMidlet!.commandAction(GameCommandsFactory.getInstance()!.SHOW_GAME_CANVAS, NullCanvas.NULL_CANVAS)
-this.inProgress= false
-this.inGame()
+this.allbinaryMidlet!.commandAction(GameCommandsFactory.getInstance()!.SHOW_GAME_CANVAS, NullCanvas.NULL_CANVAS);
+    
+this.inProgress= false;
+    
+this.inGame();
+    
 }
 
 
     public inGame(){
-this.inGameProcessor= IN_GAME_PROCESSOR
+this.inGameProcessor= IN_GAME_PROCESSOR;
+    
 }
 
 
     public end(){
-logUtil!.put(commonStrings!.START, this, commonStrings!.END_METHOD_NAME)
-this.gauge.setValue(this.getMaxValue())
-this.endActual()
-this.paintable= NullPaintable.getInstance()
+logUtil!.put(commonStrings!.START, this, commonStrings!.END_METHOD_NAME);
+    
+this.gauge.setValue(this.getMaxValue());
+    
+this.endActual();
+    
+this.paintable= NullPaintable.getInstance();
+    
 }
 
 
     public endFromInitialLazyLoadingComplete(){
-this.gauge.setValue(this.getMaxValue())
-this.inGameProcessor= IN_GAME_PROCESSOR
+this.gauge.setValue(this.getMaxValue());
+    
+this.inGameProcessor= IN_GAME_PROCESSOR;
+    
 }
 
 
@@ -285,8 +321,10 @@ var value = value
 var text = text
 var index = index
 this.setText(StringMaker().
-                            append(text)!.append(SmallIntegerSingletonFactory.getInstance()!.getInstance(index)!.toString())!.toString())
-this.gauge.setValue(this.gauge.getValue() +this.getMaxValue() /value)
+                            append(text)!.append(SmallIntegerSingletonFactory.getInstance()!.getInstance(index)!.toString())!.toString());
+    
+this.gauge.setValue(this.gauge.getValue() +this.getMaxValue() /value);
+    
 }
 
 
@@ -295,9 +333,12 @@ var value = value
 var text = text
 var index = index
 this.setText(StringMaker().
-                            append(text)!.append(SmallIntegerSingletonFactory.getInstance()!.getInstance(index)!.toString())!.toString())
-PreLogUtil.put(this.text, this, ADD_PORTION)
-this.gauge.setValue(this.gauge.getValue() +this.getMaxValue() /value)
+                            append(text)!.append(SmallIntegerSingletonFactory.getInstance()!.getInstance(index)!.toString())!.toString());
+    
+PreLogUtil.put(this.text, this, ADD_PORTION);
+    
+this.gauge.setValue(this.gauge.getValue() +this.getMaxValue() /value);
+    
 }
 
 
@@ -308,25 +349,31 @@ var text = text
                         if(this.text != text)
                         
                                     {
-                                    PreLogUtil.put(text, this, ADD_PORTION)
+                                    PreLogUtil.put(text, this, ADD_PORTION);
+    
 
                                     }
                                 
-this.setText(text)
-this.gauge.setValue(this.gauge.getValue() +this.getMaxValue() /value)
+this.setText(text);
+    
+this.gauge.setValue(this.gauge.getValue() +this.getMaxValue() /value);
+    
 }
 
 
     setValue(value: number){
 var value = value
-this.value= value.toFloat()
-this.gauge.setValue(value.toFloat())
+this.value= value.toFloat();
+    
+this.gauge.setValue(value.toFloat());
+    
 }
 
 
     public paint(graphics: Graphics){
 var graphics = graphics
-this.paintable.paint(graphics)
+this.paintable.paint(graphics);
+    
 }
 
 
@@ -336,11 +383,16 @@ var graphics = graphics
     var displayInfoSingleton: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
         
         
-
-graphics.setColor(backgroundBasicColor!.toInt())
-graphics.fillRect(0, 0, displayInfoSingleton!.getLastWidth(), displayInfoSingleton!.getLastHeight())
-gauge.paint(graphics, 0, 0)
-hasPainted= true
+;
+    
+graphics.setColor(backgroundBasicColor!.toInt());
+    
+graphics.fillRect(0, 0, displayInfoSingleton!.getLastWidth(), displayInfoSingleton!.getLastHeight());
+    
+gauge.paint(graphics, 0, 0);
+    
+hasPainted= true;
+    
 }
 
 
@@ -361,7 +413,8 @@ var graphics = graphics
 
     public setText(text: string){
 var text = text
-this.text= text
+this.text= text;
+    
 }
 
 
@@ -377,7 +430,8 @@ this.text= text
 
     setBackground(background: boolean){
 var background = background
-this.background= background
+this.background= background;
+    
 }
 
 

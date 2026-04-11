@@ -18,7 +18,10 @@
 
 
 
-import { Vector } from "../java/util/Vector.js";
+            import Vector from "@ohos.util.Vector";
+        
+
+//import { Vector } from "../java/util/Vector.js";
 
     
 import { DomNodeHelper } from "../org/allbinary/data/tree/dom/DomNodeHelper.js";
@@ -93,12 +96,15 @@ public constructor (transformInfoInterface: TransformInfoInterface)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("View Name: " +transformInfoInterface!.getName(), this, "ComponentView()")
+                                    logUtil!.put("View Name: " +transformInfoInterface!.getName(), this, "ComponentView()");
+    
 
                                     }
                                 
-this.domNodeInterfaceVector= Vector()
-this.setTransformDocumentInterface(TransformHttpRequestDocumentFactory.getInstance(this.getPageContext(), this.getWeblisketSession()))
+this.domNodeInterfaceVector= Vector();
+    
+this.setTransformDocumentInterface(TransformHttpRequestDocumentFactory.getInstance(this.getPageContext(), this.getWeblisketSession()));
+    
 }
 
 
@@ -128,13 +134,15 @@ this.setTransformDocumentInterface(TransformHttpRequestDocumentFactory.getInstan
 
     public setTransformDocumentInterface(transformDocumentInterface: TransformDocumentInterface){
 var transformDocumentInterface = transformDocumentInterface
-this.transformDocumentInterface= transformDocumentInterface
+this.transformDocumentInterface= transformDocumentInterface;
+    
 }
 
 
     public addDomNodeInterface(domNodeInterface: DomNodeInterface){
 var domNodeInterface = domNodeInterface
-this.domNodeInterfaceVector!.add(domNodeInterface)
+this.domNodeInterfaceVector!.add(domNodeInterface);
+    
 }
 
 
@@ -147,7 +155,8 @@ this.domNodeInterfaceVector!.add(domNodeInterface)
     var size: number = domNodeInterfaceVector!.length!;
         
         
-
+;
+    
 
 
 
@@ -159,11 +168,15 @@ this.domNodeInterfaceVector!.add(domNodeInterface)
 index < size; index++)
         {
 
-    var domNodeInterface: DomNodeInterface = domNodeInterfaceVector!.get(index) as DomNodeInterface;
-        
-        
+    var domNodeInterface: DomNodeInterface = domNodeInterfaceVector!.get(index);
 
-this.transformDocumentInterface!.getBaseNode()!.appendChild(domNodeInterface!.toXmlNode(this.transformDocumentInterface!.getDoc()))
+                         as DomNodeInterface;
+        
+        
+;
+    
+this.transformDocumentInterface!.getBaseNode()!.appendChild(domNodeInterface!.toXmlNode(this.transformDocumentInterface!.getDoc()));
+    
 }
 
 
@@ -171,14 +184,19 @@ this.transformDocumentInterface!.getBaseNode()!.appendChild(domNodeInterface!.to
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getTransformDocumentInterface()!.getDoc();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "toXmlDoc()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "toXmlDoc()", e);
+    
 
                                     }
                                 
@@ -198,12 +216,14 @@ this.transformDocumentInterface!.getBaseNode()!.appendChild(domNodeInterface!.to
     var document: Document = this.getTransformInfoInterface()!.getDataDocument()!;
         
         
-
+;
+    
 
     var node: Node = DomNodeHelper.getFirstChildElement(document)!;
         
         
-
+;
+    
 
                         if(node != 
                                     null
@@ -214,14 +234,16 @@ this.transformDocumentInterface!.getBaseNode()!.appendChild(domNodeInterface!.to
     var dataNode: Node = this.getTransformDocumentInterface()!.getDoc()!.importNode(node, true)!;
         
         
-
+;
+    
 
                         if(dataNode != 
                                     null
                                 )
                         
                                     {
-                                    this.getTransformDocumentInterface()!.getBaseNode()!.appendChild(dataNode)
+                                    this.getTransformDocumentInterface()!.getBaseNode()!.appendChild(dataNode);
+    
 
                                     }
                                 
@@ -233,6 +255,8 @@ this.transformDocumentInterface!.getBaseNode()!.appendChild(domNodeInterface!.to
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getTransformDocumentInterface()!.getDoc();
+
+                        ;
     
 }
 
@@ -242,31 +266,37 @@ this.transformDocumentInterface!.getBaseNode()!.appendChild(domNodeInterface!.to
     public view(): string{
 
         try {
-            this.toXmlDoc()
+            this.toXmlDoc();
+    
 
     var success: string = DomDocumentHelper.toString(this.getDoc())!;
         
         
-
+;
+    
 
     var result: string = BasicTransformer(this.abeClientInformation, this.getTransformInfoInterface()).
                             translate(success)!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e);
+    
 
                                     }
                                 

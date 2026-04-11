@@ -18,13 +18,19 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
+            import Hashtable from "@ohos.util.HashMap";
+        
 import { Enumeration } from "../../../../../java/util/Enumeration.js";
 
     
-import { Hashtable } from "../../../../../java/util/Hashtable.js";
+
+//import { Hashtable } from "../../../../../java/util/Hashtable.js";
 
     
-import { Vector } from "../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../java/util/Vector.js";
 
     
 import { GameInfo } from "../../../../../org/allbinary/game/GameInfo.js";
@@ -55,7 +61,7 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 export class RemoteHighScores extends HighScores {
         
 
-    private static readonly hashTable: Hashtable<Any, Any> = new Hashtable<Any, Any>();
+    private static readonly hashTable: Hashtable<any, any> = new Hashtable<any, any>();
         
         
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
@@ -72,6 +78,8 @@ export class RemoteHighScores extends HighScores {
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return RemoteHighScores.getInstance(abeClientInformation, softwareInformation, gameInfo, heading, columnTwoHeading, isAscending, true);
+
+                        ;
     
 }
 
@@ -89,22 +97,28 @@ export class RemoteHighScores extends HighScores {
     var logUtil: LogUtil = LogUtil.getInstance()!;
         
         
-
+;
+    
 
         try {
             
-    var highScores: HighScores = hashTable!.get(gameInfo) as HighScores;
-        
-        
+    var highScores: HighScores = hashTable!.get(gameInfo);
 
+                         as HighScores;
+        
+        
+;
+    
 
                         if(highScores == 
                                     null
                                 )
                         
                                     {
-                                    highScores= RemoteHighScores(abeClientInformation, softwareInformation, gameInfo, heading, columnTwoHeading, isAscending, preload)
-hashTable!.put(gameInfo, highScores)
+                                    highScores= RemoteHighScores(abeClientInformation, softwareInformation, gameInfo, heading, columnTwoHeading, isAscending, preload);
+    
+hashTable!.put(gameInfo, highScores);
+    
 
                                     }
                                 
@@ -114,19 +128,25 @@ hashTable!.put(gameInfo, highScores)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return highScores;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, RemoteErrorHighScoresSingletonFactory.getInstance(), commonStrings!.GET_INSTANCE, e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, RemoteErrorHighScoresSingletonFactory.getInstance(), commonStrings!.GET_INSTANCE, e);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return RemoteErrorHighScoresSingletonFactory.getInstance();
+
+                        ;
     
 }
 
@@ -162,14 +182,18 @@ private constructor (abeClientInformation: AbeClientInformationInterface, softwa
 
                             //For kotlin this is before the body of the constructor.
                     
-this.abeClientInformation= abeClientInformation
-this.softwareInformation= softwareInformation
-this.setAscending(ascending)
+this.abeClientInformation= abeClientInformation;
+    
+this.softwareInformation= softwareInformation;
+    
+this.setAscending(ascending);
+    
 
                         if(preload)
                         
                                     {
-                                    RemoteHighScoresProcessorFactory.getInstance()!.process(this, this.abeClientInformation, gameInfo)
+                                    RemoteHighScoresProcessorFactory.getInstance()!.process(this, this.abeClientInformation, gameInfo);
+    
 
                                     }
                                 
@@ -178,18 +202,23 @@ this.setAscending(ascending)
 
     public addHighScore(newHighScore: HighScore){
     //var newHighScore = newHighScore
-RemoteHighScoresSubmissionProcessorFactory.getInstance()!.process(this, this.abeClientInformation, newHighScore)
+RemoteHighScoresSubmissionProcessorFactory.getInstance()!.process(this, this.abeClientInformation, newHighScore);
+    
 }
 
 
-    public update(hashtable: Hashtable<Any, Any>){
+    public update(hashtable: Hashtable<any, any>){
     //var hashtable = hashtable
-this.getList()!.clear()
+this.getList()!.clear();
+    
 
-    var vector: Vector = hashtable.get(RemoteHighScoresData.getInstance()!.HIGH_SCORES as Object) as Vector;
+    var vector: Vector = hashtable.get(RemoteHighScoresData.getInstance()!.HIGH_SCORES as Object);
+
+                         as Vector;
         
         
-
+;
+    
 
                         if(vector != 
                                     null
@@ -200,7 +229,8 @@ this.getList()!.clear()
     var size: number = vector.length!;
         
         
-
+;
+    
 
 
 
@@ -212,32 +242,44 @@ this.getList()!.clear()
 index < size; index++)
         {
 
-    var highScoreVector: Vector = vector.elementAt(index) as Vector;
-        
-        
+    var highScoreVector: Vector = vector.elementAt(index);
 
-
-    var displayName: string = highScoreVector!.elementAt(0) as String;
+                         as Vector;
         
         
+;
+    
 
+    var displayName: string = highScoreVector!.elementAt(0);
 
-    var score: string = highScoreVector!.elementAt(1) as String;
+                         as String;
         
         
+;
+    
 
+    var score: string = highScoreVector!.elementAt(1);
+
+                         as String;
+        
+        
+;
+    
 
     var longScore: number = Long.parseLong(score)!;
         
         
-
+;
+    
 
     var highScore: HighScore = new HighScore( -1, displayName, 
                             null, longScore);
         
         
-
-this.getList()!.add(highScore)
+;
+    
+this.getList()!.add(highScore);
+    
 }
 
 
@@ -248,20 +290,25 @@ this.getList()!.add(highScore)
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
+;
+    
 
-
-    var enumeration: Enumeration<Any?> = hashtable.elements()!;
+    var enumeration: Enumeration<any?> = hashtable.elements()!;
         
         
-
+;
+    
 
     var nextElement: any = {}
-
+;
+    
 
         while(enumeration.hasMoreElements())
         {
-nextElement= enumeration.nextElement()!
-logUtil!.put("NextElement: " +nextElement, this, commonStrings!.PROCESS)
+nextElement= enumeration.nextElement()!;
+    
+logUtil!.put("NextElement: " +nextElement, this, commonStrings!.PROCESS);
+    
 }
 
 
@@ -272,7 +319,8 @@ logUtil!.put("NextElement: " +nextElement, this, commonStrings!.PROCESS)
 
     setAscending(ascending: Boolean){
     //var ascending = ascending
-this.ascending= ascending
+this.ascending= ascending;
+    
 }
 
 

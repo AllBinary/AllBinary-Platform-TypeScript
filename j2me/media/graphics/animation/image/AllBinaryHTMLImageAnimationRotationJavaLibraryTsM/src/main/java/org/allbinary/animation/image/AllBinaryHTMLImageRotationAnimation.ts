@@ -97,12 +97,18 @@ protected constructor (originalImage: Image, image: Image, angleInfo: AngleInfo,
 
                             //For kotlin this is before the body of the constructor.
                     
-this.originalImage= originalImage
-this.imageToShow= image
-this.twoImages[0]= image
-this.twoImages[1]= ImageCopyUtil.getInstance()!.createImage(image)
-this.canvasSurfaceArray[0]= this.getCanvasSurface(this.twoImages[0]!)
-this.canvasSurfaceArray[1]= this.getCanvasSurface(this.twoImages[1]!)
+this.originalImage= originalImage;
+    
+this.imageToShow= image;
+    
+this.twoImages[0]= image;
+    
+this.twoImages[1]= ImageCopyUtil.getInstance()!.createImage(image);
+    
+this.canvasSurfaceArray[0]= this.getCanvasSurface(this.twoImages[0]!);
+    
+this.canvasSurfaceArray[1]= this.getCanvasSurface(this.twoImages[1]!);
+    
 }
 
 
@@ -112,18 +118,24 @@ this.canvasSurfaceArray[1]= this.getCanvasSurface(this.twoImages[1]!)
     var htmlImage: PlaynMutableImage = image as PlaynMutableImage;
         
         
+;
+    
 
+    var canvasImage: CanvasImage = htmlImage!.getImage();
 
-    var canvasImage: CanvasImage = htmlImage!.getImage() as CanvasImage;
+                         as CanvasImage;
         
         
-
+;
+    
 
     var canvasSurface: CanvasSurface = htmlImage!.getCanvasSurface(canvasImage)!;
         
         
-
-canvasSurface!.translate(originalImage!.getWidth() /2, originalImage!.getHeight() /2)
+;
+    
+canvasSurface!.translate(originalImage!.getWidth() /2, originalImage!.getHeight() /2);
+    
 
 
 
@@ -139,23 +151,27 @@ canvasSurface!.translate(originalImage!.getWidth() /2, originalImage!.getHeight(
     var changed: boolean = false;
         
         
-
+;
+    
 
                         if(this.getBasicColorP() == 
                                     null
                                  || this.getBasicColorP()!.toInt() != basicColor!.toInt())
                         
                                     {
-                                    changed= true
+                                    changed= true;
+    
 
                                     }
                                 
-super.setBasicColorP(basicColor)
+super.setBasicColorP(basicColor);
+    
 
                         if(changed)
                         
                                     {
-                                    this.updateImage()
+                                    this.updateImage();
+    
 
                                     }
                                 
@@ -168,22 +184,27 @@ super.setBasicColorP(basicColor)
     var changed: boolean = false;
         
         
-
+;
+    
 
                         if(this.alphaP != alpha)
                         
                                     {
-                                    changed= true
+                                    changed= true;
+    
 
                                     }
                                 
-super.setAlpha(alpha)
+super.setAlpha(alpha);
+    
 
                         if(changed)
                         
                                     {
-                                    this.alphaProcessor= AlphaProcessor.getInstance()
-this.updateImage()
+                                    this.alphaProcessor= AlphaProcessor.getInstance();
+    
+this.updateImage();
+    
 
                                     }
                                 
@@ -191,14 +212,18 @@ this.updateImage()
 
 
     public nextRotation(){
-super.nextRotation()
-this.updateImage()
+super.nextRotation();
+    
+this.updateImage();
+    
 }
 
 
     public previousRotation(){
-super.previousRotation()
-this.updateImage()
+super.previousRotation();
+    
+this.updateImage();
+    
 }
 
 
@@ -207,35 +232,47 @@ this.updateImage()
     var canvasSurface: CanvasSurface = this.canvasSurfaceArray[this.bufferedImageIndex]!;
         
         
-
-canvasSurface!.save()
-this.imageRotationUtil!.rotateImageClear(originalImage, this.twoImages[this.bufferedImageIndex]!, canvasSurface, this.angleInfo!.getAngle() +90)
-this.alphaProcessor!.setAlpha(imageModifierUtil, this.originalImage, this.twoImages[this.bufferedImageIndex]!, this.alphaP)
-this.imageRotationUtil!.drawImage(originalImage, imageToShow, canvasSurface)
-canvasSurface!.restore()
-this.swap()
+;
+    
+canvasSurface!.save();
+    
+this.imageRotationUtil!.rotateImageClear(originalImage, this.twoImages[this.bufferedImageIndex]!, canvasSurface, this.angleInfo!.getAngle() +90);
+    
+this.alphaProcessor!.setAlpha(imageModifierUtil, this.originalImage, this.twoImages[this.bufferedImageIndex]!, this.alphaP);
+    
+this.imageRotationUtil!.drawImage(originalImage, imageToShow, canvasSurface);
+    
+canvasSurface!.restore();
+    
+this.swap();
+    
 }
 
 
     public setFrame(index: number){
     //var index = index
-super.setFrame(index)
-this.updateImage()
+super.setFrame(index);
+    
+this.updateImage();
+    
 }
 
 
     public swap(){
-this.imageToShow= this.twoImages[this.bufferedImageIndex]!
+this.imageToShow= this.twoImages[this.bufferedImageIndex]!;
+    
 
                         if(this.bufferedImageIndex == 0)
                         
                                     {
-                                    this.bufferedImageIndex= 1
+                                    this.bufferedImageIndex= 1;
+    
 
                                     }
                                 
                         else {
-                            this.bufferedImageIndex= 0
+                            this.bufferedImageIndex= 0;
+    
 
                         }
                             
@@ -246,7 +283,8 @@ this.imageToShow= this.twoImages[this.bufferedImageIndex]!
 var graphics = graphics
 var x = x
 var y = y
-graphics.drawImage(this.imageToShow, x, y, anchor)
+graphics.drawImage(this.imageToShow, x, y, anchor);
+    
 }
 
 

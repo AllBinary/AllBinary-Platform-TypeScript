@@ -44,10 +44,11 @@ public constructor ()
 
                             //For kotlin this is before the body of the constructor.
                     
-this.affiliateSales= AffiliateSales()
+this.affiliateSales= AffiliateSales();
+    
 }
 
-public constructor (userHashMap: HashMap<Any, Any>)                        
+public constructor (userHashMap: HashMap<any, any>)                        
 
                             : super(userHashMap){
 
@@ -57,20 +58,24 @@ public constructor (userHashMap: HashMap<Any, Any>)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.affiliateSales= AffiliateSales()
+this.affiliateSales= AffiliateSales();
+    
 }
 
 
     public validateSession(weblisketSession: WeblisketSessionInterface){
 var weblisketSession = weblisketSession
-super.validateSession(weblisketSession)
-this.updateSession(weblisketSession)
+super.validateSession(weblisketSession);
+    
+this.updateSession(weblisketSession);
+    
 }
 
 
     public updateSession(weblisketSession: WeblisketSessionInterface){
 var weblisketSession = weblisketSession
-weblisketSession!.setStoreName(this.getPermissions())
+weblisketSession!.setStoreName(this.getPermissions());
+    
 }
 
 
@@ -80,6 +85,8 @@ weblisketSession!.setStoreName(this.getPermissions())
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.affiliateSales!.isValid();
+
+                        ;
     
 }
 

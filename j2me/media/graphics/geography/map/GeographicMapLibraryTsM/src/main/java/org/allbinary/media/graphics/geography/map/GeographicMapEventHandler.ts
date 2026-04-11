@@ -63,10 +63,13 @@ private constructor (){
     public addListener(gameLayer: AllBinaryGameLayer){
 var gameLayer = gameLayer
 
-                        if(!list.contains(gameLayer))
+                        if(!list.contains(gameLayer);
+
+                        )
                         
                                     {
-                                    list.add(gameLayer)
+                                    list.add(gameLayer);
+    
 
                                     }
                                 
@@ -74,15 +77,19 @@ var gameLayer = gameLayer
 
 
     public removeAllListeners(){
-this.list.clear()
-super.removeAllListeners()
+this.list.clear();
+    
+super.removeAllListeners();
+    
 }
 
 
     public removeListener(eventListenerInterface: EventListenerInterface){
 var eventListenerInterface = eventListenerInterface
-this.list.remove(eventListenerInterface)
-super.removeListener(eventListenerInterface)
+this.list.remove(eventListenerInterface);
+    
+super.removeListener(eventListenerInterface);
+    
 }
 
 
@@ -100,14 +107,21 @@ super.removeListener(eventListenerInterface)
 
         try {
             
-    var gameLayer: AllBinaryGameLayer = this.list.get(index) as AllBinaryGameLayer;
-        
-        
+    var gameLayer: AllBinaryGameLayer = this.list.get(index);
 
-gameLayer!.move()
-} catch(e: Exception)
+                         as AllBinaryGameLayer;
+        
+        
+;
+    
+gameLayer!.move();
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e);
+    
 }
 
 }

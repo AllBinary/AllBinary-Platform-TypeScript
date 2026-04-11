@@ -59,8 +59,10 @@ var eventListenerInterface = eventListenerInterface
     var gameInitializedListenerInterface: GameInitializedListenerInterface = (eventListenerInterface as GameInitializedListenerInterface);
         
         
-
-gameInitializedListenerInterface!.onGameInitialized(eventObject as GameInitializedEvent)
+;
+    
+gameInitializedListenerInterface!.onGameInitialized(eventObject as GameInitializedEvent);
+    
 }
 
 

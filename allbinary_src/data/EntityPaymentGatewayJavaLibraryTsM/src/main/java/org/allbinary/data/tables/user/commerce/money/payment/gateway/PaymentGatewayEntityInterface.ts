@@ -18,7 +18,10 @@
 
 
 
-import { Vector } from "../../../../../../../../../java/util/Vector.js";
+            import Vector from "@ohos.util.Vector";
+        
+
+//import { Vector } from "../../../../../../../../../java/util/Vector.js";
 
     
 import { PaymentGatewayInterface } from "../../../../../../../../../org/allbinary/business/user/commerce/money/payment/gateway/PaymentGatewayInterface.js";

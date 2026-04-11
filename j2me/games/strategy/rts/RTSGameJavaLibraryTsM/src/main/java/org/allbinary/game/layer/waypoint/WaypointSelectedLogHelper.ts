@@ -85,22 +85,29 @@ export class WaypointSelectedLogHelper extends WaypointLogHelper {
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(associatedAdvancedRTSGameLayer!.getName())
-stringBuffer!.append(" onWaypointEvent: ")
-stringBuffer!.append(advancedRTSGameLayer!.getName())
+;
+    
+stringBuffer!.append(associatedAdvancedRTSGameLayer!.getName());
+    
+stringBuffer!.append(" onWaypointEvent: ");
+    
+stringBuffer!.append(advancedRTSGameLayer!.getName());
+    
 
                         if(advancedRTSGameLayer!.getParentLayer() != 
                                     null
                                 )
                         
                                     {
-                                    stringBuffer!.append(" With Parent: ")
-stringBuffer!.append(advancedRTSGameLayer!.getParentLayer()!.getName())
+                                    stringBuffer!.append(" With Parent: ");
+    
+stringBuffer!.append(advancedRTSGameLayer!.getParentLayer()!.getName());
+    
 
                                     }
                                 
-logUtil!.put(stringBuffer!.toString(), this, "onWaypointEvent")
+logUtil!.put(stringBuffer!.toString(), this, "onWaypointEvent");
+    
 }
 
 
@@ -111,22 +118,29 @@ logUtil!.put(stringBuffer!.toString(), this, "onWaypointEvent")
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(associatedAdvancedRTSGameLayer!.getName())
-stringBuffer!.append(" Adding Waypoint: ")
-stringBuffer!.append(advancedRTSGameLayer!.getName())
+;
+    
+stringBuffer!.append(associatedAdvancedRTSGameLayer!.getName());
+    
+stringBuffer!.append(" Adding Waypoint: ");
+    
+stringBuffer!.append(advancedRTSGameLayer!.getName());
+    
 
                         if(advancedRTSGameLayer!.getParentLayer() != 
                                     null
                                 )
                         
                                     {
-                                    stringBuffer!.append(" With Parent: ")
-stringBuffer!.append(advancedRTSGameLayer!.getParentLayer()!.getName())
+                                    stringBuffer!.append(" With Parent: ");
+    
+stringBuffer!.append(advancedRTSGameLayer!.getParentLayer()!.getName());
+    
 
                                     }
                                 
-logUtil!.put(stringBuffer!.toString(), this, "selected: onWaypointEvent")
+logUtil!.put(stringBuffer!.toString(), this, "selected: onWaypointEvent");
+    
 }
 
 
@@ -138,11 +152,16 @@ logUtil!.put(stringBuffer!.toString(), this, "selected: onWaypointEvent")
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(associatedAdvancedRTSGameLayer!.getName())
-stringBuffer!.append(" Waypoints: ")
-stringBuffer!.append(stringUtil!.toString(list))
-logUtil!.put(stringBuffer!.toString(), this, "selected: onWaypointEvent")
+;
+    
+stringBuffer!.append(associatedAdvancedRTSGameLayer!.getName());
+    
+stringBuffer!.append(" Waypoints: ");
+    
+stringBuffer!.append(stringUtil!.toString(list));
+    
+logUtil!.put(stringBuffer!.toString(), this, "selected: onWaypointEvent");
+    
 }
 
 
@@ -155,14 +174,22 @@ var rtsLayer = rtsLayer
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(associatedAdvancedRTSGameLayer!.getName())
-stringBuffer!.append(commonSeps!.SPACE)
-stringBuffer!.append(waypointName)
-stringBuffer!.append(" Insert: ")
-stringBuffer!.append(rtsLayer!.getName())
-stringBuffer!.append(" for Waypoint: ")
-logUtil!.put(stringBuffer!.toString(), this, "selected: insertWaypoint")
+;
+    
+stringBuffer!.append(associatedAdvancedRTSGameLayer!.getName());
+    
+stringBuffer!.append(commonSeps!.SPACE);
+    
+stringBuffer!.append(waypointName);
+    
+stringBuffer!.append(" Insert: ");
+    
+stringBuffer!.append(rtsLayer!.getName());
+    
+stringBuffer!.append(" for Waypoint: ");
+    
+logUtil!.put(stringBuffer!.toString(), this, "selected: insertWaypoint");
+    
 }
 
 
@@ -176,15 +203,24 @@ logUtil!.put(stringBuffer!.toString(), this, "selected: insertWaypoint")
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(associatedAdvancedRTSGameLayer!.getName())
-stringBuffer!.append(commonSeps!.SPACE)
-stringBuffer!.append(waypointName)
-stringBuffer!.append(" Insert: ")
-stringBuffer!.append(rtsLayer!.getName())
-stringBuffer!.append(" Waypoints: ")
-stringBuffer!.append(stringUtil!.toString(list))
-logUtil!.put(stringBuffer!.toString(), this, "selected: insertWaypoint")
+;
+    
+stringBuffer!.append(associatedAdvancedRTSGameLayer!.getName());
+    
+stringBuffer!.append(commonSeps!.SPACE);
+    
+stringBuffer!.append(waypointName);
+    
+stringBuffer!.append(" Insert: ");
+    
+stringBuffer!.append(rtsLayer!.getName());
+    
+stringBuffer!.append(" Waypoints: ");
+    
+stringBuffer!.append(stringUtil!.toString(list));
+    
+logUtil!.put(stringBuffer!.toString(), this, "selected: insertWaypoint");
+    
 }
 
 
@@ -195,26 +231,36 @@ logUtil!.put(stringBuffer!.toString(), this, "selected: insertWaypoint")
     var size: number = pathsList!.size()!;
         
         
-
+;
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(associatedAdvancedRTSGameLayer!.getName())
-stringBuffer!.append(commonSeps!.SPACE)
-stringBuffer!.append(CommonLabels.getInstance()!.START)
-stringBuffer!.appendint(size)
-stringBuffer!.append(" -> ")
-stringBuffer!.append(stringUtil!.toString(pathsList))
-logUtil!.put(stringBuffer!.toString(), this, "selected: setRandomGeographicMapCellHistory")
+;
+    
+stringBuffer!.append(associatedAdvancedRTSGameLayer!.getName());
+    
+stringBuffer!.append(commonSeps!.SPACE);
+    
+stringBuffer!.append(CommonLabels.getInstance()!.START);
+    
+stringBuffer!.appendint(size);
+    
+stringBuffer!.append(" -> ");
+    
+stringBuffer!.append(stringUtil!.toString(pathsList));
+    
+logUtil!.put(stringBuffer!.toString(), this, "selected: setRandomGeographicMapCellHistory");
+    
 }
 
 
     public moveAwayFromBuilding(associatedAdvancedRTSGameLayer: PathFindingLayerInterface){
     //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
 logUtil!.put(StringMaker().
-                            append(associatedAdvancedRTSGameLayer!.getName())!.append(" Trying to move away from building")!.toString(), this, "selected: moveAwayFromBuilding")
+                            append(associatedAdvancedRTSGameLayer!.getName())!.append(" Trying to move away from building")!.toString(), this, "selected: moveAwayFromBuilding");
+    
 }
 
 
@@ -222,14 +268,16 @@ logUtil!.put(StringMaker().
     //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
     //var unitWaypointBehavior = unitWaypointBehavior
 logUtil!.put(StringMaker().
-                            append(associatedAdvancedRTSGameLayer!.getName())!.append(unitWaypointBehavior!.getMovementLogicAsString())!.toString(), this, "needToMove")
+                            append(associatedAdvancedRTSGameLayer!.getName())!.append(unitWaypointBehavior!.getMovementLogicAsString())!.toString(), this, "needToMove");
+    
 }
 
 
     public setRandomGeographicMapCellHistory(associatedAdvancedRTSGameLayer: PathFindingLayerInterface){
     //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
 logUtil!.put(StringMaker().
-                            append(associatedAdvancedRTSGameLayer!.getName())!.append(" pathsList is null")!.toString(), this, "setRandomGeographicMapCellHistory")
+                            append(associatedAdvancedRTSGameLayer!.getName())!.append(" pathsList is null")!.toString(), this, "setRandomGeographicMapCellHistory");
+    
 }
 
 
@@ -242,7 +290,9 @@ logUtil!.put(StringMaker().
                                     null
                                 )
                         logUtil!.put(StringMaker().
-                            append(associatedAdvancedRTSGameLayer!.getName())!.append(" currentPathGeographicMapCellPosition: ")!.append(stringUtil!.toString(currentPathGeographicMapCellPosition))!.toString(), this, "setCurrentPathGeographicMapCellPosition")
+                            append(associatedAdvancedRTSGameLayer!.getName())!.append(" currentPathGeographicMapCellPosition: ")!.append(stringUtil!.toString(currentPathGeographicMapCellPosition))!.toString(), this, "setCurrentPathGeographicMapCellPosition");
+
+                        
 }
 
 
@@ -253,7 +303,9 @@ logUtil!.put(StringMaker().
 
                         if(existingNextUnvisitedPathGeographicMapCellPosition != nextUnvisitedPathGeographicMapCellPosition)
                         logUtil!.put(StringMaker().
-                            append(associatedAdvancedRTSGameLayer!.getName())!.append(" nextUnvisitedPathGeographicMapCellPosition: ")!.append(stringUtil!.toString(nextUnvisitedPathGeographicMapCellPosition))!.toString(), this, "setNextUnvisitedPathGeographicMapCellPosition")
+                            append(associatedAdvancedRTSGameLayer!.getName())!.append(" nextUnvisitedPathGeographicMapCellPosition: ")!.append(stringUtil!.toString(nextUnvisitedPathGeographicMapCellPosition))!.toString(), this, "setNextUnvisitedPathGeographicMapCellPosition");
+
+                        
 }
 
 

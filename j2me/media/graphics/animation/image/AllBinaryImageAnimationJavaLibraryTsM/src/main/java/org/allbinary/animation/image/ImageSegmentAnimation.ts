@@ -47,7 +47,7 @@ export class ImageSegmentAnimation extends ImageAnimation {
 
     private circularIndexUtil: CircularIndexUtil
 
-    private sequenceArray: IntArray
+    private sequenceArray: number[]
 protected constructor (image: Image, animationBehavior: AnimationBehavior)                        
 
                             : this(image, PrimitiveIntUtil.getArrayInstance(), animationBehavior){
@@ -61,7 +61,7 @@ protected constructor (image: Image, animationBehavior: AnimationBehavior)
                     
 }
 
-protected constructor (image: Image, sequenceArray: IntArray, animationBehavior: AnimationBehavior)                        
+protected constructor (image: Image, sequenceArray: number[], animationBehavior: AnimationBehavior)                        
 
                             : super(image, animationBehavior){
 
@@ -73,28 +73,37 @@ protected constructor (image: Image, sequenceArray: IntArray, animationBehavior:
 
                             //For kotlin this is before the body of the constructor.
                     
-this.startX= 0
-this.startY= 0
-this.drawWidth= this.getImage()!.getWidth()
-this.drawHeight= this.getImage()!.getHeight()
-this.circularIndexUtil= CircularIndexUtil.getInstance(this.drawHeight)
-this.sequenceArray= sequenceArray
+this.startX= 0;
+    
+this.startY= 0;
+    
+this.drawWidth= this.getImage()!.getWidth();
+    
+this.drawHeight= this.getImage()!.getHeight();
+    
+this.circularIndexUtil= CircularIndexUtil.getInstance(this.drawHeight);
+    
+this.sequenceArray= sequenceArray;
+    
 }
 
 
     public nextFrame(){
-this.circularIndexUtil!.next()
+this.circularIndexUtil!.next();
+    
 }
 
 
     public previousFrame(){
-this.circularIndexUtil!.previous()
+this.circularIndexUtil!.previous();
+    
 }
 
 
     public setFrame(index: number){
 var index = index
-this.circularIndexUtil!.setIndex(index)
+this.circularIndexUtil!.setIndex(index);
+    
 }
 
 
@@ -104,6 +113,8 @@ this.circularIndexUtil!.setIndex(index)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.circularIndexUtil!.getIndex();
+
+                        ;
     
 }
 
@@ -114,17 +125,20 @@ this.circularIndexUtil!.setIndex(index)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.circularIndexUtil!.getSize();
+
+                        ;
     
 }
 
 
-    public setSequence(sequenceArray: IntArray){
+    public setSequence(sequenceArray: number[]){
 var sequenceArray = sequenceArray
-this.sequenceArray= sequenceArray
+this.sequenceArray= sequenceArray;
+    
 }
 
 
-    public getSequence(): IntArray{
+    public getSequence(): number[]{
 
 
 
@@ -153,7 +167,8 @@ var y = y
 
     public setStartX(startX: number){
 var startX = startX
-this.startX= startX
+this.startX= startX;
+    
 }
 
 
@@ -169,7 +184,8 @@ this.startX= startX
 
     public setStartY(startY: number){
 var startY = startY
-this.startY= startY
+this.startY= startY;
+    
 }
 
 
@@ -185,7 +201,8 @@ this.startY= startY
 
     public setDrawWidth(drawWidth: number){
 var drawWidth = drawWidth
-this.drawWidth= drawWidth
+this.drawWidth= drawWidth;
+    
 }
 
 
@@ -201,7 +218,8 @@ this.drawWidth= drawWidth
 
     public setDrawHeight(drawHeight: number){
 var drawHeight = drawHeight
-this.drawHeight= drawHeight
+this.drawHeight= drawHeight;
+    
 }
 
 

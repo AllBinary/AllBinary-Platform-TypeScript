@@ -84,17 +84,20 @@ var httpServletRequest = httpServletRequest
     var fileUpload: AbFileUpload = new AbFileUpload(AbFileItemFactory());
         
         
-
+;
+    
 
     var iterator: FileItemIterator = fileUpload!.getItemIterator(httpServletRequest)!;
         
         
-
+;
+    
 
     var items: List = new ArrayList();
         
         
-
+;
+    
 
         while(iterator.hasNext())
         {
@@ -102,14 +105,18 @@ var httpServletRequest = httpServletRequest
     var fileItemStream: FileItemStream = iterator.next()!;
         
         
-
-HttpFileUploadUtil.log(fileItemStream)
+;
+    
+HttpFileUploadUtil.log(fileItemStream);
+    
 
     var fileItem: AbFileItem = new AbFileItem(fileItemStream!.getName(), fileItemStream!.getFieldName(), FileItemUtil.getInstance()!.encodeToByteArray());
         
         
-
-items.add(fileItem)
+;
+    
+items.add(fileItem);
+    
 }
 
 
@@ -118,7 +125,9 @@ items.add(fileItem)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return items;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPERROR))
@@ -128,8 +137,10 @@ items.add(fileItem)
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, "get()", e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, "get()", e);
+    
 
                                     }
                                 
@@ -152,25 +163,32 @@ var httpServletRequest = httpServletRequest
     var abFileUpload: AbFileUpload = new AbFileUpload(AbFileItemFactory());
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return abFileUpload!.parseRequest(httpServletRequest);
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "get()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "get()", e);
+    
 
                                     }
                                 

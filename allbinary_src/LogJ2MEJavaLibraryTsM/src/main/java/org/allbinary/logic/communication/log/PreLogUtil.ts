@@ -24,6 +24,9 @@ import { NullUtil } from "../../../../../org/allbinary/logic/NullUtil.js";
 import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings.js";
 
     
+import { LogFormatUtil } from "../../../../../org/allbinary/logic/communication/log/LogFormatUtil.js";
+
+    
 
 /*actual*/ export class PreLogUtil
             extends Object
@@ -34,7 +37,8 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
     //var specialMessage = specialMessage
     //var anyType = anyType
     //var functionName = functionName
-put(specialMessage, anyType, functionName, NullUtil.getInstance()!.NULL_OBJECT)
+PreLogUtil.putOE(specialMessage, anyType, functionName, NullUtil.getInstance()!.NULL_OBJECT);
+    
 }
 
 
@@ -42,7 +46,7 @@ put(specialMessage, anyType, functionName, NullUtil.getInstance()!.NULL_OBJECT)
         
         
 
-    /*actual*/ public static put(specialMessage: string, anyType: any = {}, functionName: string, exception: any = {}){
+    /*actual*/ public static putOE(specialMessage: string, anyType: any = {}, functionName: string, exception: any = {}){
     //var specialMessage = specialMessage
     //var anyType = anyType
     //var functionName = functionName
@@ -51,15 +55,16 @@ put(specialMessage, anyType, functionName, NullUtil.getInstance()!.NULL_OBJECT)
     var className: string = CommonStrings.getInstance()!.EMPTY;
         
         
+;
+    
 
-
-                        if(anyType!::class.toString()! != 
+                        if(anyType!.constructor.name.toString()! != 
                                     null
                                 )
                         
                                     {
-                                    className= anyType!::class.toString()!.toCharArray().concatToString()
-                                
+                                    className= anyType!.constructor.name.toString()!;
+    
 
                                     }
                                 
@@ -67,24 +72,30 @@ put(specialMessage, anyType, functionName, NullUtil.getInstance()!.NULL_OBJECT)
     var message: string = LogFormatUtil.getInstance()!.get(className, functionName, specialMessage, exception)!;
         
         
-
-System.out.print(LOG_SUCCESS)
-System.out.println(message)
+;
+    
+System.out.print(PreLogUtil.LOG_SUCCESS);
+    
+System.out.println(message);
+    
 }
 
 
-    /*actual*/ public static put(specialMessage: string, className: string, functionName: string, exception: any = {}){
-var specialMessage = specialMessage
-var className = className
-var functionName = functionName
-var exception = exception
+    /*actual*/ public static putSE(specialMessage: string, className: string, functionName: string, exception: any = {}){
+    //var specialMessage = specialMessage
+    //var className = className
+    //var functionName = functionName
+    //var exception = exception
 
     var message: string = LogFormatUtil.getInstance()!.get(className, functionName, specialMessage, exception)!;
         
         
-
-System.out.print(LOG_SUCCESS)
-System.out.println(message)
+;
+    
+System.out.print(PreLogUtil.LOG_SUCCESS);
+    
+System.out.println(message);
+    
 }
 
 public constructor (){

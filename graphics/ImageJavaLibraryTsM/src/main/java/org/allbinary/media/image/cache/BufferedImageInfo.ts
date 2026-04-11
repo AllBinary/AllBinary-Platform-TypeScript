@@ -41,9 +41,12 @@ public constructor (width: number, height: number, type: number){
             var width = width
 var height = height
 var type = type
-this.width= width
-this.height= height
-this.type= type
+this.width= width;
+    
+this.height= height;
+    
+this.type= type;
+    
 }
 
 
@@ -59,7 +62,8 @@ this.type= type
 
     public setWidth(width: number){
 var width = width
-this.width= width
+this.width= width;
+    
 }
 
 
@@ -75,7 +79,8 @@ this.width= width
 
     public setHeight(height: number){
 var height = height
-this.height= height
+this.height= height;
+    
 }
 
 
@@ -91,7 +96,8 @@ this.height= height
 
     public setType(type: number){
 var type = type
-this.type= type
+this.type= type;
+    
 }
 
 
@@ -100,24 +106,35 @@ this.type= type
     var commonLabels: CommonLabels = CommonLabels.getInstance()!;
         
         
-
+;
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("BufferedImageInfo -")
-stringBuffer!.append(commonLabels!.WIDTH_LABEL)
-stringBuffer!.appendint(this.getWidth())
-stringBuffer!.append(commonLabels!.HEIGHT_LABEL)
-stringBuffer!.appendint(this.getHeight())
-stringBuffer!.append(" Type: ")
-stringBuffer!.appendint(this.getType())
+;
+    
+stringBuffer!.append("BufferedImageInfo -");
+    
+stringBuffer!.append(commonLabels!.WIDTH_LABEL);
+    
+stringBuffer!.appendint(this.getWidth());
+    
+stringBuffer!.append(commonLabels!.HEIGHT_LABEL);
+    
+stringBuffer!.appendint(this.getHeight());
+    
+stringBuffer!.append(" Type: ");
+    
+stringBuffer!.appendint(this.getType());
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

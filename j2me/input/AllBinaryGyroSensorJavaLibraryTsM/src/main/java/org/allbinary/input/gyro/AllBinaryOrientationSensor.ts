@@ -37,7 +37,7 @@ import { PrimitiveFloatUtil } from "../../../../org/allbinary/logic/math/Primiti
 export class AllBinaryOrientationSensor extends AllBinarySensor {
         
 
-    sensorDataFloatArray: FloatArray = PrimitiveFloatUtil.getArrayInstance()!;
+    sensorDataFloatArray: number[] = PrimitiveFloatUtil.getArrayInstance()!;
         
         
 
@@ -47,7 +47,8 @@ export class AllBinaryOrientationSensor extends AllBinarySensor {
 
     public setCompleteMotionGestureInputEventListener(completeMotionGestureInputEventListenerInterface: CompleteMotionGestureInputEventListenerInterface){
 var completeMotionGestureInputEventListenerInterface = completeMotionGestureInputEventListenerInterface
-this.listener= completeMotionGestureInputEventListenerInterface
+this.listener= completeMotionGestureInputEventListenerInterface;
+    
 }
 
 protected constructor (){

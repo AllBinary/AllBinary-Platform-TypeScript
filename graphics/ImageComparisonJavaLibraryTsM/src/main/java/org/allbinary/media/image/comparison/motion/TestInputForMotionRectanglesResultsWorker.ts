@@ -18,6 +18,10 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
+            import Hashtable from "@ohos.util.HashMap";
+        
 import { awt } from "../../../../../../java/awt.js";
 
     
@@ -27,10 +31,12 @@ import { InputEvent } from "../../../../../../java/awt/event/InputEvent.js";
 import { KeyEvent } from "../../../../../../java/awt/event/KeyEvent.js";
 
     
-import { Hashtable } from "../../../../../../java/util/Hashtable.js";
+
+//import { Hashtable } from "../../../../../../java/util/Hashtable.js";
 
     
-import { Vector } from "../../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../../java/util/Vector.js";
 
     
 import { InputRobotFactory } from "../../../../../../org/allbinary/input/automation/robot/InputRobotFactory.js";
@@ -80,7 +86,8 @@ export class TestInputForMotionRectanglesResultsWorker
 public constructor (){
 
             super();
-            this.motionRectanglesVector= Vector()
+            this.motionRectanglesVector= Vector();
+    
 }
 
 
@@ -96,14 +103,17 @@ public constructor (){
 
     public onMotionRectanglesImageComparisonResultsEvent(motionRectanglesImageComparisonResultsEvent: MotionRectanglesResultsEvent){
 var motionRectanglesImageComparisonResultsEvent = motionRectanglesImageComparisonResultsEvent
-this.getMotionRectanglesVector()!.add(motionRectanglesImageComparisonResultsEvent!.getMotionRectangles())
-this.run()
+this.getMotionRectanglesVector()!.add(motionRectanglesImageComparisonResultsEvent!.getMotionRectangles());
+    
+this.run();
+    
 }
 
 
     public onEvent(allBinaryEventObject: AllBinaryEventObject){
 var allBinaryEventObject = allBinaryEventObject
-this.onMotionRectanglesImageComparisonResultsEvent(allBinaryEventObject as MotionRectanglesResultsEvent)
+this.onMotionRectanglesImageComparisonResultsEvent(allBinaryEventObject as MotionRectanglesResultsEvent);
+    
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
@@ -121,56 +131,71 @@ this.onMotionRectanglesImageComparisonResultsEvent(allBinaryEventObject as Motio
 
     public setRunning(running: boolean){
 var running = running
-this.running= running
+this.running= running;
+    
 }
 
 
     public run(){
 
         try {
-            logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.RUN)
-this.setRunning(true)
+            logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.RUN);
+    
+this.setRunning(true);
+    
 
     var timeHelper: TimeDelayHelper = new TimeDelayHelper(1000);
         
         
+;
+    
+timeHelper!.setStartTime();
+    
 
-timeHelper!.setStartTime()
+    var motionRectangles: MotionRectangles = this.getMotionRectanglesVector()!.get(0);
 
-    var motionRectangles: MotionRectangles = this.getMotionRectanglesVector()!.get(0) as MotionRectangles;
+                         as MotionRectangles;
         
         
-
+;
+    
 
     var motionRectangleVector: Vector = motionRectangles!.getVector()!;
         
         
-
+;
+    
 
                         if(motionRectangleVector!.length > 0)
                         
                                     {
                                     
-    var rectangle: Rectangle = motionRectangleVector!.get(0) as Rectangle;
-        
-        
+    var rectangle: Rectangle = motionRectangleVector!.get(0);
 
-
-    var robotHashtable: Hashtable<Any, Any> = InputRobotFactory.getInstance()!.get()!;
+                         as Rectangle;
         
         
+;
+    
 
-
-    var inputTypeNameArray: any = {}[] = robotHashtable!.keys.toTypedArray()!;
+    var robotHashtable: Hashtable<any, any> = InputRobotFactory.getInstance()!.get()!;
         
         
+;
+    
 
+    var inputTypeNameArray: any[] = robotHashtable!.keys.toTypedArray()!;
+        
+        
+;
+    
 
     var size: number = inputTypeNameArray!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -185,41 +210,70 @@ index < size; index++)
     var inputTypeNameString: string = inputTypeNameArray[index]! as String;
         
         
+;
+    
 
+    var inputRobotInterface: InputRobotInterface = robotHashtable!.get(inputTypeNameString as Object);
 
-    var inputRobotInterface: InputRobotInterface = robotHashtable!.get(inputTypeNameString as Object) as InputRobotInterface;
+                         as InputRobotInterface;
         
         
-
-inputRobotInterface!.mouseMoveToTarget(rectangle)
+;
+    
+inputRobotInterface!.mouseMoveToTarget(rectangle);
+    
 
                         if(inputRobotInterface!.getName()!.compareTo(TempInputRobotNames.DX_NAME) == 0)
                         
                                     {
-                                    inputRobotInterface!.mousePress(InputEvent.BUTTON1_MASK)
-Thread.sleep(300)
-inputRobotInterface!.mouseRelease(InputEvent.BUTTON1_MASK)
-inputRobotInterface!.mousePress(InputEvent.BUTTON2_MASK)
-Thread.sleep(300)
-inputRobotInterface!.mouseRelease(InputEvent.BUTTON2_MASK)
-inputRobotInterface!.mousePress(InputEvent.BUTTON3_MASK)
-Thread.sleep(300)
-inputRobotInterface!.mouseRelease(InputEvent.BUTTON3_MASK)
-inputRobotInterface!.keyPress(KeyEvent.VK_1)
-Thread.sleep(300)
-inputRobotInterface!.keyRelease(KeyEvent.VK_1)
-inputRobotInterface!.keyPress(KeyEvent.VK_2)
-Thread.sleep(300)
-inputRobotInterface!.keyRelease(KeyEvent.VK_2)
-inputRobotInterface!.keyPress(KeyEvent.VK_3)
-Thread.sleep(300)
-inputRobotInterface!.keyRelease(KeyEvent.VK_3)
-inputRobotInterface!.keyPress(KeyEvent.VK_4)
-Thread.sleep(300)
-inputRobotInterface!.keyRelease(KeyEvent.VK_4)
-inputRobotInterface!.keyPress(KeyEvent.VK_F1)
-Thread.sleep(300)
-inputRobotInterface!.keyRelease(KeyEvent.VK_F1)
+                                    inputRobotInterface!.mousePress(InputEvent.BUTTON1_MASK);
+    
+Thread.sleep(300);
+    
+inputRobotInterface!.mouseRelease(InputEvent.BUTTON1_MASK);
+    
+inputRobotInterface!.mousePress(InputEvent.BUTTON2_MASK);
+    
+Thread.sleep(300);
+    
+inputRobotInterface!.mouseRelease(InputEvent.BUTTON2_MASK);
+    
+inputRobotInterface!.mousePress(InputEvent.BUTTON3_MASK);
+    
+Thread.sleep(300);
+    
+inputRobotInterface!.mouseRelease(InputEvent.BUTTON3_MASK);
+    
+inputRobotInterface!.keyPress(KeyEvent.VK_1);
+    
+Thread.sleep(300);
+    
+inputRobotInterface!.keyRelease(KeyEvent.VK_1);
+    
+inputRobotInterface!.keyPress(KeyEvent.VK_2);
+    
+Thread.sleep(300);
+    
+inputRobotInterface!.keyRelease(KeyEvent.VK_2);
+    
+inputRobotInterface!.keyPress(KeyEvent.VK_3);
+    
+Thread.sleep(300);
+    
+inputRobotInterface!.keyRelease(KeyEvent.VK_3);
+    
+inputRobotInterface!.keyPress(KeyEvent.VK_4);
+    
+Thread.sleep(300);
+    
+inputRobotInterface!.keyRelease(KeyEvent.VK_4);
+    
+inputRobotInterface!.keyPress(KeyEvent.VK_F1);
+    
+Thread.sleep(300);
+    
+inputRobotInterface!.keyRelease(KeyEvent.VK_F1);
+    
 
                                     }
                                 
@@ -228,13 +282,20 @@ inputRobotInterface!.keyRelease(KeyEvent.VK_F1)
 
                                     }
                                 
-this.index++
-this.getMotionRectanglesVector()!.remove(motionRectangles)
-logUtil!.put(CommonLabels.getInstance()!.ELAPSED +timeHelper!.getElapsed(), this, this.commonStrings!.RUN)
-logUtil!.put(this.commonStrings!.END, this, this.commonStrings!.RUN)
-} catch(e: Exception)
+this.index++;
+    
+this.getMotionRectanglesVector()!.remove(motionRectangles);
+    
+logUtil!.put(CommonLabels.getInstance()!.ELAPSED +timeHelper!.getElapsed(), this, this.commonStrings!.RUN);
+    
+logUtil!.put(this.commonStrings!.END, this, this.commonStrings!.RUN);
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e)
+logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e);
+    
 }
 
 }

@@ -57,32 +57,38 @@ protected constructor (){
     var ROOT: string = "/mine";
         
         
-
+;
+    
 
     var SMALL: string = "_20_by_20.png";
         
         
-
+;
+    
 
     var MEDIUM: string = SMALL;
         
         
-
+;
+    
 
     var SIZE_FOUR: string = SMALL;
         
         
-
+;
+    
 
     var SIZE_FIVE: string = SMALL;
         
         
-
+;
+    
 
     var SIZE_SIX: string = SMALL;
         
         
-
+;
+    
 
     var SIZE: string[] = 
                                                         [
@@ -90,8 +96,10 @@ protected constructor (){
                                                         ];
         
         
-
-super.init(ROOT, SIZE)
+;
+    
+super.init(ROOT, SIZE);
+    
 }
 
 

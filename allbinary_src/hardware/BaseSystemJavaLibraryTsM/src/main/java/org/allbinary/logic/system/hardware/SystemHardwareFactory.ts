@@ -62,20 +62,24 @@ export class SystemHardwareFactory
     var osBuffer: StringMaker = new StringMaker();
         
         
-
-osBuffer!.append("Hardware Info: \n")
+;
+    
+osBuffer!.append("Hardware Info: \n");
+    
 
                         if(hardwareInterface != 
                                     null
                                 )
                         
                                     {
-                                    osBuffer!.append(hardwareInterface!.toString())
+                                    osBuffer!.append(hardwareInterface!.toString());
+    
 
                                     }
                                 
                         else {
-                            osBuffer!.append(StringUtil.getInstance()!.NULL_STRING)
+                            osBuffer!.append(StringUtil.getInstance()!.NULL_STRING);
+    
 
                         }
                             
@@ -84,6 +88,8 @@ osBuffer!.append("Hardware Info: \n")
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return osBuffer!.toString();
+
+                        ;
     
 }
 
@@ -109,14 +115,19 @@ var operatingSystemInterface = operatingSystemInterface
                         if(hardwareInterface == NoHardware.getInstance())
                         
                                     {
-                                    hardwareInterface= HardwareFactory.getInstance()!.getInstance(operatingSystemInterface)
+                                    hardwareInterface= HardwareFactory.getInstance()!.getInstance(operatingSystemInterface);
+    
 
                                     }
                                 
-logUtil!.put("Found Hardware", this, commonStrings!.CONSTRUCTOR)
-} catch(e: Exception)
+logUtil!.put("Found Hardware", this, commonStrings!.CONSTRUCTOR);
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e);
+    
 }
 
 

@@ -18,7 +18,10 @@
 
 
 
-import { Hashtable } from "../../../../java/util/Hashtable.js";
+            import Hashtable from "@ohos.util.HashMap";
+        
+
+//import { Hashtable } from "../../../../java/util/Hashtable.js";
 
     
 import { GameCanvasRunnableInterface } from "../../../../org/allbinary/game/displayable/canvas/GameCanvasRunnableInterface.js";
@@ -62,10 +65,11 @@ public constructor (clientInformationFactory: ClientInformationFactory)
             
     isContinue(): boolean{
 
-    var hashtable: Hashtable<Any, Any> = this.getStartStateHashtable()!;
+    var hashtable: Hashtable<any, any> = this.getStartStateHashtable()!;
         
         
-
+;
+    
 
                         if(hashtable != 
                                     null
@@ -133,6 +137,8 @@ var allBinaryGameLayerManager = allBinaryGameLayerManager
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.createGameCanvasRunnableInterface(this.createGameLayerManager());
+
+                        ;
     
 }
 
@@ -149,14 +155,18 @@ var allBinaryGameLayerManager = allBinaryGameLayerManager
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public setDemo(){
-logUtil!.put(commonStrings!.START, this, "setDemo")
+logUtil!.put(commonStrings!.START, this, "setDemo");
+    
 
     var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
         
         
-
-progressCanvas!.start()
-PrimaryThreadPool.getInstance()!.runTask(DemoRunnable(this))
+;
+    
+progressCanvas!.start();
+    
+PrimaryThreadPool.getInstance()!.runTask(DemoRunnable(this));
+    
 }
 
 
@@ -168,22 +178,30 @@ PrimaryThreadPool.getInstance()!.runTask(DemoRunnable(this))
     var CREATE_GAME: string = "createGame";
         
         
-
-logUtil!.put(commonStrings!.START, this, CREATE_GAME)
+;
+    
+logUtil!.put(commonStrings!.START, this, CREATE_GAME);
+    
 
     var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
         
         
+;
+    
+progressCanvas!.start();
+    
 
-progressCanvas!.start()
-
-    var hashtable: Hashtable<Any, Any> = this.getStartStateHashtable()!;
+    var hashtable: Hashtable<any, any> = this.getStartStateHashtable()!;
         
         
-
-this.setStartStateHashtable(NullUtil.getInstance()!.NULL_TABLE)
-PrimaryThreadPool.getInstance()!.runTask(CreateGameRunnable(this, hashtable))
-logUtil!.put(commonStrings!.END, this, CREATE_GAME)
+;
+    
+this.setStartStateHashtable(NullUtil.getInstance()!.NULL_TABLE);
+    
+PrimaryThreadPool.getInstance()!.runTask(CreateGameRunnable(this, hashtable));
+    
+logUtil!.put(commonStrings!.END, this, CREATE_GAME);
+    
 }
 
 

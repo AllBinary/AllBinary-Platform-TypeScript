@@ -42,12 +42,16 @@ var playerInputId = playerInputId
     var analogLocationInput: AnalogLocationInput = AnalogLocationInput.NULL_ANALOG_LOCATION_INPUT;
         
         
-
+;
+    
 
                         if(playerInputId < list.size())
                         
                                     {
-                                    analogLocationInput= list.get(playerInputId) as AnalogLocationInput
+                                    analogLocationInput= list.get(playerInputId);
+
+                         as AnalogLocationInput;
+    
 
                                     }
                                 
@@ -55,8 +59,10 @@ var playerInputId = playerInputId
                         if(analogLocationInput == AnalogLocationInput.NULL_ANALOG_LOCATION_INPUT)
                         
                                     {
-                                    analogLocationInput= AnalogLocationInput(playerInputId)
-list.add(analogLocationInput)
+                                    analogLocationInput= AnalogLocationInput(playerInputId);
+    
+list.add(analogLocationInput);
+    
 
                                     }
                                 
@@ -69,7 +75,9 @@ var playerInputId = playerInputId
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return list.get(playerInputId) as AnalogLocationInput;
+                        return list.get(playerInputId);
+
+                         as AnalogLocationInput;
     
 }
 

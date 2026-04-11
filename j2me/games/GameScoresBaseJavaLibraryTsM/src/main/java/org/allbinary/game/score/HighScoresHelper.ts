@@ -31,8 +31,10 @@ export class HighScoresHelper extends HighScoresHelperBase {
 
     public setHighScoresArray(highScoresArrayP: HighScores[]){
     //var highScoresArrayP = highScoresArrayP
-super.setHighScoresArray(highScoresArrayP)
-this.circularIndexUtil!.setSize(this.highScoresArrayP!.length)
+super.setHighScoresArray(highScoresArrayP);
+    
+this.circularIndexUtil!.setSize(this.highScoresArrayP!.length);
+    
 }
 
 
@@ -45,21 +47,27 @@ this.circularIndexUtil!.setSize(this.highScoresArrayP!.length)
     var highScores: HighScores = this.highScoresArrayP[this.circularIndexUtil!.getIndex()]!;
         
         
-
+;
+    
 
     var index: number = 0;
         
         
-
+;
+    
 
         while((highScores!.getTotal() < 1 || lastIndex == this.circularIndexUtil!.getIndex()) && index < this.highScoresArrayP!.length)
         {
-this.circularIndexUtil!.next()
-highScores= this.highScoresArrayP[this.circularIndexUtil!.getIndex()]!
-index++
+this.circularIndexUtil!.next();
+    
+highScores= this.highScoresArrayP[this.circularIndexUtil!.getIndex()]!;
+    
+index++;
+    
 }
 
-lastIndex= this.circularIndexUtil!.getIndex()
+lastIndex= this.circularIndexUtil!.getIndex();
+    
 
 
 
@@ -87,10 +95,12 @@ lastIndex= this.circularIndexUtil!.getIndex()
     var anyScores: boolean = false;
         
         
-
+;
+    
 
     var highScores: HighScores
-
+;
+    
 
 
 
@@ -101,12 +111,14 @@ lastIndex= this.circularIndexUtil!.getIndex()
         
 index >= 0; index--)
         {
-highScores= highScoresArrayP[index]!
+highScores= highScoresArrayP[index]!;
+    
 
                         if(highScores!.getTotal() > 0)
                         
                                     {
-                                    anyScores= true
+                                    anyScores= true;
+    
 
                                     }
                                 

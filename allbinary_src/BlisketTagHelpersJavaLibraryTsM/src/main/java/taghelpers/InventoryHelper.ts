@@ -94,23 +94,35 @@ export class InventoryHelper extends TagHelper {
     private id: string
 
     private searchRequest: SearchRequest
-public constructor (propertiesHashMap: HashMap<Any, Any>, pageContext: PageContext){
+public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
             var propertiesHashMap = propertiesHashMap
 var pageContext = pageContext
-this.response= pageContext!.getResponse() as HttpServletResponse
-this.request= pageContext!.getRequest() as HttpServletRequest
+this.response= pageContext!.getResponse();
 
-    var storeName: string = propertiesHashMap!.get(StoreFrontData.getInstance()!.NAME) as String;
+                         as HttpServletResponse;
+    
+this.request= pageContext!.getRequest();
+
+                         as HttpServletRequest;
+    
+
+    var storeName: string = propertiesHashMap!.get(StoreFrontData.getInstance()!.NAME);
+
+                         as String;
         
         
+;
+    
 
+    var xslFile: string = propertiesHashMap!.get(TransformInfoData.getInstance()!.TEMPLATEFILENAME);
 
-    var xslFile: string = propertiesHashMap!.get(TransformInfoData.getInstance()!.TEMPLATEFILENAME) as String;
+                         as String;
         
         
-
+;
+    
 
                         if(storeName != 
                                     null
@@ -121,27 +133,33 @@ this.request= pageContext!.getRequest() as HttpServletRequest
     var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(storeName)!;
         
         
-
+;
+    
 
     var contentType: string = AcceptableResponseGenerator.getInstance()!.get(this.request)!;
         
         
-
+;
+    
 
     var searchParams: SearchParams = new SearchParams(this.request);
         
         
-
-this.searchRequest= SearchRequest(storeFrontInterface, searchParams, xslFile, contentType, propertiesHashMap, pageContext)
+;
+    
+this.searchRequest= SearchRequest(storeFrontInterface, searchParams, xslFile, contentType, propertiesHashMap, pageContext);
+    
 
                                     }
                                 
-this.getFormData()
+this.getFormData();
+    
 }
 
 
     getFormData(){
-this.id= this.request.getParameter(BasicItemData.ID)
+this.id= this.request.getParameter(BasicItemData.ID);
+    
 }
 
 
@@ -152,17 +170,20 @@ this.id= this.request.getParameter(BasicItemData.ID)
     var inventoryViewSearchInterface: InventoryViewSearchInterface = InventoryViewFactory.getInstance(searchRequest)!;
         
         
-
+;
+    
 
     var result: string = inventoryViewSearchInterface!.getProduct(this.id)!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put("Successfull Inventory View Summary", this, "viewSummary()")
+                                    logUtil!.put("Successfull Inventory View Summary", this, "viewSummary()");
+    
 
                                     }
                                 
@@ -172,18 +193,22 @@ this.id= this.request.getParameter(BasicItemData.ID)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to View Summary";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "viewSummary()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "viewSummary()", e);
+    
 
                                     }
                                 
@@ -205,12 +230,16 @@ this.id= this.request.getParameter(BasicItemData.ID)
     var stringUtil: StringUtil = StringUtil.getInstance()!;
         
         
+;
+    
 
+    var keywords: string = this.searchRequest!.getParams()!.get()!.get(BasicItemData.KEYWORDS);
 
-    var keywords: string = this.searchRequest!.getParams()!.get()!.get(BasicItemData.KEYWORDS) as String;
+                         as String;
         
         
-
+;
+    
 
                         if(keywords == 
                                     null
@@ -230,17 +259,20 @@ this.id= this.request.getParameter(BasicItemData.ID)
     var inventoryViewSearchInterface: InventoryViewSearchInterface = InventoryViewFactory.getInstance(searchRequest)!;
         
         
-
+;
+    
 
     var result: string = inventoryViewSearchInterface!.searchSingleDynamicPage()!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put("Successful Inventory Dynamic Search", this, "searchSingleDynamicPage()")
+                                    logUtil!.put("Successful Inventory Dynamic Search", this, "searchSingleDynamicPage()");
+    
 
                                     }
                                 
@@ -250,18 +282,22 @@ this.id= this.request.getParameter(BasicItemData.ID)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to search Inventory by keyword";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "searchSingleDynamicPage()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "searchSingleDynamicPage()", e);
+    
 
                                     }
                                 

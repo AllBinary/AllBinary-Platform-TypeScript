@@ -63,10 +63,14 @@ public constructor (storeFrontInterface: StoreFrontInterface){
 
             super();
             var storeFrontInterface = storeFrontInterface
-this.storeFrontAdvertisementsStatisticsInterface= StoreFrontAdvertisementsStatistics(storeFrontInterface) as StoreFrontAdvertisementsStatisticsInterface
-this.storeFrontUsersStatisticsInterface= StoreFrontUsersStatistics(storeFrontInterface) as StoreFrontUsersStatisticsInterface
-this.storeFrontInventoryStatisticsInterface= StoreFrontInventoryStatistics(storeFrontInterface) as StoreFrontInventoryStatisticsInterface
-this.storeFrontOrderHistoryStatisticsInterface= StoreFrontOrdersHistoryStatistics(storeFrontInterface) as StoreFrontOrdersHistoryStatisticsInterface
+this.storeFrontAdvertisementsStatisticsInterface= StoreFrontAdvertisementsStatistics(storeFrontInterface) as StoreFrontAdvertisementsStatisticsInterface;
+    
+this.storeFrontUsersStatisticsInterface= StoreFrontUsersStatistics(storeFrontInterface) as StoreFrontUsersStatisticsInterface;
+    
+this.storeFrontInventoryStatisticsInterface= StoreFrontInventoryStatistics(storeFrontInterface) as StoreFrontInventoryStatisticsInterface;
+    
+this.storeFrontOrderHistoryStatisticsInterface= StoreFrontOrdersHistoryStatistics(storeFrontInterface) as StoreFrontOrdersHistoryStatisticsInterface;
+    
 }
 
 

@@ -40,12 +40,13 @@ export class GeologicalGeographicMapCellPositionFactory
                 , GeographicMapCellPositionFactoryInterface {
         
 
-    private readonly resourcePerMapCellType: IntArray
-public constructor (resourcePerMapCellType: IntArray){
+    private readonly resourcePerMapCellType: number[]
+public constructor (resourcePerMapCellType: number[]){
 
             super();
             var resourcePerMapCellType = resourcePerMapCellType
-this.resourcePerMapCellType= resourcePerMapCellType
+this.resourcePerMapCellType= resourcePerMapCellType;
+    
 }
 
 
@@ -63,12 +64,14 @@ var height = height
     var tiledLayer: AllBinaryTiledLayer = geographicMapInterface!.getAllBinaryTiledLayer()!;
         
         
-
+;
+    
 
     var resources: number = this.resourcePerMapCellType[tiledLayer!.getCell(i_column, i_row)] +MyRandomFactory.getInstance()!.getAbsoluteNextInt(1000);
         
         
-
+;
+    
 
 
 

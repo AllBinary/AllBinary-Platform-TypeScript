@@ -63,8 +63,10 @@ public constructor (animationBehavior: AnimationBehavior)
     var indexedAnimationBehavior: IndexedAnimationBehavior = (this.animationBehaviorP as IndexedAnimationBehavior);
         
         
-
-indexedAnimationBehavior!.loopIndex++
+;
+    
+indexedAnimationBehavior!.loopIndex++;
+    
 }
 
 

@@ -56,7 +56,8 @@ var height = height
     var scaledImages: Image[] = new Array(images.length);
         
         
-
+;
+    
 
 
 
@@ -68,7 +69,8 @@ var height = height
         
 --index >= 0; )
         {
-scaledImages[index]= this.scale(images[index]!, width, height)
+scaledImages[index]= this.scale(images[index]!, width, height);
+    
 }
 
 

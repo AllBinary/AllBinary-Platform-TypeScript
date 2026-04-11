@@ -44,18 +44,21 @@ export class ScreenListenerHandler
 
     public setListener(screenListenerInterface: ScreenListenerInterface){
 var screenListenerInterface = screenListenerInterface
-this.screenListenerInterface= screenListenerInterface
+this.screenListenerInterface= screenListenerInterface;
+    
 }
 
 
     public fire(isFullScreen: boolean){
 var isFullScreen = isFullScreen
-this.screenListenerInterface!.onFullScreen(isFullScreen)
+this.screenListenerInterface!.onFullScreen(isFullScreen);
+    
 }
 
 
     public fire(){
-this.screenListenerInterface!.onFullScreenDisplay()
+this.screenListenerInterface!.onFullScreenDisplay();
+    
 }
 
 

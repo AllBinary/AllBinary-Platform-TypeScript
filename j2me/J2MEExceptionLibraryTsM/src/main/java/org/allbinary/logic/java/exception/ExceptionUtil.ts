@@ -60,13 +60,16 @@ var e = e
     var bs: ByteArrayOutputStream = new ByteArrayOutputStream();
         
         
-
-e.printStackTrace()
+;
+    
+e.printStackTrace();
+    
 
     var output: string = bs.toString()!;
         
         
-
+;
+    
 
                         if(output != 
                                     null

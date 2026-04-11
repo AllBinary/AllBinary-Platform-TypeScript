@@ -18,7 +18,10 @@
 
 
 
-import { Hashtable } from "../../../../../java/util/Hashtable.js";
+            import Hashtable from "@ohos.util.HashMap";
+        
+
+//import { Hashtable } from "../../../../../java/util/Hashtable.js";
 
     
 import { Canvas } from "../../../../../javax/microedition/lcdui/Canvas.js";
@@ -43,7 +46,7 @@ export class RandomPatrolAI extends BasePatrolAI {
     private changedDirection: boolean = true;
         
         
-public constructor (hashtable: Hashtable<Any, Any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput)                        
+public constructor (hashtable: Hashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput)                        
 
                             : super(hashtable, ownerLayerInterface, gameInput){
 
@@ -55,12 +58,14 @@ var gameInput = gameInput
 
                             //For kotlin this is before the body of the constructor.
                     
-this.updateRandomDistance()
+this.updateRandomDistance();
+    
 }
 
 
     updateRandomDistance(){
-this.currentDistance= MyRandomFactory.getInstance()!.getAbsoluteNextInt(this.maxDistance!.toInt())
+this.currentDistance= MyRandomFactory.getInstance()!.getAbsoluteNextInt(this.maxDistance!.toInt());
+    
 }
 
 
@@ -68,15 +73,20 @@ this.currentDistance= MyRandomFactory.getInstance()!.getAbsoluteNextInt(this.max
             
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager
-super.update()
-super.processAI(this.keyDirection)
+super.update();
+    
+super.processAI(this.keyDirection);
+    
 
                         if(this.changedDirection)
                         
                                     {
-                                    super.processAI(Canvas.KEY_NUM1)
-this.updateRandomDistance()
-this.changedDirection= false
+                                    super.processAI(Canvas.KEY_NUM1);
+    
+this.updateRandomDistance();
+    
+this.changedDirection= false;
+    
 
                                     }
                                 
@@ -84,8 +94,10 @@ this.changedDirection= false
 
 
     nextDirection(){
-super.nextDirection()
-this.changedDirection= true
+super.nextDirection();
+    
+this.changedDirection= true;
+    
 }
 
 

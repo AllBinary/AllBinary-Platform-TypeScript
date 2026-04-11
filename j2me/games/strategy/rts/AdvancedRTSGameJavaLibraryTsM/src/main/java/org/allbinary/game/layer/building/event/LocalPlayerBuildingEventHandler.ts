@@ -61,8 +61,10 @@ private constructor (){
     var buildingEventListenerInterface: BuildingEventListenerInterface = (eventListenerInterface as BuildingEventListenerInterface);
         
         
-
-buildingEventListenerInterface!.onBuildingEvent(eventObject as RTSLayerEvent)
+;
+    
+buildingEventListenerInterface!.onBuildingEvent(eventObject as RTSLayerEvent);
+    
 }
 
 

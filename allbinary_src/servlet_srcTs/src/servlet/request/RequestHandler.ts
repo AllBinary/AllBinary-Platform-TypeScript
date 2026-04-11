@@ -54,7 +54,8 @@ export class RequestHandler extends HttpServlet {
             
     public init(config: ServletConfig){
 var config = config
-super.init(config)
+super.init(config);
+    
 }
 
 
@@ -69,52 +70,66 @@ var request = request
 var response = response
 
         try {
-            response.setContentType("text/html")
+            response.setContentType("text/html");
+    
 
     var out: PrintWriter = response.getWriter()!;
         
         
-
+;
+    
 
     var workflowInterface: WorkFlowInterface = RequestWorkFlowFactory.getInstance(request as ServletRequest, response as ServletResponse, this.getServletConfig(), this.getServletContext())!;
         
         
-
+;
+    
 
                         if(workflowInterface != 
                                     null
                                 )
                         
                                     {
-                                    out.print(workflowInterface!.process())
+                                    out.print(workflowInterface!.process());
+    
 
                                     }
                                 
-out.flush()
-out.close()
-} catch(e: LicensingException)
+out.flush();
+    
+out.close();
+    
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SERVLETERROR))
                         
                                     {
-                                    logUtil!.put("Servlet LicensingException", this, "processRequest()", e)
+                                    logUtil!.put("Servlet LicensingException", this, "processRequest()", e);
+    
 
                                     }
                                 
-response.sendRedirect(abcs.globals.URLGLOBALS.LICENSEERRORPAGE)
+response.sendRedirect(abcs.globals.URLGLOBALS.LICENSEERRORPAGE);
+    
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SERVLETERROR))
                         
                                     {
-                                    logUtil!.put("Servlet Exception", this, "processRequest()", e)
+                                    logUtil!.put("Servlet Exception", this, "processRequest()", e);
+    
 
                                     }
                                 
-response.sendRedirect(abcs.globals.URLGLOBALS.ERRORPAGE)
+response.sendRedirect(abcs.globals.URLGLOBALS.ERRORPAGE);
+    
 }
 
 }
@@ -125,7 +140,8 @@ response.sendRedirect(abcs.globals.URLGLOBALS.ERRORPAGE)
     doGet(request: HttpServletRequest, response: HttpServletResponse){
 var request = request
 var response = response
-processRequest(request, response)
+processRequest(request, response);
+    
 }
 
 
@@ -134,7 +150,8 @@ processRequest(request, response)
     doPost(request: HttpServletRequest, response: HttpServletResponse){
 var request = request
 var response = response
-processRequest(request, response)
+processRequest(request, response);
+    
 }
 
 

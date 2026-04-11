@@ -109,7 +109,7 @@ export class CanvasDom
         
         
 
-    private graphicItemHashMap: HashMap<Any, Any>
+    private graphicItemHashMap: HashMap<any, any>
 
     private angle: number
 
@@ -120,165 +120,202 @@ public constructor (canvasNode: Node){
 
             super();
             var canvasNode = canvasNode
-this.grid= Grid()
-this.grid.grid= PointFactory.getInstance()!.getInstance(0, 0)
-this.dimension= IntegerDimension(0, 0)
+this.grid= Grid();
+    
+this.grid.grid= PointFactory.getInstance()!.getInstance(0, 0);
+    
+this.dimension= IntegerDimension(0, 0);
+    
 
     var name: string = canvasNode!.getNodeName()!;
         
         
-
+;
+    
 
                         if(name.compareTo(FRAME) == 0)
                         
                                     {
-                                    this.graphicItemHashMap= HashMap<Any, Any>()
+                                    this.graphicItemHashMap= HashMap<any, any>();
+    
 
     var angleNode: Node = DomHelper.getInstance()!.searchNodeList(this.ROTATE, canvasNode!.getChildNodes())!;
         
         
-
+;
+    
 
     var angleTextNode: Node = angleNode!.getFirstChild()!;
         
         
-
+;
+    
 
     var angle: number = Double(angleTextNode!.getNodeValue()).
                             doubleValue()!;
         
         
-
-this.setAngle(angle)
+;
+    
+this.setAngle(angle);
+    
 
     var sizeNode: Node = DomHelper.getInstance()!.searchNodeList(this.SIZE, canvasNode!.getChildNodes())!;
         
         
-
+;
+    
 
     var xNode: Node = DomHelper.getInstance()!.searchNodeList(this.X, sizeNode!.getChildNodes())!;
         
         
-
+;
+    
 
     var xTextNode: Node = xNode!.getFirstChild()!;
         
         
-
+;
+    
 
     var x: number = Integer(xTextNode!.getNodeValue()).
                             toInt()!;
         
         
-
+;
+    
 
     var yNode: Node = DomHelper.getInstance()!.searchNodeList(this.Y, sizeNode!.getChildNodes())!;
         
         
-
+;
+    
 
     var yTextNode: Node = yNode!.getFirstChild()!;
         
         
-
+;
+    
 
     var y: number = Integer(yTextNode!.getNodeValue()).
                             toInt()!;
         
         
-
-this.setWorkArea(x, y)
+;
+    
+this.setWorkArea(x, y);
+    
 
     var zoomNode: Node = DomHelper.getInstance()!.searchNodeList(this.ZOOM, canvasNode!.getChildNodes())!;
         
         
-
+;
+    
 
     var zoomTextNode: Node = zoomNode!.getFirstChild()!;
         
         
-
+;
+    
 this.grid.setZoom(Integer(zoomTextNode!.getNodeValue()).
-                            toInt())
+                            toInt());
+    
 
     var gridNode: Node = DomHelper.getInstance()!.searchNodeList(this.GRID, canvasNode!.getChildNodes())!;
         
         
-
+;
+    
 
     var gridSizeNode: Node = DomHelper.getInstance()!.searchNodeList(this.SIZE, gridNode!.getChildNodes())!;
         
         
-
+;
+    
 
     var gridXNode: Node = DomHelper.getInstance()!.searchNodeList(this.X, gridSizeNode!.getChildNodes())!;
         
         
-
+;
+    
 
     var gridXTextNode: Node = gridXNode!.getFirstChild()!;
         
         
-
+;
+    
 
     var gridX: number = Integer(gridXTextNode!.getNodeValue()).
                             toInt()!;
         
         
-
+;
+    
 
     var gridYNode: Node = DomHelper.getInstance()!.searchNodeList(this.Y, gridSizeNode!.getChildNodes())!;
         
         
-
+;
+    
 
     var gridYTextNode: Node = gridYNode!.getFirstChild()!;
         
         
-
+;
+    
 
     var gridY: number = Integer(gridYTextNode!.getNodeValue()).
                             toInt()!;
         
         
-
-this.setGrid(gridX, gridY)
+;
+    
+this.setGrid(gridX, gridY);
+    
 
     var enableNode: Node = DomHelper.getInstance()!.searchNodeList(this.ENABLED, gridNode!.getChildNodes())!;
         
         
-
+;
+    
 
     var enableTextNode: Node = enableNode!.getFirstChild()!;
         
         
-
+;
+    
 this.grid.showGrid(.
-                            )
+                            );
+    
 
     var possibleNode: Node = DomHelper.getInstance()!.searchNodeList(this.POSSIBLE, gridNode!.getChildNodes())!;
         
         
-
+;
+    
 
     var possibleTextNode: Node = possibleNode!.getFirstChild()!;
         
         
-
+;
+    
 this.grid.isGridPossible= .
-                            
+                            ;
+    
 
     var graphicItemNodeList: BasicArrayList = DomHelper.getInstance()!.getChildrenWithoutTextNodes(this.GRAPHICITEMS, canvasNode!.getChildNodes())!;
         
         
-
+;
+    
 
                         if(graphicItemNodeList != 
                                     null
                                 )
                         
                                     {
-                                    this.graphicItemHashMap= GraphicItemFactory.getInstance()!.getInstance(graphicItemNodeList)
+                                    this.graphicItemHashMap= GraphicItemFactory.getInstance()!.getInstance(graphicItemNodeList);
+    
 
                                     }
                                 
@@ -299,11 +336,16 @@ public constructor (canvasJPanel: CanvasJPanel){
 
             super();
             var canvasJPanel = canvasJPanel
-this.angle= canvasJPanel!.getAngle()
-this.graphicItemHashMap= canvasJPanel!.getGraphicItemHashMap()
-this.dimension= canvasJPanel!.getCanvasDimension()
-this.grid= Grid(canvasJPanel!.getGrid())
-this.angle= canvasJPanel!.getAngle()
+this.angle= canvasJPanel!.getAngle();
+    
+this.graphicItemHashMap= canvasJPanel!.getGraphicItemHashMap();
+    
+this.dimension= canvasJPanel!.getCanvasDimension();
+    
+this.grid= Grid(canvasJPanel!.getGrid());
+    
+this.angle= canvasJPanel!.getAngle();
+    
 }
 
 
@@ -317,7 +359,7 @@ this.angle= canvasJPanel!.getAngle()
 }
 
 
-    public getGraphicItemHashMap(): HashMap<Any, Any>{
+    public getGraphicItemHashMap(): HashMap<any, any>{
 
 
 
@@ -329,7 +371,8 @@ this.angle= canvasJPanel!.getAngle()
 
     public setAngle(angle: number){
 var angle = angle
-this.angle= angle
+this.angle= angle;
+    
 }
 
 
@@ -338,7 +381,8 @@ this.angle= angle
     public setWorkArea(x: number, y: number){
 var x = x
 var y = y
-this.setDimension(IntegerDimension(x, y))
+this.setDimension(IntegerDimension(x, y));
+    
 }
 
 
@@ -347,7 +391,8 @@ this.setDimension(IntegerDimension(x, y))
     public setGrid(gridX: number, gridY: number){
 var gridX = gridX
 var gridY = gridY
-this.grid.grid= PointFactory.getInstance()!.getInstance(gridX, gridY)
+this.grid.grid= PointFactory.getInstance()!.getInstance(gridX, gridY);
+    
 }
 
 
@@ -358,36 +403,56 @@ var pointName = pointName
     var document: org.w3c.dom.Document = WorkAreaJPanel.getDocument()!;
         
         
+;
+    
 
+    var pointNode: Node = document.createElement(pointName);
 
-    var pointNode: Node = document.createElement(pointName) as Node;
+                         as Node;
         
         
+;
+    
 
+    var xNode: Node = document.createElement(this.X);
 
-    var xNode: Node = document.createElement(this.X) as Node;
+                         as Node;
         
         
+;
+    
 
+    var xTextNode: Node = document.createTextNode(Integer.toString(point.getX()));
 
-    var xTextNode: Node = document.createTextNode(Integer.toString(point.getX())) as Node;
+                         as Node;
         
         
+;
+    
+xNode!.appendChild(xTextNode);
+    
 
-xNode!.appendChild(xTextNode)
+    var yNode: Node = document.createElement(this.Y);
 
-    var yNode: Node = document.createElement(this.Y) as Node;
+                         as Node;
         
         
+;
+    
 
+    var yTextNode: Node = document.createTextNode(Integer.toString(point.getY()));
 
-    var yTextNode: Node = document.createTextNode(Integer.toString(point.getY())) as Node;
+                         as Node;
         
         
-
-yNode!.appendChild(yTextNode)
-pointNode!.appendChild(xNode)
-pointNode!.appendChild(yNode)
+;
+    
+yNode!.appendChild(yTextNode);
+    
+pointNode!.appendChild(xNode);
+    
+pointNode!.appendChild(yNode);
+    
 
 
 
@@ -404,134 +469,209 @@ pointNode!.appendChild(yNode)
     var document: org.w3c.dom.Document = WorkAreaJPanel.getDocument()!;
         
         
+;
+    
 
+    var frameNode: Node = document.createElement(this.FRAME);
 
-    var frameNode: Node = document.createElement(this.FRAME) as Node;
+                         as Node;
         
         
+;
+    
 
+    var angleNode: Node = document.createElement(this.ROTATE);
 
-    var angleNode: Node = document.createElement(this.ROTATE) as Node;
+                         as Node;
         
         
-
+;
+    
 
     var angleTextNode: Node = document.createTextNode(Double(this.getAngle()).
-                            toString()) as Node;
-        
-        
+                            toString());
 
-angleNode!.appendChild(angleTextNode)
-
-    var sizeNode: Node = this.getPointNode(PointFactory.getInstance()!.getInstance(this.getDimension()!.getWidth(), this.getDimension()!.getHeight()), this.SIZE) as Node;
+                         as Node;
         
         
+;
+    
+angleNode!.appendChild(angleTextNode);
+    
 
+    var sizeNode: Node = this.getPointNode(PointFactory.getInstance()!.getInstance(this.getDimension()!.getWidth(), this.getDimension()!.getHeight()), this.SIZE);
 
-    var zoomNode: Node = document.createElement(this.ZOOM) as Node;
+                         as Node;
         
         
+;
+    
 
+    var zoomNode: Node = document.createElement(this.ZOOM);
+
+                         as Node;
+        
+        
+;
+    
 
     var zoomTextNode: Node = document.createTextNode(Integer(this.getGrid()!.getZoom()).
-                            toString()) as Node;
-        
-        
+                            toString());
 
-zoomNode!.appendChild(zoomTextNode)
-
-    var gridNode: Node = document.createElement(this.GRID) as Node;
+                         as Node;
         
         
+;
+    
+zoomNode!.appendChild(zoomTextNode);
+    
 
+    var gridNode: Node = document.createElement(this.GRID);
 
-    var gridSizeNode: Node = this.getPointNode(this.getGrid()!.grid, this.SIZE) as Node;
+                         as Node;
         
         
+;
+    
 
-gridNode!.appendChild(gridSizeNode)
+    var gridSizeNode: Node = this.getPointNode(this.getGrid()!.grid, this.SIZE);
 
-    var enableNode: Node = document.createElement(this.ENABLED) as Node;
+                         as Node;
         
         
+;
+    
+gridNode!.appendChild(gridSizeNode);
+    
 
+    var enableNode: Node = document.createElement(this.ENABLED);
+
+                         as Node;
+        
+        
+;
+    
 
     var enableTextNode: Node = document.createTextNode(.
-                            toString()) as Node;
-        
-        
+                            toString());
 
-enableNode!.appendChild(enableTextNode)
-gridNode!.appendChild(enableNode)
-
-    var possibleNode: Node = document.createElement(this.POSSIBLE) as Node;
+                         as Node;
         
         
+;
+    
+enableNode!.appendChild(enableTextNode);
+    
+gridNode!.appendChild(enableNode);
+    
 
+    var possibleNode: Node = document.createElement(this.POSSIBLE);
+
+                         as Node;
+        
+        
+;
+    
 
     var possibleTextNode: Node = document.createTextNode(.
-                            toString()) as Node;
-        
-        
+                            toString());
 
-possibleNode!.appendChild(possibleTextNode)
-gridNode!.appendChild(possibleNode)
-
-    var realSizeNode: Node = document.createElement(REAL_SIZE) as Node;
+                         as Node;
         
         
+;
+    
+possibleNode!.appendChild(possibleTextNode);
+    
+gridNode!.appendChild(possibleNode);
+    
 
+    var realSizeNode: Node = document.createElement(REAL_SIZE);
+
+                         as Node;
+        
+        
+;
+    
 
     var vectorCenterGenerator: VectorCenterGenerator = new VectorCenterGenerator();
         
         
+;
+    
+vectorCenterGenerator!.calculate(this.getGraphicItemHashMap());
+    
 
-vectorCenterGenerator!.calculate(this.getGraphicItemHashMap())
+    var widthNode: Node = document.createElement(WIDTH);
 
-    var widthNode: Node = document.createElement(WIDTH) as Node;
+                         as Node;
         
         
+;
+    
 
+    var widthTextNode: Node = document.createTextNode(Integer.toString(vectorCenterGenerator!.getWidth()));
 
-    var widthTextNode: Node = document.createTextNode(Integer.toString(vectorCenterGenerator!.getWidth())) as Node;
+                         as Node;
         
         
+;
+    
+widthNode!.appendChild(widthTextNode);
+    
+realSizeNode!.appendChild(widthNode);
+    
 
-widthNode!.appendChild(widthTextNode)
-realSizeNode!.appendChild(widthNode)
+    var heightNode: Node = document.createElement(HEIGHT);
 
-    var heightNode: Node = document.createElement(HEIGHT) as Node;
+                         as Node;
         
         
+;
+    
 
+    var heightTextNode: Node = document.createTextNode(Integer.toString(vectorCenterGenerator!.getHeight()));
 
-    var heightTextNode: Node = document.createTextNode(Integer.toString(vectorCenterGenerator!.getHeight())) as Node;
+                         as Node;
         
         
+;
+    
+heightNode!.appendChild(heightTextNode);
+    
+realSizeNode!.appendChild(heightNode);
+    
+frameNode!.appendChild(angleNode);
+    
+frameNode!.appendChild(sizeNode);
+    
+frameNode!.appendChild(zoomNode);
+    
+frameNode!.appendChild(gridNode);
+    
+frameNode!.appendChild(realSizeNode);
+    
 
-heightNode!.appendChild(heightTextNode)
-realSizeNode!.appendChild(heightNode)
-frameNode!.appendChild(angleNode)
-frameNode!.appendChild(sizeNode)
-frameNode!.appendChild(zoomNode)
-frameNode!.appendChild(gridNode)
-frameNode!.appendChild(realSizeNode)
+    var graphicItemNode: Node = document.createElement(this.GRAPHICITEMS);
 
-    var graphicItemNode: Node = document.createElement(this.GRAPHICITEMS) as Node;
+                         as Node;
         
         
+;
+    
 
-
-    var graphicItemArray: any = {}[] = this.getGraphicItemHashMap()!.keys.toTypedArray()!;
+    var graphicItemArray: any[] = this.getGraphicItemHashMap()!.keys.toTypedArray()!;
         
         
-
+;
+    
 
     var size: number = graphicItemArray!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -543,10 +683,13 @@ frameNode!.appendChild(realSizeNode)
 index < size; index++)
         {
 
-    var item: GraphicItemInterface = this.graphicItemHashMap!.get(graphicItemArray[index]!) as GraphicItemInterface;
-        
-        
+    var item: GraphicItemInterface = this.graphicItemHashMap!.get(graphicItemArray[index]!);
 
+                         as GraphicItemInterface;
+        
+        
+;
+    
 
                         if(item.getName() == LinesGraphicItem.getStaticName())
                         
@@ -555,7 +698,8 @@ index < size; index++)
                         if(item.isValid())
                         
                                     {
-                                    graphicItemNode!.appendChild(item.toDom(this))
+                                    graphicItemNode!.appendChild(item.toDom(this));
+    
 
                                     }
                                 
@@ -564,7 +708,8 @@ index < size; index++)
                                 
 }
 
-frameNode!.appendChild(graphicItemNode)
+frameNode!.appendChild(graphicItemNode);
+    
 
 
 
@@ -586,7 +731,8 @@ frameNode!.appendChild(graphicItemNode)
 
     public setDimension(dimension: IntegerDimension){
 var dimension = dimension
-this.dimension= dimension
+this.dimension= dimension;
+    
 }
 
 

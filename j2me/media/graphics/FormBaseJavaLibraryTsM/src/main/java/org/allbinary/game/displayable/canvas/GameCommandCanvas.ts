@@ -18,7 +18,10 @@
 
 
 
-import { Vector } from "../../../../../java/util/Vector.js";
+            import Vector from "@ohos.util.Vector";
+        
+
+//import { Vector } from "../../../../../java/util/Vector.js";
 
     
 import { CommandListener } from "../../../../../javax/microedition/lcdui/CommandListener.js";
@@ -241,21 +244,31 @@ public constructor (cmdListener: CommandListener, name: string, backgroundBasicC
 
                             //For kotlin this is before the body of the constructor.
                     
-this.repaintBehavior= RepaintBehavior.getInstance()
-this.foregroundBasicColor= foregroundBasicColor
-this.backgroundBasicColor= backgroundBasicColor
-this.foregroundColor= foregroundBasicColor!.toInt()
-this.backgroundColor= backgroundBasicColor!.toInt()
-this.initCommands(cmdListener)
+this.repaintBehavior= RepaintBehavior.getInstance();
+    
+this.foregroundBasicColor= foregroundBasicColor;
+    
+this.backgroundBasicColor= backgroundBasicColor;
+    
+this.foregroundColor= foregroundBasicColor!.toInt();
+    
+this.backgroundColor= backgroundBasicColor!.toInt();
+    
+this.initCommands(cmdListener);
+    
 
                         if(cmdListener != NullCommandListener.NULL_COMMAND_LISTENER)
                         
                                     {
                                     
         try {
-            this.initMenu()
-repaintProcessor!.process()
-} catch(e: Exception)
+            this.initMenu();
+    
+repaintProcessor!.process();
+    
+
+                //: 
+} catch(e) 
             {
 
 
@@ -271,7 +284,8 @@ repaintProcessor!.process()
 
     public onEvent(eventObject: AllBinaryEventObject){
     //var eventObject = eventObject
-ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
+ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
+    
 }
 
 
@@ -279,17 +293,24 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
     //var displayChangeEvent = displayChangeEvent
 
         try {
-            logUtil!.put(commonStrings!.START, this, canvasStrings!.ON_DISPLAY_CHANGE_EVENT)
+            logUtil!.put(commonStrings!.START, this, canvasStrings!.ON_DISPLAY_CHANGE_EVENT);
+    
 
     var rectangle: Rectangle = this.createRectangle(this.menuForm!.size())!;
         
         
+;
+    
+this.menuForm!.init(rectangle, FormTypeFactory.getInstance()!.VERTICAL_CENTER_FORM);
+    
+this.update();
+    
 
-this.menuForm!.init(rectangle, FormTypeFactory.getInstance()!.VERTICAL_CENTER_FORM)
-this.update()
-} catch(e: Exception)
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "onResize", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "onResize", e);
+    
 }
 
 }
@@ -297,9 +318,12 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "onResize", e)
 
     public initCommands(cmdListener: CommandListener){
     //var cmdListener = cmdListener
-this.removeAllCommands()
-this.addCommand(GameCommandsFactory.getInstance()!.CLOSE_AND_SHOW_GAME_CANVAS)
-this.setCommandListener(cmdListener)
+this.removeAllCommands();
+    
+this.addCommand(GameCommandsFactory.getInstance()!.CLOSE_AND_SHOW_GAME_CANVAS);
+    
+this.setCommandListener(cmdListener);
+    
 }
 
 
@@ -310,18 +334,23 @@ this.setCommandListener(cmdListener)
     var form: ScrollSelectionForm = this.createForm()!;
         
         
-
-this.menuForm= form
+;
+    
+this.menuForm= form;
+    
 
                         if(form != ScrollSelectionFormNoneFactory.getInstance())
                         
                                     {
-                                    this.setMenuInputProcessor(ImmediateCommandFormInputProcessor(BasicArrayList(),  -1, this, form))
-this.menuPaintable= FormPaintable(form)
+                                    this.setMenuInputProcessor(ImmediateCommandFormInputProcessor(BasicArrayList(),  -1, this, form));
+    
+this.menuPaintable= FormPaintable(form);
+    
 
                                     }
                                 
-this.repaintBehavior!.onChangeRepaint(this)
+this.repaintBehavior!.onChangeRepaint(this);
+    
 }
 
 
@@ -330,20 +359,26 @@ this.repaintBehavior!.onChangeRepaint(this)
     public createForm(): ScrollSelectionForm{
 
     var items: CustomItem[] = CommandTextItemArrayFactory(AllCommandsVisitor()).
-                            getInstance(this.getCommandStack() as Vector<Any>, this.backgroundBasicColor, this.foregroundBasicColor)!;
-        
-        
+                            getInstance(this.getCommandStack();
 
+                         as Vector<any>, this.backgroundBasicColor, this.foregroundBasicColor)!;
+        
+        
+;
+    
 
     var rectangle: Rectangle = this.createRectangle(items.length)!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return CommandCurrentSelectionFormFactory.getInstance(StringUtil.getInstance()!.EMPTY_STRING, items, rectangle, FormTypeFactory.getInstance()!.VERTICAL_CENTER_FORM, 15, false, this.backgroundBasicColor, this.foregroundBasicColor);
+
+                        ;
     
 }
 
@@ -354,22 +389,26 @@ this.repaintBehavior!.onChangeRepaint(this)
     var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
         
         
-
+;
+    
 
     var height: number = size *MyFont.getInstance()!.DEFAULT_CHAR_HEIGHT;
         
         
-
+;
+    
 
     var startY: number = (displayInfo!.getLastHeight() *2 /3) -height;
         
         
-
+;
+    
 
     var rectangle: Rectangle = new Rectangle(PointFactory.getInstance()!.getInstance(30, startY), displayInfo!.getLastWidth() -30, startY);
         
         
-
+;
+    
 
 
 
@@ -380,25 +419,34 @@ this.repaintBehavior!.onChangeRepaint(this)
 
 
     public open(){
-logUtil!.put(commonStrings!.START, this, "open")
-BasicMotionGesturesHandler.getInstance()!.addListener(this.getMenuInputProcessor())
-GameKeyEventHandler.getInstance()!.addListener(this.getMenuInputProcessor())
-DisplayChangeEventHandler.getInstance()!.addListener(this)
+logUtil!.put(commonStrings!.START, this, "open");
+    
+BasicMotionGesturesHandler.getInstance()!.addListener(this.getMenuInputProcessor());
+    
+GameKeyEventHandler.getInstance()!.addListener(this.getMenuInputProcessor());
+    
+DisplayChangeEventHandler.getInstance()!.addListener(this);
+    
 }
 
 
     public close(){
-logUtil!.put(commonStrings!.START, this, commonStrings!.CLOSE)
-BasicMotionGesturesHandler.getInstance()!.removeListener(this.getMenuInputProcessor())
-GameKeyEventHandler.getInstance()!.removeListener(this.getMenuInputProcessor())
-DisplayChangeEventHandler.getInstance()!.removeListener(this)
+logUtil!.put(commonStrings!.START, this, commonStrings!.CLOSE);
+    
+BasicMotionGesturesHandler.getInstance()!.removeListener(this.getMenuInputProcessor());
+    
+GameKeyEventHandler.getInstance()!.removeListener(this.getMenuInputProcessor());
+    
+DisplayChangeEventHandler.getInstance()!.removeListener(this);
+    
 }
 
 
                 //@Throws(Error::class)
             
     public update(){
-this.repaintProcessor!.process()
+this.repaintProcessor!.process();
+    
 }
 
 
@@ -414,19 +462,22 @@ this.repaintProcessor!.process()
 
     public keyPressed(keyCode: number){
     //var keyCode = keyCode
-this.keyPressed(keyCode, 0)
+this.keyPressed(keyCode, 0);
+    
 }
 
 
     public keyReleased(keyCode: number){
     //var keyCode = keyCode
-this.keyReleased(keyCode, 0)
+this.keyReleased(keyCode, 0);
+    
 }
 
 
     public keyRepeated(keyCode: number){
     //var keyCode = keyCode
-this.keyRepeated(keyCode, 0)
+this.keyRepeated(keyCode, 0);
+    
 }
 
 
@@ -434,15 +485,18 @@ this.keyRepeated(keyCode, 0)
     //var keyCode = keyCode
     //var deviceId = deviceId
 logUtil!.put(StringMaker().
-                            append(CommonSeps.getInstance()!.SPACE)!.appendint(keyCode)!.toString(), this, gameInputStrings!.KEY_PRESSED)
-this.addGameKeyEvent(keyCode, 0, false)
+                            append(CommonSeps.getInstance()!.SPACE)!.appendint(keyCode)!.toString(), this, gameInputStrings!.KEY_PRESSED);
+    
+this.addGameKeyEvent(keyCode, 0, false);
+    
 }
 
 
     public keyReleased(keyCode: number, deviceId: number){
     //var keyCode = keyCode
     //var deviceId = deviceId
-this.removeGameKeyEvent(keyCode, deviceId, false)
+this.removeGameKeyEvent(keyCode, deviceId, false);
+    
 }
 
 
@@ -453,7 +507,8 @@ this.removeGameKeyEvent(keyCode, deviceId, false)
                         if(this.isSingleKeyRepeatableProcessing)
                         
                                     {
-                                    this.addGameKeyEvent(keyCode, deviceId, true)
+                                    this.addGameKeyEvent(keyCode, deviceId, true);
+    
 
                                     }
                                 
@@ -470,7 +525,8 @@ this.removeGameKeyEvent(keyCode, deviceId, false)
     var gameKey: GameKey = this.inputToGameKeyMapping!.getInstance(this, keyCode)!;
         
         
-
+;
+    
 
                         if(gameKey != this.gameKeyFactory!.NONE)
                         
@@ -479,21 +535,28 @@ this.removeGameKeyEvent(keyCode, deviceId, false)
     var gameKeyEvent: GameKeyEvent = gameKeyEventFactory!.getInstance(this, gameKey)!;
         
         
-
-downGameKeyEventHandler!.fireEvent(gameKeyEvent)
-downGameKeyEventHandler!.getInstance(deviceId)!.fireEvent(gameKeyEvent)
+;
+    
+downGameKeyEventHandler!.fireEvent(gameKeyEvent);
+    
+downGameKeyEventHandler!.getInstance(deviceId)!.fireEvent(gameKeyEvent);
+    
 
                                     }
                                 
                         else {
                             logUtil!.put(StringMaker().
-                            append(this.gameInputStrings!.NO_KEY)!.appendint(keyCode)!.toString(), this, this.gameInputStrings!.ADD_KEY_EVENT)
+                            append(this.gameInputStrings!.NO_KEY)!.appendint(keyCode)!.toString(), this, this.gameInputStrings!.ADD_KEY_EVENT);
+    
 
                         }
                             
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put("Key Event Error", this, this.gameInputStrings!.ADD_KEY_EVENT, e)
+logUtil!.put("Key Event Error", this, this.gameInputStrings!.ADD_KEY_EVENT, e);
+    
 }
 
 }
@@ -509,7 +572,8 @@ logUtil!.put("Key Event Error", this, this.gameInputStrings!.ADD_KEY_EVENT, e)
     var gameKey: GameKey = this.inputToGameKeyMapping!.getInstance(this, keyCode)!;
         
         
-
+;
+    
 
                         if(gameKey != this.gameKeyFactory!.NONE)
                         
@@ -518,21 +582,28 @@ logUtil!.put("Key Event Error", this, this.gameInputStrings!.ADD_KEY_EVENT, e)
     var gameKeyEvent: GameKeyEvent = gameKeyEventFactory!.getInstance(this, gameKey)!;
         
         
-
-upGameKeyEventHandler!.fireEvent(gameKeyEvent)
-upGameKeyEventHandler!.getInstance(deviceId)!.fireEvent(gameKeyEvent)
+;
+    
+upGameKeyEventHandler!.fireEvent(gameKeyEvent);
+    
+upGameKeyEventHandler!.getInstance(deviceId)!.fireEvent(gameKeyEvent);
+    
 
                                     }
                                 
                         else {
                             logUtil!.put(StringMaker().
-                            append(this.gameInputStrings!.NO_KEY)!.appendint(keyCode)!.toString(), this, this.gameInputStrings!.REMOVE_KEY_EVENT)
+                            append(this.gameInputStrings!.NO_KEY)!.appendint(keyCode)!.toString(), this, this.gameInputStrings!.REMOVE_KEY_EVENT);
+    
 
                         }
                             
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put("Key Event Error", this, this.gameInputStrings!.REMOVE_KEY_EVENT, e)
+logUtil!.put("Key Event Error", this, this.gameInputStrings!.REMOVE_KEY_EVENT, e);
+    
 }
 
 }
@@ -540,14 +611,17 @@ logUtil!.put("Key Event Error", this, this.gameInputStrings!.REMOVE_KEY_EVENT, e
 
     public paint(graphics: Graphics){
     //var graphics = graphics
-this.menuPaintable!.paint(graphics)
-this.repaintBehavior!.repaint(this)
+this.menuPaintable!.paint(graphics);
+    
+this.repaintBehavior!.repaint(this);
+    
 }
 
 
     setMenuInputProcessor(menuInputProcessor: BasicMenuInputProcessor){
     //var menuInputProcessor = menuInputProcessor
-this.menuInputProcessor= menuInputProcessor
+this.menuInputProcessor= menuInputProcessor;
+    
 }
 
 

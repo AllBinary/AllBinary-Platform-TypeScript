@@ -31,7 +31,8 @@ public constructor (action: string)
 
                             //For kotlin this is before the body of the constructor.
                     
-setPost()
+setPost();
+    
 }
 
 

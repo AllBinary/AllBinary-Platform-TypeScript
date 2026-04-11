@@ -36,10 +36,14 @@ public constructor (p1: GPoint, p2: GPoint){
             super();
             var p1 = p1
 var p2 = p2
-this.p1= PointFactory.getInstance()!.ZERO_ZERO
-this.p2= this.p1
-this.setP1(p1)
-this.setP2(p2)
+this.p1= PointFactory.getInstance()!.ZERO_ZERO;
+    
+this.p2= this.p1;
+    
+this.setP1(p1);
+    
+this.setP2(p2);
+    
 }
 
 
@@ -54,8 +58,14 @@ this.setP2(p2)
 
 
     update(){
-deltaX= getP1()!.getX().toDouble() -getP2()!.getX()
-deltaY= getP1()!.getY().toDouble() -getP2()!.getY()
+deltaX= getP1()!.getX();
+
+                        .toDouble() -getP2()!.getX();
+    
+deltaY= getP1()!.getY();
+
+                        .toDouble() -getP2()!.getY();
+    
 }
 
 
@@ -101,15 +111,19 @@ deltaY= getP1()!.getY().toDouble() -getP2()!.getY()
 
     public setP1(p1: GPoint){
 var p1 = p1
-this.p1= p1
-this.update()
+this.p1= p1;
+    
+this.update();
+    
 }
 
 
     public setP2(p2: GPoint){
 var p2 = p2
-this.p2= p2
-this.update()
+this.p2= p2;
+    
+this.update();
+    
 }
 
 

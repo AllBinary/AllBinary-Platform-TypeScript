@@ -67,12 +67,14 @@ public constructor (transformInfoInterface: TransformInfoInterface)
     var valid: Boolean = Boolean.TRUE;
         
         
-
+;
+    
 
                         if(this.newStoreFrontInterface!.isValid() == Boolean.FALSE)
                         
                                     {
-                                    valid= Boolean.FALSE
+                                    valid= Boolean.FALSE;
+    
 
                                     }
                                 
@@ -82,7 +84,8 @@ public constructor (transformInfoInterface: TransformInfoInterface)
                                 )
                         
                                     {
-                                    valid= Boolean.FALSE
+                                    valid= Boolean.FALSE;
+    
 
                                     }
                                 
@@ -92,13 +95,16 @@ public constructor (transformInfoInterface: TransformInfoInterface)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return valid;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("Failed to validate form", this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put("Failed to validate form", this, commonStrings!.IS_VALID, e);
+    
 
                                     }
                                 
@@ -120,12 +126,14 @@ public constructor (transformInfoInterface: TransformInfoInterface)
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
                         if(this.newStoreFrontInterface!.isValid() == Boolean.FALSE)
                         
                                     {
-                                    stringBuffer!.append(this.newStoreFrontInterface!.validationInfo())
+                                    stringBuffer!.append(this.newStoreFrontInterface!.validationInfo());
+    
 
                                     }
                                 
@@ -135,7 +143,8 @@ public constructor (transformInfoInterface: TransformInfoInterface)
                                 )
                         
                                     {
-                                    stringBuffer!.append("Store does not exist<br>")
+                                    stringBuffer!.append("Store does not exist<br>");
+    
 
                                     }
                                 
@@ -144,14 +153,19 @@ public constructor (transformInfoInterface: TransformInfoInterface)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e)
+                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e);
+    
 
                                     }
                                 

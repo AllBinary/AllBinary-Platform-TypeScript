@@ -49,7 +49,8 @@ export class CompleteMotionGestureInputToGameMotionGestureInput
         
 
     public init(){
-PreLogUtil.put("No Touch Button = No Compound Motion Gestures", this, this.commonStrings!.INIT)
+PreLogUtil.put("No Touch Button = No Compound Motion Gestures", this, this.commonStrings!.INIT);
+    
 }
 
 

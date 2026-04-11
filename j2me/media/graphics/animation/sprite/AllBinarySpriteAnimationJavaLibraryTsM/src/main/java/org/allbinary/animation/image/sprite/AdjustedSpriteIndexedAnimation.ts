@@ -74,8 +74,10 @@ public constructor (sprite: Sprite, image: Image, basicColorArray: BasicColor[],
 
                             //For kotlin this is before the body of the constructor.
                     
-this.dx= dx
-this.dy= dy
+this.dx= dx;
+    
+this.dy= dy;
+    
 }
 
 
@@ -84,9 +86,12 @@ this.dy= dy
     //var frame = frame
     //var x = x
     //var y = y
-this.setFrame(frame)
-this.sprite.setPosition(x +this.dx, y +this.dy)
-super.paint(graphics)
+this.setFrame(frame);
+    
+this.sprite.setPosition(x +this.dx, y +this.dy);
+    
+super.paint(graphics);
+    
 }
 
 
@@ -94,15 +99,19 @@ super.paint(graphics)
     //var g = g
     //var x = x
     //var y = y
-this.sprite.setPosition(x +this.dx, y +this.dy)
-super.paint(g)
+this.sprite.setPosition(x +this.dx, y +this.dy);
+    
+super.paint(g);
+    
 }
 
 
     public paint(g: Graphics){
     //var g = g
-this.sprite.setPosition(this.dx, this.dy)
-super.paint(g)
+this.sprite.setPosition(this.dx, this.dy);
+    
+super.paint(g);
+    
 }
 
 

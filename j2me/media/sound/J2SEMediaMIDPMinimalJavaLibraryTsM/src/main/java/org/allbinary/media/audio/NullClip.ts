@@ -61,7 +61,7 @@ export class NullClip
 
                 //@Throws(LineUnavailableException::class)
             
-    public open(format: AudioFormat, data: ByteArray, offset: number, bufferSize: number){
+    public open(format: AudioFormat, data: number[], offset: number, bufferSize: number){
 var format = format
 var data = data
 var offset = offset
@@ -228,7 +228,7 @@ var count = count
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Info(this::class, NullAudioFormat.NULL_AUDIO_FORMAT);
+                        return Info(thisconstructor, NullAudioFormat.NULL_AUDIO_FORMAT);
     
 }
 
@@ -258,7 +258,7 @@ var count = count
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new Array(0);
+                        return [];
     
 }
 

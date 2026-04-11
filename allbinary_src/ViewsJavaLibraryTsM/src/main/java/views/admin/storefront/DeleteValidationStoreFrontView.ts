@@ -67,12 +67,14 @@ public constructor (transformInfoInterface: TransformInfoInterface)
     var valid: Boolean = Boolean.TRUE;
         
         
-
+;
+    
 
                         if(this.newStoreFrontInterface!.isNameValid() == Boolean.FALSE)
                         
                                     {
-                                    valid= Boolean.FALSE
+                                    valid= Boolean.FALSE;
+    
 
                                     }
                                 
@@ -82,24 +84,29 @@ public constructor (transformInfoInterface: TransformInfoInterface)
                                 )
                         
                                     {
-                                    valid= Boolean.FALSE
+                                    valid= Boolean.FALSE;
+    
 
                                     }
                                 
-this.newStoreFrontInterface= StoreFrontFactory.getInstance(this.newStoreFrontInterface!.getName())
+this.newStoreFrontInterface= StoreFrontFactory.getInstance(this.newStoreFrontInterface!.getName());
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return valid;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("Failed to validate form", this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put("Failed to validate form", this, commonStrings!.IS_VALID, e);
+    
 
                                     }
                                 
@@ -121,12 +128,14 @@ this.newStoreFrontInterface= StoreFrontFactory.getInstance(this.newStoreFrontInt
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
                         if(this.newStoreFrontInterface!.isNameValid() == Boolean.FALSE)
                         
                                     {
-                                    stringBuffer!.append(this.newStoreFrontInterface!.nameValidationInfo())
+                                    stringBuffer!.append(this.newStoreFrontInterface!.nameValidationInfo());
+    
 
                                     }
                                 
@@ -136,7 +145,8 @@ this.newStoreFrontInterface= StoreFrontFactory.getInstance(this.newStoreFrontInt
                                 )
                         
                                     {
-                                    stringBuffer!.append(this.newStoreFrontInterface +" does not exist.<br>")
+                                    stringBuffer!.append(this.newStoreFrontInterface +" does not exist.<br>");
+    
 
                                     }
                                 
@@ -146,13 +156,16 @@ this.newStoreFrontInterface= StoreFrontFactory.getInstance(this.newStoreFrontInt
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return "Unkown Error";
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e)
+                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e);
+    
 
                                     }
                                 

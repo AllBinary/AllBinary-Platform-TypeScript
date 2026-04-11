@@ -79,17 +79,21 @@ public constructor (){
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
+;
+    
 
                         if(frame > 0)
                         
                                     {
                                     
     var imageComparisonResultFrameCacheable: ImageComparisonResultFrameCacheable = 
-                                    (getInstance as AutomaticCacheInterface).get(frame) as ImageComparisonResultFrameCacheable;
-        
-        
+                                    (getInstance as AutomaticCacheInterface).get(frame);
 
+                         as ImageComparisonResultFrameCacheable;
+        
+        
+;
+    
 
                         if(imageComparisonResultFrameCacheable != 
                                     null
@@ -100,13 +104,16 @@ public constructor (){
     var imageComparisonResult: ImageComparisonResult = imageComparisonResultFrameCacheable!.getImageComparisonResult()!;
         
         
-
-this.save(imageComparisonResult, imageComparisonResultFrameCacheable!.getFrame())
+;
+    
+this.save(imageComparisonResult, imageComparisonResultFrameCacheable!.getFrame());
+    
 
                                     }
                                 
                         else {
-                            logUtil!.put("Comparison Results Not Available for Output: " +frame, this, commonStrings!.SAVE)
+                            logUtil!.put("Comparison Results Not Available for Output: " +frame, this, commonStrings!.SAVE);
+    
 
                         }
                             
@@ -114,7 +121,8 @@ this.save(imageComparisonResult, imageComparisonResultFrameCacheable!.getFrame()
                                     }
                                 
                         else {
-                            logUtil!.put("No Comparison Results: for first frame: " +frame, this, commonStrings!.SAVE)
+                            logUtil!.put("No Comparison Results: for first frame: " +frame, this, commonStrings!.SAVE);
+    
 
                         }
                             
@@ -130,62 +138,86 @@ this.save(imageComparisonResult, imageComparisonResultFrameCacheable!.getFrame()
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
+;
+    
 
     var filePathStringBuffer: StringMaker = new StringMaker();
         
         
-
-filePathStringBuffer!.append(ImageOutputData.SAVE_PATH)
-filePathStringBuffer!.append(LongUtil.fillIn(frame.toString()))
-filePathStringBuffer!.append(ROOT_NAME)
+;
+    
+filePathStringBuffer!.append(ImageOutputData.SAVE_PATH);
+    
+filePathStringBuffer!.append(LongUtil.fillIn(frame.toString()));
+    
+filePathStringBuffer!.append(ROOT_NAME);
+    
 
     var filePathStringBuffer1: StringMaker = new StringMaker();
         
         
-
-filePathStringBuffer1!.append(filePathStringBuffer!.toString())
-filePathStringBuffer1!.append("_1")
-filePathStringBuffer1!.append(MediaDataFactory.getInstance()!.JPG.getExtension())
+;
+    
+filePathStringBuffer1!.append(filePathStringBuffer!.toString());
+    
+filePathStringBuffer1!.append("_1");
+    
+filePathStringBuffer1!.append(MediaDataFactory.getInstance()!.JPG.getExtension());
+    
 
     var filePath1: string = filePathStringBuffer1!.toString()!;
         
         
-
+;
+    
 
     var filePathStringBuffer2: StringMaker = new StringMaker();
         
         
-
-filePathStringBuffer2!.append(filePathStringBuffer!.toString())
-filePathStringBuffer2!.append("_2")
-filePathStringBuffer2!.append(MediaDataFactory.getInstance()!.JPG.getExtension())
+;
+    
+filePathStringBuffer2!.append(filePathStringBuffer!.toString());
+    
+filePathStringBuffer2!.append("_2");
+    
+filePathStringBuffer2!.append(MediaDataFactory.getInstance()!.JPG.getExtension());
+    
 
     var filePath2: string = filePathStringBuffer2!.toString()!;
         
         
-
+;
+    
 
     var bufferedImageCacheables: BufferedImageCacheable[] = ChangedPixelsUtil.generateBufferedImageChacheables(imageComparisonResult)!;
         
         
-
-logUtil!.put("Comparison Image File Path 1: " +filePath1, this, commonStrings!.SAVE)
-logUtil!.put("Comparison Image File Path 2: " +filePath2, this, commonStrings!.SAVE)
+;
+    
+logUtil!.put("Comparison Image File Path 1: " +filePath1, this, commonStrings!.SAVE);
+    
+logUtil!.put("Comparison Image File Path 2: " +filePath2, this, commonStrings!.SAVE);
+    
 
     var bufferedImageArray: BufferedImage[] = new Array(2);
         
         
-
-bufferedImageArray[0]= bufferedImageCacheables[0]!.getBufferedImage()
-bufferedImageArray[1]= bufferedImageCacheables[1]!.getBufferedImage()
+;
+    
+bufferedImageArray[0]= bufferedImageCacheables[0]!.getBufferedImage();
+    
+bufferedImageArray[1]= bufferedImageCacheables[1]!.getBufferedImage();
+    
 
     var imagePersistanceUtil: ImagePersistanceUtil = ImagePersistanceUtil.getInstance()!;
         
         
-
-imagePersistanceUtil!.saveWithImageIO(filePath1, bufferedImageArray[0]!)
-imagePersistanceUtil!.saveWithImageIO(filePath2, bufferedImageArray[1]!)
+;
+    
+imagePersistanceUtil!.saveWithImageIO(filePath1, bufferedImageArray[0]!);
+    
+imagePersistanceUtil!.saveWithImageIO(filePath2, bufferedImageArray[1]!);
+    
 }
 
 

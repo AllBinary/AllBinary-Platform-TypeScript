@@ -64,7 +64,8 @@ export class DisplaysUtil
     var dimension: Dimension = Toolkit.getDefaultToolkit()!.getScreenSize()!;
         
         
-
+;
+    
 
 
 
@@ -79,32 +80,39 @@ export class DisplaysUtil
     var graphicsEnvironment: GraphicsEnvironment = GraphicsEnvironment.getLocalGraphicsEnvironment()!;
         
         
-
+;
+    
 
     var graphicsDeviceArray: GraphicsDevice[] = graphicsEnvironment!.getScreenDevices()!;
         
         
-
+;
+    
 
     var graphicsDevice: GraphicsDevice
-
+;
+    
 
     var displayMode: DisplayMode
-
+;
+    
 
     var rectangle: Rectangle
-
+;
+    
 
     var size: number = graphicsDeviceArray!.length
                 ;
         
         
-
+;
+    
 
     var rectangleArray: Rectangle[] = new Array(size);
         
         
-
+;
+    
 
 
 
@@ -115,10 +123,14 @@ export class DisplaysUtil
         
 index < size; index++)
         {
-graphicsDevice= graphicsDeviceArray[index]!
-displayMode= graphicsDevice!.getDisplayMode()
-rectangle= Rectangle(PointFactory.getInstance()!.ZERO_ZERO, displayMode!.getWidth(), displayMode!.getHeight())
-rectangleArray[index]= rectangle
+graphicsDevice= graphicsDeviceArray[index]!;
+    
+displayMode= graphicsDevice!.getDisplayMode();
+    
+rectangle= Rectangle(PointFactory.getInstance()!.ZERO_ZERO, displayMode!.getWidth(), displayMode!.getHeight());
+    
+rectangleArray[index]= rectangle;
+    
 }
 
 

@@ -31,7 +31,7 @@ var key = key
 }
 
 
-    public encrypt(array: ByteArray): ByteArray{
+    public encrypt(array: number[]): number[]{
 var array = array
 
 
@@ -42,7 +42,7 @@ var array = array
 }
 
 
-    public decrypt(array: ByteArray): ByteArray{
+    public decrypt(array: number[]): number[]{
 var array = array
 
 
@@ -53,7 +53,7 @@ var array = array
 }
 
 
-    public mutilate(array: ByteArray): ByteArray{
+    public mutilate(array: number[]): number[]{
 var array = array
 
 

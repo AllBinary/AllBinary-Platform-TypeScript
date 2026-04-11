@@ -79,7 +79,8 @@ var inputToGameKeyMapping = inputToGameKeyMapping
 
     setGameKeyEvent(gameKeyEvent: GameKeyEvent){
 var gameKeyEvent = gameKeyEvent
-this.gameKeyEvent= gameKeyEvent
+this.gameKeyEvent= gameKeyEvent;
+    
 }
 
 
@@ -95,7 +96,8 @@ this.gameKeyEvent= gameKeyEvent
 
     setGameKey(gameKey: GameKey){
 var gameKey = gameKey
-this.gameKey= gameKey
+this.gameKey= gameKey;
+    
 }
 
 

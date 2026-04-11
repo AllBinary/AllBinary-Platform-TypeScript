@@ -55,10 +55,11 @@ private constructor (){
     //var width = width
     //var height = height
 
-    var image: Image = GameFeatureImageCacheFactory.getInstance()!.get(this::class.toString()!, width, height)!;
+    var image: Image = GameFeatureImageCacheFactory.getInstance()!.get(this.constructor.name.toString()!, width, height)!;
         
         
-
+;
+    
 
 
 
@@ -76,10 +77,11 @@ private constructor (){
     //var maxScaleX = maxScaleX
     //var maxScaleY = maxScaleY
 
-    var image: Image = GameFeatureImageCacheFactory.getInstance()!.get(this::class.toString()!, (width *maxScaleX).toInt() +1, (height *maxScaleY).toInt() +1)!;
+    var image: Image = GameFeatureImageCacheFactory.getInstance()!.get(this.constructor.name.toString()!, (width *maxScaleX).toInt() +1, (height *maxScaleY).toInt() +1)!;
         
         
-
+;
+    
 
 
 

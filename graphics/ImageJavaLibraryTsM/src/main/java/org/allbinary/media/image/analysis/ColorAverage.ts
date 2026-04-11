@@ -38,9 +38,12 @@ export class ColorAverage
 public constructor (){
 
             super();
-            this.setAvgRed(0)
-this.setAvgGreen(0)
-this.setAvgBlue(0)
+            this.setAvgRed(0);
+    
+this.setAvgGreen(0);
+    
+this.setAvgBlue(0);
+    
 }
 
 
@@ -49,21 +52,33 @@ this.setAvgBlue(0)
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("getAvgRed(): ")
-stringBuffer!.appendfloat(this.getAvgRed())
-stringBuffer!.append(CommonSeps.getInstance()!.NEW_LINE)
-stringBuffer!.append("getAvgRed(): ")
-stringBuffer!.appendfloat(this.getAvgRed())
-stringBuffer!.append(CommonSeps.getInstance()!.NEW_LINE)
-stringBuffer!.append("getAvgGreen(): ")
-stringBuffer!.appendfloat(this.getAvgGreen())
-stringBuffer!.append(CommonSeps.getInstance()!.NEW_LINE)
+;
+    
+stringBuffer!.append("getAvgRed(): ");
+    
+stringBuffer!.appendfloat(this.getAvgRed());
+    
+stringBuffer!.append(CommonSeps.getInstance()!.NEW_LINE);
+    
+stringBuffer!.append("getAvgRed(): ");
+    
+stringBuffer!.appendfloat(this.getAvgRed());
+    
+stringBuffer!.append(CommonSeps.getInstance()!.NEW_LINE);
+    
+stringBuffer!.append("getAvgGreen(): ");
+    
+stringBuffer!.appendfloat(this.getAvgGreen());
+    
+stringBuffer!.append(CommonSeps.getInstance()!.NEW_LINE);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 
@@ -80,7 +95,8 @@ stringBuffer!.append(CommonSeps.getInstance()!.NEW_LINE)
 
     public setAvgRed(avgRed: number){
 var avgRed = avgRed
-this.avgRed= avgRed
+this.avgRed= avgRed;
+    
 }
 
 
@@ -96,7 +112,8 @@ this.avgRed= avgRed
 
     public setAvgGreen(avgGreen: number){
 var avgGreen = avgGreen
-this.avgGreen= avgGreen
+this.avgGreen= avgGreen;
+    
 }
 
 
@@ -112,7 +129,8 @@ this.avgGreen= avgGreen
 
     public setAvgBlue(avgBlue: number){
 var avgBlue = avgBlue
-this.avgBlue= avgBlue
+this.avgBlue= avgBlue;
+    
 }
 
 

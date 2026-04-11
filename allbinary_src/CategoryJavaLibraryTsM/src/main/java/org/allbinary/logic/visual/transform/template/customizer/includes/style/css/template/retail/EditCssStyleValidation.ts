@@ -64,7 +64,7 @@ public constructor (document: Document)
                     
 }
 
-public constructor (hashMap: HashMap<Any, Any>)                        
+public constructor (hashMap: HashMap<any, any>)                        
 
                             : super(hashMap){
 
@@ -83,6 +83,8 @@ public constructor (hashMap: HashMap<Any, Any>)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.isValid();
+
+                        ;
     
 }
 
@@ -93,6 +95,8 @@ public constructor (hashMap: HashMap<Any, Any>)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.validationInfo();
+
+                        ;
     
 }
 
@@ -126,20 +130,25 @@ var document = document
     var node: Node = document.createElement(StylesData.getInstance()!.NAME)!;
         
         
-
+;
+    
 
     var styleNode: Node = document.createElement(StyleData.getInstance()!.NAME)!;
         
         
-
-node.appendChild(styleNode)
+;
+    
+node.appendChild(styleNode);
+    
 styleNode!.appendChild(ColorsView().
-                            toXmlNode(document))
+                            toXmlNode(document));
+    
 
     var size: number = cssStyleElementVector!.size()!;
         
         
-
+;
+    
 
 
 
@@ -151,11 +160,15 @@ styleNode!.appendChild(ColorsView().
 i < size; i++)
         {
 
-    var styleDomNodeInterface: DomNodeInterface = cssStyleElementVector!.get(i) as DomNodeInterface;
-        
-        
+    var styleDomNodeInterface: DomNodeInterface = cssStyleElementVector!.get(i);
 
-styleNode!.appendChild(styleDomNodeInterface!.toXmlNode(document))
+                         as DomNodeInterface;
+        
+        
+;
+    
+styleNode!.appendChild(styleDomNodeInterface!.toXmlNode(document));
+    
 }
 
 

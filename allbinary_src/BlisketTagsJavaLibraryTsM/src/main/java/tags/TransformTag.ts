@@ -62,7 +62,8 @@ public constructor ()
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
+    
 
                                     }
                                 
@@ -82,7 +83,8 @@ public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
+    
 
                                     }
                                 
@@ -95,25 +97,31 @@ public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface)
 
         try {
             
-    var result: string = this.getHelper()!.::class.getMethod("view", 
+    var result: string = this.getHelper()!..constructor.name.getMethod("view", 
                             null)!.invoke(this.getHelper(), 
-                            null) as String;
-        
-        
+                            null);
 
+                         as String;
+        
+        
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e);
+    
 
                                     }
                                 
@@ -135,7 +143,8 @@ public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    logUtil!.put("Creating with: \n" +this.getPropertiesHashMap()!.toString(), this, "doStartTag")
+                                    logUtil!.put("Creating with: \n" +this.getPropertiesHashMap()!.toString(), this, "doStartTag");
+    
 
                                     }
                                 
@@ -147,22 +156,31 @@ public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface)
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("ViewTag Start For: ")
-stringBuffer!.append(this.getName())
-stringBuffer!.append("\nViewFile: ")
-stringBuffer!.append(this.getObjectFile())
-logUtil!.put(stringBuffer!.toString(), this, "doStartTag")
+;
+    
+stringBuffer!.append("ViewTag Start For: ");
+    
+stringBuffer!.append(this.getName());
+    
+stringBuffer!.append("\nViewFile: ");
+    
+stringBuffer!.append(this.getObjectFile());
+    
+logUtil!.put(stringBuffer!.toString(), this, "doStartTag");
+    
 
                                     }
                                 
-this.setHelper()
-pageContext!.getOut()!.print(this.view())
+this.setHelper();
+    
+pageContext!.getOut()!.print(this.view());
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    logUtil!.put("Tag End", this, "doStartTag")
+                                    logUtil!.put("Tag End", this, "doStartTag");
+    
 
                                     }
                                 
@@ -172,9 +190,12 @@ pageContext!.getOut()!.print(this.view())
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return SKIP_BODY;
     
-} catch(e: LicensingException)
+
+                //: 
+} catch(e) 
             {
-AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e);
+    
 
 
 
@@ -182,9 +203,12 @@ AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
                         return SKIP_BODY;
     
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
-AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
+    
 
 
 

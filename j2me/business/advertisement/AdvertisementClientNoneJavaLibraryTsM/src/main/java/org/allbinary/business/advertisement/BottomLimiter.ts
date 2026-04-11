@@ -60,8 +60,10 @@ private constructor (){
     public init(lower: number, higher: number){
 var lower = lower
 var higher = higher
-this.lower= lower
-this.higher= higher
+this.lower= lower;
+    
+this.higher= higher;
+    
 }
 
 
@@ -70,26 +72,31 @@ this.higher= higher
     var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
         
         
-
+;
+    
 
     var gameAdState: GameAdState = GameAdStateFactory.getInstance()!.getCurrentInstance()!;
         
         
-
+;
+    
 
                         if(gameAdState!.isShowingAt())
                         
                                     {
-                                    deltaY= higher
+                                    deltaY= higher;
+    
 
                                     }
                                 
                         else {
-                            deltaY= lower
+                            deltaY= lower;
+    
 
                         }
                             
-bottom= displayInfo!.getLastHeight() -deltaY
+bottom= displayInfo!.getLastHeight() -deltaY;
+    
 }
 
 

@@ -27,7 +27,8 @@ export class LinuxOS extends GenericOperatingSystem {
 public constructor (){
 
             super();
-            this.scalable= true
+            this.scalable= true;
+    
 }
 
 

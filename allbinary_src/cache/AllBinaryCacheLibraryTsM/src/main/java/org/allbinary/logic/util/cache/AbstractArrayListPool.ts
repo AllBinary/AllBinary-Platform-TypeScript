@@ -44,7 +44,8 @@ public constructor (cacheableInterfaceFactoryInterface: CacheableInterfaceFactor
 
             super();
             var cacheableInterfaceFactoryInterface = cacheableInterfaceFactoryInterface
-this.cacheableInterfaceFactoryInterface= cacheableInterfaceFactoryInterface
+this.cacheableInterfaceFactoryInterface= cacheableInterfaceFactoryInterface;
+    
 }
 
 
@@ -73,7 +74,8 @@ var key = key
             
     public add(cacheableInterface: CacheableInterface){
 var cacheableInterface = cacheableInterface
-buffers.add(cacheableInterface)
+buffers.add(cacheableInterface);
+    
 }
 
 
@@ -91,7 +93,8 @@ var cacheableInterfaces = cacheableInterfaces
         
 index < cacheableInterfaces!.length; index++)
         {
-buffers.add(cacheableInterfaces[index]!)
+buffers.add(cacheableInterfaces[index]!);
+    
 }
 
 }

@@ -18,13 +18,19 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
+            import Hashtable from "@ohos.util.HashMap";
+        
 import { IOException } from "../../../../../java/io/IOException.js";
 
     
-import { Hashtable } from "../../../../../java/util/Hashtable.js";
+
+//import { Hashtable } from "../../../../../java/util/Hashtable.js";
 
     
-import { Vector } from "../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../java/util/Vector.js";
 
     
 import { XmlRpcClient } from "../../../../../org/apache/xmlrpc/XmlRpcClient.js";
@@ -72,50 +78,66 @@ public constructor (clientInfo: AbeClientInformationInterface)
     var param: Vector = new Vector();
         
         
-
+;
+    
 
     var serverUrl: string = getClientInfo()!.getLicenseServer(this.getServer())!;
         
         
-
+;
+    
 
     var index: number = serverUrl!.lastIndexOf("/")!;
         
         
-
-serverUrl= serverUrl!.substring(0, index +1) +"logservssl.php"
+;
+    
+serverUrl= serverUrl!.substring(0, index +1) +"logservssl.php";
+    
 
     var xmlRpcClient: XmlRpcClient = new XmlRpcClient(serverUrl);
         
         
-
-this.setClient(xmlRpcClient)
+;
+    
+this.setClient(xmlRpcClient);
+    
 xmlRpcClient!.setBasicAuthentication(
                             null, 
-                            null)
+                            null);
+    
 
-    var hashtable: Hashtable<Any, Any> = anyType as Hashtable<Any, Any>;
+    var hashtable: Hashtable<any, any> = anyType as Hashtable<any, any>;
         
         
-
-param.add(hashtable)
+;
+    
+param.add(hashtable);
+    
 
     var result: any = {} = xmlRpcClient!.execute(this.getRemoteMethod(), param, noCrypt)!;
         
         
-
-System.out.println("Result: \n" +result.toString())
+;
+    
+System.out.println("Result: \n" +result.toString());
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
-} catch(e: IOException)
-            {
-System.out.println("IOException Trying Other Servers")
 
-                        if(!e.getMessage()!.startsWith(HOST_NOT_RESOLVED))
+                //: 
+} catch(e) 
+            {
+System.out.println("IOException Trying Other Servers");
+    
+
+                        if(!e.getMessage()!.startsWith(HOST_NOT_RESOLVED);
+
+                        )
                         
                                     {
                                     
@@ -123,6 +145,8 @@ System.out.println("IOException Trying Other Servers")
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.tryAnother(anyType);
+
+                        ;
     
 
                                     }
@@ -136,22 +160,30 @@ System.out.println("IOException Trying Other Servers")
                         }
                             
 }
- catch(e: XmlRpcException)
+
+                //: 
+ catch(e) 
             {
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.tryAnother(anyType);
+
+                        ;
     
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.tryAnother(anyType);
+
+                        ;
     
 }
 

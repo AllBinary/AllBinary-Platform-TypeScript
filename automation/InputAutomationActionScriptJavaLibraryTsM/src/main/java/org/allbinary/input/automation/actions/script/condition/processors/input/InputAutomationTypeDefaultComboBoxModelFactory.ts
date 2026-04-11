@@ -40,23 +40,27 @@ export class InputAutomationTypeDefaultComboBoxModelFactory
     var defaultComboBoxModel: DefaultComboBoxModel = new DefaultComboBoxModel();
         
         
-
+;
+    
 
     var set: Set = InputRobotFactory.getInstance()!.get()!.keySet()!;
         
         
+;
+    
 
-
-    var nameArray: any = {}[] = set.toArray()!;
+    var nameArray: any[] = set.toArray()!;
         
         
-
+;
+    
 
     var size: number = nameArray!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -67,7 +71,8 @@ export class InputAutomationTypeDefaultComboBoxModelFactory
         
 index < size; index++)
         {
-defaultComboBoxModel!.addElement(nameArray[index]! as String)
+defaultComboBoxModel!.addElement(nameArray[index]! as String);
+    
 }
 
 

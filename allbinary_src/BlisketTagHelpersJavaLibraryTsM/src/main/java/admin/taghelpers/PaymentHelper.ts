@@ -69,20 +69,27 @@ export class PaymentHelper extends Table {
     private value: string
 
     private readonly portion: Portion
-public constructor (hashMap: HashMap<Any, Any>, pageContext: PageContext){
+public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
             var hashMap = hashMap
 var pageContext = pageContext
-this.request= pageContext!.getRequest() as HttpServletRequest
-this.weblisketSession= WeblisketSession(hashMap, pageContext)
-this.portion= Portion(hashMap)
-this.getFormData()
+this.request= pageContext!.getRequest();
+
+                         as HttpServletRequest;
+    
+this.weblisketSession= WeblisketSession(hashMap, pageContext);
+    
+this.portion= Portion(hashMap);
+    
+this.getFormData();
+    
 }
 
 
     getFormData(){
-this.value= request.getParameter("VALUE")
+this.value= request.getParameter("VALUE");
+    
 }
 
 
@@ -93,24 +100,30 @@ this.value= request.getParameter("VALUE")
     var success: string = "Successfully Added Payment";
         
         
-
+;
+    
 
     var paymentEntity: PaymentEntity = PaymentEntityFactory.getInstance()!.getPaymentEntityInstance()!;
         
         
-
+;
+    
 
     var paymentInterface: PaymentInterface = PaymentFactory.getInstance(request)!;
         
         
-
-paymentEntity!.add(this.weblisketSession!.getUserName(), paymentInterface)
-paymentEntity!.setDefault(this.weblisketSession!.getUserName(), Integer(paymentEntity!.getLastId(this.weblisketSession!.getUserName())))
+;
+    
+paymentEntity!.add(this.weblisketSession!.getUserName(), paymentInterface);
+    
+paymentEntity!.setDefault(this.weblisketSession!.getUserName(), Integer(paymentEntity!.getLastId(this.weblisketSession!.getUserName())));
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put(success, this, "addPayment()")
+                                    logUtil!.put(success, this, "addPayment()");
+    
 
                                     }
                                 
@@ -120,18 +133,22 @@ paymentEntity!.setDefault(this.weblisketSession!.getUserName(), Integer(paymentE
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to add Payment";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "addPayment()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "addPayment()", e);
+    
 
                                     }
                                 
@@ -153,18 +170,22 @@ paymentEntity!.setDefault(this.weblisketSession!.getUserName(), Integer(paymentE
     var success: string = "Successfully Selected Payment";
         
         
-
+;
+    
 
     var paymentEntity: PaymentEntity = PaymentEntityFactory.getInstance()!.getPaymentEntityInstance()!;
         
         
-
-paymentEntity!.setDefault(this.weblisketSession!.getUserName(), Integer(this.value))
+;
+    
+paymentEntity!.setDefault(this.weblisketSession!.getUserName(), Integer(this.value));
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put(success, this, "selectPayment()")
+                                    logUtil!.put(success, this, "selectPayment()");
+    
 
                                     }
                                 
@@ -174,18 +195,22 @@ paymentEntity!.setDefault(this.weblisketSession!.getUserName(), Integer(this.val
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to select Payment";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "selectPayment()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "selectPayment()", e);
+    
 
                                     }
                                 
@@ -207,25 +232,30 @@ paymentEntity!.setDefault(this.weblisketSession!.getUserName(), Integer(this.val
     var success: string = "Successfully Removed Payment";
         
         
-
+;
+    
 
     var paymentEntity: PaymentEntity = PaymentEntityFactory.getInstance()!.getPaymentEntityInstance()!;
         
         
-
-paymentEntity!.remove(this.weblisketSession!.getUserName(), Integer(this.value))
+;
+    
+paymentEntity!.remove(this.weblisketSession!.getUserName(), Integer(this.value));
+    
 
     var paymentInterface: PaymentInterface = paymentEntity!.getDefault(this.weblisketSession!.getUserName())!;
         
         
-
+;
+    
 
                         if(paymentInterface == 
                                     null
                                 )
                         
                                     {
-                                    paymentEntity!.setDefault(this.weblisketSession!.getUserName(), Integer(paymentEntity!.getLastId(this.weblisketSession!.getUserName())))
+                                    paymentEntity!.setDefault(this.weblisketSession!.getUserName(), Integer(paymentEntity!.getLastId(this.weblisketSession!.getUserName())));
+    
 
                                     }
                                 
@@ -233,7 +263,8 @@ paymentEntity!.remove(this.weblisketSession!.getUserName(), Integer(this.value))
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put(success, this, "removePayment()")
+                                    logUtil!.put(success, this, "removePayment()");
+    
 
                                     }
                                 
@@ -243,18 +274,22 @@ paymentEntity!.remove(this.weblisketSession!.getUserName(), Integer(this.value))
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to remove Payment";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "removePayment()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "removePayment()", e);
+    
 
                                     }
                                 
@@ -276,17 +311,20 @@ paymentEntity!.remove(this.weblisketSession!.getUserName(), Integer(this.value))
     var paymentEntity: PaymentEntity = PaymentEntityFactory.getInstance()!.getPaymentEntityInstance()!;
         
         
-
+;
+    
 
     var success: string = paymentEntity!.dropTable()!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put(success, this, commonStrings!.DROP)
+                                    logUtil!.put(success, this, commonStrings!.DROP);
+    
 
                                     }
                                 
@@ -296,18 +334,22 @@ paymentEntity!.remove(this.weblisketSession!.getUserName(), Integer(this.value))
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to drop Admin table";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.DROP, e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.DROP, e);
+    
 
                                     }
                                 
@@ -329,17 +371,20 @@ paymentEntity!.remove(this.weblisketSession!.getUserName(), Integer(this.value))
     var paymentEntity: PaymentEntity = PaymentEntityFactory.getInstance()!.getPaymentEntityInstance()!;
         
         
-
+;
+    
 
     var success: string = paymentEntity!.createTable()!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put(success, this, "create()")
+                                    logUtil!.put(success, this, "create()");
+    
 
                                     }
                                 
@@ -349,18 +394,22 @@ paymentEntity!.remove(this.weblisketSession!.getUserName(), Integer(this.value))
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to create user table";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "create()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "create()", e);
+    
 
                                     }
                                 
@@ -382,17 +431,20 @@ paymentEntity!.remove(this.weblisketSession!.getUserName(), Integer(this.value))
     var success: string = "Restore Successful";
         
         
-
+;
+    
 
     var result: string = AbSqlTableUtil.getInstance()!.restoreTable(PaymentEntityFactory.getInstance()!.getPaymentEntityInstance(), portion)!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put(success, this, "restore()")
+                                    logUtil!.put(success, this, "restore()");
+    
 
                                     }
                                 
@@ -402,18 +454,22 @@ paymentEntity!.remove(this.weblisketSession!.getUserName(), Integer(this.value))
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to restore backup";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "restore()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "restore()", e);
+    
 
                                     }
                                 
@@ -435,17 +491,20 @@ paymentEntity!.remove(this.weblisketSession!.getUserName(), Integer(this.value))
     var success: string = "Backup Successful";
         
         
-
+;
+    
 
     var result: string = AbSqlTableUtil.getInstance()!.backupTable(PaymentEntityFactory.getInstance()!.getPaymentEntityInstance())!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put(success, this, "backup()")
+                                    logUtil!.put(success, this, "backup()");
+    
 
                                     }
                                 
@@ -455,18 +514,22 @@ paymentEntity!.remove(this.weblisketSession!.getUserName(), Integer(this.value))
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to make backup";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "backup()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "backup()", e);
+    
 
                                     }
                                 

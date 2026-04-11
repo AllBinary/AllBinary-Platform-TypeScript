@@ -18,7 +18,10 @@
 
 
 
-import { Hashtable } from "../../../../../java/util/Hashtable.js";
+            import Hashtable from "@ohos.util.HashMap";
+        
+
+//import { Hashtable } from "../../../../../java/util/Hashtable.js";
 
     
 import { HardwareComponentInterface } from "../../../../../org/allbinary/logic/system/hardware/components/interfaces/HardwareComponentInterface.js";
@@ -34,7 +37,7 @@ interface HardwareInterface {
 
     public compareTo(hardwareInterface: HardwareInterface): boolean
 
-    public difference(hardwareInterface: HardwareInterface): Hashtable<Any, Any>
+    public difference(hardwareInterface: HardwareInterface): Hashtable<any, any>
 
 }
                 

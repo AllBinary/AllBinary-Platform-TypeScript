@@ -41,7 +41,7 @@ export class CreateUserFactory
 
                 //@Throws(Error::class)
             
-    public static getInstance(hashMap: HashMap<Any, Any>): UserInterface{
+    public static getInstance(hashMap: HashMap<any, any>): UserInterface{
 var hashMap = hashMap
 
                         if(hashMap != 
@@ -50,24 +50,32 @@ var hashMap = hashMap
                         
                                     {
                                     
-    var roleString: string = hashMap!.get(UserRoleData.NAME.toString()) as String;
+    var roleString: string = hashMap!.get(UserRoleData.NAME.toString());
+
+                         as String;
         
         
+;
+    
 
+                        if(!StringValidationUtil.getInstance()!.isEmpty(roleString);
 
-                        if(!StringValidationUtil.getInstance()!.isEmpty(roleString))
+                        )
                         
                                     {
                                     
     var role: UserRole = UserRoleB.getRole(roleString)!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return role.getUserFactory()!.getInstance(hashMap);
+
+                        ;
     
 
                                     }

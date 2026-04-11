@@ -44,27 +44,38 @@ public constructor (demoCanvas: DemoCanvas){
 
             super();
             var demoCanvas = demoCanvas
-this.demoCanvas= demoCanvas
+this.demoCanvas= demoCanvas;
+    
 }
 
 
     public run(){
 
         try {
-            this.setRunning(true)
-this.demoCanvas!.stopGameDemo()
-this.demoCanvas!.create()
-this.demoCanvas!.start()
-this.setRunning(false)
-} catch(e: Exception)
+            this.setRunning(true);
+    
+this.demoCanvas!.stopGameDemo();
+    
+this.demoCanvas!.create();
+    
+this.demoCanvas!.start();
+    
+this.setRunning(false);
+    
+
+                //: 
+} catch(e) 
             {
-this.setRunning(false)
+this.setRunning(false);
+    
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
+    
 }
 
 }

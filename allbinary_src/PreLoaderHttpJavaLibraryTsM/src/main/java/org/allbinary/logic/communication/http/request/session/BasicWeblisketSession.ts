@@ -58,19 +58,25 @@ public constructor (pageContext: PageContext){
 
             super();
             var pageContext = pageContext
-this.pageContext= pageContext
+this.pageContext= pageContext;
+    
 
-    var request: HttpServletRequest = pageContext!.getRequest() as HttpServletRequest;
+    var request: HttpServletRequest = pageContext!.getRequest();
+
+                         as HttpServletRequest;
         
         
-
-this.session= request.getSession(true)
+;
+    
+this.session= request.getSession(true);
+    
 }
 
 
     public setRole(aRole: BasicUserRole){
 var aRole = aRole
-session.setAttribute(BasicUserRoleData.NAME.toString(), aRole)
+session.setAttribute(BasicUserRoleData.NAME.toString(), aRole);
+    
 }
 
 
@@ -79,49 +85,58 @@ session.setAttribute(BasicUserRoleData.NAME.toString(), aRole)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return session.getAttribute(BasicUserRoleData.NAME.toString()) as BasicUserRole;
+                        return session.getAttribute(BasicUserRoleData.NAME.toString());
+
+                         as BasicUserRole;
     
 }
 
 
     public setPassword(password: string){
 var password = password
-session.setAttribute(UserData.PASSWORD, password)
+session.setAttribute(UserData.PASSWORD, password);
+    
 }
 
 
     public setUserName(userName: string){
 var userName = userName
-session.setAttribute(UserData.USERNAME, userName)
+session.setAttribute(UserData.USERNAME, userName);
+    
 }
 
 
     public setPaymentMethod(value: string){
 var value = value
-session.setAttribute(PaymentGatewayData.NAME.toString(), value)
+session.setAttribute(PaymentGatewayData.NAME.toString(), value);
+    
 }
 
 
     public setAuthenticated(){
-session.setAttribute(WeblisketSessionData.AUTHENTICATED, BooleanFactory.getInstance()!.TRUE_STRING)
+session.setAttribute(WeblisketSessionData.AUTHENTICATED, BooleanFactory.getInstance()!.TRUE_STRING);
+    
 }
 
 
     public setAttempts(value: Integer){
 var value = value
-session.setAttribute(WeblisketSessionData.ATTEMPTS, value)
+session.setAttribute(WeblisketSessionData.ATTEMPTS, value);
+    
 }
 
 
     public setTimeout(value: string){
 var value = value
-this.session.setAttribute(WeblisketSessionData.TIMEOUT, value)
+this.session.setAttribute(WeblisketSessionData.TIMEOUT, value);
+    
 }
 
 
     public setStoreName(value: string){
 var value = value
-this.session.setAttribute(StoreFrontData.getInstance()!.NAME, value)
+this.session.setAttribute(StoreFrontData.getInstance()!.NAME, value);
+    
 }
 
 
@@ -130,7 +145,9 @@ this.session.setAttribute(StoreFrontData.getInstance()!.NAME, value)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.session.getAttribute(org.allbinary.globals.GLOBALS2.WEBAPPPATH) as String;
+                        return this.session.getAttribute(org.allbinary.globals.GLOBALS2.WEBAPPPATH);
+
+                         as String;
     
 }
 
@@ -140,7 +157,9 @@ this.session.setAttribute(StoreFrontData.getInstance()!.NAME, value)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return session.getAttribute(UserData.USERNAME) as String;
+                        return session.getAttribute(UserData.USERNAME);
+
+                         as String;
     
 }
 
@@ -150,7 +169,9 @@ this.session.setAttribute(StoreFrontData.getInstance()!.NAME, value)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return session.getAttribute(UserData.PASSWORD) as String;
+                        return session.getAttribute(UserData.PASSWORD);
+
+                         as String;
     
 }
 
@@ -160,7 +181,9 @@ this.session.setAttribute(StoreFrontData.getInstance()!.NAME, value)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return session.getAttribute(PaymentGatewayData.NAME.toString()) as String;
+                        return session.getAttribute(PaymentGatewayData.NAME.toString());
+
+                         as String;
     
 }
 
@@ -170,7 +193,9 @@ this.session.setAttribute(StoreFrontData.getInstance()!.NAME, value)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return session.getAttribute(WeblisketSessionData.AUTHENTICATED) as String;
+                        return session.getAttribute(WeblisketSessionData.AUTHENTICATED);
+
+                         as String;
     
 }
 
@@ -180,7 +205,9 @@ this.session.setAttribute(StoreFrontData.getInstance()!.NAME, value)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return session.getAttribute(WeblisketSessionData.ATTEMPTS) as Integer;
+                        return session.getAttribute(WeblisketSessionData.ATTEMPTS);
+
+                         as Integer;
     
 }
 
@@ -190,7 +217,9 @@ this.session.setAttribute(StoreFrontData.getInstance()!.NAME, value)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return session.getAttribute(WeblisketSessionData.TIMEOUT) as String;
+                        return session.getAttribute(WeblisketSessionData.TIMEOUT);
+
+                         as String;
     
 }
 
@@ -200,22 +229,29 @@ this.session.setAttribute(StoreFrontData.getInstance()!.NAME, value)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return session.getAttribute(StoreFrontData.getInstance()!.NAME) as String;
+                        return session.getAttribute(StoreFrontData.getInstance()!.NAME);
+
+                         as String;
     
 }
 
 
     public setAuthenticated(value: boolean){
 var value = value
-session.setAttribute(WeblisketSessionData.AUTHENTICATED, BooleanFactory.getInstance()!.FALSE_STRING)
+session.setAttribute(WeblisketSessionData.AUTHENTICATED, BooleanFactory.getInstance()!.FALSE_STRING);
+    
 }
 
 
     public clear(){
-this.session.removeAttribute(WeblisketSessionData.AUTHENTICATED)
-this.session.removeAttribute(WeblisketSessionData.TIMEOUT)
-this.session.removeAttribute(BasicUserRoleData.NAME.toString())
-this.session.removeAttribute(UserData.USERNAME)
+this.session.removeAttribute(WeblisketSessionData.AUTHENTICATED);
+    
+this.session.removeAttribute(WeblisketSessionData.TIMEOUT);
+    
+this.session.removeAttribute(BasicUserRoleData.NAME.toString());
+    
+this.session.removeAttribute(UserData.USERNAME);
+    
 }
 
 
@@ -225,6 +261,8 @@ this.session.removeAttribute(UserData.USERNAME)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return session.getCreationTime();
+
+                        ;
     
 }
 
@@ -234,7 +272,8 @@ this.session.removeAttribute(UserData.USERNAME)
     var lastAccessedTime: number = session.getLastAccessedTime()!;
         
         
-
+;
+    
 
 
 

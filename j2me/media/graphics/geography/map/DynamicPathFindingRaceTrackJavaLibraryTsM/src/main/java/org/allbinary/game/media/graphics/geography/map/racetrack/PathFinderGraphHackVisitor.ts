@@ -86,9 +86,12 @@ var maxPathWeight = maxPathWeight
 var graph = graph
 var startPathFindingNodeList = startPathFindingNodeList
 var endPathFindingNodeList = endPathFindingNodeList
-this.fixStart(graph, startPathFindingNodeList)
-this.fixEnd(graph, endPathFindingNodeList)
-this.fixOverPassEdges(graph)
+this.fixStart(graph, startPathFindingNodeList);
+    
+this.fixEnd(graph, endPathFindingNodeList);
+    
+this.fixOverPassEdges(graph);
+    
 }
 
 
@@ -101,12 +104,14 @@ var startPathFindingNodeList = startPathFindingNodeList
     var geographicMapCellPositionFactory: BasicGeographicMapCellPositionFactory = this.geographicMapInterface!.getGeographicMapCellPositionFactory()!;
         
         
-
+;
+    
 
     var tiledLayer: AllBinaryTiledLayer = this.geographicMapInterface!.getAllBinaryTiledLayer()!;
         
         
-
+;
+    
 
 
 
@@ -118,30 +123,37 @@ var startPathFindingNodeList = startPathFindingNodeList
 index >= 0; index--)
         {
 
-    var startPathFindingNode: PathFindingNode = startPathFindingNodeList!.get(index) as PathFindingNode;
-        
-        
+    var startPathFindingNode: PathFindingNode = startPathFindingNodeList!.get(index);
 
+                         as PathFindingNode;
+        
+        
+;
+    
 
     var geographicMapCellPosition: GeographicMapCellPosition = startPathFindingNode!.geographicMapCellPosition;
         
         
-
+;
+    
 
     var column: number = geographicMapCellPosition!.getColumn()!;
         
         
-
+;
+    
 
     var row: number = geographicMapCellPosition!.getRow()!;
         
         
-
+;
+    
 
     var nextRow: number = row +1;
         
         
-
+;
+    
 
                         if(tiledLayer!.isOnTileLayer(column, nextRow))
                         
@@ -150,8 +162,10 @@ index >= 0; index--)
     var geographicMapCellPositionNeighbor: GeographicMapCellPosition = geographicMapCellPositionFactory!.getInstance(column, nextRow)!;
         
         
-
-graph.removeEdge(geographicMapCellPosition, geographicMapCellPositionNeighbor)
+;
+    
+graph.removeEdge(geographicMapCellPosition, geographicMapCellPositionNeighbor);
+    
 
                                     }
                                 
@@ -169,12 +183,14 @@ var endPathFindingNodeList = endPathFindingNodeList
     var geographicMapCellPositionFactory: BasicGeographicMapCellPositionFactory = this.geographicMapInterface!.getGeographicMapCellPositionFactory()!;
         
         
-
+;
+    
 
     var tiledLayer: AllBinaryTiledLayer = this.geographicMapInterface!.getAllBinaryTiledLayer()!;
         
         
-
+;
+    
 
 
 
@@ -186,31 +202,39 @@ var endPathFindingNodeList = endPathFindingNodeList
 index >= 0; index--)
         {
 
-    var endPathFindingNode: PathFindingNode = endPathFindingNodeList!.get(index) as PathFindingNode;
-        
-        
+    var endPathFindingNode: PathFindingNode = endPathFindingNodeList!.get(index);
 
+                         as PathFindingNode;
+        
+        
+;
+    
 
     var geographicMapCellPosition: GeographicMapCellPosition = endPathFindingNode!.geographicMapCellPosition;
         
         
-
-graph.addVertex(geographicMapCellPosition)
+;
+    
+graph.addVertex(geographicMapCellPosition);
+    
 
     var column: number = geographicMapCellPosition!.getColumn()!;
         
         
-
+;
+    
 
     var row: number = geographicMapCellPosition!.getRow()!;
         
         
-
+;
+    
 
     var nextRow: number = row +1;
         
         
-
+;
+    
 
                         if(tiledLayer!.isOnTileLayer(column, nextRow))
                         
@@ -219,8 +243,10 @@ graph.addVertex(geographicMapCellPosition)
     var geographicMapCellPositionNeighbor: GeographicMapCellPosition = geographicMapCellPositionFactory!.getInstance(column, nextRow)!;
         
         
-
-graph.addEdge(geographicMapCellPosition, geographicMapCellPositionNeighbor)
+;
+    
+graph.addEdge(geographicMapCellPosition, geographicMapCellPositionNeighbor);
+    
 
                                     }
                                 
@@ -237,17 +263,20 @@ var graph = graph
     var geographicMapCellPositionFactory: BasicGeographicMapCellPositionFactory = this.geographicMapInterface!.getGeographicMapCellPositionFactory()!;
         
         
-
+;
+    
 
     var raceTrackGeographicMap: RaceTrackGeographicMap = this.geographicMapInterface as RaceTrackGeographicMap;
         
         
-
+;
+    
 
     var CellPositionArray: CellPosition[] = raceTrackGeographicMap!.getRaceTrackData()!.getOverPassGeographicMapCellPositionArray()!;
         
         
-
+;
+    
 
 
 
@@ -262,28 +291,38 @@ index >= 0; index--)
     var overPassGeographicMapCellPosition: CellPosition = CellPositionArray[index]!;
         
         
-
-logUtil!.put("Fixing Over Pass: " +overPassGeographicMapCellPosition!.getColumn() +", " +overPassGeographicMapCellPosition!.getRow(), this, "fixOverPassEdges")
+;
+    
+logUtil!.put("Fixing Over Pass: " +overPassGeographicMapCellPosition!.getColumn() +", " +overPassGeographicMapCellPosition!.getRow(), this, "fixOverPassEdges");
+    
 
     var underPassGeographicMapCellPosition: GeographicMapCellPosition = geographicMapCellPositionFactory!.getInstance(overPassGeographicMapCellPosition!.getColumn(), overPassGeographicMapCellPosition!.getRow())!;
         
         
-
+;
+    
 
     var rightUnderPassGeographicMapCellPosition: GeographicMapCellPosition = geographicMapCellPositionFactory!.getInstance(overPassGeographicMapCellPosition!.getColumn() +1, overPassGeographicMapCellPosition!.getRow())!;
         
         
-
+;
+    
 
     var leftUnderPassGeographicMapCellPosition: GeographicMapCellPosition = geographicMapCellPositionFactory!.getInstance(overPassGeographicMapCellPosition!.getColumn() -1, overPassGeographicMapCellPosition!.getRow())!;
         
         
-
-graph.removeEdge(underPassGeographicMapCellPosition, rightUnderPassGeographicMapCellPosition)
-graph.removeEdge(underPassGeographicMapCellPosition, leftUnderPassGeographicMapCellPosition)
-graph.addVertex(overPassGeographicMapCellPosition)
-graph.addEdge(overPassGeographicMapCellPosition, rightUnderPassGeographicMapCellPosition)
-graph.addEdge(overPassGeographicMapCellPosition, leftUnderPassGeographicMapCellPosition)
+;
+    
+graph.removeEdge(underPassGeographicMapCellPosition, rightUnderPassGeographicMapCellPosition);
+    
+graph.removeEdge(underPassGeographicMapCellPosition, leftUnderPassGeographicMapCellPosition);
+    
+graph.addVertex(overPassGeographicMapCellPosition);
+    
+graph.addEdge(overPassGeographicMapCellPosition, rightUnderPassGeographicMapCellPosition);
+    
+graph.addEdge(overPassGeographicMapCellPosition, leftUnderPassGeographicMapCellPosition);
+    
 }
 
 }
@@ -306,15 +345,21 @@ var pathList = pathList
 index >= 0; index--)
         {
 
-    var endPathFindingNode: PathFindingNode = endPathFindingNodeList!.get(index) as PathFindingNode;
-        
-        
+    var endPathFindingNode: PathFindingNode = endPathFindingNodeList!.get(index);
 
-
-    var startPathFindingNode: PathFindingNode = startPathFindingNodeList!.get(index) as PathFindingNode;
+                         as PathFindingNode;
         
         
+;
+    
 
+    var startPathFindingNode: PathFindingNode = startPathFindingNodeList!.get(index);
+
+                         as PathFindingNode;
+        
+        
+;
+    
 
                         if(BasicGeographicMapUtil.getInstance()!.isSameCellPosition(startPathFindingNode!.geographicMapCellPosition, endPathFindingNode!.geographicMapCellPosition))
                         
@@ -323,8 +368,10 @@ index >= 0; index--)
                         if(pathList!.remove(endPathFindingNode!.geographicMapCellPosition))
                         
                                     {
-                                    pathList!.remove(startPathFindingNode!.geographicMapCellPosition)
-pathList!.add(0, startPathFindingNode!.geographicMapCellPosition)
+                                    pathList!.remove(startPathFindingNode!.geographicMapCellPosition);
+    
+pathList!.add(0, startPathFindingNode!.geographicMapCellPosition);
+    
 
                                     }
                                 
@@ -333,7 +380,8 @@ pathList!.add(0, startPathFindingNode!.geographicMapCellPosition)
                                 
 }
 
-this.removeOverPassEdges(pathList)
+this.removeOverPassEdges(pathList);
+    
 }
 
 
@@ -345,17 +393,20 @@ var pathList = pathList
     var geographicMapCellPositionFactory: BasicGeographicMapCellPositionFactory = this.geographicMapInterface!.getGeographicMapCellPositionFactory()!;
         
         
-
+;
+    
 
     var raceTrackGeographicMap: RaceTrackGeographicMap = this.geographicMapInterface as RaceTrackGeographicMap;
         
         
-
+;
+    
 
     var CellPositionArray: CellPosition[] = raceTrackGeographicMap!.getRaceTrackData()!.getOverPassGeographicMapCellPositionArray()!;
         
         
-
+;
+    
 
 
 
@@ -370,22 +421,26 @@ index >= 0; index--)
     var overPassGeographicMapCellPosition: CellPosition = CellPositionArray[index]!;
         
         
-
+;
+    
 
     var underPassGeographicMapCellPosition: GeographicMapCellPosition = geographicMapCellPositionFactory!.getInstance(overPassGeographicMapCellPosition!.getColumn(), overPassGeographicMapCellPosition!.getRow())!;
         
         
-
+;
+    
 
     var indexOf: number = pathList!.indexOf(overPassGeographicMapCellPosition)!;
         
         
-
+;
+    
 
                         if(indexOf !=  -1)
                         
                                     {
-                                    pathList!.set(indexOf, underPassGeographicMapCellPosition)
+                                    pathList!.set(indexOf, underPassGeographicMapCellPosition);
+    
 
                                     }
                                 

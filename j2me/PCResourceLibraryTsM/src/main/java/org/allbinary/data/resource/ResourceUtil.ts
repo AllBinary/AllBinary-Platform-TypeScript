@@ -85,8 +85,10 @@ private constructor (){
     public setLoadingPaths(path: string, ext: string){
 var path = path
 var ext = ext
-this.path= path
-this.ext= ext
+this.path= path;
+    
+this.ext= ext;
+    
 }
 
 
@@ -103,14 +105,16 @@ this.ext= ext
     var inputStream: InputStream = this.getResourceAsStream(resource, 2)!;
         
         
-
+;
+    
 
                         if(inputStream == 
                                     null
                                 )
                         
                                     {
-                                    inputStream= this.getResourceAsStream(resource, 1)
+                                    inputStream= this.getResourceAsStream(resource, 1);
+    
 
                         if(inputStream == 
                                     null
@@ -146,18 +150,21 @@ this.ext= ext
     var stringMaker: StringMaker = new StringMaker();
         
         
-
+;
+    
 
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
         
         
-
+;
+    
 
     var inputStream: InputStream = new FileInputStream(StringMaker().
                             append(path)!.append(resource)!.append(ext)!.toString());
         
         
-
+;
+    
 
                         if(inputStream != 
                                     null
@@ -165,11 +172,13 @@ this.ext= ext
                         
                                     {
                                     
-    var byteArray: ByteArray = ByteArray(inputStream!.available());
+    var byteArray: number[] = new Array(inputStream!.available());
         
         
-
-StreamUtil.getInstance()!.getByteArray(inputStream, ByteArrayOutputStream(), byteArray)
+;
+    
+StreamUtil.getInstance()!.getByteArray(inputStream, ByteArrayOutputStream(), byteArray);
+    
 
 
 

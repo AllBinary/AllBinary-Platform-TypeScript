@@ -50,7 +50,7 @@ export class Basket
                 , Serializable {
         
 
-    private items: HashMap<Any, Any> = new HashMap<Any, Any>();
+    private items: HashMap<any, any> = new HashMap<any, any>();
         
         
 public constructor (){
@@ -70,28 +70,34 @@ var num = num
     var oldNumStr: string = new .toCharArray();
         
         
-
+;
+    
 
     var oldNumInt: Integer = Integer(Integer.valueOf(oldNumStr))!;
         
         
-
+;
+    
 
     var numInt: Integer = Integer(Integer.valueOf(num))!;
         
         
-
+;
+    
 
     var newNumInt: Integer = new Integer(oldNumInt!.toInt() +numInt!.toInt());
         
         
-
-items.put(id, newNumInt!.toString())
+;
+    
+items.put(id, newNumInt!.toString());
+    
 
                                     }
                                 
                         else {
-                            items.put(id, num)
+                            items.put(id, num);
+    
 
                         }
                             
@@ -100,7 +106,8 @@ items.put(id, newNumInt!.toString())
 
     public removeItem(id: string){
 var id = id
-items.remove(id)
+items.remove(id);
+    
 }
 
 
@@ -111,12 +118,14 @@ var num = num
                         if(Integer.valueOf(num)!.toInt() > 0)
                         
                                     {
-                                    items.put(id, num)
+                                    items.put(id, num);
+    
 
                                     }
                                 
                         else {
-                            items.remove(id)
+                            items.remove(id);
+    
 
                         }
                             
@@ -125,15 +134,17 @@ var num = num
 
     public getTotalWeight(): string{
 
-    var itemsAndNumberInBasket: HashMap<Any, Any> = getItems()!;
+    var itemsAndNumberInBasket: HashMap<any, any> = getItems()!;
         
         
-
+;
+    
 
     var totalWeight: Money = new Money();
         
         
-
+;
+    
 
                         if(itemsAndNumberInBasket!.size() > 0)
                         
@@ -142,24 +153,29 @@ var num = num
     var items: Set = itemsAndNumberInBasket!.keySet()!;
         
         
-
+;
+    
 
     var product: string
-
+;
+    
 
     var weightFloat: Float
+;
+    
 
-
-    var itemArray: any = {}[] = items.toArray()!;
+    var itemArray: any[] = items.toArray()!;
         
         
-
+;
+    
 
     var size: number = itemArray!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -170,11 +186,15 @@ var num = num
         
 index < size; index++)
         {
-product= .toCharArray()
+product= .toCharArray();
+    
 weightFloat= Float(InventoryEntity().
-                            getWeight(product))
-weightFloat= Float(getNumberOf(product)!.toFloat() *weightFloat!.toFloat())
-totalWeight!.add(weightFloat!.toString())
+                            getWeight(product));
+    
+weightFloat= Float(getNumberOf(product)!.toFloat() *weightFloat!.toFloat());
+    
+totalWeight!.add(weightFloat!.toString());
+    
 }
 
 
@@ -185,6 +205,8 @@ totalWeight!.add(weightFloat!.toString())
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return totalWeight!.toString();
+
+                        ;
     
 }
 
@@ -204,7 +226,8 @@ totalWeight!.add(weightFloat!.toString())
     var set: Set = items.keySet()!;
         
         
-
+;
+    
 
 
 
@@ -214,7 +237,7 @@ totalWeight!.add(weightFloat!.toString())
 }
 
 
-    public getItems(): HashMap<Any, Any>{
+    public getItems(): HashMap<any, any>{
 
 
 
@@ -227,15 +250,20 @@ totalWeight!.add(weightFloat!.toString())
     public getNumberOf(product: string): Integer{
 var product = product
 
-    var numStr: string = items.get(product) as String;
-        
-        
+    var numStr: string = items.get(product);
 
+                         as String;
+        
+        
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return Integer(Integer.valueOf(numStr));
+
+                        ;
     
 }
 
@@ -244,15 +272,17 @@ var product = product
             
     public getSubTotal(): Money{
 
-    var itemsAndNumberInBasket: HashMap<Any, Any> = getItems()!;
+    var itemsAndNumberInBasket: HashMap<any, any> = getItems()!;
         
         
-
+;
+    
 
     var subTotal: Money = new Money();
         
         
-
+;
+    
 
                         if(itemsAndNumberInBasket!.size() > 0)
                         
@@ -261,28 +291,35 @@ var product = product
     var items: Set = itemsAndNumberInBasket!.keySet()!;
         
         
-
+;
+    
 
     var inventoryEntityFactory: InventoryEntityFactory = InventoryEntityFactory.getInstance()!;
         
         
+;
+    
 
+    var inventoryEntity: InventoryEntity = inventoryEntityFactory!.getInventoryEntityInstance();
 
-    var inventoryEntity: InventoryEntity = inventoryEntityFactory!.getInventoryEntityInstance() as InventoryEntity;
+                         as InventoryEntity;
         
         
+;
+    
 
-
-    var itemArray: any = {}[] = items.toArray()!;
+    var itemArray: any[] = items.toArray()!;
         
         
-
+;
+    
 
     var size: number = itemArray!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -297,19 +334,24 @@ index < size; index++)
     var product: string = new .toCharArray();
         
         
-
+;
+    
 
     var itemInterface: ItemInterface = inventoryEntity!.getItem(product)!;
         
         
-
+;
+    
 
     var productTotal: Money = itemInterface!.getPrice()!;
         
         
-
-productTotal!.multiply(getNumberOf(product)!.toInt())
-subTotal!.add(productTotal!.toString())
+;
+    
+productTotal!.multiply(getNumberOf(product)!.toInt());
+    
+subTotal!.add(productTotal!.toString());
+    
 }
 
 

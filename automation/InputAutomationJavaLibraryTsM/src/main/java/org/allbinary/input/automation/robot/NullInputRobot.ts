@@ -91,38 +91,45 @@ public constructor ()
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return PointFactory.getInstance(0, 0);
+
+                        ;
     
 }
 
 
     public keyPress(keycode: Integer){
 var keycode = keycode
-logUtil!.put("KeyCode: " +keycode, this, "keyPress")
+logUtil!.put("KeyCode: " +keycode, this, "keyPress");
+    
 }
 
 
     public keyRelease(keycode: Integer){
 var keycode = keycode
-logUtil!.put("KeyCode: " +keycode, this, "keyRelease")
+logUtil!.put("KeyCode: " +keycode, this, "keyRelease");
+    
 }
 
 
     public mouseMove(x: Integer, y: Integer){
 var x = x
 var y = y
-logUtil!.put("X: " +x +" Y: " +y, this, "mouseMove")
+logUtil!.put("X: " +x +" Y: " +y, this, "mouseMove");
+    
 }
 
 
     public mousePress(buttons: Integer){
 var buttons = buttons
-logUtil!.put("Buttons: " +buttons, this, "mousePress")
+logUtil!.put("Buttons: " +buttons, this, "mousePress");
+    
 }
 
 
     public mouseRelease(buttons: Integer){
 var buttons = buttons
-logUtil!.put("Buttons: " +buttons, this, "mouseRelease")
+logUtil!.put("Buttons: " +buttons, this, "mouseRelease");
+    
 }
 
 

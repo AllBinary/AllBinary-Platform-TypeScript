@@ -69,8 +69,10 @@ private constructor (){
     public setClassLoader(classLoader: ClassLoader){
     //var classLoader = classLoader
 logUtil!.put(StringMaker().
-                            append("Resource Loader: ")!.append(classLoader!::class.toString()!)!.toString(), this, "setClassLoader")
-ResourceUtil.classLoader= classLoader
+                            append("Resource Loader: ")!.append(classLoader!.constructor.name.toString()!)!.toString(), this, "setClassLoader");
+    
+ResourceUtil.classLoader= classLoader;
+    
 }
 
 
@@ -82,14 +84,16 @@ ResourceUtil.classLoader= classLoader
     var inputStream: InputStream = this.getResourceAsStream(resource, 2)!;
         
         
-
+;
+    
 
                         if(inputStream == 
                                     null
                                 )
                         
                                     {
-                                    inputStream= this.getResourceAsStream(resource, 1)
+                                    inputStream= this.getResourceAsStream(resource, 1);
+    
 
                         if(inputStream == 
                                     null
@@ -125,22 +129,26 @@ ResourceUtil.classLoader= classLoader
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
         
         
-
+;
+    
 
     var index: number = resource.indexOf(commonSeps!.COLON)!;
         
         
-
+;
+    
 
     var resourcePath: string = resource.substring(index +startIndex)!;
         
         
-
+;
+    
 
     var inputStream: InputStream = resource.javaClass.getResourceAsStream(resourcePath)!;
         
         
-
+;
+    
 
                         if(inputStream != 
                                     null
@@ -160,8 +168,10 @@ ResourceUtil.classLoader= classLoader
     var classLoader: ClassLoader = ResourceUtil.classLoader as ClassLoader;
         
         
-
-inputStream= classLoader!.getResourceAsStream(resourcePath)
+;
+    
+inputStream= classLoader!.getResourceAsStream(resourcePath);
+    
 
                         if(inputStream != 
                                     null
@@ -177,7 +187,8 @@ inputStream= classLoader!.getResourceAsStream(resourcePath)
 
                                     }
                                 
-inputStream= Thread.currentThread()!.getContextClassLoader()!.getResourceAsStream(resourcePath)
+inputStream= Thread.currentThread()!.getContextClassLoader()!.getResourceAsStream(resourcePath);
+    
 
                         if(inputStream != 
                                     null

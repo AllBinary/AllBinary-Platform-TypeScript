@@ -18,7 +18,10 @@
 
 
 
-import { Vector } from "../../../java/util/Vector.js";
+            import Vector from "@ohos.util.Vector";
+        
+
+//import { Vector } from "../../../java/util/Vector.js";
 
     
 import { UserDomNode } from "../../../org/allbinary/business/user/UserDomNode.js";
@@ -79,12 +82,14 @@ var document = document
     var usersNode: Node = document.createElement(UsersData.NAME)!;
         
         
-
+;
+    
 
     var size: number = userVector!.length!;
         
         
-
+;
+    
 
 
 
@@ -96,10 +101,13 @@ var document = document
 index < size; index++)
         {
 
-    var userInterface: User = userVector!.get(index) as User;
-        
-        
+    var userInterface: User = userVector!.get(index);
 
+                         as User;
+        
+        
+;
+    
 
                         if(userInterface != 
                                     null
@@ -111,13 +119,16 @@ index < size; index++)
                             toXmlNode(document)!;
         
         
-
-usersNode!.appendChild(node)
+;
+    
+usersNode!.appendChild(node);
+    
 
                                     }
                                 
                         else {
-                            logUtil!.put("UserHelper", this, "toXmlNode")
+                            logUtil!.put("UserHelper", this, "toXmlNode");
+    
 
                         }
                             
@@ -129,13 +140,16 @@ usersNode!.appendChild(node)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return usersNode;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.XSLLOGGINGERROR))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.FAILURE, this, "toXmlNode", e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, "toXmlNode", e);
+    
 
                                     }
                                 
@@ -151,7 +165,8 @@ usersNode!.appendChild(node)
 
 
     public addDomNodeInterfaces(){
-this.addDomNodeInterface(this as DomNodeInterface)
+this.addDomNodeInterface(this as DomNodeInterface);
+    
 }
 
 
@@ -160,20 +175,26 @@ this.addDomNodeInterface(this as DomNodeInterface)
     public view(): string{
 
         try {
-            this.addDomNodeInterfaces()
+            this.addDomNodeInterfaces();
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.view();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e);
+    
 
                                     }
                                 

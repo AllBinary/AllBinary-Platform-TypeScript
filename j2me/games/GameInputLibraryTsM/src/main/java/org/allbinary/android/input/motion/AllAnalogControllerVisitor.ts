@@ -41,10 +41,12 @@ export class AllAnalogControllerVisitor extends AnalogControllerVisitor {
     var analogLocationInputList: BasicArrayList = AnalogLocationInputFactory.getInstance()!.getList()!;
         
         
-
+;
+    
 
     var analogLocationInput: AnalogLocationInput
-
+;
+    
 
 
 
@@ -55,8 +57,12 @@ export class AllAnalogControllerVisitor extends AnalogControllerVisitor {
         
 index >= 0; index--)
         {
-analogLocationInput= analogLocationInputList!.get(index) as AnalogLocationInput
-analogLocationInputProcessor!.process(allbinaryLayerManager, analogLocationInput)
+analogLocationInput= analogLocationInputList!.get(index);
+
+                         as AnalogLocationInput;
+    
+analogLocationInputProcessor!.process(allbinaryLayerManager, analogLocationInput);
+    
 }
 
 }

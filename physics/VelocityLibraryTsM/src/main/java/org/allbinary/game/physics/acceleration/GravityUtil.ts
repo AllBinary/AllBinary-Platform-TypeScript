@@ -51,14 +51,16 @@ export class GravityUtil
 
     public process(velocityProperties: BasicVelocityProperties){
 var velocityProperties = velocityProperties
-velocityProperties!.getVelocityYBasicDecimalP()!.add(this.GAME_GRAVITY_VELOCITY)
+velocityProperties!.getVelocityYBasicDecimalP()!.add(this.GAME_GRAVITY_VELOCITY);
+    
 }
 
 
     public process(velocityProperties: BasicVelocityProperties, customGravity: number){
 var velocityProperties = velocityProperties
 var customGravity = customGravity
-velocityProperties!.getVelocityYBasicDecimalP()!.add(customGravity)
+velocityProperties!.getVelocityYBasicDecimalP()!.add(customGravity);
+    
 }
 
 

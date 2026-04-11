@@ -36,7 +36,7 @@ export class AppRendererShaderUpdaterFactory extends ShaderUpdater {
 }
 
 
-    private readonly NULL_SHADER_COMPOSITE_ARRAY: ShaderComposite[] = new Array(0);
+    private readonly NULL_SHADER_COMPOSITE_ARRAY: ShaderComposite[] = [];
         
         
 
@@ -44,7 +44,7 @@ export class AppRendererShaderUpdaterFactory extends ShaderUpdater {
         
         
 
-    private readonly shaderOpenGLProcessorArray: ShaderOpenGLProcessor[] = new Array(0);
+    private readonly shaderOpenGLProcessorArray: ShaderOpenGLProcessor[] = [];
         
         
 

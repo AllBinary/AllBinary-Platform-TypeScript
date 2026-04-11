@@ -56,23 +56,29 @@ var mediaPlayer = mediaPlayer
     var MESSAGE: string = "Not Stopped Waiting";
         
         
-
+;
+    
 
     var METHOD_NAME: string = "wait";
         
         
-
+;
+    
 
     var index: number = 0;
         
         
-
+;
+    
 
         while(mediaPlayer!.isPlaying() && index < 50)
         {
-logUtil!.put(MESSAGE, this, METHOD_NAME)
-Thread.sleep(100)
-index++
+logUtil!.put(MESSAGE, this, METHOD_NAME);
+    
+Thread.sleep(100);
+    
+index++;
+    
 }
 
 }

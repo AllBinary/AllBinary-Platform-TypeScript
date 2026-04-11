@@ -31,7 +31,8 @@ var keyCode = keyCode
     var input: Input = InputFactory.getInstance()!.getInstance(keyCode)!;
         
         
-
+;
+    
 
                         if(input != 
                                     null
@@ -43,6 +44,8 @@ var keyCode = keyCode
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return input.getName();
+
+                        ;
     
 
                                     }
@@ -74,12 +77,14 @@ var name = name
     var id: number = this.getId()!;
         
         
-
+;
+    
 
                         if(id >= 0)
                         
                                     {
-                                    InputFactory.getInstance()!.add(id, this)
+                                    InputFactory.getInstance()!.add(id, this);
+    
 
                                     }
                                 

@@ -18,7 +18,10 @@
 
 
 
-import { Hashtable } from "../../../../../java/util/Hashtable.js";
+            import Hashtable from "@ohos.util.HashMap";
+        
+
+//import { Hashtable } from "../../../../../java/util/Hashtable.js";
 
     
 import { GameInfo } from "../../../../../org/allbinary/game/GameInfo.js";
@@ -85,38 +88,51 @@ public constructor (){
     //var remoteHighScores = remoteHighScores
     //var abeClientInformation = abeClientInformation
     //var gameInfo = gameInfo
-logUtil!.put("Begin Remote HighScores Retrieval", this, commonStrings!.PROCESS)
+logUtil!.put("Begin Remote HighScores Retrieval", this, commonStrings!.PROCESS);
+    
 
     var gameInfoData: GameInfoData = GameInfoData.getInstance()!;
         
         
+;
+    
 
-
-    var hashtable: Hashtable<Any, Any> = abeClientInformation!.toHashtable()!;
+    var hashtable: Hashtable<any, any> = abeClientInformation!.toHashtable()!;
         
         
-
-HashtableUtil.getInstance()!.putAll(gameInfo!.toHashtable(), hashtable)
-hashtable.put(gameInfoData!.SOFTWARE_INFORMATION, remoteHighScores!.getSoftwareInformation()!.toString())
-hashtable.put(remoteHighScores!.ASCENDING, remoteHighScores!.getAscending()!.toString())
+;
+    
+HashtableUtil.getInstance()!.putAll(gameInfo!.toHashtable(), hashtable);
+    
+hashtable.put(gameInfoData!.SOFTWARE_INFORMATION, remoteHighScores!.getSoftwareInformation()!.toString());
+    
+hashtable.put(remoteHighScores!.ASCENDING, remoteHighScores!.getAscending()!.toString());
+    
 
     var displayInfoSingleton: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
         
         
-
-hashtable.put(displayInfoSingleton!.ORIENTATION, BooleanFactory.getInstance()!.toString(displayInfoSingleton!.isPortrait()))
-hashtable.put(RemoteHighScoresData.getInstance()!.GAME_CONFIGURATION, GameConfigurationCentral.getInstance()!.toString())
+;
+    
+hashtable.put(displayInfoSingleton!.ORIENTATION, BooleanFactory.getInstance()!.toString(displayInfoSingleton!.isPortrait()));
+    
+hashtable.put(RemoteHighScoresData.getInstance()!.GAME_CONFIGURATION, GameConfigurationCentral.getInstance()!.toString());
+    
 
                         if(XmlRpcAbeClient.isOnline)
                         
                                     {
                                     
-    var resultHashtable: Hashtable<Any, Any> = XmlRpcRemoteHighScoresClient(abeClientInformation, "highscoresservicessl.php", "HighScoresService.process").
-                            get(hashtable, noCrypt) as Hashtable<Any, Any>;
-        
-        
+    var resultHashtable: Hashtable<any, any> = XmlRpcRemoteHighScoresClient(abeClientInformation, "highscoresservicessl.php", "HighScoresService.process").
+                            get(hashtable, noCrypt);
 
-remoteHighScores!.update(resultHashtable)
+                         as Hashtable<any, any>;
+        
+        
+;
+    
+remoteHighScores!.update(resultHashtable);
+    
 
                                     }
                                 

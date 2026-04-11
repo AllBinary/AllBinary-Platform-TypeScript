@@ -78,27 +78,32 @@ export class DrawStringUtil
     var myFont: MyFont = MyFont.getInstance()!;
         
         
-
+;
+    
 
     var openGLFeatureUtil: OpenGLFeatureUtil = OpenGLFeatureUtil.getInstance()!;
         
         
-
+;
+    
 
     var charHeight: number = myFont!.DEFAULT_CHAR_HEIGHT;
         
         
-
+;
+    
 
     var offsetY: number = 0;
         
         
-
+;
+    
 
                         if(J2MEUtil.isHTML())
                         
                                     {
-                                    charHeight += 1
+                                    charHeight += 1;
+    
 
                                     }
                                 
@@ -106,7 +111,8 @@ export class DrawStringUtil
                         if(openGLFeatureUtil!.isAnyThreed())
                         
                                     {
-                                    charHeight += 2
+                                    charHeight += 2;
+    
 
                         if(AndroidUtil.isAndroid())
                         
@@ -115,7 +121,8 @@ export class DrawStringUtil
                                     }
                                 
                         else {
-                            offsetY= 2 +(charHeight *2 /3)
+                            offsetY= 2 +(charHeight *2 /3);
+    
 
                         }
                             
@@ -126,15 +133,18 @@ export class DrawStringUtil
     var size: number = string.length!;
         
         
-
+;
+    
 
     var offsetX: number = 0;
         
         
-
+;
+    
 
     var aChar: string
-
+;
+    
 
 
 
@@ -145,16 +155,19 @@ export class DrawStringUtil
         
 index >= 0; index--)
         {
-aChar= string[index]
+aChar= string[index];
+    
 
                         if(openGLFeatureUtil!.isAnyThreed())
                         
                                     {
-                                    offsetX= myFont!.charWidth(aChar) /2
+                                    offsetX= myFont!.charWidth(aChar) /2;
+    
 
                                     }
                                 
-graphics.drawChar(aChar, x +offsetX, y +(charHeight *index) +offsetY, anchor)
+graphics.drawChar(aChar, x +offsetX, y +(charHeight *index) +offsetY, anchor);
+    
 }
 
 }
@@ -175,14 +188,19 @@ var y = y
     var width: number = (graphics.getFont()!.substringWidth(string, offset, length) shr 1);
         
         
-
+;
+    
 
         try {
-            graphics.drawSubstring(string, offset, length, x -width, y, anchor)
-} catch(e: Exception)
+            graphics.drawSubstring(string, offset, length, x -width, y, anchor);
+    
+
+                //: 
+} catch(e) 
             {
 PreLogUtil.put(StringMaker().
-                            append("Exception: stringLength: ")!.appendint(string.length)!.append(" offset: ")!.appendint(offset)!.append(" currentLength: ")!.appendint(length)!.toString(), this, "drawCenterString")
+                            append("Exception: stringLength: ")!.appendint(string.length)!.append(" offset: ")!.appendint(offset)!.append(" currentLength: ")!.appendint(length)!.toString(), this, "drawCenterString");
+    
 }
 
 }
@@ -202,17 +220,20 @@ PreLogUtil.put(StringMaker().
     var myFont: MyFont = MyFont.getInstance()!;
         
         
-
+;
+    
 
     var charHeight: number = myFont!.DEFAULT_CHAR_HEIGHT;
         
         
-
+;
+    
 
     var extraLines: number = 0;
         
         
-
+;
+    
 
 
 
@@ -227,7 +248,8 @@ index < stringArray!.length; index++)
     var string: string = stringArray[index]!;
         
         
-
+;
+    
 
                         if(string != EMPTY_STRING)
                         
@@ -236,17 +258,20 @@ index < stringArray!.length; index++)
     var width: number = graphics.getFont()!.stringWidth(string)!;
         
         
-
+;
+    
 
     var minTotalLines: number = 1;
         
         
-
+;
+    
 
                         if(width > maxWidth)
                         
                                     {
-                                    minTotalLines= (width /maxWidth) +1
+                                    minTotalLines= (width /maxWidth) +1;
+    
 
                                     }
                                 
@@ -254,22 +279,26 @@ index < stringArray!.length; index++)
     var linePortion: number = string.length /minTotalLines;
         
         
-
+;
+    
 
     var offset: number = 0;
         
         
-
+;
+    
 
     var currentLength: number = linePortion;
         
         
-
+;
+    
 
     var size: number = string.length!;
         
         
-
+;
+    
 
         while(offset < size)
         {
@@ -277,7 +306,8 @@ index < stringArray!.length; index++)
                         if(offset +currentLength > size)
                         
                                     {
-                                    currentLength= size -offset
+                                    currentLength= size -offset;
+    
 
                                     }
                                 
@@ -288,26 +318,32 @@ index < stringArray!.length; index++)
                                     
         while(currentLength > 0 && stringArray[index]![offset +currentLength] != ' ')
         {
-currentLength--
+currentLength--;
+    
 }
 
 
                         if(currentLength <= 4)
                         
                                     {
-                                    currentLength= linePortion
+                                    currentLength= linePortion;
+    
 
                                     }
                                 
 
                                     }
                                 
-this.drawCenterString(graphics, string, offset, currentLength, x, y +((index +extraLines++) *charHeight))
-offset= offset +currentLength
-currentLength= linePortion
+this.drawCenterString(graphics, string, offset, currentLength, x, y +((index +extraLines++) *charHeight));
+    
+offset= offset +currentLength;
+    
+currentLength= linePortion;
+    
 }
 
-extraLines--
+extraLines--;
+    
 
                                     }
                                 

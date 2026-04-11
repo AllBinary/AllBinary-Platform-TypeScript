@@ -18,7 +18,10 @@
 
 
 
-import { Hashtable } from "../../../../../../java/util/Hashtable.js";
+            import Hashtable from "@ohos.util.HashMap";
+        
+
+//import { Hashtable } from "../../../../../../java/util/Hashtable.js";
 
     
 import { NullUtil } from "../../../../../../org/allbinary/logic/NullUtil.js";
@@ -207,7 +210,7 @@ var hardwareInterface = hardwareInterface
 }
 
 
-    public difference(hardwareInterface: HardwareInterface): Hashtable<Any, Any>{
+    public difference(hardwareInterface: HardwareInterface): Hashtable<any, any>{
 var hardwareInterface = hardwareInterface
 
 

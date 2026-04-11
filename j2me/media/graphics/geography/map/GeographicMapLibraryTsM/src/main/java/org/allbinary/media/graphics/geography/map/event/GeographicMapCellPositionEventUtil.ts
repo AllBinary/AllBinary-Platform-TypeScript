@@ -39,7 +39,8 @@ public constructor (anyType: any = {}){
 
             super();
             var anyType = anyType
-geographicMapCellPositionEvent= GeographicMapCellPositionEvent(anyType, CellPositionFactory.getInstance()!.NONE)
+geographicMapCellPositionEvent= GeographicMapCellPositionEvent(anyType, CellPositionFactory.getInstance()!.NONE);
+    
 }
 
 
@@ -47,8 +48,10 @@ geographicMapCellPositionEvent= GeographicMapCellPositionEvent(anyType, CellPosi
             
     public update(geographicMapCellPositionTracking: GeographicMapCellPositionTracking){
 var geographicMapCellPositionTracking = geographicMapCellPositionTracking
-geographicMapCellPositionEvent!.setGeographicMapCellPosition(geographicMapCellPositionTracking!.getCurrentGeographicMapCellPosition())
-geographicMapCellPositionEventHandler!.fireEvent(geographicMapCellPositionEvent)
+geographicMapCellPositionEvent!.setGeographicMapCellPosition(geographicMapCellPositionTracking!.getCurrentGeographicMapCellPosition());
+    
+geographicMapCellPositionEventHandler!.fireEvent(geographicMapCellPositionEvent);
+    
 }
 
 
@@ -56,8 +59,10 @@ geographicMapCellPositionEventHandler!.fireEvent(geographicMapCellPositionEvent)
             
     public remove(geographicMapCellPositionTracking: GeographicMapCellPositionTracking){
 var geographicMapCellPositionTracking = geographicMapCellPositionTracking
-geographicMapCellPositionEvent!.setGeographicMapCellPosition(geographicMapCellPositionTracking!.getCurrentGeographicMapCellPosition())
-geographicMapCellPositionEventHandler!.fireRemoveEvent(geographicMapCellPositionEvent)
+geographicMapCellPositionEvent!.setGeographicMapCellPosition(geographicMapCellPositionTracking!.getCurrentGeographicMapCellPosition());
+    
+geographicMapCellPositionEventHandler!.fireRemoveEvent(geographicMapCellPositionEvent);
+    
 }
 
 

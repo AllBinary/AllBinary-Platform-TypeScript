@@ -66,7 +66,7 @@ export class CompositeRTSFormInput extends RTSFormInput {
 
     private readonly rtsFormInputArray: RTSFormInput[]
 
-    private readonly itemIndex: IntArray
+    private readonly itemIndex: number[]
 
     private readonly isPrimaryWaypointCreator: boolean
 public constructor (groupInterface: Group[], isPrimaryWaypointCreator: boolean)                        
@@ -84,7 +84,7 @@ public constructor (groupInterface: Group[], isPrimaryWaypointCreator: boolean)
                     
 }
 
-public constructor (groupInterface: Group[], isPrimaryWaypointCreator: boolean, itemIndex: IntArray)                        
+public constructor (groupInterface: Group[], isPrimaryWaypointCreator: boolean, itemIndex: number[])                        
 
                             : super(groupInterface){
 
@@ -96,11 +96,16 @@ public constructor (groupInterface: Group[], isPrimaryWaypointCreator: boolean, 
 
                             //For kotlin this is before the body of the constructor.
                     
-this.itemIndex= itemIndex
-this.isPrimaryWaypointCreator= isPrimaryWaypointCreator
-this.rtsFormInputArray= new Array(2)
-this.rtsFormInputArray[0]= WaypointRTSFormInput(this.groupInterfaceArray, isPrimaryWaypointCreator)
-this.rtsFormInputArray[1]= UnitRTSFormInput(this.groupInterfaceArray)
+this.itemIndex= itemIndex;
+    
+this.isPrimaryWaypointCreator= isPrimaryWaypointCreator;
+    
+this.rtsFormInputArray= new Array(2);
+    
+this.rtsFormInputArray[0]= WaypointRTSFormInput(this.groupInterfaceArray, isPrimaryWaypointCreator);
+    
+this.rtsFormInputArray[1]= UnitRTSFormInput(this.groupInterfaceArray);
+    
 }
 
 
@@ -108,23 +113,27 @@ this.rtsFormInputArray[1]= UnitRTSFormInput(this.groupInterfaceArray)
             
     public setAllBinaryGameLayerManager(allBinaryGameLayerManager: AllBinaryGameLayerManager){
     //var allBinaryGameLayerManager = allBinaryGameLayerManager
-super.setAllBinaryGameLayerManager(allBinaryGameLayerManager)
+super.setAllBinaryGameLayerManager(allBinaryGameLayerManager);
+    
 
     var geographicMapCompositeInterface: GeographicMapCompositeInterface = allBinaryGameLayerManager as GeographicMapCompositeInterface;
         
         
-
+;
+    
 
     var geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;
         
         
-
+;
+    
 
     var size: number = this.rtsFormInputArray!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -135,7 +144,8 @@ super.setAllBinaryGameLayerManager(allBinaryGameLayerManager)
         
 index < size; index++)
         {
-this.rtsFormInputArray[index]!.setAllBinaryGameLayerManager(allBinaryGameLayerManager)
+this.rtsFormInputArray[index]!.setAllBinaryGameLayerManager(allBinaryGameLayerManager);
+    
 }
 
 }
@@ -152,12 +162,14 @@ var point = point
     var scrollSelectionForm: ScrollSelectionForm = rtsPlayerLayerInterface!.getCurrentScrollSelectionForm()!;
         
         
-
+;
+    
 
     var index: number = scrollSelectionForm!.getSelectedIndex(point)!;
         
         
-
+;
+    
 
                         if(this.isStickyItemSelected() && associatedRtsLayer == 
                                     null
@@ -168,7 +180,8 @@ var point = point
                         if(this.getSelectedStickyItemIndex() <= this.itemIndex[0])
                         
                                     {
-                                    this.rtsFormInputArray[0]!.process(associatedRtsLayer, rtsPlayerLayerInterface, layerManager, point)
+                                    this.rtsFormInputArray[0]!.process(associatedRtsLayer, rtsPlayerLayerInterface, layerManager, point);
+    
 
                                     }
                                 
@@ -179,7 +192,8 @@ var point = point
                         if(index > this.itemIndex[0])
                         
                                     {
-                                    this.rtsFormInputArray[1]!.process(associatedRtsLayer, rtsPlayerLayerInterface, layerManager, point)
+                                    this.rtsFormInputArray[1]!.process(associatedRtsLayer, rtsPlayerLayerInterface, layerManager, point);
+    
 
                                     }
                                 
@@ -198,8 +212,10 @@ var index = index
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(CommonLabels.getInstance()!.INDEX_LABEL +index +" > " +this.itemIndex[0], this, commonStrings!.PROCESS)
+;
+    
+logUtil!.put(CommonLabels.getInstance()!.INDEX_LABEL +index +" > " +this.itemIndex[0], this, commonStrings!.PROCESS);
+    
 
                         if(this.isStickyItemSelected() && associatedRtsLayer == 
                                     null
@@ -210,7 +226,8 @@ logUtil!.put(CommonLabels.getInstance()!.INDEX_LABEL +index +" > " +this.itemInd
                         if(this.getSelectedStickyItemIndex() <= this.itemIndex[0])
                         
                                     {
-                                    this.rtsFormInputArray[0]!.process(associatedRtsLayer, rtsPlayerLayerInterface, layerManager, item, index)
+                                    this.rtsFormInputArray[0]!.process(associatedRtsLayer, rtsPlayerLayerInterface, layerManager, item, index);
+    
 
                                     }
                                 
@@ -221,7 +238,8 @@ logUtil!.put(CommonLabels.getInstance()!.INDEX_LABEL +index +" > " +this.itemInd
                         if(index > this.itemIndex[0])
                         
                                     {
-                                    this.rtsFormInputArray[1]!.process(associatedRtsLayer, rtsPlayerLayerInterface, layerManager, item, index)
+                                    this.rtsFormInputArray[1]!.process(associatedRtsLayer, rtsPlayerLayerInterface, layerManager, item, index);
+    
 
                                     }
                                 
@@ -240,6 +258,8 @@ var point = point
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.rtsFormInputArray[0]!.processSticky(associatedRtsLayer, rtsPlayerLayerInterface, layerManager, point);
+
+                        ;
     
 }
 
@@ -252,7 +272,8 @@ var rtsPlayerLayerInterface = rtsPlayerLayerInterface
 var layerManager = layerManager
 var item = item
 var index = index
-this.rtsFormInputArray[0]!.processSticky(associatedRtsLayer, rtsPlayerLayerInterface, layerManager, item, index)
+this.rtsFormInputArray[0]!.processSticky(associatedRtsLayer, rtsPlayerLayerInterface, layerManager, item, index);
+    
 }
 
 
@@ -262,6 +283,8 @@ this.rtsFormInputArray[0]!.processSticky(associatedRtsLayer, rtsPlayerLayerInter
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.rtsFormInputArray[0]!.getSelectedStickyItemIndex();
+
+                        ;
     
 }
 
@@ -272,13 +295,16 @@ this.rtsFormInputArray[0]!.processSticky(associatedRtsLayer, rtsPlayerLayerInter
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.rtsFormInputArray[0]!.isStickyItemSelected();
+
+                        ;
     
 }
 
 
     public setStickyItemSelected(stickyItemSelected: boolean){
 var stickyItemSelected = stickyItemSelected
-this.rtsFormInputArray[0]!.setStickyItemSelected(stickyItemSelected)
+this.rtsFormInputArray[0]!.setStickyItemSelected(stickyItemSelected);
+    
 }
 
 
@@ -288,13 +314,16 @@ this.rtsFormInputArray[0]!.setStickyItemSelected(stickyItemSelected)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.rtsFormInputArray[0]!.getSelectedStickyItem();
+
+                        ;
     
 }
 
 
     public setSelectedStickyItem(selectedStickyItem: CustomItem){
 var selectedStickyItem = selectedStickyItem
-this.rtsFormInputArray[0]!.setSelectedStickyItem(selectedStickyItem)
+this.rtsFormInputArray[0]!.setSelectedStickyItem(selectedStickyItem);
+    
 }
 
 

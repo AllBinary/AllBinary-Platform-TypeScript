@@ -58,21 +58,25 @@ public constructor (title: string, backgroundBasicColor: BasicColor, basicColor:
                 //var title = title
     //var backgroundBasicColor = backgroundBasicColor
     //var basicColor = basicColor
-this.TITLE= title
-this.basicColor= basicColor
+this.TITLE= title;
+    
+this.basicColor= basicColor;
+    
 }
 
 public constructor (basicColor: BasicColor){
 
             super();
                 //var basicColor = basicColor
-this.basicColor= basicColor
+this.basicColor= basicColor;
+    
 }
 
 
     public setInputInfoP(inputInfo: string[]){
     //var inputInfo = inputInfo
-this.inputInfo= inputInfo
+this.inputInfo= inputInfo;
+    
 }
 
 
@@ -81,7 +85,8 @@ this.inputInfo= inputInfo
     var myFont: MyFont = MyFont.getInstance()!;
         
         
-
+;
+    
 
 
 
@@ -101,30 +106,37 @@ this.inputInfo= inputInfo
     var myFont: MyFont = MyFont.getInstance()!;
         
         
-
+;
+    
 
     var halfWidth: number = DisplayInfoSingleton.getInstance()!.getLastHalfWidth()!;
         
         
-
+;
+    
 
     var beginWidth: number = (graphics.getFont()!.stringWidth(this.TITLE) shr 1);
         
         
-
-graphics.setColor(this.basicColor!.toInt())
+;
+    
+graphics.setColor(this.basicColor!.toInt());
+    
 
     var charHeight: number = myFont!.DEFAULT_CHAR_HEIGHT;
         
         
-
-graphics.drawString(this.TITLE, halfWidth -beginWidth, charHeight, anchor)
+;
+    
+graphics.drawString(this.TITLE, halfWidth -beginWidth, charHeight, anchor);
+    
 
     var size: number = inputInfo!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -135,8 +147,10 @@ graphics.drawString(this.TITLE, halfWidth -beginWidth, charHeight, anchor)
         
 index < size; index++)
         {
-beginWidth= (graphics.getFont()!.stringWidth(inputInfo[index]!) shr 1)
-graphics.drawString(inputInfo[index]!, halfWidth -beginWidth, (index +3) *charHeight, anchor)
+beginWidth= (graphics.getFont()!.stringWidth(inputInfo[index]!) shr 1);
+    
+graphics.drawString(inputInfo[index]!, halfWidth -beginWidth, (index +3) *charHeight, anchor);
+    
 }
 
 }

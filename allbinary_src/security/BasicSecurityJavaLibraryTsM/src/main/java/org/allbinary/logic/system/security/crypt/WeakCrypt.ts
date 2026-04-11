@@ -60,15 +60,20 @@ public constructor (key: number){
             var key = key
 
         try {
-            this.abCrypt!.init(keys[key]!)
-} catch(e: Exception)
+            this.abCrypt!.init(keys[key]!);
+    
+
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-PreLogUtil.put(commonStrings!.EXCEPTION, this, "SuperCrypt(key)", e)
+;
+    
+PreLogUtil.putOE(commonStrings!.EXCEPTION, this, "SuperCrypt(key)", e);
+    
 }
 
 }
@@ -79,19 +84,25 @@ var value = value
 
         try {
             
-    var crypted: ByteArray = this.abCrypt!.encrypt(value.encodeToByteArray())!;
+    var crypted: number[] = this.abCrypt!.encrypt(value.encodeToByteArray())!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return DatabaseEncoder.encode(crypted);
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-PreLogUtil.put("Encrypt Failed", this, "encrypt", e)
+PreLogUtil.putOE("Encrypt Failed", this, "encrypt", e);
+    
 
 
 
@@ -108,19 +119,23 @@ var value = value
 
         try {
             
-    var decrypted: ByteArray = abCrypt!.decrypt(DatabaseEncoder.decode(value))!;
+    var decrypted: number[] = abCrypt!.decrypt(DatabaseEncoder.decode(value))!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return decrypted.decodeToString();
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-PreLogUtil.put("decrypt Failed", this, "decrypt", e)
+PreLogUtil.putOE("decrypt Failed", this, "decrypt", e);
+    
 
 
 

@@ -93,24 +93,29 @@ private constructor (){
     var factory: DocumentBuilderFactory = DocumentBuilderFactory.newInstance()!;
         
         
-
+;
+    
 
     var builder: DocumentBuilder = factory.newDocumentBuilder()!;
         
         
-
+;
+    
 
     var document: Document = builder.newDocument()!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return document;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
 
@@ -133,24 +138,29 @@ var xmlFile = xmlFile
     var factory: DocumentBuilderFactory = DocumentBuilderFactory.newInstance()!;
         
         
-
+;
+    
 
     var builder: DocumentBuilder = factory.newDocumentBuilder()!;
         
         
-
+;
+    
 
     var document: Document = builder.parse(xmlFile)!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return document;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
 
@@ -171,35 +181,45 @@ var document = document
     var domSource: DOMSource = new DOMSource(document);
         
         
-
+;
+    
 
     var byteArrayOutputStream: ByteArrayOutputStream = new ByteArrayOutputStream();
         
         
-
+;
+    
 
     var streamResult: StreamResult = new StreamResult(byteArrayOutputStream);
         
         
-
+;
+    
 
     var copyTransformerFactory: TransformerFactory = TransformerFactory.newInstance()!;
         
         
-
+;
+    
 
     var copyTransformer: Transformer = copyTransformerFactory!.newTransformer()!;
         
         
-
-copyTransformer!.transform(domSource, streamResult)
+;
+    
+copyTransformer!.transform(domSource, streamResult);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return byteArrayOutputStream!.toString();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
 
@@ -221,25 +241,33 @@ var document = document
     var copyTransformerFactory: TransformerFactory = TransformerFactory.newInstance()!;
         
         
-
+;
+    
 
     var copyTransformer: Transformer = copyTransformerFactory!.newTransformer()!;
         
         
-
+;
+    
 
     var domSource: DOMSource = new DOMSource(document);
         
         
-
-file.createNewFile()
+;
+    
+file.createNewFile();
+    
 
     var streamResult: StreamResult = new StreamResult(file);
         
         
+;
+    
+copyTransformer!.transform(domSource, streamResult);
+    
 
-copyTransformer!.transform(domSource, streamResult)
-} catch(e: Exception)
+                //: 
+} catch(e) 
             {
 
 
@@ -259,7 +287,8 @@ var nodeList = nodeList
     var numberOfNodes: number = nodeList!.getLength()!;
         
         
-
+;
+    
 
 
 
@@ -274,7 +303,8 @@ index < numberOfNodes; index++)
     var node: Node = nodeList!.item(index)!;
         
         
-
+;
+    
 
                         if(node.getNodeName()!.compareTo(nodeName) == 0)
                         
@@ -284,6 +314,8 @@ index < numberOfNodes; index++)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return node.getChildNodes();
+
+                        ;
     
 
                                     }
@@ -306,17 +338,20 @@ var nodeList = nodeList
     var list: BasicArrayList = new BasicArrayList();
         
         
-
+;
+    
 
     var childNodeList: NodeList = getChildNodeList(nodeName, nodeList)!;
         
         
-
+;
+    
 
     var numberOfChildren: number = childNodeList!.getLength()!;
         
         
-
+;
+    
 
 
 
@@ -331,12 +366,14 @@ index < numberOfChildren; index++)
     var node: Node = childNodeList!.item(index)!;
         
         
-
+;
+    
 
                         if(node.getNodeType() != Node.TEXT_NODE)
                         
                                     {
-                                    list.add(node)
+                                    list.add(node);
+    
 
                                     }
                                 
@@ -359,12 +396,14 @@ var nodeList = nodeList
     var list: BasicArrayList = new BasicArrayList();
         
         
-
+;
+    
 
     var numberOfChildren: number = nodeList!.getLength()!;
         
         
-
+;
+    
 
 
 
@@ -379,12 +418,14 @@ index < numberOfChildren; index++)
     var node: Node = nodeList!.item(index)!;
         
         
-
+;
+    
 
                         if(node.getNodeType() != Node.TEXT_NODE)
                         
                                     {
-                                    list.add(node)
+                                    list.add(node);
+    
 
                                     }
                                 
@@ -408,7 +449,8 @@ var nodeList = nodeList
     var numberOfNodes: number = nodeList!.getLength()!;
         
         
-
+;
+    
 
 
 
@@ -423,8 +465,10 @@ index < numberOfNodes; index++)
     var node: Node = nodeList!.item(index)!;
         
         
-
-logUtil!.put("NodeName: " +node.getNodeName(), this, "searchNodeList")
+;
+    
+logUtil!.put("NodeName: " +node.getNodeName(), this, "searchNodeList");
+    
 
                         if(node.getNodeName()!.compareTo(nodeName) == 0)
                         
@@ -456,7 +500,8 @@ var nodeList = nodeList
     var numberOfNodes: number = nodeList!.size()!;
         
         
-
+;
+    
 
 
 
@@ -468,11 +513,15 @@ var nodeList = nodeList
 index < numberOfNodes; index++)
         {
 
-    var node: Node = nodeList!.get(index) as Node;
-        
-        
+    var node: Node = nodeList!.get(index);
 
-logUtil!.put("NodeName: " +node.getNodeName(), this, "searchNodeList")
+                         as Node;
+        
+        
+;
+    
+logUtil!.put("NodeName: " +node.getNodeName(), this, "searchNodeList");
+    
 
                         if(node.getNodeName()!.compareTo(nodeName) == 0)
                         

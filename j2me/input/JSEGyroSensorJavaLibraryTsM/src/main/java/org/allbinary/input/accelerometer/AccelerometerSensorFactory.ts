@@ -42,12 +42,14 @@ export class AccelerometerSensorFactory
     var features: Features = Features.getInstance()!;
         
         
-
+;
+    
 
     var sensorFeatureFactory: SensorFeatureFactory = SensorFeatureFactory.getInstance()!;
         
         
-
+;
+    
 
                         if(features.isFeature(sensorFeatureFactory!.ORIENTATION_SENSORS))
                         
@@ -74,7 +76,8 @@ export class AccelerometerSensorFactory
                         if(features.isFeature(sensorFeatureFactory!.NO_ORIENTATION))
                         
                                     {
-                                    allBinaryAccelerometerSensor= NoAccelerometerSensor()
+                                    allBinaryAccelerometerSensor= NoAccelerometerSensor();
+    
 
                                     }
                                 

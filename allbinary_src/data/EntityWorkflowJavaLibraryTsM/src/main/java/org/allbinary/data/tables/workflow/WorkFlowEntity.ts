@@ -18,10 +18,13 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { HashMap } from "../../../../../java/util/HashMap.js";
 
     
-import { Vector } from "../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../java/util/Vector.js";
 
     
 import { DynamicObjectData } from "../../../../../org/allbinary/business/DynamicObjectData.js";
@@ -96,7 +99,8 @@ public constructor ()
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setTableName(tableName)
+this.setTableName(tableName);
+    
 }
 
 
@@ -104,22 +108,27 @@ this.setTableName(tableName)
     //var values = values
 
         try {
-            super.insert(values)
+            super.insert(values);
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.SUCCESS, this, INSERT)
+                                    logUtil!.put(this.commonStrings!.SUCCESS, this, INSERT);
+    
 
                                     }
                                 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.FAILURE, this, INSERT, e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, INSERT, e);
+    
 
                                     }
                                 
@@ -134,28 +143,36 @@ this.setTableName(tableName)
 
         try {
             
-    var keysAndValues: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();
         
         
-
-keysAndValues!.put(WorkFlowData.getInstance()!.NAME, name)
-keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName)
-super.deleteWhere(keysAndValues)
+;
+    
+keysAndValues!.put(WorkFlowData.getInstance()!.NAME, name);
+    
+keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName);
+    
+super.deleteWhere(keysAndValues);
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.SUCCESS, this, commonStrings!.delete)
+                                    logUtil!.put(this.commonStrings!.SUCCESS, this, commonStrings!.delete);
+    
 
                                     }
                                 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.FAILURE, this, commonStrings!.delete, e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, commonStrings!.delete, e);
+    
 
                                     }
                                 
@@ -172,30 +189,39 @@ super.deleteWhere(keysAndValues)
 
         try {
             
-    var keysAndValues: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();
         
         
+;
+    
+keysAndValues!.put(WorkFlowData.getInstance()!.NAME, name);
+    
+keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName);
+    
 
-keysAndValues!.put(WorkFlowData.getInstance()!.NAME, name)
-keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName)
-
-    var hashMap: HashMap<Any, Any> = super.getRow(keysAndValues)!;
+    var hashMap: HashMap<any, any> = super.getRow(keysAndValues)!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return DbWorkFlowFactory.getInstance()!.getInstance(abeClientInformation, hashMap) as WorkFlowInterface;
+                        return DbWorkFlowFactory.getInstance()!.getInstance(abeClientInformation, hashMap);
+
+                         as WorkFlowInterface;
     
-} catch(e: LicensingException)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.FAILURE, this, METHOD_GET, e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, METHOD_GET, e);
+    
 
                                     }
                                 
@@ -204,13 +230,16 @@ keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName)
 
                             throw e
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.FAILURE, this, METHOD_GET, e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, METHOD_GET, e);
+    
 
                                     }
                                 
@@ -231,23 +260,28 @@ var storeName = storeName
     var workFlowsVector: Vector = new Vector();
         
         
+;
+    
 
-
-    var keysAndValues: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();
         
         
-
-keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName)
+;
+    
+keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName);
+    
 
     var hashMapVector: Vector = super.getRows(keysAndValues)!;
         
         
-
+;
+    
 
     var size: number = hashMapVector!.length!;
         
         
-
+;
+    
 
 
 
@@ -259,17 +293,21 @@ keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName)
 i < size; i++)
         {
 
-    var workFlowHashMap: HashMap<Any, Any> = hashMapVector!.get(i as Object) as HashMap<Any, Any>;
-        
-        
+    var workFlowHashMap: HashMap<any, any> = hashMapVector!.get(i as Object);
 
+                         as HashMap<any, any>;
+        
+        
+;
+    
 
                         if(workFlowHashMap != 
                                     null
                                 )
                         
                                     {
-                                    workFlowsVector!.add(DbWorkFlowFactory.getInstance()!.getInstance(abeClientInformation, workFlowHashMap))
+                                    workFlowsVector!.add(DbWorkFlowFactory.getInstance()!.getInstance(abeClientInformation, workFlowHashMap));
+    
 
                                     }
                                 
@@ -281,13 +319,16 @@ i < size; i++)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return workFlowsVector;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.FAILURE, this, this.METHOD_GET, e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, this.METHOD_GET, e);
+    
 
                                     }
                                 
@@ -302,25 +343,36 @@ i < size; i++)
 }
 
 
-    public update(updatedValues: HashMap<Any, Any>){
+    public update(updatedValues: HashMap<any, any>){
 var updatedValues = updatedValues
 
         try {
             
-    var wherekeysAndValues: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var wherekeysAndValues: HashMap<any, any> = new HashMap<any, any>();
         
         
+;
+    
+wherekeysAndValues!.put(WorkFlowData.getInstance()!.NAME, updatedValues!.get(WorkFlowData.getInstance()!.NAME);
 
-wherekeysAndValues!.put(WorkFlowData.getInstance()!.NAME, updatedValues!.get(WorkFlowData.getInstance()!.NAME) as String)
-wherekeysAndValues!.put(StoreFrontData.getInstance()!.NAME, updatedValues!.get(StoreFrontData.getInstance()!.NAME) as String)
-super.updateWhere(wherekeysAndValues, updatedValues)
-} catch(e: Exception)
+                         as String);
+    
+wherekeysAndValues!.put(StoreFrontData.getInstance()!.NAME, updatedValues!.get(StoreFrontData.getInstance()!.NAME);
+
+                         as String);
+    
+super.updateWhere(wherekeysAndValues, updatedValues);
+    
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.FAILURE, this, METHOD_UPDATE, e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, METHOD_UPDATE, e);
+    
 
                                     }
                                 
@@ -334,18 +386,23 @@ super.updateWhere(wherekeysAndValues, updatedValues)
     var workFlowData: WorkFlowData = WorkFlowData.getInstance()!;
         
         
-
+;
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(tableName)!.append(this.sqlStrings!.START)!.append(workFlowData!.NAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(StoreFrontData.getInstance()!.NAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(DynamicObjectData.NAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(workFlowData!.DATA)!.append(this.sqlTypeStrings!.BLOB_NOT_NULL)!.append(EntryData.getInstance()!.TIMECREATED)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(EntryData.getInstance()!.LASTMODIFIED)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(this.sqlStrings!.PRIMARY_KEY)!.append(workFlowData!.NAME)!.append(this.sqlStrings!.END)
+;
+    
+stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(tableName)!.append(this.sqlStrings!.START)!.append(workFlowData!.NAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(StoreFrontData.getInstance()!.NAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(DynamicObjectData.NAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(workFlowData!.DATA)!.append(this.sqlTypeStrings!.BLOB_NOT_NULL)!.append(EntryData.getInstance()!.TIMECREATED)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(EntryData.getInstance()!.LASTMODIFIED)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(this.sqlStrings!.PRIMARY_KEY)!.append(workFlowData!.NAME)!.append(this.sqlStrings!.END);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 
@@ -356,6 +413,8 @@ stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(tableName)!.append(t
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.createTable(this.createTableStatement());
+
+                        ;
     
 }
 
@@ -366,6 +425,8 @@ stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(tableName)!.append(t
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.dropTable();
+
+                        ;
     
 }
 

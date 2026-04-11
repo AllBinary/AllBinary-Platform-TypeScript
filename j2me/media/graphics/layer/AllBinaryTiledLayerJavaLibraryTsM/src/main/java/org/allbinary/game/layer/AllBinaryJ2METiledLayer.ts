@@ -40,7 +40,7 @@ export class AllBinaryJ2METiledLayer extends AllBinaryTiledLayer {
     readonly tiledLayerP: TiledLayer
 
     readonly debugColor: number
-public constructor (dataId: Integer, tiledLayer: TiledLayer, mapTwoDArray: IntArray[], debugColor: number)                        
+public constructor (dataId: Integer, tiledLayer: TiledLayer, mapTwoDArray: number[][], debugColor: number)                        
 
                             : super(dataId, tiledLayer!.getWidth(), tiledLayer!.getHeight(), tiledLayer!.getCellWidth(), tiledLayer!.getCellHeight()){
 
@@ -53,15 +53,19 @@ public constructor (dataId: Integer, tiledLayer: TiledLayer, mapTwoDArray: IntAr
 
                             //For kotlin this is before the body of the constructor.
                     
-this.tiledLayerP= tiledLayer
-this.debugColor= debugColor
-this.setCells(mapTwoDArray)
+this.tiledLayerP= tiledLayer;
+    
+this.debugColor= debugColor;
+    
+this.setCells(mapTwoDArray);
+    
 }
 
 
     public paint(graphics: Graphics){
     //var graphics = graphics
-this.tiledLayerP!.paint(graphics)
+this.tiledLayerP!.paint(graphics);
+    
 }
 
 
@@ -75,69 +79,84 @@ this.tiledLayerP!.paint(graphics)
     var font: Font = graphics.getFont()!;
         
         
-
-graphics.setFont(font2)
-graphics.setColor(debugColor)
+;
+    
+graphics.setFont(font2);
+    
+graphics.setColor(debugColor);
+    
 
     var x: number = this.tiledLayerP!.getX()!;
         
         
-
+;
+    
 
     var y: number = this.tiledLayerP!.getY()!;
         
         
-
+;
+    
 
     var firstColumn: number = 0;
         
         
-
+;
+    
 
     var firstRow: number = 0;
         
         
-
+;
+    
 
     var totalColumns: number = this.tiledLayerP!.getColumns()!;
         
         
-
+;
+    
 
     var totalRows: number = this.tiledLayerP!.getRows()!;
         
         
-
+;
+    
 
     var x0: number = x;
         
         
-
+;
+    
 
     var tile: number = 0;
         
         
-
+;
+    
 
     var tileHeight: number = this.tiledLayerP!.getCellHeight()!;
         
         
-
+;
+    
 
     var tileWidth: number = this.tiledLayerP!.getCellWidth()!;
         
         
-
+;
+    
 
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
         
         
-
+;
+    
 
     var stringMaker: StringMaker = new StringMaker();
         
         
-
+;
+    
 
 
 
@@ -148,7 +167,8 @@ graphics.setColor(debugColor)
         
 rowIndex < totalRows; rowIndex++)
         {
-x= x0
+x= x0;
+    
 
 
 
@@ -159,12 +179,14 @@ x= x0
         
 columnIndex < totalColumns; columnIndex++)
         {
-tile= this.tiledLayerP!.getCell(columnIndex, rowIndex)
+tile= this.tiledLayerP!.getCell(columnIndex, rowIndex);
+    
 
                         if(tile < 0)
                         
                                     {
-                                    tile= this.tiledLayerP!.getAnimatedTile(tile)
+                                    tile= this.tiledLayerP!.getAnimatedTile(tile);
+    
 
                                     }
                                 
@@ -179,22 +201,28 @@ tile= this.tiledLayerP!.getCell(columnIndex, rowIndex)
 
                                     }
                                 
-tile--
-stringMaker!.delete(0, stringMaker!.length())
-graphics.drawString(stringMaker!.appendint(columnIndex)!.append(commonSeps!.COMMA)!.appendint(rowIndex)!.append(commonSeps!.COLON)!.appendint(tile)!.toString(), x +5, y +10, 0)
+tile--;
+    
+stringMaker!.delete(0, stringMaker!.length());
+    
+graphics.drawString(stringMaker!.appendint(columnIndex)!.append(commonSeps!.COMMA)!.appendint(rowIndex)!.append(commonSeps!.COLON)!.appendint(tile)!.toString(), x +5, y +10, 0);
+    
 }
 
 }
 
-graphics.setFont(font)
+graphics.setFont(font);
+    
 }
 
 
     public move(dx: number, dy: number){
     //var dx = dx
     //var dy = dy
-this.tiledLayerP!.move(dx, dy)
-super.move( -dx,  -dy)
+this.tiledLayerP!.move(dx, dy);
+    
+super.move( -dx,  -dy);
+    
 }
 
 
@@ -202,8 +230,10 @@ super.move( -dx,  -dy)
     //var x = x
     //var y = y
     //var z = z
-this.tiledLayerP!.setPosition(x, y)
-super.setPosition( -x,  -y, z)
+this.tiledLayerP!.setPosition(x, y);
+    
+super.setPosition( -x,  -y, z);
+    
 }
 
 
@@ -223,6 +253,8 @@ super.setPosition( -x,  -y, z)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.tiledLayerP!.getCellWidth();
+
+                        ;
     
 }
 
@@ -233,6 +265,8 @@ super.setPosition( -x,  -y, z)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.tiledLayerP!.getCellHeight();
+
+                        ;
     
 }
 
@@ -245,6 +279,8 @@ super.setPosition( -x,  -y, z)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.tiledLayerP!.getCell(col, row);
+
+                        ;
     
 }
 
@@ -255,6 +291,8 @@ super.setPosition( -x,  -y, z)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.tiledLayerP!.getColumns();
+
+                        ;
     
 }
 
@@ -265,6 +303,8 @@ super.setPosition( -x,  -y, z)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.tiledLayerP!.getRows();
+
+                        ;
     
 }
 
@@ -273,7 +313,8 @@ super.setPosition( -x,  -y, z)
     //var col = col
     //var row = row
     //var index = index
-this.tiledLayerP!.setCell(col, row, index)
+this.tiledLayerP!.setCell(col, row, index);
+    
 }
 
 
@@ -284,6 +325,8 @@ this.tiledLayerP!.setCell(col, row, index)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.tiledLayerP!.getAnimatedTile(animationTileIndex);
+
+                        ;
     
 }
 

@@ -73,18 +73,21 @@ var renderer = renderer
     var gdResources: GDResources = GDResources.getInstance()!;
         
         
-
+;
+    
 
     var resourceStringArray: string[] = gdResources!.resourceStringArray;
         
         
-
+;
+    
 
     var size: number = resourceStringArray!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -111,7 +114,8 @@ index < size; index++)
 }
 
 logUtil!.put(StringMaker().
-                            append("unable to find key: ")!.append(StringUtil.getInstance()!.toString(key))!.toString(), this, commonStrings!.RUN)
+                            append("unable to find key: ")!.append(StringUtil.getInstance()!.toString(key))!.toString(), this, commonStrings!.RUN);
+    
 
 
 
@@ -129,39 +133,50 @@ logUtil!.put(StringMaker().
     var foundIndex: number = this.getIndex(width, height)!;
         
         
-
+;
+    
 
     var image: Image = this.getFromAvailable(foundIndex, width, height)!;
         
         
-
+;
+    
 
                         if(image == NullCanvas.NULL_IMAGE)
                         
                                     {
-                                    volume += width *height
+                                    volume += width *height;
+    
 
                         if(volume > 32000)
                         
                                     {
-                                    System.gc()
-volume= 0
+                                    System.gc();
+    
+volume= 0;
+    
 
                                     }
                                 
-image= this.createImage(caller, width, height)
+image= this.createImage(caller, width, height);
+    
 
                         if(foundIndex ==  -1)
                         
                                     {
-                                    foundIndex= nextIndex
-widths[nextIndex]= width
-heights[nextIndex]= height
-nextIndex++
+                                    foundIndex= nextIndex;
+    
+widths[nextIndex]= width;
+    
+heights[nextIndex]= height;
+    
+nextIndex++;
+    
 
                                     }
                                 
-listOfList[foundIndex]!.add(image)
+listOfList[foundIndex]!.add(image);
+    
 
                                     }
                                 
@@ -182,17 +197,20 @@ listOfList[foundIndex]!.add(image)
     var resourceUtil: ResourceUtil = ResourceUtil.getInstance()!;
         
         
-
+;
+    
 
     var resourceId: Integer = resourceUtil!.getResourceId(key as String)!;
         
         
-
+;
+    
 
     var image: Image = this.getImage(resourceId)!;
         
         
-
+;
+    
 
                         if(image == NullCanvas.NULL_IMAGE)
                         
@@ -201,25 +219,39 @@ listOfList[foundIndex]!.add(image)
     var inputStream: InputStream = resourceUtil!.getResourceAsStream(key as String)!;
         
         
-
+;
+    
 
         try {
-            logUtil!.put(Memory.getInfo(), this, commonStrings!.GET)
-image= this.createImage(key, inputStream)
-} catch(e: Exception)
+            logUtil!.put(Memory.getInfo(), this, commonStrings!.GET);
+    
+image= this.createImage(key, inputStream);
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put("Exception: Trying Again After GC", this, commonStrings!.GET, e)
+logUtil!.put("Exception: Trying Again After GC", this, commonStrings!.GET, e);
+    
 logUtil!.put(StringMaker().
-                            append("InputStream: ")!.append(StringUtil.getInstance()!.toString(inputStream))!.toString(), this, commonStrings!.GET)
-System.gc()
-System.gc()
-logUtil!.put(Memory.getInfo(), this, commonStrings!.GET)
-Thread.sleep(100)
-image= this.createImage(key, inputStream)
+                            append("InputStream: ")!.append(StringUtil.getInstance()!.toString(inputStream))!.toString(), this, commonStrings!.GET);
+    
+System.gc();
+    
+System.gc();
+    
+logUtil!.put(Memory.getInfo(), this, commonStrings!.GET);
+    
+Thread.sleep(100);
+    
+image= this.createImage(key, inputStream);
+    
 }
 
-inputStream!.close()
-this.hashtable.put(resourceId, image)
+inputStream!.close();
+    
+this.hashtable.put(resourceId, image);
+    
 
                                     }
                                 

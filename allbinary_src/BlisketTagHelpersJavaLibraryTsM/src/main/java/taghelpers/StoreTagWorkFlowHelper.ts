@@ -55,7 +55,7 @@ export class StoreTagWorkFlowHelper extends TagHelper {
         
 
     private storeWorkFlowInterface: StoreWorkFlowInterface
-public constructor (hashMap: HashMap<Any, Any>, pageContext: PageContext){
+public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
             var hashMap = hashMap
@@ -64,11 +64,13 @@ var pageContext = pageContext
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPER))
                         
                                     {
-                                    logUtil!.put("Properties: " +hashMap!.toString(), this, "StoreTagWorkFlowHelper()")
+                                    logUtil!.put("Properties: " +hashMap!.toString(), this, "StoreTagWorkFlowHelper()");
+    
 
                                     }
                                 
-this.storeWorkFlowInterface= StoreTagWorkFlowFactory.getInstance()!.getInstance(this.abeClientInformation, hashMap, pageContext)
+this.storeWorkFlowInterface= StoreTagWorkFlowFactory.getInstance()!.getInstance(this.abeClientInformation, hashMap, pageContext);
+    
 }
 
 
@@ -81,7 +83,8 @@ this.storeWorkFlowInterface= StoreTagWorkFlowFactory.getInstance()!.getInstance(
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPER))
                         
                                     {
-                                    logUtil!.put("Process", this, commonStrings!.PROCESS)
+                                    logUtil!.put("Process", this, commonStrings!.PROCESS);
+    
 
                                     }
                                 
@@ -90,19 +93,25 @@ this.storeWorkFlowInterface= StoreTagWorkFlowFactory.getInstance()!.getInstance(
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.storeWorkFlowInterface!.process();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to process workflow: ";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e);
+    
 
                                     }
                                 

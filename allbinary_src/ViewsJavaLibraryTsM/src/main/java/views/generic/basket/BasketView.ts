@@ -18,13 +18,16 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { HashMap } from "../../../java/util/HashMap.js";
 
     
 import { Set } from "../../../java/util/Set.js";
 
     
-import { Vector } from "../../../java/util/Vector.js";
+
+//import { Vector } from "../../../java/util/Vector.js";
 
     
 import { HttpServletRequest } from "../../../javax/servlet/http/HttpServletRequest.js";
@@ -95,7 +98,10 @@ public constructor (transformInfoInterface: TransformInfoInterface)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.request= this.getPageContext()!.getRequest() as HttpServletRequest
+this.request= this.getPageContext()!.getRequest();
+
+                         as HttpServletRequest;
+    
 }
 
 
@@ -109,43 +115,51 @@ var document = document
     var inventoryEntity: InventoryEntity = InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!;
         
         
-
+;
+    
 
     var basketInterface: BasketInterface = this.getWeblisketSession()!.getOrder()!.getBasket()!;
         
         
-
+;
+    
 
     var basketNode: Node = document.createElement(BasketData.BASKET)!;
         
         
+;
+    
 
-
-    var itemsAndNumberInBasket: HashMap<Any, Any> = basketInterface!.getItems()!;
+    var itemsAndNumberInBasket: HashMap<any, any> = basketInterface!.getItems()!;
         
         
-
+;
+    
 
     var numberOfResults: number = 1;
         
         
-
+;
+    
 
     var items: Set = itemsAndNumberInBasket!.keySet()!;
         
         
+;
+    
 
-
-    var productArray: any = {}[] = items.toArray()!;
+    var productArray: any[] = items.toArray()!;
         
         
-
+;
+    
 
     var size: number = productArray!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -160,12 +174,14 @@ index < size; index++)
     var product: string = new .toCharArray();
         
         
-
+;
+    
 
     var itemInterface: ItemInterface = inventoryEntity!.getItem(product)!;
         
         
-
+;
+    
 
                         if(itemInterface != 
                                     null
@@ -176,91 +192,117 @@ index < size; index++)
     var basicItemView: BasicItemView = new BasicItemView(itemInterface, Vector());
         
         
-
+;
+    
 
     var node: Node = basicItemView!.toXmlNode(document)!;
         
         
-
+;
+    
 
     var numberInBasket: string = basketInterface!.getNumberOf(product)!.toString()!;
         
         
-
-node.appendChild(ModDomHelper.createNameValueNodes(document, BasketData.ITEMTOTALINBASKET, numberInBasket))
+;
+    
+node.appendChild(ModDomHelper.createNameValueNodes(document, BasketData.ITEMTOTALINBASKET, numberInBasket));
+    
 
     var itemPrice: Money = itemInterface!.getPrice()!;
         
         
-
+;
+    
 
     var itemTotal: Money = new Money(itemPrice);
         
         
-
-itemTotal!.multiply(basketInterface!.getNumberOf(product)!.toInt())
-node.appendChild(ModDomHelper.createNameValueNodes(document, BasketData.ITEMTOTAL, itemTotal!.toString()))
-basketNode!.appendChild(node)
+;
+    
+itemTotal!.multiply(basketInterface!.getNumberOf(product)!.toInt());
+    
+node.appendChild(ModDomHelper.createNameValueNodes(document, BasketData.ITEMTOTAL, itemTotal!.toString()));
+    
+basketNode!.appendChild(node);
+    
 
                                     }
                                 
                         else {
-                            logUtil!.put("Product Failed: " +product, this, "toXmlNode")
+                            logUtil!.put("Product Failed: " +product, this, "toXmlNode");
+    
 
                         }
                             
-numberOfResults++
+numberOfResults++;
+    
 }
 
 
     var totalNumberNode: Node = document.createElement(SearchData.TOTAL_NUMBER_ITEMS)!;
         
         
-
+;
+    
 
     var totalNumberTextNode: Node = document.createTextNode(basketInterface!.getNumberOfItems()!.toString())!;
         
         
-
-totalNumberNode!.appendChild(totalNumberTextNode)
+;
+    
+totalNumberNode!.appendChild(totalNumberTextNode);
+    
 
     var totalWeightNode: Node = document.createElement(BasketData.TOTALWEIGHT)!;
         
         
-
+;
+    
 
     var totalWeightTextNode: Node = document.createTextNode(basketInterface!.getTotalWeight()!.toString())!;
         
         
-
-totalWeightNode!.appendChild(totalWeightTextNode)
+;
+    
+totalWeightNode!.appendChild(totalWeightTextNode);
+    
 
     var subTotalNode: Node = document.createElement(BasketData.SUBTOTAL)!;
         
         
-
+;
+    
 
     var subTotalTextNode: Node = document.createTextNode(basketInterface!.getSubTotal()!.toString())!;
         
         
-
-subTotalNode!.appendChild(subTotalTextNode)
-basketNode!.appendChild(totalNumberNode)
-basketNode!.appendChild(totalWeightNode)
-basketNode!.appendChild(subTotalNode)
+;
+    
+subTotalNode!.appendChild(subTotalTextNode);
+    
+basketNode!.appendChild(totalNumberNode);
+    
+basketNode!.appendChild(totalWeightNode);
+    
+basketNode!.appendChild(subTotalNode);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return basketNode;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.XSLLOGGINGERROR))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.FAILURE, this, "toXmlNode", e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, "toXmlNode", e);
+    
 
                                     }
                                 
@@ -274,7 +316,8 @@ basketNode!.appendChild(subTotalNode)
 
 
     public addDomNodeInterfaces(){
-this.addDomNodeInterface(this as DomNodeInterface)
+this.addDomNodeInterface(this as DomNodeInterface);
+    
 }
 
 
@@ -283,20 +326,26 @@ this.addDomNodeInterface(this as DomNodeInterface)
     public view(): string{
 
         try {
-            this.addDomNodeInterfaces()
+            this.addDomNodeInterfaces();
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.view();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e);
+    
 
                                     }
                                 

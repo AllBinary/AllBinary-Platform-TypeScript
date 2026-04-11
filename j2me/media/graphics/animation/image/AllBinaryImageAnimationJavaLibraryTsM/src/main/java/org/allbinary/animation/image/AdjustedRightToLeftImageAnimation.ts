@@ -47,7 +47,8 @@ public constructor (image: Image, dx: number, dy: number, animationBehavior: Ani
 
                             //For kotlin this is before the body of the constructor.
                     
-this.init(dx, dy)
+this.init(dx, dy);
+    
 }
 
 
@@ -56,8 +57,10 @@ this.init(dx, dy)
     public init(dx: number, dy: number){
     //var dx = dx
     //var dy = dy
-this.dx= dx
-this.dy= dy
+this.dx= dx;
+    
+this.dy= dy;
+    
 }
 
 
@@ -65,7 +68,8 @@ this.dy= dy
     //var graphics = graphics
     //var x = x
     //var y = y
-super.paint(graphics, x +this.dx, y +this.dy)
+super.paint(graphics, x +this.dx, y +this.dy);
+    
 }
 
 

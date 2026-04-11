@@ -46,9 +46,12 @@ public constructor (turnSpeed: Integer, trackPathSelectionSkill: Integer, aggres
             var turnSpeed = turnSpeed
 var trackPathSelectionSkill = trackPathSelectionSkill
 var aggression = aggression
-this.setTurnSpeed(turnSpeed)
-this.setTrackPathSelectionSkill(trackPathSelectionSkill)
-this.aggression= aggression
+this.setTurnSpeed(turnSpeed);
+    
+this.setTrackPathSelectionSkill(trackPathSelectionSkill);
+    
+this.aggression= aggression;
+    
 }
 
 
@@ -64,7 +67,8 @@ this.aggression= aggression
 
     public setTurnSpeed(turnSpeed: Integer){
 var turnSpeed = turnSpeed
-this.turnSpeed= turnSpeed
+this.turnSpeed= turnSpeed;
+    
 }
 
 
@@ -80,7 +84,8 @@ this.turnSpeed= turnSpeed
 
     public setTrackPathSelectionSkill(trackPathSelectionSkill: Integer){
 var trackPathSelectionSkill = trackPathSelectionSkill
-this.trackPathSelectionSkill= trackPathSelectionSkill
+this.trackPathSelectionSkill= trackPathSelectionSkill;
+    
 }
 
 
@@ -96,7 +101,8 @@ this.trackPathSelectionSkill= trackPathSelectionSkill
 
     public setAggression(aggression: Aggression){
 var aggression = aggression
-this.aggression= aggression
+this.aggression= aggression;
+    
 }
 
 

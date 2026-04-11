@@ -43,8 +43,11 @@ export class LoggingInitInfo
     public static write(){
 
         try {
-            hasRead= false
-} catch(e: Exception)
+            hasRead= false;
+    
+
+                //: 
+} catch(e) 
             {
 
 
@@ -61,7 +64,9 @@ export class LoggingInitInfo
     static read(){
 
         try {
-            } catch(e: Exception)
+            
+                //: 
+} catch(e) 
             {
 
 
@@ -75,7 +80,8 @@ export class LoggingInitInfo
 
     public static setHasRead(value: boolean){
 var value = value
-LoggingInitInfo.hasRead= value
+LoggingInitInfo.hasRead= value;
+    
 }
 
 
@@ -87,8 +93,10 @@ LoggingInitInfo.hasRead= value
                         if(!hasRead)
                         
                                     {
-                                    LoggingInitInfo.read()
-hasRead= true
+                                    LoggingInitInfo.read();
+    
+hasRead= true;
+    
 
                         if(LoggingInitInfo.logConfigInfoList == 
                                     null
@@ -111,14 +119,16 @@ hasRead= true
 
     public static set(logConfigInfoList: BasicArrayList){
 var logConfigInfoList = logConfigInfoList
-LoggingInitInfo.logConfigInfoList= logConfigInfoList
+LoggingInitInfo.logConfigInfoList= logConfigInfoList;
+    
 }
 
 
                 //@Throws(Error::class)
             
     public static get(): BasicArrayList{
-LoggingInitInfo.updateIfNeeded()
+LoggingInitInfo.updateIfNeeded();
+    
 
 
 
@@ -131,17 +141,20 @@ LoggingInitInfo.updateIfNeeded()
                 //@Throws(Error::class)
             
     public static getTypeList(): BasicArrayList{
-LoggingInitInfo.updateIfNeeded()
+LoggingInitInfo.updateIfNeeded();
+    
 
     var allLogTypeVector: BasicArrayList = new BasicArrayList();
         
         
-
+;
+    
 
     var size: number = LoggingInitInfo.logConfigInfoList!.size()!;
         
         
-
+;
+    
 
 
 
@@ -156,17 +169,20 @@ index < size; index++)
     var logConfigInfo: LogConfig = LoggingInitInfo.logConfigInfoList!.objectArray[index]! as LogConfig;
         
         
-
+;
+    
 
     var logTypeVector: BasicArrayList = logConfigInfo!.getTypeVector()!;
         
         
-
+;
+    
 
                         if(logConfigInfo!.isEnabled())
                         
                                     {
-                                    allLogTypeVector!.addAll(logTypeVector)
+                                    allLogTypeVector!.addAll(logTypeVector);
+    
 
                                     }
                                 
@@ -195,7 +211,9 @@ public constructor (){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return true;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
 
@@ -216,6 +234,8 @@ public constructor (){
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return LoggingInitInfo.logConfigInfoList!.size();
+
+                        ;
     
 }
 
@@ -229,7 +249,9 @@ public constructor (){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
 

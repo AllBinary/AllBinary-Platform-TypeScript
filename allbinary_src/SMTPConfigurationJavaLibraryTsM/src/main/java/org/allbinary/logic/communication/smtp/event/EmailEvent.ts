@@ -49,8 +49,10 @@ var attempts = attempts
 
                             //For kotlin this is before the body of the constructor.
                     
-this.userEmailEventNameData= userEmailEventNameData
-this.emailInfo= emailInfo
+this.userEmailEventNameData= userEmailEventNameData;
+    
+this.emailInfo= emailInfo;
+    
 }
 
 
@@ -76,7 +78,8 @@ this.emailInfo= emailInfo
 
     public setAttempts(attempts: number){
 var attempts = attempts
-this.attempts= attempts
+this.attempts= attempts;
+    
 }
 
 
@@ -85,18 +88,27 @@ this.attempts= attempts
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("EmailEvent Log: \n")
-stringBuffer!.append("Event Name: ")
-stringBuffer!.append(this.userEmailEventNameData!.toString())
-stringBuffer!.append(this.getEmailInfo()!.toString())
-stringBuffer!.append("\nNumber of Attempts: ")
-stringBuffer!.appendint(this.getAttempts())
+;
+    
+stringBuffer!.append("EmailEvent Log: \n");
+    
+stringBuffer!.append("Event Name: ");
+    
+stringBuffer!.append(this.userEmailEventNameData!.toString());
+    
+stringBuffer!.append(this.getEmailInfo()!.toString());
+    
+stringBuffer!.append("\nNumber of Attempts: ");
+    
+stringBuffer!.appendint(this.getAttempts());
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

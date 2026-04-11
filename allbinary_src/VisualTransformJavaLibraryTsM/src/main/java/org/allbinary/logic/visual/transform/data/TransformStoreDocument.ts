@@ -63,25 +63,34 @@ var weblisketSession = weblisketSession
     var storeName: string = weblisketSession!.getStoreName()!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Using Session StoreName: " +storeName, this, this.commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put("Using Session StoreName: " +storeName, this, this.commonStrings!.CONSTRUCTOR);
+    
 
                                     }
                                 
-this.getBaseNode()!.appendChild(StoreFrontViewFactory.getInstance(storeName)!.toXmlNode(this.getDoc()))
-this.getBaseNode()!.appendChild(RequestParams(pageContext!.getRequest() as HttpServletRequest).
-                            toXmlNode(this.getDoc()))
-} catch(e: Exception)
+this.getBaseNode()!.appendChild(StoreFrontViewFactory.getInstance(storeName)!.toXmlNode(this.getDoc()));
+    
+this.getBaseNode()!.appendChild(RequestParams(pageContext!.getRequest();
+
+                         as HttpServletRequest).
+                            toXmlNode(this.getDoc()));
+    
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, this.commonStrings!.CONSTRUCTOR, e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, this.commonStrings!.CONSTRUCTOR, e);
+    
 
                                     }
                                 
@@ -105,15 +114,20 @@ public constructor (searchRequest: SearchRequest)
                     
 
         try {
-            this.getBaseNode()!.appendChild(StoreFrontViewFactory.getInstance(searchRequest!.getStoreFront()!.getName())!.toXmlNode(this.getDoc()))
-this.getBaseNode()!.appendChild(searchRequest!.getParams()!.getParamsNode(this.getDoc()))
-} catch(e: Exception)
+            this.getBaseNode()!.appendChild(StoreFrontViewFactory.getInstance(searchRequest!.getStoreFront()!.getName())!.toXmlNode(this.getDoc()));
+    
+this.getBaseNode()!.appendChild(searchRequest!.getParams()!.getParamsNode(this.getDoc()));
+    
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, this.commonStrings!.CONSTRUCTOR, e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, this.commonStrings!.CONSTRUCTOR, e);
+    
 
                                     }
                                 

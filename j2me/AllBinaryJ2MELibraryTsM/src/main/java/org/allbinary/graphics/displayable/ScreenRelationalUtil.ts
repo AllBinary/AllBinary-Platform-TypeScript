@@ -34,6 +34,8 @@ export class ScreenRelationalUtil
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getScale(image.getWidth(), image.getHeight());
+
+                        ;
     
 }
 
@@ -46,6 +48,8 @@ export class ScreenRelationalUtil
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getScale(aWidth, aHeight, 20);
+
+                        ;
     
 }
 
@@ -58,32 +62,38 @@ export class ScreenRelationalUtil
     var displayInfoSingleton: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
         
         
+;
+    
 
-
-    var last: IntArray = displayInfoSingleton!.getLast()!;
+    var last: number[] = displayInfoSingleton!.getLast()!;
         
         
-
+;
+    
 
     var width: number = last[displayInfoSingleton!.WIDTH]!.toFloat();
         
         
-
+;
+    
 
     var height: number = last[displayInfoSingleton!.HEIGHT]!.toFloat();
         
         
-
+;
+    
 
     var largestSize: number = width;
         
         
-
+;
+    
 
                         if(largestSize < height)
                         
                                     {
-                                    largestSize= height
+                                    largestSize= height;
+    
 
                                     }
                                 
@@ -91,7 +101,8 @@ export class ScreenRelationalUtil
     var scale: number = (largestSize) /aWidth;
         
         
-
+;
+    
 
 
 

@@ -106,35 +106,46 @@ public constructor (transformInfoInterface: TransformInfoInterface){
     var httpTransformInfoInterface: TransformInfoHttpInterface = transformInfoInterface as TransformInfoHttpInterface;
         
         
-
+;
+    
 
     var weblisketSession: WeblisketSession = new WeblisketSession(httpTransformInfoInterface!.getPropertiesHashMap(), httpTransformInfoInterface!.getPageContext());
         
         
-
+;
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(URLGLOBALS.getWebappPath())
-stringBuffer!.append(weblisketSession!.getStoreName())
-stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR)
+;
+    
+stringBuffer!.append(URLGLOBALS.getWebappPath());
+    
+stringBuffer!.append(weblisketSession!.getStoreName());
+    
+stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
+    
 
     var abPath: AbPath = new AbPath(stringBuffer!.toString());
         
         
+;
+    
 
+    var fileName: string = httpTransformInfoInterface!.getPropertiesHashMap()!.get(InputOutputTypeData.getInstance()!.FILE);
 
-    var fileName: string = httpTransformInfoInterface!.getPropertiesHashMap()!.get(InputOutputTypeData.getInstance()!.FILE) as String;
+                         as String;
         
         
-
+;
+    
 
     var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
         
         
-
+;
+    
 
                         if(stringValidationUtil!.isEmpty(fileName))
                         
@@ -143,22 +154,30 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR)
     var transformInfoHttpStoreInterface: TransformInfoHttpStoreInterface = transformInfoInterface as TransformInfoHttpStoreInterface;
         
         
+;
+    
+fileName= transformInfoInterface!.getName()!.substring(transformInfoHttpStoreInterface!.getStoreName()!.length() +1);
+    
 
-fileName= transformInfoInterface!.getName()!.substring(transformInfoHttpStoreInterface!.getStoreName()!.length() +1)
-
-    var outputMappingHashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var outputMappingHashMap: HashMap<any, any> = new HashMap<any, any>();
         
         
-
-outputMappingHashMap!.put(TransformInfosData.getInstance()!.PREVIEW, "Preview")
-outputMappingHashMap!.put(TransformInfosData.getInstance()!.SMALL_PREVIEW, "SmallPreview")
-outputMappingHashMap!.put(CommonSeps.getInstance()!.SPACE, StringUtil.getInstance()!.EMPTY_STRING)
+;
+    
+outputMappingHashMap!.put(TransformInfosData.getInstance()!.PREVIEW, "Preview");
+    
+outputMappingHashMap!.put(TransformInfosData.getInstance()!.SMALL_PREVIEW, "SmallPreview");
+    
+outputMappingHashMap!.put(CommonSeps.getInstance()!.SPACE, StringUtil.getInstance()!.EMPTY_STRING);
+    
 
     var replace: Replace = new Replace(outputMappingHashMap);
         
         
-
-fileName= replace.all(fileName)
+;
+    
+fileName= replace.all(fileName);
+    
 
                                     }
                                 
@@ -174,19 +193,24 @@ fileName= replace.all(fileName)
                                     }
                                 
 
-    var tempOutput: string = httpTransformInfoInterface!.getPropertiesHashMap()!.get(InputOutputTypeData.getInstance()!.NAME) as String;
-        
-        
+    var tempOutput: string = httpTransformInfoInterface!.getPropertiesHashMap()!.get(InputOutputTypeData.getInstance()!.NAME);
 
+                         as String;
+        
+        
+;
+    
 
                         if(stringValidationUtil!.isEmpty(tempOutput))
                         
                                     {
-                                    tempOutput= InputOutputTypeData.getInstance()!.DEFAULT
+                                    tempOutput= InputOutputTypeData.getInstance()!.DEFAULT;
+    
 
                                     }
                                 
-this.output= tempOutput
+this.output= tempOutput;
+    
 
                         if(stringValidationUtil!.isEmpty(this.output))
                         
@@ -198,18 +222,26 @@ this.output= tempOutput
 
                                     }
                                 
-stringBuffer= StringMaker()
-stringBuffer!.append(fileName)
-stringBuffer!.append(AbPathData.getInstance()!.EXTENSION_SEP)
-stringBuffer!.append(this.output)
-abPath= AbPath(abPath!.toString(), stringBuffer!.toString())
-this.fileAbPath= abPath
-this.file= AbFile(this.fileAbPath)
+stringBuffer= StringMaker();
+    
+stringBuffer!.append(fileName);
+    
+stringBuffer!.append(AbPathData.getInstance()!.EXTENSION_SEP);
+    
+stringBuffer!.append(this.output);
+    
+abPath= AbPath(abPath!.toString(), stringBuffer!.toString());
+    
+this.fileAbPath= abPath;
+    
+this.file= AbFile(this.fileAbPath);
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("File: " +this.fileAbPath!.toString(), this, this.commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put("File: " +this.fileAbPath!.toString(), this, this.commonStrings!.CONSTRUCTOR);
+    
 
                                     }
                                 
@@ -224,15 +256,19 @@ var input = input
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Processing", this, commonStrings!.PROCESS)
+                                    logUtil!.put("Processing", this, commonStrings!.PROCESS);
+    
 
                                     }
                                 
 
-                        if(!this.file.exists())
+                        if(!this.file.exists();
+
+                        )
                         
                                     {
-                                    this.file.createNewFile()
+                                    this.file.createNewFile();
+    
 
                                     }
                                 
@@ -244,8 +280,10 @@ var input = input
     var inputStream: InputStream = new ByteArrayInputStream(input.encodeToByteArray());
         
         
-
-FileUtil.getInstance()!.write(inputStream, this.file)
+;
+    
+FileUtil.getInstance()!.write(inputStream, this.file);
+    
 
                                     }
                                 
@@ -261,7 +299,8 @@ FileUtil.getInstance()!.write(inputStream, this.file)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Processed", this, commonStrings!.PROCESS)
+                                    logUtil!.put("Processed", this, commonStrings!.PROCESS);
+    
 
                                     }
                                 

@@ -60,7 +60,8 @@ public constructor (itemInterface: ItemInterface){
 
             super();
             var itemInterface = itemInterface
-this.itemInterface= itemInterface
+this.itemInterface= itemInterface;
+    
 }
 
 
@@ -86,11 +87,14 @@ this.itemInterface= itemInterface
     var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
         
         
-
+;
+    
 
                         if(this.itemInterface!.getId() != 
                                     null
-                                 && !stringValidationUtil!.isNumber(this.itemInterface!.getId()))
+                                 && !stringValidationUtil!.isNumber(this.itemInterface!.getId());
+
+                        )
                         
                                     {
                                     
@@ -120,7 +124,9 @@ this.itemInterface= itemInterface
 
                         if(this.itemInterface!.getNumber() != 
                                     null
-                                 && !stringValidationUtil!.isNumber(this.itemInterface!.getNumber()))
+                                 && !stringValidationUtil!.isNumber(this.itemInterface!.getNumber());
+
+                        )
                         
                                     {
                                     
@@ -150,7 +156,9 @@ this.itemInterface= itemInterface
 
                         if(this.itemInterface!.getInBaskets() != 
                                     null
-                                 && !stringValidationUtil!.isNumber(this.itemInterface!.getInBaskets()))
+                                 && !stringValidationUtil!.isNumber(this.itemInterface!.getInBaskets());
+
+                        )
                         
                                     {
                                     
@@ -180,7 +188,9 @@ this.itemInterface= itemInterface
 
                         if(this.itemInterface!.getWeight() != 
                                     null
-                                 && !stringValidationUtil!.isNumber(this.itemInterface!.getWeight()))
+                                 && !stringValidationUtil!.isNumber(this.itemInterface!.getWeight());
+
+                        )
                         
                                     {
                                     
@@ -300,7 +310,9 @@ this.itemInterface= itemInterface
 
                         if(this.itemInterface!.getPrice() == 
                                     null
-                                 || !this.itemInterface!.getPrice()!.isValid())
+                                 || !this.itemInterface!.getPrice()!.isValid();
+
+                        )
                         
                                     {
                                     
@@ -408,13 +420,16 @@ this.itemInterface= itemInterface
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return Boolean.TRUE;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put("Failed to validate form", this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put("Failed to validate form", this, commonStrings!.IS_VALID, e);
+    
 
                                     }
                                 
@@ -436,14 +451,16 @@ this.itemInterface= itemInterface
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
                         if(this.itemInterface!.getId() == 
                                     null
                                  || this.itemInterface!.getId()!.length() < 1 || this.itemInterface!.getId()!.length() > AbSqlData.MAXNUM)
                         
                                     {
-                                    stringBuffer!.append("Id is invalid. Must be number < " +AbSqlData.MAXNUM +" and > 0 digits.<br />")
+                                    stringBuffer!.append("Id is invalid. Must be number < " +AbSqlData.MAXNUM +" and > 0 digits.<br />");
+    
 
                                     }
                                 
@@ -451,14 +468,18 @@ this.itemInterface= itemInterface
     var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
         
         
-
+;
+    
 
                         if(this.itemInterface!.getId() != 
                                     null
-                                 && !stringValidationUtil!.isNumber(this.itemInterface!.getId()))
+                                 && !stringValidationUtil!.isNumber(this.itemInterface!.getId());
+
+                        )
                         
                                     {
-                                    stringBuffer!.append("Id is invalid. Must be > 0.<br />")
+                                    stringBuffer!.append("Id is invalid. Must be > 0.<br />");
+    
 
                                     }
                                 
@@ -468,17 +489,21 @@ this.itemInterface= itemInterface
                                  || this.itemInterface!.getNumber()!.length() < 1 || this.itemInterface!.getNumber()!.length() > AbSqlData.MAXNUM)
                         
                                     {
-                                    stringBuffer!.append("Number of items is invalid. Must be number < " +AbSqlData.MAXNUM +" and > 0 digits.<br />")
+                                    stringBuffer!.append("Number of items is invalid. Must be number < " +AbSqlData.MAXNUM +" and > 0 digits.<br />");
+    
 
                                     }
                                 
 
                         if(this.itemInterface!.getNumber() != 
                                     null
-                                 && !stringValidationUtil!.isNumber(this.itemInterface!.getNumber()))
+                                 && !stringValidationUtil!.isNumber(this.itemInterface!.getNumber());
+
+                        )
                         
                                     {
-                                    stringBuffer!.append("Number of items value is not a valid number.<br />")
+                                    stringBuffer!.append("Number of items value is not a valid number.<br />");
+    
 
                                     }
                                 
@@ -488,17 +513,21 @@ this.itemInterface= itemInterface
                                  || this.itemInterface!.getInBaskets()!.length() < 1 || this.itemInterface!.getInBaskets()!.length() > AbSqlData.MAXNUM)
                         
                                     {
-                                    stringBuffer!.append("Number in baskets is invalid. Must be < " +AbSqlData.MAXNUM +" and > 0 digits.<br />")
+                                    stringBuffer!.append("Number in baskets is invalid. Must be < " +AbSqlData.MAXNUM +" and > 0 digits.<br />");
+    
 
                                     }
                                 
 
                         if(this.itemInterface!.getInBaskets() != 
                                     null
-                                 && !stringValidationUtil!.isNumber(this.itemInterface!.getInBaskets()))
+                                 && !stringValidationUtil!.isNumber(this.itemInterface!.getInBaskets());
+
+                        )
                         
                                     {
-                                    stringBuffer!.append("In Baskets value is not a valid number.<br />")
+                                    stringBuffer!.append("In Baskets value is not a valid number.<br />");
+    
 
                                     }
                                 
@@ -508,17 +537,21 @@ this.itemInterface= itemInterface
                                  || this.itemInterface!.getWeight()!.length() < 1 || this.itemInterface!.getWeight()!.length() > MAXWEIGHT)
                         
                                     {
-                                    stringBuffer!.append("Weight value is invalid. Must be < " +MAXWEIGHT +" and > 0 digits.<br />")
+                                    stringBuffer!.append("Weight value is invalid. Must be < " +MAXWEIGHT +" and > 0 digits.<br />");
+    
 
                                     }
                                 
 
                         if(this.itemInterface!.getWeight() != 
                                     null
-                                 && !stringValidationUtil!.isNumber(this.itemInterface!.getWeight()))
+                                 && !stringValidationUtil!.isNumber(this.itemInterface!.getWeight());
+
+                        )
                         
                                     {
-                                    stringBuffer!.append("Weight value is not a valid number.<br />")
+                                    stringBuffer!.append("Weight value is not a valid number.<br />");
+    
 
                                     }
                                 
@@ -528,7 +561,8 @@ this.itemInterface= itemInterface
                                  || this.itemInterface!.getEnabled()!.length() < 1 || this.itemInterface!.getEnabled()!.length() > AbSqlData.MAXSTRING)
                         
                                     {
-                                    stringBuffer!.append("For Sale value is invalid. Must be < " +AbSqlData.MAXSTRING +" and > 0 characters long.<br />")
+                                    stringBuffer!.append("For Sale value is invalid. Must be < " +AbSqlData.MAXSTRING +" and > 0 characters long.<br />");
+    
 
                                     }
                                 
@@ -538,7 +572,8 @@ this.itemInterface= itemInterface
                                  || this.itemInterface!.getNewOrUsed()!.length() < 1 || this.itemInterface!.getNewOrUsed()!.length() > AbSqlData.MAXSTRING)
                         
                                     {
-                                    stringBuffer!.append("New Or Used value is invalid. Must be < " +AbSqlData.MAXSTRING +" and > 0 characters long.<br />")
+                                    stringBuffer!.append("New Or Used value is invalid. Must be < " +AbSqlData.MAXSTRING +" and > 0 characters long.<br />");
+    
 
                                     }
                                 
@@ -548,7 +583,8 @@ this.itemInterface= itemInterface
                                  || this.itemInterface!.getSummary()!.length() < 1 || this.itemInterface!.getSummary()!.length() > AbSqlData.MAXSTRING)
                         
                                     {
-                                    stringBuffer!.append("Summary value is invalid. Must be < " +AbSqlData.MAXSTRING +" and > 0 characters long.<br />")
+                                    stringBuffer!.append("Summary value is invalid. Must be < " +AbSqlData.MAXSTRING +" and > 0 characters long.<br />");
+    
 
                                     }
                                 
@@ -558,7 +594,8 @@ this.itemInterface= itemInterface
                                  || this.itemInterface!.getDescription()!.length() < 1 || this.itemInterface!.getDescription()!.length() > AbSqlData.MAXBLOB)
                         
                                     {
-                                    stringBuffer!.append("Description value is invalid. Must be < " +AbSqlData.MAXBLOB +" and > 0 characters long.<br />")
+                                    stringBuffer!.append("Description value is invalid. Must be < " +AbSqlData.MAXBLOB +" and > 0 characters long.<br />");
+    
 
                                     }
                                 
@@ -568,7 +605,8 @@ this.itemInterface= itemInterface
                                  || this.itemInterface!.getKeywords()!.length() < 1 || this.itemInterface!.getKeywords()!.length() > AbSqlData.MAXSTRING)
                         
                                     {
-                                    stringBuffer!.append("Keywords value is invalid. Must be < " +AbSqlData.MAXSTRING +" and > 0 characters long.<br />")
+                                    stringBuffer!.append("Keywords value is invalid. Must be < " +AbSqlData.MAXSTRING +" and > 0 characters long.<br />");
+    
 
                                     }
                                 
@@ -578,7 +616,8 @@ this.itemInterface= itemInterface
                                  || this.itemInterface!.getCategory()!.length() < 1 || this.itemInterface!.getCategory()!.length() > AbSqlData.MAXSTRING)
                         
                                     {
-                                    stringBuffer!.append("Category value is invalid. Must be < " +AbSqlData.MAXSTRING +" and > 0 characters long.<br />")
+                                    stringBuffer!.append("Category value is invalid. Must be < " +AbSqlData.MAXSTRING +" and > 0 characters long.<br />");
+    
 
                                     }
                                 
@@ -588,17 +627,21 @@ this.itemInterface= itemInterface
                                  || this.itemInterface!.getType()!.length() < 1 || this.itemInterface!.getType()!.length() > AbSqlData.MAXSTRING)
                         
                                     {
-                                    stringBuffer!.append("Type value is invalid. Must be < " +AbSqlData.MAXSTRING +" and > 0 characters long.<br />")
+                                    stringBuffer!.append("Type value is invalid. Must be < " +AbSqlData.MAXSTRING +" and > 0 characters long.<br />");
+    
 
                                     }
                                 
 
                         if(this.itemInterface!.getPrice() == 
                                     null
-                                 || !this.itemInterface!.getPrice()!.isValid())
+                                 || !this.itemInterface!.getPrice()!.isValid();
+
+                        )
                         
                                     {
-                                    stringBuffer!.append("Price value is invalid. Must be < " +MAXPRICE +" and > 0 in length.<br />")
+                                    stringBuffer!.append("Price value is invalid. Must be < " +MAXPRICE +" and > 0 in length.<br />");
+    
 
                                     }
                                 
@@ -608,7 +651,8 @@ this.itemInterface= itemInterface
                                  || this.itemInterface!.getCustoms()!.length() < 1 || this.itemInterface!.getCustoms()!.length() > AbSqlData.MAXNUM)
                         
                                     {
-                                    stringBuffer!.append("Custom items value is invalid. Must be number < " +AbSqlData.MAXNUM +" and > 0 digits.<br />")
+                                    stringBuffer!.append("Custom items value is invalid. Must be number < " +AbSqlData.MAXNUM +" and > 0 digits.<br />");
+    
 
                                     }
                                 
@@ -618,7 +662,8 @@ this.itemInterface= itemInterface
                                  || this.itemInterface!.getDownloads()!.length() < 1 || this.itemInterface!.getDownloads()!.length() > AbSqlData.MAXNUM)
                         
                                     {
-                                    stringBuffer!.append("Downloadable item value is invalid. Must be number < " +AbSqlData.MAXNUM +" and > 0 digits.<br />")
+                                    stringBuffer!.append("Downloadable item value is invalid. Must be number < " +AbSqlData.MAXNUM +" and > 0 digits.<br />");
+    
 
                                     }
                                 
@@ -628,7 +673,8 @@ this.itemInterface= itemInterface
                                  || this.itemInterface!.getGroups()!.length() < 1 || this.itemInterface!.getGroups()!.length() > AbSqlData.MAXNUM)
                         
                                     {
-                                    stringBuffer!.append("Group item value is invalid. Must be number < " +AbSqlData.MAXNUM +" and > 0 digits.<br />")
+                                    stringBuffer!.append("Group item value is invalid. Must be number < " +AbSqlData.MAXNUM +" and > 0 digits.<br />");
+    
 
                                     }
                                 
@@ -638,7 +684,8 @@ this.itemInterface= itemInterface
                                  || this.itemInterface!.getOptions()!.length() < 1 || this.itemInterface!.getOptions()!.length() > AbSqlData.MAXNUM)
                         
                                     {
-                                    stringBuffer!.append("Option item value is invalid. Must be number < " +AbSqlData.MAXNUM +" and > 0 digits.<br />")
+                                    stringBuffer!.append("Option item value is invalid. Must be number < " +AbSqlData.MAXNUM +" and > 0 digits.<br />");
+    
 
                                     }
                                 
@@ -648,7 +695,8 @@ this.itemInterface= itemInterface
                                  || this.itemInterface!.getPermissions()!.length() < 1 || this.itemInterface!.getPermissions()!.length() > AbSqlData.MAXNUM)
                         
                                     {
-                                    stringBuffer!.append("Permission item value is invalid. Must be number < " +AbSqlData.MAXNUM +" and > 0 digits.<br />")
+                                    stringBuffer!.append("Permission item value is invalid. Must be number < " +AbSqlData.MAXNUM +" and > 0 digits.<br />");
+    
 
                                     }
                                 
@@ -658,7 +706,8 @@ this.itemInterface= itemInterface
                                  || this.itemInterface!.getSpecials()!.length() < 1 || this.itemInterface!.getSpecials()!.length() > AbSqlData.MAXNUM)
                         
                                     {
-                                    stringBuffer!.append("Special item value is invalid. Must be number < " +AbSqlData.MAXNUM +" and > 0 digits.<br />")
+                                    stringBuffer!.append("Special item value is invalid. Must be number < " +AbSqlData.MAXNUM +" and > 0 digits.<br />");
+    
 
                                     }
                                 
@@ -667,14 +716,19 @@ this.itemInterface= itemInterface
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e)
+                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e);
+    
 
                                     }
                                 

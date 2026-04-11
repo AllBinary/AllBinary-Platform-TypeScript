@@ -73,7 +73,7 @@ var b = b
 
                 //@Throws(IOException::class)
             
-    public write(b: ByteArray, off: number, len: number){
+    public write(b: number[], off: number, len: number){
 var b = b
 var off = off
 var len = len
@@ -107,24 +107,31 @@ var len = len
     var filePath: string = LicenseInitInfoUtil.getInstance()!.INITFILENAME;
         
         
-
-LicenseInitInfoUtil.getInstance()!.setFilePath(StringUtil.getInstance()!.EMPTY_STRING)
+;
+    
+LicenseInitInfoUtil.getInstance()!.setFilePath(StringUtil.getInstance()!.EMPTY_STRING);
+    
 
                         if(FileFactory.getInstance()!.isFile(filePath))
                         
                                     {
-                                    logUtil!.put("Using Existing License File", this, commonStrings!.INIT)
+                                    logUtil!.put("Using Existing License File", this, commonStrings!.INIT);
+    
 
                                     }
                                 
                         else {
-                            write()
+                            write();
+    
 
                         }
                             
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e);
+    
 }
 
 }
@@ -135,43 +142,53 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e)
     var fileOutputStream: OutputStream = NULL_OUTPUT_STREAM;
         
         
-
+;
+    
 
         try {
             
     var resourceUtil: ResourceUtil = ResourceUtil.getInstance()!;
         
         
-
+;
+    
 
     var filePath: string = LicenseInitInfoUtil.getInstance()!.INITFILENAME;
         
         
-
+;
+    
 
     var inputStream: InputStream = resourceUtil!.getResourceAsStream(filePath)!;
         
         
-
-logUtil!.put("Writing Default License File", this, commonStrings!.INIT)
+;
+    
+logUtil!.put("Writing Default License File", this, commonStrings!.INIT);
+    
 
     var fileStreamFactory: FileStreamFactory = FileStreamFactory.getInstance()!;
         
         
-
-fileOutputStream= fileStreamFactory!.getFileOutputStreamInstance(StringUtil.getInstance()!.EMPTY_STRING, filePath)
+;
+    
+fileOutputStream= fileStreamFactory!.getFileOutputStreamInstance(StringUtil.getInstance()!.EMPTY_STRING, filePath);
+    
 
     var b: number= 0
-
+;
+    
 
     var index: number = 0;
         
         
-
+;
+    
 
         while(true)
         {
-b= inputStream!.read()
+b= inputStream!.read();
+    
 
                         if(b ==  -1)
                         
@@ -182,19 +199,27 @@ b= inputStream!.read()
 
                                     }
                                 
-fileOutputStream!.write(b)
-index++
+fileOutputStream!.write(b);
+    
+index++;
+    
 }
 
-logUtil!.put("Wrote Bytes: " +index, this, commonStrings!.INIT)
-fileOutputStream!.flush()
-} catch(e: Exception)
+logUtil!.put("Wrote Bytes: " +index, this, commonStrings!.INIT);
+    
+fileOutputStream!.flush();
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e);
+    
 }
 
          finally {
-            StreamUtil.getInstance()!.close(fileOutputStream)
+            StreamUtil.getInstance()!.close(fileOutputStream);
+    
 
          }
         

@@ -89,7 +89,8 @@ public constructor (animationInterface: Animation){
 
             super();
                 //var animationInterface = animationInterface
-this.setAnimationInterface(animationInterface)
+this.setAnimationInterface(animationInterface);
+    
 }
 
 public constructor (animationInterface: Animation, sourceLayerInterface: AllBinaryLayer, weaponProperties: WeaponProperties, scoreableInterface: ScoreableInterface, relativeRelationship: RelativeRelationship){
@@ -100,8 +101,10 @@ public constructor (animationInterface: Animation, sourceLayerInterface: AllBina
     //var weaponProperties = weaponProperties
     //var scoreableInterface = scoreableInterface
     //var relativeRelationship = relativeRelationship
-this.init(sourceLayerInterface, weaponProperties, scoreableInterface, relativeRelationship)
-this.setAnimationInterface(animationInterface)
+this.init(sourceLayerInterface, weaponProperties, scoreableInterface, relativeRelationship);
+    
+this.setAnimationInterface(animationInterface);
+    
 }
 
 
@@ -110,10 +113,14 @@ this.setAnimationInterface(animationInterface)
     //var weaponProperties = weaponProperties
     //var scoreableInterface = scoreableInterface
     //var relativeRelationship = relativeRelationship
-this.setOwnerLayerInterface(sourceLayerInterface)
-this.setWeaponProperties(weaponProperties)
-this.scoreableInterface= scoreableInterface
-this.relativeRelationship= relativeRelationship
+this.setOwnerLayerInterface(sourceLayerInterface);
+    
+this.setWeaponProperties(weaponProperties);
+    
+this.scoreableInterface= scoreableInterface;
+    
+this.relativeRelationship= relativeRelationship;
+    
 }
 
 
@@ -123,7 +130,8 @@ this.relativeRelationship= relativeRelationship
     //var allbinaryLayerManager = allbinaryLayerManager
     //var angle = angle
     //var otherAngle = otherAngle
-this.process(allbinaryLayerManager, angle, otherAngle, this.getWeaponProperties(), this.scoreableInterface)
+this.process(allbinaryLayerManager, angle, otherAngle, this.getWeaponProperties(), this.scoreableInterface);
+    
 }
 
 
@@ -154,7 +162,8 @@ this.process(allbinaryLayerManager, angle, otherAngle, this.getWeaponProperties(
 
     public setOwnerLayerInterface(ownerLayerInterface: AllBinaryLayer){
     //var ownerLayerInterface = ownerLayerInterface
-this.ownerLayerInterface= ownerLayerInterface
+this.ownerLayerInterface= ownerLayerInterface;
+    
 }
 
 
@@ -170,7 +179,8 @@ this.ownerLayerInterface= ownerLayerInterface
 
     public setAnimationInterface(animationInterface: Animation){
     //var animationInterface = animationInterface
-this.animationInterface= animationInterface
+this.animationInterface= animationInterface;
+    
 }
 
 
@@ -180,18 +190,22 @@ this.animationInterface= animationInterface
     var viewPosition: ViewPosition = this.getOwnerLayerInterface()!.getViewPosition()!;
         
         
-
+;
+    
 
     var viewX: number = viewPosition!.getX()!;
         
         
-
+;
+    
 
     var viewY: number = viewPosition!.getY()!;
         
         
-
-this.animationInterface!.paint(graphics, viewX, viewY)
+;
+    
+this.animationInterface!.paint(graphics, viewX, viewY);
+    
 }
 
 
@@ -212,7 +226,8 @@ this.animationInterface!.paint(graphics, viewX, viewY)
 
     public setWeaponProperties(weaponProperties: WeaponProperties){
     //var weaponProperties = weaponProperties
-this.weaponProperties= weaponProperties
+this.weaponProperties= weaponProperties;
+    
 }
 
 

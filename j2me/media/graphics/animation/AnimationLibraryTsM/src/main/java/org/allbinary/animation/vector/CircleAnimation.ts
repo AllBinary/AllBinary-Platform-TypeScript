@@ -50,9 +50,12 @@ public constructor (widthAndHeight: number, basicColor: BasicColor){
             super();
             var widthAndHeight = widthAndHeight
 var basicColor = basicColor
-this.width= widthAndHeight
-this.height= widthAndHeight
-this.setBasicColorP(basicColor)
+this.width= widthAndHeight;
+    
+this.height= widthAndHeight;
+    
+this.setBasicColorP(basicColor);
+    
 }
 
 public constructor (width: number, height: number, basicColor: BasicColor){
@@ -61,9 +64,12 @@ public constructor (width: number, height: number, basicColor: BasicColor){
             var width = width
 var height = height
 var basicColor = basicColor
-this.width= width
-this.height= height
-this.setBasicColorP(basicColor)
+this.width= width;
+    
+this.height= height;
+    
+this.setBasicColorP(basicColor);
+    
 }
 
 
@@ -75,8 +81,10 @@ this.setBasicColorP(basicColor)
 var graphics = graphics
 var x = x
 var y = y
-this.basicSetColorUtil!.setBasicColorP(graphics, this.getBasicColorP(), this.getColor())
-graphics.drawArc(x, y, width, height, 0, TOTAL_ANGLE)
+this.basicSetColorUtil!.setBasicColorP(graphics, this.getBasicColorP(), this.getColor());
+    
+graphics.drawArc(x, y, width, height, 0, TOTAL_ANGLE);
+    
 }
 
 

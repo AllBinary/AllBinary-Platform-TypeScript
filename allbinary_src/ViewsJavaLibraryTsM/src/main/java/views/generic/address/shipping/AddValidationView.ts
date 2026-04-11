@@ -53,7 +53,8 @@ public constructor (transformInfoInterface: TransformInfoInterface)
                 //@Throws(Error::class)
             
     public isValid(): Boolean{
-this.streetAddress= StreetAddress(this.getRequest())
+this.streetAddress= StreetAddress(this.getRequest());
+    
 
                         if(this.streetAddress!.isValid() == Boolean.FALSE)
                         
@@ -82,6 +83,8 @@ this.streetAddress= StreetAddress(this.getRequest())
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.streetAddress!.validationInfo();
+
+                        ;
     
 }
 

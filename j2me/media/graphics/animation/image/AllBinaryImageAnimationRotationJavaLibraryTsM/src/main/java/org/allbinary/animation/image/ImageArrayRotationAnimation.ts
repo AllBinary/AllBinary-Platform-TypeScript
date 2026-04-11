@@ -52,8 +52,10 @@ protected constructor (anyType: any = {}, animationBehavior: AnimationBehavior)
     var allBinaryImageRotationAnimationInfo: ImageArrayRotationAnimationInfo = anyType as ImageArrayRotationAnimationInfo;
         
         
-
-this.init(allBinaryImageRotationAnimationInfo!.getImageArray(), allBinaryImageRotationAnimationInfo!.getAngleInfoP(), allBinaryImageRotationAnimationInfo!.getTotalAngle())
+;
+    
+this.init(allBinaryImageRotationAnimationInfo!.getImageArray(), allBinaryImageRotationAnimationInfo!.getAngleInfoP(), allBinaryImageRotationAnimationInfo!.getTotalAngle());
+    
 }
 
 public constructor (imageArray: Image[], angleInfo: AngleInfo, totalAngle: number, animationBehavior: AnimationBehavior)                        
@@ -69,7 +71,8 @@ public constructor (imageArray: Image[], angleInfo: AngleInfo, totalAngle: numbe
 
                             //For kotlin this is before the body of the constructor.
                     
-this.init(imageArray, angleInfo, totalAngle)
+this.init(imageArray, angleInfo, totalAngle);
+    
 }
 
 public constructor (imageArray: Image[], animationBehavior: AnimationBehavior)                        
@@ -106,8 +109,10 @@ public constructor (imageArray: Image[], angleInfo: AngleInfo, animationBehavior
     //var imageArray = imageArray
     //var angleInfo = angleInfo
     //var totalAngle = totalAngle
-this.expectedTotalFrames= totalAngle /this.angleInfo!.getAngleIncrementInfo()!.getAngleIncrement()
-this.angleInfo!.adjustAngle(0)
+this.expectedTotalFrames= totalAngle /this.angleInfo!.getAngleIncrementInfo()!.getAngleIncrement();
+    
+this.angleInfo!.adjustAngle(0);
+    
 
                         if(expectedTotalFrames != this.getSize())
                         
@@ -124,8 +129,10 @@ this.angleInfo!.adjustAngle(0)
 
     public setImageArray(imageArray: Image[]){
     //var imageArray = imageArray
-super.setImageArray(imageArray)
-this.angleInfo!.adjustAngle(0)
+super.setImageArray(imageArray);
+    
+this.angleInfo!.adjustAngle(0);
+    
 }
 
 

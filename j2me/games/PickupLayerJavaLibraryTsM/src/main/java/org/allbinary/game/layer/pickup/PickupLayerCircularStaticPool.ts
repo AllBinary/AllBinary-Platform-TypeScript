@@ -52,12 +52,17 @@ var x = x
 var y = y
 var z = z
 
-    var pickupLayer: PickupLayer = this.getNextInstance() as PickupLayer;
-        
-        
+    var pickupLayer: PickupLayer = this.getNextInstance();
 
-pickupLayer!.init(x, y, z)
-pickupLayer!.init(pickedUpLayerInterfaceFactoryInterface, pickedUpLayerInterfaceFactoryInterface!.getAnimationInterface())
+                         as PickupLayer;
+        
+        
+;
+    
+pickupLayer!.init(x, y, z);
+    
+pickupLayer!.init(pickedUpLayerInterfaceFactoryInterface, pickedUpLayerInterfaceFactoryInterface!.getAnimationInterface());
+    
 
 
 

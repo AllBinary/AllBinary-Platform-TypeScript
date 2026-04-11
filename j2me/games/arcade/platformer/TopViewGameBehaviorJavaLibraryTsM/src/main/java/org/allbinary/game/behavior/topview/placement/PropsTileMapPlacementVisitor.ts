@@ -45,36 +45,43 @@ export class PropsTileMapPlacementVisitor extends TileMapPlacementVisitor {
         
         
 
-    public visit(lastMap: TiledMap, mapData: IntArray[]){
+    public visit(lastMap: TiledMap, mapData: number[][]){
     //var lastMap = lastMap
     //var mapData = mapData
 
     var layerIndex: number = 0;
         
         
+;
+    
 
+    var tileLayer: TileLayer = (lastMap!.getLayer(layerIndex);
 
-    var tileLayer: TileLayer = (lastMap!.getLayer(layerIndex) as TileLayer);
+                         as TileLayer);
         
         
+;
+    
 
-
-    var mapArray: IntArray[] = tileLayer!.getMapArray()!;
+    var mapArray: number[][] = tileLayer!.getMapArray()!;
         
         
-
+;
+    
 
     var size: number = mapData!.length
                 ;
         
         
-
+;
+    
 
     var size2: number = mapData[0]!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -103,7 +110,8 @@ index2 < size2; index2++)
                                     }
                                 
                         else {
-                            this.visit2(mapArray, mapData, index, index2)
+                            this.visit2(mapArray, mapData, index, index2);
+    
 
                         }
                             
@@ -119,12 +127,14 @@ index2 < size2; index2++)
     var randomInt: number = randomFactory!.getAbsoluteNextIntAllowZero(3)!;
         
         
-
+;
+    
 
                         if(randomInt == 0)
                         
                                     {
-                                    mapData[index]![index2]= 1
+                                    mapData[index]![index2]= 1;
+    
 
                                     }
                                 
@@ -132,7 +142,8 @@ index2 < size2; index2++)
                         if(randomInt == 1)
                         
                                     {
-                                    mapData[index]![index2]= 81
+                                    mapData[index]![index2]= 81;
+    
 
                                     }
                                 
@@ -140,7 +151,8 @@ index2 < size2; index2++)
                         if(randomInt == 2)
                         
                                     {
-                                    mapData[index]![index2]= 97
+                                    mapData[index]![index2]= 97;
+    
 
                                     }
                                 
@@ -155,12 +167,14 @@ index2 < size2; index2++)
     var randomInt: number = randomFactory!.getAbsoluteNextIntAllowZero(3)!;
         
         
-
+;
+    
 
                         if(randomInt == 0)
                         
                                     {
-                                    mapData[index]![index2]= 17
+                                    mapData[index]![index2]= 17;
+    
 
                                     }
                                 
@@ -168,7 +182,8 @@ index2 < size2; index2++)
                         if(randomInt == 1)
                         
                                     {
-                                    mapData[index]![index2]= 81
+                                    mapData[index]![index2]= 81;
+    
 
                                     }
                                 
@@ -176,7 +191,8 @@ index2 < size2; index2++)
                         if(randomInt == 2)
                         
                                     {
-                                    mapData[index]![index2]= 97
+                                    mapData[index]![index2]= 97;
+    
 
                                     }
                                 
@@ -198,12 +214,14 @@ index2 < size2; index2++)
     var randomInt: number = randomFactory!.getAbsoluteNextIntAllowZero(4)!;
         
         
-
+;
+    
 
                         if(randomInt == 0)
                         
                                     {
-                                    mapData[index]![index2]= 33
+                                    mapData[index]![index2]= 33;
+    
 
                                     }
                                 
@@ -211,7 +229,8 @@ index2 < size2; index2++)
                         if(randomInt == 1)
                         
                                     {
-                                    mapData[index]![index2]= 65
+                                    mapData[index]![index2]= 65;
+    
 
                                     }
                                 
@@ -219,7 +238,8 @@ index2 < size2; index2++)
                         if(randomInt == 2)
                         
                                     {
-                                    mapData[index]![index2]= 81
+                                    mapData[index]![index2]= 81;
+    
 
                                     }
                                 
@@ -227,7 +247,8 @@ index2 < size2; index2++)
                         if(randomInt == 3)
                         
                                     {
-                                    mapData[index]![index2]= 97
+                                    mapData[index]![index2]= 97;
+    
 
                                     }
                                 
@@ -244,7 +265,7 @@ index2 < size2; index2++)
 }
 
 
-    public visit2(mapArray: IntArray[], mapData: IntArray[], index: number, index2: number){
+    public visit2(mapArray: number[][], mapData: number[][], index: number, index2: number){
     //var mapArray = mapArray
     //var mapData = mapData
     //var index = index
@@ -253,22 +274,26 @@ index2 < size2; index2++)
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
+;
+    
 
     var countX: number = 0;
         
         
-
+;
+    
 
     var countY: number = 0;
         
         
-
+;
+    
 
     var index3: number = index -1;
         
         
-
+;
+    
 
 
 
@@ -279,7 +304,8 @@ index2 < size2; index2++)
         
 index4 > 0; index4--)
         {
-index3--
+index3--;
+    
 
                         if(index3 < 0 || index4 < 0)
                         
@@ -342,12 +368,14 @@ index6 < index2 -1; index6++)
     var x: number = index -(countX /2);
         
         
-
+;
+    
 
     var y: number = index2 -(countY /2);
         
         
-
+;
+    
 
                         if(x >= 0 && y >= 0 && x < mapData!.length && y < mapData[0]!.length)
                         
@@ -367,8 +395,10 @@ index6 < index2 -1; index6++)
 
                                     }
                                 
-countY++
-countX++
+countY++;
+    
+countX++;
+    
 }
 
 }

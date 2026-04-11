@@ -18,10 +18,13 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { HashMap } from "../../../../../../../../../../../../java/util/HashMap.js";
 
     
-import { Vector } from "../../../../../../../../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../../../../../../../../java/util/Vector.js";
 
     
 import { DomNodeInterface } from "../../../../../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js";
@@ -67,21 +70,24 @@ export class CssStyleValidation extends Validation
 public constructor (){
 
             super();
-            this.cssStyleElementVector= Vector()
+            this.cssStyleElementVector= Vector();
+    
 }
 
 public constructor (document: Document){
 
             super();
             var document = document
-this.cssStyleElementVector= StylesValidationFactory.getInstance()!.getInstance(document)
+this.cssStyleElementVector= StylesValidationFactory.getInstance()!.getInstance(document);
+    
 }
 
-public constructor (hashMap: HashMap<Any, Any>){
+public constructor (hashMap: HashMap<any, any>){
 
             super();
             var hashMap = hashMap
-this.cssStyleElementVector= StylesValidationFactory.getInstance(hashMap)
+this.cssStyleElementVector= StylesValidationFactory.getInstance(hashMap);
+    
 }
 
 
@@ -92,12 +98,14 @@ this.cssStyleElementVector= StylesValidationFactory.getInstance(hashMap)
     var isValid: Boolean = Boolean.TRUE;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.START, this, commonStrings!.IS_VALID)
+                                    logUtil!.put(this.commonStrings!.START, this, commonStrings!.IS_VALID);
+    
 
                                     }
                                 
@@ -105,7 +113,8 @@ this.cssStyleElementVector= StylesValidationFactory.getInstance(hashMap)
     var size: number = cssStyleElementVector!.length!;
         
         
-
+;
+    
 
 
 
@@ -117,15 +126,21 @@ this.cssStyleElementVector= StylesValidationFactory.getInstance(hashMap)
 i < size; i++)
         {
 
-    var styleValidationInterface: ValidationInterface = cssStyleElementVector!.get(i) as ValidationInterface;
+    var styleValidationInterface: ValidationInterface = cssStyleElementVector!.get(i);
+
+                         as ValidationInterface;
         
         
+;
+    
 
+                        if(!styleValidationInterface!.isValid();
 
-                        if(!styleValidationInterface!.isValid())
+                        )
                         
                                     {
-                                    isValid= Boolean.FALSE
+                                    isValid= Boolean.FALSE;
+    
 
                                     }
                                 
@@ -135,7 +150,8 @@ i < size; i++)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("End: " +isValid, this, commonStrings!.IS_VALID)
+                                    logUtil!.put("End: " +isValid, this, commonStrings!.IS_VALID);
+    
 
                                     }
                                 
@@ -145,13 +161,16 @@ i < size; i++)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return isValid;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put("Failed to validate form", this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put("Failed to validate form", this, commonStrings!.IS_VALID, e);
+    
 
                                     }
                                 
@@ -173,20 +192,26 @@ i < size; i++)
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e)
+                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e);
+    
 
                                     }
                                 
@@ -230,18 +255,22 @@ var document = document
     var node: Node = document.createElement(StylesData.getInstance()!.NAME)!;
         
         
-
+;
+    
 
     var styleNode: Node = document.createElement(StyleData.getInstance()!.NAME)!;
         
         
-
-node.appendChild(styleNode)
+;
+    
+node.appendChild(styleNode);
+    
 
     var size: number = cssStyleElementVector!.length!;
         
         
-
+;
+    
 
 
 
@@ -253,11 +282,15 @@ node.appendChild(styleNode)
 i < size; i++)
         {
 
-    var styleDomNodeInterface: DomNodeInterface = cssStyleElementVector!.get(i) as DomNodeInterface;
-        
-        
+    var styleDomNodeInterface: DomNodeInterface = cssStyleElementVector!.get(i);
 
-styleNode!.appendChild(styleDomNodeInterface!.toXmlNode(document))
+                         as DomNodeInterface;
+        
+        
+;
+    
+styleNode!.appendChild(styleDomNodeInterface!.toXmlNode(document));
+    
 }
 
 

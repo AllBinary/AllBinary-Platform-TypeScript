@@ -31,7 +31,8 @@ import { NullUtil } from "../../../../../org/allbinary/logic/NullUtil.js";
     //var specialMessage = specialMessage
     //var anyType = anyType
     //var functionName = functionName
-put(specialMessage, anyType, functionName, NullUtil.getInstance()!.NULL_OBJECT)
+putOE(specialMessage, anyType, functionName, NullUtil.getInstance()!.NULL_OBJECT);
+    
 }
 
 
@@ -39,7 +40,7 @@ put(specialMessage, anyType, functionName, NullUtil.getInstance()!.NULL_OBJECT)
         
         
 
-    /*actual*/ public static put(specialMessage: string, anyType: any = {}, functionName: string, exception: any = {}){
+    /*actual*/ public static putOE(specialMessage: string, anyType: any = {}, functionName: string, exception: any = {}){
     //var specialMessage = specialMessage
     //var anyType = anyType
     //var functionName = functionName
@@ -48,19 +49,22 @@ put(specialMessage, anyType, functionName, NullUtil.getInstance()!.NULL_OBJECT)
     var className: string = LABEL;
         
         
+;
+    
 
-
-    var actualClassName: string = anyType!::class.toString()!!;
+    var actualClassName: string = anyType!.constructor.name.toString()!!;
         
         
-
+;
+    
 
                         if(actualClassName != 
                                     null
                                 )
                         
                                     {
-                                    className= actualClassName
+                                    className= actualClassName;
+    
 
                                     }
                                 
@@ -68,20 +72,23 @@ put(specialMessage, anyType, functionName, NullUtil.getInstance()!.NULL_OBJECT)
     var message: string = LogFormatUtil.getInstance()!.get(className, functionName, specialMessage, exception)!;
         
         
-
-android.util.Log.i(LABEL, message)
+;
+    
+android.util.Log.i(LABEL, message);
+    
 }
 
 
-    /*actual*/ public static put(specialMessage: string, className: string, functionName: string){
+    /*actual*/ public static putS(specialMessage: string, className: string, functionName: string){
     //var specialMessage = specialMessage
     //var className = className
     //var functionName = functionName
-put(specialMessage, className, functionName, NullUtil.getInstance()!.NULL_OBJECT)
+putSE(specialMessage, className, functionName, NullUtil.getInstance()!.NULL_OBJECT);
+    
 }
 
 
-    /*actual*/ public static put(specialMessage: string, className: string, functionName: string, exception: any = {}){
+    /*actual*/ public static putSE(specialMessage: string, className: string, functionName: string, exception: any = {}){
     //var specialMessage = specialMessage
     //var className = className
     //var functionName = functionName
@@ -90,8 +97,10 @@ put(specialMessage, className, functionName, NullUtil.getInstance()!.NULL_OBJECT
     var message: string = LogFormatUtil.getInstance()!.get(className, functionName, specialMessage, exception)!;
         
         
-
-android.util.Log.i(className, message)
+;
+    
+android.util.Log.i(className, message);
+    
 }
 
 public constructor (){

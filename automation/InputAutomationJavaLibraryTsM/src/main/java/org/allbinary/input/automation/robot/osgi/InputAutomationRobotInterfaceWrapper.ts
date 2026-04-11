@@ -32,7 +32,8 @@ public constructor (inputRobotInterface: InputRobotInterface){
 
             super();
             var inputRobotInterface = inputRobotInterface
-this.setInputRobotInterface(inputRobotInterface)
+this.setInputRobotInterface(inputRobotInterface);
+    
 }
 
 
@@ -48,7 +49,8 @@ this.setInputRobotInterface(inputRobotInterface)
 
     public setInputRobotInterface(inputRobotInterface: InputRobotInterface){
 var inputRobotInterface = inputRobotInterface
-this.inputRobotInterface= inputRobotInterface
+this.inputRobotInterface= inputRobotInterface;
+    
 }
 
 

@@ -27,13 +27,14 @@ export class IntArrayUtil
          {
         
 
-    public static toString(array: IntArray): string{
+    public static toString(array: number[]): string{
 var array = array
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
 
 
@@ -44,12 +45,14 @@ var array = array
         
 index < array.length; index++)
         {
-stringBuffer!.appendint(array[index]!)
+stringBuffer!.appendint(array[index]!);
+    
 
                         if(index < array.length)
                         
                                     {
-                                    stringBuffer!.append(", ")
+                                    stringBuffer!.append(", ");
+    
 
                                     }
                                 
@@ -60,17 +63,20 @@ stringBuffer!.appendint(array[index]!)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 
 
-    public static toString(array: IntArray[]): string{
+    public static toString(array: number[][]): string{
 var array = array
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
 
 
@@ -81,7 +87,8 @@ var array = array
         
 index < array.length; index++)
         {
-stringBuffer!.append("{")
+stringBuffer!.append("{");
+    
 
 
 
@@ -92,23 +99,27 @@ stringBuffer!.append("{")
         
 index2 < array[index]!.length; index2++)
         {
-stringBuffer!.appendint(array[index]![index2]!)
+stringBuffer!.appendint(array[index]![index2]!);
+    
 
                         if(index2 < array[index]!.length -1)
                         
                                     {
-                                    stringBuffer!.append(", ")
+                                    stringBuffer!.append(", ");
+    
 
                                     }
                                 
 }
 
-stringBuffer!.append("}")
+stringBuffer!.append("}");
+    
 
                         if(index < array.length -1)
                         
                                     {
-                                    stringBuffer!.append(", \n")
+                                    stringBuffer!.append(", \n");
+    
 
                                     }
                                 
@@ -119,17 +130,20 @@ stringBuffer!.append("}")
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 
 
-    public static toString(array: IntArray[][]): string{
+    public static toString(array: number[][][]): string{
 var array = array
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
 
 
@@ -140,7 +154,8 @@ var array = array
         
 index < array.length; index++)
         {
-stringBuffer!.append("{")
+stringBuffer!.append("{");
+    
 
 
 
@@ -151,7 +166,8 @@ stringBuffer!.append("{")
         
 index2 < array[index]!.length; index2++)
         {
-stringBuffer!.append("{")
+stringBuffer!.append("{");
+    
 
 
 
@@ -162,34 +178,40 @@ stringBuffer!.append("{")
         
 index3 < array[index]![index2]!.length; index3++)
         {
-stringBuffer!.appendint(array[index]![index2]![index3]!)
+stringBuffer!.appendint(array[index]![index2]![index3]!);
+    
 
                         if(index3 < array[index]![index2]!.length -1)
                         
                                     {
-                                    stringBuffer!.append(", ")
+                                    stringBuffer!.append(", ");
+    
 
                                     }
                                 
 }
 
-stringBuffer!.append("}")
+stringBuffer!.append("}");
+    
 
                         if(index2 < array[index]!.length -1)
                         
                                     {
-                                    stringBuffer!.append(", ")
+                                    stringBuffer!.append(", ");
+    
 
                                     }
                                 
 }
 
-stringBuffer!.append("}")
+stringBuffer!.append("}");
+    
 
                         if(index < array.length -1)
                         
                                     {
-                                    stringBuffer!.append(", \n")
+                                    stringBuffer!.append(", \n");
+    
 
                                     }
                                 
@@ -200,6 +222,8 @@ stringBuffer!.append("}")
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

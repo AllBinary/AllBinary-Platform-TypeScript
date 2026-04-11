@@ -44,7 +44,8 @@ export class AllBinarySensor
 
     public static setMax(max: number){
 var max = max
-AllBinarySensor.max= max
+AllBinarySensor.max= max;
+    
 }
 
 
@@ -87,17 +88,21 @@ protected constructor (){
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return AllBinarySensor.getMax();
+
+                        ;
     
 }
 
 
     public shutdown(){
-logUtil!.put(commonStrings!.START, this, "shutdown")
+logUtil!.put(commonStrings!.START, this, "shutdown");
+    
 }
 
 
     public onSensorChange(){
-ForcedLogUtil.log(commonStrings!.NOT_IMPLEMENTED, this)
+ForcedLogUtil.log(commonStrings!.NOT_IMPLEMENTED, this);
+    
 }
 
 

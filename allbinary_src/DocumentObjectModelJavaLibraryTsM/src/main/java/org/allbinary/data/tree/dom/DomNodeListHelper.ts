@@ -18,7 +18,10 @@
 
 
 
-import { Vector } from "../../../../../java/util/Vector.js";
+            import Vector from "@ohos.util.Vector";
+        
+
+//import { Vector } from "../../../../../java/util/Vector.js";
 
     
 import { NodeList } from "../../../../../org/w3c/dom/NodeList.js";
@@ -36,12 +39,14 @@ var nodeList = nodeList
     var vector: Vector = new Vector();
         
         
-
+;
+    
 
     var size: number = nodeList!.getLength()!;
         
         
-
+;
+    
 
 
 
@@ -52,7 +57,8 @@ var nodeList = nodeList
         
 index < size; index++)
         {
-vector.add(DomNodeHelper.getTextNodeValue(nodeList!.item(index)))
+vector.add(DomNodeHelper.getTextNodeValue(nodeList!.item(index)));
+    
 }
 
 

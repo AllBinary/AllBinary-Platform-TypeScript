@@ -59,8 +59,10 @@ var eventListenerInterface = eventListenerInterface
     var gameFeatureListenerInterface: GameFeatureListenerInterface = (eventListenerInterface as GameFeatureListenerInterface);
         
         
-
-gameFeatureListenerInterface!.onGameFeatureChange(eventObject as GameFeatureEvent)
+;
+    
+gameFeatureListenerInterface!.onGameFeatureChange(eventObject as GameFeatureEvent);
+    
 }
 
 

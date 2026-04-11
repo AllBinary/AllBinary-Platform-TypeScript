@@ -82,31 +82,39 @@ var transformInfoInterface = transformInfoInterface
     var paymentTransactionInterface: PaymentTransactionInterface = PaymentTransactionInterfaceRequestFactory.getInstance()!.getInstance(transformInfoInterface)!;
         
         
-
+;
+    
 
     var gatewayName: string = paymentTransactionInterface!.getOrderHistory()!.getPaymentMethod()!;
         
         
+;
+    
 
+                        if(!StringValidationUtil.getInstance()!.isEmpty(gatewayName);
 
-                        if(!StringValidationUtil.getInstance()!.isEmpty(gatewayName))
+                        )
                         
                                     {
                                     
     var paymentType: PaymentType = PaymentTypeUtil.getInstance()!.get(gatewayName)!;
         
         
-
+;
+    
 
     var paymentProcessorInterfaceFactoryInterface: PaymentProcessorInterfaceFactoryInterface = paymentType!.getPaymentProcessorInterfaceFactoryInterface()!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return paymentProcessorInterfaceFactoryInterface!.getInstance(transformInfoInterface, paymentTransactionInterface) as PaymentProcessorInterface;
+                        return paymentProcessorInterfaceFactoryInterface!.getInstance(transformInfoInterface, paymentTransactionInterface);
+
+                         as PaymentProcessorInterface;
     
 
                                     }
@@ -115,7 +123,9 @@ var transformInfoInterface = transformInfoInterface
 
 
                             throw Error("Error Getting PaymentProcessorInterface")
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PAYMENTERROR))
@@ -125,8 +135,10 @@ var transformInfoInterface = transformInfoInterface
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e);
+    
 
                                     }
                                 

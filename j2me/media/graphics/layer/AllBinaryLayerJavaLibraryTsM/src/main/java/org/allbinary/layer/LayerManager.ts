@@ -46,14 +46,17 @@ public constructor (layerManagerLogging: LayerManagerLogging){
 
             super();
                 //var layerManagerLogging = layerManagerLogging
-logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
-this.layerManagerLogging= layerManagerLogging
+logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
+    
+this.layerManagerLogging= layerManagerLogging;
+    
 }
 
 public constructor (){
 
             super();
-            this.layerManagerLogging= LayerManagerNoDebug.getInstance()
+            this.layerManagerLogging= LayerManagerNoDebug.getInstance();
+    
 }
 
 
@@ -64,6 +67,8 @@ public constructor (){
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.list.contains(layerInterface);
+
+                        ;
     
 }
 
@@ -74,12 +79,14 @@ public constructor (){
     //var layerInterface = layerInterface
 
     var nextLayerInterface: AllBinaryLayer
-
+;
+    
 
     var size: number = this.list.size()!;
         
         
-
+;
+    
 
 
 
@@ -90,12 +97,16 @@ public constructor (){
         
 index < size; index++)
         {
-nextLayerInterface= this.list.get(index) as AllBinaryLayer
+nextLayerInterface= this.list.get(index);
+
+                         as AllBinaryLayer;
+    
 
                         if(layerInterface!.getZP() > nextLayerInterface!.getZP())
                         
                                     {
-                                    this.append(layerInterface, index)
+                                    this.append(layerInterface, index);
+    
 
 
 
@@ -107,7 +118,8 @@ nextLayerInterface= this.list.get(index) as AllBinaryLayer
                                 
 }
 
-this.append(layerInterface)
+this.append(layerInterface);
+    
 }
 
 
@@ -115,8 +127,10 @@ this.append(layerInterface)
             
     public append(layerInterface: AllBinaryLayer){
     //var layerInterface = layerInterface
-this.layerManagerLogging!.append(layerInterface)
-this.list.add(layerInterface)
+this.layerManagerLogging!.append(layerInterface);
+    
+this.list.add(layerInterface);
+    
 }
 
 
@@ -125,8 +139,10 @@ this.list.add(layerInterface)
     public append(layerInterface: AllBinaryLayer, index: number){
     //var layerInterface = layerInterface
     //var index = index
-this.layerManagerLogging!.append(layerInterface, index)
-this.list.add(index, layerInterface)
+this.layerManagerLogging!.append(layerInterface, index);
+    
+this.list.add(index, layerInterface);
+    
 }
 
 
@@ -141,13 +157,16 @@ this.list.add(index, layerInterface)
 
         //mutex.withLock
         {
-this.layerManagerLogging!.remove(layerInterface)
+this.layerManagerLogging!.remove(layerInterface);
+    
 
     var result: boolean = this.list.remove(layerInterface)!;
         
         
-
-this.layerManagerLogging!.remove(this, layerInterface, result)
+;
+    
+this.layerManagerLogging!.remove(this, layerInterface, result);
+    
 }
 
 }
@@ -170,6 +189,8 @@ this.layerManagerLogging!.remove(this, layerInterface, result)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.list.size();
+
+                        ;
     
 }
 
@@ -184,10 +205,14 @@ this.layerManagerLogging!.remove(this, layerInterface, result)
 
         //mutex.withLock
         {
-this.list.clear()
-this.layerManagerLogging!.clear()
-System.gc()
-System.gc()
+this.list.clear();
+    
+this.layerManagerLogging!.clear();
+    
+System.gc();
+    
+System.gc();
+    
 }
 
 }
@@ -206,7 +231,8 @@ var y = y
         {
 
     var comp: Layer
-
+;
+    
 
 
 
@@ -217,14 +243,16 @@ var y = y
         
 --index >= 0; )
         {
-comp= list.objectArray[index]! as Layer
+comp= list.objectArray[index]! as Layer;
+    
 
                         if(comp != 
                                     null
                                  && comp.isVisible())
                         
                                     {
-                                    comp.paint(g)
+                                    comp.paint(g);
+    
 
                                     }
                                 

@@ -40,14 +40,16 @@ var node = node
             ;
         
         
-
+;
+    
 
                         if(DomSearchHelper.getNodeNoThrow(ColorAtActionScriptConditionData.NAME, node.getChildNodes()) != 
                                     null
                                 )
                         
                                     {
-                                    profileActionScriptConditionInterface= ColorAtActionScriptCondition(node)
+                                    profileActionScriptConditionInterface= ColorAtActionScriptCondition(node);
+    
 
                                     }
                                 
@@ -57,7 +59,8 @@ var node = node
                                 )
                         
                                     {
-                                    profileActionScriptConditionInterface= TimeIntervalActionScriptCondition(node)
+                                    profileActionScriptConditionInterface= TimeIntervalActionScriptCondition(node);
+    
 
                                     }
                                 
@@ -67,7 +70,8 @@ var node = node
                                 )
                         
                                     {
-                                    profileActionScriptConditionInterface= AlwaysActionScriptCondition(node)
+                                    profileActionScriptConditionInterface= AlwaysActionScriptCondition(node);
+    
 
                                     }
                                 

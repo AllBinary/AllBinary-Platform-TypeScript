@@ -48,14 +48,14 @@ export class VectorAnimation extends IndexedAnimation
         
         
 
-    private currentPoints: IntArray[][] = NullUtil.getInstance()!.NULL_INT_ARRAY_ARRAY_ARRAY;
+    private currentPoints: number[][][] = NullUtil.getInstance()!.NULL_INT_ARRAY_ARRAY_ARRAY;
         
         
 
     private circularIndexUtil: CircularIndexUtil = CircularIndexUtil.getInstance(0)!;
         
         
-public constructor (currentPoints: IntArray[][], basicColor: BasicColor, animationBehavior: AnimationBehavior)                        
+public constructor (currentPoints: number[][][], basicColor: BasicColor, animationBehavior: AnimationBehavior)                        
 
                             : super(animationBehavior){
 
@@ -67,11 +67,13 @@ public constructor (currentPoints: IntArray[][], basicColor: BasicColor, animati
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setPoints(currentPoints)
-this.setBasicColorP(basicColor)
+this.setPoints(currentPoints);
+    
+this.setBasicColorP(basicColor);
+    
 }
 
-public constructor (currentPoints: IntArray[], basicColor: BasicColor, animationBehavior: AnimationBehavior)                        
+public constructor (currentPoints: number[][], basicColor: BasicColor, animationBehavior: AnimationBehavior)                        
 
                             : super(animationBehavior){
 
@@ -83,13 +85,15 @@ public constructor (currentPoints: IntArray[], basicColor: BasicColor, animation
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setPoints(Array(1) { Array(currentPoints!.length) { IntArray(2) } })
+this.setPoints(Array.from({ length: 1 }, () => Array.from({ length: currentPoints!.length }, () => new Array(0).fill(2))));
+    
 
     var size: number = currentPoints!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -100,11 +104,14 @@ this.setPoints(Array(1) { Array(currentPoints!.length) { IntArray(2) } })
         
 index < size; index++)
         {
-this.currentPoints[0]![index]![0]= currentPoints[index]![0]!
-this.currentPoints[0]![index]![1]= currentPoints[index]![1]!
+this.currentPoints[0]![index]![0]= currentPoints[index]![0]!;
+    
+this.currentPoints[0]![index]![1]= currentPoints[index]![1]!;
+    
 }
 
-this.setBasicColorP(basicColor)
+this.setBasicColorP(basicColor);
+    
 }
 
 
@@ -116,6 +123,8 @@ this.setBasicColorP(basicColor)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getSize();
+
+                        ;
     
 }
 
@@ -130,28 +139,32 @@ this.setBasicColorP(basicColor)
 }
 
 
-    public setSequence(sequence: IntArray){
+    public setSequence(sequence: number[]){
     //var sequence = sequence
 }
 
 
-    public getSequence(): IntArray{
+    public getSequence(): number[]{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return PrimitiveIntUtil.getArrayInstance();
+
+                        ;
     
 }
 
 
     public nextFrame(){
-this.circularIndexUtil!.next()
+this.circularIndexUtil!.next();
+    
 }
 
 
     public previousFrame(){
-this.circularIndexUtil!.previous()
+this.circularIndexUtil!.previous();
+    
 }
 
 
@@ -165,59 +178,75 @@ this.circularIndexUtil!.previous()
     var nextPointX: number = 0;
         
         
-
+;
+    
 
     var nextPointY: number = 0;
         
         
+;
+    
 
+    var nextPoint: number[]
+;
+    
 
-    var nextPoint: IntArray
+    var point: number[]
+;
+    
 
-
-    var point: IntArray
-
-
-    var currentPointsFrame: IntArray[] = this.currentPoints[this.circularIndexUtil!.getIndex()]!;
+    var currentPointsFrame: number[][] = this.currentPoints[this.circularIndexUtil!.getIndex()]!;
         
         
-
+;
+    
 
     var size: number = currentPointsFrame!.length
                 ;
         
         
-
+;
+    
 
     var index: number = size -2;
         
         
-
+;
+    
 
         while(--index >= 0)
         {
-nextPoint= currentPointsFrame[index]!
-point= currentPointsFrame[index +1]!
-nextPointX= nextPoint[0]!
-nextPointY= nextPoint[1]!
+nextPoint= currentPointsFrame[index]!;
+    
+point= currentPointsFrame[index +1]!;
+    
+nextPointX= nextPoint[0]!;
+    
+nextPointY= nextPoint[1]!;
+    
 
                         if(nextPointX != 1000)
                         
                                     {
-                                    graphics.drawLine(point[0] +x, point[1] +y, nextPointX +x, nextPointY +y)
+                                    graphics.drawLine(point[0] +x, point[1] +y, nextPointX +x, nextPointY +y);
+    
 
                                     }
                                 
                         else {
-                            index--
+                            index--;
+    
 
                         }
                             
 }
 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "paintVectors", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "paintVectors", e);
+    
 }
 
 }
@@ -227,8 +256,10 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "paintVectors", e)
 var graphics = graphics
 var x = x
 var y = y
-this.basicSetColorUtil!.setBasicColorP(graphics, basicColor)
-this.paintVectors(graphics, x, y)
+this.basicSetColorUtil!.setBasicColorP(graphics, basicColor);
+    
+this.paintVectors(graphics, x, y);
+    
 }
 
 
@@ -238,17 +269,20 @@ this.paintVectors(graphics, x, y)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.circularIndexUtil!.getIndex();
+
+                        ;
     
 }
 
 
     public setFrame(index: number){
 var index = index
-this.circularIndexUtil!.setIndex(index)
+this.circularIndexUtil!.setIndex(index);
+    
 }
 
 
-    public getPoints(frame: number): IntArray[]{
+    public getPoints(frame: number): number[][]{
 var frame = frame
 
 
@@ -259,10 +293,12 @@ var frame = frame
 }
 
 
-    public setPoints(currentPoints: IntArray[][]){
+    public setPoints(currentPoints: number[][][]){
 var currentPoints = currentPoints
-this.currentPoints= currentPoints
-this.circularIndexUtil= CircularIndexUtil.getInstance(currentPoints!.length)
+this.currentPoints= currentPoints;
+    
+this.circularIndexUtil= CircularIndexUtil.getInstance(currentPoints!.length);
+    
 }
 
 

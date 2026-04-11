@@ -66,10 +66,13 @@ private constructor (){
     public addListener(layerManagerEventListener: LayerManagerEventListener){
     //var layerManagerEventListener = layerManagerEventListener
 
-                        if(!list.contains(layerManagerEventListener))
+                        if(!list.contains(layerManagerEventListener);
+
+                        )
                         
                                     {
-                                    list.add(layerManagerEventListener)
+                                    list.add(layerManagerEventListener);
+    
 
                                     }
                                 
@@ -77,15 +80,19 @@ private constructor (){
 
 
     public removeAllListeners(){
-this.list.clear()
-super.removeAllListeners()
+this.list.clear();
+    
+super.removeAllListeners();
+    
 }
 
 
     public removeListener(eventListenerInterface: EventListenerInterface){
     //var eventListenerInterface = eventListenerInterface
-this.list.remove(eventListenerInterface)
-super.removeListener(eventListenerInterface)
+this.list.remove(eventListenerInterface);
+    
+super.removeListener(eventListenerInterface);
+    
 }
 
 
@@ -109,16 +116,22 @@ super.removeListener(eventListenerInterface)
     var layerManagerEventListener: LayerManagerEventListener = this.list.objectArray[index]! as LayerManagerEventListener;
         
         
+;
+    
+layerManagerEventListener!.onCreateLayerManagerEvent(eventObject as LayerManagerEvent);
+    
 
-layerManagerEventListener!.onCreateLayerManagerEvent(eventObject as LayerManagerEvent)
-} catch(e: Exception)
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e);
+    
 }
 
 }
 
-super.fireEvent(eventObject)
+super.fireEvent(eventObject);
+    
 }
 
 
@@ -151,11 +164,16 @@ super.fireEvent(eventObject)
     var layerManagerEventListener: LayerManagerEventListener = this.list.objectArray[index]! as LayerManagerEventListener;
         
         
+;
+    
+layerManagerEventListener!.onDeleteLayerManagerEvent(eventObject as LayerManagerEvent);
+    
 
-layerManagerEventListener!.onDeleteLayerManagerEvent(eventObject as LayerManagerEvent)
-} catch(e: Exception)
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e);
+    
 }
 
 }
@@ -164,32 +182,43 @@ logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EV
     var eventListenerInterfaceList: BasicArrayList = this.eventListenerInterfaceList;
         
         
-
+;
+    
 
     var eventListenerInterface: EventListenerInterface
-
+;
+    
 
     var layerManagerEventListenerInterface: LayerManagerEventListenerInterface
-
+;
+    
 
     var index: number = 0;
         
         
-
+;
+    
 
         while(index < eventListenerInterfaceList!.size())
         {
 
         try {
-            eventListenerInterface= eventListenerInterfaceList!.objectArray[index]! as EventListenerInterface
-layerManagerEventListenerInterface= (eventListenerInterface as LayerManagerEventListenerInterface)
-layerManagerEventListenerInterface!.onDeleteLayerManagerEvent(eventObject as LayerManagerEvent)
-} catch(e: Exception)
+            eventListenerInterface= eventListenerInterfaceList!.objectArray[index]! as EventListenerInterface;
+    
+layerManagerEventListenerInterface= (eventListenerInterface as LayerManagerEventListenerInterface);
+    
+layerManagerEventListenerInterface!.onDeleteLayerManagerEvent(eventObject as LayerManagerEvent);
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e);
+    
 }
 
-index++
+index++;
+    
 }
 
 }
@@ -204,8 +233,10 @@ index++
     var layerManagerEventListenerInterface: LayerManagerEventListenerInterface = (eventListenerInterface as LayerManagerEventListenerInterface);
         
         
-
-layerManagerEventListenerInterface!.onCreateLayerManagerEvent(eventObject as LayerManagerEvent)
+;
+    
+layerManagerEventListenerInterface!.onCreateLayerManagerEvent(eventObject as LayerManagerEvent);
+    
 }
 
 

@@ -62,12 +62,14 @@ export class BasicEventHandler
 public constructor (){
 
             super();
-            this.eventListenerInterfaceList= BasicArrayList()
+            this.eventListenerInterfaceList= BasicArrayList();
+    
 }
 
 
     public removeAllListeners(){
-this.eventListenerInterfaceList= BasicArrayList()
+this.eventListenerInterfaceList= BasicArrayList();
+    
 }
 
 
@@ -75,12 +77,14 @@ this.eventListenerInterfaceList= BasicArrayList()
     //var vector = vector
 
     var eventListenerInterface: EventListenerInterface
-
+;
+    
 
     var size: number = vector.size()!;
         
         
-
+;
+    
 
 
 
@@ -91,8 +95,12 @@ this.eventListenerInterfaceList= BasicArrayList()
         
 index < size; index++)
         {
-eventListenerInterface= vector.get(index) as EventListenerInterface
-this.addListener(eventListenerInterface)
+eventListenerInterface= vector.get(index);
+
+                         as EventListenerInterface;
+    
+this.addListener(eventListenerInterface);
+    
 }
 
 }
@@ -102,12 +110,14 @@ this.addListener(eventListenerInterface)
     //var vector = vector
 
     var eventListenerInterface: EventListenerInterface
-
+;
+    
 
     var size: number = vector.size()!;
         
         
-
+;
+    
 
 
 
@@ -118,8 +128,12 @@ this.addListener(eventListenerInterface)
         
 index < size; index++)
         {
-eventListenerInterface= vector.get(index) as EventListenerInterface
-this.removeListener(eventListenerInterface)
+eventListenerInterface= vector.get(index);
+
+                         as EventListenerInterface;
+    
+this.removeListener(eventListenerInterface);
+    
 }
 
 }
@@ -128,10 +142,13 @@ this.removeListener(eventListenerInterface)
     public addListenerSingleThreaded(eventListenerInterface: EventListenerInterface){
     //var eventListenerInterface = eventListenerInterface
 
-                        if(!this.eventListenerInterfaceList!.contains(eventListenerInterface))
+                        if(!this.eventListenerInterfaceList!.contains(eventListenerInterface);
+
+                        )
                         
                                     {
-                                    this.eventListenerInterfaceList!.add(eventListenerInterface)
+                                    this.eventListenerInterfaceList!.add(eventListenerInterface);
+    
 
                                     }
                                 
@@ -141,10 +158,13 @@ this.removeListener(eventListenerInterface)
     public addListener(eventListenerInterface: EventListenerInterface){
     //var eventListenerInterface = eventListenerInterface
 
-                        if(!this.eventListenerInterfaceList!.contains(eventListenerInterface))
+                        if(!this.eventListenerInterfaceList!.contains(eventListenerInterface);
+
+                        )
                         
                                     {
-                                    this.eventListenerInterfaceList!.add(eventListenerInterface)
+                                    this.eventListenerInterfaceList!.add(eventListenerInterface);
+    
 
                                     }
                                 
@@ -153,13 +173,15 @@ this.removeListener(eventListenerInterface)
 
     public removeListenerSingleThreaded(eventListenerInterface: EventListenerInterface){
     //var eventListenerInterface = eventListenerInterface
-this.eventListenerInterfaceList!.remove(eventListenerInterface)
+this.eventListenerInterfaceList!.remove(eventListenerInterface);
+    
 }
 
 
     public removeListener(eventListenerInterface: EventListenerInterface){
     //var eventListenerInterface = eventListenerInterface
-this.eventListenerInterfaceList!.remove(eventListenerInterface)
+this.eventListenerInterfaceList!.remove(eventListenerInterface);
+    
 }
 
 
@@ -169,25 +191,35 @@ this.eventListenerInterfaceList!.remove(eventListenerInterface)
     //var eventObject = eventObject
 
     var eventListenerInterface: EventListenerInterface
-
+;
+    
 
     var index: number = 0;
         
         
-
+;
+    
 
         while(index < this.eventListenerInterfaceList!.size())
         {
 
         try {
-            eventListenerInterface= this.eventListenerInterfaceList!.get(index) as EventListenerInterface
-this.process(eventObject, eventListenerInterface)
-} catch(e: Exception)
+            eventListenerInterface= this.eventListenerInterfaceList!.get(index);
+
+                         as EventListenerInterface;
+    
+this.process(eventObject, eventListenerInterface);
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, eventStrings!.FIRE_EVENT, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, eventStrings!.FIRE_EVENT, e);
+    
 }
 
-index++
+index++;
+    
 }
 
 }
@@ -198,7 +230,8 @@ index++
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
     //var eventObject = eventObject
     //var eventListenerInterface = eventListenerInterface
-eventListenerInterface!.onEvent(eventObject)
+eventListenerInterface!.onEvent(eventObject);
+    
 }
 
 
@@ -217,31 +250,45 @@ eventListenerInterface!.onEvent(eventObject)
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(eventStrings!.TOTAL_LISTENERS)
-stringBuffer!.appendint(this.eventListenerInterfaceList!.size())
+;
+    
+stringBuffer!.append(eventStrings!.TOTAL_LISTENERS);
+    
+stringBuffer!.appendint(this.eventListenerInterfaceList!.size());
+    
 
     var eventListenerInterface: EventListenerInterface
-
+;
+    
 
     var index: number = 0;
         
         
-
+;
+    
 
         while(index < this.eventListenerInterfaceList!.size())
         {
 
         try {
-            eventListenerInterface= this.eventListenerInterfaceList!.get(index) as EventListenerInterface
-stringBuffer!.append(eventStrings!.LISTENER_LABEL)
-stringBuffer!.append(eventListenerInterface!.toString())
-} catch(e: Exception)
+            eventListenerInterface= this.eventListenerInterfaceList!.get(index);
+
+                         as EventListenerInterface;
+    
+stringBuffer!.append(eventStrings!.LISTENER_LABEL);
+    
+stringBuffer!.append(eventListenerInterface!.toString());
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.TOSTRING, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.TOSTRING, e);
+    
 }
 
-index++
+index++;
+    
 }
 
 
@@ -249,6 +296,8 @@ index++
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

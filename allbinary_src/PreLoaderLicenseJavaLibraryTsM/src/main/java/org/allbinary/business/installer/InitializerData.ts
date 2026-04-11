@@ -210,21 +210,33 @@ export class InitializerData
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("The following describes the possible problems and solutions regarding the Jdbc Driver error(s):<p/>")
-stringBuffer!.append("1. A JDBC driver you specified is not in your classpath.<br/>")
-stringBuffer!.append("Solution 1: Move the JDBC driver into any directory specified in the existing classpath. <br/>")
-stringBuffer!.append("Solution 2: Add the directory that contains the JDBC driver to the classpath.<br/>")
-stringBuffer!.append("Solution 3: Add the JDBC driver to the WEB-INF/lib directory where you installed this webapp.<br/>")
-stringBuffer!.append("2. The JDBC driver you specified does not exit.<br/>")
-stringBuffer!.append("Solution: Get a JDBC driver. <br/>")
-stringBuffer!.append("3. The JDBC driver you specified is not valid.<br/>")
-stringBuffer!.append("Solution: Use a valid JDBC driver.<p/>")
+;
+    
+stringBuffer!.append("The following describes the possible problems and solutions regarding the Jdbc Driver error(s):<p/>");
+    
+stringBuffer!.append("1. A JDBC driver you specified is not in your classpath.<br/>");
+    
+stringBuffer!.append("Solution 1: Move the JDBC driver into any directory specified in the existing classpath. <br/>");
+    
+stringBuffer!.append("Solution 2: Add the directory that contains the JDBC driver to the classpath.<br/>");
+    
+stringBuffer!.append("Solution 3: Add the JDBC driver to the WEB-INF/lib directory where you installed this webapp.<br/>");
+    
+stringBuffer!.append("2. The JDBC driver you specified does not exit.<br/>");
+    
+stringBuffer!.append("Solution: Get a JDBC driver. <br/>");
+    
+stringBuffer!.append("3. The JDBC driver you specified is not valid.<br/>");
+    
+stringBuffer!.append("Solution: Use a valid JDBC driver.<p/>");
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

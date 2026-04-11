@@ -40,7 +40,9 @@ export class WaypointEventHandlerFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return eventHandlerArray[groupInterface!.getGroupId().toInt()]!;
+                        return eventHandlerArray[groupInterface!.getGroupId();
+
+                        .toInt()]!;
     
 }
 
@@ -56,7 +58,8 @@ export class WaypointEventHandlerFactory
         
 index >= 0; index--)
         {
-eventHandlerArray[index]!.removeAllListeners()
+eventHandlerArray[index]!.removeAllListeners();
+    
 }
 
 }

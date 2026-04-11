@@ -98,85 +98,118 @@ private constructor (){
     var productivityHud: NumberStringHud = NumberStringHud.NULL_NUMBER_STRING_HUD;
         
         
-
+;
+    
 
     var efficiencyHud: NumberStringHud = NumberStringHud.NULL_NUMBER_STRING_HUD;
         
         
-
+;
+    
 
     var healthHud: NumberStringHud = NumberStringHud.NULL_NUMBER_STRING_HUD;
         
         
-
+;
+    
 
     var maxHealthHud: NumberStringHud = NumberStringHud.NULL_NUMBER_STRING_HUD;
         
         
-
+;
+    
 
         try {
             
     var index: number = 0;
         
         
-
+;
+    
 
     var basicHudFactory: BasicHudFactory = BasicHudFactory.getInstance()!;
         
         
-
+;
+    
 
     var DEFAULT_CHAR_HEIGHT: number = myFont!.DEFAULT_CHAR_HEIGHT;
         
         
-
-productivityHud= NumberStringHud("Productivity:", 999, basicHudFactory!.ABSOLUTE, basicHudFactory!.HORIZONTAL, this.textX, y +((index +1) *DEFAULT_CHAR_HEIGHT), 0, this.getBasicColorP())
-index++
-efficiencyHud= NumberStringHud("Efficiency:", 999, basicHudFactory!.ABSOLUTE, basicHudFactory!.HORIZONTAL, this.textX, y +((index +1) *DEFAULT_CHAR_HEIGHT), 0, this.getBasicColorP())
-index++
+;
+    
+productivityHud= NumberStringHud("Productivity:", 999, basicHudFactory!.ABSOLUTE, basicHudFactory!.HORIZONTAL, this.textX, y +((index +1) *DEFAULT_CHAR_HEIGHT), 0, this.getBasicColorP());
+    
+index++;
+    
+efficiencyHud= NumberStringHud("Efficiency:", 999, basicHudFactory!.ABSOLUTE, basicHudFactory!.HORIZONTAL, this.textX, y +((index +1) *DEFAULT_CHAR_HEIGHT), 0, this.getBasicColorP());
+    
+index++;
+    
 
     var totalLength: number = HEALTH.length +1;
         
         
+;
+    
+healthHud= NumberStringHud(HEALTH, 99999, basicHudFactory!.ABSOLUTE, basicHudFactory!.HORIZONTAL, this.textX, y +((index +1) *DEFAULT_CHAR_HEIGHT), 0, this.getBasicColorP());
+    
+maxHealthHud= NumberStringHud("/ ", 99999, basicHudFactory!.ABSOLUTE, basicHudFactory!.HORIZONTAL, this.textX +(totalLength *DEFAULT_CHAR_HEIGHT), y +((index +1) *DEFAULT_CHAR_HEIGHT), 0, this.getBasicColorP());
+    
 
-healthHud= NumberStringHud(HEALTH, 99999, basicHudFactory!.ABSOLUTE, basicHudFactory!.HORIZONTAL, this.textX, y +((index +1) *DEFAULT_CHAR_HEIGHT), 0, this.getBasicColorP())
-maxHealthHud= NumberStringHud("/ ", 99999, basicHudFactory!.ABSOLUTE, basicHudFactory!.HORIZONTAL, this.textX +(totalLength *DEFAULT_CHAR_HEIGHT), y +((index +1) *DEFAULT_CHAR_HEIGHT), 0, this.getBasicColorP())
-} catch(e: Exception)
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e);
+    
 }
 
-this.productivityHud= productivityHud
-this.efficiencyHud= efficiencyHud
-this.healthHud= healthHud
-this.maxHealthHud= maxHealthHud
+this.productivityHud= productivityHud;
+    
+this.efficiencyHud= efficiencyHud;
+    
+this.healthHud= healthHud;
+    
+this.maxHealthHud= maxHealthHud;
+    
 }
 
 
     public setBasicColorP(basicColor: BasicColor){
 var basicColor = basicColor
-super.setBasicColorP(basicColor)
-this.productivityHud!.setBasicColorP(basicColor)
-this.efficiencyHud!.setBasicColorP(basicColor)
-this.healthHud!.setBasicColorP(basicColor)
-this.maxHealthHud!.setBasicColorP(basicColor)
+super.setBasicColorP(basicColor);
+    
+this.productivityHud!.setBasicColorP(basicColor);
+    
+this.efficiencyHud!.setBasicColorP(basicColor);
+    
+this.healthHud!.setBasicColorP(basicColor);
+    
+this.maxHealthHud!.setBasicColorP(basicColor);
+    
 }
 
 
     public paint(graphics: Graphics){
 var graphics = graphics
-super.paint(graphics)
-this.productivityHud!.paint(graphics)
-this.efficiencyHud!.paint(graphics)
-this.healthHud!.paint(graphics)
-this.maxHealthHud!.paint(graphics)
-this.getAnimationInterface()!.paint(graphics, this.imageX, y)
+super.paint(graphics);
+    
+this.productivityHud!.paint(graphics);
+    
+this.efficiencyHud!.paint(graphics);
+    
+this.healthHud!.paint(graphics);
+    
+this.maxHealthHud!.paint(graphics);
+    
+this.getAnimationInterface()!.paint(graphics, this.imageX, y);
+    
 }
 
 
@@ -185,30 +218,41 @@ this.getAnimationInterface()!.paint(graphics, this.imageX, y)
     var buildingLayer: BuildingLayer = this.rtsLayer as BuildingLayer;
         
         
-
-this.setName(buildingLayer!.getName())
-this.setAnimationInterface(buildingLayer!.getVerticleBuildAnimationInterface())
-this.productivityHud!.set(buildingLayer!.getProductivity())
-this.efficiencyHud!.set(buildingLayer!.getEfficiency() /100)
+;
+    
+this.setName(buildingLayer!.getName());
+    
+this.setAnimationInterface(buildingLayer!.getVerticleBuildAnimationInterface());
+    
+this.productivityHud!.set(buildingLayer!.getProductivity());
+    
+this.efficiencyHud!.set(buildingLayer!.getEfficiency() /100);
+    
 
     var health: number = buildingLayer!.getHealthInterface()!.getHealth()!;
         
         
-
-this.healthHud!.set(health)
+;
+    
+this.healthHud!.set(health);
+    
 
     var totalLength: number = HEALTH.length +MathUtil.getInstance()!.getTotalDigits(health);
         
         
-
-this.maxHealthHud!.setX(this.textX +MyFont.getInstance()!.stringWidth(totalLength))
-this.maxHealthHud!.set(buildingLayer!.getHealthInterface()!.getMaxHealth())
+;
+    
+this.maxHealthHud!.setX(this.textX +MyFont.getInstance()!.stringWidth(totalLength));
+    
+this.maxHealthHud!.set(buildingLayer!.getHealthInterface()!.getMaxHealth());
+    
 }
 
 
     public setRtsLayer(rtsLayer: PathFindingLayerInterface){
 var rtsLayer = rtsLayer
-this.rtsLayer= rtsLayer
+this.rtsLayer= rtsLayer;
+    
 }
 
 

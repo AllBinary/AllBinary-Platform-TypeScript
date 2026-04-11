@@ -18,6 +18,8 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { HashMap } from "../../../../java/util/HashMap.js";
 
     
@@ -27,7 +29,8 @@ import { HashSet } from "../../../../java/util/HashSet.js";
 import { Set } from "../../../../java/util/Set.js";
 
     
-import { Vector } from "../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../java/util/Vector.js";
 
     
 import { StoreFrontInterface } from "../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js";
@@ -150,10 +153,14 @@ public constructor (searchRequest: SearchRequest){
 
             super();
             var searchRequest = searchRequest
-this.searchRequest= searchRequest
-this.storeFronts= StoreFrontsEntity()
-this.staticPages= StaticPagesEntity()
-this.inventory= InventoryEntity()
+this.searchRequest= searchRequest;
+    
+this.storeFronts= StoreFrontsEntity();
+    
+this.staticPages= StaticPagesEntity();
+    
+this.inventory= InventoryEntity();
+    
 }
 
 
@@ -165,22 +172,26 @@ var storeFront = storeFront
     var inventoryColumnUtil: InventoryColumnUtil = InventoryColumnUtil.getInstance()!;
         
         
-
+;
+    
 
     var keywords: Vector = inventoryColumnUtil!.getColumnWhereLike(this.inventory, storeFront!.getCategoryPath(), BasicItemData.KEYWORDS)!;
         
         
-
+;
+    
 
     var subStoreVector: BasicArrayList = storeFront!.getSubStores()!;
         
         
-
+;
+    
 
     var size: number = subStoreVector!.size()!;
         
         
-
+;
+    
 
 
 
@@ -192,28 +203,35 @@ var storeFront = storeFront
 index < size; index++)
         {
 
-    var subStore: string = subStoreVector!.get(index) as String;
-        
-        
+    var subStore: string = subStoreVector!.get(index);
 
+                         as String;
+        
+        
+;
+    
 
     var substoreKeywords: Vector = inventoryColumnUtil!.getColumnWhereLike(this.inventory, AbPathData.getInstance()!.SEPARATOR +subStore, BasicItemData.CATEGORY)!;
         
         
-
-keywords.addAll(substoreKeywords)
+;
+    
+keywords.addAll(substoreKeywords);
+    
 }
 
 
     var uniqueTokens: UniqueTokens = new UniqueTokens();
         
         
-
+;
+    
 
     var keywordHashSet: HashSet = uniqueTokens!.getWhithoutDashesAndSkipNumberOnlyTokens(keywords)!;
         
         
-
+;
+    
 
 
 
@@ -232,7 +250,8 @@ var data = data
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.STATICPAGEGENERATIONLOGGING))
                         
                                     {
-                                    logUtil!.put("Creating File: " +file, this, "generateAll()")
+                                    logUtil!.put("Creating File: " +file, this, "generateAll()");
+    
 
                                     }
                                 
@@ -240,16 +259,19 @@ var data = data
     var newFile: AbFile = new AbFile(file);
         
         
-
+;
+    
 
                         if(newFile!.exists())
                         
                                     {
-                                    newFile!.delete()
+                                    newFile!.delete();
+    
 
                                     }
                                 
-newFile!.createNewFile()
+newFile!.createNewFile();
+    
 
                         if(newFile!.exists())
                         
@@ -258,15 +280,20 @@ newFile!.createNewFile()
     var idOutData: AbDataOutputStream = DataOutputStreamFactory.getInstance()!.getInstance(newFile)!;
         
         
-
-idOutData!.writeBytes(data)
-idOutData!.flush()
-StreamUtil.getInstance()!.close(idOutData)
+;
+    
+idOutData!.writeBytes(data);
+    
+idOutData!.flush();
+    
+StreamUtil.getInstance()!.close(idOutData);
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.STATICPAGEGENERATIONLOGGING))
                         
                                     {
-                                    logUtil!.put("Wrote Total Bytes: " +newFile!.length(), this, "generateAll()")
+                                    logUtil!.put("Wrote Total Bytes: " +newFile!.length(), this, "generateAll()");
+    
 
                                     }
                                 
@@ -286,7 +313,7 @@ StreamUtil.getInstance()!.close(idOutData)
 
                 //@Throws(Error::class)
             
-    create(keywordData: string, keywordFilenameHashMap: HashMap<Any, Any>, vector: Vector, staticPath: AbPath){
+    create(keywordData: string, keywordFilenameHashMap: HashMap<any, any>, vector: Vector, staticPath: AbPath){
 var keywordData = keywordData
 var keywordFilenameHashMap = keywordFilenameHashMap
 var vector = vector
@@ -295,43 +322,55 @@ var staticPath = staticPath
     var stringBuffer: StringMaker = new StringMaker();
         
         
+;
+    
 
-
-    var hashMap: HashMap<Any, Any> = SpecialCharacterUtil.getHashMap()!;
+    var hashMap: HashMap<any, any> = SpecialCharacterUtil.getHashMap()!;
         
         
-
-hashMap!.put(CommonSeps.getInstance()!.SPACE, StringUtil.getInstance()!.EMPTY_STRING)
+;
+    
+hashMap!.put(CommonSeps.getInstance()!.SPACE, StringUtil.getInstance()!.EMPTY_STRING);
+    
 
     var pageName: string = Replace(hashMap).
                             all(keywordData)!;
         
         
-
+;
+    
 
     var searchParams: SearchParams = this.searchRequest!.getParams()!;
         
         
-
-searchParams!.add(BasicItemData.KEYWORDS, keywordData)
-searchParams!.setStartPage(CommonPhoneStrings.getInstance()!.ZERO)
-this.searchRequest!.setParams(searchParams)
-this.searchRequest!.setFileBaseName(pageName)
+;
+    
+searchParams!.add(BasicItemData.KEYWORDS, keywordData);
+    
+searchParams!.setStartPage(CommonPhoneStrings.getInstance()!.ZERO);
+    
+this.searchRequest!.setParams(searchParams);
+    
+this.searchRequest!.setFileBaseName(pageName);
+    
 
     var abeClientInformation: AbeClientInformationInterface = ServiceClientInformationInterfaceFactory.getInstance()!;
         
         
-
+;
+    
 
     var inventorySearchUtil: InventorySearchUtil = InventorySearchUtil.getInstance()!;
         
         
-
+;
+    
 
     var productListingPages: string[] = inventorySearchUtil!.search(abeClientInformation, searchRequest, vector)!;
         
         
-
+;
+    
 
 
 
@@ -358,7 +397,8 @@ index < productListingPages!.length; index++)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.STATICPAGEGENERATIONLOGGING))
                         
                                     {
-                                    logUtil!.put("Saving Listing: " +index, this, "generateAll()")
+                                    logUtil!.put("Saving Listing: " +index, this, "generateAll()");
+    
 
                                     }
                                 
@@ -366,30 +406,42 @@ index < productListingPages!.length; index++)
     var indexStr: string = StringUtil.getInstance()!.EMPTY_STRING;
         
         
-
+;
+    
 
                         if(index > 0)
                         
                                     {
                                     indexStr= Integer(index).
-                            toString()
+                            toString();
+    
 
                                     }
                                 
-keywordFilenameHashMap!.put(keywordData, pageName +indexStr)
-stringBuffer!.delete(0, stringBuffer!.length())
-stringBuffer!.append(staticPath!.toString())
-stringBuffer!.append(pageName)
-stringBuffer!.append(indexStr)
-stringBuffer!.append(AbPathData.getInstance()!.EXTENSION_SEP)
-stringBuffer!.append(InputOutputTypeData.getInstance()!.DEFAULT)
+keywordFilenameHashMap!.put(keywordData, pageName +indexStr);
+    
+stringBuffer!.delete(0, stringBuffer!.length());
+    
+stringBuffer!.append(staticPath!.toString());
+    
+stringBuffer!.append(pageName);
+    
+stringBuffer!.append(indexStr);
+    
+stringBuffer!.append(AbPathData.getInstance()!.EXTENSION_SEP);
+    
+stringBuffer!.append(InputOutputTypeData.getInstance()!.DEFAULT);
+    
 
     var file: string = stringBuffer!.toString()!;
         
         
+;
+    
 
+                        if(!this.directory.create(staticPath);
 
-                        if(!this.directory.create(staticPath))
+                        )
                         
                                     {
                                     
@@ -399,31 +451,35 @@ stringBuffer!.append(InputOutputTypeData.getInstance()!.DEFAULT)
 
                                     }
                                 
-this.savePage(file, productListingPages[index]!)
+this.savePage(file, productListingPages[index]!);
+    
 }
 
 }
 
 
-    addStaticPageInfoToDatabase(storeFront: StoreFrontInterface, keywordFilenameHashMap: HashMap<Any, Any>){
+    addStaticPageInfoToDatabase(storeFront: StoreFrontInterface, keywordFilenameHashMap: HashMap<any, any>){
 var storeFront = storeFront
 var keywordFilenameHashMap = keywordFilenameHashMap
 
     var keywordHashSet: Set = keywordFilenameHashMap!.keys!;
         
         
+;
+    
 
-
-    var keywordArray: any = {}[] = keywordHashSet!.toArray()!;
+    var keywordArray: any[] = keywordHashSet!.toArray()!;
         
         
-
+;
+    
 
     var size: number = keywordArray!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -438,21 +494,30 @@ index < size; index++)
     var insertVector: Vector = new Vector();
         
         
-
+;
+    
 
     var keywordData: string = keywordArray[index]! as String;
         
         
+;
+    
 
+    var fileName: string = keywordFilenameHashMap!.get(keywordData as Object);
 
-    var fileName: string = keywordFilenameHashMap!.get(keywordData as Object) as String;
+                         as String;
         
         
-
-insertVector!.add(storeFront!.getName())
-insertVector!.add(keywordData)
-insertVector!.add(fileName)
-this.staticPages!.insert(insertVector)
+;
+    
+insertVector!.add(storeFront!.getName());
+    
+insertVector!.add(keywordData);
+    
+insertVector!.add(fileName);
+    
+this.staticPages!.insert(insertVector);
+    
 }
 
 }
@@ -467,26 +532,34 @@ this.staticPages!.insert(insertVector)
     var storeFront: StoreFrontInterface = this.searchRequest!.getStoreFront()!;
         
         
-
+;
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(URLGLOBALS.getWebappPath())
-stringBuffer!.append(storeFront!.getName())
-stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR)
-stringBuffer!.append(storeFront!.getStaticPath())
+;
+    
+stringBuffer!.append(URLGLOBALS.getWebappPath());
+    
+stringBuffer!.append(storeFront!.getName());
+    
+stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
+    
+stringBuffer!.append(storeFront!.getStaticPath());
+    
 
     var staticPath: AbPath = new AbPath(stringBuffer!.toString());
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.STATICPAGEGENERATIONLOGGING))
                         
                                     {
-                                    logUtil!.put("Store Static Pages Path: " +staticPath, this, "generateAll()")
+                                    logUtil!.put("Store Static Pages Path: " +staticPath, this, "generateAll()");
+    
 
                                     }
                                 
@@ -494,36 +567,46 @@ stringBuffer!.append(storeFront!.getStaticPath())
     var keywordHashSet: HashSet = this.getHashSet(storeFront)!;
         
         
+;
+    
 
-
-    var keywordArray: any = {}[] = keywordHashSet!.toArray()!;
+    var keywordArray: any[] = keywordHashSet!.toArray()!;
         
         
-
+;
+    
 
     var size: number = keywordArray!.length
                 ;
         
         
+;
+    
 
-
-    var keywordFilenameHashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var keywordFilenameHashMap: HashMap<any, any> = new HashMap<any, any>();
         
         
-
+;
+    
 
                         if(size == 0)
                         
                                     {
-                                    stringBuffer!.delete(0, stringBuffer!.length())
-stringBuffer!.append("Products For ")
-stringBuffer!.append(storeFront!.getName())
-stringBuffer!.append(" Store Not Found")
+                                    stringBuffer!.delete(0, stringBuffer!.length());
+    
+stringBuffer!.append("Products For ");
+    
+stringBuffer!.append(storeFront!.getName());
+    
+stringBuffer!.append(" Store Not Found");
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 
                                     }
@@ -532,12 +615,14 @@ stringBuffer!.append(" Store Not Found")
     var inventorySearchUtil: InventorySearchUtil = InventorySearchUtil.getInstance()!;
         
         
-
+;
+    
 
     var vector: Vector = inventorySearchUtil!.getBasicItemIdColumn(searchRequest)!;
         
         
-
+;
+    
 
 
 
@@ -552,31 +637,44 @@ index < size; index++)
     var keywordData: string = keywordArray[index]! as String;
         
         
-
+;
+    
 
                         if(keywordData!.length > 1)
                         
                                     {
-                                    this.create(keywordData, keywordFilenameHashMap, vector, staticPath)
+                                    this.create(keywordData, keywordFilenameHashMap, vector, staticPath);
+    
 
                                     }
                                 
 }
 
-this.addStaticPageInfoToDatabase(storeFront, keywordFilenameHashMap)
-stringBuffer!.delete(0, stringBuffer!.length())
-stringBuffer!.append("Static Files Generated Successfully For ")
-stringBuffer!.append(storeFront!.getName())
-stringBuffer!.append(" it used packages ")
-stringBuffer!.append(storeFront!.getPackageLocation())
-stringBuffer!.append(INVENTORY)
+this.addStaticPageInfoToDatabase(storeFront, keywordFilenameHashMap);
+    
+stringBuffer!.delete(0, stringBuffer!.length());
+    
+stringBuffer!.append("Static Files Generated Successfully For ");
+    
+stringBuffer!.append(storeFront!.getName());
+    
+stringBuffer!.append(" it used packages ");
+    
+stringBuffer!.append(storeFront!.getPackageLocation());
+    
+stringBuffer!.append(INVENTORY);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
 
@@ -597,7 +695,8 @@ var storeName = storeName
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
                         if(storeName != 
                                     null
@@ -608,9 +707,12 @@ var storeName = storeName
                         if(storeName!.compareTo(GLOBALS2.GENERATEALLSTORES) != 0)
                         
                                     {
-                                    this.searchRequest!.setStoreFront(this.storeFronts!.getStoreFrontInterface(storeName))
-stringBuffer!.append(this.generateAll())
-stringBuffer!.append("<br />")
+                                    this.searchRequest!.setStoreFront(this.storeFronts!.getStoreFrontInterface(storeName));
+    
+stringBuffer!.append(this.generateAll());
+    
+stringBuffer!.append("<br />");
+    
 
                                     }
                                 
@@ -619,12 +721,14 @@ stringBuffer!.append("<br />")
     var storeFrontVector: Vector = this.storeFronts!.getStoreFrontNames()!;
         
         
-
+;
+    
 
     var size: number = storeFrontVector!.length!;
         
         
-
+;
+    
 
 
 
@@ -635,10 +739,16 @@ stringBuffer!.append("<br />")
         
 index < size; index++)
         {
-storeName= storeFrontVector!.get(index) as String
-this.searchRequest!.setStoreFront(this.storeFronts!.getStoreFrontInterface(storeName))
-stringBuffer!.append(this.generateAll())
-stringBuffer!.append("<br />")
+storeName= storeFrontVector!.get(index);
+
+                         as String;
+    
+this.searchRequest!.setStoreFront(this.storeFronts!.getStoreFrontInterface(storeName));
+    
+stringBuffer!.append(this.generateAll());
+    
+stringBuffer!.append("<br />");
+    
 }
 
 
@@ -657,14 +767,19 @@ stringBuffer!.append("<br />")
 
                         }
                             
-stringBuffer!.append("All Static Pages Generated<br/>")
+stringBuffer!.append("All Static Pages Generated<br/>");
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
 

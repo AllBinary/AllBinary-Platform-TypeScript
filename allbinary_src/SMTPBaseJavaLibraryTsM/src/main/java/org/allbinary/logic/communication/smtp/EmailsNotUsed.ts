@@ -18,7 +18,10 @@
 
 
 
-import { Vector } from "../../../../../java/util/Vector.js";
+            import Vector from "@ohos.util.Vector";
+        
+
+//import { Vector } from "../../../../../java/util/Vector.js";
 
     
 import { BasicErrorNodeUtil } from "../../../../../org/allbinary/data/tree/dom/BasicErrorNodeUtil.js";
@@ -58,7 +61,8 @@ export class EmailsNotUsed
 public constructor (){
 
             super();
-            this.emailInfoVector= Vector()
+            this.emailInfoVector= Vector();
+    
 }
 
 
@@ -72,7 +76,8 @@ var document = document
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PAYMENT))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.START, this, "toXmlNode")
+                                    logUtil!.put(this.commonStrings!.START, this, "toXmlNode");
+    
 
                                     }
                                 
@@ -80,12 +85,14 @@ var document = document
     var node: Node = document.createElement(EmailData.NAME)!;
         
         
-
+;
+    
 
     var size: number = emailInfoVector!.length!;
         
         
-
+;
+    
 
 
 
@@ -97,22 +104,27 @@ var document = document
 index < size; index++)
         {
 
-    var email: Email = emailInfoVector!.get(index) as Email;
-        
-        
+    var email: Email = emailInfoVector!.get(index);
 
+                         as Email;
+        
+        
+;
+    
 
     var emailNode: Node = email.toXmlNode(document)!;
         
         
-
+;
+    
 
                         if(emailNode != 
                                     null
                                 )
                         
                                     {
-                                    node.appendChild(emailNode)
+                                    node.appendChild(emailNode);
+    
 
                                     }
                                 
@@ -122,7 +134,8 @@ index < size; index++)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PAYMENT))
                         
                                     {
-                                    logUtil!.put(commonStrings!.END, this, "toXmlNode()")
+                                    logUtil!.put(commonStrings!.END, this, "toXmlNode()");
+    
 
                                     }
                                 
@@ -132,13 +145,16 @@ index < size; index++)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return node;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGINGERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "toXmlNode()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "toXmlNode()", e);
+    
 
                                     }
                                 
@@ -146,12 +162,15 @@ index < size; index++)
     var error: string = "Error Processing Order.  Please contact us if error persists.<p/>";
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return BasicErrorNodeUtil.get(document, error);
+
+                        ;
     
 }
 

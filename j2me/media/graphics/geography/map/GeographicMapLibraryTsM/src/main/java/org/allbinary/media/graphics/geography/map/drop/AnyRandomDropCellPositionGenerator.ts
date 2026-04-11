@@ -62,36 +62,44 @@ export class AnyRandomDropCellPositionGenerator extends BaseDropCellPositionGene
     public update(allBinaryGameLayerManager: AllBinaryGameLayerManager, geographicMapInterface: BasicGeographicMap){
     //var allBinaryGameLayerManager = allBinaryGameLayerManager
     //var geographicMapInterface = geographicMapInterface
-this.geographicMapInterface= geographicMapInterface
+this.geographicMapInterface= geographicMapInterface;
+    
 
     var basicGeographicMapCellPositionFactory: BasicGeographicMapCellPositionFactory = geographicMapInterface!.getGeographicMapCellPositionFactory()!;
         
         
-
+;
+    
 
     var randomFactory: MyRandomFactory = MyRandomFactory.getInstance()!;
         
         
-
+;
+    
 
     var tiledLayer: AllBinaryTiledLayer = geographicMapInterface!.getAllBinaryTiledLayer()!;
         
         
-
+;
+    
 
     var total: number = tiledLayer!.getColumns() *tiledLayer!.getRows();
         
         
-
+;
+    
 
     var randomColumn: number= 0
-
+;
+    
 
     var randomRow: number= 0
-
+;
+    
 
     var geographicMapCellPosition: GeographicMapCellPosition
-
+;
+    
 
 
 
@@ -102,14 +110,18 @@ this.geographicMapInterface= geographicMapInterface
         
 --index >= 0; )
         {
-randomColumn= randomFactory!.getAbsoluteNextInt(tiledLayer!.getColumns())
-randomRow= randomFactory!.getAbsoluteNextInt(tiledLayer!.getRows())
-geographicMapCellPosition= basicGeographicMapCellPositionFactory!.getInstance(randomColumn, randomRow)
+randomColumn= randomFactory!.getAbsoluteNextInt(tiledLayer!.getColumns());
+    
+randomRow= randomFactory!.getAbsoluteNextInt(tiledLayer!.getRows());
+    
+geographicMapCellPosition= basicGeographicMapCellPositionFactory!.getInstance(randomColumn, randomRow);
+    
 
                         if(this.isDropAllowedAt(geographicMapCellPosition))
                         
                                     {
-                                    this.list.add(geographicMapCellPosition)
+                                    this.list.add(geographicMapCellPosition);
+    
 
                                     }
                                 

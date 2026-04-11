@@ -54,7 +54,8 @@ export class LifePickedUpLayerInterfaceFactory extends PickedUpLayerInterfaceFac
                 //@Throws(Error::class)
             
     public static init(){
-pickedUpLayerInterfaceFactoryInterface= LifePickedUpLayerInterfaceFactory()
+pickedUpLayerInterfaceFactoryInterface= LifePickedUpLayerInterfaceFactory();
+    
 }
 
 
@@ -97,7 +98,8 @@ private constructor ()
             
     public process(sourceLayerInterface: AllBinaryLayer){
 var sourceLayerInterface = sourceLayerInterface
-pool.visit(sourceLayerInterface)
+pool.visit(sourceLayerInterface);
+    
 }
 
 

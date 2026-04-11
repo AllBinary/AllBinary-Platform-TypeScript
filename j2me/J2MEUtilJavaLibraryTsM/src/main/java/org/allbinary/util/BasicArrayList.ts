@@ -27,7 +27,7 @@ export class BasicArrayList
         
         
 
-    public objectArray: any = {}[]
+    public objectArray: any[]
 
     private currentIndex: number = 0;
         
@@ -54,14 +54,16 @@ public constructor (size: number)
 
                                     }
                                 
-objectArray= new Array(size)
+objectArray= new Array(size);
+    
 }
 
-public constructor (objectArray: any = {}[]){
+public constructor (objectArray: any[]){
 
             super();
                 //var objectArray = objectArray
-this.objectArray= objectArray
+this.objectArray= objectArray;
+    
 }
 
 public constructor ()                        
@@ -87,11 +89,16 @@ public constructor ()
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(CommonLabels.getInstance()!.INDEX_LABEL)
-stringBuffer!.appendint(index)
-stringBuffer!.append(SIZE)
-stringBuffer!.appendint(currentIndex)
+;
+    
+stringBuffer!.append(CommonLabels.getInstance()!.INDEX_LABEL);
+    
+stringBuffer!.appendint(index);
+    
+stringBuffer!.append(SIZE);
+    
+stringBuffer!.appendint(currentIndex);
+    
 
 
 
@@ -99,23 +106,29 @@ stringBuffer!.appendint(currentIndex)
 
                                     }
                                 
-ensureCapacity(currentIndex +1)
+ensureCapacity(currentIndex +1);
+    
 
 
 
         for (let i = ; i < ; i++) {
             objectArray[ + i] = objectArray[i]!;
         }
+    ;
     
-objectArray[index]= element
-currentIndex++
+objectArray[index]= element;
+    
+currentIndex++;
+    
 }
 
 
     public add(anyType: any = {}): boolean{
     //var anyType = anyType
-ensureCapacity(currentIndex +1)
-objectArray[currentIndex++]= anyType
+ensureCapacity(currentIndex +1);
+    
+objectArray[currentIndex++]= anyType;
+    
 
 
 
@@ -135,11 +148,16 @@ objectArray[currentIndex++]= anyType
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(CommonLabels.getInstance()!.INDEX_LABEL)
-stringBuffer!.appendint(index)
-stringBuffer!.append(SIZE)
-stringBuffer!.appendint(currentIndex)
+;
+    
+stringBuffer!.append(CommonLabels.getInstance()!.INDEX_LABEL);
+    
+stringBuffer!.appendint(index);
+    
+stringBuffer!.append(SIZE);
+    
+stringBuffer!.appendint(currentIndex);
+    
 
 
 
@@ -151,18 +169,23 @@ stringBuffer!.appendint(currentIndex)
     var oldValue: any = {} = objectArray[index]!;
         
         
-
+;
+    
 
     var numMoved: number = currentIndex -index -1;
         
         
-
+;
+    
 
                         if(numMoved > 0)
-                        System.arraycopy(objectArray, index +1, objectArray, index, numMoved)
+                        System.arraycopy(objectArray, index +1, objectArray, index, numMoved);
+
+                        
 objectArray[--currentIndex]= 
                                         null
-                                    
+                                    ;
+    
 
 
 
@@ -200,7 +223,8 @@ index < currentIndex; index++)
     var numMoved: number = currentIndex -index -1;
         
         
-
+;
+    
 
                         if(numMoved > 0)
                         
@@ -211,13 +235,15 @@ index < currentIndex; index++)
         for (let i = ; i < numMoved; i++) {
             objectArray[index + i] = objectArray[i]!;
         }
+    ;
     
 
                                     }
                                 
 objectArray[--currentIndex]= 
                                         null
-                                    
+                                    ;
+    
 
 
 
@@ -251,7 +277,8 @@ index < currentIndex; index++)
     var numMoved: number = currentIndex -index -1;
         
         
-
+;
+    
 
                         if(numMoved > 0)
                         
@@ -262,13 +289,15 @@ index < currentIndex; index++)
         for (let i = ; i < numMoved; i++) {
             objectArray[index + i] = objectArray[i]!;
         }
+    ;
     
 
                                     }
                                 
 objectArray[--currentIndex]= 
                                         null
-                                    
+                                    ;
+    
 
 
 
@@ -298,12 +327,14 @@ objectArray[--currentIndex]=
     var result: boolean = true;
         
         
-
+;
+    
 
     var size: number = list.size()!;
         
         
-
+;
+    
 
 
 
@@ -322,7 +353,8 @@ index < size; index++)
                                     }
                                 
                         else {
-                            result= false
+                            result= false;
+    
 
                         }
                             
@@ -339,12 +371,14 @@ index < size; index++)
 
     public addAll2(list: BasicArrayList): boolean{
     //var list = list
-ensureCapacity(currentIndex +list.currentIndex)
+ensureCapacity(currentIndex +list.currentIndex);
+    
 
     var listSize: number = list.currentIndex;
         
         
-
+;
+    
 
 
 
@@ -355,7 +389,8 @@ ensureCapacity(currentIndex +list.currentIndex)
         
 index < listSize; index++)
         {
-objectArray[currentIndex++]= list.objectArray[index]!
+objectArray[currentIndex++]= list.objectArray[index]!;
+    
 }
 
 
@@ -370,36 +405,43 @@ objectArray[currentIndex++]= list.objectArray[index]!
     public addAll(list: BasicArrayList): boolean{
     //var list = list
 
-    var newObjectArray: any = {}[] = list.toArray()!;
+    var newObjectArray: any[] = list.toArray()!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.addAll(newObjectArray);
+
+                        ;
     
 }
 
 
-    public addAll(newObjectArray: any = {}[]): boolean{
+    public addAll(newObjectArray: any[]): boolean{
     //var newObjectArray = newObjectArray
 
     var numSize: number = newObjectArray!.length
                 ;
         
         
-
-ensureCapacity(currentIndex +numSize)
+;
+    
+ensureCapacity(currentIndex +numSize);
+    
 
 
 
         for (let i = 0; i < numSize; i++) {
             objectArray[currentIndex + i] = newObjectArray[i]!;
         }
+    ;
     
-currentIndex += numSize
+currentIndex += numSize;
+    
 
 
 
@@ -416,7 +458,8 @@ currentIndex += numSize
                 ;
         
         
-
+;
+    
 
                         if(minSize > oldCapacity)
                         
@@ -425,11 +468,13 @@ currentIndex += numSize
     var newCapacity: number = ((oldCapacity *3) shr 1) +1;
         
         
-
+;
+    
 
                         if(newCapacity < minSize)
                         newCapacity= minSize
-objectArray= arrayUtil!.copyOf(objectArray, newCapacity)
+objectArray= arrayUtil!.copyOf(objectArray, newCapacity);
+    
 
                                     }
                                 
@@ -442,7 +487,8 @@ objectArray= arrayUtil!.copyOf(objectArray, newCapacity)
                 ;
         
         
-
+;
+    
 
                         if(currentIndex < oldCapacity)
                         objectArray= arrayUtil!.copyOf(objectArray, currentIndex)
@@ -591,11 +637,16 @@ i >= 0; i--)
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(CommonLabels.getInstance()!.INDEX_LABEL)
-stringBuffer!.appendint(index)
-stringBuffer!.append(SIZE)
-stringBuffer!.appendint(currentIndex)
+;
+    
+stringBuffer!.append(CommonLabels.getInstance()!.INDEX_LABEL);
+    
+stringBuffer!.appendint(index);
+    
+stringBuffer!.append(SIZE);
+    
+stringBuffer!.appendint(currentIndex);
+    
 
 
 
@@ -623,11 +674,16 @@ stringBuffer!.appendint(currentIndex)
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(CommonLabels.getInstance()!.INDEX_LABEL)
-stringBuffer!.appendint(index)
-stringBuffer!.append(SIZE)
-stringBuffer!.appendint(currentIndex)
+;
+    
+stringBuffer!.append(CommonLabels.getInstance()!.INDEX_LABEL);
+    
+stringBuffer!.appendint(index);
+    
+stringBuffer!.append(SIZE);
+    
+stringBuffer!.appendint(currentIndex);
+    
 
 
 
@@ -639,8 +695,10 @@ stringBuffer!.appendint(currentIndex)
     var oldValue: any = {} = objectArray[index]!;
         
         
-
-objectArray[index]= element
+;
+    
+objectArray[index]= element;
+    
 
 
 
@@ -663,10 +721,12 @@ i < currentIndex; i++)
         {
 objectArray[i]= 
                                         null
-                                    
+                                    ;
+    
 }
 
-currentIndex= 0
+currentIndex= 0;
+    
 }
 
 
@@ -701,17 +761,19 @@ currentIndex= 0
 }
 
 
-    public toArray(): any = {}[]{
+    public toArray(): any[]{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return arrayUtil!.copyOf(objectArray, currentIndex);
+
+                        ;
     
 }
 
 
-    public toArray(objectArray: any = {}[]): any = {}[]{
+    public toArray(objectArray: any[]): any[]{
     //var objectArray = objectArray
 
                         if(objectArray!.length < currentIndex)
@@ -719,7 +781,9 @@ currentIndex= 0
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return arrayUtil!.copyOf(this.objectArray, currentIndex, objectArray!::class);
+                        return arrayUtil!.copyOf(this.objectArray, currentIndex, objectArray!constructor);
+
+                        ;
     
 
 
@@ -727,6 +791,7 @@ currentIndex= 0
         for (let i = 0; i < currentIndex; i++) {
             objectArray[0 + i] = this.objectArray[i]!;
         }
+    ;
     
 
                         if(objectArray!.length > currentIndex)
@@ -747,15 +812,18 @@ currentIndex= 0
     var list: BasicArrayList = new BasicArrayList();
         
         
-
+;
+    
 
     var size: number = this.size()!;
         
         
-
+;
+    
 
     var anyType: any = {}
-
+;
+    
 
 
 
@@ -766,8 +834,10 @@ currentIndex= 0
         
 index < size; index++)
         {
-anyType= this.objectArray[index]!
-list.add(anyType)
+anyType= this.objectArray[index]!;
+    
+list.add(anyType);
+    
 }
 
 
@@ -784,12 +854,14 @@ list.add(anyType)
     var COMMA_SEP: string = CommonSeps.getInstance()!.COMMA_SEP;
         
         
-
+;
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
 
 
@@ -800,8 +872,10 @@ list.add(anyType)
         
 index < currentIndex; index++)
         {
-stringBuffer!.append(objectArray[index]!.toString())
-stringBuffer!.append(COMMA_SEP)
+stringBuffer!.append(objectArray[index]!.toString());
+    
+stringBuffer!.append(COMMA_SEP);
+    
 }
 
 
@@ -809,6 +883,8 @@ stringBuffer!.append(COMMA_SEP)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

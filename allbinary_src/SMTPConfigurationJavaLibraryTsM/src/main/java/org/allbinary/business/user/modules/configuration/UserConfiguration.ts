@@ -51,18 +51,28 @@ export class UserConfiguration
 public constructor (){
 
             super();
-            this.userEmailConfigurationInterface= UserEmailConfiguration() as UserEmailConfigurationInterface
-this.timeCreated= TimeCreated(0)
-this.timeLastModified= TimeLastModified(0)
+            this.userEmailConfigurationInterface= UserEmailConfiguration() as UserEmailConfigurationInterface;
+    
+this.timeCreated= TimeCreated(0);
+    
+this.timeLastModified= TimeLastModified(0);
+    
 }
 
-public constructor (hashMap: HashMap<Any, Any>){
+public constructor (hashMap: HashMap<any, any>){
 
             super();
             var hashMap = hashMap
-this.userEmailConfigurationInterface= UserEmailConfiguration(hashMap) as UserEmailConfigurationInterface
-this.timeCreated= TimeCreated(hashMap!.get(EntryData.getInstance()!.TIMECREATED) as String)
-this.timeLastModified= TimeLastModified(hashMap!.get(EntryData.getInstance()!.LASTMODIFIED) as String)
+this.userEmailConfigurationInterface= UserEmailConfiguration(hashMap) as UserEmailConfigurationInterface;
+    
+this.timeCreated= TimeCreated(hashMap!.get(EntryData.getInstance()!.TIMECREATED);
+
+                         as String);
+    
+this.timeLastModified= TimeLastModified(hashMap!.get(EntryData.getInstance()!.LASTMODIFIED);
+
+                         as String);
+    
 }
 
 
@@ -78,7 +88,8 @@ this.timeLastModified= TimeLastModified(hashMap!.get(EntryData.getInstance()!.LA
 
     public setUserEmailConfigurationInterface(userEmailConfigurationInterface: UserEmailConfigurationInterface){
 var userEmailConfigurationInterface = userEmailConfigurationInterface
-this.userEmailConfigurationInterface= userEmailConfigurationInterface
+this.userEmailConfigurationInterface= userEmailConfigurationInterface;
+    
 }
 
 
@@ -104,13 +115,15 @@ this.userEmailConfigurationInterface= userEmailConfigurationInterface
 
     public setTimeCreated(timeCreated: TimeCreated){
 var timeCreated = timeCreated
-this.timeCreated= timeCreated
+this.timeCreated= timeCreated;
+    
 }
 
 
     public setTimeLastModified(timeLastModified: TimeLastModified){
 var timeLastModified = timeLastModified
-this.timeLastModified= timeLastModified
+this.timeLastModified= timeLastModified;
+    
 }
 
 

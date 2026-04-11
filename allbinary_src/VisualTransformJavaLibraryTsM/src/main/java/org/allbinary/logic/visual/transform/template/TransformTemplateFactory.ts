@@ -73,7 +73,7 @@ private constructor (){
 
                 //@Throws(Error::class)
             
-    public getInstance(abeClientInformation: AbeClientInformationInterface, templateName: string, propertiesHashMap: HashMap<Any, Any>, pageContext: PageContext): TransformTemplateInterface{
+    public getInstance(abeClientInformation: AbeClientInformationInterface, templateName: string, propertiesHashMap: HashMap<any, any>, pageContext: PageContext): TransformTemplateInterface{
     //var abeClientInformation = abeClientInformation
     //var templateName = templateName
     //var propertiesHashMap = propertiesHashMap
@@ -84,30 +84,38 @@ var pageContext = pageContext
     var transformInfoEntity: TransformInfoEntity = TransformInfoEntityBuilder.getInstance()!;
         
         
-
+;
+    
 
     var transformInfoInterface: TransformInfoInterface = transformInfoEntity!.get(templateName, propertiesHashMap, pageContext)!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return TransformInfoObjectFactory.getInstance()!.getInstance(abeClientInformation, transformInfoInterface) as TransformTemplateInterface;
+                        return TransformInfoObjectFactory.getInstance()!.getInstance(abeClientInformation, transformInfoInterface);
+
+                         as TransformTemplateInterface;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed To Get Instance";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORYERROR))
                         
                                     {
-                                    logUtil!.put(error +templateName +"->TemplateFactory", this, "getInstance(viewName, HashMap, PageContext)", e)
+                                    logUtil!.put(error +templateName +"->TemplateFactory", this, "getInstance(viewName, HashMap, PageContext)", e);
+    
 
                                     }
                                 

@@ -54,18 +54,20 @@ export class MediaUtil
 }
 
 
-    static getImageBufferPropertyHashMap(bufferedImage: BufferedImage): HashMap<Any, Any>{
+    static getImageBufferPropertyHashMap(bufferedImage: BufferedImage): HashMap<any, any>{
     //var bufferedImage = bufferedImage
 
-    var hashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
         
         
-
+;
+    
 
     var propertyStringArray: string[] = bufferedImage!.getPropertyNames()!;
         
         
-
+;
+    
 
                         if(propertyStringArray != 
                                     null
@@ -86,8 +88,10 @@ index < propertyStringArray!.length; index++)
     var propertyObject: any = {} = bufferedImage!.getProperty(propertyStringArray[index]!)!;
         
         
-
-hashMap!.put(propertyStringArray[index]!, propertyObject!.toString())
+;
+    
+hashMap!.put(propertyStringArray[index]!, propertyObject!.toString());
+    
 }
 
 
@@ -123,7 +127,9 @@ var newHeight = newHeight
 
                         if(originalImageFile == 
                                     null
-                                 || !originalImageFile!.isFile())
+                                 || !originalImageFile!.isFile();
+
+                        )
                         
                                     {
                                     
@@ -137,7 +143,8 @@ var newHeight = newHeight
     var bufferedImage: BufferedImage = ImageIOUtil.read(originalImageFile)!;
         
         
-
+;
+    
 
                         if(bufferedImage == 
                                     null
@@ -156,11 +163,13 @@ var newHeight = newHeight
                         
                                     {
                                     
-    var hashMap: HashMap<Any, Any> = this.getImageBufferPropertyHashMap(bufferedImage)!;
+    var hashMap: HashMap<any, any> = this.getImageBufferPropertyHashMap(bufferedImage)!;
         
         
-
-logUtil!.put("Image Properties: " +hashMap!.toString(), this, "saveImageFile()")
+;
+    
+logUtil!.put("Image Properties: " +hashMap!.toString(), this, "saveImageFile()");
+    
 
                                     }
                                 
@@ -168,23 +177,28 @@ logUtil!.put("Image Properties: " +hashMap!.toString(), this, "saveImageFile()")
     var imageFile: AbFile = new AbFile(category +newImageFileName);
         
         
-
-imageFile!.createNewFile()
+;
+    
+imageFile!.createNewFile();
+    
 
     var imageUtil: ImageUtil = ImageUtil.getInstance()!;
         
         
-
+;
+    
 
     var newBufferedImage: BufferedImage = imageUtil!.createBufferedImage(bufferedImage, newWidth, newHeight)!;
         
         
-
+;
+    
 
     var isWritten: boolean = ImageIOUtil.write(newBufferedImage as RenderedImage, mediaData!.getName(), imageFile)!;
         
         
-
+;
+    
 
                         if(!isWritten)
                         
@@ -204,29 +218,48 @@ imageFile!.createNewFile()
     var commonLabels: CommonLabels = CommonLabels.getInstance()!;
         
         
-
+;
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("Get Path: ")
-stringBuffer!.append(originalImageFile!.getPath())
-stringBuffer!.append("\nNewImageFileName: ")
-stringBuffer!.append(newImageFileName)
-stringBuffer!.append("\nCategory: ")
-stringBuffer!.append(category)
-stringBuffer!.append("\nSave File Type: ")
-stringBuffer!.append(mediaData!.getName())
-stringBuffer!.append("\nNew")!.append(commonLabels!.WIDTH_LABEL)
-stringBuffer!.appendint(newWidth)
-stringBuffer!.append("\nNew")!.append(commonLabels!.HEIGHT_LABEL)
-stringBuffer!.appendint(newHeight)
-stringBuffer!.append("\nFile Length: ")
-stringBuffer!.appendlong(originalImageFile!.length())
-stringBuffer!.append("\nNew File Length: ")
-stringBuffer!.appendlong(imageFile!.length())
-logUtil!.put(stringBuffer!.toString(), this, "saveImageFile()")
+;
+    
+stringBuffer!.append("Get Path: ");
+    
+stringBuffer!.append(originalImageFile!.getPath());
+    
+stringBuffer!.append("\nNewImageFileName: ");
+    
+stringBuffer!.append(newImageFileName);
+    
+stringBuffer!.append("\nCategory: ");
+    
+stringBuffer!.append(category);
+    
+stringBuffer!.append("\nSave File Type: ");
+    
+stringBuffer!.append(mediaData!.getName());
+    
+stringBuffer!.append("\nNew")!.append(commonLabels!.WIDTH_LABEL);
+    
+stringBuffer!.appendint(newWidth);
+    
+stringBuffer!.append("\nNew")!.append(commonLabels!.HEIGHT_LABEL);
+    
+stringBuffer!.appendint(newHeight);
+    
+stringBuffer!.append("\nFile Length: ");
+    
+stringBuffer!.appendlong(originalImageFile!.length());
+    
+stringBuffer!.append("\nNew File Length: ");
+    
+stringBuffer!.appendlong(imageFile!.length());
+    
+logUtil!.put(stringBuffer!.toString(), this, "saveImageFile()");
+    
 
                                     }
                                 

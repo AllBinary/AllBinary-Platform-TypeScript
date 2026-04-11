@@ -18,7 +18,10 @@
 
 
 
-import { Hashtable } from "../../../../java/util/Hashtable.js";
+            import Hashtable from "@ohos.util.HashMap";
+        
+
+//import { Hashtable } from "../../../../java/util/Hashtable.js";
 
     
 import { CommonSeps } from "../../../../org/allbinary/string/CommonSeps.js";
@@ -43,7 +46,7 @@ export class LayerUtil
         
         
 
-    public static toString(hashtable: Hashtable<Any, Any>, x: number, y: number, z: number): string{
+    public static toString(hashtable: Hashtable<any, any>, x: number, y: number, z: number): string{
 var hashtable = hashtable
 var x = x
 var y = y
@@ -52,33 +55,49 @@ var z = z
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
         
         
-
+;
+    
 
     var positionStrings: PositionStrings = PositionStrings.getInstance()!;
         
         
-
+;
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(HASHTABLE)
-stringBuffer!.append(StringUtil.getInstance()!.toString(hashtable))
-stringBuffer!.append(commonSeps!.SPACE)
-stringBuffer!.append(positionStrings!.X_LABEL)
-stringBuffer!.appendint(x)
-stringBuffer!.append(commonSeps!.SPACE)
-stringBuffer!.append(positionStrings!.Y_LABEL)
-stringBuffer!.appendint(y)
-stringBuffer!.append(commonSeps!.SPACE)
-stringBuffer!.append(positionStrings!.Z_LABEL)
-stringBuffer!.appendint(z)
+;
+    
+stringBuffer!.append(HASHTABLE);
+    
+stringBuffer!.append(StringUtil.getInstance()!.toString(hashtable));
+    
+stringBuffer!.append(commonSeps!.SPACE);
+    
+stringBuffer!.append(positionStrings!.X_LABEL);
+    
+stringBuffer!.appendint(x);
+    
+stringBuffer!.append(commonSeps!.SPACE);
+    
+stringBuffer!.append(positionStrings!.Y_LABEL);
+    
+stringBuffer!.appendint(y);
+    
+stringBuffer!.append(commonSeps!.SPACE);
+    
+stringBuffer!.append(positionStrings!.Z_LABEL);
+    
+stringBuffer!.appendint(z);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

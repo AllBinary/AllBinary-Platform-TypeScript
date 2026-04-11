@@ -60,8 +60,10 @@ export class ScreenCaptureImagesWorker extends BasicEventHandler
 public constructor (){
 
             super();
-            screenScavangerRobot= ScreenScavangerRobot()
-index= ProcessingFrameIndexFactory.next()
+            screenScavangerRobot= ScreenScavangerRobot();
+    
+index= ProcessingFrameIndexFactory.next();
+    
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
@@ -79,7 +81,8 @@ index= ProcessingFrameIndexFactory.next()
 
     public setRunning(running: boolean){
 var running = running
-this.running= running
+this.running= running;
+    
 }
 
 
@@ -93,43 +96,59 @@ var thread = thread
     public run(){
 
         try {
-            logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.RUN)
-setRunning(true)
+            logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.RUN);
+    
+setRunning(true);
+    
 
     var timeHelper: TimeDelayHelper = new TimeDelayHelper(1000);
         
         
-
+;
+    
 
         while(isRunning())
         {
-timeHelper!.setStartTime()
+timeHelper!.setStartTime();
+    
 
     var bufferedImage: BufferedImage = screenScavangerRobot!.getScreenAsBufferedImages()[0]!;
         
         
-
+;
+    
 
     var frame: Long = new index as Long;
         
         
-
-index++
-CapturedBufferedImagesCacheSingleton.getInstance()!.add(BufferedImageFrameCacheable(bufferedImage, frame))
+;
+    
+index++;
+    
+CapturedBufferedImagesCacheSingleton.getInstance()!.add(BufferedImageFrameCacheable(bufferedImage, frame));
+    
 
     var capturedImageEvent: CapturedImageWorkerResultsEvent = new CapturedImageWorkerResultsEvent(this, frame, bufferedImage);
         
         
-
-fireEvent(capturedImageEvent)
-logUtil!.put(CommonLabels.getInstance()!.ELAPSED +timeHelper!.getElapsed(), this, this.commonStrings!.RUN)
-setRunning(false)
+;
+    
+fireEvent(capturedImageEvent);
+    
+logUtil!.put(CommonLabels.getInstance()!.ELAPSED +timeHelper!.getElapsed(), this, this.commonStrings!.RUN);
+    
+setRunning(false);
+    
 }
 
-logUtil!.put(this.commonStrings!.END, this, this.commonStrings!.RUN)
-} catch(e: Exception)
+logUtil!.put(this.commonStrings!.END, this, this.commonStrings!.RUN);
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e)
+logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e);
+    
 }
 
 }

@@ -75,7 +75,8 @@ export class InputAutomationModuleBundleActivator
 public constructor (){
 
             super();
-            this.init()
+            this.init();
+    
 }
 
 
@@ -97,7 +98,8 @@ var context = context
     var serviceReference: ServiceReference = context.getServiceReference(InputAutomationConfigurationModuleChangeListener::class.toString()!)!;
         
         
-
+;
+    
 
                         if(serviceReference != 
                                     null
@@ -105,10 +107,13 @@ var context = context
                         
                                     {
                                     
-    var inputAutomationConfigurationModuleChangeListener: InputAutomationConfigurationModuleChangeListener = context.getService(serviceReference) as InputAutomationConfigurationModuleChangeListener;
-        
-        
+    var inputAutomationConfigurationModuleChangeListener: InputAutomationConfigurationModuleChangeListener = context.getService(serviceReference);
 
+                         as InputAutomationConfigurationModuleChangeListener;
+        
+        
+;
+    
 
                         if(inputAutomationConfigurationModuleChangeListener == 
                                     null
@@ -125,7 +130,8 @@ var context = context
                                     }
                                 
                         else {
-                            logUtil!.put("No ServiceReference: " +InputAutomationConfigurationModuleChangeListener::class.toString()!, this, "addModules")
+                            logUtil!.put("No ServiceReference: " +InputAutomationConfigurationModuleChangeListener::class.toString()!, this, "addModules");
+    
 
 
 
@@ -142,12 +148,14 @@ var context = context
 var context = context
 
         try {
-            logUtil!.put(this.commonStrings!.START, this, "addModules")
+            logUtil!.put(this.commonStrings!.START, this, "addModules");
+    
 
     var inputAutomationConfigurationModuleChangeListener: InputAutomationConfigurationModuleChangeListener = this.getInputAutomationConfigurationModuleChangeListener(context)!;
         
         
-
+;
+    
 
                         if(inputAutomationConfigurationModuleChangeListener != 
                                     null
@@ -168,16 +176,21 @@ index < this.getInputAutomationModuleInterface()!.length; index++)
     var inputAutomationConfigurationModuleChangeEvent: InputAutomationConfigurationModuleChangeEvent = InputAutomationConfigurationUtil.getChangeEvent(this.getInputAutomationModuleInterface()[index]!)!;
         
         
-
-inputAutomationConfigurationModuleChangeListener!.onAdd(inputAutomationConfigurationModuleChangeEvent)
+;
+    
+inputAutomationConfigurationModuleChangeListener!.onAdd(inputAutomationConfigurationModuleChangeEvent);
+    
 }
 
 
                                     }
                                 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, this, "addModules")
+logUtil!.put(this.commonStrings!.EXCEPTION, this, "addModules");
+    
 }
 
 }
@@ -187,7 +200,8 @@ logUtil!.put(this.commonStrings!.EXCEPTION, this, "addModules")
             
     public registerAsService(bundleContext: BundleContext){
 var bundleContext = bundleContext
-OSGIActivatorUtil.registerAsService(bundleContext, getServiceFactory(), InputAutomationModuleServiceInterface::class.toString()!)
+OSGIActivatorUtil.registerAsService(bundleContext, getServiceFactory(), InputAutomationModuleServiceInterface::class.toString()!);
+    
 }
 
 
@@ -195,12 +209,14 @@ OSGIActivatorUtil.registerAsService(bundleContext, getServiceFactory(), InputAut
 var context = context
 
         try {
-            logUtil!.put(this.commonStrings!.START, this, "removeModules")
+            logUtil!.put(this.commonStrings!.START, this, "removeModules");
+    
 
     var inputAutomationConfigurationModuleChangeListener: InputAutomationConfigurationModuleChangeListener = this.getInputAutomationConfigurationModuleChangeListener(context)!;
         
         
-
+;
+    
 
                         if(inputAutomationConfigurationModuleChangeListener != 
                                     null
@@ -221,16 +237,21 @@ index < this.getInputAutomationModuleInterface()!.length; index++)
     var inputAutomationConfigurationModuleChangeEvent: InputAutomationConfigurationModuleChangeEvent = InputAutomationConfigurationUtil.getChangeEvent(this.getInputAutomationModuleInterface()[index]!)!;
         
         
-
-inputAutomationConfigurationModuleChangeListener!.onRemove(inputAutomationConfigurationModuleChangeEvent)
+;
+    
+inputAutomationConfigurationModuleChangeListener!.onRemove(inputAutomationConfigurationModuleChangeEvent);
+    
 }
 
 
                                     }
                                 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, this, "removeModules")
+logUtil!.put(this.commonStrings!.EXCEPTION, this, "removeModules");
+    
 }
 
 }
@@ -240,9 +261,12 @@ logUtil!.put(this.commonStrings!.EXCEPTION, this, "removeModules")
             
     public start(context: BundleContext){
 var context = context
-logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.START)
-this.addModules(context)
-this.registerAsService(context)
+logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.START);
+    
+this.addModules(context);
+    
+this.registerAsService(context);
+    
 }
 
 
@@ -250,8 +274,10 @@ this.registerAsService(context)
             
     public stop(context: BundleContext){
 var context = context
-logUtil!.put(this.commonStrings!.START, this, "stop")
-this.removeModules(context)
+logUtil!.put(this.commonStrings!.START, this, "stop");
+    
+this.removeModules(context);
+    
 }
 
 
@@ -267,7 +293,8 @@ this.removeModules(context)
 
     setInputAutomationModuleInterface(inputAutomationModuleInterface: InputAutomationModuleFactoryInterface[]){
 var inputAutomationModuleInterface = inputAutomationModuleInterface
-this.inputAutomationModuleInterface= inputAutomationModuleInterface
+this.inputAutomationModuleInterface= inputAutomationModuleInterface;
+    
 }
 
 
@@ -283,7 +310,8 @@ this.inputAutomationModuleInterface= inputAutomationModuleInterface
 
     setServiceFactory(serviceObject: ServiceFactory){
 var serviceObject = serviceObject
-this.serviceFactory= serviceObject
+this.serviceFactory= serviceObject;
+    
 }
 
 

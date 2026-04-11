@@ -18,10 +18,13 @@
 
 
 
+            import Hashtable from "@ohos.util.HashMap";
+        
 import { InputStream } from "../../../../java/io/InputStream.js";
 
     
-import { Hashtable } from "../../../../java/util/Hashtable.js";
+
+//import { Hashtable } from "../../../../java/util/Hashtable.js";
 
     
 import { Activity } from "../../../../android/app/Activity.js";
@@ -92,7 +95,7 @@ export class ResourceUtil
         
         
 
-    private hashMap: Hashtable<Any, Any> = new Hashtable<Any, Any>();
+    private hashMap: Hashtable<any, any> = new Hashtable<any, any>();
         
         
 private constructor (){
@@ -113,29 +116,35 @@ private constructor (){
 
     public setContext(activity: Activity){
 var activity = activity
-this.context= activity
+this.context= activity;
+    
 }
 
 
     public setContext(aContext: Context){
 var aContext = aContext
-this.context= aContext
+this.context= aContext;
+    
 }
 
 
     public getResourceId(resource: string): Integer{
 var resource = resource
 
-    var value: Integer = this.hashMap!.get(resource as Object) as Integer;
-        
-        
+    var value: Integer = this.hashMap!.get(resource as Object);
 
+                         as Integer;
+        
+        
+;
+    
 
                         if(DebugFactory.getInstance() != NoDebug.getInstance())
                         
                                     {
                                     PreLogUtil.put(StringMaker().
-                            append(resource)!.append(CommonSeps.getInstance()!.COLON)!.append(value.toString())!.toString(), this, "getResourceId")
+                            append(resource)!.append(CommonSeps.getInstance()!.COLON)!.append(value.toString())!.toString(), this, "getResourceId");
+    
 
                                     }
                                 
@@ -156,20 +165,23 @@ var value = value
                         
                                     {
                                     PreLogUtil.put(StringMaker().
-                            append(resource)!.append(CommonSeps.getInstance()!.COLON)!.append(value.toString())!.toString(), this, "addResource")
+                            append(resource)!.append(CommonSeps.getInstance()!.COLON)!.append(value.toString())!.toString(), this, "addResource");
+    
 
                         if(this.containsDuplicate(resource, value))
                         
                                     {
                                     ForcedLogUtil.log(StringMaker().
-                            append("Found Duplicate Resource: ")!.append(resource)!.toString(), this)
+                            append("Found Duplicate Resource: ")!.append(resource)!.toString(), this);
+    
 
                                     }
                                 
 
                                     }
                                 
-this.hashMap!.put(resource, value)
+this.hashMap!.put(resource, value);
+    
 }
 
 
@@ -177,10 +189,11 @@ this.hashMap!.put(resource, value)
 var resource = resource
 var value = value
 
-    var objectArray: any = {}[] = HashtableUtil.getInstance()!.getKeysAsArray(hashMap)!;
+    var objectArray: any[] = HashtableUtil.getInstance()!.getKeysAsArray(hashMap)!;
         
         
-
+;
+    
 
 
 
@@ -193,10 +206,13 @@ var value = value
 --index >= 0; )
         {
 
-    var integer: Integer = this.hashMap!.get(objectArray[index]! as Object) as Integer;
-        
-        
+    var integer: Integer = this.hashMap!.get(objectArray[index]! as Object);
 
+                         as Integer;
+        
+        
+;
+    
 
                         if(resource != objectArray[index])
                         
@@ -238,8 +254,10 @@ var value = value
     public setResources(resources: Resources){
     //var resources = resources
 logUtil!.put(StringMaker().
-                            append("Resource Loader: ")!.append(resources::class.toString()!)!.toString(), this, "setResources")
-this.resources= resources
+                            append("Resource Loader: ")!.append(resources.constructor.name.toString()!)!.toString(), this, "setResources");
+    
+this.resources= resources;
+    
 }
 
 
@@ -248,21 +266,26 @@ this.resources= resources
     public getResourceAsStream(resource: string): InputStream{
     //var resource = resource
 
-    var integer: Integer = this.hashMap!.get(resource as Object) as Integer;
-        
-        
+    var integer: Integer = this.hashMap!.get(resource as Object);
 
+                         as Integer;
+        
+        
+;
+    
 
     var id: number = integer.toInt()!;
         
         
-
+;
+    
 
     var inputStream: InputStream = 
                                     (resources as Resources).openRawResource(id)!;
         
         
-
+;
+    
 
                         if(inputStream != 
                                     null

@@ -61,7 +61,8 @@ var foregroundBasicColor = foregroundBasicColor
             
     public init(rectangle: Rectangle){
 var rectangle = rectangle
-super.init(rectangle, FormTypeFactory.getInstance()!.TEMP_HORIZONTAL_FORM)
+super.init(rectangle, FormTypeFactory.getInstance()!.TEMP_HORIZONTAL_FORM);
+    
 }
 
 

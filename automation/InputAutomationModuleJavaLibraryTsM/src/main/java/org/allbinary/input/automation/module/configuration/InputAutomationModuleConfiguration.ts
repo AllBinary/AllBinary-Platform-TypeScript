@@ -104,7 +104,8 @@ public constructor (abeClientInformation: AbeClientInformationInterface, node: N
             super();
                 //var abeClientInformation = abeClientInformation
     //var node = node
-this.init(abeClientInformation, node)
+this.init(abeClientInformation, node);
+    
 }
 
 public constructor (abeClientInformation: AbeClientInformationInterface, name: string, className: string){
@@ -113,17 +114,22 @@ public constructor (abeClientInformation: AbeClientInformationInterface, name: s
                 //var abeClientInformation = abeClientInformation
     //var name = name
     //var className = className
-this.setName(name)
-this.setClassName(className)
-this.init(abeClientInformation)
+this.setName(name);
+    
+this.setClassName(className);
+    
+this.init(abeClientInformation);
+    
 }
 
 public constructor (inputAutomationModuleInterface: InputAutomationModuleFactoryInterface){
 
             super();
             var inputAutomationModuleInterface = inputAutomationModuleInterface
-this.setInputAutomationModuleInterface(inputAutomationModuleInterface)
-this.setClassName(this.inputAutomationModuleInterface!.::class.toString()!)
+this.setInputAutomationModuleInterface(inputAutomationModuleInterface);
+    
+this.setClassName(this.inputAutomationModuleInterface!..constructor.name.toString()!);
+    
 }
 
 
@@ -136,7 +142,8 @@ this.setClassName(this.inputAutomationModuleInterface!.::class.toString()!)
     var nodeList: NodeList = node.getChildNodes()!;
         
         
-
+;
+    
 
                         if(nodeList != 
                                     null
@@ -147,20 +154,24 @@ this.setClassName(this.inputAutomationModuleInterface!.::class.toString()!)
     var classNameNode: Node = DomSearchHelper.getNode(DynamicObjectData.NAME, nodeList)!;
         
         
-
+;
+    
 
                         if(classNameNode != 
                                     null
                                 )
                         
                                     {
-                                    this.setClassName(DomNodeHelper.getTextNodeValue(classNameNode))
-this.init(abeClientInformation)
+                                    this.setClassName(DomNodeHelper.getTextNodeValue(classNameNode));
+    
+this.init(abeClientInformation);
+    
 
                                     }
                                 
                         else {
-                            logUtil!.put("Class Node Null", this, this.commonStrings!.INIT)
+                            logUtil!.put("Class Node Null", this, this.commonStrings!.INIT);
+    
 
                         }
                             
@@ -168,7 +179,8 @@ this.init(abeClientInformation)
                                     }
                                 
                         else {
-                            logUtil!.put(InputAutomationData.NAME +" Node Has No Children", this, "Contructor")
+                            logUtil!.put(InputAutomationData.NAME +" Node Has No Children", this, "Contructor");
+    
 
                         }
                             
@@ -179,12 +191,20 @@ this.init(abeClientInformation)
     //var abeClientInformation = abeClientInformation
 
         try {
-            logUtil!.put("Name: " +getName(), this, this.commonStrings!.INIT)
-logUtil!.put("ClassName: " +className, this, this.commonStrings!.INIT)
-this.setInputAutomationModuleInterface(AbeFactory.getInstance()!.getInstance()!.getInstance(abeClientInformation, getClassName()) as InputAutomationModuleFactoryInterface)
-} catch(e: Exception)
+            logUtil!.put("Name: " +getName(), this, this.commonStrings!.INIT);
+    
+logUtil!.put("ClassName: " +className, this, this.commonStrings!.INIT);
+    
+this.setInputAutomationModuleInterface(AbeFactory.getInstance()!.getInstance()!.getInstance(abeClientInformation, getClassName());
+
+                         as InputAutomationModuleFactoryInterface);
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, this.commonStrings!.INIT, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, this.commonStrings!.INIT, e);
+    
 
 
 
@@ -202,13 +222,16 @@ var document = document
     var node: Node = document.createElement(InputAutomationModuleData.NAME)!;
         
         
-
+;
+    
 
     var classNameNode: Node = ModDomHelper.createTextNode(document, DynamicObjectData.NAME, this.getClassName())!;
         
         
-
-node.appendChild(classNameNode)
+;
+    
+node.appendChild(classNameNode);
+    
 
 
 
@@ -230,8 +253,10 @@ node.appendChild(classNameNode)
 
     public setName(name: string){
 var name = name
-logUtil!.put("Name: " +name, this, "setName")
-this.name= name
+logUtil!.put("Name: " +name, this, "setName");
+    
+this.name= name;
+    
 }
 
 
@@ -247,8 +272,10 @@ this.name= name
 
     public setClassName(className: string){
     //var className = className
-logUtil!.put("ClassName : " +className, this, "setClassName")
-this.className= className
+logUtil!.put("ClassName : " +className, this, "setClassName");
+    
+this.className= className;
+    
 }
 
 
@@ -264,9 +291,12 @@ this.className= className
 
     public setInputAutomationModuleInterface(inputAutomationModuleInterface: InputAutomationModuleFactoryInterface){
 var inputAutomationModuleInterface = inputAutomationModuleInterface
-logUtil!.put("InputAutomationModuleFactoryInterface : " +inputAutomationModuleInterface, this, "setInputAutomationModuleInterface")
-this.inputAutomationModuleInterface= inputAutomationModuleInterface
-this.setName(this.inputAutomationModuleInterface!.getName())
+logUtil!.put("InputAutomationModuleFactoryInterface : " +inputAutomationModuleInterface, this, "setInputAutomationModuleInterface");
+    
+this.inputAutomationModuleInterface= inputAutomationModuleInterface;
+    
+this.setName(this.inputAutomationModuleInterface!.getName());
+    
 }
 
 

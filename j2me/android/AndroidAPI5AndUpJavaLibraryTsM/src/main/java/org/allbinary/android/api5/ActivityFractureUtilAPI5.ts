@@ -72,22 +72,30 @@ export class ActivityFractureUtilAPI5 extends ActivityFractureUtilAPI1 {
     var touchScreenFactory: TouchScreenFactory = TouchScreenFactory.getInstance()!;
         
         
-
+;
+    
 
     var touchScreenTypeFactory: TouchScreenTypeFactory = TouchScreenTypeFactory.getInstance()!;
         
         
-
-touchScreenFactory!.setTouch(this.isTouch(activity))
-touchScreenFactory!.setMultiTouch(this.isMultiTouch(activity))
-touchScreenFactory!.setMultiTouchDistinct(this.isMultiTouchDistinct(activity))
-touchScreenTypeFactory!.update(activity)
+;
+    
+touchScreenFactory!.setTouch(this.isTouch(activity));
+    
+touchScreenFactory!.setMultiTouch(this.isMultiTouch(activity));
+    
+touchScreenFactory!.setMultiTouchDistinct(this.isMultiTouchDistinct(activity));
+    
+touchScreenTypeFactory!.update(activity);
+    
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-PreLogUtil.put(touchScreenFactory!.toString(), this, commonStrings!.PROCESS)
+;
+    
+PreLogUtil.put(touchScreenFactory!.toString(), this, commonStrings!.PROCESS);
+    
 }
 
 
@@ -98,6 +106,8 @@ PreLogUtil.put(touchScreenFactory!.toString(), this, commonStrings!.PROCESS)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.isFeature(activity, this.FEATURE_TOUCHSCREEN);
+
+                        ;
     
 }
 
@@ -109,6 +119,8 @@ PreLogUtil.put(touchScreenFactory!.toString(), this, commonStrings!.PROCESS)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.isFeature(activity, this.FEATURE_TOUCHSCREEN_MULTITOUCH);
+
+                        ;
     
 }
 
@@ -120,6 +132,8 @@ PreLogUtil.put(touchScreenFactory!.toString(), this, commonStrings!.PROCESS)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.isFeature(activity, this.FEATURE_TOUCHSCREEN_MULTITOUCH_DISTINCT);
+
+                        ;
     
 }
 
@@ -132,6 +146,8 @@ PreLogUtil.put(touchScreenFactory!.toString(), this, commonStrings!.PROCESS)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return activity.getPackageManager()!.hasSystemFeature(property);
+
+                        ;
     
 }
 

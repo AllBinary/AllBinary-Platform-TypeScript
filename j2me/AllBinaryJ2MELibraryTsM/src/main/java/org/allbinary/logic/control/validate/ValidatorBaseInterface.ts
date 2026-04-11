@@ -18,7 +18,10 @@
 
 
 
-import { Hashtable } from "../../../../../java/util/Hashtable.js";
+            import Hashtable from "@ohos.util.HashMap";
+        
+
+//import { Hashtable } from "../../../../../java/util/Hashtable.js";
 
     
 import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
@@ -32,7 +35,7 @@ interface ValidatorBaseInterface {
 
     public validationInfo(): string
 
-    public toHashtable(): Hashtable<Any, Any>
+    public toHashtable(): Hashtable<any, any>
 
     public toList(): BasicArrayList
 

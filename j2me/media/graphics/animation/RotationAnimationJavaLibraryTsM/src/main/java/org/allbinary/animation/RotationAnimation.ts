@@ -69,8 +69,10 @@ protected constructor (angleInfo: AngleInfo, animationBehavior: AnimationBehavio
 
                             //For kotlin this is before the body of the constructor.
                     
-this.angleInfo= angleInfo
-this.circularIndexUtil= CircularIndexUtil.getInstance(360 /angleInfo!.getAngleIncrementInfo()!.getAngleIncrement())
+this.angleInfo= angleInfo;
+    
+this.circularIndexUtil= CircularIndexUtil.getInstance(360 /angleInfo!.getAngleIncrementInfo()!.getAngleIncrement());
+    
 }
 
 protected constructor (angleInfo: AngleInfo, totalAngle: number, animationBehavior: AnimationBehavior)                        
@@ -85,8 +87,10 @@ protected constructor (angleInfo: AngleInfo, totalAngle: number, animationBehavi
 
                             //For kotlin this is before the body of the constructor.
                     
-this.angleInfo= angleInfo
-this.circularIndexUtil= CircularIndexUtil.getInstance(totalAngle /angleInfo!.getAngleIncrementInfo()!.getAngleIncrement())
+this.angleInfo= angleInfo;
+    
+this.circularIndexUtil= CircularIndexUtil.getInstance(totalAngle /angleInfo!.getAngleIncrementInfo()!.getAngleIncrement());
+    
 }
 
 protected constructor (animationBehavior: AnimationBehavior)                        
@@ -99,8 +103,10 @@ protected constructor (animationBehavior: AnimationBehavior)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.angleInfo= AngleInfo.getInstance(AngleFactory.getInstance()!.QUARTER_TOTAL_ANGLE)
-this.circularIndexUtil= CircularIndexUtil.getInstance(4)
+this.angleInfo= AngleInfo.getInstance(AngleFactory.getInstance()!.QUARTER_TOTAL_ANGLE);
+    
+this.circularIndexUtil= CircularIndexUtil.getInstance(4);
+    
 }
 
 
@@ -113,12 +119,14 @@ this.circularIndexUtil= CircularIndexUtil.getInstance(4)
 
 
     public nextRotation(){
-this.angleInfo!.adjustAngle(this.circularIndexUtil!.next())
+this.angleInfo!.adjustAngle(this.circularIndexUtil!.next());
+    
 }
 
 
     public previousRotation(){
-this.angleInfo!.adjustAngle(this.circularIndexUtil!.previous())
+this.angleInfo!.adjustAngle(this.circularIndexUtil!.previous());
+    
 }
 
 
@@ -132,13 +140,16 @@ this.angleInfo!.adjustAngle(this.circularIndexUtil!.previous())
 
     public setFrame(index: number){
     //var index = index
-this.circularIndexUtil!.setIndex(index)
+this.circularIndexUtil!.setIndex(index);
+    
 
     var newFrame: number = this.circularIndexUtil!.getIndex()!;
         
         
-
-this.angleInfo!.adjustAngle(newFrame)
+;
+    
+this.angleInfo!.adjustAngle(newFrame);
+    
 }
 
 
@@ -148,26 +159,33 @@ this.angleInfo!.adjustAngle(newFrame)
     var angle: Angle = directionUtil!.getFrameAngle(direction)!;
         
         
-
-this.adjustFrame(angle)
+;
+    
+this.adjustFrame(angle);
+    
 }
 
 
     public setFrame(angle: Angle){
     //var angle = angle
-this.adjustFrame(angle)
+this.adjustFrame(angle);
+    
 }
 
 
     public adjustFrame(angle: Angle){
     //var angle = angle
-this.adjustFrame(angle.getValue())
+this.adjustFrame(angle.getValue());
+    
 }
 
 
     public adjustFrame(angle: number){
     //var angle = angle
-this.setFrame(this.frameUtil!.getFrameForAngle(angle, this.angleInfo!.getAngleIncrementInfo()!.getAngleIncrement().toInt()))
+this.setFrame(this.frameUtil!.getFrameForAngle(angle, this.angleInfo!.getAngleIncrementInfo()!.getAngleIncrement();
+
+                        .toInt()));
+    
 }
 
 
@@ -177,6 +195,8 @@ this.setFrame(this.frameUtil!.getFrameForAngle(angle, this.angleInfo!.getAngleIn
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.circularIndexUtil!.getIndex();
+
+                        ;
     
 }
 
@@ -187,6 +207,8 @@ this.setFrame(this.frameUtil!.getFrameForAngle(angle, this.angleInfo!.getAngleIn
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.circularIndexUtil!.getSize();
+
+                        ;
     
 }
 
@@ -208,6 +230,8 @@ this.setFrame(this.frameUtil!.getFrameForAngle(angle, this.angleInfo!.getAngleIn
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return StringMaker().
                             append(super.toString())!.append("circularIndexUtil: ")!.append(this.circularIndexUtil!.toString())!.append("angleInfo: ")!.append(this.angleInfo!.toString())!.toString();
+
+                        ;
     
 }
 

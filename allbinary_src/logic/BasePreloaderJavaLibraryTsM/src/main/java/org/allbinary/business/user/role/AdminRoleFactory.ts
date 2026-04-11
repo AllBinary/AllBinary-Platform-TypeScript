@@ -18,7 +18,10 @@
 
 
 
-import { Vector } from "../../../../../java/util/Vector.js";
+            import Vector from "@ohos.util.Vector";
+        
+
+//import { Vector } from "../../../../../java/util/Vector.js";
 
     
 
@@ -41,47 +44,47 @@ export class AdminRoleFactory
 }
 
 
-    private readonly adminRoles: Vector<Any> = new Vector<Any>();
+    private readonly adminRoles: Vector<any> = new Vector<any>();
         
         
 
-    private readonly storeAdminRoles: Vector<Any> = new Vector<Any>();
+    private readonly storeAdminRoles: Vector<any> = new Vector<any>();
         
         
 
-    private readonly storeManagementRoles: Vector<Any> = new Vector<Any>();
+    private readonly storeManagementRoles: Vector<any> = new Vector<any>();
         
         
 
-    private readonly productManagementRoles: Vector<Any> = new Vector<Any>();
+    private readonly productManagementRoles: Vector<any> = new Vector<any>();
         
         
 
-    private readonly reviewManagementRoles: Vector<Any> = new Vector<Any>();
+    private readonly reviewManagementRoles: Vector<any> = new Vector<any>();
         
         
 
-    private readonly customerManagementRoles: Vector<Any> = new Vector<Any>();
+    private readonly customerManagementRoles: Vector<any> = new Vector<any>();
         
         
 
-    private readonly workflowManagementRoles: Vector<Any> = new Vector<Any>();
+    private readonly workflowManagementRoles: Vector<any> = new Vector<any>();
         
         
 
-    private readonly orderManagementRoles: Vector<Any> = new Vector<Any>();
+    private readonly orderManagementRoles: Vector<any> = new Vector<any>();
         
         
 
-    private readonly adjusterManagementRoles: Vector<Any> = new Vector<Any>();
+    private readonly adjusterManagementRoles: Vector<any> = new Vector<any>();
         
         
 
-    private readonly shippingManagementRoles: Vector<Any> = new Vector<Any>();
+    private readonly shippingManagementRoles: Vector<any> = new Vector<any>();
         
         
 
-    private readonly webManagementRoles: Vector<Any> = new Vector<Any>();
+    private readonly webManagementRoles: Vector<any> = new Vector<any>();
         
         
 private constructor (){
@@ -91,46 +94,82 @@ private constructor (){
     var basicUserRoleFactory: BasicUserRoleFactory = BasicUserRoleFactory.getInstance()!;
         
         
-
-adminRoles!.add(basicUserRoleFactory!.ADMINISTRATOR)
-storeAdminRoles!.add(basicUserRoleFactory!.ADMINISTRATOR)
-storeAdminRoles!.add(basicUserRoleFactory!.STOREMANAGER)
-storeManagementRoles!.add(basicUserRoleFactory!.ADMINISTRATOR)
-storeManagementRoles!.add(basicUserRoleFactory!.STOREMANAGER)
-storeManagementRoles!.add(basicUserRoleFactory!.CUSTOMERMANAGER)
-storeManagementRoles!.add(basicUserRoleFactory!.ADJUSTER)
-storeManagementRoles!.add(basicUserRoleFactory!.PRODUCTMANAGER)
-storeManagementRoles!.add(basicUserRoleFactory!.REVIEWER)
-storeManagementRoles!.add(basicUserRoleFactory!.SHIPPING)
-productManagementRoles!.add(basicUserRoleFactory!.ADMINISTRATOR)
-productManagementRoles!.add(basicUserRoleFactory!.STOREMANAGER)
-productManagementRoles!.add(basicUserRoleFactory!.PRODUCTMANAGER)
-reviewManagementRoles!.add(basicUserRoleFactory!.ADMINISTRATOR)
-reviewManagementRoles!.add(basicUserRoleFactory!.STOREMANAGER)
-reviewManagementRoles!.add(basicUserRoleFactory!.REVIEWER)
-customerManagementRoles!.add(basicUserRoleFactory!.ADMINISTRATOR)
-customerManagementRoles!.add(basicUserRoleFactory!.STOREMANAGER)
-customerManagementRoles!.add(basicUserRoleFactory!.CUSTOMERMANAGER)
-workflowManagementRoles!.add(basicUserRoleFactory!.ADMINISTRATOR)
-workflowManagementRoles!.add(basicUserRoleFactory!.STOREMANAGER)
-workflowManagementRoles!.add(basicUserRoleFactory!.WORKFLOWEDITOR)
-orderManagementRoles!.add(basicUserRoleFactory!.ADMINISTRATOR)
-orderManagementRoles!.add(basicUserRoleFactory!.STOREMANAGER)
-adjusterManagementRoles!.add(basicUserRoleFactory!.ADMINISTRATOR)
-adjusterManagementRoles!.add(basicUserRoleFactory!.STOREMANAGER)
-adjusterManagementRoles!.add(basicUserRoleFactory!.ADJUSTER)
-shippingManagementRoles!.add(basicUserRoleFactory!.ADMINISTRATOR)
-shippingManagementRoles!.add(basicUserRoleFactory!.STOREMANAGER)
-shippingManagementRoles!.add(basicUserRoleFactory!.SHIPPING)
-webManagementRoles!.add(basicUserRoleFactory!.ADMINISTRATOR)
-webManagementRoles!.add(basicUserRoleFactory!.STOREMANAGER)
-webManagementRoles!.add(basicUserRoleFactory!.WEBMANAGER)
-webManagementRoles!.add(basicUserRoleFactory!.WORKFLOWEDITOR)
-webManagementRoles!.add(basicUserRoleFactory!.VIEWEDITOR)
+;
+    
+adminRoles!.add(basicUserRoleFactory!.ADMINISTRATOR);
+    
+storeAdminRoles!.add(basicUserRoleFactory!.ADMINISTRATOR);
+    
+storeAdminRoles!.add(basicUserRoleFactory!.STOREMANAGER);
+    
+storeManagementRoles!.add(basicUserRoleFactory!.ADMINISTRATOR);
+    
+storeManagementRoles!.add(basicUserRoleFactory!.STOREMANAGER);
+    
+storeManagementRoles!.add(basicUserRoleFactory!.CUSTOMERMANAGER);
+    
+storeManagementRoles!.add(basicUserRoleFactory!.ADJUSTER);
+    
+storeManagementRoles!.add(basicUserRoleFactory!.PRODUCTMANAGER);
+    
+storeManagementRoles!.add(basicUserRoleFactory!.REVIEWER);
+    
+storeManagementRoles!.add(basicUserRoleFactory!.SHIPPING);
+    
+productManagementRoles!.add(basicUserRoleFactory!.ADMINISTRATOR);
+    
+productManagementRoles!.add(basicUserRoleFactory!.STOREMANAGER);
+    
+productManagementRoles!.add(basicUserRoleFactory!.PRODUCTMANAGER);
+    
+reviewManagementRoles!.add(basicUserRoleFactory!.ADMINISTRATOR);
+    
+reviewManagementRoles!.add(basicUserRoleFactory!.STOREMANAGER);
+    
+reviewManagementRoles!.add(basicUserRoleFactory!.REVIEWER);
+    
+customerManagementRoles!.add(basicUserRoleFactory!.ADMINISTRATOR);
+    
+customerManagementRoles!.add(basicUserRoleFactory!.STOREMANAGER);
+    
+customerManagementRoles!.add(basicUserRoleFactory!.CUSTOMERMANAGER);
+    
+workflowManagementRoles!.add(basicUserRoleFactory!.ADMINISTRATOR);
+    
+workflowManagementRoles!.add(basicUserRoleFactory!.STOREMANAGER);
+    
+workflowManagementRoles!.add(basicUserRoleFactory!.WORKFLOWEDITOR);
+    
+orderManagementRoles!.add(basicUserRoleFactory!.ADMINISTRATOR);
+    
+orderManagementRoles!.add(basicUserRoleFactory!.STOREMANAGER);
+    
+adjusterManagementRoles!.add(basicUserRoleFactory!.ADMINISTRATOR);
+    
+adjusterManagementRoles!.add(basicUserRoleFactory!.STOREMANAGER);
+    
+adjusterManagementRoles!.add(basicUserRoleFactory!.ADJUSTER);
+    
+shippingManagementRoles!.add(basicUserRoleFactory!.ADMINISTRATOR);
+    
+shippingManagementRoles!.add(basicUserRoleFactory!.STOREMANAGER);
+    
+shippingManagementRoles!.add(basicUserRoleFactory!.SHIPPING);
+    
+webManagementRoles!.add(basicUserRoleFactory!.ADMINISTRATOR);
+    
+webManagementRoles!.add(basicUserRoleFactory!.STOREMANAGER);
+    
+webManagementRoles!.add(basicUserRoleFactory!.WEBMANAGER);
+    
+webManagementRoles!.add(basicUserRoleFactory!.WORKFLOWEDITOR);
+    
+webManagementRoles!.add(basicUserRoleFactory!.VIEWEDITOR);
+    
 }
 
 
-    public getProductManagementRoles(): Vector<Any>{
+    public getProductManagementRoles(): Vector<any>{
 
 
 
@@ -140,7 +179,7 @@ webManagementRoles!.add(basicUserRoleFactory!.VIEWEDITOR)
 }
 
 
-    public getAdminRoles(): Vector<Any>{
+    public getAdminRoles(): Vector<any>{
 
 
 
@@ -150,7 +189,7 @@ webManagementRoles!.add(basicUserRoleFactory!.VIEWEDITOR)
 }
 
 
-    public getStoreAdminRoles(): Vector<Any>{
+    public getStoreAdminRoles(): Vector<any>{
 
 
 
@@ -160,7 +199,7 @@ webManagementRoles!.add(basicUserRoleFactory!.VIEWEDITOR)
 }
 
 
-    public getStoreManagementRoles(): Vector<Any>{
+    public getStoreManagementRoles(): Vector<any>{
 
 
 
@@ -170,7 +209,7 @@ webManagementRoles!.add(basicUserRoleFactory!.VIEWEDITOR)
 }
 
 
-    public getReviewManagementRoles(): Vector<Any>{
+    public getReviewManagementRoles(): Vector<any>{
 
 
 
@@ -180,7 +219,7 @@ webManagementRoles!.add(basicUserRoleFactory!.VIEWEDITOR)
 }
 
 
-    public getCustomerManagementRoles(): Vector<Any>{
+    public getCustomerManagementRoles(): Vector<any>{
 
 
 
@@ -190,7 +229,7 @@ webManagementRoles!.add(basicUserRoleFactory!.VIEWEDITOR)
 }
 
 
-    public getWorkflowManagementRoles(): Vector<Any>{
+    public getWorkflowManagementRoles(): Vector<any>{
 
 
 
@@ -200,7 +239,7 @@ webManagementRoles!.add(basicUserRoleFactory!.VIEWEDITOR)
 }
 
 
-    public getWebManagementRoles(): Vector<Any>{
+    public getWebManagementRoles(): Vector<any>{
 
 
 
@@ -210,7 +249,7 @@ webManagementRoles!.add(basicUserRoleFactory!.VIEWEDITOR)
 }
 
 
-    public getShippingManagementRoles(): Vector<Any>{
+    public getShippingManagementRoles(): Vector<any>{
 
 
 
@@ -220,7 +259,7 @@ webManagementRoles!.add(basicUserRoleFactory!.VIEWEDITOR)
 }
 
 
-    public getAdjusterManagementRoles(): Vector<Any>{
+    public getAdjusterManagementRoles(): Vector<any>{
 
 
 
@@ -230,7 +269,7 @@ webManagementRoles!.add(basicUserRoleFactory!.VIEWEDITOR)
 }
 
 
-    public getOrderManagementRoles(): Vector<Any>{
+    public getOrderManagementRoles(): Vector<any>{
 
 
 

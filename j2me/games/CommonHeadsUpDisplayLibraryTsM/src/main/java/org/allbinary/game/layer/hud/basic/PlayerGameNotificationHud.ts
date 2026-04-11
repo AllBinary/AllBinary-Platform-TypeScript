@@ -131,23 +131,30 @@ var basicColor = basicColor
 
                             //For kotlin this is before the body of the constructor.
                     
-this.circularIndexUtil= CircularIndexUtil.getInstance(0)
+this.circularIndexUtil= CircularIndexUtil.getInstance(0);
+    
 
     var gameNotificationEventHandler: GameNotificationEventHandler = GameNotificationEventHandler.getInstance()!;
         
         
-
-gameNotificationEventHandler!.removeAllListeners()
-gameNotificationEventHandler!.addListener(this)
+;
+    
+gameNotificationEventHandler!.removeAllListeners();
+    
+gameNotificationEventHandler!.addListener(this);
+    
 }
 
 
     getPoint(x: number, y: number): GPoint{
 var x = x
 var y = y
-point= CustomGPoint(0, 0)
-this.point.setX(x)
-this.point.setY(y)
+point= CustomGPoint(0, 0);
+    
+this.point.setX(x);
+    
+this.point.setY(y);
+    
 
 
 
@@ -178,19 +185,24 @@ this.point.setY(y)
                         if(lastString != string)
                         
                                     {
-                                    this.lastString= string
+                                    this.lastString= string;
+    
 logUtil!.put(StringMaker().
-                            append(PERMANENT_GAME_NOTIFICATION)!.append(string)!.toString(), this, commonStrings!.ADD)
+                            append(PERMANENT_GAME_NOTIFICATION)!.append(string)!.toString(), this, commonStrings!.ADD);
+    
 
                                     }
                                 
-this.permanentGameNotification!.add(string, seconds, basicColor)
-this.circularIndexUtil!.setSize(this.permanentGameNotification!.getSize())
+this.permanentGameNotification!.add(string, seconds, basicColor);
+    
+this.circularIndexUtil!.setSize(this.permanentGameNotification!.getSize());
+    
 
                                     }
                                 
                         else {
-                            this.gameNotification!.add(string, seconds, basicColor)
+                            this.gameNotification!.add(string, seconds, basicColor);
+    
 
                         }
                             
@@ -208,17 +220,20 @@ this.circularIndexUtil!.setSize(this.permanentGameNotification!.getSize())
     var gameAdState: GameAdState = GameAdStateFactory.getInstance()!.getCurrentInstance()!;
         
         
-
+;
+    
 
                         if(gameAdState!.isShowingAt(this.getLocation()))
                         
                                     {
-                                    this.offsetY=  -54
+                                    this.offsetY=  -54;
+    
 
                                     }
                                 
                         else {
-                            this.offsetY= 0
+                            this.offsetY= 0;
+    
 
                         }
                             
@@ -226,7 +241,8 @@ this.circularIndexUtil!.setSize(this.permanentGameNotification!.getSize())
                         if(this.gameNotification!.getSize() > 0)
                         
                                     {
-                                    this.setAndRemove()
+                                    this.setAndRemove();
+    
 
                                     }
                                 
@@ -234,12 +250,14 @@ this.circularIndexUtil!.setSize(this.permanentGameNotification!.getSize())
                         if(this.permanentGameNotification!.getSize() > 0)
                         
                                     {
-                                    this.setNextUnremoveable()
+                                    this.setNextUnremoveable();
+    
 
                                     }
                                 
                         else {
-                            this.string= this.EMPTY_STRING
+                            this.string= this.EMPTY_STRING;
+    
 
                         }
                             
@@ -252,35 +270,51 @@ this.circularIndexUtil!.setSize(this.permanentGameNotification!.getSize())
                 //@Throws(Error::class)
             
     setAndRemove(){
-this.string= this.gameNotification!.stringList!.remove(0) as String
+this.string= this.gameNotification!.stringList!.remove(0);
+
+                         as String;
+    
 
     var width: number = MyFont.getInstance()!.stringWidth2(this.string)!;
         
         
+;
+    
+this.setX((displayInfo!.getLastWidth() -width) shr 1);
+    
+this.point.setX(this.getX());
+    
+this.point.setY(this.getY());
+    
 
-this.setX((displayInfo!.getLastWidth() -width) shr 1)
-this.point.setX(this.getX())
-this.point.setY(this.getY())
+    var time: Integer = this.gameNotification!.timeList!.remove(0);
 
-    var time: Integer = this.gameNotification!.timeList!.remove(0) as Integer;
+                         as Integer;
         
         
-
+;
+    
 
     var iTime: number = time.toInt() *1000;
         
         
-
+;
+    
 
                         if(iTime == 0)
                         
                                     {
-                                    iTime= 500
+                                    iTime= 500;
+    
 
                                     }
                                 
-this.timeDelayHelper!.delay= iTime
-this.setBasicColorP(this.gameNotification!.colorList!.remove(0) as BasicColor)
+this.timeDelayHelper!.delay= iTime;
+    
+this.setBasicColorP(this.gameNotification!.colorList!.remove(0);
+
+                         as BasicColor);
+    
 }
 
 
@@ -291,36 +325,49 @@ this.setBasicColorP(this.gameNotification!.colorList!.remove(0) as BasicColor)
     var index: number = this.circularIndexUtil!.getIndex()!;
         
         
-
-this.string= this.permanentGameNotification!.stringList!.objectArray[index]! as String
+;
+    
+this.string= this.permanentGameNotification!.stringList!.objectArray[index]! as String;
+    
 
     var width: number = MyFont.getInstance()!.stringWidth2(this.string)!;
         
         
-
-this.setX((displayInfo!.getLastWidth() -width) shr 1)
-this.point.setX(this.getX())
-this.point.setY(this.getY())
+;
+    
+this.setX((displayInfo!.getLastWidth() -width) shr 1);
+    
+this.point.setX(this.getX());
+    
+this.point.setY(this.getY());
+    
 
     var time: Integer = this.permanentGameNotification!.timeList!.objectArray[index]! as Integer;
         
         
-
-this.timeDelayHelper!.delay= time.toInt() *1000
-this.setBasicColorP(this.permanentGameNotification!.colorList!.objectArray[index]! as BasicColor)
-this.circularIndexUtil!.next()
+;
+    
+this.timeDelayHelper!.delay= time.toInt() *1000;
+    
+this.setBasicColorP(this.permanentGameNotification!.colorList!.objectArray[index]! as BasicColor);
+    
+this.circularIndexUtil!.next();
+    
 }
 
 
     public clear(){
-this.gameNotification!.clear()
-this.permanentGameNotification!.clear()
+this.gameNotification!.clear();
+    
+this.permanentGameNotification!.clear();
+    
 }
 
 
     public paint(graphics: Graphics){
 var graphics = graphics
-super.paint(graphics, this.string)
+super.paint(graphics, this.string);
+    
 }
 
 

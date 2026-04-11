@@ -75,39 +75,47 @@ var blueIndex = blueIndex
     var hexColorStringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
                         if(redIndex < HEXRADIX)
                         
                                     {
-                                    hexColorStringBuffer!.append(commonPhoneStrings!.ZERO)
+                                    hexColorStringBuffer!.append(commonPhoneStrings!.ZERO);
+    
 
                                     }
                                 
-hexColorStringBuffer!.append(redIndex, HEXRADIX.toString())
+hexColorStringBuffer!.append(redIndex, HEXRADIX.toString());
+    
 
                         if(greenIndex < HEXRADIX)
                         
                                     {
-                                    hexColorStringBuffer!.append(commonPhoneStrings!.ZERO)
+                                    hexColorStringBuffer!.append(commonPhoneStrings!.ZERO);
+    
 
                                     }
                                 
-hexColorStringBuffer!.append(greenIndex, HEXRADIX.toString())
+hexColorStringBuffer!.append(greenIndex, HEXRADIX.toString());
+    
 
                         if(blueIndex < HEXRADIX)
                         
                                     {
-                                    hexColorStringBuffer!.append(commonPhoneStrings!.ZERO)
+                                    hexColorStringBuffer!.append(commonPhoneStrings!.ZERO);
+    
 
                                     }
                                 
-hexColorStringBuffer!.append(blueIndex, HEXRADIX.toString())
+hexColorStringBuffer!.append(blueIndex, HEXRADIX.toString());
+    
 
     var colorNode: Node = ModDomHelper.createNameValueNodes(document, ColorData.getInstance()!.NAME, hexColorStringBuffer!.toString())!;
         
         
-
+;
+    
 
 
 
@@ -125,13 +133,16 @@ var document = document
     var node: Node = ModDomHelper.createNameValueNodes(document, ColorsData.getInstance()!.NAME, "RGB Colors In Hex")!;
         
         
-
+;
+    
 
     var blackNode: Node = ModDomHelper.createNameValueNodes(document, ColorData.getInstance()!.NAME, "000000")!;
         
         
-
-node.appendChild(blackNode)
+;
+    
+node.appendChild(blackNode);
+    
 
 
 
@@ -146,48 +157,59 @@ index < MAX; )
     var hexColorStringBuffer: StringMaker = new StringMaker();
         
         
-
-
-                        if(index < HEXRADIX)
-                        
-                                    {
-                                    hexColorStringBuffer!.append(commonPhoneStrings!.ZERO)
-
-                                    }
-                                
-hexColorStringBuffer!.append(index, HEXRADIX.toString())
+;
+    
 
                         if(index < HEXRADIX)
                         
                                     {
-                                    hexColorStringBuffer!.append(commonPhoneStrings!.ZERO)
+                                    hexColorStringBuffer!.append(commonPhoneStrings!.ZERO);
+    
 
                                     }
                                 
-hexColorStringBuffer!.append(index, HEXRADIX.toString())
+hexColorStringBuffer!.append(index, HEXRADIX.toString());
+    
 
                         if(index < HEXRADIX)
                         
                                     {
-                                    hexColorStringBuffer!.append(commonPhoneStrings!.ZERO)
+                                    hexColorStringBuffer!.append(commonPhoneStrings!.ZERO);
+    
 
                                     }
                                 
-hexColorStringBuffer!.append(index, HEXRADIX.toString())
+hexColorStringBuffer!.append(index, HEXRADIX.toString());
+    
+
+                        if(index < HEXRADIX)
+                        
+                                    {
+                                    hexColorStringBuffer!.append(commonPhoneStrings!.ZERO);
+    
+
+                                    }
+                                
+hexColorStringBuffer!.append(index, HEXRADIX.toString());
+    
 
     var colorNode: Node = ModDomHelper.createNameValueNodes(document, ColorData.getInstance()!.NAME, hexColorStringBuffer!.toString())!;
         
         
-
-node.appendChild(colorNode)
+;
+    
+node.appendChild(colorNode);
+    
 }
 
 
     var whiteNode: Node = ModDomHelper.createNameValueNodes(document, ColorData.getInstance()!.NAME, "FFFFFF")!;
         
         
-
-node.appendChild(whiteNode)
+;
+    
+node.appendChild(whiteNode);
+    
 
 
 
@@ -218,7 +240,8 @@ greenIndex < MAX /2; )
         
 redIndex < MAX /2; )
         {
-node.appendChild(this.getColorNode(document, redIndex, greenIndex, blueIndex))
+node.appendChild(this.getColorNode(document, redIndex, greenIndex, blueIndex));
+    
 }
 
 }
@@ -255,7 +278,8 @@ greenIndex < MAX /2; )
         
 blueIndex < MAX /2; )
         {
-node.appendChild(this.getColorNode(document, redIndex, greenIndex, blueIndex))
+node.appendChild(this.getColorNode(document, redIndex, greenIndex, blueIndex));
+    
 }
 
 }
@@ -292,7 +316,8 @@ redIndex < MAX /2; )
         
 blueIndex < MAX /2; )
         {
-node.appendChild(this.getColorNode(document, redIndex, greenIndex, blueIndex))
+node.appendChild(this.getColorNode(document, redIndex, greenIndex, blueIndex));
+    
 }
 
 }
@@ -329,7 +354,8 @@ redIndex < MAX; )
         
 blueIndex < MAX; )
         {
-node.appendChild(this.getColorNode(document, redIndex, greenIndex, blueIndex))
+node.appendChild(this.getColorNode(document, redIndex, greenIndex, blueIndex));
+    
 }
 
 }

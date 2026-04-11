@@ -91,11 +91,14 @@ public constructor (basket: BasketInterface){
 
             super();
             var basket = basket
-this.basket= basket
+this.basket= basket;
+    
 id= 
                                         null
-                                    
-shippingType= StringUtil.getInstance()!.EMPTY_STRING
+                                    ;
+    
+shippingType= StringUtil.getInstance()!.EMPTY_STRING;
+    
 }
 
 public constructor (storeName: string, basket: BasketInterface, id: string, shippingType: string, special: string, paymentMethod: string){
@@ -107,12 +110,18 @@ var id = id
 var shippingType = shippingType
 var special = special
 var paymentMethod = paymentMethod
-this.storeName= storeName
-this.basket= basket
-this.id= id
-this.shippingType= shippingType
-this.special= special
-this.paymentMethod= paymentMethod
+this.storeName= storeName;
+    
+this.basket= basket;
+    
+this.id= id;
+    
+this.shippingType= shippingType;
+    
+this.special= special;
+    
+this.paymentMethod= paymentMethod;
+    
 }
 
 
@@ -120,7 +129,9 @@ this.paymentMethod= paymentMethod
 
                         if(this.getId() == 
                                     null
-                                 || this.getId()!.compareTo(StringUtil.getInstance()!.EMPTY_STRING) == 0 || this.getId()!.length() > OrderHistoryData.MAXIDLEN || !StringValidationUtil.getInstance()!.isNumber(this.getId()))
+                                 || this.getId()!.compareTo(StringUtil.getInstance()!.EMPTY_STRING) == 0 || this.getId()!.length() > OrderHistoryData.MAXIDLEN || !StringValidationUtil.getInstance()!.isNumber(this.getId());
+
+                        )
                         
                                     {
                                     
@@ -156,11 +167,14 @@ this.paymentMethod= paymentMethod
     var EMPTY_STRING: string = StringUtil.getInstance()!.EMPTY_STRING;
         
         
-
+;
+    
 
                         if(this.getId() == 
                                     null
-                                 || this.getId()!.compareTo(EMPTY_STRING) == 0 || this.getId()!.length() > OrderHistoryData.MAXIDLEN || !StringValidationUtil.getInstance()!.isNumber(this.getId()))
+                                 || this.getId()!.compareTo(EMPTY_STRING) == 0 || this.getId()!.length() > OrderHistoryData.MAXIDLEN || !StringValidationUtil.getInstance()!.isNumber(this.getId());
+
+                        )
                         
                                     {
                                     
@@ -183,55 +197,64 @@ this.paymentMethod= paymentMethod
 
     public setShippingMethod(shippingType: string){
 var shippingType = shippingType
-this.shippingType= shippingType
+this.shippingType= shippingType;
+    
 }
 
 
     public setPaymentMethod(value: string){
 var value = value
-this.paymentMethod= value
+this.paymentMethod= value;
+    
 }
 
 
     public setSpecial(special: string){
 var special = special
-this.special= special
+this.special= special;
+    
 }
 
 
     public setId(value: string){
 var value = value
-this.id= value
+this.id= value;
+    
 }
 
 
     public setStoreName(value: string){
 var value = value
-this.storeName= value
+this.storeName= value;
+    
 }
 
 
     public setUserComments(value: string){
 var value = value
-this.userComment= value
+this.userComment= value;
+    
 }
 
 
     public setUserCancelComments(value: string){
 var value = value
-this.userCancelComment= value
+this.userCancelComment= value;
+    
 }
 
 
     public setStoreComments(value: string){
 var value = value
-this.storeComment= value
+this.storeComment= value;
+    
 }
 
 
     public setStoreCancelComments(value: string){
 var value = value
-this.storeCancelComment= value
+this.storeCancelComment= value;
+    
 }
 
 
@@ -370,21 +393,31 @@ var storeFrontInterface = storeFrontInterface
 }
 
 
-    public toHashMapOrder(): HashMap<Any, Any>{
+    public toHashMapOrder(): HashMap<any, any>{
 
-    var hashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
         
         
-
-hashMap!.put(PaymentData.METHOD, this.paymentMethod)
-hashMap!.put(ShippingMethodData.NAME, this.shippingType)
-hashMap!.put(StoreFrontData.getInstance()!.NAME, this.storeName)
-hashMap!.put(EntryData.getInstance()!.SPECIAL, this.special)
-hashMap!.put(OrderData.ID, this.id)
-hashMap!.put(OrderData.CUSTOMERCOMMENT, this.userComment)
-hashMap!.put(OrderData.CUSTOMERCANCELCOMMENT, this.userCancelComment)
-hashMap!.put(OrderData.STORECOMMENT, this.storeComment)
-hashMap!.put(OrderData.STORECANCELCOMMENT, this.storeCancelComment)
+;
+    
+hashMap!.put(PaymentData.METHOD, this.paymentMethod);
+    
+hashMap!.put(ShippingMethodData.NAME, this.shippingType);
+    
+hashMap!.put(StoreFrontData.getInstance()!.NAME, this.storeName);
+    
+hashMap!.put(EntryData.getInstance()!.SPECIAL, this.special);
+    
+hashMap!.put(OrderData.ID, this.id);
+    
+hashMap!.put(OrderData.CUSTOMERCOMMENT, this.userComment);
+    
+hashMap!.put(OrderData.CUSTOMERCANCELCOMMENT, this.userCancelComment);
+    
+hashMap!.put(OrderData.STORECOMMENT, this.storeComment);
+    
+hashMap!.put(OrderData.STORECANCELCOMMENT, this.storeCancelComment);
+    
 
 
 
@@ -399,31 +432,36 @@ hashMap!.put(OrderData.STORECANCELCOMMENT, this.storeCancelComment)
     public toXmlNode(document: Document): Node{
 var document = document
 
-    var hashMap: HashMap<Any, Any> = this.toHashMapOrder()!;
+    var hashMap: HashMap<any, any> = this.toHashMapOrder()!;
         
         
-
+;
+    
 
     var keySet: Set = hashMap!.keys!;
         
         
+;
+    
 
-
-    var keyArray: any = {}[] = keySet!.toTypedArray()!;
+    var keyArray: any[] = keySet!.toTypedArray()!;
         
         
-
+;
+    
 
     var size: number = keyArray!.length
                 ;
         
         
-
+;
+    
 
     var node: Node = document.createElement(OrderData.ORDER)!;
         
         
-
+;
+    
 
 
 
@@ -438,14 +476,20 @@ i < size; i++)
     var name: string = keyArray[i]! as String;
         
         
+;
+    
 
+    var value: string = hashMap!.get(name as Object);
 
-    var value: string = hashMap!.get(name as Object) as String;
+                         as String;
         
         
-
-value= StringUtil.getInstance()!.getInstance(value)
-node.appendChild(ModDomHelper.createNameValueNodes(document, name, value))
+;
+    
+value= StringUtil.getInstance()!.getInstance(value);
+    
+node.appendChild(ModDomHelper.createNameValueNodes(document, name, value));
+    
 }
 
 

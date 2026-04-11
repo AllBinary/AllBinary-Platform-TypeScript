@@ -42,7 +42,8 @@ public constructor (categoryInterface: StoreThemeCategoryInterface){
 
             super();
             var categoryInterface = categoryInterface
-this.categoryInterface= categoryInterface
+this.categoryInterface= categoryInterface;
+    
 }
 
 
@@ -55,18 +56,21 @@ var document = document
                             toXmlNode(document)!;
         
         
+;
+    
 
-
-    var childArray: any = {}[] = this.categoryInterface!.getChildNodes()!.toArray()!;
+    var childArray: any[] = this.categoryInterface!.getChildNodes()!.toArray()!;
         
         
-
+;
+    
 
     var size: number = childArray!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -81,14 +85,17 @@ i < size; i++)
     var childCategoryInterface: CategoryInterface = childArray[i]! as CategoryInterface;
         
         
-
+;
+    
 
     var childCategoryNode: Node = StoreThemeCategoriesView(childCategoryInterface as StoreThemeCategoryInterface).
                             toXmlNode(document)!;
         
         
-
-node.appendChild(childCategoryNode)
+;
+    
+node.appendChild(childCategoryNode);
+    
 }
 
 

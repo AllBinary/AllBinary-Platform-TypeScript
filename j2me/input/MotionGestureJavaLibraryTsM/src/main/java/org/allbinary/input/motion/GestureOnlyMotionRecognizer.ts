@@ -45,8 +45,10 @@ export class GestureOnlyMotionRecognizer extends MotionRecognizer {
 public constructor (){
 
             super();
-            this.id= index++
-this.motionGestureRecognizer= MotionGestureRecognizer(id)
+            this.id= index++;
+    
+this.motionGestureRecognizer= MotionGestureRecognizer(id);
+    
 }
 
 
@@ -58,13 +60,19 @@ var y = y
 var deviceId = deviceId
 var modifiers = modifiers
 
-    var point: CustomGPoint = pointCircularPool!.getNextInstance() as CustomGPoint;
-        
-        
+    var point: CustomGPoint = pointCircularPool!.getNextInstance();
 
-point.setX(x)
-point.setY(y)
-this.motionGestureRecognizer!.processPressedMotionEvent(point, deviceId, modifiers)
+                         as CustomGPoint;
+        
+        
+;
+    
+point.setX(x);
+    
+point.setY(y);
+    
+this.motionGestureRecognizer!.processPressedMotionEvent(point, deviceId, modifiers);
+    
 }
 
 
@@ -76,13 +84,19 @@ var y = y
 var deviceId = deviceId
 var modifiers = modifiers
 
-    var point: CustomGPoint = pointCircularPool!.getNextInstance() as CustomGPoint;
-        
-        
+    var point: CustomGPoint = pointCircularPool!.getNextInstance();
 
-point.setX(x)
-point.setY(y)
-this.motionGestureRecognizer!.processReleasedMotionEvent(point, deviceId, modifiers)
+                         as CustomGPoint;
+        
+        
+;
+    
+point.setX(x);
+    
+point.setY(y);
+    
+this.motionGestureRecognizer!.processReleasedMotionEvent(point, deviceId, modifiers);
+    
 }
 
 
@@ -94,13 +108,19 @@ var y = y
 var deviceId = deviceId
 var modifiers = modifiers
 
-    var point: CustomGPoint = pointCircularPool!.getNextInstance() as CustomGPoint;
-        
-        
+    var point: CustomGPoint = pointCircularPool!.getNextInstance();
 
-point.setX(x)
-point.setY(y)
-this.motionGestureRecognizer!.processDraggedMotionEvent(point, deviceId, modifiers)
+                         as CustomGPoint;
+        
+        
+;
+    
+point.setX(x);
+    
+point.setY(y);
+    
+this.motionGestureRecognizer!.processDraggedMotionEvent(point, deviceId, modifiers);
+    
 }
 
 

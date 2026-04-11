@@ -73,15 +73,21 @@ var frame = frame
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
+;
+    
 
     var capturedBufferedImageCacheable: BufferedImageFrameCacheable = (
-                                    (getInstance as AutomaticCacheInterface).get(frame) as Object as BufferedImageFrameCacheable);
-        
-        
+                                    (getInstance as AutomaticCacheInterface).get(frame);
 
-logUtil!.put(("Saving: " +capturedBufferedImageCacheable!.toString()), this, commonStrings!.SAVE)
-save(capturedBufferedImageCacheable!.getBufferedImage(), frame)
+                         as Object as BufferedImageFrameCacheable);
+        
+        
+;
+    
+logUtil!.put(("Saving: " +capturedBufferedImageCacheable!.toString()), this, commonStrings!.SAVE);
+    
+save(capturedBufferedImageCacheable!.getBufferedImage(), frame);
+    
 }
 
 
@@ -92,32 +98,42 @@ var frame = frame
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
+;
+    
 
     var imageUtil: ImageUtil = ImageUtil.getInstance()!;
         
         
-
+;
+    
 
     var filePathStringBuffer: StringMaker = new StringMaker();
         
         
-
-filePathStringBuffer!.append(ImageOutputData.SAVE_PATH)
-filePathStringBuffer!.append(LongUtil.fillIn(frame.toString()))
-filePathStringBuffer!.append(MediaDataFactory.getInstance()!.JPG.getExtension())
+;
+    
+filePathStringBuffer!.append(ImageOutputData.SAVE_PATH);
+    
+filePathStringBuffer!.append(LongUtil.fillIn(frame.toString()));
+    
+filePathStringBuffer!.append(MediaDataFactory.getInstance()!.JPG.getExtension());
+    
 
     var filePath: string = filePathStringBuffer!.toString()!;
         
         
-
-logUtil!.put(("Image File Path: " +filePath +imageUtil!.toString(bufferedImage)), this, commonStrings!.SAVE)
+;
+    
+logUtil!.put(("Image File Path: " +filePath +imageUtil!.toString(bufferedImage)), this, commonStrings!.SAVE);
+    
 
     var imagePersistanceUtil: ImagePersistanceUtil = ImagePersistanceUtil.getInstance()!;
         
         
-
-imagePersistanceUtil!.saveWithImageIO(filePath, bufferedImage)
+;
+    
+imagePersistanceUtil!.saveWithImageIO(filePath, bufferedImage);
+    
 }
 
 

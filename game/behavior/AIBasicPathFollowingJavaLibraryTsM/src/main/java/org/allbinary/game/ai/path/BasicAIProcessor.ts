@@ -85,30 +85,48 @@ public constructor (name: string, geographicMapCellHistory: GeographicMapCellHis
     //var chosenPathList = chosenPathList
     //var angleInfo = angleInfo
     //var seed = seed
-this.name= name
-this.geographicMapCellHistory= geographicMapCellHistory
-this.geographicMapCellPositionBasicArrayList= chosenPathList
-this.geographicMapCellPathHistoryInfo= geographicMapCellPathHistoryInfo
-this.setName(name)
-this.setNewPath(geographicMapCellHistory, chosenPathList)
-this.basicAI= BasicDirectionAIHelper(this.getName(), angleInfo)
+this.name= name;
+    
+this.geographicMapCellHistory= geographicMapCellHistory;
+    
+this.geographicMapCellPositionBasicArrayList= chosenPathList;
+    
+this.geographicMapCellPathHistoryInfo= geographicMapCellPathHistoryInfo;
+    
+this.setName(name);
+    
+this.setNewPath(geographicMapCellHistory, chosenPathList);
+    
+this.basicAI= BasicDirectionAIHelper(this.getName(), angleInfo);
+    
 }
 
 
     setNewPath(geographicMapCellHistory: GeographicMapCellHistory, chosenPathList: BasicArrayList){
 var geographicMapCellHistory = geographicMapCellHistory
 var chosenPathList = chosenPathList
-this.setGeographicMapCellHistory(geographicMapCellHistory)
-this.geographicMapCellPositionBasicArrayList= chosenPathList
-this.init()
+this.setGeographicMapCellHistory(geographicMapCellHistory);
+    
+this.geographicMapCellPositionBasicArrayList= chosenPathList;
+    
+this.init();
+    
 }
 
 
     public init(){
-this.geographicMapCellPathHistoryInfo= GeographicMapCellPathHistoryInfo()
-this.geographicMapCellPathHistoryInfo!.setPreviousOnPathGeographicMapCellPosition(geographicMapCellPositionBasicArrayList!.get(geographicMapCellPositionBasicArrayList!.size() -1) as GeographicMapCellPosition)
-this.geographicMapCellPathHistoryInfo!.setNextOnPathGeographicMapCellPosition(geographicMapCellPositionBasicArrayList!.get(geographicMapCellPositionBasicArrayList!.size() -1) as GeographicMapCellPosition)
-this.update()
+this.geographicMapCellPathHistoryInfo= GeographicMapCellPathHistoryInfo();
+    
+this.geographicMapCellPathHistoryInfo!.setPreviousOnPathGeographicMapCellPosition(geographicMapCellPositionBasicArrayList!.get(geographicMapCellPositionBasicArrayList!.size() -1);
+
+                         as GeographicMapCellPosition);
+    
+this.geographicMapCellPathHistoryInfo!.setNextOnPathGeographicMapCellPosition(geographicMapCellPositionBasicArrayList!.get(geographicMapCellPositionBasicArrayList!.size() -1);
+
+                         as GeographicMapCellPosition);
+    
+this.update();
+    
 }
 
 
@@ -124,26 +142,31 @@ var currentGeographicMapCellPosition = currentGeographicMapCellPosition
     var keyDirection: number =  -1;
         
         
-
+;
+    
 
     var goToGeographicMapCellPosition: GeographicMapCellPosition = this.geographicMapCellPathHistoryInfo!.getNextChosenOnPathGeographicMapCellPosition()!;
         
         
-
+;
+    
 
     var geographicMapDirectionData: Direction = geographicMapDirectionUtil!.getDirectionFromCellPositionToAdjacentCellPosition(currentGeographicMapCellPosition, goToGeographicMapCellPosition)!;
         
         
-
+;
+    
 
                         if(geographicMapDirectionData == DirectionFactory.getInstance()!.NOT_BORDERED_WITH)
                         
                                     {
-                                    geographicMapDirectionData= geographicMapDirectionUtil!.getDirectionFromCellPositionToCellPosition(currentGeographicMapCellPosition, goToGeographicMapCellPosition)
+                                    geographicMapDirectionData= geographicMapDirectionUtil!.getDirectionFromCellPositionToCellPosition(currentGeographicMapCellPosition, goToGeographicMapCellPosition);
+    
 
                                     }
                                 
-keyDirection= this.basicAI!.getAIKeyPressedFromDirection(geographicMapDirectionData)
+keyDirection= this.basicAI!.getAIKeyPressedFromDirection(geographicMapDirectionData);
+    
 
 
 
@@ -154,8 +177,10 @@ keyDirection= this.basicAI!.getAIKeyPressedFromDirection(geographicMapDirectionD
 
 
     update(){
-this.geographicMapCellPathHistoryInfo!.setNextUnvisitedOnPathGeographicMapCellPosition(this.getGeographicMapCellHistory()!.getFirstUnvisited())
-this.geographicMapCellPathHistoryInfo!.setNextChosenOnPathGeographicMapCellPosition(this.geographicMapCellPathHistoryInfo!.getNextUnvisitedOnPathGeographicMapCellPosition())
+this.geographicMapCellPathHistoryInfo!.setNextUnvisitedOnPathGeographicMapCellPosition(this.getGeographicMapCellHistory()!.getFirstUnvisited());
+    
+this.geographicMapCellPathHistoryInfo!.setNextChosenOnPathGeographicMapCellPosition(this.geographicMapCellPathHistoryInfo!.getNextUnvisitedOnPathGeographicMapCellPosition());
+    
 }
 
 
@@ -168,19 +193,24 @@ var currentGeographicMapCellPosition = currentGeographicMapCellPosition
     var keyDirection: number =  -1;
         
         
-
+;
+    
 
                         if(this.geographicMapCellPositionBasicArrayList!.contains(currentGeographicMapCellPosition))
                         
                                     {
-                                    this.update()
-keyDirection= this.goTowardNextChosenOnPathPosition(currentGeographicMapCellPosition)
-this.geographicMapCellPathHistoryInfo!.setPreviousOnPathGeographicMapCellPosition(currentGeographicMapCellPosition)
+                                    this.update();
+    
+keyDirection= this.goTowardNextChosenOnPathPosition(currentGeographicMapCellPosition);
+    
+this.geographicMapCellPathHistoryInfo!.setPreviousOnPathGeographicMapCellPosition(currentGeographicMapCellPosition);
+    
 
                                     }
                                 
                         else {
-                            keyDirection= this.goTowardNextChosenOnPathPosition(currentGeographicMapCellPosition)
+                            keyDirection= this.goTowardNextChosenOnPathPosition(currentGeographicMapCellPosition);
+    
 
                         }
                             
@@ -205,7 +235,8 @@ this.geographicMapCellPathHistoryInfo!.setPreviousOnPathGeographicMapCellPositio
 
     public setName(name: string){
 var name = name
-this.name= name
+this.name= name;
+    
 }
 
 
@@ -221,7 +252,8 @@ this.name= name
 
     public setGeographicMapCellPathHistoryInfo(geographicMapCellPathHistoryInfo: GeographicMapCellPathHistoryInfo){
 var geographicMapCellPathHistoryInfo = geographicMapCellPathHistoryInfo
-this.geographicMapCellPathHistoryInfo= geographicMapCellPathHistoryInfo
+this.geographicMapCellPathHistoryInfo= geographicMapCellPathHistoryInfo;
+    
 }
 
 
@@ -237,7 +269,8 @@ this.geographicMapCellPathHistoryInfo= geographicMapCellPathHistoryInfo
 
     public setGeographicMapCellHistory(geographicMapCellHistory: GeographicMapCellHistory){
 var geographicMapCellHistory = geographicMapCellHistory
-this.geographicMapCellHistory= geographicMapCellHistory
+this.geographicMapCellHistory= geographicMapCellHistory;
+    
 }
 
 

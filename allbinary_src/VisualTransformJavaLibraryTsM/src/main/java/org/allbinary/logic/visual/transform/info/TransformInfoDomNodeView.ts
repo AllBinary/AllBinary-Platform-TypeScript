@@ -97,24 +97,30 @@ var document = document
     var transformInfoData: TransformInfoData = TransformInfoData.getInstance()!;
         
         
-
+;
+    
 
     var subViewNode: Node = document.createElement(transformInfoData!.NAME)!;
         
         
-
+;
+    
 
     var viewNameAttr: Attr = document.createAttribute(transformInfoData!.NAME)!;
         
         
-
-viewNameAttr!.setValue(this.getTransformInfoInterface()!.getName())
+;
+    
+viewNameAttr!.setValue(this.getTransformInfoInterface()!.getName());
+    
 
     var componentNodeAttributes: NamedNodeMap = subViewNode!.getAttributes()!;
         
         
-
-componentNodeAttributes!.setNamedItem(viewNameAttr)
+;
+    
+componentNodeAttributes!.setNamedItem(viewNameAttr);
+    
 
                         if(this.getMappedName() != 
                                     null
@@ -125,9 +131,12 @@ componentNodeAttributes!.setNamedItem(viewNameAttr)
     var mappedNameAttr: Attr = document.createAttribute(transformInfoData!.MAPPED)!;
         
         
-
-mappedNameAttr!.setValue(this.getMappedName())
-componentNodeAttributes!.setNamedItem(mappedNameAttr)
+;
+    
+mappedNameAttr!.setValue(this.getMappedName());
+    
+componentNodeAttributes!.setNamedItem(mappedNameAttr);
+    
 
                                     }
                                 

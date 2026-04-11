@@ -18,7 +18,10 @@
 
 
 
-import { Hashtable } from "../../../../java/util/Hashtable.js";
+            import Hashtable from "@ohos.util.HashMap";
+        
+
+//import { Hashtable } from "../../../../java/util/Hashtable.js";
 
     
 import { GameInput } from "../../../../org/allbinary/game/input/GameInput.js";
@@ -42,7 +45,7 @@ export class KeyPressesAI extends BasicAI {
         
 
     keys: Integer[]
-public constructor (hashtable: Hashtable<Any, Any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput)                        
+public constructor (hashtable: Hashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput)                        
 
                             : super(ownerLayerInterface, gameInput){
 
@@ -54,18 +57,21 @@ var gameInput = gameInput
 
                             //For kotlin this is before the body of the constructor.
                     
-this.keys= new Array(hashtable.length)
+this.keys= new Array(hashtable.length);
+    
 
-    var objectArray: any = {}[] = HashtableUtil.getInstance()!.getKeysAsArray(hashtable)!;
+    var objectArray: any[] = HashtableUtil.getInstance()!.getKeysAsArray(hashtable)!;
         
         
-
+;
+    
 
     var size: number = objectArray!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -76,7 +82,10 @@ this.keys= new Array(hashtable.length)
         
 index < size; index++)
         {
-keys[index]= hashtable.get(objectArray[index]! as Object) as Integer
+keys[index]= hashtable.get(objectArray[index]! as Object);
+
+                         as Integer;
+    
 }
 
 }
@@ -100,7 +109,8 @@ var allBinaryLayerManager = allBinaryLayerManager
         
 index < keys.length; index++)
         {
-super.processAI(keys[index]!.toInt())
+super.processAI(keys[index]!.toInt());
+    
 }
 
 
@@ -116,12 +126,14 @@ super.processAI(keys[index]!.toInt())
                         if(isOn())
                         
                                     {
-                                    setOn(false)
+                                    setOn(false);
+    
 
                                     }
                                 
                         else {
-                            setOn(true)
+                            setOn(true);
+    
 
                         }
                             
@@ -131,20 +143,23 @@ super.processAI(keys[index]!.toInt())
                 //@Throws(Error::class)
             
     public disable(){
-setOn(false)
+setOn(false);
+    
 }
 
 
                 //@Throws(Error::class)
             
     public enable(){
-setOn(true)
+setOn(true);
+    
 }
 
 
     setOn(on: boolean){
 var on = on
-this.on= on
+this.on= on;
+    
 }
 
 

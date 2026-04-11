@@ -76,31 +76,37 @@ var objectConfigFileAbPath = objectConfigFileAbPath
     var transformInfoObjectConfigData: TransformInfoObjectConfigData = TransformInfoObjectConfigData.getInstance()!;
         
         
-
+;
+    
 
     var data: string = CryptFileReader(transformInfoObjectConfigData!.UNCRYPTED_EXTENSION, transformInfoObjectConfigData!.getInstance()!.ENCRYPTED_EXTENSION).
                             get(objectConfigFileAbPath)!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return TransformInfoObjectConfig(transformInfoInterface, DomDocumentHelper.create(data));
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("Could Not Load Object Config", this, commonStrings!.GET_INSTANCE, e)
+                                    logUtil!.put("Could Not Load Object Config", this, commonStrings!.GET_INSTANCE, e);
+    
 
                                     }
                                 

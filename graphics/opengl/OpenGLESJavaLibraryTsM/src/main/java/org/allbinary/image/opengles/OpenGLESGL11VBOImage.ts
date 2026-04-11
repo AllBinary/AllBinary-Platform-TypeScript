@@ -74,22 +74,34 @@ public constructor (image: Image, bitmapFactory: PlatformBitmapBaseFactory, text
 
                             //For kotlin this is before the body of the constructor.
                     
-this.initVertices()
-this.regionRectangleVertexFloatBuffer!.put(FloatBuffer.wrap(regionRectangleFloatArray))
-this.regionTextureVertexFloatBuffer!.put(FloatBuffer.wrap(regionTextureRectangleFloatArray))
+this.initVertices();
+    
+this.regionRectangleVertexFloatBuffer!.put(FloatBuffer.wrap(regionRectangleFloatArray));
+    
+this.regionTextureVertexFloatBuffer!.put(FloatBuffer.wrap(regionTextureRectangleFloatArray));
+    
 }
 
 
     initVertices(){
-textureVertexFloatBuffer!.put(0)
-textureVertexFloatBuffer!.put(1)
-textureVertexFloatBuffer!.put(1)
-textureVertexFloatBuffer!.put(1)
-textureVertexFloatBuffer!.put(0)
-textureVertexFloatBuffer!.put(0)
-textureVertexFloatBuffer!.put(1)
-textureVertexFloatBuffer!.put(0)
-textureVertexFloatBuffer!.rewind()
+textureVertexFloatBuffer!.put(0);
+    
+textureVertexFloatBuffer!.put(1);
+    
+textureVertexFloatBuffer!.put(1);
+    
+textureVertexFloatBuffer!.put(1);
+    
+textureVertexFloatBuffer!.put(0);
+    
+textureVertexFloatBuffer!.put(0);
+    
+textureVertexFloatBuffer!.put(1);
+    
+textureVertexFloatBuffer!.put(0);
+    
+textureVertexFloatBuffer!.rewind();
+    
 }
 
 
@@ -99,21 +111,25 @@ textureVertexFloatBuffer!.rewind()
     var gl10: GL10 = gl as GL10;
         
         
-
+;
+    
 
                         if(super.initTexture(gl10))
                         
                                     {
-                                    this.textureFactory!.load(gl10, GL10.GL_TEXTURE_2D, 0, this, 0, true)
-gl10.glDisable(GL10.GL_TEXTURE_2D)
-OpenGLLogUtil.getInstance()!.logError(gl10, this)
+                                    this.textureFactory!.load(gl10, GL10.GL_TEXTURE_2D, 0, this, 0, true);
+    
+gl10.glDisable(GL10.GL_TEXTURE_2D);
+    
+OpenGLLogUtil.getInstance()!.logError(gl10, this);
+    
 
                                     }
                                 
 }
 
 
-    readonly regionRectangleFloatArray: FloatArray = floatArrayOf(0,0,0,0,0,0,0,0,0,0,0,0);
+    readonly regionRectangleFloatArray: number[] = floatArrayOf(0,0,0,0,0,0,0,0,0,0,0,0);
         
         
 
@@ -121,7 +137,7 @@ OpenGLLogUtil.getInstance()!.logError(gl10, this)
         
         
 
-    private readonly regionTextureRectangleFloatArray: FloatArray = FloatArray(8);
+    private readonly regionTextureRectangleFloatArray: number[] = new Array(8);
         
         
 
@@ -139,34 +155,62 @@ OpenGLLogUtil.getInstance()!.logError(gl10, this)
     //var x = x
     //var y = y
     //var z = z
-this.regionRectangleFloatArray[0]= x
-this.regionRectangleFloatArray[7]= viewHeight -y
-this.regionRectangleFloatArray[1]= this.regionRectangleFloatArray[7] -height
-this.regionRectangleFloatArray[3]= x +width
-this.regionRectangleFloatArray[4]= this.regionRectangleFloatArray[1]!
-this.regionRectangleFloatArray[6]= x
-this.regionRectangleFloatArray[9]= this.regionRectangleFloatArray[3]!
-this.regionRectangleFloatArray[10]= this.regionRectangleFloatArray[7]!
-regionTextureRectangleFloatArray[0]= x_src /this.getWidth()
-regionTextureRectangleFloatArray[1]= () /this.getHeight()
-regionTextureRectangleFloatArray[2]= () /this.getWidth()
-regionTextureRectangleFloatArray[3]= regionTextureRectangleFloatArray[1]!
-regionTextureRectangleFloatArray[4]= regionTextureRectangleFloatArray[0]!
-regionTextureRectangleFloatArray[5]= y_src /this.getHeight()
-regionTextureRectangleFloatArray[6]= regionTextureRectangleFloatArray[2]!
-regionTextureRectangleFloatArray[7]= regionTextureRectangleFloatArray[5]!
-this.glUtil!.position(regionRectangleVertexFloatBuffer, 0)
-gl.glVertexPointer(3, GL10.GL_FLOAT, 0, regionRectangleVertexFloatBuffer)
-gl.glEnableClientState(GL10.GL_VERTEX_ARRAY)
-gl.glEnable(GL10.GL_TEXTURE_2D)
-gl.glBindTexture(GL10.GL_TEXTURE_2D, openGLESImageProperties!.textureID)
-gl.glEnableClientState(GL10.GL_TEXTURE_COORD_ARRAY)
-this.glUtil!.position(regionTextureVertexFloatBuffer, 0)
-gl.glTexCoordPointer(2, GL10.GL_FLOAT, 0, regionTextureVertexFloatBuffer)
-gl.glDrawArrays(GL10.GL_TRIANGLE_STRIP, 0, 4)
-gl.glDisableClientState(GL10.GL_VERTEX_ARRAY)
-gl.glDisableClientState(GL10.GL_TEXTURE_COORD_ARRAY)
-gl.glDisable(GL10.GL_TEXTURE_2D)
+this.regionRectangleFloatArray[0]= x;
+    
+this.regionRectangleFloatArray[7]= viewHeight -y;
+    
+this.regionRectangleFloatArray[1]= this.regionRectangleFloatArray[7] -height;
+    
+this.regionRectangleFloatArray[3]= x +width;
+    
+this.regionRectangleFloatArray[4]= this.regionRectangleFloatArray[1]!;
+    
+this.regionRectangleFloatArray[6]= x;
+    
+this.regionRectangleFloatArray[9]= this.regionRectangleFloatArray[3]!;
+    
+this.regionRectangleFloatArray[10]= this.regionRectangleFloatArray[7]!;
+    
+regionTextureRectangleFloatArray[0]= x_src /this.getWidth();
+    
+regionTextureRectangleFloatArray[1]= () /this.getHeight();
+    
+regionTextureRectangleFloatArray[2]= () /this.getWidth();
+    
+regionTextureRectangleFloatArray[3]= regionTextureRectangleFloatArray[1]!;
+    
+regionTextureRectangleFloatArray[4]= regionTextureRectangleFloatArray[0]!;
+    
+regionTextureRectangleFloatArray[5]= y_src /this.getHeight();
+    
+regionTextureRectangleFloatArray[6]= regionTextureRectangleFloatArray[2]!;
+    
+regionTextureRectangleFloatArray[7]= regionTextureRectangleFloatArray[5]!;
+    
+this.glUtil!.position(regionRectangleVertexFloatBuffer, 0);
+    
+gl.glVertexPointer(3, GL10.GL_FLOAT, 0, regionRectangleVertexFloatBuffer);
+    
+gl.glEnableClientState(GL10.GL_VERTEX_ARRAY);
+    
+gl.glEnable(GL10.GL_TEXTURE_2D);
+    
+gl.glBindTexture(GL10.GL_TEXTURE_2D, openGLESImageProperties!.textureID);
+    
+gl.glEnableClientState(GL10.GL_TEXTURE_COORD_ARRAY);
+    
+this.glUtil!.position(regionTextureVertexFloatBuffer, 0);
+    
+gl.glTexCoordPointer(2, GL10.GL_FLOAT, 0, regionTextureVertexFloatBuffer);
+    
+gl.glDrawArrays(GL10.GL_TRIANGLE_STRIP, 0, 4);
+    
+gl.glDisableClientState(GL10.GL_VERTEX_ARRAY);
+    
+gl.glDisableClientState(GL10.GL_TEXTURE_COORD_ARRAY);
+    
+gl.glDisable(GL10.GL_TEXTURE_2D);
+    
 }
 
 
@@ -175,26 +219,46 @@ gl.glDisable(GL10.GL_TEXTURE_2D)
     //var x = x
     //var y = y
     //var z = z
-this.regionRectangleFloatArray[0]= x
-this.regionRectangleFloatArray[7]= DisplayInfoSingleton.getInstance()!.getLastHeight() -y
-this.regionRectangleFloatArray[1]= this.regionRectangleFloatArray[7] -this.getHeight()
-this.regionRectangleFloatArray[3]= x +this.getWidth()
-this.regionRectangleFloatArray[4]= this.regionRectangleFloatArray[1]!
-this.regionRectangleFloatArray[6]= x
-this.regionRectangleFloatArray[9]= this.regionRectangleFloatArray[3]!
-this.regionRectangleFloatArray[10]= this.regionRectangleFloatArray[7]!
-this.glUtil!.position(regionRectangleVertexFloatBuffer, 0)
-gl.glVertexPointer(3, GL10.GL_FLOAT, 0, regionRectangleVertexFloatBuffer)
-gl.glEnableClientState(GL10.GL_VERTEX_ARRAY)
-gl.glEnable(GL10.GL_TEXTURE_2D)
-gl.glBindTexture(GL10.GL_TEXTURE_2D, openGLESImageProperties!.textureID)
-gl.glEnableClientState(GL10.GL_TEXTURE_COORD_ARRAY)
-this.glUtil!.position(textureVertexFloatBuffer, 0)
-gl.glTexCoordPointer(2, GL10.GL_FLOAT, 0, textureVertexFloatBuffer)
-gl.glDrawArrays(GL10.GL_TRIANGLE_STRIP, 0, 4)
-gl.glDisableClientState(GL10.GL_VERTEX_ARRAY)
-gl.glDisableClientState(GL10.GL_TEXTURE_COORD_ARRAY)
-gl.glDisable(GL10.GL_TEXTURE_2D)
+this.regionRectangleFloatArray[0]= x;
+    
+this.regionRectangleFloatArray[7]= DisplayInfoSingleton.getInstance()!.getLastHeight() -y;
+    
+this.regionRectangleFloatArray[1]= this.regionRectangleFloatArray[7] -this.getHeight();
+    
+this.regionRectangleFloatArray[3]= x +this.getWidth();
+    
+this.regionRectangleFloatArray[4]= this.regionRectangleFloatArray[1]!;
+    
+this.regionRectangleFloatArray[6]= x;
+    
+this.regionRectangleFloatArray[9]= this.regionRectangleFloatArray[3]!;
+    
+this.regionRectangleFloatArray[10]= this.regionRectangleFloatArray[7]!;
+    
+this.glUtil!.position(regionRectangleVertexFloatBuffer, 0);
+    
+gl.glVertexPointer(3, GL10.GL_FLOAT, 0, regionRectangleVertexFloatBuffer);
+    
+gl.glEnableClientState(GL10.GL_VERTEX_ARRAY);
+    
+gl.glEnable(GL10.GL_TEXTURE_2D);
+    
+gl.glBindTexture(GL10.GL_TEXTURE_2D, openGLESImageProperties!.textureID);
+    
+gl.glEnableClientState(GL10.GL_TEXTURE_COORD_ARRAY);
+    
+this.glUtil!.position(textureVertexFloatBuffer, 0);
+    
+gl.glTexCoordPointer(2, GL10.GL_FLOAT, 0, textureVertexFloatBuffer);
+    
+gl.glDrawArrays(GL10.GL_TRIANGLE_STRIP, 0, 4);
+    
+gl.glDisableClientState(GL10.GL_VERTEX_ARRAY);
+    
+gl.glDisableClientState(GL10.GL_TEXTURE_COORD_ARRAY);
+    
+gl.glDisable(GL10.GL_TEXTURE_2D);
+    
 }
 
 

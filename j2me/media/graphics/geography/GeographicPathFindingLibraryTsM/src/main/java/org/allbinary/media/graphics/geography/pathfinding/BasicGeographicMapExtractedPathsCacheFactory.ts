@@ -57,14 +57,17 @@ var maxPaths = maxPaths
         
 index >= this.maxConcurrentPaths; index--)
         {
-this.list.add(BasicArrayList(maxPaths))
+this.list.add(BasicArrayList(maxPaths));
+    
 }
 
-this.maxConcurrentPaths= maxConcurrentPaths
+this.maxConcurrentPaths= maxConcurrentPaths;
+    
 
                                     }
                                 
-this.maxPaths= maxPaths
+this.maxPaths= maxPaths;
+    
 }
 
 
@@ -77,7 +80,9 @@ this.maxPaths= maxPaths
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.list.remove(0) as BasicArrayList;
+                        return this.list.remove(0);
+
+                         as BasicArrayList;
     
 
                                     }
@@ -107,11 +112,16 @@ var list = list
         
 index >= 0; index--)
         {
-BasicGeographicMapExtractedPathCacheFactory.getInstance()!.release(list.get(index) as BasicArrayList)
+BasicGeographicMapExtractedPathCacheFactory.getInstance()!.release(list.get(index);
+
+                         as BasicArrayList);
+    
 }
 
-list.clear()
-this.list.add(list)
+list.clear();
+    
+this.list.add(list);
+    
 }
 
 

@@ -46,6 +46,8 @@ var rgb2 = rgb2
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return StringMaker().
                             append(rgb1.toString())!.append(CommonSeps.getInstance()!.UNDERSCORE)!.append(rgb2.toString())!.toString();
+
+                        ;
     
 }
 
@@ -60,9 +62,12 @@ public constructor (rgb1: number, rgb2: number){
             super();
             var rgb1 = rgb1
 var rgb2 = rgb2
-this.setRgb1(rgb1)
-this.setRgb2(rgb2)
-this.key= ColorDelta.getKey(rgb1, rgb2)
+this.setRgb1(rgb1);
+    
+this.setRgb2(rgb2);
+    
+this.key= ColorDelta.getKey(rgb1, rgb2);
+    
 }
 
 
@@ -88,7 +93,8 @@ this.key= ColorDelta.getKey(rgb1, rgb2)
 
     setRgb1(rgb1: number){
 var rgb1 = rgb1
-this.rgb1= rgb1
+this.rgb1= rgb1;
+    
 }
 
 
@@ -104,7 +110,8 @@ this.rgb1= rgb1
 
     setRgb2(rgb2: number){
 var rgb2 = rgb2
-this.rgb2= rgb2
+this.rgb2= rgb2;
+    
 }
 
 
@@ -115,6 +122,8 @@ this.rgb2= rgb2
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return StringMaker().
                             append("ColorDelta: ")!.append(StringUtil.getInstance()!.toString(this.getKey()))!.append(" RGB1: ")!.appendint(this.getRgb1())!.append(" RGB2: ")!.appendint(this.getRgb2())!.toString();
+
+                        ;
     
 }
 

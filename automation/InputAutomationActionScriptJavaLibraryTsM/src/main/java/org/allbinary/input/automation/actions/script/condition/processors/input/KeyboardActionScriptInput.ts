@@ -18,13 +18,16 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { KeyEvent } from "../../../../../../../../../java/awt/event/KeyEvent.js";
 
     
 import { HashMap } from "../../../../../../../../../java/util/HashMap.js";
 
     
-import { Vector } from "../../../../../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../../../../../java/util/Vector.js";
 
     
 import { DomNodeHelper } from "../../../../../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js";
@@ -75,12 +78,14 @@ var integerArray = integerArray
     var index: number = 0;
         
         
-
+;
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
         while(index < integerArray!.length)
         {
@@ -88,21 +93,25 @@ var integerArray = integerArray
     var nextInteger: Integer = integerArray[index]!;
         
         
-
+;
+    
 
                         if(KeyUtil.isNormallyDisplayed(nextInteger))
                         
                                     {
-                                    stringBuffer!.append(KeyEvent.getKeyText(nextInteger))
+                                    stringBuffer!.append(KeyEvent.getKeyText(nextInteger));
+    
 
                                     }
                                 
                         else {
-                            stringBuffer!.append("&#" +nextInteger +";")
+                            stringBuffer!.append("&#" +nextInteger +";");
+    
 
                         }
                             
-index++
+index++;
+    
 }
 
 
@@ -110,6 +119,8 @@ index++
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 
@@ -142,12 +153,14 @@ public constructor (node: Node)
 
                             //For kotlin this is before the body of the constructor.
                     
-logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR)
+logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
+    
 
     var actionNode: Node = DomSearchHelper.getNode(KeyboardActionScriptInputData.NAME, node.getChildNodes())!;
         
         
-
+;
+    
 
                         if(actionNode != 
                                     null
@@ -158,12 +171,14 @@ logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR)
     var nodeList: NodeList = actionNode!.getChildNodes()!;
         
         
-
+;
+    
 
     var vector: Vector = new Vector();
         
         
-
+;
+    
 
 
 
@@ -178,7 +193,8 @@ index < nodeList!.getLength(); index++)
     var childNode: Node = nodeList!.item(index)!;
         
         
-
+;
+    
 
                         if(childNode!.getNodeName()!.startsWith(KeyboardActionScriptInputData.KEY))
                         
@@ -187,8 +203,10 @@ index < nodeList!.getLength(); index++)
     var keyString: string = DomNodeHelper.getTextNodeValue(childNode)!;
         
         
-
-vector.add(keyString.valueOf())
+;
+    
+vector.add(keyString.valueOf());
+    
 
                                     }
                                 
@@ -200,8 +218,10 @@ vector.add(keyString.valueOf())
     var time: string = DomNodeHelper.getTextNodeValue(childNode)!;
         
         
-
-this.setDelayBetweenKeys(Integer.valueOf(time)!.toInt())
+;
+    
+this.setDelayBetweenKeys(Integer.valueOf(time)!.toInt());
+    
 
                                     }
                                 
@@ -213,10 +233,12 @@ this.setDelayBetweenKeys(Integer.valueOf(time)!.toInt())
     var value: string = DomNodeHelper.getTextNodeValue(childNode)!;
         
         
-
+;
+    
 this.setPress(value.concatToString()
 
-                                    )
+                                    );
+    
 
                                     }
                                 
@@ -228,10 +250,12 @@ this.setPress(value.concatToString()
     var value: string = DomNodeHelper.getTextNodeValue(childNode)!;
         
         
-
+;
+    
 this.setRelease(value.concatToString()
 
-                                    )
+                                    );
+    
 
                                     }
                                 
@@ -245,7 +269,10 @@ this.setRelease(value.concatToString()
                             
 }
 
-this.setKeyArray(vector.toArray(new Array(vector.length)) as Array<Integer?>)
+this.setKeyArray(vector.toArray(new Array(vector.length));
+
+                         as Array<Integer?>);
+    
 
                                     }
                                 
@@ -257,16 +284,23 @@ this.setKeyArray(vector.toArray(new Array(vector.length)) as Array<Integer?>)
 
                         }
                             
-this.setAllowsChildren(false)
+this.setAllowsChildren(false);
+    
 
-                        if(!this.isPress() && !this.isRelease())
+                        if(!this.isPress();
+
+                         && !this.isRelease();
+
+                        )
                         
                                     {
-                                    this.setNormal()
+                                    this.setNormal();
+    
 
                                     }
                                 
-this.keyboardActionScriptInputJPanel= KeyboardActionScriptInputJPanel(this)
+this.keyboardActionScriptInputJPanel= KeyboardActionScriptInputJPanel(this);
+    
 }
 
 public constructor ()                        
@@ -279,16 +313,24 @@ public constructor ()
                             //For kotlin this is before the body of the constructor.
                     
 
-                        if(!this.isPress() && !this.isRelease())
+                        if(!this.isPress();
+
+                         && !this.isRelease();
+
+                        )
                         
                                     {
-                                    this.setNormal()
+                                    this.setNormal();
+    
 
                                     }
                                 
-this.setAllowsChildren(false)
-this.setTime(120)
-this.keyboardActionScriptInputJPanel= KeyboardActionScriptInputJPanel(this)
+this.setAllowsChildren(false);
+    
+this.setTime(120);
+    
+this.keyboardActionScriptInputJPanel= KeyboardActionScriptInputJPanel(this);
+    
 }
 
 
@@ -304,7 +346,8 @@ this.keyboardActionScriptInputJPanel= KeyboardActionScriptInputJPanel(this)
 
     public setDelayBetweenKeys(delayBetweenKeys: number){
 var delayBetweenKeys = delayBetweenKeys
-this.delayBetweenKeys= delayBetweenKeys
+this.delayBetweenKeys= delayBetweenKeys;
+    
 }
 
 
@@ -320,7 +363,8 @@ this.delayBetweenKeys= delayBetweenKeys
 
     public setPress(press: boolean){
 var press = press
-this.press= press
+this.press= press;
+    
 }
 
 
@@ -336,7 +380,8 @@ this.press= press
 
     public setRelease(release: boolean){
 var release = release
-this.release= release
+this.release= release;
+    
 }
 
 
@@ -351,8 +396,10 @@ this.release= release
 
 
     public setNormal(){
-this.setPress(true)
-this.setRelease(true)
+this.setPress(true);
+    
+this.setRelease(true);
+    
 }
 
 
@@ -372,13 +419,17 @@ var keyArray = keyArray
                         if(keyArray != 
                                     null
                                 )
-                        logUtil!.put(CommonLabels.getInstance()!.START +keyArray!.length, this, "setKeyArray")
-this.keyArray= keyArray
+                        logUtil!.put(CommonLabels.getInstance()!.START +keyArray!.length, this, "setKeyArray");
+
+                        
+this.keyArray= keyArray;
+    
 }
 
 
     public showDialog(){
-this.keyboardActionScriptInputJPanel!.getKeyActionJDialog()!.setVisible(true)
+this.keyboardActionScriptInputJPanel!.getKeyActionJDialog()!.setVisible(true);
+    
 }
 
 
@@ -388,35 +439,43 @@ this.keyboardActionScriptInputJPanel!.getKeyActionJDialog()!.setVisible(true)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return getText(this.getKeyArray());
+
+                        ;
     
 }
 
 
     public setText(text: string){
 var text = text
-logUtil!.put(CommonLabels.getInstance()!.START +text, this, "setText")
+logUtil!.put(CommonLabels.getInstance()!.START +text, this, "setText");
+    
 
     var integerArray: Integer[] = this.integerArrayValue(text)!;
         
         
-
-this.setKeyArray(integerArray)
+;
+    
+this.setKeyArray(integerArray);
+    
 }
 
 
     integerArrayValue(text: string): Integer[]{
 var text = text
-logUtil!.put(CommonLabels.getInstance()!.START +text, this, "integerArrayValue")
+logUtil!.put(CommonLabels.getInstance()!.START +text, this, "integerArrayValue");
+    
 
     var vector: Vector = new Vector();
         
         
-
+;
+    
 
     var index: number = 0;
         
         
-
+;
+    
 
         while(index < text.length)
         {
@@ -424,7 +483,8 @@ logUtil!.put(CommonLabels.getInstance()!.START +text, this, "integerArrayValue")
     var aChar: string = text[index]!;
         
         
-
+;
+    
 
                         if(aChar == '&')
                         
@@ -437,7 +497,8 @@ logUtil!.put(CommonLabels.getInstance()!.START +text, this, "integerArrayValue")
     var endIndex: number = text.indexOf(';', index +1)!;
         
         
-
+;
+    
 
                         if(endIndex !=  -1)
                         
@@ -446,10 +507,14 @@ logUtil!.put(CommonLabels.getInstance()!.START +text, this, "integerArrayValue")
     var nextCharString: string = text.substring(index +2, endIndex)!;
         
         
-
-logUtil!.put("Next Char String: " +nextCharString, this, "integerArrayValue")
-vector.add(substring.valueOf())
-index= index +nextCharString!.length +3
+;
+    
+logUtil!.put("Next Char String: " +nextCharString, this, "integerArrayValue");
+    
+vector.add(substring.valueOf());
+    
+index= index +nextCharString!.length +3;
+    
 
 
                         continue
@@ -465,15 +530,20 @@ index= index +nextCharString!.length +3
                                 
 vector.add(KeySingletonFactory.getHashtable()!.get(aChar.concatToString()
 
-                                    ))
-index++
+                                    ));
+    
+index++;
+    
 }
 
 
-    var integerArray: Integer[] = vector.toArray(new Array(vector.length)) as Array<Integer?>;
-        
-        
+    var integerArray: Integer[] = vector.toArray(new Array(vector.length));
 
+                         as Array<Integer?>;
+        
+        
+;
+    
 
 
 
@@ -483,12 +553,13 @@ index++
 }
 
 
-    public toHashMap(): HashMap<Any, Any>{
+    public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
         
         
-
+;
+    
 
 
 
@@ -499,13 +570,18 @@ index++
         
 index < this.getKeyArray()!.length; index++)
         {
-hashMap!.put(KeyboardActionScriptInputData.KEY +index, Integer.toString(this.getKeyArray()[index]!))
+hashMap!.put(KeyboardActionScriptInputData.KEY +index, Integer.toString(this.getKeyArray()[index]!));
+    
 }
 
-hashMap!.put(KeyboardActionScriptInputData.DELAY_BETWEEN_KEYS, Integer.toString(this.getDelayBetweenKeys()))
-hashMap!.put(KeyboardActionScriptInputData.PRESS, Boolean.toString(this.isPress()))
-hashMap!.put(KeyboardActionScriptInputData.RELEASE, Boolean.toString(this.isRelease()))
-logUtil!.put("HashMap: " +hashMap!.toString(), this, "toHashMap()")
+hashMap!.put(KeyboardActionScriptInputData.DELAY_BETWEEN_KEYS, Integer.toString(this.getDelayBetweenKeys()));
+    
+hashMap!.put(KeyboardActionScriptInputData.PRESS, Boolean.toString(this.isPress()));
+    
+hashMap!.put(KeyboardActionScriptInputData.RELEASE, Boolean.toString(this.isRelease()));
+    
+logUtil!.put("HashMap: " +hashMap!.toString(), this, "toHashMap()");
+    
 
 
 
@@ -523,8 +599,10 @@ var document = document
     var node: Node = super.toXmlNode(document)!;
         
         
-
-node.appendChild(ModDomHelper.createNodeWithValueNodes(document, KeyboardActionScriptInputData.NAME, this.toHashMap()))
+;
+    
+node.appendChild(ModDomHelper.createNodeWithValueNodes(document, KeyboardActionScriptInputData.NAME, this.toHashMap()));
+    
 
 
 
@@ -538,12 +616,14 @@ node.appendChild(ModDomHelper.createNodeWithValueNodes(document, KeyboardActionS
             
     public process(frame: Long){
 var frame = frame
-KeyboardInputAutomationProcessor.process(this)
+KeyboardInputAutomationProcessor.process(this);
+    
 }
 
 
     public log(){
-logUtil!.put(this.toString(), this, "log")
+logUtil!.put(this.toString(), this, "log");
+    
 }
 
 
@@ -552,21 +632,33 @@ logUtil!.put(this.toString(), this, "log")
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(super.toString())
-stringBuffer!.append(" Text: ")
-stringBuffer!.append(this.getText())
-stringBuffer!.append(" isPress: ")
-stringBuffer!.appendboolean(this.isPress())
-stringBuffer!.append(" isRelease: ")
-stringBuffer!.appendboolean(this.isRelease())
-stringBuffer!.append(" Between Key Delay: ")
-stringBuffer!.appendint(this.getDelayBetweenKeys())
+;
+    
+stringBuffer!.append(super.toString());
+    
+stringBuffer!.append(" Text: ");
+    
+stringBuffer!.append(this.getText());
+    
+stringBuffer!.append(" isPress: ");
+    
+stringBuffer!.appendboolean(this.isPress());
+    
+stringBuffer!.append(" isRelease: ");
+    
+stringBuffer!.appendboolean(this.isRelease());
+    
+stringBuffer!.append(" Between Key Delay: ");
+    
+stringBuffer!.appendint(this.getDelayBetweenKeys());
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

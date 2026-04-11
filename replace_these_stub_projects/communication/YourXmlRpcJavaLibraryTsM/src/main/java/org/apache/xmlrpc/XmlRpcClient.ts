@@ -4,6 +4,8 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { IOException } from "../../../java/io/IOException.js";
 
     
@@ -13,7 +15,8 @@ import { MalformedURLException } from "../../../java/net/MalformedURLException.j
 import { URL } from "../../../java/net/URL.js";
 
     
-import { Vector } from "../../../java/util/Vector.js";
+
+//import { Vector } from "../../../java/util/Vector.js";
 
     
 import { CryptInterface } from "../../../org/allbinary/init/crypt/jcehelper/CryptInterface.js";
@@ -34,7 +37,8 @@ public constructor (url: URL){
 
             super();
             var url = url
-this.url= url
+this.url= url;
+    
 }
 
 public constructor (url: string)                        
@@ -81,7 +85,7 @@ var password = password
 
                 //@Throws(XmlRpcException::class, IOException::class)
             
-    public execute(method: string, params: Vector<Any>): any = {}{
+    public execute(method: string, params: Vector<any>): any = {}{
 var method = method
 var params = params
 
@@ -95,7 +99,7 @@ var params = params
 
                 //@Throws(XmlRpcException::class, IOException::class)
             
-    public execute(method: string, params: Vector<Any>, cryptInterface: CryptInterface): any = {}{
+    public execute(method: string, params: Vector<any>, cryptInterface: CryptInterface): any = {}{
 var method = method
 var params = params
 var cryptInterface = cryptInterface

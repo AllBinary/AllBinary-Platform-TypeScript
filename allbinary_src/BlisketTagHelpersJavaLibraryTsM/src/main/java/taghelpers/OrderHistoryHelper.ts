@@ -81,7 +81,7 @@ export class OrderHistoryHelper extends TagHelper {
 
     private storeFrontInterface: StoreFrontInterface
 
-    private readonly propertiesHashMap: HashMap<Any, Any>
+    private readonly propertiesHashMap: HashMap<any, any>
 
     private readonly pageContext: PageContext
 
@@ -96,44 +96,60 @@ export class OrderHistoryHelper extends TagHelper {
     private status: string
 
     private newStatus: string
-public constructor (propertiesHashMap: HashMap<Any, Any>, pageContext: PageContext){
+public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
             var propertiesHashMap = propertiesHashMap
 var pageContext = pageContext
-this.propertiesHashMap= propertiesHashMap
-this.pageContext= pageContext
-this.request= pageContext!.getRequest() as HttpServletRequest
+this.propertiesHashMap= propertiesHashMap;
+    
+this.pageContext= pageContext;
+    
+this.request= pageContext!.getRequest();
 
-    var storeName: string = propertiesHashMap!.get(StoreFrontData.getInstance()!.NAME) as String;
+                         as HttpServletRequest;
+    
+
+    var storeName: string = propertiesHashMap!.get(StoreFrontData.getInstance()!.NAME);
+
+                         as String;
         
         
+;
+    
+this.newStatus= propertiesHashMap!.get(OrderHistoryData.STATUS);
 
-this.newStatus= propertiesHashMap!.get(OrderHistoryData.STATUS) as String
+                         as String;
+    
 
                         if(storeName != 
                                     null
                                 )
                         
                                     {
-                                    this.storeFrontInterface= StoreFrontFactory.getInstance(storeName)
+                                    this.storeFrontInterface= StoreFrontFactory.getInstance(storeName);
+    
 
                                     }
                                 
-this.getFormData()
+this.getFormData();
+    
 }
 
 
     getFormData(){
-this.id= request.getParameter(OrderData.ID)
-this.groupId= request.getParameter(ShippingMethodData.GROUP)
+this.id= request.getParameter(OrderData.ID);
+    
+this.groupId= request.getParameter(ShippingMethodData.GROUP);
+    
 
                         if(this.newStatus == 
                                     null
                                 )
                         
                                     {
-                                    this.newStatus= request.getParameter(OrderHistoryData.STATUS)
+                                    this.newStatus= request.getParameter(OrderHistoryData.STATUS);
+    
 
                                     }
                                 
@@ -147,17 +163,20 @@ this.groupId= request.getParameter(ShippingMethodData.GROUP)
     var success: string = "Status successfully set to: " +this.status;
         
         
-
+;
+    
 
     var orderReviewInterface: OrderHistoryInterface = OrderHistoryFactory.getInstance(id)!;
         
         
-
+;
+    
 
     var status: string = orderReviewInterface!.getStatus()!;
         
         
-
+;
+    
 
                         if(status.compareTo(OrderHistoryData.CANCELLED) == 0)
                         
@@ -218,8 +237,10 @@ this.groupId= request.getParameter(ShippingMethodData.GROUP)
     var orderHistoryEntityInterface: OrderHistoryEntityInterface = OrderHistoryEntityFactory.getInstance()!;
         
         
-
-orderHistoryEntityInterface!.setStatus(id, this.newStatus)
+;
+    
+orderHistoryEntityInterface!.setStatus(id, this.newStatus);
+    
 
 
 
@@ -233,7 +254,8 @@ orderHistoryEntityInterface!.setStatus(id, this.newStatus)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put(success, this, "setOrderStatus()")
+                                    logUtil!.put(success, this, "setOrderStatus()");
+    
 
                                     }
                                 
@@ -243,18 +265,22 @@ orderHistoryEntityInterface!.setStatus(id, this.newStatus)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return "Error Setting Order Status";
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to set order status";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "setOrderStatus()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "setOrderStatus()", e);
+    
 
                                     }
                                 

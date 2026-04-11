@@ -126,7 +126,8 @@ export class HighScoreNamePersistanceSingleton
         
 
     public clear(){
-this.name= StringUtil.getInstance()!.EMPTY_STRING
+this.name= StringUtil.getInstance()!.EMPTY_STRING;
+    
 }
 
 
@@ -139,7 +140,8 @@ this.name= StringUtil.getInstance()!.EMPTY_STRING
     var size: number = nameBasicArrayList!.size()!;
         
         
-
+;
+    
 
 
 
@@ -154,11 +156,14 @@ index < size; index++)
     var integer: Integer = this.nameBasicArrayList!.objectArray[index]! as Integer;
         
         
-
-this.delete(abeClientInformation, gameInfo, integer.toInt())
+;
+    
+this.delete(abeClientInformation, gameInfo, integer.toInt());
+    
 }
 
-this.clear()
+this.clear();
+    
 }
 
 
@@ -169,6 +174,8 @@ this.clear()
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return platformRecordIdUtil!.getRecordId(abeClientInformation, RECORD_ID);
+
+                        ;
     
 }
 
@@ -183,14 +190,20 @@ this.clear()
     var recordStore: RecordStore = NullRecordStore.NULL_RECORD_STORE;
         
         
-
+;
+    
 
         try {
             logUtil!.put(StringMaker().
-                            append("Deleting: ")!.appendint(deleteId)!.toString(), this, commonStrings!.delete)
-recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation), true)
-recordStore!.deleteRecord(deleteId)
-} catch(e: Exception)
+                            append("Deleting: ")!.appendint(deleteId)!.toString(), this, commonStrings!.delete);
+    
+recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation), true);
+    
+recordStore!.deleteRecord(deleteId);
+    
+
+                //: 
+} catch(e) 
             {
 
 
@@ -205,8 +218,10 @@ recordStore!.deleteRecord(deleteId)
                                 )
                         
                                     {
-                                    PreLogUtil.put("Closing RecordStore", this, commonStrings!.delete)
-recordStore!.closeRecordStore()
+                                    PreLogUtil.put("Closing RecordStore", this, commonStrings!.delete);
+    
+recordStore!.closeRecordStore();
+    
 
                                     }
                                 
@@ -233,7 +248,8 @@ recordStore!.closeRecordStore()
     var recordStore: RecordStore = NullRecordStore.NULL_RECORD_STORE;
         
         
-
+;
+    
 
         try {
             
@@ -244,27 +260,34 @@ recordStore!.closeRecordStore()
     var LOADING_ID: string = "Loading id: ";
         
         
-
-recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation), true)
+;
+    
+recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation), true);
+    
 
     var recordEnum: RecordEnumeration = recordStore!.enumerateRecords(NullRecordFilter.NULL_RECORD_FILTER, NullRecordComparator.NULL_RECORD_COMPARATOR, true)!;
         
         
-
+;
+    
 
     var smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;
         
         
+;
+    
 
-
-    var recordAsBytes: ByteArray
-
+    var recordAsBytes: number[]
+;
+    
 
     var byteArrayInputStream: ByteArrayInputStream
-
+;
+    
 
     var inputStream: DataInputStream
-
+;
+    
 
         while(recordEnum!.hasNextElement())
         {
@@ -272,29 +295,40 @@ recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation),
     var id: number = recordEnum!.nextRecordId()!;
         
         
-
+;
+    
 logUtil!.put(StringMaker().
-                            append(LOADING_ID)!.appendint(id)!.toString(), this, commonStrings!.LOAD)
-recordAsBytes= recordStore!.getRecord(id)
-byteArrayInputStream= ByteArrayInputStream(recordAsBytes)
-inputStream= DataInputStream(byteArrayInputStream)
+                            append(LOADING_ID)!.appendint(id)!.toString(), this, commonStrings!.LOAD);
+    
+recordAsBytes= recordStore!.getRecord(id);
+    
+byteArrayInputStream= ByteArrayInputStream(recordAsBytes);
+    
+inputStream= DataInputStream(byteArrayInputStream);
+    
 
         while(inputStream!.available() > 0)
         {
-this.name= inputStream!.readUTF()
+this.name= inputStream!.readUTF();
+    
 }
 
-nameBasicArrayList!.add(smallIntegerSingletonFactory!.getInstance(id))
+nameBasicArrayList!.add(smallIntegerSingletonFactory!.getInstance(id));
+    
 }
 
 
                                     }
                                 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-this.save(abeClientInformation, gameInfo, this.name)
+this.save(abeClientInformation, gameInfo, this.name);
+    
 logUtil!.put(StringMaker().
-                            append(commonStrings!.EXCEPTION_LABEL)!.append(ExceptionUtil.getInstance()!.getStackTrace(e))!.toString(), this, commonStrings!.LOAD)
+                            append(commonStrings!.EXCEPTION_LABEL)!.append(ExceptionUtil.getInstance()!.getStackTrace(e))!.toString(), this, commonStrings!.LOAD);
+    
 }
 
          finally {
@@ -306,14 +340,19 @@ logUtil!.put(StringMaker().
                                 )
                         
                                     {
-                                    PreLogUtil.put("Closing RecordStore", this, commonStrings!.LOAD)
-recordStore!.closeRecordStore()
+                                    PreLogUtil.put("Closing RecordStore", this, commonStrings!.LOAD);
+    
+recordStore!.closeRecordStore();
+    
 
                                     }
                                 
-} catch(e: RecordStoreException)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.LOAD, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.LOAD, e);
+    
 }
 
 
@@ -336,33 +375,45 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.LOAD, e)
     var recordStore: RecordStore = NullRecordStore.NULL_RECORD_STORE;
         
         
-
+;
+    
 
         try {
             logUtil!.put(StringMaker().
-                            append("Saving: ")!.append(name)!.toString(), this, commonStrings!.SAVE)
-recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation), true)
+                            append("Saving: ")!.append(name)!.toString(), this, commonStrings!.SAVE);
+    
+recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation), true);
+    
 
     var byteArrayOutputStream: ByteArrayOutputStream = new ByteArrayOutputStream();
         
         
-
+;
+    
 
     var outputStream: DataOutputStream = new DataOutputStream(byteArrayOutputStream);
         
         
+;
+    
+outputStream!.writeUTF(name);
+    
 
-outputStream!.writeUTF(name)
-
-    var savedGameBytes: ByteArray = byteArrayOutputStream!.toByteArray()!;
+    var savedGameBytes: number[] = byteArrayOutputStream!.toByteArray()!;
         
         
+;
+    
+recordStore!.addRecord(savedGameBytes, 0, savedGameBytes!.length);
+    
+this.name= name;
+    
 
-recordStore!.addRecord(savedGameBytes, 0, savedGameBytes!.length)
-this.name= name
-} catch(e: Exception)
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.SAVE, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.SAVE, e);
+    
 }
 
          finally {
@@ -374,14 +425,19 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.SAVE, e)
                                 )
                         
                                     {
-                                    PreLogUtil.put("Closing RecordStore", this, commonStrings!.SAVE)
-recordStore!.closeRecordStore()
+                                    PreLogUtil.put("Closing RecordStore", this, commonStrings!.SAVE);
+    
+recordStore!.closeRecordStore();
+    
 
                                     }
                                 
-} catch(e: RecordStoreException)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.SAVE, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.SAVE, e);
+    
 }
 
 

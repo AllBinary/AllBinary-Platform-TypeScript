@@ -29,7 +29,8 @@ public constructor (cacheType: CacheType){
 
             super();
             var cacheType = cacheType
-this.cacheType= cacheType
+this.cacheType= cacheType;
+    
 }
 
 
@@ -48,7 +49,8 @@ this.cacheType= cacheType
     var POOL_TYPE: string = "PoolType: ";
         
         
-
+;
+    
 
 
 

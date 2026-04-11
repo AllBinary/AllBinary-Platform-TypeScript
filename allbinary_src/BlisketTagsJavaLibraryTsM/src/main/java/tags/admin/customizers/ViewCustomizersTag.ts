@@ -41,17 +41,24 @@ public constructor (){
     public doStartTag(): number{
 
         try {
-            this.setName("Add Validation Customizers View")
-this.setObjectFile("views.admin.customizers.CustomizersValidationView")
+            this.setName("Add Validation Customizers View");
+    
+this.setObjectFile("views.admin.customizers.CustomizersValidationView");
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.doStartTag();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
+    
 
 
 

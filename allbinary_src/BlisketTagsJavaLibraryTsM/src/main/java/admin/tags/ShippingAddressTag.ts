@@ -51,14 +51,17 @@ export class ShippingAddressTag extends TableTag {
 public constructor (){
 
             super();
-            this.setTagHelperFactory(ShippingAddressHelperFactory())
-this.setTagRequestHelperFactory(ShippingAddressHelperFactory())
+            this.setTagHelperFactory(ShippingAddressHelperFactory());
+    
+this.setTagRequestHelperFactory(ShippingAddressHelperFactory());
+    
 }
 
 
     public setValue(value: string){
 var value = value
-this.value= value
+this.value= value;
+    
 }
 
 
@@ -72,49 +75,61 @@ this.value= value
                             getInstance(this.getPropertiesHashMap(), this.pageContext)!;
         
         
+;
+    
 
-
-    var addressHelperClass: KClass<*> = anyType!::class!;
+    var addressHelperClass: Function = anyType!constructor!;
         
         
-
+;
+    
 
     var method: Method = addressHelperClass!.getMethod("set", 
                             null)!;
         
         
-
+;
+    
 
     var result: string = method.invoke(anyType, 
-                            null) as String;
-        
-        
+                            null);
 
+                         as String;
+        
+        
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
-} catch(e: LicensingException)
+
+                //: 
+} catch(e) 
             {
 
 
 
                             throw e
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
 
     var error: string = "Failed to set Shipping Address";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "set()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "set()", e);
+    
 
                                     }
                                 
@@ -139,49 +154,61 @@ this.value= value
                             getInstance(this.getPropertiesHashMap(), this.pageContext)!;
         
         
+;
+    
 
-
-    var addressHelperClass: KClass<*> = anyType!::class!;
+    var addressHelperClass: Function = anyType!constructor!;
         
         
-
+;
+    
 
     var method: Method = addressHelperClass!.getMethod("setToBillingAddress", 
                             null)!;
         
         
-
+;
+    
 
     var result: string = method.invoke(anyType, 
-                            null) as String;
-        
-        
+                            null);
 
+                         as String;
+        
+        
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
-} catch(e: LicensingException)
+
+                //: 
+} catch(e) 
             {
 
 
 
                             throw e
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
 
     var error: string = "Failed Setting Shipping address to Billing Address";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "setShippingAddressToBillingAddress()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "setShippingAddressToBillingAddress()", e);
+    
 
                                     }
                                 
@@ -215,7 +242,8 @@ this.value= value
                         if(this.getCommand()!.compareTo(ShippingAddressData.SELECT) == 0)
                         
                                     {
-                                    set()
+                                    set();
+    
 
 
 
@@ -229,7 +257,8 @@ this.value= value
                         if(this.getCommand()!.compareTo(ShippingAddressData.SETTOBILLINGADDRESS) == 0)
                         
                                     {
-                                    setToBillingAddress()
+                                    setToBillingAddress();
+    
 
                                     }
                                 
@@ -239,6 +268,8 @@ this.value= value
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.doStartTag();
+
+                        ;
     
 
                         }
@@ -255,9 +286,12 @@ this.value= value
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return SKIP_BODY;
     
-} catch(e: LicensingException)
+
+                //: 
+} catch(e) 
             {
-AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e);
+    
 
 
 
@@ -265,9 +299,12 @@ AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
                         return SKIP_BODY;
     
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
-AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
+    
 
 
 

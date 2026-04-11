@@ -30,7 +30,8 @@ var string = string
     var len: number = string.length!;
         
         
-
+;
+    
 
 
 
@@ -45,7 +46,8 @@ i < len; i++)
     var c: string = string[i]!;
         
         
-
+;
+    
 
                         if(Character.isWhitespace(c) == false)
                         

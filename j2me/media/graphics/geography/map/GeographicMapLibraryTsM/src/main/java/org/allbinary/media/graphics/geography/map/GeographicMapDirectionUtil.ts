@@ -68,27 +68,32 @@ var toGeographicMapCellPosition = toGeographicMapCellPosition
     var fromColumn: number = fromGeographicMapCellPosition!.getColumn()!;
         
         
-
+;
+    
 
     var fromRow: number = fromGeographicMapCellPosition!.getRow()!;
         
         
-
+;
+    
 
     var goColumn: number = toGeographicMapCellPosition!.getColumn()!;
         
         
-
+;
+    
 
     var goRow: number = toGeographicMapCellPosition!.getRow()!;
         
         
-
+;
+    
 
     var directionFactory: DirectionFactory = DirectionFactory.getInstance()!;
         
         
-
+;
+    
 
                         if(fromColumn -1 == goColumn)
                         
@@ -183,27 +188,32 @@ var toGeographicMapCellPosition = toGeographicMapCellPosition
     var fromColumn: number = fromGeographicMapCellPosition!.getColumn()!;
         
         
-
+;
+    
 
     var fromRow: number = fromGeographicMapCellPosition!.getRow()!;
         
         
-
+;
+    
 
     var goColumn: number = toGeographicMapCellPosition!.getColumn()!;
         
         
-
+;
+    
 
     var goRow: number = toGeographicMapCellPosition!.getRow()!;
         
         
-
+;
+    
 
     var directionFactory: DirectionFactory = DirectionFactory.getInstance()!;
         
         
-
+;
+    
 
                         if(fromRow == goRow)
                         
@@ -371,27 +381,32 @@ var toGeographicMapCellPosition = toGeographicMapCellPosition
     var fromColumn: number = fromGeographicMapCellPosition!.getColumn()!;
         
         
-
+;
+    
 
     var fromRow: number = fromGeographicMapCellPosition!.getRow()!;
         
         
-
+;
+    
 
     var goColumn: number = toGeographicMapCellPosition!.getColumn()!;
         
         
-
+;
+    
 
     var goRow: number = toGeographicMapCellPosition!.getRow()!;
         
         
-
+;
+    
 
     var directionFactory: DirectionFactory = DirectionFactory.getInstance()!;
         
         
-
+;
+    
 
                         if(fromColumn > goColumn)
                         
@@ -448,13 +463,16 @@ var toGeographicMapCellPosition = toGeographicMapCellPosition
     var stringMaker: StringMaker = new StringMaker();
         
         
-
+;
+    
 
     var string: string = stringMaker!.append(CellPosition.toString(fromGeographicMapCellPosition))!.append(" == ")!.append(CellPosition.toString(toGeographicMapCellPosition))!.toString()!;
         
         
-
-stringMaker!.delete(0, stringMaker!.length())
+;
+    
+stringMaker!.delete(0, stringMaker!.length());
+    
 
 
 
@@ -479,27 +497,32 @@ var toGeographicMapCellPosition = toGeographicMapCellPosition
     var fromColumn: number = fromGeographicMapCellPosition!.getColumn()!;
         
         
-
+;
+    
 
     var fromRow: number = fromGeographicMapCellPosition!.getRow()!;
         
         
-
+;
+    
 
     var goColumn: number = toGeographicMapCellPosition!.getColumn()!;
         
         
-
+;
+    
 
     var goRow: number = toGeographicMapCellPosition!.getRow()!;
         
         
-
+;
+    
 
     var directionFactory: DirectionFactory = DirectionFactory.getInstance()!;
         
         
-
+;
+    
 
                         if(fromGeographicMapCellPosition == toGeographicMapCellPosition)
                         
@@ -642,11 +665,16 @@ var toGeographicMapCellPosition = toGeographicMapCellPosition
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(ERROR)
-stringBuffer!.append(CellPosition.toString(fromGeographicMapCellPosition))
-stringBuffer!.append(EQUAL)
-stringBuffer!.append(CellPosition.toString(toGeographicMapCellPosition))
+;
+    
+stringBuffer!.append(ERROR);
+    
+stringBuffer!.append(CellPosition.toString(fromGeographicMapCellPosition));
+    
+stringBuffer!.append(EQUAL);
+    
+stringBuffer!.append(CellPosition.toString(toGeographicMapCellPosition));
+    
 
 
 

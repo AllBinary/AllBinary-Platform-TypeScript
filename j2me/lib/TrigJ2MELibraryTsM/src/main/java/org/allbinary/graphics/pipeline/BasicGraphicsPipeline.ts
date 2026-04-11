@@ -44,13 +44,15 @@ public constructor (points: BasicArrayList){
 
             super();
             var points = points
-pointBasicArrayList= points
+pointBasicArrayList= points;
+    
 }
 
 
     public setInitMatrix(points: BasicArrayList){
 var points = points
-pointBasicArrayList= points
+pointBasicArrayList= points;
+    
 }
 
 
@@ -67,20 +69,24 @@ var y = y
     var newBasicArrayList: BasicArrayList = new BasicArrayList();
         
         
-
+;
+    
 
     var size: number = pointBasicArrayList!.size()!;
         
         
-
+;
+    
 
     var pointFactory: PointFactory = PointFactory.getInstance()!;
         
         
-
+;
+    
 
     var secondPoint: GPoint
-
+;
+    
 
 
 
@@ -91,23 +97,27 @@ var y = y
         
 index < size; index++)
         {
-secondPoint= pointBasicArrayList!.objectArray[index]! as GPoint
+secondPoint= pointBasicArrayList!.objectArray[index]! as GPoint;
+    
 
                         if(secondPoint!.getX() != 1000)
                         
                                     {
-                                    newBasicArrayList!.add(pointFactory!.getInstance(secondPoint!.getX() +x, secondPoint!.getY() +y))
+                                    newBasicArrayList!.add(pointFactory!.getInstance(secondPoint!.getX() +x, secondPoint!.getY() +y));
+    
 
                                     }
                                 
                         else {
-                            newBasicArrayList!.add(secondPoint)
+                            newBasicArrayList!.add(secondPoint);
+    
 
                         }
                             
 }
 
-this.pointBasicArrayList= newBasicArrayList
+this.pointBasicArrayList= newBasicArrayList;
+    
 }
 
 
@@ -115,7 +125,10 @@ this.pointBasicArrayList= newBasicArrayList
             
     public rotate(angle: Angle){
 var angle = angle
-this.rotate(angle.getValue().toInt())
+this.rotate(angle.getValue();
+
+                        .toInt());
+    
 }
 
 
@@ -131,38 +144,48 @@ var angle = angle
     var newBasicArrayList: BasicArrayList = new BasicArrayList();
         
         
-
+;
+    
 
     var secondPoint: GPoint
-
+;
+    
 
     var y: number= 0
-
+;
+    
 
     var secondX: number= 0
-
+;
+    
 
     var secondY: number= 0
-
+;
+    
 
     var point: GPoint
-
+;
+    
 
     var pointFactory: PointFactory = PointFactory.getInstance()!;
         
         
-
+;
+    
 
     var size: number = this.pointBasicArrayList!.size()!;
         
         
-
+;
+    
 
     var sin: number= 0
-
+;
+    
 
     var cos: number= 0
-
+;
+    
 
 
 
@@ -173,29 +196,39 @@ var angle = angle
         
 index < size; index++)
         {
-secondPoint= pointBasicArrayList!.objectArray[index]! as GPoint
+secondPoint= pointBasicArrayList!.objectArray[index]! as GPoint;
+    
 
                         if(secondPoint!.getX() != 1000)
                         
                                     {
-                                    sin= noDecimalTrigTable!.sin(angle)
-cos= noDecimalTrigTable!.cos(angle)
-y= secondPoint!.getY() *sin
-secondX= (secondPoint!.getX() *cos) -y
-secondY= (secondPoint!.getX() *sin) +(secondPoint!.getY() *cos)
-point= pointFactory!.getInstance(secondX.toInt() /10000, secondY.toInt() /10000)
-newBasicArrayList!.add(point)
+                                    sin= noDecimalTrigTable!.sin(angle);
+    
+cos= noDecimalTrigTable!.cos(angle);
+    
+y= secondPoint!.getY() *sin;
+    
+secondX= (secondPoint!.getX() *cos) -y;
+    
+secondY= (secondPoint!.getX() *sin) +(secondPoint!.getY() *cos);
+    
+point= pointFactory!.getInstance(secondX.toInt() /10000, secondY.toInt() /10000);
+    
+newBasicArrayList!.add(point);
+    
 
                                     }
                                 
                         else {
-                            newBasicArrayList!.add(secondPoint)
+                            newBasicArrayList!.add(secondPoint);
+    
 
                         }
                             
 }
 
-this.pointBasicArrayList= newBasicArrayList
+this.pointBasicArrayList= newBasicArrayList;
+    
 }
 
 
@@ -207,31 +240,38 @@ var width = width
     var pointFactory: PointFactory = PointFactory.getInstance()!;
         
         
-
+;
+    
 
     var halfWidth: number = (width shr 1);
         
         
-
+;
+    
 
     var newBasicArrayList: BasicArrayList = new BasicArrayList();
         
         
-
+;
+    
 
     var secondPoint: GPoint
-
+;
+    
 
     var newX: number= 0
-
+;
+    
 
     var point: GPoint
-
+;
+    
 
     var size: number = this.pointBasicArrayList!.size()!;
         
         
-
+;
+    
 
 
 
@@ -242,38 +282,46 @@ var width = width
         
 index < size; index++)
         {
-secondPoint= pointBasicArrayList!.objectArray[index]! as GPoint
+secondPoint= pointBasicArrayList!.objectArray[index]! as GPoint;
+    
 
                         if(secondPoint!.getX() != 1000)
                         
                                     {
-                                    newX= 0
+                                    newX= 0;
+    
 
                         if(secondPoint!.getX() > halfWidth)
                         
                                     {
-                                    newX= halfWidth -(secondPoint!.getX() -halfWidth)
+                                    newX= halfWidth -(secondPoint!.getX() -halfWidth);
+    
 
                                     }
                                 
                         else {
-                            newX= halfWidth +(halfWidth -secondPoint!.getX())
+                            newX= halfWidth +(halfWidth -secondPoint!.getX());
+    
 
                         }
                             
-point= pointFactory!.getInstance(newX, secondPoint!.getY())
-newBasicArrayList!.add(point)
+point= pointFactory!.getInstance(newX, secondPoint!.getY());
+    
+newBasicArrayList!.add(point);
+    
 
                                     }
                                 
                         else {
-                            newBasicArrayList!.add(secondPoint)
+                            newBasicArrayList!.add(secondPoint);
+    
 
                         }
                             
 }
 
-this.pointBasicArrayList= newBasicArrayList
+this.pointBasicArrayList= newBasicArrayList;
+    
 }
 
 

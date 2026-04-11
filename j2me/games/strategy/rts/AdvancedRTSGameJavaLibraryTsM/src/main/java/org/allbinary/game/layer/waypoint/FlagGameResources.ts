@@ -77,34 +77,58 @@ protected constructor (){
     init(ROOT: string, sizeString: string){
 var ROOT = ROOT
 var sizeString = sizeString
-super.init(ROOT, sizeString)
+super.init(ROOT, sizeString);
+    
 
     var string: string = GameGraphicsResourceUtil.getInstance()!.getName()!;
         
         
-
-stringBuffer!.delete(0, stringBuffer!.length())
-stringBuffer!.append(ROOT)
-stringBuffer!.append(DESTROY)
-stringBuffer!.append(string)
-stringBuffer!.append(sizeString)
-this.RESOURCE_DESTROY= stringBuffer!.toString()
-stringBuffer!.delete(0, stringBuffer!.length())
-stringBuffer!.append(ICON)
-stringBuffer!.append(ROOT)
-this.RESOURCE_ICON_ANIMATION= stringBuffer!.toString()
-stringBuffer!.delete(0, stringBuffer!.length())
-stringBuffer!.append(ROOT)
-stringBuffer!.append(ICON)
-stringBuffer!.append(string)
-stringBuffer!.append(ICON_SIZE)
-this.RESOURCE_ICON= stringBuffer!.toString()
-stringBuffer!.delete(0, stringBuffer!.length())
-stringBuffer!.append(ROOT)
-stringBuffer!.append(ICON_BUILD)
-stringBuffer!.append(string)
-stringBuffer!.append(ICON_SIZE)
-this.RESOURCE_ICON_BUILD= stringBuffer!.toString()
+;
+    
+stringBuffer!.delete(0, stringBuffer!.length());
+    
+stringBuffer!.append(ROOT);
+    
+stringBuffer!.append(DESTROY);
+    
+stringBuffer!.append(string);
+    
+stringBuffer!.append(sizeString);
+    
+this.RESOURCE_DESTROY= stringBuffer!.toString();
+    
+stringBuffer!.delete(0, stringBuffer!.length());
+    
+stringBuffer!.append(ICON);
+    
+stringBuffer!.append(ROOT);
+    
+this.RESOURCE_ICON_ANIMATION= stringBuffer!.toString();
+    
+stringBuffer!.delete(0, stringBuffer!.length());
+    
+stringBuffer!.append(ROOT);
+    
+stringBuffer!.append(ICON);
+    
+stringBuffer!.append(string);
+    
+stringBuffer!.append(ICON_SIZE);
+    
+this.RESOURCE_ICON= stringBuffer!.toString();
+    
+stringBuffer!.delete(0, stringBuffer!.length());
+    
+stringBuffer!.append(ROOT);
+    
+stringBuffer!.append(ICON_BUILD);
+    
+stringBuffer!.append(string);
+    
+stringBuffer!.append(ICON_SIZE);
+    
+this.RESOURCE_ICON_BUILD= stringBuffer!.toString();
+    
 }
 
 

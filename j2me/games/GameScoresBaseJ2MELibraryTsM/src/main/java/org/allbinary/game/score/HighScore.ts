@@ -55,11 +55,16 @@ public constructor (id: number, name: string, gameInfo: GameInfo, score: number)
 var name = name
 var gameInfo = gameInfo
 var score = score
-this.id= id
-this.name= name
-this.gameInfo= gameInfo
-this.score= score
-this.scoreString= (this.score).toString()
+this.id= id;
+    
+this.name= name;
+    
+this.gameInfo= gameInfo;
+    
+this.score= score;
+    
+this.scoreString= (this.score).toString();
+    
 }
 
 
@@ -95,24 +100,30 @@ this.scoreString= (this.score).toString()
 
                 //@Throws(Error::class)
             
-    public getAsBytes(): ByteArray{
+    public getAsBytes(): number[]{
 
     var byteArrayOutputStream: ByteArrayOutputStream = new ByteArrayOutputStream();
         
         
-
+;
+    
 
     var outputStream: DataOutputStream = new DataOutputStream(byteArrayOutputStream);
         
         
-
-outputStream!.writeUTF(this.getName())
-outputStream!.writeLong(this.getScore())
+;
+    
+outputStream!.writeUTF(this.getName());
+    
+outputStream!.writeLong(this.getScore());
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return byteArrayOutputStream!.toByteArray();
+
+                        ;
     
 }
 
@@ -139,7 +150,8 @@ outputStream!.writeLong(this.getScore())
 
     public setName(name: string){
 var name = name
-this.name= name
+this.name= name;
+    
 }
 
 
@@ -148,13 +160,16 @@ this.name= name
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return StringMaker().
                             append(name)!.append(commonSeps!.COLON)!.appendlong(this.score)!.append(commonSeps!.FORWARD_SLASH)!.append(this.scoreString)!.toString();
+
+                        ;
     
 }
 

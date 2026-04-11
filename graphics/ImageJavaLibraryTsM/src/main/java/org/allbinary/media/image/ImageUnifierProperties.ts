@@ -67,7 +67,8 @@ public constructor (){
 
     public setRows(rows: Integer){
 var rows = rows
-this.rows= rows
+this.rows= rows;
+    
 }
 
 
@@ -83,7 +84,8 @@ this.rows= rows
 
     public setColumns(columns: Integer){
 var columns = columns
-this.columns= columns
+this.columns= columns;
+    
 }
 
 
@@ -99,7 +101,8 @@ this.columns= columns
 
     public setImageUnifierCell(imageUnifierCell: ImageUnifierCell){
 var imageUnifierCell = imageUnifierCell
-this.imageUnifierCell= imageUnifierCell
+this.imageUnifierCell= imageUnifierCell;
+    
 }
 
 

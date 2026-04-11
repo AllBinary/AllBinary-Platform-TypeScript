@@ -32,7 +32,7 @@ export class NullRecordComparator
         
         
 
-    public compare(rec1: ByteArray, rec2: ByteArray): number{
+    public compare(rec1: number[], rec2: number[]): number{
 var rec1 = rec1
 var rec2 = rec2
 

@@ -70,19 +70,28 @@ public constructor (){
 
 
     updateUrl(){
-this.updateHost()
+this.updateHost();
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(this.getHost())
-stringBuffer!.append(this.getName())
-stringBuffer!.append(this.getUserNameKey())
-stringBuffer!.append(this.getUserName())
-stringBuffer!.append(this.getPasswordKey())
-stringBuffer!.append(this.getPassword())
-this.url= stringBuffer!.toString()
+;
+    
+stringBuffer!.append(this.getHost());
+    
+stringBuffer!.append(this.getName());
+    
+stringBuffer!.append(this.getUserNameKey());
+    
+stringBuffer!.append(this.getUserName());
+    
+stringBuffer!.append(this.getPasswordKey());
+    
+stringBuffer!.append(this.getPassword());
+    
+this.url= stringBuffer!.toString();
+    
 }
 
 
@@ -141,23 +150,31 @@ this.url= stringBuffer!.toString()
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(this.getSchema())
-stringBuffer!.append(this.SCHEMA_SEP)
-stringBuffer!.append(this.getServer())
+;
+    
+stringBuffer!.append(this.getSchema());
+    
+stringBuffer!.append(this.SCHEMA_SEP);
+    
+stringBuffer!.append(this.getServer());
+    
 
                         if(this.getPort() != 
                                     null
                                  && this.getPort()!.length() > 1)
                         
                                     {
-                                    stringBuffer!.append(CommonSeps.getInstance()!.COLON)
-stringBuffer!.append(this.getPort())
+                                    stringBuffer!.append(CommonSeps.getInstance()!.COLON);
+    
+stringBuffer!.append(this.getPort());
+    
 
                                     }
                                 
-stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR)
-this.host= stringBuffer!.toString()
+stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
+    
+this.host= stringBuffer!.toString();
+    
 }
 
 
@@ -203,49 +220,62 @@ this.host= stringBuffer!.toString()
 
     public setJdbcDriver(value: string){
 var value = value
-this.jdbcDriver= value
+this.jdbcDriver= value;
+    
 }
 
 
     public setName(value: string){
 var value = value
-this.name= value
-this.updateUrl()
+this.name= value;
+    
+this.updateUrl();
+    
 }
 
 
     public setUserName(value: string){
 var value = value
-this.userName= value
-this.updateUrl()
+this.userName= value;
+    
+this.updateUrl();
+    
 }
 
 
     public setPassword(value: string){
 var value = value
-this.password= value
-this.updateUrl()
+this.password= value;
+    
+this.updateUrl();
+    
 }
 
 
     public setSchema(value: string){
 var value = value
-this.schema= value
-this.updateUrl()
+this.schema= value;
+    
+this.updateUrl();
+    
 }
 
 
     public setServer(value: string){
 var value = value
-this.server= value
-this.updateUrl()
+this.server= value;
+    
+this.updateUrl();
+    
 }
 
 
     public setPort(value: string){
 var value = value
-this.port= value
-this.updateUrl()
+this.port= value;
+    
+this.updateUrl();
+    
 }
 
 

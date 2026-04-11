@@ -55,12 +55,14 @@ private constructor (){
                                                         ];
         
         
-
+;
+    
 
     var inputFactory: InputFactory = InputFactory.getInstance()!;
         
         
-
+;
+    
 
 
 
@@ -72,7 +74,8 @@ private constructor (){
         
 --index >= 0; )
         {
-inputFactory!.add(gameKeyArray[index]!.getId(), gameKeyArray[index]!)
+inputFactory!.add(gameKeyArray[index]!.getId(), gameKeyArray[index]!);
+    
 }
 
 }

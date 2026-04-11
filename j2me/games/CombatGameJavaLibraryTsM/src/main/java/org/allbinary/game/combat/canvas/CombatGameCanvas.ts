@@ -67,7 +67,7 @@ import { AbeClientInformationInterface } from "../../../../../org/allbinary/logi
 export class CombatGameCanvas extends AllBinaryGameCanvas {
         
 
-    basicLayerProcessor: BasicLayerProcessor[] = new Array(0);
+    basicLayerProcessor: BasicLayerProcessor[] = [];
         
         
 public constructor (cmdListener: CommandListener, gameLayerManager: AllBinaryGameLayerManager, highScoresFactoryInterface: HighScoresFactoryInterface, gameInitializationInterfaceFactoryInterface: BasicBuildGameInitializerFactory, buffered: boolean)                        
@@ -88,8 +88,10 @@ public constructor (cmdListener: CommandListener, gameLayerManager: AllBinaryGam
 
 
     CombatGameCanvas_init(){
-DestroyEventCircularStaticPool.getInstance()!.init(this)
-ProgressCanvasFactory.getInstance()!.addPortion(50, "Destroy Events")
+DestroyEventCircularStaticPool.getInstance()!.init(this);
+    
+ProgressCanvasFactory.getInstance()!.addPortion(50, "Destroy Events");
+    
 }
 
 
@@ -97,38 +99,49 @@ ProgressCanvasFactory.getInstance()!.addPortion(50, "Destroy Events")
             
     init(abeClientInformation: AbeClientInformationInterface){
     //var abeClientInformation = abeClientInformation
-this.CombatGameCanvas_init()
-super.init(abeClientInformation)
+this.CombatGameCanvas_init();
+    
+super.init(abeClientInformation);
+    
 }
 
 
     initConfigurable(portion: number){
     //var portion = portion
-DestroyedLayerProcessor.init()
-ProgressCanvasFactory.getInstance()!.addPortion(portion, "Basic Processors")
+DestroyedLayerProcessor.init();
+    
+ProgressCanvasFactory.getInstance()!.addPortion(portion, "Basic Processors");
+    
 
     var features: Features = Features.getInstance()!;
         
         
-
+;
+    
 
     var gameFeatureFactory: GameFeatureFactory = GameFeatureFactory.getInstance()!;
         
         
-
+;
+    
 
                         if(features.isFeature(gameFeatureFactory!.DROPPED_ITEMS) && features.isFeature(gameFeatureFactory!.DROPPED_ITEMS_FROM_DEATH))
                         
                                     {
-                                    basicLayerProcessor= new Array(2)
-basicLayerProcessor[0]= DestroyedLayerProcessor.getInstance()
-basicLayerProcessor[1]= DropLayerProcessor.getInstance()
+                                    basicLayerProcessor= new Array(2);
+    
+basicLayerProcessor[0]= DestroyedLayerProcessor.getInstance();
+    
+basicLayerProcessor[1]= DropLayerProcessor.getInstance();
+    
 
                                     }
                                 
                         else {
-                            basicLayerProcessor= new Array(1)
-basicLayerProcessor[0]= DestroyedLayerProcessor.getInstance()
+                            basicLayerProcessor= new Array(1);
+    
+basicLayerProcessor[0]= DestroyedLayerProcessor.getInstance();
+    
 
                         }
                             
@@ -138,7 +151,8 @@ basicLayerProcessor[0]= DestroyedLayerProcessor.getInstance()
                 //@Throws(Error::class)
             
     processPlayingGame(){
-super.processPlayingGame()
+super.processPlayingGame();
+    
 
 
 
@@ -150,7 +164,8 @@ super.processPlayingGame()
         
 --index >= 0; )
         {
-basicLayerProcessor[index]!.process(this.gameLayerManager)
+basicLayerProcessor[index]!.process(this.gameLayerManager);
+    
 }
 
 }
@@ -159,7 +174,8 @@ basicLayerProcessor[index]!.process(this.gameLayerManager)
                 //@Throws(Error::class)
             
     cleanupGame(){
-super.cleanupGame()
+super.cleanupGame();
+    
 
 
 
@@ -171,20 +187,26 @@ super.cleanupGame()
         
 --index >= 0; )
         {
-basicLayerProcessor[index]!.getList()!.clear()
+basicLayerProcessor[index]!.getList()!.clear();
+    
 }
 
-GroupLayerManagerListener.getInstance()!.clear()
-GroupLayerManagerListener.getInstance()!.log()
-DestroyedEventHandler.getInstance()!.removeAllListeners()
-this.cleanupManager()
+GroupLayerManagerListener.getInstance()!.clear();
+    
+GroupLayerManagerListener.getInstance()!.log();
+    
+DestroyedEventHandler.getInstance()!.removeAllListeners();
+    
+this.cleanupManager();
+    
 }
 
 
                 //@Throws(Error::class)
             
     cleanupManager(){
-this.gameLayerManager!.cleanup()
+this.gameLayerManager!.cleanup();
+    
 }
 
 

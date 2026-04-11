@@ -32,7 +32,7 @@ export class NullIndexedAnimationFactory
                 , ProceduralAnimationInterfaceFactoryInterface {
         
 
-    public static readonly NULL_INDEXED_ANIMATION_ARRAY: IndexedAnimationInterface[] = new Array(0);
+    public static readonly NULL_INDEXED_ANIMATION_ARRAY: IndexedAnimationInterface[] = [];
         
         
 

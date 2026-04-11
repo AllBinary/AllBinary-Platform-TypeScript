@@ -43,7 +43,7 @@ export class LivesHudWidget extends BasicHud
 
     private readonly lifeInterface: Life
 
-    private xArray: IntArray
+    private xArray: number[]
 
     private readonly animationInterface: Animation
 public constructor (animationInterface: Animation, lifeInterface: Life, location: number, direction: number)                        
@@ -59,17 +59,25 @@ var direction = direction
 
                             //For kotlin this is before the body of the constructor.
                     
-this.lifeInterface= lifeInterface
-this.xArray= IntArray(this.getLifeInterface()!.getMaxlives().toInt())
-this.update()
-this.animationInterface= animationInterface
+this.lifeInterface= lifeInterface;
+    
+this.xArray= new Array(this.getLifeInterface()!.getMaxlives();
+
+                        .toInt());
+    
+this.update();
+    
+this.animationInterface= animationInterface;
+    
 }
 
 
     public onDisplayChangeEvent(displayChangeEvent: DisplayChangeEvent){
 var displayChangeEvent = displayChangeEvent
-super.onDisplayChangeEvent(displayChangeEvent)
-this.update()
+super.onDisplayChangeEvent(displayChangeEvent);
+    
+this.update();
+    
 }
 
 
@@ -81,10 +89,13 @@ this.update()
                         
                                     {
                                     
-    var maxLives: number = this.getLifeInterface()!.getMaxlives().toInt();
-        
-        
+    var maxLives: number = this.getLifeInterface()!.getMaxlives();
 
+                        .toInt();
+        
+        
+;
+    
 
 
 
@@ -95,7 +106,8 @@ this.update()
         
 index < maxLives; index++)
         {
-this.xArray[index]= this.getX() +(index *16)
+this.xArray[index]= this.getX() +(index *16);
+    
 }
 
 
@@ -106,8 +118,10 @@ this.xArray[index]= this.getX() +(index *16)
 
     public setX(x: number){
 var x = x
-super.setX(x)
-this.update()
+super.setX(x);
+    
+this.update();
+    
 }
 
 
@@ -118,12 +132,15 @@ var graphics = graphics
 
 
                         for (
-    var index: number = this.getLifeInterface()!.get().toInt();
+    var index: number = this.getLifeInterface()!.get();
+
+                        .toInt();
         
         
 --index >= 0; )
         {
-this.animationInterface!.paint(graphics, xArray[index]!, this.getY())
+this.animationInterface!.paint(graphics, xArray[index]!, this.getY());
+    
 }
 
 }

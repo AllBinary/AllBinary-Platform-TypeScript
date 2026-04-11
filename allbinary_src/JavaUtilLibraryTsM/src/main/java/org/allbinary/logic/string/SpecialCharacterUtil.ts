@@ -36,46 +36,73 @@ export class SpecialCharacterUtil
          {
         
 
-    public static getHashMap(): HashMap<Any, Any>{
+    public static getHashMap(): HashMap<any, any>{
 
     var commonPhoneStrings: CommonPhoneStrings = CommonPhoneStrings.getInstance()!;
         
         
-
+;
+    
 
     var stringUtil: StringUtil = StringUtil.getInstance()!;
         
         
+;
+    
 
-
-    var hashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
         
         
-
-hashMap!.put("!", stringUtil!.EMPTY_STRING)
-hashMap!.put("@", stringUtil!.EMPTY_STRING)
-hashMap!.put(commonPhoneStrings!.POUND, stringUtil!.EMPTY_STRING)
-hashMap!.put("$", stringUtil!.EMPTY_STRING)
-hashMap!.put("%", stringUtil!.EMPTY_STRING)
-hashMap!.put("^", stringUtil!.EMPTY_STRING)
-hashMap!.put(CommonSeps.getInstance()!.AMPERSAND, stringUtil!.EMPTY_STRING)
-hashMap!.put(commonPhoneStrings!.STAR, stringUtil!.EMPTY_STRING)
-hashMap!.put("(", stringUtil!.EMPTY_STRING)
-hashMap!.put(")", stringUtil!.EMPTY_STRING)
-hashMap!.put("-", stringUtil!.EMPTY_STRING)
-hashMap!.put("_", stringUtil!.EMPTY_STRING)
-hashMap!.put("+", stringUtil!.EMPTY_STRING)
-hashMap!.put("=", stringUtil!.EMPTY_STRING)
-hashMap!.put("\\", stringUtil!.EMPTY_STRING)
-hashMap!.put("|", stringUtil!.EMPTY_STRING)
-hashMap!.put(AbPathData.getInstance()!.EXTENSION_SEP, stringUtil!.EMPTY_STRING)
-hashMap!.put(",", stringUtil!.EMPTY_STRING)
-hashMap!.put("<", stringUtil!.EMPTY_STRING)
-hashMap!.put(">", stringUtil!.EMPTY_STRING)
-hashMap!.put("?", stringUtil!.EMPTY_STRING)
-hashMap!.put(AbPathData.getInstance()!.SEPARATOR, stringUtil!.EMPTY_STRING)
-hashMap!.put("~", stringUtil!.EMPTY_STRING)
-hashMap!.put("`", stringUtil!.EMPTY_STRING)
+;
+    
+hashMap!.put("!", stringUtil!.EMPTY_STRING);
+    
+hashMap!.put("@", stringUtil!.EMPTY_STRING);
+    
+hashMap!.put(commonPhoneStrings!.POUND, stringUtil!.EMPTY_STRING);
+    
+hashMap!.put("$", stringUtil!.EMPTY_STRING);
+    
+hashMap!.put("%", stringUtil!.EMPTY_STRING);
+    
+hashMap!.put("^", stringUtil!.EMPTY_STRING);
+    
+hashMap!.put(CommonSeps.getInstance()!.AMPERSAND, stringUtil!.EMPTY_STRING);
+    
+hashMap!.put(commonPhoneStrings!.STAR, stringUtil!.EMPTY_STRING);
+    
+hashMap!.put("(", stringUtil!.EMPTY_STRING);
+    
+hashMap!.put(")", stringUtil!.EMPTY_STRING);
+    
+hashMap!.put("-", stringUtil!.EMPTY_STRING);
+    
+hashMap!.put("_", stringUtil!.EMPTY_STRING);
+    
+hashMap!.put("+", stringUtil!.EMPTY_STRING);
+    
+hashMap!.put("=", stringUtil!.EMPTY_STRING);
+    
+hashMap!.put("\\", stringUtil!.EMPTY_STRING);
+    
+hashMap!.put("|", stringUtil!.EMPTY_STRING);
+    
+hashMap!.put(AbPathData.getInstance()!.EXTENSION_SEP, stringUtil!.EMPTY_STRING);
+    
+hashMap!.put(",", stringUtil!.EMPTY_STRING);
+    
+hashMap!.put("<", stringUtil!.EMPTY_STRING);
+    
+hashMap!.put(">", stringUtil!.EMPTY_STRING);
+    
+hashMap!.put("?", stringUtil!.EMPTY_STRING);
+    
+hashMap!.put(AbPathData.getInstance()!.SEPARATOR, stringUtil!.EMPTY_STRING);
+    
+hashMap!.put("~", stringUtil!.EMPTY_STRING);
+    
+hashMap!.put("`", stringUtil!.EMPTY_STRING);
+    
 
 
 

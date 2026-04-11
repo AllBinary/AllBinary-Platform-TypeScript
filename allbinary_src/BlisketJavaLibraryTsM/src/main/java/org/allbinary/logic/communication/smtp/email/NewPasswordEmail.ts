@@ -76,17 +76,22 @@ public constructor (abeClientInformation: AbeClientInformationInterface, userInt
                 //var abeClientInformation = abeClientInformation
     //var userInterface = userInterface
 var newPassword = newPassword
-this.abeClientInformation= abeClientInformation
-this.userInterface= userInterface
-this.newPassword= newPassword
+this.abeClientInformation= abeClientInformation;
+    
+this.userInterface= userInterface;
+    
+this.newPassword= newPassword;
+    
 }
 
 
                 //@Throws(Error::class)
             
     public process(){
-this.notifyStoreAdmin()
-this.notifyUser()
+this.notifyStoreAdmin();
+    
+this.notifyUser();
+    
 }
 
 
@@ -99,7 +104,8 @@ this.notifyUser()
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
                                     {
-                                    logUtil!.put("notifyStoreAdmin", this, "notifyStoreAdmin")
+                                    logUtil!.put("notifyStoreAdmin", this, "notifyStoreAdmin");
+    
 
                                     }
                                 
@@ -107,35 +113,44 @@ this.notifyUser()
     var emailSubject: string = "New Password For User: " +this.userInterface!.getUserName();
         
         
-
+;
+    
 
     var emailBody: string = "New Password: " +this.newPassword;
         
         
-
+;
+    
 
     var basicEmailInfo: BasicEmailInfo = AdminEmailInfo(emailSubject, emailBody) as BasicEmailInfo;
         
         
-
+;
+    
 
     var emailInfo: EmailInfo = new EmailInfo(basicEmailInfo);
         
         
-
+;
+    
 
     var adminUserEmailEventHandler: UserEmailEventHandler = AdminUserEmailEventHandlerSingletons.getInstance()!.getInstance(abeClientInformation, UserEmailEventNameData.NEWPASSWORD)!;
         
         
+;
+    
+adminUserEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.NEWPASSWORD, emailInfo);
+    
 
-adminUserEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.NEWPASSWORD, emailInfo)
-} catch(e: Exception)
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGINGERROR))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.EXCEPTION, this, "emailAdmin", e)
+                                    logUtil!.put(this.commonStrings!.EXCEPTION, this, "emailAdmin", e);
+    
 
                                     }
                                 
@@ -153,7 +168,8 @@ adminUserEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.NEWPASSWORD,
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
                                     {
-                                    logUtil!.put("Email User", this, "notifyUser()")
+                                    logUtil!.put("Email User", this, "notifyUser()");
+    
 
                                     }
                                 
@@ -161,35 +177,44 @@ adminUserEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.NEWPASSWORD,
     var subject: string = "New Password";
         
         
-
+;
+    
 
     var body: string = "New Password: " +newPassword;
         
         
-
+;
+    
 
     var basicEmailInfo: BasicEmailInfo = AdminEmailInfo(subject, body) as BasicEmailInfo;
         
         
-
+;
+    
 
     var emailInfo: EmailInfo = new EmailInfo(basicEmailInfo);
         
         
-
+;
+    
 
     var userEmailEventHandler: UserEmailEventHandler = UserEmailEventHandlerSingletons.getInstance()!.getInstance(abeClientInformation, UserEmailEventNameData.NEWPASSWORD, this.userInterface)!;
         
         
+;
+    
+userEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.NEWPASSWORD, emailInfo);
+    
 
-userEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.NEWPASSWORD, emailInfo)
-} catch(e: Exception)
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGINGERROR))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.EXCEPTION, this, "notifyUser", e)
+                                    logUtil!.put(this.commonStrings!.EXCEPTION, this, "notifyUser", e);
+    
 
                                     }
                                 

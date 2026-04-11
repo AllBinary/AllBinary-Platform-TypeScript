@@ -18,13 +18,16 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { File } from "../../../../../java/io/File.js";
 
     
 import { FileOutputStream } from "../../../../../java/io/FileOutputStream.js";
 
     
-import { Vector } from "../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../java/util/Vector.js";
 
     
 import { ImageOutputData } from "../../../../../org/allbinary/input/automation/ImageOutputData.js";
@@ -45,17 +48,17 @@ export class FrameLog
          {
         
 
-    private frameBytes: ByteArray = .toCharArray().
+    private frameBytes: number[] = .toCharArray().
                             encodeToByteArray()!;
         
         
 
-    private info: ByteArray = .toCharArray().
+    private info: number[] = .toCharArray().
                             encodeToByteArray()!;
         
         
 
-    private actions: ByteArray = .toCharArray().
+    private actions: number[] = .toCharArray().
                             encodeToByteArray()!;
         
         
@@ -73,13 +76,15 @@ public constructor (frame: Long){
 
             super();
             var frame = frame
-this.frame= frame
+this.frame= frame;
+    
 }
 
 
     public addInfo(infoString: string){
 var infoString = infoString
-this.infoStringBuffer!.append(infoString)
+this.infoStringBuffer!.append(infoString);
+    
 }
 
 
@@ -89,7 +94,8 @@ var vectorOfStrings = vectorOfStrings
     var size: number = vectorOfStrings!.length!;
         
         
-
+;
+    
 
 
 
@@ -100,7 +106,10 @@ var vectorOfStrings = vectorOfStrings
         
 index < size; index++)
         {
-this.addAction(vectorOfStrings!.get(index) as String)
+this.addAction(vectorOfStrings!.get(index);
+
+                         as String);
+    
 }
 
 }
@@ -108,8 +117,10 @@ this.addAction(vectorOfStrings!.get(index) as String)
 
     public addAction(action: string){
 var action = action
-this.actionsStringBuffer!.append(action)
-this.actionsStringBuffer!.append(CommonSeps.getInstance()!.NEW_LINE)
+this.actionsStringBuffer!.append(action);
+    
+this.actionsStringBuffer!.append(CommonSeps.getInstance()!.NEW_LINE);
+    
 }
 
 
@@ -120,29 +131,44 @@ this.actionsStringBuffer!.append(CommonSeps.getInstance()!.NEW_LINE)
     var filePathStringBuffer: StringMaker = new StringMaker();
         
         
-
-filePathStringBuffer!.append(ImageOutputData.SAVE_PATH)
-filePathStringBuffer!.append(LongUtil.fillIn(frame.toString()))
-filePathStringBuffer!.append(".txt")
+;
+    
+filePathStringBuffer!.append(ImageOutputData.SAVE_PATH);
+    
+filePathStringBuffer!.append(LongUtil.fillIn(frame.toString()));
+    
+filePathStringBuffer!.append(".txt");
+    
 
     var filePath: string = filePathStringBuffer!.toString()!;
         
         
-
+;
+    
 
     var fileOutputStream: FileOutputStream = new FileOutputStream(File(filePath));
         
         
-
-fileOutputStream!.write(frameBytes)
-fileOutputStream!.write(getFrame()!.toString()!.encodeToByteArray())
-fileOutputStream!.write('\n')
-fileOutputStream!.write(info)
-fileOutputStream!.write(infoStringBuffer!.toString()!.encodeToByteArray())
-fileOutputStream!.write('\n')
-fileOutputStream!.write(actions)
-fileOutputStream!.write(actionsStringBuffer!.toString()!.encodeToByteArray())
-fileOutputStream!.close()
+;
+    
+fileOutputStream!.write(frameBytes);
+    
+fileOutputStream!.write(getFrame()!.toString()!.encodeToByteArray());
+    
+fileOutputStream!.write('\n');
+    
+fileOutputStream!.write(info);
+    
+fileOutputStream!.write(infoStringBuffer!.toString()!.encodeToByteArray());
+    
+fileOutputStream!.write('\n');
+    
+fileOutputStream!.write(actions);
+    
+fileOutputStream!.write(actionsStringBuffer!.toString()!.encodeToByteArray());
+    
+fileOutputStream!.close();
+    
 }
 
 

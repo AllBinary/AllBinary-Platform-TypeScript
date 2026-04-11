@@ -18,10 +18,13 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { HashMap } from "../../java/util/HashMap.js";
 
     
-import { Vector } from "../../java/util/Vector.js";
+
+//import { Vector } from "../../java/util/Vector.js";
 
     
 import { HttpServletRequest } from "../../javax/servlet/http/HttpServletRequest.js";
@@ -90,22 +93,28 @@ export class AuthenticationRequestHelper extends TagHelper {
     private weblisketSession: WeblisketSession
 
     private request: HttpServletRequest
-public constructor (hashMap: HashMap<Any, Any>, pageContext: PageContext){
+public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
             var hashMap = hashMap
 var pageContext = pageContext
-this.weblisketSession= WeblisketSession(hashMap, pageContext)
-this.request= pageContext!.getRequest() as HttpServletRequest
+this.weblisketSession= WeblisketSession(hashMap, pageContext);
+    
+this.request= pageContext!.getRequest();
+
+                         as HttpServletRequest;
+    
 }
 
-public constructor (hashMap: HashMap<Any, Any>, httpServletRequest: HttpServletRequest){
+public constructor (hashMap: HashMap<any, any>, httpServletRequest: HttpServletRequest){
 
             super();
             var hashMap = hashMap
 var httpServletRequest = httpServletRequest
-this.weblisketSession= WeblisketSession(hashMap, httpServletRequest)
-this.request= httpServletRequest
+this.weblisketSession= WeblisketSession(hashMap, httpServletRequest);
+    
+this.request= httpServletRequest;
+    
 }
 
 
@@ -124,7 +133,8 @@ this.request= httpServletRequest
     var startIndex: number = this.weblisketSession!.getId()!.length()!;
         
         
-
+;
+    
 
                         if(startIndex >= 8)
                         
@@ -134,6 +144,8 @@ this.request= httpServletRequest
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.weblisketSession!.getId()!.substring(startIndex -8);
+
+                        ;
     
 
                                     }
@@ -167,17 +179,20 @@ this.request= httpServletRequest
     var userName: string = request.getParameter(WeblisketSessionData.REMOVABLEUSERNAME)!;
         
         
-
+;
+    
 
     var email: string = request.getParameter(UserData.MAINEMAIL)!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPER))
                         
                                     {
-                                    logUtil!.put("Generating New Password For: " +userName, this, "newPassword()")
+                                    logUtil!.put("Generating New Password For: " +userName, this, "newPassword()");
+    
 
                                     }
                                 
@@ -185,12 +200,14 @@ this.request= httpServletRequest
     var userEntityInterface: UserEntityInterface = UserEntityFactory.getInstance()!;
         
         
-
+;
+    
 
     var userInterface: UserInterface = userEntityInterface!.getUser(userName)!;
         
         
-
+;
+    
 
                         if(userInterface!.getMainEmail()!.compareTo(email) != 0)
                         
@@ -205,7 +222,8 @@ this.request= httpServletRequest
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPER))
                         
                                     {
-                                    logUtil!.put("Requested Email Is Not In User Profile", this, "newPassword()")
+                                    logUtil!.put("Requested Email Is Not In User Profile", this, "newPassword()");
+    
 
                                     }
                                 
@@ -225,21 +243,27 @@ this.request= httpServletRequest
     var newPassword: string = this.generateNewPassword()!;
         
         
+;
+    
+userInterface!.setPassword(newPassword);
+    
 
-userInterface!.setPassword(newPassword)
-
-    var newPasswordHashMap: HashMap<Any, Any> = userInterface!.toPasswordHashMap()!;
+    var newPasswordHashMap: HashMap<any, any> = userInterface!.toPasswordHashMap()!;
         
         
-
-UserEntityFactory.getInstance()!.update(userName, newPasswordHashMap)
+;
+    
+UserEntityFactory.getInstance()!.update(userName, newPasswordHashMap);
+    
 NewPasswordEmail(this.abeClientInformation, userInterface, newPassword).
-                            process()
+                            process();
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPER))
                         
                                     {
-                                    logUtil!.put("Generated New Password For: " +userName, this, "newPassword()")
+                                    logUtil!.put("Generated New Password For: " +userName, this, "newPassword()");
+    
 
                                     }
                                 
@@ -249,13 +273,16 @@ NewPasswordEmail(this.abeClientInformation, userInterface, newPassword).
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return Boolean.TRUE;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "newPassword()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "newPassword()", e);
+    
 
                                     }
                                 
@@ -277,27 +304,32 @@ NewPasswordEmail(this.abeClientInformation, userInterface, newPassword).
     var userName: string = request.getParameter(WeblisketSessionData.REMOVABLEUSERNAME)!;
         
         
-
+;
+    
 
     var passwordString: string = request.getParameter(WeblisketSessionData.REMOVABLEPASSWORD)!;
         
         
-
+;
+    
 
     var newPassword: string = request.getParameter(WeblisketSessionData.REMOVABLENEWPASSWORD)!;
         
         
-
+;
+    
 
     var newReenteredPassword: string = request.getParameter(WeblisketSessionData.REMOVABLEREENTERNEWPASSWORD)!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPER))
                         
                                     {
-                                    logUtil!.put("Changing Password For User: " +userName, this, "changePassword()")
+                                    logUtil!.put("Changing Password For User: " +userName, this, "changePassword()");
+    
 
                                     }
                                 
@@ -305,16 +337,20 @@ NewPasswordEmail(this.abeClientInformation, userInterface, newPassword).
     var password: Password = new Password(newPassword);
         
         
+;
+    
 
+                        if(!password.isValid();
 
-                        if(!password.isValid())
+                        )
                         
                                     {
                                     
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPER))
                         
                                     {
-                                    logUtil!.put("New Password Is Not Valid", this, "changePassword()")
+                                    logUtil!.put("New Password Is Not Valid", this, "changePassword()");
+    
 
                                     }
                                 
@@ -335,7 +371,8 @@ NewPasswordEmail(this.abeClientInformation, userInterface, newPassword).
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPER))
                         
                                     {
-                                    logUtil!.put("New Password Fields Do Not Match", this, "changePassword()")
+                                    logUtil!.put("New Password Fields Do Not Match", this, "changePassword()");
+    
 
                                     }
                                 
@@ -352,22 +389,26 @@ NewPasswordEmail(this.abeClientInformation, userInterface, newPassword).
     var sessionPassword: string = this.weblisketSession!.getPassword()!;
         
         
-
+;
+    
 
     var userEntityInterface: UserEntityInterface = UserEntityFactory.getInstance()!;
         
         
-
+;
+    
 
     var userInterface: UserInterface = userEntityInterface!.getUser(userName)!;
         
         
-
+;
+    
 
     var login: string = userEntityInterface!.login(userName, passwordString)!;
         
         
-
+;
+    
 
                         if(login.compareTo(GLOBALS2.LOGINSUCCESS) == 0)
                         
@@ -376,19 +417,23 @@ NewPasswordEmail(this.abeClientInformation, userInterface, newPassword).
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPER))
                         
                                     {
-                                    logUtil!.put("Authentication Successful", this, "changePassword()")
+                                    logUtil!.put("Authentication Successful", this, "changePassword()");
+    
 
                                     }
                                 
 
-    var newPasswordHashMap: HashMap<Any, Any> = password.toHashMap(
+    var newPasswordHashMap: HashMap<any, any> = password.toHashMap(
                             null)!;
         
         
-
-UserEntityFactory.getInstance()!.update(userName, newPasswordHashMap)
+;
+    
+UserEntityFactory.getInstance()!.update(userName, newPasswordHashMap);
+    
 NewPasswordEmail(this.abeClientInformation, userInterface, newPassword).
-                            process()
+                            process();
+    
 
 
 
@@ -402,7 +447,8 @@ NewPasswordEmail(this.abeClientInformation, userInterface, newPassword).
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPER))
                         
                                     {
-                                    logUtil!.put("Authentication Failed", this, "changePassword()")
+                                    logUtil!.put("Authentication Failed", this, "changePassword()");
+    
 
                                     }
                                 
@@ -412,13 +458,16 @@ NewPasswordEmail(this.abeClientInformation, userInterface, newPassword).
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return Boolean.FALSE;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
                                     {
-                                    logUtil!.put("Authentication Failed", this, "changePassword()", e)
+                                    logUtil!.put("Authentication Failed", this, "changePassword()", e);
+    
 
                                     }
                                 
@@ -443,12 +492,14 @@ var roles = roles
     var userEntityInterface: UserEntityInterface = UserEntityFactory.getInstance()!;
         
         
-
+;
+    
 
     var userInterface: UserInterface = userEntityInterface!.getUser(userName)!;
         
         
-
+;
+    
 
                         if(userInterface!.getRole() == 
                                     null
@@ -459,7 +510,8 @@ var roles = roles
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPER))
                         
                                     {
-                                    logUtil!.put("Role is null: " +userInterface!.getRole() +" Valid Roles: " +roles.toString(), this, "isRoleValid()")
+                                    logUtil!.put("Role is null: " +userInterface!.getRole() +" Valid Roles: " +roles.toString(), this, "isRoleValid()");
+    
 
                                     }
                                 
@@ -473,16 +525,18 @@ var roles = roles
                                     }
                                 
 
-    var basicUserRoleArray: any = {}[] = roles.toArray()!;
+    var basicUserRoleArray: any[] = roles.toArray()!;
         
         
-
+;
+    
 
     var size: number = basicUserRoleArray!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -497,14 +551,18 @@ index < size; index++)
     var nextRole: BasicUserRole = basicUserRoleArray[index]! as BasicUserRole;
         
         
-
+;
+    
 
                         if(userInterface!.getRole()!.getBasicUserRole()!.equals(nextRole))
                         
                                     {
-                                    userInterface!.validateSession(weblisketSession as WeblisketSessionInterface)
-this.request.removeAttribute(WeblisketSessionData.REMOVABLEUSERNAME)
-this.request.removeAttribute(WeblisketSessionData.REMOVABLEPASSWORD)
+                                    userInterface!.validateSession(weblisketSession as WeblisketSessionInterface);
+    
+this.request.removeAttribute(WeblisketSessionData.REMOVABLEUSERNAME);
+    
+this.request.removeAttribute(WeblisketSessionData.REMOVABLEPASSWORD);
+    
 
 
 
@@ -524,12 +582,18 @@ this.request.removeAttribute(WeblisketSessionData.REMOVABLEPASSWORD)
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("Role is not valid: ")
-stringBuffer!.append(userInterface!.getRole()!.toString())
-stringBuffer!.append(" Valid Roles: ")
-stringBuffer!.append(roles.toString())
-logUtil!.put(stringBuffer!.toString(), this, "isRoleValid()")
+;
+    
+stringBuffer!.append("Role is not valid: ");
+    
+stringBuffer!.append(userInterface!.getRole()!.toString());
+    
+stringBuffer!.append(" Valid Roles: ");
+    
+stringBuffer!.append(roles.toString());
+    
+logUtil!.put(stringBuffer!.toString(), this, "isRoleValid()");
+    
 
                                     }
                                 
@@ -539,13 +603,16 @@ logUtil!.put(stringBuffer!.toString(), this, "isRoleValid()")
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return Boolean.FALSE;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "isRoleValid()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "isRoleValid()", e);
+    
 
                                     }
                                 

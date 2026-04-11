@@ -59,7 +59,8 @@ private constructor (){
                                                         ];
         
         
-
+;
+    
 
     var DEVELOPERS: string[] = 
                                                         [
@@ -67,8 +68,10 @@ private constructor (){
                                                         ];
         
         
-
-this.paintableArray= AboutPaintable.getInstance(INFO, DEVELOPERS)!.getPaintableArrayInstance()
+;
+    
+this.paintableArray= AboutPaintable.getInstance(INFO, DEVELOPERS)!.getPaintableArrayInstance();
+    
 }
 
 

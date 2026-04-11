@@ -66,29 +66,38 @@ public constructor (size: number)
                         if(this.index >= this.list.size())
                         
                                     {
-                                    this.add()
+                                    this.add();
+    
 
                                     }
                                 
 
-    var list: BasicArrayList = this.get(this.index++) as BasicArrayList;
-        
-        
+    var list: BasicArrayList = this.get(this.index++);
 
+                         as BasicArrayList;
+        
+        
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return list;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET, e);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return basicArrayListUtil!.getImmutableInstance();
+
+                        ;
     
 }
 
@@ -96,10 +105,12 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET, e)
 
 
     public clear(){
-super.clear()
+super.clear();
+    
 
     var basicArrayList: BasicArrayList
-
+;
+    
 
 
 
@@ -110,8 +121,10 @@ super.clear()
         
 index >= 0; index--)
         {
-basicArrayList= (this.list.objectArray[index]! as BasicArrayList)
-basicArrayList!.clear()
+basicArrayList= (this.list.objectArray[index]! as BasicArrayList);
+    
+basicArrayList!.clear();
+    
 }
 
 }
@@ -122,17 +135,22 @@ basicArrayList!.clear()
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("S: ")
-stringBuffer!.appendint(this.list.size())
+;
+    
+stringBuffer!.append("S: ");
+    
+stringBuffer!.appendint(this.list.size());
+    
 
     var S_LABEL: string = " s: ";
         
         
-
+;
+    
 
     var basicArrayList: BasicArrayList
-
+;
+    
 
 
 
@@ -143,9 +161,12 @@ stringBuffer!.appendint(this.list.size())
         
 index >= 0; index--)
         {
-stringBuffer!.append(S_LABEL)
-basicArrayList= (this.list.objectArray[index]! as BasicArrayList)
-stringBuffer!.appendint(basicArrayList!.size())
+stringBuffer!.append(S_LABEL);
+    
+basicArrayList= (this.list.objectArray[index]! as BasicArrayList);
+    
+stringBuffer!.appendint(basicArrayList!.size());
+    
 }
 
 
@@ -153,6 +174,8 @@ stringBuffer!.appendint(basicArrayList!.size())
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

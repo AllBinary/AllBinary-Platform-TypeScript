@@ -70,7 +70,7 @@ public constructor (node: Node)
                     
 }
 
-public constructor (hashMap: HashMap<Any, Any>)                        
+public constructor (hashMap: HashMap<any, any>)                        
 
                             : super(hashMap){
 
@@ -90,7 +90,8 @@ public constructor (hashMap: HashMap<Any, Any>)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.START, this, commonStrings!.IS_VALID)
+                                    logUtil!.put(this.commonStrings!.START, this, commonStrings!.IS_VALID);
+    
 
                                     }
                                 
@@ -98,12 +99,16 @@ public constructor (hashMap: HashMap<Any, Any>)
     var valid: Boolean = Boolean.TRUE;
         
         
+;
+    
 
+                        if(!StringValidationUtil.getInstance()!.isValidNotRequired(this.getTitle(), 0, TitleData.getInstance()!.MAXLEN);
 
-                        if(!StringValidationUtil.getInstance()!.isValidNotRequired(this.getTitle(), 0, TitleData.getInstance()!.MAXLEN))
+                        )
                         
                                     {
-                                    valid= Boolean.FALSE
+                                    valid= Boolean.FALSE;
+    
 
                                     }
                                 
@@ -115,12 +120,18 @@ public constructor (hashMap: HashMap<Any, Any>)
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("Title: ")
-stringBuffer!.append(this.getTitle())
-stringBuffer!.append("End: ")
-stringBuffer!.appendboolean(valid)
-logUtil!.put(stringBuffer!.toString(), this, commonStrings!.IS_VALID)
+;
+    
+stringBuffer!.append("Title: ");
+    
+stringBuffer!.append(this.getTitle());
+    
+stringBuffer!.append("End: ");
+    
+stringBuffer!.appendboolean(valid);
+    
+logUtil!.put(stringBuffer!.toString(), this, commonStrings!.IS_VALID);
+    
 
                                     }
                                 
@@ -130,13 +141,16 @@ logUtil!.put(stringBuffer!.toString(), this, commonStrings!.IS_VALID)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return valid;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("Failed to validate form", this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put("Failed to validate form", this, commonStrings!.IS_VALID, e);
+    
 
                                     }
                                 
@@ -158,21 +172,28 @@ logUtil!.put(stringBuffer!.toString(), this, commonStrings!.IS_VALID)
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("Title is not valid.")
+;
+    
+stringBuffer!.append("Title is not valid.");
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e)
+                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e);
+    
 
                                     }
                                 

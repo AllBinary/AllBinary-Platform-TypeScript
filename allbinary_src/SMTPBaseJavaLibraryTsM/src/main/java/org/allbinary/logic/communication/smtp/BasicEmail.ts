@@ -53,8 +53,10 @@ var to = to
     var basicEmailInfo: BasicEmailInfo = emailInfo!.getBasicEmailInfo()!;
         
         
-
-this.email= AbEmail(basicEmailInfo!.getEmailServerConfigurationInterface()!.getSmtpServer(), basicEmailInfo!.getEmailServerConfigurationInterface()!.getAccountName(), to, basicEmailInfo!.getSubject(), basicEmailInfo!.getTextBody(), emailInfo!.getHtmlAttachment(), emailInfo!.getContentBase())
+;
+    
+this.email= AbEmail(basicEmailInfo!.getEmailServerConfigurationInterface()!.getSmtpServer(), basicEmailInfo!.getEmailServerConfigurationInterface()!.getAccountName(), to, basicEmailInfo!.getSubject(), basicEmailInfo!.getTextBody(), emailInfo!.getHtmlAttachment(), emailInfo!.getContentBase());
+    
 }
 
 
@@ -63,7 +65,9 @@ this.email= AbEmail(basicEmailInfo!.getEmailServerConfigurationInterface()!.getS
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.email.getEmail() as Email;
+                        return this.email.getEmail();
+
+                         as Email;
     
 }
 
@@ -74,6 +78,8 @@ this.email= AbEmail(basicEmailInfo!.getEmailServerConfigurationInterface()!.getS
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.email.getMimeMessage();
+
+                        ;
     
 }
 
@@ -84,6 +90,8 @@ this.email= AbEmail(basicEmailInfo!.getEmailServerConfigurationInterface()!.getS
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.email.getDebugInfo();
+
+                        ;
     
 }
 
@@ -96,18 +104,22 @@ this.email= AbEmail(basicEmailInfo!.getEmailServerConfigurationInterface()!.getS
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.email.log();
+
+                        ;
     
 }
 
 
                 //@Throws(Error::class)
             
-    public toHashMap(): HashMap<Any, Any>{
+    public toHashMap(): HashMap<any, any>{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.email.toHashMap();
+
+                        ;
     
 }
 
@@ -121,6 +133,8 @@ var document = document
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.email.toXmlNode(document);
+
+                        ;
     
 }
 
@@ -133,6 +147,8 @@ var document = document
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.email.toXmlDoc();
+
+                        ;
     
 }
 

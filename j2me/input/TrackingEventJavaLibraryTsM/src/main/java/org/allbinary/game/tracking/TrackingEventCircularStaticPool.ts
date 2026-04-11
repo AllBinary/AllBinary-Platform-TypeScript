@@ -49,7 +49,8 @@ export class TrackingEventCircularStaticPool
         
 
     public init(){
-EVENT_POOL.init(TrackingEventFactory())
+EVENT_POOL.init(TrackingEventFactory());
+    
 }
 
 
@@ -59,11 +60,15 @@ EVENT_POOL.init(TrackingEventFactory())
     public getInstance(layerInterface: AllBinaryLayer): TrackingEvent{
 var layerInterface = layerInterface
 
-    var trackingEvent: TrackingEvent = EVENT_POOL.getNextInstance() as TrackingEvent;
-        
-        
+    var trackingEvent: TrackingEvent = EVENT_POOL.getNextInstance();
 
-trackingEvent!.setLayerInterfaceForCircularStaticPool(layerInterface)
+                         as TrackingEvent;
+        
+        
+;
+    
+trackingEvent!.setLayerInterfaceForCircularStaticPool(layerInterface);
+    
 
 
 

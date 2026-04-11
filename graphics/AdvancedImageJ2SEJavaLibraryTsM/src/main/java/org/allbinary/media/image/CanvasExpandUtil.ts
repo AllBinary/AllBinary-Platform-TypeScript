@@ -66,26 +66,31 @@ export class CanvasExpandUtil
     var imageUtil: ImageUtil = ImageUtil.getInstance()!;
         
         
-
+;
+    
 
     var bufferedImageArray: BufferedImage[] = imageProcessorInput!.getBufferedImageArray()!;
         
         
-
+;
+    
 
     var subBufferedImageArray: BufferedImage[] = new Array(bufferedImageArray!.length);
         
         
-
+;
+    
 
     var size: number = bufferedImageArray!.length
                 ;
         
         
-
+;
+    
 
     var bufferedImage: BufferedImage
-
+;
+    
 
 
 
@@ -96,9 +101,12 @@ export class CanvasExpandUtil
         
 index < size; index++)
         {
-bufferedImage= bufferedImageArray[index]!
-subBufferedImageArray[index]= imageUtil!.createBufferedImage(bufferedImage, bufferedImage!.getWidth() +increaseX, bufferedImage!.getHeight() +increaseY, false)
-visitor.visit(subBufferedImageArray[index]!, stringUtil!.EMPTY_STRING, index)
+bufferedImage= bufferedImageArray[index]!;
+    
+subBufferedImageArray[index]= imageUtil!.createBufferedImage(bufferedImage, bufferedImage!.getWidth() +increaseX, bufferedImage!.getHeight() +increaseY, false);
+    
+visitor.visit(subBufferedImageArray[index]!, stringUtil!.EMPTY_STRING, index);
+    
 }
 
 }

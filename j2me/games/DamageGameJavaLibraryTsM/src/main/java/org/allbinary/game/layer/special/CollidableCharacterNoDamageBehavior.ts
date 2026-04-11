@@ -61,12 +61,14 @@ var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterfac
     var collisionTypeFactory: CollisionTypeFactory = CollisionTypeFactory.getInstance()!;
         
         
-
+;
+    
 
     var collisionType: CollisionType = collidableInterfaceCompositeInterface!.getCollidableInferface()!.getCollisionTypeWith(this.ownerLayer)!;
         
         
-
+;
+    
 
                         if(collisionType == collisionTypeFactory!.PICKUP)
                         
@@ -75,8 +77,10 @@ var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterfac
     var collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer = this.ownerLayer as CollidableDestroyableDamageableLayer;
         
         
-
-collidableDestroyableDamageableLayer!.getPickupBehavior()!.doPickup(collidableInterfaceCompositeInterface as PickedUpLayerInterface)
+;
+    
+collidableDestroyableDamageableLayer!.getPickupBehavior()!.doPickup(collidableInterfaceCompositeInterface as PickedUpLayerInterface);
+    
 
                                     }
                                 
@@ -91,7 +95,8 @@ collidableDestroyableDamageableLayer!.getPickupBehavior()!.doPickup(collidableIn
             
     public collide(collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface){
 var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
-ForcedLogUtil.log(commonStrings!.NOT_IMPLEMENTED, this)
+ForcedLogUtil.log(commonStrings!.NOT_IMPLEMENTED, this);
+    
 }
 
 

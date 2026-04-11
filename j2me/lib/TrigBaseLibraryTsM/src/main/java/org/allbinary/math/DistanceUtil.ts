@@ -54,17 +54,21 @@ export class DistanceUtil
     var dx: number = x1 -x2;
         
         
-
+;
+    
 
     var dy: number = y1 -y2;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return mathUtil!.sqrt((dx *dx) +(dy *dy)).toInt();
+                        return mathUtil!.sqrt((dx *dx) +(dy *dy));
+
+                        .toInt();
     
 }
 

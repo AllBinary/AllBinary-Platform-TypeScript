@@ -39,13 +39,16 @@ export class BasicFileFilterUtil
     var vector: BasicArrayList = new BasicArrayList();
         
         
-
-vector.add(extension)
+;
+    
+vector.add(extension);
+    
 
     var includeFileExtensionsBooleanFileVisitor: IncludeFileExtensionsBooleanFileVisitor = new IncludeFileExtensionsBooleanFileVisitor(vector);
         
         
-
+;
+    
 
 
 

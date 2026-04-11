@@ -18,7 +18,10 @@
 
 
 
-import { Vector } from "../../../../../../../java/util/Vector.js";
+            import Vector from "@ohos.util.Vector";
+        
+
+//import { Vector } from "../../../../../../../java/util/Vector.js";
 
     
 import { StringUtil } from "../../../../../../../org/allbinary/logic/string/StringUtil.js";
@@ -59,18 +62,23 @@ public constructor (before: string, after: string){
 var after = after
 this.before= before.toCharArray()
                                         .slice(0, ).join('')
-                                    
+                                    ;
+    
 this.after= after.toCharArray()
                                         .slice(0, ).join('')
-                                    
-this.htmlCellsVector= Vector()
+                                    ;
+    
+this.htmlCellsVector= Vector();
+    
 }
 
 
     public addCell(htmlCell: HtmlCell){
 var htmlCell = htmlCell
-this.htmlCellsVector!.add(htmlCell)
-this.numberOfColumns++
+this.htmlCellsVector!.add(htmlCell);
+    
+this.numberOfColumns++;
+    
 }
 
 
@@ -89,31 +97,39 @@ this.numberOfColumns++
     var stringUtil: StringUtil = StringUtil.getInstance()!;
         
         
-
+;
+    
 
     var result: string = stringUtil!.EMPTY_STRING;
         
         
+;
+    
 
-
-    var attributeKeys: any = {}[] = otherAttributes!.keySet()!.toTypedArray()!;
+    var attributeKeys: any[] = otherAttributes!.keySet()!.toTypedArray()!;
         
         
-
+;
+    
 
     var attributeSize: number = attributeKeys!.length
                 ;
         
         
-
+;
+    
 
     var cellSize: number = htmlCellsVector!.length!;
         
         
-
-result= before
-result += START
-result += " "
+;
+    
+result= before;
+    
+result += START;
+    
+result += " ";
+    
 
 
 
@@ -128,28 +144,37 @@ i < attributeSize; i++)
     var key: string = attributeKeys[i]! as String;
         
         
+;
+    
 
+    var value: string = otherAttributes!.get(key);
 
-    var value: string = otherAttributes!.get(key) as String;
+                         as String;
         
         
-
+;
+    
 
                         if(value != 
                                     null
                                  && value.compareTo(stringUtil!.EMPTY_STRING) != 0)
                         
                                     {
-                                    result += key
-result += "=\""
-result += value
-result += "\" "
+                                    result += key;
+    
+result += "=\"";
+    
+result += value;
+    
+result += "\" ";
+    
 
                                     }
                                 
 }
 
-result += END
+result += END;
+    
 
 
 
@@ -160,12 +185,16 @@ result += END
         
 i < cellSize; i++)
         {
-result += htmlCellsVector!.get(i)!.toString()
-result += " "
+result += htmlCellsVector!.get(i)!.toString();
+    
+result += " ";
+    
 }
 
-result += ENDTAG
-result += after
+result += ENDTAG;
+    
+result += after;
+    
 
 
 

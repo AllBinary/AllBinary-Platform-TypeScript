@@ -53,8 +53,10 @@ public constructor (basicColor: BasicColor, animationBehaviorFactory: AnimationB
             super();
                 //var basicColor = basicColor
     //var animationBehaviorFactory = animationBehaviorFactory
-this.animationBehaviorFactory= animationBehaviorFactory
-this.setBasicColorP(basicColor)
+this.animationBehaviorFactory= animationBehaviorFactory;
+    
+this.setBasicColorP(basicColor);
+    
 }
 
 
@@ -70,22 +72,26 @@ this.setBasicColorP(basicColor)
     var vectorRotationAnimationInterface: VectorAnimationInterface = animationInterface as VectorAnimationInterface;
         
         
-
+;
+    
 
     var frame: number = vectorRotationAnimationInterface!.getFrame()!;
         
         
+;
+    
 
-
-    var framePoints: IntArray[] = vectorRotationAnimationInterface!.getPoints(frame)!;
+    var framePoints: number[][] = vectorRotationAnimationInterface!.getPoints(frame)!;
         
         
+;
+    
 
-
-    var points: IntArray[][] = vectorExplosionGenerator!.getInstance(framePoints, 6, vectorExplosionGenerator!.ROTATION)!;
+    var points: number[][][] = vectorExplosionGenerator!.getInstance(framePoints, 6, vectorExplosionGenerator!.ROTATION)!;
         
         
-
+;
+    
 
 
 
@@ -97,7 +103,8 @@ this.setBasicColorP(basicColor)
 
     setBasicColorP(basicColor: BasicColor){
 var basicColor = basicColor
-this.basicColor= basicColor
+this.basicColor= basicColor;
+    
 }
 
 

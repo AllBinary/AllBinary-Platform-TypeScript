@@ -64,35 +64,52 @@ var fileItem = fileItem
     var logUtil: LogUtil = LogUtil.getInstance()!;
         
         
-
+;
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
         
         
-
-stringBuffer!.append("FileItem Log:")
-stringBuffer!.append(commonSeps!.NEW_LINE)
-stringBuffer!.append("Content Type:")
-stringBuffer!.append(fileItem!.getContentType())
-stringBuffer!.append(commonSeps!.NEW_LINE)
-stringBuffer!.append("Field Name:")
-stringBuffer!.append(fileItem!.getFieldName())
-stringBuffer!.append(commonSeps!.NEW_LINE)
-stringBuffer!.append("Name:")
-stringBuffer!.append(fileItem!.getName())
-stringBuffer!.append(commonSeps!.NEW_LINE)
-stringBuffer!.append("Size:")
-stringBuffer!.append(" Not Calculated Yet")
+;
+    
+stringBuffer!.append("FileItem Log:");
+    
+stringBuffer!.append(commonSeps!.NEW_LINE);
+    
+stringBuffer!.append("Content Type:");
+    
+stringBuffer!.append(fileItem!.getContentType());
+    
+stringBuffer!.append(commonSeps!.NEW_LINE);
+    
+stringBuffer!.append("Field Name:");
+    
+stringBuffer!.append(fileItem!.getFieldName());
+    
+stringBuffer!.append(commonSeps!.NEW_LINE);
+    
+stringBuffer!.append("Name:");
+    
+stringBuffer!.append(fileItem!.getName());
+    
+stringBuffer!.append(commonSeps!.NEW_LINE);
+    
+stringBuffer!.append("Size:");
+    
+stringBuffer!.append(" Not Calculated Yet");
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTP))
                         
                                     {
-                                    logUtil!.put(stringBuffer!.toString(), getInstance(), "log()")
+                                    logUtil!.put(stringBuffer!.toString(), getInstance(), "log()");
+    
 
                                     }
                                 
@@ -105,35 +122,52 @@ var fileItem = fileItem
     var logUtil: LogUtil = LogUtil.getInstance()!;
         
         
-
+;
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
         
         
-
-stringBuffer!.append("FileItem Log:")
-stringBuffer!.append(commonSeps!.NEW_LINE)
-stringBuffer!.append("Content Type:")
-stringBuffer!.append(fileItem!.getContentType())
-stringBuffer!.append(commonSeps!.NEW_LINE)
-stringBuffer!.append("Field Name:")
-stringBuffer!.append(fileItem!.getFieldName())
-stringBuffer!.append(commonSeps!.NEW_LINE)
-stringBuffer!.append("Name:")
-stringBuffer!.append(fileItem!.getName())
-stringBuffer!.append(commonSeps!.NEW_LINE)
-stringBuffer!.append("Size:")
-stringBuffer!.appendlong(fileItem!.getSize())
+;
+    
+stringBuffer!.append("FileItem Log:");
+    
+stringBuffer!.append(commonSeps!.NEW_LINE);
+    
+stringBuffer!.append("Content Type:");
+    
+stringBuffer!.append(fileItem!.getContentType());
+    
+stringBuffer!.append(commonSeps!.NEW_LINE);
+    
+stringBuffer!.append("Field Name:");
+    
+stringBuffer!.append(fileItem!.getFieldName());
+    
+stringBuffer!.append(commonSeps!.NEW_LINE);
+    
+stringBuffer!.append("Name:");
+    
+stringBuffer!.append(fileItem!.getName());
+    
+stringBuffer!.append(commonSeps!.NEW_LINE);
+    
+stringBuffer!.append("Size:");
+    
+stringBuffer!.appendlong(fileItem!.getSize());
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
                         
                                     {
-                                    logUtil!.put(stringBuffer!.toString(), getInstance(), "log()")
+                                    logUtil!.put(stringBuffer!.toString(), getInstance(), "log()");
+    
 
                                     }
                                 

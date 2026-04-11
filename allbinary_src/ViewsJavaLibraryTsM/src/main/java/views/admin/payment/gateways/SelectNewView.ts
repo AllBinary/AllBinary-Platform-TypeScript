@@ -18,7 +18,10 @@
 
 
 
-import { Vector } from "../../../../java/util/Vector.js";
+            import Vector from "@ohos.util.Vector";
+        
+
+//import { Vector } from "../../../../java/util/Vector.js";
 
     
 import { BasicPaymentTypeUtil } from "../../../../org/allbinary/business/user/commerce/money/payment/types/BasicPaymentTypeUtil.js";
@@ -68,31 +71,39 @@ public constructor (transformInfoInterface: TransformInfoInterface)
     var paymentGatewayEntityInterface: PaymentGatewayEntityInterface = PaymentGatewayEntityFactory.getInstance()!;
         
         
-
+;
+    
 
     var existingGateways: Vector = paymentGatewayEntityInterface!.findPaymentTypeVectorByStore(this.getPaymentGatewayPrimaryKey()!.getStoreName())!;
         
         
-
+;
+    
 
     var allGatewaysLessExisting: Vector = BasicPaymentTypeUtil.getInstance()!.difference(existingGateways)!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return PaymentGatewaysView(this.getTransformInfoInterface(), allGatewaysLessExisting).
                             view();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view", e);
+    
 
                                     }
                                 

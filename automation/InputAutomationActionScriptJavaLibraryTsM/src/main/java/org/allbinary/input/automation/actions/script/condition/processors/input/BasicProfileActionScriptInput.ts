@@ -18,10 +18,13 @@
 
 
 
+            import Hashtable from "@ohos.util.HashMap";
+        
 import { HashMap } from "../../../../../../../../../java/util/HashMap.js";
 
     
-import { Hashtable } from "../../../../../../../../../java/util/Hashtable.js";
+
+//import { Hashtable } from "../../../../../../../../../java/util/Hashtable.js";
 
     
 import { Iterator } from "../../../../../../../../../java/util/Iterator.js";
@@ -86,22 +89,26 @@ public constructor (label: string, node: Node)
 
                             //For kotlin this is before the body of the constructor.
                     
-logUtil!.put(commonStrings!.START +label, this, commonStrings!.CONSTRUCTOR)
+logUtil!.put(commonStrings!.START +label, this, commonStrings!.CONSTRUCTOR);
+    
 
     var actionNode: Node = DomSearchHelper.getNode(GenericProfileActionScriptInputData.TYPE, node.getChildNodes())!;
         
         
-
+;
+    
 
     var inputTypeString: string = DomNodeHelper.getTextNodeValue(actionNode)!;
         
         
-
+;
+    
 
     var timeNode: Node = DomSearchHelper.getNodeNoThrow(GenericProfileActionScriptInputData.DELAY, node.getChildNodes())!;
         
         
-
+;
+    
 
                         if(timeNode != 
                                     null
@@ -112,17 +119,21 @@ logUtil!.put(commonStrings!.START +label, this, commonStrings!.CONSTRUCTOR)
     var delayString: string = DomNodeHelper.getTextNodeValue(timeNode)!;
         
         
-
-this.setTime(Integer.valueOf(delayString)!.toInt())
+;
+    
+this.setTime(Integer.valueOf(delayString)!.toInt());
+    
 
                                     }
                                 
                         else {
-                            this.setTime(0)
+                            this.setTime(0);
+    
 
                         }
                             
-this.setInputRobotInterface(InputRobotFactory.getInstance()!.get(inputTypeString))
+this.setInputRobotInterface(InputRobotFactory.getInstance()!.get(inputTypeString));
+    
 }
 
 public constructor (label: string)                        
@@ -135,29 +146,40 @@ public constructor (label: string)
 
                             //For kotlin this is before the body of the constructor.
                     
-logUtil!.put(commonStrings!.START +label, this, commonStrings!.CONSTRUCTOR)
+logUtil!.put(commonStrings!.START +label, this, commonStrings!.CONSTRUCTOR);
+    
 
     var inputRobotFactory: InputRobotFactory = InputRobotFactory.getInstance()!;
         
         
+;
+    
 
+    var hashtable: Hashtable<any, any> = inputRobotFactory!.get();
 
-    var hashtable: Hashtable<Any, Any> = inputRobotFactory!.get() as Hashtable<Any, Any>;
+                         as Hashtable<any, any>;
         
         
-
+;
+    
 
     var set: Set = hashtable.keys!;
         
         
-
+;
+    
 
     var iterator: Iterator = set.iterator()!;
         
         
+;
+    
+this.setInputRobotInterface(inputRobotFactory!.get(iterator.next();
 
-this.setInputRobotInterface(inputRobotFactory!.get(iterator.next() as String))
-this.setTime(0)
+                         as String));
+    
+this.setTime(0);
+    
 }
 
 
@@ -173,19 +195,24 @@ this.setTime(0)
 
     public setTime(time: number){
 var time = time
-this.time= time
+this.time= time;
+    
 }
 
 
-    public BasicProfileActionScriptInput_toHashMap(): HashMap<Any, Any>{
+    public BasicProfileActionScriptInput_toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
         
         
-
-hashMap!.put(GenericProfileActionScriptInputData.TYPE, this.getInputRobotInterface()!.getName())
-hashMap!.put(GenericProfileActionScriptInputData.DELAY, Integer.toString(this.getTime()))
-logUtil!.put("HashMap: " +hashMap!.toString(), this, "toHashMap()")
+;
+    
+hashMap!.put(GenericProfileActionScriptInputData.TYPE, this.getInputRobotInterface()!.getName());
+    
+hashMap!.put(GenericProfileActionScriptInputData.DELAY, Integer.toString(this.getTime()));
+    
+logUtil!.put("HashMap: " +hashMap!.toString(), this, "toHashMap()");
+    
 
 
 
@@ -203,7 +230,8 @@ var document = document
     var node: Node = ModDomHelper.createNodeWithValueNodes(document, GenericProfileActionScriptInputData.NAME, this.BasicProfileActionScriptInput_toHashMap())!;
         
         
-
+;
+    
 
 
 
@@ -215,7 +243,8 @@ var document = document
 
     public setInputRobotInterface(inputRobotInterface: InputRobotInterface){
 var inputRobotInterface = inputRobotInterface
-this.inputRobotInterface= inputRobotInterface
+this.inputRobotInterface= inputRobotInterface;
+    
 }
 
 
@@ -234,31 +263,40 @@ this.inputRobotInterface= inputRobotInterface
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(super.toString())
-stringBuffer!.append(" Input Type: ")
+;
+    
+stringBuffer!.append(super.toString());
+    
+stringBuffer!.append(" Input Type: ");
+    
 
                         if(this.getInputRobotInterface() != 
                                     null
                                 )
                         
                                     {
-                                    stringBuffer!.append(this.getInputRobotInterface()!.getName())
+                                    stringBuffer!.append(this.getInputRobotInterface()!.getName());
+    
 
                                     }
                                 
                         else {
-                            stringBuffer!.append(StringUtil.getInstance()!.NULL_STRING)
+                            stringBuffer!.append(StringUtil.getInstance()!.NULL_STRING);
+    
 
                         }
                             
-stringBuffer!.append(" Time: ")
-stringBuffer!.appendlong(this.getTime())
+stringBuffer!.append(" Time: ");
+    
+stringBuffer!.appendlong(this.getTime());
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

@@ -67,14 +67,16 @@ var validationComponentInterface = validationComponentInterface
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
+;
+    
 
         try {
             
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("View Name: " +validationComponentInterface!.getTransformInfoInterface()!.getName(), this, "view()")
+                                    logUtil!.put("View Name: " +validationComponentInterface!.getTransformInfoInterface()!.getName(), this, "view()");
+    
 
                                     }
                                 
@@ -84,13 +86,16 @@ var validationComponentInterface = validationComponentInterface
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return StringUtil.getInstance()!.EMPTY_STRING;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e);
+    
 
                                     }
                                 

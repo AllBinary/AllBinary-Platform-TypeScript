@@ -68,18 +68,22 @@ var key = key
     var cacheableInterface: CacheableInterface = super.remove(key)!;
         
         
-
+;
+    
 
     var allBinaryImageRotationAnimationInfo: ImageArrayRotationAnimationInfo = key as ImageArrayRotationAnimationInfo;
         
         
-
+;
+    
 
     var imageArrayRotationAnimationCacheable: ImageArrayRotationAnimationCacheable = (cacheableInterface as ImageArrayRotationAnimationCacheable);
         
         
-
-imageArrayRotationAnimationCacheable!.setImageArray(allBinaryImageRotationAnimationInfo!.getImageArray())
+;
+    
+imageArrayRotationAnimationCacheable!.setImageArray(allBinaryImageRotationAnimationInfo!.getImageArray());
+    
 
 
 

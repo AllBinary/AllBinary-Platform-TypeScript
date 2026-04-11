@@ -65,8 +65,10 @@ private constructor (){
 
 
     public update(){
-this.DEFAULT_CHAR_HEIGHT= defaultFont!.getHeight()
-this.DEFAULT_CHAR_WIDTH= defaultFont!.charWidth('C')
+this.DEFAULT_CHAR_HEIGHT= defaultFont!.getHeight();
+    
+this.DEFAULT_CHAR_WIDTH= defaultFont!.charWidth('C');
+    
 }
 
 
@@ -109,6 +111,8 @@ this.DEFAULT_CHAR_WIDTH= defaultFont!.charWidth('C')
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return defaultFont!.stringWidth(string);
+
+                        ;
     
 }
 
@@ -119,6 +123,8 @@ this.DEFAULT_CHAR_WIDTH= defaultFont!.charWidth('C')
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return defaultFont!.getSize();
+
+                        ;
     
 }
 
@@ -130,6 +136,8 @@ this.DEFAULT_CHAR_WIDTH= defaultFont!.charWidth('C')
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return defaultFont!.charWidth(aChar);
+
+                        ;
     
 }
 
@@ -143,6 +151,8 @@ this.DEFAULT_CHAR_WIDTH= defaultFont!.charWidth('C')
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return defaultFont!.charsWidth(charArray, offset, length);
+
+                        ;
     
 }
 
@@ -152,13 +162,16 @@ this.DEFAULT_CHAR_WIDTH= defaultFont!.charWidth('C')
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return StringMaker().
-                            append(this::class.toString())!.appendint(this.DEFAULT_CHAR_WIDTH)!.append(commonSeps!.FORWARD_SLASH)!.appendint(this.DEFAULT_CHAR_HEIGHT)!.toString();
+                            append(this.constructor.name.toString())!.appendint(this.DEFAULT_CHAR_WIDTH)!.append(commonSeps!.FORWARD_SLASH)!.appendint(this.DEFAULT_CHAR_HEIGHT)!.toString();
+
+                        ;
     
 }
 

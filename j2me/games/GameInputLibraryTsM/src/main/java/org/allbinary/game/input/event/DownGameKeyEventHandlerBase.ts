@@ -66,10 +66,13 @@ export class DownGameKeyEventHandlerBase extends BasicEventHandler {
     public addListener(playerGameInput: PlayerGameInput){
 var playerGameInput = playerGameInput
 
-                        if(!list.contains(playerGameInput))
+                        if(!list.contains(playerGameInput);
+
+                        )
                         
                                     {
-                                    list.add(playerGameInput)
+                                    list.add(playerGameInput);
+    
 
                                     }
                                 
@@ -77,23 +80,29 @@ var playerGameInput = playerGameInput
 
 
     public removeAllListeners(){
-this.list.clear()
-super.removeAllListeners()
+this.list.clear();
+    
+super.removeAllListeners();
+    
 }
 
 
     public removeListenerSingleThreaded(eventListenerInterface: EventListenerInterface){
 var eventListenerInterface = eventListenerInterface
-this.list.remove(eventListenerInterface)
-super.removeListenerSingleThreaded(eventListenerInterface)
+this.list.remove(eventListenerInterface);
+    
+super.removeListenerSingleThreaded(eventListenerInterface);
+    
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public removeListener(eventListenerInterface: EventListenerInterface){
 var eventListenerInterface = eventListenerInterface
-this.list.remove(eventListenerInterface)
-super.removeListener(eventListenerInterface)
+this.list.remove(eventListenerInterface);
+    
+super.removeListener(eventListenerInterface);
+    
 }
 
 
@@ -117,16 +126,22 @@ var eventObject = eventObject
     var playerGameInput: PlayerGameInput = this.list.objectArray[index]! as PlayerGameInput;
         
         
+;
+    
+playerGameInput!.onDownGameKeyEvent(eventObject as GameKeyEvent);
+    
 
-playerGameInput!.onDownGameKeyEvent(eventObject as GameKeyEvent)
-} catch(e: Exception)
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e);
+    
 }
 
 }
 
-super.fireEvent(eventObject)
+super.fireEvent(eventObject);
+    
 }
 
 
@@ -139,8 +154,10 @@ var eventListenerInterface = eventListenerInterface
     var downGameKeyEventListenerInterface: DownGameKeyEventListenerInterface = eventListenerInterface as DownGameKeyEventListenerInterface;
         
         
-
-downGameKeyEventListenerInterface!.onDownGameKeyEvent(eventObject as GameKeyEvent)
+;
+    
+downGameKeyEventListenerInterface!.onDownGameKeyEvent(eventObject as GameKeyEvent);
+    
 }
 
 
@@ -149,37 +166,53 @@ downGameKeyEventListenerInterface!.onDownGameKeyEvent(eventObject as GameKeyEven
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(super.toString())
-stringBuffer!.append(TOTAL_LISTENERS)
-stringBuffer!.appendint(this.list.size())
+;
+    
+stringBuffer!.append(super.toString());
+    
+stringBuffer!.append(TOTAL_LISTENERS);
+    
+stringBuffer!.appendint(this.list.size());
+    
 
     var eventListenerInterface: EventListenerInterface
-
+;
+    
 
     var size: number = this.list.size()!;
         
         
-
+;
+    
 
     var index: number = 0;
         
         
-
+;
+    
 
         while(index < size)
         {
 
         try {
-            eventListenerInterface= this.list.get(index) as EventListenerInterface
-stringBuffer!.append(LISTENER_LABEL)
-stringBuffer!.append(eventListenerInterface!.toString())
-} catch(e: Exception)
+            eventListenerInterface= this.list.get(index);
+
+                         as EventListenerInterface;
+    
+stringBuffer!.append(LISTENER_LABEL);
+    
+stringBuffer!.append(eventListenerInterface!.toString());
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.TOSTRING, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.TOSTRING, e);
+    
 }
 
-index++
+index++;
+    
 }
 
 
@@ -187,6 +220,8 @@ index++
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

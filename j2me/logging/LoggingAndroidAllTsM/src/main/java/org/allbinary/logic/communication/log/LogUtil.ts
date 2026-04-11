@@ -70,23 +70,28 @@ private constructor (){
     var specialMessage: string = log.getSpecialMessage()!;
         
         
-
+;
+    
 
     var anyType: any = {} = log.getObject()!;
         
         
-
+;
+    
 
     var functionName: string = log.getFunctionName()!;
         
         
-
+;
+    
 
     var exception: any = {} = log.getThrowable()!;
         
         
-
-this.put(specialMessage, anyType, functionName, exception)
+;
+    
+this.put(specialMessage, anyType, functionName, exception);
+    
 }
 
 
@@ -94,7 +99,8 @@ this.put(specialMessage, anyType, functionName, exception)
     //var specialMessage = specialMessage
     //var anyType = anyType
 var functionName = functionName
-this.put(specialMessage, anyType, functionName, NullUtil.getInstance()!.NULL_OBJECT)
+this.put(specialMessage, anyType, functionName, NullUtil.getInstance()!.NULL_OBJECT);
+    
 }
 
 
@@ -107,16 +113,19 @@ var exception = exception
     var className: string = LABEL;
         
         
-
+;
+    
 className= StringMaker().
-                            append(anyType!::class.toString()!)!.append(commonSeps!.COLON)!.append(Integer.toHexString(anyType!.hashCode()))!.toString().toCharArray().concatToString()
-                                
+                            append(anyType!.constructor.name.toString()!)!.append(commonSeps!.COLON)!.append(Integer.toHexString(anyType!.hashCode()))!.toString();
+    
 
     var message: string = logFormatUtil!.get(className, functionName, specialMessage, exception)!;
         
         
-
-android.util.Log.i(LABEL, message)
+;
+    
+android.util.Log.i(LABEL, message);
+    
 }
 
 

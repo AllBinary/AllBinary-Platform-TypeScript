@@ -48,12 +48,18 @@ export class ColorRange
 public constructor (){
 
             super();
-            this.minRed= 0
-this.maxRed= 0
-this.minGreen= 0
-this.maxGreen= 0
-this.minBlue= 0
-this.maxBlue= 0
+            this.minRed= 0;
+    
+this.maxRed= 0;
+    
+this.minGreen= 0;
+    
+this.maxGreen= 0;
+    
+this.minBlue= 0;
+    
+this.maxBlue= 0;
+    
 }
 
 
@@ -69,7 +75,8 @@ this.maxBlue= 0
 
     public setMinRed(minRed: number){
 var minRed = minRed
-this.minRed= minRed
+this.minRed= minRed;
+    
 }
 
 
@@ -85,7 +92,8 @@ this.minRed= minRed
 
     public setMaxRed(maxRed: number){
 var maxRed = maxRed
-this.maxRed= maxRed
+this.maxRed= maxRed;
+    
 }
 
 
@@ -101,7 +109,8 @@ this.maxRed= maxRed
 
     public setMinGreen(minGreen: number){
 var minGreen = minGreen
-this.minGreen= minGreen
+this.minGreen= minGreen;
+    
 }
 
 
@@ -117,7 +126,8 @@ this.minGreen= minGreen
 
     public setMaxGreen(maxGreen: number){
 var maxGreen = maxGreen
-this.maxGreen= maxGreen
+this.maxGreen= maxGreen;
+    
 }
 
 
@@ -133,7 +143,8 @@ this.maxGreen= maxGreen
 
     public setMinBlue(minBlue: number){
 var minBlue = minBlue
-this.minBlue= minBlue
+this.minBlue= minBlue;
+    
 }
 
 
@@ -149,7 +160,8 @@ this.minBlue= minBlue
 
     public setMaxBlue(maxBlue: number){
 var maxBlue = maxBlue
-this.maxBlue= maxBlue
+this.maxBlue= maxBlue;
+    
 }
 
 
@@ -186,29 +198,49 @@ var color = color
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("getMinRed(): ")
-stringBuffer!.appendint(this.getMinRed())
-stringBuffer!.append(CommonSeps.getInstance()!.NEW_LINE)
-stringBuffer!.append("getMaxRed(): ")
-stringBuffer!.appendint(this.getMaxRed())
-stringBuffer!.append(CommonSeps.getInstance()!.NEW_LINE)
-stringBuffer!.append("getMinGreen(): ")
-stringBuffer!.appendint(this.getMinGreen())
-stringBuffer!.append(CommonSeps.getInstance()!.NEW_LINE)
-stringBuffer!.append("getMaxGreen(): ")
-stringBuffer!.appendint(this.getMaxGreen())
-stringBuffer!.append(CommonSeps.getInstance()!.NEW_LINE)
-stringBuffer!.append("getMinBlue(): ")
-stringBuffer!.appendint(this.getMinGreen())
-stringBuffer!.append(CommonSeps.getInstance()!.NEW_LINE)
-stringBuffer!.append("getMaxBlue(): ")
-stringBuffer!.appendint(this.getMaxBlue())
+;
+    
+stringBuffer!.append("getMinRed(): ");
+    
+stringBuffer!.appendint(this.getMinRed());
+    
+stringBuffer!.append(CommonSeps.getInstance()!.NEW_LINE);
+    
+stringBuffer!.append("getMaxRed(): ");
+    
+stringBuffer!.appendint(this.getMaxRed());
+    
+stringBuffer!.append(CommonSeps.getInstance()!.NEW_LINE);
+    
+stringBuffer!.append("getMinGreen(): ");
+    
+stringBuffer!.appendint(this.getMinGreen());
+    
+stringBuffer!.append(CommonSeps.getInstance()!.NEW_LINE);
+    
+stringBuffer!.append("getMaxGreen(): ");
+    
+stringBuffer!.appendint(this.getMaxGreen());
+    
+stringBuffer!.append(CommonSeps.getInstance()!.NEW_LINE);
+    
+stringBuffer!.append("getMinBlue(): ");
+    
+stringBuffer!.appendint(this.getMinGreen());
+    
+stringBuffer!.append(CommonSeps.getInstance()!.NEW_LINE);
+    
+stringBuffer!.append("getMaxBlue(): ");
+    
+stringBuffer!.appendint(this.getMaxBlue());
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

@@ -52,12 +52,14 @@ var contentBase = contentBase
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGINGERROR))
                         
                                     {
-                                    this.email= Email(from, to, subject, server, textBody, htmlAttachment, contentBase, true)
+                                    this.email= Email(from, to, subject, server, textBody, htmlAttachment, contentBase, true);
+    
 
                                     }
                                 
                         else {
-                            this.email= Email(from, to, subject, server, textBody, htmlAttachment, contentBase)
+                            this.email= Email(from, to, subject, server, textBody, htmlAttachment, contentBase);
+    
 
                         }
                             
@@ -70,6 +72,8 @@ var contentBase = contentBase
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.email.getMimeMessage();
+
+                        ;
     
 }
 
@@ -80,6 +84,8 @@ var contentBase = contentBase
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.email.getDebugInfo();
+
+                        ;
     
 }
 
@@ -92,18 +98,22 @@ var contentBase = contentBase
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.email.log();
+
+                        ;
     
 }
 
 
                 //@Throws(Error::class)
             
-    public toHashMap(): HashMap<Any, Any>{
+    public toHashMap(): HashMap<any, any>{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.email.toHashMap();
+
+                        ;
     
 }
 
@@ -117,6 +127,8 @@ var document = document
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.email.toXmlNode(document);
+
+                        ;
     
 }
 
@@ -139,6 +151,8 @@ var document = document
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.email.toXmlDoc();
+
+                        ;
     
 }
 

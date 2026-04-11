@@ -35,7 +35,7 @@ public constructor (uniformBlockArray: string[], uniformArray: string[], attribu
                     
 }
 
-public constructor (uniformBlockArray: string[], uniformArray: string[], attributeArray: string[], attributeHandleArray: IntArray)                        
+public constructor (uniformBlockArray: string[], uniformArray: string[], attributeArray: string[], attributeHandleArray: number[])                        
 
                             : super(uniformBlockArray, uniformArray, attributeArray, attributeHandleArray){
 

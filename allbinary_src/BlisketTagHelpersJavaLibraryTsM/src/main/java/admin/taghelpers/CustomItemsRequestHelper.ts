@@ -18,13 +18,16 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { Calendar } from "../../java/util/Calendar.js";
 
     
 import { HashMap } from "../../java/util/HashMap.js";
 
     
-import { Vector } from "../../java/util/Vector.js";
+
+//import { Vector } from "../../java/util/Vector.js";
 
     
 import { HttpServletRequest } from "../../javax/servlet/http/HttpServletRequest.js";
@@ -70,47 +73,62 @@ export class CustomItemsRequestHelper extends ModifyTable {
     private timeEntered: string
 
     private lastModified: string
-public constructor (hashMap: HashMap<Any, Any>, pageContext: PageContext){
+public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
             var hashMap = hashMap
 var pageContext = pageContext
-this.request= pageContext!.getRequest() as HttpServletRequest
-this.getFormData()
+this.request= pageContext!.getRequest();
+
+                         as HttpServletRequest;
+    
+this.getFormData();
+    
 }
 
 
     public getFormData(){
-this.id= request.getParameter(BasicItemData.ID)
-this.className= request.getParameter(DynamicObjectData.NAME)
-this.packageName= request.getParameter(CustomItemData.PACKAGE)
-this.timeEntered= request.getParameter(EntryData.getInstance()!.TIMECREATED)
-this.lastModified= request.getParameter(EntryData.getInstance()!.LASTMODIFIED)
+this.id= request.getParameter(BasicItemData.ID);
+    
+this.className= request.getParameter(DynamicObjectData.NAME);
+    
+this.packageName= request.getParameter(CustomItemData.PACKAGE);
+    
+this.timeEntered= request.getParameter(EntryData.getInstance()!.TIMECREATED);
+    
+this.lastModified= request.getParameter(EntryData.getInstance()!.LASTMODIFIED);
+    
 }
 
 
-    getHashMap(): HashMap<Any, Any>{
+    getHashMap(): HashMap<any, any>{
 
-    var values: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var values: HashMap<any, any> = new HashMap<any, any>();
         
         
-
-values.put(BasicItemData.ID, this.id)
-values.put(DynamicObjectData.NAME, this.className)
-values.put(CustomItemData.PACKAGE, this.packageName)
+;
+    
+values.put(BasicItemData.ID, this.id);
+    
+values.put(DynamicObjectData.NAME, this.className);
+    
+values.put(CustomItemData.PACKAGE, this.packageName);
+    
 
     var calendar: Calendar = Calendar.getInstance()!;
         
         
-
+;
+    
 
     var time: string = new calendar.getTimeInMillis() as Long.
-                            toString().toCharArray().concatToString()
-                                ;
+                            toString();
         
         
-
-values.put(EntryData.getInstance()!.LASTMODIFIED, time)
+;
+    
+values.put(EntryData.getInstance()!.LASTMODIFIED, time);
+    
 
 
 
@@ -127,35 +145,45 @@ values.put(EntryData.getInstance()!.LASTMODIFIED, time)
     var calendar: Calendar = Calendar.getInstance()!;
         
         
-
+;
+    
 
     var time: string = new calendar.getTimeInMillis() as Long.
-                            toString().toCharArray().concatToString()
-                                ;
+                            toString();
         
         
-
+;
+    
 
     var values: Vector = new Vector();
         
         
-
-values.add(id)
-values.add(this.className)
-values.add(this.packageName)
-values.add(time)
-values.add(time)
-CustomItemsEntityFactory.getInstance()!.getCustomItemsEntityInstance()!.insert(values)
+;
+    
+values.add(id);
+    
+values.add(this.className);
+    
+values.add(this.packageName);
+    
+values.add(time);
+    
+values.add(time);
+    
+CustomItemsEntityFactory.getInstance()!.getCustomItemsEntityInstance()!.insert(values);
+    
 
     var success: string = "Successfully inserted " +id +" into items table";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put(success, this, "insert()")
+                                    logUtil!.put(success, this, "insert()");
+    
 
                                     }
                                 
@@ -165,18 +193,22 @@ CustomItemsEntityFactory.getInstance()!.getCustomItemsEntityInstance()!.insert(v
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to insert " +id +" into items table";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "inserts()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "inserts()", e);
+    
 
                                     }
                                 
@@ -194,17 +226,20 @@ CustomItemsEntityFactory.getInstance()!.getCustomItemsEntityInstance()!.insert(v
     public delete(): string{
 
         try {
-            CustomItemsEntityFactory.getInstance()!.getCustomItemsEntityInstance()!.delete(id)
+            CustomItemsEntityFactory.getInstance()!.getCustomItemsEntityInstance()!.delete(id);
+    
 
     var success: string = "Successfully deleted";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put(success, this, "delete()")
+                                    logUtil!.put(success, this, "delete()");
+    
 
                                     }
                                 
@@ -214,18 +249,22 @@ CustomItemsEntityFactory.getInstance()!.getCustomItemsEntityInstance()!.insert(v
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to delete";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "delete()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "delete()", e);
+    
 
                                     }
                                 
@@ -247,18 +286,22 @@ CustomItemsEntityFactory.getInstance()!.getCustomItemsEntityInstance()!.insert(v
     var success: string = "Update Pricing Successful";
         
         
+;
+    
 
-
-    var values: HashMap<Any, Any> = this.getHashMap()!;
+    var values: HashMap<any, any> = this.getHashMap()!;
         
         
-
-CustomItemsEntityFactory.getInstance()!.getCustomItemsEntityInstance()!.update(values)
+;
+    
+CustomItemsEntityFactory.getInstance()!.getCustomItemsEntityInstance()!.update(values);
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put(id +" " +success, this, "update()")
+                                    logUtil!.put(id +" " +success, this, "update()");
+    
 
                                     }
                                 
@@ -268,18 +311,22 @@ CustomItemsEntityFactory.getInstance()!.getCustomItemsEntityInstance()!.update(v
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to update: " +id;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "update()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "update()", e);
+    
 
                                     }
                                 

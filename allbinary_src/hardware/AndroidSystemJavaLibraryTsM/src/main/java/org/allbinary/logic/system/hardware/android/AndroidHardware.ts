@@ -18,6 +18,8 @@
 
 
 
+            import Hashtable from "@ohos.util.HashMap";
+        
 import { Closeable } from "../../../../../../java/io/Closeable.js";
 
     
@@ -27,7 +29,8 @@ import { FileReader } from "../../../../../../java/io/FileReader.js";
 import { LineNumberReader } from "../../../../../../java/io/LineNumberReader.js";
 
     
-import { Hashtable } from "../../../../../../java/util/Hashtable.js";
+
+//import { Hashtable } from "../../../../../../java/util/Hashtable.js";
 
     
 import { NullCloseable } from "../../../../../../org/allbinary/logic/io/NullCloseable.js";
@@ -90,7 +93,8 @@ export class AndroidHardware
 public constructor (){
 
             super();
-            this.init(DEVICES)
+            this.init(DEVICES);
+    
 
                         if(componentInterfaceVector!.size() < MINHARDWARE)
                         
@@ -113,13 +117,18 @@ public constructor (){
     var lineNumberReader: Closeable = NullCloseable.NULL_CLOSEABLE;
         
         
-
+;
+    
 
         try {
-            lineNumberReader= this.get(filePath)
-} catch(e: Exception)
+            lineNumberReader= this.get(filePath);
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put("Hardware Data: " +this.toString(), this, commonStrings!.INIT, e)
+logUtil!.put("Hardware Data: " +this.toString(), this, commonStrings!.INIT, e);
+    
 
 
 
@@ -133,7 +142,8 @@ logUtil!.put("Hardware Data: " +this.toString(), this, commonStrings!.INIT, e)
                                 )
                         
                                     {
-                                    lineNumberReader!.close()
+                                    lineNumberReader!.close();
+    
 
                                     }
                                 
@@ -147,30 +157,37 @@ logUtil!.put("Hardware Data: " +this.toString(), this, commonStrings!.INIT, e)
             
     get(filePath: string): LineNumberReader{
     //var filePath = filePath
-componentInterfaceVector= BasicArrayList()
+componentInterfaceVector= BasicArrayList();
+    
 
     var pciFile: FileReader = new FileReader(filePath);
         
         
-
+;
+    
 
     var lineNumberReader: LineNumberReader = new LineNumberReader(pciFile);
         
         
-
-logUtil!.put("File Found", this, commonStrings!.CONSTRUCTOR)
+;
+    
+logUtil!.put("File Found", this, commonStrings!.CONSTRUCTOR);
+    
 
     var nextLine: string = lineNumberReader!.readLine()!;
         
         
-
+;
+    
 
         while(nextLine != 
                                     null
                                 )
         {
-nextLine= lineNumberReader!.readLine()
-componentInterfaceVector!.add(UnknownHardware(nextLine))
+nextLine= lineNumberReader!.readLine();
+    
+componentInterfaceVector!.add(UnknownHardware(nextLine));
+    
 }
 
 
@@ -188,7 +205,9 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return componentInterfaceVector!.get(index) as HardwareComponentInterface;
+                        return componentInterfaceVector!.get(index);
+
+                         as HardwareComponentInterface;
     
 }
 
@@ -198,12 +217,14 @@ var index = index
     var hardwareBuffer: StringBuilder = new StringBuilder();
         
         
-
+;
+    
 
     var size: number = this.componentInterfaceVector!.size()!;
         
         
-
+;
+    
 
 
 
@@ -215,12 +236,17 @@ var index = index
 index < size; index++)
         {
 
-    var componentInterface: HardwareComponentInterface = this.componentInterfaceVector!.get(index) as HardwareComponentInterface;
-        
-        
+    var componentInterface: HardwareComponentInterface = this.componentInterfaceVector!.get(index);
 
-hardwareBuffer!.append(componentInterface!.toString())
-hardwareBuffer!.append(CommonSeps.getInstance()!.NEW_LINE)
+                         as HardwareComponentInterface;
+        
+        
+;
+    
+hardwareBuffer!.append(componentInterface!.toString());
+    
+hardwareBuffer!.append(CommonSeps.getInstance()!.NEW_LINE);
+    
 }
 
 
@@ -228,6 +254,8 @@ hardwareBuffer!.append(CommonSeps.getInstance()!.NEW_LINE)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return hardwareBuffer!.toString();
+
+                        ;
     
 }
 
@@ -243,7 +271,7 @@ var hardwareInterface = hardwareInterface
 }
 
 
-    public difference(hardwareInterface: HardwareInterface): Hashtable<Any, Any>{
+    public difference(hardwareInterface: HardwareInterface): Hashtable<any, any>{
 var hardwareInterface = hardwareInterface
 
 

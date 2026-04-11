@@ -146,10 +146,14 @@ public constructor (image: Image, width: number, height: number, dx: number, dy:
 
                             //For kotlin this is before the body of the constructor.
                     
-this.animationFactoryInitializationVisitor!.dx= dx
-this.animationFactoryInitializationVisitor!.dy= dy
-this.animationFactoryInitializationVisitor!.originalDx= dx
-this.animationFactoryInitializationVisitor!.originalDy= dy
+this.animationFactoryInitializationVisitor!.dx= dx;
+    
+this.animationFactoryInitializationVisitor!.dy= dy;
+    
+this.animationFactoryInitializationVisitor!.originalDx= dx;
+    
+this.animationFactoryInitializationVisitor!.originalDy= dy;
+    
 }
 
 public constructor (image: Image, width: number, height: number, dx: number, dy: number)                        
@@ -183,10 +187,14 @@ public constructor (image: Image, width: number, height: number, dx: number, dy:
 
                             //For kotlin this is before the body of the constructor.
                     
-this.animationFactoryInitializationVisitor!.dx= dx
-this.animationFactoryInitializationVisitor!.dy= dy
-this.animationFactoryInitializationVisitor!.originalDx= dx
-this.animationFactoryInitializationVisitor!.originalDy= dy
+this.animationFactoryInitializationVisitor!.dx= dx;
+    
+this.animationFactoryInitializationVisitor!.dy= dy;
+    
+this.animationFactoryInitializationVisitor!.originalDx= dx;
+    
+this.animationFactoryInitializationVisitor!.originalDy= dy;
+    
 }
 
 public constructor (image: Image, width: number, height: number, animationBehaviorFactory: AnimationBehaviorFactory)                        
@@ -202,8 +210,10 @@ public constructor (image: Image, width: number, height: number, animationBehavi
 
                             //For kotlin this is before the body of the constructor.
                     
-this.angleIncrement= AngleFactory.getInstance()!.TOTAL_ANGLE /GameConfigurationCentral.getInstance()!.getGameControlFidelity()
-this.init()
+this.angleIncrement= AngleFactory.getInstance()!.TOTAL_ANGLE /GameConfigurationCentral.getInstance()!.getGameControlFidelity();
+    
+this.init();
+    
 }
 
 public constructor (image: Image, width: number, height: number, angleIncrement: number, animationBehaviorFactory: AnimationBehaviorFactory)                        
@@ -220,15 +230,18 @@ public constructor (image: Image, width: number, height: number, angleIncrement:
 
                             //For kotlin this is before the body of the constructor.
                     
-this.angleIncrement= angleIncrement
-this.init()
+this.angleIncrement= angleIncrement;
+    
+this.init();
+    
 }
 
 
                 //@Throws(Error::class)
             
     init(){
-this.setImageArray(ImageToRotationImageArrayUtil.getInstance()!.generate(this.getImage(), this.getAngleIncrement(), AngleFactory.getInstance()!.TOTAL_ANGLE.toInt()))
+this.setImageArray(ImageToRotationImageArrayUtil.getInstance()!.generate(this.getImage(), this.getAngleIncrement(), AngleFactory.getInstance()!.TOTAL_ANGLE.toInt()));
+    
 }
 
 
@@ -240,18 +253,21 @@ this.setImageArray(ImageToRotationImageArrayUtil.getInstance()!.generate(this.ge
     var scaledImageArray: Image[] = new Array(this.imageArray!.length);
         
         
-
+;
+    
 
     var size: number = scaledImageArray!.length
                 ;
         
         
-
+;
+    
 
     var image: Image = this.getImage()!;
         
         
-
+;
+    
 
 
 
@@ -262,19 +278,23 @@ this.setImageArray(ImageToRotationImageArrayUtil.getInstance()!.generate(this.ge
         
 index < size; index++)
         {
-scaledImageArray[index]= animationFactoryImageScaleUtil!.createImage(image, image.getWidth(), image.getHeight(), this.scaleProperties!.scaleWidth, this.scaleProperties!.scaleHeight)
+scaledImageArray[index]= animationFactoryImageScaleUtil!.createImage(image, image.getWidth(), image.getHeight(), this.scaleProperties!.scaleWidth, this.scaleProperties!.scaleHeight);
+    
 }
 
 
                         if(this.animationFactoryInitializationVisitor!.dx != 0 || this.animationFactoryInitializationVisitor!.dy != 0)
                         
                                     {
-                                    animationFactoryImageScaleUtil!.processAdjust(this)
+                                    animationFactoryImageScaleUtil!.processAdjust(this);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return AdjustedImageArrayRotationAnimation(scaledImageArray, AngleInfo.getInstance(this.getAngleIncrement().toShort()), AngleFactory.getInstance()!.TOTAL_ANGLE.toInt(), this.animationFactoryInitializationVisitor!.dx, this.animationFactoryInitializationVisitor!.dy, this.animationBehaviorFactory!.getOrCreateInstance());
+                        return AdjustedImageArrayRotationAnimation(scaledImageArray, AngleInfo.getInstance(this.getAngleIncrement();
+
+                        .toShort()), AngleFactory.getInstance()!.TOTAL_ANGLE.toInt(), this.animationFactoryInitializationVisitor!.dx, this.animationFactoryInitializationVisitor!.dy, this.animationBehaviorFactory!.getOrCreateInstance());
     
 
                                     }
@@ -294,7 +314,8 @@ scaledImageArray[index]= animationFactoryImageScaleUtil!.createImage(image, imag
 
     setImageArray(imageArray: Image[]){
     //var imageArray = imageArray
-this.imageArray= imageArray
+this.imageArray= imageArray;
+    
 }
 
 

@@ -72,45 +72,67 @@ public constructor (dataId: Integer, width: number, height: number, cellWidth: n
 
                             //For kotlin this is before the body of the constructor.
                     
-this.dataId= dataId
-this.setLayerWidth(width)
-this.setLayerHeight(height)
-super.setPosition(0, 0, 0)
-this.cellWidth= cellWidth
-this.cellHeight= cellHeight
-this.halfWidth= (this.getWidth() shr 1)
-this.halfHeight= (this.getHeight() shr 1)
-this.halfCellWidth= (cellWidth shr 1)
-this.halfCellHeight= (cellHeight shr 1)
+this.dataId= dataId;
+    
+this.setLayerWidth(width);
+    
+this.setLayerHeight(height);
+    
+super.setPosition(0, 0, 0);
+    
+this.cellWidth= cellWidth;
+    
+this.cellHeight= cellHeight;
+    
+this.halfWidth= (this.getWidth() shr 1);
+    
+this.halfHeight= (this.getHeight() shr 1);
+    
+this.halfCellWidth= (cellWidth shr 1);
+    
+this.halfCellHeight= (cellHeight shr 1);
+    
 }
 
 
-    public setCells(mapTwoDArray: IntArray[]){
+    public setCells(mapTwoDArray: number[][]){
     //var mapTwoDArray = mapTwoDArray
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("Start: r: ")
-stringBuffer!.appendint(mapTwoDArray!.length)
-stringBuffer!.append(" c: ")
-stringBuffer!.appendint(mapTwoDArray[0]!.length)
-stringBuffer!.append(" rows: ")
-stringBuffer!.appendint(this.getRows())
-stringBuffer!.append(" columns: ")
-stringBuffer!.appendint(this.getColumns())
-logUtil!.put(stringBuffer!.toString(), this, "setCells")
+;
+    
+stringBuffer!.append("Start: r: ");
+    
+stringBuffer!.appendint(mapTwoDArray!.length);
+    
+stringBuffer!.append(" c: ");
+    
+stringBuffer!.appendint(mapTwoDArray[0]!.length);
+    
+stringBuffer!.append(" rows: ");
+    
+stringBuffer!.appendint(this.getRows());
+    
+stringBuffer!.append(" columns: ");
+    
+stringBuffer!.appendint(this.getColumns());
+    
+logUtil!.put(stringBuffer!.toString(), this, "setCells");
+    
 
     var rows: number = this.getRows()!;
         
         
-
+;
+    
 
     var columns: number = this.getColumns()!;
         
         
-
+;
+    
 
 
 
@@ -131,7 +153,8 @@ col < columns; col++)
         
 row < rows; row++)
         {
-this.setCell(col, row, mapTwoDArray[row]![col]!)
+this.setCell(col, row, mapTwoDArray[row]![col]!);
+    
 }
 
 }
@@ -139,7 +162,7 @@ this.setCell(col, row, mapTwoDArray[row]![col]!)
 }
 
 
-    public updateCells(mapTwoDArray: IntArray[], fromTileId: number, toTileId: number){
+    public updateCells(mapTwoDArray: number[][], fromTileId: number, toTileId: number){
     //var mapTwoDArray = mapTwoDArray
     //var fromTileId = fromTileId
     //var toTileId = toTileId
@@ -147,12 +170,14 @@ this.setCell(col, row, mapTwoDArray[row]![col]!)
     var rows: number = this.getRows()!;
         
         
-
+;
+    
 
     var columns: number = this.getColumns()!;
         
         
-
+;
+    
 
 
 
@@ -177,8 +202,10 @@ row < rows; row++)
                         if(fromTileId == mapTwoDArray[row]![col])
                         
                                     {
-                                    mapTwoDArray[row]![col]= toTileId
-this.setCell(col, row, mapTwoDArray[row]![col]!)
+                                    mapTwoDArray[row]![col]= toTileId;
+    
+this.setCell(col, row, mapTwoDArray[row]![col]!);
+    
 
                                     }
                                 
@@ -194,7 +221,9 @@ this.setCell(col, row, mapTwoDArray[row]![col]!)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this::class.toString()!;
+                        return this.constructor.name.toString()!;
+
+                        ;
     
 }
 

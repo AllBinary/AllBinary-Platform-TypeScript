@@ -52,7 +52,7 @@ export class TransformInfoHttpContext extends TransformInfoHttp {
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
         
         
-public constructor (databaseHashMap: HashMap<Any, Any>, propertiesHashMap: HashMap<Any, Any>, pageContext: PageContext)                        
+public constructor (databaseHashMap: HashMap<any, any>, propertiesHashMap: HashMap<any, any>, pageContext: PageContext)                        
 
                             : super(databaseHashMap, propertiesHashMap, pageContext){
 
@@ -72,19 +72,26 @@ var pageContext = pageContext
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("Database HashMap: ")
-stringBuffer!.append(databaseHashMap!.toString())
-stringBuffer!.append("\nProperties HashMap: ")
-stringBuffer!.append(propertiesHashMap!.toString())
-logUtil!.put(stringBuffer!.toString(), this, this.commonStrings!.CONSTRUCTOR)
+;
+    
+stringBuffer!.append("Database HashMap: ");
+    
+stringBuffer!.append(databaseHashMap!.toString());
+    
+stringBuffer!.append("\nProperties HashMap: ");
+    
+stringBuffer!.append(propertiesHashMap!.toString());
+    
+logUtil!.put(stringBuffer!.toString(), this, this.commonStrings!.CONSTRUCTOR);
+    
 
                                     }
                                 
-this.setStoreName(StringUtil.getInstance()!.EMPTY_STRING)
+this.setStoreName(StringUtil.getInstance()!.EMPTY_STRING);
+    
 }
 
-public constructor (propertiesHashMap: HashMap<Any, Any>, pageContext: PageContext)                        
+public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext)                        
 
                             : super(propertiesHashMap, pageContext){
 
@@ -99,11 +106,13 @@ var pageContext = pageContext
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Properties HashMap: " +propertiesHashMap!.toString(), this, this.commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put("Properties HashMap: " +propertiesHashMap!.toString(), this, this.commonStrings!.CONSTRUCTOR);
+    
 
                                     }
                                 
-this.setStoreName(StringUtil.getInstance()!.EMPTY_STRING)
+this.setStoreName(StringUtil.getInstance()!.EMPTY_STRING);
+    
 }
 
 
@@ -114,17 +123,25 @@ this.setStoreName(StringUtil.getInstance()!.EMPTY_STRING)
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(URLGLOBALS.getMainPath())
-stringBuffer!.append(FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH)
-stringBuffer!.append(FREEBLISKET_PATH_GLOBALS.getInstance()!.INSTALLPATH)
-stringBuffer!.append(this.getStoreName())
-stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR)
+;
+    
+stringBuffer!.append(URLGLOBALS.getMainPath());
+    
+stringBuffer!.append(FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH);
+    
+stringBuffer!.append(FREEBLISKET_PATH_GLOBALS.getInstance()!.INSTALLPATH);
+    
+stringBuffer!.append(this.getStoreName());
+    
+stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

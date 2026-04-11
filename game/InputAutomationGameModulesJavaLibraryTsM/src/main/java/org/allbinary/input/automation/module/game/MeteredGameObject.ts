@@ -70,11 +70,16 @@ public constructor (bufferedImage: BufferedImage[], minX: Object, maxX: Object, 
 var minX = minX
 var maxX = maxX
 var y = y
-this.setRatios(new Array(bufferedImage!.length))
-this.setMinX(minX)
-this.setMaxX(maxX)
-this.setY(y)
-this.setSize(maxX -minX)
+this.setRatios(new Array(bufferedImage!.length));
+    
+this.setMinX(minX);
+    
+this.setMaxX(maxX);
+    
+this.setY(y);
+    
+this.setSize(maxX -minX);
+    
 
 
 
@@ -89,20 +94,24 @@ index < bufferedImage!.length; index++)
     var nominator: number = GraphicsAnalysisUtil.getNominator(bufferedImage[index]!, this.getMinX(), this.getMaxX(), this.getY())!;
         
         
-
-this.getRatios()[index]= Double(nominator /this.getSize())
+;
+    
+this.getRatios()[index]= Double(nominator /this.getSize());
+    
 }
 
 
                         if(this.getRatios()[bufferedImage!.length -1]!.doubleValue() > 0.93F)
                         
                                     {
-                                    this.setGood(true)
+                                    this.setGood(true);
+    
 
                                     }
                                 
                         else {
-                            this.setGood(false)
+                            this.setGood(false);
+    
 
                         }
                             
@@ -110,12 +119,14 @@ this.getRatios()[index]= Double(nominator /this.getSize())
                         if(this.getRatios()[bufferedImage!.length -1]!.doubleValue() < this.getRatios()[0]!.doubleValue())
                         
                                     {
-                                    this.setDropping(true)
+                                    this.setDropping(true);
+    
 
                                     }
                                 
                         else {
-                            this.setDropping(false)
+                            this.setDropping(false);
+    
 
                         }
                             
@@ -134,7 +145,8 @@ this.getRatios()[index]= Double(nominator /this.getSize())
 
     setGood(good: boolean){
 var good = good
-this.good= good
+this.good= good;
+    
 }
 
 
@@ -150,7 +162,8 @@ this.good= good
 
     setDropping(dropping: boolean){
 var dropping = dropping
-this.dropping= dropping
+this.dropping= dropping;
+    
 }
 
 
@@ -169,14 +182,18 @@ this.dropping= dropping
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
         
         
-
-stringBuffer!.append(commonSeps!.NEW_LINE)
-stringBuffer!.append(RATIOS_LABEL)
+;
+    
+stringBuffer!.append(commonSeps!.NEW_LINE);
+    
+stringBuffer!.append(RATIOS_LABEL);
+    
 
 
 
@@ -187,35 +204,46 @@ stringBuffer!.append(RATIOS_LABEL)
         
 index < this.getRatios()!.length; index++)
         {
-stringBuffer!.append(this.getRatios()[index]!.toString())
+stringBuffer!.append(this.getRatios()[index]!.toString());
+    
 
                         if(index < this.getRatios()!.length -1)
                         
                                     {
-                                    stringBuffer!.append(commonSeps!.COMMA_SEP)
+                                    stringBuffer!.append(commonSeps!.COMMA_SEP);
+    
 
                                     }
                                 
 }
 
-stringBuffer!.append(commonSeps!.NEW_LINE)
-stringBuffer!.append(IS_GOOD_LABEL)
-stringBuffer!.appendboolean(this.isGood())
-stringBuffer!.append(commonSeps!.NEW_LINE)
-stringBuffer!.append(IS_DROPPPING_LABEL)
-stringBuffer!.appendboolean(this.isDropping())
+stringBuffer!.append(commonSeps!.NEW_LINE);
+    
+stringBuffer!.append(IS_GOOD_LABEL);
+    
+stringBuffer!.appendboolean(this.isGood());
+    
+stringBuffer!.append(commonSeps!.NEW_LINE);
+    
+stringBuffer!.append(IS_DROPPPING_LABEL);
+    
+stringBuffer!.appendboolean(this.isDropping());
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 
 
     public setRatios(ratios: Double[]){
 var ratios = ratios
-this.ratios= ratios
+this.ratios= ratios;
+    
 }
 
 
@@ -231,7 +259,8 @@ this.ratios= ratios
 
     public setMinX(minX: Integer){
 var minX = minX
-this.minX= minX
+this.minX= minX;
+    
 }
 
 
@@ -247,7 +276,8 @@ this.minX= minX
 
     public setMaxX(maxX: Integer){
 var maxX = maxX
-this.maxX= maxX
+this.maxX= maxX;
+    
 }
 
 
@@ -263,7 +293,8 @@ this.maxX= maxX
 
     public setY(y: Integer){
 var y = y
-this.y= y
+this.y= y;
+    
 }
 
 
@@ -279,7 +310,8 @@ this.y= y
 
     public setSize(size: Integer){
 var size = size
-this.size= size
+this.size= size;
+    
 }
 
 

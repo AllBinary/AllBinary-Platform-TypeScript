@@ -75,34 +75,49 @@ var portion = portion
     //var abeClientInformation = abeClientInformation
     //var commandListener = commandListener
     //var level = level
-super.init(abeClientInformation, commandListener, level)
+super.init(abeClientInformation, commandListener, level);
+    
 
     var resourceLoadingLevelFactory: ResourceLoadingLevelFactory = ResourceLoadingLevelFactory.getInstance()!;
         
         
+;
+    
 
+                        if(!this.isGameInitialized();
 
-                        if(!this.isGameInitialized() && level == resourceLoadingLevelFactory!.LOAD_ALL.getLevel())
+                         && level == resourceLoadingLevelFactory!.LOAD_ALL.getLevel())
                         
                                     {
-                                    this.setGameInitialized(true)
+                                    this.setGameInitialized(true);
+    
 
     var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
         
         
-
-SmallIntegerSingletonFactory.getInstance()!.init()
-progressCanvas!.addPortion(50, "Integers")
-PointFactory.getInstance()!.init()
-progressCanvas!.addPortion(50, "Points")
-AngleFactory.getInstance()
-progressCanvas!.addPortion(50, "Angles")
-this.initGame()
-this.resourceInitializationArray[GAME_RESOURCES]!.init()
+;
+    
+SmallIntegerSingletonFactory.getInstance()!.init();
+    
+progressCanvas!.addPortion(50, "Integers");
+    
+PointFactory.getInstance()!.init();
+    
+progressCanvas!.addPortion(50, "Points");
+    
+AngleFactory.getInstance();
+    
+progressCanvas!.addPortion(50, "Angles");
+    
+this.initGame();
+    
+this.resourceInitializationArray[GAME_RESOURCES]!.init();
+    
 
                                     }
                                 
-super.resourceInitialization(level)
+super.resourceInitialization(level);
+    
 }
 
 

@@ -66,8 +66,10 @@ var args = args
     var initInfo: SetLicenseInitInfo = new SetLicenseInitInfo(args);
         
         
-
-initInfo!.createNewLicenseInitInfo(BasicArrayList())
+;
+    
+initInfo!.createNewLicenseInitInfo(BasicArrayList());
+    
 }
 
 
@@ -78,7 +80,8 @@ public constructor (options: string[]){
 
             super();
             var options = options
-LicenseInitInfoUtil.getInstance()!.setFilePath(PrintLicenseInitInfo.PATH +PATH_GLOBALS.getInstance()!.INIT_PATH)
+LicenseInitInfoUtil.getInstance()!.setFilePath(PrintLicenseInitInfo.PATH +PATH_GLOBALS.getInstance()!.INIT_PATH);
+    
 
 
 
@@ -89,7 +92,8 @@ LicenseInitInfoUtil.getInstance()!.setFilePath(PrintLicenseInitInfo.PATH +PATH_G
         
 index < options.length; index++)
         {
-vector.add(options[index]!)
+vector.add(options[index]!);
+    
 }
 
 }
@@ -102,7 +106,8 @@ vector.add(options[index]!)
     var licenseInitInfoUtil: LicenseInitInfoUtil = LicenseInitInfoUtil.getInstance()!;
         
         
-
+;
+    
 
                         if(FileFactory.getInstance()!.isFile(licenseInitInfoUtil!.INITFILENAME))
                         
@@ -112,6 +117,8 @@ vector.add(options[index]!)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return licenseInitInfoUtil!.read();
+
+                        ;
     
 
                                     }
@@ -150,24 +157,30 @@ var licenceServerVector = licenceServerVector
     var licenseInitInfo: LicenseInitInfo = this.getLicenseInitInfo()!;
         
         
-
-System.out.println("License Serv Example: http://www.dartstatistics.com/LicServ/serverssl.php")
-licenseInitInfo!.clearServers()
+;
+    
+System.out.println("License Serv Example: http://www.dartstatistics.com/LicServ/serverssl.php");
+    
+licenseInitInfo!.clearServers();
+    
 
     var file: File = new File(PrintLicenseInitInfo.PATH +"licenseservers.txt");
         
         
-
+;
+    
 
     var reader: FileReader = new FileReader(file);
         
         
-
+;
+    
 
     var lineNumberReader: LineNumberReader = new LineNumberReader(reader);
         
         
-
+;
+    
 
         while(true)
         {
@@ -175,14 +188,16 @@ licenseInitInfo!.clearServers()
     var line: string = lineNumberReader!.readLine()!;
         
         
-
+;
+    
 
                         if(line != 
                                     null
                                 )
                         
                                     {
-                                    licenseInitInfo!.addServer(line)
+                                    licenseInitInfo!.addServer(line);
+    
 
                                     }
                                 
@@ -195,12 +210,18 @@ licenseInitInfo!.clearServers()
                             
 }
 
-LicenseInitInfoUtil.getInstance()!.write(licenseInitInfo)
-LicenseInitInfoUtil.getInstance()!.read()
-} catch(e: Exception)
+LicenseInitInfoUtil.getInstance()!.write(licenseInitInfo);
+    
+LicenseInitInfoUtil.getInstance()!.read();
+    
+
+                //: 
+} catch(e) 
             {
-System.out.print("Error: " +e)
-e.printStackTrace()
+System.out.print("Error: " +e);
+    
+e.printStackTrace();
+    
 }
 
 }

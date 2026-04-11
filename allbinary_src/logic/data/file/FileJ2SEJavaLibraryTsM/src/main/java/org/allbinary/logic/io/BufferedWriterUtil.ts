@@ -59,16 +59,19 @@ export class BufferedWriterUtil
     var abFile: AbFile = new AbFile(path);
         
         
-
+;
+    
 
                         if(abFile!.exists())
                         
                                     {
-                                    abFile!.delete()
+                                    abFile!.delete();
+    
 
                                     }
                                 
-this.write(abFile, data)
+this.write(abFile, data);
+    
 }
 
 
@@ -81,11 +84,13 @@ this.write(abFile, data)
                         if(abFile!.exists())
                         
                                     {
-                                    abFile!.delete()
+                                    abFile!.delete();
+    
 
                                     }
                                 
-this.write(abFile, data)
+this.write(abFile, data);
+    
 }
 
 
@@ -98,10 +103,14 @@ this.write(abFile, data)
     var fileOut: BufferedWriter = new BufferedWriter(FileWriter(AbFileNativeUtil.get(abFile)));
         
         
-
-fileOut!.write(data, 0, data.length)
-fileOut!.newLine()
-fileOut!.flush()
+;
+    
+fileOut!.write(data, 0, data.length);
+    
+fileOut!.newLine();
+    
+fileOut!.flush();
+    
 }
 
 

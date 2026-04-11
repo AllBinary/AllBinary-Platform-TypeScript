@@ -99,7 +99,7 @@ export class UploadFileServlet extends HttpServlet {
         
         
 
-    requestHashMap: HashMap<Any, Any>
+    requestHashMap: HashMap<any, any>
 
     private fileName: string
 
@@ -112,32 +112,41 @@ var response = response
     var isError: boolean = false;
         
         
-
+;
+    
 
     var inputStream: InputStream = 
                 null
             ;
         
         
-
+;
+    
 
         try {
-            BlisketServletUtil.getInstance()!.init(request)
+            BlisketServletUtil.getInstance()!.init(request);
+    
 this.requestHashMap= MultipartRequestParams(request).
-                            toHashMap()
+                            toHashMap();
+    
 
-    var filePath: string = this.requestHashMap!.get(FileUploadData.getInstance()!.UPLOAD_TO_FILE_PATH) as String;
+    var filePath: string = this.requestHashMap!.get(FileUploadData.getInstance()!.UPLOAD_TO_FILE_PATH);
+
+                         as String;
         
         
-
+;
+    
 
                         if(filePath == 
                                     null
                                 )
                         
                                     {
-                                    isError= true
-response.sendError(HttpServletResponse.SC_NOT_FOUND)
+                                    isError= true;
+    
+response.sendError(HttpServletResponse.SC_NOT_FOUND);
+    
 
 
 
@@ -148,16 +157,20 @@ response.sendError(HttpServletResponse.SC_NOT_FOUND)
                                     }
                                 
 
-    var hashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
         
         
-
+;
+    
 
     var authenticationHelper: AuthenticationHelper = AuthenticationHelperFactory().
-                            getInstance(hashMap, request) as AuthenticationHelper;
-        
-        
+                            getInstance(hashMap, request);
 
+                         as AuthenticationHelper;
+        
+        
+;
+    
 
                         if(authenticationHelper!.isAuthenticated())
                         
@@ -166,15 +179,20 @@ response.sendError(HttpServletResponse.SC_NOT_FOUND)
                         if(AuthenticationHelperUtil.getInstance()!.isAuthorized(authenticationHelper, filePath))
                         
                                     {
-                                    this.saveFile(filePath)
-response.setContentType("text/plain")
-response.getOutputStream()!.write("OK!".encodeToByteArray())
+                                    this.saveFile(filePath);
+    
+response.setContentType("text/plain");
+    
+response.getOutputStream()!.write("OK!".encodeToByteArray());
+    
 
                                     }
                                 
                         else {
-                            isError= true
-response.sendError(HttpServletResponse.SC_UNAUTHORIZED, "You are not Authorized")
+                            isError= true;
+    
+response.sendError(HttpServletResponse.SC_UNAUTHORIZED, "You are not Authorized");
+    
 
                         }
                             
@@ -182,23 +200,30 @@ response.sendError(HttpServletResponse.SC_UNAUTHORIZED, "You are not Authorized"
                                     }
                                 
                         else {
-                            isError= true
-response.sendError(HttpServletResponse.SC_UNAUTHORIZED, "Please Login")
+                            isError= true;
+    
+response.sendError(HttpServletResponse.SC_UNAUTHORIZED, "Please Login");
+    
 
                         }
                             
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.EXCEPTION, this, "processRequest()", e)
+                                    logUtil!.put(this.commonStrings!.EXCEPTION, this, "processRequest()", e);
+    
 
                                     }
                                 
-isError= true
-response.sendError(HttpServletResponse.SC_NOT_FOUND)
+isError= true;
+    
+response.sendError(HttpServletResponse.SC_NOT_FOUND);
+    
 }
 
          finally {
@@ -206,12 +231,15 @@ response.sendError(HttpServletResponse.SC_NOT_FOUND)
                         if(!isError)
                         
                                     {
-                                    StreamUtil.getInstance()!.close(response.getOutputStream())
+                                    StreamUtil.getInstance()!.close(response.getOutputStream());
+    
 
                                     }
                                 
 
-                        if(!StreamUtil.getInstance()!.close(inputStream))
+                        if(!StreamUtil.getInstance()!.close(inputStream);
+
+                        )
                         
                                     {
                                     
@@ -233,26 +261,32 @@ var filePath = filePath
             ;
         
         
-
+;
+    
 
         try {
             
-    var fileItem: FileItem = this.requestHashMap!.get(FileUploadData.getInstance()!.FILE_DATA) as FileItem;
-        
-        
+    var fileItem: FileItem = this.requestHashMap!.get(FileUploadData.getInstance()!.FILE_DATA);
 
+                         as FileItem;
+        
+        
+;
+    
 
                         if(fileItem != 
                                     null
                                  && fileItem!.getSize() > 1)
                         
                                     {
-                                    this.fileName= HttpRequestUtil.getInstance()!.generateFileName(fileItem!.getName())
+                                    this.fileName= HttpRequestUtil.getInstance()!.generateFileName(fileItem!.getName());
+    
 
                         if(filePath!.endsWith("/") || filePath!.endsWith("\\"))
                         
                                     {
-                                    filePath= filePath +this.fileName
+                                    filePath= filePath +this.fileName;
+    
 
                                     }
                                 
@@ -260,7 +294,8 @@ var filePath = filePath
     var file: AbFile = new AbFile(URLGLOBALS.getWebappPath() +filePath);
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
                         
@@ -269,32 +304,44 @@ var filePath = filePath
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("Uploaded File: ")
-stringBuffer!.append(this.fileName)
-stringBuffer!.append(" New File: ")
-stringBuffer!.append(file.getPath())
-logUtil!.put(stringBuffer!.toString(), this, "saveFile()")
+;
+    
+stringBuffer!.append("Uploaded File: ");
+    
+stringBuffer!.append(this.fileName);
+    
+stringBuffer!.append(" New File: ");
+    
+stringBuffer!.append(file.getPath());
+    
+logUtil!.put(stringBuffer!.toString(), this, "saveFile()");
+    
 
                                     }
                                 
-HttpFileUploadUtil.log(fileItem)
+HttpFileUploadUtil.log(fileItem);
+    
 
-    var byteArray: ByteArray = fileItem!.get()!;
+    var byteArray: number[] = fileItem!.get()!;
         
         
-
+;
+    
 
                         if(file.isFile())
                         
                                     {
-                                    file.delete()
-file.createNewFile()
+                                    file.delete();
+    
+file.createNewFile();
+    
 
                                     }
                                 
-fileOutputStream= AbFileOutputStream(file)
-fileOutputStream!.write(byteArray)
+fileOutputStream= AbFileOutputStream(file);
+    
+fileOutputStream!.write(byteArray);
+    
 
                                     }
                                 
@@ -306,7 +353,8 @@ fileOutputStream!.write(byteArray)
                                 )
                         
                                     {
-                                    fileOutputStream!.close()
+                                    fileOutputStream!.close();
+    
 
                                     }
                                 
@@ -321,7 +369,8 @@ fileOutputStream!.write(byteArray)
     doGet(request: HttpServletRequest, response: HttpServletResponse){
 var request = request
 var response = response
-processRequest(request, response)
+processRequest(request, response);
+    
 }
 
 
@@ -330,7 +379,8 @@ processRequest(request, response)
     doPost(request: HttpServletRequest, response: HttpServletResponse){
 var request = request
 var response = response
-processRequest(request, response)
+processRequest(request, response);
+    
 }
 
 

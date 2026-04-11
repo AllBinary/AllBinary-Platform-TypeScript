@@ -28,7 +28,8 @@ export class JvmStatistics
 public constructor (){
 
             super();
-            runtime= Runtime.getRuntime()
+            runtime= Runtime.getRuntime();
+    
 }
 
 
@@ -38,6 +39,8 @@ public constructor (){
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return runtime.freeMemory();
+
+                        ;
     
 }
 
@@ -68,6 +71,8 @@ public constructor (){
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return runtime.maxMemory();
+
+                        ;
     
 }
 
@@ -98,6 +103,8 @@ public constructor (){
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return runtime.totalMemory();
+
+                        ;
     
 }
 
@@ -218,6 +225,8 @@ public constructor (){
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getFreeMemoryBytesLong()!.toString();
+
+                        ;
     
 }
 
@@ -228,6 +237,8 @@ public constructor (){
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getFreeMemoryKilobytesLong()!.toString();
+
+                        ;
     
 }
 
@@ -238,6 +249,8 @@ public constructor (){
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getFreeMemoryMegabytesLong()!.toString();
+
+                        ;
     
 }
 
@@ -248,6 +261,8 @@ public constructor (){
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getMaxMemoryBytesLong()!.toString();
+
+                        ;
     
 }
 
@@ -258,6 +273,8 @@ public constructor (){
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getMaxMemoryKilobytesLong()!.toString();
+
+                        ;
     
 }
 
@@ -268,6 +285,8 @@ public constructor (){
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getMaxMemoryMegabytesLong()!.toString();
+
+                        ;
     
 }
 
@@ -278,6 +297,8 @@ public constructor (){
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getTotalMemoryBytesLong()!.toString();
+
+                        ;
     
 }
 
@@ -288,6 +309,8 @@ public constructor (){
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getTotalMemoryKilobytesLong()!.toString();
+
+                        ;
     
 }
 
@@ -298,6 +321,8 @@ public constructor (){
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getTotalMemoryMegabytesLong()!.toString();
+
+                        ;
     
 }
 
@@ -308,6 +333,8 @@ public constructor (){
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return Thread.activeCount();
+
+                        ;
     
 }
 
@@ -328,12 +355,15 @@ public constructor (){
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getNumberOfThreadsLong()!.toString();
+
+                        ;
     
 }
 
 
     public collectGarbage(){
-runtime.gc()
+runtime.gc();
+    
 }
 
 

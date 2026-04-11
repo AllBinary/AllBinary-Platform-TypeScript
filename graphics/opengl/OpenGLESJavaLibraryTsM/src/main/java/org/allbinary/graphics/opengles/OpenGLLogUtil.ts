@@ -52,7 +52,8 @@ export class OpenGLLogUtil
     var error: number = gl.glGetError()!;
         
         
-
+;
+    
 
                         if(error != GL10.GL_NO_ERROR)
                         
@@ -61,21 +62,28 @@ export class OpenGLLogUtil
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(OpenGLStrings.getInstance()!.GL_ERROR_LABEL)
-stringBuffer!.appendint(error)
+;
+    
+stringBuffer!.append(OpenGLStrings.getInstance()!.GL_ERROR_LABEL);
+    
+stringBuffer!.appendint(error);
+    
 
                         if(error == 1281)
                         
                                     {
-                                    stringBuffer!.append(MAX_TEXTURE)
+                                    stringBuffer!.append(MAX_TEXTURE);
+    
 
-    var maxTextureSize: IntArray = IntArray(1);
+    var maxTextureSize: number[] = new Array(1);
         
         
-
-gl.glGetIntegerv(GL10.GL_MAX_TEXTURE_SIZE, maxTextureSize, 0)
-stringBuffer!.appendint(maxTextureSize[0]!)
+;
+    
+gl.glGetIntegerv(GL10.GL_MAX_TEXTURE_SIZE, maxTextureSize, 0);
+    
+stringBuffer!.appendint(maxTextureSize[0]!);
+    
 
                                     }
                                 
@@ -83,12 +91,14 @@ stringBuffer!.appendint(maxTextureSize[0]!)
                         if(error == 1280)
                         
                                     {
-                                    PreLogUtil.put(stringBuffer!.toString(), this, OpenGLStrings.getInstance()!.SET)
+                                    PreLogUtil.put(stringBuffer!.toString(), this, OpenGLStrings.getInstance()!.SET);
+    
 
                                     }
                                 
                         else {
-                            ForcedLogUtil.log(stringBuffer!.toString(), this)
+                            ForcedLogUtil.log(stringBuffer!.toString(), this);
+    
 
                         }
                             
@@ -113,7 +123,8 @@ stringBuffer!.appendint(maxTextureSize[0]!)
     var error: number = gl.glGetError()!;
         
         
-
+;
+    
 
                         if(error != GL10.GL_NO_ERROR)
                         
@@ -122,27 +133,37 @@ stringBuffer!.appendint(maxTextureSize[0]!)
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(OpenGLStrings.getInstance()!.GL_ERROR_LABEL)
-stringBuffer!.appendint(error)
+;
+    
+stringBuffer!.append(OpenGLStrings.getInstance()!.GL_ERROR_LABEL);
+    
+stringBuffer!.appendint(error);
+    
 
                         if(error == 1281)
                         
                                     {
-                                    stringBuffer!.append(MAX_TEXTURE)
+                                    stringBuffer!.append(MAX_TEXTURE);
+    
 
-    var maxTextureSize: IntArray = IntArray(1);
+    var maxTextureSize: number[] = new Array(1);
         
         
-
-gl.glGetIntegerv(GL10.GL_MAX_TEXTURE_SIZE, maxTextureSize, 0)
-stringBuffer!.appendint(maxTextureSize[0]!)
+;
+    
+gl.glGetIntegerv(GL10.GL_MAX_TEXTURE_SIZE, maxTextureSize, 0);
+    
+stringBuffer!.appendint(maxTextureSize[0]!);
+    
 
                                     }
                                 
-stringBuffer!.append(IMAGE)
-stringBuffer!.append(image.toString())
-PreLogUtil.put(stringBuffer!.toString(), this, LOG_ERROR)
+stringBuffer!.append(IMAGE);
+    
+stringBuffer!.append(image.toString());
+    
+PreLogUtil.put(stringBuffer!.toString(), this, LOG_ERROR);
+    
 
                                     }
                                 

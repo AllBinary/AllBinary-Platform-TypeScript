@@ -502,7 +502,7 @@ interface GL11 extends javax.microedition.khronos.opengles.GL10 {
 
     glBufferSubData(target: number, offset: number, size: number, data: java.nio.Buffer)
 
-    glClipPlanef(plane: number, equation: FloatArray, offset: number)
+    glClipPlanef(plane: number, equation: number[], offset: number)
 
     glClipPlanef(plane: number, equation: java.nio.FloatBuffer)
 
@@ -510,45 +510,45 @@ interface GL11 extends javax.microedition.khronos.opengles.GL10 {
 
     glColorPointer(size: number, type: number, stride: number, offset: number)
 
-    glDeleteBuffers(n: number, buffers: IntArray, offset: number)
+    glDeleteBuffers(n: number, buffers: number[], offset: number)
 
     glDeleteBuffers(n: number, buffers: java.nio.IntBuffer)
 
     glDrawElements(mode: number, count: number, type: number, offset: number)
 
-    glGenBuffers(n: number, buffers: IntArray, offset: number)
+    glGenBuffers(n: number, buffers: number[], offset: number)
 
     glGenBuffers(n: number, buffers: java.nio.IntBuffer)
 
-    glGetBufferParameteriv(target: number, pname: number, params: IntArray, offset: number)
+    glGetBufferParameteriv(target: number, pname: number, params: number[], offset: number)
 
     glGetBufferParameteriv(target: number, pname: number, params: java.nio.IntBuffer)
 
-    glGetClipPlanef(pname: number, eqn: FloatArray, offset: number)
+    glGetClipPlanef(pname: number, eqn: number[], offset: number)
 
     glGetClipPlanef(pname: number, eqn: java.nio.FloatBuffer)
 
-    glGetFloatv(pname: number, params: FloatArray, offset: number)
+    glGetFloatv(pname: number, params: number[], offset: number)
 
     glGetFloatv(pname: number, params: java.nio.FloatBuffer)
 
-    glGetLightfv(light: number, pname: number, params: FloatArray, offset: number)
+    glGetLightfv(light: number, pname: number, params: number[], offset: number)
 
     glGetLightfv(light: number, pname: number, params: java.nio.FloatBuffer)
 
-    glGetMaterialfv(face: number, pname: number, params: FloatArray, offset: number)
+    glGetMaterialfv(face: number, pname: number, params: number[], offset: number)
 
     glGetMaterialfv(face: number, pname: number, params: java.nio.FloatBuffer)
 
-    glGetTexEnviv(env: number, pname: number, params: IntArray, offset: number)
+    glGetTexEnviv(env: number, pname: number, params: number[], offset: number)
 
     glGetTexEnviv(env: number, pname: number, params: java.nio.IntBuffer)
 
-    glGetTexParameterfv(target: number, pname: number, params: FloatArray, offset: number)
+    glGetTexParameterfv(target: number, pname: number, params: number[], offset: number)
 
     glGetTexParameterfv(target: number, pname: number, params: java.nio.FloatBuffer)
 
-    glGetTexParameteriv(target: number, pname: number, params: IntArray, offset: number)
+    glGetTexParameteriv(target: number, pname: number, params: number[], offset: number)
 
     glGetTexParameteriv(target: number, pname: number, params: java.nio.IntBuffer)
 
@@ -562,7 +562,7 @@ interface GL11 extends javax.microedition.khronos.opengles.GL10 {
 
     glPointParameterf(pname: number, param: number)
 
-    glPointParameterfv(pname: number, params: FloatArray, offset: number)
+    glPointParameterfv(pname: number, params: number[], offset: number)
 
     glPointParameterfv(pname: number, params: java.nio.FloatBuffer)
 
@@ -570,17 +570,17 @@ interface GL11 extends javax.microedition.khronos.opengles.GL10 {
 
     glTexEnvi(target: number, pname: number, param: number)
 
-    glTexEnviv(target: number, pname: number, params: IntArray, offset: number)
+    glTexEnviv(target: number, pname: number, params: number[], offset: number)
 
     glTexEnviv(target: number, pname: number, params: java.nio.IntBuffer)
 
-    glTexParameterfv(target: number, pname: number, params: FloatArray, offset: number)
+    glTexParameterfv(target: number, pname: number, params: number[], offset: number)
 
     glTexParameterfv(target: number, pname: number, params: java.nio.FloatBuffer)
 
     glTexParameteri(target: number, pname: number, param: number)
 
-    glTexParameteriv(target: number, pname: number, params: IntArray, offset: number)
+    glTexParameteriv(target: number, pname: number, params: number[], offset: number)
 
     glTexParameteriv(target: number, pname: number, params: java.nio.IntBuffer)
 

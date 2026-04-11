@@ -218,12 +218,18 @@ public constructor (remoteInfo: RemoteInfo, parentLayer: PathFindingLayerInterfa
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setVisible(false)
-this.setWaypointBehavior(WaypointBehaviorBase())
-this.shakeListener= ShakeAnimationListenerFactory.getInstance()
-this.vibration= AllBinaryVibration.getInstance()
-this.duration= GameConfigurationCentral.getInstance()!.VIBRATION.getValue()!.toInt() *100
-this.setParentLayer(parentLayer)
+this.setVisible(false);
+    
+this.setWaypointBehavior(WaypointBehaviorBase());
+    
+this.shakeListener= ShakeAnimationListenerFactory.getInstance();
+    
+this.vibration= AllBinaryVibration.getInstance();
+    
+this.duration= GameConfigurationCentral.getInstance()!.VIBRATION.getValue()!.toInt() *100;
+    
+this.setParentLayer(parentLayer);
+    
 }
 
 public constructor ()                        
@@ -235,11 +241,16 @@ public constructor ()
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setWaypointBehavior(WaypointBehaviorBase())
-this.shakeListener= NoShakeAnimationListener.NO_SHAKE_ANIMATION_LISTENER
-this.vibration= AllBinaryNoVibration.NO_VIBRATION
-this.duration= 0
-this.setParentLayer(NullPathFindingLayer.NULL_PATH_FINDING_LAYER)
+this.setWaypointBehavior(WaypointBehaviorBase());
+    
+this.shakeListener= NoShakeAnimationListener.NO_SHAKE_ANIMATION_LISTENER;
+    
+this.vibration= AllBinaryNoVibration.NO_VIBRATION;
+    
+this.duration= 0;
+    
+this.setParentLayer(NullPathFindingLayer.NULL_PATH_FINDING_LAYER);
+    
 }
 
 
@@ -247,8 +258,10 @@ this.setParentLayer(NullPathFindingLayer.NULL_PATH_FINDING_LAYER)
             
     public updateWaypointBehavior(geographicMapInterface: BasicGeographicMap){
     //var geographicMapInterface = geographicMapInterface
-super.updateWaypointBehavior(geographicMapInterface)
-this.getWaypointBehavior()!.getWaypoint()!.setAllBinaryGameLayerManager(this.allBinaryGameLayerManagerP)
+super.updateWaypointBehavior(geographicMapInterface);
+    
+this.getWaypointBehavior()!.getWaypoint()!.setAllBinaryGameLayerManager(this.allBinaryGameLayerManagerP);
+    
 }
 
 
@@ -258,17 +271,20 @@ var rtsPlayerLayerInterface = rtsPlayerLayerInterface
     var advancedRTSPlayerLayerInterface: AdvancedRTSPlayerLayerInterface = rtsPlayerLayerInterface as AdvancedRTSPlayerLayerInterface;
         
         
-
+;
+    
 
                         if(advancedRTSPlayerLayerInterface!.isLocalPlayer() || advancedRTSPlayerLayerInterface!.getGameType() == GameTypeFactory.getInstance()!.BOT)
                         
                                     {
-                                    this.setVisible(true)
+                                    this.setVisible(true);
+    
 
                                     }
                                 
                         else {
-                            this.setVisible(false)
+                            this.setVisible(false);
+    
 
                         }
                             
@@ -279,9 +295,12 @@ var rtsPlayerLayerInterface = rtsPlayerLayerInterface
             
     public construct(rtsPlayerLayerInterface: RTSPlayerLayerInterface){
 var rtsPlayerLayerInterface = rtsPlayerLayerInterface
-super.construct(rtsPlayerLayerInterface)
-this.initVisibility(rtsPlayerLayerInterface)
-BuildingEventHandler.getInstance()!.addListener(this.getWaypointBehavior()!.getWaypoint())
+super.construct(rtsPlayerLayerInterface);
+    
+this.initVisibility(rtsPlayerLayerInterface);
+    
+BuildingEventHandler.getInstance()!.addListener(this.getWaypointBehavior()!.getWaypoint());
+    
 }
 
 
@@ -289,15 +308,20 @@ BuildingEventHandler.getInstance()!.addListener(this.getWaypointBehavior()!.getW
             
     public setDestroyed(destroyed: boolean){
 var destroyed = destroyed
-super.setDestroyed(destroyed)
+super.setDestroyed(destroyed);
+    
 
                         if(this.isDestroyed())
                         
                                     {
-                                    BuildingEventHandler.getInstance()!.removeListener(this.getWaypointBehavior()!.getWaypoint())
-BuildingEventHandler.getInstance()!.removeListener(this)
-DestroyedEventHandler.getInstance()!.addListener(this)
-RTSLayerUtil.getInstance()!.destroyAndClear(this.getWaypointBehavior()!.getOwnedWaypointList())
+                                    BuildingEventHandler.getInstance()!.removeListener(this.getWaypointBehavior()!.getWaypoint());
+    
+BuildingEventHandler.getInstance()!.removeListener(this);
+    
+DestroyedEventHandler.getInstance()!.addListener(this);
+    
+RTSLayerUtil.getInstance()!.destroyAndClear(this.getWaypointBehavior()!.getOwnedWaypointList());
+    
 
                                     }
                                 
@@ -316,7 +340,8 @@ RTSLayerUtil.getInstance()!.destroyAndClear(this.getWaypointBehavior()!.getOwned
 
     public setParentLayer(parentLayer: PathFindingLayerInterface){
 var parentLayer = parentLayer
-this.parentLayer= parentLayer
+this.parentLayer= parentLayer;
+    
 }
 
 
@@ -332,7 +357,8 @@ this.parentLayer= parentLayer
 
     setWaypointBehavior(unitWaypointHelper: WaypointBehaviorBase){
 var unitWaypointHelper = unitWaypointHelper
-this.waypointBehaviorBase= unitWaypointHelper
+this.waypointBehaviorBase= unitWaypointHelper;
+    
 }
 
 
@@ -375,7 +401,8 @@ this.waypointBehaviorBase= unitWaypointHelper
     var parentAdvancedRTSGameLayer: AdvancedRTSGameLayer = this.parentLayer as AdvancedRTSGameLayer;
         
         
-
+;
+    
 
                         if(parentAdvancedRTSGameLayer!.getType() != UnitLayer.getStaticType())
                         
@@ -433,38 +460,46 @@ this.waypointBehaviorBase= unitWaypointHelper
     var geographicMapCellPosition: GeographicMapCellPosition = this.getCurrentGeographicMapCellPosition()!;
         
         
-
+;
+    
 
     var buildingDirection: Direction = GeographicMapDirectionUtil.getInstance()!.getDirectionFromCellPositionToAdjacentCellPosition(geographicMapCellPosition, cellPosition)!;
         
         
-
+;
+    
 
     var angleInfo: AngleInfo = this.getRotationAnimationInterface()!.getAngleInfoP()!;
         
         
-
+;
+    
 
     var angle: number = FrameUtil.getInstance()!.adjustAngleToFrameAngle(angleInfo!.getAngle() +90)!;
         
         
-
+;
+    
 
     var gameKeyEventFactory: GameKeyEventFactory = GameKeyEventFactory.getInstance()!;
         
         
-
+;
+    
 
                         if(buildingDirection == DirectionFactory.getInstance()!.UP)
                         
                                     {
-                                    this.rtsLayer2LogHelper!.buildingAbove(this)
+                                    this.rtsLayer2LogHelper!.buildingAbove(this);
+    
 
                         if(angle > 180 && angle < 360)
                         
                                     {
-                                    this.rtsLayer2LogHelper!.buildingChaseLeft(this, angle)
-this.getGameKeyEventList()!.add(gameKeyEventFactory!.getInstance(this, Canvas.LEFT))
+                                    this.rtsLayer2LogHelper!.buildingChaseLeft(this, angle);
+    
+this.getGameKeyEventList()!.add(gameKeyEventFactory!.getInstance(this, Canvas.LEFT));
+    
 
                         if(angle <= 190)
                         
@@ -482,8 +517,10 @@ this.getGameKeyEventList()!.add(gameKeyEventFactory!.getInstance(this, Canvas.LE
                                     }
                                 
                         else {
-                            this.rtsLayer2LogHelper!.buildingChaseRight(this, angle)
-this.getGameKeyEventList()!.add(gameKeyEventFactory!.getInstance(this, Canvas.RIGHT))
+                            this.rtsLayer2LogHelper!.buildingChaseRight(this, angle);
+    
+this.getGameKeyEventList()!.add(gameKeyEventFactory!.getInstance(this, Canvas.RIGHT));
+    
 
                         if(angle >= 170)
                         
@@ -507,13 +544,16 @@ this.getGameKeyEventList()!.add(gameKeyEventFactory!.getInstance(this, Canvas.RI
                         if(buildingDirection == DirectionFactory.getInstance()!.DOWN)
                         
                                     {
-                                    this.rtsLayer2LogHelper!.buildingDown(this)
+                                    this.rtsLayer2LogHelper!.buildingDown(this);
+    
 
                         if(angle > 180 && angle < 360)
                         
                                     {
-                                    this.rtsLayer2LogHelper!.buildingChaseLeft(this, angle)
-this.getGameKeyEventList()!.add(gameKeyEventFactory!.getInstance(this, Canvas.RIGHT))
+                                    this.rtsLayer2LogHelper!.buildingChaseLeft(this, angle);
+    
+this.getGameKeyEventList()!.add(gameKeyEventFactory!.getInstance(this, Canvas.RIGHT));
+    
 
                         if(angle > 315)
                         
@@ -531,8 +571,10 @@ this.getGameKeyEventList()!.add(gameKeyEventFactory!.getInstance(this, Canvas.RI
                                     }
                                 
                         else {
-                            this.rtsLayer2LogHelper!.buildingChaseRight(this, angle)
-this.getGameKeyEventList()!.add(gameKeyEventFactory!.getInstance(this, Canvas.LEFT))
+                            this.rtsLayer2LogHelper!.buildingChaseRight(this, angle);
+    
+this.getGameKeyEventList()!.add(gameKeyEventFactory!.getInstance(this, Canvas.LEFT));
+    
 
                         if(angle < 45)
                         
@@ -556,13 +598,16 @@ this.getGameKeyEventList()!.add(gameKeyEventFactory!.getInstance(this, Canvas.LE
                         if(buildingDirection == DirectionFactory.getInstance()!.LEFT)
                         
                                     {
-                                    this.rtsLayer2LogHelper!.buildingLeft()
+                                    this.rtsLayer2LogHelper!.buildingLeft();
+    
 
                         if(angle > 90 && angle < 270)
                         
                                     {
-                                    this.rtsLayer2LogHelper!.buildingChaseDown(this, angle)
-this.getGameKeyEventList()!.add(gameKeyEventFactory!.getInstance(this, Canvas.LEFT))
+                                    this.rtsLayer2LogHelper!.buildingChaseDown(this, angle);
+    
+this.getGameKeyEventList()!.add(gameKeyEventFactory!.getInstance(this, Canvas.LEFT));
+    
 
                         if(angle < 135)
                         
@@ -580,8 +625,10 @@ this.getGameKeyEventList()!.add(gameKeyEventFactory!.getInstance(this, Canvas.LE
                                     }
                                 
                         else {
-                            this.rtsLayer2LogHelper!.buildingChaseUp(this, angle)
-this.getGameKeyEventList()!.add(gameKeyEventFactory!.getInstance(this, Canvas.RIGHT))
+                            this.rtsLayer2LogHelper!.buildingChaseUp(this, angle);
+    
+this.getGameKeyEventList()!.add(gameKeyEventFactory!.getInstance(this, Canvas.RIGHT));
+    
 
                         if(angle > 45)
                         
@@ -605,13 +652,16 @@ this.getGameKeyEventList()!.add(gameKeyEventFactory!.getInstance(this, Canvas.RI
                         if(buildingDirection == DirectionFactory.getInstance()!.RIGHT)
                         
                                     {
-                                    this.rtsLayer2LogHelper!.buildingRight()
+                                    this.rtsLayer2LogHelper!.buildingRight();
+    
 
                         if(angle > 90 && angle < 270)
                         
                                     {
-                                    this.rtsLayer2LogHelper!.buildingChaseDown(this, angle)
-this.getGameKeyEventList()!.add(gameKeyEventFactory!.getInstance(this, Canvas.RIGHT))
+                                    this.rtsLayer2LogHelper!.buildingChaseDown(this, angle);
+    
+this.getGameKeyEventList()!.add(gameKeyEventFactory!.getInstance(this, Canvas.RIGHT));
+    
 
                         if(angle > 225)
                         
@@ -629,8 +679,10 @@ this.getGameKeyEventList()!.add(gameKeyEventFactory!.getInstance(this, Canvas.RI
                                     }
                                 
                         else {
-                            this.rtsLayer2LogHelper!.buildingChaseUp(this, angle)
-this.getGameKeyEventList()!.add(gameKeyEventFactory!.getInstance(this, Canvas.LEFT))
+                            this.rtsLayer2LogHelper!.buildingChaseUp(this, angle);
+    
+this.getGameKeyEventList()!.add(gameKeyEventFactory!.getInstance(this, Canvas.LEFT));
+    
 
                         if(angle < 315 && angle > 180)
                         
@@ -676,25 +728,31 @@ this.getGameKeyEventList()!.add(gameKeyEventFactory!.getInstance(this, Canvas.LE
     var geographicMapCompositeInterface: GeographicMapCompositeInterface = this.allBinaryGameLayerManagerP as GeographicMapCompositeInterface;
         
         
-
+;
+    
 
     var geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;
         
         
-
-this.geographicMapCellPositionAreaBase!.update(geographicMapInterface)
+;
+    
+this.geographicMapCellPositionAreaBase!.update(geographicMapInterface);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.geographicMapCellPositionAreaBase!.getSurroundingGeographicMapCellPositionList();
+
+                        ;
     
 }
 
 
     setSelected(selected: boolean){
 var selected = selected
-super.setSelected(selected)
+super.setSelected(selected);
+    
 
                         if(this.debug)
                         
@@ -703,16 +761,22 @@ super.setSelected(selected)
                         if(selected)
                         
                                     {
-                                    this.waypointLogHelperP= WaypointSelectedLogHelper.getInstance()
-this.waypoint2LogHelperP= Waypoint2SelectedLogHelper.getInstance()
-this.waypointRunnableLogHelperP= WaypointRunnableSelectedLogHelper.getInstance()
+                                    this.waypointLogHelperP= WaypointSelectedLogHelper.getInstance();
+    
+this.waypoint2LogHelperP= Waypoint2SelectedLogHelper.getInstance();
+    
+this.waypointRunnableLogHelperP= WaypointRunnableSelectedLogHelper.getInstance();
+    
 
                                     }
                                 
                         else {
-                            this.waypointLogHelperP= WaypointLogHelper.getInstance()
-this.waypoint2LogHelperP= Waypoint2LogHelper.getInstance()
-this.waypointRunnableLogHelperP= WaypointRunnableLogHelper.getInstance()
+                            this.waypointLogHelperP= WaypointLogHelper.getInstance();
+    
+this.waypoint2LogHelperP= Waypoint2LogHelper.getInstance();
+    
+this.waypointRunnableLogHelperP= WaypointRunnableLogHelper.getInstance();
+    
 
                         }
                             
@@ -730,24 +794,33 @@ var destroyedEvent = destroyedEvent
     var layerInterface: AllBinaryLayer = destroyedEvent!.getLayerInterface()!;
         
         
-
+;
+    
 
                         if(layerInterface == this)
                         
                                     {
-                                    DestroyedEventHandler.getInstance()!.removeListener(this)
+                                    DestroyedEventHandler.getInstance()!.removeListener(this);
+    
 
-    var waypoint: WaypointBase = this.getWaypointBehavior()!.getWaypoint() as WaypointBase;
+    var waypoint: WaypointBase = this.getWaypointBehavior()!.getWaypoint();
+
+                         as WaypointBase;
         
         
-
-waypoint.reset()
+;
+    
+waypoint.reset();
+    
 
                                     }
                                 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "onDestroyed", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "onDestroyed", e);
+    
 }
 
 }

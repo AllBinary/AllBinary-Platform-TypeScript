@@ -67,7 +67,7 @@ export class InputAutomationModuleFactoryFactory
         
         
 
-    private hashMap: HashMap<Any, Any>
+    private hashMap: HashMap<any, any>
 
     private defaultListModelHelper: DefaultListModelHelper
 
@@ -76,36 +76,49 @@ public constructor (helpSetListenerInterface: HelpSetListener){
 
             super();
                 //var helpSetListenerInterface = helpSetListenerInterface
-this.helpSetListenerInterface= helpSetListenerInterface
-this.defaultListModelHelper= DefaultListModelHelper()
-this.hashMap= HashMap<Any, Any>()
+this.helpSetListenerInterface= helpSetListenerInterface;
+    
+this.defaultListModelHelper= DefaultListModelHelper();
+    
+this.hashMap= HashMap<any, any>();
+    
 
     var inputAutomationModuleConfigurations: InputAutomationModuleConfigurations = InputAutomationModuleConfigurationsSingletonFactory.getInstance()!;
         
         
-
+;
+    
 
     var collection: Collection = inputAutomationModuleConfigurations!.getHashMap()!.values()!;
         
         
-
+;
+    
 
     var iterator: Iterator = collection.iterator()!;
         
         
-
+;
+    
 
     var inputAutomationModuleConfiguration: InputAutomationModuleConfiguration
-
+;
+    
 
         while(iterator.hasNext())
         {
-inputAutomationModuleConfiguration= iterator.next() as InputAutomationModuleConfiguration
-this.add(inputAutomationModuleConfiguration)
+inputAutomationModuleConfiguration= iterator.next();
+
+                         as InputAutomationModuleConfiguration;
+    
+this.add(inputAutomationModuleConfiguration);
+    
 }
 
-this.defaultListModelHelper!.initDefaultModelList()
-logUtil!.put("Loaded " +this.hashMap!.size +"/" +this.defaultListModelHelper!.getListModel()!.getSize() +" Input Automation Modules", this, "Contructor")
+this.defaultListModelHelper!.initDefaultModelList();
+    
+logUtil!.put("Loaded " +this.hashMap!.size +"/" +this.defaultListModelHelper!.getListModel()!.getSize() +" Input Automation Modules", this, "Contructor");
+    
 }
 
 
@@ -115,24 +128,32 @@ logUtil!.put("Loaded " +this.hashMap!.size +"/" +this.defaultListModelHelper!.ge
     var inputAutomationModuleInterface: InputAutomationModuleFactoryInterface = inputAutomationModuleConfiguration!.getInputAutomationModuleInterface()!;
         
         
-
-this.hashMap!.put(inputAutomationModuleConfiguration!.getName(), inputAutomationModuleInterface)
-this.defaultListModelHelper!.add(inputAutomationModuleConfiguration!.getName())
+;
+    
+this.hashMap!.put(inputAutomationModuleConfiguration!.getName(), inputAutomationModuleInterface);
+    
+this.defaultListModelHelper!.add(inputAutomationModuleConfiguration!.getName());
+    
 
     var helpSet: HelpSet = inputAutomationModuleInterface!.getHelpSet()!;
         
         
+;
+    
 
+                        if(!JavaHelpSetNotifier.isNotified(helpSet);
 
-                        if(!JavaHelpSetNotifier.isNotified(helpSet))
+                        )
                         
                                     {
                                     
     var helpSetEvent: HelpSetEvent = new HelpSetEvent(this, helpSet, HelpSetEvent.HELPSET_ADDED);
         
         
-
-this.helpSetListenerInterface!.helpSetAdded(helpSetEvent)
+;
+    
+this.helpSetListenerInterface!.helpSetAdded(helpSetEvent);
+    
 
                                     }
                                 
@@ -144,7 +165,9 @@ this.helpSetListenerInterface!.helpSetAdded(helpSetEvent)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.defaultListModelHelper!.getListModel() as ListModel;
+                        return this.defaultListModelHelper!.getListModel();
+
+                         as ListModel;
     
 }
 
@@ -155,20 +178,26 @@ this.helpSetListenerInterface!.helpSetAdded(helpSetEvent)
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
+;
+    
+logUtil!.put("Getting Module: " +moduleName, this, commonStrings!.GET_INSTANCE);
+    
 
-logUtil!.put("Getting Module: " +moduleName, this, commonStrings!.GET_INSTANCE)
+    var inputAutomationModuleFactoryInterface: InputAutomationModuleFactoryInterface = this.hashMap!.get(moduleName as Object);
 
-    var inputAutomationModuleFactoryInterface: InputAutomationModuleFactoryInterface = this.hashMap!.get(moduleName as Object) as InputAutomationModuleFactoryInterface;
+                         as InputAutomationModuleFactoryInterface;
         
         
-
+;
+    
 
                         if(inputAutomationModuleFactoryInterface == 
                                     null
                                 )
                         
                                     {
-                                    logUtil!.put("Module: " +moduleName +" was null", this, commonStrings!.GET_INSTANCE)
+                                    logUtil!.put("Module: " +moduleName +" was null", this, commonStrings!.GET_INSTANCE);
+    
 
                                     }
                                 

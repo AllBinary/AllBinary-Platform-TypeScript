@@ -93,12 +93,14 @@ public constructor (image: Image, animationBehaviorFactory: AnimationBehaviorFac
     var scaledImage: Image = animationFactoryImageScaleUtil!.createImage(this.getImage(), this.animationFactoryInitializationVisitor!.width, this.animationFactoryInitializationVisitor!.height, this.scaleProperties!.scaleWidth, this.scaleProperties!.scaleHeight)!;
         
         
-
+;
+    
 
                         if(this.animationFactoryInitializationVisitor!.dx != 0 || this.animationFactoryInitializationVisitor!.dy != 0)
                         
                                     {
-                                    animationFactoryImageScaleUtil!.processAdjust(this)
+                                    animationFactoryImageScaleUtil!.processAdjust(this);
+    
 
 
 

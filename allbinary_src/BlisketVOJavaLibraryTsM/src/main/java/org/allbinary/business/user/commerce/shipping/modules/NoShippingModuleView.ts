@@ -96,22 +96,28 @@ var document = document
     var shippingMethodNode: Node = document.createElement(ShippingMethodData.NAME)!;
         
         
-
-shippingMethodNode!.appendChild(ModDomHelper.createNameValueNodes(document, ShippingMethodData.NAME, this.getName()))
-shippingMethodNode!.appendChild(ModDomHelper.createNameValueNodes(document, ShippingMethodData.DESCRIPTION, this.getDescription()))
+;
+    
+shippingMethodNode!.appendChild(ModDomHelper.createNameValueNodes(document, ShippingMethodData.NAME, this.getName()));
+    
+shippingMethodNode!.appendChild(ModDomHelper.createNameValueNodes(document, ShippingMethodData.DESCRIPTION, this.getDescription()));
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return shippingMethodNode;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.EXCEPTION, this, "toXmlNode", e)
+                                    logUtil!.put(this.commonStrings!.EXCEPTION, this, "toXmlNode", e);
+    
 
                                     }
                                 

@@ -44,34 +44,41 @@ export class BasicCrypt
         
         
 
-    private readonly key: ByteArray
+    private readonly key: number[]
 public constructor (keyAsString: string){
 
             super();
             var keyAsString = keyAsString
 
-    var key: ByteArray = NullUtil.getInstance()!.NULL_BYTE_ARRAY;
+    var key: number[] = NullUtil.getInstance()!.NULL_BYTE_ARRAY;
         
         
-
+;
+    
 
         try {
-            key= keyAsString!.encodeToByteArray()
-} catch(e: Exception)
+            key= keyAsString!.encodeToByteArray();
+    
+
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-PreLogUtil.put(commonStrings!.EXCEPTION, this, "AbCrypt(alg,key)", e)
+;
+    
+PreLogUtil.putOE(commonStrings!.EXCEPTION, this, "AbCrypt(alg,key)", e);
+    
 }
 
-this.key= key
+this.key= key;
+    
 }
 
 
-    public encrypt(array: ByteArray): ByteArray{
+    public encrypt(array: number[]): number[]{
     //var array = array
 
         try {
@@ -80,10 +87,15 @@ this.key= key
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.mutilate(array);
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-PreLogUtil.put("Encrypt Failed", this, "encrypt", e)
+PreLogUtil.putOE("Encrypt Failed", this, "encrypt", e);
+    
 
 
 
@@ -95,7 +107,7 @@ PreLogUtil.put("Encrypt Failed", this, "encrypt", e)
 }
 
 
-    public decrypt(array: ByteArray): ByteArray{
+    public decrypt(array: number[]): number[]{
     //var array = array
 
         try {
@@ -104,10 +116,15 @@ PreLogUtil.put("Encrypt Failed", this, "encrypt", e)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.mutilate(array);
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-PreLogUtil.put("decrypt Failed", this, "decrypt", e)
+PreLogUtil.putOE("decrypt Failed", this, "decrypt", e);
+    
 
 
 
@@ -119,11 +136,12 @@ PreLogUtil.put("decrypt Failed", this, "decrypt", e)
 }
 
 
-    public mutilate(array: ByteArray): ByteArray{
+    public mutilate(array: number[]): number[]{
 var array = array
 
     var value: number
-
+;
+    
 
 
 
@@ -134,8 +152,10 @@ var array = array
         
 index < key.length; index++)
         {
-value= key[index]!
-array= byteUtil!.xor(array, value)
+value= key[index]!;
+    
+array= byteUtil!.xor(array, value);
+    
 }
 
 

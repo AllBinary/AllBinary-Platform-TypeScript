@@ -59,10 +59,14 @@ export class GameTickDisplayInfoSingleton
         
 
     public update(){
-this.lastWidth= displayInfoSingleton!.getLastWidth()
-this.lastHeight= displayInfoSingleton!.getLastHeight()
-this.lastHalfWidth= displayInfoSingleton!.getLastHalfWidth()
-this.lastHalfHeight= displayInfoSingleton!.getLastHalfHeight()
+this.lastWidth= displayInfoSingleton!.getLastWidth();
+    
+this.lastHeight= displayInfoSingleton!.getLastHeight();
+    
+this.lastHalfWidth= displayInfoSingleton!.getLastHalfWidth();
+    
+this.lastHalfHeight= displayInfoSingleton!.getLastHalfHeight();
+    
 }
 
 

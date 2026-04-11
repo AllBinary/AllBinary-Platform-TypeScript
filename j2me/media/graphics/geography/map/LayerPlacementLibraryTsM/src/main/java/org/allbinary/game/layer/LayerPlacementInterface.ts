@@ -18,7 +18,10 @@
 
 
 
-import { Hashtable } from "../../../../java/util/Hashtable.js";
+            import Hashtable from "@ohos.util.HashMap";
+        
+
+//import { Hashtable } from "../../../../java/util/Hashtable.js";
 
     
 
@@ -33,7 +36,7 @@ interface LayerPlacementInterface {
 
                 //@Throws(Error::class)
             
-    getInstance(): Hashtable<Any, Any>
+    getInstance(): Hashtable<any, any>
 
 }
                 

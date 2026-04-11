@@ -62,7 +62,7 @@ export class HealthHudWidget extends BasicHud
 
     max: number= 0
 
-    private xArray: IntArray
+    private xArray: number[]
 
     private readonly gameTickTimeDelayHelper: GameTickTimeDelayHelper = GameTickTimeDelayHelperFactory.getInstance()!;
         
@@ -80,13 +80,20 @@ var direction = direction
 
                             //For kotlin this is before the body of the constructor.
                     
-this.animationInterface= animationInterface
-this.healthInterface= healthInterface
-this.healthInterface!.addListener(this)
-this.healthScale= (this.healthInterface!.getMaxHealth() /6) +1
-this.onHealthChange()
-this.xArray= IntArray(30)
-this.update()
+this.animationInterface= animationInterface;
+    
+this.healthInterface= healthInterface;
+    
+this.healthInterface!.addListener(this);
+    
+this.healthScale= (this.healthInterface!.getMaxHealth() /6) +1;
+    
+this.onHealthChange();
+    
+this.xArray= new Array(30);
+    
+this.update();
+    
 }
 
 
@@ -107,7 +114,8 @@ this.update()
         
 index < this.xArray!.length; index++)
         {
-this.xArray[index]= this.getX() +(index *16)
+this.xArray[index]= this.getX() +(index *16);
+    
 }
 
 
@@ -118,8 +126,10 @@ this.xArray[index]= this.getX() +(index *16)
 
     public setX(x: number){
 var x = x
-super.setX(x)
-this.update()
+super.setX(x);
+    
+this.update();
+    
 }
 
 
@@ -140,18 +150,22 @@ this.update()
         
 
     public onHealthChange(){
-max= (this.healthInterface!.getHealth() /this.healthScale)
-timeDelayHelper= NoTimeDelayHelper.SINGLETON
+max= (this.healthInterface!.getHealth() /this.healthScale);
+    
+timeDelayHelper= NoTimeDelayHelper.SINGLETON;
+    
 
                         if(max <= 1 && this.healthInterface!.isAlive())
                         
                                     {
-                                    max= 1
+                                    max= 1;
+    
 
                         if(this.healthScale -this.healthInterface!.getHealth() > (this.healthScale *2) /3)
                         
                                     {
-                                    timeDelayHelper= this.slowBeatTimeDelayHelper
+                                    timeDelayHelper= this.slowBeatTimeDelayHelper;
+    
 
                                     }
                                 
@@ -159,12 +173,14 @@ timeDelayHelper= NoTimeDelayHelper.SINGLETON
                         if(this.healthScale -this.healthInterface!.getHealth() > this.healthScale /3)
                         
                                     {
-                                    timeDelayHelper= this.mediumBeatTimeDelayHelper
+                                    timeDelayHelper= this.mediumBeatTimeDelayHelper;
+    
 
                                     }
                                 
                         else {
-                            timeDelayHelper= this.fastBeatTimeDelayHelper
+                            timeDelayHelper= this.fastBeatTimeDelayHelper;
+    
 
                         }
                             
@@ -190,7 +206,8 @@ index < max; index++)
                         if(this.timeDelayHelper!.isTime(this.gameTickTimeDelayHelper!.startTime))
                         
                                     {
-                                    this.animationInterface!.paint(graphics, xArray[index]!, this.getY())
+                                    this.animationInterface!.paint(graphics, xArray[index]!, this.getY());
+    
 
                                     }
                                 

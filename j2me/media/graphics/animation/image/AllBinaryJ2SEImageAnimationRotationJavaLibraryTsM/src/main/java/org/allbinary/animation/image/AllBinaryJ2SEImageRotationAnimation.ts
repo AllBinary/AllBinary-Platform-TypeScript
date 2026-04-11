@@ -123,11 +123,16 @@ public constructor (originalImage: Image, image: Image, angleInfo: AngleInfo, to
 
                             //For kotlin this is before the body of the constructor.
                     
-this.realOriginalImage= originalImage
-this.originalImageArray[0]= originalImage
-this.imageToShow= image
-this.twoImages[0]= image
-this.twoImages[1]= ImageCopyUtil.getInstance()!.createImageForRotation(image)
+this.realOriginalImage= originalImage;
+    
+this.originalImageArray[0]= originalImage;
+    
+this.imageToShow= image;
+    
+this.twoImages[0]= image;
+    
+this.twoImages[1]= ImageCopyUtil.getInstance()!.createImageForRotation(image);
+    
 }
 
 
@@ -137,24 +142,29 @@ this.twoImages[1]= ImageCopyUtil.getInstance()!.createImageForRotation(image)
     var changed: boolean = false;
         
         
-
+;
+    
 
                         if(this.getBasicColorP() == 
                                     null
                                  || this.getBasicColorP()!.toInt() != basicColor!.toInt())
                         
                                     {
-                                    changed= true
+                                    changed= true;
+    
 
                                     }
                                 
-super.setBasicColorP(basicColor)
+super.setBasicColorP(basicColor);
+    
 
                         if(changed)
                         
                                     {
-                                    this.setColorProcessor= SetColorProcessor.getInstance()
-this.updateImage()
+                                    this.setColorProcessor= SetColorProcessor.getInstance();
+    
+this.updateImage();
+    
 
                                     }
                                 
@@ -167,24 +177,29 @@ this.updateImage()
     var changed: boolean = false;
         
         
-
+;
+    
 
                         if(this.getChangeBasicColor() == 
                                     null
                                  || this.getChangeBasicColor()!.toInt() != basicColor!.toInt())
                         
                                     {
-                                    changed= true
+                                    changed= true;
+    
 
                                     }
                                 
-super.changeBasicColor(basicColor)
+super.changeBasicColor(basicColor);
+    
 
                         if(changed)
                         
                                     {
-                                    this.changeColorProcessor= ChangeColorProcessor.getInstance()
-this.updateImage()
+                                    this.changeColorProcessor= ChangeColorProcessor.getInstance();
+    
+this.updateImage();
+    
 
                                     }
                                 
@@ -197,22 +212,27 @@ this.updateImage()
     var changed: boolean = false;
         
         
-
+;
+    
 
                         if(this.alphaP != alpha)
                         
                                     {
-                                    changed= true
+                                    changed= true;
+    
 
                                     }
                                 
-super.setAlpha(alpha)
+super.setAlpha(alpha);
+    
 
                         if(changed)
                         
                                     {
-                                    this.alphaProcessor= AlphaProcessor.getInstance()
-this.updateImage()
+                                    this.alphaProcessor= AlphaProcessor.getInstance();
+    
+this.updateImage();
+    
 
                                     }
                                 
@@ -222,72 +242,96 @@ this.updateImage()
     public setScale(scaleX: number, scaleY: number){
     //var scaleX = scaleX
     //var scaleY = scaleY
-this.scaleX= scaleX
-this.scaleY= scaleY
+this.scaleX= scaleX;
+    
+this.scaleY= scaleY;
+    
 
                         if(this.scaleX != this.lastScaleX || this.scaleY != this.lastScaleY)
                         
                                     {
-                                    this.scaleProcessor!.update(this.realOriginalImage, this.originalImageArray, this.twoImages, this.bufferedImageIndex, this.scaleX, this.scaleY, this.maxScaleX, this.maxScaleY)
-this.updateImage()
+                                    this.scaleProcessor!.update(this.realOriginalImage, this.originalImageArray, this.twoImages, this.bufferedImageIndex, this.scaleX, this.scaleY, this.maxScaleX, this.maxScaleY);
+    
+this.updateImage();
+    
 
                                     }
                                 
-this.lastScaleX= this.scaleX
-this.lastScaleY= this.scaleY
+this.lastScaleX= this.scaleX;
+    
+this.lastScaleY= this.scaleY;
+    
 }
 
 
     public setMaxScale(maxScaleX: number, maxScaleY: number){
     //var maxScaleX = maxScaleX
     //var maxScaleY = maxScaleY
-this.maxScaleX= maxScaleX
-this.maxScaleY= maxScaleY
-this.scaleProcessor!.update(this.realOriginalImage, this.originalImageArray, this.twoImages, this.bufferedImageIndex, this.scaleX, this.scaleY, this.maxScaleX, this.maxScaleY)
-this.updateImage()
+this.maxScaleX= maxScaleX;
+    
+this.maxScaleY= maxScaleY;
+    
+this.scaleProcessor!.update(this.realOriginalImage, this.originalImageArray, this.twoImages, this.bufferedImageIndex, this.scaleX, this.scaleY, this.maxScaleX, this.maxScaleY);
+    
+this.updateImage();
+    
 }
 
 
     public nextRotation(){
-super.nextRotation()
-this.updateImage()
+super.nextRotation();
+    
+this.updateImage();
+    
 }
 
 
     public previousRotation(){
-super.previousRotation()
-this.updateImage()
+super.previousRotation();
+    
+this.updateImage();
+    
 }
 
 
     updateImage(){
-this.imageRotationUtil!.rotateImage(this.originalImageArray[0]!, this.twoImages[this.bufferedImageIndex]!, this.angleInfo!.getAngle() +90)
-this.alphaProcessor!.update(imageModifierUtil, NullCanvas.NULL_IMAGE, this.twoImages[this.bufferedImageIndex]!, 0, this.alphaP)
-this.setColorProcessor!.update(imageModifierUtil, NullCanvas.NULL_IMAGE, this.twoImages[this.bufferedImageIndex]!, 0, this.basicColor)
-this.changeColorProcessor!.update(imageModifierUtil, NullCanvas.NULL_IMAGE, this.twoImages[this.bufferedImageIndex]!, 0, this.changeBasicColorP)
-this.swap()
+this.imageRotationUtil!.rotateImage(this.originalImageArray[0]!, this.twoImages[this.bufferedImageIndex]!, this.angleInfo!.getAngle() +90);
+    
+this.alphaProcessor!.update(imageModifierUtil, NullCanvas.NULL_IMAGE, this.twoImages[this.bufferedImageIndex]!, 0, this.alphaP);
+    
+this.setColorProcessor!.update(imageModifierUtil, NullCanvas.NULL_IMAGE, this.twoImages[this.bufferedImageIndex]!, 0, this.basicColor);
+    
+this.changeColorProcessor!.update(imageModifierUtil, NullCanvas.NULL_IMAGE, this.twoImages[this.bufferedImageIndex]!, 0, this.changeBasicColorP);
+    
+this.swap();
+    
 }
 
 
     public setFrame(index: number){
     //var index = index
-super.setFrame(index)
-this.updateImage()
+super.setFrame(index);
+    
+this.updateImage();
+    
 }
 
 
     public swap(){
-this.imageToShow= this.twoImages[this.bufferedImageIndex]!
+this.imageToShow= this.twoImages[this.bufferedImageIndex]!;
+    
 
                         if(this.bufferedImageIndex == 0)
                         
                                     {
-                                    this.bufferedImageIndex= 1
+                                    this.bufferedImageIndex= 1;
+    
 
                                     }
                                 
                         else {
-                            this.bufferedImageIndex= 0
+                            this.bufferedImageIndex= 0;
+    
 
                         }
                             
@@ -298,23 +342,27 @@ this.imageToShow= this.twoImages[this.bufferedImageIndex]!
     //var graphics = graphics
     //var x = x
     //var y = y
-graphics.drawImage(this.imageToShow, x, y, anchor)
+graphics.drawImage(this.imageToShow, x, y, anchor);
+    
 }
 
 
     public close(){
-super.close()
+super.close();
+    
 
     var disposalUtil: DisposalUtil = DisposalUtil.getInstance()!;
         
         
-
+;
+    
 
     var size2: number = this.twoImages!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -325,7 +373,8 @@ super.close()
         
 index < size2; index++)
         {
-disposalUtil!.dispose(this.twoImages[index]!)
+disposalUtil!.dispose(this.twoImages[index]!);
+    
 }
 
 
@@ -333,7 +382,8 @@ disposalUtil!.dispose(this.twoImages[index]!)
                 ;
         
         
-
+;
+    
 
 
 
@@ -344,29 +394,35 @@ disposalUtil!.dispose(this.twoImages[index]!)
         
 index < size; index++)
         {
-disposalUtil!.dispose(this.originalImageArray[index]!)
+disposalUtil!.dispose(this.originalImageArray[index]!);
+    
 }
 
-disposalUtil!.dispose(this.realOriginalImage)
-disposalUtil!.dispose(this.imageToShow)
+disposalUtil!.dispose(this.realOriginalImage);
+    
+disposalUtil!.dispose(this.imageToShow);
+    
 }
 
 
                 //@Throws(Error::class)
             
     finalize(){
-super.finalize()
+super.finalize();
+    
 
     var disposalUtil: DisposalUtil = DisposalUtil.getInstance()!;
         
         
-
+;
+    
 
     var size2: number = this.twoImages!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -377,7 +433,8 @@ super.finalize()
         
 index < size2; index++)
         {
-disposalUtil!.dispose(this.twoImages[index]!)
+disposalUtil!.dispose(this.twoImages[index]!);
+    
 }
 
 
@@ -385,7 +442,8 @@ disposalUtil!.dispose(this.twoImages[index]!)
                 ;
         
         
-
+;
+    
 
 
 
@@ -396,11 +454,14 @@ disposalUtil!.dispose(this.twoImages[index]!)
         
 index < size; index++)
         {
-disposalUtil!.dispose(this.originalImageArray[index]!)
+disposalUtil!.dispose(this.originalImageArray[index]!);
+    
 }
 
-disposalUtil!.dispose(this.realOriginalImage)
-disposalUtil!.dispose(this.imageToShow)
+disposalUtil!.dispose(this.realOriginalImage);
+    
+disposalUtil!.dispose(this.imageToShow);
+    
 }
 
 

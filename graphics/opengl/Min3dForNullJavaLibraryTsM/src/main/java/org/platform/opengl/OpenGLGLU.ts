@@ -45,7 +45,7 @@ export class OpenGLGLU
 }
 
 
-    public gluProject(gl: GL10, objX: number, objY: number, objZ: number, model: FloatArray, modelOffset: number, project: FloatArray, projectOffset: number, view: IntArray, viewOffset: number, win: FloatArray, winOffset: number): number{
+    public gluProject(gl: GL10, objX: number, objY: number, objZ: number, model: number[], modelOffset: number, project: number[], projectOffset: number, view: number[], viewOffset: number, win: number[], winOffset: number): number{
     //var gl = gl
 var objX = objX
 var objY = objY
@@ -65,7 +65,7 @@ var winOffset = winOffset
 }
 
 
-    public gluUnProject(gl: GL10, winX: number, winY: number, winZ: number, model: FloatArray, modelOffset: number, project: FloatArray, projectOffset: number, view: IntArray, viewOffset: number, obj: FloatArray, objOffset: number): number{
+    public gluUnProject(gl: GL10, winX: number, winY: number, winZ: number, model: number[], modelOffset: number, project: number[], projectOffset: number, view: number[], viewOffset: number, obj: number[], objOffset: number): number{
     //var gl = gl
     //var winX = winX
     //var winY = winY

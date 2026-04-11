@@ -95,8 +95,10 @@ public constructor (vectorInfo: VectorInfo, basicColor: BasicColor, dx: number, 
 
                             //For kotlin this is before the body of the constructor.
                     
-this.animationFactoryInitializationVisitor!.dx= dx
-this.animationFactoryInitializationVisitor!.dy= dy
+this.animationFactoryInitializationVisitor!.dx= dx;
+    
+this.animationFactoryInitializationVisitor!.dy= dy;
+    
 }
 
 public constructor (vectorInfo: VectorInfo, basicColor: BasicColor)                        
@@ -124,7 +126,8 @@ public constructor (vectorInfo: VectorInfo, basicColor: BasicColor, animationBeh
 
                             //For kotlin this is before the body of the constructor.
                     
-this.init()
+this.init();
+    
 }
 
 
@@ -135,9 +138,12 @@ this.init()
     var angleFactory: AngleFactory = AngleFactory.getInstance()!;
         
         
-
-this.angleIncrement= angleFactory!.TOTAL_ANGLE /GameConfigurationCentral.getInstance()!.getGameControlFidelity()
-this.imageArray= ImageToRotationImageArrayUtil.getInstance()!.generate(this.getImage(), this.getAngleIncrement(), angleFactory!.TOTAL_ANGLE.toInt())
+;
+    
+this.angleIncrement= angleFactory!.TOTAL_ANGLE /GameConfigurationCentral.getInstance()!.getGameControlFidelity();
+    
+this.imageArray= ImageToRotationImageArrayUtil.getInstance()!.generate(this.getImage(), this.getAngleIncrement(), angleFactory!.TOTAL_ANGLE.toInt());
+    
 }
 
 
@@ -153,7 +159,9 @@ this.imageArray= ImageToRotationImageArrayUtil.getInstance()!.generate(this.getI
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return AdjustedImageArrayRotationAnimation(this.imageArray, AngleInfo.getInstance(this.getAngleIncrement().toShort()), AngleFactory.getInstance()!.TOTAL_ANGLE.toInt(), this.animationFactoryInitializationVisitor!.dx, this.animationFactoryInitializationVisitor!.dy, this.animationBehaviorFactory!.getOrCreateInstance());
+                        return AdjustedImageArrayRotationAnimation(this.imageArray, AngleInfo.getInstance(this.getAngleIncrement();
+
+                        .toShort()), AngleFactory.getInstance()!.TOTAL_ANGLE.toInt(), this.animationFactoryInitializationVisitor!.dx, this.animationFactoryInitializationVisitor!.dy, this.animationBehaviorFactory!.getOrCreateInstance());
     
 
                                     }

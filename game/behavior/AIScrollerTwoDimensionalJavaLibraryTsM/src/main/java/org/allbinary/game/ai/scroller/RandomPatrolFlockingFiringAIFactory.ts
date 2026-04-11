@@ -18,7 +18,10 @@
 
 
 
-import { Hashtable } from "../../../../../java/util/Hashtable.js";
+            import Hashtable from "@ohos.util.HashMap";
+        
+
+//import { Hashtable } from "../../../../../java/util/Hashtable.js";
 
     
 import { ArtificialIntelligenceInterface } from "../../../../../org/allbinary/ai/ArtificialIntelligenceInterface.js";
@@ -45,7 +48,7 @@ export class RandomPatrolFlockingFiringAIFactory
 
                 //@Throws(Error::class)
             
-    public getInstance(hashtable: Hashtable<Any, Any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput): ArtificialIntelligenceInterface{
+    public getInstance(hashtable: Hashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput): ArtificialIntelligenceInterface{
 var hashtable = hashtable
 var ownerLayerInterface = ownerLayerInterface
 var gameInput = gameInput
@@ -53,9 +56,12 @@ var gameInput = gameInput
     var artificialIntelligenceInterface: ArtificialIntelligenceInterface[] = new Array(2);
         
         
-
-artificialIntelligenceInterface[0]= RandomPatrolAI(hashtable, ownerLayerInterface, gameInput)
-artificialIntelligenceInterface[1]= TimedFireAI(1800, ownerLayerInterface, gameInput)
+;
+    
+artificialIntelligenceInterface[0]= RandomPatrolAI(hashtable, ownerLayerInterface, gameInput);
+    
+artificialIntelligenceInterface[1]= TimedFireAI(1800, ownerLayerInterface, gameInput);
+    
 
 
 

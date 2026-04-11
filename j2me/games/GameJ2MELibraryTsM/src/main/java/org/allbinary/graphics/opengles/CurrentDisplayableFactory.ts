@@ -162,11 +162,16 @@ export class CurrentDisplayableFactory
 private constructor (){
 
             super();
-            this.DEFAULT_CHILD_NAME_LIST.add(this.canvasStrings!.ABOUT)
-this.DEFAULT_CHILD_NAME_LIST.add(this.canvasStrings!.OPTIONS)
-this.DEFAULT_CHILD_NAME_LIST.add(GameInputMappingCanvas.NAME)
-this.DEFAULT_CHILD_NAME_LIST.add(GameInputMappingInstructionsCanvas.NAME)
-this.DEFAULT_CHILD_NAME_LIST.add(HighScoresCanvas.NAME)
+            this.DEFAULT_CHILD_NAME_LIST.add(this.canvasStrings!.ABOUT);
+    
+this.DEFAULT_CHILD_NAME_LIST.add(this.canvasStrings!.OPTIONS);
+    
+this.DEFAULT_CHILD_NAME_LIST.add(GameInputMappingCanvas.NAME);
+    
+this.DEFAULT_CHILD_NAME_LIST.add(GameInputMappingInstructionsCanvas.NAME);
+    
+this.DEFAULT_CHILD_NAME_LIST.add(HighScoresCanvas.NAME);
+    
 }
 
 
@@ -181,7 +186,8 @@ this.DEFAULT_CHILD_NAME_LIST.add(HighScoresCanvas.NAME)
                         
                                     {
                                     PreLogUtil.put(StringMaker().
-                            append("Child Displayable is already set for: ")!.append(this.stringUtil!.toString(displayable))!.toString(), this, SET_DISPLAYABLE)
+                            append("Child Displayable is already set for: ")!.append(this.stringUtil!.toString(displayable))!.toString(), this, SET_DISPLAYABLE);
+    
 
 
 
@@ -194,21 +200,26 @@ this.DEFAULT_CHILD_NAME_LIST.add(HighScoresCanvas.NAME)
 
                                     }
                                 
-this.setDisplayable(displayable)
+this.setDisplayable(displayable);
+    
 }
 
 
     public setDisplayable(displayable: Displayable){
     //var displayable = displayable
-this.displayable= displayable
-this.setOpenGlReadydisplayable(displayable)
+this.displayable= displayable;
+    
+this.setOpenGlReadydisplayable(displayable);
+    
 }
 
 
     public setOpenGlReadydisplayable(openGlReadydisplayable: Displayable){
     //var openGlReadydisplayable = openGlReadydisplayable
-this.openGlReadydisplayable= openGlReadydisplayable
-this.update()
+this.openGlReadydisplayable= openGlReadydisplayable;
+    
+this.update();
+    
 }
 
 
@@ -225,19 +236,23 @@ this.update()
     public setRunnable(runnable: GameRunnable){
     //var runnable = runnable
 PreLogUtil.put(StringMaker().
-                            append(RUNNABLE)!.append(this.stringUtil!.toString(runnable))!.toString(), this, SET_RUNNABLE)
-this.runnable= runnable
+                            append(RUNNABLE)!.append(this.stringUtil!.toString(runnable))!.toString(), this, SET_RUNNABLE);
+    
+this.runnable= runnable;
+    
 
                         if(this.usedRunnable != this.runnable)
                         
                                     {
-                                    this.update()
+                                    this.update();
+    
 
                                     }
                                 
                         else {
                             PreLogUtil.put(StringMaker().
-                            append(RUNNABLE_WAS_ALREADY_IN_USE)!.append(this.stringUtil!.toString(runnable))!.toString(), this, SET_RUNNABLE)
+                            append(RUNNABLE_WAS_ALREADY_IN_USE)!.append(this.stringUtil!.toString(runnable))!.toString(), this, SET_RUNNABLE);
+    
 
                         }
                             
@@ -246,8 +261,10 @@ this.runnable= runnable
 
     public clearRunnable(){
 PreLogUtil.put(StringMaker().
-                            append(RUNNABLE)!.append(this.stringUtil!.toString(NullRunnable.getInstance()))!.toString(), this, CLEAR_RUNNABLE)
-this.setUsedRunnable(NullWaitGameRunnable.getInstance())
+                            append(RUNNABLE)!.append(this.stringUtil!.toString(NullRunnable.getInstance()))!.toString(), this, CLEAR_RUNNABLE);
+    
+this.setUsedRunnable(NullWaitGameRunnable.getInstance());
+    
 }
 
 
@@ -263,24 +280,32 @@ this.setUsedRunnable(NullWaitGameRunnable.getInstance())
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
         
         
-
+;
+    
 
     var features: Features = Features.getInstance()!;
         
         
-
+;
+    
 
     var stringMaker: StringMaker = new StringMaker();
         
         
+;
+    
+stringMaker!.append(this.stringUtil!.toString(openGlReadydisplayable));
+    
 
-stringMaker!.append(this.stringUtil!.toString(openGlReadydisplayable))
+                        if(SWTUtil.isSWT && !features.isDefault(OpenGLFeatureFactory.getInstance()!.OPENGL);
 
-                        if(SWTUtil.isSWT && !features.isDefault(OpenGLFeatureFactory.getInstance()!.OPENGL))
+                        )
                         
                                     {
-                                    PreLogUtil.put(stringMaker!.append(commonSeps!.SPACE)!.append(SWTUtil.SWT)!.append(commonSeps!.SPACE)!.append(RUNNABLE)!.append(this.stringUtil!.toString(NullRunnable.getInstance()))!.toString(), this, commonStrings!.UPDATE)
-this.setUsedRunnable(NullWaitGameRunnable.getInstance())
+                                    PreLogUtil.put(stringMaker!.append(commonSeps!.SPACE)!.append(SWTUtil.SWT)!.append(commonSeps!.SPACE)!.append(RUNNABLE)!.append(this.stringUtil!.toString(NullRunnable.getInstance()))!.toString(), this, commonStrings!.UPDATE);
+    
+this.setUsedRunnable(NullWaitGameRunnable.getInstance());
+    
 
                                     }
                                 
@@ -288,8 +313,10 @@ this.setUsedRunnable(NullWaitGameRunnable.getInstance())
                         if(J2MEUtil.isHTML())
                         
                                     {
-                                    PreLogUtil.put(stringMaker!.append(commonSeps!.SPACE)!.append(GraphicsStrings.getInstance()!.HTML)!.append(commonSeps!.SPACE)!.append(RUNNABLE)!.append(this.stringUtil!.toString(runnable))!.toString(), this, commonStrings!.UPDATE)
-this.setUsedRunnable(runnable)
+                                    PreLogUtil.put(stringMaker!.append(commonSeps!.SPACE)!.append(GraphicsStrings.getInstance()!.HTML)!.append(commonSeps!.SPACE)!.append(RUNNABLE)!.append(this.stringUtil!.toString(runnable))!.toString(), this, commonStrings!.UPDATE);
+    
+this.setUsedRunnable(runnable);
+    
 
                                     }
                                 
@@ -297,14 +324,18 @@ this.setUsedRunnable(runnable)
                         if(openGlReadydisplayable is DemoCanvas || openGlReadydisplayable is AllBinaryGameCanvas || features.isDefault(OpenGLFeatureFactory.getInstance()!.OPENGL))
                         
                                     {
-                                    PreLogUtil.put(stringMaker!.append(commonSeps!.SPACE)!.append(OpenGLFeatureFactory.getInstance()!.OPENGL.toString())!.append(commonSeps!.SPACE)!.append(RUNNABLE)!.append(this.stringUtil!.toString(runnable))!.toString(), this, commonStrings!.UPDATE)
-this.setUsedRunnable(runnable)
+                                    PreLogUtil.put(stringMaker!.append(commonSeps!.SPACE)!.append(OpenGLFeatureFactory.getInstance()!.OPENGL.toString())!.append(commonSeps!.SPACE)!.append(RUNNABLE)!.append(this.stringUtil!.toString(runnable))!.toString(), this, commonStrings!.UPDATE);
+    
+this.setUsedRunnable(runnable);
+    
 
                                     }
                                 
                         else {
-                            PreLogUtil.put(stringMaker!.append(RUNNABLE)!.append(this.stringUtil!.toString(NullRunnable.getInstance()))!.toString(), this, commonStrings!.UPDATE)
-this.setUsedRunnable(NullWaitGameRunnable.getInstance())
+                            PreLogUtil.put(stringMaker!.append(RUNNABLE)!.append(this.stringUtil!.toString(NullRunnable.getInstance()))!.toString(), this, commonStrings!.UPDATE);
+    
+this.setUsedRunnable(NullWaitGameRunnable.getInstance());
+    
 
                         }
                             
@@ -336,8 +367,10 @@ this.setUsedRunnable(NullWaitGameRunnable.getInstance())
     public setUsedRunnable(usedRunnable: GameRunnable){
 var usedRunnable = usedRunnable
 PreLogUtil.put(StringMaker().
-                            append(RUNNABLE)!.append(this.stringUtil!.toString(runnable))!.toString(), this, SET_USED_RUNNABLE)
-this.usedRunnable= usedRunnable
+                            append(RUNNABLE)!.append(this.stringUtil!.toString(runnable))!.toString(), this, SET_USED_RUNNABLE);
+    
+this.usedRunnable= usedRunnable;
+    
 }
 
 

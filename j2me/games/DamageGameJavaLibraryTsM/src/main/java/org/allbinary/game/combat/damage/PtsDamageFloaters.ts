@@ -70,15 +70,15 @@ export class PtsDamageFloaters extends DamageFloaters {
 
     private layerInterface: AllBinaryLayer
 
-    private lastDamage: IntArray = IntArray(5);
+    private lastDamage: number[] = new Array(5);
         
         
 
-    private lastDamageString: string[][] = new Array(5) { new Array(0) };
+    private lastDamageString: string[][] = new Array(5) [0];
         
         
 
-    private lastDamageStringSizeArray: IntArray = IntArray(5);
+    private lastDamageStringSizeArray: number[] = new Array(5);
         
         
 
@@ -91,13 +91,16 @@ public constructor (layerInterface: AllBinaryLayer){
 
             super();
             var layerInterface = layerInterface
-this.primitiveLongUtil= PrimitiveLongUtil(100000)
-this.layerInterface= layerInterface
+this.primitiveLongUtil= PrimitiveLongUtil(100000);
+    
+this.layerInterface= layerInterface;
+    
 
     var CHAR_ARRAY: string[] = CharArrayFactory.getInstance()!.getZeroCharArray()!;
         
         
-
+;
+    
 
 
 
@@ -108,7 +111,8 @@ this.layerInterface= layerInterface
         
 index >= 0; index--)
         {
-this.lastDamageString[index]= CHAR_ARRAY
+this.lastDamageString[index]= CHAR_ARRAY;
+    
 }
 
 }
@@ -120,11 +124,16 @@ var damage = damage
     var index: number = this.circularIndexUtil!.getIndex()!;
         
         
-
-this.lastDamage[index]= damage
-this.lastDamageString[index]= this.primitiveLongUtil!.getCharArray(this.lastDamage[index]!)
-this.lastDamageStringSizeArray[index]= this.primitiveLongUtil!.getCurrentTotalDigits()
-this.circularIndexUtil!.next()
+;
+    
+this.lastDamage[index]= damage;
+    
+this.lastDamageString[index]= this.primitiveLongUtil!.getCharArray(this.lastDamage[index]!);
+    
+this.lastDamageStringSizeArray[index]= this.primitiveLongUtil!.getCurrentTotalDigits();
+    
+this.circularIndexUtil!.next();
+    
 }
 
 
@@ -138,17 +147,20 @@ var graphics = graphics
     var viewPosition: ViewPosition = this.layerInterface!.getViewPosition()!;
         
         
-
+;
+    
 
     var x: number = viewPosition!.getX()!;
         
         
-
+;
+    
 
     var y: number = viewPosition!.getY()!;
         
         
-
+;
+    
 
 
 
@@ -167,14 +179,19 @@ index >= 0; index--)
     var delta: number = 10 *(index +2);
         
         
-
-this.basicSetColorUtil!.setBasicColorP(graphics, basicColorArrayIndexer!.get())
-graphics.drawChars(this.lastDamageString[index]!, 0, this.lastDamageStringSizeArray[index]!, x -myRandomFactory!.getNextInt(delta), y -delta, 0)
-basicColorArrayIndexer!.next()
+;
+    
+this.basicSetColorUtil!.setBasicColorP(graphics, basicColorArrayIndexer!.get());
+    
+graphics.drawChars(this.lastDamageString[index]!, 0, this.lastDamageStringSizeArray[index]!, x -myRandomFactory!.getNextInt(delta), y -delta, 0);
+    
+basicColorArrayIndexer!.next();
+    
 
                                     }
                                 
-this.lastDamage[index]= 0
+this.lastDamage[index]= 0;
+    
 }
 
 }

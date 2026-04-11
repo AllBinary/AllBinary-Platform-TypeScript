@@ -103,18 +103,22 @@ public constructor (image: Image, width: number, height: number, dx: number, dy:
     var scaledImage: Image = animationFactoryImageScaleUtil!.createImage(this.getImage(), this.animationFactoryInitializationVisitor!.width, this.animationFactoryInitializationVisitor!.height, this.scaleProperties!.scaleWidth, this.scaleProperties!.scaleHeight)!;
         
         
-
+;
+    
 
     var openGLUtil: OpenGLUtil = OpenGLUtil.getInstance()!;
         
         
-
-scaledImage= openGLUtil!.add(scaledImage)
+;
+    
+scaledImage= openGLUtil!.add(scaledImage);
+    
 
                         if(this.animationFactoryInitializationVisitor!.dx != 0 || this.animationFactoryInitializationVisitor!.dy != 0)
                         
                                     {
-                                    animationFactoryImageScaleUtil!.processAdjust(this)
+                                    animationFactoryImageScaleUtil!.processAdjust(this);
+    
 
 
 

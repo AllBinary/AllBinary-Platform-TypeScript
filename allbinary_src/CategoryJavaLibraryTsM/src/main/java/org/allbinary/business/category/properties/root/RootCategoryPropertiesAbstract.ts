@@ -18,10 +18,13 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { HashMap } from "../../../../../../java/util/HashMap.js";
 
     
-import { Vector } from "../../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../../java/util/Vector.js";
 
     
 import { CategoryData } from "../../../../../../org/allbinary/business/category/CategoryData.js";
@@ -67,7 +70,9 @@ public constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getValue() as Object;
+                        return this.getValue();
+
+                         as Object;
     
 }
 
@@ -187,13 +192,15 @@ var categoryHierarchyInterface = categoryHierarchyInterface
 }
 
 
-    public toHashMap(): HashMap<Any, Any>{
+    public toHashMap(): HashMap<any, any>{
 
-    var categoryHashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var categoryHashMap: HashMap<any, any> = new HashMap<any, any>();
         
         
-
-categoryHashMap!.put(CategoryData.getInstance()!.NAME, this.category)
+;
+    
+categoryHashMap!.put(CategoryData.getInstance()!.NAME, this.category);
+    
 
 
 
@@ -208,8 +215,10 @@ categoryHashMap!.put(CategoryData.getInstance()!.NAME, this.category)
     var categoryVector: Vector = new Vector();
         
         
-
-categoryVector!.add(category)
+;
+    
+categoryVector!.add(category);
+    
 
 
 

@@ -58,7 +58,8 @@ public constructor (animationInterfaceArray: RotationAnimation[], animationBehav
 
                             //For kotlin this is before the body of the constructor.
                     
-this.animationInterfaceArray= animationInterfaceArray
+this.animationInterfaceArray= animationInterfaceArray;
+    
 }
 
 
@@ -75,7 +76,8 @@ this.animationInterfaceArray= animationInterfaceArray
         
 --index >= 0; )
         {
-this.animationInterfaceArray[index]!.setFrame(frameIndex)
+this.animationInterfaceArray[index]!.setFrame(frameIndex);
+    
 }
 
 }
@@ -87,6 +89,8 @@ this.animationInterfaceArray[index]!.setFrame(frameIndex)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.animationInterfaceArray[0]!.getFrame();
+
+                        ;
     
 }
 
@@ -99,6 +103,8 @@ this.animationInterfaceArray[index]!.setFrame(frameIndex)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.animationInterfaceArray[0]!.getAnimationSize();
+
+                        ;
     
 }
 
@@ -109,6 +115,8 @@ this.animationInterfaceArray[index]!.setFrame(frameIndex)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.animationInterfaceArray[0]!.getSize();
+
+                        ;
     
 }
 
@@ -125,7 +133,8 @@ this.animationInterfaceArray[index]!.setFrame(frameIndex)
         
 --index >= 0; )
         {
-this.animationInterfaceArray[index]!.previousFrame()
+this.animationInterfaceArray[index]!.previousFrame();
+    
 }
 
 }
@@ -145,7 +154,8 @@ this.animationInterfaceArray[index]!.previousFrame()
         
 --index >= 0; )
         {
-this.animationInterfaceArray[index]!.nextFrame()
+this.animationInterfaceArray[index]!.nextFrame();
+    
 }
 
 }
@@ -163,7 +173,8 @@ this.animationInterfaceArray[index]!.nextFrame()
         
 --index >= 0; )
         {
-this.animationInterfaceArray[index]!.previousRotation()
+this.animationInterfaceArray[index]!.previousRotation();
+    
 }
 
 }
@@ -181,23 +192,26 @@ this.animationInterfaceArray[index]!.previousRotation()
         
 --index >= 0; )
         {
-this.animationInterfaceArray[index]!.nextRotation()
+this.animationInterfaceArray[index]!.nextRotation();
+    
 }
 
 }
 
 
-    public setSequence(sequence: IntArray){
+    public setSequence(sequence: number[]){
     //var sequence = sequence
 }
 
 
-    public getSequence(): IntArray{
+    public getSequence(): number[]{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return PrimitiveIntUtil.getArrayInstance();
+
+                        ;
     
 }
 
@@ -217,7 +231,8 @@ this.animationInterfaceArray[index]!.nextRotation()
         
 --index >= 0; )
         {
-this.animationInterfaceArray[index]!.paint(graphics, x, y)
+this.animationInterfaceArray[index]!.paint(graphics, x, y);
+    
 }
 
 }
@@ -239,7 +254,8 @@ this.animationInterfaceArray[index]!.paint(graphics, x, y)
         
 --index >= 0; )
         {
-this.animationInterfaceArray[index]!.paintThreed(graphics, x, y, z)
+this.animationInterfaceArray[index]!.paintThreed(graphics, x, y, z);
+    
 }
 
 }
@@ -258,7 +274,8 @@ this.animationInterfaceArray[index]!.paintThreed(graphics, x, y, z)
         
 --index >= 0; )
         {
-this.animationInterfaceArray[index]!.setFrame(direction)
+this.animationInterfaceArray[index]!.setFrame(direction);
+    
 }
 
 }
@@ -277,7 +294,8 @@ this.animationInterfaceArray[index]!.setFrame(direction)
         
 --index >= 0; )
         {
-this.animationInterfaceArray[index]!.setFrame(angle)
+this.animationInterfaceArray[index]!.setFrame(angle);
+    
 }
 
 }
@@ -285,7 +303,8 @@ this.animationInterfaceArray[index]!.setFrame(angle)
 
     public adjustFrame(newAngle: Angle){
     //var newAngle = newAngle
-this.adjustFrame(newAngle!.getValue())
+this.adjustFrame(newAngle!.getValue());
+    
 }
 
 
@@ -302,7 +321,8 @@ this.adjustFrame(newAngle!.getValue())
         
 --index >= 0; )
         {
-this.animationInterfaceArray[index]!.adjustFrame(angle)
+this.animationInterfaceArray[index]!.adjustFrame(angle);
+    
 }
 
 }
@@ -314,6 +334,8 @@ this.animationInterfaceArray[index]!.adjustFrame(angle)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.animationInterfaceArray[0]!.getAngleInfoP();
+
+                        ;
     
 }
 
@@ -330,7 +352,8 @@ this.animationInterfaceArray[index]!.adjustFrame(angle)
 
     public setAnimationInterfaceArray(animationInterfaceArray: RotationAnimation[]){
     //var animationInterfaceArray = animationInterfaceArray
-this.animationInterfaceArray= animationInterfaceArray
+this.animationInterfaceArray= animationInterfaceArray;
+    
 }
 
 
@@ -349,7 +372,8 @@ this.animationInterfaceArray= animationInterfaceArray
         
 --index >= 0; )
         {
-this.animationInterfaceArray[index]!.set(gl)
+this.animationInterfaceArray[index]!.set(gl);
+    
 }
 
 }

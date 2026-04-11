@@ -55,22 +55,26 @@ export class CellPositionsUtil
     //var columns = columns
     //var rows = rows
     //var reusableList = reusableList
-reusableList!.clear()
+reusableList!.clear();
+    
 
     var geographicMapCellPositionFactory: BasicGeographicMapCellPositionFactory = geographicMapInterface!.getGeographicMapCellPositionFactory()!;
         
         
-
+;
+    
 
     var lastColumn: number = topRightGeographicMapCellPosition!.getColumn() +columns;
         
         
-
+;
+    
 
     var lastRow: number = topRightGeographicMapCellPosition!.getRow() +rows;
         
         
-
+;
+    
 
                         if((columns > 1 && lastColumn > geographicMapInterface!.getAllBinaryTiledLayer()!.getColumns()) || (rows > 1 && lastRow > geographicMapInterface!.getAllBinaryTiledLayer()!.getRows()))
                         
@@ -108,8 +112,10 @@ columnIndex < columns; columnIndex++)
     var geographicMapCellPosition: GeographicMapCellPosition = geographicMapCellPositionFactory!.getInstance(topRightGeographicMapCellPosition!.getColumn() +columnIndex, topRightGeographicMapCellPosition!.getRow() +rowIndex)!;
         
         
-
-reusableList!.add(geographicMapCellPosition)
+;
+    
+reusableList!.add(geographicMapCellPosition);
+    
 }
 
 }
@@ -133,7 +139,8 @@ reusableList!.add(geographicMapCellPosition)
     //var geographicMapInterface = geographicMapInterface
     //var occupyList = occupyList
     //var reusableList = reusableList
-reusableList!.clear()
+reusableList!.clear();
+    
 
 
 
@@ -145,15 +152,19 @@ reusableList!.clear()
 index >= 0; index--)
         {
 
-    var layerGeographicMapCellPosition: GeographicMapCellPosition = occupyList!.get(index) as GeographicMapCellPosition;
-        
-        
+    var layerGeographicMapCellPosition: GeographicMapCellPosition = occupyList!.get(index);
 
+                         as GeographicMapCellPosition;
+        
+        
+;
+    
 
     var surroundingGeographicMapCellPositionList: BasicArrayList = getAllSurrounding(geographicMapInterface, layerGeographicMapCellPosition, reusableSingleThreadedSurroundingList)!;
         
         
-
+;
+    
 
 
 
@@ -165,15 +176,23 @@ index >= 0; index--)
 index2 >= 0; index2--)
         {
 
-    var geographicMapCellPosition: GeographicMapCellPosition = surroundingGeographicMapCellPositionList!.get(index2) as GeographicMapCellPosition;
+    var geographicMapCellPosition: GeographicMapCellPosition = surroundingGeographicMapCellPositionList!.get(index2);
+
+                         as GeographicMapCellPosition;
         
         
+;
+    
 
+                        if(!reusableList!.contains(geographicMapCellPosition);
 
-                        if(!reusableList!.contains(geographicMapCellPosition) && !occupyList!.contains(geographicMapCellPosition))
+                         && !occupyList!.contains(geographicMapCellPosition);
+
+                        )
                         
                                     {
-                                    reusableList!.add(geographicMapCellPosition)
+                                    reusableList!.add(geographicMapCellPosition);
+    
 
                                     }
                                 
@@ -190,7 +209,7 @@ index2 >= 0; index2--)
 }
 
 
-    private readonly surroundArray: IntArray[] = 
+    private readonly surroundArray: number[][] = 
                                                         [
                                                             intArrayOf( -1, -1)
 ,intArrayOf(0, -1)
@@ -211,23 +230,28 @@ index2 >= 0; index2--)
     //var geographicMapInterface = geographicMapInterface
     //var layerGeographicMapCellPosition = layerGeographicMapCellPosition
     //var reusableSurroundingList = reusableSurroundingList
-reusableSurroundingList!.clear()
+reusableSurroundingList!.clear();
+    
 
     var geographicMapCellPositionFactory: BasicGeographicMapCellPositionFactory = geographicMapInterface!.getGeographicMapCellPositionFactory()!;
         
         
-
+;
+    
 
     var tiledLayer: AllBinaryTiledLayer = geographicMapInterface!.getAllBinaryTiledLayer()!;
         
         
-
+;
+    
 
     var row: number= 0
-
+;
+    
 
     var column: number= 0
-
+;
+    
 
 
 
@@ -238,8 +262,10 @@ reusableSurroundingList!.clear()
         
 index < 8; index++)
         {
-column= layerGeographicMapCellPosition!.getColumn() +surroundArray[index]![0]
-row= layerGeographicMapCellPosition!.getRow() +surroundArray[index]![1]
+column= layerGeographicMapCellPosition!.getColumn() +surroundArray[index]![0];
+    
+row= layerGeographicMapCellPosition!.getRow() +surroundArray[index]![1];
+    
 
                         if(tiledLayer!.isOnTileLayer(column, row))
                         
@@ -248,8 +274,10 @@ row= layerGeographicMapCellPosition!.getRow() +surroundArray[index]![1]
     var geographicMapCellPosition: GeographicMapCellPosition = geographicMapCellPositionFactory!.getInstance(column, row)!;
         
         
-
-reusableSurroundingList!.add(geographicMapCellPosition)
+;
+    
+reusableSurroundingList!.add(geographicMapCellPosition);
+    
 
                                     }
                                 

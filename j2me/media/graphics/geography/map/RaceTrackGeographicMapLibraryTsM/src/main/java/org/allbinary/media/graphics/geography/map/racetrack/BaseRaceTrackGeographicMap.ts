@@ -72,14 +72,18 @@ public constructor (raceTrackInfo: RaceTrackInfo, raceTrackData: RaceTrackData, 
 
                             //For kotlin this is before the body of the constructor.
                     
-this.raceTrackInfo= raceTrackInfo
-this.raceTrackData= raceTrackData
-this.miniGeographicMap= miniGeographicMap
+this.raceTrackInfo= raceTrackInfo;
+    
+this.raceTrackData= raceTrackData;
+    
+this.miniGeographicMap= miniGeographicMap;
+    
 
     var miniTiledLayer: AllBinaryTiledLayer = this.miniGeographicMap!.getAllBinaryTiledLayer()!;
         
         
-
+;
+    
 
                         if(miniTiledLayer!.getColumns() != this.getGeographicMapCellPositionFactory()!.getColumns())
                         
@@ -89,13 +93,16 @@ this.miniGeographicMap= miniGeographicMap
                             append("RaceTrackMap has incorrect Mini Map columns: ")!.appendint(miniTiledLayer!.getColumns())!.append(" != ")!.appendint(this.getGeographicMapCellPositionFactory()!.getColumns())!.toString()!;
         
         
-
+;
+    
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR);
+    
 
 
 
@@ -111,13 +118,16 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR)
     var error: string = "RaceTrackMap has incorrect Mini Map rows";
         
         
-
+;
+    
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR);
+    
 
 
 
@@ -140,13 +150,15 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR)
 
     public setRaceTrackInfo(aRaceTrackInfo: RaceTrackInfo){
 var aRaceTrackInfo = aRaceTrackInfo
-raceTrackInfo= aRaceTrackInfo
+raceTrackInfo= aRaceTrackInfo;
+    
 }
 
 
     public setMiniBasicGeographicMap(miniBasicGeographicMap: BasicGeographicMap){
 var miniBasicGeographicMap = miniBasicGeographicMap
-this.miniGeographicMap= miniBasicGeographicMap
+this.miniGeographicMap= miniBasicGeographicMap;
+    
 }
 
 
@@ -172,7 +184,8 @@ this.miniGeographicMap= miniBasicGeographicMap
 
     public setRaceTrackData(raceTrackData: RaceTrackData){
 var raceTrackData = raceTrackData
-this.raceTrackData= raceTrackData
+this.raceTrackData= raceTrackData;
+    
 }
 
 

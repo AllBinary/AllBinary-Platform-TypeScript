@@ -53,7 +53,8 @@ public constructor ()
 
     public setStatus(value: string){
 var value = value
-this.status= value
+this.status= value;
+    
 }
 
 
@@ -66,12 +67,15 @@ this.status= value
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    logUtil!.put("Tag Start", this, "doStartTag")
+                                    logUtil!.put("Tag Start", this, "doStartTag");
+    
 
                                     }
                                 
-this.setName("Range Order History View")
-this.setObjectFile("views.admin.orderhistory.DateRangeOrderHistoryView")
+this.setName("Range Order History View");
+    
+this.setObjectFile("views.admin.orderhistory.DateRangeOrderHistoryView");
+    
 
                         if(this.getCommand() != 
                                     null
@@ -98,6 +102,8 @@ this.setObjectFile("views.admin.orderhistory.DateRangeOrderHistoryView")
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.doStartTag();
+
+                        ;
     
 
                                     }
@@ -106,9 +112,12 @@ this.setObjectFile("views.admin.orderhistory.DateRangeOrderHistoryView")
 
 
                             throw Error("Command Null")
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
+    
 
 
 

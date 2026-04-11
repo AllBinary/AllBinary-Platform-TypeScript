@@ -54,7 +54,8 @@ public constructor (name: string, movement: Movement, animationInterface: Animat
 
                             //For kotlin this is before the body of the constructor.
                     
-this.timeDelayHelper!.delay= timeDelay
+this.timeDelayHelper!.delay= timeDelay;
+    
 }
 
 
@@ -66,12 +67,15 @@ var allBinaryLayerManager = allBinaryLayerManager
                         if(timeDelayHelper!.isTime(GameTickTimeDelayHelperFactory.getInstance()!.startTime))
                         
                                     {
-                                    this.getCollidableInferface()!.collide(this)
-this.totalDamage= this.getInitDamage() +1
+                                    this.getCollidableInferface()!.collide(this);
+    
+this.totalDamage= this.getInitDamage() +1;
+    
 
                                     }
                                 
-super.processTick(allBinaryLayerManager)
+super.processTick(allBinaryLayerManager);
+    
 }
 
 

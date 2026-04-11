@@ -18,7 +18,10 @@
 
 
 
-import { Hashtable } from "../../../../java/util/Hashtable.js";
+            import Hashtable from "@ohos.util.HashMap";
+        
+
+//import { Hashtable } from "../../../../java/util/Hashtable.js";
 
     
 
@@ -41,7 +44,7 @@ export class BasicColorCacheFactory
 }
 
 
-    private readonly hashtable: Hashtable<Any, Any> = new Hashtable<Any, Any>();
+    private readonly hashtable: Hashtable<any, any> = new Hashtable<any, any>();
         
         
 private constructor (){
@@ -52,7 +55,8 @@ private constructor (){
 
     public add(basicDefaultColor: BasicColor){
     //var basicDefaultColor = basicDefaultColor
-hashtable.put(Integer(basicDefaultColor!.toInt()), basicDefaultColor)
+hashtable.put(Integer(basicDefaultColor!.toInt()), basicDefaultColor);
+    
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
@@ -60,18 +64,23 @@ hashtable.put(Integer(basicDefaultColor!.toInt()), basicDefaultColor)
     public getInstance(integer: Integer): BasicColor{
     //var integer = integer
 
-    var basicColor: BasicColor = hashtable.get(integer as Object) as BasicColor;
-        
-        
+    var basicColor: BasicColor = hashtable.get(integer as Object);
 
+                         as BasicColor;
+        
+        
+;
+    
 
                         if(basicColor == 
                                     null
                                 )
                         
                                     {
-                                    basicColor= BasicColor(integer.toInt())
-hashtable.put(integer, basicColor)
+                                    basicColor= BasicColor(integer.toInt());
+    
+hashtable.put(integer, basicColor);
+    
 
                                     }
                                 

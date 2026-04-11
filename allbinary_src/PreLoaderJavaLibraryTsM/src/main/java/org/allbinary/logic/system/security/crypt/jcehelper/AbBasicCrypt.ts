@@ -58,7 +58,7 @@ export class AbBasicCrypt
 
     private algorithm: string
 
-    private key: ByteArray
+    private key: number[]
 public constructor (algorithm: string, key: string){
 
             super();
@@ -66,17 +66,24 @@ public constructor (algorithm: string, key: string){
 var key = key
 
         try {
-            this.algorithm= algorithm
-this.key= key.encodeToByteArray()
-this.init()
-} catch(e: Exception)
+            this.algorithm= algorithm;
+    
+this.key= key.encodeToByteArray();
+    
+this.init();
+    
+
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-PreLogUtil.put(commonStrings!.EXCEPTION, this, "AbCrypt(alg,key)", e)
+;
+    
+PreLogUtil.putOE(commonStrings!.EXCEPTION, this, "AbCrypt(alg,key)", e);
+    
 }
 
 }
@@ -89,54 +96,69 @@ PreLogUtil.put(commonStrings!.EXCEPTION, this, "AbCrypt(alg,key)", e)
     var sunJce: Provider = new com.sun.crypto.provider.SunJCE();
         
         
-
-Security.addProvider(sunJce)
+;
+    
+Security.addProvider(sunJce);
+    
 
     var keySpec: KeySpec = KeySpecFactory.getInstance()!.getInstance(this.algorithm, this.key)!;
         
         
-
+;
+    
 
     var keyFactory: SecretKeyFactory = SecretKeyFactory.getInstance(algorithm)!;
         
         
+;
+    
+this.secretKey= keyFactory!.generateSecret(keySpec);
+    
+this.cipher= Cipher.getInstance(algorithm);
+    
 
-this.secretKey= keyFactory!.generateSecret(keySpec)
-this.cipher= Cipher.getInstance(algorithm)
-} catch(e: Exception)
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-PreLogUtil.put("init Failed", this, commonStrings!.INIT, e)
+;
+    
+PreLogUtil.putOE("init Failed", this, commonStrings!.INIT, e);
+    
 }
 
 }
 
 
-    public encrypt(array: ByteArray): ByteArray{
+    public encrypt(array: number[]): number[]{
 var array = array
 
         try {
-            cipher.init(Cipher.ENCRYPT_MODE, secretKey)
+            cipher.init(Cipher.ENCRYPT_MODE, secretKey);
+    
 
-    var ivArray: ByteArray = secretKey!.getEncoded()!;
+    var ivArray: number[] = secretKey!.getEncoded()!;
         
         
+;
+    
 
-
-    var encrypted: ByteArray = cipher.doFinal(array)!;
+    var encrypted: number[] = cipher.doFinal(array)!;
         
         
+;
+    
 
-
-    var result: ByteArray = ByteArray(ivArray!.length +encrypted.length);
+    var result: number[] = new Array(ivArray!.length +encrypted.length);
         
         
-
-PreLogUtil.put("ivArray Length: " +ivArray!.length, this, "encrypt")
+;
+    
+PreLogUtil.put("ivArray Length: " +ivArray!.length, this, "encrypt");
+    
 
 
 
@@ -147,7 +169,8 @@ PreLogUtil.put("ivArray Length: " +ivArray!.length, this, "encrypt")
         
 index < ivArray!.length; index++)
         {
-result[index]= ivArray[index]!
+result[index]= ivArray[index]!;
+    
 }
 
 
@@ -160,7 +183,8 @@ result[index]= ivArray[index]!
         
 index < encrypted.length; index++)
         {
-result[index +ivArray!.length]= encrypted[index]!
+result[index +ivArray!.length]= encrypted[index]!;
+    
 }
 
 
@@ -169,9 +193,12 @@ result[index +ivArray!.length]= encrypted[index]!
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-PreLogUtil.put("Encrypt Failed", this, "encrypt", e)
+PreLogUtil.putOE("Encrypt Failed", this, "encrypt", e);
+    
 
 
 
@@ -183,16 +210,18 @@ PreLogUtil.put("Encrypt Failed", this, "encrypt", e)
 }
 
 
-    public decrypt(array: ByteArray): ByteArray{
+    public decrypt(array: number[]): number[]{
 var array = array
 
         try {
-            cipher.init(Cipher.DECRYPT_MODE, secretKey)
+            cipher.init(Cipher.DECRYPT_MODE, secretKey);
+    
 
-    var ivArray: ByteArray = ByteArray(8);
+    var ivArray: number[] = new Array(8);
         
         
-
+;
+    
 
 
 
@@ -203,15 +232,18 @@ var array = array
         
 index < 8; index++)
         {
-ivArray[index]= array[index]!
+ivArray[index]= array[index]!;
+    
 }
 
-PreLogUtil.put("ivArray Length: " +ivArray!.length, this, "encrypt")
+PreLogUtil.put("ivArray Length: " +ivArray!.length, this, "encrypt");
+    
 
-    var result: ByteArray = ByteArray(array.length -ivArray!.length);
+    var result: number[] = new Array(array.length -ivArray!.length);
         
         
-
+;
+    
 
 
 
@@ -223,23 +255,28 @@ PreLogUtil.put("ivArray Length: " +ivArray!.length, this, "encrypt")
         
 index < array.length; index++)
         {
-result[index -ivArray!.length]= array[index]!
+result[index -ivArray!.length]= array[index]!;
+    
 }
 
 
-    var decrypted: ByteArray = cipher.doFinal(result)!;
+    var decrypted: number[] = cipher.doFinal(result)!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-PreLogUtil.put("decrypt Failed", this, "decrypt", e)
+PreLogUtil.putOE("decrypt Failed", this, "decrypt", e);
+    
 
 
 

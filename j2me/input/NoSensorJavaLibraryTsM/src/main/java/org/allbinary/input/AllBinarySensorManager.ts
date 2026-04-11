@@ -73,11 +73,16 @@ private constructor (){
             super();
             
         try {
-            GyroSensorFactory.init()
-AccelerometerSensorFactory.init()
-} catch(e: Exception)
+            GyroSensorFactory.init();
+    
+AccelerometerSensorFactory.init();
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.CONSTRUCTOR, e)
+logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.CONSTRUCTOR, e);
+    
 }
 
 }

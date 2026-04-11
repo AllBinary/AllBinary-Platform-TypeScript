@@ -56,7 +56,8 @@ private constructor (){
     var scaledImages: Image[] = new Array(images.length);
         
         
-
+;
+    
 
 
 
@@ -68,7 +69,8 @@ private constructor (){
         
 --index >= 0; )
         {
-scaledImages[index]= this.scale(images[index]!, width, height)
+scaledImages[index]= this.scale(images[index]!, width, height);
+    
 }
 
 
@@ -90,7 +92,8 @@ scaledImages[index]= this.scale(images[index]!, width, height)
     var scaledImage: Image = ImageCopyUtil.getInstance()!.createImage(image, width, height)!;
         
         
-
+;
+    
 
 
 

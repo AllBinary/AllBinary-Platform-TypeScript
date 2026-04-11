@@ -150,11 +150,14 @@ public constructor (databaseConnectionInfoInterface: DbConnectionInfo){
 
             super();
                 //var databaseConnectionInfoInterface = databaseConnectionInfoInterface
-this.databaseConnectionInfoInterface= databaseConnectionInfoInterface
-this.connectAttemptCounter= 0
+this.databaseConnectionInfoInterface= databaseConnectionInfoInterface;
+    
+this.connectAttemptCounter= 0;
+    
 this.conn= 
                                         null
-                                    
+                                    ;
+    
 }
 
 
@@ -164,48 +167,61 @@ this.conn=
     //var statement = statement
 
         try {
-            initialize()
+            initialize();
+    
 
     var stmt: Statement = conn.createStatement()!;
         
         
-
-stmt.execute(statement)
+;
+    
+stmt.execute(statement);
+    
 
     var rset: ResultSet = stmt.getResultSet()!;
         
         
-
-stmt.close()
+;
+    
+stmt.close();
+    
 
     var tempConnection: Connection = this.conn;
         
         
-
+;
+    
 this.conn= 
                                         null
-                                    
-sqlConnectionPool!.add(this.getDatabaseConnectionInfoInterface()!.getUrl(), tempConnection)
+                                    ;
+    
+sqlConnectionPool!.add(this.getDatabaseConnectionInfoInterface()!.getUrl(), tempConnection);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return rset;
     
-} catch(e: SQLException)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
                                     {
-                                    logUtil!.put(FAILED_SQL_STATEMENT +statement, this, METHOD_EXECUTED_SQL_STATEMENT, e)
+                                    logUtil!.put(FAILED_SQL_STATEMENT +statement, this, METHOD_EXECUTED_SQL_STATEMENT, e);
+    
 
                                     }
                                 
-this.conn.close()
+this.conn.close();
+    
 this.conn= 
                                         null
-                                    
+                                    ;
+    
 
 
 
@@ -219,12 +235,14 @@ this.conn=
     //var databaseName = databaseName
 
         try {
-            this.executeSQLStatement(sqlStrings!.CREATE_DATABASE +databaseName)
+            this.executeSQLStatement(sqlStrings!.CREATE_DATABASE +databaseName);
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.DATABASE_CREATED_LABEL +databaseName, this, METHOD_CREATE)
+                                    logUtil!.put(this.DATABASE_CREATED_LABEL +databaseName, this, METHOD_CREATE);
+    
 
                                     }
                                 
@@ -234,13 +252,16 @@ this.conn=
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return databaseName +sqlStrings!.CREATE_RETURN;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
                                     {
-                                    logUtil!.put(DATABASE_CREATION_FAILED_LABEL +databaseName, this, this.METHOD_CREATE, e)
+                                    logUtil!.put(DATABASE_CREATION_FAILED_LABEL +databaseName, this, this.METHOD_CREATE, e);
+    
 
                                     }
                                 
@@ -258,36 +279,46 @@ this.conn=
     createConnection(){
 
         try {
-            this.conn= sqlConnectionPool!.get(this.getDatabaseConnectionInfoInterface()!.getUrl())
-} catch(se: SQLException)
+            this.conn= sqlConnectionPool!.get(this.getDatabaseConnectionInfoInterface()!.getUrl());
+    
+
+                //: 
+} catch(se) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
                                     {
-                                    logUtil!.put(SQL_CONNECTION_RETRYING, this, METHOD_CREATE_CONNECTION, se)
+                                    logUtil!.put(SQL_CONNECTION_RETRYING, this, METHOD_CREATE_CONNECTION, se);
+    
 
                                     }
                                 
 
         try {
-            Thread.currentThread()!.sleep(2000)
+            Thread.currentThread()!.sleep(2000);
+    
 
                         if(connectAttemptCounter < 10)
                         
                                     {
-                                    connectAttemptCounter++
-this.initialize()
+                                    connectAttemptCounter++;
+    
+this.initialize();
+    
 
                                     }
                                 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
                                     {
-                                    logUtil!.put(SQL_CONNECTION_RETRY +se.message, this, this.METHOD_CREATE_CONNECTION, e)
+                                    logUtil!.put(SQL_CONNECTION_RETRY +se.message, this, this.METHOD_CREATE_CONNECTION, e);
+    
 
                                     }
                                 
@@ -310,20 +341,26 @@ this.initialize()
     var loader: ClassLoader = Thread.currentThread()!.getContextClassLoader()!;
         
         
+;
+    
 
-
-    var jdbcDriverClass: KClass<*> = loader.loadClass(this.getDatabaseConnectionInfoInterface()!.getJdbcDriver())!;
+    var jdbcDriverClass: Function = loader.loadClass(this.getDatabaseConnectionInfoInterface()!.getJdbcDriver())!;
         
         
+;
+    
+jdbcDriverClass!.newInstance();
+    
 
-jdbcDriverClass!.newInstance()
-} catch(e: Exception)
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
                                     {
-                                    logUtil!.put(LOAD_JDBC_DRIVER_FAILED_LABEL +this.getDatabaseConnectionInfoInterface()!.getJdbcDriver(), this, METHOD_INITIALIZE, e)
+                                    logUtil!.put(LOAD_JDBC_DRIVER_FAILED_LABEL +this.getDatabaseConnectionInfoInterface()!.getJdbcDriver(), this, METHOD_INITIALIZE, e);
+    
 
                                     }
                                 
@@ -332,14 +369,18 @@ jdbcDriverClass!.newInstance()
 
                             }
                     
-this.createConnection()
-} catch(se: Exception)
+this.createConnection();
+    
+
+                //: 
+} catch(se) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
                                     {
-                                    logUtil!.put(SQL_CONNECTION_FAILED, this, this.METHOD_INITIALIZE, se)
+                                    logUtil!.put(SQL_CONNECTION_FAILED, this, this.METHOD_INITIALIZE, se);
+    
 
                                     }
                                 
@@ -360,7 +401,8 @@ this.createConnection()
 
     public setDatabaseConnectionInfoInterface(databaseConnectionInfoInterface: DbConnectionInfo){
     //var databaseConnectionInfoInterface = databaseConnectionInfoInterface
-this.databaseConnectionInfoInterface= databaseConnectionInfoInterface
+this.databaseConnectionInfoInterface= databaseConnectionInfoInterface;
+    
 }
 
 

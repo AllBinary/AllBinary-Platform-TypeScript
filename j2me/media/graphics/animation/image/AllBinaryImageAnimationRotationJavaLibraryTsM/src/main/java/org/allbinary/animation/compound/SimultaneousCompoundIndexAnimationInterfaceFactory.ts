@@ -48,8 +48,10 @@ public constructor (basicAnimationInterfaceFactoryInterfaceArray: AnimationInter
             super();
                 //var basicAnimationInterfaceFactoryInterfaceArray = basicAnimationInterfaceFactoryInterfaceArray
     //var animationBehaviorFactory = animationBehaviorFactory
-this.basicAnimationInterfaceFactoryInterfaceArray= basicAnimationInterfaceFactoryInterfaceArray
-this.animationBehaviorFactory= animationBehaviorFactory
+this.basicAnimationInterfaceFactoryInterfaceArray= basicAnimationInterfaceFactoryInterfaceArray;
+    
+this.animationBehaviorFactory= animationBehaviorFactory;
+    
 }
 
 
@@ -62,12 +64,14 @@ this.animationBehaviorFactory= animationBehaviorFactory
                 ;
         
         
-
+;
+    
 
     var animationInterfaceArray: IndexedAnimation[] = new Array(size);
         
         
-
+;
+    
 
 
 
@@ -78,7 +82,10 @@ this.animationBehaviorFactory= animationBehaviorFactory
         
 index < size; index++)
         {
-animationInterfaceArray[index]= this.basicAnimationInterfaceFactoryInterfaceArray[index]!.getInstance(instanceId) as IndexedAnimation
+animationInterfaceArray[index]= this.basicAnimationInterfaceFactoryInterfaceArray[index]!.getInstance(instanceId);
+
+                         as IndexedAnimation;
+    
 }
 
 
@@ -86,6 +93,8 @@ animationInterfaceArray[index]= this.basicAnimationInterfaceFactoryInterfaceArra
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getInstance(animationInterfaceArray);
+
+                        ;
     
 }
 

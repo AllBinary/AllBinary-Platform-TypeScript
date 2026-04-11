@@ -58,26 +58,34 @@ public constructor (node: Node){
     var childNodeList: NodeList = node.getChildNodes()!;
         
         
-
-this.contextConfigurationInterface= ContextConfiguration()
+;
+    
+this.contextConfigurationInterface= ContextConfiguration();
+    
 
     var emailConfigurationNode: Node = DomSearchHelper.getNode(EmailServerConfigurationData.NAME, childNodeList)!;
         
         
-
+;
+    
 
     var emailServerConfigurationView: EmailServerConfigurationView = new EmailServerConfigurationView(emailConfigurationNode);
         
         
+;
+    
+this.contextConfigurationInterface!.setEmailServerConfigurationInterface(emailServerConfigurationView!.getEmailConfigurationInterface();
 
-this.contextConfigurationInterface!.setEmailServerConfigurationInterface(emailServerConfigurationView!.getEmailConfigurationInterface() as EmailServerConfigurationInterface)
+                         as EmailServerConfigurationInterface);
+    
 }
 
 public constructor (contextConfigurationInterface: ContextConfigurationInterface){
 
             super();
             var contextConfigurationInterface = contextConfigurationInterface
-this.contextConfigurationInterface= contextConfigurationInterface
+this.contextConfigurationInterface= contextConfigurationInterface;
+    
 }
 
 
@@ -99,13 +107,16 @@ var document = document
     var node: Node = document.createElement(ContextConfigurationData.getInstance()!.NAME)!;
         
         
-
+;
+    
 
     var emailServerConfigurationView: EmailServerConfigurationView = new EmailServerConfigurationView(this.getContextConfigurationInterface()!.getEmailServerConfigurationInterface());
         
         
-
-node.appendChild(emailServerConfigurationView!.toXmlNode(document))
+;
+    
+node.appendChild(emailServerConfigurationView!.toXmlNode(document));
+    
 
 
 

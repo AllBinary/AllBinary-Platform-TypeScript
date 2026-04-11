@@ -97,6 +97,8 @@ private constructor (){
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return get(abeClientInformation);
+
+                        ;
     
 
                                     }
@@ -120,21 +122,26 @@ private constructor (){
     //var abeClientInformation = abeClientInformation
 
         try {
-            logUtil!.put("Getting Keys", this, commonStrings!.GET)
-abeLicenseInterface= AbeNoLicense.getInstance()
+            logUtil!.put("Getting Keys", this, commonStrings!.GET);
+    
+abeLicenseInterface= AbeNoLicense.getInstance();
+    
 
     var licenseClient: AbeLicenseClient = new AbeLicenseClient();
         
         
-
-abeLicenseInterface= licenseClient!.get(abeClientInformation)
+;
+    
+abeLicenseInterface= licenseClient!.get(abeClientInformation);
+    
 
                         if(abeLicenseInterface != 
                                     null
                                 )
                         
                                     {
-                                    logUtil!.put("Default Key: " +abeLicenseInterface!.getKey(AbeClientInformationData.getInstance()!.KEY), this, commonStrings!.GET)
+                                    logUtil!.put("Default Key: " +abeLicenseInterface!.getKey(AbeClientInformationData.getInstance()!.KEY), this, commonStrings!.GET);
+    
 
                                     }
                                 
@@ -144,21 +151,27 @@ abeLicenseInterface= licenseClient!.get(abeClientInformation)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return abeLicenseInterface;
     
-} catch(e: IOException)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put("Licensing IO Error", this, commonStrings!.GET, e)
+logUtil!.put("Licensing IO Error", this, commonStrings!.GET, e);
+    
 
 
 
                             throw LicensingException("License Server Connection Error")
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
-logUtil!.put("Licensing Failure", this, commonStrings!.GET, e)
+logUtil!.put("Licensing Failure", this, commonStrings!.GET, e);
+    
 
 
 
-                            throw LicensingException("Unknown License Failure: " +this::class.toString()!)
+                            throw LicensingException("Unknown License Failure: " +this.constructor.name.toString()!)
 }
 
 }
@@ -169,22 +182,28 @@ logUtil!.put("Licensing Failure", this, commonStrings!.GET, e)
     var calendar: Calendar = Calendar.getInstance()!;
         
         
-
+;
+    
 
     var currentTime: number = calendar.getTimeInMillis()!;
         
         
-
+;
+    
 
                         if(abeLicenseInterface == 
                                     null
-                                 || abeLicenseInterface == AbeNoLicense.getInstance() || !abeLicenseInterface!.hasKey() || isCheck() || currentTime -checkPeriod > time)
+                                 || abeLicenseInterface == AbeNoLicense.getInstance() || !abeLicenseInterface!.hasKey();
+
+                         || isCheck() || currentTime -checkPeriod > time)
                         
                                     {
                                     abeLicenseInterface= 
                                         null
-                                    
-time= currentTime
+                                    ;
+    
+time= currentTime;
+    
 
 
 
@@ -202,7 +221,8 @@ time= currentTime
 
     public setCheck(check: boolean){
 var check = check
-this.check= check
+this.check= check;
+    
 }
 
 

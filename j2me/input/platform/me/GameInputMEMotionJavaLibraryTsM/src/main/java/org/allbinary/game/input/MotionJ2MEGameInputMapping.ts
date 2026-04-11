@@ -32,6 +32,8 @@ export class MotionJ2MEGameInputMapping extends J2MEGameInputMapping {
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return MotionJ2MEDefaultGameInputMapping().
                             getInputMapping();
+
+                        ;
     
 }
 

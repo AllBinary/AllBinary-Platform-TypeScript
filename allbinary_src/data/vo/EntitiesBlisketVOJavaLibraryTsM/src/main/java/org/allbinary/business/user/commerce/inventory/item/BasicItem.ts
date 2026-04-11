@@ -18,13 +18,16 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { Calendar } from "../../../../../../../java/util/Calendar.js";
 
     
 import { HashMap } from "../../../../../../../java/util/HashMap.js";
 
     
-import { Vector } from "../../../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../../../java/util/Vector.js";
 
     
 import { EntryData } from "../../../../../../../org/allbinary/business/entry/EntryData.js";
@@ -128,7 +131,7 @@ export class BasicItem
     timeEntered: string
 
     lastModified: string
-public constructor (itemHashMap: HashMap<Any, Any>){
+public constructor (itemHashMap: HashMap<any, any>){
 
             super();
             var itemHashMap = itemHashMap
@@ -136,39 +139,127 @@ public constructor (itemHashMap: HashMap<Any, Any>){
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PRODUCTSEARCHLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.START, this, "Constructor(HashMap)")
+                                    logUtil!.put(this.commonStrings!.START, this, "Constructor(HashMap)");
+    
 
                                     }
                                 
-this.itemId= itemHashMap!.get(BasicItemData.ID) as String
-this.number= itemHashMap!.get(BasicItemData.NUMBER) as String
-this.inBaskets= itemHashMap!.get(BasicItemData.INBASKETS) as String
-this.weight= itemHashMap!.get(BasicItemData.WEIGHT) as String
-this.enabled= itemHashMap!.get(EntryData.getInstance()!.ENABLE) as String
-this.newOrUsed= itemHashMap!.get(BasicItemData.NEWORUSED) as String
-this.summary= itemHashMap!.get(BasicItemData.SUMMARY) as String
-this.distributor= itemHashMap!.get(BasicItemData.DISTRIBUTOR) as String
-this.idUsedByDistributor= itemHashMap!.get(BasicItemData.IDUSEDBYDISTRIBUTOR) as String
-this.producedBy= itemHashMap!.get(BasicItemData.PRODUCEDBY) as String
-this.productionDate= itemHashMap!.get(BasicItemData.PRODUCTIONDATE) as String
-this.startProductionDate= itemHashMap!.get(BasicItemData.STARTPRODUCTIONDATE) as String
-this.description= itemHashMap!.get(BasicItemData.DESCRIPTION) as String
-this.keywords= itemHashMap!.get(BasicItemData.KEYWORDS) as String
-this.category= itemHashMap!.get(BasicItemData.CATEGORY) as String
-this.type= itemHashMap!.get(BasicItemData.TYPE) as String
-this.smallImage= itemHashMap!.get(BasicItemData.SMALLIMAGE) as String
-this.mediumImage= itemHashMap!.get(BasicItemData.MEDIUMIMAGE) as String
-this.largeImage= itemHashMap!.get(BasicItemData.LARGEIMAGE) as String
-this.timeEntered= itemHashMap!.get(EntryData.getInstance()!.TIMECREATED) as String
-this.lastModified= itemHashMap!.get(EntryData.getInstance()!.LASTMODIFIED) as String
-this.price= Money(itemHashMap!.get(BasicItemData.PRICE) as String)
-this.comment= itemHashMap!.get(BasicItemData.COMMENT) as String
-this.customs= itemHashMap!.get(BasicItemData.CUSTOMS) as String
-this.setDownloads(itemHashMap!.get(BasicItemData.DOWNLOADS) as String)
-this.groups= itemHashMap!.get(BasicItemData.GROUPS) as String
-this.options= itemHashMap!.get(BasicItemData.OPTIONS) as String
-this.permissions= itemHashMap!.get(BasicItemData.PERMISSIONS) as String
-this.specials= itemHashMap!.get(BasicItemData.SPECIALS) as String
+this.itemId= itemHashMap!.get(BasicItemData.ID);
+
+                         as String;
+    
+this.number= itemHashMap!.get(BasicItemData.NUMBER);
+
+                         as String;
+    
+this.inBaskets= itemHashMap!.get(BasicItemData.INBASKETS);
+
+                         as String;
+    
+this.weight= itemHashMap!.get(BasicItemData.WEIGHT);
+
+                         as String;
+    
+this.enabled= itemHashMap!.get(EntryData.getInstance()!.ENABLE);
+
+                         as String;
+    
+this.newOrUsed= itemHashMap!.get(BasicItemData.NEWORUSED);
+
+                         as String;
+    
+this.summary= itemHashMap!.get(BasicItemData.SUMMARY);
+
+                         as String;
+    
+this.distributor= itemHashMap!.get(BasicItemData.DISTRIBUTOR);
+
+                         as String;
+    
+this.idUsedByDistributor= itemHashMap!.get(BasicItemData.IDUSEDBYDISTRIBUTOR);
+
+                         as String;
+    
+this.producedBy= itemHashMap!.get(BasicItemData.PRODUCEDBY);
+
+                         as String;
+    
+this.productionDate= itemHashMap!.get(BasicItemData.PRODUCTIONDATE);
+
+                         as String;
+    
+this.startProductionDate= itemHashMap!.get(BasicItemData.STARTPRODUCTIONDATE);
+
+                         as String;
+    
+this.description= itemHashMap!.get(BasicItemData.DESCRIPTION);
+
+                         as String;
+    
+this.keywords= itemHashMap!.get(BasicItemData.KEYWORDS);
+
+                         as String;
+    
+this.category= itemHashMap!.get(BasicItemData.CATEGORY);
+
+                         as String;
+    
+this.type= itemHashMap!.get(BasicItemData.TYPE);
+
+                         as String;
+    
+this.smallImage= itemHashMap!.get(BasicItemData.SMALLIMAGE);
+
+                         as String;
+    
+this.mediumImage= itemHashMap!.get(BasicItemData.MEDIUMIMAGE);
+
+                         as String;
+    
+this.largeImage= itemHashMap!.get(BasicItemData.LARGEIMAGE);
+
+                         as String;
+    
+this.timeEntered= itemHashMap!.get(EntryData.getInstance()!.TIMECREATED);
+
+                         as String;
+    
+this.lastModified= itemHashMap!.get(EntryData.getInstance()!.LASTMODIFIED);
+
+                         as String;
+    
+this.price= Money(itemHashMap!.get(BasicItemData.PRICE);
+
+                         as String);
+    
+this.comment= itemHashMap!.get(BasicItemData.COMMENT);
+
+                         as String;
+    
+this.customs= itemHashMap!.get(BasicItemData.CUSTOMS);
+
+                         as String;
+    
+this.setDownloads(itemHashMap!.get(BasicItemData.DOWNLOADS);
+
+                         as String);
+    
+this.groups= itemHashMap!.get(BasicItemData.GROUPS);
+
+                         as String;
+    
+this.options= itemHashMap!.get(BasicItemData.OPTIONS);
+
+                         as String;
+    
+this.permissions= itemHashMap!.get(BasicItemData.PERMISSIONS);
+
+                         as String;
+    
+this.specials= itemHashMap!.get(BasicItemData.SPECIALS);
+
+                         as String;
+    
 }
 
 public constructor (){
@@ -178,7 +269,8 @@ public constructor (){
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PRODUCTSEARCHLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
+    
 
                                     }
                                 
@@ -186,195 +278,253 @@ public constructor (){
     var EMPTY: string = StringUtil.getInstance()!.EMPTY_STRING;
         
         
-
+;
+    
 this.itemId= ProductIdGenerator().
-                            getNext()
-this.number= CommonPhoneStrings.getInstance()!.ZERO
-this.inBaskets= EMPTY
-this.weight= EMPTY
-this.enabled= EMPTY
-this.newOrUsed= EMPTY
-this.summary= EMPTY
-this.distributor= EMPTY
-this.idUsedByDistributor= EMPTY
-this.producedBy= EMPTY
-this.productionDate= EMPTY
-this.startProductionDate= EMPTY
-this.description= EMPTY
-this.keywords= EMPTY
-this.category= EMPTY
-this.type= EMPTY
-this.smallImage= EMPTY
-this.mediumImage= EMPTY
-this.largeImage= EMPTY
-this.timeEntered= EMPTY
-this.lastModified= EMPTY
-this.price= Money()
-this.comment= EMPTY
-this.customs= EMPTY
-this.setDownloads(EMPTY)
-this.groups= EMPTY
-this.options= EMPTY
-this.permissions= EMPTY
-this.specials= EMPTY
+                            getNext();
+    
+this.number= CommonPhoneStrings.getInstance()!.ZERO;
+    
+this.inBaskets= EMPTY;
+    
+this.weight= EMPTY;
+    
+this.enabled= EMPTY;
+    
+this.newOrUsed= EMPTY;
+    
+this.summary= EMPTY;
+    
+this.distributor= EMPTY;
+    
+this.idUsedByDistributor= EMPTY;
+    
+this.producedBy= EMPTY;
+    
+this.productionDate= EMPTY;
+    
+this.startProductionDate= EMPTY;
+    
+this.description= EMPTY;
+    
+this.keywords= EMPTY;
+    
+this.category= EMPTY;
+    
+this.type= EMPTY;
+    
+this.smallImage= EMPTY;
+    
+this.mediumImage= EMPTY;
+    
+this.largeImage= EMPTY;
+    
+this.timeEntered= EMPTY;
+    
+this.lastModified= EMPTY;
+    
+this.price= Money();
+    
+this.comment= EMPTY;
+    
+this.customs= EMPTY;
+    
+this.setDownloads(EMPTY);
+    
+this.groups= EMPTY;
+    
+this.options= EMPTY;
+    
+this.permissions= EMPTY;
+    
+this.specials= EMPTY;
+    
 }
 
 
     public setId(itemId: string){
 var itemId = itemId
-this.itemId= itemId
+this.itemId= itemId;
+    
 }
 
 
     public setNumber(number: string){
 var number = number
-this.number= number
+this.number= number;
+    
 }
 
 
     public setInBaskets(value: string){
 var value = value
-this.inBaskets= value
+this.inBaskets= value;
+    
 }
 
 
     public setWeight(value: string){
 var value = value
-this.weight= value
+this.weight= value;
+    
 }
 
 
     public setNewOrUsed(value: string){
 var value = value
-this.newOrUsed= value
+this.newOrUsed= value;
+    
 }
 
 
     public setSummary(value: string){
 var value = value
-this.summary= value
+this.summary= value;
+    
 }
 
 
     public setDistributor(value: string){
 var value = value
-this.distributor= value
+this.distributor= value;
+    
 }
 
 
     public setIdUsedByDistributor(value: string){
 var value = value
-this.idUsedByDistributor= value
+this.idUsedByDistributor= value;
+    
 }
 
 
     public setProducedBy(value: string){
 var value = value
-this.producedBy= value
+this.producedBy= value;
+    
 }
 
 
     public setProductionDate(value: string){
 var value = value
-this.productionDate= value
+this.productionDate= value;
+    
 }
 
 
     public setStartProductionDate(value: string){
 var value = value
-this.startProductionDate= value
+this.startProductionDate= value;
+    
 }
 
 
     public setDescription(value: string){
 var value = value
-this.description= value
+this.description= value;
+    
 }
 
 
     public setKeywords(value: string){
 var value = value
-this.keywords= value
+this.keywords= value;
+    
 }
 
 
     public setCategory(value: string){
 var value = value
-this.category= value
+this.category= value;
+    
 }
 
 
     public setType(value: string){
 var value = value
-this.type= value
+this.type= value;
+    
 }
 
 
     public setSmallImage(value: string){
 var value = value
-this.smallImage= value
+this.smallImage= value;
+    
 }
 
 
     public setMediumImage(value: string){
 var value = value
-this.mediumImage= value
+this.mediumImage= value;
+    
 }
 
 
     public setLargeImage(value: string){
 var value = value
-this.largeImage= value
+this.largeImage= value;
+    
 }
 
 
     public setTimeEntered(value: string){
 var value = value
-this.timeEntered= value
+this.timeEntered= value;
+    
 }
 
 
     public setLastModified(value: string){
 var value = value
-this.lastModified= value
+this.lastModified= value;
+    
 }
 
 
     public setPrice(value: Money){
 var value = value
-this.price= value
+this.price= value;
+    
 }
 
 
     public setComment(value: string){
 var value = value
-this.comment= value
+this.comment= value;
+    
 }
 
 
     public setCustoms(value: string){
 var value = value
-this.customs= value
+this.customs= value;
+    
 }
 
 
     public setDownloads(value: string){
 var value = value
-this.downloads= value
+this.downloads= value;
+    
 
-                        if(!StringValidationUtil.getInstance()!.isEmpty(this.downloads))
+                        if(!StringValidationUtil.getInstance()!.isEmpty(this.downloads);
+
+                        )
                         
                                     {
                                     
     var downloadInteger: Integer = Integer(Integer.valueOf(this.downloads))!;
         
         
-
+;
+    
 
                         if(downloadInteger!.toInt() != 0)
                         
                                     {
-                                    this.setDownloadable(true)
+                                    this.setDownloadable(true);
+    
 
                                     }
                                 
@@ -386,31 +536,36 @@ this.downloads= value
 
     public setGroups(value: string){
 var value = value
-this.groups= value
+this.groups= value;
+    
 }
 
 
     public setOptions(value: string){
 var value = value
-this.options= value
+this.options= value;
+    
 }
 
 
     public setPermissions(value: string){
 var value = value
-this.permissions= value
+this.permissions= value;
+    
 }
 
 
     public setSpecials(value: string){
 var value = value
-this.specials= value
+this.specials= value;
+    
 }
 
 
     public setEnabled(value: string){
 var value = value
-this.enabled= value
+this.enabled= value;
+    
 }
 
 
@@ -696,7 +851,8 @@ this.enabled= value
 
     public setDownloadable(downloadable: boolean){
 var downloadable = downloadable
-this.downloadable= downloadable
+this.downloadable= downloadable;
+    
 }
 
 
@@ -725,9 +881,11 @@ this.downloadable= downloadable
     var itemTotal: Money = new Money(this.price);
         
         
-
+;
+    
 itemTotal!.multiply(Integer(this.number).
-                            toInt())
+                            toInt());
+    
 
 
 
@@ -737,59 +895,91 @@ itemTotal!.multiply(Integer(this.number).
 }
 
 
-    public toHashMap(): HashMap<Any, Any>{
+    public toHashMap(): HashMap<any, any>{
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PRODUCTSEARCHLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.START, this, "toHashMap")
+                                    logUtil!.put(this.commonStrings!.START, this, "toHashMap");
+    
 
                                     }
                                 
 
-    var hashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
         
         
-
-hashMap!.put(BasicItemData.ID, this.itemId)
-hashMap!.put(BasicItemData.NUMBER, this.number)
-hashMap!.put(BasicItemData.INBASKETS, this.inBaskets)
-hashMap!.put(BasicItemData.WEIGHT, this.weight)
-hashMap!.put(EntryData.getInstance()!.ENABLE, this.enabled)
-hashMap!.put(BasicItemData.NEWORUSED, this.newOrUsed)
-hashMap!.put(BasicItemData.SUMMARY, this.summary)
-hashMap!.put(BasicItemData.DISTRIBUTOR, this.distributor)
-hashMap!.put(BasicItemData.IDUSEDBYDISTRIBUTOR, this.idUsedByDistributor)
-hashMap!.put(BasicItemData.PRODUCEDBY, this.producedBy)
-hashMap!.put(BasicItemData.PRODUCTIONDATE, this.productionDate)
-hashMap!.put(BasicItemData.STARTPRODUCTIONDATE, this.startProductionDate)
-hashMap!.put(BasicItemData.DESCRIPTION, this.description)
-hashMap!.put(BasicItemData.KEYWORDS, this.keywords)
-hashMap!.put(BasicItemData.CATEGORY, this.category)
-hashMap!.put(BasicItemData.TYPE, this.type)
-hashMap!.put(BasicItemData.SMALLIMAGE, this.smallImage)
-hashMap!.put(BasicItemData.MEDIUMIMAGE, this.mediumImage)
-hashMap!.put(BasicItemData.LARGEIMAGE, this.largeImage)
+;
+    
+hashMap!.put(BasicItemData.ID, this.itemId);
+    
+hashMap!.put(BasicItemData.NUMBER, this.number);
+    
+hashMap!.put(BasicItemData.INBASKETS, this.inBaskets);
+    
+hashMap!.put(BasicItemData.WEIGHT, this.weight);
+    
+hashMap!.put(EntryData.getInstance()!.ENABLE, this.enabled);
+    
+hashMap!.put(BasicItemData.NEWORUSED, this.newOrUsed);
+    
+hashMap!.put(BasicItemData.SUMMARY, this.summary);
+    
+hashMap!.put(BasicItemData.DISTRIBUTOR, this.distributor);
+    
+hashMap!.put(BasicItemData.IDUSEDBYDISTRIBUTOR, this.idUsedByDistributor);
+    
+hashMap!.put(BasicItemData.PRODUCEDBY, this.producedBy);
+    
+hashMap!.put(BasicItemData.PRODUCTIONDATE, this.productionDate);
+    
+hashMap!.put(BasicItemData.STARTPRODUCTIONDATE, this.startProductionDate);
+    
+hashMap!.put(BasicItemData.DESCRIPTION, this.description);
+    
+hashMap!.put(BasicItemData.KEYWORDS, this.keywords);
+    
+hashMap!.put(BasicItemData.CATEGORY, this.category);
+    
+hashMap!.put(BasicItemData.TYPE, this.type);
+    
+hashMap!.put(BasicItemData.SMALLIMAGE, this.smallImage);
+    
+hashMap!.put(BasicItemData.MEDIUMIMAGE, this.mediumImage);
+    
+hashMap!.put(BasicItemData.LARGEIMAGE, this.largeImage);
+    
 
     var calendar: Calendar = Calendar.getInstance()!;
         
         
-
+;
+    
 
     var time: string = calendar.getTimeInMillis() as Long.
                             toString()!;
         
         
-
-hashMap!.put(EntryData.getInstance()!.LASTMODIFIED, time)
-hashMap!.put(BasicItemData.PRICE, this.price.toString())
-hashMap!.put(BasicItemData.COMMENT, this.comment)
-hashMap!.put(BasicItemData.CUSTOMS, this.customs)
-hashMap!.put(BasicItemData.DOWNLOADS, this.getDownloads())
-hashMap!.put(BasicItemData.GROUPS, this.groups)
-hashMap!.put(BasicItemData.OPTIONS, this.options)
-hashMap!.put(BasicItemData.PERMISSIONS, this.permissions)
-hashMap!.put(BasicItemData.SPECIALS, this.specials)
+;
+    
+hashMap!.put(EntryData.getInstance()!.LASTMODIFIED, time);
+    
+hashMap!.put(BasicItemData.PRICE, this.price.toString());
+    
+hashMap!.put(BasicItemData.COMMENT, this.comment);
+    
+hashMap!.put(BasicItemData.CUSTOMS, this.customs);
+    
+hashMap!.put(BasicItemData.DOWNLOADS, this.getDownloads());
+    
+hashMap!.put(BasicItemData.GROUPS, this.groups);
+    
+hashMap!.put(BasicItemData.OPTIONS, this.options);
+    
+hashMap!.put(BasicItemData.PERMISSIONS, this.permissions);
+    
+hashMap!.put(BasicItemData.SPECIALS, this.specials);
+    
 
 
 
@@ -804,7 +994,8 @@ hashMap!.put(BasicItemData.SPECIALS, this.specials)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PRODUCTSEARCHLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.START, this, "toVector")
+                                    logUtil!.put(this.commonStrings!.START, this, "toVector");
+    
 
                                     }
                                 
@@ -812,47 +1003,79 @@ hashMap!.put(BasicItemData.SPECIALS, this.specials)
     var values: Vector = new Vector();
         
         
-
-values.add(itemId)
-values.add(number)
-values.add(inBaskets)
-values.add(weight)
-values.add(enabled)
-values.add(newOrUsed)
-values.add(summary)
-values.add(distributor)
-values.add(idUsedByDistributor)
-values.add(producedBy)
-values.add(productionDate)
-values.add(startProductionDate)
-values.add(description)
-values.add(keywords)
-values.add(category)
-values.add(type)
-values.add(this.getSmallImage())
-values.add(this.getMediumImage())
-values.add(this.getLargeImage())
+;
+    
+values.add(itemId);
+    
+values.add(number);
+    
+values.add(inBaskets);
+    
+values.add(weight);
+    
+values.add(enabled);
+    
+values.add(newOrUsed);
+    
+values.add(summary);
+    
+values.add(distributor);
+    
+values.add(idUsedByDistributor);
+    
+values.add(producedBy);
+    
+values.add(productionDate);
+    
+values.add(startProductionDate);
+    
+values.add(description);
+    
+values.add(keywords);
+    
+values.add(category);
+    
+values.add(type);
+    
+values.add(this.getSmallImage());
+    
+values.add(this.getMediumImage());
+    
+values.add(this.getLargeImage());
+    
 
     var calendar: Calendar = Calendar.getInstance()!;
         
         
-
+;
+    
 
     var time: string = calendar.getTimeInMillis() as Long.
                             toString()!;
         
         
-
-values.add(time)
-values.add(time)
-values.add(this.price.toString())
-values.add(this.comment)
-values.add(this.customs)
-values.add(this.getDownloads())
-values.add(this.groups)
-values.add(this.options)
-values.add(this.permissions)
-values.add(this.specials)
+;
+    
+values.add(time);
+    
+values.add(time);
+    
+values.add(this.price.toString());
+    
+values.add(this.comment);
+    
+values.add(this.customs);
+    
+values.add(this.getDownloads());
+    
+values.add(this.groups);
+    
+values.add(this.options);
+    
+values.add(this.permissions);
+    
+values.add(this.specials);
+    
 
 
 
@@ -869,7 +1092,9 @@ values.add(this.specials)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getId() as Object;
+                        return this.getId();
+
+                         as Object;
     
 }
 

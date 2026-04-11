@@ -38,17 +38,21 @@ export class PaymentProcessHelper extends TagHelper {
         
 
     private paymentProcessorComponent: PaymentProcessorComponent
-public constructor (propertiesHashMap: HashMap<Any, Any>, pageContext: PageContext){
+public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
             var propertiesHashMap = propertiesHashMap
 var pageContext = pageContext
 
-    var transformInfoInterface: TransformInfoHttpInterface = TransformInfoHttpFactory.getInstance(propertiesHashMap, pageContext) as TransformInfoHttpInterface;
-        
-        
+    var transformInfoInterface: TransformInfoHttpInterface = TransformInfoHttpFactory.getInstance(propertiesHashMap, pageContext);
 
-this.paymentProcessorComponent= PaymentProcessorComponent(transformInfoInterface)
+                         as TransformInfoHttpInterface;
+        
+        
+;
+    
+this.paymentProcessorComponent= PaymentProcessorComponent(transformInfoInterface);
+    
 }
 
 
@@ -60,6 +64,8 @@ this.paymentProcessorComponent= PaymentProcessorComponent(transformInfoInterface
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.paymentProcessorComponent!.view();
+
+                        ;
     
 }
 

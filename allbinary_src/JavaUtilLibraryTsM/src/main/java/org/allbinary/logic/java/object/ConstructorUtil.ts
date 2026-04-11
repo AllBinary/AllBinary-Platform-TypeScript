@@ -33,21 +33,25 @@ export class ConstructorUtil
          {
         
 
-    public static viewAll(myClass: KClass<*>, lineBreak: string): string{
+    public static viewAll(myClass: Function, lineBreak: string): string{
     //var myClass = myClass
     //var lineBreak = lineBreak
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
     var constructor: Constructor[] = myClass!.getConstructors()!;
         
         
-
-stringBuffer!.append("Constructors: ")
-stringBuffer!.append(lineBreak)
+;
+    
+stringBuffer!.append("Constructors: ");
+    
+stringBuffer!.append(lineBreak);
+    
 
 
 
@@ -58,7 +62,8 @@ stringBuffer!.append(lineBreak)
         
 index < constructor.length; index++)
         {
-stringBuffer!.append(ConstructorUtil.view(constructor[index]!, lineBreak))
+stringBuffer!.append(ConstructorUtil.view(constructor[index]!, lineBreak));
+    
 }
 
 
@@ -66,6 +71,8 @@ stringBuffer!.append(ConstructorUtil.view(constructor[index]!, lineBreak))
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 
@@ -83,18 +90,22 @@ stringBuffer!.append(ConstructorUtil.view(constructor[index]!, lineBreak))
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
         
         
-
+;
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
+;
+    
+stringBuffer!.append(constructor.getName());
+    
 
-stringBuffer!.append(constructor.getName())
-
-    var classes: KClass<*>[] = constructor.getParameterTypes()!;
+    var classes: Function[] = constructor.getParameterTypes()!;
         
         
-
+;
+    
 
 
 
@@ -105,18 +116,25 @@ stringBuffer!.append(constructor.getName())
         
 index < classes.length; index++)
         {
-stringBuffer!.append(commonSeps!.SPACE)
-stringBuffer!.append(classes[index]!.getName())
-stringBuffer!.append(commonSeps!.COLON)
-stringBuffer!.appendint(index)
+stringBuffer!.append(commonSeps!.SPACE);
+    
+stringBuffer!.append(classes[index]!.getName());
+    
+stringBuffer!.append(commonSeps!.COLON);
+    
+stringBuffer!.appendint(index);
+    
 }
 
-stringBuffer!.append(lineBreak)
+stringBuffer!.append(lineBreak);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 
                                     }

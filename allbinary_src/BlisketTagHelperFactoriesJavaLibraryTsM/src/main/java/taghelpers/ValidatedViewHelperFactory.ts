@@ -48,7 +48,7 @@ public constructor (){
 
                 //@Throws(Error::class, LicensingException::class)
             
-    public getInstance(hashMap: HashMap<Any, Any>, pageContext: PageContext): any = {}{
+    public getInstance(hashMap: HashMap<any, any>, pageContext: PageContext): any = {}{
 var hashMap = hashMap
 var pageContext = pageContext
 
@@ -59,13 +59,16 @@ var pageContext = pageContext
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return ValidationViewHelper(hashMap, pageContext);
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORYERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e);
+    
 
                                     }
                                 

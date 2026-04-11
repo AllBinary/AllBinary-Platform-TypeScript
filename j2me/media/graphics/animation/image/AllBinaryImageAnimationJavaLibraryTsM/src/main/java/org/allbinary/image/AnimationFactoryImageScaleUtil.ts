@@ -67,7 +67,8 @@ export class AnimationFactoryImageScaleUtil
     //var scaleHeight = scaleHeight
 
     var scaledImage: Image
-
+;
+    
 
                         if(scaleWidth != 0 && scaleHeight != 0)
                         
@@ -76,22 +77,26 @@ export class AnimationFactoryImageScaleUtil
     var scaleX: number = (scaleWidth.toFloat()) /(width.toFloat());
         
         
-
+;
+    
 
     var scaleY: number = (scaleHeight.toFloat()) /(height.toFloat());
         
         
-
+;
+    
 
                         if((scaleX == 1.0f && scaleY == 1.0f) || (scaleX == 0.0f || scaleY == 0.0f))
                         
                                     {
-                                    scaledImage= image
+                                    scaledImage= image;
+    
 
                                     }
                                 
                         else {
-                            scaledImage= this.imageScaleUtil!.scale(image, (scaleX *width).toInt(), (scaleY *height).toInt())
+                            scaledImage= this.imageScaleUtil!.scale(image, (scaleX *width).toInt(), (scaleY *height).toInt());
+    
 
                         }
                             
@@ -99,7 +104,8 @@ export class AnimationFactoryImageScaleUtil
                                     }
                                 
                         else {
-                            scaledImage= image
+                            scaledImage= image;
+    
 
                         }
                             
@@ -120,7 +126,8 @@ export class AnimationFactoryImageScaleUtil
     var scaleProperties: ScaleProperties = baseImageAnimationFactory!.getScalePropertiesP()!;
         
         
-
+;
+    
 
                         if(scaleProperties!.scaleWidth != 0 && scaleProperties!.scaleHeight != 0)
                         
@@ -129,17 +136,20 @@ export class AnimationFactoryImageScaleUtil
     var animationFactoryInitializationVisitor: AnimationFactoryInitializationVisitor = baseImageAnimationFactory!.getAnimationFactoryInitializationVisitorP()!;
         
         
-
+;
+    
 
     var scaleX: number = (scaleProperties!.scaleWidth.toFloat()) /(animationFactoryInitializationVisitor!.width.toFloat());
         
         
-
+;
+    
 
     var scaleY: number = (scaleProperties!.scaleHeight.toFloat()) /(animationFactoryInitializationVisitor!.height.toFloat());
         
         
-
+;
+    
 
                         if((scaleX == 1.0f && scaleY == 1.0f) || (scaleX == 0.0f || scaleY == 0.0f))
                         
@@ -148,8 +158,10 @@ export class AnimationFactoryImageScaleUtil
                                     }
                                 
                         else {
-                            animationFactoryInitializationVisitor!.dx= (animationFactoryInitializationVisitor!.originalDx *scaleX).toInt()
-animationFactoryInitializationVisitor!.dy= (animationFactoryInitializationVisitor!.originalDy *scaleY).toInt()
+                            animationFactoryInitializationVisitor!.dx= (animationFactoryInitializationVisitor!.originalDx *scaleX).toInt();
+    
+animationFactoryInitializationVisitor!.dy= (animationFactoryInitializationVisitor!.originalDy *scaleY).toInt();
+    
 
                         }
                             

@@ -18,10 +18,13 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { HashMap } from "../../../../java/util/HashMap.js";
 
     
-import { Vector } from "../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../java/util/Vector.js";
 
     
 import { GPoint } from "../../../../org/allbinary/graphics/GPoint.js";
@@ -70,14 +73,19 @@ var y = y
     var graphicsPipe: BasicGraphicsPipeline = new BasicGraphicsPipeline(list);
         
         
-
-graphicsPipe!.createMatrix()
-graphicsPipe!.translate(x, y)
+;
+    
+graphicsPipe!.createMatrix();
+    
+graphicsPipe!.translate(x, y);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return graphicsPipe!.getMatrix();
+
+                        ;
     
 }
 
@@ -125,19 +133,21 @@ public constructor (){
 
                 //@Throws(Error::class)
             
-    public calculate(hashMap: HashMap<Any, Any>){
+    public calculate(hashMap: HashMap<any, any>){
 var hashMap = hashMap
 
-    var graphicItemArray: any = {}[] = hashMap!.keys.toTypedArray()!;
+    var graphicItemArray: any[] = hashMap!.keys.toTypedArray()!;
         
         
-
+;
+    
 
     var size: number = graphicItemArray!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -149,33 +159,42 @@ var hashMap = hashMap
 index < size; index++)
         {
 
-    var item: GraphicItemInterface = hashMap!.get(graphicItemArray[index]!) as GraphicItemInterface;
-        
-        
+    var item: GraphicItemInterface = hashMap!.get(graphicItemArray[index]!);
 
+                         as GraphicItemInterface;
+        
+        
+;
+    
 
                         if(item.getName() == LinesGraphicItem.getStaticName())
                         
                                     {
-                                    this.getInstance(item.getPointsInterface()!.getPoints())
+                                    this.getInstance(item.getPointsInterface()!.getPoints());
+    
 
                                     }
                                 
 }
 
-logUtil!.put("minX: " +minX +" minY: " +minY +" maxX: " +maxX +" maxY: " +maxY, this, commonStrings!.GET_INSTANCE)
-setWidth(maxX -minX)
-setHeight(maxY -minY)
+logUtil!.put("minX: " +minX +" minY: " +minY +" maxX: " +maxX +" maxY: " +maxY, this, commonStrings!.GET_INSTANCE);
+    
+setWidth(maxX -minX);
+    
+setHeight(maxY -minY);
+    
 
     var max: number = getWidth()!;
         
         
-
+;
+    
 
                         if(getHeight() > max)
                         
                                     {
-                                    max= getHeight()
+                                    max= getHeight();
+    
 
                                     }
                                 
@@ -183,52 +202,64 @@ setHeight(maxY -minY)
     var middle: number = max /2;
         
         
-
+;
+    
 
     var commonLabels: CommonLabels = CommonLabels.getInstance()!;
         
         
-
+;
+    
 
     var s: string = StringMaker().
                             append(commonLabels!.WIDTH_LABEL)!.appendint(getWidth())!.append(commonLabels!.HEIGHT_LABEL)!.appendint(getHeight())!.append(" max: ")!.appendint(max)!.append(" middle: ")!.appendint(middle)!.toString()!;
         
         
-
-logUtil!.put(s, this, commonStrings!.GET_INSTANCE)
+;
+    
+logUtil!.put(s, this, commonStrings!.GET_INSTANCE);
+    
 
     var currentMiddleX: number = minX +getWidth() /2;
         
         
-
+;
+    
 
     var currentMiddleY: number = minY +getHeight() /2;
         
         
-
-dx= middle -currentMiddleX
-dy= middle -currentMiddleY
+;
+    
+dx= middle -currentMiddleX;
+    
+dy= middle -currentMiddleY;
+    
 }
 
 
                 //@Throws(Error::class)
             
-    public transform(hashMap: HashMap<Any, Any>){
+    public transform(hashMap: HashMap<any, any>){
 var hashMap = hashMap
-this.calculate(hashMap)
+this.calculate(hashMap);
+    
 logUtil!.put(StringMaker().
-                            append(" dx: ")!.appendint(dx)!.append(" dy: ")!.appendint(dy)!.toString(), this, commonStrings!.GET_INSTANCE)
+                            append(" dx: ")!.appendint(dx)!.append(" dy: ")!.appendint(dy)!.toString(), this, commonStrings!.GET_INSTANCE);
+    
 
-    var graphicItemArray: any = {}[] = hashMap!.keys.toTypedArray()!;
+    var graphicItemArray: any[] = hashMap!.keys.toTypedArray()!;
         
         
-
+;
+    
 
     var size: number = graphicItemArray!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -240,22 +271,29 @@ logUtil!.put(StringMaker().
 index < size; index++)
         {
 
-    var item: GraphicItemInterface = hashMap!.get(graphicItemArray[index]!) as GraphicItemInterface;
-        
-        
+    var item: GraphicItemInterface = hashMap!.get(graphicItemArray[index]!);
 
+                         as GraphicItemInterface;
+        
+        
+;
+    
 
     var list: BasicArrayList = translate(item.getPointsInterface()!.getPoints(), dx, dy)!;
         
         
-
+;
+    
 
     var newPoints: Points = new Points();
         
         
-
-newPoints!.addPoints(list)
-item.setPointsInterface(newPoints)
+;
+    
+newPoints!.addPoints(list);
+    
+item.setPointsInterface(newPoints);
+    
 }
 
 }
@@ -271,12 +309,14 @@ var pointVector = pointVector
     var newVector: Vector = new Vector();
         
         
-
+;
+    
 
     var size: number = pointVector!.size()!;
         
         
-
+;
+    
 
 
 
@@ -288,15 +328,19 @@ var pointVector = pointVector
 index < size; index++)
         {
 
-    var point: GPoint = pointVector!.get(index) as GPoint;
-        
-        
+    var point: GPoint = pointVector!.get(index);
 
+                         as GPoint;
+        
+        
+;
+    
 
                         if(point.getX() < minX)
                         
                                     {
-                                    minX= point.getX()
+                                    minX= point.getX();
+    
 
                                     }
                                 
@@ -304,7 +348,8 @@ index < size; index++)
                         if(point.getX() > maxX)
                         
                                     {
-                                    maxX= point.getX()
+                                    maxX= point.getX();
+    
 
                                     }
                                 
@@ -312,7 +357,8 @@ index < size; index++)
                         if(point.getY() < minY)
                         
                                     {
-                                    minY= point.getY()
+                                    minY= point.getY();
+    
 
                                     }
                                 
@@ -320,15 +366,19 @@ index < size; index++)
                         if(point.getY() > maxY)
                         
                                     {
-                                    maxY= point.getY()
+                                    maxY= point.getY();
+    
 
                                     }
                                 
 }
 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e);
+    
 
 
 
@@ -350,7 +400,8 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e)
 
     public setWidth(width: number){
 var width = width
-this.width= width
+this.width= width;
+    
 }
 
 
@@ -366,7 +417,8 @@ this.width= width
 
     public setHeight(height: number){
 var height = height
-this.height= height
+this.height= height;
+    
 }
 
 

@@ -30,7 +30,8 @@ public constructor (categoryId: string){
 
             super();
             var categoryId = categoryId
-this.categoryId= categoryId
+this.categoryId= categoryId;
+    
 }
 
 

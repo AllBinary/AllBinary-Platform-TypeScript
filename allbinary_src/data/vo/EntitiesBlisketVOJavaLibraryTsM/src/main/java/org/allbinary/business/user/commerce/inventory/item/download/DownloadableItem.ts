@@ -18,13 +18,16 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { Calendar } from "../../../../../../../../java/util/Calendar.js";
 
     
 import { HashMap } from "../../../../../../../../java/util/HashMap.js";
 
     
-import { Vector } from "../../../../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../../../../java/util/Vector.js";
 
     
 import { EntryData } from "../../../../../../../../org/allbinary/business/entry/EntryData.js";
@@ -84,109 +87,189 @@ public constructor (id: string){
     var EMPTY_STRING: string = StringUtil.getInstance()!.EMPTY_STRING;
         
         
-
+;
+    
 this.id= ProductIdGenerator().
-                            getNext()
-this.basicItemId= id
-this.enabled= EntryData.getInstance()!.YES
-this.system= "Java"
-this.platform= "Android"
-this.specialName= EMPTY_STRING
-this.version= EMPTY_STRING
-this.changes= EMPTY_STRING
-this.licenseFile= EMPTY_STRING
-this.file= EMPTY_STRING
-this.size= (0).toLong()
-this.validTime= (0).toLong()
-this.retries= EMPTY_STRING
+                            getNext();
+    
+this.basicItemId= id;
+    
+this.enabled= EntryData.getInstance()!.YES;
+    
+this.system= "Java";
+    
+this.platform= "Android";
+    
+this.specialName= EMPTY_STRING;
+    
+this.version= EMPTY_STRING;
+    
+this.changes= EMPTY_STRING;
+    
+this.licenseFile= EMPTY_STRING;
+    
+this.file= EMPTY_STRING;
+    
+this.size= (0).toLong();
+    
+this.validTime= (0).toLong();
+    
+this.retries= EMPTY_STRING;
+    
 }
 
-public constructor (hashMap: HashMap<Any, Any>){
+public constructor (hashMap: HashMap<any, any>){
 
             super();
             var hashMap = hashMap
-this.id= hashMap!.get(DownloadItemData.ID) as String
-this.basicItemId= hashMap!.get(BasicItemData.ID) as String
-this.enabled= hashMap!.get(EntryData.getInstance()!.ENABLE) as String
-this.system= hashMap!.get(DownloadItemData.SYSTEM) as String
-this.platform= hashMap!.get(DownloadItemData.PLATFORM) as String
-this.specialName= hashMap!.get(DownloadItemData.SPECIAL_NAME) as String
-this.version= hashMap!.get(DownloadItemData.VERSION) as String
-this.changes= hashMap!.get(DownloadItemData.CHANGES) as String
-this.licenseFile= hashMap!.get(DownloadItemData.LICENSE_FILE) as String
-this.file= hashMap!.get(DownloadItemData.FILE) as String
+this.id= hashMap!.get(DownloadItemData.ID);
 
-    var value: string = hashMap!.get(DownloadItemData.SIZE) as String;
+                         as String;
+    
+this.basicItemId= hashMap!.get(BasicItemData.ID);
+
+                         as String;
+    
+this.enabled= hashMap!.get(EntryData.getInstance()!.ENABLE);
+
+                         as String;
+    
+this.system= hashMap!.get(DownloadItemData.SYSTEM);
+
+                         as String;
+    
+this.platform= hashMap!.get(DownloadItemData.PLATFORM);
+
+                         as String;
+    
+this.specialName= hashMap!.get(DownloadItemData.SPECIAL_NAME);
+
+                         as String;
+    
+this.version= hashMap!.get(DownloadItemData.VERSION);
+
+                         as String;
+    
+this.changes= hashMap!.get(DownloadItemData.CHANGES);
+
+                         as String;
+    
+this.licenseFile= hashMap!.get(DownloadItemData.LICENSE_FILE);
+
+                         as String;
+    
+this.file= hashMap!.get(DownloadItemData.FILE);
+
+                         as String;
+    
+
+    var value: string = hashMap!.get(DownloadItemData.SIZE);
+
+                         as String;
         
         
+;
+    
 
+                        if(!StringValidationUtil.getInstance()!.isEmpty(value);
 
-                        if(!StringValidationUtil.getInstance()!.isEmpty(value))
+                        )
                         
                                     {
-                                    this.size= (value).toLong()
+                                    this.size= (value).toLong();
+    
 
                                     }
                                 
                         else {
-                            this.size= 0 as Long
+                            this.size= 0 as Long;
+    
 
                         }
                             
 
-    var validTime: string = hashMap!.get(DownloadItemData.VALID_TIME) as String;
+    var validTime: string = hashMap!.get(DownloadItemData.VALID_TIME);
+
+                         as String;
         
         
+;
+    
 
+                        if(!StringValidationUtil.getInstance()!.isEmpty(validTime);
 
-                        if(!StringValidationUtil.getInstance()!.isEmpty(validTime))
+                        )
                         
                                     {
-                                    this.validTime= (validTime).toLong()
+                                    this.validTime= (validTime).toLong();
+    
 
                                     }
                                 
                         else {
                             
-    var totalYears: string = hashMap!.get(DownloadItemData.VALID_TIME_YEARS) as String;
-        
-        
+    var totalYears: string = hashMap!.get(DownloadItemData.VALID_TIME_YEARS);
 
-
-    var totalMonths: string = hashMap!.get(DownloadItemData.VALID_TIME_MONTHS) as String;
+                         as String;
         
         
+;
+    
 
+    var totalMonths: string = hashMap!.get(DownloadItemData.VALID_TIME_MONTHS);
 
-    var totalDays: string = hashMap!.get(DownloadItemData.VALID_TIME_DAYS) as String;
+                         as String;
         
         
+;
+    
 
+    var totalDays: string = hashMap!.get(DownloadItemData.VALID_TIME_DAYS);
 
-    var totalHours: string = hashMap!.get(DownloadItemData.VALID_TIME_HOURS) as String;
+                         as String;
         
         
+;
+    
 
+    var totalHours: string = hashMap!.get(DownloadItemData.VALID_TIME_HOURS);
 
-    var totalMinutes: string = hashMap!.get(DownloadItemData.VALID_TIME_MINUTES) as String;
+                         as String;
         
         
+;
+    
 
+    var totalMinutes: string = hashMap!.get(DownloadItemData.VALID_TIME_MINUTES);
 
-    var totalSeconds: string = hashMap!.get(DownloadItemData.VALID_TIME_SECONDS) as String;
+                         as String;
         
         
+;
+    
 
+    var totalSeconds: string = hashMap!.get(DownloadItemData.VALID_TIME_SECONDS);
+
+                         as String;
+        
+        
+;
+    
 
     var totalTime: number = TimeUtil.getInstance()!.getTotalTime(totalYears, totalMonths, totalDays, totalHours, totalMinutes, totalSeconds)!;
         
         
-
-this.validTime= totalTime as Long
+;
+    
+this.validTime= totalTime as Long;
+    
 
                         }
                             
-this.retries= hashMap!.get(DownloadItemData.RETRIES) as String
+this.retries= hashMap!.get(DownloadItemData.RETRIES);
+
+                         as String;
+    
 }
 
 
@@ -195,33 +278,51 @@ this.retries= hashMap!.get(DownloadItemData.RETRIES) as String
     var calendar: Calendar = Calendar.getInstance()!;
         
         
-
+;
+    
 
     var time: string = calendar.getTimeInMillis() as Long.
                             toString()!;
         
         
-
+;
+    
 
     var values: Vector = new Vector();
         
         
-
-values.add(getId())
-values.add(this.basicItemId)
-values.add(this.enabled)
-values.add(this.getSpecialName())
-values.add(this.getVersion())
-values.add(this.getChanges())
-values.add(this.getSystem())
-values.add(this.getPlatform())
-values.add(this.getLicenseFile())
-values.add(this.getFile())
-values.add(this.getSize()!.toString())
-values.add(this.getValidTime()!.toString())
-values.add(this.getRetries())
-values.add(time)
-values.add(time)
+;
+    
+values.add(getId());
+    
+values.add(this.basicItemId);
+    
+values.add(this.enabled);
+    
+values.add(this.getSpecialName());
+    
+values.add(this.getVersion());
+    
+values.add(this.getChanges());
+    
+values.add(this.getSystem());
+    
+values.add(this.getPlatform());
+    
+values.add(this.getLicenseFile());
+    
+values.add(this.getFile());
+    
+values.add(this.getSize()!.toString());
+    
+values.add(this.getValidTime()!.toString());
+    
+values.add(this.getRetries());
+    
+values.add(time);
+    
+values.add(time);
+    
 
 
 
@@ -231,38 +332,54 @@ values.add(time)
 }
 
 
-    public toHashMap(): HashMap<Any, Any>{
+    public toHashMap(): HashMap<any, any>{
 
-    var values: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var values: HashMap<any, any> = new HashMap<any, any>();
         
         
-
-values.put(DownloadItemData.ID, this.getId())
-values.put(BasicItemData.ID, this.basicItemId)
-values.put(EntryData.getInstance()!.ENABLE, this.enabled)
-values.put(DownloadItemData.SYSTEM, this.getSystem())
-values.put(DownloadItemData.PLATFORM, this.getPlatform())
-values.put(DownloadItemData.SPECIAL_NAME, this.getSpecialName())
-values.put(DownloadItemData.VERSION, this.getVersion())
-values.put(DownloadItemData.CHANGES, this.getChanges())
-values.put(DownloadItemData.LICENSE_FILE, this.getLicenseFile())
-values.put(DownloadItemData.FILE, this.getFile())
-values.put(DownloadItemData.SIZE, this.getSize()!.toString())
-values.put(DownloadItemData.VALID_TIME, this.getValidTime()!.toString())
-values.put(DownloadItemData.RETRIES, this.getRetries())
+;
+    
+values.put(DownloadItemData.ID, this.getId());
+    
+values.put(BasicItemData.ID, this.basicItemId);
+    
+values.put(EntryData.getInstance()!.ENABLE, this.enabled);
+    
+values.put(DownloadItemData.SYSTEM, this.getSystem());
+    
+values.put(DownloadItemData.PLATFORM, this.getPlatform());
+    
+values.put(DownloadItemData.SPECIAL_NAME, this.getSpecialName());
+    
+values.put(DownloadItemData.VERSION, this.getVersion());
+    
+values.put(DownloadItemData.CHANGES, this.getChanges());
+    
+values.put(DownloadItemData.LICENSE_FILE, this.getLicenseFile());
+    
+values.put(DownloadItemData.FILE, this.getFile());
+    
+values.put(DownloadItemData.SIZE, this.getSize()!.toString());
+    
+values.put(DownloadItemData.VALID_TIME, this.getValidTime()!.toString());
+    
+values.put(DownloadItemData.RETRIES, this.getRetries());
+    
 
     var calendar: Calendar = Calendar.getInstance()!;
         
         
-
+;
+    
 
     var time: string = new calendar.getTimeInMillis() as Long.
-                            toString().toCharArray().concatToString()
-                                ;
+                            toString();
         
         
-
-values.put(EntryData.getInstance()!.LASTMODIFIED, time)
+;
+    
+values.put(EntryData.getInstance()!.LASTMODIFIED, time);
+    
 
 
 

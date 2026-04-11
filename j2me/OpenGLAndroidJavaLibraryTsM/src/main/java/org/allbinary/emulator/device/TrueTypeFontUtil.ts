@@ -127,38 +127,49 @@ private constructor ()
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
+;
+    
 
     var file: File = ResourceUtil.getInstance()!.getContext()!.getFilesDir()!;
         
         
-
+;
+    
 
     var path: string = file.getAbsolutePath() +CanvasStrings.getInstance()!.FONT_ATLAS;
         
         
-
-logUtil!.put(path, this, commonStrings!.CONSTRUCTOR)
+;
+    
+logUtil!.put(path, this, commonStrings!.CONSTRUCTOR);
+    
 
     var fos: FileOutputStream = new FileOutputStream(path);
         
         
-
+;
+    
 
     var bitmap: Bitmap = 
                                     (getImage as AndroidImageInterface).getBitmap()!;
         
         
+;
+    
+bitmap.compress(Bitmap.CompressFormat.PNG, 100, fos);
+    
 
-bitmap.compress(Bitmap.CompressFormat.PNG, 100, fos)
-} catch(e: Exception)
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-PreLogUtil.put(commonStrings!.EXCEPTION, this, commonStrings!.EXCEPTION, e)
+;
+    
+PreLogUtil.put(commonStrings!.EXCEPTION, this, commonStrings!.EXCEPTION, e);
+    
 }
 
 }
@@ -177,77 +188,96 @@ PreLogUtil.put(commonStrings!.EXCEPTION, this, commonStrings!.EXCEPTION, e)
     var cellsPerRow2: number = CELLS_PER_ROW *2;
         
         
-
+;
+    
 
     var cellsPerRow3: number = CELLS_PER_ROW *3;
         
         
-
+;
+    
 
     var cellsPerRow4: number = CELLS_PER_ROW *4;
         
         
-
+;
+    
 
     var cellsPerRow5: number = CELLS_PER_ROW *5;
         
         
-
+;
+    
 
     var cellsPerRow6: number = CELLS_PER_ROW *6;
         
         
-
+;
+    
 
     var cellsPerRow7: number = CELLS_PER_ROW *7;
         
         
-
+;
+    
 
     var typeface: Typeface = Typeface.DEFAULT;
         
         
-
+;
+    
 
     var textureSize: number = this.getAsTextureSize(CELLS_PER_ROW *cellSize)!;
         
         
-
+;
+    
 
     var bitmap: Bitmap = Bitmap.createBitmap(textureSize, textureSize, Bitmap.Config.ARGB_8888)!;
         
         
-
+;
+    
 
     var canvas: Canvas = new Canvas(bitmap);
         
         
-
+;
+    
 
     var paint: Paint = new Paint();
         
         
-
-paint.setTypeface(typeface)
-paint.setTextSize(realFontSize.toFloat())
-paint.setAlpha(basicColor!.alpha.toInt())
-paint.setColor(basicColor!.toInt())
+;
+    
+paint.setTypeface(typeface);
+    
+paint.setTextSize(realFontSize.toFloat());
+    
+paint.setAlpha(basicColor!.alpha.toInt());
+    
+paint.setColor(basicColor!.toInt());
+    
 
     var biggestHeight: number = 0;
         
         
-
+;
+    
 
     var bounds: Rect = new Rect();
         
         
-
+;
+    
 
     var x: number= 0
-
+;
+    
 
     var y: number= 0
-
+;
+    
 
 
 
@@ -258,26 +288,35 @@ paint.setColor(basicColor!.toInt())
         
 index < size; index++)
         {
-characterArray[0]= pattern[index]
-paint.getTextBounds(characterArray, 0, 1, bounds)
-_characterWidth[index]= bounds.right
+characterArray[0]= pattern[index];
+    
+paint.getTextBounds(characterArray, 0, 1, bounds);
+    
+_characterWidth[index]= bounds.right;
+    
 
                         if(bounds.bottom -bounds.top > biggestHeight)
                         
                                     {
-                                    biggestHeight= bounds.bottom -bounds.top
+                                    biggestHeight= bounds.bottom -bounds.top;
+    
 
                                     }
                                 
-x= (index % CELLS_PER_ROW) *cellSize
-x += (cellSize shr 1)
-x -= (_characterWidth[index] shr 1)
-y= 0
+x= (index % CELLS_PER_ROW) *cellSize;
+    
+x += (cellSize shr 1);
+    
+x -= (_characterWidth[index] shr 1);
+    
+y= 0;
+    
 
                         if(index >= CELLS_PER_ROW)
                         
                                     {
-                                    y += cellSize
+                                    y += cellSize;
+    
 
                                     }
                                 
@@ -285,7 +324,8 @@ y= 0
                         if(index >= cellsPerRow2)
                         
                                     {
-                                    y += cellSize
+                                    y += cellSize;
+    
 
                                     }
                                 
@@ -293,7 +333,8 @@ y= 0
                         if(index >= cellsPerRow3)
                         
                                     {
-                                    y += cellSize
+                                    y += cellSize;
+    
 
                                     }
                                 
@@ -301,7 +342,8 @@ y= 0
                         if(index >= cellsPerRow4)
                         
                                     {
-                                    y += cellSize
+                                    y += cellSize;
+    
 
                                     }
                                 
@@ -309,7 +351,8 @@ y= 0
                         if(index >= cellsPerRow5)
                         
                                     {
-                                    y += cellSize
+                                    y += cellSize;
+    
 
                                     }
                                 
@@ -317,7 +360,8 @@ y= 0
                         if(index >= cellsPerRow6)
                         
                                     {
-                                    y += cellSize
+                                    y += cellSize;
+    
 
                                     }
                                 
@@ -325,22 +369,31 @@ y= 0
                         if(index >= cellsPerRow7)
                         
                                     {
-                                    y += cellSize
+                                    y += cellSize;
+    
 
                                     }
                                 
-y += cellSize
-y -= (cellSize shr 2)
-canvas.drawText(characterArray, 0, 1, x.toFloat() -3, y.toFloat() -6, paint)
+y += cellSize;
+    
+y -= (cellSize shr 2);
+    
+canvas.drawText(characterArray, 0, 1, x.toFloat() -3, y.toFloat() -6, paint);
+    
 }
 
-canvas.save()
+canvas.save();
+    
 
     var image: Image = AndroidImmutableImage.create(bitmap)!;
         
         
+;
+    
+this.fontImage= this.preResourceImageUtil!.encapsulate(image);
 
-this.fontImage= this.preResourceImageUtil!.encapsulate(image) as OpenGLESImage
+                         as OpenGLESImage;
+    
 
 
 
@@ -363,27 +416,33 @@ this.fontImage= this.preResourceImageUtil!.encapsulate(image) as OpenGLESImage
 }
 
 
-    public getFontWidths(filename: string, fontSize: number): IntArray{
+    public getFontWidths(filename: string, fontSize: number): number[]{
     //var filename = filename
     //var fontSize = fontSize
 
     var typeface: Typeface = Typeface.DEFAULT;
         
         
-
+;
+    
 
     var paint: Paint = new Paint();
         
         
-
-paint.setTypeface(typeface)
-paint.setTextSize(fontSize.toFloat())
-paint.setARGB(255, 255, 255, 255)
+;
+    
+paint.setTypeface(typeface);
+    
+paint.setTextSize(fontSize.toFloat());
+    
+paint.setARGB(255, 255, 255, 255);
+    
 
     var bounds: Rect = new Rect();
         
         
-
+;
+    
 
 
 
@@ -394,8 +453,10 @@ paint.setARGB(255, 255, 255, 255)
         
 index < size; index++)
         {
-characterArray[0]= pattern[index]
-paint.getTextBounds(characterArray, 0, 1, bounds)
+characterArray[0]= pattern[index];
+    
+paint.getTextBounds(characterArray, 0, 1, bounds);
+    
 
                         if(index < lastCapIndex)
                         
@@ -404,7 +465,8 @@ paint.getTextBounds(characterArray, 0, 1, bounds)
                         if(characterArray[0] == '1')
                         
                                     {
-                                    _characterWidth[index]= bounds.right +3
+                                    _characterWidth[index]= bounds.right +3;
+    
 
                                     }
                                 
@@ -412,7 +474,8 @@ paint.getTextBounds(characterArray, 0, 1, bounds)
                         if(characterArray[0] == 'J' || characterArray[0] == 'V' || characterArray[0] == '2' || characterArray[0] == '9' || characterArray[0] == 'I' || characterArray[0] == 'N' || characterArray[0] == 'U')
                         
                                     {
-                                    _characterWidth[index]= bounds.right +1
+                                    _characterWidth[index]= bounds.right +1;
+    
 
                                     }
                                 
@@ -420,7 +483,8 @@ paint.getTextBounds(characterArray, 0, 1, bounds)
                         if(characterArray[0] == '4' || characterArray[0] == 'C' || characterArray[0] == 'E' || characterArray[0] == 'O')
                         
                                     {
-                                    _characterWidth[index]= bounds.right -2
+                                    _characterWidth[index]= bounds.right -2;
+    
 
                                     }
                                 
@@ -428,7 +492,8 @@ paint.getTextBounds(characterArray, 0, 1, bounds)
                         if(characterArray[0] == 'B' || characterArray[0] == 'D' || characterArray[0] == 'G' || characterArray[0] == 'H' || characterArray[0] == 'T' || characterArray[0] == 'W')
                         
                                     {
-                                    _characterWidth[index]= bounds.right -3
+                                    _characterWidth[index]= bounds.right -3;
+    
 
                                     }
                                 
@@ -436,7 +501,8 @@ paint.getTextBounds(characterArray, 0, 1, bounds)
                         if(characterArray[0] == 'A' || characterArray[0] == 'Q' || characterArray[0] == 'R')
                         
                                     {
-                                    _characterWidth[index]= bounds.right -5
+                                    _characterWidth[index]= bounds.right -5;
+    
 
                                     }
                                 
@@ -444,7 +510,8 @@ paint.getTextBounds(characterArray, 0, 1, bounds)
                         if(characterArray[0] == 'M')
                         
                                     {
-                                    _characterWidth[index]= bounds.right -6
+                                    _characterWidth[index]= bounds.right -6;
+    
 
                                     }
                                 
@@ -452,12 +519,14 @@ paint.getTextBounds(characterArray, 0, 1, bounds)
                         if(characterArray[0] == 'm')
                         
                                     {
-                                    _characterWidth[index]= bounds.right -8
+                                    _characterWidth[index]= bounds.right -8;
+    
 
                                     }
                                 
                         else {
-                            _characterWidth[index]= bounds.right
+                            _characterWidth[index]= bounds.right;
+    
 
                         }
                             
@@ -469,7 +538,8 @@ paint.getTextBounds(characterArray, 0, 1, bounds)
                         if(characterArray[0] == ' ')
                         
                                     {
-                                    _characterWidth[index]= bounds.right +10
+                                    _characterWidth[index]= bounds.right +10;
+    
 
                                     }
                                 
@@ -477,7 +547,8 @@ paint.getTextBounds(characterArray, 0, 1, bounds)
                         if(characterArray[0] == 'l' || characterArray[0] == 'i' || characterArray[0] == 'j' || characterArray[0] == '.' || characterArray[0] == '!' || characterArray[0] == '|')
                         
                                     {
-                                    _characterWidth[index]= bounds.right +6
+                                    _characterWidth[index]= bounds.right +6;
+    
 
                                     }
                                 
@@ -485,7 +556,8 @@ paint.getTextBounds(characterArray, 0, 1, bounds)
                         if(characterArray[0] == 'f' || characterArray[0] == 't' || characterArray[0] == 'u' || characterArray[0] == 'v')
                         
                                     {
-                                    _characterWidth[index]= bounds.right +1
+                                    _characterWidth[index]= bounds.right +1;
+    
 
                                     }
                                 
@@ -493,7 +565,8 @@ paint.getTextBounds(characterArray, 0, 1, bounds)
                         if(characterArray[0] == 'r')
                         
                                     {
-                                    _characterWidth[index]= bounds.right +2
+                                    _characterWidth[index]= bounds.right +2;
+    
 
                                     }
                                 
@@ -501,7 +574,8 @@ paint.getTextBounds(characterArray, 0, 1, bounds)
                         if(characterArray[0] == 'a' || characterArray[0] == 'b' || characterArray[0] == 'g' || characterArray[0] == 'u')
                         
                                     {
-                                    _characterWidth[index]= bounds.right -1
+                                    _characterWidth[index]= bounds.right -1;
+    
 
                                     }
                                 
@@ -509,7 +583,8 @@ paint.getTextBounds(characterArray, 0, 1, bounds)
                         if(characterArray[0] == 'o' || characterArray[0] == 'e')
                         
                                     {
-                                    _characterWidth[index]= bounds.right -2
+                                    _characterWidth[index]= bounds.right -2;
+    
 
                                     }
                                 
@@ -517,12 +592,14 @@ paint.getTextBounds(characterArray, 0, 1, bounds)
                         if(characterArray[0] == 'm')
                         
                                     {
-                                    _characterWidth[index]= bounds.right -7
+                                    _characterWidth[index]= bounds.right -7;
+    
 
                                     }
                                 
                         else {
-                            _characterWidth[index]= bounds.right
+                            _characterWidth[index]= bounds.right;
+    
 
                         }
                             
@@ -531,7 +608,8 @@ paint.getTextBounds(characterArray, 0, 1, bounds)
                             
 }
 
-_characterWidth[0]= (fontSize shr 1) -2
+_characterWidth[0]= (fontSize shr 1) -2;
+    
 
 
 

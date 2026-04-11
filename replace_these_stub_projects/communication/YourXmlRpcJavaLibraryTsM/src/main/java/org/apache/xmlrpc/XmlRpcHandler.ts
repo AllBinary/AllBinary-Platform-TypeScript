@@ -4,7 +4,10 @@
 
 
 
-import { Vector } from "../../../java/util/Vector.js";
+            import Vector from "@ohos.util.Vector";
+        
+
+//import { Vector } from "../../../java/util/Vector.js";
 
     
 
@@ -13,7 +16,7 @@ interface XmlRpcHandler {
 
                 //@Throws(Error::class)
             
-    public execute(method: string, params: Vector<Any>): any = {}
+    public execute(method: string, params: Vector<any>): any = {}
 
 }
                 

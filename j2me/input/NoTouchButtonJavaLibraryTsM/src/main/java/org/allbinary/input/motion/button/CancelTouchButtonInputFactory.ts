@@ -51,7 +51,8 @@ private constructor (){
     var basicTouchInputFactory: BasicTouchInputFactory = BasicTouchInputFactory.getInstance()!;
         
         
-
+;
+    
 
 
 
@@ -62,13 +63,18 @@ private constructor (){
         
 index >= 0; index--)
         {
-cancelInputArray[index]= basicTouchInputFactory!.NONE
+cancelInputArray[index]= basicTouchInputFactory!.NONE;
+    
 }
 
-cancelInputArray[basicTouchInputFactory!.UP.getId()]= basicTouchInputFactory!.DOWN
-cancelInputArray[basicTouchInputFactory!.DOWN.getId()]= basicTouchInputFactory!.UP
-cancelInputArray[basicTouchInputFactory!.LEFT.getId()]= basicTouchInputFactory!.RIGHT
-cancelInputArray[basicTouchInputFactory!.RIGHT.getId()]= basicTouchInputFactory!.LEFT
+cancelInputArray[basicTouchInputFactory!.UP.getId()]= basicTouchInputFactory!.DOWN;
+    
+cancelInputArray[basicTouchInputFactory!.DOWN.getId()]= basicTouchInputFactory!.UP;
+    
+cancelInputArray[basicTouchInputFactory!.LEFT.getId()]= basicTouchInputFactory!.RIGHT;
+    
+cancelInputArray[basicTouchInputFactory!.RIGHT.getId()]= basicTouchInputFactory!.LEFT;
+    
 }
 
 

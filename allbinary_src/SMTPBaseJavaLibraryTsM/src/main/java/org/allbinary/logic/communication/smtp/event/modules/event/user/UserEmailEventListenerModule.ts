@@ -55,7 +55,8 @@ public constructor (userInterface: UserInterface){
 
             super();
             var userInterface = userInterface
-this.userInterface= userInterface
+this.userInterface= userInterface;
+    
 }
 
 
@@ -67,13 +68,18 @@ var emailEvent = emailEvent
     var to: string = this.userInterface!.getSecondaryEmail()!;
         
         
-
+;
+    
 
     var email: BasicEmail = new BasicEmail(emailEvent!.getEmailInfo(), to);
         
         
+;
+    
+EmailQueueFactory.getInstance()!.offer(email.getEmail();
 
-EmailQueueFactory.getInstance()!.offer(email.getEmail() as EmailInterface)
+                         as EmailInterface);
+    
 }
 
 
@@ -85,7 +91,8 @@ var emailEvent = emailEvent
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
                                     {
-                                    logUtil!.put("Add Email To Que For Sending: " +emailEvent!.toString(), this, "onEmailSendRequest")
+                                    logUtil!.put("Add Email To Que For Sending: " +emailEvent!.toString(), this, "onEmailSendRequest");
+    
 
                                     }
                                 
@@ -93,13 +100,18 @@ var emailEvent = emailEvent
     var to: string = this.userInterface!.getMainEmail()!;
         
         
-
+;
+    
 
     var email: BasicEmail = new BasicEmail(emailEvent!.getEmailInfo(), to);
         
         
+;
+    
+EmailQueueFactory.getInstance()!.offer(email.getEmail();
 
-EmailQueueFactory.getInstance()!.offer(email.getEmail() as EmailInterface)
+                         as EmailInterface);
+    
 }
 
 

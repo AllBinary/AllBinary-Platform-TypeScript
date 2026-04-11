@@ -60,6 +60,8 @@ var file = file
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.visit(file);
+
+                        ;
     
 }
 
@@ -71,7 +73,8 @@ var fileNameString = fileNameString
     var fileNameAndExtension: string = file.getPath()!;
         
         
-
+;
+    
 
                         if(fileNameAndExtension!.length > fileNameString!.length)
                         
@@ -80,12 +83,14 @@ var fileNameString = fileNameString
     var startIndex: number = fileNameAndExtension!.length -fileNameString!.length;
         
         
-
+;
+    
 
     var fileName: string = fileNameAndExtension!.substring(startIndex)!;
         
         
-
+;
+    
 
                         if(fileName!.compareTo(fileNameString) == 0)
                         

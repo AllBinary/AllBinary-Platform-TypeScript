@@ -80,7 +80,8 @@ export class AbPath
 public constructor (){
 
             super();
-            init()
+            init();
+    
 }
 
 
@@ -95,19 +96,26 @@ public constructor (aPath: string){
     var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
         
         
+;
+    
 
+                        if(!stringValidationUtil!.isEmpty(aPath);
 
-                        if(!stringValidationUtil!.isEmpty(aPath))
+                        )
                         
                                     {
-                                    this.schema= this.getSchema(aPath)
-this.nameP= EMPTY_STRING
-this.path= abPathUtil!.adjustEnd(abPathUtil!.adjust(this.getPath(aPath)))
+                                    this.schema= this.getSchema(aPath);
+    
+this.nameP= EMPTY_STRING;
+    
+this.path= abPathUtil!.adjustEnd(abPathUtil!.adjust(this.getPath(aPath)));
+    
 
                                     }
                                 
                         else {
-                            init()
+                            init();
+    
 
                         }
                             
@@ -122,24 +130,34 @@ var name = name
     var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
         
         
+;
+    
 
+                        if(!stringValidationUtil!.isEmpty(aPath);
 
-                        if(!stringValidationUtil!.isEmpty(aPath))
+                        )
                         
                                     {
-                                    this.schema= this.getSchema(aPath)
-this.nameP= name
-this.path= abPathUtil!.adjustEnd(abPathUtil!.adjust(this.getPath(aPath)))
+                                    this.schema= this.getSchema(aPath);
+    
+this.nameP= name;
+    
+this.path= abPathUtil!.adjustEnd(abPathUtil!.adjust(this.getPath(aPath)));
+    
 
                                     }
                                 
                         else {
-                            init()
+                            init();
+    
 
-                        if(!stringValidationUtil!.isEmpty(name))
+                        if(!stringValidationUtil!.isEmpty(name);
+
+                        )
                         
                                     {
-                                    this.nameP= name
+                                    this.nameP= name;
+    
 
                                     }
                                 
@@ -150,9 +168,12 @@ this.path= abPathUtil!.adjustEnd(abPathUtil!.adjust(this.getPath(aPath)))
 
 
     init(){
-this.schema= EMPTY_STRING
-this.setPath(abPathData!.SEPARATOR)
-this.nameP= EMPTY_STRING
+this.schema= EMPTY_STRING;
+    
+this.setPath(abPathData!.SEPARATOR);
+    
+this.nameP= EMPTY_STRING;
+    
 }
 
 
@@ -162,22 +183,27 @@ var aPath = aPath
     var beginIndex: number = aPath!.indexOf(commonSeps!.COLON)!;
         
         
-
+;
+    
 
                         if(beginIndex >= 0)
                         
                                     {
-                                    this.hasSchema= true
+                                    this.hasSchema= true;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return aPath!.substring(0, beginIndex);
+
+                        ;
     
 
                                     }
                                 
-this.hasSchema= false
+this.hasSchema= false;
+    
 
 
 
@@ -205,17 +231,22 @@ var aPath = aPath
     var filePathData: FilePathData = FilePathData.getInstance()!;
         
         
-
+;
+    
 
     var tempPath: string = aPath;
         
         
+;
+    
 
+                        if(!this.hasSchema();
 
-                        if(!this.hasSchema())
+                        )
                         
                                     {
-                                    tempPath= abPathUtil!.adjustStart(tempPath)
+                                    tempPath= abPathUtil!.adjustStart(tempPath);
+    
 
                                     }
                                 
@@ -224,17 +255,21 @@ var aPath = aPath
     var beginIndex: number = tempPath!.indexOf(commonSeps!.COLON)!;
         
         
-
+;
+    
 
                         if(beginIndex >= 0)
                         
                                     {
-                                    beginIndex++
+                                    beginIndex++;
+    
 
         while(tempPath[beginIndex] == abPathData!.SEPARATORCHAR || tempPath[beginIndex] == filePathData!.SEPARATORCHAR)
         {
-beginIndex++
-numberOfSeps++
+beginIndex++;
+    
+numberOfSeps++;
+    
 
                         if(numberOfSeps > 2)
                         
@@ -248,7 +283,8 @@ numberOfSeps++
                                 
 }
 
-tempPath= tempPath!.substring(beginIndex, tempPath!.length)
+tempPath= tempPath!.substring(beginIndex, tempPath!.length);
+    
 
                                     }
                                 
@@ -266,7 +302,8 @@ tempPath= tempPath!.substring(beginIndex, tempPath!.length)
 
     public setName(name: string){
     //var name = name
-this.nameP= name
+this.nameP= name;
+    
 }
 
 
@@ -285,23 +322,30 @@ this.nameP= name
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
                         if(this.hasSchema())
                         
                                     {
-                                    stringBuffer!.append(this.schema)
-stringBuffer!.append(NETWORK_SEP)
+                                    stringBuffer!.append(this.schema);
+    
+stringBuffer!.append(NETWORK_SEP);
+    
 
                                     }
                                 
-stringBuffer!.append(this.getPath())
-stringBuffer!.append(this.nameP)
+stringBuffer!.append(this.getPath());
+    
+stringBuffer!.append(this.nameP);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 
@@ -315,22 +359,31 @@ stringBuffer!.append(this.nameP)
     var filePathData: FilePathData = FilePathData.getInstance()!;
         
         
-
+;
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(this.schema)
-stringBuffer!.append(commonSeps!.COLON)
-stringBuffer!.append(filePathData!.SEPARATOR)
-stringBuffer!.append(FilePathUtil.adjust(this.getPath()))
-stringBuffer!.append(this.nameP)
+;
+    
+stringBuffer!.append(this.schema);
+    
+stringBuffer!.append(commonSeps!.COLON);
+    
+stringBuffer!.append(filePathData!.SEPARATOR);
+    
+stringBuffer!.append(FilePathUtil.adjust(this.getPath()));
+    
+stringBuffer!.append(this.nameP);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 
                                     }
@@ -360,7 +413,8 @@ stringBuffer!.append(this.nameP)
 
     setPath(path: string){
 var path = path
-this.path= path
+this.path= path;
+    
 }
 
 

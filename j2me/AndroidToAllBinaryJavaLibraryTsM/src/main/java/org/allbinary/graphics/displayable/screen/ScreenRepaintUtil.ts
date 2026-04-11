@@ -36,8 +36,10 @@ var displayable = displayable
     var canvas: Canvas = displayable as Canvas;
         
         
-
-canvas.repaint()
+;
+    
+canvas.repaint();
+    
 }
 
 

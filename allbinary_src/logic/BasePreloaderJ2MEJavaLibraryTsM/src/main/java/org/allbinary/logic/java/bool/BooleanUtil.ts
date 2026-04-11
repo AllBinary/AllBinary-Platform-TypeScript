@@ -54,12 +54,14 @@ private constructor (){
     var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
         
         
-
+;
+    
 
     var booleanFactory: BooleanFactory = BooleanFactory.getInstance()!;
         
         
-
+;
+    
 
                         if(stringValidationUtil!.isEmpty(booleanString))
                         
@@ -77,7 +79,8 @@ private constructor (){
     var booleanStringLowerCase: string = booleanString!.lowercase()!;
         
         
-
+;
+    
 
                         if(booleanStringLowerCase!.compareTo(booleanFactory!.TRUE_STRING) == 0)
                         
@@ -123,12 +126,14 @@ private constructor (){
     var booleanFactory: BooleanFactory = BooleanFactory.getInstance()!;
         
         
-
+;
+    
 
     var booleanStringLowerCase: string = booleanString!.lowercase()!;
         
         
-
+;
+    
 
                         if(booleanStringLowerCase!.compareTo(booleanFactory!.TRUE_STRING) == 0 || booleanStringLowerCase!.compareTo(booleanFactory!.FALSE_STRING) == 0)
                         

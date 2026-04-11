@@ -35,12 +35,14 @@ var inputRobotInterface = inputRobotInterface
     var inputAutomationRobotInterfaceWrapper: InputAutomationRobotInterfaceWrapper = new InputAutomationRobotInterfaceWrapper(inputRobotInterface);
         
         
-
+;
+    
 
     var inputAutomationRobotChangeEvent: InputAutomationRobotChangeEvent = new InputAutomationRobotChangeEvent(inputAutomationRobotInterfaceWrapper);
         
         
-
+;
+    
 
 
 

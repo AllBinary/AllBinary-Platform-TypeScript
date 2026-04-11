@@ -43,7 +43,8 @@ export class TimeTypeUtil
     var hoursOfDay: number = this.getHourOfDay()!;
         
         
-
+;
+    
 
 
 
@@ -58,12 +59,15 @@ export class TimeTypeUtil
     var calendar: Calendar = Calendar.getInstance()!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return calendar.get(Calendar.HOUR_OF_DAY);
+
+                        ;
     
 }
 
@@ -91,13 +95,17 @@ var timeInMillis = timeInMillis
     var calendar: Calendar = Calendar.getInstance()!;
         
         
-
-calendar.setTimeInMillis(timeInMillis)
+;
+    
+calendar.setTimeInMillis(timeInMillis);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return calendar.get(Calendar.HOUR_OF_DAY);
+
+                        ;
     
 }
 
@@ -108,7 +116,8 @@ var timeInMillis = timeInMillis
     var hoursOfDay: number = this.getHourOfDay(timeInMillis)!;
         
         
-
+;
+    
 
 
 

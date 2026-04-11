@@ -99,7 +99,8 @@ private constructor (){
 
     public setUnknownSpecificOSAllowed(aUnknownSpecificOSAllowed: boolean){
 var aUnknownSpecificOSAllowed = aUnknownSpecificOSAllowed
-unknownSpecificOSAllowed= aUnknownSpecificOSAllowed
+unknownSpecificOSAllowed= aUnknownSpecificOSAllowed;
+    
 }
 
 

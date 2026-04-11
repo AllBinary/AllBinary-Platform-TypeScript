@@ -74,12 +74,14 @@ public constructor (highScoresCanvas: HighScoresCanvas)
 
 
     public open(){
-GameKeyEventHandler.getInstance()!.addListener(this)
+GameKeyEventHandler.getInstance()!.addListener(this);
+    
 }
 
 
     public close(){
-GameKeyEventHandler.getInstance()!.removeListener(this)
+GameKeyEventHandler.getInstance()!.removeListener(this);
+    
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
@@ -89,12 +91,14 @@ GameKeyEventHandler.getInstance()!.removeListener(this)
     var list: BasicArrayList = this.getGameKeyEventList()!;
         
         
-
+;
+    
 
     var size: number = list.size()!;
         
         
-
+;
+    
 
 
 
@@ -109,17 +113,20 @@ index < size; index++)
     var anyType: any = {} = list.objectArray[index]!;
         
         
-
+;
+    
 
     var key: number = GameKeyEventUtil.getKey(anyType)!;
         
         
-
+;
+    
 
                         if(key == Canvas.RIGHT)
                         
                                     {
-                                    this.getHighScoresCanvas()!.getGameInfo()!.nextGameLevel()
+                                    this.getHighScoresCanvas()!.getGameInfo()!.nextGameLevel();
+    
 
                                     }
                                 
@@ -127,14 +134,17 @@ index < size; index++)
                         if(key == Canvas.LEFT)
                         
                                     {
-                                    this.getHighScoresCanvas()!.getGameInfo()!.previousGameLevel()
+                                    this.getHighScoresCanvas()!.getGameInfo()!.previousGameLevel();
+    
 
                                     }
                                 
-this.getHighScoresCanvas()!.executeUpdate()
+this.getHighScoresCanvas()!.executeUpdate();
+    
 }
 
-list.clear()
+list.clear();
+    
 }
 
 
@@ -144,18 +154,22 @@ var graphics = graphics
     var myFont: MyFont = MyFont.getInstance()!;
         
         
-
+;
+    
 
     var width: number = this.displayInfoSingleton!.getLastWidth()!;
         
         
-
+;
+    
 
     var topScoresWidth: number = (graphics.getFont()!.stringWidth(INSTRUCTIONS) shr 1);
         
         
-
-graphics.drawString(INSTRUCTIONS, (width shr 1) -topScoresWidth, myFont!.DEFAULT_CHAR_HEIGHT *2, anchor)
+;
+    
+graphics.drawString(INSTRUCTIONS, (width shr 1) -topScoresWidth, myFont!.DEFAULT_CHAR_HEIGHT *2, anchor);
+    
 }
 
 

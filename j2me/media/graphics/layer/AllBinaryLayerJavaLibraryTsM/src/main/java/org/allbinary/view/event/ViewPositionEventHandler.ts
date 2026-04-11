@@ -69,10 +69,13 @@ private constructor (){
     public addListener(layerInterface: AllBinaryLayer){
 var layerInterface = layerInterface
 
-                        if(!list.contains(layerInterface))
+                        if(!list.contains(layerInterface);
+
+                        )
                         
                                     {
-                                    list.add(layerInterface)
+                                    list.add(layerInterface);
+    
 
                                     }
                                 
@@ -80,15 +83,19 @@ var layerInterface = layerInterface
 
 
     public removeAllListeners(){
-this.list.clear()
-super.removeAllListeners()
+this.list.clear();
+    
+super.removeAllListeners();
+    
 }
 
 
     public removeListener(eventListenerInterface: EventListenerInterface){
 var eventListenerInterface = eventListenerInterface
-this.list.remove(eventListenerInterface)
-super.removeListener(eventListenerInterface)
+this.list.remove(eventListenerInterface);
+    
+super.removeListener(eventListenerInterface);
+    
 }
 
 
@@ -112,16 +119,22 @@ var eventObject = eventObject
     var layerInterface: AllBinaryLayer = this.list.objectArray[index]! as AllBinaryLayer;
         
         
+;
+    
+layerInterface!.onChangeEvent(eventObject as ViewPositionEvent);
+    
 
-layerInterface!.onChangeEvent(eventObject as ViewPositionEvent)
-} catch(e: Exception)
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e);
+    
 }
 
 }
 
-super.fireEvent(eventObject)
+super.fireEvent(eventObject);
+    
 }
 
 
@@ -134,8 +147,10 @@ var eventListenerInterface = eventListenerInterface
     var viewPositionEventListenerInterface: ViewPositionEventListenerInterface = (eventListenerInterface as ViewPositionEventListenerInterface);
         
         
-
-viewPositionEventListenerInterface!.onChangeEvent(eventObject as ViewPositionEvent)
+;
+    
+viewPositionEventListenerInterface!.onChangeEvent(eventObject as ViewPositionEvent);
+    
 }
 
 

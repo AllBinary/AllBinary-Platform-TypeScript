@@ -61,7 +61,8 @@ export class BasicEventHandler
 public constructor (){
 
             super();
-            this.eventListenerInterfaceList= BasicArrayList()
+            this.eventListenerInterfaceList= BasicArrayList();
+    
 }
 
 
@@ -70,41 +71,55 @@ public constructor (){
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
     var LISTENER: string = " Listener: ";
         
         
-
-stringBuffer!.append("Total Listeners: ")
-stringBuffer!.appendint(this.eventListenerInterfaceList!.size())
+;
+    
+stringBuffer!.append("Total Listeners: ");
+    
+stringBuffer!.appendint(this.eventListenerInterfaceList!.size());
+    
 
     var eventListenerInterface: EventListenerInterface
-
+;
+    
 
     var index: number = 0;
         
         
-
+;
+    
 
         while(index < this.eventListenerInterfaceList!.size())
         {
 
         try {
-            eventListenerInterface= this.eventListenerInterfaceList!.objectArray[index]! as EventListenerInterface
-stringBuffer!.append(LISTENER)
-stringBuffer!.append(StringUtil.getInstance()!.toString(eventListenerInterface))
-} catch(e: Exception)
+            eventListenerInterface= this.eventListenerInterfaceList!.objectArray[index]! as EventListenerInterface;
+    
+stringBuffer!.append(LISTENER);
+    
+stringBuffer!.append(StringUtil.getInstance()!.toString(eventListenerInterface));
+    
+
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.TOSTRING, e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.TOSTRING, e);
+    
 }
 
-index++
+index++;
+    
 }
 
 
@@ -112,23 +127,29 @@ index++
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public removeAllListeners(){
-this.eventListenerInterfaceList= BasicArrayList()
+this.eventListenerInterfaceList= BasicArrayList();
+    
 }
 
 
     public addListenerSingleThreaded(eventListenerInterface: EventListenerInterface){
 var eventListenerInterface = eventListenerInterface
 
-                        if(!this.eventListenerInterfaceList!.contains(eventListenerInterface))
+                        if(!this.eventListenerInterfaceList!.contains(eventListenerInterface);
+
+                        )
                         
                                     {
-                                    this.eventListenerInterfaceList!.add(eventListenerInterface)
+                                    this.eventListenerInterfaceList!.add(eventListenerInterface);
+    
 
                                     }
                                 
@@ -139,10 +160,13 @@ var eventListenerInterface = eventListenerInterface
     public addListener(eventListenerInterface: EventListenerInterface){
 var eventListenerInterface = eventListenerInterface
 
-                        if(!this.eventListenerInterfaceList!.contains(eventListenerInterface))
+                        if(!this.eventListenerInterfaceList!.contains(eventListenerInterface);
+
+                        )
                         
                                     {
-                                    this.eventListenerInterfaceList!.add(eventListenerInterface)
+                                    this.eventListenerInterfaceList!.add(eventListenerInterface);
+    
 
                                     }
                                 
@@ -151,14 +175,16 @@ var eventListenerInterface = eventListenerInterface
 
     public removeListenerSingleThreaded(eventListenerInterface: EventListenerInterface){
 var eventListenerInterface = eventListenerInterface
-this.eventListenerInterfaceList!.remove(eventListenerInterface)
+this.eventListenerInterfaceList!.remove(eventListenerInterface);
+    
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public removeListener(eventListenerInterface: EventListenerInterface){
 var eventListenerInterface = eventListenerInterface
-this.eventListenerInterfaceList!.remove(eventListenerInterface)
+this.eventListenerInterfaceList!.remove(eventListenerInterface);
+    
 }
 
 
@@ -171,28 +197,37 @@ var eventObject = eventObject
     var index: number = 0;
         
         
-
+;
+    
 
     var eventListenerInterface: EventListenerInterface
-
+;
+    
 
         while(index < this.eventListenerInterfaceList!.size())
         {
 
         try {
-            eventListenerInterface= this.eventListenerInterfaceList!.objectArray[index]! as EventListenerInterface
-this.process(eventObject, eventListenerInterface)
-} catch(e: Exception)
+            eventListenerInterface= this.eventListenerInterfaceList!.objectArray[index]! as EventListenerInterface;
+    
+this.process(eventObject, eventListenerInterface);
+    
+
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e);
+    
 }
 
-index++
+index++;
+    
 }
 
 }
@@ -203,7 +238,8 @@ index++
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
 var eventObject = eventObject
 var eventListenerInterface = eventListenerInterface
-eventListenerInterface!.onEvent(eventObject)
+eventListenerInterface!.onEvent(eventObject);
+    
 }
 
 

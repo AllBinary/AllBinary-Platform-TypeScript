@@ -59,11 +59,16 @@ var repeated = repeated
 
                             //For kotlin this is before the body of the constructor.
                     
-this.sourceId= sourceId
-this.setOriginalKey(originalKey)
-this.key= key
-this.setGameActionKey(gameActionKey)
-this.setRepeatEvents(repeated)
+this.sourceId= sourceId;
+    
+this.setOriginalKey(originalKey);
+    
+this.key= key;
+    
+this.setGameActionKey(gameActionKey);
+    
+this.setRepeatEvents(repeated);
+    
 }
 
 public constructor (anyType: any = {}, sourceId: number, key: number)                        
@@ -78,21 +83,26 @@ var key = key
 
                             //For kotlin this is before the body of the constructor.
                     
-this.sourceId= sourceId
-this.key= key
-this.setRepeatEvents(false)
+this.sourceId= sourceId;
+    
+this.key= key;
+    
+this.setRepeatEvents(false);
+    
 }
 
 
     public init(anyType: any = {}){
 var anyType = anyType
-this.setSource(anyType)
+this.setSource(anyType);
+    
 }
 
 
     setRepeatEvents(repeated: boolean){
 var repeated = repeated
-this.repeated= repeated
+this.repeated= repeated;
+    
 }
 
 
@@ -121,14 +131,19 @@ this.repeated= repeated
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("\nKey: ")
-stringBuffer!.appendint(this.getKey())
+;
+    
+stringBuffer!.append("\nKey: ");
+    
+stringBuffer!.appendint(this.getKey());
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 
@@ -145,7 +160,8 @@ stringBuffer!.appendint(this.getKey())
 
     public setOriginalKey(originalKey: number){
 var originalKey = originalKey
-this.originalKey= originalKey
+this.originalKey= originalKey;
+    
 }
 
 
@@ -161,7 +177,8 @@ this.originalKey= originalKey
 
     public setGameActionKey(gameActionKey: number){
 var gameActionKey = gameActionKey
-this.gameActionKey= gameActionKey
+this.gameActionKey= gameActionKey;
+    
 }
 
 

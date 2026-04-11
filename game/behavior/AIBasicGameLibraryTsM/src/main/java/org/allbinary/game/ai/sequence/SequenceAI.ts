@@ -70,17 +70,20 @@ var gameInput = gameInput
             
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager
-this.getArtificialIntelligenceInterface()[index]!.processAI(allBinaryLayerManager)
+this.getArtificialIntelligenceInterface()[index]!.processAI(allBinaryLayerManager);
+    
 }
 
 
     public next(){
-this.index++
+this.index++;
+    
 
     var artificialIntelligenceInterface: ArtificialIntelligenceInterface = this.getSelectedArtificialIntelligenceInterface()!;
         
         
-
+;
+    
 
                         if(artificialIntelligenceInterface!.getId() == ArtificialIntelligenceTransitionInterface.ID)
                         
@@ -89,8 +92,10 @@ this.index++
     var artificialIntelligenceTransitionInterface: ArtificialIntelligenceTransitionInterface = (artificialIntelligenceInterface as ArtificialIntelligenceTransitionInterface);
         
         
-
-artificialIntelligenceTransitionInterface!.transition()
+;
+    
+artificialIntelligenceTransitionInterface!.transition();
+    
 
                                     }
                                 
@@ -109,7 +114,8 @@ artificialIntelligenceTransitionInterface!.transition()
 
     public setIndex(index: number){
 var index = index
-this.index= index
+this.index= index;
+    
 }
 
 
@@ -138,15 +144,21 @@ this.index= index
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(super.toString())
-stringBuffer!.append(" Selected AI: ")
-stringBuffer!.append(StringUtil.getInstance()!.toString(this.getSelectedArtificialIntelligenceInterface()))
+;
+    
+stringBuffer!.append(super.toString());
+    
+stringBuffer!.append(" Selected AI: ");
+    
+stringBuffer!.append(StringUtil.getInstance()!.toString(this.getSelectedArtificialIntelligenceInterface()));
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

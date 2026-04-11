@@ -48,8 +48,12 @@ public constructor (){
     var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
         
         
+;
+    
+isNotSmallDisplay= (displayInfo!.isPortrait() && displayInfo!.getLastHeight() > ScreenInfo.getInstance()!.SMALL_WIDTH) || (!displayInfo!.isPortrait();
 
-isNotSmallDisplay= (displayInfo!.isPortrait() && displayInfo!.getLastHeight() > ScreenInfo.getInstance()!.SMALL_WIDTH) || (!displayInfo!.isPortrait() && displayInfo!.getLastHeight() > ScreenInfo.getInstance()!.SMALL_HEIGHT)
+                         && displayInfo!.getLastHeight() > ScreenInfo.getInstance()!.SMALL_HEIGHT);
+    
 }
 
 
@@ -59,12 +63,14 @@ var anyType = anyType
     var command: Command = anyType as Command;
         
         
-
+;
+    
 
     var booleanFactory: BooleanFactory = BooleanFactory.getInstance()!;
         
         
-
+;
+    
 
                         if(isNotSmallDisplay || command.getPriority() == 1 || command == GameCommandsFactory.getInstance()!.EXIT_COMMAND || command == GameCommandsFactory.getInstance()!.EXIT_WITHOUT_PROGRESS_COMMAND)
                         

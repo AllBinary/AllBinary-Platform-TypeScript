@@ -18,7 +18,10 @@
 
 
 
-import { Vector } from "../../../../../../java/util/Vector.js";
+            import Vector from "@ohos.util.Vector";
+        
+
+//import { Vector } from "../../../../../../java/util/Vector.js";
 
     
 import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
@@ -77,7 +80,8 @@ var transformInfoInterface = transformInfoInterface
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Generating Modified Views For: " +transformInfoInterface!.getName(), this, "generateModifiedViews()")
+                                    logUtil!.put("Generating Modified Views For: " +transformInfoInterface!.getName(), this, "generateModifiedViews()");
+    
 
                                     }
                                 
@@ -85,17 +89,20 @@ var transformInfoInterface = transformInfoInterface
     var customizerUtil: CustomizerUtil = CustomizerUtil.getInstance()!;
         
         
-
+;
+    
 
     var allCustomizedViews: Vector = customizerUtil!.getTransformInfoObjectConfigGroupComponentNodes(transformInfoInterface)!;
         
         
-
+;
+    
 
     var size: number = allCustomizedViews!.length!;
         
         
-
+;
+    
 
 
 
@@ -107,24 +114,30 @@ var transformInfoInterface = transformInfoInterface
 index < size; index++)
         {
 
-    var nextTransformInfoInterface: TransformInfo = allCustomizedViews!.get(index) as TransformInfo;
-        
-        
+    var nextTransformInfoInterface: TransformInfo = allCustomizedViews!.get(index);
 
+                         as TransformInfo;
+        
+        
+;
+    
 
     var allViewsToBeModified: Vector = customizerUtil!.getTransformInfoObjectConfigComponentNodesToCustomize(transformInfoInterface, nextTransformInfoInterface)!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("View or component that was modified by a Customizer: " +nextTransformInfoInterface!.getName(), this, "generateModifiedViews()")
+                                    logUtil!.put("View or component that was modified by a Customizer: " +nextTransformInfoInterface!.getName(), this, "generateModifiedViews()");
+    
 
                                     }
                                 
-generate(abeClientInformation, transformInfoInterface, allViewsToBeModified)
+generate(abeClientInformation, transformInfoInterface, allViewsToBeModified);
+    
 }
 
 
@@ -146,12 +159,14 @@ var allViewsToBeModifiedVector = allViewsToBeModifiedVector
     var customizerUtil: CustomizerUtil = CustomizerUtil.getInstance()!;
         
         
-
+;
+    
 
     var size: number = allViewsToBeModifiedVector!.length!;
         
         
-
+;
+    
 
 
 
@@ -163,24 +178,30 @@ var allViewsToBeModifiedVector = allViewsToBeModifiedVector
 index < size; index++)
         {
 
-    var nextTransformInfoInterface: TransformInfo = allViewsToBeModifiedVector!.get(index) as TransformInfo;
-        
-        
+    var nextTransformInfoInterface: TransformInfo = allViewsToBeModifiedVector!.get(index);
 
+                         as TransformInfo;
+        
+        
+;
+    
 
     var specifiedTransformInfoInterface: TransformInfoInterface = customizerUtil!.getTransformInfoInterfaceToCustomize(transformInfoInterface, nextTransformInfoInterface)!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Retrieved: " +specifiedTransformInfoInterface!.getName(), this, "generateModifiedViews()")
+                                    logUtil!.put("Retrieved: " +specifiedTransformInfoInterface!.getName(), this, "generateModifiedViews()");
+    
 
                                     }
                                 
-TransformGeneratorUtil.getInstance()!.generate(abeClientInformation, nextTransformInfoInterface, specifiedTransformInfoInterface)
+TransformGeneratorUtil.getInstance()!.generate(abeClientInformation, nextTransformInfoInterface, specifiedTransformInfoInterface);
+    
 }
 
 }

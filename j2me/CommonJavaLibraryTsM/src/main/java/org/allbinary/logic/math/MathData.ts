@@ -66,11 +66,16 @@ private constructor (){
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
         
         
-
-this.EQUALS= commonSeps!.EQUALS
-this.MINUS= commonSeps!.DASH
-this.DIVIDE= commonSeps!.FORWARD_SLASH
-this.MULTIPLY= CommonPhoneStrings.getInstance()!.STAR
+;
+    
+this.EQUALS= commonSeps!.EQUALS;
+    
+this.MINUS= commonSeps!.DASH;
+    
+this.DIVIDE= commonSeps!.FORWARD_SLASH;
+    
+this.MULTIPLY= CommonPhoneStrings.getInstance()!.STAR;
+    
 }
 
 

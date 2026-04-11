@@ -132,17 +132,28 @@ public constructor (captionImage: Image, spriteMovieImage: Image, soundInterface
     //var dy = dy
     //var time = time
     //var animationBehaviorFactory = animationBehaviorFactory
-this.captionImage= captionImage
-this.spriteMovieImage= spriteMovieImage
-this.frameWidth= frameWidth
-this.frameHeight= frameHeight
-this.captionDx= captionDx
-this.captionDy= captionDy
-this.dx= dx
-this.dy= dy
-this.time= time
-this.soundInterface= soundInterface
-this.animationBehaviorFactory= animationBehaviorFactory
+this.captionImage= captionImage;
+    
+this.spriteMovieImage= spriteMovieImage;
+    
+this.frameWidth= frameWidth;
+    
+this.frameHeight= frameHeight;
+    
+this.captionDx= captionDx;
+    
+this.captionDy= captionDy;
+    
+this.dx= dx;
+    
+this.dy= dy;
+    
+this.time= time;
+    
+this.soundInterface= soundInterface;
+    
+this.animationBehaviorFactory= animationBehaviorFactory;
+    
 }
 
 
@@ -154,27 +165,32 @@ this.animationBehaviorFactory= animationBehaviorFactory
     var scaledImage: Image = animationFactoryImageScaleUtil!.createImage(this.captionImage, this.captionImage!.getWidth(), this.captionImage!.getHeight(), this.scaleProperties!.scaleWidth, this.scaleProperties!.scaleHeight)!;
         
         
-
+;
+    
 
     var animationInterface: Animation = new ImageAnimation(scaledImage, this.animationBehaviorFactory!.getOrCreateInstance());
         
         
-
+;
+    
 
     var sprite: Sprite = animationFactorySpriteScaleUtil!.createImage(this.spriteMovieImage, this.frameWidth, this.frameHeight, this.scaleProperties!.scaleWidth, this.scaleProperties!.scaleHeight)!;
         
         
-
+;
+    
 
     var movieIndexedAnimationInterface: IndexedAnimation = new SpriteIndexedAnimation(sprite, this.spriteMovieImage, this.animationBehaviorFactory!.getOrCreateInstance());
         
         
-
+;
+    
 
     var player: Player = this.soundInterface!.getPlayerP()!;
         
         
-
+;
+    
 
                         if(player == 
                                     null
@@ -199,7 +215,8 @@ this.animationBehaviorFactory= animationBehaviorFactory
 
     public setInitialScale(scaleProperties: ScaleProperties){
     //var scaleProperties = scaleProperties
-this.scaleProperties= scaleProperties
+this.scaleProperties= scaleProperties;
+    
 }
 
 

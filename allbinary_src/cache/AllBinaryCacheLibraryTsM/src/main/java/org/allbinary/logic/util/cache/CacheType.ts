@@ -35,8 +35,10 @@ public constructor (vendor: string, type: string){
             super();
             var vendor = vendor
 var type = type
-this.vendor= vendor
-this.type= type
+this.vendor= vendor;
+    
+this.type= type;
+    
 }
 
 
@@ -65,16 +67,23 @@ this.type= type
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("CacheType: Vendor: ")
-stringBuffer!.append(this.getVendor())
-stringBuffer!.append(" Type: ")
-stringBuffer!.append(this.getType())
+;
+    
+stringBuffer!.append("CacheType: Vendor: ");
+    
+stringBuffer!.append(this.getVendor());
+    
+stringBuffer!.append(" Type: ");
+    
+stringBuffer!.append(this.getType());
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

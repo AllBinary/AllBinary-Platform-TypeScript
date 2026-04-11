@@ -71,7 +71,8 @@ public constructor (gameCanvas: AllBinaryGameCanvas)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.gameCanvas= gameCanvas
+this.gameCanvas= gameCanvas;
+    
 }
 
 
@@ -87,17 +88,20 @@ this.gameCanvas= gameCanvas
     var gameLayerManager: AllBinaryGameLayerManager = this.gameCanvas!.getLayerManager()!;
         
         
-
+;
+    
 
     var list: BasicArrayList = this.getGameKeyEventList()!;
         
         
-
+;
+    
 
     var size: number = list.size()!;
         
         
-
+;
+    
 
 
 
@@ -112,17 +116,20 @@ index < size; index++)
     var anyType: any = {} = list.objectArray[index]!;
         
         
-
+;
+    
 
     var key: number = GameKeyEventUtil.getKey(anyType)!;
         
         
-
+;
+    
 
                         if(key == gameKeyFactory!.LEVEL_DOWN.getId())
                         
                                     {
-                                    inputProcessor!.strafeLeft()
+                                    inputProcessor!.strafeLeft();
+    
 break;
 
                     
@@ -133,7 +140,8 @@ break;
                         if(key == gameKeyFactory!.LEVEL_UP.getId())
                         
                                     {
-                                    inputProcessor!.strafeRight()
+                                    inputProcessor!.strafeRight();
+    
 break;
 
                     
@@ -144,7 +152,8 @@ break;
                         if(key == gameKeyFactory!.LEFT.getId())
                         
                                     {
-                                    inputProcessor!.left()
+                                    inputProcessor!.left();
+    
 break;
 
                     
@@ -155,7 +164,8 @@ break;
                         if(key == gameKeyFactory!.RIGHT.getId())
                         
                                     {
-                                    inputProcessor!.right()
+                                    inputProcessor!.right();
+    
 break;
 
                     
@@ -166,7 +176,8 @@ break;
                         if(key == gameKeyFactory!.UP.getId())
                         
                                     {
-                                    inputProcessor!.up()
+                                    inputProcessor!.up();
+    
 break;
 
                     
@@ -177,7 +188,8 @@ break;
                         if(key == gameKeyFactory!.DOWN.getId())
                         
                                     {
-                                    inputProcessor!.down()
+                                    inputProcessor!.down();
+    
 break;
 
                     
@@ -188,7 +200,8 @@ break;
                         if(key == gameKeyFactory!.KEY_NUM1.getId())
                         
                                     {
-                                    inputProcessor!.special1(gameLayerManager, GameKeyEvent.NONE)
+                                    inputProcessor!.special1(gameLayerManager, GameKeyEvent.NONE);
+    
 break;
 
                     
@@ -199,7 +212,8 @@ break;
                         if(key == gameKeyFactory!.KEY_NUM3.getId())
                         
                                     {
-                                    inputProcessor!.special2(gameLayerManager, GameKeyEvent.NONE)
+                                    inputProcessor!.special2(gameLayerManager, GameKeyEvent.NONE);
+    
 break;
 
                     
@@ -208,10 +222,14 @@ break;
                                 
 }
 
-list.clear()
-} catch(e: Exception)
+list.clear();
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.UPDATE, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.UPDATE, e);
+    
 }
 
 }

@@ -82,8 +82,12 @@ export class DisposalUtil
     var mutableImage: SwtMutableImage = image as SwtMutableImage;
         
         
+;
+    
+this.dispose(mutableImage!.getImage();
 
-this.dispose(mutableImage!.getImage() as Resource)
+                         as Resource);
+    
 
                                     }
                                 
@@ -97,11 +101,15 @@ this.dispose(mutableImage!.getImage() as Resource)
     public dispose(resource: Resource){
     //var resource = resource
 
-                        if(!resource.isDisposed())
+                        if(!resource.isDisposed();
+
+                        )
                         
                                     {
-                                    System.out.println(commonStrings!.CLOSE)
-resource.dispose()
+                                    System.out.println(commonStrings!.CLOSE);
+    
+resource.dispose();
+    
 
                                     }
                                 

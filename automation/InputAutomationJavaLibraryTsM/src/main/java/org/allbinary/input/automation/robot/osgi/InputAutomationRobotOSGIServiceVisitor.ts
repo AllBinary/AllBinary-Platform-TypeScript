@@ -66,6 +66,8 @@ public constructor (){
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.visit(anyType as OSGIServiceInterface);
+
+                        ;
     
 }
 
@@ -74,17 +76,20 @@ public constructor (){
     //var osgiServiceInterface = osgiServiceInterface
 
         try {
-            logUtil!.put(this.commonStrings!.START, this, "visit")
+            logUtil!.put(this.commonStrings!.START, this, "visit");
+    
 
     var inputAutomationRobotServiceInterface: InputAutomationRobotServiceInterface = osgiServiceInterface as InputAutomationRobotServiceInterface;
         
         
-
+;
+    
 
     var inputRobotInterfaceArray: InputRobotInterface[] = inputAutomationRobotServiceInterface!.getInputRobotInterfaceArray()!;
         
         
-
+;
+    
 
 
 
@@ -95,8 +100,10 @@ public constructor (){
         
 index < inputRobotInterfaceArray!.length; index++)
         {
-logUtil!.put("Adding: " +inputRobotInterfaceArray[index]!.getName(), this, "visit")
-InputRobotFactory.getInstance()!.add(inputRobotInterfaceArray[index]!)
+logUtil!.put("Adding: " +inputRobotInterfaceArray[index]!.getName(), this, "visit");
+    
+InputRobotFactory.getInstance()!.add(inputRobotInterfaceArray[index]!);
+    
 }
 
 
@@ -105,9 +112,12 @@ InputRobotFactory.getInstance()!.add(inputRobotInterfaceArray[index]!)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return Boolean.TRUE;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, this, "visit", e)
+logUtil!.put(this.commonStrings!.EXCEPTION, this, "visit", e);
+    
 
 
 

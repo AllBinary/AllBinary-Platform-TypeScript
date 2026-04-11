@@ -65,8 +65,10 @@ public constructor (text: string, fontSize: number, animationBehavior: Animation
 
                             //For kotlin this is before the body of the constructor.
                     
-this.fontSize= fontSize
-this.font= Font.getFont(Font.FACE_SYSTEM, Font.STYLE_PLAIN, fontSize)
+this.fontSize= fontSize;
+    
+this.font= Font.getFont(Font.FACE_SYSTEM, Font.STYLE_PLAIN, fontSize);
+    
 }
 
 
@@ -78,10 +80,14 @@ this.font= Font.getFont(Font.FACE_SYSTEM, Font.STYLE_PLAIN, fontSize)
     var existingFont: Font = graphics.getFont()!;
         
         
-
-fontDebugFactory!.setFont(this.font, graphics)
-super.paint(graphics, x, y)
-fontDebugFactory!.setFont(existingFont, graphics)
+;
+    
+fontDebugFactory!.setFont(this.font, graphics);
+    
+super.paint(graphics, x, y);
+    
+fontDebugFactory!.setFont(existingFont, graphics);
+    
 }
 
 
@@ -99,8 +105,10 @@ fontDebugFactory!.setFont(existingFont, graphics)
 
                                     }
                                 
-this.hasChanged= true
-this.font= Font.getFont(Font.FACE_SYSTEM, Font.STYLE_PLAIN, (fontSize *scaleX).toInt())
+this.hasChanged= true;
+    
+this.font= Font.getFont(Font.FACE_SYSTEM, Font.STYLE_PLAIN, (fontSize *scaleX).toInt());
+    
 }
 
 
@@ -110,9 +118,12 @@ this.font= Font.getFont(Font.FACE_SYSTEM, Font.STYLE_PLAIN, (fontSize *scaleX).t
                         if(this.lastText != text)
                         
                                     {
-                                    this.hasChanged= true
-this.lastText= text
-super.setText(text)
+                                    this.hasChanged= true;
+    
+this.lastText= text;
+    
+super.setText(text);
+    
 
                                     }
                                 
@@ -136,8 +147,10 @@ super.setText(text)
                         if(this.hasChanged)
                         
                                     {
-                                    this.textWidth= this.font.stringWidth(this.textArrayP[0]!)
-this.hasChanged= false
+                                    this.textWidth= this.font.stringWidth(this.textArrayP[0]!);
+    
+this.hasChanged= false;
+    
 
                                     }
                                 
@@ -156,6 +169,8 @@ this.hasChanged= false
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.font.getHeight();
+
+                        ;
     
 }
 

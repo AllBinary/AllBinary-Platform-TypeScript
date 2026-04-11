@@ -32,7 +32,8 @@ public constructor (inputAutomationModuleConfiguration: InputAutomationModuleCon
 
             super();
             var inputAutomationModuleConfiguration = inputAutomationModuleConfiguration
-this.setInputAutomationModuleConfiguration(inputAutomationModuleConfiguration)
+this.setInputAutomationModuleConfiguration(inputAutomationModuleConfiguration);
+    
 }
 
 
@@ -48,7 +49,8 @@ this.setInputAutomationModuleConfiguration(inputAutomationModuleConfiguration)
 
     setInputAutomationModuleConfiguration(inputAutomationModuleConfiguration: InputAutomationModuleConfiguration){
 var inputAutomationModuleConfiguration = inputAutomationModuleConfiguration
-this.inputAutomationModuleConfiguration= inputAutomationModuleConfiguration
+this.inputAutomationModuleConfiguration= inputAutomationModuleConfiguration;
+    
 }
 
 

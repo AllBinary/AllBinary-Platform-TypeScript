@@ -38,26 +38,33 @@ export class NoButtonsBuilder extends BaseTouchInput {
     public getList(): BasicArrayList{
 
         try {
-            logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
+            logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
+    
 
     var list: BasicArrayList = BasicArrayListUtil.getInstance()!.getImmutableInstance()!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return list;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_LIST, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_LIST, e);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return BasicArrayListUtil.getInstance()!.getImmutableInstance();
+
+                        ;
     
 }
 

@@ -18,7 +18,10 @@
 
 
 
-import { Vector } from "../../../java/util/Vector.js";
+            import Vector from "@ohos.util.Vector";
+        
+
+//import { Vector } from "../../../java/util/Vector.js";
 
     
 import { StoreFrontFactory } from "../../../org/allbinary/business/context/modules/storefront/StoreFrontFactory.js";
@@ -94,7 +97,8 @@ var document = document
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Starting", this, "toXmlNode")
+                                    logUtil!.put("Starting", this, "toXmlNode");
+    
 
                                     }
                                 
@@ -102,24 +106,29 @@ var document = document
     var inventoryEntityInterface: InventoryEntity = InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!;
         
         
-
+;
+    
 
     var inventoryNode: Node = document.createElement(InventoryData.INVENTORY)!;
         
         
-
+;
+    
 
     var itemVector: Vector = inventoryEntityInterface!.getItems(StoreFrontFactory.getInstance(this.getTransformInfoInterface()!.getStoreName()))!;
         
         
-
+;
+    
 inventoryNode!.appendChild(ModDomHelper.createNameValueNodes(document, SearchData.TOTAL_NUMBER_ITEMS_ON_THIS_PAGE, Integer(itemVector!.length).
-                            toString()))
+                            toString()));
+    
 
     var size: number = itemVector!.length!;
         
         
-
+;
+    
 
 
 
@@ -131,10 +140,13 @@ inventoryNode!.appendChild(ModDomHelper.createNameValueNodes(document, SearchDat
 index < size; index++)
         {
 
-    var itemInterface: ItemInterface = itemVector!.get(index) as ItemInterface;
-        
-        
+    var itemInterface: ItemInterface = itemVector!.get(index);
 
+                         as ItemInterface;
+        
+        
+;
+    
 
                         if(itemInterface != 
                                     null
@@ -146,13 +158,16 @@ index < size; index++)
                             toXmlNode(document)!;
         
         
-
-inventoryNode!.appendChild(node)
+;
+    
+inventoryNode!.appendChild(node);
+    
 
                                     }
                                 
                         else {
-                            logUtil!.put("Inventory", this, "toXmlNode")
+                            logUtil!.put("Inventory", this, "toXmlNode");
+    
 
                         }
                             
@@ -164,13 +179,16 @@ inventoryNode!.appendChild(node)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return inventoryNode;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.FAILURE, this, "toXmlNode", e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, "toXmlNode", e);
+    
 
                                     }
                                 
@@ -184,32 +202,40 @@ inventoryNode!.appendChild(node)
 
 
     public addDomNodeInterfaces(){
-this.addDomNodeInterface(this as DomNodeInterface)
+this.addDomNodeInterface(this as DomNodeInterface);
+    
 }
 
 
     public view(): string{
 
         try {
-            this.addDomNodeInterfaces()
+            this.addDomNodeInterfaces();
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.view();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to view Inventory";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e);
+    
 
                                     }
                                 

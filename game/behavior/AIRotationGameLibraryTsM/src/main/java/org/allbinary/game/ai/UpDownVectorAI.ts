@@ -57,12 +57,17 @@ var gameInput = gameInput
                             //For kotlin this is before the body of the constructor.
                     
 
-    var velocityInterfaceCompositeInterface: VelocityInterfaceCompositeInterface = this.getOwnerLayerInterface() as VelocityInterfaceCompositeInterface;
-        
-        
+    var velocityInterfaceCompositeInterface: VelocityInterfaceCompositeInterface = this.getOwnerLayerInterface();
 
-this.velocityInterface= velocityInterfaceCompositeInterface!.getVelocityProperties()
-this.velocityInterface!.getVelocityYBasicDecimalP()!.set(0)
+                         as VelocityInterfaceCompositeInterface;
+        
+        
+;
+    
+this.velocityInterface= velocityInterfaceCompositeInterface!.getVelocityProperties();
+    
+this.velocityInterface!.getVelocityYBasicDecimalP()!.set(0);
+    
 }
 
 
@@ -74,7 +79,8 @@ var allBinaryLayerManager = allBinaryLayerManager
     var y: number = this.getOwnerLayerInterface()!.getHeight() *270;
         
         
-
+;
+    
 
                         if(this.index < 5)
                         
@@ -83,10 +89,14 @@ var allBinaryLayerManager = allBinaryLayerManager
     var basicDecimal: BasicDecimal = this.velocityInterface!.getVelocityYBasicDecimalP()!;
         
         
-
-basicDecimal!.set(0)
-basicDecimal!.add(y)
-this.index++
+;
+    
+basicDecimal!.set(0);
+    
+basicDecimal!.add(y);
+    
+this.index++;
+    
 
                                     }
                                 
@@ -98,16 +108,22 @@ this.index++
     var basicDecimal: BasicDecimal = this.velocityInterface!.getVelocityYBasicDecimalP()!;
         
         
-
-basicDecimal!.set(0)
-basicDecimal!.subtract(y)
-this.index++
+;
+    
+basicDecimal!.set(0);
+    
+basicDecimal!.subtract(y);
+    
+this.index++;
+    
 
                                     }
                                 
                         else {
-                            this.index= 0
-this.processAI(allBinaryLayerManager)
+                            this.index= 0;
+    
+this.processAI(allBinaryLayerManager);
+    
 
                         }
                             

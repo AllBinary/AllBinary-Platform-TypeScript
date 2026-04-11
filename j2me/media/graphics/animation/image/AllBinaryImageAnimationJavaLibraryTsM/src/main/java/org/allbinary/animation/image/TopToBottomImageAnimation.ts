@@ -38,7 +38,7 @@ export class TopToBottomImageAnimation extends ImageSegmentAnimation {
         
 
     private currentHeight: number
-public constructor (image: Image, sequenceArray: IntArray, animationBehavior: AnimationBehavior)                        
+public constructor (image: Image, sequenceArray: number[], animationBehavior: AnimationBehavior)                        
 
                             : super(image, sequenceArray, animationBehavior){
 
@@ -50,12 +50,14 @@ public constructor (image: Image, sequenceArray: IntArray, animationBehavior: An
 
                             //For kotlin this is before the body of the constructor.
                     
-this.currentHeight= 0
+this.currentHeight= 0;
+    
 
                         if(this.getSequence()[0] ==  -1)
                         
                                     {
-                                    this.setFrame(this.getSize() -1)
+                                    this.setFrame(this.getSize() -1);
+    
 
                                     }
                                 
@@ -67,16 +69,19 @@ this.currentHeight= 0
                         if(this.getSequence()[0] ==  -1)
                         
                                     {
-                                    super.previousFrame()
+                                    super.previousFrame();
+    
 
                                     }
                                 
                         else {
-                            super.nextFrame()
+                            super.nextFrame();
+    
 
                         }
                             
-this.update()
+this.update();
+    
 }
 
 
@@ -85,28 +90,34 @@ this.update()
                         if(this.getSequence()[0] ==  -1)
                         
                                     {
-                                    super.nextFrame()
+                                    super.nextFrame();
+    
 
                                     }
                                 
                         else {
-                            super.previousFrame()
+                            super.previousFrame();
+    
 
                         }
                             
-this.update()
+this.update();
+    
 }
 
 
     public setFrame(index: number){
 var index = index
-super.setFrame(index)
-this.update()
+super.setFrame(index);
+    
+this.update();
+    
 }
 
 
     update(){
-this.currentHeight= this.getDrawHeight() *this.getFrame() /this.getSize()
+this.currentHeight= this.getDrawHeight() *this.getFrame() /this.getSize();
+    
 }
 
 
@@ -118,7 +129,8 @@ this.currentHeight= this.getDrawHeight() *this.getFrame() /this.getSize()
     //var graphics = graphics
     //var x = x
     //var y = y
-graphics.drawRegion(this.getImage(), this.getStartX(), this.getStartY(), this.getDrawWidth(), this.currentHeight, Sprite.TRANS_NONE, x, y, anchor)
+graphics.drawRegion(this.getImage(), this.getStartX(), this.getStartY(), this.getDrawWidth(), this.currentHeight, Sprite.TRANS_NONE, x, y, anchor);
+    
 }
 
 

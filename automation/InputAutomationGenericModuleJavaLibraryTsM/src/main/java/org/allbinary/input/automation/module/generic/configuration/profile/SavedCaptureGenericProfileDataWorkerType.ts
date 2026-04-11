@@ -44,8 +44,10 @@ var lastFrame = lastFrame
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setPath(path)
-this.setLastFrame(lastFrame)
+this.setPath(path);
+    
+this.setLastFrame(lastFrame);
+    
 }
 
 
@@ -61,7 +63,8 @@ this.setLastFrame(lastFrame)
 
     public setPath(path: string){
 var path = path
-this.path= path
+this.path= path;
+    
 }
 
 
@@ -77,7 +80,8 @@ this.path= path
 
     public setLastFrame(lastFrame: number){
 var lastFrame = lastFrame
-this.lastFrame= lastFrame
+this.lastFrame= lastFrame;
+    
 }
 
 

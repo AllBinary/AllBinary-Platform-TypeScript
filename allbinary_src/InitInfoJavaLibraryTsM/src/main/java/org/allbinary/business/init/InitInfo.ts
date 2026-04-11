@@ -105,28 +105,34 @@ private constructor (){
     var initInfoEntity: InitInfoEntity = new InitInfoEntity();
         
         
-
+;
+    
 
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.PRELOADER))
                         
                                     {
-                                    PreLogUtil.put("created entity", "InitInfo", "set()")
+                                    PreLogUtil.put("created entity", "InitInfo", "set()");
+    
 
                                     }
                                 
 
-                        if(!initInfoEntity!.is())
+                        if(!initInfoEntity!.is();
+
+                        )
                         
                                     {
                                     
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.PRELOADER))
                         
                                     {
-                                    PreLogUtil.put("adding", "InitInfo", "set()")
+                                    PreLogUtil.put("adding", "InitInfo", "set()");
+    
 
                                     }
                                 
-initInfoEntity!.add()
+initInfoEntity!.add();
+    
 
                                     }
                                 
@@ -135,22 +141,28 @@ initInfoEntity!.add()
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.PRELOADER))
                         
                                     {
-                                    PreLogUtil.put("update", "InitInfo", "set()")
+                                    PreLogUtil.put("update", "InitInfo", "set()");
+    
 
                                     }
                                 
-initInfoEntity!.update()
+initInfoEntity!.update();
+    
 
                         }
                             
-hasRead= false
-} catch(e: Exception)
+hasRead= false;
+    
+
+                //: 
+} catch(e) 
             {
 
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.PRELOADERERROR))
                         
                                     {
-                                    PreLogUtil.put("error", "InitInfo", "set()", e)
+                                    PreLogUtil.putOE("error", "InitInfo", "set()", e);
+    
 
                                     }
                                 
@@ -160,20 +172,32 @@ hasRead= false
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
-    public set(hashMap: HashMap<Any, Any>){
+    public set(hashMap: HashMap<any, any>){
 var hashMap = hashMap
 
         try {
-            testing= hashMap!.get(TESTING as Object) as String
-mainPath= AbPath(hashMap!.get(MAINPATH as Object) as String)
-testHtmlPath= AbPath(hashMap!.get(TESTHTMLPATH as Object) as String)
-} catch(e: Exception)
+            testing= hashMap!.get(TESTING as Object);
+
+                         as String;
+    
+mainPath= AbPath(hashMap!.get(MAINPATH as Object);
+
+                         as String);
+    
+testHtmlPath= AbPath(hashMap!.get(TESTHTMLPATH as Object);
+
+                         as String);
+    
+
+                //: 
+} catch(e) 
             {
 
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.PRELOADERERROR))
                         
                                     {
-                                    PreLogUtil.put("error", "InitInfo", "set()", e)
+                                    PreLogUtil.putOE("error", "InitInfo", "set()", e);
+    
 
                                     }
                                 
@@ -188,26 +212,34 @@ testHtmlPath= AbPath(hashMap!.get(TESTHTMLPATH as Object) as String)
         try {
             testing= 
                                         null
-                                    
+                                    ;
+    
 mainPath= 
                                         null
-                                    
+                                    ;
+    
 testHtmlPath= 
                                         null
-                                    
+                                    ;
+    
 
     var initInfoEntity: InitInfoEntity = new InitInfoEntity();
         
         
+;
+    
+initInfoEntity!.get();
+    
 
-initInfoEntity!.get()
-} catch(e: Exception)
+                //: 
+} catch(e) 
             {
 
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.PRELOADERERROR))
                         
                                     {
-                                    PreLogUtil.put("error", "InitInfo", "set()", e)
+                                    PreLogUtil.putOE("error", "InitInfo", "set()", e);
+    
 
                                     }
                                 
@@ -225,7 +257,8 @@ initInfoEntity!.get()
 
     public setHasRead(value: boolean){
 var value = value
-hasRead= value
+hasRead= value;
+    
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
@@ -237,18 +270,23 @@ hasRead= value
                         if(!hasRead)
                         
                                     {
-                                    hasRead= true
-this.get()
+                                    hasRead= true;
+    
+this.get();
+    
 
                                     }
                                 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.PRELOADERERROR))
                         
                                     {
-                                    PreLogUtil.put("error", "InitInfo", "updateIfNeeded()", e)
+                                    PreLogUtil.putOE("error", "InitInfo", "updateIfNeeded()", e);
+    
 
                                     }
                                 
@@ -266,20 +304,26 @@ this.get()
     public isTesting(): boolean{
 
         try {
-            this.updateIfNeeded()
+            this.updateIfNeeded();
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return BooleanUtil.getInstance()!.getFromString(testing);
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.PRELOADERERROR))
                         
                                     {
-                                    PreLogUtil.put("error", "InitInfo", "updateIfNeeded()", e)
+                                    PreLogUtil.putOE("error", "InitInfo", "updateIfNeeded()", e);
+    
 
                                     }
                                 
@@ -295,7 +339,8 @@ this.get()
 
 
     public getTesting(): string{
-this.updateIfNeeded()
+this.updateIfNeeded();
+    
 
 
 
@@ -306,7 +351,8 @@ this.updateIfNeeded()
 
 
     public getTestHtmlPath(): string{
-this.updateIfNeeded()
+this.updateIfNeeded();
+    
 
                         if(testHtmlPath != 
                                     null
@@ -318,6 +364,8 @@ this.updateIfNeeded()
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return testHtmlPath!.toString();
+
+                        ;
     
 
                                     }
@@ -336,7 +384,8 @@ this.updateIfNeeded()
 
 
     public getMainPath(): string{
-this.updateIfNeeded()
+this.updateIfNeeded();
+    
 
                         if(mainPath != 
                                     null
@@ -348,6 +397,8 @@ this.updateIfNeeded()
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return mainPath!.toString();
+
+                        ;
     
 
                                     }
@@ -367,19 +418,22 @@ this.updateIfNeeded()
 
     public setTesting(value: string){
 var value = value
-testing= value
+testing= value;
+    
 }
 
 
     public setTestHtmlPath(value: AbPath){
 var value = value
-this.testHtmlPath= value
+this.testHtmlPath= value;
+    
 }
 
 
     public setMainPath(value: AbPath){
 var value = value
-this.mainPath= value
+this.mainPath= value;
+    
 }
 
 
@@ -414,19 +468,25 @@ var testing = testing
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return BooleanUtil.getInstance()!.isStringBoolean(testing);
+
+                        ;
     
 }
 
 
-    public toHashMap(): HashMap<Any, Any>{
+    public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
         
         
-
-hashMap!.put(TESTING, this.getTesting())
-hashMap!.put(MAINPATH, this.getMainPath())
-hashMap!.put(TESTHTMLPATH, this.getTestHtmlPath())
+;
+    
+hashMap!.put(TESTING, this.getTesting());
+    
+hashMap!.put(MAINPATH, this.getMainPath());
+    
+hashMap!.put(TESTHTMLPATH, this.getTestHtmlPath());
+    
 
 
 

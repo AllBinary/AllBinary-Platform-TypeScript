@@ -30,14 +30,22 @@ export class ImageColorResults
 public constructor (){
 
             super();
-            this.setColorRange(ColorRange())
-this.getColorRange()!.setMaxRed( -1)
-this.getColorRange()!.setMaxGreen( -1)
-this.getColorRange()!.setMaxBlue( -1)
-this.getColorRange()!.setMinRed(256)
-this.getColorRange()!.setMinGreen(256)
-this.getColorRange()!.setMinBlue(256)
-this.setColorAverage(ColorAverage())
+            this.setColorRange(ColorRange());
+    
+this.getColorRange()!.setMaxRed( -1);
+    
+this.getColorRange()!.setMaxGreen( -1);
+    
+this.getColorRange()!.setMaxBlue( -1);
+    
+this.getColorRange()!.setMinRed(256);
+    
+this.getColorRange()!.setMinGreen(256);
+    
+this.getColorRange()!.setMinBlue(256);
+    
+this.setColorAverage(ColorAverage());
+    
 }
 
 
@@ -53,7 +61,8 @@ this.setColorAverage(ColorAverage())
 
     public setColorRange(colorRange: ColorRange){
 var colorRange = colorRange
-this.colorRange= colorRange
+this.colorRange= colorRange;
+    
 }
 
 
@@ -69,7 +78,8 @@ this.colorRange= colorRange
 
     public setColorAverage(colorAverage: ColorAverage){
 var colorAverage = colorAverage
-this.colorAverage= colorAverage
+this.colorAverage= colorAverage;
+    
 }
 
 

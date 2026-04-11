@@ -18,10 +18,13 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { HashMap } from "../../../../../../../../java/util/HashMap.js";
 
     
-import { Vector } from "../../../../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../../../../java/util/Vector.js";
 
     
 import { StoreFrontInterface } from "../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js";
@@ -76,7 +79,7 @@ export class StoreAdminUserEmailEventHandlerSingletons
         
         
 
-    private readonly userEmailEventHandlerHashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+    private readonly userEmailEventHandlerHashMap: HashMap<any, any> = new HashMap<any, any>();
         
         
 private constructor (){
@@ -86,7 +89,8 @@ private constructor (){
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
                                     {
-                                    logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
+    
 
                                     }
                                 
@@ -103,15 +107,19 @@ var storeFrontInterface = storeFrontInterface
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.START, this, commonStrings!.GET_INSTANCE)
+                                    logUtil!.put(this.commonStrings!.START, this, commonStrings!.GET_INSTANCE);
+    
 
                                     }
                                 
 
-    var userEmailEventHandler: UserEmailEventHandler = this.userEmailEventHandlerHashMap!.get(userEmailEventNameData as Object) as UserEmailEventHandler;
-        
-        
+    var userEmailEventHandler: UserEmailEventHandler = this.userEmailEventHandlerHashMap!.get(userEmailEventNameData as Object);
 
+                         as UserEmailEventHandler;
+        
+        
+;
+    
 
                         if(userEmailEventHandler == 
                                     null
@@ -122,7 +130,8 @@ var storeFrontInterface = storeFrontInterface
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
                                     {
-                                    logUtil!.put("Creating New Named UserEmailEventHandler", this, commonStrings!.GET_INSTANCE)
+                                    logUtil!.put("Creating New Named UserEmailEventHandler", this, commonStrings!.GET_INSTANCE);
+    
 
                                     }
                                 
@@ -130,13 +139,16 @@ var storeFrontInterface = storeFrontInterface
     var userVector: Vector = UserEntityFactory.getInstance()!.getStoreManagers(storeFrontInterface)!;
         
         
-
+;
+    
 
     var newUserEmailEventHandler: UserEmailEventHandler = EmailEventHandlerUtil.getInstance()!.getEventHandler(abeClientInformation, userEmailEventNameData, userVector)!;
         
         
-
-this.userEmailEventHandlerHashMap!.put(userEmailEventNameData, newUserEmailEventHandler)
+;
+    
+this.userEmailEventHandlerHashMap!.put(userEmailEventNameData, newUserEmailEventHandler);
+    
 
 
 
@@ -151,7 +163,8 @@ this.userEmailEventHandlerHashMap!.put(userEmailEventNameData, newUserEmailEvent
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
                                     {
-                                    logUtil!.put("Returning existing UserEmailEventHandler", this, commonStrings!.GET_INSTANCE)
+                                    logUtil!.put("Returning existing UserEmailEventHandler", this, commonStrings!.GET_INSTANCE);
+    
 
                                     }
                                 

@@ -25,7 +25,7 @@ import { ColorCompositeInterface } from "../../../org/allbinary/graphics/color/C
 interface VectorAnimationInterface extends IndexedAnimationInterface, ColorCompositeInterface {
         
 
-    getPoints(frame: number): IntArray[]
+    getPoints(frame: number): number[][]
 
 }
                 

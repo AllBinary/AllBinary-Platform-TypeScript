@@ -72,9 +72,12 @@ var foregroundBasicColor = foregroundBasicColor
 
                             //For kotlin this is before the body of the constructor.
                     
-logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
-this.update()
-this.initCommands(commandListener)
+logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
+    
+this.update();
+    
+this.initCommands(commandListener);
+    
 }
 
 
@@ -84,12 +87,18 @@ var cmdListener = cmdListener
     var gameCommandsFactory: GameCommandsFactory = GameCommandsFactory.getInstance()!;
         
         
-
-this.removeAllCommands()
-this.addCommand(gameCommandsFactory!.LOAD_FILE)
-this.addCommand(gameCommandsFactory!.DELETE_FILE)
-this.addCommand(gameCommandsFactory!.CLOSE_AND_SHOW_GAME_CANVAS)
-this.setCommandListener(cmdListener)
+;
+    
+this.removeAllCommands();
+    
+this.addCommand(gameCommandsFactory!.LOAD_FILE);
+    
+this.addCommand(gameCommandsFactory!.DELETE_FILE);
+    
+this.addCommand(gameCommandsFactory!.CLOSE_AND_SHOW_GAME_CANVAS);
+    
+this.setCommandListener(cmdListener);
+    
 }
 
 
@@ -100,24 +109,31 @@ this.setCommandListener(cmdListener)
     var list: BasicArrayList = GamePersistanceSingleton.getInstance()!.getIds()!;
         
         
-
-this.deleteAll()
+;
+    
+this.deleteAll();
+    
 
                         if(list.size() > 0)
                         
                                     {
-                                    this.add(list, "Select A Saved Game", Choice.EXCLUSIVE)
-this.areChoices= true
+                                    this.add(list, "Select A Saved Game", Choice.EXCLUSIVE);
+    
+this.areChoices= true;
+    
 
                                     }
                                 
                         else {
-                            this.append(StringItem("No Saved Games", StringUtil.getInstance()!.EMPTY_STRING))
-this.areChoices= false
+                            this.append(StringItem("No Saved Games", StringUtil.getInstance()!.EMPTY_STRING));
+    
+this.areChoices= false;
+    
 
                         }
                             
-super.update()
+super.update();
+    
 }
 
 
@@ -129,16 +145,19 @@ var option = option
     var choiceGroup: ChoiceGroup = this.getChoiceGroup(list, name, option)!;
         
         
-
+;
+    
 
                         if(list.size() > 0)
                         
                                     {
-                                    choiceGroup!.setSelectedIndex(0, true)
+                                    choiceGroup!.setSelectedIndex(0, true);
+    
 
                                     }
                                 
-this.append(choiceGroup)
+this.append(choiceGroup);
+    
 }
 
 
@@ -150,17 +169,20 @@ var option = option
     var METHOD_NAME: string = "getChoiceGroup";
         
         
-
+;
+    
 
     var choiceGroup: ChoiceGroup = new ChoiceGroup(name, option);
         
         
-
+;
+    
 
     var size: number = list.size()!;
         
         
-
+;
+    
 
 
 
@@ -175,10 +197,13 @@ index < size; index++)
     var anyType: any = {} = list.objectArray[index]!;
         
         
-
+;
+    
 logUtil!.put(StringMaker().
-                            append("Adding Choice: ")!.append(anyType!.toString())!.toString(), this, METHOD_NAME)
-choiceGroup!.append(anyType!.toString(), NullCanvas.NULL_IMAGE)
+                            append("Adding Choice: ")!.append(anyType!.toString())!.toString(), this, METHOD_NAME);
+    
+choiceGroup!.append(anyType!.toString(), NullCanvas.NULL_IMAGE);
+    
 }
 
 
@@ -196,15 +221,20 @@ choiceGroup!.append(anyType!.toString(), NullCanvas.NULL_IMAGE)
                         
                                     {
                                     
-    var choiceGroup: ChoiceGroup = this.get(0) as ChoiceGroup;
-        
-        
+    var choiceGroup: ChoiceGroup = this.get(0);
 
+                         as ChoiceGroup;
+        
+        
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return choiceGroup!.getSelectedIndex();
+
+                        ;
     
 
                                     }
@@ -228,15 +258,19 @@ choiceGroup!.append(anyType!.toString(), NullCanvas.NULL_IMAGE)
                         
                                     {
                                     
-    var choiceGroup: ChoiceGroup = this.get(0) as ChoiceGroup;
-        
-        
+    var choiceGroup: ChoiceGroup = this.get(0);
 
+                         as ChoiceGroup;
+        
+        
+;
+    
 
     var value: number = Integer.valueOf(choiceGroup!.getString(choiceGroup!.getSelectedIndex()))!.toInt()!;
         
         
-
+;
+    
 
 
 

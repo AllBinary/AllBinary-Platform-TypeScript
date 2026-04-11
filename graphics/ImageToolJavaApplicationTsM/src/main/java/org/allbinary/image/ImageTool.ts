@@ -46,26 +46,34 @@ java.awt.EventQueue.invokeLater(object: ARunnable()
     var logUtil: LogUtil = LogUtil.getInstance()!;
         
         
-
+;
+    
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
+;
+    
 
         try {
-            logUtil!.put(commonStrings!.START, this, commonStrings!.RUN)
+            logUtil!.put(commonStrings!.START, this, commonStrings!.RUN);
+    
 ImageToolJFrame().
-                            setVisible(true)
-} catch(e: Exception)
+                            setVisible(true);
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
+    
 }
 
 }
 
                                 }
-                            )
+                            );
+    
 }
 
 

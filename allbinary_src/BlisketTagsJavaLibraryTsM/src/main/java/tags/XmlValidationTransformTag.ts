@@ -52,35 +52,45 @@ public constructor (){
 
         try {
             
-    var helperClass: KClass<*> = this.getHelper()!.::class!;
+    var helperClass: Function = this.getHelper()!.constructor!;
         
         
-
+;
+    
 
     var method: Method = helperClass!.getMethod(commonStrings!.IS_VALID, 
                             null)!;
         
         
-
+;
+    
 
     var result: Boolean = method.invoke(this.getHelper(), 
-                            null) as Boolean;
-        
-        
+                            null);
 
+                         as Boolean;
+        
+        
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e);
+    
 
                                     }
                                 
@@ -98,12 +108,14 @@ public constructor (){
     public doStartTag(): number{
 
         try {
-            this.setHelper()
+            this.setHelper();
+    
 
                         if(this.isValid())
                         
                                     {
-                                    super.doStartTag()
+                                    super.doStartTag();
+    
 
 
 
@@ -114,7 +126,8 @@ public constructor (){
                                     }
                                 
                         else {
-                            super.doStartTag()
+                            super.doStartTag();
+    
 
 
 
@@ -124,9 +137,12 @@ public constructor (){
 
                         }
                             
-} catch(e: LicensingException)
+
+                //: 
+} catch(e) 
             {
-AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e);
+    
 
 
 
@@ -134,9 +150,12 @@ AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
                         return SKIP_BODY;
     
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
-AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
+    
 
 
 

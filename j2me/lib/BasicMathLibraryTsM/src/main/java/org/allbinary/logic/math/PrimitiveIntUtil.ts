@@ -27,7 +27,7 @@ export class PrimitiveIntUtil
          {
         
 
-    public static getArrayInstance(): IntArray{
+    public static getArrayInstance(): number[]{
 
 
 
@@ -37,7 +37,7 @@ export class PrimitiveIntUtil
 }
 
 
-    public static getTwoDimensionalArrayInstance(): IntArray[]{
+    public static getTwoDimensionalArrayInstance(): number[][]{
 
 
 

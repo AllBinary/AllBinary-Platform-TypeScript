@@ -63,7 +63,7 @@ export class Item extends BasicItem
     private shippingAddress: StreetAddress
 
     private special: string
-public constructor (itemHashMap: HashMap<Any, Any>)                        
+public constructor (itemHashMap: HashMap<any, any>)                        
 
                             : super(itemHashMap){
 
@@ -73,7 +73,8 @@ public constructor (itemHashMap: HashMap<Any, Any>)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setData(itemHashMap)
+this.setData(itemHashMap);
+    
 }
 
 public constructor (){
@@ -83,65 +84,99 @@ public constructor (){
     var EMPTY: string = StringUtil.getInstance()!.EMPTY_STRING;
         
         
-
-group= EMPTY
-tax= EMPTY
-shippingType= EMPTY
-shippingCost= EMPTY
-shippingAddress= StreetAddress()
+;
+    
+group= EMPTY;
+    
+tax= EMPTY;
+    
+shippingType= EMPTY;
+    
+shippingCost= EMPTY;
+    
+shippingAddress= StreetAddress();
+    
 }
 
 
-    setData(itemHashMap: HashMap<Any, Any>){
+    setData(itemHashMap: HashMap<any, any>){
 var itemHashMap = itemHashMap
-this.group= itemHashMap!.get(ShippingMethodData.GROUP) as String
-this.tax= itemHashMap!.get(OrderHistoryData.TAX) as String
-this.shippingType= itemHashMap!.get(ShippingMethodData.NAME) as String
-this.shippingCost= itemHashMap!.get(ShippingMethodData.COST) as String
-this.shippedDate= itemHashMap!.get(OrderHistoryData.SHIPPEDDATE) as String
-itemHashMap!.put(StreetAddressData.NAME, itemHashMap!.get(ShippingAddressData.NAME))
-itemHashMap!.put(StreetAddressData.STREET, itemHashMap!.get(ShippingAddressData.STREET))
-itemHashMap!.put(StreetAddressData.CITY, itemHashMap!.get(ShippingAddressData.CITY))
-itemHashMap!.put(StreetAddressData.STATE, itemHashMap!.get(ShippingAddressData.STATE))
-itemHashMap!.put(StreetAddressData.CODE, itemHashMap!.get(ShippingAddressData.CODE))
-itemHashMap!.put(StreetAddressData.COUNTRY, itemHashMap!.get(ShippingAddressData.COUNTRY))
-this.shippingAddress= StreetAddress(itemHashMap)
+this.group= itemHashMap!.get(ShippingMethodData.GROUP);
+
+                         as String;
+    
+this.tax= itemHashMap!.get(OrderHistoryData.TAX);
+
+                         as String;
+    
+this.shippingType= itemHashMap!.get(ShippingMethodData.NAME);
+
+                         as String;
+    
+this.shippingCost= itemHashMap!.get(ShippingMethodData.COST);
+
+                         as String;
+    
+this.shippedDate= itemHashMap!.get(OrderHistoryData.SHIPPEDDATE);
+
+                         as String;
+    
+itemHashMap!.put(StreetAddressData.NAME, itemHashMap!.get(ShippingAddressData.NAME));
+    
+itemHashMap!.put(StreetAddressData.STREET, itemHashMap!.get(ShippingAddressData.STREET));
+    
+itemHashMap!.put(StreetAddressData.CITY, itemHashMap!.get(ShippingAddressData.CITY));
+    
+itemHashMap!.put(StreetAddressData.STATE, itemHashMap!.get(ShippingAddressData.STATE));
+    
+itemHashMap!.put(StreetAddressData.CODE, itemHashMap!.get(ShippingAddressData.CODE));
+    
+itemHashMap!.put(StreetAddressData.COUNTRY, itemHashMap!.get(ShippingAddressData.COUNTRY));
+    
+this.shippingAddress= StreetAddress(itemHashMap);
+    
 }
 
 
     public setGroup(value: string){
 var value = value
-this.group= value
+this.group= value;
+    
 }
 
 
     public setTax(value: string){
 var value = value
-this.tax= value
+this.tax= value;
+    
 }
 
 
     public setShippingType(value: string){
 var value = value
-this.shippingType= value
+this.shippingType= value;
+    
 }
 
 
     public setShippingCost(value: string){
 var value = value
-this.shippingCost= value
+this.shippingCost= value;
+    
 }
 
 
     public setShippingAddress(value: StreetAddress){
 var value = value
-this.shippingAddress= value
+this.shippingAddress= value;
+    
 }
 
 
     public setSpecial(value: string){
 var value = value
-this.special= value
+this.special= value;
+    
 }
 
 
@@ -205,18 +240,25 @@ this.special= value
 }
 
 
-    public toHashMap(): HashMap<Any, Any>{
+    public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<Any, Any> = super.toHashMap()!;
+    var hashMap: HashMap<any, any> = super.toHashMap()!;
         
         
-
-hashMap!.put(ShippingMethodData.GROUP, this.group)
-hashMap!.put(OrderHistoryData.TAX, this.tax)
-hashMap!.put(ShippingMethodData.NAME, this.shippingType)
-hashMap!.put(ShippingMethodData.COST, this.shippingCost)
-hashMap!.put(OrderHistoryData.SHIPPEDDATE, this.shippedDate)
-hashMap!.put(EntryData.getInstance()!.SPECIAL, this.special)
+;
+    
+hashMap!.put(ShippingMethodData.GROUP, this.group);
+    
+hashMap!.put(OrderHistoryData.TAX, this.tax);
+    
+hashMap!.put(ShippingMethodData.NAME, this.shippingType);
+    
+hashMap!.put(ShippingMethodData.COST, this.shippingCost);
+    
+hashMap!.put(OrderHistoryData.SHIPPEDDATE, this.shippedDate);
+    
+hashMap!.put(EntryData.getInstance()!.SPECIAL, this.special);
+    
 
 
 

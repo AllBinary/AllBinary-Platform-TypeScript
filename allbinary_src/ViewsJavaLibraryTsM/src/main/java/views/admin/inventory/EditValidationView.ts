@@ -76,7 +76,8 @@ public constructor (transformInfoInterface: TransformInfoInterface)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.getFormData()
+this.getFormData();
+    
 }
 
 
@@ -84,18 +85,22 @@ this.getFormData()
             
     public getFormData(){
 
-    var hashMap: HashMap<Any, Any> = RequestParams(request).
+    var hashMap: HashMap<any, any> = RequestParams(request).
                             toHashMap()!;
         
         
-
+;
+    
 
                         if(hashMap == 
                                     null
                                 )
                         
                                     throw Error("No Request Params Found")
-this.id= hashMap!.get(BasicItemData.ID) as String
+this.id= hashMap!.get(BasicItemData.ID);
+
+                         as String;
+    
 }
 
 
@@ -105,7 +110,9 @@ this.id= hashMap!.get(BasicItemData.ID) as String
 
                         if(id == 
                                     null
-                                 || !StringValidationUtil.getInstance()!.isNumber(this.id))
+                                 || !StringValidationUtil.getInstance()!.isNumber(this.id);
+
+                        )
                         
                                     {
                                     
@@ -117,7 +124,8 @@ this.id= hashMap!.get(BasicItemData.ID) as String
 
                                     }
                                 
-this.itemInterface= InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!.getItem(this.id)
+this.itemInterface= InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!.getItem(this.id);
+    
 
                         if(this.itemInterface == 
                                     null
@@ -137,7 +145,8 @@ this.itemInterface= InventoryEntityFactory.getInstance()!.getInventoryEntityInst
     var downloadable: number = Integer.parseInt(this.itemInterface!.getDownloads())!;
         
         
-
+;
+    
 
                         if(downloadable != 0)
                         
@@ -146,8 +155,10 @@ this.itemInterface= InventoryEntityFactory.getInstance()!.getInventoryEntityInst
     var downloadItemsEntity: DownloadItemsEntity = DownloadItemsEntityFactory.getInstance()!.getDownloadItemsEntityInstance()!;
         
         
-
-this.downloadableItemVector= downloadItemsEntity!.getForItem(this.itemInterface!.getId())
+;
+    
+this.downloadableItemVector= downloadItemsEntity!.getForItem(this.itemInterface!.getId());
+    
 
                                     }
                                 
@@ -188,14 +199,18 @@ var document = document
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
                         if(id == 
                                     null
-                                 || !StringValidationUtil.getInstance()!.isNumber(this.id))
+                                 || !StringValidationUtil.getInstance()!.isNumber(this.id);
+
+                        )
                         
                                     {
-                                    stringBuffer!.append("Id is not valid.<br />")
+                                    stringBuffer!.append("Id is not valid.<br />");
+    
 
                                     }
                                 
@@ -205,7 +220,8 @@ var document = document
                                 )
                         
                                     {
-                                    stringBuffer!.append("Item does not exist.<br />")
+                                    stringBuffer!.append("Item does not exist.<br />");
+    
 
                                     }
                                 
@@ -214,6 +230,8 @@ var document = document
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

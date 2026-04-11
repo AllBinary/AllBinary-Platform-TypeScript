@@ -18,10 +18,13 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { BufferedImage } from "../../../../../java/awt/image/BufferedImage.js";
 
     
-import { Vector } from "../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../java/util/Vector.js";
 
     
 import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
@@ -77,22 +80,30 @@ public constructor (bufferedImage: BufferedImage, bufferedImage2: BufferedImage,
             var bufferedImage = bufferedImage
 var bufferedImage2 = bufferedImage2
 var tolerance = tolerance
-this.nonMatchingPixelVector= Vector()
-this.setBufferedImages(new Array(2))
-this.getBufferedImages()[0]= bufferedImage
-this.getBufferedImages()[1]= bufferedImage2
-this.imageHeight= bufferedImage!.getHeight()
-this.imageWidth= bufferedImage!.getWidth()
+this.nonMatchingPixelVector= Vector();
+    
+this.setBufferedImages(new Array(2));
+    
+this.getBufferedImages()[0]= bufferedImage;
+    
+this.getBufferedImages()[1]= bufferedImage2;
+    
+this.imageHeight= bufferedImage!.getHeight();
+    
+this.imageWidth= bufferedImage!.getWidth();
+    
 
                         if(bufferedImage!.getHeight() != bufferedImage2!.getHeight())
                         
                                     {
-                                    isSameHeight= false
+                                    isSameHeight= false;
+    
 
                         if(imageHeight > bufferedImage2!.getHeight())
                         
                                     {
-                                    this.imageHeight= bufferedImage2!.getHeight()
+                                    this.imageHeight= bufferedImage2!.getHeight();
+    
 
                                     }
                                 
@@ -100,7 +111,8 @@ this.imageWidth= bufferedImage!.getWidth()
                                     }
                                 
                         else {
-                            isSameHeight= true
+                            isSameHeight= true;
+    
 
                         }
                             
@@ -108,12 +120,14 @@ this.imageWidth= bufferedImage!.getWidth()
                         if(bufferedImage!.getWidth() != bufferedImage2!.getWidth())
                         
                                     {
-                                    isSameWidth= false
+                                    isSameWidth= false;
+    
 
                         if(imageWidth > bufferedImage2!.getWidth())
                         
                                     {
-                                    this.imageWidth= bufferedImage2!.getWidth()
+                                    this.imageWidth= bufferedImage2!.getWidth();
+    
 
                                     }
                                 
@@ -121,7 +135,8 @@ this.imageWidth= bufferedImage!.getWidth()
                                     }
                                 
                         else {
-                            isSameWidth= true
+                            isSameWidth= true;
+    
 
                         }
                             
@@ -133,10 +148,14 @@ this.imageWidth= bufferedImage!.getWidth()
     var imageUtil: ImageUtil = ImageUtil.getInstance()!;
         
         
-
-logUtil!.put("Images were not the same size? Most likely a resolution change.", this, this.commonStrings!.CONSTRUCTOR)
-logUtil!.put("1: " +imageUtil!.toString(bufferedImage), this, this.commonStrings!.CONSTRUCTOR)
-logUtil!.put("2: " +imageUtil!.toString(bufferedImage2), this, this.commonStrings!.CONSTRUCTOR)
+;
+    
+logUtil!.put("Images were not the same size? Most likely a resolution change.", this, this.commonStrings!.CONSTRUCTOR);
+    
+logUtil!.put("1: " +imageUtil!.toString(bufferedImage), this, this.commonStrings!.CONSTRUCTOR);
+    
+logUtil!.put("2: " +imageUtil!.toString(bufferedImage2), this, this.commonStrings!.CONSTRUCTOR);
+    
 
                                     }
                                 
@@ -148,7 +167,8 @@ logUtil!.put("2: " +imageUtil!.toString(bufferedImage2), this, this.commonString
                         if(this.matchingPercent ==  -1)
                         
                                     {
-                                    this.matchingPercent= pixelsThatMatch.toFloat() /(this.imageWidth *this.imageHeight)
+                                    this.matchingPercent= pixelsThatMatch.toFloat() /(this.imageWidth *this.imageHeight);
+    
 
                                     }
                                 
@@ -163,7 +183,8 @@ logUtil!.put("2: " +imageUtil!.toString(bufferedImage2), this, this.commonString
 
     public add(pixel: PixelDelta){
 var pixel = pixel
-this.nonMatchingPixelVector!.add(pixel)
+this.nonMatchingPixelVector!.add(pixel);
+    
 }
 
 
@@ -199,7 +220,8 @@ this.nonMatchingPixelVector!.add(pixel)
 
     setBufferedImages(bufferedImages: BufferedImage[]){
 var bufferedImages = bufferedImages
-this.bufferedImages= bufferedImages
+this.bufferedImages= bufferedImages;
+    
 }
 
 
@@ -215,7 +237,8 @@ this.bufferedImages= bufferedImages
 
     public setTolerance(tolerance: number){
 var tolerance = tolerance
-this.tolerance= tolerance
+this.tolerance= tolerance;
+    
 }
 
 

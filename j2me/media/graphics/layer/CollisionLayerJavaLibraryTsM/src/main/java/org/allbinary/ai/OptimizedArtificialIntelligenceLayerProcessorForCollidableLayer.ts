@@ -55,8 +55,10 @@ var index = index
     var artificialIntelligenceCompositeInterface: CollidableCompositeLayer = layerInterface as CollidableCompositeLayer;
         
         
-
-artificialIntelligenceCompositeInterface!.getArtificialIntelligenceInterface()!.processAI(allBinaryLayerManager)
+;
+    
+artificialIntelligenceCompositeInterface!.getArtificialIntelligenceInterface()!.processAI(allBinaryLayerManager);
+    
 }
 
 

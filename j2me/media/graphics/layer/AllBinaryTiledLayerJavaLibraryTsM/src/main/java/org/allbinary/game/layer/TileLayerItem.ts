@@ -54,7 +54,8 @@ var foregroundBasicColor = foregroundBasicColor
 
                             //For kotlin this is before the body of the constructor.
                     
-this.tiledLayer= tiledLayer
+this.tiledLayer= tiledLayer;
+    
 }
 
 
@@ -69,6 +70,8 @@ var owner = owner
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.tiledLayer!.getWidth();
+
+                        ;
     
 }
 
@@ -79,6 +82,8 @@ var owner = owner
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.tiledLayer!.getHeight();
+
+                        ;
     
 }
 
@@ -89,6 +94,8 @@ var owner = owner
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.tiledLayer!.getHeight();
+
+                        ;
     
 }
 
@@ -99,6 +106,8 @@ var owner = owner
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.tiledLayer!.getWidth();
+
+                        ;
     
 }
 
@@ -110,6 +119,8 @@ var width = width
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.tiledLayer!.getHeight();
+
+                        ;
     
 }
 
@@ -121,6 +132,8 @@ var height = height
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.tiledLayer!.getWidth();
+
+                        ;
     
 }
 
@@ -129,8 +142,10 @@ var height = height
 var graphics = graphics
 var x = x
 var y = y
-this.tiledLayer!.setPosition(x, y, this.tiledLayer!.getZP())
-this.tiledLayer!.paint(graphics)
+this.tiledLayer!.setPosition(x, y, this.tiledLayer!.getZP());
+    
+this.tiledLayer!.paint(graphics);
+    
 }
 
 

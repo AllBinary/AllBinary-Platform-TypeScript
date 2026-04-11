@@ -64,7 +64,7 @@ import { CommonSeps } from "../../../../org/allbinary/string/CommonSeps.js";
 export class ScrollSelectionForm extends PaintableForm {
         
 
-    public static readonly NULL_SCROLL_SELECTION_FORM: ScrollSelectionForm = new ScrollSelectionForm(StringUtil.getInstance()!.EMPTY_STRING, new Array(0), RectangleFactory.SINGLETON, FormTypeFactory.getInstance()!.NULL_FORM_TYPE, 0, BasicColorFactory.getInstance()!.BLACK, BasicColorFactory.getInstance()!.WHITE);
+    public static readonly NULL_SCROLL_SELECTION_FORM: ScrollSelectionForm = new ScrollSelectionForm(StringUtil.getInstance()!.EMPTY_STRING, [], RectangleFactory.SINGLETON, FormTypeFactory.getInstance()!.NULL_FORM_TYPE, 0, BasicColorFactory.getInstance()!.BLACK, BasicColorFactory.getInstance()!.WHITE);
         
         
 
@@ -110,7 +110,8 @@ public constructor (title: string, items: CustomItem[], formPaintableFactory: It
 
                             //For kotlin this is before the body of the constructor.
                     
-this.paintable= formPaintableFactory!.getInstance(this)
+this.paintable= formPaintableFactory!.getInstance(this);
+    
 }
 
 public constructor (title: string, items: CustomItem[], rectangle: Rectangle, formType: FormType, border: number, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor)                        
@@ -129,9 +130,12 @@ public constructor (title: string, items: CustomItem[], rectangle: Rectangle, fo
 
                             //For kotlin this is before the body of the constructor.
                     
-this.buttonBasicColor= foregroundBasicColor
-this.border= border
-this.halfBorder= (border shr 1)
+this.buttonBasicColor= foregroundBasicColor;
+    
+this.border= border;
+    
+this.halfBorder= (border shr 1);
+    
 }
 
 
@@ -142,6 +146,8 @@ this.halfBorder= (border shr 1)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.append(item);
+
+                        ;
     
 }
 
@@ -154,7 +160,8 @@ this.halfBorder= (border shr 1)
     var index: number = this.getSelectedIndex(point)!;
         
         
-
+;
+    
 
                         if(index !=  -1)
                         
@@ -164,6 +171,8 @@ this.halfBorder= (border shr 1)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.get(index);
+
+                        ;
     
 
                                     }
@@ -189,7 +198,8 @@ this.halfBorder= (border shr 1)
     var size: number = this.size()!;
         
         
-
+;
+    
 
 
 
@@ -201,10 +211,13 @@ this.halfBorder= (border shr 1)
 index < size; index++)
         {
 
-    var nextItem: CustomItemInterface = this.get(index) as CustomItemInterface;
-        
-        
+    var nextItem: CustomItemInterface = this.get(index);
 
+                         as CustomItemInterface;
+        
+        
+;
+    
 
                         if(nextItem == item)
                         
@@ -247,52 +260,68 @@ index < size; index++)
     var start: number = this.getStartIndex()!;
         
         
-
+;
+    
 
     var size: number = this.size()!;
         
         
-
+;
+    
 
     var dx: number = this.getDx()!;
         
         
-
+;
+    
 
     var dy: number = this.getDy()!;
         
         
-
+;
+    
 
     var formTypeFactory: FormTypeFactory = FormTypeFactory.getInstance()!;
         
         
-
+;
+    
 
     var commonLabels: CommonLabels = CommonLabels.getInstance()!;
         
         
-
+;
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(commonLabels!.START_LABEL)
-stringBuffer!.appendint(start)
-stringBuffer!.append(CommonSeps.getInstance()!.SPACE)
-stringBuffer!.append(commonLabels!.TOTAL_LABEL)
-stringBuffer!.appendint(size)
-logUtil!.put(stringBuffer!.toString(), this, GET_SELECTED_INDEX)
+;
+    
+stringBuffer!.append(commonLabels!.START_LABEL);
+    
+stringBuffer!.appendint(start);
+    
+stringBuffer!.append(CommonSeps.getInstance()!.SPACE);
+    
+stringBuffer!.append(commonLabels!.TOTAL_LABEL);
+    
+stringBuffer!.appendint(size);
+    
+logUtil!.put(stringBuffer!.toString(), this, GET_SELECTED_INDEX);
+    
 
     var item: CustomItemInterface
-
+;
+    
 
     var width: number= 0
-
+;
+    
 
     var height: number= 0
-
+;
+    
 
 
 
@@ -303,19 +332,26 @@ logUtil!.put(stringBuffer!.toString(), this, GET_SELECTED_INDEX)
         
 index < size; index++)
         {
-item= this.get(index) as CustomItemInterface
-width= item.getMinimumWidth()
-height= item.getMinimumHeight()
+item= this.get(index);
+
+                         as CustomItemInterface;
+    
+width= item.getMinimumWidth();
+    
+height= item.getMinimumHeight();
+    
 
     var diffX: number = 0;
         
         
-
+;
+    
 
                         if(this.formType == formTypeFactory!.HORIZONTAL_FORM)
                         
                                     {
-                                    diffX= dx -this.halfBorder
+                                    diffX= dx -this.halfBorder;
+    
 
                                     }
                                 
@@ -323,7 +359,8 @@ height= item.getMinimumHeight()
                         if(this.formType == formTypeFactory!.VERTICAL_CENTER_FORM || this.formType == formTypeFactory!.TEMP_HORIZONTAL_FORM)
                         
                                     {
-                                    diffX= dx +this.getDiffX(item)
+                                    diffX= dx +this.getDiffX(item);
+    
 
                                     }
                                 
@@ -339,13 +376,20 @@ height= item.getMinimumHeight()
                         if(rectangleCollisionUtil!.isInside(diffX, dy -this.halfBorder, diffX +width +this.border, dy +height +this.halfBorder +1, point.getX(), point.getY()))
                         
                                     {
-                                    stringBuffer!.delete(0, stringBuffer!.length())
-stringBuffer!.append(commonLabels!.ITEM_LABEL)
-stringBuffer!.append(item.getLabel())
-stringBuffer!.append(CommonSeps.getInstance()!.SPACE)
-stringBuffer!.append(commonLabels!.INDEX_LABEL)
-stringBuffer!.appendint(index)
-logUtil!.put(stringBuffer!.toString(), this, GET_SELECTED_INDEX)
+                                    stringBuffer!.delete(0, stringBuffer!.length());
+    
+stringBuffer!.append(commonLabels!.ITEM_LABEL);
+    
+stringBuffer!.append(item.getLabel());
+    
+stringBuffer!.append(CommonSeps.getInstance()!.SPACE);
+    
+stringBuffer!.append(commonLabels!.INDEX_LABEL);
+    
+stringBuffer!.appendint(index);
+    
+logUtil!.put(stringBuffer!.toString(), this, GET_SELECTED_INDEX);
+    
 
 
 
@@ -359,7 +403,8 @@ logUtil!.put(stringBuffer!.toString(), this, GET_SELECTED_INDEX)
                         if(this.formType == formTypeFactory!.HORIZONTAL_FORM)
                         
                                     {
-                                    dx= dx +width +border
+                                    dx= dx +width +border;
+    
 
                         if(dx > this.rectangle.getMaxX())
                         
@@ -377,7 +422,8 @@ logUtil!.put(stringBuffer!.toString(), this, GET_SELECTED_INDEX)
                         if(this.formType == formTypeFactory!.VERTICAL_CENTER_FORM)
                         
                                     {
-                                    dy= dy +height +border
+                                    dy= dy +height +border;
+    
 
                         if(dy > this.rectangle.getMaxY())
                         
@@ -418,7 +464,8 @@ logUtil!.put(stringBuffer!.toString(), this, GET_SELECTED_INDEX)
     var formTypeFactory: FormTypeFactory = FormTypeFactory.getInstance()!;
         
         
-
+;
+    
 
                         if(this.size() == 0)
                         
@@ -436,7 +483,8 @@ logUtil!.put(stringBuffer!.toString(), this, GET_SELECTED_INDEX)
     var index: number = this.getSelectedIndex()!;
         
         
-
+;
+    
 
                         if(this.formType == formTypeFactory!.HORIZONTAL_FORM || this.formType == formTypeFactory!.TEMP_HORIZONTAL_FORM)
                         
@@ -445,7 +493,8 @@ logUtil!.put(stringBuffer!.toString(), this, GET_SELECTED_INDEX)
                         if(gameKeyCode == Canvas.RIGHT)
                         
                                     {
-                                    index++
+                                    index++;
+    
 
                                     }
                                 
@@ -453,7 +502,8 @@ logUtil!.put(stringBuffer!.toString(), this, GET_SELECTED_INDEX)
                         if(gameKeyCode == Canvas.LEFT)
                         
                                     {
-                                    index--
+                                    index--;
+    
 
                                     }
                                 
@@ -468,7 +518,8 @@ logUtil!.put(stringBuffer!.toString(), this, GET_SELECTED_INDEX)
                         if(gameKeyCode == Canvas.DOWN)
                         
                                     {
-                                    index++
+                                    index++;
+    
 
                                     }
                                 
@@ -476,7 +527,8 @@ logUtil!.put(stringBuffer!.toString(), this, GET_SELECTED_INDEX)
                         if(gameKeyCode == Canvas.UP)
                         
                                     {
-                                    index--
+                                    index--;
+    
 
                                     }
                                 
@@ -495,12 +547,14 @@ logUtil!.put(stringBuffer!.toString(), this, GET_SELECTED_INDEX)
     var max: number = this.size() -1;
         
         
-
+;
+    
 
                         if(index < 0)
                         
                                     {
-                                    this.setSelectedIndex(0)
+                                    this.setSelectedIndex(0);
+    
 
                                     }
                                 
@@ -508,12 +562,14 @@ logUtil!.put(stringBuffer!.toString(), this, GET_SELECTED_INDEX)
                         if(index > max)
                         
                                     {
-                                    this.setSelectedIndex(max)
+                                    this.setSelectedIndex(max);
+    
 
                                     }
                                 
                         else {
-                            this.setSelectedIndex(index)
+                            this.setSelectedIndex(index);
+    
 
                         }
                             
@@ -533,7 +589,8 @@ logUtil!.put(stringBuffer!.toString(), this, GET_SELECTED_INDEX)
                         
                                     {
                                     logUtil!.put(StringMaker().
-                            append(StringUtil.getInstance()!.toString(point))!.append(INSIDE_FORM)!.toString(), this, IS_IN_FORM)
+                            append(StringUtil.getInstance()!.toString(point))!.append(INSIDE_FORM)!.toString(), this, IS_IN_FORM);
+    
 
 
 
@@ -564,25 +621,32 @@ logUtil!.put(stringBuffer!.toString(), this, GET_SELECTED_INDEX)
     var width: number = item.getMinimumWidth()!;
         
         
-
+;
+    
 
     var height: number = item.getMinimumHeight()!;
         
         
-
+;
+    
 
     var formTypeFactory: FormTypeFactory = FormTypeFactory.getInstance()!;
         
         
-
-item.paint(graphics, x, y)
-graphics.setColor(this.getButtonBasicColor()!.toInt())
+;
+    
+item.paint(graphics, x, y);
+    
+graphics.setColor(this.getButtonBasicColor()!.toInt());
+    
 
     var adjustedBorder: number = 3;
         
         
-
-graphics.drawRect(x -halfBorder -adjustedBorder, y -halfBorder -adjustedBorder, width +border -adjustedBorder, height +border -adjustedBorder)
+;
+    
+graphics.drawRect(x -halfBorder -adjustedBorder, y -halfBorder -adjustedBorder, width +border -adjustedBorder, height +border -adjustedBorder);
+    
 
                         if(this.formType == formTypeFactory!.HORIZONTAL_FORM)
                         
@@ -645,19 +709,24 @@ graphics.drawRect(x -halfBorder -adjustedBorder, y -halfBorder -adjustedBorder, 
     var width: number = item.getMinimumWidth()!;
         
         
-
+;
+    
 
     var height: number = item.getMinimumHeight()!;
         
         
-
-graphics.setColor(this.getButtonBasicColor()!.toInt())
-item.paintUnselected(graphics, x, y)
+;
+    
+graphics.setColor(this.getButtonBasicColor()!.toInt());
+    
+item.paintUnselected(graphics, x, y);
+    
 
     var formTypeFactory: FormTypeFactory = FormTypeFactory.getInstance()!;
         
         
-
+;
+    
 
                         if(this.formType == formTypeFactory!.HORIZONTAL_FORM)
                         
@@ -741,7 +810,8 @@ item.paintUnselected(graphics, x, y)
 
     public setButtonBasicColor(buttonBasicColor: BasicColor){
     //var buttonBasicColor = buttonBasicColor
-this.buttonBasicColor= buttonBasicColor
+this.buttonBasicColor= buttonBasicColor;
+    
 }
 
 

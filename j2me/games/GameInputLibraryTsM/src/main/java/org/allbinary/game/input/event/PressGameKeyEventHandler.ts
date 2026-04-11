@@ -69,10 +69,13 @@ private constructor (){
     public addListener(playerGameInput: PlayerGameInput){
 var playerGameInput = playerGameInput
 
-                        if(!list.contains(playerGameInput))
+                        if(!list.contains(playerGameInput);
+
+                        )
                         
                                     {
-                                    list.add(playerGameInput)
+                                    list.add(playerGameInput);
+    
 
                                     }
                                 
@@ -80,15 +83,19 @@ var playerGameInput = playerGameInput
 
 
     public removeAllListeners(){
-this.list.clear()
-super.removeAllListeners()
+this.list.clear();
+    
+super.removeAllListeners();
+    
 }
 
 
     public removeListener(eventListenerInterface: EventListenerInterface){
 var eventListenerInterface = eventListenerInterface
-this.list.remove(eventListenerInterface)
-super.removeListener(eventListenerInterface)
+this.list.remove(eventListenerInterface);
+    
+super.removeListener(eventListenerInterface);
+    
 }
 
 
@@ -112,16 +119,22 @@ var eventObject = eventObject
     var playerGameInput: PlayerGameInput = this.list.objectArray[index]! as PlayerGameInput;
         
         
+;
+    
+playerGameInput!.onPressGameKeyEvent(eventObject as GameKeyEvent);
+    
 
-playerGameInput!.onPressGameKeyEvent(eventObject as GameKeyEvent)
-} catch(e: Exception)
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e);
+    
 }
 
 }
 
-super.fireEvent(eventObject)
+super.fireEvent(eventObject);
+    
 }
 
 
@@ -134,8 +147,10 @@ var eventListenerInterface = eventListenerInterface
     var pressGameKeyEventListenerInterface: PressGameKeyEventListenerInterface = (eventListenerInterface as PressGameKeyEventListenerInterface);
         
         
-
-pressGameKeyEventListenerInterface!.onPressGameKeyEvent(eventObject as GameKeyEvent)
+;
+    
+pressGameKeyEventListenerInterface!.onPressGameKeyEvent(eventObject as GameKeyEvent);
+    
 }
 
 

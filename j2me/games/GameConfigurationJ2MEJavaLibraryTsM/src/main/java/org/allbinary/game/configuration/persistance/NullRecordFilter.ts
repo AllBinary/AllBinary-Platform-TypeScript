@@ -32,7 +32,7 @@ export class NullRecordFilter
         
         
 
-    public matches(candidate: ByteArray): boolean{
+    public matches(candidate: number[]): boolean{
 var candidate = candidate
 
 

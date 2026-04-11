@@ -101,7 +101,8 @@ public constructor (ownerLayer: PathFindingLayerInterface, sound: Sound)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.ownerLayer= ownerLayer
+this.ownerLayer= ownerLayer;
+    
 }
 
 
@@ -109,7 +110,8 @@ this.ownerLayer= ownerLayer
             
     public setAllBinaryGameLayerManager(allBinaryGameLayerManager: AllBinaryGameLayerManager){
     //var allBinaryGameLayerManager = allBinaryGameLayerManager
-super.setAllBinaryGameLayerManager(allBinaryGameLayerManager)
+super.setAllBinaryGameLayerManager(allBinaryGameLayerManager);
+    
 }
 
 
@@ -126,6 +128,8 @@ super.setAllBinaryGameLayerManager(allBinaryGameLayerManager)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return BasicArrayListUtil.getInstance()!.getImmutableInstance();
+
+                        ;
     
 }
 
@@ -139,6 +143,8 @@ super.setAllBinaryGameLayerManager(allBinaryGameLayerManager)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.createPaths(geographicMapCellPosition);
+
+                        ;
     
 }
 
@@ -151,12 +157,16 @@ super.setAllBinaryGameLayerManager(allBinaryGameLayerManager)
     var endList: BasicArrayList = this.ownerLayer!.getEndGeographicMapCellPositionList()!;
         
         
+;
+    
 
+    var endGeographicMapCellPosition: GeographicMapCellPosition = BasicArrayListUtil.getInstance()!.getRandom(endList);
 
-    var endGeographicMapCellPosition: GeographicMapCellPosition = BasicArrayListUtil.getInstance()!.getRandom(endList) as GeographicMapCellPosition;
+                         as GeographicMapCellPosition;
         
         
-
+;
+    
 
                         if(startGeographicMapCellPosition == endGeographicMapCellPosition)
                         
@@ -171,7 +181,10 @@ super.setAllBinaryGameLayerManager(allBinaryGameLayerManager)
         
 index >= 0; index--)
         {
-endGeographicMapCellPosition= endList!.get(index) as GeographicMapCellPosition
+endGeographicMapCellPosition= endList!.get(index);
+
+                         as GeographicMapCellPosition;
+    
 
                         if(startGeographicMapCellPosition != endGeographicMapCellPosition)
                         
@@ -204,7 +217,8 @@ endGeographicMapCellPosition= endList!.get(index) as GeographicMapCellPosition
     var endGeographicMapCellPosition: GeographicMapCellPosition = this.getEndGeographicMapCellPosition(startGeographicMapCellPosition)!;
         
         
-
+;
+    
 
                         if(endGeographicMapCellPosition == 
                                     null
@@ -216,6 +230,8 @@ endGeographicMapCellPosition= endList!.get(index) as GeographicMapCellPosition
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return BasicArrayListUtil.getInstance()!.getImmutableInstance();
+
+                        ;
     
 
                                     }
@@ -233,6 +249,8 @@ endGeographicMapCellPosition= endList!.get(index) as GeographicMapCellPosition
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return BasicArrayListUtil.getInstance()!.getImmutableInstance();
+
+                        ;
     
 
                                     }
@@ -252,45 +270,58 @@ endGeographicMapCellPosition= endList!.get(index) as GeographicMapCellPosition
     var geographicMapCompositeInterface: GeographicMapCompositeInterface = this.allBinaryGameLayerManagerP as GeographicMapCompositeInterface;
         
         
-
+;
+    
 
     var geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;
         
         
-
+;
+    
 
     var raceTrackGeographicMap: RaceTrackGeographicMap = geographicMapInterface as RaceTrackGeographicMap;
         
         
-
+;
+    
 
     var raceTrackGeographicMapCellTypeFactory: GeographicMapCellTypeFactory = raceTrackGeographicMap!.getGeographicMapCellTypeFactory()!;
         
         
+;
+    
 
+    var customMapGenerator: CustomMapGenerator = raceTrackGeographicMap!.getCustomMapGenerator();
 
-    var customMapGenerator: CustomMapGenerator = raceTrackGeographicMap!.getCustomMapGenerator() as CustomMapGenerator;
+                         as CustomMapGenerator;
         
         
+;
+    
+customMapGenerator!.copyMapIntoCustomMap();
+    
 
-customMapGenerator!.copyMapIntoCustomMap()
-
-    var customMapArray: IntArray[] = customMapGenerator!.getCustomMapArray()!;
+    var customMapArray: number[][] = customMapGenerator!.getCustomMapArray()!;
         
         
-
-customMapArray[startGeographicMapCellPosition!.getRow()]![startGeographicMapCellPosition!.getColumn()]= raceTrackGeographicMapCellTypeFactory!.getStartType()
-customMapArray[endGeographicMapCellPosition!.getRow()]![endGeographicMapCellPosition!.getColumn()]= raceTrackGeographicMapCellTypeFactory!.getEndType()
+;
+    
+customMapArray[startGeographicMapCellPosition!.getRow()]![startGeographicMapCellPosition!.getColumn()]= raceTrackGeographicMapCellTypeFactory!.getStartType();
+    
+customMapArray[endGeographicMapCellPosition!.getRow()]![endGeographicMapCellPosition!.getColumn()]= raceTrackGeographicMapCellTypeFactory!.getEndType();
+    
 
     var pathFindingInfo: PathFindingInfo = PathFindingInfoFactory.getInstance()!.getInstance(raceTrackGeographicMap, customMapArray)!;
         
         
-
+;
+    
 
     var list: BasicArrayList = PathGenerator.getInstance()!.getInstanceNoCache(geographicMapInterface, pathFindingInfo, 2)!;
         
         
-
+;
+    
 
                         if(list.size() < 1)
                         
@@ -313,7 +344,8 @@ customMapArray[endGeographicMapCellPosition!.getRow()]![endGeographicMapCellPosi
 
     public onEvent(eventObject: AllBinaryEventObject){
     //var eventObject = eventObject
-ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
+ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
+    
 }
 
 
@@ -325,7 +357,8 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
 
 
     public reset(){
-this.getConnectedWaypointList()!.clear()
+this.getConnectedWaypointList()!.clear();
+    
 }
 
 
@@ -350,35 +383,45 @@ this.getConnectedWaypointList()!.clear()
     var size: number = this.getConnectedWaypointList()!.size()!;
         
         
-
+;
+    
 
                         if(size > 0)
                         
                                     {
                                     
-    var unitWaypointBehavior: UnitWaypointBehavior = unitLayer!.getWaypointBehavior() as UnitWaypointBehavior;
-        
-        
+    var unitWaypointBehavior: UnitWaypointBehavior = unitLayer!.getWaypointBehavior();
 
+                         as UnitWaypointBehavior;
+        
+        
+;
+    
 
         while(this.getConnectedWaypointList()!.size() > 0)
         {
 
-    var rtsLayer: CollidableDestroyableDamageableLayer = this.getConnectedWaypointList()!.get(0) as CollidableDestroyableDamageableLayer;
-        
-        
+    var rtsLayer: CollidableDestroyableDamageableLayer = this.getConnectedWaypointList()!.get(0);
 
+                         as CollidableDestroyableDamageableLayer;
+        
+        
+;
+    
 
                         if(rtsLayer!.isDestroyed())
                         
                                     {
-                                    this.getConnectedWaypointList()!.remove(rtsLayer)
+                                    this.getConnectedWaypointList()!.remove(rtsLayer);
+    
 
                                     }
                                 
                         else {
-                            unitLayer!.handleCost(this.ownerLayer)
-unitWaypointBehavior!.insertWaypoint(0, rtsLayer)
+                            unitLayer!.handleCost(this.ownerLayer);
+    
+unitWaypointBehavior!.insertWaypoint(0, rtsLayer);
+    
 break;
 
                     

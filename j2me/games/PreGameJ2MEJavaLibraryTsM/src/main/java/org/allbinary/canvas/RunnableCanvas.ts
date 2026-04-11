@@ -110,15 +110,18 @@ public constructor (commandListener: CommandListener, childNameList: BasicArrayL
                             //For kotlin this is before the body of the constructor.
                     
 logUtil!.put(StringMaker().
-                            append("delay: ")!.appendint(this.loopTimeHelper!.delay)!.toString(), this, this.commonStrings!.CONSTRUCTOR)
-this.runnableCanvasRefreshHelper= RunnableCanvasRefreshHelper(this)
+                            append("delay: ")!.appendint(this.loopTimeHelper!.delay)!.toString(), this, this.commonStrings!.CONSTRUCTOR);
+    
+this.runnableCanvasRefreshHelper= RunnableCanvasRefreshHelper(this);
+    
 
                         if(commandListener != 
                                     null
                                 )
                         
                                     {
-                                    this.initCommands(commandListener)
+                                    this.initCommands(commandListener);
+    
 
                                     }
                                 
@@ -126,7 +129,8 @@ this.runnableCanvasRefreshHelper= RunnableCanvasRefreshHelper(this)
                         if(hasParam)
                         
                                     {
-                                    logUtil!.put("commandListener was null", this, "initCommands")
+                                    logUtil!.put("commandListener was null", this, "initCommands");
+    
 
                                     }
                                 
@@ -159,7 +163,8 @@ public constructor ()
 
     public initCommands(cmdListener: CommandListener){
 var cmdListener = cmdListener
-logUtil!.put(commonStrings!.NOT_IMPLEMENTED, this, "initCommands")
+logUtil!.put(commonStrings!.NOT_IMPLEMENTED, this, "initCommands");
+    
 }
 
 
@@ -194,18 +199,21 @@ logUtil!.put(commonStrings!.NOT_IMPLEMENTED, this, "initCommands")
 
     public setThread(thread: Thread){
 var thread = thread
-this.thread= thread
+this.thread= thread;
+    
 }
 
 
     public setRunning(running: boolean){
 var running = running
-this.running= running
+this.running= running;
+    
 
                         if(!this.running)
                         
                                     {
-                                    this.thread= NullThread.NULL_THREAD
+                                    this.thread= NullThread.NULL_THREAD;
+    
 
         
         //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
@@ -213,14 +221,16 @@ this.running= running
 
         //mutex.withLock
         {
-threadObjectUtil!.notifyObject(this)
+threadObjectUtil!.notifyObject(this);
+    
 }
 
 
                                     }
                                 
 logUtil!.put(StringMaker().
-                            append(IS_RUNNING)!.appendboolean(this.running)!.toString(), this, SET_RUNNING)
+                            append(IS_RUNNING)!.appendboolean(this.running)!.toString(), this, SET_RUNNING);
+    
 }
 
 
@@ -260,30 +270,36 @@ logUtil!.put(StringMaker().
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(THREAD)
+;
+    
+stringBuffer!.append(THREAD);
+    
 
                         if(this.thread != 
                                     null
                                 )
                         
                                     {
-                                    stringBuffer!.append(this.thread.toString())
+                                    stringBuffer!.append(this.thread.toString());
+    
 
                                     }
                                 
-stringBuffer!.append(NOT_EQUAL)
+stringBuffer!.append(NOT_EQUAL);
+    
 
                         if(this.currentThread != 
                                     null
                                 )
                         
                                     {
-                                    stringBuffer!.append(StringUtil.getInstance()!.toString(this.currentThread))
+                                    stringBuffer!.append(StringUtil.getInstance()!.toString(this.currentThread));
+    
 
                                     }
                                 
-logUtil!.put(stringBuffer!.toString(), this, IS_RUNNING)
+logUtil!.put(stringBuffer!.toString(), this, IS_RUNNING);
+    
 
 
 
@@ -312,10 +328,13 @@ logUtil!.put(stringBuffer!.toString(), this, IS_RUNNING)
 
     setWait(wait: number){
 var wait = wait
-loopTimeHelper!.delay= wait
-this.pauseWait= wait.toLong() *3
+loopTimeHelper!.delay= wait;
+    
+this.pauseWait= wait.toLong() *3;
+    
 logUtil!.put(StringMaker().
-                            append("setWait - delay: ")!.appendint(this.loopTimeHelper!.delay)!.toString(), this, this.commonStrings!.CONSTRUCTOR)
+                            append("setWait - delay: ")!.appendint(this.loopTimeHelper!.delay)!.toString(), this, this.commonStrings!.CONSTRUCTOR);
+    
 }
 
 
@@ -330,22 +349,28 @@ logUtil!.put(StringMaker().
 
 
     public setCurrentThread(){
-this.currentThread= Thread.currentThread()
+this.currentThread= Thread.currentThread();
+    
 }
 
 
     setCurrentThreadFake(){
-this.currentThread= thread
+this.currentThread= thread;
+    
 }
 
 
     showNotify(){
 
         try {
-            this.stopWaiting()
-} catch(e: Exception)
+            this.stopWaiting();
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "showNotify", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "showNotify", e);
+    
 }
 
 }
@@ -358,7 +383,8 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "showNotify", e)
                 //@Throws(Error::class)
             
     stopWaiting(){
-this.notified= true
+this.notified= true;
+    
 
         
         //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
@@ -366,10 +392,12 @@ this.notified= true
 
         //mutex.withLock
         {
-this.threadObjectUtil!.notifyObject(this)
+this.threadObjectUtil!.notifyObject(this);
+    
 }
 
-this.repaint()
+this.repaint();
+    
 }
 
 
@@ -386,12 +414,14 @@ var wait = wait
                         if(wait > 0)
                         
                                     {
-                                    threadObjectUtil!.waitObject(this, wait.toLong())
+                                    threadObjectUtil!.waitObject(this, wait.toLong());
+    
 
                                     }
                                 
                         else {
-                            threadObjectUtil!.waitObject(this)
+                            threadObjectUtil!.waitObject(this);
+    
 
                         }
                             
@@ -408,7 +438,8 @@ var wait = wait
                 //@Throws(Error::class)
             
     public processSleep(){
-Thread.sleep(pauseWait)
+Thread.sleep(pauseWait);
+    
 }
 
 
@@ -426,7 +457,8 @@ Thread.sleep(pauseWait)
             
     public processGameSleep(sleep: number){
 var sleep = sleep
-Thread.sleep(sleep)
+Thread.sleep(sleep);
+    
 }
 
 
@@ -445,27 +477,39 @@ Thread.sleep(sleep)
                 //@Throws(Error::class)
             
     public processLoopSleep(){
-this.runnableCanvasRefreshHelper!.process()
+this.runnableCanvasRefreshHelper!.process();
+    
 
-                        if(this.isPaused() && this.isRunning() && !this.isSingleThread())
+                        if(this.isPaused() && this.isRunning() && !this.isSingleThread();
+
+                        )
                         
                                     {
                                     
     var stringMaker: StringMaker = new StringMaker();
         
         
+;
+    
+logUtil!.put(stringMaker!.append(START_PAUSE)!.appendlong(System.currentTimeMillis())!.append(PAUSE_SLEEP)!.appendlong(this.pauseWait)!.toString(), this, PROCESS_LOOP_SLEEP);
+    
 
-logUtil!.put(stringMaker!.append(START_PAUSE)!.appendlong(System.currentTimeMillis())!.append(PAUSE_SLEEP)!.appendlong(this.pauseWait)!.toString(), this, PROCESS_LOOP_SLEEP)
+        while(this.isPaused() && this.isRunning() && !this.isSingleThread();
 
-        while(this.isPaused() && this.isRunning() && !this.isSingleThread())
+                        )
         {
-this.processSleep()
+this.processSleep();
+    
 
-                        if(!this.isPausable())
+                        if(!this.isPausable();
+
+                        )
                         
                                     {
-                                    stringMaker!.delete(0, stringMaker!.length())
-logUtil!.put(stringMaker!.append(END_PAUSE)!.appendlong(System.currentTimeMillis())!.toString(), this, PROCESS_LOOP_SLEEP)
+                                    stringMaker!.delete(0, stringMaker!.length());
+    
+logUtil!.put(stringMaker!.append(END_PAUSE)!.appendlong(System.currentTimeMillis())!.toString(), this, PROCESS_LOOP_SLEEP);
+    
 
 
 
@@ -484,22 +528,26 @@ logUtil!.put(stringMaker!.append(END_PAUSE)!.appendlong(System.currentTimeMillis
     var elapsedTime: number = this.loopTimeHelper!.getElapsed()!;
         
         
-
+;
+    
 
     var wait: number = this.loopTimeHelper!.delay.toLong();
         
         
-
+;
+    
 
                         if(elapsedTime > wait)
                         
                                     {
-                                    elapsedTime= wait
+                                    elapsedTime= wait;
+    
 
                                     }
                                 
                         else {
-                            processGameSleep(wait -elapsedTime)
+                            processGameSleep(wait -elapsedTime);
+    
 
                         }
                             
@@ -517,7 +565,8 @@ logUtil!.put(stringMaker!.append(END_PAUSE)!.appendlong(System.currentTimeMillis
 
 
     public run(){
-this.setCurrentThread()
+this.setCurrentThread();
+    
 }
 
 

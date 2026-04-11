@@ -47,21 +47,30 @@ public constructor (angleIncrement: number){
 
             super();
             var angleIncrement = angleIncrement
-this.angleIncrement= angleIncrement
+this.angleIncrement= angleIncrement;
+    
 
     var angleFactory: AngleFactory = AngleFactory.getInstance()!;
         
         
-
+;
+    
 
     var smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;
         
         
+;
+    
+this.DOWN_FRAME= smallIntegerSingletonFactory!.getInstance(angleFactory!.DOWN.getValue() /this.angleIncrement);
+    
+this.UP_FRAME= smallIntegerSingletonFactory!.getInstance(angleFactory!.UP.getValue();
 
-this.DOWN_FRAME= smallIntegerSingletonFactory!.getInstance(angleFactory!.DOWN.getValue() /this.angleIncrement)
-this.UP_FRAME= smallIntegerSingletonFactory!.getInstance(angleFactory!.UP.getValue().toInt())
-this.LEFT_FRAME= smallIntegerSingletonFactory!.getInstance(angleFactory!.LEFT.getValue() /this.angleIncrement)
-this.RIGHT_FRAME= smallIntegerSingletonFactory!.getInstance(angleFactory!.RIGHT.getValue() /this.angleIncrement)
+                        .toInt());
+    
+this.LEFT_FRAME= smallIntegerSingletonFactory!.getInstance(angleFactory!.LEFT.getValue() /this.angleIncrement);
+    
+this.RIGHT_FRAME= smallIntegerSingletonFactory!.getInstance(angleFactory!.RIGHT.getValue() /this.angleIncrement);
+    
 }
 
 
@@ -76,6 +85,8 @@ var frame = frame
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return frameUtil!.getFrameAngle(frame, this.angleIncrement.toInt());
+
+                        ;
     
 }
 
@@ -97,6 +108,8 @@ var frame = frame
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return StringMaker().
                             append(INCREMENT)!.appendshort(this.angleIncrement)!.toString();
+
+                        ;
     
 }
 
@@ -107,12 +120,14 @@ var angle = angle
     var closestDirection: Integer = SmallIntegerSingletonFactory.getInstance()!.getInstance(360)!;
         
         
-
+;
+    
 
                         if(UP_FRAME.toInt() -angle < closestDirection!.toInt() -angle)
                         
                                     {
-                                    closestDirection= UP_FRAME
+                                    closestDirection= UP_FRAME;
+    
 
                                     }
                                 
@@ -120,7 +135,8 @@ var angle = angle
                         if(DOWN_FRAME.toInt() -angle < closestDirection!.toInt() -angle)
                         
                                     {
-                                    closestDirection= DOWN_FRAME
+                                    closestDirection= DOWN_FRAME;
+    
 
                                     }
                                 
@@ -128,7 +144,8 @@ var angle = angle
                         if(LEFT_FRAME.toInt() -angle < closestDirection!.toInt() -angle)
                         
                                     {
-                                    closestDirection= LEFT_FRAME
+                                    closestDirection= LEFT_FRAME;
+    
 
                                     }
                                 
@@ -136,7 +153,8 @@ var angle = angle
                         if(RIGHT_FRAME.toInt() -angle < closestDirection!.toInt() -angle)
                         
                                     {
-                                    closestDirection= RIGHT_FRAME
+                                    closestDirection= RIGHT_FRAME;
+    
 
                                     }
                                 
@@ -145,6 +163,8 @@ var angle = angle
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return closestDirection!.toInt();
+
+                        ;
     
 }
 

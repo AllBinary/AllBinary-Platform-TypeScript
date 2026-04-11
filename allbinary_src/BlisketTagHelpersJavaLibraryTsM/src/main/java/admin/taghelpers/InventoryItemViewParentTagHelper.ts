@@ -69,17 +69,22 @@ var inventoryTag = inventoryTag
                                 )
                         
                                     {
-                                    this.checkForValidationViewHelper(inventoryTag!.getHelper())
+                                    this.checkForValidationViewHelper(inventoryTag!.getHelper());
+    
 
-    var validationViewHelper: ValidationViewHelper = inventoryTag!.getHelper() as ValidationViewHelper;
+    var validationViewHelper: ValidationViewHelper = inventoryTag!.getHelper();
+
+                         as ValidationViewHelper;
         
         
-
+;
+    
 
     var viewObject: TransformInterface = validationViewHelper!.getViewObject()!;
         
         
-
+;
+    
 
                         if(viewObject!.getTypeId() != InventoryItemView.TYPE_ID)
                         
@@ -88,10 +93,14 @@ var inventoryTag = inventoryTag
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("Must have ")
-stringBuffer!.append("InventoryItemView and not: ")
-stringBuffer!.append(inventoryTag!.getHelper()!.::class.toString()!)
+;
+    
+stringBuffer!.append("Must have ");
+    
+stringBuffer!.append("InventoryItemView and not: ");
+    
+stringBuffer!.append(inventoryTag!.getHelper()!..constructor.name.toString()!);
+    
 
 
 
@@ -129,17 +138,22 @@ var inventoryTag = inventoryTag
                                 )
                         
                                     {
-                                    this.checkForValidationViewHelper(inventoryTag!.getHelper())
+                                    this.checkForValidationViewHelper(inventoryTag!.getHelper());
+    
 
-    var validationViewHelper: ValidationViewHelper = inventoryTag!.getHelper() as ValidationViewHelper;
+    var validationViewHelper: ValidationViewHelper = inventoryTag!.getHelper();
+
+                         as ValidationViewHelper;
         
         
-
+;
+    
 
     var viewObject: TransformInterface = validationViewHelper!.getViewObject()!;
         
         
-
+;
+    
 
                         if(viewObject!.getTypeId() != DownloadableInventoryItemView.TYPE_ID)
                         
@@ -148,10 +162,14 @@ var inventoryTag = inventoryTag
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("Must have ")
-stringBuffer!.append("DownloadableInventoryItemView and not: ")
-stringBuffer!.append(inventoryTag!.getHelper()!.::class.toString()!)
+;
+    
+stringBuffer!.append("Must have ");
+    
+stringBuffer!.append("DownloadableInventoryItemView and not: ");
+    
+stringBuffer!.append(inventoryTag!.getHelper()!..constructor.name.toString()!);
+    
 
 
 
@@ -189,17 +207,22 @@ var inventoryTag = inventoryTag
                                 )
                         
                                     {
-                                    this.checkForValidationViewHelper(inventoryTag!.getHelper())
+                                    this.checkForValidationViewHelper(inventoryTag!.getHelper());
+    
 
-    var validationViewHelper: ValidationViewHelper = inventoryTag!.getHelper() as ValidationViewHelper;
+    var validationViewHelper: ValidationViewHelper = inventoryTag!.getHelper();
+
+                         as ValidationViewHelper;
         
         
-
+;
+    
 
     var viewObject: TransformInterface = validationViewHelper!.getViewObject()!;
         
         
-
+;
+    
 
                         if(viewObject!.getTypeId() != InventoryItemView.TYPE_ID && viewObject!.getTypeId() != DownloadableInventoryItemView.TYPE_ID)
                         
@@ -208,10 +231,14 @@ var inventoryTag = inventoryTag
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("Must have ")
-stringBuffer!.append("specific TYPE_ID and not: ")
-stringBuffer!.append(inventoryTag!.getHelper()!.::class.toString()!)
+;
+    
+stringBuffer!.append("Must have ");
+    
+stringBuffer!.append("specific TYPE_ID and not: ");
+    
+stringBuffer!.append(inventoryTag!.getHelper()!..constructor.name.toString()!);
+    
 
 
 
@@ -251,11 +278,16 @@ var helperObject = helperObject
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("Must have ")
-stringBuffer!.append("ValidationViewHelper")
-stringBuffer!.append("and not: ")
-stringBuffer!.append(helperObject!::class.toString()!)
+;
+    
+stringBuffer!.append("Must have ");
+    
+stringBuffer!.append("ValidationViewHelper");
+    
+stringBuffer!.append("and not: ");
+    
+stringBuffer!.append(helperObject!.constructor.name.toString()!);
+    
 
 
 

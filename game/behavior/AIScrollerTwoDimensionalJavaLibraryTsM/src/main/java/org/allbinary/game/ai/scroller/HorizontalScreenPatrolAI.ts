@@ -18,7 +18,10 @@
 
 
 
-import { Hashtable } from "../../../../../java/util/Hashtable.js";
+            import Hashtable from "@ohos.util.HashMap";
+        
+
+//import { Hashtable } from "../../../../../java/util/Hashtable.js";
 
     
 import { Canvas } from "../../../../../javax/microedition/lcdui/Canvas.js";
@@ -97,7 +100,7 @@ export class HorizontalScreenPatrolAI extends BasicAI {
         
 
     private readonly sound: Sound
-public constructor (hashtable: Hashtable<Any, Any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput)                        
+public constructor (hashtable: Hashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput)                        
 
                             : super(ownerLayerInterface, gameInput){
 
@@ -109,7 +112,10 @@ var gameInput = gameInput
 
                             //For kotlin this is before the body of the constructor.
                     
-this.sound= hashtable.get(SOUND as Object) as Sound
+this.sound= hashtable.get(SOUND as Object);
+
+                         as Sound;
+    
 
                         if(this.sound == 
                                     null
@@ -130,7 +136,8 @@ this.sound= hashtable.get(SOUND as Object) as Sound
             
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager
-super.processAI(this.keyDirection)
+super.processAI(this.keyDirection);
+    
 
                         if(timeDelayHelper!.isTime())
                         
@@ -139,48 +146,63 @@ super.processAI(this.keyDirection)
     var layerInterface: AllBinaryLayer = this.getOwnerLayerInterface()!;
         
         
-
+;
+    
 
     var currentOwnerLayerX: number = layerInterface!.getXP()!;
         
         
+;
+    
 
+                        if(currentOwnerLayerX <  -layerInterface!.getWidth();
 
-                        if(currentOwnerLayerX <  -layerInterface!.getWidth())
+                        )
                         
                                     {
                                     
     var y: number = MyRandomFactory.getInstance()!.getAbsoluteNextIntAllowZero(50)!;
         
         
-
-layerInterface!.setPosition(displayInfoSingleton!.getLastWidth() +layerInterface!.getWidth() +50, y, layerInterface!.getZP())
-firedIndex= 0
-this.firingX= displayInfoSingleton!.getLastHalfWidth() +MyRandomFactory.getInstance()!.getNextInt(displayInfoSingleton!.getLastHalfWidth())
-secondaryPlayerQueue!.add(this.sound)
+;
+    
+layerInterface!.setPosition(displayInfoSingleton!.getLastWidth() +layerInterface!.getWidth() +50, y, layerInterface!.getZP());
+    
+firedIndex= 0;
+    
+this.firingX= displayInfoSingleton!.getLastHalfWidth() +MyRandomFactory.getInstance()!.getNextInt(displayInfoSingleton!.getLastHalfWidth());
+    
+secondaryPlayerQueue!.add(this.sound);
+    
 
                                     }
                                 
 
-                        if(currentOwnerLayerX < this.firingX && currentOwnerLayerX >  -layerInterface!.getWidth())
+                        if(currentOwnerLayerX < this.firingX && currentOwnerLayerX >  -layerInterface!.getWidth();
+
+                        )
                         
                                     {
-                                    super.processAI(Canvas.KEY_NUM1)
+                                    super.processAI(Canvas.KEY_NUM1);
+    
 
     var gameLayerManager: AllBinaryGameLayerManager = allBinaryLayerManager as AllBinaryGameLayerManager;
         
         
-
+;
+    
 
     var FIRE: number = (gameLayerManager!.getGameInfo()!.getCurrentLevel() +12) shr 2;
         
         
-
+;
+    
 
                         if(FIRE > MAX_FIRE)
                         
                                     {
-                                    FIRE= MAX_FIRE
+                                    FIRE= MAX_FIRE;
+    
 
                                     }
                                 
@@ -188,12 +210,15 @@ secondaryPlayerQueue!.add(this.sound)
                         if(firedIndex > FIRE)
                         
                                     {
-                                    firedIndex= 0
-this.firingX= Integer.MIN_VALUE
+                                    firedIndex= 0;
+    
+this.firingX= Integer.MIN_VALUE;
+    
 
                                     }
                                 
-firedIndex++
+firedIndex++;
+    
 
                                     }
                                 

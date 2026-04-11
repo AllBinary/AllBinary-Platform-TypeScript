@@ -42,8 +42,10 @@ public constructor (storeName: string, gatewayName: string){
             super();
             var storeName = storeName
 var gatewayName = gatewayName
-this.setStoreName(storeName)
-this.setName(gatewayName)
+this.setStoreName(storeName);
+    
+this.setName(gatewayName);
+    
 }
 
 
@@ -59,7 +61,8 @@ this.setName(gatewayName)
 
     public setStoreName(storeName: string){
 var storeName = storeName
-this.storeName= storeName
+this.storeName= storeName;
+    
 }
 
 
@@ -75,7 +78,8 @@ this.storeName= storeName
 
     public setName(name: string){
 var name = name
-this.name= name
+this.name= name;
+    
 }
 
 
@@ -84,20 +88,31 @@ this.name= name
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(PaymentGatewayPrimaryKey::class.toString()!)
-stringBuffer!.append(StoreFront::class.toString()!)
-stringBuffer!.append(" =")
-stringBuffer!.append(this.getStoreName())
-stringBuffer!.append(CommonSeps.getInstance()!.SPACE)
-stringBuffer!.append(PaymentGateway::class.toString()!)
-stringBuffer!.append("=")
-stringBuffer!.append(this.getName())
+;
+    
+stringBuffer!.append(PaymentGatewayPrimaryKey::class.toString()!);
+    
+stringBuffer!.append(StoreFront::class.toString()!);
+    
+stringBuffer!.append(" =");
+    
+stringBuffer!.append(this.getStoreName());
+    
+stringBuffer!.append(CommonSeps.getInstance()!.SPACE);
+    
+stringBuffer!.append(PaymentGateway::class.toString()!);
+    
+stringBuffer!.append("=");
+    
+stringBuffer!.append(this.getName());
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

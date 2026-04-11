@@ -85,14 +85,18 @@ var os = os
 
 
                             throw Error("No Hardware Imp for: " +os.getName())
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put("Ignoring Exception Returning NoHardware", this, commonStrings!.GET_INSTANCE, e)
+;
+    
+logUtil!.put("Ignoring Exception Returning NoHardware", this, commonStrings!.GET_INSTANCE, e);
+    
 
 
 

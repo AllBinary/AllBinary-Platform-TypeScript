@@ -18,7 +18,10 @@
 
 
 
-import { Hashtable } from "../../../../../java/util/Hashtable.js";
+            import Hashtable from "@ohos.util.HashMap";
+        
+
+//import { Hashtable } from "../../../../../java/util/Hashtable.js";
 
     
 import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil.js";
@@ -55,19 +58,22 @@ public constructor (sep: string){
 
                                     }
                                 
-this.sep= sep
+this.sep= sep;
+    
 }
 
 
     public setSep(sep: string){
 var sep = sep
-this.sep= sep
+this.sep= sep;
+    
 }
 
 
     public setEndSep(endSep: string){
 var endSep = endSep
-this.endSep= endSep
+this.endSep= endSep;
+    
 }
 
 
@@ -77,21 +83,25 @@ var string = string
     var tokenList: BasicArrayList = new BasicArrayList();
         
         
-
+;
+    
 
     var index: number = 0;
         
         
-
+;
+    
 
     var size: number = string.length!;
         
         
-
+;
+    
 
         while(index < size)
         {
-index= string.indexOf(sep, index)
+index= string.indexOf(sep, index);
+    
 
                         if(index !=  -1)
                         
@@ -100,13 +110,16 @@ index= string.indexOf(sep, index)
     var end: number = string.indexOf(endSep, index +sep.length)!;
         
         
-
+;
+    
 
                         if(end !=  -1)
                         
                                     {
-                                    tokenList!.add(string.substring(index +sep.length, end -(endSep!.length -1)))
-index= end +endSep!.length
+                                    tokenList!.add(string.substring(index +sep.length, end -(endSep!.length -1)));
+    
+index= end +endSep!.length;
+    
 
                                     }
                                 
@@ -142,27 +155,33 @@ var tokenVector = tokenVector
     var index: number = 0;
         
         
-
+;
+    
 
     var end: number = 0;
         
         
-
+;
+    
 
         while(index < string.length)
         {
-end= string.indexOf(sep, index)
+end= string.indexOf(sep, index);
+    
 
                         if(end !=  -1)
                         
                                     {
-                                    tokenVector!.add(string.substring(index, end))
-index= end +sep.length
+                                    tokenVector!.add(string.substring(index, end));
+    
+index= end +sep.length;
+    
 
                                     }
                                 
                         else {
-                            tokenVector!.add(string.substring(index, string.length))
+                            tokenVector!.add(string.substring(index, string.length));
+    
 break;
 
                     
@@ -180,28 +199,32 @@ break;
 }
 
 
-    public getTokens(stringVector: BasicArrayList): Hashtable<Any, Any>{
+    public getTokens(stringVector: BasicArrayList): Hashtable<any, any>{
 var stringVector = stringVector
 
-    var tokenHashtable: Hashtable<Any, Any> = new Hashtable<Any, Any>();
+    var tokenHashtable: Hashtable<any, any> = new Hashtable<any, any>();
         
         
-
+;
+    
 
     var string: string = StringUtil.getInstance()!.EMPTY_STRING;
         
         
-
+;
+    
 
     var end: number = 0;
         
         
-
+;
+    
 
     var size: number = stringVector!.size()!;
         
         
-
+;
+    
 
 
 
@@ -212,13 +235,16 @@ var stringVector = stringVector
         
 index < size; index++)
         {
-string= stringVector!.objectArray[index]! as String
-end= string.indexOf(sep)
+string= stringVector!.objectArray[index]! as String;
+    
+end= string.indexOf(sep);
+    
 
                         if(end >= 0)
                         
                                     {
-                                    tokenHashtable!.put(string.substring(0, end), string.substring(end +1, string.length))
+                                    tokenHashtable!.put(string.substring(0, end), string.substring(end +1, string.length));
+    
 
                                     }
                                 

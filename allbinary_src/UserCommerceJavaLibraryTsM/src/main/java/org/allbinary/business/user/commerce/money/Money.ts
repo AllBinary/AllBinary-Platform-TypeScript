@@ -48,13 +48,15 @@ public constructor (money: Money){
 
             super();
             var money = money
-this.units= money.getUnits() as Long
+this.units= money.getUnits() as Long;
+    
 }
 
 public constructor (){
 
             super();
-            this.units= 0 as Long
+            this.units= 0 as Long;
+    
 }
 
 public constructor (usDollarStr: string){
@@ -67,7 +69,8 @@ public constructor (usDollarStr: string){
                                  && StringValidationUtil.getInstance()!.isNumber(usDollarStr))
                         
                                     {
-                                    this.units= convertUsdToUnits(usDollarStr) as Long
+                                    this.units= convertUsdToUnits(usDollarStr) as Long;
+    
 
                                     }
                                 
@@ -77,7 +80,8 @@ public constructor (units: number){
 
             super();
             var units = units
-this.units= units as Long
+this.units= units as Long;
+    
 }
 
 
@@ -112,32 +116,37 @@ this.units= units as Long
 
     public add(moreMoney: Money){
 var moreMoney = moreMoney
-this.add(moreMoney!.toString())
+this.add(moreMoney!.toString());
+    
 }
 
 
     public add(usDollarStr: string){
 var usDollarStr = usDollarStr
-this.units= this.units.longValue() +convertUsdToUnits(usDollarStr) as Long
+this.units= this.units.longValue() +convertUsdToUnits(usDollarStr) as Long;
+    
 }
 
 
     public subtract(usDollarStr: string){
 var usDollarStr = usDollarStr
-this.units= this.units.longValue() -convertUsdToUnits(usDollarStr) as Long
+this.units= this.units.longValue() -convertUsdToUnits(usDollarStr) as Long;
+    
 }
 
 
     public multiply(multiplier: Float){
 var multiplier = multiplier
 this.units= Float(this.units.longValue() *multiplier.toFloat()).
-                            longValue() as Long
+                            longValue() as Long;
+    
 }
 
 
     public multiply(multiplier: number){
 var multiplier = multiplier
-this.units= this.units.longValue() *multiplier as Long
+this.units= this.units.longValue() *multiplier as Long;
+    
 }
 
 
@@ -147,7 +156,8 @@ var currency = currency
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
                         if(currency.compareTo(DEFAULT_CURRENCY) == 0)
                         
@@ -156,25 +166,31 @@ var currency = currency
     var dollar: number = units.longValue() /100;
         
         
-
+;
+    
 
     var cents: number = units.longValue() -(dollar *100);
         
         
-
+;
+    
 stringBuffer!.append(dollar as Long.
-                            toString())
-stringBuffer!.append(AbPathData.getInstance()!.EXTENSION_SEP)
+                            toString());
+    
+stringBuffer!.append(AbPathData.getInstance()!.EXTENSION_SEP);
+    
 
                         if(cents < 10)
                         
                                     {
-                                    stringBuffer!.append(CommonPhoneStrings.getInstance()!.ZERO)
+                                    stringBuffer!.append(CommonPhoneStrings.getInstance()!.ZERO);
+    
 
                                     }
                                 
 stringBuffer!.append(cents as Long.
-                            toString())
+                            toString());
+    
 
                                     }
                                 
@@ -183,6 +199,8 @@ stringBuffer!.append(cents as Long.
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 
@@ -193,49 +211,60 @@ var usDollarStr = usDollarStr
     var localUnit: number = 0;
         
         
-
+;
+    
 
     var index: number = usDollarStr!.indexOf(AbPathData.getInstance()!.EXTENSION_SEP)!;
         
         
-
+;
+    
 
     var stringUtil: StringUtil = StringUtil.getInstance()!;
         
         
-
+;
+    
 
     var dollarStr: string = stringUtil!.EMPTY_STRING;
         
         
-
+;
+    
 
     var centsStr: string = stringUtil!.EMPTY_STRING;
         
         
-
+;
+    
 
                         if(index < 1)
                         
                                     {
                                     dollarStr= usDollarStr.toCharArray()
                                         .slice(0, ).join('')
-                                    
-centsStr= "00"
+                                    ;
+    
+centsStr= "00";
+    
 
                                     }
                                 
                         else {
-                            dollarStr= substring.toCharArray()
-centsStr= substring.toCharArray()
+                            dollarStr= substring.toCharArray();
+    
+centsStr= substring.toCharArray();
+    
 
                         }
                             
 localUnit= dollarStr as Long.
                             longValue() *100 as Long.
-                            longValue()
+                            longValue();
+    
 localUnit += centsStr as Long.
-                            longValue()
+                            longValue();
+    
 
 
 
@@ -251,6 +280,8 @@ localUnit += centsStr as Long.
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return units.longValue();
+
+                        ;
     
 }
 

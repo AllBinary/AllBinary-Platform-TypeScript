@@ -46,8 +46,10 @@ public constructor (delay: number){
 
             super();
                 //var delay = delay
-this.delay= delay
-this.setStartTime()
+this.delay= delay;
+    
+this.setStartTime();
+    
 }
 
 
@@ -56,12 +58,14 @@ this.setStartTime()
     var currentTime: number = System.currentTimeMillis()!;
         
         
-
+;
+    
 
                         if(currentTime -this.startTime > this.delay)
                         
                                     {
-                                    this.startTime= currentTime
+                                    this.startTime= currentTime;
+    
 
 
 
@@ -86,12 +90,14 @@ var delay = delay
     var currentTime: number = System.currentTimeMillis()!;
         
         
-
+;
+    
 
                         if(currentTime -this.startTime > delay)
                         
                                     {
-                                    this.startTime= currentTime
+                                    this.startTime= currentTime;
+    
 
 
 
@@ -116,7 +122,8 @@ var currentTime = currentTime
                         if(currentTime -this.startTime > this.delay)
                         
                                     {
-                                    this.startTime= currentTime
+                                    this.startTime= currentTime;
+    
 
 
 
@@ -166,7 +173,8 @@ var currentTime = currentTime
                         if(currentTime -this.startTime > this.delay)
                         
                                     {
-                                    this.startTime= currentTime
+                                    this.startTime= currentTime;
+    
 
 
 
@@ -265,7 +273,8 @@ var time = time
 
     public setStartTime(startTime: number){
 var startTime = startTime
-this.startTime= startTime
+this.startTime= startTime;
+    
 }
 
 
@@ -280,13 +289,16 @@ this.startTime= startTime
 
 
     public setStartTime(){
-this.startTime= System.currentTimeMillis()
+this.startTime= System.currentTimeMillis();
+    
 }
 
 
     public pause(){
-this.elapsedTimeAtPause= this.getElapsed()
-this.startTime= Long.MAX_VALUE
+this.elapsedTimeAtPause= this.getElapsed();
+    
+this.startTime= Long.MAX_VALUE;
+    
 }
 
 
@@ -295,9 +307,12 @@ this.startTime= Long.MAX_VALUE
                         if(this.elapsedTimeAtPause != Long.MIN_VALUE)
                         
                                     {
-                                    this.startTime= System.currentTimeMillis() +this.elapsedTimeAtPause
-this.elapsedTimeAtPause= Long.MIN_VALUE
-this.setStartTime()
+                                    this.startTime= System.currentTimeMillis() +this.elapsedTimeAtPause;
+    
+this.elapsedTimeAtPause= Long.MIN_VALUE;
+    
+this.setStartTime();
+    
 
 
 
@@ -322,7 +337,8 @@ var currentTime = currentTime
     var elapsed: number = this.getElapsed(currentTime)!;
         
         
-
+;
+    
 
                         if(elapsed > 0)
                         
@@ -331,18 +347,22 @@ var currentTime = currentTime
     var commonLabels: CommonLabels = CommonLabels.getInstance()!;
         
         
-
+;
+    
 
     var elapsedAsString: string = (elapsed).toString()!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return StringMaker().
                             append(commonLabels!.START)!.appendlong(this.startTime)!.append(commonLabels!.CURRENT)!.appendlong(currentTime)!.append(commonLabels!.ELAPSED)!.append(elapsedAsString)!.toString();
+
+                        ;
     
 
                                     }
@@ -365,12 +385,14 @@ var currentTime = currentTime
     var currentTime: number = System.currentTimeMillis()!;
         
         
-
+;
+    
 
     var elapsed: number = this.getElapsed(currentTime)!;
         
         
-
+;
+    
 
                         if(elapsed > 0)
                         
@@ -379,18 +401,22 @@ var currentTime = currentTime
     var commonLabels: CommonLabels = CommonLabels.getInstance()!;
         
         
-
+;
+    
 
     var elapsedAsString: string = (elapsed).toString()!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return StringMaker().
                             append(commonLabels!.START)!.appendlong(this.startTime)!.append(commonLabels!.CURRENT)!.appendlong(currentTime)!.append(commonLabels!.ELAPSED)!.append(elapsedAsString)!.toString();
+
+                        ;
     
 
                                     }

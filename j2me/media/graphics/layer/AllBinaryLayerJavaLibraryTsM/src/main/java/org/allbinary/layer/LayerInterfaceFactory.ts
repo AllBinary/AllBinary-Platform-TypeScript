@@ -18,7 +18,10 @@
 
 
 
-import { Hashtable } from "../../../java/util/Hashtable.js";
+            import Hashtable from "@ohos.util.HashMap";
+        
+
+//import { Hashtable } from "../../../java/util/Hashtable.js";
 
     
 import { LogUtil } from "../../../org/allbinary/logic/communication/log/LogUtil.js";
@@ -68,7 +71,8 @@ export class LayerInterfaceFactory
         
 
     public init(){
-list= BasicArrayList()
+list= BasicArrayList();
+    
 }
 
 
@@ -78,7 +82,7 @@ list= BasicArrayList()
 
                 //@Throws(Error::class)
             
-    public getInstance(hashtable: Hashtable<Any, Any>, x: number, y: number, z: number): AllBinaryLayer{
+    public getInstance(hashtable: Hashtable<any, any>, x: number, y: number, z: number): AllBinaryLayer{
     //var hashtable = hashtable
     //var x = x
     //var y = y
@@ -87,31 +91,40 @@ var z = z
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
+;
+    
 logUtil!.put(StringMaker().
-                            append(HASHTABLE_LABEL)!.append(StringUtil.getInstance()!.toString(hashtable))!.toString(), this, commonStrings!.GET_INSTANCE)
+                            append(HASHTABLE_LABEL)!.append(StringUtil.getInstance()!.toString(hashtable))!.toString(), this, commonStrings!.GET_INSTANCE);
+    
 
-    var typeInteger: Integer = hashtable.get(Layer.ID as Object) as Integer;
+    var typeInteger: Integer = hashtable.get(Layer.ID as Object);
+
+                         as Integer;
         
         
-
+;
+    
 
     var layerInterfaceFactoryInterface: LayerInterfaceFactoryInterface = list.objectArray[typeInteger!.toInt() -1]! as LayerInterfaceFactoryInterface;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return layerInterfaceFactoryInterface!.getInstance(hashtable, x, y, z);
+
+                        ;
     
 }
 
 
     public add(layerInterfaceFactoryInterface: LayerInterfaceFactoryInterface){
     //var layerInterfaceFactoryInterface = layerInterfaceFactoryInterface
-list.add(layerInterfaceFactoryInterface)
+list.add(layerInterfaceFactoryInterface);
+    
 }
 
 

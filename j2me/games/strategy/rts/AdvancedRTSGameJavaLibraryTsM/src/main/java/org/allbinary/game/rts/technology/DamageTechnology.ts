@@ -35,7 +35,8 @@ public constructor (maxLevel: number){
 
             super();
             var maxLevel = maxLevel
-this.maxLevel= maxLevel
+this.maxLevel= maxLevel;
+    
 }
 
 
@@ -151,13 +152,16 @@ this.maxLevel= maxLevel
 
 
     public upgrade(){
-this.level++
+this.level++;
+    
 
     var unitTechnologySingletonFactory: UnitTechnologySingletonFactory = UnitTechnologySingletonFactory.getInstance()!;
         
         
-
-unitTechnologySingletonFactory!.setDamage(unitTechnologySingletonFactory!.getDamage() +(this.getLevel() *100))
+;
+    
+unitTechnologySingletonFactory!.setDamage(unitTechnologySingletonFactory!.getDamage() +(this.getLevel() *100));
+    
 }
 
 

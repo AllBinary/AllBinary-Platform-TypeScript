@@ -42,7 +42,8 @@ public constructor (basicColor: BasicColor){
 
             super();
             var basicColor = basicColor
-this.basicColor= basicColor
+this.basicColor= basicColor;
+    
 }
 
 

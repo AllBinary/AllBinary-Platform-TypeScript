@@ -62,7 +62,8 @@ public constructor (document: Document){
     var workAreaNodeList: NodeList = document.getElementsByTagName(this.WORKAREA)!;
         
         
-
+;
+    
 
                         if(workAreaNodeList != 
                                     null
@@ -73,7 +74,8 @@ public constructor (document: Document){
     var numberOfworkAreas: number = workAreaNodeList!.getLength()!;
         
         
-
+;
+    
 
                         if(numberOfworkAreas == 1)
                         
@@ -82,18 +84,22 @@ public constructor (document: Document){
     var numberOfNodes: number = workAreaNodeList!.getLength()!;
         
         
-
+;
+    
 
     var nameNode: Node = DomHelper.getInstance()!.searchNodeList(this.NAME, workAreaNodeList!.item(0)!.getChildNodes())!;
         
         
-
+;
+    
 
     var nameTextNode: Node = nameNode!.getFirstChild()!;
         
         
-
-this.name= nameTextNode!.getNodeValue()
+;
+    
+this.name= nameTextNode!.getNodeValue();
+    
 
                                     }
                                 
@@ -105,7 +111,8 @@ this.name= nameTextNode!.getNodeValue()
 
                         }
                             
-this.canvasNodeList= DomHelper.getInstance()!.getChildrenWithoutTextNodes(this.FRAMES, workAreaNodeList!.item(0)!.getChildNodes())
+this.canvasNodeList= DomHelper.getInstance()!.getChildrenWithoutTextNodes(this.FRAMES, workAreaNodeList!.item(0)!.getChildNodes());
+    
 
                                     }
                                 

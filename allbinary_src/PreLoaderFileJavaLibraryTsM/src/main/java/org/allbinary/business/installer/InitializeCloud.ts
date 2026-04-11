@@ -87,70 +87,95 @@ var total = total
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(URLGLOBALS.getWebappPath())
-stringBuffer!.append(cloud)
-stringBuffer!.append(PATH_GLOBALS.getInstance()!.DATA_PATH)
+;
+    
+stringBuffer!.append(URLGLOBALS.getWebappPath());
+    
+stringBuffer!.append(cloud);
+    
+stringBuffer!.append(PATH_GLOBALS.getInstance()!.DATA_PATH);
+    
 
     var path: AbPath = new AbPath(stringBuffer!.toString());
         
         
-
-stringBuffer!.delete(0, stringBuffer!.length())
-stringBuffer!.append(URLGLOBALS.getWebappPath())
+;
+    
+stringBuffer!.delete(0, stringBuffer!.length());
+    
+stringBuffer!.append(URLGLOBALS.getWebappPath());
+    
 
     var realPath: AbPath = new AbPath(stringBuffer!.toString());
         
         
-
+;
+    
 
     var file: AbFile = new AbFile(path);
         
         
-
+;
+    
 
     var fileBasicArrayList: BasicArrayList = Directory.getInstance()!.search(file, true)!;
         
         
-
+;
+    
 
     var size: number = fileBasicArrayList!.size()!;
         
         
-
-stringBuffer!.delete(0, stringBuffer!.length())
-stringBuffer!.append("Searched: ")
-stringBuffer!.append(path.toFileSystemString())
-stringBuffer!.append(" BasicArrayList: ")
-stringBuffer!.appendint(size)
+;
+    
+stringBuffer!.delete(0, stringBuffer!.length());
+    
+stringBuffer!.append("Searched: ");
+    
+stringBuffer!.append(path.toFileSystemString());
+    
+stringBuffer!.append(" BasicArrayList: ");
+    
+stringBuffer!.appendint(size);
+    
 
     var portion: number = size /total +1;
         
         
-
+;
+    
 
     var start: number = portion *current;
         
         
-
+;
+    
 
     var end: number = start +portion;
         
         
-
+;
+    
 
                         if(end > size)
                         
                                     {
-                                    end= size
+                                    end= size;
+    
 
                                     }
                                 
-stringBuffer!.append(" Section: ")
-stringBuffer!.appendint(start)
-stringBuffer!.append(" - ")
-stringBuffer!.appendint(end)
-logUtil!.put(stringBuffer!.toString(), this, "initialize()")
+stringBuffer!.append(" Section: ");
+    
+stringBuffer!.appendint(start);
+    
+stringBuffer!.append(" - ");
+    
+stringBuffer!.appendint(end);
+    
+logUtil!.put(stringBuffer!.toString(), this, "initialize()");
+    
 
 
 
@@ -162,10 +187,13 @@ logUtil!.put(stringBuffer!.toString(), this, "initialize()")
 index < end; index++)
         {
 
-    var nextFile: AbFile = fileBasicArrayList!.get(index) as AbFile;
-        
-        
+    var nextFile: AbFile = fileBasicArrayList!.get(index);
 
+                         as AbFile;
+        
+        
+;
+    
 
                         if(nextFile!.isDirectory())
                         
@@ -174,13 +202,15 @@ index < end; index++)
                                     }
                                 
                         else {
-                            FileUtil.getInstance()!.copyToCloud(nextFile, path, realPath, cloud, overwriteNewer, overwriteAll)
+                            FileUtil.getInstance()!.copyToCloud(nextFile, path, realPath, cloud, overwriteNewer, overwriteAll);
+    
 
                         }
                             
 }
 
-logUtil!.put("Copied Files To Cloud", this, "initialize()")
+logUtil!.put("Copied Files To Cloud", this, "initialize()");
+    
 
                                     }
                                 
@@ -190,9 +220,12 @@ logUtil!.put("Copied Files To Cloud", this, "initialize()")
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return true;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put("Unable to copy installer files into cloud", this, "initialize()", e)
+logUtil!.put("Unable to copy installer files into cloud", this, "initialize()", e);
+    
 
 
 

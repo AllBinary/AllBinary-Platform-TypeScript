@@ -95,19 +95,27 @@ var aMuted = aMuted
     var logUtil: LogUtil = LogUtil.getInstance()!;
         
         
-
+;
+    
 
     var commonString: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonString!.START, THIS, commonString!.INIT)
-AllBinaryMediaManager.shutdown(soundsFactoryInterface)
-ProgressCanvasFactory.getInstance()!.addPortion(50, "Media Manager")
-System.gc()
+;
+    
+logUtil!.put(commonString!.START, THIS, commonString!.INIT);
+    
+AllBinaryMediaManager.shutdown(soundsFactoryInterface);
+    
+ProgressCanvasFactory.getInstance()!.addPortion(50, "Media Manager");
+    
+System.gc();
+    
 Sounds(soundsFactoryInterface).
-                            init()
-logUtil!.put(commonString!.END, THIS, commonString!.INIT)
+                            init();
+    
+logUtil!.put(commonString!.END, THIS, commonString!.INIT);
+    
 }
 
 
@@ -119,33 +127,41 @@ logUtil!.put(commonString!.END, THIS, commonString!.INIT)
     var logUtil: LogUtil = LogUtil.getInstance()!;
         
         
-
+;
+    
 
     var commonString: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonString!.START, THIS, "shutdown")
+;
+    
+logUtil!.put(commonString!.START, THIS, "shutdown");
+    
 
                         if(soundsFactoryInterface!.isInitialized())
                         
                                     {
                                     Sounds(soundsFactoryInterface).
-                            stopAll()
+                            stopAll();
+    
 
     var soundInterfaceArray: Sound[] = soundsFactoryInterface!.getSoundInterfaceArray()!;
         
         
-
+;
+    
 
     var player: Player
-
+;
+    
 
     var player2: Player
-
+;
+    
 
     var androidMediaPlayerWrapper: AndroidMediaPlayerWrapper
-
+;
+    
 
 
 
@@ -162,7 +178,8 @@ i < soundInterfaceArray!.length; i++)
                                 )
                         
                                     {
-                                    player= soundInterfaceArray[i]!.getPlayerP()
+                                    player= soundInterfaceArray[i]!.getPlayerP();
+    
 
                         if(player != 
                                     null
@@ -170,13 +187,16 @@ i < soundInterfaceArray!.length; i++)
                         
                                     {
                                     player2= 
-                                    (player as PlayerComposite).getPlayerP()
+                                    (player as PlayerComposite).getPlayerP();
+    
 
                         if(player2 is AndroidMediaPlayerWrapper)
                         
                                     {
-                                    androidMediaPlayerWrapper= player2 as AndroidMediaPlayerWrapper
-MediaPlayerUtil.getInstance()!.wait(androidMediaPlayerWrapper!.getMediaPlayer())
+                                    androidMediaPlayerWrapper= player2 as AndroidMediaPlayerWrapper;
+    
+MediaPlayerUtil.getInstance()!.wait(androidMediaPlayerWrapper!.getMediaPlayer());
+    
 
                                     }
                                 
@@ -184,7 +204,7 @@ MediaPlayerUtil.getInstance()!.wait(androidMediaPlayerWrapper!.getMediaPlayer())
                             
 
 
-                            throw Error("Unknown Property Player: " +player::class.toString()!)
+                            throw Error("Unknown Property Player: " +player.constructor.name.toString()!)
 
                         }
                             
@@ -197,14 +217,19 @@ MediaPlayerUtil.getInstance()!.wait(androidMediaPlayerWrapper!.getMediaPlayer())
 }
 
 Sounds(soundsFactoryInterface).
-                            closeAll()
-System.gc()
-soundsFactoryInterface!.setInitialized(false)
-mostUsedTotal= 0
+                            closeAll();
+    
+System.gc();
+    
+soundsFactoryInterface!.setInitialized(false);
+    
+mostUsedTotal= 0;
+    
 
                                     }
                                 
-logUtil!.put(commonString!.START, THIS, "shutdown")
+logUtil!.put(commonString!.START, THIS, "shutdown");
+    
 }
 
 
@@ -212,12 +237,14 @@ logUtil!.put(commonString!.START, THIS, "shutdown")
             
     public static createPlayer(resource: string): Player{
 var resource = resource
-mostUsedTotal++
+mostUsedTotal++;
+    
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
         
         
-
+;
+    
 
                         if(Features.getInstance()!.isFeature(GameFeatureFactory.getInstance()!.SOUND))
                         
@@ -230,9 +257,12 @@ mostUsedTotal++
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return AndroidMediaPlayerWrapper(resource);
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put("Could not create AndroidMediaPlayerWrapper using NoPlayer at " +CommonLabels.getInstance()!.TOTAL_LABEL +mostUsedTotal, THIS, "createPlayer", e)
+logUtil!.put("Could not create AndroidMediaPlayerWrapper using NoPlayer at " +CommonLabels.getInstance()!.TOTAL_LABEL +mostUsedTotal, THIS, "createPlayer", e);
+    
 
 
 

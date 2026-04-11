@@ -59,8 +59,10 @@ var eventListenerInterface = eventListenerInterface
     var boundsChangeEventListener: BoundsChangeEventListener = eventListenerInterface as BoundsChangeEventListener;
         
         
-
-boundsChangeEventListener!.onBoundsChangeEvent(eventObject as BoundsChangeEvent)
+;
+    
+boundsChangeEventListener!.onBoundsChangeEvent(eventObject as BoundsChangeEvent);
+    
 }
 
 

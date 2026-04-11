@@ -59,15 +59,19 @@ export class ImageTypeUtil
 private constructor (){
 
             super();
-            list.add(JPG)
-list.add(GIF)
-list.add(PNG)
+            list.add(JPG);
+    
+list.add(GIF);
+    
+list.add(PNG);
+    
 }
 
 
     public isSupported(mediaFileType: string): boolean{
 var mediaFileType = mediaFileType
-mediaFileType= mediaFileType!.lowercase()
+mediaFileType= mediaFileType!.lowercase();
+    
 
 
 
@@ -79,10 +83,13 @@ mediaFileType= mediaFileType!.lowercase()
 index >= 0; index--)
         {
 
-    var name: string = list.get(index) as String;
-        
-        
+    var name: string = list.get(index);
 
+                         as String;
+        
+        
+;
+    
 
                         if(mediaFileType!.compareTo(name) == 0)
                         

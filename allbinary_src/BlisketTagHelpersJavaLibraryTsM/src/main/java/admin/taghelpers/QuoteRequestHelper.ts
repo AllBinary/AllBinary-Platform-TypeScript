@@ -18,10 +18,13 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { HashMap } from "../../java/util/HashMap.js";
 
     
-import { Vector } from "../../java/util/Vector.js";
+
+//import { Vector } from "../../java/util/Vector.js";
 
     
 import { HttpServletRequest } from "../../javax/servlet/http/HttpServletRequest.js";
@@ -64,30 +67,39 @@ export class QuoteRequestHelper extends ModifyTable {
     private storeFrontInterface: StoreFrontInterface
 
     private quoteRequest: QuoteRequest
-public constructor (hashMap: HashMap<Any, Any>, pageContext: PageContext){
+public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
             var hashMap = hashMap
 var pageContext = pageContext
 
-    var request: HttpServletRequest = pageContext!.getRequest() as HttpServletRequest;
-        
-        
+    var request: HttpServletRequest = pageContext!.getRequest();
 
-this.weblisketSession= WeblisketSession(hashMap, pageContext)
-this.quoteRequest= QuoteRequest(this.weblisketSession!.getUserName(), request)
-
-    var storeName: string = hashMap!.get(StoreFrontData.getInstance()!.NAME) as String;
+                         as HttpServletRequest;
         
         
+;
+    
+this.weblisketSession= WeblisketSession(hashMap, pageContext);
+    
+this.quoteRequest= QuoteRequest(this.weblisketSession!.getUserName(), request);
+    
 
+    var storeName: string = hashMap!.get(StoreFrontData.getInstance()!.NAME);
+
+                         as String;
+        
+        
+;
+    
 
                         if(storeName != 
                                     null
                                 )
                         
                                     {
-                                    this.storeFrontInterface= StoreFrontFactory.getInstance(storeName)
+                                    this.storeFrontInterface= StoreFrontFactory.getInstance(storeName);
+    
 
                                     }
                                 
@@ -100,6 +112,8 @@ this.quoteRequest= QuoteRequest(this.weblisketSession!.getUserName(), request)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.quoteRequest!.isValid();
+
+                        ;
     
 }
 
@@ -110,6 +124,8 @@ this.quoteRequest= QuoteRequest(this.weblisketSession!.getUserName(), request)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.quoteRequest!.validationInfo();
+
+                        ;
     
 }
 
@@ -121,18 +137,22 @@ this.quoteRequest= QuoteRequest(this.weblisketSession!.getUserName(), request)
     var values: Vector = this.quoteRequest!.toVector()!;
         
         
-
-QuoteRequestEntityFactory.getInstance()!.getQuoteRequestEntityInstance()!.insert(values)
+;
+    
+QuoteRequestEntityFactory.getInstance()!.getQuoteRequestEntityInstance()!.insert(values);
+    
 
     var success: string = "New QuoteRequest Successfully added to the QuoteRequest Table";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put(success, this, "add()")
+                                    logUtil!.put(success, this, "add()");
+    
 
                                     }
                                 
@@ -142,18 +162,22 @@ QuoteRequestEntityFactory.getInstance()!.getQuoteRequestEntityInstance()!.insert
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to add QuoteRequest";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "add()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "add()", e);
+    
 
                                     }
                                 
@@ -172,21 +196,25 @@ QuoteRequestEntityFactory.getInstance()!.getQuoteRequestEntityInstance()!.insert
 
         try {
             
-    var values: HashMap<Any, Any> = this.quoteRequest!.toHashMap()!;
+    var values: HashMap<any, any> = this.quoteRequest!.toHashMap()!;
         
         
-
-QuoteRequestEntityFactory.getInstance()!.getQuoteRequestEntityInstance()!.update(this.quoteRequest!.getUserName(), values)
+;
+    
+QuoteRequestEntityFactory.getInstance()!.getQuoteRequestEntityInstance()!.update(this.quoteRequest!.getUserName(), values);
+    
 
     var success: string = "New QuoteRequest Successfully updated";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put(success, this, "update()")
+                                    logUtil!.put(success, this, "update()");
+    
 
                                     }
                                 
@@ -196,18 +224,22 @@ QuoteRequestEntityFactory.getInstance()!.getQuoteRequestEntityInstance()!.update
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to update QuoteRequest";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "update()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "update()", e);
+    
 
                                     }
                                 

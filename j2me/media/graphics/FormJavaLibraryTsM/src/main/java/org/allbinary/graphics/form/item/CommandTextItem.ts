@@ -43,7 +43,8 @@ var foregroundBasicColor = foregroundBasicColor
 
                             //For kotlin this is before the body of the constructor.
                     
-this.command= command
+this.command= command;
+    
 }
 
 

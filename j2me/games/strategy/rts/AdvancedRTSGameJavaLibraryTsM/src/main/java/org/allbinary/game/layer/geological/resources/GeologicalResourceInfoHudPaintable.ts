@@ -48,27 +48,32 @@ export class GeologicalResourceInfoHudPaintable extends WaypointInfoHudPaintable
 public constructor (){
 
             super();
-            keyvalueDrawString= KeyValueDrawCharArray(RESOURCES, this.textX)
+            keyvalueDrawString= KeyValueDrawCharArray(RESOURCES, this.textX);
+    
 }
 
 
     public updateSelectionInfo(){
-super.updateSelectionInfo()
+super.updateSelectionInfo();
+    
 
     var rtsLayer: RTSLayer = this.rtsLayerP as RTSLayer;
         
         
-
+;
+    
 
     var list: BasicArrayList = rtsLayer!.geographicMapCellPositionAreaBase!.getOccupyingGeographicMapCellPositionList()!;
         
         
-
+;
+    
 
     var total: number = 0;
         
         
-
+;
+    
 
 
 
@@ -80,21 +85,28 @@ super.updateSelectionInfo()
 --index >= 0; )
         {
 
-    var geographicMapCellPosition: GeologicalGeographicMapCellPosition = list.get(index) as GeologicalGeographicMapCellPosition;
-        
-        
+    var geographicMapCellPosition: GeologicalGeographicMapCellPosition = list.get(index);
 
-total += geographicMapCellPosition!.getGeologicalResource()!.getTotal()
+                         as GeologicalGeographicMapCellPosition;
+        
+        
+;
+    
+total += geographicMapCellPosition!.getGeologicalResource()!.getTotal();
+    
 }
 
-this.keyvalueDrawString!.update(this.getPrimitiveLongUtil()!.getCharArray(total), this.getPrimitiveLongUtil()!.getCurrentTotalDigits())
+this.keyvalueDrawString!.update(this.getPrimitiveLongUtil()!.getCharArray(total), this.getPrimitiveLongUtil()!.getCurrentTotalDigits());
+    
 }
 
 
     public paint(graphics: Graphics){
 var graphics = graphics
-super.paint(graphics)
-this.keyvalueDrawString!.paint(graphics, (y +(2 *MyFont.getInstance()!.DEFAULT_CHAR_HEIGHT)))
+super.paint(graphics);
+    
+this.keyvalueDrawString!.paint(graphics, (y +(2 *MyFont.getInstance()!.DEFAULT_CHAR_HEIGHT)));
+    
 }
 
 

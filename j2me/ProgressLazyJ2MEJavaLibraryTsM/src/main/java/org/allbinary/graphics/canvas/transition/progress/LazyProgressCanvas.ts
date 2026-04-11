@@ -56,35 +56,48 @@ protected constructor (title: string, backgroundBasicColor: BasicColor, foregrou
 
 
     public start(){
-super.start()
-this.hasPainted= false
+super.start();
+    
+this.hasPainted= false;
+    
 }
 
 
     public end(){
 
         try {
-            logUtil!.put(commonStrings!.START, this, commonStrings!.END_METHOD_NAME)
-this.endActual()
-this.paintable= GAUGE_PAINTABLE
-ImageCacheFactory.getInstance()!.runTask()
-ImageCacheFactory.getInstance()!.progressEnded()
-} catch(e: Exception)
+            logUtil!.put(commonStrings!.START, this, commonStrings!.END_METHOD_NAME);
+    
+this.endActual();
+    
+this.paintable= GAUGE_PAINTABLE;
+    
+ImageCacheFactory.getInstance()!.runTask();
+    
+ImageCacheFactory.getInstance()!.progressEnded();
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.END_METHOD_NAME)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.END_METHOD_NAME);
+    
 }
 
 }
 
 
     public inGame(){
-inGameProcessor= Processor.getInstance()
+inGameProcessor= Processor.getInstance();
+    
 }
 
 
     public endFromInitialLazyLoadingComplete(){
-super.endFromInitialLazyLoadingComplete()
-this.paintable= NullPaintable.getInstance()
+super.endFromInitialLazyLoadingComplete();
+    
+this.paintable= NullPaintable.getInstance();
+    
 }
 
 
@@ -93,7 +106,8 @@ this.paintable= NullPaintable.getInstance()
                         if(this.paintable == GAUGE_PAINTABLE && this.hasPainted)
                         
                                     {
-                                    this.endFromInitialLazyLoadingComplete()
+                                    this.endFromInitialLazyLoadingComplete();
+    
 
                                     }
                                 

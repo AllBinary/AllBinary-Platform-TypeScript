@@ -54,7 +54,8 @@ export class ActivityFractureUtilAPI1 extends ActivityFractureUtil {
 
     public setFullScreen(activity: Activity){
     //var activity = activity
-activity.getWindow()!.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN)
+activity.getWindow()!.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+    
 }
 
 

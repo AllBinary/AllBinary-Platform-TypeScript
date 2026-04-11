@@ -68,7 +68,8 @@ private constructor (){
     public process(damageableInterface: DamageableInterface, damageableInterface2: DamageableInterface){
 var damageableInterface = damageableInterface
 var damageableInterface2 = damageableInterface2
-damageableInterface!.damage(damageableInterface2!.getDamage(0), 0)
+damageableInterface!.damage(damageableInterface2!.getDamage(0), 0);
+    
 }
 
 
@@ -81,12 +82,14 @@ var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterfac
     var collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer = collidableInterfaceCompositeInterface as CollidableDestroyableDamageableLayer;
         
         
-
+;
+    
 
     var damage: number = collidableDestroyableDamageableLayer!.getDamage(0)!;
         
         
-
+;
+    
 
                         if(damage > 20000)
                         
@@ -95,14 +98,22 @@ var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterfac
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("Collision ")
-stringBuffer!.append(collidableInterfaceCompositeInterface1!.toString())
-stringBuffer!.append(" with: ")
-stringBuffer!.append(collidableInterfaceCompositeInterface!.toString())
-stringBuffer!.append(" damage: ")
-stringBuffer!.appendint(damage)
-logUtil!.put(stringBuffer!.toString(), collidableInterfaceCompositeInterface1, COLLIDE)
+;
+    
+stringBuffer!.append("Collision ");
+    
+stringBuffer!.append(collidableInterfaceCompositeInterface1!.toString());
+    
+stringBuffer!.append(" with: ");
+    
+stringBuffer!.append(collidableInterfaceCompositeInterface!.toString());
+    
+stringBuffer!.append(" damage: ");
+    
+stringBuffer!.appendint(damage);
+    
+logUtil!.put(stringBuffer!.toString(), collidableInterfaceCompositeInterface1, COLLIDE);
+    
 
                                     }
                                 

@@ -76,7 +76,8 @@ export class GenericBodyValidation extends Validation
 public constructor (){
 
             super();
-            this.body= StringUtil.getInstance()!.EMPTY_STRING
+            this.body= StringUtil.getInstance()!.EMPTY_STRING;
+    
 }
 
 public constructor (document: Document){
@@ -87,7 +88,8 @@ public constructor (document: Document){
     var nodeList: NodeList = document.getElementsByTagName(BodyData.getInstance()!.NAME)!;
         
         
-
+;
+    
 
 
 
@@ -102,30 +104,37 @@ index < nodeList!.getLength(); index++)
     var aBodyNode: Node = nodeList!.item(index)!;
         
         
-
+;
+    
 
     var aBodyValueNode: Node = DomSearchHelper.getNode(DomData.VALUE, aBodyNode!.getChildNodes())!;
         
         
-
-this.body= DomNodeHelper.getTextNodeValue(aBodyValueNode)
+;
+    
+this.body= DomNodeHelper.getTextNodeValue(aBodyValueNode);
+    
 }
 
 }
 
-public constructor (hashMap: HashMap<Any, Any>){
+public constructor (hashMap: HashMap<any, any>){
 
             super();
             var hashMap = hashMap
-this.getFormData(hashMap)
+this.getFormData(hashMap);
+    
 }
 
 
                 //@Throws(Error::class)
             
-    public getFormData(hashMap: HashMap<Any, Any>){
+    public getFormData(hashMap: HashMap<any, any>){
 var hashMap = hashMap
-this.body= hashMap!.get(BodyData.getInstance()!.NAME) as String
+this.body= hashMap!.get(BodyData.getInstance()!.NAME);
+
+                         as String;
+    
 }
 
 
@@ -136,28 +145,34 @@ this.body= hashMap!.get(BodyData.getInstance()!.NAME) as String
     var isValid: Boolean = Boolean.TRUE;
         
         
-
-
-                        if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
-                        
-                                    {
-                                    logUtil!.put(this.commonStrings!.START, this, commonStrings!.IS_VALID)
-
-                                    }
-                                
-
-                        if(!StringValidationUtil.getInstance()!.isValidNotRequired(this.body, BodyData.getInstance()!.MIN, AbSqlData.MAXBLOB))
-                        
-                                    {
-                                    isValid= Boolean.FALSE
-
-                                    }
-                                
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("BodyValidation: " +isValid, this, commonStrings!.IS_VALID)
+                                    logUtil!.put(this.commonStrings!.START, this, commonStrings!.IS_VALID);
+    
+
+                                    }
+                                
+
+                        if(!StringValidationUtil.getInstance()!.isValidNotRequired(this.body, BodyData.getInstance()!.MIN, AbSqlData.MAXBLOB);
+
+                        )
+                        
+                                    {
+                                    isValid= Boolean.FALSE;
+    
+
+                                    }
+                                
+
+                        if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
+                        
+                                    {
+                                    logUtil!.put("BodyValidation: " +isValid, this, commonStrings!.IS_VALID);
+    
 
                                     }
                                 
@@ -167,13 +182,16 @@ this.body= hashMap!.get(BodyData.getInstance()!.NAME) as String
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return isValid;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put("Failed to validate form", this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put("Failed to validate form", this, commonStrings!.IS_VALID, e);
+    
 
                                     }
                                 
@@ -195,14 +213,19 @@ this.body= hashMap!.get(BodyData.getInstance()!.NAME) as String
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
 
                             {
-                            stringBuffer!.append("Error: Data submitted is < ")
-stringBuffer!.appendint(BodyData.getInstance()!.MIN)
-stringBuffer!.append(" or > ")
-stringBuffer!.appendint(AbSqlData.MAXBLOB)
+                            stringBuffer!.append("Error: Data submitted is < ");
+    
+stringBuffer!.appendint(BodyData.getInstance()!.MIN);
+    
+stringBuffer!.append(" or > ");
+    
+stringBuffer!.appendint(AbSqlData.MAXBLOB);
+    
 
                             }
                     
@@ -211,14 +234,19 @@ stringBuffer!.appendint(AbSqlData.MAXBLOB)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e)
+                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e);
+    
 
                                     }
                                 
@@ -262,7 +290,8 @@ var document = document
     var node: Node = ModDomHelper.createNameValueNodes(document, BodyData.getInstance()!.NAME, this.body)!;
         
         
-
+;
+    
 
 
 

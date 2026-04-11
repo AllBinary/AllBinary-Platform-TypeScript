@@ -34,7 +34,7 @@ export class AdjustedLeftToRightImageAnimation extends LeftToRightImageAnimation
     private dx: number= 0
 
     private dy: number= 0
-public constructor (image: Image, sequenceArray: IntArray, dx: number, dy: number, animationBehavior: AnimationBehavior)                        
+public constructor (image: Image, sequenceArray: number[], dx: number, dy: number, animationBehavior: AnimationBehavior)                        
 
                             : super(image, sequenceArray, animationBehavior){
 
@@ -48,7 +48,8 @@ public constructor (image: Image, sequenceArray: IntArray, dx: number, dy: numbe
 
                             //For kotlin this is before the body of the constructor.
                     
-this.init(dx, dy)
+this.init(dx, dy);
+    
 }
 
 
@@ -57,8 +58,10 @@ this.init(dx, dy)
     public init(dx: number, dy: number){
     //var dx = dx
     //var dy = dy
-this.dx= dx
-this.dy= dy
+this.dx= dx;
+    
+this.dy= dy;
+    
 }
 
 
@@ -66,7 +69,8 @@ this.dy= dy
     //var graphics = graphics
     //var x = x
     //var y = y
-super.paint(graphics, x +this.dx, y +this.dy)
+super.paint(graphics, x +this.dx, y +this.dy);
+    
 }
 
 

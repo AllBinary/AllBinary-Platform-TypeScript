@@ -54,8 +54,10 @@ public constructor (){
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.VIEW) == 0)
                         
                                     {
-                                    this.setName("Basic Shipping Address View")
-this.setObjectFile("views.generic.address.shipping.TaxValidationView")
+                                    this.setName("Basic Shipping Address View");
+    
+this.setObjectFile("views.generic.address.shipping.TaxValidationView");
+    
 
                                     }
                                 
@@ -63,8 +65,10 @@ this.setObjectFile("views.generic.address.shipping.TaxValidationView")
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.NEW) == 0)
                         
                                     {
-                                    this.setName("Basic Shipping Address View")
-this.setObjectFile("views.generic.address.shipping.NewValidationView")
+                                    this.setName("Basic Shipping Address View");
+    
+this.setObjectFile("views.generic.address.shipping.NewValidationView");
+    
 
                                     }
                                 
@@ -72,8 +76,10 @@ this.setObjectFile("views.generic.address.shipping.NewValidationView")
                         if(this.getCommand()!.compareTo(this.commonStrings!.INSERT) == 0)
                         
                                     {
-                                    this.setName("Basic Shipping Address View")
-this.setObjectFile("views.generic.address.shipping.AddTaxValidationView")
+                                    this.setName("Basic Shipping Address View");
+    
+this.setObjectFile("views.generic.address.shipping.AddTaxValidationView");
+    
 
                                     }
                                 
@@ -81,8 +87,10 @@ this.setObjectFile("views.generic.address.shipping.AddTaxValidationView")
                         if(this.getCommand()!.compareTo(this.commonStrings!.UPDATE) == 0)
                         
                                     {
-                                    this.setName("Basic Shipping Address View")
-this.setObjectFile("views.generic.address.shipping.UpdateTaxValidationView")
+                                    this.setName("Basic Shipping Address View");
+    
+this.setObjectFile("views.generic.address.shipping.UpdateTaxValidationView");
+    
 
                                     }
                                 
@@ -99,6 +107,8 @@ this.setObjectFile("views.generic.address.shipping.UpdateTaxValidationView")
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.doStartTag();
+
+                        ;
     
 
                                     }
@@ -107,9 +117,12 @@ this.setObjectFile("views.generic.address.shipping.UpdateTaxValidationView")
 
 
                             throw Error("Command Null")
-} catch(e: LicensingException)
+
+                //: 
+} catch(e) 
             {
-AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e);
+    
 
 
 
@@ -117,9 +130,12 @@ AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
                         return SKIP_BODY;
     
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
-AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
+    
 
 
 

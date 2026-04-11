@@ -68,6 +68,8 @@ private constructor (){
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getRotatedImage(bufferedImage, TWO_PIE *totalAngle /360);
+
+                        ;
     
 }
 
@@ -81,12 +83,15 @@ private constructor (){
                             null))!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getRotatedImage(bufferedImage, newBufferedImage, newBufferedImage!.createGraphics(), radians);
+
+                        ;
     
 }
 
@@ -98,12 +103,15 @@ private constructor (){
     //var radians = radians
 g.rotate(radians, newBufferedImage!.getWidth(
                             null) /2, newBufferedImage!.getHeight(
-                            null) /2)
+                            null) /2);
+    
 g.drawImage(bufferedImage, 0, 0, bufferedImage!.getWidth(
                             null), bufferedImage!.getHeight(
                             null), 
-                            null)
-g.dispose()
+                            null);
+    
+g.dispose();
+    
 
 
 
@@ -125,14 +133,19 @@ g.dispose()
     var g: Graphics2D = newBufferedImage!.createGraphics()!;
         
         
-
-g.setBackground(imageJ2SEUtil!.TRANSPARENT_COLOR)
-g.clearRect(0, 0, newBufferedImage!.getWidth(), newBufferedImage!.getHeight())
+;
+    
+g.setBackground(imageJ2SEUtil!.TRANSPARENT_COLOR);
+    
+g.clearRect(0, 0, newBufferedImage!.getWidth(), newBufferedImage!.getHeight());
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getRotatedImage(bufferedImage, newBufferedImage, g, TWO_PIE *totalAngle /360);
+
+                        ;
     
 }
 
@@ -145,12 +158,15 @@ g.clearRect(0, 0, newBufferedImage!.getWidth(), newBufferedImage!.getHeight())
     var g: Graphics2D = newBufferedImage!.createGraphics()!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getRotatedImage(bufferedImage, newBufferedImage, g, TWO_PIE *totalAngle /360);
+
+                        ;
     
 }
 
@@ -163,18 +179,21 @@ g.clearRect(0, 0, newBufferedImage!.getWidth(), newBufferedImage!.getHeight())
     var bufferedImageArray: BufferedImage[] = new Array(numberOfFrames);
         
         
-
+;
+    
 
     var arc: number = (TWO_PIE) *totalAngle /360;
         
         
-
+;
+    
 
     var size: number = bufferedImageArray!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -189,8 +208,10 @@ index < size; index++)
     var radians: number = (arc /size) *index;
         
         
-
-bufferedImageArray[index]= this.getRotatedImage(bufferedImage, radians)
+;
+    
+bufferedImageArray[index]= this.getRotatedImage(bufferedImage, radians);
+    
 }
 
 
@@ -208,32 +229,38 @@ bufferedImageArray[index]= this.getRotatedImage(bufferedImage, radians)
     var columns: number = 9;
         
         
-
+;
+    
 
     var rows: number = 0;
         
         
-
+;
+    
 
     var size: number = bufferedImageArray!.length
                 ;
         
         
-
+;
+    
 
                         if(size < columns)
                         
                                     {
-                                    columns= size
+                                    columns= size;
+    
 
                                     }
                                 
-rows= (size /columns)
+rows= (size /columns);
+    
 
                         if(size % columns != 0)
                         
                                     {
-                                    rows++
+                                    rows++;
+    
 
                                     }
                                 
@@ -241,32 +268,38 @@ rows= (size /columns)
     var firstBufferedImage: BufferedImage = bufferedImageArray[0]!;
         
         
-
+;
+    
 
     var bufferedImage: BufferedImage = this.imageUtil!.create(firstBufferedImage!.getWidth(
                             null) *columns, firstBufferedImage!.getHeight(
                             null) *rows)!;
         
         
-
+;
+    
 
     var g: Graphics2D = bufferedImage!.createGraphics()!;
         
         
-
+;
+    
 
     var columnIndex: number = 0;
         
         
-
+;
+    
 
     var rowIndex: number = 0;
         
         
-
+;
+    
 
     var nextBufferedImage: BufferedImage
-
+;
+    
 
 
 
@@ -281,22 +314,28 @@ index < size; index++)
                         if(index /9 != 0 && index % 9 == 0)
                         
                                     {
-                                    rowIndex++
-columnIndex= 0
+                                    rowIndex++;
+    
+columnIndex= 0;
+    
 
                                     }
                                 
-nextBufferedImage= bufferedImageArray[index]!
+nextBufferedImage= bufferedImageArray[index]!;
+    
 g.drawImage(nextBufferedImage, nextBufferedImage!.getWidth(
                             null) *columnIndex, nextBufferedImage!.getHeight(
                             null) *rowIndex, nextBufferedImage!.getWidth(
                             null), nextBufferedImage!.getHeight(
                             null), 
-                            null)
-columnIndex++
+                            null);
+    
+columnIndex++;
+    
 }
 
-g.dispose()
+g.dispose();
+    
 
 
 

@@ -18,7 +18,10 @@
 
 
 
-import { Vector } from "../../../../java/util/Vector.js";
+            import Vector from "@ohos.util.Vector";
+        
+
+//import { Vector } from "../../../../java/util/Vector.js";
 
     
 import { ShippingAddressData } from "../../../../org/allbinary/business/user/address/ShippingAddressData.js";
@@ -67,12 +70,14 @@ public constructor (transformInfoInterface: TransformInfoInterface)
     var billingAddressesEntity: ShippingAddressesEntity = new ShippingAddressesEntity(this.getWeblisketSession()!.getUserName());
         
         
-
+;
+    
 
     var streetAddressList: Vector = billingAddressesEntity!.get()!;
         
         
-
+;
+    
 
                         if(streetAddressList == 
                                     null
@@ -92,7 +97,8 @@ public constructor (transformInfoInterface: TransformInfoInterface)
     var size: number = streetAddressList!.length!;
         
         
-
+;
+    
 
 
 
@@ -104,15 +110,19 @@ public constructor (transformInfoInterface: TransformInfoInterface)
 index < size; index++)
         {
 
-    var aStreetAddress: StreetAddress = streetAddressList!.get(index) as StreetAddress;
-        
-        
+    var aStreetAddress: StreetAddress = streetAddressList!.get(index);
 
+                         as StreetAddress;
+        
+        
+;
+    
 
                         if(aStreetAddress!.getName()!.compareTo(ShippingAddressData.TAX) == 0)
                         
                                     {
-                                    this.streetAddress= aStreetAddress
+                                    this.streetAddress= aStreetAddress;
+    
 
 
 

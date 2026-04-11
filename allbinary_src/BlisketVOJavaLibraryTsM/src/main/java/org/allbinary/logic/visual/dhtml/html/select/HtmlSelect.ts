@@ -18,7 +18,10 @@
 
 
 
-import { Vector } from "../../../../../../../java/util/Vector.js";
+            import Vector from "@ohos.util.Vector";
+        
+
+//import { Vector } from "../../../../../../../java/util/Vector.js";
 
     
 import { LineReader } from "../../../../../../../org/allbinary/logic/io/LineReader.js";
@@ -92,17 +95,23 @@ public constructor (before: string, size: string, name: string, after: string){
 var size = size
 var name = name
 var after = after
-this.before= before
-this.size= size
-this.name= name
-this.after= after
-this.options= Vector()
+this.before= before;
+    
+this.size= size;
+    
+this.name= name;
+    
+this.after= after;
+    
+this.options= Vector();
+    
 }
 
 
     public addOption(key: string){
 var key = key
-this.options.add(key)
+this.options.add(key);
+    
 }
 
 
@@ -114,7 +123,8 @@ var fileName = fileName
     var lineReader: LineReader = new LineReader(fileName);
         
         
-
+;
+    
 
         while(lineReader!.hasNext())
         {
@@ -122,13 +132,18 @@ var fileName = fileName
     var option: string = lineReader!.next()!;
         
         
-
-this.addOption(option)
+;
+    
+this.addOption(option);
+    
 }
 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-this.addOption("Error")
+this.addOption("Error");
+    
 }
 
 }
@@ -136,7 +151,8 @@ this.addOption("Error")
 
     public setSelected(selected: string){
 var selected = selected
-this.selected= selected
+this.selected= selected;
+    
 }
 
 
@@ -152,7 +168,8 @@ this.selected= selected
 
     public setMultiple(value: boolean){
 var value = value
-this.isMultipleSelect= value
+this.isMultipleSelect= value;
+    
 }
 
 
@@ -161,23 +178,27 @@ this.isMultipleSelect= value
     var stringUtil: StringUtil = StringUtil.getInstance()!;
         
         
-
+;
+    
 
     var result: string = stringUtil!.EMPTY_STRING;
         
         
+;
+    
 
-
-    var optionsArray: any = {}[] = options.toArray()!;
+    var optionsArray: any[] = options.toArray()!;
         
         
-
+;
+    
 
     var optionsSize: number = optionsArray!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -192,17 +213,22 @@ i < optionsSize; i++)
     var value: string = optionsArray[i]! as String;
         
         
-
+;
+    
 
                         if(value != 
                                     null
                                  && value.compareTo(stringUtil!.EMPTY_STRING) != 0)
                         
                                     {
-                                    result += STARTOPTION
-result += END
-result += value
-result += ENDOPTION
+                                    result += STARTOPTION;
+    
+result += END;
+    
+result += value;
+    
+result += ENDOPTION;
+    
 
                                     }
                                 
@@ -222,31 +248,43 @@ result += ENDOPTION
     var stringUtil: StringUtil = StringUtil.getInstance()!;
         
         
-
+;
+    
 
     var result: string = stringUtil!.EMPTY_STRING;
         
         
+;
+    
 
-
-    var attributeKeys: any = {}[] = otherAttributes!.keySet()!.toTypedArray()!;
+    var attributeKeys: any[] = otherAttributes!.keySet()!.toTypedArray()!;
         
         
-
+;
+    
 
     var attributeSize: number = attributeKeys!.length
                 ;
         
         
-
-result= before
-result += STARTSELECT
-result += NAME
-result += name
-result += "\" "
-result += SIZE
-result += size
-result += "\" "
+;
+    
+result= before;
+    
+result += STARTSELECT;
+    
+result += NAME;
+    
+result += name;
+    
+result += "\" ";
+    
+result += SIZE;
+    
+result += size;
+    
+result += "\" ";
+    
 
 
 
@@ -261,22 +299,30 @@ i < attributeSize; i++)
     var key: string = attributeKeys[i]! as String;
         
         
+;
+    
 
+    var value: string = otherAttributes!.get(key);
 
-    var value: string = otherAttributes!.get(key) as String;
+                         as String;
         
         
-
+;
+    
 
                         if(value != 
                                     null
                                  && value.compareTo(stringUtil!.EMPTY_STRING) != 0)
                         
                                     {
-                                    result += key
-result += "=\""
-result += value
-result += "\" "
+                                    result += key;
+    
+result += "=\"";
+    
+result += value;
+    
+result += "\" ";
+    
 
                                     }
                                 
@@ -285,10 +331,14 @@ result += "\" "
 
                         if(this.isMultiple())
                         result += " " +multiple +" "
-result += END
-result += getOptions()
-result += ENDSELECT
-result += after
+result += END;
+    
+result += getOptions();
+    
+result += ENDSELECT;
+    
+result += after;
+    
 
 
 

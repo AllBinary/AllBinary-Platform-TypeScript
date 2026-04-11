@@ -38,7 +38,8 @@ public constructor (userName: string)
 
                             //For kotlin this is before the body of the constructor.
                     
-setTableName(TABLENAME)
+setTableName(TABLENAME);
+    
 }
 
 

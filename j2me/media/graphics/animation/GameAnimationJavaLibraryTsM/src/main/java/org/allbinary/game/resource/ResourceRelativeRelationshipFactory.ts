@@ -18,7 +18,10 @@
 
 
 
-import { Hashtable } from "../../../../java/util/Hashtable.js";
+            import Hashtable from "@ohos.util.HashMap";
+        
+
+//import { Hashtable } from "../../../../java/util/Hashtable.js";
 
     
 import { RelativeRelationship } from "../../../../org/allbinary/graphics/RelativeRelationship.js";
@@ -41,7 +44,7 @@ export class ResourceRelativeRelationshipFactory
         
         
 
-    private readonly hashtable: Hashtable<Any, Any> = new Hashtable<Any, Any>();
+    private readonly hashtable: Hashtable<any, any> = new Hashtable<any, any>();
         
         
 
@@ -51,7 +54,8 @@ export class ResourceRelativeRelationshipFactory
             
     public init(level: number){
 var level = level
-this.setInitialized(true)
+this.setInitialized(true);
+    
 }
 
 
@@ -63,7 +67,8 @@ var resource = resource
     var listCanBeNull: any = {}? = this.hashtable.get(resource as Object);
         
         
-
+;
+    
 
                         if(listCanBeNull == 
                                     null
@@ -75,6 +80,8 @@ var resource = resource
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.basicArrayListUtil!.getImmutableInstance();
+
+                        ;
     
 
                                     }
@@ -97,17 +104,21 @@ var hardPoint = hardPoint
     var list: BasicArrayList = this.getResourceRelativeRelationshipList(resource)!;
         
         
-
+;
+    
 
                         if(list == this.basicArrayListUtil!.getImmutableInstance())
                         
                                     {
-                                    list= BasicArrayList()
+                                    list= BasicArrayList();
+    
 
                                     }
                                 
-list.add(hardPoint)
-this.hashtable.put(resource, list)
+list.add(hardPoint);
+    
+this.hashtable.put(resource, list);
+    
 }
 
 
@@ -134,7 +145,8 @@ var level = level
 
     public setInitialized(initialized: boolean){
 var initialized = initialized
-this.initialized= initialized
+this.initialized= initialized;
+    
 }
 
 

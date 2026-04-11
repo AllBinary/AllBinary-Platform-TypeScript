@@ -41,7 +41,8 @@ public constructor (file: AbFile){
 
             super();
             var file = file
-this.tmpIn= BufferedReader(FileReader(AbFileNativeUtil.get(file)))
+this.tmpIn= BufferedReader(FileReader(AbFileNativeUtil.get(file)));
+    
 }
 
 
@@ -58,6 +59,8 @@ var readAheadIndex = readAheadIndex
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.tmpIn!.readLine();
+
+                        ;
     
 }
 

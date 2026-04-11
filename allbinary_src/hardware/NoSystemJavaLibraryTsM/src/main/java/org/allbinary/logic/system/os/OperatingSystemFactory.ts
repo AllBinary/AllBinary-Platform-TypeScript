@@ -66,7 +66,8 @@ private constructor (){
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
+;
+    
 
         try {
             
@@ -74,12 +75,18 @@ private constructor (){
                             append("OperatingSystem Info: ")!.append(genericOperatingSystem!.toString())!.toString()!;
         
         
+;
+    
+System.out.println(osString);
+    
+logUtil!.put(osString, this, commonStrings!.GET_INSTANCE);
+    
 
-System.out.println(osString)
-logUtil!.put(osString, this, commonStrings!.GET_INSTANCE)
-} catch(e: Exception)
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e);
+    
 }
 
 

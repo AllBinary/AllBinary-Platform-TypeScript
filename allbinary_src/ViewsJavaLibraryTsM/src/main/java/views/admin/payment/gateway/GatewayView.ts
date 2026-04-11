@@ -61,12 +61,14 @@ public constructor (transformInfoInterface: TransformInfoInterface)
 
     public getFormData(request: HttpServletRequest){
 var request = request
-super.getFormData(request)
+super.getFormData(request);
+    
 
                         if(StringValidationUtil.getInstance()!.isEmpty(this.getPaymentGatewayPrimaryKey()!.getName()))
                         
                                     {
-                                    this.getPaymentGatewayPrimaryKey()!.setName(this.getWeblisketSession()!.getPaymentMethod())
+                                    this.getPaymentGatewayPrimaryKey()!.setName(this.getWeblisketSession()!.getPaymentMethod());
+    
 
                                     }
                                 
@@ -82,21 +84,27 @@ super.getFormData(request)
     var paymentGatewayInterface: PaymentGatewayInterface = PaymentGatewayEntityFactory.getInstance()!.getPaymentGatewayInterface(this.getPaymentGatewayPrimaryKey()!.getStoreName(), BasicPaymentTypeUtil.getInstance()!.get(this.getPaymentGatewayPrimaryKey()!.getName()))!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return PaymentGatewayComponent(this.getTransformInfoInterface(), paymentGatewayInterface).
                             view();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "edit()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "edit()", e);
+    
 
                                     }
                                 

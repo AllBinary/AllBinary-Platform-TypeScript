@@ -60,16 +60,21 @@ var order = order
     var orderItems: OrderItemsEntity = new OrderItemsEntity();
         
         
-
+;
+    
 
     var orderHistory: OrderHistoryEntity = new OrderHistoryEntity();
         
         
-
+;
+    
 order.setId(OrderIdGenerator().
-                            getNext())
-orderItems!.insert(userName, order)
-orderHistory!.insert(userName, order)
+                            getNext());
+    
+orderItems!.insert(userName, order);
+    
+orderHistory!.insert(userName, order);
+    
 
 
 

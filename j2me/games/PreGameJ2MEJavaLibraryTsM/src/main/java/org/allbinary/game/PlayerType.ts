@@ -37,8 +37,10 @@ export class PlayerType
             super();
                 //var name = name
     //var value = value
-this.name= name
-this.id= value
+this.name= name;
+    
+this.id= value;
+    
 }
 
 
@@ -68,6 +70,8 @@ this.id= value
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getName();
+
+                        ;
     
 }
 

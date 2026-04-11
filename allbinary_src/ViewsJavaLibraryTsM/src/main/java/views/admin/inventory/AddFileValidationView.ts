@@ -117,10 +117,13 @@ public constructor (transformInfoInterface: TransformInfoInterface)
 
         try {
             
-    var command: string = this.getRequestHashMap()!.get(GLOBALS2.ADMINCOMMAND) as String;
-        
-        
+    var command: string = this.getRequestHashMap()!.get(GLOBALS2.ADMINCOMMAND);
 
+                         as String;
+        
+        
+;
+    
 
                         if(StringValidationUtil.getInstance()!.isEmpty(command) || (command.compareTo(ADDPRODUCT) != 0 && command.compareTo(NEXTSTEP) != 0))
                         
@@ -133,14 +136,22 @@ public constructor (transformInfoInterface: TransformInfoInterface)
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("Invalid AdminCommand: ")
-stringBuffer!.append(command)
-stringBuffer!.append(" must be: ")
-stringBuffer!.append(ADDPRODUCT)
-stringBuffer!.append(" or ")
-stringBuffer!.append(NEXTSTEP)
-logUtil!.put(stringBuffer!.toString(), this, commonStrings!.IS_VALID)
+;
+    
+stringBuffer!.append("Invalid AdminCommand: ");
+    
+stringBuffer!.append(command);
+    
+stringBuffer!.append(" must be: ");
+    
+stringBuffer!.append(ADDPRODUCT);
+    
+stringBuffer!.append(" or ");
+    
+stringBuffer!.append(NEXTSTEP);
+    
+logUtil!.put(stringBuffer!.toString(), this, commonStrings!.IS_VALID);
+    
 
                                     }
                                 
@@ -157,7 +168,8 @@ logUtil!.put(stringBuffer!.toString(), this, commonStrings!.IS_VALID)
     var basicItemValidation: BasicItemValidation = new BasicItemValidation(this.itemInterface);
         
         
-
+;
+    
 
                         if(basicItemValidation!.isValid() == Boolean.FALSE)
                         
@@ -166,7 +178,8 @@ logUtil!.put(stringBuffer!.toString(), this, commonStrings!.IS_VALID)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put(basicItemValidation!.validationInfo(), this, commonStrings!.IS_VALID)
+                                    logUtil!.put(basicItemValidation!.validationInfo(), this, commonStrings!.IS_VALID);
+    
 
                                     }
                                 
@@ -183,28 +196,35 @@ logUtil!.put(stringBuffer!.toString(), this, commonStrings!.IS_VALID)
     var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(this.getWeblisketSession()!.getStoreName())!;
         
         
-
-this.itemInterface!.setCategory(storeFrontInterface!.getCategoryPath() +this.itemInterface!.getCategory())
+;
+    
+this.itemInterface!.setCategory(storeFrontInterface!.getCategoryPath() +this.itemInterface!.getCategory());
+    
 
     var fullCategory: string = StringMaker().
                             append(URLGLOBALS.getWebappPath())!.append(storeFrontInterface!.getCurrentHostNamePath())!.append(this.itemInterface!.getCategory())!.toString()!;
         
         
-
+;
+    
 
     var categoryFile: AbFile = new AbFile(fullCategory);
         
         
+;
+    
 
+                        if(!categoryFile!.isDirectory();
 
-                        if(!categoryFile!.isDirectory())
+                        )
                         
                                     {
                                     
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Category Does Not Exist: " +fullCategory, this, commonStrings!.IS_VALID)
+                                    logUtil!.put("Category Does Not Exist: " +fullCategory, this, commonStrings!.IS_VALID);
+    
 
                                     }
                                 
@@ -227,7 +247,8 @@ this.itemInterface!.setCategory(storeFrontInterface!.getCategoryPath() +this.ite
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Item Already Exists", this, commonStrings!.IS_VALID)
+                                    logUtil!.put("Item Already Exists", this, commonStrings!.IS_VALID);
+    
 
                                     }
                                 
@@ -244,7 +265,8 @@ this.itemInterface!.setCategory(storeFrontInterface!.getCategoryPath() +this.ite
     var imageFileItemObject: any = {} = this.getRequestHashMap()!.get(BasicItemData.IMAGE)!;
         
         
-
+;
+    
 
                         if(HttpFileUploadUtil.getInstance()!.isValid(imageFileItemObject))
                         
@@ -253,18 +275,22 @@ this.itemInterface!.setCategory(storeFrontInterface!.getCategoryPath() +this.ite
     var fileItem: FileItem = imageFileItemObject as FileItem;
         
         
-
+;
+    
 
     var fileName: string = fileItem!.getName()!;
         
         
-
+;
+    
 
     var size: number = fileItem!.getSize()!;
         
         
-
-HttpFileUploadUtil.log(fileItem)
+;
+    
+HttpFileUploadUtil.log(fileItem);
+    
 
                         if(this.isValid(fileName, size) == Boolean.FALSE)
                         
@@ -287,13 +313,16 @@ HttpFileUploadUtil.log(fileItem)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return Boolean.TRUE;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("Exception in validation", this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put("Exception in validation", this, commonStrings!.IS_VALID, e);
+    
 
                                     }
                                 
@@ -336,12 +365,16 @@ var document = document
     var stringBuffer: StringMaker = new StringMaker();
         
         
+;
+    
 
+    var command: string = this.getRequestHashMap()!.get(GLOBALS2.ADMINCOMMAND);
 
-    var command: string = this.getRequestHashMap()!.get(GLOBALS2.ADMINCOMMAND) as String;
+                         as String;
         
         
-
+;
+    
 
                         if(StringValidationUtil.getInstance()!.isEmpty(command) || (command.compareTo(ADDPRODUCT) != 0 && command.compareTo(NEXTSTEP) != 0))
                         
@@ -359,13 +392,16 @@ var document = document
     var basicItemValidation: BasicItemValidation = new BasicItemValidation(this.itemInterface);
         
         
-
+;
+    
 
                         if(basicItemValidation!.isValid() == Boolean.FALSE)
                         
                                     {
-                                    stringBuffer!.append(basicItemValidation!.validationInfo())
-stringBuffer!.append("<br/>")
+                                    stringBuffer!.append(basicItemValidation!.validationInfo());
+    
+stringBuffer!.append("<br/>");
+    
 
                                     }
                                 
@@ -373,18 +409,21 @@ stringBuffer!.append("<br/>")
     var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(this.getWeblisketSession()!.getStoreName())!;
         
         
-
+;
+    
 
     var fullCategory: string = StringMaker().
                             append(URLGLOBALS.getWebappPath())!.append(storeFrontInterface!.getCurrentHostNamePath())!.append(this.itemInterface!.getCategory())!.toString()!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Category: " +fullCategory, this, "validationInfo()")
+                                    logUtil!.put("Category: " +fullCategory, this, "validationInfo()");
+    
 
                                     }
                                 
@@ -392,14 +431,20 @@ stringBuffer!.append("<br/>")
     var categoryFile: AbFile = new AbFile(fullCategory);
         
         
+;
+    
 
+                        if(!categoryFile!.isDirectory();
 
-                        if(!categoryFile!.isDirectory())
+                        )
                         
                                     {
-                                    stringBuffer!.append("Category ")
-stringBuffer!.append(this.itemInterface!.getCategory())
-stringBuffer!.append(" does not exist.<br />")
+                                    stringBuffer!.append("Category ");
+    
+stringBuffer!.append(this.itemInterface!.getCategory());
+    
+stringBuffer!.append(" does not exist.<br />");
+    
 
                                     }
                                 
@@ -411,17 +456,21 @@ stringBuffer!.append(" does not exist.<br />")
                                 )
                         
                                     {
-                                    stringBuffer!.append("Id is already in use. Refresh the page for a valid id.<br/>")
+                                    stringBuffer!.append("Id is already in use. Refresh the page for a valid id.<br/>");
+    
 
                                     }
                                 
-} catch(e: MoneyException)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Existing Item With MoneyException", this, "validationInfo()")
+                                    logUtil!.put("Existing Item With MoneyException", this, "validationInfo()");
+    
 
                                     }
                                 
@@ -431,7 +480,8 @@ stringBuffer!.append(" does not exist.<br />")
     var anyType: any = {} = this.getRequestHashMap()!.get(BasicItemData.IMAGE)!;
         
         
-
+;
+    
 
                         if(HttpFileUploadUtil.getInstance()!.isValid(anyType))
                         
@@ -440,23 +490,28 @@ stringBuffer!.append(" does not exist.<br />")
     var fileItem: FileItem = anyType as FileItem;
         
         
-
+;
+    
 
     var fileName: string = fileItem!.getName()!;
         
         
-
+;
+    
 
     var fileItemFieldName: string = fileItem!.getFieldName()!;
         
         
-
+;
+    
 
     var size: number = fileItem!.getSize()!;
         
         
-
-this.validationInfo(stringBuffer, fileName, fileItemFieldName, size)
+;
+    
+this.validationInfo(stringBuffer, fileName, fileItemFieldName, size);
+    
 
                                     }
                                 
@@ -465,14 +520,19 @@ this.validationInfo(stringBuffer, fileName, fileItemFieldName, size)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e)
+                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e);
+    
 
                                     }
                                 
@@ -496,7 +556,8 @@ var size = size
     var fileData: FileData = FileData.getInstance()!;
         
         
-
+;
+    
 
                         if(size > fileData!.MINIMAGEFILESIZE)
                         
@@ -506,7 +567,9 @@ var size = size
                         
                                     {
                                     
-                        if(!StringValidationUtil.getInstance()!.isValidRequired(fileName, fileData!.MINLEN, fileData!.MAXLEN))
+                        if(!StringValidationUtil.getInstance()!.isValidRequired(fileName, fileData!.MINLEN, fileData!.MAXLEN);
+
+                        )
                         
                                     {
                                     
@@ -523,19 +586,26 @@ var size = size
     var pathUtil: PathUtil = PathUtil.getInstance()!;
         
         
-
+;
+    
 
     var extension: string = pathUtil!.getExtension(fileName)!;
         
         
-
+;
+    
 
     var uploadMedia: UploadMediaSingleton = UploadMediaSingleton.getInstance()!;
         
         
+;
+    
 
+                        if(!uploadMedia!.isWriterSupported(extension);
 
-                        if(!uploadMedia!.isWriterSupported(extension) && !uploadMedia!.isReaderSupported(extension))
+                         && !uploadMedia!.isReaderSupported(extension);
+
+                        )
                         
                                     {
                                     
@@ -562,12 +632,18 @@ var size = size
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("File Size To Large: ")
-stringBuffer!.appendlong(size)
-stringBuffer!.append(">")
-stringBuffer!.appendint(fileData!.MAXIMAGEFILESIZE)
-logUtil!.put(stringBuffer!.toString(), this, commonStrings!.IS_VALID)
+;
+    
+stringBuffer!.append("File Size To Large: ");
+    
+stringBuffer!.appendlong(size);
+    
+stringBuffer!.append(">");
+    
+stringBuffer!.appendint(fileData!.MAXIMAGEFILESIZE);
+    
+logUtil!.put(stringBuffer!.toString(), this, commonStrings!.IS_VALID);
+    
 
                                     }
                                 
@@ -580,7 +656,8 @@ logUtil!.put(stringBuffer!.toString(), this, commonStrings!.IS_VALID)
 
                         }
                             
-this.processImageFiles()
+this.processImageFiles();
+    
 
                                     }
                                 
@@ -593,12 +670,18 @@ this.processImageFiles()
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("File Size To Small: ")
-stringBuffer!.appendlong(size)
-stringBuffer!.append(">")
-stringBuffer!.appendint(fileData!.MINIMAGEFILESIZE)
-logUtil!.put(stringBuffer!.toString(), this, commonStrings!.IS_VALID)
+;
+    
+stringBuffer!.append("File Size To Small: ");
+    
+stringBuffer!.appendlong(size);
+    
+stringBuffer!.append(">");
+    
+stringBuffer!.appendint(fileData!.MINIMAGEFILESIZE);
+    
+logUtil!.put(stringBuffer!.toString(), this, commonStrings!.IS_VALID);
+    
 
                                     }
                                 
@@ -629,7 +712,8 @@ logUtil!.put(stringBuffer!.toString(), this, commonStrings!.IS_VALID)
     var fileData: FileData = FileData.getInstance()!;
         
         
-
+;
+    
 
                         if(size > fileData!.MINIMAGEFILESIZE)
                         
@@ -643,14 +727,21 @@ logUtil!.put(stringBuffer!.toString(), this, commonStrings!.IS_VALID)
                         
                                     {
                                     
-                        if(!StringValidationUtil.getInstance()!.isValidRequired(fileName, fileData!.MINLEN, fileData!.MAXLEN))
+                        if(!StringValidationUtil.getInstance()!.isValidRequired(fileName, fileData!.MINLEN, fileData!.MAXLEN);
+
+                        )
                         
                                     {
-                                    stringBuffer!.append("FileName must be >")
-stringBuffer!.appendint(fileData!.MINLEN)
-stringBuffer!.append(" and <")
-stringBuffer!.appendint(fileData!.MAXLEN)
-stringBuffer!.append("<br/>")
+                                    stringBuffer!.append("FileName must be >");
+    
+stringBuffer!.appendint(fileData!.MINLEN);
+    
+stringBuffer!.append(" and <");
+    
+stringBuffer!.appendint(fileData!.MAXLEN);
+    
+stringBuffer!.append("<br/>");
+    
 
                                     }
                                 
@@ -659,24 +750,34 @@ stringBuffer!.append("<br/>")
     var pathUtil: PathUtil = PathUtil.getInstance()!;
         
         
-
+;
+    
 
     var extension: string = pathUtil!.getExtension(fileName)!;
         
         
-
+;
+    
 
     var uploadMedia: UploadMediaSingleton = UploadMediaSingleton.getInstance()!;
         
         
+;
+    
 
+                        if(!uploadMedia!.isWriterSupported(extension);
 
-                        if(!uploadMedia!.isWriterSupported(extension) && !uploadMedia!.isReaderSupported(extension))
+                         && !uploadMedia!.isReaderSupported(extension);
+
+                        )
                         
                                     {
-                                    stringBuffer!.append("Image type: ")
-stringBuffer!.append(extension)
-stringBuffer!.append(" not supported.<br />")
+                                    stringBuffer!.append("Image type: ");
+    
+stringBuffer!.append(extension);
+    
+stringBuffer!.append(" not supported.<br />");
+    
 
                                     }
                                 
@@ -687,11 +788,16 @@ stringBuffer!.append(" not supported.<br />")
                                     }
                                 
                         else {
-                            stringBuffer!.append("Image File Is To Large. ")
-stringBuffer!.appendint(fileData!.MINIMAGEFILESIZE)
-stringBuffer!.append(" < > ")
-stringBuffer!.appendint(fileData!.MAXIMAGEFILESIZE)
-stringBuffer!.append("<br/>")
+                            stringBuffer!.append("Image File Is To Large. ");
+    
+stringBuffer!.appendint(fileData!.MINIMAGEFILESIZE);
+    
+stringBuffer!.append(" < > ");
+    
+stringBuffer!.appendint(fileData!.MAXIMAGEFILESIZE);
+    
+stringBuffer!.append("<br/>");
+    
 
                         }
                             
@@ -702,11 +808,16 @@ stringBuffer!.append("<br/>")
                                     }
                                 
                         else {
-                            stringBuffer!.append("Image File Is To Small. ")
-stringBuffer!.appendint(fileData!.MINIMAGEFILESIZE)
-stringBuffer!.append(" < > ")
-stringBuffer!.appendint(fileData!.MAXIMAGEFILESIZE)
-stringBuffer!.append("<br/>")
+                            stringBuffer!.append("Image File Is To Small. ");
+    
+stringBuffer!.appendint(fileData!.MINIMAGEFILESIZE);
+    
+stringBuffer!.append(" < > ");
+    
+stringBuffer!.appendint(fileData!.MAXIMAGEFILESIZE);
+    
+stringBuffer!.append("<br/>");
+    
 
                         }
                             

@@ -85,7 +85,8 @@ private constructor (){
                 ;
         
         
-
+;
+    
 
 
 
@@ -96,7 +97,8 @@ private constructor (){
         
 index < size; index++)
         {
-inputIntegerArray[index]= NO_INPUT
+inputIntegerArray[index]= NO_INPUT;
+    
 }
 
 }
@@ -105,7 +107,8 @@ inputIntegerArray[index]= NO_INPUT
     public add(id: number, input: Input){
 var id = id
 var input = input
-this.inputIntegerArray[id]= input
+this.inputIntegerArray[id]= input;
+    
 }
 
 
@@ -115,7 +118,8 @@ var id = id
                         if(id < 0)
                         
                                     {
-                                    id=  -id
+                                    id=  -id;
+    
 
                                     }
                                 
@@ -124,7 +128,8 @@ var id = id
                         
                                     {
                                     logUtil!.put(StringMaker().
-                            append("Warning id: ")!.appendint(id)!.toString(), this, commonStrings!.GET_INSTANCE)
+                            append("Warning id: ")!.appendint(id)!.toString(), this, commonStrings!.GET_INSTANCE);
+    
 
 
 

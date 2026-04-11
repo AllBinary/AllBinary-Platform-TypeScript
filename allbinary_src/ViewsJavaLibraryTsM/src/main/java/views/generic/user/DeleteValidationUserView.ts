@@ -72,23 +72,29 @@ public constructor (transformInfoInterface: TransformInfoInterface)
                             //For kotlin this is before the body of the constructor.
                     
 
-    var httpServletRequest: HttpServletRequest = this.getPageContext()!.getRequest() as HttpServletRequest;
+    var httpServletRequest: HttpServletRequest = this.getPageContext()!.getRequest();
+
+                         as HttpServletRequest;
         
         
+;
+    
 
-
-    var hashMap: HashMap<Any, Any> = RequestParams(httpServletRequest).
+    var hashMap: HashMap<any, any> = RequestParams(httpServletRequest).
                             toHashMap()!;
         
         
-
+;
+    
 this.userName= UserName(hashMap).
-                            get()
+                            get();
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("User Name: " +this.userName, this, this.commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put("User Name: " +this.userName, this, this.commonStrings!.CONSTRUCTOR);
+    
 
                                     }
                                 
@@ -102,7 +108,8 @@ this.userName= UserName(hashMap).
                         if(UserName.getInstance()!.isValid(this.userName) == Boolean.TRUE)
                         
                                     {
-                                    this.user= UserEntityFactory.getInstance()!.getUser(this.userName)
+                                    this.user= UserEntityFactory.getInstance()!.getUser(this.userName);
+    
 
                         if(user == 
                                     null
@@ -125,13 +132,16 @@ this.userName= UserName(hashMap).
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return Boolean.TRUE;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("Failed to validate form", this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put("Failed to validate form", this, commonStrings!.IS_VALID, e);
+    
 
                                     }
                                 
@@ -153,17 +163,21 @@ this.userName= UserName(hashMap).
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
                         if(UserName.getInstance()!.isValid(this.userName) == Boolean.TRUE)
                         
                                     {
-                                    this.user= UserEntityFactory.getInstance()!.getUser(this.userName)
+                                    this.user= UserEntityFactory.getInstance()!.getUser(this.userName);
+    
 
                         if(user == 
                                     null
                                 )
-                        stringBuffer!.append("User does not exist.<br />")
+                        stringBuffer!.append("User does not exist.<br />");
+
+                        
 
                                     }
                                 
@@ -175,14 +189,19 @@ this.userName= UserName(hashMap).
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e)
+                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e);
+    
 
                                     }
                                 

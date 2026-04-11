@@ -47,12 +47,14 @@ export class AccelerometerSensorUpdateProcessor extends Processor {
     var sensorFeatureFactory: SensorFeatureFactory = SensorFeatureFactory.getInstance()!;
         
         
-
+;
+    
 
                         if(Features.getInstance()!.isFeature(sensorFeatureFactory!.ORIENTATION_SENSORS))
                         
                                     {
-                                    AccelerometerSensorFactory.getInstance()!.setCompleteMotionGestureInputEventListener(SingleKeyPressGameKeyFromMotionGestureEventListener())
+                                    AccelerometerSensorFactory.getInstance()!.setCompleteMotionGestureInputEventListener(SingleKeyPressGameKeyFromMotionGestureEventListener());
+    
 
                                     }
                                 
@@ -60,7 +62,8 @@ export class AccelerometerSensorUpdateProcessor extends Processor {
                         if(Features.getInstance()!.isFeature(sensorFeatureFactory!.SIMULATED_ORIENTATION_SENSORS))
                         
                                     {
-                                    AccelerometerSensorFactory.getInstance()!.setCompleteMotionGestureInputEventListener(SingleKeyPressGameKeyFromMotionGestureEventListener())
+                                    AccelerometerSensorFactory.getInstance()!.setCompleteMotionGestureInputEventListener(SingleKeyPressGameKeyFromMotionGestureEventListener());
+    
 
                                     }
                                 
@@ -68,7 +71,8 @@ export class AccelerometerSensorUpdateProcessor extends Processor {
                         if(Features.getInstance()!.isFeature(sensorFeatureFactory!.NO_ORIENTATION))
                         
                                     {
-                                    AccelerometerSensorFactory.getInstance()!.setCompleteMotionGestureInputEventListener(NoCompleteMotionGestureInputEventListener.getInstance())
+                                    AccelerometerSensorFactory.getInstance()!.setCompleteMotionGestureInputEventListener(NoCompleteMotionGestureInputEventListener.getInstance());
+    
 
                                     }
                                 

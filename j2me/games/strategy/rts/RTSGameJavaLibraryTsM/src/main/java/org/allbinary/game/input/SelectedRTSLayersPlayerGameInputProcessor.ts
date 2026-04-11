@@ -27,7 +27,8 @@ public constructor (selectedRTSLayersPlayerGameInput: SelectedRTSLayersPlayerGam
 
             super();
             var selectedRTSLayersPlayerGameInput = selectedRTSLayersPlayerGameInput
-this.selectedRTSLayersPlayerGameInput= selectedRTSLayersPlayerGameInput
+this.selectedRTSLayersPlayerGameInput= selectedRTSLayersPlayerGameInput;
+    
 }
 
 

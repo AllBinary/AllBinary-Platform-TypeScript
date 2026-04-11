@@ -98,7 +98,7 @@ var node = node
                     
 }
 
-public constructor (transformInfoInterface: TransformInfoInterface, categoryPropertiesHashMap: HashMap<Any, Any>)                        
+public constructor (transformInfoInterface: TransformInfoInterface, categoryPropertiesHashMap: HashMap<any, any>)                        
 
                             : super(transformInfoInterface, categoryPropertiesHashMap){
 
@@ -119,34 +119,48 @@ var categoryPropertiesHashMap = categoryPropertiesHashMap
     var transformInfoHttpStoreInterface: TransformInfoHttpStoreInterface = this.transformInfoInterface as TransformInfoHttpStoreInterface;
         
         
-
+;
+    
 
     var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(transformInfoHttpStoreInterface!.getStoreName())!;
         
         
-
+;
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR)
-stringBuffer!.append(FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH)
-stringBuffer!.append(storeFrontInterface!.getName())
-stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR)
-stringBuffer!.append(FREEBLISKET_PATH_GLOBALS.getInstance()!.THEMEPATH)
+;
+    
+stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
+    
+stringBuffer!.append(FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH);
+    
+stringBuffer!.append(storeFrontInterface!.getName());
+    
+stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
+    
+stringBuffer!.append(FREEBLISKET_PATH_GLOBALS.getInstance()!.THEMEPATH);
+    
 
     var abPath: AbPath = new AbPath(stringBuffer!.toString());
         
         
+;
+    
 
+    var httpServletRequest: HttpServletRequest = transformInfoHttpStoreInterface!.getPageContext()!.getRequest();
 
-    var httpServletRequest: HttpServletRequest = transformInfoHttpStoreInterface!.getPageContext()!.getRequest() as HttpServletRequest;
+                         as HttpServletRequest;
         
         
-
-this.webAppAbPath= AbPath(httpServletRequest!.getContextPath() +abPath!.toString())
-this.setRootFilePath(AbPath(URLGLOBALS.getMainPath() +abPath!.toString()))
+;
+    
+this.webAppAbPath= AbPath(httpServletRequest!.getContextPath() +abPath!.toString());
+    
+this.setRootFilePath(AbPath(URLGLOBALS.getMainPath() +abPath!.toString()));
+    
 }
 
 

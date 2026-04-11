@@ -70,7 +70,7 @@ private constructor (){
             }
 
 
-    public getInstance(algorithm: string, keyData: ByteArray): KeySpec{
+    public getInstance(algorithm: string, keyData: number[]): KeySpec{
 var algorithm = algorithm
 var keyData = keyData
 
@@ -109,14 +109,18 @@ var keyData = keyData
 
                         }
                             
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-PreLogUtil.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e)
+;
+    
+PreLogUtil.putOE(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e);
+    
 
 
 

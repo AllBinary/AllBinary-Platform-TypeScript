@@ -133,14 +133,19 @@ export class OpenGLUtil
                         if(!created)
                         
                                     {
-                                    created= true
-PreLogUtil.put(CommonLabels.getInstance()!.START_LABEL +OpenGLCapabilities.getInstance()!.toString(), this, this.renderStrings!.ON_SURFACE_CREATED)
+                                    created= true;
+    
+PreLogUtil.put(CommonLabels.getInstance()!.START_LABEL +OpenGLCapabilities.getInstance()!.toString(), this, this.renderStrings!.ON_SURFACE_CREATED);
+    
 
                                     }
                                 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, this.renderStrings!.ON_SURFACE_CREATED, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, this.renderStrings!.ON_SURFACE_CREATED, e);
+    
 }
 
 }
@@ -151,11 +156,16 @@ logUtil!.put(commonStrings!.EXCEPTION, this, this.renderStrings!.ON_SURFACE_CREA
     //var loadTextures = loadTextures
 
         try {
-            loadTextures!.load(gl)
-OpenGLLogUtil.getInstance()!.logError(gl)
-} catch(e: Exception)
+            loadTextures!.load(gl);
+    
+OpenGLLogUtil.getInstance()!.logError(gl);
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, this.renderStrings!.ON_SURFACE_CREATED, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, this.renderStrings!.ON_SURFACE_CREATED, e);
+    
 }
 
 }
@@ -174,23 +184,33 @@ logUtil!.put(commonStrings!.EXCEPTION, this, this.renderStrings!.ON_SURFACE_CREA
                         if(!surfaceCreatedAndInitialized)
                         
                                     {
-                                    graphics.init()
-surfaceCreatedAndInitialized= true
+                                    graphics.init();
+    
+surfaceCreatedAndInitialized= true;
+    
 
                                     }
                                 
-graphics.update()
+graphics.update();
+    
 
     var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
         
         
+;
+    
+progressCanvas!.update(graphics);
+    
+getInstance = OpenGLImageCacheFactory.getInstance();
 
-progressCanvas!.update(graphics)
-getInstance = OpenGLImageCacheFactory.getInstance()getInstance as OpenGLImageCache
+                        getInstance as OpenGLImageCache
 getInstance.
-                    update(gl)
-this.processRunnables()
-this.set(gl)
+                    update(gl);
+    
+this.processRunnables();
+    
+this.set(gl);
+    
 }
 
 
@@ -200,7 +220,8 @@ this.set(gl)
     var encapsulateImage: Image = preResourceImageUtil!.encapsulate(image)!;
         
         
-
+;
+    
 
                         if(encapsulateImage != image)
                         
@@ -212,7 +233,8 @@ this.set(gl)
 
         //mutex.withLock
         {
-list.add(encapsulateImage)
+list.add(encapsulateImage);
+    
 }
 
 
@@ -241,7 +263,8 @@ list.add(encapsulateImage)
 
         //mutex.withLock
         {
-list.clear()
+list.clear();
+    
 }
 
 }
@@ -257,11 +280,15 @@ list.clear()
         //mutex.withLock
         {
 
-                        if(!this.runnableList!.contains(runnable))
+                        if(!this.runnableList!.contains(runnable);
+
+                        )
                         
                                     {
-                                    this.runnableList!.add(runnable)
-displayInfoSingleton!.add(this.canvasStrings!.SCALED_IMAGES)
+                                    this.runnableList!.add(runnable);
+    
+displayInfoSingleton!.add(this.canvasStrings!.SCALED_IMAGES);
+    
 
                                     }
                                 
@@ -280,12 +307,14 @@ displayInfoSingleton!.add(this.canvasStrings!.SCALED_IMAGES)
         {
 
     var runnable: Runnable
-
+;
+    
 
     var size: number = this.runnableList!.size()!;
         
         
-
+;
+    
 
 
 
@@ -296,11 +325,16 @@ displayInfoSingleton!.add(this.canvasStrings!.SCALED_IMAGES)
         
 index < size; index++)
         {
-runnable= this.runnableList!.get(index) as Runnable
-runnable.run()
+runnable= this.runnableList!.get(index);
+
+                         as Runnable;
+    
+runnable.run();
+    
 }
 
-this.runnableList!.clear()
+this.runnableList!.clear();
+    
 }
 
 }
@@ -314,10 +348,12 @@ var gl = gl
     var size: number = this.list.size()!;
         
         
-
+;
+    
 
     var image: any = {}
-
+;
+    
 
 
 
@@ -328,10 +364,12 @@ var gl = gl
         
 index2 < size; index2++)
         {
-image= this.list.get(index2)
+image= this.list.get(index2);
+    
 image = imageimage as OpenGLESImage
 image.
-                    set(gl)
+                    set(gl);
+    
 }
 
 }

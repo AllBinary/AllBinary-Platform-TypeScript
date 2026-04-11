@@ -43,7 +43,8 @@ public constructor (demoCanvas: DemoCanvas){
 
             super();
             var demoCanvas = demoCanvas
-this.demoCanvas= demoCanvas
+this.demoCanvas= demoCanvas;
+    
 }
 
 
@@ -54,16 +55,22 @@ this.demoCanvas= demoCanvas
     public run(){
 
         try {
-            demoCanvas!.getLoopTimeHelperP()!.setStartTime(gameTickTimeDelayHelper!.setStartTime())
-demoCanvas!.processGame()
-} catch(e: Exception)
+            demoCanvas!.getLoopTimeHelperP()!.setStartTime(gameTickTimeDelayHelper!.setStartTime());
+    
+demoCanvas!.processGame();
+    
+
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
+    
 }
 
 }
@@ -72,7 +79,8 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
                 //@Throws(Error::class)
             
     public processLoopSleep(){
-demoCanvas!.processLoopSleep()
+demoCanvas!.processLoopSleep();
+    
 }
 
 

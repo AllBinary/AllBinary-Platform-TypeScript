@@ -18,10 +18,13 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { IOException } from "../../../../java/io/IOException.js";
 
     
-import { Vector } from "../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../java/util/Vector.js";
 
     
 import { IdGeneratorEntity } from "../../../../org/allbinary/data/tables/generator/IdGeneratorEntity.js";
@@ -57,7 +60,10 @@ export class UniqueIdGenerator
 public constructor (){
 
             super();
-            idGeneratorEntity= IdGeneratorEntityFactory.getInstance() as IdGeneratorEntity
+            idGeneratorEntity= IdGeneratorEntityFactory.getInstance();
+
+                         as IdGeneratorEntity;
+    
 }
 
 
@@ -69,11 +75,17 @@ var value = value
     var vector: Vector = new Vector();
         
         
+;
+    
+vector.add(name);
+    
+vector.add(Long.valueOf(value)!.toString());
+    
+idGeneratorEntity!.insert(vector);
+    
 
-vector.add(name)
-vector.add(Long.valueOf(value)!.toString())
-idGeneratorEntity!.insert(vector)
-} catch(e: Exception)
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.IDLOGGING))
@@ -83,8 +95,10 @@ idGeneratorEntity!.insert(vector)
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, "initialize", e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, "initialize", e);
+    
 
                                     }
                                 
@@ -99,7 +113,8 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "initialize", e)
     public setFile(filePathName: string, name: string){
 var filePathName = filePathName
 var name = name
-this.name= name
+this.name= name;
+    
 }
 
 
@@ -113,20 +128,27 @@ this.name= name
     var idLong: Long = this.idGeneratorEntity!.get(name)!;
         
         
-
+;
+    
 
     var newValue: Long = (idLong!.longValue() +1).toLong()!;
         
         
-
-this.idGeneratorEntity!.update(name, newValue)
+;
+    
+this.idGeneratorEntity!.update(name, newValue);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return idLong!.toString();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.IDLOGGING))
@@ -136,8 +158,10 @@ this.idGeneratorEntity!.update(name, newValue)
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, "getNext", e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, "getNext", e);
+    
 
                                     }
                                 

@@ -76,7 +76,8 @@ var basicColor = basicColor
 
     public onEvent(eventObject: AllBinaryEventObject){
 var eventObject = eventObject
-ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
+ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
+    
 }
 
 
@@ -96,12 +97,15 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
                         if(lastGameNotificationEvent != gameNotificationEvent)
                         
                                     {
-                                    lastGameNotificationEvent= gameNotificationEvent
-logUtil!.put(gameNotificationEvent!.getString(), this, METHOD_NAME)
+                                    lastGameNotificationEvent= gameNotificationEvent;
+    
+logUtil!.put(gameNotificationEvent!.getString(), this, METHOD_NAME);
+    
 
                                     }
                                 
-this.add(gameNotificationEvent!.getString(), gameNotificationEvent!.getSeconds(), gameNotificationEvent!.getBasicColorP(), gameNotificationEvent!.getPermanent())
+this.add(gameNotificationEvent!.getString(), gameNotificationEvent!.getSeconds(), gameNotificationEvent!.getBasicColorP(), gameNotificationEvent!.getPermanent());
+    
 }
 
 

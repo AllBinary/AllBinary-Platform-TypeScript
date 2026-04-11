@@ -77,7 +77,8 @@ var value = value
     var numberOfDecimalPoints: number = 0;
         
         
-
+;
+    
 
 
 
@@ -92,9 +93,12 @@ index < value.length; index++)
     var digit: string = value[index]!;
         
         
+;
+    
 
+                        if(!isNumber(digit);
 
-                        if(!isNumber(digit) && digit != '.')
+                         && digit != '.')
                         
                                     {
                                     
@@ -110,7 +114,8 @@ index < value.length; index++)
                         if(digit == '.')
                         
                                     {
-                                    numberOfDecimalPoints++
+                                    numberOfDecimalPoints++;
+    
 
                         if(numberOfDecimalPoints > 1)
                         
@@ -208,7 +213,9 @@ var max = max
                                     }
                                 
 
-                        if(!this.isNumber(value))
+                        if(!this.isNumber(value);
+
+                        )
                         
                                     {
                                     
@@ -288,7 +295,9 @@ var max = max
                                     }
                                 
 
-                        if(!this.isNumber(value))
+                        if(!this.isNumber(value);
+
+                        )
                         
                                     {
                                     

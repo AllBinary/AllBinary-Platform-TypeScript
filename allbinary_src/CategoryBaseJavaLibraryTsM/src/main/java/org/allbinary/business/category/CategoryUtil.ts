@@ -58,7 +58,8 @@ var categoryPath = categoryPath
     var count: number = StringUtils.countMatches(categoryPath!.toString(), AbPathData.getInstance()!.SEPARATOR)!;
         
         
-
+;
+    
 
 
 
@@ -75,12 +76,16 @@ var node = node
     var attributes: NamedNodeMap = node.getAttributes()!;
         
         
+;
+    
 
+    var attrNode: Attr = attributes.getNamedItem(CategoryData.getInstance()!.LABEL);
 
-    var attrNode: Attr = attributes.getNamedItem(CategoryData.getInstance()!.LABEL) as Attr;
+                         as Attr;
         
         
-
+;
+    
 
                         if(attrNode != 
                                     null
@@ -92,6 +97,8 @@ var node = node
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return attrNode!.getValue();
+
+                        ;
     
 
                                     }
@@ -101,7 +108,8 @@ var node = node
     var labelNode: Node = DomSearchHelper.getNodeNoThrow(CategoryData.getInstance()!.LABEL, node.getChildNodes())!;
         
         
-
+;
+    
 
                         if(labelNode != 
                                     null
@@ -113,6 +121,8 @@ var node = node
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return DomNodeHelper.getTextNodeValue(labelNode);
+
+                        ;
     
 
                                     }

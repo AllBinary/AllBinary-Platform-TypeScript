@@ -94,20 +94,30 @@ private constructor (){
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
+;
+    
 
     var SPACE: string = CommonSeps.getInstance()!.SPACE;
         
         
-
-CUSTOMIZER_NAME= SPACE +CustomizerTransformInfoData.NAME
-BODY_VIEWNAMEKEY= SPACE +BodyData.getInstance()!.VIEWNAMEKEY
-TITLE_VIEWNAMEKEY= SPACE +TitleData.getInstance()!.VIEWNAMEKEY
-GLOBALS_NEW= GLOBALS2.NEW +SPACE
-GLOBALS_INSERT= commonStrings!.INSERT +SPACE
-GLOBALS_DELETE= commonStrings!.DELETE +SPACE
-GLOBALS_EDIT= GLOBALS2.EDIT +SPACE
-GLOBALS_UPDATE= commonStrings!.UPDATE +SPACE
+;
+    
+CUSTOMIZER_NAME= SPACE +CustomizerTransformInfoData.NAME;
+    
+BODY_VIEWNAMEKEY= SPACE +BodyData.getInstance()!.VIEWNAMEKEY;
+    
+TITLE_VIEWNAMEKEY= SPACE +TitleData.getInstance()!.VIEWNAMEKEY;
+    
+GLOBALS_NEW= GLOBALS2.NEW +SPACE;
+    
+GLOBALS_INSERT= commonStrings!.INSERT +SPACE;
+    
+GLOBALS_DELETE= commonStrings!.DELETE +SPACE;
+    
+GLOBALS_EDIT= GLOBALS2.EDIT +SPACE;
+    
+GLOBALS_UPDATE= commonStrings!.UPDATE +SPACE;
+    
 }
 
 
@@ -118,94 +128,110 @@ var storeName = storeName
     var SPACE: string = CommonSeps.getInstance()!.SPACE;
         
         
-
+;
+    
 
     var ONE_EMPTY_STRING_ARRAY: string[] = StringUtil.getInstance()!.ONE_EMPTY_STRING_ARRAY;
         
         
+;
+    
 
-
-    var hashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
         
         
-
+;
+    
 hashMap!.put(
                                                 [
                                                     viewName +SPACE;
         
         
-                                                ], ONE_EMPTY_STRING_ARRAY)
+                                                ], ONE_EMPTY_STRING_ARRAY);
+    
 hashMap!.put(
                                                 [
                                                     storeName +SPACE;
         
         
-                                                ], ONE_EMPTY_STRING_ARRAY)
+                                                ], ONE_EMPTY_STRING_ARRAY);
+    
 hashMap!.put(
                                                 [
                                                     CUSTOMIZER_NAME;
         
         
-                                                ], ONE_EMPTY_STRING_ARRAY)
+                                                ], ONE_EMPTY_STRING_ARRAY);
+    
 hashMap!.put(
                                                 [
                                                     BODY_VIEWNAMEKEY;
         
         
-                                                ], ONE_EMPTY_STRING_ARRAY)
+                                                ], ONE_EMPTY_STRING_ARRAY);
+    
 hashMap!.put(
                                                 [
                                                     TITLE_VIEWNAMEKEY;
         
         
-                                                ], ONE_EMPTY_STRING_ARRAY)
+                                                ], ONE_EMPTY_STRING_ARRAY);
+    
 hashMap!.put(
                                                 [
                                                     GLOBALS_NEW;
         
         
-                                                ], ONE_EMPTY_STRING_ARRAY)
+                                                ], ONE_EMPTY_STRING_ARRAY);
+    
 hashMap!.put(
                                                 [
                                                     GLOBALS_INSERT;
         
         
-                                                ], ONE_EMPTY_STRING_ARRAY)
+                                                ], ONE_EMPTY_STRING_ARRAY);
+    
 hashMap!.put(
                                                 [
                                                     GLOBALS_DELETE;
         
         
-                                                ], ONE_EMPTY_STRING_ARRAY)
+                                                ], ONE_EMPTY_STRING_ARRAY);
+    
 hashMap!.put(
                                                 [
                                                     GLOBALS_EDIT;
         
         
-                                                ], ONE_EMPTY_STRING_ARRAY)
+                                                ], ONE_EMPTY_STRING_ARRAY);
+    
 hashMap!.put(
                                                 [
                                                     GLOBALS_UPDATE;
         
         
-                                                ], ONE_EMPTY_STRING_ARRAY)
+                                                ], ONE_EMPTY_STRING_ARRAY);
+    
 
     var replace: Replace = 
                 null
             ;
         
         
-
+;
+    
 
     var rootViewName: string = replace.all(viewName)!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("RootViewName for ObjectConfig: " +rootViewName, this, "getPageNameHack")
+                                    logUtil!.put("RootViewName for ObjectConfig: " +rootViewName, this, "getPageNameHack");
+    
 
                                     }
                                 

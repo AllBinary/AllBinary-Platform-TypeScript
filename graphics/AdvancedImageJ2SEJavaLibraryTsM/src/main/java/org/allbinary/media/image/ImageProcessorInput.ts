@@ -44,8 +44,10 @@ var bufferedImageArray = bufferedImageArray
 
                             //For kotlin this is before the body of the constructor.
                     
-this.bufferedImageArray= bufferedImageArray
-this.files= files
+this.bufferedImageArray= bufferedImageArray;
+    
+this.files= files;
+    
 }
 
 

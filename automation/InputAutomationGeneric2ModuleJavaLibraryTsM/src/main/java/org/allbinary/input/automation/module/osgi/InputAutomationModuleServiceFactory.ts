@@ -64,7 +64,8 @@ public constructor (){
     public getService(bundle: Bundle, registration: ServiceRegistration): any = {}{
 var bundle = bundle
 var registration = registration
-logUtil!.put(this.commonStrings!.START, this, "getService")
+logUtil!.put(this.commonStrings!.START, this, "getService");
+    
 
 
 
@@ -93,7 +94,8 @@ var service = service
 
     public setInputAutomationModuleInterfaceArray(inputAutomationModuleInterfaceArray: InputAutomationModuleFactoryInterface[]){
 var inputAutomationModuleInterfaceArray = inputAutomationModuleInterfaceArray
-this.inputAutomationModuleInterfaceArray= inputAutomationModuleInterfaceArray
+this.inputAutomationModuleInterfaceArray= inputAutomationModuleInterfaceArray;
+    
 }
 
 

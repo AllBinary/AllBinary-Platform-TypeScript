@@ -75,14 +75,18 @@ var foregroundBasicColor = foregroundBasicColor
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return GameOptionsForm(commandListener, title, backgrounBasicColor, foregroundBasicColor);
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e);
+    
 
 
 

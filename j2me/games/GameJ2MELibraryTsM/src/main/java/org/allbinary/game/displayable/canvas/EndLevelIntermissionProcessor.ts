@@ -30,14 +30,16 @@ public constructor (gameCanvas: AllBinaryGameCanvas){
 
             super();
             var gameCanvas = gameCanvas
-this.gameCanvas= gameCanvas
+this.gameCanvas= gameCanvas;
+    
 }
 
 
                 //@Throws(Error::class)
             
     public process(){
-this.gameCanvas!.processEndLevelIntermissionGameState()
+this.gameCanvas!.processEndLevelIntermissionGameState();
+    
 }
 
 

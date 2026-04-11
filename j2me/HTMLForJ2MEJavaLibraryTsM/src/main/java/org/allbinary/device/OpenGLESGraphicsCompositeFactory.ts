@@ -44,7 +44,8 @@ export class OpenGLESGraphicsCompositeFactory
 
     public set(openGLESGraphicsFactory: OpenGLESGraphicsFactory){
 var openGLESGraphicsFactory = openGLESGraphicsFactory
-this.openGLESGraphicsFactory= openGLESGraphicsFactory
+this.openGLESGraphicsFactory= openGLESGraphicsFactory;
+    
 }
 
 

@@ -84,7 +84,8 @@ public constructor (transformInfoInterface: Object)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("View Name: " +transformInfoInterface!.getName(), this, "OverrideObjectRootContextView()")
+                                    logUtil!.put("View Name: " +transformInfoInterface!.getName(), this, "OverrideObjectRootContextView()");
+    
 
                                     }
                                 
@@ -100,32 +101,41 @@ public constructor (transformInfoInterface: Object)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("View Name: " +this.getTransformInfoInterface()!.getName(), this, "view()")
+                                    logUtil!.put("View Name: " +this.getTransformInfoInterface()!.getName(), this, "view()");
+    
 
                                     }
                                 
 
-    var rootTransformInfoInterface: TransformInfoInterface = TransformInfoHttp(this.getTransformInfoInterface() as TransformInfoHttp) as TransformInfoInterface;
-        
-        
+    var rootTransformInfoInterface: TransformInfoInterface = TransformInfoHttp(this.getTransformInfoInterface();
 
+                         as TransformInfoHttp) as TransformInfoInterface;
+        
+        
+;
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(this.getTransformInfoInterface()!.getStoreName())
-stringBuffer!.append(CommonSeps.getInstance()!.SPACE)
+;
+    
+stringBuffer!.append(this.getTransformInfoInterface()!.getStoreName());
+    
+stringBuffer!.append(CommonSeps.getInstance()!.SPACE);
+    
 
     var nameStart: string = stringBuffer!.toString()!;
         
         
-
+;
+    
 
                         if(this.getTransformInfoInterface()!.getName()!.indexOf(GeneratorTransformInfoData.NAME) > 0)
                         
                                     {
-                                    rootTransformInfoInterface!.setName(nameStart +GeneratorTransformInfoData.NAME)
+                                    rootTransformInfoInterface!.setName(nameStart +GeneratorTransformInfoData.NAME);
+    
 
                                     }
                                 
@@ -133,7 +143,8 @@ stringBuffer!.append(CommonSeps.getInstance()!.SPACE)
                         if(this.getTransformInfoInterface()!.getName()!.indexOf(RootTransformInfoData.NAME) > 0)
                         
                                     {
-                                    rootTransformInfoInterface!.setName(nameStart +RootTransformInfoData.NAME)
+                                    rootTransformInfoInterface!.setName(nameStart +RootTransformInfoData.NAME);
+    
 
                                     }
                                 
@@ -149,12 +160,14 @@ stringBuffer!.append(CommonSeps.getInstance()!.SPACE)
     var overrideObjectConfigDocument: Document = this.getTransformInfoInterface()!.getObjectConfigInterface()!.toXmlDoc()!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Retrieved OverrideObjectConfig: " +DomDocumentHelper.toString(overrideObjectConfigDocument), this, "view()")
+                                    logUtil!.put("Retrieved OverrideObjectConfig: " +DomDocumentHelper.toString(overrideObjectConfigDocument), this, "view()");
+    
 
                                     }
                                 
@@ -162,33 +175,40 @@ stringBuffer!.append(CommonSeps.getInstance()!.SPACE)
     var transformFactory: TransformFactory = TransformFactory.getInstance()!;
         
         
-
+;
+    
 
     var rootComponentInterface: TransformInterface = transformFactory!.getInstance(this.abeClientInformation, rootTransformInfoInterface!.getName(), rootTransformInfoInterface)!;
         
         
-
+;
+    
 
     var transformTemplateInterface: TransformTemplateInterface = rootComponentInterface as TransformTemplateInterface;
         
         
-
+;
+    
 
     var componentInterface: TransformInterface = transformFactory!.getInstance(this.abeClientInformation, transformTemplateInterface!.getName(), rootComponentInterface!.getTransformInfoInterface())!;
         
         
-
+;
+    
 
     var transformInfoObjectConfigInterface: TransformInfoObjectConfigInterface = TransformInfoObjectConfigAndManipulatorFactory.getInstance()!.getInstance(this.abeClientInformation, componentInterface!.getTransformInfoInterface(), overrideObjectConfigDocument)!;
         
         
-
-componentInterface!.getTransformInfoInterface()!.setObjectConfigInterface(transformInfoObjectConfigInterface)
+;
+    
+componentInterface!.getTransformInfoInterface()!.setObjectConfigInterface(transformInfoObjectConfigInterface);
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Set OverrideObjectConfig: " +componentInterface!.getTransformInfoInterface()!.getObjectConfigInterface()!.toString(), this, "view()")
+                                    logUtil!.put("Set OverrideObjectConfig: " +componentInterface!.getTransformInfoInterface()!.getObjectConfigInterface()!.toString(), this, "view()");
+    
 
                                     }
                                 
@@ -197,14 +217,19 @@ componentInterface!.getTransformInfoInterface()!.setObjectConfigInterface(transf
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return componentInterface!.view();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e);
+    
 
                                     }
                                 

@@ -999,7 +999,7 @@ interface GL10 extends GL {
 
     glCullFace(mode: number)
 
-    glDeleteTextures(n: number, textures: IntArray, offset: number)
+    glDeleteTextures(n: number, textures: number[], offset: number)
 
     glDeleteTextures(n: number, textures: IntBuffer)
 
@@ -1027,7 +1027,7 @@ interface GL10 extends GL {
 
     glFogf(pname: number, param: number)
 
-    glFogfv(pname: number, params: FloatArray, offset: number)
+    glFogfv(pname: number, params: number[], offset: number)
 
     glFogfv(pname: number, params: FloatBuffer)
 
@@ -1035,13 +1035,13 @@ interface GL10 extends GL {
 
     glFrustumf(left: number, right: number, bottom: number, top: number, zNear: number, zFar: number)
 
-    glGenTextures(n: number, textures: IntArray, offset: number)
+    glGenTextures(n: number, textures: number[], offset: number)
 
     glGenTextures(n: number, textures: IntBuffer)
 
     glGetError(): number
 
-    glGetIntegerv(pname: number, params: IntArray, offset: number)
+    glGetIntegerv(pname: number, params: number[], offset: number)
 
     glGetIntegerv(pname: number, params: IntBuffer)
 
@@ -1051,13 +1051,13 @@ interface GL10 extends GL {
 
     glLightModelf(pname: number, param: number)
 
-    glLightModelfv(pname: number, params: FloatArray, offset: number)
+    glLightModelfv(pname: number, params: number[], offset: number)
 
     glLightModelfv(pname: number, params: FloatBuffer)
 
     glLightf(light: number, pname: number, param: number)
 
-    glLightfv(light: number, pname: number, params: FloatArray, offset: number)
+    glLightfv(light: number, pname: number, params: number[], offset: number)
 
     glLightfv(light: number, pname: number, params: FloatBuffer)
 
@@ -1065,7 +1065,7 @@ interface GL10 extends GL {
 
     glLoadIdentity()
 
-    glLoadMatrixf(m: FloatArray, offset: number)
+    glLoadMatrixf(m: number[], offset: number)
 
     glLoadMatrixf(m: FloatBuffer)
 
@@ -1073,13 +1073,13 @@ interface GL10 extends GL {
 
     glMaterialf(face: number, pname: number, param: number)
 
-    glMaterialfv(face: number, pname: number, params: FloatArray, offset: number)
+    glMaterialfv(face: number, pname: number, params: number[], offset: number)
 
     glMaterialfv(face: number, pname: number, params: FloatBuffer)
 
     glMatrixMode(mode: number)
 
-    glMultMatrixf(m: FloatArray, offset: number)
+    glMultMatrixf(m: number[], offset: number)
 
     glMultMatrixf(m: FloatBuffer)
 
@@ -1127,7 +1127,7 @@ interface GL10 extends GL {
 
     glTexEnvf(target: number, pname: number, param: number)
 
-    glTexEnvfv(target: number, pname: number, params: FloatArray, offset: number)
+    glTexEnvfv(target: number, pname: number, params: number[], offset: number)
 
     glTexEnvfv(target: number, pname: number, params: FloatBuffer)
 

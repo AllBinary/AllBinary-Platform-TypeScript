@@ -50,7 +50,7 @@ export class HelperFactory
 
                 //@Throws(LicensingException::class)
             
-    public static getInstance(abeClientInformation: AbeClientInformationInterface, factoryName: string, className: string, hashMap: HashMap<Any, Any>, httpServletRequest: HttpServletRequest): any = {}{
+    public static getInstance(abeClientInformation: AbeClientInformationInterface, factoryName: string, className: string, hashMap: HashMap<any, any>, httpServletRequest: HttpServletRequest): any = {}{
     //var abeClientInformation = abeClientInformation
     //var factoryName = factoryName
     //var className = className
@@ -60,51 +60,64 @@ export class HelperFactory
     var logUtil: LogUtil = LogUtil.getInstance()!;
         
         
-
+;
+    
 
         try {
             
-    var params: any = {}[] = new Array(2);
+    var params: any[] = new Array(2);
         
         
+;
+    
 
-
-    var classes: KClass<*>[] = new Array(2);
+    var classes: Function[] = new Array(2);
         
         
-
+;
+    
 
     var abeFactory: AbeFactory = AbeFactory.getInstance()!;
         
         
-
-classes[0]= hashMap!::class
-classes[1]= abeFactory!::class
-params[0]= hashMap as Object
-params[1]= httpServletRequest as Object
+;
+    
+classes[0]= hashMap!constructor;
+    
+classes[1]= abeFactory!constructor;
+    
+params[0]= hashMap as Object;
+    
+params[1]= httpServletRequest as Object;
+    
 
     var anyType: any = {} = abeFactory!.getInstance(abeClientInformation, className, classes, params)!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return anyType;
     
-} catch(e: LicensingException)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed To Get Instance Args: HashMap=" +hashMap!.toString() +" HttpServletRequest=" +httpServletRequest;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORYERROR))
                         
                                     {
-                                    logUtil!.put(error, factoryName +"->HelperFactory", "getInstance(String, String, HashMap, PageContext)", e)
+                                    logUtil!.put(error, factoryName +"->HelperFactory", "getInstance(String, String, HashMap, PageContext)", e);
+    
 
                                     }
                                 
@@ -113,18 +126,22 @@ params[1]= httpServletRequest as Object
 
                             throw e
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
 
     var error: string = "Failed To Get Instance";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORYERROR))
                         
                                     {
-                                    logUtil!.put(error, factoryName +"->HelperFactory", "getInstance(String, String, HashMap, PageContext)", e)
+                                    logUtil!.put(error, factoryName +"->HelperFactory", "getInstance(String, String, HashMap, PageContext)", e);
+    
 
                                     }
                                 
@@ -141,7 +158,7 @@ params[1]= httpServletRequest as Object
 
                 //@Throws(LicensingException::class)
             
-    public static getInstance(abeClientInformation: AbeClientInformationInterface, factoryName: string, className: string, hashMap: HashMap<Any, Any>, pageContext: PageContext): any = {}{
+    public static getInstance(abeClientInformation: AbeClientInformationInterface, factoryName: string, className: string, hashMap: HashMap<any, any>, pageContext: PageContext): any = {}{
     //var abeClientInformation = abeClientInformation
     //var factoryName = factoryName
     //var className = className
@@ -151,40 +168,51 @@ params[1]= httpServletRequest as Object
     var logUtil: LogUtil = LogUtil.getInstance()!;
         
         
-
+;
+    
 
         try {
             
-    var params: any = {}[] = new Array(2);
+    var params: any[] = new Array(2);
         
         
+;
+    
 
-
-    var classes: KClass<*>[] = new Array(2);
+    var classes: Function[] = new Array(2);
         
         
-
+;
+    
 
     var abeFactory: AbeFactory = AbeFactory.getInstance()!;
         
         
-
-classes[0]= hashMap!::class
-classes[1]= abeFactory!::class
-params[0]= hashMap as Object
-params[1]= pageContext as Object
+;
+    
+classes[0]= hashMap!constructor;
+    
+classes[1]= abeFactory!constructor;
+    
+params[0]= hashMap as Object;
+    
+params[1]= pageContext as Object;
+    
 
     var anyType: any = {} = abeFactory!.getInstance(abeClientInformation, className, classes, params)!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return anyType;
     
-} catch(e: LicensingException)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORYERROR))
@@ -194,8 +222,10 @@ params[1]= pageContext as Object
     var error: string = "Failed To Get Instance Args: HashMap=" +hashMap!.toString() +" PageContext=" +pageContext;
         
         
-
-logUtil!.put(error, factoryName +"->HelperFactory", "getInstance(String, String, HashMap, PageContext)", e)
+;
+    
+logUtil!.put(error, factoryName +"->HelperFactory", "getInstance(String, String, HashMap, PageContext)", e);
+    
 
                                     }
                                 
@@ -204,7 +234,9 @@ logUtil!.put(error, factoryName +"->HelperFactory", "getInstance(String, String,
 
                             throw e
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORYERROR))
@@ -214,8 +246,10 @@ logUtil!.put(error, factoryName +"->HelperFactory", "getInstance(String, String,
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, factoryName +"->HelperFactory", "getInstance(String, String, HashMap, PageContext)", e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, factoryName +"->HelperFactory", "getInstance(String, String, HashMap, PageContext)", e);
+    
 
                                     }
                                 
@@ -232,7 +266,7 @@ logUtil!.put(commonStrings!.EXCEPTION, factoryName +"->HelperFactory", "getInsta
 
                 //@Throws(LicensingException::class)
             
-    public static getInstance(abeClientInformation: AbeClientInformationInterface, factoryName: string, className: string, hashMap: HashMap<Any, Any>, specialhashMap: HashMap<Any, Any>, pageContext: PageContext): any = {}{
+    public static getInstance(abeClientInformation: AbeClientInformationInterface, factoryName: string, className: string, hashMap: HashMap<any, any>, specialhashMap: HashMap<any, any>, pageContext: PageContext): any = {}{
     //var abeClientInformation = abeClientInformation
     //var factoryName = factoryName
     //var className = className
@@ -243,42 +277,55 @@ logUtil!.put(commonStrings!.EXCEPTION, factoryName +"->HelperFactory", "getInsta
     var logUtil: LogUtil = LogUtil.getInstance()!;
         
         
-
+;
+    
 
         try {
             
-    var params: any = {}[] = new Array(3);
+    var params: any[] = new Array(3);
         
         
+;
+    
 
-
-    var classes: KClass<*>[] = new Array(3);
+    var classes: Function[] = new Array(3);
         
         
-
+;
+    
 
     var abeFactory: AbeFactory = AbeFactory.getInstance()!;
         
         
-
-classes[0]= hashMap!::class
-classes[1]= specialhashMap!::class
-classes[2]= abeFactory!::class
-params[0]= hashMap as Object
-params[1]= specialhashMap as Object
-params[2]= pageContext as Object
+;
+    
+classes[0]= hashMap!constructor;
+    
+classes[1]= specialhashMap!constructor;
+    
+classes[2]= abeFactory!constructor;
+    
+params[0]= hashMap as Object;
+    
+params[1]= specialhashMap as Object;
+    
+params[2]= pageContext as Object;
+    
 
     var anyType: any = {} = abeFactory!.getInstance(abeClientInformation, className, classes, params)!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return anyType;
     
-} catch(e: LicensingException)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORYERROR))
@@ -288,8 +335,10 @@ params[2]= pageContext as Object
     var error: string = "Failed To Get Instance Args: HashMap=" +hashMap!.toString() +" PageContext=" +pageContext;
         
         
-
-logUtil!.put(error, factoryName +"->HelperFactory", "getInstance(String, String, HashMap, PageContext)", e)
+;
+    
+logUtil!.put(error, factoryName +"->HelperFactory", "getInstance(String, String, HashMap, PageContext)", e);
+    
 
                                     }
                                 
@@ -298,7 +347,9 @@ logUtil!.put(error, factoryName +"->HelperFactory", "getInstance(String, String,
 
                             throw e
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORYERROR))
@@ -308,8 +359,10 @@ logUtil!.put(error, factoryName +"->HelperFactory", "getInstance(String, String,
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, factoryName +"->HelperFactory", "getInstance(String, String, HashMap, PageContext)", e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, factoryName +"->HelperFactory", "getInstance(String, String, HashMap, PageContext)", e);
+    
 
                                     }
                                 
@@ -334,21 +387,25 @@ logUtil!.put(commonStrings!.EXCEPTION, factoryName +"->HelperFactory", "getInsta
     var logUtil: LogUtil = LogUtil.getInstance()!;
         
         
-
+;
+    
 
         try {
             
     var anyType: any = {} = AbeFactory.getInstance()!.getInstance(abeClientInformation, className)!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return anyType;
     
-} catch(e: LicensingException)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORYERROR))
@@ -358,8 +415,10 @@ logUtil!.put(commonStrings!.EXCEPTION, factoryName +"->HelperFactory", "getInsta
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, factoryName +"->HelperFactory", "getInstance(String, String, HashMap, PageContext)", e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, factoryName +"->HelperFactory", "getInstance(String, String, HashMap, PageContext)", e);
+    
 
                                     }
                                 
@@ -368,7 +427,9 @@ logUtil!.put(commonStrings!.EXCEPTION, factoryName +"->HelperFactory", "getInsta
 
                             throw e
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORYERROR))
@@ -378,8 +439,10 @@ logUtil!.put(commonStrings!.EXCEPTION, factoryName +"->HelperFactory", "getInsta
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, factoryName +"->HelperFactory", "getInstance(String, String, HashMap, PageContext)", e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, factoryName +"->HelperFactory", "getInstance(String, String, HashMap, PageContext)", e);
+    
 
                                     }
                                 

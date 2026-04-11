@@ -32,8 +32,10 @@ export class ImageAnalysisResults
 public constructor (){
 
             super();
-            this.imageColorRangeResults= ImageColorRangeResults()
-this.imageColorResults= ImageColorResults()
+            this.imageColorRangeResults= ImageColorRangeResults();
+    
+this.imageColorResults= ImageColorResults();
+    
 }
 
 
@@ -49,7 +51,8 @@ this.imageColorResults= ImageColorResults()
 
     public setImageColorRangeResults(imageColorRangeResults: ImageColorRangeResults){
 var imageColorRangeResults = imageColorRangeResults
-this.imageColorRangeResults= imageColorRangeResults
+this.imageColorRangeResults= imageColorRangeResults;
+    
 }
 
 
@@ -65,7 +68,8 @@ this.imageColorRangeResults= imageColorRangeResults
 
     public setAverageAmbientLevel(averageAmbientLevel: number){
 var averageAmbientLevel = averageAmbientLevel
-this.averageAmbientLevel= averageAmbientLevel
+this.averageAmbientLevel= averageAmbientLevel;
+    
 }
 
 
@@ -81,7 +85,8 @@ this.averageAmbientLevel= averageAmbientLevel
 
     public setImageColorResults(imageColorResults: ImageColorResults){
 var imageColorResults = imageColorResults
-this.imageColorResults= imageColorResults
+this.imageColorResults= imageColorResults;
+    
 }
 
 

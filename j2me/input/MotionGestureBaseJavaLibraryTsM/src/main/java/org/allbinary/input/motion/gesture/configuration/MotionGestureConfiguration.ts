@@ -106,12 +106,14 @@ var index = index
     public addMotionGestureAction(list: BasicArrayList, commandAction: CompleteMotionGestureInputEvent){
 var list = list
 var commandAction = commandAction
-activeCommands!.add(MotionGestureToMotionGestureActionAssociation(list, commandAction))
+activeCommands!.add(MotionGestureToMotionGestureActionAssociation(list, commandAction));
+    
 }
 
 
     public clearMotionGestureAction(){
-activeCommands!.clear()
+activeCommands!.clear();
+    
 }
 
 
@@ -147,13 +149,15 @@ activeCommands!.clear()
 
     public setExecutingActionsAllowed(executingActionAllowed: boolean){
 var executingActionAllowed = executingActionAllowed
-this.executingActions= executingActionAllowed
+this.executingActions= executingActionAllowed;
+    
 }
 
 
     public setDiagonalMotionGestureAllowed(diagonalMotionGestureAllowed: boolean){
 var diagonalMotionGestureAllowed = diagonalMotionGestureAllowed
-this.diagonalMotionGestureAllowed= diagonalMotionGestureAllowed
+this.diagonalMotionGestureAllowed= diagonalMotionGestureAllowed;
+    
 }
 
 
@@ -169,7 +173,8 @@ this.diagonalMotionGestureAllowed= diagonalMotionGestureAllowed
 
     public setDiagonalTolerance(diagonalTolerance: number){
 var diagonalTolerance = diagonalTolerance
-this.diagonalTolerance= diagonalTolerance
+this.diagonalTolerance= diagonalTolerance;
+    
 }
 
 
@@ -185,7 +190,8 @@ this.diagonalTolerance= diagonalTolerance
 
     public setMinimumMotionGesture(minimumMotionGesture: number){
 var minimumMotionGesture = minimumMotionGesture
-this.minimumMotionGesture= minimumMotionGesture
+this.minimumMotionGesture= minimumMotionGesture;
+    
 }
 
 
@@ -201,7 +207,8 @@ this.minimumMotionGesture= minimumMotionGesture
 
     public setButton(button: string){
 var button = button
-this.button= button
+this.button= button;
+    
 }
 
 
@@ -217,7 +224,8 @@ this.button= button
 
     public setColor(color: BasicColor){
 var color = color
-this.color= color
+this.color= color;
+    
 }
 
 
@@ -233,7 +241,8 @@ this.color= color
 
     public setMouseButtonMask(mouseButtonMask: number){
 var mouseButtonMask = mouseButtonMask
-this.mouseButtonMask= mouseButtonMask
+this.mouseButtonMask= mouseButtonMask;
+    
 }
 
 

@@ -66,15 +66,22 @@ public constructor (transformInfoInterface: TransformInfoInterface)
     var paymentProcessorInterface: PaymentProcessorInterface = PaymentProcessorInterfaceFactory.getInstance()!.getInstance(this.getTransformInfoInterface())!;
         
         
+;
+    
+paymentProcessorInterface!.process();
+    
 
-paymentProcessorInterface!.process()
+    var httpTransformInfoInterface: TransformInfoHttpInterface = this.getTransformInfoInterface();
 
-    var httpTransformInfoInterface: TransformInfoHttpInterface = this.getTransformInfoInterface() as TransformInfoHttpInterface;
+                         as TransformInfoHttpInterface;
         
         
-
-httpTransformInfoInterface!.getWeblisketSession()!.removeBasket()
-this.addDomNodeInterface(paymentProcessorInterface as DomNodeInterface)
+;
+    
+httpTransformInfoInterface!.getWeblisketSession()!.removeBasket();
+    
+this.addDomNodeInterface(paymentProcessorInterface as DomNodeInterface);
+    
 }
 
 
@@ -83,20 +90,26 @@ this.addDomNodeInterface(paymentProcessorInterface as DomNodeInterface)
     public view(): string{
 
         try {
-            this.addDomNodeInterfaces()
+            this.addDomNodeInterfaces();
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.view();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e);
+    
 
                                     }
                                 

@@ -18,10 +18,13 @@
 
 
 
+            import Hashtable from "@ohos.util.HashMap";
+        
 import { Enumeration } from "../../../../../../../java/util/Enumeration.js";
 
     
-import { Hashtable } from "../../../../../../../java/util/Hashtable.js";
+
+//import { Hashtable } from "../../../../../../../java/util/Hashtable.js";
 
     
 import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonStrings.js";
@@ -50,7 +53,7 @@ export class BasicPlatormGeographicMapCellTypeFactory extends GeographicMapCellT
     public readonly LADDER_CELL_TYPE: BasicPlatormGeographicMapCellType
 
     private readonly maxTileId: number
-public constructor (tileTypeToTileIdsMap: Hashtable<Any, Any>, maxTileId: number){
+public constructor (tileTypeToTileIdsMap: Hashtable<any, any>, maxTileId: number){
 
             super();
                 //var tileTypeToTileIdsMap = tileTypeToTileIdsMap
@@ -59,66 +62,89 @@ public constructor (tileTypeToTileIdsMap: Hashtable<Any, Any>, maxTileId: number
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.START, this, commonStrings!.INIT)
-this.maxTileId= maxTileId
-GeographicMapCellType(0)
+;
+    
+logUtil!.put(commonStrings!.START, this, commonStrings!.INIT);
+    
+this.maxTileId= maxTileId;
+    
+GeographicMapCellType(0);
+    
 
     var BLOCK_CELL_TYPE: BasicPlatormGeographicMapCellType = new BasicPlatormGeographicMapCellType(1);
         
         
-
+;
+    
 
     var JUMP_THRU_CELL_TYPE: BasicPlatormGeographicMapCellType = BLOCK_CELL_TYPE;
         
         
-
+;
+    
 
     var LADDER_CELL_TYPE: BasicPlatormGeographicMapCellType = BLOCK_CELL_TYPE;
         
         
-
+;
+    
 
     var PLATFORM: string = "Platform";
         
         
-
+;
+    
 
     var JUMP_TRHU: string = "JumpThru";
         
         
-
+;
+    
 
     var LADDER: string = "Ladder";
         
         
+;
+    
 
-
-    var enumeration: Enumeration<Any?> = tileTypeToTileIdsMap!.keys()!;
+    var enumeration: Enumeration<any?> = tileTypeToTileIdsMap!.keys()!;
         
         
-
+;
+    
 
     var idsWithTypeList: BasicArrayList
-
+;
+    
 
     var key: string
-
+;
+    
 
     var basicPlatormGeographicMapCellType: BasicPlatormGeographicMapCellType
-
+;
+    
 
         while(enumeration.hasMoreElements())
         {
-key= enumeration.nextElement()! as String
-logUtil!.put(key, this, commonStrings!.INIT)
-idsWithTypeList= tileTypeToTileIdsMap!.get(key) as BasicArrayList
-basicPlatormGeographicMapCellType= BasicPlatormGeographicMapCellType(idsWithTypeList)
+key= enumeration.nextElement()!;
+
+                         as String;
+    
+logUtil!.put(key, this, commonStrings!.INIT);
+    
+idsWithTypeList= tileTypeToTileIdsMap!.get(key);
+
+                         as BasicArrayList;
+    
+basicPlatormGeographicMapCellType= BasicPlatormGeographicMapCellType(idsWithTypeList);
+    
 
                         if(key.equals(PLATFORM))
                         
                                     {
-                                    BLOCK_CELL_TYPE= basicPlatormGeographicMapCellType
+                                    BLOCK_CELL_TYPE= basicPlatormGeographicMapCellType;
+    
 
                                     }
                                 
@@ -126,7 +152,8 @@ basicPlatormGeographicMapCellType= BasicPlatormGeographicMapCellType(idsWithType
                         if(key.equals(JUMP_TRHU))
                         
                                     {
-                                    JUMP_THRU_CELL_TYPE= basicPlatormGeographicMapCellType
+                                    JUMP_THRU_CELL_TYPE= basicPlatormGeographicMapCellType;
+    
 
                                     }
                                 
@@ -134,17 +161,23 @@ basicPlatormGeographicMapCellType= BasicPlatormGeographicMapCellType(idsWithType
                         if(key.equals(LADDER))
                         
                                     {
-                                    LADDER_CELL_TYPE= basicPlatormGeographicMapCellType
+                                    LADDER_CELL_TYPE= basicPlatormGeographicMapCellType;
+    
 
                                     }
                                 
 }
 
-this.BLOCK_CELL_TYPE= BLOCK_CELL_TYPE
-this.JUMP_THRU_CELL_TYPE= JUMP_THRU_CELL_TYPE
-this.LADDER_CELL_TYPE= LADDER_CELL_TYPE
-GeographicMapCellType(this.maxTileId -1)
-GeographicMapCellType(this.maxTileId -2)
+this.BLOCK_CELL_TYPE= BLOCK_CELL_TYPE;
+    
+this.JUMP_THRU_CELL_TYPE= JUMP_THRU_CELL_TYPE;
+    
+this.LADDER_CELL_TYPE= LADDER_CELL_TYPE;
+    
+GeographicMapCellType(this.maxTileId -1);
+    
+GeographicMapCellType(this.maxTileId -2);
+    
 }
 
 

@@ -58,22 +58,30 @@ export class SpecialMessageUtil
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(Memory.getInfo())
-stringBuffer!.append(CommonSeps.getInstance()!.SPACE)
-stringBuffer!.append(GameStatisticsFactory.getInstance()!.toString())
-stringBuffer!.append(CommonSeps.getInstance()!.SPACE)
-stringBuffer!.append(" Option: ")
+;
+    
+stringBuffer!.append(Memory.getInfo());
+    
+stringBuffer!.append(CommonSeps.getInstance()!.SPACE);
+    
+stringBuffer!.append(GameStatisticsFactory.getInstance()!.toString());
+    
+stringBuffer!.append(CommonSeps.getInstance()!.SPACE);
+    
+stringBuffer!.append(" Option: ");
+    
 
                         if(Features.getInstance()!.isDefault(OpenGLFeatureFactory.getInstance()!.OPENGL_AUTO_SELECT))
                         
                                     {
-                                    stringBuffer!.append(OpenGLFeatureFactory.getInstance()!.OPENGL_AUTO_SELECT.getName())
+                                    stringBuffer!.append(OpenGLFeatureFactory.getInstance()!.OPENGL_AUTO_SELECT.getName());
+    
 
                                     }
                                 
                         else {
-                            stringBuffer!.append(OpenGLFeatureFactory.getInstance()!.OPENGL_MINIMUM.getName())
+                            stringBuffer!.append(OpenGLFeatureFactory.getInstance()!.OPENGL_MINIMUM.getName());
+    
 
                         }
                             
@@ -82,6 +90,8 @@ stringBuffer!.append(" Option: ")
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

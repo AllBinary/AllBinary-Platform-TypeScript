@@ -58,11 +58,14 @@ public constructor (bufferedImage: BufferedImage){
 
             super();
             var bufferedImage = bufferedImage
-initComponents()
-this.bufferedImage= bufferedImage
+initComponents();
+    
+this.bufferedImage= bufferedImage;
+    
 this.setSize(this.bufferedImage!.getWidth(
                             null), this.bufferedImage!.getHeight(
-                            null))
+                            null));
+    
 }
 
 
@@ -72,12 +75,15 @@ var graphics = graphics
                         if(!isDrawn)
                         
                                     {
-                                    logUtil!.put(commonStrings!.START, this, canvasStrings!.PAINT)
+                                    logUtil!.put(commonStrings!.START, this, canvasStrings!.PAINT);
+    
 graphics.drawImage(bufferedImage, 0, 0, this.bufferedImage!.getWidth(
                             null), this.bufferedImage!.getHeight(
                             null), 
-                            null)
-isDrawn= true
+                            null);
+    
+isDrawn= true;
+    
 
                                     }
                                 
@@ -89,10 +95,14 @@ isDrawn= true
     var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);
         
         
-
-this.setLayout(layout)
-layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGap(0, 400, Short.MAX_VALUE))
-layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGap(0, 300, Short.MAX_VALUE))
+;
+    
+this.setLayout(layout);
+    
+layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGap(0, 400, Short.MAX_VALUE));
+    
+layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGap(0, 300, Short.MAX_VALUE));
+    
 }
 
 

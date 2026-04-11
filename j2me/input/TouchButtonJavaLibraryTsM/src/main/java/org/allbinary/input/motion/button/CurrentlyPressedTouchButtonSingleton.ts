@@ -56,6 +56,8 @@ protected constructor (){
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.list.size();
+
+                        ;
     
 }
 
@@ -66,7 +68,9 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.list.remove(index) as TouchButtonInput;
+                        return this.list.remove(index);
+
+                         as TouchButtonInput;
     
 }
 
@@ -78,6 +82,8 @@ var touchButtonInput = touchButtonInput
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.list.remove(touchButtonInput);
+
+                        ;
     
 }
 
@@ -100,13 +106,16 @@ var touchButtonInput = touchButtonInput
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.list.contains(touchButtonInput);
+
+                        ;
     
 }
 
 
     public add(touchButtonInput: TouchButtonInput){
 var touchButtonInput = touchButtonInput
-this.list.add(touchButtonInput)
+this.list.add(touchButtonInput);
+    
 }
 
 

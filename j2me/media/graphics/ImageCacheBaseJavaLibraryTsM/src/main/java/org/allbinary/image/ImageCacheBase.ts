@@ -18,10 +18,13 @@
 
 
 
+            import Hashtable from "@ohos.util.HashMap";
+        
 import { InputStream } from "../../../java/io/InputStream.js";
 
     
-import { Hashtable } from "../../../java/util/Hashtable.js";
+
+//import { Hashtable } from "../../../java/util/Hashtable.js";
 
     
 import { Image } from "../../../javax/microedition/lcdui/Image.js";
@@ -55,7 +58,7 @@ export class ImageCacheBase
         
         
 
-    readonly hashtable: Hashtable<Any, Any> = new Hashtable<Any, Any>();
+    readonly hashtable: Hashtable<any, any> = new Hashtable<any, any>();
         
         
 
@@ -63,11 +66,11 @@ export class ImageCacheBase
         
         
 
-    readonly widths: IntArray = IntArray(SIZE);
+    readonly widths: number[] = new Array(SIZE);
         
         
 
-    readonly heights: IntArray = IntArray(SIZE);
+    readonly heights: number[] = new Array(SIZE);
         
         
 
@@ -99,7 +102,8 @@ public constructor (){
         
 index >= 0; index--)
         {
-listOfList[index]= BasicArrayList()
+listOfList[index]= BasicArrayList();
+    
 }
 
 
@@ -112,7 +116,8 @@ listOfList[index]= BasicArrayList()
         
 index >= 0; index--)
         {
-availableListOfList[index]= BasicArrayList()
+availableListOfList[index]= BasicArrayList();
+    
 }
 
 }
@@ -124,7 +129,8 @@ availableListOfList[index]= BasicArrayList()
     var imageCanBeNull: any = {}? = this.hashtable.get(resourceId as Object);
         
         
-
+;
+    
 
                         if(imageCanBeNull == 
                                     null
@@ -160,12 +166,15 @@ availableListOfList[index]= BasicArrayList()
         
 index >= 0; index--)
         {
-availableListOfList[index]!.clear()
-availableListOfList[index]!.addAll(listOfList[index]!)
+availableListOfList[index]!.clear();
+    
+availableListOfList[index]!.addAll(listOfList[index]!);
+    
 }
 
 logUtil!.put(StringMaker().
-                            append("ImageCache: ")!.append(this.toString())!.toString(), this, "releaseAll")
+                            append("ImageCache: ")!.append(this.toString())!.toString(), this, "releaseAll");
+    
 }
 
 
@@ -176,13 +185,15 @@ logUtil!.put(StringMaker().
     var foundIndex: number =  -1;
         
         
-
+;
+    
 
     var size: number = widths.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -197,7 +208,8 @@ index < size; index++)
                         if(widths[index] == width && heights[index] == height)
                         
                                     {
-                                    foundIndex= index
+                                    foundIndex= index;
+    
 
 
 
@@ -234,12 +246,15 @@ index < size; index++)
     var list: BasicArrayList = availableListOfList[foundIndex]!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return list.remove(list.size() -1) as Image;
+                        return list.remove(list.size() -1);
+
+                         as Image;
     
 
                                     }
@@ -266,7 +281,9 @@ index < size; index++)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.get(anyType!::class.toString()!, width, height);
+                        return this.get(anyType!.constructor.name.toString()!, width, height);
+
+                        ;
     
 }
 
@@ -306,6 +323,8 @@ index < size; index++)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return Image.createImage(width, height);
+
+                        ;
     
 }
 
@@ -319,7 +338,8 @@ index < size; index++)
     var image: Image = Image.createImage(inputStream)!;
         
         
-
+;
+    
 
 
 
@@ -334,7 +354,8 @@ index < size; index++)
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
 
 
@@ -349,31 +370,44 @@ index >= 0; index--)
     var width: number = widths[index]!;
         
         
-
+;
+    
 
     var height: number = heights[index]!;
         
         
-
+;
+    
 
     var total: number = listOfList[index]!.size()!;
         
         
-
+;
+    
 
     var totalAvailable: number = availableListOfList[index]!.size()!;
         
         
-
-stringBuffer!.append(" w: ")
-stringBuffer!.appendint(width)
-stringBuffer!.append(" h: ")
-stringBuffer!.appendint(height)
-stringBuffer!.append(CommonSeps.getInstance()!.SPACE)
-stringBuffer!.append(CommonLabels.getInstance()!.TOTAL_LABEL)
-stringBuffer!.appendint(total)
-stringBuffer!.append(" available: ")
-stringBuffer!.appendint(totalAvailable)
+;
+    
+stringBuffer!.append(" w: ");
+    
+stringBuffer!.appendint(width);
+    
+stringBuffer!.append(" h: ");
+    
+stringBuffer!.appendint(height);
+    
+stringBuffer!.append(CommonSeps.getInstance()!.SPACE);
+    
+stringBuffer!.append(CommonLabels.getInstance()!.TOTAL_LABEL);
+    
+stringBuffer!.appendint(total);
+    
+stringBuffer!.append(" available: ");
+    
+stringBuffer!.appendint(totalAvailable);
+    
 }
 
 
@@ -381,11 +415,13 @@ stringBuffer!.appendint(totalAvailable)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 
 
-    public getHashtableP(): Hashtable<Any, Any>{
+    public getHashtableP(): Hashtable<any, any>{
 
 
 

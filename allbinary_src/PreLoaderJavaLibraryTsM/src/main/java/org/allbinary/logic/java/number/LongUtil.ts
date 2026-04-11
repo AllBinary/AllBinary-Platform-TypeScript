@@ -36,7 +36,8 @@ export class LongUtil
     var frameStringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
                         if(frameStringBuffer!.length() < LongData.MAX_LONG_LENGTH)
                         
@@ -45,12 +46,14 @@ export class LongUtil
     var commonPhoneStrings: CommonPhoneStrings = CommonPhoneStrings.getInstance()!;
         
         
-
+;
+    
 
     var size: number = LongData.MAX_LONG_LENGTH -frameStringBuffer!.length();
         
         
-
+;
+    
 
 
 
@@ -61,18 +64,22 @@ export class LongUtil
         
 index < size; index++)
         {
-frameStringBuffer!.append(commonPhoneStrings!.ZERO)
+frameStringBuffer!.append(commonPhoneStrings!.ZERO);
+    
 }
 
 
                                     }
                                 
-frameStringBuffer!.append(end)
+frameStringBuffer!.append(end);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return frameStringBuffer!.toString();
+
+                        ;
     
 }
 

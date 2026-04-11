@@ -56,7 +56,8 @@ export class PlayerQueue
 
             super();
             var max = max
-this.max= max
+this.max= max;
+    
 }
 
 
@@ -65,16 +66,22 @@ var sound = sound
 
         try {
             
-                        if(!list.contains(sound))
+                        if(!list.contains(sound);
+
+                        )
                         
                                     {
-                                    list.add(sound)
+                                    list.add(sound);
+    
 
                                     }
                                 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-PreLogUtil.put(commonStrings!.EXCEPTION, this, commonStrings!.ADD)
+PreLogUtil.put(commonStrings!.EXCEPTION, this, commonStrings!.ADD);
+    
 }
 
 }
@@ -85,36 +92,44 @@ PreLogUtil.put(commonStrings!.EXCEPTION, this, commonStrings!.ADD)
     var sound: Sound = NoSound.getInstance()!;
         
         
-
+;
+    
 
         try {
             
     var played: boolean = false;
         
         
-
+;
+    
 
                         if(list.size() > 0)
                         
                                     {
-                                    sound= list.remove(0) as Sound
+                                    sound= list.remove(0);
+
+                         as Sound;
+    
 
                         if(sound != 
                                     null
                                 )
                         
                                     {
-                                    sound.getPlayerP()!.start()
+                                    sound.getPlayerP()!.start();
+    
 
                                     }
                                 
 
         while(list.size() > max)
         {
-list.remove(0)
+list.remove(0);
+    
 }
 
-played= true
+played= true;
+    
 
                                     }
                                 
@@ -124,25 +139,30 @@ played= true
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return played;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var resource: string = StringUtil.getInstance()!.EMPTY_STRING;
         
         
-
+;
+    
 
                         if(sound != 
                                     null
                                 )
                         
                                     {
-                                    resource= sound.getResource()
+                                    resource= sound.getResource();
+    
 
                                     }
                                 
 PreLogUtil.put(StringMaker().
-                            append(commonStrings!.EXCEPTION_LABEL)!.append(resource)!.toString(), this, commonStrings!.PROCESS)
+                            append(commonStrings!.EXCEPTION_LABEL)!.append(resource)!.toString(), this, commonStrings!.PROCESS);
+    
 
 
 
@@ -155,7 +175,8 @@ PreLogUtil.put(StringMaker().
 
 
     public clear(){
-this.list.clear()
+this.list.clear();
+    
 }
 
 
@@ -166,6 +187,8 @@ this.list.clear()
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return StringMaker().
                             append(TOTAL)!.appendint(this.list.size())!.toString();
+
+                        ;
     
 }
 

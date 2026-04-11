@@ -39,8 +39,10 @@ public constructor (command: string, treeNode: MutableTreeNode){
             super();
             var command = command
 var treeNode = treeNode
-this.command= command
-this.treeNode= treeNode
+this.command= command;
+    
+this.treeNode= treeNode;
+    
 }
 
 public constructor (command: string, angle: number, treeNode: MutableTreeNode){
@@ -49,9 +51,12 @@ public constructor (command: string, angle: number, treeNode: MutableTreeNode){
             var command = command
 var angle = angle
 var treeNode = treeNode
-this.command= command
-this.treeNode= treeNode
-this.setAngle(angle)
+this.command= command;
+    
+this.treeNode= treeNode;
+    
+this.setAngle(angle);
+    
 }
 
 
@@ -87,7 +92,8 @@ this.setAngle(angle)
 
     public setAngle(angle: number){
 var angle = angle
-this.angle= angle
+this.angle= angle;
+    
 }
 
 

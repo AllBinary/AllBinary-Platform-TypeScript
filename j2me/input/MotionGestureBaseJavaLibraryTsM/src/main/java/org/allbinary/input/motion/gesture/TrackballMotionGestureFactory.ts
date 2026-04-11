@@ -55,11 +55,16 @@ private constructor (){
     var MAX: number = InputFactory.getInstance()!.MAX;
         
         
-
-LEFT= MotionGestureInput(MAX -26, "L Trackball")
-RIGHT= MotionGestureInput(MAX -27, "R Trackball")
-UP= MotionGestureInput(MAX -28, "Up Trackball")
-DOWN= MotionGestureInput(MAX -29, "D Trackball")
+;
+    
+LEFT= MotionGestureInput(MAX -26, "L Trackball");
+    
+RIGHT= MotionGestureInput(MAX -27, "R Trackball");
+    
+UP= MotionGestureInput(MAX -28, "Up Trackball");
+    
+DOWN= MotionGestureInput(MAX -29, "D Trackball");
+    
 }
 
 

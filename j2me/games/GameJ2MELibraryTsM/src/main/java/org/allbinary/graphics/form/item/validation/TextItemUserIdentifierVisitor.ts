@@ -55,7 +55,8 @@ var anyType = anyType
     var value: string = anyType as String;
         
         
-
+;
+    
 
                         if(value.length < 2)
                         
@@ -64,12 +65,14 @@ var anyType = anyType
     var charValue: string = value[0]!;
         
         
-
+;
+    
 
     var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
         
         
-
+;
+    
 
                         if(stringValidationUtil!.isNumber(value))
                         
@@ -99,15 +102,20 @@ var anyType = anyType
                         else {
                             
         try {
-            TextNotificationUtil.getInstance()!.fireError("Only Letters & Numbers Allowed")
-} catch(e: Exception)
+            TextNotificationUtil.getInstance()!.fireError("Only Letters & Numbers Allowed");
+    
+
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.VISIT, e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.VISIT, e);
+    
 }
 
 
@@ -141,7 +149,8 @@ var charValue = charValue
     var value: number = charValue.toInt();
         
         
-
+;
+    
 
 
 

@@ -33,14 +33,16 @@ public constructor (midlet: MIDlet){
 
             super();
             var midlet = midlet
-this.midlet= midlet
+this.midlet= midlet;
+    
 }
 
 
                 //@Throws(Error::class)
             
     public process(){
-System.exit(0)
+System.exit(0);
+    
 }
 
 

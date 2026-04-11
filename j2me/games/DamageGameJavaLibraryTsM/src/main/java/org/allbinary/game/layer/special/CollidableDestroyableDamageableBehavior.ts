@@ -65,6 +65,8 @@ public constructor (ownerLayer: CollidableCompositeLayer, collidable: boolean)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.isCollision(collisionLayer);
+
+                        ;
     
 
                                     }
@@ -86,19 +88,23 @@ public constructor (ownerLayer: CollidableCompositeLayer, collidable: boolean)
     var ownerCollidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer = this.ownerLayer as CollidableDestroyableDamageableLayer;
         
         
-
+;
+    
 
     var collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer = collidableInterfaceCompositeInterface as CollidableDestroyableDamageableLayer;
         
         
-
-ownerCollidableDestroyableDamageableLayer!.damage(collidableDestroyableDamageableLayer!.getDamage(0), 0)
+;
+    
+ownerCollidableDestroyableDamageableLayer!.damage(collidableDestroyableDamageableLayer!.getDamage(0), 0);
+    
 }
 
 
     public isCollision(collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface): boolean{
     //var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
-ForcedLogUtil.log("No Longer Used", this)
+ForcedLogUtil.log("No Longer Used", this);
+    
 
 
 
@@ -112,7 +118,8 @@ ForcedLogUtil.log("No Longer Used", this)
             
     public collide(collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface){
     //var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
-ForcedLogUtil.log("No Longer Used", this)
+ForcedLogUtil.log("No Longer Used", this);
+    
 }
 
 

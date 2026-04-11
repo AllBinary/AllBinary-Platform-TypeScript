@@ -76,17 +76,20 @@ private constructor (){
 
                 //@Throws(Error::class, LicensingException::class)
             
-    public getInstance(abeClientInformation: AbeClientInformationInterface, propertiesHashMap: HashMap<Any, Any>, pageContext: PageContext): StoreWorkFlowInterface{
+    public getInstance(abeClientInformation: AbeClientInformationInterface, propertiesHashMap: HashMap<any, any>, pageContext: PageContext): StoreWorkFlowInterface{
     //var abeClientInformation = abeClientInformation
     //var propertiesHashMap = propertiesHashMap
     //var pageContext = pageContext
 
         try {
             
-    var workFlowClassName: string = propertiesHashMap!.get(DynamicObjectData.NAME) as String;
-        
-        
+    var workFlowClassName: string = propertiesHashMap!.get(DynamicObjectData.NAME);
 
+                         as String;
+        
+        
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORY))
                         
@@ -95,66 +98,93 @@ private constructor (){
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("Creating WorkFlow: ")
-stringBuffer!.append(workFlowClassName)
-stringBuffer!.append("->")
-stringBuffer!.append(instance::class.toString()!)
+;
+    
+stringBuffer!.append("Creating WorkFlow: ");
+    
+stringBuffer!.append(workFlowClassName);
+    
+stringBuffer!.append("->");
+    
+stringBuffer!.append(instance.constructor.name.toString()!);
+    
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE)
+;
+    
+logUtil!.put(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE);
+    
 
                                     }
                                 
 
-    var params: any = {}[] = new Array(2);
+    var params: any[] = new Array(2);
         
         
+;
+    
 
-
-    var classes: KClass<*>[] = new Array(2);
+    var classes: Function[] = new Array(2);
         
         
-
-classes[0]= propertiesHashMap!::class
-classes[1]= AbeFactory.getInstance()!.::class
-params[0]= propertiesHashMap as Object
-params[1]= pageContext as Object
+;
+    
+classes[0]= propertiesHashMap!constructor;
+    
+classes[1]= AbeFactory.getInstance()!.constructor;
+    
+params[0]= propertiesHashMap as Object;
+    
+params[1]= pageContext as Object;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return AbeFactory.getInstance()!.getInstance(abeClientInformation, workFlowClassName, classes, params) as StoreWorkFlowInterface;
+                        return AbeFactory.getInstance()!.getInstance(abeClientInformation, workFlowClassName, classes, params);
+
+                         as StoreWorkFlowInterface;
     
-} catch(e: LicensingException)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORYERROR))
                         
                                     {
                                     
-    var workFlowClassName: string = propertiesHashMap!.get(DynamicObjectData.NAME) as String;
-        
-        
+    var workFlowClassName: string = propertiesHashMap!.get(DynamicObjectData.NAME);
 
+                         as String;
+        
+        
+;
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("Error Creating WorkFlow: ")
-stringBuffer!.append(workFlowClassName)
-stringBuffer!.append("->")
-stringBuffer!.append(instance::class.toString()!)
+;
+    
+stringBuffer!.append("Error Creating WorkFlow: ");
+    
+stringBuffer!.append(workFlowClassName);
+    
+stringBuffer!.append("->");
+    
+stringBuffer!.append(instance.constructor.name.toString()!);
+    
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE, e)
+;
+    
+logUtil!.put(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE, e);
+    
 
                                     }
                                 
@@ -163,32 +193,44 @@ logUtil!.put(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE, e)
 
                             throw e
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORYERROR))
                         
                                     {
                                     
-    var workFlowClassName: string = propertiesHashMap!.get(DynamicObjectData.NAME) as String;
-        
-        
+    var workFlowClassName: string = propertiesHashMap!.get(DynamicObjectData.NAME);
 
+                         as String;
+        
+        
+;
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("Error Creating WorkFlow: ")
-stringBuffer!.append(workFlowClassName)
-stringBuffer!.append("->")
-stringBuffer!.append(instance::class.toString()!)
+;
+    
+stringBuffer!.append("Error Creating WorkFlow: ");
+    
+stringBuffer!.append(workFlowClassName);
+    
+stringBuffer!.append("->");
+    
+stringBuffer!.append(instance.constructor.name.toString()!);
+    
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE, e)
+;
+    
+logUtil!.put(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE, e);
+    
 
                                     }
                                 

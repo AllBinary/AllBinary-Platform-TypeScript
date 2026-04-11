@@ -166,13 +166,15 @@ var rectangle = rectangle
 
     public setMinDimension(minDimension: Dimension){
 var minDimension = minDimension
-this.minDimension= minDimension
+this.minDimension= minDimension;
+    
 }
 
 
     public setMaxDimension(maxDimension: Dimension){
 var maxDimension = maxDimension
-this.maxDimension= maxDimension
+this.maxDimension= maxDimension;
+    
 }
 
 
@@ -188,7 +190,8 @@ this.maxDimension= maxDimension
 
     public setMaxMotionRectangles(maxMotionRectangles: number){
 var maxMotionRectangles = maxMotionRectangles
-this.maxMotionRectangles= maxMotionRectangles
+this.maxMotionRectangles= maxMotionRectangles;
+    
 }
 
 
@@ -204,7 +207,8 @@ this.maxMotionRectangles= maxMotionRectangles
 
     public setMinArea(minArea: number){
 var minArea = minArea
-this.minArea= minArea
+this.minArea= minArea;
+    
 }
 
 

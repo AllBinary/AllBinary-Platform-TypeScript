@@ -62,16 +62,22 @@ var args = args
     var licensingTest: LicenseClientAndServerTest = new LicenseClientAndServerTest(args);
         
         
+;
+    
+licensingTest!.test();
+    
 
-licensingTest!.test()
-} catch(e: Exception)
+                //: 
+} catch(e) 
             {
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
         
         
-
-logUtil!.put(this.commonStrings!.EXCEPTION, "main()", "main()", e)
+;
+    
+logUtil!.put(this.commonStrings!.EXCEPTION, "main()", "main()", e);
+    
 }
 
 }
@@ -88,7 +94,8 @@ public constructor (options: string[]){
 
             super();
             var options = options
-LicenseInitInfoUtil.getInstance()!.setFilePath(PrintLicenseInitInfo.PATH +PATH_GLOBALS.getInstance()!.INIT_PATH)
+LicenseInitInfoUtil.getInstance()!.setFilePath(PrintLicenseInitInfo.PATH +PATH_GLOBALS.getInstance()!.INIT_PATH);
+    
 
 
 
@@ -99,7 +106,8 @@ LicenseInitInfoUtil.getInstance()!.setFilePath(PrintLicenseInitInfo.PATH +PATH_G
         
 index < options.length; index++)
         {
-vector.add(options[index]!)
+vector.add(options[index]!);
+    
 }
 
 
@@ -110,17 +118,20 @@ vector.add(options[index]!)
     var file: File = new File(PrintLicenseInitInfo.PATH +"testlicenseservers.txt");
         
         
-
+;
+    
 
     var reader: FileReader = new FileReader(file);
         
         
-
+;
+    
 
     var lineNumberReader: LineNumberReader = new LineNumberReader(reader);
         
         
-
+;
+    
 
         while(true)
         {
@@ -128,14 +139,16 @@ vector.add(options[index]!)
     var line: string = lineNumberReader!.readLine()!;
         
         
-
+;
+    
 
                         if(line != 
                                     null
                                 )
                         
                                     {
-                                    vector.add(line)
+                                    vector.add(line);
+    
 
                                     }
                                 
@@ -160,39 +173,46 @@ vector.add(options[index]!)
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
         try {
             
     var list: BasicArrayList = new BasicArrayList();
         
         
-
+;
+    
 
     var TESTING: string = "Testing with new licence:<br/>";
         
         
-
+;
+    
 
     var PROCESSING: string = "Processing: <br/>";
         
         
-
+;
+    
 
     var END: string = "<br/>End<br/>";
         
         
-
+;
+    
 
     var RESULT: string = "Test Result: ";
         
         
-
+;
+    
 
     var size: number = vector.size()!;
         
         
-
+;
+    
 
 
 
@@ -203,63 +223,88 @@ vector.add(options[index]!)
         
 index < size; index++)
         {
-stringBuffer!.append(TESTING)
+stringBuffer!.append(TESTING);
+    
 
-    var serverName: string = vector.get(index) as String;
+    var serverName: string = vector.get(index);
+
+                         as String;
         
         
-
+;
+    
 
         try {
             
     var licenseInitInfo: LicenseInitInfo = new LicenseInitInfo();
         
         
-
-licenseInitInfo!.addServer(serverName)
-LicenseInitInfoUtil.getInstance()!.write(licenseInitInfo)
+;
+    
+licenseInitInfo!.addServer(serverName);
+    
+LicenseInitInfoUtil.getInstance()!.write(licenseInitInfo);
+    
 
     var abeClientInformation: AbeClientInformationInterface = AbeClientInformationInterfaceFactory.getInstance()!;
         
         
-
+;
+    
 
     var xmlRpcAbeLicenseClient: XmlRpcAbeLicenseRetrievalClient = new XmlRpcAbeLicenseRetrievalClient(abeClientInformation);
         
         
-
+;
+    
 
     var abeLicenseInterface: AbeLicenseInterface = xmlRpcAbeLicenseClient!.get(
-                            null) as AbeLicenseInterface;
-        
-        
+                            null);
 
+                         as AbeLicenseInterface;
+        
+        
+;
+    
 
                         if(abeLicenseInterface != 
                                     null
                                 )
                         
                                     {
-                                    stringBuffer!.append(PROCESSING)
-stringBuffer!.append(abeLicenseInterface!.toString())
+                                    stringBuffer!.append(PROCESSING);
+    
+stringBuffer!.append(abeLicenseInterface!.toString());
+    
 
                                     }
                                 
-stringBuffer!.append(END)
-logUtil!.put(RESULT +stringBuffer!.toString(), this, "test")
-stringBuffer!.delete(0, stringBuffer!.length())
-} catch(e: Exception)
+stringBuffer!.append(END);
+    
+logUtil!.put(RESULT +stringBuffer!.toString(), this, "test");
+    
+stringBuffer!.delete(0, stringBuffer!.length());
+    
+
+                //: 
+} catch(e) 
             {
-list.add(serverName)
-logUtil!.put("Test Error: " +stringBuffer!.toString(), this, "test", e)
+list.add(serverName);
+    
+logUtil!.put("Test Error: " +stringBuffer!.toString(), this, "test", e);
+    
 }
 
 }
 
-logUtil!.put("Total Servers Failed: " +list.size() +" Failed Servers: " +list.toString(), this, "test")
-} catch(e: Exception)
+logUtil!.put("Total Servers Failed: " +list.size() +" Failed Servers: " +list.toString(), this, "test");
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put("Test Error: " +stringBuffer!.toString(), this, "test", e)
+logUtil!.put("Test Error: " +stringBuffer!.toString(), this, "test", e);
+    
 }
 
 }

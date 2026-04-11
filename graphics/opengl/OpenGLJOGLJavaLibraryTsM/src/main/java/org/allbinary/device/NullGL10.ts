@@ -275,7 +275,7 @@ export class NullGL10
 }
 
 
-    public glDeleteTextures(n: number, textures: IntArray, offset: number){
+    public glDeleteTextures(n: number, textures: number[], offset: number){
     //var n = n
     //var textures = textures
     //var offset = offset
@@ -437,7 +437,7 @@ export class NullGL10
 }
 
 
-    public glFogfv(pname: number, params: FloatArray, offset: number){
+    public glFogfv(pname: number, params: number[], offset: number){
     //var pname = pname
     //var params = params
     //var offset = offset
@@ -489,7 +489,7 @@ export class NullGL10
 }
 
 
-    public glGenTextures(n: number, textures: IntArray, offset: number){
+    public glGenTextures(n: number, textures: number[], offset: number){
     //var n = n
     //var textures = textures
     //var offset = offset
@@ -524,7 +524,7 @@ export class NullGL10
 }
 
 
-    public glGetIntegerv(pname: number, params: IntArray, offset: number){
+    public glGetIntegerv(pname: number, params: number[], offset: number){
     //var pname = pname
     //var params = params
     //var offset = offset
@@ -584,7 +584,7 @@ export class NullGL10
 }
 
 
-    public glLightModelfv(pname: number, params: FloatArray, offset: number){
+    public glLightModelfv(pname: number, params: number[], offset: number){
     //var pname = pname
     //var params = params
     //var offset = offset
@@ -622,7 +622,7 @@ export class NullGL10
 }
 
 
-    public glLightfv(light: number, pname: number, params: FloatArray, offset: number){
+    public glLightfv(light: number, pname: number, params: number[], offset: number){
     //var light = light
     //var pname = pname
     //var params = params
@@ -670,7 +670,7 @@ export class NullGL10
 }
 
 
-    public glLoadMatrixf(m: FloatArray, offset: number){
+    public glLoadMatrixf(m: number[], offset: number){
     //var m = m
     //var offset = offset
 
@@ -717,7 +717,7 @@ export class NullGL10
 }
 
 
-    public glMaterialfv(face: number, pname: number, params: FloatArray, offset: number){
+    public glMaterialfv(face: number, pname: number, params: number[], offset: number){
     //var face = face
     //var pname = pname
     //var params = params
@@ -755,7 +755,7 @@ export class NullGL10
 }
 
 
-    public glMultMatrixf(m: FloatArray, offset: number){
+    public glMultMatrixf(m: number[], offset: number){
     //var m = m
     //var offset = offset
 
@@ -1062,7 +1062,7 @@ export class NullGL10
 }
 
 
-    public glTexEnvfv(target: number, pname: number, params: FloatArray, offset: number){
+    public glTexEnvfv(target: number, pname: number, params: number[], offset: number){
     //var target = target
     //var pname = pname
     //var params = params

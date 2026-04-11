@@ -18,7 +18,10 @@
 
 
 
-import { Vector } from "../../../../../../java/util/Vector.js";
+            import Vector from "@ohos.util.Vector";
+        
+
+//import { Vector } from "../../../../../../java/util/Vector.js";
 
     
 import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
@@ -78,7 +81,8 @@ var group = group
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Started Group: " +group, this, "generateComponentsFromObjectConfig(2)")
+                                    logUtil!.put("Started Group: " +group, this, "generateComponentsFromObjectConfig(2)");
+    
 
                                     }
                                 
@@ -86,17 +90,20 @@ var group = group
     var transformInfoObjectConfigInterface: TransformInfoObjectConfigInterface = transformInfoInterface!.getObjectConfigInterface()!;
         
         
-
+;
+    
 
     var result: string = this.generateComponentsFromObjectConfig(abeClientInformation, transformInfoObjectConfigInterface, transformInfoInterface, group)!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("End Group: " +group, this, "generateComponentsFromObjectConfig(2)")
+                                    logUtil!.put("End Group: " +group, this, "generateComponentsFromObjectConfig(2)");
+    
 
                                     }
                                 
@@ -120,7 +127,8 @@ var group = group
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Started Group: " +group, this, "generateComponentsFromObjectConfig()")
+                                    logUtil!.put("Started Group: " +group, this, "generateComponentsFromObjectConfig()");
+    
 
                                     }
                                 
@@ -128,7 +136,8 @@ var group = group
     var transformInfoObjectConfigComponentVector: Vector = transformInfoObjectConfigInterface!.getTransformsGroup(group)!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
@@ -137,12 +146,18 @@ var group = group
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("Processing ")
-stringBuffer!.appendint(transformInfoObjectConfigComponentVector!.length)
-stringBuffer!.append(" Components Group: ")
-stringBuffer!.append(group)
-logUtil!.put(stringBuffer!.toString(), this, "generateComponentsFromObjectConfig()")
+;
+    
+stringBuffer!.append("Processing ");
+    
+stringBuffer!.appendint(transformInfoObjectConfigComponentVector!.length);
+    
+stringBuffer!.append(" Components Group: ");
+    
+stringBuffer!.append(group);
+    
+logUtil!.put(stringBuffer!.toString(), this, "generateComponentsFromObjectConfig()");
+    
 
                                     }
                                 
@@ -161,7 +176,8 @@ logUtil!.put(stringBuffer!.toString(), this, "generateComponentsFromObjectConfig
     var size: number = transformInfoObjectConfigComponentVector!.length!;
         
         
-
+;
+    
 
 
 
@@ -173,18 +189,23 @@ logUtil!.put(stringBuffer!.toString(), this, "generateComponentsFromObjectConfig
 index < size; index++)
         {
 
-    var transformInfoObjectConfigComponent: TransformInfoDomNode = transformInfoObjectConfigComponentVector!.get(index) as TransformInfoDomNode;
-        
-        
+    var transformInfoObjectConfigComponent: TransformInfoDomNode = transformInfoObjectConfigComponentVector!.get(index);
 
-TransformGeneratorUtil.getInstance()!.generate(abeClientInformation, transformInfoObjectConfigComponent, transformInfoInterface)
+                         as TransformInfoDomNode;
+        
+        
+;
+    
+TransformGeneratorUtil.getInstance()!.generate(abeClientInformation, transformInfoObjectConfigComponent, transformInfoInterface);
+    
 }
 
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Done Group: " +group, this, "generateComponentsFromObjectConfig()")
+                                    logUtil!.put("Done Group: " +group, this, "generateComponentsFromObjectConfig()");
+    
 
                                     }
                                 
@@ -192,15 +213,21 @@ TransformGeneratorUtil.getInstance()!.generate(abeClientInformation, transformIn
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("<!-- Generated all template views successfully for View: ")
-stringBuffer!.append(transformInfoInterface!.getName())
-stringBuffer!.append("-->")
+;
+    
+stringBuffer!.append("<!-- Generated all template views successfully for View: ");
+    
+stringBuffer!.append(transformInfoInterface!.getName());
+    
+stringBuffer!.append("-->");
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

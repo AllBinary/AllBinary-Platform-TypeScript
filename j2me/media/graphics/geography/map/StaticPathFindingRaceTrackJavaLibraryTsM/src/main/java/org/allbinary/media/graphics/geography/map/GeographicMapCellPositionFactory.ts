@@ -18,7 +18,10 @@
 
 
 
-import { Hashtable } from "../../../../../../java/util/Hashtable.js";
+            import Hashtable from "@ohos.util.HashMap";
+        
+
+//import { Hashtable } from "../../../../../../java/util/Hashtable.js";
 
     
 import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStrings.js";
@@ -37,11 +40,11 @@ import { StringMaker } from "../../../../../../org/allbinary/logic/string/String
 export class GeographicMapCellPositionFactory extends GeographicMapCellPositionBaseFactory {
         
 
-    private static readonly hashtable: Hashtable<Any, Any> = new Hashtable<Any, Any>();
+    private static readonly hashtable: Hashtable<any, any> = new Hashtable<any, any>();
         
         
 
-    public static getHashtable(): Hashtable<Any, Any>{
+    public static getHashtable(): Hashtable<any, any>{
 
 
 
@@ -63,17 +66,20 @@ export class GeographicMapCellPositionFactory extends GeographicMapCellPositionB
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
+;
+    
 
     var allBinaryTiledLayer: AllBinaryTiledLayer = geographicMapInterface!.getAllBinaryTiledLayer()!;
         
         
-
+;
+    
 
     var geographicMapCellPositionFactoryCanBeNull: any = {}? = hashtable.get(allBinaryTiledLayer!.getDataId());
         
         
-
+;
+    
 
                         if(geographicMapCellPositionFactoryCanBeNull == 
                                     null
@@ -81,9 +87,12 @@ export class GeographicMapCellPositionFactory extends GeographicMapCellPositionB
                         
                                     {
                                     logUtil!.put(StringMaker().
-                            append("Creating GeographicMapCellPositionFactory for TileLayer: ")!.appendint(allBinaryTiledLayer!.getDataId()!.toInt())!.toString(), this, commonStrings!.GET_INSTANCE)
-geographicMapCellPositionFactoryCanBeNull= BasicGeographicMapCellPositionFactory(geographicMapInterface)
-hashtable.put(allBinaryTiledLayer!.getDataId(), geographicMapCellPositionFactoryCanBeNull)
+                            append("Creating GeographicMapCellPositionFactory for TileLayer: ")!.appendint(allBinaryTiledLayer!.getDataId()!.toInt())!.toString(), this, commonStrings!.GET_INSTANCE);
+    
+geographicMapCellPositionFactoryCanBeNull= BasicGeographicMapCellPositionFactory(geographicMapInterface);
+    
+hashtable.put(allBinaryTiledLayer!.getDataId(), geographicMapCellPositionFactoryCanBeNull);
+    
 
 
 
@@ -95,7 +104,8 @@ hashtable.put(allBinaryTiledLayer!.getDataId(), geographicMapCellPositionFactory
                                 
                         else {
                             logUtil!.put(StringMaker().
-                            append("Reusing GeographicMapCellPositionFactory for TileLayer: ")!.appendint(allBinaryTiledLayer!.getDataId()!.toInt())!.toString(), this, commonStrings!.GET_INSTANCE)
+                            append("Reusing GeographicMapCellPositionFactory for TileLayer: ")!.appendint(allBinaryTiledLayer!.getDataId()!.toInt())!.toString(), this, commonStrings!.GET_INSTANCE);
+    
 
 
 

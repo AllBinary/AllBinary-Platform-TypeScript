@@ -18,7 +18,10 @@
 
 
 
-import { Hashtable } from "../../../../../java/util/Hashtable.js";
+            import Hashtable from "@ohos.util.HashMap";
+        
+
+//import { Hashtable } from "../../../../../java/util/Hashtable.js";
 
     
 import { Set } from "../../../../../java/util/Set.js";
@@ -61,43 +64,51 @@ var motionRectangleConstraintsInterface = motionRectangleConstraintsInterface
 
                             //For kotlin this is before the body of the constructor.
                     
-logUtil!.put("BasicTestAttackWorder", this, this.commonStrings!.CONSTRUCTOR)
-this.sleep= sleep
+logUtil!.put("BasicTestAttackWorder", this, this.commonStrings!.CONSTRUCTOR);
+    
+this.sleep= sleep;
+    
 }
 
 
                 //@Throws(Error::class)
             
     public processBetweenWorkers(){
-Thread.sleep(2000)
+Thread.sleep(2000);
+    
 }
 
 
                 //@Throws(Error::class)
             
     public process(){
-logUtil!.put(this.commonStrings!.START, this, commonStrings!.PROCESS)
+logUtil!.put(this.commonStrings!.START, this, commonStrings!.PROCESS);
+    
 
-    var hashtable: Hashtable<Any, Any> = InputRobotFactory.getInstance()!.get()!;
+    var hashtable: Hashtable<any, any> = InputRobotFactory.getInstance()!.get()!;
         
         
-
+;
+    
 
     var set: Set = hashtable.keys!;
         
         
+;
+    
 
-
-    var inputTypeNameArray: any = {}[] = set.toArray()!;
+    var inputTypeNameArray: any[] = set.toArray()!;
         
         
-
+;
+    
 
     var size: number = inputTypeNameArray!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -112,17 +123,22 @@ index < size; index++)
     var inputTypeNameString: string = inputTypeNameArray[index]! as String;
         
         
+;
+    
 
+    var robot: InputRobotInterface = hashtable.get(inputTypeNameString as Object);
 
-    var robot: InputRobotInterface = hashtable.get(inputTypeNameString as Object) as InputRobotInterface;
+                         as InputRobotInterface;
         
         
-
+;
+    
 
                         if(this.sleep > 0)
                         
                                     {
-                                    Thread.sleep(this.sleep)
+                                    Thread.sleep(this.sleep);
+    
 
                                     }
                                 

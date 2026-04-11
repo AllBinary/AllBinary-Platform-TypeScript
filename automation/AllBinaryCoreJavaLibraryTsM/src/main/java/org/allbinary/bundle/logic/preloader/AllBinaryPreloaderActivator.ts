@@ -18,7 +18,10 @@
 
 
 
-import { Hashtable } from "../../../../../java/util/Hashtable.js";
+            import Hashtable from "@ohos.util.HashMap";
+        
+
+//import { Hashtable } from "../../../../../java/util/Hashtable.js";
 
     
 import { BundleActivator } from "../../../../../org/osgi/framework/BundleActivator.js";
@@ -84,12 +87,18 @@ public constructor (){
 var context = context
 
         try {
-            logUtil!.put(this.commonStrings!.START, this, "start")
-AllBinaryPreloaderActivator.context= context
-this.registerAsService()
-} catch(e: Exception)
+            logUtil!.put(this.commonStrings!.START, this, "start");
+    
+AllBinaryPreloaderActivator.context= context;
+    
+this.registerAsService();
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, this, "start", e)
+logUtil!.put(this.commonStrings!.EXCEPTION, this, "start", e);
+    
 
 
 
@@ -103,21 +112,25 @@ logUtil!.put(this.commonStrings!.EXCEPTION, this, "start", e)
             
     public registerAsService(){
 
-    var properties: Hashtable<Any, Any> = new Hashtable<Any, Any>();
+    var properties: Hashtable<any, any> = new Hashtable<any, any>();
         
         
-
+;
+    
 
     var serviceRegistration: ServiceRegistration = context.registerService(CRYPT_REGISTRY_NAME, CryptServiceFactory(), properties)!;
         
         
-
+;
+    
 
     var serviceReference: ServiceReference = serviceRegistration!.getReference()!;
         
         
-
-serviceReference= context.getServiceReference(CRYPT_REGISTRY_NAME)
+;
+    
+serviceReference= context.getServiceReference(CRYPT_REGISTRY_NAME);
+    
 
                         if(serviceReference == 
                                     null
@@ -131,7 +144,8 @@ serviceReference= context.getServiceReference(CRYPT_REGISTRY_NAME)
             
     public stop(context: BundleContext){
 var context = context
-logUtil!.put(this.commonStrings!.START, this, "stop")
+logUtil!.put(this.commonStrings!.START, this, "stop");
+    
 }
 
 

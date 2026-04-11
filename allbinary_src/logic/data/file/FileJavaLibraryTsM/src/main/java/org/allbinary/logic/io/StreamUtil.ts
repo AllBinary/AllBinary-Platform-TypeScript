@@ -67,7 +67,7 @@ private constructor (){
 
                 //@Throws(Error::class)
             
-    public get(inputStream: InputStream, outputStream: OutputStream, buffer: ByteArray): OutputStream{
+    public get(inputStream: InputStream, outputStream: OutputStream, buffer: number[]): OutputStream{
     //var inputStream = inputStream
     //var outputStream = outputStream
 var buffer = buffer
@@ -75,11 +75,13 @@ var buffer = buffer
     var len: number = 0;
         
         
-
+;
+    
 
         while(true)
         {
-len= inputStream!.read(buffer, 0, buffer.length)
+len= inputStream!.read(buffer, 0, buffer.length);
+    
 
                         if(len !=  -1)
                         
@@ -94,7 +96,8 @@ len= inputStream!.read(buffer, 0, buffer.length)
 
                         }
                             
-outputStream!.write(buffer, 0, len)
+outputStream!.write(buffer, 0, len);
+    
 }
 
 
@@ -108,7 +111,7 @@ outputStream!.write(buffer, 0, len)
 
                 //@Throws(Error::class)
             
-    public getByteArray(inputStream: InputStream, outputStream2: ByteArrayOutputStream, byteArray: ByteArray): ByteArray{
+    public getByteArray(inputStream: InputStream, outputStream2: ByteArrayOutputStream, byteArray: number[]): number[]{
     //var inputStream = inputStream
     //var outputStream2 = outputStream2
     //var byteArray = byteArray
@@ -116,17 +119,23 @@ outputStream!.write(buffer, 0, len)
     var outputStream: ByteArrayOutputStream = outputStream2;
         
         
-
+;
+    
 
         try {
-            this.get(inputStream, outputStream, byteArray)
+            this.get(inputStream, outputStream, byteArray);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return outputStream!.toByteArray();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
 
@@ -135,7 +144,8 @@ outputStream!.write(buffer, 0, len)
 }
 
          finally {
-            this.close(outputStream)
+            this.close(outputStream);
+    
 
          }
         
@@ -152,7 +162,8 @@ var closeable = closeable
                                 )
                         
                                     {
-                                    closeable.close()
+                                    closeable.close();
+    
 
                                     }
                                 
@@ -162,14 +173,18 @@ var closeable = closeable
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return true;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CLOSE, e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CLOSE, e);
+    
 
 
 

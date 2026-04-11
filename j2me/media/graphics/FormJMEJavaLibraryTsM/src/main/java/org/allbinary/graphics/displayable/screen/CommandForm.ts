@@ -79,7 +79,7 @@ export class CommandForm extends Form
         
         
 
-    private commandStack: Stack<Any>
+    private commandStack: Stack<any>
 public constructor (commandListener: CommandListener, formTitle: string, backgrounBasicColor: BasicColor, foregroundBasicColor: BasicColor)                        
 
                             : super(formTitle){
@@ -93,13 +93,18 @@ var foregroundBasicColor = foregroundBasicColor
 
                             //For kotlin this is before the body of the constructor.
                     
-this.commandStack= Stack<Any>()
+this.commandStack= Stack<any>();
+    
 
         try {
-            repaintProcessor!.process()
-} catch(e: Exception)
+            repaintProcessor!.process();
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e);
+    
 }
 
 }
@@ -111,19 +116,22 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
 
 
     public open(){
-logUtil!.put(this.commonStrings!.START, this, "open")
+logUtil!.put(this.commonStrings!.START, this, "open");
+    
 }
 
 
     public close(){
-logUtil!.put(this.commonStrings!.START, this, commonStrings!.CLOSE)
+logUtil!.put(this.commonStrings!.START, this, commonStrings!.CLOSE);
+    
 }
 
 
                 //@Throws(Error::class)
             
     public update(){
-this.repaintProcessor!.process()
+this.repaintProcessor!.process();
+    
 }
 
 
@@ -139,8 +147,10 @@ this.repaintProcessor!.process()
 
     public addCommand(command: Command){
 var command = command
-commandStack!.push(command)
-super.addCommand(command)
+commandStack!.push(command);
+    
+super.addCommand(command);
+    
 }
 
 
@@ -149,7 +159,8 @@ super.addCommand(command)
     var size: number = commandStack!.length!;
         
         
-
+;
+    
 
 
 
@@ -160,7 +171,10 @@ super.addCommand(command)
         
 index < size; index++)
         {
-super.removeCommand(commandStack!.pop() as Command)
+super.removeCommand(commandStack!.pop();
+
+                         as Command);
+    
 }
 
 }

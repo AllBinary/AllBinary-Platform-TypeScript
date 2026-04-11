@@ -48,17 +48,21 @@ export class AllBinaryRendererBase3
         while(list.size() > 0)
         {
 
-    var openGLESImage: OpenGLESImage = list.remove(0) as OpenGLESImage;
-        
-        
+    var openGLESImage: OpenGLESImage = list.remove(0);
 
+                         as OpenGLESImage;
+        
+        
+;
+    
 
                         if(openGLESImage != 
                                     null
                                 )
                         
                                     {
-                                    openGLESImage!.set(gl)
+                                    openGLESImage!.set(gl);
+    
 
                                     }
                                 
@@ -69,7 +73,8 @@ export class AllBinaryRendererBase3
 
     public add(image: Image){
     //var image = image
-this.list.add(image)
+this.list.add(image);
+    
 }
 
 

@@ -168,7 +168,8 @@ export inner class NotHTMLProcessor extends Processor {
 
 
     public process(){
-concurrentImageLoadingProcessor!.runTask()
+concurrentImageLoadingProcessor!.runTask();
+    
 }
 
 
@@ -185,8 +186,10 @@ export inner class NotHTMLEndProcessor extends Processor {
     var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
         
         
-
-progressCanvas!.endIfPaintedSinceStart()
+;
+    
+progressCanvas!.endIfPaintedSinceStart();
+    
 }
 
 
@@ -203,7 +206,8 @@ export inner class HTMLEndProcessor extends Processor {
     var size: number = gdResources!.currentLayoutRequiredTotal;
         
         
-
+;
+    
 
                     //Otherwise - statement - EmptyStmt
 
@@ -215,8 +219,10 @@ export inner class HTMLEndProcessor extends Processor {
     var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
         
         
-
-progressCanvas!.endIfPaintedSinceStart()
+;
+    
+progressCanvas!.endIfPaintedSinceStart();
+    
 
                                     }
                                 
@@ -228,9 +234,12 @@ progressCanvas!.endIfPaintedSinceStart()
     var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
         
         
-
-progressCanvas!.endIfPaintedSinceStart()
-endProcessor= NotHTMLEndProcessor()
+;
+    
+progressCanvas!.endIfPaintedSinceStart();
+    
+endProcessor= NotHTMLEndProcessor();
+    
 
                                     }
                                 
@@ -250,25 +259,34 @@ export inner class FirstProcessor extends Processor {
     var isHTML: boolean = J2MEUtil.isHTML()!;
         
         
-
+;
+    
 
                         if(isHTML)
                         
                                     {
-                                    processor= Processor.getInstance()
-endProcessor= HTMLEndProcessor()
+                                    processor= Processor.getInstance();
+    
+endProcessor= HTMLEndProcessor();
+    
 
                                     }
                                 
                         else {
-                            processor= NotHTMLProcessor()
-endProcessor= NotHTMLEndProcessor()
+                            processor= NotHTMLProcessor();
+    
+endProcessor= NotHTMLEndProcessor();
+    
 
         try {
-            runTask()
-} catch(e: Exception)
+            runTask();
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.END_METHOD_NAME)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.END_METHOD_NAME);
+    
 }
 
 
@@ -309,19 +327,25 @@ var renderer = renderer
     var abToGBUtil: ABToGBUtil = ABToGBUtil.getInstance()!;
         
         
-
+;
+    
 
     var abCanvas: AllBinaryGameCanvas = abToGBUtil!.abCanvas as AllBinaryGameCanvas;
         
         
+;
+    
 
+        while(loadNowList!.isEmpty() && (!abCanvas!.isInitialized();
 
-        while(loadNowList!.isEmpty() && (!abCanvas!.isInitialized() || (abCanvas!.isInitialized() && this.hasAnyLazyAnimationFactories)) && !this.progressEnded)
+                         || (abCanvas!.isInitialized() && this.hasAnyLazyAnimationFactories)) && !this.progressEnded)
         {
-Thread.sleep(120)
+Thread.sleep(120);
+    
 }
 
-firstTime= false
+firstTime= false;
+    
 
                                     }
                                 
@@ -341,7 +365,8 @@ firstTime= false
             ;
         
         
-
+;
+    
 
         
         //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
@@ -353,7 +378,8 @@ firstTime= false
                         if(loadNowList!.isEmpty())
                         
                                     {
-                                    this.endProcessor!.process()
+                                    this.endProcessor!.process();
+    
 
                         if(loadSoonList!.isEmpty())
                         
@@ -377,7 +403,8 @@ firstTime= false
                                     }
                                 
                         else {
-                            loadImage()
+                            loadImage();
+    
 
                         }
                             
@@ -391,12 +418,16 @@ firstTime= false
                                     }
                                 
                         else {
-                            lazyImageRotationAnimation= this.loadAfterList!.get(0) as LazyImageRotationAnimation
+                            lazyImageRotationAnimation= this.loadAfterList!.get(0);
+
+                         as LazyImageRotationAnimation;
+    
 
                         if(this.loadImageForAnimation(lazyImageRotationAnimation))
                         
                                     {
-                                    loadAfterList!.remove(lazyImageRotationAnimation)
+                                    loadAfterList!.remove(lazyImageRotationAnimation);
+    
 
                                     }
                                 
@@ -407,12 +438,16 @@ firstTime= false
                                     }
                                 
                         else {
-                            lazyImageRotationAnimation= this.loadSoonList!.get(0) as LazyImageRotationAnimation
+                            lazyImageRotationAnimation= this.loadSoonList!.get(0);
+
+                         as LazyImageRotationAnimation;
+    
 
                         if(this.loadImageForAnimation(lazyImageRotationAnimation))
                         
                                     {
-                                    loadSoonList!.remove(lazyImageRotationAnimation)
+                                    loadSoonList!.remove(lazyImageRotationAnimation);
+    
 
                                     }
                                 
@@ -428,7 +463,10 @@ firstTime= false
 
                                     }
                                 
-lazyImageRotationAnimation= loadNowList!.get(0) as LazyImageRotationAnimation
+lazyImageRotationAnimation= loadNowList!.get(0);
+
+                         as LazyImageRotationAnimation;
+    
 }
 
 
@@ -442,7 +480,8 @@ lazyImageRotationAnimation= loadNowList!.get(0) as LazyImageRotationAnimation
 
         //mutex.withLock
         {
-loadNowList!.remove(lazyImageRotationAnimation)
+loadNowList!.remove(lazyImageRotationAnimation);
+    
 }
 
 
@@ -453,7 +492,8 @@ loadNowList!.remove(lazyImageRotationAnimation)
     var list: BasicArrayList = this.getAssociated(lazyImageRotationAnimation)!;
         
         
-
+;
+    
 
         
         //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
@@ -465,12 +505,14 @@ loadNowList!.remove(lazyImageRotationAnimation)
     var size: number = list.size()!;
         
         
-
+;
+    
 
                         if(size > 0)
                         
                                     {
-                                    loadSoonList!.addAll(list)
+                                    loadSoonList!.addAll(list);
+    
 
                                     }
                                 
@@ -483,17 +525,20 @@ loadNowList!.remove(lazyImageRotationAnimation)
     var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
         
         
-
+;
+    
 
     var isHTML: boolean = J2MEUtil.isHTML()!;
         
         
-
+;
+    
 
                         if(this.loadNowList!.isEmpty() && (!isHTML || this.firstTime))
                         
                                     {
-                                    progressCanvas!.endFromInitialLazyLoadingComplete()
+                                    progressCanvas!.endFromInitialLazyLoadingComplete();
+    
 
                                     }
                                 
@@ -502,7 +547,8 @@ loadNowList!.remove(lazyImageRotationAnimation)
                         if(this.totalLoaded % 10 == 0)
                         
                                     {
-                                    progressCanvas!.addPortion(1, LOAD_IMAGE_FOR_ANIMATION)
+                                    progressCanvas!.addPortion(1, LOAD_IMAGE_FOR_ANIMATION);
+    
 
                                     }
                                 
@@ -519,10 +565,16 @@ loadNowList!.remove(lazyImageRotationAnimation)
             
     public loadImages(){
 
-        while(!loadList!.isEmpty() || !loadNowList!.isEmpty())
+        while(!loadList!.isEmpty();
+
+                         || !loadNowList!.isEmpty();
+
+                        )
         {
-loadImageForAnimations()
-loadImage()
+loadImageForAnimations();
+    
+loadImage();
+    
 }
 
 }
@@ -532,9 +584,12 @@ loadImage()
             
     public loadImageForAnimations(){
 
-        while(!loadNowList!.isEmpty())
+        while(!loadNowList!.isEmpty();
+
+                        )
         {
-loadImageForAnimation()
+loadImageForAnimation();
+    
 }
 
 }
@@ -544,12 +599,19 @@ loadImageForAnimation()
             
     public loadRemainingAnimations(){
 
-        while(!this.loadAfterList!.isEmpty() || !this.loadNowList!.isEmpty())
+        while(!this.loadAfterList!.isEmpty();
+
+                         || !this.loadNowList!.isEmpty();
+
+                        )
         {
 
-        while(!loadNowList!.isEmpty())
+        while(!loadNowList!.isEmpty();
+
+                        )
         {
-loadImageForAnimation()
+loadImageForAnimation();
+    
 }
 
 
@@ -558,7 +620,8 @@ loadImageForAnimation()
             ;
         
         
-
+;
+    
 
         
         //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
@@ -567,8 +630,12 @@ loadImageForAnimation()
         //mutex.withLock
         {
 
-                        if(!this.loadAfterList!.isEmpty())
-                        lazyImageRotationAnimation= this.loadAfterList!.remove(0) as LazyImageRotationAnimation
+                        if(!this.loadAfterList!.isEmpty();
+
+                        )
+                        lazyImageRotationAnimation= this.loadAfterList!.remove(0);
+
+                         as LazyImageRotationAnimation
 }
 
 
@@ -577,7 +644,8 @@ loadImageForAnimation()
                                 )
                         
                                     {
-                                    this.loadImageForAnimation(lazyImageRotationAnimation)
+                                    this.loadImageForAnimation(lazyImageRotationAnimation);
+    
 
                                     }
                                 
@@ -594,12 +662,14 @@ loadImageForAnimation()
     var image: Image = lazyImageRotationAnimation!.animationInterfaceFactoryInterface!.getImage()!;
         
         
-
+;
+    
 
                         if(this.loadImage(image))
                         
                                     {
-                                    lazyImageRotationAnimation!.setRealAnimation()
+                                    lazyImageRotationAnimation!.setRealAnimation();
+    
 
 
 
@@ -627,7 +697,8 @@ loadImageForAnimation()
             ;
         
         
-
+;
+    
 
         
         //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
@@ -648,10 +719,14 @@ loadImageForAnimation()
 
                                     }
                                 
-image= loadList!.remove(0) as Image
+image= loadList!.remove(0);
+
+                         as Image;
+    
 }
 
-this.loadImage(image)
+this.loadImage(image);
+    
 }
 
 
@@ -683,7 +758,8 @@ this.loadImage(image)
                         if(image.setReady())
                         
                                     {
-                                    this.totalLoaded++
+                                    this.totalLoaded++;
+    
 
 
 
@@ -701,17 +777,20 @@ this.loadImage(image)
     var key: string = image.getName()!;
         
         
-
+;
+    
 
     var image2: Image = this.creatImage(key)!;
         
         
-
+;
+    
 
                         if(image2.isReady())
                         
                                     {
-                                    this.init(image, image2)
+                                    this.init(image, image2);
+    
 
 
 
@@ -722,7 +801,8 @@ this.loadImage(image)
                                     }
                                 
                         else {
-                            image.setImage(image2.getImage())
+                            image.setImage(image2.getImage());
+    
 
                         }
                             
@@ -746,7 +826,8 @@ this.loadImage(image)
     init(image: Image, image2: Image){
     //var image = image
     //var image2 = image2
-image.init(image2.getImage())
+image.init(image2.getImage());
+    
 }
 
 
@@ -758,13 +839,16 @@ image.init(image2.getImage())
     var inputStream: InputStream = resourceUtil!.getResourceAsStream(key)!;
         
         
-
+;
+    
 
     var image: Image = Image.createImage(inputStream)!;
         
         
-
-image.setName(key)
+;
+    
+image.setName(key);
+    
 
 
 
@@ -784,27 +868,33 @@ image.setName(key)
     var foundIndex: number = this.getIndex(width, height)!;
         
         
-
+;
+    
 
     var image: Image = this.getFromAvailable(foundIndex, width, height)!;
         
         
-
+;
+    
 
                         if(image == NullCanvas.NULL_IMAGE)
                         
                                     {
-                                    volume += width *height
+                                    volume += width *height;
+    
 
                         if(volume > 32000)
                         
                                     {
-                                    System.gc()
-volume= 0
+                                    System.gc();
+    
+volume= 0;
+    
 
                                     }
                                 
-image= this.createImage(caller, width, height)
+image= this.createImage(caller, width, height);
+    
 
                         if(nextIndex > widths.length -1)
                         
@@ -813,14 +903,19 @@ image= this.createImage(caller, width, height)
                         if(foundIndex ==  -1)
                         
                                     {
-                                    foundIndex= nextIndex
-widths[nextIndex]= width
-heights[nextIndex]= height
-nextIndex++
+                                    foundIndex= nextIndex;
+    
+widths[nextIndex]= width;
+    
+heights[nextIndex]= height;
+    
+nextIndex++;
+    
 
                                     }
                                 
-listOfList[foundIndex]!.add(image)
+listOfList[foundIndex]!.add(image);
+    
 
                                     }
                                 
@@ -844,7 +939,8 @@ listOfList[foundIndex]!.add(image)
     var image: Image = this.getImage(key)!;
         
         
-
+;
+    
 
                         if(image == NullCanvas.NULL_IMAGE)
                         
@@ -855,23 +951,35 @@ listOfList[foundIndex]!.add(image)
             ;
         
         
-
+;
+    
 
         try {
-            image= this.createImage(key, inputStream)
-} catch(e: Exception)
+            image= this.createImage(key, inputStream);
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put("Exception: Trying Again After GC", this, commonStrings!.GET, e)
+logUtil!.put("Exception: Trying Again After GC", this, commonStrings!.GET, e);
+    
 logUtil!.put(StringMaker().
-                            append("InputStream: ")!.append(StringUtil.getInstance()!.toString(inputStream))!.toString(), this, commonStrings!.GET)
-System.gc()
-System.gc()
-logUtil!.put(Memory.getInfo(), this, commonStrings!.GET)
-Thread.sleep(100)
-image= this.createImage(key, inputStream)
+                            append("InputStream: ")!.append(StringUtil.getInstance()!.toString(inputStream))!.toString(), this, commonStrings!.GET);
+    
+System.gc();
+    
+System.gc();
+    
+logUtil!.put(Memory.getInfo(), this, commonStrings!.GET);
+    
+Thread.sleep(100);
+    
+image= this.createImage(key, inputStream);
+    
 }
 
-this.hashtable.put(key, image)
+this.hashtable.put(key, image);
+    
 
                                     }
                                 
@@ -890,18 +998,21 @@ this.hashtable.put(key, image)
     var gdResources: GDResources = GDResources.getInstance()!;
         
         
-
+;
+    
 
     var resourceStringArray: string[] = gdResources!.resourceStringArray;
         
         
-
+;
+    
 
     var size: number = resourceStringArray!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -928,7 +1039,8 @@ index < size; index++)
 }
 
 logUtil!.put(StringMaker().
-                            append("unable to find key: ")!.append(StringUtil.getInstance()!.toString(key))!.toString(), this, commonStrings!.RUN)
+                            append("unable to find key: ")!.append(StringUtil.getInstance()!.toString(key))!.toString(), this, commonStrings!.RUN);
+    
 
 
 
@@ -945,18 +1057,21 @@ logUtil!.put(StringMaker().
     var gdLazyResources: GDLazyResources = GDLazyResources.getInstance()!;
         
         
-
+;
+    
 
     var resourceStringArray: string[] = gdLazyResources!.requiredResourcesBeforeLoadingArray;
         
         
-
+;
+    
 
     var size: number = resourceStringArray!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -976,33 +1091,40 @@ index < size; index++)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.creatImage(key as String);
+
+                        ;
     
 
                                     }
                                 
 }
 
-this.runTask()
+this.runTask();
+    
 
     var index: number = this.getIndex(key)!;
         
         
-
+;
+    
 
     var width: number = gdLazyResources!.imageResourceWidthArray[index]!;
         
         
-
+;
+    
 
     var height: number = gdLazyResources!.imageResourceHeightArray[index]!;
         
         
-
+;
+    
 
     var image: Image = this.createImageLater(key as String, width, height)!;
         
         
-
+;
+    
 
         
         //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
@@ -1010,7 +1132,8 @@ this.runTask()
 
         //mutex.withLock
         {
-loadList!.add(image)
+loadList!.add(image);
+    
 }
 
 
@@ -1033,6 +1156,8 @@ loadList!.add(image)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return Image.createImageLater(key, width, height);
+
+                        ;
     
 }
 
@@ -1043,7 +1168,8 @@ loadList!.add(image)
     var list: BasicArrayList = new BasicArrayList();
         
         
-
+;
+    
 
         
         //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
@@ -1057,12 +1183,14 @@ loadList!.add(image)
             ;
         
         
-
+;
+    
 
     var size: number = this.loadAfterList!.size()!;
         
         
-
+;
+    
 
 
 
@@ -1073,12 +1201,16 @@ loadList!.add(image)
         
 index < size; index++)
         {
-lazyImageRotationAnimation2= this.loadAfterList!.get(index) as LazyImageRotationAnimation
+lazyImageRotationAnimation2= this.loadAfterList!.get(index);
+
+                         as LazyImageRotationAnimation;
+    
 
                         if(lazyImageRotationAnimation2!.instanceId == lazyImageRotationAnimation!.instanceId)
                         
                                     {
-                                    list.add(lazyImageRotationAnimation2)
+                                    list.add(lazyImageRotationAnimation2);
+    
 
                                     }
                                 
@@ -1088,7 +1220,8 @@ lazyImageRotationAnimation2= this.loadAfterList!.get(index) as LazyImageRotation
     var size2: number = list.size()!;
         
         
-
+;
+    
 
 
 
@@ -1099,7 +1232,8 @@ lazyImageRotationAnimation2= this.loadAfterList!.get(index) as LazyImageRotation
         
 index < size2; index++)
         {
-this.loadAfterList!.remove(list.get(index))
+this.loadAfterList!.remove(list.get(index));
+    
 }
 
 }
@@ -1122,7 +1256,8 @@ this.loadAfterList!.remove(list.get(index))
 
         //mutex.withLock
         {
-this.loadAfterList!.add(lazyImageRotationAnimation)
+this.loadAfterList!.add(lazyImageRotationAnimation);
+    
 }
 
 }
@@ -1147,26 +1282,31 @@ this.loadAfterList!.add(lazyImageRotationAnimation)
 
         //mutex.withLock
         {
-this.loadNowList!.add(lazyImageRotationAnimation)
-this.loadAfterList!.remove(lazyImageRotationAnimation)
+this.loadNowList!.add(lazyImageRotationAnimation);
+    
+this.loadAfterList!.remove(lazyImageRotationAnimation);
+    
 }
 
 
                         }
                             
-this.runTask()
+this.runTask();
+    
 }
 
 
     public progressEnded(){
-this.progressEnded= true
+this.progressEnded= true;
+    
 }
 
 
                 //@Throws(Error::class)
             
     public runTask(){
-this.processor.process()
+this.processor.process();
+    
 }
 
 
@@ -1175,7 +1315,8 @@ this.processor.process()
                         if(firstTime)
                         
                                     {
-                                    firstTime= false
+                                    firstTime= false;
+    
 
                                     }
                                 

@@ -54,8 +54,10 @@ public constructor (fileName: string){
 
             super();
             var fileName = fileName
-this.fileName= fileName
-string= FileUtil.getInstance()!.readAsString(fileName)
+this.fileName= fileName;
+    
+string= FileUtil.getInstance()!.readAsString(fileName);
+    
 }
 
 
@@ -67,26 +69,32 @@ var text = text
     var idFile: FileOutputStream = new FileOutputStream(this.fileName);
         
         
-
+;
+    
 
     var idOutData: DataOutputStream = new DataOutputStream(idFile);
         
         
-
-idOutData!.writeBytes(text +this.string)
+;
+    
+idOutData!.writeBytes(text +this.string);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return true;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.IDLOGGING))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "insertAtBeginning", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "insertAtBeginning", e);
+    
 
                                     }
                                 
@@ -110,12 +118,14 @@ var after = after
     var index: number = this.string.indexOf(after)!;
         
         
-
+;
+    
 
                         if(index < 0)
                         
                                     {
-                                    System.out.println("No such start: " +after +" in: " +this.string)
+                                    System.out.println("No such start: " +after +" in: " +this.string);
+    
 
 
 
@@ -125,43 +135,54 @@ var after = after
 
                                     }
                                 
-index= index +after.length
+index= index +after.length;
+    
 
     var start: string = this.string.substring(0, index)!;
         
         
-
+;
+    
 
     var end: string = this.string.substring(index +1, this.string.length)!;
         
         
-
+;
+    
 
     var idFile: FileOutputStream = new FileOutputStream(this.fileName);
         
         
-
+;
+    
 
     var idOutData: DataOutputStream = new DataOutputStream(idFile);
         
         
-
-idOutData!.writeBytes(start +text +end)
-idOutData!.close()
-idFile!.close()
+;
+    
+idOutData!.writeBytes(start +text +end);
+    
+idOutData!.close();
+    
+idFile!.close();
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return true;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.IDLOGGING))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "after", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "after", e);
+    
 
                                     }
                                 
@@ -184,26 +205,32 @@ var text = text
     var idFile: FileOutputStream = new FileOutputStream(this.fileName);
         
         
-
+;
+    
 
     var idOutData: DataOutputStream = new DataOutputStream(idFile);
         
         
-
-idOutData!.writeBytes(this.string +text)
+;
+    
+idOutData!.writeBytes(this.string +text);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return true;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.IDLOGGING))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "insertAtEnd", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "insertAtEnd", e);
+    
 
                                     }
                                 

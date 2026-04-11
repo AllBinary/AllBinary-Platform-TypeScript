@@ -54,7 +54,8 @@ export class ColorFillPaintableFactory
     var operatingSystem: GenericOperatingSystem = OperatingSystemFactory.getInstance()!.getOperatingSystemInstance()!;
         
         
-
+;
+    
 
                         if(operatingSystem!.isOverScan())
                         

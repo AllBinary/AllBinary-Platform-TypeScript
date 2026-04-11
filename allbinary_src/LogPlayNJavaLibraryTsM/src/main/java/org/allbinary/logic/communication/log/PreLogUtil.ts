@@ -47,25 +47,30 @@ import { PlayN } from "../../../../../playn/core/PlayN.js";
     var className: string = PreLogUtil.getClassName(anyType)!;
         
         
-
+;
+    
 
                         if(className == 
                                     null
                                 )
                         
                                     {
-                                    className= CommonStrings.getInstance()!.EMPTY
+                                    className= CommonStrings.getInstance()!.EMPTY;
+    
 
                                     }
                                 
 className= StringMaker().
-                            append(className)!.append(CommonSeps.getInstance()!.FORWARD_SLASH)!.append(StringUtil.getInstance()!.toString(anyType))!.toString()
+                            append(className)!.append(CommonSeps.getInstance()!.FORWARD_SLASH)!.append(StringUtil.getInstance()!.toString(anyType))!.toString();
+    
 
-    var message: string = LogFormatUtil.getInstance()!.get(className, functionName, specialMessage)!;
+    var message: string = LogFormatUtil.getInstance()!.getS(className, functionName, specialMessage)!;
         
         
-
-PlayN.log()!.debug(LOG_SUCCESS +message)
+;
+    
+PlayN.log()!.debug(LOG_SUCCESS +message);
+    
 }
 
 
@@ -73,7 +78,7 @@ PlayN.log()!.debug(LOG_SUCCESS +message)
         
         
 
-    /*actual*/ public static put(specialMessage: string, anyType: any = {}, functionName: string, exception: any = {}){
+    /*actual*/ public static putOE(specialMessage: string, anyType: any = {}, functionName: string, exception: any = {}){
     //var specialMessage = specialMessage
     //var anyType = anyType
     //var functionName = functionName
@@ -82,42 +87,49 @@ PlayN.log()!.debug(LOG_SUCCESS +message)
     var className: string = PreLogUtil.getClassName(anyType)!;
         
         
-
+;
+    
 
                         if(className == 
                                     null
                                 )
                         
                                     {
-                                    className= CommonStrings.getInstance()!.EMPTY
+                                    className= CommonStrings.getInstance()!.EMPTY;
+    
 
                                     }
                                 
 className= StringMaker().
-                            append(className)!.append(CommonSeps.getInstance()!.FORWARD_SLASH)!.append(StringUtil.getInstance()!.toString(anyType))!.toString()
+                            append(className)!.append(CommonSeps.getInstance()!.FORWARD_SLASH)!.append(StringUtil.getInstance()!.toString(anyType))!.toString();
+    
 
     var message: string = LogFormatUtil.getInstance()!.get(className, functionName, specialMessage, exception)!;
         
         
-
-PlayN.log()!.error(LOG_SUCCESS +message, exception as Error)
+;
+    
+PlayN.log()!.error(LOG_SUCCESS +message, exception as Error);
+    
 }
 
 
-    /*actual*/ public static put(specialMessage: string, className: string, functionName: string){
+    /*actual*/ public static putS(specialMessage: string, className: string, functionName: string){
     //var specialMessage = specialMessage
     //var className = className
     //var functionName = functionName
 
-    var message: string = LogFormatUtil.getInstance()!.get(className, functionName, specialMessage)!;
+    var message: string = LogFormatUtil.getInstance()!.getS(className, functionName, specialMessage)!;
         
         
-
-PlayN.log()!.debug(LOG_SUCCESS +message)
+;
+    
+PlayN.log()!.debug(LOG_SUCCESS +message);
+    
 }
 
 
-    /*actual*/ public static put(specialMessage: string, className: string, functionName: string, exception: any = {}){
+    /*actual*/ public static putSE(specialMessage: string, className: string, functionName: string, exception: any = {}){
     //var specialMessage = specialMessage
     //var className = className
     //var functionName = functionName
@@ -126,8 +138,10 @@ PlayN.log()!.debug(LOG_SUCCESS +message)
     var message: string = LogFormatUtil.getInstance()!.get(className, functionName, specialMessage, exception)!;
         
         
-
-PlayN.log()!.error(LOG_SUCCESS +message, exception as Error)
+;
+    
+PlayN.log()!.error(LOG_SUCCESS +message, exception as Error);
+    
 }
 
 

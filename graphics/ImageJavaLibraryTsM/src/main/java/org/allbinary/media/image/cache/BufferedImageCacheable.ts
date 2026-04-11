@@ -41,8 +41,10 @@ public constructor (key: BufferedImageInfo){
 
             super();
             var key = key
-this.key= key
-this.setBufferedImage(BufferedImage(key.getWidth(), key.getHeight(), key.getType()))
+this.key= key;
+    
+this.setBufferedImage(BufferedImage(key.getWidth(), key.getHeight(), key.getType()));
+    
 }
 
 
@@ -68,7 +70,8 @@ this.setBufferedImage(BufferedImage(key.getWidth(), key.getHeight(), key.getType
 
     setBufferedImage(bufferedImage: BufferedImage){
 var bufferedImage = bufferedImage
-this.bufferedImage= bufferedImage
+this.bufferedImage= bufferedImage;
+    
 }
 
 
@@ -77,15 +80,21 @@ this.bufferedImage= bufferedImage
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(this::class.toString()!)
-stringBuffer!.append(" ")
-stringBuffer!.append(this.getKey()!.toString())
+;
+    
+stringBuffer!.append(this.constructor.name.toString()!);
+    
+stringBuffer!.append(" ");
+    
+stringBuffer!.append(this.getKey()!.toString());
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

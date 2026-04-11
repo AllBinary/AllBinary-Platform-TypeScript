@@ -56,26 +56,31 @@ var hourString = hourString
                             toInt()!;
         
         
-
+;
+    
 
     var month: number = Integer(monthString).
                             toInt()!;
         
         
-
+;
+    
 
     var day: number = Integer(dayString).
                             toInt()!;
         
         
-
+;
+    
 
     var hour: number = Integer(hourString).
                             toInt()!;
         
         
-
-calendar.set(year, month, day, hour, 0)
+;
+    
+calendar.set(year, month, day, hour, 0);
+    
 }
 
 
@@ -92,38 +97,45 @@ var secondString = secondString
                             toInt()!;
         
         
-
+;
+    
 
     var month: number = Integer(monthString).
                             toInt()!;
         
         
-
+;
+    
 
     var day: number = Integer(dayString).
                             toInt()!;
         
         
-
+;
+    
 
     var hour: number = Integer(hourString).
                             toInt()!;
         
         
-
+;
+    
 
     var minute: number = Integer(minuteString).
                             toInt()!;
         
         
-
+;
+    
 
     var second: number = Integer(secondString).
                             toInt()!;
         
         
-
-calendar.set(year, month, day, hour, minute, second)
+;
+    
+calendar.set(year, month, day, hour, minute, second);
+    
 }
 
 
@@ -140,38 +152,45 @@ var secondsString = secondsString
                             toInt();
         
         
-
+;
+    
 
     var month: number = calendar.get(Calendar.MONTH) +Integer(monthsString).
                             toInt();
         
         
-
+;
+    
 
     var day: number = calendar.get(Calendar.DAY_OF_MONTH) +Integer(daysString).
                             toInt();
         
         
-
+;
+    
 
     var hour: number = calendar.get(Calendar.HOUR) +Integer(hoursString).
                             toInt();
         
         
-
+;
+    
 
     var minute: number = calendar.get(Calendar.MINUTE) +Integer(minutesString).
                             toInt();
         
         
-
+;
+    
 
     var second: number = calendar.get(Calendar.SECOND) +Integer(secondsString).
                             toInt();
         
         
-
-calendar.set(year, month, day, hour, minute, second)
+;
+    
+calendar.set(year, month, day, hour, minute, second);
+    
 }
 
 
@@ -186,13 +205,16 @@ var secondString = secondString
     var time: number = calendar.getTimeInMillis()!;
         
         
-
-this.setExpirationCalendar(calendar, yearString, monthString, dayString, hourString, minuteString, secondString)
+;
+    
+this.setExpirationCalendar(calendar, yearString, monthString, dayString, hourString, minuteString, secondString);
+    
 
     var timeDelta: number = calendar.getTimeInMillis()!;
         
         
-
+;
+    
 
 
 

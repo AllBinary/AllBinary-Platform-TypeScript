@@ -18,7 +18,10 @@
 
 
 
-import { Hashtable } from "../../../../../java/util/Hashtable.js";
+            import Hashtable from "@ohos.util.HashMap";
+        
+
+//import { Hashtable } from "../../../../../java/util/Hashtable.js";
 
     
 import { GameInput } from "../../../../../org/allbinary/game/input/GameInput.js";
@@ -69,7 +72,7 @@ export class TerrainPatrolAI extends PacePatrolAI {
     private readonly CLIFF: BasicTerrainInfo = new BasicTerrainInfo(DOWN);
         
         
-public constructor (hashtable: Hashtable<Any, Any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput)                        
+public constructor (hashtable: Hashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput)                        
 
                             : super(hashtable, ownerLayerInterface, gameInput){
 
@@ -81,14 +84,18 @@ public constructor (hashtable: Hashtable<Any, Any>, ownerLayerInterface: AllBina
 
                             //For kotlin this is before the body of the constructor.
                     
-TerrainEventHandler.getInstance(ownerLayerInterface)!.addListener(this.terrainEventListener)
-this.terrainEventListener!.onTerrainEvent(TerrainEventCircularStaticPool.getInstance()!.getInstance(this.CLIFF))
+TerrainEventHandler.getInstance(ownerLayerInterface)!.addListener(this.terrainEventListener);
+    
+this.terrainEventListener!.onTerrainEvent(TerrainEventCircularStaticPool.getInstance()!.getInstance(this.CLIFF));
+    
 }
 
 
     update(){
-super.update()
-this.changeDirectionIfCliffReached()
+super.update();
+    
+this.changeDirectionIfCliffReached();
+    
 }
 
 
@@ -97,12 +104,14 @@ this.changeDirectionIfCliffReached()
     var list: BasicArrayList = this.terrainEventListener!.getList()!;
         
         
-
+;
+    
 
     var size: number = list.size()!;
         
         
-
+;
+    
 
 
 
@@ -114,31 +123,39 @@ this.changeDirectionIfCliffReached()
 index < size; index++)
         {
 
-    var terrainEvent: TerrainEvent = list.remove(index) as TerrainEvent;
-        
-        
+    var terrainEvent: TerrainEvent = list.remove(index);
 
+                         as TerrainEvent;
+        
+        
+;
+    
 
     var basicTerrainInfo: BasicTerrainInfo = terrainEvent!.getBasicTerrainInfo()!;
         
         
-
+;
+    
 
     var angle: Angle = basicTerrainInfo!.getAngle()!;
         
         
-
+;
+    
 
                         if(angle == DOWN)
                         
                                     {
-                                    this.nextDirection()
+                                    this.nextDirection();
+    
 
                         if(!this.isFollowLimitedByTerrain)
                         
                                     {
-                                    logUtil!.put("Following Limited", this, "onTerrainEvent")
-this.isFollowLimitedByTerrain= true
+                                    logUtil!.put("Following Limited", this, "onTerrainEvent");
+    
+this.isFollowLimitedByTerrain= true;
+    
 
                                     }
                                 

@@ -67,18 +67,24 @@ var motionGestureInput = motionGestureInput
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setName(name)
+this.setName(name);
+    
 
         try {
-            this.setMotionGestureInput(motionGestureInput)
-} catch(e: Exception)
+            this.setMotionGestureInput(motionGestureInput);
+    
+
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, "InputToGameKeyEventAction", e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, "InputToGameKeyEventAction", e);
+    
 }
 
 }
@@ -86,7 +92,8 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "InputToGameKeyEventAction", e)
 
     setName(name: string){
 var name = name
-this.name= name
+this.name= name;
+    
 }
 
 
@@ -102,7 +109,8 @@ this.name= name
 
     public setMotionGestureInput(motionGestureInput: MotionGestureInput){
 var motionGestureInput = motionGestureInput
-this.motionGestureInput= motionGestureInput
+this.motionGestureInput= motionGestureInput;
+    
 }
 
 

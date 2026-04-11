@@ -45,14 +45,16 @@ export class OpenGLESImageProcessor
 var gl = gl
 var translateX = translateX
 var translateY = translateY
-gl.glTranslatef(translateX, translateY, 0)
+gl.glTranslatef(translateX, translateY, 0);
+    
 }
 
 
     public rotate(gl: GL10, angle: number){
 var gl = gl
 var angle = angle
-gl.glRotatef( -angle, 0, 0, 1)
+gl.glRotatef( -angle, 0, 0, 1);
+    
 }
 
 
@@ -60,7 +62,8 @@ gl.glRotatef( -angle, 0, 0, 1)
 var gl = gl
 var scaleX = scaleX
 var scaleY = scaleY
-gl.glScalef(scaleX, scaleY, 1)
+gl.glScalef(scaleX, scaleY, 1);
+    
 }
 
 

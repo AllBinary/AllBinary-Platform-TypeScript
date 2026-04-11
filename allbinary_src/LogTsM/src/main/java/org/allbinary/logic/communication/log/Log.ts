@@ -55,11 +55,16 @@ public constructor (){
     var stringUtil: StringUtil = StringUtil.getInstance()!;
         
         
-
-this.specialMessage= stringUtil!.EMPTY_STRING
-this.anyType= nullUtil!.NULL_OBJECT
-this.functionName= stringUtil!.EMPTY_STRING
-this.exception= nullUtil!.NULL_OBJECT
+;
+    
+this.specialMessage= stringUtil!.EMPTY_STRING;
+    
+this.anyType= nullUtil!.NULL_OBJECT;
+    
+this.functionName= stringUtil!.EMPTY_STRING;
+    
+this.exception= nullUtil!.NULL_OBJECT;
+    
 }
 
 public constructor (specialMessage: string, anyType: any = {}, functionName: string, exception: any = {}){
@@ -69,10 +74,14 @@ public constructor (specialMessage: string, anyType: any = {}, functionName: str
     //var anyType = anyType
     //var functionName = functionName
     //var exception = exception
-this.specialMessage= specialMessage
-this.anyType= anyType
-this.functionName= functionName
-this.exception= exception
+this.specialMessage= specialMessage;
+    
+this.anyType= anyType;
+    
+this.functionName= functionName;
+    
+this.exception= exception;
+    
 }
 
 public constructor (specialMessage: string, anyType: any = {}, functionName: string){
@@ -81,10 +90,14 @@ public constructor (specialMessage: string, anyType: any = {}, functionName: str
                 //var specialMessage = specialMessage
     //var anyType = anyType
     //var functionName = functionName
-this.specialMessage= specialMessage
-this.anyType= anyType
-this.functionName= functionName
-this.exception= nullUtil!.NULL_OBJECT
+this.specialMessage= specialMessage;
+    
+this.anyType= anyType;
+    
+this.functionName= functionName;
+    
+this.exception= this.nullUtil!.NULL_OBJECT;
+    
 }
 
 
@@ -93,7 +106,7 @@ this.exception= nullUtil!.NULL_OBJECT
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return specialMessage;
+                        return this.specialMessage;
     
 }
 
@@ -103,7 +116,7 @@ this.exception= nullUtil!.NULL_OBJECT
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return anyType;
+                        return this.anyType;
     
 }
 
@@ -113,7 +126,7 @@ this.exception= nullUtil!.NULL_OBJECT
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return functionName;
+                        return this.functionName;
     
 }
 
@@ -123,7 +136,7 @@ this.exception= nullUtil!.NULL_OBJECT
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return exception;
+                        return this.exception;
     
 }
 
@@ -133,19 +146,22 @@ this.exception= nullUtil!.NULL_OBJECT
     var className: string = CommonStrings.getInstance()!.EMPTY;
         
         
+;
+    
 
-
-    var clazz: KClass<*> = anyType!::class!;
+    var clazz: Function = this.anyType!.constructor!;
         
         
-
+;
+    
 
                         if(clazz.toString()! != 
                                     null
                                 )
                         
                                     {
-                                    className= clazz.toString()!
+                                    className= clazz.toString()!;
+    
 
                                     }
                                 
@@ -153,7 +169,9 @@ this.exception= nullUtil!.NULL_OBJECT
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return logFormatUtil!.get(className, this.functionName, this.specialMessage, this.exception);
+                        return this.logFormatUtil!.get(className, this.functionName, this.specialMessage, this.exception);
+
+                        ;
     
 }
 

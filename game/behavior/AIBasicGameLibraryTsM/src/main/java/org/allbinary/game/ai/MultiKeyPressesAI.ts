@@ -18,7 +18,10 @@
 
 
 
-import { Hashtable } from "../../../../java/util/Hashtable.js";
+            import Hashtable from "@ohos.util.HashMap";
+        
+
+//import { Hashtable } from "../../../../java/util/Hashtable.js";
 
     
 import { GameInput } from "../../../../org/allbinary/game/input/GameInput.js";
@@ -53,7 +56,7 @@ export class MultiKeyPressesAI extends KeyPressesAI {
     private readonly gameTickTimeDelayHelper: GameTickTimeDelayHelper = GameTickTimeDelayHelperFactory.getInstance()!;
         
         
-public constructor (hashtable: Hashtable<Any, Any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput)                        
+public constructor (hashtable: Hashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput)                        
 
                             : super(hashtable, ownerLayerInterface, gameInput){
 
@@ -65,7 +68,8 @@ var gameInput = gameInput
 
                             //For kotlin this is before the body of the constructor.
                     
-this.update()
+this.update();
+    
 }
 
 
@@ -87,18 +91,21 @@ var allBinaryLayerManager = allBinaryLayerManager
     var gameInput: GameInput = this.getGameInput()!;
         
         
-
+;
+    
 
     var keys: Integer[] = this.keys;
         
         
-
+;
+    
 
     var size: number = keys.length
                 ;
         
         
-
+;
+    
 
                         if(isOn())
                         
@@ -117,12 +124,14 @@ index < size; index++)
     var key: number = keys[index]!.toInt()!;
         
         
-
+;
+    
 
                         if(key !=  -1)
                         
                                     {
-                                    gameInput!.add(gameKeyEventFactory!.getInstance(this, key))
+                                    gameInput!.add(gameKeyEventFactory!.getInstance(this, key));
+    
 
                                     }
                                 
@@ -146,12 +155,14 @@ index < size; index++)
     var key: number = keys[index]!.toInt()!;
         
         
-
+;
+    
 
                         if(key !=  -1)
                         
                                     {
-                                    gameInput!.addForRemoval(gameKeyEventFactory!.getInstance(this, key))
+                                    gameInput!.addForRemoval(gameKeyEventFactory!.getInstance(this, key));
+    
 
                                     }
                                 
@@ -170,8 +181,10 @@ index < size; index++)
                         if(this.toggleTimeHelper!.isTime(this.gameTickTimeDelayHelper!.startTime))
                         
                                     {
-                                    super.toggle()
-this.update()
+                                    super.toggle();
+    
+this.update();
+    
 
                                     }
                                 
@@ -185,8 +198,10 @@ this.update()
                         if(this.toggleTimeHelper!.isTime(this.gameTickTimeDelayHelper!.startTime))
                         
                                     {
-                                    super.disable()
-this.update()
+                                    super.disable();
+    
+this.update();
+    
 
                                     }
                                 
@@ -200,8 +215,10 @@ this.update()
                         if(this.toggleTimeHelper!.isTime(this.gameTickTimeDelayHelper!.startTime))
                         
                                     {
-                                    super.enable()
-this.update()
+                                    super.enable();
+    
+this.update();
+    
 
                                     }
                                 

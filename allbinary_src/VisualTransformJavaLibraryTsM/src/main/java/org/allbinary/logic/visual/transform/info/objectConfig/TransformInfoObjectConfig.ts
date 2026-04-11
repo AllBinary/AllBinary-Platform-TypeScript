@@ -18,7 +18,10 @@
 
 
 
-import { Vector } from "../../../../../../../java/util/Vector.js";
+            import Vector from "@ohos.util.Vector";
+        
+
+//import { Vector } from "../../../../../../../java/util/Vector.js";
 
     
 import { DomNodeHelper } from "../../../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js";
@@ -99,8 +102,10 @@ public constructor (transformInfoInterface: Object){
 
             super();
             var transformInfoInterface = transformInfoInterface
-this.ownerTransformInfoInterface= transformInfoInterface
-this.createDocument()
+this.ownerTransformInfoInterface= transformInfoInterface;
+    
+this.createDocument();
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
@@ -109,26 +114,33 @@ this.createDocument()
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("TransformInfo: ")
+;
+    
+stringBuffer!.append("TransformInfo: ");
+    
 
                         if(this.ownerTransformInfoInterface != 
                                     null
                                 )
                         
                                     {
-                                    stringBuffer!.append(this.ownerTransformInfoInterface!.getName())
+                                    stringBuffer!.append(this.ownerTransformInfoInterface!.getName());
+    
 
                                     }
                                 
                         else {
-                            stringBuffer!.append("No Owner!?#@")
+                            stringBuffer!.append("No Owner!?#@");
+    
 
                         }
                             
-stringBuffer!.append("\nConstructed with document: ")
-stringBuffer!.append(this.toString())
-logUtil!.put(stringBuffer!.toString(), this, "Constructor(TransformInfoInterface)")
+stringBuffer!.append("\nConstructed with document: ");
+    
+stringBuffer!.append(this.toString());
+    
+logUtil!.put(stringBuffer!.toString(), this, "Constructor(TransformInfoInterface)");
+    
 
                                     }
                                 
@@ -139,20 +151,24 @@ public constructor (transformInfoInterface: Object, document: Object){
             super();
             var transformInfoInterface = transformInfoInterface
 var document = document
-this.ownerTransformInfoInterface= transformInfoInterface
-this.document= document
+this.ownerTransformInfoInterface= transformInfoInterface;
+    
+this.document= document;
+    
 
     var node: Node = DomSearchHelper.getNodeNoThrow(OutputTypeData.getInstance()!.NAME, this.getRootNode()!.getChildNodes())!;
         
         
-
+;
+    
 
                         if(node != 
                                     null
                                 )
                         
                                     {
-                                    this.setOutputTypeName(DomNodeHelper.getTextNodeValue(node))
+                                    this.setOutputTypeName(DomNodeHelper.getTextNodeValue(node));
+    
 
                                     }
                                 
@@ -164,26 +180,33 @@ this.document= document
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("TransformInfo: ")
+;
+    
+stringBuffer!.append("TransformInfo: ");
+    
 
                         if(this.ownerTransformInfoInterface != 
                                     null
                                 )
                         
                                     {
-                                    stringBuffer!.append(this.ownerTransformInfoInterface!.getName())
+                                    stringBuffer!.append(this.ownerTransformInfoInterface!.getName());
+    
 
                                     }
                                 
                         else {
-                            stringBuffer!.append("No Owner!?#@")
+                            stringBuffer!.append("No Owner!?#@");
+    
 
                         }
                             
-stringBuffer!.append("\nConstructed with document: ")
-stringBuffer!.append(this.toString())
-logUtil!.put(stringBuffer!.toString(), this, "Constructor(TransformInfoInterface, Document)")
+stringBuffer!.append("\nConstructed with document: ");
+    
+stringBuffer!.append(this.toString());
+    
+logUtil!.put(stringBuffer!.toString(), this, "Constructor(TransformInfoInterface, Document)");
+    
 
                                     }
                                 
@@ -195,20 +218,26 @@ public constructor (transformInfoInterface: Object, name: string, type: string){
             var transformInfoInterface = transformInfoInterface
 var name = name
 var type = type
-this.ownerTransformInfoInterface= transformInfoInterface
-this.createDocument()
+this.ownerTransformInfoInterface= transformInfoInterface;
+    
+this.createDocument();
+    
 
     var configNameAttr: Attr = this.document.createAttribute(TransformInfoObjectConfigData.getInstance()!.NAME)!;
         
         
-
-configNameAttr!.setValue(name)
+;
+    
+configNameAttr!.setValue(name);
+    
 
     var objectConfigNode: Node = this.document.getElementsByTagName(TransformInfoObjectConfigData.getInstance()!.NAME)!.item(0)!;
         
         
-
-objectConfigNode!.appendChild(configNameAttr)
+;
+    
+objectConfigNode!.appendChild(configNameAttr);
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
@@ -217,26 +246,33 @@ objectConfigNode!.appendChild(configNameAttr)
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("TransformInfo: ")
+;
+    
+stringBuffer!.append("TransformInfo: ");
+    
 
                         if(this.ownerTransformInfoInterface != 
                                     null
                                 )
                         
                                     {
-                                    stringBuffer!.append(this.ownerTransformInfoInterface!.getName())
+                                    stringBuffer!.append(this.ownerTransformInfoInterface!.getName());
+    
 
                                     }
                                 
                         else {
-                            stringBuffer!.append("No Owner!?#@")
+                            stringBuffer!.append("No Owner!?#@");
+    
 
                         }
                             
-stringBuffer!.append("\nConstructed with document: ")
-stringBuffer!.append(this.toString())
-logUtil!.put(stringBuffer!.toString(), this, "Constructor(TransformInfoInterface, name, type)")
+stringBuffer!.append("\nConstructed with document: ");
+    
+stringBuffer!.append(this.toString());
+    
+logUtil!.put(stringBuffer!.toString(), this, "Constructor(TransformInfoInterface, name, type)");
+    
 
                                     }
                                 
@@ -244,13 +280,16 @@ logUtil!.put(stringBuffer!.toString(), this, "Constructor(TransformInfoInterface
 
 
     createDocument(){
-this.document= DomDocumentHelper.create()
+this.document= DomDocumentHelper.create();
+    
 
     var objectConfigNode: Node = document.createElement(TransformInfoObjectConfigData.getInstance()!.NAME)!;
         
         
-
-this.document.appendChild(objectConfigNode)
+;
+    
+this.document.appendChild(objectConfigNode);
+    
 }
 
 
@@ -278,7 +317,8 @@ this.document.appendChild(objectConfigNode)
 
     setDocument(document: Document){
 var document = document
-this.document= document
+this.document= document;
+    
 }
 
 
@@ -288,17 +328,20 @@ var transformInfoInterface = transformInfoInterface
     var objectConfigNode: Node = this.document.getElementsByTagName(TransformInfoObjectConfigData.getInstance()!.NAME)!.item(0)!;
         
         
-
+;
+    
 
     var viewNodeList: NodeList = objectConfigNode!.getChildNodes()!;
         
         
-
+;
+    
 
     var numberOfViews: number = viewNodeList!.getLength()!;
         
         
-
+;
+    
 
 
 
@@ -313,17 +356,22 @@ index < numberOfViews; index++)
     var viewNode: Node = viewNodeList!.item(index)!;
         
         
-
+;
+    
 
     var viewAttributes: NamedNodeMap = viewNode!.getAttributes()!;
         
         
+;
+    
 
+    var attrNode: Attr = viewAttributes!.getNamedItem(TransformInfoData.getInstance()!.NAME);
 
-    var attrNode: Attr = viewAttributes!.getNamedItem(TransformInfoData.getInstance()!.NAME) as Attr;
+                         as Attr;
         
         
-
+;
+    
 
                         if(transformInfoInterface!.getName()!.compareTo(attrNode!.getValue()) == 0)
                         
@@ -355,12 +403,15 @@ index < numberOfViews; index++)
     var componentNode: Node = this.document.getElementsByTagName(TransformInfoObjectConfigData.getInstance()!.NAME)!.item(0)!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return componentNode!.getAttributes();
+
+                        ;
     
 }
 
@@ -369,15 +420,20 @@ index < numberOfViews; index++)
             
     public getName(): string{
 
-    var attrNode: Attr = this.getTemplateAttributes()!.getNamedItem(TransformInfoObjectConfigData.getInstance()!.NAME) as Attr;
-        
-        
+    var attrNode: Attr = this.getTemplateAttributes()!.getNamedItem(TransformInfoObjectConfigData.getInstance()!.NAME);
 
+                         as Attr;
+        
+        
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return attrNode!.getValue();
+
+                        ;
     
 }
 
@@ -387,11 +443,15 @@ index < numberOfViews; index++)
     public setName(name: string){
 var name = name
 
-    var attrNode: Attr = this.getTemplateAttributes()!.getNamedItem(TransformInfoObjectConfigData.getInstance()!.NAME) as Attr;
-        
-        
+    var attrNode: Attr = this.getTemplateAttributes()!.getNamedItem(TransformInfoObjectConfigData.getInstance()!.NAME);
 
-attrNode!.setValue(name)
+                         as Attr;
+        
+        
+;
+    
+attrNode!.setValue(name);
+    
 }
 
 
@@ -403,7 +463,8 @@ var nodeName = nodeName
     var componentsNodeList: NodeList = this.document.getElementsByTagName(nodeName)!;
         
         
-
+;
+    
 
                         if(componentsNodeList != 
                                     null
@@ -414,12 +475,14 @@ var nodeName = nodeName
     var viewNodeVector: Vector = DomSearchHelper.getAllNodes(TransformInfoData.getInstance()!.NAME, componentsNodeList!.item(0)!.getChildNodes())!;
         
         
-
+;
+    
 
     var numberOfViews: number = viewNodeVector!.length!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
@@ -428,12 +491,18 @@ var nodeName = nodeName
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("Number Of ")
-stringBuffer!.append(nodeName)
-stringBuffer!.append(" Nodes: ")
-stringBuffer!.appendint(numberOfViews)
-logUtil!.put(stringBuffer!.toString(), this, "getNodeVector(nodename)")
+;
+    
+stringBuffer!.append("Number Of ");
+    
+stringBuffer!.append(nodeName);
+    
+stringBuffer!.append(" Nodes: ");
+    
+stringBuffer!.appendint(numberOfViews);
+    
+logUtil!.put(stringBuffer!.toString(), this, "getNodeVector(nodename)");
+    
 
                                     }
                                 
@@ -463,17 +532,20 @@ var nodeName = nodeName
     var viewVector: Vector = new Vector();
         
         
-
+;
+    
 
     var viewNodeVector: Vector = this.getNodeVector(nodeName)!;
         
         
-
+;
+    
 
     var size: number = viewNodeVector!.length!;
         
         
-
+;
+    
 
 
 
@@ -485,11 +557,15 @@ var nodeName = nodeName
 index < size; index++)
         {
 
-    var viewNode: Node = viewNodeVector!.get(index) as Node;
-        
-        
+    var viewNode: Node = viewNodeVector!.get(index);
 
-viewVector!.add(TransformInfoDomNode(viewNode))
+                         as Node;
+        
+        
+;
+    
+viewVector!.add(TransformInfoDomNode(viewNode));
+    
 }
 
 
@@ -509,17 +585,20 @@ var nodeName = nodeName
     var viewVector: Vector = new Vector();
         
         
-
+;
+    
 
     var viewNodeVector: Vector = this.getNodeVector(nodeName)!;
         
         
-
+;
+    
 
     var size: number = viewNodeVector!.length!;
         
         
-
+;
+    
 
 
 
@@ -531,12 +610,16 @@ var nodeName = nodeName
 index < size; index++)
         {
 
-    var viewNode: Node = viewNodeVector!.get(index) as Node;
-        
-        
+    var viewNode: Node = viewNodeVector!.get(index);
 
+                         as Node;
+        
+        
+;
+    
 viewVector!.add(TransformInfoDomNode(viewNode).
-                            getTransformInfoInterface())
+                            getTransformInfoInterface());
+    
 }
 
 
@@ -556,7 +639,8 @@ var group = group
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Started: " +group, this, "getTransformsGroup()")
+                                    logUtil!.put("Started: " +group, this, "getTransformsGroup()");
+    
 
                                     }
                                 
@@ -564,17 +648,20 @@ var group = group
     var viewVector: Vector = new Vector();
         
         
-
+;
+    
 
     var GROUP: string = TransformInfosData.getInstance()!.GROUP;
         
         
-
+;
+    
 
     var componentsNodeList: NodeList = this.document.getElementsByTagName(GROUP)!;
         
         
-
+;
+    
 
                         if(componentsNodeList != 
                                     null
@@ -585,12 +672,14 @@ var group = group
     var componentsNode: Node = componentsNodeList!.item(0)!;
         
         
-
+;
+    
 
     var length: number = componentsNodeList!.getLength()!;
         
         
-
+;
+    
 
 
 
@@ -605,27 +694,34 @@ index < length; index++)
     var node: Node = componentsNodeList!.item(index)!;
         
         
-
+;
+    
 
     var attributes: NamedNodeMap = node.getAttributes()!;
         
         
+;
+    
 
+    var attrNode: Attr = attributes.getNamedItem(GROUP);
 
-    var attrNode: Attr = attributes.getNamedItem(GROUP) as Attr;
+                         as Attr;
         
         
-
+;
+    
 
     var value: string = attrNode!.getValue()!;
         
         
-
+;
+    
 
                         if(value.compareTo(group) == 0)
                         
                                     {
-                                    componentsNode= node
+                                    componentsNode= node;
+    
 break;
 
                     
@@ -638,17 +734,20 @@ break;
     var viewNodeVector: Vector = DomSearchHelper.getAllNodes(TransformInfoData.getInstance()!.NAME, componentsNode!.getChildNodes())!;
         
         
-
+;
+    
 
     var numberOfViews: number = viewNodeVector!.length!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Number Of Nodes: " +numberOfViews, this, "getTransformsGroup()")
+                                    logUtil!.put("Number Of Nodes: " +numberOfViews, this, "getTransformsGroup()");
+    
 
                                     }
                                 
@@ -656,7 +755,8 @@ break;
     var size: number = viewNodeVector!.length!;
         
         
-
+;
+    
 
 
 
@@ -668,11 +768,15 @@ break;
 index < size; index++)
         {
 
-    var viewNode: Node = viewNodeVector!.get(index) as Node;
-        
-        
+    var viewNode: Node = viewNodeVector!.get(index);
 
-viewVector!.add(TransformInfoDomNode(viewNode))
+                         as Node;
+        
+        
+;
+    
+viewVector!.add(TransformInfoDomNode(viewNode));
+    
 }
 
 
@@ -689,12 +793,14 @@ viewVector!.add(TransformInfoDomNode(viewNode))
                                 )
                         
                                     {
-                                    logUtil!.put("Number Of Nodes: NULL", this, "getTransformsGroup()")
+                                    logUtil!.put("Number Of Nodes: NULL", this, "getTransformsGroup()");
+    
 
                                     }
                                 
                         else {
-                            logUtil!.put("Number Of Nodes: 0", this, "getTransformsGroup()")
+                            logUtil!.put("Number Of Nodes: 0", this, "getTransformsGroup()");
+    
 
                         }
                             
@@ -721,6 +827,8 @@ viewVector!.add(TransformInfoDomNode(viewNode))
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getTransformDomNodes(TransformInfosData.getInstance()!.GROUP);
+
+                        ;
     
 }
 
@@ -733,6 +841,8 @@ viewVector!.add(TransformInfoDomNode(viewNode))
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getTransforms(TransformInfosData.getInstance()!.NAME);
+
+                        ;
     
 }
 
@@ -745,6 +855,8 @@ viewVector!.add(TransformInfoDomNode(viewNode))
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getTransforms(TransformInfosData.getInstance()!.GROUP);
+
+                        ;
     
 }
 
@@ -757,6 +869,8 @@ viewVector!.add(TransformInfoDomNode(viewNode))
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getTransforms(TransformInfoData.getInstance()!.PARENT);
+
+                        ;
     
 }
 
@@ -767,13 +881,16 @@ viewVector!.add(TransformInfoDomNode(viewNode))
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.document.getElementsByTagName(TransformInfoObjectConfigData.getInstance()!.NAME)!.item(0);
+
+                        ;
     
 }
 
 
     public setOutputTypeName(outputTypeName: string){
 var outputTypeName = outputTypeName
-this.outputTypeName= outputTypeName
+this.outputTypeName= outputTypeName;
+    
 }
 
 
@@ -796,12 +913,15 @@ this.outputTypeName= outputTypeName
     var node: Node = DomSearchHelper.getNode(InputOutputTypeData.getInstance()!.NAME, this.getRootNode()!.getChildNodes())!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return DomNodeHelper.getTextNodeValue(node);
+
+                        ;
     
 }
 
@@ -813,12 +933,15 @@ this.outputTypeName= outputTypeName
     var node: Node = DomSearchHelper.getNode(InputOutputTypeData.getInstance()!.FILE, this.getRootNode()!.getChildNodes())!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return DomNodeHelper.getTextNodeValue(node);
+
+                        ;
     
 }
 
@@ -830,12 +953,15 @@ this.outputTypeName= outputTypeName
     var node: Node = DomSearchHelper.getNode(XslData.getInstance()!.ROOT_IMPORT_URI, this.getRootNode()!.getChildNodes())!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return DomNodeHelper.getTextNodeValue(node);
+
+                        ;
     
 }
 
@@ -854,6 +980,8 @@ this.outputTypeName= outputTypeName
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return DomDocumentHelper.toString(this.document);
+
+                        ;
     
 
                                     }
@@ -868,13 +996,16 @@ this.outputTypeName= outputTypeName
 
                         }
                             
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("DOM Document error", this, commonStrings!.TOSTRING)
+                                    logUtil!.put("DOM Document error", this, commonStrings!.TOSTRING);
+    
 
                                     }
                                 

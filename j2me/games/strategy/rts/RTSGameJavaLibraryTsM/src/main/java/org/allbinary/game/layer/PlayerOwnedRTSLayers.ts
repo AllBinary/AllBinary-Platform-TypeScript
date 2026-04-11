@@ -39,14 +39,19 @@ export class PlayerOwnedRTSLayers
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("All: ")
-stringBuffer!.appendint(this.rtsLayerList!.size())
+;
+    
+stringBuffer!.append("All: ");
+    
+stringBuffer!.appendint(this.rtsLayerList!.size());
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

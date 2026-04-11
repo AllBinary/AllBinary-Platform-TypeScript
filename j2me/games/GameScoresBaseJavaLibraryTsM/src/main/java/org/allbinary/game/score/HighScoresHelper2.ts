@@ -35,7 +35,8 @@ export class HighScoresHelper2 extends HighScoresHelperBase {
 
     public setSelectedHighScores(selectedHighScores: HighScores){
     //var selectedHighScores = selectedHighScores
-this.selectedHighScores= selectedHighScores
+this.selectedHighScores= selectedHighScores;
+    
 }
 
 
@@ -51,9 +52,12 @@ this.selectedHighScores= selectedHighScores
 
     public setHighScoresArray(highScoresArrayP: HighScores[]){
     //var highScoresArrayP = highScoresArrayP
-super.setHighScoresArray(highScoresArrayP)
-this.circularIndexUtil!.setSize(this.highScoresArrayP!.length)
-this.selectHighScores()
+super.setHighScoresArray(highScoresArrayP);
+    
+this.circularIndexUtil!.setSize(this.highScoresArrayP!.length);
+    
+this.selectHighScores();
+    
 }
 
 
@@ -62,7 +66,8 @@ this.selectHighScores()
                         if(this.highScoresArrayP!.length == 0)
                         
                                     {
-                                    this.setSelectedHighScores(NullHighScoresSingletonFactory.getInstance())
+                                    this.setSelectedHighScores(NullHighScoresSingletonFactory.getInstance());
+    
 
 
 
@@ -72,25 +77,31 @@ this.selectHighScores()
 
                                     }
                                 
-this.circularIndexUtil!.next()
+this.circularIndexUtil!.next();
+    
 
     var highScores: HighScores = this.highScoresArrayP[this.circularIndexUtil!.getIndex()]!;
         
         
-
+;
+    
 
     var index: number = 0;
         
         
-
+;
+    
 
         while(highScores!.getTotal() < 1 && index < this.highScoresArrayP!.length)
         {
-highScores= this.highScoresArrayP[this.circularIndexUtil!.next()]!
-index++
+highScores= this.highScoresArrayP[this.circularIndexUtil!.next()]!;
+    
+index++;
+    
 }
 
-this.setSelectedHighScores(highScores)
+this.setSelectedHighScores(highScores);
+    
 }
 
 

@@ -45,7 +45,8 @@ public constructor (collidableDestroyableDamageableLayer: CollidableDestroyableD
     public process(allbinaryLayerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
 var allbinaryLayerManager = allbinaryLayerManager
 var gameKeyEvent = gameKeyEvent
-this.collidableDestroyableDamageableLayer!.left()
+this.collidableDestroyableDamageableLayer!.left();
+    
 }
 
 

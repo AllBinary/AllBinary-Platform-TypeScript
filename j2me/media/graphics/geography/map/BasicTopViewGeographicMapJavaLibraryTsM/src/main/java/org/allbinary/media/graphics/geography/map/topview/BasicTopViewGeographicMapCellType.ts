@@ -53,7 +53,7 @@ export class BasicTopViewGeographicMapCellType
 
     public readonly cost: number
 
-    private readonly types: IntArray
+    private readonly types: number[]
 public constructor (name: string, type: number, cost: number){
 
             super();
@@ -66,7 +66,8 @@ public constructor (name: string, type: number, cost: number){
                                 )
                         
                                     {
-                                    RaceTrackGeographicMapCellType(name, type, cost)
+                                    RaceTrackGeographicMapCellType(name, type, cost);
+    
 
                                     }
                                 
@@ -74,13 +75,17 @@ public constructor (name: string, type: number, cost: number){
                             
                         }
                             
-this.name= name
-this.cost= cost
-this.types= IntArray(1)
-this.types[0]= type
+this.name= name;
+    
+this.cost= cost;
+    
+this.types= new Array(1);
+    
+this.types[0]= type;
+    
 }
 
-public constructor (name: string, types: IntArray, cost: number){
+public constructor (name: string, types: number[], cost: number){
 
             super();
                 //var name = name
@@ -91,10 +96,12 @@ public constructor (name: string, types: IntArray, cost: number){
                 ;
         
         
-
+;
+    
 
     var type: number= 0
-
+;
+    
 
 
 
@@ -105,14 +112,16 @@ public constructor (name: string, types: IntArray, cost: number){
         
 index < size; index++)
         {
-type= types[index]!
+type= types[index]!;
+    
 
                         if(GeographicMapCellTypeFactory.getInstance()!.getGeographicMapCellTypeArray()[type] == 
                                     null
                                 )
                         
                                     {
-                                    RaceTrackGeographicMapCellType(name, type, cost)
+                                    RaceTrackGeographicMapCellType(name, type, cost);
+    
 
                                     }
                                 
@@ -122,9 +131,12 @@ type= types[index]!
                             
 }
 
-this.name= name
-this.types= types
-this.cost= cost
+this.name= name;
+    
+this.types= types;
+    
+this.cost= cost;
+    
 }
 
 public constructor (name: string, types: BasicArrayList, cost: number){
@@ -137,18 +149,22 @@ public constructor (name: string, types: BasicArrayList, cost: number){
     var size: number = types.size()!;
         
         
+;
+    
 
-
-    var typeArray: IntArray = IntArray(size);
+    var typeArray: number[] = new Array(size);
         
         
-
+;
+    
 
     var typeAsInteger: Integer
-
+;
+    
 
     var type: number= 0
-
+;
+    
 
 
 
@@ -159,15 +175,20 @@ public constructor (name: string, types: BasicArrayList, cost: number){
         
 index < size; index++)
         {
-typeAsInteger= (types.get(index) as Integer)
-type= typeAsInteger!.toInt()
+typeAsInteger= (types.get(index);
+
+                         as Integer);
+    
+type= typeAsInteger!.toInt();
+    
 
                         if(GeographicMapCellTypeFactory.getInstance()!.getGeographicMapCellTypeArray()[type] == 
                                     null
                                 )
                         
                                     {
-                                    RaceTrackGeographicMapCellType(name, type, cost)
+                                    RaceTrackGeographicMapCellType(name, type, cost);
+    
 
                                     }
                                 
@@ -175,12 +196,16 @@ type= typeAsInteger!.toInt()
                             
                         }
                             
-typeArray[index]= type
+typeArray[index]= type;
+    
 }
 
-this.name= name
-this.cost= cost
-this.types= typeArray
+this.name= name;
+    
+this.cost= cost;
+    
+this.types= typeArray;
+    
 }
 
 
@@ -191,6 +216,8 @@ this.types= typeArray
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.isType(type.getType());
+
+                        ;
     
 }
 
@@ -202,7 +229,8 @@ this.types= typeArray
                 ;
         
         
-
+;
+    
 
 
 
@@ -237,7 +265,7 @@ index < size; index++)
 }
 
 
-    public getTypes(): IntArray{
+    public getTypes(): number[]{
 
 
 
@@ -252,13 +280,15 @@ index < size; index++)
     var stringMaker: StringMaker = new StringMaker();
         
         
-
+;
+    
 
     var size: number = types.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -269,7 +299,8 @@ index < size; index++)
         
 index < size; index++)
         {
-stringMaker!.appendint(types[index]!)!.append(CommonSeps.getInstance()!.COMMA)
+stringMaker!.appendint(types[index]!)!.append(CommonSeps.getInstance()!.COMMA);
+    
 }
 
 
@@ -277,6 +308,8 @@ stringMaker!.appendint(types[index]!)!.append(CommonSeps.getInstance()!.COMMA)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringMaker!.toString();
+
+                        ;
     
 }
 

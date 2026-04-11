@@ -18,10 +18,13 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { HashMap } from "../../../../../../../java/util/HashMap.js";
 
     
-import { Vector } from "../../../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../../../java/util/Vector.js";
 
     
 import { DomData } from "../../../../../../../org/allbinary/data/tree/dom/DomData.js";
@@ -98,15 +101,20 @@ export class CssElementView
 public constructor (){
 
             super();
-            this.cssPropertyVector= Vector()
+            this.cssPropertyVector= Vector();
+    
 
     var stringUtil: StringUtil = StringUtil.getInstance()!;
         
         
-
-this.title= stringUtil!.EMPTY_STRING
-this.description= stringUtil!.EMPTY_STRING
-this.value= stringUtil!.EMPTY_STRING
+;
+    
+this.title= stringUtil!.EMPTY_STRING;
+    
+this.description= stringUtil!.EMPTY_STRING;
+    
+this.value= stringUtil!.EMPTY_STRING;
+    
 }
 
 public constructor (node: Node){
@@ -119,20 +127,24 @@ public constructor (node: Node){
     var valueNode: Node = DomSearchHelper.getNode(DomData.VALUE, node.getChildNodes())!;
         
         
-
-this.value= DomNodeHelper.getTextNodeValue(valueNode)
+;
+    
+this.value= DomNodeHelper.getTextNodeValue(valueNode);
+    
 
     var titleValueNode: Node = DomSearchHelper.getNodeNoThrow(TITLE, node.getChildNodes())!;
         
         
-
+;
+    
 
                         if(titleValueNode != 
                                     null
                                 )
                         
                                     {
-                                    this.title= DomNodeHelper.getTextNodeValue(titleValueNode)
+                                    this.title= DomNodeHelper.getTextNodeValue(titleValueNode);
+    
 
                                     }
                                 
@@ -141,8 +153,10 @@ this.value= DomNodeHelper.getTextNodeValue(valueNode)
     var stringUtil: StringUtil = StringUtil.getInstance()!;
         
         
-
-this.title= stringUtil!.EMPTY_STRING
+;
+    
+this.title= stringUtil!.EMPTY_STRING;
+    
 
                         }
                             
@@ -150,19 +164,22 @@ this.title= stringUtil!.EMPTY_STRING
     var descriptionValueNode: Node = DomSearchHelper.getNodeNoThrow(DESCRIPTION, node.getChildNodes())!;
         
         
-
+;
+    
 
                         if(descriptionValueNode != 
                                     null
                                 )
                         
                                     {
-                                    this.description= DomNodeHelper.getTextNodeValue(descriptionValueNode)
+                                    this.description= DomNodeHelper.getTextNodeValue(descriptionValueNode);
+    
 
                                     }
                                 
                         else {
-                            this.description= StringUtil.getInstance()!.EMPTY_STRING
+                            this.description= StringUtil.getInstance()!.EMPTY_STRING;
+    
 
                         }
                             
@@ -171,7 +188,8 @@ this.title= stringUtil!.EMPTY_STRING
                         
                                     {
                                     logUtil!.put(StringMaker().
-                            append("Value: ")!.append(this.value)!.append("\nTitle: ")!.append(this.title)!.append("\nDescription: ")!.append(this.description)!.toString(), this, commonStrings!.CONSTRUCTOR)
+                            append("Value: ")!.append(this.value)!.append("\nTitle: ")!.append(this.title)!.append("\nDescription: ")!.append(this.description)!.toString(), this, commonStrings!.CONSTRUCTOR);
+    
 
                                     }
                                 
@@ -179,30 +197,38 @@ this.title= stringUtil!.EMPTY_STRING
     var cssElementStyleNodeVector: Vector = DomSearchHelper.getAllNodes(CssElementData.getInstance()!.NAME, node.getChildNodes())!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Child Css Elements: " +cssElementStyleNodeVector!.length, this, "CssElementView()")
+                                    logUtil!.put("Child Css Elements: " +cssElementStyleNodeVector!.length, this, "CssElementView()");
+    
 
                                     }
                                 
-this.cssElementVector= CssElementsValidationFactory.getInstance(cssElementStyleNodeVector)
+this.cssElementVector= CssElementsValidationFactory.getInstance(cssElementStyleNodeVector);
+    
 
     var nodeList: NodeList = node.getChildNodes()!;
         
         
+;
+    
+this.cssPropertyVector= CssPropertiesValidationFactory.getInstance(nodeList);
+    
 
-this.cssPropertyVector= CssPropertiesValidationFactory.getInstance(nodeList)
-} catch(e: Exception)
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
                                     logUtil!.put(StringMaker().
-                            append("Value: ")!.append(this.value)!.append("\nTitle: ")!.append(this.title)!.append("\nDescription: ")!.append(this.description)!.toString(), this, this.commonStrings!.CONSTRUCTOR, e)
+                            append("Value: ")!.append(this.value)!.append("\nTitle: ")!.append(this.title)!.append("\nDescription: ")!.append(this.description)!.toString(), this, this.commonStrings!.CONSTRUCTOR, e);
+    
 
                                     }
                                 
@@ -225,15 +251,19 @@ this.cssPropertyVector= CssPropertiesValidationFactory.getInstance(nodeList)
 }
 
 
-    public toHashMap(): HashMap<Any, Any>{
+    public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
         
         
-
-hashMap!.put(DomData.VALUE, this.value)
-hashMap!.put(this.TITLE, this.title)
-hashMap!.put(this.DESCRIPTION, this.description)
+;
+    
+hashMap!.put(DomData.VALUE, this.value);
+    
+hashMap!.put(this.TITLE, this.title);
+    
+hashMap!.put(this.DESCRIPTION, this.description);
+    
 
 
 
@@ -248,15 +278,17 @@ hashMap!.put(this.DESCRIPTION, this.description)
     public toXmlNode(document: Document): Node{
 var document = document
 
-    var hashMap: HashMap<Any, Any> = this.toHashMap()!;
+    var hashMap: HashMap<any, any> = this.toHashMap()!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("CssView HashMap: " +hashMap!.toString(), this, "toXmlNode")
+                                    logUtil!.put("CssView HashMap: " +hashMap!.toString(), this, "toXmlNode");
+    
 
                                     }
                                 
@@ -264,12 +296,14 @@ var document = document
     var node: Node = ModDomHelper.createNodeWithValueNodes(document, CssElementData.getInstance()!.NAME, hashMap)!;
         
         
-
+;
+    
 
     var size: number = cssPropertyVector!.length!;
         
         
-
+;
+    
 
 
 
@@ -281,18 +315,23 @@ var document = document
 index < size; index++)
         {
 
-    var cssPropertyDomNodeInterface: DomNodeInterface = cssPropertyVector!.get(index) as DomNodeInterface;
-        
-        
+    var cssPropertyDomNodeInterface: DomNodeInterface = cssPropertyVector!.get(index);
 
-node.appendChild(cssPropertyDomNodeInterface!.toXmlNode(document))
+                         as DomNodeInterface;
+        
+        
+;
+    
+node.appendChild(cssPropertyDomNodeInterface!.toXmlNode(document));
+    
 }
 
 
     var size2: number = cssElementVector!.length!;
         
         
-
+;
+    
 
 
 
@@ -304,11 +343,15 @@ node.appendChild(cssPropertyDomNodeInterface!.toXmlNode(document))
 index < size2; index++)
         {
 
-    var cssElementDomNodeInterface: DomNodeInterface = cssElementVector!.get(index) as DomNodeInterface;
-        
-        
+    var cssElementDomNodeInterface: DomNodeInterface = cssElementVector!.get(index);
 
-node.appendChild(cssElementDomNodeInterface!.toXmlNode(document))
+                         as DomNodeInterface;
+        
+        
+;
+    
+node.appendChild(cssElementDomNodeInterface!.toXmlNode(document));
+    
 }
 
 

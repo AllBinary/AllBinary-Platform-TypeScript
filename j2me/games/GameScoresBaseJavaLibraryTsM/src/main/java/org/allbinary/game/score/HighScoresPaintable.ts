@@ -79,8 +79,10 @@ var eventObject = eventObject
     var colorChangeEvent: ColorChangeEvent = eventObject as ColorChangeEvent;
         
         
-
-this.basicColor= colorChangeEvent!.getBasicColorP()
+;
+    
+this.basicColor= colorChangeEvent!.getBasicColorP();
+    
 }
 
 
@@ -94,66 +96,82 @@ var graphics = graphics
     var charHeight: number = MyFont.getInstance()!.DEFAULT_CHAR_HEIGHT;
         
         
-
+;
+    
 
     var width: number = this.displayInfoSingleton!.getLastWidth()!;
         
         
-
+;
+    
 
     var height: number = this.displayInfoSingleton!.getLastHeight()!;
         
         
-
-graphics.setColor(getBasicColorP()!.toInt())
+;
+    
+graphics.setColor(getBasicColorP()!.toInt());
+    
 
     var heading: string = this.highScores!.getHeading()!;
         
         
-
+;
+    
 
     var topScoresWidth: number = (graphics.getFont()!.stringWidth(heading) shr 1);
         
         
-
-graphics.drawString(heading, (width shr 1) -topScoresWidth, charHeight, anchor)
-graphics.drawString(this.highScores!.getColumnOneHeading(), 10, charHeight *3, anchor)
+;
+    
+graphics.drawString(heading, (width shr 1) -topScoresWidth, charHeight, anchor);
+    
+graphics.drawString(this.highScores!.getColumnOneHeading(), 10, charHeight *3, anchor);
+    
 
     var columnTwoHeading: string = this.highScores!.getColumnTwoHeading()!;
         
         
-
+;
+    
 
     var columnTwoHeadingWidth: number = graphics.getFont()!.stringWidth(columnTwoHeading)!;
         
         
-
-graphics.drawString(columnTwoHeading, width -10 -columnTwoHeadingWidth, charHeight *3, anchor)
+;
+    
+graphics.drawString(columnTwoHeading, width -10 -columnTwoHeadingWidth, charHeight *3, anchor);
+    
 
     var index: number = 4;
         
         
-
+;
+    
 
     var largestSecondColumnWidth: number = columnTwoHeadingWidth;
         
         
-
+;
+    
 
     var list: BasicArrayList = this.highScores!.getList()!;
         
         
-
+;
+    
 
     var size: number = list.size()!;
         
         
-
+;
+    
 
     var vectorIndex: number = 0;
         
         
-
+;
+    
 
         while(vectorIndex < size && charHeight *index < height -(charHeight *2))
         {
@@ -161,24 +179,29 @@ graphics.drawString(columnTwoHeading, width -10 -columnTwoHeadingWidth, charHeig
     var highScore: HighScore = list.objectArray[vectorIndex]! as HighScore;
         
         
-
+;
+    
 
     var nextScoreWidth: number = graphics.getFont()!.stringWidth(highScore!.getScoreString())!;
         
         
-
+;
+    
 
                         if(nextScoreWidth > largestSecondColumnWidth)
                         
                                     {
-                                    largestSecondColumnWidth= nextScoreWidth
+                                    largestSecondColumnWidth= nextScoreWidth;
+    
 
                                     }
                                 
-vectorIndex++
+vectorIndex++;
+    
 }
 
-vectorIndex= 0
+vectorIndex= 0;
+    
 
         while(vectorIndex < size && charHeight *index < height -(charHeight *2))
         {
@@ -186,11 +209,16 @@ vectorIndex= 0
     var highScore: HighScore = list.objectArray[vectorIndex]! as HighScore;
         
         
-
-graphics.drawString(highScore!.getName(), 10, charHeight *index, anchor)
-graphics.drawString(highScore!.getScoreString(), width -10 -largestSecondColumnWidth, charHeight *index, anchor)
-index++
-vectorIndex++
+;
+    
+graphics.drawString(highScore!.getName(), 10, charHeight *index, anchor);
+    
+graphics.drawString(highScore!.getScoreString(), width -10 -largestSecondColumnWidth, charHeight *index, anchor);
+    
+index++;
+    
+vectorIndex++;
+    
 }
 
 }
@@ -198,7 +226,8 @@ vectorIndex++
 
     public setBasicColorP(basicColor: BasicColor){
 var basicColor = basicColor
-this.basicColor= basicColor
+this.basicColor= basicColor;
+    
 }
 
 
@@ -214,7 +243,8 @@ this.basicColor= basicColor
 
     public setHighScores(highScores: HighScores){
 var highScores = highScores
-this.highScores= highScores
+this.highScores= highScores;
+    
 }
 
 

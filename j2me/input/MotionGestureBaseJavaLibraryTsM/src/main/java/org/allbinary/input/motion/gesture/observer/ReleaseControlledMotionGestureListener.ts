@@ -77,70 +77,84 @@ public constructor (signed: CompleteMotionGestureListenerInterface){
 
             super();
             var signed = signed
-logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
-this.signed= signed
+logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
+    
+this.signed= signed;
+    
 }
 
 
     public onEvent(eventObject: AllBinaryEventObject){
 var eventObject = eventObject
-ForcedLogUtil.log(commonStrings!.NOT_IMPLEMENTED, this)
+ForcedLogUtil.log(commonStrings!.NOT_IMPLEMENTED, this);
+    
 }
 
 
     public onUpMotionGestureEvent(ev: MotionGestureEvent){
 var ev = ev
-onMotionGestureEvent(ev)
+onMotionGestureEvent(ev);
+    
 }
 
 
     public onDownMotionGestureEvent(ev: MotionGestureEvent){
 var ev = ev
-onMotionGestureEvent(ev)
+onMotionGestureEvent(ev);
+    
 }
 
 
     public onLeftMotionGestureEvent(ev: MotionGestureEvent){
 var ev = ev
-onMotionGestureEvent(ev)
+onMotionGestureEvent(ev);
+    
 }
 
 
     public onRightMotionGestureEvent(ev: MotionGestureEvent){
 var ev = ev
-onMotionGestureEvent(ev)
+onMotionGestureEvent(ev);
+    
 }
 
 
     public onDiagonalDownRightMotionGestureEvent(ev: MotionGestureEvent){
 var ev = ev
-onMotionGestureEvent(ev)
+onMotionGestureEvent(ev);
+    
 }
 
 
     public onDiagonalDownLeftMotionGestureEvent(ev: MotionGestureEvent){
 var ev = ev
-onMotionGestureEvent(ev)
+onMotionGestureEvent(ev);
+    
 }
 
 
     public onDiagonalUpRightMotionGestureEvent(ev: MotionGestureEvent){
 var ev = ev
-onMotionGestureEvent(ev)
+onMotionGestureEvent(ev);
+    
 }
 
 
     public onDiagonalUpLeftMotionGestureEvent(ev: MotionGestureEvent){
 var ev = ev
-onMotionGestureEvent(ev)
+onMotionGestureEvent(ev);
+    
 }
 
 
     public onPressedMotionGestureEvent(ev: MotionGestureEvent){
 var ev = ev
-isMouseGestureOccurring= true
-currentMotionGesture= TouchMotionGestureFactory.getInstance()!.NO_MOTION
-this.onMotionGestureEvent(ev)
+isMouseGestureOccurring= true;
+    
+currentMotionGesture= TouchMotionGestureFactory.getInstance()!.NO_MOTION;
+    
+this.onMotionGestureEvent(ev);
+    
 }
 
 
@@ -156,13 +170,19 @@ var ev = ev
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return ;
     
-isMouseGestureOccurring= false
-signed.onMotionGestureCompleted(motionGestureCollection)
-motionGestureCollection!.clear()
-} catch(e: Exception)
+isMouseGestureOccurring= false;
+    
+signed.onMotionGestureCompleted(motionGestureCollection);
+    
+motionGestureCollection!.clear();
+    
+
+                //: 
+} catch(e) 
             {
 logUtil!.put(StringMaker().
-                            append(commonStrings!.EXCEPTION_LABEL)!.append(StringUtil.getInstance()!.toString(ev.getMotionGesture()))!.toString(), this, "release", e)
+                            append(commonStrings!.EXCEPTION_LABEL)!.append(StringUtil.getInstance()!.toString(ev.getMotionGesture()))!.toString(), this, "release", e);
+    
 }
 
 }
@@ -182,12 +202,14 @@ var ev = ev
     var motionGestureInput: MotionGestureInput = ev.getMotionGesture()!;
         
         
-
+;
+    
 
                         if(motionGestureInput == TouchMotionGestureFactory.getInstance()!.PRESSED)
                         
                                     {
-                                    this.onPressedMotionGestureEvent(ev)
+                                    this.onPressedMotionGestureEvent(ev);
+    
 
                                     }
                                 
@@ -195,7 +217,8 @@ var ev = ev
                         if(motionGestureInput == TouchMotionGestureFactory.getInstance()!.RELEASED)
                         
                                     {
-                                    this.released(ev)
+                                    this.released(ev);
+    
 
                                     }
                                 
@@ -204,8 +227,10 @@ var ev = ev
                         if(currentMotionGesture != motionGestureInput)
                         
                                     {
-                                    currentMotionGesture= motionGestureInput
-motionGestureCollection!.add(ev.getMotionGesture())
+                                    currentMotionGesture= motionGestureInput;
+    
+motionGestureCollection!.add(ev.getMotionGesture());
+    
 
                                     }
                                 

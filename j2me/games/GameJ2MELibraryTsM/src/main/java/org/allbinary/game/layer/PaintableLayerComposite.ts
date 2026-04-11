@@ -39,7 +39,8 @@ public constructor (paintableArray: Layer[]){
 
             super();
                 //var paintableArray = paintableArray
-this.paintableArray= paintableArray
+this.paintableArray= paintableArray;
+    
 }
 
 
@@ -56,7 +57,8 @@ this.paintableArray= paintableArray
         
 --index >= 0; )
         {
-this.paintableArray[index]!.paint(graphics)
+this.paintableArray[index]!.paint(graphics);
+    
 }
 
 }
@@ -66,7 +68,8 @@ this.paintableArray[index]!.paint(graphics)
     //var graphics = graphics
 
     var paintableInterface: PaintableInterface
-
+;
+    
 
 
 
@@ -78,8 +81,10 @@ this.paintableArray[index]!.paint(graphics)
         
 --index >= 0; )
         {
-paintableInterface= this.paintableArray[index]! as PaintableInterface
-paintableInterface!.paintThreed(graphics)
+paintableInterface= this.paintableArray[index]! as PaintableInterface;
+    
+paintableInterface!.paintThreed(graphics);
+    
 }
 
 }

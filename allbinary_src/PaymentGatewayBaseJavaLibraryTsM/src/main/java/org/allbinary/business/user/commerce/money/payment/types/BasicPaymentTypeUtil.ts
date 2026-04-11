@@ -18,7 +18,10 @@
 
 
 
-import { Vector } from "../../../../../../../../java/util/Vector.js";
+            import Vector from "@ohos.util.Vector";
+        
+
+//import { Vector } from "../../../../../../../../java/util/Vector.js";
 
     
 
@@ -55,7 +58,8 @@ private constructor (){
 
     public add(paymentType: BasicPaymentType){
 var paymentType = paymentType
-this.paymentTypeVector!.add(paymentType)
+this.paymentTypeVector!.add(paymentType);
+    
 }
 
 
@@ -67,7 +71,8 @@ var paymentTypeString = paymentTypeString
     var size: number = paymentTypeVector!.length!;
         
         
-
+;
+    
 
 
 
@@ -79,10 +84,13 @@ var paymentTypeString = paymentTypeString
 i < size; i++)
         {
 
-    var paymentType: BasicPaymentType = paymentTypeVector!.get(i) as BasicPaymentType;
-        
-        
+    var paymentType: BasicPaymentType = paymentTypeVector!.get(i);
 
+                         as BasicPaymentType;
+        
+        
+;
+    
 
                         if(paymentType!.getName()!.compareTo(paymentTypeString) == 0)
                         
@@ -112,6 +120,8 @@ var paymentType = paymentType
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.paymentTypeVector!.contains(paymentType);
+
+                        ;
     
 }
 
@@ -122,12 +132,14 @@ var a_PaymentTypeVector = a_PaymentTypeVector
     var diff: Vector = new Vector();
         
         
-
+;
+    
 
     var size: number = paymentTypeVector!.length!;
         
         
-
+;
+    
 
 
 
@@ -139,13 +151,20 @@ var a_PaymentTypeVector = a_PaymentTypeVector
 i < size; i++)
         {
 
-    var paymentType: BasicPaymentType = paymentTypeVector!.get(i) as BasicPaymentType;
+    var paymentType: BasicPaymentType = paymentTypeVector!.get(i);
+
+                         as BasicPaymentType;
         
         
+;
+    
 
+                        if(!a_PaymentTypeVector!.contains(paymentType);
 
-                        if(!a_PaymentTypeVector!.contains(paymentType))
-                        diff.add(paymentType)
+                        )
+                        diff.add(paymentType);
+
+                        
 }
 
 

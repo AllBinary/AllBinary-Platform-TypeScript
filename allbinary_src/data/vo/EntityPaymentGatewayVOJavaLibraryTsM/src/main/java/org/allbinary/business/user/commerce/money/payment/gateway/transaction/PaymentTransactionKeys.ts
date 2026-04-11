@@ -29,7 +29,8 @@ protected constructor (value: string){
 
             super();
             var value = value
-this.key= value
+this.key= value;
+    
 }
 
 

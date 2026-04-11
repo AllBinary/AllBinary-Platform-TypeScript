@@ -57,14 +57,17 @@ export class OrderHistoryTag extends TableTag {
 public constructor (){
 
             super();
-            this.setTagHelperFactory(OrderHistoryHelperFactory())
-this.setTagRequestHelperFactory(OrderHistoryRequestHelperFactory())
+            this.setTagHelperFactory(OrderHistoryHelperFactory());
+    
+this.setTagRequestHelperFactory(OrderHistoryRequestHelperFactory());
+    
 }
 
 
     public setStatus(value: string){
 var value = value
-this.status= value
+this.status= value;
+    
 }
 
 
@@ -74,16 +77,20 @@ this.status= value
 
         try {
             
-    var request: HttpServletRequest = this.pageContext!.getRequest() as HttpServletRequest;
-        
-        
+    var request: HttpServletRequest = this.pageContext!.getRequest();
 
+                         as HttpServletRequest;
+        
+        
+;
+    
 
     var anyType: any = {} = OrderHistoryRequestHelperFactory().
                             getInstance(this.getPropertiesHashMap(), pageContext)!;
         
         
-
+;
+    
 
                         if(this.status == 
                                     null
@@ -91,22 +98,27 @@ this.status= value
                         
                                     {
                                     
-    var helperClass: KClass<*> = anyType!::class!;
+    var helperClass: Function = anyType!constructor!;
         
         
-
+;
+    
 
     var method: Method = helperClass!.getMethod("setOrderStatus", 
                             null)!;
         
         
-
+;
+    
 
     var result: string = method.invoke(anyType, 
-                            null) as String;
-        
-        
+                            null);
 
+                         as String;
+        
+        
+;
+    
 
 
 
@@ -118,36 +130,43 @@ this.status= value
                                 
                         else {
                             
-    var helperClass: KClass<*> = anyType!::class!;
+    var helperClass: Function = anyType!constructor!;
         
         
+;
+    
 
-
-    var methodParams: KClass<*>[] = 
+    var methodParams: Function[] = 
                                                         [
-                                                            this.status.::class
+                                                            this.status.constructor
                                                         ];
         
         
-
+;
+    
 
     var method: Method = helperClass!.getMethod("setOrderStatus", methodParams)!;
         
         
+;
+    
 
-
-    var methodArgs: any = {}[] = 
+    var methodArgs: any[] = 
                                                         [
                                                             this.status
                                                         ];
         
         
+;
+    
 
+    var result: string = method.invoke(anyType, methodArgs);
 
-    var result: string = method.invoke(anyType, methodArgs) as String;
+                         as String;
         
         
-
+;
+    
 
 
 
@@ -157,25 +176,31 @@ this.status= value
 
                         }
                             
-} catch(e: LicensingException)
+
+                //: 
+} catch(e) 
             {
 
 
 
                             throw e
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
 
     var error: string = "Failed to set Order Status";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "setOrderStatus()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "setOrderStatus()", e);
+    
 
                                     }
                                 
@@ -205,12 +230,14 @@ this.status= value
                                 )
                         
                                     {
-                                    this.getPropertiesHashMap()!.put(OrderHistoryData.STATUS, this.status)
+                                    this.getPropertiesHashMap()!.put(OrderHistoryData.STATUS, this.status);
+    
 
                         if(this.getCommand()!.compareTo(OrderHistoryData.SETSTATUS) == 0)
                         
                                     {
-                                    this.setOrderStatus()
+                                    this.setOrderStatus();
+    
 
                                     }
                                 
@@ -220,6 +247,8 @@ this.status= value
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.doStartTag();
+
+                        ;
     
 
                         }
@@ -236,9 +265,12 @@ this.status= value
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return SKIP_BODY;
     
-} catch(e: LicensingException)
+
+                //: 
+} catch(e) 
             {
-AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e);
+    
 
 
 
@@ -246,9 +278,12 @@ AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
                         return SKIP_BODY;
     
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
-AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
+    
 
 
 

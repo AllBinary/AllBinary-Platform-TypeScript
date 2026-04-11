@@ -63,7 +63,7 @@ export class InsertThemeValidationView extends ThemeCustomizerView
         
         
 
-    private requestHashMap: HashMap<Any, Any>
+    private requestHashMap: HashMap<any, any>
 public constructor (transformInfoInterface: TransformInfoInterface)                        
 
                             : super(transformInfoInterface){
@@ -78,17 +78,20 @@ public constructor (transformInfoInterface: TransformInfoInterface)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.CONSTRUCTOR, this, "started")
+                                    logUtil!.put(this.commonStrings!.CONSTRUCTOR, this, "started");
+    
 
                                     }
                                 
 this.requestHashMap= NameSpaceRequestParams(this.getPageContext()).
-                            toHashMap()
+                            toHashMap();
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.CONSTRUCTOR, this, "begin loading theme")
+                                    logUtil!.put(this.commonStrings!.CONSTRUCTOR, this, "begin loading theme");
+    
 
                                     }
                                 
@@ -114,12 +117,14 @@ this.requestHashMap= NameSpaceRequestParams(this.getPageContext()).
     var isValid: Boolean = Boolean.TRUE;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Started Validation", this, commonStrings!.IS_VALID)
+                                    logUtil!.put("Started Validation", this, commonStrings!.IS_VALID);
+    
 
                                     }
                                 
@@ -127,22 +132,27 @@ this.requestHashMap= NameSpaceRequestParams(this.getPageContext()).
     var themeValidation: ThemeValidation = new ThemeValidation(this.getTransformInfoInterface(), requestHashMap);
         
         
-
+;
+    
 
                         if(themeValidation!.isValid() == Boolean.FALSE)
                         
                                     {
-                                    isValid= Boolean.FALSE
+                                    isValid= Boolean.FALSE;
+    
 
                                     }
                                 
-this.validationInterface= themeValidation!.getCssStyleValidation()
-isValid= this.validationInterface!.isValid()
+this.validationInterface= themeValidation!.getCssStyleValidation();
+    
+isValid= this.validationInterface!.isValid();
+    
 
                         if(isValid == Boolean.TRUE)
                         
                                     {
-                                    CustomizerUtil.getInstance()!.insert(this.getTransformInfoInterface(), this.validationInterface as DomNodeInterface)
+                                    CustomizerUtil.getInstance()!.insert(this.getTransformInfoInterface(), this.validationInterface as DomNodeInterface);
+    
 
                                     }
                                 
@@ -152,13 +162,16 @@ isValid= this.validationInterface!.isValid()
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return isValid;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("Failed to validate", this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put("Failed to validate", this, commonStrings!.IS_VALID, e);
+    
 
                                     }
                                 
@@ -180,20 +193,26 @@ isValid= this.validationInterface!.isValid()
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e)
+                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e);
+    
 
                                     }
                                 
@@ -239,14 +258,19 @@ var document = document
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return StoreCustomizerComponentUtil.getInstance()!.generate(this.abeClientInformation, this.getTransformInfoInterface());
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e);
+    
 
                                     }
                                 

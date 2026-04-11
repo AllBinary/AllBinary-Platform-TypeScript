@@ -54,7 +54,8 @@ public constructor (dataMappingInterface: TableMappingInterface){
 
             super();
             var dataMappingInterface = dataMappingInterface
-this.dataMappingInterface= dataMappingInterface
+this.dataMappingInterface= dataMappingInterface;
+    
 }
 
 
@@ -66,20 +67,27 @@ var document = document
     var EMPTY_STRING: string = StringUtil.getInstance()!.EMPTY_STRING;
         
         
+;
+    
 
-
-    var hashMap: HashMap<Any, Any> = dataMappingInterface!.toHashMap()!;
+    var hashMap: HashMap<any, any> = dataMappingInterface!.toHashMap()!;
         
         
-
-hashMap!.put(EntryData.getInstance()!.LASTMODIFIED, EMPTY_STRING)
-hashMap!.put(EntryData.getInstance()!.ENCRYPTION, EMPTY_STRING)
-hashMap!.put(UserData.PASSWORD, EMPTY_STRING)
+;
+    
+hashMap!.put(EntryData.getInstance()!.LASTMODIFIED, EMPTY_STRING);
+    
+hashMap!.put(EntryData.getInstance()!.ENCRYPTION, EMPTY_STRING);
+    
+hashMap!.put(UserData.PASSWORD, EMPTY_STRING);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return ModDomHelper.createNameValueNodes(document, UserData.NAME, hashMap);
+
+                        ;
     
 }
 

@@ -112,7 +112,8 @@ export class AndroidBasicTitleProgressBar extends ProgressCanvas
 
     public static setBackground(background: number){
 var background = background
-AndroidBasicTitleProgressBar.background= background
+AndroidBasicTitleProgressBar.background= background;
+    
 }
 
 
@@ -163,14 +164,17 @@ var foregroundBasicColor = foregroundBasicColor
 
                             //For kotlin this is before the body of the constructor.
                     
-this.init()
-DisplayChangeEventHandler.getInstance()!.addListener(this)
+this.init();
+    
+DisplayChangeEventHandler.getInstance()!.addListener(this);
+    
 
     var size: number = IMAGE.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -181,7 +185,8 @@ DisplayChangeEventHandler.getInstance()!.addListener(this)
         
 index < size; index++)
         {
-IMAGE[index]= NullCanvas.NULL_IMAGE
+IMAGE[index]= NullCanvas.NULL_IMAGE;
+    
 }
 
 }
@@ -194,15 +199,21 @@ IMAGE[index]= NullCanvas.NULL_IMAGE
                         if(AndroidBasicTitleProgressBar.background != 0)
                         
                                     {
-                                    ResourceUtil.getInstance()!.addResource(RESOURCE, Integer(AndroidBasicTitleProgressBar.background))
-GameFeatureImageCacheFactory.init()
-this.image= ImageCacheFactory.getInstance()!.get(RESOURCE)
+                                    ResourceUtil.getInstance()!.addResource(RESOURCE, Integer(AndroidBasicTitleProgressBar.background));
+    
+GameFeatureImageCacheFactory.init();
+    
+this.image= ImageCacheFactory.getInstance()!.get(RESOURCE);
+    
 
                                     }
                                 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e);
+    
 }
 
 }
@@ -216,19 +227,29 @@ var activity = activity
                         if(this.midletActivity != activity)
                         
                                     {
-                                    this.midletActivity= activity
-this.showTitleProgressBarRunnable= ShowTitleProgressBarRunnable(this.midletActivity, this)
-this.dismissTitleProgressBarRunnable= DismissTitleProgressBarRunnable(this.midletActivity, this)
-this.titleProgressDialogSetProgressRunnable= TitleProgressBarSetProgressRunnable(this.midletActivity, this)
-this.titleProgressDialogPortionSetProgressRunnable= TitleProgressBarPortionSetProgressRunnable(this.midletActivity, this)
-this.loadProgressImages()
+                                    this.midletActivity= activity;
+    
+this.showTitleProgressBarRunnable= ShowTitleProgressBarRunnable(this.midletActivity, this);
+    
+this.dismissTitleProgressBarRunnable= DismissTitleProgressBarRunnable(this.midletActivity, this);
+    
+this.titleProgressDialogSetProgressRunnable= TitleProgressBarSetProgressRunnable(this.midletActivity, this);
+    
+this.titleProgressDialogPortionSetProgressRunnable= TitleProgressBarPortionSetProgressRunnable(this.midletActivity, this);
+    
+this.loadProgressImages();
+    
 
                                     }
                                 
-this.updateCurrent()
-} catch(e: Exception)
+this.updateCurrent();
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e);
+    
 }
 
 }
@@ -238,10 +259,13 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e)
 
         try {
             
-                        if(!this.isBackground())
+                        if(!this.isBackground();
+
+                        )
                         
                                     {
-                                    this.animation= NullAnimationFactory.getFactoryInstance()!.getInstance(0)
+                                    this.animation= NullAnimationFactory.getFactoryInstance()!.getInstance(0);
+    
 
                                     }
                                 
@@ -253,20 +277,24 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e)
     var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
         
         
-
+;
+    
 
     var currentImage: Image
-
+;
+    
 
                         if(displayInfo!.isPortrait())
                         
                                     {
-                                    currentImage= this.getImage(0)
+                                    currentImage= this.getImage(0);
+    
 
                                     }
                                 
                         else {
-                            currentImage= this.getImage(2)
+                            currentImage= this.getImage(2);
+    
 
                         }
                             
@@ -276,21 +304,26 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e)
                                 )
                         
                                     {
-                                    this.animation= NullAnimationFactory.getFactoryInstance()!.getInstance(0)
+                                    this.animation= NullAnimationFactory.getFactoryInstance()!.getInstance(0);
+    
 
                                     }
                                 
                         else {
-                            this.animation= ImageAnimation(currentImage, AnimationBehavior.getInstance())
+                            this.animation= ImageAnimation(currentImage, AnimationBehavior.getInstance());
+    
 
                         }
                             
 
                                     }
                                 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.UPDATE, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.UPDATE, e);
+    
 }
 
 }
@@ -298,7 +331,8 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.UPDATE, e)
 
     public onEvent(eventObject: AllBinaryEventObject){
 var eventObject = eventObject
-ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
+ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
+    
 }
 
 
@@ -306,12 +340,18 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
 var displayChangeEvent = displayChangeEvent
 
         try {
-            this.loadProgressImages()
-this.updateCurrent()
-} catch(e: Exception)
+            this.loadProgressImages();
+    
+this.updateCurrent();
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION_LABEL +ExceptionUtil.getInstance()!.getStackTrace(e), this, this.canvasStrings!.ON_DISPLAY_CHANGE_EVENT)
-this.animation= NullAnimationFactory.getFactoryInstance()!.getInstance(0)
+logUtil!.put(commonStrings!.EXCEPTION_LABEL +ExceptionUtil.getInstance()!.getStackTrace(e), this, this.canvasStrings!.ON_DISPLAY_CHANGE_EVENT);
+    
+this.animation= NullAnimationFactory.getFactoryInstance()!.getInstance(0);
+    
 }
 
 }
@@ -324,39 +364,52 @@ this.animation= NullAnimationFactory.getFactoryInstance()!.getInstance(0)
     var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
         
         
-
+;
+    
 
     var lastWidth: number = displayInfo!.getLastWidth()!;
         
         
-
+;
+    
 
     var lastHeight: number = displayInfo!.getLastHeight()!;
         
         
-
+;
+    
 
                         if(displayInfo!.isPortrait(lastWidth, lastHeight))
                         
                                     {
-                                    this.setImages(0, lastWidth, lastHeight)
+                                    this.setImages(0, lastWidth, lastHeight);
+    
 
                                     }
                                 
                         else {
-                            this.setImages(2, lastWidth, lastHeight)
+                            this.setImages(2, lastWidth, lastHeight);
+    
 
                         }
                             
-} catch(e: IllegalArgumentException)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put("IllegalArgumentException " +ExceptionUtil.getInstance()!.getStackTrace(e), this, "loadProgressImages")
-this.animation= NullAnimationFactory.getFactoryInstance()!.getInstance(0)
+logUtil!.put("IllegalArgumentException " +ExceptionUtil.getInstance()!.getStackTrace(e), this, "loadProgressImages");
+    
+this.animation= NullAnimationFactory.getFactoryInstance()!.getInstance(0);
+    
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION_LABEL +ExceptionUtil.getInstance()!.getStackTrace(e), this, "loadProgressImages")
-this.animation= NullAnimationFactory.getFactoryInstance()!.getInstance(0)
+logUtil!.put(commonStrings!.EXCEPTION_LABEL +ExceptionUtil.getInstance()!.getStackTrace(e), this, "loadProgressImages");
+    
+this.animation= NullAnimationFactory.getFactoryInstance()!.getInstance(0);
+    
 }
 
 }
@@ -392,12 +445,18 @@ this.animation= NullAnimationFactory.getFactoryInstance()!.getInstance(0)
     public start(){
 
         try {
-            logUtil!.put(commonStrings!.START, this, commonStrings!.START_METHOD_NAME)
-super.start()
-this.midletActivity!.runOnUiThread(showTitleProgressBarRunnable)
-} catch(e: Exception)
+            logUtil!.put(commonStrings!.START, this, commonStrings!.START_METHOD_NAME);
+    
+super.start();
+    
+this.midletActivity!.runOnUiThread(showTitleProgressBarRunnable);
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.START_METHOD_NAME, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.START_METHOD_NAME, e);
+    
 }
 
 }
@@ -406,12 +465,18 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.START_METHOD_NAME, e
     public end(){
 
         try {
-            logUtil!.put(commonStrings!.START, this, commonStrings!.END_METHOD_NAME)
-this.midletActivity!.runOnUiThread(dismissTitleProgressBarRunnable)
-super.end()
-} catch(e: Exception)
+            logUtil!.put(commonStrings!.START, this, commonStrings!.END_METHOD_NAME);
+    
+this.midletActivity!.runOnUiThread(dismissTitleProgressBarRunnable);
+    
+super.end();
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.END_METHOD_NAME, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.END_METHOD_NAME, e);
+    
 }
 
 }
@@ -423,19 +488,25 @@ var text = text
 var index = index
 
         try {
-            this.portion= value
-super.addEarlyPortion(value, text, index)
+            this.portion= value;
+    
+super.addEarlyPortion(value, text, index);
+    
 
                         if(this.midletActivity != AndroidUtil.NULL_ACTIVITY)
                         
                                     {
-                                    this.midletActivity!.runOnUiThread(titleProgressDialogPortionSetProgressRunnable)
+                                    this.midletActivity!.runOnUiThread(titleProgressDialogPortionSetProgressRunnable);
+    
 
                                     }
                                 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, ADD_PORTION, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, ADD_PORTION, e);
+    
 }
 
 }
@@ -447,12 +518,18 @@ var text = text
 var index = index
 
         try {
-            this.portion= value
-super.addPortion(value, text, index)
-this.midletActivity!.runOnUiThread(titleProgressDialogPortionSetProgressRunnable)
-} catch(e: Exception)
+            this.portion= value;
+    
+super.addPortion(value, text, index);
+    
+this.midletActivity!.runOnUiThread(titleProgressDialogPortionSetProgressRunnable);
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, ADD_PORTION, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, ADD_PORTION, e);
+    
 }
 
 }
@@ -463,12 +540,18 @@ var value = value
 var text = text
 
         try {
-            this.portion= value
-super.addPortion(value, text)
-this.midletActivity!.runOnUiThread(titleProgressDialogPortionSetProgressRunnable)
-} catch(e: Exception)
+            this.portion= value;
+    
+super.addPortion(value, text);
+    
+this.midletActivity!.runOnUiThread(titleProgressDialogPortionSetProgressRunnable);
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, ADD_PORTION, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, ADD_PORTION, e);
+    
 }
 
 }
@@ -478,11 +561,16 @@ logUtil!.put(commonStrings!.EXCEPTION, this, ADD_PORTION, e)
 var value = value
 
         try {
-            super.setValue(value)
-this.midletActivity!.runOnUiThread(titleProgressDialogSetProgressRunnable)
-} catch(e: Exception)
+            super.setValue(value);
+    
+this.midletActivity!.runOnUiThread(titleProgressDialogSetProgressRunnable);
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "setValue", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "setValue", e);
+    
 }
 
 }
@@ -502,7 +590,8 @@ var lastHeight = lastHeight
     var image: Image = this.image;
         
         
-
+;
+    
 
                         if(image != NullCanvas.NULL_IMAGE)
                         
@@ -515,7 +604,12 @@ var lastHeight = lastHeight
                         if(this.IMAGE[index] == NullCanvas.NULL_IMAGE)
                         
                                     {
-                                    this.IMAGE[index]= ImageScaleUtil.getInstance()!.createImage(ImageCacheFactory.getInstance(), image, lastWidth.toFloat(), image.getWidth().toFloat(), lastHeight.toFloat() -20, image.getHeight().toFloat(), false)
+                                    this.IMAGE[index]= ImageScaleUtil.getInstance()!.createImage(ImageCacheFactory.getInstance(), image, lastWidth.toFloat(), image.getWidth();
+
+                        .toFloat(), lastHeight.toFloat() -20, image.getHeight();
+
+                        .toFloat(), false);
+    
 
                                     }
                                 
@@ -527,12 +621,18 @@ var lastHeight = lastHeight
     var nextIndex: number = index +1;
         
         
-
+;
+    
 
                         if(this.IMAGE[nextIndex] == NullCanvas.NULL_IMAGE)
                         
                                     {
-                                    this.IMAGE[nextIndex]= ImageScaleUtil.getInstance()!.createImage(ImageCacheFactory.getInstance(), image, lastWidth.toFloat(), image.getWidth().toFloat(), lastHeight.toFloat() -28, image.getHeight().toFloat(), false)
+                                    this.IMAGE[nextIndex]= ImageScaleUtil.getInstance()!.createImage(ImageCacheFactory.getInstance(), image, lastWidth.toFloat(), image.getWidth();
+
+                        .toFloat(), lastHeight.toFloat() -28, image.getHeight();
+
+                        .toFloat(), false);
+    
 
                                     }
                                 
@@ -549,19 +649,23 @@ var lastHeight = lastHeight
             
     public initOpenGL(graphics: Graphics){
 var graphics = graphics
-logUtil!.put(commonStrings!.START, this, commonStrings!.INIT)
-this.image= GameFeatureImageCacheFactory.getInstance()!.get(RESOURCE)
+logUtil!.put(commonStrings!.START, this, commonStrings!.INIT);
+    
+this.image= GameFeatureImageCacheFactory.getInstance()!.get(RESOURCE);
+    
 
     var preResourceImageUtil: PreResourceImageUtil = PreResourceImageUtil.getInstance()!;
         
         
-
+;
+    
 
     var size: number = this.IMAGE.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -576,13 +680,15 @@ index < size; index++)
                         if(this.IMAGE[index] != NullCanvas.NULL_IMAGE)
                         
                                     {
-                                    this.IMAGE[index]= preResourceImageUtil!.encapsulate(this.IMAGE[index]!)
+                                    this.IMAGE[index]= preResourceImageUtil!.encapsulate(this.IMAGE[index]!);
+    
 
                                     }
                                 
 }
 
-this.updateCurrent()
+this.updateCurrent();
+    
 }
 
 
@@ -590,20 +696,25 @@ this.updateCurrent()
             
     public update(graphics: Graphics){
 var graphics = graphics
-logUtil!.put(commonStrings!.START, this, commonStrings!.UPDATE)
-this.initOpenGL(graphics)
-this.image= GameFeatureImageCacheFactory.getInstance()!.get(RESOURCE)
+logUtil!.put(commonStrings!.START, this, commonStrings!.UPDATE);
+    
+this.initOpenGL(graphics);
+    
+this.image= GameFeatureImageCacheFactory.getInstance()!.get(RESOURCE);
+    
 
     var preResourceImageUtil: PreResourceImageUtil = PreResourceImageUtil.getInstance()!;
         
         
-
+;
+    
 
     var size: number = this.IMAGE.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -618,7 +729,8 @@ index < size; index++)
                         if(this.IMAGE[index] != NullCanvas.NULL_IMAGE)
                         
                                     {
-                                    preResourceImageUtil!.update(graphics, this.IMAGE[index]!)
+                                    preResourceImageUtil!.update(graphics, this.IMAGE[index]!);
+    
 
                                     }
                                 
@@ -635,17 +747,20 @@ var index = index
     var image: Image = NullCanvas.NULL_IMAGE;
         
         
-
+;
+    
 
                         if(Features.getInstance()!.isFeature(MainFeatureFactory.getInstance()!.FULL_SCREEN))
                         
                                     {
-                                    image= this.IMAGE[index]!
+                                    image= this.IMAGE[index]!;
+    
 
                                     }
                                 
                         else {
-                            image= this.IMAGE[index +1]!
+                            image= this.IMAGE[index +1]!;
+    
 
                         }
                             
@@ -662,11 +777,16 @@ var index = index
 var graphics = graphics
 
         try {
-            animation.paint(graphics, 0, 20)
-super.paint2(graphics)
-} catch(e: Exception)
+            animation.paint(graphics, 0, 20);
+    
+super.paint2(graphics);
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, canvasStrings!.PAINT, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, canvasStrings!.PAINT, e);
+    
 }
 
 }
@@ -674,14 +794,17 @@ logUtil!.put(commonStrings!.EXCEPTION, this, canvasStrings!.PAINT, e)
 
     setBackground(background: boolean){
 var background = background
-super.setBackground(background)
-this.updateCurrent()
+super.setBackground(background);
+    
+this.updateCurrent();
+    
 }
 
 
     setPortion(portion: number){
 var portion = portion
-this.portion= portion
+this.portion= portion;
+    
 }
 
 

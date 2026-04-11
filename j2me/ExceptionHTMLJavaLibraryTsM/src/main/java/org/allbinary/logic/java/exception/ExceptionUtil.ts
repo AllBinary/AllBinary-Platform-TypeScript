@@ -53,7 +53,8 @@ private constructor (){
 
     /*actual*/ public getStackTrace(e: Error): string{
 var e = e
-e.printStackTrace()
+e.printStackTrace();
+    
 
 
 

@@ -73,15 +73,18 @@ private constructor (index: number, size: number){
             super();
             var index = index
 var size = size
-this.setSize(size)
-this.setIndex(index)
+this.setSize(size);
+    
+this.setIndex(index);
+    
 }
 
 private constructor (size: number){
 
             super();
             var size = size
-this.setSize(size)
+this.setSize(size);
+    
 }
 
 
@@ -90,12 +93,14 @@ this.setSize(size)
                         if(this.index >= this.lastIndex)
                         
                                     {
-                                    this.index= 0
+                                    this.index= 0;
+    
 
                                     }
                                 
                         else {
-                            this.index++
+                            this.index++;
+    
 
                         }
                             
@@ -113,12 +118,14 @@ this.setSize(size)
                         if(this.index < 1)
                         
                                     {
-                                    this.index= this.lastIndex
+                                    this.index= this.lastIndex;
+    
 
                                     }
                                 
                         else {
-                            this.index--
+                            this.index--;
+    
 
                         }
                             
@@ -146,7 +153,8 @@ var index = index
 
                                     }
                                 
-this.index= index
+this.index= index;
+    
 }
 
 
@@ -162,9 +170,12 @@ this.index= index
 
     public setSize(size: number){
 var size = size
-this.size= size
-this.lastIndex= size -1
-this.index= 0
+this.size= size;
+    
+this.lastIndex= size -1;
+    
+this.index= 0;
+    
 }
 
 
@@ -185,6 +196,8 @@ this.index= 0
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return StringMaker().
                             append(CommonLabels.getInstance()!.INDEX_LABEL)!.appendint(this.index)!.append("lastIndex: ")!.appendint(this.lastIndex)!.append("size: ")!.appendint(this.size)!.toString();
+
+                        ;
     
 }
 

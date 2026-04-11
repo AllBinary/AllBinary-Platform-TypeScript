@@ -69,43 +69,61 @@ export class PlatformFormInputMappingFactory
     var pcKeyFactory: PCKeyFactory = PCKeyFactory.getInstance()!;
         
         
-
+;
+    
 
     var inputToGameKeyMapping: InputToGameKeyMapping = new InputToGameKeyMapping();
         
         
-
+;
+    
 
     var gameKeyFactory: GameKeyFactory = GameKeyFactory.getInstance()!;
         
         
-
+;
+    
 
     var basicTouchInputFactory: BasicTouchInputFactory = BasicTouchInputFactory.getInstance()!;
         
         
-
-inputToGameKeyMapping!.add(gameKeyFactory!.UP, pcKeyFactory!.DPAD_UP)
-inputToGameKeyMapping!.add(gameKeyFactory!.DOWN, pcKeyFactory!.DPAD_DOWN)
-inputToGameKeyMapping!.add(gameKeyFactory!.LEFT, pcKeyFactory!.DPAD_LEFT)
-inputToGameKeyMapping!.add(gameKeyFactory!.RIGHT, pcKeyFactory!.DPAD_RIGHT)
-inputToGameKeyMapping!.add(gameKeyFactory!.KEY_NUM1, pcKeyFactory!.ENTER)
-inputToGameKeyMapping!.add(gameKeyFactory!.UP, basicTouchInputFactory!.UP)
-inputToGameKeyMapping!.add(gameKeyFactory!.LEFT, basicTouchInputFactory!.LEFT)
-inputToGameKeyMapping!.add(gameKeyFactory!.RIGHT, basicTouchInputFactory!.RIGHT)
-inputToGameKeyMapping!.add(gameKeyFactory!.DOWN, basicTouchInputFactory!.DOWN)
-SINGLETON= inputToGameKeyMapping
+;
+    
+inputToGameKeyMapping!.add(gameKeyFactory!.UP, pcKeyFactory!.DPAD_UP);
+    
+inputToGameKeyMapping!.add(gameKeyFactory!.DOWN, pcKeyFactory!.DPAD_DOWN);
+    
+inputToGameKeyMapping!.add(gameKeyFactory!.LEFT, pcKeyFactory!.DPAD_LEFT);
+    
+inputToGameKeyMapping!.add(gameKeyFactory!.RIGHT, pcKeyFactory!.DPAD_RIGHT);
+    
+inputToGameKeyMapping!.add(gameKeyFactory!.KEY_NUM1, pcKeyFactory!.ENTER);
+    
+inputToGameKeyMapping!.add(gameKeyFactory!.UP, basicTouchInputFactory!.UP);
+    
+inputToGameKeyMapping!.add(gameKeyFactory!.LEFT, basicTouchInputFactory!.LEFT);
+    
+inputToGameKeyMapping!.add(gameKeyFactory!.RIGHT, basicTouchInputFactory!.RIGHT);
+    
+inputToGameKeyMapping!.add(gameKeyFactory!.DOWN, basicTouchInputFactory!.DOWN);
+    
+SINGLETON= inputToGameKeyMapping;
+    
 
                                     }
                                 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e);
+    
 }
 
 

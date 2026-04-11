@@ -59,10 +59,14 @@ var request = request
     var urlGlobals: AppUrlGlobals = new AppUrlGlobals();
         
         
-
-urlGlobals!.setWebappPath(request.getServletContext()!.getRealPath(AbPathData.getInstance()!.SEPARATOR))
-URLGLOBALS.init(urlGlobals)
-WebappClassLoaderInfo.setLoader(::class.java.classLoader)
+;
+    
+urlGlobals!.setWebappPath(request.getServletContext()!.getRealPath(AbPathData.getInstance()!.SEPARATOR));
+    
+URLGLOBALS.init(urlGlobals);
+    
+WebappClassLoaderInfo.setLoader(.constructor.name.java.classLoader);
+    
 }
 
 

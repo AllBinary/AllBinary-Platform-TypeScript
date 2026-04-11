@@ -38,7 +38,7 @@ export class PointsUtil
 }
 
 
-    public adjust(points: IntArray[][], x: number, y: number): IntArray[][]{
+    public adjust(points: number[][][], x: number, y: number): number[][][]{
     //var points = points
     //var x = x
     //var y = y
@@ -47,12 +47,14 @@ export class PointsUtil
                 ;
         
         
+;
+    
 
-
-    var newPoints: IntArray[][] = Array(size) { Array(0) { IntArray(0) } };
+    var newPoints: number[][][] = Array.from({ length: size }, () => Array.from({ length: 0 }, () => new Array(0).fill(0)));
         
         
-
+;
+    
 
 
 
@@ -68,8 +70,10 @@ index < size; index++)
                 ;
         
         
-
-newPoints[index]= Array(size2) { IntArray(2) }
+;
+    
+newPoints[index]= new Array(size2) [2];
+    
 
 
 
@@ -84,14 +88,18 @@ index2 < size2; index2++)
                         if(points[index]![index2]![0] != 1000)
                         
                                     {
-                                    newPoints[index]![index2]![0]= points[index]![index2]![0] +x
-newPoints[index]![index2]![1]= points[index]![index2]![1] +y
+                                    newPoints[index]![index2]![0]= points[index]![index2]![0] +x;
+    
+newPoints[index]![index2]![1]= points[index]![index2]![1] +y;
+    
 
                                     }
                                 
                         else {
-                            newPoints[index]![index2]![0]= 1000
-newPoints[index]![index2]![1]= 1000
+                            newPoints[index]![index2]![0]= 1000;
+    
+newPoints[index]![index2]![1]= 1000;
+    
 
                         }
                             
@@ -108,7 +116,7 @@ newPoints[index]![index2]![1]= 1000
 }
 
 
-    public adjust(points: IntArray[], both: number): IntArray[]{
+    public adjust(points: number[][], both: number): number[][]{
 var points = points
 var both = both
 
@@ -116,19 +124,22 @@ var both = both
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return adjust(points, both, both);
+
+                        ;
     
 }
 
 
-    public adjust(points: IntArray[], x: number, y: number): IntArray[]{
+    public adjust(points: number[][], x: number, y: number): number[][]{
 var points = points
 var x = x
 var y = y
 
-    var newPoints: IntArray[] = Array(points.length) { IntArray(2) };
+    var newPoints: number[][] = new Array(points.length) [2];
         
         
-
+;
+    
 
 
 
@@ -143,14 +154,18 @@ index2 < points.length; index2++)
                         if(points[index2]![0] != 1000)
                         
                                     {
-                                    newPoints[index2]![0]= points[index2]![0] +x
-newPoints[index2]![1]= points[index2]![1] +y
+                                    newPoints[index2]![0]= points[index2]![0] +x;
+    
+newPoints[index2]![1]= points[index2]![1] +y;
+    
 
                                     }
                                 
                         else {
-                            newPoints[index2]![0]= 1000
-newPoints[index2]![1]= 1000
+                            newPoints[index2]![0]= 1000;
+    
+newPoints[index2]![1]= 1000;
+    
 
                         }
                             

@@ -77,7 +77,8 @@ protected constructor (recordId: string){
 
             super();
                 //var recordId = recordId
-this.recordId= recordId
+this.recordId= recordId;
+    
 }
 
 
@@ -85,7 +86,8 @@ this.recordId= recordId
             
     public deleteRecoreStore(abeClientInformation: AbeClientInformationInterface){
     //var abeClientInformation = abeClientInformation
-RecordStore.deleteRecordStore(this.getRecordId(abeClientInformation))
+RecordStore.deleteRecordStore(this.getRecordId(abeClientInformation));
+    
 }
 
 
@@ -97,7 +99,8 @@ RecordStore.deleteRecordStore(this.getRecordId(abeClientInformation))
     var size: number = idList!.size()!;
         
         
-
+;
+    
 
 
 
@@ -112,11 +115,14 @@ index < size; index++)
     var integer: Integer = this.idList!.objectArray[index]! as Integer;
         
         
-
-this.delete(abeClientInformation, integer.toInt())
+;
+    
+this.delete(abeClientInformation, integer.toInt());
+    
 }
 
-this.clear()
+this.clear();
+    
 }
 
 
@@ -129,14 +135,20 @@ this.clear()
     var recordStore: RecordStore = NullRecordStore.NULL_RECORD_STORE;
         
         
-
+;
+    
 
         try {
             logUtil!.put(StringMaker().
-                            append(this.persistanceStrings!.DELETING_WITH_ID)!.appendint(deleteId)!.toString(), this, this.commonStrings!.delete)
-recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation), true)
-recordStore!.deleteRecord(deleteId)
-} catch(e: Exception)
+                            append(this.persistanceStrings!.DELETING_WITH_ID)!.appendint(deleteId)!.toString(), this, this.commonStrings!.delete);
+    
+recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation), true);
+    
+recordStore!.deleteRecord(deleteId);
+    
+
+                //: 
+} catch(e) 
             {
 
 
@@ -151,8 +163,10 @@ recordStore!.deleteRecord(deleteId)
                                 )
                         
                                     {
-                                    PreLogUtil.put(this.persistanceStrings!.CLOSING_RECORDSTORE, this, this.commonStrings!.delete)
-recordStore!.closeRecordStore()
+                                    PreLogUtil.put(this.persistanceStrings!.CLOSING_RECORDSTORE, this, this.commonStrings!.delete);
+    
+recordStore!.closeRecordStore();
+    
 
                                     }
                                 
@@ -169,6 +183,8 @@ recordStore!.closeRecordStore()
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return platformRecordIdUtil!.getRecordId(abeClientInformation, recordId);
+
+                        ;
     
 }
 
@@ -194,8 +210,10 @@ recordStore!.closeRecordStore()
 
 
     public clear(){
-this.valueList!.clear()
-this.idList!.clear()
+this.valueList!.clear();
+    
+this.idList!.clear();
+    
 }
 
 

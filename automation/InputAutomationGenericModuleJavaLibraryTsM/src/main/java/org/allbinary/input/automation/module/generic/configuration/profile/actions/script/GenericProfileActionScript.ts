@@ -18,10 +18,13 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { HashMap } from "../../../../../../../../../../java/util/HashMap.js";
 
     
-import { Vector } from "../../../../../../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../../../../../../java/util/Vector.js";
 
     
 import { DefaultMutableTreeNode } from "../../../../../../../../../../javax/swing/tree/DefaultMutableTreeNode.js";
@@ -91,13 +94,16 @@ var node = node
 
                             //For kotlin this is before the body of the constructor.
                     
-this.genericProfileActionJPanel= genericProfileActionJPanel
-this.setProfileActionConditionInterfaceVector(Vector())
+this.genericProfileActionJPanel= genericProfileActionJPanel;
+    
+this.setProfileActionConditionInterfaceVector(Vector());
+    
 
     var actionScriptNode: Node = DomSearchHelper.getNode(GenericProfileActionData.SCRIPT, node.getChildNodes())!;
         
         
-
+;
+    
 
                         if(actionScriptNode != 
                                     null
@@ -108,7 +114,8 @@ this.setProfileActionConditionInterfaceVector(Vector())
     var nodeList: NodeList = actionScriptNode!.getChildNodes()!;
         
         
-
+;
+    
 
 
 
@@ -123,12 +130,14 @@ index < nodeList!.getLength(); index++)
     var actionConditionNode: Node = nodeList!.item(index)!;
         
         
-
+;
+    
 
                         if(actionConditionNode!.getNodeType() == Node.ELEMENT_NODE)
                         
                                     {
-                                    this.addCondition(ProfileActionScriptConditionFactory.getInstance(actionConditionNode))
+                                    this.addCondition(ProfileActionScriptConditionFactory.getInstance(actionConditionNode));
+    
 
                                     }
                                 
@@ -151,34 +160,44 @@ public constructor (genericProfileActionJPanel: GenericProfileActionJPanel){
 
             super();
             var genericProfileActionJPanel = genericProfileActionJPanel
-this.genericProfileActionJPanel= genericProfileActionJPanel
-this.setProfileActionConditionInterfaceVector(Vector())
+this.genericProfileActionJPanel= genericProfileActionJPanel;
+    
+this.setProfileActionConditionInterfaceVector(Vector());
+    
 }
 
 
     public addCondition(profileActionScriptNodeInterface: ProfileActionScriptNodeInterface){
 var profileActionScriptNodeInterface = profileActionScriptNodeInterface
-logUtil!.put(this.commonStrings!.START, this, "addCondition")
-this.getProfileActionConditionInterfaceVector()!.add(profileActionScriptNodeInterface)
-this.add(profileActionScriptNodeInterface)
+logUtil!.put(this.commonStrings!.START, this, "addCondition");
+    
+this.getProfileActionConditionInterfaceVector()!.add(profileActionScriptNodeInterface);
+    
+this.add(profileActionScriptNodeInterface);
+    
 }
 
 
     public removeCondition(profileActionScriptNodeInterface: ProfileActionScriptNodeInterface){
 var profileActionScriptNodeInterface = profileActionScriptNodeInterface
-logUtil!.put(this.commonStrings!.START, this, "removeCondition")
-this.getProfileActionConditionInterfaceVector()!.remove(profileActionScriptNodeInterface)
-this.remove(profileActionScriptNodeInterface)
+logUtil!.put(this.commonStrings!.START, this, "removeCondition");
+    
+this.getProfileActionConditionInterfaceVector()!.remove(profileActionScriptNodeInterface);
+    
+this.remove(profileActionScriptNodeInterface);
+    
 }
 
 
-    public toHashMap(): HashMap<Any, Any>{
+    public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
         
         
-
-logUtil!.put("HashMap: " +hashMap!.toString(), this, "toHashMap()")
+;
+    
+logUtil!.put("HashMap: " +hashMap!.toString(), this, "toHashMap()");
+    
 
 
 
@@ -200,7 +219,8 @@ logUtil!.put("HashMap: " +hashMap!.toString(), this, "toHashMap()")
 
     public setProfileActionConditionInterfaceVector(profileActionConditionInterfaceVector: Vector){
 var profileActionConditionInterfaceVector = profileActionConditionInterfaceVector
-this.profileActionConditionInterfaceVector= profileActionConditionInterfaceVector
+this.profileActionConditionInterfaceVector= profileActionConditionInterfaceVector;
+    
 }
 
 
@@ -212,17 +232,20 @@ var document = document
     var node: Node = document.createElement(GenericProfileActionData.SCRIPT)!;
         
         
-
+;
+    
 
     var vector: Vector = this.getProfileActionConditionInterfaceVector()!;
         
         
-
+;
+    
 
     var size: number = vector.length!;
         
         
-
+;
+    
 
 
 
@@ -234,11 +257,15 @@ var document = document
 index < size; index++)
         {
 
-    var profileActionConditionInterface: ProfileActionScriptConditionInterface = vector.get(index) as ProfileActionScriptConditionInterface;
-        
-        
+    var profileActionConditionInterface: ProfileActionScriptConditionInterface = vector.get(index);
 
-node.appendChild(profileActionConditionInterface!.toXmlNode(document))
+                         as ProfileActionScriptConditionInterface;
+        
+        
+;
+    
+node.appendChild(profileActionConditionInterface!.toXmlNode(document));
+    
 }
 
 

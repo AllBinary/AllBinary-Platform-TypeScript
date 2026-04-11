@@ -72,7 +72,8 @@ var document = document
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setDocument(this.generate(this.toXmlDoc()))
+this.setDocument(this.generate(this.toXmlDoc()));
+    
 }
 
 public constructor (transformInfoInterface: Object, name: string, type: string)                        
@@ -87,7 +88,8 @@ var type = type
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setDocument(this.generate(this.toXmlDoc()))
+this.setDocument(this.generate(this.toXmlDoc()));
+    
 }
 
 
@@ -99,7 +101,8 @@ var aParentViewName = aParentViewName
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Setting: " +aParentViewName, this, "set()")
+                                    logUtil!.put("Setting: " +aParentViewName, this, "set()");
+    
 
                                     }
                                 
@@ -107,12 +110,14 @@ var aParentViewName = aParentViewName
     var document: Document = this.toXmlDoc()!;
         
         
-
+;
+    
 
     var parentComponentsNodeList: NodeList = document.getElementsByTagName(TransformInfosData.getInstance()!.NAME)!;
         
         
-
+;
+    
 
                         if(parentComponentsNodeList != 
                                     null
@@ -123,7 +128,8 @@ var aParentViewName = aParentViewName
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Replacing", this, "set()")
+                                    logUtil!.put("Replacing", this, "set()");
+    
 
                                     }
                                 
@@ -131,19 +137,22 @@ var aParentViewName = aParentViewName
     var componentNode: Node = parentComponentsNodeList!.item(0)!.getChildNodes()!.item(0)!;
         
         
-
+;
+    
 
                         if(componentNode != 
                                     null
                                 )
                         
                                     {
-                                    document.removeChild(componentNode)
+                                    document.removeChild(componentNode);
+    
 
                                     }
                                 
 parentComponentsNodeList!.item(0)!.appendChild(TransformInfoDomNodeView(aParentViewName).
-                            toXmlNode(document))
+                            toXmlNode(document));
+    
 
                                     }
                                 
@@ -152,7 +161,8 @@ parentComponentsNodeList!.item(0)!.appendChild(TransformInfoDomNodeView(aParentV
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Setting", this, "set()")
+                                    logUtil!.put("Setting", this, "set()");
+    
 
                                     }
                                 
@@ -160,19 +170,24 @@ parentComponentsNodeList!.item(0)!.appendChild(TransformInfoDomNodeView(aParentV
     var objectConfigNode: Node = document.getElementsByTagName(TransformInfoObjectConfigData.getInstance()!.NAME)!.item(0)!;
         
         
-
+;
+    
 
     var parentComponentsNode: Node = document.createElement(TransformInfosData.getInstance()!.NAME)!;
         
         
-
-objectConfigNode!.appendChild(parentComponentsNode)
+;
+    
+objectConfigNode!.appendChild(parentComponentsNode);
+    
 
     var transformInfoDomNodeView: TransformInfoDomNodeView = new TransformInfoDomNodeView(aParentViewName);
         
         
-
-parentComponentsNode!.appendChild(transformInfoDomNodeView!.toXmlNode(document))
+;
+    
+parentComponentsNode!.appendChild(transformInfoDomNodeView!.toXmlNode(document));
+    
 
                         }
                             

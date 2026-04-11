@@ -39,8 +39,10 @@ public constructor (imageComparisonResult: ImageComparisonResult, frame: Long){
             super();
             var imageComparisonResult = imageComparisonResult
 var frame = frame
-this.setImageComparisonResult(imageComparisonResult)
-this.frame= frame
+this.setImageComparisonResult(imageComparisonResult);
+    
+this.frame= frame;
+    
 }
 
 
@@ -66,7 +68,8 @@ this.frame= frame
 
     public setFrame(frame: Long){
 var frame = frame
-this.frame= frame
+this.frame= frame;
+    
 }
 
 
@@ -82,7 +85,8 @@ this.frame= frame
 
     public setImageComparisonResult(imageComparisonResult: ImageComparisonResult){
 var imageComparisonResult = imageComparisonResult
-this.imageComparisonResult= imageComparisonResult
+this.imageComparisonResult= imageComparisonResult;
+    
 }
 
 
@@ -91,15 +95,21 @@ this.imageComparisonResult= imageComparisonResult
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(this::class.toString()!)
-stringBuffer!.append(" Frame: ")
-stringBuffer!.appendlong(this.getFrame())
+;
+    
+stringBuffer!.append(this.constructor.name.toString()!);
+    
+stringBuffer!.append(" Frame: ");
+    
+stringBuffer!.appendlong(this.getFrame());
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

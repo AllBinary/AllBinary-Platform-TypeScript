@@ -66,29 +66,41 @@ export class PlatformFormInputMappingFactory
     var inputToGameKeyMapping: InputToGameKeyMapping = new InputToGameKeyMapping();
         
         
-
+;
+    
 
     var gameKeyFactory: GameKeyFactory = GameKeyFactory.getInstance()!;
         
         
-
-inputToGameKeyMapping!.add(gameKeyFactory!.UP, gameKeyFactory!.UP)
-inputToGameKeyMapping!.add(gameKeyFactory!.DOWN, gameKeyFactory!.DOWN)
-inputToGameKeyMapping!.add(gameKeyFactory!.LEFT, gameKeyFactory!.LEFT)
-inputToGameKeyMapping!.add(gameKeyFactory!.RIGHT, gameKeyFactory!.RIGHT)
-inputToGameKeyMapping!.add(gameKeyFactory!.KEY_NUM1, gameKeyFactory!.GAME_A)
-SINGLETON= inputToGameKeyMapping
+;
+    
+inputToGameKeyMapping!.add(gameKeyFactory!.UP, gameKeyFactory!.UP);
+    
+inputToGameKeyMapping!.add(gameKeyFactory!.DOWN, gameKeyFactory!.DOWN);
+    
+inputToGameKeyMapping!.add(gameKeyFactory!.LEFT, gameKeyFactory!.LEFT);
+    
+inputToGameKeyMapping!.add(gameKeyFactory!.RIGHT, gameKeyFactory!.RIGHT);
+    
+inputToGameKeyMapping!.add(gameKeyFactory!.KEY_NUM1, gameKeyFactory!.GAME_A);
+    
+SINGLETON= inputToGameKeyMapping;
+    
 
                                     }
                                 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e);
+    
 }
 
 

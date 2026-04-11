@@ -71,12 +71,13 @@ export class ViewHelper
         
 
     private componentInterface: TransformInterface
-public constructor (hashMap: HashMap<Any, Any>, pageContext: PageContext){
+public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
             var hashMap = hashMap
 var pageContext = pageContext
-this.componentInterface= TransformFactory.getInstance()!.getInstance(this.abeClientInformation, hashMap, pageContext)
+this.componentInterface= TransformFactory.getInstance()!.getInstance(this.abeClientInformation, hashMap, pageContext);
+    
 }
 
 
@@ -104,19 +105,24 @@ this.componentInterface= TransformFactory.getInstance()!.getInstance(this.abeCli
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return componentInterface!.view();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to View: ";
         
         
-
+;
+    
 
                         if(this.componentInterface != 
                                     null
                                 )
-                        error += this.componentInterface!.::class.toString()!
+                        error += this.componentInterface!..constructor.name.toString()!
                              else 
                         if()
                         
@@ -124,7 +130,8 @@ this.componentInterface= TransformFactory.getInstance()!.getInstance(this.abeCli
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e);
+    
 
                                     }
                                 
@@ -146,18 +153,21 @@ this.componentInterface= TransformFactory.getInstance()!.getInstance(this.abeCli
 
 
                             throw Error("Hmm: " +componentInterface!.getTransformDocumentInterface()!.getDoc())
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to View: ";
         
         
-
+;
+    
 
                         if(this.componentInterface != 
                                     null
                                 )
-                        error += this.componentInterface!.::class.toString()!
+                        error += this.componentInterface!..constructor.name.toString()!
                              else 
                         if()
                         
@@ -165,7 +175,8 @@ this.componentInterface= TransformFactory.getInstance()!.getInstance(this.abeCli
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e);
+    
 
                                     }
                                 
@@ -196,6 +207,8 @@ this.componentInterface= TransformFactory.getInstance()!.getInstance(this.abeCli
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.componentInterface!.getTransformInfoInterface();
+
+                        ;
     
 }
 

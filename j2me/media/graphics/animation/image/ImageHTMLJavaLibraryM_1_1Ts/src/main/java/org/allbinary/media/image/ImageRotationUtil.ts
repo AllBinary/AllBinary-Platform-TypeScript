@@ -70,24 +70,32 @@ private constructor (){
     var htmlImage: PlaynMutableImage = image as PlaynMutableImage;
         
         
+;
+    
 
+    var canvasImage: CanvasImage = htmlImage!.getImage();
 
-    var canvasImage: CanvasImage = htmlImage!.getImage() as CanvasImage;
+                         as CanvasImage;
         
         
-
+;
+    
 
     var canvasSurface: CanvasSurface = htmlImage!.getCanvasSurface(canvasImage)!;
         
         
-
-canvasSurface!.translate(originalImage!.getWidth() /2, originalImage!.getHeight() /2)
+;
+    
+canvasSurface!.translate(originalImage!.getWidth() /2, originalImage!.getHeight() /2);
+    
 
     var image2: Image = this.rotateImage(originalImage, image, canvasSurface, totalAngle)!;
         
         
-
-this.drawImage(originalImage, image, canvasSurface)
+;
+    
+this.drawImage(originalImage, image, canvasSurface);
+    
 
 
 
@@ -119,14 +127,23 @@ this.drawImage(originalImage, image, canvasSurface)
                         if(image.isMutable())
                         
                                     {
-                                    canvasSurface!.translate( -originalImage!.getWidth() /2,  -originalImage!.getHeight() /2)
-canvasSurface!.clear()
-canvasSurface!.translate(originalImage!.getWidth() /2, originalImage!.getHeight() /2)
+                                    canvasSurface!.translate( -originalImage!.getWidth();
+
+                         /2,  -originalImage!.getHeight();
+
+                         /2);
+    
+canvasSurface!.clear();
+    
+canvasSurface!.translate(originalImage!.getWidth() /2, originalImage!.getHeight() /2);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.rotateImage(originalImage, image, canvasSurface, totalAngle);
+
+                        ;
     
 
                                     }
@@ -153,7 +170,10 @@ canvasSurface!.translate(originalImage!.getWidth() /2, originalImage!.getHeight(
                         if(image.isMutable())
                         
                                     {
-                                    canvasSurface!.rotate(Math.toRadians(totalAngle).toFloat())
+                                    canvasSurface!.rotate(Math.toRadians(totalAngle);
+
+                        .toFloat());
+    
 
 
 
@@ -186,7 +206,8 @@ canvasSurface!.translate(originalImage!.getWidth() /2, originalImage!.getHeight(
             ;
         
         
-
+;
+    
 
                         if(originalImage!.isMutable())
                         
@@ -195,8 +216,12 @@ canvasSurface!.translate(originalImage!.getWidth() /2, originalImage!.getHeight(
     var originalHTMLImage: PlaynMutableImage = originalImage as PlaynMutableImage;
         
         
+;
+    
+originalPlayNImage= originalHTMLImage!.getImage();
 
-originalPlayNImage= originalHTMLImage!.getImage() as playn.core.Image
+                         as playn.core.Image;
+    
 
                                     }
                                 
@@ -205,12 +230,21 @@ originalPlayNImage= originalHTMLImage!.getImage() as playn.core.Image
     var originalHTMLImage: PlaynImmutableImage = originalImage as PlaynImmutableImage;
         
         
+;
+    
+originalPlayNImage= originalHTMLImage!.getImage();
 
-originalPlayNImage= originalHTMLImage!.getImage() as playn.core.Image
+                         as playn.core.Image;
+    
 
                         }
                             
-canvasSurface!.drawImage(originalPlayNImage,  -originalImage!.getWidth() /2,  -originalImage!.getHeight() /2)
+canvasSurface!.drawImage(originalPlayNImage,  -originalImage!.getWidth();
+
+                         /2,  -originalImage!.getHeight();
+
+                         /2);
+    
 }
 
 
@@ -223,12 +257,14 @@ canvasSurface!.drawImage(originalPlayNImage,  -originalImage!.getWidth() /2,  -o
     var image: Image = ImageCreationUtil.getInstance()!.getInstance(originalImage!.getWidth(), originalImage!.getHeight())!;
         
         
-
+;
+    
 
     var rotatedImage: Image = this.rotateImage(originalImage, image, rotationInDegrees)!;
         
         
-
+;
+    
 
                         if(rotatedImage == 
                                     null

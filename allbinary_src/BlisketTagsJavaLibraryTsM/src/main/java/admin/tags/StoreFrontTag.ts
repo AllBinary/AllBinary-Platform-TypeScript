@@ -57,7 +57,7 @@ export class StoreFrontTag extends CustomTagSupport {
 
     private storeName: string
 
-    private propertiesHashMap: HashMap<Any, Any>
+    private propertiesHashMap: HashMap<any, any>
 public constructor (){
 
             super();
@@ -66,13 +66,15 @@ public constructor (){
 
     public setCommand(command: string){
 var command = command
-this.command= command
+this.command= command;
+    
 }
 
 
     public setStoreName(value: string){
 var value = value
-this.storeName= value
+this.storeName= value;
+    
 }
 
 
@@ -86,44 +88,55 @@ this.storeName= value
                             getInstance(this.propertiesHashMap, this.pageContext)!;
         
         
+;
+    
 
-
-    var method: Method = anyType!::class.getMethod("getCurrentLocation", 
+    var method: Method = anyType!.constructor.name.getMethod("getCurrentLocation", 
                             null)!;
         
         
-
+;
+    
 
     var result: string = method.invoke(anyType, 
-                            null) as String;
-        
-        
+                            null);
 
+                         as String;
+        
+        
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
-} catch(e: LicensingException)
+
+                //: 
+} catch(e) 
             {
 
 
 
                             throw e
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
 
     var error: string = "Failed to retrieve current location";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "getCurrentLocation()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "getCurrentLocation()", e);
+    
 
                                     }
                                 
@@ -148,44 +161,55 @@ this.storeName= value
                             getInstance(this.propertiesHashMap, this.pageContext)!;
         
         
+;
+    
 
-
-    var method: Method = anyType!::class.getMethod("getCurrentHomeLocation", 
+    var method: Method = anyType!.constructor.name.getMethod("getCurrentHomeLocation", 
                             null)!;
         
         
-
+;
+    
 
     var result: string = method.invoke(anyType, 
-                            null) as String;
-        
-        
+                            null);
 
+                         as String;
+        
+        
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
-} catch(e: LicensingException)
+
+                //: 
+} catch(e) 
             {
 
 
 
                             throw e
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
 
     var error: string = "Failed to retrieve current home location";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "getCurrentHomeLocation()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "getCurrentHomeLocation()", e);
+    
 
                                     }
                                 
@@ -211,13 +235,16 @@ this.storeName= value
                                 )
                         
                                     {
-                                    this.propertiesHashMap= HashMap<Any, Any>()
-this.propertiesHashMap!.put(StoreFrontData.getInstance()!.NAME, this.storeName)
+                                    this.propertiesHashMap= HashMap<any, any>();
+    
+this.propertiesHashMap!.put(StoreFrontData.getInstance()!.NAME, this.storeName);
+    
 
                         if(command.compareTo(org.allbinary.globals.GLOBALS2.GETCURRENTLOCATION) == 0)
                         
                                     {
-                                    pageContext!.getOut()!.print(this.getCurrentLocation())
+                                    pageContext!.getOut()!.print(this.getCurrentLocation());
+    
 
                                     }
                                 
@@ -225,7 +252,8 @@ this.propertiesHashMap!.put(StoreFrontData.getInstance()!.NAME, this.storeName)
                         if(command.compareTo(org.allbinary.globals.GLOBALS2.GETCURRENTHOMELOCATION) == 0)
                         
                                     {
-                                    pageContext!.getOut()!.print(this.getCurrentHomeLocation())
+                                    pageContext!.getOut()!.print(this.getCurrentHomeLocation());
+    
 
                                     }
                                 
@@ -238,9 +266,12 @@ this.propertiesHashMap!.put(StoreFrontData.getInstance()!.NAME, this.storeName)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return SKIP_BODY;
     
-} catch(e: LicensingException)
+
+                //: 
+} catch(e) 
             {
-AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e);
+    
 
 
 
@@ -248,9 +279,12 @@ AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
                         return SKIP_BODY;
     
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
-AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
+    
 
 
 

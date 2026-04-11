@@ -63,7 +63,8 @@ export class BasicGeographicMapUtil
     var LOCATION_CHANGE: number = 1;
         
         
-
+;
+    
 
 
         when (direction) {
@@ -72,6 +73,8 @@ export class BasicGeographicMapUtil
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return oldGeographicMapCellPosition!.getRow();
+
+                        ;
     
 }
 1 -> {
@@ -79,6 +82,8 @@ export class BasicGeographicMapUtil
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return oldGeographicMapCellPosition!.getRow();
+
+                        ;
     
 }
 2 -> {
@@ -116,7 +121,8 @@ else -> {
     var LOCATION_CHANGE: number = 1;
         
         
-
+;
+    
 
 
         when (direction) {
@@ -139,6 +145,8 @@ else -> {
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return oldGeographicMapCellPosition!.getColumn();
+
+                        ;
     
 }
 3 -> {
@@ -146,6 +154,8 @@ else -> {
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return oldGeographicMapCellPosition!.getColumn();
+
+                        ;
     
 }
 else -> {
@@ -169,22 +179,26 @@ else -> {
     var fromColumn: number = fromGeographicMapCellPosition!.getColumn()!;
         
         
-
+;
+    
 
     var fromRow: number = fromGeographicMapCellPosition!.getRow()!;
         
         
-
+;
+    
 
     var goColumn: number = toGeographicMapCellPosition!.getColumn()!;
         
         
-
+;
+    
 
     var goRow: number = toGeographicMapCellPosition!.getRow()!;
         
         
-
+;
+    
 
                         if(fromColumn == goColumn && fromRow == goRow)
                         
@@ -217,12 +231,15 @@ else -> {
     var tiledLayerArray: Layer[] = new Array(geographicMapInterfaceArray!.length);
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.createAllBinaryTiledLayerArray(geographicMapInterfaceArray, tiledLayerArray, 0);
+
+                        ;
     
 }
 
@@ -233,18 +250,21 @@ else -> {
     //var startIndex = startIndex
 
     var geographicMapInterface: BasicGeographicMap
-
+;
+    
 
     var size: number = geographicMapInterfaceArray!.length
                 ;
         
         
-
+;
+    
 
     var count: number = 0;
         
         
-
+;
+    
 
 
 
@@ -255,8 +275,10 @@ else -> {
         
 --index >= startIndex; )
         {
-geographicMapInterface= geographicMapInterfaceArray[index]!
-tiledLayerArray[count++]= geographicMapInterface!.getAllBinaryTiledLayer()
+geographicMapInterface= geographicMapInterfaceArray[index]!;
+    
+tiledLayerArray[count++]= geographicMapInterface!.getAllBinaryTiledLayer();
+    
 }
 
 
@@ -274,13 +296,15 @@ tiledLayerArray[count++]= geographicMapInterface!.getAllBinaryTiledLayer()
     //var dy = dy
 
     var geographicMapInterface: BasicGeographicMap
-
+;
+    
 
     var size: number = geographicMapInterfaceArray!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -291,8 +315,10 @@ tiledLayerArray[count++]= geographicMapInterface!.getAllBinaryTiledLayer()
         
 --index >= 0; )
         {
-geographicMapInterface= geographicMapInterfaceArray[index]!
-geographicMapInterface!.getAllBinaryTiledLayer()!.move(dx, dy)
+geographicMapInterface= geographicMapInterfaceArray[index]!;
+    
+geographicMapInterface!.getAllBinaryTiledLayer()!.move(dx, dy);
+    
 }
 
 }
@@ -304,13 +330,15 @@ geographicMapInterface!.getAllBinaryTiledLayer()!.move(dx, dy)
     //var y = y
 
     var geographicMapInterface: BasicGeographicMap
-
+;
+    
 
     var size: number = geographicMapInterfaceArray!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -321,8 +349,10 @@ geographicMapInterface!.getAllBinaryTiledLayer()!.move(dx, dy)
         
 --index >= 0; )
         {
-geographicMapInterface= geographicMapInterfaceArray[index]!
-geographicMapInterface!.getAllBinaryTiledLayer()!.setPosition(x, y, geographicMapInterface!.getAllBinaryTiledLayer()!.getZP())
+geographicMapInterface= geographicMapInterfaceArray[index]!;
+    
+geographicMapInterface!.getAllBinaryTiledLayer()!.setPosition(x, y, geographicMapInterface!.getAllBinaryTiledLayer()!.getZP());
+    
 }
 
 }

@@ -30,7 +30,7 @@ import { AnimationBehaviorFactory } from "../../../../org/allbinary/animation/An
 
 export class TopToBottomImageAnimationFactory extends BaseImageAnimationFactory {
         
-public constructor (image: Image, sequenceArray: IntArray)                        
+public constructor (image: Image, sequenceArray: number[])                        
 
                             : this(image, sequenceArray, AnimationBehaviorFactory.getInstance()){
 
@@ -43,7 +43,7 @@ public constructor (image: Image, sequenceArray: IntArray)
                     
 }
 
-public constructor (image: Image, sequenceArray: IntArray, animationBehaviorFactory: AnimationBehaviorFactory)                        
+public constructor (image: Image, sequenceArray: number[], animationBehaviorFactory: AnimationBehaviorFactory)                        
 
                             : super(image, sequenceArray, image.getWidth(), image.getHeight(), animationBehaviorFactory){
 
@@ -66,7 +66,8 @@ public constructor (image: Image, sequenceArray: IntArray, animationBehaviorFact
     var scaledImage: Image = animationFactoryImageScaleUtil!.createImage(this.getImage(), this.animationFactoryInitializationVisitor!.width, this.animationFactoryInitializationVisitor!.height, this.scaleProperties!.scaleWidth, this.scaleProperties!.scaleHeight)!;
         
         
-
+;
+    
 
 
 

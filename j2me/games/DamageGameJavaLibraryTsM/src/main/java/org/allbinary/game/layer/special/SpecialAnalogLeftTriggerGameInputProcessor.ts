@@ -46,7 +46,8 @@ public constructor (collidableDestroyableDamageableLayer: CollidableDestroyableD
 var allbinaryLayerManager = allbinaryLayerManager
 var gameKeyEvent = gameKeyEvent
 var yAnalogValue = yAnalogValue
-this.collidableDestroyableDamageableLayer!.leftTrigger(allbinaryLayerManager, gameKeyEvent, yAnalogValue)
+this.collidableDestroyableDamageableLayer!.leftTrigger(allbinaryLayerManager, gameKeyEvent, yAnalogValue);
+    
 }
 
 

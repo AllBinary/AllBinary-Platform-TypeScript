@@ -79,17 +79,24 @@ var name = name
     var playnImage: PlaynImage = image as PlaynImage;
         
         
+;
+    
 
+    var playnCoreImage: playn.core.Image = playnImage!.getImage();
 
-    var playnCoreImage: playn.core.Image = playnImage!.getImage() as playn.core.Image;
+                         as playn.core.Image;
         
         
+;
+    
 
+                        if(!playnCoreImage!.isReady();
 
-                        if(!playnCoreImage!.isReady() || playnCoreImage!.width() +playnCoreImage!.height() <= 0)
+                         || playnCoreImage!.width() +playnCoreImage!.height() <= 0)
                         
                                     {
-                                    this.handleTimeout(name)
+                                    this.handleTimeout(name);
+    
 
 
 
@@ -100,15 +107,21 @@ var name = name
                                     }
                                 
 
-                        if(!image.isReady())
-                        
-                                    {
-                                    image.init(image.getImage())
+                        if(!image.isReady();
 
-                        if(!image.isReady())
+                        )
                         
                                     {
-                                    PreLogUtil.put("Waiting for Not Ready Image: " +image.getName(), this, ISREADY)
+                                    image.init(image.getImage());
+    
+
+                        if(!image.isReady();
+
+                        )
+                        
+                                    {
+                                    PreLogUtil.put("Waiting for Not Ready Image: " +image.getName(), this, ISREADY);
+    
 
                                     }
                                 
@@ -119,8 +132,10 @@ var name = name
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-PreLogUtil.put(COMPLETE +image.getName(), this, commonStrings!.SUCCESS)
+;
+    
+PreLogUtil.put(COMPLETE +image.getName(), this, commonStrings!.SUCCESS);
+    
 
 
 

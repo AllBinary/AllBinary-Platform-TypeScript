@@ -31,7 +31,7 @@ export class AdjustedVectorAnimation extends VectorAnimation {
     private dx: number
 
     private dy: number
-public constructor (currentPoints: IntArray[][], basicColor: BasicColor, dx: number, dy: number, animationBehavior: AnimationBehavior)                        
+public constructor (currentPoints: number[][][], basicColor: BasicColor, dx: number, dy: number, animationBehavior: AnimationBehavior)                        
 
                             : super(currentPoints, basicColor, animationBehavior){
 
@@ -45,11 +45,13 @@ public constructor (currentPoints: IntArray[][], basicColor: BasicColor, dx: num
 
                             //For kotlin this is before the body of the constructor.
                     
-this.dx= dx
-this.dy= dy
+this.dx= dx;
+    
+this.dy= dy;
+    
 }
 
-public constructor (currentPoints: IntArray[], basicColor: BasicColor, dx: number, dy: number, animationBehavior: AnimationBehavior)                        
+public constructor (currentPoints: number[][], basicColor: BasicColor, dx: number, dy: number, animationBehavior: AnimationBehavior)                        
 
                             : super(currentPoints, basicColor, animationBehavior){
 
@@ -63,8 +65,10 @@ public constructor (currentPoints: IntArray[], basicColor: BasicColor, dx: numbe
 
                             //For kotlin this is before the body of the constructor.
                     
-this.dx= dx
-this.dy= dy
+this.dx= dx;
+    
+this.dy= dy;
+    
 }
 
 
@@ -72,7 +76,8 @@ this.dy= dy
     //var graphics = graphics
     //var x = x
     //var y = y
-super.paint(graphics, x +this.dx, y +this.dy)
+super.paint(graphics, x +this.dx, y +this.dy);
+    
 }
 
 

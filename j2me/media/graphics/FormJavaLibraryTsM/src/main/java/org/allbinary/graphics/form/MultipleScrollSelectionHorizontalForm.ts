@@ -85,6 +85,8 @@ public constructor (title: string, items: CustomItem[], rectangle: Rectangle, fo
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getSelectedIndex();
+
+                        ;
     
 }
 
@@ -101,27 +103,32 @@ public constructor (title: string, items: CustomItem[], rectangle: Rectangle, fo
     var formTypeFactory: FormTypeFactory = FormTypeFactory.getInstance()!;
         
         
-
+;
+    
 
     var start: number = this.getStartIndex()!;
         
         
-
+;
+    
 
     var size: number = this.size()!;
         
         
-
+;
+    
 
     var dx: number = x;
         
         
-
+;
+    
 
     var dy: number = y;
         
         
-
+;
+    
 
                         if(J2MEUtil.isJ2ME())
                         
@@ -130,8 +137,10 @@ public constructor (title: string, items: CustomItem[], rectangle: Rectangle, fo
                                     }
                                 
                         else {
-                            graphics.setColor(backgroundColor)
-graphics.fillRect(x, y, this.rectangle.getWidth(), this.rectangle.getHeight())
+                            graphics.setColor(backgroundColor);
+    
+graphics.fillRect(x, y, this.rectangle.getWidth(), this.rectangle.getHeight());
+    
 
                         }
                             
@@ -139,11 +148,14 @@ graphics.fillRect(x, y, this.rectangle.getWidth(), this.rectangle.getHeight())
     var myFont: MyFont = MyFont.getInstance()!;
         
         
-
-graphics.drawString(this.getTitle(), x, y -myFont!.DEFAULT_CHAR_HEIGHT, 0)
+;
+    
+graphics.drawString(this.getTitle(), x, y -myFont!.DEFAULT_CHAR_HEIGHT, 0);
+    
 
     var item: CustomItemInterface
-
+;
+    
 
 
 
@@ -154,7 +166,10 @@ graphics.drawString(this.getTitle(), x, y -myFont!.DEFAULT_CHAR_HEIGHT, 0)
         
 index < size; index++)
         {
-item= this.get(index) as CustomItemInterface
+item= this.get(index);
+
+                         as CustomItemInterface;
+    
 
                         if(dx >= this.rectangle.getMaxX())
                         
@@ -167,9 +182,11 @@ item= this.get(index) as CustomItemInterface
                                     }
                                 
                         else {
-                            logged= true
+                            logged= true;
+    
 PreLogUtil.put(StringMaker().
-                            append("painting beyond maxx: ")!.appendint(this.rectangle.getMaxX())!.toString(), this, canvasStrings!.PAINT)
+                            append("painting beyond maxx: ")!.appendint(this.rectangle.getMaxX())!.toString(), this, canvasStrings!.PAINT);
+    
 
                         }
                             
@@ -184,9 +201,12 @@ PreLogUtil.put(StringMaker().
     var dx2: number = this.paintItem(graphics, index, item, dx, dy) +border;
         
         
-
-this.paintable.paint(graphics, index, dx, dy)
-dx= dx2
+;
+    
+this.paintable.paint(graphics, index, dx, dy);
+    
+dx= dx2;
+    
 
                                     }
                                 
@@ -194,8 +214,10 @@ dx= dx2
                         if(this.formType == formTypeFactory!.VERTICAL_CENTER_FORM)
                         
                                     {
-                                    this.paintItem(graphics, index, item, dx, dy)
-this.paintable.paint(graphics, index, dx, dy)
+                                    this.paintItem(graphics, index, item, dx, dy);
+    
+this.paintable.paint(graphics, index, dx, dy);
+    
 
                                     }
                                 
@@ -209,9 +231,12 @@ this.paintable.paint(graphics, index, dx, dy)
                             
 }
 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-PreLogUtil.put(commonStrings!.EXCEPTION, this, canvasStrings!.PAINT)
+PreLogUtil.put(commonStrings!.EXCEPTION, this, canvasStrings!.PAINT);
+    
 }
 
 }

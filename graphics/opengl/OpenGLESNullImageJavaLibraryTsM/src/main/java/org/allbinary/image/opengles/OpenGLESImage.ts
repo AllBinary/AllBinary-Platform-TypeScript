@@ -87,8 +87,10 @@ public constructor (image: Image, bitmapFactory: PlatformBitmapBaseFactory, text
                 //var image = image
     //var bitmapFactory = bitmapFactory
     //var textureFactory = textureFactory
-this.openGLBitmap= bitmapFactory!.createBitmap(image)
-this.textureFactory= textureFactory
+this.openGLBitmap= bitmapFactory!.createBitmap(image);
+    
+this.textureFactory= textureFactory;
+    
 }
 
 

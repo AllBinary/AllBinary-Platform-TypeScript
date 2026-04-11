@@ -43,11 +43,13 @@ public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface){
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    logUtil!.put(commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put(commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
+    
 
                                     }
                                 
-this.tagHelperFactoryInterface= tagHelperFactoryInterface
+this.tagHelperFactoryInterface= tagHelperFactoryInterface;
+    
 }
 
 
@@ -64,11 +66,13 @@ this.tagHelperFactoryInterface= tagHelperFactoryInterface
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    logUtil!.put("Creating TagHelper with: \n" +this.getPropertiesHashMap()!.toString(), this, "doStartTag")
+                                    logUtil!.put("Creating TagHelper with: \n" +this.getPropertiesHashMap()!.toString(), this, "doStartTag");
+    
 
                                     }
                                 
-this.anyType= tagHelperFactoryInterface!.getInstance(this.getPropertiesHashMap(), this.pageContext)
+this.anyType= tagHelperFactoryInterface!.getInstance(this.getPropertiesHashMap(), this.pageContext);
+    
 
                                     }
                                 
@@ -90,18 +94,22 @@ this.anyType= tagHelperFactoryInterface!.getInstance(this.getPropertiesHashMap()
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    logUtil!.put("Tag Ended", this, "doEndTag")
+                                    logUtil!.put("Tag Ended", this, "doEndTag");
+    
 
                                     }
                                 
 this.anyType= 
                                         null
-                                    
+                                    ;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.doEndTag();
+
+                        ;
     
 }
 

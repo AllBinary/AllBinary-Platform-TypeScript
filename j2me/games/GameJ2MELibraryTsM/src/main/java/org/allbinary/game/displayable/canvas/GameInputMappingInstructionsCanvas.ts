@@ -93,16 +93,21 @@ var allBinaryGameLayerManager = allBinaryGameLayerManager
 
                             //For kotlin this is before the body of the constructor.
                     
-logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
-this.colorFillPaintable= ColorFillPaintableFactory.getInstance()!.getInstance(allBinaryGameLayerManager!.getBackgroundBasicColor(), false)
+logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
+    
+this.colorFillPaintable= ColorFillPaintableFactory.getInstance()!.getInstance(allBinaryGameLayerManager!.getBackgroundBasicColor(), false);
+    
 }
 
 
     public initCommands(cmdListener: CommandListener){
 var cmdListener = cmdListener
-this.removeAllCommands()
-this.addCommand(GameInputMappingInstructionsCanvas.CLOSE)
-this.setCommandListener(cmdListener)
+this.removeAllCommands();
+    
+this.addCommand(GameInputMappingInstructionsCanvas.CLOSE);
+    
+this.setCommandListener(cmdListener);
+    
 }
 
 
@@ -120,32 +125,42 @@ var graphics = graphics
     var myFont: MyFont = MyFont.getInstance()!;
         
         
-
+;
+    
 
     var charHeight: number = myFont!.DEFAULT_CHAR_HEIGHT;
         
         
-
-this.colorFillPaintable!.paint(graphics)
+;
+    
+this.colorFillPaintable!.paint(graphics);
+    
 
     var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
         
         
-
+;
+    
 
     var halfWidth: number = displayInfo!.getLastHalfWidth()!;
         
         
-
+;
+    
 
     var beginWidth: number = (graphics.getFont()!.stringWidth(this.TITLE) shr 1);
         
         
-
-graphics.setColor(this.foregroundColor)
-graphics.drawString(this.TITLE, halfWidth -beginWidth, charHeight, anchor)
-drawStringUtil!.drawCenterStrings(graphics, instructions, displayInfo!.getLastWidth(), halfWidth, 3 *charHeight)
-super.paint(graphics)
+;
+    
+graphics.setColor(this.foregroundColor);
+    
+graphics.drawString(this.TITLE, halfWidth -beginWidth, charHeight, anchor);
+    
+drawStringUtil!.drawCenterStrings(graphics, instructions, displayInfo!.getLastWidth(), halfWidth, 3 *charHeight);
+    
+super.paint(graphics);
+    
 }
 
 

@@ -27,7 +27,8 @@ public constructor (lockedIndex: number){
 
             super();
             var lockedIndex = lockedIndex
-this.lockedIndex= lockedIndex
+this.lockedIndex= lockedIndex;
+    
 }
 
 

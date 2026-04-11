@@ -71,17 +71,20 @@ export class PartnerIdentifierFileUtil
     var resourceUtil: ResourceUtil = ResourceUtil.getInstance()!;
         
         
-
+;
+    
 
     var inputStream: InputStream = resourceUtil!.getResourceAsStream(this.FILE_NAME)!;
         
         
-
+;
+    
 
     var inputStreamReader: InputStreamReader = new InputStreamReader(inputStream);
         
         
-
+;
+    
 
     var chars: string[] = 
                                                         
@@ -89,42 +92,51 @@ export class PartnerIdentifierFileUtil
                                                     ;
         
         
-
+;
+    
 
     var size: number = inputStreamReader!.read(chars)!;
         
         
-
+;
+    
 
     var partnerString: string = StringUtil.getInstance()!.EMPTY_STRING;
         
         
-
+;
+    
 
                         if(size > 0)
                         
                                     {
                                     partnerString= chars.concatToString(0, size)
 
-                                    
+                                    ;
+    
 
                                     }
                                 
-inputStreamReader!.close()
+inputStreamReader!.close();
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return partnerString;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET, e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET, e);
+    
 
 
 

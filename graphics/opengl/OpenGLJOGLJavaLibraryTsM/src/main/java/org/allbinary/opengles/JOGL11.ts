@@ -53,14 +53,16 @@ public constructor (gl: GL, gl2: com.jogamp.opengl.GL2)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.gl11= getJOGLGL()
+this.gl11= getJOGLGL();
+    
 }
 
 
     public glBindBuffer(target: number, buffer: number){
 var target = target
 var buffer = buffer
-this.gl11.glBindBuffer(target, buffer)
+this.gl11.glBindBuffer(target, buffer);
+    
 }
 
 
@@ -69,7 +71,8 @@ var target = target
 var size = size
 var data = data
 var usage = usage
-this.gl11.glBufferData(target, size, data, usage)
+this.gl11.glBufferData(target, size, data, usage);
+    
 }
 
 
@@ -78,22 +81,25 @@ var target = target
 var offset = offset
 var size = size
 var data = data
-this.gl11.glBufferSubData(target, offset, size, data)
+this.gl11.glBufferSubData(target, offset, size, data);
+    
 }
 
 
-    public glClipPlanef(plane: number, equation: FloatArray, offset: number){
+    public glClipPlanef(plane: number, equation: number[], offset: number){
 var plane = plane
 var equation = equation
 var offset = offset
-this.gl11.glClipPlanef(plane, equation, offset)
+this.gl11.glClipPlanef(plane, equation, offset);
+    
 }
 
 
     public glClipPlanef(plane: number, equation: java.nio.FloatBuffer){
 var plane = plane
 var equation = equation
-this.gl11.glClipPlanef(plane, equation)
+this.gl11.glClipPlanef(plane, equation);
+    
 }
 
 
@@ -102,7 +108,8 @@ var red = red
 var green = green
 var blue = blue
 var alpha = alpha
-this.gl11.glColor4ub(red, green, blue, alpha)
+this.gl11.glColor4ub(red, green, blue, alpha);
+    
 }
 
 
@@ -111,22 +118,25 @@ var size = size
 var type = type
 var stride = stride
 var offset = offset
-this.gl11.glColorPointer(size, type, stride, offset)
+this.gl11.glColorPointer(size, type, stride, offset);
+    
 }
 
 
-    public glDeleteBuffers(n: number, buffers: IntArray, offset: number){
+    public glDeleteBuffers(n: number, buffers: number[], offset: number){
 var n = n
 var buffers = buffers
 var offset = offset
-this.gl11.glDeleteBuffers(n, buffers, offset)
+this.gl11.glDeleteBuffers(n, buffers, offset);
+    
 }
 
 
     public glDeleteBuffers(n: number, buffers: java.nio.IntBuffer){
 var n = n
 var buffers = buffers
-this.gl11.glDeleteBuffers(n, buffers)
+this.gl11.glDeleteBuffers(n, buffers);
+    
 }
 
 
@@ -135,31 +145,35 @@ var mode = mode
 var count = count
 var type = type
 var offset = offset
-this.gl11.glDrawElements(mode, count, type, offset)
+this.gl11.glDrawElements(mode, count, type, offset);
+    
 }
 
 
-    public glGenBuffers(n: number, buffers: IntArray, offset: number){
+    public glGenBuffers(n: number, buffers: number[], offset: number){
 var n = n
 var buffers = buffers
 var offset = offset
-this.gl11.glGenBuffers(n, buffers, offset)
+this.gl11.glGenBuffers(n, buffers, offset);
+    
 }
 
 
     public glGenBuffers(n: number, buffers: java.nio.IntBuffer){
 var n = n
 var buffers = buffers
-this.gl11.glGenBuffers(n, buffers)
+this.gl11.glGenBuffers(n, buffers);
+    
 }
 
 
-    public glGetBufferParameteriv(target: number, pname: number, params: IntArray, offset: number){
+    public glGetBufferParameteriv(target: number, pname: number, params: number[], offset: number){
 var target = target
 var pname = pname
 var params = params
 var offset = offset
-this.gl11.glGetBufferParameteriv(target, pname, params, offset)
+this.gl11.glGetBufferParameteriv(target, pname, params, offset);
+    
 }
 
 
@@ -167,46 +181,52 @@ this.gl11.glGetBufferParameteriv(target, pname, params, offset)
 var target = target
 var pname = pname
 var params = params
-this.gl11.glGetBufferParameteriv(target, pname, params)
+this.gl11.glGetBufferParameteriv(target, pname, params);
+    
 }
 
 
-    public glGetClipPlanef(pname: number, eqn: FloatArray, offset: number){
+    public glGetClipPlanef(pname: number, eqn: number[], offset: number){
 var pname = pname
 var eqn = eqn
 var offset = offset
-this.gl11.glGetClipPlanef(pname, eqn, offset)
+this.gl11.glGetClipPlanef(pname, eqn, offset);
+    
 }
 
 
     public glGetClipPlanef(pname: number, eqn: java.nio.FloatBuffer){
 var pname = pname
 var eqn = eqn
-this.gl11.glGetClipPlanef(pname, eqn)
+this.gl11.glGetClipPlanef(pname, eqn);
+    
 }
 
 
-    public glGetFloatv(pname: number, params: FloatArray, offset: number){
+    public glGetFloatv(pname: number, params: number[], offset: number){
 var pname = pname
 var params = params
 var offset = offset
-this.gl11.glGetFloatv(pname, params, offset)
+this.gl11.glGetFloatv(pname, params, offset);
+    
 }
 
 
     public glGetFloatv(pname: number, params: java.nio.FloatBuffer){
 var pname = pname
 var params = params
-this.gl11.glGetFloatv(pname, params)
+this.gl11.glGetFloatv(pname, params);
+    
 }
 
 
-    public glGetLightfv(light: number, pname: number, params: FloatArray, offset: number){
+    public glGetLightfv(light: number, pname: number, params: number[], offset: number){
 var light = light
 var pname = pname
 var params = params
 var offset = offset
-this.gl11.glGetLightfv(light, pname, params, offset)
+this.gl11.glGetLightfv(light, pname, params, offset);
+    
 }
 
 
@@ -214,16 +234,18 @@ this.gl11.glGetLightfv(light, pname, params, offset)
 var light = light
 var pname = pname
 var params = params
-this.gl11.glGetLightfv(light, pname, params)
+this.gl11.glGetLightfv(light, pname, params);
+    
 }
 
 
-    public glGetMaterialfv(face: number, pname: number, params: FloatArray, offset: number){
+    public glGetMaterialfv(face: number, pname: number, params: number[], offset: number){
 var face = face
 var pname = pname
 var params = params
 var offset = offset
-this.gl11.glGetMaterialfv(face, pname, params, offset)
+this.gl11.glGetMaterialfv(face, pname, params, offset);
+    
 }
 
 
@@ -231,16 +253,18 @@ this.gl11.glGetMaterialfv(face, pname, params, offset)
 var face = face
 var pname = pname
 var params = params
-this.gl11.glGetMaterialfv(face, pname, params)
+this.gl11.glGetMaterialfv(face, pname, params);
+    
 }
 
 
-    public glGetTexEnviv(env: number, pname: number, params: IntArray, offset: number){
+    public glGetTexEnviv(env: number, pname: number, params: number[], offset: number){
 var env = env
 var pname = pname
 var params = params
 var offset = offset
-this.gl11.glGetTexEnviv(env, pname, params, offset)
+this.gl11.glGetTexEnviv(env, pname, params, offset);
+    
 }
 
 
@@ -248,16 +272,18 @@ this.gl11.glGetTexEnviv(env, pname, params, offset)
 var env = env
 var pname = pname
 var params = params
-this.gl11.glGetTexEnviv(env, pname, params)
+this.gl11.glGetTexEnviv(env, pname, params);
+    
 }
 
 
-    public glGetTexParameterfv(target: number, pname: number, params: FloatArray, offset: number){
+    public glGetTexParameterfv(target: number, pname: number, params: number[], offset: number){
 var target = target
 var pname = pname
 var params = params
 var offset = offset
-this.gl11.glGetTexParameterfv(target, pname, params, offset)
+this.gl11.glGetTexParameterfv(target, pname, params, offset);
+    
 }
 
 
@@ -265,16 +291,18 @@ this.gl11.glGetTexParameterfv(target, pname, params, offset)
 var target = target
 var pname = pname
 var params = params
-this.gl11.glGetTexParameterfv(target, pname, params)
+this.gl11.glGetTexParameterfv(target, pname, params);
+    
 }
 
 
-    public glGetTexParameteriv(target: number, pname: number, params: IntArray, offset: number){
+    public glGetTexParameteriv(target: number, pname: number, params: number[], offset: number){
 var target = target
 var pname = pname
 var params = params
 var offset = offset
-this.gl11.glGetTexParameteriv(target, pname, params, offset)
+this.gl11.glGetTexParameteriv(target, pname, params, offset);
+    
 }
 
 
@@ -282,7 +310,8 @@ this.gl11.glGetTexParameteriv(target, pname, params, offset)
 var target = target
 var pname = pname
 var params = params
-this.gl11.glGetTexParameteriv(target, pname, params)
+this.gl11.glGetTexParameteriv(target, pname, params);
+    
 }
 
 
@@ -293,6 +322,8 @@ var buffer = buffer
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.gl11.glIsBuffer(buffer);
+
+                        ;
     
 }
 
@@ -304,6 +335,8 @@ var cap = cap
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.gl11.glIsEnabled(cap);
+
+                        ;
     
 }
 
@@ -315,6 +348,8 @@ var texture = texture
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.gl11.glIsTexture(texture);
+
+                        ;
     
 }
 
@@ -323,29 +358,33 @@ var texture = texture
 var type = type
 var stride = stride
 var offset = offset
-this.gl11.glNormalPointer(type, stride, offset)
+this.gl11.glNormalPointer(type, stride, offset);
+    
 }
 
 
     public glPointParameterf(pname: number, param: number){
 var pname = pname
 var param = param
-this.gl11.glPointParameterf(pname, param)
+this.gl11.glPointParameterf(pname, param);
+    
 }
 
 
-    public glPointParameterfv(pname: number, params: FloatArray, offset: number){
+    public glPointParameterfv(pname: number, params: number[], offset: number){
 var pname = pname
 var params = params
 var offset = offset
-this.gl11.glPointParameterfv(pname, params, offset)
+this.gl11.glPointParameterfv(pname, params, offset);
+    
 }
 
 
     public glPointParameterfv(pname: number, params: java.nio.FloatBuffer){
 var pname = pname
 var params = params
-this.gl11.glPointParameterfv(pname, params)
+this.gl11.glPointParameterfv(pname, params);
+    
 }
 
 
@@ -354,7 +393,8 @@ var size = size
 var type = type
 var stride = stride
 var offset = offset
-this.gl11.glTexCoordPointer(size, type, stride, offset)
+this.gl11.glTexCoordPointer(size, type, stride, offset);
+    
 }
 
 
@@ -362,16 +402,18 @@ this.gl11.glTexCoordPointer(size, type, stride, offset)
 var target = target
 var pname = pname
 var param = param
-this.gl11.glTexEnvi(target, pname, param)
+this.gl11.glTexEnvi(target, pname, param);
+    
 }
 
 
-    public glTexEnviv(target: number, pname: number, params: IntArray, offset: number){
+    public glTexEnviv(target: number, pname: number, params: number[], offset: number){
 var target = target
 var pname = pname
 var params = params
 var offset = offset
-this.gl11.glTexEnviv(target, pname, params, offset)
+this.gl11.glTexEnviv(target, pname, params, offset);
+    
 }
 
 
@@ -379,16 +421,18 @@ this.gl11.glTexEnviv(target, pname, params, offset)
 var target = target
 var pname = pname
 var params = params
-this.gl11.glTexEnviv(target, pname, params)
+this.gl11.glTexEnviv(target, pname, params);
+    
 }
 
 
-    public glTexParameterfv(target: number, pname: number, params: FloatArray, offset: number){
+    public glTexParameterfv(target: number, pname: number, params: number[], offset: number){
 var target = target
 var pname = pname
 var params = params
 var offset = offset
-this.gl11.glTexParameterfv(target, pname, params, offset)
+this.gl11.glTexParameterfv(target, pname, params, offset);
+    
 }
 
 
@@ -396,7 +440,8 @@ this.gl11.glTexParameterfv(target, pname, params, offset)
 var target = target
 var pname = pname
 var params = params
-this.gl11.glTexParameterfv(target, pname, params)
+this.gl11.glTexParameterfv(target, pname, params);
+    
 }
 
 
@@ -404,16 +449,18 @@ this.gl11.glTexParameterfv(target, pname, params)
 var target = target
 var pname = pname
 var param = param
-this.gl11.glTexParameteri(target, pname, param)
+this.gl11.glTexParameteri(target, pname, param);
+    
 }
 
 
-    public glTexParameteriv(target: number, pname: number, params: IntArray, offset: number){
+    public glTexParameteriv(target: number, pname: number, params: number[], offset: number){
 var target = target
 var pname = pname
 var params = params
 var offset = offset
-this.gl11.glTexParameteriv(target, pname, params, offset)
+this.gl11.glTexParameteriv(target, pname, params, offset);
+    
 }
 
 
@@ -421,16 +468,18 @@ this.gl11.glTexParameteriv(target, pname, params, offset)
 var target = target
 var pname = pname
 var params = params
-this.gl11.glTexParameteriv(target, pname, params)
+this.gl11.glTexParameteriv(target, pname, params);
+    
 }
 
 
-    public glTexParameterxv(target: number, pname: number, params: IntArray, offset: number){
+    public glTexParameterxv(target: number, pname: number, params: number[], offset: number){
 var target = target
 var pname = pname
 var params = params
 var offset = offset
-this.gl11.glTexParameteriv(target, pname, params, offset)
+this.gl11.glTexParameteriv(target, pname, params, offset);
+    
 }
 
 
@@ -439,7 +488,8 @@ var size = size
 var type = type
 var stride = stride
 var offset = offset
-this.gl11.glVertexPointer(size, type, stride, offset)
+this.gl11.glVertexPointer(size, type, stride, offset);
+    
 }
 
 

@@ -56,30 +56,46 @@ public constructor (midlet: AllBinaryMidlet, processor: Processor, isProgress: b
             var midlet = midlet
 var processor = processor
 var isProgress = isProgress
-this.midlet= midlet
-this.isProgress= isProgress
-this.processor= processor
+this.midlet= midlet;
+    
+this.isProgress= isProgress;
+    
+this.processor= processor;
+    
 }
 
 
     public run(){
 
         try {
-            logUtil!.put(commonStrings!.START_RUNNABLE, this, commonStrings!.RUN)
-this.midlet.destroyApp(false, this.isProgress)
-this.midlet.setDisplay(NullCanvas.NULL_CANVAS)
-this.midlet.notifyDestroyed()
-logUtil!.put(commonStrings!.END_RUNNABLE, this, commonStrings!.RUN)
-processor.process()
-} catch(e: Exception)
+            logUtil!.put(commonStrings!.START_RUNNABLE, this, commonStrings!.RUN);
+    
+this.midlet.destroyApp(false, this.isProgress);
+    
+this.midlet.setDisplay(NullCanvas.NULL_CANVAS);
+    
+this.midlet.notifyDestroyed();
+    
+logUtil!.put(commonStrings!.END_RUNNABLE, this, commonStrings!.RUN);
+    
+processor.process();
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
+    
 
         try {
-            processor.process()
-} catch(e2: Exception)
+            processor.process();
+    
+
+                //: 
+} catch(e2) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
+    
 }
 
 }

@@ -113,16 +113,23 @@ private constructor (){
     var stringBuffer: StringMaker = this.getF(className, functionName)!;
         
         
-
-stringBuffer!.append(this.getO(exception))
-stringBuffer!.append(this.SPECIAL_MESSAGE)
-stringBuffer!.append(specialMessage)
-stringBuffer!.append(this.commonSeps!.NEW_LINE)
+;
+    
+stringBuffer!.append(this.getO(exception));
+    
+stringBuffer!.append(this.SPECIAL_MESSAGE);
+    
+stringBuffer!.append(specialMessage);
+    
+stringBuffer!.append(this.commonSeps!.NEW_LINE);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 
@@ -135,15 +142,21 @@ stringBuffer!.append(this.commonSeps!.NEW_LINE)
     var stringBuffer: StringMaker = this.getF(className, functionName)!;
         
         
-
-stringBuffer!.append(this.SPECIAL_MESSAGE)
-stringBuffer!.append(specialMessage)
-stringBuffer!.append(this.commonSeps!.NEW_LINE)
+;
+    
+stringBuffer!.append(this.SPECIAL_MESSAGE);
+    
+stringBuffer!.append(specialMessage);
+    
+stringBuffer!.append(this.commonSeps!.NEW_LINE);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 
@@ -157,7 +170,8 @@ var functionName = functionName
                                 )
                         
                                     {
-                                    functionName= this.NONE
+                                    functionName= this.NONE;
+    
 
                                     }
                                 
@@ -165,13 +179,20 @@ var functionName = functionName
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(this.TIME)
-stringBuffer!.append(this.timeStampUtil!.getAsString())
-stringBuffer!.append(this.CLASS_NAME)
-stringBuffer!.append(className)
-stringBuffer!.append(this.FUNCTION_CALL)
-stringBuffer!.append(functionName)
+;
+    
+stringBuffer!.append(this.TIME);
+    
+stringBuffer!.append(this.timeStampUtil!.getAsString());
+    
+stringBuffer!.append(this.CLASS_NAME);
+    
+stringBuffer!.append(className);
+    
+stringBuffer!.append(this.FUNCTION_CALL);
+    
+stringBuffer!.append(functionName);
+    
 
 
 
@@ -203,39 +224,47 @@ stringBuffer!.append(functionName)
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(this.LOG_ERROR)
+;
+    
+stringBuffer!.append(this.LOG_ERROR);
+    
 
     var exceptionAsString: string = exception.toString()!;
         
         
-
+;
+    
 
                         if(exceptionAsString != 
                                     null
                                 )
                         
                                     {
-                                    stringBuffer!.append(exceptionAsString)
+                                    stringBuffer!.append(exceptionAsString);
+    
 
                                     }
                                 
                         else {
-                            stringBuffer!.append(this.EMPTY)
+                            stringBuffer!.append(this.EMPTY);
+    
 
                         }
                             
-stringBuffer!.append(this.STACK_TRACE)
+stringBuffer!.append(this.STACK_TRACE);
+    
 
                         if(exception != this.nullUtil!.NULL_OBJECT)
                         
                                     {
-                                    stringBuffer!.append(this.exceptionUtil!.getStackTrace(exception as Error))
+                                    stringBuffer!.append(this.exceptionUtil!.getStackTrace(exception as Error));
+    
 
                                     }
                                 
                         else {
-                            stringBuffer!.append(this.stringUtil!.NULL_STRING)
+                            stringBuffer!.append(this.stringUtil!.NULL_STRING);
+    
 
                         }
                             
@@ -244,6 +273,8 @@ stringBuffer!.append(this.STACK_TRACE)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 
                                     }

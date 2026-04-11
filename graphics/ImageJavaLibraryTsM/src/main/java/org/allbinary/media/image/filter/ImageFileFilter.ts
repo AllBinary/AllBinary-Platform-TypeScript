@@ -47,12 +47,14 @@ var f = f
     var s: string = f.getName()!;
         
         
-
+;
+    
 
     var i: number = s.lastIndexOf('.')!;
         
         
-
+;
+    
 
                         if(i > 0 && i < s.length -1)
                         
@@ -61,7 +63,8 @@ var f = f
     var ext: string = s.substring(i +1)!.lowercase()!;
         
         
-
+;
+    
 
                         if(ext.equals("jpg") || ext.equals("jpeg"))
                         

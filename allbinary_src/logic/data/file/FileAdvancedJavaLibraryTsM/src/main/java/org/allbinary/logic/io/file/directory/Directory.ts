@@ -71,6 +71,8 @@ var directoryAbPath = directoryAbPath
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.create(directoryAbPath!.toFileSystemString());
+
+                        ;
     
 }
 
@@ -79,7 +81,8 @@ var directoryAbPath = directoryAbPath
             
     public remove(existingDirectoryAbPath: AbPath){
 var existingDirectoryAbPath = existingDirectoryAbPath
-this.remove(existingDirectoryAbPath!.toFileSystemString())
+this.remove(existingDirectoryAbPath!.toFileSystemString());
+    
 }
 
 
@@ -91,14 +94,20 @@ var directory = directory
     var directoryFile: AbFile = FileFactory.getInstance()!.getInstance(directory)!;
         
         
+;
+    
 
+                        if(!directoryFile!.isDirectory();
 
-                        if(!directoryFile!.isDirectory())
+                        )
                         
                                     {
-                                    PreLogUtil.put("Creating Directories: " +directory, this, "create")
+                                    PreLogUtil.put("Creating Directories: " +directory, this, "create");
+    
 
-                        if(!directoryFile!.mkdirs())
+                        if(!directoryFile!.mkdirs();
+
+                        )
                         
                                     {
                                     
@@ -119,9 +128,12 @@ var directory = directory
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return true;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-PreLogUtil.put("Error Creating Directories: " +directory, this, "create", e)
+PreLogUtil.putOE("Error Creating Directories: " +directory, this, "create", e);
+    
 
 
 
@@ -141,7 +153,8 @@ var existingDirectory = existingDirectory
     var existingDirectoryFile: AbFile = FileFactory.getInstance()!.getInstance(existingDirectory)!;
         
         
-
+;
+    
 
                         if(existingDirectoryFile!.isDirectory())
                         
@@ -161,7 +174,8 @@ var existingDirectory = existingDirectory
                         if(existingDirectoryFile!.delete())
                         
                                     {
-                                    PreLogUtil.put("Successfully Removed: " +existingDirectory, "Directory", "remove")
+                                    PreLogUtil.put("Successfully Removed: " +existingDirectory, "Directory", "remove");
+    
 
                                     }
                                 
@@ -187,6 +201,8 @@ var file = file
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.search(fileFilter, file, false);
+
+                        ;
     
 }
 
@@ -199,19 +215,22 @@ var isRecursiveSearch = isRecursiveSearch
     var fileList: BasicArrayList = new BasicArrayList();
         
         
-
+;
+    
 
     var recursiveFileList: BasicArrayList
-
+;
+    
 
                         if(file.isDirectory())
                         
                                     {
                                     
-    var fileArray: any = {}[] = file.listFiles(fileFilter)!;
+    var fileArray: any[] = file.listFiles(fileFilter)!;
         
         
-
+;
+    
 
                         if(fileArray == 
                                     null
@@ -231,7 +250,8 @@ var isRecursiveSearch = isRecursiveSearch
     var files: AbFile[] = FileWrapperUtil.wrapFiles(fileArray)!;
         
         
-
+;
+    
 
                         if(files == 
                                     null
@@ -252,7 +272,8 @@ var isRecursiveSearch = isRecursiveSearch
                 ;
         
         
-
+;
+    
 
 
 
@@ -263,13 +284,16 @@ var isRecursiveSearch = isRecursiveSearch
         
 index < size; index++)
         {
-fileList!.add(files[index]!)
+fileList!.add(files[index]!);
+    
 
                         if(isRecursiveSearch)
                         
                                     {
-                                    recursiveFileList= this.search(fileFilter, files[index]!, isRecursiveSearch)
-fileList!.addAll(recursiveFileList)
+                                    recursiveFileList= this.search(fileFilter, files[index]!, isRecursiveSearch);
+    
+fileList!.addAll(recursiveFileList);
+    
 
                                     }
                                 
@@ -294,6 +318,8 @@ var file = file
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.search(file, false);
+
+                        ;
     
 }
 
@@ -305,19 +331,22 @@ var file = file
     var fileList: BasicArrayList = new BasicArrayList();
         
         
-
+;
+    
 
     var recursiveFileList: BasicArrayList
-
+;
+    
 
                         if(file.isDirectory())
                         
                                     {
                                     
-    var fileArray: any = {}[] = file.listFiles()!;
+    var fileArray: any[] = file.listFiles()!;
         
         
-
+;
+    
 
                         if(fileArray == 
                                     null
@@ -337,7 +366,8 @@ var file = file
     var files: AbFile[] = FileWrapperUtil.wrapFiles(fileArray)!;
         
         
-
+;
+    
 
                         if(files == 
                                     null
@@ -363,13 +393,16 @@ var file = file
         
 index < files.length; index++)
         {
-fileList!.add(files[index]!)
+fileList!.add(files[index]!);
+    
 
                         if(isRecursiveSearch)
                         
                                     {
-                                    recursiveFileList= this.search(files[index]!, isRecursiveSearch)
-fileList!.addAll(recursiveFileList)
+                                    recursiveFileList= this.search(files[index]!, isRecursiveSearch);
+    
+fileList!.addAll(recursiveFileList);
+    
 
                                     }
                                 
@@ -395,6 +428,8 @@ var file = file
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.search(searchValue, file, false);
+
+                        ;
     
 }
 
@@ -407,19 +442,22 @@ var file = file
     var fileList: BasicArrayList = new BasicArrayList();
         
         
-
+;
+    
 
     var recursiveFileList: BasicArrayList
-
+;
+    
 
                         if(file.isDirectory())
                         
                                     {
                                     
-    var fileArray: any = {}[] = file.listFiles()!;
+    var fileArray: any[] = file.listFiles()!;
         
         
-
+;
+    
 
                         if(fileArray == 
                                     null
@@ -439,7 +477,8 @@ var file = file
     var files: AbFile[] = FileWrapperUtil.wrapFiles(fileArray)!;
         
         
-
+;
+    
 
                         if(files == 
                                     null
@@ -469,7 +508,8 @@ index < files.length; index++)
                         if(files[index]!.getPath()!.indexOf(searchValue) >= 0)
                         
                                     {
-                                    fileList!.add(files[index]!)
+                                    fileList!.add(files[index]!);
+    
 
                                     }
                                 
@@ -477,8 +517,10 @@ index < files.length; index++)
                         if(isRecursiveSearch)
                         
                                     {
-                                    recursiveFileList= this.search(searchValue, files[index]!, isRecursiveSearch)
-fileList!.addAll(recursiveFileList)
+                                    recursiveFileList= this.search(searchValue, files[index]!, isRecursiveSearch);
+    
+fileList!.addAll(recursiveFileList);
+    
 
                                     }
                                 
@@ -504,6 +546,8 @@ var file = file
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.search(level, file, false);
+
+                        ;
     
 }
 
@@ -516,19 +560,22 @@ var isRecursiveSearch = isRecursiveSearch
     var fileList: BasicArrayList = new BasicArrayList();
         
         
-
+;
+    
 
     var recursiveFileList: BasicArrayList
-
+;
+    
 
                         if(file.isDirectory())
                         
                                     {
                                     
-    var fileArray: any = {}[] = file.listFiles()!;
+    var fileArray: any[] = file.listFiles()!;
         
         
-
+;
+    
 
                         if(fileArray == 
                                     null
@@ -548,7 +595,8 @@ var isRecursiveSearch = isRecursiveSearch
     var files: AbFile[] = FileWrapperUtil.wrapFiles(fileArray)!;
         
         
-
+;
+    
 
                         if(files == 
                                     null
@@ -574,7 +622,8 @@ var isRecursiveSearch = isRecursiveSearch
         
 index < files.length; index++)
         {
-fileList!.add(files[index]!)
+fileList!.add(files[index]!);
+    
 
                         if(level <= 0)
                         
@@ -588,8 +637,10 @@ fileList!.add(files[index]!)
 
                                     }
                                 
-recursiveFileList= this.search(level -1, files[index]!, isRecursiveSearch)
-fileList!.addAll(recursiveFileList)
+recursiveFileList= this.search(level -1, files[index]!, isRecursiveSearch);
+    
+fileList!.addAll(recursiveFileList);
+    
 }
 
 

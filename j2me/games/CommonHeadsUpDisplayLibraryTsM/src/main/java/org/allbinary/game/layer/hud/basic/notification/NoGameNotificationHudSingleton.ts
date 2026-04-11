@@ -66,16 +66,22 @@ private constructor (){
     var basicHudFactory: BasicHudFactory = BasicHudFactory.getInstance()!;
         
         
+;
+    
+this.gameNotificationHud= GameNotificationHud(basicHudFactory!.TOPCENTER, basicHudFactory!.HORIZONTAL, 14, 40, 2, BasicColorFactory.getInstance()!.RED);
+    
 
-this.gameNotificationHud= GameNotificationHud(basicHudFactory!.TOPCENTER, basicHudFactory!.HORIZONTAL, 14, 40, 2, BasicColorFactory.getInstance()!.RED)
-} catch(e: Exception)
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e);
+    
 }
 
 }

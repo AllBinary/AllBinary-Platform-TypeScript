@@ -72,22 +72,26 @@ private constructor (){
         try {
             
     var GenericOperatingSystem: GenericOperatingSystem
-
+;
+    
 
     var systemProperties: SystemProperties = SystemProperties.getInstance()!;
         
         
-
+;
+    
 
     var osName: string = systemProperties!.getName()!;
         
         
-
+;
+    
 
                         if(osName!.compareTo(OperatingSystems.getInstance()!.ANDROID) == 0)
                         
                                     {
-                                    GenericOperatingSystem= AndroidOS()
+                                    GenericOperatingSystem= AndroidOS();
+    
 
                                     }
                                 
@@ -96,7 +100,8 @@ private constructor (){
                         if(OperatingSystems.getInstance()!.isUnknownSpecificOSAllowed())
                         
                                     {
-                                    GenericOperatingSystem= AndroidOS()
+                                    GenericOperatingSystem= AndroidOS();
+    
 
                                     }
                                 
@@ -117,14 +122,18 @@ private constructor (){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return GenericOperatingSystem;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put("Failed to get OperatingSystem returning NoOperatingSystem", this, commonStrings!.GET_INSTANCE, e)
+;
+    
+logUtil!.put("Failed to get OperatingSystem returning NoOperatingSystem", this, commonStrings!.GET_INSTANCE, e);
+    
 
 
 

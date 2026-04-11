@@ -61,12 +61,13 @@ export class WorkFlowRequestHelper extends ModifyTable {
         
 
     private workFlowInterface: WorkFlowInterface
-public constructor (hashMap: HashMap<Any, Any>, pageContext: PageContext){
+public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
             var hashMap = hashMap
 var pageContext = pageContext
-this.workFlowInterface= NewWorkFlowFactory.getInstance()!.getInstance(this.abeClientInformation, hashMap, pageContext)
+this.workFlowInterface= NewWorkFlowFactory.getInstance()!.getInstance(this.abeClientInformation, hashMap, pageContext);
+    
 }
 
 
@@ -79,18 +80,22 @@ this.workFlowInterface= NewWorkFlowFactory.getInstance()!.getInstance(this.abeCl
     var stringUtil: StringUtil = StringUtil.getInstance()!;
         
         
-
-WorkFlowEntityFactory.getInstance()!.create2()!.delete(this.workFlowInterface!.getName(), stringUtil!.EMPTY_STRING)
+;
+    
+WorkFlowEntityFactory.getInstance()!.create2()!.delete(this.workFlowInterface!.getName(), stringUtil!.EMPTY_STRING);
+    
 
     var success: string = "Successfully Removed the workflow with " +WorkFlowData.getInstance()!.NAME +"= " +this.workFlowInterface!.getName() +" from ";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put(success, this, "delete()")
+                                    logUtil!.put(success, this, "delete()");
+    
 
                                     }
                                 
@@ -100,7 +105,9 @@ WorkFlowEntityFactory.getInstance()!.create2()!.delete(this.workFlowInterface!.g
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
         try {
@@ -108,12 +115,14 @@ WorkFlowEntityFactory.getInstance()!.create2()!.delete(this.workFlowInterface!.g
     var error: string = "Failed to remove workflow with " +WorkFlowData.getInstance()!.NAME +"= " +this.workFlowInterface!.getName() +" from ";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "delete()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "delete()", e);
+    
 
                                     }
                                 
@@ -121,18 +130,22 @@ WorkFlowEntityFactory.getInstance()!.create2()!.delete(this.workFlowInterface!.g
 
 
                             throw Error(e)
-} catch(ex: Exception)
+
+                //: 
+} catch(ex) 
             {
 
     var error: string = "Failed to get data from workflowinterface to set error string";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "delete()", ex)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "delete()", ex);
+    
 
                                     }
                                 
@@ -156,12 +169,14 @@ WorkFlowEntityFactory.getInstance()!.create2()!.delete(this.workFlowInterface!.g
     var success: string = "New User Successfully added to the Users Table";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put(success, this, "add()")
+                                    logUtil!.put(success, this, "add()");
+    
 
                                     }
                                 
@@ -171,18 +186,22 @@ WorkFlowEntityFactory.getInstance()!.create2()!.delete(this.workFlowInterface!.g
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to add User";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "add()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "add()", e);
+    
 
                                     }
                                 
@@ -204,12 +223,14 @@ WorkFlowEntityFactory.getInstance()!.create2()!.delete(this.workFlowInterface!.g
     var success: string = "Updated WorkFlow Successfully";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put(success, this, "update()")
+                                    logUtil!.put(success, this, "update()");
+    
 
                                     }
                                 
@@ -219,18 +240,22 @@ WorkFlowEntityFactory.getInstance()!.create2()!.delete(this.workFlowInterface!.g
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to update WorkFlow";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "update()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "update()", e);
+    
 
                                     }
                                 

@@ -18,10 +18,13 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { HashMap } from "../../../../../../../java/util/HashMap.js";
 
     
-import { Vector } from "../../../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../../../java/util/Vector.js";
 
     
 import { TransformInfoEntityBuilder } from "../../../../../../../org/allbinary/data/tables/transform/info/TransformInfoEntityBuilder.js";
@@ -105,17 +108,22 @@ public constructor (transformInfoInterface: TransformInfoInterface)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("View Name: " +transformInfoInterface!.getName(), this, this.commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put("View Name: " +transformInfoInterface!.getName(), this, this.commonStrings!.CONSTRUCTOR);
+    
 
                                     }
                                 
 
-    var requestHashMap: HashMap<Any, Any> = RequestParams(this.getPageContext()).
+    var requestHashMap: HashMap<any, any> = RequestParams(this.getPageContext()).
                             toHashMap()!;
         
         
+;
+    
+this.viewName= requestHashMap!.get(TransformInfoData.getInstance()!.NAME);
 
-this.viewName= requestHashMap!.get(TransformInfoData.getInstance()!.NAME) as String
+                         as String;
+    
 }
 
 
@@ -126,7 +134,8 @@ this.viewName= requestHashMap!.get(TransformInfoData.getInstance()!.NAME) as Str
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Started Validation", this, commonStrings!.IS_VALID)
+                                    logUtil!.put("Started Validation", this, commonStrings!.IS_VALID);
+    
 
                                     }
                                 
@@ -134,12 +143,14 @@ this.viewName= requestHashMap!.get(TransformInfoData.getInstance()!.NAME) as Str
     var isValid: Boolean = Boolean.TRUE;
         
         
-
+;
+    
 
                         if(StringValidationUtil.getInstance()!.isEmpty(this.viewName))
                         
                                     {
-                                    isValid= Boolean.FALSE
+                                    isValid= Boolean.FALSE;
+    
 
                                     }
                                 
@@ -148,17 +159,20 @@ this.viewName= requestHashMap!.get(TransformInfoData.getInstance()!.NAME) as Str
     var objectConfig: NoTemplateTransformInfoObjectConfig = new NoTemplateTransformInfoObjectConfig(this.getTransformInfoInterface(), this.getTransformInfoInterface()!.getObjectConfigInterface()!.toXmlDoc());
         
         
-
+;
+    
 
     var componentVector: Vector = objectConfig!.getGroupTransforms()!;
         
         
-
+;
+    
 
     var size: number = componentVector!.length!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
@@ -167,11 +181,16 @@ this.viewName= requestHashMap!.get(TransformInfoData.getInstance()!.NAME) as Str
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("Pointing ")
-stringBuffer!.appendint(componentVector!.length)
-stringBuffer!.append(" Components")
-logUtil!.put(stringBuffer!.toString(), this, commonStrings!.IS_VALID)
+;
+    
+stringBuffer!.append("Pointing ");
+    
+stringBuffer!.appendint(componentVector!.length);
+    
+stringBuffer!.append(" Components");
+    
+logUtil!.put(stringBuffer!.toString(), this, commonStrings!.IS_VALID);
+    
 
                                     }
                                 
@@ -186,20 +205,25 @@ logUtil!.put(stringBuffer!.toString(), this, commonStrings!.IS_VALID)
 index < size; index++)
         {
 
-    var transformInfo: TransformInfo = componentVector!.get(index) as TransformInfo;
-        
-        
+    var transformInfo: TransformInfo = componentVector!.get(index);
 
+                         as TransformInfo;
+        
+        
+;
+    
 
     var transformInfoName: string = transformInfo!.getName()!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Setting Template Component with ViewName: " +transformInfoName, this, commonStrings!.IS_VALID)
+                                    logUtil!.put("Setting Template Component with ViewName: " +transformInfoName, this, commonStrings!.IS_VALID);
+    
 
                                     }
                                 
@@ -207,54 +231,66 @@ index < size; index++)
     var componentInterface: TransformInterface = TransformFactory.getInstance()!.getInstance(this.abeClientInformation, transformInfoName, this.getTransformInfoInterface())!;
         
         
-
+;
+    
 
     var templateViewObjectConfig: InsertTemplateCustomizerTransformInfoObjectConfig = new InsertTemplateCustomizerTransformInfoObjectConfig(componentInterface!.getTransformInfoInterface(), componentInterface!.getTransformInfoInterface()!.getObjectConfigInterface()!.toXmlDoc());
         
         
-
+;
+    
 
     var storeName: string = this.getTransformInfoInterface()!.getStoreName()!;
         
         
-
+;
+    
 
     var endIndex: number = this.viewName!.indexOf(storeName) +storeName!.length;
         
         
-
+;
+    
 
     var storePrepend: string = this.viewName!.substring(0, endIndex)!;
         
         
-
+;
+    
 
     var viewNamePostfix: string = this.viewName!.substring(endIndex, this.viewName!.length)!;
         
         
-
+;
+    
 
     var newViewNameStringBuffer: StringMaker = new StringMaker();
         
         
-
-newViewNameStringBuffer!.append(storePrepend)
+;
+    
+newViewNameStringBuffer!.append(storePrepend);
+    
 
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
         
         
-
+;
+    
 
     var transformInfosData: TransformInfosData = TransformInfosData.getInstance()!;
         
         
-
+;
+    
 
                         if(transformInfoName!.indexOf(transformInfosData!.SMALL_PREVIEW) >= 0)
                         
                                     {
-                                    newViewNameStringBuffer!.append(commonSeps!.SPACE)
-newViewNameStringBuffer!.append(transformInfosData!.SMALL_PREVIEW)
+                                    newViewNameStringBuffer!.append(commonSeps!.SPACE);
+    
+newViewNameStringBuffer!.append(transformInfosData!.SMALL_PREVIEW);
+    
 
                                     }
                                 
@@ -262,19 +298,25 @@ newViewNameStringBuffer!.append(transformInfosData!.SMALL_PREVIEW)
                         if(transformInfoName!.indexOf(transformInfosData!.PREVIEW) >= 0)
                         
                                     {
-                                    newViewNameStringBuffer!.append(commonSeps!.SPACE)
-newViewNameStringBuffer!.append(transformInfosData!.PREVIEW)
+                                    newViewNameStringBuffer!.append(commonSeps!.SPACE);
+    
+newViewNameStringBuffer!.append(transformInfosData!.PREVIEW);
+    
 
                                     }
                                 
-newViewNameStringBuffer!.append(commonSeps!.SPACE)
-newViewNameStringBuffer!.append(viewNamePostfix)
+newViewNameStringBuffer!.append(commonSeps!.SPACE);
+    
+newViewNameStringBuffer!.append(viewNamePostfix);
+    
 
                         if(transformInfoName!.indexOf(GeneratorTransformInfoData.NAME) >= 0)
                         
                                     {
-                                    newViewNameStringBuffer!.append(commonSeps!.SPACE)
-newViewNameStringBuffer!.append(GeneratorTransformInfoData.NAME)
+                                    newViewNameStringBuffer!.append(commonSeps!.SPACE);
+    
+newViewNameStringBuffer!.append(GeneratorTransformInfoData.NAME);
+    
 
                                     }
                                 
@@ -282,25 +324,8 @@ newViewNameStringBuffer!.append(GeneratorTransformInfoData.NAME)
     var newViewName: string = newViewNameStringBuffer!.toString()!;
         
         
-
-
-                        if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
-                        
-                                    {
-                                    
-    var stringBuffer: StringMaker = new StringMaker();
-        
-        
-
-stringBuffer!.append("Template Component: ")
-stringBuffer!.append(transformInfoName)
-stringBuffer!.append("\n Now Pointing To View Name: ")
-stringBuffer!.append(newViewName)
-logUtil!.put(stringBuffer!.toString(), this, commonStrings!.IS_VALID)
-
-                                    }
-                                
-templateViewObjectConfig!.set(newViewName)
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
@@ -309,22 +334,56 @@ templateViewObjectConfig!.set(newViewName)
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("Template Component: ")
-stringBuffer!.append(transformInfoName)
-stringBuffer!.append("\n with ObjectConfig: ")
-stringBuffer!.append(templateViewObjectConfig!.toString())
-logUtil!.put(stringBuffer!.toString(), this, commonStrings!.IS_VALID)
+;
+    
+stringBuffer!.append("Template Component: ");
+    
+stringBuffer!.append(transformInfoName);
+    
+stringBuffer!.append("\n Now Pointing To View Name: ");
+    
+stringBuffer!.append(newViewName);
+    
+logUtil!.put(stringBuffer!.toString(), this, commonStrings!.IS_VALID);
+    
 
                                     }
                                 
-componentInterface!.getTransformInfoInterface()!.setObjectConfigInterface(templateViewObjectConfig)
+templateViewObjectConfig!.set(newViewName);
+    
 
-    var updatedTransformInfoHashMap: HashMap<Any, Any> = componentInterface!.getTransformInfoInterface()!.toHashMap()!;
+                        if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
+                        
+                                    {
+                                    
+    var stringBuffer: StringMaker = new StringMaker();
         
         
+;
+    
+stringBuffer!.append("Template Component: ");
+    
+stringBuffer!.append(transformInfoName);
+    
+stringBuffer!.append("\n with ObjectConfig: ");
+    
+stringBuffer!.append(templateViewObjectConfig!.toString());
+    
+logUtil!.put(stringBuffer!.toString(), this, commonStrings!.IS_VALID);
+    
 
-TransformInfoEntityBuilder.getInstance()!.update(updatedTransformInfoHashMap)
+                                    }
+                                
+componentInterface!.getTransformInfoInterface()!.setObjectConfigInterface(templateViewObjectConfig);
+    
+
+    var updatedTransformInfoHashMap: HashMap<any, any> = componentInterface!.getTransformInfoInterface()!.toHashMap()!;
+        
+        
+;
+    
+TransformInfoEntityBuilder.getInstance()!.update(updatedTransformInfoHashMap);
+    
 }
 
 
@@ -336,13 +395,16 @@ TransformInfoEntityBuilder.getInstance()!.update(updatedTransformInfoHashMap)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return isValid;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("Failed to validate", this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put("Failed to validate", this, commonStrings!.IS_VALID, e);
+    
 
                                     }
                                 
@@ -364,21 +426,28 @@ TransformInfoEntityBuilder.getInstance()!.update(updatedTransformInfoHashMap)
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("Error: Template Name Is Empty.")
+;
+    
+stringBuffer!.append("Error: Template Name Is Empty.");
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e)
+                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e);
+    
 
                                     }
                                 
@@ -422,6 +491,8 @@ var document = document
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return views.ValidationOnlyTempUtil.getInstance()!.view(this);
+
+                        ;
     
 }
 

@@ -35,12 +35,14 @@ export class MultiGeographicMapBehavior
                 ;
         
         
-
+;
+    
 
     var cellType: GeographicMapCellType = GeographicMapCellType.NULL_GEOGRAPHIC_MAP_CELL_TYPE;
         
         
-
+;
+    
 
 
 
@@ -51,8 +53,10 @@ export class MultiGeographicMapBehavior
         
 --index >= 0; )
         {
-cellType= geographicMapInterfaceArray[index]!.getCellTypeAt(geographicMapCellPosition)
-geographicMapCellTypeArray[index]= cellType
+cellType= geographicMapInterfaceArray[index]!.getCellTypeAt(geographicMapCellPosition);
+    
+geographicMapCellTypeArray[index]= cellType;
+    
 }
 
 

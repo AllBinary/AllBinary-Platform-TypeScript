@@ -106,22 +106,26 @@ var response = response
             ;
         
         
-
+;
+    
 
         try {
-            BlisketServletUtil.getInstance()!.init(request)
+            BlisketServletUtil.getInstance()!.init(request);
+    
 
     var requestPath: string = request.getRequestURI()!;
         
         
-
+;
+    
 
                         if(requestPath == 
                                     null
                                 )
                         
                                     {
-                                    response.sendError(HttpServletResponse.SC_NOT_FOUND)
+                                    response.sendError(HttpServletResponse.SC_NOT_FOUND);
+    
 
 
 
@@ -135,22 +139,26 @@ var response = response
     var beginIndex: number = requestPath!.indexOf(DOWNLOAD)!;
         
         
-
+;
+    
 
     var filePath: string = StringUtil.getInstance()!.EMPTY_STRING;
         
         
-
+;
+    
 
                         if(beginIndex >= 0)
                         
                                     {
-                                    filePath= requestPath!.substring(beginIndex +DOWNLOAD.length)
+                                    filePath= requestPath!.substring(beginIndex +DOWNLOAD.length);
+    
 
                                     }
                                 
                         else {
-                            response.sendError(HttpServletResponse.SC_NOT_FOUND)
+                            response.sendError(HttpServletResponse.SC_NOT_FOUND);
+    
 
                         }
                             
@@ -158,12 +166,16 @@ var response = response
     var file: AbFile = new AbFile(URLGLOBALS.getWebappPath() +filePath);
         
         
+;
+    
 
+                        if(!file.exists();
 
-                        if(!file.exists())
+                        )
                         
                                     {
-                                    response.sendError(HttpServletResponse.SC_NOT_FOUND)
+                                    response.sendError(HttpServletResponse.SC_NOT_FOUND);
+    
 
 
 
@@ -174,16 +186,20 @@ var response = response
                                     }
                                 
 
-    var hashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
         
         
-
+;
+    
 
     var authenticationHelper: AuthenticationHelper = AuthenticationHelperFactory().
-                            getInstance(hashMap, request) as AuthenticationHelper;
-        
-        
+                            getInstance(hashMap, request);
 
+                         as AuthenticationHelper;
+        
+        
+;
+    
 
                         if(authenticationHelper!.isAuthenticated())
                         
@@ -192,43 +208,57 @@ var response = response
                         if(AuthenticationHelperUtil.getInstance()!.isAuthorized(authenticationHelper, filePath))
                         
                                     {
-                                    inputStream= CloudStreamUtil.getInstance()!.getFile(file)
+                                    inputStream= CloudStreamUtil.getInstance()!.getFile(file);
+    
 
     var contentType: string = getServletContext()!.getMimeType(file.getName())!;
         
         
-
+;
+    
 
                         if(contentType == 
                                     null
                                 )
                         
                                     {
-                                    contentType= "application/octet-stream"
+                                    contentType= "application/octet-stream";
+    
 
                                     }
                                 
-response.reset()
-response.setBufferSize(DEFAULT_BUFFER_SIZE)
-response.setContentType(contentType)
+response.reset();
+    
+response.setBufferSize(DEFAULT_BUFFER_SIZE);
+    
+response.setContentType(contentType);
+    
 response.setHeader("Content-Length", file.length.concatToString()
 
-                                    )
+                                    );
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("attachment; filename=\"")
-stringBuffer!.append(file.getName())
-stringBuffer!.append("\"")
-response.setHeader("Content-Disposition", stringBuffer!.toString())
-StreamUtil.getInstance()!.get(inputStream, response.getOutputStream(), ByteArray(16348))
+;
+    
+stringBuffer!.append("attachment; filename=\"");
+    
+stringBuffer!.append(file.getName());
+    
+stringBuffer!.append("\"");
+    
+response.setHeader("Content-Disposition", stringBuffer!.toString());
+    
+StreamUtil.getInstance()!.get(inputStream, response.getOutputStream(), new Array(16348));
+    
 
                                     }
                                 
                         else {
-                            response.sendError(HttpServletResponse.SC_UNAUTHORIZED, "You are not Authorized")
+                            response.sendError(HttpServletResponse.SC_UNAUTHORIZED, "You are not Authorized");
+    
 
                         }
                             
@@ -236,27 +266,35 @@ StreamUtil.getInstance()!.get(inputStream, response.getOutputStream(), ByteArray
                                     }
                                 
                         else {
-                            response.sendError(HttpServletResponse.SC_UNAUTHORIZED, "Please Login")
+                            response.sendError(HttpServletResponse.SC_UNAUTHORIZED, "Please Login");
+    
 
                         }
                             
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.EXCEPTION, this, "processRequest()", e)
+                                    logUtil!.put(this.commonStrings!.EXCEPTION, this, "processRequest()", e);
+    
 
                                     }
                                 
-response.sendError(HttpServletResponse.SC_NOT_FOUND)
+response.sendError(HttpServletResponse.SC_NOT_FOUND);
+    
 }
 
          finally {
-            StreamUtil.getInstance()!.close(response.getOutputStream())
+            StreamUtil.getInstance()!.close(response.getOutputStream());
+    
 
-                        if(!StreamUtil.getInstance()!.close(inputStream))
+                        if(!StreamUtil.getInstance()!.close(inputStream);
+
+                        )
                         
                                     {
                                     
@@ -273,7 +311,8 @@ response.sendError(HttpServletResponse.SC_NOT_FOUND)
     doGet(request: HttpServletRequest, response: HttpServletResponse){
 var request = request
 var response = response
-processRequest(request, response)
+processRequest(request, response);
+    
 }
 
 
@@ -282,7 +321,8 @@ processRequest(request, response)
     doPost(request: HttpServletRequest, response: HttpServletResponse){
 var request = request
 var response = response
-processRequest(request, response)
+processRequest(request, response);
+    
 }
 
 

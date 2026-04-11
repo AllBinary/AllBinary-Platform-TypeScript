@@ -30,7 +30,7 @@ export class BufferedImageInfoFactory
          {
         
 
-    private hashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+    private hashMap: HashMap<any, any> = new HashMap<any, any>();
         
         
 
@@ -42,28 +42,38 @@ var type = type
     var stringbuffer: StringMaker = new StringMaker();
         
         
-
-stringbuffer.appendint(width)
-stringbuffer.appendint(height)
-stringbuffer.appendint(type)
+;
+    
+stringbuffer.appendint(width);
+    
+stringbuffer.appendint(height);
+    
+stringbuffer.appendint(type);
+    
 
     var key: string = stringbuffer.toString()!;
         
         
+;
+    
 
+    var bufferedImageInfo: BufferedImageInfo = hashMap!.get(key as Object);
 
-    var bufferedImageInfo: BufferedImageInfo = hashMap!.get(key as Object) as BufferedImageInfo;
+                         as BufferedImageInfo;
         
         
-
+;
+    
 
                         if(bufferedImageInfo == 
                                     null
                                 )
                         
                                     {
-                                    bufferedImageInfo= BufferedImageInfo(width, height, type)
-hashMap!.put(key, bufferedImageInfo)
+                                    bufferedImageInfo= BufferedImageInfo(width, height, type);
+    
+hashMap!.put(key, bufferedImageInfo);
+    
 
                                     }
                                 

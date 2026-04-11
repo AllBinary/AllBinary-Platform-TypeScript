@@ -80,6 +80,8 @@ var z = z
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.allbinaryLayer!.getXP();
+
+                        ;
     
 }
 
@@ -90,6 +92,8 @@ var z = z
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.allbinaryLayer!.getYP();
+
+                        ;
     
 }
 
@@ -100,6 +104,8 @@ var z = z
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.allbinaryLayer!.getZP();
+
+                        ;
     
 }
 
@@ -136,7 +142,8 @@ var z = z
 
     public setAllbinaryLayer(allbinaryLayer: AllBinaryLayer){
 var allbinaryLayer = allbinaryLayer
-this.allbinaryLayer= allbinaryLayer
+this.allbinaryLayer= allbinaryLayer;
+    
 }
 
 

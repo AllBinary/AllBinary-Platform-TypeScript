@@ -67,7 +67,8 @@ private constructor (){
     //var keyName = keyName
 
         try {
-            logUtil!.put("Getting Key: " +keyName, this, "getKey")
+            logUtil!.put("Getting Key: " +keyName, this, "getKey");
+    
 
                         if(keyName!.compareTo("DirectX 8") == 0 || keyName!.compareTo("DirectX") == 0 || keyName!.compareTo("Low Level") == 0 || keyName!.compareTo("System Drivers") == 0)
                         
@@ -86,17 +87,24 @@ private constructor (){
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return AbeLicenseInterfaceFactory.getInstance()!.getLicenseInstance(abeClientInformation)!.getKey(keyName);
+
+                        ;
     
-} catch(e: LicensingException)
+
+                //: 
+} catch(e) 
             {
 
 
 
                             throw e
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
-logUtil!.put("Licensing Failure", this, "getKey()", e)
+logUtil!.put("Licensing Failure", this, "getKey()", e);
+    
 
 
 

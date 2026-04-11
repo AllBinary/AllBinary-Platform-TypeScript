@@ -54,7 +54,8 @@ public constructor (selectedRTSLayersPlayerGameInput: SelectedRTSLayersPlayerGam
 
             super();
                 //var selectedRTSLayersPlayerGameInput = selectedRTSLayersPlayerGameInput
-this.selectedRTSLayersPlayerGameInput= selectedRTSLayersPlayerGameInput
+this.selectedRTSLayersPlayerGameInput= selectedRTSLayersPlayerGameInput;
+    
 }
 
 
@@ -64,7 +65,8 @@ var anyType = anyType
     var selectedLayer: CollidableDestroyableDamageableLayer = anyType as CollidableDestroyableDamageableLayer;
         
         
-
+;
+    
 
                         if(selectedLayer != CollidableDestroyableDamageableLayer.NULL_COLLIDABLE_DESTROYABLE_DAMAGE_LAYER && selectedLayer!.getType() == BuildingLayer.getStaticType())
                         
@@ -73,23 +75,28 @@ var anyType = anyType
     var rtsGameLayer: AdvancedRTSGameLayer = selectedLayer as AdvancedRTSGameLayer;
         
         
-
+;
+    
 
     var assignWaypointsUtil: AssignWaypointsUtil = AssignWaypointsUtil.getInstance()!;
         
         
-
+;
+    
 
     var list: BasicArrayList = selectedRTSLayersPlayerGameInput!.getSelectedBasicArrayList()!;
         
         
-
+;
+    
 
     var currentRTSLayer: RTSLayer
-
+;
+    
 
     var unitLayer: UnitLayer
-
+;
+    
 
 
 
@@ -100,14 +107,20 @@ var anyType = anyType
         
 index >= 0; index--)
         {
-currentRTSLayer= list.get(index) as RTSLayer
+currentRTSLayer= list.get(index);
+
+                         as RTSLayer;
+    
 
                         if(currentRTSLayer!.getType() == UnitLayer.getStaticType())
                         
                                     {
-                                    unitLayer= currentRTSLayer as UnitLayer
-unitLayer!.setParentLayer(rtsGameLayer)
-assignWaypointsUtil!.set(unitLayer, rtsGameLayer)
+                                    unitLayer= currentRTSLayer as UnitLayer;
+    
+unitLayer!.setParentLayer(rtsGameLayer);
+    
+assignWaypointsUtil!.set(unitLayer, rtsGameLayer);
+    
 
                                     }
                                 

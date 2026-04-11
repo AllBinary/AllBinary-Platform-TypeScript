@@ -18,7 +18,10 @@
 
 
 
-import { Hashtable } from "../../../../../../java/util/Hashtable.js";
+            import Hashtable from "@ohos.util.HashMap";
+        
+
+//import { Hashtable } from "../../../../../../java/util/Hashtable.js";
 
     
 import { CellPosition } from "../../../../../../org/allbinary/graphics/CellPosition.js";
@@ -48,29 +51,35 @@ protected constructor (geographicMapInterface: BasicGeographicMap)
     //var width = width
     //var height = height
 
-    var hashtable: Hashtable<Any, Any> = GeographicMapCellPositionFactory.getHashtable()!;
+    var hashtable: Hashtable<any, any> = GeographicMapCellPositionFactory.getHashtable()!;
         
         
-
+;
+    
 
     var cellPositionKey: string = CellPosition.toString(i_column, i_row)!;
         
         
-
+;
+    
 
     var cellPositionCanBeNull: any = {}? = hashtable.get(cellPositionKey as Object);
         
         
-
+;
+    
 
                         if(cellPositionCanBeNull == 
                                     null
                                 )
                         
                                     {
-                                    cellPositionCanBeNull= this.geographicMapCellPositionFactoryInterface!.getInstance(this.geographicMapInterface, i_column, i_row, this.getColumns(), this.getRows(), width, height)
-geographicMapCellPositionArray[i_row]![i_column]= cellPositionCanBeNull as GeographicMapCellPosition
-hashtable.put(cellPositionKey, cellPositionCanBeNull)
+                                    cellPositionCanBeNull= this.geographicMapCellPositionFactoryInterface!.getInstance(this.geographicMapInterface, i_column, i_row, this.getColumns(), this.getRows(), width, height);
+    
+geographicMapCellPositionArray[i_row]![i_column]= cellPositionCanBeNull as GeographicMapCellPosition;
+    
+hashtable.put(cellPositionKey, cellPositionCanBeNull);
+    
 
                                     }
                                 

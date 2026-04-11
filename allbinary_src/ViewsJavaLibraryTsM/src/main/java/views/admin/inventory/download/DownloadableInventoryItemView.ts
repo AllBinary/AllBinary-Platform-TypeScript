@@ -18,13 +18,16 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { ByteArrayInputStream } from "../../../../java/io/ByteArrayInputStream.js";
 
     
 import { HashMap } from "../../../../java/util/HashMap.js";
 
     
-import { Vector } from "../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../java/util/Vector.js";
 
     
 import { HttpServletRequest } from "../../../../javax/servlet/http/HttpServletRequest.js";
@@ -108,7 +111,7 @@ export class DownloadableInventoryItemView extends HttpStoreComponentView
 
     downloadableItem: DownloadableItem
 
-    private requestHashMap: HashMap<Any, Any>
+    private requestHashMap: HashMap<any, any>
 public constructor (transformInfoInterface: TransformInfoInterface)                        
 
                             : super(transformInfoInterface){
@@ -119,8 +122,12 @@ public constructor (transformInfoInterface: TransformInfoInterface)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.request= this.getPageContext()!.getRequest() as HttpServletRequest
-this.getFormData()
+this.request= this.getPageContext()!.getRequest();
+
+                         as HttpServletRequest;
+    
+this.getFormData();
+    
 }
 
 public constructor (transformInfoInterface: TransformInfoInterface, empty: string)                        
@@ -134,7 +141,10 @@ var empty = empty
 
                             //For kotlin this is before the body of the constructor.
                     
-this.request= this.getPageContext()!.getRequest() as HttpServletRequest
+this.request= this.getPageContext()!.getRequest();
+
+                         as HttpServletRequest;
+    
 }
 
 
@@ -152,8 +162,12 @@ this.request= this.getPageContext()!.getRequest() as HttpServletRequest
             
     getFormData(){
 this.setRequestHashMap(MultipartRequestParams(request).
-                            toHashMap())
-this.id= this.getRequestHashMap()!.get(BasicItemData.ID) as String
+                            toHashMap());
+    
+this.id= this.getRequestHashMap()!.get(BasicItemData.ID);
+
+                         as String;
+    
 }
 
 
@@ -162,18 +176,21 @@ this.id= this.getRequestHashMap()!.get(BasicItemData.ID) as String
     var vector: Vector = new Vector();
         
         
-
+;
+    
 
                         if(this.downloadableItem != 
                                     null
                                 )
                         
                                     {
-                                    vector.add(DownloadableItemView(this.downloadableItem))
+                                    vector.add(DownloadableItemView(this.downloadableItem));
+    
 
                                     }
                                 
-this.addDomNodeInterface(BasicItemView(itemInterface, vector))
+this.addDomNodeInterface(BasicItemView(itemInterface, vector));
+    
 }
 
 
@@ -182,20 +199,26 @@ this.addDomNodeInterface(BasicItemView(itemInterface, vector))
     public view(): string{
 
         try {
-            this.addDomNodeInterfaces()
+            this.addDomNodeInterfaces();
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.view();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e);
+    
 
                                     }
                                 
@@ -216,39 +239,52 @@ this.addDomNodeInterface(BasicItemView(itemInterface, vector))
     var fileName: string = fileItem!.getName()!;
         
         
-
+;
+    
 
     var fullPath: string = this.getItemFilePath()!;
         
         
-
+;
+    
 
     var itemResourceFile: AbFile = new AbFile(fullPath);
         
         
-
-itemResourceFile!.mkdir()
+;
+    
+itemResourceFile!.mkdir();
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(fullPath)
-stringBuffer!.append(fileName)
-logUtil!.put("FileName: " +fileName, this, "processFile()")
+;
+    
+stringBuffer!.append(fullPath);
+    
+stringBuffer!.append(fileName);
+    
+logUtil!.put("FileName: " +fileName, this, "processFile()");
+    
 
     var file: AbFile = new AbFile(stringBuffer!.toString());
         
         
+;
+    
+logUtil!.put(file.getPath(), this, "processFiles()");
+    
+file.createNewFile();
+    
 
-logUtil!.put(file.getPath(), this, "processFiles()")
-file.createNewFile()
-
-    var byteArray: ByteArray = fileItem!.get()!;
+    var byteArray: number[] = fileItem!.get()!;
         
         
-
-FileUtil.getInstance()!.write(ByteArrayInputStream(byteArray), file)
+;
+    
+FileUtil.getInstance()!.write(ByteArrayInputStream(byteArray), file);
+    
 }
 
 
@@ -260,27 +296,36 @@ FileUtil.getInstance()!.write(ByteArrayInputStream(byteArray), file)
     var fileName: string = fileItem!.getName()!;
         
         
-
+;
+    
 
     var fullPath: string = this.getItemFilePath()!;
         
         
-
+;
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(fullPath)
-stringBuffer!.append(fileName)
-logUtil!.put("FileName: " +fileName, this, "unzip()")
+;
+    
+stringBuffer!.append(fullPath);
+    
+stringBuffer!.append(fileName);
+    
+logUtil!.put("FileName: " +fileName, this, "unzip()");
+    
 
     var file: AbFile = new AbFile(stringBuffer!.toString());
         
         
-
-logUtil!.put(file.getPath(), this, "unzip()")
-ZipFileUtil.getInstance()!.unzip(fullPath, file, fileName)
+;
+    
+logUtil!.put(file.getPath(), this, "unzip()");
+    
+ZipFileUtil.getInstance()!.unzip(fullPath, file, fileName);
+    
 }
 
 
@@ -289,41 +334,55 @@ ZipFileUtil.getInstance()!.unzip(fullPath, file, fileName)
     var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(this.getWeblisketSession()!.getStoreName())!;
         
         
-
+;
+    
 
     var filePathData: FilePathData = FilePathData.getInstance()!;
         
         
-
+;
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(URLGLOBALS.getWebappPath())
-stringBuffer!.append(storeFrontInterface!.getCurrentHostNamePath())
-stringBuffer!.append(this.itemInterface!.getCategory())
-stringBuffer!.append(filePathData!.SEPARATOR)
-stringBuffer!.append(this.itemInterface!.getId())
-stringBuffer!.append(filePathData!.SEPARATOR)
-stringBuffer!.append(this.downloadableItem!.getId())
-stringBuffer!.append(filePathData!.SEPARATOR)
+;
+    
+stringBuffer!.append(URLGLOBALS.getWebappPath());
+    
+stringBuffer!.append(storeFrontInterface!.getCurrentHostNamePath());
+    
+stringBuffer!.append(this.itemInterface!.getCategory());
+    
+stringBuffer!.append(filePathData!.SEPARATOR);
+    
+stringBuffer!.append(this.itemInterface!.getId());
+    
+stringBuffer!.append(filePathData!.SEPARATOR);
+    
+stringBuffer!.append(this.downloadableItem!.getId());
+    
+stringBuffer!.append(filePathData!.SEPARATOR);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 
 
-    setRequestHashMap(requestHashMap: HashMap<Any, Any>){
+    setRequestHashMap(requestHashMap: HashMap<any, any>){
 var requestHashMap = requestHashMap
-this.requestHashMap= requestHashMap
+this.requestHashMap= requestHashMap;
+    
 }
 
 
-    public getRequestHashMap(): HashMap<Any, Any>{
+    public getRequestHashMap(): HashMap<any, any>{
 
 
 

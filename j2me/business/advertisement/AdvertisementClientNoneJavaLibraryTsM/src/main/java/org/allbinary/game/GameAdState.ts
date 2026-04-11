@@ -61,19 +61,22 @@ public constructor (adConfiguration: AdConfiguration){
 
             super();
             var adConfiguration = adConfiguration
-this.adConfiguration= adConfiguration
-VirtualKeyboardEventHandler.getInstance()!.addListener(this)
+this.adConfiguration= adConfiguration;
+    
+VirtualKeyboardEventHandler.getInstance()!.addListener(this);
+    
 }
 
 
-    public initViewArray(viewArray: any = {}[]){
+    public initViewArray(viewArray: any[]){
 var viewArray = viewArray
 }
 
 
     public init(anyType: any = {}){
 var anyType = anyType
-this.init()
+this.init();
+    
 }
 
 
@@ -112,7 +115,8 @@ var location = location
 
     public onEvent(eventObject: AllBinaryEventObject){
 var eventObject = eventObject
-ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
+ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
+    
 }
 
 
@@ -194,7 +198,8 @@ var gameIsReady = gameIsReady
 
     public setOkayToShowAds(okayToShowAds: boolean){
 var okayToShowAds = okayToShowAds
-this.okayToShowAds= okayToShowAds
+this.okayToShowAds= okayToShowAds;
+    
 }
 
 

@@ -54,7 +54,8 @@ var gameInput = gameInput
 
                             //For kotlin this is before the body of the constructor.
                     
-this.numberOnSameTeam= numberOnSameTeam
+this.numberOnSameTeam= numberOnSameTeam;
+    
 }
 
 
@@ -66,12 +67,14 @@ var allBinaryLayerManager = allBinaryLayerManager
     var layerInterface: AllBinaryLayer = this.getOwnerLayerInterface()!;
         
         
-
+;
+    
 
     var index: number = this.getIndex()!;
         
         
-
+;
+    
 
                         if(numberOnSameTeam!.length > index)
                         
@@ -80,19 +83,22 @@ var allBinaryLayerManager = allBinaryLayerManager
     var size: number = GroupLayerManagerListener.getInstance()!.getGroupSize(layerInterface)!;
         
         
-
+;
+    
 
                         if(numberOnSameTeam[index]!.toInt() > size)
                         
                                     {
-                                    this.next()
+                                    this.next();
+    
 
                                     }
                                 
 
                                     }
                                 
-super.processAI(allBinaryLayerManager)
+super.processAI(allBinaryLayerManager);
+    
 }
 
 

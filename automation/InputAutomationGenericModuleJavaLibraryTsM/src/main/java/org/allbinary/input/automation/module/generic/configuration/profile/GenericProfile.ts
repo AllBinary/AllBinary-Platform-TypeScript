@@ -18,7 +18,10 @@
 
 
 
-import { Vector } from "../../../../../../../../java/util/Vector.js";
+            import Vector from "@ohos.util.Vector";
+        
+
+//import { Vector } from "../../../../../../../../java/util/Vector.js";
 
     
 import { DomNodeHelper } from "../../../../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js";
@@ -61,14 +64,18 @@ public constructor (node: Node){
 
             super();
             var node = node
-this.setName(DomNodeHelper.getTextNodeValue(node))
-this.vector= Vector()
+this.setName(DomNodeHelper.getTextNodeValue(node));
+    
+this.vector= Vector();
+    
 
     var nodeList: NodeList = node.getChildNodes()!;
         
         
-
-logUtil!.put("Name: " +this.getName() +" Child Nodes: " +nodeList!.getLength(), this, "Contructor")
+;
+    
+logUtil!.put("Name: " +this.getName() +" Child Nodes: " +nodeList!.getLength(), this, "Contructor");
+    
 
 
 
@@ -83,7 +90,8 @@ index < nodeList!.getLength(); index++)
     var profileNode: Node = nodeList!.item(index)!;
         
         
-
+;
+    
 
                         if(profileNode!.getNodeName()!.compareTo(GenericProfileDataWorkerData.NAME) == 0)
                         
@@ -92,9 +100,12 @@ index < nodeList!.getLength(); index++)
     var genericProfileDataWorkerType: GenericProfileDataWorkerType = GenericProfileDataWorkerType.getInstance(profileNode)!;
         
         
-
-logUtil!.put("Adding GenericProfileDataWorkerType: " +genericProfileDataWorkerType!.toString(), this, "Contructor")
-this.vector.add(genericProfileDataWorkerType)
+;
+    
+logUtil!.put("Adding GenericProfileDataWorkerType: " +genericProfileDataWorkerType!.toString(), this, "Contructor");
+    
+this.vector.add(genericProfileDataWorkerType);
+    
 
                                     }
                                 
@@ -106,8 +117,10 @@ public constructor (name: string){
 
             super();
             var name = name
-this.setName(name)
-this.vector= Vector()
+this.setName(name);
+    
+this.vector= Vector();
+    
 }
 
 
@@ -124,14 +137,19 @@ this.vector= Vector()
     public add(genericProfileDataWorkerType: GenericProfileDataWorkerType){
 var genericProfileDataWorkerType = genericProfileDataWorkerType
 
-                        if(!this.vector.contains(genericProfileDataWorkerType))
-                        this.vector.add(genericProfileDataWorkerType)
+                        if(!this.vector.contains(genericProfileDataWorkerType);
+
+                        )
+                        this.vector.add(genericProfileDataWorkerType);
+
+                        
 }
 
 
     public remove(genericProfileDataWorkerType: GenericProfileDataWorkerType){
 var genericProfileDataWorkerType = genericProfileDataWorkerType
-this.vector.remove(genericProfileDataWorkerType)
+this.vector.remove(genericProfileDataWorkerType);
+    
 }
 
 
@@ -143,12 +161,14 @@ var document = document
     var node: Node = ModDomHelper.createTextNode(document, GenericProfileData.NAME, name)!;
         
         
-
+;
+    
 
     var size: number = vector.length!;
         
         
-
+;
+    
 
 
 
@@ -160,11 +180,15 @@ var document = document
 index < size; index++)
         {
 
-    var genericProfileDataWorkerType: GenericProfileDataWorkerType = vector.get(index) as GenericProfileDataWorkerType;
-        
-        
+    var genericProfileDataWorkerType: GenericProfileDataWorkerType = vector.get(index);
 
-node.appendChild(genericProfileDataWorkerType!.toXmlNode(document))
+                         as GenericProfileDataWorkerType;
+        
+        
+;
+    
+node.appendChild(genericProfileDataWorkerType!.toXmlNode(document));
+    
 }
 
 
@@ -188,7 +212,8 @@ node.appendChild(genericProfileDataWorkerType!.toXmlNode(document))
 
     public setName(name: string){
 var name = name
-this.name= name
+this.name= name;
+    
 }
 
 
@@ -204,7 +229,8 @@ this.name= name
 
     public setGenericProfileActions(genericProfileActions: GenericProfileActions){
 var genericProfileActions = genericProfileActions
-this.genericProfileActions= genericProfileActions
+this.genericProfileActions= genericProfileActions;
+    
 }
 
 

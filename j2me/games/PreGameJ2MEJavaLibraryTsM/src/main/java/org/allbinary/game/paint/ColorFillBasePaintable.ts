@@ -47,14 +47,17 @@ public constructor (basicColor: BasicColor){
 
             super();
             var basicColor = basicColor
-this.setBasicColorP(basicColor)
+this.setBasicColorP(basicColor);
+    
 }
 
 
     public setBasicColorP(basicColor: BasicColor){
 var basicColor = basicColor
-this.basicColor= basicColor
-this.setColor(this.getBasicColorP()!.toInt())
+this.basicColor= basicColor;
+    
+this.setColor(this.getBasicColorP()!.toInt());
+    
 }
 
 
@@ -80,7 +83,8 @@ this.setColor(this.getBasicColorP()!.toInt())
 
     setColor(color: number){
 var color = color
-this.colorP= color
+this.colorP= color;
+    
 }
 
 

@@ -55,7 +55,8 @@ private constructor (){
                         if(File.separatorChar == '\\')
                         
                                     {
-                                    SEPARATOR= File.separator +File.separator
+                                    SEPARATOR= File.separator +File.separator;
+    
 
                                     }
                                 

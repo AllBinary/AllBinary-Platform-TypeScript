@@ -59,15 +59,15 @@ export class LocalPlayerInputIdFactory
         
         
 
-    private readonly deviceIdToplayerId: IntArray = IntArray(MAX_FAST_DEVICEID);
+    private readonly deviceIdToplayerId: number[] = new Array(MAX_FAST_DEVICEID);
         
         
 
-    private readonly playerIdToDeviceId: IntArray = IntArray(MAX_NUMBER_OF_PLAYERS);
+    private readonly playerIdToDeviceId: number[] = new Array(MAX_NUMBER_OF_PLAYERS);
         
         
 
-    private readonly playersInPlay: BooleanArray = BooleanArray(MAX_NUMBER_OF_PLAYERS);
+    private readonly playersInPlay: boolean[] = new Array(MAX_NUMBER_OF_PLAYERS);
         
         
 
@@ -87,7 +87,8 @@ private constructor (){
         
 index >= 0; index--)
         {
-deviceIdToplayerId[index]=  -1
+deviceIdToplayerId[index]=  -1;
+    
 }
 
 }
@@ -108,7 +109,8 @@ var playerInputId = playerInputId
 var deviceId = deviceId
 
     var index: number= 0
-
+;
+    
 
                         if(deviceId < MAX_FAST_DEVICEID)
                         
@@ -117,7 +119,8 @@ var deviceId = deviceId
     var playerInputId: number = deviceIdToplayerId[deviceId]!;
         
         
-
+;
+    
 
                         if(playerInputId !=  -1)
                         
@@ -160,26 +163,33 @@ var deviceId = deviceId
 
                         }
                             
-index= totalDevicesMapped
+index= totalDevicesMapped;
+    
 
                         if(deviceId < MAX_FAST_DEVICEID)
                         
                                     {
-                                    this.deviceIdToplayerId[deviceId]= index
+                                    this.deviceIdToplayerId[deviceId]= index;
+    
 
                                     }
                                 
                         else {
                             logUtil!.put(StringMaker().
-                            append("Added DeviceId: ")!.appendint(deviceId)!.append(" beyond fast Id list")!.toString(), this, "getPlayerForDevice")
+                            append("Added DeviceId: ")!.appendint(deviceId)!.append(" beyond fast Id list")!.toString(), this, "getPlayerForDevice");
+    
 
                         }
                             
-this.playerIdToDeviceId[index]= deviceId
-AnalogLocationInputFactory.getInstance()!.addPlayer(totalDevicesMapped)
-totalDevicesMapped++
+this.playerIdToDeviceId[index]= deviceId;
+    
+AnalogLocationInputFactory.getInstance()!.addPlayer(totalDevicesMapped);
+    
+totalDevicesMapped++;
+    
 logUtil!.put(StringMaker().
-                            append("Added DeviceId: ")!.appendint(deviceId)!.append(" at: ")!.appendint(index)!.append(" Total: ")!.appendint(this.totalDevicesMapped)!.toString(), this, "getPlayerForDevice")
+                            append("Added DeviceId: ")!.appendint(deviceId)!.append(" at: ")!.appendint(index)!.append(" Total: ")!.appendint(this.totalDevicesMapped)!.toString(), this, "getPlayerForDevice");
+    
 
 
 
@@ -194,7 +204,8 @@ logUtil!.put(StringMaker().
     var total: number = 0;
         
         
-
+;
+    
 
 
 
@@ -209,7 +220,8 @@ index >= 0; index--)
                         if(this.playersInPlay[index] == true)
                         
                                     {
-                                    total++
+                                    total++;
+    
 
                                     }
                                 
@@ -238,20 +250,24 @@ var playerInputId = playerInputId
     public setPlayerInPlay(playerInputId: number){
 var playerInputId = playerInputId
 logUtil!.put(StringMaker().
-                            append("Setting PlayerInPlay with playerInputId: ")!.appendint(playerInputId)!.toString(), this, "setPlayerInPlay")
-playersInPlay[playerInputId]= true
+                            append("Setting PlayerInPlay with playerInputId: ")!.appendint(playerInputId)!.toString(), this, "setPlayerInPlay");
+    
+playersInPlay[playerInputId]= true;
+    
 }
 
 
     public setPlayerOutOfPlay(playerInputId: number){
 var playerInputId = playerInputId
 logUtil!.put(StringMaker().
-                            append("Setting PlayerOutOfPlay with playerInputId: ")!.appendint(playerInputId)!.toString(), this, "setPlayerOutOfPlay")
-playersInPlay[playerInputId]= false
+                            append("Setting PlayerOutOfPlay with playerInputId: ")!.appendint(playerInputId)!.toString(), this, "setPlayerOutOfPlay");
+    
+playersInPlay[playerInputId]= false;
+    
 }
 
 
-    public getPlayersInPlay(): BooleanArray{
+    public getPlayersInPlay(): boolean[]{
 
 
 

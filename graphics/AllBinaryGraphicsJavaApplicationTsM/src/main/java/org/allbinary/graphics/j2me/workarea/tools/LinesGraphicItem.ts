@@ -18,10 +18,13 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { awt } from "../../../../../../java/awt.js";
 
     
-import { Vector } from "../../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../../java/util/Vector.js";
 
     
 import { DefaultMutableTreeNode } from "../../../../../../javax/swing/tree/DefaultMutableTreeNode.js";
@@ -156,14 +159,20 @@ export class LinesGraphicItem
 public constructor (){
 
             super();
-            this.points= Points()
+            this.points= Points();
+    
 
         try {
-            init()
-this.active= true
-} catch(e: Exception)
+            init();
+    
+this.active= true;
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e);
+    
 }
 
 }
@@ -172,19 +181,24 @@ public constructor (linesNode: Node){
 
             super();
             var linesNode = linesNode
-this.points= Points()
-init()
-this.active= false
+this.points= Points();
+    
+init();
+    
+this.active= false;
+    
 
     var lineNodes: BasicArrayList = DomHelper.getInstance()!.getWithoutTextNodes(linesNode!.getChildNodes())!;
         
         
-
+;
+    
 
     var numberOfLines: number = lineNodes!.size()!;
         
         
-
+;
+    
 
 
 
@@ -196,21 +210,27 @@ this.active= false
 index < numberOfLines; index++)
         {
 
-    var lineNode: Node = lineNodes!.get(index) as Node;
-        
-        
+    var lineNode: Node = lineNodes!.get(index);
 
+                         as Node;
+        
+        
+;
+    
 
     var pointNodes: BasicArrayList = DomHelper.getInstance()!.getWithoutTextNodes(lineNode!.getChildNodes())!;
         
         
-
+;
+    
 
     var pointOneNode: Node = DomHelper.getInstance()!.searchNodeList(PointsDomUtil.getInstance()!.POINTONE, pointNodes)!;
         
         
-
-this.addPoint(pointOneNode!.getChildNodes())
+;
+    
+this.addPoint(pointOneNode!.getChildNodes());
+    
 
                         if(index == numberOfLines -1)
                         
@@ -219,8 +239,10 @@ this.addPoint(pointOneNode!.getChildNodes())
     var pointTwoNode: Node = DomHelper.getInstance()!.searchNodeList(PointsDomUtil.getInstance()!.POINTTWO, pointNodes)!;
         
         
-
-this.addPoint(pointTwoNode!.getChildNodes())
+;
+    
+this.addPoint(pointTwoNode!.getChildNodes());
+    
 
                                     }
                                 
@@ -243,11 +265,16 @@ this.addPoint(pointTwoNode!.getChildNodes())
                 //@Throws(Error::class)
             
     public init(){
-this.treeNode= DefaultMutableTreeNode(PointsDomUtil.getInstance()!.LINES +item)
-item++
-this.points.init()
-this.pointTreeNodeVector= Vector()
-this.fulcrumPoint= PointFactory.getInstance()!.getInstance(0, 0)
+this.treeNode= DefaultMutableTreeNode(PointsDomUtil.getInstance()!.LINES +item);
+    
+item++;
+    
+this.points.init();
+    
+this.pointTreeNodeVector= Vector();
+    
+this.fulcrumPoint= PointFactory.getInstance()!.getInstance(0, 0);
+    
 }
 
 
@@ -256,15 +283,20 @@ this.fulcrumPoint= PointFactory.getInstance()!.getInstance(0, 0)
     public translate(x: number, y: number){
 var x = x
 var y = y
-StatusFactory.getInstance()!.setStatus("Translating: " +this.points.getPoints())
+StatusFactory.getInstance()!.setStatus("Translating: " +this.points.getPoints());
+    
 
     var basicGraphicsPipeline: BasicGraphicsPipeline = new BasicGraphicsPipeline(this.points.getPoints());
         
         
-
-basicGraphicsPipeline!.translate(x, y)
-this.points= Points()
-this.points.addPoints(basicGraphicsPipeline!.getMatrix())
+;
+    
+basicGraphicsPipeline!.translate(x, y);
+    
+this.points= Points();
+    
+this.points.addPoints(basicGraphicsPipeline!.getMatrix());
+    
 }
 
 
@@ -273,34 +305,40 @@ var theta = theta
 
         while(theta > 2 *Math.PI)
         {
-theta -= 2 *Math.PI
+theta -= 2 *Math.PI;
+    
 }
 
 
         while(theta < 0)
         {
-theta += 2 *Math.PI
+theta += 2 *Math.PI;
+    
 }
 
-this.theta= theta
+this.theta= theta;
+    
 }
 
 
     public addRotate(theta: number){
 var theta = theta
-this.setRotate(this.theta +theta)
+this.setRotate(this.theta +theta);
+    
 }
 
 
     public setAngle(angle: number){
 var angle = angle
-this.setRotate(Math.toRadians(angle))
+this.setRotate(Math.toRadians(angle));
+    
 }
 
 
     public addAngle(angle: number){
 var angle = angle
-this.setRotate(this.theta +Math.toRadians(angle))
+this.setRotate(this.theta +Math.toRadians(angle));
+    
 }
 
 
@@ -333,53 +371,68 @@ var pointNodes = pointNodes
     var list: BasicArrayList = DomHelper.getInstance()!.getWithoutTextNodes(pointNodes)!;
         
         
-
+;
+    
 
     var xNode: Node = DomHelper.getInstance()!.searchNodeList(PositionStrings.getInstance()!.X, list)!;
         
         
-
+;
+    
 
     var xTextNode: Node = xNode!.getFirstChild()!;
         
         
-
+;
+    
 
     var xInteger: Integer = new Integer(xTextNode!.getNodeValue());
         
         
-
+;
+    
 
     var yNode: Node = DomHelper.getInstance()!.searchNodeList(PositionStrings.getInstance()!.Y, list)!;
         
         
-
+;
+    
 
     var yTextNode: Node = yNode!.getFirstChild()!;
         
         
-
+;
+    
 
     var yInteger: Integer = new Integer(yTextNode!.getNodeValue());
         
         
-
+;
+    
 
     var point: GPoint = PointFactory.getInstance()!.getInstance(xInteger!.toInt(), yInteger!.toInt())!;
         
         
-
-this.addPoint(point)
+;
+    
+this.addPoint(point);
+    
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public addPoint(point: GPoint){
 var point = point
-this.points.getPoints()!.add(point)
-logUtil!.put(point.toString(), this, "addPoint")
-this.pointTreeNodeVector!.add(DefaultMutableTreeNode(point.toString()))
-this.treeNode!.add(this.pointTreeNodeVector!.get(this.pointTreeNodeVector!.length -1) as DefaultMutableTreeNode)
+this.points.getPoints()!.add(point);
+    
+logUtil!.put(point.toString(), this, "addPoint");
+    
+this.pointTreeNodeVector!.add(DefaultMutableTreeNode(point.toString()));
+    
+this.treeNode!.add(this.pointTreeNodeVector!.get(this.pointTreeNodeVector!.length -1);
+
+                         as DefaultMutableTreeNode);
+    
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
@@ -391,7 +444,8 @@ this.treeNode!.add(this.pointTreeNodeVector!.get(this.pointTreeNodeVector!.lengt
             ;
         
         
-
+;
+    
 
                         if(this.points.getSize() > 0)
                         
@@ -400,19 +454,28 @@ this.treeNode!.add(this.pointTreeNodeVector!.get(this.pointTreeNodeVector!.lengt
     var lastPoint: number = this.points.getSize() -1;
         
         
+;
+    
+point= this.points.getPoints()!.remove(lastPoint);
 
-point= this.points.getPoints()!.remove(lastPoint) as GPoint
+                         as GPoint;
+    
 
     var index: number = this.pointTreeNodeVector!.length -1;
         
         
-
+;
+    
 
                         if(index > 0)
                         
                                     {
-                                    this.treeNode!.remove(this.pointTreeNodeVector!.get(index) as DefaultMutableTreeNode)
-this.pointTreeNodeVector!.remove(index)
+                                    this.treeNode!.remove(this.pointTreeNodeVector!.get(index);
+
+                         as DefaultMutableTreeNode);
+    
+this.pointTreeNodeVector!.remove(index);
+    
 
                                     }
                                 
@@ -439,12 +502,14 @@ this.pointTreeNodeVector!.remove(index)
 
 
     public deactivate(){
-this.active= false
+this.active= false;
+    
 }
 
 
     public activate(){
-this.active= true
+this.active= true;
+    
 }
 
 
@@ -456,7 +521,8 @@ var list = list
     var size: number = list.size()!;
         
         
-
+;
+    
 
 
 
@@ -468,19 +534,27 @@ var list = list
 index < size; index++)
         {
 
-    var point: GPoint = list.get(index) as GPoint;
-        
-        
+    var point: GPoint = list.get(index);
 
+                         as GPoint;
+        
+        
+;
+    
 
                         if(point != 
                                     null
                                 )
                         
                                     {
-                                    this.points.getPoints()!.add(PointFactory.getInstance()!.getInstance(point.getX(), point.getY()))
-this.pointTreeNodeVector!.add(DefaultMutableTreeNode(point.toString()))
-this.treeNode!.add(this.pointTreeNodeVector!.get(this.pointTreeNodeVector!.length -1) as DefaultMutableTreeNode)
+                                    this.points.getPoints()!.add(PointFactory.getInstance()!.getInstance(point.getX(), point.getY()));
+    
+this.pointTreeNodeVector!.add(DefaultMutableTreeNode(point.toString()));
+    
+this.treeNode!.add(this.pointTreeNodeVector!.get(this.pointTreeNodeVector!.length -1);
+
+                         as DefaultMutableTreeNode);
+    
 
                                     }
                                 
@@ -496,9 +570,12 @@ this.treeNode!.add(this.pointTreeNodeVector!.get(this.pointTreeNodeVector!.lengt
     var linesGraphicItem: LinesGraphicItem = new LinesGraphicItem();
         
         
-
-linesGraphicItem!.duplicatePoints(this.points.getPoints())
-linesGraphicItem!.deactivate()
+;
+    
+linesGraphicItem!.duplicatePoints(this.points.getPoints());
+    
+linesGraphicItem!.deactivate();
+    
 
 
 
@@ -514,13 +591,16 @@ linesGraphicItem!.deactivate()
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return Math.toDegrees(this.theta);
+
+                        ;
     
 }
 
 
     public setFulcrumPoint(point: GPoint){
 var point = point
-this.fulcrumPoint= point
+this.fulcrumPoint= point;
+    
 }
 
 
@@ -536,16 +616,20 @@ var y = y
     var graphics: Graphics2D = g as Graphics2D;
         
         
-
-graphics.setColor(getColor())
-graphics.setStroke(BasicStroke(x))
+;
+    
+graphics.setColor(getColor());
+    
+graphics.setStroke(BasicStroke(x));
+    
 
                         if(this.isActive() && this.currentMousePoint != 
                                     null
                                 )
                         
                                     {
-                                    this.points.getPoints()!.add(this.currentMousePoint)
+                                    this.points.getPoints()!.add(this.currentMousePoint);
+    
 
                                     }
                                 
@@ -553,14 +637,18 @@ graphics.setStroke(BasicStroke(x))
     var tempPointVector: BasicArrayList = PointsUtil.getInstance()!.doTransforms(this.points.getPoints(), canvasAngle, PointFactory.getInstance()!.getInstance(dimension.getWidth(), dimension.getHeight()))!;
         
         
-
+;
+    
 
                         if(this.isActive() && this.currentMousePoint != 
                                     null
                                 )
                         
                                     {
-                                    this.currentMousePoint= this.points.getPoints()!.remove(this.points.getSize() -1) as GPoint
+                                    this.currentMousePoint= this.points.getPoints()!.remove(this.points.getSize() -1);
+
+                         as GPoint;
+    
 
                                     }
                                 
@@ -568,19 +656,24 @@ graphics.setStroke(BasicStroke(x))
     var size: number = tempPointVector!.size()!;
         
         
-
+;
+    
 
     var firstPoint: GPoint = 
                 null
             ;
         
         
-
+;
+    
 
                         if(size > 0)
                         
                                     {
-                                    firstPoint= tempPointVector!.get(0) as GPoint
+                                    firstPoint= tempPointVector!.get(0);
+
+                         as GPoint;
+    
 
                                     }
                                 
@@ -595,17 +688,25 @@ graphics.setStroke(BasicStroke(x))
 index < size; index++)
         {
 
-    var secondPoint: GPoint = tempPointVector!.get(index) as GPoint;
-        
-        
+    var secondPoint: GPoint = tempPointVector!.get(index);
 
-graphics.drawLine((firstPoint!.getX() *x) -(x /4), (firstPoint!.getY() *y) -(y /4), (secondPoint!.getX() *x) -(x /4), (secondPoint!.getY() *y) -(y /4))
-firstPoint= secondPoint
+                         as GPoint;
+        
+        
+;
+    
+graphics.drawLine((firstPoint!.getX() *x) -(x /4), (firstPoint!.getY() *y) -(y /4), (secondPoint!.getX() *x) -(x /4), (secondPoint!.getY() *y) -(y /4));
+    
+firstPoint= secondPoint;
+    
 }
 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "mouseMoved", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "mouseMoved", e);
+    
 }
 
 }
@@ -620,6 +721,8 @@ var canvasDom = canvasDom
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return PointsDomUtil.getInstance()!.toDom(canvasDom, this.points.getPoints());
+
+                        ;
     
 }
 
@@ -630,6 +733,8 @@ var canvasDom = canvasDom
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.points.isValid();
+
+                        ;
     
 }
 
@@ -646,7 +751,8 @@ var canvasDom = canvasDom
 
     public setPointsInterface(points: Points){
 var points = points
-this.points= points
+this.points= points;
+    
 }
 
 
@@ -662,7 +768,8 @@ this.points= points
 
     public setColor(color: Color){
 var color = color
-this.color= color
+this.color= color;
+    
 }
 
 
@@ -676,7 +783,8 @@ var y = y
     var mousePoint: GPoint = PointFactory.getInstance()!.getInstance(mouseEvent!.getPoint()!.x, mouseEvent!.getPoint()!.y)!;
         
         
-
+;
+    
 
                         if((mouseEvent!.getModifiers() and mouseEvent!.BUTTON1_MASK) == mouseEvent!.BUTTON1_MASK)
                         
@@ -685,9 +793,12 @@ var y = y
     var point: GPoint = PointFactory.getInstance()!.getInstance(mousePoint!.getX() /x, mousePoint!.getY() /y)!;
         
         
-
-StatusFactory.getInstance()!.setStatus("Line Point Added: " +point.toString())
-this.addPoint(point)
+;
+    
+StatusFactory.getInstance()!.setStatus("Line Point Added: " +point.toString());
+    
+this.addPoint(point);
+    
 
                                     }
                                 
@@ -695,15 +806,21 @@ this.addPoint(point)
                         if((mouseEvent!.getModifiers() and mouseEvent!.BUTTON3_MASK) == mouseEvent!.BUTTON3_MASK)
                         
                                     {
-                                    StatusFactory.getInstance()!.setStatus("Line Point Removed")
-this.removePoint()
+                                    StatusFactory.getInstance()!.setStatus("Line Point Removed");
+    
+this.removePoint();
+    
 
                                     }
                                 
-this.currentMousePoint= mousePoint
-} catch(e: Exception)
+this.currentMousePoint= mousePoint;
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "mouseMoved", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "mouseMoved", e);
+    
 }
 
 }
@@ -750,16 +867,22 @@ var y = y
     var mousePoint: GPoint = PointFactory.getInstance()!.getInstance(mouseEvent!.getPoint()!.x, mouseEvent!.getPoint()!.y)!;
         
         
-
+;
+    
 
     var point: GPoint = PointFactory.getInstance()!.getInstance(mousePoint!.getX() /x, mousePoint!.getY() /y)!;
         
         
+;
+    
+this.currentMousePoint= point;
+    
 
-this.currentMousePoint= point
-} catch(e: Exception)
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "mouseMoved", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "mouseMoved", e);
+    
 }
 
 }
@@ -773,13 +896,16 @@ var keyEvent = keyEvent
     var keyCode: number = keyEvent!.getKeyCode()!;
         
         
-
+;
+    
 
                         if(keyCode == keyEvent!.VK_ESCAPE)
                         
                                     {
-                                    StatusFactory.getInstance()!.setStatus("Deactivated")
-this.deactivate()
+                                    StatusFactory.getInstance()!.setStatus("Deactivated");
+    
+this.deactivate();
+    
 
                                     }
                                 
@@ -787,7 +913,8 @@ this.deactivate()
                         if(keyCode == keyEvent!.VK_UP)
                         
                                     {
-                                    this.translate(0,  -1)
+                                    this.translate(0,  -1);
+    
 
                                     }
                                 
@@ -795,7 +922,8 @@ this.deactivate()
                         if(keyCode == keyEvent!.VK_DOWN)
                         
                                     {
-                                    this.translate(0, 1)
+                                    this.translate(0, 1);
+    
 
                                     }
                                 
@@ -803,7 +931,8 @@ this.deactivate()
                         if(keyCode == keyEvent!.VK_LEFT)
                         
                                     {
-                                    this.translate( -1, 0)
+                                    this.translate( -1, 0);
+    
 
                                     }
                                 
@@ -811,13 +940,17 @@ this.deactivate()
                         if(keyCode == keyEvent!.VK_RIGHT)
                         
                                     {
-                                    this.translate(1, 0)
+                                    this.translate(1, 0);
+    
 
                                     }
                                 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, gameInputStrings!.KEY_PRESSED, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, gameInputStrings!.KEY_PRESSED, e);
+    
 }
 
 }

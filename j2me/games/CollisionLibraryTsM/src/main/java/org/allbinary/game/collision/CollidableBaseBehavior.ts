@@ -64,8 +64,10 @@ public constructor (ownerLayer: CollidableCompositeLayer, collidable: boolean){
             super();
             var ownerLayer = ownerLayer
 var collidable = collidable
-this.ownerLayer= ownerLayer
-this.collidable= collidable
+this.ownerLayer= ownerLayer;
+    
+this.collidable= collidable;
+    
 }
 
 
@@ -78,14 +80,17 @@ this.collidable= collidable
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this::class.toString()!;
+                        return this.constructor.name.toString()!;
+
+                        ;
     
 }
 
 
     public setCollidable(collidable: boolean){
 var collidable = collidable
-this.collidable= collidable
+this.collidable= collidable;
+    
 }
 
 
@@ -107,7 +112,7 @@ var allbinaryCollidableLayer = allbinaryCollidableLayer
 
 
                             throw Error(StringMaker().
-                            append(commonStrings!.NOT_IMPLEMENTED)!.append(CommonLabels.getInstance()!.COLON_SEP)!.append(this::class.toString()!)!.toString())
+                            append(commonStrings!.NOT_IMPLEMENTED)!.append(CommonLabels.getInstance()!.COLON_SEP)!.append(this.constructor.name.toString()!)!.toString())
 }
 
 
@@ -122,6 +127,8 @@ var collisionLayer = collisionLayer
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return layerCollisionUtil!.isCollision(this.ownerLayer, collisionLayer);
+
+                        ;
     
 }
 
@@ -133,6 +140,8 @@ var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterfac
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return layerCollisionUtil!.isCollision(ownerLayer, collidableInterfaceCompositeInterface as AllBinaryLayer);
+
+                        ;
     
 }
 

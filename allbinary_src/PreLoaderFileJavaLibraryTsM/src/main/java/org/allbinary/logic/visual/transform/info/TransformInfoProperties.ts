@@ -44,42 +44,53 @@ var description = description
 var objectFileName = objectFileName
 var objectConfigFileName = objectConfigFileName
 var templateFileName = templateFileName
-this.name= name
-this.label= label
-this.description= description
-this.objectFileName= objectFileName
-this.templateFileName= templateFileName
-this.objectConfigFileName= objectConfigFileName
+this.name= name;
+    
+this.label= label;
+    
+this.description= description;
+    
+this.objectFileName= objectFileName;
+    
+this.templateFileName= templateFileName;
+    
+this.objectConfigFileName= objectConfigFileName;
+    
 }
 
 
     public setName(value: string){
 var value = value
-this.name= value
+this.name= value;
+    
 }
 
 
     public setDescription(value: string){
 var value = value
-this.description= value
+this.description= value;
+    
 }
 
 
     public setViewFile(value: string){
 var value = value
-this.objectFileName= value
+this.objectFileName= value;
+    
 }
 
 
     public setTemplateFile(value: string){
 var value = value
-this.templateFileName= value
+this.templateFileName= value;
+    
 }
 
 
     public setObjectConfigFile(value: string){
 var value = value
-this.objectConfigFileName= value
+this.objectConfigFileName= value;
+    
 }
 
 

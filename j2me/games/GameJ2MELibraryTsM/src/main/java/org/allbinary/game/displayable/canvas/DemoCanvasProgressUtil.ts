@@ -38,7 +38,8 @@ export class DemoCanvasProgressUtil
 
     public static showProgress(demoCanvas: DemoCanvas){
 var demoCanvas = demoCanvas
-DemoCanvasProgressUtil.showProgress(demoCanvas, false)
+DemoCanvasProgressUtil.showProgress(demoCanvas, false);
+    
 }
 
 
@@ -49,17 +50,24 @@ var background = background
     var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
         
         
-
-progressCanvas!.startBackground(background)
+;
+    
+progressCanvas!.startBackground(background);
+    
 
     var paintableArray: PaintableInterface[] = new Array(2);
         
         
-
-paintableArray[0]= progressCanvas
-paintableArray[1]= demoCanvas!.getDefaultPaintableInterface()
-demoCanvas!.setDefaultPaintableInterface(PaintableComposite(paintableArray))
-demoCanvas!.setPaintableInterface(demoCanvas!.getDefaultPaintableInterface())
+;
+    
+paintableArray[0]= progressCanvas;
+    
+paintableArray[1]= demoCanvas!.getDefaultPaintableInterface();
+    
+demoCanvas!.setDefaultPaintableInterface(PaintableComposite(paintableArray));
+    
+demoCanvas!.setPaintableInterface(demoCanvas!.getDefaultPaintableInterface());
+    
 }
 
 

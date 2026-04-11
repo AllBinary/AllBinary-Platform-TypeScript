@@ -39,7 +39,8 @@ public constructor (viewPositionFactoryInterface: ViewPositionFactoryInterface){
 
             super();
             var viewPositionFactoryInterface = viewPositionFactoryInterface
-this.viewPositionFactoryInterface= viewPositionFactoryInterface
+this.viewPositionFactoryInterface= viewPositionFactoryInterface;
+    
 }
 
 

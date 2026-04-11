@@ -141,8 +141,10 @@ private constructor (){
     var image: Image = originalImage;
         
         
-
-image= openGLUtil!.add(image)
+;
+    
+image= openGLUtil!.add(image);
+    
 
 
 
@@ -158,6 +160,8 @@ image= openGLUtil!.add(image)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.createImage(originalImage);
+
+                        ;
     
 
                         }
@@ -170,10 +174,13 @@ image= openGLUtil!.add(image)
     public createImage(originalImage: Image): Image{
     //var originalImage = originalImage
 
-                        if(!features.isFeature(gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION))
+                        if(!features.isFeature(gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION);
+
+                        )
                         
                                     {
-                                    logUtil!.put(NO_COPY, this, commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put(NO_COPY, this, commonStrings!.CONSTRUCTOR);
+    
 
 
 
@@ -187,7 +194,8 @@ image= openGLUtil!.add(image)
     var originalImage2: Image = originalImage;
         
         
-
+;
+    
 
                         if(features.isFeature(openGLFeatureFactory!.OPENGL))
                         
@@ -200,8 +208,10 @@ image= openGLUtil!.add(image)
     var openGLESImage: OpenGLESImage = (originalImage as OpenGLESImage);
         
         
-
-originalImage2= openGLESImage!.openGLBitmap!.getImage()
+;
+    
+originalImage2= openGLESImage!.openGLBitmap!.getImage();
+    
 
                                     }
                                 
@@ -214,7 +224,8 @@ originalImage2= openGLESImage!.openGLBitmap!.getImage()
             ;
         
         
-
+;
+    
 
                         if(originalImage2!.isMutable())
                         
@@ -223,8 +234,10 @@ originalImage2= openGLESImage!.openGLBitmap!.getImage()
     var originalMutableImage: SwtMutableImage = originalImage2 as SwtMutableImage;
         
         
-
-image= SwtMutableImage(SwtDeviceComponent.createImage(originalMutableImage!.image.getImageData()))
+;
+    
+image= SwtMutableImage(SwtDeviceComponent.createImage(originalMutableImage!.image.getImageData()));
+    
 
                                     }
                                 
@@ -233,12 +246,15 @@ image= SwtMutableImage(SwtDeviceComponent.createImage(originalMutableImage!.imag
     var originalImmutableImage: SwtImmutableImage = originalImage2 as SwtImmutableImage;
         
         
-
-image= SwtMutableImage(SwtDeviceComponent.createImage(originalImmutableImage!.image.getImageData()))
+;
+    
+image= SwtMutableImage(SwtDeviceComponent.createImage(originalImmutableImage!.image.getImageData()));
+    
 
                         }
                             
-image= openGLUtil!.add(image)
+image= openGLUtil!.add(image);
+    
 
 
 
@@ -259,6 +275,8 @@ image= openGLUtil!.add(image)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.createImage(originalImage, width, height, true);
+
+                        ;
     
 }
 
@@ -274,12 +292,16 @@ image= openGLUtil!.add(image)
     var originalImage2: Image = originalImage;
         
         
+;
+    
 
+                        if(!features.isFeature(gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION);
 
-                        if(!features.isFeature(gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION))
+                        )
                         
                                     {
-                                    logUtil!.put(NO_COPY, this, commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put(NO_COPY, this, commonStrings!.CONSTRUCTOR);
+    
 
 
 
@@ -302,6 +324,8 @@ image= openGLUtil!.add(image)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.createImage2(originalImage, width, height, mutable);
+
+                        ;
     
 
                                     }
@@ -314,8 +338,10 @@ image= openGLUtil!.add(image)
     var openGLESImage: OpenGLESImage = (originalImage as OpenGLESImage);
         
         
-
-originalImage2= openGLESImage!.openGLBitmap!.getImage()
+;
+    
+originalImage2= openGLESImage!.openGLBitmap!.getImage();
+    
 
                                     }
                                 
@@ -328,7 +354,8 @@ originalImage2= openGLESImage!.openGLBitmap!.getImage()
             ;
         
         
-
+;
+    
 
                         if(originalImage2!.isMutable() && mutable)
                         
@@ -337,7 +364,8 @@ originalImage2= openGLESImage!.openGLBitmap!.getImage()
     var originalMutableImage: SwtMutableImage = originalImage2 as SwtMutableImage;
         
         
-
+;
+    
 
                         if(originalMutableImage!.getImage() != 
                                     null
@@ -348,18 +376,22 @@ originalImage2= openGLESImage!.openGLBitmap!.getImage()
     var imageData2: ImageData = originalMutableImage!.image.getImageData()!;
         
         
-
+;
+    
 
     var imageData: ImageData = imageData2!.scaledTo(width, height)!;
         
         
-
-image= SwtMutableImage(SwtDeviceComponent.createImage(imageData))
+;
+    
+image= SwtMutableImage(SwtDeviceComponent.createImage(imageData));
+    
 
                                     }
                                 
                         else {
-                            image= SwtMutableImage(originalMutableImage!.getName(), PostLoadSwtMutableImageProcessor(originalMutableImage))
+                            image= SwtMutableImage(originalMutableImage!.getName(), PostLoadSwtMutableImageProcessor(originalMutableImage));
+    
 
                         }
                             
@@ -371,7 +403,8 @@ image= SwtMutableImage(SwtDeviceComponent.createImage(imageData))
     var originalImmutableImage: SwtImmutableImage = originalImage2 as SwtImmutableImage;
         
         
-
+;
+    
 
                         if(originalImmutableImage!.getImage() != 
                                     null
@@ -382,25 +415,30 @@ image= SwtMutableImage(SwtDeviceComponent.createImage(imageData))
     var imageData2: ImageData = originalImmutableImage!.image.getImageData()!;
         
         
-
+;
+    
 
     var imageData: ImageData = imageData2!.scaledTo(width, height)!;
         
         
-
-image= SwtImmutableImage(originalImage!.getName(), SwtDeviceComponent.createImage(imageData))
+;
+    
+image= SwtImmutableImage(originalImage!.getName(), SwtDeviceComponent.createImage(imageData));
+    
 
                                     }
                                 
                         else {
-                            image= SwtImmutableImage(originalImmutableImage!.getName(), PostLoadSwtImmutableImageProcessor(originalImmutableImage))
+                            image= SwtImmutableImage(originalImmutableImage!.getName(), PostLoadSwtImmutableImageProcessor(originalImmutableImage));
+    
 
                         }
                             
 
                         }
                             
-image= openGLUtil!.add(image)
+image= openGLUtil!.add(image);
+    
 
 
 
@@ -429,12 +467,16 @@ image= openGLUtil!.add(image)
     var originalImage2: Image = originalImage;
         
         
+;
+    
 
+                        if(!features.isFeature(gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION);
 
-                        if(!features.isFeature(gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION))
+                        )
                         
                                     {
-                                    logUtil!.put(NO_COPY, this, commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put(NO_COPY, this, commonStrings!.CONSTRUCTOR);
+    
 
 
 
@@ -450,7 +492,8 @@ image= openGLUtil!.add(image)
             ;
         
         
-
+;
+    
 
                         if(features.isFeature(openGLFeatureFactory!.OPENGL))
                         
@@ -459,7 +502,8 @@ image= openGLUtil!.add(image)
     var displayInfoSingleton: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
         
         
-
+;
+    
 
                         if(originalImage!.getType() >= OpenGLESImage.TYPE)
                         
@@ -468,84 +512,115 @@ image= openGLUtil!.add(image)
     var openGLESImage: OpenGLESImage = (originalImage as OpenGLESImage);
         
         
-
+;
+    
 
     var openGLESImageProperties: OpenGLESImageProperties = openGLESImage!.openGLESImageProperties;
         
         
-
+;
+    
 
     var openGLWidth: number = openGLESImage!.openGLBitmap!.getWidth()!;
         
         
-
+;
+    
 
     var openGLHeight: number = openGLESImage!.openGLBitmap!.getHeight()!;
         
         
-
-openGLESImageProperties!.scaleX= openGLESImageProperties!.scaleX2= ((width.toFloat()) /openGLWidth)
-openGLESImageProperties!.scaleY= openGLESImageProperties!.scaleY2= ((height.toFloat()) /openGLHeight)
-openGLESImageProperties!.scaleX= openGLESImageProperties!.scaleX *0.75f
-openGLESImageProperties!.scaleY= openGLESImageProperties!.scaleY *0.75f
+;
+    
+openGLESImageProperties!.scaleX= openGLESImageProperties!.scaleX2= ((width.toFloat()) /openGLWidth);
+    
+openGLESImageProperties!.scaleY= openGLESImageProperties!.scaleY2= ((height.toFloat()) /openGLHeight);
+    
+openGLESImageProperties!.scaleX= openGLESImageProperties!.scaleX *0.75f;
+    
+openGLESImageProperties!.scaleY= openGLESImageProperties!.scaleY *0.75f;
+    
 
                         if(originalImage!.getHeight() % 2 != 0)
                         
                                     {
-                                    openGLESImageProperties!.scaleX2 += 1.0f /openGLWidth
-openGLESImageProperties!.scaleY2 += 1.0f /openGLHeight
+                                    openGLESImageProperties!.scaleX2 += 1.0f /openGLWidth;
+    
+openGLESImageProperties!.scaleY2 += 1.0f /openGLHeight;
+    
 
                                     }
                                 
-image= openGLESImage
+image= openGLESImage;
+    
 
                                     }
                                 
                         else {
-                            image= originalImage
+                            image= originalImage;
+    
 
-    var openGLESImage: OpenGLESImage = openGLUtil!.add(image) as OpenGLESImage;
+    var openGLESImage: OpenGLESImage = openGLUtil!.add(image);
+
+                         as OpenGLESImage;
         
         
-
+;
+    
 
     var openGLESImageProperties: OpenGLESImageProperties = openGLESImage!.openGLESImageProperties;
         
         
-
-openGLESImageProperties!.scaleX= openGLESImageProperties!.scaleX2= ((width.toFloat()) /openGLESImage!.getWidth()).toFloat()
-openGLESImageProperties!.scaleY= openGLESImageProperties!.scaleY2= ((height.toFloat()) /openGLESImage!.getHeight()).toFloat()
+;
+    
+openGLESImageProperties!.scaleX= openGLESImageProperties!.scaleX2= ((width.toFloat()) /openGLESImage!.getWidth()).toFloat();
+    
+openGLESImageProperties!.scaleY= openGLESImageProperties!.scaleY2= ((height.toFloat()) /openGLESImage!.getHeight()).toFloat();
+    
 
                         if(image.getName()!.startsWith(INFORMATION))
                         
                                     {
-                                    openGLESImage!.openGLESImageTranslate= OpenGLESDeviceImageTranslate()
+                                    openGLESImage!.openGLESImageTranslate= OpenGLESDeviceImageTranslate();
+    
 
     var openGLESDeviceImageTranslate: OpenGLESDeviceImageTranslate = openGLESImage!.openGLESImageTranslate as OpenGLESDeviceImageTranslate;
         
         
-
-openGLESDeviceImageTranslate!.translateX= displayInfoSingleton!.getLastWidth() /1.4f /openGLESImageProperties!.scaleX
-openGLESDeviceImageTranslate!.translateY= displayInfoSingleton!.getLastHeight() /4 /openGLESImageProperties!.scaleY
-openGLESImageProperties!.scaleX= openGLESImageProperties!.scaleX *0.25f
-openGLESImageProperties!.scaleY= openGLESImageProperties!.scaleY *0.25f
+;
+    
+openGLESDeviceImageTranslate!.translateX= displayInfoSingleton!.getLastWidth() /1.4f /openGLESImageProperties!.scaleX;
+    
+openGLESDeviceImageTranslate!.translateY= displayInfoSingleton!.getLastHeight() /4 /openGLESImageProperties!.scaleY;
+    
+openGLESImageProperties!.scaleX= openGLESImageProperties!.scaleX *0.25f;
+    
+openGLESImageProperties!.scaleY= openGLESImageProperties!.scaleY *0.25f;
+    
 
                                     }
                                 
                         else {
-                            openGLESImageProperties!.scaleX= openGLESImageProperties!.scaleX *0.75f
-openGLESImageProperties!.scaleY= openGLESImageProperties!.scaleY *0.75f
+                            openGLESImageProperties!.scaleX= openGLESImageProperties!.scaleX *0.75f;
+    
+openGLESImageProperties!.scaleY= openGLESImageProperties!.scaleY *0.75f;
+    
 
                         if(image.getName()!.startsWith(LEADERBOARD))
                         
                                     {
-                                    openGLESImage!.openGLESImageTranslate= OpenGLESDeviceImageTranslate()
+                                    openGLESImage!.openGLESImageTranslate= OpenGLESDeviceImageTranslate();
+    
 
     var openGLESDeviceImageTranslate: OpenGLESDeviceImageTranslate = openGLESImage!.openGLESImageTranslate as OpenGLESDeviceImageTranslate;
         
         
+;
+    
+openGLESDeviceImageTranslate!.translateX=  -displayInfoSingleton!.getLastWidth();
 
-openGLESDeviceImageTranslate!.translateX=  -displayInfoSingleton!.getLastWidth() /40 /openGLESImageProperties!.scaleX
+                         /40 /openGLESImageProperties!.scaleX;
+    
 
                                     }
                                 
@@ -557,15 +632,18 @@ openGLESDeviceImageTranslate!.translateX=  -displayInfoSingleton!.getLastWidth()
                                     }
                                 
                         else {
-                            openGLESImageProperties!.scaleX= 1.0f
-openGLESImageProperties!.scaleY= 1.0f
+                            openGLESImageProperties!.scaleX= 1.0f;
+    
+openGLESImageProperties!.scaleY= 1.0f;
+    
 
                         }
                             
 
                         }
                             
-image= openGLESImage
+image= openGLESImage;
+    
 
                         }
                             
@@ -581,7 +659,8 @@ image= openGLESImage
     var originalMutableImage: SwtMutableImage = originalImage2 as SwtMutableImage;
         
         
-
+;
+    
 
                         if(originalMutableImage!.getImage() != 
                                     null
@@ -592,18 +671,22 @@ image= openGLESImage
     var imageData2: ImageData = originalMutableImage!.image.getImageData()!;
         
         
-
+;
+    
 
     var imageData: ImageData = imageData2!.scaledTo(width, height)!;
         
         
-
-image= SwtMutableImage(SwtDeviceComponent.createImage(imageData))
+;
+    
+image= SwtMutableImage(SwtDeviceComponent.createImage(imageData));
+    
 
                                     }
                                 
                         else {
-                            image= SwtMutableImage(originalMutableImage!.getName(), PostLoadSwtMutableImageProcessor(originalMutableImage))
+                            image= SwtMutableImage(originalMutableImage!.getName(), PostLoadSwtMutableImageProcessor(originalMutableImage));
+    
 
                         }
                             
@@ -615,7 +698,8 @@ image= SwtMutableImage(SwtDeviceComponent.createImage(imageData))
     var originalImmutableImage: SwtImmutableImage = originalImage2 as SwtImmutableImage;
         
         
-
+;
+    
 
                         if(originalImmutableImage!.getImage() != 
                                     null
@@ -626,25 +710,30 @@ image= SwtMutableImage(SwtDeviceComponent.createImage(imageData))
     var imageData2: ImageData = originalImmutableImage!.image.getImageData()!;
         
         
-
+;
+    
 
     var imageData: ImageData = imageData2!.scaledTo(width, height)!;
         
         
-
-image= SwtImmutableImage(originalImage!.getName(), SwtDeviceComponent.createImage(imageData))
+;
+    
+image= SwtImmutableImage(originalImage!.getName(), SwtDeviceComponent.createImage(imageData));
+    
 
                                     }
                                 
                         else {
-                            image= SwtImmutableImage(originalImmutableImage!.getName(), PostLoadSwtImmutableImageProcessor(originalImmutableImage))
+                            image= SwtImmutableImage(originalImmutableImage!.getName(), PostLoadSwtImmutableImageProcessor(originalImmutableImage));
+    
 
                         }
                             
 
                         }
                             
-image= openGLUtil!.add(image)
+image= openGLUtil!.add(image);
+    
 
                         }
                             
@@ -664,10 +753,13 @@ image= openGLUtil!.add(image)
     //var canvasScale = canvasScale
     //var resize = resize
 
-                        if(!features.isFeature(gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION))
+                        if(!features.isFeature(gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION);
+
+                        )
                         
                                     {
-                                    logUtil!.put(NO_COPY, this, commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put(NO_COPY, this, commonStrings!.CONSTRUCTOR);
+    
 
 
 
@@ -681,12 +773,14 @@ image= openGLUtil!.add(image)
     var newWidth: number = (originalImage!.getWidth() *canvasScale).toInt();
         
         
-
+;
+    
 
     var newHeight: number = (originalImage!.getHeight() *canvasScale).toInt();
         
         
-
+;
+    
 
                         if(resize)
                         
@@ -695,7 +789,8 @@ image= openGLUtil!.add(image)
                         if(newWidth < newHeight)
                         
                                     {
-                                    newWidth= newHeight
+                                    newWidth= newHeight;
+    
 
                                     }
                                 
@@ -703,7 +798,8 @@ image= openGLUtil!.add(image)
                         if(newHeight < newWidth)
                         
                                     {
-                                    newHeight= newWidth
+                                    newHeight= newWidth;
+    
 
                                     }
                                 
@@ -714,7 +810,8 @@ image= openGLUtil!.add(image)
     var image: Image = this.createImage(originalImage, newWidth, newHeight)!;
         
         
-
+;
+    
 
                         if(image.isMutable())
                         
@@ -724,42 +821,50 @@ image= openGLUtil!.add(image)
                                     (getImage as Image).getImageData()!;
         
         
-
+;
+    
 
     var mutableImage2: SwtMutableImage = image as SwtMutableImage;
         
         
-
+;
+    
 
     var halfWidthDelta: number = (newWidth -originalImage!.getWidth()) /2;
         
         
-
+;
+    
 
     var halfHeightDelta: number = (newHeight -originalImage!.getHeight()) /2;
         
         
+;
+    
 
-
-    var originalPixelArray: IntArray = IntArray(originalImage!.getWidth() *originalImage!.getHeight());
+    var originalPixelArray: number[] = new Array(originalImage!.getWidth() *originalImage!.getHeight());
         
         
+;
+    
 
-
-    var newPixelArray: IntArray = IntArray(image.getWidth() *image.getHeight());
+    var newPixelArray: number[] = new Array(image.getWidth() *image.getHeight());
         
         
-
+;
+    
 
     var width: number = originalImage!.getWidth()!;
         
         
-
+;
+    
 
     var height: number = originalImage!.getHeight()!;
         
         
-
+;
+    
 
 
 
@@ -770,7 +875,8 @@ image= openGLUtil!.add(image)
         
 i < height; i++)
         {
-originalImageData!.getPixels(0, i, width, originalPixelArray, (i *width))
+originalImageData!.getPixels(0, i, width, originalPixelArray, (i *width));
+    
 }
 
 
@@ -793,14 +899,18 @@ index < width; index++)
         
 index2 < height; index2++)
         {
-newPixelArray[index +(index2 *width)]= originalPixelArray[(index -halfWidthDelta) +((index2 -halfHeightDelta) *width)]!
+newPixelArray[index +(index2 *width)]= originalPixelArray[(index -halfWidthDelta) +((index2 -halfHeightDelta) *width)]!;
+    
 }
 
 }
 
-getImage = mutableImage2!.getImage()getImage as org.eclipse.swt.graphics.Image
+getImage = mutableImage2!.getImage();
+
+                        getImage as org.eclipse.swt.graphics.Image
 getImage.
-                    getImageData()!.setPixels(0, 0, image.getWidth(), newPixelArray, 0)
+                    getImageData()!.setPixels(0, 0, image.getWidth(), newPixelArray, 0);
+    
 
 
 
@@ -815,43 +925,51 @@ getImage.
     var originalImmutableImage: SwtImmutableImage = image as SwtImmutableImage;
         
         
-
+;
+    
 
     var originalImageData: ImageData = 
                                     (getImage as Image).getImageData()!;
         
         
-
+;
+    
 
     var halfWidthDelta: number = (newWidth -originalImage!.getWidth()) /2;
         
         
-
+;
+    
 
     var halfHeightDelta: number = (newHeight -originalImage!.getHeight()) /2;
         
         
+;
+    
 
-
-    var originalPixelArray: IntArray = IntArray(originalImage!.getWidth() *originalImage!.getHeight());
+    var originalPixelArray: number[] = new Array(originalImage!.getWidth() *originalImage!.getHeight());
         
         
+;
+    
 
-
-    var newPixelArray: IntArray = IntArray(image.getWidth() *image.getHeight());
+    var newPixelArray: number[] = new Array(image.getWidth() *image.getHeight());
         
         
-
+;
+    
 
     var width: number = originalImage!.getWidth()!;
         
         
-
+;
+    
 
     var height: number = originalImage!.getHeight()!;
         
         
-
+;
+    
 
 
 
@@ -862,7 +980,8 @@ getImage.
         
 i < height; i++)
         {
-originalImageData!.getPixels(0, i, width, originalPixelArray, (i *width))
+originalImageData!.getPixels(0, i, width, originalPixelArray, (i *width));
+    
 }
 
 
@@ -885,14 +1004,18 @@ index < width; index++)
         
 index2 < height; index2++)
         {
-newPixelArray[index +(index2 *width)]= originalPixelArray[(index -halfWidthDelta) +((index2 -halfHeightDelta) *width)]!
+newPixelArray[index +(index2 *width)]= originalPixelArray[(index -halfWidthDelta) +((index2 -halfHeightDelta) *width)]!;
+    
 }
 
 }
 
-getImage = originalImmutableImage!.getImage()getImage as org.eclipse.swt.graphics.Image
+getImage = originalImmutableImage!.getImage();
+
+                        getImage as org.eclipse.swt.graphics.Image
 getImage.
-                    getImageData()!.setPixels(0, 0, image.getWidth(), newPixelArray, 0)
+                    getImageData()!.setPixels(0, 0, image.getWidth(), newPixelArray, 0);
+    
 
 
 

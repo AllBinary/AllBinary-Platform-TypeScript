@@ -18,7 +18,10 @@
 
 
 
-import { Hashtable } from "../../../../java/util/Hashtable.js";
+            import Hashtable from "@ohos.util.HashMap";
+        
+
+//import { Hashtable } from "../../../../java/util/Hashtable.js";
 
     
 import { ArtificialIntelligenceInterface } from "../../../../org/allbinary/ai/ArtificialIntelligenceInterface.js";
@@ -45,7 +48,7 @@ export class DiveAndDirectionalTrackingAIFactory
 
                 //@Throws(Error::class)
             
-    public getInstance(hashtable: Hashtable<Any, Any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput): ArtificialIntelligenceInterface{
+    public getInstance(hashtable: Hashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput): ArtificialIntelligenceInterface{
     //var hashtable = hashtable
     //var ownerLayerInterface = ownerLayerInterface
 var gameInput = gameInput
@@ -53,30 +56,35 @@ var gameInput = gameInput
     var visitorCanBeNull: any = {}? = hashtable.get(BasicAI.AI_VISITOR as Object);
         
         
-
+;
+    
 
                         if(visitorCanBeNull == 
                                     null
                                 )
                         
                                     {
-                                    visitorCanBeNull= ThrustAIVisitorFactory.getInstance()
+                                    visitorCanBeNull= ThrustAIVisitorFactory.getInstance();
+    
 
                                     }
                                 
 
-    var hashtable2: Hashtable<Any, Any> = BasicProbabilityAIDataFactory().
+    var hashtable2: Hashtable<any, any> = BasicProbabilityAIDataFactory().
                             getInstance()!;
         
         
-
-hashtable2.put(BasicAI.AI_VISITOR, LastKeyAIVisitorFactory.getInstance())
+;
+    
+hashtable2.put(BasicAI.AI_VISITOR, LastKeyAIVisitorFactory.getInstance());
+    
 
     var artificialIntelligenceInterface: ArtificialIntelligenceInterface = BasicRandomAIFactory().
                             getInstance(hashtable2, ownerLayerInterface, gameInput)!;
         
         
-
+;
+    
 
 
 

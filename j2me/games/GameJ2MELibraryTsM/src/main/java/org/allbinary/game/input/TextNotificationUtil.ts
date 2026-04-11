@@ -66,8 +66,10 @@ export class TextNotificationUtil
             
     public fireError(message: string){
 var message = message
-PrimaryPlayerQueueFactory.getInstance()!.add(ErrorSound.getInstance())
-this.fire(message)
+PrimaryPlayerQueueFactory.getInstance()!.add(ErrorSound.getInstance());
+    
+this.fire(message);
+    
 }
 
 
@@ -75,8 +77,10 @@ this.fire(message)
             
     public fireNew(message: string){
 var message = message
-PrimaryPlayerQueueFactory.getInstance()!.add(SelectSound.getInstance())
-this.fire(message)
+PrimaryPlayerQueueFactory.getInstance()!.add(SelectSound.getInstance());
+    
+this.fire(message);
+    
 }
 
 
@@ -84,8 +88,10 @@ this.fire(message)
             
     public fireSuccess(message: string){
 var message = message
-PrimaryPlayerQueueFactory.getInstance()!.add(SelectSound.getInstance())
-this.fire(message)
+PrimaryPlayerQueueFactory.getInstance()!.add(SelectSound.getInstance());
+    
+this.fire(message);
+    
 }
 
 
@@ -109,8 +115,10 @@ var message = message
     var gameNotificationEvent: GameNotificationEvent = new GameNotificationEvent(this, message, TWO, BasicColorFactory.getInstance()!.RED, FALSE);
         
         
-
-gameNotificationEventHandler!.fireEvent(gameNotificationEvent)
+;
+    
+gameNotificationEventHandler!.fireEvent(gameNotificationEvent);
+    
 }
 
 

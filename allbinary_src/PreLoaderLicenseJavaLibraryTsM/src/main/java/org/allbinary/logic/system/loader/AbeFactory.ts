@@ -87,15 +87,20 @@ private constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this::class.createInstance();
+                        return this.constructor.name.createInstance();
+
+                        ;
     
-} catch(e: LicensingException)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.LOADERERROR))
                         
                                     {
-                                    logUtil!.put("Failure for: " +className, this, "getInstance(classname)", e)
+                                    logUtil!.put("Failure for: " +className, this, "getInstance(classname)", e);
+    
 
                                     }
                                 
@@ -104,13 +109,16 @@ private constructor (){
 
                             throw e
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.LOADERERROR))
                         
                                     {
-                                    logUtil!.put("Failure for: " +className, this, "getInstance(classname)", e)
+                                    logUtil!.put("Failure for: " +className, this, "getInstance(classname)", e);
+    
 
                                     }
                                 
@@ -128,7 +136,7 @@ private constructor (){
                 //@Throws(LicensingException::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
-    public getInstance(abeClientInformation: AbeClientInformationInterface, className: string, classes: KClass<*>[], params: any = {}[]): any = {}{
+    public getInstance(abeClientInformation: AbeClientInformationInterface, className: string, classes: Function[], params: any[]): any = {}{
     //var abeClientInformation = abeClientInformation
 var className = className
 var classes = classes
@@ -139,14 +147,16 @@ var params = params
             ;
         
         
-
+;
+    
 
         try {
             
     var parent: ClassLoader = WebappClassLoaderInfo.getLoader()!;
         
         
-
+;
+    
 
                         if(useCustomLoader)
                         
@@ -155,39 +165,50 @@ var params = params
     var loader: ClassLoader = new AbeClassLoader(parent, AbKeys.getInstance()!.getKey(abeClientInformation, className));
         
         
+;
+    
 
-
-    var myClass: KClass<*> = loader.loadClass(className)!;
+    var myClass: Function = loader.loadClass(className)!;
         
         
-
-constructor= myClass!.getConstructor(classes)
+;
+    
+constructor= myClass!.getConstructor(classes);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return constructor.newInstance(params);
+
+                        ;
     
 
                                     }
                                 
                         else {
                             
-    var myClass: KClass<*> = parent.loadClass(className)!;
+    var myClass: Function = parent.loadClass(className)!;
         
         
-
-constructor= myClass!.getConstructor(classes)
+;
+    
+constructor= myClass!.getConstructor(classes);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return constructor.newInstance(params);
+
+                        ;
     
 
                         }
                             
-} catch(e: LicensingException)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.LOADERERROR))
@@ -197,12 +218,18 @@ constructor= myClass!.getConstructor(classes)
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("Failure for: ")
-stringBuffer!.append(className)
-stringBuffer!.append(CommonSeps.getInstance()!.SPACE)
-stringBuffer!.append(ConstructorUtil.view(constructor, CommonSeps.getInstance()!.NEW_LINE))
-logUtil!.put(stringBuffer!.toString(), this, "getInstance(className,params)", e)
+;
+    
+stringBuffer!.append("Failure for: ");
+    
+stringBuffer!.append(className);
+    
+stringBuffer!.append(CommonSeps.getInstance()!.SPACE);
+    
+stringBuffer!.append(ConstructorUtil.view(constructor, CommonSeps.getInstance()!.NEW_LINE));
+    
+logUtil!.put(stringBuffer!.toString(), this, "getInstance(className,params)", e);
+    
 
                                     }
                                 
@@ -211,7 +238,9 @@ logUtil!.put(stringBuffer!.toString(), this, "getInstance(className,params)", e)
 
                             throw e
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.LOADERERROR))
@@ -221,12 +250,18 @@ logUtil!.put(stringBuffer!.toString(), this, "getInstance(className,params)", e)
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("Failure for: ")
-stringBuffer!.append(className)
-stringBuffer!.append(CommonSeps.getInstance()!.SPACE)
-stringBuffer!.append(ConstructorUtil.view(constructor, CommonSeps.getInstance()!.NEW_LINE))
-logUtil!.put(stringBuffer!.toString(), this, "getInstance(className,params)", e)
+;
+    
+stringBuffer!.append("Failure for: ");
+    
+stringBuffer!.append(className);
+    
+stringBuffer!.append(CommonSeps.getInstance()!.SPACE);
+    
+stringBuffer!.append(ConstructorUtil.view(constructor, CommonSeps.getInstance()!.NEW_LINE));
+    
+logUtil!.put(stringBuffer!.toString(), this, "getInstance(className,params)", e);
+    
 
                                     }
                                 
@@ -244,7 +279,7 @@ logUtil!.put(stringBuffer!.toString(), this, "getInstance(className,params)", e)
                 //@Throws(LicensingException::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
-    public ::class(abeClientInformation: AbeClientInformationInterface, className: string): KClass<*>{
+    public constructor(abeClientInformation: AbeClientInformationInterface, className: string): Function{
     //var abeClientInformation = abeClientInformation
     //var className = className
 
@@ -253,7 +288,8 @@ logUtil!.put(stringBuffer!.toString(), this, "getInstance(className,params)", e)
     var parent: ClassLoader = WebappClassLoaderInfo.getLoader()!;
         
         
-
+;
+    
 
                         if(useCustomLoader)
                         
@@ -262,12 +298,14 @@ logUtil!.put(stringBuffer!.toString(), this, "getInstance(className,params)", e)
     var loader: ClassLoader = new AbeClassLoader(parent, AbKeys.getInstance()!.getKey(abeClientInformation, className));
         
         
+;
+    
 
-
-    var c: KClass<*> = loader.loadClass(className)!;
+    var c: Function = loader.loadClass(className)!;
         
         
-
+;
+    
 
 
 
@@ -279,10 +317,11 @@ logUtil!.put(stringBuffer!.toString(), this, "getInstance(className,params)", e)
                                 
                         else {
                             
-    var c: KClass<*> = parent.loadClass(className)!;
+    var c: Function = parent.loadClass(className)!;
         
         
-
+;
+    
 
 
 
@@ -292,13 +331,16 @@ logUtil!.put(stringBuffer!.toString(), this, "getInstance(className,params)", e)
 
                         }
                             
-} catch(e: LicensingException)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.LOADERERROR))
                         
                                     {
-                                    logUtil!.put("Failure for: " +className, this, "getClass(className)", e)
+                                    logUtil!.put("Failure for: " +className, this, "getClass(className)", e);
+    
 
                                     }
                                 
@@ -307,13 +349,16 @@ logUtil!.put(stringBuffer!.toString(), this, "getInstance(className,params)", e)
 
                             throw e
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.LOADERERROR))
                         
                                     {
-                                    logUtil!.put("Failure for: " +className, this, "getClass(className)", e)
+                                    logUtil!.put("Failure for: " +className, this, "getClass(className)", e);
+    
 
                                     }
                                 

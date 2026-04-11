@@ -72,7 +72,8 @@ public constructor (node: Node)
     var actionNode: Node = DomSearchHelper.getNode(AlwaysActionScriptConditionData.NAME, node.getChildNodes())!;
         
         
-
+;
+    
 
                         if(actionNode != 
                                     null
@@ -83,7 +84,8 @@ public constructor (node: Node)
     var nodeList: NodeList = actionNode!.getChildNodes()!;
         
         
-
+;
+    
 
 
 
@@ -98,7 +100,8 @@ index < nodeList!.getLength(); index++)
     var childNode: Node = nodeList!.item(index)!;
         
         
-
+;
+    
 
                         if(childNode!.getNodeName()!.compareTo(AlwaysActionScriptConditionData.IS_ON) == 0)
                         
@@ -107,9 +110,11 @@ index < nodeList!.getLength(); index++)
     var booleanString: string = DomNodeHelper.getTextNodeValue(childNode)!;
         
         
-
+;
+    
 this.setIsOn(.
-                            )
+                            );
+    
 
                                     }
                                 
@@ -134,7 +139,8 @@ this.setIsOn(.
 
                         }
                             
-this.init()
+this.init();
+    
 }
 
 public constructor ()                        
@@ -146,12 +152,14 @@ public constructor ()
 
                             //For kotlin this is before the body of the constructor.
                     
-this.init()
+this.init();
+    
 }
 
 
     init(){
-this.alwaysActionScriptConditionJPanel= AlwaysActionScriptConditionJPanel(this)
+this.alwaysActionScriptConditionJPanel= AlwaysActionScriptConditionJPanel(this);
+    
 }
 
 
@@ -167,23 +175,28 @@ this.alwaysActionScriptConditionJPanel= AlwaysActionScriptConditionJPanel(this)
 
     public setIsOn(isOn: boolean){
 var isOn = isOn
-this.isOn= isOn
+this.isOn= isOn;
+    
 }
 
 
     public showDialog(){
-this.alwaysActionScriptConditionJPanel!.getAlwaysActionJDialog()!.setVisible(true)
+this.alwaysActionScriptConditionJPanel!.getAlwaysActionJDialog()!.setVisible(true);
+    
 }
 
 
-    public toHashMap(): HashMap<Any, Any>{
+    public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
         
         
-
-hashMap!.put(AlwaysActionScriptConditionData.IS_ON, Boolean.toString(this.isIsOn()))
-logUtil!.put("HashMap: " +hashMap!.toString(), this, "toHashMap()")
+;
+    
+hashMap!.put(AlwaysActionScriptConditionData.IS_ON, Boolean.toString(this.isIsOn()));
+    
+logUtil!.put("HashMap: " +hashMap!.toString(), this, "toHashMap()");
+    
 
 
 
@@ -201,8 +214,10 @@ var document = document
     var node: Node = super.toXmlNode(document)!;
         
         
-
-node.appendChild(ModDomHelper.createNodeWithValueNodes(document, AlwaysActionScriptConditionData.NAME, this.toHashMap()))
+;
+    
+node.appendChild(ModDomHelper.createNodeWithValueNodes(document, AlwaysActionScriptConditionData.NAME, this.toHashMap()));
+    
 
 
 
@@ -225,6 +240,8 @@ var frame = frame
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.shouldProcess(frame);
+
+                        ;
     
 
                                     }
@@ -239,7 +256,8 @@ var frame = frame
 
 
     public log(){
-logUtil!.put("Is On: " +this.isIsOn(), this, "log")
+logUtil!.put("Is On: " +this.isIsOn(), this, "log");
+    
 }
 
 

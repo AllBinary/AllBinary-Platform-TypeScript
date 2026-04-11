@@ -24,7 +24,7 @@ export class HealthVectorData
          {
         
 
-    public points: IntArray[][] = 
+    public points: number[][][] = 
                                                         [
                                                             arrayOf<IntArray?>(intArrayOf(2,1)
 ,intArrayOf(3,2)

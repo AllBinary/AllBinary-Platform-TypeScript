@@ -86,7 +86,8 @@ private constructor (){
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Generating View: " +transformInfoInterface!.getName(), this, "generate()")
+                                    logUtil!.put("Generating View: " +transformInfoInterface!.getName(), this, "generate()");
+    
 
                                     }
                                 
@@ -94,44 +95,56 @@ private constructor (){
     var componentInterface: TransformInterface = TransformFactory.getInstance()!.getInstance(abeClientInformation, transformInfoInterface!.getName(), ownerTransformInfoInterface)!;
         
         
-
+;
+    
 
     var result: string = componentInterface!.view()!;
         
         
+;
+    
 
+    var httpTransformInfoInterface: TransformInfoHttpInterface = componentInterface!.getTransformInfoInterface();
 
-    var httpTransformInfoInterface: TransformInfoHttpInterface = componentInterface!.getTransformInfoInterface() as TransformInfoHttpInterface;
+                         as TransformInfoHttpInterface;
         
         
-
+;
+    
 
     var inputOutputTypeData: InputOutputTypeData = InputOutputTypeData.getInstance()!;
         
         
-
+;
+    
 
                         if(result.indexOf("<HTML>") >= 0)
                         
                                     {
-                                    httpTransformInfoInterface!.getPropertiesHashMap()!.put(inputOutputTypeData!.NAME, inputOutputTypeData!.DEFAULT)
+                                    httpTransformInfoInterface!.getPropertiesHashMap()!.put(inputOutputTypeData!.NAME, inputOutputTypeData!.DEFAULT);
+    
 
                                     }
                                 
                         else {
-                            httpTransformInfoInterface!.getPropertiesHashMap()!.put(inputOutputTypeData!.NAME, inputOutputTypeData!.DEFAULT_FRAGMENT)
+                            httpTransformInfoInterface!.getPropertiesHashMap()!.put(inputOutputTypeData!.NAME, inputOutputTypeData!.DEFAULT_FRAGMENT);
+    
 
                         }
                             
 StoreFileGenerator(componentInterface!.getTransformInfoInterface()).
-                            process(result)
-} catch(e: Exception)
+                            process(result);
+    
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put("Failed to generate a view", this, "generate()", e)
+                                    logUtil!.put("Failed to generate a view", this, "generate()", e);
+    
 
                                     }
                                 
@@ -150,7 +163,8 @@ StoreFileGenerator(componentInterface!.getTransformInfoInterface()).
     //var abeClientInformation = abeClientInformation
     //var transformInfoDomNode = transformInfoDomNode
     //var ownerTransformInfoInterface = ownerTransformInfoInterface
-generate(abeClientInformation, transformInfoDomNode!.getTransformInfoInterface(), ownerTransformInfoInterface)
+generate(abeClientInformation, transformInfoDomNode!.getTransformInfoInterface(), ownerTransformInfoInterface);
+    
 }
 
 

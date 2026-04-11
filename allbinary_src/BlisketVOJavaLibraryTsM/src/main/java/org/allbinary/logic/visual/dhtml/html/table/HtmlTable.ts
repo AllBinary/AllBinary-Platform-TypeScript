@@ -18,7 +18,10 @@
 
 
 
-import { Vector } from "../../../../../../../java/util/Vector.js";
+            import Vector from "@ohos.util.Vector";
+        
+
+//import { Vector } from "../../../../../../../java/util/Vector.js";
 
     
 import { StringUtil } from "../../../../../../../org/allbinary/logic/string/StringUtil.js";
@@ -132,15 +135,24 @@ public constructor (before: string, cellpadding: string, cellspacing: string, af
 var cellpadding = cellpadding
 var cellspacing = cellspacing
 var after = after
-this.before= before
-this.cellpadding= cellpadding
-this.cellspacing= cellspacing
-this.after= after
-this.htmlRowsVector= Vector()
-addAttribute(BORDER, CommonPhoneStrings.getInstance()!.ZERO)
-addAttribute(CELLPADDING, this.cellpadding)
-addAttribute(CELLSPACING, this.cellspacing)
-addAttribute(STYLE, this.BORDERCOLLAPSE)
+this.before= before;
+    
+this.cellpadding= cellpadding;
+    
+this.cellspacing= cellspacing;
+    
+this.after= after;
+    
+this.htmlRowsVector= Vector();
+    
+addAttribute(BORDER, CommonPhoneStrings.getInstance()!.ZERO);
+    
+addAttribute(CELLPADDING, this.cellpadding);
+    
+addAttribute(CELLSPACING, this.cellspacing);
+    
+addAttribute(STYLE, this.BORDERCOLLAPSE);
+    
 }
 
 
@@ -149,7 +161,8 @@ var htmlRow = htmlRow
 
                         if(this.numberOfColumns < htmlRow!.getNumberOfColumns())
                         this.numberOfColumns= htmlRow!.getNumberOfColumns()
-this.htmlRowsVector!.add(htmlRow)
+this.htmlRowsVector!.add(htmlRow);
+    
 }
 
 
@@ -158,20 +171,26 @@ this.htmlRowsVector!.add(htmlRow)
     var stringUtil: StringUtil = StringUtil.getInstance()!;
         
         
-
+;
+    
 
     var result: string = stringUtil!.EMPTY_STRING;
         
         
+;
+    
 
-
-    var attributeKeys: any = {}[] = otherAttributes!.keySet()!.toTypedArray()!;
+    var attributeKeys: any[] = otherAttributes!.keySet()!.toTypedArray()!;
         
         
-
-result= before
-result += START
-result += " "
+;
+    
+result= before;
+    
+result += START;
+    
+result += " ";
+    
 
 
 
@@ -186,33 +205,43 @@ i < attributeKeys!.length; i++)
     var key: string = attributeKeys[i]! as String;
         
         
+;
+    
 
+    var value: string = otherAttributes!.get(key);
 
-    var value: string = otherAttributes!.get(key) as String;
+                         as String;
         
         
-
+;
+    
 
                         if(value != 
                                     null
                                  && value.compareTo(stringUtil!.EMPTY_STRING) != 0)
                         
                                     {
-                                    result += key
-result += "=\""
-result += value
-result += "\" "
+                                    result += key;
+    
+result += "=\"";
+    
+result += value;
+    
+result += "\" ";
+    
 
                                     }
                                 
 }
 
-result += END
+result += END;
+    
 
     var size: number = htmlRowsVector!.length!;
         
         
-
+;
+    
 
 
 
@@ -223,12 +252,16 @@ result += END
         
 i < size; i++)
         {
-result += htmlRowsVector!.get(i)!.toString()
-result += " "
+result += htmlRowsVector!.get(i)!.toString();
+    
+result += " ";
+    
 }
 
-result += ENDTAG
-result += after
+result += ENDTAG;
+    
+result += after;
+    
 
 
 

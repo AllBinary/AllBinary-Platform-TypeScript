@@ -56,38 +56,48 @@ var activity = activity
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
+;
+    
 
     var touchScreenFactory: TouchScreenFactory = TouchScreenFactory.getInstance()!;
         
         
-
+;
+    
 
     var touchScreenTypesFactory: TouchScreenTypesFactory = TouchScreenTypesFactory.getInstance()!;
         
         
-
+;
+    
 
     var configuration: Configuration = activity.getResources()!.getConfiguration()!;
         
         
-
+;
+    
 
     var touchScreen: number = configuration.touchscreen;
         
         
-
+;
+    
 
                         if(touchScreen == Configuration.TOUCHSCREEN_FINGER)
                         
                                     {
-                                    touchScreenFactory!.setTouchScreenType(touchScreenTypesFactory!.FINGER)
+                                    touchScreenFactory!.setTouchScreenType(touchScreenTypesFactory!.FINGER);
+    
 
-                        if(!touchScreenFactory!.isTouch())
+                        if(!touchScreenFactory!.isTouch();
+
+                        )
                         
                                     {
-                                    PreLogUtil.put("Not Really Exception: This indicates that a touch screen does exist but is not API8 so we will try it", this, commonStrings!.PROCESS)
-touchScreenFactory!.setTouch(true)
+                                    PreLogUtil.put("Not Really Exception: This indicates that a touch screen does exist but is not API8 so we will try it", this, commonStrings!.PROCESS);
+    
+touchScreenFactory!.setTouch(true);
+    
 
                                     }
                                 
@@ -98,13 +108,18 @@ touchScreenFactory!.setTouch(true)
                         if(touchScreen == Configuration.TOUCHSCREEN_STYLUS)
                         
                                     {
-                                    touchScreenFactory!.setTouchScreenType(touchScreenTypesFactory!.STYLUS)
+                                    touchScreenFactory!.setTouchScreenType(touchScreenTypesFactory!.STYLUS);
+    
 
-                        if(!touchScreenFactory!.isTouch())
+                        if(!touchScreenFactory!.isTouch();
+
+                        )
                         
                                     {
-                                    PreLogUtil.put("Not Really Exception: This indicates that a touch screen does exist but is not API8 so we will try it", this, commonStrings!.PROCESS)
-touchScreenFactory!.setTouch(true)
+                                    PreLogUtil.put("Not Really Exception: This indicates that a touch screen does exist but is not API8 so we will try it", this, commonStrings!.PROCESS);
+    
+touchScreenFactory!.setTouch(true);
+    
 
                                     }
                                 
@@ -115,7 +130,8 @@ touchScreenFactory!.setTouch(true)
                         if(touchScreen == Configuration.TOUCHSCREEN_NOTOUCH)
                         
                                     {
-                                    touchScreenFactory!.setTouchScreenType(touchScreenTypesFactory!.NOTOUCH)
+                                    touchScreenFactory!.setTouchScreenType(touchScreenTypesFactory!.NOTOUCH);
+    
 
                                     }
                                 
@@ -123,7 +139,8 @@ touchScreenFactory!.setTouch(true)
                         if(touchScreen == Configuration.TOUCHSCREEN_UNDEFINED)
                         
                                     {
-                                    touchScreenFactory!.setTouchScreenType(touchScreenTypesFactory!.UNDEFINED)
+                                    touchScreenFactory!.setTouchScreenType(touchScreenTypesFactory!.UNDEFINED);
+    
 
                                     }
                                 

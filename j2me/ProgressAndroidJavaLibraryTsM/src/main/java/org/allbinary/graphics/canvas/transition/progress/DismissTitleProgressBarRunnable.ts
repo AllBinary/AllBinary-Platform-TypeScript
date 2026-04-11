@@ -51,22 +51,27 @@ var progressCanvas = progressCanvas
 }
 
 
-    private readonly ZOOM_OUT_AND_IN: IntArray = intArrayOf(TransistionTypes.getInstance()!.ZOOM_OUT,TransistionTypes.getInstance()!.ZOOM_IN);
+    private readonly ZOOM_OUT_AND_IN: number[] = intArrayOf(TransistionTypes.getInstance()!.ZOOM_OUT,TransistionTypes.getInstance()!.ZOOM_IN);
         
         
 
     public run(){
 
         try {
-            this.midletActivity!.onDismissProgress(ZOOM_OUT_AND_IN)
-} catch(e: Exception)
+            this.midletActivity!.onDismissProgress(ZOOM_OUT_AND_IN);
+    
+
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
+    
 }
 
 }

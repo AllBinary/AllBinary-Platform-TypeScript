@@ -43,7 +43,8 @@ public constructor (gameCanvas: AllBinaryGameCanvas){
 
             super();
             var gameCanvas = gameCanvas
-this.gameCanvas= gameCanvas
+this.gameCanvas= gameCanvas;
+    
 }
 
 
@@ -66,15 +67,20 @@ this.gameCanvas= gameCanvas
     var highScores: HighScores = this.gameCanvas!.highScoresHelper!.getSelectedHighScores()!;
         
         
-
+;
+    
 
                         if(highScores != NullHighScoresSingletonFactory.getInstance())
                         
                                     {
-                                    this.gameCanvas!.highScoresHelper!.selectHighScores()
-this.gameCanvas!.getRealHighScoresPaintable()!.setHighScores(highScores)
-this.gameCanvas!.setGameState(AllBinaryGameCanvas.SHOW_HIGH_SCORE_GAME_STATE)
-this.gameCanvas!.setHighScoresPaintable(this.gameCanvas!.getRealHighScoresPaintable())
+                                    this.gameCanvas!.highScoresHelper!.selectHighScores();
+    
+this.gameCanvas!.getRealHighScoresPaintable()!.setHighScores(highScores);
+    
+this.gameCanvas!.setGameState(AllBinaryGameCanvas.SHOW_HIGH_SCORE_GAME_STATE);
+    
+this.gameCanvas!.setHighScoresPaintable(this.gameCanvas!.getRealHighScoresPaintable());
+    
 
                                     }
                                 
@@ -85,8 +91,10 @@ this.gameCanvas!.setHighScoresPaintable(this.gameCanvas!.getRealHighScoresPainta
                         if(this.gameCanvas!.getGameState() == AllBinaryGameCanvas.SHOW_HIGH_SCORE_GAME_STATE)
                         
                                     {
-                                    this.gameCanvas!.setGameState(AllBinaryGameCanvas.SHOW_END_RESULT_GAME_STATE)
-this.gameCanvas!.setHighScoresPaintable(NullPaintable.getInstance())
+                                    this.gameCanvas!.setGameState(AllBinaryGameCanvas.SHOW_END_RESULT_GAME_STATE);
+    
+this.gameCanvas!.setHighScoresPaintable(NullPaintable.getInstance());
+    
 
                                     }
                                 

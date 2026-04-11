@@ -56,11 +56,13 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("View Name: " +transformInfoInterface!.getName(), this, this.commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put("View Name: " +transformInfoInterface!.getName(), this, this.commonStrings!.CONSTRUCTOR);
+    
 
                                     }
                                 
-this.transformInfoInterface= transformInfoInterface as TransformInfoHttpInterface
+this.transformInfoInterface= transformInfoInterface as TransformInfoHttpInterface;
+    
 }
 
 
@@ -92,16 +94,20 @@ this.transformInfoInterface= transformInfoInterface as TransformInfoHttpInterfac
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.transformInfoInterface!.getPageContext();
+
+                        ;
     
 }
 
 
-    public getPropertiesHashMap(): HashMap<Any, Any>{
+    public getPropertiesHashMap(): HashMap<any, any>{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.transformInfoInterface!.getPropertiesHashMap();
+
+                        ;
     
 }
 

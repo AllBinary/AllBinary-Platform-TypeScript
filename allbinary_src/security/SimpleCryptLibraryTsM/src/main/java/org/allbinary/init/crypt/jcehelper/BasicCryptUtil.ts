@@ -67,14 +67,17 @@ var cryptInterface = cryptInterface
     var buffer: ByteArrayOutputStream = new ByteArrayOutputStream();
         
         
-
+;
+    
 
     var ch: number= 0
-
+;
+    
 
         while(true)
         {
-ch= inputStream!.read()
+ch= inputStream!.read();
+    
 
                         if(ch ==  -1)
                         
@@ -85,29 +88,34 @@ ch= inputStream!.read()
 
                                     }
                                 
-buffer.write(ch)
+buffer.write(ch);
+    
 }
 
 
-    var decrypted: ByteArray = cryptInterface!.decrypt(buffer.toByteArray())!;
+    var decrypted: number[] = cryptInterface!.decrypt(buffer.toByteArray())!;
         
         
-
+;
+    
 
     var decryptedString: string = new decrypted.decodeToString();
         
         
-
+;
+    
 
     var index: number = decryptedString!.indexOf(XML_START)!;
         
         
-
+;
+    
 
                         if(index > 0)
                         
                                     {
-                                    decryptedString= decryptedString!.substring(index)
+                                    decryptedString= decryptedString!.substring(index);
+    
 
                                     }
                                 

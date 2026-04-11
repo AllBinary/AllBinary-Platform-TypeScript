@@ -59,8 +59,10 @@ protected constructor (){
     var baseMotionGestureEventListener: BaseMotionGestureEventListener = eventListenerInterface as BaseMotionGestureEventListener;
         
         
-
-baseMotionGestureEventListener!.onMotionGestureEvent(eventObject as MotionGestureEvent)
+;
+    
+baseMotionGestureEventListener!.onMotionGestureEvent(eventObject as MotionGestureEvent);
+    
 }
 
 

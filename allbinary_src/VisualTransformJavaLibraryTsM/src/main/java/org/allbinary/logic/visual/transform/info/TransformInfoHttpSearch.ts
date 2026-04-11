@@ -58,12 +58,14 @@ public constructor (searchRequest: SearchRequest)
                                 )
                         
                                     {
-                                    this.setStoreName(searchRequest!.getStoreFront()!.getName())
+                                    this.setStoreName(searchRequest!.getStoreFront()!.getName());
+    
 
                                     }
                                 
                         else {
-                            this.setStoreName(StringUtil.getInstance()!.EMPTY_STRING)
+                            this.setStoreName(StringUtil.getInstance()!.EMPTY_STRING);
+    
 
                         }
                             
@@ -71,8 +73,10 @@ public constructor (searchRequest: SearchRequest)
     var dataFileName: string = searchRequest!.getXslFile()!;
         
         
-
-this.setTemplateFile(dataFileName)
+;
+    
+this.setTemplateFile(dataFileName);
+    
 }
 
 
@@ -83,16 +87,23 @@ this.setTemplateFile(dataFileName)
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(URLGLOBALS.getMainPath())
-stringBuffer!.append(FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH)
-stringBuffer!.append(this.getStoreName())
-stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR)
+;
+    
+stringBuffer!.append(URLGLOBALS.getMainPath());
+    
+stringBuffer!.append(FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH);
+    
+stringBuffer!.append(this.getStoreName());
+    
+stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

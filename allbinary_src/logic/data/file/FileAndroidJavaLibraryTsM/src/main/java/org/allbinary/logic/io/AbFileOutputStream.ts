@@ -46,7 +46,8 @@ public constructor (name: string){
 
             super();
             var name = name
-this.fileOutputStream= FileOutputStream(name)
+this.fileOutputStream= FileOutputStream(name);
+    
 }
 
 
@@ -55,19 +56,22 @@ public constructor (file: AbFile){
 
             super();
             var file = file
-this.fileOutputStream= FileOutputStream(AbFileNativeUtil.get(file))
+this.fileOutputStream= FileOutputStream(AbFileNativeUtil.get(file));
+    
 }
 
 public constructor (fileOutputStream: FileOutputStream){
 
             super();
             var fileOutputStream = fileOutputStream
-this.fileOutputStream= fileOutputStream
+this.fileOutputStream= fileOutputStream;
+    
 }
 
 
     public close(){
-this.fileOutputStream!.close()
+this.fileOutputStream!.close();
+    
 }
 
 
@@ -77,25 +81,29 @@ this.fileOutputStream!.close()
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.fileOutputStream!.getChannel();
+
+                        ;
     
 }
 
 
                 //@Throws(IOException::class)
             
-    public write(buffer: ByteArray){
+    public write(buffer: number[]){
 var buffer = buffer
-this.fileOutputStream!.write(buffer)
+this.fileOutputStream!.write(buffer);
+    
 }
 
 
                 //@Throws(IOException::class)
             
-    public write(buffer: ByteArray, offset: number, count: number){
+    public write(buffer: number[], offset: number, count: number){
 var buffer = buffer
 var offset = offset
 var count = count
-this.fileOutputStream!.write(buffer, offset, count)
+this.fileOutputStream!.write(buffer, offset, count);
+    
 }
 
 
@@ -103,7 +111,8 @@ this.fileOutputStream!.write(buffer, offset, count)
             
     public write(b: number){
 var b = b
-this.fileOutputStream!.write(b)
+this.fileOutputStream!.write(b);
+    
 }
 
 

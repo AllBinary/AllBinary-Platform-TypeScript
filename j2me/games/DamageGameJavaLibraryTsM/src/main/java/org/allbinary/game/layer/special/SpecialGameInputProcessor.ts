@@ -30,7 +30,8 @@ public constructor (collidableDestroyableDamageableLayer: CollidableDestroyableD
 
             super();
             var collidableDestroyableDamageableLayer = collidableDestroyableDamageableLayer
-this.collidableDestroyableDamageableLayer= collidableDestroyableDamageableLayer
+this.collidableDestroyableDamageableLayer= collidableDestroyableDamageableLayer;
+    
 }
 
 

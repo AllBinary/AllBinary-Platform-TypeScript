@@ -66,30 +66,42 @@ export class CapturedBufferedImagesCacheSingleton
     var logUtil: LogUtil = LogUtil.getInstance()!;
         
         
-
+;
+    
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
+;
+    
 
     var STATIC_BLOCK: string = "Static Block";
         
         
-
+;
+    
 
     var instance: string = "CapturedBufferedImagesCacheSingleton";
         
         
-
+;
+    
 
         try {
-            logUtil!.put(commonStrings!.START, instance, STATIC_BLOCK)
-cacheInterface= CacheInterfaceFactory.getInstance((), ()) as AutomaticCacheInterface
-logUtil!.put(commonStrings!.END, instance, STATIC_BLOCK)
-} catch(e: Exception)
+            logUtil!.put(commonStrings!.START, instance, STATIC_BLOCK);
+    
+cacheInterface= CacheInterfaceFactory.getInstance((), ());
+
+                         as AutomaticCacheInterface;
+    
+logUtil!.put(commonStrings!.END, instance, STATIC_BLOCK);
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, instance, STATIC_BLOCK, e)
+logUtil!.put(commonStrings!.EXCEPTION, instance, STATIC_BLOCK, e);
+    
 }
 
 }

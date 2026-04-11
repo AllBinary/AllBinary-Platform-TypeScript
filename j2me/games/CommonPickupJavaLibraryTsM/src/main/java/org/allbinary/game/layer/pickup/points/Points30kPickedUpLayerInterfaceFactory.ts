@@ -57,7 +57,8 @@ export class Points30kPickedUpLayerInterfaceFactory extends PickedUpLayerInterfa
                 //@Throws(Error::class)
             
     public static init(){
-pickedUpLayerInterfaceFactoryInterface= Points30kPickedUpLayerInterfaceFactory()
+pickedUpLayerInterfaceFactoryInterface= Points30kPickedUpLayerInterfaceFactory();
+    
 }
 
 
@@ -100,7 +101,8 @@ private constructor ()
             
     public process(sourceLayerInterface: AllBinaryLayer){
 var sourceLayerInterface = sourceLayerInterface
-pool.visit(sourceLayerInterface)
+pool.visit(sourceLayerInterface);
+    
 }
 
 

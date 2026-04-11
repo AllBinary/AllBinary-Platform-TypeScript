@@ -64,8 +64,10 @@ export class BaseGameBehavior extends DemoGameBehavior {
     var gameAdState: GameAdState = GameAdStateFactory.getInstance()!.getCurrentInstance()!;
         
         
-
-gameAdState!.playingAdState()
+;
+    
+gameAdState!.playingAdState();
+    
 }
 
 
@@ -75,7 +77,8 @@ gameAdState!.playingAdState()
     var features: Features = Features.getInstance()!;
         
         
-
+;
+    
 
                         if(features.isDefault(OpenGLFeatureFactory.getInstance()!.OPENGL_AS_GAME_THREAD))
                         
@@ -84,8 +87,10 @@ gameAdState!.playingAdState()
     var currentDisplayableFactory: CurrentDisplayableFactory = CurrentDisplayableFactory.getInstance()!;
         
         
-
-currentDisplayableFactory!.setRunnable(allBinaryGameCanvas!.gamePauseRunnable)
+;
+    
+currentDisplayableFactory!.setRunnable(allBinaryGameCanvas!.gamePauseRunnable);
+    
 
                                     }
                                 
@@ -102,9 +107,12 @@ currentDisplayableFactory!.setRunnable(allBinaryGameCanvas!.gamePauseRunnable)
     var currentDisplayableFactory: CurrentDisplayableFactory = CurrentDisplayableFactory.getInstance()!;
         
         
-
-currentDisplayableFactory!.setRunnable(allBinaryGameCanvas!.gameRunnable)
-currentDisplayableFactory!.setDisplayable(allBinaryGameCanvas)
+;
+    
+currentDisplayableFactory!.setRunnable(allBinaryGameCanvas!.gameRunnable);
+    
+currentDisplayableFactory!.setDisplayable(allBinaryGameCanvas);
+    
 
                                     }
                                 
@@ -115,7 +123,8 @@ currentDisplayableFactory!.setDisplayable(allBinaryGameCanvas)
             
     public updateTouch(allBinaryGameCanvas: AllBinaryGameCanvas){
     //var allBinaryGameCanvas = allBinaryGameCanvas
-allBinaryGameCanvas!.updateTouch2()
+allBinaryGameCanvas!.updateTouch2();
+    
 }
 
 
@@ -123,7 +132,8 @@ allBinaryGameCanvas!.updateTouch2()
             
     public updateScreenButtonPaintable(allBinaryGameCanvas: AllBinaryGameCanvas){
     //var allBinaryGameCanvas = allBinaryGameCanvas
-allBinaryGameCanvas!.updateScreenButtonPaintable2()
+allBinaryGameCanvas!.updateScreenButtonPaintable2();
+    
 }
 
 
@@ -131,13 +141,15 @@ allBinaryGameCanvas!.updateScreenButtonPaintable2()
             
     public setGameState(allBinaryGameCanvas: AllBinaryGameCanvas){
     //var allBinaryGameCanvas = allBinaryGameCanvas
-allBinaryGameCanvas!.setGameState()
+allBinaryGameCanvas!.setGameState();
+    
 }
 
 
     public removeAllGameKeyInputListeners(allBinaryGameCanvas: AllBinaryGameCanvas){
     //var allBinaryGameCanvas = allBinaryGameCanvas
-allBinaryGameCanvas!.removeAllGameKeyInputListeners2()
+allBinaryGameCanvas!.removeAllGameKeyInputListeners2();
+    
 }
 
 
@@ -145,7 +157,8 @@ allBinaryGameCanvas!.removeAllGameKeyInputListeners2()
             
     public updateEndGameProcessor(allBinaryGameCanvas: AllBinaryGameCanvas){
     //var allBinaryGameCanvas = allBinaryGameCanvas
-allBinaryGameCanvas!.updateEndGameProcessor2()
+allBinaryGameCanvas!.updateEndGameProcessor2();
+    
 }
 
 
@@ -153,7 +166,8 @@ allBinaryGameCanvas!.updateEndGameProcessor2()
             
     public buildGame(allBinaryGameCanvas: AllBinaryGameCanvas){
     //var allBinaryGameCanvas = allBinaryGameCanvas
-allBinaryGameCanvas!.buildGame2()
+allBinaryGameCanvas!.buildGame2();
+    
 }
 
 
@@ -161,7 +175,8 @@ allBinaryGameCanvas!.buildGame2()
             
     public run(allBinaryGameCanvas: AllBinaryGameCanvas){
     //var allBinaryGameCanvas = allBinaryGameCanvas
-allBinaryGameCanvas!.run2()
+allBinaryGameCanvas!.run2();
+    
 }
 
 
@@ -174,7 +189,8 @@ allBinaryGameCanvas!.run2()
     //var score = score
     //var autoSubmit = autoSubmit
     //var isLast = isLast
-allBinaryGameCanvas!.setHighScore2(abeClientInformation, name, score, autoSubmit, isLast)
+allBinaryGameCanvas!.setHighScore2(abeClientInformation, name, score, autoSubmit, isLast);
+    
 }
 
 

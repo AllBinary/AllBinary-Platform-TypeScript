@@ -62,9 +62,12 @@ public constructor (){
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put("MotionGesture to CompleteMotionGesture Reciever", this, commonStrings!.CONSTRUCTOR)
-CompleteMotionGestureInputEventHandler.getInstance()!.addListener(GameKeyFromMotionGestureEventListener())
+;
+    
+logUtil!.put("MotionGesture to CompleteMotionGesture Reciever", this, commonStrings!.CONSTRUCTOR);
+    
+CompleteMotionGestureInputEventHandler.getInstance()!.addListener(GameKeyFromMotionGestureEventListener());
+    
 }
 
 
@@ -76,17 +79,20 @@ var list = list
     var configuration: MotionGestureConfiguration = MotionGestureConfigurationFactory.getInstance()!;
         
         
-
+;
+    
 
     var commandActionsList: BasicArrayList = configuration.getAssociateCommandActionsList()!;
         
         
-
+;
+    
 
     var size: number = commandActionsList!.size()!;
         
         
-
+;
+    
 
 
 
@@ -101,17 +107,22 @@ index >= 0; index--)
     var association: MotionGestureToMotionGestureActionAssociation = commandActionsList!.objectArray[index]! as MotionGestureToMotionGestureActionAssociation;
         
         
-
+;
+    
 
                         if(association.isMotionGestureArrayEquals(list) == true)
                         
                                     {
                                     
-    var completeMotionGestureInputEvent: GameKeyCompleteMotionGestureInputEvent = association.getCommandAction() as GameKeyCompleteMotionGestureInputEvent;
-        
-        
+    var completeMotionGestureInputEvent: GameKeyCompleteMotionGestureInputEvent = association.getCommandAction();
 
-CompleteMotionGestureInputEventHandler.getInstance()!.fireEvent(completeMotionGestureInputEvent)
+                         as GameKeyCompleteMotionGestureInputEvent;
+        
+        
+;
+    
+CompleteMotionGestureInputEventHandler.getInstance()!.fireEvent(completeMotionGestureInputEvent);
+    
 break;
 
                     

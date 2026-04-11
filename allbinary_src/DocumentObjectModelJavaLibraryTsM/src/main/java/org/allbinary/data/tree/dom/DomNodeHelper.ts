@@ -42,7 +42,8 @@ var parentNode = parentNode
     var node: Node = parentNode!.getFirstChild()!;
         
         
-
+;
+    
 
                         if(node != 
                                     null
@@ -53,7 +54,8 @@ var parentNode = parentNode
     var nodeList: NodeList = parentNode!.getChildNodes()!;
         
         
-
+;
+    
 
 
 
@@ -64,7 +66,8 @@ var parentNode = parentNode
         
 index < nodeList!.getLength(); index++)
         {
-node= nodeList!.item(index)
+node= nodeList!.item(index);
+    
 
                         if(node.getNodeType() == 1)
                         
@@ -95,7 +98,8 @@ var node = node
     var nodeTextNode: Node = node.getFirstChild()!;
         
         
-
+;
+    
 
                         if(nodeTextNode != 
                                     null
@@ -107,6 +111,8 @@ var node = node
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return nodeTextNode!.getNodeValue();
+
+                        ;
     
 
                                     }
@@ -133,12 +139,15 @@ var nodeList = nodeList
     var node: Node = DomSearchHelper.getNode(nodeName, nodeList)!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return DomNodeHelper.getTextNodeValue(node);
+
+                        ;
     
 }
 
@@ -149,12 +158,14 @@ var node = node
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
     var nodeList: NodeList = node.getChildNodes()!;
         
         
-
+;
+    
 
 
 
@@ -169,7 +180,8 @@ index < nodeList!.getLength(); index++)
     var nodeTextNode: Node = nodeList!.item(index)!;
         
         
-
+;
+    
 
                         if(nodeTextNode!.getNodeType() == Node.TEXT_NODE)
                         
@@ -180,7 +192,8 @@ index < nodeList!.getLength(); index++)
                                 )
                         
                                     {
-                                    stringBuffer!.append(nodeTextNode!.getNodeValue())
+                                    stringBuffer!.append(nodeTextNode!.getNodeValue());
+    
 
                                     }
                                 
@@ -194,6 +207,8 @@ index < nodeList!.getLength(); index++)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

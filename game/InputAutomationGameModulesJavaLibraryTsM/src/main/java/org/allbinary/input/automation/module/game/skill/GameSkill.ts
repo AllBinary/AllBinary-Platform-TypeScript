@@ -18,10 +18,13 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { HashMap } from "../../../../../../../java/util/HashMap.js";
 
     
-import { Vector } from "../../../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../../../java/util/Vector.js";
 
     
 import { StringMaker } from "../../../../../../../org/allbinary/logic/string/StringMaker.js";
@@ -36,7 +39,7 @@ export class GameSkill
          {
         
 
-    private hashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+    private hashMap: HashMap<any, any> = new HashMap<any, any>();
         
         
 
@@ -48,7 +51,9 @@ var extra = extra
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return hashMap!.get(StringBuilder().
-                            append(gameSkillType!.getName())!.append(CommonSeps.getInstance()!.SPACE)!.append(extra)!.toString()) as GameSkill;
+                            append(gameSkillType!.getName())!.append(CommonSeps.getInstance()!.SPACE)!.append(extra)!.toString());
+
+                         as GameSkill;
     
 }
 
@@ -78,12 +83,17 @@ public constructor (gameSkillType: GameSkillType, extra: string, time: number){
             var gameSkillType = gameSkillType
 var extra = extra
 var time = time
-this.setGameSkillType(gameSkillType)
-this.setExtra(extra)
-this.setTime(time)
-this.vector= Vector()
+this.setGameSkillType(gameSkillType);
+    
+this.setExtra(extra);
+    
+this.setTime(time);
+    
+this.vector= Vector();
+    
 hashMap!.put(StringBuilder().
-                            append(this.getGameSkillType()!.getName())!.append(CommonSeps.getInstance()!.SPACE)!.append(extra)!.toString(), this)
+                            append(this.getGameSkillType()!.getName())!.append(CommonSeps.getInstance()!.SPACE)!.append(extra)!.toString(), this);
+    
 }
 
 
@@ -99,7 +109,8 @@ hashMap!.put(StringBuilder().
 
     public setGameSkillType(gameSkillType: GameSkillType){
 var gameSkillType = gameSkillType
-this.gameSkillType= gameSkillType
+this.gameSkillType= gameSkillType;
+    
 }
 
 
@@ -115,7 +126,8 @@ this.gameSkillType= gameSkillType
 
     public setExtra(extra: string){
 var extra = extra
-this.extra= extra
+this.extra= extra;
+    
 }
 
 
@@ -131,13 +143,15 @@ this.extra= extra
 
     public setTime(time: number){
 var time = time
-this.time= time
+this.time= time;
+    
 }
 
 
     public addProperty(gameSkillPropertyInterface: GameSkillPropertyInterface){
 var gameSkillPropertyInterface = gameSkillPropertyInterface
-this.vector.add(gameSkillPropertyInterface)
+this.vector.add(gameSkillPropertyInterface);
+    
 }
 
 
@@ -156,25 +170,37 @@ this.vector.add(gameSkillPropertyInterface)
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
         
         
-
+;
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(GAME_SKILL_LABEL)
-stringBuffer!.append(this.getGameSkillType()!.toString())
-stringBuffer!.append(commonSeps!.SPACE)
-stringBuffer!.append(EXTRA_LABEL)
-stringBuffer!.append(this.getExtra())
-stringBuffer!.append(commonSeps!.SPACE)
-stringBuffer!.append(TIME_LABEL)
-stringBuffer!.appendlong(this.getTime())
+;
+    
+stringBuffer!.append(GAME_SKILL_LABEL);
+    
+stringBuffer!.append(this.getGameSkillType()!.toString());
+    
+stringBuffer!.append(commonSeps!.SPACE);
+    
+stringBuffer!.append(EXTRA_LABEL);
+    
+stringBuffer!.append(this.getExtra());
+    
+stringBuffer!.append(commonSeps!.SPACE);
+    
+stringBuffer!.append(TIME_LABEL);
+    
+stringBuffer!.appendlong(this.getTime());
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

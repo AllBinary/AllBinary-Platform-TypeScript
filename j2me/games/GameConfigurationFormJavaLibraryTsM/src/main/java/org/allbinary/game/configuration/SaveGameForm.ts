@@ -51,7 +51,8 @@ var commandListener = commandListener
 var title = title
 var backgrounBasicColor = backgrounBasicColor
 var foregroundBasicColor = foregroundBasicColor
-FORM= SaveGameForm(commandListener, title, backgrounBasicColor, foregroundBasicColor)
+FORM= SaveGameForm(commandListener, title, backgrounBasicColor, foregroundBasicColor);
+    
 
 
 
@@ -83,14 +84,18 @@ var foregroundBasicColor = foregroundBasicColor
 
                             //For kotlin this is before the body of the constructor.
                     
-logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
+logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
+    
 
     var timeString: string = (System.currentTimeMillis()).toString()!;
         
         
-
-this.append(TextField("Name: ", timeString, 30, TextField.ANY))
-this.initCommands(commandListener)
+;
+    
+this.append(TextField("Name: ", timeString, 30, TextField.ANY));
+    
+this.initCommands(commandListener);
+    
 }
 
 
@@ -100,11 +105,16 @@ var cmdListener = cmdListener
     var gameCommandsFactory: GameCommandsFactory = GameCommandsFactory.getInstance()!;
         
         
-
-this.removeAllCommands()
-this.addCommand(gameCommandsFactory!.SAVE)
-this.addCommand(gameCommandsFactory!.CLOSE_AND_SHOW_GAME_CANVAS)
-this.setCommandListener(cmdListener)
+;
+    
+this.removeAllCommands();
+    
+this.addCommand(gameCommandsFactory!.SAVE);
+    
+this.addCommand(gameCommandsFactory!.CLOSE_AND_SHOW_GAME_CANVAS);
+    
+this.setCommandListener(cmdListener);
+    
 }
 
 

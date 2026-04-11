@@ -18,7 +18,10 @@
 
 
 
-import { Hashtable } from "../../../../../java/util/Hashtable.js";
+            import Hashtable from "@ohos.util.HashMap";
+        
+
+//import { Hashtable } from "../../../../../java/util/Hashtable.js";
 
     
 import { ArtificialIntelligenceInterface } from "../../../../../org/allbinary/ai/ArtificialIntelligenceInterface.js";
@@ -51,15 +54,18 @@ export class BasicRandomAIFactory
 
                 //@Throws(Error::class)
             
-    public getInstance(hashtable: Hashtable<Any, Any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput): ArtificialIntelligenceInterface{
+    public getInstance(hashtable: Hashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput): ArtificialIntelligenceInterface{
 var hashtable = hashtable
 var ownerLayerInterface = ownerLayerInterface
 var gameInput = gameInput
 
-    var visitor: Visitor = hashtable.get(BasicAI.AI_VISITOR as Object) as Visitor;
-        
-        
+    var visitor: Visitor = hashtable.get(BasicAI.AI_VISITOR as Object);
 
+                         as Visitor;
+        
+        
+;
+    
 
                         if(visitor == 
                                     null
@@ -74,10 +80,13 @@ var gameInput = gameInput
                                     }
                                 
 
-    var inputProbability: InputProbability = hashtable.get(InputProbability.INPUT_PROBABILITY as Object) as InputProbability;
-        
-        
+    var inputProbability: InputProbability = hashtable.get(InputProbability.INPUT_PROBABILITY as Object);
 
+                         as InputProbability;
+        
+        
+;
+    
 
 
 

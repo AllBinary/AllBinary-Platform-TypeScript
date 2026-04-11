@@ -66,20 +66,24 @@ export class FormTypeFactory
     var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
         
         
-
+;
+    
 
     var formType: FormType
-
+;
+    
 
                         if(displayInfo!.isPortrait())
                         
                                     {
-                                    formType= this.VERTICAL_CENTER_FORM
+                                    formType= this.VERTICAL_CENTER_FORM;
+    
 
                                     }
                                 
                         else {
-                            formType= this.HORIZONTAL_FORM
+                            formType= this.HORIZONTAL_FORM;
+    
 
                         }
                             

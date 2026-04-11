@@ -39,12 +39,14 @@ export class TestInputExample
 
 
     public left(){
-this.testValue++
+this.testValue++;
+    
 }
 
 
     public right(){
-this.testValue--
+this.testValue--;
+    
 }
 
 

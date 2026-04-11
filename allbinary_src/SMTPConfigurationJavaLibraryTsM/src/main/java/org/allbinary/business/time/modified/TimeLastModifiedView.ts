@@ -48,14 +48,16 @@ public constructor (timeLastModified: TimeLastModified){
 
             super();
             var timeLastModified = timeLastModified
-this.setTimeLastModified(timeLastModified)
+this.setTimeLastModified(timeLastModified);
+    
 }
 
 public constructor (node: Node){
 
             super();
             var node = node
-this.setTimeLastModified(TimeLastModified(DomNodeHelper.getTextNodeValue(node)))
+this.setTimeLastModified(TimeLastModified(DomNodeHelper.getTextNodeValue(node)));
+    
 }
 
 
@@ -68,6 +70,8 @@ var document = document
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return ModDomHelper.createTextNode(document, EntryData.getInstance()!.TIMECREATED, this.getTimeLastModified()!.toString());
+
+                        ;
     
 }
 
@@ -84,7 +88,8 @@ var document = document
 
     public setTimeLastModified(timeLastModified: TimeLastModified){
 var timeLastModified = timeLastModified
-this.timeLastModified= timeLastModified
+this.timeLastModified= timeLastModified;
+    
 }
 
 

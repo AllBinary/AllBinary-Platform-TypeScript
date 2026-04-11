@@ -38,7 +38,7 @@ export class BasicColorUtil
 }
 
 
-    public readonly ZERO_ARRAY: BasicColor[] = new Array(0);
+    public readonly ZERO_ARRAY: BasicColor[] = [];
         
         
 
@@ -60,7 +60,8 @@ var green = green
 var blue = blue
 
     var value: number= 0
-
+;
+    
 
                         if(isAlpha)
                         
@@ -69,16 +70,20 @@ var blue = blue
                         if(ffOpaque)
                         
                                     {
-                                    value= ALPHA
+                                    value= ALPHA;
+    
 
                                     }
                                 
 
                                     }
                                 
-value= (red shl 16) or value
-value= (green shl 8) or value
-value= blue or value
+value= (red shl 16) or value;
+    
+value= (green shl 8) or value;
+    
+value= blue or value;
+    
 
 
 

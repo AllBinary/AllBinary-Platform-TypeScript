@@ -45,7 +45,8 @@ public constructor (file: AbFile){
 
             super();
             var file = file
-this.file= file
+this.file= file;
+    
 }
 
 
@@ -57,17 +58,21 @@ var document = document
     var tableMappingInterface: TableMappingInterface = FileTableMapping(this.file) as TableMappingInterface;
         
         
+;
+    
 
-
-    var hashMap: HashMap<Any, Any> = tableMappingInterface!.toHashMap()!;
+    var hashMap: HashMap<any, any> = tableMappingInterface!.toHashMap()!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return ModDomHelper.createNodeWithValueNodes(document, "file", hashMap);
+
+                        ;
     
 }
 

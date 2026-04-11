@@ -43,8 +43,10 @@ var read = read
     var url: string = super.getUrl()!;
         
         
-
-PreLogUtil.put("Url: " +url, this, "getUrl")
+;
+    
+PreLogUtil.put("Url: " +url, this, "getUrl");
+    
 
 
 

@@ -67,7 +67,8 @@ var gameInput = gameInput
 
                             //For kotlin this is before the body of the constructor.
                     
-this.delay= delay
+this.delay= delay;
+    
 }
 
 
@@ -76,16 +77,21 @@ this.delay= delay
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager
 
-    var timeFiredInterface: TimeFiredInterface = this.getOwnerLayerInterface() as TimeFiredInterface;
-        
-        
+    var timeFiredInterface: TimeFiredInterface = this.getOwnerLayerInterface();
 
+                         as TimeFiredInterface;
+        
+        
+;
+    
 
                         if(this.maxFireDelayTimeHelper!.isTime(GameTickTimeDelayHelperFactory.getInstance()!.startTime) && timeFiredInterface!.getLastFireTime() +this.maxFireDelayTimeHelper!.delay < this.maxFireDelayTimeHelper!.getStartTime())
                         
                                     {
-                                    super.processAI(Canvas.KEY_NUM1)
-this.maxFireDelayTimeHelper!.delay= delay
+                                    super.processAI(Canvas.KEY_NUM1);
+    
+this.maxFireDelayTimeHelper!.delay= delay;
+    
 
                                     }
                                 

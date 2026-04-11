@@ -54,7 +54,8 @@ export class MirrorMotionGestureEventUtil
 private constructor (){
 
             super();
-            this.motionEventCircularPool= MotionEventCircularPool.getInstance(Integer.MAX_VALUE)
+            this.motionEventCircularPool= MotionEventCircularPool.getInstance(Integer.MAX_VALUE);
+    
 }
 
 
@@ -67,34 +68,42 @@ var halfWidth = halfWidth
     var event: MotionGestureEvent = this.motionEventCircularPool!.getInstance(motionGestureEvent!.getMotionGesture())!;
         
         
-
+;
+    
 
     var previousNewX: number = this.getNewX(motionGestureEvent!.getPreviousPoint()!.getX(), halfWidth)!;
         
         
-
+;
+    
 
     var currentNewX: number = this.getNewX(motionGestureEvent!.getCurrentPoint()!.getX(), halfWidth)!;
         
         
-
+;
+    
 
     var pointFactory: PointFactory = PointFactory.getInstance()!;
         
         
-
+;
+    
 
     var mirroredPreviousPoint: GPoint = pointFactory!.getInstance(previousNewX, motionGestureEvent!.getPreviousPoint()!.getY())!;
         
         
-
+;
+    
 
     var mirroredCurrentPoint: GPoint = pointFactory!.getInstance(currentNewX, motionGestureEvent!.getCurrentPoint()!.getY())!;
         
         
-
-event.setPreviousPoint(mirroredPreviousPoint)
-event.setCurrentPoint(mirroredCurrentPoint)
+;
+    
+event.setPreviousPoint(mirroredPreviousPoint);
+    
+event.setCurrentPoint(mirroredCurrentPoint);
+    
 
 
 
@@ -109,17 +118,20 @@ var x = x
 var halfWidth = halfWidth
 
     var newX: number= 0
-
+;
+    
 
                         if(x > halfWidth)
                         
                                     {
-                                    newX= halfWidth -(x -halfWidth)
+                                    newX= halfWidth -(x -halfWidth);
+    
 
                                     }
                                 
                         else {
-                            newX= halfWidth +(halfWidth -x)
+                            newX= halfWidth +(halfWidth -x);
+    
 
                         }
                             

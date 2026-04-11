@@ -18,10 +18,13 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { HashMap } from "../../../../../java/util/HashMap.js";
 
     
-import { Vector } from "../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../java/util/Vector.js";
 
     
 import { TableMappingInterface } from "../../../../../org/allbinary/data/tables/TableMappingInterface.js";
@@ -48,7 +51,8 @@ public constructor (file: AbFile){
 
             super();
             var file = file
-this.file= file
+this.file= file;
+    
 }
 
 
@@ -59,7 +63,9 @@ this.file= file
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.file.getPath() as Object;
+                        return this.file.getPath();
+
+                         as Object;
     
 }
 
@@ -71,12 +77,18 @@ this.file= file
     var filePropertyVector: Vector = new Vector();
         
         
-
-filePropertyVector!.add(file.getAbsolutePath())
-filePropertyVector!.add(file.getCanonicalPath())
-filePropertyVector!.add(file.getName())
-filePropertyVector!.add(file.getParent())
-filePropertyVector!.add(file.getPath())
+;
+    
+filePropertyVector!.add(file.getAbsolutePath());
+    
+filePropertyVector!.add(file.getCanonicalPath());
+    
+filePropertyVector!.add(file.getName());
+    
+filePropertyVector!.add(file.getParent());
+    
+filePropertyVector!.add(file.getPath());
+    
 
 
 
@@ -88,37 +100,51 @@ filePropertyVector!.add(file.getPath())
 
                 //@Throws(Error::class)
             
-    public toHashMap(): HashMap<Any, Any>{
+    public toHashMap(): HashMap<any, any>{
 
-    var filePropertyHashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var filePropertyHashMap: HashMap<any, any> = new HashMap<any, any>();
         
         
-
+;
+    
 
     var pathUtil: PathUtil = PathUtil.getInstance()!;
         
         
-
+;
+    
 
     var rootFileName: string = pathUtil!.getNameFromPath(pathUtil!.getWithoutExtension(file.getPath()))!;
         
         
-
+;
+    
 
     var fileData: FileData = FileData.getInstance()!;
         
         
-
-filePropertyHashMap!.put(fileData!.ROOT_NAME, rootFileName)
-filePropertyHashMap!.put(fileData!.ISFILE, Boolean.valueOf(file.isFile())!.toString())
-filePropertyHashMap!.put(fileData!.ISDIRECTORY, Boolean.valueOf(file.isDirectory())!.toString())
-filePropertyHashMap!.put(fileData!.ISHIDDEN, Boolean.valueOf(file.isHidden())!.toString())
-filePropertyHashMap!.put(fileData!.ISABSOLUTE, Boolean.valueOf(file.isAbsolute())!.toString())
-filePropertyHashMap!.put(fileData!.ABSOLUTE_PATH, file.getAbsolutePath())
-filePropertyHashMap!.put(fileData!.CANONICAL_PATH, file.getCanonicalPath())
-filePropertyHashMap!.put(fileData!.NAME, file.getName())
-filePropertyHashMap!.put(fileData!.PARENT, file.getParent())
-filePropertyHashMap!.put(fileData!.PATH, file.getPath())
+;
+    
+filePropertyHashMap!.put(fileData!.ROOT_NAME, rootFileName);
+    
+filePropertyHashMap!.put(fileData!.ISFILE, Boolean.valueOf(file.isFile())!.toString());
+    
+filePropertyHashMap!.put(fileData!.ISDIRECTORY, Boolean.valueOf(file.isDirectory())!.toString());
+    
+filePropertyHashMap!.put(fileData!.ISHIDDEN, Boolean.valueOf(file.isHidden())!.toString());
+    
+filePropertyHashMap!.put(fileData!.ISABSOLUTE, Boolean.valueOf(file.isAbsolute())!.toString());
+    
+filePropertyHashMap!.put(fileData!.ABSOLUTE_PATH, file.getAbsolutePath());
+    
+filePropertyHashMap!.put(fileData!.CANONICAL_PATH, file.getCanonicalPath());
+    
+filePropertyHashMap!.put(fileData!.NAME, file.getName());
+    
+filePropertyHashMap!.put(fileData!.PARENT, file.getParent());
+    
+filePropertyHashMap!.put(fileData!.PATH, file.getPath());
+    
 
 
 

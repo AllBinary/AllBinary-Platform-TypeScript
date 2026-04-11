@@ -38,11 +38,11 @@ export class GDLazyResources
 }
 
 
-    public readonly imageResourceWidthArray: IntArray = intArrayOf();
+    public readonly imageResourceWidthArray: number[] = intArrayOf();
         
         
 
-    public readonly imageResourceHeightArray: IntArray = intArrayOf();
+    public readonly imageResourceHeightArray: number[] = intArrayOf();
         
         
 

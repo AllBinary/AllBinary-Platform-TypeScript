@@ -55,17 +55,21 @@ private constructor (){
     var calendar: Calendar = Calendar.getInstance()!;
         
         
-
+;
+    
 
     var date: Date = calendar.getTime()!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return date.toString();
+
+                        ;
     
 }
 

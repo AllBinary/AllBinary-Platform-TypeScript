@@ -60,7 +60,8 @@ public constructor (image: Image, angleInfo: AngleInfo, totalAngle: number, anim
 
                             //For kotlin this is before the body of the constructor.
                     
-this.image= image
+this.image= image;
+    
 }
 
 
@@ -72,21 +73,25 @@ this.image= image
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getSize();
+
+                        ;
     
 }
 
 
-    public setSequence(sequence: IntArray){
+    public setSequence(sequence: number[]){
 var sequence = sequence
 }
 
 
-    public getSequence(): IntArray{
+    public getSequence(): number[]{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return PrimitiveIntUtil.getArrayInstance();
+
+                        ;
     
 }
 
@@ -99,7 +104,8 @@ var sequence = sequence
     //var graphics = graphics
     //var x = x
     //var y = y
-graphics.drawImage(this.image, x, y, anchor)
+graphics.drawImage(this.image, x, y, anchor);
+    
 }
 
 
@@ -119,19 +125,23 @@ graphics.drawImage(this.image, x, y, anchor)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.image.getWidth();
+
+                        ;
     
 }
 
 
     public close(){
-DisposalUtil.getInstance()!.dispose(this.image)
+DisposalUtil.getInstance()!.dispose(this.image);
+    
 }
 
 
                 //@Throws(Error::class)
             
     finalize(){
-DisposalUtil.getInstance()!.dispose(this.image)
+DisposalUtil.getInstance()!.dispose(this.image);
+    
 }
 
 

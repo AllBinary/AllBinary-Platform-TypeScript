@@ -44,7 +44,9 @@ export class NotificationUtil
 }
 
 
-    private notificationManager: NotificationManager = ResourceUtil.getInstance()!.getContext()!.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager;
+    private notificationManager: NotificationManager = ResourceUtil.getInstance()!.getContext()!.getSystemService(Context.NOTIFICATION_SERVICE);
+
+                         as NotificationManager;
         
         
 
@@ -56,29 +58,36 @@ var message = message
     var context: Context = ResourceUtil.getInstance()!.getContext()!;
         
         
-
+;
+    
 
     var intent: Intent = CommandUriAction.getInstance()!.getIntent(command)!;
         
         
-
+;
+    
 
     var integer: Integer = ResourceUtil.getInstance()!.getResourceId(resource)!;
         
         
-
+;
+    
 
     var notification: Notification = new Notification(integer.toInt(), message, System.currentTimeMillis());
         
         
-
+;
+    
 
     var pendingIntent: PendingIntent = PendingIntent.getActivity(context, 0, intent, 0)!;
         
         
-
-notification.setLatestEventInfo(context, command.getLabel(), message, pendingIntent)
-notificationManager!.notify(command.hashCode(), notification)
+;
+    
+notification.setLatestEventInfo(context, command.getLabel(), message, pendingIntent);
+    
+notificationManager!.notify(command.hashCode(), notification);
+    
 }
 
 

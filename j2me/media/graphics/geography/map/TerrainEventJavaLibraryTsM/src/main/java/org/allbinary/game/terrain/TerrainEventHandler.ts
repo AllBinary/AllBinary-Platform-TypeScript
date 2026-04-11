@@ -18,7 +18,10 @@
 
 
 
-import { Hashtable } from "../../../../java/util/Hashtable.js";
+            import Hashtable from "@ohos.util.HashMap";
+        
+
+//import { Hashtable } from "../../../../java/util/Hashtable.js";
 
     
 import { NullUtil } from "../../../../org/allbinary/logic/NullUtil.js";
@@ -43,12 +46,13 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 export class TerrainEventHandler extends BasicEventHandler {
         
 
-    private hashtable: Hashtable<Any, Any> = NullUtil.getInstance()!.NULL_TABLE;
+    private hashtable: Hashtable<any, any> = NullUtil.getInstance()!.NULL_TABLE;
         
         
 
     public static init(){
-TerrainEventHandler.hashtable= Hashtable<Any, Any>()
+TerrainEventHandler.hashtable= Hashtable<any, any>();
+    
 }
 
 
@@ -58,15 +62,18 @@ TerrainEventHandler.hashtable= Hashtable<Any, Any>()
     var eventHandlerCanBeNull: any = {}? = TerrainEventHandler.hashtable.get(anyType as Object);
         
         
-
+;
+    
 
                         if(eventHandlerCanBeNull == 
                                     null
                                 )
                         
                                     {
-                                    eventHandlerCanBeNull= TerrainEventHandler()
-TerrainEventHandler.hashtable.put(anyType, eventHandlerCanBeNull)
+                                    eventHandlerCanBeNull= TerrainEventHandler();
+    
+TerrainEventHandler.hashtable.put(anyType, eventHandlerCanBeNull);
+    
 
                                     }
                                 
@@ -91,10 +98,13 @@ private constructor (){
     public addListener(terrainEventListener: TerrainEventListener){
     //var terrainEventListener = terrainEventListener
 
-                        if(!list.contains(terrainEventListener))
+                        if(!list.contains(terrainEventListener);
+
+                        )
                         
                                     {
-                                    list.add(terrainEventListener)
+                                    list.add(terrainEventListener);
+    
 
                                     }
                                 
@@ -102,15 +112,19 @@ private constructor (){
 
 
     public removeAllListeners(){
-this.list.clear()
-super.removeAllListeners()
+this.list.clear();
+    
+super.removeAllListeners();
+    
 }
 
 
     public removeListener(eventListenerInterface: EventListenerInterface){
     //var eventListenerInterface = eventListenerInterface
-this.list.remove(eventListenerInterface)
-super.removeListener(eventListenerInterface)
+this.list.remove(eventListenerInterface);
+    
+super.removeListener(eventListenerInterface);
+    
 }
 
 
@@ -131,19 +145,27 @@ super.removeListener(eventListenerInterface)
 
         try {
             
-    var terrainEventListener: TerrainEventListener = this.list.get(index) as TerrainEventListener;
-        
-        
+    var terrainEventListener: TerrainEventListener = this.list.get(index);
 
-terrainEventListener!.onTerrainEvent(eventObject as TerrainEvent)
-} catch(e: Exception)
+                         as TerrainEventListener;
+        
+        
+;
+    
+terrainEventListener!.onTerrainEvent(eventObject as TerrainEvent);
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e);
+    
 }
 
 }
 
-super.fireEvent(eventObject)
+super.fireEvent(eventObject);
+    
 }
 
 
@@ -156,8 +178,10 @@ super.fireEvent(eventObject)
     var terrainEventListenerInterface: TerrainEventListenerInterface = eventListenerInterface as TerrainEventListenerInterface;
         
         
-
-terrainEventListenerInterface!.onTerrainEvent(eventObject as TerrainEvent)
+;
+    
+terrainEventListenerInterface!.onTerrainEvent(eventObject as TerrainEvent);
+    
 }
 
 

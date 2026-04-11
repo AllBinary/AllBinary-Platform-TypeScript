@@ -18,13 +18,16 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { HashMap } from "../../../../../../java/util/HashMap.js";
 
     
 import { Set } from "../../../../../../java/util/Set.js";
 
     
-import { Vector } from "../../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../../java/util/Vector.js";
 
     
 import { AbstractInputAutomationWorker } from "../../../../../../org/allbinary/input/automation/module/AbstractInputAutomationWorker.js";
@@ -98,22 +101,30 @@ public constructor (inputAutomationActionInterface: InputAutomationActionInterfa
 
                             //For kotlin this is before the body of the constructor.
                     
-logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR)
-this.setCaptureWorker(GenericProfileCaptureWorkerFactory.getInstance(genericProfile))
-this.setInputAutomationActionInterface(inputAutomationActionInterface)
-this.setImageComparisonWorker(ImageComparisonWorker(imageComparatorConstraintsInterface))
-this.setMotionRectanglesWorker(MotionRectanglesWorker(motionRectangleConstraintsInterface))
-this.setGenericProfile(genericProfile)
+logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
+    
+this.setCaptureWorker(GenericProfileCaptureWorkerFactory.getInstance(genericProfile));
+    
+this.setInputAutomationActionInterface(inputAutomationActionInterface);
+    
+this.setImageComparisonWorker(ImageComparisonWorker(imageComparatorConstraintsInterface));
+    
+this.setMotionRectanglesWorker(MotionRectanglesWorker(motionRectangleConstraintsInterface));
+    
+this.setGenericProfile(genericProfile);
+    
 
     var vector: Vector = this.getGenericProfile()!.getGenericProfileDataWorkerTypeVector()!;
         
         
-
+;
+    
 
     var size: number = vector.length!;
         
         
-
+;
+    
 
 
 
@@ -125,16 +136,21 @@ this.setGenericProfile(genericProfile)
 index < size; index++)
         {
 
-    var genericProfileDataWorkerType: GenericProfileDataWorkerType = vector.get(index) as GenericProfileDataWorkerType;
-        
-        
+    var genericProfileDataWorkerType: GenericProfileDataWorkerType = vector.get(index);
 
-logUtil!.put("Adding Listener: " +genericProfileDataWorkerType, this, this.commonStrings!.CONSTRUCTOR)
+                         as GenericProfileDataWorkerType;
+        
+        
+;
+    
+logUtil!.put("Adding Listener: " +genericProfileDataWorkerType, this, this.commonStrings!.CONSTRUCTOR);
+    
 
                         if(genericProfileDataWorkerType == GenericProfileDataWorkerType.COMPARISON)
                         
                                     {
-                                    this.getCaptureWorker()!.addListener(this.getImageComparisonWorker())
+                                    this.getCaptureWorker()!.addListener(this.getImageComparisonWorker());
+    
 
                                     }
                                 
@@ -142,7 +158,8 @@ logUtil!.put("Adding Listener: " +genericProfileDataWorkerType, this, this.commo
                         if(genericProfileDataWorkerType == GenericProfileDataWorkerType.MOTION)
                         
                                     {
-                                    this.getImageComparisonWorker()!.addListener(this.getMotionRectanglesWorker())
+                                    this.getImageComparisonWorker()!.addListener(this.getMotionRectanglesWorker());
+    
 
                                     }
                                 
@@ -154,51 +171,65 @@ logUtil!.put("Adding Listener: " +genericProfileDataWorkerType, this, this.commo
                 //@Throws(Error::class)
             
     public processDataWorkerResults(){
-logUtil!.put(this.commonStrings!.START, this, this.PROCESS_DATA_WORKER_RESULTS)
-this.waitForDataWorkers()
+logUtil!.put(this.commonStrings!.START, this, this.PROCESS_DATA_WORKER_RESULTS);
+    
+this.waitForDataWorkers();
+    
 
-    var cacheInterface: J2SECacheInterface = CapturedBufferedImagesCacheSingleton.getInstance() as J2SECacheInterface;
+    var cacheInterface: J2SECacheInterface = CapturedBufferedImagesCacheSingleton.getInstance();
+
+                         as J2SECacheInterface;
         
         
+;
+    
 
-
-    var keyArray: any = {}[] = cacheInterface!.keySet()!.toTypedArray()!;
+    var keyArray: any[] = cacheInterface!.keySet()!.toTypedArray()!;
         
         
-
+;
+    
 
                         if(keyArray!.length > 0)
                         
                                     {
-                                    logUtil!.put("Image Available", this, this.PROCESS_DATA_WORKER_RESULTS)
-setFrame(keyArray[keyArray!.length -1]! as Long)
+                                    logUtil!.put("Image Available", this, this.PROCESS_DATA_WORKER_RESULTS);
+    
+setFrame(keyArray[keyArray!.length -1]! as Long);
+    
 
                         if(getFrame() > lastFrame)
                         
                                     {
-                                    logUtil!.put("Processing new frame: " +getFrame(), this, this.PROCESS_DATA_WORKER_RESULTS)
+                                    logUtil!.put("Processing new frame: " +getFrame(), this, this.PROCESS_DATA_WORKER_RESULTS);
+    
 
-    var hashMap: HashMap<Any, Any> = this.getGenericProfile()!.getGenericProfileActions()!.getHashMap()!;
+    var hashMap: HashMap<any, any> = this.getGenericProfile()!.getGenericProfileActions()!.getHashMap()!;
         
         
-
+;
+    
 
     var set: Set = hashMap!.keys!;
         
         
+;
+    
+logUtil!.put("Processing " +set.size() +"Actions", this, this.PROCESS_DATA_WORKER_RESULTS);
+    
 
-logUtil!.put("Processing " +set.size() +"Actions", this, this.PROCESS_DATA_WORKER_RESULTS)
-
-    var actionNameArray: any = {}[] = set.toArray()!;
+    var actionNameArray: any[] = set.toArray()!;
         
         
-
+;
+    
 
     var size: number = actionNameArray!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -213,27 +244,36 @@ index < size; index++)
     var actionNameString: string = actionNameArray[index]! as String;
         
         
+;
+    
+logUtil!.put("Processing Action: " +actionNameString, this, this.PROCESS_DATA_WORKER_RESULTS);
+    
 
-logUtil!.put("Processing Action: " +actionNameString, this, this.PROCESS_DATA_WORKER_RESULTS)
+    var genericProfileAction: GenericProfileAction = hashMap!.get(actionNameString as Object);
 
-    var genericProfileAction: GenericProfileAction = hashMap!.get(actionNameString as Object) as GenericProfileAction;
+                         as GenericProfileAction;
         
         
-
+;
+    
 
     var genericProfileActionScript: GenericProfileActionScript = genericProfileAction!.getGenericProfileActionScript()!;
         
         
-
+;
+    
 
     var vector: Vector = genericProfileActionScript!.getProfileActionConditionInterfaceVector()!;
         
         
-
-CaptureWorkerUtil.processProfileActionConditions(vector, getFrame())
+;
+    
+CaptureWorkerUtil.processProfileActionConditions(vector, getFrame());
+    
 }
 
-lastFrame= getFrame()
+lastFrame= getFrame();
+    
 
                                     }
                                 
@@ -241,7 +281,8 @@ lastFrame= getFrame()
                                     }
                                 
                         else {
-                            logUtil!.put("Image Not Available", this, this.PROCESS_DATA_WORKER_RESULTS)
+                            logUtil!.put("Image Not Available", this, this.PROCESS_DATA_WORKER_RESULTS);
+    
 
                         }
                             
@@ -251,9 +292,12 @@ lastFrame= getFrame()
                 //@Throws(Error::class)
             
     public process(){
-logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.PROCESS)
-this.startDataWorkers()
-this.processDataWorkerResults()
+logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.PROCESS);
+    
+this.startDataWorkers();
+    
+this.processDataWorkerResults();
+    
 }
 
 
@@ -269,7 +313,8 @@ this.processDataWorkerResults()
 
     public setGenericProfile(genericProfile: GenericProfile){
     //var genericProfile = genericProfile
-this.genericProfile= genericProfile
+this.genericProfile= genericProfile;
+    
 }
 
 
@@ -285,7 +330,8 @@ this.genericProfile= genericProfile
 
     setFrame(frame: Long){
     //var frame = frame
-this.frame= frame
+this.frame= frame;
+    
 }
 
 

@@ -47,17 +47,23 @@ var angleIncrement = angleIncrement
 var totalAngle = totalAngle
 var dx = dx
 var dy = dy
-this.imageArray= imageArray
-this.angleIncrement= angleIncrement
-this.totalAngle= totalAngle
-this.dx= dx
-this.dy= dy
+this.imageArray= imageArray;
+    
+this.angleIncrement= angleIncrement;
+    
+this.totalAngle= totalAngle;
+    
+this.dx= dx;
+    
+this.dy= dy;
+    
 }
 
 
     public setImageArray(imageArray: Image[]){
 var imageArray = imageArray
-this.imageArray= imageArray
+this.imageArray= imageArray;
+    
 }
 
 
@@ -77,13 +83,16 @@ this.imageArray= imageArray
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return AngleInfo.getInstance(angleIncrement.toShort());
+
+                        ;
     
 }
 
 
     public setTotalAngle(totalAngle: number){
 var totalAngle = totalAngle
-this.totalAngle= totalAngle
+this.totalAngle= totalAngle;
+    
 }
 
 
@@ -99,7 +108,8 @@ this.totalAngle= totalAngle
 
     public setDx(dx: number){
 var dx = dx
-this.dx= dx
+this.dx= dx;
+    
 }
 
 
@@ -115,7 +125,8 @@ this.dx= dx
 
     public setDy(dy: number){
 var dy = dy
-this.dy= dy
+this.dy= dy;
+    
 }
 
 

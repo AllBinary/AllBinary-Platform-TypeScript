@@ -60,14 +60,18 @@ export class EndGameInfo
                         if(gameInfo!.isLastLevel())
                         
                                     {
-                                    this.setWinStr(TEASER_DEMO_GAME_END_LAST_LEVEL)
-this.setGameOverStr(TEASER_DEMO_GAME_END_LAST_LEVEL)
+                                    this.setWinStr(TEASER_DEMO_GAME_END_LAST_LEVEL);
+    
+this.setGameOverStr(TEASER_DEMO_GAME_END_LAST_LEVEL);
+    
 
                                     }
                                 
                         else {
-                            this.setWinStr(NORMAL_GAME_OVER_WIN)
-this.setGameOverStr(TEASER_DEMO_GAME_END)
+                            this.setWinStr(NORMAL_GAME_OVER_WIN);
+    
+this.setGameOverStr(TEASER_DEMO_GAME_END);
+    
 
                         }
                             
@@ -86,7 +90,8 @@ this.setGameOverStr(TEASER_DEMO_GAME_END)
 
     public setGameOverStr(gameOverStr: string){
 var gameOverStr = gameOverStr
-this.gameOverStr= gameOverStr
+this.gameOverStr= gameOverStr;
+    
 }
 
 
@@ -102,7 +107,8 @@ this.gameOverStr= gameOverStr
 
     public setWinStr(winStr: string){
 var winStr = winStr
-this.winStr= winStr
+this.winStr= winStr;
+    
 }
 
 

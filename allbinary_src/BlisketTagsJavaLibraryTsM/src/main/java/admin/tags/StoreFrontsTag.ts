@@ -55,8 +55,10 @@ export class StoreFrontsTag extends TableTag {
 public constructor (){
 
             super();
-            this.setTagHelperFactory(StoreFrontsHelperFactory())
-this.setTagRequestHelperFactory(StoreFrontsRequestHelperFactory())
+            this.setTagHelperFactory(StoreFrontsHelperFactory());
+    
+this.setTagRequestHelperFactory(StoreFrontsRequestHelperFactory());
+    
 }
 
 
@@ -69,44 +71,55 @@ this.setTagRequestHelperFactory(StoreFrontsRequestHelperFactory())
     var anyType: any = {} = this.getTagHelperFactoryInterface()!.getInstance(this.getPropertiesHashMap(), pageContext)!;
         
         
+;
+    
 
-
-    var method: Method = anyType!::class.getMethod("generateSelect", 
+    var method: Method = anyType!.constructor.name.getMethod("generateSelect", 
                             null)!;
         
         
-
+;
+    
 
     var result: string = method.invoke(anyType, 
-                            null) as String;
-        
-        
+                            null);
 
+                         as String;
+        
+        
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
-} catch(e: LicensingException)
+
+                //: 
+} catch(e) 
             {
 
 
 
                             throw e
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
 
     var error: string = "Failed to generate storefronts select";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "generateSelect()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "generateSelect()", e);
+    
 
                                     }
                                 
@@ -130,44 +143,55 @@ this.setTagRequestHelperFactory(StoreFrontsRequestHelperFactory())
     var anyType: any = {} = this.getTagRequestHelperFactoryInterface()!.getInstance(this.getPropertiesHashMap(), pageContext)!;
         
         
+;
+    
 
-
-    var method: Method = anyType!::class.getMethod("install", 
+    var method: Method = anyType!.constructor.name.getMethod("install", 
                             null)!;
         
         
-
+;
+    
 
     var result: string = method.invoke(anyType, 
-                            null) as String;
-        
-        
+                            null);
 
+                         as String;
+        
+        
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
-} catch(e: LicensingException)
+
+                //: 
+} catch(e) 
             {
 
 
 
                             throw e
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
 
     var error: string = "Failed to generate storefronts select";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "generateSelect()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "generateSelect()", e);
+    
 
                                     }
                                 
@@ -191,44 +215,55 @@ this.setTagRequestHelperFactory(StoreFrontsRequestHelperFactory())
     var anyType: any = {} = this.getTagRequestHelperFactoryInterface()!.getInstance(this.getPropertiesHashMap(), pageContext)!;
         
         
+;
+    
 
-
-    var method: Method = anyType!::class.getMethod("sendStoreCreatedEmails", 
+    var method: Method = anyType!.constructor.name.getMethod("sendStoreCreatedEmails", 
                             null)!;
         
         
-
+;
+    
 
     var result: string = method.invoke(anyType, 
-                            null) as String;
-        
-        
+                            null);
 
+                         as String;
+        
+        
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
-} catch(e: LicensingException)
+
+                //: 
+} catch(e) 
             {
 
 
 
                             throw e
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
 
     var error: string = "Failed to send email";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "sendStoreCreatedEmails()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "sendStoreCreatedEmails()", e);
+    
 
                                     }
                                 
@@ -262,12 +297,14 @@ this.setTagRequestHelperFactory(StoreFrontsRequestHelperFactory())
     var storeFrontData: StoreFrontData = StoreFrontData.getInstance()!;
         
         
-
+;
+    
 
                         if(this.getCommand()!.compareTo(storeFrontData!.SELECT) == 0)
                         
                                     {
-                                    this.pageContext!.getOut()!.print(this.generateSelect())
+                                    this.pageContext!.getOut()!.print(this.generateSelect());
+    
 
                                     }
                                 
@@ -275,8 +312,10 @@ this.setTagRequestHelperFactory(StoreFrontsRequestHelperFactory())
                         if(this.getCommand()!.compareTo(storeFrontData!.INSTALL) == 0)
                         
                                     {
-                                    this.getPropertiesHashMap()!.put("current", this.getCurrent())
-this.getPropertiesHashMap()!.put("total", this.getTotal())
+                                    this.getPropertiesHashMap()!.put("current", this.getCurrent());
+    
+this.getPropertiesHashMap()!.put("total", this.getTotal());
+    
 
                         if(this.getCurrent()!.toInt() == this.getTotal()!.toInt())
                         
@@ -290,7 +329,8 @@ this.getPropertiesHashMap()!.put("total", this.getTotal())
 
                                     }
                                 
-this.install()
+this.install();
+    
 
                                     }
                                 
@@ -298,7 +338,8 @@ this.install()
                         if(this.getCommand()!.compareTo(storeFrontData!.INSTALL_COMPLETE) == 0)
                         
                                     {
-                                    this.sendStoreCreatedEmails()
+                                    this.sendStoreCreatedEmails();
+    
 
                                     }
                                 
@@ -308,6 +349,8 @@ this.install()
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.doStartTag();
+
+                        ;
     
 
                         }
@@ -324,9 +367,12 @@ this.install()
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return SKIP_BODY;
     
-} catch(e: LicensingException)
+
+                //: 
+} catch(e) 
             {
-AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e);
+    
 
 
 
@@ -334,9 +380,12 @@ AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
                         return SKIP_BODY;
     
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
-AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
+    
 
 
 

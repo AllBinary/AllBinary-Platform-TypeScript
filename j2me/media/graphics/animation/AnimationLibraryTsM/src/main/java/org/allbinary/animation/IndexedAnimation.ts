@@ -37,14 +37,16 @@ export class IndexedAnimation extends Animation
 private constructor (){
 
             super();
-            this.animationBehaviorP= AnimationBehavior.getInstance()
+            this.animationBehaviorP= AnimationBehavior.getInstance();
+    
 }
 
 protected constructor (animationBehavior: AnimationBehavior){
 
             super();
                 //var animationBehavior = animationBehavior
-this.animationBehaviorP= animationBehavior
+this.animationBehaviorP= animationBehavior;
+    
 }
 
 
@@ -59,8 +61,10 @@ this.animationBehaviorP= animationBehavior
 
 
     public reset(){
-this.animationBehaviorP!.reset()
-this.setFrame(0)
+this.animationBehaviorP!.reset();
+    
+this.setFrame(0);
+    
 }
 
 
@@ -130,26 +134,31 @@ this.setFrame(0)
 }
 
 
-    public setSequence(sequence: IntArray){
+    public setSequence(sequence: number[]){
     //var sequence = sequence
 }
 
 
-    public getSequence(): IntArray{
+    public getSequence(): number[]{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return PrimitiveIntUtil.getArrayInstance();
+
+                        ;
     
 }
 
 
     public setState(indexedAnimation: IndexedAnimation){
     //var indexedAnimation = indexedAnimation
-this.setFrame(indexedAnimation!.getFrame())
-this.setDx(indexedAnimation!.getDx())
-this.setDy(indexedAnimation!.getDy())
+this.setFrame(indexedAnimation!.getFrame());
+    
+this.setDx(indexedAnimation!.getDx());
+    
+this.setDy(indexedAnimation!.getDy());
+    
 }
 
 

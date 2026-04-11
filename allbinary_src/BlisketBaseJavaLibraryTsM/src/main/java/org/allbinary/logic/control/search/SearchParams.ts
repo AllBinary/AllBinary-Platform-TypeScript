@@ -45,7 +45,7 @@ export class SearchParams
          {
         
 
-    private columnsAndSearchValues: HashMap<Any, Any>
+    private columnsAndSearchValues: HashMap<any, any>
 
     private order: string
 
@@ -60,41 +60,55 @@ public constructor (request: HttpServletRequest){
 
             super();
             var request = request
-this.columnsAndSearchValues= HashMap<Any, Any>()
-this.setLength(request.getParameter(SearchData.LENGTH))
-this.setOrder(request.getParameter(SearchData.ORDER))
+this.columnsAndSearchValues= HashMap<any, any>();
+    
+this.setLength(request.getParameter(SearchData.LENGTH));
+    
+this.setOrder(request.getParameter(SearchData.ORDER));
+    
 
     var page: string = request.getParameter(SearchData.PAGE)!;
         
         
-
-this.setStartPage(page)
-this.setEndPage(page)
-this.setSortBy(request.getParameter(SearchData.SORTBY))
+;
+    
+this.setStartPage(page);
+    
+this.setEndPage(page);
+    
+this.setSortBy(request.getParameter(SearchData.SORTBY));
+    
 
     var index: number = 0;
         
         
-
+;
+    
 
     var columnName: string = request.getParameter(SearchData.COLUMNNAME +"[0]")!;
         
         
-
+;
+    
 
     var columnValue: string = request.getParameter(SearchData.COLUMNVALUE +"[0]")!;
         
         
-
+;
+    
 
         while(columnName != 
                                     null
                                 )
         {
-this.add(columnName, columnValue)
-index++
-columnName= request.getParameter(SearchData.COLUMNNAME +"[" +index +"]")
-columnValue= request.getParameter(SearchData.COLUMNVALUE +"[" +index +"]")
+this.add(columnName, columnValue);
+    
+index++;
+    
+columnName= request.getParameter(SearchData.COLUMNNAME +"[" +index +"]");
+    
+columnValue= request.getParameter(SearchData.COLUMNVALUE +"[" +index +"]");
+    
 }
 
 }
@@ -103,41 +117,47 @@ columnValue= request.getParameter(SearchData.COLUMNVALUE +"[" +index +"]")
     public add(column: string, value: string){
 var column = column
 var value = value
-this.columnsAndSearchValues!.put(column, value)
+this.columnsAndSearchValues!.put(column, value);
+    
 }
 
 
     public setOrder(value: string){
 var value = value
-this.order= value
+this.order= value;
+    
 }
 
 
     public setSortBy(value: string){
 var value = value
-this.sortBy= value
+this.sortBy= value;
+    
 }
 
 
     public setLength(value: string){
 var value = value
-this.listLength= value
+this.listLength= value;
+    
 }
 
 
     public setStartPage(value: string){
 var value = value
-this.startPage= value
+this.startPage= value;
+    
 }
 
 
     public setEndPage(value: string){
 var value = value
-this.endPage= value
+this.endPage= value;
+    
 }
 
 
-    public get(): HashMap<Any, Any>{
+    public get(): HashMap<any, any>{
 
 
 
@@ -271,11 +291,16 @@ var document = document
     var paramsNode: Node = ModDomHelper.createNameValueNodes(document, SearchData.PARAMS, SearchData.PARAMS)!;
         
         
-
-paramsNode!.appendChild(this.getFieldsNode(document))
-paramsNode!.appendChild(this.getOrderNode(document))
-paramsNode!.appendChild(this.getSortByNode(document))
-paramsNode!.appendChild(this.getLengthNode(document))
+;
+    
+paramsNode!.appendChild(this.getFieldsNode(document));
+    
+paramsNode!.appendChild(this.getOrderNode(document));
+    
+paramsNode!.appendChild(this.getSortByNode(document));
+    
+paramsNode!.appendChild(this.getLengthNode(document));
+    
 
 
 
@@ -294,23 +319,27 @@ var document = document
                             toString())!;
         
         
-
+;
+    
 
     var set: Set = this.columnsAndSearchValues!.keySet()!;
         
         
+;
+    
 
-
-    var searchValueArray: any = {}[] = set.toArray()!;
+    var searchValueArray: any[] = set.toArray()!;
         
         
-
+;
+    
 
     var size: number = searchValueArray!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -325,13 +354,18 @@ index < size; index++)
     var key: string = searchValueArray[index]! as String;
         
         
+;
+    
 
+    var searchValue: string = this.columnsAndSearchValues!.get(key);
 
-    var searchValue: string = this.columnsAndSearchValues!.get(key) as String;
+                         as String;
         
         
-
-fieldsNode!.appendChild(ModDomHelper.createNameValueNodes(document, SearchData.FIELD, key, ToDomHelper.convertNull(searchValue)))
+;
+    
+fieldsNode!.appendChild(ModDomHelper.createNameValueNodes(document, SearchData.FIELD, key, ToDomHelper.convertNull(searchValue)));
+    
 }
 
 
@@ -352,6 +386,8 @@ var document = document
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return ModDomHelper.createNameValueNodes(document, SearchData.ORDER, ToDomHelper.convertNull(this.getOrder()));
+
+                        ;
     
 }
 
@@ -365,6 +401,8 @@ var document = document
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return ModDomHelper.createNameValueNodes(document, SearchData.SORTBY, ToDomHelper.convertNull(this.getSortBy()));
+
+                        ;
     
 }
 
@@ -378,6 +416,8 @@ var document = document
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return ModDomHelper.createNameValueNodes(document, SearchData.LENGTH, ToDomHelper.convertNull(this.getLength()));
+
+                        ;
     
 }
 

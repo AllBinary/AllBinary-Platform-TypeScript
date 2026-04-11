@@ -18,6 +18,8 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { Calendar } from "../../../../../../../../java/util/Calendar.js";
 
     
@@ -27,7 +29,8 @@ import { HashMap } from "../../../../../../../../java/util/HashMap.js";
 import { Random } from "../../../../../../../../java/util/Random.js";
 
     
-import { Vector } from "../../../../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../../../../java/util/Vector.js";
 
     
 import { StoreFrontData } from "../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js";
@@ -153,7 +156,8 @@ public constructor ()
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setTableName(tableName)
+this.setTableName(tableName);
+    
 }
 
 
@@ -164,7 +168,8 @@ var order = order
     var vector: Vector = new Vector();
         
         
-
+;
+    
 
         try {
             
@@ -172,131 +177,172 @@ var order = order
                             getDefault(userName)!;
         
         
-
+;
+    
 
     var billingAddress: StreetAddress = BillingAddressesEntity(userName).
                             getDefault()!;
         
         
-
+;
+    
 
     var shippingAddress: StreetAddress = ShippingAddressesEntity(userName).
                             getDefault()!;
         
         
-
+;
+    
 
     var abeClientInformation: AbeClientInformationInterface = ServiceClientInformationInterfaceFactory.getInstance()!;
         
         
-
+;
+    
 
     var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(order.getStoreName())!;
         
         
-
+;
+    
 
     var shippingInterface: ShippingInterface = ShippingMethods(abeClientInformation, storeFrontInterface).
                             getShippingInterface(order.getShippingMethod())!;
         
         
-
+;
+    
 
     var shippingCost: Money = shippingInterface!.getCost(order)!;
         
         
-
+;
+    
 
     var basketInterface: BasketInterface = order.getBasket()!;
         
         
-
+;
+    
 
     var subTotal: Money = basketInterface!.getSubTotal()!;
         
         
-
+;
+    
 
     var taxRate: Float = TaxFactory.getInstance()!.getInstance(abeClientInformation, storeFrontInterface)!.getTaxRate(shippingAddress, storeFrontInterface)!;
         
         
-
+;
+    
 
     var tax: Money = new Money();
         
         
-
+;
+    
 
     var total: Money = new Money();
         
         
-
-total.add(shippingCost!.toString())
-total.add(subTotal!.toString())
-tax.add(total.toString())
-tax.multiply(taxRate)
-total.add(tax.toString())
+;
+    
+total.add(shippingCost!.toString());
+    
+total.add(subTotal!.toString());
+    
+tax.add(total.toString());
+    
+tax.multiply(taxRate);
+    
+total.add(tax.toString());
+    
 
     var empty: string = StringUtil.getInstance()!.EMPTY_STRING;
         
         
-
+;
+    
 vector.add(OrderHistoryIdGenerator().
-                            getNext())
+                            getNext());
+    
 
     var ZERO: string = TableDataFactory.getInstance()!.ZERO_STRING;
         
         
-
-vector.add(order.getId())
-vector.add(userName)
-vector.add(order.getStoreName())
+;
+    
+vector.add(order.getId());
+    
+vector.add(userName);
+    
+vector.add(order.getStoreName());
+    
 
     var calendar: Calendar = Calendar.getInstance()!;
         
         
-
+;
+    
 
     var time: string = new calendar.getTimeInMillis() as Long.
-                            toString().toCharArray().concatToString()
-                                ;
+                            toString();
         
         
-
-vector.add(ZERO)
-vector.add(time)
-vector.add(ZERO)
-vector.add(ZERO)
-vector.add(OrderHistoryData.PREPROCESSING)
-vector.add(order.getPaymentMethod())
+;
+    
+vector.add(ZERO);
+    
+vector.add(time);
+    
+vector.add(ZERO);
+    
+vector.add(ZERO);
+    
+vector.add(OrderHistoryData.PREPROCESSING);
+    
+vector.add(order.getPaymentMethod());
+    
 
                         if(paymentInterface != 
                                     null
                                 )
                         
                                     {
-                                    vector.add(paymentInterface!.getName())
-vector.add(paymentInterface!.getType())
-vector.add(paymentInterface!.getExpiration())
+                                    vector.add(paymentInterface!.getName());
+    
+vector.add(paymentInterface!.getType());
+    
+vector.add(paymentInterface!.getExpiration());
+    
 
     var random: number = Random().
                             nextInt(SuperCrypt.KEYMAX)!;
         
         
-
+;
+    
 vector.add(SuperCrypt(random).
-                            encrypt(paymentInterface!.getNumber()))
+                            encrypt(paymentInterface!.getNumber()));
+    
 vector.add(Integer(random).
-                            toString())
+                            toString());
+    
 
                                     }
                                 
                         else {
-                            vector.add(empty)
-vector.add(empty)
-vector.add(empty)
-vector.add(empty)
-vector.add(ZERO)
+                            vector.add(empty);
+    
+vector.add(empty);
+    
+vector.add(empty);
+    
+vector.add(empty);
+    
+vector.add(ZERO);
+    
 
                         }
                             
@@ -306,22 +352,34 @@ vector.add(ZERO)
                                 )
                         
                                     {
-                                    vector.add(billingAddress!.getName())
-vector.add(billingAddress!.getStreet())
-vector.add(billingAddress!.getCity())
-vector.add(billingAddress!.getState())
-vector.add(billingAddress!.getCode())
-vector.add(billingAddress!.getCountry())
+                                    vector.add(billingAddress!.getName());
+    
+vector.add(billingAddress!.getStreet());
+    
+vector.add(billingAddress!.getCity());
+    
+vector.add(billingAddress!.getState());
+    
+vector.add(billingAddress!.getCode());
+    
+vector.add(billingAddress!.getCountry());
+    
 
                                     }
                                 
                         else {
-                            vector.add(empty)
-vector.add(empty)
-vector.add(empty)
-vector.add(empty)
-vector.add(empty)
-vector.add(empty)
+                            vector.add(empty);
+    
+vector.add(empty);
+    
+vector.add(empty);
+    
+vector.add(empty);
+    
+vector.add(empty);
+    
+vector.add(empty);
+    
 
                         }
                             
@@ -331,51 +389,78 @@ vector.add(empty)
                                 )
                         
                                     {
-                                    vector.add(shippingAddress!.getName())
-vector.add(shippingAddress!.getStreet())
-vector.add(shippingAddress!.getCity())
-vector.add(shippingAddress!.getState())
-vector.add(shippingAddress!.getCode())
-vector.add(shippingAddress!.getCountry())
+                                    vector.add(shippingAddress!.getName());
+    
+vector.add(shippingAddress!.getStreet());
+    
+vector.add(shippingAddress!.getCity());
+    
+vector.add(shippingAddress!.getState());
+    
+vector.add(shippingAddress!.getCode());
+    
+vector.add(shippingAddress!.getCountry());
+    
 
                                     }
                                 
                         else {
-                            vector.add(empty)
-vector.add(empty)
-vector.add(empty)
-vector.add(empty)
-vector.add(empty)
-vector.add(empty)
+                            vector.add(empty);
+    
+vector.add(empty);
+    
+vector.add(empty);
+    
+vector.add(empty);
+    
+vector.add(empty);
+    
+vector.add(empty);
+    
 
                         }
                             
-vector.add(order.getShippingMethod())
-vector.add(subTotal!.toString())
-vector.add(shippingCost!.toString())
-vector.add(tax.toString())
-vector.add(total.toString())
-vector.add(order.getSpecial())
-vector.add(order.getUserComments())
-vector.add(order.getUserCancelComments())
-vector.add(order.getStoreComments())
-vector.add(order.getStoreCancelComments())
-this.insert(vector)
+vector.add(order.getShippingMethod());
+    
+vector.add(subTotal!.toString());
+    
+vector.add(shippingCost!.toString());
+    
+vector.add(tax.toString());
+    
+vector.add(total.toString());
+    
+vector.add(order.getSpecial());
+    
+vector.add(order.getUserComments());
+    
+vector.add(order.getUserCancelComments());
+    
+vector.add(order.getStoreComments());
+    
+vector.add(order.getStoreCancelComments());
+    
+this.insert(vector);
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.SUCCESS, this, INSERT)
+                                    logUtil!.put(this.commonStrings!.SUCCESS, this, INSERT);
+    
 
                                     }
                                 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put("Command Failed: " +vector, this, INSERT, e)
+                                    logUtil!.put("Command Failed: " +vector, this, INSERT, e);
+    
 
                                     }
                                 
@@ -388,22 +473,27 @@ this.insert(vector)
 var values = values
 
         try {
-            super.insert(values)
+            super.insert(values);
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.SUCCESS, this, INSERT)
+                                    logUtil!.put(this.commonStrings!.SUCCESS, this, INSERT);
+    
 
                                     }
                                 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.FAILURE, this, INSERT, e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, INSERT, e);
+    
 
                                     }
                                 
@@ -421,25 +511,29 @@ var status = status
     var calendar: Calendar = Calendar.getInstance()!;
         
         
-
+;
+    
 
     var time: string = new calendar.getTimeInMillis() as Long.
-                            toString().toCharArray().concatToString()
-                                ;
+                            toString();
         
         
+;
+    
 
-
-    var updateHashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var updateHashMap: HashMap<any, any> = new HashMap<any, any>();
         
         
-
-updateHashMap!.put(OrderHistoryData.STATUS, status)
+;
+    
+updateHashMap!.put(OrderHistoryData.STATUS, status);
+    
 
                         if(status.compareTo(OrderHistoryData.CANCELLED) == 0)
                         
                                     {
-                                    updateHashMap!.put(OrderHistoryData.CANCELDATE, time)
+                                    updateHashMap!.put(OrderHistoryData.CANCELDATE, time);
+    
 
                                     }
                                 
@@ -447,18 +541,23 @@ updateHashMap!.put(OrderHistoryData.STATUS, status)
                         if(status.compareTo(OrderHistoryData.SHIPPED) == 0)
                         
                                     {
-                                    updateHashMap!.put(OrderHistoryData.SHIPPEDDATE, time)
+                                    updateHashMap!.put(OrderHistoryData.SHIPPEDDATE, time);
+    
 
                                     }
                                 
-super.updateWhere(OrderData.ID, orderId, updateHashMap)
-} catch(e: Exception)
+super.updateWhere(OrderData.ID, orderId, updateHashMap);
+    
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.FAILURE, this, "setStatus", e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, "setStatus", e);
+    
 
                                     }
                                 
@@ -476,29 +575,37 @@ var paymentMethod = paymentMethod
     var calendar: Calendar = Calendar.getInstance()!;
         
         
-
+;
+    
 
     var time: string = new calendar.getTimeInMillis() as Long.
-                            toString().toCharArray().concatToString()
-                                ;
+                            toString();
         
         
+;
+    
 
-
-    var updateHashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var updateHashMap: HashMap<any, any> = new HashMap<any, any>();
         
         
+;
+    
+updateHashMap!.put(PaymentData.METHOD, paymentMethod);
+    
+updateHashMap!.put(OrderHistoryData.TRANSDATE, time);
+    
+super.updateWhere(OrderData.ID, orderId, updateHashMap);
+    
 
-updateHashMap!.put(PaymentData.METHOD, paymentMethod)
-updateHashMap!.put(OrderHistoryData.TRANSDATE, time)
-super.updateWhere(OrderData.ID, orderId, updateHashMap)
-} catch(e: Exception)
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.FAILURE, this, "setPaymentMethod", e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, "setPaymentMethod", e);
+    
 
                                     }
                                 
@@ -515,23 +622,28 @@ var storeFrontInterface = storeFrontInterface
     var orderReviewVector: Vector = new Vector();
         
         
+;
+    
 
-
-    var whereHashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var whereHashMap: HashMap<any, any> = new HashMap<any, any>();
         
         
-
-whereHashMap!.put(StoreFrontData.getInstance()!.NAME, storeFrontInterface!.getName())
+;
+    
+whereHashMap!.put(StoreFrontData.getInstance()!.NAME, storeFrontInterface!.getName());
+    
 
     var orderHashMapVector: Vector = super.getRows(whereHashMap)!;
         
         
-
+;
+    
 
     var size: number = orderHashMapVector!.length!;
         
         
-
+;
+    
 
 
 
@@ -543,16 +655,21 @@ whereHashMap!.put(StoreFrontData.getInstance()!.NAME, storeFrontInterface!.getNa
 i < size; i++)
         {
 
-    var orderReviewHashMap: HashMap<Any, Any> = orderHashMapVector!.get(i as Object) as HashMap<Any, Any>;
-        
-        
+    var orderReviewHashMap: HashMap<any, any> = orderHashMapVector!.get(i as Object);
 
+                         as HashMap<any, any>;
+        
+        
+;
+    
 
     var orderReview: OrderHistory = new OrderHistory(Basket(), orderReviewHashMap);
         
         
-
-orderReviewVector!.add(orderReview)
+;
+    
+orderReviewVector!.add(orderReview);
+    
 }
 
 
@@ -572,23 +689,28 @@ var userName = userName
     var orderReviewVector: Vector = new Vector();
         
         
+;
+    
 
-
-    var whereHashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var whereHashMap: HashMap<any, any> = new HashMap<any, any>();
         
         
-
-whereHashMap!.put(UserData.USERNAME, userName)
+;
+    
+whereHashMap!.put(UserData.USERNAME, userName);
+    
 
     var orderHashMapVector: Vector = super.getRows(whereHashMap)!;
         
         
-
+;
+    
 
     var size: number = orderHashMapVector!.length!;
         
         
-
+;
+    
 
 
 
@@ -600,16 +722,21 @@ whereHashMap!.put(UserData.USERNAME, userName)
 index < size; index++)
         {
 
-    var orderReviewHashMap: HashMap<Any, Any> = orderHashMapVector!.get(index as Object) as HashMap<Any, Any>;
-        
-        
+    var orderReviewHashMap: HashMap<any, any> = orderHashMapVector!.get(index as Object);
 
+                         as HashMap<any, any>;
+        
+        
+;
+    
 
     var orderReview: OrderHistory = new OrderHistory(Basket(), orderReviewHashMap);
         
         
-
-orderReviewVector!.add(orderReview)
+;
+    
+orderReviewVector!.add(orderReview);
+    
 }
 
 
@@ -631,23 +758,28 @@ var toDate = toDate
     var orderReviewVector: Vector = new Vector();
         
         
+;
+    
 
-
-    var whereHashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var whereHashMap: HashMap<any, any> = new HashMap<any, any>();
         
         
-
-whereHashMap!.put(OrderHistoryData.STATUS, status)
+;
+    
+whereHashMap!.put(OrderHistoryData.STATUS, status);
+    
 
     var orderHashMapVector: Vector = super.getRowsWhereBetween(whereHashMap, OrderHistoryData.ORDERDATE, fromDate, toDate)!;
         
         
-
+;
+    
 
     var size: number = orderHashMapVector!.length!;
         
         
-
+;
+    
 
 
 
@@ -659,16 +791,21 @@ whereHashMap!.put(OrderHistoryData.STATUS, status)
 index < size; index++)
         {
 
-    var orderReviewHashMap: HashMap<Any, Any> = orderHashMapVector!.get(index as Object) as HashMap<Any, Any>;
-        
-        
+    var orderReviewHashMap: HashMap<any, any> = orderHashMapVector!.get(index as Object);
 
+                         as HashMap<any, any>;
+        
+        
+;
+    
 
     var orderReview: OrderHistory = new OrderHistory(Basket(), orderReviewHashMap);
         
         
-
-orderReviewVector!.add(orderReview)
+;
+    
+orderReviewVector!.add(orderReview);
+    
 }
 
 
@@ -689,17 +826,20 @@ var toDate = toDate
     var orderReviewVector: Vector = new Vector();
         
         
-
+;
+    
 
     var orderHashMapVector: Vector = super.getRowsWhereBetween(OrderHistoryData.ORDERDATE, fromDate, toDate)!;
         
         
-
+;
+    
 
     var size: number = orderHashMapVector!.length!;
         
         
-
+;
+    
 
 
 
@@ -711,16 +851,21 @@ var toDate = toDate
 index < size; index++)
         {
 
-    var orderReviewHashMap: HashMap<Any, Any> = orderHashMapVector!.get(index as Object) as HashMap<Any, Any>;
-        
-        
+    var orderReviewHashMap: HashMap<any, any> = orderHashMapVector!.get(index as Object);
 
+                         as HashMap<any, any>;
+        
+        
+;
+    
 
     var orderReview: OrderHistory = new OrderHistory(Basket(), orderReviewHashMap);
         
         
-
-orderReviewVector!.add(orderReview)
+;
+    
+orderReviewVector!.add(orderReview);
+    
 }
 
 
@@ -737,16 +882,19 @@ orderReviewVector!.add(orderReview)
     public getOrder(id: string): OrderHistory{
 var id = id
 
-    var whereHashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var whereHashMap: HashMap<any, any> = new HashMap<any, any>();
         
         
+;
+    
+whereHashMap!.put(OrderData.ID, id);
+    
 
-whereHashMap!.put(OrderData.ID, id)
-
-    var orderReviewHashMap: HashMap<Any, Any> = super.getRow(whereHashMap)!;
+    var orderReviewHashMap: HashMap<any, any> = super.getRow(whereHashMap)!;
         
         
-
+;
+    
 
                         if(orderReviewHashMap != 
                                     null
@@ -757,7 +905,8 @@ whereHashMap!.put(OrderData.ID, id)
     var orderHistory: OrderHistory = new OrderHistory(Basket(), orderReviewHashMap);
         
         
-
+;
+    
 
 
 
@@ -785,97 +934,181 @@ whereHashMap!.put(OrderData.ID, id)
     var entryData: EntryData = EntryData.getInstance()!;
         
         
-
+;
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("CREATE TABLE ")
-stringBuffer!.append(tableName)
-stringBuffer!.append(" (")
-stringBuffer!.append(entryData!.ID)
-stringBuffer!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)
-stringBuffer!.append(OrderData.ID)
-stringBuffer!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)
-stringBuffer!.append(UserData.USERNAME)
-stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-stringBuffer!.append(StoreFrontData.getInstance()!.NAME)
-stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-stringBuffer!.append(OrderHistoryData.SHIPPEDDATE)
-stringBuffer!.append(" BIGINT(19) UNSIGNED ,")
-stringBuffer!.append(OrderHistoryData.ORDERDATE)
-stringBuffer!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)
-stringBuffer!.append(OrderHistoryData.TRANSDATE)
-stringBuffer!.append(" BIGINT(19) UNSIGNED ,")
-stringBuffer!.append(OrderHistoryData.CANCELDATE)
-stringBuffer!.append(" BIGINT(19) UNSIGNED ,")
-stringBuffer!.append(OrderHistoryData.STATUS)
-stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-stringBuffer!.append(PaymentData.METHOD)
-stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-stringBuffer!.append(PaymentData.NAME)
-stringBuffer!.append(" VARCHAR(255) ,")
-stringBuffer!.append(PaymentData.TYPE)
-stringBuffer!.append(" VARCHAR(255) ,")
-stringBuffer!.append(PaymentData.EXPIRATION)
-stringBuffer!.append(" VARCHAR(255) ,")
-stringBuffer!.append(PaymentData.NUMBER)
-stringBuffer!.append(" VARCHAR(255) ,")
-stringBuffer!.append(entryData!.ENCRYPTION)
-stringBuffer!.append(" BIGINT(19) UNSIGNED ,")
-stringBuffer!.append(BillingAddressData.NAME)
-stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-stringBuffer!.append(BillingAddressData.STREET)
-stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-stringBuffer!.append(BillingAddressData.CITY)
-stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-stringBuffer!.append(BillingAddressData.STATE)
-stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-stringBuffer!.append(BillingAddressData.CODE)
-stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-stringBuffer!.append(BillingAddressData.COUNTRY)
-stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-stringBuffer!.append(ShippingAddressData.NAME)
-stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-stringBuffer!.append(ShippingAddressData.STREET)
-stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-stringBuffer!.append(ShippingAddressData.CITY)
-stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-stringBuffer!.append(ShippingAddressData.STATE)
-stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-stringBuffer!.append(ShippingAddressData.CODE)
-stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-stringBuffer!.append(ShippingAddressData.COUNTRY)
-stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-stringBuffer!.append(ShippingMethodData.NAME)
-stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-stringBuffer!.append(OrderHistoryData.SUBTOTAL)
-stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-stringBuffer!.append(OrderHistoryData.SHIPPINGCOST)
-stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-stringBuffer!.append(OrderHistoryData.TAX)
-stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-stringBuffer!.append(OrderHistoryData.TOTAL)
-stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-stringBuffer!.append(entryData!.SPECIAL)
-stringBuffer!.append(" VARCHAR(255) ,")
-stringBuffer!.append(OrderData.CUSTOMERCOMMENT)
-stringBuffer!.append(this.sqlTypeStrings!.BLOB_NOT_NULL)
-stringBuffer!.append(OrderData.CUSTOMERCANCELCOMMENT)
-stringBuffer!.append(this.sqlTypeStrings!.BLOB_NOT_NULL)
-stringBuffer!.append(OrderData.STORECOMMENT)
-stringBuffer!.append(this.sqlTypeStrings!.BLOB_NOT_NULL)
-stringBuffer!.append(OrderData.STORECANCELCOMMENT)
-stringBuffer!.append(this.sqlTypeStrings!.BLOB_NOT_NULL)
-stringBuffer!.append("PRIMARY KEY(")
-stringBuffer!.append(entryData!.ID)
-stringBuffer!.append(") )")
+;
+    
+stringBuffer!.append("CREATE TABLE ");
+    
+stringBuffer!.append(tableName);
+    
+stringBuffer!.append(" (");
+    
+stringBuffer!.append(entryData!.ID);
+    
+stringBuffer!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL);
+    
+stringBuffer!.append(OrderData.ID);
+    
+stringBuffer!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL);
+    
+stringBuffer!.append(UserData.USERNAME);
+    
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
+    
+stringBuffer!.append(StoreFrontData.getInstance()!.NAME);
+    
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
+    
+stringBuffer!.append(OrderHistoryData.SHIPPEDDATE);
+    
+stringBuffer!.append(" BIGINT(19) UNSIGNED ,");
+    
+stringBuffer!.append(OrderHistoryData.ORDERDATE);
+    
+stringBuffer!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL);
+    
+stringBuffer!.append(OrderHistoryData.TRANSDATE);
+    
+stringBuffer!.append(" BIGINT(19) UNSIGNED ,");
+    
+stringBuffer!.append(OrderHistoryData.CANCELDATE);
+    
+stringBuffer!.append(" BIGINT(19) UNSIGNED ,");
+    
+stringBuffer!.append(OrderHistoryData.STATUS);
+    
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
+    
+stringBuffer!.append(PaymentData.METHOD);
+    
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
+    
+stringBuffer!.append(PaymentData.NAME);
+    
+stringBuffer!.append(" VARCHAR(255) ,");
+    
+stringBuffer!.append(PaymentData.TYPE);
+    
+stringBuffer!.append(" VARCHAR(255) ,");
+    
+stringBuffer!.append(PaymentData.EXPIRATION);
+    
+stringBuffer!.append(" VARCHAR(255) ,");
+    
+stringBuffer!.append(PaymentData.NUMBER);
+    
+stringBuffer!.append(" VARCHAR(255) ,");
+    
+stringBuffer!.append(entryData!.ENCRYPTION);
+    
+stringBuffer!.append(" BIGINT(19) UNSIGNED ,");
+    
+stringBuffer!.append(BillingAddressData.NAME);
+    
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
+    
+stringBuffer!.append(BillingAddressData.STREET);
+    
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
+    
+stringBuffer!.append(BillingAddressData.CITY);
+    
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
+    
+stringBuffer!.append(BillingAddressData.STATE);
+    
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
+    
+stringBuffer!.append(BillingAddressData.CODE);
+    
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
+    
+stringBuffer!.append(BillingAddressData.COUNTRY);
+    
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
+    
+stringBuffer!.append(ShippingAddressData.NAME);
+    
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
+    
+stringBuffer!.append(ShippingAddressData.STREET);
+    
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
+    
+stringBuffer!.append(ShippingAddressData.CITY);
+    
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
+    
+stringBuffer!.append(ShippingAddressData.STATE);
+    
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
+    
+stringBuffer!.append(ShippingAddressData.CODE);
+    
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
+    
+stringBuffer!.append(ShippingAddressData.COUNTRY);
+    
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
+    
+stringBuffer!.append(ShippingMethodData.NAME);
+    
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
+    
+stringBuffer!.append(OrderHistoryData.SUBTOTAL);
+    
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
+    
+stringBuffer!.append(OrderHistoryData.SHIPPINGCOST);
+    
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
+    
+stringBuffer!.append(OrderHistoryData.TAX);
+    
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
+    
+stringBuffer!.append(OrderHistoryData.TOTAL);
+    
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
+    
+stringBuffer!.append(entryData!.SPECIAL);
+    
+stringBuffer!.append(" VARCHAR(255) ,");
+    
+stringBuffer!.append(OrderData.CUSTOMERCOMMENT);
+    
+stringBuffer!.append(this.sqlTypeStrings!.BLOB_NOT_NULL);
+    
+stringBuffer!.append(OrderData.CUSTOMERCANCELCOMMENT);
+    
+stringBuffer!.append(this.sqlTypeStrings!.BLOB_NOT_NULL);
+    
+stringBuffer!.append(OrderData.STORECOMMENT);
+    
+stringBuffer!.append(this.sqlTypeStrings!.BLOB_NOT_NULL);
+    
+stringBuffer!.append(OrderData.STORECANCELCOMMENT);
+    
+stringBuffer!.append(this.sqlTypeStrings!.BLOB_NOT_NULL);
+    
+stringBuffer!.append("PRIMARY KEY(");
+    
+stringBuffer!.append(entryData!.ID);
+    
+stringBuffer!.append(") )");
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 
@@ -886,6 +1119,8 @@ stringBuffer!.append(") )")
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.createTable(this.createTableStatement());
+
+                        ;
     
 }
 
@@ -896,19 +1131,24 @@ stringBuffer!.append(") )")
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.dropTable();
+
+                        ;
     
 }
 
 
                 //@Throws(Error::class)
             
-    public update(whereHashMap: HashMap<Any, Any>, orderHashMap: HashMap<Any, Any>){
+    public update(whereHashMap: HashMap<any, any>, orderHashMap: HashMap<any, any>){
 var whereHashMap = whereHashMap
 var orderHashMap = orderHashMap
 
         try {
-            updateWhere(whereHashMap, orderHashMap)
-} catch(e: Exception)
+            updateWhere(whereHashMap, orderHashMap);
+    
+
+                //: 
+} catch(e) 
             {
 
 

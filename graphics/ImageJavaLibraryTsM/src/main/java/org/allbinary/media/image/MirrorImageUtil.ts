@@ -70,19 +70,22 @@ private constructor (){
 var bufferedImage = bufferedImage
 var verticle = verticle
 var horizontal = horizontal
-logUtil!.put("Starting", this, "getImage")
+logUtil!.put("Starting", this, "getImage");
+    
 
     var newBufferedImage: BufferedImage = this.imageUtil!.create(bufferedImage!.getWidth(
                             null), bufferedImage!.getHeight(
                             null))!;
         
         
-
+;
+    
 
     var g: Graphics2D = newBufferedImage!.createGraphics()!;
         
         
-
+;
+    
 
                         if(verticle)
                         
@@ -91,16 +94,22 @@ logUtil!.put("Starting", this, "getImage")
     var tx: AffineTransform = AffineTransform.getScaleInstance(1,  -1)!;
         
         
-
+;
+    
 tx.translate(0,  -bufferedImage!.getHeight(
-                            null))
+                            null);
+
+                        );
+    
 
     var op: AffineTransformOp = new AffineTransformOp(tx, AffineTransformOp.TYPE_NEAREST_NEIGHBOR);
         
         
-
+;
+    
 bufferedImage= op.filter(bufferedImage, 
-                            null)
+                            null);
+    
 
                                     }
                                 
@@ -112,24 +121,32 @@ bufferedImage= op.filter(bufferedImage,
     var tx: AffineTransform = AffineTransform.getScaleInstance( -1, 1)!;
         
         
-
+;
+    
 tx.translate( -bufferedImage!.getWidth(
-                            null), 0)
+                            null);
+
+                        , 0);
+    
 
     var op: AffineTransformOp = new AffineTransformOp(tx, AffineTransformOp.TYPE_NEAREST_NEIGHBOR);
         
         
-
+;
+    
 bufferedImage= op.filter(bufferedImage, 
-                            null)
+                            null);
+    
 
                                     }
                                 
 g.drawImage(bufferedImage, 0, 0, bufferedImage!.getWidth(
                             null), bufferedImage!.getHeight(
                             null), 
-                            null)
-g.dispose()
+                            null);
+    
+g.dispose();
+    
 
 
 
@@ -147,49 +164,58 @@ var horizontal = horizontal
     var width: number = bufferedImage!.getWidth()!;
         
         
-
+;
+    
 
     var height: number = bufferedImage!.getHeight()!;
         
         
-
+;
+    
 
     var cellHeight: number = height;
         
         
-
+;
+    
 
     var cellWidth: number = height;
         
         
-
+;
+    
 
     var numberOfFramesPerOrientation: number = width /cellWidth;
         
         
-
+;
+    
 
     var numberOfFrames: number = numberOfFramesPerOrientation;
         
         
-
+;
+    
 
                         if(verticle)
                         numberOfFrames *= 2
 
                         if(horizontal)
                         numberOfFrames *= 2
-logUtil!.put("numberOfFramesPerOrientation: " +numberOfFramesPerOrientation +" numberOfFrames: " +numberOfFrames, this, "getImages")
+logUtil!.put("numberOfFramesPerOrientation: " +numberOfFramesPerOrientation +" numberOfFrames: " +numberOfFrames, this, "getImages");
+    
 
     var bufferedImageArray: BufferedImage[] = new Array(numberOfFrames);
         
         
-
+;
+    
 
     var y: number = 0;
         
         
-
+;
+    
 
 
 
@@ -204,8 +230,10 @@ index < numberOfFramesPerOrientation; index++)
     var x: number = index *cellWidth;
         
         
-
-bufferedImageArray[index]= bufferedImage!.getSubimage(x, y, cellWidth, cellHeight)
+;
+    
+bufferedImageArray[index]= bufferedImage!.getSubimage(x, y, cellWidth, cellHeight);
+    
 }
 
 
@@ -218,7 +246,8 @@ bufferedImageArray[index]= bufferedImage!.getSubimage(x, y, cellWidth, cellHeigh
         
 index < numberOfFramesPerOrientation; index++)
         {
-bufferedImageArray[index +numberOfFramesPerOrientation]= this.getImage(bufferedImageArray[index]!, verticle, horizontal)
+bufferedImageArray[index +numberOfFramesPerOrientation]= this.getImage(bufferedImageArray[index]!, verticle, horizontal);
+    
 }
 
 

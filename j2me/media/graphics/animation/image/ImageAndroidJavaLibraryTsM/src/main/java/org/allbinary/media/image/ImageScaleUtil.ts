@@ -119,6 +119,8 @@ private constructor (){
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.createImage(imageCache, originalImage, scaleNominatorX, scaleDenominatorX, scaleNominatorY, scaleDenominatorY, cached, true);
+
+                        ;
     
 }
 
@@ -138,17 +140,21 @@ private constructor (){
     var scaleX: number = scaleNominatorX /scaleDenominatorX;
         
         
-
+;
+    
 
     var scaleY: number = scaleNominatorY /scaleDenominatorY;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.createImage(imageCache, originalImage, scaleX, scaleY, cached);
+
+                        ;
     
 }
 
@@ -165,61 +171,76 @@ private constructor (){
     var originalAndroidImage: AndroidImageInterface = originalImage as AndroidImageInterface;
         
         
-
+;
+    
 
     var originalBitmap: Bitmap = originalAndroidImage!.getBitmap()!;
         
         
-
+;
+    
 
     var width: number = (originalBitmap!.getWidth() *scaleX).toInt();
         
         
-
+;
+    
 
     var height: number = (originalBitmap!.getHeight() *scaleY).toInt();
         
         
-
+;
+    
 
     var index: number = imageBasicArrayList!.indexOf(originalImage)!;
         
         
-
+;
+    
 
     var alreadyAvailable: boolean = false;
         
         
-
+;
+    
 
                         if(index >= 0)
                         
                                     {
                                     
-    var scaleX2Float: Float = this.scaleXBasicArrayList!.get(index) as Float;
-        
-        
+    var scaleX2Float: Float = this.scaleXBasicArrayList!.get(index);
 
+                         as Float;
+        
+        
+;
+    
 
     var scaleX2: number = scaleX2Float!.toFloat()!;
         
         
+;
+    
 
+    var scaleY2Float: Float = this.scaleYBasicArrayList!.get(index);
 
-    var scaleY2Float: Float = this.scaleYBasicArrayList!.get(index) as Float;
+                         as Float;
         
         
-
+;
+    
 
     var scaleY2: number = scaleY2Float!.toFloat()!;
         
         
-
+;
+    
 
                         if(scaleX2 == scaleX && scaleY2 == scaleY)
                         
                                     {
-                                    alreadyAvailable= true
+                                    alreadyAvailable= true;
+    
 
                                     }
                                 
@@ -234,7 +255,9 @@ private constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.scaledImageBasicArrayList!.get(index) as Image;
+                        return this.scaledImageBasicArrayList!.get(index);
+
+                         as Image;
     
 
                                     }
@@ -244,11 +267,16 @@ private constructor (){
     var scaledImage: Image = this.getScaledImage(imageCache, originalImage, scaleX, scaleY, width, height, cached)!;
         
         
-
-imageBasicArrayList!.add(originalImage)
-scaledImageBasicArrayList!.add(scaledImage)
-this.scaleXBasicArrayList!.add(scaleX)
-this.scaleYBasicArrayList!.add(scaleY)
+;
+    
+imageBasicArrayList!.add(originalImage);
+    
+scaledImageBasicArrayList!.add(scaledImage);
+    
+this.scaleXBasicArrayList!.add(scaleX);
+    
+this.scaleYBasicArrayList!.add(scaleY);
+    
 
 
 
@@ -275,17 +303,20 @@ this.scaleYBasicArrayList!.add(scaleY)
     var image: Image = NullCanvas.NULL_IMAGE;
         
         
-
+;
+    
 
                         if(cached)
                         
                                     {
-                                    image= imageCache!.get(this::class.toString()!, width, height)
+                                    image= imageCache!.get(this.constructor.name.toString()!, width, height);
+    
 
                                     }
                                 
                         else {
-                            image= imageCache!.get(commonStrings!.CREATE_IMAGE, width, height)
+                            image= imageCache!.get(commonStrings!.CREATE_IMAGE, width, height);
+    
 
                         }
                             
@@ -297,9 +328,12 @@ this.scaleYBasicArrayList!.add(scaleY)
     var matrix: Matrix = new Matrix();
         
         
-
-this.scale(image, matrix, scaleX, scaleY)
-image.getGraphics()!.drawImage(originalImage, 0, 0, anchor)
+;
+    
+this.scale(image, matrix, scaleX, scaleY);
+    
+image.getGraphics()!.drawImage(originalImage, 0, 0, anchor);
+    
 
 
 
@@ -325,14 +359,17 @@ image.getGraphics()!.drawImage(originalImage, 0, 0, anchor)
     //var matrix = matrix
     //var scaleX = scaleX
     //var scaleY = scaleY
-matrix.setScale(scaleX, scaleY)
+matrix.setScale(scaleX, scaleY);
+    
 
     var canvas: Canvas = 
                                     (image as AndroidImageInterface).getCanvas()!;
         
         
-
-canvas.concat(matrix)
+;
+    
+canvas.concat(matrix);
+    
 }
 
 

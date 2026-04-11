@@ -46,7 +46,7 @@ export class NoHighScoresFactory extends HighScoresBase {
         
         
 
-    public readonly NO_HIGH_SCORES: HighScores[] = new Array(0);
+    public readonly NO_HIGH_SCORES: HighScores[] = [];
         
         
 private constructor (){
@@ -58,8 +58,10 @@ private constructor (){
     public fetchHighScores(gameInfo: GameInfo, highScoresResultsListener: HighScoresResultsListener){
     //var gameInfo = gameInfo
     //var highScoresResultsListener = highScoresResultsListener
-logUtil!.put("Getting No HighScores", this, "fetchHighScores")
-highScoresResultsListener!.setHighScoresArray(NO_HIGH_SCORES)
+logUtil!.put("Getting No HighScores", this, "fetchHighScores");
+    
+highScoresResultsListener!.setHighScoresArray(NO_HIGH_SCORES);
+    
 }
 
 

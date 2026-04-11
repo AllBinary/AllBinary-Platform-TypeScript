@@ -50,12 +50,14 @@ var args = args
     var TOTAL: number = 7;
         
         
+;
+    
 
-
-    var data: any = {}[] = new Array(TOTAL);
+    var data: any[] = new Array(TOTAL);
         
         
-
+;
+    
 
 
 
@@ -66,23 +68,30 @@ var args = args
         
 i < TOTAL; i++)
         {
-data[i]= ComparableObject()
+data[i]= ComparableObject();
+    
 }
 
-Arrays.sort(data)
+Arrays.sort(data);
+    
 
     var permutationVisitor: ObjectPermutationVisitor = new ObjectPermutationVisitor(data);
         
         
-
+;
+    
 
     var ORIGINAL_DATA_LABEL: string = "Original Data: ";
         
         
-
-System.out.print(ORIGINAL_DATA_LABEL)
-permutationVisitor!.visit(data)
-OrderedObjectArrayPermutationUtil.getInstance()!.generate(data, permutationVisitor)
+;
+    
+System.out.print(ORIGINAL_DATA_LABEL);
+    
+permutationVisitor!.visit(data);
+    
+OrderedObjectArrayPermutationUtil.getInstance()!.generate(data, permutationVisitor);
+    
 }
 
 
@@ -99,51 +108,62 @@ private constructor (){
             }
 
 
-    public getNext(data: any = {}[]){
+    public getNext(data: any[]){
 var data = data
 
     var length: number = data.length
                 ;
         
         
-
+;
+    
 
     var i: number = length -1;
         
         
-
+;
+    
 
         while(data[i -1]!.hashCode() >= data[i]!.hashCode())
         {
-i= i -1
+i= i -1;
+    
 }
 
 
     var j: number = length;
         
         
-
+;
+    
 
         while(data[j -1]!.hashCode() <= data[i -1]!.hashCode())
         {
-j= j -1
+j= j -1;
+    
 }
 
-this.swap(data, i -1, j -1)
-i++
-j= length
+this.swap(data, i -1, j -1);
+    
+i++;
+    
+j= length;
+    
 
         while(i < j)
         {
-this.swap(data, i -1, j -1)
-i++
-j--
+this.swap(data, i -1, j -1);
+    
+i++;
+    
+j--;
+    
 }
 
 }
 
 
-    public swap(data: any = {}[], a: number, b: number){
+    public swap(data: any[], a: number, b: number){
 var data = data
 var a = a
 var b = b
@@ -151,9 +171,12 @@ var b = b
     var temp: any = {} = data[a]!;
         
         
-
-data[a]= data[b]!
-data[b]= temp
+;
+    
+data[a]= data[b]!;
+    
+data[b]= temp;
+    
 }
 
 
@@ -163,7 +186,8 @@ var dataLength = dataLength
     var temp: number = 1;
         
         
-
+;
+    
 
                         if(dataLength > 1)
                         
@@ -178,7 +202,8 @@ var dataLength = dataLength
         
 i <= dataLength; i++)
         {
-temp *= i
+temp *= i;
+    
 }
 
 
@@ -193,16 +218,19 @@ temp *= i
 }
 
 
-    public generate(data: any = {}[], visitor: Visitor){
+    public generate(data: any[], visitor: Visitor){
 var data = data
 var visitor = visitor
 
     var iterations: number = this.factorial(data.length)!;
         
         
-
-System.out.print(TOTAL_ITERATIONS_TABLE)
-System.out.println(iterations)
+;
+    
+System.out.print(TOTAL_ITERATIONS_TABLE);
+    
+System.out.println(iterations);
+    
 
 
 
@@ -213,11 +241,14 @@ System.out.println(iterations)
         
 count < iterations -1; count++)
         {
-this.getNext(data)
-visitor.visit(this)
+this.getNext(data);
+    
+visitor.visit(this);
+    
 }
 
-System.out.println(FINISHED)
+System.out.println(FINISHED);
+    
 }
 
 

@@ -30,14 +30,17 @@ public constructor (moneyGraphic: NumberStringHud){
 
             super();
             var moneyGraphic = moneyGraphic
-this.capitalGraphic= moneyGraphic
+this.capitalGraphic= moneyGraphic;
+    
 }
 
 
     public removeMoney(points: number){
 var points = points
-super.removeMoney(points)
-this.capitalGraphic!.reduce(points)
+super.removeMoney(points);
+    
+this.capitalGraphic!.reduce(points);
+    
 }
 
 
@@ -47,14 +50,18 @@ this.capitalGraphic!.reduce(points)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.capitalGraphic!.get();
+
+                        ;
     
 }
 
 
     public addMoney(points: number){
 var points = points
-super.addMoney(points)
-this.capitalGraphic!.add(points)
+super.addMoney(points);
+    
+this.capitalGraphic!.add(points);
+    
 }
 
 

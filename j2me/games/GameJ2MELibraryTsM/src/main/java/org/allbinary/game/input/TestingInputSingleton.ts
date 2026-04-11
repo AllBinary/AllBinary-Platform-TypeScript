@@ -76,7 +76,8 @@ private constructor ()
 
                             //For kotlin this is before the body of the constructor.
                     
-GameInputProcessorUtil.init(this.inputProcessorArray)
+GameInputProcessorUtil.init(this.inputProcessorArray);
+    
 }
 
 
@@ -94,8 +95,10 @@ var aTestInputInterface = aTestInputInterface
     var testInputInterface: TestInputInterface = aTestInputInterface;
         
         
-
-this.paintable= testInputInterface
+;
+    
+this.paintable= testInputInterface;
+    
 this.inputProcessorArray[Canvas.UP]= object: GameInputProcessor()
                                 {
                                 
@@ -104,11 +107,13 @@ this.inputProcessorArray[Canvas.UP]= object: GameInputProcessor()
     public process(allbinaryLayerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
 var allbinaryLayerManager = allbinaryLayerManager
 var gameKeyEvent = gameKeyEvent
-testInputInterface!.up()
+testInputInterface!.up();
+    
 }
 
                                 }
-                            
+                            ;
+    
 this.inputProcessorArray[Canvas.DOWN]= object: GameInputProcessor()
                                 {
                                 
@@ -117,11 +122,13 @@ this.inputProcessorArray[Canvas.DOWN]= object: GameInputProcessor()
     public process(allbinaryLayerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
 var allbinaryLayerManager = allbinaryLayerManager
 var gameKeyEvent = gameKeyEvent
-testInputInterface!.down()
+testInputInterface!.down();
+    
 }
 
                                 }
-                            
+                            ;
+    
 this.inputProcessorArray[Canvas.LEFT]= object: GameInputProcessor()
                                 {
                                 
@@ -130,11 +137,13 @@ this.inputProcessorArray[Canvas.LEFT]= object: GameInputProcessor()
     public process(allbinaryLayerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
 var allbinaryLayerManager = allbinaryLayerManager
 var gameKeyEvent = gameKeyEvent
-testInputInterface!.left()
+testInputInterface!.left();
+    
 }
 
                                 }
-                            
+                            ;
+    
 this.inputProcessorArray[Canvas.RIGHT]= object: GameInputProcessor()
                                 {
                                 
@@ -143,11 +152,13 @@ this.inputProcessorArray[Canvas.RIGHT]= object: GameInputProcessor()
     public process(allbinaryLayerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
 var allbinaryLayerManager = allbinaryLayerManager
 var gameKeyEvent = gameKeyEvent
-testInputInterface!.right()
+testInputInterface!.right();
+    
 }
 
                                 }
-                            
+                            ;
+    
 this.inputProcessorArray[Canvas.KEY_NUM7]= object: GameInputProcessor()
                                 {
                                 
@@ -156,11 +167,13 @@ this.inputProcessorArray[Canvas.KEY_NUM7]= object: GameInputProcessor()
     public process(allbinaryLayerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
 var allbinaryLayerManager = allbinaryLayerManager
 var gameKeyEvent = gameKeyEvent
-testInputInterface!.strafeLeft()
+testInputInterface!.strafeLeft();
+    
 }
 
                                 }
-                            
+                            ;
+    
 this.inputProcessorArray[Canvas.KEY_NUM9]= object: GameInputProcessor()
                                 {
                                 
@@ -169,12 +182,15 @@ this.inputProcessorArray[Canvas.KEY_NUM9]= object: GameInputProcessor()
     public process(allbinaryLayerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
 var allbinaryLayerManager = allbinaryLayerManager
 var gameKeyEvent = gameKeyEvent
-testInputInterface!.strafeRight()
+testInputInterface!.strafeRight();
+    
 }
 
                                 }
-                            
-GameInputProcessorUtil.init(this.inputProcessorArray)
+                            ;
+    
+GameInputProcessorUtil.init(this.inputProcessorArray);
+    
 }
 
 
@@ -188,15 +204,18 @@ GameInputProcessorUtil.init(this.inputProcessorArray)
     var key: number = 0;
         
         
-
+;
+    
 
     var gameKeyEvent: GameKeyEvent
-
+;
+    
 
     var size: number = list.size()!;
         
         
-
+;
+    
 
 
 
@@ -207,9 +226,12 @@ GameInputProcessorUtil.init(this.inputProcessorArray)
         
 index < size; index++)
         {
-gameKeyEvent= (list.objectArray[index]! as GameKeyEvent)
-key= gameKeyEvent!.getKey()
-inputProcessorArray[key]!.process(allbinaryLayerManager, GameKeyEvent.NONE)
+gameKeyEvent= (list.objectArray[index]! as GameKeyEvent);
+    
+key= gameKeyEvent!.getKey();
+    
+inputProcessorArray[key]!.process(allbinaryLayerManager, GameKeyEvent.NONE);
+    
 }
 
 }
@@ -220,14 +242,17 @@ inputProcessorArray[key]!.process(allbinaryLayerManager, GameKeyEvent.NONE)
 
     public processInput(allbinaryLayerManager: AllBinaryLayerManager){
 var allbinaryLayerManager = allbinaryLayerManager
-this.processInput(allbinaryLayerManager, this.getGameKeyEventList())
-this.getGameKeyEventList()!.clear()
+this.processInput(allbinaryLayerManager, this.getGameKeyEventList());
+    
+this.getGameKeyEventList()!.clear();
+    
 }
 
 
     public paint(graphics: Graphics){
 var graphics = graphics
-this.paintable.paint(graphics)
+this.paintable.paint(graphics);
+    
 }
 
 

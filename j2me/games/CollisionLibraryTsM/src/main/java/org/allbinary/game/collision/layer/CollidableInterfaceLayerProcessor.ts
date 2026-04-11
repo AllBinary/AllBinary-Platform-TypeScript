@@ -55,12 +55,14 @@ var index = index
     var collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface = layerInterface as CollidableInterfaceCompositeInterface;
         
         
-
+;
+    
 
                         if(collidableInterfaceCompositeInterface!.getCollidableInferface()!.isCollidable())
                         
                                     {
-                                    AllBinaryCollisionManager.getInstance()!.process(this.getLayerManager(), collidableInterfaceCompositeInterface, index)
+                                    AllBinaryCollisionManager.getInstance()!.process(this.getLayerManager(), collidableInterfaceCompositeInterface, index);
+    
 
                                     }
                                 

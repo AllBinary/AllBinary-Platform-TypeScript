@@ -51,8 +51,10 @@ public constructor (sprite: Sprite, image: Image, dx: number, dy: number, animat
 
                             //For kotlin this is before the body of the constructor.
                     
-this.dx= dx
-this.dy= dy
+this.dx= dx;
+    
+this.dy= dy;
+    
 }
 
 
@@ -60,8 +62,10 @@ this.dy= dy
     //var g = g
     //var x = x
     //var y = y
-this.sprite.setPosition(x +this.dx, y +this.dy)
-this.paint(g)
+this.sprite.setPosition(x +this.dx, y +this.dy);
+    
+this.paint(g);
+    
 }
 
 

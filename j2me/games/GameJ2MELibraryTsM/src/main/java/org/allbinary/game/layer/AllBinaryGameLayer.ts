@@ -104,7 +104,8 @@ export class AllBinaryGameLayer extends AllBinaryLayer
 
     public paint(graphics: Graphics){
 var graphics = graphics
-basicSetColorUtil!.setBasicColorP(graphics, BLACK)
+basicSetColorUtil!.setBasicColorP(graphics, BLACK);
+    
 }
 
                                 }
@@ -209,14 +210,16 @@ public constructor (name: string, layerInfo: Rectangle, viewPosition: ViewPositi
 
     public onEvent(eventObject: AllBinaryEventObject){
     //var eventObject = eventObject
-ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
+ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
+    
 }
 
 
                 //@Throws(Error::class)
             
     public onViewPositionChangeEvent(){
-this.onChangeEvent(this.viewPositionEvent)
+this.onChangeEvent(this.viewPositionEvent);
+    
 }
 
 
@@ -228,12 +231,14 @@ this.onChangeEvent(this.viewPositionEvent)
                         if(GameLayerUtil.isOnScreen(this))
                         
                                     {
-                                    this.setVisible(true)
+                                    this.setVisible(true);
+    
 
                                     }
                                 
                         else {
-                            this.setVisible(false)
+                            this.setVisible(false);
+    
 
                         }
                             
@@ -242,7 +247,8 @@ this.onChangeEvent(this.viewPositionEvent)
 
     public paintFirst(graphics: Graphics){
     //var graphics = graphics
-this.paintable.paint(graphics)
+this.paintable.paint(graphics);
+    
 }
 
 
@@ -252,33 +258,42 @@ this.paintable.paint(graphics)
     var viewPosition: ViewPosition = this.getViewPosition()!;
         
         
-
+;
+    
 
     var viewX: number = viewPosition!.getX()!;
         
         
-
+;
+    
 
     var viewY: number = viewPosition!.getY()!;
         
         
-
-this.basicSetColorUtil!.setBasicColorP(graphics, RED)
-graphics.drawRect(viewX, viewY, this.getWidth(), this.getHeight())
+;
+    
+this.basicSetColorUtil!.setBasicColorP(graphics, RED);
+    
+graphics.drawRect(viewX, viewY, this.getWidth(), this.getHeight());
+    
 }
 
 
     public setWidth(width: number){
     //var width = width
-super.setLayerWidth(width)
-this.setHalfWidth(width shr 1)
+super.setLayerWidth(width);
+    
+this.setHalfWidth(width shr 1);
+    
 }
 
 
     public setHeight(height: number){
     //var height = height
-super.setLayerHeight(height)
-this.setHalfHeight(height shr 1)
+super.setLayerHeight(height);
+    
+this.setHalfHeight(height shr 1);
+    
 }
 
 

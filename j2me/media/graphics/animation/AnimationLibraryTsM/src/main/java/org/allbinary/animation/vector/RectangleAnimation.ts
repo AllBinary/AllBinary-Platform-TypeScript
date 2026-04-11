@@ -44,9 +44,12 @@ public constructor (width: number, height: number, basicColor: BasicColor){
             var width = width
 var height = height
 var basicColor = basicColor
-this.width= width
-this.height= height
-this.setBasicColorP(basicColor)
+this.width= width;
+    
+this.height= height;
+    
+this.setBasicColorP(basicColor);
+    
 }
 
 
@@ -58,20 +61,24 @@ this.setBasicColorP(basicColor)
 var graphics = graphics
 var x = x
 var y = y
-this.basicSetColorUtil!.setBasicColorP(graphics, this.getBasicColorP(), this.getColor())
-graphics.drawRect(x, y, width, height)
+this.basicSetColorUtil!.setBasicColorP(graphics, this.getBasicColorP(), this.getColor());
+    
+graphics.drawRect(x, y, width, height);
+    
 }
 
 
     public setWidth(width: number){
 var width = width
-this.width= width
+this.width= width;
+    
 }
 
 
     public setHeight(height: number){
 var height = height
-this.height= height
+this.height= height;
+    
 }
 
 

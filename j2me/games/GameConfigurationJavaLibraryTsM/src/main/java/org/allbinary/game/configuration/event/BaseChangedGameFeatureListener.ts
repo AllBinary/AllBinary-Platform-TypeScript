@@ -73,39 +73,49 @@ export class BaseChangedGameFeatureListener
 
     public onEvent(eventObject: AllBinaryEventObject){
 var eventObject = eventObject
-ForcedLogUtil.log(CommonStrings.getInstance()!.NOT_IMPLEMENTED, this)
+ForcedLogUtil.log(CommonStrings.getInstance()!.NOT_IMPLEMENTED, this);
+    
 }
 
 
     public onGameFeatureChange(gameFeatureEvent: GameFeatureEvent){
 var gameFeatureEvent = gameFeatureEvent
 logUtil!.put(StringMaker().
-                            append(gameFeatureUtil!.GAME_FEATURE_CHANGED)!.append(gameFeatureEvent!.getWhatChanged())!.toString(), this, gameFeatureUtil!.ON_GAME_FEATURE_CHANGE)
-list.add(gameFeatureEvent!.getGameOption())
-setChanged(true)
+                            append(gameFeatureUtil!.GAME_FEATURE_CHANGED)!.append(gameFeatureEvent!.getWhatChanged())!.toString(), this, gameFeatureUtil!.ON_GAME_FEATURE_CHANGE);
+    
+list.add(gameFeatureEvent!.getGameOption());
+    
+setChanged(true);
+    
 }
 
 
     public add(gameFeature: Feature){
 var gameFeature = gameFeature
-list.add(gameFeature)
+list.add(gameFeature);
+    
 }
 
 
     public remove(gameFeature: Feature){
 var gameFeature = gameFeature
-list.remove(gameFeature)
+list.remove(gameFeature);
+    
 }
 
 
     public setChanged(initialized: boolean){
 var initialized = initialized
-this.changed= initialized
+this.changed= initialized;
+    
 
-                        if(!this.isChanged())
+                        if(!this.isChanged();
+
+                        )
                         
                                     {
-                                    list.clear()
+                                    list.clear();
+    
 
                                     }
                                 
@@ -118,19 +128,28 @@ var gameFeature = gameFeature
     var isChanged: boolean = list.contains(gameFeature)!;
         
         
-
+;
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("GameFeature: ")
-stringBuffer!.append(StringUtil.getInstance()!.toString(gameFeature))
-stringBuffer!.append(" isFeature: ")
-stringBuffer!.appendboolean(Features.getInstance()!.isFeature(gameFeature))
-stringBuffer!.append(" isChanged: ")
-stringBuffer!.appendboolean(isChanged)
-logUtil!.put(stringBuffer!.toString(), this, "isChanged")
+;
+    
+stringBuffer!.append("GameFeature: ");
+    
+stringBuffer!.append(StringUtil.getInstance()!.toString(gameFeature));
+    
+stringBuffer!.append(" isFeature: ");
+    
+stringBuffer!.appendboolean(Features.getInstance()!.isFeature(gameFeature));
+    
+stringBuffer!.append(" isChanged: ");
+    
+stringBuffer!.appendboolean(isChanged);
+    
+logUtil!.put(stringBuffer!.toString(), this, "isChanged");
+    
 
 
 

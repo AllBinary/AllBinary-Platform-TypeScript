@@ -52,8 +52,10 @@ public constructor (basicColor: BasicColor){
 
             super();
             var basicColor = basicColor
-this.foregroundBasicColor= basicColor
-this.foregroundColor= basicColor!.toInt()
+this.foregroundBasicColor= basicColor;
+    
+this.foregroundColor= basicColor!.toInt();
+    
 }
 
 
@@ -63,11 +65,14 @@ var graphics = graphics
     var list: BasicArrayList = touchButtonFactory!.getList()!;
         
         
-
-this.basicSetColorUtil!.setBasicColorP(graphics, this.foregroundBasicColor, this.foregroundColor)
+;
+    
+this.basicSetColorUtil!.setBasicColorP(graphics, this.foregroundBasicColor, this.foregroundColor);
+    
 
     var touchButton: TouchButton
-
+;
+    
 
 
 
@@ -78,8 +83,10 @@ this.basicSetColorUtil!.setBasicColorP(graphics, this.foregroundBasicColor, this
         
 --index >= 0; )
         {
-touchButton= list.objectArray[index]! as TouchButton
-touchButton!.paint(graphics)
+touchButton= list.objectArray[index]! as TouchButton;
+    
+touchButton!.paint(graphics);
+    
 }
 
 
@@ -92,8 +99,10 @@ touchButton!.paint(graphics)
         
 --index >= 0; )
         {
-touchButton= list.objectArray[index]! as TouchButton
-touchButton!.paintHint(graphics)
+touchButton= list.objectArray[index]! as TouchButton;
+    
+touchButton!.paintHint(graphics);
+    
 }
 
 }

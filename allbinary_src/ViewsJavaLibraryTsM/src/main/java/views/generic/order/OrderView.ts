@@ -80,8 +80,12 @@ public constructor (transformInfoInterface: TransformInfoInterface)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.request= this.getPageContext()!.getRequest() as HttpServletRequest
-this.getFormData()
+this.request= this.getPageContext()!.getRequest();
+
+                         as HttpServletRequest;
+    
+this.getFormData();
+    
 }
 
 
@@ -92,19 +96,23 @@ this.getFormData()
     var id: string = request.getParameter(OrderData.ID)!;
         
         
-
+;
+    
 
                         if(id == 
                                     null
                                 )
                         
                                     {
-                                    id= this.getWeblisketSession()!.getOrder()!.getId()
+                                    id= this.getWeblisketSession()!.getOrder()!.getId();
+    
 
                                     }
                                 
-this.order= Order(Basket())
-this.order.setId(id)
+this.order= Order(Basket());
+    
+this.order.setId(id);
+    
 }
 
 
@@ -116,27 +124,34 @@ var document = document
     var orderHistoryNode: Node = orderHistory!.toXmlNode(document)!;
         
         
-
+;
+    
 
     var node: Node = document.createElement(orderHistory!.getPaymentMethod())!;
         
         
-
-orderHistoryNode!.appendChild(basketReview!.toXmlNode(document))
-node.appendChild(orderHistoryNode)
+;
+    
+orderHistoryNode!.appendChild(basketReview!.toXmlNode(document));
+    
+node.appendChild(orderHistoryNode);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return node;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.XSLLOGGINGERROR))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.FAILURE, this, "toXmlNode", e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, "toXmlNode", e);
+    
 
                                     }
                                 
@@ -152,7 +167,8 @@ node.appendChild(orderHistoryNode)
 
 
     public addDomNodeInterfaces(){
-this.addDomNodeInterface(this as DomNodeInterface)
+this.addDomNodeInterface(this as DomNodeInterface);
+    
 }
 
 
@@ -161,20 +177,26 @@ this.addDomNodeInterface(this as DomNodeInterface)
     public view(): string{
 
         try {
-            this.addDomNodeInterfaces()
+            this.addDomNodeInterfaces();
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.view();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e);
+    
 
                                     }
                                 

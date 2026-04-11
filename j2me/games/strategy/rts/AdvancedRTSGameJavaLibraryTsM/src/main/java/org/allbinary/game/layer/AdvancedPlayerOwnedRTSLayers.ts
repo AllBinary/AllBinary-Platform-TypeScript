@@ -62,69 +62,92 @@ export class AdvancedPlayerOwnedRTSLayers extends PlayerOwnedRTSLayers {
 
     public addUnit(rtsLayer: RTSLayer){
 var rtsLayer = rtsLayer
-this.unitsList!.add(rtsLayer)
-this.rtsLayerList!.add(rtsLayer)
+this.unitsList!.add(rtsLayer);
+    
+this.rtsLayerList!.add(rtsLayer);
+    
 }
 
 
     public addWaypoint(rtsLayer: RTSLayer){
 var rtsLayer = rtsLayer
-this.waypointsList!.add(rtsLayer)
-this.rtsLayerList!.add(rtsLayer)
+this.waypointsList!.add(rtsLayer);
+    
+this.rtsLayerList!.add(rtsLayer);
+    
 }
 
 
     public addBase(rtsLayer: RTSLayer){
 var rtsLayer = rtsLayer
-this.baseList!.add(rtsLayer)
-this.buildingList!.add(rtsLayer)
-this.rtsLayerList!.add(rtsLayer)
+this.baseList!.add(rtsLayer);
+    
+this.buildingList!.add(rtsLayer);
+    
+this.rtsLayerList!.add(rtsLayer);
+    
 }
 
 
     public addGarrison(rtsLayer: RTSLayer){
 var rtsLayer = rtsLayer
-this.garrisonList!.add(rtsLayer)
-this.buildingList!.add(rtsLayer)
-this.rtsLayerList!.add(rtsLayer)
+this.garrisonList!.add(rtsLayer);
+    
+this.buildingList!.add(rtsLayer);
+    
+this.rtsLayerList!.add(rtsLayer);
+    
 }
 
 
     public addHouse(rtsLayer: RTSLayer){
 var rtsLayer = rtsLayer
-this.houseList!.add(rtsLayer)
-this.buildingList!.add(rtsLayer)
-this.rtsLayerList!.add(rtsLayer)
+this.houseList!.add(rtsLayer);
+    
+this.buildingList!.add(rtsLayer);
+    
+this.rtsLayerList!.add(rtsLayer);
+    
 }
 
 
     public addLab(rtsLayer: RTSLayer){
 var rtsLayer = rtsLayer
-this.labList!.add(rtsLayer)
-this.buildingList!.add(rtsLayer)
-this.rtsLayerList!.add(rtsLayer)
+this.labList!.add(rtsLayer);
+    
+this.buildingList!.add(rtsLayer);
+    
+this.rtsLayerList!.add(rtsLayer);
+    
 }
 
 
     public addFactory(rtsLayer: RTSLayer){
 var rtsLayer = rtsLayer
-this.factoryList!.add(rtsLayer)
-this.buildingList!.add(rtsLayer)
-this.rtsLayerList!.add(rtsLayer)
+this.factoryList!.add(rtsLayer);
+    
+this.buildingList!.add(rtsLayer);
+    
+this.rtsLayerList!.add(rtsLayer);
+    
 }
 
 
     public removeUnit(gameLayer: AllBinaryGameLayer){
 var gameLayer = gameLayer
-this.unitsList!.remove(gameLayer)
-this.rtsLayerList!.remove(gameLayer)
+this.unitsList!.remove(gameLayer);
+    
+this.rtsLayerList!.remove(gameLayer);
+    
 }
 
 
     public removeWaypoint(gameLayer: AllBinaryGameLayer){
 var gameLayer = gameLayer
-this.waypointsList!.remove(gameLayer)
-this.rtsLayerList!.remove(gameLayer)
+this.waypointsList!.remove(gameLayer);
+    
+this.rtsLayerList!.remove(gameLayer);
+    
 }
 
 
@@ -210,12 +233,14 @@ this.rtsLayerList!.remove(gameLayer)
 
     public removeBuilding(layerInterface: AllBinaryGameLayer){
 var layerInterface = layerInterface
-this.buildingList!.add(layerInterface)
+this.buildingList!.add(layerInterface);
+    
 
                         if(this.getBaseList()!.remove(layerInterface))
                         
                                     {
-                                    this.rtsLayerList!.remove(layerInterface)
+                                    this.rtsLayerList!.remove(layerInterface);
+    
 
                                     }
                                 
@@ -223,7 +248,8 @@ this.buildingList!.add(layerInterface)
                         if(this.getFactoryList()!.remove(layerInterface))
                         
                                     {
-                                    this.rtsLayerList!.remove(layerInterface)
+                                    this.rtsLayerList!.remove(layerInterface);
+    
 
                                     }
                                 
@@ -231,7 +257,8 @@ this.buildingList!.add(layerInterface)
                         if(this.getGarrisonList()!.remove(layerInterface))
                         
                                     {
-                                    this.rtsLayerList!.remove(layerInterface)
+                                    this.rtsLayerList!.remove(layerInterface);
+    
 
                                     }
                                 
@@ -239,7 +266,8 @@ this.buildingList!.add(layerInterface)
                         if(this.getLabList()!.remove(layerInterface))
                         
                                     {
-                                    this.rtsLayerList!.remove(layerInterface)
+                                    this.rtsLayerList!.remove(layerInterface);
+    
 
                                     }
                                 
@@ -247,7 +275,8 @@ this.buildingList!.add(layerInterface)
                         if(this.getHouseList()!.remove(layerInterface))
                         
                                     {
-                                    this.rtsLayerList!.remove(layerInterface)
+                                    this.rtsLayerList!.remove(layerInterface);
+    
 
                                     }
                                 
@@ -259,27 +288,45 @@ this.buildingList!.add(layerInterface)
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(super.toString())
-stringBuffer!.append(" Bases: ")
-stringBuffer!.appendint(this.getBaseList()!.size())
-stringBuffer!.append(" Factory: ")
-stringBuffer!.appendint(this.getFactoryList()!.size())
-stringBuffer!.append(" Garrison: ")
-stringBuffer!.appendint(this.getGarrisonList()!.size())
-stringBuffer!.append(" Labs: ")
-stringBuffer!.appendint(this.getLabList()!.size())
-stringBuffer!.append(" Houses: ")
-stringBuffer!.appendint(this.getHouseList()!.size())
-stringBuffer!.append(" Waypoints: ")
-stringBuffer!.appendint(this.getWaypointsList()!.size())
-stringBuffer!.append(" Units: ")
-stringBuffer!.appendint(this.getUnitsList()!.size())
+;
+    
+stringBuffer!.append(super.toString());
+    
+stringBuffer!.append(" Bases: ");
+    
+stringBuffer!.appendint(this.getBaseList()!.size());
+    
+stringBuffer!.append(" Factory: ");
+    
+stringBuffer!.appendint(this.getFactoryList()!.size());
+    
+stringBuffer!.append(" Garrison: ");
+    
+stringBuffer!.appendint(this.getGarrisonList()!.size());
+    
+stringBuffer!.append(" Labs: ");
+    
+stringBuffer!.appendint(this.getLabList()!.size());
+    
+stringBuffer!.append(" Houses: ");
+    
+stringBuffer!.appendint(this.getHouseList()!.size());
+    
+stringBuffer!.append(" Waypoints: ");
+    
+stringBuffer!.appendint(this.getWaypointsList()!.size());
+    
+stringBuffer!.append(" Units: ");
+    
+stringBuffer!.appendint(this.getUnitsList()!.size());
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

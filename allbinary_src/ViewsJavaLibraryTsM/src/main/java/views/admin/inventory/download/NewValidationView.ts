@@ -56,8 +56,10 @@ public constructor (transformInfoInterface: TransformInfoInterface)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.itemInterface= BasicItem() as ItemInterface
-this.downloadableItem= DownloadableItem(this.itemInterface!.getId())
+this.itemInterface= BasicItem() as ItemInterface;
+    
+this.downloadableItem= DownloadableItem(this.itemInterface!.getId());
+    
 }
 
 
@@ -70,7 +72,9 @@ this.downloadableItem= DownloadableItem(this.itemInterface!.getId())
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return Boolean.TRUE;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
 

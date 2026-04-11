@@ -63,8 +63,10 @@ public constructor (image: Image, dx: number, dy: number, unused: any = {})
 
                             //For kotlin this is before the body of the constructor.
                     
-this.animationFactoryInitializationVisitor!.dx +=  -this.animationFactoryInitializationVisitor!.width /5
-this.animationFactoryInitializationVisitor!.dy +=  -this.animationFactoryInitializationVisitor!.height /5
+this.animationFactoryInitializationVisitor!.dx +=  -this.animationFactoryInitializationVisitor!.width /5;
+    
+this.animationFactoryInitializationVisitor!.dy +=  -this.animationFactoryInitializationVisitor!.height /5;
+    
 }
 
 public constructor (image: Image, dx: number, dy: number, unused: number)                        
@@ -80,8 +82,10 @@ public constructor (image: Image, dx: number, dy: number, unused: number)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.animationFactoryInitializationVisitor!.dx= dx
-this.animationFactoryInitializationVisitor!.dy= dy
+this.animationFactoryInitializationVisitor!.dx= dx;
+    
+this.animationFactoryInitializationVisitor!.dy= dy;
+    
 }
 
 public constructor (image: Image, unused: any = {}, unused2: any = {})                        
@@ -125,8 +129,10 @@ public constructor (image: Image, dx: number, dy: number, animationBehaviorFacto
 
                             //For kotlin this is before the body of the constructor.
                     
-this.animationFactoryInitializationVisitor!.dx= dx
-this.animationFactoryInitializationVisitor!.dy= dy
+this.animationFactoryInitializationVisitor!.dx= dx;
+    
+this.animationFactoryInitializationVisitor!.dy= dy;
+    
 }
 
 public constructor (image: Image)                        
@@ -190,7 +196,8 @@ public constructor (image: Image, unused: any = {}, animationBehaviorFactory: An
     var sprite: Sprite = animationFactorySpriteScaleUtil!.createImage(this.getImage(), this.animationFactoryInitializationVisitor!.width, this.animationFactoryInitializationVisitor!.height, this.scaleProperties!.scaleWidth, this.scaleProperties!.scaleHeight)!;
         
         
-
+;
+    
 
                         if(this.animationFactoryInitializationVisitor!.dx != 0 || this.animationFactoryInitializationVisitor!.dy != 0)
                         
@@ -226,6 +233,8 @@ public constructor (image: Image, unused: any = {}, animationBehaviorFactory: An
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getInstance(0);
+
+                        ;
     
 }
 

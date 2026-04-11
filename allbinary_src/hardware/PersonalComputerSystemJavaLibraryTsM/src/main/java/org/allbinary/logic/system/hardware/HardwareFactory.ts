@@ -46,7 +46,8 @@ var os = os
     var operatingSystems: OperatingSystems = OperatingSystems.getInstance()!;
         
         
-
+;
+    
 
                         if(os.getName()!.compareTo(operatingSystems!.LINUX) == 0)
                         
@@ -77,7 +78,9 @@ var os = os
 
 
                             throw Error("No Hardware Imp for: " +os.getName())
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
 

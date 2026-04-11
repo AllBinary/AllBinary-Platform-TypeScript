@@ -60,15 +60,20 @@ var order = order
     var basket: BasketInterface = order.getBasket()!;
         
         
-
+;
+    
 
     var money: Money = new Money();
         
         
-
-money.add(basket.getTotalWeight())
-money.multiply(1)
-money.add("3.50")
+;
+    
+money.add(basket.getTotalWeight());
+    
+money.multiply(1);
+    
+money.add("3.50");
+    
 
 
 

@@ -39,7 +39,8 @@ export class AdvertisementAreasEntityFactory
     var logUtil: LogUtil = LogUtil.getInstance()!;
         
         
-
+;
+    
 
         try {
             
@@ -48,7 +49,9 @@ export class AdvertisementAreasEntityFactory
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return AdvertisementAreasEntity() as AdvertisementAreasEntityInterface;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.ENTITYFACTORYERROR))
@@ -58,8 +61,10 @@ export class AdvertisementAreasEntityFactory
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, "AdvertisementAreasEntityFactory", commonStrings!.GET_INSTANCE, e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, "AdvertisementAreasEntityFactory", commonStrings!.GET_INSTANCE, e);
+    
 
                                     }
                                 

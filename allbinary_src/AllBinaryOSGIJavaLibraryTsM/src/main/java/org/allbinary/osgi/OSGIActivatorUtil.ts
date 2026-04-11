@@ -18,7 +18,10 @@
 
 
 
-import { Hashtable } from "../../../java/util/Hashtable.js";
+            import Hashtable from "@ohos.util.HashMap";
+        
+
+//import { Hashtable } from "../../../java/util/Hashtable.js";
 
     
 import { BundleContext } from "../../../org/osgi/framework/BundleContext.js";
@@ -45,13 +48,14 @@ export class OSGIActivatorUtil
     //var bundleContext = bundleContext
     //var anyType = anyType
     //var serviceName = serviceName
-OSGIActivatorUtil.registerAsService(bundleContext, anyType, serviceName, Hashtable<Any, Any>())
+OSGIActivatorUtil.registerAsService(bundleContext, anyType, serviceName, Hashtable<any, any>());
+    
 }
 
 
                 //@Throws(Error::class)
             
-    public static registerAsService(bundleContext: BundleContext, anyType: any = {}, serviceName: string, properties: Hashtable<Any, Any>){
+    public static registerAsService(bundleContext: BundleContext, anyType: any = {}, serviceName: string, properties: Hashtable<any, any>){
     //var bundleContext = bundleContext
     //var anyType = anyType
     //var serviceName = serviceName
@@ -60,13 +64,16 @@ OSGIActivatorUtil.registerAsService(bundleContext, anyType, serviceName, Hashtab
     var serviceRegistration: ServiceRegistration = bundleContext!.registerService(serviceName, anyType, properties)!;
         
         
-
+;
+    
 
     var serviceReference: ServiceReference = serviceRegistration!.getReference()!;
         
         
-
-serviceReference= bundleContext!.getServiceReference(serviceName)
+;
+    
+serviceReference= bundleContext!.getServiceReference(serviceName);
+    
 
                         if(serviceReference == NullServiceReferenceFactory.getInstance()!.NULL_SERVICE_REFERENCE)
                         

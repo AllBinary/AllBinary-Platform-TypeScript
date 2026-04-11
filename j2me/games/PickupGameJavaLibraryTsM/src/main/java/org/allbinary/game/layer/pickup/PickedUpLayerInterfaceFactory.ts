@@ -39,9 +39,12 @@ protected constructor (pickeUpLayerType: PickedUpLayerType, iconLayer: IconLayer
             var pickeUpLayerType = pickeUpLayerType
 var iconLayer = iconLayer
 var animationInterface = animationInterface
-this.pickedUpLayerType= pickeUpLayerType
-this.animationInterface= animationInterface
-this.iconLayer= iconLayer
+this.pickedUpLayerType= pickeUpLayerType;
+    
+this.animationInterface= animationInterface;
+    
+this.iconLayer= iconLayer;
+    
 }
 
 

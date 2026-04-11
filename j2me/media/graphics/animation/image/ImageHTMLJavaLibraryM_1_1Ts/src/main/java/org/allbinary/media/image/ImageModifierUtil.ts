@@ -82,7 +82,7 @@ export class ImageModifierUtil
         
         
 
-    private alphaArray: BooleanArray
+    private alphaArray: boolean[]
 
     public setColor(unusedOriginalImage: Image, image: Image, imageIndex: number, basicColor: BasicColor){
     //var unusedOriginalImage = unusedOriginalImage
@@ -109,13 +109,16 @@ export class ImageModifierUtil
     var alphaF: number = alpha;
         
         
-
+;
+    
 
     var alphaFloat: number = alphaF /255;
         
         
-
-this.setAlpha(originalImage, image, imageIndex, alphaFloat)
+;
+    
+this.setAlpha(originalImage, image, imageIndex, alphaFloat);
+    
 }
 
 
@@ -128,8 +131,10 @@ this.setAlpha(originalImage, image, imageIndex, alphaFloat)
                         if(this.alphaArray[imageIndex])
                         
                                     {
-                                    this.alphaArray[imageIndex]= false
-this.setAlpha2(originalImage, image, imageIndex, alpha)
+                                    this.alphaArray[imageIndex]= false;
+    
+this.setAlpha2(originalImage, image, imageIndex, alpha);
+    
 
                                     }
                                 
@@ -145,26 +150,37 @@ this.setAlpha2(originalImage, image, imageIndex, alpha)
     var htmlImage: PlaynImage = image as PlaynImage;
         
         
+;
+    
 
+    var canvasImage: CanvasImage = htmlImage!.getImage();
 
-    var canvasImage: CanvasImage = htmlImage!.getImage() as CanvasImage;
+                         as CanvasImage;
         
         
-
+;
+    
 
     var originalPlaynImage: playn.core.Image = 
-                                    (originalImage as PlaynImage).getImage() as playn.core.Image;
-        
-        
+                                    (originalImage as PlaynImage).getImage();
 
+                         as playn.core.Image;
+        
+        
+;
+    
 
     var canvas: Canvas = canvasImage!.canvas()!;
         
         
-
-canvas.clear()
-canvas.setAlpha(alpha)
-canvas.drawImage(originalPlaynImage, 0, 0)
+;
+    
+canvas.clear();
+    
+canvas.setAlpha(alpha);
+    
+canvas.drawImage(originalPlaynImage, 0, 0);
+    
 }
 
 
@@ -175,28 +191,36 @@ canvas.drawImage(originalPlaynImage, 0, 0)
     var alphaF: number = alpha;
         
         
-
+;
+    
 
     var alphaFloat: number = alphaF /255;
         
         
-
+;
+    
 
     var htmlImage: PlaynImage = image as PlaynImage;
         
         
+;
+    
 
+    var canvasImage: CanvasImage = htmlImage!.getImage();
 
-    var canvasImage: CanvasImage = htmlImage!.getImage() as CanvasImage;
+                         as CanvasImage;
         
         
-
+;
+    
 
     var canvas: Canvas = canvasImage!.canvas()!;
         
         
-
-canvas.setAlpha(alphaFloat)
+;
+    
+canvas.setAlpha(alphaFloat);
+    
 }
 
 
@@ -207,13 +231,16 @@ canvas.setAlpha(alphaFloat)
                 ;
         
         
-
-this.alphaArray= BooleanArray(size)
+;
+    
+this.alphaArray= new Array(size);
+    
 
     var imageArray: Image[] = new Array(size);
         
         
-
+;
+    
 
 
 
@@ -224,8 +251,10 @@ this.alphaArray= BooleanArray(size)
         
 index < size; index++)
         {
-imageArray[index]= originalImageArray[index]!
-this.handleImage(imageArray, index, originalImageArray[index]!)
+imageArray[index]= originalImageArray[index]!;
+    
+this.handleImage(imageArray, index, originalImageArray[index]!);
+    
 }
 
 
@@ -243,10 +272,13 @@ this.handleImage(imageArray, index, originalImageArray[index]!)
     //var image = image
 
     var image3: playn.core.Image = 
-                                    (image as PlaynImage).getImage() as playn.core.Image;
-        
-        
+                                    (image as PlaynImage).getImage();
 
+                         as playn.core.Image;
+        
+        
+;
+    
 
                         if(image3 != 
                                     null
@@ -257,7 +289,8 @@ this.handleImage(imageArray, index, originalImageArray[index]!)
                         if(image3.isReady() || image3.width() +image3.height() <= 0 || image.getName() == resourceCallbackStrings!.FROM_DATA)
                         
                                     {
-                                    copy(imageArray, index, image, image3)
+                                    copy(imageArray, index, image, image3);
+    
 
                                     }
                                 
@@ -268,22 +301,27 @@ this.handleImage(imageArray, index, originalImageArray[index]!)
                                 
     public done(resource: any = {}){
 var resource = resource
-logUtil!.put(resourceCallbackStrings!.DONE +image.getName(), this, resourceCallbackStrings!.HANDLE_IMAGE)
-copy(imageArray, index, image, image3)
+logUtil!.put(resourceCallbackStrings!.DONE +image.getName(), this, resourceCallbackStrings!.HANDLE_IMAGE);
+    
+copy(imageArray, index, image, image3);
+    
 }
 
     public error(e: Error){
 var e = e
 logUtil!.put(StringMaker().
-                            append(commonStrings!.EXCEPTION_LABEL)!.append(resourceCallbackStrings!.ERROR)!.append(image.getName())!.toString(), this, resourceCallbackStrings!.HANDLE_IMAGE)
+                            append(commonStrings!.EXCEPTION_LABEL)!.append(resourceCallbackStrings!.ERROR)!.append(image.getName())!.toString(), this, resourceCallbackStrings!.HANDLE_IMAGE);
+    
 }
 
                                 }
                             ;
         
         
-
-image3.addCallback(callback)
+;
+    
+image3.addCallback(callback);
+    
 
                         }
                             
@@ -291,7 +329,8 @@ image3.addCallback(callback)
                                     }
                                 
                         else {
-                            logUtil!.put(resourceCallbackStrings!.NULL +image.isMutable(), this, resourceCallbackStrings!.HANDLE_IMAGE)
+                            logUtil!.put(resourceCallbackStrings!.NULL +image.isMutable(), this, resourceCallbackStrings!.HANDLE_IMAGE);
+    
 
                         }
                             
@@ -309,17 +348,24 @@ image3.addCallback(callback)
     var image2: Image = Image.createImage(image3.width(), image3.height())!;
         
         
-
+;
+    
 
     var graphics: Graphics = image2.getGraphics()!;
         
         
+;
+    
+graphics.drawImage(image, 0, 0, Anchor.TOP_LEFT);
+    
+imageArray[index]= image2;
+    
 
-graphics.drawImage(image, 0, 0, Anchor.TOP_LEFT)
-imageArray[index]= image2
-} catch(e: Exception)
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION_LABEL +resourceCallbackStrings!.DONE, this, resourceCallbackStrings!.HANDLE_IMAGE)
+logUtil!.put(commonStrings!.EXCEPTION_LABEL +resourceCallbackStrings!.DONE, this, resourceCallbackStrings!.HANDLE_IMAGE);
+    
 }
 
 }
@@ -331,7 +377,8 @@ logUtil!.put(commonStrings!.EXCEPTION_LABEL +resourceCallbackStrings!.DONE, this
                 ;
         
         
-
+;
+    
 
 
 
@@ -342,7 +389,8 @@ logUtil!.put(commonStrings!.EXCEPTION_LABEL +resourceCallbackStrings!.DONE, this
         
 index < size; index++)
         {
-this.alphaArray[index]= true
+this.alphaArray[index]= true;
+    
 }
 
 }

@@ -18,10 +18,13 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { HashMap } from "../../../../../../../../java/util/HashMap.js";
 
     
-import { Vector } from "../../../../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../../../../java/util/Vector.js";
 
     
 import { TableMappingInterface } from "../../../../../../../../org/allbinary/data/tables/TableMappingInterface.js";
@@ -169,7 +172,7 @@ interface PaymentGatewayInterface extends TableMappingInterface {
 
                 //@Throws(Error::class)
             
-    public toHashMap(isEncrypted: boolean): HashMap<Any, Any>
+    public toHashMap(isEncrypted: boolean): HashMap<any, any>
 
     public toVector(isEncrypted: boolean): Vector
 

@@ -60,27 +60,32 @@ public constructor (){
     var systemProperties: SystemProperties = SystemProperties.getInstance()!;
         
         
-
+;
+    
 
     var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
         
         
-
+;
+    
 
     var EMPTY_STRING: string = StringUtil.getInstance()!.EMPTY_STRING;
         
         
-
+;
+    
 
                         if(stringValidationUtil!.isEmpty(systemProperties!.getName()))
                         
                                     {
-                                    this.osName= EMPTY_STRING
+                                    this.osName= EMPTY_STRING;
+    
 
                                     }
                                 
                         else {
-                            this.osName= systemProperties!.getName()
+                            this.osName= systemProperties!.getName();
+    
 
                         }
                             
@@ -88,12 +93,14 @@ public constructor (){
                         if(stringValidationUtil!.isEmpty(systemProperties!.getArch()))
                         
                                     {
-                                    this.osArch= EMPTY_STRING
+                                    this.osArch= EMPTY_STRING;
+    
 
                                     }
                                 
                         else {
-                            this.osArch= systemProperties!.getArch()
+                            this.osArch= systemProperties!.getArch();
+    
 
                         }
                             
@@ -101,12 +108,14 @@ public constructor (){
                         if(stringValidationUtil!.isEmpty(systemProperties!.getVersion()))
                         
                                     {
-                                    this.osVersion= EMPTY_STRING
+                                    this.osVersion= EMPTY_STRING;
+    
 
                                     }
                                 
                         else {
-                            this.osVersion= systemProperties!.getVersion()
+                            this.osVersion= systemProperties!.getVersion();
+    
 
                         }
                             
@@ -208,26 +217,39 @@ public constructor (){
     var NEW_LINE: string = CommonSeps.getInstance()!.NEW_LINE;
         
         
-
+;
+    
 
     var osBuffer: StringMaker = new StringMaker();
         
         
-
-osBuffer!.append("Operating System Info: \n")
-osBuffer!.append(this.getName())
-osBuffer!.append(NEW_LINE)
-osBuffer!.append(this.getArch())
-osBuffer!.append(NEW_LINE)
-osBuffer!.append(this.getVersion())
-osBuffer!.append(NEW_LINE)
-osBuffer!.append(StringUtil.getInstance()!.toString(this.getCharacterSet()))
-osBuffer!.append(NEW_LINE)
+;
+    
+osBuffer!.append("Operating System Info: \n");
+    
+osBuffer!.append(this.getName());
+    
+osBuffer!.append(NEW_LINE);
+    
+osBuffer!.append(this.getArch());
+    
+osBuffer!.append(NEW_LINE);
+    
+osBuffer!.append(this.getVersion());
+    
+osBuffer!.append(NEW_LINE);
+    
+osBuffer!.append(StringUtil.getInstance()!.toString(this.getCharacterSet()));
+    
+osBuffer!.append(NEW_LINE);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return osBuffer!.toString();
+
+                        ;
     
 }
 

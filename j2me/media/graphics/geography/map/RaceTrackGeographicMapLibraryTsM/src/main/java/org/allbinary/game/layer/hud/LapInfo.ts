@@ -38,13 +38,16 @@ public constructor (totalLaps: number){
 
             super();
             var totalLaps = totalLaps
-this.totalLaps= totalLaps
-this.numberOfLaps= 1
+this.totalLaps= totalLaps;
+    
+this.numberOfLaps= 1;
+    
 }
 
 
     public add(){
-this.numberOfLaps++
+this.numberOfLaps++;
+    
 }
 
 
@@ -96,18 +99,27 @@ this.numberOfLaps++
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("isDone: ")
-stringBuffer!.appendboolean(this.isDone())
-stringBuffer!.append(" CurrentLap: ")
-stringBuffer!.appendint(this.getCurrentLap())
-stringBuffer!.append(" Total Laps: ")
-stringBuffer!.appendint(this.getTotalLaps())
+;
+    
+stringBuffer!.append("isDone: ");
+    
+stringBuffer!.appendboolean(this.isDone());
+    
+stringBuffer!.append(" CurrentLap: ");
+    
+stringBuffer!.appendint(this.getCurrentLap());
+    
+stringBuffer!.append(" Total Laps: ");
+    
+stringBuffer!.appendint(this.getTotalLaps());
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

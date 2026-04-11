@@ -60,22 +60,28 @@ public constructor (string: string){
 
             super();
             var string = string
-this.string= string
+this.string= string;
+    
 }
 
 
     public run(){
 
         try {
-            Toast.makeText(context, string, time)!.show()
-} catch(e: Exception)
+            Toast.makeText(context, string, time)!.show();
+    
+
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
+    
 }
 
 }
@@ -84,7 +90,8 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
 }
                 
             
-view.post(MakeToast(message))
+view.post(MakeToast(message));
+    
 }
 
 

@@ -27,7 +27,8 @@ public constructor (scrollMapPlayerGameInput: ScrollMapPlayerGameInput){
 
             super();
             var scrollMapPlayerGameInput = scrollMapPlayerGameInput
-this.scrollMapPlayerGameInput= scrollMapPlayerGameInput
+this.scrollMapPlayerGameInput= scrollMapPlayerGameInput;
+    
 }
 
 

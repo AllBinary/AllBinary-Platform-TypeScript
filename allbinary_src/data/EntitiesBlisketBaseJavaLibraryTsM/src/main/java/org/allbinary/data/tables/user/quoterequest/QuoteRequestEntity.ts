@@ -18,10 +18,13 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { HashMap } from "../../../../../../java/util/HashMap.js";
 
     
-import { Vector } from "../../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../../java/util/Vector.js";
 
     
 import { EntryData } from "../../../../../../org/allbinary/business/entry/EntryData.js";
@@ -69,7 +72,8 @@ public constructor ()
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setTableName(tableName)
+this.setTableName(tableName);
+    
 }
 
 
@@ -77,22 +81,27 @@ this.setTableName(tableName)
 var values = values
 
         try {
-            super.insert(values)
+            super.insert(values);
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.SUCCESS, this, INSERT)
+                                    logUtil!.put(this.commonStrings!.SUCCESS, this, INSERT);
+    
 
                                     }
                                 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.FAILURE, this, INSERT, e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, INSERT, e);
+    
 
                                     }
                                 
@@ -107,17 +116,21 @@ var values = values
 var userName = userName
 var id = id
 
-    var row: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var row: HashMap<any, any> = new HashMap<any, any>();
         
         
+;
+    
+row.put(UserData.USERNAME, userName);
+    
+row.put(QuoteRequestData.getInstance()!.ID, id.toString());
+    
 
-row.put(UserData.USERNAME, userName)
-row.put(QuoteRequestData.getInstance()!.ID, id.toString())
-
-    var quoteRequestHashMap: HashMap<Any, Any> = super.getRow(row)!;
+    var quoteRequestHashMap: HashMap<any, any> = super.getRow(row)!;
         
         
-
+;
+    
 
                         if(quoteRequestHashMap != 
                                     null
@@ -153,6 +166,8 @@ var userName = userName
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.getColumnWhere(QuoteRequestData.getInstance()!.ID, UserData.USERNAME, userName);
+
+                        ;
     
 }
 
@@ -162,22 +177,27 @@ var key = key
 var value = value
 
         try {
-            super.deleteWhere(key, value)
+            super.deleteWhere(key, value);
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.SUCCESS, this, "deleteWhere")
+                                    logUtil!.put(this.commonStrings!.SUCCESS, this, "deleteWhere");
+    
 
                                     }
                                 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.FAILURE, this, "deleteWhere", e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, "deleteWhere", e);
+    
 
                                     }
                                 
@@ -191,38 +211,63 @@ var value = value
     var quoteRequestData: QuoteRequestData = QuoteRequestData.getInstance()!;
         
         
-
+;
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(tableName)!.append(this.sqlStrings!.START)
-stringBuffer!.append(quoteRequestData!.ID)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)
-stringBuffer!.append(UserData.USERNAME)
-stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-stringBuffer!.append(quoteRequestData!.PROJECT_INFO)
-stringBuffer!.append(this.sqlTypeStrings!.BLOB_NOT_NULL)
-stringBuffer!.append(quoteRequestData!.CUSTOMER_COMMENTS)
-stringBuffer!.append(this.sqlTypeStrings!.BLOB_NOT_NULL)
-stringBuffer!.append(quoteRequestData!.BUDGET)
-stringBuffer!.append(this.sqlTypeStrings!.BLOB_NOT_NULL)
-stringBuffer!.append(quoteRequestData!.TIMEFRAME)
-stringBuffer!.append(this.sqlTypeStrings!.BLOB_NOT_NULL)
-stringBuffer!.append(quoteRequestData!.COMMENTS)
-stringBuffer!.append(this.sqlTypeStrings!.BLOB_NOT_NULL)
-stringBuffer!.append(EntryData.getInstance()!.TIMECREATED)
-stringBuffer!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)
-stringBuffer!.append(EntryData.getInstance()!.LASTMODIFIED)
-stringBuffer!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)
-stringBuffer!.append(this.sqlStrings!.PRIMARY_KEY)
-stringBuffer!.append(quoteRequestData!.ID)
-stringBuffer!.append(this.sqlStrings!.END)
+;
+    
+stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(tableName)!.append(this.sqlStrings!.START);
+    
+stringBuffer!.append(quoteRequestData!.ID)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL);
+    
+stringBuffer!.append(UserData.USERNAME);
+    
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
+    
+stringBuffer!.append(quoteRequestData!.PROJECT_INFO);
+    
+stringBuffer!.append(this.sqlTypeStrings!.BLOB_NOT_NULL);
+    
+stringBuffer!.append(quoteRequestData!.CUSTOMER_COMMENTS);
+    
+stringBuffer!.append(this.sqlTypeStrings!.BLOB_NOT_NULL);
+    
+stringBuffer!.append(quoteRequestData!.BUDGET);
+    
+stringBuffer!.append(this.sqlTypeStrings!.BLOB_NOT_NULL);
+    
+stringBuffer!.append(quoteRequestData!.TIMEFRAME);
+    
+stringBuffer!.append(this.sqlTypeStrings!.BLOB_NOT_NULL);
+    
+stringBuffer!.append(quoteRequestData!.COMMENTS);
+    
+stringBuffer!.append(this.sqlTypeStrings!.BLOB_NOT_NULL);
+    
+stringBuffer!.append(EntryData.getInstance()!.TIMECREATED);
+    
+stringBuffer!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL);
+    
+stringBuffer!.append(EntryData.getInstance()!.LASTMODIFIED);
+    
+stringBuffer!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL);
+    
+stringBuffer!.append(this.sqlStrings!.PRIMARY_KEY);
+    
+stringBuffer!.append(quoteRequestData!.ID);
+    
+stringBuffer!.append(this.sqlStrings!.END);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 
@@ -233,6 +278,8 @@ stringBuffer!.append(this.sqlStrings!.END)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.createTable(this.createTableStatement());
+
+                        ;
     
 }
 
@@ -242,7 +289,8 @@ stringBuffer!.append(this.sqlStrings!.END)
     var result: string = new dropTable.toCharArray();
         
         
-
+;
+    
 
 
 
@@ -252,10 +300,11 @@ stringBuffer!.append(this.sqlStrings!.END)
 }
 
 
-    public update(userName: string, updatedValues: HashMap<Any, Any>){
+    public update(userName: string, updatedValues: HashMap<any, any>){
 var userName = userName
 var updatedValues = updatedValues
-super.updateWhere(UserData.USERNAME, userName, updatedValues)
+super.updateWhere(UserData.USERNAME, userName, updatedValues);
+    
 }
 
 

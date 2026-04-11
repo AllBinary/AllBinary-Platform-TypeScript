@@ -35,9 +35,12 @@ public constructor (layerType: LayerPlacementType, width: number, height: number
             var layerType = layerType
 var width = width
 var height = height
-this.layerType= layerType
-this.width= width
-this.height= height
+this.layerType= layerType;
+    
+this.width= width;
+    
+this.height= height;
+    
 }
 
 
@@ -73,7 +76,8 @@ this.height= height
 
     setLayerType(layerType: LayerPlacementType){
 var layerType = layerType
-this.layerType= layerType
+this.layerType= layerType;
+    
 }
 
 

@@ -43,13 +43,16 @@ var position = position
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(position.toString())
+;
+    
+stringBuffer!.append(position.toString());
+    
 
                         if(position == 1)
                         
                                     {
-                                    stringBuffer!.append("st")
+                                    stringBuffer!.append("st");
+    
 
                                     }
                                 
@@ -57,7 +60,8 @@ stringBuffer!.append(position.toString())
                         if(position == 2)
                         
                                     {
-                                    stringBuffer!.append("nd")
+                                    stringBuffer!.append("nd");
+    
 
                                     }
                                 
@@ -65,12 +69,14 @@ stringBuffer!.append(position.toString())
                         if(position == 3)
                         
                                     {
-                                    stringBuffer!.append("rd")
+                                    stringBuffer!.append("rd");
+    
 
                                     }
                                 
                         else {
-                            stringBuffer!.append("th")
+                            stringBuffer!.append("th");
+    
 
                         }
                             
@@ -79,6 +85,8 @@ stringBuffer!.append(position.toString())
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 
@@ -116,14 +124,17 @@ var basicColor = basicColor
 
     public set(position: number){
 var position = position
-this.position= position
-this.positionString= PositionWidget.toString(this.get())
+this.position= position;
+    
+this.positionString= PositionWidget.toString(this.get());
+    
 }
 
 
     public paint(graphics: Graphics){
 var graphics = graphics
-super.paint(graphics, positionString)
+super.paint(graphics, positionString);
+    
 }
 
 

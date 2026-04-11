@@ -42,15 +42,7 @@ export class SWTJOGLProcessor
 }
 
 
-    public glHolder: any = {} = new object: any = {}()
-                                {
-                                
-    public run(renderer: any = {}){
-var renderer = renderer
-}
-
-                                }
-                            ;
+    public glHolder: any = {} = {};
         
         
 

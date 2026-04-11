@@ -29,7 +29,8 @@ export class CollisionType
 
             super();
             var name = name
-this.name= name
+this.name= name;
+    
 }
 
 

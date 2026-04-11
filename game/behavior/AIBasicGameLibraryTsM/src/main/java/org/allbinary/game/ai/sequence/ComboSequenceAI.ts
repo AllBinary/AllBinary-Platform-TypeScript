@@ -56,13 +56,15 @@ var allBinaryLayerManager = allBinaryLayerManager
     var artificialIntelligenceInterfaceArray: ArtificialIntelligenceInterface[] = this.getArtificialIntelligenceInterface()!;
         
         
-
+;
+    
 
     var size: number = artificialIntelligenceInterfaceArray!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -73,8 +75,10 @@ var allBinaryLayerManager = allBinaryLayerManager
         
 index < size; index++)
         {
-this.setIndex(index)
-super.processAI(allBinaryLayerManager)
+this.setIndex(index);
+    
+super.processAI(allBinaryLayerManager);
+    
 }
 
 }

@@ -46,7 +46,7 @@ interface BasketInterface {
 
     public getIds(): Set
 
-    public getItems(): HashMap<Any, Any>
+    public getItems(): HashMap<any, any>
 
     public getNumberOf(product: string): Integer
 

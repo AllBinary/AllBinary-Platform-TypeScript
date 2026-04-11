@@ -40,6 +40,8 @@ export class WebAppUrlGlobals extends UrlGlobalsInterface {
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return InitInfo.getInstance()!.isTesting();
+
+                        ;
     
 }
 
@@ -57,8 +59,10 @@ export class WebAppUrlGlobals extends UrlGlobalsInterface {
 
     public setWebappPath(path: string){
 var path = path
-path= path
-isWebappPathSet= true
+path= path;
+    
+isWebappPathSet= true;
+    
 }
 
 
@@ -68,6 +72,8 @@ isWebappPathSet= true
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return InitInfo.getInstance()!.getTestHtmlPath();
+
+                        ;
     
 }
 
@@ -79,9 +85,12 @@ isWebappPathSet= true
     var mainPath: string = InitInfo.getInstance()!.getMainPath()!;
         
         
+;
+    
 
+                        if(!StringValidationUtil.getInstance()!.isEmpty(mainPath);
 
-                        if(!StringValidationUtil.getInstance()!.isEmpty(mainPath))
+                        )
                         
                                     {
                                     
@@ -102,6 +111,8 @@ isWebappPathSet= true
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return getWebappPath();
+
+                        ;
     
 
                                     }

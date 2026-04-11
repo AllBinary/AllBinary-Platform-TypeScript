@@ -22,9 +22,9 @@
 interface CryptInterface {
         
 
-    public encrypt(array: ByteArray): ByteArray
+    public encrypt(array: number[]): number[]
 
-    public decrypt(array: ByteArray): ByteArray
+    public decrypt(array: number[]): number[]
 
 }
                 

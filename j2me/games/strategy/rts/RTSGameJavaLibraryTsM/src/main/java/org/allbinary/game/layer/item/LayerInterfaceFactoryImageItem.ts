@@ -59,8 +59,10 @@ var layerInterfaceFactoryInterface = layerInterfaceFactoryInterface
 
                             //For kotlin this is before the body of the constructor.
                     
-this.animationArray= animationArray
-this.layerInterfaceFactoryInterface= layerInterfaceFactoryInterface
+this.animationArray= animationArray;
+    
+this.layerInterfaceFactoryInterface= layerInterfaceFactoryInterface;
+    
 }
 
 
@@ -78,7 +80,8 @@ this.layerInterfaceFactoryInterface= layerInterfaceFactoryInterface
 var graphics = graphics
 var x = x
 var y = y
-super.paint(graphics, x, y)
+super.paint(graphics, x, y);
+    
 
 
 
@@ -90,7 +93,8 @@ super.paint(graphics, x, y)
         
 --index >= 0; )
         {
-this.animationArray[index]!.paint(graphics, x, y)
+this.animationArray[index]!.paint(graphics, x, y);
+    
 }
 
 }

@@ -24,7 +24,7 @@ export class MineVectorData
          {
         
 
-    public points: IntArray[][] = 
+    public points: number[][][] = 
                                                         [
                                                             arrayOf<IntArray?>(intArrayOf(10,5)
 ,intArrayOf(2,6)

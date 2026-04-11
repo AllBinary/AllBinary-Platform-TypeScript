@@ -18,7 +18,10 @@
 
 
 
-import { Vector } from "../../../java/util/Vector.js";
+            import Vector from "@ohos.util.Vector";
+        
+
+//import { Vector } from "../../../java/util/Vector.js";
 
     
 import { WorkFlowEntityFactory } from "../../../org/allbinary/data/tables/workflow/WorkFlowEntityFactory.js";
@@ -71,12 +74,14 @@ public constructor (transformInfoInterface: TransformInfoInterface)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.workFlowsVector= WorkFlowEntityFactory.getInstance()!.create2()!.get(this.getWeblisketSession()!.getStoreName())
+this.workFlowsVector= WorkFlowEntityFactory.getInstance()!.create2()!.get(this.getWeblisketSession()!.getStoreName());
+    
 }
 
 
     public addDomNodeInterfaces(){
-this.addDomNodeInterface(this as DomNodeInterface)
+this.addDomNodeInterface(this as DomNodeInterface);
+    
 }
 
 
@@ -85,20 +90,26 @@ this.addDomNodeInterface(this as DomNodeInterface)
     public view(): string{
 
         try {
-            this.addDomNodeInterfaces()
+            this.addDomNodeInterfaces();
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.view();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e);
+    
 
                                     }
                                 
@@ -119,12 +130,14 @@ var document = document
     var node: Node = document.createElement(WorkFlowData.getInstance()!.WORKFLOWS)!;
         
         
-
+;
+    
 
     var size: number = workFlowsVector!.length!;
         
         
-
+;
+    
 
 
 
@@ -136,10 +149,13 @@ var document = document
 index < size; index++)
         {
 
-    var workFlowInterface: WorkFlowInterface = workFlowsVector!.get(index) as WorkFlowInterface;
-        
-        
+    var workFlowInterface: WorkFlowInterface = workFlowsVector!.get(index);
 
+                         as WorkFlowInterface;
+        
+        
+;
+    
 }
 
 
@@ -148,13 +164,16 @@ index < size; index++)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return node;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "toXmlNode()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "toXmlNode()", e);
+    
 
                                     }
                                 

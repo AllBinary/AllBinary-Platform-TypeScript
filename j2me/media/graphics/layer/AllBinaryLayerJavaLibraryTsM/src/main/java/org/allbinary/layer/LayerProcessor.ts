@@ -37,7 +37,8 @@ public constructor (layerManager: LayerManager){
 
             super();
                 //var layerManager = layerManager
-this.layerManager= layerManager
+this.layerManager= layerManager;
+    
 }
 
 
@@ -83,12 +84,14 @@ var allBinaryLayerManager = allBinaryLayerManager
     var layerManager: LayerManager = this.getLayerManager()!;
         
         
-
+;
+    
 
     var size: number = layerManager!.getSize()!;
         
         
-
+;
+    
 
 
 
@@ -99,7 +102,10 @@ var allBinaryLayerManager = allBinaryLayerManager
         
 index < size; index++)
         {
-this.process(allBinaryLayerManager, layerManager!.getLayerAt(index) as AllBinaryLayer, index)
+this.process(allBinaryLayerManager, layerManager!.getLayerAt(index);
+
+                         as AllBinaryLayer, index);
+    
 }
 
 }

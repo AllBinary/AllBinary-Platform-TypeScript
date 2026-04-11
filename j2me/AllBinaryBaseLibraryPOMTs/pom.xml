@@ -41,6 +41,8 @@
         <module>../ExceptionHTMLJavaLibraryTsM</module>
         <module>../J2MEExceptionLibraryTsM</module>
         <module>../../allbinary_src/J2SEExceptionLibraryTsM</module>
+        <module>../J2METoArkTSLibraryTs</module>
+        <module>../ArkTSExceptionLibraryTsM</module>
         <module>../J2MEUtilJavaLibraryTsM</module>
         <module>../J2MEColorJavaLibraryTsM</module>
         <module>../EventJ2MELibraryTsM</module>

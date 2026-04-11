@@ -67,8 +67,10 @@ public constructor (path: string, basicURIResolver: BasicUriResolver){
             super();
             var path = path
 var basicURIResolver = basicURIResolver
-this.path= path
-this.basicURIResolver= basicURIResolver
+this.path= path;
+    
+this.basicURIResolver= basicURIResolver;
+    
 }
 
 
@@ -83,12 +85,14 @@ var base = base
     var fileAbPath: AbPath = AbFilePath(path +AbPathData.getInstance()!.SEPARATOR +href) as AbPath;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.XMLLOGGING))
                         
                                     {
-                                    logUtil!.put("attempt to use xsl:import: href=" +href +"\nBase= " +base +"\nNew path= " +fileAbPath!.toString() +"\nRequired Extension: " +this.basicURIResolver!.getExtension(), this, "resolve")
+                                    logUtil!.put("attempt to use xsl:import: href=" +href +"\nBase= " +base +"\nNew path= " +fileAbPath!.toString() +"\nRequired Extension: " +this.basicURIResolver!.getExtension(), this, "resolve");
+    
 
                                     }
                                 
@@ -99,14 +103,18 @@ var base = base
                         return StreamSource(CryptFileReader(TransformInfoTemplateData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoTemplateData.getInstance()!.ENCRYPTED_EXTENSION).
                             getInputStream(fileAbPath));
     
-} catch(e: TransformerException)
+
+                //: 
+} catch(e) 
             {
 
 
 
                             throw e
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
 
 

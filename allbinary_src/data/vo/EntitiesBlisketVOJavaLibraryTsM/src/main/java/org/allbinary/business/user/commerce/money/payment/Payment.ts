@@ -88,68 +88,137 @@ export class Payment
     private isDefault: boolean = false;
         
         
-public constructor (payment: HashMap<Any, Any>){
+public constructor (payment: HashMap<any, any>){
 
             super();
             var payment = payment
-this.name= payment.get(PaymentData.NAME) as String
-this.type= payment.get(PaymentData.TYPE) as String
-this.expiration= payment.get(PaymentData.EXPIRATION) as String
-this.encryption= payment.get(EntryData.getInstance()!.ENCRYPTION) as String
+this.name= payment.get(PaymentData.NAME);
+
+                         as String;
+    
+this.type= payment.get(PaymentData.TYPE);
+
+                         as String;
+    
+this.expiration= payment.get(PaymentData.EXPIRATION);
+
+                         as String;
+    
+this.encryption= payment.get(EntryData.getInstance()!.ENCRYPTION);
+
+                         as String;
+    
 this.number= SuperCrypt(Integer(encryption).
                             toInt()).
-                            decrypt(payment.get(PaymentData.NUMBER) as String) as String
-this.id= payment.get(PaymentData.ID) as String
+                            decrypt(payment.get(PaymentData.NUMBER);
 
-    var def: string = payment.get(EntryData.getInstance()!.DEFAULT) as String;
+                         as String);
+
+                         as String;
+    
+this.id= payment.get(PaymentData.ID);
+
+                         as String;
+    
+
+    var def: string = payment.get(EntryData.getInstance()!.DEFAULT);
+
+                         as String;
         
         
-
+;
+    
 
                         if(def != 
                                     null
                                  && def.compareTo(EntryData.getInstance()!.DEFAULT) == 0)
                         
                                     {
-                                    this.isDefault= true
+                                    this.isDefault= true;
+    
 
                                     }
                                 
                         else {
-                            this.isDefault= false
+                            this.isDefault= false;
+    
 
                         }
                             
-this.tenderType= payment.get(PaymentData.TENDERTYPE) as String
-this.transactionType= payment.get(PaymentData.TRANSACTIONTYPE) as String
-this.aba= payment.get(PaymentData.ABA) as String
-this.account= payment.get(PaymentData.ACCOUNT) as String
-this.accountType= payment.get(PaymentData.ACCOUNTTYPE) as String
-this.authorizationCode= payment.get(PaymentData.AUTHORIZATIONCODE) as String
-this.checkNumber= payment.get(PaymentData.CHECKNUMBER) as String
-this.checkType= payment.get(PaymentData.CHECKTYPE) as String
-this.driversLicense= payment.get(PaymentData.DRIVERSLICENSE) as String
-this.magneticInkCheckReader= payment.get(PaymentData.MAGNETICINKCHECKREADER) as String
+this.tenderType= payment.get(PaymentData.TENDERTYPE);
+
+                         as String;
+    
+this.transactionType= payment.get(PaymentData.TRANSACTIONTYPE);
+
+                         as String;
+    
+this.aba= payment.get(PaymentData.ABA);
+
+                         as String;
+    
+this.account= payment.get(PaymentData.ACCOUNT);
+
+                         as String;
+    
+this.accountType= payment.get(PaymentData.ACCOUNTTYPE);
+
+                         as String;
+    
+this.authorizationCode= payment.get(PaymentData.AUTHORIZATIONCODE);
+
+                         as String;
+    
+this.checkNumber= payment.get(PaymentData.CHECKNUMBER);
+
+                         as String;
+    
+this.checkType= payment.get(PaymentData.CHECKTYPE);
+
+                         as String;
+    
+this.driversLicense= payment.get(PaymentData.DRIVERSLICENSE);
+
+                         as String;
+    
+this.magneticInkCheckReader= payment.get(PaymentData.MAGNETICINKCHECKREADER);
+
+                         as String;
+    
 }
 
 public constructor (request: ServletRequest){
 
             super();
             var request = request
-this.name= request.getParameter(PaymentData.NAME)
-this.type= request.getParameter(PaymentData.TYPE)
-this.expiration= request.getParameter(PaymentData.EXPIRATION)
-this.number= request.getParameter(PaymentData.NUMBER)
-this.tenderType= request.getParameter(PaymentData.TENDERTYPE)
-this.transactionType= request.getParameter(PaymentData.TRANSACTIONTYPE)
-this.aba= request.getParameter(PaymentData.ABA)
-this.account= request.getParameter(PaymentData.ACCOUNT)
-this.accountType= request.getParameter(PaymentData.ACCOUNTTYPE)
-this.authorizationCode= request.getParameter(PaymentData.AUTHORIZATIONCODE)
-this.checkNumber= request.getParameter(PaymentData.CHECKNUMBER)
-this.checkType= request.getParameter(PaymentData.CHECKTYPE)
-this.driversLicense= request.getParameter(PaymentData.DRIVERSLICENSE)
-this.magneticInkCheckReader= request.getParameter(PaymentData.MAGNETICINKCHECKREADER)
+this.name= request.getParameter(PaymentData.NAME);
+    
+this.type= request.getParameter(PaymentData.TYPE);
+    
+this.expiration= request.getParameter(PaymentData.EXPIRATION);
+    
+this.number= request.getParameter(PaymentData.NUMBER);
+    
+this.tenderType= request.getParameter(PaymentData.TENDERTYPE);
+    
+this.transactionType= request.getParameter(PaymentData.TRANSACTIONTYPE);
+    
+this.aba= request.getParameter(PaymentData.ABA);
+    
+this.account= request.getParameter(PaymentData.ACCOUNT);
+    
+this.accountType= request.getParameter(PaymentData.ACCOUNTTYPE);
+    
+this.authorizationCode= request.getParameter(PaymentData.AUTHORIZATIONCODE);
+    
+this.checkNumber= request.getParameter(PaymentData.CHECKNUMBER);
+    
+this.checkType= request.getParameter(PaymentData.CHECKTYPE);
+    
+this.driversLicense= request.getParameter(PaymentData.DRIVERSLICENSE);
+    
+this.magneticInkCheckReader= request.getParameter(PaymentData.MAGNETICINKCHECKREADER);
+    
 }
 
 public constructor (){
@@ -163,12 +232,14 @@ public constructor (){
     var stringUtil: StringUtil = StringUtil.getInstance()!;
         
         
-
+;
+    
 
     var aFalse: Boolean = Boolean.FALSE;
         
         
-
+;
+    
 
                         if(this.name == 
                                     null
@@ -253,79 +324,92 @@ public constructor (){
 
     public setTenderType(value: string){
 var value = value
-this.tenderType= value
+this.tenderType= value;
+    
 }
 
 
     public setTransactionType(value: string){
 var value = value
-this.transactionType= value
+this.transactionType= value;
+    
 }
 
 
     public setAuthorizationCode(value: string){
 var value = value
-this.authorizationCode= value
+this.authorizationCode= value;
+    
 }
 
 
     public setCheckType(value: string){
 var value = value
-this.checkType= value
+this.checkType= value;
+    
 }
 
 
     public setCheckNumber(value: string){
 var value = value
-this.checkNumber= value
+this.checkNumber= value;
+    
 }
 
 
     public setDriversLicense(value: string){
 var value = value
-this.driversLicense= value
+this.driversLicense= value;
+    
 }
 
 
     public setMagneticInkCheckReader(value: string){
 var value = value
-this.magneticInkCheckReader= value
+this.magneticInkCheckReader= value;
+    
 }
 
 
     public setAba(value: string){
 var value = value
-this.aba= value
+this.aba= value;
+    
 }
 
 
     public setAccountType(value: string){
 var value = value
-this.accountType= value
+this.accountType= value;
+    
 }
 
 
     public setName(value: string){
 var value = value
-this.name= value
+this.name= value;
+    
 }
 
 
     public setType(value: string){
 var value = value
-this.type= value
+this.type= value;
+    
 }
 
 
     public setExpiration(value: string){
 var value = value
-this.expiration= value
+this.expiration= value;
+    
 }
 
 
     public setNumber(value: string){
 var value = value
-this.number= value
+this.number= value;
+    
 }
 
 
@@ -499,6 +583,8 @@ this.number= value
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.number.substring(this.number.length -4);
+
+                        ;
     
 
                                     }
@@ -526,35 +612,51 @@ this.number= value
 }
 
 
-    public toHashMap(): HashMap<Any, Any>{
+    public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
         
         
-
-hashMap!.put(PaymentData.NAME, this.name)
-hashMap!.put(PaymentData.TYPE, this.type)
-hashMap!.put(PaymentData.EXPIRATION, this.expiration)
-hashMap!.put(PaymentData.NUMBER, this.getLastFour())
-hashMap!.put(PaymentData.TENDERTYPE, this.tenderType)
-hashMap!.put(PaymentData.TRANSACTIONTYPE, this.transactionType)
-hashMap!.put(PaymentData.ABA, this.aba)
-hashMap!.put(PaymentData.ACCOUNT, this.account)
-hashMap!.put(PaymentData.ACCOUNTTYPE, this.accountType)
-hashMap!.put(PaymentData.AUTHORIZATIONCODE, this.authorizationCode)
-hashMap!.put(PaymentData.CHECKNUMBER, this.checkNumber)
-hashMap!.put(PaymentData.DRIVERSLICENSE, this.driversLicense)
-hashMap!.put(PaymentData.MAGNETICINKCHECKREADER, this.magneticInkCheckReader)
+;
+    
+hashMap!.put(PaymentData.NAME, this.name);
+    
+hashMap!.put(PaymentData.TYPE, this.type);
+    
+hashMap!.put(PaymentData.EXPIRATION, this.expiration);
+    
+hashMap!.put(PaymentData.NUMBER, this.getLastFour());
+    
+hashMap!.put(PaymentData.TENDERTYPE, this.tenderType);
+    
+hashMap!.put(PaymentData.TRANSACTIONTYPE, this.transactionType);
+    
+hashMap!.put(PaymentData.ABA, this.aba);
+    
+hashMap!.put(PaymentData.ACCOUNT, this.account);
+    
+hashMap!.put(PaymentData.ACCOUNTTYPE, this.accountType);
+    
+hashMap!.put(PaymentData.AUTHORIZATIONCODE, this.authorizationCode);
+    
+hashMap!.put(PaymentData.CHECKNUMBER, this.checkNumber);
+    
+hashMap!.put(PaymentData.DRIVERSLICENSE, this.driversLicense);
+    
+hashMap!.put(PaymentData.MAGNETICINKCHECKREADER, this.magneticInkCheckReader);
+    
 
                         if(this.isDefault)
                         
                                     {
-                                    hashMap!.put(EntryData.getInstance()!.DEFAULT, EntryData.getInstance()!.DEFAULT)
+                                    hashMap!.put(EntryData.getInstance()!.DEFAULT, EntryData.getInstance()!.DEFAULT);
+    
 
                                     }
                                 
                         else {
-                            hashMap!.put(EntryData.getInstance()!.DEFAULT, StringUtil.getInstance()!.EMPTY_STRING)
+                            hashMap!.put(EntryData.getInstance()!.DEFAULT, StringUtil.getInstance()!.EMPTY_STRING);
+    
 
                         }
                             
@@ -572,15 +674,17 @@ hashMap!.put(PaymentData.MAGNETICINKCHECKREADER, this.magneticInkCheckReader)
     public toXmlNode(document: Document): Node{
 var document = document
 
-    var hashMap: HashMap<Any, Any> = this.toHashMap()!;
+    var hashMap: HashMap<any, any> = this.toHashMap()!;
         
         
-
+;
+    
 
     var node: Node = ModDomHelper.createNameValueNodes(document, PaymentData.PAYMENT, hashMap)!;
         
         
-
+;
+    
 
 
 

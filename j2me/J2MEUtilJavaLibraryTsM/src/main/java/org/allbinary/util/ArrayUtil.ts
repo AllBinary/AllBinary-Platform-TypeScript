@@ -40,33 +40,37 @@ export class ArrayUtil
         
         
 
-    public copyOf(original: any = {}[], newLength: number): any = {}[]{
+    public copyOf(original: any[], newLength: number): any[]{
     //var original = original
     //var newLength = newLength
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return copyOf(original, newLength, original::class);
+                        return copyOf(original, newLength, originalconstructor);
+
+                        ;
     
 }
 
 
-    public copyOf(original: any = {}[], newLength: number, newType: KClass<*>): any = {}[]{
+    public copyOf(original: any[], newLength: number, newType: Function): any[]{
     //var original = original
     //var newLength = newLength
     //var newType = newType
 
-    var copy: any = {}[] = new Array(newLength);
+    var copy: any[] = new Array(newLength);
         
         
-
+;
+    
 
 
 
         for (let i = 0; i < ; i++) {
             copy[0 + i] = original[i]!;
         }
+    ;
     
 
 
@@ -77,20 +81,22 @@ export class ArrayUtil
 }
 
 
-    public copyOf(original: ByteArray, newLength: number): ByteArray{
+    public copyOf(original: number[], newLength: number): number[]{
     //var original = original
     //var newLength = newLength
 
-    var copy: ByteArray = ByteArray(newLength);
+    var copy: number[] = new Array(newLength);
         
         
-
+;
+    
 
 
 
         for (let i = 0; i < ; i++) {
             copy[0 + i] = original[i]!;
         }
+    ;
     
 
 
@@ -101,20 +107,22 @@ export class ArrayUtil
 }
 
 
-    public copyOf(original: ShortArray, newLength: number): ShortArray{
+    public copyOf(original: number[], newLength: number): number[]{
 var original = original
 var newLength = newLength
 
-    var copy: ShortArray = ShortArray(newLength);
+    var copy: number[] = new Array(newLength);
         
         
-
+;
+    
 
 
 
         for (let i = 0; i < ; i++) {
             copy[0 + i] = original[i]!;
         }
+    ;
     
 
 
@@ -125,20 +133,22 @@ var newLength = newLength
 }
 
 
-    public copyOf(original: IntArray, newLength: number): IntArray{
+    public copyOf(original: number[], newLength: number): number[]{
     //var original = original
     //var newLength = newLength
 
-    var copy: IntArray = IntArray(newLength);
+    var copy: number[] = new Array(newLength);
         
         
-
+;
+    
 
 
 
         for (let i = 0; i < ; i++) {
             copy[0 + i] = original[i]!;
         }
+    ;
     
 
 
@@ -149,20 +159,22 @@ var newLength = newLength
 }
 
 
-    public copyOf(original: LongArray, newLength: number): LongArray{
+    public copyOf(original: number[], newLength: number): number[]{
     //var original = original
     //var newLength = newLength
 
-    var copy: LongArray = LongArray(newLength);
+    var copy: number[] = new Array(newLength);
         
         
-
+;
+    
 
 
 
         for (let i = 0; i < ; i++) {
             copy[0 + i] = original[i]!;
         }
+    ;
     
 
 
@@ -183,13 +195,15 @@ var newLength = newLength
                                                     ;
         
         
-
+;
+    
 
 
 
         for (let i = 0; i < ; i++) {
             copy[0 + i] = original[i]!;
         }
+    ;
     
 
 
@@ -200,20 +214,22 @@ var newLength = newLength
 }
 
 
-    public copyOf(original: FloatArray, newLength: number): FloatArray{
+    public copyOf(original: number[], newLength: number): number[]{
     //var original = original
     //var newLength = newLength
 
-    var copy: FloatArray = FloatArray(newLength);
+    var copy: number[] = new Array(newLength);
         
         
-
+;
+    
 
 
 
         for (let i = 0; i < ; i++) {
             copy[0 + i] = original[i]!;
         }
+    ;
     
 
 
@@ -224,20 +240,22 @@ var newLength = newLength
 }
 
 
-    public copyOf(original: DoubleArray, newLength: number): DoubleArray{
+    public copyOf(original: number[], newLength: number): number[]{
     //var original = original
     //var newLength = newLength
 
-    var copy: DoubleArray = DoubleArray(newLength);
+    var copy: number[] = new Array(newLength);
         
         
-
+;
+    
 
 
 
         for (let i = 0; i < ; i++) {
             copy[0 + i] = original[i]!;
         }
+    ;
     
 
 
@@ -248,20 +266,22 @@ var newLength = newLength
 }
 
 
-    public copyOf(original: BooleanArray, newLength: number): BooleanArray{
+    public copyOf(original: boolean[], newLength: number): boolean[]{
     //var original = original
     //var newLength = newLength
 
-    var copy: BooleanArray = BooleanArray(newLength);
+    var copy: boolean[] = new Array(newLength);
         
         
-
+;
+    
 
 
 
         for (let i = 0; i < ; i++) {
             copy[0 + i] = original[i]!;
         }
+    ;
     
 
 
@@ -272,21 +292,24 @@ var newLength = newLength
 }
 
 
-    public reverse(intArray: IntArray){
+    public reverse(intArray: number[]){
     //var intArray = intArray
 
     var length: number = intArray!.length -1;
         
         
-
+;
+    
 
     var temp: number= 0
-
+;
+    
 
     var size: number = length /2;
         
         
-
+;
+    
 
 
 
@@ -297,15 +320,18 @@ var newLength = newLength
         
 index <= size; index++)
         {
-temp= intArray[index]!
-intArray[index]= intArray[length -index]!
-intArray[length -index]= temp
+temp= intArray[index]!;
+    
+intArray[index]= intArray[length -index]!;
+    
+intArray[length -index]= temp;
+    
 }
 
 }
 
 
-    public flip(intArray: IntArray, width: number, height: number){
+    public flip(intArray: number[], width: number, height: number){
     //var intArray = intArray
     //var width = width
     //var height = height
@@ -313,16 +339,20 @@ intArray[length -index]= temp
     var length: number = height -1;
         
         
-
+;
+    
 
     var temp: number= 0
-
+;
+    
 
     var index: number= 0
-
+;
+    
 
     var rowIndex: number= 0
-
+;
+    
 
 
 
@@ -343,11 +373,16 @@ y <= length /2; y++)
         
 x < width; x++)
         {
-rowIndex= ((length -y) *width)
-index= x +(y *width)
-temp= intArray[index]!
-intArray[index]= intArray[rowIndex +x]!
-intArray[rowIndex +x]= temp
+rowIndex= ((length -y) *width);
+    
+index= x +(y *width);
+    
+temp= intArray[index]!;
+    
+intArray[index]= intArray[rowIndex +x]!;
+    
+intArray[rowIndex +x]= temp;
+    
 }
 
 }
@@ -355,30 +390,34 @@ intArray[rowIndex +x]= temp
 }
 
 
-    public toString(twoDimensionalIntArray: IntArray[]): string{
+    public toString(twoDimensionalIntArray: number[][]): string{
     //var twoDimensionalIntArray = twoDimensionalIntArray
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
         
         
-
+;
+    
 
     var endIndex: number = twoDimensionalIntArray!.length
                 ;
         
         
-
+;
+    
 
     var endIndex2: number = twoDimensionalIntArray[0]!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -389,7 +428,8 @@ intArray[rowIndex +x]= temp
         
 index < endIndex; index++)
         {
-stringBuffer!.append(commonSeps!.BRACE_OPEN)
+stringBuffer!.append(commonSeps!.BRACE_OPEN);
+    
 
 
 
@@ -400,12 +440,16 @@ stringBuffer!.append(commonSeps!.BRACE_OPEN)
         
 index2 < endIndex2; index2++)
         {
-stringBuffer!.appendint(twoDimensionalIntArray[index]![index2]!)
-stringBuffer!.append(commonSeps!.COMMA_SEP)
+stringBuffer!.appendint(twoDimensionalIntArray[index]![index2]!);
+    
+stringBuffer!.append(commonSeps!.COMMA_SEP);
+    
 }
 
-stringBuffer!.append(commonSeps!.BRACE_CLOSE)
-stringBuffer!.append(commonSeps!.NEW_LINE)
+stringBuffer!.append(commonSeps!.BRACE_CLOSE);
+    
+stringBuffer!.append(commonSeps!.NEW_LINE);
+    
 }
 
 
@@ -413,22 +457,26 @@ stringBuffer!.append(commonSeps!.NEW_LINE)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 
 
-    public toString(objectArray: any = {}[]): string{
+    public toString(objectArray: any[]): string{
     //var objectArray = objectArray
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
         
         
-
+;
+    
 
 
 
@@ -439,8 +487,10 @@ stringBuffer!.append(commonSeps!.NEW_LINE)
         
 index < objectArray!.length; index++)
         {
-stringBuffer!.append(StringUtil.getInstance()!.toString(objectArray[index]!))
-stringBuffer!.append(commonSeps!.COMMA_SEP)
+stringBuffer!.append(StringUtil.getInstance()!.toString(objectArray[index]!));
+    
+stringBuffer!.append(commonSeps!.COMMA_SEP);
+    
 }
 
 
@@ -448,22 +498,26 @@ stringBuffer!.append(commonSeps!.COMMA_SEP)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 
 
-    public toString(byteArray: ByteArray): string{
+    public toString(byteArray: number[]): string{
     //var byteArray = byteArray
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
         
         
-
+;
+    
 
 
 
@@ -474,8 +528,10 @@ stringBuffer!.append(commonSeps!.COMMA_SEP)
         
 index < byteArray!.length; index++)
         {
-stringBuffer!.appendbyte(byteArray[index]!)
-stringBuffer!.append(commonSeps!.COMMA_SEP)
+stringBuffer!.appendbyte(byteArray[index]!);
+    
+stringBuffer!.append(commonSeps!.COMMA_SEP);
+    
 }
 
 
@@ -483,6 +539,8 @@ stringBuffer!.append(commonSeps!.COMMA_SEP)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

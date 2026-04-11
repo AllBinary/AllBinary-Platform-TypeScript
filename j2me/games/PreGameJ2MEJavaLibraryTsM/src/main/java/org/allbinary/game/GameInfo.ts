@@ -18,7 +18,10 @@
 
 
 
-import { Hashtable } from "../../../java/util/Hashtable.js";
+            import Hashtable from "@ohos.util.HashMap";
+        
+
+//import { Hashtable } from "../../../java/util/Hashtable.js";
 
     
 import { LogUtil } from "../../../org/allbinary/logic/communication/log/LogUtil.js";
@@ -71,11 +74,16 @@ public constructor (gameType: GameType, gameMode: GameMode, highestLevel: number
     //var gameMode = gameMode
     //var highestLevel = highestLevel
     //var currentLevel = currentLevel
-this.gameType= gameType
-this.gameMode= gameMode
-this.setHighestLevel(highestLevel)
-this.currentLevel= currentLevel
-this.playerType= PlayerTypesFactory.getInstance()!.PLAYER_TYPE_ONE
+this.gameType= gameType;
+    
+this.gameMode= gameMode;
+    
+this.setHighestLevel(highestLevel);
+    
+this.currentLevel= currentLevel;
+    
+this.playerType= PlayerTypesFactory.getInstance()!.PLAYER_TYPE_ONE;
+    
 }
 
 public constructor (gameType: GameType, gameMode: GameMode, playerType: PlayerType, highestLevel: number, currentLevel: number){
@@ -86,11 +94,16 @@ var gameMode = gameMode
 var playerType = playerType
 var highestLevel = highestLevel
 var currentLevel = currentLevel
-this.gameType= gameType
-this.gameMode= gameMode
-this.setHighestLevel(highestLevel)
-this.currentLevel= currentLevel
-this.playerType= playerType
+this.gameType= gameType;
+    
+this.gameMode= gameMode;
+    
+this.setHighestLevel(highestLevel);
+    
+this.currentLevel= currentLevel;
+    
+this.playerType= playerType;
+    
 }
 
 
@@ -136,7 +149,8 @@ this.playerType= playerType
 
     public setHighestLevel(highestLevel: number){
     //var highestLevel = highestLevel
-this.highestLevel= highestLevel
+this.highestLevel= highestLevel;
+    
 }
 
 
@@ -160,9 +174,11 @@ this.highestLevel= highestLevel
 
     public setCurrentLevel(currentLevel: number){
     //var currentLevel = currentLevel
-this.currentLevel= currentLevel
+this.currentLevel= currentLevel;
+    
 logUtil!.put(StringMaker().
-                            append(NEW_LEVEL)!.appendint(this.getCurrentLevel())!.toString(), this, SET_CURRENT_LEVEL)
+                            append(NEW_LEVEL)!.appendint(this.getCurrentLevel())!.toString(), this, SET_CURRENT_LEVEL);
+    
 }
 
 
@@ -179,12 +195,14 @@ logUtil!.put(StringMaker().
                         if(this.getCurrentLevel() < this.getHighestLevel())
                         
                                     {
-                                    this.currentLevel++
+                                    this.currentLevel++;
+    
 
                                     }
                                 
 logUtil!.put(StringMaker().
-                            append(NEXT)!.append(NEW_LEVEL)!.appendint(this.getCurrentLevel())!.toString(), this, NEXT_GAME_LEVEL)
+                            append(NEXT)!.append(NEW_LEVEL)!.appendint(this.getCurrentLevel())!.toString(), this, NEXT_GAME_LEVEL);
+    
 }
 
 
@@ -222,17 +240,23 @@ logUtil!.put(StringMaker().
 }
 
 
-    public toHashtable(): Hashtable<Any, Any>{
+    public toHashtable(): Hashtable<any, any>{
 
-    var hashtable: Hashtable<Any, Any> = new Hashtable<Any, Any>();
+    var hashtable: Hashtable<any, any> = new Hashtable<any, any>();
         
         
-
-hashtable.put(this.gameInfoData!.GAME_TYPE, this.getGameType()!.toString())
-hashtable.put(this.gameInfoData!.GAME_MODE, this.gameMode!.toString())
-hashtable.put(this.gameInfoData!.PLAYER_TYPE, this.playerType!.toString())
-hashtable.put(this.gameInfoData!.HIGHEST_LEVEL, Integer.toString(this.getHighestLevel()))
-hashtable.put(this.gameInfoData!.CURRENT_LEVEL, this.currentLevel.toString())
+;
+    
+hashtable.put(this.gameInfoData!.GAME_TYPE, this.getGameType()!.toString());
+    
+hashtable.put(this.gameInfoData!.GAME_MODE, this.gameMode!.toString());
+    
+hashtable.put(this.gameInfoData!.PLAYER_TYPE, this.playerType!.toString());
+    
+hashtable.put(this.gameInfoData!.HIGHEST_LEVEL, Integer.toString(this.getHighestLevel()));
+    
+hashtable.put(this.gameInfoData!.CURRENT_LEVEL, this.currentLevel.toString());
+    
 
 
 
@@ -247,36 +271,59 @@ hashtable.put(this.gameInfoData!.CURRENT_LEVEL, this.currentLevel.toString())
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
         
         
-
-stringBuffer!.append(this.gameInfoData!.GAME_TYPE)
-stringBuffer!.append(commonSeps!.EQUALS)
-stringBuffer!.append(this.getGameType()!.toString())
-stringBuffer!.append(commonSeps!.COMMA_SEP)
-stringBuffer!.append(this.gameInfoData!.GAME_MODE)
-stringBuffer!.append(commonSeps!.EQUALS)
-stringBuffer!.append(this.gameMode!.toString())
-stringBuffer!.append(commonSeps!.COMMA_SEP)
-stringBuffer!.append(this.gameInfoData!.PLAYER_TYPE)
-stringBuffer!.append(commonSeps!.EQUALS)
-stringBuffer!.append(StringUtil.getInstance()!.toString(this.playerType))
-stringBuffer!.append(commonSeps!.COMMA_SEP)
-stringBuffer!.append(this.gameInfoData!.HIGHEST_LEVEL)
-stringBuffer!.append(commonSeps!.EQUALS)
-stringBuffer!.appendint(this.getHighestLevel())
-stringBuffer!.append(commonSeps!.COMMA_SEP)
-stringBuffer!.append(this.gameInfoData!.CURRENT_LEVEL)
-stringBuffer!.append(commonSeps!.EQUALS)
-stringBuffer!.appendint(this.currentLevel)
+;
+    
+stringBuffer!.append(this.gameInfoData!.GAME_TYPE);
+    
+stringBuffer!.append(commonSeps!.EQUALS);
+    
+stringBuffer!.append(this.getGameType()!.toString());
+    
+stringBuffer!.append(commonSeps!.COMMA_SEP);
+    
+stringBuffer!.append(this.gameInfoData!.GAME_MODE);
+    
+stringBuffer!.append(commonSeps!.EQUALS);
+    
+stringBuffer!.append(this.gameMode!.toString());
+    
+stringBuffer!.append(commonSeps!.COMMA_SEP);
+    
+stringBuffer!.append(this.gameInfoData!.PLAYER_TYPE);
+    
+stringBuffer!.append(commonSeps!.EQUALS);
+    
+stringBuffer!.append(StringUtil.getInstance()!.toString(this.playerType));
+    
+stringBuffer!.append(commonSeps!.COMMA_SEP);
+    
+stringBuffer!.append(this.gameInfoData!.HIGHEST_LEVEL);
+    
+stringBuffer!.append(commonSeps!.EQUALS);
+    
+stringBuffer!.appendint(this.getHighestLevel());
+    
+stringBuffer!.append(commonSeps!.COMMA_SEP);
+    
+stringBuffer!.append(this.gameInfoData!.CURRENT_LEVEL);
+    
+stringBuffer!.append(commonSeps!.EQUALS);
+    
+stringBuffer!.appendint(this.currentLevel);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

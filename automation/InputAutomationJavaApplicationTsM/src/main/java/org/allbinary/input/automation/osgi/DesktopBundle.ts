@@ -51,7 +51,8 @@ public constructor (){
     var bundleContext: BundleContext = InputAutomationBundleActivator.getBundleContext()!;
         
         
-
+;
+    
 
                         if(bundleContext != 
                                     null
@@ -62,7 +63,8 @@ public constructor (){
     var bundleArray: Bundle[] = bundleContext!.getBundles()!;
         
         
-
+;
+    
 
 
 
@@ -77,17 +79,20 @@ index < bundleArray!.length; index++)
     var bundle: Bundle = bundleArray[index]!;
         
         
-
+;
+    
 
     var symbolicName: string = bundle.getSymbolicName()!;
         
         
-
+;
+    
 
                         if(symbolicName!.compareTo(DESKTOP_SYMBOLIC_NAME) == 0)
                         
                                     {
-                                    this.bundle= bundle
+                                    this.bundle= bundle;
+    
 
                                     }
                                 
@@ -101,8 +106,10 @@ index < bundleArray!.length; index++)
     var textJDialog: JDialog = new BasicTextJDialog("BundlContext is Null");
         
         
-
-textJDialog!.setVisible(true)
+;
+    
+textJDialog!.setVisible(true);
+    
 
                         }
                             
@@ -112,7 +119,8 @@ textJDialog!.setVisible(true)
                 //@Throws(Error::class)
             
     public start(){
-this.bundle.start()
+this.bundle.start();
+    
 }
 
 

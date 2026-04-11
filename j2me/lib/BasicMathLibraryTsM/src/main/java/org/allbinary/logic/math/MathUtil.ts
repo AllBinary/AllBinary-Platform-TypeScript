@@ -30,12 +30,15 @@ var digits = digits
     var total: number = 0;
         
         
-
+;
+    
 
         while(digits > 0)
         {
-digits= digits /10
-total++
+digits= digits /10;
+    
+total++;
+    
 }
 
 
@@ -66,17 +69,21 @@ total++
     var accumulated: number = value shr 1;
         
         
-
+;
+    
 
     var result: number = (accumulated +(value /accumulated)) shr 1;
         
         
-
+;
+    
 
         do
         {
-accumulated= result
-result= (accumulated +(value /accumulated)) shr 1
+accumulated= result;
+    
+result= (accumulated +(value /accumulated)) shr 1;
+    
 }
 
         while(accumulated > result)

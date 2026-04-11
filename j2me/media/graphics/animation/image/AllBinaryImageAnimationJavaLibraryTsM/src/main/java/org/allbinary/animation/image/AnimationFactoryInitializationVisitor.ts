@@ -57,29 +57,41 @@ export class AnimationFactoryInitializationVisitor
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
         
         
-
+;
+    
 
     var commonLabels: CommonLabels = CommonLabels.getInstance()!;
         
         
-
+;
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(PositionStrings.getInstance()!.DX_LABEL)!.appendfloat(this.dx.toFloat())
-stringBuffer!.append(PositionStrings.getInstance()!.DY_LABEL)!.appendfloat(this.dy.toFloat())
-stringBuffer!.append(commonLabels!.WIDTH_LABEL)
-stringBuffer!.appendint(width)
-stringBuffer!.append(commonSeps!.SPACE)
-stringBuffer!.append(commonLabels!.HEIGHT_LABEL)
-stringBuffer!.appendint(height)
+;
+    
+stringBuffer!.append(PositionStrings.getInstance()!.DX_LABEL)!.appendfloat(this.dx.toFloat());
+    
+stringBuffer!.append(PositionStrings.getInstance()!.DY_LABEL)!.appendfloat(this.dy.toFloat());
+    
+stringBuffer!.append(commonLabels!.WIDTH_LABEL);
+    
+stringBuffer!.appendint(width);
+    
+stringBuffer!.append(commonSeps!.SPACE);
+    
+stringBuffer!.append(commonLabels!.HEIGHT_LABEL);
+    
+stringBuffer!.appendint(height);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

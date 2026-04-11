@@ -79,12 +79,14 @@ public constructor (node: Node)
 
                             //For kotlin this is before the body of the constructor.
                     
-logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR)
+logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
+    
 
     var actionNode: Node = DomSearchHelper.getNode(ImageActionScriptOutputData.NAME, node.getChildNodes())!;
         
         
-
+;
+    
 
                         if(actionNode != 
                                     null
@@ -95,7 +97,8 @@ logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR)
     var nodeList: NodeList = actionNode!.getChildNodes()!;
         
         
-
+;
+    
 
 
 
@@ -110,7 +113,8 @@ index < nodeList!.getLength(); index++)
     var childNode: Node = nodeList!.item(index)!;
         
         
-
+;
+    
 
                         if(childNode!.getNodeName()!.compareTo(ImageActionScriptOutputData.SAVE) == 0)
                         
@@ -119,9 +123,11 @@ index < nodeList!.getLength(); index++)
     var booleanString: string = DomNodeHelper.getTextNodeValue(childNode)!;
         
         
-
+;
+    
 this.setSaved(.
-                            )
+                            );
+    
 
                                     }
                                 
@@ -133,9 +139,11 @@ this.setSaved(.
     var booleanString: string = DomNodeHelper.getTextNodeValue(childNode)!;
         
         
-
+;
+    
 this.setSaved(.
-                            )
+                            );
+    
 
                                     }
                                 
@@ -143,7 +151,8 @@ this.setSaved(.
                         if(childNode!.getNodeName()!.compareTo(ImageActionScriptOutputData.TYPES) == 0)
                         
                                     {
-                                    this.setImageTypes(ImageTypes(childNode))
+                                    this.setImageTypes(ImageTypes(childNode));
+    
 
                                     }
                                 
@@ -168,8 +177,10 @@ this.setSaved(.
 
                         }
                             
-this.setAllowsChildren(false)
-this.actionScriptOutputJPanel= ImageActionScriptOutputJPanel(this)
+this.setAllowsChildren(false);
+    
+this.actionScriptOutputJPanel= ImageActionScriptOutputJPanel(this);
+    
 }
 
 public constructor ()                        
@@ -181,9 +192,12 @@ public constructor ()
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setImageTypes(ImageTypes())
-this.setAllowsChildren(false)
-this.actionScriptOutputJPanel= ImageActionScriptOutputJPanel(this)
+this.setImageTypes(ImageTypes());
+    
+this.setAllowsChildren(false);
+    
+this.actionScriptOutputJPanel= ImageActionScriptOutputJPanel(this);
+    
 }
 
 
@@ -197,15 +211,19 @@ this.actionScriptOutputJPanel= ImageActionScriptOutputJPanel(this)
 }
 
 
-    public toHashMap(): HashMap<Any, Any>{
+    public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
         
         
-
-hashMap!.put(ImageActionScriptOutputData.DISPLAY, Boolean.toString(this.isDisplay()))
-hashMap!.put(ImageActionScriptOutputData.SAVE, Boolean.toString(this.isSaved()))
-logUtil!.put("HashMap: " +hashMap!.toString(), this, "toHashMap()")
+;
+    
+hashMap!.put(ImageActionScriptOutputData.DISPLAY, Boolean.toString(this.isDisplay()));
+    
+hashMap!.put(ImageActionScriptOutputData.SAVE, Boolean.toString(this.isSaved()));
+    
+logUtil!.put("HashMap: " +hashMap!.toString(), this, "toHashMap()");
+    
 
 
 
@@ -223,14 +241,18 @@ var document = document
     var node: Node = super.toXmlNode(document)!;
         
         
-
+;
+    
 
     var newNode: Node = ModDomHelper.createNodeWithValueNodes(document, ImageActionScriptOutputData.NAME, this.toHashMap())!;
         
         
-
-newNode!.appendChild(this.getImageTypes()!.toXmlNode(document))
-node.appendChild(newNode)
+;
+    
+newNode!.appendChild(this.getImageTypes()!.toXmlNode(document));
+    
+node.appendChild(newNode);
+    
 
 
 
@@ -244,12 +266,14 @@ node.appendChild(newNode)
             
     public process(frame: Long){
 var frame = frame
-ImageActionScriptOutputProcessor.process(this, frame)
+ImageActionScriptOutputProcessor.process(this, frame);
+    
 }
 
 
     public showDialog(){
-this.actionScriptOutputJPanel!.getCapturedImageActionJDialog()!.setVisible(true)
+this.actionScriptOutputJPanel!.getCapturedImageActionJDialog()!.setVisible(true);
+    
 }
 
 
@@ -265,7 +289,8 @@ this.actionScriptOutputJPanel!.getCapturedImageActionJDialog()!.setVisible(true)
 
     public setSaved(saved: boolean){
 var saved = saved
-this.saved= saved
+this.saved= saved;
+    
 }
 
 
@@ -281,7 +306,8 @@ this.saved= saved
 
     public setDisplay(display: boolean){
 var display = display
-this.display= display
+this.display= display;
+    
 }
 
 
@@ -290,24 +316,34 @@ this.display= display
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(" Is Save: ")
-stringBuffer!.appendboolean(this.isSaved())
-stringBuffer!.append(" Is Display: ")
-stringBuffer!.appendboolean(this.isDisplay())
-stringBuffer!.append(" ")
-stringBuffer!.append(this.getImageTypes()!.toString())
+;
+    
+stringBuffer!.append(" Is Save: ");
+    
+stringBuffer!.appendboolean(this.isSaved());
+    
+stringBuffer!.append(" Is Display: ");
+    
+stringBuffer!.appendboolean(this.isDisplay());
+    
+stringBuffer!.append(" ");
+    
+stringBuffer!.append(this.getImageTypes()!.toString());
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 
 
     public log(){
-logUtil!.put(this.future_toString(), this, "log")
+logUtil!.put(this.future_toString(), this, "log");
+    
 }
 
 
@@ -323,7 +359,8 @@ logUtil!.put(this.future_toString(), this, "log")
 
     public setImageTypes(imageTypes: ImageTypes){
 var imageTypes = imageTypes
-this.imageTypes= imageTypes
+this.imageTypes= imageTypes;
+    
 }
 
 

@@ -58,7 +58,8 @@ private constructor (){
 
     public init(combatGameCanvas: AllBinaryGameCanvas){
 var combatGameCanvas = combatGameCanvas
-EVENT_POOL.init(DestroyEventFactory(combatGameCanvas))
+EVENT_POOL.init(DestroyEventFactory(combatGameCanvas));
+    
 }
 
 
@@ -67,11 +68,15 @@ EVENT_POOL.init(DestroyEventFactory(combatGameCanvas))
     public getInstance(layerInterface: AllBinaryLayer): DestroyedEvent{
 var layerInterface = layerInterface
 
-    var destroyedEvent: DestroyedEvent = EVENT_POOL.getNextInstance() as DestroyedEvent;
-        
-        
+    var destroyedEvent: DestroyedEvent = EVENT_POOL.getNextInstance();
 
-destroyedEvent!.setLayerInterfaceForCircularStaticPool(layerInterface)
+                         as DestroyedEvent;
+        
+        
+;
+    
+destroyedEvent!.setLayerInterfaceForCircularStaticPool(layerInterface);
+    
 
 
 

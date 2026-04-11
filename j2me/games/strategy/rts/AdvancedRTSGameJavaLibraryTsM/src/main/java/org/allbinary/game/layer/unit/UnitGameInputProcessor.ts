@@ -30,7 +30,8 @@ public constructor (unitLayer: UnitLayer){
 
             super();
             var unitLayer = unitLayer
-this.unitLayer= unitLayer
+this.unitLayer= unitLayer;
+    
 }
 
 

@@ -18,10 +18,13 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { Serializable } from "../../../../../java/io/Serializable.js";
 
     
-import { Vector } from "../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../java/util/Vector.js";
 
     
 
@@ -31,7 +34,7 @@ export class BasicUserRole
                 , Serializable {
         
 
-    private static readonly roleVector: Vector<Any> = new Vector<Any>();
+    private static readonly roleVector: Vector<any> = new Vector<any>();
         
         
 
@@ -41,15 +44,17 @@ export class BasicUserRole
     public static getRole(role: string): BasicUserRole{
 var role = role
 
-    var roleVector: Vector<Any> = BasicUserRole.getAll()!;
+    var roleVector: Vector<any> = BasicUserRole.getAll()!;
         
         
-
+;
+    
 
     var size: number = roleVector!.length!;
         
         
-
+;
+    
 
 
 
@@ -61,10 +66,13 @@ var role = role
 index < size; index++)
         {
 
-    var userRole: BasicUserRole = roleVector!.get(index) as BasicUserRole;
-        
-        
+    var userRole: BasicUserRole = roleVector!.get(index);
 
+                         as BasicUserRole;
+        
+        
+;
+    
 
                         if(role.compareTo(userRole!.toString()) == 0)
                         
@@ -87,7 +95,7 @@ index < size; index++)
 }
 
 
-    public static getAll(): Vector<Any>{
+    public static getAll(): Vector<any>{
 
 
 
@@ -129,12 +137,18 @@ var aDisplayValue = aDisplayValue
 var a_int_RoleId = a_int_RoleId
 var aSessionTimeout = aSessionTimeout
 var aSessionInactivityTimeout = aSessionInactivityTimeout
-this.m_int_RoleId= a_int_RoleId
-this.role= aRole
-this.displayValue= aDisplayValue
-this.sessionTimeout= aSessionTimeout
-this.sessionInactivityTimeout= aSessionInactivityTimeout
-roleVector!.add(this)
+this.m_int_RoleId= a_int_RoleId;
+    
+this.role= aRole;
+    
+this.displayValue= aDisplayValue;
+    
+this.sessionTimeout= aSessionTimeout;
+    
+this.sessionInactivityTimeout= aSessionInactivityTimeout;
+    
+roleVector!.add(this);
+    
 }
 
 
@@ -208,6 +222,8 @@ var basicUserRole = basicUserRole
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getRole();
+
+                        ;
     
 }
 

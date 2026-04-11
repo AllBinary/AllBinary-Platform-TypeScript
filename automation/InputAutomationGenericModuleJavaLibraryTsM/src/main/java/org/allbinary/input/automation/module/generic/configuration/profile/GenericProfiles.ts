@@ -90,7 +90,7 @@ export class GenericProfiles
         
         
 
-    private hashMap: HashMap<Any, Any>
+    private hashMap: HashMap<any, any>
 
     private profilesDefaultListModelHelper: DefaultListModelHelper
 
@@ -99,57 +99,69 @@ public constructor (fileName: string){
 
             super();
             var fileName = fileName
-this.fileName= fileName
-this.profilesDefaultListModelHelper= DefaultListModelHelper()
-this.hashMap= HashMap<Any, Any>()
+this.fileName= fileName;
+    
+this.profilesDefaultListModelHelper= DefaultListModelHelper();
+    
+this.hashMap= HashMap<any, any>();
+    
 
                         if(File(fileName).
                             isFile())
                         
                                     {
                                     
-    var bytes: ByteArray = ByteArray(100000);
+    var bytes: number[] = new Array(100000);
         
         
-
+;
+    
 
     var idFile: FileInputStream = new FileInputStream(fileName);
         
         
-
+;
+    
 
     var length: number = idFile!.read(bytes)!;
         
         
-
+;
+    
 
     var data: string = new bytes.decodeToString();
         
         
-
+;
+    
 
     var endIndex: number = data.lastIndexOf('>')!;
         
         
-
+;
+    
 
     var document: Document = DomDocumentHelper.create(data.substring(0, endIndex +1))!;
         
         
-
+;
+    
 
     var nodeList: NodeList = document.getElementsByTagName(GenericProfilesData.NAME)!;
         
         
-
-logUtil!.put("Number Of Profiles Specified: " +nodeList!.getLength(), this, "Contructor")
+;
+    
+logUtil!.put("Number Of Profiles Specified: " +nodeList!.getLength(), this, "Contructor");
+    
 
                         if(nodeList != 
                                     null
                                 )
                         
                                     {
-                                    this.initProfiles(nodeList!.item(0))
+                                    this.initProfiles(nodeList!.item(0));
+    
 
                                     }
                                 
@@ -161,16 +173,19 @@ logUtil!.put("Number Of Profiles Specified: " +nodeList!.getLength(), this, "Con
 
                         }
                             
-logUtil!.put("Loaded: " +this.hashMap!.size +" Configuration Profile Actions", this, "Contructor")
+logUtil!.put("Loaded: " +this.hashMap!.size +" Configuration Profile Actions", this, "Contructor");
+    
 
                                     }
                                 
                         else {
-                            logUtil!.put("No Generic Profile: " +fileName, this, "Contructor")
+                            logUtil!.put("No Generic Profile: " +fileName, this, "Contructor");
+    
 
                         }
                             
-this.getDefaultListModelHelper()!.initDefaultModelList()
+this.getDefaultListModelHelper()!.initDefaultModelList();
+    
 }
 
 
@@ -182,7 +197,8 @@ var node = node
     var nodeList: NodeList = node.getChildNodes()!;
         
         
-
+;
+    
 
 
 
@@ -197,7 +213,8 @@ index < nodeList!.getLength(); index++)
     var profileNameNode: Node = nodeList!.item(index)!;
         
         
-
+;
+    
 
                         if(profileNameNode!.getNodeName()!.compareTo(GenericProfileData.NAME) == 0)
                         
@@ -206,9 +223,12 @@ index < nodeList!.getLength(); index++)
     var genericProfile: GenericProfile = new GenericProfile(profileNameNode);
         
         
-
-this.hashMap!.put(genericProfile!.getName(), genericProfile)
-this.getDefaultListModelHelper()!.add(genericProfile!.getName())
+;
+    
+this.hashMap!.put(genericProfile!.getName(), genericProfile);
+    
+this.getDefaultListModelHelper()!.add(genericProfile!.getName());
+    
 
                                     }
                                 
@@ -232,10 +252,13 @@ this.getDefaultListModelHelper()!.add(genericProfile!.getName())
     public get(name: string): GenericProfile{
 var name = name
 
-    var genericProfile: GenericProfile = this.hashMap!.get(name as Object) as GenericProfile;
-        
-        
+    var genericProfile: GenericProfile = this.hashMap!.get(name as Object);
 
+                         as GenericProfile;
+        
+        
+;
+    
 
                         if(genericProfile == 
                                     null
@@ -246,8 +269,10 @@ var name = name
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put("No Generic Profile Named: " +name +" availability was: " +this.hashMap, this, commonStrings!.GET)
+;
+    
+logUtil!.put("No Generic Profile Named: " +name +" availability was: " +this.hashMap, this, commonStrings!.GET);
+    
 
                                     }
                                 
@@ -264,10 +289,14 @@ logUtil!.put("No Generic Profile Named: " +name +" availability was: " +this.has
             
     public add(name: string){
 var name = name
-this.hashMap!.put(name, GenericProfile(name))
-this.getDefaultListModelHelper()!.add(name)
-this.getDefaultListModelHelper()!.initDefaultModelList()
-this.save()
+this.hashMap!.put(name, GenericProfile(name));
+    
+this.getDefaultListModelHelper()!.add(name);
+    
+this.getDefaultListModelHelper()!.initDefaultModelList();
+    
+this.save();
+    
 }
 
 
@@ -275,10 +304,14 @@ this.save()
             
     public remove(name: string){
 var name = name
-this.hashMap!.remove(name)
-this.getDefaultListModelHelper()!.remove(name)
-this.getDefaultListModelHelper()!.initDefaultModelList()
-this.save()
+this.hashMap!.remove(name);
+    
+this.getDefaultListModelHelper()!.remove(name);
+    
+this.getDefaultListModelHelper()!.initDefaultModelList();
+    
+this.save();
+    
 }
 
 
@@ -290,23 +323,27 @@ var document = document
     var node: Node = document.createElement(GenericProfilesData.NAME)!;
         
         
-
+;
+    
 
     var set: Set = this.hashMap!.keys!;
         
         
+;
+    
 
-
-    var nameArray: any = {}[] = set.toArray()!;
+    var nameArray: any[] = set.toArray()!;
         
         
-
+;
+    
 
     var size: number = nameArray!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -318,11 +355,15 @@ var document = document
 index < size; index++)
         {
 
-    var genericProfile: GenericProfile = this.hashMap!.get(nameArray[index]! as String) as GenericProfile;
-        
-        
+    var genericProfile: GenericProfile = this.hashMap!.get(nameArray[index]! as String);
 
-node.appendChild(genericProfile!.toXmlNode(document))
+                         as GenericProfile;
+        
+        
+;
+    
+node.appendChild(genericProfile!.toXmlNode(document));
+    
 }
 
 
@@ -341,13 +382,16 @@ node.appendChild(genericProfile!.toXmlNode(document))
     var document: Document = DomDocumentHelper.create()!;
         
         
-
+;
+    
 
     var node: Node = this.toXmlNode(document)!;
         
         
-
-document.appendChild(node)
+;
+    
+document.appendChild(node);
+    
 
 
 
@@ -364,18 +408,22 @@ document.appendChild(node)
     var idFile: FileOutputStream = new FileOutputStream(this.fileName);
         
         
-
+;
+    
 
     var idOutData: DataOutputStream = new DataOutputStream(idFile);
         
         
-
+;
+    
 
     var documentString: string = DomDocumentHelper.toString(this.toXmlDoc())!;
         
         
-
-idOutData!.writeBytes(documentString)
+;
+    
+idOutData!.writeBytes(documentString);
+    
 }
 
 

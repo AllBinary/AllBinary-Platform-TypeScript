@@ -29,7 +29,8 @@ public constructor (inputAutomationRobotInterfaceWrapper: InputAutomationRobotIn
 
             super();
             var inputAutomationRobotInterfaceWrapper = inputAutomationRobotInterfaceWrapper
-this.setInputAutomationRobotInterfaceWrapper(inputAutomationRobotInterfaceWrapper)
+this.setInputAutomationRobotInterfaceWrapper(inputAutomationRobotInterfaceWrapper);
+    
 }
 
 
@@ -45,7 +46,8 @@ this.setInputAutomationRobotInterfaceWrapper(inputAutomationRobotInterfaceWrappe
 
     public setInputAutomationRobotInterfaceWrapper(inputAutomationRobotInterfaceWrapper: InputAutomationRobotInterfaceWrapper){
 var inputAutomationRobotInterfaceWrapper = inputAutomationRobotInterfaceWrapper
-this.inputAutomationRobotInterfaceWrapper= inputAutomationRobotInterfaceWrapper
+this.inputAutomationRobotInterfaceWrapper= inputAutomationRobotInterfaceWrapper;
+    
 }
 
 

@@ -70,8 +70,10 @@ public constructor (width: number, height: number){
             super();
             var width = width
 var height = height
-setLayerWidth(width)
-setLayerHeight(height)
+setLayerWidth(width);
+    
+setLayerHeight(height);
+    
 }
 
 
@@ -79,17 +81,22 @@ setLayerHeight(height)
 var x = x
 var y = y
 var z = z
-this.x= x
-this.y= y
-this.z= z
+this.x= x;
+    
+this.y= y;
+    
+this.z= z;
+    
 }
 
 
     public move(dx: number, dy: number){
     //var dx = dx
     //var dy = dy
-this.x += dx
-this.y += dy
+this.x += dx;
+    
+this.y += dy;
+    
 }
 
 
@@ -97,9 +104,12 @@ this.y += dy
 var dx = dx
 var dy = dy
 var dz = dz
-this.x += dx
-this.y += dy
-this.z += dz
+this.x += dx;
+    
+this.y += dy;
+    
+this.z += dz;
+    
 }
 
 
@@ -165,7 +175,8 @@ this.z += dz
 
     public setVisible(visible: boolean){
 var visible = visible
-this.visible= visible
+this.visible= visible;
+    
 }
 
 
@@ -185,13 +196,16 @@ var graphics = graphics
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
+;
+    
 
     var canvasStrings: CanvasStrings = CanvasStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.NOT_IMPLEMENTED, this, canvasStrings!.PAINT)
+;
+    
+logUtil!.put(commonStrings!.NOT_IMPLEMENTED, this, canvasStrings!.PAINT);
+    
 }
 
 
@@ -208,7 +222,8 @@ var width = width
 
                                     }
                                 
-this.width= width
+this.width= width;
+    
 }
 
 
@@ -225,7 +240,8 @@ var height = height
 
                                     }
                                 
-this.height= height
+this.height= height;
+    
 }
 
 

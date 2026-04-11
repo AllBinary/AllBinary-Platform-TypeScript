@@ -91,8 +91,10 @@ public constructor (abeClientInformation: AbeClientInformationInterface, softwar
             super();
                 //var abeClientInformation = abeClientInformation
     //var softwareInformation = softwareInformation
-this.abeClientInformation= abeClientInformation
-this.softwareInformation= softwareInformation
+this.abeClientInformation= abeClientInformation;
+    
+this.softwareInformation= softwareInformation;
+    
 }
 
 
@@ -123,8 +125,10 @@ this.softwareInformation= softwareInformation
     public fetchHighScores(gameInfo: GameInfo, highScoresResultsListener: HighScoresResultsListener){
     //var gameInfo = gameInfo
     //var highScoresResultsListener = highScoresResultsListener
-logUtil!.put("Getting Remote/Local HighScores", this, FETCH)
-this.fetchHighScores(gameInfo, highScoresResultsListener, true)
+logUtil!.put("Getting Remote/Local HighScores", this, FETCH);
+    
+this.fetchHighScores(gameInfo, highScoresResultsListener, true);
+    
 }
 
 
@@ -138,28 +142,34 @@ SecondaryThreadPool.getInstance()!.runTask(object: ARunnable()
     public run(){
 
         try {
-            logUtil!.put(commonStrings!.START, this, FETCH)
-highScoresArray[0]= RecordStoreHighScores.getInstance(abeClientInformation, gameInfo, TOP, PERSONAL_HIGH_SCORES, SCORES, ScoreComparator(true))
+            logUtil!.put(commonStrings!.START, this, FETCH);
+    
+highScoresArray[0]= RecordStoreHighScores.getInstance(abeClientInformation, gameInfo, TOP, PERSONAL_HIGH_SCORES, SCORES, ScoreComparator(true));
+    
 
     var gameType: GameType = gameInfo!.getGameType()!;
         
         
-
+;
+    
 
     var gameTypeFactory: GameTypeFactory = GameTypeFactory.getInstance()!;
         
         
-
+;
+    
 
     var gameInfo2: GameInfo = gameInfo;
         
         
-
+;
+    
 
                         if(gameType == gameTypeFactory!.SINGLE_PLAYER || gameType == gameTypeFactory!.BOT)
                         
                                     {
-                                    gameInfo2= BasicHighScoresGameInfoFactory.getInstance()!.SINGLE_PLAYER_SERVER
+                                    gameInfo2= BasicHighScoresGameInfoFactory.getInstance()!.SINGLE_PLAYER_SERVER;
+    
 
                                     }
                                 
@@ -167,23 +177,32 @@ highScoresArray[0]= RecordStoreHighScores.getInstance(abeClientInformation, game
                         if(gameType == gameTypeFactory!.MULTI_PLAYER)
                         
                                     {
-                                    gameInfo2= BasicHighScoresGameInfoFactory.getInstance()!.MULTI_PLAYER_SERVER
+                                    gameInfo2= BasicHighScoresGameInfoFactory.getInstance()!.MULTI_PLAYER_SERVER;
+    
 
                                     }
                                 
-highScoresArray[1]= RemoteHighScores.getInstance(abeClientInformation, softwareInformation, gameInfo2, WORLD_TOP_SCORES, SCORES, BooleanFactory.getInstance()!.FALSE, preload)
-logUtil!.put(commonStrings!.END, this, FETCH)
-LastFetchHighScoresFactory.getInstance()!.highScoresArray= highScoresArray
-highScoresResultsListener!.setHighScoresArray(highScoresArray)
-} catch(e: Exception)
+highScoresArray[1]= RemoteHighScores.getInstance(abeClientInformation, softwareInformation, gameInfo2, WORLD_TOP_SCORES, SCORES, BooleanFactory.getInstance()!.FALSE, preload);
+    
+logUtil!.put(commonStrings!.END, this, FETCH);
+    
+LastFetchHighScoresFactory.getInstance()!.highScoresArray= highScoresArray;
+    
+highScoresResultsListener!.setHighScoresArray(highScoresArray);
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, FETCH, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, FETCH, e);
+    
 }
 
 }
 
                                 }
-                            )
+                            );
+    
 }
 
 

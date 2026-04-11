@@ -67,27 +67,36 @@ var foregroundBasicColor = foregroundBasicColor
 
                             //For kotlin this is before the body of the constructor.
                     
-logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
-this.list= list
-this.update()
-this.initCommands(commandListener)
+logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
+    
+this.list= list;
+    
+this.update();
+    
+this.initCommands(commandListener);
+    
 
     var gameDifficultyFactory: GameDifficultyFactory = GameDifficultyFactory.getInstance()!;
         
         
-
-this.setSelectedId(gameDifficultyFactory!.getLevel())
+;
+    
+this.setSelectedId(gameDifficultyFactory!.getLevel());
+    
 }
 
 
     public open(){
-super.open()
+super.open();
+    
 }
 
 
     public close(){
-super.close()
-this.save()
+super.close();
+    
+this.save();
+    
 }
 
 
@@ -98,8 +107,10 @@ this.save()
     var gameDifficultyFactory: GameDifficultyFactory = GameDifficultyFactory.getInstance()!;
         
         
-
-gameDifficultyFactory!.setLevel(this.getSelectedId())
+;
+    
+gameDifficultyFactory!.setLevel(this.getSelectedId());
+    
 }
 
 
@@ -109,19 +120,26 @@ var cmdListener = cmdListener
     var gameCommandsFactory: GameCommandsFactory = GameCommandsFactory.getInstance()!;
         
         
-
-this.removeAllCommands()
-this.addCommand(gameCommandsFactory!.CLOSE_AND_SHOW_GAME_CANVAS)
-this.setCommandListener(cmdListener)
+;
+    
+this.removeAllCommands();
+    
+this.addCommand(gameCommandsFactory!.CLOSE_AND_SHOW_GAME_CANVAS);
+    
+this.setCommandListener(cmdListener);
+    
 }
 
 
                 //@Throws(Error::class)
             
     public update(){
-this.deleteAll()
-this.add(list, "Difficulty", Choice.EXCLUSIVE)
-super.update()
+this.deleteAll();
+    
+this.add(list, "Difficulty", Choice.EXCLUSIVE);
+    
+super.update();
+    
 }
 
 
@@ -133,16 +151,19 @@ var option = option
     var choiceGroup: ChoiceGroup = this.getChoiceGroup(list, name, option)!;
         
         
-
+;
+    
 
                         if(list.size() > 0)
                         
                                     {
-                                    choiceGroup!.setSelectedIndex(0, true)
+                                    choiceGroup!.setSelectedIndex(0, true);
+    
 
                                     }
                                 
-this.append(choiceGroup)
+this.append(choiceGroup);
+    
 }
 
 
@@ -154,22 +175,26 @@ var option = option
     var METHOD_NAME: string = "addChoiceGroup";
         
         
-
+;
+    
 
     var NAME: string = "Adding Choice: ";
         
         
-
+;
+    
 
     var choiceGroup: ChoiceGroup = new ChoiceGroup(name, option);
         
         
-
+;
+    
 
     var size: number = list.size()!;
         
         
-
+;
+    
 
 
 
@@ -184,10 +209,13 @@ index < size; index++)
     var anyType: any = {} = list.objectArray[index]!;
         
         
-
+;
+    
 logUtil!.put(StringMaker().
-                            append(NAME)!.append(anyType!.toString())!.toString(), this, METHOD_NAME)
-choiceGroup!.append(anyType!.toString(), NullCanvas.NULL_IMAGE)
+                            append(NAME)!.append(anyType!.toString())!.toString(), this, METHOD_NAME);
+    
+choiceGroup!.append(anyType!.toString(), NullCanvas.NULL_IMAGE);
+    
 }
 
 
@@ -202,40 +230,53 @@ choiceGroup!.append(anyType!.toString(), NullCanvas.NULL_IMAGE)
     public setSelectedId(id: number){
 var id = id
 
-    var choiceGroup: ChoiceGroup = this.get(0) as ChoiceGroup;
-        
-        
+    var choiceGroup: ChoiceGroup = this.get(0);
 
-choiceGroup!.setSelectedIndex(id, true)
+                         as ChoiceGroup;
+        
+        
+;
+    
+choiceGroup!.setSelectedIndex(id, true);
+    
 }
 
 
     public getSelectedId(): number{
 
-    var choiceGroup: ChoiceGroup = this.get(0) as ChoiceGroup;
-        
-        
+    var choiceGroup: ChoiceGroup = this.get(0);
 
+                         as ChoiceGroup;
+        
+        
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return choiceGroup!.getSelectedIndex();
+
+                        ;
     
 }
 
 
     public getSelectedText(): number{
 
-    var choiceGroup: ChoiceGroup = this.get(0) as ChoiceGroup;
-        
-        
+    var choiceGroup: ChoiceGroup = this.get(0);
 
+                         as ChoiceGroup;
+        
+        
+;
+    
 
     var value: number = Integer.valueOf(choiceGroup!.getString(choiceGroup!.getSelectedIndex()))!.toInt()!;
         
         
-
+;
+    
 
 
 

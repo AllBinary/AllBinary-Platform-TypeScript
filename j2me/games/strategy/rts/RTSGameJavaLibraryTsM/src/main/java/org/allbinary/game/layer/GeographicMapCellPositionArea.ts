@@ -83,7 +83,8 @@ public constructor (layerInterface: AllBinaryLayer){
 
             super();
                 //var layerInterface = layerInterface
-this.layerInterface= layerInterface
+this.layerInterface= layerInterface;
+    
 }
 
 
@@ -91,9 +92,12 @@ this.layerInterface= layerInterface
             
     public update(geographicMapInterface: BasicGeographicMap){
     //var geographicMapInterface = geographicMapInterface
-this.occupyingGeographicMapCellPositionList= layerCoveringCellPositionsUtil!.getAll(geographicMapInterface, layerInterface, layerInterface!.getXP(), layerInterface!.getYP(), reusableOccupyingGeographicMapCellPositionList)
-this.surroundingGeographicMapCellPositionList= cellPositionsUtil!.getAllSurrounding(geographicMapInterface, occupyingGeographicMapCellPositionList, reusableSurroundingGeographicMapCellPositionList)
-this.surroundingCircularIndexUtil!.setSize(this.surroundingGeographicMapCellPositionList!.size())
+this.occupyingGeographicMapCellPositionList= layerCoveringCellPositionsUtil!.getAll(geographicMapInterface, layerInterface, layerInterface!.getXP(), layerInterface!.getYP(), reusableOccupyingGeographicMapCellPositionList);
+    
+this.surroundingGeographicMapCellPositionList= cellPositionsUtil!.getAllSurrounding(geographicMapInterface, occupyingGeographicMapCellPositionList, reusableSurroundingGeographicMapCellPositionList);
+    
+this.surroundingCircularIndexUtil!.setSize(this.surroundingGeographicMapCellPositionList!.size());
+    
 }
 
 
@@ -119,11 +123,15 @@ this.surroundingCircularIndexUtil!.setSize(this.surroundingGeographicMapCellPosi
 
     public getNextSurroundingGeographicMapCellPosition(): GeographicMapCellPosition{
 
-    var geographicMapCellPosition: GeographicMapCellPosition = this.surroundingGeographicMapCellPositionList!.get(this.surroundingCircularIndexUtil!.getIndex()) as GeographicMapCellPosition;
-        
-        
+    var geographicMapCellPosition: GeographicMapCellPosition = this.surroundingGeographicMapCellPositionList!.get(this.surroundingCircularIndexUtil!.getIndex());
 
-this.surroundingCircularIndexUtil!.next()
+                         as GeographicMapCellPosition;
+        
+        
+;
+    
+this.surroundingCircularIndexUtil!.next();
+    
 
 
 

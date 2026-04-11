@@ -54,8 +54,10 @@ public constructor (parent: any = {}, geographicMapCellPosition: GeographicMapCe
             super();
                 //var parent = parent
     //var geographicMapCellPosition = geographicMapCellPosition
-this.parent= parent
-this.setGeographicMapCellPositionP(geographicMapCellPosition)
+this.parent= parent;
+    
+this.setGeographicMapCellPositionP(geographicMapCellPosition);
+    
 
                         if(this.geographicMapCellPosition == SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION)
                         
@@ -82,7 +84,8 @@ this.setGeographicMapCellPositionP(geographicMapCellPosition)
 
     public setGeographicMapCellPositionP(geographicMapCellPosition: GeographicMapCellPosition){
     //var geographicMapCellPosition = geographicMapCellPosition
-this.geographicMapCellPosition= geographicMapCellPosition
+this.geographicMapCellPosition= geographicMapCellPosition;
+    
 }
 
 
@@ -91,24 +94,33 @@ this.geographicMapCellPosition= geographicMapCellPosition
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(this::class.toString()!)
-stringBuffer!.append(CommonLabels.getInstance()!.COLON_SEP)
-stringBuffer!.append(" Path: ")
-stringBuffer!.append(this.geographicMapCellPosition!.toString())
+;
+    
+stringBuffer!.append(this.constructor.name.toString()!);
+    
+stringBuffer!.append(CommonLabels.getInstance()!.COLON_SEP);
+    
+stringBuffer!.append(" Path: ");
+    
+stringBuffer!.append(this.geographicMapCellPosition!.toString());
+    
 
     var pathFindingNode: PathFindingNode = this.getParentP()!;
         
         
-
+;
+    
 
         while(pathFindingNode != 
                                     null
                                 )
         {
-stringBuffer!.append(pathFindingNode!.geographicMapCellPosition!.toString())
-stringBuffer!.append(CommonSeps.getInstance()!.SPACE)
-pathFindingNode= pathFindingNode!.getParentP()
+stringBuffer!.append(pathFindingNode!.geographicMapCellPosition!.toString());
+    
+stringBuffer!.append(CommonSeps.getInstance()!.SPACE);
+    
+pathFindingNode= pathFindingNode!.getParentP();
+    
 }
 
 
@@ -116,6 +128,8 @@ pathFindingNode= pathFindingNode!.getParentP()
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

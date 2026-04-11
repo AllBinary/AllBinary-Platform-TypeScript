@@ -47,8 +47,10 @@ public constructor (name: string, angleInfo: AngleInfo){
             super();
                 //var name = name
     //var angleInfo = angleInfo
-this.name= name
-this.angleInfo= angleInfo
+this.name= name;
+    
+this.angleInfo= angleInfo;
+    
 }
 
 
@@ -58,22 +60,26 @@ var frame = frame
     var keyDirection: number =  -1;
         
         
-
+;
+    
 
     var directionAngle: number = this.angleInfo!.getAngleIncrementInfo()!.getFrameAngle(frame)!;
         
         
-
+;
+    
 
     var angle: number = this.angleInfo!.getAngle()!;
         
         
-
+;
+    
 
     var degrees: number = Math.abs(directionAngle -angle)!;
         
         
-
+;
+    
 
                         if(degrees < 180)
                         
@@ -82,7 +88,8 @@ var frame = frame
                         if(angle > directionAngle)
                         
                                     {
-                                    keyDirection= Canvas.LEFT
+                                    keyDirection= Canvas.LEFT;
+    
 
                                     }
                                 
@@ -90,7 +97,8 @@ var frame = frame
                         if(angle < directionAngle)
                         
                                     {
-                                    keyDirection= Canvas.RIGHT
+                                    keyDirection= Canvas.RIGHT;
+    
 
                                     }
                                 
@@ -102,7 +110,8 @@ var frame = frame
                         if(angle > directionAngle)
                         
                                     {
-                                    keyDirection= Canvas.RIGHT
+                                    keyDirection= Canvas.RIGHT;
+    
 
                                     }
                                 
@@ -110,7 +119,8 @@ var frame = frame
                         if(angle < directionAngle)
                         
                                     {
-                                    keyDirection= Canvas.LEFT
+                                    keyDirection= Canvas.LEFT;
+    
 
                                     }
                                 
@@ -129,10 +139,13 @@ var frame = frame
     getAIKeyPressed(frame: Integer): number{
     //var frame = frame
 
-    var angle: number = this.angleInfo!.getAngleIncrementInfo()!.getFrameAngle(frame.toInt()).toShort();
-        
-        
+    var angle: number = this.angleInfo!.getAngleIncrementInfo()!.getFrameAngle(frame.toInt());
 
+                        .toShort();
+        
+        
+;
+    
 
                         if(this.angleInfo!.getAngle() != angle)
                         
@@ -142,6 +155,8 @@ var frame = frame
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.turnAI(frame.toInt());
+
+                        ;
     
 
                                     }
@@ -165,22 +180,26 @@ var frame = frame
     var keyDirection: number =  -1;
         
         
-
+;
+    
 
     var angleIncrementInfo: AngleIncrementInfo = this.angleInfo!.getAngleIncrementInfo()!;
         
         
-
+;
+    
 
     var directionFactory: DirectionFactory = DirectionFactory.getInstance()!;
         
         
-
+;
+    
 
                         if(geographicMapDirectionData == directionFactory!.DOWN)
                         
                                     {
-                                    keyDirection= this.getAIKeyPressed(angleIncrementInfo!.DOWN_FRAME)
+                                    keyDirection= this.getAIKeyPressed(angleIncrementInfo!.DOWN_FRAME);
+    
 
                                     }
                                 
@@ -188,7 +207,8 @@ var frame = frame
                         if(geographicMapDirectionData == directionFactory!.UP)
                         
                                     {
-                                    keyDirection= this.getAIKeyPressed(angleIncrementInfo!.UP_FRAME)
+                                    keyDirection= this.getAIKeyPressed(angleIncrementInfo!.UP_FRAME);
+    
 
                                     }
                                 
@@ -196,7 +216,8 @@ var frame = frame
                         if(geographicMapDirectionData == directionFactory!.LEFT)
                         
                                     {
-                                    keyDirection= this.getAIKeyPressed(angleIncrementInfo!.LEFT_FRAME)
+                                    keyDirection= this.getAIKeyPressed(angleIncrementInfo!.LEFT_FRAME);
+    
 
                                     }
                                 
@@ -204,7 +225,8 @@ var frame = frame
                         if(geographicMapDirectionData == directionFactory!.RIGHT)
                         
                                     {
-                                    keyDirection= this.getAIKeyPressed(angleIncrementInfo!.RIGHT_FRAME)
+                                    keyDirection= this.getAIKeyPressed(angleIncrementInfo!.RIGHT_FRAME);
+    
 
                                     }
                                 

@@ -40,7 +40,8 @@ var index = index
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setId(index)
+this.setId(index);
+    
 }
 
 
@@ -56,7 +57,8 @@ this.setId(index)
 
     public setId(id: number){
 var id = id
-this.id= id
+this.id= id;
+    
 }
 
 

@@ -18,7 +18,10 @@
 
 
 
-import { Vector } from "../../../../java/util/Vector.js";
+            import Vector from "@ohos.util.Vector";
+        
+
+//import { Vector } from "../../../../java/util/Vector.js";
 
     
 import { StoreFrontFactory } from "../../../../org/allbinary/business/context/modules/storefront/StoreFrontFactory.js";
@@ -86,17 +89,20 @@ public constructor (transformInfoInterface: TransformInfoInterface)
     public isValid(): Boolean{
 
         try {
-            this.streetAddress= StreetAddress(this.getRequest())
+            this.streetAddress= StreetAddress(this.getRequest());
+    
 
     var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(this.getTransformInfoInterface()!.getStoreName())!;
         
         
-
+;
+    
 
     var taxInterface: TaxModuleInterface = TaxFactory.getInstance()!.getInstance(this.abeClientInformation, storeFrontInterface)!;
         
         
-
+;
+    
 
                         if(taxInterface == 
                                     null
@@ -129,12 +135,14 @@ public constructor (transformInfoInterface: TransformInfoInterface)
     var billingAddressesEntity: ShippingAddressesEntity = new ShippingAddressesEntity(this.getWeblisketSession()!.getUserName());
         
         
-
+;
+    
 
     var streetAddressList: Vector = billingAddressesEntity!.get()!;
         
         
-
+;
+    
 
                         if(streetAddressList == 
                                     null
@@ -154,7 +162,8 @@ public constructor (transformInfoInterface: TransformInfoInterface)
     var size: number = streetAddressList!.length!;
         
         
-
+;
+    
 
 
 
@@ -166,10 +175,13 @@ public constructor (transformInfoInterface: TransformInfoInterface)
 index < size; index++)
         {
 
-    var aStreetAddress: StreetAddress = streetAddressList!.get(index) as StreetAddress;
-        
-        
+    var aStreetAddress: StreetAddress = streetAddressList!.get(index);
 
+                         as StreetAddress;
+        
+        
+;
+    
 
                         if(aStreetAddress!.getName()!.compareTo(ShippingAddressData.TAX) == 0)
                         
@@ -191,13 +203,16 @@ index < size; index++)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return Boolean.TRUE;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("Failed to validate", this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put("Failed to validate", this, commonStrings!.IS_VALID, e);
+    
 
                                     }
                                 
@@ -221,24 +236,28 @@ index < size; index++)
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
     var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(this.getTransformInfoInterface()!.getStoreName())!;
         
         
-
+;
+    
 
     var taxInterface: TaxModuleInterface = TaxFactory.getInstance()!.getInstance(this.abeClientInformation, storeFrontInterface)!;
         
         
-
+;
+    
 
                         if(taxInterface == 
                                     null
                                 )
                         
                                     {
-                                    stringBuffer!.append("Unable to Load Tax Component<br/>")
+                                    stringBuffer!.append("Unable to Load Tax Component<br/>");
+    
 
                                     }
                                 
@@ -247,7 +266,8 @@ index < size; index++)
                         if(taxInterface!.isValid(this.streetAddress, storeFrontInterface) == Boolean.FALSE)
                         
                                     {
-                                    stringBuffer!.append("Unable to validate address with Tax Component<br/>")
+                                    stringBuffer!.append("Unable to validate address with Tax Component<br/>");
+    
 
                                     }
                                 
@@ -258,17 +278,20 @@ index < size; index++)
     var billingAddressesEntity: ShippingAddressesEntity = new ShippingAddressesEntity(this.getWeblisketSession()!.getUserName());
         
         
-
+;
+    
 
     var streetAddressList: Vector = billingAddressesEntity!.get()!;
         
         
-
+;
+    
 
     var size: number = streetAddressList!.length!;
         
         
-
+;
+    
 
 
 
@@ -280,15 +303,19 @@ index < size; index++)
 index < size; index++)
         {
 
-    var aStreetAddress: StreetAddress = streetAddressList!.get(index) as StreetAddress;
-        
-        
+    var aStreetAddress: StreetAddress = streetAddressList!.get(index);
 
+                         as StreetAddress;
+        
+        
+;
+    
 
                         if(aStreetAddress!.getName()!.compareTo(ShippingAddressData.TAX) == 0)
                         
                                     {
-                                    stringBuffer!.append("Not a valid tax location<br/>")
+                                    stringBuffer!.append("Not a valid tax location<br/>");
+    
 
                                     }
                                 
@@ -299,14 +326,19 @@ index < size; index++)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("Failed to create validateInfo", this, "validationInfo()", e)
+                                    logUtil!.put("Failed to create validateInfo", this, "validationInfo()", e);
+    
 
                                     }
                                 

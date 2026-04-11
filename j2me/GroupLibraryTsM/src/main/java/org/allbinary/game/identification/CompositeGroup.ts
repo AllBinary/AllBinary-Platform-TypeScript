@@ -60,12 +60,14 @@ public constructor (groupInterface: Group){
 
             super();
                 //var groupInterface = groupInterface
-this.groupInterface= groupInterface
+this.groupInterface= groupInterface;
+    
 }
 
 
     public clear(){
-this.list.clear()
+this.list.clear();
+    
 }
 
 
@@ -75,18 +77,26 @@ this.list.clear()
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
+;
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(ADDING_LABEL)
-stringBuffer!.append(groupInterface!.toString())
-stringBuffer!.append(TO_LABEL)
-stringBuffer!.append(StringUtil.getInstance()!.toString(this.groupInterface))
-logUtil!.put(stringBuffer!.toString(), this, commonStrings!.ADD)
-this.list.add(groupInterface)
+;
+    
+stringBuffer!.append(ADDING_LABEL);
+    
+stringBuffer!.append(groupInterface!.toString());
+    
+stringBuffer!.append(TO_LABEL);
+    
+stringBuffer!.append(StringUtil.getInstance()!.toString(this.groupInterface));
+    
+logUtil!.put(stringBuffer!.toString(), this, commonStrings!.ADD);
+    
+this.list.add(groupInterface);
+    
 }
 
 

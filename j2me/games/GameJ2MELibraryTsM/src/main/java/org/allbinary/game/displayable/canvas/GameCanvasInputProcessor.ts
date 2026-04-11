@@ -96,8 +96,10 @@ public constructor (allBinaryGameCanvas: AllBinaryGameCanvas){
 
             super();
                 //var allBinaryGameCanvas = allBinaryGameCanvas
-this.allBinaryGameCanvas= allBinaryGameCanvas
-this.inputToGameKeyMapping!.init(this.allBinaryGameCanvas)
+this.allBinaryGameCanvas= allBinaryGameCanvas;
+    
+this.inputToGameKeyMapping!.init(this.allBinaryGameCanvas);
+    
 }
 
 
@@ -118,7 +120,8 @@ this.inputToGameKeyMapping!.init(this.allBinaryGameCanvas)
     var gameKey: GameKey = this.inputToGameKeyMapping!.getInstance(this.allBinaryGameCanvas, keyCode)!;
         
         
-
+;
+    
 
                         if(gameKey != NONE)
                         
@@ -127,15 +130,19 @@ this.inputToGameKeyMapping!.init(this.allBinaryGameCanvas)
     var gameKeyEvent: GameKeyEvent = gameKeyEventFactory!.getInstance(this.allBinaryGameCanvas, gameKey)!;
         
         
-
-downGameKeyEventHandler!.fireEvent(gameKeyEvent)
-downGameKeyEventHandler!.getInstance(deviceId)!.fireEvent(gameKeyEvent)
+;
+    
+downGameKeyEventHandler!.fireEvent(gameKeyEvent);
+    
+downGameKeyEventHandler!.getInstance(deviceId)!.fireEvent(gameKeyEvent);
+    
 
                                     }
                                 
                         else {
                             logUtil!.put(StringMaker().
-                            append(this.gameInputStrings!.NO_KEY)!.appendint(keyCode)!.toString(), this, this.gameInputStrings!.ADD_KEY_EVENT)
+                            append(this.gameInputStrings!.NO_KEY)!.appendint(keyCode)!.toString(), this, this.gameInputStrings!.ADD_KEY_EVENT);
+    
 
                         }
                             
@@ -143,12 +150,18 @@ downGameKeyEventHandler!.getInstance(deviceId)!.fireEvent(gameKeyEvent)
     var keyCodeAsInteger: Integer = smallIntegerSingletonFactory!.getInstanceNoThrow(keyCode)!;
         
         
+;
+    
+downKeyEventHandler!.fireEvent(keyCodeAsInteger);
+    
+downKeyEventHandler!.getInstance(deviceId)!.fireEvent(keyCodeAsInteger);
+    
 
-downKeyEventHandler!.fireEvent(keyCodeAsInteger)
-downKeyEventHandler!.getInstance(deviceId)!.fireEvent(keyCodeAsInteger)
-} catch(e: Exception)
+                //: 
+} catch(e) 
             {
-logUtil!.put("Key Event Error", this, this.gameInputStrings!.ADD_KEY_EVENT, e)
+logUtil!.put("Key Event Error", this, this.gameInputStrings!.ADD_KEY_EVENT, e);
+    
 }
 
 }
@@ -158,7 +171,8 @@ logUtil!.put("Key Event Error", this, this.gameInputStrings!.ADD_KEY_EVENT, e)
     //var canvas = canvas
     //var keyCode = keyCode
     //var deviceId = deviceId
-this.removeGameKeyEvent(canvas, keyCode, deviceId, false)
+this.removeGameKeyEvent(canvas, keyCode, deviceId, false);
+    
 }
 
 
@@ -173,7 +187,8 @@ this.removeGameKeyEvent(canvas, keyCode, deviceId, false)
     var gameKey: GameKey = this.inputToGameKeyMapping!.getInstance(canvas, keyCode)!;
         
         
-
+;
+    
 
                         if(gameKey != NONE)
                         
@@ -182,21 +197,28 @@ this.removeGameKeyEvent(canvas, keyCode, deviceId, false)
     var gameKeyEvent: GameKeyEvent = gameKeyEventFactory!.getInstance(canvas as GameKeyEventSourceInterface, gameKey)!;
         
         
-
-upGameKeyEventHandler!.fireEvent(gameKeyEvent)
-upGameKeyEventHandler!.getInstance(deviceId)!.fireEvent(gameKeyEvent)
+;
+    
+upGameKeyEventHandler!.fireEvent(gameKeyEvent);
+    
+upGameKeyEventHandler!.getInstance(deviceId)!.fireEvent(gameKeyEvent);
+    
 
                                     }
                                 
                         else {
                             logUtil!.put(StringMaker().
-                            append(this.gameInputStrings!.NO_KEY)!.appendint(keyCode)!.toString(), this, this.gameInputStrings!.REMOVE_KEY_EVENT)
+                            append(this.gameInputStrings!.NO_KEY)!.appendint(keyCode)!.toString(), this, this.gameInputStrings!.REMOVE_KEY_EVENT);
+    
 
                         }
                             
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put("Key Event Error", this, this.gameInputStrings!.REMOVE_KEY_EVENT, e)
+logUtil!.put("Key Event Error", this, this.gameInputStrings!.REMOVE_KEY_EVENT, e);
+    
 }
 
 }

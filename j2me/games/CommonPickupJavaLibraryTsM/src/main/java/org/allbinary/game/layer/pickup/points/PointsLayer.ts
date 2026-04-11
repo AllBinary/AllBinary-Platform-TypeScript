@@ -51,7 +51,8 @@ public constructor (points: number)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.points= points
+this.points= points;
+    
 }
 
 
@@ -62,7 +63,8 @@ var graphics = graphics
 
     public visit(scoreableInterface: ScoreableInterface){
 var scoreableInterface = scoreableInterface
-scoreableInterface!.addPoints(this.points)
+scoreableInterface!.addPoints(this.points);
+    
 }
 
 

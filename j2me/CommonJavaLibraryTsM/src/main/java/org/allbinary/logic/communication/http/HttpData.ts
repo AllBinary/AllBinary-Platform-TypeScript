@@ -57,10 +57,14 @@ private constructor (){
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
         
         
-
-this.EQUALS= commonSeps!.EQUALS
-this.PARAM_SEP= commonSeps!.AMPERSAND
-this.URL_PARAM_SEP= commonSeps!.QUESTION
+;
+    
+this.EQUALS= commonSeps!.EQUALS;
+    
+this.PARAM_SEP= commonSeps!.AMPERSAND;
+    
+this.URL_PARAM_SEP= commonSeps!.QUESTION;
+    
 }
 
 

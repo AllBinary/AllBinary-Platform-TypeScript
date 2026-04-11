@@ -66,10 +66,13 @@ private constructor (){
     public addListener(analogControllerConfigurationEventListenerInterface: AnalogControllerConfigurationEventListenerInterface){
 var analogControllerConfigurationEventListenerInterface = analogControllerConfigurationEventListenerInterface
 
-                        if(!list.contains(analogControllerConfigurationEventListenerInterface))
+                        if(!list.contains(analogControllerConfigurationEventListenerInterface);
+
+                        )
                         
                                     {
-                                    list.add(analogControllerConfigurationEventListenerInterface)
+                                    list.add(analogControllerConfigurationEventListenerInterface);
+    
 
                                     }
                                 
@@ -77,15 +80,19 @@ var analogControllerConfigurationEventListenerInterface = analogControllerConfig
 
 
     public removeAllListeners(){
-this.list.clear()
-super.removeAllListeners()
+this.list.clear();
+    
+super.removeAllListeners();
+    
 }
 
 
     public removeListener(eventListenerInterface: EventListenerInterface){
 var eventListenerInterface = eventListenerInterface
-this.list.remove(eventListenerInterface)
-super.removeListener(eventListenerInterface)
+this.list.remove(eventListenerInterface);
+    
+super.removeListener(eventListenerInterface);
+    
 }
 
 
@@ -109,16 +116,22 @@ var eventObject = eventObject
     var playerGameInput: AnalogControllerConfigurationEventListenerInterface = this.list.objectArray[index]! as AnalogControllerConfigurationEventListenerInterface;
         
         
+;
+    
+playerGameInput!.onAnalogControllerConfigurationEvent(eventObject as AnalogControllerConfigurationEvent);
+    
 
-playerGameInput!.onAnalogControllerConfigurationEvent(eventObject as AnalogControllerConfigurationEvent)
-} catch(e: Exception)
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e);
+    
 }
 
 }
 
-super.fireEvent(eventObject)
+super.fireEvent(eventObject);
+    
 }
 
 
@@ -131,8 +144,10 @@ super.fireEvent(eventObject)
     var analogControllerConfigurationEventListenerInterface: AnalogControllerConfigurationEventListenerInterface = (eventListenerInterface as AnalogControllerConfigurationEventListenerInterface);
         
         
-
-analogControllerConfigurationEventListenerInterface!.onAnalogControllerConfigurationEvent(eventObject as AnalogControllerConfigurationEvent)
+;
+    
+analogControllerConfigurationEventListenerInterface!.onAnalogControllerConfigurationEvent(eventObject as AnalogControllerConfigurationEvent);
+    
 }
 
 

@@ -70,40 +70,50 @@ private constructor (){
 
                 //@Throws(Error::class, LicensingException::class)
             
-    public getInstance(abeClientInformation: AbeClientInformationInterface, hashMap: HashMap<Any, Any>): WorkFlowInterface{
+    public getInstance(abeClientInformation: AbeClientInformationInterface, hashMap: HashMap<any, any>): WorkFlowInterface{
     //var abeClientInformation = abeClientInformation
     //var hashMap = hashMap
 
         try {
             
-    var className: string = hashMap!.get(DynamicObjectData.NAME) as String;
-        
-        
+    var className: string = hashMap!.get(DynamicObjectData.NAME);
 
-
-    var params: any = {}[] = new Array(1);
+                         as String;
         
         
+;
+    
 
-
-    var classes: KClass<*>[] = new Array(1);
+    var params: any[] = new Array(1);
         
         
+;
+    
 
-classes[0]= hashMap!::class
-params[0]= hashMap as Object
+    var classes: Function[] = new Array(1);
+        
+        
+;
+    
+classes[0]= hashMap!constructor;
+    
+params[0]= hashMap as Object;
+    
 
     var anyType: any = {} = AbeFactory.getInstance()!.getInstance(abeClientInformation, className, classes, params)!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return WorkFlowWrapper(anyType) as WorkFlowInterface;
     
-} catch(e: LicensingException)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORYERROR))
@@ -113,8 +123,10 @@ params[0]= hashMap as Object
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(HashMap)", e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(HashMap)", e);
+    
 
                                     }
                                 
@@ -123,7 +135,9 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(HashMap)", e)
 
                             throw e
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORYERROR))
@@ -133,8 +147,10 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(HashMap)", e)
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(HashMap)", e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(HashMap)", e);
+    
 
                                     }
                                 

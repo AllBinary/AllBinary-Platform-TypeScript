@@ -72,12 +72,15 @@ export class LayerCoveringCellPositionsUtil
     var topLeftGeographicMapCellPosition: GeographicMapCellPosition = geographicMapInterface!.getCellPositionAt(x, y)!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getAll(geographicMapInterface, topLeftGeographicMapCellPosition, layerInterface, reusableList);
+
+                        ;
     
 }
 
@@ -89,17 +92,20 @@ export class LayerCoveringCellPositionsUtil
     //var topLeftGeographicMapCellPosition = topLeftGeographicMapCellPosition
     //var layerInterface = layerInterface
     //var reusableList = reusableList
-reusableList!.clear()
+reusableList!.clear();
+    
 
     var columns: number = layerInterface!.getWidth() /geographicMapInterface!.getAllBinaryTiledLayer()!.getCellWidth();
         
         
-
+;
+    
 
     var rows: number = layerInterface!.getHeight() /geographicMapInterface!.getAllBinaryTiledLayer()!.getCellHeight();
         
         
-
+;
+    
 
                         if(columns == 0)
                         columns= 1
@@ -111,6 +117,8 @@ reusableList!.clear()
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return cellPositionsUtil!.getAll(geographicMapInterface, topLeftGeographicMapCellPosition, columns, rows, reusableList);
+
+                        ;
     
 }
 

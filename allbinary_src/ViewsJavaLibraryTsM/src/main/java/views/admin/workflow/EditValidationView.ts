@@ -66,11 +66,15 @@ public constructor (transformInfoInterface: TransformInfoInterface)
                             //For kotlin this is before the body of the constructor.
                     
 
-    var httpTransformInfoInterface: TransformInfoHttpInterface = this.getTransformInfoInterface() as TransformInfoHttpInterface;
-        
-        
+    var httpTransformInfoInterface: TransformInfoHttpInterface = this.getTransformInfoInterface();
 
-this.workFlowName= httpTransformInfoInterface!.getPageContext()!.getRequest()!.getParameter(WorkFlowData.getInstance()!.NAME)
+                         as TransformInfoHttpInterface;
+        
+        
+;
+    
+this.workFlowName= httpTransformInfoInterface!.getPageContext()!.getRequest()!.getParameter(WorkFlowData.getInstance()!.NAME);
+    
 }
 
 
@@ -102,7 +106,8 @@ this.workFlowName= httpTransformInfoInterface!.getPageContext()!.getRequest()!.g
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("WorkFlow does not exist.", this, commonStrings!.IS_VALID)
+                                    logUtil!.put("WorkFlow does not exist.", this, commonStrings!.IS_VALID);
+    
 
                                     }
                                 
@@ -121,13 +126,16 @@ this.workFlowName= httpTransformInfoInterface!.getPageContext()!.getRequest()!.g
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return Boolean.TRUE;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("Failed to validate form", this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put("Failed to validate form", this, commonStrings!.IS_VALID, e);
+    
 
                                     }
                                 
@@ -149,14 +157,16 @@ this.workFlowName= httpTransformInfoInterface!.getPageContext()!.getRequest()!.g
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
                         if(this.workFlowName == 
                                     null
                                 )
                         
                                     {
-                                    stringBuffer!.append("WorkFlow name is invalid<br />")
+                                    stringBuffer!.append("WorkFlow name is invalid<br />");
+    
 
                                     }
                                 
@@ -170,11 +180,13 @@ this.workFlowName= httpTransformInfoInterface!.getPageContext()!.getRequest()!.g
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("WorkFlow does not exist.", this, "validationInfo()")
+                                    logUtil!.put("WorkFlow does not exist.", this, "validationInfo()");
+    
 
                                     }
                                 
-stringBuffer!.append("WorkFlow does not exist<br />")
+stringBuffer!.append("WorkFlow does not exist<br />");
+    
 
                                     }
                                 
@@ -183,14 +195,19 @@ stringBuffer!.append("WorkFlow does not exist<br />")
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e)
+                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e);
+    
 
                                     }
                                 

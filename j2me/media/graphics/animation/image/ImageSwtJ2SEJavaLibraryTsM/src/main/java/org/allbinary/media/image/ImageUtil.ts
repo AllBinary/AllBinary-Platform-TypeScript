@@ -107,10 +107,14 @@ private constructor (){
             super();
             
         try {
-            logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
-} catch(e: Exception)
+            logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e);
+    
 }
 
 }
@@ -123,7 +127,8 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
     var display: Display = BareMain.shell.getDisplay()!;
         
         
-
+;
+    
 
 
 
@@ -144,18 +149,22 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
                 ;
         
         
-
+;
+    
 
     var scaledBufferedImageArray: org.eclipse.swt.graphics.Image[] = new Array(size);
         
         
-
+;
+    
 
     var bufferedImage: org.eclipse.swt.graphics.Image
-
+;
+    
 
     var imageData: ImageData
-
+;
+    
 
 
 
@@ -166,19 +175,24 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
         
 index < size; index++)
         {
-bufferedImage= bufferedImageArray[index]!
-imageData= bufferedImage!.getImageData()
+bufferedImage= bufferedImageArray[index]!;
+    
+imageData= bufferedImage!.getImageData();
+    
 
     var newWidth: number = (imageData!.width *percent /100).toInt();
         
         
-
+;
+    
 
     var newHeight: number = (imageData!.height *percent /100).toInt();
         
         
-
-scaledBufferedImageArray[index]= this.createBufferedImage(bufferedImage, newWidth, newHeight, scale)
+;
+    
+scaledBufferedImageArray[index]= this.createBufferedImage(bufferedImage, newWidth, newHeight, scale);
+    
 }
 
 
@@ -201,18 +215,22 @@ scaledBufferedImageArray[index]= this.createBufferedImage(bufferedImage, newWidt
                 ;
         
         
-
+;
+    
 
     var scaledBufferedImageArray: org.eclipse.swt.graphics.Image[] = new Array(size);
         
         
-
+;
+    
 
     var bufferedImage: org.eclipse.swt.graphics.Image
-
+;
+    
 
     var imageData: ImageData
-
+;
+    
 
 
 
@@ -223,19 +241,24 @@ scaledBufferedImageArray[index]= this.createBufferedImage(bufferedImage, newWidt
         
 index < size; index++)
         {
-bufferedImage= bufferedImageArray[index]!
-imageData= bufferedImage!.getImageData()
+bufferedImage= bufferedImageArray[index]!;
+    
+imageData= bufferedImage!.getImageData();
+    
 
     var newWidth: number = (imageData!.width *percent).toInt();
         
         
-
+;
+    
 
     var newHeight: number = (imageData!.height *percent).toInt();
         
         
-
-scaledBufferedImageArray[index]= this.createBufferedImage(bufferedImage, newWidth, newHeight, scale)
+;
+    
+scaledBufferedImageArray[index]= this.createBufferedImage(bufferedImage, newWidth, newHeight, scale);
+    
 }
 
 
@@ -259,12 +282,14 @@ scaledBufferedImageArray[index]= this.createBufferedImage(bufferedImage, newWidt
                 ;
         
         
-
+;
+    
 
     var scaledBufferedImageArray: org.eclipse.swt.graphics.Image[] = new Array(size);
         
         
-
+;
+    
 
 
 
@@ -275,7 +300,8 @@ scaledBufferedImageArray[index]= this.createBufferedImage(bufferedImage, newWidt
         
 index < size; index++)
         {
-scaledBufferedImageArray[index]= this.createBufferedImage(bufferedImageArray[index]!, width, height, scale)
+scaledBufferedImageArray[index]= this.createBufferedImage(bufferedImageArray[index]!, width, height, scale);
+    
 }
 
 
@@ -298,6 +324,8 @@ var newHeight = newHeight
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.createBufferedImage(bufferedImage, newWidth, newHeight, true);
+
+                        ;
     
 }
 
@@ -314,6 +342,8 @@ var newHeight = newHeight
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.createBufferedImage(bufferedImage, newWidth, newHeight, scale, false);
+
+                        ;
     
 }
 
@@ -330,76 +360,93 @@ var newHeight = newHeight
     var imageData: ImageData = bufferedImage!.getImageData()!;
         
         
-
+;
+    
 
     var width: number = imageData!.width;
         
         
-
+;
+    
 
     var height: number = imageData!.height;
         
         
-
+;
+    
 
     var d_newWidth: number = newWidth;
         
         
-
+;
+    
 
     var d_newHeight: number = newHeight;
         
         
-
+;
+    
 
     var widthRatio: number = d_newWidth /width;
         
         
-
+;
+    
 
     var heightRatio: number = d_newHeight /height;
         
         
-
+;
+    
 
     var ratioX: number = 1.0f;
         
         
-
+;
+    
 
     var ratioY: number = 1.0f;
         
         
-
+;
+    
 
                         if(scale)
                         
                                     {
-                                    ratioX= widthRatio
-ratioY= heightRatio
+                                    ratioX= widthRatio;
+    
+ratioY= heightRatio;
+    
 
                                     }
                                 
 logUtil!.put(StringMaker().
-                            appendfloat(width)!.append(this.commonSeps!.FORWARD_SLASH)!.appendfloat(height)!.append(this.commonSeps!.COLON)!.appendint(newWidth)!.append(this.commonSeps!.FORWARD_SLASH)!.appendint(newHeight)!.append(this.commonSeps!.COLON)!.appendfloat(widthRatio)!.append(this.commonSeps!.FORWARD_SLASH)!.appendfloat(heightRatio)!.toString(), this, CREATE_BUFFERED_IMAGE)
+                            appendfloat(width)!.append(this.commonSeps!.FORWARD_SLASH)!.appendfloat(height)!.append(this.commonSeps!.COLON)!.appendint(newWidth)!.append(this.commonSeps!.FORWARD_SLASH)!.appendint(newHeight)!.append(this.commonSeps!.COLON)!.appendfloat(widthRatio)!.append(this.commonSeps!.FORWARD_SLASH)!.appendfloat(heightRatio)!.toString(), this, CREATE_BUFFERED_IMAGE);
+    
 
     var dx: number = 0;
         
         
-
+;
+    
 
     var dy: number = 0;
         
         
-
+;
+    
 
                         if(!scale && allowTranslate)
                         
                                     {
-                                    dx= (newWidth -width) /2
-dy= (newHeight -height) /2
+                                    dx= (newWidth -width) /2;
+    
+dy= (newHeight -height) /2;
+    
 logUtil!.put(StringMaker().
-                            append("Translate dx: ")!.appendfloat(dx)!.append(" dy: ")!.appendfloat(dy)!.toString(), this, CREATE_BUFFERED_IMAGE)
+                            append("Translate dx: ")!.appendfloat(dx)!.append(" dy: ")!.appendfloat(dy)!.toString(), this, CREATE_BUFFERED_IMAGE);
+    
 
                                     }
                                 
@@ -407,24 +454,34 @@ logUtil!.put(StringMaker().
     var newBufferedImage: org.eclipse.swt.graphics.Image = new org.eclipse.swt.graphics.Image(BareMain.shell.getDisplay(), newWidth, newHeight);
         
         
-
+;
+    
 
     var gc: GC = new GC(newBufferedImage);
         
         
-
+;
+    
 
     var affineTransform: Transform = new Transform(gc.getDevice());
         
         
-
-affineTransform!.scale(ratioX, ratioY)
-affineTransform!.translate(dx, dy)
-gc.setTransform(affineTransform)
-gc.setAntialias(SWT.ON)
-gc.setInterpolation(SWT.HIGH)
-gc.drawImage(bufferedImage, 0, 0, bufferedImage!.getBounds()!.width, bufferedImage!.getBounds()!.height, 0, 0, newWidth, newHeight)
-gc.dispose()
+;
+    
+affineTransform!.scale(ratioX, ratioY);
+    
+affineTransform!.translate(dx, dy);
+    
+gc.setTransform(affineTransform);
+    
+gc.setAntialias(SWT.ON);
+    
+gc.setInterpolation(SWT.HIGH);
+    
+gc.drawImage(bufferedImage, 0, 0, bufferedImage!.getBounds()!.width, bufferedImage!.getBounds()!.height, 0, 0, newWidth, newHeight);
+    
+gc.dispose();
+    
 
 
 
@@ -445,7 +502,8 @@ gc.dispose()
     var imageCanvas: Canvas = new Canvas(parent, SWT.NONE);
         
         
-
+;
+    
 imageCanvas!.addPaintListener(object: PaintListener()
                                 {
                                 
@@ -455,20 +513,27 @@ var event = event
     var gc: GC = event.gc;
         
         
-
+;
+    
 
     var affineTransform: Transform = new Transform(gc.getDevice());
         
         
-
-affineTransform!.translate(dx, dy)
-gc.setAntialias(SWT.ON)
-gc.setInterpolation(SWT.HIGH)
-gc.drawImage(image, 0, 0, image.getBounds()!.width, image.getBounds()!.height, 0, 0, width, height)
+;
+    
+affineTransform!.translate(dx, dy);
+    
+gc.setAntialias(SWT.ON);
+    
+gc.setInterpolation(SWT.HIGH);
+    
+gc.drawImage(image, 0, 0, image.getBounds()!.width, image.getBounds()!.height, 0, 0, width, height);
+    
 }
 
                                 }
-                            )
+                            );
+    
 
 
 
@@ -484,29 +549,41 @@ var bufferedImage = bufferedImage
     var commonLabels: CommonLabels = CommonLabels.getInstance()!;
         
         
-
+;
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
     var imageData: ImageData = bufferedImage!.getImageData()!;
         
         
-
-stringBuffer!.append(" org.eclipse.swt.graphics.Image: ")
-stringBuffer!.append(commonLabels!.WIDTH_LABEL)
-stringBuffer!.appendint(imageData!.width)
-stringBuffer!.append(commonLabels!.HEIGHT_LABEL)
-stringBuffer!.appendint(imageData!.height)
-stringBuffer!.append(" Type: ")
-stringBuffer!.appendint(imageData!.type)
+;
+    
+stringBuffer!.append(" org.eclipse.swt.graphics.Image: ");
+    
+stringBuffer!.append(commonLabels!.WIDTH_LABEL);
+    
+stringBuffer!.appendint(imageData!.width);
+    
+stringBuffer!.append(commonLabels!.HEIGHT_LABEL);
+    
+stringBuffer!.appendint(imageData!.height);
+    
+stringBuffer!.append(" Type: ");
+    
+stringBuffer!.appendint(imageData!.type);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

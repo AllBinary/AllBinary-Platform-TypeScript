@@ -70,14 +70,16 @@ var node = node
     var actionNameNode: Node = DomSearchHelper.getNode(GenericProfileActionData.NAME, node.getChildNodes())!;
         
         
-
+;
+    
 
                         if(actionNameNode != 
                                     null
                                 )
                         
                                     {
-                                    this.name= DomNodeHelper.getTextNodeValue(actionNameNode)
+                                    this.name= DomNodeHelper.getTextNodeValue(actionNameNode);
+    
 
                                     }
                                 
@@ -89,15 +91,18 @@ var node = node
 
                         }
                             
-this.setGenericProfileActionScript(GenericProfileActionScript(this.genericProfileActionJPanel, node))
+this.setGenericProfileActionScript(GenericProfileActionScript(this.genericProfileActionJPanel, node));
+    
 }
 
 public constructor (name: string){
 
             super();
             var name = name
-this.name= name
-this.setGenericProfileActionScript(GenericProfileActionScript(this.genericProfileActionJPanel))
+this.name= name;
+    
+this.setGenericProfileActionScript(GenericProfileActionScript(this.genericProfileActionJPanel));
+    
 }
 
 
@@ -113,18 +118,22 @@ this.setGenericProfileActionScript(GenericProfileActionScript(this.genericProfil
 
     public setName(name: string){
 var name = name
-this.name= name
+this.name= name;
+    
 }
 
 
-    public toHashMap(): HashMap<Any, Any>{
+    public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
         
         
-
-hashMap!.put(GenericProfileActionData.NAME, this.name)
-logUtil!.put("HashMap: " +hashMap!.toString(), this, "toHashMap()")
+;
+    
+hashMap!.put(GenericProfileActionData.NAME, this.name);
+    
+logUtil!.put("HashMap: " +hashMap!.toString(), this, "toHashMap()");
+    
 
 
 
@@ -142,8 +151,10 @@ var document = document
     var node: Node = ModDomHelper.createNodeWithValueNodes(document, GenericProfileActionData.NAME, this.toHashMap())!;
         
         
-
-node.appendChild(getGenericProfileActionScript()!.toXmlNode(document))
+;
+    
+node.appendChild(getGenericProfileActionScript()!.toXmlNode(document));
+    
 
 
 
@@ -165,7 +176,8 @@ node.appendChild(getGenericProfileActionScript()!.toXmlNode(document))
 
     public setGenericProfileActionScript(genericProfileActionScript: GenericProfileActionScript){
 var genericProfileActionScript = genericProfileActionScript
-this.genericProfileActionScript= genericProfileActionScript
+this.genericProfileActionScript= genericProfileActionScript;
+    
 }
 
 

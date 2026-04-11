@@ -18,10 +18,16 @@
 
 
 
-import { Hashtable } from "../../../../../java/util/Hashtable.js";
+            import Vector from "@ohos.util.Vector";
+        
+            import Hashtable from "@ohos.util.HashMap";
+        
+
+//import { Hashtable } from "../../../../../java/util/Hashtable.js";
 
     
-import { Vector } from "../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../java/util/Vector.js";
 
     
 import { ChoiceGroup } from "../../../../../javax/microedition/lcdui/ChoiceGroup.js";
@@ -507,7 +513,7 @@ export class AllBinaryGameCanvas extends RunnableCanvas
 
     private isCheating: boolean= false
 
-    private hashtable: Hashtable<Any, Any> = this.nullUtil!.NULL_TABLE;
+    private hashtable: Hashtable<any, any> = this.nullUtil!.NULL_TABLE;
         
         
 
@@ -670,62 +676,85 @@ public constructor (commandListener: CommandListener, gameLayerManager: AllBinar
 
                             //For kotlin this is before the body of the constructor.
                     
-this.highScoresHelper= highScoresFactoryInterface!.createHighScoresHelper()
-this.gameInitializationInterfaceFactoryInterface= gameInitializationInterfaceFactoryInterface
-this.init(gameLayerManager, buffered)
-this.highScoresFactoryInterface= highScoresFactoryInterface
+this.highScoresHelper= highScoresFactoryInterface!.createHighScoresHelper();
+    
+this.gameInitializationInterfaceFactoryInterface= gameInitializationInterfaceFactoryInterface;
+    
+this.init(gameLayerManager, buffered);
+    
+this.highScoresFactoryInterface= highScoresFactoryInterface;
+    
 
                         if(this.gameLayerManager!.getGameInfo()!.getGameType() == gameTypeFactory!.BOT)
                         
                                     {
-                                    this.gameBehavior= DemoGameBehavior.getInstance()
-this.menuBehavior= BaseMenuBehavior.getInstance()
+                                    this.gameBehavior= DemoGameBehavior.getInstance();
+    
+this.menuBehavior= BaseMenuBehavior.getInstance();
+    
 
                                     }
                                 
                         else {
-                            this.gameBehavior= BaseGameBehavior.getInstance()
-this.menuBehavior= this.getInGameMenuBehavior()
+                            this.gameBehavior= BaseGameBehavior.getInstance();
+    
+this.menuBehavior= this.getInGameMenuBehavior();
+    
 
                         }
                             
-this.initSpecialPaint()
-this.initPopupMenu()
-this.initMenu()
-DisplayChangeEventHandler.getInstance()!.addListener(this)
+this.initSpecialPaint();
+    
+this.initPopupMenu();
+    
+this.initMenu();
+    
+DisplayChangeEventHandler.getInstance()!.addListener(this);
+    
 }
 
 public constructor (gameLayerManager: AllBinaryGameLayerManager){
 
             super();
                 //var gameLayerManager = gameLayerManager
-this.highScoresHelper= NoHighScoresFactory.getInstance()!.createHighScoresHelper()
+this.highScoresHelper= NoHighScoresFactory.getInstance()!.createHighScoresHelper();
+    
 
                         if(this.gameLayerManager!.getGameInfo()!.getGameType() == gameTypeFactory!.BOT)
                         
                                     {
-                                    this.gameBehavior= DemoGameBehavior.getInstance()
-this.menuBehavior= BaseMenuBehavior.getInstance()
+                                    this.gameBehavior= DemoGameBehavior.getInstance();
+    
+this.menuBehavior= BaseMenuBehavior.getInstance();
+    
 
                                     }
                                 
                         else {
-                            this.gameBehavior= BaseGameBehavior.getInstance()
-this.menuBehavior= this.getInGameMenuBehavior()
+                            this.gameBehavior= BaseGameBehavior.getInstance();
+    
+this.menuBehavior= this.getInGameMenuBehavior();
+    
 
                         }
                             
-this.gameLayerManager= gameLayerManager
-this.highScoresFactoryInterface= NoHighScoresFactory.getInstance()
+this.gameLayerManager= gameLayerManager;
+    
+this.highScoresFactoryInterface= NoHighScoresFactory.getInstance();
+    
 }
 
 public constructor (){
 
             super();
-            this.highScoresHelper= NoHighScoresFactory.getInstance()!.createHighScoresHelper()
-this.gameBehavior= DemoGameBehavior.getInstance()
-this.menuBehavior= BaseMenuBehavior.getInstance()
-this.highScoresFactoryInterface= NoHighScoresFactory.getInstance()
+            this.highScoresHelper= NoHighScoresFactory.getInstance()!.createHighScoresHelper();
+    
+this.gameBehavior= DemoGameBehavior.getInstance();
+    
+this.menuBehavior= BaseMenuBehavior.getInstance();
+    
+this.highScoresFactoryInterface= NoHighScoresFactory.getInstance();
+    
 }
 
 
@@ -735,6 +764,8 @@ this.highScoresFactoryInterface= NoHighScoresFactory.getInstance()
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return InGameMenuBehavior.getInstance();
+
+                        ;
     
 }
 
@@ -744,12 +775,14 @@ this.highScoresFactoryInterface= NoHighScoresFactory.getInstance()
                         if(J2MEUtil.isHTML())
                         
                                     {
-                                    super.setCurrentThreadFake()
+                                    super.setCurrentThreadFake();
+    
 
                                     }
                                 
                         else {
-                            super.setCurrentThread()
+                            super.setCurrentThread();
+    
 
                         }
                             
@@ -758,7 +791,8 @@ this.highScoresFactoryInterface= NoHighScoresFactory.getInstance()
 
     public onEvent(eventObject: AllBinaryEventObject){
     //var eventObject = eventObject
-ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
+ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
+    
 }
 
 
@@ -766,10 +800,14 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
     //var displayChangeEvent = displayChangeEvent
 
         try {
-            this.menuBehavior!.onDisplayChangeEvent(this, displayChangeEvent)
-} catch(e: Exception)
+            this.menuBehavior!.onDisplayChangeEvent(this, displayChangeEvent);
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, this.canvasStrings!.ON_DISPLAY_CHANGE_EVENT, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, this.canvasStrings!.ON_DISPLAY_CHANGE_EVENT, e);
+    
 }
 
 }
@@ -783,28 +821,38 @@ logUtil!.put(commonStrings!.EXCEPTION, this, this.canvasStrings!.ON_DISPLAY_CHAN
     var formUtil: FormUtil = FormUtil.getInstance()!;
         
         
-
+;
+    
 
     var popupMenuRectangle: Rectangle = formUtil!.createPopupMenuRectangle()!;
         
         
+;
+    
 
+    var basicPopupMenuPaintable: BasicPopupMenuPaintable = (this.getOpenMenuPaintable();
 
-    var basicPopupMenuPaintable: BasicPopupMenuPaintable = (this.getOpenMenuPaintable() as BasicPopupMenuPaintable);
+                         as BasicPopupMenuPaintable);
         
         
-
-basicPopupMenuPaintable!.init(popupMenuRectangle)
+;
+    
+basicPopupMenuPaintable!.init(popupMenuRectangle);
+    
 
                         if(this.getPopupMenuInputProcessor() != NoMenuInputProcessor.getInstance())
                         
                                     {
                                     
-    var popupMenuInputProcessor: PopupMenuInputProcessor = (this.getPopupMenuInputProcessor() as PopupMenuInputProcessor);
-        
-        
+    var popupMenuInputProcessor: PopupMenuInputProcessor = (this.getPopupMenuInputProcessor();
 
-popupMenuInputProcessor!.init(popupMenuRectangle)
+                         as PopupMenuInputProcessor);
+        
+        
+;
+    
+popupMenuInputProcessor!.init(popupMenuRectangle);
+    
 
                                     }
                                 
@@ -812,18 +860,22 @@ popupMenuInputProcessor!.init(popupMenuRectangle)
     var formType: FormType = FormTypeFactory.getInstance()!.getFormType()!;
         
         
-
+;
+    
 
     var rectangle: Rectangle = formUtil!.createFormRectangle()!;
         
         
-
-this.menuForm!.init(rectangle, formType)
+;
+    
+this.menuForm!.init(rectangle, formType);
+    
 
                         if(this.currentTouchInputFactory != NoButtonsTouchInputFactory.getInstance())
                         
                                     {
-                                    touchButtonFactory!.toggle(this.isPaused(), this.currentTouchInputFactory!.getList())
+                                    touchButtonFactory!.toggle(this.isPaused(), this.currentTouchInputFactory!.getList());
+    
 
                                     }
                                 
@@ -833,16 +885,20 @@ this.menuForm!.init(rectangle, formType)
                 //@Throws(Error::class)
             
     public processSleep(){
-super.processSleep()
+super.processSleep();
+    
 
                         if(AllBinaryMediaManager.update())
                         
                                     {
                                     
-                        if(!primaryPlayerQueue!.process())
+                        if(!primaryPlayerQueue!.process();
+
+                        )
                         
                                     {
-                                    secondaryPlayerQueue!.process()
+                                    secondaryPlayerQueue!.process();
+    
 
                                     }
                                 
@@ -853,7 +909,8 @@ super.processSleep()
                         if(this.menuInputProcessor!.processInput() !=  -1)
                         
                                     {
-                                    this.runnableCanvasRefreshHelper!.process()
+                                    this.runnableCanvasRefreshHelper!.process();
+    
 
                                     }
                                 
@@ -867,18 +924,22 @@ super.processSleep()
     var features: Features = Features.getInstance()!;
         
         
-
+;
+    
 
     var popupMenuRectangle: Rectangle = FormUtil.getInstance()!.createPopupMenuRectangle()!;
         
         
-
+;
+    
 
                         if(features.isFeature(touchFeatureFactory!.TOUCH_ENABLED))
                         
                                     {
-                                    this.setOpenMenuPaintable(BasicPopupMenuPaintable(popupMenuRectangle, this.gameLayerManager!.getBackgroundBasicColor(), this.gameLayerManager!.getForegroundBasicColor()))
-this.setPopupMenuInputProcessor(PopupMenuInputProcessor(BasicArrayList(),  -1, this, popupMenuRectangle))
+                                    this.setOpenMenuPaintable(BasicPopupMenuPaintable(popupMenuRectangle, this.gameLayerManager!.getBackgroundBasicColor(), this.gameLayerManager!.getForegroundBasicColor()));
+    
+this.setPopupMenuInputProcessor(PopupMenuInputProcessor(BasicArrayList(),  -1, this, popupMenuRectangle));
+    
 
                                     }
                                 
@@ -888,10 +949,14 @@ this.setPopupMenuInputProcessor(PopupMenuInputProcessor(BasicArrayList(),  -1, t
     initMenu(){
 
         try {
-            this.menuBehavior!.initMenu(this)
-} catch(e: Exception)
+            this.menuBehavior!.initMenu(this);
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "initMenu", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "initMenu", e);
+    
 }
 
 }
@@ -900,53 +965,68 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "initMenu", e)
                 //@Throws(Error::class)
             
     initMenu2(){
-this.closeMenu()
+this.closeMenu();
+    
 
     var formUtil: FormUtil = FormUtil.getInstance()!;
         
         
-
+;
+    
 
     var formType: FormType = FormTypeFactory.getInstance()!.getFormType()!;
         
         
-
+;
+    
 
     var gameLimitedCommandTextItemArrayFactory: GameLimitedCommandTextItemArrayFactory = GameLimitedCommandTextItemArrayFactory.getInstance()!;
         
         
-
+;
+    
 
     var commandTextItemArrayFactory: CommandTextItemArrayFactory = gameLimitedCommandTextItemArrayFactory!.getCommandTextItemArrayFactory()!;
         
         
+;
+    
 
+    var items: CustomItem[] = commandTextItemArrayFactory!.getInstance(this.getCommandStack();
 
-    var items: CustomItem[] = commandTextItemArrayFactory!.getInstance(this.getCommandStack() as Vector<Any>, this.gameLayerManager!.getBackgroundBasicColor(), this.gameLayerManager!.getForegroundBasicColor())!;
+                         as Vector<any>, this.gameLayerManager!.getBackgroundBasicColor(), this.gameLayerManager!.getForegroundBasicColor())!;
         
         
-
+;
+    
 
     var rectangle: Rectangle = formUtil!.createFormRectangle()!;
         
         
-
-this.setMenuForm(CommandCurrentSelectionFormFactory.getInstance(StringUtil.getInstance()!.EMPTY_STRING, items, rectangle, formType, 25, false, this.gameLayerManager!.getBackgroundBasicColor(), this.gameLayerManager!.getForegroundBasicColor()))
+;
+    
+this.setMenuForm(CommandCurrentSelectionFormFactory.getInstance(StringUtil.getInstance()!.EMPTY_STRING, items, rectangle, formType, 25, false, this.gameLayerManager!.getBackgroundBasicColor(), this.gameLayerManager!.getForegroundBasicColor()));
+    
 
     var scrollSelectionForm: ScrollSelectionForm = this.getMenuForm()!;
         
         
-
+;
+    
 
     var features: Features = Features.getInstance()!;
         
         
-
+;
+    
 
                         if(features.isFeature(touchFeatureFactory!.TOUCH_ENABLED))
                         
                                     {
-                                    this.mainMenuInputProcessor= PopupCommandFormInputProcessor(BasicArrayList(),  -1, this, scrollSelectionForm, this.getPopupMenuInputProcessor() as PopupMenuInputProcessor)
+                                    this.mainMenuInputProcessor= PopupCommandFormInputProcessor(BasicArrayList(),  -1, this, scrollSelectionForm, this.getPopupMenuInputProcessor();
+
+                         as PopupMenuInputProcessor);
+    
 
                                     }
                                 
@@ -954,12 +1034,14 @@ this.setMenuForm(CommandCurrentSelectionFormFactory.getInstance(StringUtil.getIn
                             
                         }
                             
-this.setMenuInputProcessor(this.getPopupMenuInputProcessor())
+this.setMenuInputProcessor(this.getPopupMenuInputProcessor());
+    
 
                         if(scrollSelectionForm != ScrollSelectionFormNoneFactory.getInstance())
                         
                                     {
-                                    this.setFormPaintable(FormPaintable(scrollSelectionForm))
+                                    this.setFormPaintable(FormPaintable(scrollSelectionForm));
+    
 
                                     }
                                 
@@ -967,17 +1049,22 @@ this.setMenuInputProcessor(this.getPopupMenuInputProcessor())
                             
                         }
                             
-this.closeMenu()
+this.closeMenu();
+    
 }
 
 
     public updateMenu(){
 
         try {
-            this.menuBehavior!.updateMenu(this)
-} catch(e: Exception)
+            this.menuBehavior!.updateMenu(this);
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "initMenu", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "initMenu", e);
+    
 }
 
 }
@@ -990,29 +1077,37 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "initMenu", e)
     var scrollSelectionForm: ScrollSelectionForm = this.getMenuForm()!;
         
         
-
-scrollSelectionForm!.deleteAll()
+;
+    
+scrollSelectionForm!.deleteAll();
+    
 
     var gameLimitedCommandTextItemArrayFactory: GameLimitedCommandTextItemArrayFactory = GameLimitedCommandTextItemArrayFactory.getInstance()!;
         
         
-
+;
+    
 
     var commandTextItemArrayFactory: CommandTextItemArrayFactory = gameLimitedCommandTextItemArrayFactory!.getCommandTextItemArrayFactory()!;
         
         
+;
+    
 
+    var items: CustomItem[] = commandTextItemArrayFactory!.getInstance(this.getCommandStack();
 
-    var items: CustomItem[] = commandTextItemArrayFactory!.getInstance(this.getCommandStack() as Vector<Any>, this.gameLayerManager!.getBackgroundBasicColor(), this.gameLayerManager!.getForegroundBasicColor())!;
+                         as Vector<any>, this.gameLayerManager!.getBackgroundBasicColor(), this.gameLayerManager!.getForegroundBasicColor())!;
         
         
-
+;
+    
 
     var size: number = items.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -1023,46 +1118,62 @@ scrollSelectionForm!.deleteAll()
         
 index < size; index++)
         {
-scrollSelectionForm!.append(items[index]!)
+scrollSelectionForm!.append(items[index]!);
+    
 }
 
 
     var formUtil: FormUtil = FormUtil.getInstance()!;
         
         
-
+;
+    
 
     var formType: FormType = FormTypeFactory.getInstance()!.getFormType()!;
         
         
-
+;
+    
 
     var rectangle: Rectangle = formUtil!.createFormRectangle()!;
         
         
-
-scrollSelectionForm!.init(rectangle, formType)
+;
+    
+scrollSelectionForm!.init(rectangle, formType);
+    
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public pause(){
-this.gameBehavior!.pause(this)
-this.closeMenu()
-super.pause()
-touchButtonFactory!.toggle(this.isPaused(), BasicArrayListUtil.getInstance()!.getImmutableInstance())
-System.gc()
+this.gameBehavior!.pause(this);
+    
+this.closeMenu();
+    
+super.pause();
+    
+touchButtonFactory!.toggle(this.isPaused(), BasicArrayListUtil.getInstance()!.getImmutableInstance());
+    
+System.gc();
+    
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public unPause(){
-logUtil!.put(commonStrings!.START, this, gameStrings!.UNPAUSE)
-this.closeMenu()
-System.gc()
-super.unPause()
-touchButtonFactory!.toggle(this.isPaused(), BasicArrayListUtil.getInstance()!.getImmutableInstance())
-this.gameBehavior!.unPause(this)
+logUtil!.put(commonStrings!.START, this, gameStrings!.UNPAUSE);
+    
+this.closeMenu();
+    
+System.gc();
+    
+super.unPause();
+    
+touchButtonFactory!.toggle(this.isPaused(), BasicArrayListUtil.getInstance()!.getImmutableInstance());
+    
+this.gameBehavior!.unPause(this);
+    
 }
 
 
@@ -1096,32 +1207,42 @@ this.gameBehavior!.unPause(this)
                 //@Throws(Error::class)
             
     public popupMenu(){
-this.menuBehavior!.popupMenu(this)
+this.menuBehavior!.popupMenu(this);
+    
 }
 
 
                 //@Throws(Error::class)
             
     public popupMenu2(){
-primaryPlayerQueue!.add(SelectSound.getInstance())
-this.setMenuPaintable(this.getFormPaintable())
-this.setMenuInputProcessor(this.mainMenuInputProcessor)
-this.basicMotionGesturesHandler!.addListener(this.mainMenuInputProcessor)
-this.gameKeyEventHandler!.addListener(this.mainMenuInputProcessor)
+primaryPlayerQueue!.add(SelectSound.getInstance());
+    
+this.setMenuPaintable(this.getFormPaintable());
+    
+this.setMenuInputProcessor(this.mainMenuInputProcessor);
+    
+this.basicMotionGesturesHandler!.addListener(this.mainMenuInputProcessor);
+    
+this.gameKeyEventHandler!.addListener(this.mainMenuInputProcessor);
+    
 }
 
 
                 //@Throws(Error::class)
             
     public toggleMenu(){
-logUtil!.put(commonStrings!.START, this, this.gameStrings!.TOGGLE_MENU)
+logUtil!.put(commonStrings!.START, this, this.gameStrings!.TOGGLE_MENU);
+    
 
                         if(this.getMenuPaintable() == this.getOpenMenuPaintable())
                         
                                     {
-                                    this.pause()
-this.updateMenu()
-this.popupMenu()
+                                    this.pause();
+    
+this.updateMenu();
+    
+this.popupMenu();
+    
 
                                     }
                                 
@@ -1129,8 +1250,10 @@ this.popupMenu()
                         if(this.getMenuPaintable() == this.getFormPaintable())
                         
                                     {
-                                    primaryPlayerQueue!.add(SelectSound.getInstance())
-this.unPause()
+                                    primaryPlayerQueue!.add(SelectSound.getInstance());
+    
+this.unPause();
+    
 
                                     }
                                 
@@ -1138,42 +1261,56 @@ this.unPause()
 
 
     public closeMenu(){
-this.menuBehavior!.closeMenu(this)
+this.menuBehavior!.closeMenu(this);
+    
 }
 
 
     public closeMenu2(){
-this.setMenuPaintable(this.getOpenMenuPaintable())
-this.basicMotionGesturesHandler!.removeListener(this.mainMenuInputProcessor)
-this.gameKeyEventHandler!.removeListener(this.mainMenuInputProcessor)
-this.setMenuInputProcessor(this.getPopupMenuInputProcessor())
+this.setMenuPaintable(this.getOpenMenuPaintable());
+    
+this.basicMotionGesturesHandler!.removeListener(this.mainMenuInputProcessor);
+    
+this.gameKeyEventHandler!.removeListener(this.mainMenuInputProcessor);
+    
+this.setMenuInputProcessor(this.getPopupMenuInputProcessor());
+    
 }
 
 
     public open(){
-this.basicMotionGesturesHandler!.addListener(this.menuInputProcessor)
-this.gameKeyEventHandler!.addListener(this.menuInputProcessor)
+this.basicMotionGesturesHandler!.addListener(this.menuInputProcessor);
+    
+this.gameKeyEventHandler!.addListener(this.menuInputProcessor);
+    
 }
 
 
     public close(){
-this.basicMotionGesturesHandler!.removeListener(this.menuInputProcessor)
-this.gameKeyEventHandler!.removeListener(this.menuInputProcessor)
-primaryPlayerQueue!.clear()
-secondaryPlayerQueue!.clear()
+this.basicMotionGesturesHandler!.removeListener(this.menuInputProcessor);
+    
+this.gameKeyEventHandler!.removeListener(this.menuInputProcessor);
+    
+primaryPlayerQueue!.clear();
+    
+secondaryPlayerQueue!.clear();
+    
 }
 
 
                 //@Throws(Error::class)
             
     processorInit(){
-this.setMainStateProcessor(Processor.getInstance())
-this.setProcessGameProcessor(GameProcessor(this))
+this.setMainStateProcessor(Processor.getInstance());
+    
+this.setProcessGameProcessor(GameProcessor(this));
+    
 }
 
 
     initSpecialPaint(){
-this.menuBehavior!.initSpecialPaint(this)
+this.menuBehavior!.initSpecialPaint(this);
+    
 }
 
 
@@ -1182,9 +1319,12 @@ this.menuBehavior!.initSpecialPaint(this)
     init(gameLayerManager: AllBinaryGameLayerManager, buffered: boolean){
 var gameLayerManager = gameLayerManager
 var buffered = buffered
-this.gameStateTimeHelper!.setStartTime()
-this.setHighScoreSubmitted(false)
-this.setLayerManager(gameLayerManager)
+this.gameStateTimeHelper!.setStartTime();
+    
+this.setHighScoreSubmitted(false);
+    
+this.setLayerManager(gameLayerManager);
+    
 
                         if(!buffered)
                         
@@ -1193,8 +1333,10 @@ this.setLayerManager(gameLayerManager)
     var BUFF_MESSAGE: string = "XXX Not Buffering Causes Concurrency Issues XXX";
         
         
-
-logUtil!.put(BUFF_MESSAGE, this, commonStrings!.CONSTRUCTOR)
+;
+    
+logUtil!.put(BUFF_MESSAGE, this, commonStrings!.CONSTRUCTOR);
+    
 
                                     }
                                 
@@ -1206,36 +1348,51 @@ logUtil!.put(BUFF_MESSAGE, this, commonStrings!.CONSTRUCTOR)
 
                         }
                             
-this.setGameInputProcessor(Processor.getInstance())
+this.setGameInputProcessor(Processor.getInstance());
+    
 
     var features: Features = Features.getInstance()!;
         
         
-
+;
+    
 
                         if(features.isFeature(GameFeatureFactory.getInstance()!.CHEATING))
                         
                                     {
-                                    this.isCheating= true
-this.cheatProcessor= CheatGameInputProcessor(this)
-this.gameKeyEventHandler!.addListener(this.cheatProcessor)
+                                    this.isCheating= true;
+    
+this.cheatProcessor= CheatGameInputProcessor(this);
+    
+this.gameKeyEventHandler!.addListener(this.cheatProcessor);
+    
 
                                     }
                                 
                         else {
-                            this.isCheating= false
-this.cheatProcessor= NoPlayerGameInput.getInstance()
+                            this.isCheating= false;
+    
+this.cheatProcessor= NoPlayerGameInput.getInstance();
+    
 
                         }
                             
-this.realEndGameProcessor= EndGameProcessor(this)
-this.setEndGameProcessor(Processor.getInstance())
-this.realStartIntermissionProcessor= StartIntermissionProcessor(this)
-this.startIntermissionProcessor= Processor.getInstance()
-this.setEndGameStatePaintable(EndGamePaintable(this))
-this.setEndGamePaintable(NullPaintable.getInstance())
-this.setIntermissionPaintable(NullPaintable.getInstance())
-this.getStartIntermissionInterface()!.setListener(this)
+this.realEndGameProcessor= EndGameProcessor(this);
+    
+this.setEndGameProcessor(Processor.getInstance());
+    
+this.realStartIntermissionProcessor= StartIntermissionProcessor(this);
+    
+this.startIntermissionProcessor= Processor.getInstance();
+    
+this.setEndGameStatePaintable(EndGamePaintable(this));
+    
+this.setEndGamePaintable(NullPaintable.getInstance());
+    
+this.setIntermissionPaintable(NullPaintable.getInstance());
+    
+this.getStartIntermissionInterface()!.setListener(this);
+    
 }
 
 
@@ -1245,12 +1402,14 @@ var enable = enable
                         if(enable)
                         
                                     {
-                                    this.startIntermissionProcessor= this.realStartIntermissionProcessor
+                                    this.startIntermissionProcessor= this.realStartIntermissionProcessor;
+    
 
                                     }
                                 
                         else {
-                            this.startIntermissionProcessor= Processor.getInstance()
+                            this.startIntermissionProcessor= Processor.getInstance();
+    
 
                         }
                             
@@ -1258,12 +1417,14 @@ var enable = enable
                         if(enable)
                         
                                     {
-                                    this.setIntermissionPaintable(this.getStartIntermissionPaintable())
+                                    this.setIntermissionPaintable(this.getStartIntermissionPaintable());
+    
 
                                     }
                                 
                         else {
-                            this.setIntermissionPaintable(NullPaintable.getInstance())
+                            this.setIntermissionPaintable(NullPaintable.getInstance());
+    
 
                         }
                             
@@ -1273,7 +1434,8 @@ var enable = enable
                 //@Throws(Error::class)
             
     public mediaInit(){
-ForcedLogUtil.log(commonStrings!.NOT_IMPLEMENTED, this)
+ForcedLogUtil.log(commonStrings!.NOT_IMPLEMENTED, this);
+    
 }
 
 
@@ -1286,19 +1448,24 @@ ForcedLogUtil.log(commonStrings!.NOT_IMPLEMENTED, this)
     var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
         
         
-
-progressCanvas!.addPortion(50, "Setting Configurables")
-GameInitializationUtil.getInstance()!.initGame(abeClientInformation, this, gameInitializationInterfaceFactoryInterface)
+;
+    
+progressCanvas!.addPortion(50, "Setting Configurables");
+    
+GameInitializationUtil.getInstance()!.initGame(abeClientInformation, this, gameInitializationInterfaceFactoryInterface);
+    
 
     var gameFeatureFactory: GameFeatureFactory = GameFeatureFactory.getInstance()!;
         
         
-
+;
+    
 
     var changedGameFeatureListener: ChangedGameFeatureListener = ChangedGameFeatureListener.getInstance()!;
         
         
-
+;
+    
 
                         if(changedGameFeatureListener!.isChanged(gameFeatureFactory!.SOUND))
                         
@@ -1307,11 +1474,15 @@ GameInitializationUtil.getInstance()!.initGame(abeClientInformation, this, gameI
     var features: Features = Features.getInstance()!;
         
         
-
+;
+    
 logUtil!.put(StringMaker().
-                            append("Sound Changing To: ")!.appendboolean(features.isFeature(gameFeatureFactory!.SOUND))!.toString(), this, "initConfigurable")
-this.mediaInit()
-changedGameFeatureListener!.remove(gameFeatureFactory!.SOUND)
+                            append("Sound Changing To: ")!.appendboolean(features.isFeature(gameFeatureFactory!.SOUND))!.toString(), this, "initConfigurable");
+    
+this.mediaInit();
+    
+changedGameFeatureListener!.remove(gameFeatureFactory!.SOUND);
+    
 
                                     }
                                 
@@ -1319,14 +1490,18 @@ changedGameFeatureListener!.remove(gameFeatureFactory!.SOUND)
     var sensorFeatureFactory: SensorFeatureFactory = SensorFeatureFactory.getInstance()!;
         
         
-
+;
+    
 
                         if(changedGameFeatureListener!.isChanged(sensorFeatureFactory!.ORIENTATION_SENSORS) || changedGameFeatureListener!.isChanged(sensorFeatureFactory!.NO_ORIENTATION) || changedGameFeatureListener!.isChanged(sensorFeatureFactory!.SIMULATED_ORIENTATION_SENSORS))
                         
                                     {
-                                    changedGameFeatureListener!.remove(sensorFeatureFactory!.NO_ORIENTATION)
-changedGameFeatureListener!.remove(sensorFeatureFactory!.ORIENTATION_SENSORS)
-changedGameFeatureListener!.remove(sensorFeatureFactory!.SIMULATED_ORIENTATION_SENSORS)
+                                    changedGameFeatureListener!.remove(sensorFeatureFactory!.NO_ORIENTATION);
+    
+changedGameFeatureListener!.remove(sensorFeatureFactory!.ORIENTATION_SENSORS);
+    
+changedGameFeatureListener!.remove(sensorFeatureFactory!.SIMULATED_ORIENTATION_SENSORS);
+    
 
                                     }
                                 
@@ -1334,8 +1509,10 @@ changedGameFeatureListener!.remove(sensorFeatureFactory!.SIMULATED_ORIENTATION_S
     var resourceLoadingLevelFactory: ResourceLoadingLevelFactory = ResourceLoadingLevelFactory.getInstance()!;
         
         
-
-this.loadResources(resourceLoadingLevelFactory!.LOAD_GAME)
+;
+    
+this.loadResources(resourceLoadingLevelFactory!.LOAD_GAME);
+    
 }
 
 
@@ -1343,11 +1520,16 @@ this.loadResources(resourceLoadingLevelFactory!.LOAD_GAME)
             
     init(abeClientInformation: AbeClientInformationInterface){
     //var abeClientInformation = abeClientInformation
-this.initConfigurable(abeClientInformation)
-this.processorInit()
-this.sensorGameUpdateProcessor!.process(this.gameLayerManager)
-this.sensorGameUpdateProcessor!.sendNotifications(this.gameLayerManager)
-this.initTouch()
+this.initConfigurable(abeClientInformation);
+    
+this.processorInit();
+    
+this.sensorGameUpdateProcessor!.process(this.gameLayerManager);
+    
+this.sensorGameUpdateProcessor!.sendNotifications(this.gameLayerManager);
+    
+this.initTouch();
+    
 }
 
 
@@ -1358,17 +1540,24 @@ this.initTouch()
     var gameInitializedEvent: GameInitializedEvent = GameInitializationUtil.getInstance()!.EVENT;
         
         
-
+;
+    
 
     var resourceLoadingLevelFactory: ResourceLoadingLevelFactory = ResourceLoadingLevelFactory.getInstance()!;
         
         
-
-gameInitializedEvent!.setResourceLoadingLevel(resourceLoadingLevelFactory!.LOAD_TOUCH)
-GameInitializedEventHandler.getInstance()!.fireEvent(gameInitializedEvent)
-touchButtonFactory!.defaultList()
-this.updateTouch()
-this.postInitTouch()
+;
+    
+gameInitializedEvent!.setResourceLoadingLevel(resourceLoadingLevelFactory!.LOAD_TOUCH);
+    
+GameInitializedEventHandler.getInstance()!.fireEvent(gameInitializedEvent);
+    
+touchButtonFactory!.defaultList();
+    
+this.updateTouch();
+    
+this.postInitTouch();
+    
 }
 
 
@@ -1380,9 +1569,12 @@ this.postInitTouch()
                         if(nextTouchInput != this.currentTouchInputFactory)
                         
                                     {
-                                    this.currentTouchInputFactory= nextTouchInput
-PreLogUtil.put(this.currentTouchInputFactory!.toString(), this, this.gameInputStrings!.UDPATE_CURRENT_TOUCH_INPUT_FACTORY)
-touchButtonFactory!.toggle(this.isPaused(), this.currentTouchInputFactory!.getList())
+                                    this.currentTouchInputFactory= nextTouchInput;
+    
+PreLogUtil.put(this.currentTouchInputFactory!.toString(), this, this.gameInputStrings!.UDPATE_CURRENT_TOUCH_INPUT_FACTORY);
+    
+touchButtonFactory!.toggle(this.isPaused(), this.currentTouchInputFactory!.getList());
+    
 
                                     }
                                 
@@ -1392,7 +1584,8 @@ touchButtonFactory!.toggle(this.isPaused(), this.currentTouchInputFactory!.getLi
                 //@Throws(Error::class)
             
     updateTouch(){
-this.gameBehavior!.updateTouch(this)
+this.gameBehavior!.updateTouch(this);
+    
 }
 
 
@@ -1403,7 +1596,8 @@ this.gameBehavior!.updateTouch(this)
     var features: Features = Features.getInstance()!;
         
         
-
+;
+    
 
                         if(features.isFeature(touchFeatureFactory!.AUTO_HIDE_SHOW_SCREEN_BUTTONS))
                         
@@ -1412,7 +1606,8 @@ this.gameBehavior!.updateTouch(this)
                         if(this.gameLayerManager!.getGameInfo()!.getCurrentLevel() -getStartLevel() == 1)
                         
                                     {
-                                    this.setTouchPaintableP(NullPaintable.getInstance())
+                                    this.setTouchPaintableP(NullPaintable.getInstance());
+    
 
                                     }
                                 
@@ -1425,16 +1620,21 @@ this.gameBehavior!.updateTouch(this)
                 //@Throws(Error::class)
             
     postInitTouch(){
-this.setTouchButtonsPaintable(TouchButtonsPaintableFactory.getInstance(this.gameLayerManager!.getForegroundBasicColor()))
-this.updateScreenButtonPaintable()
+this.setTouchButtonsPaintable(TouchButtonsPaintableFactory.getInstance(this.gameLayerManager!.getForegroundBasicColor()));
+    
+this.updateScreenButtonPaintable();
+    
 }
 
 
     public initCommands(cmdListener: CommandListener){
 var cmdListener = cmdListener
-this.removeAllCommands()
-this.addCommands()
-this.setCommandListener(cmdListener)
+this.removeAllCommands();
+    
+this.addCommands();
+    
+this.setCommandListener(cmdListener);
+    
 }
 
 
@@ -1443,33 +1643,41 @@ this.setCommandListener(cmdListener)
     var gameCommandsFactory: GameCommandsFactory = GameCommandsFactory.getInstance()!;
         
         
-
+;
+    
 
     var myCommandsFactory: MyCommandsFactory = MyCommandsFactory.getInstance()!;
         
         
-
+;
+    
 
                         if(DebugFactory.getInstance() != NoDebug.getInstance())
                         
                                     {
-                                    this.addCommand(gameCommandsFactory!.START_TRACE)
+                                    this.addCommand(gameCommandsFactory!.START_TRACE);
+    
 
                                     }
                                 
-this.addCommand(gameCommandsFactory!.RESTART_COMMAND)
-this.addCommand(myCommandsFactory!.PAUSE_COMMAND)
-this.addCommand(gameCommandsFactory!.QUIT_COMMAND)
+this.addCommand(gameCommandsFactory!.RESTART_COMMAND);
+    
+this.addCommand(myCommandsFactory!.PAUSE_COMMAND);
+    
+this.addCommand(gameCommandsFactory!.QUIT_COMMAND);
+    
 
     var isOverScan: boolean = OperatingSystemFactory.getInstance()!.getOperatingSystemInstance()!.isOverScan()!;
         
         
-
+;
+    
 
     var features: Features = Features.getInstance()!;
         
         
-
+;
+    
 
                         if(J2MEUtil.isHTML())
                         
@@ -1493,12 +1701,15 @@ this.addCommand(gameCommandsFactory!.QUIT_COMMAND)
                             isAny())
                         
                                     {
-                                    this.addCommand(InGameOptionsForm.DISPLAY)
+                                    this.addCommand(InGameOptionsForm.DISPLAY);
+    
 
                                     }
                                 
-this.addCommand(gameCommandsFactory!.SAVE)
-this.addCommand(gameCommandsFactory!.DISPLAY_LOAD_FORM)
+this.addCommand(gameCommandsFactory!.SAVE);
+    
+this.addCommand(gameCommandsFactory!.DISPLAY_LOAD_FORM);
+    
 
                                     }
                                 
@@ -1513,9 +1724,11 @@ var item = item
     var itemLabel: string = item.getLabel()!;
         
         
-
+;
+    
 logUtil!.put(StringMaker().
-                            append(commonLabels!.ITEM_LABEL)!.append(itemLabel)!.toString(), this, "itemStateChanged")
+                            append(commonLabels!.ITEM_LABEL)!.append(itemLabel)!.toString(), this, "itemStateChanged");
+    
 
                         if(item is ChoiceGroup)
                         
@@ -1524,30 +1737,40 @@ logUtil!.put(StringMaker().
     var gameFeatureUtil: GameFeatureUtil = GameFeatureUtil.getInstance()!;
         
         
-
+;
+    
 
                         if(gameFeatureUtil!.isExclusive(itemLabel))
                         
                                     {
-                                    gameFeatureUtil!.updateExclusive(item as ChoiceGroup)
+                                    gameFeatureUtil!.updateExclusive(item as ChoiceGroup);
+    
 
                                     }
                                 
                         else {
-                            gameFeatureUtil!.updateMultiple(item as ChoiceGroup)
+                            gameFeatureUtil!.updateMultiple(item as ChoiceGroup);
+    
 
                         }
                             
 
                                     }
                                 
-this.sensorGameUpdateProcessor!.process(this.gameLayerManager)
-this.updateTouch()
-this.updateScreenButtonPaintable()
-this.sensorGameUpdateProcessor!.sendNotifications(this.gameLayerManager)
-} catch(e: Exception)
+this.sensorGameUpdateProcessor!.process(this.gameLayerManager);
+    
+this.updateTouch();
+    
+this.updateScreenButtonPaintable();
+    
+this.sensorGameUpdateProcessor!.sendNotifications(this.gameLayerManager);
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "itemStateChanged", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "itemStateChanged", e);
+    
 }
 
 }
@@ -1556,7 +1779,8 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "itemStateChanged", e)
                 //@Throws(Error::class)
             
     public updateScreenButtonPaintable(){
-this.gameBehavior!.updateScreenButtonPaintable(this)
+this.gameBehavior!.updateScreenButtonPaintable(this);
+    
 }
 
 
@@ -1565,13 +1789,16 @@ this.gameBehavior!.updateScreenButtonPaintable(this)
     var features: Features = Features.getInstance()!;
         
         
-
+;
+    
 
                         if(features.isFeature(touchFeatureFactory!.AUTO_HIDE_SHOW_SCREEN_BUTTONS))
                         
                                     {
-                                    this.setTouchPaintableP(this.getTouchButtonsPaintable())
-this.setStartLevel(this.gameLayerManager!.getGameInfo()!.getCurrentLevel())
+                                    this.setTouchPaintableP(this.getTouchButtonsPaintable());
+    
+this.setStartLevel(this.gameLayerManager!.getGameInfo()!.getCurrentLevel());
+    
 
                                     }
                                 
@@ -1579,7 +1806,8 @@ this.setStartLevel(this.gameLayerManager!.getGameInfo()!.getCurrentLevel())
                         if(features.isFeature(touchFeatureFactory!.SHOW_SCREEN_BUTTONS))
                         
                                     {
-                                    this.setTouchPaintableP(this.getTouchButtonsPaintable())
+                                    this.setTouchPaintableP(this.getTouchButtonsPaintable());
+    
 
                                     }
                                 
@@ -1587,12 +1815,14 @@ this.setStartLevel(this.gameLayerManager!.getGameInfo()!.getCurrentLevel())
                         if(features.isFeature(touchFeatureFactory!.HIDE_SCREEN_BUTTONS))
                         
                                     {
-                                    this.setTouchPaintableP(NullPaintable.getInstance())
+                                    this.setTouchPaintableP(NullPaintable.getInstance());
+    
 
                                     }
                                 
                         else {
-                            this.setTouchPaintableP(NullPaintable.getInstance())
+                            this.setTouchPaintableP(NullPaintable.getInstance());
+    
 
                         }
                             
@@ -1611,7 +1841,8 @@ this.setStartLevel(this.gameLayerManager!.getGameInfo()!.getCurrentLevel())
 
     public setLayerManager(layerManager: AllBinaryGameLayerManager){
 var layerManager = layerManager
-this.gameLayerManager= layerManager
+this.gameLayerManager= layerManager;
+    
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
@@ -1629,18 +1860,24 @@ this.gameLayerManager= layerManager
 
     public setGameOver(gameOver: boolean){
 var gameOver = gameOver
-this.gameOver= gameOver
+this.gameOver= gameOver;
+    
 }
 
 
                 //@Throws(Error::class)
             
     public setGameOver(){
-PreLogUtil.put(commonStrings!.START, this, this.gameStrings!.SET_GAME_OVER)
-this.setGameOver(true)
-removePauseCommand()
-this.setGameState(SHOW_END_RESULT_GAME_STATE)
-this.setEndGamePaintable(getEndGameStatePaintable())
+PreLogUtil.put(commonStrings!.START, this, this.gameStrings!.SET_GAME_OVER);
+    
+this.setGameOver(true);
+    
+removePauseCommand();
+    
+this.setGameState(SHOW_END_RESULT_GAME_STATE);
+    
+this.setEndGamePaintable(getEndGameStatePaintable());
+    
 }
 
 
@@ -1658,17 +1895,20 @@ this.setEndGamePaintable(getEndGameStatePaintable())
             
     public setHighScoreSubmitted(highScoreSubmitted: boolean){
 var highScoreSubmitted = highScoreSubmitted
-this.highScoreSubmitted= highScoreSubmitted
+this.highScoreSubmitted= highScoreSubmitted;
+    
 
                         if(highScoreSubmitted)
                         
                                     {
-                                    this.highScoresHelper!.setSelectedHighScores(NullHighScoresSingletonFactory.getInstance())
+                                    this.highScoresHelper!.setSelectedHighScores(NullHighScoresSingletonFactory.getInstance());
+    
 
                                     }
                                 
 logUtil!.put(StringMaker().
-                            append("isHighScoreSubmitted: ")!.appendboolean(highScoreSubmitted)!.toString(), this, "setHighScoreSubmitted")
+                            append("isHighScoreSubmitted: ")!.appendboolean(highScoreSubmitted)!.toString(), this, "setHighScoreSubmitted");
+    
 }
 
 
@@ -1687,12 +1927,18 @@ logUtil!.put(StringMaker().
     public setGameState(gameState: GameState){
     //var gameState = gameState
 logUtil!.put(StringMaker().
-                            append(this.gameStrings!.GAME_STATE)!.append(this.stringUtil!.toString(gameState))!.toString(), this, this.gameStrings!.SET_GAME_STATE)
-this.gameState= gameState
-this.gameStateTimeHelper!.setStartTime()
-this.updateEndGameProcessor()
-this.updateGameKeyEventProcessor()
-this.gameBehavior!.setGameState(this)
+                            append(this.gameStrings!.GAME_STATE)!.append(this.stringUtil!.toString(gameState))!.toString(), this, this.gameStrings!.SET_GAME_STATE);
+    
+this.gameState= gameState;
+    
+this.gameStateTimeHelper!.setStartTime();
+    
+this.updateEndGameProcessor();
+    
+this.updateGameKeyEventProcessor();
+    
+this.gameBehavior!.setGameState(this);
+    
 }
 
 
@@ -1703,13 +1949,16 @@ this.gameBehavior!.setGameState(this)
     var gameAdState: GameAdState = gameAdStateFactory!.getCurrentInstance()!;
         
         
-
-gameAdState!.processAdState(this.gameState, this.gameLayerManager!.getGameInfo()!.getGameType())
+;
+    
+gameAdState!.processAdState(this.gameState, this.gameLayerManager!.getGameInfo()!.getGameType());
+    
 
                         if(this.gameState != GameState.PLAYING_GAME_STATE)
                         
                                     {
-                                    gameAdState!.processPageAdState()
+                                    gameAdState!.processPageAdState();
+    
 
                                     }
                                 
@@ -1732,17 +1981,20 @@ gameAdState!.processAdState(this.gameState, this.gameLayerManager!.getGameInfo()
 
 
     removeAllGameKeyInputListenersOnBuild(){
-this.removeAllGameKeyInputListeners()
+this.removeAllGameKeyInputListeners();
+    
 }
 
 
     removeAllGameKeyInputListeners(){
-this.gameBehavior!.removeAllGameKeyInputListeners(this)
+this.gameBehavior!.removeAllGameKeyInputListeners(this);
+    
 }
 
 
     removeAllGameKeyInputListeners2(){
-logUtil!.put("Remove PlayerInput Listeners", this, "removeAllGameKeyInputListeners")
+logUtil!.put("Remove PlayerInput Listeners", this, "removeAllGameKeyInputListeners");
+    
 
 
 
@@ -1754,12 +2006,17 @@ logUtil!.put("Remove PlayerInput Listeners", this, "removeAllGameKeyInputListene
 index >= 0; index--)
         {
 
-    var playerGameInput: PlayerGameInput = this.localPlayerGameInputList!.get(index) as PlayerGameInput;
-        
-        
+    var playerGameInput: PlayerGameInput = this.localPlayerGameInputList!.get(index);
 
-this.removeKeyInputListener(playerGameInput)
-playerGameInput!.removeNonAIInputGameKeyEvents()
+                         as PlayerGameInput;
+        
+        
+;
+    
+this.removeKeyInputListener(playerGameInput);
+    
+playerGameInput!.removeNonAIInputGameKeyEvents();
+    
 }
 
 }
@@ -1767,14 +2024,16 @@ playerGameInput!.removeNonAIInputGameKeyEvents()
 
     public removeKeyInputListener(playerGameInput: PlayerGameInput){
     //var playerGameInput = playerGameInput
-this.gameKeyEventHandler!.removeListener(playerGameInput)
+this.gameKeyEventHandler!.removeListener(playerGameInput);
+    
 }
 
 
                 //@Throws(Error::class)
             
     updateEndGameProcessor(){
-this.gameBehavior!.updateEndGameProcessor(this)
+this.gameBehavior!.updateEndGameProcessor(this);
+    
 }
 
 
@@ -1785,12 +2044,14 @@ this.gameBehavior!.updateEndGameProcessor(this)
                         if(this.getGameState() == SHOW_END_RESULT_GAME_STATE || this.getGameState() == SHOW_HIGH_SCORE_GAME_STATE)
                         
                                     {
-                                    this.setEndGameProcessor(this.realEndGameProcessor)
+                                    this.setEndGameProcessor(this.realEndGameProcessor);
+    
 
                                     }
                                 
                         else {
-                            this.setEndGameProcessor(Processor.getInstance())
+                            this.setEndGameProcessor(Processor.getInstance());
+    
 
                         }
                             
@@ -1807,16 +2068,22 @@ this.gameBehavior!.updateEndGameProcessor(this)
                 //@Throws(Error::class)
             
     cleanupGame(){
-logUtil!.put(commonStrings!.START, this, this.commonStrings!.CLEANUP)
+logUtil!.put(commonStrings!.START, this, this.commonStrings!.CLEANUP);
+    
 
     var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
         
         
-
-progressCanvas!.addPortion(10, "Cleaning Up")
-primaryPlayerQueue!.clear()
-secondaryPlayerQueue!.clear()
-GameLevelDisplayChangeEventListenersFactory.getInstance()!.clear()
+;
+    
+progressCanvas!.addPortion(10, "Cleaning Up");
+    
+primaryPlayerQueue!.clear();
+    
+secondaryPlayerQueue!.clear();
+    
+GameLevelDisplayChangeEventListenersFactory.getInstance()!.clear();
+    
 }
 
 
@@ -1828,9 +2095,12 @@ GameLevelDisplayChangeEventListenersFactory.getInstance()!.clear()
     var gameInitializedEvent: GameInitializedEvent = GameInitializationUtil.getInstance()!.EVENT;
         
         
-
-gameInitializedEvent!.setResourceLoadingLevel(resourceLoadingLevel)
-GameInitializedEventHandler.getInstance()!.fireEvent(gameInitializedEvent)
+;
+    
+gameInitializedEvent!.setResourceLoadingLevel(resourceLoadingLevel);
+    
+GameInitializedEventHandler.getInstance()!.fireEvent(gameInitializedEvent);
+    
 }
 
 
@@ -1842,9 +2112,12 @@ GameInitializedEventHandler.getInstance()!.fireEvent(gameInitializedEvent)
     var gameInitializedEvent: GameInitializedEvent = GameInitializationUtil.getInstance()!.EVENT;
         
         
-
-gameInitializedEvent!.setLevel(level)
-GameInitializedEventHandler.getInstance()!.fireEvent(gameInitializedEvent)
+;
+    
+gameInitializedEvent!.setLevel(level);
+    
+GameInitializedEventHandler.getInstance()!.fireEvent(gameInitializedEvent);
+    
 }
 
 
@@ -1858,33 +2131,52 @@ GameInitializedEventHandler.getInstance()!.fireEvent(gameInitializedEvent)
             
     public buildGame(portion: number){
     //var portion = portion
-screenCapture!.endRecording()
-screenCapture!.startRecording()
+screenCapture!.endRecording();
+    
+screenCapture!.startRecording();
+    
 
     var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
         
         
-
+;
+    
 
     var features: Features = Features.getInstance()!;
         
         
+;
+    
+progressCanvas!.addPortion(portion, "Generic Build");
+    
+this.removeAllGameKeyInputListenersOnBuild();
+    
+this.updateTouch();
+    
+progressCanvas!.addPortion(portion, "High Scores");
+    
+this.highScoresFactoryInterface!.fetchHighScores(this.gameLayerManager!.getGameInfo(), this.highScoresHelper);
+    
+this.setHighScoresPaintable(NullPaintable.getInstance());
+    
+progressCanvas!.addPortion(portion, "Finishing.");
+    
+this.getEndGameInfoP()!.update(this.getLayerManager()!.getGameInfo(), this);
+    
+this.isSingleKeyRepeatableProcessing= features.isFeature(InputFeatureFactory.getInstance()!.SINGLE_KEY_REPEAT_PRESS);
+    
+this.setGameOver(false);
+    
+progressCanvas!.addPortion(portion, "Finishing..");
+    
+this.updateColor();
+    
+this.getStartIntermissionPaintable()!.update();
+    
 
-progressCanvas!.addPortion(portion, "Generic Build")
-this.removeAllGameKeyInputListenersOnBuild()
-this.updateTouch()
-progressCanvas!.addPortion(portion, "High Scores")
-this.highScoresFactoryInterface!.fetchHighScores(this.gameLayerManager!.getGameInfo(), this.highScoresHelper)
-this.setHighScoresPaintable(NullPaintable.getInstance())
-progressCanvas!.addPortion(portion, "Finishing.")
-this.getEndGameInfoP()!.update(this.getLayerManager()!.getGameInfo(), this)
-this.isSingleKeyRepeatableProcessing= features.isFeature(InputFeatureFactory.getInstance()!.SINGLE_KEY_REPEAT_PRESS)
-this.setGameOver(false)
-progressCanvas!.addPortion(portion, "Finishing..")
-this.updateColor()
-this.getStartIntermissionPaintable()!.update()
+                        if(!this.isRunningInAnotherThread();
 
-                        if(!this.isRunningInAnotherThread())
+                        )
                         
                                     {
                                     
@@ -1896,9 +2188,12 @@ this.getStartIntermissionPaintable()!.update()
 
                                     }
                                 
-progressCanvas!.addPortion(portion, "Finishing...")
+progressCanvas!.addPortion(portion, "Finishing...");
+    
 
-                        if(this.isMainCanvas() || !this.isInitialized())
+                        if(this.isMainCanvas() || !this.isInitialized();
+
+                        )
                         
                                     {
                                     
@@ -1911,7 +2206,8 @@ progressCanvas!.addPortion(portion, "Finishing...")
                                 )
                         
                                     {
-                                    progressCanvas!.end()
+                                    progressCanvas!.end();
+    
 
                                     }
                                 
@@ -1919,11 +2215,13 @@ progressCanvas!.addPortion(portion, "Finishing...")
                                     }
                                 
                         else {
-                            progressCanvas!.end()
+                            progressCanvas!.end();
+    
 
                         }
                             
-this.setInitialized(true)
+this.setInitialized(true);
+    
 
                                     }
                                 
@@ -1931,27 +2229,34 @@ this.setInitialized(true)
                         if(this.getCustomCommandListener() == NullCommandListener.NULL_COMMAND_LISTENER)
                         
                                     {
-                                    logUtil!.put("Show Game Paintable in DemoCanvas Thread", this, BUILD_GAME)
-this.gameCanvasStartListener!.showGamePaintable()
+                                    logUtil!.put("Show Game Paintable in DemoCanvas Thread", this, BUILD_GAME);
+    
+this.gameCanvasStartListener!.showGamePaintable();
+    
 
                                     }
                                 
                         else {
-                            logUtil!.put("No GameCanvasStartListener", this, BUILD_GAME)
+                            logUtil!.put("No GameCanvasStartListener", this, BUILD_GAME);
+    
 
                         }
                             
-this.colorFillPaintable!.setBasicColorP(this.gameLayerManager!.getBackgroundBasicColor())
-this.gameBehavior!.buildGame(this)
+this.colorFillPaintable!.setBasicColorP(this.gameLayerManager!.getBackgroundBasicColor());
+    
+this.gameBehavior!.buildGame(this);
+    
 }
 
 
     public buildGame2(){
 PreLogUtil.put(StringMaker().
-                            append(this.gameInputStrings!.ENABLE_PLAYER_GAME_INPUTS)!.appendint(this.localPlayerGameInputList!.size())!.toString(), this, BUILD_GAME)
+                            append(this.gameInputStrings!.ENABLE_PLAYER_GAME_INPUTS)!.appendint(this.localPlayerGameInputList!.size())!.toString(), this, BUILD_GAME);
+    
 
     var playerGameInput: PlayerGameInput
-
+;
+    
 
 
 
@@ -1962,11 +2267,17 @@ PreLogUtil.put(StringMaker().
         
 index >= 0; index--)
         {
-playerGameInput= this.localPlayerGameInputList!.get(index) as PlayerGameInput
+playerGameInput= this.localPlayerGameInputList!.get(index);
+
+                         as PlayerGameInput;
+    
 PreLogUtil.put(StringMaker().
-                            append(this.gameInputStrings!.ENABLE_PLAYER_GAME_INPUT)!.append(playerGameInput!.toString())!.toString(), this, BUILD_GAME)
-playerGameInput!.removeNonAIInputGameKeyEvents()
-this.addKeyInputListener(playerGameInput)
+                            append(this.gameInputStrings!.ENABLE_PLAYER_GAME_INPUT)!.append(playerGameInput!.toString())!.toString(), this, BUILD_GAME);
+    
+playerGameInput!.removeNonAIInputGameKeyEvents();
+    
+this.addKeyInputListener(playerGameInput);
+    
 }
 
 }
@@ -1974,7 +2285,8 @@ this.addKeyInputListener(playerGameInput)
 
     public addKeyInputListener(playerGameInput: PlayerGameInput){
     //var playerGameInput = playerGameInput
-GameKeyEventHandler.getInstance()!.addListener(playerGameInput, playerGameInput!.getPlayerInputId())
+GameKeyEventHandler.getInstance()!.addListener(playerGameInput, playerGameInput!.getPlayerInputId());
+    
 }
 
 
@@ -1984,19 +2296,22 @@ GameKeyEventHandler.getInstance()!.addListener(playerGameInput, playerGameInput!
 
     public setGameCanvasStartListener(gameCanvasStartListener: DemoPaintableInterface){
 var gameCanvasStartListener = gameCanvasStartListener
-this.gameCanvasStartListener= gameCanvasStartListener
+this.gameCanvasStartListener= gameCanvasStartListener;
+    
 }
 
 
                 //@Throws(Error::class)
             
     public loadState(){
-logUtil!.put(commonStrings!.START, this, commonStrings!.LOAD)
+logUtil!.put(commonStrings!.START, this, commonStrings!.LOAD);
+    
 
-    var hashtable: Hashtable<Any, Any> = getLoadStateHashtable()!;
+    var hashtable: Hashtable<any, any> = getLoadStateHashtable()!;
         
         
-
+;
+    
 
                         if(hashtable != 
                                     null
@@ -2004,21 +2319,27 @@ logUtil!.put(commonStrings!.START, this, commonStrings!.LOAD)
                         
                                     {
                                     
-    var levelAsString: string = hashtable.get(GameInfo.LEVEL_NAME as Object) as String;
-        
-        
+    var levelAsString: string = hashtable.get(GameInfo.LEVEL_NAME as Object);
 
+                         as String;
+        
+        
+;
+    
 
     var level: number = Integer.valueOf(levelAsString)!.toInt()!;
         
         
-
+;
+    
 
     var gameInfo: GameInfo = this.gameLayerManager!.getGameInfo()!;
         
         
-
-gameInfo!.setCurrentLevel(level)
+;
+    
+gameInfo!.setCurrentLevel(level);
+    
 
                                     }
                                 
@@ -2027,9 +2348,10 @@ gameInfo!.setCurrentLevel(level)
 
                 //@Throws(Error::class)
             
-    public getLoadStateHashtable(): Hashtable<Any, Any>{
+    public getLoadStateHashtable(): Hashtable<any, any>{
 logUtil!.put(StringMaker().
-                            append(commonLabels!.START_LABEL)!.append(this.stringUtil!.toString(this.hashtable))!.toString(), this, "getLoadStateHashtable")
+                            append(commonLabels!.START_LABEL)!.append(this.stringUtil!.toString(this.hashtable))!.toString(), this, "getLoadStateHashtable");
+    
 
 
 
@@ -2039,28 +2361,34 @@ logUtil!.put(StringMaker().
 }
 
 
-    public setLoadStateHashtable(hashtable: Hashtable<Any, Any>){
+    public setLoadStateHashtable(hashtable: Hashtable<any, any>){
     //var hashtable = hashtable
 logUtil!.put(StringMaker().
-                            append(commonLabels!.START_LABEL)!.append(this.stringUtil!.toString(hashtable))!.toString(), this, "setLoadStateHashtable")
-this.hashtable= hashtable
+                            append(commonLabels!.START_LABEL)!.append(this.stringUtil!.toString(hashtable))!.toString(), this, "setLoadStateHashtable");
+    
+this.hashtable= hashtable;
+    
 }
 
 
-    public getCurrentStateHashtable(): Hashtable<Any, Any>{
+    public getCurrentStateHashtable(): Hashtable<any, any>{
 
-    var hashtable: Hashtable<Any, Any> = new Hashtable<Any, Any>();
+    var hashtable: Hashtable<any, any> = new Hashtable<any, any>();
         
         
-
+;
+    
 
     var level: number = this.gameLayerManager!.getGameInfo()!.getCurrentLevel()!;
         
         
-
-hashtable.put(GameInfo.LEVEL_NAME.toString(), level.toString())
+;
+    
+hashtable.put(GameInfo.LEVEL_NAME.toString(), level.toString());
+    
 logUtil!.put(StringMaker().
-                            append("End: ")!.append(this.stringUtil!.toString(hashtable))!.toString(), this, "getCurrentStateHashtable")
+                            append("End: ")!.append(this.stringUtil!.toString(hashtable))!.toString(), this, "getCurrentStateHashtable");
+    
 
 
 
@@ -2072,30 +2400,39 @@ logUtil!.put(StringMaker().
 
     public paintGameOver(graphics: Graphics){
 var graphics = graphics
-ForcedLogUtil.log(commonStrings!.NOT_IMPLEMENTED, this)
+ForcedLogUtil.log(commonStrings!.NOT_IMPLEMENTED, this);
+    
 }
 
 
     public draw(graphics: Graphics){
 var graphics = graphics
-this.colorFillPaintable!.paint(graphics)
-this.basicSetColorUtil!.setBasicColorP(graphics, this.gameLayerManager!.getForegroundBasicColor())
-this.gameSpecificPaintable!.paint(graphics)
+this.colorFillPaintable!.paint(graphics);
+    
+this.basicSetColorUtil!.setBasicColorP(graphics, this.gameLayerManager!.getForegroundBasicColor());
+    
+this.gameSpecificPaintable!.paint(graphics);
+    
 }
 
 
     public clear(graphics: Graphics){
     //var graphics = graphics
-this.colorFillPaintable!.paint(graphics)
+this.colorFillPaintable!.paint(graphics);
+    
 }
 
 
     public paint(graphics: Graphics){
     //var graphics = graphics
-baseGameStatistics!.nextRefresh()
-this.draw(graphics)
-menuPaintable!.paint(graphics)
-this.progressPaintable!.paint(graphics)
+baseGameStatistics!.nextRefresh();
+    
+this.draw(graphics);
+    
+menuPaintable!.paint(graphics);
+    
+this.progressPaintable!.paint(graphics);
+    
 }
 
 
@@ -2112,10 +2449,14 @@ this.progressPaintable!.paint(graphics)
 
     public nonBotPaint(graphics: Graphics){
 var graphics = graphics
-this.endGamePaintable!.paint(graphics)
-this.intermissionPaintable!.paint(graphics)
-this.paintIntermission(graphics)
-this.touchPaintable!.paint(graphics)
+this.endGamePaintable!.paint(graphics);
+    
+this.intermissionPaintable!.paint(graphics);
+    
+this.paintIntermission(graphics);
+    
+this.touchPaintable!.paint(graphics);
+    
 }
 
 
@@ -2138,26 +2479,30 @@ var graphics = graphics
 
     public keyPressed(keyCode: number){
 var keyCode = keyCode
-this.keyPressed(keyCode, 0)
+this.keyPressed(keyCode, 0);
+    
 }
 
 
     public keyReleased(keyCode: number){
 var keyCode = keyCode
-this.keyReleased(keyCode, 0)
+this.keyReleased(keyCode, 0);
+    
 }
 
 
     public keyRepeated(keyCode: number){
 var keyCode = keyCode
-this.keyRepeated(keyCode, 0)
+this.keyRepeated(keyCode, 0);
+    
 }
 
 
     public keyPressed(keyCode: number, deviceId: number){
 var keyCode = keyCode
 var deviceId = deviceId
-this.inputProcessor!.keyPressed(keyCode, deviceId)
+this.inputProcessor!.keyPressed(keyCode, deviceId);
+    
 }
 
 
@@ -2168,7 +2513,8 @@ var deviceId = deviceId
                         if(this.isSingleKeyRepeatableProcessing)
                         
                                     {
-                                    this.inputProcessor!.keyPressed(keyCode, deviceId)
+                                    this.inputProcessor!.keyPressed(keyCode, deviceId);
+    
 
                                     }
                                 
@@ -2178,7 +2524,8 @@ var deviceId = deviceId
     public keyReleased(keyCode: number, deviceId: number){
     //var keyCode = keyCode
     //var deviceId = deviceId
-this.inputProcessor!.keyReleased(this, keyCode, deviceId)
+this.inputProcessor!.keyReleased(this, keyCode, deviceId);
+    
 }
 
 
@@ -2197,7 +2544,8 @@ var isProgress = isProgress
     var portion: number = 30;
         
         
-
+;
+    
 
                         if(isProgress && this.isMainCanvas())
                         
@@ -2206,15 +2554,20 @@ var isProgress = isProgress
     var myCommandsFactory: MyCommandsFactory = MyCommandsFactory.getInstance()!;
         
         
-
+;
+    
 
     var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
         
         
-
-progressCanvas!.start()
-this.getCustomCommandListener()!.commandAction(myCommandsFactory!.SET_DISPLAYABLE, progressCanvas)
-portion= 4
+;
+    
+progressCanvas!.start();
+    
+this.getCustomCommandListener()!.commandAction(myCommandsFactory!.SET_DISPLAYABLE, progressCanvas);
+    
+portion= 4;
+    
 
                                     }
                                 
@@ -2230,11 +2583,16 @@ portion= 4
                 //@Throws(Error::class)
             
     processPlayingGame(){
-cheatProcessor!.update()
-sensorGameUpdateProcessor!.getInputSensor()!.update()
-gameInputProcessor!.process()
-gameLayerManager!.process()
-startIntermissionProcessor!.process()
+cheatProcessor!.update();
+    
+sensorGameUpdateProcessor!.getInputSensor()!.update();
+    
+gameInputProcessor!.process();
+    
+gameLayerManager!.process();
+    
+startIntermissionProcessor!.process();
+    
 }
 
 
@@ -2247,26 +2605,34 @@ startIntermissionProcessor!.process()
                 //@Throws(Error::class)
             
     processGame(){
-super.process()
+super.process();
+    
 
                         if(AllBinaryMediaManager.update())
                         
                                     {
                                     
-                        if(!primaryPlayerQueue!.process())
+                        if(!primaryPlayerQueue!.process();
+
+                        )
                         
                                     {
-                                    secondaryPlayerQueue!.process()
+                                    secondaryPlayerQueue!.process();
+    
 
                                     }
                                 
 
                                     }
                                 
-mainStateProcessor!.process()
-menuInputProcessor!.processInput()
-endGameProcessor!.process()
-baseGameStatistics!.nextFrame()
+mainStateProcessor!.process();
+    
+menuInputProcessor!.processInput();
+    
+endGameProcessor!.process();
+    
+baseGameStatistics!.nextFrame();
+    
 }
 
 
@@ -2278,7 +2644,8 @@ baseGameStatistics!.nextFrame()
 
         //mutex.withLock
         {
-this.threadObjectUtil!.notifyObject(this)
+this.threadObjectUtil!.notifyObject(this);
+    
 }
 
 }
@@ -2295,7 +2662,8 @@ this.threadObjectUtil!.notifyObject(this)
     var features: Features = Features.getInstance()!;
         
         
-
+;
+    
 
                         if(AndroidUtil.isAndroid())
                         
@@ -2319,11 +2687,13 @@ this.threadObjectUtil!.notifyObject(this)
     var openGLImageSpecificFactory: OpenGLImageSpecificFactory = OpenGLImageSpecificFactory.getInstance()!;
         
         
-
+;
+    
 
         while(openGLImageSpecificFactory!.updating)
         {
-Thread.sleep(YIELD_SLEEP)
+Thread.sleep(YIELD_SLEEP);
+    
 }
 
 
@@ -2338,46 +2708,64 @@ Thread.sleep(YIELD_SLEEP)
     public run(){
 
         try {
-            logUtil!.put(commonStrings!.START_RUNNABLE, this, commonStrings!.RUN)
+            logUtil!.put(commonStrings!.START_RUNNABLE, this, commonStrings!.RUN);
+    
 
     var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
         
         
-
-progressCanvas!.addPortion(50, "Game Thread")
-this.setCurrentThread()
-this.setRunning(true)
-
-                        if(this.getCustomCommandListener() == NullCommandListener.NULL_COMMAND_LISTENER)
-                        
-                                    {
-                                    Thread.sleep(YIELD_SLEEP)
-
-                                    }
-                                
-this.shouldWait()
-this.threadInit()
+;
+    
+progressCanvas!.addPortion(50, "Game Thread");
+    
+this.setCurrentThread();
+    
+this.setRunning(true);
+    
 
                         if(this.getCustomCommandListener() == NullCommandListener.NULL_COMMAND_LISTENER)
                         
                                     {
-                                    Thread.sleep(YIELD_SLEEP)
+                                    Thread.sleep(YIELD_SLEEP);
+    
 
                                     }
                                 
-this.open()
+this.shouldWait();
+    
+this.threadInit();
+    
+
+                        if(this.getCustomCommandListener() == NullCommandListener.NULL_COMMAND_LISTENER)
+                        
+                                    {
+                                    Thread.sleep(YIELD_SLEEP);
+    
+
+                                    }
+                                
+this.open();
+    
 
     var gameAdState: GameAdState = gameAdStateFactory!.getCurrentInstance()!;
         
         
+;
+    
+gameAdState!.init();
+    
+gameAdState!.setGameIsReady(true);
+    
+this.gameBehavior!.run(this);
+    
+logUtil!.put(commonStrings!.END_RUNNABLE, this, commonStrings!.RUN);
+    
 
-gameAdState!.init()
-gameAdState!.setGameIsReady(true)
-this.gameBehavior!.run(this)
-logUtil!.put(commonStrings!.END_RUNNABLE, this, commonStrings!.RUN)
-} catch(e: Exception)
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
+    
 }
 
 }
@@ -2390,7 +2778,8 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
     var features: Features = Features.getInstance()!;
         
         
-
+;
+    
 
                         if(features.isDefault(openGLFeatureFactory!.OPENGL_AS_GAME_THREAD) || J2MEUtil.isHTML())
                         
@@ -2399,7 +2788,8 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
                         if(features.isDefault(openGLFeatureFactory!.OPENGL_AS_GAME_THREAD))
                         
                                     {
-                                    logUtil!.put(openGLFeatureFactory!.OPENGL_AS_GAME_THREAD.getName(), this, commonStrings!.RUN)
+                                    logUtil!.put(openGLFeatureFactory!.OPENGL_AS_GAME_THREAD.getName(), this, commonStrings!.RUN);
+    
 
                                     }
                                 
@@ -2407,7 +2797,8 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
                         if(J2MEUtil.isHTML())
                         
                                     {
-                                    logUtil!.put(GraphicsStrings.getInstance()!.HTML, this, commonStrings!.RUN)
+                                    logUtil!.put(GraphicsStrings.getInstance()!.HTML, this, commonStrings!.RUN);
+    
 
                                     }
                                 
@@ -2415,10 +2806,14 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
     var currentDisplayableFactory: CurrentDisplayableFactory = CurrentDisplayableFactory.getInstance()!;
         
         
-
-currentDisplayableFactory!.setRunnable(gameRunnable)
-currentDisplayableFactory!.setDisplayable(this)
-OpenGLThreadUtil.getInstance()!.onResume()
+;
+    
+currentDisplayableFactory!.setRunnable(gameRunnable);
+    
+currentDisplayableFactory!.setDisplayable(this);
+    
+OpenGLThreadUtil.getInstance()!.onResume();
+    
 
                                     }
                                 
@@ -2426,27 +2821,34 @@ OpenGLThreadUtil.getInstance()!.onResume()
                         if(features.isDefault(openGLFeatureFactory!.OPENGL_AND_GAME_HAVE_DIFFERENT_THREADS))
                         
                                     {
-                                    logUtil!.put(openGLFeatureFactory!.OPENGL_AND_GAME_HAVE_DIFFERENT_THREADS.getName(), this, commonStrings!.RUN)
-OpenGLThreadUtil.getInstance()!.onResume()
+                                    logUtil!.put(openGLFeatureFactory!.OPENGL_AND_GAME_HAVE_DIFFERENT_THREADS.getName(), this, commonStrings!.RUN);
+    
+OpenGLThreadUtil.getInstance()!.onResume();
+    
 
         while(this.isRunning())
         {
-this.run3()
+this.run3();
+    
 }
 
-this.end()
+this.end();
+    
 
                                     }
                                 
                         else {
-                            logUtil!.put("this thread", this, commonStrings!.RUN)
+                            logUtil!.put("this thread", this, commonStrings!.RUN);
+    
 
         while(this.isRunning())
         {
-this.run3()
+this.run3();
+    
 }
 
-this.end()
+this.end();
+    
 
                         }
                             
@@ -2456,23 +2858,29 @@ this.end()
                 //@Throws(Error::class)
             
     public run3(){
-this.loopTimeHelper!.setStartTime(gameTickTimeDelayHelper!.setStartTime())
-gameTickDisplayInfoSingleton!.update()
-this.processGame()
-this.processLoopSleep()
+this.loopTimeHelper!.setStartTime(gameTickTimeDelayHelper!.setStartTime());
+    
+gameTickDisplayInfoSingleton!.update();
+    
+this.processGame();
+    
+this.processLoopSleep();
+    
 }
 
 
     public setRunning(running: boolean){
 var running = running
-super.setRunning(running)
+super.setRunning(running);
+    
 
         try {
             
     var features: Features = Features.getInstance()!;
         
         
-
+;
+    
 
                         if(running)
                         
@@ -2493,21 +2901,27 @@ super.setRunning(running)
     var currentDisplayableFactory: CurrentDisplayableFactory = CurrentDisplayableFactory.getInstance()!;
         
         
-
-currentDisplayableFactory!.clearRunnable()
+;
+    
+currentDisplayableFactory!.clearRunnable();
+    
 
                                     }
                                 
-this.end()
+this.end();
+    
 
                                     }
                                 
 
                         }
                             
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, SET_RUNNING, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, SET_RUNNING, e);
+    
 }
 
 }
@@ -2516,28 +2930,39 @@ logUtil!.put(commonStrings!.EXCEPTION, this, SET_RUNNING, e)
                 //@Throws(Error::class)
             
     public end(){
-screenCapture!.endRecording()
+screenCapture!.endRecording();
+    
 baseGameStatistics!.add(StringMaker().
-                            append(baseGameStatistics!.toString())!.append(CommonSeps.getInstance()!.NEW_LINE)!.toString())
-baseGameStatistics!.init()
-this.gameKeyEventHandler!.removeListener(this.cheatProcessor)
-this.close()
-this.removeAllGameKeyInputListeners()
-this.endGameThread()
+                            append(baseGameStatistics!.toString())!.append(CommonSeps.getInstance()!.NEW_LINE)!.toString());
+    
+baseGameStatistics!.init();
+    
+this.gameKeyEventHandler!.removeListener(this.cheatProcessor);
+    
+this.close();
+    
+this.removeAllGameKeyInputListeners();
+    
+this.endGameThread();
+    
 }
 
 
                 //@Throws(Error::class)
             
     public endGameThread(){
-DisplayChangeEventHandler.getInstance()!.removeListener(this)
-GameLevelDisplayChangeEventListenersFactory.getInstance()!.clear()
+DisplayChangeEventHandler.getInstance()!.removeListener(this);
+    
+GameLevelDisplayChangeEventListenersFactory.getInstance()!.clear();
+    
 
     var gameAdState: GameAdState = gameAdStateFactory!.getCurrentInstance()!;
         
         
-
-gameAdState!.notPlayingAdState()
+;
+    
+gameAdState!.notPlayingAdState();
+    
 }
 
 
@@ -2547,7 +2972,8 @@ var score = score
     var gameInfo: GameInfo = this.gameLayerManager!.getGameInfo()!;
         
         
-
+;
+    
 
 
 
@@ -2565,7 +2991,8 @@ var score = score
     //var score = score
     //var autoSubmit = autoSubmit
     //var isLast = isLast
-this.gameBehavior!.setHighScore(abeClientInformation, this, name, score, autoSubmit, isLast)
+this.gameBehavior!.setHighScore(abeClientInformation, this, name, score, autoSubmit, isLast);
+    
 }
 
 
@@ -2581,17 +3008,20 @@ this.gameBehavior!.setHighScore(abeClientInformation, this, name, score, autoSub
     var highScore: HighScore = this.createHighScore(score)!;
         
         
-
+;
+    
 
     var textBox: HighScoreTextBox = new HighScoreTextBox(this.highScoresFactoryInterface, highScoresHelper, abeClientInformation, this.gameLayerManager!.getGameInfo(), this.getCustomCommandListener(), name, highScore, this.gameLayerManager!.getBackgroundBasicColor(), this.gameLayerManager!.getForegroundBasicColor());
         
         
-
+;
+    
 
                         if(isLast)
                         
                                     {
-                                    this.getCustomCommandListener()!.commandAction(GameCommandsFactory.getInstance()!.SET_MENU_DISPLAYABLE, textBox)
+                                    this.getCustomCommandListener()!.commandAction(GameCommandsFactory.getInstance()!.SET_MENU_DISPLAYABLE, textBox);
+    
 
                                     }
                                 
@@ -2617,19 +3047,25 @@ class SaveHighScoreRunnable
                         if(isLast)
                         
                                     {
-                                    textBox!.submit()
+                                    textBox!.submit();
+    
 
                                     }
                                 
                         else {
-                            textBox!.saveHighScore()
+                            textBox!.saveHighScore();
+    
 
                         }
                             
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "run", e)
-progressCanvas!.end()
+logUtil!.put(commonStrings!.EXCEPTION, this, "run", e);
+    
+progressCanvas!.end();
+    
 }
 
 }
@@ -2638,7 +3074,8 @@ progressCanvas!.end()
 }
                 
             
-SecondaryThreadPool.getInstance()!.runTask(SaveHighScoreRunnable())
+SecondaryThreadPool.getInstance()!.runTask(SaveHighScoreRunnable());
+    
 
                                     }
                                 
@@ -2657,7 +3094,8 @@ SecondaryThreadPool.getInstance()!.runTask(SaveHighScoreRunnable())
 
     setInitialized(initialized: boolean){
 var initialized = initialized
-this.initialized= initialized
+this.initialized= initialized;
+    
 }
 
 
@@ -2683,7 +3121,8 @@ this.initialized= initialized
 
     public setProgressPaintable(paintable: PaintableInterface){
     //var paintable = paintable
-this.progressPaintable= paintable
+this.progressPaintable= paintable;
+    
 }
 
 
@@ -2709,7 +3148,8 @@ this.progressPaintable= paintable
 
     setTouchPaintableP(paintable: Paintable){
 var paintable = paintable
-this.touchPaintable= paintable
+this.touchPaintable= paintable;
+    
 }
 
 
@@ -2725,7 +3165,8 @@ this.touchPaintable= paintable
 
     setEndGamePaintable(endGamePaintable: Paintable){
 var endGamePaintable = endGamePaintable
-this.endGamePaintable= endGamePaintable
+this.endGamePaintable= endGamePaintable;
+    
 }
 
 
@@ -2741,7 +3182,8 @@ this.endGamePaintable= endGamePaintable
 
     setIntermissionPaintable(intermissionPaintable: Paintable){
 var intermissionPaintable = intermissionPaintable
-this.intermissionPaintable= intermissionPaintable
+this.intermissionPaintable= intermissionPaintable;
+    
 }
 
 
@@ -2767,7 +3209,8 @@ this.intermissionPaintable= intermissionPaintable
 
     public setHighScoresPaintable(highScoresPaintable: Paintable){
     //var highScoresPaintable = highScoresPaintable
-this.highScoresPaintable= highScoresPaintable
+this.highScoresPaintable= highScoresPaintable;
+    
 }
 
 
@@ -2794,7 +3237,8 @@ this.highScoresPaintable= highScoresPaintable
     clearPlayerGameInputList(){
 
     var playerGameInput: PlayerGameInput
-
+;
+    
 
 
 
@@ -2805,23 +3249,30 @@ this.highScoresPaintable= highScoresPaintable
         
 index >= 0; index--)
         {
-playerGameInput= this.localPlayerGameInputList!.get(index) as PlayerGameInput
-this.gameKeyEventHandler!.removeListener(playerGameInput)
+playerGameInput= this.localPlayerGameInputList!.get(index);
+
+                         as PlayerGameInput;
+    
+this.gameKeyEventHandler!.removeListener(playerGameInput);
+    
 }
 
-this.localPlayerGameInputList!.clear()
+this.localPlayerGameInputList!.clear();
+    
 }
 
 
     addPlayerGameInput(playerGameInput: PlayerGameInput){
     //var playerGameInput = playerGameInput
-this.localPlayerGameInputList!.add(playerGameInput)
+this.localPlayerGameInputList!.add(playerGameInput);
+    
 }
 
 
     setMenuInputProcessor(menuInputProcessor: BasicMenuInputProcessor){
     //var menuInputProcessor = menuInputProcessor
-this.menuInputProcessor= menuInputProcessor
+this.menuInputProcessor= menuInputProcessor;
+    
 }
 
 
@@ -2847,7 +3298,8 @@ this.menuInputProcessor= menuInputProcessor
 
     public setMenuForm(menuForm: ScrollSelectionForm){
     //var menuForm = menuForm
-this.menuForm= menuForm
+this.menuForm= menuForm;
+    
 }
 
 
@@ -2863,13 +3315,15 @@ this.menuForm= menuForm
 
     public setStartLevel(startLevel: number){
     //var startLevel = startLevel
-this.startLevel= startLevel
+this.startLevel= startLevel;
+    
 }
 
 
     setTouchButtonsPaintable(touchButtonsPaintable: Paintable){
     //var touchButtonsPaintable = touchButtonsPaintable
-this.touchButtonsPaintable= touchButtonsPaintable
+this.touchButtonsPaintable= touchButtonsPaintable;
+    
 }
 
 
@@ -2885,7 +3339,8 @@ this.touchButtonsPaintable= touchButtonsPaintable
 
     public setGameInputProcessor(gameInputProcessor: Processor){
     //var gameInputProcessor = gameInputProcessor
-this.gameInputProcessor= gameInputProcessor
+this.gameInputProcessor= gameInputProcessor;
+    
 }
 
 
@@ -2901,7 +3356,8 @@ this.gameInputProcessor= gameInputProcessor
 
     setEndGameProcessor(endGameProcessor: Processor){
     //var endGameProcessor = endGameProcessor
-this.endGameProcessor= endGameProcessor
+this.endGameProcessor= endGameProcessor;
+    
 }
 
 
@@ -2917,7 +3373,8 @@ this.endGameProcessor= endGameProcessor
 
     setEndGameStatePaintable(endGameStatePaintable: Paintable){
     //var endGameStatePaintable = endGameStatePaintable
-this.endGameStatePaintable= endGameStatePaintable
+this.endGameStatePaintable= endGameStatePaintable;
+    
 }
 
 
@@ -2933,7 +3390,8 @@ this.endGameStatePaintable= endGameStatePaintable
 
     setNonBotPaintableP(nonBotPaintable: Paintable){
     //var nonBotPaintable = nonBotPaintable
-this.nonBotPaintable= nonBotPaintable
+this.nonBotPaintable= nonBotPaintable;
+    
 }
 
 
@@ -2949,7 +3407,8 @@ this.nonBotPaintable= nonBotPaintable
 
     setStartIntermissionPaintable(startIntermissionPaintable: InitUpdatePaintable){
     //var startIntermissionPaintable = startIntermissionPaintable
-this.startIntermissionPaintable= startIntermissionPaintable
+this.startIntermissionPaintable= startIntermissionPaintable;
+    
 }
 
 
@@ -2965,7 +3424,8 @@ this.startIntermissionPaintable= startIntermissionPaintable
 
     public setMainStateProcessor(mainStateProcessor: Processor){
     //var mainStateProcessor = mainStateProcessor
-this.mainStateProcessor= mainStateProcessor
+this.mainStateProcessor= mainStateProcessor;
+    
 }
 
 
@@ -2981,7 +3441,8 @@ this.mainStateProcessor= mainStateProcessor
 
     setProcessGameProcessor(processGameProcessor: Processor){
     //var processGameProcessor = processGameProcessor
-this.processGameProcessor= processGameProcessor
+this.processGameProcessor= processGameProcessor;
+    
 }
 
 
@@ -2997,7 +3458,8 @@ this.processGameProcessor= processGameProcessor
 
     setOpenMenuPaintable(openMenuPaintable: Paintable){
     //var openMenuPaintable = openMenuPaintable
-this.openMenuPaintable= openMenuPaintable
+this.openMenuPaintable= openMenuPaintable;
+    
 }
 
 
@@ -3013,7 +3475,8 @@ this.openMenuPaintable= openMenuPaintable
 
     setPopupMenuInputProcessor(popupMenuInputProcessor: BasicMenuInputProcessor){
     //var popupMenuInputProcessor = popupMenuInputProcessor
-this.popupMenuInputProcessor= popupMenuInputProcessor
+this.popupMenuInputProcessor= popupMenuInputProcessor;
+    
 }
 
 
@@ -3059,7 +3522,8 @@ this.popupMenuInputProcessor= popupMenuInputProcessor
 
     public setInputProcessor(inputProcessor: InputProcessor){
     //var inputProcessor = inputProcessor
-this.inputProcessor= inputProcessor
+this.inputProcessor= inputProcessor;
+    
 }
 
 
@@ -3075,7 +3539,8 @@ this.inputProcessor= inputProcessor
 
     setMenuPaintable(menuPaintable: Paintable){
     //var menuPaintable = menuPaintable
-this.menuPaintable= menuPaintable
+this.menuPaintable= menuPaintable;
+    
 }
 
 
@@ -3091,7 +3556,8 @@ this.menuPaintable= menuPaintable
 
     setFormPaintable(formPaintable: Paintable){
     //var formPaintable = formPaintable
-this.formPaintable= formPaintable
+this.formPaintable= formPaintable;
+    
 }
 
 
@@ -3107,7 +3573,8 @@ this.formPaintable= formPaintable
 
     public setGameSpecificPaintableP(gameSpecificPaintable: Paintable){
     //var gameSpecificPaintable = gameSpecificPaintable
-this.gameSpecificPaintable= gameSpecificPaintable
+this.gameSpecificPaintable= gameSpecificPaintable;
+    
 }
 
 
@@ -3136,12 +3603,14 @@ this.gameSpecificPaintable= gameSpecificPaintable
     var features: Features = Features.getInstance()!;
         
         
-
+;
+    
 
     var openGLFeatureFactory: OpenGLFeatureFactory = OpenGLFeatureFactory.getInstance()!;
         
         
-
+;
+    
 
                         if(features.isDefault(openGLFeatureFactory!.OPENGL_AS_GAME_THREAD))
                         
@@ -3161,6 +3630,8 @@ this.gameSpecificPaintable= gameSpecificPaintable
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.isRunning();
+
+                        ;
     
 
                         }

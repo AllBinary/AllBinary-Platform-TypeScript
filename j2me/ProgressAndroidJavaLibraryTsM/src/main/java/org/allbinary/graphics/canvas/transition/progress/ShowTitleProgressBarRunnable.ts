@@ -51,22 +51,27 @@ var progressCanvas = progressCanvas
 }
 
 
-    private readonly FADE_IN_HALF: IntArray = intArrayOf(TransistionTypes.getInstance()!.FADE_IN_TO_HALF_ALPHA,TransistionTypes.getInstance()!.FADE_IN_FROM_HALF_ALPHA);
+    private readonly FADE_IN_HALF: number[] = intArrayOf(TransistionTypes.getInstance()!.FADE_IN_TO_HALF_ALPHA,TransistionTypes.getInstance()!.FADE_IN_FROM_HALF_ALPHA);
         
         
 
     public run(){
 
         try {
-            this.midletActivity!.onShowProgress(false, FADE_IN_HALF)
-} catch(e: Exception)
+            this.midletActivity!.onShowProgress(false, FADE_IN_HALF);
+    
+
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
+    
 }
 
 }

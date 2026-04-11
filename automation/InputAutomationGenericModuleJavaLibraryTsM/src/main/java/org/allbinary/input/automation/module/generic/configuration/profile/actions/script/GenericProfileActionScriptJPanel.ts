@@ -66,8 +66,10 @@ export class GenericProfileActionScriptJPanel extends javax.swing.JPanel
 public constructor (){
 
             super();
-            logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR)
-initComponents()
+            logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
+    
+initComponents();
+    
 }
 
 
@@ -76,10 +78,14 @@ initComponents()
     var defaultTreeModel: DefaultTreeModel = new DefaultTreeModel(this.getGenericProfileActionScript());
         
         
-
-this.getActionScriptJTree()!.setModel(defaultTreeModel)
-this.repaint()
-logUtil!.put("Updated UI", this, "updateJTree")
+;
+    
+this.getActionScriptJTree()!.setModel(defaultTreeModel);
+    
+this.repaint();
+    
+logUtil!.put("Updated UI", this, "updateJTree");
+    
 }
 
 
@@ -95,7 +101,8 @@ logUtil!.put("Updated UI", this, "updateJTree")
 
     public setGenericProfileActionScript(genericProfileActionScript: GenericProfileActionScript){
 var genericProfileActionScript = genericProfileActionScript
-this.genericProfileActionScript= genericProfileActionScript
+this.genericProfileActionScript= genericProfileActionScript;
+    
 }
 
 
@@ -111,32 +118,42 @@ this.genericProfileActionScript= genericProfileActionScript
 
     public setActionScriptJTree(actionScriptJTree: javax.swing.JTree){
 var actionScriptJTree = actionScriptJTree
-this.actionScriptJTree= actionScriptJTree
+this.actionScriptJTree= actionScriptJTree;
+    
 }
 
 
     initComponents(){
-jScrollPane1= javax.swing.JScrollPane()
-actionScriptJTree= javax.swing.JTree()
-setLayout(java.awt.GridLayout(1, 0))
-actionScriptJTree!.setPreferredSize(java.awt.Dimension(500, 500))
+jScrollPane1= javax.swing.JScrollPane();
+    
+actionScriptJTree= javax.swing.JTree();
+    
+setLayout(java.awt.GridLayout(1, 0));
+    
+actionScriptJTree!.setPreferredSize(java.awt.Dimension(500, 500));
+    
 actionScriptJTree!.addMouseListener(object: java.awt.event.MouseAdapter()
                                 {
                                 
     public mouseClicked(evt: java.awt.event.MouseEvent){
 var evt = evt
-actionScriptJTreeMouseClicked(evt)
+actionScriptJTreeMouseClicked(evt);
+    
 }
 
     public mouseReleased(evt: java.awt.event.MouseEvent){
 var evt = evt
-actionScriptJTreeMouseReleased(evt)
+actionScriptJTreeMouseReleased(evt);
+    
 }
 
                                 }
-                            )
-jScrollPane1!.setViewportView(actionScriptJTree)
-add(jScrollPane1)
+                            );
+    
+jScrollPane1!.setViewportView(actionScriptJTree);
+    
+add(jScrollPane1);
+    
 }
 
 
@@ -146,7 +163,8 @@ var evt = evt
     var button: number = evt.getButton()!;
         
         
-
+;
+    
 
                         if(button == MouseEvent.BUTTON3)
                         
@@ -155,7 +173,8 @@ var evt = evt
     var treePath: TreePath = this.getActionScriptJTree()!.getSelectionPath()!;
         
         
-
+;
+    
 
                         if(treePath != 
                                     null
@@ -166,7 +185,8 @@ var evt = evt
     var anyType: any = {} = treePath!.getLastPathComponent()!;
         
         
-
+;
+    
 
                         if(anyType is CustomTreeNodeInterface)
                         
@@ -175,13 +195,18 @@ var evt = evt
     var customTreeNodeInterface: CustomTreeNodeInterface = anyType as CustomTreeNodeInterface;
         
         
-
+;
+    
 
     var jPopupMenu: JPopupMenu = customTreeNodeInterface!.getJPopupMenu()!;
         
         
+;
+    
+jPopupMenu!.show(evt.getSource();
 
-jPopupMenu!.show(evt.getSource() as JComponent, evt.getX(), evt.getY())
+                         as JComponent, evt.getX(), evt.getY());
+    
 
                                     }
                                 

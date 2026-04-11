@@ -72,7 +72,8 @@ public constructor (dbConnectionInfo: DbConnectionInfo){
 
     setHelper(anyType: any = {}){
 var anyType = anyType
-this.anyType= anyType
+this.anyType= anyType;
+    
 }
 
 
@@ -90,29 +91,36 @@ this.anyType= anyType
 
         try {
             
-    var dynamicClass: KClass<*> = anyType!::class!;
+    var dynamicClass: Function = anyType!constructor!;
         
         
-
+;
+    
 
     var method: Method = dynamicClass!.getMethod(METHOD_CALL_GET_HOST_NAME, 
                             null)!;
         
         
-
+;
+    
 
     var result: string = method.invoke(anyType, 
-                            null) as String;
-        
-        
+                            null);
 
+                         as String;
+        
+        
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
 
@@ -129,29 +137,38 @@ this.anyType= anyType
 
         try {
             
-    var dynamicClass: KClass<*> = anyType!::class!;
+    var dynamicClass: Function = anyType!constructor!;
         
         
-
+;
+    
 
     var method: Method = dynamicClass!.getMethod(METHOD_CALL_ADD_USERS, 
                             null)!;
         
         
-
+;
+    
 
     var result: Boolean = method.invoke(anyType, 
-                            null) as Boolean;
-        
-        
+                            null);
 
+                         as Boolean;
+        
+        
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
 
@@ -168,29 +185,38 @@ this.anyType= anyType
 
         try {
             
-    var dynamicClass: KClass<*> = anyType!::class!;
+    var dynamicClass: Function = anyType!constructor!;
         
         
-
+;
+    
 
     var method: Method = dynamicClass!.getMethod(METHOD_CALL_ADD_DATABASES, 
                             null)!;
         
         
-
+;
+    
 
     var result: Boolean = method.invoke(anyType, 
-                            null) as Boolean;
-        
-        
+                            null);
 
+                         as Boolean;
+        
+        
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
 
@@ -207,29 +233,38 @@ this.anyType= anyType
 
         try {
             
-    var dynamicClass: KClass<*> = anyType!::class!;
+    var dynamicClass: Function = anyType!constructor!;
         
         
-
+;
+    
 
     var method: Method = dynamicClass!.getMethod(METHOD_CALL_ADD_TABLES, 
                             null)!;
         
         
-
+;
+    
 
     var result: Boolean = method.invoke(anyType, 
-                            null) as Boolean;
-        
-        
+                            null);
 
+                         as Boolean;
+        
+        
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
 
@@ -246,29 +281,38 @@ this.anyType= anyType
 
         try {
             
-    var dynamicClass: KClass<*> = anyType!::class!;
+    var dynamicClass: Function = anyType!constructor!;
         
         
-
+;
+    
 
     var method: Method = dynamicClass!.getMethod(METHOD_CALL_TEMP_MAIN_PATH, 
                             null)!;
         
         
-
+;
+    
 
     var result: Boolean = method.invoke(anyType, 
-                            null) as Boolean;
-        
-        
+                            null);
 
+                         as Boolean;
+        
+        
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
 
@@ -285,29 +329,38 @@ this.anyType= anyType
 
         try {
             
-    var dynamicClass: KClass<*> = anyType!::class!;
+    var dynamicClass: Function = anyType!constructor!;
         
         
-
+;
+    
 
     var method: Method = dynamicClass!.getMethod(METHOD_CALL_MAIN_PATH, 
                             null)!;
         
         
-
+;
+    
 
     var result: Boolean = method.invoke(anyType, 
-                            null) as Boolean;
-        
-        
+                            null);
 
+                         as Boolean;
+        
+        
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
 

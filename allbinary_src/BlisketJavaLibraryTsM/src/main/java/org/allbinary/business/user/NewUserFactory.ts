@@ -65,36 +65,47 @@ var transformInfoInterface = transformInfoInterface
     var httpTransformInfoInterface: TransformInfoHttpInterface = transformInfoInterface as TransformInfoHttpInterface;
         
         
+;
+    
 
+    var httpServletRequest: HttpServletRequest = httpTransformInfoInterface!.getPageContext()!.getRequest();
 
-    var httpServletRequest: HttpServletRequest = httpTransformInfoInterface!.getPageContext()!.getRequest() as HttpServletRequest;
+                         as HttpServletRequest;
         
         
+;
+    
 
-
-    var hashMap: HashMap<Any, Any> = RequestParams(httpServletRequest).
+    var hashMap: HashMap<any, any> = RequestParams(httpServletRequest).
                             toHashMap()!;
         
         
+;
+    
 
+    var role: string = httpTransformInfoInterface!.getPropertiesHashMap()!.get(UserRoleData.NAME.toString());
 
-    var role: string = httpTransformInfoInterface!.getPropertiesHashMap()!.get(UserRoleData.NAME.toString()) as String;
+                         as String;
         
         
-
-hashMap!.put(UserRoleData.NAME.toString(), role)
+;
+    
+hashMap!.put(UserRoleData.NAME.toString(), role);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return CreateUserFactory.getInstance(hashMap);
+
+                        ;
     
 }
 
 
                 //@Throws(Error::class)
             
-    public static getInstance(httpServletRequest: HttpServletRequest, propertiesHashMap: HashMap<Any, Any>): UserInterface{
+    public static getInstance(httpServletRequest: HttpServletRequest, propertiesHashMap: HashMap<any, any>): UserInterface{
 var httpServletRequest = httpServletRequest
 var propertiesHashMap = propertiesHashMap
 
@@ -104,22 +115,29 @@ var propertiesHashMap = propertiesHashMap
                         
                                     {
                                     
-    var requestHashMap: HashMap<Any, Any> = RequestParams(httpServletRequest).
+    var requestHashMap: HashMap<any, any> = RequestParams(httpServletRequest).
                             toHashMap()!;
         
         
+;
+    
 
+    var roleString: string = propertiesHashMap!.get(UserRoleData.NAME.toString());
 
-    var roleString: string = propertiesHashMap!.get(UserRoleData.NAME.toString()) as String;
+                         as String;
         
         
-
-requestHashMap!.put(UserRoleData.NAME.toString(), roleString)
+;
+    
+requestHashMap!.put(UserRoleData.NAME.toString(), roleString);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return CreateUserFactory.getInstance(requestHashMap);
+
+                        ;
     
 
                                     }

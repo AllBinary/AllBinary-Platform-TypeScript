@@ -59,12 +59,14 @@ var file = file
     var inputStream: InputStream = new AbFileInputStream(file);
         
         
-
+;
+    
 
     var available: number = inputStream!.available()!;
         
         
-
+;
+    
 
                         if(available > 0)
                         
@@ -73,7 +75,8 @@ var file = file
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Cloud File Bytes: " +available, this, "processRequest()")
+                                    logUtil!.put("Cloud File Bytes: " +available, this, "processRequest()");
+    
 
                                     }
                                 
@@ -97,12 +100,14 @@ var file = file
     var inputStream: InputStream = new AbFileLocalInputStream(file);
         
         
-
+;
+    
 
     var available: number = inputStream!.available()!;
         
         
-
+;
+    
 
                         if(available > 0)
                         
@@ -111,7 +116,8 @@ var file = file
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Local File Bytes: " +available, this, "processRequest()")
+                                    logUtil!.put("Local File Bytes: " +available, this, "processRequest()");
+    
 
                                     }
                                 
@@ -119,8 +125,10 @@ var file = file
                                     }
                                 
                         else {
-                            inputStream= AbFileInputStream(file)
-available= inputStream!.available()
+                            inputStream= AbFileInputStream(file);
+    
+available= inputStream!.available();
+    
 
                         if(available > 0)
                         
@@ -129,7 +137,8 @@ available= inputStream!.available()
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("Cloud File Bytes: " +available, this, "processRequest()")
+                                    logUtil!.put("Cloud File Bytes: " +available, this, "processRequest()");
+    
 
                                     }
                                 
@@ -156,12 +165,14 @@ var file = file
     var inputStream: InputStream = new AbFileLocalInputStream(file);
         
         
-
+;
+    
 
     var available: number = inputStream!.available()!;
         
         
-
+;
+    
 
                         if(available > 0)
                         
@@ -170,7 +181,8 @@ var file = file
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Local File Bytes: " +available, this, "processRequest()")
+                                    logUtil!.put("Local File Bytes: " +available, this, "processRequest()");
+    
 
                                     }
                                 

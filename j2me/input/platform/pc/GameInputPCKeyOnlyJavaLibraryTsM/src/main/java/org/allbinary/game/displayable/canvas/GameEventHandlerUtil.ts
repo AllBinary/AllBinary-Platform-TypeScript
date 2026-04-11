@@ -31,8 +31,10 @@ export class GameEventHandlerUtil
         
 
     public static removeAllListeners(){
-UpGameKeyEventHandler.getInstance()!.removeAllListeners()
-DownGameKeyEventHandler.getInstance()!.removeAllListeners()
+UpGameKeyEventHandler.getInstance()!.removeAllListeners();
+    
+DownGameKeyEventHandler.getInstance()!.removeAllListeners();
+    
 }
 
 

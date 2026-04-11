@@ -43,7 +43,8 @@ private constructor (){
 
 
     public clear(){
-list.clear()
+list.clear();
+    
 }
 
 
@@ -53,6 +54,8 @@ list.clear()
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return list.size();
+
+                        ;
     
 }
 
@@ -66,14 +69,17 @@ list.clear()
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return basicArrayListUtil!.getRandom(list) as AllBinaryLayerFactoryInterface;
+                        return basicArrayListUtil!.getRandom(list);
+
+                         as AllBinaryLayerFactoryInterface;
     
 }
 
 
     public add(layerInterfaceFactoryInterface: AllBinaryLayerFactoryInterface){
 var layerInterfaceFactoryInterface = layerInterfaceFactoryInterface
-list.add(layerInterfaceFactoryInterface)
+list.add(layerInterfaceFactoryInterface);
+    
 }
 
 

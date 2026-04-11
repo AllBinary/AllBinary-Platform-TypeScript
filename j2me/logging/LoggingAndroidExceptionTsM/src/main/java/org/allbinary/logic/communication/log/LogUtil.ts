@@ -61,29 +61,34 @@ private constructor (){
     var specialMessage: string = log.getSpecialMessage()!;
         
         
-
+;
+    
 
     var anyType: any = {} = log.getObject()!;
         
         
-
+;
+    
 
     var functionName: string = log.getFunctionName()!;
         
         
-
+;
+    
 
     var exception: any = {} = log.getThrowable()!;
         
         
-
+;
+    
 
                         if(log != 
                                     null
                                 )
                         
                                     {
-                                    this.put(specialMessage, anyType, functionName, exception)
+                                    this.put(specialMessage, anyType, functionName, exception);
+    
 
                                     }
                                 
@@ -106,14 +111,18 @@ private constructor (){
     var className: string = LABEL;
         
         
-
-className= anyType!::class.toString()!
+;
+    
+className= anyType!.constructor.name.toString()!;
+    
 
     var message: string = logFormatUtil!.get(className, functionName, specialMessage, exception)!;
         
         
-
-android.util.Log.i(LABEL, LOG_SUCCESS +message)
+;
+    
+android.util.Log.i(LABEL, LOG_SUCCESS +message);
+    
 }
 
 

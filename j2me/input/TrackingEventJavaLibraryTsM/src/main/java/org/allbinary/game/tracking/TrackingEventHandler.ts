@@ -59,8 +59,10 @@ var eventListenerInterface = eventListenerInterface
     var trackingEventListenerInterface: TrackingEventListenerInterface = eventListenerInterface as TrackingEventListenerInterface;
         
         
-
-trackingEventListenerInterface!.onMovement(eventObject as TrackingEvent)
+;
+    
+trackingEventListenerInterface!.onMovement(eventObject as TrackingEvent);
+    
 }
 
 

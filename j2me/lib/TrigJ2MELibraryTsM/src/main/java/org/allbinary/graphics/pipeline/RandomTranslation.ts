@@ -39,29 +39,39 @@ var howMuch = howMuch
     var myRandomFactory: MyRandomFactory = MyRandomFactory.getInstance()!;
         
         
-
+;
+    
 
     var x: number =  -myRandomFactory!.getNextInt(howMuch);
-        
-        
 
+                        ;
+        
+        
+;
+    
 
     var y: number = myRandomFactory!.getNextInt(howMuch)!;
         
         
-
+;
+    
 
     var graphicsPipe: BasicGraphicsPipeline = new BasicGraphicsPipeline(vector);
         
         
-
-graphicsPipe!.createMatrix()
-graphicsPipe!.translate(x, y)
+;
+    
+graphicsPipe!.createMatrix();
+    
+graphicsPipe!.translate(x, y);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return graphicsPipe!.getMatrix();
+
+                        ;
     
 }
 

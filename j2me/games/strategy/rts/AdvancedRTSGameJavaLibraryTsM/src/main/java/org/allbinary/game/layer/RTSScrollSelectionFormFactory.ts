@@ -60,32 +60,38 @@ export class RTSScrollSelectionFormFactory
     var basicColorFactory: BasicColorFactory = BasicColorFactory.getInstance()!;
         
         
-
+;
+    
 
     var touchButtonLocationHelper: TouchButtonLocationHelper = new TouchButtonLocationHelper();
         
         
-
+;
+    
 
     var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
         
         
-
+;
+    
 
     var menuX: number = CommonButtons.getInstance()!.STANDARD_BUTTON_SIZE +touchButtonLocationHelper!.getColumnsRemainderHalf();
         
         
-
+;
+    
 
     var width: number = displayInfo!.getLastWidth() -(menuX *2);
         
         
-
+;
+    
 
     var menuRectangle: Rectangle = new Rectangle(PointFactory.getInstance()!.getInstance(menuX, 16), width, CommonButtons.getInstance()!.STANDARD_BUTTON_SIZE);
         
         
-
+;
+    
 
 
 

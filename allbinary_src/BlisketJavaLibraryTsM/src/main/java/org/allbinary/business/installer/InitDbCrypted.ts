@@ -145,32 +145,44 @@ public constructor (databaseConnectionInfoInterface: DatabaseConnectionInfoInter
     public addUsers(): Boolean{
 
         try {
-            logUtil!.put(this.commonStrings!.START, this, this.METHOD_ADD_USERS)
-userDbInitInfo= UserDbInitInfo()
-inventoryDbInitInfo= InventoryDbInitInfo()
-historyDbInitInfo= HistoryDbInitInfo()
-staticpagesDbInitInfo= StaticPagesDbInitInfo()
-logDbInitInfo= LogDbInitInfo()
+            logUtil!.put(this.commonStrings!.START, this, this.METHOD_ADD_USERS);
+    
+userDbInitInfo= UserDbInitInfo();
+    
+inventoryDbInitInfo= InventoryDbInitInfo();
+    
+historyDbInitInfo= HistoryDbInitInfo();
+    
+staticpagesDbInitInfo= StaticPagesDbInitInfo();
+    
+logDbInitInfo= LogDbInitInfo();
+    
 
     var CUSTOMERDB: string = userDbInitInfo!.getName()!;
         
         
-
+;
+    
 
     var CUSTOMERDBUSER: string = userDbInitInfo!.getUserName()!;
         
         
-
+;
+    
 
     var CUSTOMERDBPASSWORD: string = userDbInitInfo!.getPassword()!;
         
         
+;
+    
 
+                        if(!this.addDbUser(CUSTOMERDB, CUSTOMERDBUSER, CUSTOMERDBPASSWORD);
 
-                        if(!this.addDbUser(CUSTOMERDB, CUSTOMERDBUSER, CUSTOMERDBPASSWORD))
+                        )
                         
                                     {
-                                    logUtil!.put(this.UNABLE_TO_CREATE_USER +CUSTOMERDBUSER, this, this.METHOD_ADD_USERS)
+                                    logUtil!.put(this.UNABLE_TO_CREATE_USER +CUSTOMERDBUSER, this, this.METHOD_ADD_USERS);
+    
 
 
 
@@ -184,22 +196,28 @@ logDbInitInfo= LogDbInitInfo()
     var INVENTORYDB: string = inventoryDbInitInfo!.getName()!;
         
         
-
+;
+    
 
     var INVENTORYDBUSER: string = inventoryDbInitInfo!.getUserName()!;
         
         
-
+;
+    
 
     var INVENTORYDBPASSWORD: string = inventoryDbInitInfo!.getPassword()!;
         
         
+;
+    
 
+                        if(!this.addDbUser(INVENTORYDB, INVENTORYDBUSER, INVENTORYDBPASSWORD);
 
-                        if(!this.addDbUser(INVENTORYDB, INVENTORYDBUSER, INVENTORYDBPASSWORD))
+                        )
                         
                                     {
-                                    logUtil!.put(this.UNABLE_TO_CREATE_USER +INVENTORYDBUSER, this, this.METHOD_ADD_USERS)
+                                    logUtil!.put(this.UNABLE_TO_CREATE_USER +INVENTORYDBUSER, this, this.METHOD_ADD_USERS);
+    
 
 
 
@@ -213,22 +231,28 @@ logDbInitInfo= LogDbInitInfo()
     var HISTORYDB: string = historyDbInitInfo!.getName()!;
         
         
-
+;
+    
 
     var HISTORYDBUSER: string = historyDbInitInfo!.getUserName()!;
         
         
-
+;
+    
 
     var HISTORYDBPASSWORD: string = historyDbInitInfo!.getPassword()!;
         
         
+;
+    
 
+                        if(!this.addDbUser(HISTORYDB, HISTORYDBUSER, HISTORYDBPASSWORD);
 
-                        if(!this.addDbUser(HISTORYDB, HISTORYDBUSER, HISTORYDBPASSWORD))
+                        )
                         
                                     {
-                                    logUtil!.put(this.UNABLE_TO_CREATE_USER +HISTORYDBUSER, this, this.METHOD_ADD_USERS)
+                                    logUtil!.put(this.UNABLE_TO_CREATE_USER +HISTORYDBUSER, this, this.METHOD_ADD_USERS);
+    
 
 
 
@@ -242,22 +266,28 @@ logDbInitInfo= LogDbInitInfo()
     var STATICPAGESDB: string = staticpagesDbInitInfo!.getName()!;
         
         
-
+;
+    
 
     var STATICPAGESDBUSER: string = staticpagesDbInitInfo!.getUserName()!;
         
         
-
+;
+    
 
     var STATICPAGESDBPASSWORD: string = staticpagesDbInitInfo!.getPassword()!;
         
         
+;
+    
 
+                        if(!this.addDbUser(STATICPAGESDB, STATICPAGESDBUSER, STATICPAGESDBPASSWORD);
 
-                        if(!this.addDbUser(STATICPAGESDB, STATICPAGESDBUSER, STATICPAGESDBPASSWORD))
+                        )
                         
                                     {
-                                    logUtil!.put(this.UNABLE_TO_CREATE_USER +STATICPAGESDBUSER, this, this.METHOD_ADD_USERS)
+                                    logUtil!.put(this.UNABLE_TO_CREATE_USER +STATICPAGESDBUSER, this, this.METHOD_ADD_USERS);
+    
 
 
 
@@ -271,22 +301,28 @@ logDbInitInfo= LogDbInitInfo()
     var LOGDB: string = logDbInitInfo!.getName()!;
         
         
-
+;
+    
 
     var LOGDBUSER: string = logDbInitInfo!.getUserName()!;
         
         
-
+;
+    
 
     var LOGDBPASSWORD: string = logDbInitInfo!.getPassword()!;
         
         
+;
+    
 
+                        if(!this.addDbUser(LOGDB, LOGDBUSER, LOGDBPASSWORD);
 
-                        if(!this.addDbUser(LOGDB, LOGDBUSER, LOGDBPASSWORD))
+                        )
                         
                                     {
-                                    logUtil!.put(this.UNABLE_TO_CREATE_USER +LOGDBUSER, this, this.METHOD_ADD_USERS)
+                                    logUtil!.put(this.UNABLE_TO_CREATE_USER +LOGDBUSER, this, this.METHOD_ADD_USERS);
+    
 
 
 
@@ -296,16 +332,20 @@ logDbInitInfo= LogDbInitInfo()
 
                                     }
                                 
-logUtil!.put(this.commonStrings!.END, this, this.METHOD_ADD_USERS)
+logUtil!.put(this.commonStrings!.END, this, this.METHOD_ADD_USERS);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return Boolean.TRUE;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, this, this.METHOD_ADD_USERS, e)
+logUtil!.put(this.commonStrings!.EXCEPTION, this, this.METHOD_ADD_USERS, e);
+    
 
 
 
@@ -320,22 +360,32 @@ logUtil!.put(this.commonStrings!.EXCEPTION, this, this.METHOD_ADD_USERS, e)
     public addDatabases(): Boolean{
 
         try {
-            logUtil!.put(this.commonStrings!.START, this, this.METHOD_ADD_DATABASES)
-userDbInitInfo= UserDbInitInfo()
-inventoryDbInitInfo= InventoryDbInitInfo()
-historyDbInitInfo= HistoryDbInitInfo()
-staticpagesDbInitInfo= StaticPagesDbInitInfo()
-logDbInitInfo= LogDbInitInfo()
+            logUtil!.put(this.commonStrings!.START, this, this.METHOD_ADD_DATABASES);
+    
+userDbInitInfo= UserDbInitInfo();
+    
+inventoryDbInitInfo= InventoryDbInitInfo();
+    
+historyDbInitInfo= HistoryDbInitInfo();
+    
+staticpagesDbInitInfo= StaticPagesDbInitInfo();
+    
+logDbInitInfo= LogDbInitInfo();
+    
 
     var CUSTOMERDB: string = userDbInitInfo!.getName()!;
         
         
+;
+    
 
+                        if(!this.addDb(CUSTOMERDB);
 
-                        if(!this.addDb(CUSTOMERDB))
+                        )
                         
                                     {
-                                    logUtil!.put(this.UNABLE_TO_CREATE_DATABASE +CUSTOMERDB, this, this.METHOD_ADD_DATABASES)
+                                    logUtil!.put(this.UNABLE_TO_CREATE_DATABASE +CUSTOMERDB, this, this.METHOD_ADD_DATABASES);
+    
 
 
 
@@ -349,12 +399,16 @@ logDbInitInfo= LogDbInitInfo()
     var INVENTORYDB: string = inventoryDbInitInfo!.getName()!;
         
         
+;
+    
 
+                        if(!this.addDb(INVENTORYDB);
 
-                        if(!this.addDb(INVENTORYDB))
+                        )
                         
                                     {
-                                    logUtil!.put(this.UNABLE_TO_CREATE_DATABASE +INVENTORYDB, this, this.METHOD_ADD_DATABASES)
+                                    logUtil!.put(this.UNABLE_TO_CREATE_DATABASE +INVENTORYDB, this, this.METHOD_ADD_DATABASES);
+    
 
 
 
@@ -368,12 +422,16 @@ logDbInitInfo= LogDbInitInfo()
     var HISTORYDB: string = historyDbInitInfo!.getName()!;
         
         
+;
+    
 
+                        if(!this.addDb(HISTORYDB);
 
-                        if(!this.addDb(HISTORYDB))
+                        )
                         
                                     {
-                                    logUtil!.put(this.UNABLE_TO_CREATE_DATABASE +HISTORYDB, this, this.METHOD_ADD_DATABASES)
+                                    logUtil!.put(this.UNABLE_TO_CREATE_DATABASE +HISTORYDB, this, this.METHOD_ADD_DATABASES);
+    
 
 
 
@@ -387,12 +445,16 @@ logDbInitInfo= LogDbInitInfo()
     var STATICPAGESDB: string = staticpagesDbInitInfo!.getName()!;
         
         
+;
+    
 
+                        if(!this.addDb(STATICPAGESDB);
 
-                        if(!this.addDb(STATICPAGESDB))
+                        )
                         
                                     {
-                                    logUtil!.put(this.UNABLE_TO_CREATE_DATABASE +STATICPAGESDB, this, this.METHOD_ADD_DATABASES)
+                                    logUtil!.put(this.UNABLE_TO_CREATE_DATABASE +STATICPAGESDB, this, this.METHOD_ADD_DATABASES);
+    
 
 
 
@@ -406,12 +468,16 @@ logDbInitInfo= LogDbInitInfo()
     var LOGDB: string = logDbInitInfo!.getName()!;
         
         
+;
+    
 
+                        if(!this.addDb(LOGDB);
 
-                        if(!this.addDb(LOGDB))
+                        )
                         
                                     {
-                                    logUtil!.put(this.UNABLE_TO_CREATE_DATABASE +LOGDB, this, this.METHOD_ADD_DATABASES)
+                                    logUtil!.put(this.UNABLE_TO_CREATE_DATABASE +LOGDB, this, this.METHOD_ADD_DATABASES);
+    
 
 
 
@@ -425,23 +491,30 @@ logDbInitInfo= LogDbInitInfo()
     var file: AbFile = FileFactory.getInstance()!.getInstance(SQL_FILE)!;
         
         
-
-file.createNewFile()
+;
+    
+file.createNewFile();
+    
 
     var idOutData: AbDataOutputStream = DataOutputStreamFactory.getInstance()!.getInstance(file)!;
         
         
-
-idOutData!.writeBytes(this.sqlCommandLog!.toString())
+;
+    
+idOutData!.writeBytes(this.sqlCommandLog!.toString());
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return Boolean.TRUE;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, this, this.METHOD_ADD_DATABASES, e)
+logUtil!.put(this.commonStrings!.EXCEPTION, this, this.METHOD_ADD_DATABASES, e);
+    
 
 
 
@@ -460,35 +533,57 @@ logUtil!.put(this.commonStrings!.EXCEPTION, this, this.METHOD_ADD_DATABASES, e)
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-logUtil!.put(commonStrings!.START, this, this.METHOD_ADD_TABLES)
-stringBuffer!.append(UserEntityFactory.getInstance()!.createTable())
-stringBuffer!.append(StoreFrontsEntityFactory.getInstance()!.getStoreFrontsEntityInstance()!.createTable())
-stringBuffer!.append(BillingAddressesEntityFactory.getInstance()!.getInstance(this.stringUtil!.EMPTY_STRING)!.createTable())
-stringBuffer!.append(ShippingAddressesEntityFactory.getInstance()!.getInstance(this.stringUtil!.EMPTY_STRING)!.createTable())
-stringBuffer!.append(PaymentEntityFactory.getInstance()!.getPaymentEntityInstance()!.createTable())
-stringBuffer!.append(QuoteRequestEntityFactory.getInstance()!.getQuoteRequestEntityInstance()!.createTable())
-stringBuffer!.append(OrderHistoryEntityFactory.getInstance()!.createTable())
-stringBuffer!.append(OrderItemsEntityFactory.getInstance()!.createTable())
-stringBuffer!.append(TransactionEntityFactory.getInstance()!.getTransactionEntityInstance()!.createTable())
-stringBuffer!.append(TransactionResultEntityFactory.getInstance()!.getTransactionResultEntityInstance()!.createTable())
-stringBuffer!.append(PaymentGatewayEntityFactory.getInstance()!.createTable())
-stringBuffer!.append(InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!.createTable())
+;
+    
+logUtil!.put(commonStrings!.START, this, this.METHOD_ADD_TABLES);
+    
+stringBuffer!.append(UserEntityFactory.getInstance()!.createTable());
+    
+stringBuffer!.append(StoreFrontsEntityFactory.getInstance()!.getStoreFrontsEntityInstance()!.createTable());
+    
+stringBuffer!.append(BillingAddressesEntityFactory.getInstance()!.getInstance(this.stringUtil!.EMPTY_STRING)!.createTable());
+    
+stringBuffer!.append(ShippingAddressesEntityFactory.getInstance()!.getInstance(this.stringUtil!.EMPTY_STRING)!.createTable());
+    
+stringBuffer!.append(PaymentEntityFactory.getInstance()!.getPaymentEntityInstance()!.createTable());
+    
+stringBuffer!.append(QuoteRequestEntityFactory.getInstance()!.getQuoteRequestEntityInstance()!.createTable());
+    
+stringBuffer!.append(OrderHistoryEntityFactory.getInstance()!.createTable());
+    
+stringBuffer!.append(OrderItemsEntityFactory.getInstance()!.createTable());
+    
+stringBuffer!.append(TransactionEntityFactory.getInstance()!.getTransactionEntityInstance()!.createTable());
+    
+stringBuffer!.append(TransactionResultEntityFactory.getInstance()!.getTransactionResultEntityInstance()!.createTable());
+    
+stringBuffer!.append(PaymentGatewayEntityFactory.getInstance()!.createTable());
+    
+stringBuffer!.append(InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!.createTable());
+    
 stringBuffer!.append(InitInfoEntity().
-                            createTable())
-stringBuffer!.append(LogTableEntityFactory.getInstance()!.getLogTableEntityInstance()!.createTable())
-stringBuffer!.append(StaticPagesEntityFactory.getInstance()!.getStaticPagesEntityInstance()!.createTable())
-stringBuffer!.append(TransformInfoEntityBuilder.getInstance()!.createTable())
-logUtil!.put(ADD_TABLES_RESULTS_LABEL +stringBuffer!.toString(), this, this.METHOD_ADD_TABLES)
+                            createTable());
+    
+stringBuffer!.append(LogTableEntityFactory.getInstance()!.getLogTableEntityInstance()!.createTable());
+    
+stringBuffer!.append(StaticPagesEntityFactory.getInstance()!.getStaticPagesEntityInstance()!.createTable());
+    
+stringBuffer!.append(TransformInfoEntityBuilder.getInstance()!.createTable());
+    
+logUtil!.put(ADD_TABLES_RESULTS_LABEL +stringBuffer!.toString(), this, this.METHOD_ADD_TABLES);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return Boolean.TRUE;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, this, this.METHOD_ADD_TABLES, e)
+logUtil!.put(this.commonStrings!.EXCEPTION, this, this.METHOD_ADD_TABLES, e);
+    
 
 
 

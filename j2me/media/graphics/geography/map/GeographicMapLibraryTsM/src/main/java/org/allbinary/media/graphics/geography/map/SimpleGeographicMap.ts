@@ -44,7 +44,7 @@ export class SimpleGeographicMap
 
     private readonly name: string
 
-    readonly cellTypeIdToGeographicMapCellType: IntArray
+    readonly cellTypeIdToGeographicMapCellType: number[]
 
     private readonly tiledLayer: AllBinaryTiledLayer
 
@@ -55,7 +55,7 @@ export class SimpleGeographicMap
     private backgroundBasicColor: BasicColor = BasicColorFactory.getInstance()!.NULL_COLOR;
         
         
-public constructor (id: Integer, name: string, cellTypeIdToGeographicMapCellType: IntArray, tiledLayer: AllBinaryTiledLayer, foregroundBasicColor: BasicColor, backgroundBasicColor: BasicColor){
+public constructor (id: Integer, name: string, cellTypeIdToGeographicMapCellType: number[], tiledLayer: AllBinaryTiledLayer, foregroundBasicColor: BasicColor, backgroundBasicColor: BasicColor){
 
             super();
                 //var id = id
@@ -64,12 +64,18 @@ public constructor (id: Integer, name: string, cellTypeIdToGeographicMapCellType
     //var tiledLayer = tiledLayer
     //var foregroundBasicColor = foregroundBasicColor
     //var backgroundBasicColor = backgroundBasicColor
-this.id= id
-this.name= name
-this.cellTypeIdToGeographicMapCellType= cellTypeIdToGeographicMapCellType
-this.tiledLayer= tiledLayer
-this.setBackgroundBasicColor(backgroundBasicColor)
-this.setForegroundBasicColor(foregroundBasicColor)
+this.id= id;
+    
+this.name= name;
+    
+this.cellTypeIdToGeographicMapCellType= cellTypeIdToGeographicMapCellType;
+    
+this.tiledLayer= tiledLayer;
+    
+this.setBackgroundBasicColor(backgroundBasicColor);
+    
+this.setForegroundBasicColor(foregroundBasicColor);
+    
 }
 
 
@@ -119,22 +125,26 @@ this.setForegroundBasicColor(foregroundBasicColor)
     var i_column: number = cellPosition!.getColumn()!;
         
         
-
+;
+    
 
     var i_row: number = cellPosition!.getRow()!;
         
         
-
+;
+    
 
     var cellTypeId: number = this.tiledLayer!.getCell(i_column, i_row)!;
         
         
-
+;
+    
 
                         if(cellTypeId < 0)
                         
                                     {
-                                    cellTypeId= this.tiledLayer!.getAnimatedTile(cellTypeId)
+                                    cellTypeId= this.tiledLayer!.getAnimatedTile(cellTypeId);
+    
 
                                     }
                                 
@@ -143,6 +153,8 @@ this.setForegroundBasicColor(foregroundBasicColor)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.geographicMapCellTypeFactory!.getInstance(this.cellTypeIdToGeographicMapCellType[cellTypeId]!);
+
+                        ;
     
 }
 
@@ -170,7 +182,8 @@ this.setForegroundBasicColor(foregroundBasicColor)
 
     setForegroundBasicColor(foregroundBasicColor: BasicColor){
     //var foregroundBasicColor = foregroundBasicColor
-this.foregroundBasicColor= foregroundBasicColor
+this.foregroundBasicColor= foregroundBasicColor;
+    
 }
 
 
@@ -186,7 +199,8 @@ this.foregroundBasicColor= foregroundBasicColor
 
     setBackgroundBasicColor(backgroundBasicColor: BasicColor){
     //var backgroundBasicColor = backgroundBasicColor
-this.backgroundBasicColor= backgroundBasicColor
+this.backgroundBasicColor= backgroundBasicColor;
+    
 }
 
 

@@ -58,7 +58,8 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
             super();
             var transformInfoInterface = transformInfoInterface
-this.categoryPropertiesInterface= RootStoreThemeCategoryProperties(transformInfoInterface) as CategoryPropertiesInterface
+this.categoryPropertiesInterface= RootStoreThemeCategoryProperties(transformInfoInterface) as CategoryPropertiesInterface;
+    
 }
 
 public constructor (transformInfoInterface: TransformInfoInterface, abPath: AbPath){
@@ -66,7 +67,8 @@ public constructor (transformInfoInterface: TransformInfoInterface, abPath: AbPa
             super();
             var transformInfoInterface = transformInfoInterface
 var abPath = abPath
-this.categoryPropertiesInterface= RootStoreThemeCategoryProperties(transformInfoInterface, abPath) as CategoryPropertiesInterface
+this.categoryPropertiesInterface= RootStoreThemeCategoryProperties(transformInfoInterface, abPath) as CategoryPropertiesInterface;
+    
 }
 
 public constructor (transformInfoInterface: TransformInfoInterface, node: Node){
@@ -74,15 +76,17 @@ public constructor (transformInfoInterface: TransformInfoInterface, node: Node){
             super();
             var transformInfoInterface = transformInfoInterface
 var node = node
-this.categoryPropertiesInterface= RootStoreThemeCategoryProperties(transformInfoInterface, node) as CategoryPropertiesInterface
+this.categoryPropertiesInterface= RootStoreThemeCategoryProperties(transformInfoInterface, node) as CategoryPropertiesInterface;
+    
 }
 
-public constructor (transformInfoInterface: TransformInfoInterface, categoryPropertiesHashMap: HashMap<Any, Any>){
+public constructor (transformInfoInterface: TransformInfoInterface, categoryPropertiesHashMap: HashMap<any, any>){
 
             super();
             var transformInfoInterface = transformInfoInterface
 var categoryPropertiesHashMap = categoryPropertiesHashMap
-this.categoryPropertiesInterface= RootStoreThemeCategoryProperties(transformInfoInterface, categoryPropertiesHashMap) as CategoryPropertiesInterface
+this.categoryPropertiesInterface= RootStoreThemeCategoryProperties(transformInfoInterface, categoryPropertiesHashMap) as CategoryPropertiesInterface;
+    
 }
 
 
@@ -95,18 +99,22 @@ this.categoryPropertiesInterface= RootStoreThemeCategoryProperties(transformInfo
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.categoryPropertiesInterface as CategoryPropertiesInterface;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.ENTITYFACTORYERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e);
+    
 
                                     }
                                 

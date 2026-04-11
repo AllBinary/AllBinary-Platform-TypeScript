@@ -18,7 +18,10 @@
 
 
 
-import { Vector } from "../../../../../java/util/Vector.js";
+            import Vector from "@ohos.util.Vector";
+        
+
+//import { Vector } from "../../../../../java/util/Vector.js";
 
     
 import { UserFactoryInterface } from "../../../../../org/allbinary/business/user/UserFactoryInterface.js";
@@ -40,21 +43,26 @@ export class UserRoleB extends UserRole {
 
     public static getRole(role: string): UserRole{
 var role = role
-UserRoleFactory.getInstance()
+UserRoleFactory.getInstance();
+    
 
-                        if(!StringValidationUtil.getInstance()!.isEmpty(role))
+                        if(!StringValidationUtil.getInstance()!.isEmpty(role);
+
+                        )
                         
                                     {
                                     
     var roleVector: Vector = UserRoleB.getAll()!;
         
         
-
+;
+    
 
     var size: number = roleVector!.length!;
         
         
-
+;
+    
 
 
 
@@ -66,10 +74,13 @@ UserRoleFactory.getInstance()
 index < size; index++)
         {
 
-    var userRole: UserRole = roleVector!.get(index) as UserRole;
-        
-        
+    var userRole: UserRole = roleVector!.get(index);
 
+                         as UserRole;
+        
+        
+;
+    
 
                         if(role.compareTo(userRole!.toString()) == 0)
                         
@@ -96,7 +107,8 @@ index < size; index++)
 
 
     public static getAll(): Vector{
-UserRoleFactory.getInstance()
+UserRoleFactory.getInstance();
+    
 
 
 
@@ -116,7 +128,8 @@ var aUserFactoryInterface = aUserFactoryInterface
 
                             //For kotlin this is before the body of the constructor.
                     
-roleVector!.add(this)
+roleVector!.add(this);
+    
 }
 
 

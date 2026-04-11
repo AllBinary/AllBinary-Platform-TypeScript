@@ -68,19 +68,24 @@ public constructor (name: string, version: string, specialName: string, shortNam
     public init(){
 
         try {
-            this.setOperatingSystemInterface(OperatingSystemFactory.getInstance()!.getOperatingSystemInstance())
+            this.setOperatingSystemInterface(OperatingSystemFactory.getInstance()!.getOperatingSystemInstance());
+    
 
     var licenseInitInfo: LicenseInitInfo = LicenseInitInfoUtil.getInstance()!.read()!;
         
         
-
-this.setLicenseId(licenseInitInfo!.getLicenseId())
-this.setLicenseServers(licenseInitInfo!.getServerList())
+;
+    
+this.setLicenseId(licenseInitInfo!.getLicenseId());
+    
+this.setLicenseServers(licenseInitInfo!.getServerList());
+    
 
     var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
         
         
-
+;
+    
 
                         if(stringValidationUtil!.isEmpty(this.getLicenseId()))
                         
@@ -89,8 +94,10 @@ this.setLicenseServers(licenseInitInfo!.getServerList())
     var NONE: string = "No License Id";
         
         
-
-this.setLicenseId(NONE)
+;
+    
+this.setLicenseId(NONE);
+    
 
                                     }
                                 
@@ -98,22 +105,29 @@ this.setLicenseId(NONE)
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
+;
+    
 PreLogUtil.put(StringMaker().
-                            append("Special Name: ")!.append(this.getSpecialName())!.toString(), this, commonStrings!.CONSTRUCTOR)
-} catch(e: Exception)
+                            append("Special Name: ")!.append(this.getSpecialName())!.toString(), this, commonStrings!.CONSTRUCTOR);
+    
+
+                //: 
+} catch(e) 
             {
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
         
         
-
+;
+    
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e);
+    
 }
 
 }

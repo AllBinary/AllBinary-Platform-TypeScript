@@ -99,28 +99,33 @@ public constructor (abeClientInformation: AbeClientInformationInterface, map: Ma
     var stringBuffer: StringMaker = new StringMaker();
         
         
+;
+    
 
-
-    var hashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
         
         
-
+;
+    
 
     var keys: Set = map.keySet()!;
         
         
+;
+    
 
-
-    var keyArray: any = {}[] = keys.toArray()!;
+    var keyArray: any[] = keys.toArray()!;
         
         
-
+;
+    
 
     var size: number = keyArray!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -135,36 +140,49 @@ index < size; index++)
     var key: string = keyArray[index]! as String;
         
         
+;
+    
 
+    var values: string[] = map.get(key);
 
-    var values: string[] = map.get(key) as Array<String?>;
+                         as Array<String?>;
         
         
-
+;
+    
 hashMap!.put(key.toCharArray()
                                         .slice(0, ).join('')
-                                    , .toCharArray())
-stringBuffer!.delete(0, stringBuffer!.length())
-stringBuffer!.append("key: ")
-stringBuffer!.append(key)
-stringBuffer!.append(" Value: ")
-stringBuffer!.append(values[0]!)
-logUtil!.put(stringBuffer!.toString(), this, "getFormData()")
+                                    , .toCharArray());
+    
+stringBuffer!.delete(0, stringBuffer!.length());
+    
+stringBuffer!.append("key: ");
+    
+stringBuffer!.append(key);
+    
+stringBuffer!.append(" Value: ");
+    
+stringBuffer!.append(values[0]!);
+    
+logUtil!.put(stringBuffer!.toString(), this, "getFormData()");
+    
 }
 
-this.getFormData(abeClientInformation, hashMap)
+this.getFormData(abeClientInformation, hashMap);
+    
 }
 
-public constructor (abeClientInformation: AbeClientInformationInterface, initHashMap: HashMap<Any, Any>){
+public constructor (abeClientInformation: AbeClientInformationInterface, initHashMap: HashMap<any, any>){
 
             super();
                 //var abeClientInformation = abeClientInformation
     //var initHashMap = initHashMap
-this.getFormData(abeClientInformation, initHashMap)
+this.getFormData(abeClientInformation, initHashMap);
+    
 }
 
 
-    public getFormData(abeClientInformation: AbeClientInformationInterface, hashMap: HashMap<Any, Any>){
+    public getFormData(abeClientInformation: AbeClientInformationInterface, hashMap: HashMap<any, any>){
     //var abeClientInformation = abeClientInformation
     //var hashMap = hashMap
 
@@ -173,34 +191,66 @@ this.getFormData(abeClientInformation, initHashMap)
     var initializerData: InitializerData = InitializerData.getInstance()!;
         
         
+;
+    
+setAdminDbUserName(hashMap!.get(initializerData!.DBUSER);
 
-setAdminDbUserName(hashMap!.get(initializerData!.DBUSER) as String)
-setAdminDbPassword(hashMap!.get(initializerData!.DBPASSWORD) as String)
-setAdminJdbcDriver(hashMap!.get(initializerData!.ADMINJDBCDRIVER) as String)
-setAdminSchema(hashMap!.get(initializerData!.ADMINSCHEMA) as String)
-setAdminServer(hashMap!.get(initializerData!.ADMINSERVER) as String)
-setAdminPort(hashMap!.get(initializerData!.ADMINPORT) as String)
+                         as String);
+    
+setAdminDbPassword(hashMap!.get(initializerData!.DBPASSWORD);
+
+                         as String);
+    
+setAdminJdbcDriver(hashMap!.get(initializerData!.ADMINJDBCDRIVER);
+
+                         as String);
+    
+setAdminSchema(hashMap!.get(initializerData!.ADMINSCHEMA);
+
+                         as String);
+    
+setAdminServer(hashMap!.get(initializerData!.ADMINSERVER);
+
+                         as String);
+    
+setAdminPort(hashMap!.get(initializerData!.ADMINPORT);
+
+                         as String);
+    
 
     var dbConnectionInfo: DbConnectionInfo = new DbConnectionInfo();
         
         
-
+;
+    
 
     var adminDbName: string = StringUtil.getInstance()!.EMPTY_STRING;
         
         
+;
+    
+dbConnectionInfo!.setJdbcDriver(getAdminJdbcDriver());
+    
+dbConnectionInfo!.setName(adminDbName);
+    
+dbConnectionInfo!.setUserName(getAdminDbUserName());
+    
+dbConnectionInfo!.setPassword(getAdminDbPassword());
+    
+dbConnectionInfo!.setSchema(getAdminSchema());
+    
+dbConnectionInfo!.setServer(getAdminServer());
+    
+dbConnectionInfo!.setPort(getAdminPort());
+    
+this.initDb= DynamicInitDb(abeClientInformation, dbConnectionInfo as DatabaseConnectionInfoInterface);
+    
 
-dbConnectionInfo!.setJdbcDriver(getAdminJdbcDriver())
-dbConnectionInfo!.setName(adminDbName)
-dbConnectionInfo!.setUserName(getAdminDbUserName())
-dbConnectionInfo!.setPassword(getAdminDbPassword())
-dbConnectionInfo!.setSchema(getAdminSchema())
-dbConnectionInfo!.setServer(getAdminServer())
-dbConnectionInfo!.setPort(getAdminPort())
-this.initDb= DynamicInitDb(abeClientInformation, dbConnectionInfo as DatabaseConnectionInfoInterface)
-} catch(e: Exception)
+                //: 
+} catch(e) 
             {
-logUtil!.put("Unable to get form data", this, "getFormData()", e)
+logUtil!.put("Unable to get form data", this, "getFormData()", e);
+    
 }
 
 }
@@ -210,14 +260,17 @@ logUtil!.put("Unable to get form data", this, "getFormData()", e)
 var jdbcDriverClassPathString = jdbcDriverClassPathString
 
         try {
-            Class.forName(jdbcDriverClassPathString)!.newInstance()
+            Class.forName(jdbcDriverClassPathString)!.newInstance();
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return true;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PRELOADERERROR))
@@ -227,8 +280,10 @@ var jdbcDriverClassPathString = jdbcDriverClassPathString
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e);
+    
 
                                     }
                                 
@@ -248,12 +303,16 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e)
     var isValid: boolean = true;
         
         
+;
+    
 
+                        if(!this.isJdbcDriverValid(this.adminJdbcDriver);
 
-                        if(!this.isJdbcDriverValid(this.adminJdbcDriver))
+                        )
                         
                                     {
-                                    isValid= false
+                                    isValid= false;
+    
 
                                     }
                                 
@@ -261,20 +320,27 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e)
     var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
         
         
+;
+    
 
+                        if(!stringValidationUtil!.isValidRequired(adminDbUserName, MIN, MAX);
 
-                        if(!stringValidationUtil!.isValidRequired(adminDbUserName, MIN, MAX))
+                        )
                         
                                     {
-                                    isValid= false
+                                    isValid= false;
+    
 
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidNotRequired(adminDbPassword, MINPASSWORD, MAX))
+                        if(!stringValidationUtil!.isValidNotRequired(adminDbPassword, MINPASSWORD, MAX);
+
+                        )
                         
                                     {
-                                    isValid= false
+                                    isValid= false;
+    
 
                                     }
                                 
@@ -293,15 +359,21 @@ var jdbcDriver = jdbcDriver
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("The JDBC driver (")
-stringBuffer!.append(jdbcDriver)
-stringBuffer!.append(") you have provided is not valid.<br/>")
+;
+    
+stringBuffer!.append("The JDBC driver (");
+    
+stringBuffer!.append(jdbcDriver);
+    
+stringBuffer!.append(") you have provided is not valid.<br/>");
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 
@@ -311,23 +383,30 @@ stringBuffer!.append(") you have provided is not valid.<br/>")
     var isValid: boolean = true;
         
         
-
+;
+    
 
     var isJdbcDriversValid: boolean = true;
         
         
-
+;
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
+;
+    
 
+                        if(!this.isJdbcDriverValid(this.adminJdbcDriver);
 
-                        if(!this.isJdbcDriverValid(this.adminJdbcDriver))
+                        )
                         
                                     {
-                                    isJdbcDriversValid= false
-stringBuffer!.append(this.getJdbcDriverValidationInfo(this.getAdminJdbcDriver()))
+                                    isJdbcDriversValid= false;
+    
+stringBuffer!.append(this.getJdbcDriverValidationInfo(this.getAdminJdbcDriver()));
+    
 
                                     }
                                 
@@ -335,20 +414,27 @@ stringBuffer!.append(this.getJdbcDriverValidationInfo(this.getAdminJdbcDriver())
     var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
         
         
+;
+    
 
+                        if(!stringValidationUtil!.isValidRequired(adminDbUserName, MIN, MAX);
 
-                        if(!stringValidationUtil!.isValidRequired(adminDbUserName, MIN, MAX))
+                        )
                         
                                     {
-                                    stringBuffer!.append("Admin username should be < " +MAX +" and > " +MIN +" characters in length.<br />")
+                                    stringBuffer!.append("Admin username should be < " +MAX +" and > " +MIN +" characters in length.<br />");
+    
 
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidNotRequired(adminDbPassword, MINPASSWORD, MAX))
+                        if(!stringValidationUtil!.isValidNotRequired(adminDbPassword, MINPASSWORD, MAX);
+
+                        )
                         
                                     {
-                                    stringBuffer!.append("Admin password should be < " +MAX +" and > " +MINPASSWORD +" characters in length.<br />")
+                                    stringBuffer!.append("Admin password should be < " +MAX +" and > " +MINPASSWORD +" characters in length.<br />");
+    
 
                                     }
                                 
@@ -356,7 +442,8 @@ stringBuffer!.append(this.getJdbcDriverValidationInfo(this.getAdminJdbcDriver())
                         if(!isJdbcDriversValid)
                         
                                     {
-                                    stringBuffer!.append(InitializerData.getInstance()!.getJdbcDriverSolutionInfo())
+                                    stringBuffer!.append(InitializerData.getInstance()!.getJdbcDriverSolutionInfo());
+    
 
                                     }
                                 
@@ -365,6 +452,8 @@ stringBuffer!.append(this.getJdbcDriverValidationInfo(this.getAdminJdbcDriver())
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 
@@ -372,16 +461,20 @@ stringBuffer!.append(this.getJdbcDriverValidationInfo(this.getAdminJdbcDriver())
     public createUsers(): boolean{
 
         try {
-            initDb!.addUsers()
+            initDb!.addUsers();
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return true;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put("Unable to Create Users", this, "createUsers()", e)
+logUtil!.put("Unable to Create Users", this, "createUsers()", e);
+    
 
 
 
@@ -396,16 +489,20 @@ logUtil!.put("Unable to Create Users", this, "createUsers()", e)
     public createDatabases(): boolean{
 
         try {
-            initDb!.addDatabases()
+            initDb!.addDatabases();
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return true;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put("Unable to Create Databases", this, "createDatabases()", e)
+logUtil!.put("Unable to Create Databases", this, "createDatabases()", e);
+    
 
 
 
@@ -420,16 +517,20 @@ logUtil!.put("Unable to Create Databases", this, "createDatabases()", e)
     public createTables(): boolean{
 
         try {
-            initDb!.addTables()
+            initDb!.addTables();
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return true;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put("Unable to Create Tables", this, "createTables()", e)
+logUtil!.put("Unable to Create Tables", this, "createTables()", e);
+    
 
 
 
@@ -453,7 +554,8 @@ logUtil!.put("Unable to Create Tables", this, "createTables()", e)
 
     public setAdminDbUserName(adminDbUserName: string){
 var adminDbUserName = adminDbUserName
-this.adminDbUserName= adminDbUserName
+this.adminDbUserName= adminDbUserName;
+    
 }
 
 
@@ -469,7 +571,8 @@ this.adminDbUserName= adminDbUserName
 
     public setAdminDbPassword(adminDbPassword: string){
 var adminDbPassword = adminDbPassword
-this.adminDbPassword= adminDbPassword
+this.adminDbPassword= adminDbPassword;
+    
 }
 
 
@@ -485,7 +588,8 @@ this.adminDbPassword= adminDbPassword
 
     public setAdminJdbcDriver(adminJdbcDriver: string){
 var adminJdbcDriver = adminJdbcDriver
-this.adminJdbcDriver= adminJdbcDriver
+this.adminJdbcDriver= adminJdbcDriver;
+    
 }
 
 
@@ -501,7 +605,8 @@ this.adminJdbcDriver= adminJdbcDriver
 
     public setAdminSchema(adminSchema: string){
 var adminSchema = adminSchema
-this.adminSchema= adminSchema
+this.adminSchema= adminSchema;
+    
 }
 
 
@@ -517,7 +622,8 @@ this.adminSchema= adminSchema
 
     public setAdminServer(adminServer: string){
 var adminServer = adminServer
-this.adminServer= adminServer
+this.adminServer= adminServer;
+    
 }
 
 
@@ -533,7 +639,8 @@ this.adminServer= adminServer
 
     public setAdminPort(adminPort: string){
 var adminPort = adminPort
-this.adminPort= adminPort
+this.adminPort= adminPort;
+    
 }
 
 

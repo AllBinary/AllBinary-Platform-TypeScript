@@ -65,17 +65,22 @@ var path = path
     var files: BasicArrayList = subDirectory!.search(AbFile(path))!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return files;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-e.printStackTrace()
-System.out.println("Error: " +e +"\nMsg: " +e.message)
+e.printStackTrace();
+    
+System.out.println("Error: " +e +"\nMsg: " +e.message);
+    
 }
 
 
@@ -96,13 +101,15 @@ System.out.println("Error: " +e +"\nMsg: " +e.message)
     var includeExtensionBasicArrayList: BasicArrayList = new BasicArrayList();
         
         
-
+;
+    
 
     var size: number = includeExtensions!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -113,29 +120,36 @@ System.out.println("Error: " +e +"\nMsg: " +e.message)
         
 index < size; index++)
         {
-includeExtensionBasicArrayList!.add(includeExtensions[index]!)
+includeExtensionBasicArrayList!.add(includeExtensions[index]!);
+    
 }
 
 
     var visitorFileFilter: VisitorFileFilter = new VisitorFileFilter(DirectoryOrIncludeFileExtensionBooleanFileVisitor(includeExtensionBasicArrayList));
         
         
-
+;
+    
 
     var files: BasicArrayList = subDirectory!.search(visitorFileFilter, AbFile(path))!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return files;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-e.printStackTrace()
-System.out.println("Error: " +e +"\nMsg: " +e.message)
+e.printStackTrace();
+    
+System.out.println("Error: " +e +"\nMsg: " +e.message);
+    
 }
 
 
@@ -156,28 +170,36 @@ System.out.println("Error: " +e +"\nMsg: " +e.message)
     var includeExtensionBasicArrayList: BasicArrayList = new BasicArrayList();
         
         
-
-includeExtensionBasicArrayList!.add(includeExtension)
+;
+    
+includeExtensionBasicArrayList!.add(includeExtension);
+    
 
     var visitorFileFilter: VisitorFileFilter = new VisitorFileFilter(DirectoryOrIncludeFileExtensionBooleanFileVisitor(includeExtensionBasicArrayList));
         
         
-
+;
+    
 
     var files: BasicArrayList = subDirectory!.search(visitorFileFilter, AbFile(path))!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return files;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-e.printStackTrace()
-System.out.println("Error: " +e +"\nMsg: " +e.message)
+e.printStackTrace();
+    
+System.out.println("Error: " +e +"\nMsg: " +e.message);
+    
 }
 
 
@@ -199,28 +221,36 @@ System.out.println("Error: " +e +"\nMsg: " +e.message)
     var includeExtensionBasicArrayList: BasicArrayList = new BasicArrayList();
         
         
-
-includeExtensionBasicArrayList!.add(includeExtension)
+;
+    
+includeExtensionBasicArrayList!.add(includeExtension);
+    
 
     var visitorFileFilter: VisitorFileFilter = new VisitorFileFilter(DirectoryOrIncludeFileExtensionBooleanFileVisitor(includeExtensionBasicArrayList, pathIncludes));
         
         
-
+;
+    
 
     var files: BasicArrayList = subDirectory!.search(visitorFileFilter, AbFile(path))!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return files;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-e.printStackTrace()
-System.out.println("Error: " +e +"\nMsg: " +e.message)
+e.printStackTrace();
+    
+System.out.println("Error: " +e +"\nMsg: " +e.message);
+    
 }
 
 
@@ -240,22 +270,28 @@ System.out.println("Error: " +e +"\nMsg: " +e.message)
     var visitorFileFilter: VisitorFileFilter = new VisitorFileFilter(DirectoryBooleanFileVisitor());
         
         
-
+;
+    
 
     var files: BasicArrayList = subDirectory!.search(visitorFileFilter, AbFile(path))!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return files;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-e.printStackTrace()
-System.out.println("Error: " +e +"\nMsg: " +e.message)
+e.printStackTrace();
+    
+System.out.println("Error: " +e +"\nMsg: " +e.message);
+    
 }
 
 

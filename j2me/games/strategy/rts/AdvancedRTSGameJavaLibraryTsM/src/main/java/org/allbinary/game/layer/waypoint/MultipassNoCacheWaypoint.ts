@@ -111,7 +111,8 @@ public constructor (ownerLayer: PathFindingLayerInterface, sound: Sound)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.ownerLayer= ownerLayer
+this.ownerLayer= ownerLayer;
+    
 }
 
 
@@ -119,7 +120,8 @@ this.ownerLayer= ownerLayer
             
     public setAllBinaryGameLayerManager(allBinaryGameLayerManager: AllBinaryGameLayerManager){
     //var allBinaryGameLayerManager = allBinaryGameLayerManager
-super.setAllBinaryGameLayerManager(allBinaryGameLayerManager)
+super.setAllBinaryGameLayerManager(allBinaryGameLayerManager);
+    
 }
 
 
@@ -135,12 +137,14 @@ super.setAllBinaryGameLayerManager(allBinaryGameLayerManager)
     var startGeographicMapCellPosition: GeographicMapCellPosition = geographicMapCellPosition;
         
         
-
+;
+    
 
     var endGeographicMapCellPosition: GeographicMapCellPosition = this.getEndGeographicMapCellPosition(startGeographicMapCellPosition)!;
         
         
-
+;
+    
 
                         if(endGeographicMapCellPosition == 
                                     null
@@ -188,40 +192,52 @@ super.setAllBinaryGameLayerManager(allBinaryGameLayerManager)
     var geographicMapCompositeInterface: GeographicMapCompositeInterface = this.allBinaryGameLayerManagerP as GeographicMapCompositeInterface;
         
         
-
+;
+    
 
     var geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;
         
         
-
+;
+    
 
     var raceTrackGeographicMap: RaceTrackGeographicMap = geographicMapInterface as RaceTrackGeographicMap;
         
         
-
+;
+    
 
     var raceTrackGeographicMapCellTypeFactory: GeographicMapCellTypeFactory = raceTrackGeographicMap!.getGeographicMapCellTypeFactory()!;
         
         
+;
+    
 
+    var customMapGenerator: CustomMapGenerator = raceTrackGeographicMap!.getCustomMapGenerator();
 
-    var customMapGenerator: CustomMapGenerator = raceTrackGeographicMap!.getCustomMapGenerator() as CustomMapGenerator;
+                         as CustomMapGenerator;
         
         
+;
+    
+customMapGenerator!.copyMapIntoCustomMap();
+    
 
-customMapGenerator!.copyMapIntoCustomMap()
-
-    var customMapArray: IntArray[] = customMapGenerator!.getCustomMapArray()!;
+    var customMapArray: number[][] = customMapGenerator!.getCustomMapArray()!;
         
         
-
-customMapArray[startGeographicMapCellPosition!.getRow()]![startGeographicMapCellPosition!.getColumn()]= raceTrackGeographicMapCellTypeFactory!.getStartType()
-customMapArray[endGeographicMapCellPosition!.getRow()]![endGeographicMapCellPosition!.getColumn()]= raceTrackGeographicMapCellTypeFactory!.getEndType()
+;
+    
+customMapArray[startGeographicMapCellPosition!.getRow()]![startGeographicMapCellPosition!.getColumn()]= raceTrackGeographicMapCellTypeFactory!.getStartType();
+    
+customMapArray[endGeographicMapCellPosition!.getRow()]![endGeographicMapCellPosition!.getColumn()]= raceTrackGeographicMapCellTypeFactory!.getEndType();
+    
 
     var pathFindingInfo: PathFindingInfo = PathFindingInfoFactory.getInstance()!.getInstance(raceTrackGeographicMap, customMapArray)!;
         
         
-
+;
+    
 
 
 
@@ -245,12 +261,15 @@ customMapArray[endGeographicMapCellPosition!.getRow()]![endGeographicMapCellPosi
                                 )
                         
                                     {
-                                    logUtil!.put("pathFindingInfo: " +pathFindingInfo, this, "getPathsList")
+                                    logUtil!.put("pathFindingInfo: " +pathFindingInfo, this, "getPathsList");
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return BasicArrayListUtil.getInstance()!.getImmutableInstance();
+
+                        ;
     
 
                                     }
@@ -259,17 +278,20 @@ customMapArray[endGeographicMapCellPosition!.getRow()]![endGeographicMapCellPosi
     var geographicMapCompositeInterface: GeographicMapCompositeInterface = this.allBinaryGameLayerManagerP as GeographicMapCompositeInterface;
         
         
-
+;
+    
 
     var geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;
         
         
-
+;
+    
 
     var list: BasicArrayList = PathGenerator.getInstance()!.createN(geographicMapInterface, pathFindingInfo, 2, multipassState)!;
         
         
-
+;
+    
 
                         if(list != 
                                     null
@@ -301,20 +323,28 @@ customMapArray[endGeographicMapCellPosition!.getRow()]![endGeographicMapCellPosi
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return BasicArrayListUtil.getInstance()!.getImmutableInstance();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, "getPathsList", e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, "getPathsList", e);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return BasicArrayListUtil.getInstance()!.getImmutableInstance();
+
+                        ;
     
 }
 
@@ -329,12 +359,16 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "getPathsList", e)
     var endList: BasicArrayList = this.ownerLayer!.getEndGeographicMapCellPositionList()!;
         
         
+;
+    
 
+    var endGeographicMapCellPosition: GeographicMapCellPosition = BasicArrayListUtil.getInstance()!.getRandom(endList);
 
-    var endGeographicMapCellPosition: GeographicMapCellPosition = BasicArrayListUtil.getInstance()!.getRandom(endList) as GeographicMapCellPosition;
+                         as GeographicMapCellPosition;
         
         
-
+;
+    
 
                         if(startGeographicMapCellPosition == endGeographicMapCellPosition)
                         
@@ -349,7 +383,10 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "getPathsList", e)
         
 index >= 0; index--)
         {
-endGeographicMapCellPosition= endList!.get(index) as GeographicMapCellPosition
+endGeographicMapCellPosition= endList!.get(index);
+
+                         as GeographicMapCellPosition;
+    
 
                         if(startGeographicMapCellPosition != endGeographicMapCellPosition)
                         
@@ -376,7 +413,8 @@ endGeographicMapCellPosition= endList!.get(index) as GeographicMapCellPosition
 
     public onEvent(eventObject: AllBinaryEventObject){
     //var eventObject = eventObject
-ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
+ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
+    
 }
 
 
@@ -388,7 +426,8 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
 
 
     public reset(){
-this.getConnectedWaypointList()!.clear()
+this.getConnectedWaypointList()!.clear();
+    
 }
 
 
@@ -413,35 +452,45 @@ this.getConnectedWaypointList()!.clear()
     var size: number = this.getConnectedWaypointList()!.size()!;
         
         
-
+;
+    
 
                         if(size > 0)
                         
                                     {
                                     
-    var unitWaypointBehavior: UnitWaypointBehavior = unitLayer!.getWaypointBehavior() as UnitWaypointBehavior;
-        
-        
+    var unitWaypointBehavior: UnitWaypointBehavior = unitLayer!.getWaypointBehavior();
 
+                         as UnitWaypointBehavior;
+        
+        
+;
+    
 
         while(this.getConnectedWaypointList()!.size() > 0)
         {
 
-    var rtsLayer: CollidableDestroyableDamageableLayer = this.getConnectedWaypointList()!.get(0) as CollidableDestroyableDamageableLayer;
-        
-        
+    var rtsLayer: CollidableDestroyableDamageableLayer = this.getConnectedWaypointList()!.get(0);
 
+                         as CollidableDestroyableDamageableLayer;
+        
+        
+;
+    
 
                         if(rtsLayer!.isDestroyed())
                         
                                     {
-                                    this.getConnectedWaypointList()!.remove(rtsLayer)
+                                    this.getConnectedWaypointList()!.remove(rtsLayer);
+    
 
                                     }
                                 
                         else {
-                            unitLayer!.handleCost(this.ownerLayer)
-unitWaypointBehavior!.insertWaypoint(0, rtsLayer)
+                            unitLayer!.handleCost(this.ownerLayer);
+    
+unitWaypointBehavior!.insertWaypoint(0, rtsLayer);
+    
 break;
 
                     

@@ -94,16 +94,21 @@ var soundsFactoryInterface = soundsFactoryInterface
     var logUtil: LogUtil = LogUtil.getInstance()!;
         
         
-
+;
+    
 
     var commonString: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonString!.START, THIS, commonString!.INIT)
-ProgressCanvasFactory.getInstance()!.addPortion(50, "Media Manager")
+;
+    
+logUtil!.put(commonString!.START, THIS, commonString!.INIT);
+    
+ProgressCanvasFactory.getInstance()!.addPortion(50, "Media Manager");
+    
 Sounds(soundsFactoryInterface).
-                            init()
+                            init();
+    
 }
 
 
@@ -112,10 +117,13 @@ Sounds(soundsFactoryInterface).
     public static shutdown(soundsFactoryInterface: SoundsFactoryInterface){
 var soundsFactoryInterface = soundsFactoryInterface
 Sounds(soundsFactoryInterface).
-                            stopAll()
+                            stopAll();
+    
 Sounds(soundsFactoryInterface).
-                            closeAll()
-System.gc()
+                            closeAll();
+    
+System.gc();
+    
 }
 
 
@@ -136,6 +144,8 @@ var resource = resource
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return Manager.createPlayer(resource);
+
+                        ;
     
 
                                     }
@@ -145,12 +155,15 @@ var resource = resource
     var inputStream: InputStream = ResourceUtil.getInstance()!.getResourceAsStream(resource)!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return Manager.createPlayer(inputStream, AudioContentTypeDataFactory.getInstance()!.MIME_AUDIO_WAV.getName());
+
+                        ;
     
 
                         }
@@ -182,7 +195,8 @@ var volume = volume
                         if(Features.getInstance()!.isFeature(GameFeatureFactory.getInstance()!.SOUND))
                         
                                     {
-                                    Manager.playTone(frequency, time, volume)
+                                    Manager.playTone(frequency, time, volume);
+    
 
                                     }
                                 

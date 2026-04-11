@@ -75,12 +75,14 @@ var layer = layer
     var featureReleaseList: BasicArrayList = this.getList()!;
         
         
-
+;
+    
 
     var size: number = getList()!.size()!;
         
         
-
+;
+    
 
 
 
@@ -95,7 +97,8 @@ index < size; index++)
     var featureInterface: ResourceRelativeRelationshipFactoryInterface = featureReleaseList!.objectArray[index]! as ResourceRelativeRelationshipFactoryInterface;
         
         
-
+;
+    
 
                         if(featureInterface!.isFeature())
                         
@@ -104,7 +107,8 @@ index < size; index++)
     var list: BasicArrayList = featureInterface!.getResourceRelativeRelationshipList(resource)!;
         
         
-
+;
+    
 
                         if(list != basicArrayListUtil!.getImmutableInstance())
                         
@@ -114,6 +118,8 @@ index < size; index++)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.duplicate(list, layer);
+
+                        ;
     
 
                                     }
@@ -140,12 +146,14 @@ var layer = layer
     var newList: BasicArrayList = new BasicArrayList();
         
         
-
+;
+    
 
     var size: number = list.size()!;
         
         
-
+;
+    
 
 
 
@@ -160,8 +168,10 @@ index < size; index++)
     var relativeRelationship: RelativeRelationship = list.objectArray[index]! as RelativeRelationship;
         
         
-
-newList!.add(RelativeLayerRelationship(layer, PointFactory.getInstance()!.getInstance(relativeRelationship!.getX(), relativeRelationship!.getY()), BasicArrayListUtil.getInstance()!.getImmutableInstance()))
+;
+    
+newList!.add(RelativeLayerRelationship(layer, PointFactory.getInstance()!.getInstance(relativeRelationship!.getX(), relativeRelationship!.getY()), BasicArrayListUtil.getInstance()!.getImmutableInstance()));
+    
 }
 
 

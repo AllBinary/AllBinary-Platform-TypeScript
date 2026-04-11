@@ -86,23 +86,28 @@ public constructor (transformInfoInterface: TransformInfoInterface)
                             //For kotlin this is before the body of the constructor.
                     
 
-    var multipartRequestHashMap: HashMap<Any, Any> = MultipartRequestParams(this.getPageContext()).
+    var multipartRequestHashMap: HashMap<any, any> = MultipartRequestParams(this.getPageContext()).
                             toHashMap()!;
         
         
-
+;
+    
 
     var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(this.getWeblisketSession()!.getStoreName())!;
         
         
-
+;
+    
 
     var fullPath: string = URLGLOBALS.getWebappPath() +storeFrontInterface!.getCurrentHostNamePath() +LOGOPATH;
         
         
-
-multipartRequestHashMap!.put(LogoData.getInstance()!.IMAGEPATH, fullPath)
-this.heading= HeadingValidation(multipartRequestHashMap)
+;
+    
+multipartRequestHashMap!.put(LogoData.getInstance()!.IMAGEPATH, fullPath);
+    
+this.heading= HeadingValidation(multipartRequestHashMap);
+    
 }
 
 
@@ -125,7 +130,8 @@ this.heading= HeadingValidation(multipartRequestHashMap)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("topbarValidation", this, commonStrings!.IS_VALID)
+                                    logUtil!.put("topbarValidation", this, commonStrings!.IS_VALID);
+    
 
                                     }
                                 
@@ -133,12 +139,14 @@ this.heading= HeadingValidation(multipartRequestHashMap)
     var isValid: Boolean = this.heading.isValid()!;
         
         
-
+;
+    
 
                         if(isValid == Boolean.TRUE)
                         
                                     {
-                                    CustomizerUtil.getInstance()!.insert(this.getTransformInfoInterface(), this as DomNodeInterface)
+                                    CustomizerUtil.getInstance()!.insert(this.getTransformInfoInterface(), this as DomNodeInterface);
+    
 
                                     }
                                 
@@ -148,13 +156,16 @@ this.heading= HeadingValidation(multipartRequestHashMap)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return isValid;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("Failed to validate", this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put("Failed to validate", this, commonStrings!.IS_VALID, e);
+    
 
                                     }
                                 
@@ -176,21 +187,28 @@ this.heading= HeadingValidation(multipartRequestHashMap)
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(this.heading.validationInfo())
+;
+    
+stringBuffer!.append(this.heading.validationInfo());
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e)
+                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e);
+    
 
                                     }
                                 

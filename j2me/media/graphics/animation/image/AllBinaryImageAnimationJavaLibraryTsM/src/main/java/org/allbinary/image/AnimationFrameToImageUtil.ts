@@ -54,28 +54,35 @@ var width = width
 var height = height
 var animationInterface = animationInterface
 
-    var image: Image = GameFeatureImageCacheFactory.getInstance()!.get(instance::class.toString()!, ((width *3) shr 1), ((height *3) shr 1))!;
+    var image: Image = GameFeatureImageCacheFactory.getInstance()!.get(instance.constructor.name.toString()!, ((width *3) shr 1), ((height *3) shr 1))!;
         
         
-
+;
+    
 
     var graphics: Graphics = image.getGraphics()!;
         
         
-
+;
+    
 
     var tranlateX: number = (width shr 2);
         
         
-
+;
+    
 
     var tranlateY: number = (height shr 2);
         
         
-
-graphics.translate(tranlateX, tranlateY)
-animationInterface!.paint(graphics, 0, 0)
-graphics.translate( -tranlateX,  -tranlateY)
+;
+    
+graphics.translate(tranlateX, tranlateY);
+    
+animationInterface!.paint(graphics, 0, 0);
+    
+graphics.translate( -tranlateX,  -tranlateY);
+    
 
 
 
@@ -92,16 +99,19 @@ var width = width
 var height = height
 var animationInterface = animationInterface
 
-    var image: Image = GameFeatureImageCacheFactory.getInstance()!.get(instance::class.toString()!, width, height)!;
+    var image: Image = GameFeatureImageCacheFactory.getInstance()!.get(instance.constructor.name.toString()!, width, height)!;
         
         
-
+;
+    
 
     var graphics: Graphics = image.getGraphics()!;
         
         
-
-animationInterface!.paint(graphics, 0, 0)
+;
+    
+animationInterface!.paint(graphics, 0, 0);
+    
 
 
 

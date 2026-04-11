@@ -82,13 +82,16 @@ public constructor (node: Node)
 
                             //For kotlin this is before the body of the constructor.
                     
-logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR)
-this.point= Point()
+logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
+    
+this.point= Point();
+    
 
     var actionNode: Node = DomSearchHelper.getNode(MouseActionScriptInputData.NAME, node.getChildNodes())!;
         
         
-
+;
+    
 
                         if(actionNode != 
                                     null
@@ -99,7 +102,8 @@ this.point= Point()
     var nodeList: NodeList = actionNode!.getChildNodes()!;
         
         
-
+;
+    
 
 
 
@@ -114,7 +118,8 @@ index < nodeList!.getLength(); index++)
     var childNode: Node = nodeList!.item(index)!;
         
         
-
+;
+    
 
                         if(childNode!.getNodeName()!.compareTo(MouseActionScriptInputData.BUTTONS) == 0)
                         
@@ -123,8 +128,10 @@ index < nodeList!.getLength(); index++)
     var buttons: string = DomNodeHelper.getTextNodeValue(childNode)!;
         
         
-
-this.setButtonClicks(Integer.valueOf(buttons)!.toInt())
+;
+    
+this.setButtonClicks(Integer.valueOf(buttons)!.toInt());
+    
 
                                     }
                                 
@@ -136,38 +143,46 @@ this.setButtonClicks(Integer.valueOf(buttons)!.toInt())
     var mouseXNode: Node = DomSearchHelper.getNode(MouseActionScriptInputData.MOVE_X, childNode!.getChildNodes())!;
         
         
-
+;
+    
 
     var mouseXString: string = DomNodeHelper.getTextNodeValue(mouseXNode)!;
         
         
-
+;
+    
 
     var mouseXInteger: Integer = Integer(Integer.valueOf(mouseXString))!;
         
         
-
+;
+    
 
     var mouseYNode: Node = DomSearchHelper.getNode(MouseActionScriptInputData.MOVE_Y, childNode!.getChildNodes())!;
         
         
-
+;
+    
 
     var mouseYString: string = DomNodeHelper.getTextNodeValue(mouseYNode)!;
         
         
-
+;
+    
 
     var mouseYInteger: Integer = Integer(Integer.valueOf(mouseYString))!;
         
         
-
+;
+    
 
     var newPoint: Point = new Point(mouseXInteger!.toInt(), mouseYInteger!.toInt());
         
         
-
-this.setPoint(newPoint)
+;
+    
+this.setPoint(newPoint);
+    
 
                                     }
                                 
@@ -192,8 +207,10 @@ this.setPoint(newPoint)
 
                         }
                             
-this.setAllowsChildren(false)
-this.mouseActionScriptInputJPanel= MouseActionScriptInputJPanel(this)
+this.setAllowsChildren(false);
+    
+this.mouseActionScriptInputJPanel= MouseActionScriptInputJPanel(this);
+    
 }
 
 public constructor ()                        
@@ -205,15 +222,19 @@ public constructor ()
 
                             //For kotlin this is before the body of the constructor.
                     
-this.point= Point()
-this.setAllowsChildren(false)
-this.mouseActionScriptInputJPanel= MouseActionScriptInputJPanel(this)
+this.point= Point();
+    
+this.setAllowsChildren(false);
+    
+this.mouseActionScriptInputJPanel= MouseActionScriptInputJPanel(this);
+    
 }
 
 
     public setPoint(point: Point){
 var point = point
-this.point= point
+this.point= point;
+    
 }
 
 
@@ -239,23 +260,28 @@ this.point= point
 
     public setButtonClicks(buttons: number){
 var buttons = buttons
-this.buttons= buttons
+this.buttons= buttons;
+    
 }
 
 
     public showDialog(){
-this.mouseActionScriptInputJPanel!.getMouseActionJDialog()!.setVisible(true)
+this.mouseActionScriptInputJPanel!.getMouseActionJDialog()!.setVisible(true);
+    
 }
 
 
-    public toHashMap(): HashMap<Any, Any>{
+    public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
         
         
-
-hashMap!.put(MouseActionScriptInputData.BUTTONS, Integer.toString(this.getButtonClicks()))
-logUtil!.put("HashMap: " +hashMap!.toString(), this, "toHashMap()")
+;
+    
+hashMap!.put(MouseActionScriptInputData.BUTTONS, Integer.toString(this.getButtonClicks()));
+    
+logUtil!.put("HashMap: " +hashMap!.toString(), this, "toHashMap()");
+    
 
 
 
@@ -273,21 +299,28 @@ var document = document
     var node: Node = super.toXmlNode(document)!;
         
         
-
+;
+    
 
     var mouseNode: Node = ModDomHelper.createNodeWithValueNodes(document, MouseActionScriptInputData.NAME, this.toHashMap())!;
         
         
+;
+    
+node.appendChild(mouseNode);
+    
 
-node.appendChild(mouseNode)
-
-    var hashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
         
         
-
-hashMap!.put(MouseActionScriptInputData.MOVE_X, Integer.toString(this.getPoint()!.x))
-hashMap!.put(MouseActionScriptInputData.MOVE_Y, Integer.toString(this.getPoint()!.y))
-mouseNode!.appendChild(ModDomHelper.createNodeWithValueNodes(document, MouseActionScriptInputData.MOVE, hashMap))
+;
+    
+hashMap!.put(MouseActionScriptInputData.MOVE_X, Integer.toString(this.getPoint()!.x));
+    
+hashMap!.put(MouseActionScriptInputData.MOVE_Y, Integer.toString(this.getPoint()!.y));
+    
+mouseNode!.appendChild(ModDomHelper.createNodeWithValueNodes(document, MouseActionScriptInputData.MOVE, hashMap));
+    
 
 
 
@@ -301,7 +334,8 @@ mouseNode!.appendChild(ModDomHelper.createNodeWithValueNodes(document, MouseActi
             
     public process(frame: Long){
 var frame = frame
-MouseInputAutomationProcessor.process(this)
+MouseInputAutomationProcessor.process(this);
+    
 }
 
 
@@ -310,55 +344,67 @@ MouseInputAutomationProcessor.process(this)
     var buttonStringBuffer: StringMaker = new StringMaker();
         
         
-
-buttonStringBuffer!.append("1: ")
+;
+    
+buttonStringBuffer!.append("1: ");
+    
 
     var booleanFactory: BooleanFactory = BooleanFactory.getInstance()!;
         
         
-
+;
+    
 
                         if((this.getButtonClicks() and InputEvent.BUTTON1_MASK) != 0)
                         
                                     {
-                                    buttonStringBuffer!.append(booleanFactory!.TRUE_STRING)
+                                    buttonStringBuffer!.append(booleanFactory!.TRUE_STRING);
+    
 
                                     }
                                 
                         else {
-                            buttonStringBuffer!.append(booleanFactory!.FALSE_STRING)
+                            buttonStringBuffer!.append(booleanFactory!.FALSE_STRING);
+    
 
                         }
                             
-buttonStringBuffer!.append(" 2: ")
+buttonStringBuffer!.append(" 2: ");
+    
 
                         if((this.getButtonClicks() and InputEvent.BUTTON2_MASK) != 0)
                         
                                     {
-                                    buttonStringBuffer!.append(booleanFactory!.TRUE_STRING)
+                                    buttonStringBuffer!.append(booleanFactory!.TRUE_STRING);
+    
 
                                     }
                                 
                         else {
-                            buttonStringBuffer!.append(booleanFactory!.FALSE_STRING)
+                            buttonStringBuffer!.append(booleanFactory!.FALSE_STRING);
+    
 
                         }
                             
-buttonStringBuffer!.append(" 3: ")
+buttonStringBuffer!.append(" 3: ");
+    
 
                         if((this.getButtonClicks() and InputEvent.BUTTON3_MASK) != 0)
                         
                                     {
-                                    buttonStringBuffer!.append(booleanFactory!.TRUE_STRING)
+                                    buttonStringBuffer!.append(booleanFactory!.TRUE_STRING);
+    
 
                                     }
                                 
                         else {
-                            buttonStringBuffer!.append(booleanFactory!.FALSE_STRING)
+                            buttonStringBuffer!.append(booleanFactory!.FALSE_STRING);
+    
 
                         }
                             
-logUtil!.put("Input Type: " +this.getInputRobotInterface()!.getName() +" Point: " +this.getPoint() +" Buttons Clicked: " +buttonStringBuffer!.toString(), this, "log")
+logUtil!.put("Input Type: " +this.getInputRobotInterface()!.getName() +" Point: " +this.getPoint() +" Buttons Clicked: " +buttonStringBuffer!.toString(), this, "log");
+    
 }
 
 

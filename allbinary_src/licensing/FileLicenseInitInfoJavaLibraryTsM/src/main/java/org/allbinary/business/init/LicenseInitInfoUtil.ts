@@ -98,7 +98,8 @@ export class LicenseInitInfoUtil
 
     public setFilePath(filePath: string){
 var filePath = filePath
-this.filePath= filePath
+this.filePath= filePath;
+    
 }
 
 
@@ -111,7 +112,8 @@ var initData = initData
                         if(this.filePath == stringUtil!.EMPTY_STRING)
                         
                                     {
-                                    this.filePath= URLGLOBALS.getMainPath() +PATH_GLOBALS.getInstance()!.INIT_PATH
+                                    this.filePath= URLGLOBALS.getMainPath() +PATH_GLOBALS.getInstance()!.INIT_PATH;
+    
 
                                     }
                                 
@@ -121,23 +123,29 @@ var initData = initData
     var dataOutputStream: AbDataOutputStream = DataOutputStreamFactory.getInstance()!.getInstance(this.filePath, INITFILENAME)!;
         
         
+;
+    
 
-
-    var licenseIdCrypted: ByteArray = WeakCrypt(1).
+    var licenseIdCrypted: number[] = WeakCrypt(1).
                             encrypt(initData!.getLicenseId())!.encodeToByteArray()!;
         
         
-
-dataOutputStream!.writeUTF(DatabaseEncoder.encode(licenseIdCrypted))
+;
+    
+dataOutputStream!.writeUTF(DatabaseEncoder.encode(licenseIdCrypted));
+    
 
     var numberOfLicenseServers: number = initData!.getNumberOfServers()!;
         
         
+;
+    
+dataOutputStream!.writeInt(numberOfLicenseServers);
+    
 
-dataOutputStream!.writeInt(numberOfLicenseServers)
-
-    var licenseServerCrypted: ByteArray
-
+    var licenseServerCrypted: number[]
+;
+    
 
 
 
@@ -149,14 +157,20 @@ dataOutputStream!.writeInt(numberOfLicenseServers)
 index < numberOfLicenseServers; index++)
         {
 licenseServerCrypted= WeakCrypt(3).
-                            encrypt(initData!.getServer(index))!.encodeToByteArray()
-dataOutputStream!.writeUTF(DatabaseEncoder.encode(licenseServerCrypted))
+                            encrypt(initData!.getServer(index))!.encodeToByteArray();
+    
+dataOutputStream!.writeUTF(DatabaseEncoder.encode(licenseServerCrypted));
+    
 }
 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put("Command Failed: " +INITFILENAME, this, "write", e)
-FileStreamFactory.getInstance()!.delete(this.filePath, INITFILENAME)
+logUtil!.put("Command Failed: " +INITFILENAME, this, "write", e);
+    
+FileStreamFactory.getInstance()!.delete(this.filePath, INITFILENAME);
+    
 
 
 
@@ -175,6 +189,8 @@ FileStreamFactory.getInstance()!.delete(this.filePath, INITFILENAME)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return readAgain(0);
+
+                        ;
     
 }
 
@@ -188,28 +204,33 @@ var initializeCounter = initializeCounter
     var METHOD_NAME: string = "readAgain";
         
         
-
+;
+    
 
                         if(this.filePath == stringUtil!.EMPTY_STRING)
                         
                                     {
-                                    this.filePath= URLGLOBALS.getMainPath() +PATH_GLOBALS.getInstance()!.INIT_PATH
+                                    this.filePath= URLGLOBALS.getMainPath() +PATH_GLOBALS.getInstance()!.INIT_PATH;
+    
 
                                     }
                                 
 
         try {
-            logUtil!.put("LicenseInitInfo File: " +INITFILENAME, this, METHOD_NAME)
+            logUtil!.put("LicenseInitInfo File: " +INITFILENAME, this, METHOD_NAME);
+    
 
     var fileStreamFactory: FileStreamFactory = FileStreamFactory.getInstance()!;
         
         
-
+;
+    
 
     var iFile: AbFileInputStream = fileStreamFactory!.getFileInputStreamInstance(this.filePath, INITFILENAME)!;
         
         
-
+;
+    
 
                         if(iFile != 
                                     null
@@ -220,37 +241,45 @@ var initializeCounter = initializeCounter
     var iData: AbDataInputStream = new AbDataInputStream(iFile);
         
         
-
+;
+    
 
     var initInfo: LicenseInitInfo = new LicenseInitInfo();
         
         
+;
+    
 
-
-    var decodedByteArray: ByteArray = DatabaseEncoder.decode(iData!.readUTF())!;
+    var decodedByteArray: number[] = DatabaseEncoder.decode(iData!.readUTF())!;
         
         
-
+;
+    
 
     var licenseIdDecoded: string = new decodedByteArray.decodeToString();
         
         
-
+;
+    
 initInfo!.setLicenseId(WeakCrypt(1).
-                            decrypt(licenseIdDecoded))
+                            decrypt(licenseIdDecoded));
+    
 
     var numberOfLicenseServers: number = iData!.readInt()!;
         
         
-
+;
+    
 
     var NEXT_FILE: string = "Next License Server From File: ";
         
         
-
+;
+    
 
     var licenseServerDecoded: string
-
+;
+    
 
 
 
@@ -261,11 +290,15 @@ initInfo!.setLicenseId(WeakCrypt(1).
         
 index < numberOfLicenseServers; index++)
         {
-decodedByteArray= DatabaseEncoder.decode(iData!.readUTF())
-licenseServerDecoded= decodedByteArray.decodeToString()
+decodedByteArray= DatabaseEncoder.decode(iData!.readUTF());
+    
+licenseServerDecoded= decodedByteArray.decodeToString();
+    
 initInfo!.setServer(WeakCrypt(3).
-                            decrypt(licenseServerDecoded), index)
-logUtil!.put(NEXT_FILE +initInfo!.getServer(index), this, METHOD_NAME)
+                            decrypt(licenseServerDecoded), index);
+    
+logUtil!.put(NEXT_FILE +initInfo!.getServer(index), this, METHOD_NAME);
+    
 }
 
 
@@ -285,14 +318,20 @@ logUtil!.put(NEXT_FILE +initInfo!.getServer(index), this, METHOD_NAME)
 
                         }
                             
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
         try {
-            logUtil!.put("Command Failed: " +INITFILENAME, this, METHOD_NAME, e)
-} catch(se: Exception)
+            logUtil!.put("Command Failed: " +INITFILENAME, this, METHOD_NAME, e);
+    
+
+                //: 
+} catch(se) 
             {
-logUtil!.put("LicenseInitInfo Read Retry: " +INITFILENAME, this, "readAgain()", se)
+logUtil!.put("LicenseInitInfo Read Retry: " +INITFILENAME, this, "readAgain()", se);
+    
 }
 
 

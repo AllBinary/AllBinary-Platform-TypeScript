@@ -42,8 +42,10 @@ public constructor (x: number, y: number){
             super();
             var x = x
 var y = y
-this.x= x
-this.y= y
+this.x= x;
+    
+this.y= y;
+    
 }
 
 
@@ -59,8 +61,10 @@ var line = line
     var myFont: MyFont = MyFont.getInstance()!;
         
         
-
-drawStringUtil!.drawCenterString(graphics, string, 0, string.length, x, y +(line *myFont!.DEFAULT_CHAR_HEIGHT))
+;
+    
+drawStringUtil!.drawCenterString(graphics, string, 0, string.length, x, y +(line *myFont!.DEFAULT_CHAR_HEIGHT));
+    
 }
 
 

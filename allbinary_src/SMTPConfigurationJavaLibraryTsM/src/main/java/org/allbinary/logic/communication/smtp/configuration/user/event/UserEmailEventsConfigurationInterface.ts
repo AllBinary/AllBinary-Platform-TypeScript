@@ -37,7 +37,7 @@ import { AbeClientInformationInterface } from "../../../../../../../../org/allbi
 interface UserEmailEventsConfigurationInterface {
         
 
-    public getEventConfigurationHashMap(): HashMap<Any, Any>
+    public getEventConfigurationHashMap(): HashMap<any, any>
 
     public addUserEmailEventConfiguration(userEmailEventConfigurationInterface: UserEmailEventConfigurationInterface)
 

@@ -79,13 +79,16 @@ export class MultipassWaypointPathRunnable extends WaypointPathRunnableBase {
     public run(){
 
         try {
-            pathFindingLayer!.getWaypointRunnableLogHelper()!.start(pathFindingLayer)
-reset2()
+            pathFindingLayer!.getWaypointRunnableLogHelper()!.start(pathFindingLayer);
+    
+reset2();
+    
 
     var geographicMapCellPosition: GeographicMapCellPosition = pathFindingLayer!.getCurrentGeographicMapCellPosition()!;
         
         
-
+;
+    
 
                         if(geographicMapCellPosition == 
                                     null
@@ -99,36 +102,47 @@ reset2()
 
                                     }
                                 
-pathFindingInfo= targetPathFindingLayer!.getWaypointBehavior()!.getWaypoint()!.getPathFindingInfo(geographicMapCellPosition)
+pathFindingInfo= targetPathFindingLayer!.getWaypointBehavior()!.getWaypoint()!.getPathFindingInfo(geographicMapCellPosition);
+    
 
     var localPathFindingInfo: PathFindingInfo = pathFindingInfo as PathFindingInfo;
         
         
-
-list= targetPathFindingLayer!.getWaypointBehavior()!.getWaypoint()!.getPathsList(geographicMapCellPosition, localPathFindingInfo, multipassState)
+;
+    
+list= targetPathFindingLayer!.getWaypointBehavior()!.getWaypoint()!.getPathsList(geographicMapCellPosition, localPathFindingInfo, multipassState);
+    
 
                         if(list != basicArrayListUtil!.getImmutableInstance())
                         
                                     {
-                                    END_RUNNABLE.run()
+                                    END_RUNNABLE.run();
+    
 
                                     }
                                 
                         else {
-                            currentPassRunnable= SECOND_RUNNABLE
+                            currentPassRunnable= SECOND_RUNNABLE;
+    
 
                         }
                             
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
-setRunning(false)
-finish()
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
+    
+setRunning(false);
+    
+finish();
+    
 }
 
 }
@@ -148,31 +162,41 @@ finish()
     var geographicMapCellPosition: GeographicMapCellPosition = pathFindingLayer!.getCurrentGeographicMapCellPosition()!;
         
         
-
+;
+    
 
     var localPathFindingInfo: PathFindingInfo = pathFindingInfo as PathFindingInfo;
         
         
-
-list= targetPathFindingLayer!.getWaypointBehavior()!.getWaypoint()!.getPathsList(geographicMapCellPosition, localPathFindingInfo, multipassState)
+;
+    
+list= targetPathFindingLayer!.getWaypointBehavior()!.getWaypoint()!.getPathsList(geographicMapCellPosition, localPathFindingInfo, multipassState);
+    
 
                         if(list != basicArrayListUtil!.getImmutableInstance())
                         
                                     {
-                                    END_RUNNABLE.run()
+                                    END_RUNNABLE.run();
+    
 
                                     }
                                 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
-setRunning(false)
-finish()
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
+    
+setRunning(false);
+    
+finish();
+    
 }
 
 }
@@ -192,21 +216,30 @@ finish()
     var waypointBehavior: WaypointBehaviorBase = pathFindingLayer!.getWaypointBehavior()!;
         
         
+;
+    
+waypointBehavior!.setWaypointPathsList(list);
+    
+pathFindingLayer!.getWaypointRunnableLogHelper()!.end(pathFindingLayer);
+    
 
-waypointBehavior!.setWaypointPathsList(list)
-pathFindingLayer!.getWaypointRunnableLogHelper()!.end(pathFindingLayer)
-} catch(e: Exception)
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
-setRunning(false)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
+    
+setRunning(false);
+    
 }
 
-finish()
+finish();
+    
 }
 
                                 }
@@ -240,13 +273,16 @@ public constructor (){
 
     public setRunning(isRunning: boolean){
 var isRunning = isRunning
-this.runningP= isRunning
+this.runningP= isRunning;
+    
 
                         if(this.runningP)
                         
                                     {
-                                    this.reset()
-this.done= false
+                                    this.reset();
+    
+this.done= false;
+    
 
                                     }
                                 
@@ -256,33 +292,46 @@ this.done= false
     public run(){
 
         try {
-            this.currentPassRunnable!.run()
-} catch(e: Exception)
+            this.currentPassRunnable!.run();
+    
+
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
-this.setRunning(false)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
+    
+this.setRunning(false);
+    
 }
 
 }
 
 
     reset2(){
-multipassState!.step= 0
-multipassState!.iteration= 0
-multipassState!.iteration2= 0
-pathFindingInfo= NullUtil.getInstance()!.NULL_OBJECT
+multipassState!.step= 0;
+    
+multipassState!.iteration= 0;
+    
+multipassState!.iteration2= 0;
+    
+pathFindingInfo= NullUtil.getInstance()!.NULL_OBJECT;
+    
 }
 
 
     finish(){
-this.reset2()
-currentPassRunnable= ALREADY_ENDED_RUNNABLE
-done= true
+this.reset2();
+    
+currentPassRunnable= ALREADY_ENDED_RUNNABLE;
+    
+done= true;
+    
 }
 
 
@@ -297,9 +346,12 @@ done= true
 
 
     public reset(){
-this.reset2()
-this.currentPassRunnable= FIRST_RUNNABLE
-this.done= false
+this.reset2();
+    
+this.currentPassRunnable= FIRST_RUNNABLE;
+    
+this.done= false;
+    
 }
 
 

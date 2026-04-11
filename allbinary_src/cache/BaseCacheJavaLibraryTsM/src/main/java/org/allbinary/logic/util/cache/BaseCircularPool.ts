@@ -34,7 +34,7 @@ export class BaseCircularPool
         
         
 
-    OBJECT_ARRAY: any = {}[] = NullUtil.getInstance()!.NULL_OBJECT_ARRAY;
+    OBJECT_ARRAY: any[] = NullUtil.getInstance()!.NULL_OBJECT_ARRAY;
         
         
 
@@ -46,8 +46,10 @@ export class BaseCircularPool
     var anyType: any = {} = OBJECT_ARRAY[this.circularIndexUtil!.getIndex()]!;
         
         
-
-this.circularIndexUtil!.next()
+;
+    
+this.circularIndexUtil!.next();
+    
 
 
 
@@ -59,12 +61,14 @@ this.circularIndexUtil!.next()
 
     public init(allBinaryObjectFactoryInterface: AllBinaryObjectFactoryInterface){
 var allBinaryObjectFactoryInterface = allBinaryObjectFactoryInterface
-this.circularIndexUtil!.setIndex(0)
+this.circularIndexUtil!.setIndex(0);
+    
 
     var size: number = this.circularIndexUtil!.getSize()!;
         
         
-
+;
+    
 
 
 
@@ -75,7 +79,8 @@ this.circularIndexUtil!.setIndex(0)
         
 index < size; index++)
         {
-OBJECT_ARRAY[index]= allBinaryObjectFactoryInterface!.getInstance()
+OBJECT_ARRAY[index]= allBinaryObjectFactoryInterface!.getInstance();
+    
 }
 
 }

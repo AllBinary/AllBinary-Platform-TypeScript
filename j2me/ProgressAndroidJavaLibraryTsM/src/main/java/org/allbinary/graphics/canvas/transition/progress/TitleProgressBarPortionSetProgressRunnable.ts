@@ -55,16 +55,22 @@ var progressCanvas = progressCanvas
     var progressCanvas: AndroidBasicTitleProgressBar = this.progressCanvas as AndroidBasicTitleProgressBar;
         
         
+;
+    
+this.midletActivity!.onSetProgress((this.progressCanvas!.getValue() +this.progressCanvas!.getMaxValue() /progressCanvas!.getPortion()).toInt(), this.progressCanvas!.getText());
+    
 
-this.midletActivity!.onSetProgress((this.progressCanvas!.getValue() +this.progressCanvas!.getMaxValue() /progressCanvas!.getPortion()).toInt(), this.progressCanvas!.getText())
-} catch(e: Exception)
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
+    
 }
 
 }

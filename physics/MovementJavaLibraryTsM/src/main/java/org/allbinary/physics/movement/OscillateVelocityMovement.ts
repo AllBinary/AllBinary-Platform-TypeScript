@@ -40,7 +40,11 @@ export class OscillateVelocityMovement extends BasicConstantVelocityMovement {
     private oscillatePositive: boolean= false
 public constructor (speedBasicDecimal: BasicDecimal, oscillateMin: number, oscillateMax: number)                        
 
-                            : super(speedBasicDecimal, VelocityProperties(speedBasicDecimal!.getUnscaled().toInt(), speedBasicDecimal!.getUnscaled().toInt())){
+                            : super(speedBasicDecimal, VelocityProperties(speedBasicDecimal!.getUnscaled();
+
+                        .toInt(), speedBasicDecimal!.getUnscaled();
+
+                        .toInt())){
 
             super();
             var speedBasicDecimal = speedBasicDecimal
@@ -50,8 +54,10 @@ var oscillateMax = oscillateMax
 
                             //For kotlin this is before the body of the constructor.
                     
-this.oscillateMin= oscillateMin
-this.oscillateMax= oscillateMax
+this.oscillateMin= oscillateMin;
+    
+this.oscillateMax= oscillateMax;
+    
 }
 
 
@@ -59,12 +65,14 @@ this.oscillateMax= oscillateMax
             
     public process(layer: AllBinaryGameLayer){
 var layer = layer
-super.process(layer)
+super.process(layer);
+    
 
                         if(this.oscillate < this.oscillateMin)
                         
                                     {
-                                    this.oscillatePositive= true
+                                    this.oscillatePositive= true;
+    
 
                                     }
                                 
@@ -72,7 +80,8 @@ super.process(layer)
                         if(this.oscillate > this.oscillateMax)
                         
                                     {
-                                    this.oscillatePositive= false
+                                    this.oscillatePositive= false;
+    
 
                                     }
                                 
@@ -80,14 +89,18 @@ super.process(layer)
                         if(this.oscillatePositive)
                         
                                     {
-                                    this.oscillate++
-this.getVelocityProperties()!.getVelocityXBasicDecimalP()!.add(2000)
+                                    this.oscillate++;
+    
+this.getVelocityProperties()!.getVelocityXBasicDecimalP()!.add(2000);
+    
 
                                     }
                                 
                         else {
-                            this.oscillate--
-this.getVelocityProperties()!.getVelocityXBasicDecimalP()!.subtract(2000)
+                            this.oscillate--;
+    
+this.getVelocityProperties()!.getVelocityXBasicDecimalP()!.subtract(2000);
+    
 
                         }
                             

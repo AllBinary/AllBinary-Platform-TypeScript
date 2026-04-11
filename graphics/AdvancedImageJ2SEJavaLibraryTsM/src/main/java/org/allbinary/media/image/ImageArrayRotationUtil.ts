@@ -70,12 +70,14 @@ export class ImageArrayRotationUtil
     //var visitor = visitor
 
     var totalAngle: Integer
-
+;
+    
 
                         if(input == this.commonStrings!.UP)
                         
                                     {
-                                    totalAngle= Integer(Integer.valueOf( -90))
+                                    totalAngle= Integer(Integer.valueOf( -90));
+    
 
                                     }
                                 
@@ -83,23 +85,27 @@ export class ImageArrayRotationUtil
                         if(input == this.commonStrings!.DOWN)
                         
                                     {
-                                    totalAngle= Integer(Integer.valueOf(90))
+                                    totalAngle= Integer(Integer.valueOf(90));
+    
 
                                     }
                                 
                         else {
-                            totalAngle= Integer(Integer.valueOf(input))
+                            totalAngle= Integer(Integer.valueOf(input));
+    
 
                         }
                             
 
     var generatedBufferedImage: BufferedImage
-
+;
+    
 
     var bufferedImageArray: BufferedImage[] = imageProcessorInput!.getBufferedImageArray()!;
         
         
-
+;
+    
 
 
 
@@ -110,9 +116,12 @@ export class ImageArrayRotationUtil
         
 index < bufferedImageArray!.length; index++)
         {
-logUtil!.put(TOTAL_ANGLE +totalAngle, this, commonStrings!.RUN)
-generatedBufferedImage= ImageJ2SERotationUtil.getInstance()!.getRotatedImage(bufferedImageArray[index]!, totalAngle!.toInt())
-visitor.visit(generatedBufferedImage, input, index)
+logUtil!.put(TOTAL_ANGLE +totalAngle, this, commonStrings!.RUN);
+    
+generatedBufferedImage= ImageJ2SERotationUtil.getInstance()!.getRotatedImage(bufferedImageArray[index]!, totalAngle!.toInt());
+    
+visitor.visit(generatedBufferedImage, input, index);
+    
 }
 
 }

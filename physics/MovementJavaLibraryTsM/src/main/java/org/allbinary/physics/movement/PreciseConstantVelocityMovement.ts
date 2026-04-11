@@ -61,21 +61,28 @@ public constructor (basicDecimal: BasicDecimal, velocityProperties: BasicVelocit
     var mathUtil: MathUtil = MathUtil.getInstance()!;
         
         
-
+;
+    
 
     var velocityProperties: BasicVelocityProperties = this.getVelocityProperties()!;
         
         
-
-accumulatedX= (accumulatedX +velocityProperties!.getVelocityXBasicDecimalP()!.getUnscaled()).toInt()
-accumulatedY= (accumulatedY +velocityProperties!.getVelocityYBasicDecimalP()!.getUnscaled()).toInt()
-accumulatedZ= (accumulatedZ +velocityProperties!.getVelocityZBasicDecimalP()!.getUnscaled()).toInt()
-layer.move(accumulatedX /factorValue, accumulatedY /factorValue, accumulatedZ /factorValue)
+;
+    
+accumulatedX= (accumulatedX +velocityProperties!.getVelocityXBasicDecimalP()!.getUnscaled()).toInt();
+    
+accumulatedY= (accumulatedY +velocityProperties!.getVelocityYBasicDecimalP()!.getUnscaled()).toInt();
+    
+accumulatedZ= (accumulatedZ +velocityProperties!.getVelocityZBasicDecimalP()!.getUnscaled()).toInt();
+    
+layer.move(accumulatedX /factorValue, accumulatedY /factorValue, accumulatedZ /factorValue);
+    
 
                         if(mathUtil!.abs(accumulatedX) > factorValue)
                         
                                     {
-                                    accumulatedX= 0
+                                    accumulatedX= 0;
+    
 
                                     }
                                 
@@ -83,7 +90,8 @@ layer.move(accumulatedX /factorValue, accumulatedY /factorValue, accumulatedZ /f
                         if(mathUtil!.abs(accumulatedY) > factorValue)
                         
                                     {
-                                    accumulatedY= 0
+                                    accumulatedY= 0;
+    
 
                                     }
                                 
@@ -91,7 +99,8 @@ layer.move(accumulatedX /factorValue, accumulatedY /factorValue, accumulatedZ /f
                         if(mathUtil!.abs(accumulatedZ) > factorValue)
                         
                                     {
-                                    accumulatedZ= 0
+                                    accumulatedZ= 0;
+    
 
                                     }
                                 

@@ -49,12 +49,15 @@ var string = string
                         if(this.stringBuffer!.length() > 12000)
                         
                                     {
-                                    this.stringBuffer!.delete(0, this.stringBuffer!.length())
-this.stringBuffer!.append("Old Stats Cleared")
+                                    this.stringBuffer!.delete(0, this.stringBuffer!.length());
+    
+this.stringBuffer!.append("Old Stats Cleared");
+    
 
                                     }
                                 
-this.stringBuffer!.append(string)
+this.stringBuffer!.append(string);
+    
 }
 
 
@@ -65,6 +68,8 @@ this.stringBuffer!.append(string)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return StringMaker().
                             append(super.toString())!.append(this.stringBuffer!.toString())!.toString();
+
+                        ;
     
 }
 

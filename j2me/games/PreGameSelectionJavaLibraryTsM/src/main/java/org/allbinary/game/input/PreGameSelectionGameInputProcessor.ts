@@ -117,20 +117,30 @@ export class PreGameSelectionGameInputProcessor extends Processor
     public run(){
 
         try {
-            this.setRunning(true)
-SecondaryPlayerQueueFactory.getInstance()!.add(SelectSound.getInstance())
-gameCanvas!.setGameState(nextGameState)
-GameKeyEventHandler.getInstance()!.removeListener(getPlayerGameInput())
-this.setRunning(false)
-} catch(e: Exception)
+            this.setRunning(true);
+    
+SecondaryPlayerQueueFactory.getInstance()!.add(SelectSound.getInstance());
+    
+gameCanvas!.setGameState(nextGameState);
+    
+GameKeyEventHandler.getInstance()!.removeListener(getPlayerGameInput());
+    
+this.setRunning(false);
+    
+
+                //: 
+} catch(e) 
             {
-this.setRunning(false)
+this.setRunning(false);
+    
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
+    
 }
 
 }
@@ -146,18 +156,24 @@ public constructor (gameCanvas: AllBinaryGameCanvas, preGameSelectorPaintable: P
 var preGameSelectorPaintable = preGameSelectorPaintable
 var nextGameState = nextGameState
 var lockedIndex = lockedIndex
-this.gameCanvas= gameCanvas
-this.preGameSelectorPaintable= preGameSelectorPaintable
-this.nextGameState= nextGameState
-this.playerGameInput= GameInputProcessorComposite("Pre Game Selection", this)
-this.lockedIndex= lockedIndex
+this.gameCanvas= gameCanvas;
+    
+this.preGameSelectorPaintable= preGameSelectorPaintable;
+    
+this.nextGameState= nextGameState;
+    
+this.playerGameInput= GameInputProcessorComposite("Pre Game Selection", this);
+    
+this.lockedIndex= lockedIndex;
+    
 }
 
 
                 //@Throws(Error::class)
             
     public process(){
-this.getPlayerGameInput()!.update()
+this.getPlayerGameInput()!.update();
+    
 }
 
 
@@ -169,7 +185,8 @@ var list = list
     var size: number = list.size()!;
         
         
-
+;
+    
 
 
 
@@ -184,12 +201,14 @@ index < size; index++)
     var anyType: any = {} = list.get(index)!;
         
         
-
+;
+    
 
     var key: number = GameKeyEventUtil.getKey(anyType)!;
         
         
-
+;
+    
 
                         if(key == Canvas.LEFT || key == Canvas.RIGHT || key == Canvas.UP || key == Canvas.DOWN)
                         
@@ -198,8 +217,10 @@ index < size; index++)
                         if(inputTimeHelper!.isTime())
                         
                                     {
-                                    SecondaryPlayerQueueFactory.getInstance()!.add(SelectSound.getInstance())
-this.getPreGameSelectorPaintable()!.getPreGameSelectionForm()!.processInput(key)
+                                    SecondaryPlayerQueueFactory.getInstance()!.add(SelectSound.getInstance());
+    
+this.getPreGameSelectorPaintable()!.getPreGameSelectionForm()!.processInput(key);
+    
 break;
 
                     
@@ -217,22 +238,30 @@ break;
     var selectedIndex: number = this.preGameSelectorPaintable!.getPreGameSelectionForm()!.getSelectedIndex()!;
         
         
+;
+    
 
+                        if(selectedIndex < this.lockedIndex || !LockedUtil.getInstance()!.isLockedFeature();
 
-                        if(selectedIndex < this.lockedIndex || !LockedUtil.getInstance()!.isLockedFeature())
+                        )
                         
                                     {
                                     
-                        if(!abRunnable!.isRunning())
+                        if(!abRunnable!.isRunning();
+
+                        )
                         
                                     {
-                                    abRunnable!.setRunning(true)
+                                    abRunnable!.setRunning(true);
+    
 
     var thread: Thread = new Thread(abRunnable);
         
         
-
-thread.start()
+;
+    
+thread.start();
+    
 
                                     }
                                 
@@ -243,7 +272,8 @@ break;
                                     }
                                 
                         else {
-                            LockedFeatureNotificationUtil.getInstance()!.fire()
+                            LockedFeatureNotificationUtil.getInstance()!.fire();
+    
 
                         }
                             
@@ -252,7 +282,8 @@ break;
                                 
 }
 
-list.clear()
+list.clear();
+    
 }
 
 
@@ -283,6 +314,8 @@ var layerManager = layerManager
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.toString();
+
+                        ;
     
 }
 

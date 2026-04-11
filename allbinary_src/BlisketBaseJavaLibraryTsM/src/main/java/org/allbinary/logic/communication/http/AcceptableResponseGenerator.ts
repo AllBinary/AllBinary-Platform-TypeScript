@@ -64,29 +64,34 @@ var httpServletRequest = httpServletRequest
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
+;
+    
 
         try {
             
     var acceptableResponseUtil: AcceptableResponseUtil = AcceptableResponseUtil.getInstance()!;
         
         
-
+;
+    
 
     var acceptable: string = httpServletRequest!.getHeader("accept")!;
         
         
-
+;
+    
 
     var result: string = acceptableResponseUtil!.getTagName(0)!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTP))
                         
                                     {
-                                    logUtil!.put("Request Type: " +acceptable, this, commonStrings!.GET)
+                                    logUtil!.put("Request Type: " +acceptable, this, commonStrings!.GET);
+    
 
                                     }
                                 
@@ -100,7 +105,8 @@ var httpServletRequest = httpServletRequest
     var size: number = acceptableResponseUtil!.size()!;
         
         
-
+;
+    
 
 
 
@@ -115,7 +121,8 @@ index < size; index++)
                         if(acceptable.compareTo(acceptableResponseUtil!.get(index)) == 0)
                         
                                     {
-                                    result= acceptableResponseUtil!.getTagName(index)
+                                    result= acceptableResponseUtil!.getTagName(index);
+    
 
                                     }
                                 
@@ -128,7 +135,8 @@ index < size; index++)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTP))
                         
                                     {
-                                    logUtil!.put("Response Type: " +result, this, commonStrings!.GET)
+                                    logUtil!.put("Response Type: " +result, this, commonStrings!.GET);
+    
 
                                     }
                                 
@@ -138,13 +146,16 @@ index < size; index++)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET, e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET, e);
+    
 
                                     }
                                 

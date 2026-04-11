@@ -51,7 +51,8 @@ export class ChangeColorProcessor extends ModifierBaseProcessor {
     //var imageToShow = imageToShow
     //var index = index
     //var basicColor = basicColor
-imageModifierUtil!.changeColor(originalImage, imageToShow, index, basicColor)
+imageModifierUtil!.changeColor(originalImage, imageToShow, index, basicColor);
+    
 }
 
 

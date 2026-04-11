@@ -55,7 +55,8 @@ public constructor (upgradableRTSLayerHudPaintable: UpgradableRTSLayerHudPaintab
 
             super();
             var upgradableRTSLayerHudPaintable = upgradableRTSLayerHudPaintable
-this.upgradableRTSLayerHudPaintable= upgradableRTSLayerHudPaintable
+this.upgradableRTSLayerHudPaintable= upgradableRTSLayerHudPaintable;
+    
 }
 
 
@@ -66,12 +67,14 @@ var rtsLayer = rtsLayer
                         
                                     {
                                     this.setUpgradeCost(StringMaker().
-                            append(UPGRADE)!.appendint(rtsLayer!.getUpgradeCost())!.toString())
+                            append(UPGRADE)!.appendint(rtsLayer!.getUpgradeCost())!.toString());
+    
 
                                     }
                                 
                         else {
-                            this.setUpgradeCost(StringUtil.getInstance()!.EMPTY_STRING)
+                            this.setUpgradeCost(StringUtil.getInstance()!.EMPTY_STRING);
+    
 
                         }
                             
@@ -80,12 +83,14 @@ var rtsLayer = rtsLayer
                         
                                     {
                                     this.setDownGradeCost(StringMaker().
-                            append(DOWNGRADE)!.appendint(rtsLayer!.getDowngradeCost())!.toString())
+                            append(DOWNGRADE)!.appendint(rtsLayer!.getDowngradeCost())!.toString());
+    
 
                                     }
                                 
                         else {
-                            this.setDownGradeCost(StringUtil.getInstance()!.EMPTY_STRING)
+                            this.setDownGradeCost(StringUtil.getInstance()!.EMPTY_STRING);
+    
 
                         }
                             
@@ -94,14 +99,17 @@ var rtsLayer = rtsLayer
 
     public paint(graphics: Graphics){
 var graphics = graphics
-graphics.drawString(this.getDownGradeCost(), this.upgradableRTSLayerHudPaintable!.textX, this.upgradableRTSLayerHudPaintable!.costY1, 0)
-graphics.drawString(this.getUpgradeCost(), this.upgradableRTSLayerHudPaintable!.textX, this.upgradableRTSLayerHudPaintable!.costY, 0)
+graphics.drawString(this.getDownGradeCost(), this.upgradableRTSLayerHudPaintable!.textX, this.upgradableRTSLayerHudPaintable!.costY1, 0);
+    
+graphics.drawString(this.getUpgradeCost(), this.upgradableRTSLayerHudPaintable!.textX, this.upgradableRTSLayerHudPaintable!.costY, 0);
+    
 }
 
 
     setUpgradeCost(upgradeCost: string){
 var upgradeCost = upgradeCost
-this.upgradeCost= upgradeCost
+this.upgradeCost= upgradeCost;
+    
 }
 
 
@@ -117,7 +125,8 @@ this.upgradeCost= upgradeCost
 
     setDownGradeCost(downGradeCost: string){
 var downGradeCost = downGradeCost
-this.downGradeCost= downGradeCost
+this.downGradeCost= downGradeCost;
+    
 }
 
 

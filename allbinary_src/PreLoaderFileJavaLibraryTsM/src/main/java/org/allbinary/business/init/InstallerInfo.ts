@@ -87,7 +87,8 @@ export class InstallerInfo
 
     public static setHasRead(value: boolean){
 var value = value
-InstallerInfo.hasRead= value
+InstallerInfo.hasRead= value;
+    
 }
 
 
@@ -108,42 +109,54 @@ public constructor (){
     var FILEABPATH: AbPath = new AbPath(URLGLOBALS.getMainPath() +PACKAGE, INITFILENAME);
         
         
-
+;
+    
 
         try {
             
     var newFile: AbFile = new AbFile(FILEABPATH);
         
         
-
-newFile!.createNewFile()
+;
+    
+newFile!.createNewFile();
+    
 
     var dataOutputStream: AbDataOutputStream = DataOutputStreamFactory.getInstance()!.getInstance(newFile)!;
         
         
+;
+    
 
-
-    var cryptedUserName: ByteArray = WeakCrypt(1).
+    var cryptedUserName: number[] = WeakCrypt(1).
                             encrypt(this.getUserName())!.encodeToByteArray()!;
         
         
+;
+    
 
-
-    var cryptedPassword: ByteArray = WeakCrypt(2).
+    var cryptedPassword: number[] = WeakCrypt(2).
                             encrypt(this.getPassword())!.encodeToByteArray()!;
         
         
+;
+    
+dataOutputStream!.writeUTF(DatabaseEncoder.encode(cryptedUserName));
+    
+dataOutputStream!.writeUTF(DatabaseEncoder.encode(cryptedPassword));
+    
+hasRead= false;
+    
 
-dataOutputStream!.writeUTF(DatabaseEncoder.encode(cryptedUserName))
-dataOutputStream!.writeUTF(DatabaseEncoder.encode(cryptedPassword))
-hasRead= false
-} catch(e: Exception)
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PRELOADERERROR))
                         
                                     {
-                                    logUtil!.put("Failed", this, "write")
+                                    logUtil!.put("Failed", this, "write");
+    
 
                                     }
                                 
@@ -164,14 +177,16 @@ hasRead= false
     var FILEABPATH: AbPath = new AbPath(URLGLOBALS.getMainPath() +PACKAGE, INITFILENAME);
         
         
-
+;
+    
 
         try {
             
     var file: AbFile = new AbFile(FILEABPATH);
         
         
-
+;
+    
 
                         if(file.isFile())
                         
@@ -180,26 +195,32 @@ hasRead= false
     var iFile: AbFileLocalInputStream = new AbFileLocalInputStream(file);
         
         
-
+;
+    
 
     var iData: AbDataInputStream = new AbDataInputStream(iFile);
         
         
-
+;
+    
 
     var decryptedUserName: string = new decode.toCharArray();
         
         
-
+;
+    
 
     var decryptedPassword: string = new decode.toCharArray();
         
         
-
+;
+    
 this.setUserName(WeakCrypt(1).
-                            decrypt(decryptedUserName))
+                            decrypt(decryptedUserName));
+    
 this.setPassword(WeakCrypt(2).
-                            decrypt(decryptedPassword))
+                            decrypt(decryptedPassword));
+    
 
                                     }
                                 
@@ -208,20 +229,24 @@ this.setPassword(WeakCrypt(2).
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PRELOADER))
                         
                                     {
-                                    logUtil!.put("Not a File - Failed Loading: " +FILEABPATH.toString(), this, "read")
+                                    logUtil!.put("Not a File - Failed Loading: " +FILEABPATH.toString(), this, "read");
+    
 
                                     }
                                 
 
                         }
                             
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PRELOADERERROR))
                         
                                     {
-                                    logUtil!.put("Failed", this, "read")
+                                    logUtil!.put("Failed", this, "read");
+    
 
                                     }
                                 
@@ -232,13 +257,15 @@ this.setPassword(WeakCrypt(2).
 
     public setUserName(userName: string){
 var userName = userName
-InstallerInfo.userName= userName
+InstallerInfo.userName= userName;
+    
 }
 
 
     public setPassword(password: string){
 var password = password
-InstallerInfo.password= password
+InstallerInfo.password= password;
+    
 }
 
 
@@ -250,8 +277,10 @@ InstallerInfo.password= password
                         if(!hasRead)
                         
                                     {
-                                    hasRead= true
-this.read()
+                                    hasRead= true;
+    
+this.read();
+    
 
                         if(InstallerInfo.userName == 
                                     null
@@ -264,7 +293,8 @@ this.read()
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PRELOADER))
                         
                                     {
-                                    logUtil!.put("Failed", this, "updateIfNeeded")
+                                    logUtil!.put("Failed", this, "updateIfNeeded");
+    
 
                                     }
                                 
@@ -280,7 +310,8 @@ this.read()
                 //@Throws(Error::class)
             
     public getUserName(): string{
-this.updateIfNeeded()
+this.updateIfNeeded();
+    
 
 
 
@@ -293,7 +324,8 @@ this.updateIfNeeded()
                 //@Throws(Error::class)
             
     public getPassword(): string{
-this.updateIfNeeded()
+this.updateIfNeeded();
+    
 
 
 
@@ -308,7 +340,8 @@ this.updateIfNeeded()
     public isValid(userName: string, password: string): boolean{
 var userName = userName
 var password = password
-this.updateIfNeeded()
+this.updateIfNeeded();
+    
 
                         if(this.userName != 
                                     null

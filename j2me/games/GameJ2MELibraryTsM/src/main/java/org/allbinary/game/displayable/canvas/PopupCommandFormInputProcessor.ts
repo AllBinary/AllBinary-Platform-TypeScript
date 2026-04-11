@@ -62,6 +62,8 @@ var key = key
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.processInput(key);
+
+                        ;
     
 }
 
@@ -70,7 +72,8 @@ var key = key
             
     processMotionInput(motionGestureEvent: MotionGestureEvent){
 var motionGestureEvent = motionGestureEvent
-super.processMotionInput(motionGestureEvent)
+super.processMotionInput(motionGestureEvent);
+    
 }
 
 

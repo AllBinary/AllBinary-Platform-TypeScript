@@ -78,7 +78,8 @@ var rotationInDegrees = rotationInDegrees
     var image: Image = ImageCreationUtil.getInstance()!.getInstance(originalImage!.getWidth(), originalImage!.getHeight())!;
         
         
-
+;
+    
 
                         if(image.isMutable())
                         
@@ -88,26 +89,33 @@ var rotationInDegrees = rotationInDegrees
                                     (image as AndroidImageInterface).getBitmap()!;
         
         
-
+;
+    
 
     var width: number = bitmap.getWidth()!;
         
         
-
+;
+    
 
     var height: number = bitmap.getHeight()!;
         
         
-
-matrix.setRotate(rotationInDegrees.toFloat(), (width shr 1).toFloat(), (height shr 1).toFloat())
+;
+    
+matrix.setRotate(rotationInDegrees.toFloat(), (width shr 1).toFloat(), (height shr 1).toFloat());
+    
 
     var canvas: Canvas = 
                                     (image as AndroidImageInterface).getCanvas()!;
         
         
-
-canvas.concat(matrix)
-image.getGraphics()!.drawImage(originalImage, 0, 0, anchor)
+;
+    
+canvas.concat(matrix);
+    
+image.getGraphics()!.drawImage(originalImage, 0, 0, anchor);
+    
 
 
 

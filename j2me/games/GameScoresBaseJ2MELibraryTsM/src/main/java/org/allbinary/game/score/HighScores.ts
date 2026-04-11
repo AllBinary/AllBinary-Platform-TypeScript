@@ -56,15 +56,19 @@ public constructor (name: string, heading: string, columnTwoHeading: string){
             var name = name
 var heading = heading
 var columnTwoHeading = columnTwoHeading
-this.name= name
-this.heading= heading
-this.columnTwoHeading= columnTwoHeading
+this.name= name;
+    
+this.heading= heading;
+    
+this.columnTwoHeading= columnTwoHeading;
+    
 }
 
 
     public setList(orderedHighScoresList: BasicArrayList){
 var orderedHighScoresList = orderedHighScoresList
-this.orderedHighScoresList= orderedHighScoresList
+this.orderedHighScoresList= orderedHighScoresList;
+    
 }
 
 
@@ -94,13 +98,16 @@ this.orderedHighScoresList= orderedHighScoresList
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getList()!.size();
+
+                        ;
     
 }
 
 
     public addHighScore(newHighScore: HighScore){
 var newHighScore = newHighScore
-this.orderedHighScoresList!.add(newHighScore)
+this.orderedHighScoresList!.add(newHighScore);
+    
 }
 
 
@@ -152,17 +159,25 @@ var newHighScore = newHighScore
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("HighScores: ")
-stringBuffer!.append(this.heading)
-stringBuffer!.append(CommonSeps.getInstance()!.SPACE)
-stringBuffer!.append(CommonLabels.getInstance()!.TOTAL_LABEL)
-stringBuffer!.appendint(this.orderedHighScoresList!.size())
+;
+    
+stringBuffer!.append("HighScores: ");
+    
+stringBuffer!.append(this.heading);
+    
+stringBuffer!.append(CommonSeps.getInstance()!.SPACE);
+    
+stringBuffer!.append(CommonLabels.getInstance()!.TOTAL_LABEL);
+    
+stringBuffer!.appendint(this.orderedHighScoresList!.size());
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

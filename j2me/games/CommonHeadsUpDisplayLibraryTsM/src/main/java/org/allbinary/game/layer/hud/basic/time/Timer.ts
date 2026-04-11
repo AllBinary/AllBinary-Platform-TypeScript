@@ -67,14 +67,18 @@ public constructor (maxTime: number){
 
             super();
             var maxTime = maxTime
-this.primitiveLongUtil= PrimitiveLongUtil(maxTime)
-this.maxTime= maxTime.toLong()
+this.primitiveLongUtil= PrimitiveLongUtil(maxTime);
+    
+this.maxTime= maxTime.toLong();
+    
 }
 
 
     public start(){
-this.hundredthTime= 0
-this.startTime= this.gameTickTimeDelayHelper!.startTime
+this.hundredthTime= 0;
+    
+this.startTime= this.gameTickTimeDelayHelper!.startTime;
+    
 }
 
 
@@ -93,21 +97,25 @@ this.startTime= this.gameTickTimeDelayHelper!.startTime
     var lastLowerTime: number = this.hundredthTime;
         
         
-
+;
+    
 
     var currentTime: number = ((this.modifier +this.gameTickTimeDelayHelper!.startTime) -this.startTime);
         
         
-
+;
+    
 
                         if(currentTime < 0)
                         
                                     {
-                                    currentTime= 0
+                                    currentTime= 0;
+    
 
                                     }
                                 
-this.hundredthTime= currentTime /100
+this.hundredthTime= currentTime /100;
+    
 
                         if(this.hundredthTime >= this.maxTime)
                         
@@ -116,7 +124,8 @@ this.hundredthTime= currentTime /100
                         if(this.startTime > 0)
                         
                                     {
-                                    this.hundrethsString= MAX
+                                    this.hundrethsString= MAX;
+    
 
                                     }
                                 
@@ -127,8 +136,10 @@ this.hundredthTime= currentTime /100
                         if(lastLowerTime != this.hundredthTime)
                         
                                     {
-                                    this.hundrethsString= primitiveLongUtil!.getCharArray(this.hundredthTime.toInt())
-this.totalDigits= this.primitiveLongUtil!.getCurrentTotalDigits()
+                                    this.hundrethsString= primitiveLongUtil!.getCharArray(this.hundredthTime.toInt());
+    
+this.totalDigits= this.primitiveLongUtil!.getCurrentTotalDigits();
+    
 
                                     }
                                 
@@ -137,13 +148,15 @@ this.totalDigits= this.primitiveLongUtil!.getCurrentTotalDigits()
 
     public reduce(value: number){
 var value = value
-this.modifier -= value
+this.modifier -= value;
+    
 }
 
 
     public add(value: number){
 var value = value
-this.modifier += value
+this.modifier += value;
+    
 }
 
 

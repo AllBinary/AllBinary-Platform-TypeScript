@@ -990,7 +990,7 @@ interface GL10 extends javax.microedition.khronos.opengles.GL {
 
     glCullFace(mode: number)
 
-    glDeleteTextures(n: number, textures: IntArray, offset: number)
+    glDeleteTextures(n: number, textures: number[], offset: number)
 
     glDeleteTextures(n: number, textures: java.nio.IntBuffer)
 
@@ -1018,7 +1018,7 @@ interface GL10 extends javax.microedition.khronos.opengles.GL {
 
     glFogf(pname: number, param: number)
 
-    glFogfv(pname: number, params: FloatArray, offset: number)
+    glFogfv(pname: number, params: number[], offset: number)
 
     glFogfv(pname: number, params: java.nio.FloatBuffer)
 
@@ -1026,13 +1026,13 @@ interface GL10 extends javax.microedition.khronos.opengles.GL {
 
     glFrustumf(left: number, right: number, bottom: number, top: number, zNear: number, zFar: number)
 
-    glGenTextures(n: number, textures: IntArray, offset: number)
+    glGenTextures(n: number, textures: number[], offset: number)
 
     glGenTextures(n: number, textures: java.nio.IntBuffer)
 
     glGetError(): number
 
-    glGetIntegerv(pname: number, params: IntArray, offset: number)
+    glGetIntegerv(pname: number, params: number[], offset: number)
 
     glGetIntegerv(pname: number, params: java.nio.IntBuffer)
 
@@ -1042,13 +1042,13 @@ interface GL10 extends javax.microedition.khronos.opengles.GL {
 
     glLightModelf(pname: number, param: number)
 
-    glLightModelfv(pname: number, params: FloatArray, offset: number)
+    glLightModelfv(pname: number, params: number[], offset: number)
 
     glLightModelfv(pname: number, params: java.nio.FloatBuffer)
 
     glLightf(light: number, pname: number, param: number)
 
-    glLightfv(light: number, pname: number, params: FloatArray, offset: number)
+    glLightfv(light: number, pname: number, params: number[], offset: number)
 
     glLightfv(light: number, pname: number, params: java.nio.FloatBuffer)
 
@@ -1056,7 +1056,7 @@ interface GL10 extends javax.microedition.khronos.opengles.GL {
 
     glLoadIdentity()
 
-    glLoadMatrixf(m: FloatArray, offset: number)
+    glLoadMatrixf(m: number[], offset: number)
 
     glLoadMatrixf(m: java.nio.FloatBuffer)
 
@@ -1064,13 +1064,13 @@ interface GL10 extends javax.microedition.khronos.opengles.GL {
 
     glMaterialf(face: number, pname: number, param: number)
 
-    glMaterialfv(face: number, pname: number, params: FloatArray, offset: number)
+    glMaterialfv(face: number, pname: number, params: number[], offset: number)
 
     glMaterialfv(face: number, pname: number, params: java.nio.FloatBuffer)
 
     glMatrixMode(mode: number)
 
-    glMultMatrixf(m: FloatArray, offset: number)
+    glMultMatrixf(m: number[], offset: number)
 
     glMultMatrixf(m: java.nio.FloatBuffer)
 
@@ -1118,7 +1118,7 @@ interface GL10 extends javax.microedition.khronos.opengles.GL {
 
     glTexEnvf(target: number, pname: number, param: number)
 
-    glTexEnvfv(target: number, pname: number, params: FloatArray, offset: number)
+    glTexEnvfv(target: number, pname: number, params: number[], offset: number)
 
     glTexEnvfv(target: number, pname: number, params: java.nio.FloatBuffer)
 

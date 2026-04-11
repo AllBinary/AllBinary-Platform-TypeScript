@@ -55,7 +55,8 @@ public constructor (maxGravityActionIndex: number){
 
             super();
                 //var maxGravityActionIndex = maxGravityActionIndex
-this.maxGravityActionIndex= maxGravityActionIndex
+this.maxGravityActionIndex= maxGravityActionIndex;
+    
 }
 
 
@@ -64,8 +65,10 @@ this.maxGravityActionIndex= maxGravityActionIndex
                         if(this.gravityActionIndex == 0)
                         
                                     {
-                                    this.gravityActionIndex++
-this.isFallingWithoutJumpAttempt= true
+                                    this.gravityActionIndex++;
+    
+this.isFallingWithoutJumpAttempt= true;
+    
 
                                     }
                                 
@@ -74,16 +77,22 @@ this.isFallingWithoutJumpAttempt= true
 
     public land(velocityProperties: VelocityProperties){
     //var velocityProperties = velocityProperties
-velocityProperties!.getVelocityYBasicDecimalP()!.set(0)
-this.land()
+velocityProperties!.getVelocityYBasicDecimalP()!.set(0);
+    
+this.land();
+    
 }
 
 
     public land(){
-this.gravityActionIndex= 0
-this.isFallingWithoutJumpAttempt= false
-this.isJumpAction= true
-this.isJumpOver= false
+this.gravityActionIndex= 0;
+    
+this.isFallingWithoutJumpAttempt= false;
+    
+this.isJumpAction= true;
+    
+this.isJumpOver= false;
+    
 }
 
 
@@ -101,13 +110,19 @@ this.isJumpOver= false
                         
                                     {
                                     
-    var acceleration2: number =  -acceleration.getForward() *accelerationMultiplier;
-        
-        
+    var acceleration2: number =  -acceleration.getForward();
 
-velocityProperties!.getVelocityYBasicDecimalP()!.add(acceleration2)
-velocityProperties!.limitXYToForwardAndReverseMaxVelocity()
-gravityActionIndex++
+                         *accelerationMultiplier;
+        
+        
+;
+    
+velocityProperties!.getVelocityYBasicDecimalP()!.add(acceleration2);
+    
+velocityProperties!.limitXYToForwardAndReverseMaxVelocity();
+    
+gravityActionIndex++;
+    
 
                                     }
                                 
@@ -126,8 +141,10 @@ gravityActionIndex++
                         if(isJumpAction)
                         
                                     {
-                                    jumpBehavior!.process()
-isJumpAction= false
+                                    jumpBehavior!.process();
+    
+isJumpAction= false;
+    
 
                                     }
                                 
@@ -140,7 +157,8 @@ isJumpAction= false
                         if(this.gravityActionIndex > 0 && velocityProperties!.getVelocityYBasicDecimalP()!.getUnscaled() > 0)
                         
                                     {
-                                    this.isJumpOver= true
+                                    this.isJumpOver= true;
+    
 
                                     }
                                 

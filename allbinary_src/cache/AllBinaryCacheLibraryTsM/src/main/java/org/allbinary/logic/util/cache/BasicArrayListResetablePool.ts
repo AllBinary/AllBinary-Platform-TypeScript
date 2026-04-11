@@ -46,7 +46,8 @@ var key = key
     var size: number = this.buffers.size()!;
         
         
-
+;
+    
 
                         if(size > 0)
                         
@@ -55,7 +56,9 @@ var key = key
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return buffers.remove(size -1) as CacheableInterface;
+                        return buffers.remove(size -1);
+
+                         as CacheableInterface;
     
 
                                     }
@@ -66,6 +69,8 @@ var key = key
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.cacheableInterfaceFactoryInterface!.getInstance(key);
+
+                        ;
     
 
                         }

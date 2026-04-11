@@ -18,10 +18,13 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { HashMap } from "../../../../../../java/util/HashMap.js";
 
     
-import { Vector } from "../../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../../java/util/Vector.js";
 
     
 import { PageContext } from "../../../../../../javax/servlet/jsp/PageContext.js";
@@ -48,7 +51,7 @@ export class TransformInfoBasic extends AbContext
         
 
     private storeFrontInterface: StoreFrontInterface
-public constructor (storeFrontInterface: StoreFrontInterface, propertiesHashMap: HashMap<Any, Any>, pageContext: PageContext)                        
+public constructor (storeFrontInterface: StoreFrontInterface, propertiesHashMap: HashMap<any, any>, pageContext: PageContext)                        
 
                             : super(propertiesHashMap, pageContext){
 
@@ -60,7 +63,8 @@ var pageContext = pageContext
 
                             //For kotlin this is before the body of the constructor.
                     
-this.storeFrontInterface= storeFrontInterface
+this.storeFrontInterface= storeFrontInterface;
+    
 }
 
 
@@ -70,6 +74,8 @@ this.storeFrontInterface= storeFrontInterface
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.storeFrontInterface!.getName();
+
+                        ;
     
 }
 
@@ -84,7 +90,7 @@ this.storeFrontInterface= storeFrontInterface
 }
 
 
-    public override(hashMap: HashMap<Any, Any>){
+    public override(hashMap: HashMap<any, any>){
 var hashMap = hashMap
 }
 
@@ -294,7 +300,7 @@ var importUriPath = importUriPath
 
                 //@Throws(Error::class)
             
-    public toHashMap(): HashMap<Any, Any>{
+    public toHashMap(): HashMap<any, any>{
 
 
 

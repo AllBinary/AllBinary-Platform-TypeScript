@@ -18,13 +18,16 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { Calendar } from "../../java/util/Calendar.js";
 
     
 import { HashMap } from "../../java/util/HashMap.js";
 
     
-import { Vector } from "../../java/util/Vector.js";
+
+//import { Vector } from "../../java/util/Vector.js";
 
     
 import { HttpServletRequest } from "../../javax/servlet/http/HttpServletRequest.js";
@@ -94,9 +97,11 @@ export class AuthenticationHelper extends TagHelper {
     private timeout: string
 
     private attemptsInteger: Integer
-public constructor (hashMap: HashMap<Any, Any>, pageContext: PageContext)                        
+public constructor (hashMap: HashMap<any, any>, pageContext: PageContext)                        
 
-                            : this(hashMap, pageContext!.getRequest() as HttpServletRequest){
+                            : this(hashMap, pageContext!.getRequest();
+
+                         as HttpServletRequest){
 
             super();
             var hashMap = hashMap
@@ -107,18 +112,21 @@ var pageContext = pageContext
                     
 }
 
-public constructor (hashMap: HashMap<Any, Any>, httpServletRequest: HttpServletRequest){
+public constructor (hashMap: HashMap<any, any>, httpServletRequest: HttpServletRequest){
 
             super();
             var hashMap = hashMap
 var httpServletRequest = httpServletRequest
-this.weblisketSession= WeblisketSession(hashMap, httpServletRequest)
-this.getFormData()
+this.weblisketSession= WeblisketSession(hashMap, httpServletRequest);
+    
+this.getFormData();
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.AUTHENTICATION))
                         
                                     {
-                                    logUtil!.put(this.outputSessionInfo(), this, this.commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put(this.outputSessionInfo(), this, this.commonStrings!.CONSTRUCTOR);
+    
 
                                     }
                                 
@@ -128,11 +136,16 @@ this.getFormData()
                 //@Throws(Error::class)
             
     getFormData(){
-this.authenticated= this.weblisketSession!.getAuthentication()
-this.sessionUserName= this.weblisketSession!.getUserName()
-this.role= this.weblisketSession!.getRole()
-this.attemptsInteger= this.weblisketSession!.getAttempts()
-this.timeout= this.weblisketSession!.getTimeout()
+this.authenticated= this.weblisketSession!.getAuthentication();
+    
+this.sessionUserName= this.weblisketSession!.getUserName();
+    
+this.role= this.weblisketSession!.getRole();
+    
+this.attemptsInteger= this.weblisketSession!.getAttempts();
+    
+this.timeout= this.weblisketSession!.getTimeout();
+    
 }
 
 
@@ -141,20 +154,24 @@ this.timeout= this.weblisketSession!.getTimeout()
     public invalidateSession(): Integer{
 
         try {
-            this.weblisketSession!.clear()
+            this.weblisketSession!.clear();
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return Integer(TagSupport.EVAL_BODY_INCLUDE);
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.AUTHENTICATIONERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "invalidateSession()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "invalidateSession()", e);
+    
 
                                     }
                                 
@@ -180,22 +197,26 @@ this.timeout= this.weblisketSession!.getTimeout()
     var timeCreated: number = this.weblisketSession!.getCreationTime()!;
         
         
-
+;
+    
 
     var sessionTimout: number = this.role.getSessionTimeout()!;
         
         
-
+;
+    
 
     var calendar: Calendar = Calendar.getInstance()!;
         
         
-
+;
+    
 
     var timeFirst: number = calendar.getTimeInMillis() -sessionTimout;
         
         
-
+;
+    
 
                         if(timeFirst > timeCreated)
                         
@@ -208,14 +229,22 @@ this.timeout= this.weblisketSession!.getTimeout()
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("Session Is Old - Timeout: ")
-stringBuffer!.appendlong(sessionTimout)
-stringBuffer!.append(" Eval: ")
-stringBuffer!.appendlong(timeFirst)
-stringBuffer!.append(" > ")
-stringBuffer!.appendlong(timeCreated)
-logUtil!.put(stringBuffer!.toString(), this, "isSessionOld()")
+;
+    
+stringBuffer!.append("Session Is Old - Timeout: ");
+    
+stringBuffer!.appendlong(sessionTimout);
+    
+stringBuffer!.append(" Eval: ");
+    
+stringBuffer!.appendlong(timeFirst);
+    
+stringBuffer!.append(" > ");
+    
+stringBuffer!.appendlong(timeCreated);
+    
+logUtil!.put(stringBuffer!.toString(), this, "isSessionOld()");
+    
 
                                     }
                                 
@@ -236,7 +265,8 @@ logUtil!.put(stringBuffer!.toString(), this, "isSessionOld()")
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.AUTHENTICATION))
                         
                                     {
-                                    logUtil!.put("Role Is Not In Session", this, "isSessionOld()")
+                                    logUtil!.put("Role Is Not In Session", this, "isSessionOld()");
+    
 
                                     }
                                 
@@ -248,6 +278,8 @@ logUtil!.put(stringBuffer!.toString(), this, "isSessionOld()")
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.isRarelyUsedSession();
+
+                        ;
     
 }
 
@@ -263,27 +295,32 @@ logUtil!.put(stringBuffer!.toString(), this, "isSessionOld()")
     var timeCreated: number = this.weblisketSession!.getCreationTime()!;
         
         
-
+;
+    
 
     var lastAccess: number = this.weblisketSession!.getLastAccessedTime()!;
         
         
-
+;
+    
 
     var inactivityAllowed: number = role.getSessionInactivityTimeout()!;
         
         
-
+;
+    
 
     var calendar: Calendar = Calendar.getInstance()!;
         
         
-
+;
+    
 
     var timeFirst: number = calendar.getTimeInMillis() -lastAccess;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.AUTHENTICATION))
                         
@@ -292,14 +329,22 @@ logUtil!.put(stringBuffer!.toString(), this, "isSessionOld()")
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("Session Is Rarely Used - Timeout: ")
-stringBuffer!.appendlong(lastAccess)
-stringBuffer!.append(" Eval: ")
-stringBuffer!.appendlong(timeFirst)
-stringBuffer!.append(" > ")
-stringBuffer!.appendlong(inactivityAllowed)
-logUtil!.put(stringBuffer!.toString(), this, "isRarelyUsedSession()")
+;
+    
+stringBuffer!.append("Session Is Rarely Used - Timeout: ");
+    
+stringBuffer!.appendlong(lastAccess);
+    
+stringBuffer!.append(" Eval: ");
+    
+stringBuffer!.appendlong(timeFirst);
+    
+stringBuffer!.append(" > ");
+    
+stringBuffer!.appendlong(inactivityAllowed);
+    
+logUtil!.put(stringBuffer!.toString(), this, "isRarelyUsedSession()");
+    
 
                                     }
                                 
@@ -311,7 +356,8 @@ logUtil!.put(stringBuffer!.toString(), this, "isRarelyUsedSession()")
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.AUTHENTICATION))
                         
                                     {
-                                    logUtil!.put("Role Is Not In Session", this, "isRarelyUsedSession()")
+                                    logUtil!.put("Role Is Not In Session", this, "isRarelyUsedSession()");
+    
 
                                     }
                                 
@@ -334,26 +380,34 @@ logUtil!.put(stringBuffer!.toString(), this, "isRarelyUsedSession()")
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("Trying New login<p/>")
+;
+    
+stringBuffer!.append("Trying New login<p/>");
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to set valid role";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.AUTHENTICATIONERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "validRole()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "validRole()", e);
+    
 
                                     }
                                 
@@ -371,32 +425,42 @@ stringBuffer!.append("Trying New login<p/>")
     public invalidRole(): string{
 
         try {
-            this.weblisketSession!.setAuthenticated(false)
+            this.weblisketSession!.setAuthenticated(false);
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("Sorry your username and password is invalid on this page. ")
-stringBuffer!.append("Trying New login<p/>")
+;
+    
+stringBuffer!.append("Sorry your username and password is invalid on this page. ");
+    
+stringBuffer!.append("Trying New login<p/>");
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to set role invalid";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.AUTHENTICATIONERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "invalidRole()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "invalidRole()", e);
+    
 
                                     }
                                 
@@ -464,18 +528,21 @@ var roles = roles
     var basicUserRole: BasicUserRole = role.getBasicUserRole()!;
         
         
+;
+    
 
-
-    var basicUserRoleArray: any = {}[] = roles.toArray()!;
+    var basicUserRoleArray: any[] = roles.toArray()!;
         
         
-
+;
+    
 
     var size: number = basicUserRoleArray!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -490,7 +557,8 @@ index < size; index++)
     var mustBeOfRole: BasicUserRole = basicUserRoleArray[index]! as BasicUserRole;
         
         
-
+;
+    
 
                         if(basicUserRole!.equals(mustBeOfRole))
                         
@@ -503,14 +571,18 @@ index < size; index++)
     var userEntityInterface: UserEntityInterface = UserEntityFactory.getInstance()!;
         
         
-
+;
+    
 
     var userInterface: UserInterface = userEntityInterface!.getUser(sessionUserName)!;
         
         
+;
+    
 
+                        if(!userInterface!.isSessionValid();
 
-                        if(!userInterface!.isSessionValid())
+                        )
                         
                                     {
                                     
@@ -556,7 +628,8 @@ index < size; index++)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.AUTHENTICATION))
                         
                                     {
-                                    logUtil!.put("Role Is Not In Session", this, "isAuthenticationSessionValid()")
+                                    logUtil!.put("Role Is Not In Session", this, "isAuthenticationSessionValid()");
+    
 
                                     }
                                 
@@ -569,13 +642,16 @@ index < size; index++)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return Boolean.FALSE;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.AUTHENTICATIONERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "isAuthenticatedSessionValid()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "isAuthenticatedSessionValid()", e);
+    
 
                                     }
                                 
@@ -597,12 +673,14 @@ index < size; index++)
                                  && attemptsInteger!.toInt() > 0)
                         
                                     {
-                                    this.weblisketSession!.setAttempts(Integer(attemptsInteger!.toInt() +1))
+                                    this.weblisketSession!.setAttempts(Integer(attemptsInteger!.toInt() +1));
+    
 
                                     }
                                 
                         else {
-                            this.weblisketSession!.setAttempts(Integer(1))
+                            this.weblisketSession!.setAttempts(Integer(1));
+    
 
                         }
                             
@@ -618,7 +696,8 @@ var password = password
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.AUTHENTICATIONERROR))
                         
                                     {
-                                    logUtil!.put("Starting: " +userName, this, "processIfNewLogin()")
+                                    logUtil!.put("Starting: " +userName, this, "processIfNewLogin()");
+    
 
                                     }
                                 
@@ -632,13 +711,16 @@ var password = password
                                     {
                                     
     var login: string
-
+;
+    
 
     var userEntityInterface: UserEntityInterface = UserEntityFactory.getInstance()!;
         
         
-
-login= userEntityInterface!.login(userName, password)
+;
+    
+login= userEntityInterface!.login(userName, password);
+    
 
                         if(login.compareTo(GLOBALS2.LOGINSUCCESS) == 0)
                         
@@ -647,12 +729,14 @@ login= userEntityInterface!.login(userName, password)
     var userInterface: UserInterface = userEntityInterface!.getUser(userName)!;
         
         
-
+;
+    
 
                         if(userInterface!.isSessionValid())
                         
                                     {
-                                    this.weblisketSession!.setAttempts(Integer(0))
+                                    this.weblisketSession!.setAttempts(Integer(0));
+    
 
 
 
@@ -665,7 +749,8 @@ login= userEntityInterface!.login(userName, password)
 
                                     }
                                 
-this.nextAttempt()
+this.nextAttempt();
+    
 
 
 
@@ -675,20 +760,24 @@ this.nextAttempt()
 
                                     }
                                 
-this.nextAttempt()
+this.nextAttempt();
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return Boolean.FALSE;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.AUTHENTICATIONERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "processIfNewLogin()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "processIfNewLogin()", e);
+    
 
                                     }
                                 
@@ -710,7 +799,8 @@ this.nextAttempt()
                         if(BooleanUtil.getInstance()!.getFromString(timeout))
                         
                                     {
-                                    this.invalidateSession()
+                                    this.invalidateSession();
+    
 
 
 
@@ -723,7 +813,8 @@ this.nextAttempt()
 
 
                             {
-                            this.weblisketSession!.setTimeout(BooleanFactory.getInstance()!.TRUE_STRING)
+                            this.weblisketSession!.setTimeout(BooleanFactory.getInstance()!.TRUE_STRING);
+    
 
 
 
@@ -733,13 +824,16 @@ this.nextAttempt()
 
                             }
                     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.AUTHENTICATIONERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "processInvalidation()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "processInvalidation()", e);
+    
 
                                     }
                                 
@@ -761,50 +855,72 @@ this.nextAttempt()
     var calendar: Calendar = Calendar.getInstance()!;
         
         
-
+;
+    
 
     var timeCreated: number = this.weblisketSession!.getCreationTime()!;
         
         
-
+;
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
     var lastAccess: number = this.weblisketSession!.getLastAccessedTime()!;
         
         
-
-stringBuffer!.append("Time Since Last Access: " +(calendar.getTimeInMillis() -lastAccess) +"<br/>\n")
+;
+    
+stringBuffer!.append("Time Since Last Access: " +(calendar.getTimeInMillis() -lastAccess) +"<br/>\n");
+    
 
                         if(this.role != 
                                     null
                                 )
                         
                                     {
-                                    stringBuffer!.append("Auth: ")
-stringBuffer!.append(this.authenticated)
-stringBuffer!.append(" UserName: ")
-stringBuffer!.append(this.sessionUserName)
-stringBuffer!.append(" Role: ")
-stringBuffer!.append(this.role.toString())
-stringBuffer!.append("<br/>\n")
-stringBuffer!.append("Time Left: ")
-stringBuffer!.appendlong((role.getSessionTimeout() -(calendar.getTimeInMillis() -timeCreated)))
-stringBuffer!.append("<br/>\n")
-stringBuffer!.append("Inactivity Time Allowed: ")
-stringBuffer!.appendlong(role.getSessionTimeout())
-stringBuffer!.append("<br/>\n")
-stringBuffer!.append("Inactivity Time Allowed: ")
-stringBuffer!.appendlong(role.getSessionInactivityTimeout())
-stringBuffer!.append("<br/>\n")
+                                    stringBuffer!.append("Auth: ");
+    
+stringBuffer!.append(this.authenticated);
+    
+stringBuffer!.append(" UserName: ");
+    
+stringBuffer!.append(this.sessionUserName);
+    
+stringBuffer!.append(" Role: ");
+    
+stringBuffer!.append(this.role.toString());
+    
+stringBuffer!.append("<br/>\n");
+    
+stringBuffer!.append("Time Left: ");
+    
+stringBuffer!.appendlong((role.getSessionTimeout() -(calendar.getTimeInMillis() -timeCreated)));
+    
+stringBuffer!.append("<br/>\n");
+    
+stringBuffer!.append("Inactivity Time Allowed: ");
+    
+stringBuffer!.appendlong(role.getSessionTimeout());
+    
+stringBuffer!.append("<br/>\n");
+    
+stringBuffer!.append("Inactivity Time Allowed: ");
+    
+stringBuffer!.appendlong(role.getSessionInactivityTimeout());
+    
+stringBuffer!.append("<br/>\n");
+    
 
                                     }
                                 
                         else {
-                            stringBuffer!.append("Role Is Not Set<br/>\n")
+                            stringBuffer!.append("Role Is Not Set<br/>\n");
+    
 
                         }
                             
@@ -813,8 +929,12 @@ stringBuffer!.append("<br/>\n")
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
 

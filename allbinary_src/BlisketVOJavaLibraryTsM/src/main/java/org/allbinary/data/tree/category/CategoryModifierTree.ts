@@ -66,7 +66,8 @@ public constructor (categoryFactoryInterface: CategoryFactoryInterface)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
                         
                                     {
-                                    logUtil!.put(commonStrings!.START, this, "CategoryModifierTree(CategoryFactoryInterface categoryFactoryInterface)")
+                                    logUtil!.put(commonStrings!.START, this, "CategoryModifierTree(CategoryFactoryInterface categoryFactoryInterface)");
+    
 
                                     }
                                 
@@ -83,7 +84,8 @@ var newChildCategoryInterface = newChildCategoryInterface
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
                         
                                     {
-                                    logUtil!.put("Inserting", this, "insert()")
+                                    logUtil!.put("Inserting", this, "insert()");
+    
 
                                     }
                                 
@@ -91,36 +93,45 @@ var newChildCategoryInterface = newChildCategoryInterface
                         if(parentCategoryInterface!.isValid())
                         
                                     {
-                                    parentCategoryInterface!.addChild(newChildCategoryInterface)
+                                    parentCategoryInterface!.addChild(newChildCategoryInterface);
+    
 
     var directoryToBeCreatedAbPath: AbPath = new AbPath(newChildCategoryInterface!.getRootFilePath()!.toString() +newChildCategoryInterface!.getPath()!.toString());
         
         
-
-this.directory.create(directoryToBeCreatedAbPath)
+;
+    
+this.directory.create(directoryToBeCreatedAbPath);
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
                         
                                     {
-                                    logUtil!.put("Saving", this, "insert()")
+                                    logUtil!.put("Saving", this, "insert()");
+    
 
                                     }
                                 
-this.save(parentCategoryInterface)
-this.save(newChildCategoryInterface)
+this.save(parentCategoryInterface);
+    
+this.save(newChildCategoryInterface);
+    
 
                                     }
                                 
                              else 
                         if()
                         
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.FAILURE, this, "insert", e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, "insert", e);
+    
 
                                     }
                                 
@@ -139,29 +150,38 @@ var existingChildCategoryInterface = existingChildCategoryInterface
                         if(parentCategoryInterface!.isValid())
                         
                                     {
-                                    parentCategoryInterface!.addChild(existingChildCategoryInterface)
+                                    parentCategoryInterface!.addChild(existingChildCategoryInterface);
+    
 
     var directoryToBeDeletedAbPath: AbPath = new AbPath(existingChildCategoryInterface!.getRootFilePath()!.toString() +existingChildCategoryInterface!.getPath()!.toString());
         
         
-
-this.delete(existingChildCategoryInterface)
-parentCategoryInterface!.removeChild(existingChildCategoryInterface)
-this.save(parentCategoryInterface)
-this.directory.remove(directoryToBeDeletedAbPath)
+;
+    
+this.delete(existingChildCategoryInterface);
+    
+parentCategoryInterface!.removeChild(existingChildCategoryInterface);
+    
+this.save(parentCategoryInterface);
+    
+this.directory.remove(directoryToBeDeletedAbPath);
+    
 
                                     }
                                 
                              else 
                         if()
                         
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.FAILURE, this, commonStrings!.delete, e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, commonStrings!.delete, e);
+    
 
                                     }
                                 

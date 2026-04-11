@@ -55,7 +55,7 @@ public constructor (){
 
                 //@Throws(Error::class, LicensingException::class)
             
-    public getInstance(propertiesHashMap: HashMap<Any, Any>, pageContext: PageContext): any = {}{
+    public getInstance(propertiesHashMap: HashMap<any, any>, pageContext: PageContext): any = {}{
 var propertiesHashMap = propertiesHashMap
 var pageContext = pageContext
 
@@ -63,6 +63,8 @@ var pageContext = pageContext
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return HelperFactory.getInstance(FACTORYNAME, CLASSNAME, propertiesHashMap, pageContext);
+
+                        ;
     
 }
 

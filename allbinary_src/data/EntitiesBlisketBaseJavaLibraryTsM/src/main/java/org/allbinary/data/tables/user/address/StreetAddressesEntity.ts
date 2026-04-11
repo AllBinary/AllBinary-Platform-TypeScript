@@ -18,13 +18,16 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { Calendar } from "../../../../../../java/util/Calendar.js";
 
     
 import { HashMap } from "../../../../../../java/util/HashMap.js";
 
     
-import { Vector } from "../../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../../java/util/Vector.js";
 
     
 import { EntryData } from "../../../../../../org/allbinary/business/entry/EntryData.js";
@@ -88,7 +91,8 @@ public constructor (userName: string)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.userName= userName
+this.userName= userName;
+    
 }
 
 
@@ -97,28 +101,38 @@ var index = index
 
         try {
             
-    var whereHashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var whereHashMap: HashMap<any, any> = new HashMap<any, any>();
         
         
+;
+    
+whereHashMap!.put(UserData.USERNAME, userName);
+    
+whereHashMap!.put(StreetAddressData.ID, index.toString();
 
-whereHashMap!.put(UserData.USERNAME, userName)
-whereHashMap!.put(StreetAddressData.ID, index.toString() as String)
-super.deleteWhere(whereHashMap)
+                         as String);
+    
+super.deleteWhere(whereHashMap);
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.SUCCESS, this, "remove")
+                                    logUtil!.put(this.commonStrings!.SUCCESS, this, "remove");
+    
 
                                     }
                                 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.FAILURE, this, "remove", e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, "remove", e);
+    
 
                                     }
                                 
@@ -129,7 +143,8 @@ super.deleteWhere(whereHashMap)
 
     public add(address: StreetAddress){
 var address = address
-this.add(address, TableDataFactory.getInstance()!.INTEGER_MAX_VALUE_STRING)
+this.add(address, TableDataFactory.getInstance()!.INTEGER_MAX_VALUE_STRING);
+    
 }
 
 
@@ -142,46 +157,64 @@ var index = index
     var values: Vector = new Vector();
         
         
-
-values.add(index)
-values.add(userName)
-values.add(StringUtil.getInstance()!.EMPTY_STRING)
-values.add(address.getName())
-values.add(address.getStreet())
-values.add(address.getCity())
-values.add(address.getState())
-values.add(address.getCode())
-values.add(address.getCountry())
+;
+    
+values.add(index);
+    
+values.add(userName);
+    
+values.add(StringUtil.getInstance()!.EMPTY_STRING);
+    
+values.add(address.getName());
+    
+values.add(address.getStreet());
+    
+values.add(address.getCity());
+    
+values.add(address.getState());
+    
+values.add(address.getCode());
+    
+values.add(address.getCountry());
+    
 
     var calendar: Calendar = Calendar.getInstance()!;
         
         
-
+;
+    
 
     var time: string = new calendar.getTimeInMillis() as Long.
-                            toString().toCharArray().concatToString()
-                                ;
+                            toString();
         
         
-
-values.add(time)
-super.insert(values)
-this.setDefault(getLastId())
+;
+    
+values.add(time);
+    
+super.insert(values);
+    
+this.setDefault(getLastId());
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.SUCCESS, this, "add")
+                                    logUtil!.put(this.commonStrings!.SUCCESS, this, "add");
+    
 
                                     }
                                 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.FAILURE, this, "add", e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, "add", e);
+    
 
                                     }
                                 
@@ -195,34 +228,44 @@ var address = address
 
         try {
             
-    var addressHashMap: HashMap<Any, Any> = address.toHashMap()!;
+    var addressHashMap: HashMap<any, any> = address.toHashMap()!;
         
         
+;
+    
 
-
-    var whereKeyValuePairs: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var whereKeyValuePairs: HashMap<any, any> = new HashMap<any, any>();
         
         
-
-whereKeyValuePairs!.put(StreetAddressData.ID, address.getId())
-whereKeyValuePairs!.put(UserData.USERNAME, this.userName)
-super.updateWhere(whereKeyValuePairs, addressHashMap)
-this.setDefault(address.getId())
+;
+    
+whereKeyValuePairs!.put(StreetAddressData.ID, address.getId());
+    
+whereKeyValuePairs!.put(UserData.USERNAME, this.userName);
+    
+super.updateWhere(whereKeyValuePairs, addressHashMap);
+    
+this.setDefault(address.getId());
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.SUCCESS, this, "update")
+                                    logUtil!.put(this.commonStrings!.SUCCESS, this, "update");
+    
 
                                     }
                                 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.FAILURE, this, "add", e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, "add", e);
+    
 
                                     }
                                 
@@ -237,6 +280,8 @@ this.setDefault(address.getId())
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.getLargestIntegerInColumnWhere(StreetAddressData.ID, UserData.USERNAME, userName);
+
+                        ;
     
 }
 
@@ -248,23 +293,28 @@ this.setDefault(address.getId())
     var streetAddressVector: Vector = new Vector();
         
         
+;
+    
 
-
-    var keyAndValue: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var keyAndValue: HashMap<any, any> = new HashMap<any, any>();
         
         
-
-keyAndValue!.put(UserData.USERNAME, userName)
+;
+    
+keyAndValue!.put(UserData.USERNAME, userName);
+    
 
     var addressList: Vector = super.getRows(keyAndValue)!;
         
         
-
+;
+    
 
     var size: number = addressList!.length!;
         
         
-
+;
+    
 
 
 
@@ -276,22 +326,27 @@ keyAndValue!.put(UserData.USERNAME, userName)
 index < size; index++)
         {
 
-    var addressHashMap: HashMap<Any, Any> = addressList!.get(index) as HashMap<Any, Any>;
-        
-        
+    var addressHashMap: HashMap<any, any> = addressList!.get(index);
 
+                         as HashMap<any, any>;
+        
+        
+;
+    
 
     var streetAddress: StreetAddress = new StreetAddress(addressHashMap);
         
         
-
+;
+    
 
                         if(streetAddress != 
                                     null
                                 )
                         
                                     {
-                                    streetAddressVector!.add(streetAddress)
+                                    streetAddressVector!.add(streetAddress);
+    
 
                                     }
                                 
@@ -303,13 +358,16 @@ index < size; index++)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return streetAddressVector;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.FAILURE, this, commonStrings!.GET, e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, commonStrings!.GET, e);
+    
 
                                     }
                                 
@@ -329,17 +387,21 @@ var index = index
 
         try {
             
-    var keyAndValue: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var keyAndValue: HashMap<any, any> = new HashMap<any, any>();
         
         
+;
+    
+keyAndValue!.put(UserData.USERNAME, userName);
+    
+keyAndValue!.put(StreetAddressData.ID, index.toString());
+    
 
-keyAndValue!.put(UserData.USERNAME, userName)
-keyAndValue!.put(StreetAddressData.ID, index.toString())
-
-    var addressHashMap: HashMap<Any, Any> = super.getRow(keyAndValue)!;
+    var addressHashMap: HashMap<any, any> = super.getRow(keyAndValue)!;
         
         
-
+;
+    
 
                         if(addressHashMap != 
                                     null
@@ -365,13 +427,16 @@ keyAndValue!.put(StreetAddressData.ID, index.toString())
 
                         }
                             
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.FAILURE, this, commonStrings!.GET, e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, commonStrings!.GET, e);
+    
 
                                     }
                                 
@@ -390,18 +455,23 @@ keyAndValue!.put(StreetAddressData.ID, index.toString())
 
         try {
             
-    var addressHashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var addressHashMap: HashMap<any, any> = new HashMap<any, any>();
         
         
+;
+    
 
-
-    var updateKeyAndValue: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var updateKeyAndValue: HashMap<any, any> = new HashMap<any, any>();
         
         
-
-updateKeyAndValue!.put(StreetAddressData.DEFAULT, StreetAddressData.DEFAULT)
-updateKeyAndValue!.put(UserData.USERNAME, userName)
-addressHashMap= super.getRow(updateKeyAndValue)
+;
+    
+updateKeyAndValue!.put(StreetAddressData.DEFAULT, StreetAddressData.DEFAULT);
+    
+updateKeyAndValue!.put(UserData.USERNAME, userName);
+    
+addressHashMap= super.getRow(updateKeyAndValue);
+    
 
                         if(addressHashMap != 
                                     null
@@ -412,12 +482,14 @@ addressHashMap= super.getRow(updateKeyAndValue)
     var streetAddress: StreetAddress = new StreetAddress(addressHashMap);
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.SUCCESS, this, "getDefault")
+                                    logUtil!.put(this.commonStrings!.SUCCESS, this, "getDefault");
+    
 
                                     }
                                 
@@ -435,7 +507,8 @@ addressHashMap= super.getRow(updateKeyAndValue)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put("No Default Address Found", this, "getDefault")
+                                    logUtil!.put("No Default Address Found", this, "getDefault");
+    
 
                                     }
                                 
@@ -448,13 +521,16 @@ addressHashMap= super.getRow(updateKeyAndValue)
 
                         }
                             
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.FAILURE, this, "getDefault", e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, "getDefault", e);
+    
 
                                     }
                                 
@@ -474,51 +550,65 @@ var value = value
 
         try {
             
-    var updateKeyAndValue: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var updateKeyAndValue: HashMap<any, any> = new HashMap<any, any>();
         
         
+;
+    
 
-
-    var whereKeyAndValue: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var whereKeyAndValue: HashMap<any, any> = new HashMap<any, any>();
         
         
-
-whereKeyAndValue!.put(UserData.USERNAME, userName)
+;
+    
+whereKeyAndValue!.put(UserData.USERNAME, userName);
+    
 
     var streetAddress: StreetAddress = getDefault()!;
         
         
-
+;
+    
 
                         if(streetAddress != 
                                     null
                                 )
                         
                                     {
-                                    updateKeyAndValue!.put(StreetAddressData.DEFAULT, StringUtil.getInstance()!.EMPTY_STRING)
-whereKeyAndValue!.put(StreetAddressData.ID, streetAddress!.getId())
-super.updateWhere(whereKeyAndValue, updateKeyAndValue)
+                                    updateKeyAndValue!.put(StreetAddressData.DEFAULT, StringUtil.getInstance()!.EMPTY_STRING);
+    
+whereKeyAndValue!.put(StreetAddressData.ID, streetAddress!.getId());
+    
+super.updateWhere(whereKeyAndValue, updateKeyAndValue);
+    
 
                                     }
                                 
-whereKeyAndValue!.put(StreetAddressData.ID, value)
-updateKeyAndValue!.put(StreetAddressData.DEFAULT, StreetAddressData.DEFAULT)
-super.updateWhere(whereKeyAndValue, updateKeyAndValue)
+whereKeyAndValue!.put(StreetAddressData.ID, value);
+    
+updateKeyAndValue!.put(StreetAddressData.DEFAULT, StreetAddressData.DEFAULT);
+    
+super.updateWhere(whereKeyAndValue, updateKeyAndValue);
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.SUCCESS, this, "setDefault")
+                                    logUtil!.put(this.commonStrings!.SUCCESS, this, "setDefault");
+    
 
                                     }
                                 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.FAILURE, this, "setShippingAddress", e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, "setShippingAddress", e);
+    
 
                                     }
                                 
@@ -542,13 +632,17 @@ super.updateWhere(whereKeyAndValue, updateKeyAndValue)
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(this.getTableName())!.append(this.sqlStrings!.START)!.append(StreetAddressData.ID)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_AUTO_INCREMENT_NOT_NULL)!.append(UserData.USERNAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(StreetAddressData.DEFAULT)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(StreetAddressData.NAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(StreetAddressData.STREET)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(StreetAddressData.CITY)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(StreetAddressData.STATE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(StreetAddressData.CODE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(StreetAddressData.COUNTRY)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(EntryData.getInstance()!.TIMECREATED)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(this.sqlStrings!.PRIMARY_KEY)!.append(StreetAddressData.ID)!.append(this.sqlStrings!.END)
+;
+    
+stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(this.getTableName())!.append(this.sqlStrings!.START)!.append(StreetAddressData.ID)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_AUTO_INCREMENT_NOT_NULL)!.append(UserData.USERNAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(StreetAddressData.DEFAULT)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(StreetAddressData.NAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(StreetAddressData.STREET)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(StreetAddressData.CITY)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(StreetAddressData.STATE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(StreetAddressData.CODE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(StreetAddressData.COUNTRY)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(EntryData.getInstance()!.TIMECREATED)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(this.sqlStrings!.PRIMARY_KEY)!.append(StreetAddressData.ID)!.append(this.sqlStrings!.END);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 
@@ -559,6 +653,8 @@ stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(this.getTableName())
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.createTable(this.createTableStatement());
+
+                        ;
     
 }
 
@@ -569,6 +665,8 @@ stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(this.getTableName())
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.dropTable();
+
+                        ;
     
 }
 

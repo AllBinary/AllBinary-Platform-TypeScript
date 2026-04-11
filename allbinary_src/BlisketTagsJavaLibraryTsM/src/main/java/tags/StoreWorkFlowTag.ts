@@ -63,7 +63,8 @@ public constructor ()
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
+    
 
                                     }
                                 
@@ -72,8 +73,10 @@ public constructor ()
 
     public setName(value: string){
 var value = value
-this.viewName= value
-this.getPropertiesHashMap()!.put(TransformInfoData.getInstance()!.NAME, this.viewName)
+this.viewName= value;
+    
+this.getPropertiesHashMap()!.put(TransformInfoData.getInstance()!.NAME, this.viewName);
+    
 }
 
 
@@ -86,40 +89,51 @@ this.getPropertiesHashMap()!.put(TransformInfoData.getInstance()!.NAME, this.vie
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.START, this, commonStrings!.PROCESS)
+                                    logUtil!.put(this.commonStrings!.START, this, commonStrings!.PROCESS);
+    
 
                                     }
                                 
 
-    var helperClass: KClass<*> = this.getHelper()!.::class!;
+    var helperClass: Function = this.getHelper()!.constructor!;
         
         
-
+;
+    
 
     var method: Method = helperClass!.getMethod(commonStrings!.PROCESS, 
                             null)!;
         
         
-
+;
+    
 
     var result: Integer = method.invoke(this.getHelper(), 
-                            null) as Integer;
-        
-        
+                            null);
 
+                         as Integer;
+        
+        
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result.toInt();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e);
+    
 
                                     }
                                 
@@ -141,20 +155,27 @@ this.getPropertiesHashMap()!.put(TransformInfoData.getInstance()!.NAME, this.vie
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.START, this, "doStartTag()")
+                                    logUtil!.put(this.commonStrings!.START, this, "doStartTag()");
+    
 
                                     }
                                 
-this.setHelper()
+this.setHelper();
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.process();
+
+                        ;
     
-} catch(e: LicensingException)
+
+                //: 
+} catch(e) 
             {
-AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e);
+    
 
 
 
@@ -162,9 +183,12 @@ AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
                         return SKIP_BODY;
     
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
-AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
+    
 
 
 

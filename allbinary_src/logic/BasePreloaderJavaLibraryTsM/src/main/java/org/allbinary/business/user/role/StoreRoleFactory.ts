@@ -18,7 +18,10 @@
 
 
 
-import { Vector } from "../../../../../java/util/Vector.js";
+            import Vector from "@ohos.util.Vector";
+        
+
+//import { Vector } from "../../../../../java/util/Vector.js";
 
     
 
@@ -41,15 +44,15 @@ export class StoreRoleFactory
 }
 
 
-    private readonly roles: Vector<Any> = new Vector<Any>();
+    private readonly roles: Vector<any> = new Vector<any>();
         
         
 
-    private readonly subscriberRoles: Vector<Any> = new Vector<Any>();
+    private readonly subscriberRoles: Vector<any> = new Vector<any>();
         
         
 
-    private readonly wholesaleRoles: Vector<Any> = new Vector<Any>();
+    private readonly wholesaleRoles: Vector<any> = new Vector<any>();
         
         
 private constructor (){
@@ -59,16 +62,22 @@ private constructor (){
     var basicUserRoleFactory: BasicUserRoleFactory = BasicUserRoleFactory.getInstance()!;
         
         
-
-roles.add(basicUserRoleFactory!.CUSTOMER)
-roles.add(basicUserRoleFactory!.SUBSCRIBERCUSTOMER)
-roles.add(basicUserRoleFactory!.WHOLESALECUSTOMER)
-subscriberRoles!.add(basicUserRoleFactory!.SUBSCRIBERCUSTOMER)
-wholesaleRoles!.add(basicUserRoleFactory!.WHOLESALECUSTOMER)
+;
+    
+roles.add(basicUserRoleFactory!.CUSTOMER);
+    
+roles.add(basicUserRoleFactory!.SUBSCRIBERCUSTOMER);
+    
+roles.add(basicUserRoleFactory!.WHOLESALECUSTOMER);
+    
+subscriberRoles!.add(basicUserRoleFactory!.SUBSCRIBERCUSTOMER);
+    
+wholesaleRoles!.add(basicUserRoleFactory!.WHOLESALECUSTOMER);
+    
 }
 
 
-    public getRoles(): Vector<Any>{
+    public getRoles(): Vector<any>{
 
 
 
@@ -78,7 +87,7 @@ wholesaleRoles!.add(basicUserRoleFactory!.WHOLESALECUSTOMER)
 }
 
 
-    public getSubscriberRoles(): Vector<Any>{
+    public getSubscriberRoles(): Vector<any>{
 
 
 
@@ -88,7 +97,7 @@ wholesaleRoles!.add(basicUserRoleFactory!.WHOLESALECUSTOMER)
 }
 
 
-    public getWholesaleRoles(): Vector<Any>{
+    public getWholesaleRoles(): Vector<any>{
 
 
 

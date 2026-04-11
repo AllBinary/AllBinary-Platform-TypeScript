@@ -62,7 +62,9 @@ export class UserName
     public static getValidationInfo(aUserName: string): string{
 var aUserName = aUserName
 
-                        if(!StringValidationUtil.getInstance()!.isValidRequired(aUserName, 5, UserData.MAXLEN))
+                        if(!StringValidationUtil.getInstance()!.isValidRequired(aUserName, 5, UserData.MAXLEN);
+
+                        )
                         
                                     {
                                     
@@ -93,11 +95,14 @@ private constructor (){
             super();
             }
 
-public constructor (hashMap: HashMap<Any, Any>){
+public constructor (hashMap: HashMap<any, any>){
 
             super();
             var hashMap = hashMap
-this.userName= hashMap!.get(UserData.USERNAME) as String
+this.userName= hashMap!.get(UserData.USERNAME);
+
+                         as String;
+    
 }
 
 
@@ -109,14 +114,19 @@ this.userName= hashMap!.get(UserData.USERNAME) as String
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.isValid(userName);
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put("Failed to validate form", this, "isUserNameValid()", e)
+                                    logUtil!.put("Failed to validate form", this, "isUserNameValid()", e);
+    
 
                                     }
                                 
@@ -147,40 +157,48 @@ var aUserName = aUserName
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
+;
+    
 
         try {
             
     var booleanFactory: BooleanFactory = BooleanFactory.getInstance()!;
         
         
-
+;
+    
 
     var valid: Boolean = booleanFactory!.TRUE;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VALIDATION))
                         
                                     {
-                                    logUtil!.put("UserName: " +aUserName, this, commonStrings!.IS_VALID)
+                                    logUtil!.put("UserName: " +aUserName, this, commonStrings!.IS_VALID);
+    
 
                                     }
                                 
 
-                        if(!StringValidationUtil.getInstance()!.isValidRequired(aUserName, 5, UserData.MAXLEN))
+                        if(!StringValidationUtil.getInstance()!.isValidRequired(aUserName, 5, UserData.MAXLEN);
+
+                        )
                         
                                     {
                                     
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VALIDATION))
                         
                                     {
-                                    logUtil!.put("UserName is invalid", this, commonStrings!.IS_VALID)
+                                    logUtil!.put("UserName is invalid", this, commonStrings!.IS_VALID);
+    
 
                                     }
                                 
-valid= booleanFactory!.FALSE
+valid= booleanFactory!.FALSE;
+    
 
                                     }
                                 
@@ -190,13 +208,16 @@ valid= booleanFactory!.FALSE
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return valid;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put("Failed to validate form", this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put("Failed to validate form", this, commonStrings!.IS_VALID, e);
+    
 
                                     }
                                 

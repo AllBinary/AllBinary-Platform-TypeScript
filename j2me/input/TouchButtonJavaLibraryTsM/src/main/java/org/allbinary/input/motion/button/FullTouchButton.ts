@@ -82,24 +82,34 @@ var yBorder = yBorder
     var x: number = this.rawRectangle!.getWidth() *cellPositionP!.getColumn();
         
         
-
+;
+    
 
     var y: number = this.rawRectangle!.getHeight() *cellPositionP!.getRow();
         
         
-
-this.rectangleP= Rectangle(PointFactory.getInstance()!.getInstance(x, y), this.rawRectangle!.getWidth() +(2 *xBorder), this.rawRectangle!.getHeight() +(2 *yBorder))
+;
+    
+this.rectangleP= Rectangle(PointFactory.getInstance()!.getInstance(x, y), this.rawRectangle!.getWidth() +(2 *xBorder), this.rawRectangle!.getHeight() +(2 *yBorder));
+    
 
     var point: GPoint = this.rectangleP!.getPoint()!;
         
         
+;
+    
+this.animationX= point.getX() +xBorder;
+    
+this.animationY= point.getY() +yBorder;
+    
+this.hintAnimationY= animationY -this.rectangleP!.getHeight() shr 1;
+    
 
-this.animationX= point.getX() +xBorder
-this.animationY= point.getY() +yBorder
-this.hintAnimationY= animationY -this.rectangleP!.getHeight() shr 1
-} catch(e: Exception)
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "updateRectangle", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "updateRectangle", e);
+    
 }
 
 }

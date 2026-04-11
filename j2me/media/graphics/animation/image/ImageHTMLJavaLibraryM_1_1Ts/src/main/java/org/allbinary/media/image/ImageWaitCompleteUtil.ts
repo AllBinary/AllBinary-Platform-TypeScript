@@ -18,7 +18,10 @@
 
 
 
-import { Hashtable } from "../../../../java/util/Hashtable.js";
+            import Hashtable from "@ohos.util.HashMap";
+        
+
+//import { Hashtable } from "../../../../java/util/Hashtable.js";
 
     
 import { Image } from "../../../../javax/microedition/lcdui/Image.js";
@@ -75,8 +78,10 @@ public constructor (){
     public waitFor(image: Image, name: string){
     //var image = image
     //var name = name
-this.timeDelayHelper!.setStartTime()
-this.waitFor(image, name, this.timeDelayHelper)
+this.timeDelayHelper!.setStartTime();
+    
+this.waitFor(image, name, this.timeDelayHelper);
+    
 }
 
 
@@ -108,14 +113,20 @@ this.waitFor(image, name, this.timeDelayHelper)
     var playnImage: PlaynImage = image as PlaynImage;
         
         
+;
+    
 
+    var playnCoreImage: playn.core.Image = playnImage!.getImage();
 
-    var playnCoreImage: playn.core.Image = playnImage!.getImage() as playn.core.Image;
+                         as playn.core.Image;
         
         
+;
+    
 
+        while(!playnCoreImage!.isReady();
 
-        while(!playnCoreImage!.isReady() || playnCoreImage!.width() +playnCoreImage!.height() <= 0)
+                         || playnCoreImage!.width() +playnCoreImage!.height() <= 0)
         {
 
                         if(timeDelayHelper!.isTime())
@@ -131,10 +142,13 @@ this.waitFor(image, name, this.timeDelayHelper)
 }
 
 
-                        if(!image.isReady())
+                        if(!image.isReady();
+
+                        )
                         
                                     {
-                                    image.init(image.getImage())
+                                    image.init(image.getImage());
+    
 
                                     }
                                 
@@ -144,24 +158,29 @@ this.waitFor(image, name, this.timeDelayHelper)
                 //@Throws(Error::class)
             
     public waitForAll(){
-this.allTimeDelayHelper!.setStartTime()
+this.allTimeDelayHelper!.setStartTime();
+    
 
-    var hashtable: Hashtable<Any, Any> = GameFeatureImageCacheFactory.getInstance()!.getHashtableP()!;
+    var hashtable: Hashtable<any, any> = GameFeatureImageCacheFactory.getInstance()!.getHashtableP()!;
         
         
+;
+    
 
-
-    var objectArray: any = {}[] = HashtableUtil.getInstance()!.getKeysAsArray(hashtable)!;
+    var objectArray: any[] = HashtableUtil.getInstance()!.getKeysAsArray(hashtable)!;
         
         
-
+;
+    
 
     var size: number = objectArray!.length
                 ;
         
         
-
-PreLogUtil.put("Image Total: " +size, this, "waitForAll")
+;
+    
+PreLogUtil.put("Image Total: " +size, this, "waitForAll");
+    
 
 
 
@@ -172,7 +191,10 @@ PreLogUtil.put("Image Total: " +size, this, "waitForAll")
         
 index < size; index++)
         {
-this.waitFor(hashtable.get(objectArray[index]!) as Image, objectArray[index]! as String, this.allTimeDelayHelper)
+this.waitFor(hashtable.get(objectArray[index]!);
+
+                         as Image, objectArray[index]! as String, this.allTimeDelayHelper);
+    
 }
 
 }

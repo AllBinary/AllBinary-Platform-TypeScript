@@ -89,23 +89,28 @@ public constructor (inputStream: InputStream){
     var audioInputStream: AudioInputStream = new AudioInputStream(ByteArrayInputStream(NullUtil.getInstance()!.NULL_BYTE_ARRAY), NullAudioFormat.NULL_AUDIO_FORMAT, 0);
         
         
-
+;
+    
 
     var clip: Clip = new NullClip();
         
         
-
+;
+    
 
         try {
-            audioInputStream= AudioSystem.getAudioInputStream(inputStream)
-clip= this.create(audioInputStream)
+            audioInputStream= AudioSystem.getAudioInputStream(inputStream);
+    
+clip= this.create(audioInputStream);
+    
 
                         if(clip == 
                                     null
                                 )
                         
                                     {
-                                    logUtil!.put("Clip was null", this, commonStrings!.CONSTRUCTOR, Error())
+                                    logUtil!.put("Clip was null", this, commonStrings!.CONSTRUCTOR, Error());
+    
 
 
 
@@ -113,13 +118,18 @@ clip= this.create(audioInputStream)
 
                                     }
                                 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e);
+    
 }
 
-this.audioInputStream= audioInputStream
-this.clip= clip
+this.audioInputStream= audioInputStream;
+    
+this.clip= clip;
+    
 }
 
 
@@ -130,25 +140,33 @@ MusicThreadPool.getInstance()!.runTask(object: ARunnable()
     public run(){
 
         try {
-            close2()
-} catch(e: Exception)
+            close2();
+    
+
+                //: 
+} catch(e) 
             {
-PreLogUtil.put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e)
+PreLogUtil.putOE(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e);
+    
 }
 
 }
 
                                 }
-                            )
+                            );
+    
 }
 
 
                 //@Throws(Error::class)
             
     close2(){
-this.clip.drain()
-this.clip.flush()
-this.clip.close()
+this.clip.drain();
+    
+this.clip.flush();
+    
+this.clip.close();
+    
 }
 
 
@@ -172,26 +190,35 @@ MusicThreadPool.getInstance()!.runTask(object: ARunnable()
     public run(){
 
         try {
-            start2()
-} catch(e: Exception)
+            start2();
+    
+
+                //: 
+} catch(e) 
             {
-PreLogUtil.put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e)
+PreLogUtil.putOE(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e);
+    
 }
 
 }
 
                                 }
-                            )
+                            );
+    
 }
 
 
                 //@Throws(Error::class)
             
     start2(){
-this.clip.setFramePosition(0)
-this.clip.loop(this.getLoopCount())
-this.clip.start()
-super.start()
+this.clip.setFramePosition(0);
+    
+this.clip.loop(this.getLoopCount());
+    
+this.clip.start();
+    
+super.start();
+    
 }
 
 
@@ -203,9 +230,12 @@ var audioInputStream = audioInputStream
     var clip: Clip = AudioSystem.getClip()!;
         
         
-
-clip.addLineListener(this)
-clip.open(audioInputStream)
+;
+    
+clip.addLineListener(this);
+    
+clip.open(audioInputStream);
+    
 
 
 
@@ -225,24 +255,31 @@ MusicThreadPool.getInstance()!.runTask(object: ARunnable()
     public run(){
 
         try {
-            stop2()
-} catch(e: Exception)
+            stop2();
+    
+
+                //: 
+} catch(e) 
             {
-PreLogUtil.put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e)
+PreLogUtil.putOE(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e);
+    
 }
 
 }
 
                                 }
-                            )
+                            );
+    
 }
 
 
                 //@Throws(Error::class)
             
     stop2(){
-clip.stop()
-super.stop()
+clip.stop();
+    
+super.stop();
+    
 }
 
 
@@ -262,7 +299,7 @@ var controlType = controlType
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new Array(0);
+                        return [];
     
 }
 
@@ -270,21 +307,27 @@ var controlType = controlType
     public setVolume(leftVolume: number, rightVolume: number){
     //var leftVolume = leftVolume
     //var rightVolume = rightVolume
-this.setVolume((leftVolume.toFloat()) /100.0f)
+this.setVolume((leftVolume.toFloat()) /100.0f);
+    
 }
 
 
     getVolume(): number{
 
-    var masterGainFloatControl: FloatControl = clip.getControl(FloatControl.Type.MASTER_GAIN) as FloatControl;
-        
-        
+    var masterGainFloatControl: FloatControl = clip.getControl(FloatControl.Type.MASTER_GAIN);
 
+                         as FloatControl;
+        
+        
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Math.pow(10f, masterGainFloatControl!.getValue() /20f).toFloat();
+                        return Math.pow(10f, masterGainFloatControl!.getValue() /20f);
+
+                        .toFloat();
     
 }
 
@@ -303,11 +346,17 @@ this.setVolume((leftVolume.toFloat()) /100.0f)
                                     }
                                 
 
-    var masterGainFloatControl: FloatControl = clip.getControl(FloatControl.Type.MASTER_GAIN) as FloatControl;
-        
-        
+    var masterGainFloatControl: FloatControl = clip.getControl(FloatControl.Type.MASTER_GAIN);
 
-masterGainFloatControl!.setValue(20f *Math.log10(volume).toFloat())
+                         as FloatControl;
+        
+        
+;
+    
+masterGainFloatControl!.setValue(20f *Math.log10(volume);
+
+                        .toFloat());
+    
 }
 
 
@@ -331,7 +380,8 @@ var event = event
     var size: number = this.listenersList!.size()!;
         
         
-
+;
+    
 
 
 
@@ -343,12 +393,16 @@ var event = event
 index < size; index++)
         {
 
-    var listener: PlayerListener = this.listenersList!.get(size) as PlayerListener;
-        
-        
+    var listener: PlayerListener = this.listenersList!.get(size);
 
+                         as PlayerListener;
+        
+        
+;
+    
 listener.playerUpdate(this, PlayerListener.END_OF_MEDIA, 
-                            null)
+                            null);
+    
 }
 
 

@@ -21,6 +21,9 @@
 import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings.js";
 
     
+import { PreLogUtil } from "../../../../../org/allbinary/logic/communication/log/PreLogUtil.js";
+
+    
 
 export class ForcedLogUtil
             extends Object
@@ -36,9 +39,12 @@ var anyType = anyType
 
 
                             throw Error(message)
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-PreLogUtil.put(CommonStrings.getInstance()!.EXCEPTION, anyType, "log", e)
+PreLogUtil.putOE(CommonStrings.getInstance()!.EXCEPTION, anyType, "log", e);
+    
 }
 
 }

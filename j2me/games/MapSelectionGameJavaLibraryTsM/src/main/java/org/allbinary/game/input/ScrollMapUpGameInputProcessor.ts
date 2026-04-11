@@ -45,7 +45,8 @@ public constructor (scrollMapPlayerGameInput: ScrollMapPlayerGameInput)
     public process(allbinaryLayerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
 var allbinaryLayerManager = allbinaryLayerManager
 var gameKeyEvent = gameKeyEvent
-this.scrollMapPlayerGameInput!.up()
+this.scrollMapPlayerGameInput!.up();
+    
 }
 
 

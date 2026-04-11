@@ -45,8 +45,10 @@ public constructor (clientInformationFactory: ClientInformationFactory){
 
             super();
                 //var clientInformationFactory = clientInformationFactory
-this.preInit()
-this.abeClientInformation= clientInformationFactory!.getInstance()
+this.preInit();
+    
+this.abeClientInformation= clientInformationFactory!.getInstance();
+    
 }
 
 
@@ -60,29 +62,40 @@ var isProgress = isProgress
     var processor: Processor = MidletExitProcessorFactory.getInstance()!.getInstance(this)!;
         
         
-
+;
+    
 
         try {
             
     var primaryThreadPool: ThreadPool = PrimaryThreadPool.getInstance()!;
         
         
-
+;
+    
 
     var runnable: Runnable = new ExitRunnable(this, processor, isProgress);
         
         
+;
+    
+primaryThreadPool!.runTask(runnable);
+    
 
-primaryThreadPool!.runTask(runnable)
-} catch(e: Exception)
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "exit", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "exit", e);
+    
 
         try {
-            processor.process()
-} catch(e2: Exception)
+            processor.process();
+    
+
+                //: 
+} catch(e2) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "exit", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "exit", e);
+    
 }
 
 }

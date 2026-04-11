@@ -58,7 +58,8 @@ var form = form
 
                             //For kotlin this is before the body of the constructor.
                     
-this.gameCommandCanvas= gameCommandCanvas
+this.gameCommandCanvas= gameCommandCanvas;
+    
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
@@ -67,19 +68,25 @@ this.gameCommandCanvas= gameCommandCanvas
 var gameKeyEvent = gameKeyEvent
 
         try {
-            super.onPressGameKeyEvent(gameKeyEvent)
+            super.onPressGameKeyEvent(gameKeyEvent);
+    
 
                         if(timeHelper!.isTime())
                         
                                     {
-                                    this.processInput()
-this.gameCommandCanvas!.repaintBehavior!.onChangeRepaint(this.getCanvas())
+                                    this.processInput();
+    
+this.gameCommandCanvas!.repaintBehavior!.onChangeRepaint(this.getCanvas());
+    
 
                                     }
                                 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, gameInputStrings!.ON_PRESS_GAME_KEY, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, gameInputStrings!.ON_PRESS_GAME_KEY, e);
+    
 }
 
 }
@@ -90,19 +97,25 @@ logUtil!.put(commonStrings!.EXCEPTION, this, gameInputStrings!.ON_PRESS_GAME_KEY
 var gameKeyEvent = gameKeyEvent
 
         try {
-            super.onDownGameKeyEvent(gameKeyEvent)
+            super.onDownGameKeyEvent(gameKeyEvent);
+    
 
                         if(this.timeHelper!.isTime())
                         
                                     {
-                                    this.processInput()
-this.gameCommandCanvas!.repaintBehavior!.onChangeRepaint(this.getCanvas())
+                                    this.processInput();
+    
+this.gameCommandCanvas!.repaintBehavior!.onChangeRepaint(this.getCanvas());
+    
 
                                     }
                                 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, gameInputStrings!.ON_DOWN_GAME_KEY, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, gameInputStrings!.ON_DOWN_GAME_KEY, e);
+    
 }
 
 }
@@ -113,19 +126,25 @@ logUtil!.put(commonStrings!.EXCEPTION, this, gameInputStrings!.ON_DOWN_GAME_KEY,
 var gameKeyEvent = gameKeyEvent
 
         try {
-            super.onUpGameKeyEvent(gameKeyEvent)
+            super.onUpGameKeyEvent(gameKeyEvent);
+    
 
                         if(timeHelper!.isTime())
                         
                                     {
-                                    this.processInput()
-this.gameCommandCanvas!.repaintBehavior!.onChangeRepaint(this.getCanvas())
+                                    this.processInput();
+    
+this.gameCommandCanvas!.repaintBehavior!.onChangeRepaint(this.getCanvas());
+    
 
                                     }
                                 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, gameInputStrings!.ON_UP_GAME_KEY, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, gameInputStrings!.ON_UP_GAME_KEY, e);
+    
 }
 
 }
@@ -135,19 +154,25 @@ logUtil!.put(commonStrings!.EXCEPTION, this, gameInputStrings!.ON_UP_GAME_KEY, e
 var motionGestureEvent = motionGestureEvent
 
         try {
-            super.onMotionGestureEvent(motionGestureEvent)
+            super.onMotionGestureEvent(motionGestureEvent);
+    
 
                         if(timeHelper!.isTime())
                         
                                     {
-                                    this.processInput()
-this.gameCommandCanvas!.repaintBehavior!.onChangeRepaint(this.getCanvas())
+                                    this.processInput();
+    
+this.gameCommandCanvas!.repaintBehavior!.onChangeRepaint(this.getCanvas());
+    
 
                                     }
                                 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "onMotionGestureEvent", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "onMotionGestureEvent", e);
+    
 }
 
 }

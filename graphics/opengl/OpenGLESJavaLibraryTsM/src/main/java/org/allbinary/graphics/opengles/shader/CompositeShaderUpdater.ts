@@ -56,20 +56,20 @@ export class CompositeShaderUpdater extends ShaderUpdater {
         
         
 
-    public readonly uniformBlockHandleArray: IntArray
+    public readonly uniformBlockHandleArray: number[]
 
     public readonly uniformBlockArray: string[]
 
-    public readonly uniformHandleArray: IntArray
+    public readonly uniformHandleArray: number[]
 
     public readonly uniformArray: string[]
 
-    public readonly attributeHandleArray: IntArray
+    public readonly attributeHandleArray: number[]
 
     public readonly attributeArray: string[]
 public constructor (uniformBlockArray: string[], uniformArray: string[], attributeArray: string[])                        
 
-                            : this(uniformBlockArray, uniformArray, attributeArray, IntArray(attributeArray!.length)){
+                            : this(uniformBlockArray, uniformArray, attributeArray, new Array(attributeArray!.length)){
 
             super();
                 //var uniformBlockArray = uniformBlockArray
@@ -81,19 +81,25 @@ public constructor (uniformBlockArray: string[], uniformArray: string[], attribu
                     
 }
 
-public constructor (uniformBlockArray: string[], uniformArray: string[], attributeArray: string[], attributeHandleArray: IntArray){
+public constructor (uniformBlockArray: string[], uniformArray: string[], attributeArray: string[], attributeHandleArray: number[]){
 
             super();
                 //var uniformBlockArray = uniformBlockArray
     //var uniformArray = uniformArray
     //var attributeArray = attributeArray
     //var attributeHandleArray = attributeHandleArray
-this.uniformBlockArray= uniformBlockArray
-this.uniformBlockHandleArray= IntArray(this.uniformBlockArray!.length)
-this.uniformArray= uniformArray
-this.uniformHandleArray= IntArray(this.uniformArray!.length)
-this.attributeArray= attributeArray
-this.attributeHandleArray= attributeHandleArray
+this.uniformBlockArray= uniformBlockArray;
+    
+this.uniformBlockHandleArray= new Array(this.uniformBlockArray!.length);
+    
+this.uniformArray= uniformArray;
+    
+this.uniformHandleArray= new Array(this.uniformArray!.length);
+    
+this.attributeArray= attributeArray;
+    
+this.attributeHandleArray= attributeHandleArray;
+    
 }
 
 

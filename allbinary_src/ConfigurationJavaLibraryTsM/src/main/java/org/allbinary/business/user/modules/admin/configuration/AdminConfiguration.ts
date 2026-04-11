@@ -73,34 +73,42 @@ export class AdminConfiguration
 public constructor (){
 
             super();
-            logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
-this.contextConfigurationInterface= ContextConfigurationInterfaceFactory.getInstance()!.getInstance(AdminConfigurationData.CONTEXTNAME)
+            logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
+    
+this.contextConfigurationInterface= ContextConfigurationInterfaceFactory.getInstance()!.getInstance(AdminConfigurationData.CONTEXTNAME);
+    
 }
 
 public constructor (request: HttpServletRequest){
 
             super();
             var request = request
-logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
+logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
+    
 this.getFormData(RequestParams(request).
-                            toHashMap())
+                            toHashMap());
+    
 }
 
-public constructor (storeHashMap: HashMap<Any, Any>){
+public constructor (storeHashMap: HashMap<any, any>){
 
             super();
             var storeHashMap = storeHashMap
-logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
-this.getFormData(storeHashMap)
+logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
+    
+this.getFormData(storeHashMap);
+    
 }
 
 
                 //@Throws(Error::class)
             
-    getFormData(storeHashMap: HashMap<Any, Any>){
+    getFormData(storeHashMap: HashMap<any, any>){
 var storeHashMap = storeHashMap
-logUtil!.put(commonStrings!.START, this, "getFormData")
-this.setContextConfigurationInterface(ContextConfiguration(storeHashMap) as ContextConfigurationInterface)
+logUtil!.put(commonStrings!.START, this, "getFormData");
+    
+this.setContextConfigurationInterface(ContextConfiguration(storeHashMap) as ContextConfigurationInterface);
+    
 }
 
 
@@ -112,13 +120,16 @@ this.setContextConfigurationInterface(ContextConfiguration(storeHashMap) as Cont
     var contextConfigurationDomDocumentMapping: ContextConfigurationDomDocumentMapping = new ContextConfigurationDomDocumentMapping(this.getContextConfigurationInterface());
         
         
-
+;
+    
 
     var cryptFileWriter: CryptFileWriter = new CryptFileWriter(ContextConfigurationData.getInstance()!.UNCRYPTED_EXTENSION, ContextConfigurationData.getInstance()!.ENCRYPTED_EXTENSION);
         
         
-
-cryptFileWriter!.write(ContextConfigurationPathUtil.getAbPath(AdminConfigurationData.CONTEXTNAME), contextConfigurationDomDocumentMapping!.toXmlDoc())
+;
+    
+cryptFileWriter!.write(ContextConfigurationPathUtil.getAbPath(AdminConfigurationData.CONTEXTNAME), contextConfigurationDomDocumentMapping!.toXmlDoc());
+    
 }
 
 
@@ -134,7 +145,8 @@ cryptFileWriter!.write(ContextConfigurationPathUtil.getAbPath(AdminConfiguration
 
     public setContextConfigurationInterface(contextConfigurationInterface: ContextConfigurationInterface){
 var contextConfigurationInterface = contextConfigurationInterface
-this.contextConfigurationInterface= contextConfigurationInterface
+this.contextConfigurationInterface= contextConfigurationInterface;
+    
 }
 
 

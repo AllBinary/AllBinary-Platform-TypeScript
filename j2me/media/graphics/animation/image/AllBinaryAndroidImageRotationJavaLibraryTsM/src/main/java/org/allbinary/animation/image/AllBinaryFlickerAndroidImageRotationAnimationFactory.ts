@@ -114,9 +114,12 @@ public constructor (image: Image, width: number, height: number, angleIncrement:
     //var height = height
     //var angleIncrement = angleIncrement
     //var animationBehaviorFactory = animationBehaviorFactory
-this.setImage(image)
-this.angleIncrement= angleIncrement
-this.animationBehaviorFactory= animationBehaviorFactory
+this.setImage(image);
+    
+this.angleIncrement= angleIncrement;
+    
+this.animationBehaviorFactory= animationBehaviorFactory;
+    
 }
 
 
@@ -128,7 +131,8 @@ this.animationBehaviorFactory= animationBehaviorFactory
     var image: Image = ImageCopyUtil.getInstance()!.createImage(this.getImage())!;
         
         
-
+;
+    
 
 
 
@@ -150,7 +154,8 @@ this.animationBehaviorFactory= animationBehaviorFactory
 
     setImage(image: Image){
 var image = image
-this.image= image
+this.image= image;
+    
 }
 
 

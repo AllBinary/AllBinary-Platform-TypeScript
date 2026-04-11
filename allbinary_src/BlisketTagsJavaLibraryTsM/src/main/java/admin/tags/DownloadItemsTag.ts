@@ -39,8 +39,10 @@ export class DownloadItemsTag extends TableTag {
 public constructor (){
 
             super();
-            this.setTagHelperFactory(DownloadItemsHelperFactory())
-this.setTagRequestHelperFactory(DownloadItemsRequestHelperFactory())
+            this.setTagHelperFactory(DownloadItemsHelperFactory());
+    
+this.setTagRequestHelperFactory(DownloadItemsRequestHelperFactory());
+    
 }
 
 
@@ -67,9 +69,12 @@ this.setTagRequestHelperFactory(DownloadItemsRequestHelperFactory())
     var parentTag: Tag = this.getParent()!;
         
         
-
-ParentInventoryTagHelper.getInstance()!.isValid(this, parentTag)
-this.getPropertiesHashMap()!.put(AbTagData.PARENT, parentTag)
+;
+    
+ParentInventoryTagHelper.getInstance()!.isValid(this, parentTag);
+    
+this.getPropertiesHashMap()!.put(AbTagData.PARENT, parentTag);
+    
 
                                     }
                                 
@@ -78,6 +83,8 @@ this.getPropertiesHashMap()!.put(AbTagData.PARENT, parentTag)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.doStartTag();
+
+                        ;
     
 
                                     }
@@ -91,9 +98,12 @@ this.getPropertiesHashMap()!.put(AbTagData.PARENT, parentTag)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return SKIP_BODY;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
+    
 
 
 

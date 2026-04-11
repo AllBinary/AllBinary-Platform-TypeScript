@@ -79,9 +79,13 @@ var args = args
     var javaHelpUtil: JavaHelpUtil = JavaHelpUtil.getInstance()!;
         
         
+;
+    
+javaHelpUtil!.show(javaHelpUtil!.getHelpSet("G:/mnt/bc/mydev/working/automation/InputAutomationJavaApplication/AllBinaryInputAutomationHelp/AllBinaryInputAutomation.hs"));
+    
 
-javaHelpUtil!.show(javaHelpUtil!.getHelpSet("G:/mnt/bc/mydev/working/automation/InputAutomationJavaApplication/AllBinaryInputAutomationHelp/AllBinaryInputAutomation.hs"))
-} catch(e: Exception)
+                //: 
+} catch(e) 
             {
 }
 
@@ -123,21 +127,28 @@ var filePath = filePath
                             toURI()!;
         
         
-
+;
+    
 
     var helpSetURL: URL = helpSetURI!.toURL()!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return getHelpSet(helpSetURL);
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, getInstance(), "set", e)
+logUtil!.put(this.commonStrings!.EXCEPTION, getInstance(), "set", e);
+    
 
 
 
@@ -160,9 +171,12 @@ var url = url
                         return HelpSet(
                             null, url);
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, getInstance(), "set", e)
+logUtil!.put(this.commonStrings!.EXCEPTION, getInstance(), "set", e);
+    
 
 
 
@@ -182,15 +196,23 @@ var helpSet = helpSet
     var helpBroker: HelpBroker = helpSet!.createHelpBroker()!;
         
         
-
-helpBroker!.setLocation(point)
-helpBroker!.setSize(dimension)
+;
+    
+helpBroker!.setLocation(point);
+    
+helpBroker!.setSize(dimension);
+    
 CSH.DisplayHelpFromSource(helpBroker).
-                            actionPerformed(contextSensitiveHelpActionEvent)
-logUtil!.put("CSH Action", getInstance(), "show")
-} catch(e: Exception)
+                            actionPerformed(contextSensitiveHelpActionEvent);
+    
+logUtil!.put("CSH Action", getInstance(), "show");
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, getInstance(), "show", e)
+logUtil!.put(this.commonStrings!.EXCEPTION, getInstance(), "show", e);
+    
 }
 
 }

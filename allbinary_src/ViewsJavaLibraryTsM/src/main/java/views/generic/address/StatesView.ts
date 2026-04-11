@@ -76,17 +76,20 @@ var document = document
     var node: Node = document.createElement(StreetAddressData.STATES)!;
         
         
-
+;
+    
 
     var statesFile: string = URLGLOBALS.getMainPath() +FREEBLISKET_PATH_GLOBALS.getInstance()!.LINEDATAPATH +"states.txt";
         
         
-
+;
+    
 
     var lineReader: LineReader = new LineReader(statesFile);
         
         
-
+;
+    
 
         while(lineReader!.hasNext())
         {
@@ -94,8 +97,10 @@ var document = document
     var option: string = lineReader!.next()!;
         
         
-
-node.appendChild(ModDomHelper.createNameValueNodes(document, StreetAddressData.STATE, option))
+;
+    
+node.appendChild(ModDomHelper.createNameValueNodes(document, StreetAddressData.STATE, option));
+    
 }
 
 
@@ -104,13 +109,16 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, StreetAddressData.S
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return node;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.FAILURE, this, "toXmlNode", e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, "toXmlNode", e);
+    
 
                                     }
                                 

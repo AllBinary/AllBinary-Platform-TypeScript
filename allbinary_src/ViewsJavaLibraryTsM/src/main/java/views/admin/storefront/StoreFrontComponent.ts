@@ -55,14 +55,18 @@ public constructor (transformInfoInterface: TransformInfoInterface)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.newStoreFrontInterface= StoreFront(this.getPageContext()!.getRequest() as HttpServletRequest) as StoreFrontInterface
+this.newStoreFrontInterface= StoreFront(this.getPageContext()!.getRequest();
+
+                         as HttpServletRequest) as StoreFrontInterface;
+    
 
                         if(this.newStoreFrontInterface!.getName() == 
                                     null
                                 )
                         
                                     {
-                                    this.newStoreFrontInterface!.setName(this.getWeblisketSession()!.getStoreName())
+                                    this.newStoreFrontInterface!.setName(this.getWeblisketSession()!.getStoreName());
+    
 
                                     }
                                 
@@ -79,14 +83,19 @@ this.newStoreFrontInterface= StoreFront(this.getPageContext()!.getRequest() as H
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.view();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view", e);
+    
 
                                     }
                                 

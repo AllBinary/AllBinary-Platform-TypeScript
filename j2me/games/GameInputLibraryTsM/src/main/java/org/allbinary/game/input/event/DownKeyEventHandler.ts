@@ -59,7 +59,8 @@ var deviceId = deviceId
     var playerInputId: number = playerInputIdFactory!.getPlayerForDevice(deviceId)!;
         
         
-
+;
+    
 
 
 
@@ -86,7 +87,8 @@ private constructor (){
 
 
     public removeAllListeners(){
-super.removeAllListeners()
+super.removeAllListeners();
+    
 
 
 
@@ -97,7 +99,8 @@ super.removeAllListeners()
         
 index >= 0; index--)
         {
-instanceArray[index]!.removeAllListeners()
+instanceArray[index]!.removeAllListeners();
+    
 }
 
 }
@@ -105,7 +108,8 @@ instanceArray[index]!.removeAllListeners()
 
     public removeListenerSingleThreaded(eventListenerInterface: EventListenerInterface){
 var eventListenerInterface = eventListenerInterface
-super.removeListenerSingleThreaded(eventListenerInterface)
+super.removeListenerSingleThreaded(eventListenerInterface);
+    
 
 
 
@@ -116,7 +120,8 @@ super.removeListenerSingleThreaded(eventListenerInterface)
         
 index >= 0; index--)
         {
-instanceArray[index]!.removeListenerSingleThreaded(eventListenerInterface)
+instanceArray[index]!.removeListenerSingleThreaded(eventListenerInterface);
+    
 }
 
 }
@@ -125,7 +130,8 @@ instanceArray[index]!.removeListenerSingleThreaded(eventListenerInterface)
 
     public removeListener(eventListenerInterface: EventListenerInterface){
 var eventListenerInterface = eventListenerInterface
-super.removeListener(eventListenerInterface)
+super.removeListener(eventListenerInterface);
+    
 
 
 
@@ -136,7 +142,8 @@ super.removeListener(eventListenerInterface)
         
 index >= 0; index--)
         {
-instanceArray[index]!.removeListener(eventListenerInterface)
+instanceArray[index]!.removeListener(eventListenerInterface);
+    
 }
 
 }

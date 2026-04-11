@@ -56,7 +56,8 @@ private constructor (){
     var scaledImages: Image[] = new Array(images.length);
         
         
-
+;
+    
 
 
 
@@ -68,7 +69,8 @@ private constructor (){
         
 --index >= 0; )
         {
-scaledImages[index]= this.scale(images[index]!, width, height)
+scaledImages[index]= this.scale(images[index]!, width, height);
+    
 }
 
 
@@ -90,44 +92,54 @@ scaledImages[index]= this.scale(images[index]!, width, height)
     var sourceWidth: number = image.getWidth()!;
         
         
-
+;
+    
 
     var sourceHeight: number = image.getHeight()!;
         
         
+;
+    
 
-
-    var originalData: IntArray = IntArray(image.getWidth() *image.getHeight());
+    var originalData: number[] = new Array(image.getWidth() *image.getHeight());
         
         
+;
+    
+image.getRGB(originalData, 0, image.getWidth(), 0, 0, image.getWidth(), image.getHeight());
+    
 
-image.getRGB(originalData, 0, image.getWidth(), 0, 0, image.getWidth(), image.getHeight())
-
-    var scaledData: IntArray = IntArray(width *height);
+    var scaledData: number[] = new Array(width *height);
         
         
-
+;
+    
 
     var heightRatioFactor: number = (8 *sourceHeight) /height;
         
         
-
+;
+    
 
     var widthRatioFactor: number = (8 *sourceWidth) /width;
         
         
-
+;
+    
 
     var scaledIndex: number = scaledData!.length -1;
         
         
-
+;
+    
 
     var dx: number= 0
-
+;
+    
 
     var dy: number= 0
-
+;
+    
 
 
 
@@ -138,7 +150,8 @@ image.getRGB(originalData, 0, image.getWidth(), 0, 0, image.getWidth(), image.ge
         
 --index >= 0; )
         {
-dy= (index *heightRatioFactor) shr 3
+dy= (index *heightRatioFactor) shr 3;
+    
 
 
 
@@ -149,8 +162,10 @@ dy= (index *heightRatioFactor) shr 3
         
 --index2 >= 0; )
         {
-dx= (index2 *widthRatioFactor) shr 3
-scaledData[scaledIndex--]= originalData[(sourceWidth *dy) +dx]!
+dx= (index2 *widthRatioFactor) shr 3;
+    
+scaledData[scaledIndex--]= originalData[(sourceWidth *dy) +dx]!;
+    
 }
 
 }
@@ -159,7 +174,8 @@ scaledData[scaledIndex--]= originalData[(sourceWidth *dy) +dx]!
     var scaledImage: Image = Image.createRGBImage(scaledData, width, height, true)!;
         
         
-
+;
+    
 
 
 

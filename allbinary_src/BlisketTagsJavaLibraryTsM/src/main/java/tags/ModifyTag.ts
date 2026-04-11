@@ -66,7 +66,8 @@ public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
+    
 
                                     }
                                 
@@ -79,40 +80,49 @@ public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface)
 
         try {
             
-    var helperClass: KClass<*> = this.getHelper()!.::class!;
+    var helperClass: Function = this.getHelper()!.constructor!;
         
         
-
+;
+    
 
     var method: Method = helperClass!.getMethod("insert", 
                             null)!;
         
         
-
+;
+    
 
     var result: string = method.invoke(this.getHelper(), 
-                            null) as String;
-        
-        
+                            null);
 
+                         as String;
+        
+        
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to insert";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "insert()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "insert()", e);
+    
 
                                     }
                                 
@@ -133,40 +143,49 @@ public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface)
 
         try {
             
-    var helperClass: KClass<*> = this.getHelper()!.::class!;
+    var helperClass: Function = this.getHelper()!.constructor!;
         
         
-
+;
+    
 
     var method: Method = helperClass!.getMethod(commonStrings!.delete, 
                             null)!;
         
         
-
+;
+    
 
     var result: string = method.invoke(this.getHelper(), 
-                            null) as String;
-        
-        
+                            null);
 
+                         as String;
+        
+        
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to delete";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "delete()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "delete()", e);
+    
 
                                     }
                                 
@@ -187,40 +206,49 @@ public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface)
 
         try {
             
-    var helperClass: KClass<*> = this.getHelper()!.::class!;
+    var helperClass: Function = this.getHelper()!.constructor!;
         
         
-
+;
+    
 
     var method: Method = helperClass!.getMethod("update", 
                             null)!;
         
         
-
+;
+    
 
     var result: string = method.invoke(this.getHelper(), 
-                            null) as String;
-        
-        
+                            null);
 
+                         as String;
+        
+        
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to update";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "update()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "update()", e);
+    
 
                                     }
                                 
@@ -245,20 +273,29 @@ public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface)
                         
                                     {
                                     
-    var request: HttpServletRequest = this.pageContext!.getRequest() as HttpServletRequest;
-        
-        
+    var request: HttpServletRequest = this.pageContext!.getRequest();
 
+                         as HttpServletRequest;
+        
+        
+;
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("Command: ")
-stringBuffer!.append(this.getCommand())
-stringBuffer!.append(" Request URI: ")
-stringBuffer!.append(request.getRequestURI())
-logUtil!.put(stringBuffer!.toString(), this, "doStartTag()")
+;
+    
+stringBuffer!.append("Command: ");
+    
+stringBuffer!.append(this.getCommand());
+    
+stringBuffer!.append(" Request URI: ");
+    
+stringBuffer!.append(request.getRequestURI());
+    
+logUtil!.put(stringBuffer!.toString(), this, "doStartTag()");
+    
 
                                     }
                                 
@@ -275,12 +312,14 @@ logUtil!.put(stringBuffer!.toString(), this, "doStartTag()")
                                 )
                         
                                     {
-                                    this.setHelper()
+                                    this.setHelper();
+    
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
+;
+    
 
                         if(this.getCommand()!.compareTo(commonStrings!.INSERT) == 0)
                         
@@ -289,12 +328,14 @@ logUtil!.put(stringBuffer!.toString(), this, "doStartTag()")
     var output: string = this.insert()!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGEXTRAOUTPUT))
                         
                                     {
-                                    this.pageContext!.getOut()!.print(output +"<br />")
+                                    this.pageContext!.getOut()!.print(output +"<br />");
+    
 
                                     }
                                 
@@ -309,12 +350,14 @@ logUtil!.put(stringBuffer!.toString(), this, "doStartTag()")
     var output: string = this.delete()!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGEXTRAOUTPUT))
                         
                                     {
-                                    this.pageContext!.getOut()!.print(output +"<br />")
+                                    this.pageContext!.getOut()!.print(output +"<br />");
+    
 
                                     }
                                 
@@ -329,12 +372,14 @@ logUtil!.put(stringBuffer!.toString(), this, "doStartTag()")
     var output: string = this.update()!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGEXTRAOUTPUT))
                         
                                     {
-                                    this.pageContext!.getOut()!.print(output +"<br />")
+                                    this.pageContext!.getOut()!.print(output +"<br />");
+    
 
                                     }
                                 
@@ -350,9 +395,12 @@ logUtil!.put(stringBuffer!.toString(), this, "doStartTag()")
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.EVAL_BODY_INCLUDE;
     
-} catch(e: LicensingException)
+
+                //: 
+} catch(e) 
             {
-AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e);
+    
 
 
 
@@ -360,9 +408,12 @@ AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
                         return SKIP_BODY;
     
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
-AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
+    
 
 
 

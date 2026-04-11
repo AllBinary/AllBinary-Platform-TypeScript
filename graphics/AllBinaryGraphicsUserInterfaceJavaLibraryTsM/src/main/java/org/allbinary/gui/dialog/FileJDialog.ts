@@ -38,11 +38,13 @@ java.awt.EventQueue.invokeLater(object: ARunnable()
                                 
     public run(){
 FileJDialog(javax.swing.JFrame(), true).
-                            setVisible(true)
+                            setVisible(true);
+    
 }
 
                                 }
-                            )
+                            );
+    
 }
 
 
@@ -60,8 +62,10 @@ public constructor ()
 
                             //For kotlin this is before the body of the constructor.
                     
-initComponents()
-this.getJFileChooser1()!.setMultiSelectionEnabled(true)
+initComponents();
+    
+this.getJFileChooser1()!.setMultiSelectionEnabled(true);
+    
 }
 
 public constructor (parent: java.awt.Frame, modal: boolean)                        
@@ -75,55 +79,70 @@ var modal = modal
 
                             //For kotlin this is before the body of the constructor.
                     
-initComponents()
-this.getJFileChooser1()!.setMultiSelectionEnabled(true)
+initComponents();
+    
+this.getJFileChooser1()!.setMultiSelectionEnabled(true);
+    
 }
 
 
     public addFinishedListener(finishedListenerInterface: FileJDialogListenerInterface){
 var finishedListenerInterface = finishedListenerInterface
-this.finishedListenerInterface= finishedListenerInterface
+this.finishedListenerInterface= finishedListenerInterface;
+    
 }
 
 
     initComponents(){
-jFileChooser1= javax.swing.JFileChooser()
-setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE)
+jFileChooser1= javax.swing.JFileChooser();
+    
+setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+    
 jFileChooser1!.addActionListener(object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
 var evt = evt
-jFileChooser1ActionPerformed(evt)
+jFileChooser1ActionPerformed(evt);
+    
 }
 
                                 }
-                            )
+                            );
+    
 
     var layout: org.jdesktop.layout.GroupLayout = new org.jdesktop.layout.GroupLayout(getContentPane());
         
         
-
-getContentPane()!.setLayout(layout)
-layout.setHorizontalGroup(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)!.add(org.jdesktop.layout.GroupLayout.TRAILING, layout.createSequentialGroup()!.addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)!.add(jFileChooser1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)!.addContainerGap()))
-layout.setVerticalGroup(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)!.add(layout.createSequentialGroup()!.addContainerGap()!.add(jFileChooser1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 357, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)!.addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-pack()
+;
+    
+getContentPane()!.setLayout(layout);
+    
+layout.setHorizontalGroup(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)!.add(org.jdesktop.layout.GroupLayout.TRAILING, layout.createSequentialGroup()!.addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)!.add(jFileChooser1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)!.addContainerGap()));
+    
+layout.setVerticalGroup(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)!.add(layout.createSequentialGroup()!.addContainerGap()!.add(jFileChooser1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 357, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)!.addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)));
+    
+pack();
+    
 }
 
 
     jFileChooser1ActionPerformed(evt: java.awt.event.ActionEvent){
 var evt = evt
-logUtil!.put("Starting Action Command: " +evt.getActionCommand(), this, "ActionPerformed")
+logUtil!.put("Starting Action Command: " +evt.getActionCommand(), this, "ActionPerformed");
+    
 
     var files: File[] = this.getJFileChooser1()!.getSelectedFiles()!;
         
         
-
+;
+    
 
                         if(evt.getActionCommand() == this.getJFileChooser1()!.CANCEL_SELECTION)
                         
                                     {
-                                    this.setVisible(false)
+                                    this.setVisible(false);
+    
 
                                     }
                                 
@@ -137,7 +156,8 @@ logUtil!.put("Starting Action Command: " +evt.getActionCommand(), this, "ActionP
                                  && files.length > 0)
                         
                                     {
-                                    this.finishedListenerInterface!.onFiles(files)
+                                    this.finishedListenerInterface!.onFiles(files);
+    
 
                                     }
                                 
@@ -159,7 +179,8 @@ logUtil!.put("Starting Action Command: " +evt.getActionCommand(), this, "ActionP
 
     public setJFileChooser1(jFileChooser1: javax.swing.JFileChooser){
 var jFileChooser1 = jFileChooser1
-this.jFileChooser1= jFileChooser1
+this.jFileChooser1= jFileChooser1;
+    
 }
 
 

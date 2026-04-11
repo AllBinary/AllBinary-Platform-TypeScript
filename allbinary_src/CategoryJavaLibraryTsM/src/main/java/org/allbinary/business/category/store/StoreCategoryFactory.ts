@@ -69,11 +69,13 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
                         
                                     {
-                                    logUtil!.put(commonStrings!.START, this, "StoreCategoryFactory(TransformInfoInterface transformInfoInterface)")
+                                    logUtil!.put(commonStrings!.START, this, "StoreCategoryFactory(TransformInfoInterface transformInfoInterface)");
+    
 
                                     }
                                 
-this.transformInfoInterface= transformInfoInterface
+this.transformInfoInterface= transformInfoInterface;
+    
 }
 
 
@@ -84,20 +86,24 @@ this.transformInfoInterface= transformInfoInterface
     var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = RootStoreCategoryPropertiesFactory(this.transformInfoInterface) as CategoryPropertiesFactoryInterface;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return Category(categoryPropertiesFactoryInterface) as CategoryInterface;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.ENTITYFACTORYERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(String, int)", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(String, int)", e);
+    
 
                                     }
                                 
@@ -120,25 +126,30 @@ var categoryPath = categoryPath
     var level: number = CategoryUtil.getPathLevel(categoryPath)!;
         
         
-
+;
+    
 
     var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = RootStoreCategoryPropertiesFactory(this.transformInfoInterface, categoryPath) as CategoryPropertiesFactoryInterface;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return Category(categoryPropertiesFactoryInterface, level) as CategoryInterface;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.ENTITYFACTORYERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(String, int)", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(String, int)", e);
+    
 
                                     }
                                 
@@ -161,30 +172,36 @@ var node = node
     var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = RootStoreCategoryPropertiesFactory(this.transformInfoInterface, node) as CategoryPropertiesFactoryInterface;
         
         
-
+;
+    
 
     var categoryPath: AbPath = new AbPath(CategoryUtil.getNameFromNode(node));
         
         
-
+;
+    
 
     var level: number = CategoryUtil.getPathLevel(categoryPath)!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return Category(categoryPropertiesFactoryInterface, level) as CategoryInterface;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.ENTITYFACTORYERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(String, int)", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(String, int)", e);
+    
 
                                     }
                                 

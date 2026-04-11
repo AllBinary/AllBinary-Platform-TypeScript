@@ -84,7 +84,8 @@ export class DemoGameBehavior
             
     public updateScreenButtonPaintable(allBinaryGameCanvas: AllBinaryGameCanvas){
     //var allBinaryGameCanvas = allBinaryGameCanvas
-allBinaryGameCanvas!.setTouchPaintableP(NullPaintable.getInstance())
+allBinaryGameCanvas!.setTouchPaintableP(NullPaintable.getInstance());
+    
 }
 
 
@@ -122,8 +123,10 @@ allBinaryGameCanvas!.setTouchPaintableP(NullPaintable.getInstance())
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(GameTypeFactory.getInstance()!.BOT.toString(), this, commonStrings!.RUN)
+;
+    
+logUtil!.put(GameTypeFactory.getInstance()!.BOT.toString(), this, commonStrings!.RUN);
+    
 }
 
 

@@ -18,7 +18,10 @@
 
 
 
-import { Vector } from "../../../java/util/Vector.js";
+            import Vector from "@ohos.util.Vector";
+        
+
+//import { Vector } from "../../../java/util/Vector.js";
 
     
 
@@ -38,6 +41,8 @@ var logType = logType
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return logging.contains(logType!.toString());
+
+                        ;
     
 }
 
@@ -123,8 +128,10 @@ private constructor (value: string){
 
             super();
             var value = value
-this.name= value
-logging.add(value)
+this.name= value;
+    
+logging.add(value);
+    
 }
 
 

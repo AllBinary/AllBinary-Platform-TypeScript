@@ -86,50 +86,61 @@ private constructor (){
 
     public paint(graphics: Graphics){
     //var graphics = graphics
-graphics.setColor(color)
+graphics.setColor(color);
+    
 
     var myFont: MyFont = MyFont.getInstance()!;
         
         
-
+;
+    
 
     var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
         
         
-
+;
+    
 
     var halfWidth: number = displayInfo!.getLastHalfWidth()!;
         
         
-
+;
+    
 
     var height: number = displayInfo!.getLastHeight()!;
         
         
-
+;
+    
 
     var font: Font = graphics.getFont()!;
         
         
-
+;
+    
 
     var beginWidth: number = (font.stringWidth(COPYRIGHT) shr 1);
         
         
-
+;
+    
 
     var COPYRIGHT_Y: number = 2 *myFont!.DEFAULT_CHAR_HEIGHT;
         
         
-
-graphics.drawString(COPYRIGHT, halfWidth -beginWidth, height -COPYRIGHT_Y, anchor)
+;
+    
+graphics.drawString(COPYRIGHT, halfWidth -beginWidth, height -COPYRIGHT_Y, anchor);
+    
 }
 
 
     public setBasicColorP(basicColor: BasicColor){
 var basicColor = basicColor
-this.basicColor= basicColor
-color= basicColor!.toInt()
+this.basicColor= basicColor;
+    
+color= basicColor!.toInt();
+    
 }
 
 

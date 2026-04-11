@@ -82,7 +82,8 @@ var activity = activity
 
     public init(activity: ProgressActivityInterface){
 var activity = activity
-this.progressActivity= activity
+this.progressActivity= activity;
+    
 }
 
 
@@ -116,12 +117,18 @@ this.progressActivity= activity
     public start(){
 
         try {
-            logUtil!.put(commonStrings!.START, this, commonStrings!.START_METHOD_NAME)
-super.start()
-this.progressActivity!.runOnUiThread(showTitleProgressBarRunnable)
-} catch(e: Exception)
+            logUtil!.put(commonStrings!.START, this, commonStrings!.START_METHOD_NAME);
+    
+super.start();
+    
+this.progressActivity!.runOnUiThread(showTitleProgressBarRunnable);
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.START_METHOD_NAME, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.START_METHOD_NAME, e);
+    
 }
 
 }
@@ -130,12 +137,18 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.START_METHOD_NAME, e
     public end(){
 
         try {
-            logUtil!.put(commonStrings!.START, this, commonStrings!.END_METHOD_NAME)
-this.progressActivity!.runOnUiThread(dismissTitleProgressBarRunnable)
-super.end()
-} catch(e: Exception)
+            logUtil!.put(commonStrings!.START, this, commonStrings!.END_METHOD_NAME);
+    
+this.progressActivity!.runOnUiThread(dismissTitleProgressBarRunnable);
+    
+super.end();
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.END_METHOD_NAME, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.END_METHOD_NAME, e);
+    
 }
 
 }
@@ -147,12 +160,18 @@ var text = text
 var index = index
 
         try {
-            super.addPortion(value, text, index)
-this.portion= value
-this.progressActivity!.runOnUiThread(progressDialogPortionSetProgressRunnable)
-} catch(e: Exception)
+            super.addPortion(value, text, index);
+    
+this.portion= value;
+    
+this.progressActivity!.runOnUiThread(progressDialogPortionSetProgressRunnable);
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, ADD_PORTION, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, ADD_PORTION, e);
+    
 }
 
 }
@@ -163,12 +182,18 @@ var value = value
 var text = text
 
         try {
-            super.addPortion(value, text)
-this.portion= value
-this.progressActivity!.runOnUiThread(progressDialogPortionSetProgressRunnable)
-} catch(e: Exception)
+            super.addPortion(value, text);
+    
+this.portion= value;
+    
+this.progressActivity!.runOnUiThread(progressDialogPortionSetProgressRunnable);
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, ADD_PORTION, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, ADD_PORTION, e);
+    
 }
 
 }
@@ -178,11 +203,16 @@ logUtil!.put(commonStrings!.EXCEPTION, this, ADD_PORTION, e)
 var value = value
 
         try {
-            super.setValue(value)
-this.progressActivity!.runOnUiThread(progressDialogSetProgressRunnable)
-} catch(e: Exception)
+            super.setValue(value);
+    
+this.progressActivity!.runOnUiThread(progressDialogSetProgressRunnable);
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "setValue", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "setValue", e);
+    
 }
 
 }
@@ -207,14 +237,21 @@ export inner class TitleProgressBarSetProgressRunnable
 
         try {
             
-    var value: number = this@AndroidTitleProgressBar.getValue().toInt();
-        
-        
+    var value: number = this@AndroidTitleProgressBar.getValue();
 
-this@AndroidTitleProgressBar.progressActivity!.onTitleProgressBarSetProgress(value)
-} catch(e: Exception)
+                        .toInt();
+        
+        
+;
+    
+this@AndroidTitleProgressBar.progressActivity!.onTitleProgressBarSetProgress(value);
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
+    
 }
 
 }
@@ -236,11 +273,16 @@ export inner class TitleProgressBarPortionSetProgressRunnable
     var value: number = (this@AndroidTitleProgressBar.getValue() +this@AndroidTitleProgressBar.getMaxValue() /portion).toInt();
         
         
+;
+    
+this@AndroidTitleProgressBar.progressActivity!.onTitleProgressBarSetProgress(value);
+    
 
-this@AndroidTitleProgressBar.progressActivity!.onTitleProgressBarSetProgress(value)
-} catch(e: Exception)
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
+    
 }
 
 }
@@ -259,14 +301,21 @@ export inner class ShowTitleProgressBarRunnable
 
         try {
             
-    var maxValue: number = this@AndroidTitleProgressBar.getMaxValue().toInt();
-        
-        
+    var maxValue: number = this@AndroidTitleProgressBar.getMaxValue();
 
-this@AndroidTitleProgressBar.progressActivity!.onShowTitleProgressBar(maxValue, false)
-} catch(e: Exception)
+                        .toInt();
+        
+        
+;
+    
+this@AndroidTitleProgressBar.progressActivity!.onShowTitleProgressBar(maxValue, false);
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
+    
 }
 
 }
@@ -284,10 +333,14 @@ export inner class DismissTitleProgressBarRunnable
     public run(){
 
         try {
-            this@AndroidTitleProgressBar.progressActivity!.onDismissTitleProgressBar()
-} catch(e: Exception)
+            this@AndroidTitleProgressBar.progressActivity!.onDismissTitleProgressBar();
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
+    
 }
 
 }

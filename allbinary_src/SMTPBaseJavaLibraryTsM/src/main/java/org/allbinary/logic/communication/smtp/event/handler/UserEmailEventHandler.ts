@@ -18,7 +18,10 @@
 
 
 
-import { Vector } from "../../../../../../../java/util/Vector.js";
+            import Vector from "@ohos.util.Vector";
+        
+
+//import { Vector } from "../../../../../../../java/util/Vector.js";
 
     
 import { EmailEvent } from "../../../../../../../org/allbinary/logic/communication/smtp/event/EmailEvent.js";
@@ -47,7 +50,8 @@ export class UserEmailEventHandler
 public constructor (){
 
             super();
-            this.emailVector= Vector()
+            this.emailVector= Vector();
+    
 }
 
 
@@ -57,9 +61,12 @@ public constructor (){
     public receiveEmailInfo(userEmailEventNameData: UserEmailEventNameData, emailInfo: EmailInfo){
 var userEmailEventNameData = userEmailEventNameData
 var emailInfo = emailInfo
-this.userEmailEventNameData= userEmailEventNameData
-this.emailInfo= emailInfo
-this.fireEmailEvent()
+this.userEmailEventNameData= userEmailEventNameData;
+    
+this.emailInfo= emailInfo;
+    
+this.fireEmailEvent();
+    
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
@@ -70,7 +77,8 @@ var vector = vector
     var size: number = vector.length!;
         
         
-
+;
+    
 
 
 
@@ -82,11 +90,15 @@ var vector = vector
 index < size; index++)
         {
 
-    var userEmailEventListenerInterface: UserEmailEventListenerInterface = vector.get(index) as UserEmailEventListenerInterface;
-        
-        
+    var userEmailEventListenerInterface: UserEmailEventListenerInterface = vector.get(index);
 
-this.addListener(userEmailEventListenerInterface)
+                         as UserEmailEventListenerInterface;
+        
+        
+;
+    
+this.addListener(userEmailEventListenerInterface);
+    
 }
 
 }
@@ -95,14 +107,16 @@ this.addListener(userEmailEventListenerInterface)
 
     public addListener(emailEventListenerInterface: UserEmailEventListenerInterface){
 var emailEventListenerInterface = emailEventListenerInterface
-this.emailVector!.add(emailEventListenerInterface)
+this.emailVector!.add(emailEventListenerInterface);
+    
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public removeListener(emailEventListenerInterface: UserEmailEventListenerInterface){
 var emailEventListenerInterface = emailEventListenerInterface
-this.emailVector!.remove(emailEventListenerInterface)
+this.emailVector!.remove(emailEventListenerInterface);
+    
 }
 
 
@@ -114,12 +128,14 @@ this.emailVector!.remove(emailEventListenerInterface)
     var emailEvent: EmailEvent = new EmailEvent(this, this.userEmailEventNameData, this.emailInfo, 0);
         
         
-
+;
+    
 
     var size: number = emailVector!.length!;
         
         
-
+;
+    
 
 
 
@@ -131,11 +147,15 @@ this.emailVector!.remove(emailEventListenerInterface)
 index < size; index++)
         {
 
-    var emailEventListenerInterface: UserEmailEventListenerInterface = emailVector!.get(index) as UserEmailEventListenerInterface;
-        
-        
+    var emailEventListenerInterface: UserEmailEventListenerInterface = emailVector!.get(index);
 
-emailEventListenerInterface!.onEmailSendRequest(emailEvent)
+                         as UserEmailEventListenerInterface;
+        
+        
+;
+    
+emailEventListenerInterface!.onEmailSendRequest(emailEvent);
+    
 }
 
 }

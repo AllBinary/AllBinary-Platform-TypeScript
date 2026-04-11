@@ -81,31 +81,40 @@ export class BillingAddressHelper extends Table {
     private streetAddress: StreetAddress
 
     private readonly portion: Portion
-public constructor (hashMap: HashMap<Any, Any>, pageContext: PageContext){
+public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
             var hashMap = hashMap
 var pageContext = pageContext
-this.request= pageContext!.getRequest() as HttpServletRequest
-this.weblisketSession= WeblisketSession(hashMap, pageContext)
-this.portion= Portion(hashMap)
-this.getAddressForm()
+this.request= pageContext!.getRequest();
+
+                         as HttpServletRequest;
+    
+this.weblisketSession= WeblisketSession(hashMap, pageContext);
+    
+this.portion= Portion(hashMap);
+    
+this.getAddressForm();
+    
 }
 
 
     getAddressForm(){
-this.userName= request.getParameter(UserData.USERNAME)
+this.userName= request.getParameter(UserData.USERNAME);
+    
 
                         if(this.userName == 
                                     null
                                 )
                         
                                     {
-                                    this.userName= request.getParameter(WeblisketSessionData.REMOVABLEUSERNAME)
+                                    this.userName= request.getParameter(WeblisketSessionData.REMOVABLEUSERNAME);
+    
 
                                     }
                                 
-this.streetAddress= StreetAddress(this.request)
+this.streetAddress= StreetAddress(this.request);
+    
 }
 
 
@@ -117,12 +126,14 @@ this.streetAddress= StreetAddress(this.request)
                             drop()!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put(success, this, commonStrings!.DROP)
+                                    logUtil!.put(success, this, commonStrings!.DROP);
+    
 
                                     }
                                 
@@ -132,18 +143,22 @@ this.streetAddress= StreetAddress(this.request)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to drop Admin table";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.DROP, e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.DROP, e);
+    
 
                                     }
                                 
@@ -166,12 +181,14 @@ this.streetAddress= StreetAddress(this.request)
                             createTable()!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put(success, this, "create()")
+                                    logUtil!.put(success, this, "create()");
+    
 
                                     }
                                 
@@ -181,18 +198,22 @@ this.streetAddress= StreetAddress(this.request)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to create user table";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "create()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "create()", e);
+    
 
                                     }
                                 
@@ -214,22 +235,26 @@ this.streetAddress= StreetAddress(this.request)
     var success: string = "Restore Successful";
         
         
-
+;
+    
 
     var billingAddressesEntity: BillingAddressesEntity = new BillingAddressesEntity(StringUtil.getInstance()!.EMPTY_STRING);
         
         
-
+;
+    
 
     var result: string = AbSqlTableUtil.getInstance()!.restoreTable(billingAddressesEntity, this.portion)!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put(success, this, "restore()")
+                                    logUtil!.put(success, this, "restore()");
+    
 
                                     }
                                 
@@ -239,18 +264,22 @@ this.streetAddress= StreetAddress(this.request)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to restore backup";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "restore()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "restore()", e);
+    
 
                                     }
                                 
@@ -272,17 +301,20 @@ this.streetAddress= StreetAddress(this.request)
     var success: string = "Backup Successful";
         
         
-
+;
+    
 
     var result: string = AbSqlTableUtil.getInstance()!.backupTable(BillingAddressesEntity(StringUtil.getInstance()!.EMPTY_STRING))!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put(success, this, "backup()")
+                                    logUtil!.put(success, this, "backup()");
+    
 
                                     }
                                 
@@ -292,18 +324,22 @@ this.streetAddress= StreetAddress(this.request)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to make backup";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "backup()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "backup()", e);
+    
 
                                     }
                                 
@@ -325,13 +361,16 @@ this.streetAddress= StreetAddress(this.request)
     var success: string = "Successfully Added Billing Address";
         
         
-
-BillingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!.getUserName())!.add(this.streetAddress)
+;
+    
+BillingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!.getUserName())!.add(this.streetAddress);
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put(success, this, "add()")
+                                    logUtil!.put(success, this, "add()");
+    
 
                                     }
                                 
@@ -341,18 +380,22 @@ BillingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!.
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to add Billing Address";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "add()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "add()", e);
+    
 
                                     }
                                 
@@ -374,13 +417,16 @@ BillingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!.
     var success: string = "Successfully Updated Billing Address";
         
         
-
-BillingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!.getUserName())!.update(this.streetAddress)
+;
+    
+BillingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!.getUserName())!.update(this.streetAddress);
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put("Successfull update of a user Billing Address table", this, "update()")
+                                    logUtil!.put("Successfull update of a user Billing Address table", this, "update()");
+    
 
                                     }
                                 
@@ -390,18 +436,22 @@ BillingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!.
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed update of a User Billing Address Table";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "update()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "update()", e);
+    
 
                                     }
                                 
@@ -423,19 +473,22 @@ BillingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!.
     var shippingAddressesEntityFactory: ShippingAddressesEntityFactory = ShippingAddressesEntityFactory.getInstance()!;
         
         
-
+;
+    
 
     var streetAddress: StreetAddress = shippingAddressesEntityFactory!.getInstance(this.weblisketSession!.getUserName())!.getDefault()!;
         
         
-
+;
+    
 
                         if(streetAddress != 
                                     null
                                 )
                         
                                     {
-                                    shippingAddressesEntityFactory!.getInstance(this.weblisketSession!.getUserName())!.add(streetAddress)
+                                    shippingAddressesEntityFactory!.getInstance(this.weblisketSession!.getUserName())!.add(streetAddress);
+    
 
                                     }
                                 
@@ -455,18 +508,22 @@ BillingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!.
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return StringUtil.getInstance()!.EMPTY_STRING;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to Set Billing address to Shipping Address";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "setToShippingAddress()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "setToShippingAddress()", e);
+    
 
                                     }
                                 
@@ -488,13 +545,16 @@ BillingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!.
     var success: string = "Successfully Removed Billing Address";
         
         
-
-BillingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!.getUserName())!.remove(Integer(this.streetAddress!.getId()))
+;
+    
+BillingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!.getUserName())!.remove(Integer(this.streetAddress!.getId()));
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put(success, this, "delete()")
+                                    logUtil!.put(success, this, "delete()");
+    
 
                                     }
                                 
@@ -504,18 +564,22 @@ BillingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!.
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to remove Billing Address";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "delete()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "delete()", e);
+    
 
                                     }
                                 
@@ -537,13 +601,16 @@ BillingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!.
     var success: string = "Successfully Set Billing Address";
         
         
-
-BillingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!.getUserName())!.setDefault(this.streetAddress!.getId())
+;
+    
+BillingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!.getUserName())!.setDefault(this.streetAddress!.getId());
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put(success, this, "set()")
+                                    logUtil!.put(success, this, "set()");
+    
 
                                     }
                                 
@@ -553,18 +620,22 @@ BillingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!.
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to set billing Address";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "set()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "set()", e);
+    
 
                                     }
                                 

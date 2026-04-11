@@ -45,7 +45,8 @@ var after = after
 
 
     public setSelected(){
-super.addAttribute(CHECKED, BooleanFactory.getInstance()!.TRUE_STRING)
+super.addAttribute(CHECKED, BooleanFactory.getInstance()!.TRUE_STRING);
+    
 }
 
 

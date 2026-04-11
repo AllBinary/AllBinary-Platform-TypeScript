@@ -62,7 +62,8 @@ public constructor (storeName: string){
 
             super();
             var storeName = storeName
-this.storeFrontInterface= StoreFrontFactory.getInstance(storeName)
+this.storeFrontInterface= StoreFrontFactory.getInstance(storeName);
+    
 }
 
 public constructor (document: Document){
@@ -83,20 +84,24 @@ public constructor (document: Document){
     var valid: Boolean = Boolean.TRUE;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return valid;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put("Failed to validate form", this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put("Failed to validate form", this, commonStrings!.IS_VALID, e);
+    
 
                                     }
                                 
@@ -118,20 +123,26 @@ public constructor (document: Document){
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e)
+                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e);
+    
 
                                     }
                                 
@@ -175,9 +186,11 @@ var document = document
     var node: Node = document.createElement(GlobalsData.NAME)!;
         
         
-
+;
+    
 node.appendChild(StoreFrontView(this.storeFrontInterface).
-                            toXmlNode(document))
+                            toXmlNode(document));
+    
 
 
 

@@ -27,7 +27,7 @@ export class MediaData
          {
         
 
-    private hashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+    private hashMap: HashMap<any, any> = new HashMap<any, any>();
         
         
 
@@ -36,10 +36,13 @@ export class MediaData
     public static get(a_Name: string): MediaData{
 var a_Name = a_Name
 
-    var mediaData: MediaData = MediaData.hashMap!.get(a_Name as Object) as MediaData;
-        
-        
+    var mediaData: MediaData = MediaData.hashMap!.get(a_Name as Object);
 
+                         as MediaData;
+        
+        
+;
+    
 
                         if(mediaData != 
                                     null
@@ -76,7 +79,7 @@ var a_Name = a_Name
 }
 
 
-    public static toHashMap(): HashMap<Any, Any>{
+    public static toHashMap(): HashMap<any, any>{
 
 
 
@@ -95,10 +98,14 @@ protected constructor (a_Name: string){
 
             super();
             var a_Name = a_Name
-this.name= a_Name
-this.extension= "." +this.name
-this.type= MediaTypeData.getInstance()!.NOT_RESIZABLE_MEDIA
-MediaData.hashMap!.put(a_Name, this)
+this.name= a_Name;
+    
+this.extension= "." +this.name;
+    
+this.type= MediaTypeData.getInstance()!.NOT_RESIZABLE_MEDIA;
+    
+MediaData.hashMap!.put(a_Name, this);
+    
 }
 
 
@@ -162,6 +169,8 @@ var mediaData = mediaData
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getName();
+
+                        ;
     
 }
 

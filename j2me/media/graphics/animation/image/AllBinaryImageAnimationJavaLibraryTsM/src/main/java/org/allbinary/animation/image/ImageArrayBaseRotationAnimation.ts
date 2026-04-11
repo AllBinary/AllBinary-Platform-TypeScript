@@ -80,9 +80,12 @@ public constructor (originalImageArray: Image[], angleInfo: AngleInfo, animation
 
                             //For kotlin this is before the body of the constructor.
                     
-this.originalImageArray= originalImageArray
-this.setImageArray(imageModifierUtil!.getImageArray(originalImageArray))
-this.currentImage= this.imageArray[this.circularIndexUtil!.getIndex()]!
+this.originalImageArray= originalImageArray;
+    
+this.setImageArray(imageModifierUtil!.getImageArray(originalImageArray));
+    
+this.currentImage= this.imageArray[this.circularIndexUtil!.getIndex()]!;
+    
 }
 
 
@@ -94,6 +97,8 @@ this.currentImage= this.imageArray[this.circularIndexUtil!.getIndex()]!
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getSize();
+
+                        ;
     
 }
 
@@ -104,14 +109,18 @@ this.currentImage= this.imageArray[this.circularIndexUtil!.getIndex()]!
                         if(this.alphaP != alpha)
                         
                                     {
-                                    super.setAlpha(alpha)
-imageModifierUtil!.reset()
+                                    super.setAlpha(alpha);
+    
+imageModifierUtil!.reset();
+    
 
     var index: number = this.circularIndexUtil!.getIndex()!;
         
         
-
-imageModifierUtil!.setAlpha(this.originalImageArray[index]!, this.imageArray[index]!, index, this.alphaP)
+;
+    
+imageModifierUtil!.setAlpha(this.originalImageArray[index]!, this.imageArray[index]!, index, this.alphaP);
+    
 
                                     }
                                 
@@ -119,62 +128,79 @@ imageModifierUtil!.setAlpha(this.originalImageArray[index]!, this.imageArray[ind
 
 
     public nextRotation(){
-super.nextRotation()
+super.nextRotation();
+    
 
     var index: number = this.circularIndexUtil!.getIndex()!;
         
         
-
-imageModifierUtil!.setAlpha(this.originalImageArray[index]!, this.imageArray[index]!, index, this.alphaP)
-this.currentImage= this.imageArray[index]!
+;
+    
+imageModifierUtil!.setAlpha(this.originalImageArray[index]!, this.imageArray[index]!, index, this.alphaP);
+    
+this.currentImage= this.imageArray[index]!;
+    
 }
 
 
     public previousRotation(){
-super.previousRotation()
+super.previousRotation();
+    
 
     var index: number = this.circularIndexUtil!.getIndex()!;
         
         
-
-imageModifierUtil!.setAlpha(this.originalImageArray[index]!, this.imageArray[index]!, index, this.alphaP)
-this.currentImage= this.imageArray[index]!
+;
+    
+imageModifierUtil!.setAlpha(this.originalImageArray[index]!, this.imageArray[index]!, index, this.alphaP);
+    
+this.currentImage= this.imageArray[index]!;
+    
 }
 
 
     public setFrame(index2: number){
     //var index2 = index2
-super.setFrame(index2)
+super.setFrame(index2);
+    
 
     var index: number = this.circularIndexUtil!.getIndex()!;
         
         
-
-imageModifierUtil!.setAlpha(this.originalImageArray[index]!, this.imageArray[index]!, index, this.alphaP)
-this.currentImage= this.imageArray[index]!
+;
+    
+imageModifierUtil!.setAlpha(this.originalImageArray[index]!, this.imageArray[index]!, index, this.alphaP);
+    
+this.currentImage= this.imageArray[index]!;
+    
 }
 
 
-    public setSequence(sequence: IntArray){
+    public setSequence(sequence: number[]){
     //var sequence = sequence
 }
 
 
-    public getSequence(): IntArray{
+    public getSequence(): number[]{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return PrimitiveIntUtil.getArrayInstance();
+
+                        ;
     
 }
 
 
     setImageArray(imageArray: Image[]){
     //var imageArray = imageArray
-this.imageArray= imageArray
-this.totalFrames= imageArray!.length
-this.circularIndexUtil= CircularIndexUtil.getInstance(this.totalFrames)
+this.imageArray= imageArray;
+    
+this.totalFrames= imageArray!.length;
+    
+this.circularIndexUtil= CircularIndexUtil.getInstance(this.totalFrames);
+    
 }
 
 
@@ -186,7 +212,8 @@ this.circularIndexUtil= CircularIndexUtil.getInstance(this.totalFrames)
     //var graphics = graphics
     //var x = x
     //var y = y
-graphics.drawImage(this.currentImage, x, y, anchor)
+graphics.drawImage(this.currentImage, x, y, anchor);
+    
 }
 
 
@@ -195,13 +222,15 @@ graphics.drawImage(this.currentImage, x, y, anchor)
     var disposalUtil: DisposalUtil = DisposalUtil.getInstance()!;
         
         
-
+;
+    
 
     var size2: number = this.imageArray!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -212,7 +241,8 @@ graphics.drawImage(this.currentImage, x, y, anchor)
         
 index < size2; index++)
         {
-disposalUtil!.dispose(this.imageArray[index]!)
+disposalUtil!.dispose(this.imageArray[index]!);
+    
 }
 
 
@@ -220,7 +250,8 @@ disposalUtil!.dispose(this.imageArray[index]!)
                 ;
         
         
-
+;
+    
 
 
 
@@ -231,10 +262,12 @@ disposalUtil!.dispose(this.imageArray[index]!)
         
 index < size; index++)
         {
-disposalUtil!.dispose(this.originalImageArray[index]!)
+disposalUtil!.dispose(this.originalImageArray[index]!);
+    
 }
 
-disposalUtil!.dispose(this.currentImage)
+disposalUtil!.dispose(this.currentImage);
+    
 }
 
 
@@ -245,13 +278,15 @@ disposalUtil!.dispose(this.currentImage)
     var disposalUtil: DisposalUtil = DisposalUtil.getInstance()!;
         
         
-
+;
+    
 
     var size2: number = this.imageArray!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -262,7 +297,8 @@ disposalUtil!.dispose(this.currentImage)
         
 index < size2; index++)
         {
-disposalUtil!.dispose(this.imageArray[index]!)
+disposalUtil!.dispose(this.imageArray[index]!);
+    
 }
 
 
@@ -270,7 +306,8 @@ disposalUtil!.dispose(this.imageArray[index]!)
                 ;
         
         
-
+;
+    
 
 
 
@@ -281,10 +318,12 @@ disposalUtil!.dispose(this.imageArray[index]!)
         
 index < size; index++)
         {
-disposalUtil!.dispose(this.originalImageArray[index]!)
+disposalUtil!.dispose(this.originalImageArray[index]!);
+    
 }
 
-disposalUtil!.dispose(this.currentImage)
+disposalUtil!.dispose(this.currentImage);
+    
 }
 
 

@@ -80,52 +80,68 @@ export class ImageServlet extends HttpServlet {
             ;
         
         
-
+;
+    
 
         try {
-            BlisketServletUtil.getInstance()!.init(request)
+            BlisketServletUtil.getInstance()!.init(request);
+    
 
     var requestURI: string = request.getRequestURI()!;
         
         
-
+;
+    
 
     var file: AbFile = new AbFile(URLGLOBALS.getWebappPath() +requestURI);
         
         
-
-inputStream= CloudStreamUtil.getInstance()!.getFileLocal(file)
+;
+    
+inputStream= CloudStreamUtil.getInstance()!.getFileLocal(file);
+    
 
     var outputStream: ByteArrayOutputStream = new ByteArrayOutputStream(8000);
         
         
+;
+    
 
-
-    var byteArray: ByteArray = StreamUtil.getInstance()!.getByteArray(inputStream, outputStream, ByteArray(16384))!;
+    var byteArray: number[] = StreamUtil.getInstance()!.getByteArray(inputStream, outputStream, new Array(16384))!;
         
         
+;
+    
+response.setContentType("image/jpeg;charset=utf-8");
+    
+response.getOutputStream()!.write(byteArray);
+    
 
-response.setContentType("image/jpeg;charset=utf-8")
-response.getOutputStream()!.write(byteArray)
-} catch(e: Exception)
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.EXCEPTION, this, "processRequest()", e)
+                                    logUtil!.put(this.commonStrings!.EXCEPTION, this, "processRequest()", e);
+    
 
                                     }
                                 
 }
 
          finally {
-            StreamUtil.getInstance()!.close(response.getOutputStream())
+            StreamUtil.getInstance()!.close(response.getOutputStream());
+    
 
-                        if(!StreamUtil.getInstance()!.close(inputStream))
+                        if(!StreamUtil.getInstance()!.close(inputStream);
+
+                        )
                         
                                     {
-                                    response.sendError(HttpServletResponse.SC_NOT_FOUND)
+                                    response.sendError(HttpServletResponse.SC_NOT_FOUND);
+    
 
                                     }
                                 
@@ -140,7 +156,8 @@ response.getOutputStream()!.write(byteArray)
     doGet(request: HttpServletRequest, response: HttpServletResponse){
 var request = request
 var response = response
-processRequest(request, response)
+processRequest(request, response);
+    
 }
 
 
@@ -149,7 +166,8 @@ processRequest(request, response)
     doPost(request: HttpServletRequest, response: HttpServletResponse){
 var request = request
 var response = response
-processRequest(request, response)
+processRequest(request, response);
+    
 }
 
 

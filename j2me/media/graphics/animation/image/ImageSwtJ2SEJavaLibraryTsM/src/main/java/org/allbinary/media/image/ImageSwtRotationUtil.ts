@@ -104,10 +104,13 @@ private constructor (){
     //var bufferedImage = bufferedImage
     //var totalAngle = totalAngle
 
-                        if(!features.isFeature(gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION))
+                        if(!features.isFeature(gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION);
+
+                        )
                         
                                     {
-                                    logUtil!.put(NO_COPY, this, commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put(NO_COPY, this, commonStrings!.CONSTRUCTOR);
+    
 
 
 
@@ -132,10 +135,13 @@ private constructor (){
     //var gc = gc
     //var angle = angle
 
-                        if(!features.isFeature(gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION))
+                        if(!features.isFeature(gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION);
+
+                        )
                         
                                     {
-                                    logUtil!.put(NO_COPY, this, commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put(NO_COPY, this, commonStrings!.CONSTRUCTOR);
+    
 
 
 
@@ -164,6 +170,8 @@ private constructor (){
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getRotatedImage2(originalSwtImage, newSwtImage, gc, totalAngle);
+
+                        ;
     
 }
 
@@ -178,6 +186,8 @@ private constructor (){
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getRotatedImage2(bufferedImage, newSwtImage, gc, totalAngle);
+
+                        ;
     
 }
 
@@ -190,16 +200,19 @@ private constructor (){
     var bufferedImageArray: org.eclipse.swt.graphics.Image[] = new Array(numberOfFrames);
         
         
-
+;
+    
 
     var angle: number= 0
-
+;
+    
 
     var size: number = bufferedImageArray!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -210,8 +223,10 @@ private constructor (){
         
 index < size; index++)
         {
-angle= (totalAngle /size) *index
-bufferedImageArray[index]= this.getRotatedImage(bufferedImage, angle)
+angle= (totalAngle /size) *index;
+    
+bufferedImageArray[index]= this.getRotatedImage(bufferedImage, angle);
+    
 }
 
 
@@ -229,32 +244,38 @@ bufferedImageArray[index]= this.getRotatedImage(bufferedImage, angle)
     var columns: number = 9;
         
         
-
+;
+    
 
     var rows: number = 0;
         
         
-
+;
+    
 
     var size: number = bufferedImageArray!.length
                 ;
         
         
-
+;
+    
 
                         if(size < columns)
                         
                                     {
-                                    columns= size
+                                    columns= size;
+    
 
                                     }
                                 
-rows= (size /columns)
+rows= (size /columns);
+    
 
                         if(size % columns != 0)
                         
                                     {
-                                    rows++
+                                    rows++;
+    
 
                                     }
                                 
@@ -262,37 +283,46 @@ rows= (size /columns)
     var firstBufferedImage: org.eclipse.swt.graphics.Image = bufferedImageArray[0]!;
         
         
-
+;
+    
 
     var imageData: ImageData = firstBufferedImage!.getImageData()!;
         
         
-
+;
+    
 
     var bufferedImage: org.eclipse.swt.graphics.Image = this.imageUtil!.create(imageData!.width *columns, imageData!.height *rows)!;
         
         
-
+;
+    
 
     var gc: GC = new GC(bufferedImage);
         
         
-
-gc.setAntialias(SWT.ON)
-gc.setInterpolation(SWT.HIGH)
+;
+    
+gc.setAntialias(SWT.ON);
+    
+gc.setInterpolation(SWT.HIGH);
+    
 
     var columnIndex: number = 0;
         
         
-
+;
+    
 
     var rowIndex: number = 0;
         
         
-
+;
+    
 
     var nextBufferedImage: org.eclipse.swt.graphics.Image
-
+;
+    
 
 
 
@@ -307,18 +337,25 @@ index < size; index++)
                         if(index /9 != 0 && index % 9 == 0)
                         
                                     {
-                                    rowIndex++
-columnIndex= 0
+                                    rowIndex++;
+    
+columnIndex= 0;
+    
 
                                     }
                                 
-nextBufferedImage= bufferedImageArray[index]!
-imageData= nextBufferedImage!.getImageData()
-gc.drawImage(bufferedImage, 0, 0, bufferedImage!.getBounds()!.width, bufferedImage!.getBounds()!.height, imageData!.width *columnIndex, imageData!.height *rowIndex, imageData!.width, imageData!.height)
-columnIndex++
+nextBufferedImage= bufferedImageArray[index]!;
+    
+imageData= nextBufferedImage!.getImageData();
+    
+gc.drawImage(bufferedImage, 0, 0, bufferedImage!.getBounds()!.width, bufferedImage!.getBounds()!.height, imageData!.width *columnIndex, imageData!.height *rowIndex, imageData!.width, imageData!.height);
+    
+columnIndex++;
+    
 }
 
-gc.dispose()
+gc.dispose();
+    
 
 
 

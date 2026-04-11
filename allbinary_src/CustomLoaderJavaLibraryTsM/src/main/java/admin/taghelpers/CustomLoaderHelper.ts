@@ -49,7 +49,7 @@ export class CustomLoaderHelper
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-public constructor (hashMap: HashMap<Any, Any>, pageContext: PageContext){
+public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
             var hashMap = hashMap
@@ -72,8 +72,12 @@ public constructor (){
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return org.allbinary.globals.URLGLOBALS.getWebappPath();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
 
@@ -96,16 +100,22 @@ var path = path
     var urlGlobals: AppUrlGlobals = new AppUrlGlobals();
         
         
+;
+    
+urlGlobals!.setWebappPath(path);
+    
+URLGLOBALS.init(urlGlobals);
+    
 
-urlGlobals!.setWebappPath(path)
-URLGLOBALS.init(urlGlobals)
-} catch(e: Exception)
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "setWebappPath()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "setWebappPath()", e);
+    
 
                                     }
                                 

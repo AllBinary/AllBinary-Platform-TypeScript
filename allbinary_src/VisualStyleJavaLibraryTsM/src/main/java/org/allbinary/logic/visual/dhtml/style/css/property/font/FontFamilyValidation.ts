@@ -74,12 +74,14 @@ public constructor (node: Node)
     var valid: Boolean = Boolean.TRUE;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("FontFamilyValidation", this, commonStrings!.IS_VALID)
+                                    logUtil!.put("FontFamilyValidation", this, commonStrings!.IS_VALID);
+    
 
                                     }
                                 
@@ -87,7 +89,8 @@ public constructor (node: Node)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("CssValidation: " +valid, this, commonStrings!.IS_VALID)
+                                    logUtil!.put("CssValidation: " +valid, this, commonStrings!.IS_VALID);
+    
 
                                     }
                                 
@@ -97,13 +100,16 @@ public constructor (node: Node)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return valid;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("Failed to validate data", this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put("Failed to validate data", this, commonStrings!.IS_VALID, e);
+    
 
                                     }
                                 
@@ -127,21 +133,28 @@ public constructor (node: Node)
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("Css Font Family Property Validation Error")
+;
+    
+stringBuffer!.append("Css Font Family Property Validation Error");
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("Failed to generate validation info error", this, "validationInfo()", e)
+                                    logUtil!.put("Failed to generate validation info error", this, "validationInfo()", e);
+    
 
                                     }
                                 

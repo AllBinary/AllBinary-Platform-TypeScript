@@ -41,7 +41,7 @@ export class ItemFactoryUnused
 
                 //@Throws(MoneyException::class)
             
-    public static getInstance(hashMap: HashMap<Any, Any>): TableMappingInterface{
+    public static getInstance(hashMap: HashMap<any, any>): TableMappingInterface{
 var hashMap = hashMap
 
 

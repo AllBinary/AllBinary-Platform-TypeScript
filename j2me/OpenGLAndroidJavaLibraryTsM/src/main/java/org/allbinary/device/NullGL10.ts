@@ -302,7 +302,7 @@ var alpha = alpha
 }
 
 
-    public glDeleteTextures(n: number, textures: IntArray, offset: number){
+    public glDeleteTextures(n: number, textures: number[], offset: number){
     //var n = n
     //var textures = textures
     //var offset = offset
@@ -470,7 +470,7 @@ var zFar = zFar
 }
 
 
-    public glFogfv(pname: number, params: FloatArray, offset: number){
+    public glFogfv(pname: number, params: number[], offset: number){
     //var pname = pname
     //var params = params
     //var offset = offset
@@ -501,7 +501,7 @@ var param = param
 }
 
 
-    public glFogxv(pname: number, params: IntArray, offset: number){
+    public glFogxv(pname: number, params: number[], offset: number){
 var pname = pname
 var params = params
 var offset = offset
@@ -551,7 +551,7 @@ var zFar = zFar
 }
 
 
-    public glGenTextures(n: number, textures: IntArray, offset: number){
+    public glGenTextures(n: number, textures: number[], offset: number){
     //var n = n
     //var textures = textures
     //var offset = offset
@@ -586,7 +586,7 @@ var zFar = zFar
 }
 
 
-    public glGetIntegerv(pname: number, params: IntArray, offset: number){
+    public glGetIntegerv(pname: number, params: number[], offset: number){
     //var pname = pname
     //var params = params
     //var offset = offset
@@ -646,7 +646,7 @@ var zFar = zFar
 }
 
 
-    public glLightModelfv(pname: number, params: FloatArray, offset: number){
+    public glLightModelfv(pname: number, params: number[], offset: number){
     //var pname = pname
     //var params = params
     //var offset = offset
@@ -677,7 +677,7 @@ var param = param
 }
 
 
-    public glLightModelxv(pname: number, params: IntArray, offset: number){
+    public glLightModelxv(pname: number, params: number[], offset: number){
 var pname = pname
 var params = params
 var offset = offset
@@ -703,7 +703,7 @@ var params = params
 }
 
 
-    public glLightfv(light: number, pname: number, params: FloatArray, offset: number){
+    public glLightfv(light: number, pname: number, params: number[], offset: number){
     //var light = light
     //var pname = pname
     //var params = params
@@ -737,7 +737,7 @@ var param = param
 }
 
 
-    public glLightxv(light: number, pname: number, params: IntArray, offset: number){
+    public glLightxv(light: number, pname: number, params: number[], offset: number){
 var light = light
 var pname = pname
 var params = params
@@ -778,7 +778,7 @@ var width = width
 }
 
 
-    public glLoadMatrixf(m: FloatArray, offset: number){
+    public glLoadMatrixf(m: number[], offset: number){
     //var m = m
     //var offset = offset
 
@@ -801,7 +801,7 @@ var width = width
 }
 
 
-    public glLoadMatrixx(m: IntArray, offset: number){
+    public glLoadMatrixx(m: number[], offset: number){
 var m = m
 var offset = offset
 }
@@ -836,7 +836,7 @@ var m = m
 }
 
 
-    public glMaterialfv(face: number, pname: number, params: FloatArray, offset: number){
+    public glMaterialfv(face: number, pname: number, params: number[], offset: number){
     //var face = face
     //var pname = pname
     //var params = params
@@ -870,7 +870,7 @@ var param = param
 }
 
 
-    public glMaterialxv(face: number, pname: number, params: IntArray, offset: number){
+    public glMaterialxv(face: number, pname: number, params: number[], offset: number){
 var face = face
 var pname = pname
 var params = params
@@ -896,7 +896,7 @@ var params = params
 }
 
 
-    public glMultMatrixf(m: FloatArray, offset: number){
+    public glMultMatrixf(m: number[], offset: number){
     //var m = m
     //var offset = offset
 
@@ -919,7 +919,7 @@ var params = params
 }
 
 
-    public glMultMatrixx(m: IntArray, offset: number){
+    public glMultMatrixx(m: number[], offset: number){
 var m = m
 var offset = offset
 }
@@ -1257,7 +1257,7 @@ var invert = invert
 }
 
 
-    public glTexEnvfv(target: number, pname: number, params: FloatArray, offset: number){
+    public glTexEnvfv(target: number, pname: number, params: number[], offset: number){
     //var target = target
     //var pname = pname
     //var params = params
@@ -1291,7 +1291,7 @@ var param = param
 }
 
 
-    public glTexEnvxv(target: number, pname: number, params: IntArray, offset: number){
+    public glTexEnvxv(target: number, pname: number, params: number[], offset: number){
 var target = target
 var pname = pname
 var params = params

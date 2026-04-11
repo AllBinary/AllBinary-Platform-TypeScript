@@ -18,7 +18,10 @@
 
 
 
-import { Hashtable } from "../../../java/util/Hashtable.js";
+            import Hashtable from "@ohos.util.HashMap";
+        
+
+//import { Hashtable } from "../../../java/util/Hashtable.js";
 
     
 import { Command } from "../../../javax/microedition/lcdui/Command.js";
@@ -105,7 +108,7 @@ export class AllBinaryMidlet extends MIDlet
         
         
 
-    private hashtable: Hashtable<Any, Any> = new Hashtable<Any, Any>();
+    private hashtable: Hashtable<any, any> = new Hashtable<any, any>();
         
         
 
@@ -113,7 +116,8 @@ export class AllBinaryMidlet extends MIDlet
 public constructor (){
 
             super();
-            logUtil!.put(commonStrings!.CONSTRUCTOR, this, "AllBinaryMidlet::AllBinaryMidlet")
+            logUtil!.put(commonStrings!.CONSTRUCTOR, this, "AllBinaryMidlet::AllBinaryMidlet");
+    
 }
 
 
@@ -123,12 +127,14 @@ public constructor (){
     var title: string = StringUtil.getInstance()!.EMPTY_STRING;
         
         
-
+;
+    
 
                         if(newDisplay != NullCanvas.NULL_CANVAS)
                         
                                     {
-                                    title= newDisplay!.getTitle()
+                                    title= newDisplay!.getTitle();
+    
 
                         if(title != 
                                     null
@@ -136,13 +142,15 @@ public constructor (){
                         
                                     {
                                     logUtil!.put(StringMaker().
-                            append(SETTING_)!.append(title)!.append(_DISPLAY_)!.append(StringUtil.getInstance()!.toString(newDisplay))!.toString(), this, SET_DISPLAY)
+                            append(SETTING_)!.append(title)!.append(_DISPLAY_)!.append(StringUtil.getInstance()!.toString(newDisplay))!.toString(), this, SET_DISPLAY);
+    
 
                                     }
                                 
                         else {
                             logUtil!.put(StringMaker().
-                            append(SETTING_NO_TITLE)!.append(StringUtil.getInstance()!.toString(newDisplay))!.toString(), this, SET_DISPLAY)
+                            append(SETTING_NO_TITLE)!.append(StringUtil.getInstance()!.toString(newDisplay))!.toString(), this, SET_DISPLAY);
+    
 
                         }
                             
@@ -153,8 +161,10 @@ public constructor (){
     var display: Display = getDisplay()!;
         
         
-
-display.setCurrent(newDisplay)
+;
+    
+display.setCurrent(newDisplay);
+    
 }
 
 
@@ -164,6 +174,8 @@ display.setCurrent(newDisplay)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return Display.getDisplay(this);
+
+                        ;
     
 }
 
@@ -174,13 +186,16 @@ display.setCurrent(newDisplay)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return Display.getDisplay(this)!.getCurrent();
+
+                        ;
     
 }
 
 
     public setDestroyed(destroyed: boolean){
 var destroyed = destroyed
-this.destroyed= destroyed
+this.destroyed= destroyed;
+    
 }
 
 
@@ -197,12 +212,14 @@ this.destroyed= destroyed
                 //@Throws(MIDletStateChangeException::class)
             
     startApp(){
-ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
+ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
+    
 }
 
 
     pauseApp(){
-ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
+ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
+    
 }
 
 
@@ -218,15 +235,22 @@ var unconditional = unconditional
     var METHOD_NAME: string = "AllBinaryMidlet::destroyApp";
         
         
-
+;
+    
 
         try {
-            logUtil!.put(commonStrings!.START, this, METHOD_NAME)
-PreLogUtil.put(Memory.getInfo(), this, METHOD_NAME)
-this.setDestroyed(true)
-} catch(e: Exception)
+            logUtil!.put(commonStrings!.START, this, METHOD_NAME);
+    
+PreLogUtil.put(Memory.getInfo(), this, METHOD_NAME);
+    
+this.setDestroyed(true);
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, METHOD_NAME, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, METHOD_NAME, e);
+    
 }
 
 }
@@ -234,19 +258,22 @@ logUtil!.put(commonStrings!.EXCEPTION, this, METHOD_NAME, e)
 
                 //@Throws(Error::class)
             
-    public setStartStateHashtable(hashtable: Hashtable<Any, Any>){
+    public setStartStateHashtable(hashtable: Hashtable<any, any>){
 var hashtable = hashtable
 logUtil!.put(StringMaker().
-                            append(CommonLabels.getInstance()!.START_LABEL)!.append(StringUtil.getInstance()!.toString(hashtable))!.toString(), this, "setStartStateHashtable")
-this.hashtable= hashtable
+                            append(CommonLabels.getInstance()!.START_LABEL)!.append(StringUtil.getInstance()!.toString(hashtable))!.toString(), this, "setStartStateHashtable");
+    
+this.hashtable= hashtable;
+    
 }
 
 
                 //@Throws(Error::class)
             
-    public getStartStateHashtable(): Hashtable<Any, Any>{
+    public getStartStateHashtable(): Hashtable<any, any>{
 logUtil!.put(StringMaker().
-                            append(CommonLabels.getInstance()!.START_LABEL)!.append(StringUtil.getInstance()!.toString(hashtable))!.toString(), this, "getStartStateHashtable")
+                            append(CommonLabels.getInstance()!.START_LABEL)!.append(StringUtil.getInstance()!.toString(hashtable))!.toString(), this, "getStartStateHashtable");
+    
 
 
 
@@ -258,8 +285,9 @@ logUtil!.put(StringMaker().
 
                 //@Throws(Error::class)
             
-    public getCurrentStateHashtable(): Hashtable<Any, Any>{
-logUtil!.put(commonStrings!.START, this, "getStateHashtable")
+    public getCurrentStateHashtable(): Hashtable<any, any>{
+logUtil!.put(commonStrings!.START, this, "getStateHashtable");
+    
 
 
 

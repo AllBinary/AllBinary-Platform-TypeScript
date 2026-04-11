@@ -74,7 +74,8 @@ export class PlayerTopViewCharacterBehavior extends TopViewCharacterBehavior {
     //var y = y
     //var geographicMapInterfaceArray = geographicMapInterfaceArray
     //var geographicMapCellPosition = geographicMapCellPosition
-TrackingEventHandler.getInstance()!.fireEvent(TrackingEventCircularStaticPool.getInstance()!.getInstance(layer))
+TrackingEventHandler.getInstance()!.fireEvent(TrackingEventCircularStaticPool.getInstance()!.getInstance(layer));
+    
 }
 
 
@@ -87,8 +88,10 @@ TrackingEventHandler.getInstance()!.fireEvent(TrackingEventCircularStaticPool.ge
     var basicGeographicMapUtil: BasicGeographicMapUtil = BasicGeographicMapUtil.getInstance()!;
         
         
-
-basicGeographicMapUtil!.setPosition(geographicMapInterfaceArray, x, y)
+;
+    
+basicGeographicMapUtil!.setPosition(geographicMapInterfaceArray, x, y);
+    
 }
 
 

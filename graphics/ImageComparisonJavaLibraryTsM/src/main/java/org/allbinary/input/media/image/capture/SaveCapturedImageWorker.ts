@@ -18,10 +18,13 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { BufferedImage } from "../../../../../../java/awt/image/BufferedImage.js";
 
     
-import { Vector } from "../../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../../java/util/Vector.js";
 
     
 import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
@@ -80,53 +83,73 @@ public constructor (){
 
     public setRunning(running: boolean){
 var running = running
-this.running= running
+this.running= running;
+    
 }
 
 
     public onCaptureEvent(capturedImageEvent: CapturedImageWorkerResultsEvent){
 var capturedImageEvent = capturedImageEvent
-capturedImageWorkerResultsEventVector!.add(capturedImageEvent)
-run()
+capturedImageWorkerResultsEventVector!.add(capturedImageEvent);
+    
+run();
+    
 }
 
 
     public onEvent(allBinaryEventObject: AllBinaryEventObject){
 var allBinaryEventObject = allBinaryEventObject
-onCaptureEvent(allBinaryEventObject as CapturedImageWorkerResultsEvent)
+onCaptureEvent(allBinaryEventObject as CapturedImageWorkerResultsEvent);
+    
 }
 
 
     public run(){
 
         try {
-            logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.RUN)
-setRunning(true)
+            logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.RUN);
+    
+setRunning(true);
+    
 
     var timeHelper: TimeDelayHelper = new TimeDelayHelper(1000);
         
         
+;
+    
+timeHelper!.setStartTime();
+    
 
-timeHelper!.setStartTime()
+    var capturedImageWorkerResultsEvent: CapturedImageWorkerResultsEvent = (capturedImageWorkerResultsEventVector!.get(0);
 
-    var capturedImageWorkerResultsEvent: CapturedImageWorkerResultsEvent = (capturedImageWorkerResultsEventVector!.get(0) as CapturedImageWorkerResultsEvent);
+                         as CapturedImageWorkerResultsEvent);
         
         
-
+;
+    
 
     var screenBufferedImage: BufferedImage = capturedImageWorkerResultsEvent!.getBufferedImage()!;
         
         
-
+;
+    
 CapturedImageInputOutput().
-                            save(screenBufferedImage, capturedImageWorkerResultsEvent!.getFrame())
-capturedImageWorkerResultsEventVector!.remove(capturedImageWorkerResultsEvent)
-logUtil!.put(CommonLabels.getInstance()!.ELAPSED +timeHelper!.getElapsed(), this, this.commonStrings!.RUN)
-setRunning(false)
-logUtil!.put(this.commonStrings!.END, this, this.commonStrings!.RUN)
-} catch(e: Exception)
+                            save(screenBufferedImage, capturedImageWorkerResultsEvent!.getFrame());
+    
+capturedImageWorkerResultsEventVector!.remove(capturedImageWorkerResultsEvent);
+    
+logUtil!.put(CommonLabels.getInstance()!.ELAPSED +timeHelper!.getElapsed(), this, this.commonStrings!.RUN);
+    
+setRunning(false);
+    
+logUtil!.put(this.commonStrings!.END, this, this.commonStrings!.RUN);
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e)
+logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e);
+    
 }
 
 }

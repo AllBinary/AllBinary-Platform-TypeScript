@@ -75,48 +75,61 @@ public constructor (){
     //var abeClientInformation = abeClientInformation
 
         try {
-            logUtil!.put(commonStrings!.START, this, commonStrings!.GET)
+            logUtil!.put(commonStrings!.START, this, commonStrings!.GET);
+    
 
     var xmlRpcAbeLicenseClient: XmlRpcAbeClient = new XmlRpcAbeLicenseRetrievalClient(abeClientInformation);
         
         
-
+;
+    
 
     var abeLicenseInterface: AbeLicenseInterface = xmlRpcAbeLicenseClient!.get(
-                            null) as AbeLicenseInterface;
-        
-        
+                            null);
 
+                         as AbeLicenseInterface;
+        
+        
+;
+    
 
     var licenseId: string = abeLicenseInterface!.getLicenseId()!;
         
         
-
+;
+    
 
     var servers: BasicArrayList = abeLicenseInterface!.getServers()!;
         
         
-
+;
+    
 
     var isNewLicenseId: boolean = false;
         
         
-
+;
+    
 
     var isBetterServerList: boolean = false;
         
         
-
+;
+    
 
     var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
         
         
+;
+    
 
+                        if(stringValidationUtil!.isEmpty(abeClientInformation!.getLicenseId()) && !abeClientInformation!.isSameId(licenseId);
 
-                        if(stringValidationUtil!.isEmpty(abeClientInformation!.getLicenseId()) && !abeClientInformation!.isSameId(licenseId))
+                        )
                         
                                     {
-                                    isNewLicenseId= true
+                                    isNewLicenseId= true;
+    
 
                                     }
                                 
@@ -124,7 +137,8 @@ public constructor (){
                         if(servers.size() >= MINSERVERS && abeClientInformation!.isLargerOrDifferentServerList(servers))
                         
                                     {
-                                    isBetterServerList= true
+                                    isBetterServerList= true;
+    
 
                                     }
                                 
@@ -136,22 +150,30 @@ public constructor (){
     var initInfo: LicenseInitInfo = LicenseInitInfoUtil.getInstance()!.read()!;
         
         
-
-initInfo!.setLicenseId(licenseId)
-initInfo!.setServerList(servers)
-LicenseInitInfoUtil.getInstance()!.write(initInfo)
-abeClientInformation!.init()
+;
+    
+initInfo!.setLicenseId(licenseId);
+    
+initInfo!.setServerList(servers);
+    
+LicenseInitInfoUtil.getInstance()!.write(initInfo);
+    
+abeClientInformation!.init();
+    
 
                                     }
                                 
-logUtil!.put(commonStrings!.END, this, commonStrings!.GET)
+logUtil!.put(commonStrings!.END, this, commonStrings!.GET);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return abeLicenseInterface;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
 

@@ -46,7 +46,7 @@ export class NullRotationAnimationFactory
 }
 
 
-    public readonly NULL_ROTATION_ANIMATION_ARRAY: RotationAnimation[] = new Array(0);
+    public readonly NULL_ROTATION_ANIMATION_ARRAY: RotationAnimation[] = [];
         
         
 

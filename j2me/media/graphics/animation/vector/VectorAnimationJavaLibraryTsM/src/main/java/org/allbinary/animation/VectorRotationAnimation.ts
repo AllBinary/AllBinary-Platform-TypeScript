@@ -39,7 +39,7 @@ import { FrameUtil } from "../../../org/allbinary/math/FrameUtil.js";
 
 export class VectorRotationAnimation extends VectorBaseRotationAnimation {
         
-public constructor (currentPoints: IntArray[][], basicColor: BasicColor, animationBehavior: AnimationBehavior)                        
+public constructor (currentPoints: number[][][], basicColor: BasicColor, animationBehavior: AnimationBehavior)                        
 
                             : super(AngleInfo.getInstance((AngleFactory.getInstance()!.TOTAL_ANGLE /currentPoints!.length).toShort()), currentPoints, basicColor, animationBehavior){
 
@@ -51,7 +51,8 @@ public constructor (currentPoints: IntArray[][], basicColor: BasicColor, animati
 
                             //For kotlin this is before the body of the constructor.
                     
-this.angleInfo!.adjustAngle(this.getFrame())
+this.angleInfo!.adjustAngle(this.getFrame());
+    
 }
 
 
@@ -61,33 +62,42 @@ this.angleInfo!.adjustAngle(this.getFrame())
     var angle: Angle = directionUtil!.getFrameAngle(direction)!;
         
         
-
-this.adjustFrame(angle)
+;
+    
+this.adjustFrame(angle);
+    
 }
 
 
     public setFrame(angle: Angle){
     //var angle = angle
-this.adjustFrame(angle)
+this.adjustFrame(angle);
+    
 }
 
 
     public setFrame(index: number){
     //var index = index
-super.setFrame(index)
-this.angleInfo!.adjustAngle(this.getFrame())
+super.setFrame(index);
+    
+this.angleInfo!.adjustAngle(this.getFrame());
+    
 }
 
 
     public adjustFrame(newAngle: number){
     //var newAngle = newAngle
-this.setFrame(frameUtil!.getFrameForAngle(newAngle, this.angleInfo!.getAngleIncrementInfo()!.getAngleIncrement().toInt()))
+this.setFrame(frameUtil!.getFrameForAngle(newAngle, this.angleInfo!.getAngleIncrementInfo()!.getAngleIncrement();
+
+                        .toInt()));
+    
 }
 
 
     public adjustFrame(newAngle: Angle){
     //var newAngle = newAngle
-this.adjustFrame(newAngle!.getValue())
+this.adjustFrame(newAngle!.getValue());
+    
 }
 
 

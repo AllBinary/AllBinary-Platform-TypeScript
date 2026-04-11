@@ -93,7 +93,8 @@ protected constructor (resources: BasicGameResources[]){
 
             super();
             var resources = resources
-this.resources= resources
+this.resources= resources;
+    
 }
 
 
@@ -106,17 +107,20 @@ this.resources= resources
     var name: string = flagResources!.NAME;
         
         
-
+;
+    
 
     var index: number = name.indexOf(commonSeps!.SPACE)!;
         
         
-
+;
+    
 
                         if(index >= 0)
                         
                                     {
-                                    name= name.substring(index)
+                                    name= name.substring(index);
+    
 
                                     }
                                 
@@ -125,6 +129,8 @@ this.resources= resources
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.createFlagItem(flagResources, name, layerInterfaceFactoryInterface);
+
+                        ;
     
 }
 
@@ -139,12 +145,14 @@ this.resources= resources
     var IMAGE_CACHE: ImageCache = GameFeatureImageCacheFactory.getInstance()!;
         
         
-
+;
+    
 
     var image: Image = IMAGE_CACHE.get(flagResources!.RESOURCE_ICON)!;
         
         
-
+;
+    
 
     var item: CustomItem = new LayerInterfaceFactoryImageItem(name, image, ImageItem.LAYOUT_DEFAULT, flagResources!.NAME, basicColor, 
                                                 [
@@ -154,7 +162,8 @@ this.resources= resources
                                                 ], layerInterfaceFactoryInterface);
         
         
-
+;
+    
 
 
 

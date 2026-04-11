@@ -79,7 +79,8 @@ var negativeValue = negativeValue
         
 index >= lastMin; index--)
         {
-INTEGER_ARRAY[index +NEGATIVE_MAX]= index as Long
+INTEGER_ARRAY[index +NEGATIVE_MAX]= index as Long;
+    
 }
 
 
@@ -92,15 +93,18 @@ INTEGER_ARRAY[index +NEGATIVE_MAX]= index as Long
         
 index >= lastNegativeMin; index--)
         {
-INTEGER_ARRAY[index]=  -index as Long
+INTEGER_ARRAY[index]=  -index as Long;
+    
 }
 
 
                         if(lastMin < value)
                         
                                     {
-                                    lastMin= value
-MIN= value
+                                    lastMin= value;
+    
+MIN= value;
+    
 
                                     }
                                 
@@ -108,7 +112,8 @@ MIN= value
                         if(lastNegativeMin < negativeValue)
                         
                                     {
-                                    lastNegativeMin= negativeValue
+                                    lastNegativeMin= negativeValue;
+    
 
                                     }
                                 
@@ -136,7 +141,8 @@ MIN= value
         
 index >= lastMin; index--)
         {
-INTEGER_ARRAY[index +NEGATIVE_MAX]= index as Long
+INTEGER_ARRAY[index +NEGATIVE_MAX]= index as Long;
+    
 }
 
 
@@ -149,11 +155,14 @@ INTEGER_ARRAY[index +NEGATIVE_MAX]= index as Long
         
 index >= lastNegativeMin; index--)
         {
-INTEGER_ARRAY[index]=  -index as Long
+INTEGER_ARRAY[index]=  -index as Long;
+    
 }
 
-lastMin= POSITIVE_MAX
-lastNegativeMin= NEGATIVE_MAX
+lastMin= POSITIVE_MAX;
+    
+lastNegativeMin= NEGATIVE_MAX;
+    
 
                                     }
                                 
@@ -198,14 +207,16 @@ var index = index
     var i: number = index +NEGATIVE_MAX;
         
         
-
+;
+    
 
                         if(STRING_ARRAY[i] == 
                                     null
                                 )
                         
                                     {
-                                    STRING_ARRAY[i]= this.INTEGER_ARRAY[i]!.toString()
+                                    STRING_ARRAY[i]= this.INTEGER_ARRAY[i]!.toString();
+    
 
                                     }
                                 

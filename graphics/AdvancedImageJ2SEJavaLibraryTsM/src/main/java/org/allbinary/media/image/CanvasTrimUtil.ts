@@ -71,21 +71,25 @@ export class CanvasTrimUtil
     var bufferedImageArray: BufferedImage[] = imageProcessorInput!.getBufferedImageArray()!;
         
         
-
+;
+    
 
     var subBufferedImageArray: BufferedImage[] = new Array(bufferedImageArray!.length);
         
         
-
+;
+    
 
     var size: number = bufferedImageArray!.length
                 ;
         
         
-
+;
+    
 
     var bufferedImage: BufferedImage
-
+;
+    
 
 
 
@@ -96,9 +100,12 @@ export class CanvasTrimUtil
         
 index < size; index++)
         {
-bufferedImage= bufferedImageArray[index]!
-subBufferedImageArray[index]= bufferedImage!.getSubimage(cutCanvasFromLeftReduction, cutCanvasFromTopReduction, bufferedImage!.getWidth() -cutCanvasFromLeftReduction -cutCanvasFromRightReduction, bufferedImage!.getHeight() -cutCanvasFromTopReduction -cutCanvasFromBottomReduction)
-visitor.visit(subBufferedImageArray[index]!, stringUtil!.EMPTY_STRING, index)
+bufferedImage= bufferedImageArray[index]!;
+    
+subBufferedImageArray[index]= bufferedImage!.getSubimage(cutCanvasFromLeftReduction, cutCanvasFromTopReduction, bufferedImage!.getWidth() -cutCanvasFromLeftReduction -cutCanvasFromRightReduction, bufferedImage!.getHeight() -cutCanvasFromTopReduction -cutCanvasFromBottomReduction);
+    
+visitor.visit(subBufferedImageArray[index]!, stringUtil!.EMPTY_STRING, index);
+    
 }
 
 }

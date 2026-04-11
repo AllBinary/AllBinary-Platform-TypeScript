@@ -91,19 +91,22 @@ export class GroupLayerManagerListener extends LayerManagerEventListener {
 private constructor (){
 
             super();
-            LayerManagerEventHandler.getInstance()!.addListener(this)
+            LayerManagerEventHandler.getInstance()!.addListener(this);
+    
 }
 
 
     public clear(){
 
     var groupList: BasicArrayList
-
+;
+    
 
     var size: number = list.size()!;
         
         
-
+;
+    
 
 
 
@@ -114,8 +117,10 @@ private constructor (){
         
 index >= 0; index--)
         {
-groupList= this.list.objectArray[index]! as BasicArrayList
-groupList!.clear()
+groupList= this.list.objectArray[index]! as BasicArrayList;
+    
+groupList!.clear();
+    
 }
 
 }
@@ -127,12 +132,15 @@ groupList!.clear()
     var groupInterfaceArray: Group[] = groupInterfaceCompositeInterface!.getGroupInterface()!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getGroupSize(groupInterfaceArray[0]!);
+
+                        ;
     
 }
 
@@ -140,15 +148,20 @@ groupList!.clear()
     public getGroupSize(groupInterface: Group): number{
     //var groupInterface = groupInterface
 
-    var id: number = groupInterface!.getGroupId().toInt();
-        
-        
+    var id: number = groupInterface!.getGroupId();
 
+                        .toInt();
+        
+        
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getGroupSize(id);
+
+                        ;
     
 }
 
@@ -156,15 +169,20 @@ groupList!.clear()
     public getList(groupInterface: Group): BasicArrayList{
     //var groupInterface = groupInterface
 
-    var id: number = groupInterface!.getGroupId().toInt();
-        
-        
+    var id: number = groupInterface!.getGroupId();
 
+                        .toInt();
+        
+        
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getList(id);
+
+                        ;
     
 }
 
@@ -175,7 +193,8 @@ groupList!.clear()
     var groupList: BasicArrayList = this.list.objectArray[groupId]! as BasicArrayList;
         
         
-
+;
+    
 
 
 
@@ -191,12 +210,14 @@ groupList!.clear()
     var groupList: BasicArrayList = this.list.objectArray[groupId]! as BasicArrayList;
         
         
-
+;
+    
 
     var size: number = groupList!.size()!;
         
         
-
+;
+    
 
 
 
@@ -209,15 +230,19 @@ groupList!.clear()
     public areAllOtherGroupsEmpty(groupInterface: Group): boolean{
     //var groupInterface = groupInterface
 
-    var id: number = groupInterface!.getGroupId().toInt();
-        
-        
+    var id: number = groupInterface!.getGroupId();
 
+                        .toInt();
+        
+        
+;
+    
 
     var size: number = list.size()!;
         
         
-
+;
+    
 
 
 
@@ -236,13 +261,15 @@ index >= 0; index--)
     var groupSize: number = this.getGroupSize(index)!;
         
         
-
+;
+    
 
                         if(groupSize != 0)
                         
                                     {
                                     logUtil!.put(StringMaker().
-                            append("Group Size: ")!.appendint(groupSize)!.toString(), this, "areAllOtherGroupsEmpty")
+                            append("Group Size: ")!.appendint(groupSize)!.toString(), this, "areAllOtherGroupsEmpty");
+    
 
 
 
@@ -273,16 +300,20 @@ index >= 0; index--)
     var size: number = excludeGroupList!.size()!;
         
         
-
+;
+    
 
     var groupInterfaceArray: Group[]
-
+;
+    
 
     var groupInterface: Group
-
+;
+    
 
     var groupId: number= 0
-
+;
+    
 
 
 
@@ -293,13 +324,15 @@ index >= 0; index--)
         
 index >= 0; index--)
         {
-groupInterfaceArray= excludeGroupList!.objectArray[index]! as Array<Group?>
+groupInterfaceArray= excludeGroupList!.objectArray[index]! as Array<Group?>;
+    
 
     var size2: number = groupInterfaceArray!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -310,8 +343,12 @@ groupInterfaceArray= excludeGroupList!.objectArray[index]! as Array<Group?>
         
 index2 < size2; index2++)
         {
-groupInterface= groupInterfaceArray[index2]!
-groupId= groupInterface!.getGroupId().toInt()
+groupInterface= groupInterfaceArray[index2]!;
+    
+groupId= groupInterface!.getGroupId();
+
+                        .toInt();
+    
 
                         if(groupId == id)
                         
@@ -345,7 +382,8 @@ groupId= groupInterface!.getGroupId().toInt()
     var size: number = list.size()!;
         
         
-
+;
+    
 
 
 
@@ -357,14 +395,17 @@ groupId= groupInterface!.getGroupId().toInt()
 index >= 0; index--)
         {
 
-                        if(!this.isIdInList(index, excludeGroupList))
+                        if(!this.isIdInList(index, excludeGroupList);
+
+                        )
                         
                                     {
                                     
     var groupSize: number = this.getGroupSize(index)!;
         
         
-
+;
+    
 
                         if(groupSize >= maxSize)
                         
@@ -397,7 +438,8 @@ var total = total
 
         while(this.list.size() <= total +1)
         {
-this.list.add(BasicArrayList())
+this.list.add(BasicArrayList());
+    
 }
 
 }
@@ -405,7 +447,8 @@ this.list.add(BasicArrayList())
 
     public onEvent(eventObject: AllBinaryEventObject){
     //var eventObject = eventObject
-ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
+ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
+    
 }
 
 
@@ -417,24 +460,29 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
     var layerInterface: AllBinaryLayer = layerManagerEvent!.getLayerInterface()!;
         
         
-
+;
+    
 
     var groupInterfaceArray: Group[] = layerInterface!.getGroupInterface()!;
         
         
-
+;
+    
 
     var size: number = groupInterfaceArray!.length
                 ;
         
         
-
+;
+    
 
     var id: number= 0
-
+;
+    
 
     var groupList: BasicArrayList
-
+;
+    
 
 
 
@@ -445,8 +493,12 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
         
 index < size; index++)
         {
-id= groupInterfaceArray[index]!.getGroupId().toInt()
-groupList= this.list.objectArray[id]! as BasicArrayList
+id= groupInterfaceArray[index]!.getGroupId();
+
+                        .toInt();
+    
+groupList= this.list.objectArray[id]! as BasicArrayList;
+    
 
                         if(groupList == 
                                     null
@@ -454,15 +506,19 @@ groupList= this.list.objectArray[id]! as BasicArrayList
                         
                                     {
                                     logUtil!.put(StringMaker().
-                            append("id: ")!.appendint(id)!.toString(), this, "onCreateLayerManagerEvent")
+                            append("id: ")!.appendint(id)!.toString(), this, "onCreateLayerManagerEvent");
+    
 
                                     }
                                 
 
-                        if(!groupList!.contains(layerInterface))
+                        if(!groupList!.contains(layerInterface);
+
+                        )
                         
                                     {
-                                    groupList!.add(layerInterface)
+                                    groupList!.add(layerInterface);
+    
 
                                     }
                                 
@@ -483,24 +539,29 @@ groupList= this.list.objectArray[id]! as BasicArrayList
     var layerInterface: AllBinaryLayer = layerManagerEvent!.getLayerInterface()!;
         
         
-
+;
+    
 
     var groupInterfaceArray: Group[] = layerInterface!.getGroupInterface()!;
         
         
-
+;
+    
 
     var size: number = groupInterfaceArray!.length
                 ;
         
         
-
+;
+    
 
     var id: number= 0
-
+;
+    
 
     var groupList: BasicArrayList
-
+;
+    
 
 
 
@@ -511,9 +572,14 @@ groupList= this.list.objectArray[id]! as BasicArrayList
         
 index < size; index++)
         {
-id= groupInterfaceArray[index]!.getGroupId().toInt()
-groupList= this.list.objectArray[id]! as BasicArrayList
-groupList!.remove(layerInterface)
+id= groupInterfaceArray[index]!.getGroupId();
+
+                        .toInt();
+    
+groupList= this.list.objectArray[id]! as BasicArrayList;
+    
+groupList!.remove(layerInterface);
+    
 }
 
 }
@@ -524,27 +590,32 @@ groupList!.remove(layerInterface)
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
     var GROUP: string = "Group: ";
         
         
-
+;
+    
 
     var SPACE: string = CommonSeps.getInstance()!.SPACE;
         
         
-
+;
+    
 
     var TOTAL_LABEL: string = CommonLabels.getInstance()!.TOTAL_LABEL;
         
         
-
+;
+    
 
     var size: number = list.size()!;
         
         
-
+;
+    
 
 
 
@@ -559,16 +630,24 @@ index >= 0; index--)
     var groupList: BasicArrayList = this.list.objectArray[index]! as BasicArrayList;
         
         
-
-stringBuffer!.append(GROUP)
-stringBuffer!.appendint(index)
-stringBuffer!.append(SPACE)
-stringBuffer!.append(TOTAL_LABEL)
-stringBuffer!.appendint(groupList!.size())
-stringBuffer!.append(SPACE)
+;
+    
+stringBuffer!.append(GROUP);
+    
+stringBuffer!.appendint(index);
+    
+stringBuffer!.append(SPACE);
+    
+stringBuffer!.append(TOTAL_LABEL);
+    
+stringBuffer!.appendint(groupList!.size());
+    
+stringBuffer!.append(SPACE);
+    
 }
 
-logUtil!.put(stringBuffer!.toString(), this, "log")
+logUtil!.put(stringBuffer!.toString(), this, "log");
+    
 }
 
 

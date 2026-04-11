@@ -113,34 +113,44 @@ public constructor (name: string, rectangle: Rectangle, viewPosition: ViewPositi
                     
 
     var localName: string
-
+;
+    
 
                         if(name == 
                                     null
                                 )
                         
                                     {
-                                    localName= this::class.toString()!
+                                    localName= this.constructor.name.toString()!;
+    
 
                                     }
                                 
                         else {
                             localName= StringMaker().
-                            append(name)!.append(CommonSeps.getInstance()!.COLON)!.append(Integer.toHexString(this.hashCode()))!.toString()
+                            append(name)!.append(CommonSeps.getInstance()!.COLON)!.append(Integer.toHexString(this.hashCode()))!.toString();
+    
 
                         }
                             
-this.name= localName
+this.name= localName;
+    
 
     var point: GPoint = rectangle.getPoint()!;
         
         
-
-this.setPosition(point.getX(), point.getY(), point.getZ())
-this.setHalfWidth((this.getWidth() shr 1))
-this.setHalfHeight((this.getHeight() shr 1))
-this.viewPosition= viewPosition
-this.viewPosition!.setAllbinaryLayer(this)
+;
+    
+this.setPosition(point.getX(), point.getY(), point.getZ());
+    
+this.setHalfWidth((this.getWidth() shr 1));
+    
+this.setHalfHeight((this.getHeight() shr 1));
+    
+this.viewPosition= viewPosition;
+    
+this.viewPosition!.setAllbinaryLayer(this);
+    
 }
 
 
@@ -198,7 +208,8 @@ this.viewPosition!.setAllbinaryLayer(this)
 
     setHalfWidth(halfWidth: number){
     //var halfWidth = halfWidth
-this.halfWidth= halfWidth
+this.halfWidth= halfWidth;
+    
 }
 
 
@@ -214,7 +225,8 @@ this.halfWidth= halfWidth
 
     setHalfHeight(halfHeight: number){
     //var halfHeight = halfHeight
-this.halfHeight= halfHeight
+this.halfHeight= halfHeight;
+    
 }
 
 
@@ -233,7 +245,9 @@ this.halfHeight= halfHeight
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getDepth().toInt() /2;
+                        return this.getDepth();
+
+                        .toInt() /2;
     
 }
 
@@ -250,7 +264,8 @@ this.halfHeight= halfHeight
 
     public setViewPosition(viewPosition: ViewPosition){
     //var viewPosition = viewPosition
-this.viewPosition= viewPosition
+this.viewPosition= viewPosition;
+    
 }
 
 
@@ -310,6 +325,8 @@ this.viewPosition= viewPosition
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return OpenGLFeatureUtil.getInstance()!.isAnyThreed();
+
+                        ;
     
 }
 
@@ -340,36 +357,58 @@ this.viewPosition= viewPosition
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
         
         
-
+;
+    
 
     var positionStrings: PositionStrings = PositionStrings.getInstance()!;
         
         
-
+;
+    
 
     var commonLabels: CommonLabels = CommonLabels.getInstance()!;
         
         
-
-stringBuffer!.append(this.getName())
-stringBuffer!.append(commonSeps!.COLON)
-stringBuffer!.append(TYPE)
-stringBuffer!.appendint(this.getType())
-stringBuffer!.append(commonSeps!.SPACE)
-stringBuffer!.append(positionStrings!.X_LABEL)
-stringBuffer!.appendint(this.getXP())
-stringBuffer!.append(commonSeps!.SPACE)
-stringBuffer!.append(positionStrings!.Y_LABEL)
-stringBuffer!.appendint(this.getYP())
-stringBuffer!.append(commonSeps!.SPACE)
-stringBuffer!.append(positionStrings!.Z_LABEL)
-stringBuffer!.appendint(this.getZP())
-stringBuffer!.append(commonSeps!.SPACE)
-stringBuffer!.append(commonLabels!.WIDTH_LABEL)
-stringBuffer!.appendint(this.getWidth())
-stringBuffer!.append(commonSeps!.SPACE)
-stringBuffer!.append(commonLabels!.HEIGHT_LABEL)
-stringBuffer!.appendint(this.getHeight())
+;
+    
+stringBuffer!.append(this.getName());
+    
+stringBuffer!.append(commonSeps!.COLON);
+    
+stringBuffer!.append(TYPE);
+    
+stringBuffer!.appendint(this.getType());
+    
+stringBuffer!.append(commonSeps!.SPACE);
+    
+stringBuffer!.append(positionStrings!.X_LABEL);
+    
+stringBuffer!.appendint(this.getXP());
+    
+stringBuffer!.append(commonSeps!.SPACE);
+    
+stringBuffer!.append(positionStrings!.Y_LABEL);
+    
+stringBuffer!.appendint(this.getYP());
+    
+stringBuffer!.append(commonSeps!.SPACE);
+    
+stringBuffer!.append(positionStrings!.Z_LABEL);
+    
+stringBuffer!.appendint(this.getZP());
+    
+stringBuffer!.append(commonSeps!.SPACE);
+    
+stringBuffer!.append(commonLabels!.WIDTH_LABEL);
+    
+stringBuffer!.appendint(this.getWidth());
+    
+stringBuffer!.append(commonSeps!.SPACE);
+    
+stringBuffer!.append(commonLabels!.HEIGHT_LABEL);
+    
+stringBuffer!.appendint(this.getHeight());
+    
 }
 
 
@@ -378,13 +417,17 @@ stringBuffer!.appendint(this.getHeight())
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-this.toString(stringBuffer)
+;
+    
+this.toString(stringBuffer);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

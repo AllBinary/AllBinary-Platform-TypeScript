@@ -33,7 +33,7 @@ export class BaseSecretComposite
 
                 //@Throws(Error::class)
             
-    public encrypt(array: ByteArray): ByteArray{
+    public encrypt(array: number[]): number[]{
     //var array = array
 
 
@@ -46,7 +46,7 @@ export class BaseSecretComposite
 
                 //@Throws(Error::class)
             
-    public decrypt(array: ByteArray): ByteArray{
+    public decrypt(array: number[]): number[]{
 var array = array
 
 

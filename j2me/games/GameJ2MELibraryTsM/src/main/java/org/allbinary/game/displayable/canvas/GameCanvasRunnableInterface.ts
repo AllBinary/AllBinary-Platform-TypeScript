@@ -18,7 +18,10 @@
 
 
 
-import { Hashtable } from "../../../../../java/util/Hashtable.js";
+            import Hashtable from "@ohos.util.HashMap";
+        
+
+//import { Hashtable } from "../../../../../java/util/Hashtable.js";
 
     
 import { CommandListener } from "../../../../../javax/microedition/lcdui/CommandListener.js";
@@ -66,15 +69,15 @@ interface GameCanvasRunnableInterface extends RunnableInterface, PaintableInterf
 
                 //@Throws(Error::class)
             
-    getCurrentStateHashtable(): Hashtable<Any, Any>
+    getCurrentStateHashtable(): Hashtable<any, any>
 
                 //@Throws(Error::class)
             
-    getLoadStateHashtable(): Hashtable<Any, Any>
+    getLoadStateHashtable(): Hashtable<any, any>
 
                 //@Throws(Error::class)
             
-    setLoadStateHashtable(hashtable: Hashtable<Any, Any>)
+    setLoadStateHashtable(hashtable: Hashtable<any, any>)
 
     getType(): number
 

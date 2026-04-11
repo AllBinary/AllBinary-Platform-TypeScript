@@ -56,23 +56,30 @@ public constructor ()
     public setTiledLayer(tiledLayer: AllBinaryTiledLayer){
 var tiledLayer = tiledLayer
 
-    var viewPosition: TileLayerPositionIntoViewPosition = this.getViewPosition() as TileLayerPositionIntoViewPosition;
-        
-        
+    var viewPosition: TileLayerPositionIntoViewPosition = this.getViewPosition();
 
-viewPosition!.setTiledLayer(tiledLayer)
-viewPositionEventHandler!.addListener(this as AllBinaryLayer)
+                         as TileLayerPositionIntoViewPosition;
+        
+        
+;
+    
+viewPosition!.setTiledLayer(tiledLayer);
+    
+viewPositionEventHandler!.addListener(this as AllBinaryLayer);
+    
 }
 
 
     public setDestroyed(destroyed: boolean){
 var destroyed = destroyed
-super.setDestroyed(destroyed)
+super.setDestroyed(destroyed);
+    
 
                         if(this.isDestroyed())
                         
                                     {
-                                    viewPositionEventHandler!.removeListener(this)
+                                    viewPositionEventHandler!.removeListener(this);
+    
 
                                     }
                                 

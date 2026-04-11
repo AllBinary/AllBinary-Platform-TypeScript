@@ -94,8 +94,10 @@ export class SelectionHudPaintable extends InitUpdatePaintable {
 protected constructor (){
 
             super();
-            this.update()
-this.primitiveLongUtil= PrimitiveLongUtil(10000)
+            this.update();
+    
+this.primitiveLongUtil= PrimitiveLongUtil(10000);
+    
 }
 
 
@@ -104,17 +106,24 @@ this.primitiveLongUtil= PrimitiveLongUtil(10000)
     var touchButtonLocationHelper: TouchButtonLocationHelper = new TouchButtonLocationHelper();
         
         
-
+;
+    
 
     var displayInfoSingleton: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
         
         
-
-this.x= CommonButtons.getInstance()!.STANDARD_BUTTON_SIZE +touchButtonLocationHelper!.getColumnsRemainderHalf()
-this.textX= this.getX() +4
-this.width= displayInfoSingleton!.getLastWidth() -this.getX() *2
-this.imageX= this.getWidth() +touchButtonLocationHelper!.getColumnsRemainderHalf() -10
-this.setHeight(CommonButtons.getInstance()!.STANDARD_BUTTON_SIZE +myFont!.DEFAULT_CHAR_HEIGHT)
+;
+    
+this.x= CommonButtons.getInstance()!.STANDARD_BUTTON_SIZE +touchButtonLocationHelper!.getColumnsRemainderHalf();
+    
+this.textX= this.getX() +4;
+    
+this.width= displayInfoSingleton!.getLastWidth() -this.getX() *2;
+    
+this.imageX= this.getWidth() +touchButtonLocationHelper!.getColumnsRemainderHalf() -10;
+    
+this.setHeight(CommonButtons.getInstance()!.STANDARD_BUTTON_SIZE +myFont!.DEFAULT_CHAR_HEIGHT);
+    
 }
 
 
@@ -132,10 +141,14 @@ this.setHeight(CommonButtons.getInstance()!.STANDARD_BUTTON_SIZE +myFont!.DEFAUL
 
     public paint(graphics: Graphics){
 var graphics = graphics
-graphics.setColor(backgroundColor)
-graphics.drawRect(this.getX(), y, this.getWidth(), this.getHeight())
-graphics.setColor(this.getColor())
-graphics.drawString(getName(), this.textX, y, 0)
+graphics.setColor(backgroundColor);
+    
+graphics.drawRect(this.getX(), y, this.getWidth(), this.getHeight());
+    
+graphics.setColor(this.getColor());
+    
+graphics.drawString(getName(), this.textX, y, 0);
+    
 }
 
 
@@ -151,7 +164,8 @@ graphics.drawString(getName(), this.textX, y, 0)
 
     setAnimationInterface(animationInterface: Animation){
 var animationInterface = animationInterface
-this.animationInterface= animationInterface
+this.animationInterface= animationInterface;
+    
 }
 
 
@@ -167,7 +181,8 @@ this.animationInterface= animationInterface
 
     setName(name: string){
 var name = name
-this.name= name
+this.name= name;
+    
 }
 
 
@@ -183,8 +198,10 @@ this.name= name
 
     public setBasicColorP(basicColor: BasicColor){
 var basicColor = basicColor
-this.basicColor= basicColor
-this.setColor(basicColor!.toInt())
+this.basicColor= basicColor;
+    
+this.setColor(basicColor!.toInt());
+    
 }
 
 
@@ -200,7 +217,8 @@ this.setColor(basicColor!.toInt())
 
     public setColor(color: number){
 var color = color
-this.color= color
+this.color= color;
+    
 }
 
 
@@ -226,7 +244,8 @@ this.color= color
 
     setHeight(height: number){
 var height = height
-this.height= height
+this.height= height;
+    
 }
 
 

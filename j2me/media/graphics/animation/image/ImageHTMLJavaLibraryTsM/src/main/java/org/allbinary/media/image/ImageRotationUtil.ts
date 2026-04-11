@@ -67,7 +67,8 @@ private constructor (){
     var image: Image = ImageCreationUtil.getInstance()!.getInstance(originalImage!.getWidth(), originalImage!.getHeight())!;
         
         
-
+;
+    
 
                         if(image.isMutable())
                         
@@ -78,7 +79,8 @@ private constructor (){
             ;
         
         
-
+;
+    
 
                         if(originalImage!.isMutable())
                         
@@ -87,8 +89,12 @@ private constructor (){
     var originalHTMLImage: PlaynMutableImage = originalImage as PlaynMutableImage;
         
         
+;
+    
+originalPlayNImage= originalHTMLImage!.getImage();
 
-originalPlayNImage= originalHTMLImage!.getImage() as playn.core.Image
+                         as playn.core.Image;
+    
 
                                     }
                                 
@@ -97,8 +103,12 @@ originalPlayNImage= originalHTMLImage!.getImage() as playn.core.Image
     var originalHTMLImage: PlaynImmutableImage = originalImage as PlaynImmutableImage;
         
         
+;
+    
+originalPlayNImage= originalHTMLImage!.getImage();
 
-originalPlayNImage= originalHTMLImage!.getImage() as playn.core.Image
+                         as playn.core.Image;
+    
 
                         }
                             
@@ -106,20 +116,34 @@ originalPlayNImage= originalHTMLImage!.getImage() as playn.core.Image
     var htmlImage: PlaynMutableImage = image as PlaynMutableImage;
         
         
+;
+    
 
+    var canvasImage: CanvasImage = htmlImage!.getImage();
 
-    var canvasImage: CanvasImage = htmlImage!.getImage() as CanvasImage;
+                         as CanvasImage;
         
         
-
+;
+    
 
     var canvasSurface: CanvasSurface = htmlImage!.getCanvasSurface(canvasImage)!;
         
         
+;
+    
+canvasSurface!.translate(originalPlayNImage!.width() /2, originalPlayNImage!.height() /2);
+    
+canvasSurface!.rotate(Math.toRadians(rotationInDegrees);
 
-canvasSurface!.translate(originalPlayNImage!.width() /2, originalPlayNImage!.height() /2)
-canvasSurface!.rotate(Math.toRadians(rotationInDegrees).toFloat())
-canvasSurface!.drawImage(originalPlayNImage,  -originalPlayNImage!.width() /2,  -originalPlayNImage!.height() /2)
+                        .toFloat());
+    
+canvasSurface!.drawImage(originalPlayNImage,  -originalPlayNImage!.width();
+
+                         /2,  -originalPlayNImage!.height();
+
+                         /2);
+    
 
 
 

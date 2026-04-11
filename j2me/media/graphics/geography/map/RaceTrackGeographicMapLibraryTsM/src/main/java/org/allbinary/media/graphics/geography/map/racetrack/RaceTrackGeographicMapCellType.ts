@@ -42,13 +42,16 @@ public constructor (type: number, travelCost: number)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.travelCost= travelCost
+this.travelCost= travelCost;
+    
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-this.name= commonStrings!.UNKNOWN
+;
+    
+this.name= commonStrings!.UNKNOWN;
+    
 }
 
 public constructor (name: string, type: number, travelCost: number)                        
@@ -63,8 +66,10 @@ public constructor (name: string, type: number, travelCost: number)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.name= name
-this.travelCost= travelCost
+this.name= name;
+    
+this.travelCost= travelCost;
+    
 }
 
 public constructor (name: string, type: number, travelCost: number, reset: number)                        
@@ -80,8 +85,10 @@ public constructor (name: string, type: number, travelCost: number, reset: numbe
 
                             //For kotlin this is before the body of the constructor.
                     
-this.name= name
-this.travelCost= travelCost
+this.name= name;
+    
+this.travelCost= travelCost;
+    
 }
 
 

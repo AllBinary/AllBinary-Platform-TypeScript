@@ -75,12 +75,14 @@ public constructor (resource: string){
     var resourceUtil: ResourceUtil = ResourceUtil.getInstance()!;
         
         
-
+;
+    
 
     var mediaPlayer: MediaPlayer = MediaPlayer.create(resourceUtil!.getContext(), resourceUtil!.getResourceId(resource)!.toInt())!;
         
         
-
+;
+    
 
                         if(mediaPlayer == 
                                     null
@@ -95,11 +97,16 @@ public constructor (resource: string){
 
                                     }
                                 
-this.setMediaPlayer(mediaPlayer)
-this.mediaPlayer!.setLooping(false)
-} catch(e: Exception)
+this.setMediaPlayer(mediaPlayer);
+    
+this.mediaPlayer!.setLooping(false);
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION_LABEL +resource, this, commonStrings!.CONSTRUCTOR, e)
+logUtil!.put(commonStrings!.EXCEPTION_LABEL +resource, this, commonStrings!.CONSTRUCTOR, e);
+    
 
 
 
@@ -111,7 +118,8 @@ logUtil!.put(commonStrings!.EXCEPTION_LABEL +resource, this, commonStrings!.CONS
 
     public setLoopCount(count: number){
 var count = count
-super.setLoopCount(count)
+super.setLoopCount(count);
+    
 
                         if(this.mediaPlayer != NullAndroidCanvas.NULL_MEDIA_PLAYER && this.mediaPlayer != 
                                     null
@@ -122,7 +130,8 @@ super.setLoopCount(count)
                         if(count == 0)
                         
                                     {
-                                    this.mediaPlayer!.setLooping(false)
+                                    this.mediaPlayer!.setLooping(false);
+    
 
                                     }
                                 
@@ -139,13 +148,15 @@ super.setLoopCount(count)
 
     public addPlayerListener(playerListener: PlayerListener){
 var playerListener = playerListener
-super.addPlayerListener(playerListener)
+super.addPlayerListener(playerListener);
+    
 }
 
 
     public removePlayerListener(playerListener: PlayerListener){
 var playerListener = playerListener
-super.removePlayerListener(playerListener)
+super.removePlayerListener(playerListener);
+    
 }
 
 
@@ -179,11 +190,16 @@ super.removePlayerListener(playerListener)
     public close(){
 
         try {
-            this.mediaPlayer!.release()
-this.mediaPlayer= NullAndroidCanvas.NULL_MEDIA_PLAYER
-} catch(e: Exception)
+            this.mediaPlayer!.release();
+    
+this.mediaPlayer= NullAndroidCanvas.NULL_MEDIA_PLAYER;
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CLOSE, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CLOSE, e);
+    
 }
 
 }
@@ -199,16 +215,23 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CLOSE, e)
                         if(this.mediaPlayer!.isPlaying())
                         
                                     {
-                                    this.mediaPlayer!.pause()
-this.mediaPlayer!.seekTo(0)
+                                    this.mediaPlayer!.pause();
+    
+this.mediaPlayer!.seekTo(0);
+    
 
                                     }
                                 
-this.mediaPlayer!.start()
-super.start()
-} catch(e: Exception)
+this.mediaPlayer!.start();
+    
+super.start();
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.START_METHOD_NAME, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.START_METHOD_NAME, e);
+    
 }
 
 }
@@ -220,12 +243,18 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.START_METHOD_NAME, e
     public stop(){
 
         try {
-            this.mediaPlayer!.stop()
-this.mediaPlayer!.prepare()
-super.stop()
-} catch(e: Exception)
+            this.mediaPlayer!.stop();
+    
+this.mediaPlayer!.prepare();
+    
+super.stop();
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "stop", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "stop", e);
+    
 }
 
 }
@@ -233,12 +262,14 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "stop", e)
 
     public update(event: string){
 var event = event
-logUtil!.put("LineEvent: " +event, this, commonStrings!.UPDATE)
+logUtil!.put("LineEvent: " +event, this, commonStrings!.UPDATE);
+    
 
     var size: number = this.listenersList!.size()!;
         
         
-
+;
+    
 
 
 
@@ -253,8 +284,10 @@ index < size; index++)
     var listener: PlayerListener = this.listenersList!.objectArray[index]! as PlayerListener;
         
         
-
-listener.playerUpdate(this, event, NullUtil.getInstance()!.NULL_OBJECT)
+;
+    
+listener.playerUpdate(this, event, NullUtil.getInstance()!.NULL_OBJECT);
+    
 }
 
 }
@@ -263,7 +296,8 @@ listener.playerUpdate(this, event, NullUtil.getInstance()!.NULL_OBJECT)
     public setVolume(leftVolume: number, rightVolume: number){
     //var leftVolume = leftVolume
     //var rightVolume = rightVolume
-this.mediaPlayer!.setVolume((leftVolume.toFloat()) /100.0f, (rightVolume.toFloat()) /100.0f)
+this.mediaPlayer!.setVolume((leftVolume.toFloat()) /100.0f, (rightVolume.toFloat()) /100.0f);
+    
 }
 
 
@@ -272,14 +306,17 @@ this.mediaPlayer!.setVolume((leftVolume.toFloat()) /100.0f, (rightVolume.toFloat
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return mediaPlayer!.getDuration().toLong();
+                        return mediaPlayer!.getDuration();
+
+                        .toLong();
     
 }
 
 
     public setMediaPlayer(mediaPlayer: MediaPlayer){
 var mediaPlayer = mediaPlayer
-this.mediaPlayer= mediaPlayer
+this.mediaPlayer= mediaPlayer;
+    
 }
 
 

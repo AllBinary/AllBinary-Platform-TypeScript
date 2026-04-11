@@ -18,10 +18,13 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { HashMap } from "../../../../../../../java/util/HashMap.js";
 
     
-import { Vector } from "../../../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../../../java/util/Vector.js";
 
     
 import { HttpServletRequest } from "../../../../../../../javax/servlet/http/HttpServletRequest.js";
@@ -108,12 +111,18 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
             super();
                 //var transformInfoInterface = transformInfoInterface
-this.transformInfoInterface= transformInfoInterface
-this.abPath= AbPath()
-this.category= CategoryData.getInstance()!.ROOTCATEGORY
-this.isRealRoot= true
-this.initPath()
-this.log()
+this.transformInfoInterface= transformInfoInterface;
+    
+this.abPath= AbPath();
+    
+this.category= CategoryData.getInstance()!.ROOTCATEGORY;
+    
+this.isRealRoot= true;
+    
+this.initPath();
+    
+this.log();
+    
 }
 
 public constructor (transformInfoInterface: TransformInfoInterface, categoryAbPath: AbPath){
@@ -121,20 +130,27 @@ public constructor (transformInfoInterface: TransformInfoInterface, categoryAbPa
             super();
                 //var transformInfoInterface = transformInfoInterface
     //var categoryAbPath = categoryAbPath
-this.transformInfoInterface= transformInfoInterface
-this.abPath= categoryAbPath
-this.category= PathUtil.getInstance()!.getNameFromPath(categoryAbPath!.toString())
+this.transformInfoInterface= transformInfoInterface;
+    
+this.abPath= categoryAbPath;
+    
+this.category= PathUtil.getInstance()!.getNameFromPath(categoryAbPath!.toString());
+    
 
                         if(StringValidationUtil.getInstance()!.isEmpty(this.category))
                         
                                     {
-                                    this.isRealRoot= true
-this.category= CategoryData.getInstance()!.ROOTCATEGORY
+                                    this.isRealRoot= true;
+    
+this.category= CategoryData.getInstance()!.ROOTCATEGORY;
+    
 
                                     }
                                 
-this.initPath()
-this.log()
+this.initPath();
+    
+this.log();
+    
 }
 
 public constructor (transformInfoInterface: TransformInfoInterface, node: Node){
@@ -142,51 +158,67 @@ public constructor (transformInfoInterface: TransformInfoInterface, node: Node){
             super();
                 //var transformInfoInterface = transformInfoInterface
     //var node = node
-this.transformInfoInterface= transformInfoInterface
+this.transformInfoInterface= transformInfoInterface;
+    
 
     var categoryPath: string = CategoryUtil.getNameFromNode(node)!;
         
         
-
-this.abPath= AbPath(categoryPath)
-this.category= PathUtil.getInstance()!.getNameFromPath(categoryPath)
+;
+    
+this.abPath= AbPath(categoryPath);
+    
+this.category= PathUtil.getInstance()!.getNameFromPath(categoryPath);
+    
 
                         if(StringValidationUtil.getInstance()!.isEmpty(this.category))
                         
                                     {
-                                    this.isRealRoot= true
-this.category= CategoryData.getInstance()!.ROOTCATEGORY
+                                    this.isRealRoot= true;
+    
+this.category= CategoryData.getInstance()!.ROOTCATEGORY;
+    
 
                                     }
                                 
-this.initPath()
-this.log()
+this.initPath();
+    
+this.log();
+    
 }
 
-public constructor (transformInfoInterface: TransformInfoInterface, categoryPropertiesHashMap: HashMap<Any, Any>){
+public constructor (transformInfoInterface: TransformInfoInterface, categoryPropertiesHashMap: HashMap<any, any>){
 
             super();
                 //var transformInfoInterface = transformInfoInterface
     //var categoryPropertiesHashMap = categoryPropertiesHashMap
-this.transformInfoInterface= transformInfoInterface
+this.transformInfoInterface= transformInfoInterface;
+    
 
     var categoryPath: string = new .toCharArray();
         
         
-
-this.abPath= AbPath(categoryPath)
-this.category= PathUtil.getInstance()!.getNameFromPath(categoryPath)
+;
+    
+this.abPath= AbPath(categoryPath);
+    
+this.category= PathUtil.getInstance()!.getNameFromPath(categoryPath);
+    
 
                         if(StringValidationUtil.getInstance()!.isEmpty(this.category))
                         
                                     {
-                                    this.isRealRoot= true
-this.category= CategoryData.getInstance()!.ROOTCATEGORY
+                                    this.isRealRoot= true;
+    
+this.category= CategoryData.getInstance()!.ROOTCATEGORY;
+    
 
                                     }
                                 
-this.initPath()
-this.log()
+this.initPath();
+    
+this.log();
+    
 }
 
 
@@ -197,24 +229,32 @@ this.log()
     var transformInfoHttpStoreInterface: TransformInfoHttpInterface = this.transformInfoInterface as TransformInfoHttpInterface;
         
         
-
+;
+    
 
     var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(transformInfoHttpStoreInterface!.getStoreName())!;
         
         
-
+;
+    
 
     var postPath: string = storeFrontInterface!.getCurrentHostNamePath() +storeFrontInterface!.getCategoryPath();
         
         
+;
+    
 
+    var httpServletRequest: HttpServletRequest = transformInfoHttpStoreInterface!.getPageContext()!.getRequest();
 
-    var httpServletRequest: HttpServletRequest = transformInfoHttpStoreInterface!.getPageContext()!.getRequest() as HttpServletRequest;
+                         as HttpServletRequest;
         
         
-
-this.webAppAbPath= AbPath(httpServletRequest!.getContextPath() +postPath)
-this.setRootFilePath(AbPath(URLGLOBALS.getMainPath() +postPath))
+;
+    
+this.webAppAbPath= AbPath(httpServletRequest!.getContextPath() +postPath);
+    
+this.setRootFilePath(AbPath(URLGLOBALS.getMainPath() +postPath));
+    
 }
 
 
@@ -243,20 +283,24 @@ this.setRootFilePath(AbPath(URLGLOBALS.getMainPath() +postPath))
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getValue() as Object;
+                        return this.getValue();
+
+                         as Object;
     
 }
 
 
     public setPath(path: AbPath){
 var path = path
-this.abPath= path
+this.abPath= path;
+    
 }
 
 
     public setRootFilePath(value: AbPath){
 var value = value
-this.fileAbPath= value
+this.fileAbPath= value;
+    
 }
 
 
@@ -315,7 +359,8 @@ this.fileAbPath= value
 
     public setValue(value: string){
 var value = value
-this.category= value
+this.category= value;
+    
 }
 
 
@@ -329,13 +374,15 @@ this.category= value
 }
 
 
-    public toHashMap(): HashMap<Any, Any>{
+    public toHashMap(): HashMap<any, any>{
 
-    var categoryHashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var categoryHashMap: HashMap<any, any> = new HashMap<any, any>();
         
         
-
-categoryHashMap!.put(CategoryData.getInstance()!.NAME, this.getValue())
+;
+    
+categoryHashMap!.put(CategoryData.getInstance()!.NAME, this.getValue());
+    
 
 
 
@@ -350,8 +397,10 @@ categoryHashMap!.put(CategoryData.getInstance()!.NAME, this.getValue())
     var categoryVector: Vector = new Vector();
         
         
-
-categoryVector!.add(this.getValue())
+;
+    
+categoryVector!.add(this.getValue());
+    
 
 
 
@@ -404,7 +453,8 @@ var document = document
                         
                                     {
                                     logUtil!.put(StringMaker().
-                            append("filePath = ")!.append(this.fileAbPath!.toString())!.append("\npath = ")!.append(this.abPath!.toString())!.append("\ncategory = ")!.append(this.category)!.toString(), this, "log()")
+                            append("filePath = ")!.append(this.fileAbPath!.toString())!.append("\npath = ")!.append(this.abPath!.toString())!.append("\ncategory = ")!.append(this.category)!.toString(), this, "log()");
+    
 
                                     }
                                 

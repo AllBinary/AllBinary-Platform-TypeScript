@@ -18,7 +18,10 @@
 
 
 
-import { Hashtable } from "../../../../java/util/Hashtable.js";
+            import Hashtable from "@ohos.util.HashMap";
+        
+
+//import { Hashtable } from "../../../../java/util/Hashtable.js";
 
     
 import { TextField } from "../../../../javax/microedition/lcdui/TextField.js";
@@ -33,7 +36,7 @@ export class GameConfigurationTextInput
          {
         
 
-    private hashtable: Hashtable<Any, Any> = new Hashtable<Any, Any>();
+    private hashtable: Hashtable<any, any> = new Hashtable<any, any>();
         
         
 
@@ -48,20 +51,27 @@ export class GameConfigurationTextInput
     public static update(textField: TextField){
 var textField = textField
 
-    var anyType: any = {} = textField!.getLabel() as Object;
-        
-        
+    var anyType: any = {} = textField!.getLabel();
 
-
-    var gameConfigurationTextInput: GameConfigurationTextInput = hashtable.get(anyType as Object) as GameConfigurationTextInput;
+                         as Object;
         
         
+;
+    
 
-gameConfigurationTextInput!.setText(textField!.getString())
+    var gameConfigurationTextInput: GameConfigurationTextInput = hashtable.get(anyType as Object);
+
+                         as GameConfigurationTextInput;
+        
+        
+;
+    
+gameConfigurationTextInput!.setText(textField!.getString());
+    
 }
 
 
-    public static getHashtable(): Hashtable<Any, Any>{
+    public static getHashtable(): Hashtable<any, any>{
 
 
 
@@ -83,15 +93,19 @@ public constructor (label: string, text: string){
             super();
             var label = label
 var text = text
-this.setText(text)
-this.setLabel(label)
-hashtable.put(this.getLabel(), this)
+this.setText(text);
+    
+this.setLabel(label);
+    
+hashtable.put(this.getLabel(), this);
+    
 }
 
 
     public setText(text: string){
 var text = text
-this.text= text
+this.text= text;
+    
 }
 
 
@@ -107,7 +121,8 @@ this.text= text
 
     public setLabel(label: string){
 var label = label
-this.label= label
+this.label= label;
+    
 }
 
 

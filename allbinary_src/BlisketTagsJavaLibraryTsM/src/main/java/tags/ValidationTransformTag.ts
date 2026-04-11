@@ -62,20 +62,24 @@ public constructor ()
 
                             //For kotlin this is before the body of the constructor.
                     
-this.logic= true
+this.logic= true;
+    
 }
 
 
     public setXsl(value: string){
 var value = value
-this.xslFile= value
-this.setTemplateFile(this.xslFile)
+this.xslFile= value;
+    
+this.setTemplateFile(this.xslFile);
+    
 }
 
 
     public setLogic(logic: boolean){
 var logic = logic
-this.logic= logic
+this.logic= logic;
+    
 }
 
 
@@ -85,35 +89,45 @@ this.logic= logic
 
         try {
             
-    var helperClass: KClass<*> = this.getHelper()!.::class!;
+    var helperClass: Function = this.getHelper()!.constructor!;
         
         
-
+;
+    
 
     var method: Method = helperClass!.getMethod(commonStrings!.IS_VALID, 
                             null)!;
         
         
-
+;
+    
 
     var result: Boolean = method.invoke(this.getHelper(), 
-                            null) as Boolean;
-        
-        
+                            null);
 
+                         as Boolean;
+        
+        
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e);
+    
 
                                     }
                                 
@@ -132,35 +146,43 @@ this.logic= logic
 
         try {
             
-    var addressHelperClass: KClass<*> = this.getHelper()!.::class!;
+    var addressHelperClass: Function = this.getHelper()!.constructor!;
         
         
-
+;
+    
 
     var method: Method = addressHelperClass!.getMethod("validationInfo", 
                             null)!;
         
         
-
+;
+    
 
     var result: string = method.invoke(this.getHelper(), 
-                            null) as String;
-        
-        
+                            null);
 
+                         as String;
+        
+        
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "validationInfo()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "validationInfo()", e);
+    
 
                                     }
                                 
@@ -186,28 +208,41 @@ this.logic= logic
     var stringBuffer: StringMaker = new StringMaker();
         
         
+;
+    
 
+    var request: HttpServletRequest = this.pageContext!.getRequest();
 
-    var request: HttpServletRequest = this.pageContext!.getRequest() as HttpServletRequest;
+                         as HttpServletRequest;
         
         
-
-stringBuffer!.append("ValidationViewTag Start For: ")
-stringBuffer!.append(this.getName())
-stringBuffer!.append("\nView FIle: ")
-stringBuffer!.append(this.getObjectFile())
-stringBuffer!.append("\nRequest URI: ")
-stringBuffer!.append(request.getRequestURI())
-logUtil!.put(stringBuffer!.toString(), this, "doStartTag")
+;
+    
+stringBuffer!.append("ValidationViewTag Start For: ");
+    
+stringBuffer!.append(this.getName());
+    
+stringBuffer!.append("\nView FIle: ");
+    
+stringBuffer!.append(this.getObjectFile());
+    
+stringBuffer!.append("\nRequest URI: ");
+    
+stringBuffer!.append(request.getRequestURI());
+    
+logUtil!.put(stringBuffer!.toString(), this, "doStartTag");
+    
 
                                     }
                                 
-this.setHelper()
+this.setHelper();
+    
 
                         if(this.isValid())
                         
                                     {
-                                    super.doStartTag()
+                                    super.doStartTag();
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
@@ -216,12 +251,18 @@ this.setHelper()
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("View File: ")
-stringBuffer!.append(this.getObjectFile())
-stringBuffer!.append("\nLogic includes body if true=")
-stringBuffer!.appendboolean(this.logic)
-logUtil!.put(stringBuffer!.toString(), this, "doStartTag")
+;
+    
+stringBuffer!.append("View File: ");
+    
+stringBuffer!.append(this.getObjectFile());
+    
+stringBuffer!.append("\nLogic includes body if true=");
+    
+stringBuffer!.appendboolean(this.logic);
+    
+logUtil!.put(stringBuffer!.toString(), this, "doStartTag");
+    
 
                                     }
                                 
@@ -252,7 +293,8 @@ logUtil!.put(stringBuffer!.toString(), this, "doStartTag")
                                     }
                                 
                         else {
-                            pageContext!.getOut()!.print(this.validationInfo())
+                            pageContext!.getOut()!.print(this.validationInfo());
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
@@ -261,13 +303,20 @@ logUtil!.put(stringBuffer!.toString(), this, "doStartTag")
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("View File: ")
-stringBuffer!.append(this.getObjectFile())
-stringBuffer!.append("\nisValid()=false")
-stringBuffer!.append("\nLogic skips body if true=")
-stringBuffer!.appendboolean(this.logic)
-logUtil!.put(stringBuffer!.toString(), this, "doStartTag")
+;
+    
+stringBuffer!.append("View File: ");
+    
+stringBuffer!.append(this.getObjectFile());
+    
+stringBuffer!.append("\nisValid()=false");
+    
+stringBuffer!.append("\nLogic skips body if true=");
+    
+stringBuffer!.appendboolean(this.logic);
+    
+logUtil!.put(stringBuffer!.toString(), this, "doStartTag");
+    
 
                                     }
                                 
@@ -297,9 +346,12 @@ logUtil!.put(stringBuffer!.toString(), this, "doStartTag")
 
                         }
                             
-} catch(e: LicensingException)
+
+                //: 
+} catch(e) 
             {
-AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e);
+    
 
 
 
@@ -307,9 +359,12 @@ AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
                         return SKIP_BODY;
     
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
-AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
+    
 
 
 
@@ -326,16 +381,20 @@ AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    logUtil!.put("Tag Ended", this, "doEndTag")
+                                    logUtil!.put("Tag Ended", this, "doEndTag");
+    
 
                                     }
                                 
-this.logic= true
+this.logic= true;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.doEndTag();
+
+                        ;
     
 }
 

@@ -55,14 +55,21 @@ public constructor (geographicMapInterface: BasicGeographicMap){
 
             super();
                 //var geographicMapInterface = geographicMapInterface
-this.geographicMapInterface= geographicMapInterface
-this.geographicMapCellPositionFactoryInterface= this.geographicMapInterface!.getGeographicMapCellPositionFactoryInterface()
-this.tiledLayer= this.geographicMapInterface!.getAllBinaryTiledLayer()
-this.columns= this.tiledLayer!.getColumns()
-this.rows= this.tiledLayer!.getRows()
+this.geographicMapInterface= geographicMapInterface;
+    
+this.geographicMapCellPositionFactoryInterface= this.geographicMapInterface!.getGeographicMapCellPositionFactoryInterface();
+    
+this.tiledLayer= this.geographicMapInterface!.getAllBinaryTiledLayer();
+    
+this.columns= this.tiledLayer!.getColumns();
+    
+this.rows= this.tiledLayer!.getRows();
+    
 this.geographicMapCellPositionArray= Array(rows) { arrayOfNulls<GeographicMapCellPosition?>(columns) }
-                                                            
-this.init()
+                                                            ;
+    
+this.init();
+    
 }
 
 
@@ -73,27 +80,32 @@ this.init()
     var tiledLayer: AllBinaryTiledLayer = this.tiledLayer;
         
         
-
+;
+    
 
     var columns: number = this.getColumns()!;
         
         
-
+;
+    
 
     var rows: number = this.getRows()!;
         
         
-
+;
+    
 
     var width: number = tiledLayer!.getCellWidth()!;
         
         
-
+;
+    
 
     var height: number = tiledLayer!.getCellHeight()!;
         
         
-
+;
+    
 
 
 
@@ -114,7 +126,8 @@ column < columns; column++)
         
 row < rows; row++)
         {
-this.createInstance(column, row, width, height)
+this.createInstance(column, row, width, height);
+    
 }
 
 }
@@ -130,22 +143,26 @@ this.createInstance(column, row, width, height)
     var tiledLayer: AllBinaryTiledLayer = this.tiledLayer;
         
         
-
+;
+    
 
     var columns: number = this.getColumns()!;
         
         
-
+;
+    
 
     var rows: number = this.getRows()!;
         
         
-
+;
+    
 
         try {
             
     var cellPosition: GeographicMapCellPosition
-
+;
+    
 
 
 
@@ -166,21 +183,27 @@ column < columns; column++)
         
 row < rows; row++)
         {
-cellPosition= this.getInstance(column, row)
-geographicMapCelPositionFactoryInitVisitorInterface!.visit(tiledLayer, cellPosition)
+cellPosition= this.getInstance(column, row);
+    
+geographicMapCelPositionFactoryInitVisitorInterface!.visit(tiledLayer, cellPosition);
+    
 }
 
 }
 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
         
         
-
+;
+    
 logUtil!.put(StringMaker().
-                            append(commonSeps!.BRACKET_OPEN)!.appendint(rows)!.append(commonSeps!.BRACKET_CLOSE)!.append(commonSeps!.BRACKET_OPEN)!.appendint(columns)!.append(commonSeps!.BRACKET_CLOSE)!.toString(), this, "visit", e)
+                            append(commonSeps!.BRACKET_OPEN)!.appendint(rows)!.append(commonSeps!.BRACKET_CLOSE)!.append(commonSeps!.BRACKET_OPEN)!.appendint(columns)!.append(commonSeps!.BRACKET_CLOSE)!.toString(), this, "visit", e);
+    
 
 
 
@@ -213,6 +236,8 @@ logUtil!.put(StringMaker().
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getInstance(anotherMapGeographicMapCellPosition!.getColumn(), anotherMapGeographicMapCellPosition!.getRow());
+
+                        ;
     
 }
 
@@ -228,15 +253,18 @@ logUtil!.put(StringMaker().
     var cellPositionCanBeNull: any = {}? = geographicMapCellPositionArray[i_row]![i_column];
         
         
-
+;
+    
 
                         if(cellPositionCanBeNull == 
                                     null
                                 )
                         
                                     {
-                                    cellPositionCanBeNull= this.geographicMapCellPositionFactoryInterface!.getInstance(this.geographicMapInterface, i_column, i_row, columns, rows, width, height)
-geographicMapCellPositionArray[i_row]![i_column]= cellPositionCanBeNull as GeographicMapCellPosition
+                                    cellPositionCanBeNull= this.geographicMapCellPositionFactoryInterface!.getInstance(this.geographicMapInterface, i_column, i_row, columns, rows, width, height);
+    
+geographicMapCellPositionArray[i_row]![i_column]= cellPositionCanBeNull as GeographicMapCellPosition;
+    
 
                                     }
                                 

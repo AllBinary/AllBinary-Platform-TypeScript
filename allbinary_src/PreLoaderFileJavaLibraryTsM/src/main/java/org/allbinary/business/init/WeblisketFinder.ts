@@ -74,13 +74,16 @@ var args = args
     var stringUtil: StringUtil = StringUtil.getInstance()!;
         
         
-
+;
+    
 
     var vector: BasicArrayList = WeblisketFinder.getInstance()!.findAll(stringUtil!.EMPTY_STRING)!;
         
         
-
-System.out.println(vector.size())
+;
+    
+System.out.println(vector.size());
+    
 }
 
 
@@ -105,21 +108,28 @@ private constructor (){
 var path = path
 
         try {
-            logUtil!.put(this.commonStrings!.START, this, "findAll")
+            logUtil!.put(this.commonStrings!.START, this, "findAll");
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return subDirectory!.search(KEY, AbFile(path));
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "findAll", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "findAll", e);
+    
 
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.PRELOADERERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "findAll", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "findAll", e);
+    
 
                                     }
                                 
@@ -142,12 +152,14 @@ var file = file
     var filePath: string = file.getPath()!;
         
         
-
+;
+    
 
     var end: number = filePath!.indexOf(KEY)!;
         
         
-
+;
+    
 
                         if(end < 0)
                         
@@ -166,14 +178,19 @@ var file = file
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return filePath!.substring(0, end);
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PRELOADERERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "getInstallationPath", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "getInstallationPath", e);
+    
 
                                     }
                                 

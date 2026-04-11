@@ -18,10 +18,13 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { HashMap } from "../../../../../../java/util/HashMap.js";
 
     
-import { Vector } from "../../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../../java/util/Vector.js";
 
     
 import { AdvertisementArea } from "../../../../../../org/allbinary/business/advertisement/area/AdvertisementArea.js";
@@ -75,7 +78,8 @@ public constructor ()
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setTableName(tableName)
+this.setTableName(tableName);
+    
 }
 
 
@@ -83,22 +87,27 @@ this.setTableName(tableName)
 var value = value
 
         try {
-            super.deleteWhere(EntryData.getInstance()!.ID, value)
+            super.deleteWhere(EntryData.getInstance()!.ID, value);
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.SUCCESS, this, commonStrings!.delete)
+                                    logUtil!.put(this.commonStrings!.SUCCESS, this, commonStrings!.delete);
+    
 
                                     }
                                 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.FAILURE, this, commonStrings!.delete, e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, commonStrings!.delete, e);
+    
 
                                     }
                                 
@@ -112,26 +121,31 @@ var value = value
     public get(storeName: string): Vector{
 var storeName = storeName
 
-    var keysAndValues: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();
         
         
-
-keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName)
+;
+    
+keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName);
+    
 
     var hashMapVector: Vector = super.getRows(keysAndValues)!;
         
         
-
+;
+    
 
     var vector: Vector = new Vector();
         
         
-
+;
+    
 
     var size: number = hashMapVector!.length!;
         
         
-
+;
+    
 
 
 
@@ -143,17 +157,21 @@ keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName)
 index < size; index++)
         {
 
-    var hashMap: HashMap<Any, Any> = hashMapVector!.get(index as Object) as HashMap<Any, Any>;
-        
-        
+    var hashMap: HashMap<any, any> = hashMapVector!.get(index as Object);
 
+                         as HashMap<any, any>;
+        
+        
+;
+    
 
                         if(hashMap != 
                                     null
                                 )
                         
                                     {
-                                    vector.add(AdvertisementArea(hashMap) as AdvertisementAreaInterface)
+                                    vector.add(AdvertisementArea(hashMap) as AdvertisementAreaInterface);
+    
 
                                     }
                                 
@@ -174,17 +192,21 @@ index < size; index++)
 var storeName = storeName
 var advertisementAreaName = advertisementAreaName
 
-    var keysAndValues: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();
         
         
+;
+    
+keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName);
+    
+keysAndValues!.put(AdvertisementAreaData.getInstance()!.NAME, advertisementAreaName);
+    
 
-keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName)
-keysAndValues!.put(AdvertisementAreaData.getInstance()!.NAME, advertisementAreaName)
-
-    var hashMap: HashMap<Any, Any> = super.getRow(keysAndValues)!;
+    var hashMap: HashMap<any, any> = super.getRow(keysAndValues)!;
         
         
-
+;
+    
 
                         if(hashMap != 
                                     null
@@ -218,21 +240,29 @@ keysAndValues!.put(AdvertisementAreaData.getInstance()!.NAME, advertisementAreaN
     var advertisementAreaData: AdvertisementAreaData = AdvertisementAreaData.getInstance()!;
         
         
-
+;
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)
-stringBuffer!.append(this.getTableName())
-stringBuffer!.append(this.sqlStrings!.START)
-stringBuffer!.append(advertisementAreaData!.NAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(StoreFrontData.getInstance()!.NAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(advertisementAreaData!.DESCRIPTION)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(advertisementAreaData!.CONSTRAINTS)!.append(this.sqlTypeStrings!.BLOB_NOT_NULL)!.append(AdvertisementCampaignData.getInstance()!.NAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(EntryData.getInstance()!.TIMECREATED)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(EntryData.getInstance()!.LASTMODIFIED)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(this.sqlStrings!.PRIMARY_KEY)!.append(advertisementAreaData!.NAME)!.append(this.sqlStrings!.END)
+;
+    
+stringBuffer!.append(this.sqlStrings!.CREATE_TABLE);
+    
+stringBuffer!.append(this.getTableName());
+    
+stringBuffer!.append(this.sqlStrings!.START);
+    
+stringBuffer!.append(advertisementAreaData!.NAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(StoreFrontData.getInstance()!.NAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(advertisementAreaData!.DESCRIPTION)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(advertisementAreaData!.CONSTRAINTS)!.append(this.sqlTypeStrings!.BLOB_NOT_NULL)!.append(AdvertisementCampaignData.getInstance()!.NAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(EntryData.getInstance()!.TIMECREATED)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(EntryData.getInstance()!.LASTMODIFIED)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(this.sqlStrings!.PRIMARY_KEY)!.append(advertisementAreaData!.NAME)!.append(this.sqlStrings!.END);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 
@@ -242,7 +272,8 @@ stringBuffer!.append(advertisementAreaData!.NAME)!.append(this.sqlTypeStrings!.M
     var returnStr: string = super.createTable(this.createTableStatement())!;
         
         
-
+;
+    
 
 
 
@@ -252,9 +283,12 @@ stringBuffer!.append(advertisementAreaData!.NAME)!.append(this.sqlTypeStrings!.M
 }
 
 
-    public update(updatedValues: HashMap<Any, Any>){
+    public update(updatedValues: HashMap<any, any>){
 var updatedValues = updatedValues
-super.updateWhere(AdvertisementAreaData.getInstance()!.NAME, updatedValues!.get(AdvertisementAreaData.getInstance()!.NAME) as String, updatedValues)
+super.updateWhere(AdvertisementAreaData.getInstance()!.NAME, updatedValues!.get(AdvertisementAreaData.getInstance()!.NAME);
+
+                         as String, updatedValues);
+    
 }
 
 
@@ -264,6 +298,8 @@ super.updateWhere(AdvertisementAreaData.getInstance()!.NAME, updatedValues!.get(
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.dropTable();
+
+                        ;
     
 }
 

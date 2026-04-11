@@ -18,10 +18,13 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { HashMap } from "../../../../../../java/util/HashMap.js";
 
     
-import { Vector } from "../../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../../java/util/Vector.js";
 
     
 import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
@@ -51,7 +54,7 @@ export class NameSpaceRequestParam
 
     private nameSpaceVector: Vector
 
-    private nameSpacePropertiesHashMap: HashMap<Any, Any>
+    private nameSpacePropertiesHashMap: HashMap<any, any>
 
     private value: string
 public constructor (nameSpace: string, value: string){
@@ -59,14 +62,18 @@ public constructor (nameSpace: string, value: string){
             super();
             var nameSpace = nameSpace
 var value = value
-this.nameSpaceVector= Vector()
-this.nameSpacePropertiesHashMap= HashMap<Any, Any>()
-this.value= value
+this.nameSpaceVector= Vector();
+    
+this.nameSpacePropertiesHashMap= HashMap<any, any>();
+    
+this.value= value;
+    
 
     var beginIndex: number = nameSpace!.indexOf(NameSpaceRequestParamData.NAME)!;
         
         
-
+;
+    
 
                         if(beginIndex < 0)
                         
@@ -82,22 +89,26 @@ this.value= value
     var packages: string = nameSpace!.substring(beginIndex +NameSpaceRequestParamData.NAME.length() +NameSpaceRequestParamData.SEP.length())!;
         
         
-
+;
+    
 
     var sepTokenizer: Tokenizer = new Tokenizer(NameSpaceRequestParamData.SEP);
         
         
-
+;
+    
 
     var nameSpaceWithPropertiesVector: BasicArrayList = sepTokenizer!.getTokens(packages, BasicArrayList())!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
                         
                                     {
-                                    logUtil!.put("\nSep Tokens: " +nameSpaceWithPropertiesVector!.toString(), this, "NameSpaceRequestParam()")
+                                    logUtil!.put("\nSep Tokens: " +nameSpaceWithPropertiesVector!.toString(), this, "NameSpaceRequestParam()");
+    
 
                                     }
                                 
@@ -105,46 +116,57 @@ this.value= value
     var nameSpaceAndPropertiesTokenizer: Tokenizer = new Tokenizer(NameSpaceRequestParamData.PROPERTIES);
         
         
-
+;
+    
 
     var packageIndex: number = 0;
         
         
-
+;
+    
 
     var list: BasicArrayList = new BasicArrayList();
         
         
-
+;
+    
 
     var index: number = 0;
         
         
-
+;
+    
 
     var size: number = nameSpaceWithPropertiesVector!.size()!;
         
         
-
+;
+    
 
         while(index < size)
         {
 
-    var nameSpaceWithProperties: string = nameSpaceWithPropertiesVector!.get(index++) as String;
-        
-        
+    var nameSpaceWithProperties: string = nameSpaceWithPropertiesVector!.get(index++);
 
-list.clear()
+                         as String;
+        
+        
+;
+    
+list.clear();
+    
 
     var nameSpaceAndPropertiesVector: BasicArrayList = nameSpaceAndPropertiesTokenizer!.getTokens(nameSpaceWithProperties, list)!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
                         
                                     {
-                                    logUtil!.put("\nPackageName and PackageName Properties Tokens: " +nameSpaceAndPropertiesVector!.toString(), this, "NameSpaceRequestParam()")
+                                    logUtil!.put("\nPackageName and PackageName Properties Tokens: " +nameSpaceAndPropertiesVector!.toString(), this, "NameSpaceRequestParam()");
+    
 
                                     }
                                 
@@ -153,10 +175,13 @@ list.clear()
                         
                                     {
                                     
-    var packageName: string = nameSpaceAndPropertiesVector!.get(0) as String;
-        
-        
+    var packageName: string = nameSpaceAndPropertiesVector!.get(0);
 
+                         as String;
+        
+        
+;
+    
 
                         if(packageName == 
                                     null
@@ -170,26 +195,33 @@ list.clear()
 
                                     }
                                 
-this.nameSpaceVector!.add(packageName)
+this.nameSpaceVector!.add(packageName);
+    
 
                         if(nameSpaceAndPropertiesVector!.size() > 1)
                         
                                     {
                                     
-    var properties: string = nameSpaceAndPropertiesVector!.get(1) as String;
-        
-        
+    var properties: string = nameSpaceAndPropertiesVector!.get(1);
 
-
-    var packagePropertiesHashMap: HashMap<Any, Any> = this.generatePackagePropertiesHashMap(properties)!;
+                         as String;
         
         
+;
+    
 
-this.nameSpacePropertiesHashMap!.put(packageIndex.toString(), packagePropertiesHashMap)
+    var packagePropertiesHashMap: HashMap<any, any> = this.generatePackagePropertiesHashMap(properties)!;
+        
+        
+;
+    
+this.nameSpacePropertiesHashMap!.put(packageIndex.toString(), packagePropertiesHashMap);
+    
 
                                     }
                                 
-packageIndex++
+packageIndex++;
+    
 
                                     }
                                 
@@ -199,7 +231,8 @@ packageIndex++
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
                         
                                     {
-                                    logUtil!.put("NameSpace: " +this.nameSpaceVector!.toString(), this, "NameSpaceRequestParam()")
+                                    logUtil!.put("NameSpace: " +this.nameSpaceVector!.toString(), this, "NameSpaceRequestParam()");
+    
 
                                     }
                                 
@@ -211,7 +244,8 @@ packageIndex++
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
                         
                                     {
-                                    logUtil!.put("NameSpace: " +this.nameSpaceVector!.toString(), this, "getPackages()")
+                                    logUtil!.put("NameSpace: " +this.nameSpaceVector!.toString(), this, "getPackages()");
+    
 
                                     }
                                 
@@ -224,20 +258,24 @@ packageIndex++
 }
 
 
-    public getPackageProperties(packageIndex: number): HashMap<Any, Any>{
+    public getPackageProperties(packageIndex: number): HashMap<any, any>{
 var packageIndex = packageIndex
 
-    var packagePropertiesHashMap: HashMap<Any, Any> = this.nameSpacePropertiesHashMap!.get(packageIndex.toString()) as HashMap<Any, Any>;
-        
-        
+    var packagePropertiesHashMap: HashMap<any, any> = this.nameSpacePropertiesHashMap!.get(packageIndex.toString());
 
+                         as HashMap<any, any>;
+        
+        
+;
+    
 
                         if(packagePropertiesHashMap == 
                                     null
                                 )
                         
                                     {
-                                    packagePropertiesHashMap= HashMap<Any, Any>()
+                                    packagePropertiesHashMap= HashMap<any, any>();
+    
 
                                     }
                                 
@@ -245,7 +283,8 @@ var packageIndex = packageIndex
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
                         
                                     {
-                                    logUtil!.put("Package Properties: " +packagePropertiesHashMap!.toString(), this, "getPackagesProperties()")
+                                    logUtil!.put("Package Properties: " +packagePropertiesHashMap!.toString(), this, "getPackagesProperties()");
+    
 
                                     }
                                 
@@ -263,7 +302,8 @@ var packageIndex = packageIndex
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
                         
                                     {
-                                    logUtil!.put("\nValue: " +this.value, this, "getValue()")
+                                    logUtil!.put("\nValue: " +this.value, this, "getValue()");
+    
 
                                     }
                                 
@@ -278,93 +318,115 @@ var packageIndex = packageIndex
 
                 //@Throws(Error::class)
             
-    generatePackagePropertiesHashMap(properties: string): HashMap<Any, Any>{
+    generatePackagePropertiesHashMap(properties: string): HashMap<any, any>{
 var properties = properties
 
     var propertiesTokenizer: Tokenizer = new Tokenizer(NameSpaceRequestParamData.PROPERTIESSEPARATOR);
         
         
+;
+    
 
-
-    var packagePropertiesHashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var packagePropertiesHashMap: HashMap<any, any> = new HashMap<any, any>();
         
         
-
+;
+    
 
     var propertyVector: BasicArrayList = propertiesTokenizer!.getTokens(properties, BasicArrayList())!;
         
         
-
+;
+    
 
     var list: BasicArrayList = new BasicArrayList();
         
         
-
+;
+    
 
     var propertyTokenizer: Tokenizer = new Tokenizer(HtmlNameMathData.getInstance()!.EQUALS);
         
         
-
+;
+    
 
     var index: number = 0;
         
         
-
+;
+    
 
     var size: number = propertyVector!.size()!;
         
         
-
+;
+    
 
         while(index < size)
         {
 
-    var property: string = propertyVector!.get(index) as String;
-        
-        
+    var property: string = propertyVector!.get(index);
 
-list.clear()
+                         as String;
+        
+        
+;
+    
+list.clear();
+    
 
     var propertyNameValueVector: BasicArrayList = propertyTokenizer!.getTokens(property, list)!;
         
         
-
+;
+    
 
     var index2: number = 0;
         
         
-
+;
+    
 
         while(index2 < propertyNameValueVector!.size())
         {
 
-    var propertyName: string = propertyNameValueVector!.get(index2++) as String;
-        
-        
+    var propertyName: string = propertyNameValueVector!.get(index2++);
 
+                         as String;
+        
+        
+;
+    
 
                         if(propertyNameValueVector!.size() > 1)
                         
                                     {
                                     
-    var propertyValue: string = propertyNameValueVector!.get(index2++) as String;
-        
-        
+    var propertyValue: string = propertyNameValueVector!.get(index2++);
 
+                         as String;
+        
+        
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
                         
                                     {
-                                    logUtil!.put("\nProperty Name: " +propertyName +"\nProperty Value: " +propertyValue, this, "generatePackagePropertiesHashMap()")
+                                    logUtil!.put("\nProperty Name: " +propertyName +"\nProperty Value: " +propertyValue, this, "generatePackagePropertiesHashMap()");
+    
 
                                     }
                                 
-packagePropertiesHashMap!.put(propertyName, propertyValue)
+packagePropertiesHashMap!.put(propertyName, propertyValue);
+    
 
                                     }
                                 
                         else {
-                            packagePropertiesHashMap!.put(propertyName, StringUtil.getInstance()!.EMPTY_STRING)
+                            packagePropertiesHashMap!.put(propertyName, StringUtil.getInstance()!.EMPTY_STRING);
+    
 
                         }
                             

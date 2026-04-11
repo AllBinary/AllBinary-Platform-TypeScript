@@ -59,7 +59,8 @@ public constructor (paymentGatewayInterface: PaymentGatewayInterface){
 
             super();
                 //var paymentGatewayInterface = paymentGatewayInterface
-this.paymentGatewayInterface= paymentGatewayInterface
+this.paymentGatewayInterface= paymentGatewayInterface;
+    
 }
 
 
@@ -75,12 +76,13 @@ this.paymentGatewayInterface= paymentGatewayInterface
 
                 //@Throws(Error::class)
             
-    public toHashMap(): HashMap<Any, Any>{
+    public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
         
         
-
+;
+    
 
 
 
@@ -100,35 +102,42 @@ this.paymentGatewayInterface= paymentGatewayInterface
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.START, this, "toXmlNode")
+                                    logUtil!.put(this.commonStrings!.START, this, "toXmlNode");
+    
 
                                     }
                                 
 
-    var hashMap: HashMap<Any, Any> = PaymentGatewayMapping(this.paymentGatewayInterface).
+    var hashMap: HashMap<any, any> = PaymentGatewayMapping(this.paymentGatewayInterface).
                             toHashMap()!;
         
         
-
-hashMap!.putAll(this.toHashMap())
+;
+    
+hashMap!.putAll(this.toHashMap());
+    
 
     var paymentGatewayNode: Node = ModDomHelper.createNodeWithValueNodes(document, PaymentGatewayData.NAME.toString(), hashMap)!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return paymentGatewayNode;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.XSLLOGGINGERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "toXmlNode", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "toXmlNode", e);
+    
 
                                     }
                                 

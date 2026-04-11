@@ -66,10 +66,13 @@ private constructor (){
     public addListener(miniMapLayer: MiniMapLayer){
 var miniMapLayer = miniMapLayer
 
-                        if(!list.contains(miniMapLayer))
+                        if(!list.contains(miniMapLayer);
+
+                        )
                         
                                     {
-                                    list.add(miniMapLayer)
+                                    list.add(miniMapLayer);
+    
 
                                     }
                                 
@@ -77,15 +80,19 @@ var miniMapLayer = miniMapLayer
 
 
     public removeAllListeners(){
-this.list.clear()
-super.removeAllListeners()
+this.list.clear();
+    
+super.removeAllListeners();
+    
 }
 
 
     public removeListener(eventListenerInterface: EventListenerInterface){
 var eventListenerInterface = eventListenerInterface
-this.list.remove(eventListenerInterface)
-super.removeListener(eventListenerInterface)
+this.list.remove(eventListenerInterface);
+    
+super.removeListener(eventListenerInterface);
+    
 }
 
 
@@ -106,19 +113,27 @@ var eventObject = eventObject
 
         try {
             
-    var miniMapLayer: MiniMapLayer = this.list.get(index) as MiniMapLayer;
-        
-        
+    var miniMapLayer: MiniMapLayer = this.list.get(index);
 
-miniMapLayer!.onGeographicMapCellPositionEvent(eventObject as GeographicMapCellPositionEvent)
-} catch(e: Exception)
+                         as MiniMapLayer;
+        
+        
+;
+    
+miniMapLayer!.onGeographicMapCellPositionEvent(eventObject as GeographicMapCellPositionEvent);
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e);
+    
 }
 
 }
 
-super.fireEvent(eventObject)
+super.fireEvent(eventObject);
+    
 }
 
 
@@ -131,7 +146,8 @@ var eventObject = eventObject
     var list: BasicArrayList = this.eventListenerInterfaceList;
         
         
-
+;
+    
 
 
 
@@ -145,29 +161,39 @@ var eventObject = eventObject
 
         try {
             
-    var miniMapLayer: MiniMapLayer = this.list.get(index) as MiniMapLayer;
-        
-        
+    var miniMapLayer: MiniMapLayer = this.list.get(index);
 
-miniMapLayer!.onRemoveGeographicMapCellPositionEvent(eventObject as GeographicMapCellPositionEvent)
-} catch(e: Exception)
+                         as MiniMapLayer;
+        
+        
+;
+    
+miniMapLayer!.onRemoveGeographicMapCellPositionEvent(eventObject as GeographicMapCellPositionEvent);
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e);
+    
 }
 
 }
 
 
     var eventListenerInterface: EventListenerInterface
-
+;
+    
 
     var geographicMapCellPositionEventListenerInterface: GeographicMapCellPositionEventListenerInterface
-
+;
+    
 
     var size: number = list.size()!;
         
         
-
+;
+    
 
 
 
@@ -180,12 +206,20 @@ index < size; index++)
         {
 
         try {
-            eventListenerInterface= list.get(index) as EventListenerInterface
-geographicMapCellPositionEventListenerInterface= (eventListenerInterface as GeographicMapCellPositionEventListenerInterface)
-geographicMapCellPositionEventListenerInterface!.onRemoveGeographicMapCellPositionEvent(eventObject as GeographicMapCellPositionEvent)
-} catch(e: Exception)
+            eventListenerInterface= list.get(index);
+
+                         as EventListenerInterface;
+    
+geographicMapCellPositionEventListenerInterface= (eventListenerInterface as GeographicMapCellPositionEventListenerInterface);
+    
+geographicMapCellPositionEventListenerInterface!.onRemoveGeographicMapCellPositionEvent(eventObject as GeographicMapCellPositionEvent);
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e);
+    
 }
 
 }
@@ -202,8 +236,10 @@ var eventListenerInterface = eventListenerInterface
     var geographicMapCellPositionEventListenerInterface: GeographicMapCellPositionEventListenerInterface = (eventListenerInterface as GeographicMapCellPositionEventListenerInterface);
         
         
-
-geographicMapCellPositionEventListenerInterface!.onGeographicMapCellPositionEvent(eventObject as GeographicMapCellPositionEvent)
+;
+    
+geographicMapCellPositionEventListenerInterface!.onGeographicMapCellPositionEvent(eventObject as GeographicMapCellPositionEvent);
+    
 }
 
 

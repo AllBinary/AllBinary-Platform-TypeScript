@@ -84,27 +84,34 @@ export class CamelCaseUtil
     var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
         
         
-
-stringBuilder!.delete(0, stringBuilder!.length())
+;
+    
+stringBuilder!.delete(0, stringBuilder!.length());
+    
 
     var list: BasicArrayList = new BasicArrayList();
         
         
-
+;
+    
 
     var tokenizer: Tokenizer = new Tokenizer(commonSeps!.UNDERSCORE);
         
         
-
-tokenizer.getTokens(string, list)
+;
+    
+tokenizer.getTokens(string, list);
+    
 
     var size: number = list.size()!;
         
         
-
+;
+    
 
     var word: string
-
+;
+    
 
 
 
@@ -115,7 +122,10 @@ tokenizer.getTokens(string, list)
         
 i < size; i++)
         {
-word= list.get(i) as String
+word= list.get(i);
+
+                         as String;
+    
 word= stringValidationUtil!.isEmpty(word)
                         ?       
                                 word
@@ -124,8 +134,10 @@ word= stringValidationUtil!.isEmpty(word)
                             StringMaker().
                             appendchar(Character.toUpperCase(word[0]))!.append(word.substring(1)!.lowercase())!.toString();
 
+    ;
     
-stringBuilder!.append(word)
+stringBuilder!.append(word);
+    
 }
 
 
@@ -133,6 +145,8 @@ stringBuilder!.append(word)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuilder!.toString();
+
+                        ;
     
 }
 

@@ -59,32 +59,38 @@ export class LayerPartialCellPositionsUtil
 var geographicMapInterface = geographicMapInterface
 var layerInterface = layerInterface
 var reusableList = reusableList
-reusableList!.clear()
+reusableList!.clear();
+    
 
     var topLeftGeographicMapCellPosition: GeographicMapCellPosition = geographicMapInterface!.getCellPositionAtNoThrow(layerInterface!.getXP(), layerInterface!.getYP())!;
         
         
-
+;
+    
 
     var topRightGeographicMapCellPosition: GeographicMapCellPosition = geographicMapInterface!.getCellPositionAtNoThrow(layerInterface!.getXP() +layerInterface!.getWidth(), layerInterface!.getYP())!;
         
         
-
+;
+    
 
     var bottomLeftGeographicMapCellPosition: GeographicMapCellPosition = geographicMapInterface!.getCellPositionAtNoThrow(layerInterface!.getXP(), layerInterface!.getYP() +layerInterface!.getHeight())!;
         
         
-
+;
+    
 
     var bottomRightGeographicMapCellPosition: GeographicMapCellPosition = geographicMapInterface!.getCellPositionAtNoThrow(layerInterface!.getXP() +layerInterface!.getWidth(), layerInterface!.getYP() +layerInterface!.getHeight())!;
         
         
-
+;
+    
 
                         if(topLeftGeographicMapCellPosition != SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION)
                         
                                     {
-                                    reusableList!.add(topLeftGeographicMapCellPosition)
+                                    reusableList!.add(topLeftGeographicMapCellPosition);
+    
 
                                     }
                                 
@@ -92,23 +98,30 @@ reusableList!.clear()
                         if(topRightGeographicMapCellPosition != SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION && topLeftGeographicMapCellPosition != topRightGeographicMapCellPosition)
                         
                                     {
-                                    reusableList!.add(topRightGeographicMapCellPosition)
+                                    reusableList!.add(topRightGeographicMapCellPosition);
+    
 
                                     }
                                 
 
-                        if(bottomLeftGeographicMapCellPosition != SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION && !reusableList!.contains(bottomLeftGeographicMapCellPosition))
+                        if(bottomLeftGeographicMapCellPosition != SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION && !reusableList!.contains(bottomLeftGeographicMapCellPosition);
+
+                        )
                         
                                     {
-                                    reusableList!.add(bottomLeftGeographicMapCellPosition)
+                                    reusableList!.add(bottomLeftGeographicMapCellPosition);
+    
 
                                     }
                                 
 
-                        if(bottomRightGeographicMapCellPosition != SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION && !reusableList!.contains(bottomRightGeographicMapCellPosition))
+                        if(bottomRightGeographicMapCellPosition != SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION && !reusableList!.contains(bottomRightGeographicMapCellPosition);
+
+                        )
                         
                                     {
-                                    reusableList!.add(bottomRightGeographicMapCellPosition)
+                                    reusableList!.add(bottomRightGeographicMapCellPosition);
+    
 
                                     }
                                 
@@ -129,32 +142,38 @@ var layerInterface = layerInterface
 var dx = dx
 var dy = dy
 var reusableList = reusableList
-reusableList!.clear()
+reusableList!.clear();
+    
 
     var topLeftGeographicMapCellPosition: GeographicMapCellPosition = geographicMapInterface!.getCellPositionAtNoThrow(layerInterface!.getXP() +dx, layerInterface!.getYP() +dy)!;
         
         
-
+;
+    
 
     var topRightGeographicMapCellPosition: GeographicMapCellPosition = geographicMapInterface!.getCellPositionAtNoThrow(layerInterface!.getXP() +layerInterface!.getWidth() +dx, layerInterface!.getYP() +dy)!;
         
         
-
+;
+    
 
     var bottomLeftGeographicMapCellPosition: GeographicMapCellPosition = geographicMapInterface!.getCellPositionAtNoThrow(layerInterface!.getXP() +dx, layerInterface!.getYP() +layerInterface!.getHeight() +dy)!;
         
         
-
+;
+    
 
     var bottomRightGeographicMapCellPosition: GeographicMapCellPosition = geographicMapInterface!.getCellPositionAtNoThrow(layerInterface!.getXP() +layerInterface!.getWidth() +dx, layerInterface!.getYP() +layerInterface!.getHeight() +dy)!;
         
         
-
+;
+    
 
                         if(topLeftGeographicMapCellPosition != SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION)
                         
                                     {
-                                    reusableList!.add(topLeftGeographicMapCellPosition)
+                                    reusableList!.add(topLeftGeographicMapCellPosition);
+    
 
                                     }
                                 
@@ -162,23 +181,30 @@ reusableList!.clear()
                         if(topRightGeographicMapCellPosition != SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION && topLeftGeographicMapCellPosition != topRightGeographicMapCellPosition)
                         
                                     {
-                                    reusableList!.add(topRightGeographicMapCellPosition)
+                                    reusableList!.add(topRightGeographicMapCellPosition);
+    
 
                                     }
                                 
 
-                        if(bottomLeftGeographicMapCellPosition != SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION && !reusableList!.contains(bottomLeftGeographicMapCellPosition))
+                        if(bottomLeftGeographicMapCellPosition != SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION && !reusableList!.contains(bottomLeftGeographicMapCellPosition);
+
+                        )
                         
                                     {
-                                    reusableList!.add(bottomLeftGeographicMapCellPosition)
+                                    reusableList!.add(bottomLeftGeographicMapCellPosition);
+    
 
                                     }
                                 
 
-                        if(bottomRightGeographicMapCellPosition != SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION && !reusableList!.contains(bottomRightGeographicMapCellPosition))
+                        if(bottomRightGeographicMapCellPosition != SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION && !reusableList!.contains(bottomRightGeographicMapCellPosition);
+
+                        )
                         
                                     {
-                                    reusableList!.add(bottomRightGeographicMapCellPosition)
+                                    reusableList!.add(bottomRightGeographicMapCellPosition);
+    
 
                                     }
                                 

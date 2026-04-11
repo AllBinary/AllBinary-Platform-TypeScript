@@ -73,13 +73,16 @@ private constructor (){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return StringMaker().
                             append("Registration Code: ")!.append(this.getRegistrationCode())!.toString();
+
+                        ;
     
 }
 
 
     public setRegistrationCode(registrationCode: string){
 var registrationCode = registrationCode
-this.registrationCode= registrationCode
+this.registrationCode= registrationCode;
+    
 }
 
 

@@ -74,16 +74,22 @@ private constructor ()
                     
 
         try {
-            this.setGameKey(NONE)
-this.setGameKeyEvent(GameKeyEventFactory.getInstance()!.getInstance(this, NONE))
-} catch(e: Exception)
+            this.setGameKey(NONE);
+    
+this.setGameKeyEvent(GameKeyEventFactory.getInstance()!.getInstance(this, NONE));
+    
+
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e);
+    
 }
 
 }

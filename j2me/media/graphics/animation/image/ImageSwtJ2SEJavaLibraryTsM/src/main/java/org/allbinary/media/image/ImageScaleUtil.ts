@@ -100,6 +100,8 @@ private constructor (){
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.createImage(imageCache, originalImage, scaleNominatorX, scaleDenominatorX, scaleNominatorY, scaleDenominatorY, cached, true);
+
+                        ;
     
 }
 
@@ -116,10 +118,13 @@ private constructor (){
     //var cached = cached
     //var mutable = mutable
 
-                        if(!features.isFeature(gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION))
+                        if(!features.isFeature(gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION);
+
+                        )
                         
                                     {
-                                    logUtil!.put(NO_COPY, this, commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put(NO_COPY, this, commonStrings!.CONSTRUCTOR);
+    
 
 
 
@@ -133,27 +138,32 @@ private constructor (){
     var width: number = originalImage!.getWidth()!;
         
         
-
+;
+    
 
     var height: number = originalImage!.getHeight()!;
         
         
-
+;
+    
 
     var scaleX: number = scaleNominatorX /scaleDenominatorX;
         
         
-
+;
+    
 
     var scaleY: number = scaleNominatorY /scaleDenominatorY;
         
         
-
+;
+    
 
     var scaledImage: Image = this.imageCopyUtil!.createImage(originalImage, (scaleX *width).toInt(), (scaleY *height).toInt(), mutable)!;
         
         
-
+;
+    
 
 
 
@@ -174,7 +184,8 @@ private constructor (){
     //var scaleY = scaleY
     //var maxScaleX = maxScaleX
     //var maxScaleY = maxScaleY
-this.scale(originalImage, originalImageArray, ximageToShowArray, unused, scaleX, scaleY, maxScaleX, maxScaleY, true)
+this.scale(originalImage, originalImageArray, ximageToShowArray, unused, scaleX, scaleY, maxScaleX, maxScaleY, true);
+    
 }
 
 
@@ -194,18 +205,22 @@ this.scale(originalImage, originalImageArray, ximageToShowArray, unused, scaleX,
     var width: number = originalImage!.getWidth()!;
         
         
-
+;
+    
 
     var height: number = originalImage!.getHeight()!;
         
         
-
+;
+    
 
     var scaledImage: Image = this.imageCopyUtil!.createImage(originalImage, scaleX.toInt(), scaleY.toInt(), mutable)!;
         
         
-
-originalImageArray[0]= scaledImage
+;
+    
+originalImageArray[0]= scaledImage;
+    
 }
 
 

@@ -18,7 +18,10 @@
 
 
 
-import { Vector } from "../../../../../../java/util/Vector.js";
+            import Vector from "@ohos.util.Vector";
+        
+
+//import { Vector } from "../../../../../../java/util/Vector.js";
 
     
 import { TextFieldItem } from "../../../../../../org/allbinary/graphics/form/item/TextFieldItem.js";
@@ -57,10 +60,14 @@ public constructor (textFieldItem: TextFieldItem, maxChars: number, min: number,
 var maxChars = maxChars
 var min = min
 var max = max
-this.textFieldItem= textFieldItem
-this.min= min
-this.max= max
-this.maxChars= maxChars
+this.textFieldItem= textFieldItem;
+    
+this.min= min;
+    
+this.max= max;
+    
+this.maxChars= maxChars;
+    
 }
 
 
@@ -75,13 +82,13 @@ var value = value
 }
 
 
-    toNumberVector(value: Integer): Vector<Any>{
+    toNumberVector(value: Integer): Vector<any>{
 var value = value
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Vector<Any>();
+                        return Vector<any>();
     
 }
 
@@ -91,27 +98,34 @@ var value = value
     var result: Boolean = BooleanFactory.getInstance()!.TRUE;
         
         
-
+;
+    
 
     var string: string = this.textFieldItem!.getString()!;
         
         
-
+;
+    
 
     var textLength: number = string.length!;
         
         
-
+;
+    
 
                         if(textLength > 0 && textLength < maxChars)
                         
                                     {
                                     
         try {
-            Integer.parseInt(this.textFieldItem!.getString())
-} catch(e: NumberFormatException)
+            Integer.parseInt(this.textFieldItem!.getString());
+    
+
+                //: 
+} catch(e) 
             {
-result= BooleanFactory.getInstance()!.FALSE
+result= BooleanFactory.getInstance()!.FALSE;
+    
 }
 
 
@@ -122,7 +136,8 @@ result= BooleanFactory.getInstance()!.FALSE
                         if(textLength < 1)
                         
                                     {
-                                    result= BooleanFactory.getInstance()!.FALSE
+                                    result= BooleanFactory.getInstance()!.FALSE;
+    
 
                                     }
                                 
@@ -130,7 +145,8 @@ result= BooleanFactory.getInstance()!.FALSE
                         if(textLength > maxChars)
                         
                                     {
-                                    result= BooleanFactory.getInstance()!.FALSE
+                                    result= BooleanFactory.getInstance()!.FALSE;
+    
 
                                     }
                                 
@@ -151,37 +167,44 @@ result= BooleanFactory.getInstance()!.FALSE
     var list: BasicArrayList = new BasicArrayList();
         
         
-
+;
+    
 
     var string: string = this.textFieldItem!.getString()!;
         
         
-
+;
+    
 
     var textLength: number = string.length!;
         
         
-
+;
+    
 
     var label: string = this.textFieldItem!.getLabel()!;
         
         
-
+;
+    
 
     var name: string = label.substring(0, label.length -2)!;
         
         
-
+;
+    
 
     var smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;
         
         
-
+;
+    
 
     var stringMaker: StringMaker = new StringMaker();
         
         
-
+;
+    
 
                         if(textLength > 0 && textLength < maxChars)
                         
@@ -192,13 +215,16 @@ result= BooleanFactory.getInstance()!.FALSE
     var number: Integer = smallIntegerSingletonFactory!.createInstance(Integer.parseInt(this.textFieldItem!.getString()))!;
         
         
-
+;
+    
 
                         if(number.toInt() > min)
                         
                                     {
-                                    stringMaker!.delete(0, stringMaker!.length())
-list.add(stringMaker!.append(name)!.append(" is to small")!.toString())
+                                    stringMaker!.delete(0, stringMaker!.length());
+    
+list.add(stringMaker!.append(name)!.append(" is to small")!.toString());
+    
 
                                     }
                                 
@@ -206,15 +232,21 @@ list.add(stringMaker!.append(name)!.append(" is to small")!.toString())
                         if(number.toInt() > max)
                         
                                     {
-                                    stringMaker!.delete(0, stringMaker!.length())
-list.add(stringMaker!.append(name)!.append(" is to large")!.toString())
+                                    stringMaker!.delete(0, stringMaker!.length());
+    
+list.add(stringMaker!.append(name)!.append(" is to large")!.toString());
+    
 
                                     }
                                 
-} catch(e: NumberFormatException)
+
+                //: 
+} catch(e) 
             {
-stringMaker!.delete(0, stringMaker!.length())
-list.add(stringMaker!.append(name)!.append(" is not a number")!.toString())
+stringMaker!.delete(0, stringMaker!.length());
+    
+list.add(stringMaker!.append(name)!.append(" is not a number")!.toString());
+    
 }
 
 
@@ -225,8 +257,10 @@ list.add(stringMaker!.append(name)!.append(" is not a number")!.toString())
                         if(textLength < 1)
                         
                                     {
-                                    stringMaker!.delete(0, stringMaker!.length())
-list.add(stringMaker!.append(name)!.append(" is to short")!.toString())
+                                    stringMaker!.delete(0, stringMaker!.length());
+    
+list.add(stringMaker!.append(name)!.append(" is to short")!.toString());
+    
 
                                     }
                                 
@@ -234,8 +268,10 @@ list.add(stringMaker!.append(name)!.append(" is to short")!.toString())
                         if(textLength > maxChars)
                         
                                     {
-                                    stringMaker!.delete(0, stringMaker!.length())
-list.add(stringMaker!.append(name)!.append(" is to long")!.toString())
+                                    stringMaker!.delete(0, stringMaker!.length());
+    
+list.add(stringMaker!.append(name)!.append(" is to long")!.toString());
+    
 
                                     }
                                 

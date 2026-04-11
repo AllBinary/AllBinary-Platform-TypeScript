@@ -64,7 +64,8 @@ public constructor ()
 
     public processTick(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager
-this.setPosition(this.x, this.y +1, this.z)
+this.setPosition(this.x, this.y +1, this.z);
+    
 }
 
 

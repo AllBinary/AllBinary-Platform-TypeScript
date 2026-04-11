@@ -65,7 +65,8 @@ public constructor (powerOfTen: number)
                         if(powerOfTen % 10 != 0)
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, Error("Max must be power of 10"))
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, Error("Max must be power of 10"));
+    
 
                                     }
                                 
@@ -76,10 +77,14 @@ public constructor (powerOfTen: number, throwException: boolean){
             super();
             var powerOfTen = powerOfTen
 var throwException = throwException
-this.maxDigits= MathUtil.getInstance()!.getTotalDigits(powerOfTen)
-this.powerOfTen= powerOfTen
-this.maxValue= (powerOfTen *10) -1
-this.charArray= new Array(this.maxDigits)
+this.maxDigits= MathUtil.getInstance()!.getTotalDigits(powerOfTen);
+    
+this.powerOfTen= powerOfTen;
+    
+this.maxValue= (powerOfTen *10) -1;
+    
+this.charArray= new Array(this.maxDigits);
+    
 }
 
 
@@ -89,7 +94,8 @@ var value = value
                         if(value < 10)
                         
                                     {
-                                    this.setCurrentTotalDigits(1)
+                                    this.setCurrentTotalDigits(1);
+    
 
 
 
@@ -103,7 +109,8 @@ var value = value
                         if(value > maxValue)
                         
                                     {
-                                    this.setCurrentTotalDigits(3)
+                                    this.setCurrentTotalDigits(3);
+    
 
 
 
@@ -117,17 +124,20 @@ var value = value
     var index: number = 0;
         
         
-
+;
+    
 
     var div: number = powerOfTen;
         
         
-
+;
+    
 
     var lastValue: number = 0;
         
         
-
+;
+    
 
         while(div >= 1)
         {
@@ -135,7 +145,8 @@ var value = value
     var digit: number = (value -lastValue) /div;
         
         
-
+;
+    
 
                         if(digit >= 0 && digit < 10)
                         
@@ -148,18 +159,22 @@ var value = value
                                     }
                                 
                         else {
-                            this.charArray[index++]= this.primitiveLongSingleton!.NUMBER_CHAR_ARRAY[digit]!
+                            this.charArray[index++]= this.primitiveLongSingleton!.NUMBER_CHAR_ARRAY[digit]!;
+    
 
                         }
                             
-lastValue += digit *div
+lastValue += digit *div;
+    
 
                                     }
                                 
-div= div /10
+div= div /10;
+    
 }
 
-this.setCurrentTotalDigits(index)
+this.setCurrentTotalDigits(index);
+    
 
 
 
@@ -171,7 +186,8 @@ this.setCurrentTotalDigits(index)
 
     setCurrentTotalDigits(currentTotalDigits: number){
 var currentTotalDigits = currentTotalDigits
-this.currentTotalDigits= currentTotalDigits
+this.currentTotalDigits= currentTotalDigits;
+    
 }
 
 

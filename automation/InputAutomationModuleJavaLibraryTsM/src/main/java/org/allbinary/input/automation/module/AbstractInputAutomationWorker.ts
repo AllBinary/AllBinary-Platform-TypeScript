@@ -98,7 +98,8 @@ var thread = thread
 
     public setRunning(running: boolean){
 var running = running
-this.running= running
+this.running= running;
+    
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
@@ -133,12 +134,17 @@ this.running= running
 
     startDataWorkers(){
 
-                        if(!isAnyDataWorkerRunning())
+                        if(!isAnyDataWorkerRunning();
+
+                        )
                         
                                     {
-                                    captureThread= Thread(this.getCaptureWorker())
-logUtil!.put("Starting CaptureWorkers - Need more images - Thread State: " +captureThread!.getState()!.toString(), this, "startCaptureWorkers")
-captureThread!.start()
+                                    captureThread= Thread(this.getCaptureWorker());
+    
+logUtil!.put("Starting CaptureWorkers - Need more images - Thread State: " +captureThread!.getState()!.toString(), this, "startCaptureWorkers");
+    
+captureThread!.start();
+    
 
                                     }
                                 
@@ -152,8 +158,10 @@ captureThread!.start()
 
         while(isAnyDataWorkerRunning())
         {
-logUtil!.put("Waiting", this, this.commonStrings!.RUN)
-Thread.sleep(250)
+logUtil!.put("Waiting", this, this.commonStrings!.RUN);
+    
+Thread.sleep(250);
+    
 }
 
 }
@@ -162,7 +170,8 @@ Thread.sleep(250)
                 //@Throws(Error::class)
             
     stopDataWorkers(){
-this.getCaptureWorker()!.setRunning(false)
+this.getCaptureWorker()!.setRunning(false);
+    
 }
 
 
@@ -179,28 +188,41 @@ this.getCaptureWorker()!.setRunning(false)
     public run(){
 
         try {
-            logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.RUN)
-this.setRunning(true)
+            logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.RUN);
+    
+this.setRunning(true);
+    
 
     var timeHelper: TimeDelayHelper = new TimeDelayHelper(1000);
         
         
-
+;
+    
 
         while(this.isRunning())
         {
-timeHelper!.setStartTime()
-this.process()
-this.index++
-logUtil!.put(CommonLabels.getInstance()!.ELAPSED +timeHelper!.getElapsed() +" Index: " +this.index, this, this.commonStrings!.RUN)
+timeHelper!.setStartTime();
+    
+this.process();
+    
+this.index++;
+    
+logUtil!.put(CommonLabels.getInstance()!.ELAPSED +timeHelper!.getElapsed() +" Index: " +this.index, this, this.commonStrings!.RUN);
+    
 }
 
-this.stopDataWorkers()
-this.waitForDataWorkers()
-logUtil!.put(this.commonStrings!.END, this, this.commonStrings!.RUN)
-} catch(e: Exception)
+this.stopDataWorkers();
+    
+this.waitForDataWorkers();
+    
+logUtil!.put(this.commonStrings!.END, this, this.commonStrings!.RUN);
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e)
+logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e);
+    
 }
 
 }
@@ -218,7 +240,8 @@ logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e)
 
     public setInputAutomationActionInterface(inputAutomationActionInterface: InputAutomationActionInterface){
 var inputAutomationActionInterface = inputAutomationActionInterface
-this.inputAutomationActionInterface= inputAutomationActionInterface
+this.inputAutomationActionInterface= inputAutomationActionInterface;
+    
 }
 
 
@@ -234,7 +257,8 @@ this.inputAutomationActionInterface= inputAutomationActionInterface
 
     setCaptureWorker(captureWorkerInterface: CaptureWorkerInterface){
 var captureWorkerInterface = captureWorkerInterface
-this.captureWorkerInterface= captureWorkerInterface
+this.captureWorkerInterface= captureWorkerInterface;
+    
 }
 
 
@@ -250,7 +274,8 @@ this.captureWorkerInterface= captureWorkerInterface
 
     setImageComparisonWorker(imageComparisonWorker: ImageComparisonWorker){
 var imageComparisonWorker = imageComparisonWorker
-this.imageComparisonWorker= imageComparisonWorker
+this.imageComparisonWorker= imageComparisonWorker;
+    
 }
 
 
@@ -266,7 +291,8 @@ this.imageComparisonWorker= imageComparisonWorker
 
     setMotionRectanglesWorker(motionRectanglesWorker: MotionRectanglesWorker){
 var motionRectanglesWorker = motionRectanglesWorker
-this.motionRectanglesWorker= motionRectanglesWorker
+this.motionRectanglesWorker= motionRectanglesWorker;
+    
 }
 
 

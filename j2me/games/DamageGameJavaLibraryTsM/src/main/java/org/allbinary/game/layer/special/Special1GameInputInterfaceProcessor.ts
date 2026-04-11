@@ -45,7 +45,8 @@ public constructor (collidableDestroyableDamageableLayer: SpecialGameInputInterf
     public process(allbinaryLayerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
 var allbinaryLayerManager = allbinaryLayerManager
 var gameKeyEvent = gameKeyEvent
-this.specialGameInputInterface!.special1(allbinaryLayerManager, gameKeyEvent)
+this.specialGameInputInterface!.special1(allbinaryLayerManager, gameKeyEvent);
+    
 }
 
 

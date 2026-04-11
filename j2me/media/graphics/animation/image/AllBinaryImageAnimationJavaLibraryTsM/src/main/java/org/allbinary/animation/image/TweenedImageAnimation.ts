@@ -69,11 +69,16 @@ public constructor (image: Image, dx: number, dy: number, totalFrames: number, a
 
                             //For kotlin this is before the body of the constructor.
                     
-this.image= image
-this.dx= dx
-this.dy= dy
-this.totalFrames= totalFrames
-this.circularIndexUtil= CircularIndexUtil.getInstance(this.totalFrames)
+this.image= image;
+    
+this.dx= dx;
+    
+this.dy= dy;
+    
+this.totalFrames= totalFrames;
+    
+this.circularIndexUtil= CircularIndexUtil.getInstance(this.totalFrames);
+    
 }
 
 
@@ -85,23 +90,28 @@ this.circularIndexUtil= CircularIndexUtil.getInstance(this.totalFrames)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getSize();
+
+                        ;
     
 }
 
 
     public nextFrame(){
-this.circularIndexUtil!.next()
+this.circularIndexUtil!.next();
+    
 }
 
 
     public previousFrame(){
-this.circularIndexUtil!.previous()
+this.circularIndexUtil!.previous();
+    
 }
 
 
     public setFrame(index: number){
 var index = index
-this.circularIndexUtil!.setIndex(index)
+this.circularIndexUtil!.setIndex(index);
+    
 }
 
 
@@ -111,6 +121,8 @@ this.circularIndexUtil!.setIndex(index)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.circularIndexUtil!.getIndex();
+
+                        ;
     
 }
 
@@ -125,17 +137,19 @@ this.circularIndexUtil!.setIndex(index)
 }
 
 
-    public setSequence(sequence: IntArray){
+    public setSequence(sequence: number[]){
 var sequence = sequence
 }
 
 
-    public getSequence(): IntArray{
+    public getSequence(): number[]{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return PrimitiveIntUtil.getArrayInstance();
+
+                        ;
     
 }
 
@@ -152,30 +166,36 @@ var y = y
     var frame: number = this.getFrame()!;
         
         
-
+;
+    
 
     var currentX: number = dx *frame;
         
         
-
+;
+    
 
     var currentY: number = dy *frame;
         
         
-
-graphics.drawImage(this.image, x +currentX, y +currentY, anchor)
+;
+    
+graphics.drawImage(this.image, x +currentX, y +currentY, anchor);
+    
 }
 
 
     public close(){
-DisposalUtil.getInstance()!.dispose(this.image)
+DisposalUtil.getInstance()!.dispose(this.image);
+    
 }
 
 
                 //@Throws(Error::class)
             
     finalize(){
-DisposalUtil.getInstance()!.dispose(this.image)
+DisposalUtil.getInstance()!.dispose(this.image);
+    
 }
 
 

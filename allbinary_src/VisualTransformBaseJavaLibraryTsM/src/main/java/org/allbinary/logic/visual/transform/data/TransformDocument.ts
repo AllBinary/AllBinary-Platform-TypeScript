@@ -59,29 +59,37 @@ public constructor (){
             super();
             
         try {
-            this.document= DomDocumentHelper.create()
+            this.document= DomDocumentHelper.create();
+    
 
     var allbinaryNode: Node = document.createElement("allbinary")!;
         
         
-
-this.baseNode= allbinaryNode
-document.appendChild(this.baseNode)
+;
+    
+this.baseNode= allbinaryNode;
+    
+document.appendChild(this.baseNode);
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(this.log(), this, this.commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put(this.log(), this, this.commonStrings!.CONSTRUCTOR);
+    
 
                                     }
                                 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, this.commonStrings!.CONSTRUCTOR, e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, this.commonStrings!.CONSTRUCTOR, e);
+    
 
                                     }
                                 
@@ -121,30 +129,38 @@ document.appendChild(this.baseNode)
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
                         if(this.baseNode != 
                                     null
                                 )
                         
                                     {
-                                    stringBuffer!.append("BaseNode: ")
-stringBuffer!.append(this.baseNode!.getNodeName())
+                                    stringBuffer!.append("BaseNode: ");
+    
+stringBuffer!.append(this.baseNode!.getNodeName());
+    
 
                                     }
                                 
                         else {
-                            stringBuffer!.append("Log-Error: BaseNode is Null")
+                            stringBuffer!.append("Log-Error: BaseNode is Null");
+    
 
                         }
                             
-stringBuffer!.append("\nDocument: ")
-stringBuffer!.append(DomDocumentHelper.toString(document))
+stringBuffer!.append("\nDocument: ");
+    
+stringBuffer!.append(DomDocumentHelper.toString(document));
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

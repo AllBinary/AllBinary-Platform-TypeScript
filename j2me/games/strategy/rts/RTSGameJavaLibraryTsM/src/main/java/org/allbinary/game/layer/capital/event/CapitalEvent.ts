@@ -46,14 +46,19 @@ public constructor (anyType: any = {})
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("CapitalEvent: Value: \n")
-stringBuffer!.appendint(this.getValue())
+;
+    
+stringBuffer!.append("CapitalEvent: Value: \n");
+    
+stringBuffer!.appendint(this.getValue());
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 
@@ -70,7 +75,8 @@ stringBuffer!.appendint(this.getValue())
 
     public setValue(value: number){
 var value = value
-this.value= value
+this.value= value;
+    
 }
 
 

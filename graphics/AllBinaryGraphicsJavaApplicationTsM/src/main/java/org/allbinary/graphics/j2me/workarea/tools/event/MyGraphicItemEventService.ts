@@ -51,14 +51,20 @@ export class MyGraphicItemEventService
 
     public static addListener(listener: MyGraphicItemEventListener){
 var listener = listener
-listenerList!.add(listener::class as Class<*>, listener as java.util.EventListener)
+listenerList!.add(listenerconstructor;
+
+                         as Class<*>, listener as java.util.EventListener);
+    
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static removeListener(listener: MyGraphicItemEventListener){
 var listener = listener
-listenerList!.remove(listener::class as Class<*>, listener as java.util.EventListener)
+listenerList!.remove(listenerconstructor;
+
+                         as Class<*>, listener as java.util.EventListener);
+    
 }
 
 
@@ -68,10 +74,11 @@ listenerList!.remove(listener::class as Class<*>, listener as java.util.EventLis
     public static fire(evt: MyGraphicItemEvent){
 var evt = evt
 
-    var listeners: any = {}[] = listenerList!.getListenerList()!;
+    var listeners: any[] = listenerList!.getListenerList()!;
         
         
-
+;
+    
 
 
 
@@ -83,7 +90,7 @@ var evt = evt
 i < listeners.length; )
         {
 
-                        if(listeners[i] == listeners[i +1]!.::class)
+                        if(listeners[i] == listeners[i +1]!.constructor)
                         
                                     {
                                     
@@ -92,7 +99,8 @@ i < listeners.length; )
                                     {
                                      = listeners[i +1]! as MyGraphicItemEventListener
 .
-                    highlight(evt)
+                    highlight(evt);
+    
 
                                     }
                                 
@@ -102,7 +110,8 @@ i < listeners.length; )
                                     {
                                      = listeners[i +1]! as MyGraphicItemEventListener
 .
-                    deselect(evt)
+                    deselect(evt);
+    
 
                                     }
                                 
@@ -112,7 +121,8 @@ i < listeners.length; )
                                     {
                                      = listeners[i +1]! as MyGraphicItemEventListener
 .
-                    delete(evt)
+                    delete(evt);
+    
 
                                     }
                                 
@@ -122,7 +132,8 @@ i < listeners.length; )
                                     {
                                      = listeners[i +1]! as MyGraphicItemEventListener
 .
-                    duplicate(evt)
+                    duplicate(evt);
+    
 
                                     }
                                 
@@ -132,7 +143,8 @@ i < listeners.length; )
                                     {
                                      = listeners[i +1]! as MyGraphicItemEventListener
 .
-                    rotate(evt)
+                    rotate(evt);
+    
 
                                     }
                                 

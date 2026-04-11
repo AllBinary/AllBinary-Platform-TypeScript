@@ -65,7 +65,8 @@ export class PartnerIdentifierFileUtil
     var resourceUtil: ResourceUtil = ResourceUtil.getInstance()!;
         
         
-
+;
+    
 
     var chars: string[] = 
                                                         
@@ -73,26 +74,32 @@ export class PartnerIdentifierFileUtil
                                                     ;
         
         
-
+;
+    
 
     var partnerString: string = StringUtil.getInstance()!.EMPTY_STRING;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return partnerString;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET, e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET, e);
+    
 
 
 

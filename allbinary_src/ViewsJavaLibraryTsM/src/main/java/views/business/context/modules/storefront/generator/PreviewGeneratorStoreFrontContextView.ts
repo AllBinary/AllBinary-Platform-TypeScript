@@ -62,24 +62,33 @@ public constructor (transformInfoInterface: TransformInfoInterface)
 
         try {
             
-    var httpTransformInfoInterface: TransformInfoHttpInterface = this.getTransformInfoInterface() as TransformInfoHttpInterface;
-        
-        
+    var httpTransformInfoInterface: TransformInfoHttpInterface = this.getTransformInfoInterface();
 
-httpTransformInfoInterface!.getPropertiesHashMap()!.put(TransformInfoData.getInstance()!.PARTIAL, CommonSeps.getInstance()!.SPACE +TransformInfosData.getInstance()!.PREVIEW)
+                         as TransformInfoHttpInterface;
+        
+        
+;
+    
+httpTransformInfoInterface!.getPropertiesHashMap()!.put(TransformInfoData.getInstance()!.PARTIAL, CommonSeps.getInstance()!.SPACE +TransformInfosData.getInstance()!.PREVIEW);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.view(TransformInfosData.getInstance()!.PREVIEW);
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e);
+    
 
                                     }
                                 

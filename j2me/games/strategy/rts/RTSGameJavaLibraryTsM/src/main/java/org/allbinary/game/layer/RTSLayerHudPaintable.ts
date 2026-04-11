@@ -73,25 +73,34 @@ private constructor (){
     var charHeight: number = this.myFont!.DEFAULT_CHAR_HEIGHT;
         
         
-
-this.setName(this.getRtsLayer()!.getName())
+;
+    
+this.setName(this.getRtsLayer()!.getName());
+    
 
     var partInterface: BasicWeaponPart = this.getRtsLayer()!.getPartInterfaceArray()[0]! as BasicWeaponPart;
         
         
+;
+    
+this.weaponProperties= partInterface!.getWeaponProperties()!.toStringArray();
+    
+this.costY1= (y +((weaponProperties!.length +1) *charHeight));
+    
 
-this.weaponProperties= partInterface!.getWeaponProperties()!.toStringArray()
-this.costY1= (y +((weaponProperties!.length +1) *charHeight))
+                        if(!AndroidUtil.isAndroid();
 
-                        if(!AndroidUtil.isAndroid())
+                        )
                         
                                     {
-                                    this.costY= this.costY1
+                                    this.costY= this.costY1;
+    
 
                                     }
                                 
                         else {
-                            this.costY= (y +((weaponProperties!.length +2) *charHeight))
+                            this.costY= (y +((weaponProperties!.length +2) *charHeight));
+    
 
                         }
                             
@@ -100,18 +109,21 @@ this.costY1= (y +((weaponProperties!.length +1) *charHeight))
 
     public paint(graphics: Graphics){
 var graphics = graphics
-super.paint(graphics)
+super.paint(graphics);
+    
 
     var charHeight: number = this.myFont!.DEFAULT_CHAR_HEIGHT;
         
         
-
+;
+    
 
     var size: number = weaponProperties!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -122,7 +134,8 @@ super.paint(graphics)
         
 index < size; index++)
         {
-graphics.drawString(weaponProperties[index]!, this.textX, y +((index +1) *charHeight), 0)
+graphics.drawString(weaponProperties[index]!, this.textX, y +((index +1) *charHeight), 0);
+    
 }
 
 }
@@ -130,7 +143,8 @@ graphics.drawString(weaponProperties[index]!, this.textX, y +((index +1) *charHe
 
     public setRtsLayer(rtsLayer: RTSLayer){
 var rtsLayer = rtsLayer
-this.rtsLayer= rtsLayer
+this.rtsLayer= rtsLayer;
+    
 }
 
 

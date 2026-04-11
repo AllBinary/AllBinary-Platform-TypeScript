@@ -76,56 +76,102 @@ var paymentMethod = paymentMethod
     var paymentMethodString: string = PaymentGatewayPageData.NAME +paymentMethod;
         
         
-
+;
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(location)
-stringBuffer!.append("MakePayment")
-stringBuffer!.append(EXTENSION)
-MAKEPAYMENT= stringBuffer!.toString()
-stringBuffer!.delete(0, stringBuffer!.length())
-stringBuffer!.append(paymentMethodString)
-stringBuffer!.append("Checkout")
-stringBuffer!.append(EXTENSION)
-CHECKOUT= stringBuffer!.toString()
-stringBuffer!.delete(0, stringBuffer!.length())
-stringBuffer!.append(paymentMethodString)
-stringBuffer!.append("Shipping")
-stringBuffer!.append(EXTENSION)
-SHIPPING= stringBuffer!.toString()
-stringBuffer!.delete(0, stringBuffer!.length())
-stringBuffer!.append(paymentMethodString)
-stringBuffer!.append("ShippingAddress")
-stringBuffer!.append(EXTENSION)
-SHIPPINGADDRESS= stringBuffer!.toString()
-stringBuffer!.delete(0, stringBuffer!.length())
-stringBuffer!.append(paymentMethodString)
-stringBuffer!.append("ShippingAddressAction")
-stringBuffer!.append(EXTENSION)
-SHIPPINGADDRESSACTION= stringBuffer!.toString()
-stringBuffer!.delete(0, stringBuffer!.length())
-stringBuffer!.append(paymentMethodString)
-stringBuffer!.append("BillingAddress")
-stringBuffer!.append(EXTENSION)
-BILLINGADDRESS= stringBuffer!.toString()
-stringBuffer!.delete(0, stringBuffer!.length())
-stringBuffer!.append(paymentMethodString)
-stringBuffer!.append("Payment")
-stringBuffer!.append(EXTENSION)
-PAYMENT= stringBuffer!.toString()
-stringBuffer!.delete(0, stringBuffer!.length())
-stringBuffer!.append(paymentMethodString)
-stringBuffer!.append("Authorize")
-stringBuffer!.append(EXTENSION)
-AUTHORIZE= stringBuffer!.toString()
-stringBuffer!.delete(0, stringBuffer!.length())
-stringBuffer!.append(paymentMethodString)
-stringBuffer!.append("PaymentFinish")
-stringBuffer!.append(EXTENSION)
-FINISH= stringBuffer!.toString()
+;
+    
+stringBuffer!.append(location);
+    
+stringBuffer!.append("MakePayment");
+    
+stringBuffer!.append(EXTENSION);
+    
+MAKEPAYMENT= stringBuffer!.toString();
+    
+stringBuffer!.delete(0, stringBuffer!.length());
+    
+stringBuffer!.append(paymentMethodString);
+    
+stringBuffer!.append("Checkout");
+    
+stringBuffer!.append(EXTENSION);
+    
+CHECKOUT= stringBuffer!.toString();
+    
+stringBuffer!.delete(0, stringBuffer!.length());
+    
+stringBuffer!.append(paymentMethodString);
+    
+stringBuffer!.append("Shipping");
+    
+stringBuffer!.append(EXTENSION);
+    
+SHIPPING= stringBuffer!.toString();
+    
+stringBuffer!.delete(0, stringBuffer!.length());
+    
+stringBuffer!.append(paymentMethodString);
+    
+stringBuffer!.append("ShippingAddress");
+    
+stringBuffer!.append(EXTENSION);
+    
+SHIPPINGADDRESS= stringBuffer!.toString();
+    
+stringBuffer!.delete(0, stringBuffer!.length());
+    
+stringBuffer!.append(paymentMethodString);
+    
+stringBuffer!.append("ShippingAddressAction");
+    
+stringBuffer!.append(EXTENSION);
+    
+SHIPPINGADDRESSACTION= stringBuffer!.toString();
+    
+stringBuffer!.delete(0, stringBuffer!.length());
+    
+stringBuffer!.append(paymentMethodString);
+    
+stringBuffer!.append("BillingAddress");
+    
+stringBuffer!.append(EXTENSION);
+    
+BILLINGADDRESS= stringBuffer!.toString();
+    
+stringBuffer!.delete(0, stringBuffer!.length());
+    
+stringBuffer!.append(paymentMethodString);
+    
+stringBuffer!.append("Payment");
+    
+stringBuffer!.append(EXTENSION);
+    
+PAYMENT= stringBuffer!.toString();
+    
+stringBuffer!.delete(0, stringBuffer!.length());
+    
+stringBuffer!.append(paymentMethodString);
+    
+stringBuffer!.append("Authorize");
+    
+stringBuffer!.append(EXTENSION);
+    
+AUTHORIZE= stringBuffer!.toString();
+    
+stringBuffer!.delete(0, stringBuffer!.length());
+    
+stringBuffer!.append(paymentMethodString);
+    
+stringBuffer!.append("PaymentFinish");
+    
+stringBuffer!.append(EXTENSION);
+    
+FINISH= stringBuffer!.toString();
+    
 }
 
 

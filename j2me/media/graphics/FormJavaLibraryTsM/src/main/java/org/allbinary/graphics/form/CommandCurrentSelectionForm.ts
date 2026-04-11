@@ -85,8 +85,10 @@ public constructor (title: string, items: CustomItem[], rectangle: Rectangle, fo
 
                             //For kotlin this is before the body of the constructor.
                     
-this.initAnimations()
-this.update(items)
+this.initAnimations();
+    
+this.update(items);
+    
 }
 
 
@@ -95,7 +97,8 @@ this.update(items)
     var nullAnimation: Animation = NullAnimationFactory.getFactoryInstance()!.getInstance(0)!;
         
         
-
+;
+    
 
 
 
@@ -107,7 +110,8 @@ this.update(items)
         
 --index >= 0; )
         {
-this.selectedAnimationArray[index]= nullAnimation
+this.selectedAnimationArray[index]= nullAnimation;
+    
 }
 
 
@@ -121,7 +125,8 @@ this.selectedAnimationArray[index]= nullAnimation
         
 --index >= 0; )
         {
-this.unSelectedAnimationArray[index]= nullAnimation
+this.unSelectedAnimationArray[index]= nullAnimation;
+    
 }
 
 }
@@ -140,7 +145,8 @@ this.unSelectedAnimationArray[index]= nullAnimation
         
 --index >= 0; )
         {
-this.update(index, items[index]!)
+this.update(index, items[index]!);
+    
 }
 
 }
@@ -153,61 +159,73 @@ this.update(index, items[index]!)
     var basicColorFactory: BasicColorFactory = BasicColorFactory.getInstance()!;
         
         
-
+;
+    
 
     var buttonColor: BasicColor = basicColorFactory!.TRANSPARENT_GREY;
         
         
-
+;
+    
 
     var selectedButtonColor: BasicColor = basicColorFactory!.TRANSPARENT_RED;
         
         
-
+;
+    
 
     var width: number = item.getMinimumWidth()!;
         
         
-
+;
+    
 
     var height: number = item.getMinimumHeight()!;
         
         
-
+;
+    
 
     var adjustedBorder: number = 3;
         
         
-
+;
+    
 
     var offset: number =  -(halfBorder +adjustedBorder);
         
         
-
+;
+    
 
                         if(J2MEUtil.isJ2ME())
                         
                                     {
-                                    this.selectedAnimationArray[index]= RectangleAdjustedAnimation(width +border -adjustedBorder, height +border -adjustedBorder, offset, offset, selectedButtonColor)
+                                    this.selectedAnimationArray[index]= RectangleAdjustedAnimation(width +border -adjustedBorder, height +border -adjustedBorder, offset, offset, selectedButtonColor);
+    
 
                                     }
                                 
                         else {
-                            this.selectedAnimationArray[index]= RectangleFilledAdjustedAnimation(width +border -adjustedBorder, height +border -adjustedBorder, offset, offset, selectedButtonColor)
+                            this.selectedAnimationArray[index]= RectangleFilledAdjustedAnimation(width +border -adjustedBorder, height +border -adjustedBorder, offset, offset, selectedButtonColor);
+    
 
                         }
                             
-adjustedBorder= 4
+adjustedBorder= 4;
+    
 
                         if(J2MEUtil.isJ2ME())
                         
                                     {
-                                    this.unSelectedAnimationArray[index]= RectangleAdjustedAnimation(width +border -adjustedBorder, height +border -adjustedBorder, offset, offset, buttonColor)
+                                    this.unSelectedAnimationArray[index]= RectangleAdjustedAnimation(width +border -adjustedBorder, height +border -adjustedBorder, offset, offset, buttonColor);
+    
 
                                     }
                                 
                         else {
-                            this.unSelectedAnimationArray[index]= RectangleFilledAdjustedAnimation(width +border -adjustedBorder, height +border -adjustedBorder, offset, offset, buttonColor)
+                            this.unSelectedAnimationArray[index]= RectangleFilledAdjustedAnimation(width +border -adjustedBorder, height +border -adjustedBorder, offset, offset, buttonColor);
+    
 
                         }
                             
@@ -219,17 +237,23 @@ adjustedBorder= 4
     var index: number = super.getSelectedIndex()!;
         
         
+;
+    
 
+    var commandTextItem: CommandTextItem = this.get(index);
 
-    var commandTextItem: CommandTextItem = this.get(index) as CommandTextItem;
+                         as CommandTextItem;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return commandTextItem!.getCommand();
+
+                        ;
     
 }
 
@@ -240,8 +264,10 @@ adjustedBorder= 4
     var result: number = super.append(item)!;
         
         
-
-this.update(result, item)
+;
+    
+this.update(result, item);
+    
 
 
 
@@ -253,27 +279,32 @@ this.update(result, item)
 
     public delete(itemNum: number){
     //var itemNum = itemNum
-super.delete(itemNum)
+super.delete(itemNum);
+    
 }
 
 
     public deleteAll(){
-this.initAnimations()
-super.deleteAll()
+this.initAnimations();
+    
+super.deleteAll();
+    
 }
 
 
     public insert(itemNum: number, item: CustomItem){
     //var itemNum = itemNum
     //var item = item
-super.insert(itemNum, item)
+super.insert(itemNum, item);
+    
 }
 
 
     public set(itemNum: number, item: CustomItem){
     //var itemNum = itemNum
     //var item = item
-super.set(itemNum, item)
+super.set(itemNum, item);
+    
 }
 
 
@@ -285,12 +316,15 @@ super.set(itemNum, item)
     //var item = item
     //var x = x
     //var y = y
-this.selectedAnimationArray[index]!.paint(graphics, x, y)
+this.selectedAnimationArray[index]!.paint(graphics, x, y);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.paintItem(graphics, index, item, x, y);
+
+                        ;
     
 }
 
@@ -303,12 +337,15 @@ this.selectedAnimationArray[index]!.paint(graphics, x, y)
     //var item = item
     //var x = x
     //var y = y
-this.unSelectedAnimationArray[index]!.paint(graphics, x, y)
+this.unSelectedAnimationArray[index]!.paint(graphics, x, y);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.paintUnselectedItem(graphics, index, item, x, y);
+
+                        ;
     
 }
 

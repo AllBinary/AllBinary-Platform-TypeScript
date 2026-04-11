@@ -32,14 +32,17 @@ public constructor (forward: number, reverse: number){
             super();
             var forward = forward
 var reverse = reverse
-this.setForward(forward)
-this.setReverse(reverse)
+this.setForward(forward);
+    
+this.setReverse(reverse);
+    
 }
 
 
     public setReverse(reverse: number){
 var reverse = reverse
-this.reverse= reverse
+this.reverse= reverse;
+    
 }
 
 
@@ -55,7 +58,8 @@ this.reverse= reverse
 
     public setForward(forward: number){
 var forward = forward
-this.forward= forward
+this.forward= forward;
+    
 }
 
 

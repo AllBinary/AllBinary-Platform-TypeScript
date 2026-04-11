@@ -82,35 +82,44 @@ private constructor (){
 
 
     public update(){
-super.update()
+super.update();
+    
 
     var myFont: MyFont = MyFont.getInstance()!;
         
         
-
+;
+    
 
     var charHeight: number = myFont!.DEFAULT_CHAR_HEIGHT;
         
         
-
-this.costY= (y +CommonButtons.getInstance()!.STANDARD_BUTTON_SIZE)
-this.costY1= (y +CommonButtons.getInstance()!.STANDARD_BUTTON_SIZE -(charHeight))
-this.percentCompleteX2= this.imageX +CommonButtons.getInstance()!.STANDARD_BUTTON_SIZE -myFont!.charWidth()
+;
+    
+this.costY= (y +CommonButtons.getInstance()!.STANDARD_BUTTON_SIZE);
+    
+this.costY1= (y +CommonButtons.getInstance()!.STANDARD_BUTTON_SIZE -(charHeight));
+    
+this.percentCompleteX2= this.imageX +CommonButtons.getInstance()!.STANDARD_BUTTON_SIZE -myFont!.charWidth();
+    
 
     var displayInfoSingleton: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
         
         
-
+;
+    
 
                         if(displayInfoSingleton!.getLastWidth() > 320)
                         
                                     {
-                                    this.rtsLayerCompositePaintableLateInit= UpgradableWideRTSLayerPaintable(this)
+                                    this.rtsLayerCompositePaintableLateInit= UpgradableWideRTSLayerPaintable(this);
+    
 
                                     }
                                 
                         else {
-                            this.rtsLayerCompositePaintableLateInit= RTSLayerCompositePaintable(this)
+                            this.rtsLayerCompositePaintableLateInit= RTSLayerCompositePaintable(this);
+    
 
                         }
                             
@@ -119,13 +128,19 @@ this.percentCompleteX2= this.imageX +CommonButtons.getInstance()!.STANDARD_BUTTO
 
     public updateSelectionInfo(){
 
-    var rtsLayer: RTSLayer = this.getRtsLayer() as RTSLayer;
-        
-        
+    var rtsLayer: RTSLayer = this.getRtsLayer();
 
-this.rtsLayerCompositePaintableLateInit!.update(rtsLayer)
-this.setAnimationInterface(rtsLayer!.getVerticleBuildAnimationInterface())
-this.setName(rtsLayer!.getName())
+                         as RTSLayer;
+        
+        
+;
+    
+this.rtsLayerCompositePaintableLateInit!.update(rtsLayer);
+    
+this.setAnimationInterface(rtsLayer!.getVerticleBuildAnimationInterface());
+    
+this.setName(rtsLayer!.getName());
+    
 }
 
 
@@ -141,16 +156,21 @@ this.setName(rtsLayer!.getName())
 
     public updateInfo(){
 
-    var rtsLayer: RTSLayer = this.getRtsLayer() as RTSLayer;
-        
-        
+    var rtsLayer: RTSLayer = this.getRtsLayer();
 
-this.percentComplete= rtsLayer!.getPercentComplete()
+                         as RTSLayer;
+        
+        
+;
+    
+this.percentComplete= rtsLayer!.getPercentComplete();
+    
 
                         if(percentComplete < 10)
                         
                                     {
-                                    this.percentCompleteX= 32
+                                    this.percentCompleteX= 32;
+    
 
                                     }
                                 
@@ -158,33 +178,43 @@ this.percentComplete= rtsLayer!.getPercentComplete()
                         if(percentComplete < 100)
                         
                                     {
-                                    this.percentCompleteX= 24
+                                    this.percentCompleteX= 24;
+    
 
                                     }
                                 
                         else {
-                            this.percentCompleteX= 16
+                            this.percentCompleteX= 16;
+    
 
                         }
                             
-this.percentCompleteArray= this.getPrimitiveLongUtil()!.getCharArray(percentComplete)
-this.currentTotalDigits= this.getPrimitiveLongUtil()!.getCurrentTotalDigits()
+this.percentCompleteArray= this.getPrimitiveLongUtil()!.getCharArray(percentComplete);
+    
+this.currentTotalDigits= this.getPrimitiveLongUtil()!.getCurrentTotalDigits();
+    
 }
 
 
     public paint(graphics: Graphics){
 var graphics = graphics
-super.paint(graphics)
-this.rtsLayerCompositePaintableLateInit!.paint(graphics)
-graphics.drawChars(percentCompleteArray, 0, this.currentTotalDigits, this.imageX +this.percentCompleteX, costY, 0)
-graphics.drawString(this.PERCENT, this.percentCompleteX2, costY, 0)
-this.getAnimationInterface()!.paint(graphics, this.imageX, y)
+super.paint(graphics);
+    
+this.rtsLayerCompositePaintableLateInit!.paint(graphics);
+    
+graphics.drawChars(percentCompleteArray, 0, this.currentTotalDigits, this.imageX +this.percentCompleteX, costY, 0);
+    
+graphics.drawString(this.PERCENT, this.percentCompleteX2, costY, 0);
+    
+this.getAnimationInterface()!.paint(graphics, this.imageX, y);
+    
 }
 
 
     public setRtsLayer(rtsLayer: RTSLayer){
 var rtsLayer = rtsLayer
-this.rtsLayer= rtsLayer
+this.rtsLayer= rtsLayer;
+    
 }
 
 

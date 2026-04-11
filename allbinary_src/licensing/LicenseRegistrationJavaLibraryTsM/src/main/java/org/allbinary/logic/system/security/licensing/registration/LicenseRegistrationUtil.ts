@@ -18,7 +18,10 @@
 
 
 
-import { Hashtable } from "../../../../../../../java/util/Hashtable.js";
+            import Hashtable from "@ohos.util.HashMap";
+        
+
+//import { Hashtable } from "../../../../../../../java/util/Hashtable.js";
 
     
 import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonStrings.js";
@@ -52,22 +55,33 @@ export class LicenseRegistrationUtil
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
+;
+    
+PreLogUtil.put(CommonLabels.getInstance()!.START_LABEL +"License Registration", "LicenseRegistrationUtil", commonStrings!.PROCESS);
+    
+RegistrationConfiguration.getInstance()!.setRegistrationCode(registrationId);
+    
+RegistrationConfiguration.getInstance()!.write();
+    
 
-PreLogUtil.put(CommonLabels.getInstance()!.START_LABEL +"License Registration", "LicenseRegistrationUtil", commonStrings!.PROCESS)
-RegistrationConfiguration.getInstance()!.setRegistrationCode(registrationId)
-RegistrationConfiguration.getInstance()!.write()
-
-    var hashtable: Hashtable<Any, Any> = abeClientInformation!.toHashtable()!;
+    var hashtable: Hashtable<any, any> = abeClientInformation!.toHashtable()!;
         
         
-
-hashtable.put(RegistrationConfiguration.getInstance()!.NAME, registrationId)
-hashtable.put("message", SpecialMessageUtil.getInstance()!.get())
+;
+    
+hashtable.put(RegistrationConfiguration.getInstance()!.NAME, registrationId);
+    
+hashtable.put("message", SpecialMessageUtil.getInstance()!.get());
+    
 XmlRpcRemoteLicenseRegistrationClient(abeClientInformation).
-                            get(hashtable)
-} catch(e: Exception)
+                            get(hashtable);
+    
+
+                //: 
+} catch(e) 
             {
-PreLogUtil.put("License Registration Exception", "LicenseRegistrationUtil", "License Registration", e)
+PreLogUtil.put("License Registration Exception", "LicenseRegistrationUtil", "License Registration", e);
+    
 }
 
 }

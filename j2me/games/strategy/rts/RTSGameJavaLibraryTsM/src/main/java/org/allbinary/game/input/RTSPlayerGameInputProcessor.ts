@@ -30,7 +30,8 @@ public constructor (rtsPlayerGameInput: RTSPlayerGameInput){
 
             super();
             var rtsPlayerGameInput = rtsPlayerGameInput
-this.rtsPlayerGameInput= rtsPlayerGameInput
+this.rtsPlayerGameInput= rtsPlayerGameInput;
+    
 }
 
 

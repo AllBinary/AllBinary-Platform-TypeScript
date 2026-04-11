@@ -55,32 +55,40 @@ public constructor (node: Node){
     var childNodeList: NodeList = node.getChildNodes()!;
         
         
+;
+    
 
-
-    var hashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
         
         
-
+;
+    
 
     var name: string = DomNodeHelper.getTextNodeValue(UserEmailEventConfigurationData.NAME, childNodeList)!;
         
         
-
-hashMap!.put(UserEmailEventConfigurationData.NAME, name)
+;
+    
+hashMap!.put(UserEmailEventConfigurationData.NAME, name);
+    
 
     var eventListenerClassPath: string = DomNodeHelper.getTextNodeValue(UserEmailEventConfigurationData.LISTENER_CLASSPATH, childNodeList)!;
         
         
-
-hashMap!.put(UserEmailEventConfigurationData.LISTENER_CLASSPATH, eventListenerClassPath)
-this.setUserEmailEventConfigurationInterface(UserEmailEventConfiguration(hashMap) as UserEmailEventConfigurationInterface)
+;
+    
+hashMap!.put(UserEmailEventConfigurationData.LISTENER_CLASSPATH, eventListenerClassPath);
+    
+this.setUserEmailEventConfigurationInterface(UserEmailEventConfiguration(hashMap) as UserEmailEventConfigurationInterface);
+    
 }
 
 public constructor (userEmailEventConfigurationInterface: UserEmailEventConfigurationInterface){
 
             super();
             var userEmailEventConfigurationInterface = userEmailEventConfigurationInterface
-this.setUserEmailEventConfigurationInterface(userEmailEventConfigurationInterface)
+this.setUserEmailEventConfigurationInterface(userEmailEventConfigurationInterface);
+    
 }
 
 
@@ -92,17 +100,20 @@ var document = document
     var userEmailEventConfigurationMapping: UserEmailEventConfigurationMapping = new UserEmailEventConfigurationMapping(this.getUserEmailEventConfigurationInterface());
         
         
+;
+    
 
-
-    var hashMap: HashMap<Any, Any> = userEmailEventConfigurationMapping!.toHashMap()!;
+    var hashMap: HashMap<any, any> = userEmailEventConfigurationMapping!.toHashMap()!;
         
         
-
+;
+    
 
     var node: Node = ModDomHelper.createNameValueNodes(document, UserEmailEventConfigurationData.NAME, hashMap)!;
         
         
-
+;
+    
 
 
 
@@ -124,7 +135,8 @@ var document = document
 
     public setUserEmailEventConfigurationInterface(userEmailEventConfigurationInterface: UserEmailEventConfigurationInterface){
 var userEmailEventConfigurationInterface = userEmailEventConfigurationInterface
-this.userEmailEventConfigurationInterface= userEmailEventConfigurationInterface
+this.userEmailEventConfigurationInterface= userEmailEventConfigurationInterface;
+    
 }
 
 

@@ -48,20 +48,24 @@ var angleIncrement = angleIncrement
     var halfAngleIncrement: number = (angleIncrement.toInt() shr 1);
         
         
-
+;
+    
 
     var angleIncrementInfoCanBeNull: AngleIncrementInfo? = angleIncrementInfo[halfAngleIncrement];
         
         
-
+;
+    
 
                         if(angleIncrementInfoCanBeNull == 
                                     null
                                 )
                         
                                     {
-                                    angleIncrementInfoCanBeNull= AngleIncrementInfo(angleIncrement)
-angleIncrementInfo[halfAngleIncrement]= angleIncrementInfoCanBeNull
+                                    angleIncrementInfoCanBeNull= AngleIncrementInfo(angleIncrement);
+    
+angleIncrementInfo[halfAngleIncrement]= angleIncrementInfoCanBeNull;
+    
 
                                     }
                                 

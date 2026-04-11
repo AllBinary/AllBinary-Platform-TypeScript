@@ -58,7 +58,8 @@ export inner class Config
 
             super();
                 //var bitmapConfig = bitmapConfig
-this.bitmapConfig= bitmapConfig
+this.bitmapConfig= bitmapConfig;
+    
 }
 
 

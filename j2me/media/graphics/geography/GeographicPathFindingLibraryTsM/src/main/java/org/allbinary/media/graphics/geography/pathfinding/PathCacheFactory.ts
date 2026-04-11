@@ -18,7 +18,10 @@
 
 
 
-import { Hashtable } from "../../../../../../java/util/Hashtable.js";
+            import Hashtable from "@ohos.util.HashMap";
+        
+
+//import { Hashtable } from "../../../../../../java/util/Hashtable.js";
 
     
 import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayList.js";
@@ -51,7 +54,7 @@ export class PathCacheFactory
         
         
 
-    private hashtable: Hashtable<Any, Any> = new Hashtable<Any, Any>();
+    private hashtable: Hashtable<any, any> = new Hashtable<any, any>();
         
         
 private constructor (){
@@ -66,6 +69,8 @@ private constructor (){
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.hashtable.length;
+
+                        ;
     
 }
 
@@ -73,20 +78,23 @@ private constructor (){
     public add(pathId: Integer, list: BasicArrayList){
     //var pathId = pathId
     //var list = list
-this.hashtable.put(pathId, list)
+this.hashtable.put(pathId, list);
+    
 }
 
 
     public remove(pathId: Integer){
     //var pathId = pathId
-this.hashtable.remove(pathId)
+this.hashtable.remove(pathId);
+    
 }
 
 
                 //@Throws(Error::class)
             
     public removeAll(){
-this.hashtable.clear()
+this.hashtable.clear();
+    
 
                         if(this.hashtable.length > 0)
                         
@@ -109,14 +117,16 @@ this.hashtable.clear()
     var listCanBeNull: any = {}? = this.hashtable.get(pathIdInteger as Object);
         
         
-
+;
+    
 
                         if(listCanBeNull == 
                                     null
                                 )
                         
                                     {
-                                    listCanBeNull= basicArrayListUtil!.getImmutableInstance()
+                                    listCanBeNull= basicArrayListUtil!.getImmutableInstance();
+    
 
                                     }
                                 

@@ -30,22 +30,27 @@ export class InterfaceUtil
          {
         
 
-    public static viewAll(myClass: KClass<*>, lineBreak: string): string{
+    public static viewAll(myClass: Function, lineBreak: string): string{
     //var myClass = myClass
     //var lineBreak = lineBreak
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
+;
+    
 
-
-    var interfaces: KClass<*>[] = myClass!.getInterfaces()!;
+    var interfaces: Function[] = myClass!.getInterfaces()!;
         
         
-
-stringBuffer!.append(lineBreak)
-stringBuffer!.append("Interfaces: ")
-stringBuffer!.append(lineBreak)
+;
+    
+stringBuffer!.append(lineBreak);
+    
+stringBuffer!.append("Interfaces: ");
+    
+stringBuffer!.append(lineBreak);
+    
 
 
 
@@ -56,9 +61,12 @@ stringBuffer!.append(lineBreak)
         
 index < interfaces.length; index++)
         {
-stringBuffer!.append("Interface: ")
-stringBuffer!.append(interfaces[index]!.getName())
-stringBuffer!.append(lineBreak)
+stringBuffer!.append("Interface: ");
+    
+stringBuffer!.append(interfaces[index]!.getName());
+    
+stringBuffer!.append(lineBreak);
+    
 }
 
 
@@ -66,11 +74,13 @@ stringBuffer!.append(lineBreak)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 
 
-    public static ::class(interfaceName: string, interfaces: KClass<*>[]): KClass<*>{
+    public static constructor(interfaceName: string, interfaces: Function[]): Function{
     //var interfaceName = interfaceName
     //var interfaces = interfaces
 
@@ -118,14 +128,15 @@ index < interfaces.length; index++)
 }
 
 
-    public static isImplemented(clazz: KClass<*>, anyType: any = {}): boolean{
+    public static isImplemented(clazz: Function, anyType: any = {}): boolean{
 var clazz = clazz
 var anyType = anyType
 
-    var classes: KClass<*>[] = anyType!::class.getInterfaces()!;
+    var classes: Function[] = anyType!.constructor.name.getInterfaces()!;
         
         
-
+;
+    
 
 
 
@@ -159,10 +170,11 @@ index < classes.length; index++)
 var className = className
 var anyType = anyType
 
-    var classes: KClass<*>[] = anyType!::class.getInterfaces()!;
+    var classes: Function[] = anyType!.constructor.name.getInterfaces()!;
         
         
-
+;
+    
 
 
 
@@ -197,20 +209,23 @@ index < classes.length; index++)
 }
 
 
-    public static isImplementedView(clazz: KClass<*>, anyType: any = {}): string{
+    public static isImplementedView(clazz: Function, anyType: any = {}): string{
 var clazz = clazz
 var anyType = anyType
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
+;
+    
 
-
-    var classes: KClass<*>[] = anyType!::class.getInterfaces()!;
+    var classes: Function[] = anyType!.constructor.name.getInterfaces()!;
         
         
-
-stringBuffer!.append("isImplementedView: \n")
+;
+    
+stringBuffer!.append("isImplementedView: \n");
+    
 
 
 
@@ -221,11 +236,16 @@ stringBuffer!.append("isImplementedView: \n")
         
 index < classes.length; index++)
         {
-stringBuffer!.append(clazz.toString()!)
-stringBuffer!.append(" should be = ")
-stringBuffer!.append(classes[index]!.getName())
-stringBuffer!.append(classes[index]!.getName())
-stringBuffer!.append(CommonSeps.getInstance()!.NEW_LINE)
+stringBuffer!.append(clazz.toString()!);
+    
+stringBuffer!.append(" should be = ");
+    
+stringBuffer!.append(classes[index]!.getName());
+    
+stringBuffer!.append(classes[index]!.getName());
+    
+stringBuffer!.append(CommonSeps.getInstance()!.NEW_LINE);
+    
 }
 
 
@@ -233,6 +253,8 @@ stringBuffer!.append(CommonSeps.getInstance()!.NEW_LINE)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

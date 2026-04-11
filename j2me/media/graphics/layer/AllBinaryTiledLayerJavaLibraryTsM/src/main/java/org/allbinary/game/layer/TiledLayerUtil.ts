@@ -50,17 +50,20 @@ var mapBorderBufferWidth = mapBorderBufferWidth
     var newX: number = x;
         
         
-
+;
+    
 
     var maxRight: number = terrainTiledLayer!.getWidth() -width -mapBorderBufferWidth;
         
         
-
+;
+    
 
                         if(x +width > maxRight)
                         
                                     {
-                                    newX= maxRight
+                                    newX= maxRight;
+    
 
                                     }
                                 
@@ -68,7 +71,8 @@ var mapBorderBufferWidth = mapBorderBufferWidth
                         if(x < mapBorderBufferWidth)
                         
                                     {
-                                    newX= mapBorderBufferWidth
+                                    newX= mapBorderBufferWidth;
+    
 
                                     }
                                 
@@ -90,17 +94,20 @@ var mapBorderBufferHeight = mapBorderBufferHeight
     var newY: number = y;
         
         
-
+;
+    
 
     var maxBottom: number = terrainTiledLayer!.getHeight() -height -mapBorderBufferHeight;
         
         
-
+;
+    
 
                         if(y +height > maxBottom)
                         
                                     {
-                                    newY= maxBottom
+                                    newY= maxBottom;
+    
 
                                     }
                                 
@@ -108,7 +115,8 @@ var mapBorderBufferHeight = mapBorderBufferHeight
                         if(y < mapBorderBufferHeight)
                         
                                     {
-                                    newY= mapBorderBufferHeight
+                                    newY= mapBorderBufferHeight;
+    
 
                                     }
                                 
@@ -129,17 +137,20 @@ var width = width
     var newX: number = x;
         
         
-
+;
+    
 
     var maxRight: number = terrainTiledLayer!.getWidth() -width;
         
         
-
+;
+    
 
                         if(x >= maxRight)
                         
                                     {
-                                    newX= maxRight
+                                    newX= maxRight;
+    
 
                                     }
                                 
@@ -147,7 +158,8 @@ var width = width
                         if(x < 0)
                         
                                     {
-                                    newX= 0
+                                    newX= 0;
+    
 
                                     }
                                 
@@ -168,17 +180,20 @@ var height = height
     var newY: number = y;
         
         
-
+;
+    
 
     var maxBottom: number = terrainTiledLayer!.getHeight() -height;
         
         
-
+;
+    
 
                         if(y >= maxBottom)
                         
                                     {
-                                    newY= maxBottom
+                                    newY= maxBottom;
+    
 
                                     }
                                 
@@ -186,7 +201,8 @@ var height = height
                         if(y < 0)
                         
                                     {
-                                    newY= 0
+                                    newY= 0;
+    
 
                                     }
                                 

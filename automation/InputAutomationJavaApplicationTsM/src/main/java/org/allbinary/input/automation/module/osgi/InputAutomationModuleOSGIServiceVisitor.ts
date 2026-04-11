@@ -69,6 +69,8 @@ public constructor (){
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.visit(anyType as OSGIServiceInterface);
+
+                        ;
     
 }
 
@@ -81,12 +83,14 @@ public constructor (){
     var inputAutomationModuleService: InputAutomationModuleService = osgiServiceInterface as InputAutomationModuleService;
         
         
-
+;
+    
 
     var inputAutomationModuleInterfaceArray: InputAutomationModuleFactoryInterface[] = inputAutomationModuleService!.getInputAutomationModuleInterfaceArray()!;
         
         
-
+;
+    
 
 
 
@@ -97,7 +101,8 @@ public constructor (){
         
 index < inputAutomationModuleInterfaceArray!.length; index++)
         {
-InputAutomationJFrame.getInstance()!.onAdd(InputAutomationConfigurationUtil.getChangeEvent(inputAutomationModuleInterfaceArray[index]!))
+InputAutomationJFrame.getInstance()!.onAdd(InputAutomationConfigurationUtil.getChangeEvent(inputAutomationModuleInterfaceArray[index]!));
+    
 }
 
 
@@ -106,9 +111,12 @@ InputAutomationJFrame.getInstance()!.onAdd(InputAutomationConfigurationUtil.getC
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return Boolean.TRUE;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, this, "visit", e)
+logUtil!.put(this.commonStrings!.EXCEPTION, this, "visit", e);
+    
 
 
 

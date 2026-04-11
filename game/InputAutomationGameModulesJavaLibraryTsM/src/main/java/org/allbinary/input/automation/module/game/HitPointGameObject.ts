@@ -68,12 +68,14 @@ var y = y
                         if(this.getRatios()[bufferedImage!.length -1]!.doubleValue() < 1.0F)
                         
                                     {
-                                    this.setDamaged(true)
+                                    this.setDamaged(true);
+    
 
                                     }
                                 
                         else {
-                            this.setDamaged(false)
+                            this.setDamaged(false);
+    
 
                         }
                             
@@ -81,12 +83,14 @@ var y = y
                         if(this.getRatios()[bufferedImage!.length -1]!.doubleValue() > 0.25F)
                         
                                     {
-                                    this.closeDeath= false
+                                    this.closeDeath= false;
+    
 
                                     }
                                 
                         else {
-                            this.closeDeath= true
+                            this.closeDeath= true;
+    
 
                         }
                             
@@ -133,7 +137,8 @@ var aFloat = aFloat
 
     setCloseDeath(closeDeath: boolean){
 var closeDeath = closeDeath
-this.closeDeath= closeDeath
+this.closeDeath= closeDeath;
+    
 }
 
 
@@ -149,7 +154,8 @@ this.closeDeath= closeDeath
 
     public setDamaged(damaged: boolean){
 var damaged = damaged
-this.damaged= damaged
+this.damaged= damaged;
+    
 }
 
 
@@ -158,25 +164,37 @@ this.damaged= damaged
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
         
         
-
+;
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(HP_LABEL)
-stringBuffer!.append(super.toString())
-stringBuffer!.append(commonSeps!.NEW_LINE)
-stringBuffer!.append(IS_DAMAGED_LABEL)
-stringBuffer!.appendboolean(this.isDamaged())
-stringBuffer!.append(commonSeps!.NEW_LINE)
-stringBuffer!.append(IS_CLOSE_DEATH_LABEL)
-stringBuffer!.appendboolean(this.isCloseDeath())
+;
+    
+stringBuffer!.append(HP_LABEL);
+    
+stringBuffer!.append(super.toString());
+    
+stringBuffer!.append(commonSeps!.NEW_LINE);
+    
+stringBuffer!.append(IS_DAMAGED_LABEL);
+    
+stringBuffer!.appendboolean(this.isDamaged());
+    
+stringBuffer!.append(commonSeps!.NEW_LINE);
+    
+stringBuffer!.append(IS_CLOSE_DEATH_LABEL);
+    
+stringBuffer!.appendboolean(this.isCloseDeath());
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

@@ -39,7 +39,8 @@ public constructor (){
     var value: string = anyType as String;
         
         
-
+;
+    
 
                         if(value.length < 2)
                         

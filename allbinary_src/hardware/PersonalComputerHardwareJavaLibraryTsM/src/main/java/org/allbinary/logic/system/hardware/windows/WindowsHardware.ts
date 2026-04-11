@@ -18,10 +18,16 @@
 
 
 
-import { Hashtable } from "../../../../../../java/util/Hashtable.js";
+            import Vector from "@ohos.util.Vector";
+        
+            import Hashtable from "@ohos.util.HashMap";
+        
+
+//import { Hashtable } from "../../../../../../java/util/Hashtable.js";
 
     
-import { Vector } from "../../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../../java/util/Vector.js";
 
     
 import { NullUtil } from "../../../../../../org/allbinary/logic/NullUtil.js";
@@ -122,23 +128,37 @@ public constructor (){
             super();
             
         try {
-            componentInterfaceVector= Vector()
-videoInterfaceVector= Vector()
-hardDriveControllerInterfaceVector= Vector()
-cpuInterfaceVector= Vector()
-usbInterfaceVector= Vector()
-ethernetInterfaceVector= Vector()
-multimediaInterfaceVector= Vector()
-fireWireInterfaceVector= Vector()
-bridgeInterfaceVector= Vector()
-hardDriveInterfaceVector= Vector()
-macInterfaceVector= Vector()
-monitorInterfaceVector= Vector()
+            componentInterfaceVector= Vector();
+    
+videoInterfaceVector= Vector();
+    
+hardDriveControllerInterfaceVector= Vector();
+    
+cpuInterfaceVector= Vector();
+    
+usbInterfaceVector= Vector();
+    
+ethernetInterfaceVector= Vector();
+    
+multimediaInterfaceVector= Vector();
+    
+fireWireInterfaceVector= Vector();
+    
+bridgeInterfaceVector= Vector();
+    
+hardDriveInterfaceVector= Vector();
+    
+macInterfaceVector= Vector();
+    
+monitorInterfaceVector= Vector();
+    
 
                         if(componentInterfaceVector!.length < MINHARDWARE)
                         
                                     throw Error("Not Enough Data For A Valid License On Windows")
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
 
@@ -160,6 +180,8 @@ var component = component
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.componentFactory!.ETHERNET.toString();
+
+                        ;
     
 
                                     }
@@ -173,6 +195,8 @@ var component = component
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.componentFactory!.BRIDGE.toString();
+
+                        ;
     
 
                                     }
@@ -186,6 +210,8 @@ var component = component
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.componentFactory!.IDE.toString();
+
+                        ;
     
 
                                     }
@@ -199,6 +225,8 @@ var component = component
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.componentFactory!.MULTIMEDIA.toString();
+
+                        ;
     
 
                                     }
@@ -212,6 +240,8 @@ var component = component
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.componentFactory!.SCSI.toString();
+
+                        ;
     
 
                                     }
@@ -225,6 +255,8 @@ var component = component
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.componentFactory!.USB.toString();
+
+                        ;
     
 
                                     }
@@ -238,6 +270,8 @@ var component = component
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.componentFactory!.VGA.toString();
+
+                        ;
     
 
                                     }
@@ -254,7 +288,9 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return multimediaInterfaceVector!.get(index) as MediaInterface;
+                        return multimediaInterfaceVector!.get(index);
+
+                         as MediaInterface;
     
 }
 
@@ -265,7 +301,9 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return bridgeInterfaceVector!.get(index) as BridgeInterface;
+                        return bridgeInterfaceVector!.get(index);
+
+                         as BridgeInterface;
     
 }
 
@@ -276,7 +314,9 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return cpuInterfaceVector!.get(index) as CpuInterface;
+                        return cpuInterfaceVector!.get(index);
+
+                         as CpuInterface;
     
 }
 
@@ -287,7 +327,9 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return ethernetInterfaceVector!.get(index) as EthernetInterface;
+                        return ethernetInterfaceVector!.get(index);
+
+                         as EthernetInterface;
     
 }
 
@@ -298,7 +340,9 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return fireWireInterfaceVector!.get(index) as FireWireInterface;
+                        return fireWireInterfaceVector!.get(index);
+
+                         as FireWireInterface;
     
 }
 
@@ -309,7 +353,9 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return hardDriveControllerInterfaceVector!.get(index) as HardDriveControllerInterface;
+                        return hardDriveControllerInterfaceVector!.get(index);
+
+                         as HardDriveControllerInterface;
     
 }
 
@@ -320,7 +366,9 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return hardDriveInterfaceVector!.get(index) as HardDriveInterface;
+                        return hardDriveInterfaceVector!.get(index);
+
+                         as HardDriveInterface;
     
 }
 
@@ -331,7 +379,9 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return macInterfaceVector!.get(index) as MachineAccessControlAddressInterface;
+                        return macInterfaceVector!.get(index);
+
+                         as MachineAccessControlAddressInterface;
     
 }
 
@@ -342,7 +392,9 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return monitorInterfaceVector!.get(index) as MonitorInterface;
+                        return monitorInterfaceVector!.get(index);
+
+                         as MonitorInterface;
     
 }
 
@@ -353,7 +405,9 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return usbInterfaceVector!.get(index) as UsbInterface;
+                        return usbInterfaceVector!.get(index);
+
+                         as UsbInterface;
     
 }
 
@@ -364,7 +418,9 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return videoInterfaceVector!.get(index) as VideoInterface;
+                        return videoInterfaceVector!.get(index);
+
+                         as VideoInterface;
     
 }
 
@@ -375,7 +431,9 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return componentInterfaceVector!.get(index) as HardwareComponentInterface;
+                        return componentInterfaceVector!.get(index);
+
+                         as HardwareComponentInterface;
     
 }
 
@@ -385,12 +443,14 @@ var index = index
     var hardwareBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
     var size: number = componentInterfaceVector!.length!;
         
         
-
+;
+    
 
 
 
@@ -402,12 +462,17 @@ var index = index
 index < size; index++)
         {
 
-    var componentInterface: HardwareComponentInterface = componentInterfaceVector!.get(index) as HardwareComponentInterface;
-        
-        
+    var componentInterface: HardwareComponentInterface = componentInterfaceVector!.get(index);
 
-hardwareBuffer!.append(componentInterface!.toString())
-hardwareBuffer!.append(CommonSeps.getInstance()!.NEW_LINE)
+                         as HardwareComponentInterface;
+        
+        
+;
+    
+hardwareBuffer!.append(componentInterface!.toString());
+    
+hardwareBuffer!.append(CommonSeps.getInstance()!.NEW_LINE);
+    
 }
 
 
@@ -415,6 +480,8 @@ hardwareBuffer!.append(CommonSeps.getInstance()!.NEW_LINE)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return hardwareBuffer!.toString();
+
+                        ;
     
 }
 
@@ -430,7 +497,7 @@ var hardwareInterface = hardwareInterface
 }
 
 
-    public difference(hardwareInterface: HardwareInterface): Hashtable<Any, Any>{
+    public difference(hardwareInterface: HardwareInterface): Hashtable<any, any>{
 var hardwareInterface = hardwareInterface
 
 

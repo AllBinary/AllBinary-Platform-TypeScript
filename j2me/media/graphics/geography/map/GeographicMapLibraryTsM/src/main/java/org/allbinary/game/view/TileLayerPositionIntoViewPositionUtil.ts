@@ -43,21 +43,27 @@ export class TileLayerPositionIntoViewPositionUtil
     //var gameCanvasInterface = gameCanvasInterface
     //var viewPosition = viewPosition
 
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface = gameCanvasInterface!.getLayerManager() as GeographicMapCompositeInterface;
-        
-        
+    var geographicMapCompositeInterface: GeographicMapCompositeInterface = gameCanvasInterface!.getLayerManager();
 
+                         as GeographicMapCompositeInterface;
+        
+        
+;
+    
 
     var geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;
         
         
-
+;
+    
 
     var tiledLayer: AllBinaryTiledLayer = geographicMapInterface!.getAllBinaryTiledLayer()!;
         
         
-
-viewPosition!.setTiledLayer(tiledLayer)
+;
+    
+viewPosition!.setTiledLayer(tiledLayer);
+    
 }
 
 

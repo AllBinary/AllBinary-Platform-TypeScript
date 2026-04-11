@@ -54,9 +54,12 @@ export class NullGameCanvas extends AllBinaryGameCanvas {
     var nullGameCanvas: NullGameCanvas = new NullGameCanvas(gameLayerManager);
         
         
-
-nullGameCanvas!.setInitialized(true)
-nullGameCanvas!.setTitle(NO_GAME)
+;
+    
+nullGameCanvas!.setInitialized(true);
+    
+nullGameCanvas!.setTitle(NO_GAME);
+    
 
 
 
@@ -83,13 +86,15 @@ protected constructor (gameLayerManager: AllBinaryGameLayerManager)
 
                             //For kotlin this is before the body of the constructor.
                     
-super.setWait(1200)
+super.setWait(1200);
+    
 }
 
 private constructor (){
 
             super();
-            super.setWait(1200)
+            super.setWait(1200);
+    
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
@@ -110,7 +115,8 @@ private constructor (){
 
     public setRunning(running: boolean){
 var running = running
-this.running= running
+this.running= running;
+    
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
@@ -127,20 +133,24 @@ this.running= running
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public pause(){
-this.setPaused(true)
+this.setPaused(true);
+    
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public unPause(){
-this.setPaused(false)
+this.setPaused(false);
+    
 }
 
 
     public initCommands(cmdListener: CommandListener){
     //var cmdListener = cmdListener
-this.removeAllCommands()
-this.setCommandListener(cmdListener)
+this.removeAllCommands();
+    
+this.setCommandListener(cmdListener);
+    
 }
 
 
@@ -159,11 +169,16 @@ this.setCommandListener(cmdListener)
     public run(){
 
         try {
-            logUtil!.put(commonStrings!.START_RUNNABLE, this, commonStrings!.RUN)
-logUtil!.put(commonStrings!.END_RUNNABLE, this, commonStrings!.RUN)
-} catch(e: Exception)
+            logUtil!.put(commonStrings!.START_RUNNABLE, this, commonStrings!.RUN);
+    
+logUtil!.put(commonStrings!.END_RUNNABLE, this, commonStrings!.RUN);
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
+    
 }
 
 }

@@ -100,9 +100,12 @@ public constructor (poolName: string, numThreads: number, priority: number){
                 //var poolName = poolName
     //var numThreads = numThreads
     //var priority = priority
-this.poolName= poolName
-this.priority= priority
-this.numThreads= numThreads
+this.poolName= poolName;
+    
+this.priority= priority;
+    
+this.numThreads= numThreads;
+    
 }
 
 
@@ -111,11 +114,14 @@ this.numThreads= numThreads
                         if(!this.isAlive)
                         
                                     {
-                                    this.isAlive= true
-this.taskQueue= BasicArrayList()
+                                    this.isAlive= true;
+    
+this.taskQueue= BasicArrayList();
+    
 
     var pooledThread: PooledThread
-
+;
+    
 
 
 
@@ -126,9 +132,12 @@ this.taskQueue= BasicArrayList()
         
 i < this.numThreads; i++)
         {
-pooledThread= PooledThread()
-pooledThread!.setPriority(priority)
-pooledThread!.start()
+pooledThread= PooledThread();
+    
+pooledThread!.setPriority(priority);
+    
+pooledThread!.start();
+    
 }
 
 
@@ -160,7 +169,8 @@ pooledThread!.start()
                         if(!this.isAlive)
                         
                                     {
-                                    this.init()
+                                    this.init();
+    
 
                                     }
                                 
@@ -174,15 +184,18 @@ pooledThread!.start()
     var size: number = this.taskQueue!.size()!;
         
         
-
+;
+    
 
     var runnable: PriorityRunnable
-
+;
+    
 
     var lowerPriorityRunnable: PriorityRunnable = threadObjectUtil!.NULL_PRIORITY_RUNNABLE;
         
         
-
+;
+    
 
 
 
@@ -193,12 +206,16 @@ pooledThread!.start()
         
 index < size; index++)
         {
-runnable= this.taskQueue!.get(index) as PriorityRunnable
+runnable= this.taskQueue!.get(index);
+
+                         as PriorityRunnable;
+    
 
                         if(runnable.getPriority() > task.getPriority())
                         
                                     {
-                                    lowerPriorityRunnable= runnable
+                                    lowerPriorityRunnable= runnable;
+    
 break;
 
                     
@@ -211,7 +228,8 @@ break;
                         if(lowerPriorityRunnable == threadObjectUtil!.NULL_PRIORITY_RUNNABLE || lowerPriorityRunnable == NULL_RUNNABLE)
                         
                                     {
-                                    this.taskQueue!.add(task)
+                                    this.taskQueue!.add(task);
+    
 
                                     }
                                 
@@ -220,12 +238,15 @@ break;
     var index: number = this.taskQueue!.indexOf(lowerPriorityRunnable)!;
         
         
-
-this.taskQueue!.add(index, task)
+;
+    
+this.taskQueue!.add(index, task);
+    
 
                         }
                             
-notify()
+notify();
+    
 
                                     }
                                 
@@ -247,7 +268,8 @@ notify()
                         if(!isAlive)
                         
                                     {
-                                    this.init()
+                                    this.init();
+    
 
                                     }
                                 
@@ -257,8 +279,10 @@ notify()
                                 )
                         
                                     {
-                                    this.taskQueue!.add(task)
-notify()
+                                    this.taskQueue!.add(task);
+    
+notify();
+    
 
                                     }
                                 
@@ -293,14 +317,18 @@ notify()
 
                                     }
                                 
-this.wait()
+this.wait();
+    
 }
 
 
-    var runnable: Runnable = this.taskQueue!.remove(0) as Runnable;
-        
-        
+    var runnable: Runnable = this.taskQueue!.remove(0);
 
+                         as Runnable;
+        
+        
+;
+    
 
 
 
@@ -324,7 +352,8 @@ this.wait()
                         if(this.isAlive)
                         
                                     {
-                                    this.taskQueue!.clear()
+                                    this.taskQueue!.clear();
+    
 
                                     }
                                 
@@ -345,8 +374,10 @@ this.wait()
                         if(this.isAlive)
                         
                                     {
-                                    this.isAlive= false
-this.taskQueue!.clear()
+                                    this.isAlive= false;
+    
+this.taskQueue!.clear();
+    
 
                                     }
                                 
@@ -363,9 +394,12 @@ this.taskQueue!.clear()
 
         //mutex.withLock
         {
-this.isAlive= false
-this.taskQueue!.clear()
-notifyAll()
+this.isAlive= false;
+    
+this.taskQueue!.clear();
+    
+notifyAll();
+    
 }
 
 }
@@ -429,8 +463,10 @@ notifyAll()
                         if(this.numThreads == 1)
                         
                                     {
-                                    this.isAlive= false
-taskQueue!.clear()
+                                    this.isAlive= false;
+    
+taskQueue!.clear();
+    
 
                                     }
                                 
@@ -463,7 +499,8 @@ public constructor ()
 
                             //For kotlin this is before the body of the constructor.
                     
-logUtil!.put(commonStrings!.CONSTRUCTOR, this, commonStrings!.CONSTRUCTOR)
+logUtil!.put(commonStrings!.CONSTRUCTOR, this, commonStrings!.CONSTRUCTOR);
+    
 }
 
 
@@ -472,7 +509,8 @@ logUtil!.put(commonStrings!.CONSTRUCTOR, this, commonStrings!.CONSTRUCTOR)
         
 
     public run(){
-threadStarted()
+threadStarted();
+    
 
         while(true)
         {
@@ -480,15 +518,22 @@ threadStarted()
     var task2: Runnable = threadObjectUtil!.NULL_PRIORITY_RUNNABLE;
         
         
-
+;
+    
 
         try {
-            task2= getTask()
-runningTask= true
-startTask(task2)
-} catch(ex: InterruptedException)
+            task2= getTask();
+    
+runningTask= true;
+    
+startTask(task2);
+    
+
+                //: 
+} catch(ex) 
             {
-logUtil!.put(INTERRUPT_EXCEPTION, this, commonStrings!.RUN)
+logUtil!.put(INTERRUPT_EXCEPTION, this, commonStrings!.RUN);
+    
 break;
 
                     
@@ -506,18 +551,25 @@ break;
                                 
 
         try {
-            task2.run()
-completedTask(task2)
-runningTask= false
-} catch(e: Exception)
+            task2.run();
+    
+completedTask(task2);
+    
+runningTask= false;
+    
+
+                //: 
+} catch(e) 
             {
 logUtil!.put(StringMaker().
-                            append(commonStrings!.EXCEPTION_LABEL)!.append(StringUtil.getInstance()!.toString(task2))!.toString(), this, commonStrings!.RUN, e)
+                            append(commonStrings!.EXCEPTION_LABEL)!.append(StringUtil.getInstance()!.toString(task2))!.toString(), this, commonStrings!.RUN, e);
+    
 }
 
 }
 
-threadStopped()
+threadStopped();
+    
 }
 
 

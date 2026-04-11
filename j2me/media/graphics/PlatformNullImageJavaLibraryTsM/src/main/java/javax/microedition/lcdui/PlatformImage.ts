@@ -122,7 +122,7 @@ var anchor = anchor
 }
 
 
-    public getRGB(argb: IntArray, offset: number, scanlength: number, x: number, y: number, width: number, height: number, image: Image){
+    public getRGB(argb: number[], offset: number, scanlength: number, x: number, y: number, width: number, height: number, image: Image){
     //var argb = argb
     //var offset = offset
     //var scanlength = scanlength
@@ -134,7 +134,7 @@ var anchor = anchor
 }
 
 
-    public setRGB(argb: IntArray, offset: number, scanlength: number, x: number, y: number, width: number, height: number, image: Image){
+    public setRGB(argb: number[], offset: number, scanlength: number, x: number, y: number, width: number, height: number, image: Image){
     //var argb = argb
     //var offset = offset
     //var scanlength = scanlength
@@ -146,7 +146,7 @@ var anchor = anchor
 }
 
 
-    public getData(image: Image): IntArray{
+    public getData(image: Image): number[]{
     //var image = image
 
 

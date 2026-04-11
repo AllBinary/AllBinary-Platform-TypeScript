@@ -41,31 +41,37 @@ export class BufferedImageUtil2
                 ;
         
         
-
+;
+    
 
     var max: number = columns;
         
         
-
+;
+    
 
     var rows: number = 0;
         
         
-
+;
+    
 
                         if(bufferedImageArray!.length < columns)
                         
                                     {
-                                    columns= bufferedImageArray!.length
+                                    columns= bufferedImageArray!.length;
+    
 
                                     }
                                 
-rows= (bufferedImageArray!.length /columns)
+rows= (bufferedImageArray!.length /columns);
+    
 
                         if(bufferedImageArray!.length % columns != 0)
                         
                                     {
-                                    rows++
+                                    rows++;
+    
 
                                     }
                                 
@@ -75,22 +81,26 @@ rows= (bufferedImageArray!.length /columns)
                             null) *rows)!;
         
         
-
+;
+    
 
     var g: Graphics2D = bufferedImage!.createGraphics()!;
         
         
-
+;
+    
 
     var columnIndex: number = 0;
         
         
-
+;
+    
 
     var rowIndex: number = 0;
         
         
-
+;
+    
 
 
 
@@ -105,8 +115,10 @@ index < bufferedImageArray!.length; index++)
                         if(index /max != 0 && index % max == 0)
                         
                                     {
-                                    rowIndex++
-columnIndex= 0
+                                    rowIndex++;
+    
+columnIndex= 0;
+    
 
                                     }
                                 
@@ -115,11 +127,14 @@ g.drawImage(bufferedImageArray[index]!, bufferedImageArray[index]!.getWidth(
                             null) *rowIndex, bufferedImageArray[index]!.getWidth(
                             null), bufferedImageArray[index]!.getHeight(
                             null), 
-                            null)
-columnIndex++
+                            null);
+    
+columnIndex++;
+    
 }
 
-g.dispose()
+g.dispose();
+    
 
 
 

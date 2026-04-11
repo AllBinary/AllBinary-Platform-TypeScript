@@ -48,31 +48,56 @@ private constructor (){
     var gameKeyFactory: GameKeyFactory = GameKeyFactory.getInstance()!;
         
         
-
-this.set(gameKeyFactory!.NONE)
-this.set(gameKeyFactory!.UP)
-this.set(gameKeyFactory!.DOWN)
-this.set(gameKeyFactory!.LEFT)
-this.set(gameKeyFactory!.RIGHT)
-this.set(gameKeyFactory!.KEY_POUND)
-this.set(gameKeyFactory!.KEY_STAR)
-this.set(gameKeyFactory!.KEY_NUM0)
-this.set(gameKeyFactory!.KEY_NUM1)
-this.set(gameKeyFactory!.KEY_NUM2)
-this.set(gameKeyFactory!.KEY_NUM3)
-this.set(gameKeyFactory!.KEY_NUM4)
-this.set(gameKeyFactory!.KEY_NUM5)
-this.set(gameKeyFactory!.KEY_NUM6)
-this.set(gameKeyFactory!.KEY_NUM7)
-this.set(gameKeyFactory!.KEY_NUM8)
-this.set(gameKeyFactory!.KEY_NUM9)
-this.set(gameKeyFactory!.GAME_A)
-this.set(gameKeyFactory!.GAME_B)
-this.set(gameKeyFactory!.GAME_C)
-this.set(gameKeyFactory!.GAME_D)
-this.set(gameKeyFactory!.FIRE)
-this.set(gameKeyFactory!.LEVEL_DOWN)
-this.set(gameKeyFactory!.LEVEL_UP)
+;
+    
+this.set(gameKeyFactory!.NONE);
+    
+this.set(gameKeyFactory!.UP);
+    
+this.set(gameKeyFactory!.DOWN);
+    
+this.set(gameKeyFactory!.LEFT);
+    
+this.set(gameKeyFactory!.RIGHT);
+    
+this.set(gameKeyFactory!.KEY_POUND);
+    
+this.set(gameKeyFactory!.KEY_STAR);
+    
+this.set(gameKeyFactory!.KEY_NUM0);
+    
+this.set(gameKeyFactory!.KEY_NUM1);
+    
+this.set(gameKeyFactory!.KEY_NUM2);
+    
+this.set(gameKeyFactory!.KEY_NUM3);
+    
+this.set(gameKeyFactory!.KEY_NUM4);
+    
+this.set(gameKeyFactory!.KEY_NUM5);
+    
+this.set(gameKeyFactory!.KEY_NUM6);
+    
+this.set(gameKeyFactory!.KEY_NUM7);
+    
+this.set(gameKeyFactory!.KEY_NUM8);
+    
+this.set(gameKeyFactory!.KEY_NUM9);
+    
+this.set(gameKeyFactory!.GAME_A);
+    
+this.set(gameKeyFactory!.GAME_B);
+    
+this.set(gameKeyFactory!.GAME_C);
+    
+this.set(gameKeyFactory!.GAME_D);
+    
+this.set(gameKeyFactory!.FIRE);
+    
+this.set(gameKeyFactory!.LEVEL_DOWN);
+    
+this.set(gameKeyFactory!.LEVEL_UP);
+    
 }
 
 
@@ -89,7 +114,8 @@ var key = key
 
     set(gameKey: GameKey){
 var gameKey = gameKey
-intKeyToGameKey[gameKey!.getId()]= gameKey
+intKeyToGameKey[gameKey!.getId()]= gameKey;
+    
 }
 
 

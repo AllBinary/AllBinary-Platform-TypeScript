@@ -75,16 +75,22 @@ public constructor (backgroundBasicColor: BasicColor, foregroundBasicColor: Basi
                 //var backgroundBasicColor = backgroundBasicColor
     //var foregroundBasicColor = foregroundBasicColor
     //var gameInfo = gameInfo
-this.backgroundBasicColor= backgroundBasicColor
-this.foregroundBasicColor= foregroundBasicColor
+this.backgroundBasicColor= backgroundBasicColor;
+    
+this.foregroundBasicColor= foregroundBasicColor;
+    
 
     var itemColorFactory: ItemColorFactory = ItemColorFactory.getInstance()!;
         
         
-
-itemColorFactory!.INVERT_PAINT= this.backgroundBasicColor!.toInt()
-itemColorFactory!.PAINT= this.foregroundBasicColor!.toInt()
-this.gameInfo= gameInfo
+;
+    
+itemColorFactory!.INVERT_PAINT= this.backgroundBasicColor!.toInt();
+    
+itemColorFactory!.PAINT= this.foregroundBasicColor!.toInt();
+    
+this.gameInfo= gameInfo;
+    
 }
 
 
@@ -114,8 +120,10 @@ this.gameInfo= gameInfo
 
     public setBackgroundBasicColor(backgroundBasicColor: BasicColor){
     //var backgroundBasicColor = backgroundBasicColor
-this.backgroundBasicColor= backgroundBasicColor
-ItemColorFactory.getInstance()!.INVERT_PAINT= this.backgroundBasicColor!.toInt()
+this.backgroundBasicColor= backgroundBasicColor;
+    
+ItemColorFactory.getInstance()!.INVERT_PAINT= this.backgroundBasicColor!.toInt();
+    
 }
 
 
@@ -131,8 +139,10 @@ ItemColorFactory.getInstance()!.INVERT_PAINT= this.backgroundBasicColor!.toInt()
 
     public setForegroundBasicColor(foregroundBasicColor: BasicColor){
     //var foregroundBasicColor = foregroundBasicColor
-this.foregroundBasicColor= foregroundBasicColor
-ItemColorFactory.getInstance()!.PAINT= this.foregroundBasicColor!.toInt()
+this.foregroundBasicColor= foregroundBasicColor;
+    
+ItemColorFactory.getInstance()!.PAINT= this.foregroundBasicColor!.toInt();
+    
 }
 
 
@@ -148,7 +158,8 @@ ItemColorFactory.getInstance()!.PAINT= this.foregroundBasicColor!.toInt()
 
     public setGameInfo(gameInfo: GameInfo){
     //var gameInfo = gameInfo
-this.gameInfo= gameInfo
+this.gameInfo= gameInfo;
+    
 }
 
 
@@ -158,13 +169,15 @@ this.gameInfo= gameInfo
     var layerProcessorInterfaceArray: LayerProcessor[] = new Array(list.size());
         
         
-
+;
+    
 
     var size: number = layerProcessorInterfaceArray!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -175,16 +188,19 @@ this.gameInfo= gameInfo
         
 index < size; index++)
         {
-layerProcessorInterfaceArray[index]= list.objectArray[index]! as LayerProcessor
+layerProcessorInterfaceArray[index]= list.objectArray[index]! as LayerProcessor;
+    
 }
 
-this.setLayerProcessorArray(layerProcessorInterfaceArray)
+this.setLayerProcessorArray(layerProcessorInterfaceArray);
+    
 }
 
 
     public setPlayerGameInputCompositeInterface(playerGameInputCompositeInterface: PlayerGameInputCompositeInterface){
     //var playerGameInputCompositeInterface = playerGameInputCompositeInterface
-this.playerGameInputCompositeInterface= playerGameInputCompositeInterface
+this.playerGameInputCompositeInterface= playerGameInputCompositeInterface;
+    
 }
 
 

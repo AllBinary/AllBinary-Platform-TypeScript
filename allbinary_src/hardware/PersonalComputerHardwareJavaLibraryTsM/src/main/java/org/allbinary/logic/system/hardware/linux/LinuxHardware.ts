@@ -18,16 +18,22 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
+            import Hashtable from "@ohos.util.HashMap";
+        
 import { FileReader } from "../../../../../../java/io/FileReader.js";
 
     
 import { LineNumberReader } from "../../../../../../java/io/LineNumberReader.js";
 
     
-import { Hashtable } from "../../../../../../java/util/Hashtable.js";
+
+//import { Hashtable } from "../../../../../../java/util/Hashtable.js";
 
     
-import { Vector } from "../../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../../java/util/Vector.js";
 
     
 import { NullUtil } from "../../../../../../org/allbinary/logic/NullUtil.js";
@@ -159,13 +165,15 @@ public constructor (path: string){
 
             super();
             var path = path
-this.init(path)
+this.init(path);
+    
 }
 
 public constructor (){
 
             super();
-            this.init(PCIFILE)
+            this.init(PCIFILE);
+    
 
                         if(componentInterfaceVector!.length < MINHARDWARE)
                         
@@ -181,15 +189,18 @@ public constructor (){
     var cpu: Cpu = new Cpu();
         
         
-
+;
+    
 
                         if(cpu != 
                                     null
                                 )
                         
                                     {
-                                    cpuInterfaceVector!.add(cpu)
-componentInterfaceVector!.add(cpu)
+                                    cpuInterfaceVector!.add(cpu);
+    
+componentInterfaceVector!.add(cpu);
+    
 
                                     }
                                 
@@ -197,7 +208,8 @@ componentInterfaceVector!.add(cpu)
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.OS))
                         
                                     {
-                                    logUtil!.put("Hardware Data: " +this.toString(), this, this.commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put("Hardware Data: " +this.toString(), this, this.commonStrings!.CONSTRUCTOR);
+    
 
                                     }
                                 
@@ -214,17 +226,22 @@ var filePath = filePath
             ;
         
         
-
+;
+    
 
         try {
-            init(lineNumberReader, filePath)
-} catch(e: Exception)
+            init(lineNumberReader, filePath);
+    
+
+                //: 
+} catch(e) 
             {
 
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.OS))
                         
                                     {
-                                    logUtil!.put("Hardware Data: " +this.toString(), this, this.commonStrings!.CONSTRUCTOR, e)
+                                    logUtil!.put("Hardware Data: " +this.toString(), this, this.commonStrings!.CONSTRUCTOR, e);
+    
 
                                     }
                                 
@@ -244,24 +261,38 @@ var lineNumberReader = lineNumberReader
 var filePath = filePath
 
         try {
-            componentInterfaceVector= Vector()
-videoInterfaceVector= Vector()
-hardDriveControllerInterfaceVector= Vector()
-cpuInterfaceVector= Vector()
-usbInterfaceVector= Vector()
-ethernetInterfaceVector= Vector()
-multimediaInterfaceVector= Vector()
-fireWireInterfaceVector= Vector()
-bridgeInterfaceVector= Vector()
-hardDriveInterfaceVector= Vector()
-macInterfaceVector= Vector()
-monitorInterfaceVector= Vector()
+            componentInterfaceVector= Vector();
+    
+videoInterfaceVector= Vector();
+    
+hardDriveControllerInterfaceVector= Vector();
+    
+cpuInterfaceVector= Vector();
+    
+usbInterfaceVector= Vector();
+    
+ethernetInterfaceVector= Vector();
+    
+multimediaInterfaceVector= Vector();
+    
+fireWireInterfaceVector= Vector();
+    
+bridgeInterfaceVector= Vector();
+    
+hardDriveInterfaceVector= Vector();
+    
+macInterfaceVector= Vector();
+    
+monitorInterfaceVector= Vector();
+    
 
     var pciFile: FileReader = new FileReader(filePath);
         
         
-
-lineNumberReader= LineNumberReader(pciFile)
+;
+    
+lineNumberReader= LineNumberReader(pciFile);
+    
 
                         if(lineNumberReader == 
                                     null
@@ -272,17 +303,24 @@ lineNumberReader= LineNumberReader(pciFile)
     var fileVector: BasicArrayList = SubDirectory.getInstance()!.search(filePath, AbFile(FilePathData.getInstance()!.SEPARATOR))!;
         
         
+;
+    
 
+                        if(!fileVector!.isEmpty();
 
-                        if(!fileVector!.isEmpty())
+                        )
                         
                                     {
                                     
-    var file: AbFile = fileVector!.get(0) as AbFile;
-        
-        
+    var file: AbFile = fileVector!.get(0);
 
-lineNumberReader= LineNumberReader(FileReader(file.getPath()))
+                         as AbFile;
+        
+        
+;
+    
+lineNumberReader= LineNumberReader(FileReader(file.getPath()));
+    
 
                                     }
                                 
@@ -312,7 +350,8 @@ lineNumberReader= LineNumberReader(FileReader(file.getPath()))
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.OS))
                         
                                     {
-                                    logUtil!.put("PCI File Found", this, this.commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put("PCI File Found", this, this.commonStrings!.CONSTRUCTOR);
+    
 
                                     }
                                 
@@ -320,7 +359,8 @@ lineNumberReader= LineNumberReader(FileReader(file.getPath()))
     var nextLine: string = lineNumberReader!.readLine()!;
         
         
-
+;
+    
 
         while(lineNumberReader != 
                                     null
@@ -338,7 +378,8 @@ lineNumberReader= LineNumberReader(FileReader(file.getPath()))
 
                                     }
                                 
-nextLine= lineNumberReader!.readLine()
+nextLine= lineNumberReader!.readLine();
+    
 }
 
 
@@ -348,31 +389,40 @@ nextLine= lineNumberReader!.readLine()
     var componentData: StringMaker = new StringMaker();
         
         
-
+;
+    
 
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.OS))
                         
                                     {
-                                    logUtil!.put("Found Hardware Device: " +componentInterfaceVector!.length, this, this.commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put("Found Hardware Device: " +componentInterfaceVector!.length, this, this.commonStrings!.CONSTRUCTOR);
+    
 
                                     }
                                 
-componentData!.append(nextLine)
-componentData!.append(CommonSeps.getInstance()!.NEW_LINE)
-nextLine= lineNumberReader!.readLine()
+componentData!.append(nextLine);
+    
+componentData!.append(CommonSeps.getInstance()!.NEW_LINE);
+    
+nextLine= lineNumberReader!.readLine();
+    
 
     var componentType: string = PCComponentFactory.getInstance()!.java.componentType!;
         
         
-
+;
+    
 
         while(lineNumberReader != 
                                     null
                                 )
         {
-componentData!.append(nextLine)
-componentData!.append(CommonSeps.getInstance()!.NEW_LINE)
-nextLine= lineNumberReader!.readLine()
+componentData!.append(nextLine);
+    
+componentData!.append(CommonSeps.getInstance()!.NEW_LINE);
+    
+nextLine= lineNumberReader!.readLine();
+    
 
                         if(nextLine == 
                                     null
@@ -391,14 +441,16 @@ nextLine= lineNumberReader!.readLine()
     var componentInterface: HardwareComponentInterface = PCComponentFactory.getInstance()!.getInstance(componentType, componentData!.toString())!;
         
         
-
+;
+    
 
                         if(componentInterface != 
                                     null
                                 )
                         
                                     {
-                                    componentInterfaceVector!.add(componentInterface)
+                                    componentInterfaceVector!.add(componentInterface);
+    
 
                                     }
                                 
@@ -412,21 +464,25 @@ nextLine= lineNumberReader!.readLine()
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.OS))
                         
                                     {
-                                    logUtil!.put("Could not load PCI File", this, this.commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put("Could not load PCI File", this, this.commonStrings!.CONSTRUCTOR);
+    
 
                                     }
                                 
 
                         }
                             
-lineNumberReader!.close()
+lineNumberReader!.close();
+    
 
          finally {
             
                         if(lineNumberReader != 
                                     null
                                 )
-                        lineNumberReader!.close()
+                        lineNumberReader!.close();
+
+                        
 
          }
         
@@ -439,7 +495,9 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return multimediaInterfaceVector!.get(index) as MediaInterface;
+                        return multimediaInterfaceVector!.get(index);
+
+                         as MediaInterface;
     
 }
 
@@ -450,7 +508,9 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return bridgeInterfaceVector!.get(index) as BridgeInterface;
+                        return bridgeInterfaceVector!.get(index);
+
+                         as BridgeInterface;
     
 }
 
@@ -461,7 +521,9 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return cpuInterfaceVector!.get(index) as CpuInterface;
+                        return cpuInterfaceVector!.get(index);
+
+                         as CpuInterface;
     
 }
 
@@ -472,7 +534,9 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return ethernetInterfaceVector!.get(index) as EthernetInterface;
+                        return ethernetInterfaceVector!.get(index);
+
+                         as EthernetInterface;
     
 }
 
@@ -483,7 +547,9 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return fireWireInterfaceVector!.get(index) as FireWireInterface;
+                        return fireWireInterfaceVector!.get(index);
+
+                         as FireWireInterface;
     
 }
 
@@ -494,7 +560,9 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return hardDriveControllerInterfaceVector!.get(index) as HardDriveControllerInterface;
+                        return hardDriveControllerInterfaceVector!.get(index);
+
+                         as HardDriveControllerInterface;
     
 }
 
@@ -505,7 +573,9 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return hardDriveInterfaceVector!.get(index) as HardDriveInterface;
+                        return hardDriveInterfaceVector!.get(index);
+
+                         as HardDriveInterface;
     
 }
 
@@ -516,7 +586,9 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return macInterfaceVector!.get(index) as MachineAccessControlAddressInterface;
+                        return macInterfaceVector!.get(index);
+
+                         as MachineAccessControlAddressInterface;
     
 }
 
@@ -527,7 +599,9 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return monitorInterfaceVector!.get(index) as MonitorInterface;
+                        return monitorInterfaceVector!.get(index);
+
+                         as MonitorInterface;
     
 }
 
@@ -538,7 +612,9 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return usbInterfaceVector!.get(index) as UsbInterface;
+                        return usbInterfaceVector!.get(index);
+
+                         as UsbInterface;
     
 }
 
@@ -549,7 +625,9 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return videoInterfaceVector!.get(index) as VideoInterface;
+                        return videoInterfaceVector!.get(index);
+
+                         as VideoInterface;
     
 }
 
@@ -560,7 +638,9 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return componentInterfaceVector!.get(index) as HardwareComponentInterface;
+                        return componentInterfaceVector!.get(index);
+
+                         as HardwareComponentInterface;
     
 }
 
@@ -570,12 +650,14 @@ var index = index
     var hardwareBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
     var size: number = componentInterfaceVector!.length!;
         
         
-
+;
+    
 
 
 
@@ -587,15 +669,23 @@ var index = index
 index < size; index++)
         {
 
-    var componentInterface: HardwareComponentInterface = componentInterfaceVector!.get(index) as HardwareComponentInterface;
-        
-        
+    var componentInterface: HardwareComponentInterface = componentInterfaceVector!.get(index);
 
-hardwareBuffer!.append("Component ")
-hardwareBuffer!.appendint(index)
-hardwareBuffer!.append(": \n")
-hardwareBuffer!.append(componentInterface!.toString())
-hardwareBuffer!.append(CommonSeps.getInstance()!.NEW_LINE)
+                         as HardwareComponentInterface;
+        
+        
+;
+    
+hardwareBuffer!.append("Component ");
+    
+hardwareBuffer!.appendint(index);
+    
+hardwareBuffer!.append(": \n");
+    
+hardwareBuffer!.append(componentInterface!.toString());
+    
+hardwareBuffer!.append(CommonSeps.getInstance()!.NEW_LINE);
+    
 }
 
 
@@ -603,6 +693,8 @@ hardwareBuffer!.append(CommonSeps.getInstance()!.NEW_LINE)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return hardwareBuffer!.toString();
+
+                        ;
     
 }
 
@@ -618,7 +710,7 @@ var hardwareInterface = hardwareInterface
 }
 
 
-    public difference(hardwareInterface: HardwareInterface): Hashtable<Any, Any>{
+    public difference(hardwareInterface: HardwareInterface): Hashtable<any, any>{
 var hardwareInterface = hardwareInterface
 
 
@@ -641,7 +733,8 @@ var nextLine = nextLine
     var index: number = nextLine!.indexOf("Bus")!;
         
         
-
+;
+    
 
                         if(index >= 0 && index < 4)
                         

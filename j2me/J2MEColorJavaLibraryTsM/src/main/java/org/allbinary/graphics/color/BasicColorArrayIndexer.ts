@@ -34,13 +34,16 @@ public constructor (basicColorArray: BasicColor[]){
 
             super();
             var basicColorArray = basicColorArray
-this.basicColorArray= basicColorArray
-this.circularIndexUtil= CircularIndexUtil.getInstance(this.basicColorArray!.length)
+this.basicColorArray= basicColorArray;
+    
+this.circularIndexUtil= CircularIndexUtil.getInstance(this.basicColorArray!.length);
+    
 }
 
 
     public next(){
-this.circularIndexUtil!.next()
+this.circularIndexUtil!.next();
+    
 }
 
 

@@ -18,13 +18,19 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
+            import Hashtable from "@ohos.util.HashMap";
+        
 import { HashMap } from "../../../java/util/HashMap.js";
 
     
-import { Hashtable } from "../../../java/util/Hashtable.js";
+
+//import { Hashtable } from "../../../java/util/Hashtable.js";
 
     
-import { Vector } from "../../../java/util/Vector.js";
+
+//import { Vector } from "../../../java/util/Vector.js";
 
     
 
@@ -47,19 +53,19 @@ import { Vector } from "../../../java/util/Vector.js";
 }
 
 
-    /*actual*/ public readonly NULL_OBJECT: any = {} = new any = {}();
+    /*actual*/ public readonly NULL_OBJECT: any = {} = {};
         
         
 
-    /*actual*/ public readonly NULL_CLASS: KClass<*> = NULL_OBJECT::class!;
+    /*actual*/ public readonly NULL_CLASS: Function = NULL_OBJECTconstructor!;
         
         
 
-    /*actual*/ public readonly NULL_OBJECT_ARRAY: any = {}[] = new Array(0);
+    /*actual*/ public readonly NULL_OBJECT_ARRAY: any[] = [];
         
         
 
-    /*actual*/ public readonly NULL_BYTE_ARRAY: ByteArray = ByteArray(0);
+    /*actual*/ public readonly NULL_BYTE_ARRAY: number[] = [];
         
         
 
@@ -70,35 +76,35 @@ import { Vector } from "../../../java/util/Vector.js";
         
         
 
-    /*actual*/ public readonly NULL_SHORT_ARRAY_ARRAY: ShortArray[] = Array(0) { ShortArray(0) };
+    /*actual*/ public readonly NULL_SHORT_ARRAY_ARRAY: number[][] = new Array(0) [0];
         
         
 
-    /*actual*/ public readonly NULL_INT_ARRAY: IntArray = IntArray(0);
+    /*actual*/ public readonly NULL_INT_ARRAY: number[] = [];
         
         
 
-    /*actual*/ public readonly NULL_INT_ARRAY_ARRAY: IntArray[] = Array(0) { IntArray(0) };
+    /*actual*/ public readonly NULL_INT_ARRAY_ARRAY: number[][] = new Array(0) [0];
         
         
 
-    /*actual*/ public readonly NULL_INT_ARRAY_ARRAY_ARRAY: IntArray[][] = Array(0) { Array(0) { IntArray(0) } };
+    /*actual*/ public readonly NULL_INT_ARRAY_ARRAY_ARRAY: number[][][] = Array.from({ length: 0 }, () => Array.from({ length: 0 }, () => new Array(0).fill(0)));
         
         
 
-    /*actual*/ public readonly NULL_FLOAT_ARRAY: FloatArray = FloatArray(0);
+    /*actual*/ public readonly NULL_FLOAT_ARRAY: number[] = [];
         
         
 
-    /*actual*/ public readonly EMPTY_VECTOR: Vector<Any> = new Vector<Any>();
+    /*actual*/ public readonly EMPTY_VECTOR: Vector<any> = new Vector<any>();
         
         
 
-    /*actual*/ public readonly NULL_TABLE: Hashtable<Any, Any> = new Hashtable<Any, Any>();
+    /*actual*/ public readonly NULL_TABLE: Hashtable<any, any> = new Hashtable<any, any>();
         
         
 
-    /*actual*/ public readonly NULL_MAP: HashMap<Any, Any> = new HashMap<Any, Any>();
+    /*actual*/ public readonly NULL_MAP: HashMap<any, any> = new HashMap<any, any>();
         
         
 

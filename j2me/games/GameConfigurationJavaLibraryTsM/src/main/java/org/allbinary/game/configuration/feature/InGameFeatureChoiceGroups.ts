@@ -18,7 +18,10 @@
 
 
 
-import { Hashtable } from "../../../../../java/util/Hashtable.js";
+            import Hashtable from "@ohos.util.HashMap";
+        
+
+//import { Hashtable } from "../../../../../java/util/Hashtable.js";
 
     
 import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
@@ -58,7 +61,7 @@ export class InGameFeatureChoiceGroups
 }
 
 
-    private hashtable: Hashtable<Any, Any> = new Hashtable<Any, Any>();
+    private hashtable: Hashtable<any, any> = new Hashtable<any, any>();
         
         
 private constructor (){
@@ -67,7 +70,7 @@ private constructor (){
             }
 
 
-    public get(): Hashtable<Any, Any>{
+    public get(): Hashtable<any, any>{
 
 
 
@@ -80,7 +83,8 @@ private constructor (){
     public add(name: string, list: BasicArrayList){
 var name = name
 var list = list
-hashtable.put(name, list)
+hashtable.put(name, list);
+    
 }
 
 

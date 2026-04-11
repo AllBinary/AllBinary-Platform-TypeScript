@@ -33,7 +33,8 @@ public constructor (basicAnimationInterfaceFactoryInterfaceArray: AnimationInter
 
             super();
                 //var basicAnimationInterfaceFactoryInterfaceArray = basicAnimationInterfaceFactoryInterfaceArray
-this.animationInterfaceFactoryInterfaceArray= basicAnimationInterfaceFactoryInterfaceArray
+this.animationInterfaceFactoryInterfaceArray= basicAnimationInterfaceFactoryInterfaceArray;
+    
 }
 
 
@@ -46,6 +47,8 @@ this.animationInterfaceFactoryInterfaceArray= basicAnimationInterfaceFactoryInte
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return NullAnimationFactory.getFactoryInstance()!.getInstance(0);
+
+                        ;
     
 }
 

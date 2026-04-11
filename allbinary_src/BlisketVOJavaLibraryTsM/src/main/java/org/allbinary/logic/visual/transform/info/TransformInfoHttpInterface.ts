@@ -35,7 +35,7 @@ interface TransformInfoHttpInterface extends TransformInfoInterface {
 
     public getPageContext(): PageContext
 
-    public getPropertiesHashMap(): HashMap<Any, Any>
+    public getPropertiesHashMap(): HashMap<any, any>
 
 }
                 

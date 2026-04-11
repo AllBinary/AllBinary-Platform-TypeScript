@@ -49,9 +49,13 @@ var method = method
                     
 
         try {
-            guiLog!.showDialog(msg)
-logUtil!.put(msg, obj, method, this)
-} catch(e: Exception)
+            guiLog!.showDialog(msg);
+    
+logUtil!.put(msg, obj, method, this);
+    
+
+                //: 
+} catch(e) 
             {
 }
 
@@ -71,9 +75,13 @@ var method = method
                     
 
         try {
-            guiLog!.showDialog(msg)
-logUtil!.put(msg, className, method, this)
-} catch(e: Exception)
+            guiLog!.showDialog(msg);
+    
+logUtil!.put(msg, className, method, this);
+    
+
+                //: 
+} catch(e) 
             {
 }
 

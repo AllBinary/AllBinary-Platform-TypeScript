@@ -141,14 +141,18 @@ public constructor (clientInfo: AbeClientInformationInterface, remoteMethod: str
             super();
             var clientInfo = clientInfo
 var remoteMethod = remoteMethod
-this.remoteMethod= remoteMethod
-this.clientInfo= clientInfo
+this.remoteMethod= remoteMethod;
+    
+this.clientInfo= clientInfo;
+    
 
                         if(clientInfo!.getNumberOfLicenseServers() > 1)
                         
                                     {
-                                    this.maxServers= clientInfo!.getNumberOfLicenseServers() -2
-this.start= myRandomFactory!.getAbsoluteNextInt(maxServers) +1
+                                    this.maxServers= clientInfo!.getNumberOfLicenseServers() -2;
+    
+this.start= myRandomFactory!.getAbsoluteNextInt(maxServers) +1;
+    
 
                                     }
                                 
@@ -156,23 +160,33 @@ this.start= myRandomFactory!.getAbsoluteNextInt(maxServers) +1
                         if(clientInfo!.getNumberOfLicenseServers() == 1)
                         
                                     {
-                                    this.maxServers= 0
-this.start= 0
+                                    this.maxServers= 0;
+    
+this.start= 0;
+    
 
                                     }
                                 
-isDone= false
-this.server= this.start
+isDone= false;
+    
+this.server= this.start;
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(START_SERVER)
-stringBuffer!.appendint(this.getServer())
-stringBuffer!.append(SEP)
-stringBuffer!.append(clientInfo!.getLicenseServer(this.getServer()))
-logUtil!.put(stringBuffer!.toString(), this, commonStrings!.CONSTRUCTOR)
+;
+    
+stringBuffer!.append(START_SERVER);
+    
+stringBuffer!.appendint(this.getServer());
+    
+stringBuffer!.append(SEP);
+    
+stringBuffer!.append(clientInfo!.getLicenseServer(this.getServer()));
+    
+logUtil!.put(stringBuffer!.toString(), this, commonStrings!.CONSTRUCTOR);
+    
 }
 
 
@@ -180,7 +194,8 @@ logUtil!.put(stringBuffer!.toString(), this, commonStrings!.CONSTRUCTOR)
             
     public get(anyType: any = {}): any = {}{
 var anyType = anyType
-ForcedLogUtil.log(commonStrings!.NOT_IMPLEMENTED, this)
+ForcedLogUtil.log(commonStrings!.NOT_IMPLEMENTED, this);
+    
 
 
 
@@ -198,17 +213,21 @@ var anyType = anyType
                         if(getServer() < getMaxServers())
                         
                                     {
-                                    setServer(getServer() +1)
+                                    setServer(getServer() +1);
+    
 
                                     }
                                 
                         else {
-                            setServer(0)
+                            setServer(0);
+    
 
                         }
                             
 
-                        if(getServer() != getStart() && !isIsDone())
+                        if(getServer() != getStart() && !isIsDone();
+
+                        )
                         
                                     {
                                     
@@ -216,12 +235,15 @@ var anyType = anyType
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.get(anyType);
+
+                        ;
     
 
                                     }
                                 
                         else {
-                            setIsDone(true)
+                            setIsDone(true);
+    
 
                         }
                             
@@ -254,7 +276,8 @@ var anyType = anyType
 
     setClient(client: XmlRpcClient){
 var client = client
-this.client= client
+this.client= client;
+    
 }
 
 
@@ -270,7 +293,8 @@ this.client= client
 
     setServer(server: number){
 var server = server
-this.server= server
+this.server= server;
+    
 }
 
 
@@ -286,7 +310,8 @@ this.server= server
 
     setStart(start: number){
 var start = start
-this.start= start
+this.start= start;
+    
 }
 
 
@@ -302,7 +327,8 @@ this.start= start
 
     setMaxServers(maxServers: number){
 var maxServers = maxServers
-this.maxServers= maxServers
+this.maxServers= maxServers;
+    
 }
 
 
@@ -318,7 +344,8 @@ this.maxServers= maxServers
 
     setIsDone(isDone: boolean){
 var isDone = isDone
-this.isDone= isDone
+this.isDone= isDone;
+    
 }
 
 

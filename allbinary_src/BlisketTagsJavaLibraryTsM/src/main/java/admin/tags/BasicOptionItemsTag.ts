@@ -31,12 +31,14 @@ import { BasicOptionItemsRequestHelperFactory } from "../../admin/taghelpers/Bas
 export class BasicOptionItemsTag extends TableTag {
         
 
-    private propertiesHashMap: HashMap<Any, Any>
+    private propertiesHashMap: HashMap<any, any>
 public constructor (){
 
             super();
-            this.setTagHelperFactory(BasicOptionItemsHelperFactory())
-this.setTagRequestHelperFactory(BasicOptionItemsRequestHelperFactory())
+            this.setTagHelperFactory(BasicOptionItemsHelperFactory());
+    
+this.setTagRequestHelperFactory(BasicOptionItemsRequestHelperFactory());
+    
 }
 
 

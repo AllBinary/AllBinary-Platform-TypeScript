@@ -18,7 +18,10 @@
 
 
 
-import { Hashtable } from "../../../../../java/util/Hashtable.js";
+            import Hashtable from "@ohos.util.HashMap";
+        
+
+//import { Hashtable } from "../../../../../java/util/Hashtable.js";
 
     
 import { GameInfoData } from "../../../../../org/allbinary/game/GameInfoData.js";
@@ -85,47 +88,66 @@ public constructor (){
     //var highScore = highScore
 
         try {
-            logUtil!.put("Begin Remote HighScores Submission", this, commonStrings!.PROCESS)
+            logUtil!.put("Begin Remote HighScores Submission", this, commonStrings!.PROCESS);
+    
 
     var gameInfoData: GameInfoData = GameInfoData.getInstance()!;
         
         
+;
+    
 
-
-    var hashtable: Hashtable<Any, Any> = abeClientInformation!.toHashtable()!;
+    var hashtable: Hashtable<any, any> = abeClientInformation!.toHashtable()!;
         
         
-
-HashtableUtil.getInstance()!.putAll(highScore!.getGameInfo()!.toHashtable(), hashtable)
-hashtable.put(RemoteHighScoresData.getInstance()!.CUSTOMER_USER_NAME, "None")
-hashtable.put(RemoteHighScoresData.getInstance()!.DISPLAY_NAME, highScore!.getName())
-hashtable.put(gameInfoData!.SOFTWARE_INFORMATION, remoteHighScores!.getSoftwareInformation()!.toString())
-hashtable.put(remoteHighScores!.ASCENDING, remoteHighScores!.getAscending()!.toString())
+;
+    
+HashtableUtil.getInstance()!.putAll(highScore!.getGameInfo()!.toHashtable(), hashtable);
+    
+hashtable.put(RemoteHighScoresData.getInstance()!.CUSTOMER_USER_NAME, "None");
+    
+hashtable.put(RemoteHighScoresData.getInstance()!.DISPLAY_NAME, highScore!.getName());
+    
+hashtable.put(gameInfoData!.SOFTWARE_INFORMATION, remoteHighScores!.getSoftwareInformation()!.toString());
+    
+hashtable.put(remoteHighScores!.ASCENDING, remoteHighScores!.getAscending()!.toString());
+    
 
     var displayInfoSingleton: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
         
         
-
-hashtable.put(displayInfoSingleton!.ORIENTATION, BooleanFactory.getInstance()!.toString(displayInfoSingleton!.isPortrait()))
-hashtable.put(RemoteHighScoresData.getInstance()!.GAME_CONFIGURATION, GameConfigurationCentral.getInstance()!.toString())
-hashtable.put(RemoteHighScoresData.getInstance()!.SCORE, (highScore!.getScore()).toString())
+;
+    
+hashtable.put(displayInfoSingleton!.ORIENTATION, BooleanFactory.getInstance()!.toString(displayInfoSingleton!.isPortrait()));
+    
+hashtable.put(RemoteHighScoresData.getInstance()!.GAME_CONFIGURATION, GameConfigurationCentral.getInstance()!.toString());
+    
+hashtable.put(RemoteHighScoresData.getInstance()!.SCORE, (highScore!.getScore()).toString());
+    
 
                         if(XmlRpcAbeClient.isOnline)
                         
                                     {
                                     
-    var resultHashtable: Hashtable<Any, Any> = XmlRpcRemoteHighScoresClient(abeClientInformation, "highscoresubmissionservicessl.php", "HighScoreSubmissionService.process").
-                            get(hashtable, noCrypt) as Hashtable<Any, Any>;
-        
-        
+    var resultHashtable: Hashtable<any, any> = XmlRpcRemoteHighScoresClient(abeClientInformation, "highscoresubmissionservicessl.php", "HighScoreSubmissionService.process").
+                            get(hashtable, noCrypt);
 
-remoteHighScores!.update(resultHashtable)
+                         as Hashtable<any, any>;
+        
+        
+;
+    
+remoteHighScores!.update(resultHashtable);
+    
 
                                     }
                                 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e);
+    
 }
 
 }

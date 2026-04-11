@@ -50,8 +50,10 @@ public constructor (){
                                 )
                         
                                     {
-                                    this.setName("Basic Shipping View")
-this.setObjectFile("views.generic.shipping.ValidationView")
+                                    this.setName("Basic Shipping View");
+    
+this.setObjectFile("views.generic.shipping.ValidationView");
+    
 
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.VIEW) == 0)
                         
@@ -72,6 +74,8 @@ this.setObjectFile("views.generic.shipping.ValidationView")
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.doStartTag();
+
+                        ;
     
 
                                     }
@@ -80,9 +84,12 @@ this.setObjectFile("views.generic.shipping.ValidationView")
 
 
                             throw Error("Command Null")
-} catch(e: LicensingException)
+
+                //: 
+} catch(e) 
             {
-AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e);
+    
 
 
 
@@ -90,9 +97,12 @@ AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
                         return SKIP_BODY;
     
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
-AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
+    
 
 
 

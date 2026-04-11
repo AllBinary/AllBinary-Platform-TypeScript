@@ -42,14 +42,18 @@ var soundsFactoryInterface = soundsFactoryInterface
     var logUtil: LogUtil = LogUtil.getInstance()!;
         
         
-
+;
+    
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.START, instance, "shutdown")
-AllBinaryMediaManager.shutdown(soundsFactoryInterface)
+;
+    
+logUtil!.put(commonStrings!.START, instance, "shutdown");
+    
+AllBinaryMediaManager.shutdown(soundsFactoryInterface);
+    
 }
 
 

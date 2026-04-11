@@ -18,13 +18,16 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { HashSet } from "../../../../../../../java/util/HashSet.js";
 
     
 import { Set } from "../../../../../../../java/util/Set.js";
 
     
-import { Vector } from "../../../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../../../java/util/Vector.js";
 
     
 import { Item } from "../../../../../../../org/allbinary/business/user/commerce/inventory/item/Item.js";
@@ -66,7 +69,8 @@ public constructor (){
 
     public addItem(item: Item){
 var item = item
-items.add(item)
+items.add(item);
+    
 }
 
 
@@ -83,16 +87,18 @@ items.add(item)
     public removeItem(id: string){
 var id = id
 
-    var itemArray: any = {}[] = items.toArray()!;
+    var itemArray: any[] = items.toArray()!;
         
         
-
+;
+    
 
     var size: number = itemArray!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -107,12 +113,14 @@ index < size; index++)
     var item: Item = itemArray[index]! as Item;
         
         
-
+;
+    
 
                         if(item.getId()!.compareTo(id) == 0)
                         
                                     {
-                                    items.remove(item)
+                                    items.remove(item);
+    
 
                                     }
                                 
@@ -125,16 +133,18 @@ index < size; index++)
 var id = id
 var num = num
 
-    var itemArray: any = {}[] = items.toArray()!;
+    var itemArray: any[] = items.toArray()!;
         
         
-
+;
+    
 
     var size: number = itemArray!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -149,12 +159,14 @@ index < size; index++)
     var item: Item = itemArray[index]! as Item;
         
         
-
+;
+    
 
                         if(item.getId()!.compareTo(id) == 0)
                         
                                     {
-                                    item.setNumber(num)
+                                    item.setNumber(num);
+    
 
                                     }
                                 
@@ -168,18 +180,21 @@ index < size; index++)
     var weightFloat: number = 0;
         
         
+;
+    
 
-
-    var itemArray: any = {}[] = items.toArray()!;
+    var itemArray: any[] = items.toArray()!;
         
         
-
+;
+    
 
     var size: number = itemArray!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -194,9 +209,11 @@ index < size; index++)
     var item: Item = itemArray[index]! as Item;
         
         
-
+;
+    
 weightFloat += Float(item.getWeight()).
-                            toFloat()
+                            toFloat();
+    
 }
 
 
@@ -205,6 +222,8 @@ weightFloat += Float(item.getWeight()).
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return Float(weightFloat).
                             toString();
+
+                        ;
     
 }
 
@@ -224,18 +243,21 @@ weightFloat += Float(item.getWeight()).
     var idSet: HashSet = new HashSet();
         
         
+;
+    
 
-
-    var itemArray: any = {}[] = items.toArray()!;
+    var itemArray: any[] = items.toArray()!;
         
         
-
+;
+    
 
     var size: number = itemArray!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -250,8 +272,10 @@ index < size; index++)
     var item: Item = itemArray[index]! as Item;
         
         
-
-idSet!.add(item.getId())
+;
+    
+idSet!.add(item.getId());
+    
 }
 
 
@@ -266,16 +290,18 @@ idSet!.add(item.getId())
     public getNumberOf(id: string): Integer{
 var id = id
 
-    var itemArray: any = {}[] = items.toArray()!;
+    var itemArray: any[] = items.toArray()!;
         
         
-
+;
+    
 
     var size: number = itemArray!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -290,7 +316,8 @@ index < size; index++)
     var item: Item = itemArray[index]! as Item;
         
         
-
+;
+    
 
                         if(item.getId()!.compareTo(id) == 0)
                         
@@ -323,18 +350,21 @@ var document = document
     var node: Node = document.createElement(BasketData.BASKET)!;
         
         
+;
+    
 
-
-    var itemArray: any = {}[] = items.toArray()!;
+    var itemArray: any[] = items.toArray()!;
         
         
-
+;
+    
 
     var size: number = itemArray!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -349,9 +379,11 @@ index < size; index++)
     var item: Item = itemArray[index]! as Item;
         
         
-
+;
+    
 node.appendChild(ItemView(item, Vector()).
-                            toXmlNode(document))
+                            toXmlNode(document));
+    
 }
 
 

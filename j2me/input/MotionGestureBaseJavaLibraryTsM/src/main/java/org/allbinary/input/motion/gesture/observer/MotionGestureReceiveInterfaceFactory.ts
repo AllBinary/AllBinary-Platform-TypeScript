@@ -35,9 +35,12 @@ export class MotionGestureReceiveInterfaceFactory
     var configuration: MotionGestureConfiguration = MotionGestureConfigurationFactory.getInstance()!;
         
         
+;
+    
 
+                        if(!configuration.isExecutingActionsAllowed();
 
-                        if(!configuration.isExecutingActionsAllowed())
+                        )
                         
                                     {
                                     

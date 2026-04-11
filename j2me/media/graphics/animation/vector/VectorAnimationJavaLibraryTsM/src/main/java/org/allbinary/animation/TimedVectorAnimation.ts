@@ -34,7 +34,7 @@ export class TimedVectorAnimation extends VectorAnimation {
     private timeElapsedHelper: TimeDelayHelper = new TimeDelayHelper(200);
         
         
-public constructor (currentPoints: IntArray[][], basicColor: BasicColor, animationBehavior: AnimationBehavior)                        
+public constructor (currentPoints: number[][][], basicColor: BasicColor, animationBehavior: AnimationBehavior)                        
 
                             : super(currentPoints, basicColor, animationBehavior){
 
@@ -48,7 +48,7 @@ public constructor (currentPoints: IntArray[][], basicColor: BasicColor, animati
                     
 }
 
-public constructor (currentPoints: IntArray[], basicColor: BasicColor, animationBehavior: AnimationBehavior)                        
+public constructor (currentPoints: number[][], basicColor: BasicColor, animationBehavior: AnimationBehavior)                        
 
                             : super(currentPoints, basicColor, animationBehavior){
 
@@ -68,7 +68,8 @@ public constructor (currentPoints: IntArray[], basicColor: BasicColor, animation
                         if(this.timeElapsedHelper!.isTime(GameTickTimeDelayHelperFactory.getInstance()!.startTime))
                         
                                     {
-                                    super.nextFrame()
+                                    super.nextFrame();
+    
 
                                     }
                                 

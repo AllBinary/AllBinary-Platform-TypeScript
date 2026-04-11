@@ -18,10 +18,13 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { ResultSet } from "../../../../../java/sql/ResultSet.js";
 
     
-import { Vector } from "../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../java/util/Vector.js";
 
     
 import { DbConnectionInfo } from "../../../../../org/allbinary/business/init/db/DbConnectionInfo.js";
@@ -81,33 +84,46 @@ public constructor (databaseConnectionInfoInterface: DbConnectionInfo)
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(sqlStrings!.SELECT)
-stringBuffer!.append(columnName)
-stringBuffer!.append(sqlStrings!.FROM)
-stringBuffer!.append(this.getTableName())
-stringBuffer!.append(sqlStrings!.WHERE)
-stringBuffer!.append(key)
-stringBuffer!.append(sqlStrings!.EQUAL_QUOTE)
-stringBuffer!.append(value)
-stringBuffer!.append(sqlStrings!.CLOSE_QUOTE)
+;
+    
+stringBuffer!.append(sqlStrings!.SELECT);
+    
+stringBuffer!.append(columnName);
+    
+stringBuffer!.append(sqlStrings!.FROM);
+    
+stringBuffer!.append(this.getTableName());
+    
+stringBuffer!.append(sqlStrings!.WHERE);
+    
+stringBuffer!.append(key);
+    
+stringBuffer!.append(sqlStrings!.EQUAL_QUOTE);
+    
+stringBuffer!.append(value);
+    
+stringBuffer!.append(sqlStrings!.CLOSE_QUOTE);
+    
 
     var sqlStatement: string = stringBuffer!.toString()!;
         
         
-
+;
+    
 
         try {
             
     var largest: number = 0;
         
         
-
+;
+    
 
     var rset: ResultSet = executeSQLStatement(sqlStatement)!;
         
         
-
+;
+    
 
         while(rset.next())
         {
@@ -115,12 +131,14 @@ stringBuffer!.append(sqlStrings!.CLOSE_QUOTE)
     var intValue: number = rset.getInt(columnName)!;
         
         
-
+;
+    
 
                         if(intValue > largest)
                         
                                     {
-                                    largest= intValue
+                                    largest= intValue;
+    
 
                                     }
                                 
@@ -131,17 +149,24 @@ stringBuffer!.append(sqlStrings!.CLOSE_QUOTE)
                             toString()!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    stringBuffer!.delete(0, stringBuffer!.length())
-stringBuffer!.append(sqlStrings!.SQL_STATEMENT_LABEL)
-stringBuffer!.append(sqlStatement)
-stringBuffer!.append(LARGEST_INT_VALUE_IN_COLUMN)
-stringBuffer!.append(largestAsString)
-logUtil!.put(stringBuffer!.toString(), this, METHOD_GET_LARGETS_INTEGER_IN_COLUMN)
+                                    stringBuffer!.delete(0, stringBuffer!.length());
+    
+stringBuffer!.append(sqlStrings!.SQL_STATEMENT_LABEL);
+    
+stringBuffer!.append(sqlStatement);
+    
+stringBuffer!.append(LARGEST_INT_VALUE_IN_COLUMN);
+    
+stringBuffer!.append(largestAsString);
+    
+logUtil!.put(stringBuffer!.toString(), this, METHOD_GET_LARGETS_INTEGER_IN_COLUMN);
+    
 
                                     }
                                 
@@ -151,13 +176,16 @@ logUtil!.put(stringBuffer!.toString(), this, METHOD_GET_LARGETS_INTEGER_IN_COLUM
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return largestAsString;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
                                     {
-                                    logUtil!.put(this.FAILED_SQL_STATEMENT +sqlStatement, this, METHOD_GET_LARGETS_INTEGER_IN_COLUMN, e)
+                                    logUtil!.put(this.FAILED_SQL_STATEMENT +sqlStatement, this, METHOD_GET_LARGETS_INTEGER_IN_COLUMN, e);
+    
 
                                     }
                                 
@@ -178,28 +206,36 @@ logUtil!.put(stringBuffer!.toString(), this, METHOD_GET_LARGETS_INTEGER_IN_COLUM
     var column: Vector = new Vector();
         
         
-
+;
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(sqlStrings!.SELECT)
-stringBuffer!.append(columnName)
-stringBuffer!.append(sqlStrings!.FROM)
-stringBuffer!.append(this.getTableName())
+;
+    
+stringBuffer!.append(sqlStrings!.SELECT);
+    
+stringBuffer!.append(columnName);
+    
+stringBuffer!.append(sqlStrings!.FROM);
+    
+stringBuffer!.append(this.getTableName());
+    
 
     var sqlStatement: string = stringBuffer!.toString()!;
         
         
-
+;
+    
 
         try {
             
     var rset: ResultSet = executeSQLStatement(sqlStatement)!;
         
         
-
+;
+    
 
         while(rset.next())
         {
@@ -207,20 +243,28 @@ stringBuffer!.append(this.getTableName())
     var field: string = rset.getObject(columnName)!.toString()!;
         
         
-
-column.add(field)
+;
+    
+column.add(field);
+    
 }
 
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    stringBuffer!.delete(0, stringBuffer!.length())
-stringBuffer!.append(sqlStrings!.SQL_STATEMENT_LABEL)
-stringBuffer!.append(sqlStatement)
-stringBuffer!.append(sqlStrings!.COLUMN_VALUE)
-stringBuffer!.append(column.toString())
-logUtil!.put(stringBuffer!.toString(), this, METHOD_GET_COLUMN)
+                                    stringBuffer!.delete(0, stringBuffer!.length());
+    
+stringBuffer!.append(sqlStrings!.SQL_STATEMENT_LABEL);
+    
+stringBuffer!.append(sqlStatement);
+    
+stringBuffer!.append(sqlStrings!.COLUMN_VALUE);
+    
+stringBuffer!.append(column.toString());
+    
+logUtil!.put(stringBuffer!.toString(), this, METHOD_GET_COLUMN);
+    
 
                                     }
                                 
@@ -230,13 +274,16 @@ logUtil!.put(stringBuffer!.toString(), this, METHOD_GET_COLUMN)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return column;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
                                     {
-                                    logUtil!.put(this.FAILED_SQL_STATEMENT +sqlStatement, this, METHOD_GET_COLUMN, e)
+                                    logUtil!.put(this.FAILED_SQL_STATEMENT +sqlStatement, this, METHOD_GET_COLUMN, e);
+    
 
                                     }
                                 
@@ -259,52 +306,75 @@ var value = value
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(sqlStrings!.SELECT)
-stringBuffer!.append(columnName)
-stringBuffer!.append(sqlStrings!.FROM)
-stringBuffer!.append(this.getTableName())
-stringBuffer!.append(sqlStrings!.WHERE)
-stringBuffer!.append(key)
-stringBuffer!.append(sqlStrings!.EQUAL_QUOTE)
-stringBuffer!.append(value)
-stringBuffer!.append(sqlStrings!.CLOSE_QUOTE)
+;
+    
+stringBuffer!.append(sqlStrings!.SELECT);
+    
+stringBuffer!.append(columnName);
+    
+stringBuffer!.append(sqlStrings!.FROM);
+    
+stringBuffer!.append(this.getTableName());
+    
+stringBuffer!.append(sqlStrings!.WHERE);
+    
+stringBuffer!.append(key);
+    
+stringBuffer!.append(sqlStrings!.EQUAL_QUOTE);
+    
+stringBuffer!.append(value);
+    
+stringBuffer!.append(sqlStrings!.CLOSE_QUOTE);
+    
 
     var sqlStatement: string = stringBuffer!.toString()!;
         
         
-
+;
+    
 
     var column: Vector = new Vector();
         
         
-
+;
+    
 
     var rset: ResultSet
-
+;
+    
 
     var field: string
-
+;
+    
 
         try {
-            rset= executeSQLStatement(sqlStatement)
+            rset= executeSQLStatement(sqlStatement);
+    
 
         while(rset.next())
         {
-field= rset.getObject(columnName)!.toString()
-column.add(field)
+field= rset.getObject(columnName)!.toString();
+    
+column.add(field);
+    
 }
 
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    stringBuffer!.delete(0, stringBuffer!.length())
-stringBuffer!.append(sqlStrings!.SQL_STATEMENT_LABEL)
-stringBuffer!.append(sqlStatement)
-stringBuffer!.append(sqlStrings!.COLUMN_VALUE)
-stringBuffer!.append(column.toString())
-logUtil!.put(stringBuffer!.toString(), this, METHOD_GET_COLUMN_WHERE)
+                                    stringBuffer!.delete(0, stringBuffer!.length());
+    
+stringBuffer!.append(sqlStrings!.SQL_STATEMENT_LABEL);
+    
+stringBuffer!.append(sqlStatement);
+    
+stringBuffer!.append(sqlStrings!.COLUMN_VALUE);
+    
+stringBuffer!.append(column.toString());
+    
+logUtil!.put(stringBuffer!.toString(), this, METHOD_GET_COLUMN_WHERE);
+    
 
                                     }
                                 
@@ -314,13 +384,16 @@ logUtil!.put(stringBuffer!.toString(), this, METHOD_GET_COLUMN_WHERE)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return column;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
                                     {
-                                    logUtil!.put(this.FAILED_SQL_STATEMENT +sqlStatement, this, this.METHOD_GET_COLUMN_WHERE, e)
+                                    logUtil!.put(this.FAILED_SQL_STATEMENT +sqlStatement, this, this.METHOD_GET_COLUMN_WHERE, e);
+    
 
                                     }
                                 

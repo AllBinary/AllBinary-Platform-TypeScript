@@ -18,10 +18,13 @@
 
 
 
+            import Hashtable from "@ohos.util.HashMap";
+        
 import { KeyEvent } from "../../../java/awt/event/KeyEvent.js";
 
     
-import { Hashtable } from "../../../java/util/Hashtable.js";
+
+//import { Hashtable } from "../../../java/util/Hashtable.js";
 
     
 import { LogUtil } from "../../../org/allbinary/logic/communication/log/LogUtil.js";
@@ -36,7 +39,7 @@ export class KeySingletonFactory
          {
         
 
-    private keyStringHashtable: Hashtable<Any, Any> = new Hashtable<Any, Any>();
+    private keyStringHashtable: Hashtable<any, any> = new Hashtable<any, any>();
         
         
 
@@ -52,17 +55,20 @@ export class KeySingletonFactory
     var logUtil: LogUtil = LogUtil.getInstance()!;
         
         
-
+;
+    
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
+;
+    
 
     var STATIC_BLOCK: string = "Static Block";
         
         
-
+;
+    
 
         try {
             
@@ -79,18 +85,23 @@ index < keyArray!.length; index++)
     var keyAsString: string = KeyEvent.getKeyText(keyArray[index]!)!;
         
         
-
-keyStringHashtable!.put(keyAsString, keyArray[index]!)
+;
+    
+keyStringHashtable!.put(keyAsString, keyArray[index]!);
+    
 }
 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, "KeySingleFactory", STATIC_BLOCK, e)
+logUtil!.put(commonStrings!.EXCEPTION, "KeySingleFactory", STATIC_BLOCK, e);
+    
 }
 
 }
 
-    public static getHashtable(): Hashtable<Any, Any>{
+    public static getHashtable(): Hashtable<any, any>{
 
 
 
@@ -107,6 +118,8 @@ var index = index
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return Integer(Integer.valueOf(index));
+
+                        ;
     
 }
 

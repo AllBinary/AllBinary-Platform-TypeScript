@@ -58,7 +58,8 @@ public constructor (animationInterface: Animation, weaponLayerCircularStaticPool
 
                             //For kotlin this is before the body of the constructor.
                     
-this.weaponLayerCircularStaticPool= weaponLayerCircularStaticPool
+this.weaponLayerCircularStaticPool= weaponLayerCircularStaticPool;
+    
 }
 
 public constructor (animationInterface: Animation, sourceLayerInterface: AllBinaryLayer, weaponLayerCircularStaticPool: WeaponLayerCircularPool, weaponProperties: WeaponProperties, scoreableInterface: ScoreableInterface, relativeRelationship: RelativeRelationship)                        
@@ -76,7 +77,8 @@ public constructor (animationInterface: Animation, sourceLayerInterface: AllBina
 
                             //For kotlin this is before the body of the constructor.
                     
-this.weaponLayerCircularStaticPool= weaponLayerCircularStaticPool
+this.weaponLayerCircularStaticPool= weaponLayerCircularStaticPool;
+    
 }
 
 
@@ -92,8 +94,10 @@ var otherAngle = otherAngle
     var weaponLayer: WeaponLayer = weaponLayerCircularStaticPool!.getInstance(this.getOwnerLayerInterface(), this.relativeRelationship!.getX(), this.relativeRelationship!.getY(), this.relativeRelationship!.getZ(), angle.toInt(), otherAngle.toInt(), weaponProperties, scoreableInterface)!;
         
         
-
-allbinaryLayerManager!.append(weaponLayer)
+;
+    
+allbinaryLayerManager!.append(weaponLayer);
+    
 }
 
 

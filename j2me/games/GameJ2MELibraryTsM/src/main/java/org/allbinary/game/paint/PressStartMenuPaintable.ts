@@ -77,7 +77,8 @@ public constructor (){
                         if(TouchScreenFactory.getInstance()!.isTouch())
                         
                                     {
-                                    startString= PRESS_START
+                                    startString= PRESS_START;
+    
 
                                     }
                                 
@@ -85,12 +86,14 @@ public constructor (){
                         if(AppletUtil.isAppletLoader(this))
                         
                                     {
-                                    startString= KEY_START
+                                    startString= KEY_START;
+    
 
                                     }
                                 
                         else {
-                            startString= MENU_START
+                            startString= MENU_START;
+    
 
                         }
                             
@@ -111,12 +114,14 @@ var graphics = graphics
                         if(this.isFlash())
                         
                                     {
-                                    this.setFlash(false)
+                                    this.setFlash(false);
+    
 
                                     }
                                 
                         else {
-                            this.setFlash(true)
+                            this.setFlash(true);
+    
 
                         }
                             
@@ -131,23 +136,28 @@ var graphics = graphics
     var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
         
         
-
+;
+    
 
     var beginWidth: number = (graphics.getFont()!.stringWidth(startString) shr 1);
         
         
-
+;
+    
 
     var myFont: MyFont = MyFont.getInstance()!;
         
         
-
+;
+    
 
     var line: number = (4 *myFont!.DEFAULT_CHAR_HEIGHT) +(myFont!.DEFAULT_CHAR_HEIGHT shr 1);
         
         
-
-graphics.drawString(startString, displayInfo!.getLastHalfWidth() -beginWidth, displayInfo!.getLastHeight() -line, anchor)
+;
+    
+graphics.drawString(startString, displayInfo!.getLastHalfWidth() -beginWidth, displayInfo!.getLastHeight() -line, anchor);
+    
 
                                     }
                                 
@@ -156,7 +166,8 @@ graphics.drawString(startString, displayInfo!.getLastHalfWidth() -beginWidth, di
 
     setFlash(flash: boolean){
 var flash = flash
-this.flash= flash
+this.flash= flash;
+    
 }
 
 

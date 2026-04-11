@@ -56,12 +56,14 @@ public constructor (){
     var SDK_VERSION: number = AndroidInfoFactory.getInstance()!.getVersion()!;
         
         
-
+;
+    
 
                         if(SDK_VERSION > 10)
                         
                                     {
-                                    this.scalable= true
+                                    this.scalable= true;
+    
 
                                     }
                                 
@@ -69,72 +71,134 @@ public constructor (){
     var properties: AndroidSystemProperties = AndroidSystemProperties.getInstance()!;
         
         
-
+;
+    
 
     var commonStrings: CommonSeps = CommonSeps.getInstance()!;
         
         
-
-stringBuffer!.append(DEVICE_ID)
-stringBuffer!.append(commonStrings!.EQUALS)
-stringBuffer!.append(properties.getDeviceId())
-stringBuffer!.append(commonStrings!.SPACE)
-stringBuffer!.append(DEVICE_SOFTWARE_VERSION)
-stringBuffer!.append(commonStrings!.EQUALS)
-stringBuffer!.append(properties.getDeviceSoftwareVersion())
-stringBuffer!.append(commonStrings!.SPACE)
-stringBuffer!.append(LINE_1_NUMBER)
-stringBuffer!.append(commonStrings!.EQUALS)
-stringBuffer!.append(properties.getLine1Number())
-stringBuffer!.append(commonStrings!.SPACE)
-stringBuffer!.append("NetworkCountryIso")
-stringBuffer!.append(commonStrings!.EQUALS)
-stringBuffer!.append(properties.getNetworkCountryIso())
-stringBuffer!.append(commonStrings!.SPACE)
-stringBuffer!.append("NetworkOperator")
-stringBuffer!.append(commonStrings!.EQUALS)
-stringBuffer!.append(properties.getNetworkOperator())
-stringBuffer!.append(commonStrings!.SPACE)
-stringBuffer!.append("NetworkOperatorName")
-stringBuffer!.append(commonStrings!.EQUALS)
-stringBuffer!.append(properties.getNetworkOperatorName())
-stringBuffer!.append(commonStrings!.SPACE)
-stringBuffer!.append("NetworkType")
-stringBuffer!.append(commonStrings!.EQUALS)
-stringBuffer!.append(properties.getNetworkType())
-stringBuffer!.append(commonStrings!.SPACE)
-stringBuffer!.append("PhoneType")
-stringBuffer!.append(commonStrings!.EQUALS)
-stringBuffer!.append(properties.getPhoneType())
-stringBuffer!.append(commonStrings!.SPACE)
-stringBuffer!.append("SimCountryIso")
-stringBuffer!.append(commonStrings!.EQUALS)
-stringBuffer!.append(properties.getSimCountryIso())
-stringBuffer!.append(commonStrings!.SPACE)
-stringBuffer!.append("SimOperator")
-stringBuffer!.append(commonStrings!.EQUALS)
-stringBuffer!.append(properties.getSimOperator())
-stringBuffer!.append(commonStrings!.SPACE)
-stringBuffer!.append("SimOperatorName")
-stringBuffer!.append(commonStrings!.EQUALS)
-stringBuffer!.append(properties.getSimOperatorName())
-stringBuffer!.append(commonStrings!.SPACE)
-stringBuffer!.append("SimSerialNumber")
-stringBuffer!.append(commonStrings!.EQUALS)
-stringBuffer!.append(properties.getSimSerialNumber())
-stringBuffer!.append(commonStrings!.SPACE)
-stringBuffer!.append("SubscriberId")
-stringBuffer!.append(commonStrings!.EQUALS)
-stringBuffer!.append(properties.getSubscriberId())
-stringBuffer!.append(commonStrings!.SPACE)
-stringBuffer!.append("VoiceMailAlphaTag")
-stringBuffer!.append(commonStrings!.EQUALS)
-stringBuffer!.append(properties.getVoiceMailAlphaTag())
-stringBuffer!.append(commonStrings!.SPACE)
-stringBuffer!.append("VoiceMailNumber")
-stringBuffer!.append(commonStrings!.EQUALS)
-stringBuffer!.append(properties.getVoiceMailNumber())
-stringBuffer!.append(commonStrings!.SPACE)
+;
+    
+stringBuffer!.append(DEVICE_ID);
+    
+stringBuffer!.append(commonStrings!.EQUALS);
+    
+stringBuffer!.append(properties.getDeviceId());
+    
+stringBuffer!.append(commonStrings!.SPACE);
+    
+stringBuffer!.append(DEVICE_SOFTWARE_VERSION);
+    
+stringBuffer!.append(commonStrings!.EQUALS);
+    
+stringBuffer!.append(properties.getDeviceSoftwareVersion());
+    
+stringBuffer!.append(commonStrings!.SPACE);
+    
+stringBuffer!.append(LINE_1_NUMBER);
+    
+stringBuffer!.append(commonStrings!.EQUALS);
+    
+stringBuffer!.append(properties.getLine1Number());
+    
+stringBuffer!.append(commonStrings!.SPACE);
+    
+stringBuffer!.append("NetworkCountryIso");
+    
+stringBuffer!.append(commonStrings!.EQUALS);
+    
+stringBuffer!.append(properties.getNetworkCountryIso());
+    
+stringBuffer!.append(commonStrings!.SPACE);
+    
+stringBuffer!.append("NetworkOperator");
+    
+stringBuffer!.append(commonStrings!.EQUALS);
+    
+stringBuffer!.append(properties.getNetworkOperator());
+    
+stringBuffer!.append(commonStrings!.SPACE);
+    
+stringBuffer!.append("NetworkOperatorName");
+    
+stringBuffer!.append(commonStrings!.EQUALS);
+    
+stringBuffer!.append(properties.getNetworkOperatorName());
+    
+stringBuffer!.append(commonStrings!.SPACE);
+    
+stringBuffer!.append("NetworkType");
+    
+stringBuffer!.append(commonStrings!.EQUALS);
+    
+stringBuffer!.append(properties.getNetworkType());
+    
+stringBuffer!.append(commonStrings!.SPACE);
+    
+stringBuffer!.append("PhoneType");
+    
+stringBuffer!.append(commonStrings!.EQUALS);
+    
+stringBuffer!.append(properties.getPhoneType());
+    
+stringBuffer!.append(commonStrings!.SPACE);
+    
+stringBuffer!.append("SimCountryIso");
+    
+stringBuffer!.append(commonStrings!.EQUALS);
+    
+stringBuffer!.append(properties.getSimCountryIso());
+    
+stringBuffer!.append(commonStrings!.SPACE);
+    
+stringBuffer!.append("SimOperator");
+    
+stringBuffer!.append(commonStrings!.EQUALS);
+    
+stringBuffer!.append(properties.getSimOperator());
+    
+stringBuffer!.append(commonStrings!.SPACE);
+    
+stringBuffer!.append("SimOperatorName");
+    
+stringBuffer!.append(commonStrings!.EQUALS);
+    
+stringBuffer!.append(properties.getSimOperatorName());
+    
+stringBuffer!.append(commonStrings!.SPACE);
+    
+stringBuffer!.append("SimSerialNumber");
+    
+stringBuffer!.append(commonStrings!.EQUALS);
+    
+stringBuffer!.append(properties.getSimSerialNumber());
+    
+stringBuffer!.append(commonStrings!.SPACE);
+    
+stringBuffer!.append("SubscriberId");
+    
+stringBuffer!.append(commonStrings!.EQUALS);
+    
+stringBuffer!.append(properties.getSubscriberId());
+    
+stringBuffer!.append(commonStrings!.SPACE);
+    
+stringBuffer!.append("VoiceMailAlphaTag");
+    
+stringBuffer!.append(commonStrings!.EQUALS);
+    
+stringBuffer!.append(properties.getVoiceMailAlphaTag());
+    
+stringBuffer!.append(commonStrings!.SPACE);
+    
+stringBuffer!.append("VoiceMailNumber");
+    
+stringBuffer!.append(commonStrings!.EQUALS);
+    
+stringBuffer!.append(properties.getVoiceMailNumber());
+    
+stringBuffer!.append(commonStrings!.SPACE);
+    
 }
 
 
@@ -147,7 +211,8 @@ stringBuffer!.append(commonStrings!.SPACE)
     var properties: AndroidSystemProperties = AndroidSystemProperties.getInstance()!;
         
         
-
+;
+    
 
                         if(properties.getDevice()!.lowercase()!.indexOf(OUYA) >= 0)
                         
@@ -195,16 +260,23 @@ stringBuffer!.append(commonStrings!.SPACE)
     var osBuffer: StringMaker = new StringMaker();
         
         
-
-osBuffer!.append(super.toString())
-osBuffer!.append(CommonSeps.getInstance()!.SPACE)
-osBuffer!.append("Other System Info: \n")
-osBuffer!.append(this.stringBuffer!.toString())
+;
+    
+osBuffer!.append(super.toString());
+    
+osBuffer!.append(CommonSeps.getInstance()!.SPACE);
+    
+osBuffer!.append("Other System Info: \n");
+    
+osBuffer!.append(this.stringBuffer!.toString());
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return osBuffer!.toString();
+
+                        ;
     
 }
 

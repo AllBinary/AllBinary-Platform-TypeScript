@@ -46,7 +46,8 @@ var licenseInterface = licenseInterface
                                 )
                         
                                     {
-                                    LicenseInterfaceSingleton.licenseInterface= licenseInterface
+                                    LicenseInterfaceSingleton.licenseInterface= licenseInterface;
+    
 
                                     }
                                 

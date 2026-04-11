@@ -28,7 +28,8 @@ public constructor (bitmap: any = {}){
 
             super();
                 //var bitmap = bitmap
-this.image= bitmap as Image
+this.image= bitmap as Image;
+    
 }
 
 
@@ -51,12 +52,15 @@ this.image= bitmap as Image
     var mutableImage: SwtMutableImage = this.image as SwtMutableImage;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return mutableImage!.getDepth();
+
+                        ;
     
 
                                     }
@@ -66,12 +70,15 @@ this.image= bitmap as Image
     var immutableImage: SwtImmutableImage = this.image as SwtImmutableImage;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return immutableImage!.getDepth();
+
+                        ;
     
 
                         }
@@ -79,7 +86,7 @@ this.image= bitmap as Image
 }
 
 
-    public getPixels(pixels: IntArray, offset: number, stride: number, x: number, y: number, width: number, height: number){
+    public getPixels(pixels: number[], offset: number, stride: number, x: number, y: number, width: number, height: number){
 var pixels = pixels
 var offset = offset
 var stride = stride
@@ -95,8 +102,10 @@ var height = height
     var mutableImage: SwtMutableImage = this.image as SwtMutableImage;
         
         
-
-mutableImage!.getRGB(pixels, offset, stride, x, y, width, height)
+;
+    
+mutableImage!.getRGB(pixels, offset, stride, x, y, width, height);
+    
 
                                     }
                                 
@@ -105,15 +114,17 @@ mutableImage!.getRGB(pixels, offset, stride, x, y, width, height)
     var immutableImage: SwtImmutableImage = this.image as SwtImmutableImage;
         
         
-
-immutableImage!.getRGB(pixels, offset, stride, x, y, width, height)
+;
+    
+immutableImage!.getRGB(pixels, offset, stride, x, y, width, height);
+    
 
                         }
                             
 }
 
 
-    public setPixels(pixels: IntArray, offset: number, stride: number, x: number, y: number, width: number, height: number){
+    public setPixels(pixels: number[], offset: number, stride: number, x: number, y: number, width: number, height: number){
 var pixels = pixels
 var offset = offset
 var stride = stride
@@ -121,7 +132,8 @@ var x = x
 var y = y
 var width = width
 var height = height
-this.image.setRGB2(pixels, offset, height, x, y, width, height)
+this.image.setRGB2(pixels, offset, height, x, y, width, height);
+    
 }
 
 
@@ -131,6 +143,8 @@ this.image.setRGB2(pixels, offset, height, x, y, width, height)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.image.getWidth();
+
+                        ;
     
 }
 
@@ -141,12 +155,15 @@ this.image.setRGB2(pixels, offset, height, x, y, width, height)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.image.getHeight();
+
+                        ;
     
 }
 
 
     public recycle(){
-DisposalUtil.getInstance()!.dispose(image)
+DisposalUtil.getInstance()!.dispose(image);
+    
 }
 
 

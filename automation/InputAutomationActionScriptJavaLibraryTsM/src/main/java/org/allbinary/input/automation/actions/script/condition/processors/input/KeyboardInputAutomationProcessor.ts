@@ -47,23 +47,28 @@ var keyActionScriptInputInterface = keyActionScriptInputInterface
     var logUtil: LogUtil = LogUtil.getInstance()!;
         
         
-
+;
+    
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(CommonLabels.getInstance()!.START +keyActionScriptInputInterface!.toString(), "KeyInputAutomationProcessor", commonStrings!.PROCESS)
+;
+    
+logUtil!.put(CommonLabels.getInstance()!.START +keyActionScriptInputInterface!.toString(), "KeyInputAutomationProcessor", commonStrings!.PROCESS);
+    
 
     var inputRobotInterface: InputRobotInterface = keyActionScriptInputInterface!.getInputRobotInterface()!;
         
         
-
+;
+    
 
     var integer: Integer[] = keyActionScriptInputInterface!.getKeyArray()!;
         
         
-
+;
+    
 
                         if(keyActionScriptInputInterface!.getDelayBetweenKeys() == 0)
                         
@@ -82,13 +87,15 @@ index < keyActionScriptInputInterface!.getKeyArray()!.length; index++)
                         if(keyActionScriptInputInterface!.isPress())
                         
                                     {
-                                    inputRobotInterface!.keyPress(integer[index]!)
+                                    inputRobotInterface!.keyPress(integer[index]!);
+    
 
                                     }
                                 
 }
 
-Thread.sleep(keyActionScriptInputInterface!.getTime())
+Thread.sleep(keyActionScriptInputInterface!.getTime());
+    
 
 
 
@@ -103,7 +110,8 @@ index >= 0; index--)
                         if(keyActionScriptInputInterface!.isRelease())
                         
                                     {
-                                    inputRobotInterface!.keyRelease(integer[index]!)
+                                    inputRobotInterface!.keyRelease(integer[index]!);
+    
 
                                     }
                                 
@@ -127,16 +135,19 @@ index < keyActionScriptInputInterface!.getKeyArray()!.length; index++)
                         if(keyActionScriptInputInterface!.isPress())
                         
                                     {
-                                    inputRobotInterface!.keyPress(integer[index]!)
+                                    inputRobotInterface!.keyPress(integer[index]!);
+    
 
                                     }
                                 
-Thread.sleep(keyActionScriptInputInterface!.getTime())
+Thread.sleep(keyActionScriptInputInterface!.getTime());
+    
 
                         if(keyActionScriptInputInterface!.isRelease())
                         
                                     {
-                                    inputRobotInterface!.keyRelease(integer[index]!)
+                                    inputRobotInterface!.keyRelease(integer[index]!);
+    
 
                                     }
                                 
@@ -144,17 +155,23 @@ Thread.sleep(keyActionScriptInputInterface!.getTime())
     var timeHelper: TimeDelayHelper = new TimeDelayHelper(keyActionScriptInputInterface!.getDelayBetweenKeys());
         
         
-
+;
+    
 
     var toLong: number = 0;
         
         
+;
+    
 
+        while(!timeHelper!.isTime();
 
-        while(!timeHelper!.isTime() || toLong > 6000)
+                         || toLong > 6000)
         {
-toLong++
-Thread.sleep(50)
+toLong++;
+    
+Thread.sleep(50);
+    
 }
 
 }

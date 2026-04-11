@@ -60,18 +60,27 @@ export class InventorySearchLoopInfo
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(CURRENT)
-stringBuffer!.appendint(currentPage)
-stringBuffer!.append(NUM)
-stringBuffer!.appendint(numberOfResults)
-stringBuffer!.append(LAST)
-stringBuffer!.appendint(lastPage)
+;
+    
+stringBuffer!.append(CURRENT);
+    
+stringBuffer!.appendint(currentPage);
+    
+stringBuffer!.append(NUM);
+    
+stringBuffer!.appendint(numberOfResults);
+    
+stringBuffer!.append(LAST);
+    
+stringBuffer!.appendint(lastPage);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

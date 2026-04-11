@@ -28,7 +28,7 @@ export class NoCrypt
                 , CryptInterface {
         
 
-    public encrypt(array: ByteArray): ByteArray{
+    public encrypt(array: number[]): number[]{
     //var array = array
 
 
@@ -39,7 +39,7 @@ export class NoCrypt
 }
 
 
-    public decrypt(array: ByteArray): ByteArray{
+    public decrypt(array: number[]): number[]{
     //var array = array
 
 

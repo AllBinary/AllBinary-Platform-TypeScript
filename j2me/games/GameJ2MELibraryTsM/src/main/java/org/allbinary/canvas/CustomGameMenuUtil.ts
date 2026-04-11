@@ -42,7 +42,8 @@ export class CustomGameMenuUtil
     var gameCommandsFactory: GameCommandsFactory = GameCommandsFactory.getInstance()!;
         
         
-
+;
+    
 
                         if(AppletUtil.isAppletLoader(canvas))
                         
@@ -58,7 +59,8 @@ export class CustomGameMenuUtil
                                     }
                                 
                         else {
-                            canvas.addCommand(gameCommandsFactory!.EXIT_COMMAND)
+                            canvas.addCommand(gameCommandsFactory!.EXIT_COMMAND);
+    
 
                         }
                             

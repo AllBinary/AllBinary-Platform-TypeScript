@@ -18,13 +18,16 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { HashMap } from "../../../java/util/HashMap.js";
 
     
 import { Set } from "../../../java/util/Set.js";
 
     
-import { Vector } from "../../../java/util/Vector.js";
+
+//import { Vector } from "../../../java/util/Vector.js";
 
     
 import { HttpServletRequest } from "../../../javax/servlet/http/HttpServletRequest.js";
@@ -110,7 +113,7 @@ export class InventoryItemView extends HttpStoreComponentView
 
     downloadableItemVector: Vector
 
-    private requestHashMap: HashMap<Any, Any>
+    private requestHashMap: HashMap<any, any>
 public constructor (transformInfoInterface: TransformInfoInterface)                        
 
                             : super(transformInfoInterface){
@@ -121,8 +124,12 @@ public constructor (transformInfoInterface: TransformInfoInterface)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.request= this.getPageContext()!.getRequest() as HttpServletRequest
-this.getFormData()
+this.request= this.getPageContext()!.getRequest();
+
+                         as HttpServletRequest;
+    
+this.getFormData();
+    
 }
 
 public constructor (transformInfoInterface: TransformInfoInterface, empty: string)                        
@@ -136,7 +143,10 @@ var empty = empty
 
                             //For kotlin this is before the body of the constructor.
                     
-this.request= this.getPageContext()!.getRequest() as HttpServletRequest
+this.request= this.getPageContext()!.getRequest();
+
+                         as HttpServletRequest;
+    
 }
 
 
@@ -154,12 +164,14 @@ this.request= this.getPageContext()!.getRequest() as HttpServletRequest
             
     getFormData(){
 this.setRequestHashMap(MultipartRequestParams(request).
-                            toHashMap())
+                            toHashMap());
+    
 
     var imageFileItemObject: any = {} = this.getRequestHashMap()!.get(BasicItemData.IMAGE)!;
         
         
-
+;
+    
 
                         if(HttpFileUploadUtil.getInstance()!.isValid(imageFileItemObject))
                         
@@ -168,21 +180,26 @@ this.setRequestHashMap(MultipartRequestParams(request).
     var fileItem: FileItem = imageFileItemObject as FileItem;
         
         
-
+;
+    
 
                         if(fileItem != 
                                     null
                                  && fileItem!.getSize() > 1)
                         
                                     {
-                                    this.imageFileName= HttpRequestUtil.getInstance()!.generateFileName(fileItem!.getName())
+                                    this.imageFileName= HttpRequestUtil.getInstance()!.generateFileName(fileItem!.getName());
+    
 
     var pathUtil: PathUtil = PathUtil.getInstance()!;
         
         
-
-this.mediaData= MediaData.get(pathUtil!.getExtension(this.imageFileName))
-this.imageFileName= pathUtil!.getWithoutExtension(this.imageFileName)
+;
+    
+this.mediaData= MediaData.get(pathUtil!.getExtension(this.imageFileName));
+    
+this.imageFileName= pathUtil!.getWithoutExtension(this.imageFileName);
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
@@ -191,12 +208,18 @@ this.imageFileName= pathUtil!.getWithoutExtension(this.imageFileName)
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("Uploaded File Data: ")
-stringBuffer!.append(this.imageFileName)
-stringBuffer!.append(" Extension: ")
-stringBuffer!.append(this.mediaData!.getName())
-logUtil!.put(stringBuffer!.toString(), this, "getFormData()")
+;
+    
+stringBuffer!.append("Uploaded File Data: ");
+    
+stringBuffer!.append(this.imageFileName);
+    
+stringBuffer!.append(" Extension: ");
+    
+stringBuffer!.append(this.mediaData!.getName());
+    
+logUtil!.put(stringBuffer!.toString(), this, "getFormData()");
+    
 
                                     }
                                 
@@ -206,7 +229,8 @@ logUtil!.put(stringBuffer!.toString(), this, "getFormData()")
 
                                     }
                                 
-this.itemInterface= BasicItem(this.getRequestHashMap()) as ItemInterface
+this.itemInterface= BasicItem(this.getRequestHashMap()) as ItemInterface;
+    
 }
 
 
@@ -215,15 +239,18 @@ this.itemInterface= BasicItem(this.getRequestHashMap()) as ItemInterface
     var vector: Vector = new Vector();
         
         
-
+;
+    
 
     var downloadableItem: DownloadableItem
-
+;
+    
 
     var size: number = this.downloadableItemVector!.length!;
         
         
-
+;
+    
 
 
 
@@ -234,11 +261,16 @@ this.itemInterface= BasicItem(this.getRequestHashMap()) as ItemInterface
         
 index < size; index++)
         {
-downloadableItem= this.downloadableItemVector!.get(index) as DownloadableItem
-vector.add(DownloadableItemView(downloadableItem))
+downloadableItem= this.downloadableItemVector!.get(index);
+
+                         as DownloadableItem;
+    
+vector.add(DownloadableItemView(downloadableItem));
+    
 }
 
-this.addDomNodeInterface(BasicItemView(itemInterface, vector))
+this.addDomNodeInterface(BasicItemView(itemInterface, vector));
+    
 }
 
 
@@ -257,20 +289,26 @@ this.addDomNodeInterface(BasicItemView(itemInterface, vector))
     public view(): string{
 
         try {
-            this.addDomNodeInterfaces()
+            this.addDomNodeInterfaces();
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.view();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e);
+    
 
                                     }
                                 
@@ -290,18 +328,21 @@ this.addDomNodeInterface(BasicItemView(itemInterface, vector))
     var set: Set = this.getRequestHashMap()!.keys!;
         
         
+;
+    
 
-
-    var fieldNameArray: any = {}[] = set.toArray()!;
+    var fieldNameArray: any[] = set.toArray()!;
         
         
-
+;
+    
 
     var size: number = fieldNameArray!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -316,7 +357,8 @@ index < size; index++)
     var fieldName: string = fieldNameArray[index]! as String;
         
         
-
+;
+    
 
                         if(fieldName!.compareTo(BasicItemData.IMAGE) == 0)
                         
@@ -325,18 +367,24 @@ index < size; index++)
     var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(this.getWeblisketSession()!.getStoreName())!;
         
         
-
+;
+    
 
     var inventoryUploadMediaUtil: InventoryUploadMediaUtil = new InventoryUploadMediaUtil(storeFrontInterface, this.itemInterface);
         
         
+;
+    
 
+    var fileItem: FileItem = this.getRequestHashMap()!.get(BasicItemData.IMAGE);
 
-    var fileItem: FileItem = this.getRequestHashMap()!.get(BasicItemData.IMAGE) as FileItem;
+                         as FileItem;
         
         
-
-this.itemInterface= inventoryUploadMediaUtil!.saveFiles(fileItem!.get(), this.imageFileName, this.mediaData)
+;
+    
+this.itemInterface= inventoryUploadMediaUtil!.saveFiles(fileItem!.get(), this.imageFileName, this.mediaData);
+    
 
                                     }
                                 
@@ -345,13 +393,14 @@ this.itemInterface= inventoryUploadMediaUtil!.saveFiles(fileItem!.get(), this.im
 }
 
 
-    setRequestHashMap(requestHashMap: HashMap<Any, Any>){
+    setRequestHashMap(requestHashMap: HashMap<any, any>){
 var requestHashMap = requestHashMap
-this.requestHashMap= requestHashMap
+this.requestHashMap= requestHashMap;
+    
 }
 
 
-    public getRequestHashMap(): HashMap<Any, Any>{
+    public getRequestHashMap(): HashMap<any, any>{
 
 
 

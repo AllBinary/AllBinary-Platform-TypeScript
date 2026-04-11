@@ -18,13 +18,16 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { HashMap } from "../../../../../../../java/util/HashMap.js";
 
     
 import { Set } from "../../../../../../../java/util/Set.js";
 
     
-import { Vector } from "../../../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../../../java/util/Vector.js";
 
     
 import { StreetAddressData } from "../../../../../../../org/allbinary/business/user/address/StreetAddressData.js";
@@ -56,8 +59,10 @@ public constructor (itemInterface: OrderItemInterface, vector: Vector){
             super();
             var itemInterface = itemInterface
 var vector = vector
-this.itemInterface= itemInterface
-this.vector= vector
+this.itemInterface= itemInterface;
+    
+this.vector= vector;
+    
 }
 
 
@@ -66,42 +71,50 @@ this.vector= vector
     public toXmlNode(document: Document): Node{
 var document = document
 
-    var hashMap: HashMap<Any, Any> = this.itemInterface!.toHashMap()!;
+    var hashMap: HashMap<any, any> = this.itemInterface!.toHashMap()!;
         
         
-
+;
+    
 
     var keySet: Set = hashMap!.keys!;
         
         
-
+;
+    
 
     var node: Node = document.createElement(ItemData.ITEM)!;
         
         
-
+;
+    
 
     var basicItemView: BasicItemView = new BasicItemView(this.itemInterface, vector);
         
         
-
-node.appendChild(basicItemView!.toXmlNode(document))
+;
+    
+node.appendChild(basicItemView!.toXmlNode(document));
+    
 
     var stringUtil: StringUtil = StringUtil.getInstance()!;
         
         
+;
+    
 
-
-    var nameArray: any = {}[] = keySet!.toTypedArray()!;
+    var nameArray: any[] = keySet!.toTypedArray()!;
         
         
-
+;
+    
 
     var size: number = nameArray!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -116,22 +129,30 @@ index < size; index++)
     var name: string = nameArray[index]! as String;
         
         
+;
+    
 
+    var value: string = hashMap!.get(name as Object);
 
-    var value: string = hashMap!.get(name as Object) as String;
+                         as String;
         
         
-
-value= stringUtil!.getInstance(value)
-node.appendChild(ModDomHelper.createNameValueNodes(document, name, value))
+;
+    
+value= stringUtil!.getInstance(value);
+    
+node.appendChild(ModDomHelper.createNameValueNodes(document, name, value));
+    
 }
 
 
     var shippingAddressNode: Node = document.createElement(StreetAddressData.NAME)!;
         
         
-
-shippingAddressNode!.appendChild(this.itemInterface!.getShippingAddress()!.toXmlNode(document))
+;
+    
+shippingAddressNode!.appendChild(this.itemInterface!.getShippingAddress()!.toXmlNode(document));
+    
 
 
 

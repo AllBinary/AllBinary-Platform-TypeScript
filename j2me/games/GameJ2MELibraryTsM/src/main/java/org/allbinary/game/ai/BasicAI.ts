@@ -91,8 +91,10 @@ public constructor (ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
             super();
             var ownerLayerInterface = ownerLayerInterface
 var gameInput = gameInput
-this.ownerLayerInterface= ownerLayerInterface
-this.gameInput= gameInput
+this.ownerLayerInterface= ownerLayerInterface;
+    
+this.gameInput= gameInput;
+    
 }
 
 
@@ -115,7 +117,8 @@ var key = key
                         if(key !=  -1)
                         
                                     {
-                                    this.gameInput!.add(gameKeyEventFactory!.getInstance(this, key))
+                                    this.gameInput!.add(gameKeyEventFactory!.getInstance(this, key));
+    
 
                                     }
                                 
@@ -124,7 +127,8 @@ var key = key
 
     public setLastKey(lastKey: number){
 var lastKey = lastKey
-this.lastKey= lastKey
+this.lastKey= lastKey;
+    
 }
 
 
@@ -163,7 +167,9 @@ this.lastKey= lastKey
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this::class.toString()!;
+                        return this.constructor.name.toString()!;
+
+                        ;
     
 }
 
@@ -173,16 +179,23 @@ this.lastKey= lastKey
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(CommonSeps.getInstance()!.NEW_LINE)
-stringBuffer!.append(this.getName())
-stringBuffer!.append(" LastKey: ")
-stringBuffer!.append(CanvasUtil.getKeyName(this.getLastKey()))
+;
+    
+stringBuffer!.append(CommonSeps.getInstance()!.NEW_LINE);
+    
+stringBuffer!.append(this.getName());
+    
+stringBuffer!.append(" LastKey: ");
+    
+stringBuffer!.append(CanvasUtil.getKeyName(this.getLastKey()));
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

@@ -38,6 +38,8 @@ var basicGeographicMapCellPosition = basicGeographicMapCellPosition
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return toString(basicGeographicMapCellPosition!.getColumn(), basicGeographicMapCellPosition!.getRow());
+
+                        ;
     
 }
 
@@ -49,22 +51,31 @@ var i_row = i_row
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
         
         
-
-stringBuffer!.append(commonSeps!.PARENTHESIS_OPEN)
-stringBuffer!.appendint(i_column)
-stringBuffer!.append(commonSeps!.COMMA)
-stringBuffer!.appendint(i_row)
-stringBuffer!.append(commonSeps!.PARENTHESIS_CLOSE)
+;
+    
+stringBuffer!.append(commonSeps!.PARENTHESIS_OPEN);
+    
+stringBuffer!.appendint(i_column);
+    
+stringBuffer!.append(commonSeps!.COMMA);
+    
+stringBuffer!.appendint(i_row);
+    
+stringBuffer!.append(commonSeps!.PARENTHESIS_CLOSE);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 
@@ -81,9 +92,12 @@ public constructor (column: number, row: number, columns: number, rows: number){
 var row = row
 var columns = columns
 var rows = rows
-this.column= column
-this.row= row
-this.id= (row *columns) +column
+this.column= column;
+    
+this.row= row;
+    
+this.id= (row *columns) +column;
+    
 }
 
 
@@ -113,6 +127,8 @@ this.id= (row *columns) +column
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return CellPosition.toString(this.getColumn(), this.getRow());
+
+                        ;
     
 }
 

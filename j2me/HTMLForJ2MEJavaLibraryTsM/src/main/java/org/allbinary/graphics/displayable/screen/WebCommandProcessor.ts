@@ -77,15 +77,22 @@ export class WebCommandProcessor
     //var canvas = canvas
 
         try {
-            PlayN.openURL(list.remove(0) as String)
-} catch(e: Exception)
+            PlayN.openURL(list.remove(0);
+
+                         as String);
+    
+
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e);
+    
 }
 
 }

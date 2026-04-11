@@ -65,30 +65,42 @@ export class PixelDeltaFactory
     var logUtil: LogUtil = LogUtil.getInstance()!;
         
         
-
+;
+    
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
+;
+    
 
     var STATIC_BLOCK: string = "Static Block";
         
         
-
+;
+    
 
     var instance: string = "PixelDeltaFactory";
         
         
-
+;
+    
 
         try {
-            logUtil!.put(commonStrings!.START, instance, STATIC_BLOCK)
-cacheInterface= CacheInterfaceFactory.getInstance(CacheTypeFactory.getInstance()!.CACHE, CachePolicyFactory.getInstance()!.THIRTY_MINUTES_TEN_THOUSAND_MAX) as AutomaticCacheInterface
-logUtil!.put(commonStrings!.END, instance, STATIC_BLOCK)
-} catch(e: Exception)
+            logUtil!.put(commonStrings!.START, instance, STATIC_BLOCK);
+    
+cacheInterface= CacheInterfaceFactory.getInstance(CacheTypeFactory.getInstance()!.CACHE, CachePolicyFactory.getInstance()!.THIRTY_MINUTES_TEN_THOUSAND_MAX);
+
+                         as AutomaticCacheInterface;
+    
+logUtil!.put(commonStrings!.END, instance, STATIC_BLOCK);
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, instance, STATIC_BLOCK, e)
+logUtil!.put(commonStrings!.EXCEPTION, instance, STATIC_BLOCK, e);
+    
 }
 
 }
@@ -104,24 +116,30 @@ var rgb2 = rgb2
     var point: GPoint = PointFactory.getInstance()!.getInstance(x, y)!;
         
         
-
+;
+    
 
     var colorDelta: ColorDelta = ColorDeltaFactory.getInstance(rgb1, rgb2)!;
         
         
+;
+    
 
+    var pixelDelta: PixelDelta = cacheInterface!.get(PixelDelta.getKey(point, colorDelta));
 
-    var pixelDelta: PixelDelta = cacheInterface!.get(PixelDelta.getKey(point, colorDelta)) as PixelDelta;
+                         as PixelDelta;
         
         
-
+;
+    
 
                         if(pixelDelta == 
                                     null
                                 )
                         
                                     {
-                                    pixelDelta= PixelDelta(point, colorDelta)
+                                    pixelDelta= PixelDelta(point, colorDelta);
+    
 
                                     }
                                 

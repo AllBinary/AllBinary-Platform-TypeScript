@@ -64,7 +64,7 @@ export class NullAnimationFactory
         
         
 
-    public readonly EMPTY_ARRAY: Animation[] = new Array(0);
+    public readonly EMPTY_ARRAY: Animation[] = [];
         
         
 private constructor (){

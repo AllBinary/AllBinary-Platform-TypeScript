@@ -31,13 +31,16 @@ public constructor (initTotal: number){
 
             super();
             var initTotal = initTotal
-this.initTotal= initTotal
-this.init()
+this.initTotal= initTotal;
+    
+this.init();
+    
 }
 
 
     public init(){
-this.setTotal(this.initTotal)
+this.setTotal(this.initTotal);
+    
 }
 
 
@@ -47,17 +50,20 @@ var value = value
     var max: number = Integer.MAX_VALUE;
         
         
-
+;
+    
 
                         if(this.getTotal() +value > max)
                         
                                     {
-                                    this.setTotal(max)
+                                    this.setTotal(max);
+    
 
                                     }
                                 
                         else {
-                            this.setTotal(this.getTotal() +value)
+                            this.setTotal(this.getTotal() +value);
+    
 
                         }
                             
@@ -70,12 +76,14 @@ var value = value
                         if(this.getTotal() -value < 0)
                         
                                     {
-                                    this.setTotal(0)
+                                    this.setTotal(0);
+    
 
                                     }
                                 
                         else {
-                            this.setTotal(this.getTotal() -value)
+                            this.setTotal(this.getTotal() -value);
+    
 
                         }
                             
@@ -94,7 +102,8 @@ var value = value
 
     setTotal(total: number){
 var total = total
-this.total= total
+this.total= total;
+    
 }
 
 

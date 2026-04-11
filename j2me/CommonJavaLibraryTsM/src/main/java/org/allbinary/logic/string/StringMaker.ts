@@ -16,7 +16,8 @@ export class StringMaker
 public constructor (){
 
             super();
-            this.charArray= new Array(20)
+            this.charArray= new Array(20);
+    
 }
 
 
@@ -26,8 +27,10 @@ public constructor (){
     var stringLength: number = string.length!;
         
         
-
-this.ensureCapacity(this.currentLength +stringLength)
+;
+    
+this.ensureCapacity(this.currentLength +stringLength);
+    
 
 
 
@@ -35,8 +38,10 @@ this.ensureCapacity(this.currentLength +stringLength)
             this.charArray[this.currentLength + i] = 
     string.charAt(i);
         }
-                                    
-this.currentLength += stringLength
+                                    ;
+    
+this.currentLength += stringLength;
+    
 
 
 
@@ -48,8 +53,10 @@ this.currentLength += stringLength
 
     public appendchar(c: string): StringMaker{
     //var c = c
-this.ensureCapacity(this.currentLength +1)
-this.charArray[this.currentLength++]= c
+this.ensureCapacity(this.currentLength +1);
+    
+this.charArray[this.currentLength++]= c;
+    
 
 
 
@@ -61,7 +68,8 @@ this.charArray[this.currentLength++]= c
 
     public appendbyte(b: number): StringMaker{
     //var b = b
-this.append(b.toString())
+this.append(b.toString());
+    
 
 
 
@@ -73,7 +81,8 @@ this.append(b.toString())
 
     public appendshort(b: number): StringMaker{
     //var b = b
-this.append(b.toString())
+this.append(b.toString());
+    
 
 
 
@@ -85,7 +94,8 @@ this.append(b.toString())
 
     public appendint(i: number): StringMaker{
     //var i = i
-this.append(i.toString())
+this.append(i.toString());
+    
 
 
 
@@ -97,7 +107,8 @@ this.append(i.toString())
 
     public appendlong(l: number): StringMaker{
     //var l = l
-this.append(l.toString())
+this.append(l.toString());
+    
 
 
 
@@ -109,7 +120,8 @@ this.append(l.toString())
 
     public appendfloat(f: number): StringMaker{
 var f = f
-this.append(f.toString())
+this.append(f.toString());
+    
 
 
 
@@ -125,39 +137,50 @@ this.append(f.toString())
                         if(bool)
                         
                                     {
-                                    this.ensureCapacity(this.currentLength +4)
+                                    this.ensureCapacity(this.currentLength +4);
+    
 this.charArray[this.currentLength++]= 
                                     't'
-                                    
+                                    ;
+    
 this.charArray[this.currentLength++]= 
                                     'r'
-                                    
+                                    ;
+    
 this.charArray[this.currentLength++]= 
                                     'u'
-                                    
+                                    ;
+    
 this.charArray[this.currentLength++]= 
                                     'e'
-                                    
+                                    ;
+    
 
                                     }
                                 
                         else {
-                            this.ensureCapacity(this.currentLength +5)
+                            this.ensureCapacity(this.currentLength +5);
+    
 this.charArray[this.currentLength++]= 
                                     'f'
-                                    
+                                    ;
+    
 this.charArray[this.currentLength++]= 
                                     'a'
-                                    
+                                    ;
+    
 this.charArray[this.currentLength++]= 
                                     'l'
-                                    
+                                    ;
+    
 this.charArray[this.currentLength++]= 
                                     's'
-                                    
+                                    ;
+    
 this.charArray[this.currentLength++]= 
                                     'e'
-                                    
+                                    ;
+    
 
                         }
                             
@@ -177,7 +200,8 @@ this.charArray[this.currentLength++]=
                 ;
         
         
-
+;
+    
 
                         if(minSize > oldCapacity)
                         
@@ -186,7 +210,8 @@ this.charArray[this.currentLength++]=
     var newCapacity: number = oldCapacity *3;
         
         
-
+;
+    
 
                         if(newCapacity < minSize)
                         newCapacity= minSize
@@ -197,20 +222,24 @@ this.charArray[this.currentLength++]=
                                                     ;
         
         
-
+;
+    
 
     var min: number = this.min(this.charArray!.length, newCapacity)!;
         
         
-
+;
+    
 
 
 
         for (let i = 0; i < min; i++) {
             copy[0 + i] = this.charArray[i]!;
         }
+    ;
     
-this.charArray= copy
+this.charArray= copy;
+    
 
                                     }
                                 
@@ -239,7 +268,8 @@ var value2 = value2
     public delete(start: number, end: number): StringMaker{
     //var start = start
     //var end = end
-this.currentLength -= (end -start)
+this.currentLength -= (end -start);
+    
 
 
 

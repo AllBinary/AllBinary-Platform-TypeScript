@@ -57,15 +57,18 @@ public constructor (){
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
+;
+    
+logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
+    
 
                                     }
                                 
-this.setSmtpServer(StringUtil.getInstance()!.EMPTY_STRING)
+this.setSmtpServer(StringUtil.getInstance()!.EMPTY_STRING);
+    
 }
 
-public constructor (hashMap: HashMap<Any, Any>){
+public constructor (hashMap: HashMap<any, any>){
 
             super();
             var hashMap = hashMap
@@ -77,15 +80,27 @@ public constructor (hashMap: HashMap<Any, Any>){
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.START, this, "EmailServerConfiguration(HashMap)")
+;
+    
+logUtil!.put(commonStrings!.START, this, "EmailServerConfiguration(HashMap)");
+    
 
                                     }
                                 
-this.setAccountName(hashMap!.get(EmailServerConfigurationData.ACCOUNT) as String)
-this.setPassword(hashMap!.get(EmailServerConfigurationData.PASSWORD) as String)
-this.setSmtpServer(hashMap!.get(EmailServerConfigurationData.SERVER) as String)
-this.log()
+this.setAccountName(hashMap!.get(EmailServerConfigurationData.ACCOUNT);
+
+                         as String);
+    
+this.setPassword(hashMap!.get(EmailServerConfigurationData.PASSWORD);
+
+                         as String);
+    
+this.setSmtpServer(hashMap!.get(EmailServerConfigurationData.SERVER);
+
+                         as String);
+    
+this.log();
+    
 }
 
 public constructor (account: string, password: string, server: string){
@@ -102,21 +117,28 @@ var server = server
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.START, this, "EmailServerConfiguration(HashMap)")
+;
+    
+logUtil!.put(commonStrings!.START, this, "EmailServerConfiguration(HashMap)");
+    
 
                                     }
                                 
-this.setAccountName(account)
-this.setPassword(password)
-this.setSmtpServer(server)
-this.log()
+this.setAccountName(account);
+    
+this.setPassword(password);
+    
+this.setSmtpServer(server);
+    
+this.log();
+    
 }
 
 
     public setSmtpServer(value: string){
 var value = value
-this.smtpServer= value
+this.smtpServer= value;
+    
 }
 
 
@@ -142,7 +164,8 @@ this.smtpServer= value
 
     public setAccountName(accountName: string){
 var accountName = accountName
-this.accountName= accountName
+this.accountName= accountName;
+    
 }
 
 
@@ -158,7 +181,8 @@ this.accountName= accountName
 
     public setPassword(password: string){
 var password = password
-this.password= password
+this.password= password;
+    
 }
 
 
@@ -167,7 +191,8 @@ this.password= password
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
                                     {
-                                    logUtil!.put(this.toString(), this, "EmailServerConfiguration")
+                                    logUtil!.put(this.toString(), this, "EmailServerConfiguration");
+    
 
                                     }
                                 

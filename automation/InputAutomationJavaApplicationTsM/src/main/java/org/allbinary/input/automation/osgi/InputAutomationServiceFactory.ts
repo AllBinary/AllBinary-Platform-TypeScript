@@ -73,12 +73,15 @@ private constructor (){
     public getService(bundle: Bundle, registration: ServiceRegistration): any = {}{
     //var bundle = bundle
     //var registration = registration
-logUtil!.put(this.commonStrings!.START, this, "getService")
+logUtil!.put(this.commonStrings!.START, this, "getService");
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return InputAutomationJFrame.getInstance();
+
+                        ;
     
 }
 

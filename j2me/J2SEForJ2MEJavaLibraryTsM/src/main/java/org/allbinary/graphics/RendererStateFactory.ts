@@ -34,7 +34,8 @@ export class RendererStateFactory
 
     public setLoaded(loaded: boolean){
 var loaded = loaded
-this.loaded= loaded
+this.loaded= loaded;
+    
 }
 
 
@@ -50,7 +51,8 @@ this.loaded= loaded
 
     public setSurfaceChanged(initialized: boolean){
 var initialized = initialized
-surfaceChanged= initialized
+surfaceChanged= initialized;
+    
 }
 
 

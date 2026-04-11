@@ -30,17 +30,20 @@ export class BasicPlatormGeographicMapCellType
          {
         
 
-    private readonly types: IntArray
+    private readonly types: number[]
 public constructor (type: number){
 
             super();
                 //var type = type
-GeographicMapCellType(type)
-this.types= IntArray(1)
-this.types[0]= type
+GeographicMapCellType(type);
+    
+this.types= new Array(1);
+    
+this.types[0]= type;
+    
 }
 
-public constructor (types: IntArray){
+public constructor (types: number[]){
 
             super();
                 //var types = types
@@ -49,7 +52,8 @@ public constructor (types: IntArray){
                 ;
         
         
-
+;
+    
 
 
 
@@ -60,10 +64,12 @@ public constructor (types: IntArray){
         
 index < size; index++)
         {
-GeographicMapCellType(types[index]!)
+GeographicMapCellType(types[index]!);
+    
 }
 
-this.types= types
+this.types= types;
+    
 }
 
 public constructor (types: BasicArrayList){
@@ -74,18 +80,22 @@ public constructor (types: BasicArrayList){
     var size: number = types.size()!;
         
         
+;
+    
 
-
-    var typeArray: IntArray = IntArray(size);
+    var typeArray: number[] = new Array(size);
         
         
-
+;
+    
 
     var typeAsInteger: Integer
-
+;
+    
 
     var type: number= 0
-
+;
+    
 
 
 
@@ -96,13 +106,20 @@ public constructor (types: BasicArrayList){
         
 index < size; index++)
         {
-typeAsInteger= (types.get(index) as Integer)
-type= typeAsInteger!.toInt()
-GeographicMapCellType(type)
-typeArray[index]= type
+typeAsInteger= (types.get(index);
+
+                         as Integer);
+    
+type= typeAsInteger!.toInt();
+    
+GeographicMapCellType(type);
+    
+typeArray[index]= type;
+    
 }
 
-this.types= typeArray
+this.types= typeArray;
+    
 }
 
 
@@ -113,6 +130,8 @@ this.types= typeArray
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.isType(type.getType());
+
+                        ;
     
 }
 
@@ -124,7 +143,8 @@ this.types= typeArray
                 ;
         
         
-
+;
+    
 
 
 

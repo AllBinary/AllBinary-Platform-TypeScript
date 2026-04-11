@@ -54,8 +54,10 @@ public constructor (){
                         if(this.getCommand()!.compareTo(this.commonStrings!.INSERT) == 0)
                         
                                     {
-                                    this.setName("Add Validation StoreFront View")
-this.setObjectFile("views.admin.storefront.AddValidationStoreFrontView")
+                                    this.setName("Add Validation StoreFront View");
+    
+this.setObjectFile("views.admin.storefront.AddValidationStoreFrontView");
+    
 
                                     }
                                 
@@ -74,8 +76,10 @@ this.setObjectFile("views.admin.storefront.AddValidationStoreFrontView")
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.EDIT) == 0)
                         
                                     {
-                                    this.setName("Edit Validation StoreFront View")
-this.setObjectFile("views.admin.storefront.EditValidationStoreFrontView")
+                                    this.setName("Edit Validation StoreFront View");
+    
+this.setObjectFile("views.admin.storefront.EditValidationStoreFrontView");
+    
 
                                     }
                                 
@@ -83,8 +87,10 @@ this.setObjectFile("views.admin.storefront.EditValidationStoreFrontView")
                         if(this.getCommand()!.compareTo(this.commonStrings!.UPDATE) == 0)
                         
                                     {
-                                    this.setName("Update Validation StoreFront View")
-this.setObjectFile("views.admin.storefront.UpdateValidationStoreFrontView")
+                                    this.setName("Update Validation StoreFront View");
+    
+this.setObjectFile("views.admin.storefront.UpdateValidationStoreFrontView");
+    
 
                                     }
                                 
@@ -92,8 +98,10 @@ this.setObjectFile("views.admin.storefront.UpdateValidationStoreFrontView")
                         if(this.getCommand()!.compareTo(this.commonStrings!.DELETE) == 0)
                         
                                     {
-                                    this.setName("Delete Validation StoreFront View")
-this.setObjectFile("views.admin.storefront.DeleteValidationStoreFrontView")
+                                    this.setName("Delete Validation StoreFront View");
+    
+this.setObjectFile("views.admin.storefront.DeleteValidationStoreFrontView");
+    
 
                                     }
                                 
@@ -154,6 +162,8 @@ this.setObjectFile("views.admin.storefront.DeleteValidationStoreFrontView")
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.doStartTag();
+
+                        ;
     
 
                                     }
@@ -162,9 +172,12 @@ this.setObjectFile("views.admin.storefront.DeleteValidationStoreFrontView")
 
 
                             throw Error("Command Null")
-} catch(e: LicensingException)
+
+                //: 
+} catch(e) 
             {
-AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e);
+    
 
 
 
@@ -172,9 +185,12 @@ AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
                         return SKIP_BODY;
     
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
-AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
+    
 
 
 

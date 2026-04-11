@@ -63,14 +63,16 @@ var httpServletRequest = httpServletRequest
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
+;
+    
 
         try {
             
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PAYMENT))
                         
                                     {
-                                    logUtil!.put("Getting", this, commonStrings!.GET_INSTANCE)
+                                    logUtil!.put("Getting", this, commonStrings!.GET_INSTANCE);
+    
 
                                     }
                                 
@@ -80,14 +82,19 @@ var httpServletRequest = httpServletRequest
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getInstance(RequestParams(httpServletRequest).
                             toHashMap());
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PAYMENTERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(HttpServletRequest)", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(HttpServletRequest)", e);
+    
 
                                     }
                                 
@@ -105,46 +112,56 @@ var httpServletRequest = httpServletRequest
     public getInstance(paymentType: BasicPaymentType): PaymentGatewayInterface{
 var paymentType = paymentType
 
-    var hashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
         
         
-
-hashMap!.put(PaymentGatewayData.NAME.toString(), paymentType!.getName())
+;
+    
+hashMap!.put(PaymentGatewayData.NAME.toString(), paymentType!.getName());
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getInstance(hashMap);
+
+                        ;
     
 }
 
 
                 //@Throws(Error::class)
             
-    public getInstance(hashMap: HashMap<Any, Any>): PaymentGatewayInterface{
+    public getInstance(hashMap: HashMap<any, any>): PaymentGatewayInterface{
 var hashMap = hashMap
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
+;
+    
 
         try {
             
-    var gatewayName: string = hashMap!.get(PaymentGatewayData.NAME.toString()) as String;
-        
-        
+    var gatewayName: string = hashMap!.get(PaymentGatewayData.NAME.toString());
 
+                         as String;
+        
+        
+;
+    
 
     var paymentType: BasicPaymentType = BasicPaymentTypeUtil.getInstance()!.get(gatewayName)!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PAYMENT))
                         
                                     {
-                                    logUtil!.put("Getting PaymentGatewayInterface for PaymentType: " +paymentType!.getName() +" with: " +hashMap, this, commonStrings!.GET_INSTANCE)
+                                    logUtil!.put("Getting PaymentGatewayInterface for PaymentType: " +paymentType!.getName() +" with: " +hashMap, this, commonStrings!.GET_INSTANCE);
+    
 
                                     }
                                 
@@ -152,20 +169,26 @@ var hashMap = hashMap
     var paymentGatewayInterfaceFactoryInterface: PaymentGatewayInterfaceFactoryInterface = paymentType!.getPaymentGatewayInterfaceFactoryInterface()!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return paymentGatewayInterfaceFactoryInterface!.getInstance(hashMap);
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PAYMENTERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e);
+    
 
                                     }
                                 

@@ -76,32 +76,40 @@ var node = node
     var transformInfoChildNodeList: NodeList = node.getChildNodes()!;
         
         
-
+;
+    
 
     var transformInfoData: TransformInfoData = TransformInfoData.getInstance()!;
         
         
-
+;
+    
 
     var attributes: NamedNodeMap = node.getAttributes()!;
         
         
+;
+    
 
+    var attrNode: Attr = attributes.getNamedItem(transformInfoData!.NAME);
 
-    var attrNode: Attr = attributes.getNamedItem(transformInfoData!.NAME) as Attr;
+                         as Attr;
         
         
-
+;
+    
 
     var name: string = attrNode!.getValue()!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Next View Name: " +name, this, "toTransformInfoPropertiesHashMap()")
+                                    logUtil!.put("Next View Name: " +name, this, "toTransformInfoPropertiesHashMap()");
+    
 
                                     }
                                 
@@ -109,19 +117,22 @@ var node = node
     var labelNode: Node = DomSearchHelper.getNodeNoThrow(transformInfoData!.LABEL, transformInfoChildNodeList)!;
         
         
-
+;
+    
 
     var label: string = DomNodeHelper.getTextNodesValue(labelNode)!;
         
         
-
+;
+    
 
                         if(label == 
                                     null
                                 )
                         
                                     {
-                                    label= name
+                                    label= name;
+    
 
                                     }
                                 
@@ -129,47 +140,56 @@ var node = node
     var descriptionNode: Node = DomSearchHelper.getNode(transformInfoData!.DESCRIPTION, transformInfoChildNodeList)!;
         
         
-
+;
+    
 
     var description: string = DomNodeHelper.getTextNodesValue(descriptionNode)!;
         
         
-
+;
+    
 
     var objectFileNode: Node = DomSearchHelper.getNode(transformInfoData!.OBJECTFILENAME, transformInfoChildNodeList)!;
         
         
-
+;
+    
 
     var objectFileName: string = DomNodeHelper.getTextNodeValue(objectFileNode)!;
         
         
-
+;
+    
 
     var objectConfigFileNode: Node = DomSearchHelper.getNode(transformInfoData!.OBJECTCONFIGFILENAME, transformInfoChildNodeList)!;
         
         
-
+;
+    
 
     var objectConfigFileName: string = DomNodeHelper.getTextNodeValue(objectConfigFileNode)!;
         
         
-
+;
+    
 
     var templateFileNode: Node = DomSearchHelper.getNode(transformInfoData!.TEMPLATEFILENAME, transformInfoChildNodeList)!;
         
         
-
+;
+    
 
     var templateFileName: string = DomNodeHelper.getTextNodeValue(templateFileNode)!;
         
         
-
+;
+    
 
     var transformInfoProperties: TransformInfoProperties = new TransformInfoProperties(name, label, description, objectFileName, objectConfigFileName, templateFileName);
         
         
-
+;
+    
 
 
 

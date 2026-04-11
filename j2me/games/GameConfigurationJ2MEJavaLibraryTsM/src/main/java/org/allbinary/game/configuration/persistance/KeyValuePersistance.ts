@@ -18,6 +18,8 @@
 
 
 
+            import Hashtable from "@ohos.util.HashMap";
+        
 import { ByteArrayInputStream } from "../../../../../java/io/ByteArrayInputStream.js";
 
     
@@ -30,7 +32,8 @@ import { DataInputStream } from "../../../../../java/io/DataInputStream.js";
 import { DataOutputStream } from "../../../../../java/io/DataOutputStream.js";
 
     
-import { Hashtable } from "../../../../../java/util/Hashtable.js";
+
+//import { Hashtable } from "../../../../../java/util/Hashtable.js";
 
     
 import { RecordEnumeration } from "../../../../../javax/microedition/rms/RecordEnumeration.js";
@@ -83,7 +86,8 @@ protected constructor (recordId: string)
             
     public loadAll(abeClientInformation: AbeClientInformationInterface){
     //var abeClientInformation = abeClientInformation
-this.loadAll(abeClientInformation, 1)
+this.loadAll(abeClientInformation, 1);
+    
 }
 
 
@@ -96,43 +100,54 @@ var size = size
     var recordStore: RecordStore = NullRecordStore.NULL_RECORD_STORE;
         
         
-
+;
+    
 
         try {
-            recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation), true)
+            recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation), true);
+    
 
     var recordEnum: RecordEnumeration = recordStore!.enumerateRecords(NullRecordFilter.NULL_RECORD_FILTER, NullRecordComparator.NULL_RECORD_COMPARATOR, true)!;
         
         
-
+;
+    
 
     var hashtable: Hashtable<String, String>
-
+;
+    
 
     var name: string
-
+;
+    
 
     var value: string
-
+;
+    
 
     var smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;
         
         
-
+;
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
+;
+    
 
-
-    var recordAsBytes: ByteArray
-
+    var recordAsBytes: number[]
+;
+    
 
     var byteArrayInputStream: ByteArrayInputStream
-
+;
+    
 
     var inputStream: DataInputStream
-
+;
+    
 
         while(recordEnum!.hasNextElement())
         {
@@ -140,19 +155,26 @@ var size = size
     var id: number = recordEnum!.nextRecordId()!;
         
         
-
-stringBuffer!.delete(0, stringBuffer!.length())
-logUtil!.put(stringBuffer!.append(this.persistanceStrings!.LOADING_ID)!.appendint(id)!.toString(), this, this.persistanceStrings!.LOAD_ALL)
-recordAsBytes= recordStore!.getRecord(id)
+;
+    
+stringBuffer!.delete(0, stringBuffer!.length());
+    
+logUtil!.put(stringBuffer!.append(this.persistanceStrings!.LOADING_ID)!.appendint(id)!.toString(), this, this.persistanceStrings!.LOAD_ALL);
+    
+recordAsBytes= recordStore!.getRecord(id);
+    
 
                         if(recordAsBytes != 
                                     null
                                 )
                         
                                     {
-                                    byteArrayInputStream= ByteArrayInputStream(recordAsBytes)
-inputStream= DataInputStream(byteArrayInputStream)
-hashtable= Hashtable<String, String>()
+                                    byteArrayInputStream= ByteArrayInputStream(recordAsBytes);
+    
+inputStream= DataInputStream(byteArrayInputStream);
+    
+hashtable= Hashtable<String, String>();
+    
 
 
 
@@ -163,20 +185,28 @@ hashtable= Hashtable<String, String>()
         
 index < size; index++)
         {
-name= inputStream!.readUTF()
-inputStream!.readUTF()
-value= inputStream!.readUTF()
-hashtable.put(name, value)
+name= inputStream!.readUTF();
+    
+inputStream!.readUTF();
+    
+value= inputStream!.readUTF();
+    
+hashtable.put(name, value);
+    
 }
 
-this.valueList!.add(hashtable)
-this.idList!.add(smallIntegerSingletonFactory!.getInstance(id))
+this.valueList!.add(hashtable);
+    
+this.idList!.add(smallIntegerSingletonFactory!.getInstance(id));
+    
 
                                     }
                                 
 }
 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
 
@@ -191,8 +221,10 @@ this.idList!.add(smallIntegerSingletonFactory!.getInstance(id))
                                 )
                         
                                     {
-                                    PreLogUtil.put(this.persistanceStrings!.CLOSING_RECORDSTORE, this, this.persistanceStrings!.LOAD_ALL)
-recordStore!.closeRecordStore()
+                                    PreLogUtil.put(this.persistanceStrings!.CLOSING_RECORDSTORE, this, this.persistanceStrings!.LOAD_ALL);
+    
+recordStore!.closeRecordStore();
+    
 
                                     }
                                 
@@ -204,51 +236,61 @@ recordStore!.closeRecordStore()
 
                 //@Throws(Error::class)
             
-    public save(abeClientInformation: AbeClientInformationInterface, hashtable: Hashtable<Any, Any>){
+    public save(abeClientInformation: AbeClientInformationInterface, hashtable: Hashtable<any, any>){
     //var abeClientInformation = abeClientInformation
     //var hashtable = hashtable
 
     var recordStore: RecordStore = NullRecordStore.NULL_RECORD_STORE;
         
         
-
+;
+    
 
         try {
             logUtil!.put(StringMaker().
-                            append(this.persistanceStrings!.SAVING)!.append(StringUtil.getInstance()!.toString(hashtable))!.toString(), this, this.commonStrings!.SAVE)
-recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation), true)
+                            append(this.persistanceStrings!.SAVING)!.append(StringUtil.getInstance()!.toString(hashtable))!.toString(), this, this.commonStrings!.SAVE);
+    
+recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation), true);
+    
 
     var byteArrayOutputStream: ByteArrayOutputStream = new ByteArrayOutputStream();
         
         
-
+;
+    
 
     var outputStream: DataOutputStream = new DataOutputStream(byteArrayOutputStream);
         
         
-
+;
+    
 
     var value: string
-
+;
+    
 
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
         
         
+;
+    
 
-
-    var objectArray: any = {}[] = HashtableUtil.getInstance()!.getKeysAsArray(hashtable)!;
+    var objectArray: any[] = HashtableUtil.getInstance()!.getKeysAsArray(hashtable)!;
         
         
-
+;
+    
 
     var anyType: any = {}
-
+;
+    
 
     var size: number = objectArray!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -259,20 +301,31 @@ recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation),
         
 index < size; index++)
         {
-outputStream!.writeUTF(objectArray[index]! as String)
-outputStream!.writeUTF(commonSeps!.EQUALS)
-anyType= objectArray[index]! as Object
-value= hashtable.get(anyType as Object) as String
-outputStream!.writeUTF(value)
+outputStream!.writeUTF(objectArray[index]! as String);
+    
+outputStream!.writeUTF(commonSeps!.EQUALS);
+    
+anyType= objectArray[index]! as Object;
+    
+value= hashtable.get(anyType as Object);
+
+                         as String;
+    
+outputStream!.writeUTF(value);
+    
 }
 
 
-    var savedGameBytes: ByteArray = byteArrayOutputStream!.toString()!.encodeToByteArray()!;
+    var savedGameBytes: number[] = byteArrayOutputStream!.toString()!.encodeToByteArray()!;
         
         
+;
+    
+recordStore!.addRecord(savedGameBytes, 0, savedGameBytes!.length);
+    
 
-recordStore!.addRecord(savedGameBytes, 0, savedGameBytes!.length)
-} catch(e: Exception)
+                //: 
+} catch(e) 
             {
 
 
@@ -287,8 +340,10 @@ recordStore!.addRecord(savedGameBytes, 0, savedGameBytes!.length)
                                 )
                         
                                     {
-                                    PreLogUtil.put(this.persistanceStrings!.CLOSING_RECORDSTORE, this, this.commonStrings!.SAVE)
-recordStore!.closeRecordStore()
+                                    PreLogUtil.put(this.persistanceStrings!.CLOSING_RECORDSTORE, this, this.commonStrings!.SAVE);
+    
+recordStore!.closeRecordStore();
+    
 
                                     }
                                 
@@ -298,13 +353,14 @@ recordStore!.closeRecordStore()
 }
 
 
-    public get(index: number): Hashtable<Any, Any>{
+    public get(index: number): Hashtable<any, any>{
 var index = index
 
-    var hashtable: Hashtable<Any, Any> = this.valueList!.objectArray[index]! as Hashtable<Any, Any>;
+    var hashtable: Hashtable<any, any> = this.valueList!.objectArray[index]! as Hashtable<any, any>;
         
         
-
+;
+    
 
 
 

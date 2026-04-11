@@ -53,7 +53,7 @@ export class CompositeShaderUpdater extends ShaderUpdater {
         
 public constructor (uniformBlockArray: string[], uniformArray: string[], attributeArray: string[])                        
 
-                            : this(uniformBlockArray, uniformArray, attributeArray, IntArray(attributeArray!.length)){
+                            : this(uniformBlockArray, uniformArray, attributeArray, new Array(attributeArray!.length)){
 
             super();
                 //var uniformBlockArray = uniformBlockArray
@@ -65,7 +65,7 @@ public constructor (uniformBlockArray: string[], uniformArray: string[], attribu
                     
 }
 
-public constructor (uniformBlockArray: string[], uniformArray: string[], attributeArray: string[], attributeHandleArray: IntArray){
+public constructor (uniformBlockArray: string[], uniformArray: string[], attributeArray: string[], attributeHandleArray: number[]){
 
             super();
                 //var uniformBlockArray = uniformBlockArray

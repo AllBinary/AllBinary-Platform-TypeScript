@@ -40,12 +40,14 @@ var sequentialAnimationInterface = sequentialAnimationInterface
     var size: number = sequentialAnimationInterface!.getAnimationSize()!;
         
         
-
+;
+    
 
     var imageArray: Image[] = new Array(size);
         
         
-
+;
+    
 
 
 
@@ -56,8 +58,10 @@ var sequentialAnimationInterface = sequentialAnimationInterface
         
 index < size; index++)
         {
-sequentialAnimationInterface!.setFrame(index)
-imageArray[index]= AnimationFrameToImageUtil.getInstance()!.getInstance(width, height, sequentialAnimationInterface)
+sequentialAnimationInterface!.setFrame(index);
+    
+imageArray[index]= AnimationFrameToImageUtil.getInstance()!.getInstance(width, height, sequentialAnimationInterface);
+    
 }
 
 

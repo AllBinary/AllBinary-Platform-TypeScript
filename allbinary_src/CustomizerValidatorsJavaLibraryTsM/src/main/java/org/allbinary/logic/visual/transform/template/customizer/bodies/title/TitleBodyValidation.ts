@@ -91,7 +91,8 @@ public constructor (){
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
+    
 
                                     }
                                 
@@ -99,9 +100,12 @@ public constructor (){
     var stringUtil: StringUtil = StringUtil.getInstance()!;
         
         
-
-this.body= stringUtil!.EMPTY_STRING
-this.titleValidation= TitleNotRequiredValidation()
+;
+    
+this.body= stringUtil!.EMPTY_STRING;
+    
+this.titleValidation= TitleNotRequiredValidation();
+    
 }
 
 public constructor (document: Document){
@@ -112,7 +116,8 @@ public constructor (document: Document){
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.CONSTRUCTOR, this, "Constructor(document)")
+                                    logUtil!.put(this.commonStrings!.CONSTRUCTOR, this, "Constructor(document)");
+    
 
                                     }
                                 
@@ -120,7 +125,8 @@ public constructor (document: Document){
     var nodeList: NodeList = document.getElementsByTagName(BodyData.getInstance()!.NAME)!;
         
         
-
+;
+    
 
 
 
@@ -135,19 +141,24 @@ index < nodeList!.getLength(); index++)
     var aBodyNode: Node = nodeList!.item(index)!;
         
         
-
+;
+    
 
     var aBodyValueNode: Node = DomSearchHelper.getNode(DomData.VALUE, aBodyNode!.getChildNodes())!;
         
         
-
-this.body= DomNodeHelper.getTextNodeValue(aBodyValueNode)
+;
+    
+this.body= DomNodeHelper.getTextNodeValue(aBodyValueNode);
+    
 
     var titleNode: Node = DomSearchHelper.getNode(TitleData.getInstance()!.NAME, aBodyNode!.getChildNodes())!;
         
         
-
-this.titleValidation= TitleNotRequiredValidation(titleNode)
+;
+    
+this.titleValidation= TitleNotRequiredValidation(titleNode);
+    
 
                         if(index > 1)
                         
@@ -156,7 +167,8 @@ this.titleValidation= TitleNotRequiredValidation(titleNode)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("To Many Body Nodes", this, this.commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put("To Many Body Nodes", this, this.commonStrings!.CONSTRUCTOR);
+    
 
                                     }
                                 
@@ -167,7 +179,7 @@ this.titleValidation= TitleNotRequiredValidation(titleNode)
 
 }
 
-public constructor (hashMap: HashMap<Any, Any>){
+public constructor (hashMap: HashMap<any, any>){
 
             super();
             var hashMap = hashMap
@@ -175,20 +187,26 @@ public constructor (hashMap: HashMap<Any, Any>){
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.START, this, "Constructor(hashmap)")
+                                    logUtil!.put(this.commonStrings!.START, this, "Constructor(hashmap)");
+    
 
                                     }
                                 
-this.getFormData(hashMap)
+this.getFormData(hashMap);
+    
 }
 
 
                 //@Throws(Error::class)
             
-    public getFormData(hashMap: HashMap<Any, Any>){
+    public getFormData(hashMap: HashMap<any, any>){
 var hashMap = hashMap
-this.body= hashMap!.get(BodyData.getInstance()!.NAME) as String
-this.titleValidation= TitleNotRequiredValidation(hashMap)
+this.body= hashMap!.get(BodyData.getInstance()!.NAME);
+
+                         as String;
+    
+this.titleValidation= TitleNotRequiredValidation(hashMap);
+    
 }
 
 
@@ -199,36 +217,45 @@ this.titleValidation= TitleNotRequiredValidation(hashMap)
     var isValid: Boolean = Boolean.TRUE;
         
         
-
-
-                        if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
-                        
-                                    {
-                                    logUtil!.put("TitleBodyValidation", this, commonStrings!.IS_VALID)
-
-                                    }
-                                
-
-                        if(!StringValidationUtil.getInstance()!.isValidNotRequired(this.body, BodyData.getInstance()!.MIN, AbSqlData.MAXBLOB))
-                        
-                                    {
-                                    isValid= Boolean.FALSE
-
-                                    }
-                                
-
-                        if(!this.titleValidation!.isValid())
-                        
-                                    {
-                                    isValid= Boolean.FALSE
-
-                                    }
-                                
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("TitleBodyValidation: " +isValid, this, commonStrings!.IS_VALID)
+                                    logUtil!.put("TitleBodyValidation", this, commonStrings!.IS_VALID);
+    
+
+                                    }
+                                
+
+                        if(!StringValidationUtil.getInstance()!.isValidNotRequired(this.body, BodyData.getInstance()!.MIN, AbSqlData.MAXBLOB);
+
+                        )
+                        
+                                    {
+                                    isValid= Boolean.FALSE;
+    
+
+                                    }
+                                
+
+                        if(!this.titleValidation!.isValid();
+
+                        )
+                        
+                                    {
+                                    isValid= Boolean.FALSE;
+    
+
+                                    }
+                                
+
+                        if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
+                        
+                                    {
+                                    logUtil!.put("TitleBodyValidation: " +isValid, this, commonStrings!.IS_VALID);
+    
 
                                     }
                                 
@@ -238,13 +265,16 @@ this.titleValidation= TitleNotRequiredValidation(hashMap)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return isValid;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put("Failed to validate form", this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put("Failed to validate form", this, commonStrings!.IS_VALID, e);
+    
 
                                     }
                                 
@@ -266,14 +296,19 @@ this.titleValidation= TitleNotRequiredValidation(hashMap)
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
 
                             {
-                            stringBuffer!.append("Error: Data submitted is < ")
-stringBuffer!.appendint(BodyData.getInstance()!.MIN)
-stringBuffer!.append(" or > ")
-stringBuffer!.appendint(AbSqlData.MAXBLOB)
+                            stringBuffer!.append("Error: Data submitted is < ");
+    
+stringBuffer!.appendint(BodyData.getInstance()!.MIN);
+    
+stringBuffer!.append(" or > ");
+    
+stringBuffer!.appendint(AbSqlData.MAXBLOB);
+    
 
                             }
                     
@@ -282,14 +317,19 @@ stringBuffer!.appendint(AbSqlData.MAXBLOB)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e)
+                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e);
+    
 
                                     }
                                 
@@ -333,7 +373,8 @@ var document = document
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Title Body: " +this.body, this, "toXmlNode(document)")
+                                    logUtil!.put("Title Body: " +this.body, this, "toXmlNode(document)");
+    
 
                                     }
                                 
@@ -341,8 +382,10 @@ var document = document
     var node: Node = ModDomHelper.createNameValueNodes(document, BodyData.getInstance()!.NAME, this.body)!;
         
         
-
-node.appendChild(this.titleValidation!.toXmlNode(document))
+;
+    
+node.appendChild(this.titleValidation!.toXmlNode(document));
+    
 
 
 

@@ -18,13 +18,16 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { ByteArrayInputStream } from "../../../java/io/ByteArrayInputStream.js";
 
     
 import { InputStream } from "../../../java/io/InputStream.js";
 
     
-import { Vector } from "../../../java/util/Vector.js";
+
+//import { Vector } from "../../../java/util/Vector.js";
 
     
 import { DocumentToNode } from "../../../org/allbinary/data/tree/dom/document/DocumentToNode.js";
@@ -107,7 +110,8 @@ var document = document
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setDocument(this.generate(this.toXmlDoc()))
+this.setDocument(this.generate(this.toXmlDoc()));
+    
 }
 
 public constructor (abeClientInformation: Object, transformInfoInterface: Object, name: string, type: string)                        
@@ -123,7 +127,8 @@ var type = type
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setDocument(this.generate(this.toXmlDoc()))
+this.setDocument(this.generate(this.toXmlDoc()));
+    
 }
 
 
@@ -134,41 +139,56 @@ this.setDocument(this.generate(this.toXmlDoc()))
     var storeName: string = this.getTransformInfoInterface()!.getStoreName()!;
         
         
+;
+    
 
+    var httpTransformInfoInterface: TransformInfoHttpInterface = this.getTransformInfoInterface();
 
-    var httpTransformInfoInterface: TransformInfoHttpInterface = this.getTransformInfoInterface() as TransformInfoHttpInterface;
+                         as TransformInfoHttpInterface;
         
         
+;
+    
 
+    var templateNameOverride: string = StringUtil.getInstance()!.getInstance(httpTransformInfoInterface!.getPropertiesHashMap()!.get(TransformInfoData.getInstance()!.PARTIAL);
 
-    var templateNameOverride: string = StringUtil.getInstance()!.getInstance(httpTransformInfoInterface!.getPropertiesHashMap()!.get(TransformInfoData.getInstance()!.PARTIAL) as String)!;
+                         as String)!;
         
         
-
+;
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(storeName)
-stringBuffer!.append(templateNameOverride)
-stringBuffer!.append(CommonSeps.getInstance()!.SPACE)
-stringBuffer!.append(RootTransformInfoData.NAME)
+;
+    
+stringBuffer!.append(storeName);
+    
+stringBuffer!.append(templateNameOverride);
+    
+stringBuffer!.append(CommonSeps.getInstance()!.SPACE);
+    
+stringBuffer!.append(RootTransformInfoData.NAME);
+    
 
     var rootComponentInterface: TransformInterface = TransformFactory.getInstance()!.getInstance(abeClientInformation, stringBuffer!.toString(), this.getTransformInfoInterface())!;
         
         
-
+;
+    
 
     var viewVector: Vector = this.getTransformDomNodes()!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Root View Called with: " +viewVector!.length, this, "get(transformInfoInterface)")
+                                    logUtil!.put("Root View Called with: " +viewVector!.length, this, "get(transformInfoInterface)");
+    
 
                                     }
                                 
@@ -176,22 +196,26 @@ stringBuffer!.append(RootTransformInfoData.NAME)
     var rootView: string = rootComponentInterface!.view()!;
         
         
-
+;
+    
 
     var startXMLHeader: string = "<xsl:text disable-output-escaping=\"yes\" ><![CDATA[";
         
         
-
+;
+    
 
     var endXMLHeader: string = "]]></xsl:text>";
         
         
-
+;
+    
 
     var size: number = viewVector!.length!;
         
         
-
+;
+    
 
 
 
@@ -203,45 +227,63 @@ stringBuffer!.append(RootTransformInfoData.NAME)
 index < size; index++)
         {
 
-    var objectConfigTransformInfoDomNode: TransformInfoDomNode = viewVector!.get(index) as TransformInfoDomNode;
-        
-        
+    var objectConfigTransformInfoDomNode: TransformInfoDomNode = viewVector!.get(index);
 
+                         as TransformInfoDomNode;
+        
+        
+;
+    
 
     var templateKey: string = objectConfigTransformInfoDomNode!.getReplaceKey()!;
         
         
-
+;
+    
 
     var componentInterface: TransformInterface = TransformFactory.getInstance()!.getInstance(abeClientInformation, objectConfigTransformInfoDomNode!.getTransformInfoInterface()!.getName(), this.getTransformInfoInterface())!;
         
         
-
+;
+    
 
     var replacementViewString: string = componentInterface!.view()!;
         
         
-
-replacementViewString= DocumentToNode.convertDocumentToNodeString(replacementViewString)
-stringBuffer!.delete(0, stringBuffer!.length())
-stringBuffer!.append(startXMLHeader)
-stringBuffer!.append(replacementViewString)
-stringBuffer!.append(endXMLHeader)
+;
+    
+replacementViewString= DocumentToNode.convertDocumentToNodeString(replacementViewString);
+    
+stringBuffer!.delete(0, stringBuffer!.length());
+    
+stringBuffer!.append(startXMLHeader);
+    
+stringBuffer!.append(replacementViewString);
+    
+stringBuffer!.append(endXMLHeader);
+    
 
     var templateValue: string = stringBuffer!.toString()!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    stringBuffer!.delete(0, stringBuffer!.length())
-stringBuffer!.append("Replacing: ")
-stringBuffer!.append(templateKey)
-stringBuffer!.append(" with ")
-stringBuffer!.append(templateValue)
-logUtil!.put(stringBuffer!.toString(), this, "get()")
+                                    stringBuffer!.delete(0, stringBuffer!.length());
+    
+stringBuffer!.append("Replacing: ");
+    
+stringBuffer!.append(templateKey);
+    
+stringBuffer!.append(" with ");
+    
+stringBuffer!.append(templateValue);
+    
+logUtil!.put(stringBuffer!.toString(), this, "get()");
+    
 
                                     }
                                 
@@ -249,15 +291,18 @@ logUtil!.put(stringBuffer!.toString(), this, "get()")
     var replace: Replace = new Replace(templateKey, templateValue);
         
         
-
-rootView= replace.all(rootView)
+;
+    
+rootView= replace.all(rootView);
+    
 }
 
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("End: Result of a compound view: " +rootView, this, "get()")
+                                    logUtil!.put("End: Result of a compound view: " +rootView, this, "get()");
+    
 
                                     }
                                 
@@ -274,21 +319,24 @@ rootView= replace.all(rootView)
             
     public createInputStream(): InputStream{
 
-    var completeTemplateViewBytes: ByteArray = this.get()!.encodeToByteArray()!;
+    var completeTemplateViewBytes: number[] = this.get()!.encodeToByteArray()!;
         
         
-
+;
+    
 
     var bais: ByteArrayInputStream = new ByteArrayInputStream(completeTemplateViewBytes);
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
                                     logUtil!.put("Template: " +completeTemplateViewBytes.decodeToString().
-                            toString(), this, "createInputStream()")
+                            toString(), this, "createInputStream()");
+    
 
                                     }
                                 

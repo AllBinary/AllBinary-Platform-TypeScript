@@ -18,10 +18,13 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { HashMap } from "../../../../../../java/util/HashMap.js";
 
     
-import { Vector } from "../../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../../java/util/Vector.js";
 
     
 import { Category } from "../../../../../../org/allbinary/business/category/Category.js";
@@ -74,8 +77,10 @@ var level = level
 
                             //For kotlin this is before the body of the constructor.
                     
-this.transformInfoInterface= transformInfoInterface
-this.themeVector= Vector()
+this.transformInfoInterface= transformInfoInterface;
+    
+this.themeVector= Vector();
+    
 }
 
 public constructor (transformInfoInterface: TransformInfoInterface, rootCategoryInterface: CategoryInterface, parentCategoryInterface: CategoryInterface, categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface)                        
@@ -91,8 +96,10 @@ var categoryPropertiesFactoryInterface = categoryPropertiesFactoryInterface
 
                             //For kotlin this is before the body of the constructor.
                     
-this.transformInfoInterface= transformInfoInterface
-this.themeVector= Vector()
+this.transformInfoInterface= transformInfoInterface;
+    
+this.themeVector= Vector();
+    
 }
 
 public constructor (transformInfoInterface: TransformInfoInterface, node: Node, categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface, level: number)                        
@@ -108,9 +115,12 @@ var level = level
 
                             //For kotlin this is before the body of the constructor.
                     
-this.transformInfoInterface= transformInfoInterface
-this.themeVector= Vector()
-this.addThemes(node)
+this.transformInfoInterface= transformInfoInterface;
+    
+this.themeVector= Vector();
+    
+this.addThemes(node);
+    
 }
 
 public constructor (transformInfoInterface: TransformInfoInterface, node: Node, rootCategoryInterface: CategoryInterface, parentCategoryInterface: CategoryInterface, categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface)                        
@@ -127,9 +137,12 @@ var categoryPropertiesFactoryInterface = categoryPropertiesFactoryInterface
 
                             //For kotlin this is before the body of the constructor.
                     
-this.transformInfoInterface= transformInfoInterface
-this.themeVector= Vector()
-this.addThemes(node)
+this.transformInfoInterface= transformInfoInterface;
+    
+this.themeVector= Vector();
+    
+this.addThemes(node);
+    
 }
 
 
@@ -151,12 +164,14 @@ var node = node
     var themesNode: Node = DomSearchHelper.getNode(ThemesData.getInstance()!.NAME, node.getChildNodes())!;
         
         
-
+;
+    
 
     var nodeList: NodeList = themesNode!.getChildNodes()!;
         
         
-
+;
+    
 
 
 
@@ -171,12 +186,14 @@ index < nodeList!.getLength(); index++)
     var themeNode: Node = nodeList!.item(index)!;
         
         
-
+;
+    
 
                         if(themeNode!.getNodeName()!.compareTo(ThemeData.getInstance()!.NAME) == 0)
                         
                                     {
-                                    this.themeVector!.add(ThemeValidation(this, themeNode))
+                                    this.themeVector!.add(ThemeValidation(this, themeNode));
+    
 
                                     }
                                 
@@ -187,7 +204,8 @@ index < nodeList!.getLength(); index++)
 
     public addTheme(themeValidation: ThemeValidation){
 var themeValidation = themeValidation
-this.themeVector!.add(themeValidation)
+this.themeVector!.add(themeValidation);
+    
 }
 
 
@@ -205,7 +223,9 @@ this.themeVector!.add(themeValidation)
             
     public isValid(): Boolean{
 
-                        if(!super.isValid())
+                        if(!super.isValid();
+
+                        )
                         
                                     {
                                     
@@ -228,13 +248,15 @@ this.themeVector!.add(themeValidation)
 
                 //@Throws(Error::class)
             
-    public toHashMap(): HashMap<Any, Any>{
+    public toHashMap(): HashMap<any, any>{
 
-    var categoryHashMap: HashMap<Any, Any> = super.toHashMap()!;
+    var categoryHashMap: HashMap<any, any> = super.toHashMap()!;
         
         
-
-categoryHashMap!.put(ThemesData.getInstance()!.NAME, this.themeVector)
+;
+    
+categoryHashMap!.put(ThemesData.getInstance()!.NAME, this.themeVector);
+    
 
 
 
@@ -251,7 +273,8 @@ categoryHashMap!.put(ThemesData.getInstance()!.NAME, this.themeVector)
     var categoryVector: Vector = super.toVector()!;
         
         
-
+;
+    
 
 
 

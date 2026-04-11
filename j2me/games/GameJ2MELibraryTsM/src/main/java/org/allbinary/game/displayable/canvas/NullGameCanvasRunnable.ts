@@ -18,7 +18,10 @@
 
 
 
-import { Hashtable } from "../../../../../java/util/Hashtable.js";
+            import Hashtable from "@ohos.util.HashMap";
+        
+
+//import { Hashtable } from "../../../../../java/util/Hashtable.js";
 
     
 import { CommandListener } from "../../../../../javax/microedition/lcdui/CommandListener.js";
@@ -128,7 +131,7 @@ var cmdListener = cmdListener
 
                 //@Throws(Error::class)
             
-    public getCurrentStateHashtable(): Hashtable<Any, Any>{
+    public getCurrentStateHashtable(): Hashtable<any, any>{
 
 
 
@@ -140,7 +143,7 @@ var cmdListener = cmdListener
 
                 //@Throws(Error::class)
             
-    public getLoadStateHashtable(): Hashtable<Any, Any>{
+    public getLoadStateHashtable(): Hashtable<any, any>{
 
 
 
@@ -152,7 +155,7 @@ var cmdListener = cmdListener
 
                 //@Throws(Error::class)
             
-    public setLoadStateHashtable(hashtable: Hashtable<Any, Any>){
+    public setLoadStateHashtable(hashtable: Hashtable<any, any>){
 var hashtable = hashtable
 }
 

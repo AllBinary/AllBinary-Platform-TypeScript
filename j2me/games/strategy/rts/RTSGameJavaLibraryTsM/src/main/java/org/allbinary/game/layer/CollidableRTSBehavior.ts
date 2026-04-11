@@ -50,12 +50,14 @@ public constructor (ownerLayer: CollidableCompositeLayer, collidable: boolean)
     var collisionTypeFactory: CollisionTypeFactory = CollisionTypeFactory.getInstance()!;
         
         
-
+;
+    
 
     var collisionType: CollisionType = collidableInterfaceCompositeInterface!.getCollidableInferface()!.getCollisionTypeWith(this.ownerLayer)!;
         
         
-
+;
+    
 
                         if(collisionType == collisionTypeFactory!.PICKUP)
                         
@@ -72,6 +74,8 @@ public constructor (ownerLayer: CollidableCompositeLayer, collidable: boolean)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.isCollision(collidableInterfaceCompositeInterface);
+
+                        ;
     
 
                                     }
@@ -120,12 +124,14 @@ public constructor (ownerLayer: CollidableCompositeLayer, collidable: boolean)
     var collisionTypeFactory: CollisionTypeFactory = CollisionTypeFactory.getInstance()!;
         
         
-
+;
+    
 
     var collisionType: CollisionType = collidableInterfaceCompositeInterface!.getCollidableInferface()!.getCollisionTypeWith(this.ownerLayer)!;
         
         
-
+;
+    
 
                         if(collisionType == collisionTypeFactory!.PICKUP)
                         
@@ -137,12 +143,14 @@ public constructor (ownerLayer: CollidableCompositeLayer, collidable: boolean)
                         if(collisionType == collisionTypeFactory!.COLLISION)
                         
                                     {
-                                    super.collide(collidableInterfaceCompositeInterface)
+                                    super.collide(collidableInterfaceCompositeInterface);
+    
 
                                     }
                                 
                         else {
-                            this.collideNone(collidableInterfaceCompositeInterface)
+                            this.collideNone(collidableInterfaceCompositeInterface);
+    
 
                         }
                             

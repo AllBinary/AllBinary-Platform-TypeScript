@@ -43,8 +43,10 @@ var cellPosition = cellPosition
     var geologicalGeographicMapCellPosition: GeologicalGeographicMapCellPosition = (cellPosition as GeologicalGeographicMapCellPosition);
         
         
-
-geologicalGeographicMapCellPosition!.getGeologicalResource()!.init()
+;
+    
+geologicalGeographicMapCellPosition!.getGeologicalResource()!.init();
+    
 }
 
 

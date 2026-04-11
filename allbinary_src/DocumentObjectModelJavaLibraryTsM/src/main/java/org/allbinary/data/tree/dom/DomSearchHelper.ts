@@ -18,7 +18,10 @@
 
 
 
-import { Vector } from "../../../../../java/util/Vector.js";
+            import Vector from "@ohos.util.Vector";
+        
+
+//import { Vector } from "../../../../../java/util/Vector.js";
 
     
 import { Node } from "../../../../../org/w3c/dom/Node.js";
@@ -40,7 +43,8 @@ var nodeList = nodeList
     var numberOfNodes: number = nodeList!.getLength()!;
         
         
-
+;
+    
 
 
 
@@ -55,7 +59,8 @@ index < numberOfNodes; index++)
     var node: Node = nodeList!.item(index)!;
         
         
-
+;
+    
 
                         if(node.getNodeName()!.compareTo(nodeName) == 0)
                         
@@ -89,7 +94,8 @@ var nodeList = nodeList
     var node: Node = DomSearchHelper.getNodeNoThrow(nodeName, nodeList)!;
         
         
-
+;
+    
 
                         if(node != 
                                     null
@@ -125,12 +131,15 @@ var nodeList = nodeList
     var node: Node = DomSearchHelper.getNode(nodeName, nodeList)!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return node.getChildNodes();
+
+                        ;
     
 }
 
@@ -144,7 +153,8 @@ var nodeList = nodeList
     var vector: Vector = DomSearchHelper.getAllNodesNoThrow(nodeName, nodeList)!;
         
         
-
+;
+    
 
                         if(vector == 
                                     null
@@ -178,12 +188,14 @@ var nodeList = nodeList
     var nodeVector: Vector = new Vector();
         
         
-
+;
+    
 
     var numberOfNodes: number = nodeList!.getLength()!;
         
         
-
+;
+    
 
 
 
@@ -198,12 +210,14 @@ index < numberOfNodes; index++)
     var node: Node = nodeList!.item(index)!;
         
         
-
+;
+    
 
                         if(node.getNodeName()!.compareTo(nodeName) == 0)
                         
                                     {
-                                    nodeVector!.add(node)
+                                    nodeVector!.add(node);
+    
 
                                     }
                                 

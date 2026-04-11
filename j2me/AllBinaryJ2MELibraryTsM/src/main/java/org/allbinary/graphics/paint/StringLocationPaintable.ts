@@ -30,7 +30,8 @@ public constructor (value: string){
 
             super();
                 //var value = value
-this.value= value
+this.value= value;
+    
 }
 
 
@@ -38,7 +39,8 @@ this.value= value
     //var graphics = graphics
     //var x = x
     //var y = y
-graphics.drawString(this.value, x, y, 0)
+graphics.drawString(this.value, x, y, 0);
+    
 }
 
 

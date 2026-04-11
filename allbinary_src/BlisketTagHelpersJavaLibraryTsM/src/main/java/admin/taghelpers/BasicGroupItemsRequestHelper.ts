@@ -18,13 +18,16 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { Calendar } from "../../java/util/Calendar.js";
 
     
 import { HashMap } from "../../java/util/HashMap.js";
 
     
-import { Vector } from "../../java/util/Vector.js";
+
+//import { Vector } from "../../java/util/Vector.js";
 
     
 import { HttpServletRequest } from "../../javax/servlet/http/HttpServletRequest.js";
@@ -83,63 +86,94 @@ export class BasicGroupItemsRequestHelper extends ModifyTable {
     private timeEntered: string
 
     private lastModified: string
-public constructor (hashMap: HashMap<Any, Any>, pageContext: PageContext){
+public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
             var hashMap = hashMap
 var pageContext = pageContext
-this.request= pageContext!.getRequest() as HttpServletRequest
-this.getFormData()
+this.request= pageContext!.getRequest();
+
+                         as HttpServletRequest;
+    
+this.getFormData();
+    
 }
 
 
     public getFormData(){
-this.id= request.getParameter(BasicItemData.ID)
-this.itemOne= request.getParameter(BasicGroupItemData.ITEM_ONE)
-this.itemTwo= request.getParameter(BasicGroupItemData.ITEM_TWO)
-this.itemThree= request.getParameter(BasicGroupItemData.ITEM_THREE)
-this.itemFour= request.getParameter(BasicGroupItemData.ITEM_FOUR)
-this.itemFive= request.getParameter(BasicGroupItemData.ITEM_FIVE)
-this.itemSix= request.getParameter(BasicGroupItemData.ITEM_SIX)
-this.itemSeven= request.getParameter(BasicGroupItemData.ITEM_SEVEN)
-this.itemEight= request.getParameter(BasicGroupItemData.ITEM_EIGHT)
-this.itemNine= request.getParameter(BasicGroupItemData.ITEM_NINE)
-this.itemTen= request.getParameter(BasicGroupItemData.ITEM_TEN)
-this.timeEntered= request.getParameter(EntryData.getInstance()!.TIMECREATED)
-this.lastModified= request.getParameter(EntryData.getInstance()!.LASTMODIFIED)
+this.id= request.getParameter(BasicItemData.ID);
+    
+this.itemOne= request.getParameter(BasicGroupItemData.ITEM_ONE);
+    
+this.itemTwo= request.getParameter(BasicGroupItemData.ITEM_TWO);
+    
+this.itemThree= request.getParameter(BasicGroupItemData.ITEM_THREE);
+    
+this.itemFour= request.getParameter(BasicGroupItemData.ITEM_FOUR);
+    
+this.itemFive= request.getParameter(BasicGroupItemData.ITEM_FIVE);
+    
+this.itemSix= request.getParameter(BasicGroupItemData.ITEM_SIX);
+    
+this.itemSeven= request.getParameter(BasicGroupItemData.ITEM_SEVEN);
+    
+this.itemEight= request.getParameter(BasicGroupItemData.ITEM_EIGHT);
+    
+this.itemNine= request.getParameter(BasicGroupItemData.ITEM_NINE);
+    
+this.itemTen= request.getParameter(BasicGroupItemData.ITEM_TEN);
+    
+this.timeEntered= request.getParameter(EntryData.getInstance()!.TIMECREATED);
+    
+this.lastModified= request.getParameter(EntryData.getInstance()!.LASTMODIFIED);
+    
 }
 
 
-    getHashMap(): HashMap<Any, Any>{
+    getHashMap(): HashMap<any, any>{
 
-    var values: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var values: HashMap<any, any> = new HashMap<any, any>();
         
         
-
-values.put(BasicItemData.ID, id)
-values.put(BasicGroupItemData.ITEM_ONE, this.itemOne)
-values.put(BasicGroupItemData.ITEM_TWO, this.itemTwo)
-values.put(BasicGroupItemData.ITEM_THREE, this.itemThree)
-values.put(BasicGroupItemData.ITEM_FOUR, this.itemFour)
-values.put(BasicGroupItemData.ITEM_FIVE, this.itemFive)
-values.put(BasicGroupItemData.ITEM_SIX, this.itemSix)
-values.put(BasicGroupItemData.ITEM_SEVEN, this.itemSeven)
-values.put(BasicGroupItemData.ITEM_EIGHT, this.itemEight)
-values.put(BasicGroupItemData.ITEM_NINE, this.itemNine)
-values.put(BasicGroupItemData.ITEM_TEN, this.itemTen)
+;
+    
+values.put(BasicItemData.ID, id);
+    
+values.put(BasicGroupItemData.ITEM_ONE, this.itemOne);
+    
+values.put(BasicGroupItemData.ITEM_TWO, this.itemTwo);
+    
+values.put(BasicGroupItemData.ITEM_THREE, this.itemThree);
+    
+values.put(BasicGroupItemData.ITEM_FOUR, this.itemFour);
+    
+values.put(BasicGroupItemData.ITEM_FIVE, this.itemFive);
+    
+values.put(BasicGroupItemData.ITEM_SIX, this.itemSix);
+    
+values.put(BasicGroupItemData.ITEM_SEVEN, this.itemSeven);
+    
+values.put(BasicGroupItemData.ITEM_EIGHT, this.itemEight);
+    
+values.put(BasicGroupItemData.ITEM_NINE, this.itemNine);
+    
+values.put(BasicGroupItemData.ITEM_TEN, this.itemTen);
+    
 
     var calendar: Calendar = Calendar.getInstance()!;
         
         
-
+;
+    
 
     var time: string = new calendar.getTimeInMillis() as Long.
-                            toString().toCharArray().concatToString()
-                                ;
+                            toString();
         
         
-
-values.put(EntryData.getInstance()!.LASTMODIFIED, time)
+;
+    
+values.put(EntryData.getInstance()!.LASTMODIFIED, time);
+    
 
 
 
@@ -156,43 +190,61 @@ values.put(EntryData.getInstance()!.LASTMODIFIED, time)
     var calendar: Calendar = Calendar.getInstance()!;
         
         
-
+;
+    
 
     var time: string = new calendar.getTimeInMillis() as Long.
-                            toString().toCharArray().concatToString()
-                                ;
+                            toString();
         
         
-
+;
+    
 
     var values: Vector = new Vector();
         
         
-
-values.add(this.id)
-values.add(this.itemOne)
-values.add(this.itemTwo)
-values.add(this.itemThree)
-values.add(this.itemFour)
-values.add(this.itemFive)
-values.add(this.itemSix)
-values.add(this.itemSeven)
-values.add(this.itemEight)
-values.add(this.itemNine)
-values.add(this.itemTen)
-values.add(time)
-values.add(time)
-BasicGroupItemsEntityFactory.getInstance()!.getBasicGroupItemsEntityInstance()!.insert(values)
+;
+    
+values.add(this.id);
+    
+values.add(this.itemOne);
+    
+values.add(this.itemTwo);
+    
+values.add(this.itemThree);
+    
+values.add(this.itemFour);
+    
+values.add(this.itemFive);
+    
+values.add(this.itemSix);
+    
+values.add(this.itemSeven);
+    
+values.add(this.itemEight);
+    
+values.add(this.itemNine);
+    
+values.add(this.itemTen);
+    
+values.add(time);
+    
+values.add(time);
+    
+BasicGroupItemsEntityFactory.getInstance()!.getBasicGroupItemsEntityInstance()!.insert(values);
+    
 
     var success: string = "Successfully inserted " +id +" into items table";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put(success, this, "insert()")
+                                    logUtil!.put(success, this, "insert()");
+    
 
                                     }
                                 
@@ -202,18 +254,22 @@ BasicGroupItemsEntityFactory.getInstance()!.getBasicGroupItemsEntityInstance()!.
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to insert " +id +" into items table";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "inserts()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "inserts()", e);
+    
 
                                     }
                                 
@@ -231,17 +287,20 @@ BasicGroupItemsEntityFactory.getInstance()!.getBasicGroupItemsEntityInstance()!.
     public delete(): string{
 
         try {
-            BasicGroupItemsEntityFactory.getInstance()!.getBasicGroupItemsEntityInstance()!.delete(id)
+            BasicGroupItemsEntityFactory.getInstance()!.getBasicGroupItemsEntityInstance()!.delete(id);
+    
 
     var success: string = "Successfully deleted";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put(success, this, "delete()")
+                                    logUtil!.put(success, this, "delete()");
+    
 
                                     }
                                 
@@ -251,18 +310,22 @@ BasicGroupItemsEntityFactory.getInstance()!.getBasicGroupItemsEntityInstance()!.
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to delete";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "delete()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "delete()", e);
+    
 
                                     }
                                 
@@ -284,18 +347,22 @@ BasicGroupItemsEntityFactory.getInstance()!.getBasicGroupItemsEntityInstance()!.
     var success: string = "Update Pricing Successful";
         
         
+;
+    
 
-
-    var values: HashMap<Any, Any> = this.getHashMap()!;
+    var values: HashMap<any, any> = this.getHashMap()!;
         
         
-
-BasicGroupItemsEntityFactory.getInstance()!.getBasicGroupItemsEntityInstance()!.update(values)
+;
+    
+BasicGroupItemsEntityFactory.getInstance()!.getBasicGroupItemsEntityInstance()!.update(values);
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put(id +" " +success, this, "update()")
+                                    logUtil!.put(id +" " +success, this, "update()");
+    
 
                                     }
                                 
@@ -305,18 +372,22 @@ BasicGroupItemsEntityFactory.getInstance()!.getBasicGroupItemsEntityInstance()!.
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to update: " +id;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "update()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "update()", e);
+    
 
                                     }
                                 

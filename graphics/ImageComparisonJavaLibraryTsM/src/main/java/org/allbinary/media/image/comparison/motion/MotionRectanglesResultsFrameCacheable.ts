@@ -39,8 +39,10 @@ public constructor (motionRectangles: MotionRectangles, frame: Long){
             super();
             var motionRectangles = motionRectangles
 var frame = frame
-this.frame= frame
-this.setMotionRectangles(motionRectangles)
+this.frame= frame;
+    
+this.setMotionRectangles(motionRectangles);
+    
 }
 
 
@@ -66,7 +68,8 @@ this.setMotionRectangles(motionRectangles)
 
     public setMotionRectangles(motionRectangles: MotionRectangles){
 var motionRectangles = motionRectangles
-this.motionRectangles= motionRectangles
+this.motionRectangles= motionRectangles;
+    
 }
 
 
@@ -75,15 +78,21 @@ this.motionRectangles= motionRectangles
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(this::class.toString()!)
-stringBuffer!.append(" Frame: ")
-stringBuffer!.append(this.getKey()!.toString())
+;
+    
+stringBuffer!.append(this.constructor.name.toString()!);
+    
+stringBuffer!.append(" Frame: ");
+    
+stringBuffer!.append(this.getKey()!.toString());
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

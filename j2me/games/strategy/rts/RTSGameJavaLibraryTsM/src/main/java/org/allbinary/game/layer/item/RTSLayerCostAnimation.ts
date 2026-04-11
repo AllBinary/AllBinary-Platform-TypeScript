@@ -96,15 +96,19 @@ public constructor (image: Image, layerInterfaceFactoryInterface: CostLayerInter
             super();
             var image = image
 var layerInterfaceFactoryInterface = layerInterfaceFactoryInterface
-this.image= image
-this.layerInterfaceFactoryInterface= layerInterfaceFactoryInterface
-this.update()
+this.image= image;
+    
+this.layerInterfaceFactoryInterface= layerInterfaceFactoryInterface;
+    
+this.update();
+    
 }
 
 
     public onEvent(event: AllBinaryEventObject){
 var event = event
-ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
+ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
+    
 }
 
 
@@ -112,15 +116,20 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
 var event = event
 
         try {
-            this.update()
-} catch(e: Exception)
+            this.update();
+    
+
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, "onTechEvent", e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, "onTechEvent", e);
+    
 }
 
 }
@@ -129,9 +138,12 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "onTechEvent", e)
                 //@Throws(Error::class)
             
     public update(){
-this.len= 0
-this.costString= this.primitiveLongUtil!.getCharArray(this.layerInterfaceFactoryInterface!.getCost())
-this.len= this.primitiveLongUtil!.getCurrentTotalDigits()
+this.len= 0;
+    
+this.costString= this.primitiveLongUtil!.getCharArray(this.layerInterfaceFactoryInterface!.getCost());
+    
+this.len= this.primitiveLongUtil!.getCurrentTotalDigits();
+    
 }
 
 
@@ -139,19 +151,24 @@ this.len= this.primitiveLongUtil!.getCurrentTotalDigits()
 var graphics = graphics
 var x = x
 var y = y
-super.paint(graphics, x, y)
+super.paint(graphics, x, y);
+    
 
     var adjustedCostY: number = image.getHeight() -myFont!.DEFAULT_CHAR_HEIGHT;
         
         
-
+;
+    
 
     var xa: number = x +2;
         
         
-
-graphics.drawString(DOLLAR, xa, y +adjustedCostY, 0)
-graphics.drawChars(costString, 0, this.len, x +adjustedCostX, y +adjustedCostY, 0)
+;
+    
+graphics.drawString(DOLLAR, xa, y +adjustedCostY, 0);
+    
+graphics.drawChars(costString, 0, this.len, x +adjustedCostX, y +adjustedCostY, 0);
+    
 }
 
 

@@ -58,25 +58,29 @@ export class MusicManager
          {
         
 
-    public static pause(activity: Activity, musicServiceClass: KClass<*>){
+    public static pause(activity: Activity, musicServiceClass: Function){
     //var activity = activity
 var musicServiceClass = musicServiceClass
 
     var commonStateStrings: CommonStateStrings = CommonStateStrings.getInstance()!;
         
         
-
+;
+    
 
     var musicPauseIntent: Intent = new Intent(activity as Context, musicServiceClass::class.java);
         
         
-
-musicPauseIntent!.putExtra(commonStateStrings!.ON_START_COMMAND, 1)
-activity.startService(musicPauseIntent)
+;
+    
+musicPauseIntent!.putExtra(commonStateStrings!.ON_START_COMMAND, 1);
+    
+activity.startService(musicPauseIntent);
+    
 }
 
 
-    public static resume(activity: Activity, musicServiceClass: KClass<*>){
+    public static resume(activity: Activity, musicServiceClass: Function){
     //var activity = activity
 var musicServiceClass = musicServiceClass
 
@@ -87,14 +91,18 @@ var musicServiceClass = musicServiceClass
     var commonStateStrings: CommonStateStrings = CommonStateStrings.getInstance()!;
         
         
-
+;
+    
 
     var musicResumeIntent: Intent = new Intent(activity, musicServiceClass::class.java);
         
         
-
-musicResumeIntent!.putExtra(commonStateStrings!.ON_START_COMMAND, 2)
-activity.startService(musicResumeIntent)
+;
+    
+musicResumeIntent!.putExtra(commonStateStrings!.ON_START_COMMAND, 2);
+    
+activity.startService(musicResumeIntent);
+    
 
                                     }
                                 
@@ -163,18 +171,22 @@ activity.startService(musicResumeIntent)
         
         
 
-    private readonly musicServiceClass: KClass<*>
+    private readonly musicServiceClass: Function
 
     private readonly currentIntent: Intent
-public constructor (musicServiceClass: KClass<*>, songList: BasicArrayList){
+public constructor (musicServiceClass: Function, songList: BasicArrayList){
 
             super();
                 //var musicServiceClass = musicServiceClass
     //var songList = songList
-PreLogUtil.put(commonStateStrings!.CONTEXT +resourceUtil!.getContext(), this, commonStrings!.CONSTRUCTOR)
-this.musicServiceClass= musicServiceClass
-currentIntent= Intent(resourceUtil!.getContext(), musicServiceClass::class.java)
-this.songList= songList
+PreLogUtil.put(commonStateStrings!.CONTEXT +resourceUtil!.getContext(), this, commonStrings!.CONSTRUCTOR);
+    
+this.musicServiceClass= musicServiceClass;
+    
+currentIntent= Intent(resourceUtil!.getContext(), musicServiceClass::class.java);
+    
+this.songList= songList;
+    
 }
 
 
@@ -188,19 +200,25 @@ var nextSongSound = nextSongSound
                                 )
                         
                                     {
-                                    nextSongSound= NoSound.getInstance()
+                                    nextSongSound= NoSound.getInstance();
+    
 
                                     }
                                 
-this.nextSongSound= nextSongSound
-this.leftVolume= leftVolume
-this.rightVolume= rightVolume
-this.reset()
+this.nextSongSound= nextSongSound;
+    
+this.leftVolume= leftVolume;
+    
+this.rightVolume= rightVolume;
+    
+this.reset();
+    
 }
 
 
     public reset(){
-this.timeDelayHelper!.delay= 0
+this.timeDelayHelper!.delay= 0;
+    
 }
 
 
@@ -222,7 +240,8 @@ this.timeDelayHelper!.delay= 0
                         if(this.timeDelayHelper!.isTime(gameTickTimeDelayHelper!.startTime))
                         
                                     {
-                                    this.startNewSong()
+                                    this.startNewSong();
+    
 
 
 
@@ -244,7 +263,8 @@ this.timeDelayHelper!.delay= 0
                                     }
                                 
                         else {
-                            this.startNewSong()
+                            this.startNewSong();
+    
 
                         }
                             
@@ -266,17 +286,24 @@ this.timeDelayHelper!.delay= 0
 --index >= 0; )
         {
 
-    var sound: Sound = this.songList!.get(index) as Sound;
-        
-        
+    var sound: Sound = this.songList!.get(index);
 
-
-    var duration: number = sound.getDuration().toLong();
+                         as Sound;
         
         
+;
+    
 
+    var duration: number = sound.getDuration();
+
+                        .toLong();
+        
+        
+;
+    
 PreLogUtil.put(StringBuilder().
-                            append(PLAY)!.append(sound.getResource())!.append(FOR)!.append(duration)!.toString(), this, commonStrings!.PROCESS)
+                            append(PLAY)!.append(sound.getResource())!.append(FOR)!.append(duration)!.toString(), this, commonStrings!.PROCESS);
+    
 }
 
 }
@@ -285,51 +312,71 @@ PreLogUtil.put(StringBuilder().
     public startNewSong(){
 
         try {
-            this.resourceUtil!.getContext()!.stopService(this.currentIntent)
+            this.resourceUtil!.getContext()!.stopService(this.currentIntent);
+    
 
                         if(this.nextSongSound == NoSound.getInstance())
                         
                                     {
-                                    this.currentSongSound= basicArrayListUtil!.getRandom(this.songList) as Sound
+                                    this.currentSongSound= basicArrayListUtil!.getRandom(this.songList);
+
+                         as Sound;
+    
 
                                     }
                                 
                         else {
-                            this.currentSongSound= this.nextSongSound
-this.nextSongSound= NoSound.getInstance()
+                            this.currentSongSound= this.nextSongSound;
+    
+this.nextSongSound= NoSound.getInstance();
+    
 
                         }
                             
 
-    var duration: number = this.currentSongSound!.getDuration().toLong();
-        
-        
+    var duration: number = this.currentSongSound!.getDuration();
 
+                        .toLong();
+        
+        
+;
+    
 PreLogUtil.put(StringBuilder().
-                            append(PLAY)!.append(this.currentSongSound!.getResource())!.append(FOR)!.append(duration)!.toString(), this, commonStrings!.PROCESS)
-this.timeDelayHelper!.delay= duration.toInt()
-this.currentIntent!.putExtra(musicStrings!.SONG_EXTRA, this.resourceUtil!.getResourceId(this.currentSongSound!.getResource())!.toInt())
-this.currentIntent!.putExtra(musicStrings!.LEFT_VOLUME, leftVolume)
-this.currentIntent!.putExtra(musicStrings!.RIGHT_VOLUME, rightVolume)
-this.resourceUtil!.getContext()!.startService(this.currentIntent)
-} catch(e: Exception)
+                            append(PLAY)!.append(this.currentSongSound!.getResource())!.append(FOR)!.append(duration)!.toString(), this, commonStrings!.PROCESS);
+    
+this.timeDelayHelper!.delay= duration.toInt();
+    
+this.currentIntent!.putExtra(musicStrings!.SONG_EXTRA, this.resourceUtil!.getResourceId(this.currentSongSound!.getResource())!.toInt());
+    
+this.currentIntent!.putExtra(musicStrings!.LEFT_VOLUME, leftVolume);
+    
+this.currentIntent!.putExtra(musicStrings!.RIGHT_VOLUME, rightVolume);
+    
+this.resourceUtil!.getContext()!.startService(this.currentIntent);
+    
+
+                //: 
+} catch(e) 
             {
 
     var resource: string = StringUtil.getInstance()!.EMPTY_STRING;
         
         
-
+;
+    
 
                         if(currentSongSound != 
                                     null
                                 )
                         
                                     {
-                                    resource= currentSongSound!.getResource()
+                                    resource= currentSongSound!.getResource();
+    
 
                                     }
                                 
-PreLogUtil.put(commonStrings!.EXCEPTION_LABEL +resource, this, commonStrings!.PROCESS, e)
+PreLogUtil.putOE(commonStrings!.EXCEPTION_LABEL +resource, this, commonStrings!.PROCESS, e);
+    
 }
 
 }
@@ -338,7 +385,8 @@ PreLogUtil.put(commonStrings!.EXCEPTION_LABEL +resource, this, commonStrings!.PR
                 //@Throws(Error::class)
             
     public stop(){
-this.resourceUtil!.getContext()!.stopService(this.currentIntent)
+this.resourceUtil!.getContext()!.stopService(this.currentIntent);
+    
 }
 
 

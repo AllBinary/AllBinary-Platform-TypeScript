@@ -126,20 +126,31 @@ var x = x
 var y = y
 
         try {
-            initComponents()
-this.name= name
-initMyComponents(dimension)
-this.workAreaJTreeJPanel= WorkAreaJTreeJPanel(this.name)
+            initComponents();
+    
+this.name= name;
+    
+initMyComponents(dimension);
+    
+this.workAreaJTreeJPanel= WorkAreaJTreeJPanel(this.name);
+    
 
     var canvasJPanel: CanvasJPanel = new CanvasJPanel(this.workAreaJTreeJPanel, this.getSize(), x, y);
         
         
+;
+    
+this.canvasJPanelList!.add(canvasJPanel);
+    
+this.selectedFrame= 0;
+    
+this.propertiesJPanel!.set(this.workAreaJTreeJPanel);
+    
+this.canvasHolderJPanel!.add(canvasJPanel as Component);
+    
 
-this.canvasJPanelList!.add(canvasJPanel)
-this.selectedFrame= 0
-this.propertiesJPanel!.set(this.workAreaJTreeJPanel)
-this.canvasHolderJPanel!.add(canvasJPanel as Component)
-} catch(e: Exception)
+                //: 
+} catch(e) 
             {
 
 
@@ -156,19 +167,24 @@ public constructor (workAreaDom: WorkAreaDom, dimension: Dimension){
 var dimension = dimension
 
         try {
-            initComponents()
-this.name= workAreaDom!.getName()
-initMyComponents(dimension)
+            initComponents();
+    
+this.name= workAreaDom!.getName();
+    
+initMyComponents(dimension);
+    
 
     var canvasNodeList: BasicArrayList = workAreaDom!.getCanvasNodes()!;
         
         
-
+;
+    
 
     var numberOfFrames: number = canvasNodeList!.size()!;
         
         
-
+;
+    
 
 
 
@@ -180,28 +196,41 @@ initMyComponents(dimension)
 index < numberOfFrames; index++)
         {
 
-    var node: Node = canvasNodeList!.get(index) as Node;
-        
-        
+    var node: Node = canvasNodeList!.get(index);
 
+                         as Node;
+        
+        
+;
+    
 
     var canvasJPanel: CanvasJPanel = new CanvasJPanel(this.workAreaJTreeJPanel, this.getSize(), CanvasDom(node));
         
         
-
-this.canvasJPanelList!.add(canvasJPanel)
+;
+    
+this.canvasJPanelList!.add(canvasJPanel);
+    
 }
 
-this.selectedFrame= 0
-this.canvasHolderJPanel!.add(this.getCurrentFrame() as Component)
-this.propertiesJPanel!.set(this.workAreaJTreeJPanel)
-} catch(e: Exception)
+this.selectedFrame= 0;
+    
+this.canvasHolderJPanel!.add(this.getCurrentFrame();
+
+                         as Component);
+    
+this.propertiesJPanel!.set(this.workAreaJTreeJPanel);
+    
+
+                //: 
+} catch(e) 
             {
 
                         if(LOGGING.contains(LOGGING.LOADINGERROR))
                         
                                     {
-                                    logUtil!.put("Constructor Error", this, "WorkAreaJPanel", e)
+                                    logUtil!.put("Constructor Error", this, "WorkAreaJPanel", e);
+    
 
                                     }
                                 
@@ -216,70 +245,110 @@ this.propertiesJPanel!.set(this.workAreaJTreeJPanel)
 
     initMyComponents(dimension: Dimension){
 var dimension = dimension
-this.workAreaJTreeJPanel= WorkAreaJTreeJPanel(this.name)
-this.canvasHolderJPanel= JPanel()
-this.canvasHolderJPanel!.setSize(dimension)
-this.canvasHolderJPanel!.setLayout(GridLayout(1, 1))
-this.setSize(dimension)
-this.canvasJPanelList= LinkedList()
+this.workAreaJTreeJPanel= WorkAreaJTreeJPanel(this.name);
+    
+this.canvasHolderJPanel= JPanel();
+    
+this.canvasHolderJPanel!.setSize(dimension);
+    
+this.canvasHolderJPanel!.setLayout(GridLayout(1, 1));
+    
+this.setSize(dimension);
+    
+this.canvasJPanelList= LinkedList();
+    
 
     var gridBagLayout: GridBagLayout = new GridBagLayout();
         
         
-
+;
+    
 
     var gridBagConstraints: GridBagConstraints = new GridBagConstraints();
         
         
-
-this.innerJPanel!.setLayout(gridBagLayout)
-gridBagConstraints!.gridx= 0
-gridBagConstraints!.gridy= 0
-gridBagConstraints!.gridwidth= 1
-gridBagConstraints!.fill= java.awt.GridBagConstraints.BOTH
-gridBagConstraints!.weightx= .05
-gridBagConstraints!.weighty= .05
+;
+    
+this.innerJPanel!.setLayout(gridBagLayout);
+    
+gridBagConstraints!.gridx= 0;
+    
+gridBagConstraints!.gridy= 0;
+    
+gridBagConstraints!.gridwidth= 1;
+    
+gridBagConstraints!.fill= java.awt.GridBagConstraints.BOTH;
+    
+gridBagConstraints!.weightx= .05;
+    
+gridBagConstraints!.weighty= .05;
+    
 
     var toolJPanel: ToolJPanel = new ToolJPanel();
         
         
-
-gridBagLayout!.setConstraints(toolJPanel, gridBagConstraints)
-this.innerJPanel!.add(toolJPanel)
-gridBagConstraints= GridBagConstraints()
-gridBagConstraints!.gridx= 1
-gridBagConstraints!.gridy= 0
-gridBagConstraints!.gridwidth= 6
-gridBagConstraints!.fill= java.awt.GridBagConstraints.BOTH
-gridBagConstraints!.weightx= 1
-gridBagConstraints!.weighty= 1
-gridBagLayout!.setConstraints(canvasHolderJPanel, gridBagConstraints)
-this.innerJPanel!.add(canvasHolderJPanel)
-gridBagConstraints= GridBagConstraints()
-gridBagConstraints!.gridx= 8
-gridBagConstraints!.gridy= 0
-gridBagConstraints!.gridwidth= java.awt.GridBagConstraints.REMAINDER
-gridBagConstraints!.fill= java.awt.GridBagConstraints.BOTH
-gridBagConstraints!.weightx= .1
-gridBagConstraints!.weighty= .1
-propertiesJPanel= PropertiesJPanel()
-gridBagLayout!.setConstraints(propertiesJPanel, gridBagConstraints)
-this.innerJPanel!.add(propertiesJPanel)
-MyCanvasEventService.addListener(this as MyCanvasEventListener)
+;
+    
+gridBagLayout!.setConstraints(toolJPanel, gridBagConstraints);
+    
+this.innerJPanel!.add(toolJPanel);
+    
+gridBagConstraints= GridBagConstraints();
+    
+gridBagConstraints!.gridx= 1;
+    
+gridBagConstraints!.gridy= 0;
+    
+gridBagConstraints!.gridwidth= 6;
+    
+gridBagConstraints!.fill= java.awt.GridBagConstraints.BOTH;
+    
+gridBagConstraints!.weightx= 1;
+    
+gridBagConstraints!.weighty= 1;
+    
+gridBagLayout!.setConstraints(canvasHolderJPanel, gridBagConstraints);
+    
+this.innerJPanel!.add(canvasHolderJPanel);
+    
+gridBagConstraints= GridBagConstraints();
+    
+gridBagConstraints!.gridx= 8;
+    
+gridBagConstraints!.gridy= 0;
+    
+gridBagConstraints!.gridwidth= java.awt.GridBagConstraints.REMAINDER;
+    
+gridBagConstraints!.fill= java.awt.GridBagConstraints.BOTH;
+    
+gridBagConstraints!.weightx= .1;
+    
+gridBagConstraints!.weighty= .1;
+    
+propertiesJPanel= PropertiesJPanel();
+    
+gridBagLayout!.setConstraints(propertiesJPanel, gridBagConstraints);
+    
+this.innerJPanel!.add(propertiesJPanel);
+    
+MyCanvasEventService.addListener(this as MyCanvasEventListener);
+    
 }
 
 
-    getCanvasHashMap(): HashMap<Any, Any>{
+    getCanvasHashMap(): HashMap<any, any>{
 
-    var canvasJPanelHashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var canvasJPanelHashMap: HashMap<any, any> = new HashMap<any, any>();
         
         
-
+;
+    
 
     var size: number = this.canvasJPanelList!.size()!;
         
         
-
+;
+    
 
 
 
@@ -291,11 +360,15 @@ MyCanvasEventService.addListener(this as MyCanvasEventListener)
 index < size; index++)
         {
 
-    var canvasJPanel: CanvasJPanel = this.canvasJPanelList!.get(index) as CanvasJPanel;
-        
-        
+    var canvasJPanel: CanvasJPanel = this.canvasJPanelList!.get(index);
 
-canvasJPanelHashMap!.put(canvasJPanel!.getTreeNode(), Integer(index))
+                         as CanvasJPanel;
+        
+        
+;
+    
+canvasJPanelHashMap!.put(canvasJPanel!.getTreeNode(), Integer(index));
+    
 }
 
 
@@ -309,13 +382,15 @@ canvasJPanelHashMap!.put(canvasJPanel!.getTreeNode(), Integer(index))
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public play(){
-isPlaying= true
+isPlaying= true;
+    
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public stop(){
-isPlaying= false
+isPlaying= false;
+    
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
@@ -342,27 +417,34 @@ isPlaying= false
 
     public setName(value: string){
 var value = value
-this.name= value
+this.name= value;
+    
 }
 
 
     public disableCanvas(){
-this.canvasHolderJPanel!.removeAll()
+this.canvasHolderJPanel!.removeAll();
+    
 }
 
 
     public enableCanvas(){
-this.canvasHolderJPanel!.add(this.getCurrentFrame() as Component)
+this.canvasHolderJPanel!.add(this.getCurrentFrame();
+
+                         as Component);
+    
 }
 
 
     public deselect(){
-super.setVisible(false)
+super.setVisible(false);
+    
 }
 
 
     public select(){
-super.setVisible(true)
+super.setVisible(true);
+    
 
                         if(this.canvasHolderJPanel!.getComponentCount() == 1)
                         
@@ -371,14 +453,16 @@ super.setVisible(true)
     var component: Component = this.canvasHolderJPanel!.getComponent(0)!;
         
         
-
+;
+    
 
                         if(component != 
                                     null
                                 )
                         
                                     {
-                                    component.repaint()
+                                    component.repaint();
+    
 
                                     }
                                 
@@ -394,7 +478,8 @@ var factor = factor
     var size: number = canvasJPanelList!.size()!;
         
         
-
+;
+    
 
 
 
@@ -406,11 +491,15 @@ var factor = factor
 index < size; index++)
         {
 
-    var canvasJPanel: CanvasJPanel = canvasJPanelList!.get(index) as CanvasJPanel;
-        
-        
+    var canvasJPanel: CanvasJPanel = canvasJPanelList!.get(index);
 
-canvasJPanel!.getGrid()!.setZoom(canvasJPanel!.getGrid()!.getZoom() +factor)
+                         as CanvasJPanel;
+        
+        
+;
+    
+canvasJPanel!.getGrid()!.setZoom(canvasJPanel!.getGrid()!.getZoom() +factor);
+    
 }
 
 }
@@ -421,7 +510,9 @@ canvasJPanel!.getGrid()!.setZoom(canvasJPanel!.getGrid()!.getZoom() +factor)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.canvasJPanelList!.get(this.selectedFrame) as CanvasJPanel;
+                        return this.canvasJPanelList!.get(this.selectedFrame);
+
+                         as CanvasJPanel;
     
 }
 
@@ -434,8 +525,10 @@ var newCanvasJPanel = newCanvasJPanel
                                 )
                         
                                     {
-                                    this.canvasJPanelList!.add(newCanvasJPanel)
-this.select(this.canvasJPanelList!.size() -1)
+                                    this.canvasJPanelList!.add(newCanvasJPanel);
+    
+this.select(this.canvasJPanelList!.size() -1);
+    
 
                                     }
                                 
@@ -447,25 +540,33 @@ this.select(this.canvasJPanelList!.size() -1)
     duplicate(treeNode: MutableTreeNode){
 var treeNode = treeNode
 
-    var canvasJPanelHashMap: HashMap<Any, Any> = this.getCanvasHashMap()!;
+    var canvasJPanelHashMap: HashMap<any, any> = this.getCanvasHashMap()!;
         
         
-
+;
+    
 
                         if(canvasJPanelHashMap!.containsKey(treeNode))
                         
                                     {
                                     
-    var frameInteger: Integer = canvasJPanelHashMap!.get(treeNode as Object) as Integer;
-        
-        
+    var frameInteger: Integer = canvasJPanelHashMap!.get(treeNode as Object);
 
-
-    var canvasJPanel: CanvasJPanel = this.canvasJPanelList!.get(frameInteger!.toInt()) as CanvasJPanel;
+                         as Integer;
         
         
+;
+    
 
-initDuplicate(canvasJPanel!.duplicate())
+    var canvasJPanel: CanvasJPanel = this.canvasJPanelList!.get(frameInteger!.toInt());
+
+                         as CanvasJPanel;
+        
+        
+;
+    
+initDuplicate(canvasJPanel!.duplicate());
+    
 
                                     }
                                 
@@ -481,7 +582,8 @@ var totalAngle = totalAngle
     var incrementAngle: number = (totalAngle /increments).toInt();
         
         
-
+;
+    
 
 
 
@@ -493,17 +595,23 @@ var totalAngle = totalAngle
 index < increments; index++)
         {
 
-    var canvasJPanel: CanvasJPanel = this.getCurrentFrame() as CanvasJPanel;
-        
-        
+    var canvasJPanel: CanvasJPanel = this.getCurrentFrame();
 
+                         as CanvasJPanel;
+        
+        
+;
+    
 
     var newCanvasJPanel: CanvasJPanel = canvasJPanel!.duplicate()!;
         
         
-
-newCanvasJPanel!.setAngle(incrementAngle *index)
-initDuplicate(newCanvasJPanel)
+;
+    
+newCanvasJPanel!.setAngle(incrementAngle *index);
+    
+initDuplicate(newCanvasJPanel);
+    
 }
 
 }
@@ -511,11 +619,15 @@ initDuplicate(newCanvasJPanel)
 
     public explodeAll(){
 
-    var canvasJPanel: CanvasJPanel = this.getCurrentFrame() as CanvasJPanel;
-        
-        
+    var canvasJPanel: CanvasJPanel = this.getCurrentFrame();
 
-canvasJPanel!.explodeAll()
+                         as CanvasJPanel;
+        
+        
+;
+    
+canvasJPanel!.explodeAll();
+    
 }
 
 
@@ -535,17 +647,23 @@ var explodeType = explodeType
 index < numberOfFrames; index++)
         {
 
-    var canvasJPanel: CanvasJPanel = this.getCurrentFrame() as CanvasJPanel;
-        
-        
+    var canvasJPanel: CanvasJPanel = this.getCurrentFrame();
 
+                         as CanvasJPanel;
+        
+        
+;
+    
 
     var newCanvasJPanel: CanvasJPanel = canvasJPanel!.duplicate()!;
         
         
-
-newCanvasJPanel!.explode(index +1, explodeType)
-initDuplicate(newCanvasJPanel)
+;
+    
+newCanvasJPanel!.explode(index +1, explodeType);
+    
+initDuplicate(newCanvasJPanel);
+    
 }
 
 }
@@ -555,17 +673,23 @@ initDuplicate(newCanvasJPanel)
             
     public autoMirror(){
 
-    var canvasJPanel: CanvasJPanel = this.getCurrentFrame() as CanvasJPanel;
-        
-        
+    var canvasJPanel: CanvasJPanel = this.getCurrentFrame();
 
+                         as CanvasJPanel;
+        
+        
+;
+    
 
     var newCanvasJPanel: CanvasJPanel = canvasJPanel!.duplicate()!;
         
         
-
-newCanvasJPanel!.mirror()
-initDuplicate(newCanvasJPanel)
+;
+    
+newCanvasJPanel!.mirror();
+    
+initDuplicate(newCanvasJPanel);
+    
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
@@ -577,22 +701,31 @@ var index = index
                         
                                     {
                                     
-    var canvasJPanel: CanvasJPanel = this.canvasJPanelList!.get(index) as CanvasJPanel;
-        
-        
+    var canvasJPanel: CanvasJPanel = this.canvasJPanelList!.get(index);
 
+                         as CanvasJPanel;
+        
+        
+;
+    
 
                         if(canvasJPanel != 
                                     null
                                 )
                         
                                     {
-                                    this.canvasHolderJPanel!.removeAll()
-this.canvasHolderJPanel!.add(canvasJPanel)
-this.selectedFrame= index
-canvasJPanel!.changed()
-this.canvasHolderJPanel!.repaint()
-canvasJPanel!.repaint()
+                                    this.canvasHolderJPanel!.removeAll();
+    
+this.canvasHolderJPanel!.add(canvasJPanel);
+    
+this.selectedFrame= index;
+    
+canvasJPanel!.changed();
+    
+this.canvasHolderJPanel!.repaint();
+    
+canvasJPanel!.repaint();
+    
 
                                     }
                                 
@@ -605,22 +738,27 @@ canvasJPanel!.repaint()
     select(treeNode: MutableTreeNode){
 var treeNode = treeNode
 
-    var canvasJPanelHashMap: HashMap<Any, Any> = this.getCanvasHashMap()!;
+    var canvasJPanelHashMap: HashMap<any, any> = this.getCanvasHashMap()!;
         
         
+;
+    
 
+    var frameInteger: Integer = canvasJPanelHashMap!.get(treeNode as Object);
 
-    var frameInteger: Integer = canvasJPanelHashMap!.get(treeNode as Object) as Integer;
+                         as Integer;
         
         
-
+;
+    
 
                         if(frameInteger != 
                                     null
                                 )
                         
                                     {
-                                    this.select(frameInteger!.toInt())
+                                    this.select(frameInteger!.toInt());
+    
 
                                     }
                                 
@@ -630,33 +768,40 @@ var treeNode = treeNode
                 //@Throws(Error::class)
             
     public toDocument(): Document{
-document= DomHelper.getInstance()!.createDocument()
+document= DomHelper.getInstance()!.createDocument();
+    
 
     var workAreaNode: Node = document.createElement(WorkAreaDom.WORKAREA)!;
         
         
-
+;
+    
 
     var nameNode: Node = document.createElement(WorkAreaDom.NAME)!;
         
         
-
+;
+    
 
     var nameTextNode: Node = document.createTextNode(this.name)!;
         
         
-
-nameNode!.appendChild(nameTextNode)
+;
+    
+nameNode!.appendChild(nameTextNode);
+    
 
     var framesNode: Node = document.createElement(WorkAreaDom.FRAMES)!;
         
         
-
+;
+    
 
     var size: number = canvasJPanelList!.size()!;
         
         
-
+;
+    
 
 
 
@@ -668,16 +813,23 @@ nameNode!.appendChild(nameTextNode)
 index < size; index++)
         {
 
-    var canvasJPanel: CanvasJPanel = canvasJPanelList!.get(index) as CanvasJPanel;
-        
-        
+    var canvasJPanel: CanvasJPanel = canvasJPanelList!.get(index);
 
-framesNode!.appendChild(canvasJPanel!.toDom())
+                         as CanvasJPanel;
+        
+        
+;
+    
+framesNode!.appendChild(canvasJPanel!.toDom());
+    
 }
 
-workAreaNode!.appendChild(nameNode)
-workAreaNode!.appendChild(framesNode)
-document.appendChild(workAreaNode)
+workAreaNode!.appendChild(nameNode);
+    
+workAreaNode!.appendChild(framesNode);
+    
+document.appendChild(workAreaNode);
+    
 
 
 
@@ -688,53 +840,64 @@ document.appendChild(workAreaNode)
 
 
     initComponents(){
-innerJPanel= javax.swing.JPanel()
-setLayout(java.awt.GridLayout(1, 1))
+innerJPanel= javax.swing.JPanel();
+    
+setLayout(java.awt.GridLayout(1, 1));
+    
 innerJPanel!.addKeyListener(object: java.awt.event.KeyAdapter()
                                 {
                                 
     public keyTyped(evt: java.awt.event.KeyEvent){
 var evt = evt
-innerJPanelKeyTyped(evt)
+innerJPanelKeyTyped(evt);
+    
 }
 
     public keyPressed(evt: java.awt.event.KeyEvent){
 var evt = evt
-innerJPanelKeyPressed(evt)
+innerJPanelKeyPressed(evt);
+    
 }
 
     public keyReleased(evt: java.awt.event.KeyEvent){
 var evt = evt
-innerJPanelKeyReleased(evt)
+innerJPanelKeyReleased(evt);
+    
 }
 
                                 }
-                            )
-add(innerJPanel)
+                            );
+    
+add(innerJPanel);
+    
 }
 
 
     innerJPanelKeyReleased(evt: java.awt.event.KeyEvent){
 var evt = evt
-StatusFactory.getInstance()!.setStatus("Key Pressed1")
+StatusFactory.getInstance()!.setStatus("Key Pressed1");
+    
 }
 
 
     innerJPanelKeyPressed(evt: java.awt.event.KeyEvent){
 var evt = evt
-StatusFactory.getInstance()!.setStatus("Key Pressed2")
+StatusFactory.getInstance()!.setStatus("Key Pressed2");
+    
 }
 
 
     innerJPanelKeyTyped(evt: java.awt.event.KeyEvent){
 var evt = evt
-StatusFactory.getInstance()!.setStatus("Key Pressed3")
+StatusFactory.getInstance()!.setStatus("Key Pressed3");
+    
 }
 
 
     public keyPressed(keyEvent: java.awt.event.KeyEvent){
 var keyEvent = keyEvent
-this.getCurrentFrame()!.keyPressed(keyEvent)
+this.getCurrentFrame()!.keyPressed(keyEvent);
+    
 }
 
 
@@ -751,22 +914,29 @@ var keyEvent = keyEvent
     public delete(evt: MyCanvasEvent){
 var evt = evt
 
-    var canvasJPanelHashMap: HashMap<Any, Any> = this.getCanvasHashMap()!;
+    var canvasJPanelHashMap: HashMap<any, any> = this.getCanvasHashMap()!;
         
         
-
+;
+    
 
                         if(canvasJPanelHashMap!.containsKey(evt.getTreeNode()))
                         
                                     {
-                                    this.canvasHolderJPanel!.removeAll()
+                                    this.canvasHolderJPanel!.removeAll();
+    
 
-    var frameInt: Integer = canvasJPanelHashMap!.get(evt.getTreeNode()) as Integer;
+    var frameInt: Integer = canvasJPanelHashMap!.get(evt.getTreeNode());
+
+                         as Integer;
         
         
-
-this.canvasJPanelList!.remove(frameInt!.toInt())
-this.select(frameInt!.toInt())
+;
+    
+this.canvasJPanelList!.remove(frameInt!.toInt());
+    
+this.select(frameInt!.toInt());
+    
 
                                     }
                                 
@@ -777,57 +947,72 @@ this.select(frameInt!.toInt())
             
     public duplicate(evt: MyCanvasEvent){
 var evt = evt
-this.duplicate(evt.getTreeNode())
+this.duplicate(evt.getTreeNode());
+    
 }
 
 
     public select(evt: MyCanvasEvent){
 var evt = evt
-this.select(evt.getTreeNode())
-StatusFactory.getInstance()!.setStatus("Frame Selected")
+this.select(evt.getTreeNode());
+    
+StatusFactory.getInstance()!.setStatus("Frame Selected");
+    
 }
 
 
     public rotate(evt: MyCanvasEvent){
 var evt = evt
 
-    var canvasJPanelHashMap: HashMap<Any, Any> = this.getCanvasHashMap()!;
+    var canvasJPanelHashMap: HashMap<any, any> = this.getCanvasHashMap()!;
         
         
-
+;
+    
 
     var treeNode: MutableTreeNode = evt.getTreeNode()!;
         
         
+;
+    
 
+    var frameInt: Integer = canvasJPanelHashMap!.get(evt.getTreeNode());
 
-    var frameInt: Integer = canvasJPanelHashMap!.get(evt.getTreeNode()) as Integer;
+                         as Integer;
         
         
+;
+    
 
+    var canvasJPanel: CanvasJPanel = this.canvasJPanelList!.get(frameInt!.toInt());
 
-    var canvasJPanel: CanvasJPanel = this.canvasJPanelList!.get(frameInt!.toInt()) as CanvasJPanel;
+                         as CanvasJPanel;
         
         
-
+;
+    
 
                         if(canvasJPanel != 
                                     null
                                 )
                         
                                     {
-                                    canvasJPanel!.addAngle(evt.getAngle())
-this.select(frameInt!.toInt())
+                                    canvasJPanel!.addAngle(evt.getAngle());
+    
+this.select(frameInt!.toInt());
+    
 
                                     }
                                 
-StatusFactory.getInstance()!.setStatus("Canvas Rotated")
+StatusFactory.getInstance()!.setStatus("Canvas Rotated");
+    
 }
 
 
     public explode(evt: MyCanvasEvent){
 var evt = evt
-this.explodeAll()
+this.explodeAll();
+    
 }
 
 
@@ -835,7 +1020,8 @@ this.explodeAll()
             
     public autoExplode(evt: MyCanvasEvent){
 var evt = evt
-this.autoExplode(10, 0)
+this.autoExplode(10, 0);
+    
 }
 
 
@@ -843,11 +1029,15 @@ this.autoExplode(10, 0)
             
     public center(){
 
-    var canvasJPanel: CanvasJPanel = this.getCurrentFrame() as CanvasJPanel;
-        
-        
+    var canvasJPanel: CanvasJPanel = this.getCurrentFrame();
 
-canvasJPanel!.center()
+                         as CanvasJPanel;
+        
+        
+;
+    
+canvasJPanel!.center();
+    
 }
 
 
@@ -855,7 +1045,8 @@ canvasJPanel!.center()
             
     public center(evt: MyCanvasEvent){
 var evt = evt
-this.center()
+this.center();
+    
 }
 
 
@@ -873,7 +1064,8 @@ this.center()
     var size: number = this.canvasJPanelList!.size()!;
         
         
-
+;
+    
 
 
 
@@ -885,7 +1077,9 @@ this.center()
 index < size; index++)
         {
 
-                        if(!this.isPlaying())
+                        if(!this.isPlaying();
+
+                        )
                         
                                     {
                                     break;
@@ -894,22 +1088,28 @@ index < size; index++)
 
                                     }
                                 
-this.select(index)
-Thread.sleep(100)
+this.select(index);
+    
+Thread.sleep(100);
+    
 }
 
 
                                     }
                                 
                         else {
-                            Thread.sleep(500)
+                            Thread.sleep(500);
+    
 
                         }
                             
-Thread.sleep(250)
+Thread.sleep(250);
+    
 }
 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 }
 

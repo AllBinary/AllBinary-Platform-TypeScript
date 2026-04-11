@@ -95,23 +95,30 @@ public constructor (abeClientInformation: AbeClientInformationInterface, orderHi
             super();
                 //var abeClientInformation = abeClientInformation
     //var orderHistory = orderHistory
-this.abeClientInformation= abeClientInformation
-this.orderHistory= orderHistory
+this.abeClientInformation= abeClientInformation;
+    
+this.orderHistory= orderHistory;
+    
 
     var storeName: string = orderHistory!.getStoreName()!;
         
         
-
-this.storeFrontInterface= StoreFrontFactory.getInstance(storeName)
-this.user= UserEntityFactory.getInstance()!.getUser(orderHistory!.getUserName())
+;
+    
+this.storeFrontInterface= StoreFrontFactory.getInstance(storeName);
+    
+this.user= UserEntityFactory.getInstance()!.getUser(orderHistory!.getUserName());
+    
 }
 
 
                 //@Throws(Error::class)
             
     public process(){
-this.notifyStoreAdmin()
-this.notifyUser()
+this.notifyStoreAdmin();
+    
+this.notifyUser();
+    
 }
 
 
@@ -124,7 +131,8 @@ this.notifyUser()
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
                                     {
-                                    logUtil!.put("Order Email", this, "emailStoreAdmin")
+                                    logUtil!.put("Order Email", this, "emailStoreAdmin");
+    
 
                                     }
                                 
@@ -132,56 +140,70 @@ this.notifyUser()
     var adminEmailSubject: string = "Order " +this.orderHistory!.getStatus() +" Attempt";
         
         
-
+;
+    
 
     var adminEmailTextBody: string = "Order attempt: " +this.orderHistory!.getId() +" Preprocessing by: " +user.getUserName();
         
         
-
+;
+    
 
     var adminBasicEmailInfo: BasicEmailInfo = AdminEmailInfo(adminEmailSubject, adminEmailTextBody) as BasicEmailInfo;
         
         
-
+;
+    
 
     var storeAdminBasicEmailInfo: BasicEmailInfo = StoreEmailInfo(this.storeFrontInterface, adminEmailSubject, adminEmailTextBody) as BasicEmailInfo;
         
         
-
+;
+    
 
     var storeAdminEmailInfo: EmailInfo = new EmailInfo(storeAdminBasicEmailInfo);
         
         
-
+;
+    
 
     var adminEmailInfo: EmailInfo = new EmailInfo(adminBasicEmailInfo);
         
         
-
+;
+    
 
     var userEmailEventNameData: UserEmailEventNameData = UserEmailEventNameData.getInstance(this.orderHistory!.getStatus())!;
         
         
-
+;
+    
 
     var adminUserEmailEventHandler: UserEmailEventHandler = AdminUserEmailEventHandlerSingletons.getInstance()!.getInstance(this.abeClientInformation, userEmailEventNameData)!;
         
         
-
+;
+    
 
     var storeAdminUserEmailEventHandler: UserEmailEventHandler = StoreAdminUserEmailEventHandlerSingletons.getInstance()!.getInstance(userEmailEventNameData, this.abeClientInformation, this.storeFrontInterface)!;
         
         
+;
+    
+storeAdminUserEmailEventHandler!.receiveEmailInfo(userEmailEventNameData, storeAdminEmailInfo);
+    
+adminUserEmailEventHandler!.receiveEmailInfo(userEmailEventNameData, adminEmailInfo);
+    
 
-storeAdminUserEmailEventHandler!.receiveEmailInfo(userEmailEventNameData, storeAdminEmailInfo)
-adminUserEmailEventHandler!.receiveEmailInfo(userEmailEventNameData, adminEmailInfo)
-} catch(e: Exception)
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGINGERROR))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.EXCEPTION, this, "emailAdmin", e)
+                                    logUtil!.put(this.commonStrings!.EXCEPTION, this, "emailAdmin", e);
+    
 
                                     }
                                 
@@ -199,7 +221,8 @@ adminUserEmailEventHandler!.receiveEmailInfo(userEmailEventNameData, adminEmailI
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
                                     {
-                                    logUtil!.put("Email User", this, "notifyUser()")
+                                    logUtil!.put("Email User", this, "notifyUser()");
+    
 
                                     }
                                 
@@ -207,40 +230,50 @@ adminUserEmailEventHandler!.receiveEmailInfo(userEmailEventNameData, adminEmailI
     var subject: string = "Order " +this.orderHistory!.getStatus() +" Attempt";
         
         
-
+;
+    
 
     var textBody: string = "Order attempt: " +this.orderHistory!.getId() +" Preprocessing by: " +user.getUserName();
         
         
-
+;
+    
 
     var basicEmailInfo: BasicEmailInfo = StoreEmailInfo(this.storeFrontInterface, subject, textBody) as BasicEmailInfo;
         
         
-
+;
+    
 
     var emailInfo: EmailInfo = new EmailInfo(basicEmailInfo);
         
         
-
+;
+    
 
     var userEmailEventNameData: UserEmailEventNameData = UserEmailEventNameData.getInstance(this.orderHistory!.getStatus())!;
         
         
-
+;
+    
 
     var userEmailEventHandler: UserEmailEventHandler = UserEmailEventHandlerSingletons.getInstance()!.getInstance(this.abeClientInformation, userEmailEventNameData, this.user)!;
         
         
+;
+    
+userEmailEventHandler!.receiveEmailInfo(userEmailEventNameData, emailInfo);
+    
 
-userEmailEventHandler!.receiveEmailInfo(userEmailEventNameData, emailInfo)
-} catch(e: Exception)
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGINGERROR))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.EXCEPTION, this, "notifyUser", e)
+                                    logUtil!.put(this.commonStrings!.EXCEPTION, this, "notifyUser", e);
+    
 
                                     }
                                 

@@ -66,7 +66,7 @@ export class BaseImageAnimationFactory
 
     public readonly animationBehaviorFactory: AnimationBehaviorFactory
 
-    private readonly sequenceArray: IntArray
+    private readonly sequenceArray: number[]
 
     readonly animationFactoryInitializationVisitor: AnimationFactoryInitializationVisitor
 
@@ -88,11 +88,13 @@ public constructor (image: Image, width: number, height: number, dx: number, dy:
 
                             //For kotlin this is before the body of the constructor.
                     
-this.animationFactoryInitializationVisitor!.dx= dx
-this.animationFactoryInitializationVisitor!.dy= dy
+this.animationFactoryInitializationVisitor!.dx= dx;
+    
+this.animationFactoryInitializationVisitor!.dy= dy;
+    
 }
 
-public constructor (image: Image, sequenceArray: IntArray, width: number, height: number, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory)                        
+public constructor (image: Image, sequenceArray: number[], width: number, height: number, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory)                        
 
                             : this(image, sequenceArray, width, height, animationBehaviorFactory){
 
@@ -108,8 +110,10 @@ public constructor (image: Image, sequenceArray: IntArray, width: number, height
 
                             //For kotlin this is before the body of the constructor.
                     
-this.animationFactoryInitializationVisitor!.dx= dx
-this.animationFactoryInitializationVisitor!.dy= dy
+this.animationFactoryInitializationVisitor!.dx= dx;
+    
+this.animationFactoryInitializationVisitor!.dy= dy;
+    
 }
 
 public constructor (image: Image, width: number, height: number, animationBehaviorFactory: AnimationBehaviorFactory)                        
@@ -127,7 +131,7 @@ public constructor (image: Image, width: number, height: number, animationBehavi
                     
 }
 
-public constructor (image: Image, sequenceArray: IntArray, width: number, height: number, animationBehaviorFactory: AnimationBehaviorFactory){
+public constructor (image: Image, sequenceArray: number[], width: number, height: number, animationBehaviorFactory: AnimationBehaviorFactory){
 
             super();
                 //var image = image
@@ -135,12 +139,18 @@ public constructor (image: Image, sequenceArray: IntArray, width: number, height
     //var width = width
     //var height = height
     //var animationBehaviorFactory = animationBehaviorFactory
-this.animationFactoryInitializationVisitor= AnimationFactoryInitializationVisitor()
-this.image= image
-this.animationFactoryInitializationVisitor!.width= width
-this.animationFactoryInitializationVisitor!.height= height
-this.animationBehaviorFactory= animationBehaviorFactory
-this.sequenceArray= sequenceArray
+this.animationFactoryInitializationVisitor= AnimationFactoryInitializationVisitor();
+    
+this.image= image;
+    
+this.animationFactoryInitializationVisitor!.width= width;
+    
+this.animationFactoryInitializationVisitor!.height= height;
+    
+this.animationBehaviorFactory= animationBehaviorFactory;
+    
+this.sequenceArray= sequenceArray;
+    
 }
 
 
@@ -153,6 +163,8 @@ this.sequenceArray= sequenceArray
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return NullAnimationFactory.getFactoryInstance()!.getInstance(instanceId);
+
+                        ;
     
 }
 
@@ -167,7 +179,7 @@ this.sequenceArray= sequenceArray
 }
 
 
-    public getSequenceArray(): IntArray{
+    public getSequenceArray(): number[]{
 
 
 
@@ -182,40 +194,53 @@ this.sequenceArray= sequenceArray
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
         
         
-
+;
+    
 
     var commonLabels: CommonLabels = CommonLabels.getInstance()!;
         
         
-
+;
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(super.toString())
-stringBuffer!.append(commonLabels!.HEIGHT_LABEL)
-stringBuffer!.appendint(image.getHeight())
-stringBuffer!.append(commonSeps!.SPACE)
-stringBuffer!.append(this.animationFactoryInitializationVisitor!.toString())
+;
+    
+stringBuffer!.append(super.toString());
+    
+stringBuffer!.append(commonLabels!.HEIGHT_LABEL);
+    
+stringBuffer!.appendint(image.getHeight());
+    
+stringBuffer!.append(commonSeps!.SPACE);
+    
+stringBuffer!.append(this.animationFactoryInitializationVisitor!.toString());
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 
 
     public setInitialScale(scaleProperties: ScaleProperties){
     //var scaleProperties = scaleProperties
-this.scaleProperties= scaleProperties
+this.scaleProperties= scaleProperties;
+    
 
                         if(this.scaleProperties!.shouldScale)
                         
                                     {
-                                    this.scaleProperties!.scaleWidth= (this.animationFactoryInitializationVisitor!.width *this.scaleProperties!.scaleX).toInt()
-this.scaleProperties!.scaleHeight= (this.animationFactoryInitializationVisitor!.height *this.scaleProperties!.scaleY).toInt()
+                                    this.scaleProperties!.scaleWidth= (this.animationFactoryInitializationVisitor!.width *this.scaleProperties!.scaleX).toInt();
+    
+this.scaleProperties!.scaleHeight= (this.animationFactoryInitializationVisitor!.height *this.scaleProperties!.scaleY).toInt();
+    
 
                                     }
                                 

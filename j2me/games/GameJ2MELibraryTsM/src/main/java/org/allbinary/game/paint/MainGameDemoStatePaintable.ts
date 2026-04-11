@@ -36,15 +36,19 @@ public constructor (ownershipPaintableInterface: Paintable, menuPaintableInterfa
             super();
             var ownershipPaintableInterface = ownershipPaintableInterface
 var menuPaintableInterface = menuPaintableInterface
-this.ownershipPaintableInterface= ownershipPaintableInterface
-this.menuPaintableInterface= menuPaintableInterface
+this.ownershipPaintableInterface= ownershipPaintableInterface;
+    
+this.menuPaintableInterface= menuPaintableInterface;
+    
 }
 
 
     public paint(graphics: Graphics){
 var graphics = graphics
-this.menuPaintableInterface!.paint(graphics)
-this.ownershipPaintableInterface!.paint(graphics)
+this.menuPaintableInterface!.paint(graphics);
+    
+this.ownershipPaintableInterface!.paint(graphics);
+    
 }
 
 

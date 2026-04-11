@@ -41,7 +41,8 @@ public constructor (allbinaryLayerFactoryInterface: AllBinaryLayerFactoryInterfa
             super();
             var allbinaryLayerFactoryInterface = allbinaryLayerFactoryInterface
 var total = total
-super.init(allbinaryLayerFactoryInterface, total)
+super.init(allbinaryLayerFactoryInterface, total);
+    
 }
 
 
@@ -50,21 +51,27 @@ super.init(allbinaryLayerFactoryInterface, total)
     public visit(sourceLayerInterface: AllBinaryLayer){
 var sourceLayerInterface = sourceLayerInterface
 
-    var lifeLayer: LifeLayer = this.getNextInstance() as LifeLayer;
-        
-        
+    var lifeLayer: LifeLayer = this.getNextInstance();
 
+                         as LifeLayer;
+        
+        
+;
+    
 
     var lifeInterfaceCompositeInterface: LifeInterfaceCompositeInterface = sourceLayerInterface as LifeInterfaceCompositeInterface;
         
         
-
+;
+    
 
     var lifeInterface: Life = lifeInterfaceCompositeInterface!.getLifeInterface()!;
         
         
-
-lifeLayer!.visit(lifeInterface)
+;
+    
+lifeLayer!.visit(lifeInterface);
+    
 }
 
 

@@ -75,26 +75,34 @@ export class ToolFactory
 var tool = tool
 
         try {
-            StatusFactory.getInstance()!.setStatus(SELECTED_LABEL +tool)
-this.tool= tool
-} catch(e: Exception)
+            StatusFactory.getInstance()!.setStatus(SELECTED_LABEL +tool);
+    
+this.tool= tool;
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "setSelectionTool", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "setSelectionTool", e);
+    
 }
 
 }
 
 
     public getSelectedToolFactory(): GraphicsItemInterfaceFactoryInterface{
-StatusFactory.getInstance()!.setStatus("Tool In Use: " +tool)
+StatusFactory.getInstance()!.setStatus("Tool In Use: " +tool);
+    
 
                         if(tool != 
                                     null
                                 )
                         
                                     {
-                                    this.selectedTool= GraphicItemFactory.getInstance()!.getInstance(tool)
-logUtil!.put("New Tool: " +this.selectedTool, this, "getSelectedToolFactory")
+                                    this.selectedTool= GraphicItemFactory.getInstance()!.getInstance(tool);
+    
+logUtil!.put("New Tool: " +this.selectedTool, this, "getSelectedToolFactory");
+    
 
 
 

@@ -45,26 +45,39 @@ var z = z
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
     var positionStrings: PositionStrings = PositionStrings.getInstance()!;
         
         
-
-stringBuffer!.append(POINT_LABEL)
-stringBuffer!.append(positionStrings!.X_LABEL)
-stringBuffer!.appendint(x)
-stringBuffer!.append(CommonSeps.getInstance()!.SPACE)
-stringBuffer!.append(positionStrings!.Y_LABEL)
-stringBuffer!.appendint(y)
-stringBuffer!.append(CommonSeps.getInstance()!.SPACE)
-stringBuffer!.append(positionStrings!.Z_LABEL)
-stringBuffer!.appendint(z)
+;
+    
+stringBuffer!.append(POINT_LABEL);
+    
+stringBuffer!.append(positionStrings!.X_LABEL);
+    
+stringBuffer!.appendint(x);
+    
+stringBuffer!.append(CommonSeps.getInstance()!.SPACE);
+    
+stringBuffer!.append(positionStrings!.Y_LABEL);
+    
+stringBuffer!.appendint(y);
+    
+stringBuffer!.append(CommonSeps.getInstance()!.SPACE);
+    
+stringBuffer!.append(positionStrings!.Z_LABEL);
+    
+stringBuffer!.appendint(z);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 
@@ -78,9 +91,12 @@ public constructor (point: GPoint){
 
             super();
             var point = point
-this.x= point.getX()
-this.y= point.getY()
-this.z= point.getZ()
+this.x= point.getX();
+    
+this.y= point.getY();
+    
+this.z= point.getZ();
+    
 }
 
 public constructor (x: number, y: number){
@@ -88,9 +104,12 @@ public constructor (x: number, y: number){
             super();
             var x = x
 var y = y
-this.x= x
-this.y= y
-this.z= 3
+this.x= x;
+    
+this.y= y;
+    
+this.z= 3;
+    
 }
 
 public constructor (x: number, y: number, z: number){
@@ -99,9 +118,12 @@ public constructor (x: number, y: number, z: number){
             var x = x
 var y = y
 var z = z
-this.x= x
-this.y= y
-this.z= z
+this.x= x;
+    
+this.y= y;
+    
+this.z= z;
+    
 }
 
 
@@ -171,6 +193,8 @@ this.z= z
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return toStringStatic(this.getX(), this.getY(), this.getZ());
+
+                        ;
     
 }
 

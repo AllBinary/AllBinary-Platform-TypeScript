@@ -55,9 +55,12 @@ public constructor (source: any = {}, id: number){
             super();
             var source = source
 var id = id
-this.source= source
-this.id= id
-index= TouchMotionGestureFactory.getInstance()!.LAST_MOTION.getId()
+this.source= source;
+    
+this.id= id;
+    
+index= TouchMotionGestureFactory.getInstance()!.LAST_MOTION.getId();
+    
 }
 
 
@@ -66,12 +69,14 @@ index= TouchMotionGestureFactory.getInstance()!.LAST_MOTION.getId()
     var inputFactory: InputFactory = InputFactory.getInstance()!;
         
         
-
+;
+    
 
     var input: Input = inputFactory!.getInstance(index++)!;
         
         
-
+;
+    
 
                         if(input == inputFactory!.NO_INPUT)
                         

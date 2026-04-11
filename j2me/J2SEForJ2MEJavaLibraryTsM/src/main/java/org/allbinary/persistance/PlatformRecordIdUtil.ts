@@ -60,6 +60,8 @@ export class PlatformRecordIdUtil
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return StringMaker().
                             append(abeClientInformation!.toShortString())!.append(CommonSeps.getInstance()!.UNDERSCORE)!.append(PLATFORM_SHORT_NAME)!.append(baseRecordId)!.toString();
+
+                        ;
     
 }
 

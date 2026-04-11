@@ -55,7 +55,8 @@ var anyType = anyType
     var value: string = anyType as String;
         
         
-
+;
+    
 
                         if(value.length < 2)
                         
@@ -64,7 +65,8 @@ var anyType = anyType
     var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
         
         
-
+;
+    
 
                         if(stringValidationUtil!.isNumber(value))
                         
@@ -81,15 +83,20 @@ var anyType = anyType
                         else {
                             
         try {
-            TextNotificationUtil.getInstance()!.fireError("Numbers Only")
-} catch(e: Exception)
+            TextNotificationUtil.getInstance()!.fireError("Numbers Only");
+    
+
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.VISIT, e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.VISIT, e);
+    
 }
 
 

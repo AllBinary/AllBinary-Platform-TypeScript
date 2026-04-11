@@ -46,12 +46,15 @@ var map = map
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 
@@ -61,7 +64,8 @@ public constructor (serviceReference: ServiceReference){
 
             super();
             var serviceReference = serviceReference
-this.serviceReference= serviceReference
+this.serviceReference= serviceReference;
+    
 }
 
 
@@ -114,6 +118,8 @@ var key = key
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.serviceReference!.getProperty(key as String);
+
+                        ;
     
 }
 
@@ -155,7 +161,8 @@ var m = m
     var keyStringArray: string[] = serviceReference!.getPropertyKeys()!;
         
         
-
+;
+    
 
 
 
@@ -165,7 +172,7 @@ var m = m
 }
 
 
-    public values(): Collection<Any>{
+    public values(): Collection<any>{
 
 
 

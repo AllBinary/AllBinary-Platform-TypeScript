@@ -93,23 +93,34 @@ public constructor (inputProcessorArray: GameInputProcessor[]){
 
             super();
             var inputProcessorArray = inputProcessorArray
-this.inputProcessorArray= inputProcessorArray
+this.inputProcessorArray= inputProcessorArray;
+    
 
         try {
-            this.leftGameKeyEvent= GameKeyEventFactory.getInstance()!.getInstance(this, gameKeyFactory!.LEFT)
-this.rightGameKeyEvent= GameKeyEventFactory.getInstance()!.getInstance(this, gameKeyFactory!.RIGHT)
-this.upGameKeyEvent= GameKeyEventFactory.getInstance()!.getInstance(this, gameKeyFactory!.UP)
-this.downGameKeyEvent= GameKeyEventFactory.getInstance()!.getInstance(this, gameKeyFactory!.DOWN)
-this.leftTriggerGameKeyEvent= GameKeyEventFactory.getInstance()!.getInstance(this, gameKeyFactory!.KEY_NUM0)
-this.rightTriggerGameKeyEvent= GameKeyEventFactory.getInstance()!.getInstance(this, gameKeyFactory!.KEY_NUM5)
-} catch(e: Exception)
+            this.leftGameKeyEvent= GameKeyEventFactory.getInstance()!.getInstance(this, gameKeyFactory!.LEFT);
+    
+this.rightGameKeyEvent= GameKeyEventFactory.getInstance()!.getInstance(this, gameKeyFactory!.RIGHT);
+    
+this.upGameKeyEvent= GameKeyEventFactory.getInstance()!.getInstance(this, gameKeyFactory!.UP);
+    
+this.downGameKeyEvent= GameKeyEventFactory.getInstance()!.getInstance(this, gameKeyFactory!.DOWN);
+    
+this.leftTriggerGameKeyEvent= GameKeyEventFactory.getInstance()!.getInstance(this, gameKeyFactory!.KEY_NUM0);
+    
+this.rightTriggerGameKeyEvent= GameKeyEventFactory.getInstance()!.getInstance(this, gameKeyFactory!.KEY_NUM5);
+    
+
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e);
+    
 }
 
 }
@@ -122,33 +133,40 @@ var analogLocationInput = analogLocationInput
         try {
             
     var customGPoint: CustomGPoint
-
-customGPoint= analogLocationInput!.getCustomGPoint()
+;
+    
+customGPoint= analogLocationInput!.getCustomGPoint();
+    
 
     var x: number = customGPoint!.getX()!;
         
         
-
+;
+    
 
     var y: number = customGPoint!.getY()!;
         
         
-
+;
+    
 
     var leftTrigger: number = analogLocationInput!.getLeftTrigger()!;
         
         
-
+;
+    
 
     var rightTrigger: number = analogLocationInput!.getRightTrigger()!;
         
         
-
+;
+    
 
                         if(x < 0)
                         
                                     {
-                                    inputProcessorArray[this.leftGameKeyEvent!.getKey()]!.process(allbinaryLayerManager, this.leftGameKeyEvent, x)
+                                    inputProcessorArray[this.leftGameKeyEvent!.getKey()]!.process(allbinaryLayerManager, this.leftGameKeyEvent, x);
+    
 
                                     }
                                 
@@ -156,7 +174,8 @@ customGPoint= analogLocationInput!.getCustomGPoint()
                         if(x > 0)
                         
                                     {
-                                    inputProcessorArray[this.rightGameKeyEvent!.getKey()]!.process(allbinaryLayerManager, this.rightGameKeyEvent, x)
+                                    inputProcessorArray[this.rightGameKeyEvent!.getKey()]!.process(allbinaryLayerManager, this.rightGameKeyEvent, x);
+    
 
                                     }
                                 
@@ -164,7 +183,8 @@ customGPoint= analogLocationInput!.getCustomGPoint()
                         if(y < 0)
                         
                                     {
-                                    inputProcessorArray[this.downGameKeyEvent!.getKey()]!.process(allbinaryLayerManager, this.downGameKeyEvent, y)
+                                    inputProcessorArray[this.downGameKeyEvent!.getKey()]!.process(allbinaryLayerManager, this.downGameKeyEvent, y);
+    
 
                                     }
                                 
@@ -172,7 +192,8 @@ customGPoint= analogLocationInput!.getCustomGPoint()
                         if(y > 0)
                         
                                     {
-                                    inputProcessorArray[this.upGameKeyEvent!.getKey()]!.process(allbinaryLayerManager, this.upGameKeyEvent, y)
+                                    inputProcessorArray[this.upGameKeyEvent!.getKey()]!.process(allbinaryLayerManager, this.upGameKeyEvent, y);
+    
 
                                     }
                                 
@@ -180,7 +201,8 @@ customGPoint= analogLocationInput!.getCustomGPoint()
                         if(leftTrigger > 0)
                         
                                     {
-                                    inputProcessorArray[this.leftTriggerGameKeyEvent!.getKey()]!.process(allbinaryLayerManager, this.leftTriggerGameKeyEvent, leftTrigger)
+                                    inputProcessorArray[this.leftTriggerGameKeyEvent!.getKey()]!.process(allbinaryLayerManager, this.leftTriggerGameKeyEvent, leftTrigger);
+    
 
                                     }
                                 
@@ -188,18 +210,23 @@ customGPoint= analogLocationInput!.getCustomGPoint()
                         if(rightTrigger > 0)
                         
                                     {
-                                    inputProcessorArray[this.rightTriggerGameKeyEvent!.getKey()]!.process(allbinaryLayerManager, this.rightTriggerGameKeyEvent, rightTrigger)
+                                    inputProcessorArray[this.rightTriggerGameKeyEvent!.getKey()]!.process(allbinaryLayerManager, this.rightTriggerGameKeyEvent, rightTrigger);
+    
 
                                     }
                                 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put("Unable to process analog input", this, commonStrings!.PROCESS, e)
+;
+    
+logUtil!.put("Unable to process analog input", this, commonStrings!.PROCESS, e);
+    
 }
 
 }

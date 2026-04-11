@@ -18,7 +18,10 @@
 
 
 
-import { Hashtable } from "../../../../../java/util/Hashtable.js";
+            import Hashtable from "@ohos.util.HashMap";
+        
+
+//import { Hashtable } from "../../../../../java/util/Hashtable.js";
 
     
 import { Canvas } from "../../../../../javax/microedition/lcdui/Canvas.js";
@@ -78,7 +81,7 @@ export class BasePatrolAI extends BasicAI {
     keyDirection: number = Canvas.RIGHT;
         
         
-public constructor (hashtable: Hashtable<Any, Any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput)                        
+public constructor (hashtable: Hashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput)                        
 
                             : super(ownerLayerInterface, gameInput){
 
@@ -90,29 +93,40 @@ var gameInput = gameInput
 
                             //For kotlin this is before the body of the constructor.
                     
-this.maxDistance= hashtable.get(BasePatrolAI.MAX_DISTANCE) as Integer
-this.currentDistance= maxDistance!.toInt()
+this.maxDistance= hashtable.get(BasePatrolAI.MAX_DISTANCE);
+
+                         as Integer;
+    
+this.currentDistance= maxDistance!.toInt();
+    
 }
 
 
     update(){
-this.updateTotalDistance()
-this.changeDirectionIfReachedPacingAreaMax()
+this.updateTotalDistance();
+    
+this.changeDirectionIfReachedPacingAreaMax();
+    
 }
 
 
     updateTotalDistance(){
 
-    var velocityInterfaceCompositeInterface: VelocityInterfaceCompositeInterface = this.getOwnerLayerInterface() as VelocityInterfaceCompositeInterface;
-        
-        
+    var velocityInterfaceCompositeInterface: VelocityInterfaceCompositeInterface = this.getOwnerLayerInterface();
 
+                         as VelocityInterfaceCompositeInterface;
+        
+        
+;
+    
 
     var velocityProperties: BasicVelocityProperties = velocityInterfaceCompositeInterface!.getVelocityProperties()!;
         
         
-
-xTotalDistance += velocityProperties!.getVelocityXBasicDecimalP()!.getScaled()
+;
+    
+xTotalDistance += velocityProperties!.getVelocityXBasicDecimalP()!.getScaled();
+    
 }
 
 
@@ -121,17 +135,20 @@ xTotalDistance += velocityProperties!.getVelocityXBasicDecimalP()!.getScaled()
     var mathUtil: MathUtil = MathUtil.getInstance()!;
         
         
-
+;
+    
 
     var totalDistance: number = mathUtil!.abs(xTotalDistance)!;
         
         
-
+;
+    
 
                         if(totalDistance > this.currentDistance)
                         
                                     {
-                                    this.nextDirection()
+                                    this.nextDirection();
+    
 
                                     }
                                 
@@ -143,9 +160,12 @@ xTotalDistance += velocityProperties!.getVelocityXBasicDecimalP()!.getScaled()
                         if(this.lastKeyDirection == Canvas.LEFT)
                         
                                     {
-                                    keyDirection= Canvas.RIGHT
-this.lastKeyDirection= keyDirection
-xTotalDistance= 0
+                                    keyDirection= Canvas.RIGHT;
+    
+this.lastKeyDirection= keyDirection;
+    
+xTotalDistance= 0;
+    
 
                                     }
                                 
@@ -153,9 +173,12 @@ xTotalDistance= 0
                         if(this.lastKeyDirection == Canvas.RIGHT)
                         
                                     {
-                                    keyDirection= Canvas.LEFT
-this.lastKeyDirection= keyDirection
-xTotalDistance= 0
+                                    keyDirection= Canvas.LEFT;
+    
+this.lastKeyDirection= keyDirection;
+    
+xTotalDistance= 0;
+    
 
                                     }
                                 

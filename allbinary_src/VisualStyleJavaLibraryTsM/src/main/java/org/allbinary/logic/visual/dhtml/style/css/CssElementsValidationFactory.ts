@@ -18,10 +18,13 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { HashMap } from "../../../../../../../java/util/HashMap.js";
 
     
-import { Vector } from "../../../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../../../java/util/Vector.js";
 
     
 import { ValidationInterface } from "../../../../../../../org/allbinary/logic/control/validate/ValidationInterface.js";
@@ -44,18 +47,22 @@ export class CssElementsValidationFactory
     var styles: Vector = new Vector();
         
         
-
+;
+    
 
     var size: number = cssElementStyleNodeList!.length!;
         
         
-
+;
+    
 
     var cssElementStyleNode: Node
-
+;
+    
 
     var cssValidationInterface: ValidationInterface
-
+;
+    
 
 
 
@@ -66,9 +73,16 @@ export class CssElementsValidationFactory
         
 index < size; index++)
         {
-cssElementStyleNode= cssElementStyleNodeList!.get(index) as Node
-cssValidationInterface= CssElementValidationFactory.getInstance(cssElementStyleNode) as ValidationInterface
-styles.add(cssValidationInterface)
+cssElementStyleNode= cssElementStyleNodeList!.get(index);
+
+                         as Node;
+    
+cssValidationInterface= CssElementValidationFactory.getInstance(cssElementStyleNode);
+
+                         as ValidationInterface;
+    
+styles.add(cssValidationInterface);
+    
 }
 
 
@@ -80,13 +94,14 @@ styles.add(cssValidationInterface)
 }
 
 
-    public static getInstance(hashMap: HashMap<Any, Any>): Vector{
+    public static getInstance(hashMap: HashMap<any, any>): Vector{
     //var hashMap = hashMap
 
     var styles: Vector = new Vector();
         
         
-
+;
+    
 
 
 

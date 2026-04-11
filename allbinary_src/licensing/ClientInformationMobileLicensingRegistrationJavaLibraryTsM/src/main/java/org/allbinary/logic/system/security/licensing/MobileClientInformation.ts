@@ -18,7 +18,10 @@
 
 
 
-import { Hashtable } from "../../../../../../java/util/Hashtable.js";
+            import Hashtable from "@ohos.util.HashMap";
+        
+
+//import { Hashtable } from "../../../../../../java/util/Hashtable.js";
 
     
 import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
@@ -65,19 +68,22 @@ public constructor (name: string, version: string, specialName: string, shortNam
     var string: string = this.getSpecialName()!;
         
         
-
+;
+    
 
     var number: string = string.substring(string.length -1)!;
         
         
-
+;
+    
 
                         if(Integer.getInteger(number) == 
                                     null
                                 )
                         
                                     {
-                                    this.setHardSale(false)
+                                    this.setHardSale(false);
+    
 
                                     }
                                 
@@ -85,35 +91,41 @@ public constructor (name: string, version: string, specialName: string, shortNam
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
+;
+    
 
                         if(this.isHardSale())
                         
                                     {
-                                    logUtil!.put("Use Hard Coded Selling", this, commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put("Use Hard Coded Selling", this, commonStrings!.CONSTRUCTOR);
+    
 
                                     }
                                 
                         else {
-                            logUtil!.put("Don't Use Hard Coded Selling", this, commonStrings!.CONSTRUCTOR)
+                            logUtil!.put("Don't Use Hard Coded Selling", this, commonStrings!.CONSTRUCTOR);
+    
 
                         }
                             
 }
 
 
-    public toHashtable(): Hashtable<Any, Any>{
+    public toHashtable(): Hashtable<any, any>{
 
-    var hashtable: Hashtable<Any, Any> = super.toHashtable()!;
+    var hashtable: Hashtable<any, any> = super.toHashtable()!;
         
         
-
+;
+    
 
     var registrationConfiguration: RegistrationConfiguration = RegistrationConfiguration.getInstance()!;
         
         
-
-hashtable.put(registrationConfiguration!.NAME, registrationConfiguration!.getRegistrationCode())
+;
+    
+hashtable.put(registrationConfiguration!.NAME, registrationConfiguration!.getRegistrationCode());
+    
 
 
 

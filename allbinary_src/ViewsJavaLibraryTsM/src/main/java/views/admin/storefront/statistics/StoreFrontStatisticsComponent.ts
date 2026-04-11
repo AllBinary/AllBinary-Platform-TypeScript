@@ -63,13 +63,18 @@ public constructor (transformInfoInterface: TransformInfoInterface)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.newStoreFrontInterface= StoreFrontFactory.getInstance(transformInfoInterface!.getStoreName()) as StoreFrontInterface
-this.domNodeInterface= RealTimeStoreFrontStatisticsView(RealTimeStoreFrontStatistics(this.newStoreFrontInterface), this.getWeblisketSession()!.getRole())
+this.newStoreFrontInterface= StoreFrontFactory.getInstance(transformInfoInterface!.getStoreName());
+
+                         as StoreFrontInterface;
+    
+this.domNodeInterface= RealTimeStoreFrontStatisticsView(RealTimeStoreFrontStatistics(this.newStoreFrontInterface), this.getWeblisketSession()!.getRole());
+    
 }
 
 
     public addDomNodeInterfaces(){
-this.addDomNodeInterface(this.domNodeInterface as DomNodeInterface)
+this.addDomNodeInterface(this.domNodeInterface as DomNodeInterface);
+    
 }
 
 
@@ -78,20 +83,26 @@ this.addDomNodeInterface(this.domNodeInterface as DomNodeInterface)
     public view(): string{
 
         try {
-            this.addDomNodeInterfaces()
+            this.addDomNodeInterfaces();
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.view();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e);
+    
 
                                     }
                                 

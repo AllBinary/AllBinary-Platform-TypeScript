@@ -48,20 +48,22 @@ export class DatabaseEncoder
          {
         
 
-    public static encode(value: ByteArray): string{
+    public static encode(value: number[]): string{
 var value = value
 
         try {
             
-    var array: ByteArray = value;
+    var array: number[] = value;
         
         
-
+;
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
 
 
@@ -73,12 +75,14 @@ var value = value
 index < array.length; index++)
         {
 stringBuffer!.append(array[index]!.
-                            toString())
+                            toString());
+    
 
                         if(index < array.length -1)
                         
                                     {
-                                    stringBuffer!.append(CommonSeps.getInstance()!.SPACE)
+                                    stringBuffer!.append(CommonSeps.getInstance()!.SPACE);
+    
 
                                     }
                                 
@@ -89,15 +93,21 @@ stringBuffer!.append(array[index]!.
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-PreLogUtil.put(commonStrings!.EXCEPTION, "DatabaseEncoder", "decode", e)
+;
+    
+PreLogUtil.putOE(commonStrings!.EXCEPTION, "DatabaseEncoder", "decode", e);
+    
 
 
 
@@ -109,7 +119,7 @@ PreLogUtil.put(commonStrings!.EXCEPTION, "DatabaseEncoder", "decode", e)
 }
 
 
-    public static decode(value: string): ByteArray{
+    public static decode(value: string): number[]{
 var value = value
 
         try {
@@ -117,25 +127,30 @@ var value = value
     var tokenizer: Tokenizer = new Tokenizer(CommonSeps.getInstance()!.SPACE);
         
         
-
+;
+    
 
     var vector: BasicArrayList = tokenizer.getTokens(value, BasicArrayList())!;
         
         
-
+;
+    
 
     var byteVector: BasicArrayList = new BasicArrayList();
         
         
-
+;
+    
 
     var size: number = vector.size()!;
         
         
-
+;
+    
 
     var byteOfData: string
-
+;
+    
 
 
 
@@ -146,23 +161,28 @@ var value = value
         
 index < size; index++)
         {
-byteOfData= vector.objectArray[index]! as String
-byteVector!.add(byteOfData.toByte())
+byteOfData= vector.objectArray[index]! as String;
+    
+byteVector!.add(byteOfData.toByte());
+    
 }
 
 
-    var decode: ByteArray = ByteArray(byteVector!.size());
+    var decode: number[] = new Array(byteVector!.size());
         
         
-
+;
+    
 
     var decodeIndex: number = 0;
         
         
-
+;
+    
 
     var aByte: Byte
-
+;
+    
 
 
 
@@ -173,9 +193,12 @@ byteVector!.add(byteOfData.toByte())
         
 index < size; index++)
         {
-aByte= byteVector!.objectArray[index]! as Byte
-decode[decodeIndex]= aByte!.toByte()
-decodeIndex++
+aByte= byteVector!.objectArray[index]! as Byte;
+    
+decode[decodeIndex]= aByte!.toByte();
+    
+decodeIndex++;
+    
 }
 
 
@@ -184,14 +207,18 @@ decodeIndex++
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return decode;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-PreLogUtil.put(commonStrings!.EXCEPTION, "DatabaseEncoder", "decode", e)
+;
+    
+PreLogUtil.putSE(commonStrings!.EXCEPTION, "DatabaseEncoder", "decode", e);
+    
 
 
 

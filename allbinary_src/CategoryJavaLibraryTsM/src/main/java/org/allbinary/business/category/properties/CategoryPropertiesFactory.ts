@@ -46,21 +46,24 @@ public constructor (name: string){
 
             super();
             var name = name
-this.categoryPropertiesInterface= CategoryProperties(name) as CategoryPropertiesInterface
+this.categoryPropertiesInterface= CategoryProperties(name) as CategoryPropertiesInterface;
+    
 }
 
 public constructor (node: Node){
 
             super();
             var node = node
-this.categoryPropertiesInterface= CategoryProperties(node) as CategoryPropertiesInterface
+this.categoryPropertiesInterface= CategoryProperties(node) as CategoryPropertiesInterface;
+    
 }
 
-public constructor (categoryPropertiesHashMap: HashMap<Any, Any>){
+public constructor (categoryPropertiesHashMap: HashMap<any, any>){
 
             super();
             var categoryPropertiesHashMap = categoryPropertiesHashMap
-this.categoryPropertiesInterface= CategoryProperties(categoryPropertiesHashMap) as CategoryPropertiesInterface
+this.categoryPropertiesInterface= CategoryProperties(categoryPropertiesHashMap) as CategoryPropertiesInterface;
+    
 }
 
 
@@ -73,18 +76,22 @@ this.categoryPropertiesInterface= CategoryProperties(categoryPropertiesHashMap) 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.categoryPropertiesInterface as CategoryPropertiesInterface;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.ENTITYFACTORYERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e);
+    
 
                                     }
                                 

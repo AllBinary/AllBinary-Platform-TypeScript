@@ -54,36 +54,43 @@ export class BasketHelper extends TagHelper {
 
     private storeFrontInterface: StoreFrontInterface
 
-    private propertiesHashMap: HashMap<Any, Any>
+    private propertiesHashMap: HashMap<any, any>
 
     private pageContext: PageContext
 
     private readonly MAX: number = 200;
         
         
-public constructor (hashMap: HashMap<Any, Any>, pageContext: PageContext){
+public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
             var hashMap = hashMap
 var pageContext = pageContext
-this.propertiesHashMap= hashMap
-this.pageContext= pageContext
+this.propertiesHashMap= hashMap;
+    
+this.pageContext= pageContext;
+    
 
-    var storeName: string = propertiesHashMap!.get(StoreFrontData.getInstance()!.NAME) as String;
+    var storeName: string = propertiesHashMap!.get(StoreFrontData.getInstance()!.NAME);
+
+                         as String;
         
         
-
+;
+    
 
                         if(storeName != 
                                     null
                                 )
                         
                                     {
-                                    this.storeFrontInterface= StoreFrontFactory.getInstance(storeName)
+                                    this.storeFrontInterface= StoreFrontFactory.getInstance(storeName);
+    
 
                                     }
                                 
-this.weblisketSession= WeblisketSession(hashMap, pageContext)
+this.weblisketSession= WeblisketSession(hashMap, pageContext);
+    
 }
 
 
@@ -94,7 +101,8 @@ this.weblisketSession= WeblisketSession(hashMap, pageContext)
     var basket: BasketInterface = this.weblisketSession!.getOrder()!.getBasket()!;
         
         
-
+;
+    
 
                         if(basket.getNumberOfItems()!.toInt() <= 0)
                         
@@ -118,13 +126,16 @@ this.weblisketSession= WeblisketSession(hashMap, pageContext)
 
                         }
                             
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "isBasketEmpty()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "isBasketEmpty()", e);
+    
 
                                     }
                                 

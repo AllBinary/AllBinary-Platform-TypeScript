@@ -97,21 +97,30 @@ var rawRectangle = rawRectangle
 var cellPosition = cellPosition
 var xBorder = xBorder
 var yBorder = yBorder
-this.touchButtonInput= touchButtonInput
-this.animationInterface= animationInterface as Animation
-this.rawRectangle= rawRectangle
-this.cellPosition= cellPosition
-this.xBorder= xBorder
-this.yBorder= yBorder
-this.updateRectangle()
+this.touchButtonInput= touchButtonInput;
+    
+this.animationInterface= animationInterface as Animation;
+    
+this.rawRectangle= rawRectangle;
+    
+this.cellPosition= cellPosition;
+    
+this.xBorder= xBorder;
+    
+this.yBorder= yBorder;
+    
+this.updateRectangle();
+    
 logUtil!.put(StringMaker().
-                            append("Created: ")!.append(this.toString())!.toString(), this, this.commonStrings!.CONSTRUCTOR)
+                            append("Created: ")!.append(this.toString())!.toString(), this, this.commonStrings!.CONSTRUCTOR);
+    
 }
 
 
     public paint(graphics: Graphics){
 var graphics = graphics
-this.animationInterface!.paint(graphics, animationX, animationY)
+this.animationInterface!.paint(graphics, animationX, animationY);
+    
 }
 
 
@@ -122,23 +131,32 @@ this.animationInterface!.paint(graphics, animationX, animationY)
     var x: number = this.rawRectangle!.getWidth() *cellPosition!.getColumn();
         
         
-
+;
+    
 
     var y: number = this.rawRectangle!.getHeight() *cellPosition!.getRow();
         
         
-
-this.rectangle= Rectangle(PointFactory.getInstance()!.getInstance(x +xBorder, y +yBorder), this.rawRectangle!.getWidth(), this.rawRectangle!.getHeight())
+;
+    
+this.rectangle= Rectangle(PointFactory.getInstance()!.getInstance(x +xBorder, y +yBorder), this.rawRectangle!.getWidth(), this.rawRectangle!.getHeight());
+    
 
     var point: GPoint = rectangle.getPoint()!;
         
         
+;
+    
+this.animationX= point.getX();
+    
+this.animationY= point.getY();
+    
 
-this.animationX= point.getX()
-this.animationY= point.getY()
-} catch(e: Exception)
+                //: 
+} catch(e) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, this, "updateRectangle", e)
+logUtil!.put(this.commonStrings!.EXCEPTION, this, "updateRectangle", e);
+    
 }
 
 }
@@ -179,25 +197,37 @@ logUtil!.put(this.commonStrings!.EXCEPTION, this, "updateRectangle", e)
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
     var stringUtil: StringUtil = StringUtil.getInstance()!;
         
         
-
-stringBuffer!.append("TouchButton: ")
-stringBuffer!.append(stringUtil!.toString(this.rectangle))
-stringBuffer!.append(" CellPosition: ")
-stringBuffer!.append(stringUtil!.toString(this.cellPosition))
-stringBuffer!.append(" xBorder: ")
-stringBuffer!.appendint(this.xBorder)
-stringBuffer!.append(" yBorder: ")
-stringBuffer!.appendint(this.yBorder)
+;
+    
+stringBuffer!.append("TouchButton: ");
+    
+stringBuffer!.append(stringUtil!.toString(this.rectangle));
+    
+stringBuffer!.append(" CellPosition: ");
+    
+stringBuffer!.append(stringUtil!.toString(this.cellPosition));
+    
+stringBuffer!.append(" xBorder: ");
+    
+stringBuffer!.appendint(this.xBorder);
+    
+stringBuffer!.append(" yBorder: ");
+    
+stringBuffer!.appendint(this.yBorder);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

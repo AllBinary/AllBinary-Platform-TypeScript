@@ -18,10 +18,13 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { HashMap } from "../../../../../../java/util/HashMap.js";
 
     
-import { Vector } from "../../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../../java/util/Vector.js";
 
     
 import { TableMappingInterface } from "../../../../../../org/allbinary/data/tables/TableMappingInterface.js";
@@ -39,20 +42,26 @@ public constructor (ftpConfigurationInterface: FtpConfigurationInterface){
 
             super();
             var ftpConfigurationInterface = ftpConfigurationInterface
-this.ftpConfigurationInterface= ftpConfigurationInterface
+this.ftpConfigurationInterface= ftpConfigurationInterface;
+    
 }
 
 
-    public toHashMap(): HashMap<Any, Any>{
+    public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
         
         
-
-hashMap!.put(FtpConfigurationData.SERVER, this.ftpConfigurationInterface!.getServer())
-hashMap!.put(FtpConfigurationData.USERNAME, this.ftpConfigurationInterface!.getUserName())
-hashMap!.put(FtpConfigurationData.PASSWORD, this.ftpConfigurationInterface!.getPassword())
-hashMap!.put(FtpConfigurationData.PATH, this.ftpConfigurationInterface!.getPath())
+;
+    
+hashMap!.put(FtpConfigurationData.SERVER, this.ftpConfigurationInterface!.getServer());
+    
+hashMap!.put(FtpConfigurationData.USERNAME, this.ftpConfigurationInterface!.getUserName());
+    
+hashMap!.put(FtpConfigurationData.PASSWORD, this.ftpConfigurationInterface!.getPassword());
+    
+hashMap!.put(FtpConfigurationData.PATH, this.ftpConfigurationInterface!.getPath());
+    
 
 
 
@@ -81,11 +90,16 @@ hashMap!.put(FtpConfigurationData.PATH, this.ftpConfigurationInterface!.getPath(
     var vector: Vector = new Vector();
         
         
-
-vector.add(this.ftpConfigurationInterface!.getServer())
-vector.add(this.ftpConfigurationInterface!.getUserName())
-vector.add(this.ftpConfigurationInterface!.getPassword())
-vector.add(this.ftpConfigurationInterface!.getPath())
+;
+    
+vector.add(this.ftpConfigurationInterface!.getServer());
+    
+vector.add(this.ftpConfigurationInterface!.getUserName());
+    
+vector.add(this.ftpConfigurationInterface!.getPassword());
+    
+vector.add(this.ftpConfigurationInterface!.getPath());
+    
 
 
 

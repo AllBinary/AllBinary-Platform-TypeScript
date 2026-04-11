@@ -96,33 +96,44 @@ public constructor (id: number){
 
             super();
                 //var id = id
-this.motionEventCircularPool= MotionEventCircularPool.getInstance(id)
+this.motionEventCircularPool= MotionEventCircularPool.getInstance(id);
+    
 
     var motionGesturesHandler: BasicEventHandler = new BasicEventHandler();
         
         
-
+;
+    
 
     var movedMotionGesturesHandler: BasicEventHandler = motionGesturesHandler;
         
         
-
+;
+    
 
         try {
-            motionGesturesHandler= BasicMotionGesturesHandler.getInstance()
-movedMotionGesturesHandler= MovedMotionGesturesHandler.getInstance()
-} catch(e: Exception)
+            motionGesturesHandler= BasicMotionGesturesHandler.getInstance();
+    
+movedMotionGesturesHandler= MovedMotionGesturesHandler.getInstance();
+    
+
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e);
+    
 }
 
-this.motionGesturesHandler= motionGesturesHandler as BasicMotionGesturesHandler
-this.movedMotionGesturesHandler= movedMotionGesturesHandler
+this.motionGesturesHandler= motionGesturesHandler as BasicMotionGesturesHandler;
+    
+this.movedMotionGesturesHandler= movedMotionGesturesHandler;
+    
 }
 
 
@@ -132,16 +143,22 @@ this.movedMotionGesturesHandler= movedMotionGesturesHandler
     //var current = current
     //var deviceId = deviceId
     //var button = button
-intermediate= origin
-previous= origin
+intermediate= origin;
+    
+previous= origin;
+    
 
     var event: MotionGestureEvent = this.motionEventCircularPool!.getInstance(TouchMotionGestureFactory.getInstance()!.PRESSED)!;
         
         
-
-event.setPreviousPoint(previous)
-event.setCurrentPoint(current)
-motionGesturesHandler!.fireEvent(event)
+;
+    
+event.setPreviousPoint(previous);
+    
+event.setCurrentPoint(current);
+    
+motionGesturesHandler!.fireEvent(event);
+    
 
 
 
@@ -161,10 +178,14 @@ motionGesturesHandler!.fireEvent(event)
     var event: MotionGestureEvent = this.motionEventCircularPool!.getInstance(TouchMotionGestureFactory.getInstance()!.RELEASED)!;
         
         
-
-event.setPreviousPoint(previous)
-event.setCurrentPoint(current)
-motionGesturesHandler!.fireEvent(event)
+;
+    
+event.setPreviousPoint(previous);
+    
+event.setCurrentPoint(current);
+    
+motionGesturesHandler!.fireEvent(event);
+    
 
 
 
@@ -184,8 +205,10 @@ motionGesturesHandler!.fireEvent(event)
                         if(previous == origin || intermediate == origin)
                         
                                     {
-                                    previous= current
-intermediate= current
+                                    previous= current;
+    
+intermediate= current;
+    
 
 
 
@@ -195,18 +218,26 @@ intermediate= current
 
                                     }
                                 
-line.setP1(previous)
-line.setP2(current)
+line.setP1(previous);
+    
+line.setP2(current);
+    
 
     var minimumMotionGesture: number = MotionGestureConfigurationFactory.getInstance()!.getMinimumMotionGesture()!;
         
         
+;
+    
 
+                        if(j2seMath!.abs(line.getDeltaX();
 
-                        if(j2seMath!.abs(line.getDeltaX().toFloat()) < minimumMotionGesture && j2seMath!.abs(line.getDeltaY().toFloat()) < minimumMotionGesture)
+                        .toFloat()) < minimumMotionGesture && j2seMath!.abs(line.getDeltaY();
+
+                        .toFloat()) < minimumMotionGesture)
                         
                                     {
-                                    intermediate= current
+                                    intermediate= current;
+    
 
 
 
@@ -220,43 +251,56 @@ line.setP2(current)
     var gradient: number = line.getGradient()!;
         
         
+;
+    
 
+    var absGradient: number = j2seMath!.abs(gradient.toFloat());
 
-    var absGradient: number = j2seMath!.abs(gradient.toFloat()).toDouble();
+                        .toDouble();
         
         
-
+;
+    
 
     var conf: MotionGestureConfiguration = MotionGestureConfigurationFactory.getInstance()!;
         
         
-
+;
+    
 
     var touchMotionGestureFactory: TouchMotionGestureFactory = TouchMotionGestureFactory.getInstance()!;
         
         
-
+;
+    
 
     var newMotionGesture: MotionGestureInput = touchMotionGestureFactory!.NO_MOTION;
         
         
-
+;
+    
 
     var diagonalToleranceHigher: number = 12.0;
         
         
-
+;
+    
 
     var diagonalToleranceLower: number = 12.0;
         
         
-
+;
+    
 
                         if(conf.isDiagonalMotionGestureAllowed())
                         
                                     {
-                                    diagonalToleranceHigher= (90 -conf.getDiagonalTolerance()).toDouble()
-diagonalToleranceLower= conf.getDiagonalTolerance().toDouble()
+                                    diagonalToleranceHigher= (90 -conf.getDiagonalTolerance()).toDouble();
+    
+diagonalToleranceLower= conf.getDiagonalTolerance();
+
+                        .toDouble();
+    
 
                                     }
                                 
@@ -268,12 +312,14 @@ diagonalToleranceLower= conf.getDiagonalTolerance().toDouble()
                         if(line.getDeltaY() > 0)
                         
                                     {
-                                    newMotionGesture= touchMotionGestureFactory!.UP
+                                    newMotionGesture= touchMotionGestureFactory!.UP;
+    
 
                                     }
                                 
                         else {
-                            newMotionGesture= touchMotionGestureFactory!.DOWN
+                            newMotionGesture= touchMotionGestureFactory!.DOWN;
+    
 
                         }
                             
@@ -289,12 +335,14 @@ diagonalToleranceLower= conf.getDiagonalTolerance().toDouble()
                         if(line.getDeltaX() > 0)
                         
                                     {
-                                    newMotionGesture= touchMotionGestureFactory!.LEFT
+                                    newMotionGesture= touchMotionGestureFactory!.LEFT;
+    
 
                                     }
                                 
                         else {
-                            newMotionGesture= touchMotionGestureFactory!.RIGHT
+                            newMotionGesture= touchMotionGestureFactory!.RIGHT;
+    
 
                         }
                             
@@ -310,12 +358,14 @@ diagonalToleranceLower= conf.getDiagonalTolerance().toDouble()
                         if(line.getDeltaX() > 0)
                         
                                     {
-                                    newMotionGesture= touchMotionGestureFactory!.DIAGONAL_UP_LEFT
+                                    newMotionGesture= touchMotionGestureFactory!.DIAGONAL_UP_LEFT;
+    
 
                                     }
                                 
                         else {
-                            newMotionGesture= touchMotionGestureFactory!.DIAGONAL_DOWN_RIGHT
+                            newMotionGesture= touchMotionGestureFactory!.DIAGONAL_DOWN_RIGHT;
+    
 
                         }
                             
@@ -327,12 +377,14 @@ diagonalToleranceLower= conf.getDiagonalTolerance().toDouble()
                         if(line.getDeltaX() > 0)
                         
                                     {
-                                    newMotionGesture= touchMotionGestureFactory!.DIAGONAL_DOWN_LEFT
+                                    newMotionGesture= touchMotionGestureFactory!.DIAGONAL_DOWN_LEFT;
+    
 
                                     }
                                 
                         else {
-                            newMotionGesture= touchMotionGestureFactory!.DIAGONAL_UP_RIGHT
+                            newMotionGesture= touchMotionGestureFactory!.DIAGONAL_UP_RIGHT;
+    
 
                         }
                             
@@ -345,16 +397,22 @@ diagonalToleranceLower= conf.getDiagonalTolerance().toDouble()
 
                         }
                             
-previous= current
-intermediate= current
+previous= current;
+    
+intermediate= current;
+    
 
     var event: MotionGestureEvent = this.motionEventCircularPool!.getInstance(newMotionGesture)!;
         
         
-
-event.setPreviousPoint(previous)
-event.setCurrentPoint(current)
-motionGesturesHandler!.fireEvent(event)
+;
+    
+event.setPreviousPoint(previous);
+    
+event.setCurrentPoint(current);
+    
+motionGesturesHandler!.fireEvent(event);
+    
 
 
 
@@ -374,10 +432,14 @@ motionGesturesHandler!.fireEvent(event)
     var event: MotionGestureEvent = this.motionEventCircularPool!.getInstance(TouchMotionGestureFactory.getInstance()!.NO_MOTION)!;
         
         
-
-event.setPreviousPoint(previous)
-event.setCurrentPoint(current)
-movedMotionGesturesHandler!.fireEvent(event)
+;
+    
+event.setPreviousPoint(previous);
+    
+event.setCurrentPoint(current);
+    
+movedMotionGesturesHandler!.fireEvent(event);
+    
 
 
 

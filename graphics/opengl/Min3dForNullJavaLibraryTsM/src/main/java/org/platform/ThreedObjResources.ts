@@ -18,7 +18,10 @@
 
 
 
-import { Hashtable } from "../../java/util/Hashtable.js";
+            import Hashtable from "@ohos.util.HashMap";
+        
+
+//import { Hashtable } from "../../java/util/Hashtable.js";
 
     
 
@@ -41,17 +44,20 @@ export class ThreedObjResources
 }
 
 
-    public readonly hashtable: Hashtable<Any, Any> = new Hashtable<Any, Any>();
+    public readonly hashtable: Hashtable<any, any> = new Hashtable<any, any>();
         
         
 
     public get(resourceName: string): string{
     //var resourceName = resourceName
 
-    var resourceName2: string = this.hashtable.get(resourceName as Object) as String;
-        
-        
+    var resourceName2: string = this.hashtable.get(resourceName as Object);
 
+                         as String;
+        
+        
+;
+    
 
                         if(resourceName2 != 
                                     null

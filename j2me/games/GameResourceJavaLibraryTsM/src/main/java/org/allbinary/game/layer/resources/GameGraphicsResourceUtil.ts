@@ -85,15 +85,20 @@ public constructor (){
             super();
             
         try {
-            this.name= this.getString()
-} catch(e: Exception)
+            this.name= this.getString();
+    
+
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e);
+    
 }
 
 }
@@ -106,22 +111,26 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
     var graphicsFeatureFactory: GraphicsFeatureFactory = GraphicsFeatureFactory.getInstance()!;
         
         
-
+;
+    
 
     var graphicsFeature: GraphicsFeature = graphicsFeatureFactory!.NONE;
         
         
-
+;
+    
 
     var features: Features = Features.getInstance()!;
         
         
-
+;
+    
 
                         if(features.isFeature(graphicsFeatureFactory!.IMAGE_TO_ARRAY_GRAPHICS))
                         
                                     {
-                                    graphicsFeature= graphicsFeatureFactory!.IMAGE_TO_ARRAY_GRAPHICS
+                                    graphicsFeature= graphicsFeatureFactory!.IMAGE_TO_ARRAY_GRAPHICS;
+    
 
                                     }
                                 
@@ -129,7 +138,8 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
                         if(features.isFeature(graphicsFeatureFactory!.SPRITE_FULL_GRAPHICS))
                         
                                     {
-                                    graphicsFeature= graphicsFeatureFactory!.SPRITE_FULL_GRAPHICS
+                                    graphicsFeature= graphicsFeatureFactory!.SPRITE_FULL_GRAPHICS;
+    
 
                                     }
                                 
@@ -137,7 +147,8 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
                         if(features.isFeature(graphicsFeatureFactory!.SPRITE_QUARTER_ROTATION_GRAPHICS))
                         
                                     {
-                                    graphicsFeature= graphicsFeatureFactory!.SPRITE_QUARTER_ROTATION_GRAPHICS
+                                    graphicsFeature= graphicsFeatureFactory!.SPRITE_QUARTER_ROTATION_GRAPHICS;
+    
 
                                     }
                                 
@@ -145,7 +156,8 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
                         if(features.isFeature(graphicsFeatureFactory!.IMAGE_ROTATION_ON_THE_FLY))
                         
                                     {
-                                    graphicsFeature= graphicsFeatureFactory!.IMAGE_ROTATION_ON_THE_FLY
+                                    graphicsFeature= graphicsFeatureFactory!.IMAGE_ROTATION_ON_THE_FLY;
+    
 
                                     }
                                 
@@ -154,6 +166,8 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return getString(graphicsFeature);
+
+                        ;
     
 }
 
@@ -166,18 +180,22 @@ var graphicsFeature = graphicsFeature
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
     var graphicsFeatureFactory: GraphicsFeatureFactory = GraphicsFeatureFactory.getInstance()!;
         
         
-
-stringBuffer!.delete(0, stringBuffer!.length())
+;
+    
+stringBuffer!.delete(0, stringBuffer!.length());
+    
 
     var features: Features = Features.getInstance()!;
         
         
-
+;
+    
 
                         if(features.isFeature(graphicsFeatureFactory!.VECTOR_GRAPHICS))
                         
@@ -200,7 +218,8 @@ stringBuffer!.delete(0, stringBuffer!.length())
                         if(graphicsFeature == graphicsFeatureFactory!.SPRITE_FULL_GRAPHICS)
                         
                                     {
-                                    stringBuffer!.append(SPRITE)
+                                    stringBuffer!.append(SPRITE);
+    
 
                                     }
                                 
@@ -208,8 +227,10 @@ stringBuffer!.delete(0, stringBuffer!.length())
                         if(graphicsFeature == graphicsFeatureFactory!.SPRITE_QUARTER_ROTATION_GRAPHICS)
                         
                                     {
-                                    stringBuffer!.append(QUARTER)
-stringBuffer!.append(SPRITE)
+                                    stringBuffer!.append(QUARTER);
+    
+stringBuffer!.append(SPRITE);
+    
 
                                     }
                                 
@@ -228,7 +249,8 @@ stringBuffer!.append(SPRITE)
                         if(OpenGLFeatureUtil.getInstance()!.isAnyThreed())
                         
                                     {
-                                    stringBuffer!.append(CanvasStrings.getInstance()!.OBJ_MODEL)
+                                    stringBuffer!.append(CanvasStrings.getInstance()!.OBJ_MODEL);
+    
 
                                     }
                                 
@@ -245,6 +267,8 @@ stringBuffer!.append(SPRITE)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

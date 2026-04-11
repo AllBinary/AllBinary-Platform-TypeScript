@@ -43,7 +43,8 @@ export class GameSpeed
     var speedGameConfiguration: GameConfiguration = GameConfigurationCentral.getInstance()!.SPEED;
         
         
-
+;
+    
 
 
 
@@ -58,7 +59,8 @@ export class GameSpeed
     var speedGameConfiguration: GameConfiguration = GameConfigurationCentral.getInstance()!.SPEED;
         
         
-
+;
+    
 
 
 

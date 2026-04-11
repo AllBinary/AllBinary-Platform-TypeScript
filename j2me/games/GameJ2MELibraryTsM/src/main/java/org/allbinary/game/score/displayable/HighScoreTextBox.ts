@@ -117,12 +117,14 @@ public constructor (highScoresFactoryInterface: HighScoresFactoryInterface, high
 
                             //For kotlin this is before the body of the constructor.
                     
-highScoreUtil= HighScoreUtil(highScoresFactoryInterface, highScoresHelper, abeClientInformation, gameInfo, cmdListener, name, highScore)
+highScoreUtil= HighScoreUtil(highScoresFactoryInterface, highScoresHelper, abeClientInformation, gameInfo, cmdListener, name, highScore);
+    
 
     var operatingSystemInterface: GenericOperatingSystem = OperatingSystemFactory.getInstance()!.getOperatingSystemInstance()!;
         
         
-
+;
+    
 
                         if(operatingSystemInterface!.isOverScan())
                         
@@ -131,19 +133,22 @@ highScoreUtil= HighScoreUtil(highScoresFactoryInterface, highScoresHelper, abeCl
     var username: string = InApplicationPurchaseFactory.getInstance()!.getUserName()!;
         
         
-
+;
+    
 
                         if(username != 
                                     null
                                 )
                         
                                     {
-                                    this.getTextFieldItem()!.setString(username)
+                                    this.getTextFieldItem()!.setString(username);
+    
 
                                     }
                                 
                         else {
-                            this.getTextFieldItem()!.setString("NoGamerInfo")
+                            this.getTextFieldItem()!.setString("NoGamerInfo");
+    
 
                         }
                             
@@ -155,32 +160,46 @@ highScoreUtil= HighScoreUtil(highScoresFactoryInterface, highScoresHelper, abeCl
 
     public initCommands(cmdListener: CommandListener){
 var cmdListener = cmdListener
-this.removeAllCommands()
-PostGameCommandFactory.getInstance()!.addCommands(this)
-this.addCommand(HighScoreUtil.SUBMIT_TEXTBOX_COMMAND)
-this.setCommandListener(cmdListener)
+this.removeAllCommands();
+    
+PostGameCommandFactory.getInstance()!.addCommands(this);
+    
+this.addCommand(HighScoreUtil.SUBMIT_TEXTBOX_COMMAND);
+    
+this.setCommandListener(cmdListener);
+    
 }
 
 
     public open(){
-this.virtualKeyboardEventHandler!.open()
-this.paintable= NullPaintable.getInstance()
-super.open()
+this.virtualKeyboardEventHandler!.open();
+    
+this.paintable= NullPaintable.getInstance();
+    
+super.open();
+    
 }
 
 
     public close(){
-this.virtualKeyboardEventHandler!.close()
-this.paintable= this.pleaseWait
-this.repaintBehavior!.onChangeRepaint(this)
-super.close()
-this.removeCommand(HighScoreUtil.SUBMIT_TEXTBOX_COMMAND)
-this.update()
+this.virtualKeyboardEventHandler!.close();
+    
+this.paintable= this.pleaseWait;
+    
+this.repaintBehavior!.onChangeRepaint(this);
+    
+super.close();
+    
+this.removeCommand(HighScoreUtil.SUBMIT_TEXTBOX_COMMAND);
+    
+this.update();
+    
 
                         if(this.submitted)
                         
                                     {
-                                    this.highScoreUtil!.saveHighScore()
+                                    this.highScoreUtil!.saveHighScore();
+    
 
                                     }
                                 
@@ -188,8 +207,10 @@ this.update()
                             
                         }
                             
-this.paintable= NullPaintable.getInstance()
-this.repaintBehavior!.onChangeRepaint(this)
+this.paintable= NullPaintable.getInstance();
+    
+this.repaintBehavior!.onChangeRepaint(this);
+    
 }
 
 
@@ -200,26 +221,33 @@ this.repaintBehavior!.onChangeRepaint(this)
     var name: string = this.getTextFieldItem()!.getString()!;
         
         
-
-this.highScoreUtil!.update(name)
-super.update()
+;
+    
+this.highScoreUtil!.update(name);
+    
+super.update();
+    
 }
 
 
     public paint(graphics: Graphics){
 var graphics = graphics
-super.paint(graphics)
-this.paintable.paint(graphics)
+super.paint(graphics);
+    
+this.paintable.paint(graphics);
+    
 }
 
 
     public saveHighScore(){
-this.highScoreUtil!.saveHighScore()
+this.highScoreUtil!.saveHighScore();
+    
 }
 
 
     public submit(){
-this.highScoreUtil!.submit(this)
+this.highScoreUtil!.submit(this);
+    
 }
 
 

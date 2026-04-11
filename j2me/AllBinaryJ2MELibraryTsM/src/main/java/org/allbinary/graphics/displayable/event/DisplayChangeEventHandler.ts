@@ -59,8 +59,10 @@ private constructor (){
     var displayChangeEventListener: DisplayChangeEventListener = (eventListenerInterface as DisplayChangeEventListener);
         
         
-
-displayChangeEventListener!.onDisplayChangeEvent(eventObject as DisplayChangeEvent)
+;
+    
+displayChangeEventListener!.onDisplayChangeEvent(eventObject as DisplayChangeEvent);
+    
 }
 
 

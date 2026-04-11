@@ -67,10 +67,13 @@ private constructor (){
     public addListener(collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer){
 var collidableDestroyableDamageableLayer = collidableDestroyableDamageableLayer
 
-                        if(!list.contains(collidableDestroyableDamageableLayer))
+                        if(!list.contains(collidableDestroyableDamageableLayer);
+
+                        )
                         
                                     {
-                                    list.add(collidableDestroyableDamageableLayer)
+                                    list.add(collidableDestroyableDamageableLayer);
+    
 
                                     }
                                 
@@ -79,16 +82,20 @@ var collidableDestroyableDamageableLayer = collidableDestroyableDamageableLayer
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public removeAllListeners(){
-this.list.clear()
-super.removeAllListeners()
+this.list.clear();
+    
+super.removeAllListeners();
+    
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public removeListener(eventListenerInterface: EventListenerInterface){
 var eventListenerInterface = eventListenerInterface
-this.list.remove(eventListenerInterface)
-super.removeListener(eventListenerInterface)
+this.list.remove(eventListenerInterface);
+    
+super.removeListener(eventListenerInterface);
+    
 }
 
 
@@ -112,16 +119,22 @@ var eventObject = eventObject
     var collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer = this.list.objectArray[index]! as CollidableDestroyableDamageableLayer;
         
         
+;
+    
+collidableDestroyableDamageableLayer!.onDestroyed(eventObject as DestroyedEvent);
+    
 
-collidableDestroyableDamageableLayer!.onDestroyed(eventObject as DestroyedEvent)
-} catch(e: Exception)
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e);
+    
 }
 
 }
 
-super.fireEvent(eventObject)
+super.fireEvent(eventObject);
+    
 }
 
 
@@ -134,8 +147,10 @@ var eventListenerInterface = eventListenerInterface
     var destroyedEventListenerInterface: DestroyedEventListenerInterface = eventListenerInterface as DestroyedEventListenerInterface;
         
         
-
-destroyedEventListenerInterface!.onDestroyed(eventObject as DestroyedEvent)
+;
+    
+destroyedEventListenerInterface!.onDestroyed(eventObject as DestroyedEvent);
+    
 }
 
 

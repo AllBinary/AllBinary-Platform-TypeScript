@@ -18,7 +18,10 @@
 
 
 
-import { Hashtable } from "../../../java/util/Hashtable.js";
+            import Hashtable from "@ohos.util.HashMap";
+        
+
+//import { Hashtable } from "../../../java/util/Hashtable.js";
 
     
 
@@ -27,7 +30,7 @@ interface LayerInterfaceFactoryInterface {
 
                 //@Throws(Error::class)
             
-    getInstance(hashtable: Hashtable<Any, Any>, x: number, y: number, z: number): AllBinaryLayer
+    getInstance(hashtable: Hashtable<any, any>, x: number, y: number, z: number): AllBinaryLayer
 
 }
                 

@@ -67,21 +67,29 @@ public constructor (transformInfoInterface: TransformInfoInterface)
                             //For kotlin this is before the body of the constructor.
                     
 
-    var httpTransformInfoInterface: TransformInfoHttpInterface = this.getTransformInfoInterface() as TransformInfoHttpInterface;
-        
-        
+    var httpTransformInfoInterface: TransformInfoHttpInterface = this.getTransformInfoInterface();
 
-
-    var role: string = httpTransformInfoInterface!.getPropertiesHashMap()!.get(UserRoleData.NAME.toString()) as String;
+                         as TransformInfoHttpInterface;
         
         
+;
+    
 
+    var role: string = httpTransformInfoInterface!.getPropertiesHashMap()!.get(UserRoleData.NAME.toString());
+
+                         as String;
+        
+        
+;
+    
 
     var userRole: UserRole = UserRoleB.getRole(role)!;
         
         
-
-this.userVector= UserEntityFactory.getInstance()!.getUsersWithRole(userRole)
+;
+    
+this.userVector= UserEntityFactory.getInstance()!.getUsersWithRole(userRole);
+    
 }
 
 
@@ -111,13 +119,16 @@ this.userVector= UserEntityFactory.getInstance()!.getUsersWithRole(userRole)
 
                         }
                             
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("Failed to validate", this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put("Failed to validate", this, commonStrings!.IS_VALID, e);
+    
 
                                     }
                                 
@@ -141,13 +152,16 @@ this.userVector= UserEntityFactory.getInstance()!.getUsersWithRole(userRole)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return "No Users";
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e)
+                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e);
+    
 
                                     }
                                 

@@ -51,8 +51,10 @@ var basicColor = basicColor
 
                             //For kotlin this is before the body of the constructor.
                     
-this.xAdjustment= xAdjustment
-this.yAdjustment= yAdjustment
+this.xAdjustment= xAdjustment;
+    
+this.yAdjustment= yAdjustment;
+    
 }
 
 public constructor (width: number, height: number, innerWidth: number, basicColor: BasicColor)                        
@@ -76,15 +78,20 @@ var basicColor = basicColor
     var widthPortion: number = (((innerWidth /3) *10) /7);
         
         
-
-this.xAdjustment=  -((width shr 1) -widthPortion)
-this.yAdjustment= this.xAdjustment
+;
+    
+this.xAdjustment=  -((width shr 1) -widthPortion);
+    
+this.yAdjustment= this.xAdjustment;
+    
 
                                     }
                                 
                         else {
-                            this.xAdjustment=  -((width shr 1) -innerWidth)
-this.yAdjustment= this.xAdjustment
+                            this.xAdjustment=  -((width shr 1) -innerWidth);
+    
+this.yAdjustment= this.xAdjustment;
+    
 
                         }
                             
@@ -95,8 +102,10 @@ this.yAdjustment= this.xAdjustment
 var graphics = graphics
 var x = x
 var y = y
-this.basicSetColorUtil!.setBasicColorP(graphics, this.getBasicColorP(), this.getColor())
-graphics.drawArc(x +this.xAdjustment, y +this.yAdjustment, width, height, 0, TOTAL_ANGLE)
+this.basicSetColorUtil!.setBasicColorP(graphics, this.getBasicColorP(), this.getColor());
+    
+graphics.drawArc(x +this.xAdjustment, y +this.yAdjustment, width, height, 0, TOTAL_ANGLE);
+    
 }
 
 

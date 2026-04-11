@@ -98,23 +98,29 @@ private constructor (){
                         if(FileFactory.getInstance()!.isFile(FILE))
                         
                                     {
-                                    this.read()
+                                    this.read();
+    
 
                                     }
                                 
                         else {
-                            this.write()
+                            this.write();
+    
 
                         }
                             
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e);
+    
 }
 
 }
@@ -127,20 +133,25 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
     var fileInputStreamFactory: FileStreamFactory = FileStreamFactory.getInstance()!;
         
         
-
+;
+    
 
     var fileInputStream: InputStream = fileInputStreamFactory!.getFileInputStreamInstance(StringUtil.getInstance()!.EMPTY_STRING, FILE)!;
         
         
-
+;
+    
 
     var dataInputStream: DataInputStream = new DataInputStream(fileInputStream);
         
         
-
-this.setRegistrationCode(dataInputStream!.readUTF())
+;
+    
+this.setRegistrationCode(dataInputStream!.readUTF());
+    
 PreLogUtil.put(StringMaker().
-                            append("Read Configuration: ")!.append(this.toString())!.toString(), this, "read")
+                            append("Read Configuration: ")!.append(this.toString())!.toString(), this, "read");
+    
 }
 
 
@@ -153,27 +164,35 @@ PreLogUtil.put(StringMaker().
             ;
         
         
-
+;
+    
 
         try {
             logUtil!.put(StringMaker().
-                            append("Write Configuration: ")!.append(this.toString())!.toString(), this, "write")
+                            append("Write Configuration: ")!.append(this.toString())!.toString(), this, "write");
+    
 
     var fileInputStreamFactory: FileStreamFactory = FileStreamFactory.getInstance()!;
         
         
-
+;
+    
 
     var fileOutputStream: OutputStream = fileInputStreamFactory!.getFileOutputStreamInstance(StringUtil.getInstance()!.EMPTY_STRING, FILE)!;
         
         
-
-dataOutputStream= AbDataOutputStream(fileOutputStream)
-dataOutputStream!.writeUTF(this.getRegistrationCode())
-dataOutputStream!.flush()
+;
+    
+dataOutputStream= AbDataOutputStream(fileOutputStream);
+    
+dataOutputStream!.writeUTF(this.getRegistrationCode());
+    
+dataOutputStream!.flush();
+    
 
          finally {
-            StreamUtil.getInstance()!.close(dataOutputStream)
+            StreamUtil.getInstance()!.close(dataOutputStream);
+    
 
          }
         
@@ -187,13 +206,16 @@ dataOutputStream!.flush()
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return StringMaker().
                             append("Registration Code: ")!.append(this.getRegistrationCode())!.toString();
+
+                        ;
     
 }
 
 
     public setRegistrationCode(registrationCode: string){
 var registrationCode = registrationCode
-this.registrationCode= registrationCode
+this.registrationCode= registrationCode;
+    
 }
 
 

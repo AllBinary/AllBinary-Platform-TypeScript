@@ -73,7 +73,8 @@ public constructor (basicURIResolver: BasicUriResolver){
 
             super();
             var basicURIResolver = basicURIResolver
-this.basicURIResolver= basicURIResolver
+this.basicURIResolver= basicURIResolver;
+    
 }
 
 
@@ -88,34 +89,54 @@ var base = base
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(URLGLOBALS.getMainPath())
-stringBuffer!.append(FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH)
-stringBuffer!.append(FREEBLISKET_PATH_GLOBALS.getInstance()!.INSTALLPATH)
-stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR)
-stringBuffer!.append(href)
+;
+    
+stringBuffer!.append(URLGLOBALS.getMainPath());
+    
+stringBuffer!.append(FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH);
+    
+stringBuffer!.append(FREEBLISKET_PATH_GLOBALS.getInstance()!.INSTALLPATH);
+    
+stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
+    
+stringBuffer!.append(href);
+    
 
     var fileAbPath: AbPath = new AbFilePath(stringBuffer!.toString());
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.XMLLOGGING))
                         
                                     {
-                                    stringBuffer!.delete(0, stringBuffer!.length())
-stringBuffer!.append("attempt to use xsl:import: href=")
-stringBuffer!.append(href)
-stringBuffer!.append("\nBase= ")
-stringBuffer!.append(base)
-stringBuffer!.append("\nNew path= ")
-stringBuffer!.append(fileAbPath!.toString())
-stringBuffer!.append("\nNote: ")
-stringBuffer!.append(FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH)
-stringBuffer!.append(" is a urlglobal")
-stringBuffer!.append("\nRequired Extension: ")
-stringBuffer!.append(this.basicURIResolver!.getExtension())
-logUtil!.put(stringBuffer!.toString(), this, "resolve")
+                                    stringBuffer!.delete(0, stringBuffer!.length());
+    
+stringBuffer!.append("attempt to use xsl:import: href=");
+    
+stringBuffer!.append(href);
+    
+stringBuffer!.append("\nBase= ");
+    
+stringBuffer!.append(base);
+    
+stringBuffer!.append("\nNew path= ");
+    
+stringBuffer!.append(fileAbPath!.toString());
+    
+stringBuffer!.append("\nNote: ");
+    
+stringBuffer!.append(FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH);
+    
+stringBuffer!.append(" is a urlglobal");
+    
+stringBuffer!.append("\nRequired Extension: ");
+    
+stringBuffer!.append(this.basicURIResolver!.getExtension());
+    
+logUtil!.put(stringBuffer!.toString(), this, "resolve");
+    
 
                                     }
                                 
@@ -126,14 +147,18 @@ logUtil!.put(stringBuffer!.toString(), this, "resolve")
                         return StreamSource(CryptFileReader(TransformInfoTemplateData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoTemplateData.getInstance()!.ENCRYPTED_EXTENSION).
                             getInputStream(fileAbPath));
     
-} catch(e: TransformerException)
+
+                //: 
+} catch(e) 
             {
 
 
 
                             throw e
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
 
 
@@ -153,7 +178,9 @@ logUtil!.put(stringBuffer!.toString(), this, "resolve")
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return URLGLOBALS.getMainPath() +FREEBLISKET_PATH_GLOBALS.getInstance()!.INSTALLPATH +"/{import url}";
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
 

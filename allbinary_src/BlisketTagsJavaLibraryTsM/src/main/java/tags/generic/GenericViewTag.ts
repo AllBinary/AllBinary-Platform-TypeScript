@@ -45,7 +45,8 @@ public constructor (){
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
+    
 
                                     }
                                 
@@ -54,15 +55,19 @@ public constructor (){
 
     public setOutput(value: string){
 var value = value
-this.output= value
-this.getPropertiesHashMap()!.put(InputOutputTypeData.getInstance()!.NAME, this.output)
+this.output= value;
+    
+this.getPropertiesHashMap()!.put(InputOutputTypeData.getInstance()!.NAME, this.output);
+    
 }
 
 
     public setFile(value: string){
 var value = value
-this.file= value
-this.getPropertiesHashMap()!.put(InputOutputTypeData.getInstance()!.FILE, this.file)
+this.file= value;
+    
+this.getPropertiesHashMap()!.put(InputOutputTypeData.getInstance()!.FILE, this.file);
+    
 }
 
 

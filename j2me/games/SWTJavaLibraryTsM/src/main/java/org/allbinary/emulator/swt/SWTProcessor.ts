@@ -55,7 +55,8 @@ protected constructor (){
 
     public process(display: Display){
     //var display = display
-display.sleep()
+display.sleep();
+    
 }
 
 

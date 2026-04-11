@@ -129,15 +129,20 @@ public constructor (groupInterface: Group[])
     var smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;
         
         
-
+;
+    
 
     var basicColorFactory: BasicColorFactory = BasicColorFactory.getInstance()!;
         
         
-
-this.noMoneyGameNotificationEvent= GameNotificationEvent(this, RTSGameStrings.getInstance()!.NO_MONEY, smallIntegerSingletonFactory!.getInstance(2), basicColorFactory!.WHITE, BooleanFactory.getInstance()!.FALSE)
-this.newUnitGameNotificationEvent= GameNotificationEvent(this, RTSGameStrings.getInstance()!.NEW_UNIT, smallIntegerSingletonFactory!.getInstance(2), basicColorFactory!.WHITE, BooleanFactory.getInstance()!.FALSE)
-this.getHashtable()!.put(WorkWaypoint.ID, smallIntegerSingletonFactory!.getInstance(50))
+;
+    
+this.noMoneyGameNotificationEvent= GameNotificationEvent(this, RTSGameStrings.getInstance()!.NO_MONEY, smallIntegerSingletonFactory!.getInstance(2), basicColorFactory!.WHITE, BooleanFactory.getInstance()!.FALSE);
+    
+this.newUnitGameNotificationEvent= GameNotificationEvent(this, RTSGameStrings.getInstance()!.NEW_UNIT, smallIntegerSingletonFactory!.getInstance(2), basicColorFactory!.WHITE, BooleanFactory.getInstance()!.FALSE);
+    
+this.getHashtable()!.put(WorkWaypoint.ID, smallIntegerSingletonFactory!.getInstance(50));
+    
 }
 
 
@@ -145,19 +150,24 @@ this.getHashtable()!.put(WorkWaypoint.ID, smallIntegerSingletonFactory!.getInsta
             
     public setAllBinaryGameLayerManager(allBinaryGameLayerManager: AllBinaryGameLayerManager){
     //var allBinaryGameLayerManager = allBinaryGameLayerManager
-super.setAllBinaryGameLayerManager(allBinaryGameLayerManager)
+super.setAllBinaryGameLayerManager(allBinaryGameLayerManager);
+    
 
     var geographicMapCompositeInterface: GeographicMapCompositeInterface = allBinaryGameLayerManager as GeographicMapCompositeInterface;
         
         
-
+;
+    
 
     var geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;
         
         
-
-this.noMoneyGameNotificationEvent!.setBasicColorP(geographicMapInterface!.getForegroundBasicColor())
-this.newUnitGameNotificationEvent!.setBasicColorP(geographicMapInterface!.getForegroundBasicColor())
+;
+    
+this.noMoneyGameNotificationEvent!.setBasicColorP(geographicMapInterface!.getForegroundBasicColor());
+    
+this.newUnitGameNotificationEvent!.setBasicColorP(geographicMapInterface!.getForegroundBasicColor());
+    
 }
 
 
@@ -169,30 +179,37 @@ this.newUnitGameNotificationEvent!.setBasicColorP(geographicMapInterface!.getFor
     //var layerManager = layerManager
     //var item = item
     //var itemIndex = itemIndex
-super.process(layerManager)
+super.process(layerManager);
+    
 
     var associatedRtsLayer2: RTSLayer = associatedRtsLayer as RTSLayer;
         
         
-
+;
+    
 
     var geographicMapCellPositionArea: GeographicMapCellPositionAreaBase = associatedRtsLayer2!.geographicMapCellPositionAreaBase;
         
         
-
+;
+    
 
     var geographicMapCellPosition: GeographicMapCellPosition = geographicMapCellPositionArea!.getNextSurroundingGeographicMapCellPosition()!;
         
         
-
-this.getHashtable()!.put(Layer.ID, associatedRtsLayer)
+;
+    
+this.getHashtable()!.put(Layer.ID, associatedRtsLayer);
+    
 this.getHashtable()!.put(UnitRTSFormInput.DECAL_ID, 
-                                    (rtsPlayerLayerInterface as AdvancedRTSPlayerLayerInterface).getDecalBasicColor())
+                                    (rtsPlayerLayerInterface as AdvancedRTSPlayerLayerInterface).getDecalBasicColor());
+    
 
                         if(this.newUnconstructedRTSLayerInterfaceArray[itemIndex] == CollidableDestroyableDamageableLayer.NULL_COLLIDABLE_DESTROYABLE_DAMAGE_LAYER)
                         
                                     {
-                                    this.newUnconstructedRTSLayerInterfaceArray[itemIndex]= this.getInstance(layerManager, item, geographicMapCellPosition)
+                                    this.newUnconstructedRTSLayerInterfaceArray[itemIndex]= this.getInstance(layerManager, item, geographicMapCellPosition);
+    
 
                                     }
                                 
@@ -201,24 +218,30 @@ this.getHashtable()!.put(UnitRTSFormInput.DECAL_ID,
     var cellPoint: GPoint = geographicMapCellPosition!.getPoint()!;
         
         
-
+;
+    
 
     var rtsLayer: RTSLayer = this.newUnconstructedRTSLayerInterfaceArray[itemIndex]! as RTSLayer;
         
         
-
-rtsLayer!.setPosition(cellPoint!.getX(), cellPoint!.getY(), rtsLayer!.getZP())
+;
+    
+rtsLayer!.setPosition(cellPoint!.getX(), cellPoint!.getY(), rtsLayer!.getZP());
+    
 
     var geographicMapCompositeInterface: GeographicMapCompositeInterface = rtsLayer!.allBinaryGameLayerManagerP as GeographicMapCompositeInterface;
         
         
-
+;
+    
 
     var geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;
         
         
-
-rtsLayer!.geographicMapCellPositionAreaBase!.update(geographicMapInterface)
+;
+    
+rtsLayer!.geographicMapCellPositionAreaBase!.update(geographicMapInterface);
+    
 
                         }
                             
@@ -226,14 +249,18 @@ rtsLayer!.geographicMapCellPositionAreaBase!.update(geographicMapInterface)
     var cellPoint: GPoint = geographicMapCellPosition!.getMidPoint()!;
         
         
-
+;
+    
 
     var rtsLayer: RTSLayer = this.newUnconstructedRTSLayerInterfaceArray[itemIndex]! as RTSLayer;
         
         
-
-rtsLayer!.setPosition(cellPoint!.getX() -rtsLayer!.getHalfWidth(), cellPoint!.getY() -rtsLayer!.getHalfHeight(), rtsLayer!.getZP())
-this.attemptBuild(associatedRtsLayer2, rtsPlayerLayerInterface, layerManager, rtsLayer as RTSLayer, itemIndex)
+;
+    
+rtsLayer!.setPosition(cellPoint!.getX() -rtsLayer!.getHalfWidth(), cellPoint!.getY() -rtsLayer!.getHalfHeight(), rtsLayer!.getZP());
+    
+this.attemptBuild(associatedRtsLayer2, rtsPlayerLayerInterface, layerManager, rtsLayer as RTSLayer, itemIndex);
+    
 }
 
 
@@ -249,50 +276,72 @@ this.attemptBuild(associatedRtsLayer2, rtsPlayerLayerInterface, layerManager, rt
     var cost: number = layerInterface!.getCost()!;
         
         
-
+;
+    
 
     var capital: Capital = rtsPlayerLayerInterface!.getCapital()!;
         
         
-
+;
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("Trying to Build: ")
-stringBuffer!.append(layerInterface!.getName())
-stringBuffer!.append(" for: $")
-stringBuffer!.appendint(cost)
-stringBuffer!.append(" with ")
-stringBuffer!.appendint(capital.getTotalMoney())
-logUtil!.put(stringBuffer!.toString(), this, "attemptBuild")
+;
+    
+stringBuffer!.append("Trying to Build: ");
+    
+stringBuffer!.append(layerInterface!.getName());
+    
+stringBuffer!.append(" for: $");
+    
+stringBuffer!.appendint(cost);
+    
+stringBuffer!.append(" with ");
+    
+stringBuffer!.appendint(capital.getTotalMoney());
+    
+logUtil!.put(stringBuffer!.toString(), this, "attemptBuild");
+    
 
                         if(cost <= capital.getTotalMoney())
                         
                                     {
-                                    layerInterface!.construct(rtsPlayerLayerInterface)
-this.newUnconstructedRTSLayerInterfaceArray[itemIndex]= CollidableDestroyableDamageableLayer.NULL_COLLIDABLE_DESTROYABLE_DAMAGE_LAYER
-rtsPlayerLayerInterface!.add(BuildingSound.getInstance())
-capital.removeMoney(cost)
-AssignWaypointsUtil.getInstance()!.set(layerInterface as UnitLayer, associatedRtsLayer as AdvancedRTSGameLayer)
-layerManager!.append(layerInterface, PlayersSingletonFactory.total)
+                                    layerInterface!.construct(rtsPlayerLayerInterface);
+    
+this.newUnconstructedRTSLayerInterfaceArray[itemIndex]= CollidableDestroyableDamageableLayer.NULL_COLLIDABLE_DESTROYABLE_DAMAGE_LAYER;
+    
+rtsPlayerLayerInterface!.add(BuildingSound.getInstance());
+    
+capital.removeMoney(cost);
+    
+AssignWaypointsUtil.getInstance()!.set(layerInterface as UnitLayer, associatedRtsLayer as AdvancedRTSGameLayer);
+    
+layerManager!.append(layerInterface, PlayersSingletonFactory.total);
+    
 
     var advancedRTSPlayerLayerInterface: AdvancedRTSPlayerLayerInterface = rtsPlayerLayerInterface as AdvancedRTSPlayerLayerInterface;
         
         
-
+;
+    
 
     var advancedPlayerOwnedRTSLayers: AdvancedPlayerOwnedRTSLayers = advancedRTSPlayerLayerInterface!.getAdvancedPlayerOwnedRTSLayers()!;
         
         
+;
+    
+advancedPlayerOwnedRTSLayers!.addUnit(layerInterface);
+    
 
-advancedPlayerOwnedRTSLayers!.addUnit(layerInterface)
+                        if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface();
 
-                        if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface())
+                        )
                         
                                     {
-                                    GameNotificationEventHandler.getInstance()!.fireEvent(newUnitGameNotificationEvent)
+                                    GameNotificationEventHandler.getInstance()!.fireEvent(newUnitGameNotificationEvent);
+    
 
                                     }
                                 
@@ -300,12 +349,16 @@ advancedPlayerOwnedRTSLayers!.addUnit(layerInterface)
                                     }
                                 
                         else {
-                            rtsPlayerLayerInterface!.add(ErrorSound.getInstance())
+                            rtsPlayerLayerInterface!.add(ErrorSound.getInstance());
+    
 
-                        if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface())
+                        if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface();
+
+                        )
                         
                                     {
-                                    GameNotificationEventHandler.getInstance()!.fireEvent(noMoneyGameNotificationEvent)
+                                    GameNotificationEventHandler.getInstance()!.fireEvent(noMoneyGameNotificationEvent);
+    
 
                                     }
                                 

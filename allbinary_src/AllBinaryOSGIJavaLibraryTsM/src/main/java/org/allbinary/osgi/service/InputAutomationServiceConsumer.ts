@@ -18,7 +18,10 @@
 
 
 
-import { Vector } from "../../../../java/util/Vector.js";
+            import Vector from "@ohos.util.Vector";
+        
+
+//import { Vector } from "../../../../java/util/Vector.js";
 
     
 import { BundleContext } from "../../../../org/osgi/framework/BundleContext.js";
@@ -68,30 +71,38 @@ public constructor (registryName: string, bundleContext: BundleContext, osgiServ
                 //var registryName = registryName
     //var bundleContext = bundleContext
     //var osgiServiceVisitorInterface = osgiServiceVisitorInterface
-this.setRegistryName(registryName)
-this.setBundleContext(bundleContext)
-this.setOsgiServiceVisitorInterface(osgiServiceVisitorInterface)
+this.setRegistryName(registryName);
+    
+this.setBundleContext(bundleContext);
+    
+this.setOsgiServiceVisitorInterface(osgiServiceVisitorInterface);
+    
 }
 
 
                 //@Throws(Error::class)
             
     public process(){
-logUtil!.put(this.commonStrings!.START, this, commonStrings!.PROCESS)
+logUtil!.put(this.commonStrings!.START, this, commonStrings!.PROCESS);
+    
 
     var vector: Vector = osgiServiceUtil!.getServicesObjectVector(this.getBundleContext(), this.getServiceReferences())!;
         
         
-
-logUtil!.put("Processing " +vector.length +" Services", this, commonStrings!.PROCESS)
+;
+    
+logUtil!.put("Processing " +vector.length +" Services", this, commonStrings!.PROCESS);
+    
 
     var size: number = vector.length!;
         
         
-
+;
+    
 
     var osgiServiceInterface: OSGIServiceInterface
-
+;
+    
 
 
 
@@ -102,9 +113,14 @@ logUtil!.put("Processing " +vector.length +" Services", this, commonStrings!.PRO
         
 index < size; index++)
         {
-osgiServiceInterface= vector.get(index) as OSGIServiceInterface
+osgiServiceInterface= vector.get(index);
 
-                        if(!getOsgiServiceVisitorInterface()!.visit(osgiServiceInterface))
+                         as OSGIServiceInterface;
+    
+
+                        if(!getOsgiServiceVisitorInterface()!.visit(osgiServiceInterface);
+
+                        )
                         
                                     {
                                     
@@ -128,6 +144,8 @@ osgiServiceInterface= vector.get(index) as OSGIServiceInterface
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getBundleContext()!.getServiceReferences(this.getRegistryName(), 
                             null);
+
+                        ;
     
 }
 
@@ -144,7 +162,8 @@ osgiServiceInterface= vector.get(index) as OSGIServiceInterface
 
     public setBundleContext(aBundleContext: BundleContext){
 var aBundleContext = aBundleContext
-bundleContext= aBundleContext
+bundleContext= aBundleContext;
+    
 }
 
 
@@ -160,7 +179,8 @@ bundleContext= aBundleContext
 
     public setRegistryName(registryName: string){
 var registryName = registryName
-this.registryName= registryName
+this.registryName= registryName;
+    
 }
 
 
@@ -176,7 +196,8 @@ this.registryName= registryName
 
     public setOsgiServiceVisitorInterface(osgiServiceVisitorInterface: OSGIServiceVisitorInterface){
 var osgiServiceVisitorInterface = osgiServiceVisitorInterface
-this.osgiServiceVisitorInterface= osgiServiceVisitorInterface
+this.osgiServiceVisitorInterface= osgiServiceVisitorInterface;
+    
 }
 
 

@@ -48,7 +48,8 @@ public constructor (gameCanvas: AllBinaryGameCanvas){
 
             super();
             var gameCanvas = gameCanvas
-this.gameCanvas= gameCanvas
+this.gameCanvas= gameCanvas;
+    
 }
 
 
@@ -59,8 +60,10 @@ this.gameCanvas= gameCanvas
                         if(this.gameCanvas!.getStartIntermissionInterface()!.getTimeDelayHelper()!.isElapsed(WAIT))
                         
                                     {
-                                    logUtil!.put("Intermission End", this, commonStrings!.PROCESS)
-this.gameCanvas!.getStartIntermissionInterface()!.setEnabled(false)
+                                    logUtil!.put("Intermission End", this, commonStrings!.PROCESS);
+    
+this.gameCanvas!.getStartIntermissionInterface()!.setEnabled(false);
+    
 
                                     }
                                 

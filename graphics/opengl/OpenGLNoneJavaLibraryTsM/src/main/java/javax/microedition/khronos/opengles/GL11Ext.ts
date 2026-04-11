@@ -84,31 +84,31 @@ interface GL11Ext extends GL {
         
         
 
-    glTexParameterfv(target: number, pname: number, param: FloatArray, offset: number)
+    glTexParameterfv(target: number, pname: number, param: number[], offset: number)
 
     glCurrentPaletteMatrixOES(matrixpaletteindex: number)
 
     glDrawTexfOES(x: number, y: number, z: number, width: number, height: number)
 
-    glDrawTexfvOES(coords: FloatArray, offset: number)
+    glDrawTexfvOES(coords: number[], offset: number)
 
     glDrawTexfvOES(coords: FloatBuffer)
 
     glDrawTexiOES(x: number, y: number, z: number, width: number, height: number)
 
-    glDrawTexivOES(coords: IntArray, offset: number)
+    glDrawTexivOES(coords: number[], offset: number)
 
     glDrawTexivOES(coords: IntBuffer)
 
     glDrawTexsOES(x: number, y: number, z: number, width: number, height: number)
 
-    glDrawTexsvOES(coords: ShortArray, offset: number)
+    glDrawTexsvOES(coords: number[], offset: number)
 
     glDrawTexsvOES(coords: ShortBuffer)
 
     glDrawTexxOES(x: number, y: number, z: number, width: number, height: number)
 
-    glDrawTexxvOES(coords: IntArray, offset: number)
+    glDrawTexxvOES(coords: number[], offset: number)
 
     glDrawTexxvOES(coords: IntBuffer)
 

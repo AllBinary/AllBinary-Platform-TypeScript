@@ -69,15 +69,19 @@ public constructor (){
     var gameInitializedEventHandler: GameInitializedEventHandler = GameInitializedEventHandler.getInstance()!;
         
         
-
-gameInitializedEventHandler!.removeAllListeners()
-gameInitializedEventHandler!.addListener(this as GameInitializedListenerInterface)
+;
+    
+gameInitializedEventHandler!.removeAllListeners();
+    
+gameInitializedEventHandler!.addListener(this as GameInitializedListenerInterface);
+    
 }
 
 
     public onEvent(eventObject: AllBinaryEventObject){
     //var eventObject = eventObject
-ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
+ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
+    
 }
 
 
@@ -91,39 +95,52 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
     var ON_GAME_INITIALIZED: string = "onGameInitialized";
         
         
-
+;
+    
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
+;
+    
 
         try {
-            logUtil!.put(commonStrings!.START, this, ON_GAME_INITIALIZED)
+            logUtil!.put(commonStrings!.START, this, ON_GAME_INITIALIZED);
+    
 
-        while(!swtJOGLProcessor!.isHolderCreated())
+        while(!swtJOGLProcessor!.isHolderCreated();
+
+                        )
         {
-logUtil!.put(commonStrings!.UPDATE, this, ON_GAME_INITIALIZED)
-Thread.sleep(20)
+logUtil!.put(commonStrings!.UPDATE, this, ON_GAME_INITIALIZED);
+    
+Thread.sleep(20);
+    
 }
 
-FeatureResourceInitializationUtil.getInstance()!.init(gameInitializedEvent!.getLevel())
+FeatureResourceInitializationUtil.getInstance()!.init(gameInitializedEvent!.getLevel());
+    
 
                         if(firstTime)
                         
                                     {
-                                    firstTime= false
+                                    firstTime= false;
+    
 
                                     }
                                 
                         else {
-                            swtJOGLProcessor!.onSurfaceChanged()
+                            swtJOGLProcessor!.onSurfaceChanged();
+    
 
                         }
                             
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, ON_GAME_INITIALIZED, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, ON_GAME_INITIALIZED, e);
+    
 }
 
 }

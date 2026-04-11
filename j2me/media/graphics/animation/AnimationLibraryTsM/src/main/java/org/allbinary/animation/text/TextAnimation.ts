@@ -80,7 +80,8 @@ public constructor (text: string, animationBehavior: AnimationBehavior)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setText(text)
+this.setText(text);
+    
 }
 
 
@@ -94,18 +95,21 @@ this.setText(text)
 var graphics = graphics
 var x = x
 var y = y
-this.basicSetColorUtil!.setBasicColorP(graphics, this.getBasicColorP(), this.getColor())
+this.basicSetColorUtil!.setBasicColorP(graphics, this.getBasicColorP(), this.getColor());
+    
 
     var height: number = this.getHeight()!;
         
         
-
+;
+    
 
     var size: number = textArrayP!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -116,7 +120,8 @@ this.basicSetColorUtil!.setBasicColorP(graphics, this.getBasicColorP(), this.get
         
 index < size; index++)
         {
-graphics.drawString(textArrayP[index]!, x, y +(index *height), anchor)
+graphics.drawString(textArrayP[index]!, x, y +(index *height), anchor);
+    
 }
 
 }
@@ -128,7 +133,8 @@ var text = text
     var list: BasicArrayList = new BasicArrayList();
         
         
-
+;
+    
 
                         if(text != 
                                     null
@@ -139,32 +145,40 @@ var text = text
     var index: number = 0;
         
         
-
+;
+    
 
     var startIndex: number = 0;
         
         
-
+;
+    
 
     var endIndex: number = 0;
         
         
-
+;
+    
 
         while(index >= 0)
         {
-startIndex= index
-index= text.indexOf('\n', startIndex)
-endIndex= index
+startIndex= index;
+    
+index= text.indexOf('\n', startIndex);
+    
+endIndex= index;
+    
 
                         if(index < 0)
                         
                                     {
-                                    endIndex= text.length
+                                    endIndex= text.length;
+    
 
                                     }
                                 
-list.add(text.substring(startIndex, endIndex))
+list.add(text.substring(startIndex, endIndex));
+    
 
                         if(index < 0)
                         
@@ -175,7 +189,8 @@ list.add(text.substring(startIndex, endIndex))
 
                                     }
                                 
-index++
+index++;
+    
 }
 
 
@@ -189,12 +204,14 @@ index++
     var textArray: string[] = new Array(list.size());
         
         
-
+;
+    
 
     var size: number = list.size()!;
         
         
-
+;
+    
 
 
 
@@ -205,15 +222,20 @@ index++
         
 index < size; index++)
         {
-textArray[index]= list.get(index) as String
+textArray[index]= list.get(index);
+
+                         as String;
+    
 }
 
-this.textArrayP= textArray
+this.textArrayP= textArray;
+    
 
                                     }
                                 
                         else {
-                            this.textArrayP= StringUtil.getInstance()!.ONE_EMPTY_STRING_ARRAY
+                            this.textArrayP= StringUtil.getInstance()!.ONE_EMPTY_STRING_ARRAY;
+    
 
                         }
                             
@@ -235,7 +257,8 @@ this.textArrayP= textArray
     var myFont: MyFont = MyFont.getInstance()!;
         
         
-
+;
+    
 
 
 

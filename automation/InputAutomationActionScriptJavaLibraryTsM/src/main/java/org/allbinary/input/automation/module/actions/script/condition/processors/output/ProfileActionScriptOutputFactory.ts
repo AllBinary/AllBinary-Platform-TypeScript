@@ -40,14 +40,16 @@ var node = node
             ;
         
         
-
+;
+    
 
                         if(DomSearchHelper.getNodeNoThrow(ImageActionScriptOutputData.NAME, node.getChildNodes()) != 
                                     null
                                 )
                         
                                     {
-                                    profileActionScriptOutputInterface= ImageActionScriptOutput(node)
+                                    profileActionScriptOutputInterface= ImageActionScriptOutput(node);
+    
 
                                     }
                                 

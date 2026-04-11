@@ -58,15 +58,19 @@ public constructor (basicDecimal: BasicDecimal, velocityProperties: BasicVelocit
             super();
             var basicDecimal = basicDecimal
 var velocityProperties = velocityProperties
-this.setSpeedBasicDecimal(basicDecimal)
-this.velocityProperties= velocityProperties
+this.setSpeedBasicDecimal(basicDecimal);
+    
+this.velocityProperties= velocityProperties;
+    
 }
 
 public constructor (){
 
             super();
-            this.setSpeedBasicDecimal(BasicDecimal.ZERO_BIGDECIMAL)
-this.velocityProperties= BasicVelocityProperties()
+            this.setSpeedBasicDecimal(BasicDecimal.ZERO_BIGDECIMAL);
+    
+this.velocityProperties= BasicVelocityProperties();
+    
 }
 
 
@@ -74,13 +78,16 @@ this.velocityProperties= BasicVelocityProperties()
 var speedBasicDecimal = speedBasicDecimal
 var angle = angle
 var otherAngle = otherAngle
-this.speedBasicDecimal= speedBasicDecimal
+this.speedBasicDecimal= speedBasicDecimal;
+    
 
     var angleFactory: AngleFactory = AngleFactory.getInstance()!;
         
         
-
-this.velocityProperties!.setVelocity(speedBasicDecimal, angleFactory!.getInstance(angle), angleFactory!.getInstance(otherAngle))
+;
+    
+this.velocityProperties!.setVelocity(speedBasicDecimal, angleFactory!.getInstance(angle), angleFactory!.getInstance(otherAngle));
+    
 }
 
 
@@ -93,18 +100,22 @@ var otherAngle = otherAngle
     var scaleFactorValue: number = this.speedBasicDecimal!.getScaledFactorValue()!;
         
         
-
+;
+    
 
     var xVector: number = (axisMathVectorUtil!.calculateX(radius, angle) /scaleFactorValue).toInt();
         
         
-
+;
+    
 
     var yVector: number = (axisMathVectorUtil!.calculateY(radius, angle) /scaleFactorValue).toInt();
         
         
-
-layer.move(xVector, yVector, 0)
+;
+    
+layer.move(xVector, yVector, 0);
+    
 }
 
 
@@ -112,7 +123,8 @@ layer.move(xVector, yVector, 0)
             
     public process(layer: AllBinaryGameLayer){
 var layer = layer
-layer.move(this.velocityProperties!.getVelocityXBasicDecimalP()!.getScaled(), this.velocityProperties!.getVelocityYBasicDecimalP()!.getScaled(), 0)
+layer.move(this.velocityProperties!.getVelocityXBasicDecimalP()!.getScaled(), this.velocityProperties!.getVelocityYBasicDecimalP()!.getScaled(), 0);
+    
 }
 
 
@@ -122,12 +134,15 @@ layer.move(this.velocityProperties!.getVelocityXBasicDecimalP()!.getScaled(), th
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.velocityProperties!.toString();
+
+                        ;
     
 }
 
 
     public stop(){
-this.velocityProperties!.zero()
+this.velocityProperties!.zero();
+    
 }
 
 
@@ -143,13 +158,15 @@ this.velocityProperties!.zero()
 
     public setVelocityProperties(velocityProperties: BasicVelocityProperties){
 var velocityProperties = velocityProperties
-this.velocityProperties= velocityProperties
+this.velocityProperties= velocityProperties;
+    
 }
 
 
     setSpeedBasicDecimal(speedBasicDecimal: BasicDecimal){
 var speedBasicDecimal = speedBasicDecimal
-this.speedBasicDecimal= speedBasicDecimal
+this.speedBasicDecimal= speedBasicDecimal;
+    
 }
 
 

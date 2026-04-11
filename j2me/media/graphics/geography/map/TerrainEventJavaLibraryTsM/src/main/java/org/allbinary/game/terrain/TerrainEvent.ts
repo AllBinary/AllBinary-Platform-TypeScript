@@ -55,7 +55,8 @@ public constructor (basicTerrainInfo: BasicTerrainInfo)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setBasicTerrainInfo(basicTerrainInfo)
+this.setBasicTerrainInfo(basicTerrainInfo);
+    
 }
 
 
@@ -64,15 +65,21 @@ this.setBasicTerrainInfo(basicTerrainInfo)
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("TerrainEvent: \n")
-stringBuffer!.append("LayerInterface: ")
-stringBuffer!.append(this.basicTerrainInfo!.toString())
+;
+    
+stringBuffer!.append("TerrainEvent: \n");
+    
+stringBuffer!.append("LayerInterface: ");
+    
+stringBuffer!.append(this.basicTerrainInfo!.toString());
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 
@@ -89,13 +96,15 @@ stringBuffer!.append(this.basicTerrainInfo!.toString())
 
     public setBasicTerrainInfo(basicTerrainInfo: BasicTerrainInfo){
 var basicTerrainInfo = basicTerrainInfo
-this.basicTerrainInfo= basicTerrainInfo
+this.basicTerrainInfo= basicTerrainInfo;
+    
 }
 
 
     public setBasicTerrainInfoForCircularStaticPool(basicTerrainInfo: BasicTerrainInfo){
 var basicTerrainInfo = basicTerrainInfo
-this.basicTerrainInfo= basicTerrainInfo
+this.basicTerrainInfo= basicTerrainInfo;
+    
 }
 
 

@@ -79,16 +79,19 @@ export class AbFileItem
 
     private fieldName: string
 
-    private readonly byteArray: ByteArray
-public constructor (name: string, fieldName: string, byteArray: ByteArray){
+    private readonly byteArray: number[]
+public constructor (name: string, fieldName: string, byteArray: number[]){
 
             super();
             var name = name
 var fieldName = fieldName
 var byteArray = byteArray
-this.name= name
-this.fieldName= fieldName
-this.byteArray= byteArray
+this.name= name;
+    
+this.fieldName= fieldName;
+    
+this.byteArray= byteArray;
+    
 }
 
 
@@ -142,7 +145,7 @@ this.byteArray= byteArray
 }
 
 
-    public get(): ByteArray{
+    public get(): number[]{
 
 
 
@@ -173,14 +176,19 @@ var encoding = encoding
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return FileItemUtil.getInstance()!.getString(byteArray);
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "getString", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "getString", e);
+    
 
                                     }
                                 
@@ -218,7 +226,8 @@ var file = file
 
 
     public delete(){
-ForcedLogUtil.log(commonStrings!.NOT_IMPLEMENTED, "delete()")
+ForcedLogUtil.log(commonStrings!.NOT_IMPLEMENTED, "delete()");
+    
 }
 
 
@@ -234,7 +243,8 @@ ForcedLogUtil.log(commonStrings!.NOT_IMPLEMENTED, "delete()")
 
     public setFieldName(name: string){
 var name = name
-this.fieldName= name
+this.fieldName= name;
+    
 }
 
 

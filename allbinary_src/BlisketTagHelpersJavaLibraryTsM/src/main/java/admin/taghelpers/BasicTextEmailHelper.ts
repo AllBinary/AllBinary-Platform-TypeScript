@@ -56,16 +56,18 @@ export class BasicTextEmailHelper extends TagHelper {
         
         
 
-    private hashMap: HashMap<Any, Any>
+    private hashMap: HashMap<any, any>
 
     private pageContext: PageContext
-public constructor (hashMap: HashMap<Any, Any>, pageContext: PageContext){
+public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
             var hashMap = hashMap
 var pageContext = pageContext
-this.pageContext= pageContext
-this.hashMap= hashMap
+this.pageContext= pageContext;
+    
+this.hashMap= hashMap;
+    
 }
 
 
@@ -73,31 +75,41 @@ this.hashMap= hashMap
             
     public send(){
 
-    var adminEmailSubject: string = hashMap!.get("Subject") as String;
-        
-        
+    var adminEmailSubject: string = hashMap!.get("Subject");
 
-
-    var adminEmailTextBody: string = hashMap!.get("Body") as String;
+                         as String;
         
         
+;
+    
 
+    var adminEmailTextBody: string = hashMap!.get("Body");
+
+                         as String;
+        
+        
+;
+    
 
     var adminBasicEmailInfo: BasicEmailInfo = AdminEmailInfo(adminEmailSubject, adminEmailTextBody) as BasicEmailInfo;
         
         
-
+;
+    
 
     var adminEmailInfo: EmailInfo = new EmailInfo(adminBasicEmailInfo);
         
         
-
+;
+    
 
     var adminUserEmailEventHandler: UserEmailEventHandler = AdminUserEmailEventHandlerSingletons.getInstance()!.getInstance(this.abeClientInformation, UserEmailEventNameData.INSTALLER)!;
         
         
-
-adminUserEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.INSTALLER, adminEmailInfo)
+;
+    
+adminUserEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.INSTALLER, adminEmailInfo);
+    
 }
 
 

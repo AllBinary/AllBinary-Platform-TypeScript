@@ -18,7 +18,10 @@
 
 
 
-import { Vector } from "../../../../../java/util/Vector.js";
+            import Vector from "@ohos.util.Vector";
+        
+
+//import { Vector } from "../../../../../java/util/Vector.js";
 
     
 import { Command } from "../../../../../javax/microedition/lcdui/Command.js";
@@ -60,11 +63,12 @@ public constructor (visitorInterface: Visitor){
 
             super();
                 //var visitorInterface = visitorInterface
-this.visitorInterface= visitorInterface
+this.visitorInterface= visitorInterface;
+    
 }
 
 
-    public getInstance(vector: Vector<Any>, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor): CustomItem[]{
+    public getInstance(vector: Vector<any>, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor): CustomItem[]{
 var vector = vector
     //var backgroundBasicColor = backgroundBasicColor
     //var foregroundBasicColor = foregroundBasicColor
@@ -72,37 +76,47 @@ var vector = vector
     var size: number = vector.length!;
         
         
-
-list.clear()
+;
+    
+list.clear();
+    
 
     var textItem: CommandTextItem
-
+;
+    
 
     var priorityLimit: number = 7;
         
         
-
+;
+    
 
     var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
         
         
+;
+    
 
+    var isLargeEnoughDisplayForBigMenu: boolean = (displayInfo!.isPortrait() && displayInfo!.getLastHeight() >= ScreenInfo.getInstance()!.MEDIUM_WIDTH) || (!displayInfo!.isPortrait();
 
-    var isLargeEnoughDisplayForBigMenu: boolean = (displayInfo!.isPortrait() && displayInfo!.getLastHeight() >= ScreenInfo.getInstance()!.MEDIUM_WIDTH) || (!displayInfo!.isPortrait() && displayInfo!.getLastWidth() >= ScreenInfo.getInstance()!.MEDIUM_WIDTH);
+                         && displayInfo!.getLastWidth() >= ScreenInfo.getInstance()!.MEDIUM_WIDTH);
         
         
-
+;
+    
 
                         if(!isLargeEnoughDisplayForBigMenu && size > 3)
                         
                                     {
-                                    priorityLimit= 3
+                                    priorityLimit= 3;
+    
 
                                     }
                                 
 
     var command: Command
-
+;
+    
 
 
 
@@ -113,22 +127,30 @@ list.clear()
         
 index < size; index++)
         {
-command= vector.elementAt(index) as Command
+command= vector.elementAt(index);
+
+                         as Command;
+    
 
                         if(command.getPriority() < priorityLimit)
                         
                                     {
                                     
-    var aBoolean: Boolean = this.visitorInterface!.visit(command) as Boolean;
-        
-        
+    var aBoolean: Boolean = this.visitorInterface!.visit(command);
 
+                         as Boolean;
+        
+        
+;
+    
 
                         if(aBoolean)
                         
                                     {
-                                    textItem= CommandTextItem(command, ImageItem.LAYOUT_DEFAULT, StringUtil.getInstance()!.EMPTY_STRING, backgroundBasicColor, foregroundBasicColor)
-list.add(textItem)
+                                    textItem= CommandTextItem(command, ImageItem.LAYOUT_DEFAULT, StringUtil.getInstance()!.EMPTY_STRING, backgroundBasicColor, foregroundBasicColor);
+    
+list.add(textItem);
+    
 
                                     }
                                 
@@ -141,13 +163,15 @@ list.add(textItem)
     var textItemArray: CustomItem[] = new Array(list.size());
         
         
-
+;
+    
 
     var size2: number = textItemArray!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -158,7 +182,8 @@ list.add(textItem)
         
 index < size2; index++)
         {
-textItemArray[index]= list.objectArray[index]! as CustomItem
+textItemArray[index]= list.objectArray[index]! as CustomItem;
+    
 }
 
 

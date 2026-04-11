@@ -74,7 +74,8 @@ public constructor (transformInfoInterface: TransformInfoInterface)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Failed to validate username", this, commonStrings!.IS_VALID)
+                                    logUtil!.put("Failed to validate username", this, commonStrings!.IS_VALID);
+    
 
                                     }
                                 
@@ -87,7 +88,8 @@ public constructor (transformInfoInterface: TransformInfoInterface)
 
                                     }
                                 
-this.user= UserEntityFactory.getInstance()!.getUser(this.getWeblisketSession()!.getUserName())
+this.user= UserEntityFactory.getInstance()!.getUser(this.getWeblisketSession()!.getUserName());
+    
 
                         if(this.user == 
                                     null
@@ -98,7 +100,8 @@ this.user= UserEntityFactory.getInstance()!.getUser(this.getWeblisketSession()!.
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("User does not exist", this, commonStrings!.IS_VALID)
+                                    logUtil!.put("User does not exist", this, commonStrings!.IS_VALID);
+    
 
                                     }
                                 
@@ -119,7 +122,8 @@ this.user= UserEntityFactory.getInstance()!.getUser(this.getWeblisketSession()!.
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("User exists but is invalid - Probably manually modified", this, commonStrings!.IS_VALID)
+                                    logUtil!.put("User exists but is invalid - Probably manually modified", this, commonStrings!.IS_VALID);
+    
 
                                     }
                                 
@@ -138,13 +142,16 @@ this.user= UserEntityFactory.getInstance()!.getUser(this.getWeblisketSession()!.
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return Boolean.TRUE;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("Failed to validate", this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put("Failed to validate", this, commonStrings!.IS_VALID, e);
+    
 
                                     }
                                 
@@ -166,7 +173,8 @@ this.user= UserEntityFactory.getInstance()!.getUser(this.getWeblisketSession()!.
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
                         if(UserName.getInstance()!.isValid(this.getWeblisketSession()!.getUserName()) == Boolean.FALSE)
                         
@@ -175,11 +183,13 @@ this.user= UserEntityFactory.getInstance()!.getUser(this.getWeblisketSession()!.
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Failed to validate username", this, "validationInfo()")
+                                    logUtil!.put("Failed to validate username", this, "validationInfo()");
+    
 
                                     }
                                 
-stringBuffer!.append("Session User Name is not valid - Your session data has been logged!")
+stringBuffer!.append("Session User Name is not valid - Your session data has been logged!");
+    
 
                                     }
                                 
@@ -193,11 +203,13 @@ stringBuffer!.append("Session User Name is not valid - Your session data has bee
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("User does not exist", this, commonStrings!.IS_VALID)
+                                    logUtil!.put("User does not exist", this, commonStrings!.IS_VALID);
+    
 
                                     }
                                 
-stringBuffer!.append("User profile does not exist - Your session data has been logged!")
+stringBuffer!.append("User profile does not exist - Your session data has been logged!");
+    
 
                                     }
                                 
@@ -209,11 +221,13 @@ stringBuffer!.append("User profile does not exist - Your session data has been l
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("User exists but is invalid - Probably manually modified", this, commonStrings!.IS_VALID)
+                                    logUtil!.put("User exists but is invalid - Probably manually modified", this, commonStrings!.IS_VALID);
+    
 
                                     }
                                 
-stringBuffer!.append(this.user.validationInfo())
+stringBuffer!.append(this.user.validationInfo());
+    
 
                                     }
                                 
@@ -222,14 +236,19 @@ stringBuffer!.append(this.user.validationInfo())
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e)
+                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e);
+    
 
                                     }
                                 

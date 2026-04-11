@@ -71,57 +71,72 @@ export class InputAutomationConfigurationFactory
     var logUtil: LogUtil = LogUtil.getInstance()!;
         
         
-
+;
+    
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
+;
+    
 
     var INPUT_AUTOMATION_CONFIGURATION: string = "InputAutomationConfiguration";
         
         
-
+;
+    
 
     var file: File = InputAutomationConfiguration.getFile()!;
         
         
-
+;
+    
 
                         if(file.isFile())
                         
                                     {
-                                    logUtil!.put("LoadingConfiguration", INPUT_AUTOMATION_CONFIGURATION, commonStrings!.INIT)
+                                    logUtil!.put("LoadingConfiguration", INPUT_AUTOMATION_CONFIGURATION, commonStrings!.INIT);
+    
 
     var jaxbContext: JAXBContext = JAXBContext.newInstance(InputAutomationConfiguration::class)!;
         
         
-
+;
+    
 
     var unmarshaller: Unmarshaller = jaxbContext!.createUnmarshaller()!;
         
         
-
+;
+    
 
     var root: JAXBElement<InputAutomationConfiguration> = unmarshaller.unmarshal(StreamSource(FileInputStream(file)), InputAutomationConfiguration::class)!;
         
         
+;
+    
+inputAutomationConfiguration= root.getValue();
 
-inputAutomationConfiguration= root.getValue() as InputAutomationConfiguration
+                         as InputAutomationConfiguration;
+    
 
     var inputAutomationModuleConfigurationList: List<InputAutomationModuleConfiguration> = inputAutomationConfiguration!.getInputAutomationModuleConfigurationList()!;
         
         
-
-logUtil!.put("isInstalled: " +inputAutomationConfiguration!.isInstalled(), INPUT_AUTOMATION_CONFIGURATION, commonStrings!.INIT)
+;
+    
+logUtil!.put("isInstalled: " +inputAutomationConfiguration!.isInstalled(), INPUT_AUTOMATION_CONFIGURATION, commonStrings!.INIT);
+    
 
     var size: number = inputAutomationModuleConfigurationList!.size!;
         
         
-
+;
+    
 
     var inputAutomationModuleConfiguration: InputAutomationModuleConfiguration
-
+;
+    
 
 
 
@@ -132,17 +147,22 @@ logUtil!.put("isInstalled: " +inputAutomationConfiguration!.isInstalled(), INPUT
         
 index < size; index++)
         {
-inputAutomationModuleConfiguration= inputAutomationModuleConfigurationList!.get(index)
-inputAutomationModuleConfiguration!.init(abeClientInformation)
+inputAutomationModuleConfiguration= inputAutomationModuleConfigurationList!.get(index);
+    
+inputAutomationModuleConfiguration!.init(abeClientInformation);
+    
 }
 
-logUtil!.put("LoadedConfiguration", INPUT_AUTOMATION_CONFIGURATION, commonStrings!.INIT)
+logUtil!.put("LoadedConfiguration", INPUT_AUTOMATION_CONFIGURATION, commonStrings!.INIT);
+    
 
                                     }
                                 
                         else {
-                            logUtil!.put("New Configuration", INPUT_AUTOMATION_CONFIGURATION, commonStrings!.INIT)
-inputAutomationConfiguration= InputAutomationConfiguration()
+                            logUtil!.put("New Configuration", INPUT_AUTOMATION_CONFIGURATION, commonStrings!.INIT);
+    
+inputAutomationConfiguration= InputAutomationConfiguration();
+    
 
                         }
                             

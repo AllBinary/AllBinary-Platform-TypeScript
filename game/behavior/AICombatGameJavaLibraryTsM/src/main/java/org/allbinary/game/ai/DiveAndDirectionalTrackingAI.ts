@@ -108,7 +108,7 @@ export class DiveAndDirectionalTrackingAI extends BasicAI
                 , DestroyedEventListenerInterface {
         
 
-    private static readonly directionToKeyMap: IntArray = intArrayOf(Canvas.LEFT,Canvas.DOWN,Canvas.UP,Canvas.RIGHT);
+    private static readonly directionToKeyMap: number[] = intArrayOf(Canvas.LEFT,Canvas.DOWN,Canvas.UP,Canvas.RIGHT);
         
         
 
@@ -172,22 +172,34 @@ var visitor = visitor
 
                             //For kotlin this is before the body of the constructor.
                     
-this.aiVistor= visitor
-this.artificialIntelligenceInterface= artificialIntelligenceInterface
+this.aiVistor= visitor;
+    
+this.artificialIntelligenceInterface= artificialIntelligenceInterface;
+    
 
-    var directionalCompositeInterface: DirectionalCompositeInterface = this.getOwnerLayerInterface() as DirectionalCompositeInterface;
+    var directionalCompositeInterface: DirectionalCompositeInterface = this.getOwnerLayerInterface();
+
+                         as DirectionalCompositeInterface;
         
         
+;
+    
+this.directionalInterface= directionalCompositeInterface!.getDirectionalInterface();
+    
 
-this.directionalInterface= directionalCompositeInterface!.getDirectionalInterface()
+    var velocityInterfaceCompositeInterface: VelocityInterfaceCompositeInterface = this.getOwnerLayerInterface();
 
-    var velocityInterfaceCompositeInterface: VelocityInterfaceCompositeInterface = this.getOwnerLayerInterface() as VelocityInterfaceCompositeInterface;
+                         as VelocityInterfaceCompositeInterface;
         
         
-
-this.velocityInterface= velocityInterfaceCompositeInterface!.getVelocityProperties()
-DestroyedEventHandler.getInstance()!.addListener(this)
-this.init()
+;
+    
+this.velocityInterface= velocityInterfaceCompositeInterface!.getVelocityProperties();
+    
+DestroyedEventHandler.getInstance()!.addListener(this);
+    
+this.init();
+    
 }
 
 
@@ -199,8 +211,10 @@ var allBinaryLayerManager = allBinaryLayerManager
                         if(this.isBeyondTarget())
                         
                                     {
-                                    this.init()
-this.velocityInterface!.zero()
+                                    this.init();
+    
+this.velocityInterface!.zero();
+    
 
                                     }
                                 
@@ -208,24 +222,31 @@ this.velocityInterface!.zero()
                         if(!dive)
                         
                                     {
-                                    this.target(allBinaryLayerManager)
+                                    this.target(allBinaryLayerManager);
+    
 
                                     }
                                 
                         else {
-                            this.dive()
-this.attack()
+                            this.dive();
+    
+this.attack();
+    
 
                         }
                             
-this.list.clear()
+this.list.clear();
+    
 }
 
 
     init(){
-this.dive= false
-this.directionOfTarget= DirectionFactory.getInstance()!.NOT_BORDERED_WITH
-TrackingEventHandler.getInstance()!.addListener(this)
+this.dive= false;
+    
+this.directionOfTarget= DirectionFactory.getInstance()!.NOT_BORDERED_WITH;
+    
+TrackingEventHandler.getInstance()!.addListener(this);
+    
 }
 
 
@@ -247,21 +268,27 @@ var allBinaryLayerManager = allBinaryLayerManager
                                     }
                                 
 
-    var lastTrackingEvent: TrackingEvent = list.remove(0) as TrackingEvent;
-        
-        
+    var lastTrackingEvent: TrackingEvent = list.remove(0);
 
-this.lastTrackingLayerInterface= lastTrackingEvent!.getLayerInterface()
+                         as TrackingEvent;
+        
+        
+;
+    
+this.lastTrackingLayerInterface= lastTrackingEvent!.getLayerInterface();
+    
 
     var layerInterface: AllBinaryLayer = this.lastTrackingLayerInterface;
         
         
-
+;
+    
 
     var ownerLayerInterface: AllBinaryLayer = this.getOwnerLayerInterface()!;
         
         
-
+;
+    
 
                         if(layerInterface!.getGroupInterface() == ownerLayerInterface!.getGroupInterface())
                         
@@ -279,27 +306,32 @@ this.lastTrackingLayerInterface= lastTrackingEvent!.getLayerInterface()
     var x: number = this.lastTrackingLayerInterface!.getXP()!;
         
         
-
+;
+    
 
     var y: number = this.lastTrackingLayerInterface!.getYP()!;
         
         
-
+;
+    
 
     var yDistance: number = ownerLayerInterface!.getYP() -y -ownerLayerInterface!.getHeight();
         
         
-
+;
+    
 
     var xDistance: number = ownerLayerInterface!.getXP() -x -ownerLayerInterface!.getWidth();
         
         
-
+;
+    
 
     var directionFactory: DirectionFactory = DirectionFactory.getInstance()!;
         
         
-
+;
+    
 
                         if(mathUtil!.abs(yDistance) > mathUtil!.abs(xDistance))
                         
@@ -308,7 +340,8 @@ this.lastTrackingLayerInterface= lastTrackingEvent!.getLayerInterface()
                         if(yDistance > MIN_DISTANCE)
                         
                                     {
-                                    this.directionOfTarget= directionFactory!.UP
+                                    this.directionOfTarget= directionFactory!.UP;
+    
 
                                     }
                                 
@@ -316,7 +349,8 @@ this.lastTrackingLayerInterface= lastTrackingEvent!.getLayerInterface()
                         if(yDistance <  -MIN_DISTANCE)
                         
                                     {
-                                    this.directionOfTarget= directionFactory!.DOWN
+                                    this.directionOfTarget= directionFactory!.DOWN;
+    
 
                                     }
                                 
@@ -328,7 +362,8 @@ this.lastTrackingLayerInterface= lastTrackingEvent!.getLayerInterface()
                         if(xDistance > MIN_DISTANCE)
                         
                                     {
-                                    this.directionOfTarget= directionFactory!.LEFT
+                                    this.directionOfTarget= directionFactory!.LEFT;
+    
 
                                     }
                                 
@@ -336,7 +371,8 @@ this.lastTrackingLayerInterface= lastTrackingEvent!.getLayerInterface()
                         if(xDistance <  -MIN_DISTANCE)
                         
                                     {
-                                    this.directionOfTarget= directionFactory!.RIGHT
+                                    this.directionOfTarget= directionFactory!.RIGHT;
+    
 
                                     }
                                 
@@ -347,7 +383,8 @@ this.lastTrackingLayerInterface= lastTrackingEvent!.getLayerInterface()
                         if(!initialDropped && this.directionOfTarget != directionFactory!.NOT_BORDERED_WITH)
                         
                                     {
-                                    this.drop()
+                                    this.drop();
+    
 
                                     }
                                 
@@ -359,7 +396,8 @@ this.lastTrackingLayerInterface= lastTrackingEvent!.getLayerInterface()
                         if(this.directionOfTarget == directionFactory!.UP || this.directionOfTarget == directionFactory!.DOWN)
                         
                                     {
-                                    this.verticalTargeting(x)
+                                    this.verticalTargeting(x);
+    
 
                                     }
                                 
@@ -367,12 +405,14 @@ this.lastTrackingLayerInterface= lastTrackingEvent!.getLayerInterface()
                         if(this.directionOfTarget == directionFactory!.LEFT || this.directionOfTarget == directionFactory!.RIGHT)
                         
                                     {
-                                    this.horizontalTargeting(y)
+                                    this.horizontalTargeting(y);
+    
 
                                     }
                                 
                         else {
-                            this.artificialIntelligenceInterface!.processAI(allBinaryLayerManager)
+                            this.artificialIntelligenceInterface!.processAI(allBinaryLayerManager);
+    
 
                         }
                             
@@ -390,12 +430,14 @@ var x = x
     var ownerLayerInterface: AllBinaryLayer = this.getOwnerLayerInterface()!;
         
         
-
+;
+    
 
                         if(ownerLayerInterface!.getXP() < x)
                         
                                     {
-                                    this.moveRight()
+                                    this.moveRight();
+    
 
                                     }
                                 
@@ -403,7 +445,8 @@ var x = x
                         if(ownerLayerInterface!.getXP() > x)
                         
                                     {
-                                    this.moveLeft()
+                                    this.moveLeft();
+    
 
                                     }
                                 
@@ -411,7 +454,8 @@ var x = x
                         if(ownerLayerInterface!.getXP() > x -3 && ownerLayerInterface!.getXP() < x +3)
                         
                                     {
-                                    this.setDive()
+                                    this.setDive();
+    
 
                                     }
                                 
@@ -426,12 +470,14 @@ var y = y
     var ownerLayerInterface: AllBinaryLayer = this.getOwnerLayerInterface()!;
         
         
-
+;
+    
 
                         if(ownerLayerInterface!.getYP() < y)
                         
                                     {
-                                    this.moveDown()
+                                    this.moveDown();
+    
 
                                     }
                                 
@@ -439,7 +485,8 @@ var y = y
                         if(ownerLayerInterface!.getYP() > y)
                         
                                     {
-                                    this.moveUp()
+                                    this.moveUp();
+    
 
                                     }
                                 
@@ -447,7 +494,8 @@ var y = y
                         if(ownerLayerInterface!.getYP() > y -3 && ownerLayerInterface!.getYP() < y +3)
                         
                                     {
-                                    this.setDive()
+                                    this.setDive();
+    
 
                                     }
                                 
@@ -455,60 +503,78 @@ var y = y
 
 
     setDive(){
-this.dive= true
-this.velocityInterface!.zero()
-TrackingEventHandler.getInstance()!.removeListener(this)
+this.dive= true;
+    
+this.velocityInterface!.zero();
+    
+TrackingEventHandler.getInstance()!.removeListener(this);
+    
 }
 
 
                 //@Throws(Error::class)
             
     moveRight(){
-this.setLastDirection(this.directionFactory!.RIGHT)
-this.directionalInterface!.setFrame(this.lastDirection)
-this.aiVistor!.visit(this)
+this.setLastDirection(this.directionFactory!.RIGHT);
+    
+this.directionalInterface!.setFrame(this.lastDirection);
+    
+this.aiVistor!.visit(this);
+    
 }
 
 
                 //@Throws(Error::class)
             
     moveLeft(){
-this.setLastDirection(this.directionFactory!.LEFT)
-this.directionalInterface!.setFrame(this.lastDirection)
-this.aiVistor!.visit(this)
+this.setLastDirection(this.directionFactory!.LEFT);
+    
+this.directionalInterface!.setFrame(this.lastDirection);
+    
+this.aiVistor!.visit(this);
+    
 }
 
 
                 //@Throws(Error::class)
             
     moveDown(){
-this.setLastDirection(this.directionFactory!.DOWN)
-this.directionalInterface!.setFrame(this.lastDirection)
-this.aiVistor!.visit(this)
+this.setLastDirection(this.directionFactory!.DOWN);
+    
+this.directionalInterface!.setFrame(this.lastDirection);
+    
+this.aiVistor!.visit(this);
+    
 }
 
 
                 //@Throws(Error::class)
             
     moveUp(){
-this.setLastDirection(this.directionFactory!.UP)
-this.directionalInterface!.setFrame(this.lastDirection)
-this.aiVistor!.visit(this)
+this.setLastDirection(this.directionFactory!.UP);
+    
+this.directionalInterface!.setFrame(this.lastDirection);
+    
+this.aiVistor!.visit(this);
+    
 }
 
 
                 //@Throws(Error::class)
             
     dive(){
-this.directionalInterface!.setFrame(this.directionOfTarget)
-this.aiVistor!.visit(this)
+this.directionalInterface!.setFrame(this.directionOfTarget);
+    
+this.aiVistor!.visit(this);
+    
 }
 
 
                 //@Throws(Error::class)
             
     attack(){
-super.processAI(Canvas.KEY_NUM1)
+super.processAI(Canvas.KEY_NUM1);
+    
 }
 
 
@@ -519,8 +585,10 @@ super.processAI(Canvas.KEY_NUM1)
                         if(this.timeDelayHelper!.isTime(this.gameTickTimeDelayHelper!.startTime))
                         
                                     {
-                                    initialDropped= true
-this.aiVistor!.visit(this)
+                                    initialDropped= true;
+    
+this.aiVistor!.visit(this);
+    
 
                                     }
                                 
@@ -663,13 +731,15 @@ this.aiVistor!.visit(this)
 
     public onEvent(eventObject: AllBinaryEventObject){
 var eventObject = eventObject
-ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
+ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
+    
 }
 
 
     public onMovement(trackingEvent: TrackingEvent){
 var trackingEvent = trackingEvent
-this.list.add(trackingEvent)
+this.list.add(trackingEvent);
+    
 }
 
 
@@ -679,8 +749,10 @@ var destroyedEvent = destroyedEvent
                         if(this.getOwnerLayerInterface() == destroyedEvent!.getLayerInterface())
                         
                                     {
-                                    TrackingEventHandler.getInstance()!.removeListener(this)
-DestroyedEventHandler.getInstance()!.removeListener(this)
+                                    TrackingEventHandler.getInstance()!.removeListener(this);
+    
+DestroyedEventHandler.getInstance()!.removeListener(this);
+    
 
                                     }
                                 
@@ -689,17 +761,20 @@ DestroyedEventHandler.getInstance()!.removeListener(this)
 
     public setLastDirection(lastDirection: Direction){
 var lastDirection = lastDirection
-this.lastDirection= lastDirection
+this.lastDirection= lastDirection;
+    
 
     var value: number = this.getLastDirection()!.getValue()!;
         
         
-
+;
+    
 
                         if(value < 4)
                         
                                     {
-                                    super.setLastKey(directionToKeyMap[value]!)
+                                    super.setLastKey(directionToKeyMap[value]!);
+    
 
                                     }
                                 
@@ -708,12 +783,14 @@ this.lastDirection= lastDirection
 
     public setLastKey(lastKey: number){
 var lastKey = lastKey
-super.setLastKey(lastKey)
+super.setLastKey(lastKey);
+    
 
                         if(this.getLastKey() == Canvas.LEFT)
                         
                                     {
-                                    this.lastDirection= DirectionFactory.getInstance()!.LEFT
+                                    this.lastDirection= DirectionFactory.getInstance()!.LEFT;
+    
 
                                     }
                                 
@@ -721,7 +798,8 @@ super.setLastKey(lastKey)
                         if(this.getLastKey() == Canvas.DOWN)
                         
                                     {
-                                    this.lastDirection= DirectionFactory.getInstance()!.DOWN
+                                    this.lastDirection= DirectionFactory.getInstance()!.DOWN;
+    
 
                                     }
                                 
@@ -729,7 +807,8 @@ super.setLastKey(lastKey)
                         if(this.getLastKey() == Canvas.UP)
                         
                                     {
-                                    this.lastDirection= DirectionFactory.getInstance()!.UP
+                                    this.lastDirection= DirectionFactory.getInstance()!.UP;
+    
 
                                     }
                                 
@@ -737,7 +816,8 @@ super.setLastKey(lastKey)
                         if(this.getLastKey() == Canvas.RIGHT)
                         
                                     {
-                                    this.lastDirection= DirectionFactory.getInstance()!.RIGHT
+                                    this.lastDirection= DirectionFactory.getInstance()!.RIGHT;
+    
 
                                     }
                                 
@@ -759,15 +839,21 @@ super.setLastKey(lastKey)
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(super.toString())
-stringBuffer!.append(" LastDirection: ")
-stringBuffer!.append(StringUtil.getInstance()!.toString(this.getLastDirection()))
+;
+    
+stringBuffer!.append(super.toString());
+    
+stringBuffer!.append(" LastDirection: ");
+    
+stringBuffer!.append(StringUtil.getInstance()!.toString(this.getLastDirection()));
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

@@ -62,12 +62,14 @@ public constructor (){
     var geographicMapCellPosition: GeographicMapCellPosition = this.currentGeographicMapCellPosition;
         
         
-
+;
+    
 
                         if(geographicMapCellPosition != this.previousGeographicMapCellPosition)
                         
                                     {
-                                    this.currentCellType= geographicMap!.getCellTypeAt(geographicMapCellPosition)
+                                    this.currentCellType= geographicMap!.getCellTypeAt(geographicMapCellPosition);
+    
 
                                     }
                                 
@@ -90,21 +92,27 @@ public constructor (){
                         
                                     {
                                     
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface = gameCanvasInterface!.getLayerManager() as GeographicMapCompositeInterface;
-        
-        
+    var geographicMapCompositeInterface: GeographicMapCompositeInterface = gameCanvasInterface!.getLayerManager();
 
+                         as GeographicMapCompositeInterface;
+        
+        
+;
+    
 
     var geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;
         
         
-
-this.newGeographicMapCellPosition= geographicMapInterface!.getCellPositionAt(layer.getXP() +layer.getHalfWidth(), layer.getYP() +layer.getHalfHeight())
+;
+    
+this.newGeographicMapCellPosition= geographicMapInterface!.getCellPositionAt(layer.getXP() +layer.getHalfWidth(), layer.getYP() +layer.getHalfHeight());
+    
 
                         if(this.newGeographicMapCellPosition != this.currentGeographicMapCellPosition)
                         
                                     {
-                                    this.currentGeographicMapCellPosition= this.newGeographicMapCellPosition
+                                    this.currentGeographicMapCellPosition= this.newGeographicMapCellPosition;
+    
 
 
 
@@ -131,7 +139,8 @@ this.newGeographicMapCellPosition= geographicMapInterface!.getCellPositionAt(lay
                         if(this.currentGeographicMapCellPosition != this.previousGeographicMapCellPosition)
                         
                                     {
-                                    this.previousGeographicMapCellPosition= this.currentGeographicMapCellPosition
+                                    this.previousGeographicMapCellPosition= this.currentGeographicMapCellPosition;
+    
 
 
 

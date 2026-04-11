@@ -68,7 +68,8 @@ public constructor (downloadableItem: DownloadableItem){
 
             super();
             var downloadableItem = downloadableItem
-this.downloadableItem= downloadableItem
+this.downloadableItem= downloadableItem;
+    
 }
 
 
@@ -80,118 +81,146 @@ var document = document
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PRODUCTSEARCHLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.START, this, "toXmlNode")
+                                    logUtil!.put(this.commonStrings!.START, this, "toXmlNode");
+    
 
                                     }
                                 
 
-    var hashMap: HashMap<Any, Any> = downloadableItem!.toHashMap()!;
+    var hashMap: HashMap<any, any> = downloadableItem!.toHashMap()!;
         
         
-
+;
+    
 
     var totalTime: number = downloadableItem!.getValidTime()!.longValue()!;
         
         
-
+;
+    
 
     var calendar: Calendar = Calendar.getInstance()!;
         
         
-
+;
+    
 
     var year: number = calendar.get(Calendar.YEAR)!;
         
         
-
+;
+    
 
     var month: number = calendar.get(Calendar.MONTH)!;
         
         
-
+;
+    
 
     var day: number = calendar.get(Calendar.DAY_OF_MONTH)!;
         
         
-
+;
+    
 
     var hour: number = calendar.get(Calendar.HOUR)!;
         
         
-
+;
+    
 
     var minute: number = calendar.get(Calendar.MINUTE)!;
         
         
-
+;
+    
 
     var second: number = calendar.get(Calendar.SECOND)!;
         
         
-
-calendar.setTimeInMillis(calendar.getTimeInMillis() +totalTime)
+;
+    
+calendar.setTimeInMillis(calendar.getTimeInMillis() +totalTime);
+    
 
     var yearDelta: number = calendar.get(Calendar.YEAR)!;
         
         
-
+;
+    
 
     var monthDelta: number = calendar.get(Calendar.MONTH)!;
         
         
-
+;
+    
 
     var dayDelta: number = calendar.get(Calendar.DAY_OF_MONTH)!;
         
         
-
+;
+    
 
     var hourDelta: number = calendar.get(Calendar.HOUR)!;
         
         
-
+;
+    
 
     var minuteDelta: number = calendar.get(Calendar.MINUTE)!;
         
         
-
+;
+    
 
     var secondDelta: number = calendar.get(Calendar.SECOND)!;
         
         
-
-hashMap!.put(DownloadItemData.VALID_TIME_YEARS, Integer(Integer.valueOf(yearDelta -year)))
-hashMap!.put(DownloadItemData.VALID_TIME_MONTHS, Integer(Integer.valueOf(monthDelta -month)))
-hashMap!.put(DownloadItemData.VALID_TIME_DAYS, Integer(Integer.valueOf(dayDelta -day)))
-hashMap!.put(DownloadItemData.VALID_TIME_HOURS, Integer(Integer.valueOf(hourDelta -hour)))
-hashMap!.put(DownloadItemData.VALID_TIME_MINUTES, Integer(Integer.valueOf(minuteDelta -minute)))
-hashMap!.put(DownloadItemData.VALID_TIME_SECONDS, Integer(Integer.valueOf(secondDelta -second)))
+;
+    
+hashMap!.put(DownloadItemData.VALID_TIME_YEARS, Integer(Integer.valueOf(yearDelta -year)));
+    
+hashMap!.put(DownloadItemData.VALID_TIME_MONTHS, Integer(Integer.valueOf(monthDelta -month)));
+    
+hashMap!.put(DownloadItemData.VALID_TIME_DAYS, Integer(Integer.valueOf(dayDelta -day)));
+    
+hashMap!.put(DownloadItemData.VALID_TIME_HOURS, Integer(Integer.valueOf(hourDelta -hour)));
+    
+hashMap!.put(DownloadItemData.VALID_TIME_MINUTES, Integer(Integer.valueOf(minuteDelta -minute)));
+    
+hashMap!.put(DownloadItemData.VALID_TIME_SECONDS, Integer(Integer.valueOf(secondDelta -second)));
+    
 
     var keySet: Set = hashMap!.keys!;
         
         
-
+;
+    
 
     var node: Node = document.createElement(DownloadItemData.NAME)!;
         
         
-
+;
+    
 
     var stringUtil: StringUtil = StringUtil.getInstance()!;
         
         
+;
+    
 
-
-    var nameArray: any = {}[] = keySet!.toTypedArray()!;
+    var nameArray: any[] = keySet!.toTypedArray()!;
         
         
-
+;
+    
 
     var size: number = nameArray!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -206,14 +235,20 @@ index < size; index++)
     var name: string = nameArray[index]! as String;
         
         
+;
+    
 
+    var value: string = hashMap!.get(name as Object);
 
-    var value: string = hashMap!.get(name as Object) as String;
+                         as String;
         
         
-
-value= stringUtil!.getInstance(value)
-node.appendChild(ModDomHelper.createNameValueNodes(document, name, value))
+;
+    
+value= stringUtil!.getInstance(value);
+    
+node.appendChild(ModDomHelper.createNameValueNodes(document, name, value));
+    
 }
 
 

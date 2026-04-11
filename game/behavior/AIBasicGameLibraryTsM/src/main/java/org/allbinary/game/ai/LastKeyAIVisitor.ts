@@ -55,28 +55,35 @@ var anyType = anyType
     var basicAI: BasicAI = anyType as BasicAI;
         
         
-
+;
+    
 
     var key: number = basicAI!.getLastKey()!;
         
         
-
+;
+    
 
                         if(key !=  -1)
                         
                                     {
-                                    basicAI!.processAI(key)
+                                    basicAI!.processAI(key);
+    
 
                                     }
                                 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.VISIT, e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.VISIT, e);
+    
 }
 
 

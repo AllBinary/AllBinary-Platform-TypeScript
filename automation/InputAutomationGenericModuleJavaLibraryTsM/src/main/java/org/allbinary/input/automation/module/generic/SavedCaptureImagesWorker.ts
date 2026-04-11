@@ -96,9 +96,12 @@ public constructor (savedCaptureGenericProfileDataWorkerType: SavedCaptureGeneri
 
             super();
             var savedCaptureGenericProfileDataWorkerType = savedCaptureGenericProfileDataWorkerType
-this.savedCaptureGenericProfileDataWorkerType= savedCaptureGenericProfileDataWorkerType
-this.screenScavangerRobot= ScreenScavangerRobot()
-index= ProcessingFrameIndexFactory.next()
+this.savedCaptureGenericProfileDataWorkerType= savedCaptureGenericProfileDataWorkerType;
+    
+this.screenScavangerRobot= ScreenScavangerRobot();
+    
+index= ProcessingFrameIndexFactory.next();
+    
 }
 
 
@@ -123,48 +126,61 @@ var thread = thread
 
     public setRunning(running: boolean){
 var running = running
-this.running= running
+this.running= running;
+    
 }
 
 
     public run(){
 
         try {
-            logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.RUN)
-this.setRunning(true)
+            logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.RUN);
+    
+this.setRunning(true);
+    
 
     var timeHelper: TimeDelayHelper = new TimeDelayHelper(1000);
         
         
-
+;
+    
 
         while(this.isRunning())
         {
-timeHelper!.setStartTime()
+timeHelper!.setStartTime();
+    
 
     var frame: Long = new index as Long;
         
         
-
+;
+    
 
     var filePathStringBuffer: StringMaker = new StringMaker();
         
         
-
-filePathStringBuffer!.append(this.savedCaptureGenericProfileDataWorkerType!.getPath())
-filePathStringBuffer!.append(LongUtil.fillIn(frame.toString()))
-filePathStringBuffer!.append(MediaDataFactory.getInstance()!.JPG.getExtension())
+;
+    
+filePathStringBuffer!.append(this.savedCaptureGenericProfileDataWorkerType!.getPath());
+    
+filePathStringBuffer!.append(LongUtil.fillIn(frame.toString()));
+    
+filePathStringBuffer!.append(MediaDataFactory.getInstance()!.JPG.getExtension());
+    
 
     var filePath: string = filePathStringBuffer!.toString()!;
         
         
-
-logUtil!.put("Loading Image File Path: " +filePath, this, this.commonStrings!.RUN)
+;
+    
+logUtil!.put("Loading Image File Path: " +filePath, this, this.commonStrings!.RUN);
+    
 
     var file: File = new File(filePath);
         
         
-
+;
+    
 
                         if(file.isFile())
                         
@@ -173,31 +189,43 @@ logUtil!.put("Loading Image File Path: " +filePath, this, this.commonStrings!.RU
     var bufferedImage: BufferedImage = ImageIO.read(file)!;
         
         
-
-index++
-CapturedBufferedImagesCacheSingleton.getInstance()!.add(BufferedImageFrameCacheable(bufferedImage, frame))
+;
+    
+index++;
+    
+CapturedBufferedImagesCacheSingleton.getInstance()!.add(BufferedImageFrameCacheable(bufferedImage, frame));
+    
 
     var capturedImageEvent: CapturedImageWorkerResultsEvent = new CapturedImageWorkerResultsEvent(this, frame, bufferedImage);
         
         
-
-this.fireEvent(capturedImageEvent)
+;
+    
+this.fireEvent(capturedImageEvent);
+    
 
                                     }
                                 
                         else {
-                            logUtil!.put("Could Not Load File: " +filePath, this, this.commonStrings!.RUN)
+                            logUtil!.put("Could Not Load File: " +filePath, this, this.commonStrings!.RUN);
+    
 
                         }
                             
-logUtil!.put(CommonLabels.getInstance()!.ELAPSED +timeHelper!.getElapsed(), this, this.commonStrings!.RUN)
-this.setRunning(false)
+logUtil!.put(CommonLabels.getInstance()!.ELAPSED +timeHelper!.getElapsed(), this, this.commonStrings!.RUN);
+    
+this.setRunning(false);
+    
 }
 
-logUtil!.put(this.commonStrings!.END, this, this.commonStrings!.RUN)
-} catch(e: Exception)
+logUtil!.put(this.commonStrings!.END, this, this.commonStrings!.RUN);
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e)
+logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e);
+    
 }
 
 }

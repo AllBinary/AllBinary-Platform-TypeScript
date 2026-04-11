@@ -73,16 +73,21 @@ var collidable = collidable
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setCollided(false)
-this.setCollidable(true)
-this.collisionHelper= CollidableHelperFactory.getInstance()
+this.setCollided(false);
+    
+this.setCollidable(true);
+    
+this.collisionHelper= CollidableHelperFactory.getInstance();
+    
 }
 
 
     public init(sourceLayerInterface: AllBinaryLayer){
 var sourceLayerInterface = sourceLayerInterface
-this.setCollided(false)
-this.collisionHelper!.setOwnerLayerInterface(sourceLayerInterface)
+this.setCollided(false);
+    
+this.collisionHelper!.setOwnerLayerInterface(sourceLayerInterface);
+    
 }
 
 
@@ -101,6 +106,8 @@ var collisionLayer = collisionLayer
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.isCollision(collisionLayer);
+
+                        ;
     
 
                                     }
@@ -121,8 +128,10 @@ var collisionLayer = collisionLayer
             
     public collide(collisionLayer: CollidableCompositeLayer){
 var collisionLayer = collisionLayer
-super.collide(collisionLayer)
-this.collided= true
+super.collide(collisionLayer);
+    
+this.collided= true;
+    
 }
 
 
@@ -140,7 +149,8 @@ var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterfac
     var layerInterface: AllBinaryLayer = collidableInterfaceCompositeInterface as AllBinaryLayer;
         
         
-
+;
+    
 
                         if(this.ownerLayer!.getGroupInterface()[0] != layerInterface!.getGroupInterface()[0])
                         
@@ -177,8 +187,10 @@ var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterfac
             
     public collide(collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface){
 var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
-damageUtil!.process(this.ownerLayer as DamageableInterface, collidableInterfaceCompositeInterface as DamageableInterface)
-this.collided= true
+damageUtil!.process(this.ownerLayer as DamageableInterface, collidableInterfaceCompositeInterface as DamageableInterface);
+    
+this.collided= true;
+    
 }
 
 
@@ -205,7 +217,8 @@ var layerInterface = layerInterface
 
     setCollided(collided: boolean){
 var collided = collided
-this.collided= collided
+this.collided= collided;
+    
 }
 
 

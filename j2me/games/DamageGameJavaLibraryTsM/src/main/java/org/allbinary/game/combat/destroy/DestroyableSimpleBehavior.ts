@@ -34,7 +34,8 @@ public constructor (ownerLayer: CollidableCompositeLayer){
 
             super();
             var ownerLayer = ownerLayer
-this.ownerLayer= ownerLayer
+this.ownerLayer= ownerLayer;
+    
 }
 
 
@@ -50,12 +51,14 @@ this.ownerLayer= ownerLayer
 
     public setDestroyed(destroyed: boolean){
 var destroyed = destroyed
-this.destroyed= destroyed
+this.destroyed= destroyed;
+    
 
                         if(this.isDestroyed())
                         
                                     {
-                                    DestroyedLayerProcessor.getInstance()!.add(this.ownerLayer)
+                                    DestroyedLayerProcessor.getInstance()!.add(this.ownerLayer);
+    
 
                                     }
                                 

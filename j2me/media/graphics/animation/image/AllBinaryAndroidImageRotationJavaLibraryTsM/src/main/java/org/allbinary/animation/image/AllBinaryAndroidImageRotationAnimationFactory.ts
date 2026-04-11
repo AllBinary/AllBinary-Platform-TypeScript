@@ -159,10 +159,14 @@ public constructor (image: Image, width: number, height: number, dx: number, dy:
 
                             //For kotlin this is before the body of the constructor.
                     
-this.animationFactoryInitializationVisitor!.dx= dx
-this.animationFactoryInitializationVisitor!.dy= dy
-this.animationFactoryInitializationVisitor!.originalDx= dx
-this.animationFactoryInitializationVisitor!.originalDy= dy
+this.animationFactoryInitializationVisitor!.dx= dx;
+    
+this.animationFactoryInitializationVisitor!.dy= dy;
+    
+this.animationFactoryInitializationVisitor!.originalDx= dx;
+    
+this.animationFactoryInitializationVisitor!.originalDy= dy;
+    
 }
 
 public constructor (image: Image, width: number, height: number, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory)                        
@@ -180,10 +184,14 @@ public constructor (image: Image, width: number, height: number, dx: number, dy:
 
                             //For kotlin this is before the body of the constructor.
                     
-this.animationFactoryInitializationVisitor!.dx= dx
-this.animationFactoryInitializationVisitor!.dy= dy
-this.animationFactoryInitializationVisitor!.originalDx= dx
-this.animationFactoryInitializationVisitor!.originalDy= dy
+this.animationFactoryInitializationVisitor!.dx= dx;
+    
+this.animationFactoryInitializationVisitor!.dy= dy;
+    
+this.animationFactoryInitializationVisitor!.originalDx= dx;
+    
+this.animationFactoryInitializationVisitor!.originalDy= dy;
+    
 }
 
 public constructor (image: Image, width: number, height: number, dx: number, dy: number, angleIncrement: number, animationBehaviorFactory: AnimationBehaviorFactory, resizeCanvasForRotation: boolean)                        
@@ -203,10 +211,14 @@ public constructor (image: Image, width: number, height: number, dx: number, dy:
 
                             //For kotlin this is before the body of the constructor.
                     
-this.animationFactoryInitializationVisitor!.dx= dx
-this.animationFactoryInitializationVisitor!.dy= dy
-this.animationFactoryInitializationVisitor!.originalDx= dx
-this.animationFactoryInitializationVisitor!.originalDy= dy
+this.animationFactoryInitializationVisitor!.dx= dx;
+    
+this.animationFactoryInitializationVisitor!.dy= dy;
+    
+this.animationFactoryInitializationVisitor!.originalDx= dx;
+    
+this.animationFactoryInitializationVisitor!.originalDy= dy;
+    
 }
 
 public constructor (image: Image, width: number, height: number, animationBehaviorFactory: AnimationBehaviorFactory)                        
@@ -222,8 +234,10 @@ public constructor (image: Image, width: number, height: number, animationBehavi
 
                             //For kotlin this is before the body of the constructor.
                     
-this.angleIncrement= (AngleFactory.getInstance()!.TOTAL_ANGLE /GameConfigurationCentral.getInstance()!.getGameControlFidelity()).toShort()
-this.resizeCanvasForRotation= false
+this.angleIncrement= (AngleFactory.getInstance()!.TOTAL_ANGLE /GameConfigurationCentral.getInstance()!.getGameControlFidelity()).toShort();
+    
+this.resizeCanvasForRotation= false;
+    
 }
 
 public constructor (image: Image, width: number, height: number, angleIncrement: number, animationBehaviorFactory: AnimationBehaviorFactory)                        
@@ -240,8 +254,10 @@ public constructor (image: Image, width: number, height: number, angleIncrement:
 
                             //For kotlin this is before the body of the constructor.
                     
-this.angleIncrement= angleIncrement
-this.resizeCanvasForRotation= false
+this.angleIncrement= angleIncrement;
+    
+this.resizeCanvasForRotation= false;
+    
 }
 
 public constructor (image: Image, width: number, height: number, angleIncrement: number, animationBehaviorFactory: AnimationBehaviorFactory, resizeCanvasForRotation: boolean)                        
@@ -259,8 +275,10 @@ public constructor (image: Image, width: number, height: number, angleIncrement:
 
                             //For kotlin this is before the body of the constructor.
                     
-this.angleIncrement= angleIncrement
-this.resizeCanvasForRotation= resizeCanvasForRotation
+this.angleIncrement= angleIncrement;
+    
+this.resizeCanvasForRotation= resizeCanvasForRotation;
+    
 }
 
 
@@ -271,9 +289,12 @@ this.resizeCanvasForRotation= resizeCanvasForRotation
     var features: Features = Features.getInstance()!;
         
         
+;
+    
 
+                        if(this.resizeCanvasForRotation && !features.isDefault(OpenGLFeatureFactory.getInstance()!.OPENGL);
 
-                        if(this.resizeCanvasForRotation && !features.isDefault(OpenGLFeatureFactory.getInstance()!.OPENGL))
+                        )
                         
                                     {
                                     
@@ -281,6 +302,8 @@ this.resizeCanvasForRotation= resizeCanvasForRotation
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return ImageCopyUtil.getInstance()!.createImage(this.getImage(), 1.44f, false);
+
+                        ;
     
 
                                     }
@@ -291,6 +314,8 @@ this.resizeCanvasForRotation= resizeCanvasForRotation
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getImage();
+
+                        ;
     
 
                         }
@@ -306,22 +331,26 @@ this.resizeCanvasForRotation= resizeCanvasForRotation
     var canvasImage: Image = this.getCanvasImage()!;
         
         
-
+;
+    
 
     var scaledImage: Image = animationFactoryImageScaleUtil!.createImage(canvasImage, this.animationFactoryInitializationVisitor!.width, this.animationFactoryInitializationVisitor!.height, this.scaleProperties!.scaleWidth, this.scaleProperties!.scaleHeight)!;
         
         
-
+;
+    
 
     var copyOfScaledImage: Image = ImageCopyUtil.getInstance()!.createImage(scaledImage)!;
         
         
-
+;
+    
 
                         if(this.animationFactoryInitializationVisitor!.dx != 0 || this.animationFactoryInitializationVisitor!.dy != 0)
                         
                                     {
-                                    animationFactoryImageScaleUtil!.processAdjust(this)
+                                    animationFactoryImageScaleUtil!.processAdjust(this);
+    
 
 
 

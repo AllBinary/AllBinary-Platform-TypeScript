@@ -51,8 +51,10 @@ public constructor (){
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.VIEW) == 0)
                         
                                     {
-                                    this.setName("Validation User View")
-this.setObjectFile("views.admin.payment.gateways.SelectNewValidationView")
+                                    this.setName("Validation User View");
+    
+this.setObjectFile("views.admin.payment.gateways.SelectNewValidationView");
+    
 
                                     }
                                 
@@ -69,6 +71,8 @@ this.setObjectFile("views.admin.payment.gateways.SelectNewValidationView")
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.doStartTag();
+
+                        ;
     
 
                                     }
@@ -77,9 +81,12 @@ this.setObjectFile("views.admin.payment.gateways.SelectNewValidationView")
 
 
                             throw Error("Command Null")
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
+    
 
 
 

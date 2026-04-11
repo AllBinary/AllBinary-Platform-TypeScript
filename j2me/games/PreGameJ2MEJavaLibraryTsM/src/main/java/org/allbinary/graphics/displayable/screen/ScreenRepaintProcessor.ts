@@ -33,14 +33,16 @@ public constructor (displayable: Displayable){
 
             super();
             var displayable = displayable
-this.displayable= displayable
+this.displayable= displayable;
+    
 }
 
 
                 //@Throws(Error::class)
             
     public process(){
-ScreenRepaintUtil.repaint(displayable)
+ScreenRepaintUtil.repaint(displayable);
+    
 }
 
 

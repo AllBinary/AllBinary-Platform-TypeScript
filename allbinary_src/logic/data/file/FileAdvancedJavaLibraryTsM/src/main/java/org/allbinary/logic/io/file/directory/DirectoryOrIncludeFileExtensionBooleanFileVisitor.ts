@@ -44,7 +44,8 @@ public constructor (filterStringBasicArrayList: BasicArrayList)
                     
 this.includesString= 
                                         null
-                                    
+                                    ;
+    
 }
 
 public constructor (filterStringBasicArrayList: BasicArrayList, includesString: string)                        
@@ -58,7 +59,8 @@ public constructor (filterStringBasicArrayList: BasicArrayList, includesString: 
 
                             //For kotlin this is before the body of the constructor.
                     
-this.includesString= includesString
+this.includesString= includesString;
+    
 }
 
 
@@ -88,6 +90,8 @@ var file = file
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.visit(file);
+
+                        ;
     
 
                                     }

@@ -50,18 +50,24 @@ public constructor (pathFindingNodeCostInfoFactoryInterface: PathFindingNodeCost
                 //var pathFindingNodeCostInfoFactoryInterface = pathFindingNodeCostInfoFactoryInterface
     //var startPathFindingNodeList = startPathFindingNodeList
     //var endPathFindingNodeList = endPathFindingNodeList
-this.pathFindingNodeCostInfoFactoryInterface= pathFindingNodeCostInfoFactoryInterface
-this.startPathFindingNodeList= startPathFindingNodeList
-this.endPathFindingNodeList= endPathFindingNodeList
+this.pathFindingNodeCostInfoFactoryInterface= pathFindingNodeCostInfoFactoryInterface;
+    
+this.startPathFindingNodeList= startPathFindingNodeList;
+    
+this.endPathFindingNodeList= endPathFindingNodeList;
+    
 }
 
 public constructor (pathFindingNodeCostInfoFactoryInterface: PathFindingNodeCostInfoFactoryBase){
 
             super();
                 //var pathFindingNodeCostInfoFactoryInterface = pathFindingNodeCostInfoFactoryInterface
-this.pathFindingNodeCostInfoFactoryInterface= pathFindingNodeCostInfoFactoryInterface
-this.startPathFindingNodeList= BasicArrayList(1)
-this.endPathFindingNodeList= BasicArrayList(1)
+this.pathFindingNodeCostInfoFactoryInterface= pathFindingNodeCostInfoFactoryInterface;
+    
+this.startPathFindingNodeList= BasicArrayList(1);
+    
+this.endPathFindingNodeList= BasicArrayList(1);
+    
 }
 
 
@@ -97,19 +103,22 @@ this.endPathFindingNodeList= BasicArrayList(1)
 
     public addStartPathFindingNode(startPathFindingNode: PathFindingNode){
 var startPathFindingNode = startPathFindingNode
-this.startPathFindingNodeList!.add(startPathFindingNode)
+this.startPathFindingNodeList!.add(startPathFindingNode);
+    
 }
 
 
     public addEndPathFindingNode(endPathFindingNode: PathFindingNode){
 var endPathFindingNode = endPathFindingNode
-this.endPathFindingNodeList!.add(endPathFindingNode)
+this.endPathFindingNodeList!.add(endPathFindingNode);
+    
 }
 
 
     public setPathFinder(pathFinder: GeographicPathFinderBase){
 var pathFinder = pathFinder
-this.pathFinder= pathFinder
+this.pathFinder= pathFinder;
+    
 }
 
 

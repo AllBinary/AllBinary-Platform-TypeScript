@@ -18,13 +18,16 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { awt } from "../../../../../../java/awt.js";
 
     
 import { BufferedImage } from "../../../../../../java/awt/image/BufferedImage.js";
 
     
-import { Vector } from "../../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../../java/util/Vector.js";
 
     
 import { ImageOutputData } from "../../../../../../org/allbinary/input/automation/ImageOutputData.js";
@@ -100,13 +103,17 @@ var frame = frame
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
+;
+    
 
     var motionRectanglesResultsFrameCacheable: MotionRectanglesResultsFrameCacheable = 
-                                    (getInstance as AutomaticCacheInterface).get(frame) as MotionRectanglesResultsFrameCacheable;
-        
-        
+                                    (getInstance as AutomaticCacheInterface).get(frame);
 
+                         as MotionRectanglesResultsFrameCacheable;
+        
+        
+;
+    
 
                         if(motionRectanglesResultsFrameCacheable != 
                                     null
@@ -117,21 +124,34 @@ var frame = frame
     var motionRectangles: MotionRectangles = motionRectanglesResultsFrameCacheable!.getMotionRectangles()!;
         
         
+;
+    
+this.save(motionRectangles, frame);
+    
+motionRectanglesResultsFrameCacheable= 
+                                    (getInstance as AutomaticCacheInterface).get(frame);
 
-this.save(motionRectangles, frame)
+                         as MotionRectanglesResultsFrameCacheable;
+    
+motionRectangles= motionRectanglesResultsFrameCacheable!.getMotionRectangles();
+    
+this.save(motionRectangles, frame);
+    
 motionRectanglesResultsFrameCacheable= 
-                                    (getInstance as AutomaticCacheInterface).get(frame) as MotionRectanglesResultsFrameCacheable
-motionRectangles= motionRectanglesResultsFrameCacheable!.getMotionRectangles()
-this.save(motionRectangles, frame)
-motionRectanglesResultsFrameCacheable= 
-                                    (getInstance as AutomaticCacheInterface).get(frame) as MotionRectanglesResultsFrameCacheable
-motionRectangles= motionRectanglesResultsFrameCacheable!.getMotionRectangles()
-this.save(motionRectangles, frame)
+                                    (getInstance as AutomaticCacheInterface).get(frame);
+
+                         as MotionRectanglesResultsFrameCacheable;
+    
+motionRectangles= motionRectanglesResultsFrameCacheable!.getMotionRectangles();
+    
+this.save(motionRectangles, frame);
+    
 
                                     }
                                 
                         else {
-                            logUtil!.put("No Motion Rectangle Results for Frame: " +frame, this, commonStrings!.SAVE)
+                            logUtil!.put("No Motion Rectangle Results for Frame: " +frame, this, commonStrings!.SAVE);
+    
 
                         }
                             
@@ -147,67 +167,92 @@ var frame = frame
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
+;
+    
 
     var filePathStringBuffer: StringMaker = new StringMaker();
         
         
-
-filePathStringBuffer!.append(ImageOutputData.SAVE_PATH)
-filePathStringBuffer!.append(LongUtil.fillIn(frame.toString()))
-filePathStringBuffer!.append("_")
-filePathStringBuffer!.append(motionRectangles!.getName())
+;
+    
+filePathStringBuffer!.append(ImageOutputData.SAVE_PATH);
+    
+filePathStringBuffer!.append(LongUtil.fillIn(frame.toString()));
+    
+filePathStringBuffer!.append("_");
+    
+filePathStringBuffer!.append(motionRectangles!.getName());
+    
 
     var filePathStringBuffer1: StringMaker = new StringMaker();
         
         
-
-filePathStringBuffer1!.append(filePathStringBuffer!.toString())
-filePathStringBuffer1!.append("_1")
-filePathStringBuffer1!.append(MediaDataFactory.getInstance()!.JPG.getExtension())
+;
+    
+filePathStringBuffer1!.append(filePathStringBuffer!.toString());
+    
+filePathStringBuffer1!.append("_1");
+    
+filePathStringBuffer1!.append(MediaDataFactory.getInstance()!.JPG.getExtension());
+    
 
     var filePathStringBuffer2: StringMaker = new StringMaker();
         
         
-
-filePathStringBuffer2!.append(filePathStringBuffer!.toString())
-filePathStringBuffer2!.append("_2")
-filePathStringBuffer2!.append(MediaDataFactory.getInstance()!.JPG.getExtension())
+;
+    
+filePathStringBuffer2!.append(filePathStringBuffer!.toString());
+    
+filePathStringBuffer2!.append("_2");
+    
+filePathStringBuffer2!.append(MediaDataFactory.getInstance()!.JPG.getExtension());
+    
 
     var filePathStringBuffer3: StringMaker = new StringMaker();
         
         
-
-filePathStringBuffer3!.append(filePathStringBuffer!.toString())
-filePathStringBuffer3!.append(MediaDataFactory.getInstance()!.JPG.getExtension())
-logUtil!.put("Motion Image File Path 1: " +filePathStringBuffer1!.toString(), this, commonStrings!.SAVE)
-logUtil!.put("Motion Image File Path 2: " +filePathStringBuffer2!.toString(), this, commonStrings!.SAVE)
-logUtil!.put("Motion Image File Path 2: " +filePathStringBuffer3!.toString(), this, commonStrings!.SAVE)
+;
+    
+filePathStringBuffer3!.append(filePathStringBuffer!.toString());
+    
+filePathStringBuffer3!.append(MediaDataFactory.getInstance()!.JPG.getExtension());
+    
+logUtil!.put("Motion Image File Path 1: " +filePathStringBuffer1!.toString(), this, commonStrings!.SAVE);
+    
+logUtil!.put("Motion Image File Path 2: " +filePathStringBuffer2!.toString(), this, commonStrings!.SAVE);
+    
+logUtil!.put("Motion Image File Path 2: " +filePathStringBuffer3!.toString(), this, commonStrings!.SAVE);
+    
 
     var bufferedImageCacheables: BufferedImageCacheable[] = new Array(NUMBER_OF_IMAGES);
         
         
-
+;
+    
 
     var imageComparisonInfo: ImageComparisonResult = motionRectangles!.getImageComparisonResult()!;
         
         
-
+;
+    
 
     var originalBufferedImage: BufferedImage = imageComparisonInfo!.getBufferedImages()[0]!;
         
         
-
+;
+    
 
     var bufferedImageInfo: BufferedImageInfo = BufferedImageInfoFactory.getInstance(imageComparisonInfo!.imageWidth, imageComparisonInfo!.imageHeight, originalBufferedImage!.getType())!;
         
         
-
+;
+    
 
     var poolInterface: PoolInterface = BufferedImagePoolSingleton.getInstance()!;
         
         
-
+;
+    
 
 
 
@@ -218,22 +263,29 @@ logUtil!.put("Motion Image File Path 2: " +filePathStringBuffer3!.toString(), th
         
 index < NUMBER_OF_IMAGES; index++)
         {
-bufferedImageCacheables[index]= poolInterface!.remove(bufferedImageInfo) as BufferedImageCacheable
+bufferedImageCacheables[index]= poolInterface!.remove(bufferedImageInfo);
+
+                         as BufferedImageCacheable;
+    
 }
 
-bufferedImageCacheables[0]!.getBufferedImage()!.setData(imageComparisonInfo!.getBufferedImages()[1]!.getData())
+bufferedImageCacheables[0]!.getBufferedImage()!.setData(imageComparisonInfo!.getBufferedImages()[1]!.getData());
+    
 
                         if(NUMBER_OF_IMAGES > 1)
                         
                                     {
-                                    bufferedImageCacheables[1]!.getBufferedImage()!.setData(imageComparisonInfo!.getBufferedImages()[1]!.getData())
+                                    bufferedImageCacheables[1]!.getBufferedImage()!.setData(imageComparisonInfo!.getBufferedImages()[1]!.getData());
+    
 
                                     }
                                 
 
     var bufferedImageGraphicsArray: Graphics[]
-
-bufferedImageGraphicsArray= new Array(NUMBER_OF_IMAGES)
+;
+    
+bufferedImageGraphicsArray= new Array(NUMBER_OF_IMAGES);
+    
 
 
 
@@ -244,19 +296,22 @@ bufferedImageGraphicsArray= new Array(NUMBER_OF_IMAGES)
         
 index < NUMBER_OF_IMAGES; index++)
         {
-bufferedImageGraphicsArray[index]= bufferedImageCacheables[index]!.getBufferedImage()!.getGraphics()
+bufferedImageGraphicsArray[index]= bufferedImageCacheables[index]!.getBufferedImage()!.getGraphics();
+    
 }
 
 
     var rectangelList: Vector = motionRectangles!.getVector()!;
         
         
-
+;
+    
 
     var size: number = rectangelList!.length!;
         
         
-
+;
+    
 
 
 
@@ -268,15 +323,19 @@ bufferedImageGraphicsArray[index]= bufferedImageCacheables[index]!.getBufferedIm
 index2 < size; index2++)
         {
 
-    var motionRectangle: MotionRectangle = rectangelList!.get(index2) as MotionRectangle;
-        
-        
+    var motionRectangle: MotionRectangle = rectangelList!.get(index2);
 
+                         as MotionRectangle;
+        
+        
+;
+    
 
     var rectangle: Rectangle = motionRectangle!.getRectangle()!;
         
         
-
+;
+    
 
 
 
@@ -287,8 +346,10 @@ index2 < size; index2++)
         
 index < NUMBER_OF_IMAGES; index++)
         {
-bufferedImageGraphicsArray[index]!.setColor(Color.ORANGE)
-bufferedImageGraphicsArray[index]!.drawRect(rectangle.x, rectangle.y, rectangle.width, rectangle.height)
+bufferedImageGraphicsArray[index]!.setColor(Color.ORANGE);
+    
+bufferedImageGraphicsArray[index]!.drawRect(rectangle.x, rectangle.y, rectangle.width, rectangle.height);
+    
 }
 
 }
@@ -297,21 +358,25 @@ bufferedImageGraphicsArray[index]!.drawRect(rectangle.x, rectangle.y, rectangle.
     var imagePersistanceUtil: ImagePersistanceUtil = ImagePersistanceUtil.getInstance()!;
         
         
-
+;
+    
 
                         if(NUMBER_OF_IMAGES > 1)
                         
                                     {
-                                    imagePersistanceUtil!.saveWithImageIO(filePathStringBuffer1!.toString(), bufferedImageCacheables[1]!.getBufferedImage())
+                                    imagePersistanceUtil!.saveWithImageIO(filePathStringBuffer1!.toString(), bufferedImageCacheables[1]!.getBufferedImage());
+    
 
                                     }
                                 
-imagePersistanceUtil!.saveWithImageIO(filePathStringBuffer2!.toString(), bufferedImageCacheables[0]!.getBufferedImage())
+imagePersistanceUtil!.saveWithImageIO(filePathStringBuffer2!.toString(), bufferedImageCacheables[0]!.getBufferedImage());
+    
 
                         if(NUMBER_OF_IMAGES > 2)
                         
                                     {
-                                    imagePersistanceUtil!.saveWithImageIO(filePathStringBuffer3!.toString(), bufferedImageCacheables[2]!.getBufferedImage())
+                                    imagePersistanceUtil!.saveWithImageIO(filePathStringBuffer3!.toString(), bufferedImageCacheables[2]!.getBufferedImage());
+    
 
                                     }
                                 

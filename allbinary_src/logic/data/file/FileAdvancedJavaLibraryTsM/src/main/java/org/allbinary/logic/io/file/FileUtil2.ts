@@ -70,7 +70,7 @@ private constructor (){
             }
 
 
-    public loadFileAsList(file: AbFile, max: number, byteArray1: ByteArray): BasicArrayList{
+    public loadFileAsList(file: AbFile, max: number, byteArray1: number[]): BasicArrayList{
     //var file = file
     //var max = max
     //var byteArray1 = byteArray1
@@ -80,13 +80,18 @@ private constructor (){
             ;
         
         
-
+;
+    
 
         try {
-            inputStream= AbFileInputStream(file)
-} catch(e: Exception)
+            inputStream= AbFileInputStream(file);
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.ADD, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.ADD, e);
+    
 }
 
 
@@ -94,6 +99,8 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.ADD, e)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return SimpleFileUtil.getInstance()!.loadFileAsList(inputStream, max, byteArray1);
+
+                        ;
     
 }
 

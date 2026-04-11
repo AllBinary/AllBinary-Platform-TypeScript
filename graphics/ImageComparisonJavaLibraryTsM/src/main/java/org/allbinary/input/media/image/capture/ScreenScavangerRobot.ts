@@ -18,13 +18,16 @@
 
 
 
+            import Hashtable from "@ohos.util.HashMap";
+        
 import { awt } from "../../../../../../java/awt.js";
 
     
 import { BufferedImage } from "../../../../../../java/awt/image/BufferedImage.js";
 
     
-import { Hashtable } from "../../../../../../java/util/Hashtable.js";
+
+//import { Hashtable } from "../../../../../../java/util/Hashtable.js";
 
     
 import { InputRobotFactory } from "../../../../../../org/allbinary/input/automation/robot/InputRobotFactory.js";
@@ -61,39 +64,50 @@ public constructor (){
                 //@Throws(Error::class)
             
     public getScreenAsBufferedImages(): BufferedImage[]{
-logUtil!.put(this.commonStrings!.START, this, "getScreenAsBufferedImages")
+logUtil!.put(this.commonStrings!.START, this, "getScreenAsBufferedImages");
+    
 
     var dimScreenSize: Dimension = Toolkit.getDefaultToolkit()!.getScreenSize()!;
         
         
-
+;
+    
 
     var rectScreenSize: Rectangle = new Rectangle(dimScreenSize);
         
         
+;
+    
 
-
-    var robotHashtable: Hashtable<Any, Any> = InputRobotFactory.getInstance()!.get()!;
+    var robotHashtable: Hashtable<any, any> = InputRobotFactory.getInstance()!.get()!;
         
         
-
+;
+    
 
     var bufferedImageArray: BufferedImage[] = new Array(1);
         
         
-
+;
+    
 
     var index: number = 0;
         
         
+;
+    
 
+    var inputRobotInterface: InputRobotInterface = robotHashtable!.get("Java Robot");
 
-    var inputRobotInterface: InputRobotInterface = robotHashtable!.get("Java Robot") as InputRobotInterface;
+                         as InputRobotInterface;
         
         
-
-bufferedImageArray[index]= inputRobotInterface!.createScreenCapture(rectScreenSize)
-logUtil!.put("Finish", this, "getScreenAsBufferedImages")
+;
+    
+bufferedImageArray[index]= inputRobotInterface!.createScreenCapture(rectScreenSize);
+    
+logUtil!.put("Finish", this, "getScreenAsBufferedImages");
+    
 
 
 

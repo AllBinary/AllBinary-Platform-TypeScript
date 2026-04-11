@@ -41,7 +41,7 @@ export class GameTypeFactory
 }
 
 
-    public NULL_GAME_TYPE_ARRAY: GameType[] = new Array(0);
+    public NULL_GAME_TYPE_ARRAY: GameType[] = [];
         
         
 

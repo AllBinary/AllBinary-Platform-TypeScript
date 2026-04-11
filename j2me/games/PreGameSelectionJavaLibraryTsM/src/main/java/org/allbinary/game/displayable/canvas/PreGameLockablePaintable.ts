@@ -54,8 +54,10 @@ var lockedIndex = lockedIndex
 
                             //For kotlin this is before the body of the constructor.
                     
-this.paintableForm= paintableForm
-this.halfWidth= GameFeatureImageCacheFactory.getInstance()!.get(LockedResources.getInstance()!.LOCKED_DEMO_GAME_FEATURE_RESOURCE)!.getWidth() /2
+this.paintableForm= paintableForm;
+    
+this.halfWidth= GameFeatureImageCacheFactory.getInstance()!.get(LockedResources.getInstance()!.LOCKED_DEMO_GAME_FEATURE_RESOURCE)!.getWidth() /2;
+    
 }
 
 
@@ -68,7 +70,8 @@ var y = y
                         if(LockedUtil.getInstance()!.isLockedFeature() && this.getPaintableForm()!.getSelectedIndex() >= this.getLockedIndex())
                         
                                     {
-                                    this.getAnimation()!.paint(graphics, this.getPaintableForm()!.getDx() -this.halfWidth, this.getPaintableForm()!.getDy() +34)
+                                    this.getAnimation()!.paint(graphics, this.getPaintableForm()!.getDx() -this.halfWidth, this.getPaintableForm()!.getDy() +34);
+    
 
                                     }
                                 

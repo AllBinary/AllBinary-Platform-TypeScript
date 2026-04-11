@@ -103,8 +103,10 @@ public constructor (groupInterface: Group[], isUnitProducer: boolean)
     var basicColorFactory: BasicColorFactory = BasicColorFactory.getInstance()!;
         
         
-
-this.atLeastOneHouseGameNotificationEvent= GameNotificationEvent(this, "Build At Least One House First", SmallIntegerSingletonFactory.getInstance()!.getInstance(2), basicColorFactory!.WHITE, BooleanFactory.getInstance()!.FALSE)
+;
+    
+this.atLeastOneHouseGameNotificationEvent= GameNotificationEvent(this, "Build At Least One House First", SmallIntegerSingletonFactory.getInstance()!.getInstance(2), basicColorFactory!.WHITE, BooleanFactory.getInstance()!.FALSE);
+    
 }
 
 
@@ -112,18 +114,22 @@ this.atLeastOneHouseGameNotificationEvent= GameNotificationEvent(this, "Build At
             
     public setAllBinaryGameLayerManager(allBinaryGameLayerManager: AllBinaryGameLayerManager){
     //var allBinaryGameLayerManager = allBinaryGameLayerManager
-super.setAllBinaryGameLayerManager(allBinaryGameLayerManager)
+super.setAllBinaryGameLayerManager(allBinaryGameLayerManager);
+    
 
     var geographicMapCompositeInterface: GeographicMapCompositeInterface = allBinaryGameLayerManager as GeographicMapCompositeInterface;
         
         
-
+;
+    
 
     var geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;
         
         
-
-this.atLeastOneHouseGameNotificationEvent!.setBasicColorP(geographicMapInterface!.getForegroundBasicColor())
+;
+    
+this.atLeastOneHouseGameNotificationEvent!.setBasicColorP(geographicMapInterface!.getForegroundBasicColor());
+    
 }
 
 
@@ -163,27 +169,34 @@ var layerInterface = layerInterface
     var advancedRTSPlayerLayerInterface: AdvancedRTSPlayerLayerInterface = rtsPlayerLayerInterface as AdvancedRTSPlayerLayerInterface;
         
         
-
+;
+    
 
     var advancedPlayerOwnedRTSLayers: AdvancedPlayerOwnedRTSLayers = advancedRTSPlayerLayerInterface!.getAdvancedPlayerOwnedRTSLayers()!;
         
         
-
+;
+    
 
     var totalHouses: number = advancedPlayerOwnedRTSLayers!.getHouseList()!.size()!;
         
         
-
+;
+    
 
                         if(totalHouses < 1 && layerInterface!.getName()!.indexOf(" House") < 0)
                         
                                     {
-                                    rtsPlayerLayerInterface!.add(ErrorSound.getInstance())
+                                    rtsPlayerLayerInterface!.add(ErrorSound.getInstance());
+    
 
-                        if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface())
+                        if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface();
+
+                        )
                         
                                     {
-                                    GameNotificationEventHandler.getInstance()!.fireEvent(atLeastOneHouseGameNotificationEvent)
+                                    GameNotificationEventHandler.getInstance()!.fireEvent(atLeastOneHouseGameNotificationEvent);
+    
 
                                     }
                                 
@@ -201,6 +214,8 @@ var layerInterface = layerInterface
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.isBuildAttemptValid(rtsPlayerLayerInterface, layerInterface);
+
+                        ;
     
 }
 
@@ -215,18 +230,22 @@ var layerInterface = layerInterface
 var rtsPlayerLayerInterface = rtsPlayerLayerInterface
 var layerManager = layerManager
 var layerInterface = layerInterface
-BUILD_BUILDING_RTS_LAYER_EVENT.setRtsLayer(layerInterface)
-BuildingEventHandler.getInstance()!.fireEvent(BUILD_BUILDING_RTS_LAYER_EVENT)
+BUILD_BUILDING_RTS_LAYER_EVENT.setRtsLayer(layerInterface);
+    
+BuildingEventHandler.getInstance()!.fireEvent(BUILD_BUILDING_RTS_LAYER_EVENT);
+    
 
                         if(
                                     (rtsPlayerLayerInterface as AdvancedRTSPlayerLayerInterface).isLocalPlayer())
                         
                                     {
-                                    LocalPlayerBuildingEventHandler.getInstance()!.fireEvent(BUILD_BUILDING_RTS_LAYER_EVENT)
+                                    LocalPlayerBuildingEventHandler.getInstance()!.fireEvent(BUILD_BUILDING_RTS_LAYER_EVENT);
+    
 
                                     }
                                 
-super.add(rtsPlayerLayerInterface, layerManager, layerInterface)
+super.add(rtsPlayerLayerInterface, layerManager, layerInterface);
+    
 }
 
 

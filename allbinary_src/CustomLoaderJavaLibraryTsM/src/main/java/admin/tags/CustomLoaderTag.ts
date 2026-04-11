@@ -54,7 +54,7 @@ export class CustomLoaderTag extends CustomTagSupport {
 
     private webappPath: string
 
-    private propertiesHashMap: HashMap<Any, Any>
+    private propertiesHashMap: HashMap<any, any>
 public constructor (){
 
             super();
@@ -63,13 +63,15 @@ public constructor (){
 
     public setCommand(command: string){
 var command = command
-this.command= command
+this.command= command;
+    
 }
 
 
     public setWebappPath(value: string){
 var value = value
-this.webappPath= value
+this.webappPath= value;
+    
 }
 
 
@@ -83,48 +85,59 @@ this.webappPath= value
                             getInstance(this.propertiesHashMap, pageContext)!;
         
         
+;
+    
 
-
-    var helperClass: KClass<*> = anyType!::class!;
+    var helperClass: Function = anyType!constructor!;
         
         
+;
+    
 
-
-    var methodParams: KClass<*>[] = 
+    var methodParams: Function[] = 
                                                         [
-                                                            this.webappPath!.::class
+                                                            this.webappPath!.constructor
                                                         ];
         
         
+;
+    
 
-
-    var methodArgs: any = {}[] = 
+    var methodArgs: any[] = 
                                                         [
                                                             this.webappPath
                                                         ];
         
         
-
+;
+    
 
     var setMethod: Method = helperClass!.getMethod("setWebappPath", methodParams)!;
         
         
+;
+    
+setMethod!.invoke(anyType, methodArgs);
+    
 
-setMethod!.invoke(anyType, methodArgs)
-} catch(e: LicensingException)
+                //: 
+} catch(e) 
             {
 
 
 
                             throw e
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "setCustomLoaderWebappPath()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "setCustomLoaderWebappPath()", e);
+    
 
                                     }
                                 
@@ -142,7 +155,8 @@ setMethod!.invoke(anyType, methodArgs)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.START, this, "doStartTag()")
+                                    logUtil!.put(this.commonStrings!.START, this, "doStartTag()");
+    
 
                                     }
                                 
@@ -152,12 +166,14 @@ setMethod!.invoke(anyType, methodArgs)
                                 )
                         
                                     {
-                                    this.propertiesHashMap= HashMap<Any, Any>()
+                                    this.propertiesHashMap= HashMap<any, any>();
+    
 
                         if(command.compareTo(org.allbinary.globals.GLOBALS2.SET) == 0)
                         
                                     {
-                                    this.setCustomLoaderWebappPath()
+                                    this.setCustomLoaderWebappPath();
+    
 
                                     }
                                 
@@ -170,9 +186,12 @@ setMethod!.invoke(anyType, methodArgs)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return SKIP_BODY;
     
-} catch(e: LicensingException)
+
+                //: 
+} catch(e) 
             {
-AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e);
+    
 
 
 
@@ -180,9 +199,12 @@ AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
                         return SKIP_BODY;
     
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
-AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
+    
 
 
 

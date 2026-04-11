@@ -48,7 +48,8 @@ var gameInput = gameInput
 
                             //For kotlin this is before the body of the constructor.
                     
-this.numberOfLayersLeft= numberOfEnemiesLeft
+this.numberOfLayersLeft= numberOfEnemiesLeft;
+    
 }
 
 
@@ -64,14 +65,16 @@ var allBinaryLayerManager = allBinaryLayerManager
                         if(allBinaryLayerManager!.getSize() < this.numberOfLayersLeft)
                         
                                     {
-                                    this.setIndex(1)
+                                    this.setIndex(1);
+    
 
                                     }
                                 
 
                                     }
                                 
-super.processAI(allBinaryLayerManager)
+super.processAI(allBinaryLayerManager);
+    
 }
 
 

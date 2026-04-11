@@ -25,7 +25,7 @@ import { BasicColor } from "../../../org/allbinary/graphics/color/BasicColor.js"
 interface VectorAnimationFactoryInterface {
         
 
-    getInstance(points: IntArray[][], basicColor: BasicColor): VectorAnimation
+    getInstance(points: number[][][], basicColor: BasicColor): VectorAnimation
 
 }
                 

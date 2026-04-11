@@ -41,16 +41,22 @@ export class AndroidDebug
         
 
     public start(){
-this.setStartTime(System.currentTimeMillis())
-Debug.startMethodTracing("trace", bufferSize)
-setRunning(true)
+this.setStartTime(System.currentTimeMillis());
+    
+Debug.startMethodTracing("trace", bufferSize);
+    
+setRunning(true);
+    
 }
 
 
     public stop(){
-startTime= Long.MAX_VALUE
-Debug.stopMethodTracing()
-setRunning(false)
+startTime= Long.MAX_VALUE;
+    
+Debug.stopMethodTracing();
+    
+setRunning(false);
+    
 }
 
 
@@ -66,7 +72,8 @@ setRunning(false)
 
     setStartTime(startTime: number){
 var startTime = startTime
-this.startTime= startTime
+this.startTime= startTime;
+    
 }
 
 
@@ -82,7 +89,8 @@ this.startTime= startTime
 
     setRunning(running: boolean){
 var running = running
-this.running= running
+this.running= running;
+    
 }
 
 

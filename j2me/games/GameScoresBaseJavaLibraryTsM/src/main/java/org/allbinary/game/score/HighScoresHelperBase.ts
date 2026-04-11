@@ -54,9 +54,11 @@ export class HighScoresHelperBase
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
+;
+    
 logUtil!.put(StringMaker().
-                            append(commonStrings!.START)!.appendint(highScoresArrayP!.length)!.toString(), this, "setHighScoresArray")
+                            append(commonStrings!.START)!.appendint(highScoresArrayP!.length)!.toString(), this, "setHighScoresArray");
+    
 
                                     }
                                 
@@ -65,12 +67,15 @@ logUtil!.put(StringMaker().
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.START, this, "setHighScoresArray")
+;
+    
+logUtil!.put(commonStrings!.START, this, "setHighScoresArray");
+    
 
                         }
                             
-this.highScoresArrayP= highScoresArrayP
+this.highScoresArrayP= highScoresArrayP;
+    
 }
 
 
@@ -80,6 +85,8 @@ this.highScoresArrayP= highScoresArrayP
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return NullHighScoresSingletonFactory.getInstance();
+
+                        ;
     
 }
 
@@ -103,6 +110,8 @@ this.highScoresArrayP= highScoresArrayP
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return NullHighScoresSingletonFactory.getInstance();
+
+                        ;
     
 }
 

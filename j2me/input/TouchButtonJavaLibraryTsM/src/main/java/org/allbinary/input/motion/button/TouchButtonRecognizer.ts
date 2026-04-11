@@ -82,7 +82,8 @@ public constructor (touchButtonRecognizer: TouchButtonRecognizer){
 
             super();
             var touchButtonRecognizer = touchButtonRecognizer
-this.touchButtonRecognizer= touchButtonRecognizer
+this.touchButtonRecognizer= touchButtonRecognizer;
+    
 }
 
 
@@ -105,15 +106,20 @@ index >= 0; index--)
     var nextTouchButtonInput: TouchButtonInput = currentlyPressedTouchButtonSingleton!.get(index)!;
         
         
-
+;
+    
 
     var gameKeyEvent: GameKeyEvent = nextTouchButtonInput!.getGameKeyEvent()!;
         
         
-
-upGameKeyEventHandler!.fireEvent(gameKeyEvent)
-upGameKeyEventHandler!.getInstance(deviceId)!.fireEvent(gameKeyEvent)
-this.touchButtonRecognizer!.currentlyPressedTouchButtonSingleton!.remove(index)
+;
+    
+upGameKeyEventHandler!.fireEvent(gameKeyEvent);
+    
+upGameKeyEventHandler!.getInstance(deviceId)!.fireEvent(gameKeyEvent);
+    
+this.touchButtonRecognizer!.currentlyPressedTouchButtonSingleton!.remove(index);
+    
 }
 
 }
@@ -146,7 +152,8 @@ var deviceId = deviceId
     var cancelTouchButtonInput: TouchButtonInput = CancelTouchButtonInputFactory.getInstance()!.getCancel(touchButtonInput)!;
         
         
-
+;
+    
 
 
 
@@ -161,7 +168,8 @@ index >= 0; index--)
     var nextTouchButtonInput: TouchButtonInput = currentlyPressedTouchButtonSingleton!.get(index)!;
         
         
-
+;
+    
 
                         if(cancelTouchButtonInput == nextTouchButtonInput)
                         
@@ -170,10 +178,14 @@ index >= 0; index--)
     var gameKeyEvent: GameKeyEvent = nextTouchButtonInput!.getGameKeyEvent()!;
         
         
-
-upGameKeyEventHandler!.fireEvent(gameKeyEvent)
-upGameKeyEventHandler!.getInstance(deviceId)!.fireEvent(gameKeyEvent)
-this.touchButtonRecognizer!.currentlyPressedTouchButtonSingleton!.remove(index)
+;
+    
+upGameKeyEventHandler!.fireEvent(gameKeyEvent);
+    
+upGameKeyEventHandler!.getInstance(deviceId)!.fireEvent(gameKeyEvent);
+    
+this.touchButtonRecognizer!.currentlyPressedTouchButtonSingleton!.remove(index);
+    
 
                                     }
                                 
@@ -193,12 +205,14 @@ public constructor (){
                         if(TouchScreenFactory.getInstance()!.isMultiTouch())
                         
                                     {
-                                    this.releaseHelper= MultitouchReleaseHelper(this)
+                                    this.releaseHelper= MultitouchReleaseHelper(this);
+    
 
                                     }
                                 
                         else {
-                            this.releaseHelper= ReleaseHelper(this)
+                            this.releaseHelper= ReleaseHelper(this);
+    
 
                         }
                             
@@ -210,15 +224,20 @@ public constructor (){
     processRelease(touchButtonInput: TouchButtonInput, deviceId: number){
 var touchButtonInput = touchButtonInput
 var deviceId = deviceId
-this.releaseHelper!.release(touchButtonInput, deviceId)
+this.releaseHelper!.release(touchButtonInput, deviceId);
+    
 
     var gameKeyEvent: GameKeyEvent = touchButtonInput!.getGameKeyEvent()!;
         
         
-
-upGameKeyEventHandler!.fireEvent(gameKeyEvent)
-upGameKeyEventHandler!.getInstance(deviceId)!.fireEvent(gameKeyEvent)
-this.currentlyPressedTouchButtonSingleton!.remove(touchButtonInput)
+;
+    
+upGameKeyEventHandler!.fireEvent(gameKeyEvent);
+    
+upGameKeyEventHandler!.getInstance(deviceId)!.fireEvent(gameKeyEvent);
+    
+this.currentlyPressedTouchButtonSingleton!.remove(touchButtonInput);
+    
 }
 
 
@@ -233,13 +252,16 @@ var deviceId = deviceId
     var touchButtonInput: TouchButtonInput = lastPressedTouchButtonInput;
         
         
-
+;
+    
 
                         if(currentlyPressedTouchButtonSingleton!.contains(touchButtonInput))
                         
                                     {
-                                    lastPressedTouchButtonInput= BasicTouchInputFactory.getInstance()!.NONE
-this.processRelease(touchButtonInput, deviceId)
+                                    lastPressedTouchButtonInput= BasicTouchInputFactory.getInstance()!.NONE;
+    
+this.processRelease(touchButtonInput, deviceId);
+    
 
 
 
@@ -254,16 +276,20 @@ this.processRelease(touchButtonInput, deviceId)
     var list: BasicArrayList = TouchButtonFactory.getInstance()!.getList()!;
         
         
-
+;
+    
 
     var rectangle: Rectangle
-
+;
+    
 
     var point: GPoint
-
+;
+    
 
     var touchButton: TouchButton
-
+;
+    
 
 
 
@@ -274,15 +300,20 @@ this.processRelease(touchButtonInput, deviceId)
         
 index >= 0; index--)
         {
-touchButton= list.objectArray[index]! as TouchButton
-rectangle= touchButton!.getRectangle()
-point= rectangle.getPoint()
+touchButton= list.objectArray[index]! as TouchButton;
+    
+rectangle= touchButton!.getRectangle();
+    
+point= rectangle.getPoint();
+    
 
                         if(rectangleCollisionUtil!.isInside(point.getX(), point.getY(), rectangle.getMaxX(), rectangle.getMaxY(), x, y))
                         
                                     {
-                                    touchButtonInput= touchButton!.getTouchButtonInput()
-this.processRelease(touchButtonInput, deviceId)
+                                    touchButtonInput= touchButton!.getTouchButtonInput();
+    
+this.processRelease(touchButtonInput, deviceId);
+    
 
 
 
@@ -317,19 +348,24 @@ var deviceId = deviceId
     var list: BasicArrayList = TouchButtonFactory.getInstance()!.getList()!;
         
         
-
+;
+    
 
     var rectangle: Rectangle
-
+;
+    
 
     var point: GPoint
-
+;
+    
 
     var touchButton: TouchButton
-
+;
+    
 
     var touchButtonInput: TouchButtonInput
-
+;
+    
 
 
 
@@ -340,28 +376,40 @@ var deviceId = deviceId
         
 index >= 0; index--)
         {
-touchButton= list.objectArray[index]! as TouchButton
-rectangle= touchButton!.getRectangle()
-point= rectangle.getPoint()
+touchButton= list.objectArray[index]! as TouchButton;
+    
+rectangle= touchButton!.getRectangle();
+    
+point= rectangle.getPoint();
+    
 
                         if(rectangleCollisionUtil!.isInside(point.getX(), point.getY(), rectangle.getMaxX(), rectangle.getMaxY(), x, y))
                         
                                     {
-                                    touchButtonInput= touchButton!.getTouchButtonInput()
+                                    touchButtonInput= touchButton!.getTouchButtonInput();
+    
 
-                        if(!currentlyPressedTouchButtonSingleton!.contains(touchButtonInput))
+                        if(!currentlyPressedTouchButtonSingleton!.contains(touchButtonInput);
+
+                        )
                         
                                     {
-                                    this.releaseHelper!.release(touchButtonInput, deviceId)
-lastPressedTouchButtonInput= touchButtonInput
-currentlyPressedTouchButtonSingleton!.add(touchButtonInput)
+                                    this.releaseHelper!.release(touchButtonInput, deviceId);
+    
+lastPressedTouchButtonInput= touchButtonInput;
+    
+currentlyPressedTouchButtonSingleton!.add(touchButtonInput);
+    
 
     var gameKeyEvent: GameKeyEvent = touchButtonInput!.getGameKeyEvent()!;
         
         
-
-downGameKeyEventHandler!.fireEvent(gameKeyEvent)
-downGameKeyEventHandler!.getInstance(deviceId)!.fireEvent(gameKeyEvent)
+;
+    
+downGameKeyEventHandler!.fireEvent(gameKeyEvent);
+    
+downGameKeyEventHandler!.getInstance(deviceId)!.fireEvent(gameKeyEvent);
+    
 
                                     }
                                 

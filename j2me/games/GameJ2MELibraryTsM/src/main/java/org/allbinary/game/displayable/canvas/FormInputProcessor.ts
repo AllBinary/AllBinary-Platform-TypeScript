@@ -109,7 +109,8 @@ public constructor (allBinaryGameCanvas: AllBinaryGameCanvas){
 
             super();
             var allBinaryGameCanvas = allBinaryGameCanvas
-this.allBinaryGameCanvas= allBinaryGameCanvas
+this.allBinaryGameCanvas= allBinaryGameCanvas;
+    
 }
 
 
@@ -119,21 +120,28 @@ this.allBinaryGameCanvas= allBinaryGameCanvas
 
         try {
             PreLogUtil.put(StringMaker().
-                            append(inputFactory!.KEY_CODE_LABEL)!.appendint(keyCode)!.append(CommonSeps.getInstance()!.SPACE)!.append(inputFactory!.DEVICE_ID_LABEL)!.appendint(deviceId)!.toString(), this, this.gameInputStrings!.KEY_PRESSED)
+                            append(inputFactory!.KEY_CODE_LABEL)!.appendint(keyCode)!.append(CommonSeps.getInstance()!.SPACE)!.append(inputFactory!.DEVICE_ID_LABEL)!.appendint(deviceId)!.toString(), this, this.gameInputStrings!.KEY_PRESSED);
+    
 
     var input: Input = inputFactory!.getInstance(keyCode)!;
         
         
-
+;
+    
 
     var gameKeyEvent: GameKeyEvent = gameKeyEventFactory!.getInstance(this.allBinaryGameCanvas, input)!;
         
         
+;
+    
+downKeyEventHandler!.fireEvent(gameKeyEvent);
+    
 
-downKeyEventHandler!.fireEvent(gameKeyEvent)
-} catch(e: Exception)
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, this.gameInputStrings!.ADD_KEY_EVENT, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, this.gameInputStrings!.ADD_KEY_EVENT, e);
+    
 }
 
 }
@@ -149,31 +157,40 @@ logUtil!.put(commonStrings!.EXCEPTION, this, this.gameInputStrings!.ADD_KEY_EVEN
     var input: Input = this.inputFactory!.getInstance(keyCode)!;
         
         
-
+;
+    
 
                         if(platformKeyFactory!.isEnter(input))
                         
                                     {
                                     PreLogUtil.put(StringMaker().
-                            append(inputFactory!.KEY_CODE_LABEL)!.appendint(keyCode)!.append(CommonSeps.getInstance()!.SPACE)!.append(inputFactory!.DEVICE_ID_LABEL)!.appendint(deviceId)!.toString(), this, gameInputStrings!.KEY_RELEASED)
+                            append(inputFactory!.KEY_CODE_LABEL)!.appendint(keyCode)!.append(CommonSeps.getInstance()!.SPACE)!.append(inputFactory!.DEVICE_ID_LABEL)!.appendint(deviceId)!.toString(), this, gameInputStrings!.KEY_RELEASED);
+    
 
     var gameKey: GameKey = GameKeyFactory.getInstance()!.KEY_NUM0;
         
         
-
+;
+    
 
     var gameKeyEvent: GameKeyEvent = gameKeyEventFactory!.getInstance(canvas as GameKeyEventSourceInterface, gameKey)!;
         
         
-
-upGameKeyEventHandler!.fireEvent(gameKeyEvent)
-upGameKeyEventHandler!.getInstance(deviceId)!.fireEvent(gameKeyEvent)
+;
+    
+upGameKeyEventHandler!.fireEvent(gameKeyEvent);
+    
+upGameKeyEventHandler!.getInstance(deviceId)!.fireEvent(gameKeyEvent);
+    
 
                                     }
                                 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, this.gameInputStrings!.ADD_KEY_EVENT, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, this.gameInputStrings!.ADD_KEY_EVENT, e);
+    
 }
 
 }

@@ -39,8 +39,10 @@ public constructor (midletActivity: Activity, progressCanvas: ProgressCanvas){
             super();
                 //var midletActivity = midletActivity
     //var progressCanvas = progressCanvas
-this.midletActivity= midletActivity as SimpleProgressActivityInterface
-this.progressCanvas= progressCanvas
+this.midletActivity= midletActivity as SimpleProgressActivityInterface;
+    
+this.progressCanvas= progressCanvas;
+    
 }
 
 

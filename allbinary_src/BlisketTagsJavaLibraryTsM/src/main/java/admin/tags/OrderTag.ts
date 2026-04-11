@@ -63,7 +63,7 @@ export class OrderTag extends CustomTagSupport {
 
     private storeName: string
 
-    private propertiesHashMap: HashMap<Any, Any>
+    private propertiesHashMap: HashMap<any, any>
 public constructor (){
 
             super();
@@ -72,13 +72,15 @@ public constructor (){
 
     public setCommand(command: string){
 var command = command
-this.command= command
+this.command= command;
+    
 }
 
 
     public setStoreName(value: string){
 var value = value
-this.storeName= value
+this.storeName= value;
+    
 }
 
 
@@ -92,49 +94,61 @@ this.storeName= value
                             getInstance(this.propertiesHashMap, this.pageContext)!;
         
         
+;
+    
 
-
-    var helperClass: KClass<*> = anyType!::class!;
+    var helperClass: Function = anyType!constructor!;
         
         
-
+;
+    
 
     var method: Method = helperClass!.getMethod(commonStrings!.PROCESS, 
                             null)!;
         
         
-
+;
+    
 
     var result: string = method.invoke(anyType, 
-                            null) as String;
-        
-        
+                            null);
 
+                         as String;
+        
+        
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
-} catch(e: LicensingException)
+
+                //: 
+} catch(e) 
             {
 
 
 
                             throw e
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
 
     var error: string = "Failed to Process Order: ";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e);
+    
 
                                     }
                                 
@@ -159,49 +173,61 @@ this.storeName= value
                             getInstance(this.propertiesHashMap, this.pageContext)!;
         
         
+;
+    
 
-
-    var addressHelperClass: KClass<*> = anyType!::class!;
+    var addressHelperClass: Function = anyType!constructor!;
         
         
-
+;
+    
 
     var method: Method = addressHelperClass!.getMethod("setPaymentGateway", 
                             null)!;
         
         
-
+;
+    
 
     var result: Boolean = method.invoke(anyType, 
-                            null) as Boolean;
-        
-        
+                            null);
 
+                         as Boolean;
+        
+        
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
-} catch(e: LicensingException)
+
+                //: 
+} catch(e) 
             {
 
 
 
                             throw e
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
 
     var error: string = "Failed to setPaymentGateway for Order";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "setPaymentGateway()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "setPaymentGateway()", e);
+    
 
                                     }
                                 
@@ -227,13 +253,16 @@ this.storeName= value
                                 )
                         
                                     {
-                                    this.propertiesHashMap= HashMap<Any, Any>()
-this.propertiesHashMap!.put(StoreFrontData.getInstance()!.NAME, this.storeName)
+                                    this.propertiesHashMap= HashMap<any, any>();
+    
+this.propertiesHashMap!.put(StoreFrontData.getInstance()!.NAME, this.storeName);
+    
 
                         if(command.compareTo(org.allbinary.globals.GLOBALS2.PROCESS) == 0)
                         
                                     {
-                                    this.process()
+                                    this.process();
+    
 
                                     }
                                 
@@ -266,9 +295,12 @@ this.propertiesHashMap!.put(StoreFrontData.getInstance()!.NAME, this.storeName)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return TagSupport.SKIP_BODY;
     
-} catch(e: LicensingException)
+
+                //: 
+} catch(e) 
             {
-AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e);
+    
 
 
 
@@ -276,9 +308,12 @@ AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
                         return SKIP_BODY;
     
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
-AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
+    
 
 
 

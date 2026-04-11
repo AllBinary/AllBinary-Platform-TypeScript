@@ -18,10 +18,13 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { HashMap } from "../../../../../../../../java/util/HashMap.js";
 
     
-import { Vector } from "../../../../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../../../../java/util/Vector.js";
 
     
 import { PaymentGatewayData } from "../../../../../../../../org/allbinary/business/user/commerce/money/payment/gateway/PaymentGatewayData.js";
@@ -59,7 +62,8 @@ protected constructor (paymentMethod: string){
 
             super();
             var paymentMethod = paymentMethod
-this.init(paymentMethod)
+this.init(paymentMethod);
+    
 }
 
 protected constructor (paymentMethod: string, paymentGatewayInterfaceFactoryInterface: PaymentGatewayInterfaceFactoryInterface, paymentGatewayDomNodeFactoryInterface: PaymentGatewayDomNodeFactoryInterface){
@@ -68,35 +72,47 @@ protected constructor (paymentMethod: string, paymentGatewayInterfaceFactoryInte
             var paymentMethod = paymentMethod
 var paymentGatewayInterfaceFactoryInterface = paymentGatewayInterfaceFactoryInterface
 var paymentGatewayDomNodeFactoryInterface = paymentGatewayDomNodeFactoryInterface
-this.init(paymentMethod)
-this.paymentGatewayInterfaceFactoryInterface= paymentGatewayInterfaceFactoryInterface
-this.paymentGatewayDomNodeFactoryInterface= paymentGatewayDomNodeFactoryInterface
+this.init(paymentMethod);
+    
+this.paymentGatewayInterfaceFactoryInterface= paymentGatewayInterfaceFactoryInterface;
+    
+this.paymentGatewayDomNodeFactoryInterface= paymentGatewayDomNodeFactoryInterface;
+    
 }
 
 
     init(paymentMethod: string){
 var paymentMethod = paymentMethod
 
-    var hashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
         
         
-
+;
+    
 
     var UNDERSCORE: string = "_";
         
         
-
-hashMap!.put(CommonSeps.getInstance()!.SPACE, UNDERSCORE)
-hashMap!.put(AbPathData.getInstance()!.EXTENSION_SEP, UNDERSCORE)
-hashMap!.put("-", UNDERSCORE)
+;
+    
+hashMap!.put(CommonSeps.getInstance()!.SPACE, UNDERSCORE);
+    
+hashMap!.put(AbPathData.getInstance()!.EXTENSION_SEP, UNDERSCORE);
+    
+hashMap!.put("-", UNDERSCORE);
+    
 
     var replace: Replace = new Replace(hashMap);
         
         
-
-this.name= replace.all(paymentMethod)
-this.value= paymentMethod
-BasicPaymentTypeUtil.getInstance()!.add(this)
+;
+    
+this.name= replace.all(paymentMethod);
+    
+this.value= paymentMethod;
+    
+BasicPaymentTypeUtil.getInstance()!.add(this);
+    
 }
 
 
@@ -176,6 +192,8 @@ BasicPaymentTypeUtil.getInstance()!.add(this)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getName();
+
+                        ;
     
 }
 
@@ -185,9 +203,12 @@ BasicPaymentTypeUtil.getInstance()!.add(this)
     var vector: Vector = new Vector();
         
         
-
-vector.add(this.name)
-vector.add(this.value)
+;
+    
+vector.add(this.name);
+    
+vector.add(this.value);
+    
 
 
 
@@ -197,14 +218,17 @@ vector.add(this.value)
 }
 
 
-    public toHashMap(): HashMap<Any, Any>{
+    public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
         
         
-
-hashMap!.put(PaymentGatewayData.NAME.toString(), this.name)
-hashMap!.put(PaymentGatewayData.VALUE.toString(), this.value)
+;
+    
+hashMap!.put(PaymentGatewayData.NAME.toString(), this.name);
+    
+hashMap!.put(PaymentGatewayData.VALUE.toString(), this.value);
+    
 
 
 

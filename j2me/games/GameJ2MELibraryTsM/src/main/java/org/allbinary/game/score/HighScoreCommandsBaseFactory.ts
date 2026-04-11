@@ -51,12 +51,14 @@ protected constructor (HIGH_SCORE_COMMANDS: Command[]){
                                                     HighScoreCommands.getInstance()!.PERSONAL;
         
         
-                                                ]
+                                                ];
+    
 
                                     }
                                 
                         else {
-                            this.HIGH_SCORE_COMMANDS= HIGH_SCORE_COMMANDS
+                            this.HIGH_SCORE_COMMANDS= HIGH_SCORE_COMMANDS;
+    
 
                         }
                             

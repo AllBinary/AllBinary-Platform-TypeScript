@@ -66,15 +66,18 @@ var gameCanvas = gameCanvas
     var list: BasicArrayList = this.getGameKeyEventList()!;
         
         
-
+;
+    
 
     var size: number = list.size()!;
         
         
-
+;
+    
 
     var gameKeyEvent: GameKeyEvent
-
+;
+    
 
 
 
@@ -85,12 +88,15 @@ var gameCanvas = gameCanvas
         
 index < size; index++)
         {
-gameKeyEvent= list.objectArray[index]! as GameKeyEvent
+gameKeyEvent= list.objectArray[index]! as GameKeyEvent;
+    
 logUtil!.put(StringMaker().
-                            append("Start GameKey: ")!.append(StringUtil.getInstance()!.toString(gameKeyEvent))!.toString(), this, GameInputStrings.getInstance()!.PROCESS_INPUT)
+                            append("Start GameKey: ")!.append(StringUtil.getInstance()!.toString(gameKeyEvent))!.toString(), this, GameInputStrings.getInstance()!.PROCESS_INPUT);
+    
 }
 
-this.getCanvas()!.getCustomCommandListener()!.commandAction(GameCommandsFactory.getInstance()!.START_COMMAND, NullCanvas.NULL_CANVAS)
+this.getCanvas()!.getCustomCommandListener()!.commandAction(GameCommandsFactory.getInstance()!.START_COMMAND, NullCanvas.NULL_CANVAS);
+    
 
 
 

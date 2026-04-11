@@ -110,45 +110,58 @@ private constructor (){
     //var specialMessage = specialMessage
     //var exception = exception
 
-    var stringBuffer: StringMaker = get(className, functionName)!;
+    var stringBuffer: StringMaker = getF(className, functionName)!;
         
         
-
-stringBuffer!.append(this.get(exception))
-stringBuffer!.append(SPECIAL_MESSAGE)
-stringBuffer!.append(specialMessage)
-stringBuffer!.append(this.commonSeps!.NEW_LINE)
+;
+    
+stringBuffer!.append(this.getO(exception));
+    
+stringBuffer!.append(SPECIAL_MESSAGE);
+    
+stringBuffer!.append(specialMessage);
+    
+stringBuffer!.append(this.commonSeps!.NEW_LINE);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 
 
-    /*actual*/ public get(className: string, functionName: string, specialMessage: string): string{
+    /*actual*/ public getS(className: string, functionName: string, specialMessage: string): string{
     //var className = className
     //var functionName = functionName
     //var specialMessage = specialMessage
 
-    var stringBuffer: StringMaker = get(className, functionName)!;
+    var stringBuffer: StringMaker = getF(className, functionName)!;
         
         
-
-stringBuffer!.append(SPECIAL_MESSAGE)
-stringBuffer!.append(specialMessage)
-stringBuffer!.append(this.commonSeps!.NEW_LINE)
+;
+    
+stringBuffer!.append(SPECIAL_MESSAGE);
+    
+stringBuffer!.append(specialMessage);
+    
+stringBuffer!.append(this.commonSeps!.NEW_LINE);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 
 
-    get(className: string, functionName: string): StringMaker{
+    getF(className: string, functionName: string): StringMaker{
     //var className = className
 var functionName = functionName
 
@@ -157,7 +170,8 @@ var functionName = functionName
                                 )
                         
                                     {
-                                    functionName= NONE
+                                    functionName= NONE;
+    
 
                                     }
                                 
@@ -165,13 +179,20 @@ var functionName = functionName
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(TIME)
-stringBuffer!.append(timeStampUtil!.getAsString())
-stringBuffer!.append(CLASS_NAME)
-stringBuffer!.append(className)
-stringBuffer!.append(FUNCTION_CALL)
-stringBuffer!.append(functionName)
+;
+    
+stringBuffer!.append(TIME);
+    
+stringBuffer!.append(timeStampUtil!.getAsString());
+    
+stringBuffer!.append(CLASS_NAME);
+    
+stringBuffer!.append(className);
+    
+stringBuffer!.append(FUNCTION_CALL);
+    
+stringBuffer!.append(functionName);
+    
 
 
 
@@ -193,7 +214,7 @@ stringBuffer!.append(functionName)
         
         
 
-    /*actual*/ public get(exception: any = {}): string{
+    /*actual*/ public getO(exception: any = {}): string{
     //var exception = exception
 
                         if(exception != nullUtil!.NULL_OBJECT)
@@ -203,39 +224,47 @@ stringBuffer!.append(functionName)
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(LOG_ERROR)
+;
+    
+stringBuffer!.append(LOG_ERROR);
+    
 
     var exceptionAsString: string = exception.toString()!;
         
         
-
+;
+    
 
                         if(exceptionAsString != 
                                     null
                                 )
                         
                                     {
-                                    stringBuffer!.append(exceptionAsString)
+                                    stringBuffer!.append(exceptionAsString);
+    
 
                                     }
                                 
                         else {
-                            stringBuffer!.append(EMPTY)
+                            stringBuffer!.append(EMPTY);
+    
 
                         }
                             
-stringBuffer!.append(STACK_TRACE)
+stringBuffer!.append(STACK_TRACE);
+    
 
                         if(exception != nullUtil!.NULL_OBJECT)
                         
                                     {
-                                    stringBuffer!.append(exceptionUtil!.getStackTrace(exception as Error))
+                                    stringBuffer!.append(exceptionUtil!.getStackTrace(exception as Error));
+    
 
                                     }
                                 
                         else {
-                            stringBuffer!.append(stringUtil!.NULL_STRING)
+                            stringBuffer!.append(stringUtil!.NULL_STRING);
+    
 
                         }
                             
@@ -244,6 +273,8 @@ stringBuffer!.append(STACK_TRACE)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 
                                     }

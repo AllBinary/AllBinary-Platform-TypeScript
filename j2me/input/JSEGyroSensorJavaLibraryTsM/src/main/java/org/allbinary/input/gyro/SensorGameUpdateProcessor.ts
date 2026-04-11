@@ -40,7 +40,8 @@ export class SensorGameUpdateProcessor
 
     setInputSensor(inputSensor: AllBinarySensor){
 var inputSensor = inputSensor
-this.inputSensor= inputSensor
+this.inputSensor= inputSensor;
+    
 }
 
 
@@ -96,9 +97,12 @@ var anyType = anyType
 
 
     setNoSensors(){
-GyroSensorFactory.getInstance()!.setCompleteMotionGestureInputEventListener(NoCompleteMotionGestureInputEventListener.getInstance())
-AccelerometerSensorFactory.getInstance()!.setCompleteMotionGestureInputEventListener(NoCompleteMotionGestureInputEventListener.getInstance())
-this.setInputSensor(NoAllBinarySensor.getInstance())
+GyroSensorFactory.getInstance()!.setCompleteMotionGestureInputEventListener(NoCompleteMotionGestureInputEventListener.getInstance());
+    
+AccelerometerSensorFactory.getInstance()!.setCompleteMotionGestureInputEventListener(NoCompleteMotionGestureInputEventListener.getInstance());
+    
+this.setInputSensor(NoAllBinarySensor.getInstance());
+    
 }
 
 

@@ -115,7 +115,8 @@ var level = level
     var size: number = this.list.size()!;
         
         
-
+;
+    
 
 
 
@@ -130,24 +131,29 @@ index < size; index++)
     var featureInterface: GameFeatureControlledInterface = this.list.objectArray[index]! as GameFeatureControlledInterface;
         
         
-
+;
+    
 
     var isLoadingLevel: boolean = featureInterface!.isLoadingLevel(level)!;
         
         
-
+;
+    
 
     var isFeature: boolean = featureInterface!.isFeature()!;
         
         
-
+;
+    
 logUtil!.put(StringMaker().
-                            append(this.GAME_FEATURE_CONTROLLED)!.append(featureInterface!.toString())!.append(this.IS_LOADING_LEVEL_LABEL)!.append(ResourceLoadingLevelFactory.getInstance()!.getLevelString(level))!.append(CommonSeps.getInstance()!.COLON_SEP)!.appendboolean(isLoadingLevel)!.append(this.IS_FEATURE)!.appendboolean(isFeature)!.toString(), this, commonStrings!.INIT)
+                            append(this.GAME_FEATURE_CONTROLLED)!.append(featureInterface!.toString())!.append(this.IS_LOADING_LEVEL_LABEL)!.append(ResourceLoadingLevelFactory.getInstance()!.getLevelString(level))!.append(CommonSeps.getInstance()!.COLON_SEP)!.appendboolean(isLoadingLevel)!.append(this.IS_FEATURE)!.appendboolean(isFeature)!.toString(), this, commonStrings!.INIT);
+    
 
                         if(isLoadingLevel && isFeature)
                         
                                     {
-                                    featureInterface!.init(level)
+                                    featureInterface!.init(level);
+    
 
                                     }
                                 
@@ -157,36 +163,54 @@ logUtil!.put(StringMaker().
     var features: Features = Features.getInstance()!;
         
         
-
+;
+    
 
     var graphicsFeatureFactory: GraphicsFeatureFactory = GraphicsFeatureFactory.getInstance()!;
         
         
-
+;
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(ANIMATION_FEATURES)
-stringBuffer!.appendboolean(features.isFeature(graphicsFeatureFactory!.VECTOR_GRAPHICS))
-stringBuffer!.append(IMAGE_LABEL)
-stringBuffer!.appendboolean(features.isFeature(graphicsFeatureFactory!.IMAGE_GRAPHICS))
-logUtil!.put(stringBuffer!.toString(), this, commonStrings!.INIT)
+;
+    
+stringBuffer!.append(ANIMATION_FEATURES);
+    
+stringBuffer!.appendboolean(features.isFeature(graphicsFeatureFactory!.VECTOR_GRAPHICS));
+    
+stringBuffer!.append(IMAGE_LABEL);
+    
+stringBuffer!.appendboolean(features.isFeature(graphicsFeatureFactory!.IMAGE_GRAPHICS));
+    
+logUtil!.put(stringBuffer!.toString(), this, commonStrings!.INIT);
+    
 
                         if(features.isFeature(graphicsFeatureFactory!.IMAGE_GRAPHICS))
                         
                                     {
-                                    stringBuffer!.delete(0, stringBuffer!.length())
-stringBuffer!.append(IMAGE_GRAPHICS_ARRAY)
-stringBuffer!.appendboolean(features.isFeature(graphicsFeatureFactory!.IMAGE_TO_ARRAY_GRAPHICS))
-stringBuffer!.append(IMAGE_GRAPHICS_ROTATION)
-stringBuffer!.appendboolean(features.isFeature(graphicsFeatureFactory!.IMAGE_TO_ARRAY_GRAPHICS))
-stringBuffer!.append(SPRITE_QUARTER)
-stringBuffer!.appendboolean(features.isFeature(graphicsFeatureFactory!.SPRITE_QUARTER_ROTATION_GRAPHICS))
-stringBuffer!.append(SPRITE_FULL)
-stringBuffer!.appendboolean(features.isFeature(graphicsFeatureFactory!.SPRITE_FULL_GRAPHICS))
-logUtil!.put(stringBuffer!.toString(), this, commonStrings!.INIT)
+                                    stringBuffer!.delete(0, stringBuffer!.length());
+    
+stringBuffer!.append(IMAGE_GRAPHICS_ARRAY);
+    
+stringBuffer!.appendboolean(features.isFeature(graphicsFeatureFactory!.IMAGE_TO_ARRAY_GRAPHICS));
+    
+stringBuffer!.append(IMAGE_GRAPHICS_ROTATION);
+    
+stringBuffer!.appendboolean(features.isFeature(graphicsFeatureFactory!.IMAGE_TO_ARRAY_GRAPHICS));
+    
+stringBuffer!.append(SPRITE_QUARTER);
+    
+stringBuffer!.appendboolean(features.isFeature(graphicsFeatureFactory!.SPRITE_QUARTER_ROTATION_GRAPHICS));
+    
+stringBuffer!.append(SPRITE_FULL);
+    
+stringBuffer!.appendboolean(features.isFeature(graphicsFeatureFactory!.SPRITE_FULL_GRAPHICS));
+    
+logUtil!.put(stringBuffer!.toString(), this, commonStrings!.INIT);
+    
 
                                     }
                                 
@@ -194,15 +218,18 @@ logUtil!.put(stringBuffer!.toString(), this, commonStrings!.INIT)
 
 
     public clear(){
-this.list.clear()
+this.list.clear();
+    
 }
 
 
     public add(featureInterface: GameFeatureControlledInterface){
 var featureInterface = featureInterface
 logUtil!.put(StringMaker().
-                            append(CommonLabels.getInstance()!.START_LABEL)!.append(StringUtil.getInstance()!.toString(featureInterface))!.toString(), this, commonStrings!.ADD)
-this.list.add(featureInterface)
+                            append(CommonLabels.getInstance()!.START_LABEL)!.append(StringUtil.getInstance()!.toString(featureInterface))!.toString(), this, commonStrings!.ADD);
+    
+this.list.add(featureInterface);
+    
 }
 
 

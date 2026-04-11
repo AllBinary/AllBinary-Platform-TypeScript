@@ -51,15 +51,22 @@ var progressCanvas = progressCanvas
     public run(){
 
         try {
-            this.midletActivity!.onSetProgress(this.progressCanvas!.getValue().toInt(), this.progressCanvas!.getText())
-} catch(e: Exception)
+            this.midletActivity!.onSetProgress(this.progressCanvas!.getValue();
+
+                        .toInt(), this.progressCanvas!.getText());
+    
+
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
+    
 }
 
 }

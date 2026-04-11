@@ -43,7 +43,8 @@ public constructor (){
 
     public setRole(value: string){
 var value = value
-this.role= value
+this.role= value;
+    
 }
 
 
@@ -52,15 +53,18 @@ this.role= value
     public doStartTag(): number{
 
         try {
-            this.setName("Admin Users View")
-this.setObjectFile("views.admin.user.UsersValidationView")
+            this.setName("Admin Users View");
+    
+this.setObjectFile("views.admin.user.UsersValidationView");
+    
 
                         if(this.getCommand() != 
                                     null
                                 )
                         
                                     {
-                                    this.getPropertiesHashMap()!.put(UserRoleData.NAME, this.role)
+                                    this.getPropertiesHashMap()!.put(UserRoleData.NAME, this.role);
+    
 
                         if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.VIEW) == 0)
                         
@@ -81,6 +85,8 @@ this.setObjectFile("views.admin.user.UsersValidationView")
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.doStartTag();
+
+                        ;
     
 
                                     }
@@ -89,9 +95,12 @@ this.setObjectFile("views.admin.user.UsersValidationView")
 
 
                             throw Error("Command Null")
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
+    
 
 
 

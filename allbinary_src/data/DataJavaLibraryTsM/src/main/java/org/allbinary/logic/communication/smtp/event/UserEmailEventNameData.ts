@@ -30,7 +30,7 @@ export class UserEmailEventNameData
          {
         
 
-    private userNameEvenNameHashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+    private userNameEvenNameHashMap: HashMap<any, any> = new HashMap<any, any>();
         
         
 
@@ -140,10 +140,13 @@ export class UserEmailEventNameData
     public static getInstance(userEmailEventNameString: string): UserEmailEventNameData{
 var userEmailEventNameString = userEmailEventNameString
 
-    var userEmailEventNameData: UserEmailEventNameData = UserEmailEventNameData.userNameEvenNameHashMap!.get(userEmailEventNameString as Object) as UserEmailEventNameData;
-        
-        
+    var userEmailEventNameData: UserEmailEventNameData = UserEmailEventNameData.userNameEvenNameHashMap!.get(userEmailEventNameString as Object);
 
+                         as UserEmailEventNameData;
+        
+        
+;
+    
 
                         if(userEmailEventNameData == 
                                     null
@@ -177,16 +180,21 @@ public constructor (eventHandlerName: string){
 
             super();
             var eventHandlerName = eventHandlerName
-this.eventHandlerName= eventHandlerName
-this.initNextId()
-this.userNameEvenNameHashMap!.put(this.eventHandlerName, this)
+this.eventHandlerName= eventHandlerName;
+    
+this.initNextId();
+    
+this.userNameEvenNameHashMap!.put(this.eventHandlerName, this);
+    
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     initNextId(){
-this.eventNameId= UserEmailEventNameData.nextId
-UserEmailEventNameData.nextId++
+this.eventNameId= UserEmailEventNameData.nextId;
+    
+UserEmailEventNameData.nextId++;
+    
 }
 
 
@@ -197,6 +205,8 @@ var userEmailEventNameString = userEmailEventNameString
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.userNameEvenNameHashMap!.containsKey(userEmailEventNameString);
+
+                        ;
     
 }
 

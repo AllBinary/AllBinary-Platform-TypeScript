@@ -35,9 +35,12 @@ public constructor (name: string, maxTime: number, maxSize: number){
             var name = name
 var maxTime = maxTime
 var maxSize = maxSize
-this.name= name
-this.setMaxTime(maxTime)
-this.setMaxSize(maxSize)
+this.name= name;
+    
+this.setMaxTime(maxTime);
+    
+this.setMaxSize(maxSize);
+    
 }
 
 
@@ -53,7 +56,8 @@ this.setMaxSize(maxSize)
 
     public setMaxTime(maxTime: number){
 var maxTime = maxTime
-this.maxTime= maxTime
+this.maxTime= maxTime;
+    
 }
 
 
@@ -69,7 +73,8 @@ this.maxTime= maxTime
 
     public setMaxSize(maxSize: number){
 var maxSize = maxSize
-this.maxSize= maxSize
+this.maxSize= maxSize;
+    
 }
 
 

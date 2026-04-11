@@ -50,7 +50,8 @@ export class LinePathRelativeAnimation extends LinePathAnimation {
     //var point = point
     //var nextPoint = nextPoint
     //var tiledLayer = tiledLayer
-graphics.drawLine(nextPoint!.getX() -tiledLayer!.getXP(), nextPoint!.getY() -tiledLayer!.getYP(), point.getX() -tiledLayer!.getXP(), point.getY() -tiledLayer!.getYP())
+graphics.drawLine(nextPoint!.getX() -tiledLayer!.getXP(), nextPoint!.getY() -tiledLayer!.getYP(), point.getX() -tiledLayer!.getXP(), point.getY() -tiledLayer!.getYP());
+    
 }
 
 

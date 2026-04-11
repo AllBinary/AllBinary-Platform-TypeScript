@@ -76,19 +76,26 @@ private constructor (){
     var virtualKeyboardEventListenerInterface: VirtualKeyboardEventListenerInterface = eventListenerInterface as VirtualKeyboardEventListenerInterface;
         
         
-
-virtualKeyboardEventListenerInterface!.onVirtualKeyboardEvent(eventObject as VirtualKeyboardEvent)
+;
+    
+virtualKeyboardEventListenerInterface!.onVirtualKeyboardEvent(eventObject as VirtualKeyboardEvent);
+    
 }
 
 
     public open(){
 
         try {
-            Thread.sleep(120)
-this.fireEvent(this.SHOW_EVENT)
-} catch(e: Exception)
+            Thread.sleep(120);
+    
+this.fireEvent(this.SHOW_EVENT);
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "open", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "open", e);
+    
 }
 
 }
@@ -97,11 +104,16 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "open", e)
     public close(){
 
         try {
-            Thread.sleep(120)
-this.fireEvent(this.HIDE_EVENT)
-} catch(e: Exception)
+            Thread.sleep(120);
+    
+this.fireEvent(this.HIDE_EVENT);
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CLOSE, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CLOSE, e);
+    
 }
 
 }

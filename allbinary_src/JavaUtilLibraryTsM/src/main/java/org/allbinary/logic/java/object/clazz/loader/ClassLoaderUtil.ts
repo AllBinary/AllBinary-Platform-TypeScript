@@ -29,10 +29,11 @@ export class ClassLoaderUtil
     public static getName(anyType: any = {}): string{
 var anyType = anyType
 
-    var classLoader: ClassLoader = anyType!::class.java.classLoader!;
+    var classLoader: ClassLoader = anyType!.constructor.name.java.classLoader!;
         
         
-
+;
+    
 
                         if(classLoader != 
                                     null
@@ -43,7 +44,7 @@ var anyType = anyType
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return "ClassLoader: " +classLoader!::class.toString()!;
+                        return "ClassLoader: " +classLoader!.constructor.name.toString()!;
     
 
                                     }

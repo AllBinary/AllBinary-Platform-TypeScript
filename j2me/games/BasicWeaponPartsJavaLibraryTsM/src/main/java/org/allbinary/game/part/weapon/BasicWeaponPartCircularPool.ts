@@ -48,7 +48,8 @@ export class BasicWeaponPartCircularPool
             
     public init(basicWeaponPartFactoryInterface: BasicWeaponPartFactoryInterface){
     //var basicWeaponPartFactoryInterface = basicWeaponPartFactoryInterface
-basicWeaponPart= basicWeaponPartFactoryInterface!.getInstance()
+basicWeaponPart= basicWeaponPartFactoryInterface!.getInstance();
+    
 }
 
 
@@ -60,7 +61,8 @@ basicWeaponPart= basicWeaponPartFactoryInterface!.getInstance()
     //var weaponProperties = weaponProperties
     //var scoreableInterface = scoreableInterface
     //var relativeRelationship = relativeRelationship
-basicWeaponPart!.init(sourceLayerInterface, weaponProperties, scoreableInterface, relativeRelationship)
+basicWeaponPart!.init(sourceLayerInterface, weaponProperties, scoreableInterface, relativeRelationship);
+    
 
 
 

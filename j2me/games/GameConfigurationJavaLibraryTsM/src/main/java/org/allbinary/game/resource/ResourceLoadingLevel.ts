@@ -32,8 +32,10 @@ export class ResourceLoadingLevel
             super();
             var name = name
 var level = level
-this.name= name
-this.level= level
+this.name= name;
+    
+this.level= level;
+    
 }
 
 

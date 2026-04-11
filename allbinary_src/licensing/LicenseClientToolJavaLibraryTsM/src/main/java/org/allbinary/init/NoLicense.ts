@@ -32,7 +32,8 @@ export class NoLicense
     public static init(classLoader: ClassLoader, pathString: string){
 var classLoader = classLoader
 var pathString = pathString
-Globals.init(classLoader, pathString)
+Globals.init(classLoader, pathString);
+    
 }
 
 private constructor (){

@@ -43,22 +43,28 @@ export class UserTag extends TableTag {
 public constructor (){
 
             super();
-            this.setTagHelperFactory(UserHelperFactory())
-this.setTagRequestHelperFactory(UserHelperFactory())
+            this.setTagHelperFactory(UserHelperFactory());
+    
+this.setTagRequestHelperFactory(UserHelperFactory());
+    
 }
 
 
     public setRole(value: string){
 var value = value
-this.role= value
-this.getPropertiesHashMap()!.put(UserRoleData.NAME, this.role)
+this.role= value;
+    
+this.getPropertiesHashMap()!.put(UserRoleData.NAME, this.role);
+    
 }
 
 
     public setEnable(value: string){
 var value = value
-this.enable= value
-this.getPropertiesHashMap()!.put(EntryData.getInstance()!.ENABLE, this.enable)
+this.enable= value;
+    
+this.getPropertiesHashMap()!.put(EntryData.getInstance()!.ENABLE, this.enable);
+    
 }
 
 
@@ -76,6 +82,8 @@ this.getPropertiesHashMap()!.put(EntryData.getInstance()!.ENABLE, this.enable)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.doStartTag();
+
+                        ;
     
 
                                     }
@@ -86,9 +94,12 @@ this.getPropertiesHashMap()!.put(EntryData.getInstance()!.ENABLE, this.enable)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return SKIP_BODY;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
+    
 
 
 

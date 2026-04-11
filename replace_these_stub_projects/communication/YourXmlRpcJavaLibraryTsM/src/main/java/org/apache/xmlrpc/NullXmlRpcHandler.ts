@@ -18,7 +18,10 @@
 
 
 
-import { Vector } from "../../../java/util/Vector.js";
+            import Vector from "@ohos.util.Vector";
+        
+
+//import { Vector } from "../../../java/util/Vector.js";
 
     
 import { NullUtil } from "../../../org/allbinary/logic/NullUtil.js";
@@ -37,7 +40,7 @@ export class NullXmlRpcHandler
 
                 //@Throws(Error::class)
             
-    public execute(method: string, params: Vector<Any>): any = {}{
+    public execute(method: string, params: Vector<any>): any = {}{
 var method = method
 var params = params
 

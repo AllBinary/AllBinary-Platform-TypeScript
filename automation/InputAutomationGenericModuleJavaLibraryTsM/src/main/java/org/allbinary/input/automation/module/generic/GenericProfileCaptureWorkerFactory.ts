@@ -18,7 +18,10 @@
 
 
 
-import { Vector } from "../../../../../../java/util/Vector.js";
+            import Vector from "@ohos.util.Vector";
+        
+
+//import { Vector } from "../../../../../../java/util/Vector.js";
 
     
 import { GenericProfile } from "../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/GenericProfile.js";
@@ -50,12 +53,14 @@ var genericProfile = genericProfile
     var vector: Vector = genericProfile!.getGenericProfileDataWorkerTypeVector()!;
         
         
-
+;
+    
 
     var size: number = vector.length!;
         
         
-
+;
+    
 
 
 
@@ -67,10 +72,13 @@ var genericProfile = genericProfile
 index < size; index++)
         {
 
-    var genericProfileDataWorkerType: GenericProfileDataWorkerType = vector.get(index) as GenericProfileDataWorkerType;
-        
-        
+    var genericProfileDataWorkerType: GenericProfileDataWorkerType = vector.get(index);
 
+                         as GenericProfileDataWorkerType;
+        
+        
+;
+    
 
                         if(genericProfileDataWorkerType == GenericProfileDataWorkerType.SCREEN_CAPTURE)
                         

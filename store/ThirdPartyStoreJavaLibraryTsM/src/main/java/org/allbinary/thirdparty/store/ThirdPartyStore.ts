@@ -34,7 +34,8 @@ public constructor (name: string){
 
             super();
             var name = name
-this.name= name
+this.name= name;
+    
 }
 
 
@@ -55,7 +56,8 @@ var clientInformationInterface = clientInformationInterface
 
     setAuthorized(authorized: boolean){
 var authorized = authorized
-this.authorized= authorized
+this.authorized= authorized;
+    
 }
 
 

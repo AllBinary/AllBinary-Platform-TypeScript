@@ -36,7 +36,8 @@ public constructor (playerInputId: number){
 
             super();
                 //var playerInputId = playerInputId
-this.playerInputId= playerInputId
+this.playerInputId= playerInputId;
+    
 }
 
 
@@ -47,8 +48,10 @@ this.playerInputId= playerInputId
     var analogLocationInput: AnalogLocationInput = AnalogLocationInputFactory.getInstance()!.getInstance(playerInputId)!;
         
         
-
-analogLocationInputProcessor!.process(allbinaryLayerManager, analogLocationInput)
+;
+    
+analogLocationInputProcessor!.process(allbinaryLayerManager, analogLocationInput);
+    
 }
 
 

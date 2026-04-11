@@ -48,14 +48,16 @@ public constructor (timeCreated: TimeCreated){
 
             super();
             var timeCreated = timeCreated
-this.setTimeCreated(timeCreated)
+this.setTimeCreated(timeCreated);
+    
 }
 
 public constructor (node: Node){
 
             super();
             var node = node
-this.setTimeCreated(TimeCreated(DomNodeHelper.getTextNodeValue(node)))
+this.setTimeCreated(TimeCreated(DomNodeHelper.getTextNodeValue(node)));
+    
 }
 
 
@@ -68,6 +70,8 @@ var document = document
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return ModDomHelper.createTextNode(document, EntryData.getInstance()!.TIMECREATED, this.getTimeCreated()!.toString());
+
+                        ;
     
 }
 
@@ -84,7 +88,8 @@ var document = document
 
     public setTimeCreated(timeCreated: TimeCreated){
 var timeCreated = timeCreated
-this.timeCreated= timeCreated
+this.timeCreated= timeCreated;
+    
 }
 
 

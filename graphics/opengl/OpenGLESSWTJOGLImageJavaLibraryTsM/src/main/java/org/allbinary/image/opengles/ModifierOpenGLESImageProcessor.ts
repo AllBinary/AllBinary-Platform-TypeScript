@@ -45,7 +45,8 @@ var red = red
 var green = green
 var blue = blue
 var alpha = alpha
-gl.glColor4f(red, green, blue, alpha)
+gl.glColor4f(red, green, blue, alpha);
+    
 }
 
 

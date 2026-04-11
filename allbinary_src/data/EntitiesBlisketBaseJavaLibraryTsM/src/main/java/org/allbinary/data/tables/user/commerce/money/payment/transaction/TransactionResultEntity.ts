@@ -18,13 +18,16 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { Calendar } from "../../../../../../../../../java/util/Calendar.js";
 
     
 import { HashMap } from "../../../../../../../../../java/util/HashMap.js";
 
     
-import { Vector } from "../../../../../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../../../../../java/util/Vector.js";
 
     
 import { EntryData } from "../../../../../../../../../org/allbinary/business/entry/EntryData.js";
@@ -78,7 +81,8 @@ public constructor ()
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setTableName(tableName)
+this.setTableName(tableName);
+    
 }
 
 
@@ -88,28 +92,36 @@ var orderNumber = orderNumber
 
         try {
             
-    var whereHashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var whereHashMap: HashMap<any, any> = new HashMap<any, any>();
         
         
-
-whereHashMap!.put(OrderData.ID, orderNumber as String)
-whereHashMap!.put(UserData.USERNAME, userName)
-super.deleteWhere(whereHashMap)
+;
+    
+whereHashMap!.put(OrderData.ID, orderNumber as String);
+    
+whereHashMap!.put(UserData.USERNAME, userName);
+    
+super.deleteWhere(whereHashMap);
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.SUCCESS, this, "remove")
+                                    logUtil!.put(this.commonStrings!.SUCCESS, this, "remove");
+    
 
                                     }
                                 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.FAILURE, this, "remove", e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, "remove", e);
+    
 
                                     }
                                 
@@ -128,39 +140,52 @@ var transactionResultInterface = transactionResultInterface
     var values: Vector = new Vector();
         
         
-
-values.add(orderNumber)
-values.add(userName)
-values.addAll(transactionResultInterface!.getValues())
+;
+    
+values.add(orderNumber);
+    
+values.add(userName);
+    
+values.addAll(transactionResultInterface!.getValues());
+    
 
     var calendar: Calendar = Calendar.getInstance()!;
         
         
-
+;
+    
 
     var time: string = calendar.getTimeInMillis() as Long.
                             toString()!;
         
         
-
-values.add(time)
-values.add(time)
-super.insert(values)
+;
+    
+values.add(time);
+    
+values.add(time);
+    
+super.insert(values);
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.SUCCESS, this, "add")
+                                    logUtil!.put(this.commonStrings!.SUCCESS, this, "add");
+    
 
                                     }
                                 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.FAILURE, this, "add", e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, "add", e);
+    
 
                                     }
                                 
@@ -174,17 +199,21 @@ var orderNumber = orderNumber
 
         try {
             
-    var resultHashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var resultHashMap: HashMap<any, any> = new HashMap<any, any>();
         
         
+;
+    
 
-
-    var updateKeyAndValue: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var updateKeyAndValue: HashMap<any, any> = new HashMap<any, any>();
         
         
-
-updateKeyAndValue!.put(OrderData.ID, orderNumber)
-resultHashMap= super.getRow(updateKeyAndValue)
+;
+    
+updateKeyAndValue!.put(OrderData.ID, orderNumber);
+    
+resultHashMap= super.getRow(updateKeyAndValue);
+    
 
                         if(resultHashMap != 
                                     null
@@ -195,12 +224,14 @@ resultHashMap= super.getRow(updateKeyAndValue)
     var transactionResult: TransactionResult = new TransactionResult(resultHashMap);
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.SUCCESS, this, "getTransactionResultInterface")
+                                    logUtil!.put(this.commonStrings!.SUCCESS, this, "getTransactionResultInterface");
+    
 
                                     }
                                 
@@ -223,13 +254,16 @@ resultHashMap= super.getRow(updateKeyAndValue)
 
                         }
                             
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.FAILURE, this, "getTransactionResultInterface", e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, "getTransactionResultInterface", e);
+    
 
                                     }
                                 
@@ -249,27 +283,41 @@ resultHashMap= super.getRow(updateKeyAndValue)
     var paymentTransactionKeysFactory: PaymentTransactionKeysFactory = PaymentTransactionKeysFactory.getInstance()!;
         
         
-
+;
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(tableName)!.append(this.sqlStrings!.START)!.append(OrderData.ID)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(UserData.USERNAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-stringBuffer!.append(paymentTransactionKeysFactory!.RESULT.toString())!.append(this.sqlTypeStrings!.MAX_INT_NOT_NULL)!.append(paymentTransactionKeysFactory!.PNREF.toString())!.append(this.sqlTypeStrings!.TWELVE_CHAR_COLUMN_NOT_NULL)
-stringBuffer!.append(paymentTransactionKeysFactory!.RESPMSG.toString())!.append(this.sqlTypeStrings!.BLOB_NOT_NULL)!.append(paymentTransactionKeysFactory!.AUTHCODE.toString())!.append(this.sqlTypeStrings!.SIX_CHAR_COLUMN_NOT_NULL)!.append(paymentTransactionKeysFactory!.AVSADDR.toString())!.append(this.sqlTypeStrings!.ONE_CHAR_COLUMN_NOT_NULL)
-stringBuffer!.append(paymentTransactionKeysFactory!.AVSZIP.toString())!.append(this.sqlTypeStrings!.ONE_CHAR_COLUMN_NOT_NULL)!.append(paymentTransactionKeysFactory!.ORIGRESULT.toString())!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(paymentTransactionKeysFactory!.STATUS.toString())!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-stringBuffer!.append(paymentTransactionKeysFactory!.FRAUDCODE.toString())!.append(this.sqlTypeStrings!.TWO_INT_NOT_NULL)
-stringBuffer!.append(paymentTransactionKeysFactory!.FRAUDMSG.toString())!.append(this.sqlTypeStrings!.MAX_INT_NOT_NULL)
-stringBuffer!.append(paymentTransactionKeysFactory!.ERRCODE.toString())!.append(this.sqlTypeStrings!.MAX_INT_NOT_NULL)
-stringBuffer!.append(paymentTransactionKeysFactory!.SCORE.toString())!.append(this.sqlTypeStrings!.THREE_INT_NOT_NULL)
-stringBuffer!.append(paymentTransactionKeysFactory!.REASON1.toString())!.append(this.sqlTypeStrings!.FOUR_INT_NOT_NULL)!.append(paymentTransactionKeysFactory!.REASON2.toString())!.append(this.sqlTypeStrings!.FOUR_INT_NOT_NULL)!.append(paymentTransactionKeysFactory!.REASON3.toString())
-stringBuffer!.append(this.sqlTypeStrings!.FOUR_INT_NOT_NULL)!.append(paymentTransactionKeysFactory!.EXCEPTION1.toString())!.append(this.sqlTypeStrings!.FOUR_INT_NOT_NULL)!.append(paymentTransactionKeysFactory!.EXCEPTION2.toString())!.append(this.sqlTypeStrings!.FOUR_INT_NOT_NULL)!.append(paymentTransactionKeysFactory!.EXCEPTION3.toString())!.append(this.sqlTypeStrings!.FOUR_INT_NOT_NULL)!.append(paymentTransactionKeysFactory!.EXCEPTION4.toString())!.append(this.sqlTypeStrings!.FOUR_INT_NOT_NULL)!.append(paymentTransactionKeysFactory!.EXCEPTION5.toString())!.append(this.sqlTypeStrings!.FOUR_INT_NOT_NULL)!.append(paymentTransactionKeysFactory!.EXCEPTION6.toString())!.append(this.sqlTypeStrings!.FOUR_INT_NOT_NULL)!.append(paymentTransactionKeysFactory!.EXCEPTION7.toString())!.append(this.sqlTypeStrings!.FOUR_INT_NOT_NULL)!.append(EntryData.getInstance()!.LASTMODIFIED)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(EntryData.getInstance()!.TIMECREATED)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(this.sqlStrings!.PRIMARY_KEY)!.append(OrderData.ID)!.append(this.sqlStrings!.END)
+;
+    
+stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(tableName)!.append(this.sqlStrings!.START)!.append(OrderData.ID)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(UserData.USERNAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
+    
+stringBuffer!.append(paymentTransactionKeysFactory!.RESULT.toString())!.append(this.sqlTypeStrings!.MAX_INT_NOT_NULL)!.append(paymentTransactionKeysFactory!.PNREF.toString())!.append(this.sqlTypeStrings!.TWELVE_CHAR_COLUMN_NOT_NULL);
+    
+stringBuffer!.append(paymentTransactionKeysFactory!.RESPMSG.toString())!.append(this.sqlTypeStrings!.BLOB_NOT_NULL)!.append(paymentTransactionKeysFactory!.AUTHCODE.toString())!.append(this.sqlTypeStrings!.SIX_CHAR_COLUMN_NOT_NULL)!.append(paymentTransactionKeysFactory!.AVSADDR.toString())!.append(this.sqlTypeStrings!.ONE_CHAR_COLUMN_NOT_NULL);
+    
+stringBuffer!.append(paymentTransactionKeysFactory!.AVSZIP.toString())!.append(this.sqlTypeStrings!.ONE_CHAR_COLUMN_NOT_NULL)!.append(paymentTransactionKeysFactory!.ORIGRESULT.toString())!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(paymentTransactionKeysFactory!.STATUS.toString())!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
+    
+stringBuffer!.append(paymentTransactionKeysFactory!.FRAUDCODE.toString())!.append(this.sqlTypeStrings!.TWO_INT_NOT_NULL);
+    
+stringBuffer!.append(paymentTransactionKeysFactory!.FRAUDMSG.toString())!.append(this.sqlTypeStrings!.MAX_INT_NOT_NULL);
+    
+stringBuffer!.append(paymentTransactionKeysFactory!.ERRCODE.toString())!.append(this.sqlTypeStrings!.MAX_INT_NOT_NULL);
+    
+stringBuffer!.append(paymentTransactionKeysFactory!.SCORE.toString())!.append(this.sqlTypeStrings!.THREE_INT_NOT_NULL);
+    
+stringBuffer!.append(paymentTransactionKeysFactory!.REASON1.toString())!.append(this.sqlTypeStrings!.FOUR_INT_NOT_NULL)!.append(paymentTransactionKeysFactory!.REASON2.toString())!.append(this.sqlTypeStrings!.FOUR_INT_NOT_NULL)!.append(paymentTransactionKeysFactory!.REASON3.toString());
+    
+stringBuffer!.append(this.sqlTypeStrings!.FOUR_INT_NOT_NULL)!.append(paymentTransactionKeysFactory!.EXCEPTION1.toString())!.append(this.sqlTypeStrings!.FOUR_INT_NOT_NULL)!.append(paymentTransactionKeysFactory!.EXCEPTION2.toString())!.append(this.sqlTypeStrings!.FOUR_INT_NOT_NULL)!.append(paymentTransactionKeysFactory!.EXCEPTION3.toString())!.append(this.sqlTypeStrings!.FOUR_INT_NOT_NULL)!.append(paymentTransactionKeysFactory!.EXCEPTION4.toString())!.append(this.sqlTypeStrings!.FOUR_INT_NOT_NULL)!.append(paymentTransactionKeysFactory!.EXCEPTION5.toString())!.append(this.sqlTypeStrings!.FOUR_INT_NOT_NULL)!.append(paymentTransactionKeysFactory!.EXCEPTION6.toString())!.append(this.sqlTypeStrings!.FOUR_INT_NOT_NULL)!.append(paymentTransactionKeysFactory!.EXCEPTION7.toString())!.append(this.sqlTypeStrings!.FOUR_INT_NOT_NULL)!.append(EntryData.getInstance()!.LASTMODIFIED)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(EntryData.getInstance()!.TIMECREATED)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(this.sqlStrings!.PRIMARY_KEY)!.append(OrderData.ID)!.append(this.sqlStrings!.END);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 
@@ -280,6 +328,8 @@ stringBuffer!.append(this.sqlTypeStrings!.FOUR_INT_NOT_NULL)!.append(paymentTran
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.createTable(this.createTableStatement());
+
+                        ;
     
 }
 
@@ -290,6 +340,8 @@ stringBuffer!.append(this.sqlTypeStrings!.FOUR_INT_NOT_NULL)!.append(paymentTran
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.dropTable();
+
+                        ;
     
 }
 

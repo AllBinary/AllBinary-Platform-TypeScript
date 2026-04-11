@@ -44,15 +44,19 @@ var errorText = errorText
     var node: Node = document.createElement(ErrorData.getInstance()!.NAME)!;
         
         
-
-node.appendChild(ModDomHelper.createNameValueNodes(document, ErrorData.getInstance()!.TEXT, errorText))
+;
+    
+node.appendChild(ModDomHelper.createNameValueNodes(document, ErrorData.getInstance()!.TEXT, errorText));
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return node;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
 

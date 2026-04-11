@@ -54,26 +54,34 @@ protected constructor (label: string, itemArrayFactoryInterface: ItemArraySingle
     var scrollSelectionForm: ScrollSelectionForm = ScrollSelectionForm.NULL_SCROLL_SELECTION_FORM;
         
         
-
+;
+    
 
         try {
             
     var items: CustomItem[] = itemArrayFactoryInterface!.getItems()!;
         
         
+;
+    
+scrollSelectionForm= RTSScrollSelectionFormFactory.getInstance(label, items);
+    
 
-scrollSelectionForm= RTSScrollSelectionFormFactory.getInstance(label, items)
-} catch(e: Exception)
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e);
+    
 }
 
-this.scrollSelectionForm= scrollSelectionForm
+this.scrollSelectionForm= scrollSelectionForm;
+    
 }
 
 

@@ -88,20 +88,27 @@ private constructor (){
     var transformerFactory: TransformerFactory = TransformerFactory.newInstance()!;
         
         
-
+;
+    
 
     var transformer: Transformer = transformerFactory!.newTransformer(xsltStreamSource)!;
         
         
-
-transformer.transform(xmlStreamSource, streamResult)
+;
+    
+transformer.transform(xmlStreamSource, streamResult);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return streamResult!.getOutputStream();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
 
@@ -125,21 +132,29 @@ transformer.transform(xmlStreamSource, streamResult)
     var tFactory: TransformerFactory = TransformerFactory.newInstance()!;
         
         
-
-tFactory!.setURIResolver(resolver)
+;
+    
+tFactory!.setURIResolver(resolver);
+    
 
     var transformer: Transformer = tFactory!.newTransformer(xsltStreamSource)!;
         
         
-
-transformer.transform(xmlStreamSource, streamResult)
+;
+    
+transformer.transform(xmlStreamSource, streamResult);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return streamResult!.getOutputStream();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
 
@@ -161,14 +176,19 @@ transformer.transform(xmlStreamSource, streamResult)
     var outputStream: ByteArrayOutputStream = new ByteArrayOutputStream();
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.translate(xsltStreamSource, StreamSource(StringBufferInputStream(DomDocumentHelper.toString(xmlDocument))), StreamResult(outputStream))!.toString();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
 
@@ -190,14 +210,19 @@ transformer.transform(xmlStreamSource, streamResult)
     var outputStream: ByteArrayOutputStream = new ByteArrayOutputStream();
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.translate(xsltStreamSource, xmlStreamSource, StreamResult(outputStream))!.toString();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
 
@@ -220,14 +245,19 @@ transformer.transform(xmlStreamSource, streamResult)
     var outputStream: ByteArrayOutputStream = new ByteArrayOutputStream();
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.translate(resolver, xsltStreamSource, xmlStreamSource, StreamResult(outputStream))!.toString();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
 
@@ -246,9 +276,13 @@ transformer.transform(xmlStreamSource, streamResult)
     //var xmlDocument = xmlDocument
 
         try {
-            outputFile!.createNewFile()
-this.translate(StreamSource(xsltFilePath), StreamSource(StringBufferInputStream(DomDocumentHelper.toString(xmlDocument))), StreamResult(outputFile))
-} catch(e: Exception)
+            outputFile!.createNewFile();
+    
+this.translate(StreamSource(xsltFilePath), StreamSource(StringBufferInputStream(DomDocumentHelper.toString(xmlDocument))), StreamResult(outputFile));
+    
+
+                //: 
+} catch(e) 
             {
 
 

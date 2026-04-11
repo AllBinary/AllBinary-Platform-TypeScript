@@ -54,35 +54,39 @@ export class UserEmailEventsConfiguration
         
         
 
-    private emailEventHashMap: HashMap<Any, Any>
+    private emailEventHashMap: HashMap<any, any>
 public constructor (){
 
             super();
-            this.init()
+            this.init();
+    
 }
 
-public constructor (hashMap: HashMap<Any, Any>){
+public constructor (hashMap: HashMap<any, any>){
 
             super();
             var hashMap = hashMap
-this.init()
+this.init();
+    
 }
 
 
     init(){
-this.emailEventHashMap= HashMap<Any, Any>()
+this.emailEventHashMap= HashMap<any, any>();
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.CONSTRUCTOR, this, " Constructor")
+                                    logUtil!.put(this.commonStrings!.CONSTRUCTOR, this, " Constructor");
+    
 
                                     }
                                 
 }
 
 
-    public getEventConfigurationHashMap(): HashMap<Any, Any>{
+    public getEventConfigurationHashMap(): HashMap<any, any>{
 
 
 
@@ -98,11 +102,13 @@ var userEmailEventConfigurationInterface = userEmailEventConfigurationInterface
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
                                     {
-                                    logUtil!.put("Adding: " +userEmailEventConfigurationInterface!.log(), this, "addUserEmailEventConfiguration")
+                                    logUtil!.put("Adding: " +userEmailEventConfigurationInterface!.log(), this, "addUserEmailEventConfiguration");
+    
 
                                     }
                                 
-this.emailEventHashMap!.put(userEmailEventConfigurationInterface!.getName(), userEmailEventConfigurationInterface)
+this.emailEventHashMap!.put(userEmailEventConfigurationInterface!.getName(), userEmailEventConfigurationInterface);
+    
 }
 
 
@@ -113,15 +119,20 @@ this.emailEventHashMap!.put(userEmailEventConfigurationInterface!.getName(), use
     //var userEmailEventNameData = userEmailEventNameData
     //var userInterface = userInterface
 
-    var userEmailEventConfigurationInterface: UserEmailEventConfigurationInterface = this.emailEventHashMap!.get(userEmailEventNameData!.toString()) as UserEmailEventConfigurationInterface;
-        
-        
+    var userEmailEventConfigurationInterface: UserEmailEventConfigurationInterface = this.emailEventHashMap!.get(userEmailEventNameData!.toString());
 
+                         as UserEmailEventConfigurationInterface;
+        
+        
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return UserEmailEventListenerFactory.getInstance(abeClientInformation, userEmailEventConfigurationInterface, userInterface);
+
+                        ;
     
 }
 

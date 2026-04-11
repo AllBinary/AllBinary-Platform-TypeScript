@@ -30,17 +30,20 @@ public constructor (view: View){
 
             super();
                 //var view = view
-this.view= view
+this.view= view;
+    
 }
 
 
     public invalidate(){
-this.view.invalidate()
+this.view.invalidate();
+    
 }
 
 
     public postInvalidate(){
-this.view.postInvalidate()
+this.view.postInvalidate();
+    
 }
 
 

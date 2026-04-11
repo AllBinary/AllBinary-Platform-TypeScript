@@ -18,7 +18,10 @@
 
 
 
-import { Vector } from "../../../java/util/Vector.js";
+            import Vector from "@ohos.util.Vector";
+        
+
+//import { Vector } from "../../../java/util/Vector.js";
 
     
 import { LogUtil } from "../../../org/allbinary/logic/communication/log/LogUtil.js";
@@ -70,7 +73,8 @@ public constructor (transformInfoInterface: TransformInfoInterface)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("View Name: " +transformInfoInterface!.getName(), this, "RootContextView()")
+                                    logUtil!.put("View Name: " +transformInfoInterface!.getName(), this, "RootContextView()");
+    
 
                                     }
                                 
@@ -86,7 +90,8 @@ public constructor (transformInfoInterface: TransformInfoInterface)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("View Name: " +this.getTransformInfoInterface()!.getName(), this, "view()")
+                                    logUtil!.put("View Name: " +this.getTransformInfoInterface()!.getName(), this, "view()");
+    
 
                                     }
                                 
@@ -94,25 +99,32 @@ public constructor (transformInfoInterface: TransformInfoInterface)
     var viewName: string = this.getName()!;
         
         
-
+;
+    
 
     var componentInterface: TransformInterface = TransformFactory.getInstance()!.getInstance(this.abeClientInformation, viewName, this.getTransformInfoInterface())!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return componentInterface!.view();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e);
+    
 
                                     }
                                 
@@ -134,12 +146,14 @@ public constructor (transformInfoInterface: TransformInfoInterface)
     var objectConfig: NoTemplateTransformInfoObjectConfig = new NoTemplateTransformInfoObjectConfig(this.getTransformInfoInterface(), this.getTransformInfoInterface()!.getObjectConfigInterface()!.toXmlDoc());
         
         
-
+;
+    
 
     var componentsVector: Vector = objectConfig!.getTransforms()!;
         
         
-
+;
+    
 
                         if(componentsVector!.length == 0)
                         
@@ -163,20 +177,25 @@ public constructor (transformInfoInterface: TransformInfoInterface)
                                     }
                                 
 
-    var transformInfoInterface: TransformInfo = componentsVector!.get(0) as TransformInfo;
-        
-        
+    var transformInfoInterface: TransformInfo = componentsVector!.get(0);
 
+                         as TransformInfo;
+        
+        
+;
+    
 
     var viewName: string = transformInfoInterface!.getName()!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Root Template With View Name: " +viewName, this, "getName()")
+                                    logUtil!.put("Root Template With View Name: " +viewName, this, "getName()");
+    
 
                                     }
                                 
@@ -197,13 +216,16 @@ public constructor (transformInfoInterface: TransformInfoInterface)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return viewName;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "getName()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "getName()", e);
+    
 
                                     }
                                 

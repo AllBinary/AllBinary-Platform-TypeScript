@@ -92,10 +92,14 @@ var playerInputId = playerInputId
 
                             //For kotlin this is before the body of the constructor.
                     
-this.initInputProcessors()
-this.geographicMapInterface= geographicMapInterface
-this.inputList= list
-this.init()
+this.initInputProcessors();
+    
+this.geographicMapInterface= geographicMapInterface;
+    
+this.inputList= list;
+    
+this.init();
+    
 }
 
 
@@ -112,16 +116,22 @@ var dy = dy
     var terrainTiledLayer: AllBinaryTiledLayer = geographicMapInterface!.getAllBinaryTiledLayer()!;
         
         
-
-terrainTiledLayer!.move( -dx,  -dy)
-scrollMapEvent!.setDxDy( -dx,  -dy)
-ScrollMapEventHandler.getInstance()!.fireEvent(scrollMapEvent)
+;
+    
+terrainTiledLayer!.move( -dx,  -dy);
+    
+scrollMapEvent!.setDxDy( -dx,  -dy);
+    
+ScrollMapEventHandler.getInstance()!.fireEvent(scrollMapEvent);
+    
 }
 
 
     public init(){
-this.maxBottom= this.getSpecialHeight()
-this.maxRight= this.getSpecialWidth()
+this.maxBottom= this.getSpecialHeight();
+    
+this.maxRight= this.getSpecialWidth();
+    
 }
 
 
@@ -132,13 +142,18 @@ this.maxRight= this.getSpecialWidth()
     var terrainTiledLayer: AllBinaryTiledLayer = geographicMapInterface!.getAllBinaryTiledLayer()!;
         
         
-
+;
+    
 
     var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
         
         
+;
+    
+this.move( -terrainTiledLayer!.getXP();
 
-this.move( -terrainTiledLayer!.getXP(), 0)
+                        , 0);
+    
 
                         if(terrainTiledLayer!.getWidth() < displayInfo!.getLastWidth())
                         
@@ -147,8 +162,10 @@ this.move( -terrainTiledLayer!.getXP(), 0)
     var diffX: number = ((displayInfo!.getLastWidth() -terrainTiledLayer!.getWidth()) shr 1);
         
         
-
-this.move( -diffX, 0)
+;
+    
+this.move( -diffX, 0);
+    
 
                                     }
                                 
@@ -157,8 +174,10 @@ this.move( -diffX, 0)
     var diffX: number = ((terrainTiledLayer!.getWidth() -displayInfo!.getLastWidth()) shr 1);
         
         
-
-this.move(diffX, 0)
+;
+    
+this.move(diffX, 0);
+    
 
                         }
                             
@@ -173,17 +192,20 @@ var anchor = anchor
     var terrainTiledLayer: AllBinaryTiledLayer = geographicMapInterface!.getAllBinaryTiledLayer()!;
         
         
-
+;
+    
 
     var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
         
         
-
+;
+    
 
                         if(anchor == Graphics.TOP)
                         
                                     {
-                                    logUtil!.put("Top", this, "scrollY")
+                                    logUtil!.put("Top", this, "scrollY");
+    
 
                                     }
                                 
@@ -191,13 +213,16 @@ var anchor = anchor
                         if(anchor == Graphics.BOTTOM)
                         
                                     {
-                                    logUtil!.put("Bottom", this, "scrollY")
+                                    logUtil!.put("Bottom", this, "scrollY");
+    
 
     var diffY: number = (terrainTiledLayer!.getHeight() -displayInfo!.getLastHeight());
         
         
-
-this.move(0, diffY)
+;
+    
+this.move(0, diffY);
+    
 
                                     }
                                 
@@ -205,13 +230,16 @@ this.move(0, diffY)
                         if(anchor == Graphics.VCENTER)
                         
                                     {
-                                    logUtil!.put("Center", this, "scrollY")
+                                    logUtil!.put("Center", this, "scrollY");
+    
 
     var diffY: number = (terrainTiledLayer!.getHeight() -displayInfo!.getLastHeight()) /2;
         
         
-
-this.move(0, diffY)
+;
+    
+this.move(0, diffY);
+    
 
                                     }
                                 
@@ -233,12 +261,14 @@ this.move(0, diffY)
     var y: number = geographicMapInterface!.getAllBinaryTiledLayer()!.getYP() -10;
         
         
-
+;
+    
 
                         if(this.keepOnMapMinY(y))
                         
                                     {
-                                    this.move(0,  -10)
+                                    this.move(0,  -10);
+    
 
                                     }
                                 
@@ -249,15 +279,19 @@ this.move(0, diffY)
             
     down(){
 
-    var y: number =  -geographicMapInterface!.getAllBinaryTiledLayer()!.getYP() +10;
-        
-        
+    var y: number =  -geographicMapInterface!.getAllBinaryTiledLayer()!.getYP();
 
+                         +10;
+        
+        
+;
+    
 
                         if(this.keepOnMapMaxY(y))
                         
                                     {
-                                    this.move(0, 10)
+                                    this.move(0, 10);
+    
 
                                     }
                                 
@@ -271,12 +305,14 @@ this.move(0, diffY)
     var x: number = geographicMapInterface!.getAllBinaryTiledLayer()!.getYP() +10;
         
         
-
+;
+    
 
                         if(this.keepOnMapMinX(x))
                         
                                     {
-                                    this.move(10, 0)
+                                    this.move(10, 0);
+    
 
                                     }
                                 
@@ -287,15 +323,19 @@ this.move(0, diffY)
             
     left(){
 
-    var x: number =  -geographicMapInterface!.getAllBinaryTiledLayer()!.getYP() -10;
-        
-        
+    var x: number =  -geographicMapInterface!.getAllBinaryTiledLayer()!.getYP();
 
+                         -10;
+        
+        
+;
+    
 
                         if(this.keepOnMapMaxX(x))
                         
                                     {
-                                    this.move( -10, 0)
+                                    this.move( -10, 0);
+    
 
                                     }
                                 
@@ -303,11 +343,16 @@ this.move(0, diffY)
 
 
     public initInputProcessors(){
-this.inputProcessorArray[Canvas.UP]= ScrollMapUpGameInputProcessor(this)
-this.inputProcessorArray[Canvas.DOWN]= ScrollMapDownGameInputProcessor(this)
-this.inputProcessorArray[Canvas.KEY_NUM9]= ScrollMapRightGameInputProcessor(this)
-this.inputProcessorArray[Canvas.KEY_NUM7]= ScrollMapLeftGameInputProcessor(this)
-GameInputProcessorUtil.init(this.inputProcessorArray)
+this.inputProcessorArray[Canvas.UP]= ScrollMapUpGameInputProcessor(this);
+    
+this.inputProcessorArray[Canvas.DOWN]= ScrollMapDownGameInputProcessor(this);
+    
+this.inputProcessorArray[Canvas.KEY_NUM9]= ScrollMapRightGameInputProcessor(this);
+    
+this.inputProcessorArray[Canvas.KEY_NUM7]= ScrollMapLeftGameInputProcessor(this);
+    
+GameInputProcessorUtil.init(this.inputProcessorArray);
+    
 }
 
 
@@ -315,7 +360,8 @@ GameInputProcessorUtil.init(this.inputProcessorArray)
             
     public processInput(key: number){
 var key = key
-inputProcessorArray[key]!.process(AllBinaryGameLayerManager.NULL_ALLBINARY_LAYER_MANAGER, GameKeyEvent.NONE)
+inputProcessorArray[key]!.process(AllBinaryGameLayerManager.NULL_ALLBINARY_LAYER_MANAGER, GameKeyEvent.NONE);
+    
 }
 
 
@@ -329,12 +375,14 @@ var layerManager = layerManager
     var size: number = inputList!.size()!;
         
         
-
+;
+    
 
     var key: number = 0;
         
         
-
+;
+    
 
 
 
@@ -346,30 +394,40 @@ var layerManager = layerManager
 index < size; index++)
         {
 
-    var gameKeyEvent: GameKeyEvent = inputList!.get(index) as GameKeyEvent;
-        
-        
+    var gameKeyEvent: GameKeyEvent = inputList!.get(index);
 
-key= gameKeyEvent!.getKey()
-this.processInput(key)
+                         as GameKeyEvent;
+        
+        
+;
+    
+key= gameKeyEvent!.getKey();
+    
+this.processInput(key);
+    
 }
 
 
                         if(isSingleKeyProcessing)
                         
                                     {
-                                    this.clear()
+                                    this.clear();
+    
 
                                     }
                                 
                         else {
-                            this.update()
+                            this.update();
+    
 
                         }
                             
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, gameInputStrings!.PROCESS_INPUT, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, gameInputStrings!.PROCESS_INPUT, e);
+    
 }
 
 }
@@ -380,12 +438,14 @@ logUtil!.put(commonStrings!.EXCEPTION, this, gameInputStrings!.PROCESS_INPUT, e)
     var terrainTiledLayer: AllBinaryTiledLayer = geographicMapInterface!.getAllBinaryTiledLayer()!;
         
         
-
+;
+    
 
     var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
         
         
-
+;
+    
 
                         if(terrainTiledLayer!.getHeight() > displayInfo!.getLastHeight())
                         
@@ -417,12 +477,14 @@ logUtil!.put(commonStrings!.EXCEPTION, this, gameInputStrings!.PROCESS_INPUT, e)
     var terrainTiledLayer: AllBinaryTiledLayer = geographicMapInterface!.getAllBinaryTiledLayer()!;
         
         
-
+;
+    
 
     var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
         
         
-
+;
+    
 
                         if(terrainTiledLayer!.getWidth() > displayInfo!.getLastWidth())
                         
@@ -455,7 +517,8 @@ var newY = newY
     var y: number = geographicMapInterface!.getAllBinaryTiledLayer()!.getYP()!;
         
         
-
+;
+    
 
                         if(y > maxBottom +border)
                         
@@ -488,7 +551,8 @@ var newY = newY
     var y: number = geographicMapInterface!.getAllBinaryTiledLayer()!.getYP()!;
         
         
-
+;
+    
 
                         if(y <  -border)
                         
@@ -521,7 +585,8 @@ var newX = newX
     var x: number = geographicMapInterface!.getAllBinaryTiledLayer()!.getXP()!;
         
         
-
+;
+    
 
                         if(x <  -maxRight -border)
                         
@@ -554,7 +619,8 @@ var newX = newX
     var x: number = geographicMapInterface!.getAllBinaryTiledLayer()!.getXP()!;
         
         
-
+;
+    
 
                         if(x > border)
                         

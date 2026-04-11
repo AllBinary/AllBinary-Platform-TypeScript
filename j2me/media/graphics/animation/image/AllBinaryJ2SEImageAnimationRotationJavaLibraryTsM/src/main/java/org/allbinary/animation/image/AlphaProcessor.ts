@@ -48,7 +48,8 @@ export class AlphaProcessor extends ModifierBaseProcessor {
     //var imageToShow = imageToShow
     //var index = index
     //var alpha = alpha
-imageModifierUtil!.setAlpha(originalImage, imageToShow, index, alpha)
+imageModifierUtil!.setAlpha(originalImage, imageToShow, index, alpha);
+    
 }
 
 

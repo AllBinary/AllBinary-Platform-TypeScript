@@ -40,22 +40,28 @@ public constructor (demoCanvas: RunnableCanvas){
 
             super();
             var demoCanvas = demoCanvas
-this.runnableCanvas= demoCanvas
+this.runnableCanvas= demoCanvas;
+    
 }
 
 
     public run(){
 
         try {
-            runnableCanvas!.run()
-} catch(e: Exception)
+            runnableCanvas!.run();
+    
+
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
+    
 }
 
 }
@@ -64,7 +70,8 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
                 //@Throws(Error::class)
             
     public processLoopSleep(){
-runnableCanvas!.processLoopSleep()
+runnableCanvas!.processLoopSleep();
+    
 }
 
 

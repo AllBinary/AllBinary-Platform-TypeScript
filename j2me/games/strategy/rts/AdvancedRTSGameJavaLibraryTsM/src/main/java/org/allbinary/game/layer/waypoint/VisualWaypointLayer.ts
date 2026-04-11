@@ -68,9 +68,12 @@ public constructor (remoteInfo: RemoteInfo, parentLayer: PathFindingLayerInterfa
     var rtsLayerHudPaintable: WaypointInfoHudPaintable = WaypointInfoHudPaintableSingleton.getInstance()!;
         
         
-
-rtsLayerHudPaintable!.setBasicColorP(this.allBinaryGameLayerManagerP!.getForegroundBasicColor())
-rtsLayerHudPaintable!.setRtsLayer(this)
+;
+    
+rtsLayerHudPaintable!.setBasicColorP(this.allBinaryGameLayerManagerP!.getForegroundBasicColor());
+    
+rtsLayerHudPaintable!.setRtsLayer(this);
+    
 
 
 
@@ -85,7 +88,8 @@ rtsLayerHudPaintable!.setRtsLayer(this)
     var rtsLayerHudPaintable: WaypointInfoHudPaintable = WaypointInfoHudPaintableSingleton.getInstance()!;
         
         
-
+;
+    
 
 
 

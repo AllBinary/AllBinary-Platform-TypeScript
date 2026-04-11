@@ -78,13 +78,15 @@ private constructor (){
             }
 
 
-    public getInstance(vectorRotationInfo: VectorInfo): IntArray[][]{
+    public getInstance(vectorRotationInfo: VectorInfo): number[][][]{
 var vectorRotationInfo = vectorRotationInfo
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return getInstance(vectorRotationInfo!.getWidth(), vectorRotationInfo!.getHeight(), vectorRotationInfo!.getPoints(), vectorRotationInfo!.getTotalFrames());
+
+                        ;
     
 }
 
@@ -93,7 +95,7 @@ var vectorRotationInfo = vectorRotationInfo
         
         
 
-    public getInstance(width: number, height: number, points: IntArray[], frames: number): IntArray[][]{
+    public getInstance(width: number, height: number, points: number[][], frames: number): number[][][]{
 var width = width
 var height = height
 var points = points
@@ -104,33 +106,39 @@ var frames = frames
     var totalAngle: number = this.angleFactory!.TOTAL_ANGLE;
         
         
-
+;
+    
 
     var angleIncrement: number = totalAngle /frames;
         
         
-
+;
+    
 
     var pointsBasicArrayList: BasicArrayList = new BasicArrayList(totalAngle /angleIncrement);
         
         
-
+;
+    
 
     var pointBasicArrayList: BasicArrayList = new BasicArrayList(points.length);
         
         
-
+;
+    
 
     var pointFactory: PointFactory = PointFactory.getInstance()!;
         
         
-
+;
+    
 
     var size: number = points.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -141,40 +149,49 @@ var frames = frames
         
 index < size; index++)
         {
-pointBasicArrayList!.add(pointFactory!.getInstance(points[index]![0]!, points[index]![1]!))
+pointBasicArrayList!.add(pointFactory!.getInstance(points[index]![0]!, points[index]![1]!));
+    
 }
 
 
     var index: number = 0;
         
         
-
+;
+    
 
         while(index < totalAngle)
         {
-pointsBasicArrayList!.add(getInstance(width, height, pointBasicArrayList, this.angleFactory!.getInstance(index)))
-index += angleIncrement
+pointsBasicArrayList!.add(getInstance(width, height, pointBasicArrayList, this.angleFactory!.getInstance(index)));
+    
+index += angleIncrement;
+    
 }
 
 
-    var newPoints: IntArray[][] = vectorAnimationUtil!.toAnimationArrayFromBasicArrayListOfPointBasicArrayList(pointsBasicArrayList, pointBasicArrayList!.size())!;
+    var newPoints: number[][][] = vectorAnimationUtil!.toAnimationArrayFromBasicArrayListOfPointBasicArrayList(pointsBasicArrayList, pointBasicArrayList!.size())!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return newPoints;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e);
+    
 
 
 
@@ -197,16 +214,23 @@ var angle = angle
     var graphicsPipe: BasicGraphicsPipeline = new BasicGraphicsPipeline(pointBasicArrayList);
         
         
-
-graphicsPipe!.createMatrix()
-graphicsPipe!.translate( -(width shr 1),  -(height shr 1))
-graphicsPipe!.rotate(angle)
-graphicsPipe!.translate((width shr 1), (height shr 1))
+;
+    
+graphicsPipe!.createMatrix();
+    
+graphicsPipe!.translate( -(width shr 1),  -(height shr 1));
+    
+graphicsPipe!.rotate(angle);
+    
+graphicsPipe!.translate((width shr 1), (height shr 1));
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return graphicsPipe!.getMatrix();
+
+                        ;
     
 }
 

@@ -18,10 +18,13 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { BufferedImage } from "../../../../../java/awt/image/BufferedImage.js";
 
     
-import { Vector } from "../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../java/util/Vector.js";
 
     
 import { PoolInterface } from "../../../../../org/allbinary/logic/util/cache/PoolInterface.js";
@@ -64,7 +67,7 @@ export class ChangedPixelsUtil
         
         
 
-    private static readonly CLEAR_INT_ARRAY: IntArray = IntArray(1800 *1600);
+    private static readonly CLEAR_INT_ARRAY: number[] = new Array(1800 *1600);
         
         
 
@@ -74,23 +77,28 @@ export class ChangedPixelsUtil
 var imageComparisonInfo = imageComparisonInfo
 
     var bufferedImageCacheables: BufferedImageCacheable[]
-
+;
+    
 
     var originalBufferedImage: BufferedImage = imageComparisonInfo!.getBufferedImages()[0]!;
         
         
-
-bufferedImageCacheables= new Array(2)
+;
+    
+bufferedImageCacheables= new Array(2);
+    
 
     var bufferedImageInfo: BufferedImageInfo = BufferedImageInfoFactory.getInstance(imageComparisonInfo!.imageWidth, imageComparisonInfo!.imageHeight, originalBufferedImage!.getType())!;
         
         
-
+;
+    
 
     var poolInterface: PoolInterface = BufferedImagePoolSingleton.getInstance()!;
         
         
-
+;
+    
 
 
 
@@ -102,24 +110,31 @@ bufferedImageCacheables= new Array(2)
 index < bufferedImageCacheables!.length; index++)
         {
 
-    var bufferedImageCacheable: BufferedImageCacheable = poolInterface!.remove(bufferedImageInfo) as BufferedImageCacheable;
-        
-        
+    var bufferedImageCacheable: BufferedImageCacheable = poolInterface!.remove(bufferedImageInfo);
 
-bufferedImageCacheables[index]= bufferedImageCacheable
-bufferedImageCacheables[index]!.getBufferedImage()!.setRGB(START_X, START_Y, bufferedImageInfo!.getWidth(), bufferedImageInfo!.getHeight(), CLEAR_INT_ARRAY, OFFSET, SCAN_SIZE)
+                         as BufferedImageCacheable;
+        
+        
+;
+    
+bufferedImageCacheables[index]= bufferedImageCacheable;
+    
+bufferedImageCacheables[index]!.getBufferedImage()!.setRGB(START_X, START_Y, bufferedImageInfo!.getWidth(), bufferedImageInfo!.getHeight(), CLEAR_INT_ARRAY, OFFSET, SCAN_SIZE);
+    
 }
 
 
     var vector: Vector = imageComparisonInfo!.getNonMatchingPixelVector()!;
         
         
-
+;
+    
 
     var size: number = vector.length!;
         
         
-
+;
+    
 
 
 
@@ -131,23 +146,30 @@ bufferedImageCacheables[index]!.getBufferedImage()!.setRGB(START_X, START_Y, buf
 index < size; index++)
         {
 
-    var pixelDelta: PixelDelta = vector.get(index) as PixelDelta;
-        
-        
+    var pixelDelta: PixelDelta = vector.get(index);
 
+                         as PixelDelta;
+        
+        
+;
+    
 
                         if(pixelDelta!.getColorDelta() == 
                                     null
                                 )
                         
                                     {
-                                    System.out.print("ColorDelta")
-System.exit(0)
+                                    System.out.print("ColorDelta");
+    
+System.exit(0);
+    
 
                                     }
                                 
-bufferedImageCacheables[0]!.getBufferedImage()!.setRGB(pixelDelta!.getPoint()!.getX(), pixelDelta!.getPoint()!.getY(), pixelDelta!.getColorDelta()!.getRgb1())
-bufferedImageCacheables[1]!.getBufferedImage()!.setRGB(pixelDelta!.getPoint()!.getX(), pixelDelta!.getPoint()!.getY(), pixelDelta!.getColorDelta()!.getRgb2())
+bufferedImageCacheables[0]!.getBufferedImage()!.setRGB(pixelDelta!.getPoint()!.getX(), pixelDelta!.getPoint()!.getY(), pixelDelta!.getColorDelta()!.getRgb1());
+    
+bufferedImageCacheables[1]!.getBufferedImage()!.setRGB(pixelDelta!.getPoint()!.getX(), pixelDelta!.getPoint()!.getY(), pixelDelta!.getColorDelta()!.getRgb2());
+    
 }
 
 

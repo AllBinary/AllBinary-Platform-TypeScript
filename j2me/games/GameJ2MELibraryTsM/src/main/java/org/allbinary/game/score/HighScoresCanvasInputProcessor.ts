@@ -48,7 +48,8 @@ public constructor (highScoresCanvas: HighScoresCanvas)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.highScoresCanvas= highScoresCanvas
+this.highScoresCanvas= highScoresCanvas;
+    
 }
 
 
@@ -63,24 +64,30 @@ this.highScoresCanvas= highScoresCanvas
 
     public onPressGameKeyEvent(gameKeyEvent: GameKeyEvent){
 var gameKeyEvent = gameKeyEvent
-super.onPressGameKeyEvent(gameKeyEvent)
-this.update()
+super.onPressGameKeyEvent(gameKeyEvent);
+    
+this.update();
+    
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public onDownGameKeyEvent(gameKeyEvent: GameKeyEvent){
 var gameKeyEvent = gameKeyEvent
-super.onDownGameKeyEvent(gameKeyEvent)
-this.update()
+super.onDownGameKeyEvent(gameKeyEvent);
+    
+this.update();
+    
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public onUpGameKeyEvent(gameKeyEvent: GameKeyEvent){
 var gameKeyEvent = gameKeyEvent
-super.onUpGameKeyEvent(gameKeyEvent)
-this.update()
+super.onUpGameKeyEvent(gameKeyEvent);
+    
+this.update();
+    
 }
 
 

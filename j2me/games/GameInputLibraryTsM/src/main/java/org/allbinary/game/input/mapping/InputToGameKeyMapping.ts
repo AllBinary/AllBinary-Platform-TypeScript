@@ -73,7 +73,7 @@ export class InputToGameKeyMapping extends InputMapping {
         
         
 
-    negativePlatformToGameKeyMapping: GameKey[] = new Array(0);
+    negativePlatformToGameKeyMapping: GameKey[] = [];
         
         
 
@@ -83,8 +83,10 @@ export class InputToGameKeyMapping extends InputMapping {
 public constructor (){
 
             super();
-            logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
-this.clear()
+            logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
+    
+this.clear();
+    
 }
 
 
@@ -99,15 +101,18 @@ this.clear()
         
 index >= 0; index--)
         {
-platformToGameKeyMapping[index]= gameKeyFactory!.NONE
+platformToGameKeyMapping[index]= gameKeyFactory!.NONE;
+    
 }
 
 }
 
 
     removeAll(){
-super.removeAll()
-this.clear()
+super.removeAll();
+    
+this.clear();
+    
 }
 
 
@@ -127,12 +132,14 @@ index >= 0; index--)
     var input: Input = inputToGameKeyMapping!.getInstance(index)!;
         
         
-
+;
+    
 
                         if(input != gameKeyFactory!.NONE)
                         
                                     {
-                                    this.addAll(input, inputToGameKeyMapping!.getMappedInput(input))
+                                    this.addAll(input, inputToGameKeyMapping!.getMappedInput(input));
+    
 
                                     }
                                 
@@ -158,8 +165,10 @@ index >= 0; index--)
     var mappedToInput: Input = list.objectArray[index]! as Input;
         
         
-
-this.add(input, mappedToInput)
+;
+    
+this.add(input, mappedToInput);
+    
 }
 
 }
@@ -168,8 +177,10 @@ this.add(input, mappedToInput)
     public add(input: Input, mappedToInput: Input){
 var input = input
 var mappedToInput = mappedToInput
-super.add(input, mappedToInput)
-this.set(input, mappedToInput)
+super.add(input, mappedToInput);
+    
+this.set(input, mappedToInput);
+    
 }
 
 
@@ -177,9 +188,12 @@ this.set(input, mappedToInput)
 var input = input
 var mappedToInput = mappedToInput
 logUtil!.put(StringMaker().
-                            append(CommonLabels.getInstance()!.START_LABEL)!.append(StringUtil.getInstance()!.toString(input))!.append(" == ")!.append(StringUtil.getInstance()!.toString(mappedToInput))!.toString(), this, "InputToGameKeyMapping::remove")
-super.remove(input, mappedToInput)
-this.set(input, gameKeyFactory!.NONE)
+                            append(CommonLabels.getInstance()!.START_LABEL)!.append(StringUtil.getInstance()!.toString(input))!.append(" == ")!.append(StringUtil.getInstance()!.toString(mappedToInput))!.toString(), this, "InputToGameKeyMapping::remove");
+    
+super.remove(input, mappedToInput);
+    
+this.set(input, gameKeyFactory!.NONE);
+    
 }
 
 
@@ -190,12 +204,14 @@ var mappedToInput = mappedToInput
     var id: number = mappedToInput!.getId()!;
         
         
-
+;
+    
 
                         if(id >= 0 && id < platformToGameKeyMapping!.length)
                         
                                     {
-                                    this.platformToGameKeyMapping[id]= input as GameKey
+                                    this.platformToGameKeyMapping[id]= input as GameKey;
+    
 
                                     }
                                 
@@ -218,12 +234,14 @@ var id = id
     var list: BasicArrayList = new BasicArrayList();
         
         
-
+;
+    
 
     var inputFactory: InputFactory = InputFactory.getInstance()!;
         
         
-
+;
+    
 
 
 
@@ -242,14 +260,16 @@ index < platformToGameKeyMapping!.length; index++)
     var input: Input = inputFactory!.getInstance(index)!;
         
         
-
+;
+    
 
                         if(input != 
                                     null
                                 )
                         
                                     {
-                                    list.add(input)
+                                    list.add(input);
+    
 
                                     }
                                 
@@ -276,12 +296,14 @@ var gameKey = gameKey
     var key: number = canvas.getKeyCode(gameKey!.getId())!;
         
         
-
+;
+    
 
                         if(key < 0 &&  -key < negativePlatformToGameKeyMapping!.length)
                         
                                     {
-                                    negativePlatformToGameKeyMapping[ -key]= gameKey
+                                    negativePlatformToGameKeyMapping[ -key]= gameKey;
+    
 
                                     }
                                 
@@ -293,7 +315,8 @@ var gameKey = gameKey
                         if(platformToGameKeyMapping[key] == gameKeyFactory!.NONE)
                         
                                     {
-                                    platformToGameKeyMapping[key]= gameKey
+                                    platformToGameKeyMapping[key]= gameKey;
+    
 
                                     }
                                 
@@ -301,8 +324,9 @@ var gameKey = gameKey
                                     }
                                 
                         else {
-                            PreLogUtil.put(StringMaker().
-                            append(gameKey!.toString())!.append(CommonSeps.getInstance()!.COLON_SEP)!.appendint(key)!.toString(), this, commonStrings!.INIT, Error())
+                            PreLogUtil.putOE(StringMaker().
+                            append(gameKey!.toString())!.append(CommonSeps.getInstance()!.COLON_SEP)!.appendint(key)!.toString(), this, commonStrings!.INIT, Error());
+    
 
                         }
                             
@@ -317,12 +341,14 @@ var canvas = canvas
     var nextKey: number = 0;
         
         
-
+;
+    
 
     var smallestKey: number = 0;
         
         
-
+;
+    
 
 
 
@@ -334,12 +360,14 @@ var canvas = canvas
         
 --index >= 0; )
         {
-nextKey= canvas.getKeyCode(mappedGameKeys[index]!.getId())
+nextKey= canvas.getKeyCode(mappedGameKeys[index]!.getId());
+    
 
                         if(nextKey < smallestKey)
                         
                                     {
-                                    smallestKey= nextKey
+                                    smallestKey= nextKey;
+    
 
                                     }
                                 
@@ -359,29 +387,34 @@ var canvas = canvas
 
         try {
             
-    var negativePlatformToGameKeyMapping: GameKey[] = new Array(0);
+    var negativePlatformToGameKeyMapping: GameKey[] = [];
         
         
-
+;
+    
 
     var smallestKey: number = this.getSmallestCanvasGameKeyCode(canvas)!;
         
         
-
+;
+    
 
                         if(smallestKey < 0)
                         
                                     {
-                                    smallestKey--
+                                    smallestKey--;
+    
 
                         if(smallestKey <  -256)
                         
                                     {
-                                    smallestKey=  -256
+                                    smallestKey=  -256;
+    
 
                                     }
                                 
-negativePlatformToGameKeyMapping= new Array( -smallestKey)
+negativePlatformToGameKeyMapping= new Array( -smallestKey);
+    
 
 
 
@@ -393,10 +426,12 @@ negativePlatformToGameKeyMapping= new Array( -smallestKey)
         
 --index >= 0; )
         {
-negativePlatformToGameKeyMapping[index]= gameKeyFactory!.NONE
+negativePlatformToGameKeyMapping[index]= gameKeyFactory!.NONE;
+    
 }
 
-this.negativePlatformToGameKeyMapping= negativePlatformToGameKeyMapping
+this.negativePlatformToGameKeyMapping= negativePlatformToGameKeyMapping;
+    
 
                                     }
                                 
@@ -411,12 +446,16 @@ this.negativePlatformToGameKeyMapping= negativePlatformToGameKeyMapping
         
 --index >= 0; )
         {
-this.init(canvas, mappedGameKeys[index]!)
+this.init(canvas, mappedGameKeys[index]!);
+    
 }
 
-} catch(t: Throwable)
+
+                //: 
+} catch(t) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, t)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, t);
+    
 }
 
 }

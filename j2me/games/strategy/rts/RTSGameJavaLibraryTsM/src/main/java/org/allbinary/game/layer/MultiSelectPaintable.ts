@@ -65,13 +65,16 @@ public constructor (){
 
     public update(list: BasicArrayList){
 var list = list
-this.clear()
+this.clear();
+    
 
     var size: number = list.size()!;
         
         
-
-this.totalCharArray= this.getPrimitiveLongUtil()!.getCharArray(size)
+;
+    
+this.totalCharArray= this.getPrimitiveLongUtil()!.getCharArray(size);
+    
 
 
 
@@ -83,15 +86,21 @@ this.totalCharArray= this.getPrimitiveLongUtil()!.getCharArray(size)
 index >= 0; index--)
         {
 
-    var rtsLayer: RTSLayer = list.get(index) as RTSLayer;
+    var rtsLayer: RTSLayer = list.get(index);
+
+                         as RTSLayer;
         
         
+;
+    
 
+                        if(!this.rootNameList!.contains(rtsLayer!.getRootName());
 
-                        if(!this.rootNameList!.contains(rtsLayer!.getRootName()))
+                        )
                         
                                     {
-                                    this.rootNameList!.add(rtsLayer!.getRootName())
+                                    this.rootNameList!.add(rtsLayer!.getRootName());
+    
 
                                     }
                                 
@@ -101,12 +110,14 @@ index >= 0; index--)
     var COMMA_SEP: string = CommonSeps.getInstance()!.COMMA_SEP;
         
         
-
+;
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
 
 
@@ -118,27 +129,34 @@ index >= 0; index--)
 index >= 0; index--)
         {
 
-    var rootName: string = this.rootNameList!.get(index) as String;
-        
-        
+    var rootName: string = this.rootNameList!.get(index);
 
-stringBuffer!.append(rootName)
+                         as String;
+        
+        
+;
+    
+stringBuffer!.append(rootName);
+    
 
                         if(index != 0)
                         
                                     {
-                                    stringBuffer!.append(COMMA_SEP)
+                                    stringBuffer!.append(COMMA_SEP);
+    
 
                                     }
                                 
 }
 
-this.rootNamesString= stringBuffer!.toString()
+this.rootNamesString= stringBuffer!.toString();
+    
 }
 
 
     clear(){
-this.rootNameList!.clear()
+this.rootNameList!.clear();
+    
 }
 
 
@@ -156,17 +174,24 @@ this.rootNameList!.clear()
 
     public paint(graphics: Graphics){
 var graphics = graphics
-graphics.setColor(backgroundColor)
-graphics.drawRect(this.getX(), y, this.getWidth(), this.getHeight())
-graphics.setColor(this.getColor())
-graphics.drawString(TOTAL, this.textX, y, 0)
-graphics.drawChars(this.totalCharArray, 0, this.getPrimitiveLongUtil()!.getCurrentTotalDigits(), this.textX +this.totalWidth, y, 0)
+graphics.setColor(backgroundColor);
+    
+graphics.drawRect(this.getX(), y, this.getWidth(), this.getHeight());
+    
+graphics.setColor(this.getColor());
+    
+graphics.drawString(TOTAL, this.textX, y, 0);
+    
+graphics.drawChars(this.totalCharArray, 0, this.getPrimitiveLongUtil()!.getCurrentTotalDigits(), this.textX +this.totalWidth, y, 0);
+    
 
     var textLine2Y: number = (y +myFont!.DEFAULT_CHAR_HEIGHT);
         
         
-
-graphics.drawString(this.rootNamesString, this.textX, textLine2Y, 0)
+;
+    
+graphics.drawString(this.rootNamesString, this.textX, textLine2Y, 0);
+    
 }
 
 

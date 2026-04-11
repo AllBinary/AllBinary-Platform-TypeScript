@@ -71,7 +71,8 @@ export class MakeCountedPartsSingletonArrayFactory
             
     public getInstance(partInterfaceArray: PartInterface[]): PartInterface[]{
     //var partInterfaceArray = partInterfaceArray
-list= BasicArrayList()
+list= BasicArrayList();
+    
 
 
 
@@ -82,22 +83,26 @@ list= BasicArrayList()
         
 index < partInterfaceArray!.length; index++)
         {
-list.add(partInterfaceArray[index]!)
+list.add(partInterfaceArray[index]!);
+    
 }
 
 
     var countedBasicArrayList: BasicArrayList = CountedPickedUpLayerInterfaceFactoryPool.getInstance()!.getList()!;
         
         
-
+;
+    
 
     var layerInterfaceFactoryInterface: CountedPickedUpLayerInterfaceFactory
-
+;
+    
 
     var size: number = countedBasicArrayList!.size()!;
         
         
-
+;
+    
 
 
 
@@ -108,36 +113,47 @@ list.add(partInterfaceArray[index]!)
         
 index < size; index++)
         {
-layerInterfaceFactoryInterface= countedBasicArrayList!.objectArray[index]! as CountedPickedUpLayerInterfaceFactory
-list.add(CountedLayerInterfaceFactoryPart(0, layerInterfaceFactoryInterface))
+layerInterfaceFactoryInterface= countedBasicArrayList!.objectArray[index]! as CountedPickedUpLayerInterfaceFactory;
+    
+list.add(CountedLayerInterfaceFactoryPart(0, layerInterfaceFactoryInterface));
+    
 }
 
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("Total Parts: ")
-stringBuffer!.appendint(list.size())
-stringBuffer!.append(" Counted: ")
-stringBuffer!.appendint(countedBasicArrayList!.size())
+;
+    
+stringBuffer!.append("Total Parts: ");
+    
+stringBuffer!.appendint(list.size());
+    
+stringBuffer!.append(" Counted: ");
+    
+stringBuffer!.appendint(countedBasicArrayList!.size());
+    
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE)
+;
+    
+logUtil!.put(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE);
+    
 
     var newPartInterfaceArray: PartInterface[] = new Array(list.size());
         
         
-
+;
+    
 
     var newSize: number = newPartInterfaceArray!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -148,7 +164,10 @@ logUtil!.put(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE)
         
 index < newSize; index++)
         {
-newPartInterfaceArray[index]= list.get(index) as PartInterface
+newPartInterfaceArray[index]= list.get(index);
+
+                         as PartInterface;
+    
 }
 
 

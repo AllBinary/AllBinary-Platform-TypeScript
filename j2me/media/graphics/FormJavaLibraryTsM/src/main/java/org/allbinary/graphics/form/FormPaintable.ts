@@ -33,13 +33,15 @@ public constructor (form: PaintableForm){
 
             super();
             var form = form
-this.form= form
+this.form= form;
+    
 }
 
 
     public paint(graphics: Graphics){
 var graphics = graphics
-this.form.paint(graphics)
+this.form.paint(graphics);
+    
 }
 
 

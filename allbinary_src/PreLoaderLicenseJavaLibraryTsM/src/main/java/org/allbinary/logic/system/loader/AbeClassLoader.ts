@@ -55,7 +55,7 @@ import { AbCryptUtil } from "../../../../../org/allbinary/logic/system/security/
 export class AbeClassLoader extends ClassLoader {
         
 
-    private classes: Map = new HashMap<Any, Any>();
+    private classes: Map = new HashMap<any, any>();
         
         
 
@@ -85,18 +85,22 @@ var key = key
 
                             //For kotlin this is before the body of the constructor.
                     
-this.key= key
-this.PATH= org.allbinary.globals.URLGLOBALS.getWebappPath() +"WEB-INF/classes/"
+this.key= key;
+    
+this.PATH= org.allbinary.globals.URLGLOBALS.getWebappPath() +"WEB-INF/classes/";
+    
 }
 
 
-    findLoadedClass1(name: string): KClass<*>{
+    findLoadedClass1(name: string): Function{
 var name = name
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return classes.get(name) as Class<*>;
+                        return classes.get(name);
+
+                         as Class<*>;
     
 }
 
@@ -104,13 +108,15 @@ var name = name
                 //@Throws(ClassNotFoundException::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
-    public loadClass(name: string): KClass<*>{
+    public loadClass(name: string): Function{
 var name = name
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.loadClass(name, false);
+
+                        ;
     
 }
 
@@ -118,26 +124,29 @@ var name = name
                 //@Throws(ClassNotFoundException::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
-    public loadClass(name: string, resolve: boolean): KClass<*>{
+    public loadClass(name: string, resolve: boolean): Function{
 var name = name
 var resolve = resolve
 
     var loadedWith: string = "findLoadedClass1";
         
         
-
+;
+    
 
     var logBuffer: LogBuffer = new LogBuffer();
         
         
-
+;
+    
 
         try {
             
-    var myClass: KClass<*> = this.findLoadedClass1(name)!;
+    var myClass: Function = this.findLoadedClass1(name)!;
         
         
-
+;
+    
 
                         if(myClass == 
                                     null
@@ -146,12 +155,14 @@ var resolve = resolve
                                     {
                                     
         try {
-            loadedWith= "super.loadClass"
+            loadedWith= "super.loadClass";
+    
 
-    var normalClass: KClass<*> = super.loadClass(name, resolve)!;
+    var normalClass: Function = super.loadClass(name, resolve)!;
         
         
-
+;
+    
 
                         if(normalClass != 
                                     null
@@ -167,24 +178,34 @@ var resolve = resolve
 
                                     }
                                 
-} catch(e: ClassNotFoundException)
+
+                //: 
+} catch(e) 
             {
-logBuffer!.add(LogFactory.getInstance("Failed to Load Class: " +name +"\nwith: " +loadedWith, this, "loadClass", e))
+logBuffer!.add(LogFactory.getInstance("Failed to Load Class: " +name +"\nwith: " +loadedWith, this, "loadClass", e));
+    
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
-logBuffer!.add(LogFactory.getInstance("Failed to Load Class: " +name +"\nwith: " +loadedWith, this, "loadClass", e))
+logBuffer!.add(LogFactory.getInstance("Failed to Load Class: " +name +"\nwith: " +loadedWith, this, "loadClass", e));
+    
 }
- catch(e: NoClassDefFoundError)
+
+                //: 
+ catch(e) 
             {
-logBuffer!.add(LogFactory.getInstance("NoClassDefFoundError Failed Loaded Class: " +name +"\nwith: " +loadedWith, this, "loadClass"))
+logBuffer!.add(LogFactory.getInstance("NoClassDefFoundError Failed Loaded Class: " +name +"\nwith: " +loadedWith, this, "loadClass"));
+    
 }
 
 
-    var classBytes: ByteArray = this.loadClassBytesFromFile(name)!;
+    var classBytes: number[] = this.loadClassBytesFromFile(name)!;
         
         
-
+;
+    
 
                         if(classBytes == 
                                     null
@@ -198,7 +219,8 @@ logBuffer!.add(LogFactory.getInstance("NoClassDefFoundError Failed Loaded Class:
 
                                     }
                                 
-myClass= defineClass(name, classBytes, 0, classBytes!.length)
+myClass= defineClass(name, classBytes, 0, classBytes!.length);
+    
 
                         if(myClass == 
                                     null
@@ -212,30 +234,37 @@ myClass= defineClass(name, classBytes, 0, classBytes!.length)
 
                                     }
                                 
-classes.put(name, myClass::class.java)
+classes.put(name, myClass::class.java);
+    
 
                                     }
                                 
                         else {
-                            logBuffer!.add(LogFactory.getInstance("Already Loaded: " +name +"\nwith: " +loadedWith, this, "loadClass"))
+                            logBuffer!.add(LogFactory.getInstance("Already Loaded: " +name +"\nwith: " +loadedWith, this, "loadClass"));
+    
 
                         }
                             
-resolveClass(myClass::class.java)
+resolveClass(myClass::class.java);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return myClass;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.LOADERERROR))
                         
                                     {
-                                    logBuffer!.logAll()
-logUtil!.put("Failure loading: " +name +"\nwith: " +loadedWith, this, "loadClass", e)
+                                    logBuffer!.logAll();
+    
+logUtil!.put("Failure loading: " +name +"\nwith: " +loadedWith, this, "loadClass", e);
+    
 
                                     }
                                 
@@ -250,7 +279,7 @@ logUtil!.put("Failure loading: " +name +"\nwith: " +loadedWith, this, "loadClass
 }
 
 
-    loadClassBytesFromFile(name: string): ByteArray{
+    loadClassBytesFromFile(name: string): number[]{
 var name = name
 
     var in: FileInputStream = 
@@ -258,67 +287,84 @@ var name = name
             ;
         
         
-
+;
+    
 
     var cname: string = StringUtil.getInstance()!.EMPTY_STRING;
         
         
-
+;
+    
 
         try {
-            cname= PATH +name.replace('.', AbPathData.getInstance()!.SEPARATORCHAR) +ENCRYPTED_EXTENSION
-in= FileInputStream(cname)
+            cname= PATH +name.replace('.', AbPathData.getInstance()!.SEPARATORCHAR) +ENCRYPTED_EXTENSION;
+    
+in= FileInputStream(cname);
+    
 
-    var decrypted: ByteArray = this.abCryptUtil!.decrypt(in, this.key)!;
+    var decrypted: number[] = this.abCryptUtil!.decrypt(in, this.key)!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return decrypted;
     
-} catch(e: IOException)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.LOADERERROR))
                         
                                     {
-                                    logUtil!.put("(Before LogBuffer Output) Failure loading Encrypted: " +name +" File: " +cname, "AbeClassLoader", "loadClassBytes", e)
+                                    logUtil!.put("(Before LogBuffer Output) Failure loading Encrypted: " +name +" File: " +cname, "AbeClassLoader", "loadClassBytes", e);
+    
 
                                     }
                                 
-StreamUtil.getInstance()!.close(in)
+StreamUtil.getInstance()!.close(in);
+    
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
 
     var loadedWith: string = "loadClassBytes";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.LOADERERROR))
                         
                                     {
-                                    logUtil!.put("(Before LogBuffer Output) Failed to Loaded Class: " +name +" File: " +cname +"\nwith: " +loadedWith, this, "loadClassBytes", e)
+                                    logUtil!.put("(Before LogBuffer Output) Failed to Loaded Class: " +name +" File: " +cname +"\nwith: " +loadedWith, this, "loadClassBytes", e);
+    
 
                                     }
                                 
 }
- catch(e: NoClassDefFoundError)
+
+                //: 
+ catch(e) 
             {
 
     var loadedWith: string = "loadClassBytes";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.LOADERERROR))
                         
                                     {
-                                    logUtil!.put("(Before LogBuffer Output) NoClassDefFoundError Failed Loaded Class: " +name +" File: " +cname +"\nwith: " +loadedWith, this, "loadClassBytes")
+                                    logUtil!.put("(Before LogBuffer Output) NoClassDefFoundError Failed Loaded Class: " +name +" File: " +cname +"\nwith: " +loadedWith, this, "loadClassBytes");
+    
 
                                     }
                                 
@@ -336,21 +382,23 @@ StreamUtil.getInstance()!.close(in)
                 //@Throws(ClassNotFoundException::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
-    public oldLoadClass(name: string, resolve: boolean): KClass<*>{
+    public oldLoadClass(name: string, resolve: boolean): Function{
 var name = name
 var resolve = resolve
 
     var loadedWith: string = "findLoadedClass1";
         
         
-
+;
+    
 
         try {
             
-    var myClass: KClass<*> = this.findLoadedClass1(name)!;
+    var myClass: Function = this.findLoadedClass1(name)!;
         
         
-
+;
+    
 
                         if(myClass == 
                                     null
@@ -359,12 +407,14 @@ var resolve = resolve
                                     {
                                     
         try {
-            loadedWith= "super.loadClass"
+            loadedWith= "super.loadClass";
+    
 
-    var normalClass: KClass<*> = super.loadClass(name, resolve)!;
+    var normalClass: Function = super.loadClass(name, resolve)!;
         
         
-
+;
+    
 
                         if(normalClass != 
                                     null
@@ -380,46 +430,57 @@ var resolve = resolve
 
                                     }
                                 
-} catch(e: ClassNotFoundException)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.LOADER))
                         
                                     {
-                                    logUtil!.put("Failed Loaded Class: " +name +" with: " +loadedWith, this, "loadClass")
+                                    logUtil!.put("Failed Loaded Class: " +name +" with: " +loadedWith, this, "loadClass");
+    
 
                                     }
                                 
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.LOADER))
                         
                                     {
-                                    logUtil!.put("Failed Loaded Class: " +name +" with: " +loadedWith, this, "loadClass")
+                                    logUtil!.put("Failed Loaded Class: " +name +" with: " +loadedWith, this, "loadClass");
+    
 
                                     }
                                 
 }
- catch(e: NoClassDefFoundError)
+
+                //: 
+ catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.LOADER))
                         
                                     {
-                                    logUtil!.put("Failed Loaded Class: " +name +" with: " +loadedWith, this, "loadClass")
+                                    logUtil!.put("Failed Loaded Class: " +name +" with: " +loadedWith, this, "loadClass");
+    
 
                                     }
                                 
 }
 
-loadedWith= "loadClassBytes"
+loadedWith= "loadClassBytes";
+    
 
-    var classBytes: ByteArray = this.loadClassBytesFromFile(name)!;
+    var classBytes: number[] = this.loadClassBytesFromFile(name)!;
         
         
-
+;
+    
 
                         if(classBytes == 
                                     null
@@ -433,7 +494,8 @@ loadedWith= "loadClassBytes"
 
                                     }
                                 
-myClass= defineClass(name, classBytes, 0, classBytes!.length)
+myClass= defineClass(name, classBytes, 0, classBytes!.length);
+    
 
                         if(myClass == 
                                     null
@@ -447,7 +509,8 @@ myClass= defineClass(name, classBytes, 0, classBytes!.length)
 
                                     }
                                 
-classes.put(name, myClass::class.java)
+classes.put(name, myClass::class.java);
+    
 
                                     }
                                 
@@ -456,27 +519,32 @@ classes.put(name, myClass::class.java)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.LOADER))
                         
                                     {
-                                    logUtil!.put("Already Loaded: " +name +" with: " +loadedWith, this, "loadClass")
+                                    logUtil!.put("Already Loaded: " +name +" with: " +loadedWith, this, "loadClass");
+    
 
                                     }
                                 
 
                         }
                             
-resolveClass(myClass::class.java)
+resolveClass(myClass::class.java);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return myClass;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.LOADERERROR))
                         
                                     {
-                                    logUtil!.put("Failure loading: " +name, "AbeClassLoader", "loadClass", e)
+                                    logUtil!.put("Failure loading: " +name, "AbeClassLoader", "loadClass", e);
+    
 
                                     }
                                 

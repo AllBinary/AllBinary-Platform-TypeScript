@@ -68,61 +68,75 @@ var servletContext = servletContext
     var httpRequest: HttpServletRequest = request as HttpServletRequest;
         
         
-
+;
+    
 
     var requestCommand: string = httpRequest!.getPathInfo()!;
         
         
-
+;
+    
 
     var index: number = requestCommand!.indexOf(AbPathData.getInstance()!.SEPARATOR)!;
         
         
-
+;
+    
 
     var storeName: string = requestCommand!.substring(0, index)!;
         
         
-
+;
+    
 
     var requestName: string = requestCommand!.substring(index, requestCommand!.length)!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return WorkFlowEntityFactory.getInstance()!.create2()!.get(requestName, storeName);
+
+                        ;
     
 }
 
 
                 //@Throws(Error::class, LicensingException::class)
             
-    public static getInstance(hashMap: HashMap<Any, Any>, pageContext: PageContext): WorkFlowInterface{
+    public static getInstance(hashMap: HashMap<any, any>, pageContext: PageContext): WorkFlowInterface{
 var hashMap = hashMap
 var pageContext = pageContext
 
-    var workFlowName: string = pageContext!.getRequest()!.getParameter(WorkFlowData.getInstance()!.NAME) as String;
-        
-        
+    var workFlowName: string = pageContext!.getRequest()!.getParameter(WorkFlowData.getInstance()!.NAME);
 
+                         as String;
+        
+        
+;
+    
 
     var weblisketSession: WeblisketSession = new WeblisketSession(hashMap, pageContext);
         
         
-
+;
+    
 
     var storeName: string = weblisketSession!.getStoreName()!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return WorkFlowEntityFactory.getInstance()!.create2()!.get(workFlowName, storeName);
+
+                        ;
     
 }
 

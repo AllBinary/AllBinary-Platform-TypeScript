@@ -83,8 +83,10 @@ var motionGesture = motionGesture
 
                             //For kotlin this is before the body of the constructor.
                     
-this.id= id
-this.setMotionGesture(motionGesture)
+this.id= id;
+    
+this.setMotionGesture(motionGesture);
+    
 }
 
 
@@ -100,7 +102,8 @@ this.setMotionGesture(motionGesture)
 
     public setMotionGesture(motionGesture: MotionGestureInput){
 var motionGesture = motionGesture
-this.motionGesture= motionGesture
+this.motionGesture= motionGesture;
+    
 }
 
 
@@ -116,7 +119,8 @@ this.motionGesture= motionGesture
 
     public setPreviousPoint(previousPoint: GPoint){
 var previousPoint = previousPoint
-this.previousPoint= previousPoint
+this.previousPoint= previousPoint;
+    
 }
 
 
@@ -132,7 +136,8 @@ this.previousPoint= previousPoint
 
     public setCurrentPoint(currentPoint: GPoint){
 var currentPoint = currentPoint
-this.currentPoint= currentPoint
+this.currentPoint= currentPoint;
+    
 }
 
 
@@ -141,24 +146,35 @@ this.currentPoint= currentPoint
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
     var stringUtil: StringUtil = StringUtil.getInstance()!;
         
         
-
-stringBuffer!.append(stringUtil!.toString(this.motionGesture))
-stringBuffer!.append(CURRENT)
-stringBuffer!.append(stringUtil!.toString(this.currentPoint))
-stringBuffer!.append(PREVIOUS)
-stringBuffer!.append(stringUtil!.toString(this.previousPoint))
-stringBuffer!.append(HASHCODE)
-stringBuffer!.appendint(this.hashCode())
+;
+    
+stringBuffer!.append(stringUtil!.toString(this.motionGesture));
+    
+stringBuffer!.append(CURRENT);
+    
+stringBuffer!.append(stringUtil!.toString(this.currentPoint));
+    
+stringBuffer!.append(PREVIOUS);
+    
+stringBuffer!.append(stringUtil!.toString(this.previousPoint));
+    
+stringBuffer!.append(HASHCODE);
+    
+stringBuffer!.appendint(this.hashCode());
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

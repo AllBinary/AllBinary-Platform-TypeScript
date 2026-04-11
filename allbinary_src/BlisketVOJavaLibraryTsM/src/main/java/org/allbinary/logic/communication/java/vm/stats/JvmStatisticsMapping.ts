@@ -18,10 +18,13 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { HashMap } from "../../../../../../../java/util/HashMap.js";
 
     
-import { Vector } from "../../../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../../../java/util/Vector.js";
 
     
 import { TableMappingInterface } from "../../../../../../../org/allbinary/data/tables/TableMappingInterface.js";
@@ -43,22 +46,33 @@ public constructor ()
 }
 
 
-    public toHashMap(): HashMap<Any, Any>{
+    public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
         
         
-
-hashMap!.put(JvmStatisticsData.FREE_MEMORY_BYTES, this.getFreeMemoryBytesString())
-hashMap!.put(JvmStatisticsData.FREE_MEMORY_KILOBYTES, this.getFreeMemoryKilobytesString())
-hashMap!.put(JvmStatisticsData.FREE_MEMORY_MEGABYTES, this.getFreeMemoryMegabytesString())
-hashMap!.put(JvmStatisticsData.MAX_MEMORY_BYTES, this.getMaxMemoryBytesString())
-hashMap!.put(JvmStatisticsData.MAX_MEMORY_KILOBYTES, this.getMaxMemoryKilobytesString())
-hashMap!.put(JvmStatisticsData.MAX_MEMORY_MEGABYTES, this.getMaxMemoryMegabytesString())
-hashMap!.put(JvmStatisticsData.NUMBER_OF_THREADS, this.getNumberOfThreadsString())
-hashMap!.put(JvmStatisticsData.TOTAL_MEMORY_BYTES, this.getTotalMemoryBytesString())
-hashMap!.put(JvmStatisticsData.TOTAL_MEMORY_KILOBYTES, this.getTotalMemoryKilobytesString())
-hashMap!.put(JvmStatisticsData.TOTAL_MEMORY_MEGABYTES, this.getTotalMemoryMegabytesString())
+;
+    
+hashMap!.put(JvmStatisticsData.FREE_MEMORY_BYTES, this.getFreeMemoryBytesString());
+    
+hashMap!.put(JvmStatisticsData.FREE_MEMORY_KILOBYTES, this.getFreeMemoryKilobytesString());
+    
+hashMap!.put(JvmStatisticsData.FREE_MEMORY_MEGABYTES, this.getFreeMemoryMegabytesString());
+    
+hashMap!.put(JvmStatisticsData.MAX_MEMORY_BYTES, this.getMaxMemoryBytesString());
+    
+hashMap!.put(JvmStatisticsData.MAX_MEMORY_KILOBYTES, this.getMaxMemoryKilobytesString());
+    
+hashMap!.put(JvmStatisticsData.MAX_MEMORY_MEGABYTES, this.getMaxMemoryMegabytesString());
+    
+hashMap!.put(JvmStatisticsData.NUMBER_OF_THREADS, this.getNumberOfThreadsString());
+    
+hashMap!.put(JvmStatisticsData.TOTAL_MEMORY_BYTES, this.getTotalMemoryBytesString());
+    
+hashMap!.put(JvmStatisticsData.TOTAL_MEMORY_KILOBYTES, this.getTotalMemoryKilobytesString());
+    
+hashMap!.put(JvmStatisticsData.TOTAL_MEMORY_MEGABYTES, this.getTotalMemoryMegabytesString());
+    
 
 
 
@@ -87,17 +101,28 @@ hashMap!.put(JvmStatisticsData.TOTAL_MEMORY_MEGABYTES, this.getTotalMemoryMegaby
     var vector: Vector = new Vector();
         
         
-
-vector.add(this.getFreeMemoryBytesString())
-vector.add(this.getFreeMemoryKilobytesString())
-vector.add(this.getFreeMemoryMegabytesString())
-vector.add(this.getMaxMemoryBytesString())
-vector.add(this.getMaxMemoryKilobytesString())
-vector.add(this.getMaxMemoryMegabytesString())
-vector.add(this.getNumberOfThreadsString())
-vector.add(this.getTotalMemoryBytesString())
-vector.add(this.getTotalMemoryKilobytesString())
-vector.add(this.getTotalMemoryMegabytesString())
+;
+    
+vector.add(this.getFreeMemoryBytesString());
+    
+vector.add(this.getFreeMemoryKilobytesString());
+    
+vector.add(this.getFreeMemoryMegabytesString());
+    
+vector.add(this.getMaxMemoryBytesString());
+    
+vector.add(this.getMaxMemoryKilobytesString());
+    
+vector.add(this.getMaxMemoryMegabytesString());
+    
+vector.add(this.getNumberOfThreadsString());
+    
+vector.add(this.getTotalMemoryBytesString());
+    
+vector.add(this.getTotalMemoryKilobytesString());
+    
+vector.add(this.getTotalMemoryMegabytesString());
+    
 
 
 

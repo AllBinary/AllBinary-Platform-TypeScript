@@ -79,7 +79,8 @@ public constructor (requiresOpenGLVersion: string, shaderArray: Shader[], compos
 
                             //For kotlin this is before the body of the constructor.
                     
-this.useProgramShaderOpenGLProcessor= NullOpenGLProcessorFactory.getInstance()
+this.useProgramShaderOpenGLProcessor= NullOpenGLProcessorFactory.getInstance();
+    
 }
 
 

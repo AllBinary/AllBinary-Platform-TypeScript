@@ -52,12 +52,16 @@ var path = path
     var file: AbFile = new AbFile(path);
         
         
+;
+    
 
+                        if(!file.isFile();
 
-                        if(!file.isFile())
+                        )
                         
                                     {
-                                    file.createNewFile()
+                                    file.createNewFile();
+    
 
                                     }
                                 

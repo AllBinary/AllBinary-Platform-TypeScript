@@ -14,12 +14,13 @@ import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
 export class ObjectPermutationVisitor extends Visitor {
         
 
-    readonly data: any = {}[]
-public constructor (data: any = {}[]){
+    readonly data: any[]
+public constructor (data: any[]){
 
             super();
             var data = data
-this.data= data
+this.data= data;
+    
 }
 
 
@@ -29,8 +30,10 @@ this.data= data
 
     public visit(anyType: any = {}): any = {}{
 var anyType = anyType
-stringBuilder!.delete(0, stringBuilder!.length())
-this.print(data, stringBuilder)
+stringBuilder!.delete(0, stringBuilder!.length());
+    
+this.print(data, stringBuilder);
+    
 
 
 
@@ -40,18 +43,20 @@ this.print(data, stringBuilder)
 }
 
 
-    public print(data: any = {}[]){
+    public print(data: any[]){
 var data = data
 
     var stringBuilder: StringBuilder = new StringBuilder();
         
         
-
-this.print(data, stringBuilder)
+;
+    
+this.print(data, stringBuilder);
+    
 }
 
 
-    public print(data: any = {}[], stringBuilder: StringBuilder){
+    public print(data: any[], stringBuilder: StringBuilder){
 var data = data
 var stringBuilder = stringBuilder
 
@@ -59,7 +64,8 @@ var stringBuilder = stringBuilder
                 ;
         
         
-
+;
+    
 
 
 
@@ -70,11 +76,14 @@ var stringBuilder = stringBuilder
         
 i < size; i++)
         {
-stringBuilder!.append(data[i]!.hashCode())
-stringBuilder!.append(CommonSeps.getInstance()!.SPACE)
+stringBuilder!.append(data[i]!.hashCode());
+    
+stringBuilder!.append(CommonSeps.getInstance()!.SPACE);
+    
 }
 
-System.out.println(stringBuilder!.toString())
+System.out.println(stringBuilder!.toString());
+    
 }
 
 

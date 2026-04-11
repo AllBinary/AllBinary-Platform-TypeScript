@@ -43,8 +43,10 @@ export class TouchScreenTypeFactory
     var touchScreenFactory: TouchScreenFactory = TouchScreenFactory.getInstance()!;
         
         
-
-touchScreenFactory!.setTouch(true)
+;
+    
+touchScreenFactory!.setTouch(true);
+    
 }
 
 

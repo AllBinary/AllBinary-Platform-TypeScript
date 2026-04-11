@@ -61,27 +61,33 @@ public constructor (max: number){
     var geographicMapCellType: GeographicMapCellType = geographicMapInterface!.getCellTypeAt(comingFromGeographicMapCellPosition)!;
         
         
-
+;
+    
 
     var geographicMapCellType2: GeographicMapCellType = geographicMapInterface!.getCellTypeAt(geographicMapCellPosition)!;
         
         
-
+;
+    
 
     var raceTrackGeographicMapCellType: RaceTrackGeographicMapCellType = geographicMapCellType as RaceTrackGeographicMapCellType;
         
         
-
+;
+    
 
     var raceTrackGeographicMapCellType2: RaceTrackGeographicMapCellType = geographicMapCellType2 as RaceTrackGeographicMapCellType;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return raceTrackGeographicMapCellType!.getTravelCost().toLong() +raceTrackGeographicMapCellType2!.getTravelCost();
+                        return raceTrackGeographicMapCellType!.getTravelCost();
+
+                        .toLong() +raceTrackGeographicMapCellType2!.getTravelCost();
     
 }
 

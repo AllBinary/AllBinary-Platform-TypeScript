@@ -18,7 +18,10 @@
 
 
 
-import { Vector } from "../../../../../java/util/Vector.js";
+            import Vector from "@ohos.util.Vector";
+        
+
+//import { Vector } from "../../../../../java/util/Vector.js";
 
     
 import { CapturedImageWorkerResultsEvent } from "../../../../../org/allbinary/input/media/image/capture/CapturedImageWorkerResultsEvent.js";
@@ -76,8 +79,10 @@ public constructor (imageComparatorConstraintsInterface: ImageComparatorConstrai
 
             super();
                 //var imageComparatorConstraintsInterface = imageComparatorConstraintsInterface
-this.imageComparatorConstraintsInterface= imageComparatorConstraintsInterface
-this.imageComparator= ImageComparator(imageComparatorConstraintsInterface)
+this.imageComparatorConstraintsInterface= imageComparatorConstraintsInterface;
+    
+this.imageComparator= ImageComparator(imageComparatorConstraintsInterface);
+    
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
@@ -95,19 +100,22 @@ this.imageComparator= ImageComparator(imageComparatorConstraintsInterface)
 
     public setRunning(running: boolean){
 var running = running
-this.running= running
+this.running= running;
+    
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public onCaptureEvent(capturedImageWorkerResultsEvent: CapturedImageWorkerResultsEvent){
     //var capturedImageWorkerResultsEvent = capturedImageWorkerResultsEvent
-this.bufferedImageVector!.add(capturedImageWorkerResultsEvent)
+this.bufferedImageVector!.add(capturedImageWorkerResultsEvent);
+    
 
                         if(this.bufferedImageVector!.length > 1)
                         
                                     {
-                                    this.run()
+                                    this.run();
+    
 
                                     }
                                 
@@ -117,21 +125,26 @@ this.bufferedImageVector!.add(capturedImageWorkerResultsEvent)
 
     public onEvent(allBinaryEventObject: AllBinaryEventObject){
     //var allBinaryEventObject = allBinaryEventObject
-this.onCaptureEvent(allBinaryEventObject as CapturedImageWorkerResultsEvent)
+this.onCaptureEvent(allBinaryEventObject as CapturedImageWorkerResultsEvent);
+    
 }
 
 
     public run(){
 
         try {
-            logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.RUN)
-this.setRunning(true)
+            logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.RUN);
+    
+this.setRunning(true);
+    
 
     var timeHelper: TimeDelayHelper = new TimeDelayHelper(1000);
         
         
-
-timeHelper!.setStartTime()
+;
+    
+timeHelper!.setStartTime();
+    
 
                         if(this.imageComparatorConstraintsInterface!.isFrameAllowed(index2))
                         
@@ -140,9 +153,16 @@ timeHelper!.setStartTime()
     var capturedImageWorkerResultsEvent: CapturedImageWorkerResultsEvent[] = new Array(2);
         
         
+;
+    
+capturedImageWorkerResultsEvent[0]= this.bufferedImageVector!.get(0);
 
-capturedImageWorkerResultsEvent[0]= this.bufferedImageVector!.get(0) as CapturedImageWorkerResultsEvent
-capturedImageWorkerResultsEvent[1]= this.bufferedImageVector!.get(1) as CapturedImageWorkerResultsEvent
+                         as CapturedImageWorkerResultsEvent;
+    
+capturedImageWorkerResultsEvent[1]= this.bufferedImageVector!.get(1);
+
+                         as CapturedImageWorkerResultsEvent;
+    
 
                         if(this.imageComparatorConstraintsInterface!.isImageValid(capturedImageWorkerResultsEvent[0]!.getBufferedImage()) && this.imageComparatorConstraintsInterface!.isImageValid(capturedImageWorkerResultsEvent[1]!.getBufferedImage()))
                         
@@ -151,46 +171,62 @@ capturedImageWorkerResultsEvent[1]= this.bufferedImageVector!.get(1) as Captured
     var imageComparisonResult: ImageComparisonResult = this.imageComparator!.compare(capturedImageWorkerResultsEvent[0]!.getBufferedImage(), capturedImageWorkerResultsEvent[1]!.getBufferedImage(), capturedImageWorkerResultsEvent[0]!.getFrame(), capturedImageWorkerResultsEvent[1]!.getFrame(), 0)!;
         
         
-
+;
+    
 
     var frame: Long = capturedImageWorkerResultsEvent[1]!.getFrame()!;
         
         
-
+;
+    
 
     var imageComparisonResultFrameCacheable: ImageComparisonResultFrameCacheable = new ImageComparisonResultFrameCacheable(imageComparisonResult, frame);
         
         
-
-ImageComparisonResultCacheSingleton.getInstance()!.add(imageComparisonResultFrameCacheable)
-this.fireEvent(ImageComparisonResultsEvent(this, imageComparisonResult))
+;
+    
+ImageComparisonResultCacheSingleton.getInstance()!.add(imageComparisonResultFrameCacheable);
+    
+this.fireEvent(ImageComparisonResultsEvent(this, imageComparisonResult));
+    
 logUtil!.put(StringMaker().
-                            append("Image Comparison Result: ")!.append(imageComparisonResult!.toString())!.append(" for frame: ")!.appendlong(frame)!.toString(), this, this.commonStrings!.RUN)
+                            append("Image Comparison Result: ")!.append(imageComparisonResult!.toString())!.append(" for frame: ")!.appendlong(frame)!.toString(), this, this.commonStrings!.RUN);
+    
 
                                     }
                                 
                         else {
-                            logUtil!.put("An Image Was Not Valid: Image Worker Event Processing terminated", this, this.commonStrings!.RUN)
+                            logUtil!.put("An Image Was Not Valid: Image Worker Event Processing terminated", this, this.commonStrings!.RUN);
+    
 
                         }
                             
 
                                     }
                                 
-this.bufferedImageVector!.remove(0)
-index2++
+this.bufferedImageVector!.remove(0);
+    
+index2++;
+    
 
     var message: string = StringMaker().
                             append("Frame: ")!.appendint(index2)!.append(CommonLabels.getInstance()!.ELAPSED)!.appendlong(timeHelper!.getElapsed())!.toString()!;
         
         
+;
+    
+logUtil!.put(message, this, this.commonStrings!.RUN);
+    
+this.setRunning(false);
+    
+logUtil!.put(this.commonStrings!.END, this, this.commonStrings!.RUN);
+    
 
-logUtil!.put(message, this, this.commonStrings!.RUN)
-this.setRunning(false)
-logUtil!.put(this.commonStrings!.END, this, this.commonStrings!.RUN)
-} catch(e: Exception)
+                //: 
+} catch(e) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e)
+logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e);
+    
 }
 
 }

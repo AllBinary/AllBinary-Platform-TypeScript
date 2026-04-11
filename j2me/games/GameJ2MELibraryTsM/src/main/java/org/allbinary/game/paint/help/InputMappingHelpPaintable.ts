@@ -108,11 +108,11 @@ export class InputMappingHelpPaintable extends HelpPaintable {
 
     private gameInputMappingArray: GameInputMapping[]
 
-    private keyMappingArray: BasicArrayList[] = new Array(0);
+    private keyMappingArray: BasicArrayList[] = [];
         
         
 
-    private actionBasicColor: BasicColor[] = new Array(0);
+    private actionBasicColor: BasicColor[] = [];
         
         
 
@@ -142,18 +142,22 @@ protected constructor (gameInputMappingArray: GameInputMapping[], backgroundBasi
 
                             //For kotlin this is before the body of the constructor.
                     
-this.gameInputMappingArray= gameInputMappingArray
-this.update(NONE, NONE)
+this.gameInputMappingArray= gameInputMappingArray;
+    
+this.update(NONE, NONE);
+    
 
                         if(backgroundBasicColor == this.basicColorFactory!.WHITE || basicColor == this.basicColorFactory!.WHITE)
                         
                                     {
-                                    this.selectedBasicColor= this.basicColorFactory!.RED
+                                    this.selectedBasicColor= this.basicColorFactory!.RED;
+    
 
                                     }
                                 
                         else {
-                            this.selectedBasicColor= this.basicColorFactory!.WHITE
+                            this.selectedBasicColor= this.basicColorFactory!.WHITE;
+    
 
                         }
                             
@@ -167,49 +171,60 @@ this.update(NONE, NONE)
     var stringMaker: StringMaker = new StringMaker();
         
         
-
-logUtil!.put(stringMaker!.append(CommonLabels.getInstance()!.START_LABEL)!.append("selected GameKey: ")!.append(this.stringUtil!.toString(selectedGameKey))!.append(" Input: ")!.append(this.stringUtil!.toString(selectedInput))!.toString(), this, commonStrings!.UPDATE)
+;
+    
+logUtil!.put(stringMaker!.append(CommonLabels.getInstance()!.START_LABEL)!.append("selected GameKey: ")!.append(this.stringUtil!.toString(selectedGameKey))!.append(" Input: ")!.append(this.stringUtil!.toString(selectedInput))!.toString(), this, commonStrings!.UPDATE);
+    
 
     var gameKeyMapping: PersistentInputMapping = PlatformInputMappingFactory.getInstance()!.getPersistentInputMappingInstance()!;
         
         
-
+;
+    
 
     var size: number = gameInputMappingArray!.length
                 ;
         
         
-
+;
+    
 
     var keyInfo: string[] = new Array(size);
         
         
-
+;
+    
 
     var keyMappingArray: BasicArrayList[] = new Array(size);
         
         
-
+;
+    
 
     var actionBasicColor: BasicColor[] = new Array(size);
         
         
-
+;
+    
 
     var inputBasicColorArray: BasicColor[][] = arrayOfNulls<Array<BasicColor?>>(size)
                                                             ;
         
         
-
+;
+    
 
     var gameInputMapping: GameInputMapping
-
+;
+    
 
     var gameKey: GameKey
-
+;
+    
 
     var list: BasicArrayList
-
+;
+    
 
 
 
@@ -220,15 +235,20 @@ logUtil!.put(stringMaker!.append(CommonLabels.getInstance()!.START_LABEL)!.appen
         
 index < size; index++)
         {
-gameInputMapping= gameInputMappingArray[index]!
-gameKey= gameInputMapping!.getGameKey()
-list= gameKeyMapping!.getInputMapping()!.getMappedInput(gameKey)
+gameInputMapping= gameInputMappingArray[index]!;
+    
+gameKey= gameInputMapping!.getGameKey();
+    
+list= gameKeyMapping!.getInputMapping()!.getMappedInput(gameKey);
+    
 
     var size2: number = list.size()!;
         
         
-
-inputBasicColorArray[index]= new Array(size2)
+;
+    
+inputBasicColorArray[index]= new Array(size2);
+    
 
 
 
@@ -239,28 +259,36 @@ inputBasicColorArray[index]= new Array(size2)
         
 index2 < size2; index2++)
         {
-inputBasicColorArray[index]![index2]= this.basicColor
+inputBasicColorArray[index]![index2]= this.basicColor;
+    
 }
 
 
                         if(gameKey == selectedGameKey)
                         
                                     {
-                                    stringMaker!.delete(0, stringMaker!.length())
-logUtil!.put(stringMaker!.append("Found: selected GameKey: ")!.append(this.stringUtil!.toString(selectedGameKey))!.toString(), this, commonStrings!.UPDATE)
-actionBasicColor[index]= this.selectedBasicColor
+                                    stringMaker!.delete(0, stringMaker!.length());
+    
+logUtil!.put(stringMaker!.append("Found: selected GameKey: ")!.append(this.stringUtil!.toString(selectedGameKey))!.toString(), this, commonStrings!.UPDATE);
+    
+actionBasicColor[index]= this.selectedBasicColor;
+    
 
     var indexOfSelectedInput: number = list.indexOf(selectedInput)!;
         
         
-
+;
+    
 
                         if(indexOfSelectedInput >= 0)
                         
                                     {
-                                    stringMaker!.delete(0, stringMaker!.length())
-logUtil!.put(stringMaker!.append("Found: selected Input: ")!.append(this.stringUtil!.toString(selectedInput))!.toString(), this, commonStrings!.UPDATE)
-inputBasicColorArray[index]![indexOfSelectedInput]= this.selectedBasicColor
+                                    stringMaker!.delete(0, stringMaker!.length());
+    
+logUtil!.put(stringMaker!.append("Found: selected Input: ")!.append(this.stringUtil!.toString(selectedInput))!.toString(), this, commonStrings!.UPDATE);
+    
+inputBasicColorArray[index]![indexOfSelectedInput]= this.selectedBasicColor;
+    
 
                                     }
                                 
@@ -268,18 +296,25 @@ inputBasicColorArray[index]![indexOfSelectedInput]= this.selectedBasicColor
                                     }
                                 
                         else {
-                            actionBasicColor[index]= this.basicColor
+                            actionBasicColor[index]= this.basicColor;
+    
 
                         }
                             
-keyInfo[index]= gameInputMapping!.getName()
-keyMappingArray[index]= list
+keyInfo[index]= gameInputMapping!.getName();
+    
+keyMappingArray[index]= list;
+    
 }
 
-this.keyMappingArray= keyMappingArray
-this.actionBasicColor= actionBasicColor
-this.inputBasicColorArray= inputBasicColorArray
-super.setInputInfoP(keyInfo)
+this.keyMappingArray= keyMappingArray;
+    
+this.actionBasicColor= actionBasicColor;
+    
+this.inputBasicColorArray= inputBasicColorArray;
+    
+super.setInputInfoP(keyInfo);
+    
 }
 
 
@@ -289,15 +324,18 @@ var keyList = keyList
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
     var key: Input
-
+;
+    
 
     var size: number = keyList!.size()!;
         
         
-
+;
+    
 
 
 
@@ -308,8 +346,10 @@ var keyList = keyList
         
 index < size; index++)
         {
-key= keyList!.objectArray[index]! as Input
-stringBuffer!.append(key.getName())
+key= keyList!.objectArray[index]! as Input;
+    
+stringBuffer!.append(key.getName());
+    
 
                         if(index +1 < keyList!.size())
                         
@@ -318,7 +358,8 @@ stringBuffer!.append(key.getName())
                         if(keyList!.size() == 2)
                         
                                     {
-                                    stringBuffer!.append(AND)
+                                    stringBuffer!.append(AND);
+    
 
                                     }
                                 
@@ -327,12 +368,14 @@ stringBuffer!.append(key.getName())
                         if(index +2 == keyList!.size())
                         
                                     {
-                                    stringBuffer!.append(MORE_THAN_TWO_IN_LIST_AND)
+                                    stringBuffer!.append(MORE_THAN_TWO_IN_LIST_AND);
+    
 
                                     }
                                 
                         else {
-                            stringBuffer!.append(SEP)
+                            stringBuffer!.append(SEP);
+    
 
                         }
                             
@@ -349,6 +392,8 @@ stringBuffer!.append(key.getName())
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 
@@ -358,17 +403,20 @@ stringBuffer!.append(key.getName())
     var myFont: MyFont = MyFont.getInstance()!;
         
         
-
+;
+    
 
     var inputInfo: string[] = this.inputInfo;
         
         
-
+;
+    
 
     var size: number = (inputInfo!.length +4);
         
         
-
+;
+    
 
 
 
@@ -388,85 +436,105 @@ stringBuffer!.append(key.getName())
     var font: Font = graphics.getFont()!;
         
         
-
+;
+    
 
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
         
         
-
+;
+    
 
     var stringMaker: StringMaker = new StringMaker();
         
         
-
+;
+    
 
     var EMPTY_STRING: string = StringUtil.getInstance()!.EMPTY_STRING;
         
         
-
+;
+    
 
     var myFont: MyFont = MyFont.getInstance()!;
         
         
-
+;
+    
 
     var charHeight: number = myFont!.DEFAULT_CHAR_HEIGHT;
         
         
-
+;
+    
 
     var halfWidth: number = DisplayInfoSingleton.getInstance()!.getLastHalfWidth()!;
         
         
-
+;
+    
 
     var beginWidth: number = (font.stringWidth(this.TITLE) shr 1);
         
         
-
-graphics.setColor(this.basicColor!.toInt())
-graphics.drawString(this.TITLE, halfWidth -beginWidth, charHeight, anchor)
+;
+    
+graphics.setColor(this.basicColor!.toInt());
+    
+graphics.drawString(this.TITLE, halfWidth -beginWidth, charHeight, anchor);
+    
 
     var inputInfo: string[] = this.inputInfo;
         
         
-
+;
+    
 
     var size: number = inputInfo!.length
                 ;
         
         
-
+;
+    
 
     var y: number = 0;
         
         
-
+;
+    
 
     var deltaX: number = 0;
         
         
-
+;
+    
 
     var size2: number = 0;
         
         
-
+;
+    
 
     var input: Input
-
+;
+    
 
     var actionString: string
-
+;
+    
 
     var list: BasicArrayList
-
+;
+    
 
     var keyMappings: string
-
+;
+    
 
     var sep: string
-
+;
+    
 
 
 
@@ -477,18 +545,30 @@ graphics.drawString(this.TITLE, halfWidth -beginWidth, charHeight, anchor)
         
 index < size; index++)
         {
-y= (index +3) *charHeight
-deltaX= 0
-list= this.keyMappingArray[index]!
-size2= list.size()
-keyMappings= this.get(list)
-stringMaker!.delete(0, stringMaker!.length())
-actionString= stringMaker!.append(inputInfo[index]!)!.append(commonSeps!.COLON)!.append(commonSeps!.SPACE)!.append(commonSeps!.SPACE)!.toString()
-stringMaker!.delete(0, stringMaker!.length())
-beginWidth= (font.stringWidth(stringMaker!.append(actionString)!.append(keyMappings)!.toString()) shr 1)
-graphics.setColor(this.actionBasicColor[index]!.toInt())
-graphics.drawString(actionString, halfWidth -beginWidth +deltaX, y, anchor)
-deltaX += font.stringWidth(actionString)
+y= (index +3) *charHeight;
+    
+deltaX= 0;
+    
+list= this.keyMappingArray[index]!;
+    
+size2= list.size();
+    
+keyMappings= this.get(list);
+    
+stringMaker!.delete(0, stringMaker!.length());
+    
+actionString= stringMaker!.append(inputInfo[index]!)!.append(commonSeps!.COLON)!.append(commonSeps!.SPACE)!.append(commonSeps!.SPACE)!.toString();
+    
+stringMaker!.delete(0, stringMaker!.length());
+    
+beginWidth= (font.stringWidth(stringMaker!.append(actionString)!.append(keyMappings)!.toString()) shr 1);
+    
+graphics.setColor(this.actionBasicColor[index]!.toInt());
+    
+graphics.drawString(actionString, halfWidth -beginWidth +deltaX, y, anchor);
+    
+deltaX += font.stringWidth(actionString);
+    
 
 
 
@@ -499,11 +579,16 @@ deltaX += font.stringWidth(actionString)
         
 index2 < size2; index2++)
         {
-input= list.objectArray[index2]! as Input
-graphics.setColor(this.inputBasicColorArray[index]![index2]!.toInt())
-graphics.drawString(input.getName(), halfWidth -beginWidth +deltaX, y, anchor)
-deltaX += font.stringWidth(input.getName())
-sep= EMPTY_STRING
+input= list.objectArray[index2]! as Input;
+    
+graphics.setColor(this.inputBasicColorArray[index]![index2]!.toInt());
+    
+graphics.drawString(input.getName(), halfWidth -beginWidth +deltaX, y, anchor);
+    
+deltaX += font.stringWidth(input.getName());
+    
+sep= EMPTY_STRING;
+    
 
                         if(index2 +1 < list.size())
                         
@@ -512,7 +597,8 @@ sep= EMPTY_STRING
                         if(list.size() == 2)
                         
                                     {
-                                    sep= AND
+                                    sep= AND;
+    
 
                                     }
                                 
@@ -521,12 +607,14 @@ sep= EMPTY_STRING
                         if(index2 +2 == list.size())
                         
                                     {
-                                    sep= MORE_THAN_TWO_IN_LIST_AND
+                                    sep= MORE_THAN_TWO_IN_LIST_AND;
+    
 
                                     }
                                 
                         else {
-                            sep= SEP
+                            sep= SEP;
+    
 
                         }
                             
@@ -540,9 +628,12 @@ sep= EMPTY_STRING
                         if(sep != EMPTY_STRING)
                         
                                     {
-                                    graphics.setColor(this.basicColor!.toInt())
-graphics.drawString(sep, halfWidth -beginWidth +deltaX, y, anchor)
-deltaX += font.stringWidth(sep)
+                                    graphics.setColor(this.basicColor!.toInt());
+    
+graphics.drawString(sep, halfWidth -beginWidth +deltaX, y, anchor);
+    
+deltaX += font.stringWidth(sep);
+    
 
                                     }
                                 

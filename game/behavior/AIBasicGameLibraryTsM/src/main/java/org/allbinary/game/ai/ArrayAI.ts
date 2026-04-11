@@ -47,7 +47,8 @@ var gameInput = gameInput
 
                             //For kotlin this is before the body of the constructor.
                     
-this.artificialIntelligenceInterfaceArray= artificialIntelligenceInterface
+this.artificialIntelligenceInterfaceArray= artificialIntelligenceInterface;
+    
 }
 
 
@@ -60,7 +61,8 @@ var allBinaryLayerManager = allBinaryLayerManager
                 ;
         
         
-
+;
+    
 
 
 
@@ -71,7 +73,8 @@ var allBinaryLayerManager = allBinaryLayerManager
         
 index < size; index++)
         {
-this.artificialIntelligenceInterfaceArray[index]!.processAI(allBinaryLayerManager)
+this.artificialIntelligenceInterfaceArray[index]!.processAI(allBinaryLayerManager);
+    
 }
 
 }

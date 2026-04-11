@@ -18,7 +18,10 @@
 
 
 
-import { Hashtable } from "../../../../java/util/Hashtable.js";
+            import Hashtable from "@ohos.util.HashMap";
+        
+
+//import { Hashtable } from "../../../../java/util/Hashtable.js";
 
     
 import { GameConfigurationPersistanceSingleton } from "../../../../org/allbinary/game/configuration/persistance/GameConfigurationPersistanceSingleton.js";
@@ -112,22 +115,38 @@ private constructor (){
     var smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;
         
         
-
-SCALE= GameConfiguration("Scale", smallIntegerSingletonFactory!.getInstance(2), smallIntegerSingletonFactory!.getInstance(2), smallIntegerSingletonFactory!.getInstance(3))
-ORIENTATION= GameConfiguration("Orientation", smallIntegerSingletonFactory!.getInstance(0), smallIntegerSingletonFactory!.getInstance(0), smallIntegerSingletonFactory!.getInstance(8))
-SENSOR_UPDATE_RATE= GameConfiguration("Sensor Update Rate", smallIntegerSingletonFactory!.getInstance(0), smallIntegerSingletonFactory!.getInstance(0), smallIntegerSingletonFactory!.getInstance(3))
-VIBRATION= GameConfiguration("Vibration", smallIntegerSingletonFactory!.getInstance(0), smallIntegerSingletonFactory!.getInstance(0), smallIntegerSingletonFactory!.getInstance(3))
-CHALLENGE_LEVEL= GameConfiguration("Global Challenge Level", smallIntegerSingletonFactory!.getInstance(3), smallIntegerSingletonFactory!.getInstance(1), smallIntegerSingletonFactory!.getInstance(10))
-COLLIDE_DAMAGE= GameConfiguration("Collide Damage Challenge Level", smallIntegerSingletonFactory!.getInstance(3), smallIntegerSingletonFactory!.getInstance(1), smallIntegerSingletonFactory!.getInstance(10))
-DURABILITY_CHALLENGE_LEVEL= GameConfiguration("Enemy Durability Challenge Level", smallIntegerSingletonFactory!.getInstance(3), smallIntegerSingletonFactory!.getInstance(1), smallIntegerSingletonFactory!.getInstance(10))
-SPEED_CHALLENGE_LEVEL= GameConfiguration("Enemy Speed Challenge Level", smallIntegerSingletonFactory!.getInstance(3), smallIntegerSingletonFactory!.getInstance(1), smallIntegerSingletonFactory!.getInstance(10))
-ATTACK_CHALLENGE_LEVEL= GameConfiguration("Enemy Attack Challenge Level", smallIntegerSingletonFactory!.getInstance(3), smallIntegerSingletonFactory!.getInstance(1), smallIntegerSingletonFactory!.getInstance(10))
-CONTROL_LEVEL= GameConfiguration("Control Fidelity", smallIntegerSingletonFactory!.getInstance(5), smallIntegerSingletonFactory!.getInstance(1), smallIntegerSingletonFactory!.getInstance(10))
-PLAYER_INPUT_WAIT= GameConfiguration("Input Wait", smallIntegerSingletonFactory!.getInstance(5), smallIntegerSingletonFactory!.getInstance(1), smallIntegerSingletonFactory!.getInstance(10))
-SPEED= GameConfiguration("Game Speed (Device Specific)", smallIntegerSingletonFactory!.getInstance(5), smallIntegerSingletonFactory!.getInstance(1), smallIntegerSingletonFactory!.getInstance(10))
-SOUND_VOLUME= GameConfiguration("Sound Volume", smallIntegerSingletonFactory!.getInstance(6), smallIntegerSingletonFactory!.getInstance(0), smallIntegerSingletonFactory!.getInstance(10))
-MAX_GAME_OBJECTS= GameConfiguration("Max Game Objects", smallIntegerSingletonFactory!.getInstance(20), smallIntegerSingletonFactory!.getInstance(1), smallIntegerSingletonFactory!.getInstance(50))
-MAX_LAYERS= GameConfiguration("Max Layers", smallIntegerSingletonFactory!.getInstance(20), smallIntegerSingletonFactory!.getInstance(1), smallIntegerSingletonFactory!.getInstance(50))
+;
+    
+SCALE= GameConfiguration("Scale", smallIntegerSingletonFactory!.getInstance(2), smallIntegerSingletonFactory!.getInstance(2), smallIntegerSingletonFactory!.getInstance(3));
+    
+ORIENTATION= GameConfiguration("Orientation", smallIntegerSingletonFactory!.getInstance(0), smallIntegerSingletonFactory!.getInstance(0), smallIntegerSingletonFactory!.getInstance(8));
+    
+SENSOR_UPDATE_RATE= GameConfiguration("Sensor Update Rate", smallIntegerSingletonFactory!.getInstance(0), smallIntegerSingletonFactory!.getInstance(0), smallIntegerSingletonFactory!.getInstance(3));
+    
+VIBRATION= GameConfiguration("Vibration", smallIntegerSingletonFactory!.getInstance(0), smallIntegerSingletonFactory!.getInstance(0), smallIntegerSingletonFactory!.getInstance(3));
+    
+CHALLENGE_LEVEL= GameConfiguration("Global Challenge Level", smallIntegerSingletonFactory!.getInstance(3), smallIntegerSingletonFactory!.getInstance(1), smallIntegerSingletonFactory!.getInstance(10));
+    
+COLLIDE_DAMAGE= GameConfiguration("Collide Damage Challenge Level", smallIntegerSingletonFactory!.getInstance(3), smallIntegerSingletonFactory!.getInstance(1), smallIntegerSingletonFactory!.getInstance(10));
+    
+DURABILITY_CHALLENGE_LEVEL= GameConfiguration("Enemy Durability Challenge Level", smallIntegerSingletonFactory!.getInstance(3), smallIntegerSingletonFactory!.getInstance(1), smallIntegerSingletonFactory!.getInstance(10));
+    
+SPEED_CHALLENGE_LEVEL= GameConfiguration("Enemy Speed Challenge Level", smallIntegerSingletonFactory!.getInstance(3), smallIntegerSingletonFactory!.getInstance(1), smallIntegerSingletonFactory!.getInstance(10));
+    
+ATTACK_CHALLENGE_LEVEL= GameConfiguration("Enemy Attack Challenge Level", smallIntegerSingletonFactory!.getInstance(3), smallIntegerSingletonFactory!.getInstance(1), smallIntegerSingletonFactory!.getInstance(10));
+    
+CONTROL_LEVEL= GameConfiguration("Control Fidelity", smallIntegerSingletonFactory!.getInstance(5), smallIntegerSingletonFactory!.getInstance(1), smallIntegerSingletonFactory!.getInstance(10));
+    
+PLAYER_INPUT_WAIT= GameConfiguration("Input Wait", smallIntegerSingletonFactory!.getInstance(5), smallIntegerSingletonFactory!.getInstance(1), smallIntegerSingletonFactory!.getInstance(10));
+    
+SPEED= GameConfiguration("Game Speed (Device Specific)", smallIntegerSingletonFactory!.getInstance(5), smallIntegerSingletonFactory!.getInstance(1), smallIntegerSingletonFactory!.getInstance(10));
+    
+SOUND_VOLUME= GameConfiguration("Sound Volume", smallIntegerSingletonFactory!.getInstance(6), smallIntegerSingletonFactory!.getInstance(0), smallIntegerSingletonFactory!.getInstance(10));
+    
+MAX_GAME_OBJECTS= GameConfiguration("Max Game Objects", smallIntegerSingletonFactory!.getInstance(20), smallIntegerSingletonFactory!.getInstance(1), smallIntegerSingletonFactory!.getInstance(50));
+    
+MAX_LAYERS= GameConfiguration("Max Layers", smallIntegerSingletonFactory!.getInstance(20), smallIntegerSingletonFactory!.getInstance(1), smallIntegerSingletonFactory!.getInstance(50));
+    
 }
 
 
@@ -137,57 +156,75 @@ MAX_LAYERS= GameConfiguration("Max Layers", smallIntegerSingletonFactory!.getIns
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
+;
+    
 
         try {
             
     var smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;
         
         
-
+;
+    
 
     var keyValuePersistance: KeyValuePersistance = GameConfigurationPersistanceSingleton.getInstance()!;
         
         
-
-keyValuePersistance!.clear()
-keyValuePersistance!.loadAll(abeClientInformation)
+;
+    
+keyValuePersistance!.clear();
+    
+keyValuePersistance!.loadAll(abeClientInformation);
+    
 
     var list: BasicArrayList = keyValuePersistance!.getIds()!;
         
         
-
+;
+    
 
                         if(list.size() > 0)
                         
                                     {
                                     
-    var hashtable: Hashtable<Any, Any> = keyValuePersistance!.get(0)!;
+    var hashtable: Hashtable<any, any> = keyValuePersistance!.get(0)!;
         
         
+;
+    
 
+    var anyType: any = {} = this.SCALE.getName();
 
-    var anyType: any = {} = this.SCALE.getName() as Object;
+                         as Object;
         
         
+;
+    
 
+    var value: string = hashtable.get(anyType as Object);
 
-    var value: string = hashtable.get(anyType as Object) as String;
+                         as String;
         
         
-
-this.SCALE.setValue(smallIntegerSingletonFactory!.getInstance(Integer.valueOf(value)!.toInt()))
+;
+    
+this.SCALE.setValue(smallIntegerSingletonFactory!.getInstance(Integer.valueOf(value)!.toInt()));
+    
 
                                     }
                                 
                         else {
-                            logUtil!.put("No Game Configuration To Load", this, commonStrings!.LOAD)
+                            logUtil!.put("No Game Configuration To Load", this, commonStrings!.LOAD);
+    
 
                         }
                             
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.LOAD, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.LOAD, e);
+    
 }
 
 }
@@ -195,7 +232,8 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.LOAD, e)
 
     public setGameControlFidelity(gameControlFidelity: number){
     //var gameControlFidelity = gameControlFidelity
-this.gameControlFidelity= gameControlFidelity
+this.gameControlFidelity= gameControlFidelity;
+    
 }
 
 
@@ -214,69 +252,125 @@ this.gameControlFidelity= gameControlFidelity
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
     var commonStrings: CommonSeps = CommonSeps.getInstance()!;
         
         
-
-stringBuffer!.append(commonStrings!.COMMA_SEP)
-stringBuffer!.append(this.SCALE.getName())
-stringBuffer!.append(commonStrings!.EQUALS)
-stringBuffer!.appendint(this.SCALE.getValue()!.toInt())
-stringBuffer!.append(commonStrings!.COMMA_SEP)
-stringBuffer!.append(this.ORIENTATION.getName())
-stringBuffer!.append(commonStrings!.EQUALS)
-stringBuffer!.appendint(this.ORIENTATION.getValue()!.toInt())
-stringBuffer!.append(commonStrings!.COMMA_SEP)
-stringBuffer!.append(this.SENSOR_UPDATE_RATE.getName())
-stringBuffer!.append(commonStrings!.EQUALS)
-stringBuffer!.appendint(this.SENSOR_UPDATE_RATE.getValue()!.toInt())
-stringBuffer!.append(commonStrings!.COMMA_SEP)
-stringBuffer!.append(this.VIBRATION.getName())
-stringBuffer!.append(commonStrings!.EQUALS)
-stringBuffer!.appendint(this.VIBRATION.getValue()!.toInt())
-stringBuffer!.append(commonStrings!.COMMA_SEP)
-stringBuffer!.append(this.CHALLENGE_LEVEL.getName())
-stringBuffer!.append(commonStrings!.EQUALS)
-stringBuffer!.appendint(this.CHALLENGE_LEVEL.getValue()!.toInt())
-stringBuffer!.append(commonStrings!.COMMA_SEP)
-stringBuffer!.append(this.COLLIDE_DAMAGE.getName())
-stringBuffer!.append(commonStrings!.EQUALS)
-stringBuffer!.appendint(this.COLLIDE_DAMAGE.getValue()!.toInt())
-stringBuffer!.append(commonStrings!.COMMA_SEP)
-stringBuffer!.append(this.DURABILITY_CHALLENGE_LEVEL.getName())
-stringBuffer!.append(commonStrings!.EQUALS)
-stringBuffer!.appendint(this.DURABILITY_CHALLENGE_LEVEL.getValue()!.toInt())
-stringBuffer!.append(commonStrings!.COMMA_SEP)
-stringBuffer!.append(this.SPEED_CHALLENGE_LEVEL.getName())
-stringBuffer!.append(commonStrings!.EQUALS)
-stringBuffer!.appendint(this.SPEED_CHALLENGE_LEVEL.getValue()!.toInt())
-stringBuffer!.append(commonStrings!.COMMA_SEP)
-stringBuffer!.append(this.ATTACK_CHALLENGE_LEVEL.getName())
-stringBuffer!.append(commonStrings!.EQUALS)
-stringBuffer!.appendint(this.ATTACK_CHALLENGE_LEVEL.getValue()!.toInt())
-stringBuffer!.append(commonStrings!.COMMA_SEP)
-stringBuffer!.append(this.CONTROL_LEVEL.getName())
-stringBuffer!.append(commonStrings!.EQUALS)
-stringBuffer!.appendint(this.CONTROL_LEVEL.getValue()!.toInt())
-stringBuffer!.append(commonStrings!.COMMA_SEP)
-stringBuffer!.append(this.SPEED.getName())
-stringBuffer!.append(commonStrings!.EQUALS)
-stringBuffer!.appendint(this.SPEED.getValue()!.toInt())
-stringBuffer!.append(commonStrings!.COMMA_SEP)
-stringBuffer!.append(this.MAX_GAME_OBJECTS.getName())
-stringBuffer!.append(commonStrings!.EQUALS)
-stringBuffer!.appendint(this.MAX_GAME_OBJECTS.getValue()!.toInt())
-stringBuffer!.append(commonStrings!.COMMA_SEP)
-stringBuffer!.append(this.MAX_LAYERS.getName())
-stringBuffer!.append(commonStrings!.EQUALS)
-stringBuffer!.appendint(this.MAX_LAYERS.getValue()!.toInt())
+;
+    
+stringBuffer!.append(commonStrings!.COMMA_SEP);
+    
+stringBuffer!.append(this.SCALE.getName());
+    
+stringBuffer!.append(commonStrings!.EQUALS);
+    
+stringBuffer!.appendint(this.SCALE.getValue()!.toInt());
+    
+stringBuffer!.append(commonStrings!.COMMA_SEP);
+    
+stringBuffer!.append(this.ORIENTATION.getName());
+    
+stringBuffer!.append(commonStrings!.EQUALS);
+    
+stringBuffer!.appendint(this.ORIENTATION.getValue()!.toInt());
+    
+stringBuffer!.append(commonStrings!.COMMA_SEP);
+    
+stringBuffer!.append(this.SENSOR_UPDATE_RATE.getName());
+    
+stringBuffer!.append(commonStrings!.EQUALS);
+    
+stringBuffer!.appendint(this.SENSOR_UPDATE_RATE.getValue()!.toInt());
+    
+stringBuffer!.append(commonStrings!.COMMA_SEP);
+    
+stringBuffer!.append(this.VIBRATION.getName());
+    
+stringBuffer!.append(commonStrings!.EQUALS);
+    
+stringBuffer!.appendint(this.VIBRATION.getValue()!.toInt());
+    
+stringBuffer!.append(commonStrings!.COMMA_SEP);
+    
+stringBuffer!.append(this.CHALLENGE_LEVEL.getName());
+    
+stringBuffer!.append(commonStrings!.EQUALS);
+    
+stringBuffer!.appendint(this.CHALLENGE_LEVEL.getValue()!.toInt());
+    
+stringBuffer!.append(commonStrings!.COMMA_SEP);
+    
+stringBuffer!.append(this.COLLIDE_DAMAGE.getName());
+    
+stringBuffer!.append(commonStrings!.EQUALS);
+    
+stringBuffer!.appendint(this.COLLIDE_DAMAGE.getValue()!.toInt());
+    
+stringBuffer!.append(commonStrings!.COMMA_SEP);
+    
+stringBuffer!.append(this.DURABILITY_CHALLENGE_LEVEL.getName());
+    
+stringBuffer!.append(commonStrings!.EQUALS);
+    
+stringBuffer!.appendint(this.DURABILITY_CHALLENGE_LEVEL.getValue()!.toInt());
+    
+stringBuffer!.append(commonStrings!.COMMA_SEP);
+    
+stringBuffer!.append(this.SPEED_CHALLENGE_LEVEL.getName());
+    
+stringBuffer!.append(commonStrings!.EQUALS);
+    
+stringBuffer!.appendint(this.SPEED_CHALLENGE_LEVEL.getValue()!.toInt());
+    
+stringBuffer!.append(commonStrings!.COMMA_SEP);
+    
+stringBuffer!.append(this.ATTACK_CHALLENGE_LEVEL.getName());
+    
+stringBuffer!.append(commonStrings!.EQUALS);
+    
+stringBuffer!.appendint(this.ATTACK_CHALLENGE_LEVEL.getValue()!.toInt());
+    
+stringBuffer!.append(commonStrings!.COMMA_SEP);
+    
+stringBuffer!.append(this.CONTROL_LEVEL.getName());
+    
+stringBuffer!.append(commonStrings!.EQUALS);
+    
+stringBuffer!.appendint(this.CONTROL_LEVEL.getValue()!.toInt());
+    
+stringBuffer!.append(commonStrings!.COMMA_SEP);
+    
+stringBuffer!.append(this.SPEED.getName());
+    
+stringBuffer!.append(commonStrings!.EQUALS);
+    
+stringBuffer!.appendint(this.SPEED.getValue()!.toInt());
+    
+stringBuffer!.append(commonStrings!.COMMA_SEP);
+    
+stringBuffer!.append(this.MAX_GAME_OBJECTS.getName());
+    
+stringBuffer!.append(commonStrings!.EQUALS);
+    
+stringBuffer!.appendint(this.MAX_GAME_OBJECTS.getValue()!.toInt());
+    
+stringBuffer!.append(commonStrings!.COMMA_SEP);
+    
+stringBuffer!.append(this.MAX_LAYERS.getName());
+    
+stringBuffer!.append(commonStrings!.EQUALS);
+    
+stringBuffer!.appendint(this.MAX_LAYERS.getValue()!.toInt());
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

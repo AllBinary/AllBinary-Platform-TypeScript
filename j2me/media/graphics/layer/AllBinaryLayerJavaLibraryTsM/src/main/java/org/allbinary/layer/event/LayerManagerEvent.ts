@@ -50,7 +50,8 @@ var crud = crud
 
                             //For kotlin this is before the body of the constructor.
                     
-this.crud= crud
+this.crud= crud;
+    
 }
 
 
@@ -66,7 +67,8 @@ this.crud= crud
 
     public setLayerInterface(layerInterface: AllBinaryLayer){
 var layerInterface = layerInterface
-this.layerInterface= layerInterface
+this.layerInterface= layerInterface;
+    
 }
 
 
@@ -75,17 +77,25 @@ this.layerInterface= layerInterface
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("LayerManagerEvent: \n")
-stringBuffer!.append("LayerInterface: ")
-stringBuffer!.append(this.getLayerInterface()!.toString())
-stringBuffer!.append("\nCRUD: ")
-stringBuffer!.append(this.crud.toString())
+;
+    
+stringBuffer!.append("LayerManagerEvent: \n");
+    
+stringBuffer!.append("LayerInterface: ");
+    
+stringBuffer!.append(this.getLayerInterface()!.toString());
+    
+stringBuffer!.append("\nCRUD: ");
+    
+stringBuffer!.append(this.crud.toString());
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

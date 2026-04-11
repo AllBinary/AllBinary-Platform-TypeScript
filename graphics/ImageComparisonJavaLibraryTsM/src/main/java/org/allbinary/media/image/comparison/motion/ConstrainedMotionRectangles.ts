@@ -18,13 +18,16 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { awt } from "../../../../../../java/awt.js";
 
     
 import { BufferedImage } from "../../../../../../java/awt/image/BufferedImage.js";
 
     
-import { Vector } from "../../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../../java/util/Vector.js";
 
     
 import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
@@ -54,7 +57,8 @@ public constructor (motionRectangleConstraintsInterface: MotionRectangleConstrai
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setMotionRectangleConstraintsInterface(motionRectangleConstraintsInterface)
+this.setMotionRectangleConstraintsInterface(motionRectangleConstraintsInterface);
+    
 }
 
 
@@ -62,32 +66,38 @@ this.setMotionRectangleConstraintsInterface(motionRectangleConstraintsInterface)
             
     public applyMotionRectangleConstraints(motionRectangles: MotionRectangles){
     //var motionRectangles = motionRectangles
-logUtil!.put("Start - Size Before: " +motionRectangles!.getVector()!.size(), this, "applyMotionRectangleConstraints")
+logUtil!.put("Start - Size Before: " +motionRectangles!.getVector()!.size(), this, "applyMotionRectangleConstraints");
+    
 
     var bufferedImageArray: BufferedImage[] = motionRectangles!.getImageComparisonResult()!.getBufferedImages()!;
         
         
-
+;
+    
 
     var bufferedImage: BufferedImage = bufferedImageArray[1]!;
         
         
-
+;
+    
 
     var vector: Vector = new Vector();
         
         
-
+;
+    
 
     var vector2: Vector = motionRectangles!.getVector()!;
         
         
-
+;
+    
 
     var size: number = vector2.length!;
         
         
-
+;
+    
 
 
 
@@ -99,20 +109,25 @@ logUtil!.put("Start - Size Before: " +motionRectangles!.getVector()!.size(), thi
 index < size; index++)
         {
 
-    var motionRectangle: MotionRectangle = vector2.get(index) as MotionRectangle;
-        
-        
+    var motionRectangle: MotionRectangle = vector2.get(index);
 
+                         as MotionRectangle;
+        
+        
+;
+    
 
     var rectangle: Rectangle = motionRectangle!.getRectangle()!;
         
         
-
+;
+    
 
     var isTooSmall: boolean = this.getMotionRectangleConstraintsInterface()!.isTooSmall(rectangle)!;
         
         
-
+;
+    
 
                         if(isTooSmall)
                         
@@ -128,7 +143,8 @@ index < size; index++)
     var isAreaTooSmall: boolean = this.getMotionRectangleConstraintsInterface()!.isAreaTooSmall(rectangle)!;
         
         
-
+;
+    
 
                         if(isAreaTooSmall)
                         
@@ -144,7 +160,8 @@ index < size; index++)
     var isTooBig: boolean = this.getMotionRectangleConstraintsInterface()!.isTooBig(rectangle)!;
         
         
-
+;
+    
 
                         if(isTooBig)
                         
@@ -160,7 +177,8 @@ index < size; index++)
     var isValid: boolean = this.getMotionRectangleConstraintsInterface()!.isValid(this.getImageComparisonResult()!.getFrameTwo(), bufferedImage, motionRectangle!.getRectangle())!;
         
         
-
+;
+    
 
                         if(!isValid)
                         
@@ -174,10 +192,13 @@ index < size; index++)
                                 
 
                         if(!isTooSmall && !isAreaTooSmall && !isTooBig && isValid)
-                        vector.add(motionRectangle)
+                        vector.add(motionRectangle);
+
+                        
 }
 
-this.setVector(vector)
+this.setVector(vector);
+    
 }
 
 
@@ -193,7 +214,8 @@ this.setVector(vector)
 
     public setMotionRectangleConstraintsInterface(motionRectangleConstraintsInterface: MotionRectangleConstraintsInterface){
 var motionRectangleConstraintsInterface = motionRectangleConstraintsInterface
-this.motionRectangleConstraintsInterface= motionRectangleConstraintsInterface
+this.motionRectangleConstraintsInterface= motionRectangleConstraintsInterface;
+    
 }
 
 

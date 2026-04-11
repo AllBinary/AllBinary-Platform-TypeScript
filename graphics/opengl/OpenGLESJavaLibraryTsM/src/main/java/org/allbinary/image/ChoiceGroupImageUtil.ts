@@ -61,17 +61,20 @@ export class ChoiceGroupImageUtil
     var features: Features = Features.getInstance()!;
         
         
-
+;
+    
 
     var choiceGroupFactory: ChoiceGroupImageFactory = ChoiceGroupImageFactory.getInstance()!;
         
         
-
+;
+    
 
     var imageArray: Image[] = choiceGroupFactory!.getImageArray()!;
         
         
-
+;
+    
 
                         if(features.isDefault(OpenGLFeatureFactory.getInstance()!.OPENGL))
                         
@@ -80,13 +83,15 @@ export class ChoiceGroupImageUtil
     var preResourceImageUtil: PreResourceImageUtil = PreResourceImageUtil.getInstance()!;
         
         
-
+;
+    
 
     var size: number = imageArray!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -97,10 +102,12 @@ export class ChoiceGroupImageUtil
         
 index < size; index++)
         {
-imageArray[index]= preResourceImageUtil!.encapsulate(imageArray[index]!)
+imageArray[index]= preResourceImageUtil!.encapsulate(imageArray[index]!);
+    
 }
 
-choiceGroupFactory!.init(imageArray)
+choiceGroupFactory!.init(imageArray);
+    
 
                                     }
                                 
@@ -113,17 +120,20 @@ var gl = gl
     var features: Features = Features.getInstance()!;
         
         
-
+;
+    
 
     var choiceGroupFactory: ChoiceGroupImageFactory = ChoiceGroupImageFactory.getInstance()!;
         
         
-
+;
+    
 
     var imageArray: Image[] = choiceGroupFactory!.getImageArray()!;
         
         
-
+;
+    
 
                         if(features.isDefault(OpenGLFeatureFactory.getInstance()!.OPENGL))
                         
@@ -132,13 +142,15 @@ var gl = gl
     var preResourceImageUtil: PreResourceImageUtil = PreResourceImageUtil.getInstance()!;
         
         
-
+;
+    
 
     var size: number = imageArray!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -149,13 +161,15 @@ var gl = gl
         
 index < size; index++)
         {
-preResourceImageUtil!.update(gl, imageArray[index]!)
+preResourceImageUtil!.update(gl, imageArray[index]!);
+    
 }
 
 
                                     }
                                 
-choiceGroupFactory!.init(imageArray)
+choiceGroupFactory!.init(imageArray);
+    
 }
 
 
@@ -165,17 +179,20 @@ var graphics = graphics
     var features: Features = Features.getInstance()!;
         
         
-
+;
+    
 
     var choiceGroupFactory: ChoiceGroupImageFactory = ChoiceGroupImageFactory.getInstance()!;
         
         
-
+;
+    
 
     var imageArray: Image[] = choiceGroupFactory!.getImageArray()!;
         
         
-
+;
+    
 
                         if(features.isDefault(OpenGLFeatureFactory.getInstance()!.OPENGL))
                         
@@ -184,13 +201,15 @@ var graphics = graphics
     var preResourceImageUtil: PreResourceImageUtil = PreResourceImageUtil.getInstance()!;
         
         
-
+;
+    
 
     var size: number = imageArray!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -201,13 +220,15 @@ var graphics = graphics
         
 index < size; index++)
         {
-preResourceImageUtil!.update(graphics, imageArray[index]!)
+preResourceImageUtil!.update(graphics, imageArray[index]!);
+    
 }
 
 
                                     }
                                 
-choiceGroupFactory!.init(imageArray)
+choiceGroupFactory!.init(imageArray);
+    
 }
 
 

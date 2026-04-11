@@ -183,11 +183,16 @@ protected constructor (name: string, remoteInfo: RemoteInfo, multiPlayerType: nu
 
                             //For kotlin this is before the body of the constructor.
                     
-this.initAnimationInterface= animationInterface
-this.setAnimationInterface(animationInterface)
-this.destroyedAnimationInterface= destroyedAnimationInterface
-this.movement= movement
-this.multiPlayerType= multiPlayerType
+this.initAnimationInterface= animationInterface;
+    
+this.setAnimationInterface(animationInterface);
+    
+this.destroyedAnimationInterface= destroyedAnimationInterface;
+    
+this.movement= movement;
+    
+this.multiPlayerType= multiPlayerType;
+    
 }
 
 
@@ -197,8 +202,12 @@ this.multiPlayerType= multiPlayerType
 
     public setCollidableInferface(collidableInferface: CollidableBaseBehavior){
 var collidableInferface = collidableInferface
-super.setCollidableInferface(collidableInferface)
-this.collidableWeaponBehavior= this.getCollidableInferface() as CollidableWeaponBehavior
+super.setCollidableInferface(collidableInferface);
+    
+this.collidableWeaponBehavior= this.getCollidableInferface();
+
+                         as CollidableWeaponBehavior;
+    
 }
 
 
@@ -208,9 +217,12 @@ this.collidableWeaponBehavior= this.getCollidableInferface() as CollidableWeapon
 var x = x
 var y = y
 var z = z
-this.x= x
-this.y= y
-this.z= z
+this.x= x;
+    
+this.y= y;
+    
+this.z= z;
+    
 }
 
 
@@ -222,26 +234,37 @@ var angle = angle
 var otherAngle = otherAngle
 var weaponProperties = weaponProperties
 var scoreable = scoreable
-this.setWeaponPropertiesP(weaponProperties)
-this.setReadyForExplosion(false)
-this.setAnimationInterface(this.getInitAnimationInterfaceP())
-this.setOwnerLayerInterface(sourceLayerInterface)
-this.collidableWeaponBehavior!.init(sourceLayerInterface)
-this.setGroupInterface()
+this.setWeaponPropertiesP(weaponProperties);
+    
+this.setReadyForExplosion(false);
+    
+this.setAnimationInterface(this.getInitAnimationInterfaceP());
+    
+this.setOwnerLayerInterface(sourceLayerInterface);
+    
+this.collidableWeaponBehavior!.init(sourceLayerInterface);
+    
+this.setGroupInterface();
+    
 
                         if(scoreable != 
                                     null
                                 )
                         
                                     {
-                                    this.scoreableInterface= scoreable
+                                    this.scoreableInterface= scoreable;
+    
 
                                     }
                                 
-this.totalDamage= 0
-this.initDamage= weaponProperties!.getDamage()
-this.setDestroyed(false)
-this.movement.init(weaponProperties!.getSpeed(), angle, otherAngle)
+this.totalDamage= 0;
+    
+this.initDamage= weaponProperties!.getDamage();
+    
+this.setDestroyed(false);
+    
+this.movement.init(weaponProperties!.getSpeed(), angle, otherAngle);
+    
 }
 
 
@@ -250,17 +273,20 @@ this.movement.init(weaponProperties!.getSpeed(), angle, otherAngle)
     var basicGroupFactory: BasicGroupFactory = BasicGroupFactory.getInstance()!;
         
         
-
+;
+    
 
                         if(sourceLayerInterface!.getGroupInterface()[0] == basicGroupFactory!.ENEMY)
                         
                                     {
-                                    this.setGroupInterface(basicGroupFactory!.ENEMY_ARRAY)
+                                    this.setGroupInterface(basicGroupFactory!.ENEMY_ARRAY);
+    
 
                                     }
                                 
                         else {
-                            this.setGroupInterface(sourceLayerInterface!.getGroupInterface())
+                            this.setGroupInterface(sourceLayerInterface!.getGroupInterface());
+    
 
                         }
                             
@@ -272,7 +298,9 @@ this.movement.init(weaponProperties!.getSpeed(), angle, otherAngle)
     public processTick(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager
 
-                        if(this.isExhausted() && !this.isDestroyed())
+                        if(this.isExhausted() && !this.isDestroyed();
+
+                        )
                         
                                     {
                                     
@@ -280,25 +308,31 @@ var allBinaryLayerManager = allBinaryLayerManager
                         
                                     {
                                     
-    var indexedAnimationInterface: IndexedAnimation = this.getAnimationInterface() as IndexedAnimation;
-        
-        
+    var indexedAnimationInterface: IndexedAnimation = this.getAnimationInterface();
 
+                         as IndexedAnimation;
+        
+        
+;
+    
 
     var currentFrame: number = indexedAnimationInterface!.getFrame()!;
         
         
-
+;
+    
 
                         if(currentFrame < indexedAnimationInterface!.getAnimationSize() -1)
                         
                                     {
-                                    indexedAnimationInterface!.nextFrame()
+                                    indexedAnimationInterface!.nextFrame();
+    
 
                                     }
                                 
                         else {
-                            this.setDestroyed(true)
+                            this.setDestroyed(true);
+    
 
                         }
                             
@@ -307,22 +341,29 @@ var allBinaryLayerManager = allBinaryLayerManager
                                 
                         else {
                             
-    var collidableWeaponBehavior: CollidableWeaponBehavior = this.getCollidableInferface() as CollidableWeaponBehavior;
-        
-        
+    var collidableWeaponBehavior: CollidableWeaponBehavior = this.getCollidableInferface();
 
+                         as CollidableWeaponBehavior;
+        
+        
+;
+    
 
                         if(collidableWeaponBehavior!.isCollided())
                         
                                     {
-                                    this.setAnimationInterface(this.destroyedAnimationInterface)
-this.getMovement()!.stop()
-this.setReadyForExplosion(true)
+                                    this.setAnimationInterface(this.destroyedAnimationInterface);
+    
+this.getMovement()!.stop();
+    
+this.setReadyForExplosion(true);
+    
 
                                     }
                                 
                         else {
-                            this.setDestroyed(true)
+                            this.setDestroyed(true);
+    
 
                         }
                             
@@ -332,8 +373,10 @@ this.setReadyForExplosion(true)
 
                                     }
                                 
-this.movement.process(this)
-this.totalDamage += this.weaponProperties!.getDissipation()
+this.movement.process(this);
+    
+this.totalDamage += this.weaponProperties!.getDissipation();
+    
 }
 
 
@@ -350,13 +393,15 @@ this.totalDamage += this.weaponProperties!.getDissipation()
     public damage(damage: number, damageType: number){
 var damage = damage
 var damageType = damageType
-this.totalDamage += damage *damage
+this.totalDamage += damage *damage;
+    
 }
 
 
     givePoints(total: number){
 var total = total
-scoreableInterface!.addPoints(GameConfigurationUtil.getInstance()!.getCompetitionValue() *total)
+scoreableInterface!.addPoints(GameConfigurationUtil.getInstance()!.getCompetitionValue() *total);
+    
 }
 
 
@@ -390,15 +435,19 @@ scoreableInterface!.addPoints(GameConfigurationUtil.getInstance()!.getCompetitio
     public getDamage(damageType: number): number{
 var damageType = damageType
 
-                        if(!this.isExhausted())
+                        if(!this.isExhausted();
+
+                        )
                         
                                     {
                                     
     var total: number = this.getInitDamage() -this.totalDamage;
         
         
-
-this.givePoints(total)
+;
+    
+this.givePoints(total);
+    
 
 
 
@@ -419,13 +468,16 @@ this.givePoints(total)
 
     public setDestroyed(destroyed: boolean){
 var destroyed = destroyed
-this.destroyed= destroyed
+this.destroyed= destroyed;
+    
 
                         if(this.isDestroyed())
                         
                                     {
-                                    this.scoreableInterface= NoScoreable.getInstance()
-DestroyedLayerProcessor.getInstance()!.add(this)
+                                    this.scoreableInterface= NoScoreable.getInstance();
+    
+DestroyedLayerProcessor.getInstance()!.add(this);
+    
 
                                     }
                                 
@@ -444,7 +496,8 @@ DestroyedLayerProcessor.getInstance()!.add(this)
 
     setAnimationInterface(animationInterface: Animation){
 var animationInterface = animationInterface
-this.animationInterface= animationInterface
+this.animationInterface= animationInterface;
+    
 }
 
 
@@ -470,7 +523,8 @@ this.animationInterface= animationInterface
 
     public setInitAnimationInterfaceP(initAnimationInterface: Animation){
 var initAnimationInterface = initAnimationInterface
-this.initAnimationInterface= initAnimationInterface
+this.initAnimationInterface= initAnimationInterface;
+    
 }
 
 
@@ -496,7 +550,8 @@ this.initAnimationInterface= initAnimationInterface
 
     public setOwnerLayerInterface(sourceLayerInterface: AllBinaryLayer){
 var sourceLayerInterface = sourceLayerInterface
-this.sourceLayerInterface= sourceLayerInterface
+this.sourceLayerInterface= sourceLayerInterface;
+    
 }
 
 
@@ -506,8 +561,10 @@ var graphics = graphics
     var viewPosition: ViewPosition = this.getViewPosition()!;
         
         
-
-this.animationInterface!.paint(graphics, viewPosition!.getX() -this.getHalfWidth(), viewPosition!.getY() -this.getHalfHeight())
+;
+    
+this.animationInterface!.paint(graphics, viewPosition!.getX() -this.getHalfWidth(), viewPosition!.getY() -this.getHalfHeight());
+    
 }
 
 
@@ -517,8 +574,10 @@ var graphics = graphics
     var viewPosition: ViewPosition = this.getViewPosition()!;
         
         
-
-this.animationInterface!.paintThreed(graphics, viewPosition!.getX() -this.getHalfWidth(), viewPosition!.getY() -this.getHalfHeight(), viewPosition!.getZ() -this.getHalfDepth())
+;
+    
+this.animationInterface!.paintThreed(graphics, viewPosition!.getX() -this.getHalfWidth(), viewPosition!.getY() -this.getHalfHeight(), viewPosition!.getZ() -this.getHalfDepth());
+    
 }
 
 
@@ -534,7 +593,8 @@ this.animationInterface!.paintThreed(graphics, viewPosition!.getX() -this.getHal
 
     public setMovement(movement: Movement){
 var movement = movement
-this.movement= movement
+this.movement= movement;
+    
 }
 
 
@@ -544,6 +604,8 @@ this.movement= movement
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return getStaticType();
+
+                        ;
     
 }
 
@@ -560,7 +622,8 @@ this.movement= movement
 
     public setWeaponPropertiesP(weaponProperties: WeaponProperties){
 var weaponProperties = weaponProperties
-this.weaponProperties= weaponProperties
+this.weaponProperties= weaponProperties;
+    
 }
 
 
@@ -588,7 +651,8 @@ this.weaponProperties= weaponProperties
             
     public set(gl: GL){
 var gl = gl
-this.initAnimationInterface!.set(gl)
+this.initAnimationInterface!.set(gl);
+    
 }
 
 

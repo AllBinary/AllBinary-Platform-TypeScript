@@ -46,8 +46,10 @@ public constructor (text: string, image: Image){
             super();
                 //var text = text
     //var image = image
-this.text= text
-this.image= image
+this.text= text;
+    
+this.image= image;
+    
 }
 
 
@@ -55,13 +57,16 @@ this.image= image
 var graphics = graphics
 var x = x
 var y = y
-super.paint(graphics, x, y)
+super.paint(graphics, x, y);
+    
 
     var adjustedCostY: number = image.getHeight() -this.myFont!.DEFAULT_CHAR_HEIGHT;
         
         
-
-graphics.drawString(text, x, y +adjustedCostY, 0)
+;
+    
+graphics.drawString(text, x, y +adjustedCostY, 0);
+    
 }
 
 

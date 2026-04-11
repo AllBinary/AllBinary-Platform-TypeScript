@@ -72,47 +72,67 @@ public constructor (databaseConnectionInfoInterface: DbConnectionInfo)
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(sqlStrings!.SELECT)
-stringBuffer!.append(requestedField)
-stringBuffer!.append(sqlStrings!.FROM)
-stringBuffer!.append(this.getTableName())
-stringBuffer!.append(sqlStrings!.WHERE)
-stringBuffer!.append(key)
-stringBuffer!.append(sqlStrings!.EQUAL_QUOTE)
-stringBuffer!.append(value)
-stringBuffer!.append(sqlStrings!.CLOSE_QUOTE)
+;
+    
+stringBuffer!.append(sqlStrings!.SELECT);
+    
+stringBuffer!.append(requestedField);
+    
+stringBuffer!.append(sqlStrings!.FROM);
+    
+stringBuffer!.append(this.getTableName());
+    
+stringBuffer!.append(sqlStrings!.WHERE);
+    
+stringBuffer!.append(key);
+    
+stringBuffer!.append(sqlStrings!.EQUAL_QUOTE);
+    
+stringBuffer!.append(value);
+    
+stringBuffer!.append(sqlStrings!.CLOSE_QUOTE);
+    
 
     var sqlStatement: string = stringBuffer!.toString()!;
         
         
-
+;
+    
 
         try {
             
     var field: string = this.stringUtil!.EMPTY_STRING;
         
         
-
+;
+    
 
     var rset: ResultSet = executeSQLStatement(sqlStatement)!;
         
         
-
+;
+    
 
         while(rset.next())
         {
-field= rset.getString(requestedField)
+field= rset.getString(requestedField);
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    stringBuffer!.delete(0, stringBuffer!.length())
-stringBuffer!.append(sqlStrings!.SQL_STATEMENT_LABEL)
-stringBuffer!.append(sqlStatement)
-stringBuffer!.append(sqlStrings!.FIELD_VALUE)
-stringBuffer!.append(field)
-logUtil!.put(stringBuffer!.toString(), this, METHOD_GET_FIELD)
+                                    stringBuffer!.delete(0, stringBuffer!.length());
+    
+stringBuffer!.append(sqlStrings!.SQL_STATEMENT_LABEL);
+    
+stringBuffer!.append(sqlStatement);
+    
+stringBuffer!.append(sqlStrings!.FIELD_VALUE);
+    
+stringBuffer!.append(field);
+    
+logUtil!.put(stringBuffer!.toString(), this, METHOD_GET_FIELD);
+    
 
                                     }
                                 
@@ -130,13 +150,16 @@ logUtil!.put(stringBuffer!.toString(), this, METHOD_GET_FIELD)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
                                     {
-                                    logUtil!.put(this.FAILED_SQL_STATEMENT +sqlStatement, this, METHOD_GET_FIELD, e)
+                                    logUtil!.put(this.FAILED_SQL_STATEMENT +sqlStatement, this, METHOD_GET_FIELD, e);
+    
 
                                     }
                                 
@@ -151,48 +174,60 @@ logUtil!.put(stringBuffer!.toString(), this, METHOD_GET_FIELD)
 }
 
 
-    public getField(keysAndValues: HashMap<Any, Any>, requestedField: string): string{
+    public getField(keysAndValues: HashMap<any, any>, requestedField: string): string{
     //var keysAndValues = keysAndValues
     //var requestedField = requestedField
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(sqlStrings!.SELECT)
-stringBuffer!.append(requestedField)
-stringBuffer!.append(sqlStrings!.FROM)
-stringBuffer!.append(this.getTableName())
-stringBuffer!.append(sqlStrings!.WHERE)
+;
+    
+stringBuffer!.append(sqlStrings!.SELECT);
+    
+stringBuffer!.append(requestedField);
+    
+stringBuffer!.append(sqlStrings!.FROM);
+    
+stringBuffer!.append(this.getTableName());
+    
+stringBuffer!.append(sqlStrings!.WHERE);
+    
 
         try {
             
     var field: string = this.stringUtil!.EMPTY_STRING;
         
         
-
+;
+    
 
     var set: Set = keysAndValues!.keySet()!;
         
         
+;
+    
 
-
-    var keyArray: any = {}[] = set.toArray()!;
+    var keyArray: any[] = set.toArray()!;
         
         
-
+;
+    
 
     var size: number = keyArray!.length
                 ;
         
         
-
+;
+    
 
     var key: string
-
+;
+    
 
     var value: string
-
+;
+    
 
 
 
@@ -203,17 +238,24 @@ stringBuffer!.append(sqlStrings!.WHERE)
         
 i < size; i++)
         {
-key= keyArray[i]! as String
-value= .toCharArray()
-stringBuffer!.append(key)
-stringBuffer!.append(sqlStrings!.EQUAL_QUOTE)
-stringBuffer!.append(value)
-stringBuffer!.append(sqlStrings!.CLOSE_QUOTE)
+key= keyArray[i]! as String;
+    
+value= .toCharArray();
+    
+stringBuffer!.append(key);
+    
+stringBuffer!.append(sqlStrings!.EQUAL_QUOTE);
+    
+stringBuffer!.append(value);
+    
+stringBuffer!.append(sqlStrings!.CLOSE_QUOTE);
+    
 
                         if(i < size -1)
                         
                                     {
-                                    stringBuffer!.append(sqlStrings!.AND)
+                                    stringBuffer!.append(sqlStrings!.AND);
+    
 
                                     }
                                 
@@ -223,26 +265,35 @@ stringBuffer!.append(sqlStrings!.CLOSE_QUOTE)
     var sqlStatement: string = stringBuffer!.toString()!;
         
         
-
+;
+    
 
     var rset: ResultSet = executeSQLStatement(sqlStatement)!;
         
         
-
+;
+    
 
         while(rset.next())
         {
-field= rset.getString(requestedField)
+field= rset.getString(requestedField);
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    stringBuffer!.delete(0, stringBuffer!.length())
-stringBuffer!.append(sqlStrings!.SQL_STATEMENT_LABEL)
-stringBuffer!.append(sqlStatement)
-stringBuffer!.append(sqlStrings!.FIELD_VALUE)
-stringBuffer!.append(field)
-logUtil!.put(stringBuffer!.toString(), this, METHOD_GET_FIELD)
+                                    stringBuffer!.delete(0, stringBuffer!.length());
+    
+stringBuffer!.append(sqlStrings!.SQL_STATEMENT_LABEL);
+    
+stringBuffer!.append(sqlStatement);
+    
+stringBuffer!.append(sqlStrings!.FIELD_VALUE);
+    
+stringBuffer!.append(field);
+    
+logUtil!.put(stringBuffer!.toString(), this, METHOD_GET_FIELD);
+    
 
                                     }
                                 
@@ -260,18 +311,22 @@ logUtil!.put(stringBuffer!.toString(), this, METHOD_GET_FIELD)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return null;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var sqlStatement: string = stringBuffer!.toString()!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
                                     {
-                                    logUtil!.put(this.FAILED_SQL_STATEMENT +sqlStatement, this, METHOD_GET_FIELD, e)
+                                    logUtil!.put(this.FAILED_SQL_STATEMENT +sqlStatement, this, METHOD_GET_FIELD, e);
+    
 
                                     }
                                 
@@ -286,7 +341,7 @@ logUtil!.put(stringBuffer!.toString(), this, METHOD_GET_FIELD)
 }
 
 
-    public isSubsetOfEntry(key: string, value: string, columnsAndValues: HashMap<Any, Any>): string{
+    public isSubsetOfEntry(key: string, value: string, columnsAndValues: HashMap<any, any>): string{
     //var key = key
     //var value = value
     //var columnsAndValues = columnsAndValues
@@ -294,23 +349,29 @@ logUtil!.put(stringBuffer!.toString(), this, METHOD_GET_FIELD)
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(sqlStrings!.SELECT)
+;
+    
+stringBuffer!.append(sqlStrings!.SELECT);
+    
 
         try {
             
-    var keyArray: any = {}[] = columnsAndValues!.keySet()!.toTypedArray()!;
+    var keyArray: any[] = columnsAndValues!.keySet()!.toTypedArray()!;
         
         
-
+;
+    
 
     var size: number = keyArray!.length
                 ;
         
         
-
-stringBuffer!.append(this.commonSeps!.SPACE)
-stringBuffer!.append(key)
+;
+    
+stringBuffer!.append(this.commonSeps!.SPACE);
+    
+stringBuffer!.append(key);
+    
 
 
 
@@ -321,47 +382,62 @@ stringBuffer!.append(key)
         
 i < size; i++)
         {
-stringBuffer!.append(this.commonSeps!.SPACE)
-stringBuffer!.append(keyArray[i]!.toString())
+stringBuffer!.append(this.commonSeps!.SPACE);
+    
+stringBuffer!.append(keyArray[i]!.toString());
+    
 }
 
-stringBuffer!.append(sqlStrings!.FROM)
-stringBuffer!.append(this.getTableName())
-stringBuffer!.append(sqlStrings!.WHERE)
-stringBuffer!.append(key)
-stringBuffer!.append(sqlStrings!.EQUAL_QUOTE)
-stringBuffer!.append(value)
-stringBuffer!.append(sqlStrings!.CLOSE_QUOTE)
+stringBuffer!.append(sqlStrings!.FROM);
+    
+stringBuffer!.append(this.getTableName());
+    
+stringBuffer!.append(sqlStrings!.WHERE);
+    
+stringBuffer!.append(key);
+    
+stringBuffer!.append(sqlStrings!.EQUAL_QUOTE);
+    
+stringBuffer!.append(value);
+    
+stringBuffer!.append(sqlStrings!.CLOSE_QUOTE);
+    
 
     var sqlStatement: string = stringBuffer!.toString()!;
         
         
-
+;
+    
 
     var rset: ResultSet = executeSQLStatement(sqlStatement)!;
         
         
-
+;
+    
 
     var columnName: string
-
+;
+    
 
     var field: string
-
+;
+    
 
         while(rset.next())
         {
 
-    var keyArray2: any = {}[] = columnsAndValues!.keySet()!.toTypedArray()!;
+    var keyArray2: any[] = columnsAndValues!.keySet()!.toTypedArray()!;
         
         
-
+;
+    
 
     var size2: number = keyArray2!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -372,10 +448,14 @@ stringBuffer!.append(sqlStrings!.CLOSE_QUOTE)
         
 i < size2; i++)
         {
-columnName= keyArray2[i]!.toString()
-field= rset.getObject(columnName)!.toString()
+columnName= keyArray2[i]!.toString();
+    
+field= rset.getObject(columnName)!.toString();
+    
 
-                        if(field.compareTo(columnsAndValues!.get(columnName) as String) != 0)
+                        if(field.compareTo(columnsAndValues!.get(columnName);
+
+                         as String) != 0)
                         
                                     {
                                     
@@ -414,18 +494,22 @@ field= rset.getObject(columnName)!.toString()
 
                         }
                             
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var sqlStatement: string = stringBuffer!.toString()!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
                                     {
-                                    logUtil!.put(this.FAILED_SQL_STATEMENT +sqlStatement, this, METHOD_IS_SUBSET_OF_ENTRY, e)
+                                    logUtil!.put(this.FAILED_SQL_STATEMENT +sqlStatement, this, METHOD_IS_SUBSET_OF_ENTRY, e);
+    
 
                                     }
                                 

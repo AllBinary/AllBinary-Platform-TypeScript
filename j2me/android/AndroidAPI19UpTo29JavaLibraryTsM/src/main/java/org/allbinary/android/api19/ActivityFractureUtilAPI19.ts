@@ -51,13 +51,16 @@ export class ActivityFractureUtilAPI19 extends ActivityFractureUtilAPI5 {
     var decorView: View = activity.getWindow()!.getDecorView()!;
         
         
-
+;
+    
 
     var visibility: number = View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY or View.SYSTEM_UI_FLAG_HIDE_NAVIGATION or View.SYSTEM_UI_FLAG_FULLSCREEN;
         
         
-
-decorView!.setSystemUiVisibility(visibility)
+;
+    
+decorView!.setSystemUiVisibility(visibility);
+    
 }
 
 

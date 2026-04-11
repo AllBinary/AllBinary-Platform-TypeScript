@@ -63,25 +63,31 @@ var e = e
     var logUtil: LogUtil = LogUtil.getInstance()!;
         
         
-
+;
+    
 
         try {
             
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.JSPTAGERROR))
                         
                                     {
-                                    logUtil!.put("Jsp Tag Exception", "AbResponseHandler", "sendJspRedirect()", e)
+                                    logUtil!.put("Jsp Tag Exception", "AbResponseHandler", "sendJspRedirect()", e);
+    
 
                                     }
                                 
-AbResponseHandler.sendRedirect(pageContext, FREEBLISKET_PATH_GLOBALS.getInstance()!.ERRORPAGE)
-} catch(e2: Exception)
+AbResponseHandler.sendRedirect(pageContext, FREEBLISKET_PATH_GLOBALS.getInstance()!.ERRORPAGE);
+    
+
+                //: 
+} catch(e2) 
             {
 
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.LICENSINGERROR))
                         
                                     {
-                                    logUtil!.put("Exception in Redirect Handling", "AbResponseHandler", "sendJspRedirect", e)
+                                    logUtil!.put("Exception in Redirect Handling", "AbResponseHandler", "sendJspRedirect", e);
+    
 
                                     }
                                 
@@ -103,25 +109,31 @@ var e = e
     var logUtil: LogUtil = LogUtil.getInstance()!;
         
         
-
+;
+    
 
         try {
             
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.JSPTAGERROR))
                         
                                     {
-                                    logUtil!.put("Jsp Tag Exception", "AbResponseHandler", "sendJspRedirect()", e)
+                                    logUtil!.put("Jsp Tag Exception", "AbResponseHandler", "sendJspRedirect()", e);
+    
 
                                     }
                                 
-AbResponseHandler.sendRedirect(pageContext, FREEBLISKET_PATH_GLOBALS.getInstance()!.ERRORPAGE)
-} catch(e2: Exception)
+AbResponseHandler.sendRedirect(pageContext, FREEBLISKET_PATH_GLOBALS.getInstance()!.ERRORPAGE);
+    
+
+                //: 
+} catch(e2) 
             {
 
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.LICENSINGERROR))
                         
                                     {
-                                    logUtil!.put("Exception in Redirect Handling", "AbResponseHandler", "sendJspRedirect", e)
+                                    logUtil!.put("Exception in Redirect Handling", "AbResponseHandler", "sendJspRedirect", e);
+    
 
                                     }
                                 
@@ -143,25 +155,31 @@ var e = e
     var logUtil: LogUtil = LogUtil.getInstance()!;
         
         
-
+;
+    
 
         try {
             
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.JSPTAGERROR))
                         
                                     {
-                                    logUtil!.put("Licensing Exception", "AbResponseHandler", "sendJspTagLicensingRedirect()", e)
+                                    logUtil!.put("Licensing Exception", "AbResponseHandler", "sendJspTagLicensingRedirect()", e);
+    
 
                                     }
                                 
-AbResponseHandler.sendRedirect(pageContext, FREEBLISKET_PATH_GLOBALS.getInstance()!.LICENSEERRORPAGE)
-} catch(e2: Exception)
+AbResponseHandler.sendRedirect(pageContext, FREEBLISKET_PATH_GLOBALS.getInstance()!.LICENSEERRORPAGE);
+    
+
+                //: 
+} catch(e2) 
             {
 
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.LICENSINGERROR))
                         
                                     {
-                                    logUtil!.put("Exception in Redirect Handling", "AbResponseHandler", "sendJspTagLicensingRedirect", e)
+                                    logUtil!.put("Exception in Redirect Handling", "AbResponseHandler", "sendJspTagLicensingRedirect", e);
+    
 
                                     }
                                 
@@ -183,25 +201,31 @@ var e = e
     var logUtil: LogUtil = LogUtil.getInstance()!;
         
         
-
+;
+    
 
         try {
             
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.JSPTAGERROR))
                         
                                     {
-                                    logUtil!.put("Licensing Exception", "AbResponseHandler", "sendServletLicensingRedirect()", e)
+                                    logUtil!.put("Licensing Exception", "AbResponseHandler", "sendServletLicensingRedirect()", e);
+    
 
                                     }
                                 
-AbResponseHandler.sendRedirect(pageContext, FREEBLISKET_PATH_GLOBALS.getInstance()!.LICENSEERRORPAGE)
-} catch(e2: Exception)
+AbResponseHandler.sendRedirect(pageContext, FREEBLISKET_PATH_GLOBALS.getInstance()!.LICENSEERRORPAGE);
+    
+
+                //: 
+} catch(e2) 
             {
 
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.LICENSINGERROR))
                         
                                     {
-                                    logUtil!.put("Exception in Redirect Handling", "AbResponseHandler", "sendServletLicensingRedirect", e)
+                                    logUtil!.put("Exception in Redirect Handling", "AbResponseHandler", "sendServletLicensingRedirect", e);
+    
 
                                     }
                                 
@@ -220,35 +244,47 @@ AbResponseHandler.sendRedirect(pageContext, FREEBLISKET_PATH_GLOBALS.getInstance
 var pageContext = pageContext
 var page = page
 
-    var request: HttpServletRequest = pageContext!.getRequest() as HttpServletRequest;
-        
-        
+    var request: HttpServletRequest = pageContext!.getRequest();
 
-
-    var response: HttpServletResponse = pageContext!.getResponse() as HttpServletResponse;
+                         as HttpServletRequest;
         
         
+;
+    
 
+    var response: HttpServletResponse = pageContext!.getResponse();
+
+                         as HttpServletResponse;
+        
+        
+;
+    
 
     var requestDispatcher: RequestDispatcher = request.getRequestDispatcher(page)!;
         
         
-
+;
+    
 
                         if(response.isCommitted())
                         
                                     {
-                                    response.sendRedirect(page)
+                                    response.sendRedirect(page);
+    
 
                                     }
                                 
                         else {
                             
         try {
-            requestDispatcher!.forward(request, response)
-} catch(e: Exception)
+            requestDispatcher!.forward(request, response);
+    
+
+                //: 
+} catch(e) 
             {
-pageContext!.getOut()!.print("Error: " +page)
+pageContext!.getOut()!.print("Error: " +page);
+    
 }
 
 

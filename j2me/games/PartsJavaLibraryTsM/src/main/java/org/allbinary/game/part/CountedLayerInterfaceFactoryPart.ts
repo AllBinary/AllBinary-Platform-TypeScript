@@ -18,7 +18,10 @@
 
 
 
-import { Hashtable } from "../../../../java/util/Hashtable.js";
+            import Hashtable from "@ohos.util.HashMap";
+        
+
+//import { Hashtable } from "../../../../java/util/Hashtable.js";
 
     
 import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
@@ -78,22 +81,26 @@ public constructor (total: number, countedPickedUpLayerInterfaceFactory: Counted
             super();
             var total = total
 var countedPickedUpLayerInterfaceFactory = countedPickedUpLayerInterfaceFactory
-this.primitiveLongUtil= PrimitiveLongUtil(1000)
-this.init(total, countedPickedUpLayerInterfaceFactory)
+this.primitiveLongUtil= PrimitiveLongUtil(1000);
+    
+this.init(total, countedPickedUpLayerInterfaceFactory);
+    
 }
 
 
     init(total: number, countedPickedUpLayerInterfaceFactory: CountedPickedUpLayerInterfaceFactory){
 var total = total
 var countedPickedUpLayerInterfaceFactory = countedPickedUpLayerInterfaceFactory
-this.setCountedPickedUpLayerInterfaceFactory(countedPickedUpLayerInterfaceFactory)
-this.total= total
+this.setCountedPickedUpLayerInterfaceFactory(countedPickedUpLayerInterfaceFactory);
+    
+this.total= total;
+    
 }
 
 
                 //@Throws(Error::class)
             
-    public getInstance(hashtable: Hashtable<Any, Any>, x: number, y: number, z: number): AllBinaryLayer{
+    public getInstance(hashtable: Hashtable<any, any>, x: number, y: number, z: number): AllBinaryLayer{
 var hashtable = hashtable
 var x = x
 var y = y
@@ -102,12 +109,15 @@ var z = z
                         if(this.total > 0)
                         
                                     {
-                                    this.setTotal(this.total -1)
+                                    this.setTotal(this.total -1);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getCountedPickedUpLayerInterfaceFactory()!.getInstance(hashtable, x, y, z);
+
+                        ;
     
 
                                     }
@@ -135,14 +145,18 @@ var z = z
 
     public setTotal(total: number){
 var total = total
-this.total= total
-this.totalString= this.primitiveLongUtil!.getCharArray(total)
+this.total= total;
+    
+this.totalString= this.primitiveLongUtil!.getCharArray(total);
+    
 
     var font: MyFont = MyFont.getInstance()!;
         
         
-
-this.setXOffset(font.charsWidth(totalString, 0, this.primitiveLongUtil!.getCurrentTotalDigits()) +(font.getSize() shr 1))
+;
+    
+this.setXOffset(font.charsWidth(totalString, 0, this.primitiveLongUtil!.getCurrentTotalDigits()) +(font.getSize() shr 1));
+    
 }
 
 
@@ -168,7 +182,8 @@ var graphics = graphics
 
     public setAnimationInterface(animationInterface: Animation){
 var animationInterface = animationInterface
-this.animationInterface= animationInterface
+this.animationInterface= animationInterface;
+    
 }
 
 
@@ -184,7 +199,8 @@ this.animationInterface= animationInterface
 
     setXOffset(totalStringWidth: number){
 var totalStringWidth = totalStringWidth
-this.xOffset= totalStringWidth
+this.xOffset= totalStringWidth;
+    
 }
 
 
@@ -210,7 +226,8 @@ this.xOffset= totalStringWidth
 
     public setCountedPickedUpLayerInterfaceFactory(countedPickedUpLayerInterfaceFactory: CountedPickedUpLayerInterfaceFactory){
 var countedPickedUpLayerInterfaceFactory = countedPickedUpLayerInterfaceFactory
-this.countedPickedUpLayerInterfaceFactory= countedPickedUpLayerInterfaceFactory
+this.countedPickedUpLayerInterfaceFactory= countedPickedUpLayerInterfaceFactory;
+    
 }
 
 

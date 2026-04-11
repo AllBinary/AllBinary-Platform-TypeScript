@@ -30,7 +30,8 @@ public constructor (paintableArray: PaintableInterface[]){
 
             super();
                 //var paintableArray = paintableArray
-this.paintableArray= paintableArray
+this.paintableArray= paintableArray;
+    
 }
 
 
@@ -46,7 +47,8 @@ this.paintableArray= paintableArray
         
 index >= 0; index--)
         {
-this.paintableArray[index]!.paint(graphics)
+this.paintableArray[index]!.paint(graphics);
+    
 }
 
 }
@@ -64,7 +66,8 @@ var graphics = graphics
         
 index >= 0; index--)
         {
-this.paintableArray[index]!.paintThreed(graphics)
+this.paintableArray[index]!.paintThreed(graphics);
+    
 }
 
 }

@@ -59,12 +59,14 @@ var args = args
     var stringMaker: StringMaker = new StringMaker();
         
         
-
+;
+    
 
     var angleFactory: AngleFactory = AngleFactory.getInstance()!;
         
         
-
+;
+    
 
 
 
@@ -75,10 +77,12 @@ var args = args
         
 index < 360; index++)
         {
-stringMaker!.appendint(index)!.append(CommonSeps.getInstance()!.FORWARD_SLASH)!.appendshort(angleFactory!.getClosestDirection(index)!.getValue())!.append(CommonSeps.getInstance()!.NEW_LINE)
+stringMaker!.appendint(index)!.append(CommonSeps.getInstance()!.FORWARD_SLASH)!.appendshort(angleFactory!.getClosestDirection(index)!.getValue())!.append(CommonSeps.getInstance()!.NEW_LINE);
+    
 }
 
-LogUtil.getInstance()!.put(stringMaker!.toString(), "main", "main")
+LogUtil.getInstance()!.put(stringMaker!.toString(), "main", "main");
+    
 }
 
 
@@ -120,14 +124,18 @@ public constructor (){
     var commonPhoneStrings: CommonPhoneStrings = CommonPhoneStrings.getInstance()!;
         
         
-
+;
+    
 
     var total: number = angleArray!.length.toShort();
         
         
-
-UP= NamedAngle(0.toShort(), commonPhoneStrings!.UP)
-angleArray[0]= UP
+;
+    
+UP= NamedAngle(0.toShort(), commonPhoneStrings!.UP);
+    
+angleArray[0]= UP;
+    
 
 
 
@@ -138,11 +146,14 @@ angleArray[0]= UP
         
 index < 90; index++)
         {
-angleArray[index]= Angle(index.toShort())
+angleArray[index]= Angle(index.toShort());
+    
 }
 
-RIGHT= NamedAngle(90.toShort(), commonPhoneStrings!.RIGHT)
-angleArray[90]= RIGHT
+RIGHT= NamedAngle(90.toShort(), commonPhoneStrings!.RIGHT);
+    
+angleArray[90]= RIGHT;
+    
 
 
 
@@ -153,11 +164,14 @@ angleArray[90]= RIGHT
         
 index < 180; index++)
         {
-angleArray[index]= Angle(index.toShort())
+angleArray[index]= Angle(index.toShort());
+    
 }
 
-DOWN= NamedAngle(180.toShort(), commonPhoneStrings!.DOWN)
-angleArray[180]= DOWN
+DOWN= NamedAngle(180.toShort(), commonPhoneStrings!.DOWN);
+    
+angleArray[180]= DOWN;
+    
 
 
 
@@ -168,11 +182,14 @@ angleArray[180]= DOWN
         
 index < 270; index++)
         {
-angleArray[index]= Angle(index.toShort())
+angleArray[index]= Angle(index.toShort());
+    
 }
 
-LEFT= NamedAngle(270.toShort(), commonPhoneStrings!.LEFT)
-angleArray[270]= LEFT
+LEFT= NamedAngle(270.toShort(), commonPhoneStrings!.LEFT);
+    
+angleArray[270]= LEFT;
+    
 
 
 
@@ -183,7 +200,8 @@ angleArray[270]= LEFT
         
 index < total; index++)
         {
-angleArray[index]= Angle(index.toShort())
+angleArray[index]= Angle(index.toShort());
+    
 }
 
 }
@@ -196,10 +214,13 @@ angleArray[index]= Angle(index.toShort())
     public getInstance(index: number): Angle{
     //var index = index
 
-    var adjustedIndex: number = frameUtil!.adjustAngleToFrameAngle(index).toInt();
-        
-        
+    var adjustedIndex: number = frameUtil!.adjustAngleToFrameAngle(index);
 
+                        .toInt();
+        
+        
+;
+    
 
 
 

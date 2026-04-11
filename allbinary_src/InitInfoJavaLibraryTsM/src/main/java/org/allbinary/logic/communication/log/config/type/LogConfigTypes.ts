@@ -51,32 +51,44 @@ export class LogConfigTypes
         
 
                 init{
-LogConfigTypes.init()
+LogConfigTypes.init();
+    
 }
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static init(){
 
         try {
-            PreLogUtil.put("Initialize LogconfigTypes", "LogConfigTypes", "init()")
-LogConfigTypeFactory.getInstance()
+            PreLogUtil.put("Initialize LogconfigTypes", "LogConfigTypes", "init()");
+    
+LogConfigTypeFactory.getInstance();
+    
 
     var loggingInitInfo: LoggingInitInfo = new LoggingInitInfo();
         
         
-
+;
+    
 
     var logConfigTypeVector: BasicArrayList = loggingInitInfo!.getTypeList()!;
         
         
+;
+    
+PreLogUtil.put("Number Of Log Configs: " +loggingInitInfo!.getNumberOfLogConfigs(), "LogConfigTypes", "init()");
+    
+PreLogUtil.put("Number Of Log Config Type Names: " +logConfigTypeVector!.size(), "LogConfigTypes", "init()");
+    
+LogConfigTypes.LOGGING.addAll(logConfigTypeVector);
+    
+LogConfigTypes.LOGGING.add(LogConfigTypeFactory.getInstance()!.NETBEANS_MODULE);
+    
 
-PreLogUtil.put("Number Of Log Configs: " +loggingInitInfo!.getNumberOfLogConfigs(), "LogConfigTypes", "init()")
-PreLogUtil.put("Number Of Log Config Type Names: " +logConfigTypeVector!.size(), "LogConfigTypes", "init()")
-LogConfigTypes.LOGGING.addAll(logConfigTypeVector)
-LogConfigTypes.LOGGING.add(LogConfigTypeFactory.getInstance()!.NETBEANS_MODULE)
-} catch(e: Exception)
+                //: 
+} catch(e) 
             {
-PreLogUtil.put("Unable to initialize LogConfigTypes", "LogConfigTypes", "init()", e)
+PreLogUtil.putSE("Unable to initialize LogConfigTypes", "LogConfigTypes", "init()", e);
+    
 }
 
 }
@@ -90,17 +102,20 @@ PreLogUtil.put("Unable to initialize LogConfigTypes", "LogConfigTypes", "init()"
     var nameValueNode: Node = DomSearchHelper.getNode(LogConfigTypeData.getInstance()!.NAME, node.getChildNodes())!;
         
         
-
+;
+    
 
     var name: string = DomNodeHelper.getTextNodeValue(nameValueNode)!;
         
         
-
+;
+    
 
     var descriptionValueNode: Node = DomSearchHelper.getNodeNoThrow(LogConfigTypeData.getInstance()!.DESCRIPTION, node.getChildNodes())!;
         
         
-
+;
+    
 
                         if(descriptionValueNode != 
                                     null
@@ -111,7 +126,8 @@ PreLogUtil.put("Unable to initialize LogConfigTypes", "LogConfigTypes", "init()"
     var description: string = DomNodeHelper.getTextNodeValue(descriptionValueNode)!;
         
         
-
+;
+    
 
                                     }
                                 
@@ -119,15 +135,18 @@ PreLogUtil.put("Unable to initialize LogConfigTypes", "LogConfigTypes", "init()"
     var availableLogConfigTypes: BasicArrayList = LogConfigType.availableLogConfigTypes;
         
         
-
+;
+    
 
     var size: number = availableLogConfigTypes!.size()!;
         
         
-
+;
+    
 
     var logConfigType: LogConfigType
-
+;
+    
 
 
 
@@ -138,7 +157,10 @@ PreLogUtil.put("Unable to initialize LogConfigTypes", "LogConfigTypes", "init()"
         
 index < size; index++)
         {
-logConfigType= availableLogConfigTypes!.get(index) as LogConfigType
+logConfigType= availableLogConfigTypes!.get(index);
+
+                         as LogConfigType;
+    
 
                         if(logConfigType!.getName()!.compareTo(name) == 0)
                         

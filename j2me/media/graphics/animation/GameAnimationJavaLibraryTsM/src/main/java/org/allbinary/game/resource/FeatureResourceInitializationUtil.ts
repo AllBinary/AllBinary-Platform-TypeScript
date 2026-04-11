@@ -59,15 +59,20 @@ var level = level
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.START, this, commonStrings!.INIT)
+;
+    
+logUtil!.put(commonStrings!.START, this, commonStrings!.INIT);
+    
 
     var featuredResourceFactory: FeaturedResourceFactory = FeaturedAnimationInterfaceFactoryInterfaceFactory.getInstance()!;
         
         
-
-featuredResourceFactory!.init(level)
-FeaturedResourceRelativeRelationshipFactory.getInstance()!.init(level)
+;
+    
+featuredResourceFactory!.init(level);
+    
+FeaturedResourceRelativeRelationshipFactory.getInstance()!.init(level);
+    
 }
 
 

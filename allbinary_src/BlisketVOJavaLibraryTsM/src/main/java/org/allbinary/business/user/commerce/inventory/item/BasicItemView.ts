@@ -18,13 +18,16 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { HashMap } from "../../../../../../../java/util/HashMap.js";
 
     
 import { Set } from "../../../../../../../java/util/Set.js";
 
     
-import { Vector } from "../../../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../../../java/util/Vector.js";
 
     
 import { DomNodeInterface } from "../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js";
@@ -71,8 +74,10 @@ public constructor (itemInterface: ItemInterface, vector: Vector){
             super();
             var itemInterface = itemInterface
 var vector = vector
-this.itemInterface= itemInterface
-this.vector= vector
+this.itemInterface= itemInterface;
+    
+this.vector= vector;
+    
 }
 
 
@@ -84,47 +89,56 @@ var document = document
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PRODUCTSEARCHLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.START, this, "toXmlNode")
+                                    logUtil!.put(this.commonStrings!.START, this, "toXmlNode");
+    
 
                                     }
                                 
 
-    var hashMap: HashMap<Any, Any> = itemInterface!.toHashMap()!;
+    var hashMap: HashMap<any, any> = itemInterface!.toHashMap()!;
         
         
-
+;
+    
 
     var EMPTY_STRING: string = StringUtil.getInstance()!.EMPTY_STRING;
         
         
-
-hashMap!.put(BasicItemData.IMAGE, EMPTY_STRING)
+;
+    
+hashMap!.put(BasicItemData.IMAGE, EMPTY_STRING);
+    
 
     var stringUtil: StringUtil = StringUtil.getInstance()!;
         
         
-
+;
+    
 
     var keySet: Set = hashMap!.keys!;
         
         
-
+;
+    
 
     var node: Node = document.createElement(BasicItemData.ITEM)!;
         
         
+;
+    
 
-
-    var nameArray: any = {}[] = keySet!.toTypedArray()!;
+    var nameArray: any[] = keySet!.toTypedArray()!;
         
         
-
+;
+    
 
     var size2: number = nameArray!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -139,27 +153,36 @@ index < size2; index++)
     var name: string = nameArray[index]! as String;
         
         
+;
+    
 
+    var value: string = hashMap!.get(name as Object);
 
-    var value: string = hashMap!.get(name as Object) as String;
+                         as String;
         
         
-
-value= stringUtil!.getInstance(value)
-node.appendChild(ModDomHelper.createNameValueNodes(document, name, value))
+;
+    
+value= stringUtil!.getInstance(value);
+    
+node.appendChild(ModDomHelper.createNameValueNodes(document, name, value));
+    
 }
 
 
     var totalNode: Node = ModDomHelper.createNameValueNodes(document, BasicItemData.TOTAL, this.itemInterface!.getTotal()!.toString())!;
         
         
-
-node.appendChild(totalNode)
+;
+    
+node.appendChild(totalNode);
+    
 
     var size: number = this.vector.length!;
         
         
-
+;
+    
 
 
 
@@ -171,16 +194,21 @@ node.appendChild(totalNode)
 index < size; index++)
         {
 
-    var domNodeInterface: DomNodeInterface = this.vector.get(index) as DomNodeInterface;
-        
-        
+    var domNodeInterface: DomNodeInterface = this.vector.get(index);
 
+                         as DomNodeInterface;
+        
+        
+;
+    
 
     var customNode: Node = domNodeInterface!.toXmlNode(document)!;
         
         
-
-node.appendChild(customNode)
+;
+    
+node.appendChild(customNode);
+    
 }
 
 

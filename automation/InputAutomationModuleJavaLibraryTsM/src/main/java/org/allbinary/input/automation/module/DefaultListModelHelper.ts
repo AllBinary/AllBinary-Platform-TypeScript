@@ -18,7 +18,10 @@
 
 
 
-import { Vector } from "../../../../../java/util/Vector.js";
+            import Vector from "@ohos.util.Vector";
+        
+
+//import { Vector } from "../../../../../java/util/Vector.js";
 
     
 import { swing } from "../../../../../javax/swing.js";
@@ -36,18 +39,22 @@ export class DefaultListModelHelper
 public constructor (){
 
             super();
-            this.vector= Vector()
-this.defaultListModel= DefaultListModel()
+            this.vector= Vector();
+    
+this.defaultListModel= DefaultListModel();
+    
 }
 
 
     public initDefaultModelList(){
-this.defaultListModel= DefaultListModel()
+this.defaultListModel= DefaultListModel();
+    
 
     var size: number = this.vector.length!;
         
         
-
+;
+    
 
 
 
@@ -59,11 +66,15 @@ this.defaultListModel= DefaultListModel()
 index < size; index++)
         {
 
-    var moduleName: string = this.vector.get(index) as String;
-        
-        
+    var moduleName: string = this.vector.get(index);
 
-this.defaultListModel!.addElement(moduleName)
+                         as String;
+        
+        
+;
+    
+this.defaultListModel!.addElement(moduleName);
+    
 }
 
 }
@@ -81,13 +92,15 @@ this.defaultListModel!.addElement(moduleName)
 
     public add(string: string){
 var string = string
-this.vector.add(string)
+this.vector.add(string);
+    
 }
 
 
     public remove(string: string){
 var string = string
-this.vector.remove(string)
+this.vector.remove(string);
+    
 }
 
 

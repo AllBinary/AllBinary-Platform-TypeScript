@@ -136,7 +136,8 @@ public constructor (gameKeyEventList: BasicArrayList, playerInputId: number, gam
 
                             //For kotlin this is before the body of the constructor.
                     
-this.form= form
+this.form= form;
+    
 }
 
 
@@ -148,8 +149,10 @@ this.form= form
                         if(key == Canvas.LEFT || key == Canvas.RIGHT || key == Canvas.UP || key == Canvas.DOWN)
                         
                                     {
-                                    PrimaryPlayerQueueFactory.getInstance()!.add(SelectSound.getInstance())
-this.form.processInput(key)
+                                    PrimaryPlayerQueueFactory.getInstance()!.add(SelectSound.getInstance());
+    
+this.form.processInput(key);
+    
 
 
 
@@ -163,12 +166,15 @@ this.form.processInput(key)
                         if(key == Canvas.FIRE)
                         
                                     {
-                                    PrimaryPlayerQueueFactory.getInstance()!.add(SelectSound.getInstance())
+                                    PrimaryPlayerQueueFactory.getInstance()!.add(SelectSound.getInstance());
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.processCommand();
+
+                        ;
     
 
                                     }
@@ -191,34 +197,41 @@ this.form.processInput(key)
     var commandCurrentSelectionForm: CommandCurrentSelectionForm = this.form as CommandCurrentSelectionForm;
         
         
-
+;
+    
 
     var command: Command = commandCurrentSelectionForm!.getSelectedCommand()!;
         
         
-
-logUtil!.put(command.toString(), this, PROCESS_COMMAND)
+;
+    
+logUtil!.put(command.toString(), this, PROCESS_COMMAND);
+    
 
     var features: Features = Features.getInstance()!;
         
         
-
+;
+    
 
     var openGLFeatureFactory: OpenGLFeatureFactory = OpenGLFeatureFactory.getInstance()!;
         
         
-
+;
+    
 
                         if(SWTUtil.isSWT && features.isFeature(openGLFeatureFactory!.OPENGL) && command != GameCommandsFactory.getInstance()!.EXIT_COMMAND)
                         
                                     {
                                     CommandRunnable(this, command).
-                            run()
+                            run();
+    
 
                                     }
                                 
                         else {
-                            PrimaryThreadPool.getInstance()!.runTask(CommandRunnable(this, command))
+                            PrimaryThreadPool.getInstance()!.runTask(CommandRunnable(this, command));
+    
 
                         }
                             
@@ -257,25 +270,30 @@ logUtil!.put(command.toString(), this, PROCESS_COMMAND)
     var motionInputsIndex: number = this.processMotionInputs()!;
         
         
-
+;
+    
 
     var list: BasicArrayList = this.getGameKeyEventList()!;
         
         
-
+;
+    
 
     var size: number = list.size()!;
         
         
-
+;
+    
 
     var key: number = 0;
         
         
-
+;
+    
 
     var gameKeyEvent: GameKeyEvent
-
+;
+    
 
 
 
@@ -286,8 +304,10 @@ logUtil!.put(command.toString(), this, PROCESS_COMMAND)
         
 index < size; index++)
         {
-gameKeyEvent= list.objectArray[index]! as GameKeyEvent
-key= gameKeyEvent!.getKey()
+gameKeyEvent= list.objectArray[index]! as GameKeyEvent;
+    
+key= gameKeyEvent!.getKey();
+    
 
                         if(gameKeyEvent!.getSourceId() != MOTION_GESTURE_SOURCE_ID)
                         
@@ -307,7 +327,8 @@ key= gameKeyEvent!.getKey()
                                 
 }
 
-this.clear()
+this.clear();
+    
 
                         if(size > 0 || motionInputsIndex >= 0)
                         
@@ -331,9 +352,12 @@ this.clear()
 
                         }
                             
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, this.gameInputStrings!.PROCESS_INPUT, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, this.gameInputStrings!.PROCESS_INPUT, e);
+    
 
 
 
@@ -352,7 +376,8 @@ logUtil!.put(commonStrings!.EXCEPTION, this, this.gameInputStrings!.PROCESS_INPU
     var lastIndex: number = this.motionGestureEventList!.size() -1;
         
         
-
+;
+    
 
                         if(lastIndex >= 0)
                         
@@ -361,12 +386,15 @@ logUtil!.put(commonStrings!.EXCEPTION, this, this.gameInputStrings!.PROCESS_INPU
     var motionGestureEvent: MotionGestureEvent = this.motionGestureEventList!.objectArray[lastIndex]! as MotionGestureEvent;
         
         
-
-this.processMotionInput(motionGestureEvent)
+;
+    
+this.processMotionInput(motionGestureEvent);
+    
 
                                     }
                                 
-motionGestureEventList!.clear()
+motionGestureEventList!.clear();
+    
 
 
 
@@ -384,12 +412,14 @@ motionGestureEventList!.clear()
     var touchMotionGestureFactory: TouchMotionGestureFactory = TouchMotionGestureFactory.getInstance()!;
         
         
-
+;
+    
 
     var motionGestureInput: MotionGestureInput = motionGestureEvent!.getMotionGesture()!;
         
         
-
+;
+    
 
                         if(motionGestureInput == touchMotionGestureFactory!.RELEASED)
                         
@@ -398,7 +428,8 @@ motionGestureEventList!.clear()
     var point: GPoint = motionGestureEvent!.getCurrentPoint()!;
         
         
-
+;
+    
 
                         if(this.form.isInForm(point))
                         
@@ -407,12 +438,14 @@ motionGestureEventList!.clear()
     var index: number = this.form.getSelectedIndex(point)!;
         
         
-
+;
+    
 
                         if(index !=  -1)
                         
                                     {
-                                    PrimaryPlayerQueueFactory.getInstance()!.add(SelectSound.getInstance())
+                                    PrimaryPlayerQueueFactory.getInstance()!.add(SelectSound.getInstance());
+    
 
                         if(index == this.form.getSelectedIndex())
                         
@@ -421,7 +454,8 @@ motionGestureEventList!.clear()
                         if(this.clickTimeHelper!.isTime())
                         
                                     {
-                                    this.processCommand()
+                                    this.processCommand();
+    
 
                                     }
                                 
@@ -429,7 +463,8 @@ motionGestureEventList!.clear()
                                     }
                                 
                         else {
-                            this.form.setSelectedIndex(index)
+                            this.form.setSelectedIndex(index);
+    
 
                         }
                             
@@ -448,20 +483,27 @@ motionGestureEventList!.clear()
                         
                                     {
                                     
-                        if(!this.doubleClickTimeHelper!.isTime())
+                        if(!this.doubleClickTimeHelper!.isTime();
+
+                        )
                         
                                     {
-                                    logUtil!.put("Double Press", this, gameInputStrings!.PROCESS_MOTION_INPUT)
-this.processCommand()
+                                    logUtil!.put("Double Press", this, gameInputStrings!.PROCESS_MOTION_INPUT);
+    
+this.processCommand();
+    
 
                                     }
                                 
-this.doubleClickTimeHelper!.delay= DOUBLE_CLICK_DELAY
-this.doubleClickTimeHelper!.setStartTime()
+this.doubleClickTimeHelper!.delay= DOUBLE_CLICK_DELAY;
+    
+this.doubleClickTimeHelper!.setStartTime();
+    
 
                                     }
                                 
-this.hasPressed= false
+this.hasPressed= false;
+    
 
                                     }
                                 
@@ -469,8 +511,10 @@ this.hasPressed= false
                         if(motionGestureInput == touchMotionGestureFactory!.PRESSED)
                         
                                     {
-                                    this.doubleClickTimeHelper!.delay= 0
-this.hasPressed= true
+                                    this.doubleClickTimeHelper!.delay= 0;
+    
+this.hasPressed= true;
+    
 
                                     }
                                 
@@ -488,6 +532,8 @@ this.hasPressed= true
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return StringMaker().
                             append(super.toString())!.append(NAME_LABEL)!.append(this.form.toString())!.toString();
+
+                        ;
     
 }
 

@@ -18,10 +18,13 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { HashMap } from "../../../../../../../../java/util/HashMap.js";
 
     
-import { Vector } from "../../../../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../../../../java/util/Vector.js";
 
     
 import { UserInterface } from "../../../../../../../../org/allbinary/business/user/UserInterface.js";
@@ -76,7 +79,7 @@ export class UserEmailEventHandlerSingletons
         
         
 
-    private readonly userEmailEventHandlerHashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+    private readonly userEmailEventHandlerHashMap: HashMap<any, any> = new HashMap<any, any>();
         
         
 private constructor (){
@@ -86,7 +89,8 @@ private constructor (){
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
                                     {
-                                    logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
+    
 
                                     }
                                 
@@ -103,15 +107,19 @@ var userInterface = userInterface
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.START, this, commonStrings!.GET_INSTANCE)
+                                    logUtil!.put(this.commonStrings!.START, this, commonStrings!.GET_INSTANCE);
+    
 
                                     }
                                 
 
-    var userEmailEventHandler: UserEmailEventHandler = this.userEmailEventHandlerHashMap!.get(userEmailEventNameData as Object) as UserEmailEventHandler;
-        
-        
+    var userEmailEventHandler: UserEmailEventHandler = this.userEmailEventHandlerHashMap!.get(userEmailEventNameData as Object);
 
+                         as UserEmailEventHandler;
+        
+        
+;
+    
 
                         if(userEmailEventHandler == 
                                     null
@@ -122,7 +130,8 @@ var userInterface = userInterface
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
                                     {
-                                    logUtil!.put("Creating New Named UserEmailEventHandler", this, commonStrings!.GET_INSTANCE)
+                                    logUtil!.put("Creating New Named UserEmailEventHandler", this, commonStrings!.GET_INSTANCE);
+    
 
                                     }
                                 
@@ -130,15 +139,20 @@ var userInterface = userInterface
     var newUserEmailEventHandler: UserEmailEventHandler = new UserEmailEventHandler();
         
         
-
+;
+    
 
     var vector: Vector = EmailEventHandlerUtil.getUserEmailEventListenerVector(abeClientInformation, userEmailEventNameData, userInterface)!;
         
         
-
-newUserEmailEventHandler!.addListener(vector)
-newUserEmailEventHandler!.addListener(LogUserEmailEventListenerModule())
-this.userEmailEventHandlerHashMap!.put(userEmailEventNameData, newUserEmailEventHandler)
+;
+    
+newUserEmailEventHandler!.addListener(vector);
+    
+newUserEmailEventHandler!.addListener(LogUserEmailEventListenerModule());
+    
+this.userEmailEventHandlerHashMap!.put(userEmailEventNameData, newUserEmailEventHandler);
+    
 
 
 
@@ -153,7 +167,8 @@ this.userEmailEventHandlerHashMap!.put(userEmailEventNameData, newUserEmailEvent
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
                                     {
-                                    logUtil!.put("Returning existing UserEmailEventHandler", this, commonStrings!.GET_INSTANCE)
+                                    logUtil!.put("Returning existing UserEmailEventHandler", this, commonStrings!.GET_INSTANCE);
+    
 
                                     }
                                 

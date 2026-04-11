@@ -18,10 +18,13 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { HashMap } from "../../../../java/util/HashMap.js";
 
     
-import { Vector } from "../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../java/util/Vector.js";
 
     
 import { UserDbInitInfo } from "../../../../org/allbinary/business/init/db/UserDbInitInfo.js";
@@ -96,23 +99,40 @@ public constructor ()
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)
-stringBuffer!.append(tableName)
-stringBuffer!.append(this.sqlStrings!.START)
-stringBuffer!.append(NOTHING)
-stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-stringBuffer!.append(InitInfo.getInstance()!.TESTING)
-stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-stringBuffer!.append(InitInfo.getInstance()!.TESTHTMLPATH)
-stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-stringBuffer!.append(InitInfo.getInstance()!.MAINPATH)
-stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)
-stringBuffer!.append(this.sqlStrings!.PRIMARY_KEY)
-stringBuffer!.append(NOTHING)
-stringBuffer!.append(this.sqlStrings!.END)
-this.tableData= stringBuffer!.toString()
-this.setTable(this.tableName)
+;
+    
+stringBuffer!.append(this.sqlStrings!.CREATE_TABLE);
+    
+stringBuffer!.append(tableName);
+    
+stringBuffer!.append(this.sqlStrings!.START);
+    
+stringBuffer!.append(NOTHING);
+    
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
+    
+stringBuffer!.append(InitInfo.getInstance()!.TESTING);
+    
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
+    
+stringBuffer!.append(InitInfo.getInstance()!.TESTHTMLPATH);
+    
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
+    
+stringBuffer!.append(InitInfo.getInstance()!.MAINPATH);
+    
+stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
+    
+stringBuffer!.append(this.sqlStrings!.PRIMARY_KEY);
+    
+stringBuffer!.append(NOTHING);
+    
+stringBuffer!.append(this.sqlStrings!.END);
+    
+this.tableData= stringBuffer!.toString();
+    
+this.setTable(this.tableName);
+    
 }
 
 
@@ -120,23 +140,27 @@ this.setTable(this.tableName)
 
         try {
             
-    var keyAndValue: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var keyAndValue: HashMap<any, any> = new HashMap<any, any>();
         
         
+;
+    
+keyAndValue!.put(NOTHING, NOTHING);
+    
 
-keyAndValue!.put(NOTHING, NOTHING)
-
-    var hashMap: HashMap<Any, Any> = getRow(keyAndValue)!;
+    var hashMap: HashMap<any, any> = getRow(keyAndValue)!;
         
         
-
+;
+    
 
                         if(hashMap != 
                                     null
                                 )
                         
                                     {
-                                    InitInfo.getInstance()!.set(hashMap)
+                                    InitInfo.getInstance()!.set(hashMap);
+    
 
 
 
@@ -151,7 +175,8 @@ keyAndValue!.put(NOTHING, NOTHING)
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.PRELOADER))
                         
                                     {
-                                    PreLogUtil.put(this.NOT_IN_DB, NAME, this.METHOD_GET)
+                                    PreLogUtil.put(this.NOT_IN_DB, NAME, this.METHOD_GET);
+    
 
                                     }
                                 
@@ -164,13 +189,16 @@ keyAndValue!.put(NOTHING, NOTHING)
 
                         }
                             
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.PRELOADERERROR))
                         
                                     {
-                                    PreLogUtil.put(this.commonStrings!.EXCEPTION, this.NAME, this.METHOD_GET, e)
+                                    PreLogUtil.putOE(this.commonStrings!.EXCEPTION, this.NAME, this.METHOD_GET, e);
+    
 
                                     }
                                 
@@ -189,16 +217,19 @@ keyAndValue!.put(NOTHING, NOTHING)
 
         try {
             
-    var keyAndValue: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var keyAndValue: HashMap<any, any> = new HashMap<any, any>();
         
         
+;
+    
+keyAndValue!.put(NOTHING, NOTHING);
+    
 
-keyAndValue!.put(NOTHING, NOTHING)
-
-    var hashMap: HashMap<Any, Any> = getRow(keyAndValue)!;
+    var hashMap: HashMap<any, any> = getRow(keyAndValue)!;
         
         
-
+;
+    
 
                         if(hashMap != 
                                     null
@@ -219,7 +250,8 @@ keyAndValue!.put(NOTHING, NOTHING)
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.PRELOADER))
                         
                                     {
-                                    PreLogUtil.put(this.NOT_IN_DB, this.NAME, this.METHOD_IS)
+                                    PreLogUtil.put(this.NOT_IN_DB, this.NAME, this.METHOD_IS);
+    
 
                                     }
                                 
@@ -232,13 +264,16 @@ keyAndValue!.put(NOTHING, NOTHING)
 
                         }
                             
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.PRELOADERERROR))
                         
                                     {
-                                    PreLogUtil.put(this.commonStrings!.EXCEPTION, this.NAME, this.METHOD_IS, e)
+                                    PreLogUtil.putOE(this.commonStrings!.EXCEPTION, this.NAME, this.METHOD_IS, e);
+    
 
                                     }
                                 
@@ -254,7 +289,8 @@ keyAndValue!.put(NOTHING, NOTHING)
 
 
     public update(){
-updateWhere(NOTHING, NOTHING, InitInfo.getInstance()!.toHashMap())
+updateWhere(NOTHING, NOTHING, InitInfo.getInstance()!.toHashMap());
+    
 }
 
 
@@ -265,19 +301,28 @@ updateWhere(NOTHING, NOTHING, InitInfo.getInstance()!.toHashMap())
     var values: Vector = new Vector();
         
         
+;
+    
+values.add(NOTHING);
+    
+values.add(InitInfo.getInstance()!.getTesting());
+    
+values.add(InitInfo.getInstance()!.getTestHtmlPath());
+    
+values.add(InitInfo.getInstance()!.getMainPath());
+    
+insert(values);
+    
 
-values.add(NOTHING)
-values.add(InitInfo.getInstance()!.getTesting())
-values.add(InitInfo.getInstance()!.getTestHtmlPath())
-values.add(InitInfo.getInstance()!.getMainPath())
-insert(values)
-} catch(e: Exception)
+                //: 
+} catch(e) 
             {
 
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.PRELOADERERROR))
                         
                                     {
-                                    PreLogUtil.put(this.commonStrings!.EXCEPTION, this.NAME, this.METHOD_ADD, e)
+                                    PreLogUtil.putOE(this.commonStrings!.EXCEPTION, this.NAME, this.METHOD_ADD, e);
+    
 
                                     }
                                 
@@ -305,15 +350,21 @@ insert(values)
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(FAILED_TO_CREATE)
-stringBuffer!.append(tableData)
-stringBuffer!.append(AbPathData.getInstance()!.EXTENSION_SEP)
+;
+    
+stringBuffer!.append(FAILED_TO_CREATE);
+    
+stringBuffer!.append(tableData);
+    
+stringBuffer!.append(AbPathData.getInstance()!.EXTENSION_SEP);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 
                         }

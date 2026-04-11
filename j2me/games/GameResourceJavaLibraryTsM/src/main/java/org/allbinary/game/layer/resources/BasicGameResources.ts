@@ -69,12 +69,14 @@ var SIZE = SIZE
     var scale: number = GameConfigurationCentral.getInstance()!.SCALE.getValue()!.toInt()!;
         
         
-
+;
+    
 
                         if(scale > 1 && scale -1 < SIZE.length)
                         
                                     {
-                                    this.init(ROOT, SIZE[scale -1]!)
+                                    this.init(ROOT, SIZE[scale -1]!);
+    
 
                                     }
                                 
@@ -87,14 +89,18 @@ var SIZE = SIZE
 
                         }
                             
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e);
+    
 }
 
 }
@@ -108,6 +114,8 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return GameGraphicsResourceUtil.getInstance()!.getName();
+
+                        ;
     
 }
 
@@ -121,23 +129,36 @@ var sizeString = sizeString
     var DESTROY: string = "_destroy";
         
         
-
+;
+    
 
     var string: string = this.getString()!;
         
         
-
-stringBuffer!.delete(0, stringBuffer!.length())
-stringBuffer!.append(ROOT)
-stringBuffer!.append(string)
-stringBuffer!.append(sizeString)
-this.RESOURCE= stringBuffer!.toString()
-stringBuffer!.delete(0, stringBuffer!.length())
-stringBuffer!.append(ROOT)
-stringBuffer!.append(DESTROY)
-stringBuffer!.append(string)
-stringBuffer!.append(sizeString)
-this.RESOURCE_DESTROY= stringBuffer!.toString()
+;
+    
+stringBuffer!.delete(0, stringBuffer!.length());
+    
+stringBuffer!.append(ROOT);
+    
+stringBuffer!.append(string);
+    
+stringBuffer!.append(sizeString);
+    
+this.RESOURCE= stringBuffer!.toString();
+    
+stringBuffer!.delete(0, stringBuffer!.length());
+    
+stringBuffer!.append(ROOT);
+    
+stringBuffer!.append(DESTROY);
+    
+stringBuffer!.append(string);
+    
+stringBuffer!.append(sizeString);
+    
+this.RESOURCE_DESTROY= stringBuffer!.toString();
+    
 }
 
 

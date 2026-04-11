@@ -90,13 +90,20 @@ protected constructor (originalImage: Image, image: Image, angleInfo: AngleInfo,
 
                             //For kotlin this is before the body of the constructor.
                     
-this.originalImage= originalImage
-this.halfWidth= (image.getWidth() shr 1)
-this.halfHeight= (image.getHeight() shr 1)
-this.increment= (this.angleInfo!.getAngleIncrementInfo()!.getAngleIncrement()).toShort()
-this.imageToShow= image
-this.twoImages[0]= image
-this.twoImages[1]= ImageCopyUtil.getInstance()!.createImage(image)
+this.originalImage= originalImage;
+    
+this.halfWidth= (image.getWidth() shr 1);
+    
+this.halfHeight= (image.getHeight() shr 1);
+    
+this.increment= (this.angleInfo!.getAngleIncrementInfo()!.getAngleIncrement()).toShort();
+    
+this.imageToShow= image;
+    
+this.twoImages[0]= image;
+    
+this.twoImages[1]= ImageCopyUtil.getInstance()!.createImage(image);
+    
 }
 
 
@@ -106,25 +113,31 @@ this.twoImages[1]= ImageCopyUtil.getInstance()!.createImage(image)
     var changed: boolean = false;
         
         
-
+;
+    
 
                         if(this.getBasicColorP() == 
                                     null
                                  || this.getBasicColorP()!.toInt() != basicColor!.toInt())
                         
                                     {
-                                    imageModifierUtil!.setColor(this.originalImage, this.imageToShow, 0, basicColor)
-changed= true
+                                    imageModifierUtil!.setColor(this.originalImage, this.imageToShow, 0, basicColor);
+    
+changed= true;
+    
 
                                     }
                                 
-super.setBasicColorP(basicColor)
+super.setBasicColorP(basicColor);
+    
 
                         if(changed)
                         
                                     {
-                                    matrix.setRotate(0.0f, this.halfWidth.toFloat(), this.halfHeight.toFloat())
-this.updateImage()
+                                    matrix.setRotate(0.0f, this.halfWidth.toFloat(), this.halfHeight.toFloat());
+    
+this.updateImage();
+    
 
                                     }
                                 
@@ -133,7 +146,8 @@ this.updateImage()
 
     public changeBasicColor(basicColor: BasicColor){
     //var basicColor = basicColor
-this.setBasicColorP(basicColor)
+this.setBasicColorP(basicColor);
+    
 }
 
 
@@ -143,23 +157,29 @@ this.setBasicColorP(basicColor)
     var changed: boolean = false;
         
         
-
+;
+    
 
                         if(this.alphaP != alpha)
                         
                                     {
-                                    changed= true
+                                    changed= true;
+    
 
                                     }
                                 
-super.setAlpha(alpha)
-imageModifierUtil!.setAlpha(this.originalImage, this.imageToShow, 0, this.alphaP)
+super.setAlpha(alpha);
+    
+imageModifierUtil!.setAlpha(this.originalImage, this.imageToShow, 0, this.alphaP);
+    
 
                         if(changed)
                         
                                     {
-                                    matrix.setRotate(0.0f, this.halfWidth.toFloat(), this.halfHeight.toFloat())
-this.updateImage()
+                                    matrix.setRotate(0.0f, this.halfWidth.toFloat(), this.halfHeight.toFloat());
+    
+this.updateImage();
+    
 
                                     }
                                 
@@ -167,22 +187,30 @@ this.updateImage()
 
 
     public nextRotation(){
-super.nextRotation()
-matrix.setRotate(this.increment.toFloat(), this.halfWidth.toFloat(), this.halfHeight.toFloat())
-this.updateImage()
+super.nextRotation();
+    
+matrix.setRotate(this.increment.toFloat(), this.halfWidth.toFloat(), this.halfHeight.toFloat());
+    
+this.updateImage();
+    
 }
 
 
     public previousRotation(){
-super.previousRotation()
-matrix.setRotate( -this.increment.toFloat(), this.halfWidth.toFloat(), this.halfHeight.toFloat())
-this.updateImage()
+super.previousRotation();
+    
+matrix.setRotate( -this.increment.toFloat(), this.halfWidth.toFloat(), this.halfHeight.toFloat());
+    
+this.updateImage();
+    
 }
 
 
     updateImage(){
-androidImageUtil!.rotate(this.twoImages[this.bufferedImageIndex]!, originalImage, matrix, imageModifierUtil!.paint)
-this.swap()
+androidImageUtil!.rotate(this.twoImages[this.bufferedImageIndex]!, originalImage, matrix, imageModifierUtil!.paint);
+    
+this.swap();
+    
 }
 
 
@@ -192,31 +220,40 @@ this.swap()
     var currentFrame: number = this.circularIndexUtil!.getIndex()!;
         
         
-
-this.circularIndexUtil!.setIndex(index)
+;
+    
+this.circularIndexUtil!.setIndex(index);
+    
 
     var newFrame: number = this.circularIndexUtil!.getIndex()!;
         
         
-
-this.angleInfo!.adjustAngle(newFrame)
-matrix.setRotate((newFrame -currentFrame).toFloat() *increment, this.halfWidth.toFloat(), this.halfHeight.toFloat())
-this.updateImage()
+;
+    
+this.angleInfo!.adjustAngle(newFrame);
+    
+matrix.setRotate((newFrame -currentFrame).toFloat() *increment, this.halfWidth.toFloat(), this.halfHeight.toFloat());
+    
+this.updateImage();
+    
 }
 
 
     public swap(){
-this.imageToShow= this.twoImages[this.bufferedImageIndex]!
+this.imageToShow= this.twoImages[this.bufferedImageIndex]!;
+    
 
                         if(this.bufferedImageIndex == 0)
                         
                                     {
-                                    this.bufferedImageIndex= 1
+                                    this.bufferedImageIndex= 1;
+    
 
                                     }
                                 
                         else {
-                            this.bufferedImageIndex= 0
+                            this.bufferedImageIndex= 0;
+    
 
                         }
                             
@@ -227,7 +264,8 @@ this.imageToShow= this.twoImages[this.bufferedImageIndex]!
 var graphics = graphics
 var x = x
 var y = y
-graphics.drawImage(this.imageToShow, x, y, anchor)
+graphics.drawImage(this.imageToShow, x, y, anchor);
+    
 }
 
 

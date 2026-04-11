@@ -38,19 +38,24 @@ export class AllBinaryAndroidGameInitializationUtil
     var resourceUtil: ResourceUtil = ResourceUtil.getInstance()!;
         
         
-
+;
+    
 
     var androidResources: AndroidResources = AndroidResources.getInstance()!;
         
         
-
+;
+    
 
     var licenseInitInfoUtil: LicenseInitInfoUtil = LicenseInitInfoUtil.getInstance()!;
         
         
-
-resourceUtil!.addResource(licenseInitInfoUtil!.INITFILENAME, Integer(Integer.valueOf(androidResources!.raw.licenseinitdata)))
-resourceUtil!.addResource(PartnerIdentifierFileUtil.getInstance()!.FILE_NAME, Integer(Integer.valueOf(androidResources!.raw.partner)))
+;
+    
+resourceUtil!.addResource(licenseInitInfoUtil!.INITFILENAME, Integer(Integer.valueOf(androidResources!.raw.licenseinitdata)));
+    
+resourceUtil!.addResource(PartnerIdentifierFileUtil.getInstance()!.FILE_NAME, Integer(Integer.valueOf(androidResources!.raw.partner)));
+    
 }
 
 

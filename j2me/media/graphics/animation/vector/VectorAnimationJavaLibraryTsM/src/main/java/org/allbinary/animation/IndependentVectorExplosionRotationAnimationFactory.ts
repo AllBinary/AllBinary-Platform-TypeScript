@@ -34,7 +34,7 @@ export class IndependentVectorExplosionRotationAnimationFactory
                 , ProceduralAnimationInterfaceFactoryInterface {
         
 
-    private framePoints: IntArray[][] = NullUtil.getInstance()!.NULL_INT_ARRAY_ARRAY_ARRAY;
+    private framePoints: number[][][] = NullUtil.getInstance()!.NULL_INT_ARRAY_ARRAY_ARRAY;
         
         
 
@@ -49,17 +49,22 @@ public constructor (vectorInfo: VectorInfo, basicColor: BasicColor, vectorAnimat
             var vectorInfo = vectorInfo
 var basicColor = basicColor
 var vectorAnimationFactoryInterface = vectorAnimationFactoryInterface
-this.vectorInfo= vectorInfo
-this.basicColor= basicColor
-this.vectorAnimationFactoryInterface= vectorAnimationFactoryInterface
-this.init()
+this.vectorInfo= vectorInfo;
+    
+this.basicColor= basicColor;
+    
+this.vectorAnimationFactoryInterface= vectorAnimationFactoryInterface;
+    
+this.init();
+    
 }
 
 
                 //@Throws(Error::class)
             
     init(){
-framePoints= VectorRotationGenerator.getInstance()!.getInstance(this.vectorInfo)
+framePoints= VectorRotationGenerator.getInstance()!.getInstance(this.vectorInfo);
+    
 }
 
 
@@ -75,7 +80,8 @@ var animationInterface = animationInterface
     var frame: number = 0;
         
         
-
+;
+    
 
                         if(animationInterface != 
                                     null
@@ -86,21 +92,26 @@ var animationInterface = animationInterface
     var rotationAnimationInterface: IndexedAnimation = animationInterface as IndexedAnimation;
         
         
-
-frame= rotationAnimationInterface!.getFrame()
+;
+    
+frame= rotationAnimationInterface!.getFrame();
+    
 
                                     }
                                 
 
-    var points: IntArray[][] = vectorExplosionGenerator!.getInstance(framePoints[frame]!, 6, vectorExplosionGenerator!.ROTATION)!;
+    var points: number[][][] = vectorExplosionGenerator!.getInstance(framePoints[frame]!, 6, vectorExplosionGenerator!.ROTATION)!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.vectorAnimationFactoryInterface!.getInstance(points, this.basicColor);
+
+                        ;
     
 }
 

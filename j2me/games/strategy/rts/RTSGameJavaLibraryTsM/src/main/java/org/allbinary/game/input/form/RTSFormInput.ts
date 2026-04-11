@@ -18,7 +18,10 @@
 
 
 
-import { Hashtable } from "../../../../../java/util/Hashtable.js";
+            import Hashtable from "@ohos.util.HashMap";
+        
+
+//import { Hashtable } from "../../../../../java/util/Hashtable.js";
 
     
 import { RTSLayer } from "../../../../../org/allbinary/game/layer/RTSLayer.js";
@@ -82,7 +85,7 @@ export class RTSFormInput
         
         
 
-    private readonly hashtable: Hashtable<Any, Any> = new Hashtable<Any, Any>();
+    private readonly hashtable: Hashtable<any, any> = new Hashtable<any, any>();
         
         
 
@@ -112,7 +115,8 @@ public constructor (groupInterfaceArray: Group[]){
                 ;
         
         
-
+;
+    
 
 
 
@@ -123,18 +127,22 @@ public constructor (groupInterfaceArray: Group[]){
         
 index < size; index++)
         {
-newUnconstructedRTSLayerInterfaceArray[index]= CollidableDestroyableDamageableLayer.NULL_COLLIDABLE_DESTROYABLE_DAMAGE_LAYER
+newUnconstructedRTSLayerInterfaceArray[index]= CollidableDestroyableDamageableLayer.NULL_COLLIDABLE_DESTROYABLE_DAMAGE_LAYER;
+    
 }
 
-this.groupInterfaceArray= groupInterfaceArray
-this.hashtable.put(DirectionFactory.getInstance()!.NAME, DirectionFactory.getInstance()!.DOWN)
+this.groupInterfaceArray= groupInterfaceArray;
+    
+this.hashtable.put(DirectionFactory.getInstance()!.NAME, DirectionFactory.getInstance()!.DOWN);
+    
 
                         if(groupInterfaceArray != 
                                     null
                                 )
                         
                                     {
-                                    this.hashtable.put(Group.ID, groupInterfaceArray)
+                                    this.hashtable.put(Group.ID, groupInterfaceArray);
+    
 
                                     }
                                 
@@ -159,7 +167,8 @@ this.hashtable.put(DirectionFactory.getInstance()!.NAME, DirectionFactory.getIns
     var index: number = this.getIndexAt(rtsPlayerLayerInterface, point)!;
         
         
-
+;
+    
 
                         if(index < 0)
                         
@@ -177,12 +186,14 @@ this.hashtable.put(DirectionFactory.getInstance()!.NAME, DirectionFactory.getIns
     var scrollSelectionForm: ScrollSelectionForm = rtsPlayerLayerInterface!.getCurrentScrollSelectionForm()!;
         
         
-
+;
+    
 
     var item: CustomItem = scrollSelectionForm!.get(index)!;
         
         
-
+;
+    
 
                         if(item == 
                                     null
@@ -198,7 +209,8 @@ this.hashtable.put(DirectionFactory.getInstance()!.NAME, DirectionFactory.getIns
 
                                     }
                                 
-this.process(associatedRtsLayer, rtsPlayerLayerInterface, layerManager, item, index)
+this.process(associatedRtsLayer, rtsPlayerLayerInterface, layerManager, item, index);
+    
 }
 
 
@@ -206,7 +218,8 @@ this.process(associatedRtsLayer, rtsPlayerLayerInterface, layerManager, item, in
             
     public process(layerManager: AllBinaryLayerManager){
     //var layerManager = layerManager
-this.setAllBinaryGameLayerManager(layerManager as AllBinaryGameLayerManager)
+this.setAllBinaryGameLayerManager(layerManager as AllBinaryGameLayerManager);
+    
 }
 
 
@@ -232,7 +245,8 @@ this.setAllBinaryGameLayerManager(layerManager as AllBinaryGameLayerManager)
     var index: number = this.getIndexAt(rtsPlayerLayerInterface, point)!;
         
         
-
+;
+    
 
                         if(index < 0)
                         
@@ -250,12 +264,14 @@ this.setAllBinaryGameLayerManager(layerManager as AllBinaryGameLayerManager)
     var scrollSelectionForm: ScrollSelectionForm = rtsPlayerLayerInterface!.getCurrentScrollSelectionForm()!;
         
         
-
+;
+    
 
     var item: CustomItem = scrollSelectionForm!.get(index)!;
         
         
-
+;
+    
 
                         if(item == 
                                     null
@@ -271,7 +287,8 @@ this.setAllBinaryGameLayerManager(layerManager as AllBinaryGameLayerManager)
 
                                     }
                                 
-this.processSticky(associatedRtsLayer, rtsPlayerLayerInterface, layerManager, item, index)
+this.processSticky(associatedRtsLayer, rtsPlayerLayerInterface, layerManager, item, index);
+    
 
 
 
@@ -298,17 +315,21 @@ var index = index
     //var rtsPlayerLayerInterface = rtsPlayerLayerInterface
     //var point = point
 logUtil!.put(StringMaker().
-                            append("Point: ")!.append(StringUtil.getInstance()!.toString(point))!.toString(), this, "getItemAt")
+                            append("Point: ")!.append(StringUtil.getInstance()!.toString(point))!.toString(), this, "getItemAt");
+    
 
     var scrollSelectionForm: ScrollSelectionForm = rtsPlayerLayerInterface!.getCurrentScrollSelectionForm()!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return scrollSelectionForm!.getSelectedItem(point);
+
+                        ;
     
 }
 
@@ -319,17 +340,21 @@ logUtil!.put(StringMaker().
     //var rtsPlayerLayerInterface = rtsPlayerLayerInterface
     //var point = point
 logUtil!.put(StringMaker().
-                            append("Point: ")!.append(StringUtil.getInstance()!.toString(point))!.toString(), this, "getItemAt")
+                            append("Point: ")!.append(StringUtil.getInstance()!.toString(point))!.toString(), this, "getItemAt");
+    
 
     var scrollSelectionForm: ScrollSelectionForm = rtsPlayerLayerInterface!.getCurrentScrollSelectionForm()!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return scrollSelectionForm!.getSelectedIndex(point);
+
+                        ;
     
 }
 
@@ -344,29 +369,35 @@ logUtil!.put(StringMaker().
     var item: LayerInterfaceFactoryImageItem = aItem as LayerInterfaceFactoryImageItem;
         
         
-
+;
+    
 
     var layerInterfaceFactoryInterface: LayerInterfaceFactoryInterface = item.getLayerInterfaceFactoryInterface()!;
         
         
-
+;
+    
 
     var cellPoint: GPoint = geographicMapCellPosition!.getPoint()!;
         
         
-
+;
+    
 
                         if(layerInterfaceFactoryInterface != 
                                     null
                                 )
                         
                                     {
-                                    hashtable.put(AllBinaryGameLayerManager.ID, layerManager)
+                                    hashtable.put(AllBinaryGameLayerManager.ID, layerManager);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return layerInterfaceFactoryInterface!.getInstance(getHashtable(), cellPoint!.getX(), cellPoint!.getY(), cellPoint!.getZ()) as RTSLayer;
+                        return layerInterfaceFactoryInterface!.getInstance(getHashtable(), cellPoint!.getX(), cellPoint!.getY(), cellPoint!.getZ());
+
+                         as RTSLayer;
     
 
                                     }
@@ -393,8 +424,10 @@ logUtil!.put(StringMaker().
     public setSelectedGeographicCellPosition(selectedGeographicCellPosition: GeographicMapCellPosition){
 var selectedGeographicCellPosition = selectedGeographicCellPosition
 logUtil!.put(StringMaker().
-                            append("Selected GeographicMapCellPosition: ")!.append(selectedGeographicCellPosition!.toString())!.toString(), this, "setSelectedGeographicCellPosition")
-this.selectedGeographicCellPosition= selectedGeographicCellPosition
+                            append("Selected GeographicMapCellPosition: ")!.append(selectedGeographicCellPosition!.toString())!.toString(), this, "setSelectedGeographicCellPosition");
+    
+this.selectedGeographicCellPosition= selectedGeographicCellPosition;
+    
 }
 
 
@@ -410,7 +443,8 @@ this.selectedGeographicCellPosition= selectedGeographicCellPosition
 
     public setStickyItemSelected(stickyItemSelected: boolean){
 var stickyItemSelected = stickyItemSelected
-this.stickyItemSelected= stickyItemSelected
+this.stickyItemSelected= stickyItemSelected;
+    
 }
 
 
@@ -426,7 +460,8 @@ this.stickyItemSelected= stickyItemSelected
 
     public setSelectedStickyItem(selectedStickyItem: CustomItem){
 var selectedStickyItem = selectedStickyItem
-this.selectedStickyItem= selectedStickyItem
+this.selectedStickyItem= selectedStickyItem;
+    
 }
 
 
@@ -442,11 +477,12 @@ this.selectedStickyItem= selectedStickyItem
 
     public setSelectedStickyItemIndex(selectedStickyItemIndex: number){
 var selectedStickyItemIndex = selectedStickyItemIndex
-this.selectedStickyItemIndex= selectedStickyItemIndex
+this.selectedStickyItemIndex= selectedStickyItemIndex;
+    
 }
 
 
-    public getHashtable(): Hashtable<Any, Any>{
+    public getHashtable(): Hashtable<any, any>{
 
 
 

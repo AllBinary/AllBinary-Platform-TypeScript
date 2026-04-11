@@ -18,7 +18,10 @@
 
 
 
-import { Hashtable } from "../../../../../java/util/Hashtable.js";
+            import Hashtable from "@ohos.util.HashMap";
+        
+
+//import { Hashtable } from "../../../../../java/util/Hashtable.js";
 
     
 import { Animation } from "../../../../../org/allbinary/animation/Animation.js";
@@ -62,15 +65,18 @@ var animationInterface = animationInterface
     var list: BasicArrayList = CountedPickedUpLayerInterfaceFactoryPool.getInstance()!.getList()!;
         
         
-
-this.id= list.size()
-list.add(this)
+;
+    
+this.id= list.size();
+    
+list.add(this);
+    
 }
 
 
                 //@Throws(Error::class)
             
-    public getInstance(hashtable: Hashtable<Any, Any>, x: number, y: number, z: number): AllBinaryLayer{
+    public getInstance(hashtable: Hashtable<any, any>, x: number, y: number, z: number): AllBinaryLayer{
 var hashtable = hashtable
 var x = x
 var y = y

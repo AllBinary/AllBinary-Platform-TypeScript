@@ -24,8 +24,10 @@ protected constructor (resource: string, hint: string){
             super();
             var resource = resource
 var hint = hint
-this.RESOURCE= resource
-this.HINT= hint
+this.RESOURCE= resource;
+    
+this.HINT= hint;
+    
 }
 
 

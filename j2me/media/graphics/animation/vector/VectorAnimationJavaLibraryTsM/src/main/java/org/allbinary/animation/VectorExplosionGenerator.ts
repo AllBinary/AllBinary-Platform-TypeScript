@@ -80,12 +80,14 @@ var type = type
     var size: number = list.size()!;
         
         
+;
+    
 
-
-    var points: IntArray[] = Array(size) { IntArray(2) };
+    var points: number[][] = new Array(size) [2];
         
         
-
+;
+    
 
 
 
@@ -100,9 +102,12 @@ index < size; index++)
     var point: GPoint = list.objectArray[index]! as GPoint;
         
         
-
-points[index]![0]= point.getX()
-points[index]![1]= point.getY()
+;
+    
+points[index]![0]= point.getX();
+    
+points[index]![1]= point.getY();
+    
 }
 
 
@@ -110,13 +115,15 @@ points[index]![1]= point.getY()
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return getInstance(list, points, howMuch, type);
+
+                        ;
     
 }
 
 
                 //@Throws(Error::class)
             
-    public getInstance(points: IntArray[], howMuch: number, type: VectorExplosionType): IntArray[][]{
+    public getInstance(points: number[][], howMuch: number, type: VectorExplosionType): number[][][]{
 var points = points
 var howMuch = howMuch
 var type = type
@@ -124,17 +131,20 @@ var type = type
     var pointsBasicArrayList: BasicArrayList = getInstance(points, howMuch, type, true)!;
         
         
-
+;
+    
 
     var tempBasicArrayList: BasicArrayList = pointsBasicArrayList!.objectArray[0]! as BasicArrayList;
         
         
+;
+    
 
-
-    var newPoints: IntArray[][] = vectorAnimationUtil!.toAnimationArrayFromBasicArrayListOfPointBasicArrayList(pointsBasicArrayList, tempBasicArrayList!.size())!;
+    var newPoints: number[][][] = vectorAnimationUtil!.toAnimationArrayFromBasicArrayListOfPointBasicArrayList(pointsBasicArrayList, tempBasicArrayList!.size())!;
         
         
-
+;
+    
 
 
 
@@ -146,7 +156,7 @@ var type = type
 
                 //@Throws(Error::class)
             
-    public getInstance(points: IntArray[], howMuch: number, type: VectorExplosionType, startFrame: boolean): BasicArrayList{
+    public getInstance(points: number[][], howMuch: number, type: VectorExplosionType, startFrame: boolean): BasicArrayList{
 var points = points
 var howMuch = howMuch
 var type = type
@@ -157,13 +167,16 @@ var startFrame = startFrame
     var pointsBasicArrayList: BasicArrayList = new BasicArrayList(howMuch);
         
         
-
-pointsBasicArrayList!.add(createPointsBasicArrayList(points))
+;
+    
+pointsBasicArrayList!.add(createPointsBasicArrayList(points));
+    
 
     var frameIndex: number = 0;
         
         
-
+;
+    
 
         while(frameIndex < howMuch)
         {
@@ -171,21 +184,26 @@ pointsBasicArrayList!.add(createPointsBasicArrayList(points))
     var tempBasicArrayList: BasicArrayList = pointsBasicArrayList!.objectArray[frameIndex]! as BasicArrayList;
         
         
-
+;
+    
 
     var pointBasicArrayList: BasicArrayList = getInstance(tempBasicArrayList, points, howMuch, type)!;
         
         
-
-pointsBasicArrayList!.add(pointBasicArrayList)
-frameIndex++
+;
+    
+pointsBasicArrayList!.add(pointBasicArrayList);
+    
+frameIndex++;
+    
 }
 
 
                         if(!startFrame)
                         
                                     {
-                                    pointsBasicArrayList!.remove(0)
+                                    pointsBasicArrayList!.remove(0);
+    
 
                                     }
                                 
@@ -195,7 +213,9 @@ frameIndex++
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return pointsBasicArrayList;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
 
@@ -212,7 +232,7 @@ frameIndex++
 
                 //@Throws(Error::class)
             
-    getInstance(tempBasicArrayList: BasicArrayList, points: IntArray[], howMuch: number, type: VectorExplosionType): BasicArrayList{
+    getInstance(tempBasicArrayList: BasicArrayList, points: number[][], howMuch: number, type: VectorExplosionType): BasicArrayList{
 var tempBasicArrayList = tempBasicArrayList
 var points = points
 var howMuch = howMuch
@@ -221,12 +241,14 @@ var type = type
     var index: number = 0;
         
         
-
+;
+    
 
     var pointBasicArrayList: BasicArrayList = new BasicArrayList();
         
         
-
+;
+    
 
         while(index < points.length)
         {
@@ -234,12 +256,15 @@ var type = type
     var sectionBasicArrayList: BasicArrayList = new BasicArrayList();
         
         
-
+;
+    
 
         while(points[index]![0] != 1000)
         {
-sectionBasicArrayList!.add(tempBasicArrayList!.objectArray[index]!)
-index++
+sectionBasicArrayList!.add(tempBasicArrayList!.objectArray[index]!);
+    
+index++;
+    
 
                         if(index >= points.length)
                         
@@ -252,12 +277,14 @@ index++
                                 
 }
 
-sectionBasicArrayList= RandomTranslation.getInstance(sectionBasicArrayList, howMuch)
+sectionBasicArrayList= RandomTranslation.getInstance(sectionBasicArrayList, howMuch);
+    
 
                         if(type == ROTATION)
                         
                                     {
-                                    sectionBasicArrayList= randomRotationFactory!.getInstance(sectionBasicArrayList, howMuch)
+                                    sectionBasicArrayList= randomRotationFactory!.getInstance(sectionBasicArrayList, howMuch);
+    
 
                                     }
                                 
@@ -265,7 +292,8 @@ sectionBasicArrayList= RandomTranslation.getInstance(sectionBasicArrayList, howM
     var size: number = sectionBasicArrayList!.size()!;
         
         
-
+;
+    
 
 
 
@@ -276,7 +304,8 @@ sectionBasicArrayList= RandomTranslation.getInstance(sectionBasicArrayList, howM
         
 index2 < size; index2++)
         {
-pointBasicArrayList!.add(sectionBasicArrayList!.objectArray[index2]!)
+pointBasicArrayList!.add(sectionBasicArrayList!.objectArray[index2]!);
+    
 }
 
 
@@ -293,8 +322,10 @@ pointBasicArrayList!.add(sectionBasicArrayList!.objectArray[index2]!)
                         if(points[index]![0] == 1000)
                         
                                     {
-                                    pointBasicArrayList!.add(tempBasicArrayList!.objectArray[index]!)
-index++
+                                    pointBasicArrayList!.add(tempBasicArrayList!.objectArray[index]!);
+    
+index++;
+    
 
                                     }
                                 
@@ -311,7 +342,7 @@ index++
 
                 //@Throws(Error::class)
             
-    createPointsBasicArrayList(points: IntArray[]): BasicArrayList{
+    createPointsBasicArrayList(points: number[][]): BasicArrayList{
 var points = points
 
                         if(points.length == 0)
@@ -328,7 +359,8 @@ var points = points
     var firstPointBasicArrayList: BasicArrayList = new BasicArrayList(points.length);
         
         
-
+;
+    
 
 
 
@@ -339,7 +371,8 @@ var points = points
         
 index < points.length; index++)
         {
-firstPointBasicArrayList!.add(PointFactory.getInstance()!.getInstance(points[index]![0]!, points[index]![1]!))
+firstPointBasicArrayList!.add(PointFactory.getInstance()!.getInstance(points[index]![0]!, points[index]![1]!));
+    
 }
 
 

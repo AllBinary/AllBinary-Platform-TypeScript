@@ -60,19 +60,22 @@ export class WeaponLayerArrayLayerCircularStaticPool
                                                             ;
         
         
-
+;
+    
 
     var TWO_WEAPONLAYER_ARRAY: any = {}[][] = arrayOfNulls<Array<Any?>>(MAX)
                                                             ;
         
         
-
+;
+    
 
     var THREE_WEAPONLAYER_ARRAY: any = {}[][] = arrayOfNulls<Array<Any?>>(MAX)
                                                             ;
         
         
-
+;
+    
 
 
 
@@ -83,14 +86,20 @@ export class WeaponLayerArrayLayerCircularStaticPool
         
 index < MAX; index++)
         {
-WEAPONLAYER_ARRAY[index]= new Array(1)
-TWO_WEAPONLAYER_ARRAY[index]= new Array(2)
-THREE_WEAPONLAYER_ARRAY[index]= new Array(3)
+WEAPONLAYER_ARRAY[index]= new Array(1);
+    
+TWO_WEAPONLAYER_ARRAY[index]= new Array(2);
+    
+THREE_WEAPONLAYER_ARRAY[index]= new Array(3);
+    
 }
 
-ALL_WEAPONLAYER_ARRAY[1]= WEAPONLAYER_ARRAY
-ALL_WEAPONLAYER_ARRAY[2]= TWO_WEAPONLAYER_ARRAY
-ALL_WEAPONLAYER_ARRAY[3]= THREE_WEAPONLAYER_ARRAY
+ALL_WEAPONLAYER_ARRAY[1]= WEAPONLAYER_ARRAY;
+    
+ALL_WEAPONLAYER_ARRAY[2]= TWO_WEAPONLAYER_ARRAY;
+    
+ALL_WEAPONLAYER_ARRAY[3]= THREE_WEAPONLAYER_ARRAY;
+    
 }
 
 
@@ -103,8 +112,10 @@ var size = size
     var weaponLayerArray: WeaponLayer[] = ALL_WEAPONLAYER_ARRAY[size]![circularIndexUtil!.getIndex()]! as Array<WeaponLayer?>;
         
         
-
-circularIndexUtil!.next()
+;
+    
+circularIndexUtil!.next();
+    
 
 
 

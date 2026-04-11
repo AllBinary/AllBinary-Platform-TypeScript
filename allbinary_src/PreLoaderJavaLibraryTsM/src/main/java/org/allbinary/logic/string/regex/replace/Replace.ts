@@ -56,35 +56,49 @@ var args = args
     var stringUtil: StringUtil = StringUtil.getInstance()!;
         
         
-
+;
+    
 
     var appUrlGlobals: AppUrlGlobals = new AppUrlGlobals();
         
         
-
-appUrlGlobals!.setWebappPath("G:/mnt/bc/mydev/work/allbinary_src/ToolsJavaLibrary/tools")
-URLGLOBALS.init(appUrlGlobals)
+;
+    
+appUrlGlobals!.setWebappPath("G:/mnt/bc/mydev/work/allbinary_src/ToolsJavaLibrary/tools");
+    
+URLGLOBALS.init(appUrlGlobals);
+    
 
     var testString: string = "\"super gun\" big tank \"goodgunriflegun";
         
         
-
+;
+    
 
     var replace: Replace = new Replace("gun", "abcdefghijklmnopqrstuxwxyzabcdefghijklmnopqrstuxwxyz");
         
         
-
-System.out.println("Old String: " +testString)
-testString= replace.all(testString)
-System.out.println("New String: " +testString)
+;
+    
+System.out.println("Old String: " +testString);
+    
+testString= replace.all(testString);
+    
+System.out.println("New String: " +testString);
+    
 
     var replaceCat: Replace = new Replace("abcdefghijklmnopqrstuxwxyzabcdefghijklmnopqrstuxwxyz", stringUtil!.EMPTY_STRING);
         
         
+;
+    
+testString= replaceCat!.all(testString);
+    
+System.out.println("New String: " +testString);
+    
 
-testString= replaceCat!.all(testString)
-System.out.println("New String: " +testString)
-} catch(e: Exception)
+                //: 
+} catch(e) 
             {
 }
 
@@ -111,13 +125,14 @@ System.out.println("New String: " +testString)
         
         
 
-    private readonly hashMap: HashMap<Any, Any>
+    private readonly hashMap: HashMap<any, any>
 public constructor (key: string, value: string){
 
             super();
                 //var key = key
     //var value = value
-hashMap= HashMap<Any, Any>()
+hashMap= HashMap<any, any>();
+    
 this.hashMap!.put(
                                                 [
                                                     key;
@@ -128,12 +143,14 @@ this.hashMap!.put(
                                                     value;
         
         
-                                                ])
+                                                ]);
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.REPLACE))
                         
                                     {
-                                    logUtil!.put(REPLACERS_ +this.hashMap!.toString(), this, commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put(REPLACERS_ +this.hashMap!.toString(), this, commonStrings!.CONSTRUCTOR);
+    
 
                                     }
                                 
@@ -144,28 +161,33 @@ public constructor (keys: string[], values: string[]){
             super();
                 //var keys = keys
     //var values = values
-hashMap= HashMap<Any, Any>()
-this.hashMap!.put(keys, values)
+hashMap= HashMap<any, any>();
+    
+this.hashMap!.put(keys, values);
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.REPLACE))
                         
                                     {
-                                    logUtil!.put(REPLACERS_ +this.hashMap!.toString(), this, commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put(REPLACERS_ +this.hashMap!.toString(), this, commonStrings!.CONSTRUCTOR);
+    
 
                                     }
                                 
 }
 
-public constructor (hashMap: HashMap<Any, Any>){
+public constructor (hashMap: HashMap<any, any>){
 
             super();
             var hashMap = hashMap
-this.hashMap= hashMap
+this.hashMap= hashMap;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.REPLACE_INFO))
                         
                                     {
-                                    logUtil!.put(REPLACERS_ +this.hashMap!.toString(), this, commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put(REPLACERS_ +this.hashMap!.toString(), this, commonStrings!.CONSTRUCTOR);
+    
 
                                     }
                                 
@@ -179,6 +201,8 @@ var replace = replace
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.upTo(replace, Integer.MIN_VALUE);
+
+                        ;
     
 }
 
@@ -190,7 +214,8 @@ var total = total
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.REPLACE))
                         
                                     {
-                                    logUtil!.put(REPLACERS_ +this.hashMap!.toString(), this, ALL)
+                                    logUtil!.put(REPLACERS_ +this.hashMap!.toString(), this, ALL);
+    
 
                                     }
                                 
@@ -198,34 +223,41 @@ var total = total
     var newStringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
     var totalNumberOfReplaces: number = 0;
         
         
-
+;
+    
 
     var keySet: Set = hashMap!.keys!;
         
         
-
+;
+    
 
     var keys: string[]
-
+;
+    
 
     var values: string[]
+;
+    
 
-
-    var keyArray: any = {}[] = keySet!.toTypedArray()!;
+    var keyArray: any[] = keySet!.toTypedArray()!;
         
         
-
+;
+    
 
     var size: number = keyArray!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -236,18 +268,24 @@ var total = total
         
 index2 < size; index2++)
         {
-keys= keyArray[index2]! as Array<String?>
-values= hashMap!.get(keys as Object) as Array<String?>
+keys= keyArray[index2]! as Array<String?>;
+    
+values= hashMap!.get(keys as Object);
+
+                         as Array<String?>;
+    
 
     var foundTotal: number = 0;
         
         
-
+;
+    
 
     var index: number = 0;
         
         
-
+;
+    
 
         while(index < replace.length)
         {
@@ -255,17 +293,20 @@ values= hashMap!.get(keys as Object) as Array<String?>
     var begin: number = replace.indexOf(keys[0]!, index)!;
         
         
-
+;
+    
 
                         if(begin !=  -1)
                         
                                     {
-                                    foundTotal++
+                                    foundTotal++;
+    
 
                         if(foundTotal % 100 == 0)
                         
                                     {
-                                    System.out.println(FOUND_KEY +foundTotal)
+                                    System.out.println(FOUND_KEY +foundTotal);
+    
 
                                     }
                                 
@@ -273,13 +314,20 @@ values= hashMap!.get(keys as Object) as Array<String?>
     var end: number = begin +keys[0]!.length();
         
         
-
-newStringBuffer!.delete(0, newStringBuffer!.length())
-newStringBuffer!.append(replace.substring(0, begin))
-newStringBuffer!.append(values[0]!)
-index= newStringBuffer!.length()
-newStringBuffer!.append(replace.substring(end, replace.length))
-replace= newStringBuffer!.toString()
+;
+    
+newStringBuffer!.delete(0, newStringBuffer!.length());
+    
+newStringBuffer!.append(replace.substring(0, begin));
+    
+newStringBuffer!.append(values[0]!);
+    
+index= newStringBuffer!.length();
+    
+newStringBuffer!.append(replace.substring(end, replace.length));
+    
+replace= newStringBuffer!.toString();
+    
 
                         if(keys.length > 1)
                         
@@ -288,7 +336,8 @@ replace= newStringBuffer!.toString()
     var begin2: number = replace.indexOf(keys[1]!, index)!;
         
         
-
+;
+    
 
                         if(begin2 !=  -1)
                         
@@ -297,20 +346,28 @@ replace= newStringBuffer!.toString()
     var end2: number = begin2 +keys[1]!.length();
         
         
-
-newStringBuffer!.delete(0, newStringBuffer!.length())
-newStringBuffer!.append(replace.substring(0, begin2))
-newStringBuffer!.append(values[1]!)
-index= newStringBuffer!.length()
-newStringBuffer!.append(replace.substring(end2, replace.length))
-replace= newStringBuffer!.toString()
+;
+    
+newStringBuffer!.delete(0, newStringBuffer!.length());
+    
+newStringBuffer!.append(replace.substring(0, begin2));
+    
+newStringBuffer!.append(values[1]!);
+    
+index= newStringBuffer!.length();
+    
+newStringBuffer!.append(replace.substring(end2, replace.length));
+    
+replace= newStringBuffer!.toString();
+    
 
                                     }
                                 
 
                                     }
                                 
-totalNumberOfReplaces++
+totalNumberOfReplaces++;
+    
 
                         if(total != Integer.MIN_VALUE && totalNumberOfReplaces >= total)
                         
@@ -339,7 +396,8 @@ totalNumberOfReplaces++
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.REPLACE))
                         
                                     {
-                                    logUtil!.put("Total Number Of Replaces: " +totalNumberOfReplaces, this, ALL)
+                                    logUtil!.put("Total Number Of Replaces: " +totalNumberOfReplaces, this, ALL);
+    
 
                                     }
                                 
@@ -358,7 +416,8 @@ var replace = replace
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.REPLACE))
                         
                                     {
-                                    logUtil!.put(REPLACERS_ +this.hashMap!.toString(), this, ALL)
+                                    logUtil!.put(REPLACERS_ +this.hashMap!.toString(), this, ALL);
+    
 
                                     }
                                 
@@ -366,34 +425,41 @@ var replace = replace
     var newStringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
     var totalNumberOfReplaces: number = 0;
         
         
-
+;
+    
 
     var keySet: Set = hashMap!.keys!;
         
         
-
+;
+    
 
     var key: string
-
+;
+    
 
     var value: string
+;
+    
 
-
-    var keyArray: any = {}[] = keySet!.toTypedArray()!;
+    var keyArray: any[] = keySet!.toTypedArray()!;
         
         
-
+;
+    
 
     var size: number = keyArray!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -404,41 +470,55 @@ var replace = replace
         
 index2 < size; index2++)
         {
-key= keyArray[index2]! as String
-value= hashMap!.get(key as Object) as String
+key= keyArray[index2]! as String;
+    
+value= hashMap!.get(key as Object);
+
+                         as String;
+    
 
     var index: number = 0;
         
         
-
+;
+    
 
         while(index < replace.length)
         {
-newStringBuffer!.delete(0, newStringBuffer!.length())
+newStringBuffer!.delete(0, newStringBuffer!.length());
+    
 
     var begin: number = replace.indexOf(key, index)!;
         
         
-
+;
+    
 
                         if(begin !=  -1)
                         
                                     {
-                                    System.out.println(FOUND_KEY)
+                                    System.out.println(FOUND_KEY);
+    
 
     var end: number = replace.indexOf('\n', begin +key.length) +1;
         
         
-
+;
+    
 
                         if(end >= 0)
                         
                                     {
-                                    newStringBuffer!.append(replace.substring(0, begin))
-index= newStringBuffer!.length()
-newStringBuffer!.append(replace.substring(end, replace.length))
-replace= newStringBuffer!.toString()
-totalNumberOfReplaces++
+                                    newStringBuffer!.append(replace.substring(0, begin));
+    
+index= newStringBuffer!.length();
+    
+newStringBuffer!.append(replace.substring(end, replace.length));
+    
+replace= newStringBuffer!.toString();
+    
+totalNumberOfReplaces++;
+    
 
                                     }
                                 
@@ -460,7 +540,8 @@ totalNumberOfReplaces++
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.REPLACE))
                         
                                     {
-                                    logUtil!.put("Total Number Of Replaces: " +totalNumberOfReplaces, this, ALL)
+                                    logUtil!.put("Total Number Of Replaces: " +totalNumberOfReplaces, this, ALL);
+    
 
                                     }
                                 

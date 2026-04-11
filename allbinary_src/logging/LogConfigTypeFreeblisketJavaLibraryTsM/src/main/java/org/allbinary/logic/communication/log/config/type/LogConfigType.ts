@@ -46,9 +46,12 @@ public constructor (name: string, description: string){
             super();
             var name = name
 var description = description
-this.name= name
-this.description= description
-availableLogConfigTypes!.add(this)
+this.name= name;
+    
+this.description= description;
+    
+availableLogConfigTypes!.add(this);
+    
 }
 
 
@@ -74,13 +77,15 @@ availableLogConfigTypes!.add(this)
 
     public setName(value: string){
 var value = value
-this.name= value
+this.name= value;
+    
 }
 
 
     public setDescription(value: string){
 var value = value
-this.description= value
+this.description= value;
+    
 }
 
 

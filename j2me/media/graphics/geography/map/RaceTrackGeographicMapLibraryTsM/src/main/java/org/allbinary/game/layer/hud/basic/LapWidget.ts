@@ -72,19 +72,27 @@ var lapInfo = lapInfo
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.delete(0, stringBuffer!.length())
-stringBuffer!.append(LAP_STR)
-stringBuffer!.appendint(lapInfo!.getCurrentLap())
-stringBuffer!.append(OF_STR)
-stringBuffer!.appendint(lapInfo!.getTotalLaps())
-this.string= stringBuffer!.toString()
+;
+    
+stringBuffer!.delete(0, stringBuffer!.length());
+    
+stringBuffer!.append(LAP_STR);
+    
+stringBuffer!.appendint(lapInfo!.getCurrentLap());
+    
+stringBuffer!.append(OF_STR);
+    
+stringBuffer!.appendint(lapInfo!.getTotalLaps());
+    
+this.string= stringBuffer!.toString();
+    
 }
 
 
     public paint(graphics: Graphics){
 var graphics = graphics
-super.paint(graphics, this.string)
+super.paint(graphics, this.string);
+    
 }
 
 

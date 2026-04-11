@@ -27,13 +27,14 @@ export class PrimitiveArrayToString
          {
         
 
-    public static toString(floats: FloatArray): string{
+    public static toString(floats: number[]): string{
 var floats = floats
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
 
 
@@ -44,7 +45,8 @@ var floats = floats
         
 index < floats.length; index++)
         {
-stringBuffer!.appendfloat(floats[index]!)
+stringBuffer!.appendfloat(floats[index]!);
+    
 }
 
 
@@ -52,6 +54,8 @@ stringBuffer!.appendfloat(floats[index]!)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

@@ -49,10 +49,14 @@ public constructor (mainDemoStatePaintable: Paintable, ownershipPaintable: Paint
             var mainDemoStatePaintable = mainDemoStatePaintable
 var ownershipPaintable = ownershipPaintable
 var helpPaintableInterface = helpPaintableInterface
-this.mainDemoStatePaintable= mainDemoStatePaintable
-this.setCurrentStatePaintable(NullPaintable.getInstance())
-this.ownershipPaintable= ownershipPaintable
-this.helpPaintableInterface= helpPaintableInterface
+this.mainDemoStatePaintable= mainDemoStatePaintable;
+    
+this.setCurrentStatePaintable(NullPaintable.getInstance());
+    
+this.ownershipPaintable= ownershipPaintable;
+    
+this.helpPaintableInterface= helpPaintableInterface;
+    
 }
 
 
@@ -62,7 +66,8 @@ var state = state
                         if(state == 0)
                         
                                     {
-                                    this.setCurrentStatePaintable(this.getMainDemoStatePaintable())
+                                    this.setCurrentStatePaintable(this.getMainDemoStatePaintable());
+    
 
                                     }
                                 
@@ -70,12 +75,14 @@ var state = state
                         if(state == 1)
                         
                                     {
-                                    this.setCurrentStatePaintable(this.helpPaintableInterface)
+                                    this.setCurrentStatePaintable(this.helpPaintableInterface);
+    
 
                                     }
                                 
                         else {
-                            this.setCurrentStatePaintable(this.ownershipPaintable)
+                            this.setCurrentStatePaintable(this.ownershipPaintable);
+    
 
                         }
                             
@@ -84,7 +91,8 @@ var state = state
 
     public paint(graphics: Graphics){
 var graphics = graphics
-this.getCurrentStatePaintable()!.paint(graphics)
+this.getCurrentStatePaintable()!.paint(graphics);
+    
 }
 
 
@@ -100,7 +108,8 @@ this.getCurrentStatePaintable()!.paint(graphics)
 
     setCurrentStatePaintable(currentStatePaintable: Paintable){
 var currentStatePaintable = currentStatePaintable
-this.currentStatePaintable= currentStatePaintable
+this.currentStatePaintable= currentStatePaintable;
+    
 }
 
 

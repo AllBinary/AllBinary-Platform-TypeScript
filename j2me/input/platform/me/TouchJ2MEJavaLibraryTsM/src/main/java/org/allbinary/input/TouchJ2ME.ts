@@ -60,8 +60,10 @@ public constructor (){
     var motionGesturesHandler: BasicMotionGesturesHandler = motionRecognizer!.getMotionGestureRecognizer()!.getMotionGesturesHandler()!;
         
         
-
-motionGesturesHandler!.addListener(GameMotionGestureListener(MotionGestureReceiveInterfaceFactory.getInstance()))
+;
+    
+motionGesturesHandler!.addListener(GameMotionGestureListener(MotionGestureReceiveInterfaceFactory.getInstance()));
+    
 }
 
 
@@ -70,15 +72,20 @@ var x = x
 var y = y
 
         try {
-            motionRecognizer!.processDraggedMotionEvent(x, y, DEVICE_ID, 0)
-} catch(e: Exception)
+            motionRecognizer!.processDraggedMotionEvent(x, y, DEVICE_ID, 0);
+    
+
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, "pointerDragged", e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, "pointerDragged", e);
+    
 }
 
 }
@@ -89,15 +96,20 @@ var x = x
 var y = y
 
         try {
-            motionRecognizer!.processStartMotionEvent(x, y, DEVICE_ID, 0)
-} catch(e: Exception)
+            motionRecognizer!.processStartMotionEvent(x, y, DEVICE_ID, 0);
+    
+
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, "pointerPressed", e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, "pointerPressed", e);
+    
 }
 
 }
@@ -108,15 +120,20 @@ var x = x
 var y = y
 
         try {
-            motionRecognizer!.processEndMotionEvent(x, y, DEVICE_ID, 0)
-} catch(e: Exception)
+            motionRecognizer!.processEndMotionEvent(x, y, DEVICE_ID, 0);
+    
+
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, "pointerReleased", e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, "pointerReleased", e);
+    
 }
 
 }

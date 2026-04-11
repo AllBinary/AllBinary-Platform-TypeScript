@@ -35,13 +35,16 @@ export class AdConfiguration
     public readonly LEADBOLT: string
 
     public readonly ADMOB: string
-public constructor (advertIdArray: any = {}[]){
+public constructor (advertIdArray: any[]){
 
             super();
             var advertIdArray = advertIdArray
-this.INNERACTIVE= advertIdArray[0]! as String
-this.ADMOB= advertIdArray[1]! as String
-this.LEADBOLT= advertIdArray[2]! as String
+this.INNERACTIVE= advertIdArray[0]! as String;
+    
+this.ADMOB= advertIdArray[1]! as String;
+    
+this.LEADBOLT= advertIdArray[2]! as String;
+    
 }
 
 
@@ -50,7 +53,7 @@ this.LEADBOLT= advertIdArray[2]! as String
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new Array(0);
+                        return [];
     
 }
 

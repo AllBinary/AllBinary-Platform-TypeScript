@@ -42,8 +42,10 @@ public constructor (bufferedImage: BufferedImage, frame: Long){
             super();
             var bufferedImage = bufferedImage
 var frame = frame
-this.frame= frame
-this.setBufferedImage(bufferedImage)
+this.frame= frame;
+    
+this.setBufferedImage(bufferedImage);
+    
 }
 
 
@@ -69,7 +71,8 @@ this.setBufferedImage(bufferedImage)
 
     setBufferedImage(bufferedImage: BufferedImage){
 var bufferedImage = bufferedImage
-this.bufferedImage= bufferedImage
+this.bufferedImage= bufferedImage;
+    
 }
 
 
@@ -85,7 +88,8 @@ this.bufferedImage= bufferedImage
 
     public setFrame(frame: Long){
 var frame = frame
-this.frame= frame
+this.frame= frame;
+    
 }
 
 
@@ -94,15 +98,21 @@ this.frame= frame
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(this::class.toString()!)
-stringBuffer!.append(" Frame: ")
-stringBuffer!.appendlong(this.getFrame())
+;
+    
+stringBuffer!.append(this.constructor.name.toString()!);
+    
+stringBuffer!.append(" Frame: ");
+    
+stringBuffer!.appendlong(this.getFrame());
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

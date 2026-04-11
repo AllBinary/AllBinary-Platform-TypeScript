@@ -73,7 +73,8 @@ private constructor (){
     var exception: any = {} = log.getThrowable()!;
         
         
-
+;
+    
 
                         if(exception == 
                                     null
@@ -93,18 +94,22 @@ private constructor (){
     var specialMessage: string = log.getSpecialMessage()!;
         
         
-
+;
+    
 
     var anyType: any = {} = log.getObject()!;
         
         
-
+;
+    
 
     var functionName: string = log.getFunctionName()!;
         
         
-
-put(specialMessage, anyType, functionName, exception)
+;
+    
+put(specialMessage, anyType, functionName, exception);
+    
 }
 
 
@@ -124,15 +129,16 @@ put(specialMessage, anyType, functionName, exception)
     var className: string = CommonStrings.getInstance()!.EMPTY;
         
         
+;
+    
 
-
-                        if(anyType!::class.toString()! != 
+                        if(anyType!.constructor.name.toString()! != 
                                     null
                                 )
                         
                                     {
-                                    className= anyType!::class.toString()!.toCharArray().concatToString()
-                                
+                                    className= anyType!.constructor.name.toString()!;
+    
 
                                     }
                                 
@@ -140,9 +146,12 @@ put(specialMessage, anyType, functionName, exception)
     var message: string = logFormatUtil!.get(className, functionName, specialMessage, exception)!;
         
         
-
-System.out.print(LOG_SUCCESS)
-System.out.println(message)
+;
+    
+System.out.print(LOG_SUCCESS);
+    
+System.out.println(message);
+    
 }
 
 

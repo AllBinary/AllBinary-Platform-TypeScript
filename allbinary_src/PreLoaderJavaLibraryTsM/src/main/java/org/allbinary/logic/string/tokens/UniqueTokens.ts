@@ -18,10 +18,13 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { HashSet } from "../../../../../java/util/HashSet.js";
 
     
-import { Vector } from "../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../java/util/Vector.js";
 
     
 import { AbPathData } from "../../../../../org/allbinary/logic/io/path/AbPathData.js";
@@ -51,30 +54,54 @@ export class UniqueTokens
 public constructor (){
 
             super();
-            specialCharacters!.add("!")
-specialCharacters!.add("@")
-specialCharacters!.add(CommonPhoneStrings.getInstance()!.POUND)
-specialCharacters!.add("$")
-specialCharacters!.add("%")
-specialCharacters!.add("^")
-specialCharacters!.add(CommonSeps.getInstance()!.AMPERSAND)
-specialCharacters!.add(CommonPhoneStrings.getInstance()!.STAR)
-specialCharacters!.add("(")
-specialCharacters!.add(")")
-specialCharacters!.add("-")
-specialCharacters!.add("_")
-specialCharacters!.add("+")
-specialCharacters!.add("=")
-specialCharacters!.add("\\")
-specialCharacters!.add("|")
-specialCharacters!.add(AbPathData.getInstance()!.EXTENSION_SEP)
-specialCharacters!.add(",")
-specialCharacters!.add("<")
-specialCharacters!.add(">")
-specialCharacters!.add("?")
-specialCharacters!.add("/")
-specialCharacters!.add("~")
-specialCharacters!.add("`")
+            specialCharacters!.add("!");
+    
+specialCharacters!.add("@");
+    
+specialCharacters!.add(CommonPhoneStrings.getInstance()!.POUND);
+    
+specialCharacters!.add("$");
+    
+specialCharacters!.add("%");
+    
+specialCharacters!.add("^");
+    
+specialCharacters!.add(CommonSeps.getInstance()!.AMPERSAND);
+    
+specialCharacters!.add(CommonPhoneStrings.getInstance()!.STAR);
+    
+specialCharacters!.add("(");
+    
+specialCharacters!.add(")");
+    
+specialCharacters!.add("-");
+    
+specialCharacters!.add("_");
+    
+specialCharacters!.add("+");
+    
+specialCharacters!.add("=");
+    
+specialCharacters!.add("\\");
+    
+specialCharacters!.add("|");
+    
+specialCharacters!.add(AbPathData.getInstance()!.EXTENSION_SEP);
+    
+specialCharacters!.add(",");
+    
+specialCharacters!.add("<");
+    
+specialCharacters!.add(">");
+    
+specialCharacters!.add("?");
+    
+specialCharacters!.add("/");
+    
+specialCharacters!.add("~");
+    
+specialCharacters!.add("`");
+    
 }
 
 
@@ -88,35 +115,43 @@ var stringVector = stringVector
     var hashSet: HashSet = new HashSet();
         
         
-
+;
+    
 
     var index: number = 0;
         
         
-
+;
+    
 
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
         
         
-
+;
+    
 
         while(index < stringVector!.length)
         {
 
-    var keywords: string = stringVector!.elementAt(index) as String;
-        
-        
+    var keywords: string = stringVector!.elementAt(index);
 
+                         as String;
+        
+        
+;
+    
 
     var tokenizer: Tokenizer = new Tokenizer(commonSeps!.COMMA);
         
         
-
+;
+    
 
     var keywordVector: BasicArrayList = tokenizer.getTokens(keywords, BasicArrayList())!;
         
         
-
+;
+    
 
 
 
@@ -128,16 +163,21 @@ var stringVector = stringVector
 forIndex < keywordVector!.size(); forIndex++)
         {
 
-    var cleanString: string = keywordVector!.get(forIndex) as String;
-        
-        
+    var cleanString: string = keywordVector!.get(forIndex);
 
-cleanString= cleanString!.trim()
+                         as String;
+        
+        
+;
+    
+cleanString= cleanString!.trim();
+    
 
                         if(cleanString!.indexOf('-') !=  -1)
                         cleanString= Replace("-", commonSeps!.SPACE).
                             all(cleanString)
-hashSet!.add(cleanString)
+hashSet!.add(cleanString);
+    
 
                         if(cleanString!.indexOf(' ') !=  -1)
                         
@@ -146,12 +186,14 @@ hashSet!.add(cleanString)
     var spaceTokenizer: Tokenizer = new Tokenizer(commonSeps!.SPACE);
         
         
-
+;
+    
 
     var subKeywordVector: BasicArrayList = spaceTokenizer!.getTokens(cleanString, BasicArrayList())!;
         
         
-
+;
+    
 
 
 
@@ -163,15 +205,23 @@ hashSet!.add(cleanString)
 spaceIndex < subKeywordVector!.size(); spaceIndex++)
         {
 
-    var subCleanString: string = subKeywordVector!.get(spaceIndex) as String;
+    var subCleanString: string = subKeywordVector!.get(spaceIndex);
+
+                         as String;
         
         
+;
+    
 
+                        if(!isSpecialCharacter(subCleanString);
 
-                        if(!isSpecialCharacter(subCleanString) && !numberOnly(subCleanString))
+                         && !numberOnly(subCleanString);
+
+                        )
                         
                                     {
-                                    hashSet!.add(subCleanString)
+                                    hashSet!.add(subCleanString);
+    
 
                                     }
                                 
@@ -182,7 +232,8 @@ spaceIndex < subKeywordVector!.size(); spaceIndex++)
                                 
 }
 
-index++
+index++;
+    
 }
 
 
@@ -191,7 +242,9 @@ index++
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return hashSet;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
 
@@ -206,14 +259,17 @@ index++
     //var subCleaningString = subCleaningString
 
         try {
-            Integer.parseInt(subCleaningString)
+            Integer.parseInt(subCleaningString);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return true;
     
-} catch(e: NumberFormatException)
+
+                //: 
+} catch(e) 
             {
 
 
@@ -239,7 +295,9 @@ var subCleaningString = subCleaningString
 index < specialCharacters!.length; index++)
         {
 
-                        if(subCleaningString!.compareTo(specialCharacters!.elementAt(index) as String) == 0)
+                        if(subCleaningString!.compareTo(specialCharacters!.elementAt(index);
+
+                         as String) == 0)
                         
 
 

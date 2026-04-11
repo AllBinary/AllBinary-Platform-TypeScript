@@ -88,23 +88,32 @@ var dissipation = dissipation
     var MESSAGE: string = "Danger Danger Danger: Speed probably to slow if using 1 degree calculations as velocity for a single axis could be below 1024: ";
         
         
-
+;
+    
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
+;
+    
 PreLogUtil.put(StringMaker().
-                            append(MESSAGE)!.appendlong(speed)!.toString(), this, commonStrings!.CONSTRUCTOR)
-messageSent= true
+                            append(MESSAGE)!.appendlong(speed)!.toString(), this, commonStrings!.CONSTRUCTOR);
+    
+messageSent= true;
+    
 
                                     }
                                 
-this.setReloadTime(reloadTime)
-this.setTargetingTime(targetingTime)
-this.setDamage(damage)
-this.setDissipation(dissipation)
-this.setSpeed(BasicDecimal(speed))
+this.setReloadTime(reloadTime);
+    
+this.setTargetingTime(targetingTime);
+    
+this.setDamage(damage);
+    
+this.setDissipation(dissipation);
+    
+this.setSpeed(BasicDecimal(speed));
+    
 
                         if(dissipation != ZERO)
                         
@@ -113,18 +122,22 @@ this.setSpeed(BasicDecimal(speed))
     var unscaledDamage: number = this.speed.getUnscaled() *damage;
         
         
-
+;
+    
 
     var scaledDissipation: number = dissipation *this.speed.getScaledFactorValue();
         
         
-
+;
+    
 
     var value: number = (unscaledDamage /scaledDissipation);
         
         
-
-this.setRange((value *9).toInt() /10)
+;
+    
+this.setRange((value *9).toInt() /10);
+    
 
                                     }
                                 
@@ -147,7 +160,8 @@ var dissipation = dissipation
 
     setReloadTime(reloadTime: number){
 var reloadTime = reloadTime
-this.reloadTime= reloadTime
+this.reloadTime= reloadTime;
+    
 }
 
 
@@ -163,7 +177,8 @@ this.reloadTime= reloadTime
 
     setTargetingTime(targetingTime: number){
 var targetingTime = targetingTime
-this.targetingTime= targetingTime
+this.targetingTime= targetingTime;
+    
 }
 
 
@@ -189,7 +204,8 @@ this.targetingTime= targetingTime
 
     public setSpeed(speed: BasicDecimal){
 var speed = speed
-this.speed= speed
+this.speed= speed;
+    
 }
 
 
@@ -209,22 +225,30 @@ var range = range
     var index: number = 0;
         
         
-
+;
+    
 
     var stringArray: string[] = new Array(3);
         
         
-
+;
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringArray[index++]= stringBuffer!.append(DAMAGE)!.appendint(this.getDamage())!.toString()
-stringBuffer!.delete(0, stringBuffer!.length())
-stringArray[index++]= stringBuffer!.append(RANGE)!.appendint(this.getRange())!.toString()
-stringBuffer!.delete(0, stringBuffer!.length())
-stringArray[index++]= stringBuffer!.append(RELOAD)!.appendlong(this.getReloadTime())!.toString()
+;
+    
+stringArray[index++]= stringBuffer!.append(DAMAGE)!.appendint(this.getDamage())!.toString();
+    
+stringBuffer!.delete(0, stringBuffer!.length());
+    
+stringArray[index++]= stringBuffer!.append(RANGE)!.appendint(this.getRange())!.toString();
+    
+stringBuffer!.delete(0, stringBuffer!.length());
+    
+stringArray[index++]= stringBuffer!.append(RELOAD)!.appendlong(this.getReloadTime())!.toString();
+    
 
 
 
@@ -239,17 +263,25 @@ stringArray[index++]= stringBuffer!.append(RELOAD)!.appendlong(this.getReloadTim
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(DAMAGE)!.appendint(this.getDamage())
-stringBuffer!.append(CommonSeps.getInstance()!.SPACE)
-stringBuffer!.append(RANGE)!.appendint(this.getRange())
-stringBuffer!.append(CommonSeps.getInstance()!.SPACE)
-stringBuffer!.append(RELOAD)!.appendlong(this.getReloadTime())
+;
+    
+stringBuffer!.append(DAMAGE)!.appendint(this.getDamage());
+    
+stringBuffer!.append(CommonSeps.getInstance()!.SPACE);
+    
+stringBuffer!.append(RANGE)!.appendint(this.getRange());
+    
+stringBuffer!.append(CommonSeps.getInstance()!.SPACE);
+    
+stringBuffer!.append(RELOAD)!.appendlong(this.getReloadTime());
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

@@ -34,7 +34,8 @@ public constructor (angle: number, name: string)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.name= name
+this.name= name;
+    
 }
 
 

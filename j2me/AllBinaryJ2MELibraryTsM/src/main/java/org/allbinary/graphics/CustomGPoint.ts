@@ -73,7 +73,8 @@ var z = z
 
     public setX(x: number){
 var x = x
-this.x= x
+this.x= x;
+    
 }
 
 
@@ -89,7 +90,8 @@ this.x= x
 
     public setY(y: number){
 var y = y
-this.y= y
+this.y= y;
+    
 }
 
 
@@ -105,7 +107,8 @@ this.y= y
 
     public setZ(z: number){
 var z = z
-this.z= z
+this.z= z;
+    
 }
 
 

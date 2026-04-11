@@ -63,12 +63,14 @@ private constructor (){
     var imageName: string = image.getName()!;
         
         
-
+;
+    
 
     var isNormalScaling: boolean = list.size() == 0 || imageName!.startsWith(EXCLUSION);
         
         
-
+;
+    
 
                         if(isNormalScaling)
                         
@@ -87,10 +89,12 @@ private constructor (){
     var size: number = list.size()!;
         
         
-
+;
+    
 
     var name: string
-
+;
+    
 
 
 
@@ -101,12 +105,16 @@ private constructor (){
         
 index < size; index++)
         {
-name= list.get(index) as String
+name= list.get(index);
+
+                         as String;
+    
 
                         if(imageName!.startsWith(name))
                         
                                     {
-                                    isNormalScaling= true
+                                    isNormalScaling= true;
+    
 
                                     }
                                 

@@ -92,10 +92,13 @@ public constructor (poolName: string, numThreads: number, priority: number){
             
     public runAPriorityTask(){
 
-                        if(!currentPriorityRunnable!.isDone())
+                        if(!currentPriorityRunnable!.isDone();
+
+                        )
                         
                                     {
-                                    currentPriorityRunnable!.run()
+                                    currentPriorityRunnable!.run();
+    
 
                                     }
                                 
@@ -104,7 +107,8 @@ public constructor (poolName: string, numThreads: number, priority: number){
     var runnable: Runnable = this.getTask()!;
         
         
-
+;
+    
 
                         if(runnable == NULL_RUNNABLE)
                         
@@ -118,13 +122,16 @@ public constructor (poolName: string, numThreads: number, priority: number){
 
                                     }
                                 
-currentPriorityRunnable= runnable as PriorityRunnable
+currentPriorityRunnable= runnable as PriorityRunnable;
+    
 
                         if(!(currentPriorityRunnable == threadObjectUtil!.NULL_PRIORITY_RUNNABLE))
                         
                                     {
-                                    currentPriorityRunnable!.reset()
-currentPriorityRunnable!.run()
+                                    currentPriorityRunnable!.reset();
+    
+currentPriorityRunnable!.run();
+    
 
                                     }
                                 
@@ -141,14 +148,16 @@ currentPriorityRunnable!.run()
     var runnable: Runnable = this.getTask()!;
         
         
-
+;
+    
 
                         if(runnable != 
                                     null
                                 )
                         
                                     {
-                                    runnable.run()
+                                    runnable.run();
+    
 
                                     }
                                 
@@ -160,8 +169,10 @@ currentPriorityRunnable!.run()
                         if(!this.isAlive)
                         
                                     {
-                                    isAlive= true
-taskQueue= BasicArrayList()
+                                    isAlive= true;
+    
+taskQueue= BasicArrayList();
+    
 
                                     }
                                 
@@ -175,7 +186,8 @@ taskQueue= BasicArrayList()
                         if(!this.isAlive)
                         
                                     {
-                                    this.init()
+                                    this.init();
+    
 
                                     }
                                 
@@ -189,15 +201,18 @@ taskQueue= BasicArrayList()
     var size: number = this.taskQueue!.size()!;
         
         
-
+;
+    
 
     var runnable: PriorityRunnable
-
+;
+    
 
     var lowerPriorityRunnable: PriorityRunnable = threadObjectUtil!.NULL_PRIORITY_RUNNABLE;
         
         
-
+;
+    
 
 
 
@@ -208,12 +223,16 @@ taskQueue= BasicArrayList()
         
 index < size; index++)
         {
-runnable= this.taskQueue!.get(index) as PriorityRunnable
+runnable= this.taskQueue!.get(index);
+
+                         as PriorityRunnable;
+    
 
                         if(runnable.getPriority() > task.getPriority())
                         
                                     {
-                                    lowerPriorityRunnable= runnable
+                                    lowerPriorityRunnable= runnable;
+    
 break;
 
                     
@@ -226,7 +245,8 @@ break;
                         if(lowerPriorityRunnable == threadObjectUtil!.NULL_PRIORITY_RUNNABLE || lowerPriorityRunnable == NULL_RUNNABLE)
                         
                                     {
-                                    this.taskQueue!.add(task)
+                                    this.taskQueue!.add(task);
+    
 
                                     }
                                 
@@ -235,8 +255,10 @@ break;
     var index: number = this.taskQueue!.indexOf(lowerPriorityRunnable)!;
         
         
-
-this.taskQueue!.add(index, task)
+;
+    
+this.taskQueue!.add(index, task);
+    
 
                         }
                             
@@ -253,7 +275,8 @@ this.taskQueue!.add(index, task)
                         if(!isAlive)
                         
                                     {
-                                    this.init()
+                                    this.init();
+    
 
                                     }
                                 
@@ -263,7 +286,8 @@ this.taskQueue!.add(index, task)
                                 )
                         
                                     {
-                                    taskQueue!.add(task)
+                                    taskQueue!.add(task);
+    
 
                                     }
                                 
@@ -291,14 +315,17 @@ this.taskQueue!.add(index, task)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return taskQueue!.remove(0) as Runnable;
+                        return taskQueue!.remove(0);
+
+                         as Runnable;
     
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public clear(){
-taskQueue!.clear()
+taskQueue!.clear();
+    
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
@@ -308,9 +335,12 @@ taskQueue!.clear()
                         if(isAlive)
                         
                                     {
-                                    isAlive= false
-taskQueue!.clear()
-this.currentPriorityRunnable= threadObjectUtil!.NULL_PRIORITY_RUNNABLE
+                                    isAlive= false;
+    
+taskQueue!.clear();
+    
+this.currentPriorityRunnable= threadObjectUtil!.NULL_PRIORITY_RUNNABLE;
+    
 
                                     }
                                 
@@ -318,9 +348,12 @@ this.currentPriorityRunnable= threadObjectUtil!.NULL_PRIORITY_RUNNABLE
 
 
     public join(){
-isAlive= false
-taskQueue!.clear()
-this.currentPriorityRunnable= threadObjectUtil!.NULL_PRIORITY_RUNNABLE
+isAlive= false;
+    
+taskQueue!.clear();
+    
+this.currentPriorityRunnable= threadObjectUtil!.NULL_PRIORITY_RUNNABLE;
+    
 }
 
 
@@ -382,9 +415,12 @@ this.currentPriorityRunnable= threadObjectUtil!.NULL_PRIORITY_RUNNABLE
                         if(this.numThreads == 1)
                         
                                     {
-                                    this.isAlive= false
-taskQueue!.clear()
-this.currentPriorityRunnable= threadObjectUtil!.NULL_PRIORITY_RUNNABLE
+                                    this.isAlive= false;
+    
+taskQueue!.clear();
+    
+this.currentPriorityRunnable= threadObjectUtil!.NULL_PRIORITY_RUNNABLE;
+    
 
                                     }
                                 

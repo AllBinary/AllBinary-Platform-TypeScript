@@ -56,7 +56,8 @@ var gameInput = gameInput
 
                             //For kotlin this is before the body of the constructor.
                     
-currentSpeed= 5
+currentSpeed= 5;
+    
 }
 
 
@@ -68,18 +69,22 @@ var allBinaryLayerManager = allBinaryLayerManager
     var ownerLayerInterface: AllBinaryLayer = this.getOwnerLayerInterface()!;
         
         
-
+;
+    
 
     var x: number = ownerLayerInterface!.getXP()!;
         
         
-
+;
+    
 
                         if(ownerLayerInterface!.getXP() -currentSpeed <= 0)
                         
                                     {
-                                    this.reverse()
-this.drop()
+                                    this.reverse();
+    
+this.drop();
+    
 
                                     }
                                 
@@ -87,9 +92,12 @@ this.drop()
                         if(ownerLayerInterface!.getX2() +currentSpeed > DisplayInfoSingleton.getInstance()!.getLastWidth())
                         
                                     {
-                                    this.reverse()
-this.accelerate()
-this.drop()
+                                    this.reverse();
+    
+this.accelerate();
+    
+this.drop();
+    
 
                                     }
                                 
@@ -97,7 +105,8 @@ this.drop()
                         if(currentRelativeAngle == 0)
                         
                                     {
-                                    x += (currentSpeed)
+                                    x += (currentSpeed);
+    
 
                                     }
                                 
@@ -105,16 +114,19 @@ this.drop()
                         if(currentRelativeAngle == 180)
                         
                                     {
-                                    x -= (currentSpeed)
+                                    x -= (currentSpeed);
+    
 
                                     }
                                 
-ownerLayerInterface!.setPosition(x, ownerLayerInterface!.getYP(), ownerLayerInterface!.getZP())
+ownerLayerInterface!.setPosition(x, ownerLayerInterface!.getYP(), ownerLayerInterface!.getZP());
+    
 
                         if(currentRelativeAngle == 0)
                         
                                     {
-                                    super.processAI(Canvas.KEY_NUM0)
+                                    super.processAI(Canvas.KEY_NUM0);
+    
 
                                     }
                                 
@@ -122,7 +134,8 @@ ownerLayerInterface!.setPosition(x, ownerLayerInterface!.getYP(), ownerLayerInte
                         if(currentRelativeAngle == 180)
                         
                                     {
-                                    super.processAI(Canvas.KEY_POUND)
+                                    super.processAI(Canvas.KEY_POUND);
+    
 
                                     }
                                 
@@ -134,7 +147,8 @@ ownerLayerInterface!.setPosition(x, ownerLayerInterface!.getYP(), ownerLayerInte
                         if(currentRelativeAngle == 180)
                         
                                     {
-                                    currentRelativeAngle= 0
+                                    currentRelativeAngle= 0;
+    
 
                                     }
                                 
@@ -142,7 +156,8 @@ ownerLayerInterface!.setPosition(x, ownerLayerInterface!.getYP(), ownerLayerInte
                         if(currentRelativeAngle == 0)
                         
                                     {
-                                    currentRelativeAngle= 180
+                                    currentRelativeAngle= 180;
+    
 
                                     }
                                 
@@ -154,7 +169,8 @@ ownerLayerInterface!.setPosition(x, ownerLayerInterface!.getYP(), ownerLayerInte
                         if(currentSpeed < 20)
                         
                                     {
-                                    currentSpeed++
+                                    currentSpeed++;
+    
 
                                     }
                                 
@@ -166,26 +182,31 @@ ownerLayerInterface!.setPosition(x, ownerLayerInterface!.getYP(), ownerLayerInte
     var ownerLayerInterface: AllBinaryLayer = this.getOwnerLayerInterface()!;
         
         
-
+;
+    
 
     var y: number = ownerLayerInterface!.getYP()!;
         
         
-
+;
+    
 
                         if(ownerLayerInterface!.getY2() +ownerLayerInterface!.getHeight() > DisplayInfoSingleton.getInstance()!.getLastHeight())
                         
                                     {
-                                    y= 0
+                                    y= 0;
+    
 
                                     }
                                 
                         else {
-                            y += ownerLayerInterface!.getHeight() +1
+                            y += ownerLayerInterface!.getHeight() +1;
+    
 
                         }
                             
-ownerLayerInterface!.setPosition(ownerLayerInterface!.getXP(), y, ownerLayerInterface!.getZP())
+ownerLayerInterface!.setPosition(ownerLayerInterface!.getXP(), y, ownerLayerInterface!.getZP());
+    
 }
 
 

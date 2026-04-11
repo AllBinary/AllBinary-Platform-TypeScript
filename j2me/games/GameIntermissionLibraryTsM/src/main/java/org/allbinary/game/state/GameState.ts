@@ -38,7 +38,8 @@ public constructor (name: string, state: number){
             super();
             var name = name
 var state = state
-this.name= name
+this.name= name;
+    
 }
 
 

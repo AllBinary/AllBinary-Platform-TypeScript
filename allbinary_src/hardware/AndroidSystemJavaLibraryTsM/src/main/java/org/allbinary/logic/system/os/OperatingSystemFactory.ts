@@ -73,32 +73,39 @@ private constructor (){
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
+;
+    
 
         try {
             
     var systemProperties: SystemProperties = SystemProperties.getInstance()!;
         
         
-
+;
+    
 
     var osName: string = systemProperties!.getName()!;
         
         
-
+;
+    
 
                         if(!hasDetected)
                         
                                     {
-                                    hasDetected= true
+                                    hasDetected= true;
+    
 
                         if(osName!.indexOf(OperatingSystems.getInstance()!.ANDROID) >= 0)
                         
                                     {
-                                    logUtil!.put("Found a Linux OS", this, commonStrings!.GET_INSTANCE)
-genericOperatingSystem= AndroidOperatingSystemFactory.getInstance()!.getOperatingSystemInstance()
+                                    logUtil!.put("Found a Linux OS", this, commonStrings!.GET_INSTANCE);
+    
+genericOperatingSystem= AndroidOperatingSystemFactory.getInstance()!.getOperatingSystemInstance();
+    
 logUtil!.put(StringMaker().
-                            append("Operating System Info: ")!.append(genericOperatingSystem!.toString())!.toString(), this, commonStrings!.GET_INSTANCE)
+                            append("Operating System Info: ")!.append(genericOperatingSystem!.toString())!.toString(), this, commonStrings!.GET_INSTANCE);
+    
 
                                     }
                                 
@@ -114,10 +121,14 @@ logUtil!.put(StringMaker().
 
                                     }
                                 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-genericOperatingSystem= NoOperatingSystem.NO_OPERATING_SYSTEM
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e)
+genericOperatingSystem= NoOperatingSystem.NO_OPERATING_SYSTEM;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e);
+    
 }
 
 

@@ -90,51 +90,68 @@ var maxWidth = maxWidth
     var myFont: MyFont = MyFont.getInstance()!;
         
         
-
-this.primitiveLongUtil= PrimitiveLongUtil(1000)
+;
+    
+this.primitiveLongUtil= PrimitiveLongUtil(1000);
+    
 
     var LEVEL: string = "Lv ";
         
         
-
-this.levelString= LEVEL.toCharArray()
-this.offset= myFont!.charsWidth(this.levelString, 0, this.levelString!.length) +myFont!.getSize()
-this.maxlevel= maxlevel
-this.level= maxlevel
-this.update()
+;
+    
+this.levelString= LEVEL.toCharArray();
+    
+this.offset= myFont!.charsWidth(this.levelString, 0, this.levelString!.length) +myFont!.getSize();
+    
+this.maxlevel= maxlevel;
+    
+this.level= maxlevel;
+    
+this.update();
+    
 }
 
 
     update(){
-levelNumberCharArray= this.primitiveLongUtil!.getCharArray(this.level)
-levelNumberTotalDigits= this.primitiveLongUtil!.getCurrentTotalDigits()
+levelNumberCharArray= this.primitiveLongUtil!.getCharArray(this.level);
+    
+levelNumberTotalDigits= this.primitiveLongUtil!.getCurrentTotalDigits();
+    
 }
 
 
     public setLevel(level: number){
 var level = level
-this.level= level
-this.update()
+this.level= level;
+    
+this.update();
+    
 }
 
 
     public nextLevel(){
-this.level++
-this.update()
+this.level++;
+    
+this.update();
+    
 }
 
 
     public previousLevel(){
-this.level--
+this.level--;
+    
 
                         if(this.level < 0)
                         
                                     {
-                                    this.level= 0
+                                    this.level= 0;
+    
 
                                     }
                                 
-this.update()
+this.update();
+    
 }
 
 
@@ -167,7 +184,8 @@ this.update()
 
     public paint(graphics: Graphics){
 var graphics = graphics
-super.paint(graphics, levelString, 0, levelString!.length, levelNumberCharArray, 0, levelNumberTotalDigits, this.offset)
+super.paint(graphics, levelString, 0, levelString!.length, levelNumberCharArray, 0, levelNumberTotalDigits, this.offset);
+    
 }
 
 

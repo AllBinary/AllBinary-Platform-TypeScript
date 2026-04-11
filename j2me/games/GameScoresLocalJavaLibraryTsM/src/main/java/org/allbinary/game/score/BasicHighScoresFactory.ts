@@ -54,7 +54,8 @@ public constructor (abeClientInformation: AbeClientInformationInterface, softwar
             super();
                 //var abeClientInformation = abeClientInformation
     //var softwareInformation = softwareInformation
-this.abeClientInformation= abeClientInformation
+this.abeClientInformation= abeClientInformation;
+    
 }
 
 
@@ -81,8 +82,10 @@ this.abeClientInformation= abeClientInformation
     public fetchHighScores(gameInfo: GameInfo, highScoresResultsListener: HighScoresResultsListener){
     //var gameInfo = gameInfo
     //var highScoresResultsListener = highScoresResultsListener
-logUtil!.put("Getting Local HighScores", this, FETCH)
-this.fetchHighScores(gameInfo, highScoresResultsListener, true)
+logUtil!.put("Getting Local HighScores", this, FETCH);
+    
+this.fetchHighScores(gameInfo, highScoresResultsListener, true);
+    
 }
 
 
@@ -92,11 +95,16 @@ this.fetchHighScores(gameInfo, highScoresResultsListener, true)
     //var preload = preload
 
         try {
-            highScoresArray[0]= RecordStoreHighScores.getInstance(abeClientInformation, gameInfo, TOP, PERSONAL_HIGH_SCORES, SCORES, ScoreComparator(true))
-highScoresResultsListener!.setHighScoresArray(highScoresArray)
-} catch(e: Exception)
+            highScoresArray[0]= RecordStoreHighScores.getInstance(abeClientInformation, gameInfo, TOP, PERSONAL_HIGH_SCORES, SCORES, ScoreComparator(true));
+    
+highScoresResultsListener!.setHighScoresArray(highScoresArray);
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, FETCH, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, FETCH, e);
+    
 }
 
 }

@@ -72,9 +72,12 @@ public constructor (gameKeyEventList: BasicArrayList, removalGameKeyEventList: B
             super();
                 //var gameKeyEventList = gameKeyEventList
     //var removalGameKeyEventList = removalGameKeyEventList
-this.gameKeyEventList= gameKeyEventList
-this.removalGameKeyEventList= removalGameKeyEventList
-this.isRemoveDuplicateKeyPresses= Features.getInstance()!.isFeature(InputFeatureFactory.getInstance()!.REMOVE_DUPLICATE_KEY_PRESSES)
+this.gameKeyEventList= gameKeyEventList;
+    
+this.removalGameKeyEventList= removalGameKeyEventList;
+    
+this.isRemoveDuplicateKeyPresses= Features.getInstance()!.isFeature(InputFeatureFactory.getInstance()!.REMOVE_DUPLICATE_KEY_PRESSES);
+    
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
@@ -100,12 +103,14 @@ var gameKeyEvent = gameKeyEvent
                                 )
                         
                                     {
-                                    this.gameKeyEventList!.add(gameKeyEvent)
+                                    this.gameKeyEventList!.add(gameKeyEvent);
+    
 
                                     }
                                 
                         else {
-                            logUtil!.put("Danger Passed Null GameKeyEvent", this, commonStrings!.ADD)
+                            logUtil!.put("Danger Passed Null GameKeyEvent", this, commonStrings!.ADD);
+    
 
                         }
                             
@@ -115,7 +120,8 @@ var gameKeyEvent = gameKeyEvent
 
     public addForRemoval(gameKeyEvent: GameKeyEvent){
 var gameKeyEvent = gameKeyEvent
-this.removalGameKeyEventList!.add(gameKeyEvent)
+this.removalGameKeyEventList!.add(gameKeyEvent);
+    
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
@@ -127,13 +133,16 @@ var gameKeyEvent = gameKeyEvent
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.removalGameKeyEventList!.contains(gameKeyEvent);
+
+                        ;
     
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public clear(){
-this.gameKeyEventList!.clear()
+this.gameKeyEventList!.clear();
+    
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
@@ -143,10 +152,12 @@ this.gameKeyEventList!.clear()
     var list: BasicArrayList = this.gameKeyEventList;
         
         
-
+;
+    
 
     var gameKeyEvent: GameKeyEvent
-
+;
+    
 
 
 
@@ -157,12 +168,14 @@ this.gameKeyEventList!.clear()
         
 --index >= 0; )
         {
-gameKeyEvent= list.objectArray[index]! as GameKeyEvent
+gameKeyEvent= list.objectArray[index]! as GameKeyEvent;
+    
 
                         if(gameKeyEvent!.getSourceId() != 1)
                         
                                     {
-                                    list.remove(index)
+                                    list.remove(index);
+    
 
                                     }
                                 
@@ -177,17 +190,20 @@ gameKeyEvent= list.objectArray[index]! as GameKeyEvent
     var removeList: BasicArrayList = this.removalGameKeyEventList;
         
         
-
+;
+    
 
     var list: BasicArrayList = this.gameKeyEventList;
         
         
-
+;
+    
 
     var size: number = removeList!.size()!;
         
         
-
+;
+    
 
 
 
@@ -202,7 +218,8 @@ index < size; index++)
     var anyType: any = {} = removeList!.objectArray[index]!;
         
         
-
+;
+    
 
 
 
@@ -217,7 +234,8 @@ index < size; index++)
                         if(list.objectArray[index2] == anyType)
                         
                                     {
-                                    list.remove(index2)
+                                    list.remove(index2);
+    
 
                                     }
                                 
@@ -225,7 +243,8 @@ index < size; index++)
 
 }
 
-removeList!.clear()
+removeList!.clear();
+    
 }
 
 

@@ -65,10 +65,13 @@ private constructor (){
     public getInstance(transformInfoInterface: TransformInfoInterface): TransformInfoObjectConfigGenerator{
 var transformInfoInterface = transformInfoInterface
 
-    var type: string = transformInfoInterface!.getObjectConfigInterface()!.getOutputTypeName() as String;
-        
-        
+    var type: string = transformInfoInterface!.getObjectConfigInterface()!.getOutputTypeName();
 
+                         as String;
+        
+        
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
@@ -77,8 +80,10 @@ var transformInfoInterface = transformInfoInterface
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put("Generating Instance for type: " +type, this, commonStrings!.GET_INSTANCE)
+;
+    
+logUtil!.put("Generating Instance for type: " +type, this, commonStrings!.GET_INSTANCE);
+    
 
                                     }
                                 

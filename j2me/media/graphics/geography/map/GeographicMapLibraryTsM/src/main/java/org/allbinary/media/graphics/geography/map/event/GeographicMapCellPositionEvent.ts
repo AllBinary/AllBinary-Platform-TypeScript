@@ -54,7 +54,8 @@ public constructor (anyType: any = {}, geographicMapCellPosition: CellPosition)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.geographicMapCellPosition= geographicMapCellPosition
+this.geographicMapCellPosition= geographicMapCellPosition;
+    
 }
 
 public constructor (anyType: any = {}, key: number)                        
@@ -73,13 +74,15 @@ var key = key
 
     public init(anyType: any = {}){
 var anyType = anyType
-this.setSource(anyType)
+this.setSource(anyType);
+    
 }
 
 
     public setGeographicMapCellPosition(geographicMapCellPosition: GeographicMapCellPosition){
 var geographicMapCellPosition = geographicMapCellPosition
-this.geographicMapCellPosition= geographicMapCellPosition
+this.geographicMapCellPosition= geographicMapCellPosition;
+    
 }
 
 
@@ -98,15 +101,21 @@ this.geographicMapCellPosition= geographicMapCellPosition
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("CellPositionEvent: ")
-stringBuffer!.append("\nGeographicMapCellPosition: ")
-stringBuffer!.append(StringUtil.getInstance()!.toString(this.getGeographicMapCellPosition()))
+;
+    
+stringBuffer!.append("CellPositionEvent: ");
+    
+stringBuffer!.append("\nGeographicMapCellPosition: ");
+    
+stringBuffer!.append(StringUtil.getInstance()!.toString(this.getGeographicMapCellPosition()));
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

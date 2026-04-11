@@ -18,10 +18,13 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { HashMap } from "../../java/util/HashMap.js";
 
     
-import { Vector } from "../../java/util/Vector.js";
+
+//import { Vector } from "../../java/util/Vector.js";
 
     
 import { HttpServletRequest } from "../../javax/servlet/http/HttpServletRequest.js";
@@ -80,7 +83,7 @@ export class UserHelper extends Table {
         
         
 
-    private readonly hashMap: HashMap<Any, Any>
+    private readonly hashMap: HashMap<any, any>
 
     private readonly pageContext: PageContext
 
@@ -89,16 +92,23 @@ export class UserHelper extends Table {
     private readonly path: string
 
     private readonly portion: Portion
-public constructor (hashMap: HashMap<Any, Any>, pageContext: PageContext){
+public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
             var hashMap = hashMap
 var pageContext = pageContext
-this.hashMap= hashMap
-this.pageContext= pageContext
-this.request= pageContext!.getRequest() as HttpServletRequest
-this.path= URLGLOBALS.getMainPath() +FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH
-this.portion= Portion(hashMap)
+this.hashMap= hashMap;
+    
+this.pageContext= pageContext;
+    
+this.request= pageContext!.getRequest();
+
+                         as HttpServletRequest;
+    
+this.path= URLGLOBALS.getMainPath() +FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH;
+    
+this.portion= Portion(hashMap);
+    
 }
 
 
@@ -106,37 +116,48 @@ this.portion= Portion(hashMap)
 
         try {
             
-    var requestHashMap: HashMap<Any, Any> = RequestParams(this.request).
+    var requestHashMap: HashMap<any, any> = RequestParams(this.request).
                             toHashMap()!;
         
         
-
+;
+    
 
     var userName: UserName = new UserName(requestHashMap);
         
         
-
-UserEntityFactory.getInstance()!.deleteWhere(UserData.USERNAME, userName!.get())
+;
+    
+UserEntityFactory.getInstance()!.deleteWhere(UserData.USERNAME, userName!.get());
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("Successfully Removed the user with ")
-stringBuffer!.append(UserData.USERNAME)
-stringBuffer!.append("=")
-stringBuffer!.append(userName!.get())
-stringBuffer!.append(" from to the user table")
+;
+    
+stringBuffer!.append("Successfully Removed the user with ");
+    
+stringBuffer!.append(UserData.USERNAME);
+    
+stringBuffer!.append("=");
+    
+stringBuffer!.append(userName!.get());
+    
+stringBuffer!.append(" from to the user table");
+    
 
     var success: string = stringBuffer!.toString()!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put(success, this, "delete()")
+                                    logUtil!.put(success, this, "delete()");
+    
 
                                     }
                                 
@@ -146,18 +167,22 @@ stringBuffer!.append(" from to the user table")
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to remove user with " +UserData.USERNAME +" from User table";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "delete()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "delete()", e);
+    
 
                                     }
                                 
@@ -181,17 +206,24 @@ stringBuffer!.append(" from to the user table")
     var userInterface: UserInterface = NewUserFactory.getInstance(this.request, hashMap)!;
         
         
+;
+    
 
+    var enable: string = this.hashMap!.get(EntryData.getInstance()!.ENABLE);
 
-    var enable: string = this.hashMap!.get(EntryData.getInstance()!.ENABLE) as String;
+                         as String;
         
         
+;
+    
 
+                        if(!StringValidationUtil.getInstance()!.isEmpty(enable);
 
-                        if(!StringValidationUtil.getInstance()!.isEmpty(enable))
+                        )
                         
                                     {
-                                    userInterface!.setEnable(enable)
+                                    userInterface!.setEnable(enable);
+    
 
                                     }
                                 
@@ -199,18 +231,22 @@ stringBuffer!.append(" from to the user table")
     var values: Vector = userInterface!.toVector()!;
         
         
-
-UserEntityFactory.getInstance()!.insert(values)
+;
+    
+UserEntityFactory.getInstance()!.insert(values);
+    
 
     var success: string = "New User Successfully added to the Users Table";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put(success, this, "add()")
+                                    logUtil!.put(success, this, "add()");
+    
 
                                     }
                                 
@@ -220,18 +256,22 @@ UserEntityFactory.getInstance()!.insert(values)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to add User";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "add()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "add()", e);
+    
 
                                     }
                                 
@@ -253,23 +293,28 @@ UserEntityFactory.getInstance()!.insert(values)
     var user: UserInterface = NewUserFactory.getInstance(this.request, hashMap)!;
         
         
+;
+    
 
-
-    var values: HashMap<Any, Any> = user.toHashMap()!;
+    var values: HashMap<any, any> = user.toHashMap()!;
         
         
-
-UserEntityFactory.getInstance()!.update(user.getUserName(), values)
+;
+    
+UserEntityFactory.getInstance()!.update(user.getUserName(), values);
+    
 
     var success: string = "New User Successfully added to the Users Table";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put(success, this, "update()")
+                                    logUtil!.put(success, this, "update()");
+    
 
                                     }
                                 
@@ -279,18 +324,22 @@ UserEntityFactory.getInstance()!.update(user.getUserName(), values)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to add User";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "update()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "update()", e);
+    
 
                                     }
                                 
@@ -312,12 +361,14 @@ UserEntityFactory.getInstance()!.update(user.getUserName(), values)
     var success: string = UserEntityFactory.getInstance()!.dropTable()!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPER))
                         
                                     {
-                                    logUtil!.put(success, this, commonStrings!.DROP)
+                                    logUtil!.put(success, this, commonStrings!.DROP);
+    
 
                                     }
                                 
@@ -327,18 +378,22 @@ UserEntityFactory.getInstance()!.update(user.getUserName(), values)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to drop user table";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.DROP, e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.DROP, e);
+    
 
                                     }
                                 
@@ -360,12 +415,14 @@ UserEntityFactory.getInstance()!.update(user.getUserName(), values)
     var success: string = UserEntityFactory.getInstance()!.createTable()!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPER))
                         
                                     {
-                                    logUtil!.put(success, this, "create()")
+                                    logUtil!.put(success, this, "create()");
+    
 
                                     }
                                 
@@ -375,18 +432,22 @@ UserEntityFactory.getInstance()!.update(user.getUserName(), values)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return success;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to create user table";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "create()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "create()", e);
+    
 
                                     }
                                 
@@ -408,17 +469,20 @@ UserEntityFactory.getInstance()!.update(user.getUserName(), values)
     var success: string = "Restore Successful";
         
         
-
+;
+    
 
     var result: string = AbSqlTableUtil.getInstance()!.restoreTable(UserEntityFactory.getInstance(), this.portion)!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put(success, this, "restore()")
+                                    logUtil!.put(success, this, "restore()");
+    
 
                                     }
                                 
@@ -428,18 +492,22 @@ UserEntityFactory.getInstance()!.update(user.getUserName(), values)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to restore backup";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "restore()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "restore()", e);
+    
 
                                     }
                                 
@@ -461,17 +529,20 @@ UserEntityFactory.getInstance()!.update(user.getUserName(), values)
     var success: string = "Restore Successful";
         
         
-
+;
+    
 
     var result: string = AbSqlTableUtil.getInstance()!.backupTable(UserEntityFactory.getInstance())!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPER))
                         
                                     {
-                                    logUtil!.put(success, this, "backup()")
+                                    logUtil!.put(success, this, "backup()");
+    
 
                                     }
                                 
@@ -481,18 +552,22 @@ UserEntityFactory.getInstance()!.update(user.getUserName(), values)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to make backup";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "backup()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "backup()", e);
+    
 
                                     }
                                 

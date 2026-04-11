@@ -56,12 +56,14 @@ export class AppUrlGlobals extends UrlGlobalsInterface {
 
     public setWebappPath(path: string){
 var path = path
-this.path= path
+this.path= path;
+    
 
                         if(!(this.path.endsWith("\\") || this.path.endsWith("/")))
                         
                                     {
-                                    this.path= this.path +"\\"
+                                    this.path= this.path +"\\";
+    
 
                                     }
                                 

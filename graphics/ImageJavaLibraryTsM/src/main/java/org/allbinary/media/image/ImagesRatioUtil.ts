@@ -70,15 +70,19 @@ private constructor (){
     var end: number = totalImages;
         
         
-
+;
+    
 
                         if(bufferedImageArray!.length < totalImages)
                         end= bufferedImageArray!.length
 
-    var ratio: number = (bufferedImageArray[0]!.getWidth().toDouble() /bufferedImageArray[0]!.getHeight());
-        
-        
+    var ratio: number = (bufferedImageArray[0]!.getWidth();
 
+                        .toDouble() /bufferedImageArray[0]!.getHeight());
+        
+        
+;
+    
 
 
 
@@ -90,7 +94,9 @@ private constructor (){
 index < end; index++)
         {
 
-                        if(ratio != (bufferedImageArray[index]!.getWidth().toDouble() /bufferedImageArray[index]!.getHeight()))
+                        if(ratio != (bufferedImageArray[index]!.getWidth();
+
+                        .toDouble() /bufferedImageArray[index]!.getHeight()))
                         
                                     {
                                     
@@ -120,12 +126,14 @@ index < end; index++)
     var ratio: number = 0;
         
         
-
+;
+    
 
     var end: number = totalImages;
         
         
-
+;
+    
 
                         if(bufferedImageArray!.length < totalImages)
                         end= bufferedImageArray!.length
@@ -139,7 +147,10 @@ index < end; index++)
         
 index < end; index++)
         {
-ratio += (bufferedImageArray[index]!.getWidth().toDouble() /bufferedImageArray[index]!.getHeight())
+ratio += (bufferedImageArray[index]!.getWidth();
+
+                        .toDouble() /bufferedImageArray[index]!.getHeight());
+    
 }
 
 
@@ -157,37 +168,51 @@ ratio += (bufferedImageArray[index]!.getWidth().toDouble() /bufferedImageArray[i
 var bufferedImage = bufferedImage
 var ratio = ratio
 
-    var imageRatio: number = (bufferedImage!.getWidth().toDouble() /bufferedImage!.getHeight());
-        
-        
+    var imageRatio: number = (bufferedImage!.getWidth();
 
+                        .toDouble() /bufferedImage!.getHeight());
+        
+        
+;
+    
 
     var point: Point = new Point();
         
         
-
+;
+    
 
     var newHeight: number = bufferedImage!.getHeight()!;
         
         
-
+;
+    
 
     var newWidth: number = bufferedImage!.getWidth()!;
         
         
-
+;
+    
 
                         if(ratio > imageRatio)
                         
                                     {
-                                    newWidth= (bufferedImage!.getHeight().toDouble() *ratio).toInt()
-point.x= (newWidth -bufferedImage!.getWidth()) /2
+                                    newWidth= (bufferedImage!.getHeight();
+
+                        .toDouble() *ratio).toInt();
+    
+point.x= (newWidth -bufferedImage!.getWidth()) /2;
+    
 
                                     }
                                 
                         else {
-                            newHeight= (bufferedImage!.getWidth().toDouble() /ratio).toInt()
-point.y= (newHeight -bufferedImage!.getHeight()) /2
+                            newHeight= (bufferedImage!.getWidth();
+
+                        .toDouble() /ratio).toInt();
+    
+point.y= (newHeight -bufferedImage!.getHeight()) /2;
+    
 
                         }
                             
@@ -195,18 +220,22 @@ point.y= (newHeight -bufferedImage!.getHeight()) /2
     var commonLabels: CommonLabels = CommonLabels.getInstance()!;
         
         
-
-logUtil!.put(commonLabels!.WIDTH_LABEL +bufferedImage!.getWidth() +" newWidth: " +newWidth +commonLabels!.HEIGHT_LABEL +bufferedImage!.getHeight() +" newHeight: " +newHeight +" needed ratio: " +(newWidth.toDouble() /newHeight), this, "fudge")
+;
+    
+logUtil!.put(commonLabels!.WIDTH_LABEL +bufferedImage!.getWidth() +" newWidth: " +newWidth +commonLabels!.HEIGHT_LABEL +bufferedImage!.getHeight() +" newHeight: " +newHeight +" needed ratio: " +(newWidth.toDouble() /newHeight), this, "fudge");
+    
 
     var newBufferedImage: BufferedImage = this.imageUtil!.create(newWidth, newHeight)!;
         
         
-
+;
+    
 
     var g: Graphics2D = newBufferedImage!.createGraphics()!;
         
         
-
+;
+    
 
                         if(point.x > 0)
                         
@@ -215,13 +244,16 @@ logUtil!.put(commonLabels!.WIDTH_LABEL +bufferedImage!.getWidth() +" newWidth: "
     var firstColumnBufferedImage: BufferedImage = bufferedImage!.getSubimage(0, 0, 1, bufferedImage!.getHeight())!;
         
         
-
+;
+    
 
     var lastColumnBufferedImage: BufferedImage = bufferedImage!.getSubimage(bufferedImage!.getWidth() -1, 0, 1, bufferedImage!.getHeight())!;
         
         
-
-logUtil!.put("Draw some columns to fill in gap", this, "fudge")
+;
+    
+logUtil!.put("Draw some columns to fill in gap", this, "fudge");
+    
 
 
 
@@ -233,9 +265,11 @@ logUtil!.put("Draw some columns to fill in gap", this, "fudge")
 index < point.x; index++)
         {
 g.drawImage(firstColumnBufferedImage, index, 0, 
-                            null)
+                            null);
+    
 g.drawImage(lastColumnBufferedImage, newWidth -index, 0, 
-                            null)
+                            null);
+    
 }
 
 
@@ -249,13 +283,16 @@ g.drawImage(lastColumnBufferedImage, newWidth -index, 0,
     var firstRowBufferedImage: BufferedImage = bufferedImage!.getSubimage(0, 0, bufferedImage!.getWidth(), 1)!;
         
         
-
+;
+    
 
     var lastRowBufferedImage: BufferedImage = bufferedImage!.getSubimage(0, bufferedImage!.getHeight() -1, bufferedImage!.getWidth(), 1)!;
         
         
-
-logUtil!.put("Draw some rows to fill in gap", this, "fudge")
+;
+    
+logUtil!.put("Draw some rows to fill in gap", this, "fudge");
+    
 
 
 
@@ -267,16 +304,19 @@ logUtil!.put("Draw some rows to fill in gap", this, "fudge")
 index < point.y; index++)
         {
 g.drawImage(firstRowBufferedImage, 0, index, 
-                            null)
+                            null);
+    
 g.drawImage(lastRowBufferedImage, 0, newHeight -index, 
-                            null)
+                            null);
+    
 }
 
 
                                     }
                                 
 g.drawImage(bufferedImage, point.x, point.y, bufferedImage!.getWidth(), bufferedImage!.getHeight(), 
-                            null)
+                            null);
+    
 
 
 
@@ -296,7 +336,8 @@ g.drawImage(bufferedImage, point.x, point.y, bufferedImage!.getWidth(), buffered
     var end: number = totalImages;
         
         
-
+;
+    
 
                         if(bufferedImageArray!.length < totalImages)
                         end= bufferedImageArray!.length
@@ -304,7 +345,8 @@ g.drawImage(bufferedImage, point.x, point.y, bufferedImage!.getWidth(), buffered
     var fudgedBufferedImageArray: BufferedImage[] = new Array(end);
         
         
-
+;
+    
 
 
 
@@ -315,7 +357,8 @@ g.drawImage(bufferedImage, point.x, point.y, bufferedImage!.getWidth(), buffered
         
 index < end; index++)
         {
-fudgedBufferedImageArray[index]= fudge(bufferedImageArray[index]!, ratio)
+fudgedBufferedImageArray[index]= fudge(bufferedImageArray[index]!, ratio);
+    
 }
 
 

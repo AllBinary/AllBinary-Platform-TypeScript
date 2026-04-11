@@ -91,9 +91,12 @@ public constructor (sprite: Sprite, image: Image, basicColorArray: BasicColor[],
 
                             //For kotlin this is before the body of the constructor.
                     
-this.sprite= sprite
-this.image= image
-this.basicColorArray= basicColorArray
+this.sprite= sprite;
+    
+this.image= image;
+    
+this.basicColorArray= basicColorArray;
+    
 
                         if(this.basicColorArray!.length != 0 && this.getSize() != this.basicColorArray!.length)
                         
@@ -117,6 +120,8 @@ this.basicColorArray= basicColorArray
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getSize();
+
+                        ;
     
 }
 
@@ -137,7 +142,8 @@ index < this.basicColorArray!.length; index++)
                         if(basicColor == this.basicColorArray[index])
                         
                                     {
-                                    this.setFrame(index)
+                                    this.setFrame(index);
+    
 break;
 
                     
@@ -181,9 +187,12 @@ break;
     //var frame = frame
     //var x = x
     //var y = y
-this.setFrame(frame)
-this.sprite.setPosition(x, y)
-sprite.paint(graphics)
+this.setFrame(frame);
+    
+this.sprite.setPosition(x, y);
+    
+sprite.paint(graphics);
+    
 }
 
 
@@ -191,24 +200,29 @@ sprite.paint(graphics)
     //var graphics = graphics
     //var x = x
     //var y = y
-this.sprite.setPosition(x, y)
-sprite.paint(graphics)
+this.sprite.setPosition(x, y);
+    
+sprite.paint(graphics);
+    
 }
 
 
     paint(graphics: Graphics){
     //var graphics = graphics
-sprite.paint(graphics)
+sprite.paint(graphics);
+    
 }
 
 
     public nextFrame(){
-this.sprite.nextFrame()
+this.sprite.nextFrame();
+    
 }
 
 
     public previousFrame(){
-this.sprite.prevFrame()
+this.sprite.prevFrame();
+    
 }
 
 
@@ -218,13 +232,16 @@ this.sprite.prevFrame()
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.sprite.getRawFrameCount();
+
+                        ;
     
 }
 
 
     public setFrame(frame: number){
     //var frame = frame
-this.sprite.setFrame(frame)
+this.sprite.setFrame(frame);
+    
 }
 
 
@@ -234,6 +251,8 @@ this.sprite.setFrame(frame)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.sprite.getFrame();
+
+                        ;
     
 }
 
@@ -271,21 +290,25 @@ this.sprite.setFrame(frame)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getSize();
+
+                        ;
     
 }
 
 
-    public setSequence(sequence: IntArray){
+    public setSequence(sequence: number[]){
     //var sequence = sequence
 }
 
 
-    public getSequence(): IntArray{
+    public getSequence(): number[]{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return PrimitiveIntUtil.getArrayInstance();
+
+                        ;
     
 }
 

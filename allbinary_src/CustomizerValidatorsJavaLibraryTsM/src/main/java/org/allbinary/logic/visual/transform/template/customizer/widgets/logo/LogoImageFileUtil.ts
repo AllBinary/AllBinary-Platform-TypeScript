@@ -54,8 +54,10 @@ public constructor (imageAbPath: AbPath, imageFile: string){
             super();
                 //var imageAbPath = imageAbPath
     //var imageFile = imageFile
-this.fileName= imageFile
-this.imageFileAbPath= imageAbPath
+this.fileName= imageFile;
+    
+this.imageFileAbPath= imageAbPath;
+    
 }
 
 
@@ -77,7 +79,9 @@ this.imageFileAbPath= imageAbPath
                                     }
                                 
 
-                        if(!this.directory.create(this.imageFileAbPath))
+                        if(!this.directory.create(this.imageFileAbPath);
+
+                        )
                         
                                     {
                                     
@@ -91,9 +95,12 @@ this.imageFileAbPath= imageAbPath
     var originalImageFile: AbFile = new AbFile(this.imageFileAbPath!.toString() +fileName);
         
         
-
-originalImageFile!.createNewFile()
-FileUtil.getInstance()!.write(ByteArrayInputStream(fileItem!.get()), originalImageFile)
+;
+    
+originalImageFile!.createNewFile();
+    
+FileUtil.getInstance()!.write(ByteArrayInputStream(fileItem!.get()), originalImageFile);
+    
 }
 
 

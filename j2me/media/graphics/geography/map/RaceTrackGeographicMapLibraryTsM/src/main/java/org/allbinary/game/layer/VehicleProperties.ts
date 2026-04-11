@@ -35,8 +35,10 @@ public constructor (velocityProperties: VelocityProperties, vehicleFrictionPrope
             super();
             var velocityProperties = velocityProperties
 var vehicleFrictionProperties = vehicleFrictionProperties
-this.velocityProperties= velocityProperties
-this.vehicleFrictionProperties= vehicleFrictionProperties
+this.velocityProperties= velocityProperties;
+    
+this.vehicleFrictionProperties= vehicleFrictionProperties;
+    
 }
 
 
@@ -52,7 +54,8 @@ this.vehicleFrictionProperties= vehicleFrictionProperties
 
     public setVehicleFrictionProperties(vehicleFrictionProperties: VehicleFrictionProperties){
 var vehicleFrictionProperties = vehicleFrictionProperties
-this.vehicleFrictionProperties= vehicleFrictionProperties
+this.vehicleFrictionProperties= vehicleFrictionProperties;
+    
 }
 
 

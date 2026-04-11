@@ -83,7 +83,8 @@ private constructor (){
     var originalImage2: Image = originalImage;
         
         
-
+;
+    
 
                         if(features.isFeature(OpenGLFeatureFactory.getInstance()!.OPENGL))
                         
@@ -96,8 +97,10 @@ private constructor (){
     var openGLESImage: OpenGLESImage = (originalImage as OpenGLESImage);
         
         
-
-openGLESImage!.openGLESImageProperties!.angle= totalAngle
+;
+    
+openGLESImage!.openGLESImageProperties!.angle= totalAngle;
+    
 
 
 
@@ -108,7 +111,8 @@ openGLESImage!.openGLESImageProperties!.angle= totalAngle
                                     }
                                 
                         else {
-                            PreLogUtil.put("OpenGL but image is: " +originalImage +" type: " +originalImage!.getType(), this, "rotateImage")
+                            PreLogUtil.put("OpenGL but image is: " +originalImage +" type: " +originalImage!.getType(), this, "rotateImage");
+    
 
                         }
                             
@@ -116,24 +120,29 @@ openGLESImage!.openGLESImageProperties!.angle= totalAngle
                                     }
                                 
 
-    var originalSwtImage: org.eclipse.swt.graphics.Image = (originalImage2!.getImage() as org.eclipse.swt.graphics.Image);
-        
-        
+    var originalSwtImage: org.eclipse.swt.graphics.Image = (originalImage2!.getImage();
 
+                         as org.eclipse.swt.graphics.Image);
+        
+        
+;
+    
 
     var gc: GC = 
                 null
             ;
         
         
-
+;
+    
 
     var copySwtImage: org.eclipse.swt.graphics.Image = 
                 null
             ;
         
         
-
+;
+    
 
                         if(image.isMutable())
                         
@@ -142,15 +151,22 @@ openGLESImage!.openGLESImageProperties!.angle= totalAngle
     var swtImage: SwtMutableImage = image as SwtMutableImage;
         
         
+;
+    
+copySwtImage= swtImage!.getImage();
 
-copySwtImage= swtImage!.getImage() as org.eclipse.swt.graphics.Image
-gc= swtImage!.getGc()
-imageSwtRotationUtil!.rotateImage(originalSwtImage, copySwtImage, gc, totalAngle)
+                         as org.eclipse.swt.graphics.Image;
+    
+gc= swtImage!.getGc();
+    
+imageSwtRotationUtil!.rotateImage(originalSwtImage, copySwtImage, gc, totalAngle);
+    
 
                                     }
                                 
                         else {
-                            PreLogUtil.put("No rotation for: " +image.toString(), this, "rotateImage")
+                            PreLogUtil.put("No rotation for: " +image.toString(), this, "rotateImage");
+    
 
                         }
                             

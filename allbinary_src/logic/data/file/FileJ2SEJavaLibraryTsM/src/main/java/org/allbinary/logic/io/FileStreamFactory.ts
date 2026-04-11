@@ -58,12 +58,14 @@ var fileName = fileName
     var FILEABPATH: AbPath = new AbPath(path, fileName);
         
         
-
+;
+    
 
     var file: AbFile = new AbFile(FILEABPATH);
         
         
-
+;
+    
 
 
 
@@ -82,18 +84,22 @@ var fileName = fileName
     var FILEABPATH: AbPath = new AbPath(path, fileName);
         
         
-
+;
+    
 
     var file: AbFile = new AbFile(FILEABPATH);
         
         
-
+;
+    
 
                         if(file.exists())
                         
                                     {
-                                    file.delete()
-file.createNewFile()
+                                    file.delete();
+    
+file.createNewFile();
+    
 
                                     }
                                 
@@ -115,13 +121,16 @@ var fileName = fileName
     var FILEABPATH: AbPath = new AbPath(path, fileName);
         
         
-
+;
+    
 
     var file: AbFile = new AbFile(FILEABPATH);
         
         
-
-file.delete()
+;
+    
+file.delete();
+    
 }
 
 

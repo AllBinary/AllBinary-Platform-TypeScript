@@ -46,7 +46,8 @@ export class TerrainEventCircularStaticPool
         
 
     public init(){
-EVENT_POOL.init(TerrainEventFactory())
+EVENT_POOL.init(TerrainEventFactory());
+    
 }
 
 
@@ -56,11 +57,15 @@ EVENT_POOL.init(TerrainEventFactory())
     public getInstance(basicTerrainInfo: BasicTerrainInfo): TerrainEvent{
 var basicTerrainInfo = basicTerrainInfo
 
-    var trackingEvent: TerrainEvent = EVENT_POOL.getNextInstance() as TerrainEvent;
-        
-        
+    var trackingEvent: TerrainEvent = EVENT_POOL.getNextInstance();
 
-trackingEvent!.setBasicTerrainInfoForCircularStaticPool(basicTerrainInfo)
+                         as TerrainEvent;
+        
+        
+;
+    
+trackingEvent!.setBasicTerrainInfoForCircularStaticPool(basicTerrainInfo);
+    
 
 
 

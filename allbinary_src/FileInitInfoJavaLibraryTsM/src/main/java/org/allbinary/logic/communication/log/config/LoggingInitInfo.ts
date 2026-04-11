@@ -18,7 +18,10 @@
 
 
 
-import { Vector } from "../../../../../../java/util/Vector.js";
+            import Vector from "@ohos.util.Vector";
+        
+
+//import { Vector } from "../../../../../../java/util/Vector.js";
 
     
 import { DomSearchHelper } from "../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js";
@@ -86,22 +89,26 @@ export class LoggingInitInfo
     var path: string = URLGLOBALS.getWebappPath() +PACKAGE;
         
         
-
+;
+    
 
     var FILEABPATH: AbPath = new AbPath(path, INITFILENAME);
         
         
-
+;
+    
 
     var file: AbFile = new AbFile(FILEABPATH);
         
         
-
+;
+    
 
     var document: Document = DomDocumentHelper.create(AbFileLocalInputStream(file))!;
         
         
-
+;
+    
 
 
 
@@ -117,8 +124,11 @@ export class LoggingInitInfo
     public static write(){
 
         try {
-            hasRead= false
-} catch(e: Exception)
+            hasRead= false;
+    
+
+                //: 
+} catch(e) 
             {
 
 
@@ -139,28 +149,34 @@ export class LoggingInitInfo
     var document: Document = LoggingInitInfo.getDoc()!;
         
         
-
+;
+    
 
     var logConfigsNodeList: NodeList = document.getElementsByTagName(LogConfigsData.getInstance()!.NAME)!;
         
         
-
+;
+    
 
     var logConfigsNode: Node = logConfigsNodeList!.item(0)!;
         
         
-
+;
+    
 
     var logConfigNodeVector: Vector = DomSearchHelper.getAllNodes(LogConfigData.getInstance()!.NAME, logConfigsNode!.getChildNodes())!;
         
         
-
-LoggingInitInfo.logConfigInfoList= BasicArrayList()
+;
+    
+LoggingInitInfo.logConfigInfoList= BasicArrayList();
+    
 
     var size: number = logConfigNodeVector!.length!;
         
         
-
+;
+    
 
 
 
@@ -172,19 +188,26 @@ LoggingInitInfo.logConfigInfoList= BasicArrayList()
 i < size; i++)
         {
 
-    var node: Node = logConfigNodeVector!.elementAt(i) as Node;
-        
-        
+    var node: Node = logConfigNodeVector!.elementAt(i);
 
+                         as Node;
+        
+        
+;
+    
 
     var logConfigInfo: LogConfig = new LogConfig(node);
         
         
-
-LoggingInitInfo.logConfigInfoList!.add(logConfigInfo)
+;
+    
+LoggingInitInfo.logConfigInfoList!.add(logConfigInfo);
+    
 }
 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
 
@@ -198,7 +221,8 @@ LoggingInitInfo.logConfigInfoList!.add(logConfigInfo)
 
     public static setHasRead(value: boolean){
 var value = value
-LoggingInitInfo.hasRead= value
+LoggingInitInfo.hasRead= value;
+    
 }
 
 
@@ -210,8 +234,10 @@ LoggingInitInfo.hasRead= value
                         if(!hasRead)
                         
                                     {
-                                    LoggingInitInfo.read()
-hasRead= true
+                                    LoggingInitInfo.read();
+    
+hasRead= true;
+    
 
                         if(LoggingInitInfo.logConfigInfoList == 
                                     null
@@ -234,14 +260,16 @@ hasRead= true
 
     public static set(logConfigInfoVector: BasicArrayList){
 var logConfigInfoVector = logConfigInfoVector
-LoggingInitInfo.logConfigInfoList= logConfigInfoVector
+LoggingInitInfo.logConfigInfoList= logConfigInfoVector;
+    
 }
 
 
                 //@Throws(Error::class)
             
     public static get(): BasicArrayList{
-LoggingInitInfo.updateIfNeeded()
+LoggingInitInfo.updateIfNeeded();
+    
 
 
 
@@ -254,17 +282,20 @@ LoggingInitInfo.updateIfNeeded()
                 //@Throws(Error::class)
             
     public static getTypeNameList(): BasicArrayList{
-LoggingInitInfo.updateIfNeeded()
+LoggingInitInfo.updateIfNeeded();
+    
 
     var allLogTypeVector: BasicArrayList = new BasicArrayList();
         
         
-
+;
+    
 
     var size: number = LoggingInitInfo.logConfigInfoList!.size()!;
         
         
-
+;
+    
 
 
 
@@ -279,17 +310,20 @@ index < size; index++)
     var logConfigInfo: LogConfig = LoggingInitInfo.logConfigInfoList!.objectArray[index]! as LogConfig;
         
         
-
+;
+    
 
     var logTypeVector: BasicArrayList = logConfigInfo!.getTypeVector()!;
         
         
-
+;
+    
 
                         if(logConfigInfo!.isEnabled())
                         
                                     {
-                                    allLogTypeVector!.addAll(logTypeVector)
+                                    allLogTypeVector!.addAll(logTypeVector);
+    
 
                                     }
                                 
@@ -307,17 +341,20 @@ index < size; index++)
                 //@Throws(Error::class)
             
     public static getTypeList(): BasicArrayList{
-LoggingInitInfo.updateIfNeeded()
+LoggingInitInfo.updateIfNeeded();
+    
 
     var allLogTypeVector: BasicArrayList = new BasicArrayList();
         
         
-
+;
+    
 
     var size: number = LoggingInitInfo.logConfigInfoList!.size()!;
         
         
-
+;
+    
 
 
 
@@ -332,17 +369,20 @@ index < size; index++)
     var logConfigInfo: LogConfig = LoggingInitInfo.logConfigInfoList!.objectArray[index]! as LogConfig;
         
         
-
+;
+    
 
     var logTypeVector: BasicArrayList = logConfigInfo!.getTypeVector()!;
         
         
-
+;
+    
 
                         if(logConfigInfo!.isEnabled())
                         
                                     {
-                                    allLogTypeVector!.addAll(logTypeVector)
+                                    allLogTypeVector!.addAll(logTypeVector);
+    
 
                                     }
                                 
@@ -371,7 +411,9 @@ public constructor (){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return true;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
 
@@ -392,6 +434,8 @@ public constructor (){
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return LoggingInitInfo.logConfigInfoList!.size();
+
+                        ;
     
 }
 
@@ -403,14 +447,19 @@ public constructor (){
     var document: Document = LoggingInitInfo.getDoc()!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return DomDocumentHelper.toString(document);
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
 

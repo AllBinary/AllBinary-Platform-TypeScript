@@ -18,7 +18,10 @@
 
 
 
-import { Hashtable } from "../../../../../java/util/Hashtable.js";
+            import Hashtable from "@ohos.util.HashMap";
+        
+
+//import { Hashtable } from "../../../../../java/util/Hashtable.js";
 
     
 import { NullUtil } from "../../../../../org/allbinary/logic/NullUtil.js";
@@ -82,7 +85,7 @@ public constructor (){
 }
 
 
-    public toHashtable(): Hashtable<Any, Any>{
+    public toHashtable(): Hashtable<any, any>{
 
 
 
@@ -98,6 +101,8 @@ public constructor (){
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return BasicArrayListUtil.getInstance()!.getImmutableInstance();
+
+                        ;
     
 }
 

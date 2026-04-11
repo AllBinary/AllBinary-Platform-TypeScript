@@ -18,10 +18,13 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { HashMap } from "../../../../../../../java/util/HashMap.js";
 
     
-import { Vector } from "../../../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../../../java/util/Vector.js";
 
     
 import { DomSearchHelper } from "../../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js";
@@ -79,39 +82,46 @@ public constructor (filePath: string){
     var xmlFile: AbFile = new AbFile(filePath);
         
         
-
-this.document= DomDocumentFileHelper.create(xmlFile)
+;
+    
+this.document= DomDocumentFileHelper.create(xmlFile);
+    
 }
 
 
-    public toTransformInfoPropertiesHashMap(): HashMap<Any, Any>{
+    public toTransformInfoPropertiesHashMap(): HashMap<any, any>{
 
         try {
             
-    var transformInfoPropertiesHashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var transformInfoPropertiesHashMap: HashMap<any, any> = new HashMap<any, any>();
         
         
-
+;
+    
 
     var transformInfosNode: Node = this.document.getElementsByTagName(TransformInfosData.getInstance()!.NAME)!.item(0)!;
         
         
-
+;
+    
 
     var transformInfosChildNodeList: NodeList = transformInfosNode!.getChildNodes()!;
         
         
-
+;
+    
 
     var transformInfoNodeVector: Vector = DomSearchHelper.getAllNodes(TransformInfoData.getInstance()!.NAME, transformInfosChildNodeList)!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Size: " +transformInfoNodeVector!.length, this, "toTransformInfoPropertiesHashMap()")
+                                    logUtil!.put("Size: " +transformInfoNodeVector!.length, this, "toTransformInfoPropertiesHashMap()");
+    
 
                                     }
                                 
@@ -119,13 +129,16 @@ this.document= DomDocumentFileHelper.create(xmlFile)
     var size: number = transformInfoNodeVector!.length!;
         
         
-
+;
+    
 
     var node: Node
-
+;
+    
 
     var transformInfoProperties: TransformInfoProperties
-
+;
+    
 
 
 
@@ -136,9 +149,14 @@ this.document= DomDocumentFileHelper.create(xmlFile)
         
 index < size; index++)
         {
-node= transformInfoNodeVector!.get(index) as Node
-transformInfoProperties= TransformInfoPropertiesFactory.getInstance()!.getInstance(node)
-transformInfoPropertiesHashMap!.put(transformInfoProperties!.getName(), transformInfoProperties)
+node= transformInfoNodeVector!.get(index);
+
+                         as Node;
+    
+transformInfoProperties= TransformInfoPropertiesFactory.getInstance()!.getInstance(node);
+    
+transformInfoPropertiesHashMap!.put(transformInfoProperties!.getName(), transformInfoProperties);
+    
 }
 
 
@@ -147,7 +165,9 @@ transformInfoPropertiesHashMap!.put(transformInfoProperties!.getName(), transfor
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return transformInfoPropertiesHashMap;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
@@ -157,8 +177,10 @@ transformInfoPropertiesHashMap!.put(transformInfoProperties!.getName(), transfor
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, "toTransformInfoPropertiesHashMap()", e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, "toTransformInfoPropertiesHashMap()", e);
+    
 
                                     }
                                 

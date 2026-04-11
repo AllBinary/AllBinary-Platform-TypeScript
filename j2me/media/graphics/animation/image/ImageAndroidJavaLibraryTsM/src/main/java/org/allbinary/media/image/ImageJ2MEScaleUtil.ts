@@ -69,8 +69,14 @@ index < images.length; index++)
     var image: Image = images[index]!;
         
         
+;
+    
+images[index]= ImageScaleUtil.getInstance()!.createImage(GameFeatureImageCacheFactory.getInstance(), image, width.toFloat() /2, image.getWidth();
 
-images[index]= ImageScaleUtil.getInstance()!.createImage(GameFeatureImageCacheFactory.getInstance(), image, width.toFloat() /2, image.getWidth().toFloat(), height.toFloat(), image.getHeight().toFloat(), false)
+                        .toFloat(), height.toFloat(), image.getHeight();
+
+                        .toFloat(), false);
+    
 }
 
 
@@ -92,7 +98,13 @@ var height = height
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return ImageScaleUtil.getInstance()!.createImage(GameFeatureImageCacheFactory.getInstance(), image, width.toFloat(), image.getWidth().toFloat(), height.toFloat(), image.getHeight().toFloat(), false);
+                        return ImageScaleUtil.getInstance()!.createImage(GameFeatureImageCacheFactory.getInstance(), image, width.toFloat(), image.getWidth();
+
+                        .toFloat(), height.toFloat(), image.getHeight();
+
+                        .toFloat(), false);
+
+                        ;
     
 }
 

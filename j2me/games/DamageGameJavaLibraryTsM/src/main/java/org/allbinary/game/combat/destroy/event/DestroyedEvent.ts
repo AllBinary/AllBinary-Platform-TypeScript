@@ -57,7 +57,8 @@ public constructor (combatGameCanvas: AllBinaryGameCanvas)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setAllBinaryGameCanvas(combatGameCanvas)
+this.setAllBinaryGameCanvas(combatGameCanvas);
+    
 }
 
 
@@ -83,13 +84,15 @@ this.setAllBinaryGameCanvas(combatGameCanvas)
 
     setAllBinaryGameCanvas(allBinaryGameCanvas: AllBinaryGameCanvas){
 var allBinaryGameCanvas = allBinaryGameCanvas
-this.allBinaryGameCanvas= allBinaryGameCanvas
+this.allBinaryGameCanvas= allBinaryGameCanvas;
+    
 }
 
 
     public setLayerInterfaceForCircularStaticPool(allBinaryLayerInterface: AllBinaryLayer){
 var allBinaryLayerInterface = allBinaryLayerInterface
-this.allBinaryLayerInterface= allBinaryLayerInterface
+this.allBinaryLayerInterface= allBinaryLayerInterface;
+    
 }
 
 
@@ -98,17 +101,25 @@ this.allBinaryLayerInterface= allBinaryLayerInterface
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("DestroyedEvent: \n")
-stringBuffer!.append("AllBinaryLayerInterface: ")
-stringBuffer!.append(this.allBinaryLayerInterface!.toString())
-stringBuffer!.append("\nAllBinaryGameCanvas: ")
-stringBuffer!.append(StringUtil.getInstance()!.toString(this.getAllBinaryGameCanvas()))
+;
+    
+stringBuffer!.append("DestroyedEvent: \n");
+    
+stringBuffer!.append("AllBinaryLayerInterface: ");
+    
+stringBuffer!.append(this.allBinaryLayerInterface!.toString());
+    
+stringBuffer!.append("\nAllBinaryGameCanvas: ");
+    
+stringBuffer!.append(StringUtil.getInstance()!.toString(this.getAllBinaryGameCanvas()));
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

@@ -81,7 +81,8 @@ public constructor (image: Image, basicColorArray: BasicColor[], width: number, 
 
                             //For kotlin this is before the body of the constructor.
                     
-this.basicColorArray= basicColorArray
+this.basicColorArray= basicColorArray;
+    
 }
 
 
@@ -93,7 +94,8 @@ this.basicColorArray= basicColorArray
     var sprite: Sprite = animationFactorySpriteScaleUtil!.createImage(this.getImage(), this.animationFactoryInitializationVisitor!.width, this.animationFactoryInitializationVisitor!.height, this.scaleProperties!.scaleWidth, this.scaleProperties!.scaleHeight)!;
         
         
-
+;
+    
 
 
 
@@ -112,6 +114,8 @@ this.basicColorArray= basicColorArray
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getInstance(0);
+
+                        ;
     
 }
 

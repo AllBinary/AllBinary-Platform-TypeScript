@@ -86,7 +86,8 @@ public constructor (ownerLayer: PathFindingLayerInterface)
     var size: number = this.getConnectedWaypointList()!.size()!;
         
         
-
+;
+    
 
                         if(size > 0)
                         
@@ -95,18 +96,22 @@ public constructor (ownerLayer: PathFindingLayerInterface)
     var occupyList: BasicArrayList = this.ownerLayer!.getGeographicMapCellPositionArea()!.getOccupyingGeographicMapCellPositionList()!;
         
         
-
+;
+    
 
     var outOfResources: boolean = true;
         
         
-
+;
+    
 
     var geologicalGeographicMapCellPosition: GeologicalGeographicMapCellPosition
-
+;
+    
 
     var geologicalResource: GeologicalResource
-
+;
+    
 
 
 
@@ -117,35 +122,49 @@ public constructor (ownerLayer: PathFindingLayerInterface)
         
 --index >= 0; )
         {
-geologicalGeographicMapCellPosition= occupyList!.get(index) as GeologicalGeographicMapCellPosition
-geologicalResource= geologicalGeographicMapCellPosition!.getGeologicalResource()
+geologicalGeographicMapCellPosition= occupyList!.get(index);
+
+                         as GeologicalGeographicMapCellPosition;
+    
+geologicalResource= geologicalGeographicMapCellPosition!.getGeologicalResource();
+    
 
                         if(geologicalResource!.getTotal() >= 1)
                         
                                     {
-                                    outOfResources= false
+                                    outOfResources= false;
+    
 
-    var maxResourceLoad: number = unitLayer!.getMaxResourceLoad().toInt();
+    var maxResourceLoad: number = unitLayer!.getMaxResourceLoad();
+
+                        .toInt();
         
         
-
-geologicalResource!.remove(maxResourceLoad)
-unitLayer!.setLoad(maxResourceLoad)
+;
+    
+geologicalResource!.remove(maxResourceLoad);
+    
+unitLayer!.setLoad(maxResourceLoad);
+    
 
                                     }
                                 
 }
 
 
-    var waypointInfoHudPaintable: WaypointInfoHudPaintable = this.ownerLayer!.getHudPaintable() as WaypointInfoHudPaintable;
-        
-        
+    var waypointInfoHudPaintable: WaypointInfoHudPaintable = this.ownerLayer!.getHudPaintable();
 
+                         as WaypointInfoHudPaintable;
+        
+        
+;
+    
 
                         if(this.ownerLayer == waypointInfoHudPaintable!.getRtsLayer())
                         
                                     {
-                                    waypointInfoHudPaintable!.updateSelectionInfo()
+                                    waypointInfoHudPaintable!.updateSelectionInfo();
+    
 
                                     }
                                 
@@ -154,27 +173,36 @@ unitLayer!.setLoad(maxResourceLoad)
                         
                                     {
                                     
-    var unitWaypointBehavior: UnitWaypointBehavior = unitLayer!.getWaypointBehavior() as UnitWaypointBehavior;
-        
-        
+    var unitWaypointBehavior: UnitWaypointBehavior = unitLayer!.getWaypointBehavior();
 
+                         as UnitWaypointBehavior;
+        
+        
+;
+    
 
     var rtsLayer: RTSLayer
-
+;
+    
 
         while(this.getConnectedWaypointList()!.size() > 0)
         {
-rtsLayer= this.getConnectedWaypointList()!.get(0) as RTSLayer
+rtsLayer= this.getConnectedWaypointList()!.get(0);
+
+                         as RTSLayer;
+    
 
                         if(rtsLayer!.isDestroyed())
                         
                                     {
-                                    this.getConnectedWaypointList()!.remove(rtsLayer)
+                                    this.getConnectedWaypointList()!.remove(rtsLayer);
+    
 
                                     }
                                 
                         else {
-                            unitWaypointBehavior!.insertWaypoint(0, rtsLayer)
+                            unitWaypointBehavior!.insertWaypoint(0, rtsLayer);
+    
 break;
 
                     

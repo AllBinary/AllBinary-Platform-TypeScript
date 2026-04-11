@@ -19,7 +19,7 @@ export class ViewSwapper
          {
         
 
-    public static readonly NULL_VIEW_ARRAY: View[] = new Array(0);
+    public static readonly NULL_VIEW_ARRAY: View[] = [];
         
         
 
@@ -43,30 +43,37 @@ public constructor (activity: Activity, rootViewId: number){
             super();
             var activity = activity
 var rootViewId = rootViewId
-this.activity= activity
-this.rootViewId= rootViewId
+this.activity= activity;
+    
+this.rootViewId= rootViewId;
+    
 }
 
 
     public setMainViews(viewArray: View[]){
 var viewArray = viewArray
-this.mainViewArray= viewArray
+this.mainViewArray= viewArray;
+    
 }
 
 
     public setTopViewArray(topViewArray: View[]){
 var topViewArray = topViewArray
-this.topViewArray= topViewArray
+this.topViewArray= topViewArray;
+    
 }
 
 
     public setMainView(id: number){
 var id = id
 
-    var viewGroup: ViewGroup = this.activity.findViewById(rootViewId) as ViewGroup;
-        
-        
+    var viewGroup: ViewGroup = this.activity.findViewById(rootViewId);
 
+                         as ViewGroup;
+        
+        
+;
+    
 
                         if(id != this.currentMainViewId)
                         
@@ -81,7 +88,8 @@ var id = id
         
 index < this.topViewArray!.length; index++)
         {
-viewGroup!.removeView(this.topViewArray[index]!)
+viewGroup!.removeView(this.topViewArray[index]!);
+    
 }
 
 
@@ -98,7 +106,8 @@ index < this.mainViewArray!.length; index++)
                         if(id != this.mainViewArray[index]!.getId())
                         
                                     {
-                                    viewGroup!.removeView(this.mainViewArray[index]!)
+                                    viewGroup!.removeView(this.mainViewArray[index]!);
+    
 
                                     }
                                 
@@ -118,8 +127,10 @@ index < this.mainViewArray!.length; index++)
                         if(id == this.mainViewArray[index]!.getId())
                         
                                     {
-                                    viewGroup!.addView(this.mainViewArray[index]!)
-this.currentMainViewId= id
+                                    viewGroup!.addView(this.mainViewArray[index]!);
+    
+this.currentMainViewId= id;
+    
 
                                     }
                                 
@@ -135,7 +146,8 @@ this.currentMainViewId= id
         
 index < this.topViewArray!.length; index++)
         {
-viewGroup!.addView(this.topViewArray[index]!)
+viewGroup!.addView(this.topViewArray[index]!);
+    
 }
 
 

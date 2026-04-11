@@ -76,61 +76,78 @@ var document = document
     var basketInterface: BasketInterface = this.getWeblisketSession()!.getOrder()!.getBasket()!;
         
         
-
+;
+    
 
     var basketNode: Node = document.createElement(BasketData.BASKET)!;
         
         
-
+;
+    
 
     var totalNumberNode: Node = document.createElement(SearchData.TOTAL_NUMBER_ITEMS)!;
         
         
-
+;
+    
 
     var totalNumberTextNode: Node = document.createTextNode(basketInterface!.getNumberOfItems()!.toString())!;
         
         
-
-totalNumberNode!.appendChild(totalNumberTextNode)
+;
+    
+totalNumberNode!.appendChild(totalNumberTextNode);
+    
 
     var totalWeightNode: Node = document.createElement(BasketData.TOTALWEIGHT)!;
         
         
-
+;
+    
 
     var totalWeightTextNode: Node = document.createTextNode(basketInterface!.getTotalWeight()!.toString())!;
         
         
-
-totalWeightNode!.appendChild(totalWeightTextNode)
+;
+    
+totalWeightNode!.appendChild(totalWeightTextNode);
+    
 
     var subTotalNode: Node = document.createElement(BasketData.SUBTOTAL)!;
         
         
-
+;
+    
 
     var subTotalTextNode: Node = document.createTextNode(basketInterface!.getSubTotal()!.toString())!;
         
         
-
-subTotalNode!.appendChild(subTotalTextNode)
-basketNode!.appendChild(totalNumberNode)
-basketNode!.appendChild(totalWeightNode)
-basketNode!.appendChild(subTotalNode)
+;
+    
+subTotalNode!.appendChild(subTotalTextNode);
+    
+basketNode!.appendChild(totalNumberNode);
+    
+basketNode!.appendChild(totalWeightNode);
+    
+basketNode!.appendChild(subTotalNode);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return basketNode;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.XSLLOGGINGERROR))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.FAILURE, this, "toXmlNode", e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, "toXmlNode", e);
+    
 
                                     }
                                 
@@ -144,7 +161,8 @@ basketNode!.appendChild(subTotalNode)
 
 
     public addDomNodeInterfaces(){
-this.addDomNodeInterface(this as DomNodeInterface)
+this.addDomNodeInterface(this as DomNodeInterface);
+    
 }
 
 
@@ -153,20 +171,26 @@ this.addDomNodeInterface(this as DomNodeInterface)
     public view(): string{
 
         try {
-            this.addDomNodeInterfaces()
+            this.addDomNodeInterfaces();
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.view();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e);
+    
 
                                     }
                                 

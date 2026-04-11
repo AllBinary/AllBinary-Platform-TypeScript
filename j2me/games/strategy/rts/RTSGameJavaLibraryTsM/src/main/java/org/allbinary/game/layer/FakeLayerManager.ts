@@ -69,8 +69,10 @@ public constructor (gameInfo: GameInfo)
 
     public setGeographicMapInterface(geographicMapInterfaceArray: BasicGeographicMap[]){
     //var geographicMapInterfaceArray = geographicMapInterfaceArray
-this.geographicMapInterfaceArray= geographicMapInterfaceArray
-this.geographicMapCellTypeArray= new Array(this.geographicMapInterfaceArray!.length)
+this.geographicMapInterfaceArray= geographicMapInterfaceArray;
+    
+this.geographicMapCellTypeArray= new Array(this.geographicMapInterfaceArray!.length);
+    
 }
 
 

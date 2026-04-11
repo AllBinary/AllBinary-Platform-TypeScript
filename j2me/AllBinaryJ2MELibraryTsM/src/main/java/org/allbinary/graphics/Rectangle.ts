@@ -44,9 +44,12 @@ public constructor (point: GPoint, width: number, height: number){
             var point = point
 var width = width
 var height = height
-this.point= point
-this.width= width
-this.height= height
+this.point= point;
+    
+this.width= width;
+    
+this.height= height;
+    
 }
 
 
@@ -62,7 +65,8 @@ this.height= height
 
     public setPoint(point: GPoint){
     //var point = point
-this.point= point
+this.point= point;
+    
 }
 
 
@@ -98,7 +102,8 @@ this.point= point
 
     public setWidth(width: number){
 var width = width
-this.width= width
+this.width= width;
+    
 }
 
 
@@ -114,7 +119,8 @@ this.width= width
 
     public setHeight(height: number){
 var height = height
-this.height= height
+this.height= height;
+    
 }
 
 
@@ -123,23 +129,37 @@ this.height= height
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(this.getPoint()!.toString())
-stringBuffer!.append(CommonSeps.getInstance()!.SPACE)
-stringBuffer!.append(CommonLabels.getInstance()!.WIDTH_LABEL)
-stringBuffer!.appendint(this.getWidth())
-stringBuffer!.append(CommonSeps.getInstance()!.SPACE)
-stringBuffer!.append(CommonLabels.getInstance()!.HEIGHT_LABEL)
-stringBuffer!.appendint(this.getHeight())
-stringBuffer!.append(" MaxX: ")
-stringBuffer!.appendint(this.getMaxX())
-stringBuffer!.append(" MaxY: ")
-stringBuffer!.appendint(this.getMaxY())
+;
+    
+stringBuffer!.append(this.getPoint()!.toString());
+    
+stringBuffer!.append(CommonSeps.getInstance()!.SPACE);
+    
+stringBuffer!.append(CommonLabels.getInstance()!.WIDTH_LABEL);
+    
+stringBuffer!.appendint(this.getWidth());
+    
+stringBuffer!.append(CommonSeps.getInstance()!.SPACE);
+    
+stringBuffer!.append(CommonLabels.getInstance()!.HEIGHT_LABEL);
+    
+stringBuffer!.appendint(this.getHeight());
+    
+stringBuffer!.append(" MaxX: ");
+    
+stringBuffer!.appendint(this.getMaxX());
+    
+stringBuffer!.append(" MaxY: ");
+    
+stringBuffer!.appendint(this.getMaxY());
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

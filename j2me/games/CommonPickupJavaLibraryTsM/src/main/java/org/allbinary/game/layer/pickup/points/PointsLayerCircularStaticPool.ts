@@ -38,7 +38,8 @@ public constructor (allbinaryLayerFactoryInterface: AllBinaryLayerFactoryInterfa
             super();
             var allbinaryLayerFactoryInterface = allbinaryLayerFactoryInterface
 var total = total
-super.init(allbinaryLayerFactoryInterface, total)
+super.init(allbinaryLayerFactoryInterface, total);
+    
 }
 
 
@@ -47,16 +48,21 @@ super.init(allbinaryLayerFactoryInterface, total)
     public visit(sourceLayerInterface: AllBinaryLayer){
 var sourceLayerInterface = sourceLayerInterface
 
-    var pointsLayer: PointsLayer = this.getNextInstance() as PointsLayer;
-        
-        
+    var pointsLayer: PointsLayer = this.getNextInstance();
 
+                         as PointsLayer;
+        
+        
+;
+    
 
     var scoreableInterface: ScoreableInterface = sourceLayerInterface as ScoreableInterface;
         
         
-
-pointsLayer!.visit(scoreableInterface)
+;
+    
+pointsLayer!.visit(scoreableInterface);
+    
 }
 
 

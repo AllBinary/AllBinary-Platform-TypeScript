@@ -18,10 +18,13 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { HashMap } from "../../../../../java/util/HashMap.js";
 
     
-import { Vector } from "../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../java/util/Vector.js";
 
     
 import { StoreFrontData } from "../../../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js";
@@ -69,7 +72,8 @@ public constructor ()
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setTableName(TABLENAME)
+this.setTableName(TABLENAME);
+    
 }
 
 
@@ -77,22 +81,27 @@ this.setTableName(TABLENAME)
 var values = values
 
         try {
-            super.insert(values)
+            super.insert(values);
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.SUCCESS, this, INSERT)
+                                    logUtil!.put(this.commonStrings!.SUCCESS, this, INSERT);
+    
 
                                     }
                                 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.FAILURE, this, INSERT, e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, INSERT, e);
+    
 
                                     }
                                 
@@ -105,17 +114,21 @@ var values = values
 var store = store
 var keywords = keywords
 
-    var whereHashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var whereHashMap: HashMap<any, any> = new HashMap<any, any>();
         
         
-
-whereHashMap!.put(StoreFrontData.getInstance()!.NAME, store)
-whereHashMap!.put(BasicItemData.KEYWORDS, keywords)
+;
+    
+whereHashMap!.put(StoreFrontData.getInstance()!.NAME, store);
+    
+whereHashMap!.put(BasicItemData.KEYWORDS, keywords);
+    
 
     var file: string = super.getField(whereHashMap, SearchData.PAGE)!;
         
         
-
+;
+    
 
 
 
@@ -127,7 +140,8 @@ whereHashMap!.put(BasicItemData.KEYWORDS, keywords)
 
     public delete(keywords: string){
 var keywords = keywords
-super.deleteWhere(BasicItemData.KEYWORDS, keywords)
+super.deleteWhere(BasicItemData.KEYWORDS, keywords);
+    
 }
 
 
@@ -136,7 +150,8 @@ super.deleteWhere(BasicItemData.KEYWORDS, keywords)
     var returnStr: string = super.dropTable()!;
         
         
-
+;
+    
 
 
 
@@ -146,9 +161,12 @@ super.deleteWhere(BasicItemData.KEYWORDS, keywords)
 }
 
 
-    public update(updatedValues: HashMap<Any, Any>){
+    public update(updatedValues: HashMap<any, any>){
 var updatedValues = updatedValues
-super.updateWhere(BasicItemData.KEYWORDS, updatedValues!.get(BasicItemData.KEYWORDS) as String, updatedValues)
+super.updateWhere(BasicItemData.KEYWORDS, updatedValues!.get(BasicItemData.KEYWORDS);
+
+                         as String, updatedValues);
+    
 }
 
 
@@ -157,13 +175,17 @@ super.updateWhere(BasicItemData.KEYWORDS, updatedValues!.get(BasicItemData.KEYWO
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(TABLENAME)!.append(this.sqlStrings!.START)!.append(StoreFrontData.getInstance()!.NAME)!.append(this.sqlTypeStrings!.SIXTY_CHAR_COLUMN_NOT_NULL)!.append(BasicItemData.KEYWORDS)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(SearchData.PAGE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(this.sqlStrings!.PRIMARY_KEY)!.append(StoreFrontData.getInstance()!.NAME)!.append(CommonSeps.getInstance()!.COMMA_SEP)!.append(BasicItemData.KEYWORDS)!.append(this.sqlStrings!.END)
+;
+    
+stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(TABLENAME)!.append(this.sqlStrings!.START)!.append(StoreFrontData.getInstance()!.NAME)!.append(this.sqlTypeStrings!.SIXTY_CHAR_COLUMN_NOT_NULL)!.append(BasicItemData.KEYWORDS)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(SearchData.PAGE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(this.sqlStrings!.PRIMARY_KEY)!.append(StoreFrontData.getInstance()!.NAME)!.append(CommonSeps.getInstance()!.COMMA_SEP)!.append(BasicItemData.KEYWORDS)!.append(this.sqlStrings!.END);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 
@@ -174,6 +196,8 @@ stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(TABLENAME)!.append(t
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.createTable(this.createTableStatement());
+
+                        ;
     
 }
 

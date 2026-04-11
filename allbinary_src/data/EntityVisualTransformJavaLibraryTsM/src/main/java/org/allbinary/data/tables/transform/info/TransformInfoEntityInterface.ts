@@ -18,10 +18,13 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { HashMap } from "../../../../../../java/util/HashMap.js";
 
     
-import { Vector } from "../../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../../java/util/Vector.js";
 
     
 import { PageContext } from "../../../../../../javax/servlet/jsp/PageContext.js";
@@ -39,7 +42,7 @@ interface TransformInfoEntityInterface extends BasicDataTableInterface {
 
                 //@Throws(Error::class)
             
-    public get(name: string, propertiesHashMap: HashMap<Any, Any>, pageContext: PageContext): TransformInfoInterface
+    public get(name: string, propertiesHashMap: HashMap<any, any>, pageContext: PageContext): TransformInfoInterface
 
                 //@Throws(Error::class)
             
@@ -53,7 +56,7 @@ interface TransformInfoEntityInterface extends BasicDataTableInterface {
 
     public insert(values: Vector)
 
-    public update(updatedValues: HashMap<Any, Any>)
+    public update(updatedValues: HashMap<any, any>)
 
 }
                 

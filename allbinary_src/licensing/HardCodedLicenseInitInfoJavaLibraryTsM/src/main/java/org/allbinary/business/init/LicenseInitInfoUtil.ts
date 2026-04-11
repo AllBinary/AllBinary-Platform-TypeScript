@@ -82,6 +82,8 @@ var initData = initData
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return readAgain(0);
+
+                        ;
     
 }
 
@@ -95,9 +97,12 @@ var initializeCounter = initializeCounter
     var licenseInitInfo: LicenseInitInfo = new LicenseInitInfo();
         
         
-
-licenseInitInfo!.clearServers()
-licenseInitInfo!.addServer(OFFICIAL_ALLBINARY_SERVICES_SERVER)
+;
+    
+licenseInitInfo!.clearServers();
+    
+licenseInitInfo!.addServer(OFFICIAL_ALLBINARY_SERVICES_SERVER);
+    
 
 
 

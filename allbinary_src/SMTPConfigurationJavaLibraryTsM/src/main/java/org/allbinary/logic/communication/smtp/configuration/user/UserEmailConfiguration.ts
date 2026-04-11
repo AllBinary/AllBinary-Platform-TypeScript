@@ -56,14 +56,16 @@ public constructor (){
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.CONSTRUCTOR, this, this.commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put(this.commonStrings!.CONSTRUCTOR, this, this.commonStrings!.CONSTRUCTOR);
+    
 
                                     }
                                 
-this.setUserEmailEventsConfigurationInterface(UserEmailEventsConfiguration())
+this.setUserEmailEventsConfigurationInterface(UserEmailEventsConfiguration());
+    
 }
 
-public constructor (hashMap: HashMap<Any, Any>){
+public constructor (hashMap: HashMap<any, any>){
 
             super();
             var hashMap = hashMap
@@ -71,11 +73,13 @@ public constructor (hashMap: HashMap<Any, Any>){
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.CONSTRUCTOR, this, this.commonStrings!.CONSTRUCTOR)
+                                    logUtil!.put(this.commonStrings!.CONSTRUCTOR, this, this.commonStrings!.CONSTRUCTOR);
+    
 
                                     }
                                 
-this.setUserEmailEventsConfigurationInterface(UserEmailEventsConfiguration(hashMap))
+this.setUserEmailEventsConfigurationInterface(UserEmailEventsConfiguration(hashMap));
+    
 }
 
 
@@ -91,7 +95,8 @@ this.setUserEmailEventsConfigurationInterface(UserEmailEventsConfiguration(hashM
 
     public setUserEmailEventsConfigurationInterface(userEmailEventsConfigurationInterface: UserEmailEventsConfigurationInterface){
 var userEmailEventsConfigurationInterface = userEmailEventsConfigurationInterface
-this.userEmailEventsConfigurationInterface= userEmailEventsConfigurationInterface
+this.userEmailEventsConfigurationInterface= userEmailEventsConfigurationInterface;
+    
 }
 
 

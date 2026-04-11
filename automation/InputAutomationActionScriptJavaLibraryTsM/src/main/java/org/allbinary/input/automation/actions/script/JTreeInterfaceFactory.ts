@@ -34,7 +34,8 @@ export class JTreeInterfaceFactory
 
     public set(jTreeInterface: JTreeInterface){
 var jTreeInterface = jTreeInterface
-this.jTreeInterface= jTreeInterface
+this.jTreeInterface= jTreeInterface;
+    
 }
 
 

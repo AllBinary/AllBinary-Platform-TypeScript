@@ -101,15 +101,19 @@ public constructor (inputMappingInterface: InputMappingInterface, basicColor: Ba
             super();
                 //var inputMappingInterface = inputMappingInterface
     //var basicColor = basicColor
-this.inputMappingInterface= inputMappingInterface
-CompleteMotionGestureInputEventHandler.getInstance()!.addListener(this)
-this.touchButtonsPaintable= TouchButtonsMappingPaintable(basicColor)
+this.inputMappingInterface= inputMappingInterface;
+    
+CompleteMotionGestureInputEventHandler.getInstance()!.addListener(this);
+    
+this.touchButtonsPaintable= TouchButtonsMappingPaintable(basicColor);
+    
 }
 
 
     public onEvent(eventObject: AllBinaryEventObject){
     //var eventObject = eventObject
-ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
+ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
+    
 }
 
 
@@ -133,33 +137,40 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this)
     //var completeMotionGestureInputEvent = completeMotionGestureInputEvent
 
         try {
-            logUtil!.put(commonStrings!.START, this, "onCompleteMotionGestureInputEvent")
+            logUtil!.put(commonStrings!.START, this, "onCompleteMotionGestureInputEvent");
+    
 
     var touchMotionGestureFactory: TouchMotionGestureFactory = TouchMotionGestureFactory.getInstance()!;
         
         
-
+;
+    
 
     var gameKeyCompleteMotionGestureInputEvent: GameKeyCompleteMotionGestureInputEvent = completeMotionGestureInputEvent as GameKeyCompleteMotionGestureInputEvent;
         
         
-
+;
+    
 
     var gameKey: GameKey = gameKeyCompleteMotionGestureInputEvent!.getGameKey()!;
         
         
-
+;
+    
 
     var motionGestureInput: MotionGestureInput = completeMotionGestureInputEvent!.getMotionGestureInput()!;
         
         
-
+;
+    
 
                         if(motionGestureInput == touchMotionGestureFactory!.RELEASED)
                         
                                     {
-                                    logUtil!.put(RELEASE, this, METHOD_NAME)
-released= true
+                                    logUtil!.put(RELEASE, this, METHOD_NAME);
+    
+released= true;
+    
 
 
 
@@ -170,10 +181,13 @@ released= true
                                     }
                                 
 
-                        if(motionGestureInput == TouchMotionGestureFactory.getInstance()!.NO_MOTION && !this.timeHelper!.isTime())
+                        if(motionGestureInput == TouchMotionGestureFactory.getInstance()!.NO_MOTION && !this.timeHelper!.isTime();
+
+                        )
                         
                                     {
-                                    logUtil!.put(FAST_REPEAT, this, METHOD_NAME)
+                                    logUtil!.put(FAST_REPEAT, this, METHOD_NAME);
+    
 
 
 
@@ -187,7 +201,8 @@ released= true
                         if(!released)
                         
                                     {
-                                    logUtil!.put(IGNORE, this, METHOD_NAME)
+                                    logUtil!.put(IGNORE, this, METHOD_NAME);
+    
 
 
 
@@ -197,20 +212,27 @@ released= true
 
                                     }
                                 
-released= false
+released= false;
+    
 logUtil!.put(StringMaker().
-                            append("GameKey: ")!.append(StringUtil.getInstance()!.toString(gameKey))!.append(" MotionGestureInput: ")!.append(StringUtil.getInstance()!.toString(motionGestureInput))!.toString(), this, METHOD_NAME)
-this.inputMappingInterface!.process(gameKey, motionGestureInput)
-} catch(e: Exception)
+                            append("GameKey: ")!.append(StringUtil.getInstance()!.toString(gameKey))!.append(" MotionGestureInput: ")!.append(StringUtil.getInstance()!.toString(motionGestureInput))!.toString(), this, METHOD_NAME);
+    
+this.inputMappingInterface!.process(gameKey, motionGestureInput);
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, METHOD_NAME, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, METHOD_NAME, e);
+    
 }
 
 }
 
 
     public process(){
-CompleteMotionGestureInputEventHandler.getInstance()!.removeListener(this)
+CompleteMotionGestureInputEventHandler.getInstance()!.removeListener(this);
+    
 }
 
 

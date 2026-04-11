@@ -18,7 +18,10 @@
 
 
 
-import { Hashtable } from "../../../../java/util/Hashtable.js";
+            import Hashtable from "@ohos.util.HashMap";
+        
+
+//import { Hashtable } from "../../../../java/util/Hashtable.js";
 
     
 import { ArtificialIntelligenceInterface } from "../../../../org/allbinary/ai/ArtificialIntelligenceInterface.js";
@@ -60,7 +63,7 @@ export class TopUBoundBounceAIFactory
 
                 //@Throws(Error::class)
             
-    public getInstance(hashtable: Hashtable<Any, Any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput): ArtificialIntelligenceInterface{
+    public getInstance(hashtable: Hashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput): ArtificialIntelligenceInterface{
 var hashtable = hashtable
 var ownerLayerInterface = ownerLayerInterface
 var gameInput = gameInput
@@ -68,42 +71,52 @@ var gameInput = gameInput
     var velocityInterfaceCompositeInterface: VelocityInterfaceCompositeInterface = ownerLayerInterface as VelocityInterfaceCompositeInterface;
         
         
+;
+    
 
+    var velocityInterface: VelocityInterface = velocityInterfaceCompositeInterface!.getVelocityProperties();
 
-    var velocityInterface: VelocityInterface = velocityInterfaceCompositeInterface!.getVelocityProperties() as VelocityInterface;
+                         as VelocityInterface;
         
         
-
+;
+    
 
     var maxDistancePerTick: number = (velocityInterface!.getMaxForwardVelocity() shr velocityInterface!.getVelocityXBasicDecimalP()!.getScaledFactor());
         
         
-
+;
+    
 
     var halfWidth: number = ownerLayerInterface!.getWidth() *2 +maxDistancePerTick +1;
         
         
-
+;
+    
 
     var halfHeight: number = ownerLayerInterface!.getHeight() *2 +maxDistancePerTick +1;
         
         
-
+;
+    
 
     var point: GPoint = PointFactory.getInstance()!.getInstance(halfWidth, halfHeight +60)!;
         
         
-
+;
+    
 
     var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
         
         
-
+;
+    
 
     var rectangle: Rectangle = new Rectangle(point, (displayInfo!.getLastWidth() -halfWidth -point.getX()), (displayInfo!.getLastHeight() -halfHeight -point.getY()));
         
         
-
+;
+    
 
 
 

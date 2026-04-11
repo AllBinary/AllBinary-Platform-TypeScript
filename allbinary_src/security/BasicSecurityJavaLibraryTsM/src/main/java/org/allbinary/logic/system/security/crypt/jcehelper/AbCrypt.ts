@@ -67,7 +67,8 @@ public constructor (algorithm: string){
 
             super();
                 //var algorithm = algorithm
-this.algorithm= algorithm
+this.algorithm= algorithm;
+    
 }
 
 
@@ -77,52 +78,66 @@ this.algorithm= algorithm
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
+;
+    
 
         try {
             
         try {
-            Security.addProvider(BouncyCastleProvider())
-} catch(e: Exception)
+            Security.addProvider(BouncyCastleProvider());
+    
+
+                //: 
+} catch(e) 
             {
-PreLogUtil.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e)
+PreLogUtil.putOE(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e);
+    
 }
 
 
-    var key: ByteArray = keyAsString!.encodeToByteArray()!;
+    var key: number[] = keyAsString!.encodeToByteArray()!;
         
         
-
+;
+    
 
     var keySpec: KeySpec = KeySpecFactory.getInstance()!.getInstance(this.algorithm, key)!;
         
         
-
+;
+    
 
     var keyFactory: SecretKeyFactory = SecretKeyFactory.getInstance(algorithm)!;
         
         
-
+;
+    
 
     var secretKey: SecretKey = keyFactory!.generateSecret(keySpec)!;
         
         
-
+;
+    
 
     var cipher: Cipher = Cipher.getInstance(algorithm)!;
         
         
+;
+    
+this.secretComposite= SecretComposite(secretKey, cipher, key);
+    
 
-this.secretComposite= SecretComposite(secretKey, cipher, key)
-} catch(e: Exception)
+                //: 
+} catch(e) 
             {
-PreLogUtil.put("init Failed", this, commonStrings!.INIT, e)
+PreLogUtil.putOE("init Failed", this, commonStrings!.INIT, e);
+    
 }
 
 }
 
 
-    public encrypt(array: ByteArray): ByteArray{
+    public encrypt(array: number[]): number[]{
     //var array = array
 
         try {
@@ -131,10 +146,15 @@ PreLogUtil.put("init Failed", this, commonStrings!.INIT, e)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.secretComposite!.encrypt(array);
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-PreLogUtil.put("Encrypt Failed", this, "encrypt", e)
+PreLogUtil.putOE("Encrypt Failed", this, "encrypt", e);
+    
 
 
 
@@ -146,7 +166,7 @@ PreLogUtil.put("Encrypt Failed", this, "encrypt", e)
 }
 
 
-    public decrypt(array: ByteArray): ByteArray{
+    public decrypt(array: number[]): number[]{
     //var array = array
 
         try {
@@ -155,10 +175,15 @@ PreLogUtil.put("Encrypt Failed", this, "encrypt", e)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.secretComposite!.decrypt(array);
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-PreLogUtil.put("decrypt Failed", this, "decrypt", e)
+PreLogUtil.putOE("decrypt Failed", this, "decrypt", e);
+    
 
 
 

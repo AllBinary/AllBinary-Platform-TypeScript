@@ -92,14 +92,22 @@ export class RTSLayerSelectedLogHelper extends RTSLayerLogHelper {
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(associatedAdvancedRTSGameLayer!.getName())
-stringBuffer!.append(this.commonSeps!.SPACE)
-stringBuffer!.append(CommonLabels.getInstance()!.START)
-stringBuffer!.appendint(pathsList!.size())
-stringBuffer!.append(" -> ")
-stringBuffer!.append(StringUtil.getInstance()!.toString(pathsList))
-logUtil!.put(stringBuffer!.toString(), this, "selected: setClosestGeographicMapCellHistory")
+;
+    
+stringBuffer!.append(associatedAdvancedRTSGameLayer!.getName());
+    
+stringBuffer!.append(this.commonSeps!.SPACE);
+    
+stringBuffer!.append(CommonLabels.getInstance()!.START);
+    
+stringBuffer!.appendint(pathsList!.size());
+    
+stringBuffer!.append(" -> ");
+    
+stringBuffer!.append(StringUtil.getInstance()!.toString(pathsList));
+    
+logUtil!.put(stringBuffer!.toString(), this, "selected: setClosestGeographicMapCellHistory");
+    
 }
 
 
@@ -113,18 +121,30 @@ logUtil!.put(stringBuffer!.toString(), this, "selected: setClosestGeographicMapC
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(associatedAdvancedRTSGameLayer!.getName())
-stringBuffer!.append(this.commonSeps!.SPACE)
-stringBuffer!.append(StringUtil.getInstance()!.toString(nextUnvisitedPathGeographicMapCellPosition))
-stringBuffer!.append(positionStrings!.DX_LABEL)
-stringBuffer!.appendint(dx)
-stringBuffer!.append(commonSeps!.SPACE)
-stringBuffer!.append(positionStrings!.DY_LABEL)
-stringBuffer!.appendint(dy)
-stringBuffer!.append(commonSeps!.SPACE)
-stringBuffer!.append(reason)
-logUtil!.put(stringBuffer!.toString(), this, "selected: trackTo")
+;
+    
+stringBuffer!.append(associatedAdvancedRTSGameLayer!.getName());
+    
+stringBuffer!.append(this.commonSeps!.SPACE);
+    
+stringBuffer!.append(StringUtil.getInstance()!.toString(nextUnvisitedPathGeographicMapCellPosition));
+    
+stringBuffer!.append(positionStrings!.DX_LABEL);
+    
+stringBuffer!.appendint(dx);
+    
+stringBuffer!.append(commonSeps!.SPACE);
+    
+stringBuffer!.append(positionStrings!.DY_LABEL);
+    
+stringBuffer!.appendint(dy);
+    
+stringBuffer!.append(commonSeps!.SPACE);
+    
+stringBuffer!.append(reason);
+    
+logUtil!.put(stringBuffer!.toString(), this, "selected: trackTo");
+    
 }
 
 
@@ -141,20 +161,34 @@ var targetAngle = targetAngle
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(associatedAdvancedRTSGameLayer!.getName())
-stringBuffer!.append(" steering - ")
-stringBuffer!.append(positionStrings!.DX_LABEL)
-stringBuffer!.appendint(dx)
-stringBuffer!.append(commonSeps!.SPACE)
-stringBuffer!.append(positionStrings!.DY_LABEL)
-stringBuffer!.appendint(dy)
-stringBuffer!.append(" angle: ")
-stringBuffer!.appendint(angle)
-stringBuffer!.append(" movementAngle: ")
-stringBuffer!.append(movementAngle!.name)
-stringBuffer!.append(commonSeps!.FORWARD_SLASH)
-stringBuffer!.appendshort(movementAngle!.getValue())
+;
+    
+stringBuffer!.append(associatedAdvancedRTSGameLayer!.getName());
+    
+stringBuffer!.append(" steering - ");
+    
+stringBuffer!.append(positionStrings!.DX_LABEL);
+    
+stringBuffer!.appendint(dx);
+    
+stringBuffer!.append(commonSeps!.SPACE);
+    
+stringBuffer!.append(positionStrings!.DY_LABEL);
+    
+stringBuffer!.appendint(dy);
+    
+stringBuffer!.append(" angle: ");
+    
+stringBuffer!.appendint(angle);
+    
+stringBuffer!.append(" movementAngle: ");
+    
+stringBuffer!.append(movementAngle!.name);
+    
+stringBuffer!.append(commonSeps!.FORWARD_SLASH);
+    
+stringBuffer!.appendshort(movementAngle!.getValue());
+    
 
                         if(angleInfo != 
                                     null
@@ -165,85 +199,101 @@ stringBuffer!.appendshort(movementAngle!.getValue())
     var angleIncrement: number = angleInfo!.getAngleIncrementInfo()!.getAngleIncrement()!;
         
         
-
-stringBuffer!.append(" angleIncrement: ")
-stringBuffer!.appendshort(angleIncrement)
+;
+    
+stringBuffer!.append(" angleIncrement: ");
+    
+stringBuffer!.appendshort(angleIncrement);
+    
 
                                     }
                                 
-stringBuffer!.append(" Evading: ")
-stringBuffer!.appendboolean(evading)
-logUtil!.put(stringBuffer!.toString(), this, TRACKTO_TURNTO)
+stringBuffer!.append(" Evading: ");
+    
+stringBuffer!.appendboolean(evading);
+    
+logUtil!.put(stringBuffer!.toString(), this, TRACKTO_TURNTO);
+    
 }
 
 
     public doneMoving(associatedAdvancedRTSGameLayer: PathFindingLayerInterface){
     //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
 logUtil!.put(StringMaker().
-                            append(associatedAdvancedRTSGameLayer!.getName())!.append(" steering - done moving 0,0")!.toString(), this, TRACKTO_TURNTO)
+                            append(associatedAdvancedRTSGameLayer!.getName())!.append(" steering - done moving 0,0")!.toString(), this, TRACKTO_TURNTO);
+    
 }
 
 
     public closeEnough(associatedAdvancedRTSGameLayer: PathFindingLayerInterface){
     //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
 logUtil!.put(StringMaker().
-                            append(associatedAdvancedRTSGameLayer!.getName())!.append(" steering - close enough")!.toString(), this, TRACKTO_TURNTO)
+                            append(associatedAdvancedRTSGameLayer!.getName())!.append(" steering - close enough")!.toString(), this, TRACKTO_TURNTO);
+    
 }
 
 
     public movingLeft(associatedAdvancedRTSGameLayer: PathFindingLayerInterface){
     //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
 logUtil!.put(StringMaker().
-                            append(associatedAdvancedRTSGameLayer!.getName())!.append(" steering - allow movingLeft")!.toString(), this, TRACKTO_TURNTO)
+                            append(associatedAdvancedRTSGameLayer!.getName())!.append(" steering - allow movingLeft")!.toString(), this, TRACKTO_TURNTO);
+    
 }
 
 
     public movingRight(associatedAdvancedRTSGameLayer: PathFindingLayerInterface){
     //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
 logUtil!.put(StringMaker().
-                            append(associatedAdvancedRTSGameLayer!.getName())!.append(" steering - allow movingRight")!.toString(), this, TRACKTO_TURNTO)
+                            append(associatedAdvancedRTSGameLayer!.getName())!.append(" steering - allow movingRight")!.toString(), this, TRACKTO_TURNTO);
+    
 }
 
 
     public movingUp(associatedAdvancedRTSGameLayer: PathFindingLayerInterface){
     //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
 logUtil!.put(StringMaker().
-                            append(associatedAdvancedRTSGameLayer!.getName())!.append(" steering - allow movingUp")!.toString(), this, TRACKTO_TURNTO)
+                            append(associatedAdvancedRTSGameLayer!.getName())!.append(" steering - allow movingUp")!.toString(), this, TRACKTO_TURNTO);
+    
 }
 
 
     public movingDown(associatedAdvancedRTSGameLayer: PathFindingLayerInterface){
     //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
 logUtil!.put(StringMaker().
-                            append(associatedAdvancedRTSGameLayer!.getName())!.append(" steering - allow movingDown")!.toString(), this, TRACKTO_TURNTO)
+                            append(associatedAdvancedRTSGameLayer!.getName())!.append(" steering - allow movingDown")!.toString(), this, TRACKTO_TURNTO);
+    
 }
 
 
     public currentMoveEnded(associatedAdvancedRTSGameLayer: PathFindingLayerInterface){
     //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
 logUtil!.put(StringMaker().
-                            append(associatedAdvancedRTSGameLayer!.getName())!.append(" steering - correct angle, but movement not needed for current deltas so reseting movement angle")!.toString(), this, TRACKTO_TURNTO)
+                            append(associatedAdvancedRTSGameLayer!.getName())!.append(" steering - correct angle, but movement not needed for current deltas so reseting movement angle")!.toString(), this, TRACKTO_TURNTO);
+    
 }
 
 
     public evade(associatedAdvancedRTSGameLayer: PathFindingLayerInterface){
     //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
 logUtil!.put(StringMaker().
-                            append(associatedAdvancedRTSGameLayer!.getName())!.append(" steering - evade")!.toString(), this, TRACKTO_TURNTO)
+                            append(associatedAdvancedRTSGameLayer!.getName())!.append(" steering - evade")!.toString(), this, TRACKTO_TURNTO);
+    
 }
 
 
     public rotateLeft(associatedAdvancedRTSGameLayer: PathFindingLayerInterface){
     //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
 logUtil!.put(StringMaker().
-                            append(associatedAdvancedRTSGameLayer!.getName())!.append(" steering - rotating left")!.toString(), this, TRACKTO_TURNTO)
+                            append(associatedAdvancedRTSGameLayer!.getName())!.append(" steering - rotating left")!.toString(), this, TRACKTO_TURNTO);
+    
 }
 
 
     public rotateRight(associatedAdvancedRTSGameLayer: PathFindingLayerInterface){
     //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
 logUtil!.put(StringMaker().
-                            append(associatedAdvancedRTSGameLayer!.getName())!.append(" steering - rotating right")!.toString(), this, TRACKTO_TURNTO)
+                            append(associatedAdvancedRTSGameLayer!.getName())!.append(" steering - rotating right")!.toString(), this, TRACKTO_TURNTO);
+    
 }
 
 
@@ -251,14 +301,16 @@ logUtil!.put(StringMaker().
     //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
     //var movementAngle = movementAngle
 logUtil!.put(StringMaker().
-                            append(associatedAdvancedRTSGameLayer!.getName())!.append(" steering - movementAngle: ")!.append(movementAngle!.name)!.append(commonSeps!.FORWARD_SLASH)!.appendshort(movementAngle!.getValue())!.toString(), this, TRACKTO_TURNTO)
+                            append(associatedAdvancedRTSGameLayer!.getName())!.append(" steering - movementAngle: ")!.append(movementAngle!.name)!.append(commonSeps!.FORWARD_SLASH)!.appendshort(movementAngle!.getValue())!.toString(), this, TRACKTO_TURNTO);
+    
 }
 
 
     public noRotation(associatedAdvancedRTSGameLayer: PathFindingLayerInterface){
     //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
 logUtil!.put(StringMaker().
-                            append(associatedAdvancedRTSGameLayer!.getName())!.append(" steering - Do not rotate")!.toString(), this, TRACKTO_TURNTO)
+                            append(associatedAdvancedRTSGameLayer!.getName())!.append(" steering - Do not rotate")!.toString(), this, TRACKTO_TURNTO);
+    
 }
 
 
@@ -271,9 +323,11 @@ logUtil!.put(StringMaker().
     var stringUtil: StringUtil = StringUtil.getInstance()!;
         
         
-
+;
+    
 logUtil!.put(StringMaker().
-                            append(associatedAdvancedRTSGameLayer!.getName())!.append(CommonSeps.getInstance()!.SPACE)!.appendint(geographicMapCellHistory!.getTotalVisited())!.append(CommonSeps.getInstance()!.SPACE)!.append(stringUtil!.toString(currentGeographicMapCellPosition))!.append(" - trying to move but not on path: ")!.append(stringUtil!.toString(pathList))!.toString(), this, "turnTo")
+                            append(associatedAdvancedRTSGameLayer!.getName())!.append(CommonSeps.getInstance()!.SPACE)!.appendint(geographicMapCellHistory!.getTotalVisited())!.append(CommonSeps.getInstance()!.SPACE)!.append(stringUtil!.toString(currentGeographicMapCellPosition))!.append(" - trying to move but not on path: ")!.append(stringUtil!.toString(pathList))!.toString(), this, "turnTo");
+    
 }
 
 

@@ -55,41 +55,51 @@ public constructor (keywords: string, searchParams: SearchParams, xslFile: strin
 var searchParams = searchParams
 var xslFile = xslFile
 var contentType = contentType
-this.keywords= keywords
-this.searchParams= searchParams
-this.xslFile= xslFile
-this.pageName= pageName
-this.contentType= contentType
+this.keywords= keywords;
+    
+this.searchParams= searchParams;
+    
+this.xslFile= xslFile;
+    
+this.pageName= pageName;
+    
+this.contentType= contentType;
+    
 }
 
 
     public setKeywords(value: string){
 var value = value
-this.keywords= value
+this.keywords= value;
+    
 }
 
 
     public setParams(searchParams: SearchParams){
 var searchParams = searchParams
-this.searchParams= searchParams
+this.searchParams= searchParams;
+    
 }
 
 
     public setXslFile(value: string){
 var value = value
-this.xslFile= value
+this.xslFile= value;
+    
 }
 
 
     public setFileBaseName(value: string){
 var value = value
-this.pageName= value
+this.pageName= value;
+    
 }
 
 
     public setContentType(value: string){
 var value = value
-this.contentType= value
+this.contentType= value;
+    
 }
 
 
@@ -120,7 +130,8 @@ this.contentType= value
     var path: string = URLGLOBALS.getMainPath() +FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH +this.xslFile;
         
         
-
+;
+    
 
 
 
@@ -159,6 +170,8 @@ var document = document
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return ModDomHelper.createNameValueNodes(document, SearchData.FILENAME, this.getFileBaseName());
+
+                        ;
     
 }
 

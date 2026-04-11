@@ -66,23 +66,28 @@ var log = log
     var specialMessage: string = log.getSpecialMessage()!;
         
         
-
+;
+    
 
     var anyType: any = {} = log.getObject()!;
         
         
-
+;
+    
 
     var functionName: string = log.getFunctionName()!;
         
         
-
+;
+    
 
     var exception: any = {} = log.getThrowable()!;
         
         
-
-this.put(specialMessage, anyType, functionName, exception)
+;
+    
+this.put(specialMessage, anyType, functionName, exception);
+    
 }
 
 
@@ -94,16 +99,17 @@ this.put(specialMessage, anyType, functionName, exception)
     var className: string = CommonStrings.getInstance()!.EMPTY;
         
         
+;
+    
 
-
-                        if(anyType!::class.toString()! != 
+                        if(anyType!.constructor.name.toString()! != 
                                     null
                                 )
                         
                                     {
                                     className= StringMaker().
-                            append(anyType!::class.toString()!)!.append(CommonSeps.getInstance()!.COLON)!.append(Integer.toHexString(anyType!.hashCode()))!.toString().toCharArray().concatToString()
-                                
+                            append(anyType!.constructor.name.toString()!)!.append(CommonSeps.getInstance()!.COLON)!.append(Integer.toHexString(anyType!.hashCode()))!.toString();
+    
 
                                     }
                                 
@@ -111,9 +117,12 @@ this.put(specialMessage, anyType, functionName, exception)
     var message: string = logFormatUtil!.getS(className, functionName, specialMessage)!;
         
         
-
-System.out.print(LOG_SUCCESS)
-System.out.println(message)
+;
+    
+System.out.print(LOG_SUCCESS);
+    
+System.out.println(message);
+    
 }
 
 
@@ -126,16 +135,17 @@ System.out.println(message)
     var className: string = CommonStrings.getInstance()!.EMPTY;
         
         
+;
+    
 
-
-                        if(anyType!::class.toString()! != 
+                        if(anyType!.constructor.name.toString()! != 
                                     null
                                 )
                         
                                     {
                                     className= StringMaker().
-                            append(anyType!::class.toString()!)!.append(CommonSeps.getInstance()!.COLON)!.append(Integer.toHexString(anyType!.hashCode()))!.toString().toCharArray().concatToString()
-                                
+                            append(anyType!.constructor.name.toString()!)!.append(CommonSeps.getInstance()!.COLON)!.append(Integer.toHexString(anyType!.hashCode()))!.toString();
+    
 
                                     }
                                 
@@ -143,9 +153,12 @@ System.out.println(message)
     var message: string = logFormatUtil!.get(className, functionName, specialMessage, exception)!;
         
         
-
-System.out.print(LOG_SUCCESS)
-System.out.println(message)
+;
+    
+System.out.print(LOG_SUCCESS);
+    
+System.out.println(message);
+    
 }
 
 

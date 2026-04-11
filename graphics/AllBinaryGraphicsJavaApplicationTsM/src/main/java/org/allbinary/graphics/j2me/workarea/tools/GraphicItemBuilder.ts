@@ -35,7 +35,8 @@ var node = node
     var graphicItemName: string = node.getNodeName()!;
         
         
-
+;
+    
 
                         if(graphicItemName!.compareTo(PointsDomUtil.getInstance()!.LINES) == 0)
                         

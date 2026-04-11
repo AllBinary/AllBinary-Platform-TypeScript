@@ -77,7 +77,7 @@ export class ImageModifierUtil
 }
 
 
-    private readonly colorArray: IntArray = IntArray(1);
+    private readonly colorArray: number[] = new Array(1);
         
         
 
@@ -90,50 +90,62 @@ export class ImageModifierUtil
     var newBufferedImage: BufferedImage = this.imageUtil!.getBufferedImage(image)!;
         
         
-
+;
+    
 
     var r: number = basicColor!.red;
         
         
-
+;
+    
 
     var g: number = basicColor!.green;
         
         
-
+;
+    
 
     var b: number = basicColor!.blue;
         
         
-
+;
+    
 
     var width: number = image.getWidth()!;
         
         
-
+;
+    
 
     var height: number = image.getHeight()!;
         
         
-
+;
+    
 
     var colorModel: ColorModel
-
+;
+    
 
     var dataElements: any = {}
-
+;
+    
 
     var ax: number= 0
-
+;
+    
 
     var rx: number= 0
-
+;
+    
 
     var gx: number= 0
-
+;
+    
 
     var bx: number= 0
-
+;
+    
 
 
 
@@ -154,18 +166,25 @@ index < width; index++)
         
 index2 < height; index2++)
         {
-colorModel= newBufferedImage!.getColorModel()
+colorModel= newBufferedImage!.getColorModel();
+    
 dataElements= newBufferedImage!.getRaster()!.getDataElements(index, index2, 
-                            null)
-ax= colorModel!.getAlpha(dataElements)
-rx= colorModel!.getRed(dataElements)
-gx= colorModel!.getGreen(dataElements)
-bx= colorModel!.getBlue(dataElements)
+                            null);
+    
+ax= colorModel!.getAlpha(dataElements);
+    
+rx= colorModel!.getRed(dataElements);
+    
+gx= colorModel!.getGreen(dataElements);
+    
+bx= colorModel!.getBlue(dataElements);
+    
 
                         if(rx != 0 || gx != 0 || bx != 0)
                         
                                     {
-                                    newBufferedImage!.setRGB(index, index2, (ax shl 24) or (r shl 16) or (g shl 8) or (b))
+                                    newBufferedImage!.setRGB(index, index2, (ax shl 24) or (r shl 16) or (g shl 8) or (b));
+    
 
                                     }
                                 
@@ -185,55 +204,68 @@ bx= colorModel!.getBlue(dataElements)
     var newBufferedImage: BufferedImage = this.imageUtil!.getBufferedImage(image)!;
         
         
-
+;
+    
 
     var MAX: number = 255;
         
         
-
+;
+    
 
     var r: number = (basicColor!.red.toFloat()) /MAX;
         
         
-
+;
+    
 
     var g: number = (basicColor!.green.toFloat()) /MAX;
         
         
-
+;
+    
 
     var b: number = (basicColor!.blue.toFloat()) /MAX;
         
         
-
+;
+    
 
     var width: number = image.getWidth()!;
         
         
-
+;
+    
 
     var height: number = image.getHeight()!;
         
         
-
+;
+    
 
     var colorModel: ColorModel
-
+;
+    
 
     var dataElements: any = {}
-
+;
+    
 
     var ax: number= 0
-
+;
+    
 
     var rx: number= 0
-
+;
+    
 
     var gx: number= 0
-
+;
+    
 
     var bx: number= 0
-
+;
+    
 
 
 
@@ -254,17 +286,27 @@ index < width; index++)
         
 index2 < height; index2++)
         {
-colorModel= newBufferedImage!.getColorModel()
+colorModel= newBufferedImage!.getColorModel();
+    
 dataElements= newBufferedImage!.getRaster()!.getDataElements(index, index2, 
-                            null)
-ax= colorModel!.getAlpha(dataElements)
-rx= colorModel!.getRed(dataElements)
-gx= colorModel!.getGreen(dataElements)
-bx= colorModel!.getBlue(dataElements)
-rx *= r
-gx *= g
-bx *= b
-newBufferedImage!.setRGB(index, index2, (ax shl 24) or (rx shl 16) or (gx shl 8) or (bx))
+                            null);
+    
+ax= colorModel!.getAlpha(dataElements);
+    
+rx= colorModel!.getRed(dataElements);
+    
+gx= colorModel!.getGreen(dataElements);
+    
+bx= colorModel!.getBlue(dataElements);
+    
+rx *= r;
+    
+gx *= g;
+    
+bx *= b;
+    
+newBufferedImage!.setRGB(index, index2, (ax shl 24) or (rx shl 16) or (gx shl 8) or (bx));
+    
 }
 
 }
@@ -281,27 +323,32 @@ newBufferedImage!.setRGB(index, index2, (ax shl 24) or (rx shl 16) or (gx shl 8)
     var alpha: number = alphaInt.toByte();
         
         
-
+;
+    
 
     var newBufferedImage: BufferedImage = this.imageUtil!.getBufferedImage(image)!;
         
         
-
+;
+    
 
     var width: number = image.getWidth()!;
         
         
-
+;
+    
 
     var height: number = image.getHeight()!;
         
         
-
+;
+    
 
     var raster: WritableRaster = newBufferedImage!.getAlphaRaster()!;
         
         
-
+;
+    
 
 
 
@@ -322,9 +369,12 @@ index < width; index++)
         
 index2 < height; index2++)
         {
-raster.getPixel(index, index2, colorArray)
-colorArray[0]= alpha and colorArray[0]
-raster.setPixel(index, index2, colorArray)
+raster.getPixel(index, index2, colorArray);
+    
+colorArray[0]= alpha and colorArray[0];
+    
+raster.setPixel(index, index2, colorArray);
+    
 }
 
 }
@@ -340,16 +390,19 @@ raster.setPixel(index, index2, colorArray)
     var newImageArray: Image[] = new Array(originalImageArray!.length);
         
         
-
+;
+    
 
     var size: number = newImageArray!.length
                 ;
         
         
-
+;
+    
 
     var originalImage: Image
-
+;
+    
 
 
 
@@ -360,14 +413,18 @@ raster.setPixel(index, index2, colorArray)
         
 index < size; index++)
         {
-originalImage= originalImageArray[index]!
+originalImage= originalImageArray[index]!;
+    
 
     var image: Image = ImageCreationUtil.getInstance()!.getInstance(originalImage!.getWidth(), originalImage!.getHeight())!;
         
         
-
-image.getGraphics()!.drawImage(originalImage, 0, 0, Anchor.TOP_LEFT)
-newImageArray[index]= image
+;
+    
+image.getGraphics()!.drawImage(originalImage, 0, 0, Anchor.TOP_LEFT);
+    
+newImageArray[index]= image;
+    
 }
 
 
@@ -376,14 +433,18 @@ newImageArray[index]= image
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return newImageArray;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-PreLogUtil.put(commonStrings!.EXCEPTION, this, "getImageArray", e)
+;
+    
+PreLogUtil.putOE(commonStrings!.EXCEPTION, this, "getImageArray", e);
+    
 
 
 

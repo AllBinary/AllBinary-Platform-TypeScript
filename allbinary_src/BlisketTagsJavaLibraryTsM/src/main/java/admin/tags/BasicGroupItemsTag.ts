@@ -31,12 +31,14 @@ import { BasicGroupItemsRequestHelperFactory } from "../../admin/taghelpers/Basi
 export class BasicGroupItemsTag extends TableTag {
         
 
-    private propertiesHashMap: HashMap<Any, Any>
+    private propertiesHashMap: HashMap<any, any>
 public constructor (){
 
             super();
-            this.setTagHelperFactory(BasicGroupItemsHelperFactory())
-this.setTagRequestHelperFactory(BasicGroupItemsRequestHelperFactory())
+            this.setTagHelperFactory(BasicGroupItemsHelperFactory());
+    
+this.setTagRequestHelperFactory(BasicGroupItemsRequestHelperFactory());
+    
 }
 
 

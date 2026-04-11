@@ -45,7 +45,7 @@ export class SmallBasicColorCacheFactory
         
         
 
-    private readonly INDEX_TO_COLOR: IntArray = IntArray(SIZE);
+    private readonly INDEX_TO_COLOR: number[] = new Array(SIZE);
         
         
 
@@ -64,9 +64,12 @@ private constructor (){
 
     public add(basicDefaultColor: BasicColor){
     //var basicDefaultColor = basicDefaultColor
-BASIC_COLOR_ARRAY[colorIndex]= basicDefaultColor
-INDEX_TO_COLOR[colorIndex]= basicDefaultColor!.toInt()
-colorIndex++
+BASIC_COLOR_ARRAY[colorIndex]= basicDefaultColor;
+    
+INDEX_TO_COLOR[colorIndex]= basicDefaultColor!.toInt();
+    
+colorIndex++;
+    
 }
 
 
@@ -74,7 +77,8 @@ colorIndex++
     //var colorAsInt = colorAsInt
 
     var basicColor: BasicColor
-
+;
+    
 
 
 
@@ -104,9 +108,12 @@ index < SIZE; index++)
     var ALPHA_MASK: number = 0xFF000000.toInt();
         
         
-
-basicColor= BasicColor(colorAsInt and ALPHA_MASK, colorAsInt and 0x00FFFFFF, StringUtil.getInstance()!.EMPTY_STRING)
-this.add(basicColor)
+;
+    
+basicColor= BasicColor(colorAsInt and ALPHA_MASK, colorAsInt and 0x00FFFFFF, StringUtil.getInstance()!.EMPTY_STRING);
+    
+this.add(basicColor);
+    
 
 
 

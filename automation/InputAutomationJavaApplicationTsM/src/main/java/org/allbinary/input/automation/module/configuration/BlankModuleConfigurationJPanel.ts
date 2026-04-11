@@ -24,21 +24,28 @@ export class BlankModuleConfigurationJPanel extends javax.swing.JPanel {
 public constructor (){
 
             super();
-            initComponents()
+            initComponents();
+    
 }
 
 
     initComponents(){
-jLabel1= javax.swing.JLabel()
-jLabel1!.setText("No Configuration Available")
+jLabel1= javax.swing.JLabel();
+    
+jLabel1!.setText("No Configuration Available");
+    
 
     var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);
         
         
-
-this.setLayout(layout)
-layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()!.addContainerGap(231, Short.MAX_VALUE)!.addComponent(jLabel1)!.addGap(225, 225, 225)))
-layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(layout.createSequentialGroup()!.addContainerGap()!.addComponent(jLabel1)!.addContainerGap(362, Short.MAX_VALUE)))
+;
+    
+this.setLayout(layout);
+    
+layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()!.addContainerGap(231, Short.MAX_VALUE)!.addComponent(jLabel1)!.addGap(225, 225, 225)));
+    
+layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(layout.createSequentialGroup()!.addContainerGap()!.addComponent(jLabel1)!.addContainerGap(362, Short.MAX_VALUE)));
+    
 }
 
 

@@ -36,7 +36,8 @@ var key = key
     var commonPhoneStrings: CommonPhoneStrings = CommonPhoneStrings.getInstance()!;
         
         
-
+;
+    
 
                         if(key == Canvas.UP)
                         

@@ -67,8 +67,10 @@ public constructor (title: string, items: CustomItem[], formPaintableFactory: It
 
                             //For kotlin this is before the body of the constructor.
                     
-this.moveForSmallScreen= moveForSmallScreen
-this.init()
+this.moveForSmallScreen= moveForSmallScreen;
+    
+this.init();
+    
 }
 
 public constructor (title: string, items: CustomItem[], rectangle: Rectangle, formType: FormType, border: number, moveForSmallScreen: boolean, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor)                        
@@ -88,8 +90,10 @@ public constructor (title: string, items: CustomItem[], rectangle: Rectangle, fo
 
                             //For kotlin this is before the body of the constructor.
                     
-this.moveForSmallScreen= moveForSmallScreen
-this.init()
+this.moveForSmallScreen= moveForSmallScreen;
+    
+this.init();
+    
 }
 
 
@@ -98,8 +102,10 @@ this.init()
     public init(rectangle: Rectangle, formType: FormType){
     //var rectangle = rectangle
     //var formType = formType
-super.init(rectangle, formType)
-this.init()
+super.init(rectangle, formType);
+    
+this.init();
+    
 }
 
 
@@ -108,13 +114,16 @@ this.init()
     var formTypeFactory: FormTypeFactory = FormTypeFactory.getInstance()!;
         
         
-
+;
+    
 
                         if(this.formType == formTypeFactory!.TEMP_HORIZONTAL_FORM)
                         
                                     {
-                                    dx= x -30 +(this.rectangle.getWidth() shr 1)
-dy= y
+                                    dx= x -30 +(this.rectangle.getWidth() shr 1);
+    
+dy= y;
+    
 
                                     }
                                 
@@ -126,12 +135,14 @@ dy= y
     var size: number = this.size()!;
         
         
-
+;
+    
 
     var totalWidth: number = 0;
         
         
-
+;
+    
 
 
 
@@ -143,15 +154,21 @@ dy= y
 index < size; index++)
         {
 
-    var item: CustomItemInterface = this.get(index) as CustomItemInterface;
-        
-        
+    var item: CustomItemInterface = this.get(index);
 
-totalWidth += item.getMinimumWidth() +border
+                         as CustomItemInterface;
+        
+        
+;
+    
+totalWidth += item.getMinimumWidth() +border;
+    
 }
 
-dx= x +(this.rectangle.getWidth() shr 1) -(totalWidth shr 1)
-dy= y +(this.rectangle.getHeight() shr 1)
+dx= x +(this.rectangle.getWidth() shr 1) -(totalWidth shr 1);
+    
+dy= y +(this.rectangle.getHeight() shr 1);
+    
 
                         if(this.moveForSmallScreen)
                         
@@ -160,12 +177,14 @@ dy= y +(this.rectangle.getHeight() shr 1)
     var maxTitleHeight: number = 175;
         
         
-
+;
+    
 
                         if(dy < maxTitleHeight)
                         
                                     {
-                                    dy= maxTitleHeight
+                                    dy= maxTitleHeight;
+    
 
                                     }
                                 
@@ -183,12 +202,14 @@ dy= y +(this.rectangle.getHeight() shr 1)
     var totalHeight: number = 0;
         
         
-
+;
+    
 
     var size: number = this.size()!;
         
         
-
+;
+    
 
 
 
@@ -203,24 +224,29 @@ index < size; index++)
     var item2: CustomItem = this.get(index)!;
         
         
-
+;
+    
 
                         if(maxWidth < item2.getMinimumWidth())
                         
                                     {
-                                    maxWidth= item2.getMinimumWidth()
+                                    maxWidth= item2.getMinimumWidth();
+    
 
                                     }
                                 
-totalHeight += item2.getMinimumHeight() +border
+totalHeight += item2.getMinimumHeight() +border;
+    
 }
 
-dx= ((this.rectangle.getWidth() -maxWidth) /2)
+dx= ((this.rectangle.getWidth() -maxWidth) /2);
+    
 
                         if(this.size() > 0)
                         
                                     {
-                                    dy= y +((this.rectangle.getHeight() -totalHeight) /2)
+                                    dy= y +((this.rectangle.getHeight() -totalHeight) /2);
+    
 
                         if(this.moveForSmallScreen)
                         
@@ -229,12 +255,14 @@ dx= ((this.rectangle.getWidth() -maxWidth) /2)
     var maxTitleHeight: number = 175;
         
         
-
+;
+    
 
                         if(dy < maxTitleHeight)
                         
                                     {
-                                    dy= maxTitleHeight
+                                    dy= maxTitleHeight;
+    
 
                                     }
                                 
@@ -245,7 +273,8 @@ dx= ((this.rectangle.getWidth() -maxWidth) /2)
                                     }
                                 
                         else {
-                            dy= y
+                            dy= y;
+    
 
                         }
                             
@@ -253,7 +282,8 @@ dx= ((this.rectangle.getWidth() -maxWidth) /2)
                                     }
                                 
                         else {
-                            logUtil!.put(formTypeFactory!.UNK, this, commonStrings!.INIT)
+                            logUtil!.put(formTypeFactory!.UNK, this, commonStrings!.INIT);
+    
 
                         }
                             
@@ -268,27 +298,32 @@ dx= ((this.rectangle.getWidth() -maxWidth) /2)
     var delta: number = 0;
         
         
-
+;
+    
 
     var deltaX: number = getDx()!;
         
         
-
+;
+    
 
     var deltaY: number = getDy()!;
         
         
-
+;
+    
 
     var size: number = this.size()!;
         
         
-
+;
+    
 
     var formTypeFactory: FormTypeFactory = FormTypeFactory.getInstance()!;
         
         
-
+;
+    
 
 
 
@@ -300,20 +335,25 @@ dx= ((this.rectangle.getWidth() -maxWidth) /2)
 index < size; index++)
         {
 
-    var item: CustomItemInterface = this.get(index) as CustomItemInterface;
-        
-        
+    var item: CustomItemInterface = this.get(index);
 
+                         as CustomItemInterface;
+        
+        
+;
+    
 
     var diffX: number = 0;
         
         
-
+;
+    
 
                         if(this.formType == formTypeFactory!.TEMP_HORIZONTAL_FORM)
                         
                                     {
-                                    diffX= this.getDiffX(item)
+                                    diffX= this.getDiffX(item);
+    
 
                                     }
                                 
@@ -328,7 +368,8 @@ index < size; index++)
                         if(this.formType == formTypeFactory!.VERTICAL_CENTER_FORM)
                         
                                     {
-                                    diffX= this.getDiffX(item) +this.halfBorder
+                                    diffX= this.getDiffX(item) +this.halfBorder;
+    
 
                                     }
                                 
@@ -344,14 +385,18 @@ index < size; index++)
                         if(index == this.getSelectedIndex())
                         
                                     {
-                                    delta= this.paintItem(graphics, index, item, deltaX +diffX, deltaY)
-this.paintable.paint(graphics, index, deltaX +diffX, deltaY)
+                                    delta= this.paintItem(graphics, index, item, deltaX +diffX, deltaY);
+    
+this.paintable.paint(graphics, index, deltaX +diffX, deltaY);
+    
 
                                     }
                                 
                         else {
-                            delta= this.paintUnselectedItem(graphics, index, item, deltaX +diffX, deltaY)
-this.paintable.paint(graphics, index, deltaX +diffX, deltaY)
+                            delta= this.paintUnselectedItem(graphics, index, item, deltaX +diffX, deltaY);
+    
+this.paintable.paint(graphics, index, deltaX +diffX, deltaY);
+    
 
                         }
                             
@@ -366,7 +411,8 @@ this.paintable.paint(graphics, index, deltaX +diffX, deltaY)
                         if(this.formType == formTypeFactory!.HORIZONTAL_FORM)
                         
                                     {
-                                    deltaX= delta
+                                    deltaX= delta;
+    
 
                                     }
                                 
@@ -374,7 +420,8 @@ this.paintable.paint(graphics, index, deltaX +diffX, deltaY)
                         if(this.formType == formTypeFactory!.VERTICAL_CENTER_FORM)
                         
                                     {
-                                    deltaY= delta
+                                    deltaY= delta;
+    
 
                                     }
                                 
@@ -388,9 +435,12 @@ this.paintable.paint(graphics, index, deltaX +diffX, deltaY)
                             
 }
 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, canvasStrings!.PAINT, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, canvasStrings!.PAINT, e);
+    
 }
 
 }

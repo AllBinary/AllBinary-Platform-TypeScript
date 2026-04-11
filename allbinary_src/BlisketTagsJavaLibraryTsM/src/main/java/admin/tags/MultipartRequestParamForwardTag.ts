@@ -18,10 +18,13 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { HashMap } from "../../java/util/HashMap.js";
 
     
-import { Vector } from "../../java/util/Vector.js";
+
+//import { Vector } from "../../java/util/Vector.js";
 
     
 import { JspTagException } from "../../javax/servlet/jsp/JspTagException.js";
@@ -57,19 +60,22 @@ export class MultipartRequestParamForwardTag extends CustomTagSupport {
 
     public setPage(page: string){
 var page = page
-this.page= page
+this.page= page;
+    
 }
 
 
     public setCommand(command: string){
 var command = command
-this.command= command
+this.command= command;
+    
 }
 
 
     public setParamVector(paramVector: Vector){
 var paramVector = paramVector
-this.paramVector= paramVector
+this.paramVector= paramVector;
+    
 }
 
 
@@ -79,32 +85,43 @@ this.paramVector= paramVector
 
         try {
             
-    var parentTag: HelperTag = this.getParent() as HelperTag;
-        
-        
+    var parentTag: HelperTag = this.getParent();
 
-ParentInventoryTagHelper.getInstance()!.isValid(this, parentTag)
-
-    var hashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+                         as HelperTag;
         
         
+;
+    
+ParentInventoryTagHelper.getInstance()!.isValid(this, parentTag);
+    
 
-hashMap!.put(AbTagData.PARENT, parentTag)
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
+        
+        
+;
+    
+hashMap!.put(AbTagData.PARENT, parentTag);
+    
 
     var multipartRequestParamForwardHelper: MultipartRequestParamForwardHelper = new MultipartRequestParamForwardHelper(parentTag, this.page, this.command, this.paramVector, this.pageContext);
         
         
-
-multipartRequestParamForwardHelper!.forward()
+;
+    
+multipartRequestParamForwardHelper!.forward();
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return Tag.SKIP_BODY;
     
-} catch(e: LicensingException)
+
+                //: 
+} catch(e) 
             {
-AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e);
+    
 
 
 
@@ -112,9 +129,12 @@ AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e)
                         return Tag.SKIP_BODY;
     
 }
- catch(e: Exception)
+
+                //: 
+ catch(e) 
             {
-AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
+    
 
 
 

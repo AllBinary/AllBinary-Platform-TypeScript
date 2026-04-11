@@ -50,13 +50,16 @@ public constructor (layerInterface: AllBinaryLayer, location: number){
             super();
                 //var layerInterface = layerInterface
     //var location = location
-this.allbinaryLayer= layerInterface
-this.location= location
+this.allbinaryLayer= layerInterface;
+    
+this.location= location;
+    
 
     var basicHudFactory: BasicHudFactory = BasicHudFactory.getInstance()!;
         
         
-
+;
+    
 
                         if(this.location != basicHudFactory!.TOPLEFT && this.location != basicHudFactory!.BOTTOMLEFT)
                         
@@ -72,7 +75,8 @@ this.location= location
                         if(layerInterface!.getWidth() > 40)
                         
                                     {
-                                    this.thickness= 3
+                                    this.thickness= 3;
+    
 
                                     }
                                 
@@ -80,12 +84,14 @@ this.location= location
                         if(layerInterface!.getWidth() > 20)
                         
                                     {
-                                    this.thickness= 2
+                                    this.thickness= 2;
+    
 
                                     }
                                 
                         else {
-                            this.thickness= 1
+                            this.thickness= 1;
+    
 
                         }
                             
@@ -94,18 +100,22 @@ this.location= location
 
     public onHealthChange(newX2: number){
     //var newX2 = newX2
-x2= newX2
+x2= newX2;
+    
 
     var quarter: number = (this.allbinaryLayer!.getWidth() shr 2);
         
         
-
+;
+    
 
                         if(x2 > quarter *3)
                         
                                     {
-                                    this.basicColor= this.basicColorFactory!.GREEN
-this.colorP= this.basicColor!.toInt()
+                                    this.basicColor= this.basicColorFactory!.GREEN;
+    
+this.colorP= this.basicColor!.toInt();
+    
 
                                     }
                                 
@@ -113,8 +123,10 @@ this.colorP= this.basicColor!.toInt()
                         if(x2 > quarter *2)
                         
                                     {
-                                    this.basicColor= this.basicColorFactory!.YELLOW
-this.colorP= this.basicColor!.toInt()
+                                    this.basicColor= this.basicColorFactory!.YELLOW;
+    
+this.colorP= this.basicColor!.toInt();
+    
 
                                     }
                                 
@@ -122,14 +134,18 @@ this.colorP= this.basicColor!.toInt()
                         if(x2 > quarter)
                         
                                     {
-                                    this.basicColor= this.basicColorFactory!.ORANGE
-this.colorP= this.basicColor!.toInt()
+                                    this.basicColor= this.basicColorFactory!.ORANGE;
+    
+this.colorP= this.basicColor!.toInt();
+    
 
                                     }
                                 
                         else {
-                            this.basicColor= this.basicColorFactory!.RED
-this.colorP= this.basicColor!.toInt()
+                            this.basicColor= this.basicColorFactory!.RED;
+    
+this.colorP= this.basicColor!.toInt();
+    
 
                         }
                             
@@ -141,7 +157,8 @@ this.colorP= this.basicColor!.toInt()
     var basicHudFactory: BasicHudFactory = BasicHudFactory.getInstance()!;
         
         
-
+;
+    
 
                         if(this.location == basicHudFactory!.TOPLEFT)
                         

@@ -30,7 +30,7 @@ export class FileWrapperUtil
          {
         
 
-    public static wrapFiles(files: any = {}[]): AbFile[]{
+    public static wrapFiles(files: any[]): AbFile[]{
 var files = files
 
         try {
@@ -38,7 +38,8 @@ var files = files
     var abFileArray: AbFile[] = new Array(files.length);
         
         
-
+;
+    
 
 
 
@@ -49,7 +50,8 @@ var files = files
         
 index >= 0; index--)
         {
-abFileArray[index]= AbFile(files[index]! as File)
+abFileArray[index]= AbFile(files[index]! as File);
+    
 }
 
 
@@ -58,14 +60,17 @@ abFileArray[index]= AbFile(files[index]! as File)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return abFileArray;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-PreLogUtil.put("Exception Wrapping Files", "FileWrapperUtil", "wrapFiles", e)
+PreLogUtil.putSE("Exception Wrapping Files", "FileWrapperUtil", "wrapFiles", e);
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new Array(0);
+                        return [];
     
 }
 
@@ -82,9 +87,12 @@ var file = file
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return AbFile(file);
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-PreLogUtil.put("Exception Wrapping File", "FileWrapperUtil", "wrapFile", e)
+PreLogUtil.putSE("Exception Wrapping File", "FileWrapperUtil", "wrapFile", e);
+    
 
 
 

@@ -37,7 +37,7 @@ export class VectorRotationAnimationInterfaceFactory
                 , AnimationInterfaceFactoryInterface {
         
 
-    private currentPoints: IntArray[][] = NullUtil.getInstance()!.NULL_INT_ARRAY_ARRAY_ARRAY;
+    private currentPoints: number[][][] = NullUtil.getInstance()!.NULL_INT_ARRAY_ARRAY_ARRAY;
         
         
 
@@ -46,7 +46,7 @@ export class VectorRotationAnimationInterfaceFactory
         
 
     readonly animationBehaviorFactory: AnimationBehaviorFactory
-public constructor (currentPoints: IntArray[][], basicColor: BasicColor)                        
+public constructor (currentPoints: number[][][], basicColor: BasicColor)                        
 
                             : this(currentPoints, basicColor, AnimationBehaviorFactory.getInstance()){
 
@@ -59,15 +59,18 @@ public constructor (currentPoints: IntArray[][], basicColor: BasicColor)
                     
 }
 
-public constructor (currentPoints: IntArray[][], basicColor: BasicColor, animationBehaviorFactory: AnimationBehaviorFactory){
+public constructor (currentPoints: number[][][], basicColor: BasicColor, animationBehaviorFactory: AnimationBehaviorFactory){
 
             super();
                 //var currentPoints = currentPoints
     //var basicColor = basicColor
     //var animationBehaviorFactory = animationBehaviorFactory
-this.currentPoints= currentPoints
-this.setBasicColorP(basicColor)
-this.animationBehaviorFactory= animationBehaviorFactory
+this.currentPoints= currentPoints;
+    
+this.setBasicColorP(basicColor);
+    
+this.animationBehaviorFactory= animationBehaviorFactory;
+    
 }
 
 
@@ -86,7 +89,8 @@ this.animationBehaviorFactory= animationBehaviorFactory
 
     setBasicColorP(basicColor: BasicColor){
 var basicColor = basicColor
-this.basicColor= basicColor
+this.basicColor= basicColor;
+    
 }
 
 

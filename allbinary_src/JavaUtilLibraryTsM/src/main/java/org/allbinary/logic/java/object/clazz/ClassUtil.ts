@@ -49,7 +49,9 @@ var lineBreak = lineBreak
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return ClassUtil.viewAll(anyType!::class, lineBreak);
+                        return ClassUtil.viewAll(anyType!constructor, lineBreak);
+
+                        ;
     
 
                                     }
@@ -60,7 +62,7 @@ var lineBreak = lineBreak
 }
 
 
-    public static viewAll(myClass: KClass<*>, lineBreak: string): string{
+    public static viewAll(myClass: Function, lineBreak: string): string{
 var myClass = myClass
 var lineBreak = lineBreak
 
@@ -73,22 +75,34 @@ var lineBreak = lineBreak
     var stringBuffer: StringMaker = new StringMaker();
         
         
+;
+    
 
-
-    var classes: KClass<*>[] = myClass!.getClasses()!;
+    var classes: Function[] = myClass!.getClasses()!;
         
         
-
-stringBuffer!.append(lineBreak)
-stringBuffer!.append("Class: ")
-stringBuffer!.append(myClass!.toString()!)
-stringBuffer!.append(" uses ")
-stringBuffer!.appendint(classes.length)
-stringBuffer!.append(" other classes")
-stringBuffer!.append(lineBreak)
-stringBuffer!.append(lineBreak)
-stringBuffer!.append("Classes: ")
-stringBuffer!.append(lineBreak)
+;
+    
+stringBuffer!.append(lineBreak);
+    
+stringBuffer!.append("Class: ");
+    
+stringBuffer!.append(myClass!.toString()!);
+    
+stringBuffer!.append(" uses ");
+    
+stringBuffer!.appendint(classes.length);
+    
+stringBuffer!.append(" other classes");
+    
+stringBuffer!.append(lineBreak);
+    
+stringBuffer!.append(lineBreak);
+    
+stringBuffer!.append("Classes: ");
+    
+stringBuffer!.append(lineBreak);
+    
 
 
 
@@ -99,21 +113,31 @@ stringBuffer!.append(lineBreak)
         
 index < classes.length; index++)
         {
-stringBuffer!.append("Class: ")
-stringBuffer!.append(classes[index]!.getName())
-stringBuffer!.append(lineBreak)
+stringBuffer!.append("Class: ");
+    
+stringBuffer!.append(classes[index]!.getName());
+    
+stringBuffer!.append(lineBreak);
+    
 }
 
-stringBuffer!.append(InterfaceUtil.viewAll(myClass::class.java, lineBreak))
-stringBuffer!.append(lineBreak)
-stringBuffer!.append(ConstructorUtil.viewAll(myClass::class.java, lineBreak))
-stringBuffer!.append(lineBreak)
-stringBuffer!.append(MethodUtil.viewAll(myClass::class.java, lineBreak))
+stringBuffer!.append(InterfaceUtil.viewAll(myClass::class.java, lineBreak));
+    
+stringBuffer!.append(lineBreak);
+    
+stringBuffer!.append(ConstructorUtil.viewAll(myClass::class.java, lineBreak));
+    
+stringBuffer!.append(lineBreak);
+    
+stringBuffer!.append(MethodUtil.viewAll(myClass::class.java, lineBreak));
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 
                                     }

@@ -64,7 +64,8 @@ private constructor (){
 
 
     /*actual*/ public init(){
-PreLogUtil.put("Loggin Initialized", "LogUtil", "init()")
+PreLogUtil.put("Loggin Initialized", "LogUtil", "init()");
+    
 }
 
 
@@ -74,7 +75,8 @@ var log = log
     var exception: any = {} = log.getThrowable()!;
         
         
-
+;
+    
 
         try {
             
@@ -87,34 +89,40 @@ var log = log
     var specialMessage: string = log.getSpecialMessage()!;
         
         
-
+;
+    
 
     var anyType: any = {} = log.getObject()!;
         
         
-
+;
+    
 
     var functionName: string = log.getFunctionName()!;
         
         
-
+;
+    
 
     var className: string = CommonStrings.getInstance()!.EMPTY;
         
         
+;
+    
 
-
-    var clazz: KClass<*> = anyType!::class!;
+    var clazz: Function = anyType!constructor!;
         
         
-
+;
+    
 
                         if(clazz.toString()! != 
                                     null
                                 )
                         
                                     {
-                                    className= clazz.toString()!
+                                    className= clazz.toString()!;
+    
 
                                     }
                                 
@@ -122,12 +130,16 @@ var log = log
     var message: string = logFormatUtil!.get(className, functionName, specialMessage, exception)!;
         
         
-
-logger.log(Level.INFO, message)
+;
+    
+logger.log(Level.INFO, message);
+    
 
                                     }
                                 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 }
 
@@ -145,19 +157,22 @@ logger.log(Level.INFO, message)
     var className: string = CommonStrings.getInstance()!.EMPTY;
         
         
+;
+    
 
-
-    var clazz: KClass<*> = anyType!::class!;
+    var clazz: Function = anyType!constructor!;
         
         
-
+;
+    
 
                         if(clazz.toString()! != 
                                     null
                                 )
                         
                                     {
-                                    className= clazz.toString()!
+                                    className= clazz.toString()!;
+    
 
                                     }
                                 
@@ -165,23 +180,28 @@ logger.log(Level.INFO, message)
     var message: string = logFormatUtil!.getS(className, functionName, specialMessage)!;
         
         
-
+;
+    
 
                         if(exception != 
                                     null
                                 )
                         
                                     {
-                                    logger.log(Level.SEVERE, message, exception)
+                                    logger.log(Level.SEVERE, message, exception);
+    
 
                                     }
                                 
                         else {
-                            logger.log(Level.INFO, message)
+                            logger.log(Level.INFO, message);
+    
 
                         }
                             
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 }
 

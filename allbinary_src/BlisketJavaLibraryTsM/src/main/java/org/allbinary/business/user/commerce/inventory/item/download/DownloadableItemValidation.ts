@@ -52,7 +52,8 @@ public constructor (downloadableItem: DownloadableItem){
 
             super();
             var downloadableItem = downloadableItem
-this.downloadableItem= downloadableItem
+this.downloadableItem= downloadableItem;
+    
 }
 
 
@@ -77,7 +78,9 @@ this.downloadableItem= downloadableItem
 
                         if(this.downloadableItem!.getId() != 
                                     null
-                                 && !StringValidationUtil.getInstance()!.isNumber(this.downloadableItem!.getId()))
+                                 && !StringValidationUtil.getInstance()!.isNumber(this.downloadableItem!.getId());
+
+                        )
                         
                                     {
                                     
@@ -184,7 +187,8 @@ this.downloadableItem= downloadableItem
     var size: string = this.downloadableItem!.getSize()!.toString()!;
         
         
-
+;
+    
 
                         if(size.length < 1 || size.length > AbSqlData.MAXNUM)
                         
@@ -221,7 +225,8 @@ this.downloadableItem= downloadableItem
     var size: string = this.downloadableItem!.getValidTime()!.toString()!;
         
         
-
+;
+    
 
                         if(size.length < 1 || size.length > AbSqlData.MAXNUM)
                         
@@ -258,7 +263,8 @@ this.downloadableItem= downloadableItem
     var size: string = this.downloadableItem!.getRetries()!.toString()!;
         
         
-
+;
+    
 
                         if(size.length < 1 || size.length > AbSqlData.MAXNUM)
                         
@@ -281,13 +287,16 @@ this.downloadableItem= downloadableItem
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return Boolean.TRUE;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put("Failed to validate form", this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put("Failed to validate form", this, commonStrings!.IS_VALID, e);
+    
 
                                     }
                                 
@@ -309,26 +318,33 @@ this.downloadableItem= downloadableItem
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
                         if(this.downloadableItem!.getId() == 
                                     null
                                  || this.downloadableItem!.getId()!.length() < 1 || this.downloadableItem!.getId()!.length() > AbSqlData.MAXNUM)
                         
                                     {
-                                    stringBuffer!.append("Id is invalid. Must be number < ")
-stringBuffer!.appendint(AbSqlData.MAXNUM)
-stringBuffer!.append(" and > 0 digits.<br/>")
+                                    stringBuffer!.append("Id is invalid. Must be number < ");
+    
+stringBuffer!.appendint(AbSqlData.MAXNUM);
+    
+stringBuffer!.append(" and > 0 digits.<br/>");
+    
 
                                     }
                                 
 
                         if(this.downloadableItem!.getId() != 
                                     null
-                                 && !StringValidationUtil.getInstance()!.isNumber(this.downloadableItem!.getId()))
+                                 && !StringValidationUtil.getInstance()!.isNumber(this.downloadableItem!.getId());
+
+                        )
                         
                                     {
-                                    stringBuffer!.append("Id is invalid. Must be > 0.<br/>")
+                                    stringBuffer!.append("Id is invalid. Must be > 0.<br/>");
+    
 
                                     }
                                 
@@ -338,9 +354,12 @@ stringBuffer!.append(" and > 0 digits.<br/>")
                                  || this.downloadableItem!.getSystem()!.length() < 1 || this.downloadableItem!.getSystem()!.length() > AbSqlData.MAXSTRING)
                         
                                     {
-                                    stringBuffer!.append("System value is invalid. Must be < ")
-stringBuffer!.appendint(AbSqlData.MAXSTRING)
-stringBuffer!.append(" and > 0 characters long.<br/>")
+                                    stringBuffer!.append("System value is invalid. Must be < ");
+    
+stringBuffer!.appendint(AbSqlData.MAXSTRING);
+    
+stringBuffer!.append(" and > 0 characters long.<br/>");
+    
 
                                     }
                                 
@@ -350,9 +369,12 @@ stringBuffer!.append(" and > 0 characters long.<br/>")
                                  || this.downloadableItem!.getPlatform()!.length() < 1 || this.downloadableItem!.getPlatform()!.length() > AbSqlData.MAXSTRING)
                         
                                     {
-                                    stringBuffer!.append("Platform value is invalid. Must be < ")
-stringBuffer!.appendint(AbSqlData.MAXSTRING)
-stringBuffer!.append(" and > 0 characters long.<br/>")
+                                    stringBuffer!.append("Platform value is invalid. Must be < ");
+    
+stringBuffer!.appendint(AbSqlData.MAXSTRING);
+    
+stringBuffer!.append(" and > 0 characters long.<br/>");
+    
 
                                     }
                                 
@@ -362,9 +384,12 @@ stringBuffer!.append(" and > 0 characters long.<br/>")
                                  || this.downloadableItem!.getSpecialName()!.length() < 0 || this.downloadableItem!.getSpecialName()!.length() > AbSqlData.MAXSTRING)
                         
                                     {
-                                    stringBuffer!.append("Special Name value is invalid. Must be < ")
-stringBuffer!.appendint(AbSqlData.MAXSTRING)
-stringBuffer!.append(" and > 0 characters long.<br/>")
+                                    stringBuffer!.append("Special Name value is invalid. Must be < ");
+    
+stringBuffer!.appendint(AbSqlData.MAXSTRING);
+    
+stringBuffer!.append(" and > 0 characters long.<br/>");
+    
 
                                     }
                                 
@@ -374,9 +399,12 @@ stringBuffer!.append(" and > 0 characters long.<br/>")
                                  || this.downloadableItem!.getVersion()!.length() < 1 || this.downloadableItem!.getVersion()!.length() > AbSqlData.MAXSTRING)
                         
                                     {
-                                    stringBuffer!.append("Version value is invalid. Must be < ")
-stringBuffer!.appendint(AbSqlData.MAXSTRING)
-stringBuffer!.append(" and > 0 characters long.<br/>")
+                                    stringBuffer!.append("Version value is invalid. Must be < ");
+    
+stringBuffer!.appendint(AbSqlData.MAXSTRING);
+    
+stringBuffer!.append(" and > 0 characters long.<br/>");
+    
 
                                     }
                                 
@@ -386,9 +414,12 @@ stringBuffer!.append(" and > 0 characters long.<br/>")
                                  || this.downloadableItem!.getChanges()!.length() < 0 || this.downloadableItem!.getChanges()!.length() > AbSqlData.MAXBLOB)
                         
                                     {
-                                    stringBuffer!.append("Changes value is invalid. Must be < ")
-stringBuffer!.appendint(AbSqlData.MAXBLOB)
-stringBuffer!.append(" and >= 0 characters long.<br/>")
+                                    stringBuffer!.append("Changes value is invalid. Must be < ");
+    
+stringBuffer!.appendint(AbSqlData.MAXBLOB);
+    
+stringBuffer!.append(" and >= 0 characters long.<br/>");
+    
 
                                     }
                                 
@@ -398,7 +429,8 @@ stringBuffer!.append(" and >= 0 characters long.<br/>")
                                 )
                         
                                     {
-                                    stringBuffer!.append("File Size is null")
+                                    stringBuffer!.append("File Size is null");
+    
 
                                     }
                                 
@@ -407,14 +439,18 @@ stringBuffer!.append(" and >= 0 characters long.<br/>")
     var size: string = this.downloadableItem!.getSize()!.toString()!;
         
         
-
+;
+    
 
                         if(size.length < 1 || size.length > AbSqlData.MAXNUM)
                         
                                     {
-                                    stringBuffer!.append("File Size is invalid. Must be number < ")
-stringBuffer!.appendint(AbSqlData.MAXNUM)
-stringBuffer!.append(" and > 0 digits.<br/>")
+                                    stringBuffer!.append("File Size is invalid. Must be number < ");
+    
+stringBuffer!.appendint(AbSqlData.MAXNUM);
+    
+stringBuffer!.append(" and > 0 digits.<br/>");
+    
 
                                     }
                                 
@@ -427,7 +463,8 @@ stringBuffer!.append(" and > 0 digits.<br/>")
                                 )
                         
                                     {
-                                    stringBuffer!.append("Valid Time is null")
+                                    stringBuffer!.append("Valid Time is null");
+    
 
                                     }
                                 
@@ -436,14 +473,18 @@ stringBuffer!.append(" and > 0 digits.<br/>")
     var size: string = this.downloadableItem!.getValidTime()!.toString()!;
         
         
-
+;
+    
 
                         if(size.length < 1 || size.length > AbSqlData.MAXNUM)
                         
                                     {
-                                    stringBuffer!.append("Valid Time is invalid. Must be number < ")
-stringBuffer!.appendint(AbSqlData.MAXNUM)
-stringBuffer!.append(" and > 0 digits.<br/>")
+                                    stringBuffer!.append("Valid Time is invalid. Must be number < ");
+    
+stringBuffer!.appendint(AbSqlData.MAXNUM);
+    
+stringBuffer!.append(" and > 0 digits.<br/>");
+    
 
                                     }
                                 
@@ -456,7 +497,8 @@ stringBuffer!.append(" and > 0 digits.<br/>")
                                 )
                         
                                     {
-                                    stringBuffer!.append("Retries is null")
+                                    stringBuffer!.append("Retries is null");
+    
 
                                     }
                                 
@@ -465,14 +507,18 @@ stringBuffer!.append(" and > 0 digits.<br/>")
     var size: string = this.downloadableItem!.getRetries()!.toString()!;
         
         
-
+;
+    
 
                         if(size.length < 1 || size.length > AbSqlData.MAXNUM)
                         
                                     {
-                                    stringBuffer!.append("Retries is invalid. Must be number < ")
-stringBuffer!.appendint(AbSqlData.MAXNUM)
-stringBuffer!.append(" and > 0 digits.<br/>")
+                                    stringBuffer!.append("Retries is invalid. Must be number < ");
+    
+stringBuffer!.appendint(AbSqlData.MAXNUM);
+    
+stringBuffer!.append(" and > 0 digits.<br/>");
+    
 
                                     }
                                 
@@ -484,14 +530,19 @@ stringBuffer!.append(" and > 0 digits.<br/>")
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e)
+                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e);
+    
 
                                     }
                                 

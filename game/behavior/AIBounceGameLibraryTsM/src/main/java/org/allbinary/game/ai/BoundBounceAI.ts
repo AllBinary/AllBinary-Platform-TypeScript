@@ -63,8 +63,10 @@ var boundsVisitorInterface = boundsVisitorInterface
 
                             //For kotlin this is before the body of the constructor.
                     
-this.layerBounds= layerBounds
-this.boundsVisitorInterface= boundsVisitorInterface
+this.layerBounds= layerBounds;
+    
+this.boundsVisitorInterface= boundsVisitorInterface;
+    
 }
 
 
@@ -74,8 +76,10 @@ var graphics = graphics
     var rectange: Rectangle = this.layerBounds!.getRectangleP()!;
         
         
-
-graphics.drawRect(rectange.getPoint()!.getX(), rectange.getPoint()!.getY(), rectange.getWidth(), rectange.getHeight())
+;
+    
+graphics.drawRect(rectange.getPoint()!.getX(), rectange.getPoint()!.getY(), rectange.getWidth(), rectange.getHeight());
+    
 }
 
 
@@ -83,7 +87,8 @@ graphics.drawRect(rectange.getPoint()!.getX(), rectange.getPoint()!.getY(), rect
             
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager
-this.layerBounds!.visit(this.boundsVisitorInterface)
+this.layerBounds!.visit(this.boundsVisitorInterface);
+    
 }
 
 

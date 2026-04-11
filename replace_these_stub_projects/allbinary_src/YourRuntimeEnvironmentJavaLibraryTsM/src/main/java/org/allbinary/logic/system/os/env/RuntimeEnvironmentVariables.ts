@@ -53,6 +53,8 @@ public constructor (){
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return System.getProperty("java.java.home");
+
+                        ;
     
 }
 
@@ -63,12 +65,15 @@ var var = var
     var environmentVariables: Properties = this.get()!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return environmentVariables!.getProperty(var);
+
+                        ;
     
 }
 
@@ -78,47 +83,56 @@ var var = var
         try {
             
     var process: Process
-
+;
+    
 
     var environmentVariables: Properties = new Properties();
         
         
-
+;
+    
 
     var operatingSystemInterface: GenericOperatingSystem = OperatingSystemFactory.getInstance()!.getOperatingSystemInstance()!;
         
         
-
+;
+    
 
     var osName: string = operatingSystemInterface!.getName()!;
         
         
-
+;
+    
 
     var linuxCommand: string = "env";
         
         
-
+;
+    
 
     var windowsCommand: string = "cmd.exe /c set";
         
         
-
+;
+    
 
     var solarisCommand: string = linuxCommand;
         
         
-
+;
+    
 
     var operatingSystems: OperatingSystems = OperatingSystems.getInstance()!;
         
         
-
+;
+    
 
                         if(osName!.compareTo(operatingSystems!.LINUX) == 0)
                         
                                     {
-                                    process= Runtime.getRuntime()!.exec(linuxCommand)
+                                    process= Runtime.getRuntime()!.exec(linuxCommand);
+    
 
                                     }
                                 
@@ -126,7 +140,8 @@ var var = var
                         if(osName!.indexOf(operatingSystems!.WINDOWS) >= 0)
                         
                                     {
-                                    process= Runtime.getRuntime()!.exec(windowsCommand)
+                                    process= Runtime.getRuntime()!.exec(windowsCommand);
+    
 
                                     }
                                 
@@ -134,7 +149,8 @@ var var = var
                         if(osName!.compareTo(operatingSystems!.SOLARIS) == 0)
                         
                                     {
-                                    process= Runtime.getRuntime()!.exec(solarisCommand)
+                                    process= Runtime.getRuntime()!.exec(solarisCommand);
+    
 
                                     }
                                 
@@ -150,15 +166,18 @@ var var = var
     var processInputStreamReader: InputStreamReader = new InputStreamReader(process.getInputStream());
         
         
-
+;
+    
 
     var bufferedReader: BufferedReader = new BufferedReader(processInputStreamReader);
         
         
-
+;
+    
 
     var keyValuePair: string
-
+;
+    
 
         while((keyValuePair= bufferedReader!.readLine()) != 
                                     null
@@ -168,18 +187,22 @@ var var = var
     var index: number = keyValuePair!.indexOf('=')!;
         
         
-
+;
+    
 
     var key: string = keyValuePair!.substring(0, index)!;
         
         
-
+;
+    
 
     var value: string = keyValuePair!.substring(index +1)!;
         
         
-
-environmentVariables!.put(key, value)
+;
+    
+environmentVariables!.put(key, value);
+    
 }
 
 
@@ -188,13 +211,16 @@ environmentVariables!.put(key, value)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return environmentVariables;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.OSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "get()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "get()", e);
+    
 
                                     }
                                 
@@ -217,14 +243,19 @@ environmentVariables!.put(key, value)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return System.getProperty("java.io.tmpdir");
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.OSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "getTempDir()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "getTempDir()", e);
+    
 
                                     }
                                 
@@ -247,14 +278,19 @@ environmentVariables!.put(key, value)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return System.getProperty("java.library.path");
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.OSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "getLibraryPath()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "getLibraryPath()", e);
+    
 
                                     }
                                 
@@ -277,14 +313,19 @@ environmentVariables!.put(key, value)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return System.getProperty("java.class.path");
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.OSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "getClassPath()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "getClassPath()", e);
+    
 
                                     }
                                 
@@ -307,15 +348,20 @@ var libPath = libPath
     var existingPath: string = this.getLibraryPath()!;
         
         
+;
+    
+System.setProperty("java.library.path", libPath +":" +existingPath);
+    
 
-System.setProperty("java.library.path", libPath +":" +existingPath)
-} catch(e: Exception)
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.OSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "updateLibraryPath()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "updateLibraryPath()", e);
+    
 
                                     }
                                 
@@ -332,14 +378,19 @@ System.setProperty("java.library.path", libPath +":" +existingPath)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return System.getProperty("user.home");
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.OSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "getUserHome()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "getUserHome()", e);
+    
 
                                     }
                                 
@@ -362,14 +413,19 @@ System.setProperty("java.library.path", libPath +":" +existingPath)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return System.getProperty("user.dir");
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.OSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "getUserDir()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "getUserDir()", e);
+    
 
                                     }
                                 
@@ -387,13 +443,16 @@ System.setProperty("java.library.path", libPath +":" +existingPath)
     public set(){
 
         try {
-            } catch(e: Exception)
+            
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.OSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "get()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "get()", e);
+    
 
                                     }
                                 
@@ -409,27 +468,32 @@ var val = val
         try {
             
     var process: Process
-
+;
+    
 
     var operatingSystemInterface: GenericOperatingSystem = OperatingSystemFactory.getInstance()!.getOperatingSystemInstance()!;
         
         
-
+;
+    
 
     var operatingSystems: OperatingSystems = OperatingSystems.getInstance()!;
         
         
-
+;
+    
 
     var osName: string = operatingSystemInterface!.getName()!;
         
         
-
+;
+    
 
     var windowsCommand: string = "cmd.exe /c set" +var +"=" +val;
         
         
-
+;
+    
 
                         if(osName!.compareTo(operatingSystems!.LINUX) == 0)
                         
@@ -445,7 +509,8 @@ var val = val
                         if(osName!.indexOf(operatingSystems!.WINDOWS) >= 0)
                         
                                     {
-                                    process= Runtime.getRuntime()!.exec(windowsCommand)
+                                    process= Runtime.getRuntime()!.exec(windowsCommand);
+    
 
                                     }
                                 
@@ -468,13 +533,16 @@ var val = val
 
                         }
                             
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.OSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "setVariable()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "setVariable()", e);
+    
 
                                     }
                                 

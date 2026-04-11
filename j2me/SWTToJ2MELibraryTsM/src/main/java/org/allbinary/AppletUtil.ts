@@ -29,7 +29,8 @@ export class AppletUtil
         
 
     public static setApplet(){
-applet= true
+applet= true;
+    
 }
 
 

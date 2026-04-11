@@ -18,10 +18,13 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { HashMap } from "../../../../../../../../java/util/HashMap.js";
 
     
-import { Vector } from "../../../../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../../../../java/util/Vector.js";
 
     
 import { DomData } from "../../../../../../../../org/allbinary/data/tree/dom/DomData.js";
@@ -69,7 +72,8 @@ export class CssPropertyValues
 public constructor (){
 
             super();
-            this.propertyValueVector= Vector()
+            this.propertyValueVector= Vector();
+    
 }
 
 public constructor (node: Node){
@@ -77,21 +81,25 @@ public constructor (node: Node){
             super();
             var node = node
 
-    var indexPropertyValueHashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var indexPropertyValueHashMap: HashMap<any, any> = new HashMap<any, any>();
         
         
-
-this.propertyValueVector= Vector()
+;
+    
+this.propertyValueVector= Vector();
+    
 
     var cssPropertyNodeVector: Vector = DomSearchHelper.getAllNodes(CssPropertyValueData.getInstance()!.NAME, node.getChildNodes())!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.STYLE))
                         
                                     {
-                                    logUtil!.put("Number Of Properties: " +cssPropertyNodeVector!.length, this, "CssProperties()")
+                                    logUtil!.put("Number Of Properties: " +cssPropertyNodeVector!.length, this, "CssProperties()");
+    
 
                                     }
                                 
@@ -99,7 +107,8 @@ this.propertyValueVector= Vector()
     var size: number = cssPropertyNodeVector!.length!;
         
         
-
+;
+    
 
 
 
@@ -111,25 +120,31 @@ this.propertyValueVector= Vector()
 index < size; index++)
         {
 
-    var cssPropertyValueNode: Node = cssPropertyNodeVector!.get(index) as Node;
-        
-        
+    var cssPropertyValueNode: Node = cssPropertyNodeVector!.get(index);
 
+                         as Node;
+        
+        
+;
+    
 
     var valueNode: Node = DomSearchHelper.getNode(DomData.VALUE, cssPropertyValueNode!.getChildNodes())!;
         
         
-
+;
+    
 
     var propertyValue: string = DomNodeHelper.getTextNodeValue(valueNode)!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.STYLE))
                         
                                     {
-                                    logUtil!.put("Property Value: " +propertyValue, this, "CssProperties()")
+                                    logUtil!.put("Property Value: " +propertyValue, this, "CssProperties()");
+    
 
                                     }
                                 
@@ -137,20 +152,24 @@ index < size; index++)
     var indexNode: Node = DomSearchHelper.getNode(DomData.INDEX, cssPropertyValueNode!.getChildNodes())!;
         
         
-
+;
+    
 
     var indexValue: string = DomNodeHelper.getTextNodeValue(indexNode)!;
         
         
-
-indexPropertyValueHashMap!.put(indexValue, propertyValue)
+;
+    
+indexPropertyValueHashMap!.put(indexValue, propertyValue);
+    
 }
 
 
     var size2: number = indexPropertyValueHashMap!.keys.size()!;
         
         
-
+;
+    
 
 
 
@@ -165,44 +184,54 @@ index < size2; index++)
     var indexInt: Integer = new Integer(index);
         
         
+;
+    
 
+    var propertyValue: string = indexPropertyValueHashMap!.get(indexInt!.toString());
 
-    var propertyValue: string = indexPropertyValueHashMap!.get(indexInt!.toString()) as String;
+                         as String;
         
         
-
-this.propertyValueVector!.add(propertyValue)
+;
+    
+this.propertyValueVector!.add(propertyValue);
+    
 }
 
 }
 
 
-    public toHashMap(): HashMap<Any, Any>{
+    public toHashMap(): HashMap<any, any>{
 
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
         
         
-
+;
+    
 
     var cssPropertyValueData: CssPropertyValueData = CssPropertyValueData.getInstance()!;
         
         
+;
+    
 
-
-    var hashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
         
         
-
+;
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
     var size: number = propertyValueVector!.length!;
         
         
-
+;
+    
 
 
 
@@ -214,17 +243,27 @@ this.propertyValueVector!.add(propertyValue)
 index < size; index++)
         {
 
-    var value: string = propertyValueVector!.get(index) as String;
-        
-        
+    var value: string = propertyValueVector!.get(index);
 
-stringBuffer!.delete(0, stringBuffer!.length())
-stringBuffer!.append(cssPropertyValueData!.NAME)
-stringBuffer!.append(commonSeps!.BRACKET_OPEN)
-stringBuffer!.appendint(index)
-stringBuffer!.append(commonSeps!.BRACKET_CLOSE)
-hashMap!.put(stringBuffer!.toString(), value)
-index++
+                         as String;
+        
+        
+;
+    
+stringBuffer!.delete(0, stringBuffer!.length());
+    
+stringBuffer!.append(cssPropertyValueData!.NAME);
+    
+stringBuffer!.append(commonSeps!.BRACKET_OPEN);
+    
+stringBuffer!.appendint(index);
+    
+stringBuffer!.append(commonSeps!.BRACKET_CLOSE);
+    
+hashMap!.put(stringBuffer!.toString(), value);
+    
+index++;
+    
 }
 
 
@@ -245,11 +284,13 @@ var document = document
                         
                                     {
                                     
-    var hashMap: HashMap<Any, Any> = this.toHashMap()!;
+    var hashMap: HashMap<any, any> = this.toHashMap()!;
         
         
-
-logUtil!.put("CssPropertyValues HashMap: " +hashMap!.toString(), this, "toXmlNode()")
+;
+    
+logUtil!.put("CssPropertyValues HashMap: " +hashMap!.toString(), this, "toXmlNode()");
+    
 
                                     }
                                 
@@ -258,6 +299,8 @@ logUtil!.put("CssPropertyValues HashMap: " +hashMap!.toString(), this, "toXmlNod
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return ModDomHelper.createNameValueIndexNodes(document, CssPropertyData.getInstance()!.VALUES, CssPropertyValueData.getInstance()!.NAME, this.propertyValueVector);
+
+                        ;
     
 }
 

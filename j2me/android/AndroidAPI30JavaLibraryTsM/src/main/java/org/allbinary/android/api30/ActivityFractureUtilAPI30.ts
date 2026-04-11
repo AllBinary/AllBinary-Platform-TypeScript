@@ -60,14 +60,18 @@ export class ActivityFractureUtilAPI30 extends ActivityFractureUtilAPI5 {
     var window: Window = activity.getWindow()!;
         
         
-
+;
+    
 
     var windowInsetsController: WindowInsetsControllerCompat = WindowCompat.getInsetsController(window, window.getDecorView())!;
         
         
-
-windowInsetsController!.hide(WindowInsetsCompat.Type.systemBars())
-windowInsetsController!.setSystemBarsBehavior(WindowInsetsControllerCompat.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE)
+;
+    
+windowInsetsController!.hide(WindowInsetsCompat.Type.systemBars());
+    
+windowInsetsController!.setSystemBarsBehavior(WindowInsetsControllerCompat.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE);
+    
 }
 
 

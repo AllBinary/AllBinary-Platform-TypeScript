@@ -69,8 +69,10 @@ export class LockedFeatureNotificationUtil
                 //@Throws(Error::class)
             
     public fire(){
-PrimaryPlayerQueueFactory.getInstance()!.add(ErrorSound.getInstance())
-GameNotificationEventHandler.getInstance()!.fireEvent(gameNotificationEvent)
+PrimaryPlayerQueueFactory.getInstance()!.add(ErrorSound.getInstance());
+    
+GameNotificationEventHandler.getInstance()!.fireEvent(gameNotificationEvent);
+    
 }
 
 
@@ -78,9 +80,12 @@ GameNotificationEventHandler.getInstance()!.fireEvent(gameNotificationEvent)
             
     public fire(basicColor: BasicColor){
 var basicColor = basicColor
-PrimaryPlayerQueueFactory.getInstance()!.add(ErrorSound.getInstance())
-gameNotificationEvent!.setBasicColorP(basicColor)
-GameNotificationEventHandler.getInstance()!.fireEvent(gameNotificationEvent)
+PrimaryPlayerQueueFactory.getInstance()!.add(ErrorSound.getInstance());
+    
+gameNotificationEvent!.setBasicColorP(basicColor);
+    
+GameNotificationEventHandler.getInstance()!.fireEvent(gameNotificationEvent);
+    
 }
 
 

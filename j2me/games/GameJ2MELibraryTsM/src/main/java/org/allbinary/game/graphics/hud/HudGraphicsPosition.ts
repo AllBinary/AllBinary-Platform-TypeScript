@@ -44,8 +44,10 @@ public constructor (point: GPoint, anchor: number){
             super();
             var point = point
 var anchor = anchor
-this.setAnchor(anchor)
-this.setPoint(point)
+this.setAnchor(anchor);
+    
+this.setPoint(point);
+    
 }
 
 
@@ -61,7 +63,8 @@ this.setPoint(point)
 
     setAnchor(anchor: number){
 var anchor = anchor
-this.anchor= anchor
+this.anchor= anchor;
+    
 }
 
 
@@ -77,7 +80,8 @@ this.anchor= anchor
 
     public setPoint(point: GPoint){
 var point = point
-this.point= point
+this.point= point;
+    
 }
 
 

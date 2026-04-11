@@ -27,7 +27,7 @@ export class TileMapPlacementVisitor
          {
         
 
-    public visit(lastMap: TiledMap, mapData: IntArray[]){
+    public visit(lastMap: TiledMap, mapData: number[][]){
     //var lastMap = lastMap
     //var mapData = mapData
 }

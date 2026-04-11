@@ -54,32 +54,38 @@ private constructor (){
     var ROOT: string = "/unit_decal";
         
         
-
+;
+    
 
     var SMALL: string = "_20_by_20.png";
         
         
-
+;
+    
 
     var MEDIUM: string = SMALL;
         
         
-
+;
+    
 
     var SIZE_FOUR: string = SMALL;
         
         
-
+;
+    
 
     var SIZE_FIVE: string = SMALL;
         
         
-
+;
+    
 
     var SIZE_SIX: string = SMALL;
         
         
-
+;
+    
 
     var SIZE: string[] = 
                                                         [
@@ -87,8 +93,10 @@ private constructor (){
                                                         ];
         
         
-
-super.init(ROOT, SIZE)
+;
+    
+super.init(ROOT, SIZE);
+    
 }
 
 
@@ -97,7 +105,8 @@ super.init(ROOT, SIZE)
     init(ROOT: string, sizeString: string){
 var ROOT = ROOT
 var sizeString = sizeString
-super.init(ROOT, sizeString)
+super.init(ROOT, sizeString);
+    
 }
 
 
@@ -113,6 +122,8 @@ super.init(ROOT, sizeString)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return GameGraphicsResourceUtil.getInstance()!.getString(GraphicsFeatureFactory.getInstance()!.SPRITE_QUARTER_ROTATION_GRAPHICS);
+
+                        ;
     
 
                                     }
@@ -123,6 +134,8 @@ super.init(ROOT, sizeString)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.getString();
+
+                        ;
     
 
                         }

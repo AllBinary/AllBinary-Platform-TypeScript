@@ -37,12 +37,13 @@ export class AdvertisementCampaign
                 , AdvertisementCampaignInterface {
         
 
-    private hashMap: HashMap<Any, Any>
-public constructor (hashMap: HashMap<Any, Any>){
+    private hashMap: HashMap<any, any>
+public constructor (hashMap: HashMap<any, any>){
 
             super();
             var hashMap = hashMap
-this.hashMap= hashMap
+this.hashMap= hashMap;
+    
 }
 
 
@@ -61,20 +62,24 @@ this.hashMap= hashMap
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.hashMap!.get(AdvertisementCampaignData.getInstance()!.NAME) as String;
+                        return this.hashMap!.get(AdvertisementCampaignData.getInstance()!.NAME);
+
+                         as String;
     
 }
 
 
     public setComponentName(name: string){
 var name = name
-this.hashMap!.put(DynamicObjectData.NAME, name)
+this.hashMap!.put(DynamicObjectData.NAME, name);
+    
 }
 
 
     public setName(name: string){
 var name = name
-this.hashMap!.put(AdvertisementCampaignData.getInstance()!.NAME, name)
+this.hashMap!.put(AdvertisementCampaignData.getInstance()!.NAME, name);
+    
 }
 
 

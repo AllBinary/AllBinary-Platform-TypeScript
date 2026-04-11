@@ -30,11 +30,11 @@ interface SimpleProgressActivityInterface {
 
                 //@Throws(Error::class)
             
-    onDismissProgress(animationSequence: IntArray)
+    onDismissProgress(animationSequence: number[])
 
                 //@Throws(Error::class)
             
-    onShowProgress(indeterminate: boolean, animationSequence: IntArray)
+    onShowProgress(indeterminate: boolean, animationSequence: number[])
 
 }
                 

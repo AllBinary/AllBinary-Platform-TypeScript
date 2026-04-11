@@ -32,7 +32,8 @@ export class TestRemoteHighScoresNotFinished
             
     public static main(args: string[]){
 var args = args
-TestRemoteHighScoresNotFinished()
+TestRemoteHighScoresNotFinished();
+    
 }
 
 public constructor (){

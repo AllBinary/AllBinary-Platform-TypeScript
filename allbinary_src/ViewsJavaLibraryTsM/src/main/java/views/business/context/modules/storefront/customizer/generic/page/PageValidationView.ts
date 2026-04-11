@@ -18,10 +18,13 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { HashMap } from "../../../../../../../../java/util/HashMap.js";
 
     
-import { Vector } from "../../../../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../../../../java/util/Vector.js";
 
     
 import { TransformInfoEntity } from "../../../../../../../../org/allbinary/data/tables/transform/info/TransformInfoEntity.js";
@@ -91,7 +94,8 @@ public constructor (transformInfoInterface: TransformInfoInterface)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("View Name: " +transformInfoInterface!.getName(), this, "PageViewValidation()")
+                                    logUtil!.put("View Name: " +transformInfoInterface!.getName(), this, "PageViewValidation()");
+    
 
                                     }
                                 
@@ -105,12 +109,14 @@ public constructor (transformInfoInterface: TransformInfoInterface)
     var isValid: Boolean = Boolean.TRUE;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.START, this, commonStrings!.IS_VALID)
+                                    logUtil!.put(this.commonStrings!.START, this, commonStrings!.IS_VALID);
+    
 
                                     }
                                 
@@ -118,22 +124,26 @@ public constructor (transformInfoInterface: TransformInfoInterface)
     var transformInfoEntityInterface: TransformInfoEntity = TransformInfoEntityBuilder.getInstance()!;
         
         
-
+;
+    
 
     var pageObjectConfigInterface: TransformInfoObjectConfigInterface = this.getTransformInfoInterface()!.getObjectConfigInterface()!;
         
         
-
+;
+    
 
     var allViewsToBeModifiedVector: Vector = pageObjectConfigInterface!.getGroupTransforms()!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Views To Be Modified: " +allViewsToBeModifiedVector!.length, this, "get(transformInfoInterface)")
+                                    logUtil!.put("Views To Be Modified: " +allViewsToBeModifiedVector!.length, this, "get(transformInfoInterface)");
+    
 
                                     }
                                 
@@ -141,7 +151,8 @@ public constructor (transformInfoInterface: TransformInfoInterface)
     var size: number = allViewsToBeModifiedVector!.length!;
         
         
-
+;
+    
 
 
 
@@ -153,15 +164,19 @@ public constructor (transformInfoInterface: TransformInfoInterface)
 index < size; index++)
         {
 
-    var transformInfoInterface: TransformInfo = allViewsToBeModifiedVector!.get(index) as TransformInfo;
-        
-        
+    var transformInfoInterface: TransformInfo = allViewsToBeModifiedVector!.get(index);
 
+                         as TransformInfo;
+        
+        
+;
+    
 
     var viewNameOfViewToBeModified: string = transformInfoInterface!.getName()!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
@@ -170,24 +185,33 @@ index < size; index++)
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(this.getTransformInfoInterface()!.getName())
-stringBuffer!.append(" is modifying view: ")
-stringBuffer!.append(viewNameOfViewToBeModified)
-logUtil!.put(stringBuffer!.toString(), this, "insert()")
+;
+    
+stringBuffer!.append(this.getTransformInfoInterface()!.getName());
+    
+stringBuffer!.append(" is modifying view: ");
+    
+stringBuffer!.append(viewNameOfViewToBeModified);
+    
+logUtil!.put(stringBuffer!.toString(), this, "insert()");
+    
 
                                     }
                                 
 
-    var httpTransformInfoInterface: TransformInfoHttpInterface = this.getTransformInfoInterface() as TransformInfoHttpInterface;
-        
-        
+    var httpTransformInfoInterface: TransformInfoHttpInterface = this.getTransformInfoInterface();
 
+                         as TransformInfoHttpInterface;
+        
+        
+;
+    
 
     var specifiedTransformInfoInterface: TransformInfoInterface = transformInfoEntityInterface!.get(viewNameOfViewToBeModified, httpTransformInfoInterface!.getPropertiesHashMap(), httpTransformInfoInterface!.getPageContext())!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
@@ -196,34 +220,43 @@ logUtil!.put(stringBuffer!.toString(), this, "insert()")
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(this.getTransformInfoInterface()!.getName())
-stringBuffer!.append(" is adding data to view: ")
-stringBuffer!.append(viewNameOfViewToBeModified)
-logUtil!.put(stringBuffer!.toString(), this, "insert()")
+;
+    
+stringBuffer!.append(this.getTransformInfoInterface()!.getName());
+    
+stringBuffer!.append(" is adding data to view: ");
+    
+stringBuffer!.append(viewNameOfViewToBeModified);
+    
+logUtil!.put(stringBuffer!.toString(), this, "insert()");
+    
 
                                     }
                                 
 
-    var hashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
         
         
-
+;
+    
 
     var title: string = specifiedTransformInfoInterface!.getName()!.substring(this.getTransformInfoInterface()!.getStoreName()!.length())!;
         
         
-
+;
+    
 
                         if(title.compareTo("index") == 0)
                         
                                     {
-                                    hashMap!.put(TitleData.getInstance()!.TEXT, this.getTransformInfoInterface()!.getStoreName() +" - Home Page")
+                                    hashMap!.put(TitleData.getInstance()!.TEXT, this.getTransformInfoInterface()!.getStoreName() +" - Home Page");
+    
 
                                     }
                                 
                         else {
-                            hashMap!.put(TitleData.getInstance()!.TEXT, this.getTransformInfoInterface()!.getStoreName() +" -" +title)
+                            hashMap!.put(TitleData.getInstance()!.TEXT, this.getTransformInfoInterface()!.getStoreName() +" -" +title);
+    
 
                         }
                             
@@ -231,12 +264,14 @@ logUtil!.put(stringBuffer!.toString(), this, "insert()")
     var pageValidation: PageValidation = new PageValidation(hashMap);
         
         
-
+;
+    
 
                         if(pageValidation!.isValid() == Boolean.FALSE)
                         
                                     {
-                                    isValid= Boolean.FALSE
+                                    isValid= Boolean.FALSE;
+    
 
                                     }
                                 
@@ -248,13 +283,16 @@ logUtil!.put(stringBuffer!.toString(), this, "insert()")
     var document: Document = DomDocumentHelper.create()!;
         
         
-
-document.appendChild(pageValidation!.toXmlNode(document))
+;
+    
+document.appendChild(pageValidation!.toXmlNode(document));
+    
 
     var documentString: string = DomDocumentHelper.toString(document)!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
@@ -263,17 +301,25 @@ document.appendChild(pageValidation!.toXmlNode(document))
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(viewNameOfViewToBeModified)
-stringBuffer!.append(" is changing data in ")
-stringBuffer!.append(specifiedTransformInfoInterface!.getDataFilePath()!.toString())
-stringBuffer!.append(" to the following data:\n")
-stringBuffer!.append(documentString)
-logUtil!.put(stringBuffer!.toString(), this, commonStrings!.IS_VALID)
+;
+    
+stringBuffer!.append(viewNameOfViewToBeModified);
+    
+stringBuffer!.append(" is changing data in ");
+    
+stringBuffer!.append(specifiedTransformInfoInterface!.getDataFilePath()!.toString());
+    
+stringBuffer!.append(" to the following data:\n");
+    
+stringBuffer!.append(documentString);
+    
+logUtil!.put(stringBuffer!.toString(), this, commonStrings!.IS_VALID);
+    
 
                                     }
                                 
-CustomizerUtil.getInstance()!.write(specifiedTransformInfoInterface, documentString)
+CustomizerUtil.getInstance()!.write(specifiedTransformInfoInterface, documentString);
+    
 
                                     }
                                 
@@ -285,13 +331,16 @@ CustomizerUtil.getInstance()!.write(specifiedTransformInfoInterface, documentStr
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return isValid;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("Failed to validate", this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put("Failed to validate", this, commonStrings!.IS_VALID, e);
+    
 
                                     }
                                 
@@ -313,32 +362,40 @@ CustomizerUtil.getInstance()!.write(specifiedTransformInfoInterface, documentStr
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
+;
+    
 
     var transformInfoEntityInterface: TransformInfoEntity = TransformInfoEntityBuilder.getInstance()!;
         
         
-
+;
+    
 
     var objectConfig: TransformInfoObjectConfigInterface = this.getTransformInfoInterface()!.getObjectConfigInterface()!;
         
         
+;
+    
 
+    var httpTransformInfoInterface: TransformInfoHttpInterface = this.getTransformInfoInterface();
 
-    var httpTransformInfoInterface: TransformInfoHttpInterface = this.getTransformInfoInterface() as TransformInfoHttpInterface;
+                         as TransformInfoHttpInterface;
         
         
-
+;
+    
 
     var allViewsToBeModifiedVector: Vector = objectConfig!.getGroupTransforms()!;
         
         
-
+;
+    
 
     var size: number = allViewsToBeModifiedVector!.length!;
         
         
-
+;
+    
 
 
 
@@ -350,40 +407,49 @@ CustomizerUtil.getInstance()!.write(specifiedTransformInfoInterface, documentStr
 index < size; index++)
         {
 
-    var transformInfoInterface: TransformInfo = allViewsToBeModifiedVector!.get(index) as TransformInfo;
-        
-        
+    var transformInfoInterface: TransformInfo = allViewsToBeModifiedVector!.get(index);
 
+                         as TransformInfo;
+        
+        
+;
+    
 
     var viewNameOfViewToBeModified: string = transformInfoInterface!.getName()!;
         
         
-
+;
+    
 
     var specifiedTransformInfoInterface: TransformInfoInterface = transformInfoEntityInterface!.get(viewNameOfViewToBeModified, httpTransformInfoInterface!.getPropertiesHashMap(), httpTransformInfoInterface!.getPageContext())!;
         
         
+;
+    
 
-
-    var hashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
         
         
-
+;
+    
 
     var title: string = specifiedTransformInfoInterface!.getName()!.substring(this.getTransformInfoInterface()!.getStoreName()!.length())!;
         
         
-
+;
+    
 
                         if(title.compareTo("index") == 0)
                         
                                     {
-                                    hashMap!.put(TitleData.getInstance()!.TEXT, this.getTransformInfoInterface()!.getStoreName() +" - Home Page")
+                                    hashMap!.put(TitleData.getInstance()!.TEXT, this.getTransformInfoInterface()!.getStoreName() +" - Home Page");
+    
 
                                     }
                                 
                         else {
-                            hashMap!.put(TitleData.getInstance()!.TEXT, this.getTransformInfoInterface()!.getStoreName() +" -" +title)
+                            hashMap!.put(TitleData.getInstance()!.TEXT, this.getTransformInfoInterface()!.getStoreName() +" -" +title);
+    
 
                         }
                             
@@ -391,14 +457,18 @@ index < size; index++)
     var pageValidation: PageValidation = new PageValidation(hashMap);
         
         
-
+;
+    
 
                         if(pageValidation!.isValid() == Boolean.FALSE)
                         
                                     {
-                                    stringBuffer!.append("TransformInfo Name for PageValidation:" +specifiedTransformInfoInterface!.getName())
-stringBuffer!.append("PageValidation:" +hashMap)
-stringBuffer!.append("PageValidation Info:" +pageValidation!.validationInfo())
+                                    stringBuffer!.append("TransformInfo Name for PageValidation:" +specifiedTransformInfoInterface!.getName());
+    
+stringBuffer!.append("PageValidation:" +hashMap);
+    
+stringBuffer!.append("PageValidation Info:" +pageValidation!.validationInfo());
+    
 
                                     }
                                 
@@ -409,14 +479,19 @@ stringBuffer!.append("PageValidation Info:" +pageValidation!.validationInfo())
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e)
+                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e);
+    
 
                                     }
                                 

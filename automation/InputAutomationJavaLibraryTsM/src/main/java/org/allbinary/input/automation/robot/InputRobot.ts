@@ -59,7 +59,8 @@ public constructor (graphicsDevice: GraphicsDevice){
 
             super();
                 //var graphicsDevice = graphicsDevice
-this.robot= Robot(graphicsDevice)
+this.robot= Robot(graphicsDevice);
+    
 }
 
 
@@ -88,7 +89,8 @@ this.robot= Robot(graphicsDevice)
     var point: Point = MouseInfo.getPointerInfo()!.getLocation()!;
         
         
-
+;
+    
 
 
 
@@ -108,35 +110,43 @@ this.robot= Robot(graphicsDevice)
     var point: Point = PointHelper.getCenterPoint(rectangle)!;
         
         
-
-this.robot.mouseMove(point.x +x, point.y +y)
+;
+    
+this.robot.mouseMove(point.x +x, point.y +y);
+    
 
     var message: string = StringMaker().
                             append("Moved Mouse To: x: ")!.appendint(point.x)!.append(" y: ")!.appendint(point.y)!.append(" in the middle of: ")!.append(StringUtil.getInstance()!.toString(rectangle))!.toString()!;
         
         
-
-logUtil!.put(message, this, "moveMouseToTarget")
+;
+    
+logUtil!.put(message, this, "moveMouseToTarget");
+    
 }
 
 
     public mouseMove(point: Point){
 var point = point
-this.mouseMove(point.x, point.y)
+this.mouseMove(point.x, point.y);
+    
 }
 
 
     public mouseMove(x: number, y: number){
     //var x = x
     //var y = y
-this.robot.mouseMove(x, y)
+this.robot.mouseMove(x, y);
+    
 
     var message: string = StringMaker().
                             append("Moved Mouse To: x: ")!.appendint(x)!.append(" y: ")!.appendint(y)!.toString()!;
         
         
-
-logUtil!.put(message, this, "moveMouse")
+;
+    
+logUtil!.put(message, this, "moveMouse");
+    
 }
 
 
@@ -144,7 +154,8 @@ logUtil!.put(message, this, "moveMouse")
             
     public mouseMoveToTarget(rectangle: Rectangle){
 var rectangle = rectangle
-this.mouseMoveToTarget(rectangle, 0, 0)
+this.mouseMoveToTarget(rectangle, 0, 0);
+    
 }
 
 
@@ -155,13 +166,16 @@ var screenRect = screenRect
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.robot.createScreenCapture(screenRect);
+
+                        ;
     
 }
 
 
     public delay(ms: Integer){
 var ms = ms
-this.robot.delay(ms)
+this.robot.delay(ms);
+    
 }
 
 
@@ -171,6 +185,8 @@ this.robot.delay(ms)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.robot.getAutoDelay();
+
+                        ;
     
 }
 
@@ -183,6 +199,8 @@ var y = y
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.robot.getPixelColor(x, y);
+
+                        ;
     
 }
 
@@ -193,56 +211,66 @@ var y = y
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.robot.isAutoWaitForIdle();
+
+                        ;
     
 }
 
 
     public keyPress(keycode: Integer){
 var keycode = keycode
-this.robot.keyPress(keycode)
+this.robot.keyPress(keycode);
+    
 }
 
 
     public keyRelease(keycode: Integer){
 var keycode = keycode
-this.robot.keyRelease(keycode)
+this.robot.keyRelease(keycode);
+    
 }
 
 
     public mouseMove(x: Integer, y: Integer){
 var x = x
 var y = y
-this.robot.mouseMove(x, y)
+this.robot.mouseMove(x, y);
+    
 }
 
 
     public mousePress(buttons: Integer){
 var buttons = buttons
-this.robot.mousePress(buttons)
+this.robot.mousePress(buttons);
+    
 }
 
 
     public mouseRelease(buttons: Integer){
 var buttons = buttons
-this.robot.mouseRelease(buttons)
+this.robot.mouseRelease(buttons);
+    
 }
 
 
     public mouseWheel(wheelAmt: Integer){
 var wheelAmt = wheelAmt
-this.robot.mouseWheel(wheelAmt)
+this.robot.mouseWheel(wheelAmt);
+    
 }
 
 
     public setAutoDelay(ms: Integer){
 var ms = ms
-this.robot.setAutoDelay(ms)
+this.robot.setAutoDelay(ms);
+    
 }
 
 
     public setAutoWaitForIdle(isOn: boolean){
 var isOn = isOn
-this.robot.setAutoWaitForIdle(isOn)
+this.robot.setAutoWaitForIdle(isOn);
+    
 }
 
 
@@ -252,12 +280,15 @@ this.robot.setAutoWaitForIdle(isOn)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.robot.toString();
+
+                        ;
     
 }
 
 
     public waitForIdle(){
-this.robot.waitForIdle()
+this.robot.waitForIdle();
+    
 }
 
 

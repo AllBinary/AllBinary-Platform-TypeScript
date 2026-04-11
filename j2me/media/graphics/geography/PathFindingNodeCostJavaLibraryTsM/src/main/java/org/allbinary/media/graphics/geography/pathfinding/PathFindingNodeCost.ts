@@ -57,7 +57,8 @@ public constructor (parent: any = {}, geographicMapCellPosition: GeographicMapCe
 
                             //For kotlin this is before the body of the constructor.
                     
-this.pathFindingNodeCostInfoP= pathFindingNodeCostInfo
+this.pathFindingNodeCostInfoP= pathFindingNodeCostInfo;
+    
 
                         if(this.geographicMapCellPosition == 
                                     null
@@ -99,7 +100,8 @@ this.pathFindingNodeCostInfoP= pathFindingNodeCostInfo
 
     public setPathFindingNodeCostInfo(pathFindingNodeCostInfo: PathFindingNodeCostInfo){
 var pathFindingNodeCostInfo = pathFindingNodeCostInfo
-this.pathFindingNodeCostInfoP= pathFindingNodeCostInfo
+this.pathFindingNodeCostInfoP= pathFindingNodeCostInfo;
+    
 }
 
 
@@ -110,6 +112,8 @@ var pathFindingNodeCost = pathFindingNodeCost
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.pathFindingNodeCostInfoP!.compareTo(pathFindingNodeCost!.pathFindingNodeCostInfoP);
+
+                        ;
     
 }
 
@@ -119,25 +123,35 @@ var pathFindingNodeCost = pathFindingNodeCost
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(this::class.toString()!)
-stringBuffer!.append(CommonLabels.getInstance()!.COLON_SEP)
-stringBuffer!.append(this.getPathFindingNodeCostInfo()!.toString())
-stringBuffer!.append(" Path: ")
-stringBuffer!.append(this.geographicMapCellPosition!.toString())
+;
+    
+stringBuffer!.append(this.constructor.name.toString()!);
+    
+stringBuffer!.append(CommonLabels.getInstance()!.COLON_SEP);
+    
+stringBuffer!.append(this.getPathFindingNodeCostInfo()!.toString());
+    
+stringBuffer!.append(" Path: ");
+    
+stringBuffer!.append(this.geographicMapCellPosition!.toString());
+    
 
     var pathFindingNode: PathFindingNode = this.parent as PathFindingNode;
         
         
-
+;
+    
 
         while(pathFindingNode != 
                                     null
                                 )
         {
-stringBuffer!.append(pathFindingNode!.geographicMapCellPosition!.toString())
-stringBuffer!.append(commonSeps!.SPACE)
-pathFindingNode= pathFindingNode!.parent as PathFindingNode
+stringBuffer!.append(pathFindingNode!.geographicMapCellPosition!.toString());
+    
+stringBuffer!.append(commonSeps!.SPACE);
+    
+pathFindingNode= pathFindingNode!.parent as PathFindingNode;
+    
 }
 
 
@@ -145,6 +159,8 @@ pathFindingNode= pathFindingNode!.parent as PathFindingNode
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

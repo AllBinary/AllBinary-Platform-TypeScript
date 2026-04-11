@@ -37,17 +37,21 @@ var rectangle = rectangle
     var x: number = rectangle.getX() +rectangle.getWidth() /two;
         
         
-
+;
+    
 
     var y: number = rectangle.getY() +rectangle.getHeight() /two;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return PointFactory.getInstance(x.toInt(), y.toInt());
+
+                        ;
     
 }
 

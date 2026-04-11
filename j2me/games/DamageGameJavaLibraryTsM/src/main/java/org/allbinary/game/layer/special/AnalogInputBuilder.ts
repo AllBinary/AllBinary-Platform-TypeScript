@@ -47,24 +47,36 @@ export class AnalogInputBuilder
     public disable(inputProcessorArray: GameInputProcessor[], collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer){
     //var inputProcessorArray = inputProcessorArray
     //var collidableDestroyableDamageableLayer = collidableDestroyableDamageableLayer
-inputProcessorArray[Canvas.UP]= SpecialUpGameInputProcessor(collidableDestroyableDamageableLayer)
-inputProcessorArray[Canvas.DOWN]= SpecialDownGameInputProcessor(collidableDestroyableDamageableLayer)
-inputProcessorArray[Canvas.RIGHT]= SpecialRightGameInputProcessor(collidableDestroyableDamageableLayer)
-inputProcessorArray[Canvas.LEFT]= SpecialLeftGameInputProcessor(collidableDestroyableDamageableLayer)
-inputProcessorArray[Canvas.KEY_NUM0]= Special1GameInputProcessor(collidableDestroyableDamageableLayer)
-inputProcessorArray[Canvas.KEY_NUM5]= Special3GameInputProcessor(collidableDestroyableDamageableLayer)
+inputProcessorArray[Canvas.UP]= SpecialUpGameInputProcessor(collidableDestroyableDamageableLayer);
+    
+inputProcessorArray[Canvas.DOWN]= SpecialDownGameInputProcessor(collidableDestroyableDamageableLayer);
+    
+inputProcessorArray[Canvas.RIGHT]= SpecialRightGameInputProcessor(collidableDestroyableDamageableLayer);
+    
+inputProcessorArray[Canvas.LEFT]= SpecialLeftGameInputProcessor(collidableDestroyableDamageableLayer);
+    
+inputProcessorArray[Canvas.KEY_NUM0]= Special1GameInputProcessor(collidableDestroyableDamageableLayer);
+    
+inputProcessorArray[Canvas.KEY_NUM5]= Special3GameInputProcessor(collidableDestroyableDamageableLayer);
+    
 }
 
 
     public enable(inputProcessorArray: GameInputProcessor[], collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer){
     //var inputProcessorArray = inputProcessorArray
     //var collidableDestroyableDamageableLayer = collidableDestroyableDamageableLayer
-inputProcessorArray[Canvas.UP]= SpecialAnalogUpGameInputProcessor(collidableDestroyableDamageableLayer)
-inputProcessorArray[Canvas.DOWN]= SpecialAnalogDownGameInputProcessor(collidableDestroyableDamageableLayer)
-inputProcessorArray[Canvas.RIGHT]= SpecialAnalogRightGameInputProcessor(collidableDestroyableDamageableLayer)
-inputProcessorArray[Canvas.LEFT]= SpecialAnalogLeftGameInputProcessor(collidableDestroyableDamageableLayer)
-inputProcessorArray[Canvas.KEY_NUM0]= SpecialAnalogLeftTriggerGameInputProcessor(collidableDestroyableDamageableLayer)
-inputProcessorArray[Canvas.KEY_NUM5]= SpecialAnalogRightTriggerGameInputProcessor(collidableDestroyableDamageableLayer)
+inputProcessorArray[Canvas.UP]= SpecialAnalogUpGameInputProcessor(collidableDestroyableDamageableLayer);
+    
+inputProcessorArray[Canvas.DOWN]= SpecialAnalogDownGameInputProcessor(collidableDestroyableDamageableLayer);
+    
+inputProcessorArray[Canvas.RIGHT]= SpecialAnalogRightGameInputProcessor(collidableDestroyableDamageableLayer);
+    
+inputProcessorArray[Canvas.LEFT]= SpecialAnalogLeftGameInputProcessor(collidableDestroyableDamageableLayer);
+    
+inputProcessorArray[Canvas.KEY_NUM0]= SpecialAnalogLeftTriggerGameInputProcessor(collidableDestroyableDamageableLayer);
+    
+inputProcessorArray[Canvas.KEY_NUM5]= SpecialAnalogRightTriggerGameInputProcessor(collidableDestroyableDamageableLayer);
+    
 }
 
 

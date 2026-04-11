@@ -86,6 +86,8 @@ var abFilePath = abFilePath
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getExtension(abFilePath!.toString());
+
+                        ;
     
 }
 
@@ -99,6 +101,8 @@ var abPath = abPath
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getExtension(abPath!.toString());
+
+                        ;
     
 }
 
@@ -122,17 +126,20 @@ var filePath = filePath
     var beginIndex: number = filePath!.length -MIN;
         
         
-
+;
+    
 
     var extension: string = filePath!.substring(beginIndex +1)!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("FileExtension: " +extension, this, "getExtension()")
+                                    logUtil!.put("FileExtension: " +extension, this, "getExtension()");
+    
 
                                     }
                                 
@@ -154,6 +161,8 @@ var abFilePath = abFilePath
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getWithoutExtension(abFilePath!.toString());
+
+                        ;
     
 }
 
@@ -167,6 +176,8 @@ var abPath = abPath
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getWithoutExtension(abPath!.toString());
+
+                        ;
     
 }
 
@@ -190,17 +201,20 @@ var filePath = filePath
     var endIndex: number = filePath!.length -MIN;
         
         
-
+;
+    
 
     var pathWithoutExtension: string = filePath!.substring(0, endIndex)!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("FileWithoutExtension: " +pathWithoutExtension, this, "getWithoutExtension()")
+                                    logUtil!.put("FileWithoutExtension: " +pathWithoutExtension, this, "getWithoutExtension()");
+    
 
                                     }
                                 
@@ -316,10 +330,13 @@ var path = path
     public adjustStart(path: string): string{
 var path = path
 
-                        if(!this.isValidStart(path))
+                        if(!this.isValidStart(path);
+
+                        )
                         
                                     {
-                                    path= abPathData!.SEPARATOR +path
+                                    path= abPathData!.SEPARATOR +path;
+    
 
                                     }
                                 
@@ -335,10 +352,13 @@ var path = path
     public adjustEnd(path: string): string{
 var path = path
 
-                        if(!this.isValidEnd(path))
+                        if(!this.isValidEnd(path);
+
+                        )
                         
                                     {
-                                    path= path +abPathData!.SEPARATOR
+                                    path= path +abPathData!.SEPARATOR;
+    
 
                                     }
                                 
@@ -370,7 +390,8 @@ var path = path
                         if(path.indexOf("\\") >= 0)
                         
                                     {
-                                    path= path.replace('\\', abPathData!.SEPARATORCHAR)
+                                    path= path.replace('\\', abPathData!.SEPARATORCHAR);
+    
 
                                     }
                                 
@@ -390,12 +411,14 @@ var categoryPath = categoryPath
     var endIndex: number = categoryPath!.lastIndexOf(abPathData!.SEPARATOR)!;
         
         
-
+;
+    
 
                         if(endIndex < 0)
                         
                                     {
-                                    endIndex= categoryPath!.lastIndexOf(filePathData!.SEPARATORCHAR)
+                                    endIndex= categoryPath!.lastIndexOf(filePathData!.SEPARATORCHAR);
+    
 
                                     }
                                 
@@ -415,12 +438,15 @@ var categoryPath = categoryPath
     var categoryName: string = categoryPath!.substring(0, endIndex)!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getNameFromPath(categoryName);
+
+                        ;
     
 
                                     }
@@ -430,7 +456,8 @@ var categoryPath = categoryPath
     var categoryName: string = categoryPath!.substring(endIndex +1)!;
         
         
-
+;
+    
 
 
 
@@ -452,12 +479,14 @@ var categoryPath = categoryPath
     var endIndex: number = categoryPath!.lastIndexOf(abPathData!.SEPARATOR)!;
         
         
-
+;
+    
 
                         if(endIndex < 0)
                         
                                     {
-                                    endIndex= categoryPath!.lastIndexOf(filePathData!.SEPARATORCHAR)
+                                    endIndex= categoryPath!.lastIndexOf(filePathData!.SEPARATORCHAR);
+    
 
                                     }
                                 
@@ -483,6 +512,8 @@ var categoryPath = categoryPath
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.removeNameFromPath(categoryPath!.substring(0, endIndex -1));
+
+                        ;
     
 
                                     }
@@ -492,7 +523,8 @@ var categoryPath = categoryPath
     var categoryName: string = categoryPath!.substring(0, endIndex)!;
         
         
-
+;
+    
 
 
 

@@ -18,10 +18,13 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { HashMap } from "../../../../../java/util/HashMap.js";
 
     
-import { Vector } from "../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../java/util/Vector.js";
 
     
 import { DomNodeInterface } from "../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js";
@@ -45,7 +48,8 @@ export class ThemesValidation extends Validation
 public constructor (){
 
             super();
-            this.themeVector= Vector()
+            this.themeVector= Vector();
+    
 }
 
 public constructor (node: Node){
@@ -54,7 +58,7 @@ public constructor (node: Node){
             var node = node
 }
 
-public constructor (hashMap: HashMap<Any, Any>){
+public constructor (hashMap: HashMap<any, any>){
 
             super();
             var hashMap = hashMap
@@ -110,12 +114,14 @@ var document = document
     var node: Node = document.createElement(ThemesData.getInstance()!.NAME)!;
         
         
-
+;
+    
 
     var size: number = themeVector!.length!;
         
         
-
+;
+    
 
 
 
@@ -127,11 +133,15 @@ var document = document
 i < size; i++)
         {
 
-    var themeDomNodeInterface: DomNodeInterface = themeVector!.get(i) as DomNodeInterface;
-        
-        
+    var themeDomNodeInterface: DomNodeInterface = themeVector!.get(i);
 
-node.appendChild(themeDomNodeInterface!.toXmlNode(document))
+                         as DomNodeInterface;
+        
+        
+;
+    
+node.appendChild(themeDomNodeInterface!.toXmlNode(document));
+    
 }
 
 

@@ -52,7 +52,7 @@ export class SearchRequest extends AbContext {
     private searchParams: SearchParams
 
     private storeFront: StoreFrontInterface
-public constructor (storeFront: StoreFrontInterface, searchParams: SearchParams, xslFile: string, contentType: string, propertiesHashMap: HashMap<Any, Any>, pageContext: PageContext)                        
+public constructor (storeFront: StoreFrontInterface, searchParams: SearchParams, xslFile: string, contentType: string, propertiesHashMap: HashMap<any, any>, pageContext: PageContext)                        
 
                             : super(propertiesHashMap, pageContext){
 
@@ -67,41 +67,51 @@ var pageContext = pageContext
 
                             //For kotlin this is before the body of the constructor.
                     
-this.storeFront= storeFront
-this.searchParams= searchParams
-this.xslFile= xslFile
-this.pageName= pageName
-this.contentType= contentType
+this.storeFront= storeFront;
+    
+this.searchParams= searchParams;
+    
+this.xslFile= xslFile;
+    
+this.pageName= pageName;
+    
+this.contentType= contentType;
+    
 }
 
 
     public setStoreFront(storeFront: StoreFrontInterface){
 var storeFront = storeFront
-this.storeFront= storeFront
+this.storeFront= storeFront;
+    
 }
 
 
     public setParams(searchParams: SearchParams){
 var searchParams = searchParams
-this.searchParams= searchParams
+this.searchParams= searchParams;
+    
 }
 
 
     public setXslFile(value: string){
 var value = value
-this.xslFile= value
+this.xslFile= value;
+    
 }
 
 
     public setFileBaseName(value: string){
 var value = value
-this.pageName= value
+this.pageName= value;
+    
 }
 
 
     public setContentType(value: string){
 var value = value
-this.contentType= value
+this.contentType= value;
+    
 }
 
 
@@ -164,6 +174,8 @@ var document = document
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return ModDomHelper.createNameValueNodes(document, SearchData.FILENAME, this.getFileBaseName());
+
+                        ;
     
 }
 

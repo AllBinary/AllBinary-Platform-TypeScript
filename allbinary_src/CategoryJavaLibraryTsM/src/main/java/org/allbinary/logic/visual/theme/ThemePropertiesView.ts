@@ -42,7 +42,8 @@ public constructor (themeInterface: ThemeInterface){
 
             super();
             var themeInterface = themeInterface
-this.themeInterface= themeInterface
+this.themeInterface= themeInterface;
+    
 }
 
 
@@ -54,7 +55,8 @@ var document = document
     var node: Node = ModDomHelper.createNameValueNodes(document, ThemeData.getInstance()!.NAME, this.themeInterface!.toHashMap())!;
         
         
-
+;
+    
 
 
 

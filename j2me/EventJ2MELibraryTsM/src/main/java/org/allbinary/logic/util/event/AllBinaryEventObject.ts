@@ -36,7 +36,8 @@ public constructor (anyType: any = {}){
 
             super();
             var anyType = anyType
-this.source= anyType
+this.source= anyType;
+    
 }
 
 
@@ -52,7 +53,8 @@ this.source= anyType
 
     setSource(source: any = {}){
 var source = source
-this.source= source
+this.source= source;
+    
 }
 
 

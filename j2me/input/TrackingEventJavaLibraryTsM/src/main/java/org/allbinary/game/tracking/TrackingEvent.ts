@@ -55,13 +55,15 @@ public constructor (allBinaryLayerInterface: AllBinaryLayer)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setLayerInterface(allBinaryLayerInterface)
+this.setLayerInterface(allBinaryLayerInterface);
+    
 }
 
 
     public init(anyType: any = {}){
 var anyType = anyType
-this.setSource(anyType)
+this.setSource(anyType);
+    
 }
 
 
@@ -77,13 +79,15 @@ this.setSource(anyType)
 
     setLayerInterface(layerInterface: AllBinaryLayer){
 var layerInterface = layerInterface
-this.layerInterface= layerInterface
+this.layerInterface= layerInterface;
+    
 }
 
 
     public setLayerInterfaceForCircularStaticPool(layerInterface: AllBinaryLayer){
 var layerInterface = layerInterface
-this.layerInterface= layerInterface
+this.layerInterface= layerInterface;
+    
 }
 
 
@@ -92,15 +96,21 @@ this.layerInterface= layerInterface
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("TrackingEvent: \n")
-stringBuffer!.append("LayerInterface: ")
-stringBuffer!.append(this.layerInterface!.toString())
+;
+    
+stringBuffer!.append("TrackingEvent: \n");
+    
+stringBuffer!.append("LayerInterface: ");
+    
+stringBuffer!.append(this.layerInterface!.toString());
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

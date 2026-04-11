@@ -47,7 +47,8 @@ public constructor (anyType: any = {}){
 
             super();
             var anyType = anyType
-this.anyType= anyType
+this.anyType= anyType;
+    
 }
 
 
@@ -67,40 +68,49 @@ this.anyType= anyType
 
         try {
             
-    var helperClass: KClass<*> = anyType!::class!;
+    var helperClass: Function = anyType!constructor!;
         
         
-
+;
+    
 
     var method: Method = helperClass!.getMethod("getName", 
                             null)!;
         
         
-
+;
+    
 
     var result: string = method.invoke(this.anyType, 
-                            null) as String;
-        
-        
+                            null);
 
+                         as String;
+        
+        
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Reflection Exception";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "getName()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "getName()", e);
+    
 
                                     }
                                 
@@ -119,40 +129,49 @@ this.anyType= anyType
 
         try {
             
-    var helperClass: KClass<*> = anyType!::class!;
+    var helperClass: Function = anyType!constructor!;
         
         
-
+;
+    
 
     var method: Method = helperClass!.getMethod("getStoreName", 
                             null)!;
         
         
-
+;
+    
 
     var result: string = method.invoke(this.anyType, 
-                            null) as String;
-        
-        
+                            null);
 
+                         as String;
+        
+        
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Reflection Exception";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "getStoreName()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "getStoreName()", e);
+    
 
                                     }
                                 
@@ -171,40 +190,49 @@ this.anyType= anyType
 
         try {
             
-    var helperClass: KClass<*> = anyType!::class!;
+    var helperClass: Function = anyType!constructor!;
         
         
-
+;
+    
 
     var method: Method = helperClass!.getMethod(commonStrings!.PROCESS, 
                             null)!;
         
         
-
+;
+    
 
     var result: Integer = method.invoke(this.anyType, 
-                            null) as Integer;
-        
-        
+                            null);
 
+                         as Integer;
+        
+        
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return result;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Reflection Exception";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e);
+    
 
                                     }
                                 

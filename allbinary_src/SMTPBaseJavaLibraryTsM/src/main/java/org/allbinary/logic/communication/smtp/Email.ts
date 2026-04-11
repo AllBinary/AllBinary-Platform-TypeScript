@@ -137,8 +137,10 @@ var server = server
 var textBody = textBody
 var htmlAttachment = htmlAttachment
 var contentBase = contentBase
-this.isDebug= false
-init(from, to, subject, server, textBody, htmlAttachment, contentBase)
+this.isDebug= false;
+    
+init(from, to, subject, server, textBody, htmlAttachment, contentBase);
+    
 }
 
 public constructor (from: string, to: string, subject: string, server: string, textBody: string, htmlAttachment: string, contentBase: string, isDebug: boolean){
@@ -152,8 +154,10 @@ var textBody = textBody
 var htmlAttachment = htmlAttachment
 var contentBase = contentBase
 var isDebug = isDebug
-this.isDebug= isDebug
-init(from, to, subject, server, textBody, htmlAttachment, contentBase)
+this.isDebug= isDebug;
+    
+init(from, to, subject, server, textBody, htmlAttachment, contentBase);
+    
 }
 
 
@@ -173,35 +177,47 @@ var contentBase = contentBase
     var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
         
         
-
+;
+    
 
     var mimeBodyParts: MimeBodyPart[] = new Array(
                             //Otherwise - levels - level - dimension - ConditionalExpr
 );
         
         
+;
+    
+mimeBodyParts[0]= MimeBodyPart();
+    
+mimeBodyParts[0]!.setText(textBody);
+    
 
-mimeBodyParts[0]= MimeBodyPart()
-mimeBodyParts[0]!.setText(textBody)
+                        if(!stringValidationUtil!.isEmpty(htmlAttachment);
 
-                        if(!stringValidationUtil!.isEmpty(htmlAttachment))
+                        )
                         
                                     {
                                     
     var internetHeaders: InternetHeaders = new InternetHeaders();
         
         
+;
+    
+internetHeaders!.addHeader("Content-Type", "text/html");
+    
 
-internetHeaders!.addHeader("Content-Type", "text/html")
+                        if(!stringValidationUtil!.isEmpty(contentBase);
 
-                        if(!stringValidationUtil!.isEmpty(contentBase))
+                        )
                         
                                     {
-                                    internetHeaders!.addHeader("Content-Base", contentBase)
+                                    internetHeaders!.addHeader("Content-Base", contentBase);
+    
 
                                     }
                                 
-mimeBodyParts[1]= MimeBodyPart(internetHeaders, htmlAttachment!.encodeToByteArray())
+mimeBodyParts[1]= MimeBodyPart(internetHeaders, htmlAttachment!.encodeToByteArray());
+    
 
                                     }
                                 
@@ -215,8 +231,11 @@ init(server, null as Authenticator,
                                                     InternetAddress(to);
         
         
-                                                ], null as Array<InternetAddress?>, null as Array<InternetAddress?>, subject, mimeBodyParts)
-} catch(e: Exception)
+                                                ], null as Array<InternetAddress?>, null as Array<InternetAddress?>, subject, mimeBodyParts);
+    
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGINGERROR))
@@ -226,8 +245,10 @@ init(server, null as Authenticator,
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, "emailConstructor", e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, "emailConstructor", e);
+    
 
                                     }
                                 
@@ -251,15 +272,18 @@ var addresses_cc = addresses_cc
 var addresses_bcc = addresses_bcc
 var subject = subject
 var mimeBodyParts = mimeBodyParts
-this.properties= Properties()
-this.properties.put(SMTP_HOST, server)
+this.properties= Properties();
+    
+this.properties.put(SMTP_HOST, server);
+    
 
         try {
             
     var hostName: string = StringUtil.getInstance()!.EMPTY_STRING;
         
         
-
+;
+    
 
                         if(StringValidationUtil.getInstance()!.isEmpty(hostName))
                         
@@ -268,32 +292,39 @@ this.properties.put(SMTP_HOST, server)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGINGERROR))
                         
                                     {
-                                    logUtil!.put("Unable to get HostName so using fake", this, "init()")
+                                    logUtil!.put("Unable to get HostName so using fake", this, "init()");
+    
 
                                     }
                                 
-this.properties.put(SMTP_LOCAL_HOST, "FakeHostName")
+this.properties.put(SMTP_LOCAL_HOST, "FakeHostName");
+    
 
                                     }
                                 
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGINGERROR))
                         
                                     {
-                                    logUtil!.put("Continuing on Exception: Unable to get HostName", this, "init()", e)
+                                    logUtil!.put("Continuing on Exception: Unable to get HostName", this, "init()", e);
+    
 
                                     }
                                 
-this.properties.put(SMTP_LOCAL_HOST, "FakeHostName")
+this.properties.put(SMTP_LOCAL_HOST, "FakeHostName");
+    
 }
 
 
                         if(isDebug)
                         
                                     {
-                                    this.properties.put(DEBUG, "true")
+                                    this.properties.put(DEBUG, "true");
+    
 
                                     }
                                 
@@ -301,33 +332,45 @@ this.properties.put(SMTP_LOCAL_HOST, "FakeHostName")
     var session: Session = Session.getInstance(properties, authenticator)!;
         
         
-
+;
+    
 
                         if(isDebug)
                         
                                     {
-                                    session.setDebug(true)
-bs= ByteArrayOutputStream()
+                                    session.setDebug(true);
+    
+bs= ByteArrayOutputStream();
+    
 
     var printStream: PrintStream = new PrintStream(bs);
         
         
-
-session.setDebugOut(printStream)
+;
+    
+session.setDebugOut(printStream);
+    
 
                                     }
                                 
-msg= MimeMessage(session)
-msg.addFrom(addresses_from)
-msg.setRecipients(Message.RecipientType.TO, addresses_to)
-msg.setRecipients(Message.RecipientType.CC, addresses_cc)
-msg.setRecipients(Message.RecipientType.BCC, addresses_bcc)
-msg.setSubject(subject)
+msg= MimeMessage(session);
+    
+msg.addFrom(addresses_from);
+    
+msg.setRecipients(Message.RecipientType.TO, addresses_to);
+    
+msg.setRecipients(Message.RecipientType.CC, addresses_cc);
+    
+msg.setRecipients(Message.RecipientType.BCC, addresses_bcc);
+    
+msg.setSubject(subject);
+    
 
     var mimeMultipart: MimeMultipart = new MimeMultipart();
         
         
-
+;
+    
 
 
 
@@ -338,10 +381,12 @@ msg.setSubject(subject)
         
 i < mimeBodyParts!.length; i++)
         {
-mimeMultipart!.addBodyPart(mimeBodyParts[i]!)
+mimeMultipart!.addBodyPart(mimeBodyParts[i]!);
+    
 }
 
-msg.setContent(mimeMultipart)
+msg.setContent(mimeMultipart);
+    
 }
 
 
@@ -398,43 +443,25 @@ msg.setContent(mimeMultipart)
 
                 //@Throws(Error::class)
             
-    public toHashMap(): HashMap<Any, Any>{
+    public toHashMap(): HashMap<any, any>{
 
         try {
             
-    var hashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
         
         
+;
+    
+hashMap!.put(EmailData.SERVER, properties.get(SMTP_HOST);
 
-hashMap!.put(EmailData.SERVER, properties.get(SMTP_HOST) as String)
+                         as String);
+    
 
     var addresses: Address[] = msg.getFrom()!;
         
         
-
-
-                        if(addresses != 
-                                    null
-                                )
-                        
-                                    {
-                                    
-
-
-
-                        for (
-    var index: number = 0;
-        
-        
-index < addresses.length; index++)
-        {
-hashMap!.put(EmailData.FROM, addresses[index]!.toString())
-}
-
-
-                                    }
-                                
-addresses= msg.getRecipients(Message.RecipientType.TO)
+;
+    
 
                         if(addresses != 
                                     null
@@ -451,13 +478,15 @@ addresses= msg.getRecipients(Message.RecipientType.TO)
         
 index < addresses.length; index++)
         {
-hashMap!.put(EmailData.TO, addresses[index]!.toString())
+hashMap!.put(EmailData.FROM, addresses[index]!.toString());
+    
 }
 
 
                                     }
                                 
-addresses= msg.getRecipients(Message.RecipientType.CC)
+addresses= msg.getRecipients(Message.RecipientType.TO);
+    
 
                         if(addresses != 
                                     null
@@ -474,13 +503,15 @@ addresses= msg.getRecipients(Message.RecipientType.CC)
         
 index < addresses.length; index++)
         {
-hashMap!.put(EmailData.CC, addresses[index]!.toString())
+hashMap!.put(EmailData.TO, addresses[index]!.toString());
+    
 }
 
 
                                     }
                                 
-addresses= msg.getRecipients(Message.RecipientType.BCC)
+addresses= msg.getRecipients(Message.RecipientType.CC);
+    
 
                         if(addresses != 
                                     null
@@ -497,18 +528,48 @@ addresses= msg.getRecipients(Message.RecipientType.BCC)
         
 index < addresses.length; index++)
         {
-hashMap!.put(EmailData.BCC, addresses[index]!.toString())
+hashMap!.put(EmailData.CC, addresses[index]!.toString());
+    
 }
 
 
                                     }
                                 
-hashMap!.put(EmailData.SUBJECT, msg.getSubject())
+addresses= msg.getRecipients(Message.RecipientType.BCC);
+    
 
-    var mimeMultipart: MimeMultipart = msg.getContent() as MimeMultipart;
+                        if(addresses != 
+                                    null
+                                )
+                        
+                                    {
+                                    
+
+
+
+                        for (
+    var index: number = 0;
         
         
+index < addresses.length; index++)
+        {
+hashMap!.put(EmailData.BCC, addresses[index]!.toString());
+    
+}
 
+
+                                    }
+                                
+hashMap!.put(EmailData.SUBJECT, msg.getSubject());
+    
+
+    var mimeMultipart: MimeMultipart = msg.getContent();
+
+                         as MimeMultipart;
+        
+        
+;
+    
 
                         if(mimeMultipart != 
                                     null
@@ -526,11 +587,15 @@ hashMap!.put(EmailData.SUBJECT, msg.getSubject())
 index < mimeMultipart!.getCount(); index++)
         {
 
-    var content: string = mimeMultipart!.getBodyPart(index)!.getContent() as String;
-        
-        
+    var content: string = mimeMultipart!.getBodyPart(index)!.getContent();
 
-hashMap!.put(EmailData.CONTENT, content)
+                         as String;
+        
+        
+;
+    
+hashMap!.put(EmailData.CONTENT, content);
+    
 }
 
 
@@ -542,13 +607,16 @@ hashMap!.put(EmailData.CONTENT, content)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return hashMap;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGINGERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "toHashMap()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "toHashMap()", e);
+    
 
                                     }
                                 
@@ -569,7 +637,8 @@ var document = document
     var node: Node = ModDomHelper.createNameValueNodes(document, EmailData.NAME, this.toHashMap())!;
         
         
-
+;
+    
 
 
 

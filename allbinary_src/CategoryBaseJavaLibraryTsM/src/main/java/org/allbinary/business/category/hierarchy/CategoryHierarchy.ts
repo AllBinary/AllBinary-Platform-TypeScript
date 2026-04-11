@@ -47,9 +47,12 @@ public constructor (rootCategoryInterface: CategoryInterface, parentCategoryInte
             super();
             var rootCategoryInterface = rootCategoryInterface
 var parentCategoryInterface = parentCategoryInterface
-this.level= 0
-this.setRoot(rootCategoryInterface)
-this.setParent(parentCategoryInterface)
+this.level= 0;
+    
+this.setRoot(rootCategoryInterface);
+    
+this.setParent(parentCategoryInterface);
+    
 }
 
 public constructor (rootCategoryInterface: CategoryInterface, parentCategoryInterface: CategoryInterface, level: number){
@@ -58,25 +61,34 @@ public constructor (rootCategoryInterface: CategoryInterface, parentCategoryInte
             var rootCategoryInterface = rootCategoryInterface
 var parentCategoryInterface = parentCategoryInterface
 var level = level
-this.level= level
-this.setRoot(rootCategoryInterface)
-this.setParent(parentCategoryInterface)
+this.level= level;
+    
+this.setRoot(rootCategoryInterface);
+    
+this.setParent(parentCategoryInterface);
+    
 }
 
-public constructor (rootCategoryInterface: CategoryInterface, parentCategoryInterface: CategoryInterface, categoryPropertiesHashMap: HashMap<Any, Any>){
+public constructor (rootCategoryInterface: CategoryInterface, parentCategoryInterface: CategoryInterface, categoryPropertiesHashMap: HashMap<any, any>){
 
             super();
             var rootCategoryInterface = rootCategoryInterface
 var parentCategoryInterface = parentCategoryInterface
 var categoryPropertiesHashMap = categoryPropertiesHashMap
 
-    var levelString: string = StringUtil.getInstance()!.getInstance(categoryPropertiesHashMap!.get(CategoryData.getInstance()!.LEVEL) as String)!;
-        
-        
+    var levelString: string = StringUtil.getInstance()!.getInstance(categoryPropertiesHashMap!.get(CategoryData.getInstance()!.LEVEL);
 
-this.level= Integer.valueOf(levelString)!.toInt()
-this.setRoot(rootCategoryInterface)
-this.setParent(parentCategoryInterface)
+                         as String)!;
+        
+        
+;
+    
+this.level= Integer.valueOf(levelString)!.toInt();
+    
+this.setRoot(rootCategoryInterface);
+    
+this.setParent(parentCategoryInterface);
+    
 }
 
 
@@ -96,25 +108,30 @@ this.setParent(parentCategoryInterface)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.level.toString();
+
+                        ;
     
 }
 
 
     public setLevel(level: number){
 var level = level
-this.level= level
+this.level= level;
+    
 }
 
 
     public setParent(categoryInterface: CategoryInterface){
 var categoryInterface = categoryInterface
-this.parentCategoryInterface= categoryInterface
+this.parentCategoryInterface= categoryInterface;
+    
 }
 
 
     public setRoot(categoryInterface: CategoryInterface){
 var categoryInterface = categoryInterface
-this.rootCategoryInterface= categoryInterface
+this.rootCategoryInterface= categoryInterface;
+    
 }
 
 

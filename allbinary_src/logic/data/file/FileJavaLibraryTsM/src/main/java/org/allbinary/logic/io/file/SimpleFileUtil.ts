@@ -268,7 +268,7 @@ var n = n
         
         
 
-    public loadFileAsList(inputStream: InputStream, max: number, byteArray1: ByteArray): BasicArrayList{
+    public loadFileAsList(inputStream: InputStream, max: number, byteArray1: number[]): BasicArrayList{
     //var inputStream = inputStream
     //var max = max
     //var byteArray1 = byteArray1
@@ -277,11 +277,13 @@ var n = n
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.loadFileAsList(inputStream, max, byteArray1, 0);
+
+                        ;
     
 }
 
 
-    public loadFileAsList(inputStream: InputStream, max: number, byteArray1: ByteArray, includeReturnLine: number): BasicArrayList{
+    public loadFileAsList(inputStream: InputStream, max: number, byteArray1: number[], includeReturnLine: number): BasicArrayList{
     //var inputStream = inputStream
     //var max = max
     //var byteArray1 = byteArray1
@@ -290,7 +292,8 @@ var n = n
     var stringList: BasicArrayList = new BasicArrayList();
         
         
-
+;
+    
 
                         if(inputStream == 
                                     null
@@ -307,23 +310,31 @@ var n = n
                                     }
                                 
 
-    var byteArray: ByteArray = nullUtil!.NULL_BYTE_ARRAY;
+    var byteArray: number[] = nullUtil!.NULL_BYTE_ARRAY;
         
         
-
+;
+    
 
         try {
             
     var outputStream2: ByteArrayOutputStream = new ByteArrayOutputStream(max);
         
         
+;
+    
+byteArray= streamUtil!.getByteArray(inputStream, outputStream2, byteArray1);
+    
+streamUtil!.close(inputStream);
+    
 
-byteArray= streamUtil!.getByteArray(inputStream, outputStream2, byteArray1)
-streamUtil!.close(inputStream)
-} catch(e: Exception)
+                //: 
+} catch(e) 
             {
-streamUtil!.close(inputStream)
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.ADD, e)
+streamUtil!.close(inputStream);
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.ADD, e);
+    
 }
 
 
@@ -346,28 +357,34 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.ADD, e)
                 ;
         
         
-
+;
+    
 
     var index: number = 0;
         
         
-
+;
+    
 
     var startIndex: number= 0
-
+;
+    
 
     var returnLine: number = 0;
         
         
-
+;
+    
 
         while(index < size)
         {
-startIndex= index
+startIndex= index;
+    
 
         while(index < size -1 && byteArray[index] != '\n'.code.toByte())
         {
-index++
+index++;
+    
 }
 
 
@@ -378,12 +395,14 @@ index++
                         if(index > 0 && byteArray[index -1] == '\r'.code.toByte())
                         
                                     {
-                                    returnLine= 1
+                                    returnLine= 1;
+    
 
                                     }
                                 
                         else {
-                            returnLine= 0
+                            returnLine= 0;
+    
 
                         }
                             
@@ -394,9 +413,12 @@ index++
     var s: string = new byteArray.decodeToString();
         
         
-
-stringList!.add(s)
-index++
+;
+    
+stringList!.add(s);
+    
+index++;
+    
 }
 
 
@@ -414,13 +436,15 @@ index++
     var stringMaker: StringMaker = new StringMaker();
         
         
-
+;
+    
 
     var size: number = stringArray!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -431,7 +455,8 @@ index++
         
 index < size; index++)
         {
-stringMaker!.append(stringArray[index]!)
+stringMaker!.append(stringArray[index]!);
+    
 }
 
 
@@ -439,6 +464,8 @@ stringMaker!.append(stringArray[index]!)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringMaker!.toString();
+
+                        ;
     
 }
 

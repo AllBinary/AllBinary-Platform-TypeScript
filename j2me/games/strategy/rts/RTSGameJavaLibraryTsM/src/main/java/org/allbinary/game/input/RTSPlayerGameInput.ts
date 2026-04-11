@@ -164,32 +164,45 @@ public constructor (gameCanvas: AllBinaryGameCanvas, inputList: BasicArrayList, 
 
                             //For kotlin this is before the body of the constructor.
                     
-this.initInputProcessors()
-this.gameCanvas= gameCanvas
-this.inputList= inputList
-this.towerInfoPaintable= towerInfoPaintable
-this.rtsPlayerLayerInterface= rtsPlayerLayerInterface
-this.selectedRTSLayerPlayerGameInput= SelectedRTSLayersPlayerGameInput(this.getRTSLayerInfoPaintable(), this.getRtsPlayerLayerInterface(), this.inputList, playerInputId, selectRTSLayerVisitorFactoryInterface)
+this.initInputProcessors();
+    
+this.gameCanvas= gameCanvas;
+    
+this.inputList= inputList;
+    
+this.towerInfoPaintable= towerInfoPaintable;
+    
+this.rtsPlayerLayerInterface= rtsPlayerLayerInterface;
+    
+this.selectedRTSLayerPlayerGameInput= SelectedRTSLayersPlayerGameInput(this.getRTSLayerInfoPaintable(), this.getRtsPlayerLayerInterface(), this.inputList, playerInputId, selectRTSLayerVisitorFactoryInterface);
+    
 
                         if(this.rtsPlayerLayerInterface != NullRTSLayer.NULL_RTS_LAYER)
                         
                                     {
-                                    this.setSelectedRtsFormInput(this.rtsPlayerLayerInterface!.getRTSFormInput())
+                                    this.setSelectedRtsFormInput(this.rtsPlayerLayerInterface!.getRTSFormInput());
+    
 
                                     }
                                 
 
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface = gameCanvas!.getLayerManager() as GeographicMapCompositeInterface;
-        
-        
+    var geographicMapCompositeInterface: GeographicMapCompositeInterface = gameCanvas!.getLayerManager();
 
+                         as GeographicMapCompositeInterface;
+        
+        
+;
+    
 
     var geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;
         
         
-
-this.scrollPlayerGameInput= ScrollMapPlayerGameInput(geographicMapInterface, this.inputList, playerInputId)
-this.layerPositionFinderInterface= layerPositionFinderInterface
+;
+    
+this.scrollPlayerGameInput= ScrollMapPlayerGameInput(geographicMapInterface, this.inputList, playerInputId);
+    
+this.layerPositionFinderInterface= layerPositionFinderInterface;
+    
 }
 
 
@@ -197,12 +210,14 @@ this.layerPositionFinderInterface= layerPositionFinderInterface
             
     public setAllBinaryGameLayerManager(allBinaryGameLayerManager: AllBinaryGameLayerManager){
     //var allBinaryGameLayerManager = allBinaryGameLayerManager
-this.selectedRTSLayerPlayerGameInput!.setAllBinaryGameLayerManager(allBinaryGameLayerManager)
+this.selectedRTSLayerPlayerGameInput!.setAllBinaryGameLayerManager(allBinaryGameLayerManager);
+    
 
                         if(this.selectedRtsFormInput != NullRTSFormInputFactory.getInstance())
                         
                                     {
-                                    this.selectedRtsFormInput!.setAllBinaryGameLayerManager(allBinaryGameLayerManager)
+                                    this.selectedRtsFormInput!.setAllBinaryGameLayerManager(allBinaryGameLayerManager);
+    
 
                                     }
                                 
@@ -213,11 +228,16 @@ this.selectedRTSLayerPlayerGameInput!.setAllBinaryGameLayerManager(allBinaryGame
 var displayChangeEvent = displayChangeEvent
 
         try {
-            logUtil!.put(commonStrings!.START, this, "onDisplayChangeEvent")
-this.getRTSLayerInfoPaintable()!.update()
-} catch(e: Exception)
+            logUtil!.put(commonStrings!.START, this, "onDisplayChangeEvent");
+    
+this.getRTSLayerInfoPaintable()!.update();
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "onDisplayChangeEvent", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "onDisplayChangeEvent", e);
+    
 }
 
 }
@@ -226,31 +246,46 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "onDisplayChangeEvent", e)
                 //@Throws(Error::class)
             
     left(){
-this.rtsPlayerLayerInterface!.getCurrentScrollSelectionForm()!.processInput(Canvas.LEFT)
+this.rtsPlayerLayerInterface!.getCurrentScrollSelectionForm()!.processInput(Canvas.LEFT);
+    
 }
 
 
                 //@Throws(Error::class)
             
     right(){
-this.rtsPlayerLayerInterface!.getCurrentScrollSelectionForm()!.processInput(Canvas.RIGHT)
+this.rtsPlayerLayerInterface!.getCurrentScrollSelectionForm()!.processInput(Canvas.RIGHT);
+    
 }
 
 
     public initInputProcessors(){
-this.inputProcessorArray[Canvas.LEFT]= RTSPlayerLeftGameInputProcessor(this)
-this.inputProcessorArray[Canvas.KEY_NUM0]= this.inputProcessorArray[Canvas.LEFT]!
-this.inputProcessorArray[Canvas.RIGHT]= RTSPlayerRightGameInputProcessor(this)
-this.inputProcessorArray[Canvas.KEY_POUND]= this.inputProcessorArray[Canvas.RIGHT]!
-this.removeInputProcessorArray[Canvas.KEY_NUM1]= RTSPlayerFireGameInputProcessor(this)
-this.removeInputProcessorArray[Canvas.KEY_NUM3]= this.removeInputProcessorArray[Canvas.KEY_NUM1]!
-this.removeInputProcessorArray[Canvas.KEY_NUM3]= this.removeInputProcessorArray[Canvas.KEY_NUM1]!
-this.removeInputProcessorArray[Canvas.LEFT]= this.removeInputProcessorArray[Canvas.KEY_NUM1]!
-this.removeInputProcessorArray[Canvas.RIGHT]= this.removeInputProcessorArray[Canvas.KEY_NUM1]!
-this.removeInputProcessorArray[Canvas.KEY_NUM0]= this.removeInputProcessorArray[Canvas.KEY_NUM1]!
-this.removeInputProcessorArray[Canvas.KEY_POUND]= this.removeInputProcessorArray[Canvas.KEY_NUM1]!
-GameInputProcessorUtil.init(this.inputProcessorArray)
-GameInputProcessorUtil.init(this.removeInputProcessorArray)
+this.inputProcessorArray[Canvas.LEFT]= RTSPlayerLeftGameInputProcessor(this);
+    
+this.inputProcessorArray[Canvas.KEY_NUM0]= this.inputProcessorArray[Canvas.LEFT]!;
+    
+this.inputProcessorArray[Canvas.RIGHT]= RTSPlayerRightGameInputProcessor(this);
+    
+this.inputProcessorArray[Canvas.KEY_POUND]= this.inputProcessorArray[Canvas.RIGHT]!;
+    
+this.removeInputProcessorArray[Canvas.KEY_NUM1]= RTSPlayerFireGameInputProcessor(this);
+    
+this.removeInputProcessorArray[Canvas.KEY_NUM3]= this.removeInputProcessorArray[Canvas.KEY_NUM1]!;
+    
+this.removeInputProcessorArray[Canvas.KEY_NUM3]= this.removeInputProcessorArray[Canvas.KEY_NUM1]!;
+    
+this.removeInputProcessorArray[Canvas.LEFT]= this.removeInputProcessorArray[Canvas.KEY_NUM1]!;
+    
+this.removeInputProcessorArray[Canvas.RIGHT]= this.removeInputProcessorArray[Canvas.KEY_NUM1]!;
+    
+this.removeInputProcessorArray[Canvas.KEY_NUM0]= this.removeInputProcessorArray[Canvas.KEY_NUM1]!;
+    
+this.removeInputProcessorArray[Canvas.KEY_POUND]= this.removeInputProcessorArray[Canvas.KEY_NUM1]!;
+    
+GameInputProcessorUtil.init(this.inputProcessorArray);
+    
+GameInputProcessorUtil.init(this.removeInputProcessorArray);
+    
 }
 
 
@@ -260,17 +295,20 @@ GameInputProcessorUtil.init(this.removeInputProcessorArray)
 var layerManager = layerManager
 
         try {
-            this.processMotionInput(layerManager)
+            this.processMotionInput(layerManager);
+    
 
     var size: number = inputList!.size()!;
         
         
-
+;
+    
 
     var key: number = 0;
         
         
-
+;
+    
 
 
 
@@ -282,33 +320,46 @@ var layerManager = layerManager
 index < size; index++)
         {
 
-    var gameKeyEvent: GameKeyEvent = inputList!.get(index) as GameKeyEvent;
-        
-        
+    var gameKeyEvent: GameKeyEvent = inputList!.get(index);
 
-key= gameKeyEvent!.getKey()
-this.getScrollPlayerGameInput()!.processInput(key)
-this.getSelectedBuildingPlayerGameInput()!.processInput(key)
-this.inputProcessorArray[key]!.process(layerManager, gameKeyEvent)
-this.removeInputProcessorArray[key]!.process(layerManager, gameKeyEvent)
+                         as GameKeyEvent;
+        
+        
+;
+    
+key= gameKeyEvent!.getKey();
+    
+this.getScrollPlayerGameInput()!.processInput(key);
+    
+this.getSelectedBuildingPlayerGameInput()!.processInput(key);
+    
+this.inputProcessorArray[key]!.process(layerManager, gameKeyEvent);
+    
+this.removeInputProcessorArray[key]!.process(layerManager, gameKeyEvent);
+    
 }
 
 
                         if(isIsSingleKeyProcessing())
                         
                                     {
-                                    this.clear()
+                                    this.clear();
+    
 
                                     }
                                 
                         else {
-                            this.update()
+                            this.update();
+    
 
                         }
                             
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, gameInputStrings!.PROCESS_INPUT, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, gameInputStrings!.PROCESS_INPUT, e);
+    
 }
 
 }
@@ -329,57 +380,70 @@ logUtil!.put(commonStrings!.EXCEPTION, this, gameInputStrings!.PROCESS_INPUT, e)
     var point: GPoint = motionGestureEvent!.getCurrentPoint()!;
         
         
+;
+    
 
+    var geographicMapCompositeInterface: GeographicMapCompositeInterface = gameCanvas!.getLayerManager();
 
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface = gameCanvas!.getLayerManager() as GeographicMapCompositeInterface;
+                         as GeographicMapCompositeInterface;
         
         
-
+;
+    
 
     var geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;
         
         
-
+;
+    
 
     var allBinaryTiledLayer: AllBinaryTiledLayer = geographicMapInterface!.getAllBinaryTiledLayer()!;
         
         
-
+;
+    
 
     var x: number = point.getX() +allBinaryTiledLayer!.getXP();
         
         
-
+;
+    
 
     var y: number = point.getY() +allBinaryTiledLayer!.getYP();
         
         
-
+;
+    
 
     var geographicMapCellPosition: GeographicMapCellPosition = geographicMapInterface!.getCellPositionAtNoThrow(x, y)!;
         
         
-
+;
+    
 
                         if(geographicMapCellPosition != SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION)
                         
                                     {
-                                    SecondaryPlayerQueueFactory.getInstance()!.add(SelectSound.getInstance())
+                                    SecondaryPlayerQueueFactory.getInstance()!.add(SelectSound.getInstance());
+    
 
     var layer: AllBinaryLayer = this.layerPositionFinderInterface!.getLayerInterface(geographicMapCellPosition)!;
         
         
-
+;
+    
 
                         if(layer == AllBinaryLayer.NULL_ALLBINARY_LAYER)
                         
                                     {
-                                    layer= CollidableDestroyableDamageableLayer.NULL_COLLIDABLE_DESTROYABLE_DAMAGE_LAYER
+                                    layer= CollidableDestroyableDamageableLayer.NULL_COLLIDABLE_DESTROYABLE_DAMAGE_LAYER;
+    
 
                                     }
                                 
                         else {
-                            geographicMapCellPosition= geographicMapInterface!.getCellPositionAt(layer.getXP(), layer.getYP())
+                            geographicMapCellPosition= geographicMapInterface!.getCellPositionAt(layer.getXP(), layer.getYP());
+    
 
                         }
                             
@@ -387,8 +451,10 @@ logUtil!.put(commonStrings!.EXCEPTION, this, gameInputStrings!.PROCESS_INPUT, e)
     var foundRTSLayer: CollidableDestroyableDamageableLayer = layer as CollidableDestroyableDamageableLayer;
         
         
-
-this.setSelectedRTSLayer(foundRTSLayer, geographicMapCellPosition)
+;
+    
+this.setSelectedRTSLayer(foundRTSLayer, geographicMapCellPosition);
+    
 
                                     }
                                 
@@ -397,9 +463,11 @@ this.setSelectedRTSLayer(foundRTSLayer, geographicMapCellPosition)
     var commonLabels: CommonLabels = CommonLabels.getInstance()!;
         
         
-
+;
+    
 logUtil!.put(StringMaker().
-                            append("Off Of Map -")!.append(commonLabels!.WIDTH_LABEL)!.appendint(allBinaryTiledLayer!.getWidth())!.append(commonLabels!.HEIGHT_LABEL)!.appendint(allBinaryTiledLayer!.getHeight())!.toString(), this, "select")
+                            append("Off Of Map -")!.append(commonLabels!.WIDTH_LABEL)!.appendint(allBinaryTiledLayer!.getWidth())!.append(commonLabels!.HEIGHT_LABEL)!.appendint(allBinaryTiledLayer!.getHeight())!.toString(), this, "select");
+    
 
                         }
                             
@@ -411,7 +479,8 @@ logUtil!.put(StringMaker().
     public setSelectedRTSLayer(rtsLayer: CollidableDestroyableDamageableLayer, geographicMapCellPosition: GeographicMapCellPosition){
 var rtsLayer = rtsLayer
 var geographicMapCellPosition = geographicMapCellPosition
-this.getSelectedBuildingPlayerGameInput()!.setSelectedRTSLayer(rtsLayer)
+this.getSelectedBuildingPlayerGameInput()!.setSelectedRTSLayer(rtsLayer);
+    
 }
 
 
@@ -421,38 +490,48 @@ var graphics = graphics
     var geographicMapCellPosition: GeographicMapCellPosition = this.getSelectedRtsFormInput()!.getSelectedGeographicCellPosition()!;
         
         
+;
+    
 
+    var geographicMapCompositeInterface: GeographicMapCompositeInterface = gameCanvas!.getLayerManager();
 
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface = gameCanvas!.getLayerManager() as GeographicMapCompositeInterface;
+                         as GeographicMapCompositeInterface;
         
         
-
+;
+    
 
     var geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;
         
         
-
+;
+    
 
     var allBinaryTiledLayer: AllBinaryTiledLayer = geographicMapInterface!.getAllBinaryTiledLayer()!;
         
         
-
-graphics.setColor(BasicColorFactory.getInstance()!.GREEN.toInt())
+;
+    
+graphics.setColor(BasicColorFactory.getInstance()!.GREEN.toInt());
+    
 
     var list: BasicArrayList = this.getSelectedBuildingPlayerGameInput()!.getPaintSelectedRTSLayersList()!;
         
         
-
+;
+    
 
     var width: number = 0;
         
         
-
+;
+    
 
     var height: number = 0;
         
         
-
+;
+    
 
                         if(list.size() > 0)
                         
@@ -468,13 +547,19 @@ graphics.setColor(BasicColorFactory.getInstance()!.GREEN.toInt())
 index >= 0; index--)
         {
 
-    var rtsLayer: RTSLayer = list.get(index) as RTSLayer;
-        
-        
+    var rtsLayer: RTSLayer = list.get(index);
 
-width= rtsLayer!.getWidth()
-height= rtsLayer!.getHeight()
-graphics.drawRect(rtsLayer!.getXP() -allBinaryTiledLayer!.getXP(), rtsLayer!.getYP() -allBinaryTiledLayer!.getYP(), width, height)
+                         as RTSLayer;
+        
+        
+;
+    
+width= rtsLayer!.getWidth();
+    
+height= rtsLayer!.getHeight();
+    
+graphics.drawRect(rtsLayer!.getXP() -allBinaryTiledLayer!.getXP(), rtsLayer!.getYP() -allBinaryTiledLayer!.getYP(), width, height);
+    
 }
 
 
@@ -488,10 +573,14 @@ graphics.drawRect(rtsLayer!.getXP() -allBinaryTiledLayer!.getXP(), rtsLayer!.get
     var point: GPoint = geographicMapCellPosition!.getPoint()!;
         
         
-
-width= allBinaryTiledLayer!.getCellWidth()
-height= allBinaryTiledLayer!.getCellHeight()
-graphics.drawRect(point.getX() -allBinaryTiledLayer!.getXP(), point.getY() -allBinaryTiledLayer!.getYP(), width, height)
+;
+    
+width= allBinaryTiledLayer!.getCellWidth();
+    
+height= allBinaryTiledLayer!.getCellHeight();
+    
+graphics.drawRect(point.getX() -allBinaryTiledLayer!.getXP(), point.getY() -allBinaryTiledLayer!.getYP(), width, height);
+    
 
                                     }
                                 
@@ -525,8 +614,10 @@ graphics.drawRect(point.getX() -allBinaryTiledLayer!.getXP(), point.getY() -allB
     public setSelectedRtsFormInput(selectedRtsFormInput: RTSFormInput){
 var selectedRtsFormInput = selectedRtsFormInput
 logUtil!.put(StringMaker().
-                            append("RTSFormInput: ")!.append(StringUtil.getInstance()!.toString(selectedRtsFormInput))!.toString(), this, "setSelectedRtsFormInput")
-this.selectedRtsFormInput= selectedRtsFormInput
+                            append("RTSFormInput: ")!.append(StringUtil.getInstance()!.toString(selectedRtsFormInput))!.toString(), this, "setSelectedRtsFormInput");
+    
+this.selectedRtsFormInput= selectedRtsFormInput;
+    
 }
 
 

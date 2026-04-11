@@ -42,7 +42,8 @@ public constructor (userConfigurationInterface: UserConfigurationInterface){
 
             super();
             var userConfigurationInterface = userConfigurationInterface
-this.userConfigurationInterface= userConfigurationInterface
+this.userConfigurationInterface= userConfigurationInterface;
+    
 }
 
 
@@ -53,14 +54,17 @@ this.userConfigurationInterface= userConfigurationInterface
     var document: Document = DomDocumentHelper.create()!;
         
         
-
+;
+    
 
     var node: Node = UserConfigurationView(this.userConfigurationInterface).
                             toXmlNode(document)!;
         
         
-
-document.appendChild(node)
+;
+    
+document.appendChild(node);
+    
 
 
 
@@ -78,6 +82,8 @@ document.appendChild(node)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return DomDocumentHelper.toString(this.toXmlDoc());
+
+                        ;
     
 }
 

@@ -91,17 +91,20 @@ public constructor (ownerLayer: CollidableCompositeLayer, collidable: boolean)
             
     collideNone(collidableInterfaceCompositeInterface: CollidableCompositeLayer){
     //var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
-this.chase(collidableInterfaceCompositeInterface)
+this.chase(collidableInterfaceCompositeInterface);
+    
 
     var rtsLayer: AdvancedRTSGameLayer = collidableInterfaceCompositeInterface as AdvancedRTSGameLayer;
         
         
-
+;
+    
 
                         if(rtsLayer!.getType() == UnitLayer.getStaticType())
                         
                                     {
-                                    this.collideUnit(rtsLayer as UnitLayer)
+                                    this.collideUnit(rtsLayer as UnitLayer);
+    
 
                                     }
                                 
@@ -120,20 +123,25 @@ export inner class SimpleSteeringVisitor extends SteeringVisitor {
                         
                                     {
                                     
-    var allbinaryLayer: CollidableCompositeLayer = this.getList()!.get(0) as CollidableCompositeLayer;
-        
-        
+    var allbinaryLayer: CollidableCompositeLayer = this.getList()!.get(0);
 
+                         as CollidableCompositeLayer;
+        
+        
+;
+    
 
     var clear: boolean = this@CollidableUnitBehavior.steer(allbinaryLayer)!;
         
         
-
+;
+    
 
                         if(clear)
                         
                                     {
-                                    this.getList()!.clear()
+                                    this.getList()!.clear();
+    
 
 
 
@@ -158,9 +166,12 @@ export inner class SimpleSteeringVisitor extends SteeringVisitor {
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return NullUtil.getInstance()!.NULL_OBJECT;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "visit", e)
+logUtil!.put(commonStrings!.EXCEPTION, this, "visit", e);
+    
 
 
 
@@ -187,27 +198,32 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "visit", e)
     var ownerUnitLayer: UnitLayer = this.ownerLayer as UnitLayer;
         
         
-
+;
+    
 
     var unitLayer: UnitLayer = collidableInterfaceCompositeInterface as UnitLayer;
         
         
-
+;
+    
 
     var angleInfo2: AngleInfo = unitLayer!.getRotationAnimationInterface()!.getAngleInfoP()!;
         
         
-
+;
+    
 
     var angleInfo: AngleInfo = ownerUnitLayer!.getRotationAnimationInterface()!.getAngleInfoP()!;
         
         
-
+;
+    
 
     var angle: number = angleInfo!.getAngle() -angleInfo2!.getAngle();
         
         
-
+;
+    
 
                         if(angle < 90 || angle > 270)
                         
@@ -225,7 +241,8 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "visit", e)
                         if(angle >= 90 || angle <= 270)
                         
                                     {
-                                    ownerUnitLayer!.getGameKeyEventList()!.add(GameKeyEventFactory.getInstance()!.getInstance(ownerUnitLayer, Canvas.RIGHT))
+                                    ownerUnitLayer!.getGameKeyEventList()!.add(GameKeyEventFactory.getInstance()!.getInstance(ownerUnitLayer, Canvas.RIGHT));
+    
 
 
 
@@ -250,16 +267,20 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "visit", e)
     var rtsLayer: AdvancedRTSGameLayer = collidableInterfaceCompositeInterface as AdvancedRTSGameLayer;
         
         
-
+;
+    
 
                         if(rtsLayer!.getType() == UnitLayer.getStaticType())
                         
                                     {
                                     
-                        if(!this.simpleSteeringVisitor!.getList()!.contains(collidableInterfaceCompositeInterface))
+                        if(!this.simpleSteeringVisitor!.getList()!.contains(collidableInterfaceCompositeInterface);
+
+                        )
                         
                                     {
-                                    this.simpleSteeringVisitor!.getList()!.add(collidableInterfaceCompositeInterface)
+                                    this.simpleSteeringVisitor!.getList()!.add(collidableInterfaceCompositeInterface);
+    
 
                                     }
                                 
@@ -267,17 +288,22 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "visit", e)
     var ownerUnitLayer: UnitLayer = this.ownerLayer as UnitLayer;
         
         
-
+;
+    
 
     var list: BasicArrayList = ownerUnitLayer!.getUnitWaypointBehavior()!.getSteeringVisitorList()!;
         
         
+;
+    
 
+                        if(!list.contains(this.simpleSteeringVisitor);
 
-                        if(!list.contains(this.simpleSteeringVisitor))
+                        )
                         
                                     {
-                                    list.add(this.simpleSteeringVisitor)
+                                    list.add(this.simpleSteeringVisitor);
+    
 
                                     }
                                 
@@ -295,42 +321,50 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "visit", e)
     var ownerUnitLayer: UnitLayer = this.ownerLayer as UnitLayer;
         
         
-
+;
+    
 
     var partialPositionList: BasicArrayList = UnitLayer.getPartialpositionlist()!;
         
         
-
+;
+    
 
     var geographicMapCompositeInterface: GeographicMapCompositeInterface = ownerUnitLayer!.allBinaryGameLayerManagerP as GeographicMapCompositeInterface;
         
         
-
+;
+    
 
     var geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;
         
         
-
+;
+    
 
     var basicGeographicMap: BasicGeographicMap = geographicMapInterface;
         
         
-
+;
+    
 
     var dropCellPositionHistory: DropCellPositionHistory = DropCellPositionHistory.getInstance()!;
         
         
-
+;
+    
 
     var tiledLayerUtil: TiledLayerUtil = TiledLayerUtil.getInstance()!;
         
         
-
+;
+    
 
     var tiledLayer: AllBinaryTiledLayer = basicGeographicMap!.getAllBinaryTiledLayer()!;
         
         
-
+;
+    
 
                         if(this.ownerLayer!.getXP() < unitLayer!.getXP() && this.ownerLayer!.getX2() > unitLayer!.getXP())
                         
@@ -339,46 +373,63 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "visit", e)
     var diff: number = this.ownerLayer!.getWidth() +1;
         
         
+;
+    
+this.layerPartialCellPositionsUtil!.getAll(basicGeographicMap, this.ownerLayer,  -diff, 0, partialPositionList);
+    
 
-this.layerPartialCellPositionsUtil!.getAll(basicGeographicMap, this.ownerLayer,  -diff, 0, partialPositionList)
+                        if(!dropCellPositionHistory!.anyCellPositionWithDrop(partialPositionList);
 
-                        if(!dropCellPositionHistory!.anyCellPositionWithDrop(partialPositionList))
+                        )
                         
                                     {
                                     
     var x: number = unitLayer!.getXP() -diff;
         
         
-
+;
+    
 
     var y: number = this.ownerLayer!.getYP()!;
         
         
-
-x= tiledLayerUtil!.keepOnMapX(tiledLayer, x, this.ownerLayer!.getWidth())
-y= tiledLayerUtil!.keepOnMapY(tiledLayer, y, this.ownerLayer!.getHeight())
-this.ownerLayer!.setPosition(x, y, this.ownerLayer!.getZP())
+;
+    
+x= tiledLayerUtil!.keepOnMapX(tiledLayer, x, this.ownerLayer!.getWidth());
+    
+y= tiledLayerUtil!.keepOnMapY(tiledLayer, y, this.ownerLayer!.getHeight());
+    
+this.ownerLayer!.setPosition(x, y, this.ownerLayer!.getZP());
+    
 
                                     }
                                 
-this.layerPartialCellPositionsUtil!.getAll(basicGeographicMap, unitLayer, diff, 0, partialPositionList)
+this.layerPartialCellPositionsUtil!.getAll(basicGeographicMap, unitLayer, diff, 0, partialPositionList);
+    
 
-                        if(!dropCellPositionHistory!.anyCellPositionWithDrop(partialPositionList))
+                        if(!dropCellPositionHistory!.anyCellPositionWithDrop(partialPositionList);
+
+                        )
                         
                                     {
                                     
     var x: number = unitLayer!.getXP() +diff;
         
         
-
+;
+    
 
     var y: number = unitLayer!.getYP()!;
         
         
-
-x= tiledLayerUtil!.keepOnMapX(tiledLayer, x, unitLayer!.getWidth())
-y= tiledLayerUtil!.keepOnMapY(tiledLayer, y, unitLayer!.getHeight())
-unitLayer!.setPosition(x, y, unitLayer!.getZP())
+;
+    
+x= tiledLayerUtil!.keepOnMapX(tiledLayer, x, unitLayer!.getWidth());
+    
+y= tiledLayerUtil!.keepOnMapY(tiledLayer, y, unitLayer!.getHeight());
+    
+unitLayer!.setPosition(x, y, unitLayer!.getZP());
+    
 
                                     }
                                 
@@ -393,46 +444,63 @@ unitLayer!.setPosition(x, y, unitLayer!.getZP())
     var diff: number = this.ownerLayer!.getHeight() +1;
         
         
+;
+    
+this.layerPartialCellPositionsUtil!.getAll(basicGeographicMap, this.ownerLayer, 0,  -diff, partialPositionList);
+    
 
-this.layerPartialCellPositionsUtil!.getAll(basicGeographicMap, this.ownerLayer, 0,  -diff, partialPositionList)
+                        if(!dropCellPositionHistory!.anyCellPositionWithDrop(partialPositionList);
 
-                        if(!dropCellPositionHistory!.anyCellPositionWithDrop(partialPositionList))
+                        )
                         
                                     {
                                     
     var x: number = this.ownerLayer!.getXP()!;
         
         
-
+;
+    
 
     var y: number = unitLayer!.getYP() -diff;
         
         
-
-x= tiledLayerUtil!.keepOnMapX(tiledLayer, x, this.ownerLayer!.getWidth())
-y= tiledLayerUtil!.keepOnMapY(tiledLayer, y, this.ownerLayer!.getHeight())
-this.ownerLayer!.setPosition(x, y, this.ownerLayer!.getZP())
+;
+    
+x= tiledLayerUtil!.keepOnMapX(tiledLayer, x, this.ownerLayer!.getWidth());
+    
+y= tiledLayerUtil!.keepOnMapY(tiledLayer, y, this.ownerLayer!.getHeight());
+    
+this.ownerLayer!.setPosition(x, y, this.ownerLayer!.getZP());
+    
 
                                     }
                                 
-this.layerPartialCellPositionsUtil!.getAll(basicGeographicMap, unitLayer, 0, diff, partialPositionList)
+this.layerPartialCellPositionsUtil!.getAll(basicGeographicMap, unitLayer, 0, diff, partialPositionList);
+    
 
-                        if(!dropCellPositionHistory!.anyCellPositionWithDrop(partialPositionList))
+                        if(!dropCellPositionHistory!.anyCellPositionWithDrop(partialPositionList);
+
+                        )
                         
                                     {
                                     
     var x: number = unitLayer!.getXP()!;
         
         
-
+;
+    
 
     var y: number = unitLayer!.getYP() +diff;
         
         
-
-x= tiledLayerUtil!.keepOnMapX(tiledLayer, x, unitLayer!.getWidth())
-y= tiledLayerUtil!.keepOnMapY(tiledLayer, y, unitLayer!.getHeight())
-unitLayer!.setPosition(x, y, unitLayer!.getZP())
+;
+    
+x= tiledLayerUtil!.keepOnMapX(tiledLayer, x, unitLayer!.getWidth());
+    
+y= tiledLayerUtil!.keepOnMapY(tiledLayer, y, unitLayer!.getHeight());
+    
+unitLayer!.setPosition(x, y, unitLayer!.getZP());
+    
 
                                     }
                                 

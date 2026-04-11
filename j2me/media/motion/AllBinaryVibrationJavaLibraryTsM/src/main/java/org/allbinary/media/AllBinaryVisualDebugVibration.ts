@@ -45,7 +45,8 @@ export class AllBinaryVisualDebugVibration extends AllBinaryVibrationME {
     //var duration = duration
     //var type = type
     //var volume = volume
-this.timeDelayHelper!.delay= duration
+this.timeDelayHelper!.delay= duration;
+    
 }
 
 
@@ -63,23 +64,28 @@ var graphics = graphics
                         if(timeDelayHelper!.isTime())
                         
                                     {
-                                    this.timeDelayHelper!.delay= Integer.MAX_VALUE
+                                    this.timeDelayHelper!.delay= Integer.MAX_VALUE;
+    
 
     var displayInfoSingleton: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
         
         
-
+;
+    
 
     var myFont: MyFont = MyFont.getInstance()!;
         
         
-
+;
+    
 
     var width: number = myFont!.stringWidth(VIBRATING)!;
         
         
-
-graphics.drawString(VIBRATING, displayInfoSingleton!.getLastHalfWidth() -(width shr 1), 0, anchor)
+;
+    
+graphics.drawString(VIBRATING, displayInfoSingleton!.getLastHalfWidth() -(width shr 1), 0, anchor);
+    
 
                                     }
                                 

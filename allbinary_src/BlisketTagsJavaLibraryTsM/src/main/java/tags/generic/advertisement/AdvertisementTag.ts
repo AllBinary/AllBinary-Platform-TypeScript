@@ -41,8 +41,10 @@ public constructor (){
     public doStartTag(): number{
 
         try {
-            this.setName("Basic Ad View")
-this.setObjectFile("views.generic.advertisement.ValidationView")
+            this.setName("Basic Ad View");
+    
+this.setObjectFile("views.generic.advertisement.ValidationView");
+    
 
                         if(this.getCommand() != 
                                     null
@@ -69,6 +71,8 @@ this.setObjectFile("views.generic.advertisement.ValidationView")
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.doStartTag();
+
+                        ;
     
 
                                     }
@@ -77,9 +81,12 @@ this.setObjectFile("views.generic.advertisement.ValidationView")
 
 
                             throw Error("Command Null")
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
-AbResponseHandler.sendJspTagRedirect(this.pageContext, e)
+AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
+    
 
 
 

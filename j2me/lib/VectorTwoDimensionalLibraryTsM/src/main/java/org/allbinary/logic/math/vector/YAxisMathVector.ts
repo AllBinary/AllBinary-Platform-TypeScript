@@ -35,7 +35,8 @@ var direction = direction
 
                             //For kotlin this is before the body of the constructor.
                     
-this.calculate()
+this.calculate();
+    
 }
 
 
@@ -54,8 +55,10 @@ this.calculate()
     var result: number = YAxisMathVectorUtil.calculate(this.getMagnitude()!.getUnscaled(), this.getDirection())!;
         
         
-
-this.resultBasicDecimal= BasicDecimal(result)
+;
+    
+this.resultBasicDecimal= BasicDecimal(result);
+    
 }
 
 

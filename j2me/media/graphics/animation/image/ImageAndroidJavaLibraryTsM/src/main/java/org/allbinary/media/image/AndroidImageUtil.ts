@@ -63,14 +63,18 @@ export class AndroidImageUtil
     //var bitmap = bitmap
     //var originalBitmap = originalBitmap
     //var paint = paint
-bitmap.eraseColor(Color.TRANSPARENT)
+bitmap.eraseColor(Color.TRANSPARENT);
+    
 
     var canvas: Canvas = new android.graphics.Canvas();
         
         
-
-canvas.setBitmap(bitmap)
-canvas.drawBitmap(originalBitmap, 0.0f, 0.0f, paint)
+;
+    
+canvas.setBitmap(bitmap);
+    
+canvas.drawBitmap(originalBitmap, 0.0f, 0.0f, paint);
+    
 }
 
 
@@ -82,19 +86,24 @@ canvas.drawBitmap(originalBitmap, 0.0f, 0.0f, paint)
     var androidImage: AndroidImageInterface = image as AndroidImageInterface;
         
         
-
-androidImage!.getBitmap()!.eraseColor(Color.TRANSPARENT)
+;
+    
+androidImage!.getBitmap()!.eraseColor(Color.TRANSPARENT);
+    
 
     var canvas: Canvas = androidImage!.getCanvas()!;
         
         
-
+;
+    
 
     var originalAndroidImage: AndroidImageInterface = originalImage as AndroidImageInterface;
         
         
-
-canvas.drawBitmap(originalAndroidImage!.getBitmap(), 0.0f, 0.0f, paint)
+;
+    
+canvas.drawBitmap(originalAndroidImage!.getBitmap(), 0.0f, 0.0f, paint);
+    
 }
 
 
@@ -107,20 +116,26 @@ canvas.drawBitmap(originalAndroidImage!.getBitmap(), 0.0f, 0.0f, paint)
     var androidImage: AndroidImageInterface = image as AndroidImageInterface;
         
         
-
-androidImage!.getBitmap()!.eraseColor(Color.TRANSPARENT)
+;
+    
+androidImage!.getBitmap()!.eraseColor(Color.TRANSPARENT);
+    
 
     var canvas: Canvas = androidImage!.getCanvas()!;
         
         
-
-canvas.concat(matrix)
+;
+    
+canvas.concat(matrix);
+    
 
     var originalAndroidImage: AndroidImageInterface = originalImage as AndroidImageInterface;
         
         
-
-canvas.drawBitmap(originalAndroidImage!.getBitmap(), 0.0f, 0.0f, paint)
+;
+    
+canvas.drawBitmap(originalAndroidImage!.getBitmap(), 0.0f, 0.0f, paint);
+    
 }
 
 

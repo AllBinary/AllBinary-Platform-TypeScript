@@ -66,24 +66,31 @@ var height = height
 var after = after
 this.before= before.toCharArray()
                                         .slice(0, ).join('')
-                                    
+                                    ;
+    
 this.after= after.toCharArray()
                                         .slice(0, ).join('')
-                                    
+                                    ;
+    
 this.height= height.toCharArray()
                                         .slice(0, ).join('')
-                                    
+                                    ;
+    
 this.width= width.toCharArray()
                                         .slice(0, ).join('')
-                                    
-addAttribute(HEIGHT, this.height)
-addAttribute(WIDTH, this.width)
+                                    ;
+    
+addAttribute(HEIGHT, this.height);
+    
+addAttribute(WIDTH, this.width);
+    
 }
 
 
     public addText(body: string){
 var body = body
-this.body= body
+this.body= body;
+    
 }
 
 
@@ -92,26 +99,33 @@ this.body= body
     var stringUtil: StringUtil = StringUtil.getInstance()!;
         
         
-
+;
+    
 
     var result: string = stringUtil!.EMPTY_STRING;
         
         
+;
+    
 
-
-    var attributeKeys: any = {}[] = otherAttributes!.keySet()!.toTypedArray()!;
+    var attributeKeys: any[] = otherAttributes!.keySet()!.toTypedArray()!;
         
         
-
+;
+    
 
     var attributeSize: number = attributeKeys!.length
                 ;
         
         
-
-result= before
-result += START
-result += " "
+;
+    
+result= before;
+    
+result += START;
+    
+result += " ";
+    
 
 
 
@@ -126,31 +140,43 @@ i < attributeSize; i++)
     var key: string = attributeKeys[i]! as String;
         
         
+;
+    
 
+    var value: string = otherAttributes!.get(key);
 
-    var value: string = otherAttributes!.get(key) as String;
+                         as String;
         
         
-
+;
+    
 
                         if(value != 
                                     null
                                  && value.compareTo(stringUtil!.EMPTY_STRING) != 0)
                         
                                     {
-                                    result += key
-result += "=\""
-result += value
-result += "\" "
+                                    result += key;
+    
+result += "=\"";
+    
+result += value;
+    
+result += "\" ";
+    
 
                                     }
                                 
 }
 
-result += END
-result += body
-result += ENDTAG
-result += after
+result += END;
+    
+result += body;
+    
+result += ENDTAG;
+    
+result += after;
+    
 
 
 

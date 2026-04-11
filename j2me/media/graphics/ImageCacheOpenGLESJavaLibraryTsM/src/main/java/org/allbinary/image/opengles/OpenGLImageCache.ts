@@ -86,7 +86,8 @@ public constructor (){
 
     public addListener(renderer: any = {}){
 var renderer = renderer
-this.renderer= renderer as AllBinaryRendererBase3
+this.renderer= renderer as AllBinaryRendererBase3;
+    
 }
 
 
@@ -94,7 +95,8 @@ this.renderer= renderer as AllBinaryRendererBase3
             
     public update(gl: GL10){
     //var gl = gl
-this.gl= gl
+this.gl= gl;
+    
 
         
         //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
@@ -116,12 +118,14 @@ index >= 0; index--)
     var openGLESImage: OpenGLESImage = (list.objectArray[index]! as OpenGLESImage);
         
         
-
+;
+    
 
                         if(openGLESImage != OpenGLESImage.NULL_OPENGL_IMAGE)
                         
                                     {
-                                    openGLESImage!.set(gl)
+                                    openGLESImage!.set(gl);
+    
 
                                     }
                                 
@@ -142,33 +146,40 @@ var height = height
     var textureSize: number = width;
         
         
-
+;
+    
 
                         if(height > width)
                         
                                     {
-                                    textureSize= height
+                                    textureSize= height;
+    
 
                                     }
                                 
 
         while((textureSize % 4) != 0)
         {
-textureSize++
+textureSize++;
+    
 }
 
-width= textureSize
-height= textureSize
+width= textureSize;
+    
+height= textureSize;
+    
 
     var image2: Image = this.imageCache!.get(caller, width, height)!;
         
         
-
+;
+    
 
     var image: Image = preResourceImageUtil!.encapsulate(image2)!;
         
         
-
+;
+    
 
         
         //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
@@ -180,7 +191,8 @@ height= textureSize
                         if(image != NullCanvas.NULL_IMAGE)
                         
                                     {
-                                    list.add(image)
+                                    list.add(image);
+    
 
                                     }
                                 
@@ -204,12 +216,14 @@ height= textureSize
     var cachedImage: Image = this.imageCache!.get(key)!;
         
         
-
+;
+    
 
     var image: Image = preResourceImageUtil!.encapsulate(cachedImage)!;
         
         
-
+;
+    
 
         
         //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
@@ -221,7 +235,8 @@ height= textureSize
                         if(image != NullCanvas.NULL_IMAGE)
                         
                                     {
-                                    list.add(image)
+                                    list.add(image);
+    
 
                                     }
                                 
@@ -268,13 +283,18 @@ height= textureSize
 
                                     }
                                 
-list.add(image)
+list.add(image);
+    
 }
 
-this.renderer.add(image)
-} catch(e: Exception)
+this.renderer.add(image);
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, this, commonStrings!.INIT, e)
+logUtil!.put(this.commonStrings!.EXCEPTION, this, commonStrings!.INIT, e);
+    
 }
 
 }

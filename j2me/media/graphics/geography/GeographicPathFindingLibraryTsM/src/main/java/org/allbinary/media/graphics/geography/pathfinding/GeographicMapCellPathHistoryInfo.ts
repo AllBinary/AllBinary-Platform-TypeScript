@@ -62,7 +62,8 @@ export class GeographicMapCellPathHistoryInfo
 
     public setPreviousGeographicMapCellPosition(previousGeographicMapCellPosition: GeographicMapCellPosition){
 var previousGeographicMapCellPosition = previousGeographicMapCellPosition
-this.previousGeographicMapCellPosition= previousGeographicMapCellPosition
+this.previousGeographicMapCellPosition= previousGeographicMapCellPosition;
+    
 }
 
 
@@ -78,7 +79,8 @@ this.previousGeographicMapCellPosition= previousGeographicMapCellPosition
 
     public setPreviousOnPathGeographicMapCellPosition(previousOnPathGeographicMapCellPosition: GeographicMapCellPosition){
 var previousOnPathGeographicMapCellPosition = previousOnPathGeographicMapCellPosition
-this.previousOnPathGeographicMapCellPosition= previousOnPathGeographicMapCellPosition
+this.previousOnPathGeographicMapCellPosition= previousOnPathGeographicMapCellPosition;
+    
 }
 
 
@@ -94,7 +96,8 @@ this.previousOnPathGeographicMapCellPosition= previousOnPathGeographicMapCellPos
 
     public setNextUnvisitedOnPathGeographicMapCellPosition(nextUnvisitedOnPathGeographicMapCellPosition: GeographicMapCellPosition){
 var nextUnvisitedOnPathGeographicMapCellPosition = nextUnvisitedOnPathGeographicMapCellPosition
-this.nextUnvisitedOnPathGeographicMapCellPosition= nextUnvisitedOnPathGeographicMapCellPosition
+this.nextUnvisitedOnPathGeographicMapCellPosition= nextUnvisitedOnPathGeographicMapCellPosition;
+    
 }
 
 
@@ -110,7 +113,8 @@ this.nextUnvisitedOnPathGeographicMapCellPosition= nextUnvisitedOnPathGeographic
 
     public setNextOnPathGeographicMapCellPosition(nextOnPathGeographicMapCellPosition: GeographicMapCellPosition){
 var nextOnPathGeographicMapCellPosition = nextOnPathGeographicMapCellPosition
-this.nextOnPathGeographicMapCellPosition= nextOnPathGeographicMapCellPosition
+this.nextOnPathGeographicMapCellPosition= nextOnPathGeographicMapCellPosition;
+    
 }
 
 
@@ -126,7 +130,8 @@ this.nextOnPathGeographicMapCellPosition= nextOnPathGeographicMapCellPosition
 
     public setNextChosenOnPathGeographicMapCellPosition(nextChosenOnPathGeographicMapCellPosition: GeographicMapCellPosition){
 var nextChosenOnPathGeographicMapCellPosition = nextChosenOnPathGeographicMapCellPosition
-this.nextChosenOnPathGeographicMapCellPosition= nextChosenOnPathGeographicMapCellPosition
+this.nextChosenOnPathGeographicMapCellPosition= nextChosenOnPathGeographicMapCellPosition;
+    
 }
 
 

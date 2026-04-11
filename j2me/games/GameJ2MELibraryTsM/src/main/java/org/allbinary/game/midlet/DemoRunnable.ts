@@ -58,8 +58,10 @@ public constructor (demoGameMidlet: DemoGameMidlet){
 
             super();
             var demoGameMidlet = demoGameMidlet
-this.demoGameMidlet= demoGameMidlet
-this.startDemoGameMidletEvent= DemoGameMidletEvent(this.demoGameMidlet, DemoGameMidletStateFactory.getInstance()!.START_DEMO)
+this.demoGameMidlet= demoGameMidlet;
+    
+this.startDemoGameMidletEvent= DemoGameMidletEvent(this.demoGameMidlet, DemoGameMidletStateFactory.getInstance()!.START_DEMO);
+    
 }
 
 
@@ -67,17 +69,28 @@ this.startDemoGameMidletEvent= DemoGameMidletEvent(this.demoGameMidlet, DemoGame
 
         try {
             logUtil!.put(StringMaker().
-                            append(CommonLabels.getInstance()!.START_LABEL)!.append("GameCanvasRunnableInterface")!.toString(), this, commonStrings!.RUN)
-this.demoGameMidlet!.commandAction(MyCommandsFactory.getInstance()!.SET_DISPLAYABLE, ProgressCanvasFactory.getInstance())
-this.demoGameMidlet!.setGameCanvasRunnableInterface(this.demoGameMidlet!.createDemoGameCanvasRunnableInterface())
-this.demoGameMidlet!.demoSetup()
-DemoGameMidletEventHandler.getInstance()!.fireEvent(this.startDemoGameMidletEvent)
-this.demoGameMidlet!.startGameCanvasRunnableInterface()
-this.demoGameMidlet!.postDemoSetup()
-logUtil!.put(commonStrings!.END_RUNNABLE, this, commonStrings!.RUN)
-} catch(e: Exception)
+                            append(CommonLabels.getInstance()!.START_LABEL)!.append("GameCanvasRunnableInterface")!.toString(), this, commonStrings!.RUN);
+    
+this.demoGameMidlet!.commandAction(MyCommandsFactory.getInstance()!.SET_DISPLAYABLE, ProgressCanvasFactory.getInstance());
+    
+this.demoGameMidlet!.setGameCanvasRunnableInterface(this.demoGameMidlet!.createDemoGameCanvasRunnableInterface());
+    
+this.demoGameMidlet!.demoSetup();
+    
+DemoGameMidletEventHandler.getInstance()!.fireEvent(this.startDemoGameMidletEvent);
+    
+this.demoGameMidlet!.startGameCanvasRunnableInterface();
+    
+this.demoGameMidlet!.postDemoSetup();
+    
+logUtil!.put(commonStrings!.END_RUNNABLE, this, commonStrings!.RUN);
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
+    
 }
 
 }

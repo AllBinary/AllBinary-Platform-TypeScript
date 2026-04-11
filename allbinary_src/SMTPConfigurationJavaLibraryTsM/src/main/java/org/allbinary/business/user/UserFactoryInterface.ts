@@ -30,7 +30,7 @@ interface UserFactoryInterface extends Serializable {
 
                 //@Throws(Error::class)
             
-    public getInstance(hashMap: HashMap<Any, Any>): UserInterface
+    public getInstance(hashMap: HashMap<any, any>): UserInterface
 
 }
                 

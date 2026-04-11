@@ -79,9 +79,12 @@ var inputToGameKeyMapping = inputToGameKeyMapping
 
                             //For kotlin this is before the body of the constructor.
                     
-this.inputToGameKeyMapping= inputToGameKeyMapping
-GameKeyCompleteMotionGestureInputEventFactory.getInstance()!.add(this)
-this.update()
+this.inputToGameKeyMapping= inputToGameKeyMapping;
+    
+GameKeyCompleteMotionGestureInputEventFactory.getInstance()!.add(this);
+    
+this.update();
+    
 }
 
 
@@ -98,16 +101,22 @@ this.update()
     public update(){
 
         try {
-            this.setGameKey(inputToGameKeyMapping!.getInstance(this.getMotionGestureInput()!.getId()))
-this.setGameKeyEvent(this.gameKeyEventFactory!.getInstance(this, getGameKey()))
-} catch(e: Exception)
+            this.setGameKey(inputToGameKeyMapping!.getInstance(this.getMotionGestureInput()!.getId()));
+    
+this.setGameKeyEvent(this.gameKeyEventFactory!.getInstance(this, getGameKey()));
+    
+
+                //: 
+} catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.UPDATE, e)
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.UPDATE, e);
+    
 }
 
 }
@@ -115,7 +124,8 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.UPDATE, e)
 
     setGameKeyEvent(gameKeyEvent: GameKeyEvent){
 var gameKeyEvent = gameKeyEvent
-this.gameKeyEvent= gameKeyEvent
+this.gameKeyEvent= gameKeyEvent;
+    
 }
 
 
@@ -131,7 +141,8 @@ this.gameKeyEvent= gameKeyEvent
 
     setGameKey(gameKey: GameKey){
 var gameKey = gameKey
-this.gameKey= gameKey
+this.gameKey= gameKey;
+    
 }
 
 

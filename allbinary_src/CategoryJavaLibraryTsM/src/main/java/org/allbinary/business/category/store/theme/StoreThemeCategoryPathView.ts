@@ -64,23 +64,29 @@ var document = document
     var node: Node = super.toXmlNode(document)!;
         
         
+;
+    
 
+    var storeThemeCategoryInterface: StoreThemeCategoryInterface = this.getCategoryInterface();
 
-    var storeThemeCategoryInterface: StoreThemeCategoryInterface = this.getCategoryInterface() as StoreThemeCategoryInterface;
+                         as StoreThemeCategoryInterface;
         
         
+;
+    
 
-
-    var themeArray: any = {}[] = storeThemeCategoryInterface!.getThemes()!.toArray()!;
+    var themeArray: any[] = storeThemeCategoryInterface!.getThemes()!.toArray()!;
         
         
-
+;
+    
 
     var size: number = themeArray!.length
                 ;
         
         
-
+;
+    
 
 
 
@@ -95,13 +101,16 @@ i < size; i++)
     var themeValidation: ThemeValidation = themeArray[i]! as ThemeValidation;
         
         
-
+;
+    
 
     var domNodeInterface: DomNodeInterface = ThemePropertiesView(themeValidation as ThemeInterface) as DomNodeInterface;
         
         
-
-node.appendChild(domNodeInterface!.toXmlNode(document))
+;
+    
+node.appendChild(domNodeInterface!.toXmlNode(document));
+    
 }
 
 

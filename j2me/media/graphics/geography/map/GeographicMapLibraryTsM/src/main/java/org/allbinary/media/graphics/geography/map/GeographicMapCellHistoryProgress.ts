@@ -25,7 +25,7 @@ import { NullUtil } from "../../../../../../org/allbinary/logic/NullUtil.js";
 export class GeographicMapCellHistoryProgress extends GeographicMapCellHistoryProgressBase {
         
 
-    private totalVisitedArray: IntArray = NullUtil.getInstance()!.NULL_INT_ARRAY;
+    private totalVisitedArray: number[] = NullUtil.getInstance()!.NULL_INT_ARRAY;
         
         
 
@@ -36,13 +36,16 @@ public constructor (geographicMapCellHistoryArray: GeographicMapCellHistory[]){
 
             super();
                 //var geographicMapCellHistoryArray = geographicMapCellHistoryArray
-this.geographicMapCellHistoryArray= geographicMapCellHistoryArray
-this.init()
+this.geographicMapCellHistoryArray= geographicMapCellHistoryArray;
+    
+this.init();
+    
 }
 
 
     public init(){
-this.totalVisitedArray= IntArray(this.geographicMapCellHistoryArray!.length)
+this.totalVisitedArray= new Array(this.geographicMapCellHistoryArray!.length);
+    
 }
 
 
@@ -51,19 +54,23 @@ this.totalVisitedArray= IntArray(this.geographicMapCellHistoryArray!.length)
     var isProgressing: boolean = false;
         
         
-
+;
+    
 
     var size: number = geographicMapCellHistoryArray!.length
                 ;
         
         
-
+;
+    
 
     var currentTotalVisited: number= 0
-
+;
+    
 
     var totalVisited: number= 0
-
+;
+    
 
 
 
@@ -74,14 +81,18 @@ this.totalVisitedArray= IntArray(this.geographicMapCellHistoryArray!.length)
         
 index < size; index++)
         {
-totalVisited= geographicMapCellHistoryArray[index]!.getTotalVisited()
-currentTotalVisited= this.totalVisitedArray[index]!
+totalVisited= geographicMapCellHistoryArray[index]!.getTotalVisited();
+    
+currentTotalVisited= this.totalVisitedArray[index]!;
+    
 
                         if(currentTotalVisited < totalVisited)
                         
                                     {
-                                    isProgressing= true
-this.totalVisitedArray[index]= totalVisited
+                                    isProgressing= true;
+    
+this.totalVisitedArray[index]= totalVisited;
+    
 
                                     }
                                 

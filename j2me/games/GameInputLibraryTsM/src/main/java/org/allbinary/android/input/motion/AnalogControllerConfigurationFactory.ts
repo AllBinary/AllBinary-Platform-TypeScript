@@ -80,8 +80,10 @@ private constructor (){
             
     public setAvailable(available: boolean){
 var available = available
-this.available= available
-AnalogControllerConfigurationEventHandler.getInstance()!.fireEvent(analogControllerConfigurationEvent)
+this.available= available;
+    
+AnalogControllerConfigurationEventHandler.getInstance()!.fireEvent(analogControllerConfigurationEvent);
+    
 }
 
 

@@ -61,7 +61,8 @@ export class FullScreenUtil
                                 )
                         
                                     {
-                                    this.init(fullScreenInterface)
+                                    this.init(fullScreenInterface);
+    
 
                                     }
                                 
@@ -79,12 +80,14 @@ export class FullScreenUtil
     var mainFeatureFactory: MainFeatureFactory = MainFeatureFactory.getInstance()!;
         
         
-
+;
+    
 
     var features: Features = Features.getInstance()!;
         
         
-
+;
+    
 
                         if(features.isFeature(mainFeatureFactory!.FULL_SCREEN) != isFullScreen)
                         
@@ -114,6 +117,8 @@ export class FullScreenUtil
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return isScreenChange(false);
+
+                        ;
     
 }
 

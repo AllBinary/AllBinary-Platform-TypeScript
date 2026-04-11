@@ -173,26 +173,38 @@ public constructor (commandListener: CommandListener, allBinaryGameLayerManager:
 
                             //For kotlin this is before the body of the constructor.
                     
-logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR)
-this.highScoresPaintable= paintable
-this.highScoresFactoryInterface= highScoresFactoryInterface
-this.highScoresCanvasInputProcessor= highScoresCanvasInputProcessorFactoryInterface!.getInstance(this)
-this.gameInfo= gameInfo
-this.waitPaintable!.setBasicColorP(allBinaryGameLayerManager!.getForegroundBasicColor())
-this.getHighScoresPaintable()!.setBasicColorP(allBinaryGameLayerManager!.getForegroundBasicColor())
-this.colorFillPaintable= ColorFillPaintableFactory.getInstance()!.getInstance(allBinaryGameLayerManager!.getBackgroundBasicColor(), false)
+logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
+    
+this.highScoresPaintable= paintable;
+    
+this.highScoresFactoryInterface= highScoresFactoryInterface;
+    
+this.highScoresCanvasInputProcessor= highScoresCanvasInputProcessorFactoryInterface!.getInstance(this);
+    
+this.gameInfo= gameInfo;
+    
+this.waitPaintable!.setBasicColorP(allBinaryGameLayerManager!.getForegroundBasicColor());
+    
+this.getHighScoresPaintable()!.setBasicColorP(allBinaryGameLayerManager!.getForegroundBasicColor());
+    
+this.colorFillPaintable= ColorFillPaintableFactory.getInstance()!.getInstance(allBinaryGameLayerManager!.getBackgroundBasicColor(), false);
+    
 
                         if(this.highScoresHelper!.getHighScoresArray() == NoHighScoresFactory.getInstance()!.NO_HIGH_SCORES)
                         
                                     {
-                                    this.setPaintable(this.waitPaintable)
+                                    this.setPaintable(this.waitPaintable);
+    
 
                                     }
                                 
                         else {
-                            logUtil!.put("Show HighScores that are already loaded", this, commonStrings!.CONSTRUCTOR)
-this.updateCommand(this.currentCommand)
-this.setPaintable(this.getHighScoresPaintable())
+                            logUtil!.put("Show HighScores that are already loaded", this, commonStrings!.CONSTRUCTOR);
+    
+this.updateCommand(this.currentCommand);
+    
+this.setPaintable(this.getHighScoresPaintable());
+    
 
                         }
                             
@@ -206,7 +218,8 @@ SecondaryThreadPool.getInstance()!.runTask(object: ARunnable()
     var isHTML: boolean = J2MEUtil.isHTML()!;
         
         
-
+;
+    
 
                         if(!isHTML)
                         
@@ -216,7 +229,8 @@ SecondaryThreadPool.getInstance()!.runTask(object: ARunnable()
         {
 }
 
-hasPainted= false
+hasPainted= false;
+    
 
                                     }
                                 
@@ -224,9 +238,12 @@ hasPainted= false
     var stringMaker: StringMaker = new StringMaker();
         
         
-
-logUtil!.put(stringMaker!.append("HighScoresCanvas - Request repaint to be sure: ")!.appendlong(System.currentTimeMillis())!.toString(), this, commonStrings!.RUN)
-repaintBehavior!.onChangeRepaint(this@HighScoresCanvas)
+;
+    
+logUtil!.put(stringMaker!.append("HighScoresCanvas - Request repaint to be sure: ")!.appendlong(System.currentTimeMillis())!.toString(), this, commonStrings!.RUN);
+    
+repaintBehavior!.onChangeRepaint(this@HighScoresCanvas);
+    
 
                         if(!isHTML)
                         
@@ -239,38 +256,52 @@ repaintBehavior!.onChangeRepaint(this@HighScoresCanvas)
 
                                     }
                                 
-stringMaker!.delete(0, stringMaker!.length())
-logUtil!.put(stringMaker!.append("HighScoresCanvas - Now that the canvas has completed repaint go ahead and fetch the scores: ")!.appendlong(System.currentTimeMillis())!.toString(), this, commonStrings!.RUN)
-executeUpdate()
-} catch(e: Exception)
+stringMaker!.delete(0, stringMaker!.length());
+    
+logUtil!.put(stringMaker!.append("HighScoresCanvas - Now that the canvas has completed repaint go ahead and fetch the scores: ")!.appendlong(System.currentTimeMillis())!.toString(), this, commonStrings!.RUN);
+    
+executeUpdate();
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
+    
 }
 
 }
 
                                 }
-                            )
+                            );
+    
 }
 
 
     public initCommands(cmdListener: CommandListener){
 var cmdListener = cmdListener
-this.removeAllCommands()
-this.addCommand(GameCommandsFactory.getInstance()!.CLOSE_AND_SHOW_GAME_CANVAS)
-this.setCommandListener(cmdListener)
+this.removeAllCommands();
+    
+this.addCommand(GameCommandsFactory.getInstance()!.CLOSE_AND_SHOW_GAME_CANVAS);
+    
+this.setCommandListener(cmdListener);
+    
 }
 
 
     public open(){
-super.open()
-this.highScoresCanvasInputProcessor!.open()
+super.open();
+    
+this.highScoresCanvasInputProcessor!.open();
+    
 }
 
 
     public close(){
-super.close()
-this.highScoresCanvasInputProcessor!.close()
+super.close();
+    
+this.highScoresCanvasInputProcessor!.close();
+    
 }
 
 
@@ -280,28 +311,37 @@ this.highScoresCanvasInputProcessor!.close()
 
     public paint(graphics: Graphics){
 var graphics = graphics
-this.colorFillPaintable!.paint(graphics)
-this.paintable.paint(graphics)
+this.colorFillPaintable!.paint(graphics);
+    
+this.paintable.paint(graphics);
+    
 
                         if(this.waitPaintable != this.paintable)
                         
                                     {
-                                    this.highScoresCanvasInputProcessor!.paint(graphics)
+                                    this.highScoresCanvasInputProcessor!.paint(graphics);
+    
 
                                     }
                                 
-super.paint(graphics)
-hasPainted= true
+super.paint(graphics);
+    
+hasPainted= true;
+    
 }
 
 
     public executeUpdate(){
 
         try {
-            this.highScoresFactoryInterface!.fetchHighScores(this.getGameInfo(), this)
-} catch(e: Exception)
+            this.highScoresFactoryInterface!.fetchHighScores(this.getGameInfo(), this);
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.UPDATE, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.UPDATE, e);
+    
 }
 
 }
@@ -328,21 +368,29 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.UPDATE, e)
                         
                                     {
                                     logUtil!.put(StringMaker().
-                            append(commonStrings!.START)!.appendint(highScoresArray!.length)!.toString(), this, "setHighScoresArray")
+                            append(commonStrings!.START)!.appendint(highScoresArray!.length)!.toString(), this, "setHighScoresArray");
+    
 
                                     }
                                 
                         else {
-                            logUtil!.put(commonStrings!.START, this, "setHighScoresArray")
+                            logUtil!.put(commonStrings!.START, this, "setHighScoresArray");
+    
 
                         }
                             
-this.highScoresHelper!.setHighScoresArray(highScoresArray)
-this.updateCommand(this.currentCommand)
-this.setPaintable(this.getHighScoresPaintable())
-} catch(e: Exception)
+this.highScoresHelper!.setHighScoresArray(highScoresArray);
+    
+this.updateCommand(this.currentCommand);
+    
+this.setPaintable(this.getHighScoresPaintable());
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.UPDATE, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.UPDATE, e);
+    
 }
 
 }
@@ -353,12 +401,14 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.UPDATE, e)
     public updateCommand(command: Command){
 var command = command
 logUtil!.put(StringMaker().
-                            append(commonStrings!.START)!.append(this.stringUtil!.toString(command))!.toString(), this, commonStrings!.UPDATE)
+                            append(commonStrings!.START)!.append(this.stringUtil!.toString(command))!.toString(), this, commonStrings!.UPDATE);
+    
 
     var gameCommandsFactory: GameCommandsFactory = GameCommandsFactory.getInstance()!;
         
         
-
+;
+    
 
                         if(highScoreCommandsFactory!.isHighScoreCommand(command))
                         
@@ -367,22 +417,26 @@ logUtil!.put(StringMaker().
     var index: number = highScoreCommandsFactory!.getIndex(command)!;
         
         
-
+;
+    
 
     var nextIndex: number = index +1;
         
         
-
+;
+    
 
     var highScoresArray: HighScores[] = this.highScoresHelper!.getHighScoresArray()!;
         
         
-
+;
+    
 
                         if(nextIndex >= highScoresArray!.length)
                         
                                     {
-                                    nextIndex= 0
+                                    nextIndex= 0;
+    
 
                                     }
                                 
@@ -390,12 +444,14 @@ logUtil!.put(StringMaker().
                         if(highScoresArray!.length > 0)
                         
                                     {
-                                    this.getHighScoresPaintable()!.setHighScores(highScoresArray[index]!)
+                                    this.getHighScoresPaintable()!.setHighScores(highScoresArray[index]!);
+    
 
                                     }
                                 
                         else {
-                            this.getHighScoresPaintable()!.setHighScores(NullHighScoresSingletonFactory.getInstance())
+                            this.getHighScoresPaintable()!.setHighScores(NullHighScoresSingletonFactory.getInstance());
+    
 
                         }
                             
@@ -403,20 +459,28 @@ logUtil!.put(StringMaker().
                         if(index != nextIndex)
                         
                                     {
-                                    this.removeAllCommands()
-this.addCommand(gameCommandsFactory!.CLOSE_AND_SHOW_GAME_CANVAS)
-this.addCommand(highScoreCommandsFactory!.HIGH_SCORE_COMMANDS[nextIndex]!)
+                                    this.removeAllCommands();
+    
+this.addCommand(gameCommandsFactory!.CLOSE_AND_SHOW_GAME_CANVAS);
+    
+this.addCommand(highScoreCommandsFactory!.HIGH_SCORE_COMMANDS[nextIndex]!);
+    
 
                                     }
                                 
 
                                     }
                                 
-this.currentCommand= command
-this.close()
-super.initMenu()
-this.open()
-this.repaintBehavior!.onChangeRepaint(this)
+this.currentCommand= command;
+    
+this.close();
+    
+super.initMenu();
+    
+this.open();
+    
+this.repaintBehavior!.onChangeRepaint(this);
+    
 }
 
 
@@ -432,8 +496,10 @@ this.repaintBehavior!.onChangeRepaint(this)
 
     setPaintable(paintable: Paintable){
 var paintable = paintable
-this.paintable= paintable
-this.repaintBehavior!.onChangeRepaint(this)
+this.paintable= paintable;
+    
+this.repaintBehavior!.onChangeRepaint(this);
+    
 }
 
 

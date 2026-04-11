@@ -46,17 +46,20 @@ var activity = activity
     var SDK_VERSION: number = AndroidInfoFactory.getInstance()!.getVersion()!;
         
         
-
+;
+    
 
                         if(SDK_VERSION <= 2)
                         
                                     {
-                                    virtualKeyboard= VirtualKeyboardAPI1(activity)
+                                    virtualKeyboard= VirtualKeyboardAPI1(activity);
+    
 
                                     }
                                 
                         else {
-                            virtualKeyboard= VirtualKeyboardAPI3(activity)
+                            virtualKeyboard= VirtualKeyboardAPI3(activity);
+    
 
                         }
                             

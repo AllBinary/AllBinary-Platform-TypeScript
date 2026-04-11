@@ -27,7 +27,7 @@ import { BasicColorFactory } from "../../../org/allbinary/graphics/color/BasicCo
 
 export class ColorLessVectorAnimation extends VectorAnimation {
         
-public constructor (currentPoints: IntArray[][], animationBehavior: AnimationBehavior)                        
+public constructor (currentPoints: number[][][], animationBehavior: AnimationBehavior)                        
 
                             : super(currentPoints, BasicColorFactory.getInstance()!.WHITE, animationBehavior){
 
@@ -40,7 +40,7 @@ public constructor (currentPoints: IntArray[][], animationBehavior: AnimationBeh
                     
 }
 
-public constructor (currentPoints: IntArray[], animationBehavior: AnimationBehavior)                        
+public constructor (currentPoints: number[][], animationBehavior: AnimationBehavior)                        
 
                             : super(currentPoints, BasicColorFactory.getInstance()!.WHITE, animationBehavior){
 
@@ -58,7 +58,8 @@ public constructor (currentPoints: IntArray[], animationBehavior: AnimationBehav
 var graphics = graphics
 var x = x
 var y = y
-this.paintVectors(graphics, x, y)
+this.paintVectors(graphics, x, y);
+    
 }
 
 

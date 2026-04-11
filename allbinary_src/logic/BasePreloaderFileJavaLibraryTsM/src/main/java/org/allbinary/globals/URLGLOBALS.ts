@@ -30,7 +30,8 @@ export class URLGLOBALS
 
     public static init(urlGlobalsInterface: UrlGlobalsInterface){
 var urlGlobalsInterface = urlGlobalsInterface
-URLGLOBALS.urlGlobalsInterface= urlGlobalsInterface
+URLGLOBALS.urlGlobalsInterface= urlGlobalsInterface;
+    
 }
 
 
@@ -40,6 +41,8 @@ URLGLOBALS.urlGlobalsInterface= urlGlobalsInterface
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return urlGlobalsInterface!.isTestingMode();
+
+                        ;
     
 }
 
@@ -50,6 +53,8 @@ URLGLOBALS.urlGlobalsInterface= urlGlobalsInterface
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return urlGlobalsInterface!.getWebappPath();
+
+                        ;
     
 }
 
@@ -60,6 +65,8 @@ URLGLOBALS.urlGlobalsInterface= urlGlobalsInterface
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return urlGlobalsInterface!.getTestHtmlPath();
+
+                        ;
     
 }
 
@@ -72,6 +79,8 @@ URLGLOBALS.urlGlobalsInterface= urlGlobalsInterface
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return urlGlobalsInterface!.getMainPath();
+
+                        ;
     
 }
 

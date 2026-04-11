@@ -33,7 +33,8 @@ public constructor (inputAutomationModuleInterfaceArray: InputAutomationModuleFa
 
             super();
             var inputAutomationModuleInterfaceArray = inputAutomationModuleInterfaceArray
-this.setInputAutomationModuleInterfaceArray(inputAutomationModuleInterfaceArray)
+this.setInputAutomationModuleInterfaceArray(inputAutomationModuleInterfaceArray);
+    
 }
 
 
@@ -49,7 +50,8 @@ this.setInputAutomationModuleInterfaceArray(inputAutomationModuleInterfaceArray)
 
     public setInputAutomationModuleInterfaceArray(inputAutomationModuleInterfaceArray: InputAutomationModuleFactoryInterface[]){
 var inputAutomationModuleInterfaceArray = inputAutomationModuleInterfaceArray
-this.inputAutomationModuleInterfaceArray= inputAutomationModuleInterfaceArray
+this.inputAutomationModuleInterfaceArray= inputAutomationModuleInterfaceArray;
+    
 }
 
 

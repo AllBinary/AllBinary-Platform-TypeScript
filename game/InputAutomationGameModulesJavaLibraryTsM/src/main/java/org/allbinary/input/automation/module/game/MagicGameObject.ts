@@ -56,15 +56,21 @@ var y = y
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(CommonSeps.getInstance()!.NEW_LINE)
-stringBuffer!.append(MP_LABEL)
-stringBuffer!.append(super.toString())
+;
+    
+stringBuffer!.append(CommonSeps.getInstance()!.NEW_LINE);
+    
+stringBuffer!.append(MP_LABEL);
+    
+stringBuffer!.append(super.toString());
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
 }
 

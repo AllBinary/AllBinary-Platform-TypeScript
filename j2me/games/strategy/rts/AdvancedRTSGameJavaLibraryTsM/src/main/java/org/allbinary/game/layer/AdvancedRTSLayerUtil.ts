@@ -17,7 +17,10 @@
 
 
 
-import { Hashtable } from "../../../../java/util/Hashtable.js";
+            import Hashtable from "@ohos.util.HashMap";
+        
+
+//import { Hashtable } from "../../../../java/util/Hashtable.js";
 
     
 import { WorkWaypoint } from "../../../../org/allbinary/game/layer/waypoint/WorkWaypoint.js";
@@ -49,14 +52,16 @@ export class AdvancedRTSLayerUtil
 }
 
 
-    public createFakeRTSLayerHashtable(baseRaceTrackGeographicMap: BaseRaceTrackGeographicMap): Hashtable<Any, Any>{
+    public createFakeRTSLayerHashtable(baseRaceTrackGeographicMap: BaseRaceTrackGeographicMap): Hashtable<any, any>{
     //var baseRaceTrackGeographicMap = baseRaceTrackGeographicMap
 
-    var hashtable: Hashtable<Any, Any> = RTSLayerUtil.getInstance()!.createFakeRTSLayerHashtable(baseRaceTrackGeographicMap)!;
+    var hashtable: Hashtable<any, any> = RTSLayerUtil.getInstance()!.createFakeRTSLayerHashtable(baseRaceTrackGeographicMap)!;
         
         
-
-hashtable.put(WorkWaypoint.ID, SmallIntegerSingletonFactory.getInstance()!.getInstance(50))
+;
+    
+hashtable.put(WorkWaypoint.ID, SmallIntegerSingletonFactory.getInstance()!.getInstance(50));
+    
 
 
 

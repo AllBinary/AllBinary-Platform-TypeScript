@@ -18,7 +18,10 @@
 
 
 
-import { Hashtable } from "../../../../../../java/util/Hashtable.js";
+            import Hashtable from "@ohos.util.HashMap";
+        
+
+//import { Hashtable } from "../../../../../../java/util/Hashtable.js";
 
     
 import { StringMaker } from "../../../../../../org/allbinary/logic/string/StringMaker.js";
@@ -85,12 +88,17 @@ public constructor (name: string, version: string, specialName: string, shortNam
     //var version = version
     //var specialName = specialName
     //var shortName = shortName
-this.name= name
-this.version= version
-this.specialName= specialName
+this.name= name;
+    
+this.version= version;
+    
+this.specialName= specialName;
+    
 this.shortName= StringMaker().
-                            append(shortName)!.append(CommonSeps.getInstance()!.UNDERSCORE)!.append(version)!.toString()
-this.init()
+                            append(shortName)!.append(CommonSeps.getInstance()!.UNDERSCORE)!.append(version)!.toString();
+    
+this.init();
+    
 }
 
 
@@ -175,40 +183,55 @@ var index = index
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.licenseServers!.size();
+
+                        ;
     
 }
 
 
-    public toHashtable(): Hashtable<Any, Any>{
+    public toHashtable(): Hashtable<any, any>{
 
     var abeClientInformationData: AbeClientInformationData = AbeClientInformationData.getInstance()!;
         
         
+;
+    
 
-
-    var clientInfoHashtable: Hashtable<Any, Any> = new Hashtable<Any, Any>();
+    var clientInfoHashtable: Hashtable<any, any> = new Hashtable<any, any>();
         
         
-
-clientInfoHashtable!.put(abeClientInformationData!.NAME, this.name)
-clientInfoHashtable!.put(abeClientInformationData!.VERSION, this.version)
-clientInfoHashtable!.put(abeClientInformationData!.SPECIALNAME, this.specialName)
-clientInfoHashtable!.put(abeClientInformationData!.LICENSEID, this.getLicenseId())
-clientInfoHashtable!.put(abeClientInformationData!.OSNAME, this.getOperatingSystemInterface()!.getName())
-clientInfoHashtable!.put(abeClientInformationData!.OSARCH, this.getOperatingSystemInterface()!.getArch())
-clientInfoHashtable!.put(abeClientInformationData!.OSVERSION, this.getOperatingSystemInterface()!.getVersion())
-clientInfoHashtable!.put(abeClientInformationData!.OS, this.getOperatingSystemInterface()!.toString())
+;
+    
+clientInfoHashtable!.put(abeClientInformationData!.NAME, this.name);
+    
+clientInfoHashtable!.put(abeClientInformationData!.VERSION, this.version);
+    
+clientInfoHashtable!.put(abeClientInformationData!.SPECIALNAME, this.specialName);
+    
+clientInfoHashtable!.put(abeClientInformationData!.LICENSEID, this.getLicenseId());
+    
+clientInfoHashtable!.put(abeClientInformationData!.OSNAME, this.getOperatingSystemInterface()!.getName());
+    
+clientInfoHashtable!.put(abeClientInformationData!.OSARCH, this.getOperatingSystemInterface()!.getArch());
+    
+clientInfoHashtable!.put(abeClientInformationData!.OSVERSION, this.getOperatingSystemInterface()!.getVersion());
+    
+clientInfoHashtable!.put(abeClientInformationData!.OS, this.getOperatingSystemInterface()!.toString());
+    
 
     var hardwareInterface: HardwareInterface = SystemHardwareFactory.getInstance()!.getInstance(getOperatingSystemInterface())!;
         
         
-
+;
+    
 
     var hardwareString: string = hardwareInterface!.toString()!;
         
         
-
-clientInfoHashtable!.put(abeClientInformationData!.HARDWARE, hardwareString)
+;
+    
+clientInfoHashtable!.put(abeClientInformationData!.HARDWARE, hardwareString);
+    
 
 
 
@@ -252,12 +275,14 @@ var list = list
     var size: number = list.size() -1;
         
         
-
+;
+    
 
     var currentSize: number = this.licenseServers!.size() -1;
         
         
-
+;
+    
 
                         if(size > currentSize)
                         
@@ -285,7 +310,8 @@ index >= 0; index--)
     var newServerName: string = list.objectArray[index]! as String;
         
         
-
+;
+    
 
 
 
@@ -300,7 +326,8 @@ index2 >= 0; index2--)
     var nextOldServerName: string = this.licenseServers!.objectArray[index]! as String;
         
         
-
+;
+    
 
                         if(newServerName!.compareTo(nextOldServerName) != 0)
                         
@@ -329,7 +356,8 @@ index2 >= 0; index2--)
 
     setHardSale(hardSale: boolean){
 var hardSale = hardSale
-this.hardSale= hardSale
+this.hardSale= hardSale;
+    
 }
 
 
@@ -345,19 +373,22 @@ this.hardSale= hardSale
 
     setOperatingSystemInterface(operatingSystemInterface: GenericOperatingSystem){
 var operatingSystemInterface = operatingSystemInterface
-this.operatingSystemInterface= operatingSystemInterface
+this.operatingSystemInterface= operatingSystemInterface;
+    
 }
 
 
     setLicenseId(licenseId: string){
 var licenseId = licenseId
-this.licenseId= licenseId
+this.licenseId= licenseId;
+    
 }
 
 
     setLicenseServers(licenseServers: BasicArrayList){
 var licenseServers = licenseServers
-this.licenseServers= licenseServers
+this.licenseServers= licenseServers;
+    
 }
 
 

@@ -40,7 +40,11 @@ export class XYOscillateVelocityMovement extends BasicConstantVelocityMovement {
     private oscillatePositive: boolean= false
 public constructor (speedBasicDecimal: BasicDecimal, oscillateMin: number, oscillateMax: number)                        
 
-                            : super(speedBasicDecimal, VelocityProperties(speedBasicDecimal!.getUnscaled().toInt(), speedBasicDecimal!.getUnscaled().toInt())){
+                            : super(speedBasicDecimal, VelocityProperties(speedBasicDecimal!.getUnscaled();
+
+                        .toInt(), speedBasicDecimal!.getUnscaled();
+
+                        .toInt())){
 
             super();
             var speedBasicDecimal = speedBasicDecimal
@@ -50,8 +54,10 @@ var oscillateMax = oscillateMax
 
                             //For kotlin this is before the body of the constructor.
                     
-this.oscillateMin= oscillateMin
-this.oscillateMax= oscillateMax
+this.oscillateMin= oscillateMin;
+    
+this.oscillateMax= oscillateMax;
+    
 }
 
 
@@ -59,13 +65,16 @@ this.oscillateMax= oscillateMax
             
     public process(layer: AllBinaryGameLayer){
 var layer = layer
-super.process(layer)
+super.process(layer);
+    
 
                         if(this.oscillate < this.oscillateMin)
                         
                                     {
-                                    this.oscillatePositive= true
-this.getVelocityProperties()!.getVelocityYBasicDecimalP()!.add(3000)
+                                    this.oscillatePositive= true;
+    
+this.getVelocityProperties()!.getVelocityYBasicDecimalP()!.add(3000);
+    
 
                                     }
                                 
@@ -73,8 +82,10 @@ this.getVelocityProperties()!.getVelocityYBasicDecimalP()!.add(3000)
                         if(this.oscillate > this.oscillateMax)
                         
                                     {
-                                    this.oscillatePositive= false
-this.getVelocityProperties()!.getVelocityYBasicDecimalP()!.subtract(3000)
+                                    this.oscillatePositive= false;
+    
+this.getVelocityProperties()!.getVelocityYBasicDecimalP()!.subtract(3000);
+    
 
                                     }
                                 
@@ -82,14 +93,18 @@ this.getVelocityProperties()!.getVelocityYBasicDecimalP()!.subtract(3000)
                         if(this.oscillatePositive)
                         
                                     {
-                                    this.oscillate++
-this.getVelocityProperties()!.getVelocityXBasicDecimalP()!.add(5000)
+                                    this.oscillate++;
+    
+this.getVelocityProperties()!.getVelocityXBasicDecimalP()!.add(5000);
+    
 
                                     }
                                 
                         else {
-                            this.oscillate--
-this.getVelocityProperties()!.getVelocityXBasicDecimalP()!.subtract(5000)
+                            this.oscillate--;
+    
+this.getVelocityProperties()!.getVelocityXBasicDecimalP()!.subtract(5000);
+    
 
                         }
                             

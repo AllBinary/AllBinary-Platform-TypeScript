@@ -45,8 +45,10 @@ var gameInputProcessorInterface = gameInputProcessorInterface
 
                             //For kotlin this is before the body of the constructor.
                     
-this.name= name
-this.gameInputProcessorInterface= gameInputProcessorInterface
+this.name= name;
+    
+this.gameInputProcessorInterface= gameInputProcessorInterface;
+    
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
@@ -58,11 +60,16 @@ this.gameInputProcessorInterface= gameInputProcessorInterface
     var list: BasicArrayList = this.getGameKeyEventList()!;
         
         
+;
+    
+this.gameInputProcessorInterface!.onInput(list);
+    
 
-this.gameInputProcessorInterface!.onInput(list)
-} catch(e: Exception)
+                //: 
+} catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.UPDATE, e)
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.UPDATE, e);
+    
 }
 
 }
@@ -79,6 +86,8 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.UPDATE, e)
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return StringMaker().
                             append(super.toString())!.append(NAME_LABEL)!.append(name)!.toString();
+
+                        ;
     
 }
 

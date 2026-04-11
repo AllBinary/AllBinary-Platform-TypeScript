@@ -53,10 +53,13 @@ protected constructor (){
     public add(layerInterface: AllBinaryLayer){
 var layerInterface = layerInterface
 
-                        if(!list.contains(layerInterface))
+                        if(!list.contains(layerInterface);
+
+                        )
                         
                                     {
-                                    list.add(layerInterface)
+                                    list.add(layerInterface);
+    
 
                                     }
                                 

@@ -18,7 +18,10 @@
 
 
 
-import { Vector } from "../../../../../../java/util/Vector.js";
+            import Vector from "@ohos.util.Vector";
+        
+
+//import { Vector } from "../../../../../../java/util/Vector.js";
 
     
 
@@ -31,7 +34,8 @@ export class HtmlTags
 public constructor (){
 
             super();
-            htmlTagVector= Vector()
+            htmlTagVector= Vector();
+    
 }
 
 
@@ -41,14 +45,17 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return htmlTagVector!.get(index) as HtmlTag;
+                        return htmlTagVector!.get(index);
+
+                         as HtmlTag;
     
 }
 
 
     public add(htmlTag: HtmlTag){
 var htmlTag = htmlTag
-htmlTagVector!.add(htmlTag)
+htmlTagVector!.add(htmlTag);
+    
 }
 
 
@@ -58,6 +65,8 @@ htmlTagVector!.add(htmlTag)
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return htmlTagVector!.length;
+
+                        ;
     
 }
 

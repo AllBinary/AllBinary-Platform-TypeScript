@@ -62,18 +62,21 @@ var y = y
     var stringComponent: StringComponent = this.getLabelStringComponent()!;
         
         
-
+;
+    
 
                         if(stringComponent != 
                                     null
                                 )
                         
                                     {
-                                    graphics.setColor(stringComponent!.getForegroundBasicColor()!.toInt())
+                                    graphics.setColor(stringComponent!.getForegroundBasicColor()!.toInt());
+    
 
                                     }
                                 
-graphics.drawString(this.getLabel(), x +2, y, 0)
+graphics.drawString(this.getLabel(), x +2, y, 0);
+    
 }
 
 

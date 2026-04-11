@@ -82,46 +82,61 @@ export class LogoValidation extends Validation
 public constructor (){
 
             super();
-            this.isFile= false
+            this.isFile= false;
+    
 this.logoAbPath= 
                                         null
-                                    
+                                    ;
+    
 this.logoFile= 
                                         null
-                                    
+                                    ;
+    
 }
 
 public constructor (node: Node){
 
             super();
             var node = node
-this.isFile= false
-this.logoAbPath= AbPath(DomSearchHelper.getNode(LogoData.getInstance()!.IMAGEPATH, node.getChildNodes())!.getNodeValue())
-this.logoFile= DomSearchHelper.getNode(LogoData.getInstance()!.IMAGEFILENAME, node.getChildNodes())!.getNodeValue()
+this.isFile= false;
+    
+this.logoAbPath= AbPath(DomSearchHelper.getNode(LogoData.getInstance()!.IMAGEPATH, node.getChildNodes())!.getNodeValue());
+    
+this.logoFile= DomSearchHelper.getNode(LogoData.getInstance()!.IMAGEFILENAME, node.getChildNodes())!.getNodeValue();
+    
 }
 
-public constructor (hashMap: HashMap<Any, Any>){
+public constructor (hashMap: HashMap<any, any>){
 
             super();
             var hashMap = hashMap
-this.isFile= true
-this.getFormData(hashMap)
+this.isFile= true;
+    
+this.getFormData(hashMap);
+    
 }
 
 
                 //@Throws(Error::class)
             
-    public getFormData(hashMap: HashMap<Any, Any>){
+    public getFormData(hashMap: HashMap<any, any>){
 var hashMap = hashMap
-this.logoFileItem= hashMap!.get(LogoData.getInstance()!.IMAGE) as FileItem
-this.logoAbPath= AbPath(hashMap!.get(LogoData.getInstance()!.IMAGEPATH) as String)
+this.logoFileItem= hashMap!.get(LogoData.getInstance()!.IMAGE);
+
+                         as FileItem;
+    
+this.logoAbPath= AbPath(hashMap!.get(LogoData.getInstance()!.IMAGEPATH);
+
+                         as String);
+    
 
                         if(this.logoFileItem != 
                                     null
                                 )
                         
                                     {
-                                    this.logoFile= HttpRequestUtil.getInstance()!.generateFileName(this.logoFileItem!.getName())
+                                    this.logoFile= HttpRequestUtil.getInstance()!.generateFileName(this.logoFileItem!.getName());
+    
 
                                     }
                                 
@@ -133,12 +148,18 @@ this.logoAbPath= AbPath(hashMap!.get(LogoData.getInstance()!.IMAGEPATH) as Strin
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("HashMap: ")
-stringBuffer!.append(hashMap!.toString())
-stringBuffer!.append("\nLogoFileName: ")
-stringBuffer!.append(this.logoFile)
-logUtil!.put(stringBuffer!.toString(), this, "getFormData()")
+;
+    
+stringBuffer!.append("HashMap: ");
+    
+stringBuffer!.append(hashMap!.toString());
+    
+stringBuffer!.append("\nLogoFileName: ");
+    
+stringBuffer!.append(this.logoFile);
+    
+logUtil!.put(stringBuffer!.toString(), this, "getFormData()");
+    
 
                                     }
                                 
@@ -152,29 +173,35 @@ logUtil!.put(stringBuffer!.toString(), this, "getFormData()")
     var valid: Boolean = Boolean.TRUE;
         
         
-
+;
+    
 
     var fileData: FileData = FileData.getInstance()!;
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("LogoValidation", this, commonStrings!.IS_VALID)
+                                    logUtil!.put("LogoValidation", this, commonStrings!.IS_VALID);
+    
 
                                     }
                                 
 
-                        if(!StringValidationUtil.getInstance()!.isValidRequired(this.logoAbPath!.toString(), 0, 512))
+                        if(!StringValidationUtil.getInstance()!.isValidRequired(this.logoAbPath!.toString(), 0, 512);
+
+                        )
                         
                                     {
                                     
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("logoPath is invalid: " +this.logoAbPath!.toString(), this, commonStrings!.IS_VALID)
+                                    logUtil!.put("logoPath is invalid: " +this.logoAbPath!.toString(), this, commonStrings!.IS_VALID);
+    
 
                                     }
                                 
@@ -188,14 +215,17 @@ logUtil!.put(stringBuffer!.toString(), this, "getFormData()")
                                     }
                                 
 
-                        if(!StringValidationUtil.getInstance()!.isValidRequired(this.logoFile, fileData!.MINLEN, fileData!.MAXLEN))
+                        if(!StringValidationUtil.getInstance()!.isValidRequired(this.logoFile, fileData!.MINLEN, fileData!.MAXLEN);
+
+                        )
                         
                                     {
                                     
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("logoFile is invalid: " +this.logoFile, this, commonStrings!.IS_VALID)
+                                    logUtil!.put("logoFile is invalid: " +this.logoFile, this, commonStrings!.IS_VALID);
+    
 
                                     }
                                 
@@ -235,7 +265,8 @@ logUtil!.put(stringBuffer!.toString(), this, "getFormData()")
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Image File Is Not The Right Size. " +fileData!.MINIMAGEFILESIZE +"< > " +fileData!.MAXIMAGEFILESIZE, this, commonStrings!.IS_VALID)
+                                    logUtil!.put("Image File Is Not The Right Size. " +fileData!.MINIMAGEFILESIZE +"< > " +fileData!.MAXIMAGEFILESIZE, this, commonStrings!.IS_VALID);
+    
 
                                     }
                                 
@@ -255,7 +286,8 @@ logUtil!.put(stringBuffer!.toString(), this, "getFormData()")
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Logo Validation: " +valid, this, commonStrings!.IS_VALID)
+                                    logUtil!.put("Logo Validation: " +valid, this, commonStrings!.IS_VALID);
+    
 
                                     }
                                 
@@ -265,13 +297,16 @@ logUtil!.put(stringBuffer!.toString(), this, "getFormData()")
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return valid;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put("Failed to validate form", this, commonStrings!.IS_VALID, e)
+                                    logUtil!.put("Failed to validate form", this, commonStrings!.IS_VALID, e);
+    
 
                                     }
                                 
@@ -293,21 +328,28 @@ logUtil!.put(stringBuffer!.toString(), this, "getFormData()")
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("Logo is not valid.")
+;
+    
+stringBuffer!.append("Logo is not valid.");
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return stringBuffer!.toString();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e)
+                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e);
+    
 
                                     }
                                 
@@ -343,33 +385,40 @@ var document = document
 }
 
 
-    public toHashMap(): HashMap<Any, Any>{
+    public toHashMap(): HashMap<any, any>{
 
     var stringUtil: StringUtil = StringUtil.getInstance()!;
         
         
+;
+    
 
-
-    var hashMap: HashMap<Any, Any> = new HashMap<Any, Any>();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
         
         
-
-hashMap!.put(LogoData.getInstance()!.IMAGE, stringUtil!.EMPTY_STRING)
+;
+    
+hashMap!.put(LogoData.getInstance()!.IMAGE, stringUtil!.EMPTY_STRING);
+    
 
                         if(this.logoFile != 
                                     null
                                 )
                         
                                     {
-                                    hashMap!.put(LogoData.getInstance()!.IMAGEPATH, this.logoAbPath!.toString())
-hashMap!.put(LogoData.getInstance()!.IMAGEFILENAME, this.logoFile)
+                                    hashMap!.put(LogoData.getInstance()!.IMAGEPATH, this.logoAbPath!.toString());
+    
+hashMap!.put(LogoData.getInstance()!.IMAGEFILENAME, this.logoFile);
+    
 
                                     }
                                 
                         else {
                             hashMap!.put(LogoData.getInstance()!.IMAGEPATH, 
-                            null)
-hashMap!.put(LogoData.getInstance()!.IMAGEFILENAME, this.logoFile)
+                            null);
+    
+hashMap!.put(LogoData.getInstance()!.IMAGEFILENAME, this.logoFile);
+    
 
                         }
                             
@@ -387,15 +436,18 @@ hashMap!.put(LogoData.getInstance()!.IMAGEFILENAME, this.logoFile)
     public toXmlNode(document: Document): Node{
 var document = document
 
-    var hashMap: HashMap<Any, Any> = this.toHashMap()!;
+    var hashMap: HashMap<any, any> = this.toHashMap()!;
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return ModDomHelper.createNameValueNodes(document, LogoData.getInstance()!.NAME, hashMap);
+
+                        ;
     
 }
 
@@ -411,16 +463,22 @@ var document = document
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append("Processing logoFile: ")
-stringBuffer!.append(this.logoAbPath!.toString())
-stringBuffer!.append(this.logoFile)
-logUtil!.put(stringBuffer!.toString(), this, "processLogoFile()")
+;
+    
+stringBuffer!.append("Processing logoFile: ");
+    
+stringBuffer!.append(this.logoAbPath!.toString());
+    
+stringBuffer!.append(this.logoFile);
+    
+logUtil!.put(stringBuffer!.toString(), this, "processLogoFile()");
+    
 
                                     }
                                 
 LogoImageFileUtil(this.logoAbPath, this.logoFile).
-                            saveFiles(this.logoFileItem)
+                            saveFiles(this.logoFileItem);
+    
 }
 
 

@@ -18,7 +18,10 @@
 
 
 
-import { Vector } from "../../../../../../java/util/Vector.js";
+            import Vector from "@ohos.util.Vector";
+        
+
+//import { Vector } from "../../../../../../java/util/Vector.js";
 
     
 import { StringUtil } from "../../../../../../org/allbinary/logic/string/StringUtil.js";
@@ -80,30 +83,36 @@ public constructor (action: string){
 
             super();
             var action = action
-this.action= action
-inputs= Vector()
+this.action= action;
+    
+inputs= Vector();
+    
 }
 
 
     public setPost(){
-method= POST
+method= POST;
+    
 }
 
 
     public setGet(){
-method= GET
+method= GET;
+    
 }
 
 
     public addInput(htmlInput: HtmlInput){
 var htmlInput = htmlInput
-inputs.add(htmlInput)
+inputs.add(htmlInput);
+    
 }
 
 
     public addTable(htmlTable: HtmlTable){
 var htmlTable = htmlTable
-inputs.add(htmlTable)
+inputs.add(htmlTable);
+    
 }
 
 
@@ -112,31 +121,43 @@ inputs.add(htmlTable)
     var stringUtil: StringUtil = StringUtil.getInstance()!;
         
         
-
+;
+    
 
     var result: string = stringUtil!.EMPTY_STRING;
         
         
+;
+    
 
-
-    var inputArray: any = {}[] = inputs.toArray()!;
+    var inputArray: any[] = inputs.toArray()!;
         
         
-
+;
+    
 
     var inputSize: number = inputArray!.length
                 ;
         
         
-
-result= FORMBEGIN
-result += METHOD
-result += method
-result += "\" "
-result += ACTION
-result += action
-result += "\" "
-result += END
+;
+    
+result= FORMBEGIN;
+    
+result += METHOD;
+    
+result += method;
+    
+result += "\" ";
+    
+result += ACTION;
+    
+result += action;
+    
+result += "\" ";
+    
+result += END;
+    
 
 
 
@@ -147,11 +168,14 @@ result += END
         
 i < inputSize; i++)
         {
-result += inputArray[i]!.toString()
-result += " "
+result += inputArray[i]!.toString();
+    
+result += " ";
+    
 }
 
-result += FORMEND
+result += FORMEND;
+    
 
 
 

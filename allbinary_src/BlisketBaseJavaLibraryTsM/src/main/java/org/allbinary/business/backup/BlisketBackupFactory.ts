@@ -18,7 +18,10 @@
 
 
 
-import { Vector } from "../../../../java/util/Vector.js";
+            import Vector from "@ohos.util.Vector";
+        
+
+//import { Vector } from "../../../../java/util/Vector.js";
 
     
 import { StoreFrontInterface } from "../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js";
@@ -103,17 +106,21 @@ var pathString = pathString
     var path: AbPath = new AbPath(pathString);
         
         
-
+;
+    
 
     var file: AbFile = new AbFile(path);
         
         
-
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return directory.search(file, true);
+
+                        ;
     
 }
 
@@ -121,33 +128,44 @@ var pathString = pathString
     public backup(){
 
         try {
-            logUtil!.put(this.commonStrings!.START, this, "backup()")
+            logUtil!.put(this.commonStrings!.START, this, "backup()");
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(URLGLOBALS.getWebappPath())
-stringBuffer!.append(PATH_GLOBALS.getInstance()!.BACKUP_PATH)
+;
+    
+stringBuffer!.append(URLGLOBALS.getWebappPath());
+    
+stringBuffer!.append(PATH_GLOBALS.getInstance()!.BACKUP_PATH);
+    
 
     var backupPath: string = stringBuffer!.toString()!;
         
         
-
+;
+    
 
     var path: AbPath = new AbPath(backupPath);
         
         
-
+;
+    
 
     var fileBasicArrayList: BasicArrayList = this.getFileBasicArrayList(backupPath)!;
         
         
+;
+    
+this.backup(fileBasicArrayList, path.toFileSystemString() +"backup.zip");
+    
 
-this.backup(fileBasicArrayList, path.toFileSystemString() +"backup.zip")
-} catch(e: Exception)
+                //: 
+} catch(e) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, this, "backup()", e)
+logUtil!.put(this.commonStrings!.EXCEPTION, this, "backup()", e);
+    
 }
 
 }
@@ -156,44 +174,54 @@ logUtil!.put(this.commonStrings!.EXCEPTION, this, "backup()", e)
     public backupViews(){
 
         try {
-            logUtil!.put(this.commonStrings!.START, this, "backupViews()")
+            logUtil!.put(this.commonStrings!.START, this, "backupViews()");
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(URLGLOBALS.getWebappPath())
-stringBuffer!.append(PATH_GLOBALS.getInstance()!.BACKUP_PATH)
+;
+    
+stringBuffer!.append(URLGLOBALS.getWebappPath());
+    
+stringBuffer!.append(PATH_GLOBALS.getInstance()!.BACKUP_PATH);
+    
 
     var backupPath: string = stringBuffer!.toString()!;
         
         
-
+;
+    
 
     var path: AbPath = new AbPath(backupPath);
         
         
-
+;
+    
 
     var fileBasicArrayList: BasicArrayList = new BasicArrayList();
         
         
-
+;
+    
 
     var storeFrontsEntity: StoreFrontsEntity = StoreFrontsEntityFactory.getInstance()!.getStoreFrontsEntityInstance()!;
         
         
-
+;
+    
 
     var storeFrontNamesBasicArrayList: Vector = storeFrontsEntity!.getStoreFrontNames()!;
         
         
-
+;
+    
 
     var size: number = storeFrontNamesBasicArrayList!.length!;
         
         
-
+;
+    
 
 
 
@@ -205,32 +233,51 @@ stringBuffer!.append(PATH_GLOBALS.getInstance()!.BACKUP_PATH)
 index < size; index++)
         {
 
-    var nextStore: string = storeFrontNamesBasicArrayList!.get(index) as String;
-        
-        
+    var nextStore: string = storeFrontNamesBasicArrayList!.get(index);
 
-stringBuffer!.delete(0, stringBuffer!.length())
-stringBuffer!.append(URLGLOBALS.getWebappPath())
-stringBuffer!.append(PATH_GLOBALS.getInstance()!.VIEWS_PATH)
-stringBuffer!.append(nextStore)
+                         as String;
+        
+        
+;
+    
+stringBuffer!.delete(0, stringBuffer!.length());
+    
+stringBuffer!.append(URLGLOBALS.getWebappPath());
+    
+stringBuffer!.append(PATH_GLOBALS.getInstance()!.VIEWS_PATH);
+    
+stringBuffer!.append(nextStore);
+    
 
     var viewsPath: string = stringBuffer!.toString()!;
         
         
-
-stringBuffer!.delete(0, stringBuffer!.length())
-stringBuffer!.append("Backup Store Views: ")
-stringBuffer!.append(nextStore)
-stringBuffer!.append(" from: ")
-stringBuffer!.append(viewsPath)
-PreLogUtil.put(stringBuffer!.toString(), this, "backupViews()")
-fileBasicArrayList!.addAll(this.getFileBasicArrayList(viewsPath))
+;
+    
+stringBuffer!.delete(0, stringBuffer!.length());
+    
+stringBuffer!.append("Backup Store Views: ");
+    
+stringBuffer!.append(nextStore);
+    
+stringBuffer!.append(" from: ");
+    
+stringBuffer!.append(viewsPath);
+    
+PreLogUtil.put(stringBuffer!.toString(), this, "backupViews()");
+    
+fileBasicArrayList!.addAll(this.getFileBasicArrayList(viewsPath));
+    
 }
 
-this.backup(fileBasicArrayList, path.toFileSystemString() +"backupViews.zip")
-} catch(e: Exception)
+this.backup(fileBasicArrayList, path.toFileSystemString() +"backupViews.zip");
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, this, "backupViews()", e)
+logUtil!.put(this.commonStrings!.EXCEPTION, this, "backupViews()", e);
+    
 }
 
 }
@@ -239,44 +286,54 @@ logUtil!.put(this.commonStrings!.EXCEPTION, this, "backupViews()", e)
     public backupResources(){
 
         try {
-            logUtil!.put(this.commonStrings!.START, this, "backupResources()")
+            logUtil!.put(this.commonStrings!.START, this, "backupResources()");
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(URLGLOBALS.getWebappPath())
-stringBuffer!.append(PATH_GLOBALS.getInstance()!.BACKUP_PATH)
+;
+    
+stringBuffer!.append(URLGLOBALS.getWebappPath());
+    
+stringBuffer!.append(PATH_GLOBALS.getInstance()!.BACKUP_PATH);
+    
 
     var backupPath: string = stringBuffer!.toString()!;
         
         
-
+;
+    
 
     var path: AbPath = new AbPath(backupPath);
         
         
-
+;
+    
 
     var fileBasicArrayList: BasicArrayList = new BasicArrayList();
         
         
-
+;
+    
 
     var storeFrontsEntity: StoreFrontsEntity = StoreFrontsEntityFactory.getInstance()!.getStoreFrontsEntityInstance()!;
         
         
-
+;
+    
 
     var storeFrontNamesBasicArrayList: Vector = storeFrontsEntity!.getStoreFrontNames()!;
         
         
-
+;
+    
 
     var size: number = storeFrontNamesBasicArrayList!.length!;
         
         
-
+;
+    
 
 
 
@@ -288,37 +345,57 @@ stringBuffer!.append(PATH_GLOBALS.getInstance()!.BACKUP_PATH)
 index < size; index++)
         {
 
-    var nextStore: string = storeFrontNamesBasicArrayList!.get(index) as String;
-        
-        
+    var nextStore: string = storeFrontNamesBasicArrayList!.get(index);
 
+                         as String;
+        
+        
+;
+    
 
     var storeFrontInterface: StoreFrontInterface = storeFrontsEntity!.getStoreFrontInterface(nextStore)!;
         
         
-
-stringBuffer!.delete(0, stringBuffer!.length())
-stringBuffer!.append(URLGLOBALS.getWebappPath())
-stringBuffer!.append(storeFrontInterface!.getCurrentHostNamePath())
-stringBuffer!.append(storeFrontInterface!.getCategoryPath())
+;
+    
+stringBuffer!.delete(0, stringBuffer!.length());
+    
+stringBuffer!.append(URLGLOBALS.getWebappPath());
+    
+stringBuffer!.append(storeFrontInterface!.getCurrentHostNamePath());
+    
+stringBuffer!.append(storeFrontInterface!.getCategoryPath());
+    
 
     var resourcesPath: string = stringBuffer!.toString()!;
         
         
-
-stringBuffer!.delete(0, stringBuffer!.length())
-stringBuffer!.append("Backup Store Resrouces: ")
-stringBuffer!.append(nextStore)
-stringBuffer!.append(" from: ")
-stringBuffer!.append(resourcesPath)
-PreLogUtil.put(stringBuffer!.toString(), this, "backupResources()")
-fileBasicArrayList!.addAll(this.getFileBasicArrayList(resourcesPath))
+;
+    
+stringBuffer!.delete(0, stringBuffer!.length());
+    
+stringBuffer!.append("Backup Store Resrouces: ");
+    
+stringBuffer!.append(nextStore);
+    
+stringBuffer!.append(" from: ");
+    
+stringBuffer!.append(resourcesPath);
+    
+PreLogUtil.put(stringBuffer!.toString(), this, "backupResources()");
+    
+fileBasicArrayList!.addAll(this.getFileBasicArrayList(resourcesPath));
+    
 }
 
-this.backup(fileBasicArrayList, path.toFileSystemString() +"backupResources.zip")
-} catch(e: Exception)
+this.backup(fileBasicArrayList, path.toFileSystemString() +"backupResources.zip");
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, this, "backupResources()", e)
+logUtil!.put(this.commonStrings!.EXCEPTION, this, "backupResources()", e);
+    
 }
 
 }
@@ -327,44 +404,54 @@ logUtil!.put(this.commonStrings!.EXCEPTION, this, "backupResources()", e)
     public backupJsps(){
 
         try {
-            logUtil!.put(this.commonStrings!.START, this, "backupJsps()")
+            logUtil!.put(this.commonStrings!.START, this, "backupJsps()");
+    
 
     var stringBuffer: StringMaker = new StringMaker();
         
         
-
-stringBuffer!.append(URLGLOBALS.getWebappPath())
-stringBuffer!.append(PATH_GLOBALS.getInstance()!.BACKUP_PATH)
+;
+    
+stringBuffer!.append(URLGLOBALS.getWebappPath());
+    
+stringBuffer!.append(PATH_GLOBALS.getInstance()!.BACKUP_PATH);
+    
 
     var backupPath: string = stringBuffer!.toString()!;
         
         
-
+;
+    
 
     var path: AbPath = new AbPath(backupPath);
         
         
-
+;
+    
 
     var fileBasicArrayList: BasicArrayList = new BasicArrayList();
         
         
-
+;
+    
 
     var storeFrontsEntity: StoreFrontsEntity = StoreFrontsEntityFactory.getInstance()!.getStoreFrontsEntityInstance()!;
         
         
-
+;
+    
 
     var storeFrontNamesBasicArrayList: Vector = storeFrontsEntity!.getStoreFrontNames()!;
         
         
-
+;
+    
 
     var size: number = storeFrontNamesBasicArrayList!.length!;
         
         
-
+;
+    
 
 
 
@@ -376,21 +463,33 @@ stringBuffer!.append(PATH_GLOBALS.getInstance()!.BACKUP_PATH)
 index < size; index++)
         {
 
-    var nextStore: string = storeFrontNamesBasicArrayList!.get(index) as String;
-        
-        
+    var nextStore: string = storeFrontNamesBasicArrayList!.get(index);
 
-PreLogUtil.put("Backup Store Jsps: " +nextStore, this, "backupJsps()")
-stringBuffer!.delete(0, stringBuffer!.length())
-stringBuffer!.append(URLGLOBALS.getWebappPath())
-stringBuffer!.append(nextStore)
-fileBasicArrayList!.addAll(this.getFileBasicArrayList(stringBuffer!.toString()))
+                         as String;
+        
+        
+;
+    
+PreLogUtil.put("Backup Store Jsps: " +nextStore, this, "backupJsps()");
+    
+stringBuffer!.delete(0, stringBuffer!.length());
+    
+stringBuffer!.append(URLGLOBALS.getWebappPath());
+    
+stringBuffer!.append(nextStore);
+    
+fileBasicArrayList!.addAll(this.getFileBasicArrayList(stringBuffer!.toString()));
+    
 }
 
-this.backup(fileBasicArrayList, path.toFileSystemString() +"backupJsps.zip")
-} catch(e: Exception)
+this.backup(fileBasicArrayList, path.toFileSystemString() +"backupJsps.zip");
+    
+
+                //: 
+} catch(e) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, this, "backupJsps()", e)
+logUtil!.put(this.commonStrings!.EXCEPTION, this, "backupJsps()", e);
+    
 }
 
 }
@@ -405,18 +504,30 @@ var zipFile = zipFile
     var stringBuffer: StringMaker = new StringMaker();
         
         
+;
+    
+stringBuffer!.delete(0, stringBuffer!.length());
+    
+stringBuffer!.append("ZipFile: ");
+    
+stringBuffer!.append(zipFile);
+    
+stringBuffer!.append(" BasicArrayList: ");
+    
+stringBuffer!.appendint(fileBasicArrayList!.size());
+    
+PreLogUtil.put("Creating Backup Zip File: " +stringBuffer!.toString(), this, "backup()");
+    
+ZipFileUtil.getInstance()!.create(zipFile, fileBasicArrayList);
+    
+logUtil!.put("Created Backup Zip File", this, "backup()");
+    
 
-stringBuffer!.delete(0, stringBuffer!.length())
-stringBuffer!.append("ZipFile: ")
-stringBuffer!.append(zipFile)
-stringBuffer!.append(" BasicArrayList: ")
-stringBuffer!.appendint(fileBasicArrayList!.size())
-PreLogUtil.put("Creating Backup Zip File: " +stringBuffer!.toString(), this, "backup()")
-ZipFileUtil.getInstance()!.create(zipFile, fileBasicArrayList)
-logUtil!.put("Created Backup Zip File", this, "backup()")
-} catch(e: Exception)
+                //: 
+} catch(e) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, this, "backup()", e)
+logUtil!.put(this.commonStrings!.EXCEPTION, this, "backup()", e);
+    
 }
 
 }

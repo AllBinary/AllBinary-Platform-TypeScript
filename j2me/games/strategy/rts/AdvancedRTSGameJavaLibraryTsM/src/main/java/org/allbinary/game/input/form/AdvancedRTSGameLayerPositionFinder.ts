@@ -65,12 +65,14 @@ var geographicMapCellPosition = geographicMapCellPosition
     var layerInterface: AllBinaryLayer = DropCellPositionHistory.getInstance()!.getLayerInterface(geographicMapCellPosition)!;
         
         
-
+;
+    
 
                         if(layerInterface == AllBinaryLayer.NULL_ALLBINARY_LAYER)
                         
                                     {
-                                    layerInterface= WaypointCellPositionHistory.getInstance()!.getLayerInterface(geographicMapCellPosition)
+                                    layerInterface= WaypointCellPositionHistory.getInstance()!.getLayerInterface(geographicMapCellPosition);
+    
 
                                     }
                                 

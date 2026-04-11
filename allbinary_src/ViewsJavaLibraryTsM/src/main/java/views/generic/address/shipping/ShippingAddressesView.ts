@@ -18,7 +18,10 @@
 
 
 
-import { Vector } from "../../../../java/util/Vector.js";
+            import Vector from "@ohos.util.Vector";
+        
+
+//import { Vector } from "../../../../java/util/Vector.js";
 
     
 import { HttpServletRequest } from "../../../../javax/servlet/http/HttpServletRequest.js";
@@ -80,11 +83,17 @@ public constructor (transformInfoInterface: TransformInfoInterface)
                             //For kotlin this is before the body of the constructor.
                     
 
-    var httpTransformInfoInterface: TransformInfoHttpInterface = this.getTransformInfoInterface() as TransformInfoHttpInterface;
-        
-        
+    var httpTransformInfoInterface: TransformInfoHttpInterface = this.getTransformInfoInterface();
 
-this.request= httpTransformInfoInterface!.getPageContext()!.getRequest() as HttpServletRequest
+                         as TransformInfoHttpInterface;
+        
+        
+;
+    
+this.request= httpTransformInfoInterface!.getPageContext()!.getRequest();
+
+                         as HttpServletRequest;
+    
 }
 
 
@@ -108,12 +117,14 @@ var document = document
     var billingAddressesNode: Node = document.createElement(ShippingAddressData.MULTIPLE)!;
         
         
-
+;
+    
 
     var size: number = streetAddressList!.length!;
         
         
-
+;
+    
 
 
 
@@ -125,28 +136,36 @@ var document = document
 index < size; index++)
         {
 
-    var streetAddress: StreetAddress = streetAddressList!.get(index) as StreetAddress;
-        
-        
+    var streetAddress: StreetAddress = streetAddressList!.get(index);
 
-billingAddressesNode!.appendChild(streetAddress!.toXmlNode(document))
+                         as StreetAddress;
+        
+        
+;
+    
+billingAddressesNode!.appendChild(streetAddress!.toXmlNode(document));
+    
 }
 
 billingAddressesNode!.appendChild(ModDomHelper.createNameValueNodes(document, StreetAddressData.NUMBEROFADDRESSES, Integer(streetAddressList!.length).
-                            toString()))
+                            toString()));
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return billingAddressesNode;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.XSLLOGGINGERROR))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.FAILURE, this, "toXmlNode", e)
+                                    logUtil!.put(this.commonStrings!.FAILURE, this, "toXmlNode", e);
+    
 
                                     }
                                 
@@ -160,7 +179,8 @@ billingAddressesNode!.appendChild(ModDomHelper.createNameValueNodes(document, St
 
 
     public addDomNodeInterfaces(){
-this.addDomNodeInterface(this as DomNodeInterface)
+this.addDomNodeInterface(this as DomNodeInterface);
+    
 }
 
 
@@ -169,20 +189,26 @@ this.addDomNodeInterface(this as DomNodeInterface)
     public view(): string{
 
         try {
-            this.addDomNodeInterfaces()
+            this.addDomNodeInterfaces();
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.view();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e);
+    
 
                                     }
                                 

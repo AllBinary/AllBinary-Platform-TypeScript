@@ -51,10 +51,14 @@ public constructor (geographicMapInterface: BasicGeographicMap, edgeMinimum: num
     //var edgeMinimum = edgeMinimum
     //var minPathWeight = minPathWeight
     //var maxPathWeight = maxPathWeight
-this.geographicMapInterface= geographicMapInterface
-this.edgeMinimum= edgeMinimum
-this.minPathWeight= minPathWeight
-this.maxPathWeight= maxPathWeight
+this.geographicMapInterface= geographicMapInterface;
+    
+this.edgeMinimum= edgeMinimum;
+    
+this.minPathWeight= minPathWeight;
+    
+this.maxPathWeight= maxPathWeight;
+    
 }
 
 
@@ -75,7 +79,8 @@ this.maxPathWeight= maxPathWeight
     //var pathList = pathList
 
     var startPathFindingNode: PathFindingNode
-
+;
+    
 
 
 
@@ -86,9 +91,14 @@ this.maxPathWeight= maxPathWeight
         
 index >= 0; index--)
         {
-startPathFindingNode= startPathFindingNodeList!.get(index) as PathFindingNode
-pathList!.remove(startPathFindingNode!.geographicMapCellPosition)
-pathList!.add(0, startPathFindingNode!.geographicMapCellPosition)
+startPathFindingNode= startPathFindingNodeList!.get(index);
+
+                         as PathFindingNode;
+    
+pathList!.remove(startPathFindingNode!.geographicMapCellPosition);
+    
+pathList!.add(0, startPathFindingNode!.geographicMapCellPosition);
+    
 }
 
 }

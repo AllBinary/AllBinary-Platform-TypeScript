@@ -84,12 +84,14 @@ private constructor (){
     var nullUtil: NullUtil = NullUtil.getInstance()!;
         
         
-
+;
+    
 
     var size: number = InputFactory.getInstance()!.MAX;
         
         
-
+;
+    
 
 
 
@@ -110,7 +112,8 @@ private constructor (){
         
 --index2 >= 0; )
         {
-ARRAY[index]![index2]= GameKeyEvent(nullUtil!.NULL_OBJECT, index, index2)
+ARRAY[index]![index2]= GameKeyEvent(nullUtil!.NULL_OBJECT, index, index2);
+    
 }
 
 }
@@ -127,7 +130,8 @@ var key = key
     var gameKeyEvent: GameKeyEvent = ARRAY[anyType!.getSourceId()]![key]!;
         
         
-
+;
+    
 
 
 
@@ -146,7 +150,8 @@ var input = input
     var gameKeyEvent: GameKeyEvent = ARRAY[anyType!.getSourceId()]![input.getId()]!;
         
         
-
+;
+    
 
 
 

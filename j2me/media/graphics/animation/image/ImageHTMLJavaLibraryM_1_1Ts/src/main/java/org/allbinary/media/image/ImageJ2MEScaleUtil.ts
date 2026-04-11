@@ -81,7 +81,8 @@ var height = height
     var scaledImages: Image[] = new Array(images.length);
         
         
-
+;
+    
 
 
 
@@ -93,7 +94,8 @@ var height = height
         
 --index >= 0; )
         {
-scaledImages[index]= this.scale(images[index]!, width, height)
+scaledImages[index]= this.scale(images[index]!, width, height);
+    
 }
 
 
@@ -117,7 +119,8 @@ scaledImages[index]= this.scale(images[index]!, width, height)
             ;
         
         
-
+;
+    
 
                         if(image.isMutable())
                         
@@ -126,8 +129,12 @@ scaledImages[index]= this.scale(images[index]!, width, height)
     var originalHTMLImage: PlaynMutableImage = image as PlaynMutableImage;
         
         
+;
+    
+originalPlayNImage= originalHTMLImage!.getImage();
 
-originalPlayNImage= originalHTMLImage!.getImage() as playn.core.Image
+                         as playn.core.Image;
+    
 
                                     }
                                 
@@ -136,8 +143,12 @@ originalPlayNImage= originalHTMLImage!.getImage() as playn.core.Image
     var originalHTMLImage: PlaynImmutableImage = image as PlaynImmutableImage;
         
         
+;
+    
+originalPlayNImage= originalHTMLImage!.getImage();
 
-originalPlayNImage= originalHTMLImage!.getImage() as playn.core.Image
+                         as playn.core.Image;
+    
 
                         }
                             
@@ -145,23 +156,30 @@ originalPlayNImage= originalHTMLImage!.getImage() as playn.core.Image
     var scaledImage: Image = Image.createImage(width, height)!;
         
         
-
+;
+    
 
     var htmlImage: PlaynMutableImage = scaledImage as PlaynMutableImage;
         
         
+;
+    
 
+    var canvasImage: CanvasImage = htmlImage!.getImage();
 
-    var canvasImage: CanvasImage = htmlImage!.getImage() as CanvasImage;
+                         as CanvasImage;
         
         
-
+;
+    
 
     var canvasSurface: CanvasSurface = htmlImage!.getCanvasSurface(canvasImage)!;
         
         
-
-canvasSurface!.drawImage(originalPlayNImage, 0, 0, scaledImage!.getWidth(), scaledImage!.getHeight(), 0, 0, image.getWidth(), image.getHeight())
+;
+    
+canvasSurface!.drawImage(originalPlayNImage, 0, 0, scaledImage!.getWidth(), scaledImage!.getHeight(), 0, 0, image.getWidth(), image.getHeight());
+    
 
 
 

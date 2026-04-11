@@ -52,17 +52,19 @@ var after = after
 
     public setMaxLength(length: Integer){
 var length = length
-this.length= length.toString().toCharArray().concatToString()
-                                
-addAttribute(MAXLENGTH, this.length)
+this.length= length.toString();
+    
+addAttribute(MAXLENGTH, this.length);
+    
 }
 
 
     public setSize(size: Integer){
 var size = size
-this.size= size.toString().toCharArray().concatToString()
-                                
-addAttribute(MAXLENGTH, this.size)
+this.size= size.toString();
+    
+addAttribute(MAXLENGTH, this.size);
+    
 }
 
 

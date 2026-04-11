@@ -48,12 +48,16 @@ var direction = direction
     var featuredAnimationInterfaceFactoryInterfaceFactory: FeaturedAnimationInterfaceFactoryInterfaceFactory = FeaturedAnimationInterfaceFactoryInterfaceFactory.getInstance()!;
         
         
+;
+    
 
+    var healthBarAnimationInterfaceFactory: HealthBarAnimationInterfaceFactory = featuredAnimationInterfaceFactoryInterfaceFactory!.get(Health.NAME);
 
-    var healthBarAnimationInterfaceFactory: HealthBarAnimationInterfaceFactory = featuredAnimationInterfaceFactoryInterfaceFactory!.get(Health.NAME) as HealthBarAnimationInterfaceFactory;
+                         as HealthBarAnimationInterfaceFactory;
         
         
-
+;
+    
 
 
 

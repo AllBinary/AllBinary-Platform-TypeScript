@@ -62,7 +62,8 @@ var paymentGatewayInterface = paymentGatewayInterface
 
                             //For kotlin this is before the body of the constructor.
                     
-this.paymentGatewayInterface= paymentGatewayInterface
+this.paymentGatewayInterface= paymentGatewayInterface;
+    
 }
 
 
@@ -73,43 +74,56 @@ this.paymentGatewayInterface= paymentGatewayInterface
     var paymentType: BasicPaymentType = BasicPaymentTypeUtil.getInstance()!.get(this.paymentGatewayInterface!.getName())!;
         
         
-
+;
+    
 
     var paymentGatewayDomNodeFactoryInterface: PaymentGatewayDomNodeFactoryInterface = paymentType!.getPaymentGatewayDomNodeFactoryInterface()!;
         
         
+;
+    
 
+    var domNodeInterface: DomNodeInterface = paymentGatewayDomNodeFactoryInterface!.getInstance(this.paymentGatewayInterface);
 
-    var domNodeInterface: DomNodeInterface = paymentGatewayDomNodeFactoryInterface!.getInstance(this.paymentGatewayInterface) as DomNodeInterface;
+                         as DomNodeInterface;
         
         
-
-this.addDomNodeInterface(domNodeInterface)
+;
+    
+this.addDomNodeInterface(domNodeInterface);
+    
 }
 
 
     public view(): string{
 
         try {
-            this.addDomNodeInterfaces()
+            this.addDomNodeInterfaces();
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return super.view();
+
+                        ;
     
-} catch(e: Exception)
+
+                //: 
+} catch(e) 
             {
 
     var error: string = "Failed to view payment gateway";
         
         
-
+;
+    
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e)
+                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e);
+    
 
                                     }
                                 

@@ -61,23 +61,28 @@ var log = log
     var specialMessage: string = log.getSpecialMessage()!;
         
         
-
+;
+    
 
     var anyType: any = {} = log.getObject()!;
         
         
-
+;
+    
 
     var functionName: string = log.getFunctionName()!;
         
         
-
+;
+    
 
     var exception: any = {} = log.getThrowable()!;
         
         
-
-put(specialMessage, anyType, functionName, exception)
+;
+    
+put(specialMessage, anyType, functionName, exception);
+    
 }
 
 
@@ -85,7 +90,8 @@ put(specialMessage, anyType, functionName, exception)
 var specialMessage = specialMessage
 var anyType = anyType
 var functionName = functionName
-FileLog.put(specialMessage, anyType, functionName)
+FileLog.put(specialMessage, anyType, functionName);
+    
 }
 
 
@@ -94,7 +100,8 @@ var specialMessage = specialMessage
 var anyType = anyType
 var functionName = functionName
 var exception = exception
-FileLog.put(specialMessage, anyType, functionName, exception as Error)
+FileLog.put(specialMessage, anyType, functionName, exception as Error);
+    
 }
 
 

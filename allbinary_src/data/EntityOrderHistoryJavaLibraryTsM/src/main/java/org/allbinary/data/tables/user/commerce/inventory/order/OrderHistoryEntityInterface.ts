@@ -18,10 +18,13 @@
 
 
 
+            import Vector from "@ohos.util.Vector";
+        
 import { HashMap } from "../../../../../../../../java/util/HashMap.js";
 
     
-import { Vector } from "../../../../../../../../java/util/Vector.js";
+
+//import { Vector } from "../../../../../../../../java/util/Vector.js";
 
     
 import { StoreFrontInterface } from "../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js";
@@ -64,7 +67,7 @@ interface OrderHistoryEntityInterface extends BasicDataTableInterface {
 
                 //@Throws(Error::class)
             
-    public update(whereHashMap: HashMap<Any, Any>, orderHashMap: HashMap<Any, Any>)
+    public update(whereHashMap: HashMap<any, any>, orderHashMap: HashMap<any, any>)
 
 }
                 
