@@ -125,7 +125,7 @@ var cacheableInterfaces = cacheableInterfaces
 
 
 
-                            throw Error("No Imple")
+                            throw new Error("No Imple")
 }
 
 

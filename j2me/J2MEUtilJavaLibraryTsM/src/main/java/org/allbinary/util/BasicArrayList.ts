@@ -49,7 +49,7 @@ public constructor (size: number)
                                     
 
 
-                            throw IllegalArgumentException(StringMaker().
+                            throw new IllegalArgumentException(new StringMaker().
                             append("Init Size Exception: ")!.appendint(size)!.toString())
 
                                     }
@@ -102,7 +102,7 @@ stringBuffer!.appendint(currentIndex);
 
 
 
-                            throw IndexOutOfBoundsException(stringBuffer!.toString())
+                            throw new IndexOutOfBoundsException(stringBuffer!.toString())
 
                                     }
                                 
@@ -161,7 +161,7 @@ stringBuffer!.appendint(currentIndex);
 
 
 
-                            throw IndexOutOfBoundsException(stringBuffer!.toString())
+                            throw new IndexOutOfBoundsException(stringBuffer!.toString())
 
                                     }
                                 
@@ -650,7 +650,7 @@ stringBuffer!.appendint(currentIndex);
 
 
 
-                            throw IndexOutOfBoundsException(stringBuffer!.toString())
+                            throw new IndexOutOfBoundsException(stringBuffer!.toString())
 
                                     }
                                 
@@ -687,7 +687,7 @@ stringBuffer!.appendint(currentIndex);
 
 
 
-                            throw IndexOutOfBoundsException(stringBuffer!.toString())
+                            throw new IndexOutOfBoundsException(stringBuffer!.toString())
 
                                     }
                                 

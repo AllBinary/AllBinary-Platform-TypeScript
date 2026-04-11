@@ -192,7 +192,7 @@ logUtil!.put(stringBuffer!.toString(), this, "InputMapping::remove");
 
 
 
-                            throw Error(commonStrings!.NOT_IMPLEMENTED)
+                            throw new Error(commonStrings!.NOT_IMPLEMENTED)
 }
 
 

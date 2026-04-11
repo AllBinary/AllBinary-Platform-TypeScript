@@ -60,7 +60,7 @@ public constructor (poolName: string, numThreads: number)
 
     public runTask(task: Runnable){
 var task = task
-logUtil!.put(StringMaker().
+logUtil!.put(new StringMaker().
                             append(StringUtil.getInstance()!.toString(task))!.appendlong(System.currentTimeMillis())!.toString(), this, this.threadPoolStrings!.ADD_TASK);
     
 super.runTask(task);
@@ -70,7 +70,7 @@ super.runTask(task);
 
     startTask(task: Runnable){
 var task = task
-logUtil!.put(StringMaker().
+logUtil!.put(new StringMaker().
                             append(this.threadPoolStrings!.START_TASK)!.append(StringUtil.getInstance()!.toString(task))!.appendlong(System.currentTimeMillis())!.toString(), this, commonStrings!.RUN);
     
 }
@@ -78,7 +78,7 @@ logUtil!.put(StringMaker().
 
     completedTask(task: Runnable){
 var task = task
-logUtil!.put(StringMaker().
+logUtil!.put(new StringMaker().
                             append(this.threadPoolStrings!.COMPLETE_TASK)!.append(StringUtil.getInstance()!.toString(task))!.appendlong(System.currentTimeMillis())!.toString(), this, commonStrings!.RUN);
     
 }

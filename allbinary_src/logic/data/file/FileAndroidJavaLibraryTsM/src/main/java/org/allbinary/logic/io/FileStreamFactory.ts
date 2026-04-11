@@ -66,7 +66,7 @@ this.context= context;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return AbFileInputStream(this.getContext()!.openFileInput(fileName));
+                        return new AbFileInputStream(this.getContext()!.openFileInput(fileName));
     
 }
 
@@ -88,7 +88,7 @@ context.deleteFile(fileName);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return AbFileOutputStream(context.openFileOutput(fileName, 0));
+                        return new AbFileOutputStream(context.openFileOutput(fileName, 0));
     
 }
 

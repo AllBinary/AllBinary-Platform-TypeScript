@@ -81,7 +81,7 @@ var httpServletRequest = httpServletRequest
 
         try {
             
-    var fileUpload: AbFileUpload = new AbFileUpload(AbFileItemFactory());
+    var fileUpload: AbFileUpload = new AbFileUpload(new AbFileItemFactory());
         
         
 ;
@@ -160,7 +160,7 @@ var httpServletRequest = httpServletRequest
 
         try {
             
-    var abFileUpload: AbFileUpload = new AbFileUpload(AbFileItemFactory());
+    var abFileUpload: AbFileUpload = new AbFileUpload(new AbFileItemFactory());
         
         
 ;

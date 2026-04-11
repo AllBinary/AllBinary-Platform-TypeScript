@@ -68,7 +68,7 @@ this.pathFindingNodeCostInfoP= pathFindingNodeCostInfo;
                                     
 
 
-                            throw Error("No GeographicMapCellPosition")
+                            throw new Error("No GeographicMapCellPosition")
 
                                     }
                                 
@@ -81,7 +81,7 @@ this.pathFindingNodeCostInfoP= pathFindingNodeCostInfo;
                                     
 
 
-                            throw Error("No PathFindingNodeCostInfo")
+                            throw new Error("No PathFindingNodeCostInfo")
 
                                     }
                                 

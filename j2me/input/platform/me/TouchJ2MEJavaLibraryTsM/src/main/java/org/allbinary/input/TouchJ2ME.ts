@@ -62,7 +62,7 @@ public constructor (){
         
 ;
     
-motionGesturesHandler!.addListener(GameMotionGestureListener(MotionGestureReceiveInterfaceFactory.getInstance()));
+motionGesturesHandler!.addListener(new GameMotionGestureListener(MotionGestureReceiveInterfaceFactory.getInstance()));
     
 }
 

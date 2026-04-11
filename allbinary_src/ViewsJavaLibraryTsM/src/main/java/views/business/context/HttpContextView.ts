@@ -88,7 +88,7 @@ this.setTransformDocumentInterface(TransformHttpRequestDocumentFactory.getInstan
 ;
     
 
-    var result: string = ContextTransformer(this.abeClientInformation, this.getTransformInfoInterface()).
+    var result: string = new ContextTransformer(this.abeClientInformation, this.getTransformInfoInterface()).
                             translate(success)!;
         
         

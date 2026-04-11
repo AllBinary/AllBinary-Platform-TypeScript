@@ -88,7 +88,7 @@ export class InitInfoEntity extends InitSql {
         
 public constructor ()                        
 
-                            : super(UserDbInitInfo()){
+                            : super(new UserDbInitInfo()){
 
             super();
             

@@ -69,7 +69,7 @@ public constructor (){
             super();
             this.setSpeedBasicDecimal(BasicDecimal.ZERO_BIGDECIMAL);
     
-this.velocityProperties= BasicVelocityProperties();
+this.velocityProperties= new BasicVelocityProperties();
     
 }
 

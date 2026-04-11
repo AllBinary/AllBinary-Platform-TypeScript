@@ -103,27 +103,27 @@ this.timeIntervalActionJDialog= timeIntervalActionJDialog;
 
 
     initComponents(){
-timeIntervalActionJDialog= javax.swing.JDialog();
+timeIntervalActionJDialog= new javax.swing.JDialog();
     
-titleJLabel= javax.swing.JLabel();
+titleJLabel= new javax.swing.JLabel();
     
-okJButton= javax.swing.JButton();
+okJButton= new javax.swing.JButton();
     
-jLabel2= javax.swing.JLabel();
+jLabel2= new javax.swing.JLabel();
     
-timeIntervalJTextField= javax.swing.JTextField();
+timeIntervalJTextField= new javax.swing.JTextField();
     
-timeIntervalActionJButton= javax.swing.JButton();
+timeIntervalActionJButton= new javax.swing.JButton();
     
-jLabel1= javax.swing.JLabel();
+jLabel1= new javax.swing.JLabel();
     
-timeIntervalActionJDialog!.setMinimumSize(java.awt.Dimension(250, 150));
+timeIntervalActionJDialog!.setMinimumSize(new java.awt.Dimension(250, 150));
     
 titleJLabel!.setText("Time Interval Condition Options");
     
 okJButton!.setText("OK");
     
-okJButton!.addActionListener(object: java.awt.event.ActionListener()
+okJButton!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -149,11 +149,11 @@ timeIntervalActionJDialogLayout!.setHorizontalGroup(timeIntervalActionJDialogLay
     
 timeIntervalActionJDialogLayout!.setVerticalGroup(timeIntervalActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(timeIntervalActionJDialogLayout!.createSequentialGroup()!.addContainerGap()!.addComponent(titleJLabel)!.addGap(20, 20, 20)!.addGroup(timeIntervalActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)!.addComponent(jLabel2)!.addComponent(timeIntervalJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))!.addGap(15, 15, 15)!.addComponent(okJButton)!.addContainerGap()));
     
-setMinimumSize(java.awt.Dimension(100, 0));
+setMinimumSize(new java.awt.Dimension(100, 0));
     
 timeIntervalActionJButton!.setText("Edit");
     
-timeIntervalActionJButton!.addActionListener(object: java.awt.event.ActionListener()
+timeIntervalActionJButton!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){

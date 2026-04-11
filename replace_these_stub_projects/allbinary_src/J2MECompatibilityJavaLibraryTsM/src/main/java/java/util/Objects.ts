@@ -21,7 +21,7 @@ export class Objects
                                     
 
 
-                            throw NullPointerException()
+                            throw new NullPointerException()
 
                                     }
                                 
@@ -50,7 +50,7 @@ var message = message
                                     
 
 
-                            throw NullPointerException(message)
+                            throw new NullPointerException(message)
 
                                     }
                                 

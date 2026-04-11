@@ -158,7 +158,7 @@ var xmlString = xmlString
 ;
     
 
-    var document: Document = builder.parse(StringBufferInputStream(xmlString))!;
+    var document: Document = builder.parse(new StringBufferInputStream(xmlString))!;
         
         
 ;

@@ -84,7 +84,7 @@ this.storeName= value;
 
         try {
             
-    var anyType: any = StoreFrontHelperFactory().
+    var anyType: any = new StoreFrontHelperFactory().
                             getInstance(this.propertiesHashMap, this.pageContext)!;
         
         
@@ -157,7 +157,7 @@ this.storeName= value;
 
         try {
             
-    var anyType: any = StoreFrontHelperFactory().
+    var anyType: any = new StoreFrontHelperFactory().
                             getInstance(this.propertiesHashMap, this.pageContext)!;
         
         
@@ -235,7 +235,7 @@ this.storeName= value;
                                 )
                         
                                     {
-                                    this.propertiesHashMap= HashMap<any, any>();
+                                    this.propertiesHashMap= new HashMap<any, any>();
     
 this.propertiesHashMap!.put(StoreFrontData.getInstance()!.NAME, this.storeName);
     

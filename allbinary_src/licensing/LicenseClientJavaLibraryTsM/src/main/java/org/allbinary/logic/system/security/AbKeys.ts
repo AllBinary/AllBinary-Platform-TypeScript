@@ -108,7 +108,7 @@ logUtil!.put("Licensing Failure", this, "getKey()", e);
 
 
 
-                            throw LicensingException("Unknown License Failure")
+                            throw new LicensingException("Unknown License Failure")
 }
 
 }

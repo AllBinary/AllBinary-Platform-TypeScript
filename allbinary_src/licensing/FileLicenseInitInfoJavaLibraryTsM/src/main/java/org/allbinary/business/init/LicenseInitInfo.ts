@@ -90,7 +90,7 @@ this.id= value;
 
 
     public clearServers(){
-this.serverVector= BasicArrayList();
+this.serverVector= new BasicArrayList();
     
 }
 

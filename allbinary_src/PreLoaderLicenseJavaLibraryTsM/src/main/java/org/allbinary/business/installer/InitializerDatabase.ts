@@ -243,7 +243,7 @@ dbConnectionInfo!.setServer(getAdminServer());
     
 dbConnectionInfo!.setPort(getAdminPort());
     
-this.initDb= DynamicInitDb(abeClientInformation, dbConnectionInfo as DatabaseConnectionInfoInterface);
+this.initDb= new DynamicInitDb(abeClientInformation, dbConnectionInfo as DatabaseConnectionInfoInterface);
     
 
                 //: 

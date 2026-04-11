@@ -58,9 +58,9 @@ export class GraphicItemFactory
 private constructor (){
 
             super();
-            graphicItems= HashMap<any, any>();
+            graphicItems= new HashMap<any, any>();
     
-graphicItems!.put(LinesGraphicItem.getStaticName(), LinesGraphicItemFactory());
+graphicItems!.put(LinesGraphicItem.getStaticName(), new LinesGraphicItemFactory());
     
 }
 

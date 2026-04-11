@@ -55,7 +55,7 @@ var raceTrackData = raceTrackData
 
 
 
-                            throw Error("No Threed")
+                            throw new Error("No Threed")
 }
 
 

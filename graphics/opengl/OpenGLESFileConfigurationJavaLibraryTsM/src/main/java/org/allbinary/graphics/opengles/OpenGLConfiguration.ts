@@ -209,7 +209,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e);
                             
 
 
-                            throw Error("Invalid OpenGL Setting")
+                            throw new Error("Invalid OpenGL Setting")
 
                         }
                             
@@ -241,7 +241,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e);
                             
 
 
-                            throw Error("OpenGLConfiguration: Error reading version selector: " +version)
+                            throw new Error("OpenGLConfiguration: Error reading version selector: " +version)
 
                         }
                             
@@ -273,7 +273,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e);
                             
 
 
-                            throw Error("OpenGLConfiguration: Error reading image color")
+                            throw new Error("OpenGLConfiguration: Error reading image color")
 
                         }
                             
@@ -314,7 +314,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e);
                             
 
 
-                            throw Error("OpenGLConfiguration: Error reading image color: " +imageColor)
+                            throw new Error("OpenGLConfiguration: Error reading image color: " +imageColor)
 
                         }
                             
@@ -355,7 +355,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e);
                             
 
 
-                            throw Error("OpenGLConfiguration: Error reading color: " +color)
+                            throw new Error("OpenGLConfiguration: Error reading color: " +color)
 
                         }
                             

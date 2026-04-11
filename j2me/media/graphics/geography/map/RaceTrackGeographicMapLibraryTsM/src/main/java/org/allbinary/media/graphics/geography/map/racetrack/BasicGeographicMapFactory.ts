@@ -54,7 +54,7 @@ export class BasicGeographicMapFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return BasicGeographicMap(SmallIntegerSingletonFactory.getInstance()!.getInstance(raceTrackInfo!.getId()!.toInt() +100 +1), raceTrackInfo!.getName(), raceTrackData!.getCellTypeIdToGeographicMapCellTypeArray(), tiledLayerFactoryInterface!.getMiniInstance(raceTrackData), BasicColorFactory.getInstance()!.CLEAR_COLOR, BasicColorFactory.getInstance()!.CLEAR_COLOR, geographicMapCellPositionFactoryInterface, GeographicMapCellPositionBaseFactory(), geographicMapCellTypeFactory);
+                        return new BasicGeographicMap(SmallIntegerSingletonFactory.getInstance()!.getInstance(raceTrackInfo!.getId()!.toInt() +100 +1), raceTrackInfo!.getName(), raceTrackData!.getCellTypeIdToGeographicMapCellTypeArray(), tiledLayerFactoryInterface!.getMiniInstance(raceTrackData), BasicColorFactory.getInstance()!.CLEAR_COLOR, BasicColorFactory.getInstance()!.CLEAR_COLOR, geographicMapCellPositionFactoryInterface, new GeographicMapCellPositionBaseFactory(), geographicMapCellTypeFactory);
     
 }
 

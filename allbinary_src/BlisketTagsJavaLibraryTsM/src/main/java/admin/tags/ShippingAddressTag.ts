@@ -51,9 +51,9 @@ export class ShippingAddressTag extends TableTag {
 public constructor (){
 
             super();
-            this.setTagHelperFactory(ShippingAddressHelperFactory());
+            this.setTagHelperFactory(new ShippingAddressHelperFactory());
     
-this.setTagRequestHelperFactory(ShippingAddressHelperFactory());
+this.setTagRequestHelperFactory(new ShippingAddressHelperFactory());
     
 }
 
@@ -71,7 +71,7 @@ this.value= value;
 
         try {
             
-    var anyType: any = ShippingAddressHelperFactory().
+    var anyType: any = new ShippingAddressHelperFactory().
                             getInstance(this.getPropertiesHashMap(), this.pageContext)!;
         
         
@@ -150,7 +150,7 @@ this.value= value;
 
         try {
             
-    var anyType: any = ShippingAddressHelperFactory().
+    var anyType: any = new ShippingAddressHelperFactory().
                             getInstance(this.getPropertiesHashMap(), this.pageContext)!;
         
         

@@ -96,7 +96,7 @@ public constructor (hashtable: Hashtable<any, any>){
 
             super();
             var hashtable = hashtable
-this.hashtable= Hashtable<any, any>();
+this.hashtable= new Hashtable<any, any>();
     
 
     var abeClientInformationData: AbeClientInformationData = AbeClientInformationData.getInstance()!;
@@ -140,7 +140,7 @@ this.id= hashtable.get(abeClientInformationData!.LICENSEID);
         
 ;
     
-this.servers= BasicArrayList();
+this.servers= new BasicArrayList();
     
 
     var size: number = vector.length!;

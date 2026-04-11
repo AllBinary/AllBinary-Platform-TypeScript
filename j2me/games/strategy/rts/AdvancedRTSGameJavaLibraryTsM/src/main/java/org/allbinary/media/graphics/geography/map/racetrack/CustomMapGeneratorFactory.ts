@@ -30,7 +30,7 @@ export class CustomMapGeneratorFactory extends CustomMapGeneratorBaseFactory {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return CustomMapGenerator(raceTrackGeographicMap);
+                        return new CustomMapGenerator(raceTrackGeographicMap);
     
 }
 

@@ -67,7 +67,7 @@ public constructor (captionAnimation: Animation, captionDx: number, captionDy: n
     //var captionDy = captionDy
     //var dx = dx
     //var dy = dy
-this.captionAnimation= CaptionAnimation(captionAnimation, this.textAnimation, captionDx, captionDy, dx, dy);
+this.captionAnimation= new CaptionAnimation(captionAnimation, this.textAnimation, captionDx, captionDy, dx, dy);
     
 }
 

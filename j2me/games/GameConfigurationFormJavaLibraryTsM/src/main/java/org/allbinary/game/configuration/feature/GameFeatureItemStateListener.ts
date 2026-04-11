@@ -124,7 +124,7 @@ var item = item
         
 ;
     
-logUtil!.put(StringMaker().
+logUtil!.put(new StringMaker().
                             append(CommonLabels.getInstance()!.ITEM_LABEL)!.append(itemLabel)!.toString(), this, "itemStateChanged");
     
 

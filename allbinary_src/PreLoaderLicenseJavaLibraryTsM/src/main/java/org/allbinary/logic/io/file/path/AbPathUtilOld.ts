@@ -118,7 +118,7 @@ var filePath = filePath
                                     
 
 
-                            throw Error("Could not be a file path since its less that 4 characters")
+                            throw new Error("Could not be a file path since its less that 4 characters")
 
                                     }
                                 
@@ -193,7 +193,7 @@ var filePath = filePath
                                     
 
 
-                            throw Error("Could not be a file path since its less that 4 characters")
+                            throw new Error("Could not be a file path since its less that 4 characters")
 
                                     }
                                 
@@ -498,7 +498,7 @@ var categoryPath = categoryPath
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return AbPath();
+                        return new AbPath();
     
 
                                     }
@@ -529,7 +529,7 @@ var categoryPath = categoryPath
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return AbPath(categoryName);
+                        return new AbPath(categoryName);
     
 
                         }

@@ -74,7 +74,7 @@ this.imageFileAbPath= imageAbPath;
                                     
 
 
-                            throw Error("Image File Name Was Null")
+                            throw new Error("Image File Name Was Null")
 
                                     }
                                 
@@ -87,7 +87,7 @@ this.imageFileAbPath= imageAbPath;
                                     
 
 
-                            throw Error("Unable to save file to non creatable directory")
+                            throw new Error("Unable to save file to non creatable directory")
 
                                     }
                                 
@@ -99,7 +99,7 @@ this.imageFileAbPath= imageAbPath;
     
 originalImageFile!.createNewFile();
     
-FileUtil.getInstance()!.write(ByteArrayInputStream(fileItem!.get()), originalImageFile);
+FileUtil.getInstance()!.write(new ByteArrayInputStream(fileItem!.get()), originalImageFile);
     
 }
 

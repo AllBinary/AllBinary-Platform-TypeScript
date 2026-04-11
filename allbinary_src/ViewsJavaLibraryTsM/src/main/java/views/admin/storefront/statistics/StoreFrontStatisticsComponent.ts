@@ -67,7 +67,7 @@ this.newStoreFrontInterface= StoreFrontFactory.getInstance(transformInfoInterfac
 
                          as StoreFrontInterface;
     
-this.domNodeInterface= RealTimeStoreFrontStatisticsView(RealTimeStoreFrontStatistics(this.newStoreFrontInterface), this.getWeblisketSession()!.getRole());
+this.domNodeInterface= new RealTimeStoreFrontStatisticsView(new RealTimeStoreFrontStatistics(this.newStoreFrontInterface), this.getWeblisketSession()!.getRole());
     
 }
 

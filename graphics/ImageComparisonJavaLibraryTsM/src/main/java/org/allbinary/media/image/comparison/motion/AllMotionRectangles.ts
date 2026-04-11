@@ -236,7 +236,7 @@ var pixelDelta = pixelDelta
                                     
 
 
-                            throw Error("PixelAboveTheRectangle")
+                            throw new Error("PixelAboveTheRectangle")
 
                                     }
                                 

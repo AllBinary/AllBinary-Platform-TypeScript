@@ -35,7 +35,7 @@ public constructor (type: number){
 
             super();
                 //var type = type
-GeographicMapCellType(type);
+new GeographicMapCellType(type);
     
 this.types= new Array(1);
     
@@ -64,7 +64,7 @@ public constructor (types: number[]){
         
 index < size; index++)
         {
-GeographicMapCellType(types[index]!);
+new GeographicMapCellType(types[index]!);
     
 }
 
@@ -112,7 +112,7 @@ typeAsInteger= (types.get(index);
     
 type= typeAsInteger!.toInt();
     
-GeographicMapCellType(type);
+new GeographicMapCellType(type);
     
 typeArray[index]= type;
     

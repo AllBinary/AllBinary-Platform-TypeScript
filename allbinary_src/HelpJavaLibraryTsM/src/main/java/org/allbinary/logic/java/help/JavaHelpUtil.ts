@@ -104,7 +104,7 @@ javaHelpUtil!.show(javaHelpUtil!.getHelpSet("G:/mnt/bc/mydev/working/automation/
         
         
 
-    private contextSensitiveHelpActionEvent: ActionEvent = new ActionEvent(JLabel(), ActionEvent.ACTION_FIRST, 
+    private contextSensitiveHelpActionEvent: ActionEvent = new ActionEvent(new JLabel(), ActionEvent.ACTION_FIRST, 
                             null);
         
         
@@ -123,7 +123,7 @@ var filePath = filePath
 
         try {
             
-    var helpSetURI: URI = File(filePath).
+    var helpSetURI: URI = new File(filePath).
                             toURI()!;
         
         
@@ -168,7 +168,7 @@ var url = url
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return HelpSet(
+                        return new HelpSet(
                             null, url);
     
 
@@ -202,7 +202,7 @@ helpBroker!.setLocation(point);
     
 helpBroker!.setSize(dimension);
     
-CSH.DisplayHelpFromSource(helpBroker).
+new CSH.DisplayHelpFromSource(helpBroker).
                             actionPerformed(contextSensitiveHelpActionEvent);
     
 logUtil!.put("CSH Action", getInstance(), "show");

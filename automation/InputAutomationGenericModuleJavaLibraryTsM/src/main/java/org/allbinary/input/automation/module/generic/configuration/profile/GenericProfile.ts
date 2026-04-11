@@ -66,7 +66,7 @@ public constructor (node: Node){
             var node = node
 this.setName(DomNodeHelper.getTextNodeValue(node));
     
-this.vector= Vector();
+this.vector= new Vector();
     
 
     var nodeList: NodeList = node.getChildNodes()!;
@@ -119,7 +119,7 @@ public constructor (name: string){
             var name = name
 this.setName(name);
     
-this.vector= Vector();
+this.vector= new Vector();
     
 }
 

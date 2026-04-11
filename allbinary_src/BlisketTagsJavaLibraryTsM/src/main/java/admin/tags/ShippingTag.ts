@@ -84,7 +84,7 @@ this.storeName= value;
 
         try {
             
-    var anyType: any = ShippingHelperFactory().
+    var anyType: any = new ShippingHelperFactory().
                             getInstance(propertiesHashMap, this.pageContext)!;
         
         
@@ -168,7 +168,7 @@ this.storeName= value;
                                 )
                         
                                     {
-                                    this.propertiesHashMap= HashMap<any, any>();
+                                    this.propertiesHashMap= new HashMap<any, any>();
     
 propertiesHashMap!.put(StoreFrontData.getInstance()!.NAME, this.storeName);
     

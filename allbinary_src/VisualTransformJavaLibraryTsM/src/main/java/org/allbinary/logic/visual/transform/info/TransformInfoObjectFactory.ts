@@ -145,7 +145,7 @@ stringBuffer!.append(transformInfoInterface!.getObjectFile());
 
 
 
-                            throw Error(stringBuffer!.toString())
+                            throw new Error(stringBuffer!.toString())
 
                                     }
                                 
@@ -153,7 +153,7 @@ stringBuffer!.append(transformInfoInterface!.getObjectFile());
                             
 
 
-                            throw Error("No Such View Object since transformInfo is null")
+                            throw new Error("No Such View Object since transformInfo is null")
 
                         }
                             

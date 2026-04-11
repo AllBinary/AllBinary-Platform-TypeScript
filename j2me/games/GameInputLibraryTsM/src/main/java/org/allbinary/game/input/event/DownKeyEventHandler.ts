@@ -34,7 +34,7 @@ export class DownKeyEventHandler extends DownKeyEventHandlerBase {
 
     private static readonly instanceArray: DownKeyEventHandlerBase[] = 
                                                         [
-                                                            DownKeyEventHandlerBase(),DownKeyEventHandlerBase(),DownKeyEventHandlerBase(),DownKeyEventHandlerBase(),DownKeyEventHandlerBase(),DownKeyEventHandlerBase()
+                                                            new DownKeyEventHandlerBase(),new DownKeyEventHandlerBase(),new DownKeyEventHandlerBase(),new DownKeyEventHandlerBase(),new DownKeyEventHandlerBase(),new DownKeyEventHandlerBase()
                                                         ];
         
         

@@ -38,7 +38,7 @@ export class TestRemoteLogUtil
             
     public static main(args: string[]){
 var args = args
-TestRemoteLogUtil();
+new TestRemoteLogUtil();
     
 }
 
@@ -59,7 +59,7 @@ public constructor (){
         
 ;
     
-logUtil!.put(commonStrings!.EXCEPTION, "Test", "TestClass", Error("Pretend Exception"));
+logUtil!.put(commonStrings!.EXCEPTION, "Test", "TestClass", new Error("Pretend Exception"));
     
 }
 

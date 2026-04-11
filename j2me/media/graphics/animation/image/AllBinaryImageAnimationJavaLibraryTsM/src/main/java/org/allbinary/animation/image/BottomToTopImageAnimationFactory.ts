@@ -70,7 +70,7 @@ public constructor (image: Image, animationBehaviorFactory: AnimationBehaviorFac
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return BottomToTopImageAnimation(scaledImage, this.animationBehaviorFactory!.getOrCreateInstance());
+                        return new BottomToTopImageAnimation(scaledImage, this.animationBehaviorFactory!.getOrCreateInstance());
     
 }
 

@@ -115,7 +115,7 @@ index < nodeList!.getLength(); index++)
         
 ;
     
-this.setTimeDelayHelper(TimeDelayHelper(Integer(Integer.valueOf(interval))));
+this.setTimeDelayHelper(new TimeDelayHelper(Integer(Integer.valueOf(interval))));
     
 
                                     }
@@ -124,7 +124,7 @@ this.setTimeDelayHelper(TimeDelayHelper(Integer(Integer.valueOf(interval))));
                             
 
 
-                            throw Error("Time Interval Action Script Condition Unknown Node")
+                            throw new Error("Time Interval Action Script Condition Unknown Node")
 
                         }
                             
@@ -137,7 +137,7 @@ this.setTimeDelayHelper(TimeDelayHelper(Integer(Integer.valueOf(interval))));
                             
 
 
-                            throw Error("Time Interval Action Script Condition Node Null")
+                            throw new Error("Time Interval Action Script Condition Node Null")
 
                         }
                             
@@ -154,7 +154,7 @@ public constructor ()
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setTimeDelayHelper(TimeDelayHelper(0));
+this.setTimeDelayHelper(new TimeDelayHelper(0));
     
 this.init();
     
@@ -162,7 +162,7 @@ this.init();
 
 
     init(){
-this.timeIntervalActionScriptConditionJPanel= TimeIntervalActionScriptConditionJPanel(this);
+this.timeIntervalActionScriptConditionJPanel= new TimeIntervalActionScriptConditionJPanel(this);
     
 }
 

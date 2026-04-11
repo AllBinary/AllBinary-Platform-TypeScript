@@ -40,7 +40,7 @@ export class HighScoresCanvasInputProcessor extends PlayerGameInput {
     private readonly highScoresCanvas: HighScoresCanvas
 public constructor (highScoresCanvas: HighScoresCanvas)                        
 
-                            : super(BasicArrayList(),  -1){
+                            : super(new BasicArrayList(),  -1){
 
             super();
             var highScoresCanvas = highScoresCanvas

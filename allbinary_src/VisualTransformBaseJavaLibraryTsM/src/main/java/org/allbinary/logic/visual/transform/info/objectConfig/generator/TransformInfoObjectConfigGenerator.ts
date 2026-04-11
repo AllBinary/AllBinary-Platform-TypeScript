@@ -39,7 +39,7 @@ var input = input
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 

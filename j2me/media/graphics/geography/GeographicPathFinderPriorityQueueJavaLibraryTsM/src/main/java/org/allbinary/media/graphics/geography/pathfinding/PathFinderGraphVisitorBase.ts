@@ -36,7 +36,7 @@ export class PathFinderGraphVisitorBase
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -49,7 +49,7 @@ export class PathFinderGraphVisitorBase
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -58,7 +58,7 @@ export class PathFinderGraphVisitorBase
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -67,7 +67,7 @@ export class PathFinderGraphVisitorBase
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 

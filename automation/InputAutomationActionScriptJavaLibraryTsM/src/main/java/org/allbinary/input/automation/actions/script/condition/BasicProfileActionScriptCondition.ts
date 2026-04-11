@@ -231,9 +231,9 @@ this.init();
 
 
     init(){
-this.setProfileActionProcessorInterfaceVector(Vector());
+this.setProfileActionProcessorInterfaceVector(new Vector());
     
-this.setProfileActionConditionInterfaceVector(Vector());
+this.setProfileActionConditionInterfaceVector(new Vector());
     
 this.getJPopupMenu()!.add(this.getConditionJPopupMenu());
     
@@ -548,7 +548,7 @@ JTreeInterfaceFactory.getInstance()!.getJTreeInterface()!.updateJTree();
                         if(actionEvent!.getActionCommand()!.compareTo(NEW_COLOR_AT) == 0)
                         
                                     {
-                                    this.addCondition(ColorAtActionScriptCondition());
+                                    this.addCondition(new ColorAtActionScriptCondition());
     
 this.updateTree();
     
@@ -559,7 +559,7 @@ this.updateTree();
                         if(actionEvent!.getActionCommand()!.compareTo(NEW_ALWAYS) == 0)
                         
                                     {
-                                    this.addCondition(AlwaysActionScriptCondition());
+                                    this.addCondition(new AlwaysActionScriptCondition());
     
 this.updateTree();
     
@@ -570,7 +570,7 @@ this.updateTree();
                         if(actionEvent!.getActionCommand()!.compareTo(NEW_TIME_INTERVAL) == 0)
                         
                                     {
-                                    this.addCondition(TimeIntervalActionScriptCondition());
+                                    this.addCondition(new TimeIntervalActionScriptCondition());
     
 this.updateTree();
     
@@ -581,7 +581,7 @@ this.updateTree();
                         if(actionEvent!.getActionCommand()!.compareTo(NEW_KEY_INPUT) == 0)
                         
                                     {
-                                    this.addProcessor(KeyboardActionScriptInput());
+                                    this.addProcessor(new KeyboardActionScriptInput());
     
 this.updateTree();
     
@@ -592,7 +592,7 @@ this.updateTree();
                         if(actionEvent!.getActionCommand()!.compareTo(NEW_MOUSE_INPUT) == 0)
                         
                                     {
-                                    this.addProcessor(MouseActionScriptInput());
+                                    this.addProcessor(new MouseActionScriptInput());
     
 this.updateTree();
     
@@ -603,7 +603,7 @@ this.updateTree();
                         if(actionEvent!.getActionCommand()!.compareTo(NEW_IMAGE_OUTPUT) == 0)
                         
                                     {
-                                    this.addProcessor(ImageActionScriptOutput());
+                                    this.addProcessor(new ImageActionScriptOutput());
     
 this.updateTree();
     
@@ -716,7 +716,7 @@ index < size; index++)
             
     public process(frame: Long){
 var frame = frame
-logUtil!.put(StringMaker().
+logUtil!.put(new StringMaker().
                             append("Start - Processing ")!.appendint(this.getProfileActionProcessorInterfaceVector()!.size())!.append(" inputs")!.toString(), this, commonStrings!.PROCESS);
     
 

@@ -66,7 +66,7 @@ public constructor (transformInfoInterface: TransformInfoInterface)
     public isValid(): Boolean{
 
         try {
-            this.heading= HeadingValidation(CustomizerUtil.getInstance()!.getViewDataForComponentsInObjectConfig(this.getTransformInfoInterface()));
+            this.heading= new HeadingValidation(CustomizerUtil.getInstance()!.getViewDataForComponentsInObjectConfig(this.getTransformInfoInterface()));
     
 
     var isValid: Boolean = this.heading.isValid()!;

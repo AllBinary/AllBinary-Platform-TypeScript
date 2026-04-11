@@ -43,7 +43,7 @@ export class LogTableEntity extends AbSqlBean
         
 public constructor ()                        
 
-                            : super(LogDbInitInfo()){
+                            : super(new LogDbInitInfo()){
 
             super();
             

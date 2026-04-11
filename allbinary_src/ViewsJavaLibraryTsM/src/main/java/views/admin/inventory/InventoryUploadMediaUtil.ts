@@ -150,7 +150,7 @@ var mediaData = mediaData
                                     
 
 
-                            throw Error("Image File Name Was Null")
+                            throw new Error("Image File Name Was Null")
 
                                     }
                                 
@@ -193,7 +193,7 @@ stringBuffer!.append(itemInterface!.getCategory());
                                     
 
 
-                            throw Error("Unable to save file to non existant directory")
+                            throw new Error("Unable to save file to non existant directory")
 
                                     }
                                 
@@ -224,7 +224,7 @@ stringBuffer!.append(mediaData!.getName());
                                 
 originalImageFile!.createNewFile();
     
-fileUtil!.write(ByteArrayInputStream(byteArray), originalImageFile);
+fileUtil!.write(new ByteArrayInputStream(byteArray), originalImageFile);
     
 
     var uploadMedia: UploadMediaSingleton = UploadMediaSingleton.getInstance()!;
@@ -381,7 +381,7 @@ mediaUtil!.saveImageFile(originalImageFile, itemInterface!.getLargeImage(), full
     
 smallImageFile!.createNewFile();
     
-fileUtil!.write(ByteArrayInputStream(byteArray), smallImageFile);
+fileUtil!.write(new ByteArrayInputStream(byteArray), smallImageFile);
     
 
     var mediumImageFile: AbFile = new AbFile(itemInterface!.getMediumImage());
@@ -391,7 +391,7 @@ fileUtil!.write(ByteArrayInputStream(byteArray), smallImageFile);
     
 smallImageFile!.createNewFile();
     
-fileUtil!.write(ByteArrayInputStream(byteArray), mediumImageFile);
+fileUtil!.write(new ByteArrayInputStream(byteArray), mediumImageFile);
     
 
     var largeImageFile: AbFile = new AbFile(itemInterface!.getSmallImage());
@@ -401,7 +401,7 @@ fileUtil!.write(ByteArrayInputStream(byteArray), mediumImageFile);
     
 largeImageFile!.createNewFile();
     
-fileUtil!.write(ByteArrayInputStream(byteArray), largeImageFile);
+fileUtil!.write(new ByteArrayInputStream(byteArray), largeImageFile);
     
 
                         }

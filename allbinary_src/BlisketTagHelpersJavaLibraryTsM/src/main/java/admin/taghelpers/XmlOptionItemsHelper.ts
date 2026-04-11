@@ -50,7 +50,7 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
             super();
             var hashMap = hashMap
 var pageContext = pageContext
-this.portion= Portion(hashMap);
+this.portion= new Portion(hashMap);
     
 }
 

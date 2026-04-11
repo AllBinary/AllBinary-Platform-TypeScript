@@ -42,7 +42,7 @@ export class OpenGLGLUUtils
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -58,7 +58,7 @@ export class OpenGLGLUUtils
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -74,7 +74,7 @@ export class OpenGLGLUUtils
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 

@@ -121,7 +121,7 @@ this.init(ImageCacheFactory.getInstance(), level);
 ;
     
 
-    var loadingString: string = StringMaker().
+    var loadingString: string = new StringMaker().
                             append(this.toString())!.append(" Loading: ")!.toString()!;
         
         
@@ -276,7 +276,7 @@ progressCanvas!.addPortion(portion, loadingString, index++);
     
 imageCompleteUtil!.waitFor(touchButtonBlankResourceImage, touchButtonBlankResource!.RESOURCE);
     
-this.add(touchButtonBlankResource!.RESOURCE, OneRowSpriteIndexedAnimationFactory(touchButtonBlankResourceImage));
+this.add(touchButtonBlankResource!.RESOURCE, new OneRowSpriteIndexedAnimationFactory(touchButtonBlankResourceImage));
     
 this.add(touchButtonBlankResource!.HINT, nullAnimationFactory);
     
@@ -284,7 +284,7 @@ progressCanvas!.addPortion(portion, loadingString, index++);
     
 imageCompleteUtil!.waitFor(touchButtonGenericActionResourceImage, touchButtonGenericActionResource!.RESOURCE);
     
-this.add(touchButtonGenericActionResource!.RESOURCE, OneRowSpriteIndexedAnimationFactory(touchButtonGenericActionResourceImage));
+this.add(touchButtonGenericActionResource!.RESOURCE, new OneRowSpriteIndexedAnimationFactory(touchButtonGenericActionResourceImage));
     
 this.add(touchButtonGenericActionResource!.HINT, nullAnimationFactory);
     
@@ -292,13 +292,13 @@ progressCanvas!.addPortion(portion, loadingString, index++);
     
 imageCompleteUtil!.waitFor(touchButtonStartResourceImage, touchButtonStartResource!.RESOURCE);
     
-this.add(touchButtonStartResource!.RESOURCE, OneRowSpriteIndexedAnimationFactory(touchButtonStartResourceImage));
+this.add(touchButtonStartResource!.RESOURCE, new OneRowSpriteIndexedAnimationFactory(touchButtonStartResourceImage));
     
 progressCanvas!.addPortion(portion, loadingString, index++);
     
 imageCompleteUtil!.waitFor(touchButtonUpResourceImage, touchButtonUpResource!.RESOURCE);
     
-this.add(touchButtonUpResource!.RESOURCE, OneRowSpriteIndexedAnimationFactory(touchButtonUpResourceImage));
+this.add(touchButtonUpResource!.RESOURCE, new OneRowSpriteIndexedAnimationFactory(touchButtonUpResourceImage));
     
 this.add(touchButtonUpResource!.HINT, nullAnimationFactory);
     
@@ -306,7 +306,7 @@ progressCanvas!.addPortion(portion, loadingString, index++);
     
 imageCompleteUtil!.waitFor(touchButtonDownResourceImage, touchButtonDownResource!.RESOURCE);
     
-this.add(touchButtonDownResource!.RESOURCE, OneRowSpriteIndexedAnimationFactory(touchButtonDownResourceImage));
+this.add(touchButtonDownResource!.RESOURCE, new OneRowSpriteIndexedAnimationFactory(touchButtonDownResourceImage));
     
 this.add(touchButtonDownResource!.HINT, nullAnimationFactory);
     
@@ -314,7 +314,7 @@ progressCanvas!.addPortion(portion, loadingString, index++);
     
 imageCompleteUtil!.waitFor(touchButtonTurnLeftResourceImage, touchButtonTurnLeftResource!.RESOURCE);
     
-this.add(touchButtonTurnLeftResource!.RESOURCE, OneRowSpriteIndexedAnimationFactory(touchButtonTurnLeftResourceImage));
+this.add(touchButtonTurnLeftResource!.RESOURCE, new OneRowSpriteIndexedAnimationFactory(touchButtonTurnLeftResourceImage));
     
 this.add(touchButtonTurnLeftResource!.HINT, nullAnimationFactory);
     
@@ -322,7 +322,7 @@ progressCanvas!.addPortion(portion, loadingString, index++);
     
 imageCompleteUtil!.waitFor(touchButtonTurnRightResourceImage, touchButtonTurnRightResource!.RESOURCE);
     
-this.add(touchButtonTurnRightResource!.RESOURCE, OneRowSpriteIndexedAnimationFactory(touchButtonTurnRightResourceImage));
+this.add(touchButtonTurnRightResource!.RESOURCE, new OneRowSpriteIndexedAnimationFactory(touchButtonTurnRightResourceImage));
     
 this.add(touchButtonTurnRightResource!.HINT, nullAnimationFactory);
     
@@ -330,7 +330,7 @@ progressCanvas!.addPortion(portion, loadingString, index++);
     
 imageCompleteUtil!.waitFor(touchButtonStrafeLeftResourceImage, touchButtonStrafeLeftResource!.RESOURCE);
     
-this.add(touchButtonStrafeLeftResource!.RESOURCE, OneRowSpriteIndexedAnimationFactory(touchButtonStrafeLeftResourceImage));
+this.add(touchButtonStrafeLeftResource!.RESOURCE, new OneRowSpriteIndexedAnimationFactory(touchButtonStrafeLeftResourceImage));
     
 this.add(touchButtonStrafeLeftResource!.HINT, nullAnimationFactory);
     
@@ -338,7 +338,7 @@ progressCanvas!.addPortion(portion, loadingString, index++);
     
 imageCompleteUtil!.waitFor(touchButtonStrafeRightResourceImage, touchButtonStrafeRightResource!.RESOURCE);
     
-this.add(touchButtonStrafeRightResource!.RESOURCE, OneRowSpriteIndexedAnimationFactory(touchButtonStrafeRightResourceImage));
+this.add(touchButtonStrafeRightResource!.RESOURCE, new OneRowSpriteIndexedAnimationFactory(touchButtonStrafeRightResourceImage));
     
 this.add(touchButtonStrafeRightResource!.HINT, nullAnimationFactory);
     
@@ -352,7 +352,7 @@ this.add(touchButtonStrafeRightResource!.HINT, nullAnimationFactory);
         
 ;
     
-this.add(touchButtonStartResource!.HINT, OneRowSpriteIndexedAnimationFactory(touchButtonStartHintResource));
+this.add(touchButtonStartResource!.HINT, new OneRowSpriteIndexedAnimationFactory(touchButtonStartHintResource));
     
 
                                     }

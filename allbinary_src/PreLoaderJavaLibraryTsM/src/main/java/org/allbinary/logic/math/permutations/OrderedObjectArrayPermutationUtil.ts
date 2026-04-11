@@ -68,7 +68,7 @@ var args = args
         
 i < TOTAL; i++)
         {
-data[i]= ComparableObject();
+data[i]= new ComparableObject();
     
 }
 

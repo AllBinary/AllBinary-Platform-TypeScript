@@ -137,7 +137,7 @@ logUtil!.put("Label: " +label, this, this.commonStrings!.CONSTRUCTOR);
 
 
     init(){
-setJPopupMenu(JPopupMenu());
+setJPopupMenu(new JPopupMenu());
     
 
     var jMenuItemEdit: JMenuItem = new JMenuItem(EDIT);
@@ -169,7 +169,7 @@ var frame = frame
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -187,7 +187,7 @@ var frame = frame
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 

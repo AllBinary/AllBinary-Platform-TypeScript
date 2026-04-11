@@ -30,7 +30,7 @@ public constructor (){
 
 
     initComponents(){
-jLabel1= javax.swing.JLabel();
+jLabel1= new javax.swing.JLabel();
     
 jLabel1!.setText("No Configuration Available");
     

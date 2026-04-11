@@ -59,9 +59,9 @@ export class PaymentTag extends TableTag {
 public constructor (){
 
             super();
-            this.setTagHelperFactory(PaymentHelperFactory());
+            this.setTagHelperFactory(new PaymentHelperFactory());
     
-this.setTagRequestHelperFactory(PaymentHelperFactory());
+this.setTagRequestHelperFactory(new PaymentHelperFactory());
     
 }
 
@@ -79,7 +79,7 @@ this.storeName= value;
 
         try {
             
-    var anyType: any = PaymentHelperFactory().
+    var anyType: any = new PaymentHelperFactory().
                             getInstance(this.getPropertiesHashMap(), pageContext)!;
         
         
@@ -161,7 +161,7 @@ this.storeName= value;
                         if(this.isEnabled())
                         
                                     {
-                                    this.propertiesHashMap= HashMap<any, any>();
+                                    this.propertiesHashMap= new HashMap<any, any>();
     
 this.propertiesHashMap!.put(StoreFrontData.getInstance()!.NAME, this.storeName);
     

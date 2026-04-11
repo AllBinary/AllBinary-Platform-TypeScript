@@ -27,9 +27,9 @@ export class PaymentTransactionResultTag extends TableTag {
 public constructor (){
 
             super();
-            this.setTagHelperFactory(PaymentTransactionResultHelperFactory());
+            this.setTagHelperFactory(new PaymentTransactionResultHelperFactory());
     
-this.setTagRequestHelperFactory(PaymentTransactionResultHelperFactory());
+this.setTagRequestHelperFactory(new PaymentTransactionResultHelperFactory());
     
 }
 

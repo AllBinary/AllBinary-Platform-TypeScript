@@ -53,7 +53,7 @@ var objectConfigFileAbPath = objectConfigFileAbPath
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -65,7 +65,7 @@ var transformInfoInterface = transformInfoInterface
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -78,7 +78,7 @@ var document = document
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 

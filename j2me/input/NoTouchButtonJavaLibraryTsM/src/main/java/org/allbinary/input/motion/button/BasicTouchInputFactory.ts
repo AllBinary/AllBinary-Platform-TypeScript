@@ -161,7 +161,7 @@ this.updateAll(this.getList(), inputToGameKeyMapping);
     public updateAll(list: BasicArrayList, inputToGameKeyMapping: InputToGameKeyMapping){
 var list = list
 var inputToGameKeyMapping = inputToGameKeyMapping
-logUtil!.put(StringMaker().
+logUtil!.put(new StringMaker().
                             append(CommonLabels.getInstance()!.START)!.appendint(list.size())!.toString(), this, "updateAll");
     
 

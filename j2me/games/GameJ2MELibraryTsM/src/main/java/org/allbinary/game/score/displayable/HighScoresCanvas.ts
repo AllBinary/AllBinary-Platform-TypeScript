@@ -145,7 +145,7 @@ export class HighScoresCanvas extends GameCommandCanvas
         
 public constructor (commandListener: CommandListener, allBinaryGameLayerManager: AllBinaryGameLayerManager, paintable: HighScoresPaintable, highScoresFactoryInterface: HighScoresFactoryInterface)                        
 
-                            : this(commandListener, allBinaryGameLayerManager, allBinaryGameLayerManager!.getGameInfo(), paintable, highScoresFactoryInterface, HighScoresCanvasNoInputProcessorFactory()){
+                            : this(commandListener, allBinaryGameLayerManager, allBinaryGameLayerManager!.getGameInfo(), paintable, highScoresFactoryInterface, new HighScoresCanvasNoInputProcessorFactory()){
 
             super();
                 //var commandListener = commandListener
@@ -208,7 +208,7 @@ this.setPaintable(this.getHighScoresPaintable());
 
                         }
                             
-SecondaryThreadPool.getInstance()!.runTask(object: ARunnable()
+SecondaryThreadPool.getInstance()!.runTask(new object: ARunnable()
                                 {
                                 
     public run(){
@@ -367,7 +367,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.UPDATE, e);
                                 )
                         
                                     {
-                                    logUtil!.put(StringMaker().
+                                    logUtil!.put(new StringMaker().
                             append(commonStrings!.START)!.appendint(highScoresArray!.length)!.toString(), this, "setHighScoresArray");
     
 
@@ -400,7 +400,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.UPDATE, e);
             
     public updateCommand(command: Command){
 var command = command
-logUtil!.put(StringMaker().
+logUtil!.put(new StringMaker().
                             append(commonStrings!.START)!.append(this.stringUtil!.toString(command))!.toString(), this, commonStrings!.UPDATE);
     
 

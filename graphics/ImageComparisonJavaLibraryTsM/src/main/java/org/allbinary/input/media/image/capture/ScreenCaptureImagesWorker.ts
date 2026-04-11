@@ -60,7 +60,7 @@ export class ScreenCaptureImagesWorker extends BasicEventHandler
 public constructor (){
 
             super();
-            screenScavangerRobot= ScreenScavangerRobot();
+            screenScavangerRobot= new ScreenScavangerRobot();
     
 index= ProcessingFrameIndexFactory.next();
     
@@ -118,14 +118,14 @@ timeHelper!.setStartTime();
 ;
     
 
-    var frame: Long = new index as Long;
+    var frame: Long = index as Long;
         
         
 ;
     
 index++;
     
-CapturedBufferedImagesCacheSingleton.getInstance()!.add(BufferedImageFrameCacheable(bufferedImage, frame));
+CapturedBufferedImagesCacheSingleton.getInstance()!.add(new BufferedImageFrameCacheable(bufferedImage, frame));
     
 
     var capturedImageEvent: CapturedImageWorkerResultsEvent = new CapturedImageWorkerResultsEvent(this, frame, bufferedImage);

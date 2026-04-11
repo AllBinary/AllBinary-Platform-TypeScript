@@ -111,7 +111,7 @@ private constructor (){
                             
 
 
-                            throw Error("Invalid booleanString - Must be true or false")
+                            throw new Error("Invalid booleanString - Must be true or false")
 
                         }
                             

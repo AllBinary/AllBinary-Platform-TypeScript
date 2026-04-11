@@ -46,7 +46,7 @@ export class TerrainEventCircularStaticPool
         
 
     public init(){
-EVENT_POOL.init(TerrainEventFactory());
+EVENT_POOL.init(new TerrainEventFactory());
     
 }
 

@@ -68,7 +68,7 @@ private constructor (){
         
 ;
     
-this.gameNotificationHud= GameNotificationHud(basicHudFactory!.TOPCENTER, basicHudFactory!.HORIZONTAL, 14, 40, 2, BasicColorFactory.getInstance()!.RED);
+this.gameNotificationHud= new GameNotificationHud(basicHudFactory!.TOPCENTER, basicHudFactory!.HORIZONTAL, 14, 40, 2, BasicColorFactory.getInstance()!.RED);
     
 
                 //: 

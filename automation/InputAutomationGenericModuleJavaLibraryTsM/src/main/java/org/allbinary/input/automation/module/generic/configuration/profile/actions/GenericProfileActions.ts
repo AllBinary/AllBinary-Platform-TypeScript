@@ -90,7 +90,7 @@ var name = name
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return File(fileName);
+                        return new File(fileName);
     
 }
 
@@ -154,9 +154,9 @@ this.fileInit(fileInputStream);
 var genericProfileActionsJPanel = genericProfileActionsJPanel
 this.setGenericProfileActionsJPanel(genericProfileActionsJPanel);
     
-this.actionsDefaultListModelHelper= DefaultListModelHelper();
+this.actionsDefaultListModelHelper= new DefaultListModelHelper();
     
-this.setHashMap(HashMap<any, any>());
+this.setHashMap(new HashMap<any, any>());
     
 }
 
@@ -231,7 +231,7 @@ var fileInputStream = fileInputStream
 ;
     
 
-    var data: string = new bytes.decodeToString();
+    var data: string = bytes.decodeToString();
         
         
 ;
@@ -293,7 +293,7 @@ index < nameNodeList!.getLength(); index++)
                             
 
 
-                            throw Error(GenericProfileActionData.NAME +" Name Node Node Children")
+                            throw new Error(GenericProfileActionData.NAME +" Name Node Node Children")
 
                         }
                             
@@ -349,7 +349,7 @@ this.getDefaultListModelHelper()!.add(genericConfigurationProfileAction!.getName
                             
 
 
-                            throw Error(GenericProfileActionData.NAME +" Node Null")
+                            throw new Error(GenericProfileActionData.NAME +" Node Null")
 
                         }
                             

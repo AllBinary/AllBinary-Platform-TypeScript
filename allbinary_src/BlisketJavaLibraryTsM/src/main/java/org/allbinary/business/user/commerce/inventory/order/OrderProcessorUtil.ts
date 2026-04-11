@@ -68,7 +68,7 @@ var order = order
         
 ;
     
-order.setId(OrderIdGenerator().
+order.setId(new OrderIdGenerator().
                             getNext());
     
 orderItems!.insert(userName, order);

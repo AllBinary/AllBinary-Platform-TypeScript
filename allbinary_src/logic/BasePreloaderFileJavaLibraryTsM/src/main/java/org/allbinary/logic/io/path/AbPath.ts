@@ -277,7 +277,7 @@ numberOfSeps++;
                                     
 
 
-                            throw Error("Should Not Have More Than Two Seps")
+                            throw new Error("Should Not Have More Than Two Seps")
 
                                     }
                                 

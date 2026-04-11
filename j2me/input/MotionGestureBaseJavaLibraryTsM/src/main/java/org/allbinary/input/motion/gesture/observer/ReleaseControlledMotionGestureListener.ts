@@ -180,7 +180,7 @@ motionGestureCollection!.clear();
                 //: 
 } catch(e) 
             {
-logUtil!.put(StringMaker().
+logUtil!.put(new StringMaker().
                             append(commonStrings!.EXCEPTION_LABEL)!.append(StringUtil.getInstance()!.toString(ev.getMotionGesture()))!.toString(), this, "release", e);
     
 }

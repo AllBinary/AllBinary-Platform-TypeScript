@@ -41,7 +41,7 @@ public constructor (file: AbFile){
 
             super();
             var file = file
-this.tmpIn= BufferedReader(FileReader(AbFileNativeUtil.get(file)));
+this.tmpIn= new BufferedReader(new FileReader(AbFileNativeUtil.get(file)));
     
 }
 

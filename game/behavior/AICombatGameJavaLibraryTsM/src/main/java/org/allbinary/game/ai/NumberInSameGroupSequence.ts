@@ -32,7 +32,7 @@ export class NumberInSameGroupSequence
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return NumberInSameGroupSequence();
+                        return new NumberInSameGroupSequence();
     
 }
 

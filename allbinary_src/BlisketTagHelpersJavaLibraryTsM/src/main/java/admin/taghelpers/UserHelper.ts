@@ -107,7 +107,7 @@ this.request= pageContext!.getRequest();
     
 this.path= URLGLOBALS.getMainPath() +FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH;
     
-this.portion= Portion(hashMap);
+this.portion= new Portion(hashMap);
     
 }
 
@@ -116,7 +116,7 @@ this.portion= Portion(hashMap);
 
         try {
             
-    var requestHashMap: HashMap<any, any> = RequestParams(this.request).
+    var requestHashMap: HashMap<any, any> = new RequestParams(this.request).
                             toHashMap()!;
         
         

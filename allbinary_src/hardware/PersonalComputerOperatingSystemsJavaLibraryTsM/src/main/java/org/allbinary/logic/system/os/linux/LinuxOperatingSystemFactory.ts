@@ -94,7 +94,7 @@ private constructor (){
                         if(osName!.compareTo(operatingSystems!.LINUX) == 0)
                         
                                     {
-                                    operatingSystemInterface= LinuxOS();
+                                    operatingSystemInterface= new LinuxOS();
     
 
                                     }
@@ -104,7 +104,7 @@ private constructor (){
                         if(operatingSystems!.isUnknownSpecificOSAllowed())
                         
                                     {
-                                    operatingSystemInterface= LinuxOS();
+                                    operatingSystemInterface= new LinuxOS();
     
 
                                     }
@@ -113,7 +113,7 @@ private constructor (){
                             
 
 
-                            throw Error("Specific Linux OS Not Supported: " +osName)
+                            throw new Error("Specific Linux OS Not Supported: " +osName)
 
                         }
                             

@@ -54,7 +54,7 @@ export class NullVehicleLayer
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -62,7 +62,7 @@ export class NullVehicleLayer
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -73,7 +73,7 @@ var z = z
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -81,7 +81,7 @@ var z = z
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -89,7 +89,7 @@ var z = z
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -97,7 +97,7 @@ var z = z
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -105,7 +105,7 @@ var z = z
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -113,7 +113,7 @@ var z = z
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -121,7 +121,7 @@ var z = z
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -129,7 +129,7 @@ var z = z
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -137,7 +137,7 @@ var z = z
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -145,7 +145,7 @@ var z = z
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -153,7 +153,7 @@ var z = z
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -161,7 +161,7 @@ var z = z
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -172,7 +172,7 @@ var dz = dz
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -181,7 +181,7 @@ var visible = visible
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -189,7 +189,7 @@ var visible = visible
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -197,7 +197,7 @@ var visible = visible
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -205,7 +205,7 @@ var visible = visible
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -213,7 +213,7 @@ var visible = visible
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -221,7 +221,7 @@ var visible = visible
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -229,7 +229,7 @@ var visible = visible
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -237,7 +237,7 @@ var visible = visible
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -245,7 +245,7 @@ var visible = visible
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -253,7 +253,7 @@ var visible = visible
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -261,7 +261,7 @@ var visible = visible
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -270,7 +270,7 @@ var animationInterface = animationInterface
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -278,7 +278,7 @@ var animationInterface = animationInterface
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -286,7 +286,7 @@ var animationInterface = animationInterface
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -294,7 +294,7 @@ var animationInterface = animationInterface
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -304,7 +304,7 @@ var animationInterface = animationInterface
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -312,7 +312,7 @@ var animationInterface = animationInterface
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -320,7 +320,7 @@ var animationInterface = animationInterface
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -329,7 +329,7 @@ var geographicMapCellHistory = geographicMapCellHistory
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 

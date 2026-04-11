@@ -73,13 +73,13 @@ public constructor (transformInfoInterface: TransformInfoInterface)
                             //For kotlin this is before the body of the constructor.
                     
 
-    var requestHashMap: HashMap<any, any> = RequestParams(this.getPageContext()).
+    var requestHashMap: HashMap<any, any> = new RequestParams(this.getPageContext()).
                             toHashMap()!;
         
         
 ;
     
-this.body= GenericBodyValidation(requestHashMap);
+this.body= new GenericBodyValidation(requestHashMap);
     
 }
 

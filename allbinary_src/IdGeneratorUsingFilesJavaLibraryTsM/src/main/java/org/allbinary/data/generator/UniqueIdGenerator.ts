@@ -118,7 +118,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "initialize", e);
     public setFile(filePathName: string, name: string){
 var filePathName = filePathName
 var name = name
-newFile= AbFile(filePathName);
+newFile= new AbFile(filePathName);
     
 }
 
@@ -151,7 +151,7 @@ newFile= AbFile(filePathName);
         
 ;
     
-idData= AbDataInputStream(idFile);
+idData= new AbDataInputStream(idFile);
     
 id= idData!.readLong();
     
@@ -161,12 +161,12 @@ id= idData!.readLong();
         
 ;
     
-idOutData= AbDataOutputStream(idOutFile);
+idOutData= new AbDataOutputStream(idOutFile);
     
 idOutData!.writeLong(id +1);
     
 
-    var idLong: Long = new id as Long;
+    var idLong: Long = id as Long;
         
         
 ;

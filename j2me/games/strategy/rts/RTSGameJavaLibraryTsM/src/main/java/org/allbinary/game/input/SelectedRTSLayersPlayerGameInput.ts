@@ -165,11 +165,11 @@ this.selectRTSLayerVisitorInterface= selectRTSLayerVisitorFactoryInterface!.getI
         
 ;
     
-this.upgradeGameNotificationEvent= GameNotificationEvent(this, RTSGameStrings.getInstance()!.UPGRADE, smallIntegerSingletonFactory!.getInstance(2), basicColorFactory!.PINK, BooleanFactory.getInstance()!.FALSE);
+this.upgradeGameNotificationEvent= new GameNotificationEvent(this, RTSGameStrings.getInstance()!.UPGRADE, smallIntegerSingletonFactory!.getInstance(2), basicColorFactory!.PINK, BooleanFactory.getInstance()!.FALSE);
     
-this.noMoneyGameNotificationEvent= GameNotificationEvent(this, RTSGameStrings.getInstance()!.NO_MONEY, smallIntegerSingletonFactory!.getInstance(2), basicColorFactory!.PINK, BooleanFactory.getInstance()!.FALSE);
+this.noMoneyGameNotificationEvent= new GameNotificationEvent(this, RTSGameStrings.getInstance()!.NO_MONEY, smallIntegerSingletonFactory!.getInstance(2), basicColorFactory!.PINK, BooleanFactory.getInstance()!.FALSE);
     
-this.downgradeGameNotificationEvent= GameNotificationEvent(this, RTSGameStrings.getInstance()!.DOWNGRADE, smallIntegerSingletonFactory!.getInstance(2), basicColorFactory!.PINK, BooleanFactory.getInstance()!.FALSE);
+this.downgradeGameNotificationEvent= new GameNotificationEvent(this, RTSGameStrings.getInstance()!.DOWNGRADE, smallIntegerSingletonFactory!.getInstance(2), basicColorFactory!.PINK, BooleanFactory.getInstance()!.FALSE);
     
 }
 
@@ -426,9 +426,9 @@ rtsPlayerGameInput!.updatePaintable();
 
 
     public initInputProcessors(){
-this.inputProcessorArray[Canvas.KEY_NUM1]= SelectedRTSLayersPlayerUpgradeGameInputProcessor(this);
+this.inputProcessorArray[Canvas.KEY_NUM1]= new SelectedRTSLayersPlayerUpgradeGameInputProcessor(this);
     
-this.inputProcessorArray[Canvas.KEY_NUM3]= SelectedRTSLayersPlayerDowngradeGameInputProcessor(this);
+this.inputProcessorArray[Canvas.KEY_NUM3]= new SelectedRTSLayersPlayerDowngradeGameInputProcessor(this);
     
 GameInputProcessorUtil.init(this.inputProcessorArray);
     
@@ -611,7 +611,7 @@ this.preSelectedRTSLayersList= this.selectedRTSLayersList;
     
 this.selectedRTSLayersList= tempList;
     
-logUtil!.put(StringMaker().
+logUtil!.put(new StringMaker().
                             append("Preselected: ")!.append(this.preSelectedRTSLayersList!.toString())!.toString(), this, "setSelectedRTSLayer");
     
 

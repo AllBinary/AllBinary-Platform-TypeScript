@@ -63,7 +63,7 @@ export class NullPathFindingLayer
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -73,7 +73,7 @@ export class NullPathFindingLayer
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -81,7 +81,7 @@ export class NullPathFindingLayer
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -89,7 +89,7 @@ export class NullPathFindingLayer
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -97,7 +97,7 @@ export class NullPathFindingLayer
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -108,7 +108,7 @@ var ownerLayer = ownerLayer
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -116,7 +116,7 @@ var ownerLayer = ownerLayer
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -124,7 +124,7 @@ var ownerLayer = ownerLayer
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -135,7 +135,7 @@ var ownerLayer = ownerLayer
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -147,7 +147,7 @@ var ownerLayer = ownerLayer
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -156,7 +156,7 @@ var ownerLayer = ownerLayer
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -167,7 +167,7 @@ var ownerLayer = ownerLayer
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -176,7 +176,7 @@ var ownerLayer = ownerLayer
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -187,7 +187,7 @@ var resource = resource
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -197,7 +197,7 @@ var resource = resource
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -205,7 +205,7 @@ var resource = resource
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -213,7 +213,7 @@ var resource = resource
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -221,7 +221,7 @@ var resource = resource
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -232,7 +232,7 @@ var resource = resource
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -244,7 +244,7 @@ var resource = resource
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -256,7 +256,7 @@ var resource = resource
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -264,7 +264,7 @@ var resource = resource
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -272,7 +272,7 @@ var resource = resource
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -280,7 +280,7 @@ var resource = resource
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -290,7 +290,7 @@ var resource = resource
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -300,7 +300,7 @@ var resource = resource
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -308,7 +308,7 @@ var resource = resource
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -316,7 +316,7 @@ var resource = resource
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -324,7 +324,7 @@ var resource = resource
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -332,7 +332,7 @@ var resource = resource
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -340,7 +340,7 @@ var resource = resource
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -348,7 +348,7 @@ var resource = resource
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -358,7 +358,7 @@ var resource = resource
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -366,7 +366,7 @@ var resource = resource
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 

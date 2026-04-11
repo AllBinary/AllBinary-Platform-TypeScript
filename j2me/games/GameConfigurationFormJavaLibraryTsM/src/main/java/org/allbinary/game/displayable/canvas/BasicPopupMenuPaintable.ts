@@ -161,7 +161,7 @@ this.BORDER= BORDER;
                                     }
                                 
                         else {
-                            this.animationInterface= RectangleFilledAnimation(this.rectangle.getWidth(), this.rectangle.getHeight(), BasicColorFactory.getInstance()!.TRANSPARENT_GREY);
+                            this.animationInterface= new RectangleFilledAnimation(this.rectangle.getWidth(), this.rectangle.getHeight(), BasicColorFactory.getInstance()!.TRANSPARENT_GREY);
     
 
                         }

@@ -38,11 +38,11 @@ export class BooleanFactory
 }
 
 
-    public readonly TRUE: Boolean = new true;
+    public readonly TRUE: Boolean = true;
         
         
 
-    public readonly FALSE: Boolean = new false;
+    public readonly FALSE: Boolean = false;
         
         
 

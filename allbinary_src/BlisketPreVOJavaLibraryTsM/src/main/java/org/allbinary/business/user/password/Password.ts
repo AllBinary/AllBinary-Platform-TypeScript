@@ -198,7 +198,7 @@ var secret = secret
 this.password= StringUtil.getInstance()!.getInstance(this.password);
     
 
-    var random: number = Random().
+    var random: number = new Random().
                             nextInt(SuperCrypt.KEYMAX)!;
         
         
@@ -210,12 +210,12 @@ this.password= StringUtil.getInstance()!.getInstance(this.password);
         
 ;
     
-vector.add(Integer(random).
+vector.add(new Integer(random).
                             toString());
     
 vector.add(secret);
     
-vector.add(SuperCrypt(random).
+vector.add(new SuperCrypt(random).
                             encrypt(password));
     
 
@@ -238,18 +238,18 @@ this.password= StringUtil.getInstance()!.getInstance(this.password);
 ;
     
 
-    var random: number = Random().
+    var random: number = new Random().
                             nextInt(SuperCrypt.KEYMAX)!;
         
         
 ;
     
-values.put(EntryData.getInstance()!.ENCRYPTION, Integer(random).
+values.put(EntryData.getInstance()!.ENCRYPTION, new Integer(random).
                             toString());
     
 values.put(UserData.SECRET, secret);
     
-values.put(UserData.PASSWORD, SuperCrypt(random).
+values.put(UserData.PASSWORD, new SuperCrypt(random).
                             encrypt(this.password));
     
 

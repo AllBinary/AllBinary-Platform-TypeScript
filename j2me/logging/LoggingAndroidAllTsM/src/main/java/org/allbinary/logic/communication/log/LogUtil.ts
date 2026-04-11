@@ -115,7 +115,7 @@ var exception = exception
         
 ;
     
-className= StringMaker().
+className= new StringMaker().
                             append(anyType!.constructor.name.toString()!)!.append(commonSeps!.COLON)!.append(Integer.toHexString(anyType!.hashCode()))!.toString();
     
 

@@ -95,7 +95,7 @@ export class MyCanvas extends Canvas
     private isPaused: boolean= false
 public constructor ()                        
 
-                            : this(CommonStrings.getInstance()!.UNKNOWN, BasicArrayList()){
+                            : this(CommonStrings.getInstance()!.UNKNOWN, new BasicArrayList()){
 
             super();
             
@@ -117,7 +117,7 @@ this.name= name;
     
 this.childNameList= childNameList;
     
-this.commandStack= Stack();
+this.commandStack= new Stack();
     
 }
 

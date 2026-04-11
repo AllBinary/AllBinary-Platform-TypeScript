@@ -223,14 +223,14 @@ logUtil!.put(command.toString(), this, PROCESS_COMMAND);
                         if(SWTUtil.isSWT && features.isFeature(openGLFeatureFactory!.OPENGL) && command != GameCommandsFactory.getInstance()!.EXIT_COMMAND)
                         
                                     {
-                                    CommandRunnable(this, command).
+                                    new CommandRunnable(this, command).
                             run();
     
 
                                     }
                                 
                         else {
-                            PrimaryThreadPool.getInstance()!.runTask(CommandRunnable(this, command));
+                            PrimaryThreadPool.getInstance()!.runTask(new CommandRunnable(this, command));
     
 
                         }
@@ -530,7 +530,7 @@ this.hasPressed= true;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return StringMaker().
+                        return new StringMaker().
                             append(super.toString())!.append(NAME_LABEL)!.append(this.form.toString())!.toString();
 
                         ;

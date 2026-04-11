@@ -279,7 +279,7 @@ height= textureSize;
                                     
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 
                                     }
                                 

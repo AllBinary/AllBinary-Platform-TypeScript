@@ -76,7 +76,7 @@ var height = height
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return GeologicalGeographicMapCellPosition(i_column, i_row, columns, rows, width, height, GeologicalResource(resources));
+                        return new GeologicalGeographicMapCellPosition(i_column, i_row, columns, rows, width, height, new GeologicalResource(resources));
     
 }
 

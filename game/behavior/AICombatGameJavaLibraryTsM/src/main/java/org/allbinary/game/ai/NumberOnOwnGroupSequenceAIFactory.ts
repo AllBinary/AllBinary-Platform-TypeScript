@@ -137,7 +137,7 @@ logUtil!.put(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE);
                                     
 
 
-                            throw Error("Not enough AI properties.")
+                            throw new Error("Not enough AI properties.")
 
                                     }
                                 
@@ -148,7 +148,7 @@ logUtil!.put(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE);
                                     
 
 
-                            throw Error("Too Many AI properties.")
+                            throw new Error("Too Many AI properties.")
 
                                     }
                                 
@@ -176,7 +176,7 @@ numberOnSameTeam[index]= list.objectArray[index]! as Integer;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return NumberOnOwnGroupSequenceAI(numberOnSameTeam, artificialIntelligenceInterface, ownerLayerInterface, gameInput);
+                        return new NumberOnOwnGroupSequenceAI(numberOnSameTeam, artificialIntelligenceInterface, ownerLayerInterface, gameInput);
     
 }
 

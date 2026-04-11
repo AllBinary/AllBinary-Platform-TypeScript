@@ -27,7 +27,7 @@ export class Driver
          {
         
 
-    public static readonly NULL_DRIVER: Driver = new Driver(SmallIntegerSingletonFactory.getInstance()!.getInstance(0), SmallIntegerSingletonFactory.getInstance()!.getInstance(0), Aggression(SmallIntegerSingletonFactory.getInstance()!.getInstance(0), SmallIntegerSingletonFactory.getInstance()!.getInstance(0), SmallIntegerSingletonFactory.getInstance()!.getInstance(0)));
+    public static readonly NULL_DRIVER: Driver = new Driver(SmallIntegerSingletonFactory.getInstance()!.getInstance(0), SmallIntegerSingletonFactory.getInstance()!.getInstance(0), new Aggression(SmallIntegerSingletonFactory.getInstance()!.getInstance(0), SmallIntegerSingletonFactory.getInstance()!.getInstance(0), SmallIntegerSingletonFactory.getInstance()!.getInstance(0)));
         
         
 

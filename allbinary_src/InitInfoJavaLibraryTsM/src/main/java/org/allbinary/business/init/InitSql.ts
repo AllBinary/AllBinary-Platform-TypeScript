@@ -337,7 +337,7 @@ i < size; i++)
 ;
     
 
-    var value: string = new .toCharArray();
+    var value: string = .toCharArray();
         
         
 ;
@@ -391,7 +391,7 @@ stringBuffer!.append(sqlStrings!.CLOSE_QUOTE);
 
         while(rset.next())
         {
-result= HashMap<any, any>();
+result= new HashMap<any, any>();
     
 
     var columnCount: number = resultSetMetaData!.getColumnCount()!;
@@ -867,7 +867,7 @@ PreLogUtil.putOE(this.commonStrings!.EXCEPTION, INIT_SQL, "createConnection()", 
         
 ;
     
-PreLogUtil.put(StringBuilder().
+PreLogUtil.put(new StringBuilder().
                             append("Loading DbConnnectionInfo: ")!.append(this.databaseConnectionInfoInterface!..constructor.name.toString()!)!.append(" Driver: ")!.append(jdbcDriver)!.toString(), INIT_SQL, "initialize()");
     
 Class.forName(jdbcDriver)!.newInstance();

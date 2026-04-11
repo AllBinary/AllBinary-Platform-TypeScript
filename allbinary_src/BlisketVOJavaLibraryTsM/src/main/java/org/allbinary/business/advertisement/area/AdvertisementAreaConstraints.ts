@@ -59,9 +59,9 @@ public constructor (document: Document){
         
 ;
     
-this.displayInBrowserContraintsInterface= DisplayInBrowserContraints(node);
+this.displayInBrowserContraintsInterface= new DisplayInBrowserContraints(node);
     
-this.twoDimensionConstraintsInterface= TwoDimensionalConstraint(node);
+this.twoDimensionConstraintsInterface= new TwoDimensionalConstraint(node);
     
 }
 

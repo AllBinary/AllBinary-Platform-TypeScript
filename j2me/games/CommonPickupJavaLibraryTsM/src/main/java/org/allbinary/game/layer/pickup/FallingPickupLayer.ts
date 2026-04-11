@@ -40,7 +40,7 @@ export class FallingPickupLayer extends PickupLayer
         
 public constructor (remoteInfo: RemoteInfo)                        
 
-                            : super(NAME, remoteInfo, ViewPosition()){
+                            : super(NAME, remoteInfo, new ViewPosition()){
 
             super();
             var remoteInfo = remoteInfo
@@ -52,7 +52,7 @@ public constructor (remoteInfo: RemoteInfo)
 
 public constructor ()                        
 
-                            : super(NAME, ViewPosition()){
+                            : super(NAME, new ViewPosition()){
 
             super();
             

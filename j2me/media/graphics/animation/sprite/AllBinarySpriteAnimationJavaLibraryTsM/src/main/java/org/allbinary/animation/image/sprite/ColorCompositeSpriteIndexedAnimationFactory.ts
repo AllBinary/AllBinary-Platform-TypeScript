@@ -100,7 +100,7 @@ this.basicColorArray= basicColorArray;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return SpriteIndexedAnimation(sprite, this.getImage(), this.basicColorArray, this.animationBehaviorFactory!.getOrCreateInstance());
+                        return new SpriteIndexedAnimation(sprite, this.getImage(), this.basicColorArray, this.animationBehaviorFactory!.getOrCreateInstance());
     
 }
 

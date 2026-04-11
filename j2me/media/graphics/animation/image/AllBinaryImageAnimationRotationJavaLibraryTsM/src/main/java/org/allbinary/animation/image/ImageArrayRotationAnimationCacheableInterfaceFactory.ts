@@ -42,7 +42,7 @@ export class ImageArrayRotationAnimationCacheableInterfaceFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return ImageArrayRotationAnimationCacheable(key, AnimationBehavior.getInstance());
+                        return new ImageArrayRotationAnimationCacheable(key, AnimationBehavior.getInstance());
     
 }
 

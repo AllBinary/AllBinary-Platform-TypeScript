@@ -315,51 +315,51 @@ this.colorAtActionJDialog= colorAtActionJDialog;
 
 
     initComponents(){
-colorAtActionJDialog= javax.swing.JDialog();
+colorAtActionJDialog= new javax.swing.JDialog();
     
-titleJLabel= javax.swing.JLabel();
+titleJLabel= new javax.swing.JLabel();
     
-locationJLabel= javax.swing.JLabel();
+locationJLabel= new javax.swing.JLabel();
     
-colorAtXJTextField= javax.swing.JTextField();
+colorAtXJTextField= new javax.swing.JTextField();
     
-xJLabel= javax.swing.JLabel();
+xJLabel= new javax.swing.JLabel();
     
-yJLabel= javax.swing.JLabel();
+yJLabel= new javax.swing.JLabel();
     
-colorAtYJTextField= javax.swing.JTextField();
+colorAtYJTextField= new javax.swing.JTextField();
     
-colorRangeJLabel= javax.swing.JLabel();
+colorRangeJLabel= new javax.swing.JLabel();
     
-redJLabel= javax.swing.JLabel();
+redJLabel= new javax.swing.JLabel();
     
-minJLabel= javax.swing.JLabel();
+minJLabel= new javax.swing.JLabel();
     
-maxJLabel= javax.swing.JLabel();
+maxJLabel= new javax.swing.JLabel();
     
-greenJLabel= javax.swing.JLabel();
+greenJLabel= new javax.swing.JLabel();
     
-blueJLabel= javax.swing.JLabel();
+blueJLabel= new javax.swing.JLabel();
     
-minRedJTextField= javax.swing.JTextField();
+minRedJTextField= new javax.swing.JTextField();
     
-maxRedJTextField= javax.swing.JTextField();
+maxRedJTextField= new javax.swing.JTextField();
     
-maxGreenJTextField= javax.swing.JTextField();
+maxGreenJTextField= new javax.swing.JTextField();
     
-minBlueJTextField= javax.swing.JTextField();
+minBlueJTextField= new javax.swing.JTextField();
     
-maxBlueJTextField= javax.swing.JTextField();
+maxBlueJTextField= new javax.swing.JTextField();
     
-okJButton= javax.swing.JButton();
+okJButton= new javax.swing.JButton();
     
-minGreenJTextField= javax.swing.JTextField();
+minGreenJTextField= new javax.swing.JTextField();
     
-colorAtActionJButton= javax.swing.JButton();
+colorAtActionJButton= new javax.swing.JButton();
     
-jLabel1= javax.swing.JLabel();
+jLabel1= new javax.swing.JLabel();
     
-colorAtActionJDialog!.setMinimumSize(java.awt.Dimension(350, 250));
+colorAtActionJDialog!.setMinimumSize(new java.awt.Dimension(350, 250));
     
 titleJLabel!.setText("              Color At Action Options            ");
     
@@ -383,7 +383,7 @@ blueJLabel!.setText("Blue:");
     
 okJButton!.setText("OK");
     
-okJButton!.addActionListener(object: java.awt.event.ActionListener()
+okJButton!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -407,11 +407,11 @@ colorAtActionJDialogLayout!.setHorizontalGroup(colorAtActionJDialogLayout!.creat
     
 colorAtActionJDialogLayout!.setVerticalGroup(colorAtActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(colorAtActionJDialogLayout!.createSequentialGroup()!.addContainerGap()!.addComponent(titleJLabel)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addGroup(colorAtActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(colorAtActionJDialogLayout!.createSequentialGroup()!.addGap(15, 15, 15)!.addGroup(colorAtActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)!.addComponent(xJLabel)!.addComponent(locationJLabel)!.addComponent(colorAtXJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)!.addComponent(yJLabel))!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addGroup(colorAtActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)!.addComponent(minJLabel)!.addComponent(colorRangeJLabel))!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addGroup(colorAtActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)!.addComponent(minRedJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)!.addComponent(redJLabel))!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addGroup(colorAtActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)!.addComponent(greenJLabel)!.addComponent(minGreenJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addGroup(colorAtActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)!.addComponent(blueJLabel)!.addComponent(minBlueJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 17, Short.MAX_VALUE)!.addComponent(okJButton))!.addGroup(colorAtActionJDialogLayout!.createSequentialGroup()!.addGap(14, 14, 14)!.addComponent(colorAtYJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(maxJLabel)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(maxRedJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(maxGreenJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(maxBlueJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))!.addContainerGap()));
     
-setPreferredSize(java.awt.Dimension(100, 0));
+setPreferredSize(new java.awt.Dimension(100, 0));
     
 colorAtActionJButton!.setText("Edit");
     
-colorAtActionJButton!.addActionListener(object: java.awt.event.ActionListener()
+colorAtActionJButton!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){

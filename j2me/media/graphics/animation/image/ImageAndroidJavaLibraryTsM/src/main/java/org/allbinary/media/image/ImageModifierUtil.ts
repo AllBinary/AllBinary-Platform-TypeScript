@@ -44,7 +44,7 @@ export class ImageModifierUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return ImageModifierUtil();
+                        return new ImageModifierUtil();
     
 }
 
@@ -58,7 +58,7 @@ export class ImageModifierUtil
     //var image = image
     //var imageIndex = imageIndex
     //var basicColor = basicColor
-paint.setColorFilter(PorterDuffColorFilter(basicColor!.toInt(), PorterDuff.Mode.SRC_IN));
+paint.setColorFilter(new PorterDuffColorFilter(basicColor!.toInt(), PorterDuff.Mode.SRC_IN));
     
 }
 
@@ -68,7 +68,7 @@ paint.setColorFilter(PorterDuffColorFilter(basicColor!.toInt(), PorterDuff.Mode.
     //var image = image
     //var imageIndex = imageIndex
     //var basicColor = basicColor
-paint.setColorFilter(PorterDuffColorFilter(basicColor!.toInt(), PorterDuff.Mode.SRC_IN));
+paint.setColorFilter(new PorterDuffColorFilter(basicColor!.toInt(), PorterDuff.Mode.SRC_IN));
     
 }
 

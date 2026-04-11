@@ -48,7 +48,7 @@ export class GeologicalResourceInfoHudPaintable extends WaypointInfoHudPaintable
 public constructor (){
 
             super();
-            keyvalueDrawString= KeyValueDrawCharArray(RESOURCES, this.textX);
+            keyvalueDrawString= new KeyValueDrawCharArray(RESOURCES, this.textX);
     
 }
 

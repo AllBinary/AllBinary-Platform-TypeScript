@@ -60,7 +60,7 @@ import { PlayN } from "../../../../../playn/core/PlayN.js";
 
                                     }
                                 
-className= StringMaker().
+className= new StringMaker().
                             append(className)!.append(CommonSeps.getInstance()!.FORWARD_SLASH)!.append(StringUtil.getInstance()!.toString(anyType))!.toString();
     
 
@@ -100,7 +100,7 @@ PlayN.log()!.debug(LOG_SUCCESS +message);
 
                                     }
                                 
-className= StringMaker().
+className= new StringMaker().
                             append(className)!.append(CommonSeps.getInstance()!.FORWARD_SLASH)!.append(StringUtil.getInstance()!.toString(anyType))!.toString();
     
 

@@ -72,13 +72,13 @@ private constructor (){
                         )
                         
                                     {
-                                    this.collisionProcessor= CollisionThreedProcessor();
+                                    this.collisionProcessor= new CollisionThreedProcessor();
     
 
                                     }
                                 
                         else {
-                            this.collisionProcessor= Collision2DProcessor();
+                            this.collisionProcessor= new Collision2DProcessor();
     
 
                         }

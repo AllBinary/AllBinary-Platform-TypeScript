@@ -94,7 +94,7 @@ this.offset= myFont!.stringWidth(this.TIME_STRING) +myFont!.stringWidth(3);
                                     
 
 
-                            throw Error(BasicHudFactory.getInstance()!.DIRECTION_EXCEPTION)
+                            throw new Error(BasicHudFactory.getInstance()!.DIRECTION_EXCEPTION)
 
                                     }
                                 

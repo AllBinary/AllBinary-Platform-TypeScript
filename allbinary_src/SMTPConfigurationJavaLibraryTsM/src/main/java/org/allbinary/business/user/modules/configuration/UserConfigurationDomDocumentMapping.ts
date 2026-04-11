@@ -57,7 +57,7 @@ this.userConfigurationInterface= userConfigurationInterface;
 ;
     
 
-    var node: Node = UserConfigurationView(this.userConfigurationInterface).
+    var node: Node = new UserConfigurationView(this.userConfigurationInterface).
                             toXmlNode(document)!;
         
         

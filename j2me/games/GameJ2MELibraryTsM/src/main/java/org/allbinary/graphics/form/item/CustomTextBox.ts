@@ -104,7 +104,7 @@ public constructor (cmdListener: CommandListener, label: string, text: string, m
 ;
     
 
-    var textFieldItem: TextFieldItem = new TextFieldItem(this, TextItemVisitor(), stringUtil!.EMPTY_STRING, stringUtil!.EMPTY_STRING, maxSize, 0, stringUtil!.EMPTY_STRING, font, backgroundBasicColor, foregroundBasicColor);
+    var textFieldItem: TextFieldItem = new TextFieldItem(this, new TextItemVisitor(), stringUtil!.EMPTY_STRING, stringUtil!.EMPTY_STRING, maxSize, 0, stringUtil!.EMPTY_STRING, font, backgroundBasicColor, foregroundBasicColor);
         
         
 ;
@@ -130,7 +130,7 @@ this.setTitle(label);
     //var keyCode = keyCode
     //var deviceId = deviceId
     //var repeated = repeated
-logUtil!.put(StringMaker().
+logUtil!.put(new StringMaker().
                             append(commonStrings!.START)!.appendint(keyCode)!.toString(), this, "onEvent");
     
 this.keyPressed(keyCode, deviceId);
@@ -164,7 +164,7 @@ this.keyRepeated(keyCode, 0);
     //var deviceId = deviceId
 
         try {
-            logUtil!.put(StringMaker().
+            logUtil!.put(new StringMaker().
                             append(CommonSeps.getInstance()!.SPACE)!.appendint(keyCode)!.toString(), this, gameInputStrings!.KEY_PRESSED);
     
 

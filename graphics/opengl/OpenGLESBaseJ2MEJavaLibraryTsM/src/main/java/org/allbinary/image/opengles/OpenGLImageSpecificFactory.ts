@@ -59,7 +59,7 @@ export class OpenGLImageSpecificFactory
 var imageFactory = imageFactory
 this.imageFactory= imageFactory;
     
-PreLogUtil.put(StringMaker().
+PreLogUtil.put(new StringMaker().
                             append("Selected Image Factory: ")!.append(StringUtil.getInstance()!.toString(this.imageFactory))!.toString(), this, "setImageFactory");
     
 }

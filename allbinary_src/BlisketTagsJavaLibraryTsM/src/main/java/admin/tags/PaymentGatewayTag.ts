@@ -46,9 +46,9 @@ export class PaymentGatewayTag extends TableTag {
 public constructor (){
 
             super();
-            this.setTagHelperFactory(PaymentGatewayHelperFactory());
+            this.setTagHelperFactory(new PaymentGatewayHelperFactory());
     
-this.setTagRequestHelperFactory(PaymentGatewayHelperFactory());
+this.setTagRequestHelperFactory(new PaymentGatewayHelperFactory());
     
 }
 
@@ -59,7 +59,7 @@ this.setTagRequestHelperFactory(PaymentGatewayHelperFactory());
 
         try {
             
-    var anyType: any = PaymentGatewayHelperFactory().
+    var anyType: any = new PaymentGatewayHelperFactory().
                             getInstance(this.getPropertiesHashMap(), this.pageContext)!;
         
         

@@ -151,7 +151,7 @@ this.setSaved(.
                         if(childNode!.getNodeName()!.compareTo(ImageActionScriptOutputData.TYPES) == 0)
                         
                                     {
-                                    this.setImageTypes(ImageTypes(childNode));
+                                    this.setImageTypes(new ImageTypes(childNode));
     
 
                                     }
@@ -160,7 +160,7 @@ this.setSaved(.
                             
 
 
-                            throw Error("Action Script Output Unknown Node")
+                            throw new Error("Action Script Output Unknown Node")
 
                         }
                             
@@ -173,13 +173,13 @@ this.setSaved(.
                             
 
 
-                            throw Error("Action Script Output Node Null")
+                            throw new Error("Action Script Output Node Null")
 
                         }
                             
 this.setAllowsChildren(false);
     
-this.actionScriptOutputJPanel= ImageActionScriptOutputJPanel(this);
+this.actionScriptOutputJPanel= new ImageActionScriptOutputJPanel(this);
     
 }
 
@@ -192,11 +192,11 @@ public constructor ()
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setImageTypes(ImageTypes());
+this.setImageTypes(new ImageTypes());
     
 this.setAllowsChildren(false);
     
-this.actionScriptOutputJPanel= ImageActionScriptOutputJPanel(this);
+this.actionScriptOutputJPanel= new ImageActionScriptOutputJPanel(this);
     
 }
 

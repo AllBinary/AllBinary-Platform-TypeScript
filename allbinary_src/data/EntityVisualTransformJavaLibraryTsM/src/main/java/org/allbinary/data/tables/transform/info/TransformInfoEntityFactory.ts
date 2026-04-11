@@ -55,7 +55,7 @@ var transformInfoFactoryInterface = transformInfoFactoryInterface
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return TransformInfoEntity(transformInfoObjectConfigGeneratorFactoryInterface, transformInfoObjectConfigAndManipulatorFactoryInterface, transformInfoFactoryInterface);
+                        return new TransformInfoEntity(transformInfoObjectConfigGeneratorFactoryInterface, transformInfoObjectConfigAndManipulatorFactoryInterface, transformInfoFactoryInterface);
     
 
                 //: 

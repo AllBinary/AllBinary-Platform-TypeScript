@@ -136,7 +136,7 @@ this.fetchHighScores(gameInfo, highScoresResultsListener, true);
     //var gameInfo = gameInfo
     //var highScoresResultsListener = highScoresResultsListener
     //var preload = preload
-SecondaryThreadPool.getInstance()!.runTask(object: ARunnable()
+SecondaryThreadPool.getInstance()!.runTask(new object: ARunnable()
                                 {
                                 
     public run(){
@@ -144,7 +144,7 @@ SecondaryThreadPool.getInstance()!.runTask(object: ARunnable()
         try {
             logUtil!.put(commonStrings!.START, this, FETCH);
     
-highScoresArray[0]= RecordStoreHighScores.getInstance(abeClientInformation, gameInfo, TOP, PERSONAL_HIGH_SCORES, SCORES, ScoreComparator(true));
+highScoresArray[0]= RecordStoreHighScores.getInstance(abeClientInformation, gameInfo, TOP, PERSONAL_HIGH_SCORES, SCORES, new ScoreComparator(true));
     
 
     var gameType: GameType = gameInfo!.getGameType()!;
@@ -211,7 +211,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, FETCH, e);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return HighScoresHelper2();
+                        return new HighScoresHelper2();
     
 }
 

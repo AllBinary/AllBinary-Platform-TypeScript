@@ -58,7 +58,7 @@ export class WaypointBehaviorBase
 public constructor (){
 
             super();
-            this.ownedWaypointList= BasicArrayList(1);
+            this.ownedWaypointList= new BasicArrayList(1);
     
 }
 
@@ -133,7 +133,7 @@ this.waypoint= waypoint;
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -141,7 +141,7 @@ this.waypoint= waypoint;
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -151,7 +151,7 @@ this.waypoint= waypoint;
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -159,7 +159,7 @@ this.waypoint= waypoint;
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -167,7 +167,7 @@ this.waypoint= waypoint;
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -175,7 +175,7 @@ this.waypoint= waypoint;
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -183,7 +183,7 @@ this.waypoint= waypoint;
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -191,7 +191,7 @@ this.waypoint= waypoint;
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -209,7 +209,7 @@ this.waypoint= waypoint;
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -217,7 +217,7 @@ this.waypoint= waypoint;
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -226,7 +226,7 @@ this.waypoint= waypoint;
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -234,7 +234,7 @@ this.waypoint= waypoint;
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -245,7 +245,7 @@ this.waypoint= waypoint;
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -257,7 +257,7 @@ this.waypoint= waypoint;
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -267,7 +267,7 @@ this.waypoint= waypoint;
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 

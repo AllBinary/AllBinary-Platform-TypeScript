@@ -54,7 +54,7 @@ public constructor (sep: string){
                                     
 
 
-                            throw Error("Sep provided is not valid")
+                            throw new Error("Sep provided is not valid")
 
                                     }
                                 

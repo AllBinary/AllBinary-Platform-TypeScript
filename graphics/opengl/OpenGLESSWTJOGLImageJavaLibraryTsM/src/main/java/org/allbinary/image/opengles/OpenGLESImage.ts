@@ -153,7 +153,7 @@ var gl = gl
 
 
 
-                            throw Error(commonStrings!.NOT_IMPLEMENTED)
+                            throw new Error(commonStrings!.NOT_IMPLEMENTED)
 }
 
 
@@ -258,7 +258,7 @@ var z = z
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return StringMaker().
+                        return new StringMaker().
                             append(this.getName())!.append(super.toString())!.append(graphicsStrings!.OPACITY)!.appendfloat(this.openGLESImageProperties!.alphaf)!.toString();
 
                         ;

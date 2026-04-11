@@ -59,7 +59,7 @@ var pageContext = pageContext
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return OrderHistoryHelper(hashMap, pageContext);
+                        return new OrderHistoryHelper(hashMap, pageContext);
     
 
                 //: 

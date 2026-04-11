@@ -97,7 +97,7 @@ this.type= type;
                                     
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 
                                     }
                                 

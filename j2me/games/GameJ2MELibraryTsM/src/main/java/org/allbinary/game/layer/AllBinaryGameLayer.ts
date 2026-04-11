@@ -95,7 +95,7 @@ export class AllBinaryGameLayer extends AllBinaryLayer
 
     private readonly paintable: Paintable = SWTUtil.isSWT
                         ?       
-                                object: Paintable()
+                                new object: Paintable()
                                 {
                                 
     var private readonly BLACK: BasicColor = BasicColorFactory.getInstance()!.BLACK;
@@ -123,7 +123,7 @@ basicSetColorUtil!.setBasicColorP(graphics, BLACK);
         
 public constructor (layerInfo: Rectangle)                        
 
-                            : this(layerInfo, ViewPosition()){
+                            : this(layerInfo, new ViewPosition()){
 
             super();
                 //var layerInfo = layerInfo
@@ -168,7 +168,7 @@ public constructor (name: string, layerInfo: Rectangle, viewPosition: ViewPositi
 
 
 
-                            throw Error(commonStrings!.NOT_IMPLEMENTED)
+                            throw new Error(commonStrings!.NOT_IMPLEMENTED)
 }
 
 
@@ -193,7 +193,7 @@ public constructor (name: string, layerInfo: Rectangle, viewPosition: ViewPositi
 
 
 
-                            throw Error(commonStrings!.NOT_IMPLEMENTED)
+                            throw new Error(commonStrings!.NOT_IMPLEMENTED)
 }
 
 
@@ -204,7 +204,7 @@ public constructor (name: string, layerInfo: Rectangle, viewPosition: ViewPositi
 
 
 
-                            throw Error(commonStrings!.NOT_IMPLEMENTED)
+                            throw new Error(commonStrings!.NOT_IMPLEMENTED)
 }
 
 

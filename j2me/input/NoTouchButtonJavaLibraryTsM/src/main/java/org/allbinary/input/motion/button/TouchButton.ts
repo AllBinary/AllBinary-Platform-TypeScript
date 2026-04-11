@@ -111,7 +111,7 @@ this.yBorder= yBorder;
     
 this.updateRectangle();
     
-logUtil!.put(StringMaker().
+logUtil!.put(new StringMaker().
                             append("Created: ")!.append(this.toString())!.toString(), this, this.commonStrings!.CONSTRUCTOR);
     
 }
@@ -139,7 +139,7 @@ this.animationInterface!.paint(graphics, animationX, animationY);
         
 ;
     
-this.rectangle= Rectangle(PointFactory.getInstance()!.getInstance(x +xBorder, y +yBorder), this.rawRectangle!.getWidth(), this.rawRectangle!.getHeight());
+this.rectangle= new Rectangle(PointFactory.getInstance()!.getInstance(x +xBorder, y +yBorder), this.rawRectangle!.getWidth(), this.rawRectangle!.getHeight());
     
 
     var point: GPoint = rectangle.getPoint()!;

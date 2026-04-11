@@ -118,7 +118,7 @@ values.put(XmlOptionItemData.OPTION_XML_FILE, this.optionXmlFile);
 ;
     
 
-    var time: string = new calendar.getTimeInMillis() as Long.
+    var time: string = calendar.getTimeInMillis() as Long.
                             toString();
         
         
@@ -145,7 +145,7 @@ values.put(EntryData.getInstance()!.LASTMODIFIED, time);
 ;
     
 
-    var time: string = new calendar.getTimeInMillis() as Long.
+    var time: string = calendar.getTimeInMillis() as Long.
                             toString();
         
         

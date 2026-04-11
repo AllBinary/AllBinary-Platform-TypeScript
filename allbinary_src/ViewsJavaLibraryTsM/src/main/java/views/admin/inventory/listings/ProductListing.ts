@@ -155,11 +155,11 @@ public constructor (searchRequest: SearchRequest){
             var searchRequest = searchRequest
 this.searchRequest= searchRequest;
     
-this.storeFronts= StoreFrontsEntity();
+this.storeFronts= new StoreFrontsEntity();
     
-this.staticPages= StaticPagesEntity();
+this.staticPages= new StaticPagesEntity();
     
-this.inventory= InventoryEntity();
+this.inventory= new InventoryEntity();
     
 }
 
@@ -304,7 +304,7 @@ StreamUtil.getInstance()!.close(idOutData);
                             
 
 
-                            throw Error("Could Not Create: " +file)
+                            throw new Error("Could Not Create: " +file)
 
                         }
                             
@@ -333,7 +333,7 @@ var staticPath = staticPath
 hashMap!.put(CommonSeps.getInstance()!.SPACE, StringUtil.getInstance()!.EMPTY_STRING);
     
 
-    var pageName: string = Replace(hashMap).
+    var pageName: string = new Replace(hashMap).
                             all(keywordData)!;
         
         
@@ -412,7 +412,7 @@ index < productListingPages!.length; index++)
                         if(index > 0)
                         
                                     {
-                                    indexStr= Integer(index).
+                                    indexStr= new Integer(index).
                             toString();
     
 
@@ -447,7 +447,7 @@ stringBuffer!.append(InputOutputTypeData.getInstance()!.DEFAULT);
                                     
 
 
-                            throw Error("Could Not Create Directory: " +staticPath)
+                            throw new Error("Could Not Create Directory: " +staticPath)
 
                                     }
                                 

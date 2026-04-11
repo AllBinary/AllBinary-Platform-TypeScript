@@ -39,7 +39,7 @@ public constructor (anyType: any = {}){
 
             super();
             var anyType = anyType
-geographicMapCellPositionEvent= GeographicMapCellPositionEvent(anyType, CellPositionFactory.getInstance()!.NONE);
+geographicMapCellPositionEvent= new GeographicMapCellPositionEvent(anyType, CellPositionFactory.getInstance()!.NONE);
     
 }
 

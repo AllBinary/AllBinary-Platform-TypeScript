@@ -56,13 +56,13 @@ export class TestInputAutomationWorker
 public constructor (){
 
             super();
-            this.captureWorker= ScreenCaptureImagesWorker();
+            this.captureWorker= new ScreenCaptureImagesWorker();
     
-this.changedPixelsImageComparisonResultsWorker= SaveImageComparisonWorker();
+this.changedPixelsImageComparisonResultsWorker= new SaveImageComparisonWorker();
     
-this.saveMotionRectanglesAsImagesWorker= SaveMotionRectanglesResultsWorker();
+this.saveMotionRectanglesAsImagesWorker= new SaveMotionRectanglesResultsWorker();
     
-this.moveMouseToFirstMotionRectanglesResultsWorker= TestInputForMotionRectanglesResultsWorker();
+this.moveMouseToFirstMotionRectanglesResultsWorker= new TestInputForMotionRectanglesResultsWorker();
     
 this.motionRectanglesWorker!.addListener(this.saveMotionRectanglesAsImagesWorker);
     

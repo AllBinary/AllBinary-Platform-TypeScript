@@ -64,7 +64,7 @@ export class PageValidation extends Validation
 public constructor (){
 
             super();
-            this.title= TitleValidation();
+            this.title= new TitleValidation();
     
 }
 
@@ -78,7 +78,7 @@ public constructor (document: Document){
         
 ;
     
-this.title= TitleValidation(node);
+this.title= new TitleValidation(node);
     
 }
 
@@ -93,7 +93,7 @@ this.getFormData(hashMap);
 
     public getFormData(hashMap: HashMap<any, any>){
 var hashMap = hashMap
-this.title= TitleValidation(hashMap);
+this.title= new TitleValidation(hashMap);
     
 }
 

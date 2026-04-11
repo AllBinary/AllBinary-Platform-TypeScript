@@ -52,7 +52,7 @@ export class MobileClientInformation extends AbeClientInformation {
         
 public constructor (name: string, version: string, specialName: string, shortName: string)                        
 
-                            : super(name, version, StringMaker().
+                            : super(name, version, new StringMaker().
                             append(specialName)!.append(CommonSeps.getInstance()!.SPACE)!.append(PartnerIdentifierFileUtil.getInstance()!.get())!.toString(), shortName){
 
             super();

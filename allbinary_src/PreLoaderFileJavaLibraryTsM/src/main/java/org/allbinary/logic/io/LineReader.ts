@@ -69,7 +69,7 @@ public constructor (fileName: string){
     
 this.fileName= fileName;
     
-idFile= AbFileInputStream(fileName);
+idFile= new AbFileInputStream(fileName);
     
 idFile!.read(bytes);
     
@@ -161,7 +161,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "hasNext", e);
                                     
 
 
-                            throw Error("next() should have been called first")
+                            throw new Error("next() should have been called first")
 
                                     }
                                 

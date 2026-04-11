@@ -233,7 +233,7 @@ stringBuffer!.append(EQUAL_QUOTE);
                                     }
                                 
                         else {
-                            columnValue= Replace(sqlStrings!.CLOSE_QUOTE, ESCAPE_QUOTES).
+                            columnValue= new Replace(sqlStrings!.CLOSE_QUOTE, ESCAPE_QUOTES).
                             all(columnValue);
     
 
@@ -383,7 +383,7 @@ stringBuffer!.append(this.EQUAL_QUOTE);
                                     }
                                 
                         else {
-                            columnValue= Replace(sqlStrings!.CLOSE_QUOTE, this.ESCAPE_QUOTES).
+                            columnValue= new Replace(sqlStrings!.CLOSE_QUOTE, this.ESCAPE_QUOTES).
                             all(columnValue);
     
 
@@ -631,7 +631,7 @@ i < size; i++)
 ;
     
 
-    var value: string = new .toCharArray();
+    var value: string = .toCharArray();
         
         
 ;
@@ -724,7 +724,7 @@ i < values.length -1; i++)
         
 ;
     
-value= Replace(this.sqlStrings!.ESCAPE, this.sqlStrings!.DOUBLE_ESCAPE).
+value= new Replace(this.sqlStrings!.ESCAPE, this.sqlStrings!.DOUBLE_ESCAPE).
                             all(value);
     
 stringBuffer!.append(value);
@@ -741,7 +741,7 @@ stringBuffer!.append(this.sqlStrings!.SINGLE_QUOTE_COMMA_SEP);
         
 ;
     
-value= Replace(this.sqlStrings!.ESCAPE, this.sqlStrings!.DOUBLE_ESCAPE).
+value= new Replace(this.sqlStrings!.ESCAPE, this.sqlStrings!.DOUBLE_ESCAPE).
                             all(value);
     
 stringBuffer!.append(value);
@@ -843,7 +843,7 @@ index < size; index++)
 ;
     
 
-    var value: string = new .toCharArray();
+    var value: string = .toCharArray();
         
         
 ;
@@ -897,7 +897,7 @@ stringBuffer!.append(sqlStrings!.CLOSE_QUOTE);
 
         while(rset.next())
         {
-result= HashMap<any, any>();
+result= new HashMap<any, any>();
     
 
     var columnCount: number = resultSetMetaData!.getColumnCount()!;
@@ -1059,7 +1059,7 @@ index < size; index++)
 ;
     
 
-    var value: string = new .toCharArray();
+    var value: string = .toCharArray();
         
         
 ;
@@ -1480,9 +1480,9 @@ stringBuffer!.append(sqlStrings!.CLOSE_QUOTE);
 
         while(rset.next())
         {
-result= HashMap<any, any>();
+result= new HashMap<any, any>();
     
-columnNames= Vector();
+columnNames= new Vector();
     
 columnCount= resultSetMetaData!.getColumnCount();
     
@@ -1639,9 +1639,9 @@ stringBuffer!.append(sqlStrings!.CLOSE_QUOTE);
 
         while(rset.next())
         {
-result= HashMap<any, any>();
+result= new HashMap<any, any>();
     
-columnNames= Vector();
+columnNames= new Vector();
     
 columnCount= resultSetMetaData!.getColumnCount();
     

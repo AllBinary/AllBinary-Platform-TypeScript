@@ -106,7 +106,7 @@ hasRead= true;
                                     
 
 
-                            throw Error("Read Failed")
+                            throw new Error("Read Failed")
 
                                     }
                                 

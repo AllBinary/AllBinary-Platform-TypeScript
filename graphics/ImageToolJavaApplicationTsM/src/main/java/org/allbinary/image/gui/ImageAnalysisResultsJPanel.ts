@@ -51,57 +51,57 @@ this.updateImageColorRangeResults(imageAnalysisResults);
 
 
     initComponents(){
-jLabel1= javax.swing.JLabel();
+jLabel1= new javax.swing.JLabel();
     
-jLabel2= javax.swing.JLabel();
+jLabel2= new javax.swing.JLabel();
     
-jLabel3= javax.swing.JLabel();
+jLabel3= new javax.swing.JLabel();
     
-percentMatchingJTextField= javax.swing.JTextField();
+percentMatchingJTextField= new javax.swing.JTextField();
     
-totalPixelsJTextField= javax.swing.JTextField();
+totalPixelsJTextField= new javax.swing.JTextField();
     
-matchingPixelsJTextField= javax.swing.JTextField();
+matchingPixelsJTextField= new javax.swing.JTextField();
     
-jComboBox1= javax.swing.JComboBox();
+jComboBox1= new javax.swing.JComboBox();
     
-jLabel4= javax.swing.JLabel();
+jLabel4= new javax.swing.JLabel();
     
-jLabel5= javax.swing.JLabel();
+jLabel5= new javax.swing.JLabel();
     
-jLabel6= javax.swing.JLabel();
+jLabel6= new javax.swing.JLabel();
     
-jLabel7= javax.swing.JLabel();
+jLabel7= new javax.swing.JLabel();
     
-avgRedJTextField= javax.swing.JTextField();
+avgRedJTextField= new javax.swing.JTextField();
     
-avgGreenJTextField= javax.swing.JTextField();
+avgGreenJTextField= new javax.swing.JTextField();
     
-avgBlueJTextField= javax.swing.JTextField();
+avgBlueJTextField= new javax.swing.JTextField();
     
-minGreenJTextField= javax.swing.JTextField();
+minGreenJTextField= new javax.swing.JTextField();
     
-jLabel8= javax.swing.JLabel();
+jLabel8= new javax.swing.JLabel();
     
-jLabel9= javax.swing.JLabel();
+jLabel9= new javax.swing.JLabel();
     
-jLabel10= javax.swing.JLabel();
+jLabel10= new javax.swing.JLabel();
     
-minRedJTextField= javax.swing.JTextField();
+minRedJTextField= new javax.swing.JTextField();
     
-minBlueJTextField= javax.swing.JTextField();
+minBlueJTextField= new javax.swing.JTextField();
     
-jLabel11= javax.swing.JLabel();
+jLabel11= new javax.swing.JLabel();
     
-jLabel12= javax.swing.JLabel();
+jLabel12= new javax.swing.JLabel();
     
-jLabel13= javax.swing.JLabel();
+jLabel13= new javax.swing.JLabel();
     
-maxRedJTextField= javax.swing.JTextField();
+maxRedJTextField= new javax.swing.JTextField();
     
-maxGreenJTextField= javax.swing.JTextField();
+maxGreenJTextField= new javax.swing.JTextField();
     
-maxBlueJTextField= javax.swing.JTextField();
+maxBlueJTextField= new javax.swing.JTextField();
     
 jLabel1!.setText("Matching Pixels:");
     
@@ -115,7 +115,7 @@ totalPixelsJTextField!.setEditable(false);
     
 matchingPixelsJTextField!.setEditable(false);
     
-jComboBox1!.setModel(javax.swing.DefaultComboBoxModel(
+jComboBox1!.setModel(new javax.swing.DefaultComboBoxModel(
                                                 [
                                                     CommonPhoneStrings.getInstance()!.ONE;
         
@@ -191,7 +191,7 @@ this.matchingPixelsJTextField!.setText(imageColorRangeResults!.getMatchingPixels
 this.totalPixelsJTextField!.setText(imageColorRangeResults!.getTotalPixelsChecked() as Long.
                             toString());
     
-this.percentMatchingJTextField!.setText(Float(imageColorRangeResults!.getPercent()).
+this.percentMatchingJTextField!.setText(new Float(imageColorRangeResults!.getPercent()).
                             toString());
     
 
@@ -200,13 +200,13 @@ this.percentMatchingJTextField!.setText(Float(imageColorRangeResults!.getPercent
         
 ;
     
-this.avgRedJTextField!.setText(Float(imageColorResults!.getColorAverage()!.getAvgRed()).
+this.avgRedJTextField!.setText(new Float(imageColorResults!.getColorAverage()!.getAvgRed()).
                             toString());
     
-this.avgGreenJTextField!.setText(Float(imageColorResults!.getColorAverage()!.getAvgGreen()).
+this.avgGreenJTextField!.setText(new Float(imageColorResults!.getColorAverage()!.getAvgGreen()).
                             toString());
     
-this.avgBlueJTextField!.setText(Float(imageColorResults!.getColorAverage()!.getAvgBlue()).
+this.avgBlueJTextField!.setText(new Float(imageColorResults!.getColorAverage()!.getAvgBlue()).
                             toString());
     
 this.minRedJTextField!.setText(imageColorResults!.getColorRange()!.getMinRed() as Long.

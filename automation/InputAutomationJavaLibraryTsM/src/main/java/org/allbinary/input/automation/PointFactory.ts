@@ -47,7 +47,7 @@ var y = y
                                 )
                         
                                     {
-                                    point= pointArray[x]![y]= Point(x, y);
+                                    point= pointArray[x]![y]= new Point(x, y);
     
 
                                     }

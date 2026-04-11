@@ -129,7 +129,7 @@ WorkFlowEntityFactory.getInstance()!.create2()!.delete(this.workFlowInterface!.g
 
 
 
-                            throw Error(e)
+                            throw new Error(e)
 
                 //: 
 } catch(ex) 

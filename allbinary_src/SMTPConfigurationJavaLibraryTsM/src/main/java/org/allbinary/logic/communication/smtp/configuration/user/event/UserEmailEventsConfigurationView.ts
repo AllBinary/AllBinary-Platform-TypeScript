@@ -71,7 +71,7 @@ public constructor (node: Node){
 
             super();
             var node = node
-this.userEmailEventsConfigurationInterface= UserEmailEventsConfiguration() as UserEmailEventsConfigurationInterface;
+this.userEmailEventsConfigurationInterface= new UserEmailEventsConfiguration() as UserEmailEventsConfigurationInterface;
     
 
     var childNodeList: NodeList = node.getChildNodes()!;

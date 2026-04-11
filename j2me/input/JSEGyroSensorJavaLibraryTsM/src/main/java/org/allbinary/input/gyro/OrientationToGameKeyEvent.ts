@@ -45,7 +45,7 @@ public constructor (){
                         if(Features.getInstance()!.isFeature(SensorFeatureFactory.getInstance()!.NO_ORIENTATION))
                         
                                     {
-                                    allBinaryGyroSensor= NoGyroSensor();
+                                    allBinaryGyroSensor= new NoGyroSensor();
     
 
                                     }
@@ -54,7 +54,7 @@ public constructor (){
                             
 
 
-                            throw Error("Not Such Feature")
+                            throw new Error("Not Such Feature")
 
                         }
                             

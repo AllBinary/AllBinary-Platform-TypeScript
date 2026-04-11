@@ -128,7 +128,7 @@ var categoryInterface = categoryInterface
                                     
 
 
-                            throw Error("Could Not Create Directory")
+                            throw new Error("Could Not Create Directory")
 
                                     }
                                 
@@ -171,7 +171,7 @@ this.save(categoryInterface);
                             
 
 
-                            throw Error("Null Category")
+                            throw new Error("Null Category")
 
                         }
                             
@@ -518,7 +518,7 @@ index < categoryNodeList!.getLength(); index++)
                         
                                     {
                                     
-    var categoryPropertiesInterface: CategoryPropertiesInterface = CategoryProperties(categoryNode) as CategoryPropertiesInterface;
+    var categoryPropertiesInterface: CategoryPropertiesInterface = new CategoryProperties(categoryNode) as CategoryPropertiesInterface;
         
         
 ;

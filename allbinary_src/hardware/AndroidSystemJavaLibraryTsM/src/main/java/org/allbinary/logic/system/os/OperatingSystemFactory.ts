@@ -103,7 +103,7 @@ private constructor (){
     
 genericOperatingSystem= AndroidOperatingSystemFactory.getInstance()!.getOperatingSystemInstance();
     
-logUtil!.put(StringMaker().
+logUtil!.put(new StringMaker().
                             append("Operating System Info: ")!.append(genericOperatingSystem!.toString())!.toString(), this, commonStrings!.GET_INSTANCE);
     
 
@@ -113,7 +113,7 @@ logUtil!.put(StringMaker().
                             
 
 
-                            throw Error(StringMaker().
+                            throw new Error(new StringMaker().
                             append("OS Not Supported: ")!.append(osName)!.toString())
 
                         }

@@ -121,7 +121,7 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return ModDomHelper.createTextNode(document, DomData.INDEX, Integer(index).
+                        return ModDomHelper.createTextNode(document, DomData.INDEX, new Integer(index).
                             toString());
 
                         ;
@@ -329,7 +329,7 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, name, value));
                             
 
 
-                            throw Error("HashMap value is the wrong instance and is: " +ClassUtil.viewAll(anyType, CommonSeps.getInstance()!.NEW_LINE))
+                            throw new Error("HashMap value is the wrong instance and is: " +ClassUtil.viewAll(anyType, CommonSeps.getInstance()!.NEW_LINE))
 
                         }
                             

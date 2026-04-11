@@ -168,7 +168,7 @@ logUtil!.put(stringBuffer!.toString(), this, "generateComponentsFromObjectConfig
                                     
 
 
-                            throw Error("No Pages Generated For Template.")
+                            throw new Error("No Pages Generated For Template.")
 
                                     }
                                 

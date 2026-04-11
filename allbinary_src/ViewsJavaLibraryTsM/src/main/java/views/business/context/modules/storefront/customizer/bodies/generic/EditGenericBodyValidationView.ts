@@ -72,7 +72,7 @@ public constructor (transformInfoInterface: TransformInfoInterface)
         
 ;
     
-this.body= GenericBodyValidation(document);
+this.body= new GenericBodyValidation(document);
     
 
     var isValid: Boolean = this.body.isValid()!;

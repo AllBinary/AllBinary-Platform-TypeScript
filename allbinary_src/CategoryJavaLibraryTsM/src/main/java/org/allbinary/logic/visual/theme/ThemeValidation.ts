@@ -295,7 +295,7 @@ this.init(rootStoreThemeCategoryInterface);
             
     init(storeThemeCategoryInterface: StoreThemeCategoryInterface){
 var storeThemeCategoryInterface = storeThemeCategoryInterface
-this.fileAbPath= AbPath(storeThemeCategoryInterface!.getRootFilePath()!.toString() +this.categoryAbPath!.toString());
+this.fileAbPath= new AbPath(storeThemeCategoryInterface!.getRootFilePath()!.toString() +this.categoryAbPath!.toString());
     
 this.webAppAbPath= storeThemeCategoryInterface!.getWebAppPath();
     
@@ -383,7 +383,7 @@ this.webAppAbPath= storeThemeCategoryInterface!.getWebAppPath();
         
 ;
     
-this.styleValidationInterface= CssStyleValidation(document);
+this.styleValidationInterface= new CssStyleValidation(document);
     
 
                                     }

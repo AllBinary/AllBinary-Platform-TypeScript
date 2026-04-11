@@ -183,7 +183,7 @@ var vector = vector
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Vector();
+                        return new Vector();
     
 
                                     }
@@ -211,7 +211,7 @@ var file = file
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return getLock(AbFileOutputStream(file, true));
+                        return getLock(new AbFileOutputStream(file, true));
 
                         ;
     

@@ -52,7 +52,7 @@ export class NewUserFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return User();
+                        return new User();
     
 }
 
@@ -76,7 +76,7 @@ var transformInfoInterface = transformInfoInterface
 ;
     
 
-    var hashMap: HashMap<any, any> = RequestParams(httpServletRequest).
+    var hashMap: HashMap<any, any> = new RequestParams(httpServletRequest).
                             toHashMap()!;
         
         
@@ -115,7 +115,7 @@ var propertiesHashMap = propertiesHashMap
                         
                                     {
                                     
-    var requestHashMap: HashMap<any, any> = RequestParams(httpServletRequest).
+    var requestHashMap: HashMap<any, any> = new RequestParams(httpServletRequest).
                             toHashMap()!;
         
         
@@ -146,7 +146,7 @@ requestHashMap!.put(UserRoleData.NAME.toString(), roleString);
                             
 
 
-                            throw Error("Null HashMap")
+                            throw new Error("Null HashMap")
 
                         }
                             

@@ -118,7 +118,7 @@ logUtil!.put(this.commonStrings!.EXCEPTION, this, "start", e);
 ;
     
 
-    var serviceRegistration: ServiceRegistration = context.registerService(CRYPT_REGISTRY_NAME, CryptServiceFactory(), properties)!;
+    var serviceRegistration: ServiceRegistration = context.registerService(CRYPT_REGISTRY_NAME, new CryptServiceFactory(), properties)!;
         
         
 ;
@@ -136,7 +136,7 @@ serviceReference= context.getServiceReference(CRYPT_REGISTRY_NAME);
                                     null
                                 )
                         
-                                    throw Error("No Such Service Reference")
+                                    throw new Error("No Such Service Reference")
 }
 
 

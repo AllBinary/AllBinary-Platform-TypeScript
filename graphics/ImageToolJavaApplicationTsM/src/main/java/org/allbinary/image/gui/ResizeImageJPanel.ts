@@ -98,7 +98,7 @@ numberStringArray[index]= index.toString();
     
 }
 
-jComboBox1!.setModel(javax.swing.DefaultComboBoxModel(numberStringArray));
+jComboBox1!.setModel(new javax.swing.DefaultComboBoxModel(numberStringArray));
     
 
     var araster: Raster = this.imageProcessorInput!.getBufferedImageArray()[0]!.getAlphaRaster()!;
@@ -127,7 +127,7 @@ jComboBox1!.setModel(javax.swing.DefaultComboBoxModel(numberStringArray));
 
 
     public process(){
-object: Thread()
+new object: Thread()
                                 {
                                 
     public run(){
@@ -276,7 +276,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
 
 
     public update(){
-object: Thread()
+new object: Thread()
                                 {
                                 
     public run(){
@@ -342,7 +342,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
 
 
     public updateFor16Above(){
-object: Thread()
+new object: Thread()
                                 {
                                 
     public run(){
@@ -408,7 +408,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
 
 
     public updateFor16Below(){
-object: Thread()
+new object: Thread()
                                 {
                                 
     public run(){
@@ -491,31 +491,31 @@ this.imageProcessorInput= imageProcessorInput;
 
 
     initComponents(){
-jLabel1= javax.swing.JLabel();
+jLabel1= new javax.swing.JLabel();
     
-jComboBox1= javax.swing.JComboBox<>();
+jComboBox1= new javax.swing.JComboBox<>();
     
-aboveJButton= javax.swing.JButton();
+aboveJButton= new javax.swing.JButton();
     
-jTextField1= javax.swing.JTextField();
+jTextField1= new javax.swing.JTextField();
     
-jLabel2= javax.swing.JLabel();
+jLabel2= new javax.swing.JLabel();
     
-jLabel3= javax.swing.JLabel();
+jLabel3= new javax.swing.JLabel();
     
-jTextField2= javax.swing.JTextField();
+jTextField2= new javax.swing.JTextField();
     
-updateJButton= javax.swing.JButton();
+updateJButton= new javax.swing.JButton();
     
-floatPercentJTextField= javax.swing.JTextField();
+floatPercentJTextField= new javax.swing.JTextField();
     
-adjustFor16AboveJButton= javax.swing.JButton();
+adjustFor16AboveJButton= new javax.swing.JButton();
     
-adjustFor16BelowJButton= javax.swing.JButton();
+adjustFor16BelowJButton= new javax.swing.JButton();
     
 jLabel1!.setText("Percent:");
     
-jComboBox1!.setModel(javax.swing.DefaultComboBoxModel<>(
+jComboBox1!.setModel(new javax.swing.DefaultComboBoxModel<>(
                                                 [
                                                     "Item 1","Item 2","Item 3","Item 4";
         
@@ -524,7 +524,7 @@ jComboBox1!.setModel(javax.swing.DefaultComboBoxModel<>(
     
 aboveJButton!.setText("Process");
     
-aboveJButton!.addActionListener(object: java.awt.event.ActionListener()
+aboveJButton!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -542,7 +542,7 @@ jLabel3!.setText("Height:");
     
 updateJButton!.setText("Update");
     
-updateJButton!.addActionListener(object: java.awt.event.ActionListener()
+updateJButton!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -556,11 +556,11 @@ updateJButtonActionPerformed(evt);
     
 floatPercentJTextField!.setText("-1.000000");
     
-floatPercentJTextField!.setMinimumSize(java.awt.Dimension(120, 22));
+floatPercentJTextField!.setMinimumSize(new java.awt.Dimension(120, 22));
     
 adjustFor16AboveJButton!.setText("Adjust for 16 Above");
     
-adjustFor16AboveJButton!.addActionListener(object: java.awt.event.ActionListener()
+adjustFor16AboveJButton!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -574,7 +574,7 @@ adjustFor16AboveJButtonActionPerformed(evt);
     
 adjustFor16BelowJButton!.setText("Adjust for 16 Below");
     
-adjustFor16BelowJButton!.addActionListener(object: java.awt.event.ActionListener()
+adjustFor16BelowJButton!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){

@@ -49,7 +49,7 @@ export class TrackingEventCircularStaticPool
         
 
     public init(){
-EVENT_POOL.init(TrackingEventFactory());
+EVENT_POOL.init(new TrackingEventFactory());
     
 }
 

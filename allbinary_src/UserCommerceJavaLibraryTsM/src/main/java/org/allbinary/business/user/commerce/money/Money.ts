@@ -137,7 +137,7 @@ this.units= this.units.longValue() -convertUsdToUnits(usDollarStr) as Long;
 
     public multiply(multiplier: Float){
 var multiplier = multiplier
-this.units= Float(this.units.longValue() *multiplier.toFloat()).
+this.units= new Float(this.units.longValue() *multiplier.toFloat()).
                             longValue() as Long;
     
 }

@@ -98,7 +98,7 @@ this.offset= myFont!.stringWidth(prependString) +myFont!.charWidth();
     
 this.valueString= PrimitiveLongSingleton.getInstance()!.NUMBER_CHAR_ARRAYS[0]!;
     
-this.primitiveLongUtil= PrimitiveLongUtil(max +1);
+this.primitiveLongUtil= new PrimitiveLongUtil(max +1);
     
 this.max= max;
     
@@ -135,7 +135,7 @@ this.offset= myFont!.stringWidth(prependString) +myFont!.charWidth();
     
 this.valueString= PrimitiveLongSingleton.getInstance()!.NUMBER_CHAR_ARRAYS[0]!;
     
-this.primitiveLongUtil= PrimitiveLongUtil(max +1);
+this.primitiveLongUtil= new PrimitiveLongUtil(max +1);
     
 this.max= max;
     
@@ -148,7 +148,7 @@ this.value= 0;
                                     
 
 
-                            throw Error(BasicHudFactory.getInstance()!.DIRECTION_EXCEPTION)
+                            throw new Error(BasicHudFactory.getInstance()!.DIRECTION_EXCEPTION)
 
                                     }
                                 

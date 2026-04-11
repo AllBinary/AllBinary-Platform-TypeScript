@@ -62,7 +62,7 @@ var a_Name = a_Name
                             
 
 
-                            throw Error("No Such MediaData")
+                            throw new Error("No Such MediaData")
 
                         }
                             

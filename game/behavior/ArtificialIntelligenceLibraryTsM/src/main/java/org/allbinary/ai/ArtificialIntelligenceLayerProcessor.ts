@@ -32,7 +32,7 @@ export class ArtificialIntelligenceLayerProcessor extends LayerProcessor {
         
 public constructor ()                        
 
-                            : super(ArtificialIntelligenceLayerManager()){
+                            : super(new ArtificialIntelligenceLayerManager()){
 
             super();
             

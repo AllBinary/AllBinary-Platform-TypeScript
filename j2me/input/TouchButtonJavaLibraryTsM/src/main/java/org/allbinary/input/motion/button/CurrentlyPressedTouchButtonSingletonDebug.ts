@@ -101,7 +101,7 @@ stringBuffer!.append(append);
     
 this.append= stringBuffer!.toString();
     
-this.string= StringMaker().
+this.string= new StringMaker().
                             append(listString)!.append(this.append)!.toString();
     
 }
@@ -109,10 +109,10 @@ this.string= StringMaker().
 
     append(append: string){
 var append = append
-this.append= StringMaker().
+this.append= new StringMaker().
                             append(this.append)!.append(append)!.toString();
     
-this.string= StringMaker().
+this.string= new StringMaker().
                             append(listString)!.append(this.append)!.toString();
     
 }
@@ -121,10 +121,10 @@ this.string= StringMaker().
     public clearLog(x: number, y: number){
 var x = x
 var y = y
-this.append= StringMaker().
+this.append= new StringMaker().
                             append(GPoint.toStringStatic(x, y, 0))!.append(CommonSeps.getInstance()!.SPACE)!.toString();
     
-this.string= StringMaker().
+this.string= new StringMaker().
                             append(listString)!.append(this.append)!.toString();
     
 }
@@ -181,7 +181,7 @@ var index = index
     
 this.listString= list.toString();
     
-this.string= StringMaker().
+this.string= new StringMaker().
                             append(listString)!.append(this.append)!.toString();
     
 
@@ -203,7 +203,7 @@ var touchButtonInput = touchButtonInput
     
 this.listString= list.toString();
     
-this.string= StringMaker().
+this.string= new StringMaker().
                             append(listString)!.append(this.append)!.toString();
     
 
@@ -221,7 +221,7 @@ super.add(touchButtonInput);
     
 this.listString= list.toString();
     
-this.string= StringMaker().
+this.string= new StringMaker().
                             append(listString)!.append(this.append)!.toString();
     
 }

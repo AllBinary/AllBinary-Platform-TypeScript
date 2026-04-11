@@ -157,9 +157,9 @@ stringBuffer!.append(FREEBLISKET_PATH_GLOBALS.getInstance()!.THEMEPATH);
         
 ;
     
-this.webAppAbPath= AbPath(httpServletRequest!.getContextPath() +abPath!.toString());
+this.webAppAbPath= new AbPath(httpServletRequest!.getContextPath() +abPath!.toString());
     
-this.setRootFilePath(AbPath(URLGLOBALS.getMainPath() +abPath!.toString()));
+this.setRootFilePath(new AbPath(URLGLOBALS.getMainPath() +abPath!.toString()));
     
 }
 

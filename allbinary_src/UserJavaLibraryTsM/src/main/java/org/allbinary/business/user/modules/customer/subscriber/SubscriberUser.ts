@@ -44,7 +44,7 @@ public constructor ()
 
                             //For kotlin this is before the body of the constructor.
                     
-this.subscription= Subscription();
+this.subscription= new Subscription();
     
 }
 
@@ -58,7 +58,7 @@ public constructor (userHashMap: HashMap<any, any>)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.subscription= Subscription();
+this.subscription= new Subscription();
     
 }
 

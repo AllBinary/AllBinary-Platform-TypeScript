@@ -54,7 +54,7 @@ var pageContext = pageContext
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return PaymentProcessHelper(hashMap, pageContext);
+                        return new PaymentProcessHelper(hashMap, pageContext);
     
 
                 //: 

@@ -36,7 +36,7 @@ export class PlatformBitmapBaseFactory
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 

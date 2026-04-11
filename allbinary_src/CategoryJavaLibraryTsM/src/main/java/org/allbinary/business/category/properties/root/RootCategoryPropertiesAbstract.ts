@@ -94,7 +94,7 @@ var value = value
 
 
 
-                            throw Error("No Value Allowed")
+                            throw new Error("No Value Allowed")
 }
 
 
@@ -105,7 +105,7 @@ var value = value
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -116,7 +116,7 @@ var value = value
 
 
 
-                            throw Error("No Value Allowed")
+                            throw new Error("No Value Allowed")
 }
 
 
@@ -126,7 +126,7 @@ var value = value
 
 
 
-                            throw Error("No Value Allowed")
+                            throw new Error("No Value Allowed")
 }
 
 
@@ -136,7 +136,7 @@ var value = value
 
 
 
-                            throw Error("No A Real Root")
+                            throw new Error("No A Real Root")
 }
 
 
@@ -146,7 +146,7 @@ var value = value
 
 
 
-                            throw Error("Root but not implemented")
+                            throw new Error("Root but not implemented")
 }
 
 
@@ -157,7 +157,7 @@ var categoryHierarchyInterface = categoryHierarchyInterface
 
 
 
-                            throw Error("Not Root")
+                            throw new Error("Not Root")
 }
 
 
@@ -167,7 +167,7 @@ var categoryHierarchyInterface = categoryHierarchyInterface
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return AbPath();
+                        return new AbPath();
     
 }
 

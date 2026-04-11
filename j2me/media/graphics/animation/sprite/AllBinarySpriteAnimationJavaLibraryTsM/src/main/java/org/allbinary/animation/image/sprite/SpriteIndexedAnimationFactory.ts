@@ -232,7 +232,7 @@ public constructor (image: Image, width: number, height: number, animationBehavi
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return AdjustedSpriteIndexedAnimation(sprite, this.getImage(), this.basicColorArray, this.animationFactoryInitializationVisitor!.dx, this.animationFactoryInitializationVisitor!.dy, this.animationBehaviorFactory!.getOrCreateInstance());
+                        return new AdjustedSpriteIndexedAnimation(sprite, this.getImage(), this.basicColorArray, this.animationFactoryInitializationVisitor!.dx, this.animationFactoryInitializationVisitor!.dy, this.animationBehaviorFactory!.getOrCreateInstance());
     
 
                                     }
@@ -242,7 +242,7 @@ public constructor (image: Image, width: number, height: number, animationBehavi
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return SpriteIndexedAnimation(sprite, this.getImage(), this.basicColorArray, this.animationBehaviorFactory!.getOrCreateInstance());
+                        return new SpriteIndexedAnimation(sprite, this.getImage(), this.basicColorArray, this.animationBehaviorFactory!.getOrCreateInstance());
     
 
                         }

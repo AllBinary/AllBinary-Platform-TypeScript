@@ -92,7 +92,7 @@ export class PaymentGatewayEntity extends AbSqlBean
         
 public constructor ()                        
 
-                            : super(UserDbInitInfo()){
+                            : super(new UserDbInitInfo()){
 
             super();
             
@@ -132,10 +132,10 @@ var paymentGatewayInterface = paymentGatewayInterface
         
 ;
     
-vector.add(PaymentGatewayIdGenerator().
+vector.add(new PaymentGatewayIdGenerator().
                             getNext());
     
-vector.addAll(PaymentGatewayEncryptedMapping(paymentGatewayInterface).
+vector.addAll(new PaymentGatewayEncryptedMapping(paymentGatewayInterface).
                             toVector());
     
 
@@ -145,7 +145,7 @@ vector.addAll(PaymentGatewayEncryptedMapping(paymentGatewayInterface).
 ;
     
 
-    var time: string = new calendar.getTimeInMillis() as Long.
+    var time: string = calendar.getTimeInMillis() as Long.
                             toString();
         
         
@@ -195,7 +195,7 @@ var paymentGatewayInterface = paymentGatewayInterface
 ;
     
 
-    var time: string = new calendar.getTimeInMillis() as Long.
+    var time: string = calendar.getTimeInMillis() as Long.
                             toString();
         
         
@@ -222,12 +222,12 @@ whereKeyValuePairs!.put(PaymentGatewayData.NAME.toString(), paymentGatewayInterf
                                     
 
 
-                            throw Error("Don't update TimeCreated for update")
+                            throw new Error("Don't update TimeCreated for update")
 
                                     }
                                 
 
-    var updateHashMap: HashMap<any, any> = PaymentGatewayEncryptedMapping(paymentGatewayInterface).
+    var updateHashMap: HashMap<any, any> = new PaymentGatewayEncryptedMapping(paymentGatewayInterface).
                             toHashMap()!;
         
         
@@ -408,7 +408,7 @@ paymentGatewayHashMap!.put(PaymentGatewayData.SPECIAL8.toString(), superCrypt!.d
 paymentGatewayHashMap!.put(PaymentGatewayData.SPECIAL9.toString(), superCrypt!.decrypt(special9));
     
 
-    var paymentGatewayInterface: PaymentGatewayInterface = PaymentGatewayInterfaceFactory().
+    var paymentGatewayInterface: PaymentGatewayInterface = new PaymentGatewayInterfaceFactory().
                             getInstance(paymentGatewayHashMap)!;
         
         
@@ -437,7 +437,7 @@ paymentGatewayHashMap!.put(PaymentGatewayData.SPECIAL9.toString(), superCrypt!.d
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return PaymentGatewayInterfaceFactory().
+                        return new PaymentGatewayInterfaceFactory().
                             getInstance(paymentType);
 
                         ;
@@ -550,7 +550,7 @@ paymentGatewayVector!.add(paymentType);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Vector();
+                        return new Vector();
     
 
                         }

@@ -78,7 +78,7 @@ public constructor (imageSearchConstraintsInterface: ImageComparisonSearchConstr
 
             super();
             var imageSearchConstraintsInterface = imageSearchConstraintsInterface
-this.imageComparisonInfoVector= Vector();
+this.imageComparisonInfoVector= new Vector();
     
 this.imageSearchConstraintsInterface= imageSearchConstraintsInterface;
     

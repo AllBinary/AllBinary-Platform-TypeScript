@@ -33,11 +33,11 @@ export class FileJDialog extends javax.swing.JDialog {
 
     public static main(args: string[]){
 var args = args
-java.awt.EventQueue.invokeLater(object: ARunnable()
+java.awt.EventQueue.invokeLater(new object: ARunnable()
                                 {
                                 
     public run(){
-FileJDialog(javax.swing.JFrame(), true).
+new FileJDialog(new javax.swing.JFrame(), true).
                             setVisible(true);
     
 }
@@ -94,11 +94,11 @@ this.finishedListenerInterface= finishedListenerInterface;
 
 
     initComponents(){
-jFileChooser1= javax.swing.JFileChooser();
+jFileChooser1= new javax.swing.JFileChooser();
     
 setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
     
-jFileChooser1!.addActionListener(object: java.awt.event.ActionListener()
+jFileChooser1!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){

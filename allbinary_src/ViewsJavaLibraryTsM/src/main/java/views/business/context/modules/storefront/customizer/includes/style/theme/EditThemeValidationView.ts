@@ -121,7 +121,7 @@ public constructor (transformInfoInterface: TransformInfoInterface)
         
 ;
     
-this.validationInterface= StoreThemeCategoryPathValidationView(storeThemeCategoryInterface as StoreThemeCategoryInterface);
+this.validationInterface= new StoreThemeCategoryPathValidationView(storeThemeCategoryInterface as StoreThemeCategoryInterface);
     
 isValid= this.validationInterface!.isValid();
     

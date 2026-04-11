@@ -27,11 +27,11 @@ export class BasicTextJDialog extends javax.swing.JDialog {
 
     public static main(args: string[]){
 var args = args
-java.awt.EventQueue.invokeLater(object: ARunnable()
+java.awt.EventQueue.invokeLater(new object: ARunnable()
                                 {
                                 
     public run(){
-BasicTextJDialog(javax.swing.JFrame(), true, "Test").
+new BasicTextJDialog(new javax.swing.JFrame(), true, "Test").
                             setVisible(true);
     
 }
@@ -87,15 +87,15 @@ this.textJLabel!.setText(text);
 
 
     initComponents(){
-jButton1= javax.swing.JButton();
+jButton1= new javax.swing.JButton();
     
-textJLabel= javax.swing.JLabel();
+textJLabel= new javax.swing.JLabel();
     
 setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
     
 jButton1!.setText("OK");
     
-jButton1!.addActionListener(object: java.awt.event.ActionListener()
+jButton1!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){

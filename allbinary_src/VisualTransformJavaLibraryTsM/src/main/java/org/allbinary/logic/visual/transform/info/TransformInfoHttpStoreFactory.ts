@@ -60,7 +60,7 @@ var pageContext = pageContext
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return TransformInfoHttpStore(databaseHashMap, propertiesHashMap, pageContext);
+                        return new TransformInfoHttpStore(databaseHashMap, propertiesHashMap, pageContext);
     
 }
 

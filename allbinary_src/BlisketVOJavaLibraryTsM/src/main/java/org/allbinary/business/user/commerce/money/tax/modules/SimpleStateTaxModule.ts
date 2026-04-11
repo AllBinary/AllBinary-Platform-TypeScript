@@ -129,7 +129,7 @@ this.storeFrontInterface= storeFrontInterface;
 ;
     
 
-    var data: string = CryptFileReader(TransformInfoObjectConfigData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoObjectConfigData.getInstance()!.ENCRYPTED_EXTENSION).
+    var data: string = new CryptFileReader(TransformInfoObjectConfigData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoObjectConfigData.getInstance()!.ENCRYPTED_EXTENSION).
                             get(fileAbPath)!;
         
         
@@ -235,7 +235,7 @@ index < nodeList!.getLength(); index++)
 ;
     
 
-    var taxRateFloat: Float = new Float(Float(taxRate).
+    var taxRateFloat: Float = new Float(new Float(taxRate).
                             toFloat() *.01);
         
         
@@ -259,7 +259,7 @@ index < nodeList!.getLength(); index++)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Float(0);
+                        return new Float(0);
     
 }
 
@@ -280,7 +280,7 @@ this.storeFrontInterface= storeFrontInterface;
 ;
     
 
-    var data: string = CryptFileReader(TransformInfoObjectConfigData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoObjectConfigData.getInstance()!.ENCRYPTED_EXTENSION).
+    var data: string = new CryptFileReader(TransformInfoObjectConfigData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoObjectConfigData.getInstance()!.ENCRYPTED_EXTENSION).
                             get(fileAbPath)!;
         
         

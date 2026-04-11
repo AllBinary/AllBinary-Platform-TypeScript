@@ -76,7 +76,7 @@ var weblisketSession = weblisketSession
                                 
 this.getBaseNode()!.appendChild(StoreFrontViewFactory.getInstance(storeName)!.toXmlNode(this.getDoc()));
     
-this.getBaseNode()!.appendChild(RequestParams(pageContext!.getRequest();
+this.getBaseNode()!.appendChild(new RequestParams(pageContext!.getRequest();
 
                          as HttpServletRequest).
                             toXmlNode(this.getDoc()));

@@ -117,7 +117,7 @@ private constructor (){
                         )
                         
                                     {
-                                    logUtil!.put(NO_COPY, this, commonStrings!.CONSTRUCTOR, Error());
+                                    logUtil!.put(NO_COPY, this, commonStrings!.CONSTRUCTOR, new Error());
     
 
 
@@ -153,7 +153,7 @@ private constructor (){
                             
 
 
-                            throw Error("Not Mutable")
+                            throw new Error("Not Mutable")
 
                         }
                             
@@ -172,7 +172,7 @@ private constructor (){
                         )
                         
                                     {
-                                    logUtil!.put(NO_COPY, this, commonStrings!.CONSTRUCTOR, Error());
+                                    logUtil!.put(NO_COPY, this, commonStrings!.CONSTRUCTOR, new Error());
     
 
 
@@ -263,7 +263,7 @@ graphics.drawImage(originalImage, halfWidthDelta, halfHeightDelta, anchor);
                             
 
 
-                            throw Error("Not Mutable")
+                            throw new Error("Not Mutable")
 
                         }
                             

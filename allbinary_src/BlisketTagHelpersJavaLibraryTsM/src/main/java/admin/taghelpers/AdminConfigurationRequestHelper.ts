@@ -85,7 +85,7 @@ this.request= pageContext!.getRequest();
 ;
     
 
-    var adminConfigurationInterface: AdminConfigurationInterface = AdminConfiguration(this.request) as AdminConfigurationInterface;
+    var adminConfigurationInterface: AdminConfigurationInterface = new AdminConfiguration(this.request) as AdminConfigurationInterface;
         
         
 ;
@@ -201,7 +201,7 @@ adminConfigurationInterface!.write();
 ;
     
 
-    var adminConfigurationInterface: AdminConfigurationInterface = AdminConfiguration(this.request) as AdminConfigurationInterface;
+    var adminConfigurationInterface: AdminConfigurationInterface = new AdminConfiguration(this.request) as AdminConfigurationInterface;
         
         
 ;

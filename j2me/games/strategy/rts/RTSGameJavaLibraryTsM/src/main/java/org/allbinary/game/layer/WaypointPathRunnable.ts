@@ -66,7 +66,7 @@ public constructor (){
                                     
 
 
-                            throw Error("Should never be running here")
+                            throw new Error("Should never be running here")
 
                                     }
                                 

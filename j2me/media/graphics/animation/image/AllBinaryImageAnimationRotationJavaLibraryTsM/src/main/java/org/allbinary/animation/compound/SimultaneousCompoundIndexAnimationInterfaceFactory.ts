@@ -105,7 +105,7 @@ animationInterfaceArray[index]= this.basicAnimationInterfaceFactoryInterfaceArra
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return SimultaneousCompoundIndexAnimation(animationInterfaceArray, this.animationBehaviorFactory!.getOrCreateInstance());
+                        return new SimultaneousCompoundIndexAnimation(animationInterfaceArray, this.animationBehaviorFactory!.getOrCreateInstance());
     
 }
 

@@ -122,7 +122,7 @@ this.setIsOn(.
                             
 
 
-                            throw Error("Action Script Condition Unknown Node")
+                            throw new Error("Action Script Condition Unknown Node")
 
                         }
                             
@@ -135,7 +135,7 @@ this.setIsOn(.
                             
 
 
-                            throw Error("Action Script Condition Node Null")
+                            throw new Error("Action Script Condition Node Null")
 
                         }
                             
@@ -158,7 +158,7 @@ this.init();
 
 
     init(){
-this.alwaysActionScriptConditionJPanel= AlwaysActionScriptConditionJPanel(this);
+this.alwaysActionScriptConditionJPanel= new AlwaysActionScriptConditionJPanel(this);
     
 }
 

@@ -167,7 +167,7 @@ export class AdvancedRTSGameLayer extends RTSLayer
         
 public constructor (remoteInfo: RemoteInfo, parentLayer: PathFindingLayerInterface, groupInterface: Group[], rootName: string, name: string, healthInterface: Health, rtsFormInput: RTSFormInput, animationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, emptyAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, baseAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, buildAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, verticleBuildAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface: ProceduralAnimationInterfaceFactoryInterface, rectangle: Rectangle, x: number, y: number)                        
 
-                            : this(remoteInfo, parentLayer, groupInterface, rootName, name, healthInterface, rtsFormInput, animationInterfaceFactoryInterface, emptyAnimationInterfaceFactoryInterface, baseAnimationInterfaceFactoryInterface, buildAnimationInterfaceFactoryInterface, verticleBuildAnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface, rectangle, x, y, TileLayerPositionIntoViewPosition()){
+                            : this(remoteInfo, parentLayer, groupInterface, rootName, name, healthInterface, rtsFormInput, animationInterfaceFactoryInterface, emptyAnimationInterfaceFactoryInterface, baseAnimationInterfaceFactoryInterface, buildAnimationInterfaceFactoryInterface, verticleBuildAnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface, rectangle, x, y, new TileLayerPositionIntoViewPosition()){
 
             super();
                 //var remoteInfo = remoteInfo
@@ -220,7 +220,7 @@ public constructor (remoteInfo: RemoteInfo, parentLayer: PathFindingLayerInterfa
                     
 this.setVisible(false);
     
-this.setWaypointBehavior(WaypointBehaviorBase());
+this.setWaypointBehavior(new WaypointBehaviorBase());
     
 this.shakeListener= ShakeAnimationListenerFactory.getInstance();
     
@@ -241,7 +241,7 @@ public constructor ()
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setWaypointBehavior(WaypointBehaviorBase());
+this.setWaypointBehavior(new WaypointBehaviorBase());
     
 this.shakeListener= NoShakeAnimationListener.NO_SHAKE_ANIMATION_LISTENER;
     

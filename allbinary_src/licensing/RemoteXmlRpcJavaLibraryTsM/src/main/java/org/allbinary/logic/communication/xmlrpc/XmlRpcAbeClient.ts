@@ -250,7 +250,7 @@ var anyType = anyType
 
 
 
-                            throw Error("Tried All Servers But Still Failed")
+                            throw new Error("Tried All Servers But Still Failed")
 }
 
 

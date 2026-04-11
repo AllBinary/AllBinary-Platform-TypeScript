@@ -82,7 +82,7 @@ var crud = crud
 
                             //For kotlin this is before the body of the constructor.
                     
-this.abContext= AbContext(propertiesHashMap, pageContext);
+this.abContext= new AbContext(propertiesHashMap, pageContext);
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -109,7 +109,7 @@ var pageContext = pageContext
 
                             //For kotlin this is before the body of the constructor.
                     
-this.abContext= AbContext(propertiesHashMap, pageContext);
+this.abContext= new AbContext(propertiesHashMap, pageContext);
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -120,7 +120,7 @@ this.abContext= AbContext(propertiesHashMap, pageContext);
 
                                     }
                                 
-this.set(RequestParams(request as HttpServletRequest).
+this.set(new RequestParams(request as HttpServletRequest).
                             toHashMap());
     
 this.override(propertiesHashMap);
@@ -139,7 +139,7 @@ var pageContext = pageContext
 
                             //For kotlin this is before the body of the constructor.
                     
-this.abContext= AbContext(propertiesHashMap, pageContext);
+this.abContext= new AbContext(propertiesHashMap, pageContext);
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -165,7 +165,7 @@ var pageContext = pageContext
 
                             //For kotlin this is before the body of the constructor.
                     
-this.abContext= AbContext(propertiesHashMap, pageContext);
+this.abContext= new AbContext(propertiesHashMap, pageContext);
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -190,7 +190,7 @@ public constructor (parentViewOfThisTransformInfoInterface: TransformInfoHttp)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.abContext= AbContext(parentViewOfThisTransformInfoInterface!.getPropertiesHashMap(), parentViewOfThisTransformInfoInterface!.getPageContext());
+this.abContext= new AbContext(parentViewOfThisTransformInfoInterface!.getPropertiesHashMap(), parentViewOfThisTransformInfoInterface!.getPageContext());
     
 }
 
@@ -254,7 +254,7 @@ this.setObject(hashMap!.get(transformInfoData!.OBJECT);
                                     }
                                 
                         else {
-                            this.setObjectConfig(TransformInfoObjectConfig(this).
+                            this.setObjectConfig(new TransformInfoObjectConfig(this).
                             toString());
     
 
@@ -346,7 +346,7 @@ this.setData(hashMap!.get(transformInfoData!.DATA);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return AbPath(URLGLOBALS.getMainPath() +FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH, this.getTemplateFile());
+                        return new AbPath(URLGLOBALS.getMainPath() +FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH, this.getTemplateFile());
     
 }
 
@@ -358,7 +358,7 @@ this.setData(hashMap!.get(transformInfoData!.DATA);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return AbPath(URLGLOBALS.getMainPath() +FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH, this.getObjectConfigFile());
+                        return new AbPath(URLGLOBALS.getMainPath() +FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH, this.getObjectConfigFile());
     
 }
 
@@ -370,7 +370,7 @@ this.setData(hashMap!.get(transformInfoData!.DATA);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return AbPath(URLGLOBALS.getMainPath() +FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH, this.getDataFile());
+                        return new AbPath(URLGLOBALS.getMainPath() +FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH, this.getDataFile());
     
 }
 

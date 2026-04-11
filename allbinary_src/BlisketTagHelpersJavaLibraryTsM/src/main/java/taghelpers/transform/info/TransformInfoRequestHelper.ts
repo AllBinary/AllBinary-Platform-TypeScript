@@ -59,7 +59,7 @@ public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageConte
             super();
             var propertiesHashMap = propertiesHashMap
 var pageContext = pageContext
-this.transformInfoInterface= TransformInfoHttpStoreNoManipulation(propertiesHashMap, pageContext);
+this.transformInfoInterface= new TransformInfoHttpStoreNoManipulation(propertiesHashMap, pageContext);
     
 }
 

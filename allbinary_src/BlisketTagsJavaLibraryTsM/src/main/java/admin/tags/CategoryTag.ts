@@ -57,9 +57,9 @@ export class CategoryTag extends TableTag {
 public constructor (){
 
             super();
-            this.setTagHelperFactory(CategoryHelperFactory());
+            this.setTagHelperFactory(new CategoryHelperFactory());
     
-this.setTagRequestHelperFactory(CategoryRequestHelperFactory());
+this.setTagRequestHelperFactory(new CategoryRequestHelperFactory());
     
 }
 
@@ -77,7 +77,7 @@ this.xsl= value;
 
         try {
             
-    var anyType: any = CategoryRequestHelperFactory().
+    var anyType: any = new CategoryRequestHelperFactory().
                             getInstance(this.getPropertiesHashMap(), this.pageContext)!;
         
         
@@ -156,7 +156,7 @@ this.xsl= value;
 
         try {
             
-    var anyType: any = CategoryRequestHelperFactory().
+    var anyType: any = new CategoryRequestHelperFactory().
                             getInstance(this.getPropertiesHashMap(), this.pageContext)!;
         
         

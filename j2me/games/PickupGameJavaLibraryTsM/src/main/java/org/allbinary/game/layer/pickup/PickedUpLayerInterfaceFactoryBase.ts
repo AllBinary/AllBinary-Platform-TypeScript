@@ -39,7 +39,7 @@ export class PickedUpLayerInterfaceFactoryBase
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -47,7 +47,7 @@ export class PickedUpLayerInterfaceFactoryBase
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -55,7 +55,7 @@ export class PickedUpLayerInterfaceFactoryBase
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 

@@ -190,7 +190,7 @@ this.finishLineId= raceTrackGeographicMapCellTypeFactory!.getEndType();
         
 ;
     
-logUtil!.put(StringMaker().
+logUtil!.put(new StringMaker().
                             append(commonSeps!.BRACKET_OPEN)!.appendint(row)!.append(commonSeps!.BRACKET_CLOSE)!.append(commonSeps!.BRACKET_OPEN)!.appendint(column)!.append("] in [")!.appendint(mapArray!.length)!.append(commonSeps!.BRACKET_CLOSE)!.append(commonSeps!.BRACKET_OPEN)!.appendint(mapArray[0]!.length)!.append(commonSeps!.BRACKET_CLOSE)!.toString(), this, "visit", e);
     
 
@@ -205,7 +205,7 @@ logUtil!.put(StringMaker().
 }
                 
             
-geographicMapInterface!.getGeographicMapCellPositionFactory()!.visit(RaceTrackGeographicMapCellPositionFactoryInitVisitor());
+geographicMapInterface!.getGeographicMapCellPositionFactory()!.visit(new RaceTrackGeographicMapCellPositionFactoryInitVisitor());
     
 }
 
@@ -215,7 +215,7 @@ geographicMapInterface!.getGeographicMapCellPositionFactory()!.visit(RaceTrackGe
     addStartPathFindingNode(pathFindingInfo: PathFindingInfo, startGeographicMapCellPosition: GeographicMapCellPosition){
     //var pathFindingInfo = pathFindingInfo
     //var startGeographicMapCellPosition = startGeographicMapCellPosition
-pathFindingInfo!.addStartPathFindingNode(PathFindingNode(NullUtil.getInstance()!.NULL_OBJECT, startGeographicMapCellPosition));
+pathFindingInfo!.addStartPathFindingNode(new PathFindingNode(NullUtil.getInstance()!.NULL_OBJECT, startGeographicMapCellPosition));
     
 }
 
@@ -225,7 +225,7 @@ pathFindingInfo!.addStartPathFindingNode(PathFindingNode(NullUtil.getInstance()!
     addEndPathFindingNode(pathFindingInfo: PathFindingInfo, endGeographicMapCellPosition: GeographicMapCellPosition){
     //var pathFindingInfo = pathFindingInfo
     //var endGeographicMapCellPosition = endGeographicMapCellPosition
-pathFindingInfo!.addEndPathFindingNode(PathFindingNode(NullUtil.getInstance()!.NULL_OBJECT, endGeographicMapCellPosition));
+pathFindingInfo!.addEndPathFindingNode(new PathFindingNode(NullUtil.getInstance()!.NULL_OBJECT, endGeographicMapCellPosition));
     
 }
 

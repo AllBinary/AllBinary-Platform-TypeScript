@@ -82,7 +82,7 @@ this.animationBehaviorFactory= animationBehaviorFactory;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return VectorRotationAnimation(this.currentPoints, this.getBasicColorP(), this.animationBehaviorFactory!.getOrCreateInstance());
+                        return new VectorRotationAnimation(this.currentPoints, this.getBasicColorP(), this.animationBehaviorFactory!.getOrCreateInstance());
     
 }
 

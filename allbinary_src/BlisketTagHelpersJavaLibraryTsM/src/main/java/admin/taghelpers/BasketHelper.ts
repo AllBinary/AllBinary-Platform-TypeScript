@@ -89,7 +89,7 @@ this.pageContext= pageContext;
 
                                     }
                                 
-this.weblisketSession= WeblisketSession(hashMap, pageContext);
+this.weblisketSession= new WeblisketSession(hashMap, pageContext);
     
 }
 

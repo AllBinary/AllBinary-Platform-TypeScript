@@ -90,7 +90,7 @@ private constructor (){
                         if(osName!.compareTo(OperatingSystems.getInstance()!.ANDROID) == 0)
                         
                                     {
-                                    GenericOperatingSystem= AndroidOS();
+                                    GenericOperatingSystem= new AndroidOS();
     
 
                                     }
@@ -100,7 +100,7 @@ private constructor (){
                         if(OperatingSystems.getInstance()!.isUnknownSpecificOSAllowed())
                         
                                     {
-                                    GenericOperatingSystem= AndroidOS();
+                                    GenericOperatingSystem= new AndroidOS();
     
 
                                     }
@@ -109,7 +109,7 @@ private constructor (){
                             
 
 
-                            throw Error("Specific Android OS Not Supported: " +osName)
+                            throw new Error("Specific Android OS Not Supported: " +osName)
 
                         }
                             

@@ -35,7 +35,7 @@ export class TimedVectorAnimationFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return TimedVectorAnimation(points, basicColor, AnimationBehavior.getInstance());
+                        return new TimedVectorAnimation(points, basicColor, AnimationBehavior.getInstance());
     
 }
 

@@ -28,7 +28,7 @@ export class ClientInformationFactory
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 

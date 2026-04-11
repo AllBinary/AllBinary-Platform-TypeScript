@@ -70,7 +70,7 @@ var config = config
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return OpenGLBitmap(Image.createImage(width, height));
+                        return new OpenGLBitmap(Image.createImage(width, height));
     
 }
 
@@ -83,7 +83,7 @@ var inputStream = inputStream
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return OpenGLBitmap(Image.createImage(inputStream));
+                        return new OpenGLBitmap(Image.createImage(inputStream));
     
 }
 
@@ -94,7 +94,7 @@ var inputStream = inputStream
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return OpenGLBitmap(image);
+                        return new OpenGLBitmap(image);
     
 }
 

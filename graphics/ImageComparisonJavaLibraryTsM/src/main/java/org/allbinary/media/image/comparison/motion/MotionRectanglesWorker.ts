@@ -156,7 +156,7 @@ logUtil!.put(imageComparisonInfo!.toString(), this, this.commonStrings!.RUN);
         
 ;
     
-AllMotionRectanglesResultsCacheSingleton.getInstance()!.add(MotionRectanglesResultsFrameCacheable(allMotionRectangles, imageComparisonInfo!.getFrameTwo()));
+AllMotionRectanglesResultsCacheSingleton.getInstance()!.add(new MotionRectanglesResultsFrameCacheable(allMotionRectangles, imageComparisonInfo!.getFrameTwo()));
     
 
     var consolidatedMotionRectangles: ConsolidateMotionRectangles = new ConsolidateMotionRectangles(allMotionRectangles);
@@ -164,7 +164,7 @@ AllMotionRectanglesResultsCacheSingleton.getInstance()!.add(MotionRectanglesResu
         
 ;
     
-ConsolidatedMotionRectanglesResultsCacheSingleton.getInstance()!.add(MotionRectanglesResultsFrameCacheable(consolidatedMotionRectangles, imageComparisonInfo!.getFrameTwo()));
+ConsolidatedMotionRectanglesResultsCacheSingleton.getInstance()!.add(new MotionRectanglesResultsFrameCacheable(consolidatedMotionRectangles, imageComparisonInfo!.getFrameTwo()));
     
 
     var constrainedMotionRectangles: ConstrainedMotionRectangles = new ConstrainedMotionRectangles(this.motionRectangleConstraintsInterface, consolidatedMotionRectangles);
@@ -174,9 +174,9 @@ ConsolidatedMotionRectanglesResultsCacheSingleton.getInstance()!.add(MotionRecta
     
 constrainedMotionRectangles!.applyMotionRectangleConstraints(consolidatedMotionRectangles);
     
-ConstrainedMotionRectanglesResultsCacheSingleton.getInstance()!.add(MotionRectanglesResultsFrameCacheable(constrainedMotionRectangles, imageComparisonInfo!.getFrameTwo()));
+ConstrainedMotionRectanglesResultsCacheSingleton.getInstance()!.add(new MotionRectanglesResultsFrameCacheable(constrainedMotionRectangles, imageComparisonInfo!.getFrameTwo()));
     
-this.fireEvent(MotionRectanglesResultsEvent(this, imageComparisonInfo!.getFrameTwo(), constrainedMotionRectangles as MotionRectangles));
+this.fireEvent(new MotionRectanglesResultsEvent(this, imageComparisonInfo!.getFrameTwo(), constrainedMotionRectangles as MotionRectangles));
     
 this.imageComparisonInfoVector!.remove(imageComparisonResultsEvent);
     

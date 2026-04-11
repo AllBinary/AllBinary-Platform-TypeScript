@@ -76,7 +76,7 @@ public constructor (gameCanvas: AllBinaryGameCanvas){
 
 
 
-                            throw Error("No Longer Used")
+                            throw new Error("No Longer Used")
 }
 
 

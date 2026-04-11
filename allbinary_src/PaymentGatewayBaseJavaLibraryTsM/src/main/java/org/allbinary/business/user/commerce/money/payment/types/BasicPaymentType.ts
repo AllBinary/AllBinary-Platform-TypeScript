@@ -148,7 +148,7 @@ BasicPaymentTypeUtil.getInstance()!.add(this);
                                     
 
 
-                            throw Error("PaymentGatewayInterfaceFactoryInterface is Null")
+                            throw new Error("PaymentGatewayInterfaceFactoryInterface is Null")
 
                                     }
                                 
@@ -173,7 +173,7 @@ BasicPaymentTypeUtil.getInstance()!.add(this);
                                     
 
 
-                            throw Error("PaymentGatewayDomNodeFactoryInterface is Null")
+                            throw new Error("PaymentGatewayDomNodeFactoryInterface is Null")
 
                                     }
                                 

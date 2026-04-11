@@ -66,7 +66,7 @@ var rtsLayer = rtsLayer
                         if(rtsLayer!.isUpgradeable())
                         
                                     {
-                                    this.setUpgradeCost(StringMaker().
+                                    this.setUpgradeCost(new StringMaker().
                             append(UPGRADE)!.appendint(rtsLayer!.getUpgradeCost())!.toString());
     
 
@@ -82,7 +82,7 @@ var rtsLayer = rtsLayer
                         if(rtsLayer!.isDowngradeable())
                         
                                     {
-                                    this.setDownGradeCost(StringMaker().
+                                    this.setDownGradeCost(new StringMaker().
                             append(DOWNGRADE)!.appendint(rtsLayer!.getDowngradeCost())!.toString());
     
 

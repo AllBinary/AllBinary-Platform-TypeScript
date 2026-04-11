@@ -125,7 +125,7 @@ this.geographicMapCellTypeFactory= geographicMapCellTypeFactory;
 else -> {
 
 
-                            throw Error("Only Four Directions")
+                            throw new Error("Only Four Directions")
 }
 
         }       

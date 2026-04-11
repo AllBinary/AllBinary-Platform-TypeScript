@@ -78,7 +78,7 @@ private constructor (){
 
         try {
             
-    var data: string = CryptFileReader(TransformInfoObjectConfigData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoObjectConfigData.getInstance()!.ENCRYPTED_EXTENSION).
+    var data: string = new CryptFileReader(TransformInfoObjectConfigData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoObjectConfigData.getInstance()!.ENCRYPTED_EXTENSION).
                             get(objectConfigFileAbPath)!;
         
         
@@ -139,7 +139,7 @@ var transformInfoInterface = transformInfoInterface
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return GenericStoreTransformInfoObjectConfig(abeClientInformation, transformInfoInterface) as TransformInfoObjectConfigInterface;
+                        return new GenericStoreTransformInfoObjectConfig(abeClientInformation, transformInfoInterface) as TransformInfoObjectConfigInterface;
     
 
                                     }
@@ -149,7 +149,7 @@ var transformInfoInterface = transformInfoInterface
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return TransformInfoObjectConfig(transformInfoInterface) as TransformInfoObjectConfigInterface;
+                        return new TransformInfoObjectConfig(transformInfoInterface) as TransformInfoObjectConfigInterface;
     
 
                         }
@@ -219,7 +219,7 @@ var transformInfoInterface = transformInfoInterface
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return GenericStoreTransformInfoObjectConfig(abeClientInformation, transformInfoInterface, document) as TransformInfoObjectConfigInterface;
+                        return new GenericStoreTransformInfoObjectConfig(abeClientInformation, transformInfoInterface, document) as TransformInfoObjectConfigInterface;
     
 
                                     }
@@ -229,7 +229,7 @@ var transformInfoInterface = transformInfoInterface
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return TransformInfoObjectConfig(transformInfoInterface, document) as TransformInfoObjectConfigInterface;
+                        return new TransformInfoObjectConfig(transformInfoInterface, document) as TransformInfoObjectConfigInterface;
     
 
                         }

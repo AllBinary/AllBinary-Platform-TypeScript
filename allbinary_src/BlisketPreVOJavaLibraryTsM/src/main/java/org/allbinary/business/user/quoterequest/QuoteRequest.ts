@@ -98,7 +98,7 @@ var request = request
         
 ;
     
-this.id= QuoteRequestIdGenerator().
+this.id= new QuoteRequestIdGenerator().
                             getNext();
     
 this.setUserName(userName);
@@ -424,7 +424,7 @@ values.add(this.comments);
 ;
     
 
-    var time: string = new calendar.getTimeInMillis() as Long.
+    var time: string = calendar.getTimeInMillis() as Long.
                             toString();
         
         
@@ -475,7 +475,7 @@ values.put(quoteRequestData!.COMMENTS, this.comments);
 ;
     
 
-    var time: string = new calendar.getTimeInMillis() as Long.
+    var time: string = calendar.getTimeInMillis() as Long.
                             toString();
         
         

@@ -228,7 +228,7 @@ this.setFrame(this.frameUtil!.getFrameForAngle(angle, this.angleInfo!.getAngleIn
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return StringMaker().
+                        return new StringMaker().
                             append(super.toString())!.append("circularIndexUtil: ")!.append(this.circularIndexUtil!.toString())!.append("angleInfo: ")!.append(this.angleInfo!.toString())!.toString();
 
                         ;

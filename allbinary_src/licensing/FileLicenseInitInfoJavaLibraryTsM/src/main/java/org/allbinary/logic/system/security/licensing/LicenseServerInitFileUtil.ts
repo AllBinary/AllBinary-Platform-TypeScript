@@ -62,7 +62,7 @@ export class LicenseServerInitFileUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return object: OutputStream()
+                        return new object: OutputStream()
                                 {
                                 
                 //@Throws(IOException::class)

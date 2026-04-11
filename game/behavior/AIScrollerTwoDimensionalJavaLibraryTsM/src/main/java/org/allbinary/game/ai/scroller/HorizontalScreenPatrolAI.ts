@@ -125,7 +125,7 @@ this.sound= hashtable.get(SOUND as Object);
                                     
 
 
-                            throw Error("No Sound Provided!!")
+                            throw new Error("No Sound Provided!!")
 
                                     }
                                 

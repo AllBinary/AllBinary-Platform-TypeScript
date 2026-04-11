@@ -86,7 +86,7 @@ public constructor (inputStream: InputStream){
             super();
             var inputStream = inputStream
 
-    var audioInputStream: AudioInputStream = new AudioInputStream(ByteArrayInputStream(NullUtil.getInstance()!.NULL_BYTE_ARRAY), NullAudioFormat.NULL_AUDIO_FORMAT, 0);
+    var audioInputStream: AudioInputStream = new AudioInputStream(new ByteArrayInputStream(NullUtil.getInstance()!.NULL_BYTE_ARRAY), NullAudioFormat.NULL_AUDIO_FORMAT, 0);
         
         
 ;
@@ -109,12 +109,12 @@ clip= this.create(audioInputStream);
                                 )
                         
                                     {
-                                    logUtil!.put("Clip was null", this, commonStrings!.CONSTRUCTOR, Error());
+                                    logUtil!.put("Clip was null", this, commonStrings!.CONSTRUCTOR, new Error());
     
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 
                                     }
                                 
@@ -134,7 +134,7 @@ this.clip= clip;
 
 
     public close(){
-MusicThreadPool.getInstance()!.runTask(object: ARunnable()
+MusicThreadPool.getInstance()!.runTask(new object: ARunnable()
                                 {
                                 
     public run(){
@@ -184,7 +184,7 @@ this.clip.close();
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public start(){
-MusicThreadPool.getInstance()!.runTask(object: ARunnable()
+MusicThreadPool.getInstance()!.runTask(new object: ARunnable()
                                 {
                                 
     public run(){
@@ -249,7 +249,7 @@ clip.open(audioInputStream);
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public stop(){
-MusicThreadPool.getInstance()!.runTask(object: ARunnable()
+MusicThreadPool.getInstance()!.runTask(new object: ARunnable()
                                 {
                                 
     public run(){
@@ -289,7 +289,7 @@ var controlType = controlType
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return NullControl();
+                        return new NullControl();
     
 }
 
@@ -341,7 +341,7 @@ this.setVolume((leftVolume.toFloat()) /100.0f);
                                     
 
 
-                            throw IllegalArgumentException("Volume: " +volume)
+                            throw new IllegalArgumentException("Volume: " +volume)
 
                                     }
                                 

@@ -116,7 +116,7 @@ this.numThreads= numThreads;
                                     {
                                     this.isAlive= true;
     
-this.taskQueue= BasicArrayList();
+this.taskQueue= new BasicArrayList();
     
 
     var pooledThread: PooledThread
@@ -132,7 +132,7 @@ this.taskQueue= BasicArrayList();
         
 i < this.numThreads; i++)
         {
-pooledThread= PooledThread();
+pooledThread= new PooledThread();
     
 pooledThread!.setPriority(priority);
     
@@ -152,7 +152,7 @@ pooledThread!.start();
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -491,7 +491,7 @@ export inner class PooledThread extends Thread {
 
 public constructor ()                        
 
-                            : super(StringMaker().
+                            : super(new StringMaker().
                             append(poolName)!.append(ROOT_NAME)!.appendint(threadID++)!.toString()){
 
             super();
@@ -561,7 +561,7 @@ runningTask= false;
                 //: 
 } catch(e) 
             {
-logUtil!.put(StringMaker().
+logUtil!.put(new StringMaker().
                             append(commonStrings!.EXCEPTION_LABEL)!.append(StringUtil.getInstance()!.toString(task2))!.toString(), this, commonStrings!.RUN, e);
     
 }

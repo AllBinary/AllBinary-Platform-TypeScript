@@ -180,11 +180,11 @@ var hashMap = hashMap
 
                          as String;
     
-mainPath= AbPath(hashMap!.get(MAINPATH as Object);
+mainPath= new AbPath(hashMap!.get(MAINPATH as Object);
 
                          as String);
     
-testHtmlPath= AbPath(hashMap!.get(TESTHTMLPATH as Object);
+testHtmlPath= new AbPath(hashMap!.get(TESTHTMLPATH as Object);
 
                          as String);
     

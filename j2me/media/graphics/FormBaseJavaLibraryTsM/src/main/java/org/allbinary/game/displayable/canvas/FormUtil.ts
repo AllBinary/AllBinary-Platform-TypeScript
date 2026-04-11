@@ -105,13 +105,13 @@ export class FormUtil
                         if(displayInfo!.getLastHeight() < 320)
                         
                                     {
-                                    popupMenuRectangle= Rectangle(PointFactory.getInstance()!.getInstance(0, 25), myFont!.stringWidth(3), (myFont!.DEFAULT_CHAR_HEIGHT *4) +2);
+                                    popupMenuRectangle= new Rectangle(PointFactory.getInstance()!.getInstance(0, 25), myFont!.stringWidth(3), (myFont!.DEFAULT_CHAR_HEIGHT *4) +2);
     
 
                                     }
                                 
                         else {
-                            popupMenuRectangle= Rectangle(PointFactory.getInstance()!.getInstance(0, displayInfo!.getLastHalfHeight() -70), myFont!.stringWidth(3), (myFont!.DEFAULT_CHAR_HEIGHT *5));
+                            popupMenuRectangle= new Rectangle(PointFactory.getInstance()!.getInstance(0, displayInfo!.getLastHalfHeight() -70), myFont!.stringWidth(3), (myFont!.DEFAULT_CHAR_HEIGHT *5));
     
 
                         }

@@ -51,7 +51,7 @@ export class TerrainEventHandler extends BasicEventHandler {
         
 
     public static init(){
-TerrainEventHandler.hashtable= Hashtable<any, any>();
+TerrainEventHandler.hashtable= new Hashtable<any, any>();
     
 }
 
@@ -70,7 +70,7 @@ TerrainEventHandler.hashtable= Hashtable<any, any>();
                                 )
                         
                                     {
-                                    eventHandlerCanBeNull= TerrainEventHandler();
+                                    eventHandlerCanBeNull= new TerrainEventHandler();
     
 TerrainEventHandler.hashtable.put(anyType, eventHandlerCanBeNull);
     

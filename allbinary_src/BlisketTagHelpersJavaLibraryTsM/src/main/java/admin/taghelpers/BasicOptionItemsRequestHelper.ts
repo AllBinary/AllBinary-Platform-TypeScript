@@ -91,9 +91,9 @@ this.getFormData();
 
 
     public getFormData(){
-this.optionItem= Vector();
+this.optionItem= new Vector();
     
-this.optionValue= Vector();
+this.optionValue= new Vector();
     
 this.id= request.getParameter(BasicItemData.ID);
     
@@ -198,7 +198,7 @@ values.put(BasicOptionItemData.OPTION_ONE_NINE_VALUE, this.optionValue!.get(8));
 ;
     
 
-    var time: string = new calendar.getTimeInMillis() as Long.
+    var time: string = calendar.getTimeInMillis() as Long.
                             toString();
         
         
@@ -225,7 +225,7 @@ values.put(EntryData.getInstance()!.LASTMODIFIED, time);
 ;
     
 
-    var time: string = new calendar.getTimeInMillis() as Long.
+    var time: string = calendar.getTimeInMillis() as Long.
                             toString();
         
         

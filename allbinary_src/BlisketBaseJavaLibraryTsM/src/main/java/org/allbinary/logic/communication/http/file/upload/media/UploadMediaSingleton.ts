@@ -58,7 +58,7 @@ export class UploadMediaSingleton
                                 )
                         
                                     {
-                                    UploadMediaSingleton.uploadMedia= UploadMediaSingleton();
+                                    UploadMediaSingleton.uploadMedia= new UploadMediaSingleton();
     
 
                                     }
@@ -86,9 +86,9 @@ export class UploadMediaSingleton
 private constructor (){
 
             super();
-            this.readerFileTypesHashMap= HashMap<any, any>();
+            this.readerFileTypesHashMap= new HashMap<any, any>();
     
-this.writerFileTypesHashMap= HashMap<any, any>();
+this.writerFileTypesHashMap= new HashMap<any, any>();
     
 
     var hashMap: HashMap<any, any> = MediaData.toHashMap()!;

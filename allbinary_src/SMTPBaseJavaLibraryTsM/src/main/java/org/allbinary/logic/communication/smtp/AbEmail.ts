@@ -52,13 +52,13 @@ var contentBase = contentBase
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGINGERROR))
                         
                                     {
-                                    this.email= Email(from, to, subject, server, textBody, htmlAttachment, contentBase, true);
+                                    this.email= new Email(from, to, subject, server, textBody, htmlAttachment, contentBase, true);
     
 
                                     }
                                 
                         else {
-                            this.email= Email(from, to, subject, server, textBody, htmlAttachment, contentBase);
+                            this.email= new Email(from, to, subject, server, textBody, htmlAttachment, contentBase);
     
 
                         }

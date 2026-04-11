@@ -32,7 +32,7 @@ var geographicMapInterface = geographicMapInterface
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 

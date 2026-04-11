@@ -50,9 +50,9 @@ public constructor ()
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setTagHelperFactory(InventoryHelperFactory());
+this.setTagHelperFactory(new InventoryHelperFactory());
     
-this.setTagRequestHelperFactory(InventoryRequestHelperFactory());
+this.setTagRequestHelperFactory(new InventoryRequestHelperFactory());
     
 }
 

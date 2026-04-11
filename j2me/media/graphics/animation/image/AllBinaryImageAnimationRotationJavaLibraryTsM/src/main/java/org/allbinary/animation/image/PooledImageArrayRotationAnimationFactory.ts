@@ -159,7 +159,7 @@ this.init(image, width, height, dx, dy, angleIncrement);
         
 ;
     
-allBinaryImageRotationAnimationInfo= ImageArrayRotationAnimationInfo(imageArray, angleIncrement, totalAngle, dx, dy);
+allBinaryImageRotationAnimationInfo= new ImageArrayRotationAnimationInfo(imageArray, angleIncrement, totalAngle, dx, dy);
     
 }
 
@@ -172,7 +172,7 @@ allBinaryImageRotationAnimationInfo= ImageArrayRotationAnimationInfo(imageArray,
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return AdjustedImageArrayRotationAnimation(allBinaryImageRotationAnimationInfo, this.animationBehaviorFactory!.getOrCreateInstance());
+                        return new AdjustedImageArrayRotationAnimation(allBinaryImageRotationAnimationInfo, this.animationBehaviorFactory!.getOrCreateInstance());
     
 }
 

@@ -104,7 +104,7 @@ i < size; i++)
 ;
     
 
-    var domNodeInterface: DomNodeInterface = ThemePropertiesView(themeValidation as ThemeInterface) as DomNodeInterface;
+    var domNodeInterface: DomNodeInterface = new ThemePropertiesView(themeValidation as ThemeInterface) as DomNodeInterface;
         
         
 ;

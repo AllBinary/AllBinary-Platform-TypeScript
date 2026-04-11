@@ -97,7 +97,7 @@ logUtil!.put("Generating Instance for type: " +type, this, commonStrings!.GET_IN
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return BasicGenerator();
+                        return new BasicGenerator();
     
 
                                     }
@@ -110,7 +110,7 @@ logUtil!.put("Generating Instance for type: " +type, this, commonStrings!.GET_IN
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return StoreFileGenerator(transformInfoInterface);
+                        return new StoreFileGenerator(transformInfoInterface);
     
 
                                     }
@@ -119,7 +119,7 @@ logUtil!.put("Generating Instance for type: " +type, this, commonStrings!.GET_IN
                             
 
 
-                            throw Error("No Such TransformInfoObjectConfigGenerator Type")
+                            throw new Error("No Such TransformInfoObjectConfigGenerator Type")
 
                         }
                             

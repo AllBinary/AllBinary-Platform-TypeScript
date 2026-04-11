@@ -76,7 +76,7 @@ var os = os
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return AndroidHardware();
+                        return new AndroidHardware();
     
 
                                     }
@@ -84,7 +84,7 @@ var os = os
 
 
 
-                            throw Error("No Hardware Imp for: " +os.getName())
+                            throw new Error("No Hardware Imp for: " +os.getName())
 
                 //: 
 } catch(e) 
@@ -101,7 +101,7 @@ logUtil!.put("Ignoring Exception Returning NoHardware", this, commonStrings!.GET
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return NoHardware();
+                        return new NoHardware();
     
 }
 

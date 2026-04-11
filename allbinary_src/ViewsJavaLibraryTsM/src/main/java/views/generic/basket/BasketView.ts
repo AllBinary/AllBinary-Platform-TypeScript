@@ -171,7 +171,7 @@ var document = document
 index < size; index++)
         {
 
-    var product: string = new .toCharArray();
+    var product: string = .toCharArray();
         
         
 ;
@@ -189,7 +189,7 @@ index < size; index++)
                         
                                     {
                                     
-    var basicItemView: BasicItemView = new BasicItemView(itemInterface, Vector());
+    var basicItemView: BasicItemView = new BasicItemView(itemInterface, new Vector());
         
         
 ;

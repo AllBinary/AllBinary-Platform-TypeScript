@@ -156,7 +156,7 @@ this.resources= resources;
 
     var item: CustomItem = new LayerInterfaceFactoryImageItem(name, image, ImageItem.LAYOUT_DEFAULT, flagResources!.NAME, basicColor, 
                                                 [
-                                                    RTSLayerTextAnimation(RTSGameStrings.getInstance()!.DRAGGABLE, image);
+                                                    new RTSLayerTextAnimation(RTSGameStrings.getInstance()!.DRAGGABLE, image);
         
         
                                                 ], layerInterfaceFactoryInterface);

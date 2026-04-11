@@ -149,7 +149,7 @@ export class OrderHistoryEntity extends AbSqlBean
         
 public constructor ()                        
 
-                            : super(HistoryDbInitInfo()){
+                            : super(new HistoryDbInitInfo()){
 
             super();
             
@@ -173,21 +173,21 @@ var order = order
 
         try {
             
-    var paymentInterface: PaymentInterface = PaymentEntity().
+    var paymentInterface: PaymentInterface = new PaymentEntity().
                             getDefault(userName)!;
         
         
 ;
     
 
-    var billingAddress: StreetAddress = BillingAddressesEntity(userName).
+    var billingAddress: StreetAddress = new BillingAddressesEntity(userName).
                             getDefault()!;
         
         
 ;
     
 
-    var shippingAddress: StreetAddress = ShippingAddressesEntity(userName).
+    var shippingAddress: StreetAddress = new ShippingAddressesEntity(userName).
                             getDefault()!;
         
         
@@ -206,7 +206,7 @@ var order = order
 ;
     
 
-    var shippingInterface: ShippingInterface = ShippingMethods(abeClientInformation, storeFrontInterface).
+    var shippingInterface: ShippingInterface = new ShippingMethods(abeClientInformation, storeFrontInterface).
                             getShippingInterface(order.getShippingMethod())!;
         
         
@@ -264,7 +264,7 @@ total.add(tax.toString());
         
 ;
     
-vector.add(OrderHistoryIdGenerator().
+vector.add(new OrderHistoryIdGenerator().
                             getNext());
     
 
@@ -286,7 +286,7 @@ vector.add(order.getStoreName());
 ;
     
 
-    var time: string = new calendar.getTimeInMillis() as Long.
+    var time: string = calendar.getTimeInMillis() as Long.
                             toString();
         
         
@@ -317,16 +317,16 @@ vector.add(paymentInterface!.getType());
 vector.add(paymentInterface!.getExpiration());
     
 
-    var random: number = Random().
+    var random: number = new Random().
                             nextInt(SuperCrypt.KEYMAX)!;
         
         
 ;
     
-vector.add(SuperCrypt(random).
+vector.add(new SuperCrypt(random).
                             encrypt(paymentInterface!.getNumber()));
     
-vector.add(Integer(random).
+vector.add(new Integer(random).
                             toString());
     
 
@@ -514,7 +514,7 @@ var status = status
 ;
     
 
-    var time: string = new calendar.getTimeInMillis() as Long.
+    var time: string = calendar.getTimeInMillis() as Long.
                             toString();
         
         
@@ -578,7 +578,7 @@ var paymentMethod = paymentMethod
 ;
     
 
-    var time: string = new calendar.getTimeInMillis() as Long.
+    var time: string = calendar.getTimeInMillis() as Long.
                             toString();
         
         
@@ -663,7 +663,7 @@ i < size; i++)
 ;
     
 
-    var orderReview: OrderHistory = new OrderHistory(Basket(), orderReviewHashMap);
+    var orderReview: OrderHistory = new OrderHistory(new Basket(), orderReviewHashMap);
         
         
 ;
@@ -730,7 +730,7 @@ index < size; index++)
 ;
     
 
-    var orderReview: OrderHistory = new OrderHistory(Basket(), orderReviewHashMap);
+    var orderReview: OrderHistory = new OrderHistory(new Basket(), orderReviewHashMap);
         
         
 ;
@@ -799,7 +799,7 @@ index < size; index++)
 ;
     
 
-    var orderReview: OrderHistory = new OrderHistory(Basket(), orderReviewHashMap);
+    var orderReview: OrderHistory = new OrderHistory(new Basket(), orderReviewHashMap);
         
         
 ;
@@ -859,7 +859,7 @@ index < size; index++)
 ;
     
 
-    var orderReview: OrderHistory = new OrderHistory(Basket(), orderReviewHashMap);
+    var orderReview: OrderHistory = new OrderHistory(new Basket(), orderReviewHashMap);
         
         
 ;
@@ -902,7 +902,7 @@ whereHashMap!.put(OrderData.ID, id);
                         
                                     {
                                     
-    var orderHistory: OrderHistory = new OrderHistory(Basket(), orderReviewHashMap);
+    var orderHistory: OrderHistory = new OrderHistory(new Basket(), orderReviewHashMap);
         
         
 ;

@@ -199,7 +199,7 @@ fontDebugFactory!.setFont(existingFont, graphics);
         
 ;
     
-this.stringArray[0]= StringMaker().
+this.stringArray[0]= new StringMaker().
                             append(BEGIN_LEVEL)!.appendint(level)!.toString();
     
 

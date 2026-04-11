@@ -45,7 +45,7 @@ var node = node
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return LinesGraphicItem(node);
+                        return new LinesGraphicItem(node);
     
 
                                     }
@@ -54,7 +54,7 @@ var node = node
                             
 
 
-                            throw Error("Graphic Item Does Not Exist: " +graphicItemName)
+                            throw new Error("Graphic Item Does Not Exist: " +graphicItemName)
 
                         }
                             

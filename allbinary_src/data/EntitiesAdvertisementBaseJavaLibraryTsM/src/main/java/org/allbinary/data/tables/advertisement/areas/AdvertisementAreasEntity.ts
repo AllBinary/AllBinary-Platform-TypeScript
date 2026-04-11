@@ -71,7 +71,7 @@ export class AdvertisementAreasEntity extends AbSqlBean
         
 public constructor ()                        
 
-                            : super(UserDbInitInfo()){
+                            : super(new UserDbInitInfo()){
 
             super();
             
@@ -170,7 +170,7 @@ index < size; index++)
                                 )
                         
                                     {
-                                    vector.add(AdvertisementArea(hashMap) as AdvertisementAreaInterface);
+                                    vector.add(new AdvertisementArea(hashMap) as AdvertisementAreaInterface);
     
 
                                     }
@@ -217,7 +217,7 @@ keysAndValues!.put(AdvertisementAreaData.getInstance()!.NAME, advertisementAreaN
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return AdvertisementArea(hashMap) as AdvertisementAreaInterface;
+                        return new AdvertisementArea(hashMap) as AdvertisementAreaInterface;
     
 
                                     }

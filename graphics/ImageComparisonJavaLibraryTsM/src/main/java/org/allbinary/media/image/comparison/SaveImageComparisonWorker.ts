@@ -131,7 +131,7 @@ timeHelper!.setStartTime();
     
 logUtil!.put(imageComparisonInfo!.toString(), this, this.commonStrings!.RUN);
     
-ComparisonImageInputOutput().
+new ComparisonImageInputOutput().
                             save(imageComparisonInfo, imageComparisonInfo!.getFrameTwo());
     
 this.imageComparisonInfoVector!.remove(imageComparisonInfo);

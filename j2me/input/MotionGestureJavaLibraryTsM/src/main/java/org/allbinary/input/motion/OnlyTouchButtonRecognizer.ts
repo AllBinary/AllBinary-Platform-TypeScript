@@ -33,7 +33,7 @@ export class OnlyTouchButtonRecognizer extends MotionRecognizer {
 public constructor (){
 
             super();
-            this.touchButtonRecognizer= TouchButtonRecognizer();
+            this.touchButtonRecognizer= new TouchButtonRecognizer();
     
 }
 

@@ -58,7 +58,7 @@ var y = y
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return GPoint(x, y, 0);
+                        return new GPoint(x, y, 0);
     
 }
 
@@ -71,7 +71,7 @@ var z = z
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return GPoint(x, y, z);
+                        return new GPoint(x, y, z);
     
 }
 

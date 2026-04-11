@@ -50,7 +50,7 @@ var h = h
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -59,7 +59,7 @@ var command = command
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -86,7 +86,7 @@ var l = l
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -94,7 +94,7 @@ var l = l
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -130,7 +130,7 @@ var isPaused = isPaused
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 

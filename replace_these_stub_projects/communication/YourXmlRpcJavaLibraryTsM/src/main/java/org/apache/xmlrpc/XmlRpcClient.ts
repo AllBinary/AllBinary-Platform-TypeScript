@@ -43,7 +43,7 @@ this.url= url;
 
 public constructor (url: string)                        
 
-                            : this(URL(url)){
+                            : this(new URL(url)){
 
             super();
             var url = url
@@ -55,7 +55,7 @@ public constructor (url: string)
 
 public constructor (hostname: string, port: number)                        
 
-                            : this(URL("http://" +hostname +':' +port +"/RPC2")){
+                            : this(new URL("http://" +hostname +':' +port +"/RPC2")){
 
             super();
             var hostname = hostname

@@ -134,7 +134,7 @@ private constructor (){
                                     
 
 
-                            throw Error("No Such View In DB: " +viewName)
+                            throw new Error("No Such View In DB: " +viewName)
 
                                     }
                                 

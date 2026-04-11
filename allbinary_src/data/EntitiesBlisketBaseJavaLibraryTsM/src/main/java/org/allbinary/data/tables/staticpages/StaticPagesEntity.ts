@@ -65,7 +65,7 @@ export class StaticPagesEntity extends AbSqlBean
         
 public constructor ()                        
 
-                            : super(StaticPagesDbInitInfo()){
+                            : super(new StaticPagesDbInitInfo()){
 
             super();
             

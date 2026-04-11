@@ -80,13 +80,13 @@ public constructor (transformInfoInterface: TransformInfoInterface)
 ;
     
 
-    var hashMap: HashMap<any, any> = RequestParams(httpServletRequest).
+    var hashMap: HashMap<any, any> = new RequestParams(httpServletRequest).
                             toHashMap()!;
         
         
 ;
     
-this.userName= UserName(hashMap).
+this.userName= new UserName(hashMap).
                             get();
     
 

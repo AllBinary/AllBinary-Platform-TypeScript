@@ -46,7 +46,7 @@ public constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return AdjustOrderStoreAdminUser();
+                        return new AdjustOrderStoreAdminUser();
     
 }
 
@@ -59,7 +59,7 @@ var hashMap = hashMap
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return AdjustOrderStoreAdminUser(hashMap);
+                        return new AdjustOrderStoreAdminUser(hashMap);
     
 }
 

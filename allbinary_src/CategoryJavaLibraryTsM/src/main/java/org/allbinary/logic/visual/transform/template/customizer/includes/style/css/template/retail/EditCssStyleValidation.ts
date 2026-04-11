@@ -140,7 +140,7 @@ var document = document
     
 node.appendChild(styleNode);
     
-styleNode!.appendChild(ColorsView().
+styleNode!.appendChild(new ColorsView().
                             toXmlNode(document));
     
 

@@ -31,7 +31,7 @@ var maxLevel = maxLevel
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return GameInfo(gameInfo!.getGameType(), gameInfo!.getGameMode(), gameInfo!.getPlayerType(), maxLevel, gameInfo!.getCurrentLevel());
+                        return new GameInfo(gameInfo!.getGameType(), gameInfo!.getGameMode(), gameInfo!.getPlayerType(), maxLevel, gameInfo!.getCurrentLevel());
     
 }
 
@@ -42,7 +42,7 @@ var gameInfo = gameInfo
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return GameInfo(gameInfo!.getGameType(), gameInfo!.getGameMode(), gameInfo!.getPlayerType(), gameInfo!.getHighestLevel(), gameInfo!.getCurrentLevel());
+                        return new GameInfo(gameInfo!.getGameType(), gameInfo!.getGameMode(), gameInfo!.getPlayerType(), gameInfo!.getHighestLevel(), gameInfo!.getCurrentLevel());
     
 }
 

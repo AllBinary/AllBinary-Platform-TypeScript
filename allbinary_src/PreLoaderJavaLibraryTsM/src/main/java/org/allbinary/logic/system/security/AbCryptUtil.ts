@@ -77,7 +77,7 @@ private constructor (){
     
 
         try {
-            outputStream= streamUtil!.get(inputStream, ByteArrayOutputStream(), new Array(16384));
+            outputStream= streamUtil!.get(inputStream, new ByteArrayOutputStream(), new Array(16384));
 
                          as ByteArrayOutputStream;
     

@@ -31,7 +31,7 @@ export class TransformDocumentFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return TransformDocument() as TransformDocumentInterface;
+                        return new TransformDocument() as TransformDocumentInterface;
     
 }
 

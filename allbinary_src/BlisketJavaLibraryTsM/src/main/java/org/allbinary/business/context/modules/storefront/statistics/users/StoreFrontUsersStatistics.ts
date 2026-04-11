@@ -59,7 +59,7 @@ public constructor (storeFrontInterface: StoreFrontInterface){
 
             super();
             var storeFrontInterface = storeFrontInterface
-this.totalUsersByRoleHashMap= HashMap<any, any>();
+this.totalUsersByRoleHashMap= new HashMap<any, any>();
     
 
     var userEntityInterface: UserEntityInterface = UserEntityFactory.getInstance()!;

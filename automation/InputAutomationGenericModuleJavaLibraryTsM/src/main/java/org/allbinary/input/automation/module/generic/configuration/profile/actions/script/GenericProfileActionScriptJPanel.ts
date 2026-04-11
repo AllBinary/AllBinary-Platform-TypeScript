@@ -124,15 +124,15 @@ this.actionScriptJTree= actionScriptJTree;
 
 
     initComponents(){
-jScrollPane1= javax.swing.JScrollPane();
+jScrollPane1= new javax.swing.JScrollPane();
     
-actionScriptJTree= javax.swing.JTree();
+actionScriptJTree= new javax.swing.JTree();
     
-setLayout(java.awt.GridLayout(1, 0));
+setLayout(new java.awt.GridLayout(1, 0));
     
-actionScriptJTree!.setPreferredSize(java.awt.Dimension(500, 500));
+actionScriptJTree!.setPreferredSize(new java.awt.Dimension(500, 500));
     
-actionScriptJTree!.addMouseListener(object: java.awt.event.MouseAdapter()
+actionScriptJTree!.addMouseListener(new object: java.awt.event.MouseAdapter()
                                 {
                                 
     public mouseClicked(evt: java.awt.event.MouseEvent){

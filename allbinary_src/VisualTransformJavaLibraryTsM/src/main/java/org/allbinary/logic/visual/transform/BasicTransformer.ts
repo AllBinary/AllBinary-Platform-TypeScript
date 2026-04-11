@@ -125,9 +125,9 @@ this.setTemplateAsInputStream();
     
 
         try {
-            outputStream= ByteArrayOutputStream();
+            outputStream= new ByteArrayOutputStream();
     
-inputStream= AbFileInputStream(file);
+inputStream= new AbFileInputStream(file);
     
 outputStream= this.streamUtil!.get(inputStream, outputStream, new Array(16384));
 
@@ -156,9 +156,9 @@ outputStream= this.streamUtil!.get(inputStream, outputStream, new Array(16384));
 
                                     }
                                 
-this.setInputStream(ByteArrayInputStream(decrypted) as InputStream);
+this.setInputStream(new ByteArrayInputStream(decrypted) as InputStream);
     
-this.setURIResolver(BasicUriResolver(TransformInfoTemplateData.getInstance()!.ENCRYPTED_EXTENSION) as URIResolver);
+this.setURIResolver(new BasicUriResolver(TransformInfoTemplateData.getInstance()!.ENCRYPTED_EXTENSION) as URIResolver);
     
 
                 //: 
@@ -225,9 +225,9 @@ this.streamUtil!.close(inputStream);
     
 
         try {
-            outputStream= ByteArrayOutputStream();
+            outputStream= new ByteArrayOutputStream();
     
-inputStream= ByteArrayInputStream(this.getTransformInfoInterface()!.getTemplate()!.encodeToByteArray());
+inputStream= new ByteArrayInputStream(this.getTransformInfoInterface()!.getTemplate()!.encodeToByteArray());
     
 outputStream= this.streamUtil!.get(inputStream, outputStream, new Array(16384));
 
@@ -254,9 +254,9 @@ outputStream= this.streamUtil!.get(inputStream, outputStream, new Array(16384));
 
                                     }
                                 
-this.setInputStream(ByteArrayInputStream(decrypted) as InputStream);
+this.setInputStream(new ByteArrayInputStream(decrypted) as InputStream);
     
-this.setURIResolver(BasicUriResolver(TransformInfoTemplateData.getInstance()!.ENCRYPTED_EXTENSION) as URIResolver);
+this.setURIResolver(new BasicUriResolver(TransformInfoTemplateData.getInstance()!.ENCRYPTED_EXTENSION) as URIResolver);
     
 
                 //: 
@@ -392,7 +392,7 @@ stringBuffer!.append(transformInfoTemplateData!.ENCRYPTED_EXTENSION);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORY))
                         
                                     {
-                                    stringBuffer= StringMaker();
+                                    stringBuffer= new StringMaker();
     
 stringBuffer!.append("Encrypted Template File isFile=");
     
@@ -451,9 +451,9 @@ logUtil!.put(stringBuffer!.toString(), this, "setTemplateAsInputStream()");
                         if(file.isFile())
                         
                                     {
-                                    inputStream= AbFileInputStream(file);
+                                    inputStream= new AbFileInputStream(file);
     
-outputStream= ByteArrayOutputStream();
+outputStream= new ByteArrayOutputStream();
     
 outputStream= this.streamUtil!.get(inputStream, outputStream, new Array(16384));
 
@@ -468,9 +468,9 @@ outputStream= this.streamUtil!.get(inputStream, outputStream, new Array(16384));
 
                                     }
                                 
-this.setInputStream(ByteArrayInputStream(outputStream!.toByteArray()) as InputStream);
+this.setInputStream(new ByteArrayInputStream(outputStream!.toByteArray()) as InputStream);
     
-this.setURIResolver(BasicUriResolver(transformInfoTemplateData!.UNCRYPTED_EXTENSION) as URIResolver);
+this.setURIResolver(new BasicUriResolver(transformInfoTemplateData!.UNCRYPTED_EXTENSION) as URIResolver);
     
 
 
@@ -525,7 +525,7 @@ stringBuffer!.append(transformInfoTemplateData!.ENCRYPTED_EXTENSION);
                             
 
 
-                            throw Error("View Template File Type Is Not Recognized: " +this.getTransformInfoInterface()!.getTemplateFilePath())
+                            throw new Error("View Template File Type Is Not Recognized: " +this.getTransformInfoInterface()!.getTemplateFilePath())
 
                         }
                             
@@ -568,7 +568,7 @@ this.streamUtil!.close(inputStream);
 
 
 
-                            throw Error("Error setTemplateAsInputStream()")
+                            throw new Error("Error setTemplateAsInputStream()")
 }
 
 

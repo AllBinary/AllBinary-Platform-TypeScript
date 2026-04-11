@@ -96,7 +96,7 @@ export class RTSScrollSelectionFormFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return MultipleScrollSelectionHorizontalForm(formLabel, items, menuRectangle, FormTypeFactory.getInstance()!.HORIZONTAL_FORM, 0, basicColorFactory!.BLACK, basicColorFactory!.WHITE);
+                        return new MultipleScrollSelectionHorizontalForm(formLabel, items, menuRectangle, FormTypeFactory.getInstance()!.HORIZONTAL_FORM, 0, basicColorFactory!.BLACK, basicColorFactory!.WHITE);
     
 }
 

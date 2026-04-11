@@ -78,7 +78,7 @@ this.onHealthChange();
 
 public constructor (layerInterface: AllBinaryLayer, life: Life, healthInterface: Health, location: number, direction: number)                        
 
-                            : this(layerInterface, life, healthInterface, HealthBarTwodAnimation(layerInterface, location), direction){
+                            : this(layerInterface, life, healthInterface, new HealthBarTwodAnimation(layerInterface, location), direction){
 
             super();
             var layerInterface = layerInterface

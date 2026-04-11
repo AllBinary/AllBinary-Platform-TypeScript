@@ -123,7 +123,7 @@ public constructor (inputAutomationBundleActivator: InputAutomationBundleActivat
             var inputAutomationBundleActivator = inputAutomationBundleActivator
 this.inputAutomationBundleActivator= inputAutomationBundleActivator;
     
-this.fileBasicArrayList= BasicArrayList();
+this.fileBasicArrayList= new BasicArrayList();
     
 }
 
@@ -292,7 +292,7 @@ file= jarFileBasicArrayList!.get(index);
                         if(symbolicName != 
                                     null
                                 )
-                        hashMap!.put(symbolicName, URL(FILE +file.getAbsolutePath()));
+                        hashMap!.put(symbolicName, new URL(FILE +file.getAbsolutePath()));
 
                         
 

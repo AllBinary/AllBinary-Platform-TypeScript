@@ -47,7 +47,7 @@ var hashMap = hashMap
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Item(hashMap) as TableMappingInterface;
+                        return new Item(hashMap) as TableMappingInterface;
     
 }
 
@@ -60,7 +60,7 @@ var request = request
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Item(RequestParams(request).
+                        return new Item(new RequestParams(request).
                             toHashMap()) as TableMappingInterface;
     
 }

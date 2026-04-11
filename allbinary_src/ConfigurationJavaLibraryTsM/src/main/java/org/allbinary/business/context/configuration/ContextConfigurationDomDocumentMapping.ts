@@ -57,7 +57,7 @@ this.contextConfigurationInterface= contextConfigurationInterface;
 ;
     
 
-    var node: Node = ContextConfigurationView(this.contextConfigurationInterface).
+    var node: Node = new ContextConfigurationView(this.contextConfigurationInterface).
                             toXmlNode(document)!;
         
         

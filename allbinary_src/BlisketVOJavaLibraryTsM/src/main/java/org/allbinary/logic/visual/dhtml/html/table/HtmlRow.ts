@@ -68,7 +68,7 @@ this.after= after.toCharArray()
                                         .slice(0, ).join('')
                                     ;
     
-this.htmlCellsVector= Vector();
+this.htmlCellsVector= new Vector();
     
 }
 

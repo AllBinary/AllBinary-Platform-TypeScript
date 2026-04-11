@@ -84,7 +84,7 @@ public constructor (node: Node)
                     
 logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
     
-this.point= Point();
+this.point= new Point();
     
 
     var actionNode: Node = DomSearchHelper.getNode(MouseActionScriptInputData.NAME, node.getChildNodes())!;
@@ -190,7 +190,7 @@ this.setPoint(newPoint);
                             
 
 
-                            throw Error("Action Script Input Unknown Node")
+                            throw new Error("Action Script Input Unknown Node")
 
                         }
                             
@@ -203,13 +203,13 @@ this.setPoint(newPoint);
                             
 
 
-                            throw Error("Action Script Input Node Null")
+                            throw new Error("Action Script Input Node Null")
 
                         }
                             
 this.setAllowsChildren(false);
     
-this.mouseActionScriptInputJPanel= MouseActionScriptInputJPanel(this);
+this.mouseActionScriptInputJPanel= new MouseActionScriptInputJPanel(this);
     
 }
 
@@ -222,11 +222,11 @@ public constructor ()
 
                             //For kotlin this is before the body of the constructor.
                     
-this.point= Point();
+this.point= new Point();
     
 this.setAllowsChildren(false);
     
-this.mouseActionScriptInputJPanel= MouseActionScriptInputJPanel(this);
+this.mouseActionScriptInputJPanel= new MouseActionScriptInputJPanel(this);
     
 }
 

@@ -94,7 +94,7 @@ export class PlatformImage
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 

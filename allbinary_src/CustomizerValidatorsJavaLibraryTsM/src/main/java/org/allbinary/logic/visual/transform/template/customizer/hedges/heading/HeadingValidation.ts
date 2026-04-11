@@ -72,9 +72,9 @@ export class HeadingValidation extends Validation
 public constructor (){
 
             super();
-            this.title= TitleValidation();
+            this.title= new TitleValidation();
     
-this.logo= LogoValidation();
+this.logo= new LogoValidation();
     
 }
 
@@ -100,9 +100,9 @@ public constructor (document: Document){
         
 ;
     
-this.title= TitleValidation(titleNode);
+this.title= new TitleValidation(titleNode);
     
-this.logo= LogoValidation(logoNode);
+this.logo= new LogoValidation(logoNode);
     
 }
 
@@ -119,9 +119,9 @@ this.getFormData(hashMap);
             
     public getFormData(hashMap: HashMap<any, any>){
 var hashMap = hashMap
-this.title= TitleValidation(hashMap);
+this.title= new TitleValidation(hashMap);
     
-this.logo= LogoValidation(hashMap);
+this.logo= new LogoValidation(hashMap);
     
 }
 

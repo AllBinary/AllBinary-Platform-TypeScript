@@ -31,7 +31,7 @@ export class GyroSensorFactory
                 //@Throws(Error::class)
             
     public static init(){
-GyroSensorFactory.allBinaryGyroSensor= NoGyroSensor();
+GyroSensorFactory.allBinaryGyroSensor= new NoGyroSensor();
     
 }
 

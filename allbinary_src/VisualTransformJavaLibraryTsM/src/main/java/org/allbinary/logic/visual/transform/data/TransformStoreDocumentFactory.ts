@@ -42,7 +42,7 @@ var weblisketSession = weblisketSession
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return TransformStoreDocument(pageContext, weblisketSession) as TransformDocumentInterface;
+                        return new TransformStoreDocument(pageContext, weblisketSession) as TransformDocumentInterface;
     
 }
 
@@ -55,7 +55,7 @@ var searchRequest = searchRequest
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return TransformStoreDocument(searchRequest) as TransformDocumentInterface;
+                        return new TransformStoreDocument(searchRequest) as TransformDocumentInterface;
     
 }
 

@@ -126,7 +126,7 @@ this.NULL_INDEX_ANIMATION= NullRotationAnimationFactory.getFactoryInstance()!.ge
 
                          as IndexedAnimation;
     
-this.animation= object: RotationAnimation(animationBehavior)
+this.animation= new object: RotationAnimation(animationBehavior)
                                 {
                                 
     var private index: number= 0
@@ -582,7 +582,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, this.commonStrings!.PROCESS, e);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return StringMaker().
+                        return new StringMaker().
                             append(super.toString())!.append(commonSeps!.SPACE)!.append(image.getName())!.append(commonSeps!.SPACE)!.appendint(image.getWidth())!.append(commonSeps!.SPACE)!.appendint(image.getHeight())!.toString();
 
                         ;

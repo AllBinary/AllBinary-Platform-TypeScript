@@ -69,13 +69,13 @@ export class RawKeyEventHandler
 public constructor (){
 
             super();
-            this.eventListenerInterfaceList= BasicArrayList();
+            this.eventListenerInterfaceList= new BasicArrayList();
     
 }
 
 
     public removeAllListeners(){
-this.eventListenerInterfaceList= BasicArrayList();
+this.eventListenerInterfaceList= new BasicArrayList();
     
 }
 

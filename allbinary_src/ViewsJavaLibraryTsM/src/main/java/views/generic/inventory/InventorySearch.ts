@@ -130,8 +130,8 @@ this.searchRequest= searchRequest;
 ;
     
 
-    var file: string = StaticPagesEntity().
-                            getFile(storeFront!.getName(), Replace("-", CommonSeps.getInstance()!.SPACE).
+    var file: string = new StaticPagesEntity().
+                            getFile(storeFront!.getName(), new Replace("-", CommonSeps.getInstance()!.SPACE).
                             all(columnValueHashMap!.get(BasicItemData.KEYWORDS);
 
                          as String))!;
@@ -174,7 +174,7 @@ stringBuffer!.append(AbPathData.getInstance()!.EXTENSION_SEP);
 stringBuffer!.append(InputOutputTypeData.getInstance()!.DEFAULT);
     
 
-    var filePath: string = Replace(CommonSeps.getInstance()!.SPACE, "%20").
+    var filePath: string = new Replace(CommonSeps.getInstance()!.SPACE, "%20").
                             all(stringBuffer!.toString())!;
         
         
@@ -205,7 +205,7 @@ stringBuffer!.append(InputOutputTypeData.getInstance()!.DEFAULT);
 
 
 
-                            throw Error("Failed retrieve Single Product Page Static")
+                            throw new Error("Failed retrieve Single Product Page Static")
 }
 
 }
@@ -244,7 +244,7 @@ stringBuffer!.append(InputOutputTypeData.getInstance()!.DEFAULT);
 
 
 
-                            throw Error("Failed retrieve Single Product Page Dynamically")
+                            throw new Error("Failed retrieve Single Product Page Dynamically")
 }
 
 }

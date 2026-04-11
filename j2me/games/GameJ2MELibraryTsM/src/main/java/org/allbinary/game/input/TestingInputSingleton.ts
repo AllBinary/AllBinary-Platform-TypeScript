@@ -99,7 +99,7 @@ var aTestInputInterface = aTestInputInterface
     
 this.paintable= testInputInterface;
     
-this.inputProcessorArray[Canvas.UP]= object: GameInputProcessor()
+this.inputProcessorArray[Canvas.UP]= new object: GameInputProcessor()
                                 {
                                 
                 //@Throws(Error::class)
@@ -114,7 +114,7 @@ testInputInterface!.up();
                                 }
                             ;
     
-this.inputProcessorArray[Canvas.DOWN]= object: GameInputProcessor()
+this.inputProcessorArray[Canvas.DOWN]= new object: GameInputProcessor()
                                 {
                                 
                 //@Throws(Error::class)
@@ -129,7 +129,7 @@ testInputInterface!.down();
                                 }
                             ;
     
-this.inputProcessorArray[Canvas.LEFT]= object: GameInputProcessor()
+this.inputProcessorArray[Canvas.LEFT]= new object: GameInputProcessor()
                                 {
                                 
                 //@Throws(Error::class)
@@ -144,7 +144,7 @@ testInputInterface!.left();
                                 }
                             ;
     
-this.inputProcessorArray[Canvas.RIGHT]= object: GameInputProcessor()
+this.inputProcessorArray[Canvas.RIGHT]= new object: GameInputProcessor()
                                 {
                                 
                 //@Throws(Error::class)
@@ -159,7 +159,7 @@ testInputInterface!.right();
                                 }
                             ;
     
-this.inputProcessorArray[Canvas.KEY_NUM7]= object: GameInputProcessor()
+this.inputProcessorArray[Canvas.KEY_NUM7]= new object: GameInputProcessor()
                                 {
                                 
                 //@Throws(Error::class)
@@ -174,7 +174,7 @@ testInputInterface!.strafeLeft();
                                 }
                             ;
     
-this.inputProcessorArray[Canvas.KEY_NUM9]= object: GameInputProcessor()
+this.inputProcessorArray[Canvas.KEY_NUM9]= new object: GameInputProcessor()
                                 {
                                 
                 //@Throws(Error::class)

@@ -108,7 +108,7 @@ this.imageProcessorInput= imageProcessorInput;
 
 
     public process(){
-object: Thread()
+new object: Thread()
                                 {
                                 
     public run(){
@@ -188,13 +188,13 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
 
 
     initComponents(){
-writeOverOriginalJCheckBox= javax.swing.JCheckBox();
+writeOverOriginalJCheckBox= new javax.swing.JCheckBox();
     
-widthReductionTextField= javax.swing.JTextField();
+widthReductionTextField= new javax.swing.JTextField();
     
-jLabel5= javax.swing.JLabel();
+jLabel5= new javax.swing.JLabel();
     
-jPanel1= object: javax.swing.JPanel()
+jPanel1= new object: javax.swing.JPanel()
                                 {
                                 
     public paint(graphics: Graphics){
@@ -218,19 +218,19 @@ var graphics = graphics
                                 }
                             ;
     
-jLabel4= javax.swing.JLabel();
+jLabel4= new javax.swing.JLabel();
     
-jLabel6= javax.swing.JLabel();
+jLabel6= new javax.swing.JLabel();
     
-heightReductionTextField= javax.swing.JTextField();
+heightReductionTextField= new javax.swing.JTextField();
     
-generateJButton= javax.swing.JButton();
+generateJButton= new javax.swing.JButton();
     
-jPanel2= javax.swing.JPanel();
+jPanel2= new javax.swing.JPanel();
     
-jLabel1= javax.swing.JLabel();
+jLabel1= new javax.swing.JLabel();
     
-totalFramesJComboBox= javax.swing.JComboBox<>();
+totalFramesJComboBox= new javax.swing.JComboBox<>();
     
 
     var size: number = 70;
@@ -258,11 +258,11 @@ animationStringArray2[index -1]= index.toString();
     
 }
 
-totalFramesJComboBox!.setModel(javax.swing.DefaultComboBoxModel(animationStringArray2));
+totalFramesJComboBox!.setModel(new javax.swing.DefaultComboBoxModel(animationStringArray2));
     
-jLabel2= javax.swing.JLabel();
+jLabel2= new javax.swing.JLabel();
     
-totalAnimationsJComboBox= javax.swing.JComboBox<>();
+totalAnimationsJComboBox= new javax.swing.JComboBox<>();
     
 
     var animationStringArray: string[] = new Array(size -1);
@@ -284,30 +284,30 @@ animationStringArray[index -1]= index.toString();
     
 }
 
-totalAnimationsJComboBox!.setModel(javax.swing.DefaultComboBoxModel(animationStringArray));
+totalAnimationsJComboBox!.setModel(new javax.swing.DefaultComboBoxModel(animationStringArray));
     
-jLabel3= javax.swing.JLabel();
+jLabel3= new javax.swing.JLabel();
     
-spriteTypeJComboBox= javax.swing.JComboBox<>();
+spriteTypeJComboBox= new javax.swing.JComboBox<>();
     
-spriteTypeJComboBox!.setModel(javax.swing.DefaultComboBoxModel(
+spriteTypeJComboBox!.setModel(new javax.swing.DefaultComboBoxModel(
                                                 [
                                                     org.allbinary.media.image.SpriteSplitterUtil.getInstance()!.DIRECTIONAL_ANIMATIONS,org.allbinary.media.image.SpriteSplitterUtil.getInstance()!.HORIZONTAL_ANIMATIONS,org.allbinary.media.image.SpriteSplitterUtil.getInstance()!.HORIZONTAL_SPRITE;
         
         
                                                 ]));
     
-jLabel7= javax.swing.JLabel();
+jLabel7= new javax.swing.JLabel();
     
-increaseWidthTextField= javax.swing.JTextField();
+increaseWidthTextField= new javax.swing.JTextField();
     
-jLabel8= javax.swing.JLabel();
+jLabel8= new javax.swing.JLabel();
     
-increaseHeightTextField= javax.swing.JTextField();
+increaseHeightTextField= new javax.swing.JTextField();
     
 writeOverOriginalJCheckBox!.setText("Write Over Original");
     
-writeOverOriginalJCheckBox!.addActionListener(object: java.awt.event.ActionListener()
+writeOverOriginalJCheckBox!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -321,7 +321,7 @@ writeOverOriginalJCheckBoxActionPerformed(evt);
     
 widthReductionTextField!.setText(CommonPhoneStrings.getInstance()!.ZERO);
     
-widthReductionTextField!.addActionListener(object: java.awt.event.ActionListener()
+widthReductionTextField!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -355,7 +355,7 @@ heightReductionTextField!.setText(CommonPhoneStrings.getInstance()!.ZERO);
     
 generateJButton!.setText("Generate");
     
-generateJButton!.addActionListener(object: java.awt.event.ActionListener()
+generateJButton!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -371,7 +371,7 @@ jLabel1!.setText("Row Total:");
     
 totalFramesJComboBox!.setSelectedIndex(1);
     
-totalFramesJComboBox!.addActionListener(object: java.awt.event.ActionListener()
+totalFramesJComboBox!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -387,7 +387,7 @@ jLabel2!.setText("Column Total :");
     
 totalAnimationsJComboBox!.setSelectedIndex(3);
     
-totalAnimationsJComboBox!.addActionListener(object: java.awt.event.ActionListener()
+totalAnimationsJComboBox!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -401,7 +401,7 @@ totalAnimationsJComboBoxActionPerformed(evt);
     
 jLabel3!.setText("Type:");
     
-spriteTypeJComboBox!.addActionListener(object: java.awt.event.ActionListener()
+spriteTypeJComboBox!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -429,7 +429,7 @@ jLabel7!.setText("More Width:");
     
 increaseWidthTextField!.setText(CommonPhoneStrings.getInstance()!.ZERO);
     
-increaseWidthTextField!.addActionListener(object: java.awt.event.ActionListener()
+increaseWidthTextField!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -598,10 +598,10 @@ this.getParent()!.repaint();
         
 ;
     
-filePath= StringBuilder().
+filePath= new StringBuilder().
                             append(filePath!.substring(0, extensionIndex))!.append(commonSeps!.UNDERSCORE)!.append(name)!.append(imageStrings!.PNG_EXTENSION)!.toString();
     
-file= File(filePath);
+file= new File(filePath);
     
 
                                     }
@@ -612,7 +612,7 @@ file= File(filePath);
         
 ;
     
-logUtil!.put(StringMaker().
+logUtil!.put(new StringMaker().
                             append("File: ")!.append(StringUtil.getInstance()!.toString(file))!.append(" Wrote: ")!.appendboolean(isWritten)!.toString(), this, commonStrings!.RUN);
     
 }

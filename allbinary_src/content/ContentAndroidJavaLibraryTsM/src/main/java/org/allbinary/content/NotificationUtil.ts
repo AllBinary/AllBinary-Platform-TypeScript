@@ -92,7 +92,7 @@ private constructor (){
                         if(SDK_VERSION > 22)
                         
                                     {
-                                    notificationBuilder= NotificationBuilderAPI23();
+                                    notificationBuilder= new NotificationBuilderAPI23();
     
 
                                     }

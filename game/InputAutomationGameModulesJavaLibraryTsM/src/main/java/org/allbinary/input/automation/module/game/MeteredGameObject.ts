@@ -96,7 +96,7 @@ index < bufferedImage!.length; index++)
         
 ;
     
-this.getRatios()[index]= Double(nominator /this.getSize());
+this.getRatios()[index]= new Double(nominator /this.getSize());
     
 }
 

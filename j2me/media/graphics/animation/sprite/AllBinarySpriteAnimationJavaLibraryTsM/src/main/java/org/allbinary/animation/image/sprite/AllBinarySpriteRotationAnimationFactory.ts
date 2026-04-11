@@ -206,7 +206,7 @@ public constructor (image: Image, unused: any = {}, animationBehaviorFactory: An
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return AllBinaryAdjustedSpriteRotationAnimation(sprite, this.getImage(), this.animationFactoryInitializationVisitor!.dx, this.animationFactoryInitializationVisitor!.dy, this.animationBehaviorFactory!.getOrCreateInstance());
+                        return new AllBinaryAdjustedSpriteRotationAnimation(sprite, this.getImage(), this.animationFactoryInitializationVisitor!.dx, this.animationFactoryInitializationVisitor!.dy, this.animationBehaviorFactory!.getOrCreateInstance());
     
 
                                     }
@@ -216,7 +216,7 @@ public constructor (image: Image, unused: any = {}, animationBehaviorFactory: An
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return AllBinarySpriteRotationAnimation(sprite, this.getImage(), this.animationBehaviorFactory!.getOrCreateInstance());
+                        return new AllBinarySpriteRotationAnimation(sprite, this.getImage(), this.animationBehaviorFactory!.getOrCreateInstance());
     
 
                         }

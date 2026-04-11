@@ -208,7 +208,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, this.commonStrings!.INIT, e);
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 }

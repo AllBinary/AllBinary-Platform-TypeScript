@@ -57,9 +57,9 @@ export class OrderHistoryTag extends TableTag {
 public constructor (){
 
             super();
-            this.setTagHelperFactory(OrderHistoryHelperFactory());
+            this.setTagHelperFactory(new OrderHistoryHelperFactory());
     
-this.setTagRequestHelperFactory(OrderHistoryRequestHelperFactory());
+this.setTagRequestHelperFactory(new OrderHistoryRequestHelperFactory());
     
 }
 
@@ -85,7 +85,7 @@ this.status= value;
 ;
     
 
-    var anyType: any = OrderHistoryRequestHelperFactory().
+    var anyType: any = new OrderHistoryRequestHelperFactory().
                             getInstance(this.getPropertiesHashMap(), pageContext)!;
         
         

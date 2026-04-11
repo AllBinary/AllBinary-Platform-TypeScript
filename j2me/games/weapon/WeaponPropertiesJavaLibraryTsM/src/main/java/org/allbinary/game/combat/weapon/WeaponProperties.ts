@@ -96,7 +96,7 @@ var dissipation = dissipation
         
 ;
     
-PreLogUtil.put(StringMaker().
+PreLogUtil.put(new StringMaker().
                             append(MESSAGE)!.appendlong(speed)!.toString(), this, commonStrings!.CONSTRUCTOR);
     
 messageSent= true;
@@ -112,7 +112,7 @@ this.setDamage(damage);
     
 this.setDissipation(dissipation);
     
-this.setSpeed(BasicDecimal(speed));
+this.setSpeed(new BasicDecimal(speed));
     
 
                         if(dissipation != ZERO)

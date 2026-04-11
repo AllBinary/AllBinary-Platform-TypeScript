@@ -94,7 +94,7 @@ shippingType= EMPTY;
     
 shippingCost= EMPTY;
     
-shippingAddress= StreetAddress();
+shippingAddress= new StreetAddress();
     
 }
 
@@ -133,7 +133,7 @@ itemHashMap!.put(StreetAddressData.CODE, itemHashMap!.get(ShippingAddressData.CO
     
 itemHashMap!.put(StreetAddressData.COUNTRY, itemHashMap!.get(ShippingAddressData.COUNTRY));
     
-this.shippingAddress= StreetAddress(itemHashMap);
+this.shippingAddress= new StreetAddress(itemHashMap);
     
 }
 

@@ -96,7 +96,7 @@ export class RaceTrackDropCellPositionGenerator extends BaseDropCellPositionGene
 protected constructor (){
 
             super();
-            timeDelayHelper= TimeDelayHelper(10000);
+            timeDelayHelper= new TimeDelayHelper(10000);
     
 }
 
@@ -306,7 +306,7 @@ this.drop(allBinaryLayerManager, index);
 
 
 
-                            throw Error(CommonStrings.getInstance()!.NOT_IMPLEMENTED)
+                            throw new Error(CommonStrings.getInstance()!.NOT_IMPLEMENTED)
 }
 
 

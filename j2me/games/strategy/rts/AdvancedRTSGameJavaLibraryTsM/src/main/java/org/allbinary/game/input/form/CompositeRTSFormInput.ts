@@ -102,9 +102,9 @@ this.isPrimaryWaypointCreator= isPrimaryWaypointCreator;
     
 this.rtsFormInputArray= new Array(2);
     
-this.rtsFormInputArray[0]= WaypointRTSFormInput(this.groupInterfaceArray, isPrimaryWaypointCreator);
+this.rtsFormInputArray[0]= new WaypointRTSFormInput(this.groupInterfaceArray, isPrimaryWaypointCreator);
     
-this.rtsFormInputArray[1]= UnitRTSFormInput(this.groupInterfaceArray);
+this.rtsFormInputArray[1]= new UnitRTSFormInput(this.groupInterfaceArray);
     
 }
 

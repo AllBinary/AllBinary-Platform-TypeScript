@@ -51,7 +51,7 @@ export class TransformTag extends TransformInfoTag {
         
 public constructor ()                        
 
-                            : super(ViewHelperFactory()){
+                            : super(new ViewHelperFactory()){
 
             super();
             

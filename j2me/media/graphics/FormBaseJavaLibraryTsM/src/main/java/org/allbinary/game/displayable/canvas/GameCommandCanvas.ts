@@ -273,7 +273,7 @@ repaintProcessor!.process();
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -342,9 +342,9 @@ this.menuForm= form;
                         if(form != ScrollSelectionFormNoneFactory.getInstance())
                         
                                     {
-                                    this.setMenuInputProcessor(ImmediateCommandFormInputProcessor(BasicArrayList(),  -1, this, form));
+                                    this.setMenuInputProcessor(new ImmediateCommandFormInputProcessor(new BasicArrayList(),  -1, this, form));
     
-this.menuPaintable= FormPaintable(form);
+this.menuPaintable= new FormPaintable(form);
     
 
                                     }
@@ -358,7 +358,7 @@ this.repaintBehavior!.onChangeRepaint(this);
             
     public createForm(): ScrollSelectionForm{
 
-    var items: CustomItem[] = CommandTextItemArrayFactory(AllCommandsVisitor()).
+    var items: CustomItem[] = new CommandTextItemArrayFactory(new AllCommandsVisitor()).
                             getInstance(this.getCommandStack();
 
                          as Vector<any>, this.backgroundBasicColor, this.foregroundBasicColor)!;
@@ -484,7 +484,7 @@ this.keyRepeated(keyCode, 0);
     public keyPressed(keyCode: number, deviceId: number){
     //var keyCode = keyCode
     //var deviceId = deviceId
-logUtil!.put(StringMaker().
+logUtil!.put(new StringMaker().
                             append(CommonSeps.getInstance()!.SPACE)!.appendint(keyCode)!.toString(), this, gameInputStrings!.KEY_PRESSED);
     
 this.addGameKeyEvent(keyCode, 0, false);
@@ -545,7 +545,7 @@ downGameKeyEventHandler!.getInstance(deviceId)!.fireEvent(gameKeyEvent);
                                     }
                                 
                         else {
-                            logUtil!.put(StringMaker().
+                            logUtil!.put(new StringMaker().
                             append(this.gameInputStrings!.NO_KEY)!.appendint(keyCode)!.toString(), this, this.gameInputStrings!.ADD_KEY_EVENT);
     
 
@@ -592,7 +592,7 @@ upGameKeyEventHandler!.getInstance(deviceId)!.fireEvent(gameKeyEvent);
                                     }
                                 
                         else {
-                            logUtil!.put(StringMaker().
+                            logUtil!.put(new StringMaker().
                             append(this.gameInputStrings!.NO_KEY)!.appendint(keyCode)!.toString(), this, this.gameInputStrings!.REMOVE_KEY_EVENT);
     
 

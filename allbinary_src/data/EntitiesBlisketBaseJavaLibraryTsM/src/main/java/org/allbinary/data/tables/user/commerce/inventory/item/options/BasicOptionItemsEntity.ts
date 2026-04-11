@@ -62,7 +62,7 @@ export class BasicOptionItemsEntity extends AbSqlBean
         
 public constructor ()                        
 
-                            : super(InventoryDbInitInfo()){
+                            : super(new InventoryDbInitInfo()){
 
             super();
             

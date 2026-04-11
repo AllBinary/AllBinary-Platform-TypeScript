@@ -37,7 +37,7 @@ export class CustomGravityConstantVelocityMovement extends BasicConstantVelocity
     private customGravity: number
 public constructor (speedBasicDecimal: BasicDecimal, customGravity: number)                        
 
-                            : super(speedBasicDecimal, VelocityProperties(speedBasicDecimal!.getUnscaled();
+                            : super(speedBasicDecimal, new VelocityProperties(speedBasicDecimal!.getUnscaled();
 
                         .toInt(), speedBasicDecimal!.getUnscaled();
 

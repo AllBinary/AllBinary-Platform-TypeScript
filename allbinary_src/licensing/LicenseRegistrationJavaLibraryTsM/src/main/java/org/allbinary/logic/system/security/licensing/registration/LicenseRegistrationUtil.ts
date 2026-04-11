@@ -73,7 +73,7 @@ hashtable.put(RegistrationConfiguration.getInstance()!.NAME, registrationId);
     
 hashtable.put("message", SpecialMessageUtil.getInstance()!.get());
     
-XmlRpcRemoteLicenseRegistrationClient(abeClientInformation).
+new XmlRpcRemoteLicenseRegistrationClient(abeClientInformation).
                             get(hashtable);
     
 

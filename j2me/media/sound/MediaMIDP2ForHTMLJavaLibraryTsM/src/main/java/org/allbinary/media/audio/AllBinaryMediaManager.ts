@@ -97,7 +97,7 @@ logUtil!.put(commonString!.START, THIS, commonString!.INIT);
     
 ProgressCanvasFactory.getInstance()!.addPortion(50, "Media Manager");
     
-Sounds(soundsFactoryInterface).
+new Sounds(soundsFactoryInterface).
                             init();
     
 }
@@ -107,10 +107,10 @@ Sounds(soundsFactoryInterface).
             
     public static shutdown(soundsFactoryInterface: SoundsFactoryInterface){
 var soundsFactoryInterface = soundsFactoryInterface
-Sounds(soundsFactoryInterface).
+new Sounds(soundsFactoryInterface).
                             stopAll();
     
-Sounds(soundsFactoryInterface).
+new Sounds(soundsFactoryInterface).
                             closeAll();
     
 System.gc();

@@ -128,34 +128,34 @@ public constructor (){
             super();
             
         try {
-            componentInterfaceVector= Vector();
+            componentInterfaceVector= new Vector();
     
-videoInterfaceVector= Vector();
+videoInterfaceVector= new Vector();
     
-hardDriveControllerInterfaceVector= Vector();
+hardDriveControllerInterfaceVector= new Vector();
     
-cpuInterfaceVector= Vector();
+cpuInterfaceVector= new Vector();
     
-usbInterfaceVector= Vector();
+usbInterfaceVector= new Vector();
     
-ethernetInterfaceVector= Vector();
+ethernetInterfaceVector= new Vector();
     
-multimediaInterfaceVector= Vector();
+multimediaInterfaceVector= new Vector();
     
-fireWireInterfaceVector= Vector();
+fireWireInterfaceVector= new Vector();
     
-bridgeInterfaceVector= Vector();
+bridgeInterfaceVector= new Vector();
     
-hardDriveInterfaceVector= Vector();
+hardDriveInterfaceVector= new Vector();
     
-macInterfaceVector= Vector();
+macInterfaceVector= new Vector();
     
-monitorInterfaceVector= Vector();
+monitorInterfaceVector= new Vector();
     
 
                         if(componentInterfaceVector!.length < MINHARDWARE)
                         
-                                    throw Error("Not Enough Data For A Valid License On Windows")
+                                    throw new Error("Not Enough Data For A Valid License On Windows")
 
                 //: 
 } catch(e) 

@@ -118,9 +118,9 @@ this.request= pageContext!.getRequest();
 
                          as HttpServletRequest;
     
-this.weblisketSession= WeblisketSession(hashMap, pageContext);
+this.weblisketSession= new WeblisketSession(hashMap, pageContext);
     
-this.portion= Portion(hashMap);
+this.portion= new Portion(hashMap);
     
 this.getFormData();
     
@@ -132,7 +132,7 @@ this.getFormData();
     getFormData(){
 this.storeName= this.weblisketSession!.getStoreName();
     
-this.modifyingStoreFrontInterface= StoreFront(this.request) as StoreFrontInterface;
+this.modifyingStoreFrontInterface= new StoreFront(this.request) as StoreFrontInterface;
     
 }
 
@@ -253,13 +253,13 @@ stringBuffer!.append(this.weblisketSession!.getUserName());
 ;
     
 
-    var adminBasicEmailInfo: BasicEmailInfo = AdminEmailInfo(adminEmailSubject, adminEmailTextBody) as BasicEmailInfo;
+    var adminBasicEmailInfo: BasicEmailInfo = new AdminEmailInfo(adminEmailSubject, adminEmailTextBody) as BasicEmailInfo;
         
         
 ;
     
 
-    var storeAdminBasicEmailInfo: BasicEmailInfo = StoreEmailInfo(this.modifyingStoreFrontInterface, storeManagerEmailSubject, adminEmailTextBody) as BasicEmailInfo;
+    var storeAdminBasicEmailInfo: BasicEmailInfo = new StoreEmailInfo(this.modifyingStoreFrontInterface, storeManagerEmailSubject, adminEmailTextBody) as BasicEmailInfo;
         
         
 ;

@@ -220,7 +220,7 @@ inputStream= resource.javaClass.getResourceAsStream(resourcePath);
 
 
 
-                            throw Error(stringMaker!.append("Unable to obtain: ")!.append(resource)!.toString())
+                            throw new Error(stringMaker!.append("Unable to obtain: ")!.append(resource)!.toString())
 
                                     }
                                 

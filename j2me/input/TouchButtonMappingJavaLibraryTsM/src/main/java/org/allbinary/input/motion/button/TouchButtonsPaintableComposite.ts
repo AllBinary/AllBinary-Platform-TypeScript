@@ -105,7 +105,7 @@ this.inputMappingInterface= inputMappingInterface;
     
 CompleteMotionGestureInputEventHandler.getInstance()!.addListener(this);
     
-this.touchButtonsPaintable= TouchButtonsMappingPaintable(basicColor);
+this.touchButtonsPaintable= new TouchButtonsMappingPaintable(basicColor);
     
 }
 
@@ -214,7 +214,7 @@ released= true;
                                 
 released= false;
     
-logUtil!.put(StringMaker().
+logUtil!.put(new StringMaker().
                             append("GameKey: ")!.append(StringUtil.getInstance()!.toString(gameKey))!.append(" MotionGestureInput: ")!.append(StringUtil.getInstance()!.toString(motionGestureInput))!.toString(), this, METHOD_NAME);
     
 this.inputMappingInterface!.process(gameKey, motionGestureInput);

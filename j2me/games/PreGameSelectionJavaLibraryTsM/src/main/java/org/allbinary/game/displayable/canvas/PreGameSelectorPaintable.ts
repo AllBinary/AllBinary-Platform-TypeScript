@@ -55,7 +55,7 @@ this.title= title;
         
 ;
     
-this.canvasDrawLineString= CanvasDrawLineString(displayInfo!.getLastHalfWidth(), 0);
+this.canvasDrawLineString= new CanvasDrawLineString(displayInfo!.getLastHalfWidth(), 0);
     
 this.preGameScrollSelectionForm= preGameScrollSelectionForm;
     
@@ -69,7 +69,7 @@ this.preGameScrollSelectionForm= preGameScrollSelectionForm;
         
 ;
     
-this.canvasDrawLineString= CanvasDrawLineString(displayInfo!.getLastHalfWidth(), 0);
+this.canvasDrawLineString= new CanvasDrawLineString(displayInfo!.getLastHalfWidth(), 0);
     
 }
 

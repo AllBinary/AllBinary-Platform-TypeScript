@@ -86,7 +86,7 @@ var index = index
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -95,7 +95,7 @@ var index = index
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -104,7 +104,7 @@ var index = index
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -113,7 +113,7 @@ var index = index
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -122,7 +122,7 @@ var index = index
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -131,7 +131,7 @@ var index = index
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -140,7 +140,7 @@ var index = index
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -149,7 +149,7 @@ var index = index
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -158,7 +158,7 @@ var index = index
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -167,7 +167,7 @@ var index = index
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -176,7 +176,7 @@ var index = index
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -185,7 +185,7 @@ var index = index
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 

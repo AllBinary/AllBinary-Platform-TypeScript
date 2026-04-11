@@ -297,7 +297,7 @@ anchor= 0;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return HudGraphicsPosition(this.getPoint(x, y), anchor);
+                        return new HudGraphicsPosition(this.getPoint(x, y), anchor);
     
 }
 

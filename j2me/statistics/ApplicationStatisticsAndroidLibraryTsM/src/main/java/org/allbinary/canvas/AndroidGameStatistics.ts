@@ -76,7 +76,7 @@ this.STRING_ARRAY[index]= stringUtil!.EMPTY_STRING;
 var view = view
 super.init();
     
-this.view= ViewWrapper(view);
+this.view= new ViewWrapper(view);
     
 this.totalOnDraws= 0;
     

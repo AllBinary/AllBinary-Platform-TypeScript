@@ -182,17 +182,17 @@ this.isPrimaryWaypointCreator= isPrimaryWaypointCreator;
         
 ;
     
-this.dragToSpotGameNotificationEvent= GameNotificationEvent(this, RTSGameStrings.getInstance()!.DRAG_TO_SPOT, smallIntegerSingletonFactory!.getInstance(2), basicColorFactory!.WHITE, BooleanFactory.getInstance()!.FALSE);
+this.dragToSpotGameNotificationEvent= new GameNotificationEvent(this, RTSGameStrings.getInstance()!.DRAG_TO_SPOT, smallIntegerSingletonFactory!.getInstance(2), basicColorFactory!.WHITE, BooleanFactory.getInstance()!.FALSE);
     
-this.spotTakenGameNotificationEvent= GameNotificationEvent(this, RTSGameStrings.getInstance()!.SPOT_TAKEN, smallIntegerSingletonFactory!.getInstance(2), basicColorFactory!.WHITE, BooleanFactory.getInstance()!.FALSE);
+this.spotTakenGameNotificationEvent= new GameNotificationEvent(this, RTSGameStrings.getInstance()!.SPOT_TAKEN, smallIntegerSingletonFactory!.getInstance(2), basicColorFactory!.WHITE, BooleanFactory.getInstance()!.FALSE);
     
-this.buildingCollisionGameNotificationEvent= GameNotificationEvent(this, RTSGameStrings.getInstance()!.BUILDING_COLLISION, smallIntegerSingletonFactory!.getInstance(2), basicColorFactory!.WHITE, BooleanFactory.getInstance()!.FALSE);
+this.buildingCollisionGameNotificationEvent= new GameNotificationEvent(this, RTSGameStrings.getInstance()!.BUILDING_COLLISION, smallIntegerSingletonFactory!.getInstance(2), basicColorFactory!.WHITE, BooleanFactory.getInstance()!.FALSE);
     
-this.roadCollisionGameNotificationEvent= GameNotificationEvent(this, RTSGameStrings.getInstance()!.ROAD_COLLISION, smallIntegerSingletonFactory!.getInstance(2), basicColorFactory!.WHITE, BooleanFactory.getInstance()!.FALSE);
+this.roadCollisionGameNotificationEvent= new GameNotificationEvent(this, RTSGameStrings.getInstance()!.ROAD_COLLISION, smallIntegerSingletonFactory!.getInstance(2), basicColorFactory!.WHITE, BooleanFactory.getInstance()!.FALSE);
     
-this.newWaypointGameNotificationEvent= GameNotificationEvent(this, RTSGameStrings.getInstance()!.NEW_WAYPOINT, smallIntegerSingletonFactory!.getInstance(2), basicColorFactory!.WHITE, BooleanFactory.getInstance()!.FALSE);
+this.newWaypointGameNotificationEvent= new GameNotificationEvent(this, RTSGameStrings.getInstance()!.NEW_WAYPOINT, smallIntegerSingletonFactory!.getInstance(2), basicColorFactory!.WHITE, BooleanFactory.getInstance()!.FALSE);
     
-this.noMoneyGameNotificationEvent= GameNotificationEvent(this, RTSGameStrings.getInstance()!.NO_MONEY, smallIntegerSingletonFactory!.getInstance(2), basicColorFactory!.WHITE, BooleanFactory.getInstance()!.FALSE);
+this.noMoneyGameNotificationEvent= new GameNotificationEvent(this, RTSGameStrings.getInstance()!.NO_MONEY, smallIntegerSingletonFactory!.getInstance(2), basicColorFactory!.WHITE, BooleanFactory.getInstance()!.FALSE);
     
 }
 
@@ -424,7 +424,7 @@ logUtil!.put("Layer: " +layerInterface, this, "attemptBuild");
                                 )
                         
                                     {
-                                    logUtil!.put("Layer was null", this, "attemptBuild", Error());
+                                    logUtil!.put("Layer was null", this, "attemptBuild", new Error());
     
 
 

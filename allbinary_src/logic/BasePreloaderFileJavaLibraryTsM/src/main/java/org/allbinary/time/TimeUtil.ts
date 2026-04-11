@@ -52,28 +52,28 @@ var monthString = monthString
 var dayString = dayString
 var hourString = hourString
 
-    var year: number = Integer(yearString).
+    var year: number = new Integer(yearString).
                             toInt()!;
         
         
 ;
     
 
-    var month: number = Integer(monthString).
+    var month: number = new Integer(monthString).
                             toInt()!;
         
         
 ;
     
 
-    var day: number = Integer(dayString).
+    var day: number = new Integer(dayString).
                             toInt()!;
         
         
 ;
     
 
-    var hour: number = Integer(hourString).
+    var hour: number = new Integer(hourString).
                             toInt()!;
         
         
@@ -93,42 +93,42 @@ var hourString = hourString
 var minuteString = minuteString
 var secondString = secondString
 
-    var year: number = Integer(yearString).
+    var year: number = new Integer(yearString).
                             toInt()!;
         
         
 ;
     
 
-    var month: number = Integer(monthString).
+    var month: number = new Integer(monthString).
                             toInt()!;
         
         
 ;
     
 
-    var day: number = Integer(dayString).
+    var day: number = new Integer(dayString).
                             toInt()!;
         
         
 ;
     
 
-    var hour: number = Integer(hourString).
+    var hour: number = new Integer(hourString).
                             toInt()!;
         
         
 ;
     
 
-    var minute: number = Integer(minuteString).
+    var minute: number = new Integer(minuteString).
                             toInt()!;
         
         
 ;
     
 
-    var second: number = Integer(secondString).
+    var second: number = new Integer(secondString).
                             toInt()!;
         
         
@@ -148,42 +148,42 @@ var hoursString = hoursString
 var minutesString = minutesString
 var secondsString = secondsString
 
-    var year: number = calendar.get(Calendar.YEAR) +Integer(yearsString).
+    var year: number = calendar.get(Calendar.YEAR) +new Integer(yearsString).
                             toInt();
         
         
 ;
     
 
-    var month: number = calendar.get(Calendar.MONTH) +Integer(monthsString).
+    var month: number = calendar.get(Calendar.MONTH) +new Integer(monthsString).
                             toInt();
         
         
 ;
     
 
-    var day: number = calendar.get(Calendar.DAY_OF_MONTH) +Integer(daysString).
+    var day: number = calendar.get(Calendar.DAY_OF_MONTH) +new Integer(daysString).
                             toInt();
         
         
 ;
     
 
-    var hour: number = calendar.get(Calendar.HOUR) +Integer(hoursString).
+    var hour: number = calendar.get(Calendar.HOUR) +new Integer(hoursString).
                             toInt();
         
         
 ;
     
 
-    var minute: number = calendar.get(Calendar.MINUTE) +Integer(minutesString).
+    var minute: number = calendar.get(Calendar.MINUTE) +new Integer(minutesString).
                             toInt();
         
         
 ;
     
 
-    var second: number = calendar.get(Calendar.SECOND) +Integer(secondsString).
+    var second: number = calendar.get(Calendar.SECOND) +new Integer(secondsString).
                             toInt();
         
         

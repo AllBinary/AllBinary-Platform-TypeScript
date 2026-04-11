@@ -58,7 +58,7 @@ hashtable.put(BasePatrolAI.MAX_DISTANCE, SmallIntegerSingletonFactory.getInstanc
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return TerrainPatrolAI(hashtable, ownerLayerInterface, gameInput);
+                        return new TerrainPatrolAI(hashtable, ownerLayerInterface, gameInput);
     
 }
 

@@ -53,9 +53,9 @@ export class GameConfigurationSingleton
 private constructor (){
 
             super();
-            list= BasicArrayList();
+            list= new BasicArrayList();
     
-hashtable= Hashtable<any, any>();
+hashtable= new Hashtable<any, any>();
     
 }
 

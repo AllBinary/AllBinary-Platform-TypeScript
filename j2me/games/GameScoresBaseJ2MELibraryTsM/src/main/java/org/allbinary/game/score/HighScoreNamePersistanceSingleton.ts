@@ -194,7 +194,7 @@ this.clear();
     
 
         try {
-            logUtil!.put(StringMaker().
+            logUtil!.put(new StringMaker().
                             append("Deleting: ")!.appendint(deleteId)!.toString(), this, commonStrings!.delete);
     
 recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation), true);
@@ -297,14 +297,14 @@ recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation),
         
 ;
     
-logUtil!.put(StringMaker().
+logUtil!.put(new StringMaker().
                             append(LOADING_ID)!.appendint(id)!.toString(), this, commonStrings!.LOAD);
     
 recordAsBytes= recordStore!.getRecord(id);
     
-byteArrayInputStream= ByteArrayInputStream(recordAsBytes);
+byteArrayInputStream= new ByteArrayInputStream(recordAsBytes);
     
-inputStream= DataInputStream(byteArrayInputStream);
+inputStream= new DataInputStream(byteArrayInputStream);
     
 
         while(inputStream!.available() > 0)
@@ -326,7 +326,7 @@ nameBasicArrayList!.add(smallIntegerSingletonFactory!.getInstance(id));
             {
 this.save(abeClientInformation, gameInfo, this.name);
     
-logUtil!.put(StringMaker().
+logUtil!.put(new StringMaker().
                             append(commonStrings!.EXCEPTION_LABEL)!.append(ExceptionUtil.getInstance()!.getStackTrace(e))!.toString(), this, commonStrings!.LOAD);
     
 }
@@ -379,7 +379,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.LOAD, e);
     
 
         try {
-            logUtil!.put(StringMaker().
+            logUtil!.put(new StringMaker().
                             append("Saving: ")!.append(name)!.toString(), this, commonStrings!.SAVE);
     
 recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation), true);

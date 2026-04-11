@@ -71,7 +71,7 @@ export class TransactionEntity extends AbSqlBean
         
 public constructor ()                        
 
-                            : super(UserDbInitInfo()){
+                            : super(new UserDbInitInfo()){
 
             super();
             
@@ -152,7 +152,7 @@ values.addAll(paymentTransactionInterface!.toVector());
 ;
     
 
-    var time: string = new calendar.getTimeInMillis() as Long.
+    var time: string = calendar.getTimeInMillis() as Long.
                             toString();
         
         

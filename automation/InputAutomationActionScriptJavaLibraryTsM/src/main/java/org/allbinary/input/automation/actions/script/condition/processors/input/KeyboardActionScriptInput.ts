@@ -263,7 +263,7 @@ this.setRelease(value.concatToString()
                             
 
 
-                            throw Error("Action Script Input Unknown Node")
+                            throw new Error("Action Script Input Unknown Node")
 
                         }
                             
@@ -280,7 +280,7 @@ this.setKeyArray(vector.toArray(new Array(vector.length));
                             
 
 
-                            throw Error("Action Script Input Node Null")
+                            throw new Error("Action Script Input Node Null")
 
                         }
                             
@@ -299,7 +299,7 @@ this.setAllowsChildren(false);
 
                                     }
                                 
-this.keyboardActionScriptInputJPanel= KeyboardActionScriptInputJPanel(this);
+this.keyboardActionScriptInputJPanel= new KeyboardActionScriptInputJPanel(this);
     
 }
 
@@ -329,7 +329,7 @@ this.setAllowsChildren(false);
     
 this.setTime(120);
     
-this.keyboardActionScriptInputJPanel= KeyboardActionScriptInputJPanel(this);
+this.keyboardActionScriptInputJPanel= new KeyboardActionScriptInputJPanel(this);
     
 }
 

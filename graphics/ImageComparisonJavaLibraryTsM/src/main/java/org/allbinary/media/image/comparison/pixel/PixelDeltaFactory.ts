@@ -138,7 +138,7 @@ var rgb2 = rgb2
                                 )
                         
                                     {
-                                    pixelDelta= PixelDelta(point, colorDelta);
+                                    pixelDelta= new PixelDelta(point, colorDelta);
     
 
                                     }

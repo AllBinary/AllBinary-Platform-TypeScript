@@ -48,7 +48,7 @@ export class HealLayer extends AllBinaryLayer
         
 public constructor ()                        
 
-                            : super(Rectangle(PointFactory.getInstance()!.ZERO_ZERO, 0, 0), ViewPosition()){
+                            : super(new Rectangle(PointFactory.getInstance()!.ZERO_ZERO, 0, 0), new ViewPosition()){
 
             super();
             

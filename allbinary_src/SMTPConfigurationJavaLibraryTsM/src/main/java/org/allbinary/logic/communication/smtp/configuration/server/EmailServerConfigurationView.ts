@@ -75,7 +75,7 @@ public constructor (node: Node){
         
 ;
     
-this.emailServerConfigurationInterface= EmailServerConfiguration(accountName, password, server) as EmailServerConfigurationInterface;
+this.emailServerConfigurationInterface= new EmailServerConfiguration(accountName, password, server) as EmailServerConfigurationInterface;
     
 }
 

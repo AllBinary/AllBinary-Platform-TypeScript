@@ -48,7 +48,7 @@ var node = node
                                 )
                         
                                     {
-                                    profileActionScriptConditionInterface= ColorAtActionScriptCondition(node);
+                                    profileActionScriptConditionInterface= new ColorAtActionScriptCondition(node);
     
 
                                     }
@@ -59,7 +59,7 @@ var node = node
                                 )
                         
                                     {
-                                    profileActionScriptConditionInterface= TimeIntervalActionScriptCondition(node);
+                                    profileActionScriptConditionInterface= new TimeIntervalActionScriptCondition(node);
     
 
                                     }
@@ -70,7 +70,7 @@ var node = node
                                 )
                         
                                     {
-                                    profileActionScriptConditionInterface= AlwaysActionScriptCondition(node);
+                                    profileActionScriptConditionInterface= new AlwaysActionScriptCondition(node);
     
 
                                     }

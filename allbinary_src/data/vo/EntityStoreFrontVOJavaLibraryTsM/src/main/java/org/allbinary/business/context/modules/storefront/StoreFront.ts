@@ -280,7 +280,7 @@ export class StoreFront
 public constructor (){
 
             super();
-            this.contextConfigurationInterface= ContextConfiguration();
+            this.contextConfigurationInterface= new ContextConfiguration();
     
 }
 
@@ -288,7 +288,7 @@ public constructor (request: HttpServletRequest){
 
             super();
                 //var request = request
-this.getFormData(RequestParams(request).
+this.getFormData(new RequestParams(request).
                             toHashMap());
     
 
@@ -375,7 +375,7 @@ var hashMap = hashMap
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return AbPath(this.create(EMPTY_STRING, key, hashMap));
+                        return new AbPath(this.create(EMPTY_STRING, key, hashMap));
     
 }
 
@@ -390,7 +390,7 @@ var hashMap = hashMap
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return AbPath(this.create(append, key, hashMap));
+                        return new AbPath(this.create(append, key, hashMap));
     
 }
 
@@ -645,7 +645,7 @@ hashMap!.put(
         
                                                 ], ONE_EMPTY_STRING_ARRAY);
     
-this.name= Replace(hashMap).
+this.name= new Replace(hashMap).
                             all(this.name);
     
 
@@ -1634,7 +1634,7 @@ stringBuffer!.append(" and > 0 characters.<br>");
 ;
     
 
-    var subStoreVector: BasicArrayList = tokenizer.getTokens(this.subStores, BasicArrayList())!;
+    var subStoreVector: BasicArrayList = tokenizer.getTokens(this.subStores, new BasicArrayList())!;
         
         
 ;
@@ -1807,7 +1807,7 @@ this.homeHostName= value;
             
     public setHomeHostNamePath(value: string){
 var value = value
-this.homeHostNamePath= AbPath(value);
+this.homeHostNamePath= new AbPath(value);
     
 }
 
@@ -1823,7 +1823,7 @@ this.hostName= value;
             
     public setHostNamePath(value: string){
 var value = value
-this.hostNamePath= AbPath(value);
+this.hostNamePath= new AbPath(value);
     
 }
 
@@ -1839,7 +1839,7 @@ this.testHomeHostName= value;
             
     public setTestHomeHostNamePath(value: string){
 var value = value
-this.testHomeHostNamePath= AbPath(value);
+this.testHomeHostNamePath= new AbPath(value);
     
 }
 
@@ -1855,7 +1855,7 @@ this.testHostName= value;
             
     public setTestHostNamePath(value: string){
 var value = value
-this.testHostNamePath= AbPath(value);
+this.testHostNamePath= new AbPath(value);
     
 }
 
@@ -1864,7 +1864,7 @@ this.testHostNamePath= AbPath(value);
             
     public setImagePath(value: string){
 var value = value
-this.imagePath= AbPath(value);
+this.imagePath= new AbPath(value);
     
 }
 
@@ -1873,7 +1873,7 @@ this.imagePath= AbPath(value);
             
     public setStaticPath(value: string){
 var value = value
-this.staticPath= AbPath(value);
+this.staticPath= new AbPath(value);
     
 }
 
@@ -1882,7 +1882,7 @@ this.staticPath= AbPath(value);
             
     public setCategoryPath(value: string){
 var value = value
-this.categoryPath= AbPath(value);
+this.categoryPath= new AbPath(value);
     
 }
 
@@ -1982,7 +1982,7 @@ this.lastModified= value;
             
     public setFtpPath(value: string){
     //var value = value
-this.ftpPath= AbPath(value);
+this.ftpPath= new AbPath(value);
     
 }
 
@@ -1991,7 +1991,7 @@ this.ftpPath= AbPath(value);
             
     public setTestFtpPath(value: string){
     //var value = value
-this.testFtpPath= AbPath(value);
+this.testFtpPath= new AbPath(value);
     
 }
 
@@ -2021,7 +2021,7 @@ this.testFtpPath= AbPath(value);
                                     }
                                 
 
-                        if(!this.directory.create(AbPath(storeAbPath +this.getCategoryPath()));
+                        if(!this.directory.create(new AbPath(storeAbPath +this.getCategoryPath()));
 
                         )
                         
@@ -2036,7 +2036,7 @@ this.testFtpPath= AbPath(value);
                                     }
                                 
 
-                        if(!this.directory.create(AbPath(storeAbPath +this.getStaticPath()));
+                        if(!this.directory.create(new AbPath(storeAbPath +this.getStaticPath()));
 
                         )
                         
@@ -2075,7 +2075,7 @@ this.testFtpPath= AbPath(value);
                                     
 
 
-                            throw Error("Unable to create store directories")
+                            throw new Error("Unable to create store directories")
 
                                     }
                                 
@@ -2150,7 +2150,7 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
                                     
 
 
-                            throw Error("Unable to create store view directory: " +toDirectoryAbPath!.toString())
+                            throw new Error("Unable to create store view directory: " +toDirectoryAbPath!.toString())
 
                                     }
                                 
@@ -2426,7 +2426,7 @@ dataVector!.add(this.testFtpPassword);
 ;
     
 
-    var time: string = new calendar.getTimeInMillis() as Long.
+    var time: string = calendar.getTimeInMillis() as Long.
                             toString();
         
         
@@ -2523,7 +2523,7 @@ dataHashMap!.put(storeFrontData!.TESTFTPPASSWORD, this.testFtpPassword);
 ;
     
 
-    var time: string = new calendar.getTimeInMillis() as Long.
+    var time: string = calendar.getTimeInMillis() as Long.
                             toString();
         
         

@@ -35,7 +35,7 @@ export class SimpleGravityVelocityMovement extends BasicConstantVelocityMovement
         
 public constructor (speedBasicDecimal: BasicDecimal)                        
 
-                            : super(speedBasicDecimal, VelocityProperties(speedBasicDecimal!.getUnscaled();
+                            : super(speedBasicDecimal, new VelocityProperties(speedBasicDecimal!.getUnscaled();
 
                         .toInt(), speedBasicDecimal!.getUnscaled();
 

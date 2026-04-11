@@ -128,7 +128,7 @@ var url = url
                                 )
                         
                                     {
-                                    this.connectionHashMap= HashMap<any, any>();
+                                    this.connectionHashMap= new HashMap<any, any>();
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGPOOL))
@@ -165,7 +165,7 @@ var url = url
                                 )
                         
                                     {
-                                    connectionVector= Vector();
+                                    connectionVector= new Vector();
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGPOOL))
@@ -209,7 +209,7 @@ logUtil!.put(stringBuffer!.toString(), this, METHOD_GET);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGPOOL))
                         
                                     {
-                                    logUtil!.put(StringBuilder().
+                                    logUtil!.put(new StringBuilder().
                             append(NEW_CONNECTION_FOR)!.append(url)!.append(CREATED)!.toString(), this, METHOD_GET);
     
 
@@ -359,9 +359,9 @@ var sqlConnection = sqlConnection
                                 )
                         
                                     {
-                                    this.connectionHashMap= HashMap<any, any>();
+                                    this.connectionHashMap= new HashMap<any, any>();
     
-connectionVector= Vector();
+connectionVector= new Vector();
     
 connectionVector!.add(sqlConnection);
     
@@ -379,7 +379,7 @@ connectionVector!.add(sqlConnection);
                                 )
                         
                                     {
-                                    connectionVector= Vector();
+                                    connectionVector= new Vector();
     
 
                                     }

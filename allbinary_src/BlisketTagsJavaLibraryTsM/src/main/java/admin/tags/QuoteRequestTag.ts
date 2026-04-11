@@ -54,9 +54,9 @@ export class QuoteRequestTag extends TableTag {
 public constructor (){
 
             super();
-            this.setTagHelperFactory(QuoteHelperFactory());
+            this.setTagHelperFactory(new QuoteHelperFactory());
     
-this.setTagRequestHelperFactory(QuoteRequestHelperFactory());
+this.setTagRequestHelperFactory(new QuoteRequestHelperFactory());
     
 }
 
@@ -74,7 +74,7 @@ this.storeName= storeName;
 
         try {
             
-    var anyType: any = QuoteHelperFactory().
+    var anyType: any = new QuoteHelperFactory().
                             getInstance(this.getPropertiesHashMap(), pageContext)!;
         
         

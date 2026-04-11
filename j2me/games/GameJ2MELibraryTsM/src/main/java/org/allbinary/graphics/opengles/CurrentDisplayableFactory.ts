@@ -185,7 +185,7 @@ this.DEFAULT_CHILD_NAME_LIST.add(HighScoresCanvas.NAME);
                         if(displayable.hasChild(this.displayable as MyCanvas))
                         
                                     {
-                                    PreLogUtil.put(StringMaker().
+                                    PreLogUtil.put(new StringMaker().
                             append("Child Displayable is already set for: ")!.append(this.stringUtil!.toString(displayable))!.toString(), this, SET_DISPLAYABLE);
     
 
@@ -235,7 +235,7 @@ this.update();
 
     public setRunnable(runnable: GameRunnable){
     //var runnable = runnable
-PreLogUtil.put(StringMaker().
+PreLogUtil.put(new StringMaker().
                             append(RUNNABLE)!.append(this.stringUtil!.toString(runnable))!.toString(), this, SET_RUNNABLE);
     
 this.runnable= runnable;
@@ -250,7 +250,7 @@ this.runnable= runnable;
                                     }
                                 
                         else {
-                            PreLogUtil.put(StringMaker().
+                            PreLogUtil.put(new StringMaker().
                             append(RUNNABLE_WAS_ALREADY_IN_USE)!.append(this.stringUtil!.toString(runnable))!.toString(), this, SET_RUNNABLE);
     
 
@@ -260,7 +260,7 @@ this.runnable= runnable;
 
 
     public clearRunnable(){
-PreLogUtil.put(StringMaker().
+PreLogUtil.put(new StringMaker().
                             append(RUNNABLE)!.append(this.stringUtil!.toString(NullRunnable.getInstance()))!.toString(), this, CLEAR_RUNNABLE);
     
 this.setUsedRunnable(NullWaitGameRunnable.getInstance());
@@ -366,7 +366,7 @@ this.setUsedRunnable(NullWaitGameRunnable.getInstance());
 
     public setUsedRunnable(usedRunnable: GameRunnable){
 var usedRunnable = usedRunnable
-PreLogUtil.put(StringMaker().
+PreLogUtil.put(new StringMaker().
                             append(RUNNABLE)!.append(this.stringUtil!.toString(runnable))!.toString(), this, SET_USED_RUNNABLE);
     
 this.usedRunnable= usedRunnable;

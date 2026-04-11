@@ -59,7 +59,7 @@ export class AffiliateSalesEntity extends AbSqlBean
         
 public constructor ()                        
 
-                            : super(UserDbInitInfo()){
+                            : super(new UserDbInitInfo()){
 
             super();
             

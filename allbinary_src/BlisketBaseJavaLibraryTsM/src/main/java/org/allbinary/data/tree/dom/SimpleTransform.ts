@@ -64,19 +64,19 @@ this.dataFilePath= dataFilePath;
             
     public transform(): string{
 
-    var inputStream: AbFileLocalInputStream = new AbFileLocalInputStream(AbFile(xsltFilePath));
+    var inputStream: AbFileLocalInputStream = new AbFileLocalInputStream(new AbFile(xsltFilePath));
         
         
 ;
     
 
-    var document: Document = DomDocumentHelper.create(AbFileLocalInputStream(AbFile(dataFilePath)))!;
+    var document: Document = DomDocumentHelper.create(new AbFileLocalInputStream(new AbFile(dataFilePath)))!;
         
         
 ;
     
 
-    var result: string = XslHelper.getInstance()!.translate(StreamSource(inputStream), StreamSource(StringBufferInputStream(DomDocumentHelper.toString(document))))!;
+    var result: string = XslHelper.getInstance()!.translate(new StreamSource(inputStream), new StreamSource(new StringBufferInputStream(DomDocumentHelper.toString(document))))!;
         
         
 ;

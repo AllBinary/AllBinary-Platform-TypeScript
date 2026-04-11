@@ -225,7 +225,7 @@ this.isFirstException= false;
                                     
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 
                                     }
                                 
@@ -245,7 +245,7 @@ stringBuffer!.append(SpecialMessageUtil.getInstance()!.get());
     
 hashtable.put("message", stringBuffer!.toString());
     
-XmlRpcRemoteLogClient(abeClientInformation).
+new XmlRpcRemoteLogClient(abeClientInformation).
                             get(hashtable);
     
 

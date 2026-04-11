@@ -198,7 +198,7 @@ var y = y
                 //: 
 } catch(e) 
             {
-PreLogUtil.put(StringMaker().
+PreLogUtil.put(new StringMaker().
                             append("Exception: stringLength: ")!.appendint(string.length)!.append(" offset: ")!.appendint(offset)!.append(" currentLength: ")!.appendint(length)!.toString(), this, "drawCenterString");
     
 }

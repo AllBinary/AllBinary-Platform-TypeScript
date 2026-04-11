@@ -35,7 +35,7 @@ export class OptimizedArtificialIntelligenceLayerProcessorForCollidableLayer ext
         
 public constructor ()                        
 
-                            : super(OptimizedArtificialIntelligenceLayerManager()){
+                            : super(new OptimizedArtificialIntelligenceLayerManager()){
 
             super();
             

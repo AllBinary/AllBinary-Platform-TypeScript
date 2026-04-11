@@ -57,13 +57,13 @@ private constructor (){
         
 ;
     
-LEFT= MotionGestureInput(MAX -26, "L Trackball");
+LEFT= new MotionGestureInput(MAX -26, "L Trackball");
     
-RIGHT= MotionGestureInput(MAX -27, "R Trackball");
+RIGHT= new MotionGestureInput(MAX -27, "R Trackball");
     
-UP= MotionGestureInput(MAX -28, "Up Trackball");
+UP= new MotionGestureInput(MAX -28, "Up Trackball");
     
-DOWN= MotionGestureInput(MAX -29, "D Trackball");
+DOWN= new MotionGestureInput(MAX -29, "D Trackball");
     
 }
 

@@ -48,7 +48,7 @@ var node = node
                                 )
                         
                                     {
-                                    profileActionScriptOutputInterface= ImageActionScriptOutput(node);
+                                    profileActionScriptOutputInterface= new ImageActionScriptOutput(node);
     
 
                                     }
@@ -57,7 +57,7 @@ var node = node
                             
 
 
-                            throw Error("No Such ActionScript Output")
+                            throw new Error("No Such ActionScript Output")
 
                         }
                             

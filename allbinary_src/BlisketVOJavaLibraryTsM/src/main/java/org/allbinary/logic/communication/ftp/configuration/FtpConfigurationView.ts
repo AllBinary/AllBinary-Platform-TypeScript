@@ -51,7 +51,7 @@ public constructor (node: Node){
 
             super();
             var node = node
-this.setFtpConfigurationInterface(FtpConfiguration() as FtpConfigurationInterface);
+this.setFtpConfigurationInterface(new FtpConfiguration() as FtpConfigurationInterface);
     
 
     var chileNodeList: NodeList = node.getChildNodes()!;

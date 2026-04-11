@@ -205,7 +205,7 @@ index2 < size; index2++)
 
                         if(!found)
                         
-                                    throw RuntimeException()
+                                    throw new RuntimeException()
 }
 
 }
@@ -219,14 +219,14 @@ index2 < size; index2++)
 private constructor (){
 
             super();
-            rand= Random(System.currentTimeMillis());
+            rand= new Random(System.currentTimeMillis());
     
 }
 
 
     public setSeed(seed: number){
 var seed = seed
-rand= Random(seed);
+rand= new Random(seed);
     
 }
 

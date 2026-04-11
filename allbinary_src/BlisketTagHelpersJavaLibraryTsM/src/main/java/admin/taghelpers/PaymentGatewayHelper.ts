@@ -74,13 +74,13 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 var pageContext = pageContext
 
         try {
-            this.weblisketSession= WeblisketSession(hashMap, pageContext);
+            this.weblisketSession= new WeblisketSession(hashMap, pageContext);
     
 httpServletRequest= pageContext!.getRequest();
 
                          as HttpServletRequest;
     
-this.portion= Portion(hashMap);
+this.portion= new Portion(hashMap);
     
 
                 //: 
@@ -108,7 +108,7 @@ this.portion= Portion(hashMap);
 
         try {
             
-    var paymentGatewayInterface: PaymentGatewayInterface = PaymentGatewayInterfaceFactory().
+    var paymentGatewayInterface: PaymentGatewayInterface = new PaymentGatewayInterfaceFactory().
                             getInstance(httpServletRequest)!;
         
         
@@ -173,7 +173,7 @@ PaymentGatewayEntityFactory.getInstance()!.add(paymentGatewayInterface);
 
         try {
             
-    var paymentGatewayInterface: PaymentGatewayInterface = PaymentGatewayInterfaceFactory().
+    var paymentGatewayInterface: PaymentGatewayInterface = new PaymentGatewayInterfaceFactory().
                             getInstance(httpServletRequest)!;
         
         
@@ -261,7 +261,7 @@ PaymentGatewayEntityFactory.getInstance()!.update(paymentGatewayInterface);
 
         try {
             
-    var paymentGatewayInterface: PaymentGatewayInterface = PaymentGatewayInterfaceFactory().
+    var paymentGatewayInterface: PaymentGatewayInterface = new PaymentGatewayInterfaceFactory().
                             getInstance(httpServletRequest)!;
         
         

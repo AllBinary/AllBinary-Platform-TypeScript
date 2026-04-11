@@ -61,7 +61,7 @@ export class BasicEventHandler
 public constructor (){
 
             super();
-            this.eventListenerInterfaceList= BasicArrayList();
+            this.eventListenerInterfaceList= new BasicArrayList();
     
 }
 
@@ -135,7 +135,7 @@ index++;
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public removeAllListeners(){
-this.eventListenerInterfaceList= BasicArrayList();
+this.eventListenerInterfaceList= new BasicArrayList();
     
 }
 

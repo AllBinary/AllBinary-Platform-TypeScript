@@ -63,7 +63,7 @@ export class CheatGameInputProcessor extends PlayerGameInput {
     private readonly gameCanvas: AllBinaryGameCanvas
 public constructor (gameCanvas: AllBinaryGameCanvas)                        
 
-                            : super(BasicArrayList(),  -1){
+                            : super(new BasicArrayList(),  -1){
 
             super();
             var gameCanvas = gameCanvas

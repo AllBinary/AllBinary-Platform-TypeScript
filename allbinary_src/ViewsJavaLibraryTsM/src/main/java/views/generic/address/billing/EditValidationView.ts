@@ -79,7 +79,7 @@ this.value= this.getPageContext()!.getRequest()!.getParameter(StreetAddressData.
         
 ;
     
-this.streetAddress= billingAddressesEntity!.get(Integer(value));
+this.streetAddress= billingAddressesEntity!.get(new Integer(value));
     
 
                         if(this.streetAddress == 

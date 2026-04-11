@@ -125,7 +125,7 @@ var args = args
     
 SmallIntegerSingletonFactory.getInstance()!.init();
     
-MyFrame().
+new MyFrame().
                             show();
     
 
@@ -184,117 +184,117 @@ public constructor (){
             super();
             initComponents();
     
-this.setSize(Dimension(550, 400));
+this.setSize(new Dimension(550, 400));
     
-this.mainJPanel!.setSize(Dimension(550, 400));
+this.mainJPanel!.setSize(new Dimension(550, 400));
     
-this.jTabbedPane!.setSize(Dimension(550, 400));
+this.jTabbedPane!.setSize(new Dimension(550, 400));
     
-fileJDialog= FileJDialog();
+fileJDialog= new FileJDialog();
     
 fileJDialog!.addFinishedListener(this);
     
-this.rotateJDialog= RotateJDialog(this, false);
+this.rotateJDialog= new RotateJDialog(this, false);
     
 }
 
 
     initComponents(){
-jToolBar1= javax.swing.JToolBar();
+jToolBar1= new javax.swing.JToolBar();
     
-jButton2= javax.swing.JButton();
+jButton2= new javax.swing.JButton();
     
-saveJButton= javax.swing.JButton();
+saveJButton= new javax.swing.JButton();
     
-jButton1= javax.swing.JButton();
+jButton1= new javax.swing.JButton();
     
-openJButton= javax.swing.JButton();
+openJButton= new javax.swing.JButton();
     
-jButton3= javax.swing.JButton();
+jButton3= new javax.swing.JButton();
     
-jButton4= javax.swing.JButton();
+jButton4= new javax.swing.JButton();
     
-jButton41= javax.swing.JButton();
+jButton41= new javax.swing.JButton();
     
-jButton5= javax.swing.JButton();
+jButton5= new javax.swing.JButton();
     
-animateJButton= javax.swing.JButton();
+animateJButton= new javax.swing.JButton();
     
-playJButton= javax.swing.JButton();
+playJButton= new javax.swing.JButton();
     
-stopJjButton= javax.swing.JButton();
+stopJjButton= new javax.swing.JButton();
     
-jPanel1= javax.swing.JPanel();
+jPanel1= new javax.swing.JPanel();
     
-mainJPanel= javax.swing.JPanel();
+mainJPanel= new javax.swing.JPanel();
     
-jTabbedPane= javax.swing.JTabbedPane();
+jTabbedPane= new javax.swing.JTabbedPane();
     
-statusJPanel= javax.swing.JPanel();
+statusJPanel= new javax.swing.JPanel();
     
-statusJLabel= javax.swing.JLabel();
+statusJLabel= new javax.swing.JLabel();
     
-menuJMenuBar= javax.swing.JMenuBar();
+menuJMenuBar= new javax.swing.JMenuBar();
     
-fileJMenu= javax.swing.JMenu();
+fileJMenu= new javax.swing.JMenu();
     
-newJMenuItem= javax.swing.JMenuItem();
+newJMenuItem= new javax.swing.JMenuItem();
     
-openJMenuItem= javax.swing.JMenuItem();
+openJMenuItem= new javax.swing.JMenuItem();
     
-saveJMenuItem= javax.swing.JMenuItem();
+saveJMenuItem= new javax.swing.JMenuItem();
     
-saveAsJMenuItem= javax.swing.JMenuItem();
+saveAsJMenuItem= new javax.swing.JMenuItem();
     
-exportJMenuItem1= javax.swing.JMenuItem();
+exportJMenuItem1= new javax.swing.JMenuItem();
     
-exitJMenuItem= javax.swing.JMenuItem();
+exitJMenuItem= new javax.swing.JMenuItem();
     
-viewJMenu= javax.swing.JMenu();
+viewJMenu= new javax.swing.JMenu();
     
-zoomInJMenuItem= javax.swing.JMenuItem();
+zoomInJMenuItem= new javax.swing.JMenuItem();
     
-zoomOutJMenuItem= javax.swing.JMenuItem();
+zoomOutJMenuItem= new javax.swing.JMenuItem();
     
-objectJMenu= javax.swing.JMenu();
+objectJMenu= new javax.swing.JMenu();
     
-explodeAllJMenuItem= javax.swing.JMenuItem();
+explodeAllJMenuItem= new javax.swing.JMenuItem();
     
-frameJMenu= javax.swing.JMenu();
+frameJMenu= new javax.swing.JMenu();
     
-previousFrameJMenuItem= javax.swing.JMenuItem();
+previousFrameJMenuItem= new javax.swing.JMenuItem();
     
-nextFrameJMenuItem= javax.swing.JMenuItem();
+nextFrameJMenuItem= new javax.swing.JMenuItem();
     
-removeJMenuItem= javax.swing.JMenuItem();
+removeJMenuItem= new javax.swing.JMenuItem();
     
-copyJMenuItem1= javax.swing.JMenuItem();
+copyJMenuItem1= new javax.swing.JMenuItem();
     
-insertAfterJMenuItem= javax.swing.JMenuItem();
+insertAfterJMenuItem= new javax.swing.JMenuItem();
     
-insertBeforeJMenuItem= javax.swing.JMenuItem();
+insertBeforeJMenuItem= new javax.swing.JMenuItem();
     
-generateJMenu= javax.swing.JMenu();
+generateJMenu= new javax.swing.JMenu();
     
-centerJMenuItem= javax.swing.JMenuItem();
+centerJMenuItem= new javax.swing.JMenuItem();
     
-autoDamageJMenuItem= javax.swing.JMenuItem();
+autoDamageJMenuItem= new javax.swing.JMenuItem();
     
-autoExplodeJMenuItem= javax.swing.JMenuItem();
+autoExplodeJMenuItem= new javax.swing.JMenuItem();
     
-autoGrowJMenuItem= javax.swing.JMenuItem();
+autoGrowJMenuItem= new javax.swing.JMenuItem();
     
-jMenuItem1= javax.swing.JMenuItem();
+jMenuItem1= new javax.swing.JMenuItem();
     
-autoRotateGenerationJMenuItem= javax.swing.JMenuItem();
+autoRotateGenerationJMenuItem= new javax.swing.JMenuItem();
     
-autoSheildMenuItem= javax.swing.JMenuItem();
+autoSheildMenuItem= new javax.swing.JMenuItem();
     
-autoShrinkJMenuItem= javax.swing.JMenuItem();
+autoShrinkJMenuItem= new javax.swing.JMenuItem();
     
-jMenu1= javax.swing.JMenu();
+jMenu1= new javax.swing.JMenu();
     
-addWindowListener(object: java.awt.event.WindowAdapter()
+addWindowListener(new object: java.awt.event.WindowAdapter()
                                 {
                                 
     public windowClosing(evt: java.awt.event.WindowEvent){
@@ -308,7 +308,7 @@ exitForm(evt);
     
 jButton2!.setText("New");
     
-jButton2!.addActionListener(object: java.awt.event.ActionListener()
+jButton2!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -324,7 +324,7 @@ jToolBar1!.add(jButton2);
     
 saveJButton!.setText("Save");
     
-saveJButton!.addActionListener(object: java.awt.event.ActionListener()
+saveJButton!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -340,7 +340,7 @@ jToolBar1!.add(saveJButton);
     
 jButton1!.setText("Export");
     
-jButton1!.addActionListener(object: java.awt.event.ActionListener()
+jButton1!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -356,7 +356,7 @@ jToolBar1!.add(jButton1);
     
 openJButton!.setText("Open");
     
-openJButton!.addActionListener(object: java.awt.event.ActionListener()
+openJButton!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -392,7 +392,7 @@ jToolBar1!.add(animateJButton);
     
 playJButton!.setText("Play");
     
-playJButton!.addMouseListener(object: java.awt.event.MouseAdapter()
+playJButton!.addMouseListener(new object: java.awt.event.MouseAdapter()
                                 {
                                 
     public mousePressed(evt: java.awt.event.MouseEvent){
@@ -408,7 +408,7 @@ jToolBar1!.add(playJButton);
     
 stopJjButton!.setText("Stop");
     
-stopJjButton!.addMouseListener(object: java.awt.event.MouseAdapter()
+stopJjButton!.addMouseListener(new object: java.awt.event.MouseAdapter()
                                 {
                                 
     public mousePressed(evt: java.awt.event.MouseEvent){
@@ -424,13 +424,13 @@ jToolBar1!.add(stopJjButton);
     
 getContentPane()!.add(jToolBar1, java.awt.BorderLayout.NORTH);
     
-jPanel1!.setLayout(java.awt.GridLayout(1, 0));
+jPanel1!.setLayout(new java.awt.GridLayout(1, 0));
     
-mainJPanel!.setLayout(java.awt.GridLayout(1, 0));
+mainJPanel!.setLayout(new java.awt.GridLayout(1, 0));
     
-jTabbedPane!.setMinimumSize(java.awt.Dimension(550, 400));
+jTabbedPane!.setMinimumSize(new java.awt.Dimension(550, 400));
     
-jTabbedPane!.addChangeListener(object: javax.swing.event.ChangeListener()
+jTabbedPane!.addChangeListener(new object: javax.swing.event.ChangeListener()
                                 {
                                 
     public stateChanged(evt: javax.swing.event.ChangeEvent){
@@ -448,7 +448,7 @@ jPanel1!.add(mainJPanel);
     
 getContentPane()!.add(jPanel1, java.awt.BorderLayout.CENTER);
     
-statusJPanel!.setLayout(java.awt.GridLayout(1, 0));
+statusJPanel!.setLayout(new java.awt.GridLayout(1, 0));
     
 statusJLabel!.setText("Status Bar");
     
@@ -458,7 +458,7 @@ getContentPane()!.add(statusJPanel, java.awt.BorderLayout.SOUTH);
     
 fileJMenu!.setText("File");
     
-fileJMenu!.addActionListener(object: java.awt.event.ActionListener()
+fileJMenu!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -472,7 +472,7 @@ fileJMenuActionPerformed(evt);
     
 newJMenuItem!.setText("New");
     
-newJMenuItem!.addActionListener(object: java.awt.event.ActionListener()
+newJMenuItem!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -488,7 +488,7 @@ fileJMenu!.add(newJMenuItem);
     
 openJMenuItem!.setText("Open");
     
-openJMenuItem!.addActionListener(object: java.awt.event.ActionListener()
+openJMenuItem!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -504,7 +504,7 @@ fileJMenu!.add(openJMenuItem);
     
 saveJMenuItem!.setText("Save");
     
-saveJMenuItem!.addMouseListener(object: java.awt.event.MouseAdapter()
+saveJMenuItem!.addMouseListener(new object: java.awt.event.MouseAdapter()
                                 {
                                 
     public mousePressed(evt: java.awt.event.MouseEvent){
@@ -524,7 +524,7 @@ fileJMenu!.add(saveAsJMenuItem);
     
 exportJMenuItem1!.setText("Export");
     
-exportJMenuItem1!.addActionListener(object: java.awt.event.ActionListener()
+exportJMenuItem1!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -540,7 +540,7 @@ fileJMenu!.add(exportJMenuItem1);
     
 exitJMenuItem!.setText("Exit");
     
-exitJMenuItem!.addActionListener(object: java.awt.event.ActionListener()
+exitJMenuItem!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -560,7 +560,7 @@ viewJMenu!.setText("View");
     
 zoomInJMenuItem!.setText("Zoom In");
     
-zoomInJMenuItem!.addMouseListener(object: java.awt.event.MouseAdapter()
+zoomInJMenuItem!.addMouseListener(new object: java.awt.event.MouseAdapter()
                                 {
                                 
     public mousePressed(evt: java.awt.event.MouseEvent){
@@ -576,7 +576,7 @@ viewJMenu!.add(zoomInJMenuItem);
     
 zoomOutJMenuItem!.setText("Zoom Out");
     
-zoomOutJMenuItem!.addMouseListener(object: java.awt.event.MouseAdapter()
+zoomOutJMenuItem!.addMouseListener(new object: java.awt.event.MouseAdapter()
                                 {
                                 
     public mousePressed(evt: java.awt.event.MouseEvent){
@@ -596,7 +596,7 @@ objectJMenu!.setText("Objects");
     
 explodeAllJMenuItem!.setText("Explode All");
     
-explodeAllJMenuItem!.addMouseListener(object: java.awt.event.MouseAdapter()
+explodeAllJMenuItem!.addMouseListener(new object: java.awt.event.MouseAdapter()
                                 {
                                 
     public mousePressed(evt: java.awt.event.MouseEvent){
@@ -614,7 +614,7 @@ menuJMenuBar!.add(objectJMenu);
     
 frameJMenu!.setText("Frame");
     
-frameJMenu!.addActionListener(object: java.awt.event.ActionListener()
+frameJMenu!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -656,7 +656,7 @@ generateJMenu!.setText("Generate");
     
 centerJMenuItem!.setText("Center");
     
-centerJMenuItem!.addActionListener(object: java.awt.event.ActionListener()
+centerJMenuItem!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -676,7 +676,7 @@ generateJMenu!.add(autoDamageJMenuItem);
     
 autoExplodeJMenuItem!.setText("Explode");
     
-autoExplodeJMenuItem!.addMouseListener(object: java.awt.event.MouseAdapter()
+autoExplodeJMenuItem!.addMouseListener(new object: java.awt.event.MouseAdapter()
                                 {
                                 
     public mousePressed(evt: java.awt.event.MouseEvent){
@@ -696,7 +696,7 @@ generateJMenu!.add(autoGrowJMenuItem);
     
 jMenuItem1!.setText("Mirror");
     
-jMenuItem1!.addActionListener(object: java.awt.event.ActionListener()
+jMenuItem1!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -712,7 +712,7 @@ generateJMenu!.add(jMenuItem1);
     
 autoRotateGenerationJMenuItem!.setText("Rotate");
     
-autoRotateGenerationJMenuItem!.addMouseListener(object: java.awt.event.MouseAdapter()
+autoRotateGenerationJMenuItem!.addMouseListener(new object: java.awt.event.MouseAdapter()
                                 {
                                 
     public mousePressed(evt: java.awt.event.MouseEvent){
@@ -751,7 +751,7 @@ pack();
 var evt = evt
 
         try {
-            MyCanvasEventService.fire(MyCanvasEvent(MyCanvasEventSource(MyCanvasEventService.EXPLODE, 
+            MyCanvasEventService.fire(new MyCanvasEvent(new MyCanvasEventSource(MyCanvasEventService.EXPLODE, 
                             null) as Object));
     
 
@@ -769,7 +769,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "explodeAllJMenuItemMousePressed", 
 var evt = evt
 
         try {
-            MyCanvasEventService.fire(MyCanvasEvent(MyCanvasEventSource(MyCanvasEventService.AUTOEXPLODE, 
+            MyCanvasEventService.fire(new MyCanvasEvent(new MyCanvasEventSource(MyCanvasEventService.AUTOEXPLODE, 
                             null) as Object));
     
 
@@ -895,7 +895,7 @@ this.newGraphics();
 var evt = evt
 
         try {
-            MyCanvasEventService.fire(MyCanvasEvent(MyCanvasEventSource(MyCanvasEventService.CENTER, 
+            MyCanvasEventService.fire(new MyCanvasEvent(new MyCanvasEventSource(MyCanvasEventService.CENTER, 
                             null) as Object));
     
 
@@ -963,12 +963,12 @@ index < files.length; index++)
 ;
     
 
-    var workAreaJPanel: WorkAreaJPanel = new WorkAreaJPanel(WorkAreaDom(document), this.getSize());
+    var workAreaJPanel: WorkAreaJPanel = new WorkAreaJPanel(new WorkAreaDom(document), this.getSize());
         
         
 ;
     
-workAreaJPanel!.setLayout(GridLayout(1, 1));
+workAreaJPanel!.setLayout(new GridLayout(1, 1));
     
 this.add(workAreaJPanel as WorkAreaJPanelInterface);
     
@@ -1107,7 +1107,7 @@ xslHelper!.export(file, this.TEMPLATE_EXPORT_PATH +"/" +this.JAVA_TEMPLATE, docu
         
 ;
     
-DomHelper.getInstance()!.save(File(this.SAVE_PATH +"/" +workAreaJPanel!.getName() +SAVEEXTENSION), workAreaJPanel!.toDocument());
+DomHelper.getInstance()!.save(new File(this.SAVE_PATH +"/" +workAreaJPanel!.getName() +SAVEEXTENSION), workAreaJPanel!.toDocument());
     
 
                 //: 
@@ -1230,7 +1230,7 @@ var newCanvasInterface = newCanvasInterface
                                     
 
 
-                            throw Error()
+                            throw new Error()
 
                                     }
                                 

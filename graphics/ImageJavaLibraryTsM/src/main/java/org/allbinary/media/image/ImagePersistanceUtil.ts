@@ -121,7 +121,7 @@ logUtil!.put("Wrote Image: " +file.getAbsolutePath(), this, commonStrings!.SAVE)
     public saveWithImageIO(filePath: string, bufferedImage: BufferedImage){
 var filePath = filePath
 var bufferedImage = bufferedImage
-saveWithImageIO(File(filePath), bufferedImage);
+saveWithImageIO(new File(filePath), bufferedImage);
     
 }
 
@@ -189,7 +189,7 @@ iwp.setCompressionMode(ImageWriteParam.MODE_EXPLICIT);
 iwp.setCompressionQuality(0.95f);
     
 writer.write(
-                            null, IIOImage(bufferedImage, 
+                            null, new IIOImage(bufferedImage, 
                             null, 
                             null), iwp);
     

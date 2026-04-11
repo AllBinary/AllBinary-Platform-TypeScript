@@ -57,7 +57,7 @@ export class GameInput
     readonly isRemoveDuplicateKeyPresses: boolean
 public constructor (gameKeyEventList: BasicArrayList)                        
 
-                            : this(gameKeyEventList, BasicArrayList()){
+                            : this(gameKeyEventList, new BasicArrayList()){
 
             super();
                 //var gameKeyEventList = gameKeyEventList

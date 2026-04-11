@@ -82,11 +82,11 @@ public constructor (name: string){
 
             super();
                 //var name = name
-this.hashtable= Hashtable<any, any>();
+this.hashtable= new Hashtable<any, any>();
     
-this.rectangleHashtable= Hashtable<any, any>();
+this.rectangleHashtable= new Hashtable<any, any>();
     
-this.rectangleArrayOfArraysHashtable= Hashtable<any, any>();
+this.rectangleArrayOfArraysHashtable= new Hashtable<any, any>();
     
 this.name= name;
     
@@ -130,7 +130,7 @@ this.name= name;
         
 ;
     
-logUtil!.put(StringMaker().
+logUtil!.put(new StringMaker().
                             append("Available List of Animations: ")!.append(hashtable.toString())!.toString(), this, commonStrings!.INIT);
     
 this.setInitialized(true);
@@ -158,7 +158,7 @@ this.setInitialized(true);
                                     
 
 
-                            throw Error(StringMaker().
+                            throw new Error(new StringMaker().
                             append("Resource Already Created: ")!.append(resource)!.toString())
 
                                     }
@@ -320,7 +320,7 @@ rectangleArrayOfArraysHashtable!.put(resource, rectangleArrayOfArrays);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return StringMaker().
+                        return new StringMaker().
                             append(this.constructor.name.toString()!)!.append(CommonSeps.getInstance()!.SEMICOLON)!.append(CommonSeps.getInstance()!.SPACE)!.append(this.name)!.toString();
 
                         ;

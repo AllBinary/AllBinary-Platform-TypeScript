@@ -91,7 +91,7 @@ index < size; index++)
 
 
 
-                            throw Error("Unable to get role - Unknown Role")
+                            throw new Error("Unable to get role - Unknown Role")
 }
 
 

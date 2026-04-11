@@ -81,7 +81,7 @@ public constructor (total: number, countedPickedUpLayerInterfaceFactory: Counted
             super();
             var total = total
 var countedPickedUpLayerInterfaceFactory = countedPickedUpLayerInterfaceFactory
-this.primitiveLongUtil= PrimitiveLongUtil(1000);
+this.primitiveLongUtil= new PrimitiveLongUtil(1000);
     
 this.init(total, countedPickedUpLayerInterfaceFactory);
     
@@ -126,7 +126,7 @@ var z = z
                             
 
 
-                            throw Error("No more left. Could use a listener to automatically remove")
+                            throw new Error("No more left. Could use a listener to automatically remove")
 
                         }
                             

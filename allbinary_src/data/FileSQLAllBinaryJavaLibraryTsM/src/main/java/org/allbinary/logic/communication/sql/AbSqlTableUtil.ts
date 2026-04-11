@@ -295,7 +295,7 @@ var tableName = tableName
 ;
     
 
-    var timeLong: Long = new calendar.getTimeInMillis() as Long;
+    var timeLong: Long = calendar.getTimeInMillis() as Long;
         
         
 ;
@@ -494,7 +494,7 @@ var abSqlTable = abSqlTable
 ;
     
 
-                        if(!Directory.create(AbPath(path));
+                        if(!Directory.create(new AbPath(path));
 
                         )
                         
@@ -530,7 +530,7 @@ var abSqlTable = abSqlTable
 ;
     
 
-    var QUERY_START: string = StringBuilder().
+    var QUERY_START: string = new StringBuilder().
                             append(this.sqlStrings!.INSERT_INTO)!.append(tableName)!.append(this.sqlStrings!.VALUES)!.toString()!;
         
         
@@ -661,7 +661,7 @@ var portion = portion
                         
                                     {
                                     
-                        if(Directory.create(AbPath(path)))
+                        if(Directory.create(new AbPath(path)))
                         
                                     {
                                     

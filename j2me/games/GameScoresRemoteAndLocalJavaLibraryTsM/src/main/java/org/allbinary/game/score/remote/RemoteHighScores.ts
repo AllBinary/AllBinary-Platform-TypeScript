@@ -115,7 +115,7 @@ export class RemoteHighScores extends HighScores {
                                 )
                         
                                     {
-                                    highScores= RemoteHighScores(abeClientInformation, softwareInformation, gameInfo, heading, columnTwoHeading, isAscending, preload);
+                                    highScores= new RemoteHighScores(abeClientInformation, softwareInformation, gameInfo, heading, columnTwoHeading, isAscending, preload);
     
 hashTable!.put(gameInfo, highScores);
     

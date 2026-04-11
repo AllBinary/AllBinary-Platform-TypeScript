@@ -35,7 +35,7 @@ export class OptimizedGameInputLayerProcessorForCollidableLayer extends LayerPro
         
 public constructor ()                        
 
-                            : super(OptimizedGameInputLayerManager()){
+                            : super(new OptimizedGameInputLayerManager()){
 
             super();
             

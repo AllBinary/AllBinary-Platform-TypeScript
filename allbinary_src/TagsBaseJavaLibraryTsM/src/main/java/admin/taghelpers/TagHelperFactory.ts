@@ -49,7 +49,7 @@ export class TagHelperFactory
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 

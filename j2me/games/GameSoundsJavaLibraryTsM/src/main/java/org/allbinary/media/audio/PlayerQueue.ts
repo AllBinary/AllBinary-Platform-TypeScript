@@ -160,7 +160,7 @@ played= true;
 
                                     }
                                 
-PreLogUtil.put(StringMaker().
+PreLogUtil.put(new StringMaker().
                             append(commonStrings!.EXCEPTION_LABEL)!.append(resource)!.toString(), this, commonStrings!.PROCESS);
     
 
@@ -185,7 +185,7 @@ this.list.clear();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return StringMaker().
+                        return new StringMaker().
                             append(TOTAL)!.appendint(this.list.size())!.toString();
 
                         ;

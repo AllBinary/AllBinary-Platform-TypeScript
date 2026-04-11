@@ -106,7 +106,7 @@ lastImage= ImageScaleUtil.getInstance()!.createImage(GameFeatureImageCacheFactor
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return ImageAnimation(lastImage, this.animationBehaviorFactory!.getOrCreateInstance());
+                        return new ImageAnimation(lastImage, this.animationBehaviorFactory!.getOrCreateInstance());
     
 }
 

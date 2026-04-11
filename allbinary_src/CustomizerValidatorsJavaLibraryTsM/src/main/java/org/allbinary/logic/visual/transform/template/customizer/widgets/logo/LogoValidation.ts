@@ -100,7 +100,7 @@ public constructor (node: Node){
             var node = node
 this.isFile= false;
     
-this.logoAbPath= AbPath(DomSearchHelper.getNode(LogoData.getInstance()!.IMAGEPATH, node.getChildNodes())!.getNodeValue());
+this.logoAbPath= new AbPath(DomSearchHelper.getNode(LogoData.getInstance()!.IMAGEPATH, node.getChildNodes())!.getNodeValue());
     
 this.logoFile= DomSearchHelper.getNode(LogoData.getInstance()!.IMAGEFILENAME, node.getChildNodes())!.getNodeValue();
     
@@ -125,7 +125,7 @@ this.logoFileItem= hashMap!.get(LogoData.getInstance()!.IMAGE);
 
                          as FileItem;
     
-this.logoAbPath= AbPath(hashMap!.get(LogoData.getInstance()!.IMAGEPATH);
+this.logoAbPath= new AbPath(hashMap!.get(LogoData.getInstance()!.IMAGEPATH);
 
                          as String);
     
@@ -476,7 +476,7 @@ logUtil!.put(stringBuffer!.toString(), this, "processLogoFile()");
 
                                     }
                                 
-LogoImageFileUtil(this.logoAbPath, this.logoFile).
+new LogoImageFileUtil(this.logoAbPath, this.logoFile).
                             saveFiles(this.logoFileItem);
     
 }

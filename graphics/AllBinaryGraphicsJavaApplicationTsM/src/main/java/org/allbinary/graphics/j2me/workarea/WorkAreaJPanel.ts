@@ -132,7 +132,7 @@ this.name= name;
     
 initMyComponents(dimension);
     
-this.workAreaJTreeJPanel= WorkAreaJTreeJPanel(this.name);
+this.workAreaJTreeJPanel= new WorkAreaJTreeJPanel(this.name);
     
 
     var canvasJPanel: CanvasJPanel = new CanvasJPanel(this.workAreaJTreeJPanel, this.getSize(), x, y);
@@ -204,7 +204,7 @@ index < numberOfFrames; index++)
 ;
     
 
-    var canvasJPanel: CanvasJPanel = new CanvasJPanel(this.workAreaJTreeJPanel, this.getSize(), CanvasDom(node));
+    var canvasJPanel: CanvasJPanel = new CanvasJPanel(this.workAreaJTreeJPanel, this.getSize(), new CanvasDom(node));
         
         
 ;
@@ -245,17 +245,17 @@ this.propertiesJPanel!.set(this.workAreaJTreeJPanel);
 
     initMyComponents(dimension: Dimension){
 var dimension = dimension
-this.workAreaJTreeJPanel= WorkAreaJTreeJPanel(this.name);
+this.workAreaJTreeJPanel= new WorkAreaJTreeJPanel(this.name);
     
-this.canvasHolderJPanel= JPanel();
+this.canvasHolderJPanel= new JPanel();
     
 this.canvasHolderJPanel!.setSize(dimension);
     
-this.canvasHolderJPanel!.setLayout(GridLayout(1, 1));
+this.canvasHolderJPanel!.setLayout(new GridLayout(1, 1));
     
 this.setSize(dimension);
     
-this.canvasJPanelList= LinkedList();
+this.canvasJPanelList= new LinkedList();
     
 
     var gridBagLayout: GridBagLayout = new GridBagLayout();
@@ -293,7 +293,7 @@ gridBagLayout!.setConstraints(toolJPanel, gridBagConstraints);
     
 this.innerJPanel!.add(toolJPanel);
     
-gridBagConstraints= GridBagConstraints();
+gridBagConstraints= new GridBagConstraints();
     
 gridBagConstraints!.gridx= 1;
     
@@ -311,7 +311,7 @@ gridBagLayout!.setConstraints(canvasHolderJPanel, gridBagConstraints);
     
 this.innerJPanel!.add(canvasHolderJPanel);
     
-gridBagConstraints= GridBagConstraints();
+gridBagConstraints= new GridBagConstraints();
     
 gridBagConstraints!.gridx= 8;
     
@@ -325,7 +325,7 @@ gridBagConstraints!.weightx= .1;
     
 gridBagConstraints!.weighty= .1;
     
-propertiesJPanel= PropertiesJPanel();
+propertiesJPanel= new PropertiesJPanel();
     
 gridBagLayout!.setConstraints(propertiesJPanel, gridBagConstraints);
     
@@ -367,7 +367,7 @@ index < size; index++)
         
 ;
     
-canvasJPanelHashMap!.put(canvasJPanel!.getTreeNode(), Integer(index));
+canvasJPanelHashMap!.put(canvasJPanel!.getTreeNode(), new Integer(index));
     
 }
 
@@ -840,11 +840,11 @@ document.appendChild(workAreaNode);
 
 
     initComponents(){
-innerJPanel= javax.swing.JPanel();
+innerJPanel= new javax.swing.JPanel();
     
-setLayout(java.awt.GridLayout(1, 1));
+setLayout(new java.awt.GridLayout(1, 1));
     
-innerJPanel!.addKeyListener(object: java.awt.event.KeyAdapter()
+innerJPanel!.addKeyListener(new object: java.awt.event.KeyAdapter()
                                 {
                                 
     public keyTyped(evt: java.awt.event.KeyEvent){

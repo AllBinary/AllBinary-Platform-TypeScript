@@ -238,7 +238,7 @@ stringBuffer!.append(SPRITE);
                             
 
 
-                            throw Error("None/Unknown Sub Image Resource Type Specified")
+                            throw new Error("None/Unknown Sub Image Resource Type Specified")
 
                         }
                             
@@ -258,7 +258,7 @@ stringBuffer!.append(SPRITE);
                             
 
 
-                            throw Error("None/Unknown Main Image Resource Type Specified")
+                            throw new Error("None/Unknown Main Image Resource Type Specified")
 
                         }
                             

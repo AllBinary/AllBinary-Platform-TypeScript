@@ -160,7 +160,7 @@ public constructor (){
             super();
             this.userConfigurationInterface= UserConfigurationInterfaceFactory.getInstance();
     
-this.password= Password(StringUtil.getInstance()!.EMPTY_STRING);
+this.password= new Password(StringUtil.getInstance()!.EMPTY_STRING);
     
 }
 
@@ -168,7 +168,7 @@ public constructor (request: HttpServletRequest){
 
             super();
                 //var request = request
-this.getFormData(RequestParams(request).
+this.getFormData(new RequestParams(request).
                             toHashMap());
     
 this.userConfigurationInterface= UserConfigurationInterfaceFactory.getInstance(this.getRole());
@@ -190,7 +190,7 @@ this.userConfigurationInterface= UserConfigurationInterfaceFactory.getInstance(t
             
     public getFormData(userHashMap: HashMap<any, any>){
     //var userHashMap = userHashMap
-this.userName= UserName(userHashMap).
+this.userName= new UserName(userHashMap).
                             get();
     
 
@@ -244,7 +244,7 @@ passwordString= stringUtil!.getInstance(userHashMap!.get(WeblisketSessionData.RE
         
 ;
     
-this.password= Password(passwordString);
+this.password= new Password(passwordString);
     
 this.prefixName= stringUtil!.getInstance(userHashMap!.get(UserData.PREFIXNAME);
 
@@ -971,7 +971,7 @@ values.add(this.enable);
 ;
     
 
-    var time: string = new calendar.getTimeInMillis() as Long.
+    var time: string = calendar.getTimeInMillis() as Long.
                             toString();
         
         
@@ -1063,7 +1063,7 @@ values.put(EntryData.getInstance()!.ENABLE, this.enable);
 ;
     
 
-    var time: string = new calendar.getTimeInMillis() as Long.
+    var time: string = calendar.getTimeInMillis() as Long.
                             toString();
         
         

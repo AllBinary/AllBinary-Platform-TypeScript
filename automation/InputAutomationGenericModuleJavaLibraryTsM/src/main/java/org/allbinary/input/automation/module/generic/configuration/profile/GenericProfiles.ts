@@ -101,12 +101,12 @@ public constructor (fileName: string){
             var fileName = fileName
 this.fileName= fileName;
     
-this.profilesDefaultListModelHelper= DefaultListModelHelper();
+this.profilesDefaultListModelHelper= new DefaultListModelHelper();
     
-this.hashMap= HashMap<any, any>();
+this.hashMap= new HashMap<any, any>();
     
 
-                        if(File(fileName).
+                        if(new File(fileName).
                             isFile())
                         
                                     {
@@ -129,7 +129,7 @@ this.hashMap= HashMap<any, any>();
 ;
     
 
-    var data: string = new bytes.decodeToString();
+    var data: string = bytes.decodeToString();
         
         
 ;
@@ -169,7 +169,7 @@ logUtil!.put("Number Of Profiles Specified: " +nodeList!.getLength(), this, "Con
                             
 
 
-                            throw Error(GenericProfileActionData.NAME +" Name Node Node Children")
+                            throw new Error(GenericProfileActionData.NAME +" Name Node Node Children")
 
                         }
                             
@@ -289,7 +289,7 @@ logUtil!.put("No Generic Profile Named: " +name +" availability was: " +this.has
             
     public add(name: string){
 var name = name
-this.hashMap!.put(name, GenericProfile(name));
+this.hashMap!.put(name, new GenericProfile(name));
     
 this.getDefaultListModelHelper()!.add(name);
     

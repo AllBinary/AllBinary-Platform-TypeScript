@@ -60,7 +60,7 @@ private constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return org.allbinary.data.tables.log.LogTableEntity();
+                        return new org.allbinary.data.tables.log.LogTableEntity();
     
 
                 //: 

@@ -127,7 +127,7 @@ this.request= pageContext!.getRequest();
 
                                     }
                                 
-this.weblisketSession= WeblisketSession(this.propertiesHashMap, this.pageContext);
+this.weblisketSession= new WeblisketSession(this.propertiesHashMap, this.pageContext);
     
 }
 

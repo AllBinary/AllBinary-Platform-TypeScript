@@ -45,7 +45,7 @@ export class GameNotification
          {
         
 
-    public static readonly NULL_GAME_NOTIFICATION_EVENT: GameNotificationEvent = new GameNotificationEvent(NullUtil.getInstance()!.NULL_OBJECT, StringUtil.getInstance()!.EMPTY_STRING, Integer(0), BasicColorFactory.getInstance()!.RED, BooleanFactory.getInstance()!.FALSE);
+    public static readonly NULL_GAME_NOTIFICATION_EVENT: GameNotificationEvent = new GameNotificationEvent(NullUtil.getInstance()!.NULL_OBJECT, StringUtil.getInstance()!.EMPTY_STRING, new Integer(0), BasicColorFactory.getInstance()!.RED, BooleanFactory.getInstance()!.FALSE);
         
         
 

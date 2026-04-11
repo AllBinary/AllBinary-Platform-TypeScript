@@ -62,9 +62,9 @@ public constructor (nameSpace: string, value: string){
             super();
             var nameSpace = nameSpace
 var value = value
-this.nameSpaceVector= Vector();
+this.nameSpaceVector= new Vector();
     
-this.nameSpacePropertiesHashMap= HashMap<any, any>();
+this.nameSpacePropertiesHashMap= new HashMap<any, any>();
     
 this.value= value;
     
@@ -81,7 +81,7 @@ this.value= value;
                                     
 
 
-                            throw Error("Not a NameSpaceRequest")
+                            throw new Error("Not a NameSpaceRequest")
 
                                     }
                                 
@@ -98,7 +98,7 @@ this.value= value;
 ;
     
 
-    var nameSpaceWithPropertiesVector: BasicArrayList = sepTokenizer!.getTokens(packages, BasicArrayList())!;
+    var nameSpaceWithPropertiesVector: BasicArrayList = sepTokenizer!.getTokens(packages, new BasicArrayList())!;
         
         
 ;
@@ -191,7 +191,7 @@ list.clear();
                                     
 
 
-                            throw Error("Package Name Is Null")
+                            throw new Error("Package Name Is Null")
 
                                     }
                                 
@@ -274,7 +274,7 @@ var packageIndex = packageIndex
                                 )
                         
                                     {
-                                    packagePropertiesHashMap= HashMap<any, any>();
+                                    packagePropertiesHashMap= new HashMap<any, any>();
     
 
                                     }
@@ -333,7 +333,7 @@ var properties = properties
 ;
     
 
-    var propertyVector: BasicArrayList = propertiesTokenizer!.getTokens(properties, BasicArrayList())!;
+    var propertyVector: BasicArrayList = propertiesTokenizer!.getTokens(properties, new BasicArrayList())!;
         
         
 ;

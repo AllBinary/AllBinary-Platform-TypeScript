@@ -47,7 +47,7 @@ export class AdvertisementCampaignInternalEntityFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return AdvertisementCampaignInternalEntity() as AdvertisementCampaignInternalEntityInterface;
+                        return new AdvertisementCampaignInternalEntity() as AdvertisementCampaignInternalEntityInterface;
     
 
                 //: 

@@ -65,7 +65,7 @@ public constructor (name: string){
             var name = name
 this.propertyName= name;
     
-this.cssPropertyValues= CssPropertyValues();
+this.cssPropertyValues= new CssPropertyValues();
     
 }
 
@@ -96,7 +96,7 @@ this.propertyName= DomNodeHelper.getTextNodeValue(propertyNode);
         
 ;
     
-this.cssPropertyValues= CssPropertyValues(propertyValuesNode);
+this.cssPropertyValues= new CssPropertyValues(propertyValuesNode);
     
 }
 

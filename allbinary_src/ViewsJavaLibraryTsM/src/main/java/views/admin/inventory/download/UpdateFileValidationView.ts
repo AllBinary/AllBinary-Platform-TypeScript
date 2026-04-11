@@ -204,7 +204,7 @@ this.itemInterface= inventoryEntity!.getItem(id);
                                     }
                                 
 
-                        if(BasicItemValidation(this.itemInterface).
+                        if(new BasicItemValidation(this.itemInterface).
                             isValid() == Boolean.FALSE)
                         
                                     {
@@ -233,7 +233,7 @@ this.itemInterface= inventoryEntity!.getItem(id);
 ;
     
 
-    var fullCategory: string = StringMaker().
+    var fullCategory: string = new StringMaker().
                             append(URLGLOBALS.getWebappPath())!.append(storeFrontInterface!.getCurrentHostNamePath())!.append(this.itemInterface!.getCategory())!.toString()!;
         
         
@@ -491,7 +491,7 @@ hashMap!.put(BasicItemData.ID, this.itemInterface!.getId());
 
                         }
                             
-this.downloadableItem= DownloadableItem(hashMap);
+this.downloadableItem= new DownloadableItem(hashMap);
     
 
     var downloadableItemValidation: DownloadableItemValidation = new DownloadableItemValidation(this.downloadableItem);
@@ -656,7 +656,7 @@ stringBuffer!.append("<br/>");
 ;
     
 
-    var fullCategory: string = StringMaker().
+    var fullCategory: string = new StringMaker().
                             append(URLGLOBALS.getWebappPath())!.append(storeFrontInterface!.getCurrentHostNamePath())!.append(this.itemInterface!.getCategory())!.toString()!;
         
         

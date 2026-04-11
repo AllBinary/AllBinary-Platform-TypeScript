@@ -104,7 +104,7 @@ export class LoggingInitInfo
 ;
     
 
-    var document: Document = DomDocumentHelper.create(AbFileLocalInputStream(file))!;
+    var document: Document = DomDocumentHelper.create(new AbFileLocalInputStream(file))!;
         
         
 ;
@@ -169,7 +169,7 @@ export class LoggingInitInfo
         
 ;
     
-LoggingInitInfo.logConfigInfoList= BasicArrayList();
+LoggingInitInfo.logConfigInfoList= new BasicArrayList();
     
 
     var size: number = logConfigNodeVector!.length!;
@@ -247,7 +247,7 @@ hasRead= true;
                                     
 
 
-                            throw Error("Read Failed")
+                            throw new Error("Read Failed")
 
                                     }
                                 

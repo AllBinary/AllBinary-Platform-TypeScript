@@ -91,7 +91,7 @@ this.imageProcessorInput= imageProcessorInput;
 
 
     public process(){
-object: Thread()
+new object: Thread()
                                 {
                                 
     public run(){
@@ -154,7 +154,7 @@ filePath= filePath!.substring(0, extensionIndex) +"_mirror" +imageStrings!.PNG_E
     
 logUtil!.put("Renamed File: " +filePath, this, commonStrings!.RUN);
     
-file= File(filePath);
+file= new File(filePath);
     
 
                                     }
@@ -189,11 +189,11 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
 
 
     initComponents(){
-jLayeredPane1= javax.swing.JLayeredPane();
+jLayeredPane1= new javax.swing.JLayeredPane();
     
-buttonGroup= javax.swing.ButtonGroup();
+buttonGroup= new javax.swing.ButtonGroup();
     
-jPanel1= object: javax.swing.JPanel()
+jPanel1= new object: javax.swing.JPanel()
                                 {
                                 
     public paint(graphics: Graphics){
@@ -217,21 +217,21 @@ var graphics = graphics
                                 }
                             ;
     
-jPanel2= javax.swing.JPanel();
+jPanel2= new javax.swing.JPanel();
     
-horizontalJCheckBox= javax.swing.JCheckBox();
+horizontalJCheckBox= new javax.swing.JCheckBox();
     
-verticleJCheckBox= javax.swing.JCheckBox();
+verticleJCheckBox= new javax.swing.JCheckBox();
     
-generateJButton= javax.swing.JButton();
+generateJButton= new javax.swing.JButton();
     
-renameJRadioButton= javax.swing.JRadioButton();
+renameJRadioButton= new javax.swing.JRadioButton();
     
-writeOverOriginalJRadioButton= javax.swing.JRadioButton();
+writeOverOriginalJRadioButton= new javax.swing.JRadioButton();
     
-jPanel3= javax.swing.JPanel();
+jPanel3= new javax.swing.JPanel();
     
-jLabel2= javax.swing.JLabel();
+jLabel2= new javax.swing.JLabel();
     
 
     var jPanel1Layout: org.jdesktop.layout.GroupLayout = new org.jdesktop.layout.GroupLayout(jPanel1);
@@ -257,7 +257,7 @@ verticleJCheckBox!.setEnabled(false);
     
 generateJButton!.setText("Generate");
     
-generateJButton!.addActionListener(object: java.awt.event.ActionListener()
+generateJButton!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -271,7 +271,7 @@ generateJButtonActionPerformed(evt);
     
 renameJRadioButton!.setText("Save As filename_mirror");
     
-renameJRadioButton!.addActionListener(object: java.awt.event.ActionListener()
+renameJRadioButton!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){

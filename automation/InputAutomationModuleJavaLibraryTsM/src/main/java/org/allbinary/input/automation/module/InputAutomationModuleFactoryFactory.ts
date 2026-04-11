@@ -78,9 +78,9 @@ public constructor (helpSetListenerInterface: HelpSetListener){
                 //var helpSetListenerInterface = helpSetListenerInterface
 this.helpSetListenerInterface= helpSetListenerInterface;
     
-this.defaultListModelHelper= DefaultListModelHelper();
+this.defaultListModelHelper= new DefaultListModelHelper();
     
-this.hashMap= HashMap<any, any>();
+this.hashMap= new HashMap<any, any>();
     
 
     var inputAutomationModuleConfigurations: InputAutomationModuleConfigurations = InputAutomationModuleConfigurationsSingletonFactory.getInstance()!;

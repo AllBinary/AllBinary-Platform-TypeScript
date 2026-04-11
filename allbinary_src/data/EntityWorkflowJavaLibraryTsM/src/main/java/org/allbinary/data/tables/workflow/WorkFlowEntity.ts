@@ -92,7 +92,7 @@ export class WorkFlowEntity extends AbSqlBean
         
 public constructor ()                        
 
-                            : super(UserDbInitInfo()){
+                            : super(new UserDbInitInfo()){
 
             super();
             

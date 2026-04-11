@@ -72,7 +72,7 @@ this.init();
 
 
     init(){
-this.emailEventHashMap= HashMap<any, any>();
+this.emailEventHashMap= new HashMap<any, any>();
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))

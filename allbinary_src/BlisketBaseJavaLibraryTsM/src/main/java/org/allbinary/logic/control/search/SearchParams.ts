@@ -60,7 +60,7 @@ public constructor (request: HttpServletRequest){
 
             super();
             var request = request
-this.columnsAndSearchValues= HashMap<any, any>();
+this.columnsAndSearchValues= new HashMap<any, any>();
     
 this.setLength(request.getParameter(SearchData.LENGTH));
     
@@ -208,7 +208,7 @@ this.endPage= value;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Integer(this.listLength);
+                        return new Integer(this.listLength);
     
 
                                     }
@@ -250,7 +250,7 @@ this.endPage= value;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Integer(this.startPage);
+                        return new Integer(this.startPage);
     
 
                                     }
@@ -272,7 +272,7 @@ this.endPage= value;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Integer(this.endPage);
+                        return new Integer(this.endPage);
     
 
                                     }
@@ -315,7 +315,7 @@ paramsNode!.appendChild(this.getLengthNode(document));
     getFieldsNode(document: Document): Node{
 var document = document
 
-    var fieldsNode: Node = ModDomHelper.createNameValueNodes(document, SearchData.FIELDS, Integer(columnsAndSearchValues!.size()).
+    var fieldsNode: Node = ModDomHelper.createNameValueNodes(document, SearchData.FIELDS, new Integer(columnsAndSearchValues!.size()).
                             toString())!;
         
         

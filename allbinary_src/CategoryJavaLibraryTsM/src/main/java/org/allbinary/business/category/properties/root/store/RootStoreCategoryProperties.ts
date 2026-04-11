@@ -113,7 +113,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                 //var transformInfoInterface = transformInfoInterface
 this.transformInfoInterface= transformInfoInterface;
     
-this.abPath= AbPath();
+this.abPath= new AbPath();
     
 this.category= CategoryData.getInstance()!.ROOTCATEGORY;
     
@@ -166,7 +166,7 @@ this.transformInfoInterface= transformInfoInterface;
         
 ;
     
-this.abPath= AbPath(categoryPath);
+this.abPath= new AbPath(categoryPath);
     
 this.category= PathUtil.getInstance()!.getNameFromPath(categoryPath);
     
@@ -195,12 +195,12 @@ public constructor (transformInfoInterface: TransformInfoInterface, categoryProp
 this.transformInfoInterface= transformInfoInterface;
     
 
-    var categoryPath: string = new .toCharArray();
+    var categoryPath: string = .toCharArray();
         
         
 ;
     
-this.abPath= AbPath(categoryPath);
+this.abPath= new AbPath(categoryPath);
     
 this.category= PathUtil.getInstance()!.getNameFromPath(categoryPath);
     
@@ -251,9 +251,9 @@ this.log();
         
 ;
     
-this.webAppAbPath= AbPath(httpServletRequest!.getContextPath() +postPath);
+this.webAppAbPath= new AbPath(httpServletRequest!.getContextPath() +postPath);
     
-this.setRootFilePath(AbPath(URLGLOBALS.getMainPath() +postPath));
+this.setRootFilePath(new AbPath(URLGLOBALS.getMainPath() +postPath));
     
 }
 
@@ -452,7 +452,7 @@ var document = document
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
                         
                                     {
-                                    logUtil!.put(StringMaker().
+                                    logUtil!.put(new StringMaker().
                             append("filePath = ")!.append(this.fileAbPath!.toString())!.append("\npath = ")!.append(this.abPath!.toString())!.append("\ncategory = ")!.append(this.category)!.toString(), this, "log()");
     
 

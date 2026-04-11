@@ -51,7 +51,7 @@ allBinaryGameCanvas!.updateMenu(displayChangeEvent);
 
     public initSpecialPaint(allBinaryGameCanvas: AllBinaryGameCanvas){
     //var allBinaryGameCanvas = allBinaryGameCanvas
-allBinaryGameCanvas!.setNonBotPaintableP(GameCanvasNonBotPaintable(allBinaryGameCanvas));
+allBinaryGameCanvas!.setNonBotPaintableP(new GameCanvasNonBotPaintable(allBinaryGameCanvas));
     
 }
 

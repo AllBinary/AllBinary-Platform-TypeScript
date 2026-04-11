@@ -79,7 +79,7 @@ var level = level
                     
 this.transformInfoInterface= transformInfoInterface;
     
-this.themeVector= Vector();
+this.themeVector= new Vector();
     
 }
 
@@ -98,7 +98,7 @@ var categoryPropertiesFactoryInterface = categoryPropertiesFactoryInterface
                     
 this.transformInfoInterface= transformInfoInterface;
     
-this.themeVector= Vector();
+this.themeVector= new Vector();
     
 }
 
@@ -117,7 +117,7 @@ var level = level
                     
 this.transformInfoInterface= transformInfoInterface;
     
-this.themeVector= Vector();
+this.themeVector= new Vector();
     
 this.addThemes(node);
     
@@ -139,7 +139,7 @@ var categoryPropertiesFactoryInterface = categoryPropertiesFactoryInterface
                     
 this.transformInfoInterface= transformInfoInterface;
     
-this.themeVector= Vector();
+this.themeVector= new Vector();
     
 this.addThemes(node);
     
@@ -192,7 +192,7 @@ index < nodeList!.getLength(); index++)
                         if(themeNode!.getNodeName()!.compareTo(ThemeData.getInstance()!.NAME) == 0)
                         
                                     {
-                                    this.themeVector!.add(ThemeValidation(this, themeNode));
+                                    this.themeVector!.add(new ThemeValidation(this, themeNode));
     
 
                                     }

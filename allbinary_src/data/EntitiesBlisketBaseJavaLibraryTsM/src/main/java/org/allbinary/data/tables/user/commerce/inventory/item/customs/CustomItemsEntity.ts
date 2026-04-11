@@ -65,7 +65,7 @@ export class CustomItemsEntity extends AbSqlBean
         
 public constructor ()                        
 
-                            : super(InventoryDbInitInfo()){
+                            : super(new InventoryDbInitInfo()){
 
             super();
             

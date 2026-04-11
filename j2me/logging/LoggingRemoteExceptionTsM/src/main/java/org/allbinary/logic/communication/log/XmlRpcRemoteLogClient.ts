@@ -155,7 +155,7 @@ System.out.println("IOException Trying Other Servers");
                             
 
 
-                            throw Error(HOST_NOT_RESOLVED_MSG)
+                            throw new Error(HOST_NOT_RESOLVED_MSG)
 
                         }
                             

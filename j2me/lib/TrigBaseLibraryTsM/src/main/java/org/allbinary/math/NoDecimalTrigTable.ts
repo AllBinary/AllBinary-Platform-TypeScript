@@ -2525,7 +2525,7 @@ stringBuffer!.appendint(dy);
 
 
 
-                            throw Error(stringBuffer!.toString())
+                            throw new Error(stringBuffer!.toString())
 }
 
 

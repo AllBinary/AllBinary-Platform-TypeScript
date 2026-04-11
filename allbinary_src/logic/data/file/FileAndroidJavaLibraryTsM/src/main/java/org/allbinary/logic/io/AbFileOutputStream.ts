@@ -46,7 +46,7 @@ public constructor (name: string){
 
             super();
             var name = name
-this.fileOutputStream= FileOutputStream(name);
+this.fileOutputStream= new FileOutputStream(name);
     
 }
 
@@ -56,7 +56,7 @@ public constructor (file: AbFile){
 
             super();
             var file = file
-this.fileOutputStream= FileOutputStream(AbFileNativeUtil.get(file));
+this.fileOutputStream= new FileOutputStream(AbFileNativeUtil.get(file));
     
 }
 

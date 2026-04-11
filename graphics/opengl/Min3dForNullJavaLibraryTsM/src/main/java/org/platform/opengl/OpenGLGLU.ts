@@ -41,7 +41,7 @@ export class OpenGLGLU
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -61,7 +61,7 @@ var winOffset = winOffset
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -81,7 +81,7 @@ var obj = obj
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -96,7 +96,7 @@ var obj = obj
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 

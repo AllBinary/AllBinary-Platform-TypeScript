@@ -166,7 +166,7 @@ index < size; index++)
         
 ;
     
-Arrays.sort(objectArray, StringComparator());
+Arrays.sort(objectArray, new StringComparator());
     
 
 

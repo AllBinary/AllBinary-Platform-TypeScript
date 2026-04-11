@@ -101,7 +101,7 @@ public constructor (transformInfoInterface: TransformInfoInterface)
 
                                     }
                                 
-this.domNodeInterfaceVector= Vector();
+this.domNodeInterfaceVector= new Vector();
     
 this.setTransformDocumentInterface(TransformHttpRequestDocumentFactory.getInstance(this.getPageContext(), this.getWeblisketSession()));
     
@@ -275,7 +275,7 @@ this.transformDocumentInterface!.getBaseNode()!.appendChild(domNodeInterface!.to
 ;
     
 
-    var result: string = BasicTransformer(this.abeClientInformation, this.getTransformInfoInterface()).
+    var result: string = new BasicTransformer(this.abeClientInformation, this.getTransformInfoInterface()).
                             translate(success)!;
         
         

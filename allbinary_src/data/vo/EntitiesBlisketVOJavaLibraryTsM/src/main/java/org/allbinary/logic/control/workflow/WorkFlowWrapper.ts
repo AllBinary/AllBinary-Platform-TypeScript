@@ -117,7 +117,7 @@ this.anyType= anyType;
 
 
 
-                            throw Error(error)
+                            throw new Error(error)
 }
 
 }
@@ -178,7 +178,7 @@ this.anyType= anyType;
 
 
 
-                            throw Error(error)
+                            throw new Error(error)
 }
 
 }
@@ -239,7 +239,7 @@ this.anyType= anyType;
 
 
 
-                            throw Error(error)
+                            throw new Error(error)
 }
 
 }

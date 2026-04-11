@@ -119,7 +119,7 @@ this.allBinaryGameCanvas= allBinaryGameCanvas;
     //var deviceId = deviceId
 
         try {
-            PreLogUtil.put(StringMaker().
+            PreLogUtil.put(new StringMaker().
                             append(inputFactory!.KEY_CODE_LABEL)!.appendint(keyCode)!.append(CommonSeps.getInstance()!.SPACE)!.append(inputFactory!.DEVICE_ID_LABEL)!.appendint(deviceId)!.toString(), this, this.gameInputStrings!.KEY_PRESSED);
     
 
@@ -163,7 +163,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, this.gameInputStrings!.ADD_KEY_EVEN
                         if(platformKeyFactory!.isEnter(input))
                         
                                     {
-                                    PreLogUtil.put(StringMaker().
+                                    PreLogUtil.put(new StringMaker().
                             append(inputFactory!.KEY_CODE_LABEL)!.appendint(keyCode)!.append(CommonSeps.getInstance()!.SPACE)!.append(inputFactory!.DEVICE_ID_LABEL)!.appendint(deviceId)!.toString(), this, gameInputStrings!.KEY_RELEASED);
     
 

@@ -71,7 +71,7 @@ private constructor (){
 
         try {
             
-    var osString: string = StringMaker().
+    var osString: string = new StringMaker().
                             append("OperatingSystem Info: ")!.append(genericOperatingSystem!.toString())!.toString()!;
         
         

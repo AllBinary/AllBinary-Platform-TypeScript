@@ -459,7 +459,7 @@ this.glVersion= this.VERSION_UNK;
                         if(this.possiblyAccelerated)
                         
                                     {
-                                    PreLogUtil.put(StringMaker().
+                                    PreLogUtil.put(new StringMaker().
                             append("VBO:?")!.appendboolean((this.glInstanceVersion == this.VERSION_1_1))!.append("||")!.appendboolean(this.isExtension(openGLFeatureFactory!.OPENGL_VERTEX_BUFFER_OBJECT))!.toString(), this, METHOD_NAME);
     
 
@@ -501,7 +501,7 @@ this.glVersion= this.VERSION_UNK;
                         if(this.vertexBufferObjectSupport)
                         
                                     {
-                                    openGLImageSpecificFactory!.setImageFactory(OpenGLESGL11VBOImageFactory());
+                                    openGLImageSpecificFactory!.setImageFactory(new OpenGLESGL11VBOImageFactory());
     
 
                                     }
@@ -515,7 +515,7 @@ stringBuffer!.append(" was not available");
     
 PreLogUtil.put(stringBuffer!.toString(), this, METHOD_NAME);
     
-openGLImageSpecificFactory!.setImageFactory(OpenGLESGL10ImageFactory());
+openGLImageSpecificFactory!.setImageFactory(new OpenGLESGL10ImageFactory());
     
 
                         }
@@ -530,7 +530,7 @@ stringBuffer!.append(" is not on");
     
 PreLogUtil.put(stringBuffer!.toString(), this, METHOD_NAME);
     
-openGLImageSpecificFactory!.setImageFactory(OpenGLESGL10ImageFactory());
+openGLImageSpecificFactory!.setImageFactory(new OpenGLESGL10ImageFactory());
     
 
                         }
@@ -790,7 +790,7 @@ stringBuffer!.append(" GL_EXTENSIONS: ");
 ;
     
 
-    var list: BasicArrayList = tokenizer.getTokens(this.glExtensions, BasicArrayList())!;
+    var list: BasicArrayList = tokenizer.getTokens(this.glExtensions, new BasicArrayList())!;
         
         
 ;

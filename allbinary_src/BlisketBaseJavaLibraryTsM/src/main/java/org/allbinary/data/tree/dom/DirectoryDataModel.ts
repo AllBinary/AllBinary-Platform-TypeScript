@@ -153,7 +153,7 @@ nextFile= this.fileBasicArrayList!.get(index);
 
                          as AbFile;
     
-fileNode= FileDomDataModel(nextFile).
+fileNode= new FileDomDataModel(nextFile).
                             toXmlNode(document);
     
 dirNode!.appendChild(fileNode);

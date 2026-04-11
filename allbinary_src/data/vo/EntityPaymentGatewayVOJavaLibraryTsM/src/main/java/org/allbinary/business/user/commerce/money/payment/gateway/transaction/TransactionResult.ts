@@ -84,7 +84,7 @@ public constructor (result: string){
 ;
     
 
-    var tokens: BasicArrayList = tokenizer.getTokens(result, BasicArrayList())!;
+    var tokens: BasicArrayList = tokenizer.getTokens(result, new BasicArrayList())!;
         
         
 ;

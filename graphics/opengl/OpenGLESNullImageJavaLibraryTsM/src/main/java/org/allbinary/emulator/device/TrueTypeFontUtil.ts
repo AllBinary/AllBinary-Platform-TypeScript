@@ -68,7 +68,7 @@ var textureSize = textureSize
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -77,7 +77,7 @@ var cellSize = cellSize
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -89,7 +89,7 @@ var cellSize = cellSize
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -105,7 +105,7 @@ var cellSize = cellSize
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -115,7 +115,7 @@ var cellSize = cellSize
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 

@@ -85,7 +85,7 @@ this.androidMediaPlayerWrapper= androidMediaPlayerWrapper;
                             
 
 
-                            throw Error("Unknow Listening Leve")
+                            throw new Error("Unknow Listening Leve")
 
                         }
                             
@@ -213,7 +213,7 @@ export inner class MediaPlayerOnCompletionListener
     public onBufferingUpdate(mediaPlayer: MediaPlayer, i: number){
     //var mediaPlayer = mediaPlayer
     //var i = i
-logUtil!.put(StringMaker().
+logUtil!.put(new StringMaker().
                             append("Update buffer: ")!.appendint(i)!.append("%")!.toString(), this, AndroidMediaPlayerWrapperListener.ON_BUFFERING_UPDATE);
     
 this@AndroidMediaPlayerWrapperListener.androidMediaPlayerWrapper!.update(PlayerListener.DEVICE_UNAVAILABLE);
@@ -248,7 +248,7 @@ this@AndroidMediaPlayerWrapperListener.androidMediaPlayerWrapper!.update(PlayerL
     //var mp = mp
     //var what = what
     //var extra = extra
-logUtil!.put(StringMaker().
+logUtil!.put(new StringMaker().
                             append(CommonLabels.getInstance()!.START_LABEL)!.append("What: ")!.appendint(what)!.append(" Extra: ")!.appendint(extra)!.toString(), this, AndroidMediaPlayerWrapperListener.ON_ERROR);
     
 this@AndroidMediaPlayerWrapperListener.androidMediaPlayerWrapper!.update(PlayerListener.ERROR);

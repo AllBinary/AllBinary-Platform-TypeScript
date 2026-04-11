@@ -146,7 +146,7 @@ filePathStringBuffer!.append(".txt");
 ;
     
 
-    var fileOutputStream: FileOutputStream = new FileOutputStream(File(filePath));
+    var fileOutputStream: FileOutputStream = new FileOutputStream(new File(filePath));
         
         
 ;

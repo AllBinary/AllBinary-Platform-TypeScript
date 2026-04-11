@@ -59,7 +59,7 @@ public constructor (transformInfoInterface: TransformInfoInterface)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.metasValidation= MetasValidation(this.getWeblisketSession()!.getStoreName());
+this.metasValidation= new MetasValidation(this.getWeblisketSession()!.getStoreName());
     
 }
 

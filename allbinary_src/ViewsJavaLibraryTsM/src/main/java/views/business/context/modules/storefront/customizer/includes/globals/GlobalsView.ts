@@ -59,7 +59,7 @@ public constructor (transformInfoInterface: TransformInfoInterface)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.globalsValidation= GlobalsValidation(this.getWeblisketSession()!.getStoreName());
+this.globalsValidation= new GlobalsValidation(this.getWeblisketSession()!.getStoreName());
     
 }
 

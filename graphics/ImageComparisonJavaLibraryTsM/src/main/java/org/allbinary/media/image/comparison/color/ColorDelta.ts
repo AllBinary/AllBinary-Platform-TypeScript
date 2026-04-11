@@ -44,7 +44,7 @@ var rgb2 = rgb2
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return StringMaker().
+                        return new StringMaker().
                             append(rgb1.toString())!.append(CommonSeps.getInstance()!.UNDERSCORE)!.append(rgb2.toString())!.toString();
 
                         ;
@@ -120,7 +120,7 @@ this.rgb2= rgb2;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return StringMaker().
+                        return new StringMaker().
                             append("ColorDelta: ")!.append(StringUtil.getInstance()!.toString(this.getKey()))!.append(" RGB1: ")!.appendint(this.getRgb1())!.append(" RGB2: ")!.appendint(this.getRgb2())!.toString();
 
                         ;

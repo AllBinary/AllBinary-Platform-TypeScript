@@ -48,7 +48,7 @@ var imageType = imageType
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return CapturedImageInputOutput();
+                        return new CapturedImageInputOutput();
     
 
                                     }
@@ -61,7 +61,7 @@ var imageType = imageType
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return ComparisonImageInputOutput();
+                        return new ComparisonImageInputOutput();
     
 
                                     }
@@ -74,7 +74,7 @@ var imageType = imageType
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return MotionRectanglesImageInputOutput();
+                        return new MotionRectanglesImageInputOutput();
     
 
                                     }
@@ -83,7 +83,7 @@ var imageType = imageType
                             
 
 
-                            throw Error("No ImageIOInterface for: " +imageType!.toString())
+                            throw new Error("No ImageIOInterface for: " +imageType!.toString())
 
                         }
                             

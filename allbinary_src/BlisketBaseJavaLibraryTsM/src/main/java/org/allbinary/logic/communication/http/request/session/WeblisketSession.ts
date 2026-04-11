@@ -366,7 +366,7 @@ this.session.setAttribute(StoreFrontData.getInstance()!.NAME, value);
                                 )
                         
                                     {
-                                    orderInterface= Order(Basket()) as OrderInterface;
+                                    orderInterface= new Order(new Basket()) as OrderInterface;
     
 
                                     }
@@ -386,7 +386,7 @@ session.setAttribute(basketName, orderInterface);
                             
 
 
-                            throw Error("Basket Name Not Found")
+                            throw new Error("Basket Name Not Found")
 
                         }
                             

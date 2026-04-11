@@ -95,7 +95,7 @@ this.imageProcessorInput= imageProcessorInput;
 
 
     public process(){
-object: Thread()
+new object: Thread()
                                 {
                                 
     public run(){
@@ -129,7 +129,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
 
 
     initComponents(){
-jPanel1= object: javax.swing.JPanel()
+jPanel1= new object: javax.swing.JPanel()
                                 {
                                 
     public paint(graphics: Graphics){
@@ -153,21 +153,21 @@ var graphics = graphics
                                 }
                             ;
     
-jPanel2= javax.swing.JPanel();
+jPanel2= new javax.swing.JPanel();
     
-jLabel1= javax.swing.JLabel();
+jLabel1= new javax.swing.JLabel();
     
-generateJButton= javax.swing.JButton();
+generateJButton= new javax.swing.JButton();
     
-totalAngleJComboBox= javax.swing.JComboBox();
+totalAngleJComboBox= new javax.swing.JComboBox();
     
-jLabel3= javax.swing.JLabel();
+jLabel3= new javax.swing.JLabel();
     
-writeOverOriginalJCheckBox= javax.swing.JCheckBox();
+writeOverOriginalJCheckBox= new javax.swing.JCheckBox();
     
-jPanel3= javax.swing.JPanel();
+jPanel3= new javax.swing.JPanel();
     
-jLabel2= javax.swing.JLabel();
+jLabel2= new javax.swing.JLabel();
     
 
     var jPanel1Layout: org.jdesktop.layout.GroupLayout = new org.jdesktop.layout.GroupLayout(jPanel1);
@@ -183,7 +183,7 @@ jPanel1Layout!.setVerticalGroup(jPanel1Layout!.createParallelGroup(org.jdesktop.
     
 generateJButton!.setText("Generate");
     
-generateJButton!.addActionListener(object: java.awt.event.ActionListener()
+generateJButton!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -195,14 +195,14 @@ generateJButtonActionPerformed(evt);
                                 }
                             );
     
-totalAngleJComboBox!.setModel(javax.swing.DefaultComboBoxModel(
+totalAngleJComboBox!.setModel(new javax.swing.DefaultComboBoxModel(
                                                 [
                                                     commonStrings!.UP,commonStrings!.DOWN,"-90","90";
         
         
                                                 ]));
     
-totalAngleJComboBox!.addActionListener(object: java.awt.event.ActionListener()
+totalAngleJComboBox!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -340,10 +340,10 @@ this.getParent()!.repaint();
         
 ;
     
-filePath= StringBuilder().
+filePath= new StringBuilder().
                             append(filePath!.substring(0, extensionIndex))!.append(CommonSeps.getInstance()!.UNDERSCORE)!.append(name)!.append(imageStrings!.PNG_EXTENSION)!.toString();
     
-file= File(filePath);
+file= new File(filePath);
     
 
                                     }

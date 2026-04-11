@@ -89,7 +89,7 @@ var pageContext = pageContext
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return TransformInfoHttpStore(storeFrontInterface, propertiesHashMap, pageContext) as TransformInfoInterface;
+                        return new TransformInfoHttpStore(storeFrontInterface, propertiesHashMap, pageContext) as TransformInfoInterface;
     
 
                                     }
@@ -98,7 +98,7 @@ var pageContext = pageContext
                             
 
 
-                            throw Error("No StoreFront with: " +weblisketSession!.getStoreName())
+                            throw new Error("No StoreFront with: " +weblisketSession!.getStoreName())
 
                         }
                             
@@ -110,7 +110,7 @@ var pageContext = pageContext
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return TransformInfoHttpContext(propertiesHashMap, pageContext) as TransformInfoInterface;
+                        return new TransformInfoHttpContext(propertiesHashMap, pageContext) as TransformInfoInterface;
     
 
                         }

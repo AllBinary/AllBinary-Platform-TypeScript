@@ -247,7 +247,7 @@ this.move(0, diffY);
                             
 
 
-                            throw Error("No Such Anchor Supported")
+                            throw new Error("No Such Anchor Supported")
 
                         }
                             
@@ -343,13 +343,13 @@ this.move(0, diffY);
 
 
     public initInputProcessors(){
-this.inputProcessorArray[Canvas.UP]= ScrollMapUpGameInputProcessor(this);
+this.inputProcessorArray[Canvas.UP]= new ScrollMapUpGameInputProcessor(this);
     
-this.inputProcessorArray[Canvas.DOWN]= ScrollMapDownGameInputProcessor(this);
+this.inputProcessorArray[Canvas.DOWN]= new ScrollMapDownGameInputProcessor(this);
     
-this.inputProcessorArray[Canvas.KEY_NUM9]= ScrollMapRightGameInputProcessor(this);
+this.inputProcessorArray[Canvas.KEY_NUM9]= new ScrollMapRightGameInputProcessor(this);
     
-this.inputProcessorArray[Canvas.KEY_NUM7]= ScrollMapLeftGameInputProcessor(this);
+this.inputProcessorArray[Canvas.KEY_NUM7]= new ScrollMapLeftGameInputProcessor(this);
     
 GameInputProcessorUtil.init(this.inputProcessorArray);
     

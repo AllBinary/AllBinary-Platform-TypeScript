@@ -64,17 +64,17 @@ private constructor (){
         
 ;
     
-LEFT= MotionGestureInput(MAX -20, "Left Orient");
+LEFT= new MotionGestureInput(MAX -20, "Left Orient");
     
-RIGHT= MotionGestureInput(MAX -21, "Right Orient");
+RIGHT= new MotionGestureInput(MAX -21, "Right Orient");
     
-UP= MotionGestureInput(MAX -22, "Up Orient");
+UP= new MotionGestureInput(MAX -22, "Up Orient");
     
-DOWN= MotionGestureInput(MAX -23, "Down Orient");
+DOWN= new MotionGestureInput(MAX -23, "Down Orient");
     
-ROLL_LEFT= MotionGestureInput(MAX -24, "Roll Left");
+ROLL_LEFT= new MotionGestureInput(MAX -24, "Roll Left");
     
-ROLL_RIGHT= MotionGestureInput(MAX -25, "Roll Right");
+ROLL_RIGHT= new MotionGestureInput(MAX -25, "Roll Right");
     
 }
 

@@ -46,7 +46,7 @@ export class PathFindingNodeCostInfoFactoryBase
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -59,7 +59,7 @@ export class PathFindingNodeCostInfoFactoryBase
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 

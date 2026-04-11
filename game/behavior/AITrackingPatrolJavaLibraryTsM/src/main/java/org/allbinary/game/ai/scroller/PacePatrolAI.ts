@@ -95,7 +95,7 @@ var gameInput = gameInput
                     
 TrackingEventHandler.getInstance()!.addListener(this);
     
-this.trackingList= BasicArrayList();
+this.trackingList= new BasicArrayList();
     
 }
 

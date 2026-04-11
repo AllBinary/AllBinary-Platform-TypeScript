@@ -57,7 +57,7 @@ var pageContext = pageContext
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return TransformInfoHelper(hashMap, pageContext);
+                        return new TransformInfoHelper(hashMap, pageContext);
     
 
                 //: 

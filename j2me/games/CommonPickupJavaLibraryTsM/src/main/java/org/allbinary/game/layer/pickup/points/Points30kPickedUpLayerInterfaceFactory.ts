@@ -57,7 +57,7 @@ export class Points30kPickedUpLayerInterfaceFactory extends PickedUpLayerInterfa
                 //@Throws(Error::class)
             
     public static init(){
-pickedUpLayerInterfaceFactoryInterface= Points30kPickedUpLayerInterfaceFactory();
+pickedUpLayerInterfaceFactoryInterface= new Points30kPickedUpLayerInterfaceFactory();
     
 }
 
@@ -72,7 +72,7 @@ pickedUpLayerInterfaceFactoryInterface= Points30kPickedUpLayerInterfaceFactory()
 }
 
 
-    private pool: PointsLayerCircularStaticPool = new PointsLayerCircularStaticPool(PointsLayerFactory(GameConfigurationUtil.getInstance()!.getCompetitionValue() *30000), 1);
+    private pool: PointsLayerCircularStaticPool = new PointsLayerCircularStaticPool(new PointsLayerFactory(GameConfigurationUtil.getInstance()!.getCompetitionValue() *30000), 1);
         
         
 private constructor ()                        

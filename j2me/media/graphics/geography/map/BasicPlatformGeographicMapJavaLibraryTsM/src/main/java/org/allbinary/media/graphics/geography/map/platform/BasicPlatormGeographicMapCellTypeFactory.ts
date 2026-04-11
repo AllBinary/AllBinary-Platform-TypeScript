@@ -68,7 +68,7 @@ logUtil!.put(commonStrings!.START, this, commonStrings!.INIT);
     
 this.maxTileId= maxTileId;
     
-GeographicMapCellType(0);
+new GeographicMapCellType(0);
     
 
     var BLOCK_CELL_TYPE: BasicPlatormGeographicMapCellType = new BasicPlatormGeographicMapCellType(1);
@@ -137,7 +137,7 @@ idsWithTypeList= tileTypeToTileIdsMap!.get(key);
 
                          as BasicArrayList;
     
-basicPlatormGeographicMapCellType= BasicPlatormGeographicMapCellType(idsWithTypeList);
+basicPlatormGeographicMapCellType= new BasicPlatormGeographicMapCellType(idsWithTypeList);
     
 
                         if(key.equals(PLATFORM))
@@ -174,9 +174,9 @@ this.JUMP_THRU_CELL_TYPE= JUMP_THRU_CELL_TYPE;
     
 this.LADDER_CELL_TYPE= LADDER_CELL_TYPE;
     
-GeographicMapCellType(this.maxTileId -1);
+new GeographicMapCellType(this.maxTileId -1);
     
-GeographicMapCellType(this.maxTileId -2);
+new GeographicMapCellType(this.maxTileId -2);
     
 }
 

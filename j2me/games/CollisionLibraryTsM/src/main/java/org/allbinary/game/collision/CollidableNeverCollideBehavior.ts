@@ -29,7 +29,7 @@ export class CollidableNeverCollideBehavior extends CollidableBaseBehavior {
         
  constructor (isCollidable: boolean)                        
 
-                            : super(CollidableCompositeLayer(RectangleFactory.SINGLETON), isCollidable){
+                            : super(new CollidableCompositeLayer(RectangleFactory.SINGLETON), isCollidable){
 
             super();
             var isCollidable = isCollidable

@@ -56,13 +56,13 @@ this.profileActionScriptConditionInterface= profileActionScriptConditionInterfac
 
 
     initComponents(){
-removeJButton= javax.swing.JButton();
+removeJButton= new javax.swing.JButton();
     
-setLayout(java.awt.GridLayout());
+setLayout(new java.awt.GridLayout());
     
 removeJButton!.setText("Remove");
     
-removeJButton!.addActionListener(object: java.awt.event.ActionListener()
+removeJButton!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){

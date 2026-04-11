@@ -60,7 +60,7 @@ public constructor (demoGameMidlet: DemoGameMidlet){
             var demoGameMidlet = demoGameMidlet
 this.demoGameMidlet= demoGameMidlet;
     
-this.startDemoGameMidletEvent= DemoGameMidletEvent(this.demoGameMidlet, DemoGameMidletStateFactory.getInstance()!.START_DEMO);
+this.startDemoGameMidletEvent= new DemoGameMidletEvent(this.demoGameMidlet, DemoGameMidletStateFactory.getInstance()!.START_DEMO);
     
 }
 
@@ -68,7 +68,7 @@ this.startDemoGameMidletEvent= DemoGameMidletEvent(this.demoGameMidlet, DemoGame
     public run(){
 
         try {
-            logUtil!.put(StringMaker().
+            logUtil!.put(new StringMaker().
                             append(CommonLabels.getInstance()!.START_LABEL)!.append("GameCanvasRunnableInterface")!.toString(), this, commonStrings!.RUN);
     
 this.demoGameMidlet!.commandAction(MyCommandsFactory.getInstance()!.SET_DISPLAYABLE, ProgressCanvasFactory.getInstance());

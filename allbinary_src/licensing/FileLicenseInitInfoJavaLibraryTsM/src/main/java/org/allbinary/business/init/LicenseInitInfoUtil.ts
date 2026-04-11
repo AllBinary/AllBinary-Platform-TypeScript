@@ -126,7 +126,7 @@ var initData = initData
 ;
     
 
-    var licenseIdCrypted: number[] = WeakCrypt(1).
+    var licenseIdCrypted: number[] = new WeakCrypt(1).
                             encrypt(initData!.getLicenseId())!.encodeToByteArray()!;
         
         
@@ -156,7 +156,7 @@ dataOutputStream!.writeInt(numberOfLicenseServers);
         
 index < numberOfLicenseServers; index++)
         {
-licenseServerCrypted= WeakCrypt(3).
+licenseServerCrypted= new WeakCrypt(3).
                             encrypt(initData!.getServer(index))!.encodeToByteArray();
     
 dataOutputStream!.writeUTF(DatabaseEncoder.encode(licenseServerCrypted));
@@ -256,12 +256,12 @@ var initializeCounter = initializeCounter
 ;
     
 
-    var licenseIdDecoded: string = new decodedByteArray.decodeToString();
+    var licenseIdDecoded: string = decodedByteArray.decodeToString();
         
         
 ;
     
-initInfo!.setLicenseId(WeakCrypt(1).
+initInfo!.setLicenseId(new WeakCrypt(1).
                             decrypt(licenseIdDecoded));
     
 
@@ -294,7 +294,7 @@ decodedByteArray= DatabaseEncoder.decode(iData!.readUTF());
     
 licenseServerDecoded= decodedByteArray.decodeToString();
     
-initInfo!.setServer(WeakCrypt(3).
+initInfo!.setServer(new WeakCrypt(3).
                             decrypt(licenseServerDecoded), index);
     
 logUtil!.put(NEXT_FILE +initInfo!.getServer(index), this, METHOD_NAME);
@@ -314,7 +314,7 @@ logUtil!.put(NEXT_FILE +initInfo!.getServer(index), this, METHOD_NAME);
                             
 
 
-                            throw Error("Could Not Load License InitInfo: " +INITFILENAME)
+                            throw new Error("Could Not Load License InitInfo: " +INITFILENAME)
 
                         }
                             
@@ -337,7 +337,7 @@ logUtil!.put("LicenseInitInfo Read Retry: " +INITFILENAME, this, "readAgain()", 
 
 
 
-                            throw Error("LicenseInitInfo Read Error: " +INITFILENAME)
+                            throw new Error("LicenseInitInfo Read Error: " +INITFILENAME)
 }
 
 }

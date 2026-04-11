@@ -143,7 +143,7 @@ formNode!.appendChild(streetAddress!.toXmlNode(document));
     public addDomNodeInterfaces(){
 this.addDomNodeInterface(this as DomNodeInterface);
     
-this.addDomNodeInterface(StatesView() as DomNodeInterface);
+this.addDomNodeInterface(new StatesView() as DomNodeInterface);
     
 }
 

@@ -79,7 +79,7 @@ hashMap!.put(UserEmailEventConfigurationData.NAME, name);
     
 hashMap!.put(UserEmailEventConfigurationData.LISTENER_CLASSPATH, eventListenerClassPath);
     
-this.setUserEmailEventConfigurationInterface(UserEmailEventConfiguration(hashMap) as UserEmailEventConfigurationInterface);
+this.setUserEmailEventConfigurationInterface(new UserEmailEventConfiguration(hashMap) as UserEmailEventConfigurationInterface);
     
 }
 

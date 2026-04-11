@@ -77,7 +77,7 @@ var type = type
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -85,7 +85,7 @@ var type = type
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -93,7 +93,7 @@ var type = type
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -102,7 +102,7 @@ var cellType = cellType
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 

@@ -58,7 +58,7 @@ export class CommandCurrentSelectionFormFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return CommandCurrentSelectionForm(title, items, rectangle, formType, border, moveForSmallScreen, backgroundBasicColor, foregroundBasicColor);
+                        return new CommandCurrentSelectionForm(title, items, rectangle, formType, border, moveForSmallScreen, backgroundBasicColor, foregroundBasicColor);
     
 
                                     }

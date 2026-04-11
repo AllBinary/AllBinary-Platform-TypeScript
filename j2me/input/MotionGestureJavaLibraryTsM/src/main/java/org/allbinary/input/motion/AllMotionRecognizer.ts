@@ -63,9 +63,9 @@ public constructor (){
             super();
             this.id= index++;
     
-this.motionGestureRecognizer= MotionGestureRecognizer(id);
+this.motionGestureRecognizer= new MotionGestureRecognizer(id);
     
-this.touchButtonRecognizer= TouchButtonRecognizer();
+this.touchButtonRecognizer= new TouchButtonRecognizer();
     
 }
 

@@ -120,11 +120,11 @@ public constructor (canvasNode: Node){
 
             super();
             var canvasNode = canvasNode
-this.grid= Grid();
+this.grid= new Grid();
     
 this.grid.grid= PointFactory.getInstance()!.getInstance(0, 0);
     
-this.dimension= IntegerDimension(0, 0);
+this.dimension= new IntegerDimension(0, 0);
     
 
     var name: string = canvasNode!.getNodeName()!;
@@ -136,7 +136,7 @@ this.dimension= IntegerDimension(0, 0);
                         if(name.compareTo(FRAME) == 0)
                         
                                     {
-                                    this.graphicItemHashMap= HashMap<any, any>();
+                                    this.graphicItemHashMap= new HashMap<any, any>();
     
 
     var angleNode: Node = DomHelper.getInstance()!.searchNodeList(this.ROTATE, canvasNode!.getChildNodes())!;
@@ -151,7 +151,7 @@ this.dimension= IntegerDimension(0, 0);
 ;
     
 
-    var angle: number = Double(angleTextNode!.getNodeValue()).
+    var angle: number = new Double(angleTextNode!.getNodeValue()).
                             doubleValue()!;
         
         
@@ -178,7 +178,7 @@ this.setAngle(angle);
 ;
     
 
-    var x: number = Integer(xTextNode!.getNodeValue()).
+    var x: number = new Integer(xTextNode!.getNodeValue()).
                             toInt()!;
         
         
@@ -197,7 +197,7 @@ this.setAngle(angle);
 ;
     
 
-    var y: number = Integer(yTextNode!.getNodeValue()).
+    var y: number = new Integer(yTextNode!.getNodeValue()).
                             toInt()!;
         
         
@@ -217,7 +217,7 @@ this.setWorkArea(x, y);
         
 ;
     
-this.grid.setZoom(Integer(zoomTextNode!.getNodeValue()).
+this.grid.setZoom(new Integer(zoomTextNode!.getNodeValue()).
                             toInt());
     
 
@@ -245,7 +245,7 @@ this.grid.setZoom(Integer(zoomTextNode!.getNodeValue()).
 ;
     
 
-    var gridX: number = Integer(gridXTextNode!.getNodeValue()).
+    var gridX: number = new Integer(gridXTextNode!.getNodeValue()).
                             toInt()!;
         
         
@@ -264,7 +264,7 @@ this.grid.setZoom(Integer(zoomTextNode!.getNodeValue()).
 ;
     
 
-    var gridY: number = Integer(gridYTextNode!.getNodeValue()).
+    var gridY: number = new Integer(gridYTextNode!.getNodeValue()).
                             toInt()!;
         
         
@@ -326,7 +326,7 @@ this.grid.isGridPossible= .
                             
 
 
-                            throw Error("Frame Element Not Found but Found: " +name)
+                            throw new Error("Frame Element Not Found but Found: " +name)
 
                         }
                             
@@ -342,7 +342,7 @@ this.graphicItemHashMap= canvasJPanel!.getGraphicItemHashMap();
     
 this.dimension= canvasJPanel!.getCanvasDimension();
     
-this.grid= Grid(canvasJPanel!.getGrid());
+this.grid= new Grid(canvasJPanel!.getGrid());
     
 this.angle= canvasJPanel!.getAngle();
     
@@ -381,7 +381,7 @@ this.angle= angle;
     public setWorkArea(x: number, y: number){
 var x = x
 var y = y
-this.setDimension(IntegerDimension(x, y));
+this.setDimension(new IntegerDimension(x, y));
     
 }
 
@@ -488,7 +488,7 @@ pointNode!.appendChild(yNode);
 ;
     
 
-    var angleTextNode: Node = document.createTextNode(Double(this.getAngle()).
+    var angleTextNode: Node = document.createTextNode(new Double(this.getAngle()).
                             toString());
 
                          as Node;
@@ -515,7 +515,7 @@ angleNode!.appendChild(angleTextNode);
 ;
     
 
-    var zoomTextNode: Node = document.createTextNode(Integer(this.getGrid()!.getZoom()).
+    var zoomTextNode: Node = document.createTextNode(new Integer(this.getGrid()!.getZoom()).
                             toString());
 
                          as Node;

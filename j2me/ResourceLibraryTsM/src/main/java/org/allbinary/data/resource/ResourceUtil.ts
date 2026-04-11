@@ -68,7 +68,7 @@ private constructor (){
 
     public setClassLoader(classLoader: ClassLoader){
     //var classLoader = classLoader
-logUtil!.put(StringMaker().
+logUtil!.put(new StringMaker().
                             append("Resource Loader: ")!.append(classLoader!.constructor.name.toString()!)!.toString(), this, "setClassLoader");
     
 ResourceUtil.classLoader= classLoader;
@@ -103,7 +103,7 @@ ResourceUtil.classLoader= classLoader;
                                     
 
 
-                            throw Error(StringMaker().
+                            throw new Error(new StringMaker().
                             append("Unable to obtain: ")!.append(resource)!.toString())
 
                                     }

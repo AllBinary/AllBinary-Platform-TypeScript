@@ -110,7 +110,7 @@ var hardPoint = hardPoint
                         if(list == this.basicArrayListUtil!.getImmutableInstance())
                         
                                     {
-                                    list= BasicArrayList();
+                                    list= new BasicArrayList();
     
 
                                     }

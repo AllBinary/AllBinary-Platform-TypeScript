@@ -66,7 +66,7 @@ public constructor (name: string, type: number, cost: number){
                                 )
                         
                                     {
-                                    RaceTrackGeographicMapCellType(name, type, cost);
+                                    new RaceTrackGeographicMapCellType(name, type, cost);
     
 
                                     }
@@ -120,7 +120,7 @@ type= types[index]!;
                                 )
                         
                                     {
-                                    RaceTrackGeographicMapCellType(name, type, cost);
+                                    new RaceTrackGeographicMapCellType(name, type, cost);
     
 
                                     }
@@ -187,7 +187,7 @@ type= typeAsInteger!.toInt();
                                 )
                         
                                     {
-                                    RaceTrackGeographicMapCellType(name, type, cost);
+                                    new RaceTrackGeographicMapCellType(name, type, cost);
     
 
                                     }

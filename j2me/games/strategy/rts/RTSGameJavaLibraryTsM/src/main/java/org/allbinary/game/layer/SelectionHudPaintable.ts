@@ -96,7 +96,7 @@ protected constructor (){
             super();
             this.update();
     
-this.primitiveLongUtil= PrimitiveLongUtil(10000);
+this.primitiveLongUtil= new PrimitiveLongUtil(10000);
     
 }
 

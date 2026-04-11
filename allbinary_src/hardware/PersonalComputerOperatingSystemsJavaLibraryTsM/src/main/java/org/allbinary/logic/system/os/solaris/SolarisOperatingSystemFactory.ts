@@ -94,7 +94,7 @@ private constructor (){
                         if(osName!.compareTo(operatingSystems!.SOLARIS) == 0)
                         
                                     {
-                                    operatingSystemInterface= SolarisOS();
+                                    operatingSystemInterface= new SolarisOS();
     
 
                                     }
@@ -104,7 +104,7 @@ private constructor (){
                         if(operatingSystems!.isUnknownSpecificOSAllowed())
                         
                                     {
-                                    operatingSystemInterface= SolarisOS();
+                                    operatingSystemInterface= new SolarisOS();
     
 
                                     }
@@ -113,7 +113,7 @@ private constructor (){
                             
 
 
-                            throw Error("Specific Solaris OS Not Supported: " +osName)
+                            throw new Error("Specific Solaris OS Not Supported: " +osName)
 
                         }
                             

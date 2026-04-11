@@ -60,7 +60,7 @@ index < size; index++)
         
 ;
     
-PreLogUtil.put(StringMaker().
+PreLogUtil.put(new StringMaker().
                             append("pathList.add(cellPositionFactory.getInstance")!.append(anyType!.toString())!.append(");")!.toString(), this, "printPath");
     
 }
@@ -86,7 +86,7 @@ var list = list
         
 index < size; index++)
         {
-System.out.println(StringMaker().
+System.out.println(new StringMaker().
                             append(" Path ")!.appendint(index)!.append(CommonLabels.getInstance()!.COLON_SEP)!.toString());
     
 this.printPath(list.get(index);

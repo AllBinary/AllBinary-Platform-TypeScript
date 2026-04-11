@@ -131,7 +131,7 @@ public constructor (key: string, value: string){
             super();
                 //var key = key
     //var value = value
-hashMap= HashMap<any, any>();
+hashMap= new HashMap<any, any>();
     
 this.hashMap!.put(
                                                 [
@@ -161,7 +161,7 @@ public constructor (keys: string[], values: string[]){
             super();
                 //var keys = keys
     //var values = values
-hashMap= HashMap<any, any>();
+hashMap= new HashMap<any, any>();
     
 this.hashMap!.put(keys, values);
     

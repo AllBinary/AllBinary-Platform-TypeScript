@@ -43,7 +43,7 @@ export class OrderItemsEntityFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return org.allbinary.data.tables.user.commerce.inventory.order.OrderItemsEntity();
+                        return new org.allbinary.data.tables.user.commerce.inventory.order.OrderItemsEntity();
     
 
                 //: 

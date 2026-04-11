@@ -130,7 +130,7 @@ var product = product
         
 ;
     
-viewDocumentInterface!.getBaseNode()!.appendChild(BasicItemView(itemInterface, Vector()).
+viewDocumentInterface!.getBaseNode()!.appendChild(new BasicItemView(itemInterface, new Vector()).
                             toXmlNode(viewDocumentInterface!.getDoc()));
     
 
@@ -140,7 +140,7 @@ viewDocumentInterface!.getBaseNode()!.appendChild(BasicItemView(itemInterface, V
 ;
     
 
-    var outputStr: string = StoreTransformer(abeClientInformation, TransformInfoHttpSearch(searchRequest) as TransformInfoInterface).
+    var outputStr: string = new StoreTransformer(abeClientInformation, new TransformInfoHttpSearch(searchRequest) as TransformInfoInterface).
                             translate(success)!;
         
         
@@ -181,7 +181,7 @@ viewDocumentInterface!.getBaseNode()!.appendChild(BasicItemView(itemInterface, V
 
 
 
-                            throw Error("Failed to getProduct")
+                            throw new Error("Failed to getProduct")
 }
 
 }

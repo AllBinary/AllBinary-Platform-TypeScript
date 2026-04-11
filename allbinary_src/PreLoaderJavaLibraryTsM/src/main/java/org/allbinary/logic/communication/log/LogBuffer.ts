@@ -38,7 +38,7 @@ export class LogBuffer
 public constructor (){
 
             super();
-            this.logEntryVector= Vector();
+            this.logEntryVector= new Vector();
     
 }
 

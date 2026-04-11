@@ -132,7 +132,7 @@ index < size; index++)
 
 
 
-                            throw Error(StringMaker().
+                            throw new Error(new StringMaker().
                             append("Not available for current feature selection or Resource: ")!.append(resource)!.toString())
 }
 
@@ -170,7 +170,7 @@ index < size; index++)
         
 ;
     
-newList!.add(RelativeLayerRelationship(layer, PointFactory.getInstance()!.getInstance(relativeRelationship!.getX(), relativeRelationship!.getY()), BasicArrayListUtil.getInstance()!.getImmutableInstance()));
+newList!.add(new RelativeLayerRelationship(layer, PointFactory.getInstance()!.getInstance(relativeRelationship!.getX(), relativeRelationship!.getY()), BasicArrayListUtil.getInstance()!.getImmutableInstance()));
     
 }
 

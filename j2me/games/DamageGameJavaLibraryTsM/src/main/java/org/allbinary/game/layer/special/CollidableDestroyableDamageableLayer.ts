@@ -218,7 +218,7 @@ super.paint(graphics);
 
 
 
-                            throw Error(commonStrings!.NOT_IMPLEMENTED)
+                            throw new Error(commonStrings!.NOT_IMPLEMENTED)
 }
 
 
@@ -229,7 +229,7 @@ super.paint(graphics);
 
 
 
-                            throw Error(commonStrings!.NOT_IMPLEMENTED)
+                            throw new Error(commonStrings!.NOT_IMPLEMENTED)
 }
 
 
@@ -239,7 +239,7 @@ super.paint(graphics);
 
 
 
-                            throw Error(commonStrings!.NOT_IMPLEMENTED)
+                            throw new Error(commonStrings!.NOT_IMPLEMENTED)
 }
 
 
@@ -275,7 +275,7 @@ this.allBinaryGameLayerManagerP= allBinaryGameLayerManager;
                                     
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 
                                     }
                                 

@@ -118,7 +118,7 @@ logUtil!.put(commonString!.START, THIS, commonString!.INIT);
     
 ProgressCanvasFactory.getInstance()!.addPortion(50, "Media Manager");
     
-Sounds(soundsFactoryInterface).
+new Sounds(soundsFactoryInterface).
                             init();
     
 }
@@ -128,10 +128,10 @@ Sounds(soundsFactoryInterface).
             
     public static shutdown(soundsFactoryInterface: SoundsFactoryInterface){
     //var soundsFactoryInterface = soundsFactoryInterface
-Sounds(soundsFactoryInterface).
+new Sounds(soundsFactoryInterface).
                             stopAll();
     
-Sounds(soundsFactoryInterface).
+new Sounds(soundsFactoryInterface).
                             closeAll();
     
 System.gc();
@@ -155,7 +155,7 @@ System.gc();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return createPlayer(ByteArrayInputStream(NullUtil.getInstance()!.NULL_BYTE_ARRAY), AudioContentTypeDataFactory.getInstance()!.MIME_AUDIO_TONE.getName());
+                        return createPlayer(new ByteArrayInputStream(NullUtil.getInstance()!.NULL_BYTE_ARRAY), AudioContentTypeDataFactory.getInstance()!.MIME_AUDIO_TONE.getName());
 
                         ;
     
@@ -184,7 +184,7 @@ System.gc();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return PCClipWavPlayer(bufferedInputStream);
+                        return new PCClipWavPlayer(bufferedInputStream);
     
 
                 //: 
@@ -236,7 +236,7 @@ logUtil!.put(commonString!.EXCEPTION, THIS, CREATE_PLAYER, e);
 
 
 
-                            throw MediaException("No Impl")
+                            throw new MediaException("No Impl")
 }
 
 
@@ -250,7 +250,7 @@ logUtil!.put(commonString!.EXCEPTION, THIS, CREATE_PLAYER, e);
 
 
 
-                            throw MediaException("No Impl")
+                            throw new MediaException("No Impl")
 }
 
 

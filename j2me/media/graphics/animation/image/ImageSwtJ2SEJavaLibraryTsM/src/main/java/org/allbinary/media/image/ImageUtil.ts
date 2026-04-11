@@ -133,7 +133,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return org.eclipse.swt.graphics.Image(display, width, height);
+                        return new org.eclipse.swt.graphics.Image(display, width, height);
     
 }
 
@@ -421,7 +421,7 @@ ratioY= heightRatio;
 
                                     }
                                 
-logUtil!.put(StringMaker().
+logUtil!.put(new StringMaker().
                             appendfloat(width)!.append(this.commonSeps!.FORWARD_SLASH)!.appendfloat(height)!.append(this.commonSeps!.COLON)!.appendint(newWidth)!.append(this.commonSeps!.FORWARD_SLASH)!.appendint(newHeight)!.append(this.commonSeps!.COLON)!.appendfloat(widthRatio)!.append(this.commonSeps!.FORWARD_SLASH)!.appendfloat(heightRatio)!.toString(), this, CREATE_BUFFERED_IMAGE);
     
 
@@ -444,7 +444,7 @@ logUtil!.put(StringMaker().
     
 dy= (newHeight -height) /2;
     
-logUtil!.put(StringMaker().
+logUtil!.put(new StringMaker().
                             append("Translate dx: ")!.appendfloat(dx)!.append(" dy: ")!.appendfloat(dy)!.toString(), this, CREATE_BUFFERED_IMAGE);
     
 
@@ -504,7 +504,7 @@ gc.dispose();
         
 ;
     
-imageCanvas!.addPaintListener(object: PaintListener()
+imageCanvas!.addPaintListener(new object: PaintListener()
                                 {
                                 
     public paintControl(event: PaintEvent){

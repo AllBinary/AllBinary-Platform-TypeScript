@@ -133,7 +133,7 @@ index >= 0; index--)
 
 
 
-                            throw Error("No Such Command")
+                            throw new Error("No Such Command")
 }
 
 

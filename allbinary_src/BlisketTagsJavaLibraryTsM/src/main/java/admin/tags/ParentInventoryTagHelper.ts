@@ -58,7 +58,7 @@ var parentTag = parentTag
                                     
 
 
-                            throw Error("Must have parent tag.")
+                            throw new Error("Must have parent tag.")
 
                                     }
                                 
@@ -85,7 +85,7 @@ stringBuffer!.append(parentTag!.constructor.name.toString()!);
 
 
 
-                            throw Error(stringBuffer!.toString())
+                            throw new Error(stringBuffer!.toString())
 
                                     }
                                 

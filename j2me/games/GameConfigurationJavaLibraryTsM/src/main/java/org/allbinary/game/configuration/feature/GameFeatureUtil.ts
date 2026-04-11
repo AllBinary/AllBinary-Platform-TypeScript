@@ -451,7 +451,7 @@ var itemLabel = itemLabel
             
     updateExclusive(selectedChoiceLabel: string){
     //var selectedChoiceLabel = selectedChoiceLabel
-logUtil!.put(StringMaker().
+logUtil!.put(new StringMaker().
                             append(CommonLabels.getInstance()!.ITEM_LABEL)!.append(selectedChoiceLabel)!.toString(), this, "updateExclusive");
     
 

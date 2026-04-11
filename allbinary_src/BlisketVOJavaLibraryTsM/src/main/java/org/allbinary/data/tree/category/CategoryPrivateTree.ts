@@ -95,7 +95,7 @@ var categoryInterface = categoryInterface
                                     }
                                 
 
-    var document: Document = CategoryComponent(categoryInterface).
+    var document: Document = new CategoryComponent(categoryInterface).
                             toXmlDoc()!;
         
         

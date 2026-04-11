@@ -267,7 +267,7 @@ index >= 0; index--)
                         if(groupSize != 0)
                         
                                     {
-                                    logUtil!.put(StringMaker().
+                                    logUtil!.put(new StringMaker().
                             append("Group Size: ")!.appendint(groupSize)!.toString(), this, "areAllOtherGroupsEmpty");
     
 
@@ -438,7 +438,7 @@ var total = total
 
         while(this.list.size() <= total +1)
         {
-this.list.add(BasicArrayList());
+this.list.add(new BasicArrayList());
     
 }
 
@@ -505,7 +505,7 @@ groupList= this.list.objectArray[id]! as BasicArrayList;
                                 )
                         
                                     {
-                                    logUtil!.put(StringMaker().
+                                    logUtil!.put(new StringMaker().
                             append("id: ")!.appendint(id)!.toString(), this, "onCreateLayerManagerEvent");
     
 

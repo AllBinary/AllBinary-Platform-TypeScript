@@ -99,7 +99,7 @@ export class MiniMapLayer extends AllBinaryLayer
     private animationInterface: CircleFilledAnimation
 public constructor (geographicMapInterface: BasicGeographicMap, viewPosition: ViewPosition)                        
 
-                            : super(Rectangle(PointFactory.getInstance()!.getInstance(0, viewPosition!.getY()), geographicMapInterface!.getAllBinaryTiledLayer()!.getWidth(), geographicMapInterface!.getAllBinaryTiledLayer()!.getHeight()), viewPosition){
+                            : super(new Rectangle(PointFactory.getInstance()!.getInstance(0, viewPosition!.getY()), geographicMapInterface!.getAllBinaryTiledLayer()!.getWidth(), geographicMapInterface!.getAllBinaryTiledLayer()!.getHeight()), viewPosition){
 
             super();
             var geographicMapInterface = geographicMapInterface
@@ -112,13 +112,13 @@ this.allBinaryTiledLayer= geographicMapInterface!.getAllBinaryTiledLayer();
     
 this.geographicMapCellPositionFactory= geographicMapInterface!.getGeographicMapCellPositionFactory();
     
-this.animationInterface= CircleFilledAnimation(this.allBinaryTiledLayer!.getCellWidth(), this.allBinaryTiledLayer!.getCellHeight(), BasicColorFactory.getInstance()!.WHITE);
+this.animationInterface= new CircleFilledAnimation(this.allBinaryTiledLayer!.getCellWidth(), this.allBinaryTiledLayer!.getCellHeight(), BasicColorFactory.getInstance()!.WHITE);
     
-this.list= BasicArrayList();
+this.list= new BasicArrayList();
     
-this.basicColorList= BasicArrayList();
+this.basicColorList= new BasicArrayList();
     
-this.positionList= BasicArrayList();
+this.positionList= new BasicArrayList();
     
 GeographicMapCellPositionEventHandler.getInstance()!.addListener(this);
     

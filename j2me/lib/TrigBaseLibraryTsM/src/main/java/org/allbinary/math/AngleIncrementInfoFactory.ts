@@ -62,7 +62,7 @@ var angleIncrement = angleIncrement
                                 )
                         
                                     {
-                                    angleIncrementInfoCanBeNull= AngleIncrementInfo(angleIncrement);
+                                    angleIncrementInfoCanBeNull= new AngleIncrementInfo(angleIncrement);
     
 angleIncrementInfo[halfAngleIncrement]= angleIncrementInfoCanBeNull;
     

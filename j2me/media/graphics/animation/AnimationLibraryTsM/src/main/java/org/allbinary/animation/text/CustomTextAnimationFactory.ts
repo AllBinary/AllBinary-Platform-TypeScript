@@ -132,7 +132,7 @@ public constructor (text: string, fontSize: number, animationBehaviorFactory: An
                 //var text = text
     //var fontSize = fontSize
     //var animationBehaviorFactory = animationBehaviorFactory
-this.scaleProperties= ScaleProperties();
+this.scaleProperties= new ScaleProperties();
     
 this.text= text;
     
@@ -159,13 +159,13 @@ this.font= Font.getFont(Font.FACE_SYSTEM, Font.STYLE_PLAIN, this.initScaleHeight
                         if(dx != 0 || dy != 0)
                         
                                     {
-                                    customTextAnimation= AdjustCustomTextAnimation(text, this.scaleProperties!.scaleHeight, dx, dy, this.animationBehaviorFactory!.getOrCreateInstance());
+                                    customTextAnimation= new AdjustCustomTextAnimation(text, this.scaleProperties!.scaleHeight, dx, dy, this.animationBehaviorFactory!.getOrCreateInstance());
     
 
                                     }
                                 
                         else {
-                            customTextAnimation= CustomTextAnimation(text, this.scaleProperties!.scaleHeight, this.animationBehaviorFactory!.getOrCreateInstance());
+                            customTextAnimation= new CustomTextAnimation(text, this.scaleProperties!.scaleHeight, this.animationBehaviorFactory!.getOrCreateInstance());
     
 
                         }

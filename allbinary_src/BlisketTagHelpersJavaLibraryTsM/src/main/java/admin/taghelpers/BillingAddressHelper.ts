@@ -90,9 +90,9 @@ this.request= pageContext!.getRequest();
 
                          as HttpServletRequest;
     
-this.weblisketSession= WeblisketSession(hashMap, pageContext);
+this.weblisketSession= new WeblisketSession(hashMap, pageContext);
     
-this.portion= Portion(hashMap);
+this.portion= new Portion(hashMap);
     
 this.getAddressForm();
     
@@ -113,7 +113,7 @@ this.userName= request.getParameter(UserData.USERNAME);
 
                                     }
                                 
-this.streetAddress= StreetAddress(this.request);
+this.streetAddress= new StreetAddress(this.request);
     
 }
 
@@ -122,7 +122,7 @@ this.streetAddress= StreetAddress(this.request);
 
         try {
             
-    var success: string = BillingAddressesEntity(stringUtil!.EMPTY_STRING).
+    var success: string = new BillingAddressesEntity(stringUtil!.EMPTY_STRING).
                             drop()!;
         
         
@@ -177,7 +177,7 @@ this.streetAddress= StreetAddress(this.request);
 
         try {
             
-    var success: string = BillingAddressesEntity(stringUtil!.EMPTY_STRING).
+    var success: string = new BillingAddressesEntity(stringUtil!.EMPTY_STRING).
                             createTable()!;
         
         
@@ -304,7 +304,7 @@ this.streetAddress= StreetAddress(this.request);
 ;
     
 
-    var result: string = AbSqlTableUtil.getInstance()!.backupTable(BillingAddressesEntity(StringUtil.getInstance()!.EMPTY_STRING))!;
+    var result: string = AbSqlTableUtil.getInstance()!.backupTable(new BillingAddressesEntity(StringUtil.getInstance()!.EMPTY_STRING))!;
         
         
 ;
@@ -547,7 +547,7 @@ BillingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!.
         
 ;
     
-BillingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!.getUserName())!.remove(Integer(this.streetAddress!.getId()));
+BillingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!.getUserName())!.remove(new Integer(this.streetAddress!.getId()));
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))

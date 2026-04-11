@@ -161,7 +161,7 @@ this.request= this.getPageContext()!.getRequest();
                 //@Throws(Error::class)
             
     getFormData(){
-this.setRequestHashMap(MultipartRequestParams(request).
+this.setRequestHashMap(new MultipartRequestParams(request).
                             toHashMap());
     
 this.id= this.getRequestHashMap()!.get(BasicItemData.ID);
@@ -184,12 +184,12 @@ this.id= this.getRequestHashMap()!.get(BasicItemData.ID);
                                 )
                         
                                     {
-                                    vector.add(DownloadableItemView(this.downloadableItem));
+                                    vector.add(new DownloadableItemView(this.downloadableItem));
     
 
                                     }
                                 
-this.addDomNodeInterface(BasicItemView(itemInterface, vector));
+this.addDomNodeInterface(new BasicItemView(itemInterface, vector));
     
 }
 
@@ -283,7 +283,7 @@ file.createNewFile();
         
 ;
     
-FileUtil.getInstance()!.write(ByteArrayInputStream(byteArray), file);
+FileUtil.getInstance()!.write(new ByteArrayInputStream(byteArray), file);
     
 }
 

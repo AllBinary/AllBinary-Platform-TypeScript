@@ -44,7 +44,7 @@ export class GameLimitedCommandTextItemArrayFactory
 }
 
 
-    private readonly commandTextItemArrayFactory: CommandTextItemArrayFactory = new CommandTextItemArrayFactory(LimitCommandsVisitor());
+    private readonly commandTextItemArrayFactory: CommandTextItemArrayFactory = new CommandTextItemArrayFactory(new LimitCommandsVisitor());
         
         
 

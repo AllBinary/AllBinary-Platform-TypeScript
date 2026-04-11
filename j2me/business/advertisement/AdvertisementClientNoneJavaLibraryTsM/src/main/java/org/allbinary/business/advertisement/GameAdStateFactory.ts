@@ -32,7 +32,7 @@ export class GameAdStateFactory
 
     private readonly gameAdStateArray: GameAdState[] = 
                                                         [
-                                                            GameAdState(AppNameLicensingAdConfiguration())
+                                                            new GameAdState(new AppNameLicensingAdConfiguration())
                                                         ];
         
         

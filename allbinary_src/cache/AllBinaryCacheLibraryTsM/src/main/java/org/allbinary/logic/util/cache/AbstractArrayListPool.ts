@@ -55,7 +55,7 @@ this.cacheableInterfaceFactoryInterface= cacheableInterfaceFactoryInterface;
 
 
 
-                            throw Error(commonStrings!.NOT_IMPLEMENTED)
+                            throw new Error(commonStrings!.NOT_IMPLEMENTED)
 }
 
 
@@ -66,7 +66,7 @@ var key = key
 
 
 
-                            throw Error(commonStrings!.NOT_IMPLEMENTED)
+                            throw new Error(commonStrings!.NOT_IMPLEMENTED)
 }
 
 

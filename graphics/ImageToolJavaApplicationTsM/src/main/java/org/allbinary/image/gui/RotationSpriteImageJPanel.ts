@@ -98,7 +98,7 @@ this.imageProcessorInput= imageProcessorInput;
 
 
     public process(){
-object: Thread()
+new object: Thread()
                                 {
                                 
     public run(){
@@ -176,12 +176,12 @@ this@RotationSpriteImageJPanel.getParent()!.repaint();
         
 ;
     
-filePath= StringMaker().
+filePath= new StringMaker().
                             append(filePath!.substring(0, extensionIndex))!.append(CommonSeps.getInstance()!.UNDERSCORE)!.append("sprite")!.append(imageStrings!.PNG_EXTENSION)!.toString();
     
 logUtil!.put("New File Path: " +filePath, this, commonStrings!.RUN);
     
-file= File(filePath);
+file= new File(filePath);
     
 
                                     }
@@ -214,7 +214,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
 
 
     initComponents(){
-jPanel1= object: javax.swing.JPanel()
+jPanel1= new object: javax.swing.JPanel()
                                 {
                                 
     public paint(graphics: Graphics){
@@ -238,23 +238,23 @@ var graphics = graphics
                                 }
                             ;
     
-jPanel2= javax.swing.JPanel();
+jPanel2= new javax.swing.JPanel();
     
-totalFramesJComboBox= javax.swing.JComboBox();
+totalFramesJComboBox= new javax.swing.JComboBox();
     
-jLabel1= javax.swing.JLabel();
+jLabel1= new javax.swing.JLabel();
     
-generateJButton= javax.swing.JButton();
+generateJButton= new javax.swing.JButton();
     
-totalAngleJComboBox= javax.swing.JComboBox();
+totalAngleJComboBox= new javax.swing.JComboBox();
     
-jLabel3= javax.swing.JLabel();
+jLabel3= new javax.swing.JLabel();
     
-writeOverOriginalJCheckBox= javax.swing.JCheckBox();
+writeOverOriginalJCheckBox= new javax.swing.JCheckBox();
     
-jPanel3= javax.swing.JPanel();
+jPanel3= new javax.swing.JPanel();
     
-jLabel2= javax.swing.JLabel();
+jLabel2= new javax.swing.JLabel();
     
 
     var jPanel1Layout: org.jdesktop.layout.GroupLayout = new org.jdesktop.layout.GroupLayout(jPanel1);
@@ -268,7 +268,7 @@ jPanel1Layout!.setHorizontalGroup(jPanel1Layout!.createParallelGroup(org.jdeskto
     
 jPanel1Layout!.setVerticalGroup(jPanel1Layout!.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)!.add(0, 227, Short.MAX_VALUE));
     
-totalFramesJComboBox!.setModel(javax.swing.DefaultComboBoxModel(
+totalFramesJComboBox!.setModel(new javax.swing.DefaultComboBoxModel(
                                                 [
                                                     CommonPhoneStrings.getInstance()!.FOUR,CommonPhoneStrings.getInstance()!.NINE,"18","20","36";
         
@@ -279,7 +279,7 @@ jLabel1!.setText("Total Frames:");
     
 generateJButton!.setText("Generate");
     
-generateJButton!.addActionListener(object: java.awt.event.ActionListener()
+generateJButton!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -291,14 +291,14 @@ generateJButtonActionPerformed(evt);
                                 }
                             );
     
-totalAngleJComboBox!.setModel(javax.swing.DefaultComboBoxModel(
+totalAngleJComboBox!.setModel(new javax.swing.DefaultComboBoxModel(
                                                 [
                                                     "360","90";
         
         
                                                 ]));
     
-totalAngleJComboBox!.addActionListener(object: java.awt.event.ActionListener()
+totalAngleJComboBox!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){

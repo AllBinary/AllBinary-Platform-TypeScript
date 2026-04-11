@@ -48,7 +48,7 @@ export class WaypointInfoHudPaintable extends SelectionHudPaintable {
 public constructor (){
 
             super();
-            keyvalueDrawString= KeyValueDrawString("Owner: ", this.textX);
+            keyvalueDrawString= new KeyValueDrawString("Owner: ", this.textX);
     
 }
 

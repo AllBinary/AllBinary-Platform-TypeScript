@@ -147,15 +147,15 @@ public constructor (databaseConnectionInfoInterface: DatabaseConnectionInfoInter
         try {
             logUtil!.put(this.commonStrings!.START, this, this.METHOD_ADD_USERS);
     
-userDbInitInfo= UserDbInitInfo();
+userDbInitInfo= new UserDbInitInfo();
     
-inventoryDbInitInfo= InventoryDbInitInfo();
+inventoryDbInitInfo= new InventoryDbInitInfo();
     
-historyDbInitInfo= HistoryDbInitInfo();
+historyDbInitInfo= new HistoryDbInitInfo();
     
-staticpagesDbInitInfo= StaticPagesDbInitInfo();
+staticpagesDbInitInfo= new StaticPagesDbInitInfo();
     
-logDbInitInfo= LogDbInitInfo();
+logDbInitInfo= new LogDbInitInfo();
     
 
     var CUSTOMERDB: string = userDbInitInfo!.getName()!;
@@ -362,15 +362,15 @@ logUtil!.put(this.commonStrings!.EXCEPTION, this, this.METHOD_ADD_USERS, e);
         try {
             logUtil!.put(this.commonStrings!.START, this, this.METHOD_ADD_DATABASES);
     
-userDbInitInfo= UserDbInitInfo();
+userDbInitInfo= new UserDbInitInfo();
     
-inventoryDbInitInfo= InventoryDbInitInfo();
+inventoryDbInitInfo= new InventoryDbInitInfo();
     
-historyDbInitInfo= HistoryDbInitInfo();
+historyDbInitInfo= new HistoryDbInitInfo();
     
-staticpagesDbInitInfo= StaticPagesDbInitInfo();
+staticpagesDbInitInfo= new StaticPagesDbInitInfo();
     
-logDbInitInfo= LogDbInitInfo();
+logDbInitInfo= new LogDbInitInfo();
     
 
     var CUSTOMERDB: string = userDbInitInfo!.getName()!;
@@ -561,7 +561,7 @@ stringBuffer!.append(PaymentGatewayEntityFactory.getInstance()!.createTable());
     
 stringBuffer!.append(InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!.createTable());
     
-stringBuffer!.append(InitInfoEntity().
+stringBuffer!.append(new InitInfoEntity().
                             createTable());
     
 stringBuffer!.append(LogTableEntityFactory.getInstance()!.getLogTableEntityInstance()!.createTable());

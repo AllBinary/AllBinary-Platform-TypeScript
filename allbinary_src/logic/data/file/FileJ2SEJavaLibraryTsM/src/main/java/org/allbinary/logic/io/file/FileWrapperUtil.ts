@@ -50,7 +50,7 @@ var files = files
         
 index >= 0; index--)
         {
-abFileArray[index]= AbFile(files[index]! as File);
+abFileArray[index]= new AbFile(files[index]! as File);
     
 }
 
@@ -85,7 +85,7 @@ var file = file
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return AbFile(file);
+                        return new AbFile(file);
     
 
                 //: 

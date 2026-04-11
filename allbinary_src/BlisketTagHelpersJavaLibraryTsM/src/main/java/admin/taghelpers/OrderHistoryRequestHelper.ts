@@ -204,7 +204,7 @@ OrderHistoryEntityFactory.getInstance()!.setStatus(id, newStatus);
         
 ;
     
-OrderStatusEmail(this.abeClientInformation, orderHistory).
+new OrderStatusEmail(this.abeClientInformation, orderHistory).
                             process();
     
 

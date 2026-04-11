@@ -124,7 +124,7 @@ this.ext= ext;
                                     
 
 
-                            throw Error(StringMaker().
+                            throw new Error(new StringMaker().
                             append("Unable to obtain: ")!.append(resource)!.toString())
 
                                     }
@@ -159,7 +159,7 @@ this.ext= ext;
 ;
     
 
-    var inputStream: InputStream = new FileInputStream(StringMaker().
+    var inputStream: InputStream = new FileInputStream(new StringMaker().
                             append(path)!.append(resource)!.append(ext)!.toString());
         
         
@@ -177,13 +177,13 @@ this.ext= ext;
         
 ;
     
-StreamUtil.getInstance()!.getByteArray(inputStream, ByteArrayOutputStream(), byteArray);
+StreamUtil.getInstance()!.getByteArray(inputStream, new ByteArrayOutputStream(), byteArray);
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return ByteArrayInputStream(byteArray);
+                        return new ByteArrayInputStream(byteArray);
     
 
                                     }

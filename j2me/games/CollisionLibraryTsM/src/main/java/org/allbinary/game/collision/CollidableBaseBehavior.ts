@@ -111,7 +111,7 @@ var allbinaryCollidableLayer = allbinaryCollidableLayer
 
 
 
-                            throw Error(StringMaker().
+                            throw new Error(new StringMaker().
                             append(commonStrings!.NOT_IMPLEMENTED)!.append(CommonLabels.getInstance()!.COLON_SEP)!.append(this.constructor.name.toString()!)!.toString())
 }
 
@@ -153,7 +153,7 @@ var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterfac
 
 
 
-                            throw Error(commonStrings!.NOT_IMPLEMENTED)
+                            throw new Error(commonStrings!.NOT_IMPLEMENTED)
 }
 
 

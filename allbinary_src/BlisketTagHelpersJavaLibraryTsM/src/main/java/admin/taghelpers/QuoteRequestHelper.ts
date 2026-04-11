@@ -80,9 +80,9 @@ var pageContext = pageContext
         
 ;
     
-this.weblisketSession= WeblisketSession(hashMap, pageContext);
+this.weblisketSession= new WeblisketSession(hashMap, pageContext);
     
-this.quoteRequest= QuoteRequest(this.weblisketSession!.getUserName(), request);
+this.quoteRequest= new QuoteRequest(this.weblisketSession!.getUserName(), request);
     
 
     var storeName: string = hashMap!.get(StoreFrontData.getInstance()!.NAME);

@@ -90,7 +90,7 @@ this.value= httpTransformInfoInterface!.getPageContext()!.getRequest()!.getParam
         
 ;
     
-this.streetAddress= billingAddressesEntity!.get(Integer(value));
+this.streetAddress= billingAddressesEntity!.get(new Integer(value));
     
 
                         if(this.streetAddress == 

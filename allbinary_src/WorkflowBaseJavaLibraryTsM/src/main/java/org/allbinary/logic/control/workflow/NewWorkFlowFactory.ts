@@ -120,7 +120,7 @@ params[1]= pageContext as Object;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return WorkFlowWrapper(anyType) as WorkFlowInterface;
+                        return new WorkFlowWrapper(anyType) as WorkFlowInterface;
     
 
                 //: 
@@ -205,7 +205,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(HashMap)", e);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return WorkFlowWrapper(anyType) as WorkFlowInterface;
+                        return new WorkFlowWrapper(anyType) as WorkFlowInterface;
     
 
                                     }

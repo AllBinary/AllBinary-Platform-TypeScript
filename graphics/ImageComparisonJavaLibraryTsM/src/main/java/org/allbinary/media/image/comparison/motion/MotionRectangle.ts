@@ -43,7 +43,7 @@ public constructor (rectangle: Rectangle){
             var rectangle = rectangle
 this.setRectangle(rectangle);
     
-this.setPixelDeltaVector(Vector());
+this.setPixelDeltaVector(new Vector());
     
 }
 

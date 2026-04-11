@@ -39,7 +39,7 @@ export class OpenGLESGL11ExtImageFactory extends OpenGLImageFactory {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return OpenGLESGL11ExtImage(image, bitmapFactory, textureFactory);
+                        return new OpenGLESGL11ExtImage(image, bitmapFactory, textureFactory);
     
 }
 

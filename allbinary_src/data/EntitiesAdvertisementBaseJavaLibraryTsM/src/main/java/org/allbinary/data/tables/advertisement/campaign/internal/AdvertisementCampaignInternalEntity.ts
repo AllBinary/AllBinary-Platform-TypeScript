@@ -77,7 +77,7 @@ export class AdvertisementCampaignInternalEntity extends AbSqlBean
         
 public constructor ()                        
 
-                            : super(UserDbInitInfo()){
+                            : super(new UserDbInitInfo()){
 
             super();
             
@@ -174,7 +174,7 @@ index < size; index++)
                                 )
                         
                                     {
-                                    vector.add(AdvertisementCampaign(hashMap) as AdvertisementCampaignInterface);
+                                    vector.add(new AdvertisementCampaign(hashMap) as AdvertisementCampaignInterface);
     
 
                                     }
@@ -185,7 +185,7 @@ index < size; index++)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return AdvertisementCampaigns(vector) as AdvertisementCampaignsInterface;
+                        return new AdvertisementCampaigns(vector) as AdvertisementCampaignsInterface;
     
 }
 
@@ -219,7 +219,7 @@ keysAndValues!.put(AdvertisementCampaignData.getInstance()!.NAME, name);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return AdvertisementCampaign(hashMap) as AdvertisementCampaignInterface;
+                        return new AdvertisementCampaign(hashMap) as AdvertisementCampaignInterface;
     
 
                                     }

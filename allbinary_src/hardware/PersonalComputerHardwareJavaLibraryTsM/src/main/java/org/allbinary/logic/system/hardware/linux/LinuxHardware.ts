@@ -181,7 +181,7 @@ public constructor (){
                                     
 
 
-                            throw Error("Not Enough Data For A Valid License On Linux")
+                            throw new Error("Not Enough Data For A Valid License On Linux")
 
                                     }
                                 
@@ -261,29 +261,29 @@ var lineNumberReader = lineNumberReader
 var filePath = filePath
 
         try {
-            componentInterfaceVector= Vector();
+            componentInterfaceVector= new Vector();
     
-videoInterfaceVector= Vector();
+videoInterfaceVector= new Vector();
     
-hardDriveControllerInterfaceVector= Vector();
+hardDriveControllerInterfaceVector= new Vector();
     
-cpuInterfaceVector= Vector();
+cpuInterfaceVector= new Vector();
     
-usbInterfaceVector= Vector();
+usbInterfaceVector= new Vector();
     
-ethernetInterfaceVector= Vector();
+ethernetInterfaceVector= new Vector();
     
-multimediaInterfaceVector= Vector();
+multimediaInterfaceVector= new Vector();
     
-fireWireInterfaceVector= Vector();
+fireWireInterfaceVector= new Vector();
     
-bridgeInterfaceVector= Vector();
+bridgeInterfaceVector= new Vector();
     
-hardDriveInterfaceVector= Vector();
+hardDriveInterfaceVector= new Vector();
     
-macInterfaceVector= Vector();
+macInterfaceVector= new Vector();
     
-monitorInterfaceVector= Vector();
+monitorInterfaceVector= new Vector();
     
 
     var pciFile: FileReader = new FileReader(filePath);
@@ -291,7 +291,7 @@ monitorInterfaceVector= Vector();
         
 ;
     
-lineNumberReader= LineNumberReader(pciFile);
+lineNumberReader= new LineNumberReader(pciFile);
     
 
                         if(lineNumberReader == 
@@ -300,7 +300,7 @@ lineNumberReader= LineNumberReader(pciFile);
                         
                                     {
                                     
-    var fileVector: BasicArrayList = SubDirectory.getInstance()!.search(filePath, AbFile(FilePathData.getInstance()!.SEPARATOR))!;
+    var fileVector: BasicArrayList = SubDirectory.getInstance()!.search(filePath, new AbFile(FilePathData.getInstance()!.SEPARATOR))!;
         
         
 ;
@@ -319,7 +319,7 @@ lineNumberReader= LineNumberReader(pciFile);
         
 ;
     
-lineNumberReader= LineNumberReader(FileReader(file.getPath()));
+lineNumberReader= new LineNumberReader(new FileReader(file.getPath()));
     
 
                                     }
@@ -333,7 +333,7 @@ lineNumberReader= LineNumberReader(FileReader(file.getPath()));
                                     
 
 
-                            throw Error("No Linux File Data")
+                            throw new Error("No Linux File Data")
 
                                     }
                                 

@@ -40,7 +40,7 @@ var max = max
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return CircularIndexUtil(max);
+                        return new CircularIndexUtil(max);
     
 }
 
@@ -52,7 +52,7 @@ var max = max
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return CircularIndexUtil(index, max);
+                        return new CircularIndexUtil(index, max);
     
 }
 
@@ -194,7 +194,7 @@ this.index= 0;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return StringMaker().
+                        return new StringMaker().
                             append(CommonLabels.getInstance()!.INDEX_LABEL)!.appendint(this.index)!.append("lastIndex: ")!.appendint(this.lastIndex)!.append("size: ")!.appendint(this.size)!.toString();
 
                         ;

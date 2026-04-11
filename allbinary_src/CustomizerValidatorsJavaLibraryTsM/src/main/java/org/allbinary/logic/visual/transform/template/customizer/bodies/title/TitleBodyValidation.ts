@@ -104,7 +104,7 @@ public constructor (){
     
 this.body= stringUtil!.EMPTY_STRING;
     
-this.titleValidation= TitleNotRequiredValidation();
+this.titleValidation= new TitleNotRequiredValidation();
     
 }
 
@@ -157,7 +157,7 @@ this.body= DomNodeHelper.getTextNodeValue(aBodyValueNode);
         
 ;
     
-this.titleValidation= TitleNotRequiredValidation(titleNode);
+this.titleValidation= new TitleNotRequiredValidation(titleNode);
     
 
                         if(index > 1)
@@ -205,7 +205,7 @@ this.body= hashMap!.get(BodyData.getInstance()!.NAME);
 
                          as String;
     
-this.titleValidation= TitleNotRequiredValidation(hashMap);
+this.titleValidation= new TitleNotRequiredValidation(hashMap);
     
 }
 

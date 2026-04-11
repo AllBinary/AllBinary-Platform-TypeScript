@@ -103,7 +103,7 @@ this.dy= dy;
     
 this.time= time;
     
-this.END_EVENT= AllBinaryEventObject(this);
+this.END_EVENT= new AllBinaryEventObject(this);
     
 
     var timePerFrame: number = this.time /this.getSize();
@@ -111,7 +111,7 @@ this.END_EVENT= AllBinaryEventObject(this);
         
 ;
     
-this.timeDelayHelper= TimeDelayHelper(timePerFrame);
+this.timeDelayHelper= new TimeDelayHelper(timePerFrame);
     
 this.player= player;
     

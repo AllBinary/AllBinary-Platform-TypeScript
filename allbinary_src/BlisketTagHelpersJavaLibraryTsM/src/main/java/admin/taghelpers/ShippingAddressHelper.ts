@@ -90,9 +90,9 @@ this.request= pageContext!.getRequest();
 
                          as HttpServletRequest;
     
-this.weblisketSession= WeblisketSession(hashMap, pageContext);
+this.weblisketSession= new WeblisketSession(hashMap, pageContext);
     
-this.portion= Portion(hashMap);
+this.portion= new Portion(hashMap);
     
 this.getAddressForm();
     
@@ -113,7 +113,7 @@ this.userName= request.getParameter(UserData.USERNAME);
 
                                     }
                                 
-this.streetAddress= StreetAddress(request);
+this.streetAddress= new StreetAddress(request);
     
 }
 
@@ -122,7 +122,7 @@ this.streetAddress= StreetAddress(request);
 
         try {
             
-    var success: string = ShippingAddressesEntity(stringUtil!.EMPTY_STRING).
+    var success: string = new ShippingAddressesEntity(stringUtil!.EMPTY_STRING).
                             drop()!;
         
         
@@ -177,7 +177,7 @@ this.streetAddress= StreetAddress(request);
 
         try {
             
-    var success: string = ShippingAddressesEntity(stringUtil!.EMPTY_STRING).
+    var success: string = new ShippingAddressesEntity(stringUtil!.EMPTY_STRING).
                             createTable()!;
         
         
@@ -238,7 +238,7 @@ this.streetAddress= StreetAddress(request);
 ;
     
 
-    var result: string = AbSqlTableUtil.getInstance()!.restoreTable(ShippingAddressesEntity(StringUtil.getInstance()!.EMPTY_STRING), portion)!;
+    var result: string = AbSqlTableUtil.getInstance()!.restoreTable(new ShippingAddressesEntity(StringUtil.getInstance()!.EMPTY_STRING), portion)!;
         
         
 ;
@@ -298,7 +298,7 @@ this.streetAddress= StreetAddress(request);
 ;
     
 
-    var result: string = AbSqlTableUtil.getInstance()!.backupTable(ShippingAddressesEntity(StringUtil.getInstance()!.EMPTY_STRING))!;
+    var result: string = AbSqlTableUtil.getInstance()!.backupTable(new ShippingAddressesEntity(StringUtil.getInstance()!.EMPTY_STRING))!;
         
         
 ;
@@ -535,7 +535,7 @@ ShippingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!
         
 ;
     
-ShippingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!.getUserName())!.remove(Integer(this.streetAddress!.getId()));
+ShippingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!.getUserName())!.remove(new Integer(this.streetAddress!.getId()));
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))

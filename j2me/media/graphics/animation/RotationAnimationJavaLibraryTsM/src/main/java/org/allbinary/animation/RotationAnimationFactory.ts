@@ -70,7 +70,7 @@ this.angleIncrement= angleIncrement;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return NullRotationAnimation(AngleInfo.getInstance(this.angleIncrement), this.totalAngle, AnimationBehavior.getInstance());
+                        return new NullRotationAnimation(AngleInfo.getInstance(this.angleIncrement), this.totalAngle, AnimationBehavior.getInstance());
     
 }
 
@@ -83,7 +83,7 @@ var animationInterface = animationInterface
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return NullRotationAnimation(AngleInfo.getInstance(this.angleIncrement), this.totalAngle, AnimationBehavior.getInstance());
+                        return new NullRotationAnimation(AngleInfo.getInstance(this.angleIncrement), this.totalAngle, AnimationBehavior.getInstance());
     
 }
 

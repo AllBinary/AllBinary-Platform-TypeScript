@@ -166,7 +166,7 @@ var toGeographicMapCellPosition = toGeographicMapCellPosition
                                     
 
 
-                            throw Error(MESSAGE)
+                            throw new Error(MESSAGE)
 
                                     }
                                 
@@ -359,7 +359,7 @@ var toGeographicMapCellPosition = toGeographicMapCellPosition
                                     
 
 
-                            throw Error(MESSAGE)
+                            throw new Error(MESSAGE)
 
                                     }
                                 
@@ -476,7 +476,7 @@ stringMaker!.delete(0, stringMaker!.length());
 
 
 
-                            throw Error(stringMaker!.append("Error: ")!.append(string)!.toString())
+                            throw new Error(stringMaker!.append("Error: ")!.append(string)!.toString())
 }
 
 
@@ -678,7 +678,7 @@ stringBuffer!.append(CellPosition.toString(toGeographicMapCellPosition));
 
 
 
-                            throw Error(stringBuffer!.toString())
+                            throw new Error(stringBuffer!.toString())
 }
 
 

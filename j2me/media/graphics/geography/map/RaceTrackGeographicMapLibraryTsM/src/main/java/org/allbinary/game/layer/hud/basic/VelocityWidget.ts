@@ -89,7 +89,7 @@ this.maxVelocity= powerOfTenVelocity;
     
 this.velocity= 0;
     
-this.primitiveLongUtil= PrimitiveLongUtil(powerOfTenVelocity);
+this.primitiveLongUtil= new PrimitiveLongUtil(powerOfTenVelocity);
     
 
     var myFont: MyFont = MyFont.getInstance()!;

@@ -43,7 +43,7 @@ export class OpenGLImageUtil
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -54,7 +54,7 @@ export class OpenGLImageUtil
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -66,7 +66,7 @@ export class OpenGLImageUtil
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -77,7 +77,7 @@ export class OpenGLImageUtil
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 

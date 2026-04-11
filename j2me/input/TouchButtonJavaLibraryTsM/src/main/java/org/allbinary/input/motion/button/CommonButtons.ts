@@ -113,9 +113,9 @@ commonButtonSize= commonButtonSize shr 1;
 
 STANDARD_BUTTON_SIZE= commonButtonSize;
     
-NORMAL_BUTTON= Rectangle(PointFactory.getInstance()!.ZERO_ZERO, STANDARD_BUTTON_SIZE, STANDARD_BUTTON_SIZE);
+NORMAL_BUTTON= new Rectangle(PointFactory.getInstance()!.ZERO_ZERO, STANDARD_BUTTON_SIZE, STANDARD_BUTTON_SIZE);
     
-LARGE_BUTTON= Rectangle(PointFactory.getInstance()!.ZERO_ZERO, STANDARD_BUTTON_SIZE shl 1, STANDARD_BUTTON_SIZE shl 1);
+LARGE_BUTTON= new Rectangle(PointFactory.getInstance()!.ZERO_ZERO, STANDARD_BUTTON_SIZE shl 1, STANDARD_BUTTON_SIZE shl 1);
     
 }
 

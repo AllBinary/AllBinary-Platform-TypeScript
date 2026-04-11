@@ -45,7 +45,7 @@ this.OBJECT_ARRAY= new Array(size);
         
 index >= 0; index--)
         {
-this.OBJECT_ARRAY[index]= CustomGPoint(0, 0);
+this.OBJECT_ARRAY[index]= new CustomGPoint(0, 0);
     
 }
 

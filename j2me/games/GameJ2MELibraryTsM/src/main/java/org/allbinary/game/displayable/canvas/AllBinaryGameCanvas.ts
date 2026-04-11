@@ -936,9 +936,9 @@ super.processSleep();
                         if(features.isFeature(touchFeatureFactory!.TOUCH_ENABLED))
                         
                                     {
-                                    this.setOpenMenuPaintable(BasicPopupMenuPaintable(popupMenuRectangle, this.gameLayerManager!.getBackgroundBasicColor(), this.gameLayerManager!.getForegroundBasicColor()));
+                                    this.setOpenMenuPaintable(new BasicPopupMenuPaintable(popupMenuRectangle, this.gameLayerManager!.getBackgroundBasicColor(), this.gameLayerManager!.getForegroundBasicColor()));
     
-this.setPopupMenuInputProcessor(PopupMenuInputProcessor(BasicArrayList(),  -1, this, popupMenuRectangle));
+this.setPopupMenuInputProcessor(new PopupMenuInputProcessor(new BasicArrayList(),  -1, this, popupMenuRectangle));
     
 
                                     }
@@ -1023,7 +1023,7 @@ this.setMenuForm(CommandCurrentSelectionFormFactory.getInstance(StringUtil.getIn
                         if(features.isFeature(touchFeatureFactory!.TOUCH_ENABLED))
                         
                                     {
-                                    this.mainMenuInputProcessor= PopupCommandFormInputProcessor(BasicArrayList(),  -1, this, scrollSelectionForm, this.getPopupMenuInputProcessor();
+                                    this.mainMenuInputProcessor= new PopupCommandFormInputProcessor(new BasicArrayList(),  -1, this, scrollSelectionForm, this.getPopupMenuInputProcessor();
 
                          as PopupMenuInputProcessor);
     
@@ -1040,7 +1040,7 @@ this.setMenuInputProcessor(this.getPopupMenuInputProcessor());
                         if(scrollSelectionForm != ScrollSelectionFormNoneFactory.getInstance())
                         
                                     {
-                                    this.setFormPaintable(FormPaintable(scrollSelectionForm));
+                                    this.setFormPaintable(new FormPaintable(scrollSelectionForm));
     
 
                                     }
@@ -1303,7 +1303,7 @@ secondaryPlayerQueue!.clear();
     processorInit(){
 this.setMainStateProcessor(Processor.getInstance());
     
-this.setProcessGameProcessor(GameProcessor(this));
+this.setProcessGameProcessor(new GameProcessor(this));
     
 }
 
@@ -1344,7 +1344,7 @@ logUtil!.put(BUFF_MESSAGE, this, commonStrings!.CONSTRUCTOR);
                             
 
 
-                            throw Error("Buffering is disabled")
+                            throw new Error("Buffering is disabled")
 
                         }
                             
@@ -1362,7 +1362,7 @@ this.setGameInputProcessor(Processor.getInstance());
                                     {
                                     this.isCheating= true;
     
-this.cheatProcessor= CheatGameInputProcessor(this);
+this.cheatProcessor= new CheatGameInputProcessor(this);
     
 this.gameKeyEventHandler!.addListener(this.cheatProcessor);
     
@@ -1377,15 +1377,15 @@ this.cheatProcessor= NoPlayerGameInput.getInstance();
 
                         }
                             
-this.realEndGameProcessor= EndGameProcessor(this);
+this.realEndGameProcessor= new EndGameProcessor(this);
     
 this.setEndGameProcessor(Processor.getInstance());
     
-this.realStartIntermissionProcessor= StartIntermissionProcessor(this);
+this.realStartIntermissionProcessor= new StartIntermissionProcessor(this);
     
 this.startIntermissionProcessor= Processor.getInstance();
     
-this.setEndGameStatePaintable(EndGamePaintable(this));
+this.setEndGameStatePaintable(new EndGamePaintable(this));
     
 this.setEndGamePaintable(NullPaintable.getInstance());
     
@@ -1476,7 +1476,7 @@ GameInitializationUtil.getInstance()!.initGame(abeClientInformation, this, gameI
         
 ;
     
-logUtil!.put(StringMaker().
+logUtil!.put(new StringMaker().
                             append("Sound Changing To: ")!.appendboolean(features.isFeature(gameFeatureFactory!.SOUND))!.toString(), this, "initConfigurable");
     
 this.mediaInit();
@@ -1697,7 +1697,7 @@ this.addCommand(gameCommandsFactory!.QUIT_COMMAND);
                         
                                     {
                                     
-                        if(TouchScreenFactory.getInstance()!.isTouch() && InGameFeatures().
+                        if(TouchScreenFactory.getInstance()!.isTouch() && new InGameFeatures().
                             isAny())
                         
                                     {
@@ -1726,7 +1726,7 @@ var item = item
         
 ;
     
-logUtil!.put(StringMaker().
+logUtil!.put(new StringMaker().
                             append(commonLabels!.ITEM_LABEL)!.append(itemLabel)!.toString(), this, "itemStateChanged");
     
 
@@ -1906,7 +1906,7 @@ this.highScoreSubmitted= highScoreSubmitted;
 
                                     }
                                 
-logUtil!.put(StringMaker().
+logUtil!.put(new StringMaker().
                             append("isHighScoreSubmitted: ")!.appendboolean(highScoreSubmitted)!.toString(), this, "setHighScoreSubmitted");
     
 }
@@ -1926,7 +1926,7 @@ logUtil!.put(StringMaker().
             
     public setGameState(gameState: GameState){
     //var gameState = gameState
-logUtil!.put(StringMaker().
+logUtil!.put(new StringMaker().
                             append(this.gameStrings!.GAME_STATE)!.append(this.stringUtil!.toString(gameState))!.toString(), this, this.gameStrings!.SET_GAME_STATE);
     
 this.gameState= gameState;
@@ -2250,7 +2250,7 @@ this.gameBehavior!.buildGame(this);
 
 
     public buildGame2(){
-PreLogUtil.put(StringMaker().
+PreLogUtil.put(new StringMaker().
                             append(this.gameInputStrings!.ENABLE_PLAYER_GAME_INPUTS)!.appendint(this.localPlayerGameInputList!.size())!.toString(), this, BUILD_GAME);
     
 
@@ -2271,7 +2271,7 @@ playerGameInput= this.localPlayerGameInputList!.get(index);
 
                          as PlayerGameInput;
     
-PreLogUtil.put(StringMaker().
+PreLogUtil.put(new StringMaker().
                             append(this.gameInputStrings!.ENABLE_PLAYER_GAME_INPUT)!.append(playerGameInput!.toString())!.toString(), this, BUILD_GAME);
     
 playerGameInput!.removeNonAIInputGameKeyEvents();
@@ -2349,7 +2349,7 @@ gameInfo!.setCurrentLevel(level);
                 //@Throws(Error::class)
             
     public getLoadStateHashtable(): Hashtable<any, any>{
-logUtil!.put(StringMaker().
+logUtil!.put(new StringMaker().
                             append(commonLabels!.START_LABEL)!.append(this.stringUtil!.toString(this.hashtable))!.toString(), this, "getLoadStateHashtable");
     
 
@@ -2363,7 +2363,7 @@ logUtil!.put(StringMaker().
 
     public setLoadStateHashtable(hashtable: Hashtable<any, any>){
     //var hashtable = hashtable
-logUtil!.put(StringMaker().
+logUtil!.put(new StringMaker().
                             append(commonLabels!.START_LABEL)!.append(this.stringUtil!.toString(hashtable))!.toString(), this, "setLoadStateHashtable");
     
 this.hashtable= hashtable;
@@ -2386,7 +2386,7 @@ this.hashtable= hashtable;
     
 hashtable.put(GameInfo.LEVEL_NAME.toString(), level.toString());
     
-logUtil!.put(StringMaker().
+logUtil!.put(new StringMaker().
                             append("End: ")!.append(this.stringUtil!.toString(hashtable))!.toString(), this, "getCurrentStateHashtable");
     
 
@@ -2932,7 +2932,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, SET_RUNNING, e);
     public end(){
 screenCapture!.endRecording();
     
-baseGameStatistics!.add(StringMaker().
+baseGameStatistics!.add(new StringMaker().
                             append(baseGameStatistics!.toString())!.append(CommonSeps.getInstance()!.NEW_LINE)!.toString());
     
 baseGameStatistics!.init();
@@ -2978,7 +2978,7 @@ var score = score
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return HighScore(0, "NONE", GameInfo(gameInfo!.getGameType(), gameInfo!.getGameMode(), 0, 0), score);
+                        return new HighScore(0, "NONE", new GameInfo(gameInfo!.getGameType(), gameInfo!.getGameMode(), 0, 0), score);
     
 }
 
@@ -3074,7 +3074,7 @@ progressCanvas!.end();
 }
                 
             
-SecondaryThreadPool.getInstance()!.runTask(SaveHighScoreRunnable());
+SecondaryThreadPool.getInstance()!.runTask(new SaveHighScoreRunnable());
     
 
                                     }

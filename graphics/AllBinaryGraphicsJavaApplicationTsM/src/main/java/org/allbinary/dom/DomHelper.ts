@@ -325,7 +325,7 @@ index < numberOfNodes; index++)
 
 
 
-                            throw Error(nodeName +" Node Not Found")
+                            throw new Error(nodeName +" Node Not Found")
 }
 
 
@@ -487,7 +487,7 @@ logUtil!.put("NodeName: " +node.getNodeName(), this, "searchNodeList");
 
 
 
-                            throw Error(nodeName +" Node Not Found in search")
+                            throw new Error(nodeName +" Node Not Found in search")
 }
 
 
@@ -540,7 +540,7 @@ logUtil!.put("NodeName: " +node.getNodeName(), this, "searchNodeList");
 
 
 
-                            throw Error(nodeName +" Node Not Found in search")
+                            throw new Error(nodeName +" Node Not Found in search")
 }
 
 

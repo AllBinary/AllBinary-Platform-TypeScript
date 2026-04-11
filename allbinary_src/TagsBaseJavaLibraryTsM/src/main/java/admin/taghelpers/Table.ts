@@ -38,7 +38,7 @@ export class Table
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -48,7 +48,7 @@ export class Table
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -58,7 +58,7 @@ export class Table
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -68,7 +68,7 @@ export class Table
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -78,7 +78,7 @@ export class Table
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -88,7 +88,7 @@ export class Table
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -98,7 +98,7 @@ export class Table
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 

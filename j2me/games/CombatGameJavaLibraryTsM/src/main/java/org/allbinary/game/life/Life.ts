@@ -59,7 +59,7 @@ this.maxlives= maxlives;
                                     
 
 
-                            throw Error("To Many Lives")
+                            throw new Error("To Many Lives")
 
                                     }
                                 

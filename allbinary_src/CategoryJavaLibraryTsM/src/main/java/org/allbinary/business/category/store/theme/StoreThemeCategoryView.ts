@@ -79,7 +79,7 @@ public constructor (categoryInterface: StoreThemeCategoryInterface)
         
 ;
     
-Arrays.sort(themeValidationArray, ThemeComparator());
+Arrays.sort(themeValidationArray, new ThemeComparator());
     
 
     var size: number = themeValidationArray!.length

@@ -205,7 +205,7 @@ this.transformDocumentInterface= transformDocumentInterface;
 ;
     
 
-    var result: string = TransformInfoCustomUriTransformer(this.abeClientInformation, this.getTransformInfoInterface()).
+    var result: string = new TransformInfoCustomUriTransformer(this.abeClientInformation, this.getTransformInfoInterface()).
                             translate(success)!;
         
         

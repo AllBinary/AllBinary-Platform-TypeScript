@@ -76,7 +76,7 @@ public constructor (basicAnimationInterfaceFactoryInterfaceArray: AnimationInter
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return CompoundIndexedAnimation(animationArray, this.animationBehaviorFactory!.getOrCreateInstance());
+                        return new CompoundIndexedAnimation(animationArray, this.animationBehaviorFactory!.getOrCreateInstance());
     
 }
 

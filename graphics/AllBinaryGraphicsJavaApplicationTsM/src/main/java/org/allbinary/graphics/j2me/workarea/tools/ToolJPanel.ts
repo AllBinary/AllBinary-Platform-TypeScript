@@ -30,49 +30,49 @@ public constructor (){
 
 
     initComponents(){
-lineJButton= javax.swing.JButton();
+lineJButton= new javax.swing.JButton();
     
-rectJButton= javax.swing.JButton();
+rectJButton= new javax.swing.JButton();
     
-arcJButton= javax.swing.JButton();
+arcJButton= new javax.swing.JButton();
     
-stringJButton= javax.swing.JButton();
+stringJButton= new javax.swing.JButton();
     
-charJButton= javax.swing.JButton();
+charJButton= new javax.swing.JButton();
     
-roundRectJButton= javax.swing.JButton();
+roundRectJButton= new javax.swing.JButton();
     
-imageJButton= javax.swing.JButton();
+imageJButton= new javax.swing.JButton();
     
-fillArcJButton= javax.swing.JButton();
+fillArcJButton= new javax.swing.JButton();
     
-fillRectJButton= javax.swing.JButton();
+fillRectJButton= new javax.swing.JButton();
     
-fillRoundRectJButton= javax.swing.JButton();
+fillRoundRectJButton= new javax.swing.JButton();
     
-dottedLineJButton= javax.swing.JButton();
+dottedLineJButton= new javax.swing.JButton();
     
-dottedRectButton= javax.swing.JButton();
+dottedRectButton= new javax.swing.JButton();
     
-dottedArcJButton= javax.swing.JButton();
+dottedArcJButton= new javax.swing.JButton();
     
-dottedFillRectJButton= javax.swing.JButton();
+dottedFillRectJButton= new javax.swing.JButton();
     
-dottedFillArcJButton= javax.swing.JButton();
+dottedFillArcJButton= new javax.swing.JButton();
     
-dottedFillRountRectJButton= javax.swing.JButton();
+dottedFillRountRectJButton= new javax.swing.JButton();
     
-colorJPanel= javax.swing.JPanel();
+colorJPanel= new javax.swing.JPanel();
     
-colorJList= javax.swing.JList();
+colorJList= new javax.swing.JList();
     
-setLayout(java.awt.GridLayout(17, 1));
+setLayout(new java.awt.GridLayout(17, 1));
     
-lineJButton!.setFont(java.awt.Font("Dialog", 0, 10));
+lineJButton!.setFont(new java.awt.Font("Dialog", 0, 10));
     
 lineJButton!.setText(LinesGraphicItem.getStaticName());
     
-lineJButton!.addMouseListener(object: java.awt.event.MouseAdapter()
+lineJButton!.addMouseListener(new object: java.awt.event.MouseAdapter()
                                 {
                                 
     public mouseClicked(evt: java.awt.event.MouseEvent){
@@ -86,11 +86,11 @@ lineJButtonMouseClicked(evt);
     
 add(lineJButton);
     
-rectJButton!.setFont(java.awt.Font("Dialog", 0, 10));
+rectJButton!.setFont(new java.awt.Font("Dialog", 0, 10));
     
 rectJButton!.setText("Rect");
     
-rectJButton!.addMouseListener(object: java.awt.event.MouseAdapter()
+rectJButton!.addMouseListener(new object: java.awt.event.MouseAdapter()
                                 {
                                 
     public mouseClicked(evt: java.awt.event.MouseEvent){
@@ -104,11 +104,11 @@ rectJButtonMouseClicked(evt);
     
 add(rectJButton);
     
-arcJButton!.setFont(java.awt.Font("Dialog", 0, 10));
+arcJButton!.setFont(new java.awt.Font("Dialog", 0, 10));
     
 arcJButton!.setText("Arc");
     
-arcJButton!.addMouseListener(object: java.awt.event.MouseAdapter()
+arcJButton!.addMouseListener(new object: java.awt.event.MouseAdapter()
                                 {
                                 
     public mousePressed(evt: java.awt.event.MouseEvent){
@@ -122,11 +122,11 @@ arcJButtonMousePressed(evt);
     
 add(arcJButton);
     
-stringJButton!.setFont(java.awt.Font("Dialog", 0, 10));
+stringJButton!.setFont(new java.awt.Font("Dialog", 0, 10));
     
 stringJButton!.setText("String");
     
-stringJButton!.addMouseListener(object: java.awt.event.MouseAdapter()
+stringJButton!.addMouseListener(new object: java.awt.event.MouseAdapter()
                                 {
                                 
     public mousePressed(evt: java.awt.event.MouseEvent){
@@ -140,11 +140,11 @@ stringJButtonMousePressed(evt);
     
 add(stringJButton);
     
-charJButton!.setFont(java.awt.Font("Dialog", 0, 10));
+charJButton!.setFont(new java.awt.Font("Dialog", 0, 10));
     
 charJButton!.setText("Char");
     
-charJButton!.addMouseListener(object: java.awt.event.MouseAdapter()
+charJButton!.addMouseListener(new object: java.awt.event.MouseAdapter()
                                 {
                                 
     public mousePressed(evt: java.awt.event.MouseEvent){
@@ -158,11 +158,11 @@ charJButtonMousePressed(evt);
     
 add(charJButton);
     
-roundRectJButton!.setFont(java.awt.Font("Dialog", 0, 10));
+roundRectJButton!.setFont(new java.awt.Font("Dialog", 0, 10));
     
 roundRectJButton!.setText("Round Rect");
     
-roundRectJButton!.addMouseListener(object: java.awt.event.MouseAdapter()
+roundRectJButton!.addMouseListener(new object: java.awt.event.MouseAdapter()
                                 {
                                 
     public mousePressed(evt: java.awt.event.MouseEvent){
@@ -176,11 +176,11 @@ roundRectJButtonMousePressed(evt);
     
 add(roundRectJButton);
     
-imageJButton!.setFont(java.awt.Font("Dialog", 0, 10));
+imageJButton!.setFont(new java.awt.Font("Dialog", 0, 10));
     
 imageJButton!.setText("Image");
     
-imageJButton!.addMouseListener(object: java.awt.event.MouseAdapter()
+imageJButton!.addMouseListener(new object: java.awt.event.MouseAdapter()
                                 {
                                 
     public mousePressed(evt: java.awt.event.MouseEvent){
@@ -194,11 +194,11 @@ imageJButtonMousePressed(evt);
     
 add(imageJButton);
     
-fillArcJButton!.setFont(java.awt.Font("Dialog", 0, 10));
+fillArcJButton!.setFont(new java.awt.Font("Dialog", 0, 10));
     
 fillArcJButton!.setText("Fill Arc");
     
-fillArcJButton!.addMouseListener(object: java.awt.event.MouseAdapter()
+fillArcJButton!.addMouseListener(new object: java.awt.event.MouseAdapter()
                                 {
                                 
     public mousePressed(evt: java.awt.event.MouseEvent){
@@ -212,11 +212,11 @@ fillArcJButtonMousePressed(evt);
     
 add(fillArcJButton);
     
-fillRectJButton!.setFont(java.awt.Font("Dialog", 0, 10));
+fillRectJButton!.setFont(new java.awt.Font("Dialog", 0, 10));
     
 fillRectJButton!.setText("Fill Rect");
     
-fillRectJButton!.addMouseListener(object: java.awt.event.MouseAdapter()
+fillRectJButton!.addMouseListener(new object: java.awt.event.MouseAdapter()
                                 {
                                 
     public mousePressed(evt: java.awt.event.MouseEvent){
@@ -230,11 +230,11 @@ fillRectJButtonMousePressed(evt);
     
 add(fillRectJButton);
     
-fillRoundRectJButton!.setFont(java.awt.Font("Dialog", 0, 10));
+fillRoundRectJButton!.setFont(new java.awt.Font("Dialog", 0, 10));
     
 fillRoundRectJButton!.setText("Fill Rnd Rect");
     
-fillRoundRectJButton!.addMouseListener(object: java.awt.event.MouseAdapter()
+fillRoundRectJButton!.addMouseListener(new object: java.awt.event.MouseAdapter()
                                 {
                                 
     public mousePressed(evt: java.awt.event.MouseEvent){
@@ -248,11 +248,11 @@ fillRoundRectJButtonMousePressed(evt);
     
 add(fillRoundRectJButton);
     
-dottedLineJButton!.setFont(java.awt.Font("Dialog", 0, 10));
+dottedLineJButton!.setFont(new java.awt.Font("Dialog", 0, 10));
     
 dottedLineJButton!.setText("Dot Line");
     
-dottedLineJButton!.addMouseListener(object: java.awt.event.MouseAdapter()
+dottedLineJButton!.addMouseListener(new object: java.awt.event.MouseAdapter()
                                 {
                                 
     public mousePressed(evt: java.awt.event.MouseEvent){
@@ -266,11 +266,11 @@ dottedLineJButtonMousePressed(evt);
     
 add(dottedLineJButton);
     
-dottedRectButton!.setFont(java.awt.Font("Dialog", 0, 10));
+dottedRectButton!.setFont(new java.awt.Font("Dialog", 0, 10));
     
 dottedRectButton!.setText("Dot Rect");
     
-dottedRectButton!.addMouseListener(object: java.awt.event.MouseAdapter()
+dottedRectButton!.addMouseListener(new object: java.awt.event.MouseAdapter()
                                 {
                                 
     public mousePressed(evt: java.awt.event.MouseEvent){
@@ -284,11 +284,11 @@ dottedRectButtonMousePressed(evt);
     
 add(dottedRectButton);
     
-dottedArcJButton!.setFont(java.awt.Font("Dialog", 0, 10));
+dottedArcJButton!.setFont(new java.awt.Font("Dialog", 0, 10));
     
 dottedArcJButton!.setText("Dot Arc");
     
-dottedArcJButton!.addMouseListener(object: java.awt.event.MouseAdapter()
+dottedArcJButton!.addMouseListener(new object: java.awt.event.MouseAdapter()
                                 {
                                 
     public mousePressed(evt: java.awt.event.MouseEvent){
@@ -302,11 +302,11 @@ dottedArcJButtonMousePressed(evt);
     
 add(dottedArcJButton);
     
-dottedFillRectJButton!.setFont(java.awt.Font("Dialog", 0, 10));
+dottedFillRectJButton!.setFont(new java.awt.Font("Dialog", 0, 10));
     
 dottedFillRectJButton!.setText("Dot Fill Rect");
     
-dottedFillRectJButton!.addMouseListener(object: java.awt.event.MouseAdapter()
+dottedFillRectJButton!.addMouseListener(new object: java.awt.event.MouseAdapter()
                                 {
                                 
     public mousePressed(evt: java.awt.event.MouseEvent){
@@ -320,11 +320,11 @@ dottedFillRectJButtonMousePressed(evt);
     
 add(dottedFillRectJButton);
     
-dottedFillArcJButton!.setFont(java.awt.Font("Dialog", 0, 10));
+dottedFillArcJButton!.setFont(new java.awt.Font("Dialog", 0, 10));
     
 dottedFillArcJButton!.setText("Dot Fill Arc");
     
-dottedFillArcJButton!.addMouseListener(object: java.awt.event.MouseAdapter()
+dottedFillArcJButton!.addMouseListener(new object: java.awt.event.MouseAdapter()
                                 {
                                 
     public mousePressed(evt: java.awt.event.MouseEvent){
@@ -338,11 +338,11 @@ dottedFillArcJButtonMousePressed(evt);
     
 add(dottedFillArcJButton);
     
-dottedFillRountRectJButton!.setFont(java.awt.Font("Dialog", 0, 10));
+dottedFillRountRectJButton!.setFont(new java.awt.Font("Dialog", 0, 10));
     
 dottedFillRountRectJButton!.setText("Dot Fill Rnd Rect");
     
-dottedFillRountRectJButton!.addMouseListener(object: java.awt.event.MouseAdapter()
+dottedFillRountRectJButton!.addMouseListener(new object: java.awt.event.MouseAdapter()
                                 {
                                 
     public mousePressed(evt: java.awt.event.MouseEvent){
@@ -356,7 +356,7 @@ dottedFillRountRectJButtonMousePressed(evt);
     
 add(dottedFillRountRectJButton);
     
-colorJPanel!.setLayout(java.awt.GridLayout(1, 1));
+colorJPanel!.setLayout(new java.awt.GridLayout(1, 1));
     
 colorJPanel!.add(colorJList);
     

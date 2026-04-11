@@ -95,9 +95,9 @@ export class GeographicMapCellHistory
 public constructor (){
 
             super();
-            this.list= BasicArrayList();
+            this.list= new BasicArrayList();
     
-this.visitedList= BasicArrayList();
+this.visitedList= new BasicArrayList();
     
 this.init();
     

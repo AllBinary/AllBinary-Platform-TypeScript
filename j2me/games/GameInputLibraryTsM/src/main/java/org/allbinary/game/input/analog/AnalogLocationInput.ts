@@ -32,7 +32,7 @@ export class AnalogLocationInput
             var playerId = playerId
 this.playerId= playerId;
     
-this.customGPoint= CustomGPoint(0, 0, 0);
+this.customGPoint= new CustomGPoint(0, 0, 0);
     
 }
 

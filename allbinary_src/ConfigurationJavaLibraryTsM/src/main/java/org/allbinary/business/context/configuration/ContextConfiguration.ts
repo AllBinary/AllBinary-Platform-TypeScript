@@ -54,7 +54,7 @@ public constructor (){
             super();
             logUtil!.put(commonStrings!.START, this, "ContextConfiguration");
     
-this.setEmailServerConfigurationInterface(EmailServerConfiguration() as EmailServerConfigurationInterface);
+this.setEmailServerConfigurationInterface(new EmailServerConfiguration() as EmailServerConfigurationInterface);
     
 }
 
@@ -64,7 +64,7 @@ public constructor (hashMap: HashMap<any, any>){
             var hashMap = hashMap
 logUtil!.put(commonStrings!.START, this, "ContextConfiguration(HashMap)");
     
-this.setEmailServerConfigurationInterface(EmailServerConfiguration(hashMap) as EmailServerConfigurationInterface);
+this.setEmailServerConfigurationInterface(new EmailServerConfiguration(hashMap) as EmailServerConfigurationInterface);
     
 }
 

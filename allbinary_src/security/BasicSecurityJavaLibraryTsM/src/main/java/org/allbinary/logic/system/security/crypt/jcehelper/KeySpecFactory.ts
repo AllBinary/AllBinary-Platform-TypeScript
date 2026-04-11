@@ -83,7 +83,7 @@ var keyData = keyData
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return DESKeySpec(keyData);
+                        return new DESKeySpec(keyData);
     
 
                                     }
@@ -96,7 +96,7 @@ var keyData = keyData
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return DESedeKeySpec(keyData);
+                        return new DESedeKeySpec(keyData);
     
 
                                     }
@@ -105,7 +105,7 @@ var keyData = keyData
                             
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 
                         }
                             
@@ -124,7 +124,7 @@ PreLogUtil.putOE(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e)
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 }

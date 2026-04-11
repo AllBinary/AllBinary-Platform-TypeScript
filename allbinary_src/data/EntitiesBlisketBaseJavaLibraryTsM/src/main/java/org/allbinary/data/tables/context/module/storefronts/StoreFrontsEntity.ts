@@ -62,7 +62,7 @@ export class StoreFrontsEntity extends AbSqlBean
         
 public constructor ()                        
 
-                            : super(UserDbInitInfo()){
+                            : super(new UserDbInitInfo()){
 
             super();
             
@@ -168,7 +168,7 @@ keysAndValues!.put(StoreFrontData.getInstance()!.NAME, name);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return StoreFront(storeHashMap);
+                        return new StoreFront(storeHashMap);
     
 
                                     }
@@ -178,7 +178,7 @@ keysAndValues!.put(StoreFrontData.getInstance()!.NAME, name);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return StoreFront();
+                        return new StoreFront();
     
 
                         }

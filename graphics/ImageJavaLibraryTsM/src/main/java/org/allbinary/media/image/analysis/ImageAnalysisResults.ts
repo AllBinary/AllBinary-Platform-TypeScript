@@ -32,9 +32,9 @@ export class ImageAnalysisResults
 public constructor (){
 
             super();
-            this.imageColorRangeResults= ImageColorRangeResults();
+            this.imageColorRangeResults= new ImageColorRangeResults();
     
-this.imageColorResults= ImageColorResults();
+this.imageColorResults= new ImageColorResults();
     
 }
 

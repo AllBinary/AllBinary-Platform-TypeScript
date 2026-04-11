@@ -104,7 +104,7 @@ stringBuffer!.append(inventoryTag!.getHelper()!..constructor.name.toString()!);
 
 
 
-                            throw Error(stringBuffer!.toString())
+                            throw new Error(stringBuffer!.toString())
 
                                     }
                                 
@@ -121,7 +121,7 @@ stringBuffer!.append(inventoryTag!.getHelper()!..constructor.name.toString()!);
                             
 
 
-                            throw Error("Must have parent tag.")
+                            throw new Error("Must have parent tag.")
 
                         }
                             
@@ -173,7 +173,7 @@ stringBuffer!.append(inventoryTag!.getHelper()!..constructor.name.toString()!);
 
 
 
-                            throw Error(stringBuffer!.toString())
+                            throw new Error(stringBuffer!.toString())
 
                                     }
                                 
@@ -190,7 +190,7 @@ stringBuffer!.append(inventoryTag!.getHelper()!..constructor.name.toString()!);
                             
 
 
-                            throw Error("Must have parent tag.")
+                            throw new Error("Must have parent tag.")
 
                         }
                             
@@ -242,7 +242,7 @@ stringBuffer!.append(inventoryTag!.getHelper()!..constructor.name.toString()!);
 
 
 
-                            throw Error(stringBuffer!.toString())
+                            throw new Error(stringBuffer!.toString())
 
                                     }
                                 
@@ -259,7 +259,7 @@ stringBuffer!.append(inventoryTag!.getHelper()!..constructor.name.toString()!);
                             
 
 
-                            throw Error("Must have parent tag.")
+                            throw new Error("Must have parent tag.")
 
                         }
                             
@@ -291,7 +291,7 @@ stringBuffer!.append(helperObject!.constructor.name.toString()!);
 
 
 
-                            throw Error(stringBuffer!.toString())
+                            throw new Error(stringBuffer!.toString())
 
                                     }
                                 

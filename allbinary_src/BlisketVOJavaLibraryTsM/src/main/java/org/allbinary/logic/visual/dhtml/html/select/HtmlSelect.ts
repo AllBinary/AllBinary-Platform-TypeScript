@@ -103,7 +103,7 @@ this.name= name;
     
 this.after= after;
     
-this.options= Vector();
+this.options= new Vector();
     
 }
 

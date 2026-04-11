@@ -107,7 +107,7 @@ this.setLicenseId(NONE);
         
 ;
     
-PreLogUtil.put(StringMaker().
+PreLogUtil.put(new StringMaker().
                             append("Special Name: ")!.append(this.getSpecialName())!.toString(), this, commonStrings!.CONSTRUCTOR);
     
 

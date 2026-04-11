@@ -55,7 +55,7 @@ public constructor (transformInfoInterface: TransformInfoInterface)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.newStoreFrontInterface= StoreFront(this.getPageContext()!.getRequest();
+this.newStoreFrontInterface= new StoreFront(this.getPageContext()!.getRequest();
 
                          as HttpServletRequest) as StoreFrontInterface;
     

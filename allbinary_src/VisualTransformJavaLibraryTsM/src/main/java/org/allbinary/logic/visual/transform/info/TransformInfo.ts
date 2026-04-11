@@ -326,8 +326,8 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
                                     }
                                 
 
-    var fileDataString: string = CryptFileReader(TransformInfoObjectData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoObjectData.getInstance()!.ENCRYPTED_EXTENSION).
-                            get(AbPath(fileAbPath!.toString(), aObject))!;
+    var fileDataString: string = new CryptFileReader(TransformInfoObjectData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoObjectData.getInstance()!.ENCRYPTED_EXTENSION).
+                            get(new AbPath(fileAbPath!.toString(), aObject))!;
         
         
 ;
@@ -418,7 +418,7 @@ this.setObjectConfigFile(objectConfigFileName);
                                 )
                         
                                     {
-                                    this.setObjectConfigInterface(TransformInfoObjectConfig(this));
+                                    this.setObjectConfigInterface(new TransformInfoObjectConfig(this));
     
 
                                     }
@@ -471,8 +471,8 @@ this.getObjectConfigInterface()!.setOutputTypeName(type);
                                     }
                                 
 
-    var fileDataString: string = CryptFileReader(TransformInfoTemplateData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoTemplateData.getInstance()!.ENCRYPTED_EXTENSION).
-                            get(AbPath(fileAbPath!.toString(), aTemplate))!;
+    var fileDataString: string = new CryptFileReader(TransformInfoTemplateData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoTemplateData.getInstance()!.ENCRYPTED_EXTENSION).
+                            get(new AbPath(fileAbPath!.toString(), aTemplate))!;
         
         
 ;
@@ -534,8 +534,8 @@ this.getObjectConfigInterface()!.setOutputTypeName(type);
                                     }
                                 
 
-    var fileDataString: string = CryptFileReader(TransformInfoDataData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoDataData.getInstance()!.ENCRYPTED_EXTENSION).
-                            get(AbPath(fileAbPath!.toString(), aData))!;
+    var fileDataString: string = new CryptFileReader(TransformInfoDataData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoDataData.getInstance()!.ENCRYPTED_EXTENSION).
+                            get(new AbPath(fileAbPath!.toString(), aData))!;
         
         
 ;
@@ -558,7 +558,7 @@ this.getObjectConfigInterface()!.setOutputTypeName(type);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    stringBuffer= StringMaker();
+                                    stringBuffer= new StringMaker();
     
 stringBuffer!.append("Name: ");
     
@@ -815,7 +815,7 @@ this.data= value;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return AbFilePath(this.getTemplateFile());
+                        return new AbFilePath(this.getTemplateFile());
     
 }
 
@@ -827,7 +827,7 @@ this.data= value;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return AbFilePath(this.getObjectConfigFile());
+                        return new AbFilePath(this.getObjectConfigFile());
     
 }
 
@@ -839,7 +839,7 @@ this.data= value;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return AbFilePath(this.getDataFile());
+                        return new AbFilePath(this.getDataFile());
     
 }
 
@@ -876,7 +876,7 @@ this.data= value;
                                     
         try {
             
-    var fileData: string = CryptFileReader(TransformInfoDataData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoDataData.getInstance()!.ENCRYPTED_EXTENSION).
+    var fileData: string = new CryptFileReader(TransformInfoDataData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoDataData.getInstance()!.ENCRYPTED_EXTENSION).
                             get(this.getDataFilePath())!;
         
         
@@ -1110,7 +1110,7 @@ hashMap!.put(transformInfoData!.DATA, Encoder.encode(this.data.encodeToByteArray
 ;
     
 
-    var time: string = new calendar.getTimeInMillis() as Long.
+    var time: string = calendar.getTimeInMillis() as Long.
                             toString();
         
         
@@ -1161,7 +1161,7 @@ vector.add(Encoder.encode(this.data.encodeToByteArray()));
 ;
     
 
-    var time: string = new calendar.getTimeInMillis() as Long.
+    var time: string = calendar.getTimeInMillis() as Long.
                             toString();
         
         

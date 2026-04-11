@@ -49,7 +49,7 @@ export class BasicEmailQueue extends BasicQueue
                                 )
                         
                                     {
-                                    BasicEmailQueue.basicEmailQueue= BasicEmailQueue();
+                                    BasicEmailQueue.basicEmailQueue= new BasicEmailQueue();
     
 
                                     }

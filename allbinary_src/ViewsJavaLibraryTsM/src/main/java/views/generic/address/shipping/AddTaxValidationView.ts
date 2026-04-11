@@ -89,7 +89,7 @@ public constructor (transformInfoInterface: TransformInfoInterface)
     public isValid(): Boolean{
 
         try {
-            this.streetAddress= StreetAddress(this.getRequest());
+            this.streetAddress= new StreetAddress(this.getRequest());
     
 
     var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(this.getTransformInfoInterface()!.getStoreName())!;

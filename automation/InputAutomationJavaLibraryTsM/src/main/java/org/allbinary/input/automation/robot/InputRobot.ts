@@ -59,7 +59,7 @@ public constructor (graphicsDevice: GraphicsDevice){
 
             super();
                 //var graphicsDevice = graphicsDevice
-this.robot= Robot(graphicsDevice);
+this.robot= new Robot(graphicsDevice);
     
 }
 
@@ -115,7 +115,7 @@ this.robot= Robot(graphicsDevice);
 this.robot.mouseMove(point.x +x, point.y +y);
     
 
-    var message: string = StringMaker().
+    var message: string = new StringMaker().
                             append("Moved Mouse To: x: ")!.appendint(point.x)!.append(" y: ")!.appendint(point.y)!.append(" in the middle of: ")!.append(StringUtil.getInstance()!.toString(rectangle))!.toString()!;
         
         
@@ -139,7 +139,7 @@ this.mouseMove(point.x, point.y);
 this.robot.mouseMove(x, y);
     
 
-    var message: string = StringMaker().
+    var message: string = new StringMaker().
                             append("Moved Mouse To: x: ")!.appendint(x)!.append(" y: ")!.appendint(y)!.toString()!;
         
         

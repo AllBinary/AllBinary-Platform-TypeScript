@@ -83,7 +83,7 @@ public constructor (transformInfoInterface: TransformInfoInterface)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.newStoreFrontInterface= StoreFront(this.getPageContext()!.getRequest();
+this.newStoreFrontInterface= new StoreFront(this.getPageContext()!.getRequest();
 
                          as HttpServletRequest) as StoreFrontInterface;
     
@@ -127,7 +127,7 @@ this.newStoreFrontInterface= StoreFront(this.getPageContext()!.getRequest();
                                     }
                                 
 
-                        if(AbFile(AbPath(this.getStoreViewsPath())).
+                        if(new AbFile(new AbPath(this.getStoreViewsPath())).
                             isFile())
                         
                                     {
@@ -222,7 +222,7 @@ stringBuffer!.append(this.newStoreFrontInterface!.getName());
                                     }
                                 
 
-                        if(AbFile(AbPath(this.getStoreViewsPath())).
+                        if(new AbFile(new AbPath(this.getStoreViewsPath())).
                             isFile())
                         
                                     {

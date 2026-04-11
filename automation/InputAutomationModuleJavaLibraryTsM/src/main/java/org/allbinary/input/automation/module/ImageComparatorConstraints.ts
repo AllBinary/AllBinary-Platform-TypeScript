@@ -64,7 +64,7 @@ public constructor (doImageComparisonEveryNthFrame: number){
             var doImageComparisonEveryNthFrame = doImageComparisonEveryNthFrame
 this.doImageComparisonEveryNthFrame= doImageComparisonEveryNthFrame;
     
-this.setAvoidVector(Vector());
+this.setAvoidVector(new Vector());
     
 }
 
@@ -86,7 +86,7 @@ var color = color
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -276,7 +276,7 @@ var bufferedImage = bufferedImage
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 

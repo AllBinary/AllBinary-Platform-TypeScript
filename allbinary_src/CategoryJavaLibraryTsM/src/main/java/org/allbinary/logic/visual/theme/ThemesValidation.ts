@@ -48,7 +48,7 @@ export class ThemesValidation extends Validation
 public constructor (){
 
             super();
-            this.themeVector= Vector();
+            this.themeVector= new Vector();
     
 }
 

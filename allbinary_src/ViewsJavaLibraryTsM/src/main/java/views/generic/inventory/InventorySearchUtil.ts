@@ -326,7 +326,7 @@ var column = column
 ;
     
 
-    var keyword: string = Replace("-", CommonSeps.getInstance()!.SPACE).
+    var keyword: string = new Replace("-", CommonSeps.getInstance()!.SPACE).
                             all(columnValueHashMap!.get(BasicItemData.KEYWORDS);
 
                          as String)!;
@@ -430,7 +430,7 @@ keyword= keyword.uppercase();
     
 viewDocumentInterface!.getBaseNode()!.appendChild(inventoryNode);
     
-inventoryNode!.appendChild(ModDomHelper.createNameValueNodes(viewDocumentInterface!.getDoc(), SearchData.PAGE, Integer(startPage).
+inventoryNode!.appendChild(ModDomHelper.createNameValueNodes(viewDocumentInterface!.getDoc(), SearchData.PAGE, new Integer(startPage).
                             toString()));
     
 
@@ -454,7 +454,7 @@ inventoryNode!.appendChild(ModDomHelper.createNameValueNodes(viewDocumentInterfa
         while(iter.hasNext())
         {
 
-    var product: string = new .toCharArray();
+    var product: string = .toCharArray();
         
         
 ;
@@ -482,7 +482,7 @@ keywords= keywords.uppercase();
                         
                                     {
                                     
-    var itemNode: Node = BasicItemView(itemInterface, Vector()).
+    var itemNode: Node = new BasicItemView(itemInterface, new Vector()).
                             toXmlNode(viewDocumentInterface!.getDoc())!;
         
         
@@ -507,7 +507,7 @@ numberOfResultsOnCurrentPage++;
                         if(currentPage >= startPage && currentPage <= endPage)
                         
                                     {
-                                    inventoryNode!.appendChild(ModDomHelper.createNameValueNodes(viewDocumentInterface!.getDoc(), SearchData.TOTAL_NUMBER_ITEMS_ON_THIS_PAGE, Integer(numberOfResultsOnCurrentPage).
+                                    inventoryNode!.appendChild(ModDomHelper.createNameValueNodes(viewDocumentInterface!.getDoc(), SearchData.TOTAL_NUMBER_ITEMS_ON_THIS_PAGE, new Integer(numberOfResultsOnCurrentPage).
                             toString()));
     
 documents[currentPage]= viewDocumentInterface!.getDoc();
@@ -522,7 +522,7 @@ inventoryNode= viewDocumentInterface!.getDoc()!.createElement(InventoryData.INVE
     
 viewDocumentInterface!.getBaseNode()!.appendChild(inventoryNode);
     
-inventoryNode!.appendChild(ModDomHelper.createNameValueNodes(viewDocumentInterface!.getDoc(), SearchData.PAGE, Integer(currentPage +1).
+inventoryNode!.appendChild(ModDomHelper.createNameValueNodes(viewDocumentInterface!.getDoc(), SearchData.PAGE, new Integer(currentPage +1).
                             toString()));
     
 
@@ -567,7 +567,7 @@ numberOfResults++;
                         if(numberOfResultsOnCurrentPage > 0 && (currentPage +1 >= startPage && currentPage +1 <= endPage))
                         
                                     {
-                                    inventoryNode!.appendChild(ModDomHelper.createNameValueNodes(viewDocumentInterface!.getDoc(), SearchData.TOTAL_NUMBER_ITEMS_ON_THIS_PAGE, Integer(numberOfResultsOnCurrentPage -1).
+                                    inventoryNode!.appendChild(ModDomHelper.createNameValueNodes(viewDocumentInterface!.getDoc(), SearchData.TOTAL_NUMBER_ITEMS_ON_THIS_PAGE, new Integer(numberOfResultsOnCurrentPage -1).
                             toString()));
     
 documents[lastPage +1]= viewDocumentInterface!.getDoc();
@@ -617,10 +617,10 @@ index <= endPage; index++)
         
 ;
     
-inventoryNodes[index]!.appendChild(ModDomHelper.createNameValueNodes(tempDocument, SearchData.TOTAL_NUMBER_PAGES, Integer(lastPage +1).
+inventoryNodes[index]!.appendChild(ModDomHelper.createNameValueNodes(tempDocument, SearchData.TOTAL_NUMBER_PAGES, new Integer(lastPage +1).
                             toString()));
     
-inventoryNodes[index]!.appendChild(ModDomHelper.createNameValueNodes(tempDocument, SearchData.TOTAL_NUMBER_ITEMS, Integer(numberOfResults).
+inventoryNodes[index]!.appendChild(ModDomHelper.createNameValueNodes(tempDocument, SearchData.TOTAL_NUMBER_ITEMS, new Integer(numberOfResults).
                             toString()));
     
 
@@ -669,7 +669,7 @@ inventoryNodes[index]!.appendChild(ModDomHelper.createNameValueNodes(tempDocumen
         
 ;
     
-productListingPages[index]= StoreTransformer(abeClientInformation, TransformInfoHttpSearch(searchRequest) as TransformInfoInterface).
+productListingPages[index]= new StoreTransformer(abeClientInformation, new TransformInfoHttpSearch(searchRequest) as TransformInfoInterface).
                             translate(success);
     
 
@@ -687,7 +687,7 @@ productListingPages[index]= StoreTransformer(abeClientInformation, TransformInfo
         
 ;
     
-productListingPages[0]= StoreTransformer(abeClientInformation, TransformInfoHttpSearch(searchRequest)).
+productListingPages[0]= new StoreTransformer(abeClientInformation, new TransformInfoHttpSearch(searchRequest)).
                             translate(result);
     
 

@@ -34,7 +34,7 @@ export class HtmlTags
 public constructor (){
 
             super();
-            htmlTagVector= Vector();
+            htmlTagVector= new Vector();
     
 }
 

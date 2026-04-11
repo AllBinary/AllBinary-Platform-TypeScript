@@ -265,7 +265,7 @@ stringBuffer!.append(this.getFileName());
 ;
     
 
-    var document: Document = DomDocumentHelper.create(AbFileLocalInputStream(file))!;
+    var document: Document = DomDocumentHelper.create(new AbFileLocalInputStream(file))!;
         
         
 ;

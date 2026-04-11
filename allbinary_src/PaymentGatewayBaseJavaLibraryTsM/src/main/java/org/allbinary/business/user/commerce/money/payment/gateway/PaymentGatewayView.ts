@@ -108,7 +108,7 @@ this.paymentGatewayInterface= paymentGatewayInterface;
                                     }
                                 
 
-    var hashMap: HashMap<any, any> = PaymentGatewayMapping(this.paymentGatewayInterface).
+    var hashMap: HashMap<any, any> = new PaymentGatewayMapping(this.paymentGatewayInterface).
                             toHashMap()!;
         
         

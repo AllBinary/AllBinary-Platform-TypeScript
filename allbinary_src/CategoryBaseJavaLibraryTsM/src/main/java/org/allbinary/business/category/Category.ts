@@ -113,7 +113,7 @@ public constructor (categoryPropertiesFactoryInterface: CategoryPropertiesFactor
                                 
 this.categoryPropertiesInterface= categoryPropertiesFactoryInterface!.getInstance();
     
-this.categoryHierarchyInterface= CategoryHierarchy(this, this) as CategoryHierarchyInterface;
+this.categoryHierarchyInterface= new CategoryHierarchy(this, this) as CategoryHierarchyInterface;
     
 this.log();
     
@@ -126,7 +126,7 @@ public constructor (categoryPropertiesFactoryInterface: CategoryPropertiesFactor
 var level = level
 this.categoryPropertiesInterface= categoryPropertiesFactoryInterface!.getInstance();
     
-this.categoryHierarchyInterface= CategoryHierarchy(this, this, level) as CategoryHierarchyInterface;
+this.categoryHierarchyInterface= new CategoryHierarchy(this, this, level) as CategoryHierarchyInterface;
     
 this.log();
     
@@ -142,7 +142,7 @@ this.categoryPropertiesInterface= categoryPropertiesFactoryInterface!.getInstanc
 
                          as CategoryPropertiesInterface;
     
-this.categoryHierarchyInterface= CategoryHierarchy(rootCategoryInterface, parentCategoryInterface) as CategoryHierarchyInterface;
+this.categoryHierarchyInterface= new CategoryHierarchy(rootCategoryInterface, parentCategoryInterface) as CategoryHierarchyInterface;
     
 this.log();
     
@@ -211,7 +211,7 @@ rootAbPath= rootCategoryPropertiesInterface!.getRootFilePath();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return AbPath(this.getRootFilePath()!.toString() +this.getProperties()!.getPath(this.getHierarchy())!.toString(), this.getProperties()!.getFileName());
+                        return new AbPath(this.getRootFilePath()!.toString() +this.getProperties()!.getPath(this.getHierarchy())!.toString(), this.getProperties()!.getFileName());
     
 }
 
@@ -550,7 +550,7 @@ this.removal(removalVector);
                                     
 
 
-                            throw Error("Category Error")
+                            throw new Error("Category Error")
 
                                     }
                                 

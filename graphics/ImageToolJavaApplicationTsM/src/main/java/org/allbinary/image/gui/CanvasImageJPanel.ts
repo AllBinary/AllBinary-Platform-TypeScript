@@ -111,7 +111,7 @@ this.imageProcessorInput= imageProcessorInput;
 
 
     public process(){
-object: Thread()
+new object: Thread()
                                 {
                                 
     public run(){
@@ -186,9 +186,9 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
 
 
     initComponents(){
-writeOverOriginalJCheckBox= javax.swing.JCheckBox();
+writeOverOriginalJCheckBox= new javax.swing.JCheckBox();
     
-jPanel1= object: javax.swing.JPanel()
+jPanel1= new object: javax.swing.JPanel()
                                 {
                                 
     public paint(graphics: Graphics){
@@ -212,33 +212,33 @@ var graphics = graphics
                                 }
                             ;
     
-generateJButton= javax.swing.JButton();
+generateJButton= new javax.swing.JButton();
     
-jLabel4= javax.swing.JLabel();
+jLabel4= new javax.swing.JLabel();
     
-jPanel2= javax.swing.JPanel();
+jPanel2= new javax.swing.JPanel();
     
-jLabel5= javax.swing.JLabel();
+jLabel5= new javax.swing.JLabel();
     
-widthReductionTextField= javax.swing.JTextField();
+widthReductionTextField= new javax.swing.JTextField();
     
-jLabel6= javax.swing.JLabel();
+jLabel6= new javax.swing.JLabel();
     
-heightReductionTextField= javax.swing.JTextField();
+heightReductionTextField= new javax.swing.JTextField();
     
-widthReductionTextField1= javax.swing.JTextField();
+widthReductionTextField1= new javax.swing.JTextField();
     
-jLabel7= javax.swing.JLabel();
+jLabel7= new javax.swing.JLabel();
     
-jLabel8= javax.swing.JLabel();
+jLabel8= new javax.swing.JLabel();
     
-heightReductionTextField1= javax.swing.JTextField();
+heightReductionTextField1= new javax.swing.JTextField();
     
 writeOverOriginalJCheckBox!.setSelected(true);
     
 writeOverOriginalJCheckBox!.setText("Write Over Original");
     
-writeOverOriginalJCheckBox!.addActionListener(object: java.awt.event.ActionListener()
+writeOverOriginalJCheckBox!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -264,7 +264,7 @@ jPanel1Layout!.setVerticalGroup(jPanel1Layout!.createParallelGroup(javax.swing.G
     
 generateJButton!.setText("Generate");
     
-generateJButton!.addActionListener(object: java.awt.event.ActionListener()
+generateJButton!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -282,7 +282,7 @@ jLabel5!.setText("Right:");
     
 widthReductionTextField!.setText(CommonPhoneStrings.getInstance()!.ZERO);
     
-widthReductionTextField!.addActionListener(object: java.awt.event.ActionListener()
+widthReductionTextField!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -300,7 +300,7 @@ heightReductionTextField!.setText(CommonPhoneStrings.getInstance()!.ZERO);
     
 widthReductionTextField1!.setText(CommonPhoneStrings.getInstance()!.ZERO);
     
-widthReductionTextField1!.addActionListener(object: java.awt.event.ActionListener()
+widthReductionTextField1!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -446,10 +446,10 @@ this.getParent()!.repaint();
         
 ;
     
-filePath= StringBuilder().
+filePath= new StringBuilder().
                             append(filePath!.substring(0, extensionIndex))!.append(commonSeps!.UNDERSCORE)!.append(name)!.append(imageStrings!.PNG_EXTENSION)!.toString();
     
-file= File(filePath);
+file= new File(filePath);
     
 
                                     }
@@ -460,7 +460,7 @@ file= File(filePath);
         
 ;
     
-logUtil!.put(StringMaker().
+logUtil!.put(new StringMaker().
                             append("File: ")!.append(StringUtil.getInstance()!.toString(file))!.append(" Wrote: ")!.appendboolean(isWritten)!.toString(), this, commonStrings!.RUN);
     
 }

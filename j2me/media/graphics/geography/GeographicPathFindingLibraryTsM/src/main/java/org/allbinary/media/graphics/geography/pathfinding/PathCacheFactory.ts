@@ -102,7 +102,7 @@ this.hashtable.clear();
                                     
 
 
-                            throw Error("Did not clear")
+                            throw new Error("Did not clear")
 
                                     }
                                 

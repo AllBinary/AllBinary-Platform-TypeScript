@@ -182,7 +182,7 @@ transformer.transform(xmlStreamSource, streamResult);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.translate(xsltStreamSource, StreamSource(StringBufferInputStream(DomDocumentHelper.toString(xmlDocument))), StreamResult(outputStream))!.toString();
+                        return this.translate(xsltStreamSource, new StreamSource(new StringBufferInputStream(DomDocumentHelper.toString(xmlDocument))), new StreamResult(outputStream))!.toString();
 
                         ;
     
@@ -216,7 +216,7 @@ transformer.transform(xmlStreamSource, streamResult);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.translate(xsltStreamSource, xmlStreamSource, StreamResult(outputStream))!.toString();
+                        return this.translate(xsltStreamSource, xmlStreamSource, new StreamResult(outputStream))!.toString();
 
                         ;
     
@@ -251,7 +251,7 @@ transformer.transform(xmlStreamSource, streamResult);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.translate(resolver, xsltStreamSource, xmlStreamSource, StreamResult(outputStream))!.toString();
+                        return this.translate(resolver, xsltStreamSource, xmlStreamSource, new StreamResult(outputStream))!.toString();
 
                         ;
     
@@ -278,7 +278,7 @@ transformer.transform(xmlStreamSource, streamResult);
         try {
             outputFile!.createNewFile();
     
-this.translate(StreamSource(xsltFilePath), StreamSource(StringBufferInputStream(DomDocumentHelper.toString(xmlDocument))), StreamResult(outputFile));
+this.translate(new StreamSource(xsltFilePath), new StreamSource(new StringBufferInputStream(DomDocumentHelper.toString(xmlDocument))), new StreamResult(outputFile));
     
 
                 //: 

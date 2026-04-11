@@ -37,7 +37,7 @@ var anyType = anyType
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Proxy.newProxyInstance(anyType!.constructor.name.java.classLoader, anyType!.constructor.name.getInterfaces(), InterfaceCastProxy(anyType));
+                        return Proxy.newProxyInstance(anyType!.constructor.name.java.classLoader, anyType!.constructor.name.getInterfaces(), new InterfaceCastProxy(anyType));
 
                         ;
     

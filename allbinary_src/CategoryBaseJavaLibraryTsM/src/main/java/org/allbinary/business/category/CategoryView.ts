@@ -168,12 +168,12 @@ categoryPropertiesInterface= categoryInterface!.getProperties();
 
 
 
-                            throw Error("CategoryView found unknown object.\n" +"Show Testing:" +isImpl)
+                            throw new Error("CategoryView found unknown object.\n" +"Show Testing:" +isImpl)
 
                         }
                             
 
-    var childCategoryNode: Node = CategoryPropertiesView(categoryPropertiesInterface).
+    var childCategoryNode: Node = new CategoryPropertiesView(categoryPropertiesInterface).
                             toXmlNode(document)!;
         
         

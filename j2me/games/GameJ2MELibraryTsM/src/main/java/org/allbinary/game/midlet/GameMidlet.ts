@@ -318,7 +318,7 @@ export class GameMidlet extends ProgressMidlet
         
         
 
-    private readonly COMMAND_ACTION: string = StringMaker().
+    private readonly COMMAND_ACTION: string = new StringMaker().
                             append("GameMidlet::")!.append(midletStrings!.COMMAND_ACTION)!.toString()!;
         
         
@@ -409,7 +409,7 @@ this.init();
 
 
 
-                            throw Error(commonStrings!.NOT_IMPLEMENTED)
+                            throw new Error(commonStrings!.NOT_IMPLEMENTED)
 }
 
 
@@ -419,7 +419,7 @@ this.init();
 
 
 
-                            throw Error(commonStrings!.NOT_IMPLEMENTED)
+                            throw new Error(commonStrings!.NOT_IMPLEMENTED)
 }
 
 
@@ -429,7 +429,7 @@ this.init();
 
 
 
-                            throw Error(commonStrings!.NOT_IMPLEMENTED)
+                            throw new Error(commonStrings!.NOT_IMPLEMENTED)
 }
 
 
@@ -723,7 +723,7 @@ notifyDestroyed();
 
                                     }
                                 
-PreLogUtil.put(StringMaker().
+PreLogUtil.put(new StringMaker().
                             append(COMMAND_NAME)!.append(label)!.append(DISPLAYABLE)!.append(displayableAsString)!.toString(), this, this.COMMAND_ACTION);
     
 
@@ -782,7 +782,7 @@ this.unPauseAppBackground(false);
 
                                     }
                                 
-GameMidletEventHandler.getInstance()!.fireEvent(DemoGameMidletEvent(this, DemoGameMidletStateFactory.getInstance()!.NONE));
+GameMidletEventHandler.getInstance()!.fireEvent(new DemoGameMidletEvent(this, DemoGameMidletStateFactory.getInstance()!.NONE));
     
 
                                     }
@@ -1195,7 +1195,7 @@ progressCanvas!.addPortion(50, "In Game Options");
         
 ;
     
-inGameOptionsFormFactory!.init(this, InGameFeatures(), "Options In Game", layerManager!.getBackgroundBasicColor(), layerManager!.getForegroundBasicColor());
+inGameOptionsFormFactory!.init(this, new InGameFeatures(), "Options In Game", layerManager!.getBackgroundBasicColor(), layerManager!.getForegroundBasicColor());
     
 
     var inGameOptionsForm: CommandForm = inGameOptionsFormFactory!.get()!;
@@ -1318,7 +1318,7 @@ keyValuePersistance!.loadAll(abeClientInformation);
         
 ;
     
-this.setLoadGameForm(LoadGameForm(this, "Load Game", layerManager!.getBackgroundBasicColor(), layerManager!.getForegroundBasicColor()));
+this.setLoadGameForm(new LoadGameForm(this, "Load Game", layerManager!.getBackgroundBasicColor(), layerManager!.getForegroundBasicColor()));
     
 
                                     }
@@ -1597,7 +1597,7 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return GameInputMappingInstructionsCanvas(this, this.createGameLayerManager());
+                        return new GameInputMappingInstructionsCanvas(this, this.createGameLayerManager());
     
 }
 
@@ -1609,7 +1609,7 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return GameInputMappingCanvas(abeClientInformation, this, this.createGameLayerManager(), this.getHelpPaintable());
+                        return new GameInputMappingCanvas(abeClientInformation, this, this.createGameLayerManager(), this.getHelpPaintable());
     
 }
 
@@ -1621,7 +1621,7 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return BasicPaintablesCanvas(this, CanvasStrings.getInstance()!.ABOUT, this.createGameLayerManager(), AboutPaintableFactory.getInstance()!.paintableArray);
+                        return new BasicPaintablesCanvas(this, CanvasStrings.getInstance()!.ABOUT, this.createGameLayerManager(), AboutPaintableFactory.getInstance()!.paintableArray);
     
 }
 
@@ -1632,7 +1632,7 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
 
 
 
-                            throw Error(commonStrings!.NOT_IMPLEMENTED)
+                            throw new Error(commonStrings!.NOT_IMPLEMENTED)
 }
 
 
@@ -1642,7 +1642,7 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
 
 
 
-                            throw Error(commonStrings!.NOT_IMPLEMENTED)
+                            throw new Error(commonStrings!.NOT_IMPLEMENTED)
 }
 
 
@@ -1657,7 +1657,7 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
     
 thread= threadFactoryUtil!.getInstance(this.allbinaryGameCanvasRunnableInterface);
     
-logUtil!.put(StringMaker().
+logUtil!.put(new StringMaker().
                             append("Thread Priority: ")!.appendint(thread.getPriority())!.toString(), this, "startGameCanvasRunnableInterface");
     
 this.allbinaryGameCanvasRunnableInterface!.setThread(thread);
@@ -1757,7 +1757,7 @@ this.allbinaryGameCanvasRunnableInterface= gameCanvasRunnableInterface;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return AllBinaryGameLayerManager(basicColorFactory!.BLACK, basicColorFactory!.WHITE, gameInfo);
+                        return new AllBinaryGameLayerManager(basicColorFactory!.BLACK, basicColorFactory!.WHITE, gameInfo);
     
 }
 

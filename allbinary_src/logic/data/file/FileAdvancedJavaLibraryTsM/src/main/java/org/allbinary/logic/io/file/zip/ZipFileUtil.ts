@@ -111,7 +111,7 @@ var fileBasicArrayList = fileBasicArrayList
 zipFile!.createNewFile();
     
 
-    var outputStream: ZipOutputStream = new ZipOutputStream(AbFileOutputStream(zipFile));
+    var outputStream: ZipOutputStream = new ZipOutputStream(new AbFileOutputStream(zipFile));
         
         
 ;
@@ -191,9 +191,9 @@ logUtil!.put(stringBuffer!.toString(), this, "create()");
     
 
         try {
-            fileInputStream= AbFileInputStream(file);
+            fileInputStream= new AbFileInputStream(file);
     
-outputStream!.putNextEntry(ZipEntry(file.getPath()));
+outputStream!.putNextEntry(new ZipEntry(file.getPath()));
     
 streamUtil!.get(fileInputStream, outputStream, byteArray);
     
@@ -251,7 +251,7 @@ var fileName = fileName
     
 
         try {
-            inputStream= ZipInputStream(AbFileInputStream(zipFile));
+            inputStream= new ZipInputStream(new AbFileInputStream(zipFile));
     
 
     var zipEntry: ZipEntry

@@ -68,7 +68,7 @@ export class SpriteFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Sprite(image, frameWidth, frameHeight);
+                        return new Sprite(image, frameWidth, frameHeight);
     
 }
 

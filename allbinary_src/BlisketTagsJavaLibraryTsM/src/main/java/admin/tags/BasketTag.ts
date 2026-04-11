@@ -90,7 +90,7 @@ this.storeName= value;
 
         try {
             
-    var anyType: any = BasketHelperFactory().
+    var anyType: any = new BasketHelperFactory().
                             getInstance(this.propertiesHashMap, this.pageContext)!;
         
         
@@ -159,7 +159,7 @@ this.storeName= value;
 
         try {
             
-    var anyType: any = BasketRequestHelperFactory().
+    var anyType: any = new BasketRequestHelperFactory().
                             getInstance(this.propertiesHashMap, this.pageContext)!;
         
         
@@ -234,7 +234,7 @@ this.storeName= value;
 
         try {
             
-    var anyType: any = BasketRequestHelperFactory().
+    var anyType: any = new BasketRequestHelperFactory().
                             getInstance(this.propertiesHashMap, this.pageContext)!;
         
         
@@ -309,7 +309,7 @@ this.storeName= value;
 
         try {
             
-    var anyType: any = BasketRequestHelperFactory().
+    var anyType: any = new BasketRequestHelperFactory().
                             getInstance(this.propertiesHashMap, this.pageContext)!;
         
         
@@ -389,7 +389,7 @@ this.storeName= value;
                                 )
                         
                                     {
-                                    this.propertiesHashMap= HashMap<any, any>();
+                                    this.propertiesHashMap= new HashMap<any, any>();
     
 this.propertiesHashMap!.put(StoreFrontData.getInstance()!.NAME, this.storeName);
     

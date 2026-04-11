@@ -64,7 +64,7 @@ public constructor ()
 
         try {
             
-    var anyType: any = InventoryHelperFactory().
+    var anyType: any = new InventoryHelperFactory().
                             getInstance(this.getPropertiesHashMap(), this.pageContext)!;
         
         
@@ -154,7 +154,7 @@ pageContext!.getOut()!.print("Exception: " +e +"<br>");
 
         try {
             
-    var anyType: any = InventoryHelperFactory().
+    var anyType: any = new InventoryHelperFactory().
                             getInstance(this.getPropertiesHashMap(), this.pageContext)!;
         
         
@@ -310,7 +310,7 @@ this.setObjectFile("views.generic.inventory.AutoValidationInventoryView");
                             
 
 
-                            throw Error("No Such View Command: " +this.getCommand())
+                            throw new Error("No Such View Command: " +this.getCommand())
 
                         }
                             
@@ -320,7 +320,7 @@ this.setObjectFile("views.generic.inventory.AutoValidationInventoryView");
 
 
 
-                            throw Error("Command Null")
+                            throw new Error("Command Null")
 
                 //: 
 } catch(e) 

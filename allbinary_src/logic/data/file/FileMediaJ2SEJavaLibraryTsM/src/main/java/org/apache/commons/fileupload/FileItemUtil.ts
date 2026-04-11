@@ -111,7 +111,7 @@ var fileItem = fileItem
         try {
             inputStream= fileItem!.openStream();
     
-outputStream= ByteArrayOutputStream();
+outputStream= new ByteArrayOutputStream();
     
 
                         if(fileItem!.isFormField())

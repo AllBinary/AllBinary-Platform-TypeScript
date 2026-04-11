@@ -180,7 +180,7 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return AbPath(this.getPath(), this.getTemplateFile());
+                        return new AbPath(this.getPath(), this.getTemplateFile());
     
 }
 
@@ -192,7 +192,7 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return AbPath(this.getPath(), this.getObjectConfigFile());
+                        return new AbPath(this.getPath(), this.getObjectConfigFile());
     
 }
 
@@ -204,7 +204,7 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return AbPath(this.getPath(), this.getDataFile());
+                        return new AbPath(this.getPath(), this.getDataFile());
     
 }
 

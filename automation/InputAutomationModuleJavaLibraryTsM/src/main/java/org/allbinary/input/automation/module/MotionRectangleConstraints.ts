@@ -160,7 +160,7 @@ var rectangle = rectangle
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 

@@ -187,7 +187,7 @@ index < bufferedImageArray!.length; index++)
         
 ;
     
-this.icon[index]= ImageIconUnique(iconBufferedImage, index);
+this.icon[index]= new ImageIconUnique(iconBufferedImage, index);
     
 defaultListModel!.addElement(this.icon[index]!);
     
@@ -264,7 +264,7 @@ tempBufferedImageArray[index]= bufferedImage;
 ;
     
 
-    var averageRatioString: string = Double(averageRatio).
+    var averageRatioString: string = new Double(averageRatio).
                             toString()!;
         
         
@@ -416,14 +416,14 @@ this.updateUI();
                         if(this.rowsJTextField!.getText()!.length() > 0 && this.columnsJTextField!.getText()!.length() > 0 && this.cellWidthJTextField!.getText()!.length() > 0 && this.cellHeightJTextField!.getText()!.length() > 0)
                         
                                     {
-                                    this.imageUnifierProperties= ImageUnifierProperties();
+                                    this.imageUnifierProperties= new ImageUnifierProperties();
     
-imageUnifierProperties!.setRows(Integer(this.rowsJTextField!.getText()));
+imageUnifierProperties!.setRows(new Integer(this.rowsJTextField!.getText()));
     
-imageUnifierProperties!.setColumns(Integer(this.columnsJTextField!.getText()));
+imageUnifierProperties!.setColumns(new Integer(this.columnsJTextField!.getText()));
     
 
-    var imageUnifierCell: ImageUnifierCell = new ImageUnifierCell(Integer(this.cellWidthJTextField!.getText()), Integer(this.cellHeightJTextField!.getText()));
+    var imageUnifierCell: ImageUnifierCell = new ImageUnifierCell(new Integer(this.cellWidthJTextField!.getText()), new Integer(this.cellHeightJTextField!.getText()));
         
         
 ;
@@ -439,7 +439,7 @@ imageUnifierProperties!.setImageUnifierCell(imageUnifierCell);
 ;
     
 
-    var cellRatioString: string = Double(cellRatio).
+    var cellRatioString: string = new Double(cellRatio).
                             toString()!;
         
         
@@ -471,61 +471,61 @@ this.updateImage();
         
 ;
     
-jScrollPane1= javax.swing.JScrollPane();
+jScrollPane1= new javax.swing.JScrollPane();
     
-imageJList= javax.swing.JList();
+imageJList= new javax.swing.JList();
     
-jScrollPane2= javax.swing.JScrollPane();
+jScrollPane2= new javax.swing.JScrollPane();
     
-jPanel1= javax.swing.JPanel();
+jPanel1= new javax.swing.JPanel();
     
-jButton1= javax.swing.JButton();
+jButton1= new javax.swing.JButton();
     
-upJButton= javax.swing.JButton();
+upJButton= new javax.swing.JButton();
     
-downJButton= javax.swing.JButton();
+downJButton= new javax.swing.JButton();
     
-fudgeItJButton= javax.swing.JButton();
+fudgeItJButton= new javax.swing.JButton();
     
-jLabel2= javax.swing.JLabel();
+jLabel2= new javax.swing.JLabel();
     
-columnsJTextField= javax.swing.JTextField();
+columnsJTextField= new javax.swing.JTextField();
     
-jLabel1= javax.swing.JLabel();
+jLabel1= new javax.swing.JLabel();
     
-rowsJTextField= javax.swing.JTextField();
+rowsJTextField= new javax.swing.JTextField();
     
-jLabel3= javax.swing.JLabel();
+jLabel3= new javax.swing.JLabel();
     
-cellWidthJTextField= javax.swing.JTextField();
+cellWidthJTextField= new javax.swing.JTextField();
     
-jLabel4= javax.swing.JLabel();
+jLabel4= new javax.swing.JLabel();
     
-cellHeightJTextField= javax.swing.JTextField();
+cellHeightJTextField= new javax.swing.JTextField();
     
-jLabel5= javax.swing.JLabel();
+jLabel5= new javax.swing.JLabel();
     
-cellRatioJTextField= javax.swing.JTextField();
+cellRatioJTextField= new javax.swing.JTextField();
     
-jLabel6= javax.swing.JLabel();
+jLabel6= new javax.swing.JLabel();
     
-avgRatioJTextField= javax.swing.JTextField();
+avgRatioJTextField= new javax.swing.JTextField();
     
-jButton2= javax.swing.JButton();
+jButton2= new javax.swing.JButton();
     
-jButtonOrder= javax.swing.JButton();
+jButtonOrder= new javax.swing.JButton();
     
-setMinimumSize(java.awt.Dimension(500, 375));
+setMinimumSize(new java.awt.Dimension(500, 375));
     
-setPreferredSize(java.awt.Dimension(0, 0));
+setPreferredSize(new java.awt.Dimension(0, 0));
     
-imageJList!.setMinimumSize(java.awt.Dimension(50, 0));
+imageJList!.setMinimumSize(new java.awt.Dimension(50, 0));
     
 jScrollPane1!.setViewportView(imageJList);
     
 jButton1!.setText("Save");
     
-jButton1!.addActionListener(object: java.awt.event.ActionListener()
+jButton1!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -539,7 +539,7 @@ jButton1ActionPerformed(evt);
     
 upJButton!.setText("Up");
     
-upJButton!.addActionListener(object: java.awt.event.ActionListener()
+upJButton!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -553,7 +553,7 @@ upJButtonActionPerformed(evt);
     
 downJButton!.setText("Down");
     
-downJButton!.addActionListener(object: java.awt.event.ActionListener()
+downJButton!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -567,7 +567,7 @@ downJButtonActionPerformed(evt);
     
 fudgeItJButton!.setText("Fudge It!");
     
-fudgeItJButton!.addActionListener(object: java.awt.event.ActionListener()
+fudgeItJButton!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -583,7 +583,7 @@ jLabel2!.setText("Columns:");
     
 columnsJTextField!.setText(commonPhoneStrings!.TWO);
     
-columnsJTextField!.addActionListener(object: java.awt.event.ActionListener()
+columnsJTextField!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -595,7 +595,7 @@ columnsJTextFieldActionPerformed(evt);
                                 }
                             );
     
-columnsJTextField!.addPropertyChangeListener(object: java.beans.PropertyChangeListener()
+columnsJTextField!.addPropertyChangeListener(new object: java.beans.PropertyChangeListener()
                                 {
                                 
     public propertyChange(evt: java.beans.PropertyChangeEvent){
@@ -607,7 +607,7 @@ columnsJTextFieldPropertyChange(evt);
                                 }
                             );
     
-columnsJTextField!.addKeyListener(object: java.awt.event.KeyAdapter()
+columnsJTextField!.addKeyListener(new object: java.awt.event.KeyAdapter()
                                 {
                                 
     public keyPressed(evt: java.awt.event.KeyEvent){
@@ -629,7 +629,7 @@ jLabel1!.setText("Rows:");
     
 rowsJTextField!.setText(commonPhoneStrings!.TWO);
     
-rowsJTextField!.addActionListener(object: java.awt.event.ActionListener()
+rowsJTextField!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -645,7 +645,7 @@ jLabel3!.setText("Cell Width:");
     
 cellWidthJTextField!.setText("200");
     
-cellWidthJTextField!.addActionListener(object: java.awt.event.ActionListener()
+cellWidthJTextField!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -661,7 +661,7 @@ jLabel4!.setText("Cell Height:");
     
 cellHeightJTextField!.setText("150");
     
-cellHeightJTextField!.addActionListener(object: java.awt.event.ActionListener()
+cellHeightJTextField!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -683,7 +683,7 @@ avgRatioJTextField!.setEditable(false);
     
 jButton2!.setText(commonStrings!.UPDATE);
     
-jButton2!.addActionListener(object: java.awt.event.ActionListener()
+jButton2!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -697,7 +697,7 @@ jButton2ActionPerformed(evt);
     
 jButtonOrder!.setText("Order");
     
-jButtonOrder!.addActionListener(object: java.awt.event.ActionListener()
+jButtonOrder!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -821,7 +821,7 @@ var evt = evt
         
 ;
     
-filePath= StringMaker().
+filePath= new StringMaker().
                             append(filePath!.substring(0, extensionIndex))!.append(CommonSeps.getInstance()!.UNDERSCORE)!.appendint(this.imageUnifierProperties!.getColumns())!.append("_By_")!.appendint(this.imageUnifierProperties!.getRows())!.append("_Unified")!.append(imageStrings!.PNG_EXTENSION)!.toString();
     
 logUtil!.put("New File Path: " +filePath, this, StringUtil.getInstance()!.EMPTY_STRING);

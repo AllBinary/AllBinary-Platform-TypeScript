@@ -65,7 +65,7 @@ export class MineCountedPickedUpLayerInterfaceFactory extends CountedPickedUpLay
                 //@Throws(Error::class)
             
     public static init(){
-pickedUpLayerInterfaceFactoryInterface= MineCountedPickedUpLayerInterfaceFactory();
+pickedUpLayerInterfaceFactoryInterface= new MineCountedPickedUpLayerInterfaceFactory();
     
 }
 

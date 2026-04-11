@@ -115,7 +115,7 @@ var nodeList = nodeList
                             
 
 
-                            throw Error(nodeName +" Node Not Found in search")
+                            throw new Error(nodeName +" Node Not Found in search")
 
                         }
                             
@@ -164,7 +164,7 @@ var nodeList = nodeList
                                     
 
 
-                            throw Error(nodeName +" Node Not Found in search")
+                            throw new Error(nodeName +" Node Not Found in search")
 
                                     }
                                 

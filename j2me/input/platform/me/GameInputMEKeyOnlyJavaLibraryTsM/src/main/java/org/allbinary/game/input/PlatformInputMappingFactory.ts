@@ -62,7 +62,7 @@ export class PlatformInputMappingFactory
                         if(SINGLETON == PersistentInputMapping.NULL_PERSISTENT_INPUT_MAPPING)
                         
                                     {
-                                    SINGLETON= NormalJ2MEGameInputMapping();
+                                    SINGLETON= new NormalJ2MEGameInputMapping();
     
 
                                     }

@@ -180,7 +180,7 @@ public constructor (workAreaJTreeJPanel: WorkAreaJTreeJPanel, dimension: Dimensi
 var dimension = dimension
 var x = x
 var y = y
-this.grid= Grid();
+this.grid= new Grid();
     
 
         try {
@@ -217,7 +217,7 @@ public constructor (workAreaJTreeJPanel: WorkAreaJTreeJPanel, dimension: Dimensi
             var workAreaJTreeJPanel = workAreaJTreeJPanel
 var dimension = dimension
 var canvasDom = canvasDom
-this.grid= Grid(canvasDom!.getGrid());
+this.grid= new Grid(canvasDom!.getGrid());
     
 
         try {
@@ -297,20 +297,20 @@ this.workAreaJTreeJPanel!.repaint();
                 //@Throws(Error::class)
             
     initMyComponents(){
-this.frameLabel= CanvasTreeLabel("FrameLabel" +Integer(frame).
+this.frameLabel= new CanvasTreeLabel("FrameLabel" +new Integer(frame).
                             toString());
     
-this.canvasTreeNode= DefaultMutableTreeNode(this.frameLabel);
+this.canvasTreeNode= new DefaultMutableTreeNode(this.frameLabel);
     
 frame++;
     
 this.workAreaJTreeJPanel!.add(this.getTreeNode());
     
-this.graphicItemHashMap= HashMap<any, any>();
+this.graphicItemHashMap= new HashMap<any, any>();
     
 this.grid.grid= PointFactory.getInstance()!.getInstance(0, 0);
     
-this.setCanvasDimension(IntegerDimension(0, 0));
+this.setCanvasDimension(new IntegerDimension(0, 0));
     
 this.selectedTool= 
                                         null
@@ -338,7 +338,7 @@ MyGraphicItemEventService.addListener(this);
 
 
     initComponents(){
-setLayout(java.awt.GridLayout(1, 1));
+setLayout(new java.awt.GridLayout(1, 1));
     
 }
 
@@ -359,7 +359,7 @@ this.grid.isGridPossible= true;
 
 
 
-                            throw GraphicsException("X Size Error: " +x, this, "setWorkAreaSize")
+                            throw new GraphicsException("X Size Error: " +x, this, "setWorkAreaSize")
 
                                     }
                                 
@@ -372,7 +372,7 @@ this.grid.isGridPossible= true;
 
 
 
-                            throw GraphicsException("Y Size Error: " +y, this, "setWorkAreaSize")
+                            throw new GraphicsException("Y Size Error: " +y, this, "setWorkAreaSize")
 
                                     }
                                 
@@ -394,7 +394,7 @@ this.grid.isGridPossible= true;
 
                                     }
                                 
-this.setCanvasDimension(IntegerDimension(x, y));
+this.setCanvasDimension(new IntegerDimension(x, y));
     
 this.grid.isChanged= true;
     
@@ -420,7 +420,7 @@ var ySize = ySize
                                     
 
 
-                            throw GraphicsException("X Size Error: " +xSize +" WorkArea X: " +getCanvasDimension()!.getWidth(), this, "setGrid")
+                            throw new GraphicsException("X Size Error: " +xSize +" WorkArea X: " +getCanvasDimension()!.getWidth(), this, "setGrid")
 
                                     }
                                 
@@ -431,7 +431,7 @@ var ySize = ySize
                                     
 
 
-                            throw GraphicsException("Y Size Error" +ySize +" WorkArea Y: " +getCanvasDimension()!.getHeight(), this, "setGrid")
+                            throw new GraphicsException("Y Size Error" +ySize +" WorkArea Y: " +getCanvasDimension()!.getHeight(), this, "setGrid")
 
                                     }
                                 
@@ -759,7 +759,7 @@ this.repaint();
                 //@Throws(Error::class)
             
     public center(){
-VectorCenterGenerator().
+new VectorCenterGenerator().
                             transform(this.getGraphicItemHashMap());
     
 this.repaint();
@@ -793,7 +793,7 @@ this.canvasTreeNode!.add(newNode);
                                     
 
 
-                            throw GraphicsException("No Tool Selected", this, "setSelectedTool")
+                            throw new GraphicsException("No Tool Selected", this, "setSelectedTool")
 
                                     }
                                 
@@ -1099,7 +1099,7 @@ this.drawGrid(graphics);
                                 
 this.drawItems(graphics);
     
-graphics.drawString(Double(this.getAngle()).
+graphics.drawString(new Double(this.getAngle()).
                             toString(), this.getWidth() -75, this.getHeight() -15);
     
 this.grid.isChanged= false;
@@ -1140,7 +1140,7 @@ super.repaint();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return CanvasDom(this).
+                        return new CanvasDom(this).
                             toDom();
 
                         ;

@@ -125,7 +125,7 @@ stringBuffer!.delete(0, stringBuffer!.length());
     
 logUtil!.put(stringBuffer!.append(this.persistanceStrings!.LOADING_ID)!.appendint(id)!.toString(), this, this.persistanceStrings!.LOAD_ALL);
     
-hashtable= Hashtable<any, any>();
+hashtable= new Hashtable<any, any>();
     
 this.valueList!.add(hashtable);
     
@@ -143,7 +143,7 @@ recordStore!.closeRecordStore();
     public save(abeClientInformation: AbeClientInformationInterface, hashtable: Hashtable<any, any>){
     //var abeClientInformation = abeClientInformation
 var hashtable = hashtable
-PreLogUtil.put(StringMaker().
+PreLogUtil.put(new StringMaker().
                             append(this.persistanceStrings!.NOT_SAVING)!.append(StringUtil.getInstance()!.toString(hashtable))!.toString(), this, this.commonStrings!.SAVE);
     
 

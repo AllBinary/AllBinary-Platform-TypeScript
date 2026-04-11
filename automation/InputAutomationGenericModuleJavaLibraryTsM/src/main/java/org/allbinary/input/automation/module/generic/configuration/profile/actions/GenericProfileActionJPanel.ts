@@ -127,25 +127,25 @@ this.genericProfileActionScriptJPanel= genericProfileActionScriptJPanel;
 
 
     initComponents(){
-genericProfileActionScriptJScrollPane= javax.swing.JScrollPane();
+genericProfileActionScriptJScrollPane= new javax.swing.JScrollPane();
     
-blankProfileActionScriptJPanel= javax.swing.JPanel();
+blankProfileActionScriptJPanel= new javax.swing.JPanel();
     
-ifJLabel= javax.swing.JLabel();
+ifJLabel= new javax.swing.JLabel();
     
-newColorAtJButton= javax.swing.JButton();
+newColorAtJButton= new javax.swing.JButton();
     
-newTimeIntervalJButton= javax.swing.JButton();
+newTimeIntervalJButton= new javax.swing.JButton();
     
-newAlwaysJButton= javax.swing.JButton();
+newAlwaysJButton= new javax.swing.JButton();
     
-setMinimumSize(java.awt.Dimension(440, 275));
+setMinimumSize(new java.awt.Dimension(440, 275));
     
-setPreferredSize(java.awt.Dimension(440, 275));
+setPreferredSize(new java.awt.Dimension(440, 275));
     
-genericProfileActionScriptJScrollPane!.setPreferredSize(java.awt.Dimension(474, 270));
+genericProfileActionScriptJScrollPane!.setPreferredSize(new java.awt.Dimension(474, 270));
     
-blankProfileActionScriptJPanel!.setMinimumSize(java.awt.Dimension(400, 200));
+blankProfileActionScriptJPanel!.setMinimumSize(new java.awt.Dimension(400, 200));
     
 
     var blankProfileActionScriptJPanelLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(blankProfileActionScriptJPanel);
@@ -165,7 +165,7 @@ ifJLabel!.setText("Conditions:");
     
 newColorAtJButton!.setText("Color Range At");
     
-newColorAtJButton!.addActionListener(object: java.awt.event.ActionListener()
+newColorAtJButton!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -179,7 +179,7 @@ newColorAtJButtonActionPerformed(evt);
     
 newTimeIntervalJButton!.setText("Time Interval");
     
-newTimeIntervalJButton!.addActionListener(object: java.awt.event.ActionListener()
+newTimeIntervalJButton!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -193,7 +193,7 @@ newTimeIntervalJButtonActionPerformed(evt);
     
 newAlwaysJButton!.setText("Always On/Off");
     
-newAlwaysJButton!.addActionListener(object: java.awt.event.ActionListener()
+newAlwaysJButton!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -224,7 +224,7 @@ layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Align
 var evt = evt
 logUtil!.put("New Time Interval Action Condition", this, "newTimeIntervalJButtonActionPerformed");
     
-getGenericProfileAction()!.getGenericProfileActionScript()!.addCondition(TimeIntervalActionScriptCondition() as ProfileActionScriptConditionInterface);
+getGenericProfileAction()!.getGenericProfileActionScript()!.addCondition(new TimeIntervalActionScriptCondition() as ProfileActionScriptConditionInterface);
     
 this.updateProfileActionUI();
     
@@ -235,7 +235,7 @@ this.updateProfileActionUI();
 var evt = evt
 logUtil!.put("New EveryTime Action Condition", this, "newEveryTimeJButtonActionPerformed");
     
-getGenericProfileAction()!.getGenericProfileActionScript()!.addCondition(AlwaysActionScriptCondition() as ProfileActionScriptConditionInterface);
+getGenericProfileAction()!.getGenericProfileActionScript()!.addCondition(new AlwaysActionScriptCondition() as ProfileActionScriptConditionInterface);
     
 this.updateProfileActionUI();
     
@@ -246,7 +246,7 @@ this.updateProfileActionUI();
 var evt = evt
 logUtil!.put("New Color At Action Condition", this, "newColorAtJButtonActionPerformed");
     
-getGenericProfileAction()!.getGenericProfileActionScript()!.addCondition(ColorAtActionScriptCondition() as ProfileActionScriptConditionInterface);
+getGenericProfileAction()!.getGenericProfileActionScript()!.addCondition(new ColorAtActionScriptCondition() as ProfileActionScriptConditionInterface);
     
 this.updateProfileActionUI();
     

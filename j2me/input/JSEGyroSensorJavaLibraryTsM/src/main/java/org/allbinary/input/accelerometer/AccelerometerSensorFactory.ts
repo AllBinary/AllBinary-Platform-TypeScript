@@ -57,7 +57,7 @@ export class AccelerometerSensorFactory
                                     
 
 
-                            throw Error("No Orientation Sensors")
+                            throw new Error("No Orientation Sensors")
 
                                     }
                                 
@@ -68,7 +68,7 @@ export class AccelerometerSensorFactory
                                     
 
 
-                            throw Error("No Simulation Sensors")
+                            throw new Error("No Simulation Sensors")
 
                                     }
                                 
@@ -76,7 +76,7 @@ export class AccelerometerSensorFactory
                         if(features.isFeature(sensorFeatureFactory!.NO_ORIENTATION))
                         
                                     {
-                                    allBinaryAccelerometerSensor= NoAccelerometerSensor();
+                                    allBinaryAccelerometerSensor= new NoAccelerometerSensor();
     
 
                                     }
@@ -85,7 +85,7 @@ export class AccelerometerSensorFactory
                             
 
 
-                            throw Error("Not Such SensorFeature")
+                            throw new Error("Not Such SensorFeature")
 
                         }
                             

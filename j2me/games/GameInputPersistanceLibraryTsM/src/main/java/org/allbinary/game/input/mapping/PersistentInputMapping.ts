@@ -93,7 +93,7 @@ export class PersistentInputMapping
 protected constructor (){
 
             super();
-            inputPersistance= InputPersistance(GamePersistanceStrings.getInstance()!.SAVED_INPUT_CONFIGURATION_RECORD_ID);
+            inputPersistance= new InputPersistance(GamePersistanceStrings.getInstance()!.SAVED_INPUT_CONFIGURATION_RECORD_ID);
     
 }
 
@@ -101,7 +101,7 @@ protected constructor (name: string){
 
             super();
             var name = name
-inputPersistance= InputPersistance(name);
+inputPersistance= new InputPersistance(name);
     
 }
 
@@ -332,7 +332,7 @@ var input = input
 
 
 
-                            throw Error(commonStrings!.NOT_IMPLEMENTED)
+                            throw new Error(commonStrings!.NOT_IMPLEMENTED)
 }
 
 
@@ -343,7 +343,7 @@ var input = input
 
 
 
-                            throw Error(commonStrings!.NOT_IMPLEMENTED)
+                            throw new Error(commonStrings!.NOT_IMPLEMENTED)
 }
 
 

@@ -72,7 +72,7 @@ export class StreetAddressesEntity extends AbSqlBean
     private userName: string
 public constructor ()                        
 
-                            : super(UserDbInitInfo()){
+                            : super(new UserDbInitInfo()){
 
             super();
             
@@ -83,7 +83,7 @@ public constructor ()
 
 public constructor (userName: string)                        
 
-                            : super(UserDbInitInfo()){
+                            : super(new UserDbInitInfo()){
 
             super();
             var userName = userName
@@ -184,7 +184,7 @@ values.add(address.getCountry());
 ;
     
 
-    var time: string = new calendar.getTimeInMillis() as Long.
+    var time: string = calendar.getTimeInMillis() as Long.
                             toString();
         
         
@@ -412,7 +412,7 @@ keyAndValue!.put(StreetAddressData.ID, index.toString());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return StreetAddress(addressHashMap);
+                        return new StreetAddress(addressHashMap);
     
 
                                     }

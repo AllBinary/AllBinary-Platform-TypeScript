@@ -70,7 +70,7 @@ export class CssStyleValidation extends Validation
 public constructor (){
 
             super();
-            this.cssStyleElementVector= Vector();
+            this.cssStyleElementVector= new Vector();
     
 }
 

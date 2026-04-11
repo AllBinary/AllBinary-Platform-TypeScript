@@ -57,7 +57,7 @@ public constructor (){
                                     
 
 
-                            throw Error("No Such View Command: " +this.getCommand())
+                            throw new Error("No Such View Command: " +this.getCommand())
 
                                     }
                                 
@@ -120,7 +120,7 @@ this.setObjectFile("views.admin.inventory.download.UpdateFileValidationView");
                             
 
 
-                            throw Error("No Such View Command: " +this.getCommand())
+                            throw new Error("No Such View Command: " +this.getCommand())
 
                         }
                             
@@ -138,7 +138,7 @@ this.setObjectFile("views.admin.inventory.download.UpdateFileValidationView");
 
 
 
-                            throw Error("Command Null")
+                            throw new Error("Command Null")
 
                 //: 
 } catch(e) 

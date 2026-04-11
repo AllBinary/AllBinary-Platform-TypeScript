@@ -82,9 +82,9 @@ export class Features
 private constructor (){
 
             super();
-            list= BasicArrayList();
+            list= new BasicArrayList();
     
-defaultList= BasicArrayList();
+defaultList= new BasicArrayList();
     
 this.init();
     
@@ -121,12 +121,12 @@ this.add(gameFeature);
                         )
                         
                                     {
-                                    logUtil!.put(StringMaker().
+                                    logUtil!.put(new StringMaker().
                             append(CommonLabels.getInstance()!.START_LABEL)!.append(gameFeature!.toString())!.toString(), this, commonStrings!.ADD);
     
 list.add(gameFeature);
     
-GameFeatureEventHandler.getInstance()!.fireEvent(GameFeatureEvent(gameFeature, gameFeature!.toString()));
+GameFeatureEventHandler.getInstance()!.fireEvent(new GameFeatureEvent(gameFeature, gameFeature!.toString()));
     
 
                                     }
@@ -138,7 +138,7 @@ GameFeatureEventHandler.getInstance()!.fireEvent(GameFeatureEvent(gameFeature, g
             
     public removeDefault(gameFeature: Feature){
     //var gameFeature = gameFeature
-logUtil!.put(StringMaker().
+logUtil!.put(new StringMaker().
                             append(CommonLabels.getInstance()!.START_LABEL)!.append(gameFeature!.toString())!.toString(), this, "removeDefault");
     
 this.remove(gameFeature);
@@ -160,7 +160,7 @@ defaultList!.remove(gameFeature);
     
 list.remove(gameFeature);
     
-GameFeatureEventHandler.getInstance()!.fireEvent(GameFeatureEvent(gameFeature, gameFeature!.toString()));
+GameFeatureEventHandler.getInstance()!.fireEvent(new GameFeatureEvent(gameFeature, gameFeature!.toString()));
     
 
                                     }

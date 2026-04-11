@@ -78,9 +78,9 @@ this.request= pageContext!.getRequest();
 
                          as HttpServletRequest;
     
-this.weblisketSession= WeblisketSession(hashMap, pageContext);
+this.weblisketSession= new WeblisketSession(hashMap, pageContext);
     
-this.portion= Portion(hashMap);
+this.portion= new Portion(hashMap);
     
 this.getFormData();
     
@@ -116,7 +116,7 @@ this.value= request.getParameter("VALUE");
     
 paymentEntity!.add(this.weblisketSession!.getUserName(), paymentInterface);
     
-paymentEntity!.setDefault(this.weblisketSession!.getUserName(), Integer(paymentEntity!.getLastId(this.weblisketSession!.getUserName())));
+paymentEntity!.setDefault(this.weblisketSession!.getUserName(), new Integer(paymentEntity!.getLastId(this.weblisketSession!.getUserName())));
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -178,7 +178,7 @@ paymentEntity!.setDefault(this.weblisketSession!.getUserName(), Integer(paymentE
         
 ;
     
-paymentEntity!.setDefault(this.weblisketSession!.getUserName(), Integer(this.value));
+paymentEntity!.setDefault(this.weblisketSession!.getUserName(), new Integer(this.value));
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -240,7 +240,7 @@ paymentEntity!.setDefault(this.weblisketSession!.getUserName(), Integer(this.val
         
 ;
     
-paymentEntity!.remove(this.weblisketSession!.getUserName(), Integer(this.value));
+paymentEntity!.remove(this.weblisketSession!.getUserName(), new Integer(this.value));
     
 
     var paymentInterface: PaymentInterface = paymentEntity!.getDefault(this.weblisketSession!.getUserName())!;
@@ -254,7 +254,7 @@ paymentEntity!.remove(this.weblisketSession!.getUserName(), Integer(this.value))
                                 )
                         
                                     {
-                                    paymentEntity!.setDefault(this.weblisketSession!.getUserName(), Integer(paymentEntity!.getLastId(this.weblisketSession!.getUserName())));
+                                    paymentEntity!.setDefault(this.weblisketSession!.getUserName(), new Integer(paymentEntity!.getLastId(this.weblisketSession!.getUserName())));
     
 
                                     }

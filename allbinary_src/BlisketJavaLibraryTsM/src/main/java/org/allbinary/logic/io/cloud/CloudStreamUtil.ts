@@ -125,7 +125,7 @@ var file = file
                                     }
                                 
                         else {
-                            inputStream= AbFileInputStream(file);
+                            inputStream= new AbFileInputStream(file);
     
 available= inputStream!.available();
     

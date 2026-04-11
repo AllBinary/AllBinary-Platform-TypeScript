@@ -180,7 +180,7 @@ list.add(geographicMapCellPosition);
                         if(list == basicArrayListUtil!.getImmutableInstance())
                         
                                     {
-                                    list= BasicArrayList();
+                                    list= new BasicArrayList();
     
 
     var smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;
@@ -241,7 +241,7 @@ pathCacheFactory!.remove(smallIntegerSingletonFactory!.getInstance(id));
 
                                     }
                                 
-logUtil!.put(StringMaker().
+logUtil!.put(new StringMaker().
                             append("Using Cached Path(s): ")!.append(StringUtil.getInstance()!.toString(list))!.toString(), this, commonStrings!.GET_INSTANCE);
     
 
@@ -260,7 +260,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return BasicArrayList();
+                        return new BasicArrayList();
     
 }
 

@@ -44,7 +44,7 @@ var z = z
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return StaticViewPosition((displayInfoSingleton!.getLastWidth() shr 1), (displayInfoSingleton!.getLastHeight() shr 1), z);
+                        return new StaticViewPosition((displayInfoSingleton!.getLastWidth() shr 1), (displayInfoSingleton!.getLastHeight() shr 1), z);
     
 }
 

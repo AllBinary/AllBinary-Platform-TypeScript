@@ -83,7 +83,7 @@ this.transformInfoInterface= transformInfoInterface as TransformInfoHttpInterfac
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return WeblisketSession(this.getPropertiesHashMap(), this.getPageContext());
+                        return new WeblisketSession(this.getPropertiesHashMap(), this.getPageContext());
     
 }
 

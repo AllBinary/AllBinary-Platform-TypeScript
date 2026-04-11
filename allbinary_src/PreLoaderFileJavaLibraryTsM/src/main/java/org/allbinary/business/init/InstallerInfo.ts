@@ -128,14 +128,14 @@ newFile!.createNewFile();
 ;
     
 
-    var cryptedUserName: number[] = WeakCrypt(1).
+    var cryptedUserName: number[] = new WeakCrypt(1).
                             encrypt(this.getUserName())!.encodeToByteArray()!;
         
         
 ;
     
 
-    var cryptedPassword: number[] = WeakCrypt(2).
+    var cryptedPassword: number[] = new WeakCrypt(2).
                             encrypt(this.getPassword())!.encodeToByteArray()!;
         
         
@@ -204,21 +204,21 @@ hasRead= false;
 ;
     
 
-    var decryptedUserName: string = new decode.toCharArray();
+    var decryptedUserName: string = decode.toCharArray();
         
         
 ;
     
 
-    var decryptedPassword: string = new decode.toCharArray();
+    var decryptedPassword: string = decode.toCharArray();
         
         
 ;
     
-this.setUserName(WeakCrypt(1).
+this.setUserName(new WeakCrypt(1).
                             decrypt(decryptedUserName));
     
-this.setPassword(WeakCrypt(2).
+this.setPassword(new WeakCrypt(2).
                             decrypt(decryptedPassword));
     
 

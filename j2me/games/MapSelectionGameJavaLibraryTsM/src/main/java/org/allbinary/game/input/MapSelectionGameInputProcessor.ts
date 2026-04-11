@@ -161,7 +161,7 @@ this.raceTrackGeographicMapInterfaceFactoryInterface= raceTrackGeographicMapInte
     
 this.preGameSelectorPaintable= mapSelectorPaintable;
     
-this.playerGameInput= GameInputProcessorComposite("Map Selection", this);
+this.playerGameInput= new GameInputProcessorComposite("Map Selection", this);
     
 this.lockedIndex= lockedIndex;
     

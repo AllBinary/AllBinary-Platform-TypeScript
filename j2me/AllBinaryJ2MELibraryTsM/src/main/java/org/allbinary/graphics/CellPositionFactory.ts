@@ -151,7 +151,7 @@ var i_row = i_row
         
 ;
     
-logUtil!.put(StringMaker().
+logUtil!.put(new StringMaker().
                             append("columns: ")!.appendint(this.getColumns())!.append(" rows: ")!.appendint(this.getRows())!.append(" col: ")!.appendint(i_column)!.append(" row: ")!.appendint(i_row)!.toString(), this, commonStrings!.GET_INSTANCE, e);
     
 
@@ -180,7 +180,7 @@ var i_row = i_row
                                 )
                         
                                     {
-                                    cellPositionCanBeNull= CellPosition(i_column, i_row, this.columns, this.rows);
+                                    cellPositionCanBeNull= new CellPosition(i_column, i_row, this.columns, this.rows);
     
 cellPositionArray[i_column]![i_row]= cellPositionCanBeNull;
     

@@ -46,10 +46,10 @@ export class EndLevelNoBuildingSelectedTouchButtonsBuilder extends TouchButtonsL
         
 ;
     
-list.addAll(BasicTouchButtonsBuilder().
+list.addAll(new BasicTouchButtonsBuilder().
                             getList());
     
-list.addAll(BuildingScrollTouchButtonsBuilder().
+list.addAll(new BuildingScrollTouchButtonsBuilder().
                             getList());
     
 this.add(list);

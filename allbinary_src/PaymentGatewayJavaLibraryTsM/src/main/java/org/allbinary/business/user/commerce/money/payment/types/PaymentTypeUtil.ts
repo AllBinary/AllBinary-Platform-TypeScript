@@ -223,7 +223,7 @@ i < size; i++)
 
 
 
-                            throw Error("Unknown PaymentType: " +paymentTypeString)
+                            throw new Error("Unknown PaymentType: " +paymentTypeString)
 }
 
 
@@ -261,13 +261,13 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
 stringBuffer!.append(PAYMENTGATEWAYFILEPATHSTRING);
     
 
-    var abPath: AbPath = AbPath(stringBuffer!.toString(), SHIPPINGMETHODSFILENAME) as AbPath;
+    var abPath: AbPath = new AbPath(stringBuffer!.toString(), SHIPPINGMETHODSFILENAME) as AbPath;
         
         
 ;
     
 
-    var data: string = CryptFileReader(TransformInfoObjectConfigData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoObjectConfigData.getInstance()!.ENCRYPTED_EXTENSION).
+    var data: string = new CryptFileReader(TransformInfoObjectConfigData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoObjectConfigData.getInstance()!.ENCRYPTED_EXTENSION).
                             get(abPath)!;
         
         
@@ -376,7 +376,7 @@ this.initDefault(storeName);
 
 
 
-                            throw Error("No Default: " +this.defaultName)
+                            throw new Error("No Default: " +this.defaultName)
 }
 
 

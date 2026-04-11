@@ -108,7 +108,7 @@ this.encryption= payment.get(EntryData.getInstance()!.ENCRYPTION);
 
                          as String;
     
-this.number= SuperCrypt(Integer(encryption).
+this.number= new SuperCrypt(new Integer(encryption).
                             toInt()).
                             decrypt(payment.get(PaymentData.NUMBER);
 

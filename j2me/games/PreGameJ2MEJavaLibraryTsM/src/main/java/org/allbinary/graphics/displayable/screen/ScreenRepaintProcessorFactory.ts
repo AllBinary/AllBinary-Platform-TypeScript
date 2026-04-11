@@ -64,7 +64,7 @@ var displayable = displayable
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return ScreenRepaintProcessor(displayable);
+                        return new ScreenRepaintProcessor(displayable);
     
 
                                     }

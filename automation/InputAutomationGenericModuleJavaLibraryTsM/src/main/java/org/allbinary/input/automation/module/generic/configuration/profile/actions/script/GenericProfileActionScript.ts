@@ -96,7 +96,7 @@ var node = node
                     
 this.genericProfileActionJPanel= genericProfileActionJPanel;
     
-this.setProfileActionConditionInterfaceVector(Vector());
+this.setProfileActionConditionInterfaceVector(new Vector());
     
 
     var actionScriptNode: Node = DomSearchHelper.getNode(GenericProfileActionData.SCRIPT, node.getChildNodes())!;
@@ -150,7 +150,7 @@ index < nodeList!.getLength(); index++)
                             
 
 
-                            throw Error("Profile Action Script Node Null")
+                            throw new Error("Profile Action Script Node Null")
 
                         }
                             
@@ -162,7 +162,7 @@ public constructor (genericProfileActionJPanel: GenericProfileActionJPanel){
             var genericProfileActionJPanel = genericProfileActionJPanel
 this.genericProfileActionJPanel= genericProfileActionJPanel;
     
-this.setProfileActionConditionInterfaceVector(Vector());
+this.setProfileActionConditionInterfaceVector(new Vector());
     
 }
 

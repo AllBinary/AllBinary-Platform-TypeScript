@@ -85,7 +85,7 @@ public constructor (request: HttpServletRequest){
             var request = request
 logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
     
-this.getFormData(RequestParams(request).
+this.getFormData(new RequestParams(request).
                             toHashMap());
     
 }
@@ -107,7 +107,7 @@ this.getFormData(storeHashMap);
 var storeHashMap = storeHashMap
 logUtil!.put(commonStrings!.START, this, "getFormData");
     
-this.setContextConfigurationInterface(ContextConfiguration(storeHashMap) as ContextConfigurationInterface);
+this.setContextConfigurationInterface(new ContextConfiguration(storeHashMap) as ContextConfigurationInterface);
     
 }
 

@@ -215,7 +215,7 @@ logBuffer!.add(LogFactory.getInstance("NoClassDefFoundError Failed Loaded Class:
                                     
 
 
-                            throw ClassNotFoundException("My Bytes not loaded for: " +name +"\nwith: " +"loadClassBytes")
+                            throw new ClassNotFoundException("My Bytes not loaded for: " +name +"\nwith: " +"loadClassBytes")
 
                                     }
                                 
@@ -230,7 +230,7 @@ myClass= defineClass(name, classBytes, 0, classBytes!.length);
                                     
 
 
-                            throw ClassNotFoundException("My Class Not Defineable for: " +name +"\nwith: " +"loadClassBytes")
+                            throw new ClassNotFoundException("My Class Not Defineable for: " +name +"\nwith: " +"loadClassBytes")
 
                                     }
                                 
@@ -299,7 +299,7 @@ var name = name
         try {
             cname= PATH +name.replace('.', AbPathData.getInstance()!.SEPARATORCHAR) +ENCRYPTED_EXTENSION;
     
-in= FileInputStream(cname);
+in= new FileInputStream(cname);
     
 
     var decrypted: number[] = this.abCryptUtil!.decrypt(in, this.key)!;
@@ -490,7 +490,7 @@ loadedWith= "loadClassBytes";
                                     
 
 
-                            throw ClassNotFoundException("Bytes not loaded for: " +name)
+                            throw new ClassNotFoundException("Bytes not loaded for: " +name)
 
                                     }
                                 
@@ -505,7 +505,7 @@ myClass= defineClass(name, classBytes, 0, classBytes!.length);
                                     
 
 
-                            throw ClassNotFoundException("Class Not Defineable for: " +name)
+                            throw new ClassNotFoundException("Class Not Defineable for: " +name)
 
                                     }
                                 

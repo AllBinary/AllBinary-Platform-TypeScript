@@ -194,7 +194,7 @@ var orderHistoryHashMap = orderHistoryHashMap
 
                             //For kotlin this is before the body of the constructor.
                     
-this.shippingAddress= StreetAddress(orderHistoryHashMap!.get(ShippingAddressData.NAME);
+this.shippingAddress= new StreetAddress(orderHistoryHashMap!.get(ShippingAddressData.NAME);
 
                          as String, orderHistoryHashMap!.get(ShippingAddressData.STREET);
 
@@ -208,7 +208,7 @@ this.shippingAddress= StreetAddress(orderHistoryHashMap!.get(ShippingAddressData
 
                          as String);
     
-this.billingAddress= StreetAddress(orderHistoryHashMap!.get(BillingAddressData.NAME);
+this.billingAddress= new StreetAddress(orderHistoryHashMap!.get(BillingAddressData.NAME);
 
                          as String, orderHistoryHashMap!.get(BillingAddressData.STREET);
 
@@ -222,7 +222,7 @@ this.billingAddress= StreetAddress(orderHistoryHashMap!.get(BillingAddressData.N
 
                          as String);
     
-this.payment= Payment(orderHistoryHashMap);
+this.payment= new Payment(orderHistoryHashMap);
     
 this.userName= orderHistoryHashMap!.get(UserData.USERNAME);
 
@@ -248,19 +248,19 @@ this.status= orderHistoryHashMap!.get(OrderHistoryData.STATUS);
 
                          as String;
     
-this.subTotal= Money(orderHistoryHashMap!.get(OrderHistoryData.SUBTOTAL);
+this.subTotal= new Money(orderHistoryHashMap!.get(OrderHistoryData.SUBTOTAL);
 
                          as String);
     
-this.total= Money(orderHistoryHashMap!.get(OrderHistoryData.TOTAL);
+this.total= new Money(orderHistoryHashMap!.get(OrderHistoryData.TOTAL);
 
                          as String);
     
-this.shippingCost= Money(orderHistoryHashMap!.get(OrderHistoryData.SHIPPINGCOST);
+this.shippingCost= new Money(orderHistoryHashMap!.get(OrderHistoryData.SHIPPINGCOST);
 
                          as String);
     
-this.taxes= Money(orderHistoryHashMap!.get(OrderHistoryData.TAX);
+this.taxes= new Money(orderHistoryHashMap!.get(OrderHistoryData.TAX);
 
                          as String);
     
@@ -521,19 +521,19 @@ hashMap!.put(OrderHistoryData.TRANSDATE, this.transDate);
     
 hashMap!.put(OrderHistoryData.CANCELDATE, this.cancelDate);
     
-hashMap!.put(OrderHistoryData.ORDERDATEFORMATTED, Date(this.orderDate as Long.
+hashMap!.put(OrderHistoryData.ORDERDATEFORMATTED, new Date(this.orderDate as Long.
                             longValue()).
                             toString());
     
-hashMap!.put(OrderHistoryData.SHIPPEDDATEFORMATTED, Date(this.shipDate as Long.
+hashMap!.put(OrderHistoryData.SHIPPEDDATEFORMATTED, new Date(this.shipDate as Long.
                             longValue()).
                             toString());
     
-hashMap!.put(OrderHistoryData.TRANSDATEFORMATTED, Date(this.transDate as Long.
+hashMap!.put(OrderHistoryData.TRANSDATEFORMATTED, new Date(this.transDate as Long.
                             longValue()).
                             toString());
     
-hashMap!.put(OrderHistoryData.CANCELDATEFORMATTED, Date(this.cancelDate as Long.
+hashMap!.put(OrderHistoryData.CANCELDATEFORMATTED, new Date(this.cancelDate as Long.
                             longValue()).
                             toString());
     

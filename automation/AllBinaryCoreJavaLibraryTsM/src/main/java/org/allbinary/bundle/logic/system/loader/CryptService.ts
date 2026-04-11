@@ -112,7 +112,7 @@ logUtil!.put("Set Globals: " +URLGLOBALS.getWebappPath(), this, this.commonStrin
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return ByteArrayInputStream(decrypted);
+                        return new ByteArrayInputStream(decrypted);
     
 
                 //: 
@@ -183,7 +183,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, this.commonStrings!.INIT, e2);
     
 }
 
-basicTextJDialog!.addCloseListener(ExitCloseListener());
+basicTextJDialog!.addCloseListener(new ExitCloseListener());
     
 basicTextJDialog!.setVisible(true);
     

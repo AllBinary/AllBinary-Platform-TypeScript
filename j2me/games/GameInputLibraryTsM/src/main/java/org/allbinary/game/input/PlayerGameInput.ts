@@ -57,7 +57,7 @@ export class PlayerGameInput extends GameInput
     private readonly playerInputId: number
 public constructor (gameKeyEventList: BasicArrayList, playerInputId: number)                        
 
-                            : this(gameKeyEventList, BasicArrayList(), playerInputId){
+                            : this(gameKeyEventList, new BasicArrayList(), playerInputId){
 
             super();
                 //var gameKeyEventList = gameKeyEventList
@@ -116,7 +116,7 @@ this.addForRemoval(gameKeyEvent);
 
     public onDownKeyEvent(gameKeyEvent: Integer){
     //var gameKeyEvent = gameKeyEvent
-PreLogUtil.put(StringMaker().
+PreLogUtil.put(new StringMaker().
                             append(CommonLabels.getInstance()!.START_LABEL)!.append(gameKeyEvent!.toString())!.toString(), this, gameInputStrings!.ON_DOWN_GAME_KEY);
     
 }

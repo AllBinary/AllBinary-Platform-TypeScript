@@ -65,7 +65,7 @@ this.setGeographicMapCellPositionP(geographicMapCellPosition);
                                     
 
 
-                            throw Error("No GeographicMapCellPosition")
+                            throw new Error("No GeographicMapCellPosition")
 
                                     }
                                 

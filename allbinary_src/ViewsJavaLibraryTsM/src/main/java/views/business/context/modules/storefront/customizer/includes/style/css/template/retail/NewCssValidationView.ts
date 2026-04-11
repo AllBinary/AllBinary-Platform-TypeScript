@@ -66,7 +66,7 @@ public constructor (transformInfoInterface: TransformInfoInterface)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.styleValidationInterface= CssStyleValidation();
+this.styleValidationInterface= new CssStyleValidation();
     
 }
 

@@ -54,7 +54,7 @@ export class NullRaceTrackGeographicMap
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -62,7 +62,7 @@ export class NullRaceTrackGeographicMap
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -70,7 +70,7 @@ export class NullRaceTrackGeographicMap
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -78,7 +78,7 @@ export class NullRaceTrackGeographicMap
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -91,7 +91,7 @@ var cellPositionArray = cellPositionArray
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -103,7 +103,7 @@ var y = y
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -115,7 +115,7 @@ var y = y
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -124,7 +124,7 @@ var cellTypeId = cellTypeId
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -136,7 +136,7 @@ var y = y
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -147,7 +147,7 @@ var geographicMapCellPosition = geographicMapCellPosition
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -155,7 +155,7 @@ var geographicMapCellPosition = geographicMapCellPosition
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -163,7 +163,7 @@ var geographicMapCellPosition = geographicMapCellPosition
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -171,7 +171,7 @@ var geographicMapCellPosition = geographicMapCellPosition
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -179,7 +179,7 @@ var geographicMapCellPosition = geographicMapCellPosition
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -187,7 +187,7 @@ var geographicMapCellPosition = geographicMapCellPosition
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -196,7 +196,7 @@ var aRaceTrackInfo = aRaceTrackInfo
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -204,7 +204,7 @@ var aRaceTrackInfo = aRaceTrackInfo
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -213,7 +213,7 @@ var raceTrackData = raceTrackData
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 

@@ -89,7 +89,7 @@ public constructor (id: string){
         
 ;
     
-this.id= ProductIdGenerator().
+this.id= new ProductIdGenerator().
                             getNext();
     
 this.basicItemId= id;
@@ -372,7 +372,7 @@ values.put(DownloadItemData.RETRIES, this.getRetries());
 ;
     
 
-    var time: string = new calendar.getTimeInMillis() as Long.
+    var time: string = calendar.getTimeInMillis() as Long.
                             toString();
         
         

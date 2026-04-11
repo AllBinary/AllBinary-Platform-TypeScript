@@ -86,7 +86,7 @@ public constructor (transformInfoInterface: TransformInfoInterface)
                             //For kotlin this is before the body of the constructor.
                     
 
-    var multipartRequestHashMap: HashMap<any, any> = MultipartRequestParams(this.getPageContext()).
+    var multipartRequestHashMap: HashMap<any, any> = new MultipartRequestParams(this.getPageContext()).
                             toHashMap()!;
         
         
@@ -106,7 +106,7 @@ public constructor (transformInfoInterface: TransformInfoInterface)
     
 multipartRequestHashMap!.put(LogoData.getInstance()!.IMAGEPATH, fullPath);
     
-this.heading= HeadingValidation(multipartRequestHashMap);
+this.heading= new HeadingValidation(multipartRequestHashMap);
     
 }
 

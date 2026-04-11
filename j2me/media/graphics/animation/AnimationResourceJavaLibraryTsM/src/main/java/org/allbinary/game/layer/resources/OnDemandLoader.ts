@@ -204,7 +204,7 @@ onDemandResources= onDemandResourcesFactory!.remove(onDemandIndex);
         
 ;
     
-PreLogUtil.put(StringMaker().
+PreLogUtil.put(new StringMaker().
                             append(commonStrings!.START)!.appendint(onDemandArray!.length)!.toString(), this, "initLevel");
     
 

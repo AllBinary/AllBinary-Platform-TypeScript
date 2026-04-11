@@ -85,7 +85,7 @@ public constructor (action: string){
             var action = action
 this.action= action;
     
-inputs= Vector();
+inputs= new Vector();
     
 }
 

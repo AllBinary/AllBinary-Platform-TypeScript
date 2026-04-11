@@ -27,9 +27,9 @@ export class LogTag extends TableTag {
 public constructor (){
 
             super();
-            this.setTagHelperFactory(LogHelperFactory());
+            this.setTagHelperFactory(new LogHelperFactory());
     
-this.setTagRequestHelperFactory(LogHelperFactory());
+this.setTagRequestHelperFactory(new LogHelperFactory());
     
 }
 

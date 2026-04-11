@@ -57,7 +57,7 @@ export class MineLayer extends SimpleWeaponLayer {
         
 public constructor (viewPosition: ViewPosition)                        
 
-                            : super(NAME, NoMovementFactory.getInstance()!.getMovmentInstance(), FeaturedAnimationInterfaceFactoryInterfaceFactory.getInstance()!.get(MineWeaponResources.getInstance()!.RESOURCE)!.getInstance(0), Rectangle(PointFactory.getInstance()!.ZERO_ZERO, 10, 10), viewPosition){
+                            : super(NAME, NoMovementFactory.getInstance()!.getMovmentInstance(), FeaturedAnimationInterfaceFactoryInterfaceFactory.getInstance()!.get(MineWeaponResources.getInstance()!.RESOURCE)!.getInstance(0), new Rectangle(PointFactory.getInstance()!.ZERO_ZERO, 10, 10), viewPosition){
 
             super();
             var viewPosition = viewPosition

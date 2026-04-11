@@ -80,7 +80,7 @@ public constructor (){
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -122,7 +122,7 @@ var context = context
                                     null
                                 )
                         
-                                    throw Error("No Service For ServiceReference")
+                                    throw new Error("No Service For ServiceReference")
 
 
 

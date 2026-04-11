@@ -525,7 +525,7 @@ this.lastModified= storeHashMap!.get(EntryData.getInstance()!.LASTMODIFIED);
 ;
     
 
-    var subStoreVector: BasicArrayList = tokenizer.getTokens(this.subStores, BasicArrayList())!;
+    var subStoreVector: BasicArrayList = tokenizer.getTokens(this.subStores, new BasicArrayList())!;
         
         
 ;

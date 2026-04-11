@@ -50,7 +50,7 @@ private constructor (animationInterface: Animation)
 
 public constructor (image: Image)                        
 
-                            : super(ImageAnimation(image, AnimationBehavior.getInstance())){
+                            : super(new ImageAnimation(image, AnimationBehavior.getInstance())){
 
             super();
             var image = image
@@ -62,7 +62,7 @@ public constructor (image: Image)
 
 public constructor (animationInterface: Animation, width: number, height: number)                        
 
-                            : this(ImageAnimation(AnimationFrameToImageUtil.getInstance()!.getInstance(width, height, animationInterface), AnimationBehavior.getInstance())){
+                            : this(new ImageAnimation(AnimationFrameToImageUtil.getInstance()!.getInstance(width, height, animationInterface), AnimationBehavior.getInstance())){
 
             super();
             var animationInterface = animationInterface

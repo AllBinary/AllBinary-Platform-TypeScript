@@ -720,7 +720,7 @@ this.fromDate= currentTime -rangeDateLong as Long.
                             toString();
     
 
-    var time: string = new currentTime as Long.
+    var time: string = currentTime as Long.
                             toString();
         
         

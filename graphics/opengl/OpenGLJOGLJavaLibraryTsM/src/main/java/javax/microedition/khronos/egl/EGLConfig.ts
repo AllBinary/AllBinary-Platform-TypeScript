@@ -15,7 +15,7 @@ public constructor (){
             
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 

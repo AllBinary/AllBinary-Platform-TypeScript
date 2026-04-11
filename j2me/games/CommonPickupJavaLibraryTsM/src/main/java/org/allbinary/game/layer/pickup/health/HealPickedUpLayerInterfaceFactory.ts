@@ -54,7 +54,7 @@ export class HealPickedUpLayerInterfaceFactory extends PickedUpLayerInterfaceFac
                 //@Throws(Error::class)
             
     public static init(){
-pickedUpLayerInterfaceFactoryInterface= HealPickedUpLayerInterfaceFactory();
+pickedUpLayerInterfaceFactoryInterface= new HealPickedUpLayerInterfaceFactory();
     
 }
 
@@ -69,7 +69,7 @@ pickedUpLayerInterfaceFactoryInterface= HealPickedUpLayerInterfaceFactory();
 }
 
 
-    private pool: HealLayerCircularStaticPool = new HealLayerCircularStaticPool(HealLayerFactory(), 1);
+    private pool: HealLayerCircularStaticPool = new HealLayerCircularStaticPool(new HealLayerFactory(), 1);
         
         
 private constructor ()                        

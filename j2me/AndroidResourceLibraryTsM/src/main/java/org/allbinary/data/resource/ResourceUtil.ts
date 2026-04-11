@@ -142,7 +142,7 @@ var resource = resource
                         if(DebugFactory.getInstance() != NoDebug.getInstance())
                         
                                     {
-                                    PreLogUtil.put(StringMaker().
+                                    PreLogUtil.put(new StringMaker().
                             append(resource)!.append(CommonSeps.getInstance()!.COLON)!.append(value.toString())!.toString(), this, "getResourceId");
     
 
@@ -164,14 +164,14 @@ var value = value
                         if(DebugFactory.getInstance() != NoDebug.getInstance())
                         
                                     {
-                                    PreLogUtil.put(StringMaker().
+                                    PreLogUtil.put(new StringMaker().
                             append(resource)!.append(CommonSeps.getInstance()!.COLON)!.append(value.toString())!.toString(), this, "addResource");
     
 
                         if(this.containsDuplicate(resource, value))
                         
                                     {
-                                    ForcedLogUtil.log(StringMaker().
+                                    ForcedLogUtil.log(new StringMaker().
                             append("Found Duplicate Resource: ")!.append(resource)!.toString(), this);
     
 
@@ -253,7 +253,7 @@ var value = value
 
     public setResources(resources: Resources){
     //var resources = resources
-logUtil!.put(StringMaker().
+logUtil!.put(new StringMaker().
                             append("Resource Loader: ")!.append(resources.constructor.name.toString()!)!.toString(), this, "setResources");
     
 this.resources= resources;

@@ -71,7 +71,7 @@ export class ColorCacheFactory
         try {
             logUtil!.put(commonStrings!.START, ColorCacheFactory::class, STATIC_BLOCK);
     
-cacheInterface= AutomaticCacheInterfaceFactory.getInstance(ColorCacheableFactory(), CacheTypeFactory.getInstance()!.CACHE, CachePolicyFactory.getInstance()!.THIRTY_MINUTES_TEN_THOUSAND_MAX);
+cacheInterface= AutomaticCacheInterfaceFactory.getInstance(new ColorCacheableFactory(), CacheTypeFactory.getInstance()!.CACHE, CachePolicyFactory.getInstance()!.THIRTY_MINUTES_TEN_THOUSAND_MAX);
     
 logUtil!.put(commonStrings!.END, ColorCacheFactory::class, STATIC_BLOCK);
     

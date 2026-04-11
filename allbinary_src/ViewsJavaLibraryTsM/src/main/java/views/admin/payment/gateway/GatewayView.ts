@@ -90,7 +90,7 @@ super.getFormData(request);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return PaymentGatewayComponent(this.getTransformInfoInterface(), paymentGatewayInterface).
+                        return new PaymentGatewayComponent(this.getTransformInfoInterface(), paymentGatewayInterface).
                             view();
 
                         ;

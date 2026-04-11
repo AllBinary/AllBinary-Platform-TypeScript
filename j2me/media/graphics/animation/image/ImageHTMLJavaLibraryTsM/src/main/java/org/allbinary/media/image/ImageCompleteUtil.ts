@@ -110,7 +110,7 @@ var timeDelayHelper = timeDelayHelper
                                     
 
 
-                            throw Error("isReady: Timeout Waiting or GameHtmlHasLoadedResourcesProcessor does not have this Image: " +name)
+                            throw new Error("isReady: Timeout Waiting or GameHtmlHasLoadedResourcesProcessor does not have this Image: " +name)
 
                                     }
                                 
@@ -156,7 +156,7 @@ var timeDelayHelper = timeDelayHelper
                                     
 
 
-                            throw Error("waitFor: Timeout Waiting or GameHtmlHasLoadedResourcesProcessor does not have this Image: " +name)
+                            throw new Error("waitFor: Timeout Waiting or GameHtmlHasLoadedResourcesProcessor does not have this Image: " +name)
 
                                     }
                                 

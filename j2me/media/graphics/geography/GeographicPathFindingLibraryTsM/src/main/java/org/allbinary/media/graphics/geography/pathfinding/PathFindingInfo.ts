@@ -64,9 +64,9 @@ public constructor (pathFindingNodeCostInfoFactoryInterface: PathFindingNodeCost
                 //var pathFindingNodeCostInfoFactoryInterface = pathFindingNodeCostInfoFactoryInterface
 this.pathFindingNodeCostInfoFactoryInterface= pathFindingNodeCostInfoFactoryInterface;
     
-this.startPathFindingNodeList= BasicArrayList(1);
+this.startPathFindingNodeList= new BasicArrayList(1);
     
-this.endPathFindingNodeList= BasicArrayList(1);
+this.endPathFindingNodeList= new BasicArrayList(1);
     
 }
 

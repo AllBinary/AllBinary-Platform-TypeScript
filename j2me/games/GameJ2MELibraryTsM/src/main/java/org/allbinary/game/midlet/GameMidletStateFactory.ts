@@ -61,7 +61,7 @@ private constructor (){
 
     public setCurrentGameState(currentGameState: GameState){
 var currentGameState = currentGameState
-logUtil!.put(StringMaker().
+logUtil!.put(new StringMaker().
                             append("Current GameState: ")!.append(StringUtil.getInstance()!.toString(currentGameState))!.toString(), this, "setCurrentGameState");
     
 this.currentGameState= currentGameState;

@@ -65,7 +65,7 @@ export class ImageModifierUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return ImageModifierUtil();
+                        return new ImageModifierUtil();
     
 }
 
@@ -309,7 +309,7 @@ copy(imageArray, index, image, image3);
 
     public error(e: Error){
 var e = e
-logUtil!.put(StringMaker().
+logUtil!.put(new StringMaker().
                             append(commonStrings!.EXCEPTION_LABEL)!.append(resourceCallbackStrings!.ERROR)!.append(image.getName())!.toString(), this, resourceCallbackStrings!.HANDLE_IMAGE);
     
 }

@@ -32,7 +32,7 @@ export class GameInputLayerProcessor extends LayerProcessor {
         
 public constructor ()                        
 
-                            : super(GameInputLayerManager()){
+                            : super(new GameInputLayerManager()){
 
             super();
             

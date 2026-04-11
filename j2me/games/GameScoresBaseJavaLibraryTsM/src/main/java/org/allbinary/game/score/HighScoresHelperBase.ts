@@ -56,7 +56,7 @@ export class HighScoresHelperBase
         
 ;
     
-logUtil!.put(StringMaker().
+logUtil!.put(new StringMaker().
                             append(commonStrings!.START)!.appendint(highScoresArrayP!.length)!.toString(), this, "setHighScoresArray");
     
 
@@ -95,7 +95,7 @@ this.highScoresArrayP= highScoresArrayP;
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 

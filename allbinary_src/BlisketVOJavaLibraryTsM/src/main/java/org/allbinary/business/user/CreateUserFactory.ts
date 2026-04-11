@@ -84,7 +84,7 @@ var hashMap = hashMap
                             
 
 
-                            throw Error("No Role Specified")
+                            throw new Error("No Role Specified")
 
                         }
                             
@@ -95,7 +95,7 @@ var hashMap = hashMap
                             
 
 
-                            throw Error("Null HashMap")
+                            throw new Error("Null HashMap")
 
                         }
                             

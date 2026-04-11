@@ -51,7 +51,7 @@ var pageContext = pageContext
         
 ;
     
-this.paymentProcessorComponent= PaymentProcessorComponent(transformInfoInterface);
+this.paymentProcessorComponent= new PaymentProcessorComponent(transformInfoInterface);
     
 }
 

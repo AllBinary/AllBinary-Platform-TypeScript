@@ -83,13 +83,13 @@ public constructor (workAreaName: string){
             var workAreaName = workAreaName
 initComponents();
     
-this.rootTreeNode= DefaultMutableTreeNode(workAreaName);
+this.rootTreeNode= new DefaultMutableTreeNode(workAreaName);
     
 this.workAreaPropertiesJPanel!.removeAll();
     
 updateTree();
     
-this.highlightedBasicArrayList= BasicArrayList();
+this.highlightedBasicArrayList= new BasicArrayList();
     
 }
 
@@ -102,9 +102,9 @@ this.rootTreeNode!.add(treeNode);
 
 
     public updateTree(){
-this.workAreaJTree= JTree(rootTreeNode);
+this.workAreaJTree= new JTree(rootTreeNode);
     
-this.workAreaJTree!.addMouseListener(object: java.awt.event.MouseAdapter()
+this.workAreaJTree!.addMouseListener(new object: java.awt.event.MouseAdapter()
                                 {
                                 
     public mousePressed(evt: java.awt.event.MouseEvent){
@@ -239,7 +239,7 @@ index < size; index++)
         
 ;
     
-MyGraphicItemEventService.fire(MyGraphicItemEvent(MyGraphicItemEventSource(MyGraphicItemEventService.DESELECT, node) as Object));
+MyGraphicItemEventService.fire(new MyGraphicItemEvent(new MyGraphicItemEventSource(MyGraphicItemEventService.DESELECT, node) as Object));
     
 }
 
@@ -254,7 +254,7 @@ this.highlightedBasicArrayList!.clear();
 var node = node
 highlightedBasicArrayList!.add(node);
     
-MyGraphicItemEventService.fire(MyGraphicItemEvent(MyGraphicItemEventSource(MyGraphicItemEventService.SELECT, node) as Object));
+MyGraphicItemEventService.fire(new MyGraphicItemEvent(new MyGraphicItemEventSource(MyGraphicItemEventService.SELECT, node) as Object));
     
 }
 
@@ -263,7 +263,7 @@ MyGraphicItemEventService.fire(MyGraphicItemEvent(MyGraphicItemEventSource(MyGra
             
     public removeGraphicItem(node: DefaultMutableTreeNode){
 var node = node
-MyGraphicItemEventService.fire(MyGraphicItemEvent(MyGraphicItemEventSource(MyGraphicItemEventService.DELETE, node) as Object));
+MyGraphicItemEventService.fire(new MyGraphicItemEvent(new MyGraphicItemEventSource(MyGraphicItemEventService.DELETE, node) as Object));
     
 }
 
@@ -272,7 +272,7 @@ MyGraphicItemEventService.fire(MyGraphicItemEvent(MyGraphicItemEventSource(MyGra
             
     public removeCanvas(node: DefaultMutableTreeNode){
 var node = node
-MyCanvasEventService.fire(MyCanvasEvent(MyCanvasEventSource(MyCanvasEventService.DELETE, node) as Object));
+MyCanvasEventService.fire(new MyCanvasEvent(new MyCanvasEventSource(MyCanvasEventService.DELETE, node) as Object));
     
 }
 
@@ -368,13 +368,13 @@ var treePath = treePath
                          is CanvasTreeLabel)
                         
                                     {
-                                    MyCanvasEventService.fire(MyCanvasEvent(MyCanvasEventSource(MyCanvasEventService.DUPLICATE, node) as Object));
+                                    MyCanvasEventService.fire(new MyCanvasEvent(new MyCanvasEventSource(MyCanvasEventService.DUPLICATE, node) as Object));
     
 
                                     }
                                 
                         else {
-                            MyGraphicItemEventService.fire(MyGraphicItemEvent(MyGraphicItemEventSource(MyGraphicItemEventService.DUPLICATE, node) as Object));
+                            MyGraphicItemEventService.fire(new MyGraphicItemEvent(new MyGraphicItemEventSource(MyGraphicItemEventService.DUPLICATE, node) as Object));
     
 
                         }
@@ -408,13 +408,13 @@ var angle = angle
                          is CanvasTreeLabel)
                         
                                     {
-                                    MyCanvasEventService.fire(MyCanvasEvent(MyCanvasEventSource(MyCanvasEventService.ROTATE, angle, node) as Object));
+                                    MyCanvasEventService.fire(new MyCanvasEvent(new MyCanvasEventSource(MyCanvasEventService.ROTATE, angle, node) as Object));
     
 
                                     }
                                 
                         else {
-                            MyGraphicItemEventService.fire(MyGraphicItemEvent(MyGraphicItemEventSource(MyGraphicItemEventService.ROTATE, angle, node) as Object));
+                            MyGraphicItemEventService.fire(new MyGraphicItemEvent(new MyGraphicItemEventSource(MyGraphicItemEventService.ROTATE, angle, node) as Object));
     
 
                         }
@@ -451,19 +451,19 @@ this.workAreaJTree!.expandPath(treePath);
 
 
     initComponents(){
-itemJPopupMenu= javax.swing.JPopupMenu();
+itemJPopupMenu= new javax.swing.JPopupMenu();
     
-deleteJMenuItem= javax.swing.JMenuItem();
+deleteJMenuItem= new javax.swing.JMenuItem();
     
-copyJMenuItem= javax.swing.JMenuItem();
+copyJMenuItem= new javax.swing.JMenuItem();
     
-rotateJMenuItem= javax.swing.JMenuItem();
+rotateJMenuItem= new javax.swing.JMenuItem();
     
-itemJScrollPane1= javax.swing.JScrollPane();
+itemJScrollPane1= new javax.swing.JScrollPane();
     
-workAreaPropertiesJPanel= javax.swing.JPanel();
+workAreaPropertiesJPanel= new javax.swing.JPanel();
     
-itemJPopupMenu!.addPopupMenuListener(object: javax.swing.event.PopupMenuListener()
+itemJPopupMenu!.addPopupMenuListener(new object: javax.swing.event.PopupMenuListener()
                                 {
                                 
     public popupMenuCanceled(evt: javax.swing.event.PopupMenuEvent){
@@ -487,7 +487,7 @@ itemJPopupMenuPopupMenuWillBecomeVisible(evt);
     
 deleteJMenuItem!.setText("Delete");
     
-deleteJMenuItem!.addMouseListener(object: java.awt.event.MouseAdapter()
+deleteJMenuItem!.addMouseListener(new object: java.awt.event.MouseAdapter()
                                 {
                                 
     public mousePressed(evt: java.awt.event.MouseEvent){
@@ -503,7 +503,7 @@ itemJPopupMenu!.add(deleteJMenuItem);
     
 copyJMenuItem!.setText("Copy");
     
-copyJMenuItem!.addMouseListener(object: java.awt.event.MouseAdapter()
+copyJMenuItem!.addMouseListener(new object: java.awt.event.MouseAdapter()
                                 {
                                 
     public mousePressed(evt: java.awt.event.MouseEvent){
@@ -519,7 +519,7 @@ itemJPopupMenu!.add(copyJMenuItem);
     
 rotateJMenuItem!.setText("Rotate 45*");
     
-rotateJMenuItem!.addMouseListener(object: java.awt.event.MouseAdapter()
+rotateJMenuItem!.addMouseListener(new object: java.awt.event.MouseAdapter()
                                 {
                                 
     public mousePressed(evt: java.awt.event.MouseEvent){
@@ -533,9 +533,9 @@ rotateJMenuItemMousePressed(evt);
     
 itemJPopupMenu!.add(rotateJMenuItem);
     
-setLayout(java.awt.GridLayout(1, 1));
+setLayout(new java.awt.GridLayout(1, 1));
     
-workAreaPropertiesJPanel!.addMouseListener(object: java.awt.event.MouseAdapter()
+workAreaPropertiesJPanel!.addMouseListener(new object: java.awt.event.MouseAdapter()
                                 {
                                 
     public mousePressed(evt: java.awt.event.MouseEvent){
@@ -547,7 +547,7 @@ workAreaPropertiesJPanelMousePressed(evt);
                                 }
                             );
     
-workAreaPropertiesJPanel!.setLayout(java.awt.GridLayout(1, 0));
+workAreaPropertiesJPanel!.setLayout(new java.awt.GridLayout(1, 0));
     
 itemJScrollPane1!.setViewportView(workAreaPropertiesJPanel);
     
@@ -679,7 +679,7 @@ index < selectedTreePathArray!.length; index++)
                          is CanvasTreeLabel)
                         
                                     {
-                                    MyCanvasEventService.fire(MyCanvasEvent(MyCanvasEventSource(MyCanvasEventService.SELECT, defaultMutableTreeNode) as Object));
+                                    MyCanvasEventService.fire(new MyCanvasEvent(new MyCanvasEventSource(MyCanvasEventService.SELECT, defaultMutableTreeNode) as Object));
     
 
                                     }

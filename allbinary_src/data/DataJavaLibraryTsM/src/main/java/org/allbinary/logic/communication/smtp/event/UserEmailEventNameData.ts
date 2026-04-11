@@ -156,7 +156,7 @@ var userEmailEventNameString = userEmailEventNameString
                                     
 
 
-                            throw Error()
+                            throw new Error()
 
                                     }
                                 

@@ -58,7 +58,7 @@ this.hashMap= hashMap;
     
 this.pageContext= pageContext;
     
-this.portion= Portion(hashMap);
+this.portion= new Portion(hashMap);
     
 }
 

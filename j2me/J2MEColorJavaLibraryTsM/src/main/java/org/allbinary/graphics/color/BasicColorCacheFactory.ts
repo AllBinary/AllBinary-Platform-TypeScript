@@ -55,7 +55,7 @@ private constructor (){
 
     public add(basicDefaultColor: BasicColor){
     //var basicDefaultColor = basicDefaultColor
-hashtable.put(Integer(basicDefaultColor!.toInt()), basicDefaultColor);
+hashtable.put(new Integer(basicDefaultColor!.toInt()), basicDefaultColor);
     
 }
 
@@ -77,7 +77,7 @@ hashtable.put(Integer(basicDefaultColor!.toInt()), basicDefaultColor);
                                 )
                         
                                     {
-                                    basicColor= BasicColor(integer.toInt());
+                                    basicColor= new BasicColor(integer.toInt());
     
 hashtable.put(integer, basicColor);
     

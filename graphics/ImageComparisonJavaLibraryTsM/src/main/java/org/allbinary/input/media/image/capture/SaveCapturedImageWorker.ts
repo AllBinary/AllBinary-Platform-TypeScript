@@ -133,7 +133,7 @@ timeHelper!.setStartTime();
         
 ;
     
-CapturedImageInputOutput().
+new CapturedImageInputOutput().
                             save(screenBufferedImage, capturedImageWorkerResultsEvent!.getFrame());
     
 capturedImageWorkerResultsEventVector!.remove(capturedImageWorkerResultsEvent);

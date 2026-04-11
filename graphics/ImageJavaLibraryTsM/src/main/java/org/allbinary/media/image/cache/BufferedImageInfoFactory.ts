@@ -70,7 +70,7 @@ stringbuffer.appendint(type);
                                 )
                         
                                     {
-                                    bufferedImageInfo= BufferedImageInfo(width, height, type);
+                                    bufferedImageInfo= new BufferedImageInfo(width, height, type);
     
 hashMap!.put(key, bufferedImageInfo);
     

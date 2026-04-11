@@ -81,7 +81,7 @@ this.webappPath= value;
 
         try {
             
-    var anyType: any = CustomLoaderHelperFactory().
+    var anyType: any = new CustomLoaderHelperFactory().
                             getInstance(this.propertiesHashMap, pageContext)!;
         
         
@@ -166,7 +166,7 @@ setMethod!.invoke(anyType, methodArgs);
                                 )
                         
                                     {
-                                    this.propertiesHashMap= HashMap<any, any>();
+                                    this.propertiesHashMap= new HashMap<any, any>();
     
 
                         if(command.compareTo(org.allbinary.globals.GLOBALS2.SET) == 0)

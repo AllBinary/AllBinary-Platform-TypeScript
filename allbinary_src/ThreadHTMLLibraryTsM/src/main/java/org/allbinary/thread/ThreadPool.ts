@@ -171,7 +171,7 @@ currentPriorityRunnable!.run();
                                     {
                                     isAlive= true;
     
-taskQueue= BasicArrayList();
+taskQueue= new BasicArrayList();
     
 
                                     }

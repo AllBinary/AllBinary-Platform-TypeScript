@@ -323,7 +323,7 @@ export class RTSLayer extends MultiPlayerGameLayer
         
 protected constructor (remoteInfo: RemoteInfo, groupInterface: Group[], rootName: string, name: string, healthInterface: Health, rtsFormInput: RTSFormInput, animationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, emptyAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, baseAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, buildAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, verticleBuildAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface: ProceduralAnimationInterfaceFactoryInterface, rectangle: Rectangle, x: number, y: number)                        
 
-                            : this(remoteInfo, groupInterface, rootName, name, healthInterface, rtsFormInput, animationInterfaceFactoryInterface, emptyAnimationInterfaceFactoryInterface, baseAnimationInterfaceFactoryInterface, buildAnimationInterfaceFactoryInterface, verticleBuildAnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface, rectangle, x, y, TileLayerPositionIntoViewPosition()){
+                            : this(remoteInfo, groupInterface, rootName, name, healthInterface, rtsFormInput, animationInterfaceFactoryInterface, emptyAnimationInterfaceFactoryInterface, baseAnimationInterfaceFactoryInterface, buildAnimationInterfaceFactoryInterface, verticleBuildAnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface, rectangle, x, y, new TileLayerPositionIntoViewPosition()){
 
             super();
                 //var remoteInfo = remoteInfo
@@ -420,13 +420,13 @@ this.initSensorRangeAnimation= animation;
     
 this.animationInterface= this.initAnimationInterface;
     
-this.geographicMapCellPositionAreaBase= GeographicMapCellPositionArea(this);
+this.geographicMapCellPositionAreaBase= new GeographicMapCellPositionArea(this);
     
 }
 
 protected constructor (remoteInfo: RemoteInfo)                        
 
-                            : super(remoteInfo, GroupFactory.getInstance()!.NULL_GROUP_ARRAY, RectangleFactory.SINGLETON, TileLayerPositionIntoViewPosition()){
+                            : super(remoteInfo, GroupFactory.getInstance()!.NULL_GROUP_ARRAY, RectangleFactory.SINGLETON, new TileLayerPositionIntoViewPosition()){
 
             super();
                 //var remoteInfo = remoteInfo
@@ -959,7 +959,7 @@ waypointBehaviorBase!.setTarget(targetGameLayer as PathFindingLayerInterface, an
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -967,7 +967,7 @@ waypointBehaviorBase!.setTarget(targetGameLayer as PathFindingLayerInterface, an
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -1090,7 +1090,7 @@ var ownerLayer = ownerLayer
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -1098,7 +1098,7 @@ var ownerLayer = ownerLayer
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -1156,7 +1156,7 @@ var ownerLayer = ownerLayer
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -1184,7 +1184,7 @@ var ownerLayer = ownerLayer
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -1194,7 +1194,7 @@ var ownerLayer = ownerLayer
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -1203,7 +1203,7 @@ var ownerLayer = ownerLayer
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -1232,7 +1232,7 @@ var resource = resource
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -1265,7 +1265,7 @@ var resource = resource
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 

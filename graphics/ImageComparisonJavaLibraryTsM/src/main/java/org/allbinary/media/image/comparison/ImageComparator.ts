@@ -207,7 +207,7 @@ this.imageComparatorConstraintsInterface= imageComparatorConstraintsInterface;
                                     
 
 
-                            throw Error("Input images must not be null.")
+                            throw new Error("Input images must not be null.")
 
                                     }
                                 

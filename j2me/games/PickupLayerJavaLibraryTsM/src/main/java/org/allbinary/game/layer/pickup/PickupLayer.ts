@@ -74,7 +74,7 @@ export class PickupLayer extends MultiPlayerGameLayer
         
 public constructor (name: string, remoteInfo: RemoteInfo, viewPosition: ViewPosition)                        
 
-                            : super(remoteInfo, BasicGroupFactory.getInstance()!.NONE_ARRAY, name, Rectangle(PointFactory.getInstance()!.ZERO_ZERO, 0, 0), viewPosition){
+                            : super(remoteInfo, BasicGroupFactory.getInstance()!.NONE_ARRAY, name, new Rectangle(PointFactory.getInstance()!.ZERO_ZERO, 0, 0), viewPosition){
 
             super();
                 //var name = name

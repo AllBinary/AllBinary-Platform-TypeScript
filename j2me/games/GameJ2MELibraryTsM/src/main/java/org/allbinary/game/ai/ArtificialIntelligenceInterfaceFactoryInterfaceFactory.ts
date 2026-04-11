@@ -55,7 +55,7 @@ export class ArtificialIntelligenceInterfaceFactoryInterfaceFactory
         
 
     public clear(){
-list= BasicArrayList();
+list= new BasicArrayList();
     
 }
 

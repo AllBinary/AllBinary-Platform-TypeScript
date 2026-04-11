@@ -211,7 +211,7 @@ setHeight(maxY -minY);
 ;
     
 
-    var s: string = StringMaker().
+    var s: string = new StringMaker().
                             append(commonLabels!.WIDTH_LABEL)!.appendint(getWidth())!.append(commonLabels!.HEIGHT_LABEL)!.appendint(getHeight())!.append(" max: ")!.appendint(max)!.append(" middle: ")!.appendint(middle)!.toString()!;
         
         
@@ -244,7 +244,7 @@ dy= middle -currentMiddleY;
 var hashMap = hashMap
 this.calculate(hashMap);
     
-logUtil!.put(StringMaker().
+logUtil!.put(new StringMaker().
                             append(" dx: ")!.appendint(dx)!.append(" dy: ")!.appendint(dy)!.toString(), this, commonStrings!.GET_INSTANCE);
     
 

@@ -78,7 +78,7 @@ var config = config
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return OpenGLBitmap(Bitmap.createBitmap(width, height, config.bitmapConfig));
+                        return new OpenGLBitmap(Bitmap.createBitmap(width, height, config.bitmapConfig));
     
 }
 
@@ -91,7 +91,7 @@ var inputStream = inputStream
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return OpenGLBitmap(BitmapFactory.decodeStream(inputStream));
+                        return new OpenGLBitmap(BitmapFactory.decodeStream(inputStream));
     
 }
 
@@ -102,7 +102,7 @@ var inputStream = inputStream
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return OpenGLBitmap(
+                        return new OpenGLBitmap(
                                     (image as AndroidImageInterface).getBitmap());
     
 }

@@ -82,7 +82,7 @@ var base = base
 
         try {
             
-    var fileAbPath: AbPath = AbFilePath(path +AbPathData.getInstance()!.SEPARATOR +href) as AbPath;
+    var fileAbPath: AbPath = new AbFilePath(path +AbPathData.getInstance()!.SEPARATOR +href) as AbPath;
         
         
 ;
@@ -100,7 +100,7 @@ var base = base
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return StreamSource(CryptFileReader(TransformInfoTemplateData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoTemplateData.getInstance()!.ENCRYPTED_EXTENSION).
+                        return new StreamSource(new CryptFileReader(TransformInfoTemplateData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoTemplateData.getInstance()!.ENCRYPTED_EXTENSION).
                             getInputStream(fileAbPath));
     
 
@@ -119,7 +119,7 @@ var base = base
 
 
 
-                            throw TransformerException(e)
+                            throw new TransformerException(e)
 }
 
 }

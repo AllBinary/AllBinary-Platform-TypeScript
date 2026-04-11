@@ -121,7 +121,7 @@ isWebappPathSet= true;
                             
 
 
-                            throw Error("Webapp Path is not set")
+                            throw new Error("Webapp Path is not set")
 
                         }
                             

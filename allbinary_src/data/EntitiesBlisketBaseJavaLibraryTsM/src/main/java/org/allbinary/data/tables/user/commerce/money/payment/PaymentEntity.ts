@@ -83,7 +83,7 @@ export class PaymentEntity extends AbSqlBean
         
 public constructor ()                        
 
-                            : super(UserDbInitInfo()){
+                            : super(new UserDbInitInfo()){
 
             super();
             
@@ -421,7 +421,7 @@ var paymentInterface = paymentInterface
         
 ;
     
-vector.add(PaymentIdGenerator().
+vector.add(new PaymentIdGenerator().
                             getNext());
     
 vector.add(userName);
@@ -435,16 +435,16 @@ vector.add(paymentInterface!.getType());
 vector.add(paymentInterface!.getExpiration());
     
 
-    var random: number = Random().
+    var random: number = new Random().
                             nextInt(SuperCrypt.KEYMAX)!;
         
         
 ;
     
-vector.add(SuperCrypt(random).
+vector.add(new SuperCrypt(random).
                             encrypt(paymentInterface!.getNumber()));
     
-vector.add(Integer(random).
+vector.add(new Integer(random).
                             toString());
     
 
@@ -454,7 +454,7 @@ vector.add(Integer(random).
 ;
     
 
-    var time: string = new calendar.getTimeInMillis() as Long.
+    var time: string = calendar.getTimeInMillis() as Long.
                             toString();
         
         

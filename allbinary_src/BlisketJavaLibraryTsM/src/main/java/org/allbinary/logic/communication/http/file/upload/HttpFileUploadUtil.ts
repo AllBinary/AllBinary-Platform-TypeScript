@@ -210,7 +210,7 @@ var anyType = anyType
                             
 
 
-                            throw Error("Object Not Instance Of FileItem but is: " +ClassUtil.viewAll(anyType, CommonSeps.getInstance()!.NEW_LINE))
+                            throw new Error("Object Not Instance Of FileItem but is: " +ClassUtil.viewAll(anyType, CommonSeps.getInstance()!.NEW_LINE))
 
                         }
                             

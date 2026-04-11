@@ -70,7 +70,7 @@ public constructor (abeClientInformation: AbeClientInformationInterface, file: F
             super();
                 //var abeClientInformation = abeClientInformation
     //var file = file
-this.setHashMap(HashMap<any, any>());
+this.setHashMap(new HashMap<any, any>());
     
 
     var bytes: number[] = new Array(100000);
@@ -91,7 +91,7 @@ this.setHashMap(HashMap<any, any>());
 ;
     
 
-    var data: string = new bytes.decodeToString();
+    var data: string = bytes.decodeToString();
         
         
 ;
@@ -142,7 +142,7 @@ index < nameNodeList!.getLength(); index++)
         
 ;
     
-this.add(InputAutomationModuleConfiguration(abeClientInformation, node));
+this.add(new InputAutomationModuleConfiguration(abeClientInformation, node));
     
 }
 
@@ -156,7 +156,7 @@ public constructor (abeClientInformation: AbeClientInformationInterface, documen
             super();
                 //var abeClientInformation = abeClientInformation
     //var document = document
-this.setHashMap(HashMap<any, any>());
+this.setHashMap(new HashMap<any, any>());
     
 
     var nameNodeList: NodeList = document.getElementsByTagName(InputAutomationModuleData.NAME)!;
@@ -182,7 +182,7 @@ index < nameNodeList!.getLength(); index++)
         
 ;
     
-this.add(InputAutomationModuleConfiguration(abeClientInformation, node));
+this.add(new InputAutomationModuleConfiguration(abeClientInformation, node));
     
 }
 
@@ -192,7 +192,7 @@ public constructor (inputAutomationModuleConfigurationList: List<InputAutomation
 
             super();
                 //var inputAutomationModuleConfigurationList = inputAutomationModuleConfigurationList
-this.setHashMap(HashMap<any, any>());
+this.setHashMap(new HashMap<any, any>());
     
 
     var size: number = inputAutomationModuleConfigurationList!.size!;
@@ -225,7 +225,7 @@ this.add(inputAutomationModuleConfiguration);
 public constructor (){
 
             super();
-            this.setHashMap(HashMap<any, any>());
+            this.setHashMap(new HashMap<any, any>());
     
 }
 

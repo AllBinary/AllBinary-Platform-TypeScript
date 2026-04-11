@@ -199,7 +199,7 @@ IMAGE[index]= NullCanvas.NULL_IMAGE;
                         if(AndroidBasicTitleProgressBar.background != 0)
                         
                                     {
-                                    ResourceUtil.getInstance()!.addResource(RESOURCE, Integer(AndroidBasicTitleProgressBar.background));
+                                    ResourceUtil.getInstance()!.addResource(RESOURCE, new Integer(AndroidBasicTitleProgressBar.background));
     
 GameFeatureImageCacheFactory.init();
     
@@ -229,13 +229,13 @@ var activity = activity
                                     {
                                     this.midletActivity= activity;
     
-this.showTitleProgressBarRunnable= ShowTitleProgressBarRunnable(this.midletActivity, this);
+this.showTitleProgressBarRunnable= new ShowTitleProgressBarRunnable(this.midletActivity, this);
     
-this.dismissTitleProgressBarRunnable= DismissTitleProgressBarRunnable(this.midletActivity, this);
+this.dismissTitleProgressBarRunnable= new DismissTitleProgressBarRunnable(this.midletActivity, this);
     
-this.titleProgressDialogSetProgressRunnable= TitleProgressBarSetProgressRunnable(this.midletActivity, this);
+this.titleProgressDialogSetProgressRunnable= new TitleProgressBarSetProgressRunnable(this.midletActivity, this);
     
-this.titleProgressDialogPortionSetProgressRunnable= TitleProgressBarPortionSetProgressRunnable(this.midletActivity, this);
+this.titleProgressDialogPortionSetProgressRunnable= new TitleProgressBarPortionSetProgressRunnable(this.midletActivity, this);
     
 this.loadProgressImages();
     
@@ -310,7 +310,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e);
                                     }
                                 
                         else {
-                            this.animation= ImageAnimation(currentImage, AnimationBehavior.getInstance());
+                            this.animation= new ImageAnimation(currentImage, AnimationBehavior.getInstance());
     
 
                         }

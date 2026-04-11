@@ -100,7 +100,7 @@ var y = y
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 

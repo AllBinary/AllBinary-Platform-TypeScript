@@ -49,7 +49,7 @@ var pageContext = pageContext
 
         try {
             
-                        if(InitInfoEntity().
+                        if(new InitInfoEntity().
                             dropTable())
                         
 
@@ -97,7 +97,7 @@ var pageContext = pageContext
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return InitInfoEntity().
+                        return new InitInfoEntity().
                             createTable();
 
                         ;

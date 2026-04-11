@@ -46,7 +46,7 @@ protected constructor (){
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -57,7 +57,7 @@ protected constructor (){
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -65,7 +65,7 @@ protected constructor (){
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 

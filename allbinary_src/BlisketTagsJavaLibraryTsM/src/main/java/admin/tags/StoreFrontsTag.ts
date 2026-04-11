@@ -55,9 +55,9 @@ export class StoreFrontsTag extends TableTag {
 public constructor (){
 
             super();
-            this.setTagHelperFactory(StoreFrontsHelperFactory());
+            this.setTagHelperFactory(new StoreFrontsHelperFactory());
     
-this.setTagRequestHelperFactory(StoreFrontsRequestHelperFactory());
+this.setTagRequestHelperFactory(new StoreFrontsRequestHelperFactory());
     
 }
 

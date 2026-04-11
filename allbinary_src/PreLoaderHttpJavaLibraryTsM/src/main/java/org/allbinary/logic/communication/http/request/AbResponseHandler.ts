@@ -94,7 +94,7 @@ AbResponseHandler.sendRedirect(pageContext, FREEBLISKET_PATH_GLOBALS.getInstance
 
 
 
-                            throw JspTagException()
+                            throw new JspTagException()
 }
 
 }
@@ -140,7 +140,7 @@ AbResponseHandler.sendRedirect(pageContext, FREEBLISKET_PATH_GLOBALS.getInstance
 
 
 
-                            throw ServletException()
+                            throw new ServletException()
 }
 
 }
@@ -186,7 +186,7 @@ AbResponseHandler.sendRedirect(pageContext, FREEBLISKET_PATH_GLOBALS.getInstance
 
 
 
-                            throw JspTagException()
+                            throw new JspTagException()
 }
 
 }
@@ -232,7 +232,7 @@ AbResponseHandler.sendRedirect(pageContext, FREEBLISKET_PATH_GLOBALS.getInstance
 
 
 
-                            throw ServletException()
+                            throw new ServletException()
 }
 
 }

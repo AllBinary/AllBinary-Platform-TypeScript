@@ -109,7 +109,7 @@ i < size; i++)
 
 
 
-                            throw Error("Unknown PaymentType: " +paymentTypeString)
+                            throw new Error("Unknown PaymentType: " +paymentTypeString)
 }
 
 

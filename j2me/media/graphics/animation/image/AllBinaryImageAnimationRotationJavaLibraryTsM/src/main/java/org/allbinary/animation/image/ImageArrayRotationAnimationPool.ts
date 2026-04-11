@@ -34,7 +34,7 @@ import { PoolInterface } from "../../../../org/allbinary/logic/util/cache/PoolIn
 export class ImageArrayRotationAnimationPool extends BasicArrayListResetablePool {
         
 
-    private IMAGE_ROTATION_ANIMATION_POOL: PoolInterface = new ImageArrayRotationAnimationPool(ImageArrayRotationAnimationCacheableInterfaceFactory());
+    private IMAGE_ROTATION_ANIMATION_POOL: PoolInterface = new ImageArrayRotationAnimationPool(new ImageArrayRotationAnimationCacheableInterfaceFactory());
         
         
 

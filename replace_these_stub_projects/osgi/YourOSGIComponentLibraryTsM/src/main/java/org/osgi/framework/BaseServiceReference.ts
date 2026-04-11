@@ -30,7 +30,7 @@ var key = key
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -38,7 +38,7 @@ var key = key
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -47,7 +47,7 @@ var o = o
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 

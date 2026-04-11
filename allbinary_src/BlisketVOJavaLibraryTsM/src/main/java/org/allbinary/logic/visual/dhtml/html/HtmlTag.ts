@@ -31,7 +31,7 @@ export class HtmlTag
 public constructor (){
 
             super();
-            this.otherAttributes= HashMap<any, any>();
+            this.otherAttributes= new HashMap<any, any>();
     
 }
 

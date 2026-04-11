@@ -56,7 +56,7 @@ public constructor (storeFrontInterface: StoreFrontInterface){
 
             super();
             var storeFrontInterface = storeFrontInterface
-this.totalInventorySaleValueMoney= Money();
+this.totalInventorySaleValueMoney= new Money();
     
 
     var inventoryEntityInterface: InventoryEntityInterface = InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!;

@@ -117,7 +117,7 @@ public constructor (hashMap: HashMap<any, any>, httpServletRequest: HttpServletR
             super();
             var hashMap = hashMap
 var httpServletRequest = httpServletRequest
-this.weblisketSession= WeblisketSession(hashMap, httpServletRequest);
+this.weblisketSession= new WeblisketSession(hashMap, httpServletRequest);
     
 this.getFormData();
     
@@ -160,7 +160,7 @@ this.timeout= this.weblisketSession!.getTimeout();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Integer(TagSupport.EVAL_BODY_INCLUDE);
+                        return new Integer(TagSupport.EVAL_BODY_INCLUDE);
     
 
                 //: 
@@ -673,13 +673,13 @@ index < size; index++)
                                  && attemptsInteger!.toInt() > 0)
                         
                                     {
-                                    this.weblisketSession!.setAttempts(Integer(attemptsInteger!.toInt() +1));
+                                    this.weblisketSession!.setAttempts(new Integer(attemptsInteger!.toInt() +1));
     
 
                                     }
                                 
                         else {
-                            this.weblisketSession!.setAttempts(Integer(1));
+                            this.weblisketSession!.setAttempts(new Integer(1));
     
 
                         }
@@ -735,7 +735,7 @@ login= userEntityInterface!.login(userName, password);
                         if(userInterface!.isSessionValid())
                         
                                     {
-                                    this.weblisketSession!.setAttempts(Integer(0));
+                                    this.weblisketSession!.setAttempts(new Integer(0));
     
 
 

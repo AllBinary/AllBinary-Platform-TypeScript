@@ -56,7 +56,7 @@ public constructor (node: Node){
 
             super();
             var node = node
-this.setTimeCreated(TimeCreated(DomNodeHelper.getTextNodeValue(node)));
+this.setTimeCreated(new TimeCreated(DomNodeHelper.getTextNodeValue(node)));
     
 }
 

@@ -149,7 +149,7 @@ gameNotificationEventHandler!.addListener(this);
     getPoint(x: number, y: number): GPoint{
 var x = x
 var y = y
-point= CustomGPoint(0, 0);
+point= new CustomGPoint(0, 0);
     
 this.point.setX(x);
     
@@ -187,7 +187,7 @@ this.point.setY(y);
                                     {
                                     this.lastString= string;
     
-logUtil!.put(StringMaker().
+logUtil!.put(new StringMaker().
                             append(PERMANENT_GAME_NOTIFICATION)!.append(string)!.toString(), this, commonStrings!.ADD);
     
 

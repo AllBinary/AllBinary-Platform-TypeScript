@@ -147,7 +147,7 @@ var stringVector = stringVector
 ;
     
 
-    var keywordVector: BasicArrayList = tokenizer.getTokens(keywords, BasicArrayList())!;
+    var keywordVector: BasicArrayList = tokenizer.getTokens(keywords, new BasicArrayList())!;
         
         
 ;
@@ -174,7 +174,7 @@ cleanString= cleanString!.trim();
     
 
                         if(cleanString!.indexOf('-') !=  -1)
-                        cleanString= Replace("-", commonSeps!.SPACE).
+                        cleanString= new Replace("-", commonSeps!.SPACE).
                             all(cleanString)
 hashSet!.add(cleanString);
     
@@ -189,7 +189,7 @@ hashSet!.add(cleanString);
 ;
     
 
-    var subKeywordVector: BasicArrayList = spaceTokenizer!.getTokens(cleanString, BasicArrayList())!;
+    var subKeywordVector: BasicArrayList = spaceTokenizer!.getTokens(cleanString, new BasicArrayList())!;
         
         
 ;

@@ -196,7 +196,7 @@ this.process();
     //var nextSongSound = nextSongSound
     //var leftVolume = leftVolume
     //var rightVolume = rightVolume
-PreLogUtil.put(StringMaker().
+PreLogUtil.put(new StringMaker().
                             append(NEXT_SONG)!.append(nextSongSound!.getResource())!.toString(), this, commonStrings!.PROCESS);
     
 this.nextSongSound= nextSongSound;
@@ -306,7 +306,7 @@ this.timeDelayHelper!.delay= duration.toInt();
         
 ;
     
-PreLogUtil.put(StringMaker().
+PreLogUtil.put(new StringMaker().
                             append(NO_DURATION_FOR)!.append(this.currentSongSound!.getResource())!.toString(), this, commonStrings!.PROCESS);
     
 this.currentSongSound!.getPlayerP()!.addPlayerListener(playerListener);
@@ -324,10 +324,10 @@ this.noDuration= true;
                         if(endingCurrentSongSound == startingCurrentSongSound && endingCurrentSongSound!.getPlayerP()!.getState() == Player.STARTED)
                         
                                     {
-                                    PreLogUtil.put(StringMaker().
+                                    PreLogUtil.put(new StringMaker().
                             append(ALREADY_PLAYING)!.append(endingCurrentSongSound!.getResource())!.toString(), this, commonStrings!.PROCESS);
     
-PreLogUtil.put(StringMaker().
+PreLogUtil.put(new StringMaker().
                             append(STOPPING)!.append(endingCurrentSongSound!.getResource())!.append(SONG)!.appendlong(duration)!.toString(), this, commonStrings!.PROCESS);
     
 endingCurrentSongSound!.getPlayerP()!.stop();
@@ -342,7 +342,7 @@ this.waitForStateChange(endingCurrentSongSound, startingCurrentSongSound);
                         if(endingCurrentSongSound!.getPlayerP()!.getState() == Player.STARTED)
                         
                                     {
-                                    PreLogUtil.put(StringMaker().
+                                    PreLogUtil.put(new StringMaker().
                             append(STOPPING)!.append(endingCurrentSongSound!.getResource())!.append(SONG)!.appendlong(duration)!.toString(), this, commonStrings!.PROCESS);
     
 endingCurrentSongSound!.getPlayerP()!.stop();
@@ -353,7 +353,7 @@ this.waitForStateChange(endingCurrentSongSound, startingCurrentSongSound);
                                     }
                                 
                         else {
-                            PreLogUtil.put(StringMaker().
+                            PreLogUtil.put(new StringMaker().
                             append(ALREADY_ENDED)!.append(PLAY)!.append(startingCurrentSongSound!.getResource())!.toString(), this, commonStrings!.PROCESS);
     
 
@@ -379,7 +379,7 @@ startingCurrentSongSound!.getPlayerP()!.start();
                                     }
                                 
                         else {
-                            PreLogUtil.put(StringMaker().
+                            PreLogUtil.put(new StringMaker().
                             append(PLAY)!.append(this.currentSongSound!.getResource())!.append(SONG)!.appendlong(duration)!.toString(), this, commonStrings!.PROCESS);
     
 this.currentSongSound!.getPlayerP()!.start();
@@ -430,7 +430,7 @@ Thread.sleep(100);
     
 }
 
-PreLogUtil.put(StringMaker().
+PreLogUtil.put(new StringMaker().
                             append(playerStateUtil!.convert(endingCurrentSongSound!.getPlayerP()!.getState()))!.append(commonSeps!.SPACE)!.append(PLAY)!.append(startingCurrentSongSound!.getResource())!.toString(), this, commonStrings!.PROCESS);
     
 startingCurrentSongSound!.getPlayerP()!.start();
@@ -455,7 +455,7 @@ startingCurrentSongSound!.getPlayerP()!.start();
                                     {
                                     stopped= true;
     
-PreLogUtil.put(StringMaker().
+PreLogUtil.put(new StringMaker().
                             append(ENDING)!.append(currentSongSound!.getResource())!.toString(), this, commonStrings!.PROCESS);
     
 currentSongSound!.getPlayerP()!.stop();
@@ -465,7 +465,7 @@ currentSongSound!.getPlayerP()!.stop();
                                 
 this.timeDelayHelper!.setStartTime(0);
     
-PreLogUtil.put(StringMaker().
+PreLogUtil.put(new StringMaker().
                             append(commonStrings!.END)!.append(StringUtil.getInstance()!.toString(currentSongSound))!.toString(), this, commonStrings!.END);
     
 

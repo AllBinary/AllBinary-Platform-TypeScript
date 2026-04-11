@@ -514,7 +514,7 @@ var path = path
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return AbPath();
+                        return new AbPath();
     
 
                                     }
@@ -545,7 +545,7 @@ var path = path
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return AbPath(categoryName);
+                        return new AbPath(categoryName);
     
 
                         }

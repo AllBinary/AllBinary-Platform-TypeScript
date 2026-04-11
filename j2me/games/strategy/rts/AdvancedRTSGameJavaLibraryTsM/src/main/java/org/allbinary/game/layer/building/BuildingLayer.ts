@@ -213,9 +213,9 @@ public constructor (remoteInfo: RemoteInfo, groupInterface: Group[], rootName: s
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setCollidableInferface(CollidableRTSBehavior(this, true));
+this.setCollidableInferface(new CollidableRTSBehavior(this, true));
     
-this.getWaypointBehavior()!.setWaypoint(Waypoint(this, SelectSound.getInstance()));
+this.getWaypointBehavior()!.setWaypoint(new Waypoint(this, SelectSound.getInstance()));
     
 
     var damageFloaters: DamageFloaters = DamageFloaters.getInstance()!;
@@ -233,7 +233,7 @@ this.getWaypointBehavior()!.setWaypoint(Waypoint(this, SelectSound.getInstance()
                         if(Features.getInstance()!.isFeature(GameFeatureFactory.getInstance()!.DAMAGE_FLOATERS))
                         
                                     {
-                                    damageFloaters= PtsDamageFloaters(this);
+                                    damageFloaters= new PtsDamageFloaters(this);
     
 damageFloatersPaintableInterface= damageFloaters;
     
@@ -241,7 +241,7 @@ damageFloatersPaintableInterface= damageFloaters;
                                     }
                                 
                         else {
-                            damageFloaters= DamageFloaters();
+                            damageFloaters= new DamageFloaters();
     
 
                         }
@@ -260,14 +260,14 @@ this.damageFloatersPaintableInterface= damageFloatersPaintableInterface;
                         if(Features.getInstance()!.isFeature(GameFeatureFactory.getInstance()!.HEALTH_BARS))
                         
                                     {
-                                    healthBar= HealthBar(this, this.getHealthInterface(), HealthBarTwodAnimation(this as AllBinaryLayer, BasicHudFactory.getInstance()!.BOTTOMLEFT),  -1);
+                                    healthBar= new HealthBar(this, this.getHealthInterface(), new HealthBarTwodAnimation(this as AllBinaryLayer, BasicHudFactory.getInstance()!.BOTTOMLEFT),  -1);
     
 
                                     }
                                 
 this.healthBar= healthBar;
     
-this.pathsHashtable= Hashtable<any, any>();
+this.pathsHashtable= new Hashtable<any, any>();
     
 this.setMaxLevel(30);
     
@@ -281,7 +281,7 @@ this.efficiency= this.efficiencyPerLevel;
     
 this.generateMoveOutOfBuildAreaPaths();
     
-this.trackingEvent= TrackingEvent(this);
+this.trackingEvent= new TrackingEvent(this);
     
 }
 
@@ -294,15 +294,15 @@ public constructor ()
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setCollidableInferface(CollidableRTSBehavior(this, true));
+this.setCollidableInferface(new CollidableRTSBehavior(this, true));
     
-this.getWaypointBehavior()!.setWaypoint(Waypoint(this, SelectSound.getInstance()));
+this.getWaypointBehavior()!.setWaypoint(new Waypoint(this, SelectSound.getInstance()));
     
 this.efficiencyPerLevel= 0;
     
 this.efficiency= 0;
     
-this.trackingEvent= TrackingEvent();
+this.trackingEvent= new TrackingEvent();
     
 this.damageFloaters= DamageFloaters.getInstance();
     
@@ -676,7 +676,7 @@ this.efficiency= efficiency;
         
 index2 >= 0; index2--)
         {
-pathsList= BasicArrayList();
+pathsList= new BasicArrayList();
     
 occupyGeographicMapCellPosition= occupyList!.get(index2);
 
@@ -700,7 +700,7 @@ surroundGeographicMapCellPosition= surroundList!.get(index);
                         if(geographicMapDirectionUtil!.getEightDirectionFromCellPositionToAdjacentCellPosition(surroundGeographicMapCellPosition, occupyGeographicMapCellPosition) != NO_DIRECTION)
                         
                                     {
-                                    list= BasicArrayList(1);
+                                    list= new BasicArrayList(1);
     
 list.add(surroundGeographicMapCellPosition);
     

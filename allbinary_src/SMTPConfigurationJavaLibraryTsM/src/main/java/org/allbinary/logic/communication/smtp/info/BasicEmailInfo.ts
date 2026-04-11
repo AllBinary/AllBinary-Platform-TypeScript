@@ -148,7 +148,7 @@ stringBuffer!.append(this.getTextBody());
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 

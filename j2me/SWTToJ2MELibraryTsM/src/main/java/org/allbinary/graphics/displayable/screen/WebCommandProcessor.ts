@@ -84,7 +84,7 @@ export class WebCommandProcessor
                         if(Desktop.isDesktopSupported() && Desktop.getDesktop()!.isSupported(Desktop.Action.BROWSE))
                         
                                     {
-                                    Desktop.getDesktop()!.browse(URI(list.remove(0);
+                                    Desktop.getDesktop()!.browse(new URI(list.remove(0);
 
                          as String));
     

@@ -80,7 +80,7 @@ this.totalCostP= costFromStartP +costToEndP;
                                     
 
 
-                            throw Error("Max Cost Exceeded")
+                            throw new Error("Max Cost Exceeded")
 
                                     }
                                 

@@ -96,7 +96,7 @@ this.setBasicColorP(basicColor);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return VectorRotationAnimation(points, this.getBasicColorP(), this.animationBehaviorFactory!.getOrCreateInstance());
+                        return new VectorRotationAnimation(points, this.getBasicColorP(), this.animationBehaviorFactory!.getOrCreateInstance());
     
 }
 

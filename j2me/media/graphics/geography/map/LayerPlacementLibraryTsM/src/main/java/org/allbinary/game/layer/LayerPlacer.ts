@@ -269,7 +269,7 @@ layerInterfaceVisitor!.visit(layerInterface);
                             
 
 
-                            throw Error("PlacementType Not Recognized")
+                            throw new Error("PlacementType Not Recognized")
 
                         }
                             

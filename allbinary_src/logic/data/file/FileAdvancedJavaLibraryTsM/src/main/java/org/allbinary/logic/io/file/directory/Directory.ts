@@ -166,7 +166,7 @@ var existingDirectory = existingDirectory
                                     
 
 
-                            throw Error("Did not remove category: " +existingDirectory +" because files exist")
+                            throw new Error("Did not remove category: " +existingDirectory +" because files exist")
 
                                     }
                                 
@@ -186,7 +186,7 @@ var existingDirectory = existingDirectory
                             
 
 
-                            throw Error("Category Directory Is Missing:" +existingDirectory)
+                            throw new Error("Category Directory Is Missing:" +existingDirectory)
 
                         }
                             

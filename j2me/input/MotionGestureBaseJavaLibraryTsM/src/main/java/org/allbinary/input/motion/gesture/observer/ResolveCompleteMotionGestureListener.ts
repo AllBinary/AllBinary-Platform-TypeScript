@@ -66,7 +66,7 @@ public constructor (){
     
 logUtil!.put("MotionGesture to CompleteMotionGesture Reciever", this, commonStrings!.CONSTRUCTOR);
     
-CompleteMotionGestureInputEventHandler.getInstance()!.addListener(GameKeyFromMotionGestureEventListener());
+CompleteMotionGestureInputEventHandler.getInstance()!.addListener(new GameKeyFromMotionGestureEventListener());
     
 }
 

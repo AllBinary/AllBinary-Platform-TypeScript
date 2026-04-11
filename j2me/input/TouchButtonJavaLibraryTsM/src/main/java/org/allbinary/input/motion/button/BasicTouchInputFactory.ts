@@ -102,31 +102,31 @@ private constructor (){
         
 ;
     
-SPECIAL_BUTTON_SEVEN_TESTING_ONLY= TouchButtonInput(MAX -41, "Button 7 - Testing Only May Cross Over Key Values");
+SPECIAL_BUTTON_SEVEN_TESTING_ONLY= new TouchButtonInput(MAX -41, "Button 7 - Testing Only May Cross Over Key Values");
     
-SPECIAL_BUTTON_EIGHT_TESTING_ONLY= TouchButtonInput(MAX -42, "Button 8 - Testing Only May Cross Over Key Values");
+SPECIAL_BUTTON_EIGHT_TESTING_ONLY= new TouchButtonInput(MAX -42, "Button 8 - Testing Only May Cross Over Key Values");
     
-SPECIAL_BUTTON_SIX= TouchButtonInput(MAX -30, "Button 6");
+SPECIAL_BUTTON_SIX= new TouchButtonInput(MAX -30, "Button 6");
     
-SPECIAL_BUTTON_FIVE= TouchButtonInput(MAX -31, "Button 5");
+SPECIAL_BUTTON_FIVE= new TouchButtonInput(MAX -31, "Button 5");
     
-SPECIAL_BUTTON_FOUR= TouchButtonInput(MAX -32, "Button 4");
+SPECIAL_BUTTON_FOUR= new TouchButtonInput(MAX -32, "Button 4");
     
-SPECIAL_BUTTON_THREE= TouchButtonInput(MAX -33, "Button 3");
+SPECIAL_BUTTON_THREE= new TouchButtonInput(MAX -33, "Button 3");
     
-SPECIAL_BUTTON_TWO= TouchButtonInput(MAX -34, "Button 2");
+SPECIAL_BUTTON_TWO= new TouchButtonInput(MAX -34, "Button 2");
     
-SPECIAL_BUTTON_ONE= TouchButtonInput(MAX -35, "Button 1");
+SPECIAL_BUTTON_ONE= new TouchButtonInput(MAX -35, "Button 1");
     
-UP= TouchButtonInput(MAX -36, "Up Button");
+UP= new TouchButtonInput(MAX -36, "Up Button");
     
-LEFT= TouchButtonInput(MAX -37, "Left Button");
+LEFT= new TouchButtonInput(MAX -37, "Left Button");
     
-RIGHT= TouchButtonInput(MAX -38, "Right Button");
+RIGHT= new TouchButtonInput(MAX -38, "Right Button");
     
-DOWN= TouchButtonInput(MAX -39, "Down Button");
+DOWN= new TouchButtonInput(MAX -39, "Down Button");
     
-NONE= TouchButtonInput(MAX -40, "No Button");
+NONE= new TouchButtonInput(MAX -40, "No Button");
     
 }
 
@@ -186,7 +186,7 @@ this.updateAll(this.list, inputToGameKeyMapping);
     public updateAll(list: BasicArrayList, inputToGameKeyMapping: InputToGameKeyMapping){
 var list = list
 var inputToGameKeyMapping = inputToGameKeyMapping
-logUtil!.put(StringMaker().
+logUtil!.put(new StringMaker().
                             append(CommonLabels.getInstance()!.START_LABEL)!.appendint(list.size())!.toString(), this, "updateAll");
     
 

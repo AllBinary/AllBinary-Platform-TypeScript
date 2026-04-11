@@ -66,14 +66,14 @@ export class IdGeneratorEntity extends AbSqlBean
         
 public constructor ()                        
 
-                            : super(UserDbInitInfo()){
+                            : super(new UserDbInitInfo()){
 
             super();
             
 
                             //For kotlin this is before the body of the constructor.
                     
-this.tableData= StringBuilder().
+this.tableData= new StringBuilder().
                             append(this.sqlStrings!.CREATE_TABLE)!.append(tableName)!.append(this.sqlStrings!.START)!.append(NAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(VALUE)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(this.sqlStrings!.PRIMARY_KEY)!.append(NAME)!.append(this.sqlStrings!.END)!.toString();
     
 super.setTableName(tableName);
@@ -107,7 +107,7 @@ keysAndValues!.put(NAME, name);
                                     
 
 
-                            throw Error("results do not match")
+                            throw new Error("results do not match")
 
                                     }
                                 

@@ -76,7 +76,7 @@ export class TransformInfoTag extends ModifyTag {
     private type: string
 public constructor ()                        
 
-                            : super(TransformInfoRequestHelperFactory()){
+                            : super(new TransformInfoRequestHelperFactory()){
 
             super();
             

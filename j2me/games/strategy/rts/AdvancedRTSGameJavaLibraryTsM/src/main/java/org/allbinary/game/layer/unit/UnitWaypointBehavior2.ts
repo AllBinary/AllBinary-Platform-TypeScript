@@ -178,9 +178,9 @@ var fakeWaypoint = fakeWaypoint
 
                             //For kotlin this is before the body of the constructor.
                     
-this.progressTimeDelayHelper= TimeDelayHelper(5000);
+this.progressTimeDelayHelper= new TimeDelayHelper(5000);
     
-this.wanderPathsList= BasicArrayList();
+this.wanderPathsList= new BasicArrayList();
     
 
     var features: Features = Features.getInstance()!;
@@ -190,10 +190,10 @@ this.wanderPathsList= BasicArrayList();
     
 this.waypointPathRunnable= J2MEUtil.isHTML()
                         ?       
-                                MultipassWaypointPathRunnable()
+                                new MultipassWaypointPathRunnable()
                                 :
 
-                            WaypointPathRunnable();
+                            new WaypointPathRunnable();
 
     ;
     
@@ -288,7 +288,7 @@ var allBinaryLayerManager = allBinaryLayerManager
                             
 
 
-                            throw Error("Should not happen")
+                            throw new Error("Should not happen")
 
                         }
                             
@@ -1140,7 +1140,7 @@ setWaypointPathsList(runningWaypointPathList);
                                     
 
 
-                            throw Error("Should never be running here")
+                            throw new Error("Should never be running here")
 
                                     }
                                 
@@ -1338,7 +1338,7 @@ stringBuffer!.appendint(getCurrentTargetDistance());
                                     
 
 
-                            throw Error("Trying to add a dead: " +advancedRTSGameLayer)
+                            throw new Error("Trying to add a dead: " +advancedRTSGameLayer)
 
                                     }
                                 

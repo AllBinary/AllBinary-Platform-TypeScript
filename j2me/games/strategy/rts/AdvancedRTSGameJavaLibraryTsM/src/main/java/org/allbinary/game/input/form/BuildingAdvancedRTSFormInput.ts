@@ -105,7 +105,7 @@ public constructor (groupInterface: Group[], isUnitProducer: boolean)
         
 ;
     
-this.atLeastOneHouseGameNotificationEvent= GameNotificationEvent(this, "Build At Least One House First", SmallIntegerSingletonFactory.getInstance()!.getInstance(2), basicColorFactory!.WHITE, BooleanFactory.getInstance()!.FALSE);
+this.atLeastOneHouseGameNotificationEvent= new GameNotificationEvent(this, "Build At Least One House First", SmallIntegerSingletonFactory.getInstance()!.getInstance(2), basicColorFactory!.WHITE, BooleanFactory.getInstance()!.FALSE);
     
 }
 

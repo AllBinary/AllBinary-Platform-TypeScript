@@ -158,7 +158,7 @@ var var = var
                             
 
 
-                            throw Error()
+                            throw new Error()
 
                         }
                             
@@ -501,7 +501,7 @@ var val = val
                                     
 
 
-                            throw Error()
+                            throw new Error()
 
                                     }
                                 
@@ -521,7 +521,7 @@ var val = val
                                     
 
 
-                            throw Error()
+                            throw new Error()
 
                                     }
                                 
@@ -529,7 +529,7 @@ var val = val
                             
 
 
-                            throw Error()
+                            throw new Error()
 
                         }
                             

@@ -147,7 +147,7 @@ var list = list
                                     
 
 
-                            throw Error("Null List")
+                            throw new Error("Null List")
 
                                     }
                                 

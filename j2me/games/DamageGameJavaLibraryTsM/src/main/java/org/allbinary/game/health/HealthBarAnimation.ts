@@ -67,7 +67,7 @@ this.location= location;
                                     
 
 
-                            throw Error("Location Not Valid")
+                            throw new Error("Location Not Valid")
 
                                     }
                                 

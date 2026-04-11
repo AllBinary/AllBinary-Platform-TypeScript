@@ -85,7 +85,7 @@ ImageCacheFactory.getInstance()!.hasAnyLazyAnimationFactories= true;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return LazyImageRotationAnimation(this.layoutIndex, instanceId, scaleProperties, this.animationInterfaceFactoryInterface, this.animationInterfaceFactoryInterface!.animationBehaviorFactory!.getOrCreateInstance());
+                        return new LazyImageRotationAnimation(this.layoutIndex, instanceId, scaleProperties, this.animationInterfaceFactoryInterface, this.animationInterfaceFactoryInterface!.animationBehaviorFactory!.getOrCreateInstance());
     
 
                         }

@@ -54,7 +54,7 @@ var pageContext = pageContext
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return XmlOptionItemsHelper(hashMap, pageContext);
+                        return new XmlOptionItemsHelper(hashMap, pageContext);
     
 
                 //: 

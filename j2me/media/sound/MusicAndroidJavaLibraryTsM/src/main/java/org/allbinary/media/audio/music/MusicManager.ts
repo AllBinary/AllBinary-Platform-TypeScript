@@ -183,7 +183,7 @@ PreLogUtil.put(commonStateStrings!.CONTEXT +resourceUtil!.getContext(), this, co
     
 this.musicServiceClass= musicServiceClass;
     
-currentIntent= Intent(resourceUtil!.getContext(), musicServiceClass::class.java);
+currentIntent= new Intent(resourceUtil!.getContext(), musicServiceClass::class.java);
     
 this.songList= songList;
     
@@ -301,7 +301,7 @@ this.timeDelayHelper!.delay= 0;
         
 ;
     
-PreLogUtil.put(StringBuilder().
+PreLogUtil.put(new StringBuilder().
                             append(PLAY)!.append(sound.getResource())!.append(FOR)!.append(duration)!.toString(), this, commonStrings!.PROCESS);
     
 }
@@ -341,7 +341,7 @@ this.nextSongSound= NoSound.getInstance();
         
 ;
     
-PreLogUtil.put(StringBuilder().
+PreLogUtil.put(new StringBuilder().
                             append(PLAY)!.append(this.currentSongSound!.getResource())!.append(FOR)!.append(duration)!.toString(), this, commonStrings!.PROCESS);
     
 this.timeDelayHelper!.delay= duration.toInt();

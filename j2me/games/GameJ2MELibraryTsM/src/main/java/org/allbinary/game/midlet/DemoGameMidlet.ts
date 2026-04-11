@@ -114,7 +114,7 @@ public constructor (clientInformationFactory: ClientInformationFactory)
 
 
 
-                            throw Error(commonStrings!.NOT_IMPLEMENTED)
+                            throw new Error(commonStrings!.NOT_IMPLEMENTED)
 }
 
 
@@ -125,7 +125,7 @@ var allBinaryGameLayerManager = allBinaryGameLayerManager
 
 
 
-                            throw Error(commonStrings!.NOT_IMPLEMENTED)
+                            throw new Error(commonStrings!.NOT_IMPLEMENTED)
 }
 
 
@@ -165,7 +165,7 @@ logUtil!.put(commonStrings!.START, this, "setDemo");
     
 progressCanvas!.start();
     
-PrimaryThreadPool.getInstance()!.runTask(DemoRunnable(this));
+PrimaryThreadPool.getInstance()!.runTask(new DemoRunnable(this));
     
 }
 
@@ -198,7 +198,7 @@ progressCanvas!.start();
     
 this.setStartStateHashtable(NullUtil.getInstance()!.NULL_TABLE);
     
-PrimaryThreadPool.getInstance()!.runTask(CreateGameRunnable(this, hashtable));
+PrimaryThreadPool.getInstance()!.runTask(new CreateGameRunnable(this, hashtable));
     
 logUtil!.put(commonStrings!.END, this, CREATE_GAME);
     

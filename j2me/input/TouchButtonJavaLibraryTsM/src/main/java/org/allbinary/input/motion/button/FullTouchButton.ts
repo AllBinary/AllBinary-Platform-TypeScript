@@ -90,7 +90,7 @@ var yBorder = yBorder
         
 ;
     
-this.rectangleP= Rectangle(PointFactory.getInstance()!.getInstance(x, y), this.rawRectangle!.getWidth() +(2 *xBorder), this.rawRectangle!.getHeight() +(2 *yBorder));
+this.rectangleP= new Rectangle(PointFactory.getInstance()!.getInstance(x, y), this.rawRectangle!.getWidth() +(2 *xBorder), this.rawRectangle!.getHeight() +(2 *yBorder));
     
 
     var point: GPoint = this.rectangleP!.getPoint()!;

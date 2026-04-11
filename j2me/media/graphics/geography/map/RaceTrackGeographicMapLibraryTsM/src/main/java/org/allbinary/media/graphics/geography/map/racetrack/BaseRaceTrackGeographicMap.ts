@@ -89,7 +89,7 @@ this.miniGeographicMap= miniGeographicMap;
                         
                                     {
                                     
-    var error: string = StringMaker().
+    var error: string = new StringMaker().
                             append("RaceTrackMap has incorrect Mini Map columns: ")!.appendint(miniTiledLayer!.getColumns())!.append(" != ")!.appendint(this.getGeographicMapCellPositionFactory()!.getColumns())!.toString()!;
         
         
@@ -106,7 +106,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR);
 
 
 
-                            throw Error(error)
+                            throw new Error(error)
 
                                     }
                                 
@@ -131,7 +131,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR);
 
 
 
-                            throw Error(error)
+                            throw new Error(error)
 
                                     }
                                 

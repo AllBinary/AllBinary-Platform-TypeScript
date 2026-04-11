@@ -135,7 +135,7 @@ var newHeight = newHeight
                                     
 
 
-                            throw Error("Original Image File Does Not Exist.")
+                            throw new Error("Original Image File Does Not Exist.")
 
                                     }
                                 
@@ -154,7 +154,7 @@ var newHeight = newHeight
                                     
 
 
-                            throw Error("Unable to find ImageReader for this file.")
+                            throw new Error("Unable to find ImageReader for this file.")
 
                                     }
                                 
@@ -206,7 +206,7 @@ imageFile!.createNewFile();
                                     
 
 
-                            throw Error("Unable to write.")
+                            throw new Error("Unable to write.")
 
                                     }
                                 

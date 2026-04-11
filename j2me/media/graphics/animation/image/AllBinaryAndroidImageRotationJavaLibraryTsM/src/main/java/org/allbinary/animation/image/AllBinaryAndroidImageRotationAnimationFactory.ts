@@ -355,7 +355,7 @@ this.resizeCanvasForRotation= resizeCanvasForRotation;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return AllBinaryAdjustedAndroidImageRotationAnimation(scaledImage, copyOfScaledImage, AngleInfo.getInstance(this.angleIncrement), AngleFactory.getInstance()!.TOTAL_ANGLE, this.animationFactoryInitializationVisitor!.dx, this.animationFactoryInitializationVisitor!.dy, animationBehaviorFactory!.getOrCreateInstance());
+                        return new AllBinaryAdjustedAndroidImageRotationAnimation(scaledImage, copyOfScaledImage, AngleInfo.getInstance(this.angleIncrement), AngleFactory.getInstance()!.TOTAL_ANGLE, this.animationFactoryInitializationVisitor!.dx, this.animationFactoryInitializationVisitor!.dy, animationBehaviorFactory!.getOrCreateInstance());
     
 
                                     }
@@ -365,7 +365,7 @@ this.resizeCanvasForRotation= resizeCanvasForRotation;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return AllBinaryFlickerAndroidImageRotationAnimation(scaledImage, copyOfScaledImage, AngleInfo.getInstance(this.angleIncrement), AngleFactory.getInstance()!.TOTAL_ANGLE, this.animationBehaviorFactory!.getOrCreateInstance());
+                        return new AllBinaryFlickerAndroidImageRotationAnimation(scaledImage, copyOfScaledImage, AngleInfo.getInstance(this.angleIncrement), AngleFactory.getInstance()!.TOTAL_ANGLE, this.animationBehaviorFactory!.getOrCreateInstance());
     
 
                         }

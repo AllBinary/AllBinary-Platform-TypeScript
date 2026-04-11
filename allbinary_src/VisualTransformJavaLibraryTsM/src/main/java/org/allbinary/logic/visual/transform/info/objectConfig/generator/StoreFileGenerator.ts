@@ -188,7 +188,7 @@ fileName= replace.all(fileName);
                                     
 
 
-                            throw Error("TransformInfoObjectConfigGenerator FileName Not Specified")
+                            throw new Error("TransformInfoObjectConfigGenerator FileName Not Specified")
 
                                     }
                                 
@@ -218,11 +218,11 @@ this.output= tempOutput;
                                     
 
 
-                            throw Error("TransformInfoObjectConfigGenerator Output=extension Not Specified")
+                            throw new Error("TransformInfoObjectConfigGenerator Output=extension Not Specified")
 
                                     }
                                 
-stringBuffer= StringMaker();
+stringBuffer= new StringMaker();
     
 stringBuffer!.append(fileName);
     
@@ -230,11 +230,11 @@ stringBuffer!.append(AbPathData.getInstance()!.EXTENSION_SEP);
     
 stringBuffer!.append(this.output);
     
-abPath= AbPath(abPath!.toString(), stringBuffer!.toString());
+abPath= new AbPath(abPath!.toString(), stringBuffer!.toString());
     
 this.fileAbPath= abPath;
     
-this.file= AbFile(this.fileAbPath);
+this.file= new AbFile(this.fileAbPath);
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -291,7 +291,7 @@ FileUtil.getInstance()!.write(inputStream, this.file);
                             
 
 
-                            throw Error("Could Not Create: " +this.fileAbPath!.toString())
+                            throw new Error("Could Not Create: " +this.fileAbPath!.toString())
 
                         }
                             

@@ -71,11 +71,11 @@ export class BasicVelocityProperties
 public constructor (){
 
             super();
-            this.velocityXBasicDecimal= BasicDecimal();
+            this.velocityXBasicDecimal= new BasicDecimal();
     
-this.velocityYBasicDecimal= BasicDecimal();
+this.velocityYBasicDecimal= new BasicDecimal();
     
-this.velocityZBasicDecimal= BasicDecimal();
+this.velocityZBasicDecimal= new BasicDecimal();
     
 }
 

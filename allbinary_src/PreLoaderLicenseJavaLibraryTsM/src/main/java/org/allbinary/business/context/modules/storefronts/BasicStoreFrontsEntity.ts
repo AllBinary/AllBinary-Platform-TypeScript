@@ -46,7 +46,7 @@ export class BasicStoreFrontsEntity extends InitSql {
         
 public constructor ()                        
 
-                            : super(UserDbInitInfo()){
+                            : super(new UserDbInitInfo()){
 
             super();
             
@@ -81,7 +81,7 @@ keysAndValues!.put(StoreFrontData.getInstance()!.NAME, name);
                                     null
                                 )
                         
-                                    throw Error("No Such Store: " +name)
+                                    throw new Error("No Such Store: " +name)
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.FACTORYERROR))
                         
@@ -95,7 +95,7 @@ keysAndValues!.put(StoreFrontData.getInstance()!.NAME, name);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return BasicStoreFront(storeHashMap) as BasicStoreFrontInterface;
+                        return new BasicStoreFront(storeHashMap) as BasicStoreFrontInterface;
     
 }
 

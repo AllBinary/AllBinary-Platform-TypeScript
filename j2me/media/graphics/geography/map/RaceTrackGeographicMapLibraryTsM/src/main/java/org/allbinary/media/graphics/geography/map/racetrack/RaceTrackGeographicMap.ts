@@ -40,7 +40,7 @@ export class RaceTrackGeographicMap extends BaseRaceTrackGeographicMap {
     private readonly customMapGenerator: CustomMapGeneratorBase
 public constructor (raceTrackInfo: RaceTrackInfo, raceTrackData: RaceTrackData, tiledLayerFactoryInterface: AllBinaryTiledLayerFactoryInterface, geographicMapCellPositionFactoryInterface: GeographicMapCellPositionFactoryInterface, geographicMapCellPositionBaseFactory: GeographicMapCellPositionBaseFactory, geographicMapCellTypeFactory: GeographicMapCellTypeFactory, customMapGeneratorBaseFactory: CustomMapGeneratorBaseFactory)                        
 
-                            : super(raceTrackInfo, raceTrackData, tiledLayerFactoryInterface!.getInstance(raceTrackInfo, raceTrackData), BasicGeographicMapFactory().
+                            : super(raceTrackInfo, raceTrackData, tiledLayerFactoryInterface!.getInstance(raceTrackInfo, raceTrackData), new BasicGeographicMapFactory().
                             getInstance(raceTrackInfo, raceTrackData, tiledLayerFactoryInterface, geographicMapCellPositionFactoryInterface, geographicMapCellTypeFactory), geographicMapCellPositionFactoryInterface, geographicMapCellPositionBaseFactory, geographicMapCellTypeFactory){
 
             super();
@@ -61,7 +61,7 @@ this.customMapGenerator= customMapGeneratorBaseFactory!.getInstance(this);
 
 public constructor (raceTrackInfo: RaceTrackInfo, raceTrackData: RaceTrackData, tiledLayerFactoryInterface: AllBinaryTiledLayerFactoryInterface, geographicMapCellPositionFactoryInterface: GeographicMapCellPositionFactoryInterface, geographicMapCellTypeFactory: GeographicMapCellTypeFactory, customMapGeneratorBaseFactory: CustomMapGeneratorBaseFactory)                        
 
-                            : this(raceTrackInfo, raceTrackData, tiledLayerFactoryInterface, geographicMapCellPositionFactoryInterface, GeographicMapCellPositionBaseFactory(), geographicMapCellTypeFactory, customMapGeneratorBaseFactory){
+                            : this(raceTrackInfo, raceTrackData, tiledLayerFactoryInterface, geographicMapCellPositionFactoryInterface, new GeographicMapCellPositionBaseFactory(), geographicMapCellTypeFactory, customMapGeneratorBaseFactory){
 
             super();
                 //var raceTrackInfo = raceTrackInfo

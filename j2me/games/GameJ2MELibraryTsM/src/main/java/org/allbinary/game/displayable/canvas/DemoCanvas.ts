@@ -508,7 +508,7 @@ this.setPaintableInterface(this.getDefaultPaintableInterface());
 
                                     }
                                 
-this.demoGameRunnable= DemoGameStartupRunnable(this);
+this.demoGameRunnable= new DemoGameStartupRunnable(this);
     
 DisplayChangeEventHandler.getInstance()!.addListener(this);
     
@@ -526,7 +526,7 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
 var displayChangeEvent = displayChangeEvent
 
         try {
-            logUtil!.put(StringMaker().
+            logUtil!.put(new StringMaker().
                             append(commonLabels!.START_LABEL)!.append(displayInfoSingleton!.toString())!.append(MyFont.getInstance()!.toString())!.toString(), this, this.canvasStrings!.ON_DISPLAY_CHANGE_EVENT);
     
 
@@ -789,7 +789,7 @@ this.close();
         
 ;
     
-PreLogUtil.put(StringMaker().
+PreLogUtil.put(new StringMaker().
                             append(commonLabels!.START_LABEL)!.append(displayInfoSingleton!.toString())!.toString(), this, "initMenu");
     
 
@@ -818,7 +818,7 @@ scrollSelectionForm!.init(rectangle2, formType2);
                         if(this.getMenuForm() != ScrollSelectionFormNoneFactory.getInstance())
                         
                                     {
-                                    this.setMenuInputProcessor(CommandFormInputProcessor(BasicArrayList(),  -1, this, this.getMenuForm()));
+                                    this.setMenuInputProcessor(new CommandFormInputProcessor(new BasicArrayList(),  -1, this, this.getMenuForm()));
     
 
                                     }
@@ -955,7 +955,7 @@ DownGameKeyEventHandler.getInstance()!.fireEvent(gameKeyEvent);
                                     {
                                     lastKeyNotMapped= keyCode;
     
-logUtil!.put(StringMaker().
+logUtil!.put(new StringMaker().
                             append(this.gameInputStrings!.NO_KEY)!.appendint(keyCode)!.toString(), this, this.gameInputStrings!.ADD_KEY_EVENT);
     
 
@@ -1002,7 +1002,7 @@ UpGameKeyEventHandler.getInstance()!.fireEvent(gameKeyEvent);
                                     }
                                 
                         else {
-                            logUtil!.put(StringMaker().
+                            logUtil!.put(new StringMaker().
                             append(this.gameInputStrings!.NO_KEY)!.appendint(keyCode)!.toString(), this, this.gameInputStrings!.REMOVE_KEY_EVENT);
     
 
@@ -1073,7 +1073,7 @@ this.setPaused(false);
 
 
     public isGameOver(): boolean{
-logUtil!.put(StringMaker().
+logUtil!.put(new StringMaker().
                             append(commonStrings!.NOT_IMPLEMENTED)!.append(" since not a game")!.toString(), this, "isGameOver");
     
 
@@ -1294,7 +1294,7 @@ gameAdState!.processPageAdState();
 
 
 
-                            throw Error(commonStrings!.NOT_IMPLEMENTED)
+                            throw new Error(commonStrings!.NOT_IMPLEMENTED)
 }
 
 
@@ -1305,7 +1305,7 @@ var randomValue = randomValue
 
 
 
-                            throw Error(commonStrings!.NOT_IMPLEMENTED)
+                            throw new Error(commonStrings!.NOT_IMPLEMENTED)
 }
 
 
@@ -1316,7 +1316,7 @@ var randomLevel = randomLevel
 
 
 
-                            throw Error(commonStrings!.NOT_IMPLEMENTED)
+                            throw new Error(commonStrings!.NOT_IMPLEMENTED)
 }
 
 
@@ -1363,7 +1363,7 @@ this.getHighScoresFactoryInterface()!.fetchHighScores(gameInfo, this.highScoresH
         
 ;
     
-PreLogUtil.put(StringMaker().
+PreLogUtil.put(new StringMaker().
                             append("Game Thread in DemoCanvas: ")!.append(this.stringUtil!.toString(gameCanvas))!.toString(), this, commonStrings!.START);
     
 this.canvasThread= threadFactoryUtil!.getInstance(gameCanvas);
@@ -1859,7 +1859,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, SET_RUNNING, e);
         
 ;
     
-baseGameStatistics!.add(StringMaker().
+baseGameStatistics!.add(new StringMaker().
                             append(BOT_GAME_STATS)!.append(baseGameStatistics!.toString())!.append(CommonSeps.getInstance()!.NEW_LINE)!.toString());
     
 baseGameStatistics!.init();

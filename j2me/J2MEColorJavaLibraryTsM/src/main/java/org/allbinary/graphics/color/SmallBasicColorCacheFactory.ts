@@ -110,7 +110,7 @@ index < SIZE; index++)
         
 ;
     
-basicColor= BasicColor(colorAsInt and ALPHA_MASK, colorAsInt and 0x00FFFFFF, StringUtil.getInstance()!.EMPTY_STRING);
+basicColor= new BasicColor(colorAsInt and ALPHA_MASK, colorAsInt and 0x00FFFFFF, StringUtil.getInstance()!.EMPTY_STRING);
     
 this.add(basicColor);
     

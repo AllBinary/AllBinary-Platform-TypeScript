@@ -134,7 +134,7 @@ numberStringArray[index]= index.toString();
 
 
     public process(){
-object: Thread()
+new object: Thread()
                                 {
                                 
     public run(){
@@ -282,7 +282,7 @@ stringMaker!.append(path)!.append(ANDROID)!.appendint(width)!.append(CanvasStrin
         
 ;
     
-imagePersistanceUtil!.saveWithBatik(AbFile(newFilePath), generatedBufferedImageArray[index]!);
+imagePersistanceUtil!.saveWithBatik(new AbFile(newFilePath), generatedBufferedImageArray[index]!);
     
 stringMaker!.delete(0, stringMaker!.length());
     
@@ -290,7 +290,7 @@ stringMaker!.append(path)!.append(IOS)!.appendint(width)!.append(CanvasStrings.g
     
 newFilePath= stringMaker!.toString();
     
-imagePersistanceUtil!.saveWithBatik(AbFile(newFilePath), generatedBufferedImageArray[index]!);
+imagePersistanceUtil!.saveWithBatik(new AbFile(newFilePath), generatedBufferedImageArray[index]!);
     
 }
 
@@ -333,11 +333,11 @@ this.imageProcessorInput= imageProcessorInput;
 
 
     initComponents(){
-aboveJButton= javax.swing.JButton();
+aboveJButton= new javax.swing.JButton();
     
 aboveJButton!.setText("Process");
     
-aboveJButton!.addActionListener(object: java.awt.event.ActionListener()
+aboveJButton!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){

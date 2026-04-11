@@ -141,14 +141,14 @@ public constructor (){
                                 )
                         
                                     {
-                                    logUtil!.put(StringMaker().
+                                    logUtil!.put(new StringMaker().
                             append(SETTING_)!.append(title)!.append(_DISPLAY_)!.append(StringUtil.getInstance()!.toString(newDisplay))!.toString(), this, SET_DISPLAY);
     
 
                                     }
                                 
                         else {
-                            logUtil!.put(StringMaker().
+                            logUtil!.put(new StringMaker().
                             append(SETTING_NO_TITLE)!.append(StringUtil.getInstance()!.toString(newDisplay))!.toString(), this, SET_DISPLAY);
     
 
@@ -260,7 +260,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, METHOD_NAME, e);
             
     public setStartStateHashtable(hashtable: Hashtable<any, any>){
 var hashtable = hashtable
-logUtil!.put(StringMaker().
+logUtil!.put(new StringMaker().
                             append(CommonLabels.getInstance()!.START_LABEL)!.append(StringUtil.getInstance()!.toString(hashtable))!.toString(), this, "setStartStateHashtable");
     
 this.hashtable= hashtable;
@@ -271,7 +271,7 @@ this.hashtable= hashtable;
                 //@Throws(Error::class)
             
     public getStartStateHashtable(): Hashtable<any, any>{
-logUtil!.put(StringMaker().
+logUtil!.put(new StringMaker().
                             append(CommonLabels.getInstance()!.START_LABEL)!.append(StringUtil.getInstance()!.toString(hashtable))!.toString(), this, "getStartStateHashtable");
     
 

@@ -471,7 +471,7 @@ export class UnitLayer extends AdvancedRTSGameLayer
         
 protected constructor (remoteInfo: RemoteInfo, parentLayer: PathFindingLayerInterface, groupInterface: Group[], rootName: string, name: string, vehicleProperties: VehicleProperties, healthInterface: Health, maxLoad: Integer, moveSoundInterface: Sound, waypointLayerInterfaceFactoryInterface: LayerInterfaceFactoryInterface, animationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, emptyAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, baseAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, buildAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, verticleBuildAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, decalAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface: ProceduralAnimationInterfaceFactoryInterface, rectangle: Rectangle, direction: Direction, x: number, y: number, z: number)                        
 
-                            : this(remoteInfo, parentLayer, groupInterface, rootName, name, vehicleProperties, healthInterface, maxLoad, moveSoundInterface, waypointLayerInterfaceFactoryInterface, animationInterfaceFactoryInterface, emptyAnimationInterfaceFactoryInterface, baseAnimationInterfaceFactoryInterface, buildAnimationInterfaceFactoryInterface, verticleBuildAnimationInterfaceFactoryInterface, decalAnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface, rectangle, direction, x, y, z, TileLayerPositionIntoViewPosition()){
+                            : this(remoteInfo, parentLayer, groupInterface, rootName, name, vehicleProperties, healthInterface, maxLoad, moveSoundInterface, waypointLayerInterfaceFactoryInterface, animationInterfaceFactoryInterface, emptyAnimationInterfaceFactoryInterface, baseAnimationInterfaceFactoryInterface, buildAnimationInterfaceFactoryInterface, verticleBuildAnimationInterfaceFactoryInterface, decalAnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface, rectangle, direction, x, y, z, new TileLayerPositionIntoViewPosition()){
 
             super();
                 //var remoteInfo = remoteInfo
@@ -538,7 +538,7 @@ protected constructor (remoteInfo: RemoteInfo, parentLayer: PathFindingLayerInte
 
 protected constructor (remoteInfo: RemoteInfo, parentLayer: PathFindingLayerInterface, groupInterface: Group[], rootName: string, name: string, vehicleProperties: VehicleProperties, healthInterface: Health, maxLoad: Integer, moveSoundInterface: Sound, waypointLayerInterfaceFactoryInterface: LayerInterfaceFactoryInterface, animationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, emptyAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, baseAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, buildAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, verticleBuildAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, decalAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, resourceAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface: ProceduralAnimationInterfaceFactoryInterface, rectangle: Rectangle, direction: Direction, x: number, y: number, z: number)                        
 
-                            : this(remoteInfo, parentLayer, groupInterface, rootName, name, vehicleProperties, healthInterface, maxLoad, moveSoundInterface, waypointLayerInterfaceFactoryInterface, animationInterfaceFactoryInterface, emptyAnimationInterfaceFactoryInterface, baseAnimationInterfaceFactoryInterface, buildAnimationInterfaceFactoryInterface, verticleBuildAnimationInterfaceFactoryInterface, decalAnimationInterfaceFactoryInterface, resourceAnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface, rectangle, direction, x, y, z, TileLayerPositionIntoViewPosition()){
+                            : this(remoteInfo, parentLayer, groupInterface, rootName, name, vehicleProperties, healthInterface, maxLoad, moveSoundInterface, waypointLayerInterfaceFactoryInterface, animationInterfaceFactoryInterface, emptyAnimationInterfaceFactoryInterface, baseAnimationInterfaceFactoryInterface, buildAnimationInterfaceFactoryInterface, verticleBuildAnimationInterfaceFactoryInterface, decalAnimationInterfaceFactoryInterface, resourceAnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface, rectangle, direction, x, y, z, new TileLayerPositionIntoViewPosition()){
 
             super();
                 //var remoteInfo = remoteInfo
@@ -572,7 +572,7 @@ protected constructor (remoteInfo: RemoteInfo, parentLayer: PathFindingLayerInte
 
 protected constructor (remoteInfo: RemoteInfo, parentLayer: PathFindingLayerInterface, groupInterface: Group[], rootName: string, name: string, vehicleProperties: VehicleProperties, healthInterface: Health, maxResourceLoad: Integer, moveSoundInterface: Sound, waypointLayerInterfaceFactoryInterface: LayerInterfaceFactoryInterface, animationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, emptyAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, baseAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, buildAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, verticleBuildAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, decalAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, resourceAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface: ProceduralAnimationInterfaceFactoryInterface, rectangle: Rectangle, direction: Direction, x: number, y: number, z: number, viewPosition: ViewPosition)                        
 
-                            : super(remoteInfo, parentLayer, groupInterface, rootName, name, healthInterface, WaypointRTSFormInput(groupInterface, true), animationInterfaceFactoryInterface, emptyAnimationInterfaceFactoryInterface, baseAnimationInterfaceFactoryInterface, buildAnimationInterfaceFactoryInterface, verticleBuildAnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface, rectangle, x, y, viewPosition){
+                            : super(remoteInfo, parentLayer, groupInterface, rootName, name, healthInterface, new WaypointRTSFormInput(groupInterface, true), animationInterfaceFactoryInterface, emptyAnimationInterfaceFactoryInterface, baseAnimationInterfaceFactoryInterface, buildAnimationInterfaceFactoryInterface, verticleBuildAnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface, rectangle, x, y, viewPosition){
 
             super();
                 //var remoteInfo = remoteInfo
@@ -603,7 +603,7 @@ protected constructor (remoteInfo: RemoteInfo, parentLayer: PathFindingLayerInte
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setCollidableInferface(CollidableUnitBehavior(this, true));
+this.setCollidableInferface(new CollidableUnitBehavior(this, true));
     
 this.waypointLayerInterfaceFactoryInterface= waypointLayerInterfaceFactoryInterface;
     
@@ -615,7 +615,7 @@ this.moveSoundInterface= moveSoundInterface;
                         if(Features.getInstance()!.isFeature(GameFeatureFactory.getInstance()!.DAMAGE_FLOATERS))
                         
                                     {
-                                    this.damageFloaters= PtsDamageFloaters(this);
+                                    this.damageFloaters= new PtsDamageFloaters(this);
     
 this.damageFloatersPaintableInterface= this.damageFloaters;
     
@@ -625,7 +625,7 @@ this.damageFloatersPaintableInterface= this.damageFloaters;
                         else {
                             this.damageFloatersPaintableInterface= NullPaintable.getInstance();
     
-this.damageFloaters= DamageFloaters();
+this.damageFloaters= new DamageFloaters();
     
 
                         }
@@ -634,7 +634,7 @@ this.damageFloaters= DamageFloaters();
                         if(Features.getInstance()!.isFeature(GameFeatureFactory.getInstance()!.HEALTH_BARS))
                         
                                     {
-                                    this.healthBar= HealthBar(this, this.getHealthInterface(), HealthBarTwodAnimation(this as AllBinaryLayer, BasicHudFactory.getInstance()!.BOTTOMLEFT),  -1);
+                                    this.healthBar= new HealthBar(this, this.getHealthInterface(), new HealthBarTwodAnimation(this as AllBinaryLayer, BasicHudFactory.getInstance()!.BOTTOMLEFT),  -1);
     
 
                                     }
@@ -665,9 +665,9 @@ this.setMaxLevel(12);
     
 this.vehicleProperties= vehicleProperties;
     
-this.trackingEvent= TrackingEvent(this);
+this.trackingEvent= new TrackingEvent(this);
     
-this.initPathAnimation= PathAnimation(this, LinePathRelativeAnimation.getInstance());
+this.initPathAnimation= new PathAnimation(this, LinePathRelativeAnimation.getInstance());
     
 }
 
@@ -699,7 +699,7 @@ hashtable.put(Layer.ID, this);
     
 hashtable.put(AllBinaryGameLayerManager.ID, allBinaryGameLayerManagerP);
     
-this.setWaypointBehavior(UnitWaypointBehavior2(this, waypointLayerInterfaceFactoryInterface!.getInstance(hashtable, x, y, z);
+this.setWaypointBehavior(new UnitWaypointBehavior2(this, waypointLayerInterfaceFactoryInterface!.getInstance(hashtable, x, y, z);
 
                          as AdvancedRTSGameLayer));
     
@@ -712,10 +712,10 @@ this.setWaypointBehavior(UnitWaypointBehavior2(this, waypointLayerInterfaceFacto
 
     var waypoint: WaypointBase = J2MEUtil.isHTML()
                         ?       
-                                MultipassNoCacheWaypoint(this, AttackSound.getInstance())
+                                new MultipassNoCacheWaypoint(this, AttackSound.getInstance())
                                 :
 
-                            NoCacheWaypoint(this, AttackSound.getInstance());
+                            new NoCacheWaypoint(this, AttackSound.getInstance());
 
     ;
         
@@ -1170,7 +1170,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "onMovement", e);
     
 this.weaponRange= weaponProperties!.getRange();
     
-this.initRangeAnimation= AdjustedCircleAnimation(weaponRange, weaponRange, this.getWidth(), this.basicColorFactory!.GREEN);
+this.initRangeAnimation= new AdjustedCircleAnimation(weaponRange, weaponRange, this.getWidth(), this.basicColorFactory!.GREEN);
     
 
     var sensorRange: number = weaponRange *SENSOR_RANGE_MULTIPLIER;
@@ -1178,7 +1178,7 @@ this.initRangeAnimation= AdjustedCircleAnimation(weaponRange, weaponRange, this.
         
 ;
     
-this.initSensorRangeAnimation= AdjustedCircleAnimation(sensorRange, sensorRange, this.getWidth(), this.basicColorFactory!.RED);
+this.initSensorRangeAnimation= new AdjustedCircleAnimation(sensorRange, sensorRange, this.getWidth(), this.basicColorFactory!.RED);
     
 this.getUnitWaypointBehavior()!.initRange(weaponRange);
     
@@ -1321,7 +1321,7 @@ this.setPosition(point.getX() -this.getHalfWidth(), point.getY() -this.getHalfHe
                                     
 
 
-                            throw Error("Position is not really on the map: " +geographicMapCellPosition)
+                            throw new Error("Position is not really on the map: " +geographicMapCellPosition)
 
                                     }
                                 
@@ -1424,17 +1424,17 @@ this.rotationAnimationInterfaceP!.nextRotation();
 
 
     public initInputProcessors(){
-this.inputProcessorArray[Canvas.RIGHT]= SpecialRightGameInputProcessor(this);
+this.inputProcessorArray[Canvas.RIGHT]= new SpecialRightGameInputProcessor(this);
     
-this.inputProcessorArray[Canvas.LEFT]= SpecialLeftGameInputProcessor(this);
+this.inputProcessorArray[Canvas.LEFT]= new SpecialLeftGameInputProcessor(this);
     
-this.inputProcessorArray[Canvas.KEY_NUM0]= SpecialFireGameInputProcessor(this);
+this.inputProcessorArray[Canvas.KEY_NUM0]= new SpecialFireGameInputProcessor(this);
     
 this.inputProcessorArray[Canvas.KEY_POUND]= this.inputProcessorArray[Canvas.KEY_NUM0]!;
     
-this.inputProcessorArray[Canvas.DOWN]= SpecialDownGameInputProcessor(this);
+this.inputProcessorArray[Canvas.DOWN]= new SpecialDownGameInputProcessor(this);
     
-this.inputProcessorArray[Canvas.UP]= SpecialUpGameInputProcessor(this);
+this.inputProcessorArray[Canvas.UP]= new SpecialUpGameInputProcessor(this);
     
 super.initInputProcessors();
     

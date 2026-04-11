@@ -62,7 +62,7 @@ var value = value
 
 
 
-                            throw Error("Should not set from config")
+                            throw new Error("Should not set from config")
 }
 
 

@@ -75,10 +75,10 @@ var pageContext = pageContext
                                     {
                                     this.storeFrontInterface= StoreFrontFactory.getInstance(storeName);
     
-this.currentLocation= Replace(CommonSeps.getInstance()!.SPACE, "%20").
+this.currentLocation= new Replace(CommonSeps.getInstance()!.SPACE, "%20").
                             all(storeFrontInterface!.getCurrentHostName() +storeFrontInterface!.getCurrentHostNamePath());
     
-this.currentHomeLocation= Replace(CommonSeps.getInstance()!.SPACE, "%20").
+this.currentHomeLocation= new Replace(CommonSeps.getInstance()!.SPACE, "%20").
                             all(storeFrontInterface!.getCurrentHomeHostName() +storeFrontInterface!.getCurrentHomeHostNamePath());
     
 
@@ -91,7 +91,7 @@ this.currentHomeLocation= Replace(CommonSeps.getInstance()!.SPACE, "%20").
         
 ;
     
-this.storeFrontInterface= StoreFront();
+this.storeFrontInterface= new StoreFront();
     
 this.currentLocation= stringUtil!.EMPTY_STRING;
     

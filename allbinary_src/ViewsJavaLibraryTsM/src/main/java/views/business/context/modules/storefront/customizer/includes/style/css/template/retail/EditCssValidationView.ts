@@ -75,7 +75,7 @@ public constructor (transformInfoInterface: TransformInfoInterface)
         
 ;
     
-this.styleValidationInterface= EditCssStyleValidation(document);
+this.styleValidationInterface= new EditCssStyleValidation(document);
     
 
     var isValid: Boolean = this.styleValidationInterface!.isValid()!;

@@ -64,7 +64,7 @@ paintableArray[0]= progressCanvas;
     
 paintableArray[1]= demoCanvas!.getDefaultPaintableInterface();
     
-demoCanvas!.setDefaultPaintableInterface(PaintableComposite(paintableArray));
+demoCanvas!.setDefaultPaintableInterface(new PaintableComposite(paintableArray));
     
 demoCanvas!.setPaintableInterface(demoCanvas!.getDefaultPaintableInterface());
     

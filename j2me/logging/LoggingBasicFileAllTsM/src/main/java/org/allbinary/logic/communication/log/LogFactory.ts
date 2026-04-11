@@ -38,7 +38,7 @@ var exception = exception
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Log(specialMessage, anyType, StringUtil.getInstance()!.EMPTY_STRING, exception);
+                        return new Log(specialMessage, anyType, StringUtil.getInstance()!.EMPTY_STRING, exception);
     
 }
 
@@ -52,7 +52,7 @@ var exception = exception
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Log(specialMessage, anyType, functionName, exception);
+                        return new Log(specialMessage, anyType, functionName, exception);
     
 }
 
@@ -65,7 +65,7 @@ var functionName = functionName
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Log(specialMessage, anyType, functionName);
+                        return new Log(specialMessage, anyType, functionName);
     
 }
 

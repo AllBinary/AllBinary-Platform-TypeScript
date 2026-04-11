@@ -51,9 +51,9 @@ export class BillingAddressTag extends TableTag {
 public constructor (){
 
             super();
-            this.setTagHelperFactory(BillingAddressHelperFactory());
+            this.setTagHelperFactory(new BillingAddressHelperFactory());
     
-this.setTagRequestHelperFactory(BillingAddressHelperFactory());
+this.setTagRequestHelperFactory(new BillingAddressHelperFactory());
     
 }
 
@@ -71,7 +71,7 @@ this.value= value;
 
         try {
             
-    var anyType: any = BillingAddressHelperFactory().
+    var anyType: any = new BillingAddressHelperFactory().
                             getInstance(this.getPropertiesHashMap(), this.pageContext)!;
         
         
@@ -150,7 +150,7 @@ this.value= value;
 
         try {
             
-    var anyType: any = BillingAddressHelperFactory().
+    var anyType: any = new BillingAddressHelperFactory().
                             getInstance(this.getPropertiesHashMap(), this.pageContext)!;
         
         

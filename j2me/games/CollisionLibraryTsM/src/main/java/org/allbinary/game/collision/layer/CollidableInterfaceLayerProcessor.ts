@@ -35,7 +35,7 @@ export class CollidableInterfaceLayerProcessor extends LayerProcessor {
         
 public constructor ()                        
 
-                            : super(CollidableInterfaceLayerManager()){
+                            : super(new CollidableInterfaceLayerManager()){
 
             super();
             

@@ -161,7 +161,7 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
 ;
     
 
-    var data: string = CryptFileReader(transformInfoObjectConfigData!.UNCRYPTED_EXTENSION, transformInfoObjectConfigData!.ENCRYPTED_EXTENSION).
+    var data: string = new CryptFileReader(transformInfoObjectConfigData!.UNCRYPTED_EXTENSION, transformInfoObjectConfigData!.ENCRYPTED_EXTENSION).
                             get(abPath)!;
         
         
@@ -271,7 +271,7 @@ index < taxNameNodeList!.getLength(); index++)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return SimpleStateTaxModule() as TaxModuleInterface;
+                        return new SimpleStateTaxModule() as TaxModuleInterface;
     
 }
 

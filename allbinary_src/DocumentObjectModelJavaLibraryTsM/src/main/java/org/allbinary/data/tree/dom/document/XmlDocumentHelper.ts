@@ -156,7 +156,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e);
     public format(xmlString: string): string{
     //var xmlString = xmlString
 
-    var src: InputSource = new InputSource(StringReader(xmlString));
+    var src: InputSource = new InputSource(new StringReader(xmlString));
         
         
 ;
@@ -173,7 +173,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e);
         
 ;
     
-transformer.transform(DOMSource(document), StreamResult(out));
+transformer.transform(new DOMSource(document), new StreamResult(out));
     
 
 

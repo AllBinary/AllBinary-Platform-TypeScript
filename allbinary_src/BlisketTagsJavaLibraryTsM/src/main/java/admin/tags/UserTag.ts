@@ -43,9 +43,9 @@ export class UserTag extends TableTag {
 public constructor (){
 
             super();
-            this.setTagHelperFactory(UserHelperFactory());
+            this.setTagHelperFactory(new UserHelperFactory());
     
-this.setTagRequestHelperFactory(UserHelperFactory());
+this.setTagRequestHelperFactory(new UserHelperFactory());
     
 }
 

@@ -152,7 +152,7 @@ this.componentInterface= TransformFactory.getInstance()!.getInstance(this.abeCli
             
 
 
-                            throw Error("Hmm: " +componentInterface!.getTransformDocumentInterface()!.getDoc())
+                            throw new Error("Hmm: " +componentInterface!.getTransformDocumentInterface()!.getDoc())
 
                 //: 
 } catch(e) 

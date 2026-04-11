@@ -78,7 +78,7 @@ public constructor (storeName: string){
             var storeName = storeName
 this.storeFrontInterface= StoreFrontFactory.getInstance(storeName);
     
-this.metaValidationVector= Vector();
+this.metaValidationVector= new Vector();
     
 
     var contentValue: string = this.storeFrontInterface!.getName() +" E-Commerce Site";
@@ -119,7 +119,7 @@ public constructor (document: Document){
 
 
 
-                            throw Error(CommonStrings.getInstance()!.NOT_IMPLEMENTED)
+                            throw new Error(CommonStrings.getInstance()!.NOT_IMPLEMENTED)
 }
 
 

@@ -79,7 +79,7 @@ var objectConfigFileAbPath = objectConfigFileAbPath
 ;
     
 
-    var data: string = CryptFileReader(transformInfoObjectConfigData!.UNCRYPTED_EXTENSION, transformInfoObjectConfigData!.getInstance()!.ENCRYPTED_EXTENSION).
+    var data: string = new CryptFileReader(transformInfoObjectConfigData!.UNCRYPTED_EXTENSION, transformInfoObjectConfigData!.getInstance()!.ENCRYPTED_EXTENSION).
                             get(objectConfigFileAbPath)!;
         
         
@@ -89,7 +89,7 @@ var objectConfigFileAbPath = objectConfigFileAbPath
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return TransformInfoObjectConfig(transformInfoInterface, DomDocumentHelper.create(data));
+                        return new TransformInfoObjectConfig(transformInfoInterface, DomDocumentHelper.create(data));
     
 
                 //: 

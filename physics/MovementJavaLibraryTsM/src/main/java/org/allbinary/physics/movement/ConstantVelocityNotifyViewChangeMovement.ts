@@ -52,7 +52,7 @@ public constructor (){
             super();
             this.speedBasicDecimal= BasicDecimal.ZERO_BIGDECIMAL;
     
-this.basicVelocityProperties= BasicVelocityProperties();
+this.basicVelocityProperties= new BasicVelocityProperties();
     
 }
 

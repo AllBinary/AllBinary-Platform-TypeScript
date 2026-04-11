@@ -61,7 +61,7 @@ public constructor (){
 
                                     }
                                 
-this.setUserEmailEventsConfigurationInterface(UserEmailEventsConfiguration());
+this.setUserEmailEventsConfigurationInterface(new UserEmailEventsConfiguration());
     
 }
 
@@ -78,7 +78,7 @@ public constructor (hashMap: HashMap<any, any>){
 
                                     }
                                 
-this.setUserEmailEventsConfigurationInterface(UserEmailEventsConfiguration(hashMap));
+this.setUserEmailEventsConfigurationInterface(new UserEmailEventsConfiguration(hashMap));
     
 }
 

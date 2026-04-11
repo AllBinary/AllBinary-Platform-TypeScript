@@ -71,7 +71,7 @@ this.getInstance(goingToGeographicMapCellPosition, geographicMapCellPosition, co
                                 )
                         
                                     {
-                                    pathFindingNodeCostInfo= PathFindingNodeCostInfo(costFromStart, costToEnd);
+                                    pathFindingNodeCostInfo= new PathFindingNodeCostInfo(costFromStart, costToEnd);
     
 pathFindingNodeCostInfo!.setTotalCost();
     

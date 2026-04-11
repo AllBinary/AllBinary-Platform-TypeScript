@@ -50,7 +50,7 @@ private constructor (){
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 

@@ -143,7 +143,7 @@ this.highScore!.setName(name);
 
 
     public saveHighScore(){
-logUtil!.put(StringMaker().
+logUtil!.put(new StringMaker().
                             append(commonStrings!.START)!.append(StringUtil.getInstance()!.toString(this.highScore))!.toString(), this, "saveHighScore");
     
 
@@ -194,7 +194,7 @@ highScores!.addHighScore(this.highScore);
     
 highScoresAsString= highScores!.toString();
     
-logUtil!.put(StringMaker().
+logUtil!.put(new StringMaker().
                             append("Added/Adding Score: ")!.append(highScoresAsString)!.toString(), this, "saveHighScore");
     
 }

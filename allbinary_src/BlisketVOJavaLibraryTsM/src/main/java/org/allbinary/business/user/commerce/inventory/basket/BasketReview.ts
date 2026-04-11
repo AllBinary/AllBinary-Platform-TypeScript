@@ -211,7 +211,7 @@ index < size; index++)
         
 ;
     
-weightFloat += Float(item.getWeight()).
+weightFloat += new Float(item.getWeight()).
                             toFloat();
     
 }
@@ -220,7 +220,7 @@ weightFloat += Float(item.getWeight()).
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Float(weightFloat).
+                        return new Float(weightFloat).
                             toString();
 
                         ;
@@ -233,7 +233,7 @@ weightFloat += Float(item.getWeight()).
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Integer(items.length);
+                        return new Integer(items.length);
     
 }
 
@@ -326,7 +326,7 @@ index < size; index++)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Integer(item.getNumber());
+                        return new Integer(item.getNumber());
     
 
                                     }
@@ -337,7 +337,7 @@ index < size; index++)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Integer(0);
+                        return new Integer(0);
     
 }
 
@@ -381,7 +381,7 @@ index < size; index++)
         
 ;
     
-node.appendChild(ItemView(item, Vector()).
+node.appendChild(new ItemView(item, new Vector()).
                             toXmlNode(document));
     
 }

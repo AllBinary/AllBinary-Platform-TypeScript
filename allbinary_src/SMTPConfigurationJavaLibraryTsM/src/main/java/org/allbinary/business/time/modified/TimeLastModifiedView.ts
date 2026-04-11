@@ -56,7 +56,7 @@ public constructor (node: Node){
 
             super();
             var node = node
-this.setTimeLastModified(TimeLastModified(DomNodeHelper.getTextNodeValue(node)));
+this.setTimeLastModified(new TimeLastModified(DomNodeHelper.getTextNodeValue(node)));
     
 }
 

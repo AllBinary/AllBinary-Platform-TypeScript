@@ -33,7 +33,7 @@ var cachePolicy = cachePolicy
 
 
 
-                            throw Error("No Such PoolType: " +poolType!.toString())
+                            throw new Error("No Such PoolType: " +poolType!.toString())
 }
 
 private constructor (){

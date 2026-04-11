@@ -166,7 +166,7 @@ this.name= name;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return StringMaker().
+                        return new StringMaker().
                             append(name)!.append(commonSeps!.COLON)!.appendlong(this.score)!.append(commonSeps!.FORWARD_SLASH)!.append(this.scoreString)!.toString();
 
                         ;

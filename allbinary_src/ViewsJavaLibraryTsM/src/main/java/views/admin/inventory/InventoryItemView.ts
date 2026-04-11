@@ -163,7 +163,7 @@ this.request= this.getPageContext()!.getRequest();
                 //@Throws(Error::class)
             
     getFormData(){
-this.setRequestHashMap(MultipartRequestParams(request).
+this.setRequestHashMap(new MultipartRequestParams(request).
                             toHashMap());
     
 
@@ -229,7 +229,7 @@ logUtil!.put(stringBuffer!.toString(), this, "getFormData()");
 
                                     }
                                 
-this.itemInterface= BasicItem(this.getRequestHashMap()) as ItemInterface;
+this.itemInterface= new BasicItem(this.getRequestHashMap()) as ItemInterface;
     
 }
 
@@ -265,11 +265,11 @@ downloadableItem= this.downloadableItemVector!.get(index);
 
                          as DownloadableItem;
     
-vector.add(DownloadableItemView(downloadableItem));
+vector.add(new DownloadableItemView(downloadableItem));
     
 }
 
-this.addDomNodeInterface(BasicItemView(itemInterface, vector));
+this.addDomNodeInterface(new BasicItemView(itemInterface, vector));
     
 }
 

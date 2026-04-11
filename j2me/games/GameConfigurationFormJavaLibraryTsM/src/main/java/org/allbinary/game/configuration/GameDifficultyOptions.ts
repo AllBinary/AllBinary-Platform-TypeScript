@@ -211,7 +211,7 @@ index < size; index++)
         
 ;
     
-logUtil!.put(StringMaker().
+logUtil!.put(new StringMaker().
                             append(NAME)!.append(anyType!.toString())!.toString(), this, METHOD_NAME);
     
 choiceGroup!.append(anyType!.toString(), NullCanvas.NULL_IMAGE);

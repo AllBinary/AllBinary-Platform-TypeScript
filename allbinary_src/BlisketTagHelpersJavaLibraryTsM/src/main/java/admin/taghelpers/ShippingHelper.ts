@@ -99,7 +99,7 @@ this.request= pageContext!.getRequest();
 
                                     }
                                 
-this.weblisketSession= WeblisketSession(hashMap, pageContext);
+this.weblisketSession= new WeblisketSession(hashMap, pageContext);
     
 this.getFormData();
     

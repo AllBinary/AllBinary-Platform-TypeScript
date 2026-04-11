@@ -126,7 +126,7 @@ var response = response
         try {
             BlisketServletUtil.getInstance()!.init(request);
     
-this.requestHashMap= MultipartRequestParams(request).
+this.requestHashMap= new MultipartRequestParams(request).
                             toHashMap();
     
 
@@ -163,7 +163,7 @@ response.sendError(HttpServletResponse.SC_NOT_FOUND);
 ;
     
 
-    var authenticationHelper: AuthenticationHelper = AuthenticationHelperFactory().
+    var authenticationHelper: AuthenticationHelper = new AuthenticationHelperFactory().
                             getInstance(hashMap, request);
 
                          as AuthenticationHelper;
@@ -338,7 +338,7 @@ file.createNewFile();
 
                                     }
                                 
-fileOutputStream= AbFileOutputStream(file);
+fileOutputStream= new AbFileOutputStream(file);
     
 fileOutputStream!.write(byteArray);
     

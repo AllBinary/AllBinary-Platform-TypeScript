@@ -83,7 +83,7 @@ public constructor (node: Node){
 
                                     }
                                 
-this.userEmailConfigurationInterface= UserEmailConfiguration() as UserEmailConfigurationInterface;
+this.userEmailConfigurationInterface= new UserEmailConfiguration() as UserEmailConfigurationInterface;
     
 
     var childNodeList: NodeList = node.getChildNodes()!;

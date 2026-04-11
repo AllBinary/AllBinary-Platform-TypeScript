@@ -114,7 +114,7 @@ var path = path
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return subDirectory!.search(KEY, AbFile(path));
+                        return subDirectory!.search(KEY, new AbFile(path));
 
                         ;
     

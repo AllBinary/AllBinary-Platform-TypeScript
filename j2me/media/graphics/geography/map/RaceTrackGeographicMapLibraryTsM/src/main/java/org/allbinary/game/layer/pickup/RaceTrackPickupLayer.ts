@@ -39,7 +39,7 @@ export class RaceTrackPickupLayer extends PickupLayer {
         
 public constructor ()                        
 
-                            : super(NAME, TileLayerPositionIntoViewPosition()){
+                            : super(NAME, new TileLayerPositionIntoViewPosition()){
 
             super();
             

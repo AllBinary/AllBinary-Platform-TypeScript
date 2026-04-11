@@ -120,7 +120,7 @@ private constructor (){
                             
 
 
-                            throw Error("Not Mutable")
+                            throw new Error("Not Mutable")
 
                         }
                             
@@ -213,7 +213,7 @@ graphics.drawImage(originalImage, halfWidthDelta, halfHeightDelta, anchor);
                             
 
 
-                            throw Error("Not Mutable")
+                            throw new Error("Not Mutable")
 
                         }
                             

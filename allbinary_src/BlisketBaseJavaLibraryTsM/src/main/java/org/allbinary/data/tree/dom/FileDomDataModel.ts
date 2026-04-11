@@ -55,7 +55,7 @@ this.file= file;
     public toXmlNode(document: Document): Node{
 var document = document
 
-    var tableMappingInterface: TableMappingInterface = FileTableMapping(this.file) as TableMappingInterface;
+    var tableMappingInterface: TableMappingInterface = new FileTableMapping(this.file) as TableMappingInterface;
         
         
 ;

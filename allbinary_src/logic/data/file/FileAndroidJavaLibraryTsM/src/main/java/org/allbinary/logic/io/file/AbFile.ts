@@ -56,7 +56,7 @@ export class AbFile
             super();
             var filePath = filePath
 var unknown = unknown
-this.file= File(filePath);
+this.file= new File(filePath);
     
 }
 
@@ -73,7 +73,7 @@ public constructor (file: AbFile, childPathName: string){
             super();
             var file = file
 var childPathName = childPathName
-this.file= File(file.getFile(), childPathName);
+this.file= new File(file.getFile(), childPathName);
     
 }
 
@@ -81,7 +81,7 @@ public constructor (filePath: string){
 
             super();
             var filePath = filePath
-this.file= File(AbPath(filePath).
+this.file= new File(new AbPath(filePath).
                             toFileSystemString());
     
 }
@@ -91,7 +91,7 @@ public constructor (filePath: string, fileName: string){
             super();
             var filePath = filePath
 var fileName = fileName
-this.file= File(AbPath(filePath).
+this.file= new File(new AbPath(filePath).
                             toFileSystemString(), fileName);
     
 }
@@ -100,7 +100,7 @@ public constructor (abPath: AbPath){
 
             super();
             var abPath = abPath
-this.file= File(abPath!.toFileSystemString());
+this.file= new File(abPath!.toFileSystemString());
     
 }
 

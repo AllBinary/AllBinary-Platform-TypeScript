@@ -279,7 +279,7 @@ PreLogUtil.put(commonStrings!.EXCEPTION, this, commonStrings!.EXCEPTION, e);
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 }

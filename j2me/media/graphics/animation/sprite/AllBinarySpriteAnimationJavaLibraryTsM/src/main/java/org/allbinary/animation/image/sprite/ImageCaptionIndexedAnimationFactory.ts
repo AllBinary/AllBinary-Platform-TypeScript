@@ -200,7 +200,7 @@ this.animationBehaviorFactory= animationBehaviorFactory;
                                     
 
 
-                            throw Error("Sound Was not Initialized")
+                            throw new Error("Sound Was not Initialized")
 
                                     }
                                 
@@ -208,7 +208,7 @@ this.animationBehaviorFactory= animationBehaviorFactory;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return CaptionIndexedAnimation(animationInterface, movieIndexedAnimationInterface, player, this.captionDx, this.captionDy, dx, dy, time, this.animationBehaviorFactory!.getOrCreateInstance());
+                        return new CaptionIndexedAnimation(animationInterface, movieIndexedAnimationInterface, player, this.captionDx, this.captionDy, dx, dy, time, this.animationBehaviorFactory!.getOrCreateInstance());
     
 }
 

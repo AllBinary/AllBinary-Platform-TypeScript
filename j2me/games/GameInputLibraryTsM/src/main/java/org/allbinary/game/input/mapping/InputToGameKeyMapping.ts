@@ -187,7 +187,7 @@ this.set(input, mappedToInput);
     public remove(input: Input, mappedToInput: Input){
 var input = input
 var mappedToInput = mappedToInput
-logUtil!.put(StringMaker().
+logUtil!.put(new StringMaker().
                             append(CommonLabels.getInstance()!.START_LABEL)!.append(StringUtil.getInstance()!.toString(input))!.append(" == ")!.append(StringUtil.getInstance()!.toString(mappedToInput))!.toString(), this, "InputToGameKeyMapping::remove");
     
 super.remove(input, mappedToInput);
@@ -324,8 +324,8 @@ var gameKey = gameKey
                                     }
                                 
                         else {
-                            PreLogUtil.putOE(StringMaker().
-                            append(gameKey!.toString())!.append(CommonSeps.getInstance()!.COLON_SEP)!.appendint(key)!.toString(), this, commonStrings!.INIT, Error());
+                            PreLogUtil.putOE(new StringMaker().
+                            append(gameKey!.toString())!.append(CommonSeps.getInstance()!.COLON_SEP)!.appendint(key)!.toString(), this, commonStrings!.INIT, new Error());
     
 
                         }

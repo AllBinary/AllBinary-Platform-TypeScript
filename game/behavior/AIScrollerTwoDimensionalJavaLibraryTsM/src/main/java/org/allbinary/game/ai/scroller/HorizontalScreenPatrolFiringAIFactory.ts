@@ -53,7 +53,7 @@ var gameInput = gameInput
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return HorizontalScreenPatrolAI(hashtable, ownerLayerInterface, gameInput);
+                        return new HorizontalScreenPatrolAI(hashtable, ownerLayerInterface, gameInput);
     
 }
 

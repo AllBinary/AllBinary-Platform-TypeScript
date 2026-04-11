@@ -187,7 +187,7 @@ var contentBase = contentBase
         
 ;
     
-mimeBodyParts[0]= MimeBodyPart();
+mimeBodyParts[0]= new MimeBodyPart();
     
 mimeBodyParts[0]!.setText(textBody);
     
@@ -216,19 +216,19 @@ internetHeaders!.addHeader("Content-Type", "text/html");
 
                                     }
                                 
-mimeBodyParts[1]= MimeBodyPart(internetHeaders, htmlAttachment!.encodeToByteArray());
+mimeBodyParts[1]= new MimeBodyPart(internetHeaders, htmlAttachment!.encodeToByteArray());
     
 
                                     }
                                 
 init(server, null as Authenticator, 
                                                 [
-                                                    InternetAddress(from);
+                                                    new InternetAddress(from);
         
         
                                                 ], 
                                                 [
-                                                    InternetAddress(to);
+                                                    new InternetAddress(to);
         
         
                                                 ], null as Array<InternetAddress?>, null as Array<InternetAddress?>, subject, mimeBodyParts);
@@ -272,7 +272,7 @@ var addresses_cc = addresses_cc
 var addresses_bcc = addresses_bcc
 var subject = subject
 var mimeBodyParts = mimeBodyParts
-this.properties= Properties();
+this.properties= new Properties();
     
 this.properties.put(SMTP_HOST, server);
     
@@ -340,7 +340,7 @@ this.properties.put(SMTP_LOCAL_HOST, "FakeHostName");
                                     {
                                     session.setDebug(true);
     
-bs= ByteArrayOutputStream();
+bs= new ByteArrayOutputStream();
     
 
     var printStream: PrintStream = new PrintStream(bs);
@@ -353,7 +353,7 @@ session.setDebugOut(printStream);
 
                                     }
                                 
-msg= MimeMessage(session);
+msg= new MimeMessage(session);
     
 msg.addFrom(addresses_from);
     
@@ -654,7 +654,7 @@ var document = document
 
 
 
-                            throw Error(CommonStrings.getInstance()!.NOT_IMPLEMENTED)
+                            throw new Error(CommonStrings.getInstance()!.NOT_IMPLEMENTED)
 }
 
 

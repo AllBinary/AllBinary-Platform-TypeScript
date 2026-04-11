@@ -64,7 +64,7 @@ public constructor (basicAnimationInterfaceFactoryInterfaceArray: AnimationInter
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return SimultaneousCompoundRotationAnimation(animationInterfaceArray as Array<RotationAnimation?>, this.animationBehaviorFactory!.getOrCreateInstance());
+                        return new SimultaneousCompoundRotationAnimation(animationInterfaceArray as Array<RotationAnimation?>, this.animationBehaviorFactory!.getOrCreateInstance());
     
 }
 

@@ -53,7 +53,7 @@ public constructor (transformInfoInterface: TransformInfoInterface)
                 //@Throws(Error::class)
             
     public isValid(): Boolean{
-this.streetAddress= StreetAddress(this.getRequest());
+this.streetAddress= new StreetAddress(this.getRequest());
     
 
                         if(this.streetAddress!.isValid() == Boolean.FALSE)

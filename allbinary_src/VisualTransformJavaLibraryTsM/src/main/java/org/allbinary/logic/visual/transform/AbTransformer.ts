@@ -119,7 +119,7 @@ this.uriResolver= uriResolver;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return StreamSource(this.getInputStream());
+                        return new StreamSource(this.getInputStream());
     
 }
 
@@ -148,12 +148,12 @@ var xmlDocumentStr = xmlDocumentStr
                                     
 
 
-                            throw Error("No URIResolver")
+                            throw new Error("No URIResolver")
 
                                     }
                                 
 
-    var result: string = XslHelper.getInstance()!.translate(this.getURIResolver(), StreamSource(this.getInputStream()), StreamSource(StringBufferInputStream(xmlDocumentStr)))!;
+    var result: string = XslHelper.getInstance()!.translate(this.getURIResolver(), new StreamSource(this.getInputStream()), new StreamSource(new StringBufferInputStream(xmlDocumentStr)))!;
         
         
 ;

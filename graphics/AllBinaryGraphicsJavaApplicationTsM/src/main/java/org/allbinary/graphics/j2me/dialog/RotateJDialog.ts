@@ -39,17 +39,17 @@ export class RotateJDialog extends javax.swing.JDialog {
 
     public static main(args: string[]){
 var args = args
-java.awt.EventQueue.invokeLater(object: ARunnable()
+java.awt.EventQueue.invokeLater(new object: ARunnable()
                                 {
                                 
     public run(){
 
-    var dialog: RotateJDialog = new RotateJDialog(javax.swing.JFrame(), true);
+    var dialog: RotateJDialog = new RotateJDialog(new javax.swing.JFrame(), true);
         
         
 ;
     
-dialog.addWindowListener(object: java.awt.event.WindowAdapter()
+dialog.addWindowListener(new object: java.awt.event.WindowAdapter()
                                 {
                                 
     public windowClosing(e: java.awt.event.WindowEvent){
@@ -95,17 +95,17 @@ initComponents();
 
 
     initComponents(){
-angleIncrementJTextField= javax.swing.JTextField();
+angleIncrementJTextField= new javax.swing.JTextField();
     
-jLabel1= javax.swing.JLabel();
+jLabel1= new javax.swing.JLabel();
     
-totalRotationJTextField= javax.swing.JTextField();
+totalRotationJTextField= new javax.swing.JTextField();
     
-jLabel2= javax.swing.JLabel();
+jLabel2= new javax.swing.JLabel();
     
-jPanel1= javax.swing.JPanel();
+jPanel1= new javax.swing.JPanel();
     
-jButton1= javax.swing.JButton();
+jButton1= new javax.swing.JButton();
     
 setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
     
@@ -119,7 +119,7 @@ jLabel2!.setText("Total Angular Rotation:");
     
 jButton1!.setText("OK");
     
-jButton1!.addActionListener(object: java.awt.event.ActionListener()
+jButton1!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){

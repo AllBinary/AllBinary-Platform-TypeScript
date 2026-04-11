@@ -92,7 +92,7 @@ public constructor (resource: string){
                                     
 
 
-                            throw Error(StringMaker().
+                            throw new Error(new StringMaker().
                             append("Failed to create media player for: ")!.append(resource)!.append(" with id: ")!.append(resourceUtil!.getResourceId(resource)!.toString())!.toString())
 
                                     }

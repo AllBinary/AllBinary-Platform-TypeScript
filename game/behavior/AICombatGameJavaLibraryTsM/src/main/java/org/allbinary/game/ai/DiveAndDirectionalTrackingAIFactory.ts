@@ -70,7 +70,7 @@ var gameInput = gameInput
                                     }
                                 
 
-    var hashtable2: Hashtable<any, any> = BasicProbabilityAIDataFactory().
+    var hashtable2: Hashtable<any, any> = new BasicProbabilityAIDataFactory().
                             getInstance()!;
         
         
@@ -79,7 +79,7 @@ var gameInput = gameInput
 hashtable2.put(BasicAI.AI_VISITOR, LastKeyAIVisitorFactory.getInstance());
     
 
-    var artificialIntelligenceInterface: ArtificialIntelligenceInterface = BasicRandomAIFactory().
+    var artificialIntelligenceInterface: ArtificialIntelligenceInterface = new BasicRandomAIFactory().
                             getInstance(hashtable2, ownerLayerInterface, gameInput)!;
         
         
@@ -89,7 +89,7 @@ hashtable2.put(BasicAI.AI_VISITOR, LastKeyAIVisitorFactory.getInstance());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return DiveAndDirectionalTrackingAI(ownerLayerInterface, artificialIntelligenceInterface, gameInput, visitorCanBeNull as Visitor);
+                        return new DiveAndDirectionalTrackingAI(ownerLayerInterface, artificialIntelligenceInterface, gameInput, visitorCanBeNull as Visitor);
     
 }
 

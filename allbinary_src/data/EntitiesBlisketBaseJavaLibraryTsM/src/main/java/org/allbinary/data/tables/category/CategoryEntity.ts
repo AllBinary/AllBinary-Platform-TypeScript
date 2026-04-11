@@ -62,7 +62,7 @@ export class CategoryEntity extends AbSqlBean
         
 public constructor (categoryFactoryInterface: CategoryFactoryInterface)                        
 
-                            : super(InventoryDbInitInfo()){
+                            : super(new InventoryDbInitInfo()){
 
             super();
             var categoryFactoryInterface = categoryFactoryInterface
@@ -76,7 +76,7 @@ this.setTableName(tableName);
 
 public constructor ()                        
 
-                            : super(InventoryDbInitInfo()){
+                            : super(new InventoryDbInitInfo()){
 
             super();
             

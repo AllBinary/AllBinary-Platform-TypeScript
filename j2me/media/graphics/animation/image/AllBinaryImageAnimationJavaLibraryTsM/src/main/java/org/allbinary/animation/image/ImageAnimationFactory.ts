@@ -123,7 +123,7 @@ scaledImage= openGLUtil!.add(scaledImage);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return AdjustedImageAnimation(scaledImage, this.animationFactoryInitializationVisitor!.dx, this.animationFactoryInitializationVisitor!.dy, this.animationBehaviorFactory!.getOrCreateInstance());
+                        return new AdjustedImageAnimation(scaledImage, this.animationFactoryInitializationVisitor!.dx, this.animationFactoryInitializationVisitor!.dy, this.animationBehaviorFactory!.getOrCreateInstance());
     
 
                                     }
@@ -133,7 +133,7 @@ scaledImage= openGLUtil!.add(scaledImage);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return ImageAnimation(scaledImage, this.animationBehaviorFactory!.getOrCreateInstance());
+                        return new ImageAnimation(scaledImage, this.animationBehaviorFactory!.getOrCreateInstance());
     
 
                         }

@@ -119,7 +119,7 @@ gameFeatureFormUtil!.addChoiceGroup(this, GameFeatureChoiceGroups.getMultipleIns
     
 this.initCommands(commandListener);
     
-this.setItemStateListener(GameFeatureItemStateListener(this));
+this.setItemStateListener(new GameFeatureItemStateListener(this));
     
 this.addTextFieldsIfSimulated();
     
@@ -231,7 +231,7 @@ gameConfigurationTextInput= hashtable.get(objectArray[index]! as Object);
 
                          as GameConfigurationTextInput;
     
-textField= TextField(gameConfigurationTextInput!.getLabel(), gameConfigurationTextInput!.getText(), 30, TextField.ANY);
+textField= new TextField(gameConfigurationTextInput!.getLabel(), gameConfigurationTextInput!.getText(), 30, TextField.ANY);
     
 this.append(textField);
     
@@ -301,11 +301,11 @@ stringMaker!.delete(0, stringMaker!.length());
     
 logUtil!.put(stringMaker!.append(NAME)!.append(gameConfiguration!.toString())!.toString(), this, METHOD_NAME);
     
-gauge= GameConfigurationGauge(gameConfiguration);
+gauge= new GameConfigurationGauge(gameConfiguration);
     
 gauge.setDefaultCommand(GAUGE_CHANGE);
     
-gauge.setItemCommandListener(GameFeatureItemCommandListener(this));
+gauge.setItemCommandListener(new GameFeatureItemCommandListener(this));
     
 this.append(gauge);
     

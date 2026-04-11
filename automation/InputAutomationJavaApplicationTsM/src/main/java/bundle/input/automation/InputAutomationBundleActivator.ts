@@ -94,7 +94,7 @@ export class InputAutomationBundleActivator
     
 this.bundleContext= bundleContext;
     
-moduleManagementThread= Thread(InputAutomationNewBundleRunnable(this));
+moduleManagementThread= new Thread(new InputAutomationNewBundleRunnable(this));
     
 moduleManagementThread!.start();
     
@@ -128,10 +128,10 @@ OSGIActivatorUtil.registerAsService(this.getBundleContext(), InputAutomationServ
                 //@Throws(Error::class)
             
     public useServices(){
-InputAutomationRobotServiceConsumer(this.getBundleContext()).
+new InputAutomationRobotServiceConsumer(this.getBundleContext()).
                             process();
     
-InputAutomationModuleServiceConsumer(this.getBundleContext()).
+new InputAutomationModuleServiceConsumer(this.getBundleContext()).
                             process();
     
 }

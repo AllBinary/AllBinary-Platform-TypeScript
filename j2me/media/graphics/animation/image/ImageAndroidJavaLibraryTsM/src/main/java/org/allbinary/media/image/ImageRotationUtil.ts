@@ -129,7 +129,7 @@ image.getGraphics()!.drawImage(originalImage, 0, 0, anchor);
                             
 
 
-                            throw Error("Not Mutable")
+                            throw new Error("Not Mutable")
 
                         }
                             

@@ -63,7 +63,7 @@ var gameInput = gameInput
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return KeyPressesAI(hashtable, ownerLayerInterface, gameInput);
+                        return new KeyPressesAI(hashtable, ownerLayerInterface, gameInput);
     
 
                                     }
@@ -73,7 +73,7 @@ var gameInput = gameInput
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return MultiKeyPressesAI(hashtable, ownerLayerInterface, gameInput);
+                        return new MultiKeyPressesAI(hashtable, ownerLayerInterface, gameInput);
     
 
                         }

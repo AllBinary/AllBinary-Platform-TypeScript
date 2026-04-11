@@ -548,7 +548,7 @@ index < size; index++)
 
 
 
-                            throw Error("No Components Specified in ObjectConfig")
+                            throw new Error("No Components Specified in ObjectConfig")
 }
 
 

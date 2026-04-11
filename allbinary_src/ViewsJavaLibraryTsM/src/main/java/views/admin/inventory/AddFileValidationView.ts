@@ -201,7 +201,7 @@ logUtil!.put(stringBuffer!.toString(), this, commonStrings!.IS_VALID);
 this.itemInterface!.setCategory(storeFrontInterface!.getCategoryPath() +this.itemInterface!.getCategory());
     
 
-    var fullCategory: string = StringMaker().
+    var fullCategory: string = new StringMaker().
                             append(URLGLOBALS.getWebappPath())!.append(storeFrontInterface!.getCurrentHostNamePath())!.append(this.itemInterface!.getCategory())!.toString()!;
         
         
@@ -412,7 +412,7 @@ stringBuffer!.append("<br/>");
 ;
     
 
-    var fullCategory: string = StringMaker().
+    var fullCategory: string = new StringMaker().
                             append(URLGLOBALS.getWebappPath())!.append(storeFrontInterface!.getCurrentHostNamePath())!.append(this.itemInterface!.getCategory())!.toString()!;
         
         

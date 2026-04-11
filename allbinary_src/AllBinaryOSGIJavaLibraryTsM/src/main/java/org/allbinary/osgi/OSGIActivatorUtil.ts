@@ -48,7 +48,7 @@ export class OSGIActivatorUtil
     //var bundleContext = bundleContext
     //var anyType = anyType
     //var serviceName = serviceName
-OSGIActivatorUtil.registerAsService(bundleContext, anyType, serviceName, Hashtable<any, any>());
+OSGIActivatorUtil.registerAsService(bundleContext, anyType, serviceName, new Hashtable<any, any>());
     
 }
 
@@ -81,7 +81,7 @@ serviceReference= bundleContext!.getServiceReference(serviceName);
                                     
 
 
-                            throw Error("No Such Service Reference")
+                            throw new Error("No Such Service Reference")
 
                                     }
                                 

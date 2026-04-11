@@ -58,15 +58,15 @@ var gameInput = gameInput
         
 ;
     
-artificialIntelligenceInterface[0]= RandomPatrolAI(hashtable, ownerLayerInterface, gameInput);
+artificialIntelligenceInterface[0]= new RandomPatrolAI(hashtable, ownerLayerInterface, gameInput);
     
-artificialIntelligenceInterface[1]= TimedFireAI(1800, ownerLayerInterface, gameInput);
+artificialIntelligenceInterface[1]= new TimedFireAI(1800, ownerLayerInterface, gameInput);
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return ArrayAI(artificialIntelligenceInterface, ownerLayerInterface, gameInput);
+                        return new ArrayAI(artificialIntelligenceInterface, ownerLayerInterface, gameInput);
     
 }
 

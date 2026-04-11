@@ -121,7 +121,7 @@ var gameInput = gameInput
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return BoundBounceAI(ownerLayerInterface, gameInput, TopULayerBounds(rectangle), ReverseVelocityBoundsVisitor(ownerLayerInterface));
+                        return new BoundBounceAI(ownerLayerInterface, gameInput, new TopULayerBounds(rectangle), new ReverseVelocityBoundsVisitor(ownerLayerInterface));
     
 }
 

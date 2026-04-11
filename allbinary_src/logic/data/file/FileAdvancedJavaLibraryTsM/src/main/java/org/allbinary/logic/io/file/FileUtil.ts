@@ -841,7 +841,7 @@ var total = total
                                     
 
 
-                            throw Error("Not a directory: " +file.getPath())
+                            throw new Error("Not a directory: " +file.getPath())
 
                                     }
                                 
@@ -942,7 +942,7 @@ index < end; index++)
                                 
                         else {
                             
-    var path: string = AbPath(nextFile!.getPath()).
+    var path: string = new AbPath(nextFile!.getPath()).
                             getPath()!;
         
         
@@ -958,7 +958,7 @@ index < end; index++)
                         if(path.indexOf(URLGLOBALS.getWebappPath()) < 0)
                         
                                     {
-                                    beginIndex -= AbPath(URLGLOBALS.getWebappPath()).
+                                    beginIndex -= new AbPath(URLGLOBALS.getWebappPath()).
                             getPath()!.length();
     
 
@@ -971,7 +971,7 @@ index < end; index++)
 ;
     
 
-    var toFile: AbFile = new AbFile(AbPath(newPath));
+    var toFile: AbFile = new AbFile(new AbPath(newPath));
         
         
 ;
@@ -1037,7 +1037,7 @@ logUtil!.put(stringBuffer!.toString(), getInstance(), "copyDirectory");
                                     
 
 
-                            throw Error("Failed to create directory: " +newDirectoryAbPath)
+                            throw new Error("Failed to create directory: " +newDirectoryAbPath)
 
                                     }
                                 
@@ -1101,7 +1101,7 @@ index < size; index++)
                         if(file.isFile())
                         
                                     {
-                                    this.copyFile(file, AbFile(newDirectoryAbPath!.toString(), file.getName()));
+                                    this.copyFile(file, new AbFile(newDirectoryAbPath!.toString(), file.getName()));
     
 
                                     }
@@ -1110,7 +1110,7 @@ index < size; index++)
                         if(file.isDirectory())
                         
                                     {
-                                    this.copyDirectory(file, AbFile(newDirectoryAbPath));
+                                    this.copyDirectory(file, new AbFile(newDirectoryAbPath));
     
 
                                     }
@@ -1119,7 +1119,7 @@ index < size; index++)
                             
 
 
-                            throw Error("File Copy Error")
+                            throw new Error("File Copy Error")
 
                         }
                             
@@ -1201,7 +1201,7 @@ logUtil!.put(stringBuffer!.toString(), getInstance(), "copy");
                                     
 
 
-                            throw Error("Cannot Copy From A Null Location")
+                            throw new Error("Cannot Copy From A Null Location")
 
                                     }
                                 
@@ -1214,7 +1214,7 @@ logUtil!.put(stringBuffer!.toString(), getInstance(), "copy");
                                     
 
 
-                            throw Error("Cannot Copy To A Null Location")
+                            throw new Error("Cannot Copy To A Null Location")
 
                                     }
                                 
@@ -1377,7 +1377,7 @@ this.copyFile(file, aFile);
                             
 
 
-                            throw Error("File Copy Error")
+                            throw new Error("File Copy Error")
 
                         }
                             
@@ -1496,7 +1496,7 @@ logUtil!.put(stringBuffer!.toString(), getInstance(), "copy", e);
     
 
         try {
-            idFile= FileInputStream(fileName);
+            idFile= new FileInputStream(fileName);
     
 
     var size: number = idFile!.read(bytes)!;
@@ -1624,7 +1624,7 @@ var string = string
     
 
         try {
-            PreLogUtil.put(StringBuilder().
+            PreLogUtil.put(new StringBuilder().
                             append(this.WRITE_LABEL)!.append(filePath)!.append(DATA_LABEL)!.append(string)!.toString(), this, this.WRITE_METHOD);
     
 
@@ -1639,7 +1639,7 @@ var string = string
         
 ;
     
-dataOutputStream= AbDataOutputStream(fileOutputStream);
+dataOutputStream= new AbDataOutputStream(fileOutputStream);
     
 dataOutputStream!.write(string.encodeToByteArray()0, string.length);
     

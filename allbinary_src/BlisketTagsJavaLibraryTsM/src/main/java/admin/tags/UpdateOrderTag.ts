@@ -27,9 +27,9 @@ export class UpdateOrderTag extends TableTag {
 public constructor (){
 
             super();
-            this.setTagHelperFactory(UpdateOrderHelperFactory());
+            this.setTagHelperFactory(new UpdateOrderHelperFactory());
     
-this.setTagRequestHelperFactory(UpdateOrderHelperFactory());
+this.setTagRequestHelperFactory(new UpdateOrderHelperFactory());
     
 }
 

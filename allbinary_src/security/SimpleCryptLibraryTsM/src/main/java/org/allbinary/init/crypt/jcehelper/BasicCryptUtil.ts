@@ -99,7 +99,7 @@ buffer.write(ch);
 ;
     
 
-    var decryptedString: string = new decrypted.decodeToString();
+    var decryptedString: string = decrypted.decodeToString();
         
         
 ;
@@ -123,7 +123,7 @@ buffer.write(ch);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return ByteArrayInputStream(decryptedString!.encodeToByteArray());
+                        return new ByteArrayInputStream(decryptedString!.encodeToByteArray());
     
 }
 

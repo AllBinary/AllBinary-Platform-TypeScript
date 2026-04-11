@@ -102,7 +102,7 @@ public constructor (){
                                     
 
 
-                            throw Error("Not Enough Data For A Valid License On Linux")
+                            throw new Error("Not Enough Data For A Valid License On Linux")
 
                                     }
                                 
@@ -157,7 +157,7 @@ logUtil!.put("Hardware Data: " +this.toString(), this, commonStrings!.INIT, e);
             
     get(filePath: string): LineNumberReader{
     //var filePath = filePath
-componentInterfaceVector= BasicArrayList();
+componentInterfaceVector= new BasicArrayList();
     
 
     var pciFile: FileReader = new FileReader(filePath);
@@ -186,7 +186,7 @@ logUtil!.put("File Found", this, commonStrings!.CONSTRUCTOR);
         {
 nextLine= lineNumberReader!.readLine();
     
-componentInterfaceVector!.add(UnknownHardware(nextLine));
+componentInterfaceVector!.add(new UnknownHardware(nextLine));
     
 }
 

@@ -72,7 +72,7 @@ public constructor (transformInfoInterface: TransformInfoInterface)
         
 ;
     
-this.styleValidationInterface= GenericCssStyleValidation(document);
+this.styleValidationInterface= new GenericCssStyleValidation(document);
     
 
     var isValid: Boolean = this.styleValidationInterface!.isValid()!;

@@ -186,7 +186,7 @@ private constructor (){
         
 i < screens.length; i++)
         {
-inputRobotInterface= InputRobot(screens[i]!) as InputRobotInterface;
+inputRobotInterface= new InputRobot(screens[i]!) as InputRobotInterface;
     
 logUtil!.put("Adding Robot: " +inputRobotInterface!.getName(), this, "getRobots");
     

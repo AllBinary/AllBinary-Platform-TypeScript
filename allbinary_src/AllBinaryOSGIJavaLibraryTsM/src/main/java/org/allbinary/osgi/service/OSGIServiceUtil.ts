@@ -130,7 +130,7 @@ index < size; index++)
                                     
 
 
-                            throw Error("No Service For Reference")
+                            throw new Error("No Service For Reference")
 
                                     }
                                 

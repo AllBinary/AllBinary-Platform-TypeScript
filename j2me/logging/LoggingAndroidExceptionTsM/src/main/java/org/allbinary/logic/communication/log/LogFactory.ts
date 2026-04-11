@@ -33,7 +33,7 @@ var exception = exception
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Log(specialMessage, anyType, functionName, exception);
+                        return new Log(specialMessage, anyType, functionName, exception);
     
 }
 

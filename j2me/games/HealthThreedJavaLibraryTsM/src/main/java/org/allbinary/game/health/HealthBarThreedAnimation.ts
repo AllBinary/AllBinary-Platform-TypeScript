@@ -78,7 +78,7 @@ this.basicColor= this.basicColorFactory!.GREEN;
     
 this.colorP= this.basicColor!.toInt();
     
-rectangle= Rectangle(0, 0, 1, 1, this.basicColor);
+rectangle= new Rectangle(0, 0, 1, 1, this.basicColor);
     
 rectangle.setDoubleSidedEnabled(true);
     

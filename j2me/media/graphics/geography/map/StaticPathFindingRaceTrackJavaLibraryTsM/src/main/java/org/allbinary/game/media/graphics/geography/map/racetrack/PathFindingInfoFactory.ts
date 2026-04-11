@@ -76,7 +76,7 @@ private constructor (){
 PreLogUtil.put(commonStrings!.START, this, commonStrings!.GET_INSTANCE);
     
 
-    var pathFindingInfo: PathFindingInfo = new PathFindingInfo(PathFindingNodeCostInfoFactoryBase());
+    var pathFindingInfo: PathFindingInfo = new PathFindingInfo(new PathFindingNodeCostInfoFactoryBase());
         
         
 ;

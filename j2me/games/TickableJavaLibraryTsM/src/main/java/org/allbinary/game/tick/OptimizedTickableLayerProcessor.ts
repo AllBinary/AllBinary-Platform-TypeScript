@@ -35,7 +35,7 @@ export class OptimizedTickableLayerProcessor extends LayerProcessor {
         
 public constructor ()                        
 
-                            : super(OptimizedTickableLayerManager()){
+                            : super(new OptimizedTickableLayerManager()){
 
             super();
             

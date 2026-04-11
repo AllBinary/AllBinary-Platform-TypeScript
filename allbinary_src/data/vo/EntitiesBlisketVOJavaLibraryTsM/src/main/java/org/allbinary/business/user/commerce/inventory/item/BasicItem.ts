@@ -228,7 +228,7 @@ this.lastModified= itemHashMap!.get(EntryData.getInstance()!.LASTMODIFIED);
 
                          as String;
     
-this.price= Money(itemHashMap!.get(BasicItemData.PRICE);
+this.price= new Money(itemHashMap!.get(BasicItemData.PRICE);
 
                          as String);
     
@@ -280,7 +280,7 @@ public constructor (){
         
 ;
     
-this.itemId= ProductIdGenerator().
+this.itemId= new ProductIdGenerator().
                             getNext();
     
 this.number= CommonPhoneStrings.getInstance()!.ZERO;
@@ -323,7 +323,7 @@ this.timeEntered= EMPTY;
     
 this.lastModified= EMPTY;
     
-this.price= Money();
+this.price= new Money();
     
 this.comment= EMPTY;
     
@@ -883,7 +883,7 @@ this.downloadable= downloadable;
         
 ;
     
-itemTotal!.multiply(Integer(this.number).
+itemTotal!.multiply(new Integer(this.number).
                             toInt());
     
 

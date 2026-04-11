@@ -65,7 +65,7 @@ export class DownloadItemsEntity extends AbSqlBean
         
 public constructor ()                        
 
-                            : super(InventoryDbInitInfo()){
+                            : super(new InventoryDbInitInfo()){
 
             super();
             
@@ -198,7 +198,7 @@ index < size; index++)
         
 ;
     
-returnVector!.add(DownloadableItem(hashMap));
+returnVector!.add(new DownloadableItem(hashMap));
     
 }
 
@@ -269,7 +269,7 @@ index < size; index++)
         
 ;
     
-returnVector!.add(DownloadableItem(hashMap));
+returnVector!.add(new DownloadableItem(hashMap));
     
 }
 

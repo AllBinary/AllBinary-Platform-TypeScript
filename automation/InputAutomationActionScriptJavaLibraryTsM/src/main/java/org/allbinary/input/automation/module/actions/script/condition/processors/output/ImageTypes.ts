@@ -141,7 +141,7 @@ this.getVector()!.add(InputImageType.getInstance(nextImageTypeString));
                             
 
 
-                            throw Error("ImageTypes Unknown Node")
+                            throw new Error("ImageTypes Unknown Node")
 
                         }
                             

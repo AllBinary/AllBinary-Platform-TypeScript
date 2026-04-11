@@ -145,7 +145,7 @@ public constructor (transformInfoInterface: TransformInfoInterface)
                                     }
                                 
 
-                        if(BasicItemValidation(this.itemInterface).
+                        if(new BasicItemValidation(this.itemInterface).
                             isValid() == Boolean.FALSE)
                         
                                     {
@@ -371,7 +371,7 @@ var document = document
 
                                     }
                                 
-stringBuffer!.append(BasicItemValidation(this.itemInterface).
+stringBuffer!.append(new BasicItemValidation(this.itemInterface).
                             validationInfo());
     
 

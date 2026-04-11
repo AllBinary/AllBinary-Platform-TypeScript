@@ -89,7 +89,7 @@ var gl = gl
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 

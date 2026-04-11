@@ -79,7 +79,7 @@ var negativeValue = negativeValue
         
 index >= lastMin; index--)
         {
-INTEGER_ARRAY[index +NEGATIVE_MAX]= Integer(index);
+INTEGER_ARRAY[index +NEGATIVE_MAX]= new Integer(index);
     
 }
 
@@ -93,7 +93,7 @@ INTEGER_ARRAY[index +NEGATIVE_MAX]= Integer(index);
         
 index >= lastNegativeMin; index--)
         {
-INTEGER_ARRAY[index]= Integer( -index);
+INTEGER_ARRAY[index]= new Integer( -index);
     
 }
 
@@ -135,7 +135,7 @@ MIN= value;
         
 index >= lastMin; index--)
         {
-INTEGER_ARRAY[index +NEGATIVE_MAX]= Integer(index);
+INTEGER_ARRAY[index +NEGATIVE_MAX]= new Integer(index);
     
 }
 
@@ -149,7 +149,7 @@ INTEGER_ARRAY[index +NEGATIVE_MAX]= Integer(index);
         
 index >= lastNegativeMin; index--)
         {
-INTEGER_ARRAY[index]= Integer( -index);
+INTEGER_ARRAY[index]= new Integer( -index);
     
 }
 
@@ -217,7 +217,7 @@ var index = index
                                 )
                         
                                     {
-                                    integer= Integer(index);
+                                    integer= new Integer(index);
     
 
                                     }

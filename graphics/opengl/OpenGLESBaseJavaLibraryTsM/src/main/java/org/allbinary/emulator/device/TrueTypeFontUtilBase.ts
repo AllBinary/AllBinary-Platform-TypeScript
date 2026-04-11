@@ -45,7 +45,7 @@ export class TrueTypeFontUtilBase
         
         
 
-    public readonly pattern: string = new patternAsBytes.decodeToString();
+    public readonly pattern: string = patternAsBytes.decodeToString();
         
         
 

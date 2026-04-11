@@ -40,7 +40,7 @@ public constructor (key: any = {}){
             var key = key
 this.key= key;
     
-this.color= Color(key = keykey as Integer
+this.color= new Color(key = keykey as Integer
 key.
                     toInt());
     

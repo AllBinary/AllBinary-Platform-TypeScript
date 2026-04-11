@@ -130,7 +130,7 @@ var value = value
 ;
     
 
-    var vector: BasicArrayList = tokenizer.getTokens(value, BasicArrayList())!;
+    var vector: BasicArrayList = tokenizer.getTokens(value, new BasicArrayList())!;
         
         
 ;

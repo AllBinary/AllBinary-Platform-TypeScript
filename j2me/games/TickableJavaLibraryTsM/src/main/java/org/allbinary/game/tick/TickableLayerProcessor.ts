@@ -32,7 +32,7 @@ export class TickableLayerProcessor extends LayerProcessor {
         
 public constructor ()                        
 
-                            : super(TickableLayerManager()){
+                            : super(new TickableLayerManager()){
 
             super();
             

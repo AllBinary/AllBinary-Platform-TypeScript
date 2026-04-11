@@ -62,7 +62,7 @@ export class XmlOptionItemsEntity extends AbSqlBean
         
 public constructor ()                        
 
-                            : super(InventoryDbInitInfo()){
+                            : super(new InventoryDbInitInfo()){
 
             super();
             

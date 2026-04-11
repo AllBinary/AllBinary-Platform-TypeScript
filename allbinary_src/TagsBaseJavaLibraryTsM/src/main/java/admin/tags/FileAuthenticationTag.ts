@@ -184,13 +184,13 @@ this.timeout= this.weblisketSession!.getTimeout();
                                  && attemptsInteger!.toInt() > 0)
                         
                                     {
-                                    this.weblisketSession!.setAttempts(Integer(attemptsInteger!.toInt() +1));
+                                    this.weblisketSession!.setAttempts(new Integer(attemptsInteger!.toInt() +1));
     
 
                                     }
                                 
                         else {
-                            this.weblisketSession!.setAttempts(Integer(1));
+                            this.weblisketSession!.setAttempts(new Integer(1));
     
 
                         }
@@ -315,7 +315,7 @@ this.weblisketSession!.setPassword(newPassword);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Integer(TagSupport.EVAL_BODY_INCLUDE).
+                        return new Integer(TagSupport.EVAL_BODY_INCLUDE).
                             toInt();
 
                         ;
@@ -849,7 +849,7 @@ index < size; index++)
                         if(login.compareTo(org.allbinary.globals.GLOBALS2.LOGINSUCCESS) == 0)
                         
                                     {
-                                    this.weblisketSession!.setAttempts(Integer(0));
+                                    this.weblisketSession!.setAttempts(new Integer(0));
     
 
 
@@ -986,7 +986,7 @@ this.request= pageContext!.getRequest();
 
                          as HttpServletRequest;
     
-this.weblisketSession= BasicWeblisketSession(pageContext);
+this.weblisketSession= new BasicWeblisketSession(pageContext);
     
 this.getFormData();
     

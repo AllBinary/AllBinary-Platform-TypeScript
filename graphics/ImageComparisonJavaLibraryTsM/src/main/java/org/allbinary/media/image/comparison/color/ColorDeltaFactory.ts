@@ -112,7 +112,7 @@ var rgb2 = rgb2
                                 )
                         
                                     {
-                                    colorDelta= ColorDelta(rgb1, rgb2);
+                                    colorDelta= new ColorDelta(rgb1, rgb2);
     
 
                                     }

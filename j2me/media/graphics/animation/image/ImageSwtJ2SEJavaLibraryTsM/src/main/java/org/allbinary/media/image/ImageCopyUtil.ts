@@ -236,7 +236,7 @@ originalImage2= openGLESImage!.openGLBitmap!.getImage();
         
 ;
     
-image= SwtMutableImage(SwtDeviceComponent.createImage(originalMutableImage!.image.getImageData()));
+image= new SwtMutableImage(SwtDeviceComponent.createImage(originalMutableImage!.image.getImageData()));
     
 
                                     }
@@ -248,7 +248,7 @@ image= SwtMutableImage(SwtDeviceComponent.createImage(originalMutableImage!.imag
         
 ;
     
-image= SwtMutableImage(SwtDeviceComponent.createImage(originalImmutableImage!.image.getImageData()));
+image= new SwtMutableImage(SwtDeviceComponent.createImage(originalImmutableImage!.image.getImageData()));
     
 
                         }
@@ -384,13 +384,13 @@ originalImage2= openGLESImage!.openGLBitmap!.getImage();
         
 ;
     
-image= SwtMutableImage(SwtDeviceComponent.createImage(imageData));
+image= new SwtMutableImage(SwtDeviceComponent.createImage(imageData));
     
 
                                     }
                                 
                         else {
-                            image= SwtMutableImage(originalMutableImage!.getName(), PostLoadSwtMutableImageProcessor(originalMutableImage));
+                            image= new SwtMutableImage(originalMutableImage!.getName(), new PostLoadSwtMutableImageProcessor(originalMutableImage));
     
 
                         }
@@ -423,13 +423,13 @@ image= SwtMutableImage(SwtDeviceComponent.createImage(imageData));
         
 ;
     
-image= SwtImmutableImage(originalImage!.getName(), SwtDeviceComponent.createImage(imageData));
+image= new SwtImmutableImage(originalImage!.getName(), SwtDeviceComponent.createImage(imageData));
     
 
                                     }
                                 
                         else {
-                            image= SwtImmutableImage(originalImmutableImage!.getName(), PostLoadSwtImmutableImageProcessor(originalImmutableImage));
+                            image= new SwtImmutableImage(originalImmutableImage!.getName(), new PostLoadSwtImmutableImageProcessor(originalImmutableImage));
     
 
                         }
@@ -581,7 +581,7 @@ openGLESImageProperties!.scaleY= openGLESImageProperties!.scaleY2= ((height.toFl
                         if(image.getName()!.startsWith(INFORMATION))
                         
                                     {
-                                    openGLESImage!.openGLESImageTranslate= OpenGLESDeviceImageTranslate();
+                                    openGLESImage!.openGLESImageTranslate= new OpenGLESDeviceImageTranslate();
     
 
     var openGLESDeviceImageTranslate: OpenGLESDeviceImageTranslate = openGLESImage!.openGLESImageTranslate as OpenGLESDeviceImageTranslate;
@@ -609,7 +609,7 @@ openGLESImageProperties!.scaleY= openGLESImageProperties!.scaleY *0.75f;
                         if(image.getName()!.startsWith(LEADERBOARD))
                         
                                     {
-                                    openGLESImage!.openGLESImageTranslate= OpenGLESDeviceImageTranslate();
+                                    openGLESImage!.openGLESImageTranslate= new OpenGLESDeviceImageTranslate();
     
 
     var openGLESDeviceImageTranslate: OpenGLESDeviceImageTranslate = openGLESImage!.openGLESImageTranslate as OpenGLESDeviceImageTranslate;
@@ -679,13 +679,13 @@ image= openGLESImage;
         
 ;
     
-image= SwtMutableImage(SwtDeviceComponent.createImage(imageData));
+image= new SwtMutableImage(SwtDeviceComponent.createImage(imageData));
     
 
                                     }
                                 
                         else {
-                            image= SwtMutableImage(originalMutableImage!.getName(), PostLoadSwtMutableImageProcessor(originalMutableImage));
+                            image= new SwtMutableImage(originalMutableImage!.getName(), new PostLoadSwtMutableImageProcessor(originalMutableImage));
     
 
                         }
@@ -718,13 +718,13 @@ image= SwtMutableImage(SwtDeviceComponent.createImage(imageData));
         
 ;
     
-image= SwtImmutableImage(originalImage!.getName(), SwtDeviceComponent.createImage(imageData));
+image= new SwtImmutableImage(originalImage!.getName(), SwtDeviceComponent.createImage(imageData));
     
 
                                     }
                                 
                         else {
-                            image= SwtImmutableImage(originalImmutableImage!.getName(), PostLoadSwtImmutableImageProcessor(originalImmutableImage));
+                            image= new SwtImmutableImage(originalImmutableImage!.getName(), new PostLoadSwtImmutableImageProcessor(originalImmutableImage));
     
 
                         }

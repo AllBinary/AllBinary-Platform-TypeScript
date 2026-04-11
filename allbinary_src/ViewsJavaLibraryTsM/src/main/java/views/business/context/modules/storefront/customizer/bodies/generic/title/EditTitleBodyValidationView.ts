@@ -72,7 +72,7 @@ public constructor (transformInfoInterface: TransformInfoInterface)
         
 ;
     
-this.titleBody= TitleBodyValidation(document);
+this.titleBody= new TitleBodyValidation(document);
     
 
     var isValid: Boolean = this.titleBody!.isValid()!;

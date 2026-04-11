@@ -103,7 +103,7 @@ export class BasicGeographicMapUtil
 else -> {
 
 
-                            throw Error("Only Four Directions")
+                            throw new Error("Only Four Directions")
 }
 
         }       
@@ -161,7 +161,7 @@ else -> {
 else -> {
 
 
-                            throw Error("Only Four Directions")
+                            throw new Error("Only Four Directions")
 }
 
         }       

@@ -80,7 +80,7 @@ var httpServletRequest = httpServletRequest
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getInstance(RequestParams(httpServletRequest).
+                        return this.getInstance(new RequestParams(httpServletRequest).
                             toHashMap());
 
                         ;

@@ -84,7 +84,7 @@ export class InputAutomationConfiguration
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return File(FILENAME);
+                        return new File(FILENAME);
     
 }
 
@@ -149,7 +149,7 @@ logUtil!.put("Installed: " +installed, this, "setIntalled");
         
 ;
     
-FileUtil.getInstance()!.copy(AbPath(file.getAbsolutePath()), AbPath(file.getAbsolutePath() +".bak.xml"));
+FileUtil.getInstance()!.copy(new AbPath(file.getAbsolutePath()), new AbPath(file.getAbsolutePath() +".bak.xml"));
     
 
     var jaxbContext: JAXBContext = JAXBContext.newInstance(InputAutomationConfiguration::class)!;

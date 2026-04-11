@@ -94,7 +94,7 @@ import { Node } from "../../org/w3c/dom/Node.js";
 export class CategoryRequestHelper extends ModifyTable {
         
 
-    private static readonly categoryRequest: string = StringMaker().
+    private static readonly categoryRequest: string = new StringMaker().
                             append("<")!.append(CategoryData.getInstance()!.REQUEST)!.append(">")!.toString()!;
         
         
@@ -259,7 +259,7 @@ this.setCategoryLoader(requestNode);
         
 ;
     
-this.categoryInterface= StoreCategoryFactory(this.transformInfoInterface).
+this.categoryInterface= new StoreCategoryFactory(this.transformInfoInterface).
                             getRootInstanceFromNode(categoryNode);
 
                          as CategoryInterface;
@@ -298,7 +298,7 @@ logUtil!.put("Loaded Parent Category", this, "getXmlData()");
 
                                     }
                                 
-this.childCategoryInterface= StoreCategoryFactory(this.transformInfoInterface).
+this.childCategoryInterface= new StoreCategoryFactory(this.transformInfoInterface).
                             getInstance(childCategoryNode);
 
                          as CategoryInterface;
@@ -378,7 +378,7 @@ var requestNode = requestNode
         
 ;
     
-this.transformInfoInterface= TransformInfoBasic(storeFrontInterface, hashMap, pageContext) as TransformInfoInterface;
+this.transformInfoInterface= new TransformInfoBasic(storeFrontInterface, hashMap, pageContext) as TransformInfoInterface;
     
 
                         if(this.transformInfoInterface == 
@@ -389,7 +389,7 @@ this.transformInfoInterface= TransformInfoBasic(storeFrontInterface, hashMap, pa
                                     
 
 
-                            throw Error("TransformInfo null")
+                            throw new Error("TransformInfo null")
 
                                     }
                                 
@@ -408,7 +408,7 @@ this.categoryLoaderInterface= CategoryLoaderFactory.getInstance(storeCategoryFac
                             
 
 
-                            throw Error("Store Name Error: " +storeName)
+                            throw new Error("Store Name Error: " +storeName)
 
                         }
                             
@@ -581,7 +581,7 @@ this.categoryLoaderInterface!.delete(this.categoryInterface, this.childCategoryI
 
         try {
             
-    var document: Document = CategoryComponent(this.childCategoryInterface).
+    var document: Document = new CategoryComponent(this.childCategoryInterface).
                             toXmlDoc()!;
         
         

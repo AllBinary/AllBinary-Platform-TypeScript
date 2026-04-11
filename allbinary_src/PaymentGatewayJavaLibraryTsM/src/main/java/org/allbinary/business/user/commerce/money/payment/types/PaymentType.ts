@@ -94,7 +94,7 @@ PaymentTypeUtil.getInstance()!.add(this);
                                     
 
 
-                            throw Error("PaymentTransactionInterfaceFactoryInterface is Null")
+                            throw new Error("PaymentTransactionInterfaceFactoryInterface is Null")
 
                                     }
                                 
@@ -119,7 +119,7 @@ PaymentTypeUtil.getInstance()!.add(this);
                                     
 
 
-                            throw Error("PaymentProcessorInterfaceFactoryInterface is Null")
+                            throw new Error("PaymentProcessorInterfaceFactoryInterface is Null")
 
                                     }
                                 

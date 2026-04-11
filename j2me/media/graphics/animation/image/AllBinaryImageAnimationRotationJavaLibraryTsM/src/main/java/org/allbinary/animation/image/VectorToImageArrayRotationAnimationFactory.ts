@@ -116,7 +116,7 @@ public constructor (vectorInfo: VectorInfo, basicColor: BasicColor)
 
 public constructor (vectorInfo: VectorInfo, basicColor: BasicColor, animationBehaviorFactory: AnimationBehaviorFactory)                        
 
-                            : super(AnimationFrameToImageUtil.getInstance()!.getInstanceTranslate(vectorInfo!.getWidth(), vectorInfo!.getHeight(), VectorAnimation(vectorInfo!.getPoints(), basicColor, animationBehaviorFactory!.getOrCreateInstance())), 0, 0, animationBehaviorFactory){
+                            : super(AnimationFrameToImageUtil.getInstance()!.getInstanceTranslate(vectorInfo!.getWidth(), vectorInfo!.getHeight(), new VectorAnimation(vectorInfo!.getPoints(), basicColor, animationBehaviorFactory!.getOrCreateInstance())), 0, 0, animationBehaviorFactory){
 
             super();
                 //var vectorInfo = vectorInfo
@@ -159,7 +159,7 @@ this.imageArray= ImageToRotationImageArrayUtil.getInstance()!.generate(this.getI
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return AdjustedImageArrayRotationAnimation(this.imageArray, AngleInfo.getInstance(this.getAngleIncrement();
+                        return new AdjustedImageArrayRotationAnimation(this.imageArray, AngleInfo.getInstance(this.getAngleIncrement();
 
                         .toShort()), AngleFactory.getInstance()!.TOTAL_ANGLE.toInt(), this.animationFactoryInitializationVisitor!.dx, this.animationFactoryInitializationVisitor!.dy, this.animationBehaviorFactory!.getOrCreateInstance());
     
@@ -171,7 +171,7 @@ this.imageArray= ImageToRotationImageArrayUtil.getInstance()!.generate(this.getI
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return AdjustedImageArrayRotationAnimation(this.imageArray, AngleInfo.getInstance(this.angleIncrement.toShort()), AngleFactory.getInstance()!.TOTAL_ANGLE.toInt(), this.animationBehaviorFactory!.getOrCreateInstance());
+                        return new AdjustedImageArrayRotationAnimation(this.imageArray, AngleInfo.getInstance(this.angleIncrement.toShort()), AngleFactory.getInstance()!.TOTAL_ANGLE.toInt(), this.animationBehaviorFactory!.getOrCreateInstance());
     
 
                         }

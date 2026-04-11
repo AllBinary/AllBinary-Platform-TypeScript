@@ -44,7 +44,7 @@ export class OpenGLImageFactory
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 

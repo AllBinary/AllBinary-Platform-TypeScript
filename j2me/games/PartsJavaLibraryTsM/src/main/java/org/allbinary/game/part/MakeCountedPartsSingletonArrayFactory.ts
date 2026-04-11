@@ -71,7 +71,7 @@ export class MakeCountedPartsSingletonArrayFactory
             
     public getInstance(partInterfaceArray: PartInterface[]): PartInterface[]{
     //var partInterfaceArray = partInterfaceArray
-list= BasicArrayList();
+list= new BasicArrayList();
     
 
 
@@ -115,7 +115,7 @@ index < size; index++)
         {
 layerInterfaceFactoryInterface= countedBasicArrayList!.objectArray[index]! as CountedPickedUpLayerInterfaceFactory;
     
-list.add(CountedLayerInterfaceFactoryPart(0, layerInterfaceFactoryInterface));
+list.add(new CountedLayerInterfaceFactoryPart(0, layerInterfaceFactoryInterface));
     
 }
 

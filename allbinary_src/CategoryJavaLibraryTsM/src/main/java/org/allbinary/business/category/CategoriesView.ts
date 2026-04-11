@@ -49,7 +49,7 @@ this.categoryInterface= categoryInterface;
     public toXmlNode(document: Document): Node{
 var document = document
 
-    var node: Node = CategoryView(categoryInterface).
+    var node: Node = new CategoryView(categoryInterface).
                             toXmlNode(document)!;
         
         
@@ -85,7 +85,7 @@ i < size; i++)
 ;
     
 
-    var childCategoryNode: Node = CategoriesView(childCategoryInterface).
+    var childCategoryNode: Node = new CategoriesView(childCategoryInterface).
                             toXmlNode(document)!;
         
         

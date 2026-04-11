@@ -48,7 +48,7 @@ var node = node
                                 )
                         
                                     {
-                                    profileActionScriptInputInterface= KeyboardActionScriptInput(node);
+                                    profileActionScriptInputInterface= new KeyboardActionScriptInput(node);
     
 
                                     }
@@ -59,7 +59,7 @@ var node = node
                                 )
                         
                                     {
-                                    profileActionScriptInputInterface= MouseActionScriptInput(node);
+                                    profileActionScriptInputInterface= new MouseActionScriptInput(node);
     
 
                                     }
@@ -68,7 +68,7 @@ var node = node
                             
 
 
-                            throw Error("No Such ActionScript Input")
+                            throw new Error("No Such ActionScript Input")
 
                         }
                             

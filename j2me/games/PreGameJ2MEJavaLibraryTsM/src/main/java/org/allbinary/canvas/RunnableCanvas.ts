@@ -109,10 +109,10 @@ public constructor (commandListener: CommandListener, childNameList: BasicArrayL
 
                             //For kotlin this is before the body of the constructor.
                     
-logUtil!.put(StringMaker().
+logUtil!.put(new StringMaker().
                             append("delay: ")!.appendint(this.loopTimeHelper!.delay)!.toString(), this, this.commonStrings!.CONSTRUCTOR);
     
-this.runnableCanvasRefreshHelper= RunnableCanvasRefreshHelper(this);
+this.runnableCanvasRefreshHelper= new RunnableCanvasRefreshHelper(this);
     
 
                         if(commandListener != 
@@ -228,7 +228,7 @@ threadObjectUtil!.notifyObject(this);
 
                                     }
                                 
-logUtil!.put(StringMaker().
+logUtil!.put(new StringMaker().
                             append(IS_RUNNING)!.appendboolean(this.running)!.toString(), this, SET_RUNNING);
     
 }
@@ -332,7 +332,7 @@ loopTimeHelper!.delay= wait;
     
 this.pauseWait= wait.toLong() *3;
     
-logUtil!.put(StringMaker().
+logUtil!.put(new StringMaker().
                             append("setWait - delay: ")!.appendint(this.loopTimeHelper!.delay)!.toString(), this, this.commonStrings!.CONSTRUCTOR);
     
 }

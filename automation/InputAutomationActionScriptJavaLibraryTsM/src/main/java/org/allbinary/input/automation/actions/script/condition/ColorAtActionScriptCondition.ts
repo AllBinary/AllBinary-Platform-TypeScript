@@ -92,7 +92,7 @@ export class ColorAtActionScriptCondition extends BasicProfileActionScriptCondit
 
     private point: Point
 
-    private colorRangeInterface: ColorRangeInterface = ColorRange() as ColorRangeInterface;
+    private colorRangeInterface: ColorRangeInterface = new ColorRange() as ColorRangeInterface;
         
         
 public constructor (node: Node)                        
@@ -105,7 +105,7 @@ public constructor (node: Node)
 
                             //For kotlin this is before the body of the constructor.
                     
-this.point= Point(0, 0);
+this.point= new Point(0, 0);
     
 
     var actionNode: Node = DomSearchHelper.getNode(ColorAtActionScriptConditionData.NAME, node.getChildNodes())!;
@@ -270,7 +270,7 @@ this.getColorRangeInterface()!.setMaxBlue(string.valueOf());
                             
 
 
-                            throw Error("Color At Action Script Condition Node Null")
+                            throw new Error("Color At Action Script Condition Node Null")
 
                         }
                             
@@ -287,7 +287,7 @@ public constructor ()
 
                             //For kotlin this is before the body of the constructor.
                     
-this.point= Point(0, 0);
+this.point= new Point(0, 0);
     
 this.init();
     
@@ -295,7 +295,7 @@ this.init();
 
 
     init(){
-this.colorAtActionScriptConditionJPanel= ColorAtActionScriptConditionJPanel(this);
+this.colorAtActionScriptConditionJPanel= new ColorAtActionScriptConditionJPanel(this);
     
 }
 
@@ -449,7 +449,7 @@ var frame = frame
 
     public log(){
 
-    var message: string = StringMaker().
+    var message: string = new StringMaker().
                             append("getPoint(): ")!.append(this.getPoint()!.toString())!.append(CommonSeps.getInstance()!.NEW_LINE)!.append(this.getColorRangeInterface()!.toString())!.toString()!;
         
         

@@ -114,7 +114,7 @@ public constructor (transformInfoInterface: TransformInfoInterface)
                                     }
                                 
 
-    var requestHashMap: HashMap<any, any> = RequestParams(this.getPageContext()).
+    var requestHashMap: HashMap<any, any> = new RequestParams(this.getPageContext()).
                             toHashMap()!;
         
         

@@ -368,7 +368,7 @@ height= item.getMinimumHeight();
                             
 
 
-                            throw Error(formTypeFactory!.UNK)
+                            throw new Error(formTypeFactory!.UNK)
 
                         }
                             
@@ -441,7 +441,7 @@ logUtil!.put(stringBuffer!.toString(), this, GET_SELECTED_INDEX);
                             
 
 
-                            throw Error(formTypeFactory!.UNK)
+                            throw new Error(formTypeFactory!.UNK)
 
                         }
                             
@@ -539,7 +539,7 @@ logUtil!.put(stringBuffer!.toString(), this, GET_SELECTED_INDEX);
                             
 
 
-                            throw Error(formTypeFactory!.UNK)
+                            throw new Error(formTypeFactory!.UNK)
 
                         }
                             
@@ -588,7 +588,7 @@ logUtil!.put(stringBuffer!.toString(), this, GET_SELECTED_INDEX);
                         if(rectangleCollisionUtil!.isInside(x, y -halfBorder, this.rectangle.getMaxX() +border, this.rectangle.getMaxY() +border, point.getX(), point.getY()))
                         
                                     {
-                                    logUtil!.put(StringMaker().
+                                    logUtil!.put(new StringMaker().
                             append(StringUtil.getInstance()!.toString(point))!.append(INSIDE_FORM)!.toString(), this, IS_IN_FORM);
     
 
@@ -690,7 +690,7 @@ graphics.drawRect(x -halfBorder -adjustedBorder, y -halfBorder -adjustedBorder, 
                             
 
 
-                            throw Error(formTypeFactory!.UNK)
+                            throw new Error(formTypeFactory!.UNK)
 
                         }
                             
@@ -770,7 +770,7 @@ item.paintUnselected(graphics, x, y);
                             
 
 
-                            throw Error(formTypeFactory!.UNK)
+                            throw new Error(formTypeFactory!.UNK)
 
                         }
                             

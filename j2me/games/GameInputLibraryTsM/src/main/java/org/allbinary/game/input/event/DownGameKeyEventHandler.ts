@@ -34,7 +34,7 @@ export class DownGameKeyEventHandler extends DownGameKeyEventHandlerBase {
 
     private static readonly instanceArray: DownGameKeyEventHandlerBase[] = 
                                                         [
-                                                            DownGameKeyEventHandlerBase(),DownGameKeyEventHandlerBase(),DownGameKeyEventHandlerBase(),DownGameKeyEventHandlerBase(),DownGameKeyEventHandlerBase(),DownGameKeyEventHandlerBase()
+                                                            new DownGameKeyEventHandlerBase(),new DownGameKeyEventHandlerBase(),new DownGameKeyEventHandlerBase(),new DownGameKeyEventHandlerBase(),new DownGameKeyEventHandlerBase(),new DownGameKeyEventHandlerBase()
                                                         ];
         
         

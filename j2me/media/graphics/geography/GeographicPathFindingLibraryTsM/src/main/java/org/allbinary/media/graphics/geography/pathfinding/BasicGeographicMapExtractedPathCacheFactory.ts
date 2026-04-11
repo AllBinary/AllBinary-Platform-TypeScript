@@ -54,7 +54,7 @@ var maxPaths = maxPaths
         
 index >= this.maxConcurrentPaths; index--)
         {
-this.list.add(BasicArrayList(maxPaths));
+this.list.add(new BasicArrayList(maxPaths));
     
 }
 
@@ -89,7 +89,7 @@ this.maxPaths= maxPaths;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return BasicArrayList(this.maxPaths);
+                        return new BasicArrayList(this.maxPaths);
     
 
                         }

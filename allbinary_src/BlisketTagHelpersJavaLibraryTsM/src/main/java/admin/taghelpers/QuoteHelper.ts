@@ -144,14 +144,14 @@ var pageContext = pageContext
                                     }
                                 
                         else {
-                            this.storeFrontInterface= StoreFront();
+                            this.storeFrontInterface= new StoreFront();
     
 
                         }
                             
-this.weblisketSession= WeblisketSession(hashMap, pageContext);
+this.weblisketSession= new WeblisketSession(hashMap, pageContext);
     
-this.portion= Portion(hashMap);
+this.portion= new Portion(hashMap);
     
 }
 
@@ -191,7 +191,7 @@ stringBuffer!.append("\n\nThank You For Your Business.");
 ;
     
 
-    var basicEmailInfo: BasicEmailInfo = StoreEmailInfo(this.storeFrontInterface, userEmailSubject, userEmailTextBody) as BasicEmailInfo;
+    var basicEmailInfo: BasicEmailInfo = new StoreEmailInfo(this.storeFrontInterface, userEmailSubject, userEmailTextBody) as BasicEmailInfo;
         
         
 ;
@@ -260,7 +260,7 @@ stringBuffer!.append(quoteRequest!.getComments());
 ;
     
 
-    var basicEmailInfo: BasicEmailInfo = StoreEmailInfo(this.storeFrontInterface, adminEmailSubject, adminEmailTextBody) as BasicEmailInfo;
+    var basicEmailInfo: BasicEmailInfo = new StoreEmailInfo(this.storeFrontInterface, adminEmailSubject, adminEmailTextBody) as BasicEmailInfo;
         
         
 ;
@@ -385,7 +385,7 @@ this.emailAdmins(quoteRequest);
                             
 
 
-                            throw Error("No Quote Request")
+                            throw new Error("No Quote Request")
 
                         }
                             

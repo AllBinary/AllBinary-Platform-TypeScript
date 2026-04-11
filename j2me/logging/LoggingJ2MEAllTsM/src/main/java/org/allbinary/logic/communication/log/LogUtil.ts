@@ -107,7 +107,7 @@ this.put(specialMessage, anyType, functionName, exception);
                                 )
                         
                                     {
-                                    className= StringMaker().
+                                    className= new StringMaker().
                             append(anyType!.constructor.name.toString()!)!.append(CommonSeps.getInstance()!.COLON)!.append(Integer.toHexString(anyType!.hashCode()))!.toString();
     
 
@@ -143,7 +143,7 @@ System.out.println(message);
                                 )
                         
                                     {
-                                    className= StringMaker().
+                                    className= new StringMaker().
                             append(anyType!.constructor.name.toString()!)!.append(CommonSeps.getInstance()!.COLON)!.append(Integer.toHexString(anyType!.hashCode()))!.toString();
     
 

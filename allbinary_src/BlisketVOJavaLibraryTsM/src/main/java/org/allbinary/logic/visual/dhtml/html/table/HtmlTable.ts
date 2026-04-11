@@ -143,7 +143,7 @@ this.cellspacing= cellspacing;
     
 this.after= after;
     
-this.htmlRowsVector= Vector();
+this.htmlRowsVector= new Vector();
     
 addAttribute(BORDER, CommonPhoneStrings.getInstance()!.ZERO);
     

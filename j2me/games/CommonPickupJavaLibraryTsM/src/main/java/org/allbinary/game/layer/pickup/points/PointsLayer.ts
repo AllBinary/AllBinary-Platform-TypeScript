@@ -43,7 +43,7 @@ export class PointsLayer extends AllBinaryLayer {
     private readonly points: number
 public constructor (points: number)                        
 
-                            : super(Rectangle(PointFactory.getInstance()!.ZERO_ZERO, 0, 0), ViewPosition()){
+                            : super(new Rectangle(PointFactory.getInstance()!.ZERO_ZERO, 0, 0), new ViewPosition()){
 
             super();
             var points = points

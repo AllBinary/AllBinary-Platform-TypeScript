@@ -84,7 +84,7 @@ this.algorithm= algorithm;
         try {
             
         try {
-            Security.addProvider(BouncyCastleProvider());
+            Security.addProvider(new BouncyCastleProvider());
     
 
                 //: 
@@ -124,7 +124,7 @@ PreLogUtil.putOE(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e);
         
 ;
     
-this.secretComposite= SecretComposite(secretKey, cipher, key);
+this.secretComposite= new SecretComposite(secretKey, cipher, key);
     
 
                 //: 

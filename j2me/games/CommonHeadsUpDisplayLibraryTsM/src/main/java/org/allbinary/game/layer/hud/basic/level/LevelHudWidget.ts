@@ -92,7 +92,7 @@ var maxWidth = maxWidth
         
 ;
     
-this.primitiveLongUtil= PrimitiveLongUtil(1000);
+this.primitiveLongUtil= new PrimitiveLongUtil(1000);
     
 
     var LEVEL: string = "Lv ";

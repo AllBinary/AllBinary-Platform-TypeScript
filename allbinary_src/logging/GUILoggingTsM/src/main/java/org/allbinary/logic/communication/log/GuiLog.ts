@@ -84,7 +84,7 @@ var msg = msg
 
                         if(x > 550)
                         x= 550
-error.getContentPane()!.setLayout(GridLayout(1, 1));
+error.getContentPane()!.setLayout(new GridLayout(1, 1));
     
 
                         if(size > 255)
@@ -98,7 +98,7 @@ error.getContentPane()!.setLayout(GridLayout(1, 1));
     
 error.setSize(x, y);
     
-error.getContentPane()!.add(javax.swing.JScrollPane(javax.swing.JTextArea(msg)));
+error.getContentPane()!.add(new javax.swing.JScrollPane(new javax.swing.JTextArea(msg)));
     
 
                                     }
@@ -115,7 +115,7 @@ error.getContentPane()!.add(javax.swing.JScrollPane(javax.swing.JTextArea(msg)))
     
 error.setSize(x, y);
     
-error.getContentPane()!.add(javax.swing.JScrollPane(javax.swing.JLabel(msg)));
+error.getContentPane()!.add(new javax.swing.JScrollPane(new javax.swing.JLabel(msg)));
     
 
                                     }

@@ -139,7 +139,7 @@ var document = document
 ;
     
 
-    var result: string = StoreTransformer(this.abeClientInformation, this.getTransformInfoInterface()).
+    var result: string = new StoreTransformer(this.abeClientInformation, this.getTransformInfoInterface()).
                             translate(success)!;
         
         

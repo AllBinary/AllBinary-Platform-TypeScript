@@ -73,29 +73,29 @@ public constructor (){
         
 ;
     
-LEFT= MotionGestureInput(MAX -3, "Left Touch");
+LEFT= new MotionGestureInput(MAX -3, "Left Touch");
     
-RIGHT= MotionGestureInput(MAX -4, "Right Touch");
+RIGHT= new MotionGestureInput(MAX -4, "Right Touch");
     
-UP= MotionGestureInput(MAX -5, "Up Touch");
+UP= new MotionGestureInput(MAX -5, "Up Touch");
     
-DOWN= MotionGestureInput(MAX -6, "Down Touch");
+DOWN= new MotionGestureInput(MAX -6, "Down Touch");
     
-PRESSED= MotionGestureInput(MAX -7, "Screen Press");
+PRESSED= new MotionGestureInput(MAX -7, "Screen Press");
     
-RELEASED= MotionGestureInput(MAX -8, "Released");
+RELEASED= new MotionGestureInput(MAX -8, "Released");
     
-DIAGONAL_DOWN_RIGHT= MotionGestureInput(MAX -9, "Diagonal Dn R");
+DIAGONAL_DOWN_RIGHT= new MotionGestureInput(MAX -9, "Diagonal Dn R");
     
-DIAGONAL_DOWN_LEFT= MotionGestureInput(MAX -10, "Diagonal Dn L");
+DIAGONAL_DOWN_LEFT= new MotionGestureInput(MAX -10, "Diagonal Dn L");
     
-DIAGONAL_UP_RIGHT= MotionGestureInput(MAX -11, "Diagonal Up R");
+DIAGONAL_UP_RIGHT= new MotionGestureInput(MAX -11, "Diagonal Up R");
     
-DIAGONAL_UP_LEFT= MotionGestureInput(MAX -12, "Diagonal Up L");
+DIAGONAL_UP_LEFT= new MotionGestureInput(MAX -12, "Diagonal Up L");
     
-NO_MOTION= MotionGestureInput(MAX -2, "No Motion");
+NO_MOTION= new MotionGestureInput(MAX -2, "No Motion");
     
-LAST_MOTION= MotionGestureInput(MAX -19, "Last Motion");
+LAST_MOTION= new MotionGestureInput(MAX -19, "Last Motion");
     
 }
 

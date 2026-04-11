@@ -36,7 +36,7 @@ export class NullShaderComposite extends ShaderComposite {
 
     private static readonly instance: NullShaderComposite = new object: NullShaderComposite(OpenGLCapabilities.getInstance()!.VERSION_2_0, 
                                                 [
-                                                    Shader(),Shader();
+                                                    new Shader(),new Shader();
         
         
                                                 ], CompositeShaderUpdater.getInstance(), ShaderInitializer.getInstance(), ModelViewProjection.getInstance(), 

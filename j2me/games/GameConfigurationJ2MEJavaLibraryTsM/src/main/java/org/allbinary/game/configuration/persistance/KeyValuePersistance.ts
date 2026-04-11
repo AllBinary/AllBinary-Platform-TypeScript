@@ -169,11 +169,11 @@ recordAsBytes= recordStore!.getRecord(id);
                                 )
                         
                                     {
-                                    byteArrayInputStream= ByteArrayInputStream(recordAsBytes);
+                                    byteArrayInputStream= new ByteArrayInputStream(recordAsBytes);
     
-inputStream= DataInputStream(byteArrayInputStream);
+inputStream= new DataInputStream(byteArrayInputStream);
     
-hashtable= Hashtable<String, String>();
+hashtable= new Hashtable<String, String>();
     
 
 
@@ -247,7 +247,7 @@ recordStore!.closeRecordStore();
     
 
         try {
-            logUtil!.put(StringMaker().
+            logUtil!.put(new StringMaker().
                             append(this.persistanceStrings!.SAVING)!.append(StringUtil.getInstance()!.toString(hashtable))!.toString(), this, this.commonStrings!.SAVE);
     
 recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation), true);

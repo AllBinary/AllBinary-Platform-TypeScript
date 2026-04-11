@@ -98,7 +98,7 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
             super();
             var hashMap = hashMap
 var pageContext = pageContext
-this.weblisketSession= WeblisketSession(hashMap, pageContext);
+this.weblisketSession= new WeblisketSession(hashMap, pageContext);
     
 this.request= pageContext!.getRequest();
 
@@ -111,7 +111,7 @@ public constructor (hashMap: HashMap<any, any>, httpServletRequest: HttpServletR
             super();
             var hashMap = hashMap
 var httpServletRequest = httpServletRequest
-this.weblisketSession= WeblisketSession(hashMap, httpServletRequest);
+this.weblisketSession= new WeblisketSession(hashMap, httpServletRequest);
     
 this.request= httpServletRequest;
     
@@ -154,7 +154,7 @@ this.request= httpServletRequest;
                             
 
 
-                            throw Error("Error Generating New Password")
+                            throw new Error("Error Generating New Password")
 
                         }
                             
@@ -165,7 +165,7 @@ this.request= httpServletRequest;
                             
 
 
-                            throw Error("No Session Available For Generating New Password")
+                            throw new Error("No Session Available For Generating New Password")
 
                         }
                             
@@ -255,7 +255,7 @@ userInterface!.setPassword(newPassword);
     
 UserEntityFactory.getInstance()!.update(userName, newPasswordHashMap);
     
-NewPasswordEmail(this.abeClientInformation, userInterface, newPassword).
+new NewPasswordEmail(this.abeClientInformation, userInterface, newPassword).
                             process();
     
 
@@ -431,7 +431,7 @@ NewPasswordEmail(this.abeClientInformation, userInterface, newPassword).
     
 UserEntityFactory.getInstance()!.update(userName, newPasswordHashMap);
     
-NewPasswordEmail(this.abeClientInformation, userInterface, newPassword).
+new NewPasswordEmail(this.abeClientInformation, userInterface, newPassword).
                             process();
     
 

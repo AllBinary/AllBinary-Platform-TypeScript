@@ -86,7 +86,7 @@ export class TestInputForMotionRectanglesResultsWorker
 public constructor (){
 
             super();
-            this.motionRectanglesVector= Vector();
+            this.motionRectanglesVector= new Vector();
     
 }
 

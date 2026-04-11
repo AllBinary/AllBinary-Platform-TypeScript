@@ -127,7 +127,7 @@ public constructor (name: string, rectangle: Rectangle, viewPosition: ViewPositi
                                     }
                                 
                         else {
-                            localName= StringMaker().
+                            localName= new StringMaker().
                             append(name)!.append(CommonSeps.getInstance()!.COLON)!.append(Integer.toHexString(this.hashCode()))!.toString();
     
 

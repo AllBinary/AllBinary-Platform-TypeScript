@@ -56,13 +56,13 @@ export class AllBinaryTiledLayerFactory
 ;
     
 
-    var tiledLayer: TiledLayer = TiledLayerFactory().
+    var tiledLayer: TiledLayer = new TiledLayerFactory().
                             getInstance(raceTrackData)!;
         
         
 ;
     
-allbinaryTiledLayer= AllBinaryJ2METiledLayer(raceTrackData!.getId(), tiledLayer, raceTrackData!.getMapArray(), BasicColorFactory.getInstance()!.RED.toInt());
+allbinaryTiledLayer= new AllBinaryJ2METiledLayer(raceTrackData!.getId(), tiledLayer, raceTrackData!.getMapArray(), BasicColorFactory.getInstance()!.RED.toInt());
     
 allbinaryTiledLayer!.setCells(raceTrackData!.getMapArray());
     
@@ -86,7 +86,7 @@ var raceTrackData = raceTrackData
 ;
     
 
-    var tiledLayer: TiledLayer = TiledLayerFactory().
+    var tiledLayer: TiledLayer = new TiledLayerFactory().
                             getMiniInstance(raceTrackData)!;
         
         

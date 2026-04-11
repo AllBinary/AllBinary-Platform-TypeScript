@@ -163,7 +163,7 @@ logUtil!.put(stringBuffer!.toString(), this, "getEventHandler");
         
 ;
     
-userEmailEventHandler!.addListener(LogUserEmailEventListenerModule());
+userEmailEventHandler!.addListener(new LogUserEmailEventListenerModule());
     
 
     var size: number = userVector!.length!;

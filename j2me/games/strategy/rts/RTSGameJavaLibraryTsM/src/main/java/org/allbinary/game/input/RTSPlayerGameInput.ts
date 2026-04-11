@@ -174,7 +174,7 @@ this.towerInfoPaintable= towerInfoPaintable;
     
 this.rtsPlayerLayerInterface= rtsPlayerLayerInterface;
     
-this.selectedRTSLayerPlayerGameInput= SelectedRTSLayersPlayerGameInput(this.getRTSLayerInfoPaintable(), this.getRtsPlayerLayerInterface(), this.inputList, playerInputId, selectRTSLayerVisitorFactoryInterface);
+this.selectedRTSLayerPlayerGameInput= new SelectedRTSLayersPlayerGameInput(this.getRTSLayerInfoPaintable(), this.getRtsPlayerLayerInterface(), this.inputList, playerInputId, selectRTSLayerVisitorFactoryInterface);
     
 
                         if(this.rtsPlayerLayerInterface != NullRTSLayer.NULL_RTS_LAYER)
@@ -199,7 +199,7 @@ this.selectedRTSLayerPlayerGameInput= SelectedRTSLayersPlayerGameInput(this.getR
         
 ;
     
-this.scrollPlayerGameInput= ScrollMapPlayerGameInput(geographicMapInterface, this.inputList, playerInputId);
+this.scrollPlayerGameInput= new ScrollMapPlayerGameInput(geographicMapInterface, this.inputList, playerInputId);
     
 this.layerPositionFinderInterface= layerPositionFinderInterface;
     
@@ -260,15 +260,15 @@ this.rtsPlayerLayerInterface!.getCurrentScrollSelectionForm()!.processInput(Canv
 
 
     public initInputProcessors(){
-this.inputProcessorArray[Canvas.LEFT]= RTSPlayerLeftGameInputProcessor(this);
+this.inputProcessorArray[Canvas.LEFT]= new RTSPlayerLeftGameInputProcessor(this);
     
 this.inputProcessorArray[Canvas.KEY_NUM0]= this.inputProcessorArray[Canvas.LEFT]!;
     
-this.inputProcessorArray[Canvas.RIGHT]= RTSPlayerRightGameInputProcessor(this);
+this.inputProcessorArray[Canvas.RIGHT]= new RTSPlayerRightGameInputProcessor(this);
     
 this.inputProcessorArray[Canvas.KEY_POUND]= this.inputProcessorArray[Canvas.RIGHT]!;
     
-this.removeInputProcessorArray[Canvas.KEY_NUM1]= RTSPlayerFireGameInputProcessor(this);
+this.removeInputProcessorArray[Canvas.KEY_NUM1]= new RTSPlayerFireGameInputProcessor(this);
     
 this.removeInputProcessorArray[Canvas.KEY_NUM3]= this.removeInputProcessorArray[Canvas.KEY_NUM1]!;
     
@@ -465,7 +465,7 @@ this.setSelectedRTSLayer(foundRTSLayer, geographicMapCellPosition);
         
 ;
     
-logUtil!.put(StringMaker().
+logUtil!.put(new StringMaker().
                             append("Off Of Map -")!.append(commonLabels!.WIDTH_LABEL)!.appendint(allBinaryTiledLayer!.getWidth())!.append(commonLabels!.HEIGHT_LABEL)!.appendint(allBinaryTiledLayer!.getHeight())!.toString(), this, "select");
     
 
@@ -613,7 +613,7 @@ graphics.drawRect(point.getX() -allBinaryTiledLayer!.getXP(), point.getY() -allB
 
     public setSelectedRtsFormInput(selectedRtsFormInput: RTSFormInput){
 var selectedRtsFormInput = selectedRtsFormInput
-logUtil!.put(StringMaker().
+logUtil!.put(new StringMaker().
                             append("RTSFormInput: ")!.append(StringUtil.getInstance()!.toString(selectedRtsFormInput))!.toString(), this, "setSelectedRtsFormInput");
     
 this.selectedRtsFormInput= selectedRtsFormInput;

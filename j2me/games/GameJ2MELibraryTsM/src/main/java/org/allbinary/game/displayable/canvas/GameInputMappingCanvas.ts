@@ -150,7 +150,7 @@ logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
                                     
 
 
-                            throw Error("Help Paintable Exception")
+                            throw new Error("Help Paintable Exception")
 
                                     }
                                 
@@ -160,7 +160,7 @@ this.helpPaintable= helpPaintable as InputMappingHelpPaintable;
     
 this.inputMapping= PlatformInputMappingFactory.getInstance()!.getPersistentInputMappingInstance();
     
-this.paintable= ProcessPaintable();
+this.paintable= new ProcessPaintable();
     
 this.colorFillPaintable= ColorFillPaintableFactory.getInstance()!.getInstance(allBinaryGameLayerManager!.getBackgroundBasicColor(), false);
     
@@ -236,7 +236,7 @@ var keyCode = keyCode
 var repeated = repeated
 
         try {
-            logUtil!.put(StringMaker().
+            logUtil!.put(new StringMaker().
                             append("Raw Device Key Code: ")!.append(Integer.toHexString(keyCode))!.toString(), this, this.gameInputStrings!.ADD_KEY_EVENT);
     
 
@@ -305,7 +305,7 @@ logUtil!.put(stringBuffer!.toString(), this, commonStrings!.PROCESS);
 
     setSelectedAction(gameKey: GameKey){
 var gameKey = gameKey
-logUtil!.put(StringMaker().
+logUtil!.put(new StringMaker().
                             append("Selected GameKey: ")!.append(this.stringUtil!.toString(gameKey))!.toString(), this, "setSelectedAction");
     
 this.selectedGameKey= gameKey;
@@ -360,7 +360,7 @@ logUtil!.put(stringBuffer!.toString(), this, "gameActionCrud");
                         if(isInputAlreadyMappedToSelectedAction)
                         
                                     {
-                                    logUtil!.put(StringMaker().
+                                    logUtil!.put(new StringMaker().
                             append("Already Mapped Input: ")!.append(this.stringUtil!.toString(input))!.toString(), this, "gameActionCrud");
     
 this.selectedInput= input;

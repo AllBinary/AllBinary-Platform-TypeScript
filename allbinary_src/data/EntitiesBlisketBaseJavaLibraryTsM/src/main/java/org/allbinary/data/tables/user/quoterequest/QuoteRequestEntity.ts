@@ -65,7 +65,7 @@ export class QuoteRequestEntity extends AbSqlBean
         
 public constructor ()                        
 
-                            : super(UserDbInitInfo()){
+                            : super(new UserDbInitInfo()){
 
             super();
             
@@ -141,7 +141,7 @@ row.put(QuoteRequestData.getInstance()!.ID, id.toString());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return org.allbinary.business.user.quoterequest.QuoteRequest(quoteRequestHashMap);
+                        return new org.allbinary.business.user.quoterequest.QuoteRequest(quoteRequestHashMap);
     
 
                                     }
@@ -286,7 +286,7 @@ stringBuffer!.append(this.sqlStrings!.END);
 
     public dropTable(): string{
 
-    var result: string = new dropTable.toCharArray();
+    var result: string = dropTable.toCharArray();
         
         
 ;

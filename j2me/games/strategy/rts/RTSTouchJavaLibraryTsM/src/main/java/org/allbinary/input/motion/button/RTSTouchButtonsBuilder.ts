@@ -46,13 +46,13 @@ export class RTSTouchButtonsBuilder extends BaseTouchInput {
         
 ;
     
-list.addAll(BasicTouchButtonsBuilder().
+list.addAll(new BasicTouchButtonsBuilder().
                             getList());
     
-list.addAll(BuildingScrollTouchButtonsBuilder().
+list.addAll(new BuildingScrollTouchButtonsBuilder().
                             getList());
     
-list.addAll(UpgradeDowngradeTouchButtonsBuilder().
+list.addAll(new UpgradeDowngradeTouchButtonsBuilder().
                             getList());
     
 

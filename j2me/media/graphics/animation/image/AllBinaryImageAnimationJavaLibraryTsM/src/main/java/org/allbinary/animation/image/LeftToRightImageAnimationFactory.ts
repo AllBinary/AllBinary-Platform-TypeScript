@@ -109,7 +109,7 @@ public constructor (image: Image, sequenceArray: number[], animationBehaviorFact
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return AdjustedLeftToRightImageAnimation(scaledImage, this.getSequenceArray(), this.animationFactoryInitializationVisitor!.dx, this.animationFactoryInitializationVisitor!.dy, this.animationBehaviorFactory!.getOrCreateInstance());
+                        return new AdjustedLeftToRightImageAnimation(scaledImage, this.getSequenceArray(), this.animationFactoryInitializationVisitor!.dx, this.animationFactoryInitializationVisitor!.dy, this.animationBehaviorFactory!.getOrCreateInstance());
     
 
                                     }
@@ -119,7 +119,7 @@ public constructor (image: Image, sequenceArray: number[], animationBehaviorFact
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return LeftToRightImageAnimation(scaledImage, this.getSequenceArray(), this.animationBehaviorFactory!.getOrCreateInstance());
+                        return new LeftToRightImageAnimation(scaledImage, this.getSequenceArray(), this.animationBehaviorFactory!.getOrCreateInstance());
     
 
                         }

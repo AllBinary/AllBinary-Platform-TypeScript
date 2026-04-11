@@ -125,7 +125,7 @@ this.areChoices= true;
                                     }
                                 
                         else {
-                            this.append(StringItem("No Saved Games", StringUtil.getInstance()!.EMPTY_STRING));
+                            this.append(new StringItem("No Saved Games", StringUtil.getInstance()!.EMPTY_STRING));
     
 this.areChoices= false;
     
@@ -199,7 +199,7 @@ index < size; index++)
         
 ;
     
-logUtil!.put(StringMaker().
+logUtil!.put(new StringMaker().
                             append("Adding Choice: ")!.append(anyType!.toString())!.toString(), this, METHOD_NAME);
     
 choiceGroup!.append(anyType!.toString(), NullCanvas.NULL_IMAGE);

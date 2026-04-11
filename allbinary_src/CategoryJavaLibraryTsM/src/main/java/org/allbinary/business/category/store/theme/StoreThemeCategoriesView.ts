@@ -52,7 +52,7 @@ this.categoryInterface= categoryInterface;
     public toXmlNode(document: Document): Node{
 var document = document
 
-    var node: Node = StoreThemeCategoryView(categoryInterface).
+    var node: Node = new StoreThemeCategoryView(categoryInterface).
                             toXmlNode(document)!;
         
         
@@ -88,7 +88,7 @@ i < size; i++)
 ;
     
 
-    var childCategoryNode: Node = StoreThemeCategoriesView(childCategoryInterface as StoreThemeCategoryInterface).
+    var childCategoryNode: Node = new StoreThemeCategoriesView(childCategoryInterface as StoreThemeCategoryInterface).
                             toXmlNode(document)!;
         
         

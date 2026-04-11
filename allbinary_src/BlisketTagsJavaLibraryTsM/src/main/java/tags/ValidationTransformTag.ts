@@ -55,7 +55,7 @@ export class ValidationTransformTag extends TransformTag {
     private logic: boolean
 public constructor ()                        
 
-                            : super(ValidatedViewHelperFactory()){
+                            : super(new ValidatedViewHelperFactory()){
 
             super();
             

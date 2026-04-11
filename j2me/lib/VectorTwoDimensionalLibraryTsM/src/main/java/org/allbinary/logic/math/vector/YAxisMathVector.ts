@@ -57,7 +57,7 @@ this.calculate();
         
 ;
     
-this.resultBasicDecimal= BasicDecimal(result);
+this.resultBasicDecimal= new BasicDecimal(result);
     
 }
 

@@ -54,7 +54,7 @@ public constructor (upgradableRTSLayerHudPaintable: UpgradableRTSLayerHudPaintab
 var rtsLayer = rtsLayer
 super.update(rtsLayer);
     
-this.setCost(StringMaker().
+this.setCost(new StringMaker().
                             append(this.getUpgradeCost())!.append(CommonSeps.getInstance()!.SPACE)!.append(this.getDownGradeCost())!.toString());
     
 }

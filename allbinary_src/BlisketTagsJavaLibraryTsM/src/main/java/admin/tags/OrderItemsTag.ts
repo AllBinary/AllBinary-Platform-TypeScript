@@ -54,9 +54,9 @@ export class OrderItemsTag extends TableTag {
 public constructor (){
 
             super();
-            this.setTagHelperFactory(OrderItemsHelperFactory());
+            this.setTagHelperFactory(new OrderItemsHelperFactory());
     
-this.setTagRequestHelperFactory(OrderItemsRequestHelperFactory());
+this.setTagRequestHelperFactory(new OrderItemsRequestHelperFactory());
     
 }
 
@@ -74,7 +74,7 @@ this.status= value;
 
         try {
             
-    var anyType: any = OrderItemsRequestHelperFactory().
+    var anyType: any = new OrderItemsRequestHelperFactory().
                             getInstance(this.getPropertiesHashMap(), this.pageContext)!;
         
         

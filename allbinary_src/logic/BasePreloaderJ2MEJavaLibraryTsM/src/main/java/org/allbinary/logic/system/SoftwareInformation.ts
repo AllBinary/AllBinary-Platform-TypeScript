@@ -48,7 +48,7 @@ this.name= name;
     
 this.version= version;
     
-this.shortName= StringMaker().
+this.shortName= new StringMaker().
                             append(shortName)!.append(KotlinUtil.getShortName())!.toString();
     
 }

@@ -82,7 +82,7 @@ export class SimpleFileUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return object: Writer()
+                        return new object: Writer()
                                 {
                                 
     var private closed: boolean= false
@@ -172,7 +172,7 @@ var len = len
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return object: Reader()
+                        return new object: Reader()
                                 {
                                 
                 //@Throws(IOException::class)
@@ -410,7 +410,7 @@ index++;
                                     }
                                 
 
-    var s: string = new byteArray.decodeToString();
+    var s: string = byteArray.decodeToString();
         
         
 ;

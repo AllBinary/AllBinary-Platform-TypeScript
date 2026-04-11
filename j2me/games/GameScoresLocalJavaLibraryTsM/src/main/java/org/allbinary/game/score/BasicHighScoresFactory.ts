@@ -95,7 +95,7 @@ this.fetchHighScores(gameInfo, highScoresResultsListener, true);
     //var preload = preload
 
         try {
-            highScoresArray[0]= RecordStoreHighScores.getInstance(abeClientInformation, gameInfo, TOP, PERSONAL_HIGH_SCORES, SCORES, ScoreComparator(true));
+            highScoresArray[0]= RecordStoreHighScores.getInstance(abeClientInformation, gameInfo, TOP, PERSONAL_HIGH_SCORES, SCORES, new ScoreComparator(true));
     
 highScoresResultsListener!.setHighScoresArray(highScoresArray);
     
@@ -115,7 +115,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, FETCH, e);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return HighScoresHelper2();
+                        return new HighScoresHelper2();
     
 }
 

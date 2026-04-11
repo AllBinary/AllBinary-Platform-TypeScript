@@ -54,7 +54,7 @@ export class LifePickedUpLayerInterfaceFactory extends PickedUpLayerInterfaceFac
                 //@Throws(Error::class)
             
     public static init(){
-pickedUpLayerInterfaceFactoryInterface= LifePickedUpLayerInterfaceFactory();
+pickedUpLayerInterfaceFactoryInterface= new LifePickedUpLayerInterfaceFactory();
     
 }
 
@@ -69,7 +69,7 @@ pickedUpLayerInterfaceFactoryInterface= LifePickedUpLayerInterfaceFactory();
 }
 
 
-    private pool: LifeLayerCircularStaticPool = new LifeLayerCircularStaticPool(LifeLayerFactory(), 1);
+    private pool: LifeLayerCircularStaticPool = new LifeLayerCircularStaticPool(new LifeLayerFactory(), 1);
         
         
 private constructor ()                        

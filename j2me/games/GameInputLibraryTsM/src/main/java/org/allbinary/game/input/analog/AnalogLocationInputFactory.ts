@@ -59,7 +59,7 @@ var playerInputId = playerInputId
                         if(analogLocationInput == AnalogLocationInput.NULL_ANALOG_LOCATION_INPUT)
                         
                                     {
-                                    analogLocationInput= AnalogLocationInput(playerInputId);
+                                    analogLocationInput= new AnalogLocationInput(playerInputId);
     
 list.add(analogLocationInput);
     

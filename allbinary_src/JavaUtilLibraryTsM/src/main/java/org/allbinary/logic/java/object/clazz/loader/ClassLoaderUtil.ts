@@ -52,7 +52,7 @@ var anyType = anyType
 
 
 
-                            throw Error("Unable to get ClassLoader")
+                            throw new Error("Unable to get ClassLoader")
 }
 
 private constructor (){

@@ -93,7 +93,7 @@ var foregroundBasicColor = foregroundBasicColor
 
                             //For kotlin this is before the body of the constructor.
                     
-this.commandStack= Stack<any>();
+this.commandStack= new Stack<any>();
     
 
         try {

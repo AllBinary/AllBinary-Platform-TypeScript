@@ -83,7 +83,7 @@ public constructor (transformInfoInterface: TransformInfoInterface)
 
                                     }
                                 
-this.requestHashMap= NameSpaceRequestParams(this.getPageContext()).
+this.requestHashMap= new NameSpaceRequestParams(this.getPageContext()).
                             toHashMap();
     
 

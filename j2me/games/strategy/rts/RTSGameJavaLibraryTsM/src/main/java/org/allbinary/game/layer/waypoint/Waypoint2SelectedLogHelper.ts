@@ -398,7 +398,7 @@ logUtil!.put(stringBuffer!.toString(), this, "selected: processWaypoint");
     public processWaypointTrackedWithoutProgress(associatedAdvancedRTSGameLayer: PathFindingLayerInterface, reason: string){
     //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
     //var reason = reason
-logUtil!.put(StringMaker().
+logUtil!.put(new StringMaker().
                             append(associatedAdvancedRTSGameLayer!.getName())!.append(reason)!.toString(), this, "turnTo");
     
 }
@@ -413,7 +413,7 @@ logUtil!.put(associatedAdvancedRTSGameLayer!.getName(), this, "wander");
 
     public targetDestroyed(associatedAdvancedRTSGameLayer: PathFindingLayerInterface){
     //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
-logUtil!.put(StringMaker().
+logUtil!.put(new StringMaker().
                             append(associatedAdvancedRTSGameLayer!.getName())!.append(" Target Destroyed")!.toString(), this, "selected: processTargeting");
     
 }
@@ -534,7 +534,7 @@ logUtil!.put(stringBuffer!.toString(), this, "selected: removeWaypoint");
 
     public removeWaypointClear(associatedAdvancedRTSGameLayer: PathFindingLayerInterface){
     //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
-logUtil!.put(StringMaker().
+logUtil!.put(new StringMaker().
                             append(associatedAdvancedRTSGameLayer!.getName())!.append(" Clearing removed waypoint")!.toString(), this, "selected: removeWaypoint");
     
 }
@@ -542,7 +542,7 @@ logUtil!.put(StringMaker().
 
     public clearTarget(associatedAdvancedRTSGameLayer: PathFindingLayerInterface){
     //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
-logUtil!.put(StringMaker().
+logUtil!.put(new StringMaker().
                             append(associatedAdvancedRTSGameLayer!.getName())!.append(" Cleared Target")!.toString(), this, "selected: clearTarget");
     
 }
@@ -583,7 +583,7 @@ logUtil!.put(stringBuffer!.toString(), this, "selected: onWaypointEvent");
 
     public targetMovedSoRetarget(associatedAdvancedRTSGameLayer: PathFindingLayerInterface){
     //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
-logUtil!.put(StringMaker().
+logUtil!.put(new StringMaker().
                             append(associatedAdvancedRTSGameLayer!.getName())!.append(" - target moved so retargeting")!.toString(), this, "turnTo");
     
 }

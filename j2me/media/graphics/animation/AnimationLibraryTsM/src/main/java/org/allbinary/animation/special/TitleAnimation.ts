@@ -80,7 +80,7 @@ export class TitleAnimation extends SpecialAnimation {
         
 public constructor (animationInterfaceArray: IndexedAnimation[], basicColorArray: BasicColor[], dxArray: number[], dyArray: number[])                        
 
-                            : this(animationInterfaceArray, basicColorArray, dxArray, dyArray, 0, Integer.MIN_VALUE, IndexedAnimationBehavior(1, 250)){
+                            : this(animationInterfaceArray, basicColorArray, dxArray, dyArray, 0, Integer.MIN_VALUE, new IndexedAnimationBehavior(1, 250)){
 
             super();
                 //var animationInterfaceArray = animationInterfaceArray
@@ -95,7 +95,7 @@ public constructor (animationInterfaceArray: IndexedAnimation[], basicColorArray
 
 public constructor (animationInterfaceArray: IndexedAnimation[], basicColorArray: BasicColor[], dxArray: number[], dyArray: number[], y: number, width: number)                        
 
-                            : this(animationInterfaceArray, basicColorArray, dxArray, dyArray, y, width, IndexedAnimationBehavior(1, 250)){
+                            : this(animationInterfaceArray, basicColorArray, dxArray, dyArray, y, width, new IndexedAnimationBehavior(1, 250)){
 
             super();
                 //var animationInterfaceArray = animationInterfaceArray

@@ -39,7 +39,7 @@ var raceTrackData = raceTrackData
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return TiledLayer(mapArray[0]!.length, mapArray!.length, raceTrackData!.getTileSetImage(), raceTrackData!.getCellWidth(), raceTrackData!.getCellHeight());
+                        return new TiledLayer(mapArray[0]!.length, mapArray!.length, raceTrackData!.getTileSetImage(), raceTrackData!.getCellWidth(), raceTrackData!.getCellHeight());
     
 }
 
@@ -56,7 +56,7 @@ var raceTrackData = raceTrackData
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return TiledLayer(mapArray[0]!.length, mapArray!.length, raceTrackData!.getMiniTileSetImage(), raceTrackData!.getMiniCellWidth(), raceTrackData!.getMiniCellHeight());
+                        return new TiledLayer(mapArray[0]!.length, mapArray!.length, raceTrackData!.getMiniTileSetImage(), raceTrackData!.getMiniCellWidth(), raceTrackData!.getMiniCellHeight());
     
 }
 

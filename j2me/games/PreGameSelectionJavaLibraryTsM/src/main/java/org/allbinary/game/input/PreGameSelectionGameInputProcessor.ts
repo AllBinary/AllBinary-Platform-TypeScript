@@ -162,7 +162,7 @@ this.preGameSelectorPaintable= preGameSelectorPaintable;
     
 this.nextGameState= nextGameState;
     
-this.playerGameInput= GameInputProcessorComposite("Pre Game Selection", this);
+this.playerGameInput= new GameInputProcessorComposite("Pre Game Selection", this);
     
 this.lockedIndex= lockedIndex;
     

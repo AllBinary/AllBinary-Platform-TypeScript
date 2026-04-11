@@ -72,7 +72,7 @@ var config = config
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return OpenGLBitmap(NullUtil.getInstance()!.NULL_OBJECT);
+                        return new OpenGLBitmap(NullUtil.getInstance()!.NULL_OBJECT);
     
 }
 
@@ -85,7 +85,7 @@ var inputStream = inputStream
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return OpenGLBitmap(NullUtil.getInstance()!.NULL_OBJECT);
+                        return new OpenGLBitmap(NullUtil.getInstance()!.NULL_OBJECT);
     
 }
 
@@ -96,7 +96,7 @@ var inputStream = inputStream
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return OpenGLBitmap(NullUtil.getInstance()!.NULL_OBJECT);
+                        return new OpenGLBitmap(NullUtil.getInstance()!.NULL_OBJECT);
     
 }
 

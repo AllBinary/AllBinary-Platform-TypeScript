@@ -72,7 +72,7 @@ public constructor (transformInfoInterface: TransformInfoInterface)
 
                                     }
                                 
-this.titleBody= TitleBodyValidation();
+this.titleBody= new TitleBodyValidation();
     
 }
 

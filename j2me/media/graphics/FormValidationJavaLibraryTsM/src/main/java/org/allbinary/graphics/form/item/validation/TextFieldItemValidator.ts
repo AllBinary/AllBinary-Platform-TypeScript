@@ -168,7 +168,7 @@ this.allowOnEmpty= allowOnEmpty;
                         if(textLength < this.min)
                         
                                     {
-                                    list.add(StringMaker().
+                                    list.add(new StringMaker().
                             append(name)!.append(" is to short")!.toString());
     
 
@@ -178,7 +178,7 @@ this.allowOnEmpty= allowOnEmpty;
                         if(textLength > this.max)
                         
                                     {
-                                    list.add(StringMaker().
+                                    list.add(new StringMaker().
                             append(name)!.append(" is to long")!.toString());
     
 

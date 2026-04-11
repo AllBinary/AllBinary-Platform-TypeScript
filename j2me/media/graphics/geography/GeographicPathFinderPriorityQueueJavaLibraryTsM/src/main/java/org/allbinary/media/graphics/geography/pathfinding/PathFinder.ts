@@ -163,7 +163,7 @@ row < sizeY; row++)
         
 ;
     
-node= PathFindingNodeCost(NullUtil.getInstance()!.NULL_OBJECT, basicGeographicMapCellPositionFactory!.getInstance(column, row), PathFindingNodeCostInfo(raceTrackGeographicMapCellType!.getTravelCost();
+node= new PathFindingNodeCost(NullUtil.getInstance()!.NULL_OBJECT, basicGeographicMapCellPositionFactory!.getInstance(column, row), new PathFindingNodeCostInfo(raceTrackGeographicMapCellType!.getTravelCost();
 
                         .toLong(),  -1.toLong()));
     
@@ -602,7 +602,7 @@ neighbor.parent= current;
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -876,7 +876,7 @@ total++;
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 

@@ -205,13 +205,13 @@ public constructor (){
                         if(TouchScreenFactory.getInstance()!.isMultiTouch())
                         
                                     {
-                                    this.releaseHelper= MultitouchReleaseHelper(this);
+                                    this.releaseHelper= new MultitouchReleaseHelper(this);
     
 
                                     }
                                 
                         else {
-                            this.releaseHelper= ReleaseHelper(this);
+                            this.releaseHelper= new ReleaseHelper(this);
     
 
                         }

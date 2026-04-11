@@ -46,13 +46,13 @@ export class EndLevelTouchButtonsBuilder extends TouchButtonsListBuilder {
         
 ;
     
-list.addAll(BasicTouchButtonsBuilder().
+list.addAll(new BasicTouchButtonsBuilder().
                             getList());
     
-list.addAll(BuildingScrollTouchButtonsBuilder().
+list.addAll(new BuildingScrollTouchButtonsBuilder().
                             getList());
     
-list.addAll(UpgradeDowngradeTouchButtonsBuilder().
+list.addAll(new UpgradeDowngradeTouchButtonsBuilder().
                             getList());
     
 this.add(list);

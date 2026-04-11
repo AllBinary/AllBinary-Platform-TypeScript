@@ -60,7 +60,7 @@ export class SaveMotionRectanglesResultsWorker
 public constructor (){
 
             super();
-            this.motionRectanglesVector= Vector();
+            this.motionRectanglesVector= new Vector();
     
 }
 
@@ -139,7 +139,7 @@ timeHelper!.setStartTime();
         
 ;
     
-MotionRectanglesImageInputOutput().
+new MotionRectanglesImageInputOutput().
                             save(motionRectangles, motionRectanglesResultsEvent!.getFrame());
     
 this.getMotionRectanglesVector()!.remove(motionRectangles);

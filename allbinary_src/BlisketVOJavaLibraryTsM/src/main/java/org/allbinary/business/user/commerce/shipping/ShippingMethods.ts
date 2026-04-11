@@ -62,10 +62,10 @@ public constructor (abeClientInformation: AbeClientInformationInterface, storeFr
             super();
                 //var abeClientInformation = abeClientInformation
     //var storeFrontInterface = storeFrontInterface
-this.defaultShippingMethodInterface= ShippingMethodsFactory(abeClientInformation, storeFrontInterface).
+this.defaultShippingMethodInterface= new ShippingMethodsFactory(abeClientInformation, storeFrontInterface).
                             getDefaultInstance();
     
-this.shippingVector= ShippingMethodsFactory(abeClientInformation, storeFrontInterface).
+this.shippingVector= new ShippingMethodsFactory(abeClientInformation, storeFrontInterface).
                             getInstance();
     
 }
@@ -137,7 +137,7 @@ shipping= shippingVector!.get(index);
 
 
 
-                            throw Error(error)
+                            throw new Error(error)
 }
 
 

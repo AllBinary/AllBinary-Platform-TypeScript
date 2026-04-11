@@ -58,7 +58,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
             super();
             var transformInfoInterface = transformInfoInterface
-this.categoryPropertiesInterface= RootStoreThemeCategoryProperties(transformInfoInterface) as CategoryPropertiesInterface;
+this.categoryPropertiesInterface= new RootStoreThemeCategoryProperties(transformInfoInterface) as CategoryPropertiesInterface;
     
 }
 
@@ -67,7 +67,7 @@ public constructor (transformInfoInterface: TransformInfoInterface, abPath: AbPa
             super();
             var transformInfoInterface = transformInfoInterface
 var abPath = abPath
-this.categoryPropertiesInterface= RootStoreThemeCategoryProperties(transformInfoInterface, abPath) as CategoryPropertiesInterface;
+this.categoryPropertiesInterface= new RootStoreThemeCategoryProperties(transformInfoInterface, abPath) as CategoryPropertiesInterface;
     
 }
 
@@ -76,7 +76,7 @@ public constructor (transformInfoInterface: TransformInfoInterface, node: Node){
             super();
             var transformInfoInterface = transformInfoInterface
 var node = node
-this.categoryPropertiesInterface= RootStoreThemeCategoryProperties(transformInfoInterface, node) as CategoryPropertiesInterface;
+this.categoryPropertiesInterface= new RootStoreThemeCategoryProperties(transformInfoInterface, node) as CategoryPropertiesInterface;
     
 }
 
@@ -85,7 +85,7 @@ public constructor (transformInfoInterface: TransformInfoInterface, categoryProp
             super();
             var transformInfoInterface = transformInfoInterface
 var categoryPropertiesHashMap = categoryPropertiesHashMap
-this.categoryPropertiesInterface= RootStoreThemeCategoryProperties(transformInfoInterface, categoryPropertiesHashMap) as CategoryPropertiesInterface;
+this.categoryPropertiesInterface= new RootStoreThemeCategoryProperties(transformInfoInterface, categoryPropertiesHashMap) as CategoryPropertiesInterface;
     
 }
 

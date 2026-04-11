@@ -42,7 +42,7 @@ export class CountedPickedUpLayerInterfaceFactoryPool
 
 
     public static init(){
-SINGLETON= CountedPickedUpLayerInterfaceFactoryPool();
+SINGLETON= new CountedPickedUpLayerInterfaceFactoryPool();
     
 }
 
@@ -51,7 +51,7 @@ SINGLETON= CountedPickedUpLayerInterfaceFactoryPool();
 private constructor (){
 
             super();
-            list= BasicArrayList();
+            list= new BasicArrayList();
     
 }
 

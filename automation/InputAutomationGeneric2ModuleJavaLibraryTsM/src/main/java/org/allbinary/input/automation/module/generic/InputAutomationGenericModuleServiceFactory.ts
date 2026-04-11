@@ -59,7 +59,7 @@ public constructor (){
         
 ;
     
-inputAutomationModuleInterfaceArray[0]= GenericModuleFactory();
+inputAutomationModuleInterfaceArray[0]= new GenericModuleFactory();
     
 this.setInputAutomationModuleInterfaceArray(inputAutomationModuleInterfaceArray);
     

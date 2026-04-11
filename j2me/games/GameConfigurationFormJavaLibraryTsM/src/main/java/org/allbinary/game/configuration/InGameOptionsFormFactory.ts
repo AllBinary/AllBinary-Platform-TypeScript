@@ -78,7 +78,7 @@ var foregroundBasicColor = foregroundBasicColor
                                     {
                                     initInterface!.init();
     
-SINGLETON= InGameOptionsForm(commandListener, title, backgrounBasicColor, foregroundBasicColor);
+SINGLETON= new InGameOptionsForm(commandListener, title, backgrounBasicColor, foregroundBasicColor);
     
 
                                     }

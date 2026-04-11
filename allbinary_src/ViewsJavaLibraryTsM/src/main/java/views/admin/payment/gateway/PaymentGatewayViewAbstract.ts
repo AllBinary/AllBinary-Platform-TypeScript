@@ -69,7 +69,7 @@ var request = request
         
 ;
     
-this.setPaymentGatewayPrimaryKey(PaymentGatewayPrimaryKey(storeName, gatewayName));
+this.setPaymentGatewayPrimaryKey(new PaymentGatewayPrimaryKey(storeName, gatewayName));
     
 }
 

@@ -63,7 +63,7 @@ public constructor (node: Node){
 
             super();
             var node = node
-this.userConfigurationInterface= UserConfiguration() as UserConfigurationInterface;
+this.userConfigurationInterface= new UserConfiguration() as UserConfigurationInterface;
     
 
     var childNodeList: NodeList = node.getChildNodes()!;

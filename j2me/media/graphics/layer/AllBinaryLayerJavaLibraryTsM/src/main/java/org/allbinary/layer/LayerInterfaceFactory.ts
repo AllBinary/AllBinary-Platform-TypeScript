@@ -71,7 +71,7 @@ export class LayerInterfaceFactory
         
 
     public init(){
-list= BasicArrayList();
+list= new BasicArrayList();
     
 }
 
@@ -93,7 +93,7 @@ var z = z
         
 ;
     
-logUtil!.put(StringMaker().
+logUtil!.put(new StringMaker().
                             append(HASHTABLE_LABEL)!.append(StringUtil.getInstance()!.toString(hashtable))!.toString(), this, commonStrings!.GET_INSTANCE);
     
 

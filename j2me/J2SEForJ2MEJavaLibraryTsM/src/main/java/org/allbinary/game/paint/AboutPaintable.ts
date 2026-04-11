@@ -50,7 +50,7 @@ var developers = developers
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return AboutPaintable(info, developers);
+                        return new AboutPaintable(info, developers);
     
 }
 

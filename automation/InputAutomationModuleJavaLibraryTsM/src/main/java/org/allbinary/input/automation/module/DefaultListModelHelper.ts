@@ -39,15 +39,15 @@ export class DefaultListModelHelper
 public constructor (){
 
             super();
-            this.vector= Vector();
+            this.vector= new Vector();
     
-this.defaultListModel= DefaultListModel();
+this.defaultListModel= new DefaultListModel();
     
 }
 
 
     public initDefaultModelList(){
-this.defaultListModel= DefaultListModel();
+this.defaultListModel= new DefaultListModel();
     
 
     var size: number = this.vector.length!;

@@ -146,7 +146,7 @@ this.getFormData();
     getFormData(){
 this.storeName= request.getParameter(StoreFrontData.getInstance()!.NAME);
     
-this.searchParams= SearchParams(this.request);
+this.searchParams= new SearchParams(this.request);
     
 }
 
@@ -184,13 +184,13 @@ this.searchParams= SearchParams(this.request);
 ;
     
 
-    var adminBasicEmailInfo: BasicEmailInfo = AdminEmailInfo(adminEmailSubject, adminEmailTextBody) as BasicEmailInfo;
+    var adminBasicEmailInfo: BasicEmailInfo = new AdminEmailInfo(adminEmailSubject, adminEmailTextBody) as BasicEmailInfo;
         
         
 ;
     
 
-    var storeAdminBasicEmailInfo: BasicEmailInfo = StoreEmailInfo(storeFrontInterface, adminEmailSubject, adminEmailTextBody) as BasicEmailInfo;
+    var storeAdminBasicEmailInfo: BasicEmailInfo = new StoreEmailInfo(storeFrontInterface, adminEmailSubject, adminEmailTextBody) as BasicEmailInfo;
         
         
 ;

@@ -156,15 +156,15 @@ protected constructor (associatedAdvancedRTSGameLayer: UnitLayer, fakeWaypoint: 
 var fakeWaypoint = fakeWaypoint
 this.associatedAdvancedRTSGameLayer= associatedAdvancedRTSGameLayer;
     
-this.completeTimeDelayHelper= TimeDelayHelper(30000);
+this.completeTimeDelayHelper= new TimeDelayHelper(30000);
     
-this.targetList= BasicArrayList();
+this.targetList= new BasicArrayList();
     
-this.possibleTargetList= BasicArrayList();
+this.possibleTargetList= new BasicArrayList();
     
 this.setWaypointPathsList(BasicArrayListUtil.getInstance()!.getImmutableInstance());
     
-this.currentGeographicMapCellHistoryP= GeographicMapCellHistory();
+this.currentGeographicMapCellHistoryP= new GeographicMapCellHistory();
     
 this.FAKE_WAYPOINT_LAYER= fakeWaypoint;
     
@@ -250,7 +250,7 @@ this.associatedAdvancedRTSGameLayer!.waypointLogHelperP!.onWaypointEvent(this.as
                                     
 
 
-                            throw Error("Trying to add a dead: " +advancedRTSGameLayer)
+                            throw new Error("Trying to add a dead: " +advancedRTSGameLayer)
 
                                     }
                                 
@@ -295,7 +295,7 @@ this.associatedAdvancedRTSGameLayer!.waypointLogHelperP!.addWaypointFromBuilding
                                     
 
 
-                            throw Error("Trying to add a dead: " +rtsLayer)
+                            throw new Error("Trying to add a dead: " +rtsLayer)
 
                                     }
                                 

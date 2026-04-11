@@ -106,7 +106,7 @@ var index = index
     public addMotionGestureAction(list: BasicArrayList, commandAction: CompleteMotionGestureInputEvent){
 var list = list
 var commandAction = commandAction
-activeCommands!.add(MotionGestureToMotionGestureActionAssociation(list, commandAction));
+activeCommands!.add(new MotionGestureToMotionGestureActionAssociation(list, commandAction));
     
 }
 

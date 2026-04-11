@@ -198,7 +198,7 @@ this.load();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return platformRecordIdUtil!.getRecordId(abeClientInformation, StringMaker().
+                        return platformRecordIdUtil!.getRecordId(abeClientInformation, new StringMaker().
                             append(CommonSeps.getInstance()!.UNDERSCORE)!.append(this.getName())!.append(RECORD_ID)!.toString());
 
                         ;
@@ -217,7 +217,7 @@ this.load();
     
 
         try {
-            logUtil!.put(StringMaker().
+            logUtil!.put(new StringMaker().
                             append("Adding HighScore: ")!.appendlong(newHighScore!.getScore())!.toString(), this, commonStrings!.ADD);
     
 
@@ -357,9 +357,9 @@ recordAsBytes= recordStore!.getRecord(id);
                                 )
                         
                                     {
-                                    byteArrayInputStream= ByteArrayInputStream(recordAsBytes);
+                                    byteArrayInputStream= new ByteArrayInputStream(recordAsBytes);
     
-inputStream= DataInputStream(byteArrayInputStream);
+inputStream= new DataInputStream(byteArrayInputStream);
     
 
     var name: string = inputStream!.readUTF()!;
@@ -397,7 +397,7 @@ inputStream= DataInputStream(byteArrayInputStream);
                         if(bestHighScore!.getId() !=  -1)
                         
                                     {
-                                    logUtil!.put(StringMaker().
+                                    logUtil!.put(new StringMaker().
                             append("Removing Lowest HighScore: ")!.appendlong(bestHighScore!.getScore())!.toString(), this, commonStrings!.LOAD);
     
 recordStore!.deleteRecord(bestHighScore!.getId());
@@ -461,7 +461,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "removeLowestHighScore", e);
         try {
             recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation), true);
     
-this.setList(BasicArrayList());
+this.setList(new BasicArrayList());
     
 
     var recordEnum: RecordEnumeration = recordStore!.enumerateRecords(NullRecordFilter.NULL_RECORD_FILTER, NullRecordComparator.NULL_RECORD_COMPARATOR, true)!;
@@ -498,9 +498,9 @@ recordAsBytes= recordStore!.getRecord(id);
                                 )
                         
                                     {
-                                    byteArrayInputStream= ByteArrayInputStream(recordAsBytes);
+                                    byteArrayInputStream= new ByteArrayInputStream(recordAsBytes);
     
-inputStream= DataInputStream(byteArrayInputStream);
+inputStream= new DataInputStream(byteArrayInputStream);
     
 
         try {
@@ -665,7 +665,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.LOAD, e);
                                     }
                                 
                         else {
-                            logUtil!.put(StringMaker().
+                            logUtil!.put(new StringMaker().
                             append("HighScores RecordStore Max Reached: ")!.appendint(this.MAXHIGHSCORES)!.toString(), this, "isTooManyHighScores");
     
 

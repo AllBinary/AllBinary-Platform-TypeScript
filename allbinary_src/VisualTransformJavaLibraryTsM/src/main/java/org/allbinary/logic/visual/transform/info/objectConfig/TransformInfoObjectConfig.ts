@@ -519,7 +519,7 @@ logUtil!.put(stringBuffer!.toString(), this, "getNodeVector(nodename)");
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Vector();
+                        return new Vector();
     
 }
 
@@ -564,7 +564,7 @@ index < size; index++)
         
 ;
     
-viewVector!.add(TransformInfoDomNode(viewNode));
+viewVector!.add(new TransformInfoDomNode(viewNode));
     
 }
 
@@ -617,7 +617,7 @@ index < size; index++)
         
 ;
     
-viewVector!.add(TransformInfoDomNode(viewNode).
+viewVector!.add(new TransformInfoDomNode(viewNode).
                             getTransformInfoInterface());
     
 }
@@ -775,7 +775,7 @@ index < size; index++)
         
 ;
     
-viewVector!.add(TransformInfoDomNode(viewNode));
+viewVector!.add(new TransformInfoDomNode(viewNode));
     
 }
 

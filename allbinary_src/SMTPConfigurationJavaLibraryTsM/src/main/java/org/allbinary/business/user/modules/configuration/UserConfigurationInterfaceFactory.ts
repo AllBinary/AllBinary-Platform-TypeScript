@@ -72,7 +72,7 @@ var document = document
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return UserConfigurationView(configurationNode).
+                        return new UserConfigurationView(configurationNode).
                             getUserConfigurationInterface();
 
                          as UserConfigurationInterface;
@@ -91,7 +91,7 @@ var userRole = userRole
 ;
     
 
-    var documentString: string = CryptFileReader(UserConfigurationData.UNCRYPTED_EXTENSION, UserConfigurationData.ENCRYPTED_EXTENSION).
+    var documentString: string = new CryptFileReader(UserConfigurationData.UNCRYPTED_EXTENSION, UserConfigurationData.ENCRYPTED_EXTENSION).
                             get(abPath)!;
         
         
@@ -121,7 +121,7 @@ var userRole = userRole
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return UserConfiguration();
+                        return new UserConfiguration();
     
 }
 

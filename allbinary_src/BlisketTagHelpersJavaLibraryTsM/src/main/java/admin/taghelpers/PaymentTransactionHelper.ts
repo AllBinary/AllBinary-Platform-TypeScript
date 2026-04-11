@@ -50,7 +50,7 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
             super();
             var hashMap = hashMap
 var pageContext = pageContext
-this.portion= Portion(hashMap);
+this.portion= new Portion(hashMap);
     
 }
 
@@ -59,7 +59,7 @@ this.portion= Portion(hashMap);
 
         try {
             
-    var success: string = TransactionEntity().
+    var success: string = new TransactionEntity().
                             dropTable()!;
         
         
@@ -114,7 +114,7 @@ this.portion= Portion(hashMap);
 
         try {
             
-    var success: string = TransactionEntity().
+    var success: string = new TransactionEntity().
                             createTable()!;
         
         
@@ -175,7 +175,7 @@ this.portion= Portion(hashMap);
 ;
     
 
-    var result: string = AbSqlTableUtil.getInstance()!.restoreTable(TransactionEntity(), portion)!;
+    var result: string = AbSqlTableUtil.getInstance()!.restoreTable(new TransactionEntity(), portion)!;
         
         
 ;
@@ -235,7 +235,7 @@ this.portion= Portion(hashMap);
 ;
     
 
-    var result: string = AbSqlTableUtil.getInstance()!.backupTable(TransactionEntity())!;
+    var result: string = AbSqlTableUtil.getInstance()!.backupTable(new TransactionEntity())!;
         
         
 ;

@@ -115,7 +115,7 @@ index < size; index++)
                         
                                     {
                                     
-    var node: Node = UserDomNode(userInterface).
+    var node: Node = new UserDomNode(userInterface).
                             toXmlNode(document)!;
         
         

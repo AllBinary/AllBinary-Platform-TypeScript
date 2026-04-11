@@ -102,7 +102,7 @@ export class AbXslHelper
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return XslHelper.getInstance()!.translate(StreamSource(xsltFilePath), StreamSource(xmlFilePath), StreamResult(outputStream))!.toString();
+                        return XslHelper.getInstance()!.translate(new StreamSource(xsltFilePath), new StreamSource(xmlFilePath), new StreamResult(outputStream))!.toString();
 
                         ;
     

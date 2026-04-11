@@ -96,7 +96,7 @@ public constructor (name: string, bufferedImage: BufferedImage, bufferedImage2: 
     //var tolerance = tolerance
 this.name= name;
     
-this.nonMatchingPixelVector= Vector();
+this.nonMatchingPixelVector= new Vector();
     
 this.bufferedImages[0]= bufferedImage;
     
@@ -235,7 +235,7 @@ this.nonMatchingPixelVector!.add(pixel);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return StringMaker().
+                        return new StringMaker().
                             append("ImageComparisonInfo: ")!.append(this.name)!.append(" Number Of Matching Pixels: ")!.appendint(this.pixelsThatMatch)!.append("\nNumber Of Non-Matching Pixels: ")!.appendint(this.getNonMatchingPixelVector()!.size())!.append("\nNumber Of Pixels Ignored: ")!.appendint(this.pixelsIgnored)!.append("\nMatching Percentage: ")!.appendfloat(this.getMatchingPercent())!.toString();
 
                         ;

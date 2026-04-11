@@ -108,7 +108,7 @@ public constructor (transformInfoInterface: TransformInfoInterface)
                     
 this.storeFrontInterface= StoreFrontFactory.getInstance(this.getTransformInfoInterface()!.getStoreName());
     
-this.shippingMethods= ShippingMethods(this.abeClientInformation, storeFrontInterface);
+this.shippingMethods= new ShippingMethods(this.abeClientInformation, storeFrontInterface);
     
 }
 

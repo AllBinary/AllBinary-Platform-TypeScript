@@ -179,7 +179,7 @@ logConfigType= availableLogConfigTypes!.get(index);
 
 
 
-                            throw Error("No Such LogConfigType: " +name)
+                            throw new Error("No Such LogConfigType: " +name)
 }
 
 private constructor (){

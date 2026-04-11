@@ -37,7 +37,7 @@ var height = height
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return IconLayer(animationInterface, width, height);
+                        return new IconLayer(animationInterface, width, height);
     
 }
 

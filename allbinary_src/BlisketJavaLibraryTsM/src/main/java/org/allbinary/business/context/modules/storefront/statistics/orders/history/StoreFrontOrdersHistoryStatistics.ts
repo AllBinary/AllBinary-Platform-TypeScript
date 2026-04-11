@@ -62,13 +62,13 @@ public constructor (storeFrontInterface: StoreFrontInterface){
 
             super();
             var storeFrontInterface = storeFrontInterface
-this.subTotalMoney= Money();
+this.subTotalMoney= new Money();
     
-this.shippingCostMoney= Money();
+this.shippingCostMoney= new Money();
     
-this.taxesMoney= Money();
+this.taxesMoney= new Money();
     
-this.totalMoney= Money();
+this.totalMoney= new Money();
     
 
     var orderHistoryEntityInterface: OrderHistoryEntityInterface = OrderHistoryEntityFactory.getInstance()!;

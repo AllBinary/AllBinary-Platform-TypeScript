@@ -240,7 +240,7 @@ depthIndex++;
                                     
 
 
-                            throw Error("Probably Major Error")
+                            throw new Error("Probably Major Error")
 
                                     }
                                 
@@ -290,7 +290,7 @@ pathStringBuffer!.append(abPathData!.SEPARATOR);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return AbPath(pathStringBuffer!.toString());
+                        return new AbPath(pathStringBuffer!.toString());
     
 }
 
@@ -311,7 +311,7 @@ pathStringBuffer!.append(abPathData!.SEPARATOR);
 
 
 
-                            throw Error("Not Root")
+                            throw new Error("Not Root")
 }
 
 

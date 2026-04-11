@@ -175,23 +175,23 @@ this.isUnitProducer= isUnitProducer;
         
 ;
     
-this.buildOnPathGameNotificationEvent= GameNotificationEvent(this, RTSGameStrings.getInstance()!.BUILD_ON_PATH, smallIntegerSingletonFactory!.getInstance(2), basicColorFactory!.PINK, BooleanFactory.getInstance()!.FALSE);
+this.buildOnPathGameNotificationEvent= new GameNotificationEvent(this, RTSGameStrings.getInstance()!.BUILD_ON_PATH, smallIntegerSingletonFactory!.getInstance(2), basicColorFactory!.PINK, BooleanFactory.getInstance()!.FALSE);
     
-this.spotTakenGameNotificationEvent= GameNotificationEvent(this, RTSGameStrings.getInstance()!.SPOT_TAKEN, smallIntegerSingletonFactory!.getInstance(2), basicColorFactory!.PINK, BooleanFactory.getInstance()!.FALSE);
+this.spotTakenGameNotificationEvent= new GameNotificationEvent(this, RTSGameStrings.getInstance()!.SPOT_TAKEN, smallIntegerSingletonFactory!.getInstance(2), basicColorFactory!.PINK, BooleanFactory.getInstance()!.FALSE);
     
-this.selectBuildSpotGameNotificationEvent= GameNotificationEvent(this, RTSGameStrings.getInstance()!.SELECT_BUILD_SPOT, smallIntegerSingletonFactory!.getInstance(2), basicColorFactory!.PINK, BooleanFactory.getInstance()!.FALSE);
+this.selectBuildSpotGameNotificationEvent= new GameNotificationEvent(this, RTSGameStrings.getInstance()!.SELECT_BUILD_SPOT, smallIntegerSingletonFactory!.getInstance(2), basicColorFactory!.PINK, BooleanFactory.getInstance()!.FALSE);
     
-this.roadCollisionGameNotificationEvent= GameNotificationEvent(this, RTSGameStrings.getInstance()!.ROAD_COLLISION, smallIntegerSingletonFactory!.getInstance(2), basicColorFactory!.PINK, BooleanFactory.getInstance()!.FALSE);
+this.roadCollisionGameNotificationEvent= new GameNotificationEvent(this, RTSGameStrings.getInstance()!.ROAD_COLLISION, smallIntegerSingletonFactory!.getInstance(2), basicColorFactory!.PINK, BooleanFactory.getInstance()!.FALSE);
     
-this.noMoneyGameNotificationEvent= GameNotificationEvent(this, RTSGameStrings.getInstance()!.NO_MONEY, smallIntegerSingletonFactory!.getInstance(2), basicColorFactory!.PINK, BooleanFactory.getInstance()!.FALSE);
+this.noMoneyGameNotificationEvent= new GameNotificationEvent(this, RTSGameStrings.getInstance()!.NO_MONEY, smallIntegerSingletonFactory!.getInstance(2), basicColorFactory!.PINK, BooleanFactory.getInstance()!.FALSE);
     
-this.buildingCollisionGameNotificationEvent= GameNotificationEvent(this, RTSGameStrings.getInstance()!.BUILDING_COLLISION, smallIntegerSingletonFactory!.getInstance(2), basicColorFactory!.PINK, BooleanFactory.getInstance()!.FALSE);
+this.buildingCollisionGameNotificationEvent= new GameNotificationEvent(this, RTSGameStrings.getInstance()!.BUILDING_COLLISION, smallIntegerSingletonFactory!.getInstance(2), basicColorFactory!.PINK, BooleanFactory.getInstance()!.FALSE);
     
-this.structureToCloseCollisionGameNotificationEvent= GameNotificationEvent(this, RTSGameStrings.getInstance()!.STRUCTURE_TO_CLOSE, smallIntegerSingletonFactory!.getInstance(2), basicColorFactory!.PINK, BooleanFactory.getInstance()!.FALSE);
+this.structureToCloseCollisionGameNotificationEvent= new GameNotificationEvent(this, RTSGameStrings.getInstance()!.STRUCTURE_TO_CLOSE, smallIntegerSingletonFactory!.getInstance(2), basicColorFactory!.PINK, BooleanFactory.getInstance()!.FALSE);
     
-this.buildingGameNotificationEvent= GameNotificationEvent(this, RTSGameStrings.getInstance()!.BUILDING, smallIntegerSingletonFactory!.getInstance(2), basicColorFactory!.PINK, BooleanFactory.getInstance()!.FALSE);
+this.buildingGameNotificationEvent= new GameNotificationEvent(this, RTSGameStrings.getInstance()!.BUILDING, smallIntegerSingletonFactory!.getInstance(2), basicColorFactory!.PINK, BooleanFactory.getInstance()!.FALSE);
     
-this.mapEdgeGameNotificationEvent= GameNotificationEvent(this, RTSGameStrings.getInstance()!.MAP_EDGE, smallIntegerSingletonFactory!.getInstance(2), basicColorFactory!.PINK, BooleanFactory.getInstance()!.FALSE);
+this.mapEdgeGameNotificationEvent= new GameNotificationEvent(this, RTSGameStrings.getInstance()!.MAP_EDGE, smallIntegerSingletonFactory!.getInstance(2), basicColorFactory!.PINK, BooleanFactory.getInstance()!.FALSE);
     
 }
 
@@ -328,7 +328,7 @@ logUtil!.put(commonStrings!.START, this, "buildFromMotionInput");
                                     
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 
                                     }
                                 
@@ -504,7 +504,7 @@ this.attemptBuild(rtsPlayerLayerInterface, layerManager, rtsLayer, itemIndex);
     //var layerManager = layerManager
     //var layerInterface = layerInterface
     //var itemIndex = itemIndex
-logUtil!.put(StringMaker().
+logUtil!.put(new StringMaker().
                             append("Layer: ")!.append(StringUtil.getInstance()!.toString(layerInterface))!.toString(), this, "attemptBuild");
     
 

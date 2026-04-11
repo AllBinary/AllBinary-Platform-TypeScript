@@ -377,7 +377,7 @@ index < size; index++)
                             
 
 
-                            throw Error(formTypeFactory!.UNK)
+                            throw new Error(formTypeFactory!.UNK)
 
                         }
                             
@@ -429,7 +429,7 @@ this.paintable.paint(graphics, index, deltaX +diffX, deltaY);
                             
 
 
-                            throw Error(formTypeFactory!.UNK)
+                            throw new Error(formTypeFactory!.UNK)
 
                         }
                             

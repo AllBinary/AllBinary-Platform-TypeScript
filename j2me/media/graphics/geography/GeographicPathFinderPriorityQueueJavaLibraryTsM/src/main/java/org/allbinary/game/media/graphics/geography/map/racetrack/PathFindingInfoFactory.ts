@@ -80,9 +80,9 @@ PathFindingInfoFactory.MAX= max;
 private constructor (){
 
             super();
-            this.pathFindingInfo= PathFindingInfo(PathFindingNodeCostInfoFactory(MAX));
+            this.pathFindingInfo= new PathFindingInfo(new PathFindingNodeCostInfoFactory(MAX));
     
-this.pathFinder= PathFinder();
+this.pathFinder= new PathFinder();
     
 }
 

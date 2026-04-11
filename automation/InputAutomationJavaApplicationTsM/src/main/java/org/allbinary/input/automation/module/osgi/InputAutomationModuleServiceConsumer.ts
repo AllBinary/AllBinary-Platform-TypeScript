@@ -32,7 +32,7 @@ export class InputAutomationModuleServiceConsumer extends InputAutomationService
         
 public constructor (bundleContext: BundleContext)                        
 
-                            : super(InputAutomationModuleServiceInterface::class.toString()!, bundleContext, InputAutomationModuleOSGIServiceVisitor()){
+                            : super(InputAutomationModuleServiceInterface::class.toString()!, bundleContext, new InputAutomationModuleOSGIServiceVisitor()){
 
             super();
             var bundleContext = bundleContext

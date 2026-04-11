@@ -38,7 +38,7 @@ export class OptimizedAllBinaryCollisionLayerProcessorForCollidableLayer extends
         
 public constructor ()                        
 
-                            : super(OptimizedAllBinaryCollisionLayerManager()){
+                            : super(new OptimizedAllBinaryCollisionLayerManager()){
 
             super();
             

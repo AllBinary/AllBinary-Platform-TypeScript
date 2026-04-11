@@ -113,7 +113,7 @@ export class OrderItemsEntity extends AbSqlBean
         
 public constructor ()                        
 
-                            : super(HistoryDbInitInfo()){
+                            : super(new HistoryDbInitInfo()){
 
             super();
             
@@ -201,9 +201,9 @@ i < itemsSize; i++)
         
 ;
     
-vector= Vector();
+vector= new Vector();
     
-vector.add(OrderItemIdGenerator().
+vector.add(new OrderItemIdGenerator().
                             getNext());
     
 vector.add(order.getId());

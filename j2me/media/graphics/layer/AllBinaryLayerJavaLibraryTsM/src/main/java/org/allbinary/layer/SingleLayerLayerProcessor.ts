@@ -23,7 +23,7 @@ export class SingleLayerLayerProcessor extends LayerProcessor {
         
 public constructor ()                        
 
-                            : super(SingleLayerLayerManager()){
+                            : super(new SingleLayerLayerManager()){
 
             super();
             

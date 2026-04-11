@@ -31,7 +31,7 @@ var exception = exception
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -43,7 +43,7 @@ var exception = exception
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -54,7 +54,7 @@ var functionName = functionName
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 

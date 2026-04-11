@@ -806,7 +806,7 @@ DownGameKeyEventHandler.getInstance()!.fireEvent(gameKeyEvent);
                                     }
                                 
                         else {
-                            logUtil!.put(StringMaker().
+                            logUtil!.put(new StringMaker().
                             append(this.gameInputStrings!.NO_KEY)!.appendint(keyCode)!.toString(), this, this.gameInputStrings!.ADD_KEY_EVENT);
     
 
@@ -850,7 +850,7 @@ UpGameKeyEventHandler.getInstance()!.fireEvent(gameKeyEvent);
                                     }
                                 
                         else {
-                            logUtil!.put(StringMaker().
+                            logUtil!.put(new StringMaker().
                             append(this.gameInputStrings!.NO_KEY)!.appendint(keyCode)!.toString(), this, this.gameInputStrings!.REMOVE_KEY_EVENT);
     
 
@@ -913,7 +913,7 @@ this.setPaused(false);
 
 
     public isGameOver(): boolean{
-logUtil!.put(StringMaker().
+logUtil!.put(new StringMaker().
                             append(commonStrings!.NOT_IMPLEMENTED)!.append(" since not a game")!.toString(), this, "isGameOver");
     
 
@@ -1123,7 +1123,7 @@ gameAdState!.processPageAdState();
 
 
 
-                            throw Error(commonStrings!.NOT_IMPLEMENTED)
+                            throw new Error(commonStrings!.NOT_IMPLEMENTED)
 }
 
 
@@ -1134,7 +1134,7 @@ var randomValue = randomValue
 
 
 
-                            throw Error(commonStrings!.NOT_IMPLEMENTED)
+                            throw new Error(commonStrings!.NOT_IMPLEMENTED)
 }
 
 
@@ -1145,7 +1145,7 @@ var randomLevel = randomLevel
 
 
 
-                            throw Error(commonStrings!.NOT_IMPLEMENTED)
+                            throw new Error(commonStrings!.NOT_IMPLEMENTED)
 }
 
 
@@ -1368,7 +1368,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, SET_RUNNING, e);
         
 ;
     
-baseGameStatistics!.add(StringMaker().
+baseGameStatistics!.add(new StringMaker().
                             append(BOT_GAME_STATS)!.append(baseGameStatistics!.toString())!.append(CommonSeps.getInstance()!.NEW_LINE)!.toString());
     
 baseGameStatistics!.init();

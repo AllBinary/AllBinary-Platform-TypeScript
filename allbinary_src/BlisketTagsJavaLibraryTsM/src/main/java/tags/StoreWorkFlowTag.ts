@@ -52,7 +52,7 @@ export class StoreWorkFlowTag extends HelperTag {
     private viewFile: string
 public constructor ()                        
 
-                            : super(StoreTagWorkFlowHelperFactory()){
+                            : super(new StoreTagWorkFlowHelperFactory()){
 
             super();
             

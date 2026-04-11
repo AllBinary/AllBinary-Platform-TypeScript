@@ -107,7 +107,7 @@ this.name= nameTextNode!.getNodeValue();
                             
 
 
-                            throw Error("Wrong Number of WorkAreas: " +numberOfworkAreas)
+                            throw new Error("Wrong Number of WorkAreas: " +numberOfworkAreas)
 
                         }
                             
@@ -120,7 +120,7 @@ this.canvasNodeList= DomHelper.getInstance()!.getChildrenWithoutTextNodes(this.F
                             
 
 
-                            throw Error("workArea Node Not Found")
+                            throw new Error("workArea Node Not Found")
 
                         }
                             

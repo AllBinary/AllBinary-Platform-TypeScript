@@ -123,7 +123,7 @@ this.animationBehaviorFactory= animationBehaviorFactory;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return AdjustedImageArrayAnimation(this.imageArray, dx, dy, this.animationBehaviorFactory!.getOrCreateInstance());
+                        return new AdjustedImageArrayAnimation(this.imageArray, dx, dy, this.animationBehaviorFactory!.getOrCreateInstance());
     
 
                                     }
@@ -133,7 +133,7 @@ this.animationBehaviorFactory= animationBehaviorFactory;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return ImageArrayAnimation(this.imageArray, AnimationBehavior.getInstance());
+                        return new ImageArrayAnimation(this.imageArray, AnimationBehavior.getInstance());
     
 
                         }

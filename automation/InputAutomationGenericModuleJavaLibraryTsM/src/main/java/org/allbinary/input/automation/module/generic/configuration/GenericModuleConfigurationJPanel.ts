@@ -73,7 +73,7 @@ public constructor (){
             super();
             initComponents();
     
-this.setGenericProfiles(GenericProfiles(GenericProfiles.DEFAULT_FILE));
+this.setGenericProfiles(new GenericProfiles(GenericProfiles.DEFAULT_FILE));
     
 this.selectFirstElement();
     
@@ -81,53 +81,53 @@ this.selectFirstElement();
 
 
     initComponents(){
-newProfileJDialog= javax.swing.JDialog();
+newProfileJDialog= new javax.swing.JDialog();
     
-okNewProfileJButton= javax.swing.JButton();
+okNewProfileJButton= new javax.swing.JButton();
     
-newProfileNameJLabel= javax.swing.JLabel();
+newProfileNameJLabel= new javax.swing.JLabel();
     
-newProfileNameJTextField= javax.swing.JTextField();
+newProfileNameJTextField= new javax.swing.JTextField();
     
-buttonGroup2= javax.swing.ButtonGroup();
+buttonGroup2= new javax.swing.ButtonGroup();
     
-genericJTabbedPane= javax.swing.JTabbedPane();
+genericJTabbedPane= new javax.swing.JTabbedPane();
     
-genericProfilesJPanel= javax.swing.JPanel();
+genericProfilesJPanel= new javax.swing.JPanel();
     
-genericProfilesJScrollPane= javax.swing.JScrollPane();
+genericProfilesJScrollPane= new javax.swing.JScrollPane();
     
-genericProfilesJList= javax.swing.JList();
+genericProfilesJList= new javax.swing.JList();
     
-newProfileJButton= javax.swing.JButton();
+newProfileJButton= new javax.swing.JButton();
     
-deleteProfileJButton= javax.swing.JButton();
+deleteProfileJButton= new javax.swing.JButton();
     
-jPanel1= javax.swing.JPanel();
+jPanel1= new javax.swing.JPanel();
     
-screenCaptureJRadioButton= javax.swing.JRadioButton();
+screenCaptureJRadioButton= new javax.swing.JRadioButton();
     
-jLabel1= javax.swing.JLabel();
+jLabel1= new javax.swing.JLabel();
     
-jLabel2= javax.swing.JLabel();
+jLabel2= new javax.swing.JLabel();
     
-savedCaptureJRadioButton= javax.swing.JRadioButton();
+savedCaptureJRadioButton= new javax.swing.JRadioButton();
     
-captureMotionAnalysisJCheckBox= javax.swing.JCheckBox();
+captureMotionAnalysisJCheckBox= new javax.swing.JCheckBox();
     
-captureComparisonJCheckBox= javax.swing.JCheckBox();
+captureComparisonJCheckBox= new javax.swing.JCheckBox();
     
-jLabel3= javax.swing.JLabel();
+jLabel3= new javax.swing.JLabel();
     
-blankGenericProfileActionsJPanel= javax.swing.JPanel();
+blankGenericProfileActionsJPanel= new javax.swing.JPanel();
     
-newProfileJDialog!.setMinimumSize(java.awt.Dimension(250, 150));
+newProfileJDialog!.setMinimumSize(new java.awt.Dimension(250, 150));
     
 newProfileJDialog!.setResizable(false);
     
 okNewProfileJButton!.setText("Ok");
     
-okNewProfileJButton!.addActionListener(object: java.awt.event.ActionListener()
+okNewProfileJButton!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -153,21 +153,21 @@ newProfileJDialogLayout!.setHorizontalGroup(newProfileJDialogLayout!.createParal
     
 newProfileJDialogLayout!.setVerticalGroup(newProfileJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(newProfileJDialogLayout!.createSequentialGroup()!.addGap(10, 10, 10)!.addComponent(newProfileNameJLabel)!.addGap(16, 16, 16)!.addComponent(newProfileNameJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)!.addGap(20, 20, 20)!.addComponent(okNewProfileJButton)));
     
-setLayout(java.awt.GridLayout(1, 0));
+setLayout(new java.awt.GridLayout(1, 0));
     
-setMinimumSize(java.awt.Dimension(400, 300));
+setMinimumSize(new java.awt.Dimension(400, 300));
     
-setPreferredSize(java.awt.Dimension(700, 700));
+setPreferredSize(new java.awt.Dimension(700, 700));
     
 genericJTabbedPane!.setToolTipText(stringUtil!.EMPTY_STRING);
     
-genericJTabbedPane!.setMinimumSize(java.awt.Dimension(800, 600));
+genericJTabbedPane!.setMinimumSize(new java.awt.Dimension(800, 600));
     
-genericProfilesJPanel!.setMinimumSize(java.awt.Dimension(400, 300));
+genericProfilesJPanel!.setMinimumSize(new java.awt.Dimension(400, 300));
     
-genericProfilesJPanel!.setPreferredSize(java.awt.Dimension(0, 0));
+genericProfilesJPanel!.setPreferredSize(new java.awt.Dimension(0, 0));
     
-genericProfilesJList!.addListSelectionListener(object: javax.swing.event.ListSelectionListener()
+genericProfilesJList!.addListSelectionListener(new object: javax.swing.event.ListSelectionListener()
                                 {
                                 
     public valueChanged(evt: javax.swing.event.ListSelectionEvent){
@@ -185,7 +185,7 @@ newProfileJButton!.setText("New");
     
 newProfileJButton!.setToolTipText("Creates a new profile");
     
-newProfileJButton!.addActionListener(object: java.awt.event.ActionListener()
+newProfileJButton!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -201,7 +201,7 @@ deleteProfileJButton!.setText("Delete");
     
 deleteProfileJButton!.setToolTipText("Deletes the selected profile");
     
-deleteProfileJButton!.addActionListener(object: java.awt.event.ActionListener()
+deleteProfileJButton!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -213,7 +213,7 @@ deleteProfileJButtonActionPerformed(evt);
                                 }
                             );
     
-jPanel1!.setPreferredSize(java.awt.Dimension(1000, 100));
+jPanel1!.setPreferredSize(new java.awt.Dimension(1000, 100));
     
 screenCaptureJRadioButton!.setText("Screen Captures");
     
@@ -221,9 +221,9 @@ screenCaptureJRadioButton!.setToolTipText("Records the screen into memory for lo
     
 screenCaptureJRadioButton!.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
     
-screenCaptureJRadioButton!.setMargin(java.awt.Insets(0, 0, 0, 0));
+screenCaptureJRadioButton!.setMargin(new java.awt.Insets(0, 0, 0, 0));
     
-screenCaptureJRadioButton!.addActionListener(object: java.awt.event.ActionListener()
+screenCaptureJRadioButton!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -245,9 +245,9 @@ savedCaptureJRadioButton!.setToolTipText("Loads images from files for logical pr
     
 savedCaptureJRadioButton!.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
     
-savedCaptureJRadioButton!.setMargin(java.awt.Insets(0, 0, 0, 0));
+savedCaptureJRadioButton!.setMargin(new java.awt.Insets(0, 0, 0, 0));
     
-savedCaptureJRadioButton!.addActionListener(object: java.awt.event.ActionListener()
+savedCaptureJRadioButton!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -265,9 +265,9 @@ captureMotionAnalysisJCheckBox!.setToolTipText("Uses image comparison and contra
     
 captureMotionAnalysisJCheckBox!.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
     
-captureMotionAnalysisJCheckBox!.setMargin(java.awt.Insets(0, 0, 0, 0));
+captureMotionAnalysisJCheckBox!.setMargin(new java.awt.Insets(0, 0, 0, 0));
     
-captureMotionAnalysisJCheckBox!.addActionListener(object: java.awt.event.ActionListener()
+captureMotionAnalysisJCheckBox!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -285,9 +285,9 @@ captureComparisonJCheckBox!.setToolTipText("Compares the last two input images f
     
 captureComparisonJCheckBox!.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
     
-captureComparisonJCheckBox!.setMargin(java.awt.Insets(0, 0, 0, 0));
+captureComparisonJCheckBox!.setMargin(new java.awt.Insets(0, 0, 0, 0));
     
-captureComparisonJCheckBox!.addActionListener(object: java.awt.event.ActionListener()
+captureComparisonJCheckBox!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -496,7 +496,7 @@ this.getBlankGenericProfileActionsJPanel()!.removeAll();
     
 this.setSelectedGenericProfile(this.getGenericProfiles()!.get(profileNameString));
     
-this.getSelectedGenericProfile()!.setGenericProfileActions(GenericProfileActions(genericProfileActionsJPanel, profileNameString));
+this.getSelectedGenericProfile()!.setGenericProfileActions(new GenericProfileActions(genericProfileActionsJPanel, profileNameString));
     
 genericProfileActionsJPanel!.setGenericProfileActions(this.getSelectedGenericProfile()!.getGenericProfileActions());
     

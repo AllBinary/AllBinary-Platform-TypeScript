@@ -32,7 +32,7 @@ var anyType = anyType
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 

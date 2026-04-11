@@ -32,7 +32,7 @@ export class Points
 public constructor (){
 
             super();
-            this.pointVector= BasicArrayList();
+            this.pointVector= new BasicArrayList();
     
 }
 

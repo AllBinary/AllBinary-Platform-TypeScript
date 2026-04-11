@@ -105,7 +105,7 @@ inputFactory!.add(id, this);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return StringMaker().
+                        return new StringMaker().
                             append("J2MEGameKey: ")!.append(super.toString())!.toString();
 
                         ;

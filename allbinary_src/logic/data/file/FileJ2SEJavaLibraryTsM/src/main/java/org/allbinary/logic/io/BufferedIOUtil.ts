@@ -57,13 +57,13 @@ var backupFileBak = backupFileBak
 ;
     
 
-    var tmpOut: BufferedWriter = new BufferedWriter(FileWriter(AbFileNativeUtil.get(backupFileBak)));
+    var tmpOut: BufferedWriter = new BufferedWriter(new FileWriter(AbFileNativeUtil.get(backupFileBak)));
         
         
 ;
     
 
-    var tmpIn: BufferedReader = new BufferedReader(FileReader(AbFileNativeUtil.get(backupFile)));
+    var tmpIn: BufferedReader = new BufferedReader(new FileReader(AbFileNativeUtil.get(backupFile)));
         
         
 ;

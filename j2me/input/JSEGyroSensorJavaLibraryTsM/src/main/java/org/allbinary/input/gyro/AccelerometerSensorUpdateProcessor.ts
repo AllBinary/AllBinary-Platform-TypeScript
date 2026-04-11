@@ -53,7 +53,7 @@ export class AccelerometerSensorUpdateProcessor extends Processor {
                         if(Features.getInstance()!.isFeature(sensorFeatureFactory!.ORIENTATION_SENSORS))
                         
                                     {
-                                    AccelerometerSensorFactory.getInstance()!.setCompleteMotionGestureInputEventListener(SingleKeyPressGameKeyFromMotionGestureEventListener());
+                                    AccelerometerSensorFactory.getInstance()!.setCompleteMotionGestureInputEventListener(new SingleKeyPressGameKeyFromMotionGestureEventListener());
     
 
                                     }
@@ -62,7 +62,7 @@ export class AccelerometerSensorUpdateProcessor extends Processor {
                         if(Features.getInstance()!.isFeature(sensorFeatureFactory!.SIMULATED_ORIENTATION_SENSORS))
                         
                                     {
-                                    AccelerometerSensorFactory.getInstance()!.setCompleteMotionGestureInputEventListener(SingleKeyPressGameKeyFromMotionGestureEventListener());
+                                    AccelerometerSensorFactory.getInstance()!.setCompleteMotionGestureInputEventListener(new SingleKeyPressGameKeyFromMotionGestureEventListener());
     
 
                                     }
@@ -80,7 +80,7 @@ export class AccelerometerSensorUpdateProcessor extends Processor {
                             
 
 
-                            throw Error("Sensor Feature Not Set")
+                            throw new Error("Sensor Feature Not Set")
 
                         }
                             

@@ -218,7 +218,7 @@ var width = width
                                     
 
 
-                            throw IllegalArgumentException()
+                            throw new IllegalArgumentException()
 
                                     }
                                 
@@ -236,7 +236,7 @@ var height = height
                                     
 
 
-                            throw IllegalArgumentException()
+                            throw new IllegalArgumentException()
 
                                     }
                                 

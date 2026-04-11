@@ -132,7 +132,7 @@ public constructor (){
         
 ;
     
-UP= NamedAngle(0.toShort(), commonPhoneStrings!.UP);
+UP= new NamedAngle(0.toShort(), commonPhoneStrings!.UP);
     
 angleArray[0]= UP;
     
@@ -146,11 +146,11 @@ angleArray[0]= UP;
         
 index < 90; index++)
         {
-angleArray[index]= Angle(index.toShort());
+angleArray[index]= new Angle(index.toShort());
     
 }
 
-RIGHT= NamedAngle(90.toShort(), commonPhoneStrings!.RIGHT);
+RIGHT= new NamedAngle(90.toShort(), commonPhoneStrings!.RIGHT);
     
 angleArray[90]= RIGHT;
     
@@ -164,11 +164,11 @@ angleArray[90]= RIGHT;
         
 index < 180; index++)
         {
-angleArray[index]= Angle(index.toShort());
+angleArray[index]= new Angle(index.toShort());
     
 }
 
-DOWN= NamedAngle(180.toShort(), commonPhoneStrings!.DOWN);
+DOWN= new NamedAngle(180.toShort(), commonPhoneStrings!.DOWN);
     
 angleArray[180]= DOWN;
     
@@ -182,11 +182,11 @@ angleArray[180]= DOWN;
         
 index < 270; index++)
         {
-angleArray[index]= Angle(index.toShort());
+angleArray[index]= new Angle(index.toShort());
     
 }
 
-LEFT= NamedAngle(270.toShort(), commonPhoneStrings!.LEFT);
+LEFT= new NamedAngle(270.toShort(), commonPhoneStrings!.LEFT);
     
 angleArray[270]= LEFT;
     
@@ -200,7 +200,7 @@ angleArray[270]= LEFT;
         
 index < total; index++)
         {
-angleArray[index]= Angle(index.toShort());
+angleArray[index]= new Angle(index.toShort());
     
 }
 
@@ -287,7 +287,7 @@ var angle = angle
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 

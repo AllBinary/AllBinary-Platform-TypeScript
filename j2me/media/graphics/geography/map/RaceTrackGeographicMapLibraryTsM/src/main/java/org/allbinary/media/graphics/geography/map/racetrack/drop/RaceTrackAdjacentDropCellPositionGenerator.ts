@@ -339,7 +339,7 @@ this.hashtable.put(DirectionFactory.getInstance()!.NAME, direction);
 ;
     
 
-    var list: BasicArrayList = layerCoveringCellPositionsUtil!.getAll(baseRaceTrackGeographicMap, randomGeographicMapCellPosition, layerInterface, BasicArrayList())!;
+    var list: BasicArrayList = layerCoveringCellPositionsUtil!.getAll(baseRaceTrackGeographicMap, randomGeographicMapCellPosition, layerInterface, new BasicArrayList())!;
         
         
 ;

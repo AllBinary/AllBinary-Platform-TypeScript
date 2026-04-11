@@ -149,7 +149,7 @@ var userInterface = userInterface
     
 newUserEmailEventHandler!.addListener(vector);
     
-newUserEmailEventHandler!.addListener(LogUserEmailEventListenerModule());
+newUserEmailEventHandler!.addListener(new LogUserEmailEventListenerModule());
     
 this.userEmailEventHandlerHashMap!.put(userEmailEventNameData, newUserEmailEventHandler);
     

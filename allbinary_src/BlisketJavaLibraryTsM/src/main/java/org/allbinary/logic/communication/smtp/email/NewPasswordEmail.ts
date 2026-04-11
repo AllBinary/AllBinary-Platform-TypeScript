@@ -122,7 +122,7 @@ this.notifyUser();
 ;
     
 
-    var basicEmailInfo: BasicEmailInfo = AdminEmailInfo(emailSubject, emailBody) as BasicEmailInfo;
+    var basicEmailInfo: BasicEmailInfo = new AdminEmailInfo(emailSubject, emailBody) as BasicEmailInfo;
         
         
 ;
@@ -186,7 +186,7 @@ adminUserEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.NEWPASSWORD,
 ;
     
 
-    var basicEmailInfo: BasicEmailInfo = AdminEmailInfo(subject, body) as BasicEmailInfo;
+    var basicEmailInfo: BasicEmailInfo = new AdminEmailInfo(subject, body) as BasicEmailInfo;
         
         
 ;

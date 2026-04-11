@@ -32,7 +32,7 @@ export class SpecialAnimation extends IndexedAnimation
                 , SpecialAnimationInterface {
         
 
-    private static readonly NULL_SPECIAL_ANIMATION: SpecialAnimation = new SpecialAnimation(IndexedAnimationBehavior(1, 250));
+    private static readonly NULL_SPECIAL_ANIMATION: SpecialAnimation = new SpecialAnimation(new IndexedAnimationBehavior(1, 250));
         
         
 

@@ -193,7 +193,7 @@ logUtil!.put(TRYING_OTHER_SERVERS +ExceptionUtil.getInstance()!.getStackTrace(e)
                             
 
 
-                            throw Error(HOST_NOT_RESOLVED_MSG)
+                            throw new Error(HOST_NOT_RESOLVED_MSG)
 
                         }
                             

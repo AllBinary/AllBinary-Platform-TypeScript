@@ -36,7 +36,7 @@ export class OpenGLResources
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -47,7 +47,7 @@ export class OpenGLResources
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -58,7 +58,7 @@ export class OpenGLResources
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -69,7 +69,7 @@ export class OpenGLResources
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -80,7 +80,7 @@ export class OpenGLResources
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -88,7 +88,7 @@ export class OpenGLResources
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 

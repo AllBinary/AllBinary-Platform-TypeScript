@@ -67,7 +67,7 @@ var num = num
                         
                                     {
                                     
-    var oldNumStr: string = new .toCharArray();
+    var oldNumStr: string = .toCharArray();
         
         
 ;
@@ -188,10 +188,10 @@ index < size; index++)
         {
 product= .toCharArray();
     
-weightFloat= Float(InventoryEntity().
+weightFloat= new Float(new InventoryEntity().
                             getWeight(product));
     
-weightFloat= Float(getNumberOf(product)!.toFloat() *weightFloat!.toFloat());
+weightFloat= new Float(getNumberOf(product)!.toFloat() *weightFloat!.toFloat());
     
 totalWeight!.add(weightFloat!.toString());
     
@@ -216,7 +216,7 @@ totalWeight!.add(weightFloat!.toString());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Integer(items.size());
+                        return new Integer(items.size());
     
 }
 
@@ -331,7 +331,7 @@ var product = product
 index < size; index++)
         {
 
-    var product: string = new .toCharArray();
+    var product: string = .toCharArray();
         
         
 ;

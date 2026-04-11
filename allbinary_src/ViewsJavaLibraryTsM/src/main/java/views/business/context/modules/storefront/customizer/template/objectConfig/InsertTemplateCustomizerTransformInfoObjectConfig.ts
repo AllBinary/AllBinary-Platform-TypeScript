@@ -150,7 +150,7 @@ var aParentViewName = aParentViewName
 
                                     }
                                 
-parentComponentsNodeList!.item(0)!.appendChild(TransformInfoDomNodeView(aParentViewName).
+parentComponentsNodeList!.item(0)!.appendChild(new TransformInfoDomNodeView(aParentViewName).
                             toXmlNode(document));
     
 

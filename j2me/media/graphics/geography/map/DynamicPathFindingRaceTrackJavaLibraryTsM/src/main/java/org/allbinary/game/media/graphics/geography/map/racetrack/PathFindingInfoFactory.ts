@@ -90,7 +90,7 @@ export class PathFindingInfoFactory extends BasePathFindingInfoFactory {
 
     public static init(max: number){
 var max = max
-instance= PathFindingInfoFactory(SimplePathFinderGraphVisitorFactory(1, 1, Integer.MAX_VALUE), max);
+instance= new PathFindingInfoFactory(new SimplePathFinderGraphVisitorFactory(1, 1, Integer.MAX_VALUE), max);
     
 }
 
@@ -119,11 +119,11 @@ private constructor (pathFinderGraphVisitorFactoryInterface: PathFinderGraphVisi
     
 PreLogUtil.put("Using Dynamic Path Finding", this, commonStrings!.GET_INSTANCE);
     
-this.basicGeographicMapPathFinder= BasicGeographicMapPathFinder(max);
+this.basicGeographicMapPathFinder= new BasicGeographicMapPathFinder(max);
     
-this.pathFindingInfo= PathFindingInfo(PathFindingNodeCostInfoFactory(max));
+this.pathFindingInfo= new PathFindingInfo(new PathFindingNodeCostInfoFactory(max));
     
-this.basicGeographicMapGraph= BasicGeographicMapGraph(pathFindingInfo!.getPathFindingNodeCostInfoFactoryInterface();
+this.basicGeographicMapGraph= new BasicGeographicMapGraph(pathFindingInfo!.getPathFindingNodeCostInfoFactoryInterface();
 
                          as PathFindingNodeCostInfoFactory);
     

@@ -51,7 +51,7 @@ var commandListener = commandListener
 var title = title
 var backgrounBasicColor = backgrounBasicColor
 var foregroundBasicColor = foregroundBasicColor
-FORM= SaveGameForm(commandListener, title, backgrounBasicColor, foregroundBasicColor);
+FORM= new SaveGameForm(commandListener, title, backgrounBasicColor, foregroundBasicColor);
     
 
 
@@ -92,7 +92,7 @@ logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
         
 ;
     
-this.append(TextField("Name: ", timeString, 30, TextField.ANY));
+this.append(new TextField("Name: ", timeString, 30, TextField.ANY));
     
 this.initCommands(commandListener);
     

@@ -80,7 +80,7 @@ ForcedLogUtil.log(CommonStrings.getInstance()!.NOT_IMPLEMENTED, this);
 
     public onGameFeatureChange(gameFeatureEvent: GameFeatureEvent){
 var gameFeatureEvent = gameFeatureEvent
-logUtil!.put(StringMaker().
+logUtil!.put(new StringMaker().
                             append(gameFeatureUtil!.GAME_FEATURE_CHANGED)!.append(gameFeatureEvent!.getWhatChanged())!.toString(), this, gameFeatureUtil!.ON_GAME_FEATURE_CHANGE);
     
 list.add(gameFeatureEvent!.getGameOption());

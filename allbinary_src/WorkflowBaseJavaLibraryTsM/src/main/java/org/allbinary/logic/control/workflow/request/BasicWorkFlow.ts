@@ -125,7 +125,7 @@ var pageContext = pageContext
 this.storeName= weblisketSession!.getStoreName();
     
 
-    var requestHashMap: HashMap<any, any> = RequestParams(pageContext).
+    var requestHashMap: HashMap<any, any> = new RequestParams(pageContext).
                             toHashMap()!;
         
         
@@ -214,7 +214,7 @@ values.add(DomDocumentHelper.toString(this.workFlowDoc));
 ;
     
 
-    var time: string = new calendar.getTimeInMillis() as Long.
+    var time: string = calendar.getTimeInMillis() as Long.
                             toString();
         
         
@@ -255,7 +255,7 @@ hashMap!.put(WorkFlowData.getInstance()!.DATA, DomDocumentHelper.toString(this.w
 ;
     
 
-    var time: string = new calendar.getTimeInMillis() as Long.
+    var time: string = calendar.getTimeInMillis() as Long.
                             toString();
         
         

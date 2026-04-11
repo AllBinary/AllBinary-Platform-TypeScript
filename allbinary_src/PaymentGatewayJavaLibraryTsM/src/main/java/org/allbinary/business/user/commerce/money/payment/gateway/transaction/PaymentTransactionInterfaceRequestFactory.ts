@@ -360,7 +360,7 @@ payment.setTransactionType(transactionType);
 payment.setTenderType(tenderType);
     
 
-    var orderReview: OrderHistory = new OrderHistory(Basket());
+    var orderReview: OrderHistory = new OrderHistory(new Basket());
         
         
 ;
@@ -383,7 +383,7 @@ orderReview!.setUserName("testing");
                                  || orderId!.compareTo(StringUtil.getInstance()!.EMPTY_STRING) == 0)
                         
                                     {
-                                    orderId= OrderIdGenerator().
+                                    orderId= new OrderIdGenerator().
                             getNext();
     
 orderReview!.setId(orderId);
@@ -504,7 +504,7 @@ streetAddress!.setCode(zip);
         
 ;
     
-orderReview!.setTotal(Money(amount));
+orderReview!.setTotal(new Money(amount));
     
 orderReview!.setBillingAddress(streetAddress);
     

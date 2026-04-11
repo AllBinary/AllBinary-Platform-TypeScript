@@ -115,12 +115,12 @@ this.request= pageContext!.getRequest();
                                     }
                                 
                         else {
-                            this.storeFrontInterface= StoreFront();
+                            this.storeFrontInterface= new StoreFront();
     
 
                         }
                             
-this.weblisketSession= WeblisketSession(propertiesHashMap, pageContext);
+this.weblisketSession= new WeblisketSession(propertiesHashMap, pageContext);
     
 this.getFormData();
     

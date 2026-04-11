@@ -177,7 +177,7 @@ logUtil!.put(stringBuffer!.toString(), this, "TransformInfoObjectConfigComponent
         
 ;
     
-this.transformInfoInterface= TransformInfo(name, objectFileName, objectConfigFileName, templateFileName, dataFileName) as TransformInfoInterface;
+this.transformInfoInterface= new TransformInfo(name, objectFileName, objectConfigFileName, templateFileName, dataFileName) as TransformInfoInterface;
     
 
                                     }
@@ -208,7 +208,7 @@ logUtil!.put(stringBuffer!.toString(), this, "TransformInfoObjectConfigComponent
 
                                     }
                                 
-this.transformInfoInterface= TransformInfo(name) as TransformInfoInterface;
+this.transformInfoInterface= new TransformInfo(name) as TransformInfoInterface;
     
 
                         }
@@ -266,7 +266,7 @@ public constructor (name: string, mappedName: string){
             super();
             var name = name
 var mappedName = mappedName
-this.transformInfoInterface= TransformInfo(name);
+this.transformInfoInterface= new TransformInfo(name);
     
 this.mappedName= mappedName;
     

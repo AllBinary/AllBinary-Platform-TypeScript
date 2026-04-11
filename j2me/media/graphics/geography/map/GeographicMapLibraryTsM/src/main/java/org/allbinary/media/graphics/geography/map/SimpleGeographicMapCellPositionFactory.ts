@@ -41,7 +41,7 @@ export class SimpleGeographicMapCellPositionFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return GeographicMapCellPosition(i_column, i_row, columns, rows, width, height);
+                        return new GeographicMapCellPosition(i_column, i_row, columns, rows, width, height);
     
 }
 

@@ -72,7 +72,7 @@ export class CssPropertyValues
 public constructor (){
 
             super();
-            this.propertyValueVector= Vector();
+            this.propertyValueVector= new Vector();
     
 }
 
@@ -86,7 +86,7 @@ public constructor (node: Node){
         
 ;
     
-this.propertyValueVector= Vector();
+this.propertyValueVector= new Vector();
     
 
     var cssPropertyNodeVector: Vector = DomSearchHelper.getAllNodes(CssPropertyValueData.getInstance()!.NAME, node.getChildNodes())!;

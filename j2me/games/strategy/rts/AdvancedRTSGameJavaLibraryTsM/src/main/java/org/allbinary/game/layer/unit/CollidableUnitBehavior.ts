@@ -255,7 +255,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "visit", e);
 
 
 
-                            throw Error("Error")
+                            throw new Error("Error")
 }
 
 

@@ -108,7 +108,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "getStoreName()", e);
 
 
 
-                            throw Error(error)
+                            throw new Error(error)
 }
 
 }

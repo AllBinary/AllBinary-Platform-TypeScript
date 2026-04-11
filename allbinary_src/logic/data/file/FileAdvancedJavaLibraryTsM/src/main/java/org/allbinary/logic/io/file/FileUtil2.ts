@@ -84,7 +84,7 @@ private constructor (){
     
 
         try {
-            inputStream= AbFileInputStream(file);
+            inputStream= new AbFileInputStream(file);
     
 
                 //: 

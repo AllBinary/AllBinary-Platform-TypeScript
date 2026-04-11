@@ -54,7 +54,7 @@ var pageContext = pageContext
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return BasicGroupItemsHelper(hashMap, pageContext);
+                        return new BasicGroupItemsHelper(hashMap, pageContext);
     
 
                 //: 

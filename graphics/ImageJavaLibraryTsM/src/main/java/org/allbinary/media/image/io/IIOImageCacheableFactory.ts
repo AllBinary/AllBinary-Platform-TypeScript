@@ -42,7 +42,7 @@ var key = key
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return IIOImageCacheable(key as String);
+                        return new IIOImageCacheable(key as String);
     
 }
 

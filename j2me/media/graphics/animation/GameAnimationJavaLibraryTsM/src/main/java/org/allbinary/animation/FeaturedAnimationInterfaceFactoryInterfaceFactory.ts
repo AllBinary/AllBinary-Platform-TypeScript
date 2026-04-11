@@ -144,7 +144,7 @@ index < size; index++)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Rectangle(PointFactory.getInstance()!.getInstance(x, y), ((rectangle.getWidth() *scale) shr 1), ((rectangle.getHeight() *scale) shr 1));
+                        return new Rectangle(PointFactory.getInstance()!.getInstance(x, y), ((rectangle.getWidth() *scale) shr 1), ((rectangle.getHeight() *scale) shr 1));
     
 
                                     }
@@ -157,7 +157,7 @@ index < size; index++)
 
 
 
-                            throw Error(StringMaker().
+                            throw new Error(new StringMaker().
                             append("No rectangle available for current feature selection or Resource: ")!.append(resource)!.toString())
 }
 
@@ -370,7 +370,7 @@ stringBuffer!.append(RESOURCES_LABEL);
 
 
 
-                            throw Error(stringBuffer!.toString())
+                            throw new Error(stringBuffer!.toString())
 
                                     }
                                 
@@ -410,7 +410,7 @@ stringBuffer!.delete(0, stringBuffer!.length());
 
 
 
-                            throw Error(stringBuffer!.append("No feature resource type available for Resource: ")!.append(resource)!.append(" Resource Factories Available: ")!.append(result)!.toString())
+                            throw new Error(stringBuffer!.append("No feature resource type available for Resource: ")!.append(resource)!.append(" Resource Factories Available: ")!.append(result)!.toString())
 
                         }
                             

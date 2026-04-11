@@ -160,7 +160,7 @@ name= stringMaker!.append(TEAM)!.appendint(size)!.toString();
 
                         }
                             
-list.add(Group(name, (size +3).toShort()));
+list.add(new Group(name, (size +3).toShort()));
     
 size++;
     

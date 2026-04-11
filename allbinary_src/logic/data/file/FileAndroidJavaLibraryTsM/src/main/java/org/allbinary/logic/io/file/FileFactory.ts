@@ -107,7 +107,7 @@ var filePath = filePath
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return AbFile(filePath, false);
+                        return new AbFile(filePath, false);
     
 }
 
@@ -121,7 +121,7 @@ var childFilePath = childFilePath
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return AbFile(file, childFilePath);
+                        return new AbFile(file, childFilePath);
     
 }
 

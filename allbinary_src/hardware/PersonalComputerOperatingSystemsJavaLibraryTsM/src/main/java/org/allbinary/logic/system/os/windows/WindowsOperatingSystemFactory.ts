@@ -94,7 +94,7 @@ private constructor (){
                         if(osName!.compareTo(operatingSystems!.WINDOWS_NT) == 0)
                         
                                     {
-                                    operatingSystemInterface= WindowsOS();
+                                    operatingSystemInterface= new WindowsOS();
     
 
                                     }
@@ -103,7 +103,7 @@ private constructor (){
                         if(osName!.compareTo(operatingSystems!.WINDOWS_10) == 0)
                         
                                     {
-                                    operatingSystemInterface= WindowsOS();
+                                    operatingSystemInterface= new WindowsOS();
     
 
                                     }
@@ -112,7 +112,7 @@ private constructor (){
                         if(osName!.compareTo(operatingSystems!.WINDOWS_11) == 0)
                         
                                     {
-                                    operatingSystemInterface= WindowsOS();
+                                    operatingSystemInterface= new WindowsOS();
     
 
                                     }
@@ -121,7 +121,7 @@ private constructor (){
                         if(osName!.compareTo(operatingSystems!.WINDOWS2000) == 0)
                         
                                     {
-                                    operatingSystemInterface= WindowsOS();
+                                    operatingSystemInterface= new WindowsOS();
     
 
                                     }
@@ -130,7 +130,7 @@ private constructor (){
                         if(osName!.compareTo(operatingSystems!.WINDOWS_XP) == 0)
                         
                                     {
-                                    operatingSystemInterface= WindowsOS();
+                                    operatingSystemInterface= new WindowsOS();
     
 
                                     }
@@ -139,7 +139,7 @@ private constructor (){
                         if(osName!.compareTo(operatingSystems!.WINDOWS_VISTA) == 0)
                         
                                     {
-                                    operatingSystemInterface= WindowsOS();
+                                    operatingSystemInterface= new WindowsOS();
     
 
                                     }
@@ -149,7 +149,7 @@ private constructor (){
                         if(operatingSystems!.isUnknownSpecificOSAllowed())
                         
                                     {
-                                    operatingSystemInterface= WindowsOS();
+                                    operatingSystemInterface= new WindowsOS();
     
 
                                     }
@@ -158,7 +158,7 @@ private constructor (){
                             
 
 
-                            throw Error("Specific Windows OS Not Supported: " +osName)
+                            throw new Error("Specific Windows OS Not Supported: " +osName)
 
                         }
                             

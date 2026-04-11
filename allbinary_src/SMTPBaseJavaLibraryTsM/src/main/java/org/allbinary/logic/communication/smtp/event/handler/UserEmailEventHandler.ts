@@ -50,7 +50,7 @@ export class UserEmailEventHandler
 public constructor (){
 
             super();
-            this.emailVector= Vector();
+            this.emailVector= new Vector();
     
 }
 

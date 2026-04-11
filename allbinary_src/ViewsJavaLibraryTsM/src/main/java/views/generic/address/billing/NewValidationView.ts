@@ -51,7 +51,7 @@ public constructor (transformInfoInterface: TransformInfoInterface)
 
 
     public isValid(): Boolean{
-this.streetAddress= StreetAddress();
+this.streetAddress= new StreetAddress();
     
 
 

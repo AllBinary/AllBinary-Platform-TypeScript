@@ -102,7 +102,7 @@ public constructor (){
         
 index >= 0; index--)
         {
-listOfList[index]= BasicArrayList();
+listOfList[index]= new BasicArrayList();
     
 }
 
@@ -116,7 +116,7 @@ listOfList[index]= BasicArrayList();
         
 index >= 0; index--)
         {
-availableListOfList[index]= BasicArrayList();
+availableListOfList[index]= new BasicArrayList();
     
 }
 
@@ -172,7 +172,7 @@ availableListOfList[index]!.addAll(listOfList[index]!);
     
 }
 
-logUtil!.put(StringMaker().
+logUtil!.put(new StringMaker().
                             append("ImageCache: ")!.append(this.toString())!.toString(), this, "releaseAll");
     
 }
@@ -297,7 +297,7 @@ index < size; index++)
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -308,7 +308,7 @@ index < size; index++)
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 

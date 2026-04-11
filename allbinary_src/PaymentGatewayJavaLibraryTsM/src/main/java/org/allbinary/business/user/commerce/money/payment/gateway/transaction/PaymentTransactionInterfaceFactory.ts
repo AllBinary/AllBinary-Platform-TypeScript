@@ -110,7 +110,7 @@ var orderReview = orderReview
 
 
 
-                            throw Error("Failed to create PaymentTransactionInterface: " +"GatewayName is: " +gatewayName)
+                            throw new Error("Failed to create PaymentTransactionInterface: " +"GatewayName is: " +gatewayName)
 
                 //: 
 } catch(e) 

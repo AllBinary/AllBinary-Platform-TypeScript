@@ -87,7 +87,7 @@ index < size; index++)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return ScreenCaptureImagesWorker();
+                        return new ScreenCaptureImagesWorker();
     
 
                                     }
@@ -100,7 +100,7 @@ index < size; index++)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return SavedCaptureImagesWorker(genericProfileDataWorkerType as SavedCaptureGenericProfileDataWorkerType);
+                        return new SavedCaptureImagesWorker(genericProfileDataWorkerType as SavedCaptureGenericProfileDataWorkerType);
     
 
                                     }
@@ -110,7 +110,7 @@ index < size; index++)
 
 
 
-                            throw Error("No CaptureWorkerInterface specified in GenericProfile")
+                            throw new Error("No CaptureWorkerInterface specified in GenericProfile")
 }
 
 private constructor (){

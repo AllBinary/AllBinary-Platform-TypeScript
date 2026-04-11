@@ -61,7 +61,7 @@ export class EmailsNotUsed
 public constructor (){
 
             super();
-            this.emailInfoVector= Vector();
+            this.emailInfoVector= new Vector();
     
 }
 

@@ -47,7 +47,7 @@ export class MotionGestureReceiveInterfaceFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return NullCompleteMotionGestureReceiver();
+                        return new NullCompleteMotionGestureReceiver();
     
 
                                     }
@@ -57,7 +57,7 @@ export class MotionGestureReceiveInterfaceFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return ResolveCompleteMotionGestureListener();
+                        return new ResolveCompleteMotionGestureListener();
     
 
                         }

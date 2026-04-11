@@ -108,7 +108,7 @@ index < size; index++)
 
 
 
-                            throw Error(StringMaker().
+                            throw new Error(new StringMaker().
                             append("numberAsChar was not in array: ")!.appendchar(numberAsChar)!.toString())
 }
 

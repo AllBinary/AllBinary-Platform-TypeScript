@@ -117,7 +117,7 @@ export class UserEntity extends AbSqlBean
         
 public constructor ()                        
 
-                            : super(UserDbInitInfo()){
+                            : super(new UserDbInitInfo()){
 
             super();
             
@@ -230,7 +230,7 @@ i < size; i++)
                         if(userHashMap != 
                                     null
                                 )
-                        usersVector!.add(User(userHashMap));
+                        usersVector!.add(new User(userHashMap));
 
                         
 }
@@ -310,7 +310,7 @@ index < size; index++)
                         if(userHashMap != 
                                     null
                                 )
-                        usersVector!.add(User(userHashMap));
+                        usersVector!.add(new User(userHashMap));
 
                         
 }
@@ -376,7 +376,7 @@ index < size; index++)
                         if(userHashMap != 
                                     null
                                 )
-                        usersVector!.add(User(userHashMap));
+                        usersVector!.add(new User(userHashMap));
 
                         
 }
@@ -499,7 +499,7 @@ var password = password
                         if(encryption != 
                                     null
                                  && encryption.compareTo(this.stringUtil!.EMPTY_STRING) != 0)
-                        isUserNameAndPasswordCorrect= result.compareTo(SuperCrypt(Integer(encryption).
+                        isUserNameAndPasswordCorrect= result.compareTo(new SuperCrypt(new Integer(encryption).
                             toInt()).
                             encrypt(password))
                         else {
@@ -578,7 +578,7 @@ stringBuffer!.append(userName);
     
 stringBuffer!.append(INVALID_PASSWORD_LABEL);
     
-stringBuffer!.append(SuperCrypt(Integer(encryption).
+stringBuffer!.append(new SuperCrypt(new Integer(encryption).
                             toInt()).
                             encrypt(password));
     

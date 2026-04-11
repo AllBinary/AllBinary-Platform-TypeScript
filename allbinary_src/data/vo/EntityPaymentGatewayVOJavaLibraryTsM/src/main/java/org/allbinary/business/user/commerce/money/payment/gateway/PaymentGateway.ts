@@ -1298,7 +1298,7 @@ updateVector!.add(this.special9);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return PaymentGatewayPrimaryKey(this.getStoreName(), this.getName()) as Object;
+                        return new PaymentGatewayPrimaryKey(this.getStoreName(), this.getName()) as Object;
     
 }
 

@@ -51,7 +51,7 @@ this.name= name;
     
 this.setImageComparisonResult(imageComparisonResult);
     
-this.setVector(Vector());
+this.setVector(new Vector());
     
 }
 

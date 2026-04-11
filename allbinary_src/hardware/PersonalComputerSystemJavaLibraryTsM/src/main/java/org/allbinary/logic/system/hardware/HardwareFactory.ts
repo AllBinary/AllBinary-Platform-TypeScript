@@ -56,7 +56,7 @@ var os = os
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return LinuxHardware() as HardwareInterface;
+                        return new LinuxHardware() as HardwareInterface;
     
 
                                     }
@@ -69,7 +69,7 @@ var os = os
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return WindowsHardware() as HardwareInterface;
+                        return new WindowsHardware() as HardwareInterface;
     
 
                                     }
@@ -77,7 +77,7 @@ var os = os
 
 
 
-                            throw Error("No Hardware Imp for: " +os.getName())
+                            throw new Error("No Hardware Imp for: " +os.getName())
 
                 //: 
 } catch(e) 

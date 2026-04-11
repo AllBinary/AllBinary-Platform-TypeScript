@@ -226,7 +226,7 @@ this.touchButtonsBuilderFactory= touchButtonsBuilderFactory;
         
 ;
     
-this.notYoursGameNotificationEvent= GameNotificationEvent(this, RTSGameStrings.getInstance()!.NOT_YOURS, SmallIntegerSingletonFactory.getInstance()!.getInstance(2), basicColorFactory!.PINK, BooleanFactory.getInstance()!.FALSE);
+this.notYoursGameNotificationEvent= new GameNotificationEvent(this, RTSGameStrings.getInstance()!.NOT_YOURS, SmallIntegerSingletonFactory.getInstance()!.getInstance(2), basicColorFactory!.PINK, BooleanFactory.getInstance()!.FALSE);
     
 BasicMotionGesturesHandler.getInstance()!.addListener(this);
     
@@ -515,7 +515,7 @@ logUtil!.put(stringBuffer!.toString(), this, METHOD);
                         if(rectangleCollisionUtil!.isInside(rectX1, rectY1, rectX2, rectY2, rtsLayer!.getViewPosition()!.getX() +rtsLayer!.getHalfWidth(), rtsLayer!.getViewPosition()!.getY() +rtsLayer!.getHalfHeight()))
                         
                                     {
-                                    logUtil!.put(StringMaker().
+                                    logUtil!.put(new StringMaker().
                             append(ADDING)!.append(rtsLayer!.getName())!.toString(), this, METHOD);
     
 rtsLayer!.select();
@@ -681,7 +681,7 @@ getMotionGestureInputList()!.clear();
         
 ;
     
-logUtil!.put(StringMaker().
+logUtil!.put(new StringMaker().
                             append(CommonLabels.getInstance()!.START)!.append(StringUtil.getInstance()!.toString(selectedRtsFormInput))!.toString(), this, "setSelectedRtsFormInput");
     
 super.setSelectedRtsFormInput(selectedRtsFormInput);
@@ -787,13 +787,13 @@ this.updateForm(rtsLayer);
                         if(rtsLayer!.isSelfUpgradeable())
                         
                                     {
-                                    gameCanvas!.updateCurrentTouchInputFactory(RTSTouchButtonsBuilder());
+                                    gameCanvas!.updateCurrentTouchInputFactory(new RTSTouchButtonsBuilder());
     
 
                                     }
                                 
                         else {
-                            gameCanvas!.updateCurrentTouchInputFactory(NoBuildingSelectedTouchButtonsBuilder());
+                            gameCanvas!.updateCurrentTouchInputFactory(new NoBuildingSelectedTouchButtonsBuilder());
     
 
                         }
@@ -840,7 +840,7 @@ this.getSelectedBuildingPlayerGameInput()!.setSelectedRTSLayer(CollidableDestroy
                         if(gameCanvas!.getGameState() == GameState.PLAYING_GAME_STATE)
                         
                                     {
-                                    gameCanvas!.updateCurrentTouchInputFactory(NoBuildingSelectedTouchButtonsBuilder());
+                                    gameCanvas!.updateCurrentTouchInputFactory(new NoBuildingSelectedTouchButtonsBuilder());
     
 
                                     }

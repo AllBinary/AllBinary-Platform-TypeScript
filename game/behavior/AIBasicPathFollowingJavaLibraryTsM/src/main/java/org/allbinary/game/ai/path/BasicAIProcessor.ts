@@ -62,7 +62,7 @@ export class BasicAIProcessor
     private basicAI: BasicDirectionAIHelper
 public constructor (name: string, geographicMapCellHistory: GeographicMapCellHistory, chosenPathList: BasicArrayList, angleInfo: AngleInfo, seed: number)                        
 
-                            : this(name, geographicMapCellHistory, GeographicMapCellPathHistoryInfo(), chosenPathList, angleInfo, seed){
+                            : this(name, geographicMapCellHistory, new GeographicMapCellPathHistoryInfo(), chosenPathList, angleInfo, seed){
 
             super();
                 //var name = name
@@ -97,7 +97,7 @@ this.setName(name);
     
 this.setNewPath(geographicMapCellHistory, chosenPathList);
     
-this.basicAI= BasicDirectionAIHelper(this.getName(), angleInfo);
+this.basicAI= new BasicDirectionAIHelper(this.getName(), angleInfo);
     
 }
 
@@ -115,7 +115,7 @@ this.init();
 
 
     public init(){
-this.geographicMapCellPathHistoryInfo= GeographicMapCellPathHistoryInfo();
+this.geographicMapCellPathHistoryInfo= new GeographicMapCellPathHistoryInfo();
     
 this.geographicMapCellPathHistoryInfo!.setPreviousOnPathGeographicMapCellPosition(geographicMapCellPositionBasicArrayList!.get(geographicMapCellPositionBasicArrayList!.size() -1);
 

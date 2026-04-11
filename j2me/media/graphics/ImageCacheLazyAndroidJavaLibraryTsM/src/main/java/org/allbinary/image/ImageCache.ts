@@ -181,7 +181,7 @@ image= this.createImage(key, inputStream);
             {
 logUtil!.put("Exception: Trying Again After GC", this, commonStrings!.GET, e);
     
-logUtil!.put(StringMaker().
+logUtil!.put(new StringMaker().
                             append("InputStream: ")!.append(inputStream!.toString())!.toString(), this, commonStrings!.GET);
     
 System.gc();
@@ -256,13 +256,13 @@ index < size; index++)
                                 
 }
 
-logUtil!.put(StringMaker().
+logUtil!.put(new StringMaker().
                             append("unable to find key: ")!.append(StringUtil.getInstance()!.toString(key))!.toString(), this, commonStrings!.RUN);
     
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -286,7 +286,7 @@ logUtil!.put(StringMaker().
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 

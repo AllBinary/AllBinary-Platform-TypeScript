@@ -37,7 +37,7 @@ protected constructor (resource: string)
                 //@Throws(Error::class)
             
     public init(){
-this.setPlayerP(PlayerComposite(AllBinaryMediaManager.createPlayer(this.getResource())));
+this.setPlayerP(new PlayerComposite(AllBinaryMediaManager.createPlayer(this.getResource())));
     
 }
 

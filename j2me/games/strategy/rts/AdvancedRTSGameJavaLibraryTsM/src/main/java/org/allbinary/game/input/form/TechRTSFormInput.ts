@@ -115,7 +115,7 @@ public constructor (groupInterface: Group[])
         
 ;
     
-this.noMoneyGameNotificationEvent= GameNotificationEvent(this, RTSGameStrings.getInstance()!.NO_MONEY, SmallIntegerSingletonFactory.getInstance()!.getInstance(2), basicColorFactory!.WHITE, BooleanFactory.getInstance()!.FALSE);
+this.noMoneyGameNotificationEvent= new GameNotificationEvent(this, RTSGameStrings.getInstance()!.NO_MONEY, SmallIntegerSingletonFactory.getInstance()!.getInstance(2), basicColorFactory!.WHITE, BooleanFactory.getInstance()!.FALSE);
     
 }
 

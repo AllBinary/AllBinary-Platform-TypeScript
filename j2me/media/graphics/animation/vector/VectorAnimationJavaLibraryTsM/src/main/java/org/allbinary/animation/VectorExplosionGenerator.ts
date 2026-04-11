@@ -351,7 +351,7 @@ var points = points
                                     
 
 
-                            throw Error("Not Points Provided")
+                            throw new Error("Not Points Provided")
 
                                     }
                                 

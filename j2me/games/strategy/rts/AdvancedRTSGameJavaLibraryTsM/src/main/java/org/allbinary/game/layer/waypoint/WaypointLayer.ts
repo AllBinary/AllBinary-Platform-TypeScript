@@ -72,7 +72,7 @@ export class WaypointLayer extends AdvancedRTSGameLayer {
 
 protected constructor (remoteInfo: RemoteInfo, parentLayer: PathFindingLayerInterface, groupInterface: Group[], rootName: string, name: string, animationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface: ProceduralAnimationInterfaceFactoryInterface, rectangle: Rectangle, x: number, y: number)                        
 
-                            : super(remoteInfo, parentLayer, groupInterface, rootName, name, Health(1000), NullRTSFormInputFactory.getInstance(), animationInterfaceFactoryInterface, animationInterfaceFactoryInterface, animationInterfaceFactoryInterface, animationInterfaceFactoryInterface, animationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface, rectangle, x, y){
+                            : super(remoteInfo, parentLayer, groupInterface, rootName, name, new Health(1000), NullRTSFormInputFactory.getInstance(), animationInterfaceFactoryInterface, animationInterfaceFactoryInterface, animationInterfaceFactoryInterface, animationInterfaceFactoryInterface, animationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface, rectangle, x, y){
 
             super();
                 //var remoteInfo = remoteInfo
@@ -89,9 +89,9 @@ protected constructor (remoteInfo: RemoteInfo, parentLayer: PathFindingLayerInte
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setCollidableInferface(CollidableWaypointBehavior(this, true));
+this.setCollidableInferface(new CollidableWaypointBehavior(this, true));
     
-this.getWaypointBehavior()!.setWaypoint(Waypoint(this, AttackSound.getInstance()));
+this.getWaypointBehavior()!.setWaypoint(new Waypoint(this, AttackSound.getInstance()));
     
 this.setAnimationInterface(this.indexedButShouldBeRotationAnimationInterface);
     

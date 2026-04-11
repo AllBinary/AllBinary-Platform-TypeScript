@@ -58,7 +58,7 @@ public constructor (){
 
         try {
             
-    var anyType: any = PaymentProcessHelperFactory().
+    var anyType: any = new PaymentProcessHelperFactory().
                             getInstance(this.getPropertiesHashMap(), this.pageContext)!;
         
         
@@ -161,7 +161,7 @@ public constructor (){
                             
 
 
-                            throw Error("No Such Payment Processing Command")
+                            throw new Error("No Such Payment Processing Command")
 
                         }
                             

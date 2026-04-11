@@ -50,7 +50,7 @@ export class AllBinaryVibration extends AllBinaryVibrationME {
                                     }
                                 
                         else {
-                            VIBRATION= AllBinaryVibration();
+                            VIBRATION= new AllBinaryVibration();
     
 
                         }

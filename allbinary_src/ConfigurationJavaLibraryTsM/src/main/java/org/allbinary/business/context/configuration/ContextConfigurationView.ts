@@ -60,7 +60,7 @@ public constructor (node: Node){
         
 ;
     
-this.contextConfigurationInterface= ContextConfiguration();
+this.contextConfigurationInterface= new ContextConfiguration();
     
 
     var emailConfigurationNode: Node = DomSearchHelper.getNode(EmailServerConfigurationData.NAME, childNodeList)!;

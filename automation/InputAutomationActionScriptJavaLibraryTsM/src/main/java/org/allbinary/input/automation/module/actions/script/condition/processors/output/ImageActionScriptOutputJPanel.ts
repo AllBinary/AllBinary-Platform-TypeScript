@@ -254,31 +254,31 @@ this.capturedImageActionJDialog= capturedImageActionJDialog;
 
 
     initComponents(){
-capturedImageActionJDialog= javax.swing.JDialog();
+capturedImageActionJDialog= new javax.swing.JDialog();
     
-titleJLabel= javax.swing.JLabel();
+titleJLabel= new javax.swing.JLabel();
     
-okJButton= javax.swing.JButton();
+okJButton= new javax.swing.JButton();
     
-saveJCheckBox= javax.swing.JCheckBox();
+saveJCheckBox= new javax.swing.JCheckBox();
     
-displayJCheckBox= javax.swing.JCheckBox();
+displayJCheckBox= new javax.swing.JCheckBox();
     
-jScrollPane1= javax.swing.JScrollPane();
+jScrollPane1= new javax.swing.JScrollPane();
     
-itemTypesJList= javax.swing.JList();
+itemTypesJList= new javax.swing.JList();
     
-capturedImageActionJButton= javax.swing.JButton();
+capturedImageActionJButton= new javax.swing.JButton();
     
-jLabel1= javax.swing.JLabel();
+jLabel1= new javax.swing.JLabel();
     
-capturedImageActionJDialog!.setMinimumSize(java.awt.Dimension(250, 250));
+capturedImageActionJDialog!.setMinimumSize(new java.awt.Dimension(250, 250));
     
 titleJLabel!.setText("Image Output Options");
     
 okJButton!.setText("OK");
     
-okJButton!.addActionListener(object: java.awt.event.ActionListener()
+okJButton!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -294,15 +294,15 @@ saveJCheckBox!.setText("Save To File");
     
 saveJCheckBox!.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
     
-saveJCheckBox!.setMargin(java.awt.Insets(0, 0, 0, 0));
+saveJCheckBox!.setMargin(new java.awt.Insets(0, 0, 0, 0));
     
 displayJCheckBox!.setText("Display");
     
 displayJCheckBox!.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
     
-displayJCheckBox!.setMargin(java.awt.Insets(0, 0, 0, 0));
+displayJCheckBox!.setMargin(new java.awt.Insets(0, 0, 0, 0));
     
-displayJCheckBox!.addActionListener(object: java.awt.event.ActionListener()
+displayJCheckBox!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -314,7 +314,7 @@ displayJCheckBoxActionPerformed(evt);
                                 }
                             );
     
-itemTypesJList!.setModel(object: javax.swing.AbstractListModel()
+itemTypesJList!.setModel(new object: javax.swing.AbstractListModel()
                                 {
                                 
     var strings: string[] = 
@@ -360,11 +360,11 @@ capturedImageActionJDialogLayout!.setHorizontalGroup(capturedImageActionJDialogL
     
 capturedImageActionJDialogLayout!.setVerticalGroup(capturedImageActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(capturedImageActionJDialogLayout!.createSequentialGroup()!.addComponent(titleJLabel)!.addGap(5, 5, 5)!.addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 105, Short.MAX_VALUE)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(saveJCheckBox)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(displayJCheckBox)!.addGap(9, 9, 9)!.addComponent(okJButton)!.addContainerGap()));
     
-setMinimumSize(java.awt.Dimension(100, 0));
+setMinimumSize(new java.awt.Dimension(100, 0));
     
 capturedImageActionJButton!.setText("Edit");
     
-capturedImageActionJButton!.addActionListener(object: java.awt.event.ActionListener()
+capturedImageActionJButton!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){

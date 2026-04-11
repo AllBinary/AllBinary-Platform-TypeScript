@@ -57,7 +57,7 @@ var pageContext = pageContext
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return AuthenticationHelper(hashMap, pageContext);
+                        return new AuthenticationHelper(hashMap, pageContext);
     
 
                 //: 
@@ -94,7 +94,7 @@ var httpServletRequest = httpServletRequest
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return AuthenticationHelper(hashMap, httpServletRequest);
+                        return new AuthenticationHelper(hashMap, httpServletRequest);
     
 
                 //: 

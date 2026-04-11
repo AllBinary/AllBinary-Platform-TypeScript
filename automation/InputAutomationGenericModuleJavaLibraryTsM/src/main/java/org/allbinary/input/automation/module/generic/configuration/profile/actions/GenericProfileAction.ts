@@ -87,11 +87,11 @@ var node = node
                             
 
 
-                            throw Error("Profile Action Name Node Null")
+                            throw new Error("Profile Action Name Node Null")
 
                         }
                             
-this.setGenericProfileActionScript(GenericProfileActionScript(this.genericProfileActionJPanel, node));
+this.setGenericProfileActionScript(new GenericProfileActionScript(this.genericProfileActionJPanel, node));
     
 }
 
@@ -101,7 +101,7 @@ public constructor (name: string){
             var name = name
 this.name= name;
     
-this.setGenericProfileActionScript(GenericProfileActionScript(this.genericProfileActionJPanel));
+this.setGenericProfileActionScript(new GenericProfileActionScript(this.genericProfileActionJPanel));
     
 }
 

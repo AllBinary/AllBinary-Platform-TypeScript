@@ -127,7 +127,7 @@ var filePath = filePath
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.OS))
                         
                                     {
-                                    logUtil!.put(StringMaker().
+                                    logUtil!.put(new StringMaker().
                             append("Cpu Data: ")!.append(this.toString())!.toString(), this, this.commonStrings!.CONSTRUCTOR, e);
     
 
@@ -155,9 +155,9 @@ var filePath = filePath
         
 ;
     
-lineNumberReader= LineNumberReader(fileReader);
+lineNumberReader= new LineNumberReader(fileReader);
     
-cpuHashMap= HashMap<any, any>();
+cpuHashMap= new HashMap<any, any>();
     
 
                         if(lineNumberReader == 
@@ -166,7 +166,7 @@ cpuHashMap= HashMap<any, any>();
                         
                                     {
                                     
-    var fileVector: BasicArrayList = SubDirectory.getInstance()!.search(filePath, AbFile(FilePathData.getInstance()!.SEPARATOR))!;
+    var fileVector: BasicArrayList = SubDirectory.getInstance()!.search(filePath, new AbFile(FilePathData.getInstance()!.SEPARATOR))!;
         
         
 ;
@@ -175,7 +175,7 @@ cpuHashMap= HashMap<any, any>();
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.OS))
                         
                                     {
-                                    logUtil!.put(StringMaker().
+                                    logUtil!.put(new StringMaker().
                             append("Cpu File Vector Size: ")!.appendint(fileVector!.size())!.toString(), this, this.commonStrings!.CONSTRUCTOR);
     
 
@@ -195,7 +195,7 @@ cpuHashMap= HashMap<any, any>();
         
 ;
     
-lineNumberReader= LineNumberReader(FileReader(file.getPath()));
+lineNumberReader= new LineNumberReader(new FileReader(file.getPath()));
     
 
                                     }

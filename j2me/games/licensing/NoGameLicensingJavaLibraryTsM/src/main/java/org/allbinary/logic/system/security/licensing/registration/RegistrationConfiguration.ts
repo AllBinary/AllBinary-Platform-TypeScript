@@ -71,7 +71,7 @@ private constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return StringMaker().
+                        return new StringMaker().
                             append("Registration Code: ")!.append(this.getRegistrationCode())!.toString();
 
                         ;

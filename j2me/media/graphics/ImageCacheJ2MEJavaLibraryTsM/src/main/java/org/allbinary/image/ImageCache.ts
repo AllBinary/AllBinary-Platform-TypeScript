@@ -113,13 +113,13 @@ index < size; index++)
                                 
 }
 
-logUtil!.put(StringMaker().
+logUtil!.put(new StringMaker().
                             append("unable to find key: ")!.append(StringUtil.getInstance()!.toString(key))!.toString(), this, commonStrings!.RUN);
     
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -237,7 +237,7 @@ listOfList[foundIndex]!.add(image);
                                     
 
 
-                            throw RuntimeException(StringMaker().
+                            throw new RuntimeException(new StringMaker().
                             append("Image resource is not available for key: ")!.append(StringUtil.getInstance()!.toString(key))!.toString())
 
                                     }
@@ -252,7 +252,7 @@ listOfList[foundIndex]!.add(image);
             {
 logUtil!.put("Exception: Trying Again After GC", this, commonStrings!.GET, e);
     
-logUtil!.put(StringMaker().
+logUtil!.put(new StringMaker().
                             append("InputStream: ")!.append(StringUtil.getInstance()!.toString(inputStream))!.toString(), this, commonStrings!.GET);
     
 System.gc();

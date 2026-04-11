@@ -231,7 +231,7 @@ canvasSurface!.drawImage(originalPlayNImage, 0, 0, image.getWidth(), image.getHe
                             
 
 
-                            throw Error("Not Mutable")
+                            throw new Error("Not Mutable")
 
                         }
                             

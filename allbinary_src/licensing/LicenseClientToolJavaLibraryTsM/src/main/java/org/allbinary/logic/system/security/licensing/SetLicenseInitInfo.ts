@@ -54,7 +54,7 @@ export class SetLicenseInitInfo
          {
         
 
-    private stdinput: BufferedReader = new BufferedReader(InputStreamReader(System.in));
+    private stdinput: BufferedReader = new BufferedReader(new InputStreamReader(System.in));
         
         
 
@@ -68,7 +68,7 @@ var args = args
         
 ;
     
-initInfo!.createNewLicenseInitInfo(BasicArrayList());
+initInfo!.createNewLicenseInitInfo(new BasicArrayList());
     
 }
 
@@ -128,7 +128,7 @@ vector.add(options[index]!);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return LicenseInitInfo();
+                        return new LicenseInitInfo();
     
 
                         }
@@ -149,7 +149,7 @@ var licenceServerVector = licenceServerVector
                                     
 
 
-                            throw Error("null Vector Passed - Just Make Empty if you want")
+                            throw new Error("null Vector Passed - Just Make Empty if you want")
 
                                     }
                                 

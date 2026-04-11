@@ -110,7 +110,7 @@ export class InputAutomationConfigurationFactory
 ;
     
 
-    var root: JAXBElement<InputAutomationConfiguration> = unmarshaller.unmarshal(StreamSource(FileInputStream(file)), InputAutomationConfiguration::class)!;
+    var root: JAXBElement<InputAutomationConfiguration> = unmarshaller.unmarshal(new StreamSource(new FileInputStream(file)), InputAutomationConfiguration::class)!;
         
         
 ;
@@ -161,7 +161,7 @@ logUtil!.put("LoadedConfiguration", INPUT_AUTOMATION_CONFIGURATION, commonString
                         else {
                             logUtil!.put("New Configuration", INPUT_AUTOMATION_CONFIGURATION, commonStrings!.INIT);
     
-inputAutomationConfiguration= InputAutomationConfiguration();
+inputAutomationConfiguration= new InputAutomationConfiguration();
     
 
                         }

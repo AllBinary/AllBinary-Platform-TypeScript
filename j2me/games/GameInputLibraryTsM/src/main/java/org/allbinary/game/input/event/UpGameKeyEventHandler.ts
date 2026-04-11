@@ -34,7 +34,7 @@ export class UpGameKeyEventHandler extends UpGameKeyEventHandlerBase {
 
     private static readonly instanceArray: UpGameKeyEventHandlerBase[] = 
                                                         [
-                                                            UpGameKeyEventHandlerBase(),UpGameKeyEventHandlerBase(),UpGameKeyEventHandlerBase(),UpGameKeyEventHandlerBase(),UpGameKeyEventHandlerBase(),UpGameKeyEventHandlerBase()
+                                                            new UpGameKeyEventHandlerBase(),new UpGameKeyEventHandlerBase(),new UpGameKeyEventHandlerBase(),new UpGameKeyEventHandlerBase(),new UpGameKeyEventHandlerBase(),new UpGameKeyEventHandlerBase()
                                                         ];
         
         

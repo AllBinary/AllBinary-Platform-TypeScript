@@ -119,7 +119,7 @@ nextPoints= points[frame]!;
     
 size2= nextPoints!.length;
     
-pointBasicArrayList= BasicArrayList(size2);
+pointBasicArrayList= new BasicArrayList(size2);
     
 
 

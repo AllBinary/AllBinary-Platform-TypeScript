@@ -111,7 +111,7 @@ ProgressCanvasFactory.getInstance()!.addPortion(50, "Media Manager");
     
 System.gc();
     
-Sounds(soundsFactoryInterface).
+new Sounds(soundsFactoryInterface).
                             init();
     
 logUtil!.put(commonString!.END, THIS, commonString!.INIT);
@@ -141,7 +141,7 @@ logUtil!.put(commonString!.START, THIS, "shutdown");
                         if(soundsFactoryInterface!.isInitialized())
                         
                                     {
-                                    Sounds(soundsFactoryInterface).
+                                    new Sounds(soundsFactoryInterface).
                             stopAll();
     
 
@@ -204,7 +204,7 @@ MediaPlayerUtil.getInstance()!.wait(androidMediaPlayerWrapper!.getMediaPlayer())
                             
 
 
-                            throw Error("Unknown Property Player: " +player.constructor.name.toString()!)
+                            throw new Error("Unknown Property Player: " +player.constructor.name.toString()!)
 
                         }
                             
@@ -216,7 +216,7 @@ MediaPlayerUtil.getInstance()!.wait(androidMediaPlayerWrapper!.getMediaPlayer())
                                 
 }
 
-Sounds(soundsFactoryInterface).
+new Sounds(soundsFactoryInterface).
                             closeAll();
     
 System.gc();
@@ -255,7 +255,7 @@ mostUsedTotal++;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return AndroidMediaPlayerWrapper(resource);
+                        return new AndroidMediaPlayerWrapper(resource);
     
 
                 //: 
@@ -295,7 +295,7 @@ var type = type
 
 
 
-                            throw MediaException("No Input Stream Player")
+                            throw new MediaException("No Input Stream Player")
 }
 
 
@@ -309,7 +309,7 @@ var volume = volume
 
 
 
-                            throw MediaException("No Tone Player")
+                            throw new MediaException("No Tone Player")
 }
 
 

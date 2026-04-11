@@ -126,7 +126,7 @@ osgiServiceInterface= vector.get(index);
                                     
 
 
-                            throw Error("Unable to process service: " +osgiServiceInterface)
+                            throw new Error("Unable to process service: " +osgiServiceInterface)
 
                                     }
                                 

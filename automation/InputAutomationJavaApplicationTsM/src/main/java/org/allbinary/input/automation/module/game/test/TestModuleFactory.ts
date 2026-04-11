@@ -44,7 +44,7 @@ export class TestModuleFactory extends AbstractInputAutomationFactory {
     private blankModuleConfigurationJPanel: BlankModuleConfigurationJPanel
 public constructor ()                        
 
-                            : super(NAME, BlankModuleConfigurationJPanel()){
+                            : super(NAME, new BlankModuleConfigurationJPanel()){
 
             super();
             

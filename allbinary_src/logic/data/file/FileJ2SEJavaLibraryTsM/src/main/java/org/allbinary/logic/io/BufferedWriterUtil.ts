@@ -100,7 +100,7 @@ this.write(abFile, data);
     //var abFile = abFile
     //var data = data
 
-    var fileOut: BufferedWriter = new BufferedWriter(FileWriter(AbFileNativeUtil.get(abFile)));
+    var fileOut: BufferedWriter = new BufferedWriter(new FileWriter(AbFileNativeUtil.get(abFile)));
         
         
 ;

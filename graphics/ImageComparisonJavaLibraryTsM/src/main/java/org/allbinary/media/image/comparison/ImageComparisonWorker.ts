@@ -81,7 +81,7 @@ public constructor (imageComparatorConstraintsInterface: ImageComparatorConstrai
                 //var imageComparatorConstraintsInterface = imageComparatorConstraintsInterface
 this.imageComparatorConstraintsInterface= imageComparatorConstraintsInterface;
     
-this.imageComparator= ImageComparator(imageComparatorConstraintsInterface);
+this.imageComparator= new ImageComparator(imageComparatorConstraintsInterface);
     
 }
 
@@ -187,9 +187,9 @@ capturedImageWorkerResultsEvent[1]= this.bufferedImageVector!.get(1);
     
 ImageComparisonResultCacheSingleton.getInstance()!.add(imageComparisonResultFrameCacheable);
     
-this.fireEvent(ImageComparisonResultsEvent(this, imageComparisonResult));
+this.fireEvent(new ImageComparisonResultsEvent(this, imageComparisonResult));
     
-logUtil!.put(StringMaker().
+logUtil!.put(new StringMaker().
                             append("Image Comparison Result: ")!.append(imageComparisonResult!.toString())!.append(" for frame: ")!.appendlong(frame)!.toString(), this, this.commonStrings!.RUN);
     
 
@@ -209,7 +209,7 @@ this.bufferedImageVector!.remove(0);
 index2++;
     
 
-    var message: string = StringMaker().
+    var message: string = new StringMaker().
                             append("Frame: ")!.appendint(index2)!.append(CommonLabels.getInstance()!.ELAPSED)!.appendlong(timeHelper!.getElapsed())!.toString()!;
         
         

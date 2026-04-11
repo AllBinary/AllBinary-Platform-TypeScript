@@ -61,7 +61,7 @@ export class NullRTSLayer extends NullPathFindingLayer
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -72,7 +72,7 @@ var layerManager = layerManager
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -80,7 +80,7 @@ var layerManager = layerManager
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -88,7 +88,7 @@ var layerManager = layerManager
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -96,7 +96,7 @@ var layerManager = layerManager
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -105,7 +105,7 @@ var currentScrollSelectionForm = currentScrollSelectionForm
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -113,7 +113,7 @@ var currentScrollSelectionForm = currentScrollSelectionForm
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -121,7 +121,7 @@ var currentScrollSelectionForm = currentScrollSelectionForm
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -130,7 +130,7 @@ var eventObject = eventObject
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -141,7 +141,7 @@ var destroyedEvent = destroyedEvent
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -152,7 +152,7 @@ var allBinaryLayerManager = allBinaryLayerManager
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -160,7 +160,7 @@ var allBinaryLayerManager = allBinaryLayerManager
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -181,7 +181,7 @@ var sound = sound
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -189,7 +189,7 @@ var sound = sound
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -197,7 +197,7 @@ var sound = sound
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 

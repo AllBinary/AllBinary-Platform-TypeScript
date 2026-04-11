@@ -58,7 +58,7 @@ var o = o
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 

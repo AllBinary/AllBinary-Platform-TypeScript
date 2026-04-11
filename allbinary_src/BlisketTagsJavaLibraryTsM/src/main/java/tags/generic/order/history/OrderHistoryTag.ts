@@ -70,7 +70,7 @@ this.status= value;
 
         try {
             
-    var anyType: any = OrderHistoryHelperFactory().
+    var anyType: any = new OrderHistoryHelperFactory().
                             getInstance(this.getPropertiesHashMap(), pageContext)!;
         
         
@@ -180,7 +180,7 @@ pageContext!.getOut()!.print(this.setOrderStatus());
                             
 
 
-                            throw Error("No Such View Command: " +this.getCommand())
+                            throw new Error("No Such View Command: " +this.getCommand())
 
                         }
                             
@@ -198,7 +198,7 @@ pageContext!.getOut()!.print(this.setOrderStatus());
 
 
 
-                            throw Error("Command Null")
+                            throw new Error("Command Null")
 
                 //: 
 } catch(e) 

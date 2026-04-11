@@ -127,7 +127,7 @@ var id = id
                         if(id > inputIntegerArray!.length)
                         
                                     {
-                                    logUtil!.put(StringMaker().
+                                    logUtil!.put(new StringMaker().
                             append("Warning id: ")!.appendint(id)!.toString(), this, commonStrings!.GET_INSTANCE);
     
 

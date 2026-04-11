@@ -63,11 +63,11 @@ export class FileLog
         
         
 
-    private static readonly extension: string = new .toCharArray();
+    private static readonly extension: string = .toCharArray();
         
         
 
-    private static readonly fileName: string = new .toCharArray();
+    private static readonly fileName: string = .toCharArray();
         
         
 
@@ -97,13 +97,13 @@ export class FileLog
     public static createLogFile(): boolean{
 
         try {
-            logFile= File(logPath, fileName);
+            logFile= new File(logPath, fileName);
     
 
                         if(!firstTime)
                         
                                     {
-                                    fileOut= BufferedWriter(FileWriter(logFile));
+                                    fileOut= new BufferedWriter(new FileWriter(logFile));
     
 
                                     }
@@ -119,7 +119,7 @@ export class FileLog
     
 raFile!.seek(raFile!.length());
     
-fileOut= BufferedWriter(FileWriter(raFile!.getFD()));
+fileOut= new BufferedWriter(new FileWriter(raFile!.getFD()));
     
 
                         }
@@ -157,7 +157,7 @@ System.out.println("Error Creating Log: " +e);
     static createLogFileBackup(): boolean{
 
         try {
-            logFileBak= File(logPath, StringBuilder().
+            logFileBak= new File(logPath, new StringBuilder().
                             append(backupFileName)!.append(CommonSeps.getInstance()!.PERIOD)!.append(backupIndex)!.toString());
     
 
@@ -165,25 +165,25 @@ System.out.println("Error Creating Log: " +e);
         {
 backupIndex++;
     
-logFileBak= File(logPath, StringBuilder().
+logFileBak= new File(logPath, new StringBuilder().
                             append(backupFileName)!.append(CommonSeps.getInstance()!.PERIOD)!.append(backupIndex)!.toString());
     
 }
 
 
-    var line: string = new .toCharArray();
+    var line: string = .toCharArray();
         
         
 ;
     
 
-    var tmpOut: BufferedWriter = new BufferedWriter(FileWriter(logFileBak));
+    var tmpOut: BufferedWriter = new BufferedWriter(new FileWriter(logFileBak));
         
         
 ;
     
 
-    var tmpIn: BufferedReader = new BufferedReader(FileReader(logFile));
+    var tmpIn: BufferedReader = new BufferedReader(new FileReader(logFile));
         
         
 ;
@@ -304,7 +304,7 @@ var exception = exception
                                     }
                                 
 
-    var className: string = new NULL_STRING.toCharArray();
+    var className: string = NULL_STRING.toCharArray();
         
         
 ;

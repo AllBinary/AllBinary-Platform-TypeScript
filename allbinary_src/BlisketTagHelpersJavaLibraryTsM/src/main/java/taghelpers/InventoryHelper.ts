@@ -147,7 +147,7 @@ this.request= pageContext!.getRequest();
         
 ;
     
-this.searchRequest= SearchRequest(storeFrontInterface, searchParams, xslFile, contentType, propertiesHashMap, pageContext);
+this.searchRequest= new SearchRequest(storeFrontInterface, searchParams, xslFile, contentType, propertiesHashMap, pageContext);
     
 
                                     }

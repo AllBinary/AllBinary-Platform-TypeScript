@@ -87,7 +87,7 @@ var document = document
 
 
 
-                            throw Error("validationInfo")
+                            throw new Error("validationInfo")
 }
 
 
@@ -119,7 +119,7 @@ var document = document
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return SelectExistingView(this.getTransformInfoInterface()).
+                        return new SelectExistingView(this.getTransformInfoInterface()).
                             view();
 
                         ;

@@ -57,9 +57,9 @@ export class StaticPagesTag extends TableTag {
 public constructor (){
 
             super();
-            this.setTagHelperFactory(StaticPagesHelperFactory());
+            this.setTagHelperFactory(new StaticPagesHelperFactory());
     
-this.setTagRequestHelperFactory(StaticPagesRequestHelperFactory());
+this.setTagRequestHelperFactory(new StaticPagesRequestHelperFactory());
     
 }
 
@@ -77,7 +77,7 @@ this.xslFile= value;
 
         try {
             
-    var anyType: any = StaticPagesRequestHelperFactory().
+    var anyType: any = new StaticPagesRequestHelperFactory().
                             getInstance(this.getPropertiesHashMap(), this.pageContext)!;
         
         
@@ -156,7 +156,7 @@ this.xslFile= value;
 
         try {
             
-    var anyType: any = StaticPagesRequestHelperFactory().
+    var anyType: any = new StaticPagesRequestHelperFactory().
                             getInstance(this.getPropertiesHashMap(), this.pageContext)!;
         
         

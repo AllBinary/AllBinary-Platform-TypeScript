@@ -156,13 +156,13 @@ stringBuffer!.append(sep);
 stringBuffer!.append(this.SHIPPINGMETHODSFILEPATHSTRING);
     
 
-    var abPath: AbPath = AbPath(stringBuffer!.toString(), this.SHIPPINGMETHODSFILENAME) as AbPath;
+    var abPath: AbPath = new AbPath(stringBuffer!.toString(), this.SHIPPINGMETHODSFILENAME) as AbPath;
         
         
 ;
     
 
-    var data: string = CryptFileReader(TransformInfoObjectConfigData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoObjectConfigData.getInstance()!.ENCRYPTED_EXTENSION).
+    var data: string = new CryptFileReader(TransformInfoObjectConfigData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoObjectConfigData.getInstance()!.ENCRYPTED_EXTENSION).
                             get(abPath)!;
         
         
@@ -170,7 +170,7 @@ stringBuffer!.append(this.SHIPPINGMETHODSFILEPATHSTRING);
     
 this.document= DomDocumentHelper.create(data);
     
-this.shippingVector= Vector();
+this.shippingVector= new Vector();
     
 
     var nodeList: NodeList = document.getElementsByTagName(ShippingMethodsData.NAME)!;
@@ -251,11 +251,11 @@ shippingVector!.add(shippingMethodInterface);
                         if(shippingVector!.length < 1)
                         
                                     {
-                                    this.defaultShippingMethodInterface= BasicWeightShippingModuleView();
+                                    this.defaultShippingMethodInterface= new BasicWeightShippingModuleView();
     
 shippingVector!.add(this.defaultShippingMethodInterface);
     
-shippingVector!.add(NoShippingModuleView());
+shippingVector!.add(new NoShippingModuleView());
     
 
                                     }

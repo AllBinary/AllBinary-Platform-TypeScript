@@ -177,7 +177,7 @@ this.gauge= CustomGaugeItem.NULL_GAUGE_ITEM;
     //var foregroundBasicColor = foregroundBasicColor
 this.backgroundBasicColor= backgroundBasicColor;
     
-this.gauge= CustomGaugeItem(StringUtil.getInstance()!.EMPTY_STRING, maxValue.toInt(), 0, backgroundBasicColor, foregroundBasicColor);
+this.gauge= new CustomGaugeItem(StringUtil.getInstance()!.EMPTY_STRING, maxValue.toInt(), 0, backgroundBasicColor, foregroundBasicColor);
     
 }
 
@@ -320,7 +320,7 @@ this.inGameProcessor= IN_GAME_PROCESSOR;
 var value = value
 var text = text
 var index = index
-this.setText(StringMaker().
+this.setText(new StringMaker().
                             append(text)!.append(SmallIntegerSingletonFactory.getInstance()!.getInstance(index)!.toString())!.toString());
     
 this.gauge.setValue(this.gauge.getValue() +this.getMaxValue() /value);
@@ -332,7 +332,7 @@ this.gauge.setValue(this.gauge.getValue() +this.getMaxValue() /value);
 var value = value
 var text = text
 var index = index
-this.setText(StringMaker().
+this.setText(new StringMaker().
                             append(text)!.append(SmallIntegerSingletonFactory.getInstance()!.getInstance(index)!.toString())!.toString());
     
 PreLogUtil.put(this.text, this, ADD_PORTION);

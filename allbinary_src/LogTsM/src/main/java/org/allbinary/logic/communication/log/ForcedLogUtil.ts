@@ -38,7 +38,7 @@ var anyType = anyType
             
 
 
-                            throw Error(message)
+                            throw new Error(message)
 
                 //: 
 } catch(e) 

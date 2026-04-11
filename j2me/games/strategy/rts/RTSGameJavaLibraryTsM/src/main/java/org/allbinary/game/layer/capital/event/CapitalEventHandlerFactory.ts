@@ -42,7 +42,7 @@ capitalEventHandlerArray= new Array(10);
         
 index >= 0; index--)
         {
-capitalEventHandlerArray[index]= CapitalEventHandler();
+capitalEventHandlerArray[index]= new CapitalEventHandler();
     
 }
 

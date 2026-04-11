@@ -160,7 +160,7 @@ logUtil!.put("Licensing IO Error", this, commonStrings!.GET, e);
 
 
 
-                            throw LicensingException("License Server Connection Error")
+                            throw new LicensingException("License Server Connection Error")
 }
 
                 //: 
@@ -171,7 +171,7 @@ logUtil!.put("Licensing Failure", this, commonStrings!.GET, e);
 
 
 
-                            throw LicensingException("Unknown License Failure: " +this.constructor.name.toString()!)
+                            throw new LicensingException("Unknown License Failure: " +this.constructor.name.toString()!)
 }
 
 }

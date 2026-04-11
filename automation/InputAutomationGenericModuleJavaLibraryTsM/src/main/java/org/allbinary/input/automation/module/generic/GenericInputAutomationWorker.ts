@@ -81,7 +81,7 @@ export class GenericInputAutomationWorker extends AbstractInputAutomationWorker 
         
         
 
-    private lastFrame: Long = new  -1 as Long;
+    private lastFrame: Long =  -1 as Long;
         
         
 
@@ -107,9 +107,9 @@ this.setCaptureWorker(GenericProfileCaptureWorkerFactory.getInstance(genericProf
     
 this.setInputAutomationActionInterface(inputAutomationActionInterface);
     
-this.setImageComparisonWorker(ImageComparisonWorker(imageComparatorConstraintsInterface));
+this.setImageComparisonWorker(new ImageComparisonWorker(imageComparatorConstraintsInterface));
     
-this.setMotionRectanglesWorker(MotionRectanglesWorker(motionRectangleConstraintsInterface));
+this.setMotionRectanglesWorker(new MotionRectanglesWorker(motionRectangleConstraintsInterface));
     
 this.setGenericProfile(genericProfile);
     

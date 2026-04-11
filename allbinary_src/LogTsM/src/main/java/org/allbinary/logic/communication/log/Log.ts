@@ -36,9 +36,46 @@ export class Log
          {
         
 
-    private readonly nullUtil: NullUtil = NullUtil.getInstance()!;
+    public static getInstance(): Log{
+
+    var stringUtil: StringUtil = StringUtil.getInstance()!;
         
         
+;
+    
+
+    var nullUtil: NullUtil = NullUtil.getInstance()!;
+        
+        
+;
+    
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return new Log(stringUtil!.EMPTY_STRING, nullUtil!.NULL_OBJECT, stringUtil!.EMPTY_STRING, nullUtil!.NULL_OBJECT);
+    
+}
+
+
+    public static getInstanceF(specialMessage: string, anyType: any = {}, functionName: string): Log{
+    //var specialMessage = specialMessage
+    //var anyType = anyType
+    //var functionName = functionName
+
+    var nullUtil: NullUtil = NullUtil.getInstance()!;
+        
+        
+;
+    
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return new Log(specialMessage, anyType, functionName, nullUtil!.NULL_OBJECT);
+    
+}
+
 
     private readonly logFormatUtil: LogFormatUtil = LogFormatUtil.getInstance()!;
         
@@ -51,25 +88,6 @@ export class Log
     private readonly functionName: string
 
     private readonly exception: any
-public constructor (){
-
-            super();
-            
-    var stringUtil: StringUtil = StringUtil.getInstance()!;
-        
-        
-;
-    
-this.specialMessage= stringUtil!.EMPTY_STRING;
-    
-this.anyType= nullUtil!.NULL_OBJECT;
-    
-this.functionName= stringUtil!.EMPTY_STRING;
-    
-this.exception= nullUtil!.NULL_OBJECT;
-    
-}
-
 public constructor (specialMessage: string, anyType: any = {}, functionName: string, exception: any = {}){
 
             super();
@@ -84,22 +102,6 @@ this.anyType= anyType;
 this.functionName= functionName;
     
 this.exception= exception;
-    
-}
-
-public constructor (specialMessage: string, anyType: any = {}, functionName: string){
-
-            super();
-                //var specialMessage = specialMessage
-    //var anyType = anyType
-    //var functionName = functionName
-this.specialMessage= specialMessage;
-    
-this.anyType= anyType;
-    
-this.functionName= functionName;
-    
-this.exception= this.nullUtil!.NULL_OBJECT;
     
 }
 

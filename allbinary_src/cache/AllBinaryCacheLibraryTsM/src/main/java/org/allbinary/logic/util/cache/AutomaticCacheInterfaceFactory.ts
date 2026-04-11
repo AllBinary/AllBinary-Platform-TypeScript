@@ -33,7 +33,7 @@ var cachePolicy = cachePolicy
 
 
 
-                            throw Error("No such " +cacheType!.toString())
+                            throw new Error("No such " +cacheType!.toString())
 }
 
 private constructor (){

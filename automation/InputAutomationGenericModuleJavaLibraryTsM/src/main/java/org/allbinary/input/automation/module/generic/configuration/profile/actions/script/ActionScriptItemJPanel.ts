@@ -115,17 +115,17 @@ this.childActionScriptConditionJPanel= childActionScriptConditionJPanel;
 
 
     initComponents(){
-newActionScriptInputJPanel= javax.swing.JPanel();
+newActionScriptInputJPanel= new javax.swing.JPanel();
     
-childActionScriptConditionJPanel= javax.swing.JPanel();
+childActionScriptConditionJPanel= new javax.swing.JPanel();
     
-newActionScriptConditionJPanel= javax.swing.JPanel();
+newActionScriptConditionJPanel= new javax.swing.JPanel();
     
-scriptItemJPanel= javax.swing.JPanel();
+scriptItemJPanel= new javax.swing.JPanel();
     
-removeJPanel= javax.swing.JPanel();
+removeJPanel= new javax.swing.JPanel();
     
-newActionScriptInputJPanel!.setLayout(java.awt.GridLayout(1, 0));
+newActionScriptInputJPanel!.setLayout(new java.awt.GridLayout(1, 0));
     
 
     var childActionScriptConditionJPanelLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(childActionScriptConditionJPanel);
@@ -139,13 +139,13 @@ childActionScriptConditionJPanelLayout!.setHorizontalGroup(childActionScriptCond
     
 childActionScriptConditionJPanelLayout!.setVerticalGroup(childActionScriptConditionJPanelLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGap(0, 8, Short.MAX_VALUE));
     
-newActionScriptConditionJPanel!.setLayout(java.awt.GridLayout(1, 0));
+newActionScriptConditionJPanel!.setLayout(new java.awt.GridLayout(1, 0));
     
-scriptItemJPanel!.setLayout(java.awt.GridLayout(1, 1));
+scriptItemJPanel!.setLayout(new java.awt.GridLayout(1, 1));
     
-removeJPanel!.setLayout(java.awt.GridLayout(1, 1));
+removeJPanel!.setLayout(new java.awt.GridLayout(1, 1));
     
-removeJPanel!.setMinimumSize(java.awt.Dimension(30, 20));
+removeJPanel!.setMinimumSize(new java.awt.Dimension(30, 20));
     
 
     var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);

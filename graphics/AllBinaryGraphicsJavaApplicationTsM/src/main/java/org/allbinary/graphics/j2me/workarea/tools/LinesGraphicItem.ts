@@ -159,7 +159,7 @@ export class LinesGraphicItem
 public constructor (){
 
             super();
-            this.points= Points();
+            this.points= new Points();
     
 
         try {
@@ -181,7 +181,7 @@ public constructor (linesNode: Node){
 
             super();
             var linesNode = linesNode
-this.points= Points();
+this.points= new Points();
     
 init();
     
@@ -255,7 +255,7 @@ this.addPoint(pointTwoNode!.getChildNodes());
                                     
 
 
-                            throw Error("Lines node does not contain a line")
+                            throw new Error("Lines node does not contain a line")
 
                                     }
                                 
@@ -265,13 +265,13 @@ this.addPoint(pointTwoNode!.getChildNodes());
                 //@Throws(Error::class)
             
     public init(){
-this.treeNode= DefaultMutableTreeNode(PointsDomUtil.getInstance()!.LINES +item);
+this.treeNode= new DefaultMutableTreeNode(PointsDomUtil.getInstance()!.LINES +item);
     
 item++;
     
 this.points.init();
     
-this.pointTreeNodeVector= Vector();
+this.pointTreeNodeVector= new Vector();
     
 this.fulcrumPoint= PointFactory.getInstance()!.getInstance(0, 0);
     
@@ -293,7 +293,7 @@ StatusFactory.getInstance()!.setStatus("Translating: " +this.points.getPoints())
     
 basicGraphicsPipeline!.translate(x, y);
     
-this.points= Points();
+this.points= new Points();
     
 this.points.addPoints(basicGraphicsPipeline!.getMatrix());
     
@@ -427,7 +427,7 @@ this.points.getPoints()!.add(point);
     
 logUtil!.put(point.toString(), this, "addPoint");
     
-this.pointTreeNodeVector!.add(DefaultMutableTreeNode(point.toString()));
+this.pointTreeNodeVector!.add(new DefaultMutableTreeNode(point.toString()));
     
 this.treeNode!.add(this.pointTreeNodeVector!.get(this.pointTreeNodeVector!.length -1);
 
@@ -549,7 +549,7 @@ index < size; index++)
                                     {
                                     this.points.getPoints()!.add(PointFactory.getInstance()!.getInstance(point.getX(), point.getY()));
     
-this.pointTreeNodeVector!.add(DefaultMutableTreeNode(point.toString()));
+this.pointTreeNodeVector!.add(new DefaultMutableTreeNode(point.toString()));
     
 this.treeNode!.add(this.pointTreeNodeVector!.get(this.pointTreeNodeVector!.length -1);
 
@@ -620,7 +620,7 @@ var y = y
     
 graphics.setColor(getColor());
     
-graphics.setStroke(BasicStroke(x));
+graphics.setStroke(new BasicStroke(x));
     
 
                         if(this.isActive() && this.currentMousePoint != 

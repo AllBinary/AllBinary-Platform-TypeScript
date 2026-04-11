@@ -198,11 +198,11 @@ recordAsBytes= recordStore!.getRecord(id);
                                 )
                         
                                     {
-                                    byteArrayInputStream= ByteArrayInputStream(recordAsBytes);
+                                    byteArrayInputStream= new ByteArrayInputStream(recordAsBytes);
     
-inputStream= DataInputStream(byteArrayInputStream);
+inputStream= new DataInputStream(byteArrayInputStream);
     
-hashtable= Hashtable<any, any>();
+hashtable= new Hashtable<any, any>();
     
 
     var value: number= 0

@@ -50,7 +50,7 @@ export class IconLayer extends AllBinaryLayer {
     private animationInterface: Animation
 public constructor (animationInterface: Animation, width: number, height: number)                        
 
-                            : super(Rectangle(PointFactory.getInstance()!.ZERO_ZERO, width, height), ViewPosition()){
+                            : super(new Rectangle(PointFactory.getInstance()!.ZERO_ZERO, width, height), new ViewPosition()){
 
             super();
             var animationInterface = animationInterface

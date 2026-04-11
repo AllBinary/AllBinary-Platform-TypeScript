@@ -36,7 +36,7 @@ export class GameInputProcessorComposite extends PlayerGameInput {
     private readonly gameInputProcessorInterface: GameInputProcessorInterface
 public constructor (name: string, gameInputProcessorInterface: GameInputProcessorInterface)                        
 
-                            : super(BasicArrayList(),  -1){
+                            : super(new BasicArrayList(),  -1){
 
             super();
             var name = name
@@ -84,7 +84,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.UPDATE, e);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return StringMaker().
+                        return new StringMaker().
                             append(super.toString())!.append(NAME_LABEL)!.append(name)!.toString();
 
                         ;

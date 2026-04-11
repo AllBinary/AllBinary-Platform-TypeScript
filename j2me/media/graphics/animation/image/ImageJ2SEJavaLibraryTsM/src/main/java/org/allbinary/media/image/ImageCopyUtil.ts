@@ -118,7 +118,7 @@ private constructor (){
                             
 
 
-                            throw Error("Not Mutable")
+                            throw new Error("Not Mutable")
 
                         }
                             

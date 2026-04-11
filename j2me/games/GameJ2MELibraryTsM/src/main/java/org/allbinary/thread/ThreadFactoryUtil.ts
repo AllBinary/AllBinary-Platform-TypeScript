@@ -124,7 +124,7 @@ export class ThreadFactoryUtil
         
 ;
     
-PreLogUtil.put(StringMaker().
+PreLogUtil.put(new StringMaker().
                             append("Using Pseudo Thread for DemoCanvas/AllBinaryGameCanvas under PlayN/HTML5: ")!.append(StringUtil.getInstance()!.toString(runnable))!.toString(), this, commonStrings!.CONSTRUCTOR);
     
 
@@ -139,7 +139,7 @@ primaryThreadPool!.runTask(demoGameSingleThreadStartRunnable);
                                     }
                                 
                         else {
-                            PreLogUtil.put(StringMaker().
+                            PreLogUtil.put(new StringMaker().
                             append("Using Pseudo Thread for Runnable under PlayN/HTML5: ")!.append(StringUtil.getInstance()!.toString(runnable))!.toString(), this, commonStrings!.CONSTRUCTOR);
     
 

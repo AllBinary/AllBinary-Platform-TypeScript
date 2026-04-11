@@ -139,7 +139,7 @@ public constructor (image: Image, sequenceArray: number[], width: number, height
     //var width = width
     //var height = height
     //var animationBehaviorFactory = animationBehaviorFactory
-this.animationFactoryInitializationVisitor= AnimationFactoryInitializationVisitor();
+this.animationFactoryInitializationVisitor= new AnimationFactoryInitializationVisitor();
     
 this.image= image;
     

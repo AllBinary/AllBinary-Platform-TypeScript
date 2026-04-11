@@ -193,49 +193,49 @@ newFile!.createNewFile();
 
         try {
             
-    var cryptedJdbcDriver: number[] = WeakCrypt(1).
+    var cryptedJdbcDriver: number[] = new WeakCrypt(1).
                             encrypt(this.getJdbcDriver())!.encodeToByteArray()!;
         
         
 ;
     
 
-    var cryptedName: number[] = WeakCrypt(2).
+    var cryptedName: number[] = new WeakCrypt(2).
                             encrypt(this.getName())!.encodeToByteArray()!;
         
         
 ;
     
 
-    var cryptedUserName: number[] = WeakCrypt(3).
+    var cryptedUserName: number[] = new WeakCrypt(3).
                             encrypt(this.getUserName())!.encodeToByteArray()!;
         
         
 ;
     
 
-    var cryptedPassword: number[] = WeakCrypt(4).
+    var cryptedPassword: number[] = new WeakCrypt(4).
                             encrypt(this.getPassword())!.encodeToByteArray()!;
         
         
 ;
     
 
-    var cryptedSchema: number[] = WeakCrypt(5).
+    var cryptedSchema: number[] = new WeakCrypt(5).
                             encrypt(this.getSchema())!.encodeToByteArray()!;
         
         
 ;
     
 
-    var cryptedServer: number[] = WeakCrypt(6).
+    var cryptedServer: number[] = new WeakCrypt(6).
                             encrypt(this.getServer())!.encodeToByteArray()!;
         
         
 ;
     
 
-    var cryptedPort: number[] = WeakCrypt(7).
+    var cryptedPort: number[] = new WeakCrypt(7).
                             encrypt(this.getPort())!.encodeToByteArray()!;
         
         
@@ -318,66 +318,66 @@ hasRead= false;
 
         try {
             
-    var decryptedJdbcDriver: string = new decode.toCharArray();
+    var decryptedJdbcDriver: string = decode.toCharArray();
         
         
 ;
     
 
-    var decryptedName: string = new decode.toCharArray();
+    var decryptedName: string = decode.toCharArray();
         
         
 ;
     
 
-    var decryptedUserName: string = new decode.toCharArray();
+    var decryptedUserName: string = decode.toCharArray();
         
         
 ;
     
 
-    var decryptedPassword: string = new decode.toCharArray();
+    var decryptedPassword: string = decode.toCharArray();
         
         
 ;
     
 
-    var decryptedSchema: string = new decode.toCharArray();
+    var decryptedSchema: string = decode.toCharArray();
         
         
 ;
     
 
-    var decryptedServer: string = new decode.toCharArray();
+    var decryptedServer: string = decode.toCharArray();
         
         
 ;
     
 
-    var decryptedPort: string = new decode.toCharArray();
+    var decryptedPort: string = decode.toCharArray();
         
         
 ;
     
-this.setJdbcDriver(WeakCrypt(1).
+this.setJdbcDriver(new WeakCrypt(1).
                             decrypt(decryptedJdbcDriver));
     
-this.setName(WeakCrypt(2).
+this.setName(new WeakCrypt(2).
                             decrypt(decryptedName));
     
-this.setUserName(WeakCrypt(3).
+this.setUserName(new WeakCrypt(3).
                             decrypt(decryptedUserName));
     
-this.setPassword(WeakCrypt(4).
+this.setPassword(new WeakCrypt(4).
                             decrypt(decryptedPassword));
     
-this.setSchema(WeakCrypt(5).
+this.setSchema(new WeakCrypt(5).
                             decrypt(decryptedSchema));
     
-this.setServer(WeakCrypt(6).
+this.setServer(new WeakCrypt(6).
                             decrypt(decryptedServer));
     
-this.setPort(WeakCrypt(7).
+this.setPort(new WeakCrypt(7).
                             decrypt(decryptedPort));
     
 

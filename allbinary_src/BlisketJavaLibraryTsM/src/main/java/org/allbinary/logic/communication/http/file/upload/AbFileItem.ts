@@ -101,7 +101,7 @@ this.byteArray= byteArray;
 
 
 
-                            throw IOException(commonStrings!.NOT_IMPLEMENTED)
+                            throw new IOException(commonStrings!.NOT_IMPLEMENTED)
 }
 
 
@@ -210,7 +210,7 @@ var file = file
 
 
 
-                            throw Error(commonStrings!.NOT_IMPLEMENTED)
+                            throw new Error(commonStrings!.NOT_IMPLEMENTED)
 }
 
 
@@ -221,7 +221,7 @@ var file = file
 
 
 
-                            throw Error(commonStrings!.NOT_IMPLEMENTED)
+                            throw new Error(commonStrings!.NOT_IMPLEMENTED)
 }
 
 
@@ -286,7 +286,7 @@ var state = state
 
 
 
-                            throw IOException(commonStrings!.NOT_IMPLEMENTED)
+                            throw new IOException(commonStrings!.NOT_IMPLEMENTED)
 }
 
 
@@ -294,7 +294,7 @@ var state = state
 
 
 
-                            throw RuntimeException(commonStrings!.NOT_IMPLEMENTED)
+                            throw new RuntimeException(commonStrings!.NOT_IMPLEMENTED)
 }
 
 
@@ -303,7 +303,7 @@ var fih = fih
 
 
 
-                            throw RuntimeException(commonStrings!.NOT_IMPLEMENTED)
+                            throw new RuntimeException(commonStrings!.NOT_IMPLEMENTED)
 }
 
 

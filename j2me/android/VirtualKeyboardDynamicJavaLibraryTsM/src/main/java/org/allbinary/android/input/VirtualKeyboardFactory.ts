@@ -52,13 +52,13 @@ var activity = activity
                         if(SDK_VERSION <= 2)
                         
                                     {
-                                    virtualKeyboard= VirtualKeyboardAPI1(activity);
+                                    virtualKeyboard= new VirtualKeyboardAPI1(activity);
     
 
                                     }
                                 
                         else {
-                            virtualKeyboard= VirtualKeyboardAPI3(activity);
+                            virtualKeyboard= new VirtualKeyboardAPI3(activity);
     
 
                         }

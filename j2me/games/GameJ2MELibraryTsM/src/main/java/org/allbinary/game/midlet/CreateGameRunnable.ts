@@ -68,7 +68,7 @@ this.demoGameMidlet= demoGameMidlet;
     
 this.hashtable= hashtable;
     
-this.startGameMidletEvent= DemoGameMidletEvent(this, DemoGameMidletStateFactory.getInstance()!.START_GAME);
+this.startGameMidletEvent= new DemoGameMidletEvent(this, DemoGameMidletStateFactory.getInstance()!.START_GAME);
     
 }
 

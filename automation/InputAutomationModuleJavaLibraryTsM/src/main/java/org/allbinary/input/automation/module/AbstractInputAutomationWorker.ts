@@ -139,7 +139,7 @@ this.running= running;
                         )
                         
                                     {
-                                    captureThread= Thread(this.getCaptureWorker());
+                                    captureThread= new Thread(this.getCaptureWorker());
     
 logUtil!.put("Starting CaptureWorkers - Need more images - Thread State: " +captureThread!.getState()!.toString(), this, "startCaptureWorkers");
     
@@ -181,7 +181,7 @@ this.getCaptureWorker()!.setRunning(false);
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 

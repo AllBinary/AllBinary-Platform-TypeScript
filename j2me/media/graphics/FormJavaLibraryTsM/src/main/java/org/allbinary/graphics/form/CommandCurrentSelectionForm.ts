@@ -201,13 +201,13 @@ this.update(index, items[index]!);
                         if(J2MEUtil.isJ2ME())
                         
                                     {
-                                    this.selectedAnimationArray[index]= RectangleAdjustedAnimation(width +border -adjustedBorder, height +border -adjustedBorder, offset, offset, selectedButtonColor);
+                                    this.selectedAnimationArray[index]= new RectangleAdjustedAnimation(width +border -adjustedBorder, height +border -adjustedBorder, offset, offset, selectedButtonColor);
     
 
                                     }
                                 
                         else {
-                            this.selectedAnimationArray[index]= RectangleFilledAdjustedAnimation(width +border -adjustedBorder, height +border -adjustedBorder, offset, offset, selectedButtonColor);
+                            this.selectedAnimationArray[index]= new RectangleFilledAdjustedAnimation(width +border -adjustedBorder, height +border -adjustedBorder, offset, offset, selectedButtonColor);
     
 
                         }
@@ -218,13 +218,13 @@ adjustedBorder= 4;
                         if(J2MEUtil.isJ2ME())
                         
                                     {
-                                    this.unSelectedAnimationArray[index]= RectangleAdjustedAnimation(width +border -adjustedBorder, height +border -adjustedBorder, offset, offset, buttonColor);
+                                    this.unSelectedAnimationArray[index]= new RectangleAdjustedAnimation(width +border -adjustedBorder, height +border -adjustedBorder, offset, offset, buttonColor);
     
 
                                     }
                                 
                         else {
-                            this.unSelectedAnimationArray[index]= RectangleFilledAdjustedAnimation(width +border -adjustedBorder, height +border -adjustedBorder, offset, offset, buttonColor);
+                            this.unSelectedAnimationArray[index]= new RectangleFilledAdjustedAnimation(width +border -adjustedBorder, height +border -adjustedBorder, offset, offset, buttonColor);
     
 
                         }

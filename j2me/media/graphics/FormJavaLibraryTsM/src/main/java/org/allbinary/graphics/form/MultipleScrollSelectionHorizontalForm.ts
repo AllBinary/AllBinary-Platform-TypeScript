@@ -184,7 +184,7 @@ item= this.get(index);
                         else {
                             logged= true;
     
-PreLogUtil.put(StringMaker().
+PreLogUtil.put(new StringMaker().
                             append("painting beyond maxx: ")!.appendint(this.rectangle.getMaxX())!.toString(), this, canvasStrings!.PAINT);
     
 
@@ -225,7 +225,7 @@ this.paintable.paint(graphics, index, dx, dy);
                             
 
 
-                            throw Error(formTypeFactory!.UNK)
+                            throw new Error(formTypeFactory!.UNK)
 
                         }
                             

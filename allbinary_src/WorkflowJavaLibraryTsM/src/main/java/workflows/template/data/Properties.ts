@@ -57,7 +57,7 @@ public constructor (){
 
                                     }
                                 
-this.propertiesHashMap= HashMap<any, any>();
+this.propertiesHashMap= new HashMap<any, any>();
     
 }
 
@@ -82,7 +82,7 @@ this.propertiesHashMap= HashMap<any, any>();
 
                                     }
                                 
-this.propertiesHashMap= HashMap<any, any>();
+this.propertiesHashMap= new HashMap<any, any>();
     
 
 

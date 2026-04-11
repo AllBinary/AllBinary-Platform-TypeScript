@@ -292,7 +292,7 @@ scaledImageArray[index]= animationFactoryImageScaleUtil!.createImage(image, imag
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return AdjustedImageArrayRotationAnimation(scaledImageArray, AngleInfo.getInstance(this.getAngleIncrement();
+                        return new AdjustedImageArrayRotationAnimation(scaledImageArray, AngleInfo.getInstance(this.getAngleIncrement();
 
                         .toShort()), AngleFactory.getInstance()!.TOTAL_ANGLE.toInt(), this.animationFactoryInitializationVisitor!.dx, this.animationFactoryInitializationVisitor!.dy, this.animationBehaviorFactory!.getOrCreateInstance());
     
@@ -304,7 +304,7 @@ scaledImageArray[index]= animationFactoryImageScaleUtil!.createImage(image, imag
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return ImageArrayRotationAnimation(scaledImageArray, AngleInfo.getInstance(this.angleIncrement.toShort()), AngleFactory.getInstance()!.TOTAL_ANGLE.toInt(), this.animationBehaviorFactory!.getOrCreateInstance());
+                        return new ImageArrayRotationAnimation(scaledImageArray, AngleInfo.getInstance(this.angleIncrement.toShort()), AngleFactory.getInstance()!.TOTAL_ANGLE.toInt(), this.animationBehaviorFactory!.getOrCreateInstance());
     
 
                         }

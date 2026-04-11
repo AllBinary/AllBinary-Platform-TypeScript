@@ -72,7 +72,7 @@ var log = log
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -83,7 +83,7 @@ var log = log
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 
@@ -95,7 +95,7 @@ var log = log
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 

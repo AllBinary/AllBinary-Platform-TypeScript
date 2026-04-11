@@ -101,7 +101,7 @@ fontDebugFactory!.setFont(existingFont, graphics);
                                     
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 
                                     }
                                 

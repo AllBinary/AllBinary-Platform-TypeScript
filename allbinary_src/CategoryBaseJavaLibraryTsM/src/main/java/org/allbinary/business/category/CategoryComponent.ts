@@ -100,7 +100,7 @@ var viewDocumentInterface = viewDocumentInterface
         
 ;
     
-document.appendChild(CategoryView(this.getCategoryInterface()).
+document.appendChild(new CategoryView(this.getCategoryInterface()).
                             toXmlNode(document));
     
 

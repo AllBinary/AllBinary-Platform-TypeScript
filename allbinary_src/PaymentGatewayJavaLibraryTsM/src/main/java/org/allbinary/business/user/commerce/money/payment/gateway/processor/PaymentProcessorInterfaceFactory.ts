@@ -122,7 +122,7 @@ var transformInfoInterface = transformInfoInterface
 
 
 
-                            throw Error("Error Getting PaymentProcessorInterface")
+                            throw new Error("Error Getting PaymentProcessorInterface")
 
                 //: 
 } catch(e) 

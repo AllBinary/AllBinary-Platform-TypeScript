@@ -30,9 +30,9 @@ public constructor (){
 
 
     initComponents(){
-jColorChooser1= javax.swing.JColorChooser();
+jColorChooser1= new javax.swing.JColorChooser();
     
-setLayout(java.awt.BorderLayout());
+setLayout(new java.awt.BorderLayout());
     
 add(jColorChooser1, java.awt.BorderLayout.CENTER);
     

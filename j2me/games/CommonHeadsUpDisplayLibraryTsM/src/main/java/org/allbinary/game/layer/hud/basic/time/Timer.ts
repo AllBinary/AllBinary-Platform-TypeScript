@@ -67,7 +67,7 @@ public constructor (maxTime: number){
 
             super();
             var maxTime = maxTime
-this.primitiveLongUtil= PrimitiveLongUtil(maxTime);
+this.primitiveLongUtil= new PrimitiveLongUtil(maxTime);
     
 this.maxTime= maxTime.toLong();
     

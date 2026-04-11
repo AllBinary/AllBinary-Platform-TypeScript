@@ -40,7 +40,7 @@ export class MineLayerCircularStaticPool
 var viewPositionFactoryInterface = viewPositionFactoryInterface
 MineCountedPickedUpLayerInterfaceFactory.init();
     
-WEAPON_LAYER_CIRCULAR_STATIC_POOL.init(MineLayerFactory(viewPositionFactoryInterface), 20);
+WEAPON_LAYER_CIRCULAR_STATIC_POOL.init(new MineLayerFactory(viewPositionFactoryInterface), 20);
     
 }
 

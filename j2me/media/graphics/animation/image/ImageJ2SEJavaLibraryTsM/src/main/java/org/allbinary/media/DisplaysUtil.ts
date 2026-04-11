@@ -70,7 +70,7 @@ export class DisplaysUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Rectangle(PointFactory.getInstance()!.ZERO_ZERO, dimension.width, dimension.height);
+                        return new Rectangle(PointFactory.getInstance()!.ZERO_ZERO, dimension.width, dimension.height);
     
 }
 
@@ -127,7 +127,7 @@ graphicsDevice= graphicsDeviceArray[index]!;
     
 displayMode= graphicsDevice!.getDisplayMode();
     
-rectangle= Rectangle(PointFactory.getInstance()!.ZERO_ZERO, displayMode!.getWidth(), displayMode!.getHeight());
+rectangle= new Rectangle(PointFactory.getInstance()!.ZERO_ZERO, displayMode!.getWidth(), displayMode!.getHeight());
     
 rectangleArray[index]= rectangle;
     

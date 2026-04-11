@@ -53,7 +53,7 @@ public constructor (animationInterface: Animation)
 
 public constructor (animationInterface: IndexedAnimation, width: number, height: number)                        
 
-                            : this(ImageArrayAnimation(IndexedAnimationToImageArrayUtil.getInstance(width, height, animationInterface), AnimationBehavior.getInstance())){
+                            : this(new ImageArrayAnimation(IndexedAnimationToImageArrayUtil.getInstance(width, height, animationInterface), AnimationBehavior.getInstance())){
 
             super();
                 //var animationInterface = animationInterface
@@ -67,7 +67,7 @@ public constructor (animationInterface: IndexedAnimation, width: number, height:
 
 public constructor (imageArray: Image[])                        
 
-                            : this(ImageArrayAnimation(imageArray, AnimationBehavior.getInstance())){
+                            : this(new ImageArrayAnimation(imageArray, AnimationBehavior.getInstance())){
 
             super();
             var imageArray = imageArray

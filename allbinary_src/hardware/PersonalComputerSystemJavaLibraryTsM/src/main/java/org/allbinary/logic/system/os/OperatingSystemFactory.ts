@@ -192,13 +192,13 @@ this.genericOperatingSystem= SolarisOperatingSystemFactory.getInstance()!.getOpe
                             
 
 
-                            throw Error(StringMaker().
+                            throw new Error(new StringMaker().
                             append("OS Not Supported: ")!.append(osName)!.toString())
 
                         }
                             
 
-    var log: Log = LogFactory.getInstance(StringMaker().
+    var log: Log = LogFactory.getInstance(new StringMaker().
                             append("OperatingSystem Info: ")!.append(StringUtil.getInstance()!.toString(this.genericOperatingSystem))!.toString(), this, commonStrings!.GET_INSTANCE)!;
         
         

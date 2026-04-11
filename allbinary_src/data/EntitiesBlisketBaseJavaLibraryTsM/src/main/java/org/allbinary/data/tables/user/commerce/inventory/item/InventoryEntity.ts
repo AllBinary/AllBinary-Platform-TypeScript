@@ -74,7 +74,7 @@ export class InventoryEntity extends AbSqlBean
         
 public constructor ()                        
 
-                            : super(InventoryDbInitInfo()){
+                            : super(new InventoryDbInitInfo()){
 
             super();
             
@@ -227,7 +227,7 @@ i < size; i++)
                          && category.startsWith(storeFrontInterface!.getCategoryPath()))
                         
                                     {
-                                    itemVector!.add(BasicItem(itemHashMap));
+                                    itemVector!.add(new BasicItem(itemHashMap));
     
 
                                     }
@@ -274,7 +274,7 @@ keysAndValues!.put(BasicItemData.ID, id);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return BasicItem(itemHashMap);
+                        return new BasicItem(itemHashMap);
     
 
                                     }

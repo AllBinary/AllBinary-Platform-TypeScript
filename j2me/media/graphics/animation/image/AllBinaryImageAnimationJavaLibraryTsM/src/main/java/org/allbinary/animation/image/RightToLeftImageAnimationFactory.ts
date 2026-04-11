@@ -105,7 +105,7 @@ public constructor (image: Image, animationBehaviorFactory: AnimationBehaviorFac
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return AdjustedRightToLeftImageAnimation(scaledImage, this.animationFactoryInitializationVisitor!.dx, this.animationFactoryInitializationVisitor!.dy, this.animationBehaviorFactory!.getOrCreateInstance());
+                        return new AdjustedRightToLeftImageAnimation(scaledImage, this.animationFactoryInitializationVisitor!.dx, this.animationFactoryInitializationVisitor!.dy, this.animationBehaviorFactory!.getOrCreateInstance());
     
 
                                     }
@@ -115,7 +115,7 @@ public constructor (image: Image, animationBehaviorFactory: AnimationBehaviorFac
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return RightToLeftImageAnimation(scaledImage, this.animationBehaviorFactory!.getOrCreateInstance());
+                        return new RightToLeftImageAnimation(scaledImage, this.animationBehaviorFactory!.getOrCreateInstance());
     
 
                         }

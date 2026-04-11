@@ -145,7 +145,7 @@ index < size; index++)
         
 ;
     
-logUtil!.put(StringMaker().
+logUtil!.put(new StringMaker().
                             append(this.GAME_FEATURE_CONTROLLED)!.append(featureInterface!.toString())!.append(this.IS_LOADING_LEVEL_LABEL)!.append(ResourceLoadingLevelFactory.getInstance()!.getLevelString(level))!.append(CommonSeps.getInstance()!.COLON_SEP)!.appendboolean(isLoadingLevel)!.append(this.IS_FEATURE)!.appendboolean(isFeature)!.toString(), this, commonStrings!.INIT);
     
 
@@ -225,7 +225,7 @@ this.list.clear();
 
     public add(featureInterface: GameFeatureControlledInterface){
 var featureInterface = featureInterface
-logUtil!.put(StringMaker().
+logUtil!.put(new StringMaker().
                             append(CommonLabels.getInstance()!.START_LABEL)!.append(StringUtil.getInstance()!.toString(featureInterface))!.toString(), this, commonStrings!.ADD);
     
 this.list.add(featureInterface);

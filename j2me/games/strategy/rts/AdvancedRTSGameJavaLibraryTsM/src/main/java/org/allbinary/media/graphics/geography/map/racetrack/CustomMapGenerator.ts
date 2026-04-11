@@ -78,7 +78,7 @@ this.customMapArray= new Array(mapArray!.length) [size2];
                                     
 
 
-                            throw Error("Array Incorrect")
+                            throw new Error("Array Incorrect")
 
                                     }
                                 

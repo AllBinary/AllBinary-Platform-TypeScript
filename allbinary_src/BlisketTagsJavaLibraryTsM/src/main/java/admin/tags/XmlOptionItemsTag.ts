@@ -30,9 +30,9 @@ export class XmlOptionItemsTag extends TableTag {
 public constructor (){
 
             super();
-            this.setTagHelperFactory(XmlOptionItemsHelperFactory());
+            this.setTagHelperFactory(new XmlOptionItemsHelperFactory());
     
-this.setTagRequestHelperFactory(XmlOptionItemsRequestHelperFactory());
+this.setTagRequestHelperFactory(new XmlOptionItemsRequestHelperFactory());
     
 }
 

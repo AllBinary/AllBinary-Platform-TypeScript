@@ -36,7 +36,7 @@ export class NullParcelable
 
 
 
-                            throw RuntimeException()
+                            throw new RuntimeException()
 }
 
 

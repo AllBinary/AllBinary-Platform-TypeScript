@@ -112,7 +112,7 @@ var componentData = componentData
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Ethernet(componentData) as HardwareComponentInterface;
+                        return new Ethernet(componentData) as HardwareComponentInterface;
     
 
                                     }
@@ -125,7 +125,7 @@ var componentData = componentData
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Bridge(componentData) as HardwareComponentInterface;
+                        return new Bridge(componentData) as HardwareComponentInterface;
     
 
                                     }
@@ -138,7 +138,7 @@ var componentData = componentData
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return HardDriveController(componentData) as HardwareComponentInterface;
+                        return new HardDriveController(componentData) as HardwareComponentInterface;
     
 
                                     }
@@ -151,7 +151,7 @@ var componentData = componentData
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Media(componentData) as HardwareComponentInterface;
+                        return new Media(componentData) as HardwareComponentInterface;
     
 
                                     }
@@ -164,7 +164,7 @@ var componentData = componentData
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return HardDriveController(componentData) as HardwareComponentInterface;
+                        return new HardDriveController(componentData) as HardwareComponentInterface;
     
 
                                     }
@@ -177,7 +177,7 @@ var componentData = componentData
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Usb(componentData) as HardwareComponentInterface;
+                        return new Usb(componentData) as HardwareComponentInterface;
     
 
                                     }
@@ -190,7 +190,7 @@ var componentData = componentData
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Video(componentData) as HardwareComponentInterface;
+                        return new Video(componentData) as HardwareComponentInterface;
     
 
                                     }
@@ -203,7 +203,7 @@ var componentData = componentData
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return PCI(componentData) as HardwareComponentInterface;
+                        return new PCI(componentData) as HardwareComponentInterface;
     
 
                                     }
@@ -215,7 +215,7 @@ var componentData = componentData
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Unknown(componentData) as HardwareComponentInterface;
+                        return new Unknown(componentData) as HardwareComponentInterface;
     
 
                 //: 
@@ -240,7 +240,7 @@ var componentData = componentData
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Unknown(commonStrings!.EXCEPTION);
+                        return new Unknown(commonStrings!.EXCEPTION);
     
 }
 

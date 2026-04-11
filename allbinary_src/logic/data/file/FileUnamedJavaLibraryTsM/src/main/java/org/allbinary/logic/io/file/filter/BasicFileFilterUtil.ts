@@ -53,7 +53,7 @@ vector.add(extension);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return VisitorFileFilter(includeFileExtensionsBooleanFileVisitor) as FileFilter;
+                        return new VisitorFileFilter(includeFileExtensionsBooleanFileVisitor) as FileFilter;
     
 }
 

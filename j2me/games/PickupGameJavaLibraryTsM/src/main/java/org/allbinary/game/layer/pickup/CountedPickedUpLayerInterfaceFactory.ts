@@ -84,7 +84,7 @@ var z = z
 
 
 
-                            throw Error(CommonStrings.getInstance()!.NOT_IMPLEMENTED)
+                            throw new Error(CommonStrings.getInstance()!.NOT_IMPLEMENTED)
 }
 
 

@@ -161,7 +161,7 @@ public constructor (transformInfoInterface: TransformInfoInterface)
                                     
 
 
-                            throw Error("Template View Not Set - No Components")
+                            throw new Error("Template View Not Set - No Components")
 
                                     }
                                 
@@ -172,7 +172,7 @@ public constructor (transformInfoInterface: TransformInfoInterface)
                                     
 
 
-                            throw Error("To Many Root Template Views: " +componentsVector!.length)
+                            throw new Error("To Many Root Template Views: " +componentsVector!.length)
 
                                     }
                                 
@@ -206,7 +206,7 @@ public constructor (transformInfoInterface: TransformInfoInterface)
                                     
 
 
-                            throw Error("Template View Not Set - No View Name")
+                            throw new Error("Template View Not Set - No View Name")
 
                                     }
                                 

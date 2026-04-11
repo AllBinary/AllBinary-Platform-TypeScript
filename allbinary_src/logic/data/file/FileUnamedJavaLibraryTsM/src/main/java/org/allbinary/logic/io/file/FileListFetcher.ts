@@ -62,7 +62,7 @@ var path = path
 
         try {
             
-    var files: BasicArrayList = subDirectory!.search(AbFile(path))!;
+    var files: BasicArrayList = subDirectory!.search(new AbFile(path))!;
         
         
 ;
@@ -125,13 +125,13 @@ includeExtensionBasicArrayList!.add(includeExtensions[index]!);
 }
 
 
-    var visitorFileFilter: VisitorFileFilter = new VisitorFileFilter(DirectoryOrIncludeFileExtensionBooleanFileVisitor(includeExtensionBasicArrayList));
+    var visitorFileFilter: VisitorFileFilter = new VisitorFileFilter(new DirectoryOrIncludeFileExtensionBooleanFileVisitor(includeExtensionBasicArrayList));
         
         
 ;
     
 
-    var files: BasicArrayList = subDirectory!.search(visitorFileFilter, AbFile(path))!;
+    var files: BasicArrayList = subDirectory!.search(visitorFileFilter, new AbFile(path))!;
         
         
 ;
@@ -175,13 +175,13 @@ System.out.println("Error: " +e +"\nMsg: " +e.message);
 includeExtensionBasicArrayList!.add(includeExtension);
     
 
-    var visitorFileFilter: VisitorFileFilter = new VisitorFileFilter(DirectoryOrIncludeFileExtensionBooleanFileVisitor(includeExtensionBasicArrayList));
+    var visitorFileFilter: VisitorFileFilter = new VisitorFileFilter(new DirectoryOrIncludeFileExtensionBooleanFileVisitor(includeExtensionBasicArrayList));
         
         
 ;
     
 
-    var files: BasicArrayList = subDirectory!.search(visitorFileFilter, AbFile(path))!;
+    var files: BasicArrayList = subDirectory!.search(visitorFileFilter, new AbFile(path))!;
         
         
 ;
@@ -226,13 +226,13 @@ System.out.println("Error: " +e +"\nMsg: " +e.message);
 includeExtensionBasicArrayList!.add(includeExtension);
     
 
-    var visitorFileFilter: VisitorFileFilter = new VisitorFileFilter(DirectoryOrIncludeFileExtensionBooleanFileVisitor(includeExtensionBasicArrayList, pathIncludes));
+    var visitorFileFilter: VisitorFileFilter = new VisitorFileFilter(new DirectoryOrIncludeFileExtensionBooleanFileVisitor(includeExtensionBasicArrayList, pathIncludes));
         
         
 ;
     
 
-    var files: BasicArrayList = subDirectory!.search(visitorFileFilter, AbFile(path))!;
+    var files: BasicArrayList = subDirectory!.search(visitorFileFilter, new AbFile(path))!;
         
         
 ;
@@ -267,13 +267,13 @@ System.out.println("Error: " +e +"\nMsg: " +e.message);
 
         try {
             
-    var visitorFileFilter: VisitorFileFilter = new VisitorFileFilter(DirectoryBooleanFileVisitor());
+    var visitorFileFilter: VisitorFileFilter = new VisitorFileFilter(new DirectoryBooleanFileVisitor());
         
         
 ;
     
 
-    var files: BasicArrayList = subDirectory!.search(visitorFileFilter, AbFile(path))!;
+    var files: BasicArrayList = subDirectory!.search(visitorFileFilter, new AbFile(path))!;
         
         
 ;

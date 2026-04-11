@@ -120,7 +120,7 @@ var document = document
         
 ;
     
-inventoryNode!.appendChild(ModDomHelper.createNameValueNodes(document, SearchData.TOTAL_NUMBER_ITEMS_ON_THIS_PAGE, Integer(itemVector!.length).
+inventoryNode!.appendChild(ModDomHelper.createNameValueNodes(document, SearchData.TOTAL_NUMBER_ITEMS_ON_THIS_PAGE, new Integer(itemVector!.length).
                             toString()));
     
 
@@ -154,7 +154,7 @@ index < size; index++)
                         
                                     {
                                     
-    var node: Node = BasicItemView(itemInterface, Vector()).
+    var node: Node = new BasicItemView(itemInterface, new Vector()).
                             toXmlNode(document)!;
         
         

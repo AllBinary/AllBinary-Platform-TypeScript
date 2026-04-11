@@ -112,13 +112,13 @@ this.percentCompleteX2= this.imageX +CommonButtons.getInstance()!.STANDARD_BUTTO
                         if(displayInfoSingleton!.getLastWidth() > 320)
                         
                                     {
-                                    this.rtsLayerCompositePaintableLateInit= UpgradableWideRTSLayerPaintable(this);
+                                    this.rtsLayerCompositePaintableLateInit= new UpgradableWideRTSLayerPaintable(this);
     
 
                                     }
                                 
                         else {
-                            this.rtsLayerCompositePaintableLateInit= RTSLayerCompositePaintable(this);
+                            this.rtsLayerCompositePaintableLateInit= new RTSLayerCompositePaintable(this);
     
 
                         }

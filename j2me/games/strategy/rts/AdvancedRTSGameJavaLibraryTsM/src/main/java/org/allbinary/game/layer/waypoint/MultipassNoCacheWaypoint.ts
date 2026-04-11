@@ -181,7 +181,7 @@ super.setAllBinaryGameLayerManager(allBinaryGameLayerManager);
                             
 
 
-                            throw Error("Start should not be End: " +endGeographicMapCellPosition)
+                            throw new Error("Start should not be End: " +endGeographicMapCellPosition)
 
                         }
                             
@@ -305,7 +305,7 @@ customMapArray[endGeographicMapCellPosition!.getRow()]![endGeographicMapCellPosi
                                     
 
 
-                            throw Error("Path may have been cleared by clearing caching")
+                            throw new Error("Path may have been cleared by clearing caching")
 
                                     }
                                 

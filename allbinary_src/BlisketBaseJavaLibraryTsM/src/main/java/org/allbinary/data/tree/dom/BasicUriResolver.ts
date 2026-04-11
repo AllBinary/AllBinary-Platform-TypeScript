@@ -137,7 +137,7 @@ stringBuffer!.append(FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH);
 stringBuffer!.append(href);
     
 
-    var abPath: AbPath = AbFilePath(stringBuffer!.toString()) as AbPath;
+    var abPath: AbPath = new AbFilePath(stringBuffer!.toString()) as AbPath;
         
         
 ;
@@ -179,7 +179,7 @@ logUtil!.put(stringBuffer!.toString(), this, RESOLVE);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return StreamSource(CryptFileReader(TransformInfoTemplateData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoTemplateData.getInstance()!.ENCRYPTED_EXTENSION).
+                        return new StreamSource(new CryptFileReader(TransformInfoTemplateData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoTemplateData.getInstance()!.ENCRYPTED_EXTENSION).
                             getInputStream(abPath));
     
 
@@ -198,7 +198,7 @@ logUtil!.put(stringBuffer!.toString(), this, RESOLVE);
 
 
 
-                            throw TransformerException(e)
+                            throw new TransformerException(e)
 }
 
 }

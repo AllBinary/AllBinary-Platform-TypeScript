@@ -80,7 +80,7 @@ public constructor (bufferedImage: BufferedImage, bufferedImage2: BufferedImage,
             var bufferedImage = bufferedImage
 var bufferedImage2 = bufferedImage2
 var tolerance = tolerance
-this.nonMatchingPixelVector= Vector();
+this.nonMatchingPixelVector= new Vector();
     
 this.setBufferedImages(new Array(2));
     

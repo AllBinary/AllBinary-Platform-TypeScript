@@ -98,7 +98,7 @@ public constructor (savedCaptureGenericProfileDataWorkerType: SavedCaptureGeneri
             var savedCaptureGenericProfileDataWorkerType = savedCaptureGenericProfileDataWorkerType
 this.savedCaptureGenericProfileDataWorkerType= savedCaptureGenericProfileDataWorkerType;
     
-this.screenScavangerRobot= ScreenScavangerRobot();
+this.screenScavangerRobot= new ScreenScavangerRobot();
     
 index= ProcessingFrameIndexFactory.next();
     
@@ -150,7 +150,7 @@ this.setRunning(true);
 timeHelper!.setStartTime();
     
 
-    var frame: Long = new index as Long;
+    var frame: Long = index as Long;
         
         
 ;
@@ -193,7 +193,7 @@ logUtil!.put("Loading Image File Path: " +filePath, this, this.commonStrings!.RU
     
 index++;
     
-CapturedBufferedImagesCacheSingleton.getInstance()!.add(BufferedImageFrameCacheable(bufferedImage, frame));
+CapturedBufferedImagesCacheSingleton.getInstance()!.add(new BufferedImageFrameCacheable(bufferedImage, frame));
     
 
     var capturedImageEvent: CapturedImageWorkerResultsEvent = new CapturedImageWorkerResultsEvent(this, frame, bufferedImage);

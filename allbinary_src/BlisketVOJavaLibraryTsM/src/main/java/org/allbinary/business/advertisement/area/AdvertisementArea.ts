@@ -79,7 +79,7 @@ this.description= hashMap!.get(AdvertisementAreaData.getInstance()!.DESCRIPTION)
         
 ;
     
-this.advertisementAreaConstraintsInterface= AdvertisementAreaConstraints(document);
+this.advertisementAreaConstraintsInterface= new AdvertisementAreaConstraints(document);
     
 this.campaign= hashMap!.get(AdvertisementCampaignData.getInstance()!.NAME);
 

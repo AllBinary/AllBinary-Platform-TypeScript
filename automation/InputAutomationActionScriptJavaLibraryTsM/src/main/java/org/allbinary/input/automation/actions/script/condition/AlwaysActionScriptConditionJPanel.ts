@@ -112,27 +112,27 @@ this.alwaysActionJDialog= alwaysActionJDialog;
 
 
     initComponents(){
-alwaysActionJDialog= javax.swing.JDialog();
+alwaysActionJDialog= new javax.swing.JDialog();
     
-titleJLabel= javax.swing.JLabel();
+titleJLabel= new javax.swing.JLabel();
     
-okJButton= javax.swing.JButton();
+okJButton= new javax.swing.JButton();
     
-jLabel2= javax.swing.JLabel();
+jLabel2= new javax.swing.JLabel();
     
-alwaysJComboBox= javax.swing.JComboBox();
+alwaysJComboBox= new javax.swing.JComboBox();
     
-alwaysActionJButton= javax.swing.JButton();
+alwaysActionJButton= new javax.swing.JButton();
     
-jLabel1= javax.swing.JLabel();
+jLabel1= new javax.swing.JLabel();
     
-alwaysActionJDialog!.setMinimumSize(java.awt.Dimension(250, 150));
+alwaysActionJDialog!.setMinimumSize(new java.awt.Dimension(250, 150));
     
 titleJLabel!.setText("Always Condition Options");
     
 okJButton!.setText("OK");
     
-okJButton!.addActionListener(object: java.awt.event.ActionListener()
+okJButton!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -146,7 +146,7 @@ okJButtonActionPerformed(evt);
     
 jLabel2!.setText("On:");
     
-alwaysJComboBox!.setModel(javax.swing.DefaultComboBoxModel(
+alwaysJComboBox!.setModel(new javax.swing.DefaultComboBoxModel(
                                                 [
                                                     "true","false";
         
@@ -165,11 +165,11 @@ alwaysActionJDialogLayout!.setHorizontalGroup(alwaysActionJDialogLayout!.createP
     
 alwaysActionJDialogLayout!.setVerticalGroup(alwaysActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(alwaysActionJDialogLayout!.createSequentialGroup()!.addContainerGap()!.addComponent(titleJLabel)!.addGap(20, 20, 20)!.addGroup(alwaysActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)!.addComponent(alwaysJComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)!.addComponent(jLabel2))!.addGap(15, 15, 15)!.addComponent(okJButton)!.addContainerGap()));
     
-setMinimumSize(java.awt.Dimension(100, 0));
+setMinimumSize(new java.awt.Dimension(100, 0));
     
 alwaysActionJButton!.setText("Edit");
     
-alwaysActionJButton!.addActionListener(object: java.awt.event.ActionListener()
+alwaysActionJButton!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){

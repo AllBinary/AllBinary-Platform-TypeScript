@@ -93,7 +93,7 @@ this.setObjectFile("views.admin.orderhistory.DateRangeOrderHistoryView");
                             
 
 
-                            throw Error("No Such View Command: " +this.getCommand())
+                            throw new Error("No Such View Command: " +this.getCommand())
 
                         }
                             
@@ -111,7 +111,7 @@ this.setObjectFile("views.admin.orderhistory.DateRangeOrderHistoryView");
 
 
 
-                            throw Error("Command Null")
+                            throw new Error("Command Null")
 
                 //: 
 } catch(e) 

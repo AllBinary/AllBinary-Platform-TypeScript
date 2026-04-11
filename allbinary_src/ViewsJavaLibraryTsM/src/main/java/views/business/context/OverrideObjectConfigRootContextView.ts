@@ -107,7 +107,7 @@ public constructor (transformInfoInterface: Object)
                                     }
                                 
 
-    var rootTransformInfoInterface: TransformInfoInterface = TransformInfoHttp(this.getTransformInfoInterface();
+    var rootTransformInfoInterface: TransformInfoInterface = new TransformInfoHttp(this.getTransformInfoInterface();
 
                          as TransformInfoHttp) as TransformInfoInterface;
         
@@ -152,7 +152,7 @@ stringBuffer!.append(CommonSeps.getInstance()!.SPACE);
                             
 
 
-                            throw Error("Override Currently Not Supported")
+                            throw new Error("Override Currently Not Supported")
 
                         }
                             

@@ -55,7 +55,7 @@ var location = location
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return HealthBarThreedAnimation(layerInterface, location);
+                        return new HealthBarThreedAnimation(layerInterface, location);
     
 }
 
