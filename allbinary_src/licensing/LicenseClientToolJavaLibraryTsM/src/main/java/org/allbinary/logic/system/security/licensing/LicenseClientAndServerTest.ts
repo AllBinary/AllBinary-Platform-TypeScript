@@ -76,7 +76,7 @@ licensingTest!.test();
         
 ;
     
-logUtil!.put(this.commonStrings!.EXCEPTION, "main()", "main()", e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, "main()", "main()", e);
     
 }
 
@@ -281,7 +281,7 @@ stringBuffer!.append(abeLicenseInterface!.toString());
                                 
 stringBuffer!.append(END);
     
-logUtil!.put(RESULT +stringBuffer!.toString(), this, "test");
+this.logUtil!.putF(RESULT +stringBuffer!.toString(), this, "test");
     
 stringBuffer!.delete(0, stringBuffer!.length());
     
@@ -291,19 +291,19 @@ stringBuffer!.delete(0, stringBuffer!.length());
             {
 list.add(serverName);
     
-logUtil!.put("Test Error: " +stringBuffer!.toString(), this, "test", e);
+this.logUtil!.put("Test Error: " +stringBuffer!.toString(), this, "test", e);
     
 }
 
 }
 
-logUtil!.put("Total Servers Failed: " +list.size() +" Failed Servers: " +list.toString(), this, "test");
+this.logUtil!.putF("Total Servers Failed: " +list.size() +" Failed Servers: " +list.toString(), this, "test");
     
 
                 //: 
 } catch(e) 
             {
-logUtil!.put("Test Error: " +stringBuffer!.toString(), this, "test", e);
+this.logUtil!.put("Test Error: " +stringBuffer!.toString(), this, "test", e);
     
 }
 

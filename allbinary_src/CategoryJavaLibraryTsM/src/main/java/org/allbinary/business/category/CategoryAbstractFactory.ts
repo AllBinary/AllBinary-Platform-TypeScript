@@ -93,7 +93,7 @@ var categoryName = categoryName
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.START, this, "getInstance(String)");
+                                    this.logUtil!.putF(this.commonStrings!.START, this, "getInstance(String)");
     
 
                                     }
@@ -118,7 +118,7 @@ var categoryName = categoryName
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.ENTITYFACTORYERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(String, int)", e);
+                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(String, int)", e);
     
 
                                     }
@@ -144,7 +144,7 @@ var categoryName = categoryName
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.START, this, "getInstance(CategoryInterface, CategoryInterface, String)");
+                                    this.logUtil!.putF(this.commonStrings!.START, this, "getInstance(CategoryInterface, CategoryInterface, String)");
     
 
                                     }
@@ -169,7 +169,7 @@ var categoryName = categoryName
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.ENTITYFACTORYERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(CategoryInterface, CategoryInterface , String, int)", e);
+                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(CategoryInterface, CategoryInterface , String, int)", e);
     
 
                                     }
@@ -193,7 +193,7 @@ var node = node
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.START, this, "getInstance(Node)");
+                                    this.logUtil!.putF(this.commonStrings!.START, this, "getInstance(Node)");
     
 
                                     }
@@ -218,7 +218,7 @@ var node = node
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.ENTITYFACTORYERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(Node, int)", e);
+                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(Node, int)", e);
     
 
                                     }
@@ -244,7 +244,7 @@ var node = node
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.START, this, "getInstance(CategoryInterface, CategoryInterface, Node)");
+                                    this.logUtil!.putF(this.commonStrings!.START, this, "getInstance(CategoryInterface, CategoryInterface, Node)");
     
 
                                     }
@@ -269,7 +269,7 @@ var node = node
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.ENTITYFACTORYERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(CategoryInterface, CategoryInterface, Node, int)", e);
+                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(CategoryInterface, CategoryInterface, Node, int)", e);
     
 
                                     }
@@ -295,7 +295,7 @@ var categoryPropertiesHashMap = categoryPropertiesHashMap
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.START, this, "getInstance(CategoryInterface, CategoryInterface, HashMap)");
+                                    this.logUtil!.putF(this.commonStrings!.START, this, "getInstance(CategoryInterface, CategoryInterface, HashMap)");
     
 
                                     }
@@ -320,7 +320,7 @@ var categoryPropertiesHashMap = categoryPropertiesHashMap
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORYERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(CategoryInterface, CategoryInterface, HashMap)", e);
+                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(CategoryInterface, CategoryInterface, HashMap)", e);
     
 
                                     }

@@ -233,7 +233,7 @@ var evt = evt
                 //: 
 } catch(e) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, this, "saveJButtonActionPerformed", e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "saveJButtonActionPerformed", e);
     
 }
 
@@ -274,7 +274,7 @@ layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Ali
     
 layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGap(0, 256, Short.MAX_VALUE)!.addComponent(this.getGenericProfileActionJPanel(), javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE));
     
-logUtil!.put("Setting Configuration Profile Actions JPanel", this, "genericProfileActionsJListValueChanged");
+this.logUtil!.putF("Setting Configuration Profile Actions JPanel", this, "genericProfileActionsJListValueChanged");
     
 
                                     }
@@ -300,7 +300,7 @@ this.updateProfileActionUI(profileActionNameString);
                 //: 
 } catch(e) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, this, "genericProfileActionsJListValueChanged", e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "genericProfileActionsJListValueChanged", e);
     
 }
 
@@ -331,7 +331,7 @@ this.updateProfileActionUI(newActionName);
                 //: 
 } catch(e) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, this, "okNewProfileActionJButtonActionPerformed", e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "okNewProfileActionJButtonActionPerformed", e);
     
 }
 
@@ -374,7 +374,7 @@ this.selectFirstElement();
                 //: 
 } catch(e) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, this, "deleteActionJButtonActionPerformed", e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "deleteActionJButtonActionPerformed", e);
     
 }
 

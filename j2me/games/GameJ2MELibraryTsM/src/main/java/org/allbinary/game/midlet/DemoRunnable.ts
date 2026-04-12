@@ -68,7 +68,7 @@ this.startDemoGameMidletEvent= new DemoGameMidletEvent(this.demoGameMidlet, Demo
     public run(){
 
         try {
-            logUtil!.put(new StringMaker().
+            this.logUtil!.putF(new StringMaker().
                             append(CommonLabels.getInstance()!.START_LABEL)!.append("GameCanvasRunnableInterface")!.toString(), this, commonStrings!.RUN);
     
 this.demoGameMidlet!.commandAction(MyCommandsFactory.getInstance()!.SET_DISPLAYABLE, ProgressCanvasFactory.getInstance());
@@ -83,13 +83,13 @@ this.demoGameMidlet!.startGameCanvasRunnableInterface();
     
 this.demoGameMidlet!.postDemoSetup();
     
-logUtil!.put(commonStrings!.END_RUNNABLE, this, commonStrings!.RUN);
+this.logUtil!.putF(commonStrings!.END_RUNNABLE, this, commonStrings!.RUN);
     
 
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
     
 }
 

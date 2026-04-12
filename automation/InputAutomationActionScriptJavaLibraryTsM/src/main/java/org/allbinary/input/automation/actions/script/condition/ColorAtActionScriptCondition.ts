@@ -346,7 +346,7 @@ hashMap!.put(ColorAtActionScriptConditionData.MIN_BLUE, Integer.toString(this.ge
     
 hashMap!.put(ColorAtActionScriptConditionData.MAX_BLUE, Integer.toString(this.getColorRangeInterface()!.getMaxBlue()));
     
-logUtil!.put("HashMap: " +hashMap!.toString(), this, "toHashMap()");
+this.logUtil!.putF("HashMap: " +hashMap!.toString(), this, "toHashMap()");
     
 
 
@@ -455,7 +455,7 @@ var frame = frame
         
 ;
     
-logUtil!.put(message, this, "log");
+this.logUtil!.putF(message, this, "log");
     
 }
 

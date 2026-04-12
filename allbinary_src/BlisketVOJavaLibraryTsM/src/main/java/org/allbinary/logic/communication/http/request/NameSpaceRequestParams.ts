@@ -89,7 +89,7 @@ public constructor ()
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
                         
                                     {
-                                    logUtil!.put("Constructing empty", this, this.commonStrings!.CONSTRUCTOR);
+                                    this.logUtil!.putF("Constructing empty", this, this.commonStrings!.CONSTRUCTOR);
     
 
                                     }
@@ -110,7 +110,7 @@ public constructor (httpServletRequest: HttpServletRequest)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
                         
                                     {
-                                    logUtil!.put("Constructing from HttpServletRequest", this, this.commonStrings!.CONSTRUCTOR);
+                                    this.logUtil!.putF("Constructing from HttpServletRequest", this, this.commonStrings!.CONSTRUCTOR);
     
 
                                     }
@@ -131,7 +131,7 @@ public constructor (pageContext: PageContext)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
                         
                                     {
-                                    logUtil!.put("Constructing from PageContext", this, this.commonStrings!.CONSTRUCTOR);
+                                    this.logUtil!.putF("Constructing from PageContext", this, this.commonStrings!.CONSTRUCTOR);
     
 
                                     }
@@ -265,7 +265,7 @@ var packagePropertiesHashMap = packagePropertiesHashMap
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
                         
                                     {
-                                    logUtil!.put("\nAppending Multinode Element: " +multiElementPackage +"[" +indexValue +"] " +selectedValue, this, "createPackageMultiNode");
+                                    this.logUtil!.putF("\nAppending Multinode Element: " +multiElementPackage +"[" +indexValue +"] " +selectedValue, this, "createPackageMultiNode");
     
 
                                     }
@@ -315,7 +315,7 @@ var document = document
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
                         
                                     {
-                                    logUtil!.put("\nAppending Document Root: " +"\nElementName: " +rootElementPackage +"\nProperties: " +packagePropertiesHashMap!.toString(), this, "getRootNode");
+                                    this.logUtil!.putF("\nAppending Document Root: " +"\nElementName: " +rootElementPackage +"\nProperties: " +packagePropertiesHashMap!.toString(), this, "getRootNode");
     
 
                                     }
@@ -332,7 +332,7 @@ document.appendChild(node);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
                         
                                     {
-                                    logUtil!.put("\nAppended Document Created: " +DomDocumentHelper.toString(document), this, "getRootNode");
+                                    this.logUtil!.putF("\nAppended Document Created: " +DomDocumentHelper.toString(document), this, "getRootNode");
     
 
                                     }
@@ -351,7 +351,7 @@ document.appendChild(node);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
                         
                                     {
-                                    logUtil!.put("\nUsing Existing Root Node", this, "getRootNode");
+                                    this.logUtil!.putF("\nUsing Existing Root Node", this, "getRootNode");
     
 
                                     }
@@ -378,7 +378,7 @@ var nextPackagePropertiesHashMap = nextPackagePropertiesHashMap
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
                         
                                     {
-                                    logUtil!.put(new StringMaker().
+                                    this.logUtil!.putF(new StringMaker().
                             append("\nAdding Any New Properties: ")!.append(nextPackagePropertiesHashMap!.toString())!.append("\nto node: ")!.append(node.getNodeName())!.toString(), this, "addNewProperties");
     
 
@@ -449,7 +449,7 @@ index < size; index++)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
                         
                                     {
-                                    logUtil!.put("\nIf property: \"" +nextPropertyName +" is the same as:\n" +"Node: " +node.getNodeName() +" then: " +propertyValue +"==" +existingElementNodeTextNodeValue, this, "addNewProperties");
+                                    this.logUtil!.putF("\nIf property: \"" +nextPropertyName +" is the same as:\n" +"Node: " +node.getNodeName() +" then: " +propertyValue +"==" +existingElementNodeTextNodeValue, this, "addNewProperties");
     
 
                                     }
@@ -462,7 +462,7 @@ index < size; index++)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
                         
                                     {
-                                    logUtil!.put("At least one Property from NameSpaceRequest Package was different from Node", this, "addNewProperties");
+                                    this.logUtil!.putF("At least one Property from NameSpaceRequest Package was different from Node", this, "addNewProperties");
     
 
                                     }
@@ -482,7 +482,7 @@ index < size; index++)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
                         
                                     {
-                                    logUtil!.put("Adding a new Property: " +nextPropertyName +"=" +propertyValue, this, "addNewProperties");
+                                    this.logUtil!.putF("Adding a new Property: " +nextPropertyName +"=" +propertyValue, this, "addNewProperties");
     
 
                                     }
@@ -518,7 +518,7 @@ var node = node
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
                         
                                     {
-                                    logUtil!.put("\nComparing the value property in: " +nextPackagePropertiesHashMap!.toString() +"\nto node child leaves of node: " +node.getNodeName(), this, "isElementValueTextNodeEqual");
+                                    this.logUtil!.putF("\nComparing the value property in: " +nextPackagePropertiesHashMap!.toString() +"\nto node child leaves of node: " +node.getNodeName(), this, "isElementValueTextNodeEqual");
     
 
                                     }
@@ -557,7 +557,7 @@ var node = node
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
                         
                                     {
-                                    logUtil!.put("Value Node is the same", this, "isElementValueTextNodeEqual");
+                                    this.logUtil!.putF("Value Node is the same", this, "isElementValueTextNodeEqual");
     
 
                                     }
@@ -602,7 +602,7 @@ var elementNodeVector = elementNodeVector
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
                         
                                     {
-                                    logUtil!.put("\nComparing Properties of: " +elementNodeVector!.length +" Nodes", this, "isElementValueTextNodeUnique");
+                                    this.logUtil!.putF("\nComparing Properties of: " +elementNodeVector!.length +" Nodes", this, "isElementValueTextNodeUnique");
     
 
                                     }
@@ -701,7 +701,7 @@ index < size; index++)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
                         
                                     {
-                                    logUtil!.put(new StringMaker().
+                                    this.logUtil!.putF(new StringMaker().
                             append("\nTrying to Add Child to Node: ")!.append(node.getNodeName())!.append("\nwith new PackageName: ")!.append(nextPackageName)!.toString(), this, "addChildren");
     
 
@@ -723,7 +723,7 @@ index < size; index++)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
                         
                                     {
-                                    logUtil!.put("\nDocument Contains " +elementNodeVector!.length +" Node(s) With Same Name", this, "addChildren");
+                                    this.logUtil!.putF("\nDocument Contains " +elementNodeVector!.length +" Node(s) With Same Name", this, "addChildren");
     
 
                                     }
@@ -754,9 +754,9 @@ node= nextNode;
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
                         
                                     {
-                                    logUtil!.put("\nAppended Package: " +node.getNodeName(), this, "addChildren");
+                                    this.logUtil!.putF("\nAppended Package: " +node.getNodeName(), this, "addChildren");
     
-logUtil!.put("\nAppended Document Created: " +DomDocumentHelper.toString(document), this, "addChildren");
+this.logUtil!.putF("\nAppended Document Created: " +DomDocumentHelper.toString(document), this, "addChildren");
     
 
                                     }
@@ -772,7 +772,7 @@ logUtil!.put("\nAppended Document Created: " +DomDocumentHelper.toString(documen
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
                         
                                     {
-                                    logUtil!.put("Package is MultiNode: just append", this, "addChildren");
+                                    this.logUtil!.putF("Package is MultiNode: just append", this, "addChildren");
     
 
                                     }
@@ -791,7 +791,7 @@ node= nextNode;
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
                         
                                     {
-                                    logUtil!.put("\nAppended Multinode Element: " +DomDocumentHelper.toString(document), this, "addChildren");
+                                    this.logUtil!.putF("\nAppended Multinode Element: " +DomDocumentHelper.toString(document), this, "addChildren");
     
 
                                     }
@@ -804,7 +804,7 @@ node= nextNode;
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
                         
                                     {
-                                    logUtil!.put("Value Node already exists: Now compare (properties to leaf nodes)", this, "addChildren");
+                                    this.logUtil!.putF("Value Node already exists: Now compare (properties to leaf nodes)", this, "addChildren");
     
 
                                     }
@@ -823,7 +823,7 @@ node= this.addNewProperties(document, nodeNameDuplicateNode, nextPackageProperti
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
                         
                                     {
-                                    logUtil!.put("\nDuplicate Node Found: Moving to next child ^", this, "addChildre");
+                                    this.logUtil!.putF("\nDuplicate Node Found: Moving to next child ^", this, "addChildre");
     
 
                                     }
@@ -852,7 +852,7 @@ var document = document
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
                         
                                     {
-                                    logUtil!.put(new StringMaker().
+                                    this.logUtil!.putF(new StringMaker().
                             append("NameSpace key: ")!.append(key)!.append(" Value: ")!.append(value)!.toString(), this, "addNameSpace");
     
 
@@ -970,7 +970,7 @@ index < size; index++)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
                         
                                     {
-                                    logUtil!.put("NameSpace Request Size: " +keys.size(), this, "toHashMap");
+                                    this.logUtil!.putF("NameSpace Request Size: " +keys.size(), this, "toHashMap");
     
 
                                     }
@@ -1009,7 +1009,7 @@ i < keySize; i++)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
                         
                                     {
-                                    logUtil!.put("Request Param Class: " +className, this, "toHashMap");
+                                    this.logUtil!.putF("Request Param Class: " +className, this, "toHashMap");
     
 
                                     }
@@ -1036,7 +1036,7 @@ i < keySize; i++)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
                         
                                     {
-                                    logUtil!.put("Not NameSpace key: " +key +" Value: " +value, this, "toHashMap()");
+                                    this.logUtil!.putF("Not NameSpace key: " +key +" Value: " +value, this, "toHashMap()");
     
 
                                     }
@@ -1085,7 +1085,7 @@ hashMap!.put(key.toCharArray()
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
                         
                                     {
-                                    logUtil!.put("Not NameSpace key: " +key +" Value: " +values[0], this, "toHashMap()");
+                                    this.logUtil!.putF("Not NameSpace key: " +key +" Value: " +values[0], this, "toHashMap()");
     
 
                                     }
@@ -1114,7 +1114,7 @@ hashMap!.put(key.toCharArray()
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
                         
                                     {
-                                    logUtil!.put("NameSpaceRequestParams: " +this.getMap()!.toString() +"\ntoHashMap(): " +hashMap!.toString() +"\nDocument Created: " +DomDocumentHelper.toString(document), this, "toHashMap()");
+                                    this.logUtil!.putF("NameSpaceRequestParams: " +this.getMap()!.toString() +"\ntoHashMap(): " +hashMap!.toString() +"\nDocument Created: " +DomDocumentHelper.toString(document), this, "toHashMap()");
     
 
                                     }

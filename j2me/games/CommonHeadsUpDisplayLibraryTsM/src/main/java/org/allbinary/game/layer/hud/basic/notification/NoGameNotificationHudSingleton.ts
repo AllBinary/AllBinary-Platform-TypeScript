@@ -80,7 +80,7 @@ this.gameNotificationHud= new GameNotificationHud(basicHudFactory!.TOPCENTER, ba
         
 ;
     
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e);
     
 }
 

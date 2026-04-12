@@ -21,6 +21,9 @@
 import { CommonStrings } from "../../org/allbinary/string/CommonStrings.js";
 
     
+import { TagStrings } from "../../tags/TagStrings.js";
+
+    
 
 export class ModifyTable
             extends Object
@@ -29,6 +32,10 @@ export class ModifyTable
         
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
+        
+        
+
+    readonly tagStrings: TagStrings = TagStrings.getInstance()!;
         
         
 

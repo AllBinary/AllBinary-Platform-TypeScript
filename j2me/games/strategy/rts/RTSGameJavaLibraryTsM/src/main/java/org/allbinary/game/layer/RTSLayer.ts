@@ -645,7 +645,7 @@ this.animationInterface= this.indexedButShouldBeRotationAnimationInterface;
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "processTick", e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, "processTick", e);
     
 }
 

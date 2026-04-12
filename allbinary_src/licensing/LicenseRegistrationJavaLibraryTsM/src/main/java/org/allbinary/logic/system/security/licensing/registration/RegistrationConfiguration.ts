@@ -119,7 +119,7 @@ private constructor (){
         
 ;
     
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e);
     
 }
 
@@ -168,7 +168,7 @@ PreLogUtil.put(new StringMaker().
     
 
         try {
-            logUtil!.put(new StringMaker().
+            this.logUtil!.putF(new StringMaker().
                             append("Write Configuration: ")!.append(this.toString())!.toString(), this, "write");
     
 

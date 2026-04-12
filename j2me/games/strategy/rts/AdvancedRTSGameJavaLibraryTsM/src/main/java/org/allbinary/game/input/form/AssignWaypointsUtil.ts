@@ -149,7 +149,7 @@ unitWaypointBehavior!.onWaypointEvent(WAYPOINT_EVENT);
         
 ;
     
-logUtil!.put(commonStrings!.EXCEPTION, this, "set", e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, "set", e);
     
 }
 

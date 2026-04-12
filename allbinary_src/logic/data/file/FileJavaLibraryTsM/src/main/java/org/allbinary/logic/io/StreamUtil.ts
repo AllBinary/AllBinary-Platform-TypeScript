@@ -183,7 +183,7 @@ var closeable = closeable
         
 ;
     
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CLOSE, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CLOSE, e);
     
 
 

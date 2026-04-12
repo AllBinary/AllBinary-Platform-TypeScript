@@ -132,6 +132,12 @@ new object: Thread()
                                 
     public run(){
 
+    var logUtil: LogUtil = LogUtil.getInstance()!;
+        
+        
+;
+    
+
         try {
             
     var imageUtil: ImageUtil = ImageUtil.getInstance()!;
@@ -281,6 +287,12 @@ new object: Thread()
                                 
     public run(){
 
+    var logUtil: LogUtil = LogUtil.getInstance()!;
+        
+        
+;
+    
+
         try {
             
     var imageProcessorInput: ImageProcessorInput = this@ResizeImageJPanel.getImageProcessorInput()!;
@@ -347,6 +359,12 @@ new object: Thread()
                                 
     public run(){
 
+    var logUtil: LogUtil = LogUtil.getInstance()!;
+        
+        
+;
+    
+
         try {
             
     var imageProcessorInput: ImageProcessorInput = this@ResizeImageJPanel.getImageProcessorInput()!;
@@ -412,6 +430,12 @@ new object: Thread()
                                 {
                                 
     public run(){
+
+    var logUtil: LogUtil = LogUtil.getInstance()!;
+        
+        
+;
+    
 
         try {
             

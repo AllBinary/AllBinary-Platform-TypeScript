@@ -111,7 +111,7 @@ this.yBorder= yBorder;
     
 this.updateRectangle();
     
-logUtil!.put(new StringMaker().
+this.logUtil!.putF(new StringMaker().
                             append("Created: ")!.append(this.toString())!.toString(), this, this.commonStrings!.CONSTRUCTOR);
     
 }
@@ -155,7 +155,7 @@ this.animationY= point.getY();
                 //: 
 } catch(e) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, this, "updateRectangle", e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "updateRectangle", e);
     
 }
 

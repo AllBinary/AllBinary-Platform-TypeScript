@@ -290,7 +290,7 @@ this.weblisketSession!.setPassword(newPassword);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "invalidateSession()", e);
+                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "invalidateSession()", e);
     
 
                                     }
@@ -328,7 +328,7 @@ this.weblisketSession!.setPassword(newPassword);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "invalidateSession()", e);
+                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "invalidateSession()", e);
     
 
                                     }
@@ -405,7 +405,7 @@ stringBuffer!.append(" > ");
     
 stringBuffer!.appendlong(timeCreated);
     
-logUtil!.put(stringBuffer!.toString(), this, "isSessionOld()");
+this.logUtil!.putF(stringBuffer!.toString(), this, "isSessionOld()");
     
 
                                     }
@@ -429,7 +429,7 @@ logUtil!.put(stringBuffer!.toString(), this, "isSessionOld()");
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.AUTHENTICATION))
                         
                                     {
-                                    logUtil!.put("Role Is Not In Session", this, "isSessionOld()");
+                                    this.logUtil!.putF("Role Is Not In Session", this, "isSessionOld()");
     
 
                                     }
@@ -453,7 +453,7 @@ logUtil!.put(stringBuffer!.toString(), this, "isSessionOld()");
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "isSessionOld()", e);
+                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "isSessionOld()", e);
     
 
                                     }
@@ -528,7 +528,7 @@ stringBuffer!.append(" > ");
     
 stringBuffer!.appendlong(timePassed);
     
-logUtil!.put(stringBuffer!.toString(), this, "isRarelyUsedSession()");
+this.logUtil!.putF(stringBuffer!.toString(), this, "isRarelyUsedSession()");
     
 
                                     }
@@ -541,7 +541,7 @@ logUtil!.put(stringBuffer!.toString(), this, "isRarelyUsedSession()");
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.AUTHENTICATION))
                         
                                     {
-                                    logUtil!.put("Role Is Not In Session", this, "isRarelyUsedSession()");
+                                    this.logUtil!.putF("Role Is Not In Session", this, "isRarelyUsedSession()");
     
 
                                     }
@@ -581,7 +581,7 @@ logUtil!.put(stringBuffer!.toString(), this, "isRarelyUsedSession()");
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "isRoleValid()", e);
+                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "isRoleValid()", e);
     
 
                                     }
@@ -632,7 +632,7 @@ stringBuffer!.append("Trying New login<p>");
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "validRole()", e);
+                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "validRole()", e);
     
 
                                     }
@@ -687,7 +687,7 @@ stringBuffer!.append("Trying New login<p>");
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "invalidRole()", e);
+                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "invalidRole()", e);
     
 
                                     }
@@ -782,7 +782,7 @@ index < size; index++)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "isAuthenticationSessionValid()", e);
+                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "isAuthenticationSessionValid()", e);
     
 
                                     }
@@ -807,7 +807,7 @@ index < size; index++)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
                                     {
-                                    logUtil!.put("Starting for User: " +this.userName +" Attempt: " +this.weblisketSession!.getAttempts(), this, "processIfNewLogin()");
+                                    this.logUtil!.putF("Starting for User: " +this.userName +" Attempt: " +this.weblisketSession!.getAttempts(), this, "processIfNewLogin()");
     
 
                                     }
@@ -893,7 +893,7 @@ this.nextAttempt();
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "processIfNewLogin()", e);
+                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "processIfNewLogin()", e);
     
 
                                     }
@@ -955,7 +955,7 @@ this.nextAttempt();
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "isSetToInvalidate()", e);
+                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "isSetToInvalidate()", e);
     
 
                                     }
@@ -994,7 +994,7 @@ this.getFormData();
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    logUtil!.put("Started", this, "doStartTag()");
+                                    this.logUtil!.putF("Started", this, tagStrings!.DO_START_TAG);
     
 
                                     }
@@ -1013,7 +1013,7 @@ this.getFormData();
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    logUtil!.put("Change Password", this, "doStartTag()");
+                                    this.logUtil!.putF("Change Password", this, tagStrings!.DO_START_TAG);
     
 
                                     }
@@ -1058,7 +1058,7 @@ this.getFormData();
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    logUtil!.put("INVALIDATESESSION", this, "doStartTag()");
+                                    this.logUtil!.putF("INVALIDATESESSION", this, tagStrings!.DO_START_TAG);
     
 
                                     }
@@ -1087,7 +1087,7 @@ this.getFormData();
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    logUtil!.put("Processing Invalidation", this, "doStartTag()");
+                                    this.logUtil!.putF("Processing Invalidation", this, tagStrings!.DO_START_TAG);
     
 
                                     }
@@ -1125,7 +1125,7 @@ pageContext!.getOut()!.print("Please login again.<p>");
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    logUtil!.put("Preparing session for invalidation", this, "doStartTag()");
+                                    this.logUtil!.putF("Preparing session for invalidation", this, tagStrings!.DO_START_TAG);
     
 
                                     }
@@ -1173,7 +1173,7 @@ pageContext!.getOut()!.print("Please login again.<p>");
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    logUtil!.put("Authenticated session is valid", this, "doStartTag()");
+                                    this.logUtil!.putF("Authenticated session is valid", this, tagStrings!.DO_START_TAG);
     
 
                                     }
@@ -1216,7 +1216,7 @@ pageContext!.getOut()!.print("Please login again.<p>");
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    logUtil!.put("Processing new login.", this, "doStartTag()");
+                                    this.logUtil!.putF("Processing new login.", this, tagStrings!.DO_START_TAG);
     
 
                                     }
@@ -1229,7 +1229,7 @@ pageContext!.getOut()!.print("Please login again.<p>");
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    logUtil!.put("Role is valid - Processing new login", this, "doStartTag()");
+                                    this.logUtil!.putF("Role is valid - Processing new login", this, tagStrings!.DO_START_TAG);
     
 
                                     }
@@ -1267,7 +1267,7 @@ pageContext!.getOut()!.print(validRole());
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    logUtil!.put("Role is not valid - Processing new login", this, "doStartTag()");
+                                    this.logUtil!.putF("Role is not valid - Processing new login", this, tagStrings!.DO_START_TAG);
     
 
                                     }
@@ -1308,7 +1308,7 @@ pageContext!.getOut()!.print(invalidRole());
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    logUtil!.put("Invalid Login", this, "doStartTag()");
+                                    this.logUtil!.putF("Invalid Login", this, tagStrings!.DO_START_TAG);
     
 
                                     }
@@ -1351,7 +1351,7 @@ stringBuffer!.append(" Command: ");
     
 stringBuffer!.append(this.command);
     
-logUtil!.put(stringBuffer!.toString(), this, "doStartTag()");
+this.logUtil!.putF(stringBuffer!.toString(), this, tagStrings!.DO_START_TAG);
     
 
                                     }

@@ -135,7 +135,7 @@ this.yBorder= yBorder;
     
 this.updateRectangle();
     
-logUtil!.put(new StringMaker().
+this.logUtil!.putF(new StringMaker().
                             append("Created: ")!.append(this.toString())!.toString(), this, commonStrings!.CONSTRUCTOR);
     
 }
@@ -188,7 +188,7 @@ this.hintAnimationY= animationY -32;
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "updateRectangle", e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, "updateRectangle", e);
     
 }
 

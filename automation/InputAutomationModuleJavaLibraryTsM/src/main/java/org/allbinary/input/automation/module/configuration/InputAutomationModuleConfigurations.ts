@@ -124,7 +124,7 @@ this.setHashMap(new HashMap<any, any>());
         
 ;
     
-logUtil!.put("Number Of Module(s) Specified: " +nameNodeList!.getLength(), this, "Contructor");
+this.logUtil!.putF("Number Of Module(s) Specified: " +nameNodeList!.getLength(), this, "Contructor");
     
 
 
@@ -164,7 +164,7 @@ this.setHashMap(new HashMap<any, any>());
         
 ;
     
-logUtil!.put("Number Of Module(s) Specified: " +nameNodeList!.getLength(), this, "Contructor");
+this.logUtil!.putF("Number Of Module(s) Specified: " +nameNodeList!.getLength(), this, "Contructor");
     
 
 

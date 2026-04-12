@@ -81,7 +81,7 @@ stringMaker!.appendint(index)!.append(CommonSeps.getInstance()!.FORWARD_SLASH)!.
     
 }
 
-LogUtil.getInstance()!.put(stringMaker!.toString(), "main", "main");
+LogUtil.getInstance()!.putF(stringMaker!.toString(), "main", "main");
     
 }
 

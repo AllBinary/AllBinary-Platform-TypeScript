@@ -126,7 +126,7 @@ this.logic= logic;
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e);
+                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e);
     
 
                                     }
@@ -181,7 +181,7 @@ this.logic= logic;
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "validationInfo()", e);
+                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "validationInfo()", e);
     
 
                                     }
@@ -230,7 +230,7 @@ stringBuffer!.append("\nRequest URI: ");
     
 stringBuffer!.append(request.getRequestURI());
     
-logUtil!.put(stringBuffer!.toString(), this, "doStartTag");
+this.logUtil!.putF(stringBuffer!.toString(), this, tagStrings!.DO_START_TAG);
     
 
                                     }
@@ -261,7 +261,7 @@ stringBuffer!.append("\nLogic includes body if true=");
     
 stringBuffer!.appendboolean(this.logic);
     
-logUtil!.put(stringBuffer!.toString(), this, "doStartTag");
+this.logUtil!.putF(stringBuffer!.toString(), this, tagStrings!.DO_START_TAG);
     
 
                                     }
@@ -315,7 +315,7 @@ stringBuffer!.append("\nLogic skips body if true=");
     
 stringBuffer!.appendboolean(this.logic);
     
-logUtil!.put(stringBuffer!.toString(), this, "doStartTag");
+this.logUtil!.putF(stringBuffer!.toString(), this, tagStrings!.DO_START_TAG);
     
 
                                     }
@@ -381,7 +381,7 @@ AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    logUtil!.put("Tag Ended", this, "doEndTag");
+                                    this.logUtil!.putF("Tag Ended", this, "doEndTag");
     
 
                                     }

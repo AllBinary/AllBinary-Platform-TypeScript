@@ -162,7 +162,7 @@ primaryThreadPool!.runTask(runnable);
         
 ;
     
-logUtil!.put(thread.toString(), this, commonStrings!.CONSTRUCTOR);
+this.logUtil!.putF(thread.toString(), this, commonStrings!.CONSTRUCTOR);
     
 
 

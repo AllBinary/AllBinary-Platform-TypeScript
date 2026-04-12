@@ -74,7 +74,7 @@ this.setRunning(false);
         
 ;
     
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
     
 }
 

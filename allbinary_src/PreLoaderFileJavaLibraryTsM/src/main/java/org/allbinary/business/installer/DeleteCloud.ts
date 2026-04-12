@@ -149,7 +149,7 @@ stringBuffer!.append(" - ");
     
 stringBuffer!.appendint(end);
     
-logUtil!.put(stringBuffer!.toString(), this, "initialize()");
+this.logUtil!.putF(stringBuffer!.toString(), this, "initialize()");
     
 
 
@@ -188,7 +188,7 @@ index < end; index++)
 
 }
 
-logUtil!.put("Deleted Files From Cloud", this, "initialize()");
+this.logUtil!.putF("Deleted Files From Cloud", this, "initialize()");
     
 
                                     }
@@ -203,7 +203,7 @@ logUtil!.put("Deleted Files From Cloud", this, "initialize()");
                 //: 
 } catch(e) 
             {
-logUtil!.put("Unable to copy installer files into cloud", this, "initialize()", e);
+this.logUtil!.put("Unable to copy installer files into cloud", this, "initialize()", e);
     
 
 

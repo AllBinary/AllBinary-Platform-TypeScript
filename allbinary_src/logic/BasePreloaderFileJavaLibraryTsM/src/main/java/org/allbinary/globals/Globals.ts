@@ -100,7 +100,7 @@ stringBuffer!.append(" ClassLoader: ");
     
 stringBuffer!.append(classLoader!.constructor.name.toString()!);
     
-logUtil!.put(stringBuffer!.toString(), this, commonStrings!.INIT);
+this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.INIT);
     
 
     var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
@@ -126,7 +126,7 @@ stringBuffer!.append(CommonSeps.getInstance()!.SPACE);
     
 stringBuffer!.append(URLGLOBALS.getWebappPath());
     
-logUtil!.put(stringBuffer!.toString(), this, commonStrings!.INIT);
+this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.INIT);
     
 
                                     }
@@ -137,7 +137,7 @@ stringBuffer!.append("Webapp Path Set To: ");
     
 stringBuffer!.append(URLGLOBALS.getWebappPath());
     
-logUtil!.put(stringBuffer!.toString(), this, commonStrings!.INIT);
+this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.INIT);
     
 }
 

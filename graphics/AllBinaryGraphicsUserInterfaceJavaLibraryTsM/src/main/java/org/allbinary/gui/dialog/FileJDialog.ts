@@ -129,7 +129,7 @@ pack();
 
     jFileChooser1ActionPerformed(evt: java.awt.event.ActionEvent){
 var evt = evt
-logUtil!.put("Starting Action Command: " +evt.getActionCommand(), this, "ActionPerformed");
+this.logUtil!.putF("Starting Action Command: " +evt.getActionCommand(), this, "ActionPerformed");
     
 
     var files: File[] = this.getJFileChooser1()!.getSelectedFiles()!;

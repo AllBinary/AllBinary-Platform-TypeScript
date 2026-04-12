@@ -117,7 +117,7 @@ pageContext!.getOut()!.print(result);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "search()", e);
+                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "search()", e);
     
 
                                     }
@@ -136,7 +136,7 @@ pageContext!.getOut()!.print("Exception: " +e +"<br>");
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.LICENSINGERROR))
                         
                                     {
-                                    logUtil!.put("Exception in Exception Handling", this, "search()", e);
+                                    this.logUtil!.put("Exception in Exception Handling", this, "search()", e);
     
 
                                     }
@@ -207,7 +207,7 @@ pageContext!.getOut()!.print(result);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "viewSummary()", e);
+                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "viewSummary()", e);
     
 
                                     }
@@ -226,7 +226,7 @@ pageContext!.getOut()!.print("Exception: " +e +"<br>");
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.LICENSINGERROR))
                         
                                     {
-                                    logUtil!.put("Exception in Exception Handling", this, "viewSummary())", e);
+                                    this.logUtil!.put("Exception in Exception Handling", this, "viewSummary())", e);
     
 
                                     }

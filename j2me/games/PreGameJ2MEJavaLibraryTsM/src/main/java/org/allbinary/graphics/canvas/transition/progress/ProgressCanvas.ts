@@ -212,7 +212,7 @@ var cmdListener = cmdListener
 
 
     public start(){
-logUtil!.put(commonStrings!.START, this, commonStrings!.START_METHOD_NAME);
+this.logUtil!.putF(commonStrings!.START, this, commonStrings!.START_METHOD_NAME);
     
 this.setBackground(true);
     
@@ -243,7 +243,7 @@ this.inProgress= true;
 
     public startBackground(background: boolean){
 var background = background
-logUtil!.put(commonStrings!.START, this, START_BACKGROUND);
+this.logUtil!.putF(commonStrings!.START, this, START_BACKGROUND);
     
 
     var myFont: MyFont = MyFont.getInstance()!;
@@ -285,7 +285,7 @@ this.inGameProcessor= IN_GAME_PROCESSOR;
 
 
     public end(){
-logUtil!.put(commonStrings!.START, this, commonStrings!.END_METHOD_NAME);
+this.logUtil!.putF(commonStrings!.START, this, commonStrings!.END_METHOD_NAME);
     
 this.gauge.setValue(this.getMaxValue());
     

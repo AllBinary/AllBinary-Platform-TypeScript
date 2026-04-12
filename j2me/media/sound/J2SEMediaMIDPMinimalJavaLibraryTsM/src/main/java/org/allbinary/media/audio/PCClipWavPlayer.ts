@@ -109,7 +109,7 @@ clip= this.create(audioInputStream);
                                 )
                         
                                     {
-                                    logUtil!.put("Clip was null", this, commonStrings!.CONSTRUCTOR, new Error());
+                                    this.logUtil!.put("Clip was null", this, commonStrings!.CONSTRUCTOR, new Error());
     
 
 
@@ -122,7 +122,7 @@ clip= this.create(audioInputStream);
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e);
     
 }
 

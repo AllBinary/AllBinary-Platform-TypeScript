@@ -67,7 +67,7 @@ this.setInputAutomationModuleInterfaceArray(inputAutomationModuleInterfaceArray)
                 //: 
 } catch(e) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.CONSTRUCTOR, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.CONSTRUCTOR, e);
     
 }
 

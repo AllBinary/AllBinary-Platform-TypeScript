@@ -104,7 +104,7 @@ this.cssStyleElementVector= StylesValidationFactory.getInstance(hashMap);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.START, this, commonStrings!.IS_VALID);
+                                    this.logUtil!.putF(this.commonStrings!.START, this, commonStrings!.IS_VALID);
     
 
                                     }
@@ -150,7 +150,7 @@ i < size; i++)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("End: " +isValid, this, commonStrings!.IS_VALID);
+                                    this.logUtil!.putF("End: " +isValid, this, commonStrings!.IS_VALID);
     
 
                                     }
@@ -169,7 +169,7 @@ i < size; i++)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put("Failed to validate form", this, commonStrings!.IS_VALID, e);
+                                    this.logUtil!.put("Failed to validate form", this, commonStrings!.IS_VALID, e);
     
 
                                     }
@@ -210,7 +210,7 @@ i < size; i++)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e);
+                                    this.logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e);
     
 
                                     }

@@ -56,7 +56,7 @@ var frame = frame
         
 ;
     
-logUtil!.put(commonStrings!.START, "CaptureWorkerUtil", "processProfileActionConditions");
+logUtil!.putF(commonStrings!.START, "CaptureWorkerUtil", "processProfileActionConditions");
     
 
     var size: number = vector.length!;

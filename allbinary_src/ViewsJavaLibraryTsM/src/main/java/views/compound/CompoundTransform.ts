@@ -83,7 +83,7 @@ this.setURIResolver(new StoreUriResolver(this.getTransformInfoInterface(), this.
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("\nObjectConfig: \n" +objectConfig!.toString(), this, "CompoundTransform(");
+                                    this.logUtil!.putF("\nObjectConfig: \n" +objectConfig!.toString(), this, commonStrings!.CONSTRUCTOR);
     
 
                                     }

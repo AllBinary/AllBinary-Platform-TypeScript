@@ -18,17 +18,20 @@
 
 
 
+import { NullUtil } from "../../../../../org/allbinary/logic/NullUtil.js";
 
-/*actual*/ export class LogFactory
+    
+
+export class LogFactory
             extends Object
          {
         
 
     /*actual*/ public static getInstance(specialMessage: string, anyType: any = {}, functionName: string, exception: any = {}): Log{
-var specialMessage = specialMessage
-var anyType = anyType
-var functionName = functionName
-var exception = exception
+    //var specialMessage = specialMessage
+    //var anyType = anyType
+    //var functionName = functionName
+    //var exception = exception
 
 
 
@@ -38,15 +41,15 @@ var exception = exception
 }
 
 
-    /*actual*/ public static getInstance(specialMessage: string, anyType: any = {}, functionName: string): Log{
-var specialMessage = specialMessage
-var anyType = anyType
-var functionName = functionName
+    /*actual*/ public static getInstanceF(specialMessage: string, anyType: any = {}, functionName: string): Log{
+    //var specialMessage = specialMessage
+    //var anyType = anyType
+    //var functionName = functionName
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new Log(specialMessage, anyType, functionName);
+                        return new Log(specialMessage, anyType, functionName, NullUtil.getInstance()!.NULL_OBJECT);
     
 }
 

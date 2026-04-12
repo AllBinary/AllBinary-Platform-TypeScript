@@ -301,7 +301,13 @@ this.handleImage(imageArray, index, originalImageArray[index]!);
                                 
     public done(resource: any = {}){
 var resource = resource
-logUtil!.put(resourceCallbackStrings!.DONE +image.getName(), this, resourceCallbackStrings!.HANDLE_IMAGE);
+
+    var logUtil: LogUtil = LogUtil.getInstance()!;
+        
+        
+;
+    
+logUtil!.putF(resourceCallbackStrings!.DONE +image.getName(), this, resourceCallbackStrings!.HANDLE_IMAGE);
     
 copy(imageArray, index, image, image3);
     
@@ -309,7 +315,13 @@ copy(imageArray, index, image, image3);
 
     public error(e: Error){
 var e = e
-logUtil!.put(new StringMaker().
+
+    var logUtil: LogUtil = LogUtil.getInstance()!;
+        
+        
+;
+    
+logUtil!.putF(new StringMaker().
                             append(commonStrings!.EXCEPTION_LABEL)!.append(resourceCallbackStrings!.ERROR)!.append(image.getName())!.toString(), this, resourceCallbackStrings!.HANDLE_IMAGE);
     
 }
@@ -329,7 +341,7 @@ image3.addCallback(callback);
                                     }
                                 
                         else {
-                            logUtil!.put(resourceCallbackStrings!.NULL +image.isMutable(), this, resourceCallbackStrings!.HANDLE_IMAGE);
+                            this.logUtil!.putF(resourceCallbackStrings!.NULL +image.isMutable(), this, resourceCallbackStrings!.HANDLE_IMAGE);
     
 
                         }
@@ -364,7 +376,7 @@ imageArray[index]= image2;
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION_LABEL +resourceCallbackStrings!.DONE, this, resourceCallbackStrings!.HANDLE_IMAGE);
+this.logUtil!.putF(commonStrings!.EXCEPTION_LABEL +resourceCallbackStrings!.DONE, this, resourceCallbackStrings!.HANDLE_IMAGE);
     
 }
 

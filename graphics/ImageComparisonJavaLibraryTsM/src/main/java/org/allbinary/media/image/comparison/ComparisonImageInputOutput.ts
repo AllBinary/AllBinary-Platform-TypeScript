@@ -112,7 +112,7 @@ this.save(imageComparisonResult, imageComparisonResultFrameCacheable!.getFrame()
                                     }
                                 
                         else {
-                            logUtil!.put("Comparison Results Not Available for Output: " +frame, this, commonStrings!.SAVE);
+                            this.logUtil!.putF("Comparison Results Not Available for Output: " +frame, this, commonStrings!.SAVE);
     
 
                         }
@@ -121,7 +121,7 @@ this.save(imageComparisonResult, imageComparisonResultFrameCacheable!.getFrame()
                                     }
                                 
                         else {
-                            logUtil!.put("No Comparison Results: for first frame: " +frame, this, commonStrings!.SAVE);
+                            this.logUtil!.putF("No Comparison Results: for first frame: " +frame, this, commonStrings!.SAVE);
     
 
                         }
@@ -194,9 +194,9 @@ filePathStringBuffer2!.append(MediaDataFactory.getInstance()!.JPG.getExtension()
         
 ;
     
-logUtil!.put("Comparison Image File Path 1: " +filePath1, this, commonStrings!.SAVE);
+this.logUtil!.putF("Comparison Image File Path 1: " +filePath1, this, commonStrings!.SAVE);
     
-logUtil!.put("Comparison Image File Path 2: " +filePath2, this, commonStrings!.SAVE);
+this.logUtil!.putF("Comparison Image File Path 2: " +filePath2, this, commonStrings!.SAVE);
     
 
     var bufferedImageArray: BufferedImage[] = new Array(2);

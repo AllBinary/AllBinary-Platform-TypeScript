@@ -64,7 +64,7 @@ public constructor (tileTypeToTileIdsMap: Hashtable<any, any>, maxTileId: number
         
 ;
     
-logUtil!.put(commonStrings!.START, this, commonStrings!.INIT);
+this.logUtil!.putF(commonStrings!.START, this, commonStrings!.INIT);
     
 this.maxTileId= maxTileId;
     
@@ -131,7 +131,7 @@ key= enumeration.nextElement()!;
 
                          as String;
     
-logUtil!.put(key, this, commonStrings!.INIT);
+this.logUtil!.putF(key, this, commonStrings!.INIT);
     
 idsWithTypeList= tileTypeToTileIdsMap!.get(key);
 

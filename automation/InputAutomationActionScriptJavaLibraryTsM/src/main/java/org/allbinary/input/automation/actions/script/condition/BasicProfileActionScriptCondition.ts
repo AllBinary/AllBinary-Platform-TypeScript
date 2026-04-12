@@ -364,7 +364,7 @@ jMenu!.add(jMenuItemImage);
 
     public addProcessor(profileActionProcessorInterface: ProfileActionScriptProcessorInterface){
 var profileActionProcessorInterface = profileActionProcessorInterface
-logUtil!.put(this.commonStrings!.START, this, "addInput");
+this.logUtil!.putF(this.commonStrings!.START, this, "addInput");
     
 this.getProfileActionProcessorInterfaceVector()!.add(profileActionProcessorInterface);
     
@@ -375,7 +375,7 @@ this.add(profileActionProcessorInterface);
 
     public removeProcessor(profileActionProcessorInterface: ProfileActionScriptProcessorInterface){
 var profileActionProcessorInterface = profileActionProcessorInterface
-logUtil!.put(this.commonStrings!.START, this, "removeInput");
+this.logUtil!.putF(this.commonStrings!.START, this, "removeInput");
     
 this.getProfileActionProcessorInterfaceVector()!.remove(profileActionProcessorInterface);
     
@@ -386,7 +386,7 @@ this.remove(profileActionProcessorInterface);
 
     public removeCondition(profileActionScriptNodeInterface: ProfileActionScriptNodeInterface){
 var profileActionScriptNodeInterface = profileActionScriptNodeInterface
-logUtil!.put(this.commonStrings!.START, this, "removeCondition");
+this.logUtil!.putF(this.commonStrings!.START, this, "removeCondition");
     
 this.getProfileActionConditionInterfaceVector()!.remove(profileActionScriptNodeInterface);
     
@@ -397,7 +397,7 @@ this.remove(profileActionScriptNodeInterface);
 
     public addCondition(profileActionScriptNodeInterface: ProfileActionScriptNodeInterface){
 var profileActionScriptNodeInterface = profileActionScriptNodeInterface
-logUtil!.put(this.commonStrings!.START, this, "addCondition");
+this.logUtil!.putF(this.commonStrings!.START, this, "addCondition");
     
 this.getProfileActionConditionInterfaceVector()!.add(profileActionScriptNodeInterface);
     
@@ -614,7 +614,7 @@ this.updateTree();
                 //: 
 } catch(e) 
             {
-logUtil!.put("Error", this, "actionPerformed", e);
+this.logUtil!.put("Error", this, "actionPerformed", e);
     
 }
 
@@ -716,7 +716,7 @@ index < size; index++)
             
     public process(frame: Long){
 var frame = frame
-logUtil!.put(new StringMaker().
+this.logUtil!.putF(new StringMaker().
                             append("Start - Processing ")!.appendint(this.getProfileActionProcessorInterfaceVector()!.size())!.append(" inputs")!.toString(), this, commonStrings!.PROCESS);
     
 

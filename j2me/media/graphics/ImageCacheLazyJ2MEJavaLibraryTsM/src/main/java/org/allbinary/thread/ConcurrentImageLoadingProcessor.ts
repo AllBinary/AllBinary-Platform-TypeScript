@@ -52,6 +52,12 @@ export class ConcurrentImageLoadingProcessor extends BaseImageLoadingProcessor {
                                 
     public run(){
 
+    var logUtil: LogUtil = LogUtil.getInstance()!;
+        
+        
+;
+    
+
         try {
             this.setRunning(true);
     

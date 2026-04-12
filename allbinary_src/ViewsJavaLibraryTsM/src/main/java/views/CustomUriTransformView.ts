@@ -84,7 +84,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("View Name: " +transformInfoInterface!.getName(), this, "CustomUriTransformView()");
+                                    this.logUtil!.putF("View Name: " +transformInfoInterface!.getName(), this, commonStrings!.CONSTRUCTOR);
     
 
                                     }
@@ -225,7 +225,7 @@ this.transformDocumentInterface= transformDocumentInterface;
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e);
+                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e);
     
 
                                     }

@@ -165,7 +165,7 @@ private constructor (){
         
 ;
     
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.NOT_IMPLEMENTED);
+this.logUtil!.putF(commonStrings!.EXCEPTION, this, commonStrings!.NOT_IMPLEMENTED);
     
 
 

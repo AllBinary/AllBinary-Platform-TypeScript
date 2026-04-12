@@ -128,7 +128,7 @@ var pathString = pathString
     public backup(){
 
         try {
-            logUtil!.put(this.commonStrings!.START, this, "backup()");
+            this.logUtil!.putF(this.commonStrings!.START, this, "backup()");
     
 
     var stringBuffer: StringMaker = new StringMaker();
@@ -164,7 +164,7 @@ this.backup(fileBasicArrayList, path.toFileSystemString() +"backup.zip");
                 //: 
 } catch(e) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, this, "backup()", e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "backup()", e);
     
 }
 
@@ -174,7 +174,7 @@ logUtil!.put(this.commonStrings!.EXCEPTION, this, "backup()", e);
     public backupViews(){
 
         try {
-            logUtil!.put(this.commonStrings!.START, this, "backupViews()");
+            this.logUtil!.putF(this.commonStrings!.START, this, "backupViews()");
     
 
     var stringBuffer: StringMaker = new StringMaker();
@@ -276,7 +276,7 @@ this.backup(fileBasicArrayList, path.toFileSystemString() +"backupViews.zip");
                 //: 
 } catch(e) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, this, "backupViews()", e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "backupViews()", e);
     
 }
 
@@ -286,7 +286,7 @@ logUtil!.put(this.commonStrings!.EXCEPTION, this, "backupViews()", e);
     public backupResources(){
 
         try {
-            logUtil!.put(this.commonStrings!.START, this, "backupResources()");
+            this.logUtil!.putF(this.commonStrings!.START, this, "backupResources()");
     
 
     var stringBuffer: StringMaker = new StringMaker();
@@ -394,7 +394,7 @@ this.backup(fileBasicArrayList, path.toFileSystemString() +"backupResources.zip"
                 //: 
 } catch(e) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, this, "backupResources()", e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "backupResources()", e);
     
 }
 
@@ -404,7 +404,7 @@ logUtil!.put(this.commonStrings!.EXCEPTION, this, "backupResources()", e);
     public backupJsps(){
 
         try {
-            logUtil!.put(this.commonStrings!.START, this, "backupJsps()");
+            this.logUtil!.putF(this.commonStrings!.START, this, "backupJsps()");
     
 
     var stringBuffer: StringMaker = new StringMaker();
@@ -488,7 +488,7 @@ this.backup(fileBasicArrayList, path.toFileSystemString() +"backupJsps.zip");
                 //: 
 } catch(e) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, this, "backupJsps()", e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "backupJsps()", e);
     
 }
 
@@ -520,13 +520,13 @@ PreLogUtil.put("Creating Backup Zip File: " +stringBuffer!.toString(), this, "ba
     
 ZipFileUtil.getInstance()!.create(zipFile, fileBasicArrayList);
     
-logUtil!.put("Created Backup Zip File", this, "backup()");
+this.logUtil!.putF("Created Backup Zip File", this, "backup()");
     
 
                 //: 
 } catch(e) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, this, "backup()", e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "backup()", e);
     
 }
 

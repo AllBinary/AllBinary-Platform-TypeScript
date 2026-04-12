@@ -99,7 +99,7 @@ stringBuffer!.append(" rows: ");
     
 stringBuffer!.appendint(rows);
     
-logUtil!.put(stringBuffer!.toString(), this, commonStrings!.INIT);
+this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.INIT);
     
 
 
@@ -151,7 +151,7 @@ var i_row = i_row
         
 ;
     
-logUtil!.put(new StringMaker().
+this.logUtil!.put(new StringMaker().
                             append("columns: ")!.appendint(this.getColumns())!.append(" rows: ")!.appendint(this.getRows())!.append(" col: ")!.appendint(i_column)!.append(" row: ")!.appendint(i_row)!.toString(), this, commonStrings!.GET_INSTANCE, e);
     
 

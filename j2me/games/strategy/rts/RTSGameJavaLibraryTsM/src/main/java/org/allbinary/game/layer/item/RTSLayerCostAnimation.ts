@@ -128,7 +128,7 @@ var event = event
         
 ;
     
-logUtil!.put(commonStrings!.EXCEPTION, this, "onTechEvent", e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, "onTechEvent", e);
     
 }
 

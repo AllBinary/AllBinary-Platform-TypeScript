@@ -56,7 +56,7 @@ export class HighScoresHelperBase
         
 ;
     
-logUtil!.put(new StringMaker().
+this.logUtil!.putF(new StringMaker().
                             append(commonStrings!.START)!.appendint(highScoresArrayP!.length)!.toString(), this, "setHighScoresArray");
     
 
@@ -69,7 +69,7 @@ logUtil!.put(new StringMaker().
         
 ;
     
-logUtil!.put(commonStrings!.START, this, "setHighScoresArray");
+this.logUtil!.putF(commonStrings!.START, this, "setHighScoresArray");
     
 
                         }

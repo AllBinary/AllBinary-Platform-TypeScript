@@ -141,7 +141,7 @@ this.document= DomDocumentHelper.create(data);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAX))
                         
                                     {
-                                    logUtil!.put("Tax Doc: " +DomDocumentHelper.toString(document), this, "getTaxRate");
+                                    this.logUtil!.putF("Tax Doc: " +DomDocumentHelper.toString(document), this, "getTaxRate");
     
 
                                     }
@@ -292,7 +292,7 @@ this.document= DomDocumentHelper.create(data);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAX))
                         
                                     {
-                                    logUtil!.put("Tax Doc: " +DomDocumentHelper.toString(document), this, commonStrings!.IS_VALID);
+                                    this.logUtil!.putF("Tax Doc: " +DomDocumentHelper.toString(document), this, commonStrings!.IS_VALID);
     
 
                                     }
@@ -365,7 +365,7 @@ stringBuffer!.append(" Number Of Children: ");
     
 stringBuffer!.append(streetAddressNode!.getChildNodes()!.getLength());
     
-logUtil!.put(stringBuffer!.toString(), this, commonStrings!.IS_VALID);
+this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.IS_VALID);
     
 
                                     }
@@ -447,7 +447,7 @@ logUtil!.put(stringBuffer!.toString(), this, commonStrings!.IS_VALID);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("Failed to validate", this, commonStrings!.IS_VALID, e);
+                                    this.logUtil!.put("Failed to validate", this, commonStrings!.IS_VALID, e);
     
 
                                     }

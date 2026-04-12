@@ -95,7 +95,7 @@ protected constructor (){
 
 
     public shutdown(){
-logUtil!.put(commonStrings!.START, this, "shutdown");
+this.logUtil!.putF(commonStrings!.START, this, "shutdown");
     
 }
 

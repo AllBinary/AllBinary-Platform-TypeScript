@@ -66,7 +66,7 @@ this.hasPainted= false;
     public end(){
 
         try {
-            logUtil!.put(commonStrings!.START, this, commonStrings!.END_METHOD_NAME);
+            this.logUtil!.putF(commonStrings!.START, this, commonStrings!.END_METHOD_NAME);
     
 this.endActual();
     
@@ -80,7 +80,7 @@ ImageCacheFactory.getInstance()!.progressEnded();
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.END_METHOD_NAME);
+this.logUtil!.putF(commonStrings!.EXCEPTION, this, commonStrings!.END_METHOD_NAME);
     
 }
 

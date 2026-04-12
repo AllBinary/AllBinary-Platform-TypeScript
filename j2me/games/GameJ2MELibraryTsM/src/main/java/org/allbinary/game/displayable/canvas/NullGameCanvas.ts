@@ -169,15 +169,15 @@ this.setCommandListener(cmdListener);
     public run(){
 
         try {
-            logUtil!.put(commonStrings!.START_RUNNABLE, this, commonStrings!.RUN);
+            this.logUtil!.putF(commonStrings!.START_RUNNABLE, this, commonStrings!.RUN);
     
-logUtil!.put(commonStrings!.END_RUNNABLE, this, commonStrings!.RUN);
+this.logUtil!.putF(commonStrings!.END_RUNNABLE, this, commonStrings!.RUN);
     
 
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
     
 }
 

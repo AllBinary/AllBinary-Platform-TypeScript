@@ -93,7 +93,7 @@ var z = z
         
 ;
     
-logUtil!.put(new StringMaker().
+this.logUtil!.putF(new StringMaker().
                             append(HASHTABLE_LABEL)!.append(StringUtil.getInstance()!.toString(hashtable))!.toString(), this, commonStrings!.GET_INSTANCE);
     
 

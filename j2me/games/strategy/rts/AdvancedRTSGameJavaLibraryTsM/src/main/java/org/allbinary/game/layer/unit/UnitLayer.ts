@@ -1124,7 +1124,7 @@ layerInterface!.onMovementFound(this.getTrackingEvent());
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "onMovement", e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, "onMovement", e);
     
 }
 
@@ -2212,7 +2212,7 @@ this.getUnitWaypointBehavior()!.addBuildingChase(allbinaryLayer, cellPosition);
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "move", e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, "move", e);
     
 }
 
@@ -2346,7 +2346,7 @@ this.damageFloaters!.add(damage);
             
     public setDestroyed(destroyed: boolean){
     //var destroyed = destroyed
-logUtil!.put(commonStrings!.START, this, "setDestroyed");
+this.logUtil!.putF(commonStrings!.START, this, "setDestroyed");
     
 super.setDestroyed(destroyed);
     

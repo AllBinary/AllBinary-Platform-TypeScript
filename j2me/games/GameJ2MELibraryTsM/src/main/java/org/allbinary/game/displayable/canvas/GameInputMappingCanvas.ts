@@ -139,7 +139,7 @@ public constructor (abeClientInformation: AbeClientInformationInterface, command
 
                             //For kotlin this is before the body of the constructor.
                     
-logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
+this.logUtil!.putF(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
     
 
                         if(helpPaintable == 
@@ -236,7 +236,7 @@ var keyCode = keyCode
 var repeated = repeated
 
         try {
-            logUtil!.put(new StringMaker().
+            this.logUtil!.putF(new StringMaker().
                             append("Raw Device Key Code: ")!.append(Integer.toHexString(keyCode))!.toString(), this, this.gameInputStrings!.ADD_KEY_EVENT);
     
 
@@ -257,7 +257,7 @@ this.process(gameKey, input);
                 //: 
 } catch(e) 
             {
-logUtil!.put("Key Event Error", this, this.gameInputStrings!.ADD_KEY_EVENT, e);
+this.logUtil!.put("Key Event Error", this, this.gameInputStrings!.ADD_KEY_EVENT, e);
     
 }
 
@@ -283,7 +283,7 @@ stringBuffer!.append(" Input: ");
     
 stringBuffer!.append(this.stringUtil!.toString(input));
     
-logUtil!.put(stringBuffer!.toString(), this, commonStrings!.PROCESS);
+this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.PROCESS);
     
 
                         if(this.selectedGameKey != NONE)
@@ -305,7 +305,7 @@ logUtil!.put(stringBuffer!.toString(), this, commonStrings!.PROCESS);
 
     setSelectedAction(gameKey: GameKey){
 var gameKey = gameKey
-logUtil!.put(new StringMaker().
+this.logUtil!.putF(new StringMaker().
                             append("Selected GameKey: ")!.append(this.stringUtil!.toString(gameKey))!.toString(), this, "setSelectedAction");
     
 this.selectedGameKey= gameKey;
@@ -338,7 +338,7 @@ stringBuffer!.append(" Input: ");
     
 stringBuffer!.append(this.stringUtil!.toString(this.selectedInput));
     
-logUtil!.put(stringBuffer!.toString(), this, "gameActionCrud");
+this.logUtil!.putF(stringBuffer!.toString(), this, "gameActionCrud");
     
 
                         if(this.selectedInput == NONE)
@@ -360,7 +360,7 @@ logUtil!.put(stringBuffer!.toString(), this, "gameActionCrud");
                         if(isInputAlreadyMappedToSelectedAction)
                         
                                     {
-                                    logUtil!.put(new StringMaker().
+                                    this.logUtil!.putF(new StringMaker().
                             append("Already Mapped Input: ")!.append(this.stringUtil!.toString(input))!.toString(), this, "gameActionCrud");
     
 this.selectedInput= input;
@@ -410,7 +410,7 @@ this.repaintBehavior!.onChangeRepaint(this);
         
 ;
     
-logUtil!.put(commonStrings!.START, this, METHOD_NAME);
+this.logUtil!.putF(commonStrings!.START, this, METHOD_NAME);
     
 
     var isInputAlreadyMapped: boolean = inputMapping!.getInputMapping()!.isMapped(input)!;
@@ -438,7 +438,7 @@ stringBuffer!.append(" Input: ");
     
 stringBuffer!.append(this.stringUtil!.toString(this.selectedInput));
     
-logUtil!.put(stringBuffer!.toString(), this, METHOD_NAME);
+this.logUtil!.putF(stringBuffer!.toString(), this, METHOD_NAME);
     
 inputMapping!.getInputMapping()!.add(this.selectedGameKey, input);
     
@@ -450,7 +450,7 @@ this.update();
                                     }
                                 
                         else {
-                            logUtil!.put("Unable to add Mapping since one already exists or is MENU, HOME, or BACK key and setting selected action to what it is already mapped to", this, METHOD_NAME);
+                            this.logUtil!.putF("Unable to add Mapping since one already exists or is MENU, HOME, or BACK key and setting selected action to what it is already mapped to", this, METHOD_NAME);
     
 this.setSelectedAction(gameKey);
     
@@ -495,7 +495,7 @@ stringBuffer!.append(" Input: ");
     
 stringBuffer!.append(stringUtil!.toString(this.selectedInput));
     
-logUtil!.put(stringBuffer!.toString(), this, METHOD_NAME);
+this.logUtil!.putF(stringBuffer!.toString(), this, METHOD_NAME);
     
 inputMapping!.getInputMapping()!.remove(this.selectedGameKey, this.selectedInput);
     
@@ -507,7 +507,7 @@ this.update();
                                     }
                                 
                         else {
-                            logUtil!.put("Can't Remove Last Key Mapping", this, METHOD_NAME);
+                            this.logUtil!.putF("Can't Remove Last Key Mapping", this, METHOD_NAME);
     
 
                         }

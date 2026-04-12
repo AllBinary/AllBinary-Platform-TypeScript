@@ -109,7 +109,7 @@ public constructor (name: string, childNameList: BasicArrayList){
             super();
                 //var name = name
     //var childNameList = childNameList
-logUtil!.put(commonStrings!.CONSTRUCTOR, this, commonStrings!.CONSTRUCTOR);
+this.logUtil!.putF(commonStrings!.CONSTRUCTOR, this, commonStrings!.CONSTRUCTOR);
     
 displayInfoSingleton!.update(this, canvasStrings!.CONSTRUCTOR);
     
@@ -261,7 +261,7 @@ this.removeCommand(MyCommandsFactory.getInstance()!.PAUSE_COMMAND);
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public pause(){
-logUtil!.put(commonStrings!.START, this, canvasStrings!.PAUSE);
+this.logUtil!.putF(commonStrings!.START, this, canvasStrings!.PAUSE);
     
 this.removePauseCommand();
     
@@ -274,7 +274,7 @@ this.setPaused(true);
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public unPause(){
-logUtil!.put(commonStrings!.START, this, canvasStrings!.UN_PAUSE);
+this.logUtil!.putF(commonStrings!.START, this, canvasStrings!.UN_PAUSE);
     
 this.removeCommand(MyCommandsFactory.getInstance()!.RESUME_COMMAND);
     
@@ -317,7 +317,7 @@ var displayable = displayable
 
 
     public destroy(){
-logUtil!.put("Destroyed MyCanvas", this, "destroy");
+this.logUtil!.putF("Destroyed MyCanvas", this, "destroy");
     
 }
 

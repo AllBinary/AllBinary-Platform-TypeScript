@@ -93,7 +93,7 @@ stringBuffer!.append(TO_LABEL);
     
 stringBuffer!.append(StringUtil.getInstance()!.toString(this.groupInterface));
     
-logUtil!.put(stringBuffer!.toString(), this, commonStrings!.ADD);
+this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.ADD);
     
 this.list.add(groupInterface);
     

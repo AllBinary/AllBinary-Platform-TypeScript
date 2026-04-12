@@ -79,13 +79,13 @@ private constructor (){
     
 System.out.println(osString);
     
-logUtil!.put(osString, this, commonStrings!.GET_INSTANCE);
+this.logUtil!.putF(osString, this, commonStrings!.GET_INSTANCE);
     
 
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e);
     
 }
 

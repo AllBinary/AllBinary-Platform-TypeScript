@@ -76,7 +76,7 @@ export class BaseMusicService extends Service {
 
     public onBind(intent: Intent): IBinder?{
     //var intent = intent
-logUtil!.put(commonStrings!.START, this, commonStateStrings!.BIND);
+this.logUtil!.putF(commonStrings!.START, this, commonStateStrings!.BIND);
     
 
 
@@ -88,19 +88,19 @@ logUtil!.put(commonStrings!.START, this, commonStateStrings!.BIND);
 
 
     public onCreate(){
-logUtil!.put(commonStrings!.START, this, commonStateStrings!.CREATE);
+this.logUtil!.putF(commonStrings!.START, this, commonStateStrings!.CREATE);
     
 }
 
 
     public onDestroy(){
-logUtil!.put(commonStrings!.START, this, commonStateStrings!.DESTROY);
+this.logUtil!.putF(commonStrings!.START, this, commonStateStrings!.DESTROY);
     
 
                         if(player != NullAndroidCanvas.NULL_MEDIA_PLAYER)
                         
                                     {
-                                    logUtil!.put(commonStrings!.START, this, commonStateStrings!.PAUSE);
+                                    this.logUtil!.putF(commonStrings!.START, this, commonStateStrings!.PAUSE);
     
 player.stop();
     
@@ -119,7 +119,7 @@ player.release();
                         if(player != NullAndroidCanvas.NULL_MEDIA_PLAYER)
                         
                                     {
-                                    logUtil!.put(commonStrings!.START, this, commonStateStrings!.PAUSE);
+                                    this.logUtil!.putF(commonStrings!.START, this, commonStateStrings!.PAUSE);
     
 player.pause();
     
@@ -136,7 +136,7 @@ player.pause();
                         )
                         
                                     {
-                                    logUtil!.put(commonStrings!.START, this, commonStateStrings!.RESUME);
+                                    this.logUtil!.putF(commonStrings!.START, this, commonStateStrings!.RESUME);
     
 player.start();
     
@@ -163,7 +163,7 @@ player.start();
     //var startid = startid
 onStartCommand(intent);
     
-logUtil!.put(commonStrings!.START, this, commonStateStrings!.START);
+this.logUtil!.putF(commonStrings!.START, this, commonStateStrings!.START);
     
 }
 
@@ -185,7 +185,7 @@ onStartCommand(intent);
 
     public onStartCommand(intent: Intent){
     //var intent = intent
-logUtil!.put(commonStrings!.START, this, commonStateStrings!.ON_START_COMMAND);
+this.logUtil!.putF(commonStrings!.START, this, commonStateStrings!.ON_START_COMMAND);
     
 
     var musicStrings: MusicStrings = MusicStrings.getInstance()!;
@@ -205,7 +205,7 @@ logUtil!.put(commonStrings!.START, this, commonStateStrings!.ON_START_COMMAND);
         
 ;
     
-logUtil!.put(CommonLabels.getInstance()!.COMMAND_LABEL +command, this, commonStateStrings!.ON_START_COMMAND);
+this.logUtil!.putF(CommonLabels.getInstance()!.COMMAND_LABEL +command, this, commonStateStrings!.ON_START_COMMAND);
     
 
                         if(command == 1)
@@ -274,7 +274,7 @@ this.rightVolume= intent.getIntExtra(musicStrings!.RIGHT_VOLUME,  -1);
         
 ;
     
-logUtil!.put(ALREADY_PLAYING, this, commonStateStrings!.ON_START_COMMAND);
+this.logUtil!.putF(ALREADY_PLAYING, this, commonStateStrings!.ON_START_COMMAND);
     
 
     var runnable: Runnable = new object: ARunnable()
@@ -282,11 +282,17 @@ logUtil!.put(ALREADY_PLAYING, this, commonStateStrings!.ON_START_COMMAND);
                                 
     public run(){
 
+    var logUtil: LogUtil = LogUtil.getInstance()!;
+        
+        
+;
+    
+
         try {
             
         while(player.isPlaying())
         {
-logUtil!.put(WAITING_FOR_MUSIC_TO_END, this, commonStateStrings!.ON_START_COMMAND);
+logUtil!.putF(WAITING_FOR_MUSIC_TO_END, this, commonStateStrings!.ON_START_COMMAND);
     
 Thread.sleep(1200);
     

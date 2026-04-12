@@ -114,7 +114,7 @@ stringBuffer!.append(instance.constructor.name.toString()!);
         
 ;
     
-logUtil!.put(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE);
+this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE);
     
 
                                     }
@@ -183,7 +183,7 @@ stringBuffer!.append(instance.constructor.name.toString()!);
         
 ;
     
-logUtil!.put(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE, e);
+this.logUtil!.put(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE, e);
     
 
                                     }
@@ -229,7 +229,7 @@ stringBuffer!.append(instance.constructor.name.toString()!);
         
 ;
     
-logUtil!.put(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE, e);
+this.logUtil!.put(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE, e);
     
 
                                     }

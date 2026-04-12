@@ -82,7 +82,7 @@ this.abeClientInformation= abeClientInformation;
     public fetchHighScores(gameInfo: GameInfo, highScoresResultsListener: HighScoresResultsListener){
     //var gameInfo = gameInfo
     //var highScoresResultsListener = highScoresResultsListener
-logUtil!.put("Getting Local HighScores", this, FETCH);
+this.logUtil!.putF("Getting Local HighScores", this, FETCH);
     
 this.fetchHighScores(gameInfo, highScoresResultsListener, true);
     
@@ -103,7 +103,7 @@ highScoresResultsListener!.setHighScoresArray(highScoresArray);
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, FETCH, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, FETCH, e);
     
 }
 

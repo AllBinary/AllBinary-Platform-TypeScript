@@ -130,7 +130,7 @@ this.setTitle(label);
     //var keyCode = keyCode
     //var deviceId = deviceId
     //var repeated = repeated
-logUtil!.put(new StringMaker().
+this.logUtil!.putF(new StringMaker().
                             append(commonStrings!.START)!.appendint(keyCode)!.toString(), this, "onEvent");
     
 this.keyPressed(keyCode, deviceId);
@@ -164,7 +164,7 @@ this.keyRepeated(keyCode, 0);
     //var deviceId = deviceId
 
         try {
-            logUtil!.put(new StringMaker().
+            this.logUtil!.putF(new StringMaker().
                             append(CommonSeps.getInstance()!.SPACE)!.appendint(keyCode)!.toString(), this, gameInputStrings!.KEY_PRESSED);
     
 
@@ -198,7 +198,7 @@ this.keyRepeated(keyCode, 0);
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, gameInputStrings!.KEY_PRESSED, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, gameInputStrings!.KEY_PRESSED, e);
     
 }
 

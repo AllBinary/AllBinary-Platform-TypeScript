@@ -80,7 +80,7 @@ public constructor (node: Node)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("FontFamilyValidation", this, commonStrings!.IS_VALID);
+                                    this.logUtil!.putF("FontFamilyValidation", this, commonStrings!.IS_VALID);
     
 
                                     }
@@ -89,7 +89,7 @@ public constructor (node: Node)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("CssValidation: " +valid, this, commonStrings!.IS_VALID);
+                                    this.logUtil!.putF("CssValidation: " +valid, this, commonStrings!.IS_VALID);
     
 
                                     }
@@ -108,7 +108,7 @@ public constructor (node: Node)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("Failed to validate data", this, commonStrings!.IS_VALID, e);
+                                    this.logUtil!.put("Failed to validate data", this, commonStrings!.IS_VALID, e);
     
 
                                     }
@@ -153,7 +153,7 @@ stringBuffer!.append("Css Font Family Property Validation Error");
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("Failed to generate validation info error", this, "validationInfo()", e);
+                                    this.logUtil!.put("Failed to generate validation info error", this, "validationInfo()", e);
     
 
                                     }

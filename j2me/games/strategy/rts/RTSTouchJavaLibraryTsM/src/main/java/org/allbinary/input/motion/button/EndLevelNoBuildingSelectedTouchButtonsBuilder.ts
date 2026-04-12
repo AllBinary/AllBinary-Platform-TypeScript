@@ -38,7 +38,7 @@ export class EndLevelNoBuildingSelectedTouchButtonsBuilder extends TouchButtonsL
     public getList(): BasicArrayList{
 
         try {
-            logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
+            this.logUtil!.putF(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
     
 
     var list: BasicArrayList = new BasicArrayList();
@@ -64,7 +64,7 @@ this.add(list);
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e);
     
 
 

@@ -113,7 +113,7 @@ index < size; index++)
                                 
 }
 
-logUtil!.put(new StringMaker().
+this.logUtil!.putF(new StringMaker().
                             append("unable to find key: ")!.append(StringUtil.getInstance()!.toString(key))!.toString(), this, commonStrings!.RUN);
     
 
@@ -250,16 +250,16 @@ listOfList[foundIndex]!.add(image);
                 //: 
 } catch(e) 
             {
-logUtil!.put("Exception: Trying Again After GC", this, commonStrings!.GET, e);
+this.logUtil!.put("Exception: Trying Again After GC", this, commonStrings!.GET, e);
     
-logUtil!.put(new StringMaker().
+this.logUtil!.putF(new StringMaker().
                             append("InputStream: ")!.append(StringUtil.getInstance()!.toString(inputStream))!.toString(), this, commonStrings!.GET);
     
 System.gc();
     
 System.gc();
     
-logUtil!.put(Memory.getInfo(), this, commonStrings!.GET);
+this.logUtil!.putF(Memory.getInfo(), this, commonStrings!.GET);
     
 Thread.sleep(100);
     

@@ -256,6 +256,12 @@ export inner class FirstProcessor extends Processor {
 
     public process(){
 
+    var logUtil: LogUtil = LogUtil.getInstance()!;
+        
+        
+;
+    
+
     var isHTML: boolean = J2MEUtil.isHTML()!;
         
         
@@ -285,7 +291,7 @@ endProcessor= new NotHTMLEndProcessor();
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.END_METHOD_NAME);
+logUtil!.putF(commonStrings!.EXCEPTION, this, commonStrings!.END_METHOD_NAME);
     
 }
 
@@ -961,16 +967,16 @@ listOfList[foundIndex]!.add(image);
                 //: 
 } catch(e) 
             {
-logUtil!.put("Exception: Trying Again After GC", this, commonStrings!.GET, e);
+this.logUtil!.put("Exception: Trying Again After GC", this, commonStrings!.GET, e);
     
-logUtil!.put(new StringMaker().
+this.logUtil!.putF(new StringMaker().
                             append("InputStream: ")!.append(StringUtil.getInstance()!.toString(inputStream))!.toString(), this, commonStrings!.GET);
     
 System.gc();
     
 System.gc();
     
-logUtil!.put(Memory.getInfo(), this, commonStrings!.GET);
+this.logUtil!.putF(Memory.getInfo(), this, commonStrings!.GET);
     
 Thread.sleep(100);
     
@@ -1038,7 +1044,7 @@ index < size; index++)
                                 
 }
 
-logUtil!.put(new StringMaker().
+this.logUtil!.putF(new StringMaker().
                             append("unable to find key: ")!.append(StringUtil.getInstance()!.toString(key))!.toString(), this, commonStrings!.RUN);
     
 

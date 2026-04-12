@@ -69,7 +69,7 @@ this.playerGameInput= new PlayerGameInput(this.getGameKeyEventList(), playerInpu
         
 ;
     
-logUtil!.put("Danger Danger Danger: Should Not Be Called Except For Testing Input", this, canvasStrings!.PAINT);
+this.logUtil!.putF("Danger Danger Danger: Should Not Be Called Except For Testing Input", this, canvasStrings!.PAINT);
     
 }
 

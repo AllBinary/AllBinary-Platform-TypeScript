@@ -143,7 +143,7 @@ this.highScore!.setName(name);
 
 
     public saveHighScore(){
-logUtil!.put(new StringMaker().
+this.logUtil!.putF(new StringMaker().
                             append(commonStrings!.START)!.append(StringUtil.getInstance()!.toString(this.highScore))!.toString(), this, "saveHighScore");
     
 
@@ -157,7 +157,7 @@ logUtil!.put(new StringMaker().
                         if(firstTime && size == 0)
                         
                                     {
-                                    logUtil!.put("Games canvas did not give us any HighScores", this, "saveHighScore");
+                                    this.logUtil!.putF("Games canvas did not give us any HighScores", this, "saveHighScore");
     
 highScoresFactoryInterface!.fetchHighScores(gameInfo, this);
     
@@ -194,7 +194,7 @@ highScores!.addHighScore(this.highScore);
     
 highScoresAsString= highScores!.toString();
     
-logUtil!.put(new StringMaker().
+this.logUtil!.putF(new StringMaker().
                             append("Added/Adding Score: ")!.append(highScoresAsString)!.toString(), this, "saveHighScore");
     
 }

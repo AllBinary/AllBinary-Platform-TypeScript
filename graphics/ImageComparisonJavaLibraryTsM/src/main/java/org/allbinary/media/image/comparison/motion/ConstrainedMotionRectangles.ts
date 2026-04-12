@@ -66,7 +66,7 @@ this.setMotionRectangleConstraintsInterface(motionRectangleConstraintsInterface)
             
     public applyMotionRectangleConstraints(motionRectangles: MotionRectangles){
     //var motionRectangles = motionRectangles
-logUtil!.put("Start - Size Before: " +motionRectangles!.getVector()!.size(), this, "applyMotionRectangleConstraints");
+this.logUtil!.putF("Start - Size Before: " +motionRectangles!.getVector()!.size(), this, "applyMotionRectangleConstraints");
     
 
     var bufferedImageArray: BufferedImage[] = motionRectangles!.getImageComparisonResult()!.getBufferedImages()!;

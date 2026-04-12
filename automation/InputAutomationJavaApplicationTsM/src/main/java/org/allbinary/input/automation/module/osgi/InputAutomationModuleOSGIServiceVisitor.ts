@@ -115,7 +115,7 @@ InputAutomationJFrame.getInstance()!.onAdd(InputAutomationConfigurationUtil.getC
                 //: 
 } catch(e) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, this, "visit", e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "visit", e);
     
 
 

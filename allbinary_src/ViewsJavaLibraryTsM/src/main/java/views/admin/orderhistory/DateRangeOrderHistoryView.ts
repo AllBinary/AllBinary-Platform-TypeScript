@@ -236,7 +236,7 @@ this.addDomNodeInterface(this as DomNodeInterface);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e);
+                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e);
     
 
                                     }
@@ -274,7 +274,7 @@ stringBuffer!.append(this.toDate);
     
 stringBuffer!.append(") and status");
     
-logUtil!.put(stringBuffer!.toString(), this, "view");
+this.logUtil!.putF(stringBuffer!.toString(), this, "view");
     
 
                                     }
@@ -295,7 +295,7 @@ logUtil!.put(stringBuffer!.toString(), this, "view");
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Adding Preprocessing Orders", this, "toXmlNode");
+                                    this.logUtil!.putF("Adding Preprocessing Orders", this, "toXmlNode");
     
 
                                     }
@@ -347,7 +347,7 @@ node.appendChild(orderHistory!.toXmlNode(document));
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Adding Shipped Orders", this, "toXmlNode");
+                                    this.logUtil!.putF("Adding Shipped Orders", this, "toXmlNode");
     
 
                                     }
@@ -399,7 +399,7 @@ node.appendChild(orderHistory!.toXmlNode(document));
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Adding Partially Shipped Orders", this, "toDomNode");
+                                    this.logUtil!.putF("Adding Partially Shipped Orders", this, "toDomNode");
     
 
                                     }
@@ -451,7 +451,7 @@ node.appendChild(orderHistory!.toXmlNode(document));
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Adding Processing Orders", this, "toXmlNode");
+                                    this.logUtil!.putF("Adding Processing Orders", this, "toXmlNode");
     
 
                                     }
@@ -503,7 +503,7 @@ node.appendChild(orderHistory!.toXmlNode(document));
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Adding Cancelled Orders", this, "view");
+                                    this.logUtil!.putF("Adding Cancelled Orders", this, "view");
     
 
                                     }
@@ -571,7 +571,7 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, GLOBALS2.VIEWNAME, 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.XSLLOGGINGERROR))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.FAILURE, this, "toXmlNode", e);
+                                    this.logUtil!.put(this.commonStrings!.FAILURE, this, "toXmlNode", e);
     
 
                                     }
@@ -795,7 +795,7 @@ stringBuffer!.append(this.toDate);
     
 stringBuffer!.append(")");
     
-logUtil!.put(stringBuffer!.toString(), this, commonStrings!.IS_VALID);
+this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.IS_VALID);
     
 
                                     }
@@ -814,7 +814,7 @@ logUtil!.put(stringBuffer!.toString(), this, commonStrings!.IS_VALID);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Exception in validation", this, commonStrings!.IS_VALID, e);
+                                    this.logUtil!.put("Exception in validation", this, commonStrings!.IS_VALID, e);
     
 
                                     }
@@ -907,7 +907,7 @@ var document = document
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e);
+                                    this.logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e);
     
 
                                     }

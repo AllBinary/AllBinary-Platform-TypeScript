@@ -150,7 +150,7 @@ stringBuffer!.append(" or ");
     
 stringBuffer!.append(NEXTSTEP);
     
-logUtil!.put(stringBuffer!.toString(), this, commonStrings!.IS_VALID);
+this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.IS_VALID);
     
 
                                     }
@@ -178,7 +178,7 @@ logUtil!.put(stringBuffer!.toString(), this, commonStrings!.IS_VALID);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put(basicItemValidation!.validationInfo(), this, commonStrings!.IS_VALID);
+                                    this.logUtil!.putF(basicItemValidation!.validationInfo(), this, commonStrings!.IS_VALID);
     
 
                                     }
@@ -223,7 +223,7 @@ this.itemInterface!.setCategory(storeFrontInterface!.getCategoryPath() +this.ite
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Category Does Not Exist: " +fullCategory, this, commonStrings!.IS_VALID);
+                                    this.logUtil!.putF("Category Does Not Exist: " +fullCategory, this, commonStrings!.IS_VALID);
     
 
                                     }
@@ -247,7 +247,7 @@ this.itemInterface!.setCategory(storeFrontInterface!.getCategoryPath() +this.ite
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Item Already Exists", this, commonStrings!.IS_VALID);
+                                    this.logUtil!.putF("Item Already Exists", this, commonStrings!.IS_VALID);
     
 
                                     }
@@ -321,7 +321,7 @@ HttpFileUploadUtil.log(fileItem);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("Exception in validation", this, commonStrings!.IS_VALID, e);
+                                    this.logUtil!.put("Exception in validation", this, commonStrings!.IS_VALID, e);
     
 
                                     }
@@ -422,7 +422,7 @@ stringBuffer!.append("<br/>");
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Category: " +fullCategory, this, "validationInfo()");
+                                    this.logUtil!.putF("Category: " +fullCategory, this, "validationInfo()");
     
 
                                     }
@@ -469,7 +469,7 @@ stringBuffer!.append(" does not exist.<br />");
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Existing Item With MoneyException", this, "validationInfo()");
+                                    this.logUtil!.putF("Existing Item With MoneyException", this, "validationInfo()");
     
 
                                     }
@@ -531,7 +531,7 @@ this.validationInfo(stringBuffer, fileName, fileItemFieldName, size);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e);
+                                    this.logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e);
     
 
                                     }
@@ -642,7 +642,7 @@ stringBuffer!.append(">");
     
 stringBuffer!.appendint(fileData!.MAXIMAGEFILESIZE);
     
-logUtil!.put(stringBuffer!.toString(), this, commonStrings!.IS_VALID);
+this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.IS_VALID);
     
 
                                     }
@@ -680,7 +680,7 @@ stringBuffer!.append(">");
     
 stringBuffer!.appendint(fileData!.MINIMAGEFILESIZE);
     
-logUtil!.put(stringBuffer!.toString(), this, commonStrings!.IS_VALID);
+this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.IS_VALID);
     
 
                                     }

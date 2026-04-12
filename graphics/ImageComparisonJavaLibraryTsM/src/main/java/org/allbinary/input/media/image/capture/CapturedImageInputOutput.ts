@@ -84,7 +84,7 @@ var frame = frame
         
 ;
     
-logUtil!.put(("Saving: " +capturedBufferedImageCacheable!.toString()), this, commonStrings!.SAVE);
+this.logUtil!.putF(("Saving: " +capturedBufferedImageCacheable!.toString()), this, commonStrings!.SAVE);
     
 save(capturedBufferedImageCacheable!.getBufferedImage(), frame);
     
@@ -124,7 +124,7 @@ filePathStringBuffer!.append(MediaDataFactory.getInstance()!.JPG.getExtension())
         
 ;
     
-logUtil!.put(("Image File Path: " +filePath +imageUtil!.toString(bufferedImage)), this, commonStrings!.SAVE);
+this.logUtil!.putF(("Image File Path: " +filePath +imageUtil!.toString(bufferedImage)), this, commonStrings!.SAVE);
     
 
     var imagePersistanceUtil: ImagePersistanceUtil = ImagePersistanceUtil.getInstance()!;

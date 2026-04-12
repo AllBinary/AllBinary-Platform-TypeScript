@@ -169,7 +169,7 @@ this.setProfileActionConditionInterfaceVector(new Vector());
 
     public addCondition(profileActionScriptNodeInterface: ProfileActionScriptNodeInterface){
 var profileActionScriptNodeInterface = profileActionScriptNodeInterface
-logUtil!.put(this.commonStrings!.START, this, "addCondition");
+this.logUtil!.putF(this.commonStrings!.START, this, "addCondition");
     
 this.getProfileActionConditionInterfaceVector()!.add(profileActionScriptNodeInterface);
     
@@ -180,7 +180,7 @@ this.add(profileActionScriptNodeInterface);
 
     public removeCondition(profileActionScriptNodeInterface: ProfileActionScriptNodeInterface){
 var profileActionScriptNodeInterface = profileActionScriptNodeInterface
-logUtil!.put(this.commonStrings!.START, this, "removeCondition");
+this.logUtil!.putF(this.commonStrings!.START, this, "removeCondition");
     
 this.getProfileActionConditionInterfaceVector()!.remove(profileActionScriptNodeInterface);
     
@@ -196,7 +196,7 @@ this.remove(profileActionScriptNodeInterface);
         
 ;
     
-logUtil!.put("HashMap: " +hashMap!.toString(), this, "toHashMap()");
+this.logUtil!.putF("HashMap: " +hashMap!.toString(), this, "toHashMap()");
     
 
 

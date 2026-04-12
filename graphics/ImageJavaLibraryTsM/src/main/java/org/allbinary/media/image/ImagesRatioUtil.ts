@@ -222,7 +222,7 @@ point.y= (newHeight -bufferedImage!.getHeight()) /2;
         
 ;
     
-logUtil!.put(commonLabels!.WIDTH_LABEL +bufferedImage!.getWidth() +" newWidth: " +newWidth +commonLabels!.HEIGHT_LABEL +bufferedImage!.getHeight() +" newHeight: " +newHeight +" needed ratio: " +(newWidth.toDouble() /newHeight), this, "fudge");
+this.logUtil!.putF(commonLabels!.WIDTH_LABEL +bufferedImage!.getWidth() +" newWidth: " +newWidth +commonLabels!.HEIGHT_LABEL +bufferedImage!.getHeight() +" newHeight: " +newHeight +" needed ratio: " +(newWidth.toDouble() /newHeight), this, "fudge");
     
 
     var newBufferedImage: BufferedImage = this.imageUtil!.create(newWidth, newHeight)!;
@@ -252,7 +252,7 @@ logUtil!.put(commonLabels!.WIDTH_LABEL +bufferedImage!.getWidth() +" newWidth: "
         
 ;
     
-logUtil!.put("Draw some columns to fill in gap", this, "fudge");
+this.logUtil!.putF("Draw some columns to fill in gap", this, "fudge");
     
 
 
@@ -291,7 +291,7 @@ g.drawImage(lastColumnBufferedImage, newWidth -index, 0,
         
 ;
     
-logUtil!.put("Draw some rows to fill in gap", this, "fudge");
+this.logUtil!.putF("Draw some rows to fill in gap", this, "fudge");
     
 
 

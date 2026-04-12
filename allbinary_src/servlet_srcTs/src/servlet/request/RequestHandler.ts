@@ -107,7 +107,7 @@ out.close();
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SERVLETERROR))
                         
                                     {
-                                    logUtil!.put("Servlet LicensingException", this, "processRequest()", e);
+                                    this.logUtil!.put("Servlet LicensingException", this, "processRequest()", e);
     
 
                                     }
@@ -123,7 +123,7 @@ response.sendRedirect(abcs.globals.URLGLOBALS.LICENSEERRORPAGE);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SERVLETERROR))
                         
                                     {
-                                    logUtil!.put("Servlet Exception", this, "processRequest()", e);
+                                    this.logUtil!.put("Servlet Exception", this, "processRequest()", e);
     
 
                                     }

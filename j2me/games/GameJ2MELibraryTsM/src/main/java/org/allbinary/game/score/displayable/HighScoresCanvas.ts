@@ -96,6 +96,9 @@ import { Paintable } from "../../../../../org/allbinary/graphics/paint/Paintable
 import { SimpleTextPaintable } from "../../../../../org/allbinary/graphics/paint/SimpleTextPaintable.js";
 
     
+import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+
+    
 import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";
 
     
@@ -173,7 +176,7 @@ public constructor (commandListener: CommandListener, allBinaryGameLayerManager:
 
                             //For kotlin this is before the body of the constructor.
                     
-logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
+this.logUtil!.putF(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
     
 this.highScoresPaintable= paintable;
     
@@ -199,7 +202,7 @@ this.colorFillPaintable= ColorFillPaintableFactory.getInstance()!.getInstance(al
                                     }
                                 
                         else {
-                            logUtil!.put("Show HighScores that are already loaded", this, commonStrings!.CONSTRUCTOR);
+                            this.logUtil!.putF("Show HighScores that are already loaded", this, commonStrings!.CONSTRUCTOR);
     
 this.updateCommand(this.currentCommand);
     
@@ -212,6 +215,12 @@ SecondaryThreadPool.getInstance()!.runTask(new object: ARunnable()
                                 {
                                 
     public run(){
+
+    var logUtil: LogUtil = LogUtil.getInstance()!;
+        
+        
+;
+    
 
         try {
             
@@ -240,7 +249,7 @@ hasPainted= false;
         
 ;
     
-logUtil!.put(stringMaker!.append("HighScoresCanvas - Request repaint to be sure: ")!.appendlong(System.currentTimeMillis())!.toString(), this, commonStrings!.RUN);
+logUtil!.putF(stringMaker!.append("HighScoresCanvas - Request repaint to be sure: ")!.appendlong(System.currentTimeMillis())!.toString(), this, commonStrings!.RUN);
     
 repaintBehavior!.onChangeRepaint(this@HighScoresCanvas);
     
@@ -258,7 +267,7 @@ repaintBehavior!.onChangeRepaint(this@HighScoresCanvas);
                                 
 stringMaker!.delete(0, stringMaker!.length());
     
-logUtil!.put(stringMaker!.append("HighScoresCanvas - Now that the canvas has completed repaint go ahead and fetch the scores: ")!.appendlong(System.currentTimeMillis())!.toString(), this, commonStrings!.RUN);
+logUtil!.putF(stringMaker!.append("HighScoresCanvas - Now that the canvas has completed repaint go ahead and fetch the scores: ")!.appendlong(System.currentTimeMillis())!.toString(), this, commonStrings!.RUN);
     
 executeUpdate();
     
@@ -340,7 +349,7 @@ hasPainted= true;
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.UPDATE, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.UPDATE, e);
     
 }
 
@@ -367,14 +376,14 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.UPDATE, e);
                                 )
                         
                                     {
-                                    logUtil!.put(new StringMaker().
+                                    this.logUtil!.putF(new StringMaker().
                             append(commonStrings!.START)!.appendint(highScoresArray!.length)!.toString(), this, "setHighScoresArray");
     
 
                                     }
                                 
                         else {
-                            logUtil!.put(commonStrings!.START, this, "setHighScoresArray");
+                            this.logUtil!.putF(commonStrings!.START, this, "setHighScoresArray");
     
 
                         }
@@ -389,7 +398,7 @@ this.setPaintable(this.getHighScoresPaintable());
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.UPDATE, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.UPDATE, e);
     
 }
 
@@ -400,7 +409,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.UPDATE, e);
             
     public updateCommand(command: Command){
 var command = command
-logUtil!.put(new StringMaker().
+this.logUtil!.putF(new StringMaker().
                             append(commonStrings!.START)!.append(this.stringUtil!.toString(command))!.toString(), this, commonStrings!.UPDATE);
     
 

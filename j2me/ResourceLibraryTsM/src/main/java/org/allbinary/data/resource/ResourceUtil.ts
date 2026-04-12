@@ -68,7 +68,7 @@ private constructor (){
 
     public setClassLoader(classLoader: ClassLoader){
     //var classLoader = classLoader
-logUtil!.put(new StringMaker().
+this.logUtil!.putF(new StringMaker().
                             append("Resource Loader: ")!.append(classLoader!.constructor.name.toString()!)!.toString(), this, "setClassLoader");
     
 ResourceUtil.classLoader= classLoader;

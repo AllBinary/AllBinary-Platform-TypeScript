@@ -135,7 +135,7 @@ stringBuffer!.append("\nRequired Extension: ");
     
 stringBuffer!.append(this.basicURIResolver!.getExtension());
     
-logUtil!.put(stringBuffer!.toString(), this, "resolve");
+this.logUtil!.putF(stringBuffer!.toString(), this, "resolve");
     
 
                                     }

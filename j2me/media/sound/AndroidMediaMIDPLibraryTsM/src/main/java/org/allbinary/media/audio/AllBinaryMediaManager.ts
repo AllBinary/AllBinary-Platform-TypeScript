@@ -103,7 +103,7 @@ var aMuted = aMuted
         
 ;
     
-logUtil!.put(commonString!.START, THIS, commonString!.INIT);
+logUtil!.putF(commonString!.START, THIS, commonString!.INIT);
     
 AllBinaryMediaManager.shutdown(soundsFactoryInterface);
     
@@ -114,7 +114,7 @@ System.gc();
 new Sounds(soundsFactoryInterface).
                             init();
     
-logUtil!.put(commonString!.END, THIS, commonString!.INIT);
+logUtil!.putF(commonString!.END, THIS, commonString!.INIT);
     
 }
 
@@ -135,7 +135,7 @@ logUtil!.put(commonString!.END, THIS, commonString!.INIT);
         
 ;
     
-logUtil!.put(commonString!.START, THIS, "shutdown");
+logUtil!.putF(commonString!.START, THIS, "shutdown");
     
 
                         if(soundsFactoryInterface!.isInitialized())
@@ -228,7 +228,7 @@ mostUsedTotal= 0;
 
                                     }
                                 
-logUtil!.put(commonString!.START, THIS, "shutdown");
+logUtil!.putF(commonString!.START, THIS, "shutdown");
     
 }
 

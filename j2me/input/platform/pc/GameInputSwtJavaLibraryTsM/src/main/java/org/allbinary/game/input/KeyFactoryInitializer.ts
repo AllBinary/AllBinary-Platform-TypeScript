@@ -36,7 +36,7 @@ export class KeyFactoryInitializer extends Init {
         
 
     public init(){
-logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.INIT);
+this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.INIT);
     
 SmallIntegerSingletonFactory.getInstance()!.init(0x2D0, 6);
     

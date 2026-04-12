@@ -187,7 +187,7 @@ this.point.setY(y);
                                     {
                                     this.lastString= string;
     
-logUtil!.put(new StringMaker().
+this.logUtil!.putF(new StringMaker().
                             append(PERMANENT_GAME_NOTIFICATION)!.append(string)!.toString(), this, commonStrings!.ADD);
     
 

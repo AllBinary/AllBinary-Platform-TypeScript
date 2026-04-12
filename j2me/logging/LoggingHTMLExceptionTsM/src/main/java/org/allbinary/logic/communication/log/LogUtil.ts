@@ -57,7 +57,7 @@ private constructor (){
             }
 
 
-    /*actual*/ public put(log: Log){
+    /*actual*/ public putL(log: Log){
     //var log = log
 
                         if(log == 
@@ -103,7 +103,7 @@ put(specialMessage, anyType, functionName, exception);
 }
 
 
-    /*actual*/ public put(specialMessage: string, anyType: any = {}, functionName: string){
+    /*actual*/ public putF(specialMessage: string, anyType: any = {}, functionName: string){
     //var specialMessage = specialMessage
     //var anyType = anyType
     //var functionName = functionName
@@ -125,7 +125,7 @@ put(specialMessage, anyType, functionName, exception);
                                     }
                                 
 
-    var message: string = logFormatUtil!.get(className, functionName, specialMessage)!;
+    var message: string = logFormatUtil!.getS(className, functionName, specialMessage)!;
         
         
 ;

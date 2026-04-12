@@ -187,7 +187,7 @@ this.title= stringUtil!.EMPTY_STRING;
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put(new StringMaker().
+                                    this.logUtil!.putF(new StringMaker().
                             append("Value: ")!.append(this.value)!.append("\nTitle: ")!.append(this.title)!.append("\nDescription: ")!.append(this.description)!.toString(), this, commonStrings!.CONSTRUCTOR);
     
 
@@ -203,7 +203,7 @@ this.title= stringUtil!.EMPTY_STRING;
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Child Css Elements: " +cssElementStyleNodeVector!.length, this, "CssElementView()");
+                                    this.logUtil!.putF("Child Css Elements: " +cssElementStyleNodeVector!.length, this, "CssElementView()");
     
 
                                     }
@@ -226,7 +226,7 @@ this.cssPropertyVector= CssPropertiesValidationFactory.getInstance(nodeList);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put(new StringMaker().
+                                    this.logUtil!.put(new StringMaker().
                             append("Value: ")!.append(this.value)!.append("\nTitle: ")!.append(this.title)!.append("\nDescription: ")!.append(this.description)!.toString(), this, this.commonStrings!.CONSTRUCTOR, e);
     
 
@@ -287,7 +287,7 @@ var document = document
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("CssView HashMap: " +hashMap!.toString(), this, "toXmlNode");
+                                    this.logUtil!.putF("CssView HashMap: " +hashMap!.toString(), this, "toXmlNode");
     
 
                                     }

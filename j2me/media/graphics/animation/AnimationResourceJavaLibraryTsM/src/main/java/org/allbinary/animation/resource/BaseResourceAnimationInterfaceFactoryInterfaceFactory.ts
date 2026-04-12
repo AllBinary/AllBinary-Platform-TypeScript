@@ -130,7 +130,7 @@ this.name= name;
         
 ;
     
-logUtil!.put(new StringMaker().
+this.logUtil!.putF(new StringMaker().
                             append("Available List of Animations: ")!.append(hashtable.toString())!.toString(), this, commonStrings!.INIT);
     
 this.setInitialized(true);

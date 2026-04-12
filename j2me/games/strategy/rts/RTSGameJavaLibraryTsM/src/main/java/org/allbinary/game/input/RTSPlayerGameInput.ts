@@ -228,7 +228,7 @@ this.selectedRTSLayerPlayerGameInput!.setAllBinaryGameLayerManager(allBinaryGame
 var displayChangeEvent = displayChangeEvent
 
         try {
-            logUtil!.put(commonStrings!.START, this, "onDisplayChangeEvent");
+            this.logUtil!.putF(commonStrings!.START, this, "onDisplayChangeEvent");
     
 this.getRTSLayerInfoPaintable()!.update();
     
@@ -236,7 +236,7 @@ this.getRTSLayerInfoPaintable()!.update();
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "onDisplayChangeEvent", e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, "onDisplayChangeEvent", e);
     
 }
 
@@ -358,7 +358,7 @@ this.removeInputProcessorArray[key]!.process(layerManager, gameKeyEvent);
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, gameInputStrings!.PROCESS_INPUT, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, gameInputStrings!.PROCESS_INPUT, e);
     
 }
 
@@ -465,7 +465,7 @@ this.setSelectedRTSLayer(foundRTSLayer, geographicMapCellPosition);
         
 ;
     
-logUtil!.put(new StringMaker().
+this.logUtil!.putF(new StringMaker().
                             append("Off Of Map -")!.append(commonLabels!.WIDTH_LABEL)!.appendint(allBinaryTiledLayer!.getWidth())!.append(commonLabels!.HEIGHT_LABEL)!.appendint(allBinaryTiledLayer!.getHeight())!.toString(), this, "select");
     
 
@@ -613,7 +613,7 @@ graphics.drawRect(point.getX() -allBinaryTiledLayer!.getXP(), point.getY() -allB
 
     public setSelectedRtsFormInput(selectedRtsFormInput: RTSFormInput){
 var selectedRtsFormInput = selectedRtsFormInput
-logUtil!.put(new StringMaker().
+this.logUtil!.putF(new StringMaker().
                             append("RTSFormInput: ")!.append(StringUtil.getInstance()!.toString(selectedRtsFormInput))!.toString(), this, "setSelectedRtsFormInput");
     
 this.selectedRtsFormInput= selectedRtsFormInput;

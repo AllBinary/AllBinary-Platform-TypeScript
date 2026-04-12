@@ -314,7 +314,7 @@ var index = index
     getItemAt(rtsPlayerLayerInterface: RTSPlayerLayerInterface, point: GPoint): CustomItem{
     //var rtsPlayerLayerInterface = rtsPlayerLayerInterface
     //var point = point
-logUtil!.put(new StringMaker().
+this.logUtil!.putF(new StringMaker().
                             append("Point: ")!.append(StringUtil.getInstance()!.toString(point))!.toString(), this, "getItemAt");
     
 
@@ -339,7 +339,7 @@ logUtil!.put(new StringMaker().
     getIndexAt(rtsPlayerLayerInterface: RTSPlayerLayerInterface, point: GPoint): number{
     //var rtsPlayerLayerInterface = rtsPlayerLayerInterface
     //var point = point
-logUtil!.put(new StringMaker().
+this.logUtil!.putF(new StringMaker().
                             append("Point: ")!.append(StringUtil.getInstance()!.toString(point))!.toString(), this, "getItemAt");
     
 
@@ -423,7 +423,7 @@ logUtil!.put(new StringMaker().
 
     public setSelectedGeographicCellPosition(selectedGeographicCellPosition: GeographicMapCellPosition){
 var selectedGeographicCellPosition = selectedGeographicCellPosition
-logUtil!.put(new StringMaker().
+this.logUtil!.putF(new StringMaker().
                             append("Selected GeographicMapCellPosition: ")!.append(selectedGeographicCellPosition!.toString())!.toString(), this, "setSelectedGeographicCellPosition");
     
 this.selectedGeographicCellPosition= selectedGeographicCellPosition;

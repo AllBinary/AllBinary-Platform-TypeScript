@@ -145,7 +145,7 @@ public constructor (databaseConnectionInfoInterface: DatabaseConnectionInfoInter
     public addUsers(): Boolean{
 
         try {
-            logUtil!.put(this.commonStrings!.START, this, this.METHOD_ADD_USERS);
+            this.logUtil!.putF(this.commonStrings!.START, this, this.METHOD_ADD_USERS);
     
 userDbInitInfo= new UserDbInitInfo();
     
@@ -181,7 +181,7 @@ logDbInitInfo= new LogDbInitInfo();
                         )
                         
                                     {
-                                    logUtil!.put(this.UNABLE_TO_CREATE_USER +CUSTOMERDBUSER, this, this.METHOD_ADD_USERS);
+                                    this.logUtil!.putF(this.UNABLE_TO_CREATE_USER +CUSTOMERDBUSER, this, this.METHOD_ADD_USERS);
     
 
 
@@ -216,7 +216,7 @@ logDbInitInfo= new LogDbInitInfo();
                         )
                         
                                     {
-                                    logUtil!.put(this.UNABLE_TO_CREATE_USER +INVENTORYDBUSER, this, this.METHOD_ADD_USERS);
+                                    this.logUtil!.putF(this.UNABLE_TO_CREATE_USER +INVENTORYDBUSER, this, this.METHOD_ADD_USERS);
     
 
 
@@ -251,7 +251,7 @@ logDbInitInfo= new LogDbInitInfo();
                         )
                         
                                     {
-                                    logUtil!.put(this.UNABLE_TO_CREATE_USER +HISTORYDBUSER, this, this.METHOD_ADD_USERS);
+                                    this.logUtil!.putF(this.UNABLE_TO_CREATE_USER +HISTORYDBUSER, this, this.METHOD_ADD_USERS);
     
 
 
@@ -286,7 +286,7 @@ logDbInitInfo= new LogDbInitInfo();
                         )
                         
                                     {
-                                    logUtil!.put(this.UNABLE_TO_CREATE_USER +STATICPAGESDBUSER, this, this.METHOD_ADD_USERS);
+                                    this.logUtil!.putF(this.UNABLE_TO_CREATE_USER +STATICPAGESDBUSER, this, this.METHOD_ADD_USERS);
     
 
 
@@ -321,7 +321,7 @@ logDbInitInfo= new LogDbInitInfo();
                         )
                         
                                     {
-                                    logUtil!.put(this.UNABLE_TO_CREATE_USER +LOGDBUSER, this, this.METHOD_ADD_USERS);
+                                    this.logUtil!.putF(this.UNABLE_TO_CREATE_USER +LOGDBUSER, this, this.METHOD_ADD_USERS);
     
 
 
@@ -332,7 +332,7 @@ logDbInitInfo= new LogDbInitInfo();
 
                                     }
                                 
-logUtil!.put(this.commonStrings!.END, this, this.METHOD_ADD_USERS);
+this.logUtil!.putF(this.commonStrings!.END, this, this.METHOD_ADD_USERS);
     
 
 
@@ -344,7 +344,7 @@ logUtil!.put(this.commonStrings!.END, this, this.METHOD_ADD_USERS);
                 //: 
 } catch(e) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, this, this.METHOD_ADD_USERS, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.METHOD_ADD_USERS, e);
     
 
 
@@ -360,7 +360,7 @@ logUtil!.put(this.commonStrings!.EXCEPTION, this, this.METHOD_ADD_USERS, e);
     public addDatabases(): Boolean{
 
         try {
-            logUtil!.put(this.commonStrings!.START, this, this.METHOD_ADD_DATABASES);
+            this.logUtil!.putF(this.commonStrings!.START, this, this.METHOD_ADD_DATABASES);
     
 userDbInitInfo= new UserDbInitInfo();
     
@@ -384,7 +384,7 @@ logDbInitInfo= new LogDbInitInfo();
                         )
                         
                                     {
-                                    logUtil!.put(this.UNABLE_TO_CREATE_DATABASE +CUSTOMERDB, this, this.METHOD_ADD_DATABASES);
+                                    this.logUtil!.putF(this.UNABLE_TO_CREATE_DATABASE +CUSTOMERDB, this, this.METHOD_ADD_DATABASES);
     
 
 
@@ -407,7 +407,7 @@ logDbInitInfo= new LogDbInitInfo();
                         )
                         
                                     {
-                                    logUtil!.put(this.UNABLE_TO_CREATE_DATABASE +INVENTORYDB, this, this.METHOD_ADD_DATABASES);
+                                    this.logUtil!.putF(this.UNABLE_TO_CREATE_DATABASE +INVENTORYDB, this, this.METHOD_ADD_DATABASES);
     
 
 
@@ -430,7 +430,7 @@ logDbInitInfo= new LogDbInitInfo();
                         )
                         
                                     {
-                                    logUtil!.put(this.UNABLE_TO_CREATE_DATABASE +HISTORYDB, this, this.METHOD_ADD_DATABASES);
+                                    this.logUtil!.putF(this.UNABLE_TO_CREATE_DATABASE +HISTORYDB, this, this.METHOD_ADD_DATABASES);
     
 
 
@@ -453,7 +453,7 @@ logDbInitInfo= new LogDbInitInfo();
                         )
                         
                                     {
-                                    logUtil!.put(this.UNABLE_TO_CREATE_DATABASE +STATICPAGESDB, this, this.METHOD_ADD_DATABASES);
+                                    this.logUtil!.putF(this.UNABLE_TO_CREATE_DATABASE +STATICPAGESDB, this, this.METHOD_ADD_DATABASES);
     
 
 
@@ -476,7 +476,7 @@ logDbInitInfo= new LogDbInitInfo();
                         )
                         
                                     {
-                                    logUtil!.put(this.UNABLE_TO_CREATE_DATABASE +LOGDB, this, this.METHOD_ADD_DATABASES);
+                                    this.logUtil!.putF(this.UNABLE_TO_CREATE_DATABASE +LOGDB, this, this.METHOD_ADD_DATABASES);
     
 
 
@@ -513,7 +513,7 @@ idOutData!.writeBytes(this.sqlCommandLog!.toString());
                 //: 
 } catch(e) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, this, this.METHOD_ADD_DATABASES, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.METHOD_ADD_DATABASES, e);
     
 
 
@@ -535,7 +535,7 @@ logUtil!.put(this.commonStrings!.EXCEPTION, this, this.METHOD_ADD_DATABASES, e);
         
 ;
     
-logUtil!.put(commonStrings!.START, this, this.METHOD_ADD_TABLES);
+this.logUtil!.putF(commonStrings!.START, this, this.METHOD_ADD_TABLES);
     
 stringBuffer!.append(UserEntityFactory.getInstance()!.createTable());
     
@@ -570,7 +570,7 @@ stringBuffer!.append(StaticPagesEntityFactory.getInstance()!.getStaticPagesEntit
     
 stringBuffer!.append(TransformInfoEntityBuilder.getInstance()!.createTable());
     
-logUtil!.put(ADD_TABLES_RESULTS_LABEL +stringBuffer!.toString(), this, this.METHOD_ADD_TABLES);
+this.logUtil!.putF(ADD_TABLES_RESULTS_LABEL +stringBuffer!.toString(), this, this.METHOD_ADD_TABLES);
     
 
 
@@ -582,7 +582,7 @@ logUtil!.put(ADD_TABLES_RESULTS_LABEL +stringBuffer!.toString(), this, this.METH
                 //: 
 } catch(e) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, this, this.METHOD_ADD_TABLES, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.METHOD_ADD_TABLES, e);
     
 
 

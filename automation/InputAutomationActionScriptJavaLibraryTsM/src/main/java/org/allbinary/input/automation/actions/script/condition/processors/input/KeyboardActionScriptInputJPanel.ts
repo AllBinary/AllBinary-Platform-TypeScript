@@ -62,7 +62,7 @@ public constructor (keyActionScriptInputInterface: KeyboardActionScriptInputInte
 
             super();
             var keyActionScriptInputInterface = keyActionScriptInputInterface
-logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
+this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
     
 initComponents();
     
@@ -601,7 +601,7 @@ this.getKeyActionJDialog()!.setVisible(false);
                 //: 
 } catch(e) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, this, "okButtonActionPerformed", e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "okButtonActionPerformed", e);
     
 }
 

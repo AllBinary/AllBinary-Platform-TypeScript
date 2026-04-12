@@ -100,7 +100,7 @@ public constructor (anyType: any = {})
         
 ;
     
-logUtil!.put(commonStrings!.EXCEPTION, this, "getStoreName()", e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, "getStoreName()", e);
     
 
                                     }

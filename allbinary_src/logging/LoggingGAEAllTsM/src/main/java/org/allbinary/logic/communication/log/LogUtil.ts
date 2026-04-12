@@ -63,7 +63,7 @@ private constructor (){
             }
 
 
-    /*actual*/ public put(log: Log){
+    /*actual*/ public putL(log: Log){
     //var log = log
 
     var specialMessage: string = log.getSpecialMessage()!;
@@ -94,7 +94,7 @@ this.put(specialMessage, anyType, functionName, exception);
 }
 
 
-    /*actual*/ public put(specialMessage: string, anyType: any = {}, functionName: string){
+    /*actual*/ public putF(specialMessage: string, anyType: any = {}, functionName: string){
     //var specialMessage = specialMessage
     //var anyType = anyType
     //var functionName = functionName

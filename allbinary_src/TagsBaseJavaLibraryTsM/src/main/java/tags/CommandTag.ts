@@ -22,6 +22,10 @@
 export class CommandTag extends CustomTagSupport {
         
 
+    readonly tagStrings: TagStrings = TagStrings.getInstance()!;
+        
+        
+
     private command: string
 public constructor (){
 

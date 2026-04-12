@@ -261,7 +261,7 @@ customMapArray[endGeographicMapCellPosition!.getRow()]![endGeographicMapCellPosi
                                 )
                         
                                     {
-                                    logUtil!.put("pathFindingInfo: " +pathFindingInfo, this, "getPathsList");
+                                    this.logUtil!.putF("pathFindingInfo: " +pathFindingInfo, this, "getPathsList");
     
 
 
@@ -336,7 +336,7 @@ customMapArray[endGeographicMapCellPosition!.getRow()]![endGeographicMapCellPosi
         
 ;
     
-logUtil!.put(commonStrings!.EXCEPTION, this, "getPathsList", e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, "getPathsList", e);
     
 
 

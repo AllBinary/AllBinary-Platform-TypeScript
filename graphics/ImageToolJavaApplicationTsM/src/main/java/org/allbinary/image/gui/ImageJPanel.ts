@@ -75,7 +75,7 @@ var graphics = graphics
                         if(!isDrawn)
                         
                                     {
-                                    logUtil!.put(commonStrings!.START, this, canvasStrings!.PAINT);
+                                    this.logUtil!.putF(commonStrings!.START, this, canvasStrings!.PAINT);
     
 graphics.drawImage(bufferedImage, 0, 0, this.bufferedImage!.getWidth(
                             null), this.bufferedImage!.getHeight(

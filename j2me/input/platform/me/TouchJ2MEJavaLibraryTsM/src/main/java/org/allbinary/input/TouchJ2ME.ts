@@ -84,7 +84,7 @@ var y = y
         
 ;
     
-logUtil!.put(commonStrings!.EXCEPTION, this, "pointerDragged", e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, "pointerDragged", e);
     
 }
 
@@ -108,7 +108,7 @@ var y = y
         
 ;
     
-logUtil!.put(commonStrings!.EXCEPTION, this, "pointerPressed", e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, "pointerPressed", e);
     
 }
 
@@ -132,7 +132,7 @@ var y = y
         
 ;
     
-logUtil!.put(commonStrings!.EXCEPTION, this, "pointerReleased", e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, "pointerReleased", e);
     
 }
 

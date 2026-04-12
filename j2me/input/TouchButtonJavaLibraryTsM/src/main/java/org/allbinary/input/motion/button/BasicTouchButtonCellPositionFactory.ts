@@ -88,7 +88,7 @@ export class BasicTouchButtonCellPositionFactory
 public constructor (){
 
             super();
-            logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
+            this.logUtil!.putF(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
     
 
     var touchButtonLocationHelper: TouchButtonLocationHelper = new TouchButtonLocationHelper();

@@ -152,7 +152,7 @@ stringBuffer!.appendint(userVector!.length);
     
 stringBuffer!.append(" users.");
     
-logUtil!.put(stringBuffer!.toString(), this, "getEventHandler");
+this.logUtil!.putF(stringBuffer!.toString(), this, "getEventHandler");
     
 
                                     }

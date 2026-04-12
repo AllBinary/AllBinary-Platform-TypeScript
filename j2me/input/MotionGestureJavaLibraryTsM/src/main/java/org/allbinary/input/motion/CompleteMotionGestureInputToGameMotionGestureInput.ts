@@ -175,7 +175,7 @@ motionGestureConfiguration!.addMotionGestureAction(list, ReleaseTouchInputToGame
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e);
     
 }
 

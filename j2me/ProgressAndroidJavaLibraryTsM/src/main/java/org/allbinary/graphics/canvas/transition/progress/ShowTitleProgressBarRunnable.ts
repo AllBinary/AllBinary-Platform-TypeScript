@@ -70,7 +70,7 @@ var progressCanvas = progressCanvas
         
 ;
     
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
     
 }
 

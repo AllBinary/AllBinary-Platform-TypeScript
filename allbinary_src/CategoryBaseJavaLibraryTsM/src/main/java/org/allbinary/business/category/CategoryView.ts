@@ -99,7 +99,7 @@ var document = document
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
                         
                                     {
-                                    logUtil!.put("Number Of Children: " +childCategoryVector!.length, this, "toXmlNode");
+                                    this.logUtil!.putF("Number Of Children: " +childCategoryVector!.length, this, "toXmlNode");
     
 
                                     }

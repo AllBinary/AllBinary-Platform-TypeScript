@@ -134,7 +134,7 @@ this.running= running;
     public run(){
 
         try {
-            logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.RUN);
+            this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.RUN);
     
 this.setRunning(true);
     
@@ -173,7 +173,7 @@ filePathStringBuffer!.append(MediaDataFactory.getInstance()!.JPG.getExtension())
         
 ;
     
-logUtil!.put("Loading Image File Path: " +filePath, this, this.commonStrings!.RUN);
+this.logUtil!.putF("Loading Image File Path: " +filePath, this, this.commonStrings!.RUN);
     
 
     var file: File = new File(filePath);
@@ -207,24 +207,24 @@ this.fireEvent(capturedImageEvent);
                                     }
                                 
                         else {
-                            logUtil!.put("Could Not Load File: " +filePath, this, this.commonStrings!.RUN);
+                            this.logUtil!.putF("Could Not Load File: " +filePath, this, this.commonStrings!.RUN);
     
 
                         }
                             
-logUtil!.put(CommonLabels.getInstance()!.ELAPSED +timeHelper!.getElapsed(), this, this.commonStrings!.RUN);
+this.logUtil!.putF(CommonLabels.getInstance()!.ELAPSED +timeHelper!.getElapsed(), this, this.commonStrings!.RUN);
     
 this.setRunning(false);
     
 }
 
-logUtil!.put(this.commonStrings!.END, this, this.commonStrings!.RUN);
+this.logUtil!.putF(this.commonStrings!.END, this, this.commonStrings!.RUN);
     
 
                 //: 
 } catch(e) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e);
     
 }
 

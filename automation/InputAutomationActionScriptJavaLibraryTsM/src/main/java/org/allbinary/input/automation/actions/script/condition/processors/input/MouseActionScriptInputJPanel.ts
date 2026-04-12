@@ -65,7 +65,7 @@ public constructor (mouseActionScriptInputInterface: MouseActionScriptInputInter
 
             super();
                 //var mouseActionScriptInputInterface = mouseActionScriptInputInterface
-logUtil!.put(CommonLabels.getInstance()!.START +mouseActionScriptInputInterface, this, commonStrings!.CONSTRUCTOR);
+this.logUtil!.putF(CommonLabels.getInstance()!.START +mouseActionScriptInputInterface, this, commonStrings!.CONSTRUCTOR);
     
 initComponents();
     
@@ -178,7 +178,7 @@ this.updateInputType();
     
 this.mouseActionScriptInputInterface!.setTime(getText.valueOf());
     
-logUtil!.put("Button State: " +this.mouseActionScriptInputInterface!.getButtonClicks(), this, "update");
+this.logUtil!.putF("Button State: " +this.mouseActionScriptInputInterface!.getButtonClicks(), this, "update");
     
 
                         if(this.button1JCheckBox!.isSelected())
@@ -190,7 +190,7 @@ logUtil!.put("Button State: " +this.mouseActionScriptInputInterface!.getButtonCl
                                     {
                                     this.mouseActionScriptInputInterface!.setButtonClicks(this.mouseActionScriptInputInterface!.getButtonClicks() or InputEvent.BUTTON1_MASK);
     
-logUtil!.put("Button 1 Selected: " +this.mouseActionScriptInputInterface!.getButtonClicks(), this, "update");
+this.logUtil!.putF("Button 1 Selected: " +this.mouseActionScriptInputInterface!.getButtonClicks(), this, "update");
     
 
                                     }
@@ -205,7 +205,7 @@ logUtil!.put("Button 1 Selected: " +this.mouseActionScriptInputInterface!.getBut
                                     {
                                     this.mouseActionScriptInputInterface!.setButtonClicks(this.mouseActionScriptInputInterface!.getButtonClicks() xor InputEvent.BUTTON1_MASK);
     
-logUtil!.put("Button 1 Deselected: " +this.mouseActionScriptInputInterface!.getButtonClicks(), this, "update");
+this.logUtil!.putF("Button 1 Deselected: " +this.mouseActionScriptInputInterface!.getButtonClicks(), this, "update");
     
 
                                     }
@@ -223,7 +223,7 @@ logUtil!.put("Button 1 Deselected: " +this.mouseActionScriptInputInterface!.getB
                                     {
                                     this.mouseActionScriptInputInterface!.setButtonClicks(this.mouseActionScriptInputInterface!.getButtonClicks() or InputEvent.BUTTON2_MASK);
     
-logUtil!.put("Button 2 Selected: " +this.mouseActionScriptInputInterface!.getButtonClicks(), this, "update");
+this.logUtil!.putF("Button 2 Selected: " +this.mouseActionScriptInputInterface!.getButtonClicks(), this, "update");
     
 
                                     }
@@ -238,7 +238,7 @@ logUtil!.put("Button 2 Selected: " +this.mouseActionScriptInputInterface!.getBut
                                     {
                                     this.mouseActionScriptInputInterface!.setButtonClicks(this.mouseActionScriptInputInterface!.getButtonClicks() xor InputEvent.BUTTON2_MASK);
     
-logUtil!.put("Button 2 Deselected: " +this.mouseActionScriptInputInterface!.getButtonClicks(), this, "update");
+this.logUtil!.putF("Button 2 Deselected: " +this.mouseActionScriptInputInterface!.getButtonClicks(), this, "update");
     
 
                                     }
@@ -459,7 +459,7 @@ this.getMouseActionJDialog()!.setVisible(false);
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "okButtonActionPerformed", e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, "okButtonActionPerformed", e);
     
 }
 

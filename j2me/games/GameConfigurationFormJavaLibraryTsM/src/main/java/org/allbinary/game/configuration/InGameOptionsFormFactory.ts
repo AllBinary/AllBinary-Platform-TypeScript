@@ -93,7 +93,7 @@ SINGLETON= new InGameOptionsForm(commandListener, title, backgrounBasicColor, fo
         
 ;
     
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e);
     
 }
 

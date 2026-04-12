@@ -139,7 +139,7 @@ this.clear();
     
 
         try {
-            logUtil!.put(new StringMaker().
+            this.logUtil!.putF(new StringMaker().
                             append(this.persistanceStrings!.DELETING_WITH_ID)!.appendint(deleteId)!.toString(), this, this.commonStrings!.delete);
     
 recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation), true);

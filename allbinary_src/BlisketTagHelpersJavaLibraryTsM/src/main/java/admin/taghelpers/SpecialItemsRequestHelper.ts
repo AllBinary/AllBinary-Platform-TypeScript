@@ -51,6 +51,12 @@ import { SpecialItemsEntityFactory } from "../../org/allbinary/data/tables/user/
 import { LogUtil } from "../../org/allbinary/logic/communication/log/LogUtil.js";
 
     
+import { StringMaker } from "../../org/allbinary/logic/string/StringMaker.js";
+
+    
+import { CommonSeps } from "../../org/allbinary/string/CommonSeps.js";
+
+    
 
 export class SpecialItemsRequestHelper extends ModifyTable {
         
@@ -203,7 +209,7 @@ SpecialItemsEntityFactory.getInstance()!.getSpecialItemsEntityInstance()!.insert
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put(success, this, "insert()");
+                                    this.logUtil!.putF(success, this, "insert()");
     
 
                                     }
@@ -228,7 +234,7 @@ SpecialItemsEntityFactory.getInstance()!.getSpecialItemsEntityInstance()!.insert
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "inserts()", e);
+                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "inserts()", e);
     
 
                                     }
@@ -259,7 +265,7 @@ SpecialItemsEntityFactory.getInstance()!.getSpecialItemsEntityInstance()!.insert
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put(success, this, "delete()");
+                                    this.logUtil!.putF(success, this, "delete()");
     
 
                                     }
@@ -284,7 +290,7 @@ SpecialItemsEntityFactory.getInstance()!.getSpecialItemsEntityInstance()!.insert
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "delete()", e);
+                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "delete()", e);
     
 
                                     }
@@ -321,7 +327,8 @@ SpecialItemsEntityFactory.getInstance()!.getSpecialItemsEntityInstance()!.update
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put(id +" " +success, this, "update()");
+                                    this.logUtil!.putF(new StringMaker().
+                            append(id)!.append(CommonSeps.getInstance()!.SPACE)!.append(success)!.toString(), this, "update()");
     
 
                                     }
@@ -346,7 +353,7 @@ SpecialItemsEntityFactory.getInstance()!.getSpecialItemsEntityInstance()!.update
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "update()", e);
+                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "update()", e);
     
 
                                     }

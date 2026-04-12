@@ -116,7 +116,7 @@ export class ImageArrayRotationUtil
         
 index < bufferedImageArray!.length; index++)
         {
-logUtil!.put(TOTAL_ANGLE +totalAngle, this, commonStrings!.RUN);
+this.logUtil!.putF(TOTAL_ANGLE +totalAngle, this, commonStrings!.RUN);
     
 generatedBufferedImage= ImageJ2SERotationUtil.getInstance()!.getRotatedImage(bufferedImageArray[index]!, totalAngle!.toInt());
     

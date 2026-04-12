@@ -50,7 +50,7 @@ var soundsFactoryInterface = soundsFactoryInterface
         
 ;
     
-logUtil!.put(commonStrings!.START, instance, "shutdown");
+logUtil!.putF(commonStrings!.START, instance, "shutdown");
     
 AllBinaryMediaManager.shutdown(soundsFactoryInterface);
     

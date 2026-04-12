@@ -89,7 +89,7 @@ public constructor (label: string, node: Node)
 
                             //For kotlin this is before the body of the constructor.
                     
-logUtil!.put(commonStrings!.START +label, this, commonStrings!.CONSTRUCTOR);
+this.logUtil!.putF(commonStrings!.START +label, this, commonStrings!.CONSTRUCTOR);
     
 
     var actionNode: Node = DomSearchHelper.getNode(GenericProfileActionScriptInputData.TYPE, node.getChildNodes())!;
@@ -146,7 +146,7 @@ public constructor (label: string)
 
                             //For kotlin this is before the body of the constructor.
                     
-logUtil!.put(commonStrings!.START +label, this, commonStrings!.CONSTRUCTOR);
+this.logUtil!.putF(commonStrings!.START +label, this, commonStrings!.CONSTRUCTOR);
     
 
     var inputRobotFactory: InputRobotFactory = InputRobotFactory.getInstance()!;
@@ -211,7 +211,7 @@ hashMap!.put(GenericProfileActionScriptInputData.TYPE, this.getInputRobotInterfa
     
 hashMap!.put(GenericProfileActionScriptInputData.DELAY, Integer.toString(this.getTime()));
     
-logUtil!.put("HashMap: " +hashMap!.toString(), this, "toHashMap()");
+this.logUtil!.putF("HashMap: " +hashMap!.toString(), this, "toHashMap()");
     
 
 

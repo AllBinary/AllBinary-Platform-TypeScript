@@ -109,7 +109,7 @@ this.gameKeyEvent= this.gameKeyEventFactory!.getInstance(this, gameKey);
         
 ;
     
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.UPDATE, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.UPDATE, e);
     
 }
 

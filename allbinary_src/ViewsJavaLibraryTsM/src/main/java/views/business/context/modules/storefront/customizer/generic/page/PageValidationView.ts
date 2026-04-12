@@ -94,7 +94,7 @@ public constructor (transformInfoInterface: TransformInfoInterface)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("View Name: " +transformInfoInterface!.getName(), this, "PageViewValidation()");
+                                    this.logUtil!.putF("View Name: " +transformInfoInterface!.getName(), this, "PageViewValidation()");
     
 
                                     }
@@ -115,7 +115,7 @@ public constructor (transformInfoInterface: TransformInfoInterface)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.START, this, commonStrings!.IS_VALID);
+                                    this.logUtil!.putF(this.commonStrings!.START, this, commonStrings!.IS_VALID);
     
 
                                     }
@@ -142,7 +142,7 @@ public constructor (transformInfoInterface: TransformInfoInterface)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Views To Be Modified: " +allViewsToBeModifiedVector!.length, this, "get(transformInfoInterface)");
+                                    this.logUtil!.putF("Views To Be Modified: " +allViewsToBeModifiedVector!.length, this, "get(transformInfoInterface)");
     
 
                                     }
@@ -193,7 +193,7 @@ stringBuffer!.append(" is modifying view: ");
     
 stringBuffer!.append(viewNameOfViewToBeModified);
     
-logUtil!.put(stringBuffer!.toString(), this, "insert()");
+this.logUtil!.putF(stringBuffer!.toString(), this, "insert()");
     
 
                                     }
@@ -228,7 +228,7 @@ stringBuffer!.append(" is adding data to view: ");
     
 stringBuffer!.append(viewNameOfViewToBeModified);
     
-logUtil!.put(stringBuffer!.toString(), this, "insert()");
+this.logUtil!.putF(stringBuffer!.toString(), this, "insert()");
     
 
                                     }
@@ -313,7 +313,7 @@ stringBuffer!.append(" to the following data:\n");
     
 stringBuffer!.append(documentString);
     
-logUtil!.put(stringBuffer!.toString(), this, commonStrings!.IS_VALID);
+this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.IS_VALID);
     
 
                                     }
@@ -339,7 +339,7 @@ CustomizerUtil.getInstance()!.write(specifiedTransformInfoInterface, documentStr
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("Failed to validate", this, commonStrings!.IS_VALID, e);
+                                    this.logUtil!.put("Failed to validate", this, commonStrings!.IS_VALID, e);
     
 
                                     }
@@ -490,7 +490,7 @@ stringBuffer!.append("PageValidation Info:" +pageValidation!.validationInfo());
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e);
+                                    this.logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e);
     
 
                                     }

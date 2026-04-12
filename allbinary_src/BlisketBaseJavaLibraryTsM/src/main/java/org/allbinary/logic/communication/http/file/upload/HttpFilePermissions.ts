@@ -68,7 +68,7 @@ file= new AbFile(new AbPath(fullPath!.toFileSystemString(), FileUploadData.getIn
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("Loading Privileges: " +fullPath!.toFileSystemString(), this, this.commonStrings!.CONSTRUCTOR);
+                                    this.logUtil!.putF("Loading Privileges: " +fullPath!.toFileSystemString(), this, this.commonStrings!.CONSTRUCTOR);
     
 
                                     }
@@ -86,7 +86,7 @@ file= new AbFile(new AbPath(fullPath!.toFileSystemString(), FileUploadData.getIn
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("User Roles: " +userRoles, this, this.commonStrings!.CONSTRUCTOR);
+                                    this.logUtil!.putF("User Roles: " +userRoles, this, this.commonStrings!.CONSTRUCTOR);
     
 
                                     }

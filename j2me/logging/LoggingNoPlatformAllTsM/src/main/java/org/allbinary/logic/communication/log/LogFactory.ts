@@ -19,44 +19,16 @@
 
 
 
-export class LogFactory
+expect export class LogFactory
             extends Object
          {
         
 
-    public static getInstance(specialMessage: string, anyType: any = {}, exception: any = {}): Log{
-var specialMessage = specialMessage
-var anyType = anyType
-var exception = exception
+    public static getInstanceNoF(specialMessage: string, anyType: any = {}, exception: any = {}): Log
 
+    public static getInstance(specialMessage: string, anyType: any = {}, functionName: string, exception: any = {}): Log
 
-
-                            throw new RuntimeException()
-}
-
-
-    public static getInstance(specialMessage: string, anyType: any = {}, functionName: string, exception: any = {}): Log{
-var specialMessage = specialMessage
-var anyType = anyType
-var functionName = functionName
-var exception = exception
-
-
-
-                            throw new RuntimeException()
-}
-
-
-    public static getInstance(specialMessage: string, anyType: any = {}, functionName: string): Log{
-var specialMessage = specialMessage
-var anyType = anyType
-var functionName = functionName
-
-
-
-                            throw new RuntimeException()
-}
-
+    public static getInstanceF(specialMessage: string, anyType: any = {}, functionName: string): Log
 
 }
                 

@@ -108,7 +108,7 @@ public constructor (transformInfoInterface: TransformInfoInterface)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("View Name: " +transformInfoInterface!.getName(), this, this.commonStrings!.CONSTRUCTOR);
+                                    this.logUtil!.putF("View Name: " +transformInfoInterface!.getName(), this, this.commonStrings!.CONSTRUCTOR);
     
 
                                     }
@@ -134,7 +134,7 @@ this.viewName= requestHashMap!.get(TransformInfoData.getInstance()!.NAME);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Started Validation", this, commonStrings!.IS_VALID);
+                                    this.logUtil!.putF("Started Validation", this, commonStrings!.IS_VALID);
     
 
                                     }
@@ -189,7 +189,7 @@ stringBuffer!.appendint(componentVector!.length);
     
 stringBuffer!.append(" Components");
     
-logUtil!.put(stringBuffer!.toString(), this, commonStrings!.IS_VALID);
+this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.IS_VALID);
     
 
                                     }
@@ -222,7 +222,7 @@ index < size; index++)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Setting Template Component with ViewName: " +transformInfoName, this, commonStrings!.IS_VALID);
+                                    this.logUtil!.putF("Setting Template Component with ViewName: " +transformInfoName, this, commonStrings!.IS_VALID);
     
 
                                     }
@@ -344,7 +344,7 @@ stringBuffer!.append("\n Now Pointing To View Name: ");
     
 stringBuffer!.append(newViewName);
     
-logUtil!.put(stringBuffer!.toString(), this, commonStrings!.IS_VALID);
+this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.IS_VALID);
     
 
                                     }
@@ -369,7 +369,7 @@ stringBuffer!.append("\n with ObjectConfig: ");
     
 stringBuffer!.append(templateViewObjectConfig!.toString());
     
-logUtil!.put(stringBuffer!.toString(), this, commonStrings!.IS_VALID);
+this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.IS_VALID);
     
 
                                     }
@@ -403,7 +403,7 @@ TransformInfoEntityBuilder.getInstance()!.update(updatedTransformInfoHashMap);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("Failed to validate", this, commonStrings!.IS_VALID, e);
+                                    this.logUtil!.put("Failed to validate", this, commonStrings!.IS_VALID, e);
     
 
                                     }
@@ -446,7 +446,7 @@ stringBuffer!.append("Error: Template Name Is Empty.");
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e);
+                                    this.logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e);
     
 
                                     }

@@ -139,6 +139,12 @@ new object: Thread()
                                 
     public run(){
 
+    var logUtil: LogUtil = LogUtil.getInstance()!;
+        
+        
+;
+    
+
         try {
             
     var imageUtil: ImageUtil = ImageUtil.getInstance()!;

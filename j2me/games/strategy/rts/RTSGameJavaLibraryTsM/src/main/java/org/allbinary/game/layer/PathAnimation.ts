@@ -252,7 +252,7 @@ this.linePathAnimation!.paint(graphics, point, nextPoint, tiledLayer);
                 //: 
 } catch(e) 
             {
-logUtil!.put("Cleared Target", this, "paint");
+this.logUtil!.putF("Cleared Target", this, "paint");
     
 }
 

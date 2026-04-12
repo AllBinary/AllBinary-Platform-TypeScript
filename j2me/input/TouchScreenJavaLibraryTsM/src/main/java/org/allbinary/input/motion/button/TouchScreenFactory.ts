@@ -82,7 +82,7 @@ this.setMultiTouch(false);
         
 ;
     
-logUtil!.put(commonStrings!.EXCEPTION, SINGLETON, commonStrings!.GET_INSTANCE, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, SINGLETON, commonStrings!.GET_INSTANCE, e);
     
 }
 

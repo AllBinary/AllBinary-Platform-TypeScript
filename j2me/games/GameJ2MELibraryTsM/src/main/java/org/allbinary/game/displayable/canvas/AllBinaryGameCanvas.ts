@@ -327,6 +327,9 @@ import { BasicMotionGesturesHandler } from "../../../../../org/allbinary/input/m
 import { ForcedLogUtil } from "../../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js";
 
     
+import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+
+    
 import { PreLogUtil } from "../../../../../org/allbinary/logic/communication/log/PreLogUtil.js";
 
     
@@ -806,7 +809,7 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, this.canvasStrings!.ON_DISPLAY_CHANGE_EVENT, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, this.canvasStrings!.ON_DISPLAY_CHANGE_EVENT, e);
     
 }
 
@@ -955,7 +958,7 @@ this.setPopupMenuInputProcessor(new PopupMenuInputProcessor(new BasicArrayList()
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "initMenu", e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, "initMenu", e);
     
 }
 
@@ -1063,7 +1066,7 @@ this.closeMenu();
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "initMenu", e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, "initMenu", e);
     
 }
 
@@ -1162,7 +1165,7 @@ System.gc();
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public unPause(){
-logUtil!.put(commonStrings!.START, this, gameStrings!.UNPAUSE);
+this.logUtil!.putF(commonStrings!.START, this, gameStrings!.UNPAUSE);
     
 this.closeMenu();
     
@@ -1231,7 +1234,7 @@ this.gameKeyEventHandler!.addListener(this.mainMenuInputProcessor);
                 //@Throws(Error::class)
             
     public toggleMenu(){
-logUtil!.put(commonStrings!.START, this, this.gameStrings!.TOGGLE_MENU);
+this.logUtil!.putF(commonStrings!.START, this, this.gameStrings!.TOGGLE_MENU);
     
 
                         if(this.getMenuPaintable() == this.getOpenMenuPaintable())
@@ -1335,7 +1338,7 @@ this.setLayerManager(gameLayerManager);
         
 ;
     
-logUtil!.put(BUFF_MESSAGE, this, commonStrings!.CONSTRUCTOR);
+this.logUtil!.putF(BUFF_MESSAGE, this, commonStrings!.CONSTRUCTOR);
     
 
                                     }
@@ -1476,7 +1479,7 @@ GameInitializationUtil.getInstance()!.initGame(abeClientInformation, this, gameI
         
 ;
     
-logUtil!.put(new StringMaker().
+this.logUtil!.putF(new StringMaker().
                             append("Sound Changing To: ")!.appendboolean(features.isFeature(gameFeatureFactory!.SOUND))!.toString(), this, "initConfigurable");
     
 this.mediaInit();
@@ -1726,7 +1729,7 @@ var item = item
         
 ;
     
-logUtil!.put(new StringMaker().
+this.logUtil!.putF(new StringMaker().
                             append(commonLabels!.ITEM_LABEL)!.append(itemLabel)!.toString(), this, "itemStateChanged");
     
 
@@ -1769,7 +1772,7 @@ this.sensorGameUpdateProcessor!.sendNotifications(this.gameLayerManager);
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "itemStateChanged", e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, "itemStateChanged", e);
     
 }
 
@@ -1906,7 +1909,7 @@ this.highScoreSubmitted= highScoreSubmitted;
 
                                     }
                                 
-logUtil!.put(new StringMaker().
+this.logUtil!.putF(new StringMaker().
                             append("isHighScoreSubmitted: ")!.appendboolean(highScoreSubmitted)!.toString(), this, "setHighScoreSubmitted");
     
 }
@@ -1926,7 +1929,7 @@ logUtil!.put(new StringMaker().
             
     public setGameState(gameState: GameState){
     //var gameState = gameState
-logUtil!.put(new StringMaker().
+this.logUtil!.putF(new StringMaker().
                             append(this.gameStrings!.GAME_STATE)!.append(this.stringUtil!.toString(gameState))!.toString(), this, this.gameStrings!.SET_GAME_STATE);
     
 this.gameState= gameState;
@@ -1993,7 +1996,7 @@ this.gameBehavior!.removeAllGameKeyInputListeners(this);
 
 
     removeAllGameKeyInputListeners2(){
-logUtil!.put("Remove PlayerInput Listeners", this, "removeAllGameKeyInputListeners");
+this.logUtil!.putF("Remove PlayerInput Listeners", this, "removeAllGameKeyInputListeners");
     
 
 
@@ -2068,7 +2071,7 @@ this.gameBehavior!.updateEndGameProcessor(this);
                 //@Throws(Error::class)
             
     cleanupGame(){
-logUtil!.put(commonStrings!.START, this, this.commonStrings!.CLEANUP);
+this.logUtil!.putF(commonStrings!.START, this, this.commonStrings!.CLEANUP);
     
 
     var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
@@ -2229,7 +2232,7 @@ this.setInitialized(true);
                         if(this.getCustomCommandListener() == NullCommandListener.NULL_COMMAND_LISTENER)
                         
                                     {
-                                    logUtil!.put("Show Game Paintable in DemoCanvas Thread", this, BUILD_GAME);
+                                    this.logUtil!.putF("Show Game Paintable in DemoCanvas Thread", this, BUILD_GAME);
     
 this.gameCanvasStartListener!.showGamePaintable();
     
@@ -2237,7 +2240,7 @@ this.gameCanvasStartListener!.showGamePaintable();
                                     }
                                 
                         else {
-                            logUtil!.put("No GameCanvasStartListener", this, BUILD_GAME);
+                            this.logUtil!.putF("No GameCanvasStartListener", this, BUILD_GAME);
     
 
                         }
@@ -2304,7 +2307,7 @@ this.gameCanvasStartListener= gameCanvasStartListener;
                 //@Throws(Error::class)
             
     public loadState(){
-logUtil!.put(commonStrings!.START, this, commonStrings!.LOAD);
+this.logUtil!.putF(commonStrings!.START, this, commonStrings!.LOAD);
     
 
     var hashtable: Hashtable<any, any> = getLoadStateHashtable()!;
@@ -2349,7 +2352,7 @@ gameInfo!.setCurrentLevel(level);
                 //@Throws(Error::class)
             
     public getLoadStateHashtable(): Hashtable<any, any>{
-logUtil!.put(new StringMaker().
+this.logUtil!.putF(new StringMaker().
                             append(commonLabels!.START_LABEL)!.append(this.stringUtil!.toString(this.hashtable))!.toString(), this, "getLoadStateHashtable");
     
 
@@ -2363,7 +2366,7 @@ logUtil!.put(new StringMaker().
 
     public setLoadStateHashtable(hashtable: Hashtable<any, any>){
     //var hashtable = hashtable
-logUtil!.put(new StringMaker().
+this.logUtil!.putF(new StringMaker().
                             append(commonLabels!.START_LABEL)!.append(this.stringUtil!.toString(hashtable))!.toString(), this, "setLoadStateHashtable");
     
 this.hashtable= hashtable;
@@ -2386,7 +2389,7 @@ this.hashtable= hashtable;
     
 hashtable.put(GameInfo.LEVEL_NAME.toString(), level.toString());
     
-logUtil!.put(new StringMaker().
+this.logUtil!.putF(new StringMaker().
                             append("End: ")!.append(this.stringUtil!.toString(hashtable))!.toString(), this, "getCurrentStateHashtable");
     
 
@@ -2708,7 +2711,7 @@ Thread.sleep(YIELD_SLEEP);
     public run(){
 
         try {
-            logUtil!.put(commonStrings!.START_RUNNABLE, this, commonStrings!.RUN);
+            this.logUtil!.putF(commonStrings!.START_RUNNABLE, this, commonStrings!.RUN);
     
 
     var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
@@ -2758,13 +2761,13 @@ gameAdState!.setGameIsReady(true);
     
 this.gameBehavior!.run(this);
     
-logUtil!.put(commonStrings!.END_RUNNABLE, this, commonStrings!.RUN);
+this.logUtil!.putF(commonStrings!.END_RUNNABLE, this, commonStrings!.RUN);
     
 
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
     
 }
 
@@ -2788,7 +2791,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
                         if(features.isDefault(openGLFeatureFactory!.OPENGL_AS_GAME_THREAD))
                         
                                     {
-                                    logUtil!.put(openGLFeatureFactory!.OPENGL_AS_GAME_THREAD.getName(), this, commonStrings!.RUN);
+                                    this.logUtil!.putF(openGLFeatureFactory!.OPENGL_AS_GAME_THREAD.getName(), this, commonStrings!.RUN);
     
 
                                     }
@@ -2797,7 +2800,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
                         if(J2MEUtil.isHTML())
                         
                                     {
-                                    logUtil!.put(GraphicsStrings.getInstance()!.HTML, this, commonStrings!.RUN);
+                                    this.logUtil!.putF(GraphicsStrings.getInstance()!.HTML, this, commonStrings!.RUN);
     
 
                                     }
@@ -2821,7 +2824,7 @@ OpenGLThreadUtil.getInstance()!.onResume();
                         if(features.isDefault(openGLFeatureFactory!.OPENGL_AND_GAME_HAVE_DIFFERENT_THREADS))
                         
                                     {
-                                    logUtil!.put(openGLFeatureFactory!.OPENGL_AND_GAME_HAVE_DIFFERENT_THREADS.getName(), this, commonStrings!.RUN);
+                                    this.logUtil!.putF(openGLFeatureFactory!.OPENGL_AND_GAME_HAVE_DIFFERENT_THREADS.getName(), this, commonStrings!.RUN);
     
 OpenGLThreadUtil.getInstance()!.onResume();
     
@@ -2838,7 +2841,7 @@ this.end();
                                     }
                                 
                         else {
-                            logUtil!.put("this thread", this, commonStrings!.RUN);
+                            this.logUtil!.putF("this thread", this, commonStrings!.RUN);
     
 
         while(this.isRunning())
@@ -2920,7 +2923,7 @@ this.end();
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, SET_RUNNING, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, SET_RUNNING, e);
     
 }
 
@@ -3041,6 +3044,12 @@ class SaveHighScoreRunnable
         
 
     public run(){
+
+    var logUtil: LogUtil = LogUtil.getInstance()!;
+        
+        
+;
+    
 
         try {
             

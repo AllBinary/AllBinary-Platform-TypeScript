@@ -113,7 +113,7 @@ StreamUtil.getInstance()!.close(fileOutputStream);
 
          }
         
-logUtil!.put("Wrote Image: " +file.getAbsolutePath(), this, commonStrings!.SAVE);
+this.logUtil!.putF("Wrote Image: " +file.getAbsolutePath(), this, commonStrings!.SAVE);
     
 }
 
@@ -159,7 +159,7 @@ var bufferedImage = bufferedImage
                         )
                         
                                     {
-                                    logUtil!.put("Unable to save image to jpeg file type.", this, commonStrings!.SAVE);
+                                    this.logUtil!.putF("Unable to save image to jpeg file type.", this, commonStrings!.SAVE);
     
 
 
@@ -193,13 +193,13 @@ writer.write(
                             null, 
                             null), iwp);
     
-logUtil!.put("Wrote Image: " +file.getAbsolutePath(), this, commonStrings!.SAVE);
+this.logUtil!.putF("Wrote Image: " +file.getAbsolutePath(), this, commonStrings!.SAVE);
     
 
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.SAVE, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.SAVE, e);
     
 }
 
@@ -222,7 +222,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.SAVE, e);
                                 )
                         
                                     {
-                                    logUtil!.put(ios.toString(), ios, commonStrings!.CLOSE);
+                                    this.logUtil!.putF(ios.toString(), ios, commonStrings!.CLOSE);
     
 ios.close();
     
@@ -233,7 +233,7 @@ ios.close();
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, ios, commonStrings!.CLOSE, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, ios, commonStrings!.CLOSE, e);
     
 }
 
@@ -255,7 +255,7 @@ logUtil!.put(commonStrings!.EXCEPTION, ios, commonStrings!.CLOSE, e);
                 //: 
 } catch(e2) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, this, commonStrings!.SAVE, e2);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, commonStrings!.SAVE, e2);
     
 }
 

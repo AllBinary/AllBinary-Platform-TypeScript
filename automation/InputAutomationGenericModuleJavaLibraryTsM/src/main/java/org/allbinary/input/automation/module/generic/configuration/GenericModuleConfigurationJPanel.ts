@@ -356,7 +356,7 @@ var evt = evt
                         if(this.savedCaptureJRadioButton!.isSelected())
                         
                                     {
-                                    logUtil!.put("Selected", this, "savedCaptureJRadioButtonActionPerformed");
+                                    this.logUtil!.putF("Selected", this, "savedCaptureJRadioButtonActionPerformed");
     
 this.getSelectedGenericProfile()!.add(GenericProfileDataWorkerType.SAVED_CAPTURE);
     
@@ -373,7 +373,7 @@ this.getGenericProfiles()!.save();
                 //: 
 } catch(e) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, this, "savedCaptureJRadioButtonActionPerformed", e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "savedCaptureJRadioButtonActionPerformed", e);
     
 }
 
@@ -388,7 +388,7 @@ var evt = evt
                         if(this.screenCaptureJRadioButton!.isSelected())
                         
                                     {
-                                    logUtil!.put("Selected", this, "screenCaptureJRadioButtonActionPerformed");
+                                    this.logUtil!.putF("Selected", this, "screenCaptureJRadioButtonActionPerformed");
     
 this.getSelectedGenericProfile()!.add(GenericProfileDataWorkerType.SCREEN_CAPTURE);
     
@@ -405,7 +405,7 @@ this.getGenericProfiles()!.save();
                 //: 
 } catch(e) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, this, "screenCaptureJRadioButtonActionPerformed", e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "screenCaptureJRadioButtonActionPerformed", e);
     
 }
 
@@ -437,7 +437,7 @@ this.getGenericProfiles()!.save();
                 //: 
 } catch(e) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, this, "captureComparisonJCheckBoxActionPerformed", e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "captureComparisonJCheckBoxActionPerformed", e);
     
 }
 
@@ -469,7 +469,7 @@ this.getGenericProfiles()!.save();
                 //: 
 } catch(e) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, this, "captureComparisonJCheckBoxActionPerformed", e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "captureComparisonJCheckBoxActionPerformed", e);
     
 }
 
@@ -516,13 +516,13 @@ layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Align
     
 this.updateProfileOptions();
     
-logUtil!.put("Setting Configuration Profile JPanel", this, "updateProfileUI");
+this.logUtil!.putF("Setting Configuration Profile JPanel", this, "updateProfileUI");
     
 
                                     }
                                 
                         else {
-                            logUtil!.put("Null Configuration Profile", this, "updateProfileUI");
+                            this.logUtil!.putF("Null Configuration Profile", this, "updateProfileUI");
     
 
                         }
@@ -554,7 +554,7 @@ this.updateProfileUI(this.genericProfilesJList!.getModel()!.getElementAt(0);
                 //@Throws(Error::class)
             
     updateProfileOptions(){
-logUtil!.put(this.commonStrings!.START, this, "updateProfileOptions");
+this.logUtil!.putF(this.commonStrings!.START, this, "updateProfileOptions");
     
 
     var genericProfile: GenericProfile = this.getSelectedGenericProfile()!;
@@ -600,13 +600,13 @@ index < size; index++)
         
 ;
     
-logUtil!.put(genericProfile!.getName() +" has GenericProfileDataWorkerType: " +genericProfileDataWorkerType!.toString(), this, "updateProfileOptions");
+this.logUtil!.putF(genericProfile!.getName() +" has GenericProfileDataWorkerType: " +genericProfileDataWorkerType!.toString(), this, "updateProfileOptions");
     
 
                         if(genericProfileDataWorkerType == GenericProfileDataWorkerType.SCREEN_CAPTURE)
                         
                                     {
-                                    logUtil!.put("Screen Capture Selected", this, "updateProfileOptions");
+                                    this.logUtil!.putF("Screen Capture Selected", this, "updateProfileOptions");
     
 this.screenCaptureJRadioButton!.setSelected(true);
     
@@ -617,7 +617,7 @@ this.screenCaptureJRadioButton!.setSelected(true);
                         if(genericProfileDataWorkerType == GenericProfileDataWorkerType.SAVED_CAPTURE)
                         
                                     {
-                                    logUtil!.put("Saved Capture Selected", this, "updateProfileOptions");
+                                    this.logUtil!.putF("Saved Capture Selected", this, "updateProfileOptions");
     
 this.savedCaptureJRadioButton!.setSelected(true);
     
@@ -628,7 +628,7 @@ this.savedCaptureJRadioButton!.setSelected(true);
                         if(genericProfileDataWorkerType == GenericProfileDataWorkerType.COMPARISON)
                         
                                     {
-                                    logUtil!.put("Checking Comparison Box", this, "updateProfileOptions");
+                                    this.logUtil!.putF("Checking Comparison Box", this, "updateProfileOptions");
     
 this.captureComparisonJCheckBox!.setSelected(true);
     
@@ -639,7 +639,7 @@ this.captureComparisonJCheckBox!.setSelected(true);
                         if(genericProfileDataWorkerType == GenericProfileDataWorkerType.MOTION)
                         
                                     {
-                                    logUtil!.put("Checking Motion Box", this, "updateProfileOptions");
+                                    this.logUtil!.putF("Checking Motion Box", this, "updateProfileOptions");
     
 this.captureMotionAnalysisJCheckBox!.setSelected(true);
     
@@ -663,7 +663,7 @@ this.getSelectedGenericProfile()!.add(GenericProfileDataWorkerType.SCREEN_CAPTUR
 
                                     }
                                 
-logUtil!.put(this.commonStrings!.END, this, "updateProfileOptions");
+this.logUtil!.putF(this.commonStrings!.END, this, "updateProfileOptions");
     
 }
 
@@ -737,7 +737,7 @@ this.updateProfileUI(profileNameString);
                 //: 
 } catch(e) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, this, "genericProfilesJListValueChanged", e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "genericProfilesJListValueChanged", e);
     
 }
 
@@ -780,7 +780,7 @@ this.selectFirstElement();
                 //: 
 } catch(e) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, this, "deleteProfileJButtonActionPerformed", e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "deleteProfileJButtonActionPerformed", e);
     
 }
 
@@ -811,7 +811,7 @@ this.updateProfileUI(newProfileName);
                 //: 
 } catch(e) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, this, "okNewProfileJButtonActionPerformed", e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "okNewProfileJButtonActionPerformed", e);
     
 }
 

@@ -81,7 +81,7 @@ public constructor (imageProcessorInput: ImageProcessorInput)
 
                             //For kotlin this is before the body of the constructor.
                     
-logUtil!.put("Starting", this, this.commonStrings!.CONSTRUCTOR);
+this.logUtil!.putF("Starting", this, this.commonStrings!.CONSTRUCTOR);
     
 initComponents();
     
@@ -95,6 +95,12 @@ new object: Thread()
                                 {
                                 
     public run(){
+
+    var logUtil: LogUtil = LogUtil.getInstance()!;
+        
+        
+;
+    
 
         try {
             
@@ -152,7 +158,7 @@ this@MirrorImageJPanel.result= MirrorImageUtil.getInstance()!.getImage(bufferedI
     
 filePath= filePath!.substring(0, extensionIndex) +"_mirror" +imageStrings!.PNG_EXTENSION;
     
-logUtil!.put("Renamed File: " +filePath, this, commonStrings!.RUN);
+logUtil!.putF("Renamed File: " +filePath, this, commonStrings!.RUN);
     
 file= new File(filePath);
     
@@ -165,7 +171,7 @@ file= new File(filePath);
         
 ;
     
-logUtil!.put("File: " +file +" Wrote: " +isWritten, this, commonStrings!.RUN);
+logUtil!.putF("File: " +file +" Wrote: " +isWritten, this, commonStrings!.RUN);
     
 this@MirrorImageJPanel.getParent()!.repaint();
     

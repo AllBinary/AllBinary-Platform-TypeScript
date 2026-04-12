@@ -59,7 +59,7 @@ public constructor (){
         
 ;
     
-logUtil!.put(commonStrings!.EXCEPTION, "Test", "TestClass", new Error("Pretend Exception"));
+this.logUtil!.put(commonStrings!.EXCEPTION, "Test", "TestClass", new Error("Pretend Exception"));
     
 }
 

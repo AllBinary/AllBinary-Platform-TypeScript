@@ -67,6 +67,12 @@ this.string= string;
 
     public run(){
 
+    var logUtil: LogUtil = LogUtil.getInstance()!;
+        
+        
+;
+    
+
         try {
             Toast.makeText(context, string, time)!.show();
     

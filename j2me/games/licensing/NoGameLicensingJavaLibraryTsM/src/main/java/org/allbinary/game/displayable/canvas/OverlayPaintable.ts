@@ -56,7 +56,7 @@ public constructor (){
         
 ;
     
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.UPDATE, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.UPDATE, e);
     
 }
 

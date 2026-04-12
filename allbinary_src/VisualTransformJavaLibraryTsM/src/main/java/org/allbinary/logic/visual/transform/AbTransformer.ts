@@ -45,6 +45,9 @@ import { TransformInfoObjectConfigGenerator } from "../../../../../org/allbinary
 import { TransformInfoObjectConfigGeneratorFactory } from "../../../../../org/allbinary/logic/visual/transform/info/objectConfig/generator/TransformInfoObjectConfigGeneratorFactory.js";
 
     
+import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings.js";
+
+    
 
 export class AbTransformer
             extends Object
@@ -53,6 +56,10 @@ export class AbTransformer
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+        
+        
+
+    readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
 
@@ -134,7 +141,7 @@ var xmlDocumentStr = xmlDocumentStr
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.XMLLOGGING))
                         
                                     {
-                                    logUtil!.put("xml: \n" +xmlDocumentStr, this, "translate(String xmlDocumentStr)");
+                                    this.logUtil!.putF("xml: \n" +xmlDocumentStr, this, "translate(String xmlDocumentStr)");
     
 
                                     }
@@ -162,7 +169,7 @@ var xmlDocumentStr = xmlDocumentStr
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.XSLLOGGING))
                         
                                     {
-                                    logUtil!.put("translated xml: " +result, this, "translate(String xmlDocumentStr)");
+                                    this.logUtil!.putF("translated xml: " +result, this, "translate(String xmlDocumentStr)");
     
 
                                     }
@@ -189,7 +196,7 @@ var xmlDocumentStr = xmlDocumentStr
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put(this.transformInfoInterface!.log(), this, "translate(document)", e);
+                                    this.logUtil!.put(this.transformInfoInterface!.log(), this, "translate(document)", e);
     
 
                                     }

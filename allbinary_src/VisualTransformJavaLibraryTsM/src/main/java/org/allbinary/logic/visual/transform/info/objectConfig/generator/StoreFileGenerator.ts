@@ -240,7 +240,7 @@ this.file= new AbFile(this.fileAbPath);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("File: " +this.fileAbPath!.toString(), this, this.commonStrings!.CONSTRUCTOR);
+                                    this.logUtil!.putF("File: " +this.fileAbPath!.toString(), this, this.commonStrings!.CONSTRUCTOR);
     
 
                                     }
@@ -256,7 +256,7 @@ var input = input
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Processing", this, commonStrings!.PROCESS);
+                                    this.logUtil!.putF("Processing", this, commonStrings!.PROCESS);
     
 
                                     }
@@ -299,7 +299,7 @@ FileUtil.getInstance()!.write(inputStream, this.file);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Processed", this, commonStrings!.PROCESS);
+                                    this.logUtil!.putF("Processed", this, commonStrings!.PROCESS);
     
 
                                     }

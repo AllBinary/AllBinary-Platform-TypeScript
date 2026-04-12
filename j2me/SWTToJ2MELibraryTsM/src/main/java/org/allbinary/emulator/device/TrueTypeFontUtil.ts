@@ -274,7 +274,7 @@ this.fontImage= this.preResourceImageUtil!.encapsulate(image);
         
 ;
     
-PreLogUtil.put(commonStrings!.EXCEPTION, this, commonStrings!.EXCEPTION, e);
+PreLogUtil.putOE(commonStrings!.EXCEPTION, this, commonStrings!.EXCEPTION, e);
     
 
 

@@ -66,7 +66,7 @@ export class GenericProfileActionScriptJPanel extends javax.swing.JPanel
 public constructor (){
 
             super();
-            logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
+            this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
     
 initComponents();
     
@@ -84,7 +84,7 @@ this.getActionScriptJTree()!.setModel(defaultTreeModel);
     
 this.repaint();
     
-logUtil!.put("Updated UI", this, "updateJTree");
+this.logUtil!.putF("Updated UI", this, "updateJTree");
     
 }
 

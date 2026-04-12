@@ -66,7 +66,7 @@ public constructor (categoryFactoryInterface: CategoryFactoryInterface)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
                         
                                     {
-                                    logUtil!.put(commonStrings!.START, this, "CategoryModifierTree(CategoryFactoryInterface categoryFactoryInterface)");
+                                    this.logUtil!.putF(commonStrings!.START, this, "CategoryModifierTree(CategoryFactoryInterface categoryFactoryInterface)");
     
 
                                     }
@@ -84,7 +84,7 @@ var newChildCategoryInterface = newChildCategoryInterface
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
                         
                                     {
-                                    logUtil!.put("Inserting", this, "insert()");
+                                    this.logUtil!.putF("Inserting", this, "insert()");
     
 
                                     }
@@ -107,7 +107,7 @@ this.directory.create(directoryToBeCreatedAbPath);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
                         
                                     {
-                                    logUtil!.put("Saving", this, "insert()");
+                                    this.logUtil!.putF("Saving", this, "insert()");
     
 
                                     }
@@ -130,7 +130,7 @@ this.save(newChildCategoryInterface);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.FAILURE, this, "insert", e);
+                                    this.logUtil!.put(this.commonStrings!.FAILURE, this, "insert", e);
     
 
                                     }
@@ -180,7 +180,7 @@ this.directory.remove(directoryToBeDeletedAbPath);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.FAILURE, this, commonStrings!.delete, e);
+                                    this.logUtil!.put(this.commonStrings!.FAILURE, this, commonStrings!.delete, e);
     
 
                                     }

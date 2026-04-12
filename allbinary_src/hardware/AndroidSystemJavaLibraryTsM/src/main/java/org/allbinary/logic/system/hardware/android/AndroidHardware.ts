@@ -127,7 +127,7 @@ public constructor (){
                 //: 
 } catch(e) 
             {
-logUtil!.put("Hardware Data: " +this.toString(), this, commonStrings!.INIT, e);
+this.logUtil!.put("Hardware Data: " +this.toString(), this, commonStrings!.INIT, e);
     
 
 
@@ -171,7 +171,7 @@ componentInterfaceVector= new BasicArrayList();
         
 ;
     
-logUtil!.put("File Found", this, commonStrings!.CONSTRUCTOR);
+this.logUtil!.putF("File Found", this, commonStrings!.CONSTRUCTOR);
     
 
     var nextLine: string = lineNumberReader!.readLine()!;

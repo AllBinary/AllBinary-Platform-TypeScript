@@ -136,7 +136,7 @@ scoreTwo= inputStreamTwo!.readLong();
         
 ;
     
-logUtil!.put(commonStrings!.EXCEPTION, this, "compare", e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, "compare", e);
     
 }
 
@@ -149,7 +149,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "compare", e);
         
 ;
     
-logUtil!.put(commonStrings!.EXCEPTION, this, "compare", e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, "compare", e);
     
 }
 
@@ -162,7 +162,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "compare", e);
         
 ;
     
-logUtil!.put(commonStrings!.EXCEPTION, this, "compare", e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, "compare", e);
     
 }
 

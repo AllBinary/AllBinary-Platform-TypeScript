@@ -150,7 +150,7 @@ this.save(motionRectangles, frame);
                                     }
                                 
                         else {
-                            logUtil!.put("No Motion Rectangle Results for Frame: " +frame, this, commonStrings!.SAVE);
+                            this.logUtil!.putF("No Motion Rectangle Results for Frame: " +frame, this, commonStrings!.SAVE);
     
 
                         }
@@ -217,11 +217,11 @@ filePathStringBuffer3!.append(filePathStringBuffer!.toString());
     
 filePathStringBuffer3!.append(MediaDataFactory.getInstance()!.JPG.getExtension());
     
-logUtil!.put("Motion Image File Path 1: " +filePathStringBuffer1!.toString(), this, commonStrings!.SAVE);
+this.logUtil!.putF("Motion Image File Path 1: " +filePathStringBuffer1!.toString(), this, commonStrings!.SAVE);
     
-logUtil!.put("Motion Image File Path 2: " +filePathStringBuffer2!.toString(), this, commonStrings!.SAVE);
+this.logUtil!.putF("Motion Image File Path 2: " +filePathStringBuffer2!.toString(), this, commonStrings!.SAVE);
     
-logUtil!.put("Motion Image File Path 2: " +filePathStringBuffer3!.toString(), this, commonStrings!.SAVE);
+this.logUtil!.putF("Motion Image File Path 2: " +filePathStringBuffer3!.toString(), this, commonStrings!.SAVE);
     
 
     var bufferedImageCacheables: BufferedImageCacheable[] = new Array(NUMBER_OF_IMAGES);

@@ -99,7 +99,7 @@ private constructor (){
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.LOADERERROR))
                         
                                     {
-                                    logUtil!.put("Failure for: " +className, this, "getInstance(classname)", e);
+                                    this.logUtil!.put("Failure for: " +className, this, "getInstance(classname)", e);
     
 
                                     }
@@ -117,7 +117,7 @@ private constructor (){
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.LOADERERROR))
                         
                                     {
-                                    logUtil!.put("Failure for: " +className, this, "getInstance(classname)", e);
+                                    this.logUtil!.put("Failure for: " +className, this, "getInstance(classname)", e);
     
 
                                     }
@@ -228,7 +228,7 @@ stringBuffer!.append(CommonSeps.getInstance()!.SPACE);
     
 stringBuffer!.append(ConstructorUtil.view(constructor, CommonSeps.getInstance()!.NEW_LINE));
     
-logUtil!.put(stringBuffer!.toString(), this, "getInstance(className,params)", e);
+this.logUtil!.put(stringBuffer!.toString(), this, "getInstance(className,params)", e);
     
 
                                     }
@@ -260,7 +260,7 @@ stringBuffer!.append(CommonSeps.getInstance()!.SPACE);
     
 stringBuffer!.append(ConstructorUtil.view(constructor, CommonSeps.getInstance()!.NEW_LINE));
     
-logUtil!.put(stringBuffer!.toString(), this, "getInstance(className,params)", e);
+this.logUtil!.put(stringBuffer!.toString(), this, "getInstance(className,params)", e);
     
 
                                     }
@@ -339,7 +339,7 @@ logUtil!.put(stringBuffer!.toString(), this, "getInstance(className,params)", e)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.LOADERERROR))
                         
                                     {
-                                    logUtil!.put("Failure for: " +className, this, "getClass(className)", e);
+                                    this.logUtil!.put("Failure for: " +className, this, "getClass(className)", e);
     
 
                                     }
@@ -357,7 +357,7 @@ logUtil!.put(stringBuffer!.toString(), this, "getInstance(className,params)", e)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.LOADERERROR))
                         
                                     {
-                                    logUtil!.put("Failure for: " +className, this, "getClass(className)", e);
+                                    this.logUtil!.put("Failure for: " +className, this, "getClass(className)", e);
     
 
                                     }

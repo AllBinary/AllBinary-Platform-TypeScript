@@ -187,7 +187,7 @@ stringBuffer!.append(" Creating Zip File Entry: ");
     
 stringBuffer!.append(file.getPath());
     
-logUtil!.put(stringBuffer!.toString(), this, "create()");
+this.logUtil!.putF(stringBuffer!.toString(), this, "create()");
     
 
         try {
@@ -205,7 +205,7 @@ streamUtil!.close(fileInputStream);
                 //: 
 } catch(e) 
             {
-logUtil!.put("Skipping File (Probably Local): " +file.getPath(), this, "create()");
+this.logUtil!.putF("Skipping File (Probably Local): " +file.getPath(), this, "create()");
     
 }
 
@@ -222,7 +222,7 @@ streamUtil!.close(outputStream);
                 //: 
 } catch(e) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, this, "create", e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "create", e);
     
 }
 
@@ -312,7 +312,7 @@ stringBuffer!.append(" getParent: ");
     
 stringBuffer!.append(entryFile!.getParent());
     
-logUtil!.put(stringBuffer!.toString(), this, "unzip");
+this.logUtil!.putF(stringBuffer!.toString(), this, "unzip");
     
 
     var dataOutputStream: AbDataOutputStream = DataOutputStreamFactory.getInstance()!.getInstance(entryFile)!;

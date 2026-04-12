@@ -107,7 +107,7 @@ this.value= value;
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
                         
                                     {
-                                    logUtil!.put("\nSep Tokens: " +nameSpaceWithPropertiesVector!.toString(), this, "NameSpaceRequestParam()");
+                                    this.logUtil!.putF("\nSep Tokens: " +nameSpaceWithPropertiesVector!.toString(), this, "NameSpaceRequestParam()");
     
 
                                     }
@@ -165,7 +165,7 @@ list.clear();
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
                         
                                     {
-                                    logUtil!.put("\nPackageName and PackageName Properties Tokens: " +nameSpaceAndPropertiesVector!.toString(), this, "NameSpaceRequestParam()");
+                                    this.logUtil!.putF("\nPackageName and PackageName Properties Tokens: " +nameSpaceAndPropertiesVector!.toString(), this, "NameSpaceRequestParam()");
     
 
                                     }
@@ -231,7 +231,7 @@ packageIndex++;
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
                         
                                     {
-                                    logUtil!.put("NameSpace: " +this.nameSpaceVector!.toString(), this, "NameSpaceRequestParam()");
+                                    this.logUtil!.putF("NameSpace: " +this.nameSpaceVector!.toString(), this, "NameSpaceRequestParam()");
     
 
                                     }
@@ -244,7 +244,7 @@ packageIndex++;
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
                         
                                     {
-                                    logUtil!.put("NameSpace: " +this.nameSpaceVector!.toString(), this, "getPackages()");
+                                    this.logUtil!.putF("NameSpace: " +this.nameSpaceVector!.toString(), this, "getPackages()");
     
 
                                     }
@@ -283,7 +283,7 @@ var packageIndex = packageIndex
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
                         
                                     {
-                                    logUtil!.put("Package Properties: " +packagePropertiesHashMap!.toString(), this, "getPackagesProperties()");
+                                    this.logUtil!.putF("Package Properties: " +packagePropertiesHashMap!.toString(), this, "getPackagesProperties()");
     
 
                                     }
@@ -302,7 +302,7 @@ var packageIndex = packageIndex
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
                         
                                     {
-                                    logUtil!.put("\nValue: " +this.value, this, "getValue()");
+                                    this.logUtil!.putF("\nValue: " +this.value, this, "getValue()");
     
 
                                     }
@@ -414,7 +414,7 @@ list.clear();
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
                         
                                     {
-                                    logUtil!.put("\nProperty Name: " +propertyName +"\nProperty Value: " +propertyValue, this, "generatePackagePropertiesHashMap()");
+                                    this.logUtil!.putF("\nProperty Name: " +propertyName +"\nProperty Value: " +propertyValue, this, "generatePackagePropertiesHashMap()");
     
 
                                     }

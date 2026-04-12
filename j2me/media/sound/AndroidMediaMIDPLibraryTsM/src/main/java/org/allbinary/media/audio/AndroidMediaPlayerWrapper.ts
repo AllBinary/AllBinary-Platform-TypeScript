@@ -105,7 +105,7 @@ this.mediaPlayer!.setLooping(false);
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION_LABEL +resource, this, commonStrings!.CONSTRUCTOR, e);
+this.logUtil!.put(commonStrings!.EXCEPTION_LABEL +resource, this, commonStrings!.CONSTRUCTOR, e);
     
 
 
@@ -198,7 +198,7 @@ this.mediaPlayer= NullAndroidCanvas.NULL_MEDIA_PLAYER;
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CLOSE, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CLOSE, e);
     
 }
 
@@ -230,7 +230,7 @@ super.start();
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.START_METHOD_NAME, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.START_METHOD_NAME, e);
     
 }
 
@@ -253,7 +253,7 @@ super.stop();
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "stop", e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, "stop", e);
     
 }
 
@@ -262,7 +262,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "stop", e);
 
     public update(event: string){
 var event = event
-logUtil!.put("LineEvent: " +event, this, commonStrings!.UPDATE);
+this.logUtil!.putF("LineEvent: " +event, this, commonStrings!.UPDATE);
     
 
     var size: number = this.listenersList!.size()!;

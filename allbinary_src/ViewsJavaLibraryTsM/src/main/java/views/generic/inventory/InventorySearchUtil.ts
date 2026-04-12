@@ -181,7 +181,7 @@ var searchRequest = searchRequest
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PRODUCTSEARCHLOGGING))
                         
                                     {
-                                    logUtil!.put("Number Of Items Found: " +column.length, this, "search");
+                                    this.logUtil!.putF("Number Of Items Found: " +column.length, this, "search");
     
 
                                     }
@@ -230,7 +230,7 @@ column.addAll(substoreIdColumn);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PRODUCTSEARCHLOGGING))
                         
                                     {
-                                    logUtil!.put("Number Of Items Found Including SubStores: " +column.length, this, "search");
+                                    this.logUtil!.putF("Number Of Items Found Including SubStores: " +column.length, this, "search");
     
 
                                     }
@@ -263,7 +263,7 @@ inventoryNode!.appendChild(ModDomHelper.createNameValueNodes(viewDocumentInterfa
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PRODUCTSEARCHLOGGING))
                         
                                     {
-                                    logUtil!.put("No Results Xml: " +success, this, "search");
+                                    this.logUtil!.putF("No Results Xml: " +success, this, "search");
     
 
                                     }
@@ -720,7 +720,7 @@ productListingPages[0]= new StoreTransformer(abeClientInformation, new Transform
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PRODUCTSEARCHLOGGINGERROR))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.FAILURE, this, "search", e);
+                                    this.logUtil!.put(this.commonStrings!.FAILURE, this, "search", e);
     
 
                                     }

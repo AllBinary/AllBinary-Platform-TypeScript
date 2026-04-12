@@ -141,7 +141,7 @@ private constructor ()
         
 ;
     
-logUtil!.put(path, this, commonStrings!.CONSTRUCTOR);
+this.logUtil!.putF(path, this, commonStrings!.CONSTRUCTOR);
     
 
     var fos: FileOutputStream = new FileOutputStream(path);
@@ -168,7 +168,7 @@ bitmap.compress(Bitmap.CompressFormat.PNG, 100, fos);
         
 ;
     
-PreLogUtil.put(commonStrings!.EXCEPTION, this, commonStrings!.EXCEPTION, e);
+PreLogUtil.putOE(commonStrings!.EXCEPTION, this, commonStrings!.EXCEPTION, e);
     
 }
 

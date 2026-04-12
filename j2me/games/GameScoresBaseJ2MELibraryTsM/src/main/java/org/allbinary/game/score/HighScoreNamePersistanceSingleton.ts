@@ -194,7 +194,7 @@ this.clear();
     
 
         try {
-            logUtil!.put(new StringMaker().
+            this.logUtil!.putF(new StringMaker().
                             append("Deleting: ")!.appendint(deleteId)!.toString(), this, commonStrings!.delete);
     
 recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation), true);
@@ -297,7 +297,7 @@ recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation),
         
 ;
     
-logUtil!.put(new StringMaker().
+this.logUtil!.putF(new StringMaker().
                             append(LOADING_ID)!.appendint(id)!.toString(), this, commonStrings!.LOAD);
     
 recordAsBytes= recordStore!.getRecord(id);
@@ -326,7 +326,7 @@ nameBasicArrayList!.add(smallIntegerSingletonFactory!.getInstance(id));
             {
 this.save(abeClientInformation, gameInfo, this.name);
     
-logUtil!.put(new StringMaker().
+this.logUtil!.putF(new StringMaker().
                             append(commonStrings!.EXCEPTION_LABEL)!.append(ExceptionUtil.getInstance()!.getStackTrace(e))!.toString(), this, commonStrings!.LOAD);
     
 }
@@ -351,7 +351,7 @@ recordStore!.closeRecordStore();
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.LOAD, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.LOAD, e);
     
 }
 
@@ -379,7 +379,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.LOAD, e);
     
 
         try {
-            logUtil!.put(new StringMaker().
+            this.logUtil!.putF(new StringMaker().
                             append("Saving: ")!.append(name)!.toString(), this, commonStrings!.SAVE);
     
 recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation), true);
@@ -412,7 +412,7 @@ this.name= name;
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.SAVE, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.SAVE, e);
     
 }
 
@@ -436,7 +436,7 @@ recordStore!.closeRecordStore();
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.SAVE, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.SAVE, e);
     
 }
 

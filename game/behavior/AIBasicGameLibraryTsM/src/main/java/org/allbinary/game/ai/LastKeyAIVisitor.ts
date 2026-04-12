@@ -82,7 +82,7 @@ var anyType = anyType
         
 ;
     
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.VISIT, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.VISIT, e);
     
 }
 

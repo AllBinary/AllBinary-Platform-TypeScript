@@ -100,7 +100,7 @@ ResourceUtil.getInstance()!.getContext()!.startActivity(intent);
         
 ;
     
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e);
     
 }
 

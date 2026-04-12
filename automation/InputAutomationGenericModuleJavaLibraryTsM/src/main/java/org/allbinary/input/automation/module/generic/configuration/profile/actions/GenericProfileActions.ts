@@ -206,7 +206,7 @@ this.fileInit(idFile);
                                     }
                                 
                         else {
-                            logUtil!.put("No Profile: " +file.getAbsolutePath(), this, "Contructor");
+                            this.logUtil!.putF("No Profile: " +file.getAbsolutePath(), this, "Contructor");
     
 
                         }
@@ -254,7 +254,7 @@ var fileInputStream = fileInputStream
         
 ;
     
-logUtil!.put("Number Of Profiles Specified: " +nameNodeList!.getLength(), this, "Contructor");
+this.logUtil!.putF("Number Of Profiles Specified: " +nameNodeList!.getLength(), this, "Contructor");
     
 
 
@@ -299,7 +299,7 @@ index < nameNodeList!.getLength(); index++)
                             
 }
 
-logUtil!.put("Loaded: " +this.getHashMap()!.size +" Configuration Profile Action(s)", this, "Contructor");
+this.logUtil!.putF("Loaded: " +this.getHashMap()!.size +" Configuration Profile Action(s)", this, "Contructor");
     
 this.getDefaultListModelHelper()!.initDefaultModelList();
     
@@ -424,7 +424,7 @@ this.save();
         
 ;
     
-logUtil!.put("HashMap: " +hashMap!.toString(), this, "toHashMap()");
+this.logUtil!.putF("HashMap: " +hashMap!.toString(), this, "toHashMap()");
     
 
 

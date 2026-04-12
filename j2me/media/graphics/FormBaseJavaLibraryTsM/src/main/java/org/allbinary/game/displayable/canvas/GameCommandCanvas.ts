@@ -293,7 +293,7 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
     //var displayChangeEvent = displayChangeEvent
 
         try {
-            logUtil!.put(commonStrings!.START, this, canvasStrings!.ON_DISPLAY_CHANGE_EVENT);
+            this.logUtil!.putF(commonStrings!.START, this, canvasStrings!.ON_DISPLAY_CHANGE_EVENT);
     
 
     var rectangle: Rectangle = this.createRectangle(this.menuForm!.size())!;
@@ -309,7 +309,7 @@ this.update();
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "onResize", e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, "onResize", e);
     
 }
 
@@ -419,7 +419,7 @@ this.repaintBehavior!.onChangeRepaint(this);
 
 
     public open(){
-logUtil!.put(commonStrings!.START, this, "open");
+this.logUtil!.putF(commonStrings!.START, this, "open");
     
 BasicMotionGesturesHandler.getInstance()!.addListener(this.getMenuInputProcessor());
     
@@ -431,7 +431,7 @@ DisplayChangeEventHandler.getInstance()!.addListener(this);
 
 
     public close(){
-logUtil!.put(commonStrings!.START, this, commonStrings!.CLOSE);
+this.logUtil!.putF(commonStrings!.START, this, commonStrings!.CLOSE);
     
 BasicMotionGesturesHandler.getInstance()!.removeListener(this.getMenuInputProcessor());
     
@@ -484,7 +484,7 @@ this.keyRepeated(keyCode, 0);
     public keyPressed(keyCode: number, deviceId: number){
     //var keyCode = keyCode
     //var deviceId = deviceId
-logUtil!.put(new StringMaker().
+this.logUtil!.putF(new StringMaker().
                             append(CommonSeps.getInstance()!.SPACE)!.appendint(keyCode)!.toString(), this, gameInputStrings!.KEY_PRESSED);
     
 this.addGameKeyEvent(keyCode, 0, false);
@@ -545,7 +545,7 @@ downGameKeyEventHandler!.getInstance(deviceId)!.fireEvent(gameKeyEvent);
                                     }
                                 
                         else {
-                            logUtil!.put(new StringMaker().
+                            this.logUtil!.putF(new StringMaker().
                             append(this.gameInputStrings!.NO_KEY)!.appendint(keyCode)!.toString(), this, this.gameInputStrings!.ADD_KEY_EVENT);
     
 
@@ -555,7 +555,7 @@ downGameKeyEventHandler!.getInstance(deviceId)!.fireEvent(gameKeyEvent);
                 //: 
 } catch(e) 
             {
-logUtil!.put("Key Event Error", this, this.gameInputStrings!.ADD_KEY_EVENT, e);
+this.logUtil!.put("Key Event Error", this, this.gameInputStrings!.ADD_KEY_EVENT, e);
     
 }
 
@@ -592,7 +592,7 @@ upGameKeyEventHandler!.getInstance(deviceId)!.fireEvent(gameKeyEvent);
                                     }
                                 
                         else {
-                            logUtil!.put(new StringMaker().
+                            this.logUtil!.putF(new StringMaker().
                             append(this.gameInputStrings!.NO_KEY)!.appendint(keyCode)!.toString(), this, this.gameInputStrings!.REMOVE_KEY_EVENT);
     
 
@@ -602,7 +602,7 @@ upGameKeyEventHandler!.getInstance(deviceId)!.fireEvent(gameKeyEvent);
                 //: 
 } catch(e) 
             {
-logUtil!.put("Key Event Error", this, this.gameInputStrings!.REMOVE_KEY_EVENT, e);
+this.logUtil!.put("Key Event Error", this, this.gameInputStrings!.REMOVE_KEY_EVENT, e);
     
 }
 

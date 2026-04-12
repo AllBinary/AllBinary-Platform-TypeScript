@@ -109,7 +109,7 @@ this.title= DomNodeHelper.getTextNodeValue(valueNode);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Title: " +this.getTitle(), this, "Consructor()");
+                                    this.logUtil!.putF("Title: " +this.getTitle(), this, "Consructor()");
     
 
                                     }
@@ -124,7 +124,7 @@ public constructor (hashMap: HashMap<any, any>){
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("HashMap: " +hashMap!.toString(), this, this.commonStrings!.CONSTRUCTOR);
+                                    this.logUtil!.putF("HashMap: " +hashMap!.toString(), this, this.commonStrings!.CONSTRUCTOR);
     
 
                                     }
@@ -194,7 +194,7 @@ var document = document
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("TitleView HashMap: " +hashMap!.toString(), this, "toXmlNode()");
+                                    this.logUtil!.putF("TitleView HashMap: " +hashMap!.toString(), this, "toXmlNode()");
     
 
                                     }

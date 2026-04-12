@@ -182,7 +182,7 @@ this.timeIntervalActionScriptConditionJPanel!.getTimeIntervalActionJDialog()!.se
     
 hashMap!.put(TimeIntervalActionScriptConditionData.TIME, Integer.toString(this.timeHelper!.delay));
     
-logUtil!.put("HashMap: " +hashMap!.toString(), this, "toHashMap()");
+this.logUtil!.putF("HashMap: " +hashMap!.toString(), this, "toHashMap()");
     
 
 
@@ -215,7 +215,7 @@ node.appendChild(ModDomHelper.createNodeWithValueNodes(document, TimeIntervalAct
 
 
     public log(){
-logUtil!.put("Time Interval: " +this.timeHelper!.delay, this, "log");
+this.logUtil!.putF("Time Interval: " +this.timeHelper!.delay, this, "log");
     
 }
 

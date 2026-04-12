@@ -83,7 +83,7 @@ this.setOsgiServiceVisitorInterface(osgiServiceVisitorInterface);
                 //@Throws(Error::class)
             
     public process(){
-logUtil!.put(this.commonStrings!.START, this, commonStrings!.PROCESS);
+this.logUtil!.putF(this.commonStrings!.START, this, commonStrings!.PROCESS);
     
 
     var vector: Vector = osgiServiceUtil!.getServicesObjectVector(this.getBundleContext(), this.getServiceReferences())!;
@@ -91,7 +91,7 @@ logUtil!.put(this.commonStrings!.START, this, commonStrings!.PROCESS);
         
 ;
     
-logUtil!.put("Processing " +vector.length +" Services", this, commonStrings!.PROCESS);
+this.logUtil!.putF("Processing " +vector.length +" Services", this, commonStrings!.PROCESS);
     
 
     var size: number = vector.length!;

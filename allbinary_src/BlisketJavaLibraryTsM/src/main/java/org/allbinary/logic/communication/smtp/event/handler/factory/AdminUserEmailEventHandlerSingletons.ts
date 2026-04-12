@@ -86,7 +86,7 @@ private constructor (){
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
                                     {
-                                    logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
+                                    this.logUtil!.putF(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
     
 
                                     }
@@ -103,7 +103,7 @@ var userEmailEventNameData = userEmailEventNameData
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.START, this, commonStrings!.GET_INSTANCE);
+                                    this.logUtil!.putF(this.commonStrings!.START, this, commonStrings!.GET_INSTANCE);
     
 
                                     }
@@ -126,7 +126,7 @@ var userEmailEventNameData = userEmailEventNameData
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
                                     {
-                                    logUtil!.put("Creating New Named UserEmailEventHandler", this, commonStrings!.GET_INSTANCE);
+                                    this.logUtil!.putF("Creating New Named UserEmailEventHandler", this, commonStrings!.GET_INSTANCE);
     
 
                                     }
@@ -159,7 +159,7 @@ this.userEmailEventHandlerHashMap!.put(userEmailEventNameData, newUserEmailEvent
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
                                     {
-                                    logUtil!.put("Returning existing UserEmailEventHandler", this, commonStrings!.GET_INSTANCE);
+                                    this.logUtil!.putF("Returning existing UserEmailEventHandler", this, commonStrings!.GET_INSTANCE);
     
 
                                     }

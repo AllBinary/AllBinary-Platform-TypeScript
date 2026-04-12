@@ -118,7 +118,7 @@ super.deleteWhere(whereHashMap);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.SUCCESS, this, "remove");
+                                    this.logUtil!.putF(this.commonStrings!.SUCCESS, this, "remove");
     
 
                                     }
@@ -131,7 +131,7 @@ super.deleteWhere(whereHashMap);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.FAILURE, this, "remove", e);
+                                    this.logUtil!.put(this.commonStrings!.FAILURE, this, "remove", e);
     
 
                                     }
@@ -200,7 +200,7 @@ this.setDefault(getLastId());
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.SUCCESS, this, "add");
+                                    this.logUtil!.putF(this.commonStrings!.SUCCESS, this, "add");
     
 
                                     }
@@ -213,7 +213,7 @@ this.setDefault(getLastId());
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.FAILURE, this, "add", e);
+                                    this.logUtil!.put(this.commonStrings!.FAILURE, this, "add", e);
     
 
                                     }
@@ -251,7 +251,7 @@ this.setDefault(address.getId());
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.SUCCESS, this, "update");
+                                    this.logUtil!.putF(this.commonStrings!.SUCCESS, this, "update");
     
 
                                     }
@@ -264,7 +264,7 @@ this.setDefault(address.getId());
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.FAILURE, this, "add", e);
+                                    this.logUtil!.put(this.commonStrings!.FAILURE, this, "add", e);
     
 
                                     }
@@ -366,7 +366,7 @@ index < size; index++)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.FAILURE, this, commonStrings!.GET, e);
+                                    this.logUtil!.put(this.commonStrings!.FAILURE, this, commonStrings!.GET, e);
     
 
                                     }
@@ -435,7 +435,7 @@ keyAndValue!.put(StreetAddressData.ID, index.toString());
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.FAILURE, this, commonStrings!.GET, e);
+                                    this.logUtil!.put(this.commonStrings!.FAILURE, this, commonStrings!.GET, e);
     
 
                                     }
@@ -488,7 +488,7 @@ addressHashMap= super.getRow(updateKeyAndValue);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.SUCCESS, this, "getDefault");
+                                    this.logUtil!.putF(this.commonStrings!.SUCCESS, this, "getDefault");
     
 
                                     }
@@ -507,7 +507,7 @@ addressHashMap= super.getRow(updateKeyAndValue);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put("No Default Address Found", this, "getDefault");
+                                    this.logUtil!.putF("No Default Address Found", this, "getDefault");
     
 
                                     }
@@ -529,7 +529,7 @@ addressHashMap= super.getRow(updateKeyAndValue);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.FAILURE, this, "getDefault", e);
+                                    this.logUtil!.put(this.commonStrings!.FAILURE, this, "getDefault", e);
     
 
                                     }
@@ -594,7 +594,7 @@ super.updateWhere(whereKeyAndValue, updateKeyAndValue);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.SUCCESS, this, "setDefault");
+                                    this.logUtil!.putF(this.commonStrings!.SUCCESS, this, "setDefault");
     
 
                                     }
@@ -607,7 +607,7 @@ super.updateWhere(whereKeyAndValue, updateKeyAndValue);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.FAILURE, this, "setShippingAddress", e);
+                                    this.logUtil!.put(this.commonStrings!.FAILURE, this, "setShippingAddress", e);
     
 
                                     }

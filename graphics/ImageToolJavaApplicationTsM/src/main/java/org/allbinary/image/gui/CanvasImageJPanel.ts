@@ -116,6 +116,12 @@ new object: Thread()
                                 
     public run(){
 
+    var logUtil: LogUtil = LogUtil.getInstance()!;
+        
+        
+;
+    
+
         try {
             
     var canvasTrimUtil: CanvasTrimUtil = CanvasTrimUtil.getInstance()!;
@@ -416,7 +422,7 @@ this.imageProcessorInput= imageProcessorInput;
     //var generatedBufferedImage = generatedBufferedImage
     //var name = name
     //var index = index
-logUtil!.put(commonStrings!.VISIT, this, commonStrings!.VISIT);
+this.logUtil!.putF(commonStrings!.VISIT, this, commonStrings!.VISIT);
     
 this.result= generatedBufferedImage;
     
@@ -460,7 +466,7 @@ file= new File(filePath);
         
 ;
     
-logUtil!.put(new StringMaker().
+this.logUtil!.putF(new StringMaker().
                             append("File: ")!.append(StringUtil.getInstance()!.toString(file))!.append(" Wrote: ")!.appendboolean(isWritten)!.toString(), this, commonStrings!.RUN);
     
 }

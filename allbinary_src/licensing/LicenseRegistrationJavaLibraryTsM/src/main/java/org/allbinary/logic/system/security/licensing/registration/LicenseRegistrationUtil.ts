@@ -80,7 +80,7 @@ new XmlRpcRemoteLicenseRegistrationClient(abeClientInformation).
                 //: 
 } catch(e) 
             {
-PreLogUtil.put("License Registration Exception", "LicenseRegistrationUtil", "License Registration", e);
+PreLogUtil.putOE("License Registration Exception", "LicenseRegistrationUtil", "License Registration", e);
     
 }
 

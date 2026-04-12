@@ -135,7 +135,7 @@ stringBuffer!.append(" == ");
     
 stringBuffer!.append(stringUtil!.toString(mappedToInput));
     
-logUtil!.put(stringBuffer!.toString(), this, "InputMapping::remove");
+this.logUtil!.putF(stringBuffer!.toString(), this, "InputMapping::remove");
     
 
     var list: BasicArrayList = this.getMappedInput(input)!;
@@ -161,7 +161,7 @@ stringBuffer!.append(" == ");
     
 stringBuffer!.append(stringUtil!.toString(mappedToInput));
     
-logUtil!.put(stringBuffer!.toString(), this, "InputMapping::remove");
+this.logUtil!.putF(stringBuffer!.toString(), this, "InputMapping::remove");
     
 
                                     }
@@ -177,7 +177,7 @@ stringBuffer!.append(" == ");
     
 stringBuffer!.append(stringUtil!.toString(mappedToInput));
     
-logUtil!.put(stringBuffer!.toString(), this, "InputMapping::remove");
+this.logUtil!.putF(stringBuffer!.toString(), this, "InputMapping::remove");
     
 
                         }

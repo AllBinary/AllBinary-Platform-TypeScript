@@ -68,7 +68,7 @@ this.processor= processor;
     public run(){
 
         try {
-            logUtil!.put(commonStrings!.START_RUNNABLE, this, commonStrings!.RUN);
+            this.logUtil!.putF(commonStrings!.START_RUNNABLE, this, commonStrings!.RUN);
     
 this.midlet.destroyApp(false, this.isProgress);
     
@@ -76,7 +76,7 @@ this.midlet.setDisplay(NullCanvas.NULL_CANVAS);
     
 this.midlet.notifyDestroyed();
     
-logUtil!.put(commonStrings!.END_RUNNABLE, this, commonStrings!.RUN);
+this.logUtil!.putF(commonStrings!.END_RUNNABLE, this, commonStrings!.RUN);
     
 processor.process();
     
@@ -84,7 +84,7 @@ processor.process();
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
     
 
         try {
@@ -94,7 +94,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
                 //: 
 } catch(e2) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
     
 }
 

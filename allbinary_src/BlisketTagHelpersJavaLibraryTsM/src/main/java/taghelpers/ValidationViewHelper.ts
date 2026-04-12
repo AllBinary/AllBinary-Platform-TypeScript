@@ -65,7 +65,7 @@ viewInterface= this.getViewObject();
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPER))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
+                                    this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
     
 
                                     }
@@ -80,7 +80,7 @@ viewInterface= this.getViewObject();
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPER))
                         
                                     {
-                                    logUtil!.put("Started", this, commonStrings!.IS_VALID);
+                                    this.logUtil!.putF("Started", this, commonStrings!.IS_VALID);
     
 
                                     }
@@ -101,7 +101,7 @@ viewInterface= this.getViewObject();
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e);
+                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e);
     
 
                                     }
@@ -136,7 +136,7 @@ viewInterface= this.getViewObject();
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "validationInfo()", e);
+                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "validationInfo()", e);
     
 
                                     }
@@ -171,7 +171,7 @@ viewInterface= this.getViewObject();
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "toValidationInfoDoc()", e);
+                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "toValidationInfoDoc()", e);
     
 
                                     }
@@ -207,7 +207,7 @@ var document = document
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "toValidationInfoNode()", e);
+                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "toValidationInfoNode()", e);
     
 
                                     }

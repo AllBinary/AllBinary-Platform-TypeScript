@@ -108,7 +108,7 @@ this.hintAnimationY= animationY -this.rectangleP!.getHeight() shr 1;
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "updateRectangle", e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, "updateRectangle", e);
     
 }
 

@@ -131,7 +131,7 @@ stringBuffer!.append(sqlStrings!.FIELD_VALUE);
     
 stringBuffer!.append(field);
     
-logUtil!.put(stringBuffer!.toString(), this, METHOD_GET_FIELD);
+this.logUtil!.putF(stringBuffer!.toString(), this, METHOD_GET_FIELD);
     
 
                                     }
@@ -158,7 +158,7 @@ logUtil!.put(stringBuffer!.toString(), this, METHOD_GET_FIELD);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
                                     {
-                                    logUtil!.put(this.FAILED_SQL_STATEMENT +sqlStatement, this, METHOD_GET_FIELD, e);
+                                    this.logUtil!.put(this.FAILED_SQL_STATEMENT +sqlStatement, this, METHOD_GET_FIELD, e);
     
 
                                     }
@@ -292,7 +292,7 @@ stringBuffer!.append(sqlStrings!.FIELD_VALUE);
     
 stringBuffer!.append(field);
     
-logUtil!.put(stringBuffer!.toString(), this, METHOD_GET_FIELD);
+this.logUtil!.putF(stringBuffer!.toString(), this, METHOD_GET_FIELD);
     
 
                                     }
@@ -325,7 +325,7 @@ logUtil!.put(stringBuffer!.toString(), this, METHOD_GET_FIELD);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
                                     {
-                                    logUtil!.put(this.FAILED_SQL_STATEMENT +sqlStatement, this, METHOD_GET_FIELD, e);
+                                    this.logUtil!.put(this.FAILED_SQL_STATEMENT +sqlStatement, this, METHOD_GET_FIELD, e);
     
 
                                     }
@@ -508,7 +508,7 @@ field= rset.getObject(columnName)!.toString();
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
                         
                                     {
-                                    logUtil!.put(this.FAILED_SQL_STATEMENT +sqlStatement, this, METHOD_IS_SUBSET_OF_ENTRY, e);
+                                    this.logUtil!.put(this.FAILED_SQL_STATEMENT +sqlStatement, this, METHOD_IS_SUBSET_OF_ENTRY, e);
     
 
                                     }

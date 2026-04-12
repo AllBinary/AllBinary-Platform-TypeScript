@@ -1365,6 +1365,12 @@ export inner class BuildingSteeringVisitor extends SteeringVisitor {
     public visit(anyType: any = {}): any{
 var anyType = anyType
 
+    var logUtil: LogUtil = LogUtil.getInstance()!;
+        
+        
+;
+    
+
         try {
             
                         if(this.getList()!.size() > 0)

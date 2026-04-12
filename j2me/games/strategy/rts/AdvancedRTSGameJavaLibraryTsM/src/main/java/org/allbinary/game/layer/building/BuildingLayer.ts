@@ -383,7 +383,7 @@ TrackingEventHandler.getInstance()!.addListener(this);
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "onMovement", e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, "onMovement", e);
     
 }
 
@@ -521,7 +521,7 @@ this.indexedButShouldBeRotationAnimationInterface!.nextFrame();
         
 ;
     
-logUtil!.put("Cost: " +downgradeCost, this, "getDowngradeCost");
+this.logUtil!.putF("Cost: " +downgradeCost, this, "getDowngradeCost");
     
 
 

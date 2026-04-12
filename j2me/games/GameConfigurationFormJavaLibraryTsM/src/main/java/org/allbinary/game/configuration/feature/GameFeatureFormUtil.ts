@@ -144,7 +144,7 @@ index < size; index++)
     
 stringMaker!.delete(0, stringMaker!.length());
     
-logUtil!.put(stringMaker!.append(name)!.append(ADD_CHOICE)!.append(gameFeature!.toString())!.toString(), this, GET_CHOICE_GROUP);
+this.logUtil!.putF(stringMaker!.append(name)!.append(ADD_CHOICE)!.append(gameFeature!.toString())!.toString(), this, GET_CHOICE_GROUP);
     
 choiceGroup!.append(gameFeature!.toString(), NullCanvas.NULL_IMAGE);
     
@@ -220,7 +220,7 @@ index < size; index++)
     
 stringMaker!.delete(0, stringMaker!.length());
     
-logUtil!.put(stringMaker!.append(ADDING_CHOICE_GROUP)!.append(name)!.toString(), this, ADD_CHOICE_GROUP);
+this.logUtil!.putF(stringMaker!.append(ADDING_CHOICE_GROUP)!.append(name)!.toString(), this, ADD_CHOICE_GROUP);
     
 form.append(this.getChoiceGroup(hashtable, name, option));
     

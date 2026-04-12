@@ -282,7 +282,7 @@ dx= ((this.rectangle.getWidth() -maxWidth) /2);
                                     }
                                 
                         else {
-                            logUtil!.put(formTypeFactory!.UNK, this, commonStrings!.INIT);
+                            this.logUtil!.putF(formTypeFactory!.UNK, this, commonStrings!.INIT);
     
 
                         }
@@ -439,7 +439,7 @@ this.paintable.paint(graphics, index, deltaX +diffX, deltaY);
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, canvasStrings!.PAINT, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, canvasStrings!.PAINT, e);
     
 }
 

@@ -92,7 +92,7 @@ this.workFlowInterface= NewWorkFlowFactory.getInstance()!.getInstance(abeClientI
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("Failed to validate", this, commonStrings!.IS_VALID, e);
+                                    this.logUtil!.put("Failed to validate", this, commonStrings!.IS_VALID, e);
     
 
                                     }
@@ -127,7 +127,7 @@ this.workFlowInterface= NewWorkFlowFactory.getInstance()!.getInstance(abeClientI
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Workflow already exist", this, "validationInfo()");
+                                    this.logUtil!.putF("Workflow already exist", this, "validationInfo()");
     
 
                                     }
@@ -153,7 +153,7 @@ stringBuffer!.append("The WorkFlow name you selected is already in use.<br/>  Pl
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e);
+                                    this.logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e);
     
 
                                     }

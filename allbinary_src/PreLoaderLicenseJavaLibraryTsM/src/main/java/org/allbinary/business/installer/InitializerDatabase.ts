@@ -164,7 +164,7 @@ stringBuffer!.append(" Value: ");
     
 stringBuffer!.append(values[0]!);
     
-logUtil!.put(stringBuffer!.toString(), this, "getFormData()");
+this.logUtil!.putF(stringBuffer!.toString(), this, "getFormData()");
     
 }
 
@@ -249,7 +249,7 @@ this.initDb= new DynamicInitDb(abeClientInformation, dbConnectionInfo as Databas
                 //: 
 } catch(e) 
             {
-logUtil!.put("Unable to get form data", this, "getFormData()", e);
+this.logUtil!.put("Unable to get form data", this, "getFormData()", e);
     
 }
 
@@ -282,7 +282,7 @@ var jdbcDriverClassPathString = jdbcDriverClassPathString
         
 ;
     
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e);
     
 
                                     }
@@ -473,7 +473,7 @@ stringBuffer!.append(this.getJdbcDriverValidationInfo(this.getAdminJdbcDriver())
                 //: 
 } catch(e) 
             {
-logUtil!.put("Unable to Create Users", this, "createUsers()", e);
+this.logUtil!.put("Unable to Create Users", this, "createUsers()", e);
     
 
 
@@ -501,7 +501,7 @@ logUtil!.put("Unable to Create Users", this, "createUsers()", e);
                 //: 
 } catch(e) 
             {
-logUtil!.put("Unable to Create Databases", this, "createDatabases()", e);
+this.logUtil!.put("Unable to Create Databases", this, "createDatabases()", e);
     
 
 
@@ -529,7 +529,7 @@ logUtil!.put("Unable to Create Databases", this, "createDatabases()", e);
                 //: 
 } catch(e) 
             {
-logUtil!.put("Unable to Create Tables", this, "createTables()", e);
+this.logUtil!.put("Unable to Create Tables", this, "createTables()", e);
     
 
 

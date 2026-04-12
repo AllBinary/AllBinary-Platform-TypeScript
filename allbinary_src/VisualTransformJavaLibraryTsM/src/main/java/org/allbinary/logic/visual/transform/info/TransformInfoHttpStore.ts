@@ -71,7 +71,7 @@ var pageContext = pageContext
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Properties HashMap: " +propertiesHashMap!.toString(), this, this.commonStrings!.CONSTRUCTOR);
+                                    this.logUtil!.putF("Properties HashMap: " +propertiesHashMap!.toString(), this, this.commonStrings!.CONSTRUCTOR);
     
 
                                     }
@@ -108,7 +108,7 @@ stringBuffer!.append("\nProperties HashMap: ");
     
 stringBuffer!.append(propertiesHashMap!.toString());
     
-logUtil!.put(stringBuffer!.toString(), this, "Constructor(HashMap, HashMap , PageContext)");
+this.logUtil!.putF(stringBuffer!.toString(), this, "Constructor(HashMap, HashMap , PageContext)");
     
 
                                     }
@@ -135,7 +135,7 @@ var pageContext = pageContext
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Properties HashMap: " +propertiesHashMap!.toString(), this, this.commonStrings!.CONSTRUCTOR);
+                                    this.logUtil!.putF("Properties HashMap: " +propertiesHashMap!.toString(), this, this.commonStrings!.CONSTRUCTOR);
     
 
                                     }

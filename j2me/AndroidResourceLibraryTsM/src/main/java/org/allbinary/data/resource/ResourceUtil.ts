@@ -253,7 +253,7 @@ var value = value
 
     public setResources(resources: Resources){
     //var resources = resources
-logUtil!.put(new StringMaker().
+this.logUtil!.putF(new StringMaker().
                             append("Resource Loader: ")!.append(resources.constructor.name.toString()!)!.toString(), this, "setResources");
     
 this.resources= resources;

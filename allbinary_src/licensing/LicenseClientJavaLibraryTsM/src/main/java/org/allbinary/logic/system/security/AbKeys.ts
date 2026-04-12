@@ -67,7 +67,7 @@ private constructor (){
     //var keyName = keyName
 
         try {
-            logUtil!.put("Getting Key: " +keyName, this, "getKey");
+            this.logUtil!.putF("Getting Key: " +keyName, this, "getKey");
     
 
                         if(keyName!.compareTo("DirectX 8") == 0 || keyName!.compareTo("DirectX") == 0 || keyName!.compareTo("Low Level") == 0 || keyName!.compareTo("System Drivers") == 0)
@@ -103,7 +103,7 @@ private constructor (){
                 //: 
  catch(e) 
             {
-logUtil!.put("Licensing Failure", this, "getKey()", e);
+this.logUtil!.put("Licensing Failure", this, "getKey()", e);
     
 
 

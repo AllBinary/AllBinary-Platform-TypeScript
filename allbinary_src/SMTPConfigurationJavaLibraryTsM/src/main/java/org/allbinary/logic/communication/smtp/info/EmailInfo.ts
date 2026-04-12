@@ -53,7 +53,7 @@ public constructor (basicEmailInfo: BasicEmailInfo){
         
 ;
     
-logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
+this.logUtil!.putF(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
     
 
                                     }
@@ -80,7 +80,7 @@ var contentBase = contentBase
         
 ;
     
-logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
+this.logUtil!.putF(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
     
 
                                     }

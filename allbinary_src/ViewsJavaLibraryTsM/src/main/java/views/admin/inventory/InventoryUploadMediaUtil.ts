@@ -138,7 +138,7 @@ var mediaData = mediaData
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
                         
                                     {
-                                    logUtil!.put("Start FileName: " +fileName, this, "saveFiles()");
+                                    this.logUtil!.putF("Start FileName: " +fileName, this, "saveFiles()");
     
 
                                     }
@@ -217,7 +217,7 @@ stringBuffer!.append(mediaData!.getName());
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
                         
                                     {
-                                    logUtil!.put("Saving Original Image: " +originalImageFile, this, "saveFiles()");
+                                    this.logUtil!.putF("Saving Original Image: " +originalImageFile, this, "saveFiles()");
     
 
                                     }
@@ -252,7 +252,7 @@ stringBuffer!.append(" supported: ");
     
 stringBuffer!.appendboolean(isMediaSupported);
     
-logUtil!.put(stringBuffer!.toString(), this, "saveFiles()");
+this.logUtil!.putF(stringBuffer!.toString(), this, "saveFiles()");
     
 
                                     }
@@ -293,7 +293,7 @@ stringBuffer!.append(" WriterMedia: ");
     
 stringBuffer!.appendboolean(isMediaResizable);
     
-logUtil!.put(stringBuffer!.toString(), this, "saveFiles()");
+this.logUtil!.putF(stringBuffer!.toString(), this, "saveFiles()");
     
 
                                     }
@@ -306,7 +306,7 @@ logUtil!.put(stringBuffer!.toString(), this, "saveFiles()");
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
                         
                                     {
-                                    logUtil!.put("Saving Small Image: " +this.itemInterface!.getSmallImage(), this, "saveFiles()");
+                                    this.logUtil!.putF("Saving Small Image: " +this.itemInterface!.getSmallImage(), this, "saveFiles()");
     
 
                                     }
@@ -345,7 +345,7 @@ stringBuffer!.append(" if Convertable is it: ");
     
 stringBuffer!.appendboolean(isConvertable);
     
-logUtil!.put(stringBuffer!.toString(), this, "saveFiles()");
+this.logUtil!.putF(stringBuffer!.toString(), this, "saveFiles()");
     
 
                                     }
@@ -358,7 +358,7 @@ logUtil!.put(stringBuffer!.toString(), this, "saveFiles()");
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
                         
                                     {
-                                    logUtil!.put("Saving Small Image: " +this.itemInterface!.getSmallImage(), this, "saveFiles()");
+                                    this.logUtil!.putF("Saving Small Image: " +this.itemInterface!.getSmallImage(), this, "saveFiles()");
     
 
                                     }
@@ -422,7 +422,7 @@ fileUtil!.write(new ByteArrayInputStream(byteArray), largeImageFile);
         
 ;
     
-logUtil!.put(commonStrings!.END, this, "saveFiles()");
+this.logUtil!.putF(commonStrings!.END, this, "saveFiles()");
     
 
                                     }

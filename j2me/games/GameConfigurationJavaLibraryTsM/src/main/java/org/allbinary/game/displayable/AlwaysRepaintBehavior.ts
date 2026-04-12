@@ -33,6 +33,9 @@ import { DisplayInfoSingleton } from "../../../../org/allbinary/graphics/display
 import { OpenGLFeatureFactory } from "../../../../org/allbinary/graphics/opengles/OpenGLFeatureFactory.js";
 
     
+import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
+
+    
 import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js";
 
     
@@ -102,6 +105,12 @@ DisplayInfoSingleton.getInstance()!.process();
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
+        
+        
+;
+    
+
+    var logUtil: LogUtil = LogUtil.getInstance()!;
         
         
 ;

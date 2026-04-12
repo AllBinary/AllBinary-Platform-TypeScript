@@ -76,7 +76,7 @@ this.startGameMidletEvent= new DemoGameMidletEvent(this, DemoGameMidletStateFact
     public run(){
 
         try {
-            logUtil!.put(commonStrings!.START_RUNNABLE, this, commonStrings!.RUN);
+            this.logUtil!.putF(commonStrings!.START_RUNNABLE, this, commonStrings!.RUN);
     
 
     var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
@@ -96,13 +96,13 @@ this.demoGameMidlet!.startGameCanvasRunnableInterface();
     
 DemoGameMidletEventHandler.getInstance()!.fireEvent(this.startGameMidletEvent);
     
-logUtil!.put(commonStrings!.END_RUNNABLE, this, commonStrings!.RUN);
+this.logUtil!.putF(commonStrings!.END_RUNNABLE, this, commonStrings!.RUN);
     
 
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
     
 }
 

@@ -139,7 +139,7 @@ stringBuffer!.appendint(countedBasicArrayList!.size());
         
 ;
     
-logUtil!.put(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE);
+this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE);
     
 
     var newPartInterfaceArray: PartInterface[] = new Array(list.size());

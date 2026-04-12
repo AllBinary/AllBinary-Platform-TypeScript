@@ -160,7 +160,7 @@ this.player.deallocate();
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "prefetch", e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, "prefetch", e);
     
 }
 
@@ -176,7 +176,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "prefetch", e);
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "realize", e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, "realize", e);
     
 }
 
@@ -218,7 +218,7 @@ var now = now
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "setMediaTime", e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, "setMediaTime", e);
     
 
 
@@ -251,7 +251,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "setMediaTime", e);
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.START_METHOD_NAME, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.START_METHOD_NAME, e);
     
 }
 
@@ -267,7 +267,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.START_METHOD_NAME, e
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "stop", e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, "stop", e);
     
 }
 

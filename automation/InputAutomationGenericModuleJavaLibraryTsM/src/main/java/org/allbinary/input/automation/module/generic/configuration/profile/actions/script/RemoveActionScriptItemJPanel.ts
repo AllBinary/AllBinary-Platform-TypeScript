@@ -93,7 +93,7 @@ var evt = evt
                                 )
                         
                                     {
-                                    logUtil!.put("GenericProfileAction was null", this, "removeJButtonActionPerformed");
+                                    this.logUtil!.putF("GenericProfileAction was null", this, "removeJButtonActionPerformed");
     
 
 

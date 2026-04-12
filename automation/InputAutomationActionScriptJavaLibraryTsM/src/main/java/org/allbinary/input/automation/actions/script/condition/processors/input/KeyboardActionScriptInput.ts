@@ -153,7 +153,7 @@ public constructor (node: Node)
 
                             //For kotlin this is before the body of the constructor.
                     
-logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
+this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
     
 
     var actionNode: Node = DomSearchHelper.getNode(KeyboardActionScriptInputData.NAME, node.getChildNodes())!;
@@ -419,7 +419,7 @@ var keyArray = keyArray
                         if(keyArray != 
                                     null
                                 )
-                        logUtil!.put(CommonLabels.getInstance()!.START +keyArray!.length, this, "setKeyArray");
+                        this.logUtil!.putF(CommonLabels.getInstance()!.START +keyArray!.length, this, "setKeyArray");
 
                         
 this.keyArray= keyArray;
@@ -447,7 +447,7 @@ this.keyboardActionScriptInputJPanel!.getKeyActionJDialog()!.setVisible(true);
 
     public setText(text: string){
 var text = text
-logUtil!.put(CommonLabels.getInstance()!.START +text, this, "setText");
+this.logUtil!.putF(CommonLabels.getInstance()!.START +text, this, "setText");
     
 
     var integerArray: Integer[] = this.integerArrayValue(text)!;
@@ -462,7 +462,7 @@ this.setKeyArray(integerArray);
 
     integerArrayValue(text: string): Integer[]{
 var text = text
-logUtil!.put(CommonLabels.getInstance()!.START +text, this, "integerArrayValue");
+this.logUtil!.putF(CommonLabels.getInstance()!.START +text, this, "integerArrayValue");
     
 
     var vector: Vector = new Vector();
@@ -509,7 +509,7 @@ logUtil!.put(CommonLabels.getInstance()!.START +text, this, "integerArrayValue")
         
 ;
     
-logUtil!.put("Next Char String: " +nextCharString, this, "integerArrayValue");
+this.logUtil!.putF("Next Char String: " +nextCharString, this, "integerArrayValue");
     
 vector.add(substring.valueOf());
     
@@ -580,7 +580,7 @@ hashMap!.put(KeyboardActionScriptInputData.PRESS, Boolean.toString(this.isPress(
     
 hashMap!.put(KeyboardActionScriptInputData.RELEASE, Boolean.toString(this.isRelease()));
     
-logUtil!.put("HashMap: " +hashMap!.toString(), this, "toHashMap()");
+this.logUtil!.putF("HashMap: " +hashMap!.toString(), this, "toHashMap()");
     
 
 
@@ -622,7 +622,7 @@ KeyboardInputAutomationProcessor.process(this);
 
 
     public log(){
-logUtil!.put(this.toString(), this, "log");
+this.logUtil!.putF(this.toString(), this, "log");
     
 }
 

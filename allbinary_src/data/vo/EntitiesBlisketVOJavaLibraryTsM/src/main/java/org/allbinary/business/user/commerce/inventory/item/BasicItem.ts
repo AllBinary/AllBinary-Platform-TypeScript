@@ -139,7 +139,7 @@ public constructor (itemHashMap: HashMap<any, any>){
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PRODUCTSEARCHLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.START, this, "Constructor(HashMap)");
+                                    this.logUtil!.putF(this.commonStrings!.START, this, "Constructor(HashMap)");
     
 
                                     }
@@ -269,7 +269,7 @@ public constructor (){
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PRODUCTSEARCHLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
+                                    this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
     
 
                                     }
@@ -900,7 +900,7 @@ itemTotal!.multiply(new Integer(this.number).
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PRODUCTSEARCHLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.START, this, "toHashMap");
+                                    this.logUtil!.putF(this.commonStrings!.START, this, "toHashMap");
     
 
                                     }
@@ -994,7 +994,7 @@ hashMap!.put(BasicItemData.SPECIALS, this.specials);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PRODUCTSEARCHLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.START, this, "toVector");
+                                    this.logUtil!.putF(this.commonStrings!.START, this, "toVector");
     
 
                                     }

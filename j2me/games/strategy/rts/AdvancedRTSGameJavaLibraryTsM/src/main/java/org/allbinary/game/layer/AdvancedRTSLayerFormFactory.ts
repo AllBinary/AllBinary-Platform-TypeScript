@@ -76,7 +76,7 @@ scrollSelectionForm= RTSScrollSelectionFormFactory.getInstance(label, items);
         
 ;
     
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e);
     
 }
 

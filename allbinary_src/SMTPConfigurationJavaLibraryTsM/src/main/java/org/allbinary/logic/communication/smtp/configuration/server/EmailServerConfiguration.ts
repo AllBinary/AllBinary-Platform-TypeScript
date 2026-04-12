@@ -59,7 +59,7 @@ public constructor (){
         
 ;
     
-logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
+this.logUtil!.putF(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
     
 
                                     }
@@ -82,7 +82,7 @@ public constructor (hashMap: HashMap<any, any>){
         
 ;
     
-logUtil!.put(commonStrings!.START, this, "EmailServerConfiguration(HashMap)");
+this.logUtil!.putF(commonStrings!.START, this, "EmailServerConfiguration(HashMap)");
     
 
                                     }
@@ -119,7 +119,7 @@ var server = server
         
 ;
     
-logUtil!.put(commonStrings!.START, this, "EmailServerConfiguration(HashMap)");
+this.logUtil!.putF(commonStrings!.START, this, "EmailServerConfiguration(HashMap)");
     
 
                                     }
@@ -191,7 +191,7 @@ this.password= password;
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
                                     {
-                                    logUtil!.put(this.toString(), this, "EmailServerConfiguration");
+                                    this.logUtil!.putF(this.toString(), this, "EmailServerConfiguration");
     
 
                                     }

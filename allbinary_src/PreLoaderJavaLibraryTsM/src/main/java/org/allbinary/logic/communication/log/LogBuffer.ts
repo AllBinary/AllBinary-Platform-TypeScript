@@ -75,7 +75,7 @@ index < size; index++)
         
 ;
     
-logUtil!.put(log);
+this.logUtil!.putL(log);
     
 }
 

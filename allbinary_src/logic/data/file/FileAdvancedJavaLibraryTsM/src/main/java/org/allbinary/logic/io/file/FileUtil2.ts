@@ -90,7 +90,7 @@ private constructor (){
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.ADD, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.ADD, e);
     
 }
 

@@ -141,7 +141,7 @@ this.running= running;
                                     {
                                     captureThread= new Thread(this.getCaptureWorker());
     
-logUtil!.put("Starting CaptureWorkers - Need more images - Thread State: " +captureThread!.getState()!.toString(), this, "startCaptureWorkers");
+this.logUtil!.putF("Starting CaptureWorkers - Need more images - Thread State: " +captureThread!.getState()!.toString(), this, "startCaptureWorkers");
     
 captureThread!.start();
     
@@ -158,7 +158,7 @@ captureThread!.start();
 
         while(isAnyDataWorkerRunning())
         {
-logUtil!.put("Waiting", this, this.commonStrings!.RUN);
+this.logUtil!.putF("Waiting", this, this.commonStrings!.RUN);
     
 Thread.sleep(250);
     
@@ -188,7 +188,7 @@ this.getCaptureWorker()!.setRunning(false);
     public run(){
 
         try {
-            logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.RUN);
+            this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.RUN);
     
 this.setRunning(true);
     
@@ -207,7 +207,7 @@ this.process();
     
 this.index++;
     
-logUtil!.put(CommonLabels.getInstance()!.ELAPSED +timeHelper!.getElapsed() +" Index: " +this.index, this, this.commonStrings!.RUN);
+this.logUtil!.putF(CommonLabels.getInstance()!.ELAPSED +timeHelper!.getElapsed() +" Index: " +this.index, this, this.commonStrings!.RUN);
     
 }
 
@@ -215,13 +215,13 @@ this.stopDataWorkers();
     
 this.waitForDataWorkers();
     
-logUtil!.put(this.commonStrings!.END, this, this.commonStrings!.RUN);
+this.logUtil!.putF(this.commonStrings!.END, this, this.commonStrings!.RUN);
     
 
                 //: 
 } catch(e) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e);
     
 }
 

@@ -144,7 +144,7 @@ transformer.setOutputProperty(OutputKeys.INDENT, booleanFactory!.YES);
         
 ;
     
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e);
     
 }
 

@@ -85,7 +85,7 @@ public constructor (){
             super();
             Globals.getInstance()!.init(this.constructor.name.java.classLoader, "./");
     
-logUtil!.put("Set Globals: " +URLGLOBALS.getWebappPath(), this, this.commonStrings!.CONSTRUCTOR);
+this.logUtil!.putF("Set Globals: " +URLGLOBALS.getWebappPath(), this, this.commonStrings!.CONSTRUCTOR);
     
 }
 
@@ -143,7 +143,7 @@ this.showLicenseDialog(abeClientInformation, e);
     //var e = e
 
         try {
-            logUtil!.put(commonStrings!.EXCEPTION, this, this.commonStrings!.INIT, e);
+            this.logUtil!.put(commonStrings!.EXCEPTION, this, this.commonStrings!.INIT, e);
     
 
     var basicTextJDialog: BasicTextJDialog = new BasicTextJDialog(e.message);
@@ -179,7 +179,7 @@ this.showLicenseDialog(abeClientInformation, e);
                 //: 
 } catch(e2) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, this.commonStrings!.INIT, e2);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, this.commonStrings!.INIT, e2);
     
 }
 
@@ -191,7 +191,7 @@ basicTextJDialog!.setVisible(true);
                 //: 
 } catch(e3) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, this.commonStrings!.INIT, e3);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, this.commonStrings!.INIT, e3);
     
 }
 

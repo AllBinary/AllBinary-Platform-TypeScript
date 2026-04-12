@@ -87,7 +87,7 @@ layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Ali
     
 layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGap(0, 256, Short.MAX_VALUE)!.addComponent(this.getGenericProfileActionScriptJPanel(), javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE));
     
-logUtil!.put("Updated UI", this, "updateUI");
+this.logUtil!.putF("Updated UI", this, "updateUI");
     
 }
 
@@ -222,7 +222,7 @@ layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Align
 
     newTimeIntervalJButtonActionPerformed(evt: java.awt.event.ActionEvent){
 var evt = evt
-logUtil!.put("New Time Interval Action Condition", this, "newTimeIntervalJButtonActionPerformed");
+this.logUtil!.putF("New Time Interval Action Condition", this, "newTimeIntervalJButtonActionPerformed");
     
 getGenericProfileAction()!.getGenericProfileActionScript()!.addCondition(new TimeIntervalActionScriptCondition() as ProfileActionScriptConditionInterface);
     
@@ -233,7 +233,7 @@ this.updateProfileActionUI();
 
     newAlwaysJButtonActionPerformed(evt: java.awt.event.ActionEvent){
 var evt = evt
-logUtil!.put("New EveryTime Action Condition", this, "newEveryTimeJButtonActionPerformed");
+this.logUtil!.putF("New EveryTime Action Condition", this, "newEveryTimeJButtonActionPerformed");
     
 getGenericProfileAction()!.getGenericProfileActionScript()!.addCondition(new AlwaysActionScriptCondition() as ProfileActionScriptConditionInterface);
     
@@ -244,7 +244,7 @@ this.updateProfileActionUI();
 
     newColorAtJButtonActionPerformed(evt: java.awt.event.ActionEvent){
 var evt = evt
-logUtil!.put("New Color At Action Condition", this, "newColorAtJButtonActionPerformed");
+this.logUtil!.putF("New Color At Action Condition", this, "newColorAtJButtonActionPerformed");
     
 getGenericProfileAction()!.getGenericProfileActionScript()!.addCondition(new ColorAtActionScriptCondition() as ProfileActionScriptConditionInterface);
     

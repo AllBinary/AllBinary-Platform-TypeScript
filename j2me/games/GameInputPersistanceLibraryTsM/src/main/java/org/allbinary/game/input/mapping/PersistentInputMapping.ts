@@ -192,7 +192,7 @@ inputMappingEvent!.setInputToGameKeyMapping(this.getInputMapping());
             
     public init(abeClientInformation: AbeClientInformationInterface){
     //var abeClientInformation = abeClientInformation
-logUtil!.put(commonStrings!.START, this, commonStrings!.INIT);
+this.logUtil!.putF(commonStrings!.START, this, commonStrings!.INIT);
     
 
         try {
@@ -293,7 +293,7 @@ stringBuffer!.append(" to: ");
     
 stringBuffer!.appendint(totalMappedTo);
     
-logUtil!.put(stringBuffer!.toString(), this, commonStrings!.INIT);
+this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.INIT);
     
 }
 

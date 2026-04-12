@@ -280,7 +280,7 @@ this.log();
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put("Created Address: \n" +this.toHashMap(), this, "log");
+                                    this.logUtil!.putF("Created Address: \n" +this.toHashMap(), this, "log");
     
 
                                     }
@@ -645,7 +645,7 @@ node.appendChild(this.toXmlNode(document));
         
 ;
     
-logUtil!.put(commonStrings!.EXCEPTION, this, "toValidationInfoNode", e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, "toValidationInfoNode", e);
     
 
                                     }

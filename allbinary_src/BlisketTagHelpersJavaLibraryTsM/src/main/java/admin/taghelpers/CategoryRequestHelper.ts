@@ -141,7 +141,7 @@ this.getXmlData();
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "CategoryRequestHelper()", e);
+                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "CategoryRequestHelper()", e);
     
 
                                     }
@@ -219,7 +219,7 @@ xmlRequest= keyArray[index]! as String;
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPER))
                         
                                     {
-                                    logUtil!.put(xmlRequest, this, "getXmlData()");
+                                    this.logUtil!.putF(xmlRequest, this, "getXmlData()");
     
 
                                     }
@@ -240,7 +240,7 @@ xmlRequest= keyArray[index]! as String;
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPER))
                         
                                     {
-                                    logUtil!.put(DomDocumentHelper.toString(document), this, "getXmlData()");
+                                    this.logUtil!.putF(DomDocumentHelper.toString(document), this, "getXmlData()");
     
 
                                     }
@@ -272,7 +272,7 @@ this.categoryInterface= this.categoryLoaderInterface!.get(this.categoryInterface
                                     {
                                     this.categoryInterface!.log();
     
-logUtil!.put("Loaded Parent Category", this, "getXmlData()");
+this.logUtil!.putF("Loaded Parent Category", this, "getXmlData()");
     
 
                                     }
@@ -293,7 +293,7 @@ logUtil!.put("Loaded Parent Category", this, "getXmlData()");
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPER))
                         
                                     {
-                                    logUtil!.put("Loading Child Category", this, "getXmlData()");
+                                    this.logUtil!.putF("Loading Child Category", this, "getXmlData()");
     
 
                                     }
@@ -309,7 +309,7 @@ this.childCategoryInterface= new StoreCategoryFactory(this.transformInfoInterfac
                                     {
                                     this.childCategoryInterface!.log();
     
-logUtil!.put("Loaded Child Category", this, "getXmlData()");
+this.logUtil!.putF("Loaded Child Category", this, "getXmlData()");
     
 
                                     }
@@ -334,7 +334,7 @@ logUtil!.put("Loaded Child Category", this, "getXmlData()");
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "getXmlData()", e);
+                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "getXmlData()", e);
     
 
                                     }
@@ -431,7 +431,7 @@ this.categoryLoaderInterface= CategoryLoaderFactory.getInstance(storeCategoryFac
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put("inserting", this, "insert()");
+                                    this.logUtil!.putF("inserting", this, "insert()");
     
 
                                     }
@@ -442,7 +442,7 @@ this.categoryLoaderInterface!.insert(this.categoryInterface, this.childCategoryI
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put(success, this, "insert()");
+                                    this.logUtil!.putF(success, this, "insert()");
     
 
                                     }
@@ -467,7 +467,7 @@ this.categoryLoaderInterface!.insert(this.categoryInterface, this.childCategoryI
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "insert()", e);
+                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "insert()", e);
     
 
                                     }
@@ -496,7 +496,7 @@ this.categoryLoaderInterface!.insert(this.categoryInterface, this.childCategoryI
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put("Deleting", this, "delete()");
+                                    this.logUtil!.putF("Deleting", this, "delete()");
     
 
                                     }
@@ -507,7 +507,7 @@ this.categoryLoaderInterface!.delete(this.categoryInterface, this.childCategoryI
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put(success, this, "delete()");
+                                    this.logUtil!.putF(success, this, "delete()");
     
 
                                     }
@@ -534,7 +534,7 @@ this.categoryLoaderInterface!.delete(this.categoryInterface, this.childCategoryI
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "delete()", e);
+                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "delete()", e);
     
 
                                     }
@@ -559,7 +559,7 @@ this.categoryLoaderInterface!.delete(this.categoryInterface, this.childCategoryI
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "delete()", e2);
+                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "delete()", e2);
     
 
                                     }
@@ -597,7 +597,7 @@ this.categoryLoaderInterface!.delete(this.categoryInterface, this.childCategoryI
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put(xmlString, this, "viewCategory()");
+                                    this.logUtil!.putF(xmlString, this, "viewCategory()");
     
 
                                     }
@@ -622,7 +622,7 @@ this.categoryLoaderInterface!.delete(this.categoryInterface, this.childCategoryI
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "viewCategory()", e);
+                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "viewCategory()", e);
     
 
                                     }
@@ -651,7 +651,7 @@ this.categoryLoaderInterface!.delete(this.categoryInterface, this.childCategoryI
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put(success, this, "viewCategories()");
+                                    this.logUtil!.putF(success, this, "viewCategories()");
     
 
                                     }
@@ -676,7 +676,7 @@ this.categoryLoaderInterface!.delete(this.categoryInterface, this.childCategoryI
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "viewCategories()", e);
+                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "viewCategories()", e);
     
 
                                     }
@@ -705,7 +705,7 @@ this.categoryLoaderInterface!.delete(this.categoryInterface, this.childCategoryI
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put(success, this, "update()");
+                                    this.logUtil!.putF(success, this, "update()");
     
 
                                     }
@@ -730,7 +730,7 @@ this.categoryLoaderInterface!.delete(this.categoryInterface, this.childCategoryI
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "update()", e);
+                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "update()", e);
     
 
                                     }

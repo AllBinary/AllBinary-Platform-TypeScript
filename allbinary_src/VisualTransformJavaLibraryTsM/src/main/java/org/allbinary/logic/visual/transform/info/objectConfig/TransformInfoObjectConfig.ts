@@ -139,7 +139,7 @@ stringBuffer!.append("\nConstructed with document: ");
     
 stringBuffer!.append(this.toString());
     
-logUtil!.put(stringBuffer!.toString(), this, "Constructor(TransformInfoInterface)");
+this.logUtil!.putF(stringBuffer!.toString(), this, "Constructor(TransformInfoInterface)");
     
 
                                     }
@@ -205,7 +205,7 @@ stringBuffer!.append("\nConstructed with document: ");
     
 stringBuffer!.append(this.toString());
     
-logUtil!.put(stringBuffer!.toString(), this, "Constructor(TransformInfoInterface, Document)");
+this.logUtil!.putF(stringBuffer!.toString(), this, "Constructor(TransformInfoInterface, Document)");
     
 
                                     }
@@ -271,7 +271,7 @@ stringBuffer!.append("\nConstructed with document: ");
     
 stringBuffer!.append(this.toString());
     
-logUtil!.put(stringBuffer!.toString(), this, "Constructor(TransformInfoInterface, name, type)");
+this.logUtil!.putF(stringBuffer!.toString(), this, "Constructor(TransformInfoInterface, name, type)");
     
 
                                     }
@@ -501,7 +501,7 @@ stringBuffer!.append(" Nodes: ");
     
 stringBuffer!.appendint(numberOfViews);
     
-logUtil!.put(stringBuffer!.toString(), this, "getNodeVector(nodename)");
+this.logUtil!.putF(stringBuffer!.toString(), this, "getNodeVector(nodename)");
     
 
                                     }
@@ -639,7 +639,7 @@ var group = group
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Started: " +group, this, "getTransformsGroup()");
+                                    this.logUtil!.putF("Started: " +group, this, "getTransformsGroup()");
     
 
                                     }
@@ -746,7 +746,7 @@ break;
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Number Of Nodes: " +numberOfViews, this, "getTransformsGroup()");
+                                    this.logUtil!.putF("Number Of Nodes: " +numberOfViews, this, "getTransformsGroup()");
     
 
                                     }
@@ -793,13 +793,13 @@ viewVector!.add(new TransformInfoDomNode(viewNode));
                                 )
                         
                                     {
-                                    logUtil!.put("Number Of Nodes: NULL", this, "getTransformsGroup()");
+                                    this.logUtil!.putF("Number Of Nodes: NULL", this, "getTransformsGroup()");
     
 
                                     }
                                 
                         else {
-                            logUtil!.put("Number Of Nodes: 0", this, "getTransformsGroup()");
+                            this.logUtil!.putF("Number Of Nodes: 0", this, "getTransformsGroup()");
     
 
                         }
@@ -1004,7 +1004,7 @@ this.outputTypeName= outputTypeName;
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("DOM Document error", this, commonStrings!.TOSTRING);
+                                    this.logUtil!.putF("DOM Document error", this, commonStrings!.TOSTRING);
     
 
                                     }

@@ -120,7 +120,7 @@ this.document= DomDocumentFileHelper.create(xmlFile);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Size: " +transformInfoNodeVector!.length, this, "toTransformInfoPropertiesHashMap()");
+                                    this.logUtil!.putF("Size: " +transformInfoNodeVector!.length, this, "toTransformInfoPropertiesHashMap()");
     
 
                                     }
@@ -179,7 +179,7 @@ transformInfoPropertiesHashMap!.put(transformInfoProperties!.getName(), transfor
         
 ;
     
-logUtil!.put(commonStrings!.EXCEPTION, this, "toTransformInfoPropertiesHashMap()", e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, "toTransformInfoPropertiesHashMap()", e);
     
 
                                     }

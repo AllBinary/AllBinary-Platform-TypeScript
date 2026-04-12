@@ -103,6 +103,12 @@ new object: Thread()
                                 
     public run(){
 
+    var logUtil: LogUtil = LogUtil.getInstance()!;
+        
+        
+;
+    
+
         try {
             
     var generatedBufferedImageArray: BufferedImage[]
@@ -179,7 +185,7 @@ this@RotationSpriteImageJPanel.getParent()!.repaint();
 filePath= new StringMaker().
                             append(filePath!.substring(0, extensionIndex))!.append(CommonSeps.getInstance()!.UNDERSCORE)!.append("sprite")!.append(imageStrings!.PNG_EXTENSION)!.toString();
     
-logUtil!.put("New File Path: " +filePath, this, commonStrings!.RUN);
+logUtil!.putF("New File Path: " +filePath, this, commonStrings!.RUN);
     
 file= new File(filePath);
     
@@ -192,7 +198,7 @@ file= new File(filePath);
         
 ;
     
-logUtil!.put("File: " +file +" Wrote: " +isWritten, this, commonStrings!.RUN);
+logUtil!.putF("File: " +file +" Wrote: " +isWritten, this, commonStrings!.RUN);
     
 }
 

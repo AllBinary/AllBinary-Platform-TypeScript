@@ -51,6 +51,9 @@ import { LayerPartialCellPositionsUtil } from "../../../../../org/allbinary/game
 import { NullUtil } from "../../../../../org/allbinary/logic/NullUtil.js";
 
     
+import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+
+    
 import { BooleanFactory } from "../../../../../org/allbinary/logic/java/bool/BooleanFactory.js";
 
     
@@ -116,6 +119,12 @@ export inner class SimpleSteeringVisitor extends SteeringVisitor {
 
     public visit(anyType: any = {}): any{
     //var anyType = anyType
+
+    var logUtil: LogUtil = LogUtil.getInstance()!;
+        
+        
+;
+    
 
         try {
             

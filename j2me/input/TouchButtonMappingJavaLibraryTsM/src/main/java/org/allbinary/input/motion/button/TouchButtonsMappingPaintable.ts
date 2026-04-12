@@ -80,7 +80,7 @@ this.init();
         
 ;
     
-logUtil!.put(commonStrings!.EXCEPTION, this, "updateRectangle", e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, "updateRectangle", e);
     
 }
 

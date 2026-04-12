@@ -41,7 +41,7 @@ public constructor (alwaysActionScriptConditionInterface: AlwaysActionScriptCond
 
             super();
             var alwaysActionScriptConditionInterface = alwaysActionScriptConditionInterface
-logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
+this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
     
 initComponents();
     

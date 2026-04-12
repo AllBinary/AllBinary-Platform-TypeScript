@@ -124,7 +124,7 @@ var item = item
         
 ;
     
-logUtil!.put(new StringMaker().
+this.logUtil!.putF(new StringMaker().
                             append(CommonLabels.getInstance()!.ITEM_LABEL)!.append(itemLabel)!.toString(), this, "itemStateChanged");
     
 
@@ -174,7 +174,7 @@ logUtil!.put(new StringMaker().
         
 ;
     
-logUtil!.put(commonStrings!.EXCEPTION, this, "itemStateChanged", e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, "itemStateChanged", e);
     
 }
 

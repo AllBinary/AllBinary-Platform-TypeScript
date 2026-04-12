@@ -175,7 +175,7 @@ pointsBasicArrayList!.add(getInstance(pointsBasicArrayList!.objectArray[index]! 
         
 ;
     
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e);
     
 
 

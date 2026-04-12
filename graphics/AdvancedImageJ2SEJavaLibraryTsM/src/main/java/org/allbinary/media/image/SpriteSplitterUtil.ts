@@ -133,7 +133,7 @@ index < bufferedImageArray!.length; index++)
         {
 bufferedImage= bufferedImageArray[index]!;
     
-logUtil!.put(spriteType, this, commonStrings!.RUN);
+this.logUtil!.putF(spriteType, this, commonStrings!.RUN);
     
 
                         if(spriteType == HORIZONTAL_SPRITE)
@@ -166,9 +166,9 @@ logUtil!.put(spriteType, this, commonStrings!.RUN);
 generatedBufferedImageArray= Array(rows) { arrayOfNulls<BufferedImage?>(columns) }
                                                             ;
     
-logUtil!.put("Processing Individual Cells columns: " +columns +" rows: " +rows, this, commonStrings!.RUN);
+this.logUtil!.putF("Processing Individual Cells columns: " +columns +" rows: " +rows, this, commonStrings!.RUN);
     
-logUtil!.put("Processing Individual Cells cellHeight: " +cellHeight +" cellWidth: " +cellWidth, this, commonStrings!.RUN);
+this.logUtil!.putF("Processing Individual Cells cellHeight: " +cellHeight +" cellWidth: " +cellWidth, this, commonStrings!.RUN);
     
 
     var imageUtil: ImageUtil = ImageUtil.getInstance()!;
@@ -240,7 +240,7 @@ visitor.visit(generatedBufferedImageArray[index2]![index3]!, nameEnding, index);
 
 }
 
-logUtil!.put("Processing Rows from Cells", this, commonStrings!.RUN);
+this.logUtil!.putF("Processing Rows from Cells", this, commonStrings!.RUN);
     
 
     var imageUnifierProperties: ImageUnifierProperties = new ImageUnifierProperties();
@@ -352,7 +352,7 @@ visitor.visit(generatedBufferedImage, nameEnding, index);
 generatedBufferedImageArray= Array(rows) { arrayOfNulls<BufferedImage?>(columns) }
                                                             ;
     
-logUtil!.put("Processing Individual Cells for each Direction", this, commonStrings!.RUN);
+this.logUtil!.putF("Processing Individual Cells for each Direction", this, commonStrings!.RUN);
     
 
     var nameEnding: string = 
@@ -436,7 +436,7 @@ imageUnifierProperties!.setColumns(columns.valueOf());
     
 imageUnifierProperties!.setImageUnifierCell(imageUnifierCell);
     
-logUtil!.put("Processing Rows from Cells for each Direction", this, commonStrings!.RUN);
+this.logUtil!.putF("Processing Rows from Cells for each Direction", this, commonStrings!.RUN);
     
 
 

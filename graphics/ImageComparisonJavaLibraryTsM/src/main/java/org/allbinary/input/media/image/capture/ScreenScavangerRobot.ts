@@ -64,7 +64,7 @@ public constructor (){
                 //@Throws(Error::class)
             
     public getScreenAsBufferedImages(): BufferedImage[]{
-logUtil!.put(this.commonStrings!.START, this, "getScreenAsBufferedImages");
+this.logUtil!.putF(this.commonStrings!.START, this, "getScreenAsBufferedImages");
     
 
     var dimScreenSize: Dimension = Toolkit.getDefaultToolkit()!.getScreenSize()!;
@@ -106,7 +106,7 @@ logUtil!.put(this.commonStrings!.START, this, "getScreenAsBufferedImages");
     
 bufferedImageArray[index]= inputRobotInterface!.createScreenCapture(rectScreenSize);
     
-logUtil!.put("Finish", this, "getScreenAsBufferedImages");
+this.logUtil!.putF("Finish", this, "getScreenAsBufferedImages");
     
 
 

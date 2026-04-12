@@ -33,6 +33,9 @@ import { SimpleProgressActivityInterface } from "../../../../../../org/allbinary
 import { BasicColor } from "../../../../../../org/allbinary/graphics/color/BasicColor.js";
 
     
+import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+
+    
 
 export class AndroidTitleProgressBar extends ProgressCanvas {
         
@@ -117,7 +120,7 @@ this.progressActivity= activity;
     public start(){
 
         try {
-            logUtil!.put(commonStrings!.START, this, commonStrings!.START_METHOD_NAME);
+            this.logUtil!.putF(commonStrings!.START, this, commonStrings!.START_METHOD_NAME);
     
 super.start();
     
@@ -127,7 +130,7 @@ this.progressActivity!.runOnUiThread(showTitleProgressBarRunnable);
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.START_METHOD_NAME, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.START_METHOD_NAME, e);
     
 }
 
@@ -137,7 +140,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.START_METHOD_NAME, e
     public end(){
 
         try {
-            logUtil!.put(commonStrings!.START, this, commonStrings!.END_METHOD_NAME);
+            this.logUtil!.putF(commonStrings!.START, this, commonStrings!.END_METHOD_NAME);
     
 this.progressActivity!.runOnUiThread(dismissTitleProgressBarRunnable);
     
@@ -147,7 +150,7 @@ super.end();
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.END_METHOD_NAME, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.END_METHOD_NAME, e);
     
 }
 
@@ -170,7 +173,7 @@ this.progressActivity!.runOnUiThread(progressDialogPortionSetProgressRunnable);
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, ADD_PORTION, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, ADD_PORTION, e);
     
 }
 
@@ -192,7 +195,7 @@ this.progressActivity!.runOnUiThread(progressDialogPortionSetProgressRunnable);
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, ADD_PORTION, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, ADD_PORTION, e);
     
 }
 
@@ -211,7 +214,7 @@ this.progressActivity!.runOnUiThread(progressDialogSetProgressRunnable);
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "setValue", e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, "setValue", e);
     
 }
 
@@ -234,6 +237,12 @@ export inner class TitleProgressBarSetProgressRunnable
         
 
     public run(){
+
+    var logUtil: LogUtil = LogUtil.getInstance()!;
+        
+        
+;
+    
 
         try {
             
@@ -268,6 +277,12 @@ export inner class TitleProgressBarPortionSetProgressRunnable
 
     public run(){
 
+    var logUtil: LogUtil = LogUtil.getInstance()!;
+        
+        
+;
+    
+
         try {
             
     var value: number = (this@AndroidTitleProgressBar.getValue() +this@AndroidTitleProgressBar.getMaxValue() /portion).toInt();
@@ -298,6 +313,12 @@ export inner class ShowTitleProgressBarRunnable
         
 
     public run(){
+
+    var logUtil: LogUtil = LogUtil.getInstance()!;
+        
+        
+;
+    
 
         try {
             
@@ -331,6 +352,12 @@ export inner class DismissTitleProgressBarRunnable
         
 
     public run(){
+
+    var logUtil: LogUtil = LogUtil.getInstance()!;
+        
+        
+;
+    
 
         try {
             this@AndroidTitleProgressBar.progressActivity!.onDismissTitleProgressBar();

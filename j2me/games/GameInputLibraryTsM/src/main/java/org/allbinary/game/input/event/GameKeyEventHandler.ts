@@ -81,7 +81,7 @@ this.downGameKeyEventHandler!.removeAllListeners();
     public addListener(eventListenerInterface: EventListenerInterface, playerInputId: number){
 var eventListenerInterface = eventListenerInterface
 var playerInputId = playerInputId
-logUtil!.put(eventListenerInterface!.toString(), this, commonStrings!.ADD_LISTENER);
+this.logUtil!.putF(eventListenerInterface!.toString(), this, commonStrings!.ADD_LISTENER);
     
 this.pressGameKeyEventHandler!.addListenerSingleThreaded(eventListenerInterface);
     
@@ -94,7 +94,7 @@ this.downGameKeyEventHandler!.getInstanceForPlayer(playerInputId)!.addListenerSi
 
     public addListener(eventListenerInterface: EventListenerInterface){
 var eventListenerInterface = eventListenerInterface
-logUtil!.put(eventListenerInterface!.toString(), this, commonStrings!.ADD_LISTENER);
+this.logUtil!.putF(eventListenerInterface!.toString(), this, commonStrings!.ADD_LISTENER);
     
 this.pressGameKeyEventHandler!.addListenerSingleThreaded(eventListenerInterface);
     
@@ -107,7 +107,7 @@ this.downGameKeyEventHandler!.addListenerSingleThreaded(eventListenerInterface);
 
     public removeListener(eventListenerInterface: EventListenerInterface){
 var eventListenerInterface = eventListenerInterface
-logUtil!.put(eventListenerInterface!.toString(), this, commonStrings!.REMOVE_LISTENER);
+this.logUtil!.putF(eventListenerInterface!.toString(), this, commonStrings!.REMOVE_LISTENER);
     
 this.pressGameKeyEventHandler!.removeListenerSingleThreaded(eventListenerInterface);
     

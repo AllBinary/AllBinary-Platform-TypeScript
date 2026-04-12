@@ -99,14 +99,14 @@ public constructor ()
 
     public keyPress(keycode: Integer){
 var keycode = keycode
-logUtil!.put("KeyCode: " +keycode, this, "keyPress");
+this.logUtil!.putF("KeyCode: " +keycode, this, "keyPress");
     
 }
 
 
     public keyRelease(keycode: Integer){
 var keycode = keycode
-logUtil!.put("KeyCode: " +keycode, this, "keyRelease");
+this.logUtil!.putF("KeyCode: " +keycode, this, "keyRelease");
     
 }
 
@@ -114,21 +114,21 @@ logUtil!.put("KeyCode: " +keycode, this, "keyRelease");
     public mouseMove(x: Integer, y: Integer){
 var x = x
 var y = y
-logUtil!.put("X: " +x +" Y: " +y, this, "mouseMove");
+this.logUtil!.putF("X: " +x +" Y: " +y, this, "mouseMove");
     
 }
 
 
     public mousePress(buttons: Integer){
 var buttons = buttons
-logUtil!.put("Buttons: " +buttons, this, "mousePress");
+this.logUtil!.putF("Buttons: " +buttons, this, "mousePress");
     
 }
 
 
     public mouseRelease(buttons: Integer){
 var buttons = buttons
-logUtil!.put("Buttons: " +buttons, this, "mouseRelease");
+this.logUtil!.putF("Buttons: " +buttons, this, "mouseRelease");
     
 }
 

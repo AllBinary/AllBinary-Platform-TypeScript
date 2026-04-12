@@ -55,7 +55,7 @@ export class BasicTouchButtonsBuilder extends BaseTouchInput {
     public getList(): BasicArrayList{
 
         try {
-            logUtil!.put(commonStrings!.START, this, commonStrings!.GET_LIST);
+            this.logUtil!.putF(commonStrings!.START, this, commonStrings!.GET_LIST);
     
 
     var list: BasicArrayList = new BasicArrayList();
@@ -73,7 +73,7 @@ export class BasicTouchButtonsBuilder extends BaseTouchInput {
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_LIST, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_LIST, e);
     
 
 

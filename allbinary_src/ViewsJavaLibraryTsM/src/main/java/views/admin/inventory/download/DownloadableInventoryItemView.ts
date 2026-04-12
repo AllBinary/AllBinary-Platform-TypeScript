@@ -217,7 +217,7 @@ this.addDomNodeInterface(new BasicItemView(itemInterface, vector));
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e);
+                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e);
     
 
                                     }
@@ -265,7 +265,7 @@ stringBuffer!.append(fullPath);
     
 stringBuffer!.append(fileName);
     
-logUtil!.put("FileName: " +fileName, this, "processFile()");
+this.logUtil!.putF("FileName: " +fileName, this, "processFile()");
     
 
     var file: AbFile = new AbFile(stringBuffer!.toString());
@@ -273,7 +273,7 @@ logUtil!.put("FileName: " +fileName, this, "processFile()");
         
 ;
     
-logUtil!.put(file.getPath(), this, "processFiles()");
+this.logUtil!.putF(file.getPath(), this, "processFiles()");
     
 file.createNewFile();
     
@@ -314,7 +314,7 @@ stringBuffer!.append(fullPath);
     
 stringBuffer!.append(fileName);
     
-logUtil!.put("FileName: " +fileName, this, "unzip()");
+this.logUtil!.putF("FileName: " +fileName, this, "unzip()");
     
 
     var file: AbFile = new AbFile(stringBuffer!.toString());
@@ -322,7 +322,7 @@ logUtil!.put("FileName: " +fileName, this, "unzip()");
         
 ;
     
-logUtil!.put(file.getPath(), this, "unzip()");
+this.logUtil!.putF(file.getPath(), this, "unzip()");
     
 ZipFileUtil.getInstance()!.unzip(fullPath, file, fileName);
     

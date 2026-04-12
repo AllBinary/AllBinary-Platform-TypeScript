@@ -103,7 +103,7 @@ this.running= running;
     public run(){
 
         try {
-            logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.RUN);
+            this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.RUN);
     
 this.setRunning(true);
     
@@ -129,22 +129,22 @@ timeHelper!.setStartTime();
         
 ;
     
-logUtil!.put(imageComparisonInfo!.toString(), this, this.commonStrings!.RUN);
+this.logUtil!.putF(imageComparisonInfo!.toString(), this, this.commonStrings!.RUN);
     
 new ComparisonImageInputOutput().
                             save(imageComparisonInfo, imageComparisonInfo!.getFrameTwo());
     
 this.imageComparisonInfoVector!.remove(imageComparisonInfo);
     
-logUtil!.put(CommonLabels.getInstance()!.ELAPSED +timeHelper!.getElapsed(), this, this.commonStrings!.RUN);
+this.logUtil!.putF(CommonLabels.getInstance()!.ELAPSED +timeHelper!.getElapsed(), this, this.commonStrings!.RUN);
     
-logUtil!.put(this.commonStrings!.END, this, this.commonStrings!.RUN);
+this.logUtil!.putF(this.commonStrings!.END, this, this.commonStrings!.RUN);
     
 
                 //: 
 } catch(e) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e);
     
 }
 

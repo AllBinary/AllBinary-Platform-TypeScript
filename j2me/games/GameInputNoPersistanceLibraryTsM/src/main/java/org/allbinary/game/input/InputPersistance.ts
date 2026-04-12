@@ -123,7 +123,7 @@ id= recordEnum!.nextRecordId();
     
 stringBuffer!.delete(0, stringBuffer!.length());
     
-logUtil!.put(stringBuffer!.append(this.persistanceStrings!.LOADING_ID)!.appendint(id)!.toString(), this, this.persistanceStrings!.LOAD_ALL);
+this.logUtil!.putF(stringBuffer!.append(this.persistanceStrings!.LOADING_ID)!.appendint(id)!.toString(), this, this.persistanceStrings!.LOAD_ALL);
     
 hashtable= new Hashtable<any, any>();
     

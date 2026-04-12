@@ -101,7 +101,7 @@ this.countedIndex= countedIndex;
         
 ;
     
-logUtil!.put(commonStrings!.EXCEPTION, this, "doPickup", e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, "doPickup", e);
     
 }
 

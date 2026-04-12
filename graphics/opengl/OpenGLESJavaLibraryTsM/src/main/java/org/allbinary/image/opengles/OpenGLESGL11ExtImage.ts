@@ -93,7 +93,7 @@ rectangle= intArrayOf(0,this.getHeight(), this.getWidth(),  -this.getHeight();
     //var displayChangeEvent = displayChangeEvent
 
         try {
-            logUtil!.put(commonStrings!.START, this, "onResize");
+            this.logUtil!.putF(commonStrings!.START, this, "onResize");
     
 this.a= DisplayInfoSingleton.getInstance()!.getLastHeight() -this.getHeight();
     
@@ -101,7 +101,7 @@ this.a= DisplayInfoSingleton.getInstance()!.getLastHeight() -this.getHeight();
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "onResize", e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, "onResize", e);
     
 }
 

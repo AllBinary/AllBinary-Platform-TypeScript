@@ -201,7 +201,7 @@ this.updateOnPropertiesChange();
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, this.commonStrings!.INIT, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, this.commonStrings!.INIT, e);
     
 }
 
@@ -307,7 +307,7 @@ this.updateImage(tempBufferedImageArray);
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "updateImage", e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, "updateImage", e);
     
 }
 
@@ -381,7 +381,7 @@ this.updateImage(fudgedBufferedImageArray);
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "updateImageWithFudgedImages", e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, "updateImageWithFudgedImages", e);
     
 }
 
@@ -824,7 +824,7 @@ var evt = evt
 filePath= new StringMaker().
                             append(filePath!.substring(0, extensionIndex))!.append(CommonSeps.getInstance()!.UNDERSCORE)!.appendint(this.imageUnifierProperties!.getColumns())!.append("_By_")!.appendint(this.imageUnifierProperties!.getRows())!.append("_Unified")!.append(imageStrings!.PNG_EXTENSION)!.toString();
     
-logUtil!.put("New File Path: " +filePath, this, StringUtil.getInstance()!.EMPTY_STRING);
+this.logUtil!.putF("New File Path: " +filePath, this, StringUtil.getInstance()!.EMPTY_STRING);
     
 
     var outputFile: File = new File(filePath);
@@ -838,7 +838,7 @@ ImagePersistanceUtil.getInstance()!.saveWithBatik(FileWrapperUtil.wrapFile(outpu
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "jButton1ActionPerformed", e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, "jButton1ActionPerformed", e);
     
 }
 

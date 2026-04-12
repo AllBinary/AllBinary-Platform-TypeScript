@@ -90,7 +90,7 @@ export class InputAutomationBundleActivator
     //var bundleContext = bundleContext
 
         try {
-            logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.START);
+            this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.START);
     
 this.bundleContext= bundleContext;
     
@@ -104,7 +104,7 @@ InputAutomationJFrame.create(this);
                 //: 
 } catch(e) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.START, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.START, e);
     
 
 
@@ -141,7 +141,7 @@ new InputAutomationModuleServiceConsumer(this.getBundleContext()).
             
     public stop(context: BundleContext){
     //var context = context
-logUtil!.put(this.commonStrings!.START, this, "stop");
+this.logUtil!.putF(this.commonStrings!.START, this, "stop");
     
 
                         if(InputAutomationJFrame.getInstance() != 
@@ -155,7 +155,7 @@ logUtil!.put(this.commonStrings!.START, this, "stop");
                                     }
                                 
                         else {
-                            logUtil!.put("Nothing to stop", this, "stop");
+                            this.logUtil!.putF("Nothing to stop", this, "stop");
     
 
                         }

@@ -272,7 +272,7 @@ var aLastHeight = aLastHeight
         
 ;
     
-logUtil!.put(stringMaker!.append(CommonLabels.getInstance()!.START_LABEL)!.append(reason)!.toString(), this, SET_LAST_SIZE_METHOD_NAME);
+this.logUtil!.putF(stringMaker!.append(CommonLabels.getInstance()!.START_LABEL)!.append(reason)!.toString(), this, SET_LAST_SIZE_METHOD_NAME);
     
 
     var aFullWidth: number = aLastWidth;
@@ -288,7 +288,7 @@ logUtil!.put(stringMaker!.append(CommonLabels.getInstance()!.START_LABEL)!.appen
     
 stringMaker!.delete(0, stringMaker!.length());
     
-logUtil!.put(stringMaker!.append(FULL_WIDTH)!.appendint(aFullWidth)!.append(FULL_HEIGHT)!.appendint(aFullHeight)!.append(this.toString())!.toString(), this, SET_LAST_SIZE_METHOD_NAME);
+this.logUtil!.putF(stringMaker!.append(FULL_WIDTH)!.appendint(aFullWidth)!.append(FULL_HEIGHT)!.appendint(aFullHeight)!.append(this.toString())!.toString(), this, SET_LAST_SIZE_METHOD_NAME);
     
 
     var operatingSystemInterface: GenericOperatingSystem = OperatingSystemFactory.getInstance()!.getOperatingSystemInstance()!;
@@ -325,7 +325,7 @@ this.ratio= aLastHeight /scaleLargestTo;
     
 stringMaker!.delete(0, stringMaker!.length());
     
-logUtil!.put(stringMaker!.append(this.ADJUSTING_FOR_SCALING_IN_PORTRAIT)!.appendfloat(displayRatio)!.toString(), this, SET_LAST_SIZE_METHOD_NAME);
+this.logUtil!.putF(stringMaker!.append(this.ADJUSTING_FOR_SCALING_IN_PORTRAIT)!.appendfloat(displayRatio)!.toString(), this, SET_LAST_SIZE_METHOD_NAME);
     
 aLastWidth= (aLastWidth *displayRatio).toInt();
     
@@ -358,7 +358,7 @@ this.ratio= aLastWidth /scaleLargestTo;
     
 stringMaker!.delete(0, stringMaker!.length());
     
-logUtil!.put(stringMaker!.append(this.ADJUSTING_FOR_SCALING_IN_LANDSCAPE)!.appendfloat(displayRatio)!.toString(), this, SET_LAST_SIZE_METHOD_NAME);
+this.logUtil!.putF(stringMaker!.append(this.ADJUSTING_FOR_SCALING_IN_LANDSCAPE)!.appendfloat(displayRatio)!.toString(), this, SET_LAST_SIZE_METHOD_NAME);
     
 aLastWidth= (aLastWidth *displayRatio).toInt();
     
@@ -385,7 +385,7 @@ this.scalableListener!.scale(ratio.toFloat());
                                 
 stringMaker!.delete(0, stringMaker!.length());
     
-logUtil!.put(stringMaker!.append(LAST_WIDTH)!.appendint(aLastWidth)!.append(LAST_HEIGHT)!.appendint(aLastHeight)!.toString(), this, SET_LAST_SIZE_METHOD_NAME);
+this.logUtil!.putF(stringMaker!.append(LAST_WIDTH)!.appendint(aLastWidth)!.append(LAST_HEIGHT)!.appendint(aLastHeight)!.toString(), this, SET_LAST_SIZE_METHOD_NAME);
     
 this.xOffset= aFullWidth -aLastWidth;
     
@@ -483,11 +483,11 @@ var lastHeight = lastHeight
         
 ;
     
-logUtil!.put(stringMaker!.append(REASON)!.append(reason)!.toString(), this, FIRE_METHOD_NAME);
+this.logUtil!.putF(stringMaker!.append(REASON)!.append(reason)!.toString(), this, FIRE_METHOD_NAME);
     
 stringMaker!.delete(0, stringMaker!.length());
     
-logUtil!.put(this.toString(stringMaker), this, FIRE_METHOD_NAME);
+this.logUtil!.putF(this.toString(stringMaker), this, FIRE_METHOD_NAME);
     
 list.add(reason);
     
@@ -580,7 +580,7 @@ PreLogUtil.putOE(commonStrings!.EXCEPTION, this, FIRE_METHOD_NAME, e);
         
 ;
     
-logUtil!.put(stringMaker!.append(CommonLabels.getInstance()!.START_LABEL)!.append(reason)!.append(LAST_WIDTH)!.appendint(aLastWidth)!.append(LAST_HEIGHT)!.appendint(aLastHeight)!.append(commonSeps!.SPACE)!.append(this.toString())!.toString(), this, commonStrings!.UPDATE);
+this.logUtil!.putF(stringMaker!.append(CommonLabels.getInstance()!.START_LABEL)!.append(reason)!.append(LAST_WIDTH)!.appendint(aLastWidth)!.append(LAST_HEIGHT)!.appendint(aLastHeight)!.append(commonSeps!.SPACE)!.append(this.toString())!.toString(), this, commonStrings!.UPDATE);
     
 
                         if(aLastWidth > 0 && aLastHeight > 0)
@@ -592,7 +592,7 @@ logUtil!.put(stringMaker!.append(CommonLabels.getInstance()!.START_LABEL)!.appen
                                     {
                                     stringMaker!.delete(0, stringMaker!.length());
     
-logUtil!.put(stringMaker!.append(UPDATE_FROM_ORIENTATION_CHANGE)!.toString(), this, commonStrings!.UPDATE);
+this.logUtil!.putF(stringMaker!.append(UPDATE_FROM_ORIENTATION_CHANGE)!.toString(), this, commonStrings!.UPDATE);
     
 
     var operatingSystemInterface: GenericOperatingSystem = OperatingSystemFactory.getInstance()!.getOperatingSystemInstance()!;
@@ -629,7 +629,7 @@ this.ratio= aLastHeight /scaleLargestTo;
     
 stringMaker!.delete(0, stringMaker!.length());
     
-logUtil!.put(stringMaker!.append(this.ADJUSTING_FOR_SCALING_IN_PORTRAIT)!.appendfloat(displayRatio)!.toString(), this, commonStrings!.UPDATE);
+this.logUtil!.putF(stringMaker!.append(this.ADJUSTING_FOR_SCALING_IN_PORTRAIT)!.appendfloat(displayRatio)!.toString(), this, commonStrings!.UPDATE);
     
 aLastWidth= (aLastWidth *displayRatio).toInt();
     
@@ -652,7 +652,7 @@ this.scalableListener!.scale(ratio.toFloat());
                                     }
                                 
                         else {
-                            logUtil!.put("Found Landscape Orientation", this, commonStrings!.UPDATE);
+                            this.logUtil!.putF("Found Landscape Orientation", this, commonStrings!.UPDATE);
     
 
                         if(aLastWidth > scaleLargestTo)
@@ -664,7 +664,7 @@ this.ratio= aLastWidth /scaleLargestTo;
     
 stringMaker!.delete(0, stringMaker!.length());
     
-logUtil!.put(stringMaker!.append(this.ADJUSTING_FOR_SCALING_IN_LANDSCAPE)!.appendfloat(displayRatio)!.toString(), this, commonStrings!.UPDATE);
+this.logUtil!.putF(stringMaker!.append(this.ADJUSTING_FOR_SCALING_IN_LANDSCAPE)!.appendfloat(displayRatio)!.toString(), this, commonStrings!.UPDATE);
     
 aLastWidth= (aLastWidth *displayRatio).toInt();
     
@@ -691,7 +691,7 @@ this.scalableListener!.scale(ratio.toFloat());
                                 
 stringMaker!.delete(0, stringMaker!.length());
     
-logUtil!.put(stringMaker!.append(UPDATE_FROM_ORIENTATION_CHANGE)!.append(LAST_WIDTH)!.appendint(aLastWidth)!.append(LAST_HEIGHT)!.appendint(aLastHeight)!.toString(), this, commonStrings!.UPDATE);
+this.logUtil!.putF(stringMaker!.append(UPDATE_FROM_ORIENTATION_CHANGE)!.append(LAST_WIDTH)!.appendint(aLastWidth)!.append(LAST_HEIGHT)!.appendint(aLastHeight)!.toString(), this, commonStrings!.UPDATE);
     
 this.xOffset= aFullWidth -aLastWidth;
     

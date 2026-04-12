@@ -171,7 +171,7 @@ this.active= true;
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e);
     
 }
 
@@ -425,7 +425,7 @@ this.addPoint(point);
 var point = point
 this.points.getPoints()!.add(point);
     
-logUtil!.put(point.toString(), this, "addPoint");
+this.logUtil!.putF(point.toString(), this, "addPoint");
     
 this.pointTreeNodeVector!.add(new DefaultMutableTreeNode(point.toString()));
     
@@ -705,7 +705,7 @@ firstPoint= secondPoint;
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "mouseMoved", e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, "mouseMoved", e);
     
 }
 
@@ -819,7 +819,7 @@ this.currentMousePoint= mousePoint;
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "mouseMoved", e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, "mouseMoved", e);
     
 }
 
@@ -881,7 +881,7 @@ this.currentMousePoint= point;
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "mouseMoved", e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, "mouseMoved", e);
     
 }
 
@@ -949,7 +949,7 @@ this.deactivate();
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, gameInputStrings!.KEY_PRESSED, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, gameInputStrings!.KEY_PRESSED, e);
     
 }
 

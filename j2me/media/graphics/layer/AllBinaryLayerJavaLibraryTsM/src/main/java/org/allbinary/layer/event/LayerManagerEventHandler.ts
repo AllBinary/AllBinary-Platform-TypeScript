@@ -124,7 +124,7 @@ layerManagerEventListener!.onCreateLayerManagerEvent(eventObject as LayerManager
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e);
     
 }
 
@@ -172,7 +172,7 @@ layerManagerEventListener!.onDeleteLayerManagerEvent(eventObject as LayerManager
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e);
     
 }
 
@@ -213,7 +213,7 @@ layerManagerEventListenerInterface!.onDeleteLayerManagerEvent(eventObject as Lay
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e);
     
 }
 

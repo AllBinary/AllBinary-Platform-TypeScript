@@ -73,7 +73,7 @@ public constructor (signed: CompleteMotionGestureListenerInterface){
 
             super();
             var signed = signed
-logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
+this.logUtil!.putF(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
     
 this.signed= signed;
     
@@ -174,7 +174,7 @@ stringBuffer!.append(commonStrings!.EXCEPTION_LABEL);
     
 stringBuffer!.append(StringUtil.getInstance()!.toString(ev.getMotionGesture()));
     
-logUtil!.put(stringBuffer!.toString(), this, "release", e);
+this.logUtil!.put(stringBuffer!.toString(), this, "release", e);
     
 }
 
@@ -235,7 +235,7 @@ stringBuffer!.append(commonStrings!.EXCEPTION_LABEL);
     
 stringBuffer!.append(StringUtil.getInstance()!.toString(ev.getMotionGesture()));
     
-logUtil!.put(stringBuffer!.toString(), this, "onMotionGestureEvent", e);
+this.logUtil!.put(stringBuffer!.toString(), this, "onMotionGestureEvent", e);
     
 }
 

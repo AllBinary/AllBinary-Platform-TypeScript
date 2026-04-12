@@ -799,7 +799,7 @@ isCellVisitedBoolean= localVisitedList!.get(index);
         
 ;
     
-logUtil!.put(commonStrings!.EXCEPTION, this, "paintNotVisited", e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, "paintNotVisited", e);
     
 }
 

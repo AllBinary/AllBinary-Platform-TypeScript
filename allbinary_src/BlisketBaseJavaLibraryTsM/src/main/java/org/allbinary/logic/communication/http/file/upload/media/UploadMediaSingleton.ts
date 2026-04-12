@@ -213,7 +213,7 @@ stringBuffer!.append(" Writers: ");
     
 stringBuffer!.append(this.writerFileTypesHashMap!.toString());
     
-logUtil!.put(stringBuffer!.toString(), this, this.commonStrings!.CONSTRUCTOR);
+this.logUtil!.putF(stringBuffer!.toString(), this, this.commonStrings!.CONSTRUCTOR);
     
 
                                     }

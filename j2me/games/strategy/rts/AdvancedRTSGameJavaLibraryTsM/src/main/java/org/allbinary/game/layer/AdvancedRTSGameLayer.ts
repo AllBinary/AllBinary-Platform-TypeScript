@@ -819,7 +819,7 @@ waypoint.reset();
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "onDestroyed", e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, "onDestroyed", e);
     
 }
 

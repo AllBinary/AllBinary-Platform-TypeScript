@@ -103,7 +103,7 @@ public constructor (commandListener: CommandListener, title: string, backgrounBa
 
                             //For kotlin this is before the body of the constructor.
                     
-logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
+this.logUtil!.putF(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
     
 this.addConfiguration();
     
@@ -299,7 +299,7 @@ gameConfiguration= list.objectArray[index]! as GameConfiguration;
     
 stringMaker!.delete(0, stringMaker!.length());
     
-logUtil!.put(stringMaker!.append(NAME)!.append(gameConfiguration!.toString())!.toString(), this, METHOD_NAME);
+this.logUtil!.putF(stringMaker!.append(NAME)!.append(gameConfiguration!.toString())!.toString(), this, METHOD_NAME);
     
 gauge= new GameConfigurationGauge(gameConfiguration);
     

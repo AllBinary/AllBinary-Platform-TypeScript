@@ -145,7 +145,7 @@ break;
                         if(tookTooLong)
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.VISIT, new Error(new StringMaker().
+                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.VISIT, new Error(new StringMaker().
                             append("Took Too Long: ")!.append(StringUtil.getInstance()!.toString(visitorInterface))!.toString()));
     
 

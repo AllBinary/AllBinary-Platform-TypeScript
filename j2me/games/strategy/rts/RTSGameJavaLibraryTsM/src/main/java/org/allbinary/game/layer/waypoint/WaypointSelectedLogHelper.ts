@@ -106,7 +106,7 @@ stringBuffer!.append(advancedRTSGameLayer!.getParentLayer()!.getName());
 
                                     }
                                 
-logUtil!.put(stringBuffer!.toString(), this, "onWaypointEvent");
+this.logUtil!.putF(stringBuffer!.toString(), this, "onWaypointEvent");
     
 }
 
@@ -139,7 +139,7 @@ stringBuffer!.append(advancedRTSGameLayer!.getParentLayer()!.getName());
 
                                     }
                                 
-logUtil!.put(stringBuffer!.toString(), this, "selected: onWaypointEvent");
+this.logUtil!.putF(stringBuffer!.toString(), this, "selected: onWaypointEvent");
     
 }
 
@@ -160,7 +160,7 @@ stringBuffer!.append(" Waypoints: ");
     
 stringBuffer!.append(stringUtil!.toString(list));
     
-logUtil!.put(stringBuffer!.toString(), this, "selected: onWaypointEvent");
+this.logUtil!.putF(stringBuffer!.toString(), this, "selected: onWaypointEvent");
     
 }
 
@@ -188,7 +188,7 @@ stringBuffer!.append(rtsLayer!.getName());
     
 stringBuffer!.append(" for Waypoint: ");
     
-logUtil!.put(stringBuffer!.toString(), this, "selected: insertWaypoint");
+this.logUtil!.putF(stringBuffer!.toString(), this, "selected: insertWaypoint");
     
 }
 
@@ -219,7 +219,7 @@ stringBuffer!.append(" Waypoints: ");
     
 stringBuffer!.append(stringUtil!.toString(list));
     
-logUtil!.put(stringBuffer!.toString(), this, "selected: insertWaypoint");
+this.logUtil!.putF(stringBuffer!.toString(), this, "selected: insertWaypoint");
     
 }
 
@@ -251,14 +251,14 @@ stringBuffer!.append(" -> ");
     
 stringBuffer!.append(stringUtil!.toString(pathsList));
     
-logUtil!.put(stringBuffer!.toString(), this, "selected: setRandomGeographicMapCellHistory");
+this.logUtil!.putF(stringBuffer!.toString(), this, "selected: setRandomGeographicMapCellHistory");
     
 }
 
 
     public moveAwayFromBuilding(associatedAdvancedRTSGameLayer: PathFindingLayerInterface){
     //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
-logUtil!.put(new StringMaker().
+this.logUtil!.putF(new StringMaker().
                             append(associatedAdvancedRTSGameLayer!.getName())!.append(" Trying to move away from building")!.toString(), this, "selected: moveAwayFromBuilding");
     
 }
@@ -267,7 +267,7 @@ logUtil!.put(new StringMaker().
     public needToMove(associatedAdvancedRTSGameLayer: PathFindingLayerInterface, unitWaypointBehavior: WaypointBehaviorBase){
     //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
     //var unitWaypointBehavior = unitWaypointBehavior
-logUtil!.put(new StringMaker().
+this.logUtil!.putF(new StringMaker().
                             append(associatedAdvancedRTSGameLayer!.getName())!.append(unitWaypointBehavior!.getMovementLogicAsString())!.toString(), this, "needToMove");
     
 }
@@ -275,7 +275,7 @@ logUtil!.put(new StringMaker().
 
     public setRandomGeographicMapCellHistory(associatedAdvancedRTSGameLayer: PathFindingLayerInterface){
     //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
-logUtil!.put(new StringMaker().
+this.logUtil!.putF(new StringMaker().
                             append(associatedAdvancedRTSGameLayer!.getName())!.append(" pathsList is null")!.toString(), this, "setRandomGeographicMapCellHistory");
     
 }
@@ -289,7 +289,7 @@ logUtil!.put(new StringMaker().
                         if(existingCurrentPathGeographicMapCellPosition == 
                                     null
                                 )
-                        logUtil!.put(new StringMaker().
+                        this.logUtil!.putF(new StringMaker().
                             append(associatedAdvancedRTSGameLayer!.getName())!.append(" currentPathGeographicMapCellPosition: ")!.append(stringUtil!.toString(currentPathGeographicMapCellPosition))!.toString(), this, "setCurrentPathGeographicMapCellPosition");
 
                         
@@ -302,7 +302,7 @@ logUtil!.put(new StringMaker().
     //var nextUnvisitedPathGeographicMapCellPosition = nextUnvisitedPathGeographicMapCellPosition
 
                         if(existingNextUnvisitedPathGeographicMapCellPosition != nextUnvisitedPathGeographicMapCellPosition)
-                        logUtil!.put(new StringMaker().
+                        this.logUtil!.putF(new StringMaker().
                             append(associatedAdvancedRTSGameLayer!.getName())!.append(" nextUnvisitedPathGeographicMapCellPosition: ")!.append(stringUtil!.toString(nextUnvisitedPathGeographicMapCellPosition))!.toString(), this, "setNextUnvisitedPathGeographicMapCellPosition");
 
                         

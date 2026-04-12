@@ -133,6 +133,12 @@ this.setRunning(false);
 this.setRunning(false);
     
 
+    var logUtil: LogUtil = LogUtil.getInstance()!;
+        
+        
+;
+    
+
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         

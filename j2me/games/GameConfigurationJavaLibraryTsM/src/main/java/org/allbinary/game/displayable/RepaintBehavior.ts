@@ -120,6 +120,12 @@ DisplayInfoSingleton.getInstance()!.process();
         
 ;
     
+
+    var logUtil: LogUtil = LogUtil.getInstance()!;
+        
+        
+;
+    
 logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
     
 }

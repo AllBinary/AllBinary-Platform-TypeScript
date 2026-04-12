@@ -101,7 +101,7 @@ export class WebCommandProcessor
         
 ;
     
-logUtil!.put(commonStrings!.EXCEPTION, this, "process", e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, "process", e);
     
 }
 

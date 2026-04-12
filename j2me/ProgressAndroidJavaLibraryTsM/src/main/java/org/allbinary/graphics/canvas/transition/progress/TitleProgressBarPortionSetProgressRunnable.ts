@@ -69,7 +69,7 @@ this.midletActivity!.onSetProgress((this.progressCanvas!.getValue() +this.progre
         
 ;
     
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
     
 }
 

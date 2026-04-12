@@ -52,7 +52,7 @@ export class ContextConfiguration
 public constructor (){
 
             super();
-            logUtil!.put(commonStrings!.START, this, "ContextConfiguration");
+            this.logUtil!.putF(commonStrings!.START, this, "ContextConfiguration");
     
 this.setEmailServerConfigurationInterface(new EmailServerConfiguration() as EmailServerConfigurationInterface);
     
@@ -62,7 +62,7 @@ public constructor (hashMap: HashMap<any, any>){
 
             super();
             var hashMap = hashMap
-logUtil!.put(commonStrings!.START, this, "ContextConfiguration(HashMap)");
+this.logUtil!.putF(commonStrings!.START, this, "ContextConfiguration(HashMap)");
     
 this.setEmailServerConfigurationInterface(new EmailServerConfiguration(hashMap) as EmailServerConfigurationInterface);
     

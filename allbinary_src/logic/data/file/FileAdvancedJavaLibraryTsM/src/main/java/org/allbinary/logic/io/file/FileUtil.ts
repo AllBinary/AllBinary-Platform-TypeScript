@@ -311,7 +311,7 @@ this.directory.create(fixedPath);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(logConfigTypeFactory!.FILE))
                         
                                     {
-                                    logUtil!.put(string, getInstance(), "fixPath");
+                                    this.logUtil!.putF(string, this, "fixPath");
     
 
                                     }
@@ -402,7 +402,7 @@ stringBuffer!.append(file.getPath());
     
 stringBuffer!.append(" to cloud.");
     
-logUtil!.put(stringBuffer!.toString(), getInstance(), "copyToCloud");
+this.logUtil!.putF(stringBuffer!.toString(), getInstance(), "copyToCloud");
     
 
                                     }
@@ -444,7 +444,7 @@ stringBuffer!.append(file.toString());
     
 stringBuffer!.append(" to cloud.");
     
-logUtil!.put(stringBuffer!.toString(), getInstance(), "copyToCloud", e);
+this.logUtil!.put(stringBuffer!.toString(), getInstance(), "copyToCloud", e);
     
 
                                     }
@@ -515,7 +515,7 @@ stringBuffer!.append(file.getPath());
     
 stringBuffer!.append(" to cloud.");
     
-logUtil!.put(stringBuffer!.toString(), getInstance(), "copyToCloud");
+this.logUtil!.putF(stringBuffer!.toString(), getInstance(), "copyToCloud");
     
 
                                     }
@@ -557,7 +557,7 @@ stringBuffer!.append(file.toString());
     
 stringBuffer!.append(" to cloud.");
     
-logUtil!.put(stringBuffer!.toString(), getInstance(), "copyToCloud", e);
+this.logUtil!.put(stringBuffer!.toString(), getInstance(), "copyToCloud", e);
     
 
                                     }
@@ -602,7 +602,7 @@ stringBuffer!.append("Overwriting File: ");
     
 stringBuffer!.append(toFile!.getPath());
     
-logUtil!.put(stringBuffer!.toString(), getInstance(), "copyFile");
+this.logUtil!.putF(stringBuffer!.toString(), getInstance(), "copyFile");
     
 
                                     }
@@ -634,7 +634,7 @@ stringBuffer!.append("Copying File: ");
     
 stringBuffer!.append(toFile!.getPath());
     
-logUtil!.put(stringBuffer!.toString(), getInstance(), "copyFile");
+this.logUtil!.putF(stringBuffer!.toString(), getInstance(), "copyFile");
     
 
                                     }
@@ -674,7 +674,7 @@ stringBuffer!.append(CommonLabels.getInstance()!.COLON_SEP);
     
 stringBuffer!.append(toFile!.getPath());
     
-logUtil!.put(stringBuffer!.toString(), getInstance(), "copyFile");
+this.logUtil!.putF(stringBuffer!.toString(), getInstance(), "copyFile");
     
 
                                     }
@@ -747,7 +747,7 @@ stringBuffer!.append(" to: ");
     
 stringBuffer!.append(toFile!.getPath());
     
-logUtil!.put(stringBuffer!.toString(), getInstance(), "copyFile");
+this.logUtil!.putF(stringBuffer!.toString(), getInstance(), "copyFile");
     
 
                                     }
@@ -803,7 +803,7 @@ stringBuffer!.append(" to: ");
     
 stringBuffer!.append(toFile!.toString());
     
-logUtil!.put(stringBuffer!.toString(), getInstance(), "copyFile", e);
+this.logUtil!.put(stringBuffer!.toString(), getInstance(), "copyFile", e);
     
 
                                     }
@@ -910,7 +910,7 @@ stringBuffer!.appendint(end);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(logConfigTypeFactory!.FILE))
                         
                                     {
-                                    logUtil!.put(stringBuffer!.toString(), getInstance(), "copySomeFilesToDirectory()");
+                                    this.logUtil!.putF(stringBuffer!.toString(), getInstance(), "copySomeFilesToDirectory()");
     
 
                                     }
@@ -1011,7 +1011,7 @@ stringBuffer!.append(" to: ");
     
 stringBuffer!.append(to.getPath());
     
-logUtil!.put(stringBuffer!.toString(), getInstance(), "copyDirectory");
+this.logUtil!.putF(stringBuffer!.toString(), getInstance(), "copyDirectory");
     
 
                                     }
@@ -1076,7 +1076,7 @@ stringBuffer!.append(" to: ");
     
 stringBuffer!.append(to.getPath());
     
-logUtil!.put(stringBuffer!.toString(), getInstance(), "copyDirectory");
+this.logUtil!.putF(stringBuffer!.toString(), getInstance(), "copyDirectory");
     
 
                                     }
@@ -1147,7 +1147,7 @@ stringBuffer!.append(" to: ");
     
 stringBuffer!.append(to.toString());
     
-logUtil!.put(stringBuffer!.toString(), getInstance(), "copyDirectory", e);
+this.logUtil!.put(stringBuffer!.toString(), getInstance(), "copyDirectory", e);
     
 
                                     }
@@ -1168,6 +1168,12 @@ logUtil!.put(stringBuffer!.toString(), getInstance(), "copyDirectory", e);
 var fromAbPath = fromAbPath
 var to = to
 
+    var COPY: string = "copy";
+        
+        
+;
+    
+
         try {
             
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(logConfigTypeFactory!.FILE))
@@ -1187,7 +1193,7 @@ stringBuffer!.append(" to: ");
     
 stringBuffer!.append(to.toString());
     
-logUtil!.put(stringBuffer!.toString(), getInstance(), "copy");
+this.logUtil!.putF(stringBuffer!.toString(), getInstance(), COPY);
     
 
                                     }
@@ -1268,7 +1274,7 @@ stringBuffer!.append(" to: ");
     
 stringBuffer!.append(toLocationFile!.getPath());
     
-logUtil!.put(stringBuffer!.toString(), getInstance(), "copy");
+this.logUtil!.putF(stringBuffer!.toString(), getInstance(), COPY);
     
 
                                     }
@@ -1299,7 +1305,7 @@ stringBuffer!.append(" to: ");
     
 stringBuffer!.append(toLocationFile!.getPath());
     
-logUtil!.put(stringBuffer!.toString(), getInstance(), "copy");
+this.logUtil!.putF(stringBuffer!.toString(), getInstance(), COPY);
     
 
                                     }
@@ -1322,7 +1328,7 @@ logUtil!.put(stringBuffer!.toString(), getInstance(), "copy");
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(logConfigTypeFactory!.FILE))
                         
                                     {
-                                    logUtil!.put("Copying subdirectories", getInstance(), "copy");
+                                    this.logUtil!.putF("Copying subdirectories", getInstance(), COPY);
     
 
                                     }
@@ -1387,7 +1393,7 @@ this.copyFile(file, aFile);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(logConfigTypeFactory!.FILE))
                         
                                     {
-                                    logUtil!.put("Copied subdirectories", getInstance(), "copy");
+                                    this.logUtil!.putF("Copied subdirectories", getInstance(), COPY);
     
 
                                     }
@@ -1400,7 +1406,7 @@ this.copyFile(file, aFile);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(logConfigTypeFactory!.FILE))
                         
                                     {
-                                    logUtil!.put("Copyinhg directory", getInstance(), "copy");
+                                    this.logUtil!.putF("Copyinhg directory", getInstance(), COPY);
     
 
                                     }
@@ -1411,7 +1417,7 @@ copyDirectory(fromLocationFile, toLocationFile);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(logConfigTypeFactory!.FILE))
                         
                                     {
-                                    logUtil!.put("Copied directory", getInstance(), "copy");
+                                    this.logUtil!.putF("Copied directory", getInstance(), COPY);
     
 
                                     }
@@ -1450,7 +1456,7 @@ stringBuffer!.append(" to: ");
     
 stringBuffer!.append(to.toString());
     
-logUtil!.put(stringBuffer!.toString(), getInstance(), "copy", e);
+this.logUtil!.put(stringBuffer!.toString(), getInstance(), COPY, e);
     
 
                                     }
@@ -1525,7 +1531,7 @@ logUtil!.put(stringBuffer!.toString(), getInstance(), "copy", e);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(logConfigTypeFactory!.IDLOGGING))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "SmallInsert", e);
+                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "SmallInsert", e);
     
 
                                     }

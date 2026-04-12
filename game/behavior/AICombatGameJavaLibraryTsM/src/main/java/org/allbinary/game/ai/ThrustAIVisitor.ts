@@ -72,7 +72,7 @@ basicAI!.processAI(Canvas.UP);
         
 ;
     
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.VISIT, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.VISIT, e);
     
 }
 

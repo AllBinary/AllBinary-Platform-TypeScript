@@ -467,7 +467,7 @@ index < numberOfNodes; index++)
         
 ;
     
-logUtil!.put("NodeName: " +node.getNodeName(), this, "searchNodeList");
+this.logUtil!.putF("NodeName: " +node.getNodeName(), this, "searchNodeList");
     
 
                         if(node.getNodeName()!.compareTo(nodeName) == 0)
@@ -520,7 +520,7 @@ index < numberOfNodes; index++)
         
 ;
     
-logUtil!.put("NodeName: " +node.getNodeName(), this, "searchNodeList");
+this.logUtil!.putF("NodeName: " +node.getNodeName(), this, "searchNodeList");
     
 
                         if(node.getNodeName()!.compareTo(nodeName) == 0)

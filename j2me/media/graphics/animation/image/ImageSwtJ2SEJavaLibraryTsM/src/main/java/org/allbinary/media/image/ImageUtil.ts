@@ -107,13 +107,13 @@ private constructor (){
             super();
             
         try {
-            logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
+            this.logUtil!.putF(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
     
 
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e);
     
 }
 
@@ -421,7 +421,7 @@ ratioY= heightRatio;
 
                                     }
                                 
-logUtil!.put(new StringMaker().
+this.logUtil!.putF(new StringMaker().
                             appendfloat(width)!.append(this.commonSeps!.FORWARD_SLASH)!.appendfloat(height)!.append(this.commonSeps!.COLON)!.appendint(newWidth)!.append(this.commonSeps!.FORWARD_SLASH)!.appendint(newHeight)!.append(this.commonSeps!.COLON)!.appendfloat(widthRatio)!.append(this.commonSeps!.FORWARD_SLASH)!.appendfloat(heightRatio)!.toString(), this, CREATE_BUFFERED_IMAGE);
     
 
@@ -444,7 +444,7 @@ logUtil!.put(new StringMaker().
     
 dy= (newHeight -height) /2;
     
-logUtil!.put(new StringMaker().
+this.logUtil!.putF(new StringMaker().
                             append("Translate dx: ")!.appendfloat(dx)!.append(" dy: ")!.appendfloat(dy)!.toString(), this, CREATE_BUFFERED_IMAGE);
     
 

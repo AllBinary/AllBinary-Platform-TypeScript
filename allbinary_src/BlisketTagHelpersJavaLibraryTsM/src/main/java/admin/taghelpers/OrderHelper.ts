@@ -237,7 +237,7 @@ stringBuffer!.append(" to: ");
     
 stringBuffer!.append(orderInterface!.getPaymentMethod());
     
-logUtil!.put(stringBuffer!.toString(), this, "setPaymentGateway()");
+this.logUtil!.putF(stringBuffer!.toString(), this, "setPaymentGateway()");
     
 
                                     }
@@ -295,7 +295,7 @@ stringBuffer!.append(" Exception Getting");
     
 }
 
-logUtil!.put(stringBuffer!.toString(), this, "setPaymentGateway()", e);
+this.logUtil!.put(stringBuffer!.toString(), this, "setPaymentGateway()", e);
     
 
                                     }
@@ -332,7 +332,7 @@ order.setStoreName(this.storeFrontInterface!.getName());
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put("Successfully Processed Order: " +result, this, "processOrder()");
+                                    this.logUtil!.putF("Successfully Processed Order: " +result, this, "processOrder()");
     
 
                                     }
@@ -377,7 +377,7 @@ stringBuffer!.append(" Exception Getting Id");
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e);
+                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e);
     
 
                                     }

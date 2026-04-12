@@ -98,7 +98,7 @@ export class LayerManagerLogging extends LayerManagerLoggingBase {
     //var layerInterface = layerInterface
 stringBuilder!.delete(0, stringBuilder!.length());
     
-logUtil!.put(stringBuilder!.appendint(this.hashCode())!.append(APPEND_)!.append(layerInterface!.getName())!.toString(), this, APPEND);
+this.logUtil!.putF(stringBuilder!.appendint(this.hashCode())!.append(APPEND_)!.append(layerInterface!.getName())!.toString(), this, APPEND);
     
 }
 
@@ -108,7 +108,7 @@ logUtil!.put(stringBuilder!.appendint(this.hashCode())!.append(APPEND_)!.append(
     //var index = index
 stringBuilder!.delete(0, stringBuilder!.length());
     
-logUtil!.put(stringBuilder!.appendint(this.hashCode())!.append(APPEND_)!.append(layerInterface!.getName())!.append(_AT_)!.appendint(index)!.toString(), this, APPEND);
+this.logUtil!.putF(stringBuilder!.appendint(this.hashCode())!.append(APPEND_)!.append(layerInterface!.getName())!.append(_AT_)!.appendint(index)!.toString(), this, APPEND);
     
 }
 
@@ -123,7 +123,7 @@ logUtil!.put(stringBuilder!.appendint(this.hashCode())!.append(APPEND_)!.append(
                                     {
                                     stringBuilder!.delete(0, stringBuilder!.length());
     
-logUtil!.put(stringBuilder!.appendint(this.hashCode())!.append(ATTEMPT_REMOVE_)!.append(StringUtil.getInstance()!.toString(layerInterface))!.toString(), this, REMOVE);
+this.logUtil!.putF(stringBuilder!.appendint(this.hashCode())!.append(ATTEMPT_REMOVE_)!.append(StringUtil.getInstance()!.toString(layerInterface))!.toString(), this, REMOVE);
     
 
                                     }
@@ -131,7 +131,7 @@ logUtil!.put(stringBuilder!.appendint(this.hashCode())!.append(ATTEMPT_REMOVE_)!
                         else {
                             stringBuilder!.delete(0, stringBuilder!.length());
     
-logUtil!.put(stringBuilder!.appendint(this.hashCode())!.append(ATTEMPT_REMOVE_)!.append(layerInterface!.getName())!.toString(), this, REMOVE);
+this.logUtil!.putF(stringBuilder!.appendint(this.hashCode())!.append(ATTEMPT_REMOVE_)!.append(layerInterface!.getName())!.toString(), this, REMOVE);
     
 
                         }
@@ -151,7 +151,7 @@ logUtil!.put(stringBuilder!.appendint(this.hashCode())!.append(ATTEMPT_REMOVE_)!
                                     {
                                     stringBuilder!.delete(0, stringBuilder!.length());
     
-logUtil!.put(stringBuilder!.appendint(this.hashCode())!.append(REMOVE_)!.append(StringUtil.getInstance()!.toString(layerInterface))!.toString(), this, REMOVE);
+this.logUtil!.putF(stringBuilder!.appendint(this.hashCode())!.append(REMOVE_)!.append(StringUtil.getInstance()!.toString(layerInterface))!.toString(), this, REMOVE);
     
 
                                     }
@@ -166,7 +166,7 @@ logUtil!.put(stringBuilder!.appendint(this.hashCode())!.append(REMOVE_)!.append(
                                     {
                                     stringBuilder!.delete(0, stringBuilder!.length());
     
-logUtil!.put(stringBuilder!.appendint(this.hashCode())!.append(REMOVE_)!.append(layerInterface!.getName())!.toString(), this, REMOVE);
+this.logUtil!.putF(stringBuilder!.appendint(this.hashCode())!.append(REMOVE_)!.append(layerInterface!.getName())!.toString(), this, REMOVE);
     
 
                                     }
@@ -177,7 +177,7 @@ logUtil!.put(stringBuilder!.appendint(this.hashCode())!.append(REMOVE_)!.append(
                         else {
                             stringBuilder!.delete(0, stringBuilder!.length());
     
-logUtil!.put(stringBuilder!.appendint(this.hashCode())!.append(DID_NOT_REMOVE)!.append(layerInterface!.getName())!.toString(), this, REMOVE);
+this.logUtil!.putF(stringBuilder!.appendint(this.hashCode())!.append(DID_NOT_REMOVE)!.append(layerInterface!.getName())!.toString(), this, REMOVE);
     
 LayerManagerLogging.removeFailed= true;
     
@@ -229,7 +229,7 @@ stringBuilder!.append(allBinaryLayer!.getName())!.append(commonSeps!.COMMA);
     
 }
 
-logUtil!.put(stringBuilder!.toString(), this, REMOVE);
+this.logUtil!.putF(stringBuilder!.toString(), this, REMOVE);
     
 }
 
@@ -237,7 +237,7 @@ logUtil!.put(stringBuilder!.toString(), this, REMOVE);
     public clear(){
 stringBuilder!.delete(0, stringBuilder!.length());
     
-logUtil!.put(stringBuilder!.appendint(this.hashCode())!.append(CLEAR)!.toString(), this, CLEAR);
+this.logUtil!.putF(stringBuilder!.appendint(this.hashCode())!.append(CLEAR)!.toString(), this, CLEAR);
     
 }
 

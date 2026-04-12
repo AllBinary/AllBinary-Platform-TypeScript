@@ -204,7 +204,7 @@ var totalPaths = totalPaths
         
 ;
     
-logUtil!.put(commonStrings!.EXCEPTION, this, "search", e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, "search", e);
     
 
 

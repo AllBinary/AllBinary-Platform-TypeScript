@@ -151,7 +151,7 @@ QuoteRequestEntityFactory.getInstance()!.getQuoteRequestEntityInstance()!.insert
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put(success, this, "add()");
+                                    this.logUtil!.putF(success, this, "add()");
     
 
                                     }
@@ -176,7 +176,7 @@ QuoteRequestEntityFactory.getInstance()!.getQuoteRequestEntityInstance()!.insert
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "add()", e);
+                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "add()", e);
     
 
                                     }
@@ -213,7 +213,7 @@ QuoteRequestEntityFactory.getInstance()!.getQuoteRequestEntityInstance()!.update
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put(success, this, "update()");
+                                    this.logUtil!.putF(success, this, "update()");
     
 
                                     }
@@ -238,7 +238,7 @@ QuoteRequestEntityFactory.getInstance()!.getQuoteRequestEntityInstance()!.update
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "update()", e);
+                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "update()", e);
     
 
                                     }

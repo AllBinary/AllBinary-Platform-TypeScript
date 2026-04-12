@@ -139,7 +139,7 @@ this.running= running;
     public run(){
 
         try {
-            logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.RUN);
+            this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.RUN);
     
 this.setRunning(true);
     
@@ -286,15 +286,15 @@ this.index++;
     
 this.getMotionRectanglesVector()!.remove(motionRectangles);
     
-logUtil!.put(CommonLabels.getInstance()!.ELAPSED +timeHelper!.getElapsed(), this, this.commonStrings!.RUN);
+this.logUtil!.putF(CommonLabels.getInstance()!.ELAPSED +timeHelper!.getElapsed(), this, this.commonStrings!.RUN);
     
-logUtil!.put(this.commonStrings!.END, this, this.commonStrings!.RUN);
+this.logUtil!.putF(this.commonStrings!.END, this, this.commonStrings!.RUN);
     
 
                 //: 
 } catch(e) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e);
     
 }
 

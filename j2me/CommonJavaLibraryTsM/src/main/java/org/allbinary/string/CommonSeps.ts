@@ -18,6 +18,9 @@
 
 
 
+import { StringMaker } from "../../../org/allbinary/logic/string/StringMaker.js";
+
+    
 
 export class CommonSeps
             extends Object
@@ -70,11 +73,13 @@ export class CommonSeps
         
         
 
-    public readonly COLON_SEP: string = this.COLON +this.SPACE;
+    public readonly COLON_SEP: string = new StringMaker().
+                            append(this.COLON)!.append(this.SPACE)!.toString()!;
         
         
 
-    public readonly COMMA_SEP: string = this.COMMA +this.SPACE;
+    public readonly COMMA_SEP: string = new StringMaker().
+                            append(this.COMMA)!.append(this.SPACE)!.toString()!;
         
         
 

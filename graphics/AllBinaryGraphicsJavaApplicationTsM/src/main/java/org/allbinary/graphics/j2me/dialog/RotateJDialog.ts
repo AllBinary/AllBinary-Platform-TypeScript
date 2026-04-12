@@ -186,7 +186,7 @@ this.setVisible(false);
         
 ;
     
-logUtil!.put(commonStrings!.EXCEPTION, this, "jButton1ActionPerformed");
+this.logUtil!.putF(commonStrings!.EXCEPTION, this, "jButton1ActionPerformed");
     
 }
 

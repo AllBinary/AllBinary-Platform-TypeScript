@@ -130,7 +130,7 @@ var context = context
                                     }
                                 
                         else {
-                            logUtil!.put("No ServiceReference: " +InputAutomationConfigurationModuleChangeListener::class.toString()!, this, "addModules");
+                            this.logUtil!.putF("No ServiceReference: " +InputAutomationConfigurationModuleChangeListener::class.toString()!, this, "addModules");
     
 
 
@@ -148,7 +148,7 @@ var context = context
 var context = context
 
         try {
-            logUtil!.put(this.commonStrings!.START, this, "addModules");
+            this.logUtil!.putF(this.commonStrings!.START, this, "addModules");
     
 
     var inputAutomationConfigurationModuleChangeListener: InputAutomationConfigurationModuleChangeListener = this.getInputAutomationConfigurationModuleChangeListener(context)!;
@@ -189,7 +189,7 @@ inputAutomationConfigurationModuleChangeListener!.onAdd(inputAutomationConfigura
                 //: 
 } catch(e) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, this, "addModules");
+this.logUtil!.putF(this.commonStrings!.EXCEPTION, this, "addModules");
     
 }
 
@@ -209,7 +209,7 @@ OSGIActivatorUtil.registerAsService(bundleContext, getServiceFactory(), InputAut
 var context = context
 
         try {
-            logUtil!.put(this.commonStrings!.START, this, "removeModules");
+            this.logUtil!.putF(this.commonStrings!.START, this, "removeModules");
     
 
     var inputAutomationConfigurationModuleChangeListener: InputAutomationConfigurationModuleChangeListener = this.getInputAutomationConfigurationModuleChangeListener(context)!;
@@ -250,7 +250,7 @@ inputAutomationConfigurationModuleChangeListener!.onRemove(inputAutomationConfig
                 //: 
 } catch(e) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, this, "removeModules");
+this.logUtil!.putF(this.commonStrings!.EXCEPTION, this, "removeModules");
     
 }
 
@@ -261,7 +261,7 @@ logUtil!.put(this.commonStrings!.EXCEPTION, this, "removeModules");
             
     public start(context: BundleContext){
 var context = context
-logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.START);
+this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.START);
     
 this.addModules(context);
     
@@ -274,7 +274,7 @@ this.registerAsService(context);
             
     public stop(context: BundleContext){
 var context = context
-logUtil!.put(this.commonStrings!.START, this, "stop");
+this.logUtil!.putF(this.commonStrings!.START, this, "stop");
     
 this.removeModules(context);
     

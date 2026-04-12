@@ -85,7 +85,7 @@ private constructor (){
         
 ;
     
-logUtil!.put("Creating View: " +transformInfoInterface!.getName(), this, commonStrings!.GET_INSTANCE);
+this.logUtil!.putF("Creating View: " +transformInfoInterface!.getName(), this, commonStrings!.GET_INSTANCE);
     
 
                                     }
@@ -197,7 +197,7 @@ stringBuffer!.append(transformInfoInterface!.getObjectFile());
         
 ;
     
-logUtil!.put(error, this, commonStrings!.GET_INSTANCE, e);
+this.logUtil!.put(error, this, commonStrings!.GET_INSTANCE, e);
     
 
                                     }
@@ -238,7 +238,7 @@ logUtil!.put(error, this, commonStrings!.GET_INSTANCE, e);
         
 ;
     
-logUtil!.put(error, this, commonStrings!.GET_INSTANCE, e);
+this.logUtil!.put(error, this, commonStrings!.GET_INSTANCE, e);
     
 
                                     }

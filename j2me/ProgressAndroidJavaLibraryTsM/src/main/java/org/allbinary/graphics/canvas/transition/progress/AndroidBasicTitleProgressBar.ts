@@ -212,7 +212,7 @@ this.image= ImageCacheFactory.getInstance()!.get(RESOURCE);
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e);
     
 }
 
@@ -248,7 +248,7 @@ this.updateCurrent();
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e);
     
 }
 
@@ -322,7 +322,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e);
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.UPDATE, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.UPDATE, e);
     
 }
 
@@ -348,7 +348,7 @@ this.updateCurrent();
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION_LABEL +ExceptionUtil.getInstance()!.getStackTrace(e), this, this.canvasStrings!.ON_DISPLAY_CHANGE_EVENT);
+this.logUtil!.putF(commonStrings!.EXCEPTION_LABEL +ExceptionUtil.getInstance()!.getStackTrace(e), this, this.canvasStrings!.ON_DISPLAY_CHANGE_EVENT);
     
 this.animation= NullAnimationFactory.getFactoryInstance()!.getInstance(0);
     
@@ -397,7 +397,7 @@ this.animation= NullAnimationFactory.getFactoryInstance()!.getInstance(0);
                 //: 
 } catch(e) 
             {
-logUtil!.put("IllegalArgumentException " +ExceptionUtil.getInstance()!.getStackTrace(e), this, "loadProgressImages");
+this.logUtil!.putF("IllegalArgumentException " +ExceptionUtil.getInstance()!.getStackTrace(e), this, "loadProgressImages");
     
 this.animation= NullAnimationFactory.getFactoryInstance()!.getInstance(0);
     
@@ -406,7 +406,7 @@ this.animation= NullAnimationFactory.getFactoryInstance()!.getInstance(0);
                 //: 
  catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION_LABEL +ExceptionUtil.getInstance()!.getStackTrace(e), this, "loadProgressImages");
+this.logUtil!.putF(commonStrings!.EXCEPTION_LABEL +ExceptionUtil.getInstance()!.getStackTrace(e), this, "loadProgressImages");
     
 this.animation= NullAnimationFactory.getFactoryInstance()!.getInstance(0);
     
@@ -445,7 +445,7 @@ this.animation= NullAnimationFactory.getFactoryInstance()!.getInstance(0);
     public start(){
 
         try {
-            logUtil!.put(commonStrings!.START, this, commonStrings!.START_METHOD_NAME);
+            this.logUtil!.putF(commonStrings!.START, this, commonStrings!.START_METHOD_NAME);
     
 super.start();
     
@@ -455,7 +455,7 @@ this.midletActivity!.runOnUiThread(showTitleProgressBarRunnable);
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.START_METHOD_NAME, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.START_METHOD_NAME, e);
     
 }
 
@@ -465,7 +465,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.START_METHOD_NAME, e
     public end(){
 
         try {
-            logUtil!.put(commonStrings!.START, this, commonStrings!.END_METHOD_NAME);
+            this.logUtil!.putF(commonStrings!.START, this, commonStrings!.END_METHOD_NAME);
     
 this.midletActivity!.runOnUiThread(dismissTitleProgressBarRunnable);
     
@@ -475,7 +475,7 @@ super.end();
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.END_METHOD_NAME, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.END_METHOD_NAME, e);
     
 }
 
@@ -505,7 +505,7 @@ super.addEarlyPortion(value, text, index);
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, ADD_PORTION, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, ADD_PORTION, e);
     
 }
 
@@ -528,7 +528,7 @@ this.midletActivity!.runOnUiThread(titleProgressDialogPortionSetProgressRunnable
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, ADD_PORTION, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, ADD_PORTION, e);
     
 }
 
@@ -550,7 +550,7 @@ this.midletActivity!.runOnUiThread(titleProgressDialogPortionSetProgressRunnable
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, ADD_PORTION, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, ADD_PORTION, e);
     
 }
 
@@ -569,7 +569,7 @@ this.midletActivity!.runOnUiThread(titleProgressDialogSetProgressRunnable);
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "setValue", e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, "setValue", e);
     
 }
 
@@ -649,7 +649,7 @@ var lastHeight = lastHeight
             
     public initOpenGL(graphics: Graphics){
 var graphics = graphics
-logUtil!.put(commonStrings!.START, this, commonStrings!.INIT);
+this.logUtil!.putF(commonStrings!.START, this, commonStrings!.INIT);
     
 this.image= GameFeatureImageCacheFactory.getInstance()!.get(RESOURCE);
     
@@ -696,7 +696,7 @@ this.updateCurrent();
             
     public update(graphics: Graphics){
 var graphics = graphics
-logUtil!.put(commonStrings!.START, this, commonStrings!.UPDATE);
+this.logUtil!.putF(commonStrings!.START, this, commonStrings!.UPDATE);
     
 this.initOpenGL(graphics);
     
@@ -785,7 +785,7 @@ super.paint2(graphics);
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, canvasStrings!.PAINT, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, canvasStrings!.PAINT, e);
     
 }
 

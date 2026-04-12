@@ -90,7 +90,7 @@ var httpServletRequest = httpServletRequest
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTP))
                         
                                     {
-                                    logUtil!.put("Request Type: " +acceptable, this, commonStrings!.GET);
+                                    this.logUtil!.putF("Request Type: " +acceptable, this, commonStrings!.GET);
     
 
                                     }
@@ -135,7 +135,7 @@ index < size; index++)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTP))
                         
                                     {
-                                    logUtil!.put("Response Type: " +result, this, commonStrings!.GET);
+                                    this.logUtil!.putF("Response Type: " +result, this, commonStrings!.GET);
     
 
                                     }
@@ -154,7 +154,7 @@ index < size; index++)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET, e);
+                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET, e);
     
 
                                     }

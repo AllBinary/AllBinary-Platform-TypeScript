@@ -317,7 +317,7 @@ this.buildFromMotionInput(rtsPlayerLayerInterface, layerManager, item, itemIndex
         
 ;
     
-logUtil!.put(commonStrings!.START, this, "buildFromMotionInput");
+this.logUtil!.putF(commonStrings!.START, this, "buildFromMotionInput");
     
 
                         if(layerManager == 
@@ -504,7 +504,7 @@ this.attemptBuild(rtsPlayerLayerInterface, layerManager, rtsLayer, itemIndex);
     //var layerManager = layerManager
     //var layerInterface = layerInterface
     //var itemIndex = itemIndex
-logUtil!.put(new StringMaker().
+this.logUtil!.putF(new StringMaker().
                             append("Layer: ")!.append(StringUtil.getInstance()!.toString(layerInterface))!.toString(), this, "attemptBuild");
     
 
@@ -630,7 +630,7 @@ stringBuffer!.append(" with ");
     
 stringBuffer!.appendint(capital.getTotalMoney());
     
-logUtil!.put(stringBuffer!.toString(), this, "attemptBuild");
+this.logUtil!.putF(stringBuffer!.toString(), this, "attemptBuild");
     
 
                         if(cost <= capital.getTotalMoney())
@@ -885,7 +885,7 @@ stringBuffer!.append(" surroundList: ");
     
 stringBuffer!.append(StringUtil.getInstance()!.toString(surroundList));
     
-logUtil!.put(stringBuffer!.toString(), this, "isSurroundingCellsOffMap");
+this.logUtil!.putF(stringBuffer!.toString(), this, "isSurroundingCellsOffMap");
     
 
     var isSurroundOffMap: boolean = false;

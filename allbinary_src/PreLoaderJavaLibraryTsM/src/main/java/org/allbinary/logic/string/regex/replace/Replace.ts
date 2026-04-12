@@ -145,15 +145,6 @@ this.hashMap!.put(
         
                                                 ]);
     
-
-                        if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.REPLACE))
-                        
-                                    {
-                                    logUtil!.put(REPLACERS_ +this.hashMap!.toString(), this, commonStrings!.CONSTRUCTOR);
-    
-
-                                    }
-                                
 }
 
 public constructor (keys: string[], values: string[]){
@@ -165,15 +156,6 @@ hashMap= new HashMap<any, any>();
     
 this.hashMap!.put(keys, values);
     
-
-                        if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.REPLACE))
-                        
-                                    {
-                                    logUtil!.put(REPLACERS_ +this.hashMap!.toString(), this, commonStrings!.CONSTRUCTOR);
-    
-
-                                    }
-                                
 }
 
 public constructor (hashMap: HashMap<any, any>){
@@ -182,15 +164,6 @@ public constructor (hashMap: HashMap<any, any>){
             var hashMap = hashMap
 this.hashMap= hashMap;
     
-
-                        if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.REPLACE_INFO))
-                        
-                                    {
-                                    logUtil!.put(REPLACERS_ +this.hashMap!.toString(), this, commonStrings!.CONSTRUCTOR);
-    
-
-                                    }
-                                
 }
 
 
@@ -210,15 +183,6 @@ var replace = replace
     public upTo(replace: string, total: number): string{
 var replace = replace
 var total = total
-
-                        if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.REPLACE))
-                        
-                                    {
-                                    logUtil!.put(REPLACERS_ +this.hashMap!.toString(), this, ALL);
-    
-
-                                    }
-                                
 
     var newStringBuffer: StringMaker = new StringMaker();
         
@@ -393,11 +357,18 @@ totalNumberOfReplaces++;
 }
 
 
+                        if(totalNumberOfReplaces > 0)
+                        
+                                    {
+                                    
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.REPLACE))
                         
                                     {
-                                    logUtil!.put("Total Number Of Replaces: " +totalNumberOfReplaces, this, ALL);
+                                    this.logUtil!.putF("Total Number Of Replaces: " +totalNumberOfReplaces, this, ALL);
     
+
+                                    }
+                                
 
                                     }
                                 
@@ -412,15 +383,6 @@ totalNumberOfReplaces++;
 
     public line(replace: string): string{
 var replace = replace
-
-                        if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.REPLACE))
-                        
-                                    {
-                                    logUtil!.put(REPLACERS_ +this.hashMap!.toString(), this, ALL);
-    
-
-                                    }
-                                
 
     var newStringBuffer: StringMaker = new StringMaker();
         
@@ -540,7 +502,7 @@ totalNumberOfReplaces++;
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.REPLACE))
                         
                                     {
-                                    logUtil!.put("Total Number Of Replaces: " +totalNumberOfReplaces, this, ALL);
+                                    this.logUtil!.putF("Total Number Of Replaces: " +totalNumberOfReplaces, this, ALL);
     
 
                                     }

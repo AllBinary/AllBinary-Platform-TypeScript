@@ -86,7 +86,7 @@ private constructor (){
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Generating View: " +transformInfoInterface!.getName(), this, "generate()");
+                                    this.logUtil!.putF("Generating View: " +transformInfoInterface!.getName(), this, "generate()");
     
 
                                     }
@@ -143,7 +143,7 @@ new StoreFileGenerator(componentInterface!.getTransformInfoInterface()).
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put("Failed to generate a view", this, "generate()", e);
+                                    this.logUtil!.put("Failed to generate a view", this, "generate()", e);
     
 
                                     }

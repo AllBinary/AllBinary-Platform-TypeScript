@@ -349,7 +349,7 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, name, value));
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "toXmlNode()", e);
+                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "toXmlNode()", e);
     
 
                                     }
@@ -382,7 +382,7 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, name, value));
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "toXmlDoc()", e);
+                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "toXmlDoc()", e);
     
 
                                     }
@@ -432,7 +432,7 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, name, value));
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put("Failed to validate", this, commonStrings!.IS_VALID, e);
+                                    this.logUtil!.put("Failed to validate", this, commonStrings!.IS_VALID, e);
     
 
                                     }
@@ -480,7 +480,7 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, name, value));
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e);
+                                    this.logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e);
     
 
                                     }

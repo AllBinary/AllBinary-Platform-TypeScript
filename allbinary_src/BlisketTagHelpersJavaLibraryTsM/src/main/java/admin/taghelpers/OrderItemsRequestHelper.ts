@@ -102,7 +102,7 @@ OrderItemsEntityFactory.getInstance()!.setStatus(id, groupId, newStatus);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put(success, this, "setOrderStatus(newStatus)");
+                                    this.logUtil!.putF(success, this, "setOrderStatus(newStatus)");
     
 
                                     }
@@ -127,7 +127,7 @@ OrderItemsEntityFactory.getInstance()!.setStatus(id, groupId, newStatus);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "setOrderStatus(newStatus)", e);
+                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "setOrderStatus(newStatus)", e);
     
 
                                     }
@@ -158,7 +158,7 @@ OrderItemsEntityFactory.getInstance()!.setStatus(id, groupId, this.status);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put(success, this, "setOrderStatus(newStatus)");
+                                    this.logUtil!.putF(success, this, "setOrderStatus(newStatus)");
     
 
                                     }
@@ -183,7 +183,7 @@ OrderItemsEntityFactory.getInstance()!.setStatus(id, groupId, this.status);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "setOrderStatus(newStatus)", e);
+                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "setOrderStatus(newStatus)", e);
     
 
                                     }

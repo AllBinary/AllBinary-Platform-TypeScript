@@ -121,7 +121,7 @@ this.robot.mouseMove(point.x +x, point.y +y);
         
 ;
     
-logUtil!.put(message, this, "moveMouseToTarget");
+this.logUtil!.putF(message, this, "moveMouseToTarget");
     
 }
 
@@ -145,7 +145,7 @@ this.robot.mouseMove(x, y);
         
 ;
     
-logUtil!.put(message, this, "moveMouse");
+this.logUtil!.putF(message, this, "moveMouse");
     
 }
 

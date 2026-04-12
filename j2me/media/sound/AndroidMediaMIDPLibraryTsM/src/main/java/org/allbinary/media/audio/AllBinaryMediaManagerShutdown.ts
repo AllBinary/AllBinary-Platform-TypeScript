@@ -41,7 +41,7 @@ var soundsFactoryInterface = soundsFactoryInterface
         
 ;
     
-logUtil!.put("No Media Shutdown for Android Process", instance, "shutdown");
+logUtil!.putF("No Media Shutdown for Android Process", instance, "shutdown");
     
 }
 

@@ -120,7 +120,7 @@ this.running= running;
     public run(){
 
         try {
-            logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.RUN);
+            this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.RUN);
     
 this.setRunning(true);
     
@@ -148,7 +148,7 @@ timeHelper!.setStartTime();
         
 ;
     
-logUtil!.put(imageComparisonInfo!.toString(), this, this.commonStrings!.RUN);
+this.logUtil!.putF(imageComparisonInfo!.toString(), this, this.commonStrings!.RUN);
     
 
     var allMotionRectangles: AllMotionRectangles = new AllMotionRectangles(imageComparisonInfo);
@@ -182,17 +182,17 @@ this.imageComparisonInfoVector!.remove(imageComparisonResultsEvent);
     
 this.index++;
     
-logUtil!.put(CommonLabels.getInstance()!.ELAPSED +timeHelper!.getElapsed(), this, this.commonStrings!.RUN);
+this.logUtil!.putF(CommonLabels.getInstance()!.ELAPSED +timeHelper!.getElapsed(), this, this.commonStrings!.RUN);
     
 this.setRunning(false);
     
-logUtil!.put(this.commonStrings!.END, this, this.commonStrings!.RUN);
+this.logUtil!.putF(this.commonStrings!.END, this, this.commonStrings!.RUN);
     
 
                 //: 
 } catch(e) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e);
     
 }
 

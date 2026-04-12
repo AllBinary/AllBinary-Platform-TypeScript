@@ -57,7 +57,7 @@ var userEmailInfoEvent = userEmailInfoEvent
         
 ;
     
-logUtil!.put(message, this, "onEmailSendRequest");
+this.logUtil!.putF(message, this, "onEmailSendRequest");
     
 
                                     }

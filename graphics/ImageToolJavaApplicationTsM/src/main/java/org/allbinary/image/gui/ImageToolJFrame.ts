@@ -464,7 +464,7 @@ imageProcessorInputCompositeInterface= imageUnifierJPanel;
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "createStripImageJMenuItemActionPerformed", e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, "createStripImageJMenuItemActionPerformed", e);
     
 }
 
@@ -475,7 +475,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "createStripImageJMenuItemActionPer
 var evt = evt
 
         try {
-            logUtil!.put("Starting", this, "okJButtonActionPerformed");
+            this.logUtil!.putF("Starting", this, "okJButtonActionPerformed");
     
 
     var imageAnalysisResultsArray: ImageAnalysisResults[] = ImageAnalysis.getInstance()!.process(imageProcessorInput!.getBufferedImageArray(), this.getColorRangeInterface())!;
@@ -499,7 +499,7 @@ imageProcessorInputCompositeInterface=
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "okJButtonActionPerformed", e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, "okJButtonActionPerformed", e);
     
 }
 
@@ -515,7 +515,7 @@ var evt = evt
 var evt = evt
 
         try {
-            logUtil!.put("Starting", this, "openImageJMenuItemActionPerformed");
+            this.logUtil!.putF("Starting", this, "openImageJMenuItemActionPerformed");
     
 fileJDialog!.setVisible(true);
     
@@ -523,7 +523,7 @@ fileJDialog!.setVisible(true);
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "openImageJMenuItemActionPerformed", e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, "openImageJMenuItemActionPerformed", e);
     
 }
 
@@ -534,7 +534,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "openImageJMenuItemActionPerformed"
 var files = files
 
         try {
-            logUtil!.put("Reading " +files.length +" files.", this, "onFiles");
+            this.logUtil!.putF("Reading " +files.length +" files.", this, "onFiles");
     
 Arrays.sort(files, new object: Comparator<File>()
                                 {
@@ -663,7 +663,7 @@ this.fileJDialog!.setVisible(false);
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "onFiles", e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, "onFiles", e);
     
 }
 
@@ -679,7 +679,7 @@ var evt = evt
 var evt = evt
 
         try {
-            logUtil!.put("Starting", this, "analyzeJMenuItemActionPerformed");
+            this.logUtil!.putF("Starting", this, "analyzeJMenuItemActionPerformed");
     
 this.analysisActionJDialog!.setVisible(true);
     
@@ -687,7 +687,7 @@ this.analysisActionJDialog!.setVisible(true);
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "analyzeJMenuItemActionPerformed", e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, "analyzeJMenuItemActionPerformed", e);
     
 }
 
@@ -698,7 +698,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "analyzeJMenuItemActionPerformed", 
 var evt = evt
 
         try {
-            logUtil!.put("Starting", this, "generateRotationSpriteJMenuItemActionPerformed");
+            this.logUtil!.putF("Starting", this, "generateRotationSpriteJMenuItemActionPerformed");
     
 
     var spriteImageJPanel: RotationSpriteImageJPanel = new RotationSpriteImageJPanel(this.imageProcessorInput);
@@ -718,7 +718,7 @@ imageProcessorInputCompositeInterface= spriteImageJPanel;
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "generateRotationSpriteJMenuItemActionPerformed", e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, "generateRotationSpriteJMenuItemActionPerformed", e);
     
 }
 
@@ -729,7 +729,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "generateRotationSpriteJMenuItemAct
 var evt = evt
 
         try {
-            logUtil!.put("Starting", this, "generateRotationSpriteJMenuItemActionPerformed");
+            this.logUtil!.putF("Starting", this, "generateRotationSpriteJMenuItemActionPerformed");
     
 
     var imageJPanel: SpriteSplitterImageJPanel = new SpriteSplitterImageJPanel(this.imageProcessorInput);
@@ -749,7 +749,7 @@ imageProcessorInputCompositeInterface= imageJPanel;
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "generateRotationMenuItemActionPerformed", e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, "generateRotationMenuItemActionPerformed", e);
     
 }
 
@@ -760,7 +760,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "generateRotationMenuItemActionPerf
 var evt = evt
 
         try {
-            logUtil!.put("Starting", this, "generateRotationSpriteJMenuItemActionPerformed");
+            this.logUtil!.putF("Starting", this, "generateRotationSpriteJMenuItemActionPerformed");
     
 
     var rotationImageJPanel: RotationImageJPanel = new RotationImageJPanel(this.imageProcessorInput);
@@ -780,7 +780,7 @@ imageProcessorInputCompositeInterface= rotationImageJPanel;
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "generateRotationMenuItemActionPerformed", e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, "generateRotationMenuItemActionPerformed", e);
     
 }
 
@@ -791,7 +791,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "generateRotationMenuItemActionPerf
 var evt = evt
 
         try {
-            logUtil!.put(this.commonStrings!.START, this, "scaleImagesJMenuItemActionPerformed");
+            this.logUtil!.putF(this.commonStrings!.START, this, "scaleImagesJMenuItemActionPerformed");
     
 
     var resizeImageJPanel: ResizeImageJPanel = new ResizeImageJPanel(this.imageProcessorInput);
@@ -811,7 +811,7 @@ imageProcessorInputCompositeInterface= resizeImageJPanel;
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "scaleImagesJMenuItemActionPerformed", e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, "scaleImagesJMenuItemActionPerformed", e);
     
 }
 
@@ -822,7 +822,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "scaleImagesJMenuItemActionPerforme
 var evt = evt
 
         try {
-            logUtil!.put(this.commonStrings!.START, this, "createIconsJMenuItemActionPerformed");
+            this.logUtil!.putF(this.commonStrings!.START, this, "createIconsJMenuItemActionPerformed");
     
 
     var createIconImagesJPanel: CreateIconImagesJPanel = new CreateIconImagesJPanel(this.imageProcessorInput);
@@ -842,7 +842,7 @@ imageProcessorInputCompositeInterface= createIconImagesJPanel;
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "scaleImagesJMenuItemActionPerformed", e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, "scaleImagesJMenuItemActionPerformed", e);
     
 }
 
@@ -853,7 +853,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "scaleImagesJMenuItemActionPerforme
 var evt = evt
 
         try {
-            logUtil!.put(this.commonStrings!.START, this, "canvasImagesJMenuItemActionPerformed");
+            this.logUtil!.putF(this.commonStrings!.START, this, "canvasImagesJMenuItemActionPerformed");
     
 
     var resizeImageJPanel: CanvasImageJPanel = new CanvasImageJPanel(this.imageProcessorInput);
@@ -873,7 +873,7 @@ imageProcessorInputCompositeInterface= resizeImageJPanel;
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "scaleImagesJMenuItemActionPerformed", e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, "scaleImagesJMenuItemActionPerformed", e);
     
 }
 
@@ -884,7 +884,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "scaleImagesJMenuItemActionPerforme
 var evt = evt
 
         try {
-            logUtil!.put("Starting", this, "generateMirrorSpriteJMenuItemActionPerformed");
+            this.logUtil!.putF("Starting", this, "generateMirrorSpriteJMenuItemActionPerformed");
     
 
     var spriteImageJPanel: MirrorSpriteImageJPanel = new MirrorSpriteImageJPanel(this.imageProcessorInput);
@@ -904,7 +904,7 @@ imageProcessorInputCompositeInterface= spriteImageJPanel;
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "generateMirrorSpriteJMenuItemActionPerformed", e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, "generateMirrorSpriteJMenuItemActionPerformed", e);
     
 }
 
@@ -915,7 +915,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "generateMirrorSpriteJMenuItemActio
 var evt = evt
 
         try {
-            logUtil!.put("Starting", this, "generateMirrorJMenuItemActionPerformed");
+            this.logUtil!.putF("Starting", this, "generateMirrorJMenuItemActionPerformed");
     
 
     var mirrorImageJPanel: MirrorImageJPanel = new MirrorImageJPanel(this.imageProcessorInput);
@@ -935,7 +935,7 @@ imageProcessorInputCompositeInterface= mirrorImageJPanel;
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "generateMirrorJMenuItemActionPerformed", e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, "generateMirrorJMenuItemActionPerformed", e);
     
 }
 

@@ -43,7 +43,7 @@ protected constructor (candidate: string, tagName: string, index: number){
             var candidate = candidate
 var tagName = tagName
 var index = index
-logUtil!.put(tagName, this, this.commonStrings!.CONSTRUCTOR);
+this.logUtil!.putF(tagName, this, this.commonStrings!.CONSTRUCTOR);
     
 
     var acceptableResponseUtil: AcceptableResponseUtil = AcceptableResponseUtil.getInstance()!;

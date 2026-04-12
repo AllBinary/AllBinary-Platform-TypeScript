@@ -501,7 +501,7 @@ export class AndroidKeyFactory extends ActivityFractureUtil {
         
 ;
     
-logUtil!.put("Start/End", this, commonStrings!.INIT);
+this.logUtil!.putF("Start/End", this, commonStrings!.INIT);
     
 }
 

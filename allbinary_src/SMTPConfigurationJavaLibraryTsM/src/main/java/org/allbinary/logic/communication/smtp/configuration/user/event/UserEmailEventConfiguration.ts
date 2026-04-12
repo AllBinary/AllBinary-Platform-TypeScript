@@ -52,7 +52,7 @@ this.setEventListenerClassPath(StringUtil.getInstance()!.EMPTY_STRING);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
                                     {
-                                    logUtil!.put("New", this, " Constructor");
+                                    this.logUtil!.putF("New", this, " Constructor");
     
 
                                     }
@@ -75,7 +75,7 @@ this.setEventListenerClassPath(hashMap!.get(UserEmailEventConfigurationData.LIST
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
                                     {
-                                    logUtil!.put("Log: " +this.log(), this, " Constructor");
+                                    this.logUtil!.putF("Log: " +this.log(), this, " Constructor");
     
 
                                     }

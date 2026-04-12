@@ -18,6 +18,9 @@
 
 
 
+import { NullUtil } from "../../../../../org/allbinary/logic/NullUtil.js";
+
+    
 import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil.js";
 
     
@@ -27,7 +30,7 @@ import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil
          {
         
 
-    /*actual*/ public static getInstance(specialMessage: string, anyType: any = {}, exception: any = {}): Log{
+    /*actual*/ public static getInstanceNoF(specialMessage: string, anyType: any = {}, exception: any = {}): Log{
 var specialMessage = specialMessage
 var anyType = anyType
 var exception = exception
@@ -54,7 +57,7 @@ var exception = exception
 }
 
 
-    /*actual*/ public static getInstance(specialMessage: string, anyType: any = {}, functionName: string): Log{
+    /*actual*/ public static getInstanceF(specialMessage: string, anyType: any = {}, functionName: string): Log{
 var specialMessage = specialMessage
 var anyType = anyType
 var functionName = functionName
@@ -62,7 +65,7 @@ var functionName = functionName
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new Log(specialMessage, anyType, functionName);
+                        return new Log(specialMessage, anyType, functionName, NullUtil.getInstance()!.NULL_OBJECT);
     
 }
 

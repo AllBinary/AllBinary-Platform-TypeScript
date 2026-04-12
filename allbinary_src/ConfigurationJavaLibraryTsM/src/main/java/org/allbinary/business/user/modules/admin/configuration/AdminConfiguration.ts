@@ -73,7 +73,7 @@ export class AdminConfiguration
 public constructor (){
 
             super();
-            logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
+            this.logUtil!.putF(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
     
 this.contextConfigurationInterface= ContextConfigurationInterfaceFactory.getInstance()!.getInstance(AdminConfigurationData.CONTEXTNAME);
     
@@ -83,7 +83,7 @@ public constructor (request: HttpServletRequest){
 
             super();
             var request = request
-logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
+this.logUtil!.putF(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
     
 this.getFormData(new RequestParams(request).
                             toHashMap());
@@ -94,7 +94,7 @@ public constructor (storeHashMap: HashMap<any, any>){
 
             super();
             var storeHashMap = storeHashMap
-logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
+this.logUtil!.putF(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
     
 this.getFormData(storeHashMap);
     
@@ -105,7 +105,7 @@ this.getFormData(storeHashMap);
             
     getFormData(storeHashMap: HashMap<any, any>){
 var storeHashMap = storeHashMap
-logUtil!.put(commonStrings!.START, this, "getFormData");
+this.logUtil!.putF(commonStrings!.START, this, "getFormData");
     
 this.setContextConfigurationInterface(new ContextConfiguration(storeHashMap) as ContextConfigurationInterface);
     

@@ -177,7 +177,7 @@ super.process(layerManager);
         
 ;
     
-logUtil!.put(stringMaker!.append("isUpgradeable: ")!.appendboolean(rtsInterface!.isUpgradeable())!.toString(), this, commonStrings!.PROCESS);
+this.logUtil!.putF(stringMaker!.append("isUpgradeable: ")!.appendboolean(rtsInterface!.isUpgradeable())!.toString(), this, commonStrings!.PROCESS);
     
 
                         if(rtsInterface!.isUpgradeable())
@@ -197,7 +197,7 @@ logUtil!.put(stringMaker!.append("isUpgradeable: ")!.appendboolean(rtsInterface!
     
 stringMaker!.delete(0, stringMaker!.length());
     
-logUtil!.put(stringMaker!.appendint(cost)!.append("<=")!.appendint(capital.getTotalMoney())!.toString(), this, commonStrings!.PROCESS);
+this.logUtil!.putF(stringMaker!.appendint(cost)!.append("<=")!.appendint(capital.getTotalMoney())!.toString(), this, commonStrings!.PROCESS);
     
 
                         if(cost <= capital.getTotalMoney())

@@ -99,11 +99,11 @@ private constructor (){
                         if(osName!.indexOf(OperatingSystems.getInstance()!.ANDROID) >= 0)
                         
                                     {
-                                    logUtil!.put("Found a Linux OS", this, commonStrings!.GET_INSTANCE);
+                                    this.logUtil!.putF("Found a Linux OS", this, commonStrings!.GET_INSTANCE);
     
 genericOperatingSystem= AndroidOperatingSystemFactory.getInstance()!.getOperatingSystemInstance();
     
-logUtil!.put(new StringMaker().
+this.logUtil!.putF(new StringMaker().
                             append("Operating System Info: ")!.append(genericOperatingSystem!.toString())!.toString(), this, commonStrings!.GET_INSTANCE);
     
 
@@ -127,7 +127,7 @@ logUtil!.put(new StringMaker().
             {
 genericOperatingSystem= NoOperatingSystem.NO_OPERATING_SYSTEM;
     
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e);
     
 }
 

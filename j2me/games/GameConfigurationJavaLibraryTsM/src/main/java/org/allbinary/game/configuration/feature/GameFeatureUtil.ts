@@ -121,7 +121,7 @@ stringBuffer!.append("Multiple Total Choices: ");
     
 stringBuffer!.appendint(total);
     
-logUtil!.put(stringBuffer!.toString(), this, METHOD_NAME);
+this.logUtil!.putF(stringBuffer!.toString(), this, METHOD_NAME);
     
 
     var features: Features = Features.getInstance()!;
@@ -155,7 +155,7 @@ stringBuffer!.append(SELECTED_SEP);
     
 stringBuffer!.appendboolean(isSelected);
     
-logUtil!.put(stringBuffer!.toString(), this, METHOD_NAME);
+this.logUtil!.putF(stringBuffer!.toString(), this, METHOD_NAME);
     
 
     var selectedChoiceLabel: string = choiceGroup!.getString(index)!;
@@ -237,7 +237,7 @@ stringBuffer!.append("Multiple Total Choices: ");
     
 stringBuffer!.appendint(total);
     
-logUtil!.put(stringBuffer!.toString(), this, METHOD_NAME);
+this.logUtil!.putF(stringBuffer!.toString(), this, METHOD_NAME);
     
 
     var features: Features = Features.getInstance()!;
@@ -271,7 +271,7 @@ stringBuffer!.append(SELECTED_SEP);
     
 stringBuffer!.appendboolean(isSelected);
     
-logUtil!.put(stringBuffer!.toString(), this, METHOD_NAME);
+this.logUtil!.putF(stringBuffer!.toString(), this, METHOD_NAME);
     
 
     var selectedChoiceLabel: string = choiceGroup!.getString(index)!;
@@ -354,7 +354,7 @@ stringBuffer!.append("Exclusive Total Choices: 1==");
     
 stringBuffer!.appendint(total);
     
-logUtil!.put(stringBuffer!.toString(), this, METHOD_NAME);
+this.logUtil!.putF(stringBuffer!.toString(), this, METHOD_NAME);
     
 
 
@@ -382,7 +382,7 @@ stringBuffer!.append(SELECTED_SEP);
     
 stringBuffer!.appendboolean(isSelected);
     
-logUtil!.put(stringBuffer!.toString(), this, METHOD_NAME);
+this.logUtil!.putF(stringBuffer!.toString(), this, METHOD_NAME);
     
 
                         if(isSelected)
@@ -451,7 +451,7 @@ var itemLabel = itemLabel
             
     updateExclusive(selectedChoiceLabel: string){
     //var selectedChoiceLabel = selectedChoiceLabel
-logUtil!.put(new StringMaker().
+this.logUtil!.putF(new StringMaker().
                             append(CommonLabels.getInstance()!.ITEM_LABEL)!.append(selectedChoiceLabel)!.toString(), this, "updateExclusive");
     
 

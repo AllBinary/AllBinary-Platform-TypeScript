@@ -100,6 +100,12 @@ new object: Thread()
                                 
     public run(){
 
+    var logUtil: LogUtil = LogUtil.getInstance()!;
+        
+        
+;
+    
+
         try {
             
     var angleAsString: string = this@RotationImageJPanel.totalAngleJComboBox!.getSelectedItem();
@@ -354,7 +360,7 @@ file= new File(filePath);
         
 ;
     
-logUtil!.put("File: " +file +" Wrote: " +isWritten, this, commonStrings!.RUN);
+this.logUtil!.putF("File: " +file +" Wrote: " +isWritten, this, commonStrings!.RUN);
     
 }
 

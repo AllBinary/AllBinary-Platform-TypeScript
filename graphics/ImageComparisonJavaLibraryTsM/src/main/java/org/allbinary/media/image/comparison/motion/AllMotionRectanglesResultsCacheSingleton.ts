@@ -75,11 +75,11 @@ export class AllMotionRectanglesResultsCacheSingleton
     
 
         try {
-            logUtil!.put(commonStrings!.START, instance, STATIC_BLOCK);
+            logUtil!.putF(commonStrings!.START, instance, STATIC_BLOCK);
     
 cacheInterface= CacheInterfaceFactory.getInstance(CacheTypeFactory.getInstance()!.CACHE, CachePolicyFactory.getInstance()!.ONE_MINUTE_FIVE_MAX);
     
-logUtil!.put(commonStrings!.END, instance, STATIC_BLOCK);
+logUtil!.putF(commonStrings!.END, instance, STATIC_BLOCK);
     
 
                 //: 

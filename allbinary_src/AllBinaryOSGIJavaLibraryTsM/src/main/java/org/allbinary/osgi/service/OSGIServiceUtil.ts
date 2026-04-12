@@ -89,7 +89,7 @@ private constructor (){
         
 ;
     
-logUtil!.put("Service References: " +size, this, "getServicesObjectVector");
+this.logUtil!.putF("Service References: " +size, this, "getServicesObjectVector");
     
 
 

@@ -125,7 +125,7 @@ params[0]= hashMap as Object;
         
 ;
     
-logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(HashMap)", e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(HashMap)", e);
     
 
                                     }
@@ -149,7 +149,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(HashMap)", e);
         
 ;
     
-logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(HashMap)", e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(HashMap)", e);
     
 
                                     }

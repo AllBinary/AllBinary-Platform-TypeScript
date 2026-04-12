@@ -73,7 +73,7 @@ this.soundsFactoryInterface= soundsFactoryInterface;
                 //@Throws(Error::class)
             
     public init(){
-logUtil!.put(commonStrings!.START, this, commonStrings!.INIT);
+this.logUtil!.putF(commonStrings!.START, this, commonStrings!.INIT);
     
 
     var commonLabels: CommonLabels = CommonLabels.getInstance()!;
@@ -151,7 +151,7 @@ stringBuffer!.append(this.soundStrings!.SOUND);
     
 stringBuffer!.append(soundInterface!.constructor.name.toString()!);
     
-logUtil!.put(stringBuffer!.toString(), this, commonStrings!.INIT);
+this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.INIT);
     
 soundInterface!.init();
     
@@ -165,7 +165,7 @@ progressCanvas!.addPortion(100, new StringMaker().
 
 soundsFactoryInterface!.setInitialized(true);
     
-logUtil!.put(commonStrings!.END, this, commonStrings!.INIT);
+this.logUtil!.putF(commonStrings!.END, this, commonStrings!.INIT);
     
 }
 
@@ -173,7 +173,7 @@ logUtil!.put(commonStrings!.END, this, commonStrings!.INIT);
                 //@Throws(Error::class)
             
     public stopAll(){
-logUtil!.put(commonStrings!.START, this, this.soundStrings!.STOP_ALL);
+this.logUtil!.putF(commonStrings!.START, this, this.soundStrings!.STOP_ALL);
     
 
     var soundInterfaceArray: Sound[] = soundsFactoryInterface!.getSoundInterfaceArray()!;
@@ -233,7 +233,7 @@ progressCanvas!.addPortion(100, this.soundStrings!.STOPPING_SOUND, index);
                 //@Throws(Error::class)
             
     public closeAll(){
-logUtil!.put(commonStrings!.START, this, this.soundStrings!.CLOSE_ALL);
+this.logUtil!.putF(commonStrings!.START, this, this.soundStrings!.CLOSE_ALL);
     
 
     var soundInterfaceArray: Sound[] = soundsFactoryInterface!.getSoundInterfaceArray()!;

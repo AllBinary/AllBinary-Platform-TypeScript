@@ -156,7 +156,7 @@ stringBuffer!.append(" from to the user table");
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put(success, this, "delete()");
+                                    this.logUtil!.putF(success, this, "delete()");
     
 
                                     }
@@ -181,7 +181,7 @@ stringBuffer!.append(" from to the user table");
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "delete()", e);
+                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "delete()", e);
     
 
                                     }
@@ -245,7 +245,7 @@ UserEntityFactory.getInstance()!.insert(values);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put(success, this, "add()");
+                                    this.logUtil!.putF(success, this, "add()");
     
 
                                     }
@@ -270,7 +270,7 @@ UserEntityFactory.getInstance()!.insert(values);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "add()", e);
+                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "add()", e);
     
 
                                     }
@@ -313,7 +313,7 @@ UserEntityFactory.getInstance()!.update(user.getUserName(), values);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put(success, this, "update()");
+                                    this.logUtil!.putF(success, this, "update()");
     
 
                                     }
@@ -338,7 +338,7 @@ UserEntityFactory.getInstance()!.update(user.getUserName(), values);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "update()", e);
+                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "update()", e);
     
 
                                     }
@@ -367,7 +367,7 @@ UserEntityFactory.getInstance()!.update(user.getUserName(), values);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPER))
                         
                                     {
-                                    logUtil!.put(success, this, commonStrings!.DROP);
+                                    this.logUtil!.putF(success, this, commonStrings!.DROP);
     
 
                                     }
@@ -392,7 +392,7 @@ UserEntityFactory.getInstance()!.update(user.getUserName(), values);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.DROP, e);
+                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.DROP, e);
     
 
                                     }
@@ -421,7 +421,7 @@ UserEntityFactory.getInstance()!.update(user.getUserName(), values);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPER))
                         
                                     {
-                                    logUtil!.put(success, this, "create()");
+                                    this.logUtil!.putF(success, this, "create()");
     
 
                                     }
@@ -446,7 +446,7 @@ UserEntityFactory.getInstance()!.update(user.getUserName(), values);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "create()", e);
+                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "create()", e);
     
 
                                     }
@@ -481,7 +481,7 @@ UserEntityFactory.getInstance()!.update(user.getUserName(), values);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    logUtil!.put(success, this, "restore()");
+                                    this.logUtil!.putF(success, this, "restore()");
     
 
                                     }
@@ -506,7 +506,7 @@ UserEntityFactory.getInstance()!.update(user.getUserName(), values);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "restore()", e);
+                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "restore()", e);
     
 
                                     }
@@ -541,7 +541,7 @@ UserEntityFactory.getInstance()!.update(user.getUserName(), values);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPER))
                         
                                     {
-                                    logUtil!.put(success, this, "backup()");
+                                    this.logUtil!.putF(success, this, "backup()");
     
 
                                     }
@@ -566,7 +566,7 @@ UserEntityFactory.getInstance()!.update(user.getUserName(), values);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "backup()", e);
+                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "backup()", e);
     
 
                                     }

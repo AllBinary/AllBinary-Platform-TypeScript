@@ -307,7 +307,7 @@ this.getList()!.add(highScore);
         {
 nextElement= enumeration.nextElement()!;
     
-logUtil!.put("NextElement: " +nextElement, this, commonStrings!.PROCESS);
+this.logUtil!.putF("NextElement: " +nextElement, this, commonStrings!.PROCESS);
     
 }
 

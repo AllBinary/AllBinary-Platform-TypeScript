@@ -30,7 +30,7 @@ import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil
          {
         
 
-    public static readonly LOG: Log = new Log(StringUtil.getInstance()!.EMPTY_STRING, NullUtil.getInstance()!.NULL_OBJECT, StringUtil.getInstance()!.EMPTY_STRING);
+    public static readonly LOG: Log = new Log(StringUtil.getInstance()!.EMPTY_STRING, NullUtil.getInstance()!.NULL_OBJECT, StringUtil.getInstance()!.EMPTY_STRING, NullUtil.getInstance()!.NULL_OBJECT);
         
         
 
@@ -48,7 +48,7 @@ var exception = exception
 }
 
 
-    /*actual*/ public static getInstance(specialMessage: string, anyType: any = {}, functionName: string): Log{
+    /*actual*/ public static getInstanceF(specialMessage: string, anyType: any = {}, functionName: string): Log{
 var specialMessage = specialMessage
 var anyType = anyType
 var functionName = functionName

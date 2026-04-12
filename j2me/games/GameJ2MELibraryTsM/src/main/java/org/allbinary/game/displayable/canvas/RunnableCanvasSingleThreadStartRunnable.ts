@@ -60,7 +60,7 @@ this.runnableCanvas= demoCanvas;
         
 ;
     
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
     
 }
 

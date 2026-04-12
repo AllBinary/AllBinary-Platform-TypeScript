@@ -98,7 +98,7 @@ export class PartnerIdentifierFileUtil
         
 ;
     
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET, e);
     
 
 

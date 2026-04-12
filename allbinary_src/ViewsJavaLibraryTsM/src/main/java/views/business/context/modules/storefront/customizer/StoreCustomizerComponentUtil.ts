@@ -80,7 +80,7 @@ var transformInfoInterface = transformInfoInterface
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Generating Modified Views For: " +transformInfoInterface!.getName(), this, "generateModifiedViews()");
+                                    this.logUtil!.putF("Generating Modified Views For: " +transformInfoInterface!.getName(), this, "generateModifiedViews()");
     
 
                                     }
@@ -131,7 +131,7 @@ index < size; index++)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("View or component that was modified by a Customizer: " +nextTransformInfoInterface!.getName(), this, "generateModifiedViews()");
+                                    this.logUtil!.putF("View or component that was modified by a Customizer: " +nextTransformInfoInterface!.getName(), this, "generateModifiedViews()");
     
 
                                     }
@@ -195,7 +195,7 @@ index < size; index++)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Retrieved: " +specifiedTransformInfoInterface!.getName(), this, "generateModifiedViews()");
+                                    this.logUtil!.putF("Retrieved: " +specifiedTransformInfoInterface!.getName(), this, "generateModifiedViews()");
     
 
                                     }

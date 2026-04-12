@@ -77,7 +77,7 @@ public constructor (signed: CompleteMotionGestureListenerInterface){
 
             super();
             var signed = signed
-logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
+this.logUtil!.putF(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
     
 this.signed= signed;
     
@@ -180,7 +180,7 @@ motionGestureCollection!.clear();
                 //: 
 } catch(e) 
             {
-logUtil!.put(new StringMaker().
+this.logUtil!.put(new StringMaker().
                             append(commonStrings!.EXCEPTION_LABEL)!.append(StringUtil.getInstance()!.toString(ev.getMotionGesture()))!.toString(), this, "release", e);
     
 }

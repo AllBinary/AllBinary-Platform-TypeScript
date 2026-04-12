@@ -143,7 +143,7 @@ stringBuffer!.append(TO);
     
 stringBuffer!.appendint(value.toInt());
     
-logUtil!.put(stringBuffer!.toString(), this, commonStrings!.UPDATE);
+this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.UPDATE);
     
 gameConfiguration!.setValue(value);
     
@@ -180,7 +180,7 @@ stringBuffer!.append(TO);
     
 stringBuffer!.appendint(gameConfiguration!.getDefaultValue()!.toInt());
     
-logUtil!.put(stringBuffer!.toString(), this, "setDefault");
+this.logUtil!.putF(stringBuffer!.toString(), this, "setDefault");
     
 gauge.setValue(gameConfiguration!.getDefaultValue()!.toInt() -gameConfiguration!.getMinValue()!.toInt());
     
@@ -210,7 +210,7 @@ var gameConfiguration = gameConfiguration
                         if(gameConfiguration == gameConfigurationCentral!.CHALLENGE_LEVEL)
                         
                                     {
-                                    logUtil!.put(commonStrings!.START, this, "updateChallange");
+                                    this.logUtil!.putF(commonStrings!.START, this, "updateChallange");
     
 gameConfigurationCentral!.COLLIDE_DAMAGE.setValue(gameConfiguration!.getValue());
     
@@ -316,7 +316,7 @@ index < size; index++)
         
 
     public updateCompetitionValue(){
-logUtil!.put(commonStrings!.START, this, "updateCompetitionValue");
+this.logUtil!.putF(commonStrings!.START, this, "updateCompetitionValue");
     
 
     var gameConfigurationCentral: GameConfigurationCentral = GameConfigurationCentral.getInstance()!;

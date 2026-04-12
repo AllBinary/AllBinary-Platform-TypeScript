@@ -130,7 +130,7 @@ public constructor (transformInfoInterface: TransformInfoInterface)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Invalid AdminCommand=" +command, this, commonStrings!.IS_VALID);
+                                    this.logUtil!.putF("Invalid AdminCommand=" +command, this, commonStrings!.IS_VALID);
     
 
                                     }
@@ -153,7 +153,7 @@ public constructor (transformInfoInterface: TransformInfoInterface)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("BasicItem is not valid", this, commonStrings!.IS_VALID);
+                                    this.logUtil!.putF("BasicItem is not valid", this, commonStrings!.IS_VALID);
     
 
                                     }
@@ -207,7 +207,7 @@ stringBuffer!.append(this.itemInterface!.getCategory());
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Category Does Not Exist: " +fullCategory, this, commonStrings!.IS_VALID);
+                                    this.logUtil!.putF("Category Does Not Exist: " +fullCategory, this, commonStrings!.IS_VALID);
     
 
                                     }
@@ -302,7 +302,7 @@ HttpFileUploadUtil.log(fileItem);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Exception in validation", this, commonStrings!.IS_VALID, e);
+                                    this.logUtil!.put("Exception in validation", this, commonStrings!.IS_VALID, e);
     
 
                                     }
@@ -392,7 +392,7 @@ stringBuffer!.append(new BasicItemValidation(this.itemInterface).
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Category: " +fullCategory, this, "validationInfo()");
+                                    this.logUtil!.putF("Category: " +fullCategory, this, "validationInfo()");
     
 
                                     }
@@ -418,7 +418,7 @@ stringBuffer!.append(new BasicItemValidation(this.itemInterface).
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Existing Item With MoneyException", this, "validationInfo()");
+                                    this.logUtil!.putF("Existing Item With MoneyException", this, "validationInfo()");
     
 
                                     }
@@ -531,7 +531,7 @@ stringBuffer!.append(">");
     
 stringBuffer!.appendint(fileData!.MAXIMAGEFILESIZE);
     
-logUtil!.put(stringBuffer!.toString(), this, commonStrings!.IS_VALID);
+this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.IS_VALID);
     
 
                                     }

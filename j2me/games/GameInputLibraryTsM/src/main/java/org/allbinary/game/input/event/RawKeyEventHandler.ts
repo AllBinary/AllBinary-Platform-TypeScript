@@ -196,7 +196,7 @@ this.process(keyCode, deviceId, repeated, eventListenerInterface);
         
 ;
     
-logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e);
     
 }
 
@@ -273,7 +273,7 @@ stringBuffer!.append(eventListenerInterface!.toString());
         
 ;
     
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.TOSTRING, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.TOSTRING, e);
     
 }
 

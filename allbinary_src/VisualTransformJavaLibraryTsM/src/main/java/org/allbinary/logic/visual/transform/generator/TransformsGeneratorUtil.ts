@@ -81,7 +81,7 @@ var group = group
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Started Group: " +group, this, "generateComponentsFromObjectConfig(2)");
+                                    this.logUtil!.putF("Started Group: " +group, this, "generateComponentsFromObjectConfig(2)");
     
 
                                     }
@@ -102,7 +102,7 @@ var group = group
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("End Group: " +group, this, "generateComponentsFromObjectConfig(2)");
+                                    this.logUtil!.putF("End Group: " +group, this, "generateComponentsFromObjectConfig(2)");
     
 
                                     }
@@ -127,7 +127,7 @@ var group = group
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Started Group: " +group, this, "generateComponentsFromObjectConfig()");
+                                    this.logUtil!.putF("Started Group: " +group, this, "generateComponentsFromObjectConfig()");
     
 
                                     }
@@ -156,7 +156,7 @@ stringBuffer!.append(" Components Group: ");
     
 stringBuffer!.append(group);
     
-logUtil!.put(stringBuffer!.toString(), this, "generateComponentsFromObjectConfig()");
+this.logUtil!.putF(stringBuffer!.toString(), this, "generateComponentsFromObjectConfig()");
     
 
                                     }
@@ -204,7 +204,7 @@ TransformGeneratorUtil.getInstance()!.generate(abeClientInformation, transformIn
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Done Group: " +group, this, "generateComponentsFromObjectConfig()");
+                                    this.logUtil!.putF("Done Group: " +group, this, "generateComponentsFromObjectConfig()");
     
 
                                     }

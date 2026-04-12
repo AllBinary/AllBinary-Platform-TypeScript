@@ -18,12 +18,6 @@
 
 
 
-import { NullUtil } from "../../../../../org/allbinary/logic/NullUtil.js";
-
-    
-import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil.js";
-
-    
 import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings.js";
 
     
@@ -35,47 +29,6 @@ export class Log
             extends Object
          {
         
-
-    public static getInstance(): Log{
-
-    var stringUtil: StringUtil = StringUtil.getInstance()!;
-        
-        
-;
-    
-
-    var nullUtil: NullUtil = NullUtil.getInstance()!;
-        
-        
-;
-    
-
-
-
-                        //if statement needs to be on the same line and ternary does not work the same way.
-                        return new Log(stringUtil!.EMPTY_STRING, nullUtil!.NULL_OBJECT, stringUtil!.EMPTY_STRING, nullUtil!.NULL_OBJECT);
-    
-}
-
-
-    public static getInstanceF(specialMessage: string, anyType: any = {}, functionName: string): Log{
-    //var specialMessage = specialMessage
-    //var anyType = anyType
-    //var functionName = functionName
-
-    var nullUtil: NullUtil = NullUtil.getInstance()!;
-        
-        
-;
-    
-
-
-
-                        //if statement needs to be on the same line and ternary does not work the same way.
-                        return new Log(specialMessage, anyType, functionName, nullUtil!.NULL_OBJECT);
-    
-}
-
 
     private readonly logFormatUtil: LogFormatUtil = LogFormatUtil.getInstance()!;
         

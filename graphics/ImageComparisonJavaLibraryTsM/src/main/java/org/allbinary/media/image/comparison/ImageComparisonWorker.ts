@@ -133,7 +133,7 @@ this.onCaptureEvent(allBinaryEventObject as CapturedImageWorkerResultsEvent);
     public run(){
 
         try {
-            logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.RUN);
+            this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.RUN);
     
 this.setRunning(true);
     
@@ -189,14 +189,14 @@ ImageComparisonResultCacheSingleton.getInstance()!.add(imageComparisonResultFram
     
 this.fireEvent(new ImageComparisonResultsEvent(this, imageComparisonResult));
     
-logUtil!.put(new StringMaker().
+this.logUtil!.putF(new StringMaker().
                             append("Image Comparison Result: ")!.append(imageComparisonResult!.toString())!.append(" for frame: ")!.appendlong(frame)!.toString(), this, this.commonStrings!.RUN);
     
 
                                     }
                                 
                         else {
-                            logUtil!.put("An Image Was Not Valid: Image Worker Event Processing terminated", this, this.commonStrings!.RUN);
+                            this.logUtil!.putF("An Image Was Not Valid: Image Worker Event Processing terminated", this, this.commonStrings!.RUN);
     
 
                         }
@@ -215,17 +215,17 @@ index2++;
         
 ;
     
-logUtil!.put(message, this, this.commonStrings!.RUN);
+this.logUtil!.putF(message, this, this.commonStrings!.RUN);
     
 this.setRunning(false);
     
-logUtil!.put(this.commonStrings!.END, this, this.commonStrings!.RUN);
+this.logUtil!.putF(this.commonStrings!.END, this, this.commonStrings!.RUN);
     
 
                 //: 
 } catch(e) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e);
     
 }
 

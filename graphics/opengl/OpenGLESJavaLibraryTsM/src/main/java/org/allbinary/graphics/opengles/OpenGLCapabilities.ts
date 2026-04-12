@@ -303,7 +303,7 @@ this.shaderVersion= Integer.parseInt(this.glShaderVersionString!.replace(CommonS
         
 ;
     
-logUtil!.put(commonStrings!.EXCEPTION, this, METHOD_NAME, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, METHOD_NAME, e);
     
 }
 
@@ -557,7 +557,7 @@ this.initialized= true;
         
 ;
     
-logUtil!.put(commonStrings!.EXCEPTION, this, METHOD_NAME, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, METHOD_NAME, e);
     
 }
 
@@ -827,7 +827,7 @@ stringBuffer!.append(stringUtil!.toString(list.objectArray[index]!));
         
 ;
     
-PreLogUtil.put(commonStrings!.EXCEPTION, this, commonStrings!.TOSTRING, e);
+PreLogUtil.putOE(commonStrings!.EXCEPTION, this, commonStrings!.TOSTRING, e);
     
 }
 

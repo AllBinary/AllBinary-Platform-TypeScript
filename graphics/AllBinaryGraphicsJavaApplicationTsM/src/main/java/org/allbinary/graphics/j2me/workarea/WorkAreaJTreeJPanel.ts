@@ -219,7 +219,7 @@ var treePath = treePath
         
 ;
     
-logUtil!.put("size: " +size, this, "deselectAll");
+this.logUtil!.putF("size: " +size, this, "deselectAll");
     
 
 
@@ -578,7 +578,7 @@ this.repaint();
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "rotateJMenuItemMousePressed", e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, "rotateJMenuItemMousePressed", e);
     
 }
 
@@ -702,7 +702,7 @@ index < selectedTreePathArray!.length; index++)
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "workAreaJTreeMousePressed", e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, "workAreaJTreeMousePressed", e);
     
 }
 
@@ -729,7 +729,7 @@ var evt = evt
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "copyJMenuItemMousePressed", e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, "copyJMenuItemMousePressed", e);
     
 }
 
@@ -776,7 +776,7 @@ this.repaint();
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "deleteJMenuItemMousePressed", e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, "deleteJMenuItemMousePressed", e);
     
 }
 

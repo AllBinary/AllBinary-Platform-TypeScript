@@ -116,7 +116,7 @@ public constructor (){
 var installed = installed
 this.installed= installed;
     
-logUtil!.put("Installed: " +installed, this, "setIntalled");
+this.logUtil!.putF("Installed: " +installed, this, "setIntalled");
     
 }
 

@@ -57,7 +57,7 @@ export class EmulatorCustomRenderer
     public onSurfaceCreated(gl: GL10, eglConfig: EGLConfig){
     //var gl = gl
     //var eglConfig = eglConfig
-logUtil!.put(commonStrings!.START, this, this.renderStrings!.ON_SURFACE_CREATED);
+this.logUtil!.putF(commonStrings!.START, this, this.renderStrings!.ON_SURFACE_CREATED);
     
 
     var initEmulatorFactory: InitEmulatorFactory = InitEmulatorFactory.getInstance()!;
@@ -94,7 +94,7 @@ Thread.sleep(180);
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, this.renderStrings!.ON_SURFACE_CREATED, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, this.renderStrings!.ON_SURFACE_CREATED, e);
     
 }
 

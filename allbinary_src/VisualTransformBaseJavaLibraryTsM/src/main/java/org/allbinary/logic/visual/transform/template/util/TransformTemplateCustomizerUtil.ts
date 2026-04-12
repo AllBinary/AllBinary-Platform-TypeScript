@@ -230,7 +230,7 @@ hashMap!.put(
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("RootViewName for ObjectConfig: " +rootViewName, this, "getPageNameHack");
+                                    this.logUtil!.putF("RootViewName for ObjectConfig: " +rootViewName, this, "getPageNameHack");
     
 
                                     }

@@ -35,7 +35,7 @@ export class PCGameInputMapping extends PersistentInputMapping {
             
     public init(abeClientInformation: AbeClientInformationInterface){
     //var abeClientInformation = abeClientInformation
-logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.INIT);
+this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.INIT);
     
 PCKeyFactory.getInstance();
     

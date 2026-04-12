@@ -204,7 +204,7 @@ var graphics = graphics
         
 ;
     
-logUtil!.put(commonStrings!.NOT_IMPLEMENTED, this, canvasStrings!.PAINT);
+this.logUtil!.putF(commonStrings!.NOT_IMPLEMENTED, this, canvasStrings!.PAINT);
     
 }
 

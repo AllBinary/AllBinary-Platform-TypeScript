@@ -113,7 +113,7 @@ stringBuffer!.append(SEP);
     
 stringBuffer!.append(server);
     
-logUtil!.put(CommonLabels.getInstance()!.START_LABEL +stringBuffer!.toString(), this, commonStrings!.GET);
+this.logUtil!.putF(CommonLabels.getInstance()!.START_LABEL +stringBuffer!.toString(), this, commonStrings!.GET);
     
 
     var param: Vector = new Vector();
@@ -139,7 +139,7 @@ xmlRpcClient!.setBasicAuthentication(
         
 ;
     
-logUtil!.put(CLIENT_INFO +hashtable.toString(), this, commonStrings!.GET);
+this.logUtil!.putF(CLIENT_INFO +hashtable.toString(), this, commonStrings!.GET);
     
 param.add(hashtable);
     
@@ -149,7 +149,7 @@ param.add(hashtable);
         
 ;
     
-logUtil!.put(RESULT +result.toString(), this, commonStrings!.GET);
+this.logUtil!.putF(RESULT +result.toString(), this, commonStrings!.GET);
     
 
     var resultHashtable: Hashtable<any, any> = result as Hashtable<any, any>;
@@ -163,7 +163,7 @@ logUtil!.put(RESULT +result.toString(), this, commonStrings!.GET);
                         )
                         
                                     {
-                                    logUtil!.put(INVALID, this, commonStrings!.GET);
+                                    this.logUtil!.putF(INVALID, this, commonStrings!.GET);
     
 
 
@@ -182,7 +182,7 @@ logUtil!.put(RESULT +result.toString(), this, commonStrings!.GET);
         
 ;
     
-logUtil!.put(commonStrings!.END +stringBuffer!.toString(), this, commonStrings!.GET);
+this.logUtil!.putF(commonStrings!.END +stringBuffer!.toString(), this, commonStrings!.GET);
     
 isOnline= true;
     
@@ -196,9 +196,9 @@ isOnline= true;
                 //: 
 } catch(e) 
             {
-logUtil!.put(EXCEPTION_IN_CLIENT, this, commonStrings!.GET, e);
+this.logUtil!.put(EXCEPTION_IN_CLIENT, this, commonStrings!.GET, e);
     
-logUtil!.put(TRYING_OTHER_SERVERS +ExceptionUtil.getInstance()!.getStackTrace(e), this, commonStrings!.GET);
+this.logUtil!.putF(TRYING_OTHER_SERVERS +ExceptionUtil.getInstance()!.getStackTrace(e), this, commonStrings!.GET);
     
 
                         if(!e.getMessage()!.startsWith(HOST_NOT_RESOLVED);
@@ -232,7 +232,7 @@ logUtil!.put(TRYING_OTHER_SERVERS +ExceptionUtil.getInstance()!.getStackTrace(e)
                 //: 
  catch(e) 
             {
-logUtil!.put(SERVER_REPORTED_ERROR, this, commonStrings!.GET, e);
+this.logUtil!.put(SERVER_REPORTED_ERROR, this, commonStrings!.GET, e);
     
 
 
@@ -247,7 +247,7 @@ logUtil!.put(SERVER_REPORTED_ERROR, this, commonStrings!.GET, e);
                 //: 
  catch(e) 
             {
-logUtil!.put(UNKNOWN_ERROR, this, commonStrings!.GET, e);
+this.logUtil!.put(UNKNOWN_ERROR, this, commonStrings!.GET, e);
     
 
 

@@ -235,7 +235,7 @@ var storeName = storeName
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PAYMENT))
                         
                                     {
-                                    logUtil!.put("initDefault Payment: " +this.defaultName, this, "initDefault");
+                                    this.logUtil!.putF("initDefault Payment: " +this.defaultName, this, "initDefault");
     
 
                                     }
@@ -317,7 +317,7 @@ index < nodeList!.getLength(); index++)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PAYMENT))
                         
                                     {
-                                    logUtil!.put("DefaultPaymentGatewayNodeValue: " +defaultPaymentGatewayNodeValue, this, "initDefault");
+                                    this.logUtil!.putF("DefaultPaymentGatewayNodeValue: " +defaultPaymentGatewayNodeValue, this, "initDefault");
     
 
                                     }
@@ -349,7 +349,7 @@ var storeName = storeName
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PAYMENT))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.START, this, "getDefault");
+                                    this.logUtil!.putF(this.commonStrings!.START, this, "getDefault");
     
 
                                     }

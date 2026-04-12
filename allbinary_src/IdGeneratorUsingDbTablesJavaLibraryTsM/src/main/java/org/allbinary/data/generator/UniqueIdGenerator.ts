@@ -97,7 +97,7 @@ idGeneratorEntity!.insert(vector);
         
 ;
     
-logUtil!.put(commonStrings!.EXCEPTION, this, "initialize", e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, "initialize", e);
     
 
                                     }
@@ -160,7 +160,7 @@ this.idGeneratorEntity!.update(name, newValue);
         
 ;
     
-logUtil!.put(commonStrings!.EXCEPTION, this, "getNext", e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, "getNext", e);
     
 
                                     }

@@ -147,7 +147,7 @@ var filePath = filePath
                 //: 
 } catch(e) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, getInstance(), "set", e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, getInstance(), "set", e);
     
 
 
@@ -175,7 +175,7 @@ var url = url
                 //: 
 } catch(e) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, getInstance(), "set", e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, getInstance(), "set", e);
     
 
 
@@ -205,13 +205,13 @@ helpBroker!.setSize(dimension);
 new CSH.DisplayHelpFromSource(helpBroker).
                             actionPerformed(contextSensitiveHelpActionEvent);
     
-logUtil!.put("CSH Action", getInstance(), "show");
+this.logUtil!.putF("CSH Action", getInstance(), "show");
     
 
                 //: 
 } catch(e) 
             {
-logUtil!.put(this.commonStrings!.EXCEPTION, getInstance(), "show", e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, getInstance(), "show", e);
     
 }
 

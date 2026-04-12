@@ -69,7 +69,7 @@ PreLogUtil.put("Loggin Initialized", "LogUtil", "init()");
 }
 
 
-    /*actual*/ public put(log: Log){
+    /*actual*/ public putL(log: Log){
 var log = log
 
     var exception: any = log.getThrowable()!;

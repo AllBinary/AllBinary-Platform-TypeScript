@@ -172,7 +172,7 @@ availableListOfList[index]!.addAll(listOfList[index]!);
     
 }
 
-logUtil!.put(new StringMaker().
+this.logUtil!.putF(new StringMaker().
                             append("ImageCache: ")!.append(this.toString())!.toString(), this, "releaseAll");
     
 }

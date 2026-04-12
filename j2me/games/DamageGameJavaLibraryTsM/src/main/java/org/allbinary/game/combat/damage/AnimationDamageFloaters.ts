@@ -181,7 +181,7 @@ animationInterface!.nextFrame();
         
 ;
     
-logUtil!.put(commonStrings!.EXCEPTION, this, canvasStrings!.PAINT, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, canvasStrings!.PAINT, e);
     
 }
 

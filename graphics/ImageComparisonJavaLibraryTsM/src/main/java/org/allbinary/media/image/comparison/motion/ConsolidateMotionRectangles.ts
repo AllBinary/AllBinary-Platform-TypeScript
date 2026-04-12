@@ -97,7 +97,7 @@ consolidateMotionRectangles();
         
 ;
     
-logUtil!.put("Start - Size Before: " +vector.length, this, "consolidateMotionRectangleConstraints");
+this.logUtil!.putF("Start - Size Before: " +vector.length, this, "consolidateMotionRectangleConstraints");
     
 
     var removeVector: Vector = new Vector();

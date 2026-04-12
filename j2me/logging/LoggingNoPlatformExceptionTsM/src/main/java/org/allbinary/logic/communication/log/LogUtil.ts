@@ -28,9 +28,9 @@ expect export class LogUtil
     public static getInstance(): LogUtil
 
 
-    public put(log: Log)
+    public putL(log: Log)
 
-    public put(specialMessage: string, anyType: any = {}, functionName: string)
+    public putF(specialMessage: string, anyType: any = {}, functionName: string)
 
     public put(specialMessage: string, anyType: any = {}, functionName: string, exception: any = {})
 

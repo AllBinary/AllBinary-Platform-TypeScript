@@ -144,7 +144,7 @@ PreLogUtil.put(CommonLabels.getInstance()!.START_LABEL +OpenGLCapabilities.getIn
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, this.renderStrings!.ON_SURFACE_CREATED, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, this.renderStrings!.ON_SURFACE_CREATED, e);
     
 }
 
@@ -164,7 +164,7 @@ OpenGLLogUtil.getInstance()!.logError(gl);
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, this.renderStrings!.ON_SURFACE_CREATED, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, this.renderStrings!.ON_SURFACE_CREATED, e);
     
 }
 

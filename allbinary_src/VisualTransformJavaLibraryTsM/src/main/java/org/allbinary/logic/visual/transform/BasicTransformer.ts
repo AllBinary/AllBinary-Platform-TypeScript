@@ -149,7 +149,7 @@ outputStream= this.streamUtil!.get(inputStream, outputStream, new Array(16384));
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORY))
                         
                                     {
-                                    logUtil!.put("Decrypted Template: \n" +
+                                    this.logUtil!.putF("Decrypted Template: \n" +
                                     //Otherwise - right - ObjectCreationExpr
 , this, "setEncryptedTemplateFileAsInputStream(file)");
     
@@ -182,7 +182,7 @@ stringBuffer!.append(" \nName:");
     
 stringBuffer!.append(file.getName());
     
-logUtil!.put(stringBuffer!.toString(), this, "setEncryptedTemplateFileAsInputStream()", e);
+this.logUtil!.put(stringBuffer!.toString(), this, "setEncryptedTemplateFileAsInputStream()", e);
     
 
                                     }
@@ -249,7 +249,7 @@ outputStream= this.streamUtil!.get(inputStream, outputStream, new Array(16384));
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORY))
                         
                                     {
-                                    logUtil!.put("Decrypted Template: \n" +decrypted.toString(), this, "setEncryptedTemplateAsInputStream()");
+                                    this.logUtil!.putF("Decrypted Template: \n" +decrypted.toString(), this, "setEncryptedTemplateAsInputStream()");
     
 
                                     }
@@ -266,7 +266,7 @@ this.setURIResolver(new BasicUriResolver(TransformInfoTemplateData.getInstance()
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORYERROR))
                         
                                     {
-                                    logUtil!.put("Failed to set with template: " +this.getTransformInfoInterface()!.getTemplateFilePath(), this, "setEncryptedTemplateFileAsInputStream()", e);
+                                    this.logUtil!.put("Failed to set with template: " +this.getTransformInfoInterface()!.getTemplateFilePath(), this, "setEncryptedTemplateFileAsInputStream()", e);
     
 
                                     }
@@ -313,7 +313,7 @@ this.streamUtil!.close(inputStream);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORY))
                         
                                     {
-                                    logUtil!.put(this.getTransformInfoInterface()!.log(), this, "setTemplateAsInputStream()");
+                                    this.logUtil!.putF(this.getTransformInfoInterface()!.log(), this, "setTemplateAsInputStream()");
     
 
                                     }
@@ -352,7 +352,7 @@ this.streamUtil!.close(inputStream);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORY))
                         
                                     {
-                                    logUtil!.put(this.getTransformInfoInterface()!.log(), this, "setTemplateAsInputStream()");
+                                    this.logUtil!.putF(this.getTransformInfoInterface()!.log(), this, "setTemplateAsInputStream()");
     
 
                                     }
@@ -383,7 +383,7 @@ stringBuffer!.append(transformInfoTemplateData!.ENCRYPTED_EXTENSION);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORY))
                         
                                     {
-                                    logUtil!.put(this.getTransformInfoInterface()!.log(), this, "setTemplateAsInputStream()");
+                                    this.logUtil!.putF(this.getTransformInfoInterface()!.log(), this, "setTemplateAsInputStream()");
     
 
                                     }
@@ -402,7 +402,7 @@ stringBuffer!.append("\nEncTemplateFilePath: ");
     
 stringBuffer!.append(encFile!.getPath());
     
-logUtil!.put(stringBuffer!.toString(), this, "setTemplateAsInputStream()");
+this.logUtil!.putF(stringBuffer!.toString(), this, "setTemplateAsInputStream()");
     
 
                                     }
@@ -433,7 +433,7 @@ logUtil!.put(stringBuffer!.toString(), this, "setTemplateAsInputStream()");
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORY))
                         
                                     {
-                                    logUtil!.put(this.getTransformInfoInterface()!.log(), this, "setTemplateAsInputStream()");
+                                    this.logUtil!.putF(this.getTransformInfoInterface()!.log(), this, "setTemplateAsInputStream()");
     
 
                                     }
@@ -442,7 +442,7 @@ logUtil!.put(stringBuffer!.toString(), this, "setTemplateAsInputStream()");
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORY))
                         
                                     {
-                                    logUtil!.put("Template File isFile=" +file.isFile(), this, "setTemplateAsInputStream()");
+                                    this.logUtil!.putF("Template File isFile=" +file.isFile(), this, "setTemplateAsInputStream()");
     
 
                                     }
@@ -463,7 +463,7 @@ outputStream= this.streamUtil!.get(inputStream, outputStream, new Array(16384));
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORY))
                         
                                     {
-                                    logUtil!.put("Template: " +outputStream!.toString(), this, "getTemplateAsInputStream()");
+                                    this.logUtil!.putF("Template: " +outputStream!.toString(), this, "getTemplateAsInputStream()");
     
 
                                     }
@@ -546,7 +546,7 @@ stringBuffer!.append(transformInfoTemplateData!.ENCRYPTED_EXTENSION);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORYERROR))
                         
                                     {
-                                    logUtil!.put("Failed to get Template Data", this, "setTemplateAsInputStream()", e);
+                                    this.logUtil!.put("Failed to get Template Data", this, "setTemplateAsInputStream()", e);
     
 
                                     }

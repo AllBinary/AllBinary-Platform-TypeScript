@@ -32,6 +32,10 @@ export class CustomTagSupport extends TagSupport {
         
         
 
+    readonly tagStrings: TagStrings = TagStrings.getInstance()!;
+        
+        
+
 }
                 
             

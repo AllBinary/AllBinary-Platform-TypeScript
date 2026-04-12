@@ -88,7 +88,7 @@ this.setGameKeyEvent(GameKeyEventFactory.getInstance()!.getInstance(this, NONE))
         
 ;
     
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e);
     
 }
 

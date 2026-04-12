@@ -79,7 +79,7 @@ public constructor (node: Node)
 
                             //For kotlin this is before the body of the constructor.
                     
-logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
+this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
     
 
     var actionNode: Node = DomSearchHelper.getNode(ImageActionScriptOutputData.NAME, node.getChildNodes())!;
@@ -222,7 +222,7 @@ hashMap!.put(ImageActionScriptOutputData.DISPLAY, Boolean.toString(this.isDispla
     
 hashMap!.put(ImageActionScriptOutputData.SAVE, Boolean.toString(this.isSaved()));
     
-logUtil!.put("HashMap: " +hashMap!.toString(), this, "toHashMap()");
+this.logUtil!.putF("HashMap: " +hashMap!.toString(), this, "toHashMap()");
     
 
 
@@ -342,7 +342,7 @@ stringBuffer!.append(this.getImageTypes()!.toString());
 
 
     public log(){
-logUtil!.put(this.future_toString(), this, "log");
+this.logUtil!.putF(this.future_toString(), this, "log");
     
 }
 

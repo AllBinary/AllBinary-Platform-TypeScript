@@ -201,7 +201,7 @@ geographicMapCelPositionFactoryInitVisitorInterface!.visit(tiledLayer, cellPosit
         
 ;
     
-logUtil!.put(new StringMaker().
+this.logUtil!.put(new StringMaker().
                             append(commonSeps!.BRACKET_OPEN)!.appendint(rows)!.append(commonSeps!.BRACKET_CLOSE)!.append(commonSeps!.BRACKET_OPEN)!.appendint(columns)!.append(commonSeps!.BRACKET_CLOSE)!.toString(), this, "visit", e);
     
 

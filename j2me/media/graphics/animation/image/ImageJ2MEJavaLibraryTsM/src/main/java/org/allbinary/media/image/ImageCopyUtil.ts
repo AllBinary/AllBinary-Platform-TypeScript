@@ -117,7 +117,7 @@ private constructor (){
                         )
                         
                                     {
-                                    logUtil!.put(NO_COPY, this, commonStrings!.CONSTRUCTOR, new Error());
+                                    this.logUtil!.put(NO_COPY, this, commonStrings!.CONSTRUCTOR, new Error());
     
 
 
@@ -172,7 +172,7 @@ private constructor (){
                         )
                         
                                     {
-                                    logUtil!.put(NO_COPY, this, commonStrings!.CONSTRUCTOR, new Error());
+                                    this.logUtil!.put(NO_COPY, this, commonStrings!.CONSTRUCTOR, new Error());
     
 
 

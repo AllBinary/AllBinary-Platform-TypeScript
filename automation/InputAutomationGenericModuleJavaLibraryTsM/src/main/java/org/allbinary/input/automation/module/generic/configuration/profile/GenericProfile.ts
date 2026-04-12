@@ -74,7 +74,7 @@ this.vector= new Vector();
         
 ;
     
-logUtil!.put("Name: " +this.getName() +" Child Nodes: " +nodeList!.getLength(), this, "Contructor");
+this.logUtil!.putF("Name: " +this.getName() +" Child Nodes: " +nodeList!.getLength(), this, "Contructor");
     
 
 
@@ -102,7 +102,7 @@ index < nodeList!.getLength(); index++)
         
 ;
     
-logUtil!.put("Adding GenericProfileDataWorkerType: " +genericProfileDataWorkerType!.toString(), this, "Contructor");
+this.logUtil!.putF("Adding GenericProfileDataWorkerType: " +genericProfileDataWorkerType!.toString(), this, "Contructor");
     
 this.vector.add(genericProfileDataWorkerType);
     

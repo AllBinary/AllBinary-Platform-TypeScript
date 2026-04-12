@@ -114,7 +114,7 @@ stringBuffer!.append(StringUtil.getInstance()!.toString(eventListenerInterface))
         
 ;
     
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.TOSTRING, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.TOSTRING, e);
     
 }
 
@@ -222,7 +222,7 @@ this.process(eventObject, eventListenerInterface);
         
 ;
     
-logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e);
     
 }
 

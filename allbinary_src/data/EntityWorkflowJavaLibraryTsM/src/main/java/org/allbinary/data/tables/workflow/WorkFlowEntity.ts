@@ -114,7 +114,7 @@ this.setTableName(tableName);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.SUCCESS, this, INSERT);
+                                    this.logUtil!.putF(this.commonStrings!.SUCCESS, this, INSERT);
     
 
                                     }
@@ -127,7 +127,7 @@ this.setTableName(tableName);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.FAILURE, this, INSERT, e);
+                                    this.logUtil!.put(this.commonStrings!.FAILURE, this, INSERT, e);
     
 
                                     }
@@ -158,7 +158,7 @@ super.deleteWhere(keysAndValues);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.SUCCESS, this, commonStrings!.delete);
+                                    this.logUtil!.putF(this.commonStrings!.SUCCESS, this, commonStrings!.delete);
     
 
                                     }
@@ -171,7 +171,7 @@ super.deleteWhere(keysAndValues);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.FAILURE, this, commonStrings!.delete, e);
+                                    this.logUtil!.put(this.commonStrings!.FAILURE, this, commonStrings!.delete, e);
     
 
                                     }
@@ -220,7 +220,7 @@ keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.FAILURE, this, METHOD_GET, e);
+                                    this.logUtil!.put(this.commonStrings!.FAILURE, this, METHOD_GET, e);
     
 
                                     }
@@ -238,7 +238,7 @@ keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.FAILURE, this, METHOD_GET, e);
+                                    this.logUtil!.put(this.commonStrings!.FAILURE, this, METHOD_GET, e);
     
 
                                     }
@@ -327,7 +327,7 @@ i < size; i++)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.FAILURE, this, this.METHOD_GET, e);
+                                    this.logUtil!.put(this.commonStrings!.FAILURE, this, this.METHOD_GET, e);
     
 
                                     }
@@ -371,7 +371,7 @@ super.updateWhere(wherekeysAndValues, updatedValues);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.FAILURE, this, METHOD_UPDATE, e);
+                                    this.logUtil!.put(this.commonStrings!.FAILURE, this, METHOD_UPDATE, e);
     
 
                                     }

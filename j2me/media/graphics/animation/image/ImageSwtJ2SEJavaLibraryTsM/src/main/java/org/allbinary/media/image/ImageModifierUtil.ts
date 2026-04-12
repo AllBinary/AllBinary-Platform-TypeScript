@@ -551,7 +551,7 @@ newImageArray[index]= image;
         
 ;
     
-PreLogUtil.put(commonStrings!.EXCEPTION, this, "getImageArray", e);
+PreLogUtil.putOE(commonStrings!.EXCEPTION, this, "getImageArray", e);
     
 
 

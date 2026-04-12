@@ -115,7 +115,7 @@ var node = node
                     
 this.init();
     
-logUtil!.put("Label: " +label, this, this.commonStrings!.CONSTRUCTOR);
+this.logUtil!.putF("Label: " +label, this, this.commonStrings!.CONSTRUCTOR);
     
 }
 
@@ -131,7 +131,7 @@ public constructor (label: string)
                     
 this.init();
     
-logUtil!.put("Label: " +label, this, this.commonStrings!.CONSTRUCTOR);
+this.logUtil!.putF("Label: " +label, this, this.commonStrings!.CONSTRUCTOR);
     
 }
 

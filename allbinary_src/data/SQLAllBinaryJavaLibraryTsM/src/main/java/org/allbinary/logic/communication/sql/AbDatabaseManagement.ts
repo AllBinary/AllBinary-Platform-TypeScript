@@ -157,7 +157,7 @@ public constructor (connectionInfo: DbConnectionInfo)
                 //: 
 } catch(e) 
             {
-logUtil!.put(this.FAILED, this, GET_HOST_NAME, e);
+this.logUtil!.put(this.FAILED, this, GET_HOST_NAME, e);
     
 
 
@@ -257,7 +257,7 @@ var password = password
                 //: 
 } catch(e) 
             {
-logUtil!.put(this.UNABLE_TO_CREATE_USER +userName, this, this.METHOD_ADD_USER, e);
+this.logUtil!.put(this.UNABLE_TO_CREATE_USER +userName, this, this.METHOD_ADD_USER, e);
     
 
 
@@ -296,7 +296,7 @@ super.executeSQLStatement(sqlStatement);
                 //: 
 } catch(e) 
             {
-logUtil!.put(UNABLE_TO_CREATE_DATABASE +db, this, this.METHOD_ADD_DB, e);
+this.logUtil!.put(UNABLE_TO_CREATE_DATABASE +db, this, this.METHOD_ADD_DB, e);
     
 
 

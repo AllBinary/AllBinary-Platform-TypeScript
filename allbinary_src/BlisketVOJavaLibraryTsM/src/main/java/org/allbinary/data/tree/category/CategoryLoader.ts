@@ -82,7 +82,7 @@ public constructor (categoryFactoryInterface: CategoryFactoryInterface)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
                         
                                     {
-                                    logUtil!.put(commonStrings!.START, this, "CategoryLoader(CategoryFactoryInterface categoryFactoryInterface)");
+                                    this.logUtil!.putF(commonStrings!.START, this, "CategoryLoader(CategoryFactoryInterface categoryFactoryInterface)");
     
 
                                     }
@@ -191,11 +191,11 @@ this.save(categoryInterface);
                 //: 
 } catch(e2) 
             {
-logUtil!.put("Could Not Log Category", this, "getDoc", e);
+this.logUtil!.put("Could Not Log Category", this, "getDoc", e);
     
 }
 
-logUtil!.put(this.commonStrings!.FAILURE, this, "getDoc", e);
+this.logUtil!.put(this.commonStrings!.FAILURE, this, "getDoc", e);
     
 
                                     }
@@ -244,7 +244,7 @@ var categoryInterface = categoryInterface
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.FAILURE, this, commonStrings!.GET, e);
+                                    this.logUtil!.put(this.commonStrings!.FAILURE, this, commonStrings!.GET, e);
     
 
                                     }
@@ -293,7 +293,7 @@ var document = document
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.FAILURE, this, commonStrings!.GET, e);
+                                    this.logUtil!.put(this.commonStrings!.FAILURE, this, commonStrings!.GET, e);
     
 
                                     }
@@ -336,7 +336,7 @@ var categoryInterface = categoryInterface
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.FAILURE, this, commonStrings!.GET, e);
+                                    this.logUtil!.put(this.commonStrings!.FAILURE, this, commonStrings!.GET, e);
     
 
                                     }
@@ -385,7 +385,7 @@ var document = document
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.FAILURE, this, commonStrings!.GET, e);
+                                    this.logUtil!.put(this.commonStrings!.FAILURE, this, commonStrings!.GET, e);
     
 
                                     }
@@ -467,7 +467,7 @@ parentCategoryInterface!.addChild(categoryInterface);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.FAILURE, this, commonStrings!.GET, e);
+                                    this.logUtil!.put(this.commonStrings!.FAILURE, this, commonStrings!.GET, e);
     
 
                                     }
@@ -547,7 +547,7 @@ loadedCategoryInterface!.addChildProperty(categoryPropertiesInterface);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.FAILURE, this, commonStrings!.GET, e);
+                                    this.logUtil!.put(this.commonStrings!.FAILURE, this, commonStrings!.GET, e);
     
 
                                     }

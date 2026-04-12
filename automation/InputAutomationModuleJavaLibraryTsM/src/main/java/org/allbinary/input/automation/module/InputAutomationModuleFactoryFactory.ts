@@ -117,7 +117,7 @@ this.add(inputAutomationModuleConfiguration);
 
 this.defaultListModelHelper!.initDefaultModelList();
     
-logUtil!.put("Loaded " +this.hashMap!.size +"/" +this.defaultListModelHelper!.getListModel()!.getSize() +" Input Automation Modules", this, "Contructor");
+this.logUtil!.putF("Loaded " +this.hashMap!.size +"/" +this.defaultListModelHelper!.getListModel()!.getSize() +" Input Automation Modules", this, "Contructor");
     
 }
 
@@ -180,7 +180,7 @@ this.helpSetListenerInterface!.helpSetAdded(helpSetEvent);
         
 ;
     
-logUtil!.put("Getting Module: " +moduleName, this, commonStrings!.GET_INSTANCE);
+this.logUtil!.putF("Getting Module: " +moduleName, this, commonStrings!.GET_INSTANCE);
     
 
     var inputAutomationModuleFactoryInterface: InputAutomationModuleFactoryInterface = this.hashMap!.get(moduleName as Object);
@@ -196,7 +196,7 @@ logUtil!.put("Getting Module: " +moduleName, this, commonStrings!.GET_INSTANCE);
                                 )
                         
                                     {
-                                    logUtil!.put("Module: " +moduleName +" was null", this, commonStrings!.GET_INSTANCE);
+                                    this.logUtil!.putF("Module: " +moduleName +" was null", this, commonStrings!.GET_INSTANCE);
     
 
                                     }

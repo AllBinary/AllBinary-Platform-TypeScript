@@ -155,7 +155,7 @@ var allBinaryGameLayerManager = allBinaryGameLayerManager
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public setDemo(){
-logUtil!.put(commonStrings!.START, this, "setDemo");
+this.logUtil!.putF(commonStrings!.START, this, "setDemo");
     
 
     var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
@@ -180,7 +180,7 @@ PrimaryThreadPool.getInstance()!.runTask(new DemoRunnable(this));
         
 ;
     
-logUtil!.put(commonStrings!.START, this, CREATE_GAME);
+this.logUtil!.putF(commonStrings!.START, this, CREATE_GAME);
     
 
     var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
@@ -200,7 +200,7 @@ this.setStartStateHashtable(NullUtil.getInstance()!.NULL_TABLE);
     
 PrimaryThreadPool.getInstance()!.runTask(new CreateGameRunnable(this, hashtable));
     
-logUtil!.put(commonStrings!.END, this, CREATE_GAME);
+this.logUtil!.putF(commonStrings!.END, this, CREATE_GAME);
     
 }
 

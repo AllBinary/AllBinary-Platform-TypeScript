@@ -128,7 +128,7 @@ this.value= value;
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "set()", e);
+                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "set()", e);
     
 
                                     }
@@ -207,7 +207,7 @@ this.value= value;
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "setShippingAddressToBillingAddress()", e);
+                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "setShippingAddressToBillingAddress()", e);
     
 
                                     }

@@ -272,7 +272,7 @@ var colorRangeInterface = colorRangeInterface
         
 ;
     
-logUtil!.put(CommonLabels.getInstance()!.START +colorRangeInterface!.toString(), this, commonStrings!.PROCESS);
+this.logUtil!.putF(CommonLabels.getInstance()!.START +colorRangeInterface!.toString(), this, commonStrings!.PROCESS);
     
 
     var imageAnalysisResultsArray: ImageAnalysisResults[] = new Array(bufferedImageArray!.length);

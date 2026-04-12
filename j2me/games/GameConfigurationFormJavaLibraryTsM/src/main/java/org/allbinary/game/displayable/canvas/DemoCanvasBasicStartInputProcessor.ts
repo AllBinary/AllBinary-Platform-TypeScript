@@ -90,7 +90,7 @@ index < size; index++)
         {
 gameKeyEvent= list.objectArray[index]! as GameKeyEvent;
     
-logUtil!.put(new StringMaker().
+this.logUtil!.putF(new StringMaker().
                             append("Start GameKey: ")!.append(StringUtil.getInstance()!.toString(gameKeyEvent))!.toString(), this, GameInputStrings.getInstance()!.PROCESS_INPUT);
     
 }

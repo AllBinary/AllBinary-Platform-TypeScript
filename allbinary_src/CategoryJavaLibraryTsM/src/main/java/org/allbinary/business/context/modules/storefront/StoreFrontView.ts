@@ -68,7 +68,7 @@ public constructor (storeFrontInterface: StoreFrontInterface){
         
 ;
     
-logUtil!.put("Constructing: StoreFrontView for: " +storeFrontInterface!.getName(), this, commonStrings!.GET_INSTANCE);
+this.logUtil!.putF("Constructing: StoreFrontView for: " +storeFrontInterface!.getName(), this, commonStrings!.GET_INSTANCE);
     
 
                                     }

@@ -83,7 +83,7 @@ export class InputToGameKeyMapping extends InputMapping {
 public constructor (){
 
             super();
-            logUtil!.put(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
+            this.logUtil!.putF(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
     
 this.clear();
     
@@ -187,7 +187,7 @@ this.set(input, mappedToInput);
     public remove(input: Input, mappedToInput: Input){
 var input = input
 var mappedToInput = mappedToInput
-logUtil!.put(new StringMaker().
+this.logUtil!.putF(new StringMaker().
                             append(CommonLabels.getInstance()!.START_LABEL)!.append(StringUtil.getInstance()!.toString(input))!.append(" == ")!.append(StringUtil.getInstance()!.toString(mappedToInput))!.toString(), this, "InputToGameKeyMapping::remove");
     
 super.remove(input, mappedToInput);
@@ -454,7 +454,7 @@ this.init(canvas, mappedGameKeys[index]!);
                 //: 
 } catch(t) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, t);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, t);
     
 }
 

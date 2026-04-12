@@ -132,7 +132,7 @@ this.name= name;
     
 hashMap!.put(GenericProfileActionData.NAME, this.name);
     
-logUtil!.put("HashMap: " +hashMap!.toString(), this, "toHashMap()");
+this.logUtil!.putF("HashMap: " +hashMap!.toString(), this, "toHashMap()");
     
 
 

@@ -217,14 +217,14 @@ this.load();
     
 
         try {
-            logUtil!.put(new StringMaker().
+            this.logUtil!.putF(new StringMaker().
                             append("Adding HighScore: ")!.appendlong(newHighScore!.getScore())!.toString(), this, commonStrings!.ADD);
     
 
                         if(this.isTooManyHighScores())
                         
                                     {
-                                    logUtil!.put("Removing Lowest Score", this, commonStrings!.ADD);
+                                    this.logUtil!.putF("Removing Lowest Score", this, commonStrings!.ADD);
     
 this.removeLowestHighScore();
     
@@ -251,21 +251,21 @@ this.load();
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.ADD, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.ADD, e);
     
 }
 
                 //: 
  catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.ADD, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.ADD, e);
     
 }
 
                 //: 
  catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.ADD, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.ADD, e);
     
 }
 
@@ -289,7 +289,7 @@ recordStore!.closeRecordStore();
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.ADD, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.ADD, e);
     
 }
 
@@ -397,7 +397,7 @@ inputStream= new DataInputStream(byteArrayInputStream);
                         if(bestHighScore!.getId() !=  -1)
                         
                                     {
-                                    logUtil!.put(new StringMaker().
+                                    this.logUtil!.putF(new StringMaker().
                             append("Removing Lowest HighScore: ")!.appendlong(bestHighScore!.getScore())!.toString(), this, commonStrings!.LOAD);
     
 recordStore!.deleteRecord(bestHighScore!.getId());
@@ -409,14 +409,14 @@ recordStore!.deleteRecord(bestHighScore!.getId());
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "removeLowestHighScore", e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, "removeLowestHighScore", e);
     
 }
 
                 //: 
  catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "removeLowestHighScore", e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, "removeLowestHighScore", e);
     
 }
 
@@ -440,7 +440,7 @@ recordStore!.closeRecordStore();
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "removeLowestHighScore", e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, "removeLowestHighScore", e);
     
 }
 
@@ -576,7 +576,7 @@ list.add(lastIndex, newHighScore);
                 //: 
 } catch(e) 
             {
-logUtil!.put("EOF", this, commonStrings!.LOAD, e);
+this.logUtil!.put("EOF", this, commonStrings!.LOAD, e);
     
 
 
@@ -593,28 +593,28 @@ logUtil!.put("EOF", this, commonStrings!.LOAD, e);
                 //: 
 } catch(e) 
             {
-logUtil!.put("No High Scores", this, commonStrings!.LOAD, e);
+this.logUtil!.put("No High Scores", this, commonStrings!.LOAD, e);
     
 }
 
                 //: 
  catch(e) 
             {
-logUtil!.put(commonStrings!.UNKNOWN, this, commonStrings!.LOAD, e);
+this.logUtil!.put(commonStrings!.UNKNOWN, this, commonStrings!.LOAD, e);
     
 }
 
                 //: 
  catch(e) 
             {
-logUtil!.put(commonStrings!.UNKNOWN, this, commonStrings!.LOAD, e);
+this.logUtil!.put(commonStrings!.UNKNOWN, this, commonStrings!.LOAD, e);
     
 }
 
                 //: 
  catch(e) 
             {
-logUtil!.put(commonStrings!.UNKNOWN, this, commonStrings!.LOAD, e);
+this.logUtil!.put(commonStrings!.UNKNOWN, this, commonStrings!.LOAD, e);
     
 }
 
@@ -638,7 +638,7 @@ recordStore!.closeRecordStore();
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.LOAD, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.LOAD, e);
     
 }
 
@@ -665,7 +665,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.LOAD, e);
                                     }
                                 
                         else {
-                            logUtil!.put(new StringMaker().
+                            this.logUtil!.putF(new StringMaker().
                             append("HighScores RecordStore Max Reached: ")!.appendint(this.MAXHIGHSCORES)!.toString(), this, "isTooManyHighScores");
     
 
@@ -693,7 +693,7 @@ var newHighScore = newHighScore
                         )
                         
                                     {
-                                    logUtil!.put("Slot Available for a High Score", this, "isBestScore");
+                                    this.logUtil!.putF("Slot Available for a High Score", this, "isBestScore");
     
 
 
@@ -737,7 +737,7 @@ index < size; index++)
                         if(recordComparatorInterface!.compare(newHighScore!.getAsBytes(), highScore!.getAsBytes()) == RecordComparator.FOLLOWS)
                         
                                     {
-                                    logUtil!.put("Obtained a High Score", this, "isBestScore");
+                                    this.logUtil!.putF("Obtained a High Score", this, "isBestScore");
     
 
 
@@ -753,7 +753,7 @@ index < size; index++)
 
                         }
                             
-logUtil!.put("Not a High Score", this, "isBestScore");
+this.logUtil!.putF("Not a High Score", this, "isBestScore");
     
 
 
@@ -765,7 +765,7 @@ logUtil!.put("Not a High Score", this, "isBestScore");
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.ADD, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.ADD, e);
     
 
 

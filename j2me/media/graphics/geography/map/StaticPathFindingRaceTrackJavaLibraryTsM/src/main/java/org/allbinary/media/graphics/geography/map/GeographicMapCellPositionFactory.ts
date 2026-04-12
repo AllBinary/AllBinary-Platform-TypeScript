@@ -86,7 +86,7 @@ export class GeographicMapCellPositionFactory extends GeographicMapCellPositionB
                                 )
                         
                                     {
-                                    logUtil!.put(new StringMaker().
+                                    this.logUtil!.putF(new StringMaker().
                             append("Creating GeographicMapCellPositionFactory for TileLayer: ")!.appendint(allBinaryTiledLayer!.getDataId()!.toInt())!.toString(), this, commonStrings!.GET_INSTANCE);
     
 geographicMapCellPositionFactoryCanBeNull= new BasicGeographicMapCellPositionFactory(geographicMapInterface);
@@ -103,7 +103,7 @@ hashtable.put(allBinaryTiledLayer!.getDataId(), geographicMapCellPositionFactory
                                     }
                                 
                         else {
-                            logUtil!.put(new StringMaker().
+                            this.logUtil!.putF(new StringMaker().
                             append("Reusing GeographicMapCellPositionFactory for TileLayer: ")!.appendint(allBinaryTiledLayer!.getDataId()!.toInt())!.toString(), this, commonStrings!.GET_INSTANCE);
     
 

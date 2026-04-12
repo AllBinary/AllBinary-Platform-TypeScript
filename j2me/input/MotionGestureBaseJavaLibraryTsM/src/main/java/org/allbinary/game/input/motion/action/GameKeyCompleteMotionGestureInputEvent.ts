@@ -115,7 +115,7 @@ this.setGameKeyEvent(this.gameKeyEventFactory!.getInstance(this, getGameKey()));
         
 ;
     
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.UPDATE, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.UPDATE, e);
     
 }
 

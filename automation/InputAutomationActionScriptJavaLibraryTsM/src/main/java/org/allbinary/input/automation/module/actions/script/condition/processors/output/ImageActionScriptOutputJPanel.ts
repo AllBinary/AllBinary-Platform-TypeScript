@@ -53,7 +53,7 @@ public constructor (capturedImageActionScriptOutputInterface: ImageActionScriptO
 
             super();
             var capturedImageActionScriptOutputInterface = capturedImageActionScriptOutputInterface
-logUtil!.put(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
+this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
     
 initComponents();
     

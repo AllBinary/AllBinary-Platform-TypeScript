@@ -66,7 +66,7 @@ eventList!.add(gameKeyCompleteMotionGestureInputEvent);
 
 
     public updateAll(){
-logUtil!.put(new StringMaker().
+this.logUtil!.putF(new StringMaker().
                             append(CommonLabels.getInstance()!.START_LABEL)!.appendint(eventList!.size())!.toString(), this, "updateAll");
     
 

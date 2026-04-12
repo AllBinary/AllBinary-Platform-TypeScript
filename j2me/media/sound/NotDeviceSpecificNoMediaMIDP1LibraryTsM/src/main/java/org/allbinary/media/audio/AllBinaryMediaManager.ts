@@ -87,7 +87,7 @@ var soundsFactoryInterface = soundsFactoryInterface
         
 ;
     
-logUtil!.put(commonString!.START, THIS, commonString!.INIT);
+logUtil!.putF(commonString!.START, THIS, commonString!.INIT);
     
 ProgressCanvasFactory.getInstance()!.addPortion(50, "Media Manager");
     
@@ -127,7 +127,7 @@ var type = type
         
 ;
     
-logUtil!.put(commonString!.START, THIS, "creatPlayer(InputStream)");
+logUtil!.putF(commonString!.START, THIS, "creatPlayer(InputStream)");
     
 
 
@@ -152,7 +152,7 @@ var locator = locator
         
 ;
     
-logUtil!.put(commonString!.START, THIS, "creatPlayer(locator)");
+logUtil!.putF(commonString!.START, THIS, "creatPlayer(locator)");
     
 
 

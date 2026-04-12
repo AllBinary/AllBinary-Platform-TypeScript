@@ -71,7 +71,7 @@ var httpServletRequest = httpServletRequest
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PAYMENT))
                         
                                     {
-                                    logUtil!.put("Getting", this, commonStrings!.GET_INSTANCE);
+                                    this.logUtil!.putF("Getting", this, commonStrings!.GET_INSTANCE);
     
 
                                     }
@@ -93,7 +93,7 @@ var httpServletRequest = httpServletRequest
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PAYMENTERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(HttpServletRequest)", e);
+                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(HttpServletRequest)", e);
     
 
                                     }
@@ -160,7 +160,7 @@ var hashMap = hashMap
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PAYMENT))
                         
                                     {
-                                    logUtil!.put("Getting PaymentGatewayInterface for PaymentType: " +paymentType!.getName() +" with: " +hashMap, this, commonStrings!.GET_INSTANCE);
+                                    this.logUtil!.putF("Getting PaymentGatewayInterface for PaymentType: " +paymentType!.getName() +" with: " +hashMap, this, commonStrings!.GET_INSTANCE);
     
 
                                     }
@@ -187,7 +187,7 @@ var hashMap = hashMap
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PAYMENTERROR))
                         
                                     {
-                                    logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e);
+                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e);
     
 
                                     }

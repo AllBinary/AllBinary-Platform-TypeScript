@@ -177,7 +177,7 @@ index < size; index++)
                                 
 }
 
-logUtil!.put("minX: " +minX +" minY: " +minY +" maxX: " +maxX +" maxY: " +maxY, this, commonStrings!.GET_INSTANCE);
+this.logUtil!.putF("minX: " +minX +" minY: " +minY +" maxX: " +maxX +" maxY: " +maxY, this, commonStrings!.GET_INSTANCE);
     
 setWidth(maxX -minX);
     
@@ -217,7 +217,7 @@ setHeight(maxY -minY);
         
 ;
     
-logUtil!.put(s, this, commonStrings!.GET_INSTANCE);
+this.logUtil!.putF(s, this, commonStrings!.GET_INSTANCE);
     
 
     var currentMiddleX: number = minX +getWidth() /2;
@@ -244,7 +244,7 @@ dy= middle -currentMiddleY;
 var hashMap = hashMap
 this.calculate(hashMap);
     
-logUtil!.put(new StringMaker().
+this.logUtil!.putF(new StringMaker().
                             append(" dx: ")!.appendint(dx)!.append(" dy: ")!.appendint(dy)!.toString(), this, commonStrings!.GET_INSTANCE);
     
 
@@ -377,7 +377,7 @@ index < size; index++)
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e);
     
 
 

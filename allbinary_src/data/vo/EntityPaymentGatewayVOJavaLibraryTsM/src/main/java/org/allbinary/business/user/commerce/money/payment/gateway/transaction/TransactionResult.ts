@@ -113,7 +113,7 @@ keyValuePairs!.putAll(hashtable);
         
 ;
     
-logUtil!.put(exceptionMessage, this, this.commonStrings!.CONSTRUCTOR);
+this.logUtil!.putF(exceptionMessage, this, this.commonStrings!.CONSTRUCTOR);
     
 }
 

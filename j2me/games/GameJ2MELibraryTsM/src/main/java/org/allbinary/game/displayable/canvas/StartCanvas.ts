@@ -485,7 +485,7 @@ this.overlayPaintable!.init();
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, this.canvasStrings!.ON_DISPLAY_CHANGE_EVENT, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, this.canvasStrings!.ON_DISPLAY_CHANGE_EVENT, e);
     
 }
 
@@ -806,7 +806,7 @@ DownGameKeyEventHandler.getInstance()!.fireEvent(gameKeyEvent);
                                     }
                                 
                         else {
-                            logUtil!.put(new StringMaker().
+                            this.logUtil!.putF(new StringMaker().
                             append(this.gameInputStrings!.NO_KEY)!.appendint(keyCode)!.toString(), this, this.gameInputStrings!.ADD_KEY_EVENT);
     
 
@@ -816,7 +816,7 @@ DownGameKeyEventHandler.getInstance()!.fireEvent(gameKeyEvent);
                 //: 
 } catch(e) 
             {
-logUtil!.put("Key Event Error", this, this.gameInputStrings!.ADD_KEY_EVENT, e);
+this.logUtil!.put("Key Event Error", this, this.gameInputStrings!.ADD_KEY_EVENT, e);
     
 }
 
@@ -850,7 +850,7 @@ UpGameKeyEventHandler.getInstance()!.fireEvent(gameKeyEvent);
                                     }
                                 
                         else {
-                            logUtil!.put(new StringMaker().
+                            this.logUtil!.putF(new StringMaker().
                             append(this.gameInputStrings!.NO_KEY)!.appendint(keyCode)!.toString(), this, this.gameInputStrings!.REMOVE_KEY_EVENT);
     
 
@@ -860,7 +860,7 @@ UpGameKeyEventHandler.getInstance()!.fireEvent(gameKeyEvent);
                 //: 
 } catch(e) 
             {
-logUtil!.put("Key Event Error", this, this.gameInputStrings!.REMOVE_KEY_EVENT, e);
+this.logUtil!.put("Key Event Error", this, this.gameInputStrings!.REMOVE_KEY_EVENT, e);
     
 }
 
@@ -913,7 +913,7 @@ this.setPaused(false);
 
 
     public isGameOver(): boolean{
-logUtil!.put(new StringMaker().
+this.logUtil!.putF(new StringMaker().
                             append(commonStrings!.NOT_IMPLEMENTED)!.append(" since not a game")!.toString(), this, "isGameOver");
     
 
@@ -929,7 +929,7 @@ logUtil!.put(new StringMaker().
             
     public setLoadStateHashtable(hashtable: Hashtable<any, any>){
 var hashtable = hashtable
-logUtil!.put("Trying to continue a demo lol - only continue a game canvas not the demo", this, "setLoadStateHashtable");
+this.logUtil!.putF("Trying to continue a demo lol - only continue a game canvas not the demo", this, "setLoadStateHashtable");
     
 }
 
@@ -937,7 +937,7 @@ logUtil!.put("Trying to continue a demo lol - only continue a game canvas not th
                 //@Throws(Error::class)
             
     public getLoadStateHashtable(): Hashtable<any, any>{
-logUtil!.put("Trying to continue a demo lol - only continue a game canvas not the demo", this, "getLoadStateHashtable");
+this.logUtil!.putF("Trying to continue a demo lol - only continue a game canvas not the demo", this, "getLoadStateHashtable");
     
 
 
@@ -951,7 +951,7 @@ logUtil!.put("Trying to continue a demo lol - only continue a game canvas not th
                 //@Throws(Error::class)
             
     public getCurrentStateHashtable(): Hashtable<any, any>{
-logUtil!.put("Trying to save the AI lol", this, "getCurrentStateHashtable");
+this.logUtil!.putF("Trying to save the AI lol", this, "getCurrentStateHashtable");
     
 
 
@@ -995,7 +995,7 @@ this.paintedSpecialAnimationInterface!.paintThreed(graphics, 0, 0, 0);
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public setGameOver(){
-logUtil!.put("Not Implemented since not a game", this, "setGameOver");
+this.logUtil!.putF("Not Implemented since not a game", this, "setGameOver");
     
 }
 
@@ -1236,7 +1236,7 @@ this.process();
 
 
     public run(){
-logUtil!.put(commonStrings!.START_RUNNABLE, this, commonStrings!.RUN);
+this.logUtil!.putF(commonStrings!.START_RUNNABLE, this, commonStrings!.RUN);
     
 
         try {
@@ -1312,11 +1312,11 @@ this.end();
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
     
 }
 
-logUtil!.put(commonStrings!.END_RUNNABLE, this, commonStrings!.RUN);
+this.logUtil!.putF(commonStrings!.END_RUNNABLE, this, commonStrings!.RUN);
     
 }
 
@@ -1348,7 +1348,7 @@ this.end();
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, SET_RUNNING, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, SET_RUNNING, e);
     
 }
 
@@ -1382,7 +1382,7 @@ baseGameStatistics!.init();
 
                                     }
                                 
-logUtil!.put("Demo End", this, commonStrings!.RUN);
+this.logUtil!.putF("Demo End", this, commonStrings!.RUN);
     
 this.close();
     
@@ -1424,7 +1424,7 @@ this.state= state;
 
 
     public isHighScoreSubmitted(): boolean{
-logUtil!.put("Wow the AI got a high score!", this, "isHighScoreSubmitted");
+this.logUtil!.putF("Wow the AI got a high score!", this, "isHighScoreSubmitted");
     
 
 

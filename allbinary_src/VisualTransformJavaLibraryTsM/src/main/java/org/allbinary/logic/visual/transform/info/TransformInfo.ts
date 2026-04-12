@@ -239,7 +239,7 @@ stringBuffer!.append("\n properties: ");
     
 stringBuffer!.append(hashMap!.toString());
     
-logUtil!.put(stringBuffer!.toString(), this, "override(HashMap hashMap)");
+this.logUtil!.putF(stringBuffer!.toString(), this, "override(HashMap hashMap)");
     
 
                                     }
@@ -320,7 +320,7 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("TransformInfo override view Object for: " +this.getName(), this, "override(HashMap hashMap)");
+                                    this.logUtil!.putF("TransformInfo override view Object for: " +this.getName(), this, "override(HashMap hashMap)");
     
 
                                     }
@@ -358,7 +358,7 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("TransformInfo override ObjectConfig for: " +this.getName(), this, "override(HashMap hashMap)");
+                                    this.logUtil!.putF("TransformInfo override ObjectConfig for: " +this.getName(), this, "override(HashMap hashMap)");
     
 
                                     }
@@ -388,7 +388,7 @@ this.setObjectConfig(hashMap!.get(transformInfoData!.OBJECTCONFIG);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("TransformInfo override ObjectConfig File for: " +this.getName(), this, "override(HashMap hashMap)");
+                                    this.logUtil!.putF("TransformInfo override ObjectConfig File for: " +this.getName(), this, "override(HashMap hashMap)");
     
 
                                     }
@@ -465,7 +465,7 @@ this.getObjectConfigInterface()!.setOutputTypeName(type);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("TransformInfo override Template for: " +this.getName(), this, "override(HashMap hashMap)");
+                                    this.logUtil!.putF("TransformInfo override Template for: " +this.getName(), this, "override(HashMap hashMap)");
     
 
                                     }
@@ -528,7 +528,7 @@ this.getObjectConfigInterface()!.setOutputTypeName(type);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("TransformInfo override Data for: " +this.getName(), this, "override(HashMap hashMap)");
+                                    this.logUtil!.putF("TransformInfo override Data for: " +this.getName(), this, "override(HashMap hashMap)");
     
 
                                     }
@@ -590,7 +590,7 @@ stringBuffer!.append(this.getObjectFile());
     
 stringBuffer!.append("->TransformInfo");
     
-logUtil!.put(stringBuffer!.toString(), this, "TransformInfoInterface(HashMap)");
+this.logUtil!.putF(stringBuffer!.toString(), this, "TransformInfoInterface(HashMap)");
     
 
                                     }
@@ -599,7 +599,7 @@ logUtil!.put(stringBuffer!.toString(), this, "TransformInfoInterface(HashMap)");
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORY))
                         
                                     {
-                                    logUtil!.put(this.log(), this, "override");
+                                    this.logUtil!.putF(this.log(), this, "override");
     
 
                                     }
@@ -892,7 +892,7 @@ this.data= value;
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Data File overriding existing data: " +this.getDataFilePath(), this, "getData()");
+                                    this.logUtil!.putF("Data File overriding existing data: " +this.getDataFilePath(), this, "getData()");
     
 
                                     }
@@ -910,7 +910,7 @@ this.data= fileData;
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("Could Not Load Data from: " +this.getDataFile(), this, "getData()", e);
+                                    this.logUtil!.put("Could Not Load Data from: " +this.getDataFile(), this, "getData()", e);
     
 
                                     }
@@ -932,7 +932,7 @@ this.data= fileData;
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("Data: " +DomDocumentHelper.toString(DomDocumentHelper.create(data)), this, "getData()");
+                                    this.logUtil!.putF("Data: " +DomDocumentHelper.toString(DomDocumentHelper.create(data)), this, "getData()");
     
 
                                     }
@@ -967,7 +967,7 @@ stringBuffer!.append(this.getDataFilePath()!.toFileSystemString());
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put(stringBuffer!.toString(), this, "getData()");
+                                    this.logUtil!.putF(stringBuffer!.toString(), this, "getData()");
     
 
                                     }
@@ -986,7 +986,7 @@ stringBuffer!.append(this.getDataFilePath()!.toFileSystemString());
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("Could Not Preview Data: " +this.data, this, "getData()", e);
+                                    this.logUtil!.put("Could Not Preview Data: " +this.data, this, "getData()", e);
     
 
                                     }
@@ -1025,7 +1025,7 @@ stringBuffer!.append(this.getDataFilePath()!.toFileSystemString());
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("No Data So Creating New Document", this, "getDataDocument()");
+                                    this.logUtil!.putF("No Data So Creating New Document", this, "getDataDocument()");
     
 
                                     }

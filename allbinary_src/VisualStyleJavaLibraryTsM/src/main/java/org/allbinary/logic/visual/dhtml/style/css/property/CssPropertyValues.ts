@@ -98,7 +98,7 @@ this.propertyValueVector= new Vector();
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.STYLE))
                         
                                     {
-                                    logUtil!.put("Number Of Properties: " +cssPropertyNodeVector!.length, this, "CssProperties()");
+                                    this.logUtil!.putF("Number Of Properties: " +cssPropertyNodeVector!.length, this, "CssProperties()");
     
 
                                     }
@@ -143,7 +143,7 @@ index < size; index++)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.STYLE))
                         
                                     {
-                                    logUtil!.put("Property Value: " +propertyValue, this, "CssProperties()");
+                                    this.logUtil!.putF("Property Value: " +propertyValue, this, "CssProperties()");
     
 
                                     }
@@ -289,7 +289,7 @@ var document = document
         
 ;
     
-logUtil!.put("CssPropertyValues HashMap: " +hashMap!.toString(), this, "toXmlNode()");
+this.logUtil!.putF("CssPropertyValues HashMap: " +hashMap!.toString(), this, "toXmlNode()");
     
 
                                     }

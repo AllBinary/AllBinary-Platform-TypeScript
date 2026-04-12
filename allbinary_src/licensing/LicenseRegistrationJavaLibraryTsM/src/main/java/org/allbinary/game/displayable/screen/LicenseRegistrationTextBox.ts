@@ -131,7 +131,7 @@ virtualKeyboardEventHandler!.fireEvent(virtualKeyboardEventHandler!.SHOW_EVENT);
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "open", e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, "open", e);
     
 }
 
@@ -159,7 +159,7 @@ virtualKeyboardEventHandler!.fireEvent(virtualKeyboardEventHandler!.HIDE_EVENT);
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "open", e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, "open", e);
     
 }
 

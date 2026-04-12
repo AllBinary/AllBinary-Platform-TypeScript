@@ -122,7 +122,7 @@ previousGameKeyEvent= gameKeyEvent;
         
 ;
     
-logUtil!.put(commonStrings!.EXCEPTION, this, "onCompleteMotionGestureInputEvent", e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, "onCompleteMotionGestureInputEvent", e);
     
 }
 

@@ -69,7 +69,7 @@ export class RequestParams
 public constructor (){
 
             super();
-            logUtil!.put("New RequestParams Size: 0", this, this.commonStrings!.CONSTRUCTOR);
+            this.logUtil!.putF("New RequestParams Size: 0", this, this.commonStrings!.CONSTRUCTOR);
     
 }
 
@@ -79,7 +79,7 @@ public constructor (request: HttpServletRequest){
             var request = request
 map= request.getParameterMap();
     
-logUtil!.put("RequestParams Size: " +this.getMap()!.keySet()!.size(), this, this.commonStrings!.CONSTRUCTOR);
+this.logUtil!.putF("RequestParams Size: " +this.getMap()!.keySet()!.size(), this, this.commonStrings!.CONSTRUCTOR);
     
 }
 
@@ -89,7 +89,7 @@ public constructor (pageContext: PageContext){
             var pageContext = pageContext
 map= pageContext!.getRequest()!.getParameterMap();
     
-logUtil!.put("Request Params Size: " +this.getMap()!.keySet()!.size(), this, this.commonStrings!.CONSTRUCTOR);
+this.logUtil!.putF("Request Params Size: " +this.getMap()!.keySet()!.size(), this, this.commonStrings!.CONSTRUCTOR);
     
 }
 
@@ -188,7 +188,7 @@ stringBuffer!.append(VALUE);
     
 stringBuffer!.append(values[0]!);
     
-logUtil!.put(stringBuffer!.toString(), this, "toXmlNode(document)");
+this.logUtil!.putF(stringBuffer!.toString(), this, "toXmlNode(document)");
     
 node.appendChild(ModDomHelper.createNameValueNodes(document, RequestData.PARAMETER, key.toCharArray()
                                         .slice(0, ).join('')
@@ -206,7 +206,7 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, RequestData.PARAMET
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "toXmlNode(document)", e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, "toXmlNode(document)", e);
     
 
 
@@ -293,7 +293,7 @@ stringBuffer!.append("\ntoHashMap: ");
     
 stringBuffer!.append(hashMap!.toString());
     
-logUtil!.put(stringBuffer!.toString(), this, "toHashMap()");
+this.logUtil!.putF(stringBuffer!.toString(), this, "toHashMap()");
     
 
 

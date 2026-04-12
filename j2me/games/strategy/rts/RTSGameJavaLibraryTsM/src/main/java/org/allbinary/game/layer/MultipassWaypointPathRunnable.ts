@@ -78,6 +78,12 @@ export class MultipassWaypointPathRunnable extends WaypointPathRunnableBase {
                                 
     public run(){
 
+    var logUtil: LogUtil = LogUtil.getInstance()!;
+        
+        
+;
+    
+
         try {
             pathFindingLayer!.getWaypointRunnableLogHelper()!.start(pathFindingLayer);
     
@@ -157,6 +163,12 @@ finish();
                                 
     public run(){
 
+    var logUtil: LogUtil = LogUtil.getInstance()!;
+        
+        
+;
+    
+
         try {
             
     var geographicMapCellPosition: GeographicMapCellPosition = pathFindingLayer!.getCurrentGeographicMapCellPosition()!;
@@ -210,6 +222,12 @@ finish();
                                 {
                                 
     public run(){
+
+    var logUtil: LogUtil = LogUtil.getInstance()!;
+        
+        
+;
+    
 
         try {
             
@@ -290,6 +308,12 @@ this.done= false;
 
 
     public run(){
+
+    var logUtil: LogUtil = LogUtil.getInstance()!;
+        
+        
+;
+    
 
         try {
             this.currentPassRunnable!.run();

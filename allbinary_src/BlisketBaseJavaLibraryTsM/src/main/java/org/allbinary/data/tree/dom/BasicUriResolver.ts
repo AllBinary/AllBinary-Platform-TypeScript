@@ -170,7 +170,7 @@ stringBuffer!.append(REQUIRED_EXTENSION);
     
 stringBuffer!.append(extension);
     
-logUtil!.put(stringBuffer!.toString(), this, RESOLVE);
+this.logUtil!.putF(stringBuffer!.toString(), this, RESOLVE);
     
 
                                     }

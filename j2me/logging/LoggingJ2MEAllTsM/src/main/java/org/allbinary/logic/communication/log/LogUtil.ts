@@ -18,6 +18,8 @@
 
 
 
+            import { Integer } from "../../../../../java/lang/Integer.js";
+        
 import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";
 
     
@@ -25,6 +27,12 @@ import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
 
     
 import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings.js";
+
+    
+import { LogFormatUtil } from "../../../../../org/allbinary/logic/communication/log/LogFormatUtil.js";
+
+    
+import { Log } from "../../../../../org/allbinary/logic/communication/log/Log.js";
 
     
 
@@ -42,14 +50,10 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return LogUtil.instance;
     
 }
 
-
-    private static readonly LOG_SUCCESS: string = "org.allbinary: ";
-        
-        
 private constructor (){
 
             super();
@@ -60,7 +64,7 @@ private constructor (){
         
         
 
-    /*actual*/ public put(log: Log){
+    /*actual*/ public putL(log: Log){
 var log = log
 
     var specialMessage: string = log.getSpecialMessage()!;
@@ -91,7 +95,7 @@ this.put(specialMessage, anyType, functionName, exception);
 }
 
 
-    /*actual*/ public put(specialMessage: string, anyType: any = {}, functionName: string){
+    /*actual*/ public putF(specialMessage: string, anyType: any = {}, functionName: string){
     //var specialMessage = specialMessage
     //var anyType = anyType
     //var functionName = functionName
@@ -114,17 +118,21 @@ this.put(specialMessage, anyType, functionName, exception);
                                     }
                                 
 
-    var message: string = logFormatUtil!.getS(className, functionName, specialMessage)!;
+    var message: string = this.logFormatUtil!.getS(className, functionName, specialMessage)!;
         
         
 ;
     
-System.out.print(LOG_SUCCESS);
+console.log(this.LOG_SUCCESS);
     
-System.out.println(message);
+console.log(message);
     
 }
 
+
+    private readonly LOG_SUCCESS: string = "org.allbinary: ";
+        
+        
 
     /*actual*/ public put(specialMessage: string, anyType: any = {}, functionName: string, exception: any = {}){
     //var specialMessage = specialMessage
@@ -150,14 +158,14 @@ System.out.println(message);
                                     }
                                 
 
-    var message: string = logFormatUtil!.get(className, functionName, specialMessage, exception)!;
+    var message: string = this.logFormatUtil!.get(className, functionName, specialMessage, exception)!;
         
         
 ;
     
-System.out.print(LOG_SUCCESS);
+console.log(this.LOG_SUCCESS);
     
-System.out.println(message);
+console.log(message);
     
 }
 

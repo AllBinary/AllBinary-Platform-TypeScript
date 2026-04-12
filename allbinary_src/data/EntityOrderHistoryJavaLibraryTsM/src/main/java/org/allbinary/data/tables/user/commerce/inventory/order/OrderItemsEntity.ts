@@ -298,7 +298,7 @@ this.insert(vector);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put("Command Success Added: " +items.length, this, INSERT);
+                                    this.logUtil!.putF("Command Success Added: " +items.length, this, INSERT);
     
 
                                     }
@@ -311,7 +311,7 @@ this.insert(vector);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put("Command Failed: " +vector.toString(), this, INSERT, e);
+                                    this.logUtil!.put("Command Failed: " +vector.toString(), this, INSERT, e);
     
 
                                     }
@@ -355,7 +355,7 @@ super.updateWhere(whereHashMap, updateHashMap);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.FAILURE, this, "setStatus", e);
+                                    this.logUtil!.put(this.commonStrings!.FAILURE, this, "setStatus", e);
     
 
                                     }
@@ -421,7 +421,7 @@ var orderId = orderId
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.FAILURE, this, "isEverythingShipped", e);
+                                    this.logUtil!.put(this.commonStrings!.FAILURE, this, "isEverythingShipped", e);
     
 
                                     }
@@ -561,7 +561,7 @@ basketReview!.addItem(item);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    logUtil!.put(this.commonStrings!.FAILURE, this, "getBasketReview", e);
+                                    this.logUtil!.put(this.commonStrings!.FAILURE, this, "getBasketReview", e);
     
 
                                     }

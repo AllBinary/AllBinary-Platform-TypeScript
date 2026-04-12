@@ -79,7 +79,7 @@ string= bytes.decodeToString();
                 //: 
 } catch(e) 
             {
-logUtil!.put("File: " +fileName, this, "LineReader", e);
+this.logUtil!.put("File: " +fileName, this, "LineReader", e);
     
 
 
@@ -124,7 +124,7 @@ logUtil!.put("File: " +fileName, this, "LineReader", e);
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "hasNext", e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, "hasNext", e);
     
 
 
@@ -183,7 +183,7 @@ index= nextIndex +1;
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "next", e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, "next", e);
     
 
 

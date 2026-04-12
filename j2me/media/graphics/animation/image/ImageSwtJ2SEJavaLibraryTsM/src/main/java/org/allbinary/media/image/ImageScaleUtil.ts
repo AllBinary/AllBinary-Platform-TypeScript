@@ -123,7 +123,7 @@ private constructor (){
                         )
                         
                                     {
-                                    logUtil!.put(NO_COPY, this, commonStrings!.CONSTRUCTOR);
+                                    this.logUtil!.putF(NO_COPY, this, commonStrings!.CONSTRUCTOR);
     
 
 

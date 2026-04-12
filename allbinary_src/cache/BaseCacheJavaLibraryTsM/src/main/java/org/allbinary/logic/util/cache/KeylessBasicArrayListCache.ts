@@ -89,7 +89,7 @@ public constructor (size: number)
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET, e);
     
 
 

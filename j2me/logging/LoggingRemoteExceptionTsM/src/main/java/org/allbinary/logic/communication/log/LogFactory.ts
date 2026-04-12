@@ -38,7 +38,7 @@ var exception = exception
 }
 
 
-    /*actual*/ public static getInstance(specialMessage: string, anyType: any = {}, functionName: string): Log{
+    /*actual*/ public static getInstanceF(specialMessage: string, anyType: any = {}, functionName: string): Log{
 var specialMessage = specialMessage
 var anyType = anyType
 var functionName = functionName

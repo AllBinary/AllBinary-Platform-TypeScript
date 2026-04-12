@@ -394,7 +394,7 @@ this.attemptBuild(rtsPlayerLayerInterface, layerManager, this.newUnconstructedRT
     //var layerManager = layerManager
 var item = item
 var index = index
-logUtil!.put("Set Sticking Item: " +item, this, "processSticky");
+this.logUtil!.putF("Set Sticking Item: " +item, this, "processSticky");
     
 this.setSelectedStickyItem(item);
     
@@ -416,7 +416,7 @@ this.getHashtable()!.put(Layer.ID, associatedRtsLayer);
     //var layerManager = layerManager
     //var layerInterface = layerInterface
     //var itemIndex = itemIndex
-logUtil!.put("Layer: " +layerInterface, this, "attemptBuild");
+this.logUtil!.putF("Layer: " +layerInterface, this, "attemptBuild");
     
 
                         if(layerInterface == 
@@ -424,7 +424,7 @@ logUtil!.put("Layer: " +layerInterface, this, "attemptBuild");
                                 )
                         
                                     {
-                                    logUtil!.put("Layer was null", this, "attemptBuild", new Error());
+                                    this.logUtil!.put("Layer was null", this, "attemptBuild", new Error());
     
 
 
@@ -569,7 +569,7 @@ stringBuffer!.append(" with ");
     
 stringBuffer!.appendint(capital.getTotalMoney());
     
-logUtil!.put(stringBuffer!.toString(), this, "attemptBuild");
+this.logUtil!.putF(stringBuffer!.toString(), this, "attemptBuild");
     
 
                         if(cost <= capital.getTotalMoney())

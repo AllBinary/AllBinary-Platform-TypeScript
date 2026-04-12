@@ -101,7 +101,7 @@ var aParentViewName = aParentViewName
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Setting: " +aParentViewName, this, "set()");
+                                    this.logUtil!.putF("Setting: " +aParentViewName, this, "set()");
     
 
                                     }
@@ -128,7 +128,7 @@ var aParentViewName = aParentViewName
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Replacing", this, "set()");
+                                    this.logUtil!.putF("Replacing", this, "set()");
     
 
                                     }
@@ -161,7 +161,7 @@ parentComponentsNodeList!.item(0)!.appendChild(new TransformInfoDomNodeView(aPar
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("Setting", this, "set()");
+                                    this.logUtil!.putF("Setting", this, "set()");
     
 
                                     }

@@ -514,7 +514,7 @@ this.processInput(key);
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, gameInputStrings!.PROCESS_INPUT, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, gameInputStrings!.PROCESS_INPUT, e);
     
 }
 
@@ -587,7 +587,7 @@ stringBuffer!.append("Selected Layer: ");
 
                                     }
                                 
-logUtil!.put(stringBuffer!.toString(), this, "setSelectedRTSLayer");
+this.logUtil!.putF(stringBuffer!.toString(), this, "setSelectedRTSLayer");
     
 this.paintSelectedRTSLayersList= BasicArrayListUtil.getInstance()!.getImmutableInstance();
     
@@ -611,7 +611,7 @@ this.preSelectedRTSLayersList= this.selectedRTSLayersList;
     
 this.selectedRTSLayersList= tempList;
     
-logUtil!.put(new StringMaker().
+this.logUtil!.putF(new StringMaker().
                             append("Preselected: ")!.append(this.preSelectedRTSLayersList!.toString())!.toString(), this, "setSelectedRTSLayer");
     
 
@@ -671,7 +671,7 @@ stringBuffer!.append("Select all Preselected: ");
     
 stringBuffer!.append(this.preSelectedRTSLayersList!.toString());
     
-logUtil!.put(stringBuffer!.toString(), this, "selectAllPreselected");
+this.logUtil!.putF(stringBuffer!.toString(), this, "selectAllPreselected");
     
 
 
@@ -709,7 +709,7 @@ stringBuffer!.append("Deselect all Preselected: ");
     
 stringBuffer!.append(this.preSelectedRTSLayersList!.toString());
     
-logUtil!.put(stringBuffer!.toString(), this, "deselectAllPreselected");
+this.logUtil!.putF(stringBuffer!.toString(), this, "deselectAllPreselected");
     
 
 

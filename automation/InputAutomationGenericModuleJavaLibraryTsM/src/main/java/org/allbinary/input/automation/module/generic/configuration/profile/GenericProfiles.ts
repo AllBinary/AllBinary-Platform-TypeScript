@@ -152,7 +152,7 @@ this.hashMap= new HashMap<any, any>();
         
 ;
     
-logUtil!.put("Number Of Profiles Specified: " +nodeList!.getLength(), this, "Contructor");
+this.logUtil!.putF("Number Of Profiles Specified: " +nodeList!.getLength(), this, "Contructor");
     
 
                         if(nodeList != 
@@ -173,13 +173,13 @@ logUtil!.put("Number Of Profiles Specified: " +nodeList!.getLength(), this, "Con
 
                         }
                             
-logUtil!.put("Loaded: " +this.hashMap!.size +" Configuration Profile Actions", this, "Contructor");
+this.logUtil!.putF("Loaded: " +this.hashMap!.size +" Configuration Profile Actions", this, "Contructor");
     
 
                                     }
                                 
                         else {
-                            logUtil!.put("No Generic Profile: " +fileName, this, "Contructor");
+                            this.logUtil!.putF("No Generic Profile: " +fileName, this, "Contructor");
     
 
                         }
@@ -271,7 +271,7 @@ var name = name
         
 ;
     
-logUtil!.put("No Generic Profile Named: " +name +" availability was: " +this.hashMap, this, commonStrings!.GET);
+this.logUtil!.putF("No Generic Profile Named: " +name +" availability was: " +this.hashMap, this, commonStrings!.GET);
     
 
                                     }

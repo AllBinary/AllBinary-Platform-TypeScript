@@ -86,7 +86,7 @@ this.user= NewUserFactory.getInstance(transformInfoInterface);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("User already in existance.", this, commonStrings!.IS_VALID);
+                                    this.logUtil!.putF("User already in existance.", this, commonStrings!.IS_VALID);
     
 
                                     }
@@ -127,7 +127,7 @@ this.user= NewUserFactory.getInstance(transformInfoInterface);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("Failed to validate", this, commonStrings!.IS_VALID, e);
+                                    this.logUtil!.put("Failed to validate", this, commonStrings!.IS_VALID, e);
     
 
                                     }
@@ -162,7 +162,7 @@ this.user= NewUserFactory.getInstance(transformInfoInterface);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    logUtil!.put("User already exists", this, "validationInfo()");
+                                    this.logUtil!.putF("User already exists", this, "validationInfo()");
     
 
                                     }
@@ -197,7 +197,7 @@ stringBuffer!.append("The User Name you selected is already in use.<br/>  Please
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e);
+                                    this.logUtil!.put("Failed to generate validation error info", this, "validationInfo()", e);
     
 
                                     }
