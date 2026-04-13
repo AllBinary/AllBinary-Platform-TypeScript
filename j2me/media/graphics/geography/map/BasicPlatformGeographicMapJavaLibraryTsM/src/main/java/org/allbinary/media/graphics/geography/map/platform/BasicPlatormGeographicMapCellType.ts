@@ -18,6 +18,8 @@
 
 
 
+            import { Integer } from "../../../../../java/lang/Integer.js";
+        
 import { GeographicMapCellType } from "../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellType.js";
 
     

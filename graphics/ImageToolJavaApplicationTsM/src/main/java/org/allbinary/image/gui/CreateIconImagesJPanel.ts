@@ -18,6 +18,8 @@
 
 
 
+            import { Integer } from "../../../../../java/lang/Integer.js";
+        
 import { BufferedImage } from "../../../../java/awt/image/BufferedImage.js";
 
     
@@ -119,13 +121,13 @@ numberStringArray[index]= index.toString();
                                 )
                         
                                     {
-                                    System.out.println("there is no Alpha channel!!!!!!!!!");
+                                    console.log("there is no Alpha channel!!!!!!!!!");
     
 
                                     }
                                 
                         else {
-                            System.out.println("Alpha channel found !");
+                            console.log("Alpha channel found !");
     
 
                         }

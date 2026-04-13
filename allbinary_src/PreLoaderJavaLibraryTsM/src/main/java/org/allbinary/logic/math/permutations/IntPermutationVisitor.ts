@@ -82,7 +82,7 @@ stringBuilder!.append(CommonSeps.getInstance()!.SPACE);
     
 }
 
-System.out.println(stringBuilder!.toString());
+console.log(stringBuilder!.toString());
     
 }
 

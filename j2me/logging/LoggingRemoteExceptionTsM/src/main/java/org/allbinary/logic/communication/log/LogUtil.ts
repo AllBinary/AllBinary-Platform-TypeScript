@@ -214,7 +214,7 @@ this.isFirstException= false;
     
 
         try {
-            System.out.println("Eeeek");
+            console.log("Eeeek");
     
 
                         if(abeClientInformation == 
@@ -252,7 +252,7 @@ new XmlRpcRemoteLogClient(abeClientInformation).
                 //: 
 } catch(e) 
             {
-System.out.println("Exception");
+console.log("Exception");
     
 e.printStackTrace();
     

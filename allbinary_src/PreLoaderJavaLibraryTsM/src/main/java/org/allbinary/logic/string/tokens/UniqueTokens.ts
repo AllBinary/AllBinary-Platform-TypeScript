@@ -20,6 +20,8 @@
 
             import Vector from "@ohos.util.Vector";
         
+            import { Integer } from "../../../../../java/lang/Integer.js";
+        
 import { HashSet } from "../../../../../java/util/HashSet.js";
 
     

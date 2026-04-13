@@ -18,6 +18,8 @@
 
 
 
+            import { Integer } from "../../../../../java/lang/Integer.js";
+        
 import { HttpServletRequest } from "../../../../../../../javax/servlet/http/HttpServletRequest.js";
 
     

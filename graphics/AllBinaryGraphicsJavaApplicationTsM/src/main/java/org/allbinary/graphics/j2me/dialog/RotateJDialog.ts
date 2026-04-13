@@ -18,6 +18,8 @@
 
 
 
+            import { Integer } from "../../../../../java/lang/Integer.js";
+        
 import { ARunnable } from "../../../../../org/allbinary/thread/ARunnable.js";
 
     

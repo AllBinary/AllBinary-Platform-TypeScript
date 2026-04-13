@@ -18,6 +18,8 @@
 
 
 
+            import { Integer } from "../../../../../java/lang/Integer.js";
+        
 import { PlayerGameInput } from "../../../../../org/allbinary/game/input/PlayerGameInput.js";
 
     

@@ -84,7 +84,7 @@ index < size; index++)
         
 ;
     
-System.out.println("Track " +index);
+console.log("Track " +index);
     
 this.printPaths(list);
     

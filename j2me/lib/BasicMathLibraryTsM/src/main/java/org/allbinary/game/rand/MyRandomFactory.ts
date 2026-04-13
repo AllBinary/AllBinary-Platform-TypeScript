@@ -18,6 +18,8 @@
 
 
 
+            import { Integer } from "../../../../../java/lang/Integer.js";
+        
 import { Random } from "../../../../java/util/Random.js";
 
     
@@ -90,7 +92,7 @@ stringBuilder!.appendint(randomFactory!.getAbsoluteNextInt(3))!.append(commonSep
     
 }
 
-System.out.println(stringBuilder!.toString());
+console.log(stringBuilder!.toString());
     
 stringBuilder!.delete(0, stringBuilder!.length());
     
@@ -145,7 +147,7 @@ stringBuilder!.appendint(intArray[index]!)!.append(commonSeps!.COMMA);
     
 }
 
-System.out.println(stringBuilder!.toString());
+console.log(stringBuilder!.toString());
     
 stringBuilder!.delete(0, stringBuilder!.length());
     
@@ -163,7 +165,7 @@ stringBuilder!.appendint(intArray2[index]!)!.append(commonSeps!.COMMA);
     
 }
 
-System.out.println(stringBuilder!.toString());
+console.log(stringBuilder!.toString());
     
 
     var found: boolean= false

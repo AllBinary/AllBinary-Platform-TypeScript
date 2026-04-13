@@ -33,6 +33,9 @@ import { IOException } from "../../../../../java/io/IOException.js";
 import { URI } from "../../../../../java/net/URI.js";
 
     
+import { TsUtil } from "../../../../../org/allbinary/logic/TsUtil.js";
+
+    
 import { AbPath } from "../../../../../org/allbinary/logic/io/path/AbPath.js";
 
     
@@ -525,7 +528,7 @@ var obj = obj
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.file.hashCode();
+                        return TsUtil.getInstance()!.hashCode(this.file);
 
                         ;
     

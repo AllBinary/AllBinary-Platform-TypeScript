@@ -30,6 +30,9 @@ import { MotionGestureInput } from "../../../../../../org/allbinary/input/motion
 import { TouchMotionGestureFactory } from "../../../../../../org/allbinary/input/motion/gesture/TouchMotionGestureFactory.js";
 
     
+import { TsUtil } from "../../../../../../org/allbinary/logic/TsUtil.js";
+
+    
 import { StringMaker } from "../../../../../../org/allbinary/logic/string/StringMaker.js";
 
     
@@ -166,7 +169,7 @@ stringBuffer!.append(stringUtil!.toString(this.previousPoint));
     
 stringBuffer!.append(HASHCODE);
     
-stringBuffer!.appendint(this.hashCode());
+stringBuffer!.appendint(TsUtil.getInstance()!.hashCode(this));
     
 
 

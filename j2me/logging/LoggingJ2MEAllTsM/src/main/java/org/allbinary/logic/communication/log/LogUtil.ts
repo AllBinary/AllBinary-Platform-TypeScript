@@ -20,6 +20,9 @@
 
             import { Integer } from "../../../../../java/lang/Integer.js";
         
+import { TsUtil } from "../../../../../org/allbinary/logic/TsUtil.js";
+
+    
 import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";
 
     
@@ -112,7 +115,7 @@ this.put(specialMessage, anyType, functionName, exception);
                         
                                     {
                                     className= new StringMaker().
-                            append(anyType!.constructor.name.toString()!)!.append(CommonSeps.getInstance()!.COLON)!.append(Integer.toHexString(anyType!.hashCode()))!.toString();
+                            append(anyType!.constructor.name.toString()!)!.append(CommonSeps.getInstance()!.COLON)!.append(Integer.toHexString(TsUtil.getInstance()!.hashCode(anyType)))!.toString();
     
 
                                     }
@@ -150,7 +153,7 @@ console.log(this.LOG_SUCCESS + message);
                         
                                     {
                                     className= new StringMaker().
-                            append(anyType!.constructor.name.toString()!)!.append(CommonSeps.getInstance()!.COLON)!.append(Integer.toHexString(anyType!.hashCode()))!.toString();
+                            append(anyType!.constructor.name.toString()!)!.append(CommonSeps.getInstance()!.COLON)!.append(Integer.toHexString(TsUtil.getInstance()!.hashCode(anyType)))!.toString();
     
 
                                     }

@@ -18,6 +18,8 @@
 
 
 
+            import { Integer } from "../../../../../java/lang/Integer.js";
+        
 import { DirectionFactory } from "../../../../org/allbinary/direction/DirectionFactory.js";
 
     

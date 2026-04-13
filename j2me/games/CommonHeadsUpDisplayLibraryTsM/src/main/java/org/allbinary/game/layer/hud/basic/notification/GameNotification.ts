@@ -18,6 +18,8 @@
 
 
 
+            import { Integer } from "../../../../../java/lang/Integer.js";
+        
 import { GameNotificationEvent } from "../../../../../../../org/allbinary/game/layer/hud/event/GameNotificationEvent.js";
 
     

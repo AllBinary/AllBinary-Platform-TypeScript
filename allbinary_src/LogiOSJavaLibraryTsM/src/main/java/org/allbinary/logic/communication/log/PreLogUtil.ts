@@ -71,9 +71,7 @@ putOE(specialMessage, anyType, functionName, NullUtil.getInstance()!.NULL_OBJECT
         
 ;
     
-System.out.print(LOG_SUCCESS);
-    
-System.out.println(message);
+console.log(LOG_SUCCESS + message);
     
 }
 
@@ -89,9 +87,7 @@ var exception = exception
         
 ;
     
-System.out.print(LOG_SUCCESS);
-    
-System.out.println(message);
+console.log(LOG_SUCCESS + message);
     
 }
 

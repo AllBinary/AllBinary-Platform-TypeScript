@@ -124,7 +124,7 @@ var after = after
                         if(index < 0)
                         
                                     {
-                                    System.out.println("No such start: " +after +" in: " +this.string);
+                                    console.log("No such start: " +after +" in: " +this.string);
     
 
 

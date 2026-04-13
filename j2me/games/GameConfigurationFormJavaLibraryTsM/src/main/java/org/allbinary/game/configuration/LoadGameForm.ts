@@ -18,6 +18,8 @@
 
 
 
+            import { Integer } from "../../../../../java/lang/Integer.js";
+        
 import { Choice } from "../../../../javax/microedition/lcdui/Choice.js";
 
     

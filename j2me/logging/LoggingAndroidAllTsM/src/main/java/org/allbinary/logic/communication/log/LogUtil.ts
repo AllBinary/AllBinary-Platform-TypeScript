@@ -18,7 +18,12 @@
 
 
 
+            import { Integer } from "../../../../../java/lang/Integer.js";
+        
 import { NullUtil } from "../../../../../org/allbinary/logic/NullUtil.js";
+
+    
+import { TsUtil } from "../../../../../org/allbinary/logic/TsUtil.js";
 
     
 import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";
@@ -116,7 +121,7 @@ var exception = exception
 ;
     
 className= new StringMaker().
-                            append(anyType!.constructor.name.toString()!)!.append(commonSeps!.COLON)!.append(Integer.toHexString(anyType!.hashCode()))!.toString();
+                            append(anyType!.constructor.name.toString()!)!.append(commonSeps!.COLON)!.append(Integer.toHexString(TsUtil.getInstance()!.hashCode(anyType)))!.toString();
     
 
     var message: string = logFormatUtil!.get(className, functionName, specialMessage, exception)!;

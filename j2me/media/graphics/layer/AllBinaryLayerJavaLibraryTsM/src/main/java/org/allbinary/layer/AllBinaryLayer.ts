@@ -18,6 +18,8 @@
 
 
 
+            import { Integer } from "../../../../../java/lang/Integer.js";
+        
 import { Graphics } from "../../../javax/microedition/lcdui/Graphics.js";
 
     
@@ -37,6 +39,9 @@ import { RectangleFactory } from "../../../org/allbinary/graphics/RectangleFacto
 
     
 import { OpenGLFeatureUtil } from "../../../org/allbinary/graphics/opengles/OpenGLFeatureUtil.js";
+
+    
+import { TsUtil } from "../../../org/allbinary/logic/TsUtil.js";
 
     
 import { StringMaker } from "../../../org/allbinary/logic/string/StringMaker.js";
@@ -128,7 +133,7 @@ public constructor (name: string, rectangle: Rectangle, viewPosition: ViewPositi
                                 
                         else {
                             localName= new StringMaker().
-                            append(name)!.append(CommonSeps.getInstance()!.COLON)!.append(Integer.toHexString(this.hashCode()))!.toString();
+                            append(name)!.append(CommonSeps.getInstance()!.COLON)!.append(Integer.toHexString(TsUtil.getInstance()!.hashCode(this)))!.toString();
     
 
                         }

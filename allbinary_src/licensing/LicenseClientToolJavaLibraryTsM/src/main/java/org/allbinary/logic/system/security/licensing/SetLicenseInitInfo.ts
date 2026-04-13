@@ -159,7 +159,7 @@ var licenceServerVector = licenceServerVector
         
 ;
     
-System.out.println("License Serv Example: http://www.dartstatistics.com/LicServ/serverssl.php");
+console.log("License Serv Example: http://www.dartstatistics.com/LicServ/serverssl.php");
     
 licenseInitInfo!.clearServers();
     
@@ -218,7 +218,7 @@ LicenseInitInfoUtil.getInstance()!.read();
                 //: 
 } catch(e) 
             {
-System.out.print("Error: " +e);
+console.log("Error: " +e);
     
 e.printStackTrace();
     

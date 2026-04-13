@@ -79,7 +79,7 @@ var path = path
             {
 e.printStackTrace();
     
-System.out.println("Error: " +e +"\nMsg: " +e.message);
+console.log("Error: " +e +"\nMsg: " +e.message);
     
 }
 
@@ -148,7 +148,7 @@ includeExtensionBasicArrayList!.add(includeExtensions[index]!);
             {
 e.printStackTrace();
     
-System.out.println("Error: " +e +"\nMsg: " +e.message);
+console.log("Error: " +e +"\nMsg: " +e.message);
     
 }
 
@@ -198,7 +198,7 @@ includeExtensionBasicArrayList!.add(includeExtension);
             {
 e.printStackTrace();
     
-System.out.println("Error: " +e +"\nMsg: " +e.message);
+console.log("Error: " +e +"\nMsg: " +e.message);
     
 }
 
@@ -249,7 +249,7 @@ includeExtensionBasicArrayList!.add(includeExtension);
             {
 e.printStackTrace();
     
-System.out.println("Error: " +e +"\nMsg: " +e.message);
+console.log("Error: " +e +"\nMsg: " +e.message);
     
 }
 
@@ -290,7 +290,7 @@ System.out.println("Error: " +e +"\nMsg: " +e.message);
             {
 e.printStackTrace();
     
-System.out.println("Error: " +e +"\nMsg: " +e.message);
+console.log("Error: " +e +"\nMsg: " +e.message);
     
 }
 

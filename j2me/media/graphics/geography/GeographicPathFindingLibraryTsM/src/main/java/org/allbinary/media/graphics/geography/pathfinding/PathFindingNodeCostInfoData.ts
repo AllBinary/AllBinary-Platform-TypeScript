@@ -18,6 +18,8 @@
 
 
 
+            import { Integer } from "../../../../../java/lang/Integer.js";
+        
 
 export class PathFindingNodeCostInfoData
             extends Object

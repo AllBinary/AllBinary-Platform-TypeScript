@@ -140,7 +140,7 @@ fileOut= new BufferedWriter(new FileWriter(raFile!.getFD()));
                 //: 
 } catch(e) 
             {
-System.out.println("Error Creating Log: " +e);
+console.log("Error Creating Log: " +e);
     
 
 
@@ -217,7 +217,7 @@ logFile!.delete();
                 //: 
 } catch(e) 
             {
-System.out.println("Error Creating Backup: " +e);
+console.log("Error Creating Backup: " +e);
     
 
 

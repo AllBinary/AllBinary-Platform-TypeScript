@@ -120,7 +120,7 @@ param.add(hashtable);
         
 ;
     
-System.out.println("Result: \n" +result.toString());
+console.log("Result: \n" +result.toString());
     
 
 
@@ -132,7 +132,7 @@ System.out.println("Result: \n" +result.toString());
                 //: 
 } catch(e) 
             {
-System.out.println("IOException Trying Other Servers");
+console.log("IOException Trying Other Servers");
     
 
                         if(!e.getMessage()!.startsWith(HOST_NOT_RESOLVED);

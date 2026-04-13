@@ -18,6 +18,8 @@
 
 
 
+            import { Integer } from "../../../../../java/lang/Integer.js";
+        
 import { AndroidResources } from "../../../../../../org/allbinary/AndroidResources.js";
 
     

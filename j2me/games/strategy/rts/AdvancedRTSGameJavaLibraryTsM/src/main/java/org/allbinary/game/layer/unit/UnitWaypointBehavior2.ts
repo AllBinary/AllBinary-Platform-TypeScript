@@ -18,6 +18,8 @@
 
 
 
+            import { Integer } from "../../../../../java/lang/Integer.js";
+        
 import { J2MEUtil } from "../../../../../org/allbinary/J2MEUtil.js";
 
     

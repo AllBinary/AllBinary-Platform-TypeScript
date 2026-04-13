@@ -158,7 +158,7 @@ var exception = exception
     
 this.showDialog(data);
     
-System.out.println(data);
+console.log(data);
     
 
 
@@ -216,7 +216,7 @@ var exception = exception
     
 this.showDialog(data);
     
-System.out.println(data);
+console.log(data);
     
 
 

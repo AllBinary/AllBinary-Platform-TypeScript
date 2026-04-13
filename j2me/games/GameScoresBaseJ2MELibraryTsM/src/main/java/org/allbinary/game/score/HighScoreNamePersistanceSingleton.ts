@@ -18,6 +18,8 @@
 
 
 
+            import { Integer } from "../../../../../java/lang/Integer.js";
+        
 import { ByteArrayInputStream } from "../../../../java/io/ByteArrayInputStream.js";
 
     

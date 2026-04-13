@@ -82,7 +82,7 @@ var args = args
         
 ;
     
-System.out.println(vector.size());
+console.log(vector.size());
     
 }
 

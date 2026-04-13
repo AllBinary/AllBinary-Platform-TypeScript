@@ -18,6 +18,8 @@
 
 
 
+            import { Integer } from "../../../../../java/lang/Integer.js";
+        
 import { SensorAction } from "../../../../../org/allbinary/game/layer/SensorAction.js";
 
     

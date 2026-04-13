@@ -18,6 +18,8 @@
 
 
 
+            import { Integer } from "../../../../../java/lang/Integer.js";
+        
 import { ArtificialIntelligence } from "../../../../org/allbinary/ai/ArtificialIntelligence.js";
 
     

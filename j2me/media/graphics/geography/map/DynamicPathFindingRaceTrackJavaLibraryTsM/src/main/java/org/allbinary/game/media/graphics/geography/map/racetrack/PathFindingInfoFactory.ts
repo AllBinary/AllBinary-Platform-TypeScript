@@ -18,6 +18,8 @@
 
 
 
+            import { Integer } from "../../../../../java/lang/Integer.js";
+        
 import { CommonStrings } from "../../../../../../../../org/allbinary/string/CommonStrings.js";
 
     

@@ -18,6 +18,8 @@
 
 
 
+            import { Integer } from "../../../../../java/lang/Integer.js";
+        
 import { PreLogUtil } from "../../../org/allbinary/logic/communication/log/PreLogUtil.js";
 
     

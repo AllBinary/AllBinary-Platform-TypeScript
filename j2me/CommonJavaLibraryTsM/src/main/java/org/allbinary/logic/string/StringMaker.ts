@@ -4,6 +4,8 @@
 
 
 
+            import { Integer } from "../../../../java/lang/Integer.js";
+        
 
 export class StringMaker
             extends Object

@@ -106,7 +106,7 @@ this.dispose(mutableImage!.getImage();
                         )
                         
                                     {
-                                    System.out.println(commonStrings!.CLOSE);
+                                    console.log(commonStrings!.CLOSE);
     
 resource.dispose();
     

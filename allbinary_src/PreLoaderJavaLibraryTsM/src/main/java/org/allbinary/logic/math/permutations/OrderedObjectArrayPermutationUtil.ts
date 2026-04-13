@@ -21,6 +21,9 @@
 import { Arrays } from "../../../../../java/util/Arrays.js";
 
     
+import { TsUtil } from "../../../../../org/allbinary/logic/TsUtil.js";
+
+    
 import { Visitor } from "../../../../../org/allbinary/logic/util/visitor/Visitor.js";
 
     
@@ -86,7 +89,7 @@ Arrays.sort(data);
         
 ;
     
-System.out.print(ORIGINAL_DATA_LABEL);
+console.log(ORIGINAL_DATA_LABEL);
     
 permutationVisitor!.visit(data);
     
@@ -124,7 +127,13 @@ var data = data
 ;
     
 
-        while(data[i -1]!.hashCode() >= data[i]!.hashCode())
+    var tsUtil: TsUtil = TsUtil.getInstance()!;
+        
+        
+;
+    
+
+        while(tsUtil!.hashCode(data[i -1]!) >= tsUtil!.hashCode(data[i]!))
         {
 i= i -1;
     
@@ -137,7 +146,7 @@ i= i -1;
 ;
     
 
-        while(data[j -1]!.hashCode() <= data[i -1]!.hashCode())
+        while(tsUtil!.hashCode(data[j -1]!) <= tsUtil!.hashCode(data[i -1]!))
         {
 j= j -1;
     
@@ -227,9 +236,9 @@ var visitor = visitor
         
 ;
     
-System.out.print(TOTAL_ITERATIONS_TABLE);
+console.log(TOTAL_ITERATIONS_TABLE);
     
-System.out.println(iterations);
+console.log(iterations);
     
 
 
@@ -247,7 +256,7 @@ visitor.visit(this);
     
 }
 
-System.out.println(FINISHED);
+console.log(FINISHED);
     
 }
 

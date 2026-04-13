@@ -17,6 +17,8 @@
 
 
 
+            import { Integer } from "../../../../../java/lang/Integer.js";
+        
 import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";
 
     

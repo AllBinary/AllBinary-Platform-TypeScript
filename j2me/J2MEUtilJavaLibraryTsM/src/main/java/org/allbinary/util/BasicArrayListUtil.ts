@@ -84,7 +84,7 @@ list.add(commonPhoneStrings!.NINE);
     
 BasicArrayListUtil.getInstance()!.reverse(list);
     
-System.out.println(list);
+console.log(list);
     
 }
 

@@ -18,6 +18,8 @@
 
 
 
+            import { Integer } from "../../../../../java/lang/Integer.js";
+        
 import { BufferedImage } from "../../../../java/awt/image/BufferedImage.js";
 
     
@@ -112,13 +114,13 @@ jComboBox1!.setModel(new javax.swing.DefaultComboBoxModel(numberStringArray));
                                 )
                         
                                     {
-                                    System.out.println("there is no Alpha channel!!!!!!!!!");
+                                    console.log("there is no Alpha channel!!!!!!!!!");
     
 
                                     }
                                 
                         else {
-                            System.out.println("Alpha channel found !");
+                            console.log("Alpha channel found !");
     
 
                         }
@@ -231,13 +233,13 @@ generatedBufferedImageArray= imageUtil!.createBufferedImage(imageProcessorInput!
                                 )
                         
                                     {
-                                    System.out.println("No Alpha Channel In Result");
+                                    console.log("No Alpha Channel In Result");
     
 
                                     }
                                 
                         else {
-                            System.out.println("Found Alpha Channel In Result");
+                            console.log("Found Alpha Channel In Result");
     
 
                         }

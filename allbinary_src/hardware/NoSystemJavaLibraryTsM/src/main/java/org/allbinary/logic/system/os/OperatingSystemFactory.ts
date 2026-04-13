@@ -77,7 +77,7 @@ private constructor (){
         
 ;
     
-System.out.println(osString);
+console.log(osString);
     
 this.logUtil!.putF(osString, this, commonStrings!.GET_INSTANCE);
     

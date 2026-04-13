@@ -18,6 +18,8 @@
 
 
 
+            import { Integer } from "../../../../../java/lang/Integer.js";
+        
 import { Image } from "../../../../../../../javax/microedition/lcdui/Image.js";
 
     

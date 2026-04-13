@@ -18,10 +18,15 @@
 
 
 
+            import { Integer } from "../../../../../java/lang/Integer.js";
+        
 import { Command } from "../../../javax/microedition/lcdui/Command.js";
 
     
 import { ResourceUtil } from "../../../org/allbinary/data/resource/ResourceUtil.js";
+
+    
+import { TsUtil } from "../../../org/allbinary/logic/TsUtil.js";
 
     
 
@@ -86,7 +91,7 @@ var message = message
     
 notification.setLatestEventInfo(context, command.getLabel(), message, pendingIntent);
     
-notificationManager!.notify(command.hashCode(), notification);
+notificationManager!.notify(TsUtil.getInstance()!.hashCode(command), notification);
     
 }
 

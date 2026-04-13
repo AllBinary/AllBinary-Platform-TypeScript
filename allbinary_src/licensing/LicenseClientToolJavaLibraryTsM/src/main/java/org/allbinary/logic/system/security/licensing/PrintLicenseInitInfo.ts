@@ -91,7 +91,7 @@ LicenseInitInfoUtil.getInstance()!.setFilePath(PATH +PATH_GLOBALS.getInstance()!
                                     }
                                 
                         else {
-                            System.out.println("No Licence File at: " +licenseInitInfoUtil!.getFilePath());
+                            console.log("No Licence File at: " +licenseInitInfoUtil!.getFilePath());
     
 
 
@@ -114,7 +114,7 @@ LicenseInitInfoUtil.getInstance()!.setFilePath(PATH +PATH_GLOBALS.getInstance()!
         
 ;
     
-System.out.println("License ID: " +licenseInitInfo!.getLicenseId());
+console.log("License ID: " +licenseInitInfo!.getLicenseId());
     
 
     var list: BasicArrayList = licenseInitInfo!.getServerList()!;
@@ -138,7 +138,7 @@ System.out.println("License ID: " +licenseInitInfo!.getLicenseId());
         
 index < size; index++)
         {
-System.out.println("Lic Serv: " +list.get(index));
+console.log("Lic Serv: " +list.get(index));
     
 }
 
@@ -146,7 +146,7 @@ System.out.println("Lic Serv: " +list.get(index));
                 //: 
 } catch(e) 
             {
-System.out.print("Error: " +e);
+console.log("Error: " +e);
     
 e.printStackTrace();
     

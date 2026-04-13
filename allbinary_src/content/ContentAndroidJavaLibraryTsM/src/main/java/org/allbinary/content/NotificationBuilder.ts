@@ -18,6 +18,8 @@
 
 
 
+            import { Integer } from "../../../../../java/lang/Integer.js";
+        
 import { NullParcelable } from "../../../org/allbinary/android/NullParcelable.js";
 
     

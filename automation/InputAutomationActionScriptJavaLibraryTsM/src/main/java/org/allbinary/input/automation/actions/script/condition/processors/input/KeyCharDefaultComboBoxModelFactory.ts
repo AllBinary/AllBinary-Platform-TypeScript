@@ -18,6 +18,8 @@
 
 
 
+            import { Integer } from "../../../../../java/lang/Integer.js";
+        
 import { swing } from "../../../../../../../../../javax/swing.js";
 
     

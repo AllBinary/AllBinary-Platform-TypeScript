@@ -18,6 +18,8 @@
 
 
 
+            import { Integer } from "../../../../../java/lang/Integer.js";
+        
 import { AllBinaryLayer } from "../../../../org/allbinary/layer/AllBinaryLayer.js";
 
     

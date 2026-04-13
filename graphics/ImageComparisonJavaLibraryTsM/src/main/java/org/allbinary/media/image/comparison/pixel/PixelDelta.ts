@@ -21,6 +21,9 @@
 import { GPoint } from "../../../../../../org/allbinary/graphics/GPoint.js";
 
     
+import { TsUtil } from "../../../../../../org/allbinary/logic/TsUtil.js";
+
+    
 import { StringMaker } from "../../../../../../org/allbinary/logic/string/StringMaker.js";
 
     
@@ -48,7 +51,7 @@ var colorDelta = colorDelta
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return new StringMaker().
-                            appendint(point.hashCode())!.append(CommonSeps.getInstance()!.UNDERSCORE)!.append(colorDelta!.getKey()!.toString())!.toString();
+                            appendint(TsUtil.getInstance()!.hashCode(point))!.append(CommonSeps.getInstance()!.UNDERSCORE)!.append(colorDelta!.getKey()!.toString())!.toString();
 
                         ;
     

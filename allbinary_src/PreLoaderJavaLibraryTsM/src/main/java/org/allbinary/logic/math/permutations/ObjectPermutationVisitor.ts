@@ -4,6 +4,9 @@
 
 
 
+import { TsUtil } from "../../../../../org/allbinary/logic/TsUtil.js";
+
+    
 import { Visitor } from "../../../../../org/allbinary/logic/util/visitor/Visitor.js";
 
     
@@ -60,6 +63,12 @@ this.print(data, stringBuilder);
 var data = data
 var stringBuilder = stringBuilder
 
+    var tsUtil: TsUtil = TsUtil.getInstance()!;
+        
+        
+;
+    
+
     var size: number = data.length
                 ;
         
@@ -76,13 +85,13 @@ var stringBuilder = stringBuilder
         
 i < size; i++)
         {
-stringBuilder!.append(data[i]!.hashCode());
+stringBuilder!.append(tsUtil!.hashCode(data[i]!));
     
 stringBuilder!.append(CommonSeps.getInstance()!.SPACE);
     
 }
 
-System.out.println(stringBuilder!.toString());
+console.log(stringBuilder!.toString());
     
 }
 

@@ -86,7 +86,7 @@ var list = list
         
 index < size; index++)
         {
-System.out.println(new StringMaker().
+console.log(new StringMaker().
                             append(" Path ")!.appendint(index)!.append(CommonLabels.getInstance()!.COLON_SEP)!.toString());
     
 this.printPath(list.get(index);

@@ -159,7 +159,7 @@ index < size; index++)
                                 )
                         
                                     {
-                                    System.out.print("ColorDelta");
+                                    console.log("ColorDelta");
     
 System.exit(0);
     

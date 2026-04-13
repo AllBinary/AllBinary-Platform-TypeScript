@@ -18,6 +18,8 @@
 
 
 
+            import { Integer } from "../../../../../java/lang/Integer.js";
+        
 import { Command } from "../../../javax/microedition/lcdui/Command.js";
 
     

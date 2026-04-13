@@ -24,6 +24,9 @@
 //import { Vector } from "../../../../../java/util/Vector.js";
 
     
+import { TsUtil } from "../../../../../org/allbinary/logic/TsUtil.js";
+
+    
 
 export class AcceptableResponseUtil
             extends Object
@@ -45,7 +48,7 @@ export class AcceptableResponseUtil
 
 
                 init{
-AcceptableResponseFactory.getInstance()!.HTML.hashCode();
+TsUtil.getInstance()!.hashCode(AcceptableResponseFactory.getInstance()!.HTML);
     
 }
 

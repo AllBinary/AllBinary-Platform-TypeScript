@@ -71,9 +71,7 @@ var exception = exception
         
 ;
     
-System.out.print(LOG_SUCCESS);
-    
-System.out.println(message);
+console.log(LOG_SUCCESS + message);
     
 }
 
@@ -98,9 +96,7 @@ var exception = exception
         
 ;
     
-System.out.print(LOG_SUCCESS);
-    
-System.out.println(message);
+console.log(LOG_SUCCESS + message);
     
 }
 

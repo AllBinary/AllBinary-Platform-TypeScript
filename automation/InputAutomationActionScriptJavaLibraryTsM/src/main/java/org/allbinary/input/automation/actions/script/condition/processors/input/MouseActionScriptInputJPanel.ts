@@ -18,6 +18,8 @@
 
 
 
+            import { Integer } from "../../../../../java/lang/Integer.js";
+        
 import { InputEvent } from "../../../../../../../../../java/awt/event/InputEvent.js";
 
     

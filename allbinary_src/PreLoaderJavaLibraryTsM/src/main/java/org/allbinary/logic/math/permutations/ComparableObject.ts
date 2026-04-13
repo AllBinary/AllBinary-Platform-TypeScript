@@ -18,6 +18,9 @@
 
 
 
+import { TsUtil } from "../../../../../org/allbinary/logic/TsUtil.js";
+
+    
 
 export class ComparableObject
             extends Object
@@ -28,7 +31,7 @@ export class ComparableObject
     public compareTo(anyType: any = {}): number{
 var anyType = anyType
 
-                        if(this.hashCode() < anyType!.hashCode())
+                        if(TsUtil.getInstance()!.hashCode(this) < TsUtil.getInstance()!.hashCode(anyType))
                         
                                     {
                                     
@@ -41,7 +44,7 @@ var anyType = anyType
                                     }
                                 
                              else 
-                        if(this.hashCode() > anyType!.hashCode())
+                        if(TsUtil.getInstance()!.hashCode(this) > TsUtil.getInstance()!.hashCode(anyType))
                         
                                     {
                                     

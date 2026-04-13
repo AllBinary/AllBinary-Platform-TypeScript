@@ -204,7 +204,7 @@ this.genericOperatingSystem= SolarisOperatingSystemFactory.getInstance()!.getOpe
         
 ;
     
-System.out.println(log.toString());
+console.log(log.toString());
     
 this.logUtil!.putL(log);
     

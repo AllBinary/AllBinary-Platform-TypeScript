@@ -18,6 +18,8 @@
 
 
 
+            import { Integer } from "../../../../../java/lang/Integer.js";
+        
 import { HashMap } from "../../../../../../java/util/HashMap.js";
 
     
@@ -80,11 +82,11 @@ URLGLOBALS.init(appUrlGlobals);
         
 ;
     
-System.out.println("Old String: " +testString);
+console.log("Old String: " +testString);
     
 testString= replace.all(testString);
     
-System.out.println("New String: " +testString);
+console.log("New String: " +testString);
     
 
     var replaceCat: Replace = new Replace("abcdefghijklmnopqrstuxwxyzabcdefghijklmnopqrstuxwxyz", stringUtil!.EMPTY_STRING);
@@ -94,7 +96,7 @@ System.out.println("New String: " +testString);
     
 testString= replaceCat!.all(testString);
     
-System.out.println("New String: " +testString);
+console.log("New String: " +testString);
     
 
                 //: 
@@ -269,7 +271,7 @@ values= hashMap!.get(keys as Object);
                         if(foundTotal % 100 == 0)
                         
                                     {
-                                    System.out.println(FOUND_KEY +foundTotal);
+                                    console.log(FOUND_KEY +foundTotal);
     
 
                                     }
@@ -459,7 +461,7 @@ newStringBuffer!.delete(0, newStringBuffer!.length());
                         if(begin !=  -1)
                         
                                     {
-                                    System.out.println(FOUND_KEY);
+                                    console.log(FOUND_KEY);
     
 
     var end: number = replace.indexOf('\n', begin +key.length) +1;

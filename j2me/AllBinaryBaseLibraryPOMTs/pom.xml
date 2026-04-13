@@ -41,7 +41,6 @@
         <module>../ExceptionHTMLJavaLibraryTsM</module>
         <module>../J2MEExceptionLibraryTsM</module>
         <module>../../allbinary_src/J2SEExceptionLibraryTsM</module>
-        <module>../J2METoArkTSLibraryTs</module>
         <module>../ArkTSExceptionLibraryTsM</module>
         <module>../J2MEUtilJavaLibraryTsM</module>
         <module>../J2MEColorJavaLibraryTsM</module>
@@ -77,8 +76,8 @@
 
         <module>../../allbinary_src/hardware/HardwareLibraryPOMTs</module>
 
-        <module>../lib/TrigBaseLibraryTsM</module>        
-
+        <module>../lib/TrigBaseLibraryTsM</module>
+        <module>../J2SEForArkTSLibraryTsM</module>
     </modules>
 
 </project>

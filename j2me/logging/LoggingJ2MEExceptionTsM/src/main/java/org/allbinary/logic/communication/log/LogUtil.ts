@@ -148,9 +148,7 @@ put(specialMessage, anyType, functionName, exception);
         
 ;
     
-System.out.print(LOG_SUCCESS);
-    
-System.out.println(message);
+console.log(LOG_SUCCESS + message);
     
 }
 

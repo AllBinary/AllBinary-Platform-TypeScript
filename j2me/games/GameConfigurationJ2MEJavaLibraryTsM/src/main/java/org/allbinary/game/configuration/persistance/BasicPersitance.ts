@@ -18,6 +18,8 @@
 
 
 
+            import { Integer } from "../../../../../java/lang/Integer.js";
+        
 import { RecordStore } from "../../../../../javax/microedition/rms/RecordStore.js";
 
     

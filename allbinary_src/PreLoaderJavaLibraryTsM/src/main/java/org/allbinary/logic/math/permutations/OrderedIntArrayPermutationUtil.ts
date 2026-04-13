@@ -81,7 +81,7 @@ data[i]= i;
         
 ;
     
-System.out.print(ORIGINAL_DATA_LABEL);
+console.log(ORIGINAL_DATA_LABEL);
     
 permutationVisitor!.print(data);
     
@@ -222,9 +222,9 @@ var visitor = visitor
         
 ;
     
-System.out.print(TOTAL_ITERATIONS_TABLE);
+console.log(TOTAL_ITERATIONS_TABLE);
     
-System.out.println(iterations);
+console.log(iterations);
     
 
 
@@ -242,7 +242,7 @@ visitor.visit(this);
     
 }
 
-System.out.println(FINISHED);
+console.log(FINISHED);
     
 }
 
