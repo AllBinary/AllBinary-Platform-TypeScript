@@ -70,7 +70,7 @@
             <version>2.0.4</version>
             <optional>true</optional>
         </dependency>
-   
+<!--   
         <dependency>
             <groupId>com.google.android</groupId>
             <artifactId>androidTs</artifactId>
@@ -84,7 +84,7 @@
             <scope>provided</scope>
             <classifier>sources</classifier>
         </dependency>
-        
+-->
     </dependencies>
 
     <build>

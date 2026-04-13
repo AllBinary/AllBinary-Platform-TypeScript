@@ -203,7 +203,7 @@
             </exclusions>
         </dependency>
         -->
-
+<!--
         <dependency>
             <groupId>com.google.android</groupId>
             <artifactId>androidTs</artifactId>
@@ -217,7 +217,7 @@
             <scope>provided</scope>
             <classifier>sources</classifier>
         </dependency>
-        
+-->
     </dependencies>
 
     <build>

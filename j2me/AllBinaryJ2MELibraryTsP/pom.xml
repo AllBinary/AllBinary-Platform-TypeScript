@@ -43,7 +43,7 @@
         <module>../AllBinaryJ2MELibraryTsM</module>
         <module>../NullJ2MELibraryTsM</module>
                 
-        <module>../AllBinaryOptionalLibraryPOTsM</module>
+        <module>../AllBinaryOptionalLibraryPOMTs</module>
     </modules>
 
 </project>

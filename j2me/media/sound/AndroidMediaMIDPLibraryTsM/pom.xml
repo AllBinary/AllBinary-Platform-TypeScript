@@ -11,10 +11,6 @@
     <url>http://maven.apache.org</url>
 
     <properties>
-    </properties>
-
-
-    <properties>
         <yarnVersion>v1.22.22</yarnVersion>
     </properties>
 
@@ -113,7 +109,7 @@
             <optional>true</optional>
         </dependency>
         -->
-        
+<!--        
         <dependency>
             <groupId>com.google.android</groupId>
             <artifactId>androidTs</artifactId>
@@ -127,7 +123,7 @@
             <scope>provided</scope>
             <classifier>sources</classifier>
         </dependency>
-
+-->
     </dependencies>
 
     <build>

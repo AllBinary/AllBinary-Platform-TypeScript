@@ -85,6 +85,7 @@
 
         <!-- API 11 Android 3.0 -->
         <!-- API 16 Android 4.1.x -->
+<!--        
         <dependency>
             <groupId>com.google.android</groupId>
             <artifactId>androidTs</artifactId>
@@ -98,7 +99,7 @@
             <scope>provided</scope>
             <classifier>sources</classifier>
         </dependency>
-        
+-->
     </dependencies>
 
     <build>

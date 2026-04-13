@@ -84,6 +84,7 @@
         </dependency>
 
         <!-- API 30 Android 11 -->
+<!--
         <dependency>
             <groupId>com.google.android</groupId>
             <artifactId>androidTs</artifactId>
@@ -97,7 +98,7 @@
             <scope>provided</scope>
             <classifier>sources</classifier>
         </dependency>
-
+-->
         <dependency>
             <groupId>androidx.core</groupId>
             <artifactId>coreTs</artifactId>

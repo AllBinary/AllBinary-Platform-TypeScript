@@ -23,11 +23,6 @@
             <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/releases/</url>
         </repository>
     </distributionManagement>
-      
-    <properties>
-        <buildLabel>${project.version}</buildLabel>
-    </properties>
-
 
     <properties>
         <yarnVersion>v1.22.22</yarnVersion>

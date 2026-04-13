@@ -25,11 +25,6 @@
     </distributionManagement>
 
     <properties>
-        <buildLabel>${project.version}</buildLabel>
-    </properties>
-
-
-    <properties>
         <yarnVersion>v1.22.22</yarnVersion>
     </properties>
 
@@ -65,7 +60,7 @@
             <version>1.0.0-SNAPSHOT</version>
             <!-- AllBinary Platform Version End -->
         </dependency>
-                
+<!--                
         <dependency>
             <groupId>com.google.android</groupId>
             <artifactId>androidTs</artifactId>
@@ -79,7 +74,7 @@
             <scope>provided</scope>
             <classifier>sources</classifier>
         </dependency>
-        
+-->
     </dependencies>
 
     <build>

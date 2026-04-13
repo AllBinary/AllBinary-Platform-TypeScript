@@ -54,7 +54,7 @@
 
         </dependency>
 
-        <dependency>
+<!--        <dependency>
             <groupId>com.google.android</groupId>
             <artifactId>androidTs</artifactId>
             <version>1.5_r3</version>
@@ -67,6 +67,7 @@
             <scope>provided</scope>
             <classifier>sources</classifier>
         </dependency>
+-->
 
     </dependencies>
 
