@@ -5,8 +5,8 @@
     <artifactId>BaseSystemJavaLibraryTs</artifactId>
     <packaging>jar</packaging>
     <!-- AllBinary Platform Version Start -->
-    <version>1.0.0-SNAPSHOT</version>
-    <!-- AllBinary Platform Version End -->
+            <version>1.0.0-SNAPSHOT</version>
+            <!-- AllBinary Platform Version End -->
 
     <name>BaseSystemJavaLibraryTs</name>
     <url>http://www.allbinary.com/</url>
@@ -23,9 +23,10 @@
         </repository>
     </distributionManagement>
 
+
+
+
     <properties>
-        <buildLabel>${project.version}</buildLabel>
-        <assemblyPluginVersion>2.2-beta-1</assemblyPluginVersion>
         <yarnVersion>v1.22.22</yarnVersion>
     </properties>
 
@@ -82,7 +83,8 @@
                     <!-- set the path to node - make sure the version is the same as in the config-->
                     <!--   <workingDirectory>${YOUR_WORKING_DIRECTORY}</workingDirectory>-->
                     <!--                <nodeVersion>v16.14.0</nodeVersion>-->
-<!--            <plugin>
+<!--
+            <plugin>
                 <groupId>com.github.eirslett</groupId>
                 <artifactId>frontend-maven-plugin</artifactId>
                 <version>2.0.0</version>
@@ -117,7 +119,8 @@
                         </configuration>
                     </execution>
                 </executions>
-            </plugin>-->
+            </plugin>
+-->
 
             
             <plugin>
