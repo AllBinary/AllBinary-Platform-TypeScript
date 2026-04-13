@@ -26,10 +26,6 @@
     <properties>
         <buildLabel>${project.version}</buildLabel>
         <assemblyPluginVersion>2.2-beta-1</assemblyPluginVersion>
-    </properties>
-
-
-    <properties>
         <yarnVersion>v1.22.22</yarnVersion>
     </properties>
 
@@ -97,7 +93,7 @@
                     </execution>
                 </executions>
             </plugin>
---!>
+-->
 
             
             <plugin>
