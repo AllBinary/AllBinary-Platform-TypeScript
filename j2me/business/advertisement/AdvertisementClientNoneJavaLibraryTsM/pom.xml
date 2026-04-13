@@ -128,9 +128,9 @@
 
 
 
-            <plugin>
+<!--            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-dependency-pluginTs</artifactId>
+                <artifactId>maven-dependency-plugin</artifactId>
                 <executions>
                     <execution>
                         <id>sources</id>
@@ -140,14 +140,14 @@
                         </goals>
                         <configuration>
                             <classifier>sources</classifier>
-                            <failOnMissingClassifierArtifact>false</failOnMissingClassifierArtifact>
+                            <failOnMissingClassifierArtifact>false</failOnMissingClassifierArtifact>-->
                             <!--
                             <outputDirectory>${project.build.directory}/sources</outputDirectory>
                             -->
-                        </configuration>
+<!--                        </configuration>
                     </execution>
                 </executions>
-            </plugin>
+            </plugin>-->
             
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
