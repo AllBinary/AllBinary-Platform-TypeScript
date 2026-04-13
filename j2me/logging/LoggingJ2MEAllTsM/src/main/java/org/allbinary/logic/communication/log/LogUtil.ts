@@ -123,9 +123,7 @@ this.put(specialMessage, anyType, functionName, exception);
         
 ;
     
-console.log(this.LOG_SUCCESS);
-    
-console.log(message);
+console.log(this.LOG_SUCCESS + message);
     
 }
 
@@ -163,9 +161,7 @@ console.log(message);
         
 ;
     
-console.log(this.LOG_SUCCESS);
-    
-console.log(message);
+console.log(this.LOG_SUCCESS + message);
     
 }
 
