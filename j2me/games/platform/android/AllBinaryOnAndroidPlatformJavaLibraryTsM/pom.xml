@@ -28,6 +28,11 @@
         <assemblyPluginVersion>2.2-beta-1</assemblyPluginVersion>
     </properties>
 
+
+    <properties>
+        <yarnVersion>v1.22.22</yarnVersion>
+    </properties>
+
     <dependencies>
         
         <dependency>
@@ -38,6 +43,13 @@
             <!-- AllBinary Platform Version End -->
         </dependency>
 
+        <dependency>
+            <groupId>org.allbinary</groupId>
+            <artifactId>OpenGLAndroidJavaLibraryTs</artifactId>
+            <!-- AllBinary Platform Version Start -->
+            <version>1.0.0-SNAPSHOT</version>
+            <!-- AllBinary Platform Version End -->
+        </dependency>
         <dependency>
             <groupId>org.allbinary</groupId>
             <artifactId>ImageCacheAndroidJavaLibraryTs</artifactId>
@@ -264,47 +276,57 @@ input\android\MotionInputThroughAPI4AndroidJavaLibrary
 
         <!-- -->
 
+        <dependency>
+            <groupId>org.microemu</groupId>
+            <artifactId>microemu-android-abTs</artifactId>
+            <version>3.0.0-SNAPSHOT</version>
+        </dependency>
+
     </dependencies>
 
     <build>
         
         <plugins>
+                <!--    <version>1.15.4</version>-->
+                <!--    <version>1.14.2</version>-->
+                    <!-- set the path to node - make sure the version is the same as in the config-->
+                    <!--   <workingDirectory>${YOUR_WORKING_DIRECTORY}</workingDirectory>-->
+                    <!--                <nodeVersion>v16.14.0</nodeVersion>-->
             <plugin>
-                <groupId>org.jetbrains.kotlin</groupId>
-                <artifactId>kotlin-maven-plugin</artifactId>
-                <version>2.3.20</version><!-- kotlin -->
+                <groupId>com.github.eirslett</groupId>
+                <artifactId>frontend-maven-plugin</artifactId>
+                <version>2.0.0</version>
+                <configuration>
+                    <installDirectory>C:\</installDirectory>
+                    <nodeVersion>v25.9.0</nodeVersion>
+                </configuration>
                 <executions>
                     <execution>
-                        <id>compile</id>
-                        <phase>compile</phase>
+                        <id>install node and yarn</id>
                         <goals>
-                            <goal>compile</goal>
+                            <goal>install-node-and-yarn</goal>
                         </goals>
                     </execution>
                     <execution>
-                        <id>test-compile</id>
-                        <phase>test-compile</phase>
+                        <id>npm install</id>
                         <goals>
-                            <goal>test-compile</goal>
+                            <goal>npm</goal>
                         </goals>
+                        <configuration>
+                            <arguments>install</arguments>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>npm run validation</id>
+                        <goals>
+                            <goal>npm</goal>
+                        </goals>
+                        <phase>test</phase>
+                        <configuration>
+                            <arguments>run validate</arguments>
+                        </configuration>
                     </execution>
                 </executions>
-            </plugin>
-            <plugin>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.22.2</version>
-            </plugin>
-            <plugin>
-                <artifactId>maven-failsafe-plugin</artifactId>
-                <version>2.22.2</version>
-            </plugin>
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>exec-maven-plugin</artifactId>
-                <version>1.6.0</version>
-                <configuration>
-                    <mainClass></mainClass>
-                </configuration>
             </plugin>
 
 
@@ -322,6 +344,24 @@ input\android\MotionInputThroughAPI4AndroidJavaLibrary
                         </goals>
                     </execution>
                 </executions>
+            </plugin>
+
+            <plugin>
+                <artifactId>maven-assembly-pluginTs</artifactId>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <attach>true</attach>
+                    <descriptors>
+                        <descriptor>assembly.xml</descriptor>
+                    </descriptors>
+                </configuration>
             </plugin>
 
         </plugins>

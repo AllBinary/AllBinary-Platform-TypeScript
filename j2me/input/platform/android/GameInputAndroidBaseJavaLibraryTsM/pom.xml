@@ -2,13 +2,14 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.allbinary</groupId>
-    <artifactId>AllBinaryOnAndroidBasePlatformJavaLibraryTs</artifactId>
+    <artifactId>GameInputAndroidBaseJavaLibraryTs</artifactId>
     <packaging>jar</packaging>
-        <!-- AllBinary Platform Version Start -->
-            <version>1.0.0-SNAPSHOT</version>
-            <!-- AllBinary Platform Version End -->
-    <name>AllBinaryOnAndroidBasePlatformJavaLibraryTs</name>
-    <url>http://www.allbinary.com/</url>
+    <!-- AllBinary Platform Version Start -->
+    <version>1.0.0-SNAPSHOT</version>
+    <!-- AllBinary Platform Version End -->
+    <name>GameInputAndroidBaseJavaLibraryTs</name>
+    <url>http://maven.apache.org</url>
+
     <distributionManagement>
         <snapshotRepository>
             <id>nexus-snapshots</id>
@@ -33,166 +34,100 @@
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8.1</version>
+            <scope>test</scope>
+        </dependency>
 
+        <dependency>
+            <groupId>org.allbinary</groupId>
+            <artifactId>LoggingJ2MEAllTs</artifactId>
+            <!-- AllBinary Platform Version Start -->
+            <version>1.0.0-SNAPSHOT</version>
+            <!-- AllBinary Platform Version End -->
+            <optional>true</optional>
+        </dependency>
+
+        <dependency>
+            <groupId>org.allbinary</groupId>
+            <artifactId>BasePreloaderFileJavaLibraryTs</artifactId>
+            <!-- AllBinary Platform Version Start -->
+            <version>1.0.0-SNAPSHOT</version>
+            <!-- AllBinary Platform Version End -->
+        </dependency>
+
+        <dependency>
+            <groupId>org.allbinary</groupId>
+            <artifactId>GameInputLibraryTs</artifactId>
+            <!-- AllBinary Platform Version Start -->
+            <version>1.0.0-SNAPSHOT</version>
+            <!-- AllBinary Platform Version End -->
+        </dependency>
+        
+        <dependency>
+            <groupId>org.allbinary</groupId>
+            <artifactId>TouchScreenJavaLibraryTs</artifactId>
+            <!-- AllBinary Platform Version Start -->
+            <version>1.0.0-SNAPSHOT</version>
+            <!-- AllBinary Platform Version End -->
+        </dependency>        
+
+        <dependency>
+            <groupId>org.allbinary</groupId>
+            <artifactId>AndroidBaseJavaLibraryTs</artifactId>        
+            <!-- AllBinary Platform Version Start -->
+            <version>1.0.0-SNAPSHOT</version>
+            <!-- AllBinary Platform Version End -->
+        </dependency>
+
+        <dependency>
+            <groupId>org.allbinary</groupId>
+            <artifactId>AndroidSystemJavaLibraryTs</artifactId>        
+            <!-- AllBinary Platform Version Start -->
+            <version>1.0.0-SNAPSHOT</version>
+            <!-- AllBinary Platform Version End -->
+        </dependency>
+
+        <dependency>
+            <groupId>org.microemu</groupId>
+            <artifactId>microemu-midpTs</artifactId>
+            <version>2.0.4</version>
+            <optional>true</optional>
+        </dependency>
         <!--
+        Public microemu
         <dependency>
-            <groupId>org.allbinary</groupId>
-            <artifactId>ApplicationStatisticsAndroidLibraryTs</artifactId>
-        
-            <version>1.0.0-SNAPSHOT</version>
+            <groupId>org.microemu</groupId>
+            <artifactId>microemu-midpTs</artifactId>
+            <version>2.0.4</version>
+            <optional>true</optional>
         </dependency>
-        -->
-        <!-- Note: J2MEMidletAsViewJavaLibrary has it for Android -->
-                
+        Custom microemu
         <dependency>
-            <groupId>org.allbinary</groupId>
-            <artifactId>ContentAndroidJavaLibraryTs</artifactId>
-            <!-- AllBinary Platform Version Start -->
-            <version>1.0.0-SNAPSHOT</version>
-            <!-- AllBinary Platform Version End -->
-        </dependency>        
-
-        <dependency>
-            <groupId>org.allbinary</groupId>
-            <artifactId>FormJSEJavaLibraryTs</artifactId>
-            <!-- AllBinary Platform Version Start -->
-            <version>1.0.0-SNAPSHOT</version>
-            <!-- AllBinary Platform Version End -->
-        </dependency>
-        
-        <!-- Is in AndroidToAllBinaryJavaLibrary
-        <dependency>
-            <groupId>org.allbinary</groupId>
-            <artifactId>FullScreenJavaLibraryTs</artifactId>
-            <artifactId>FullScreenNoneJavaLibraryTs</artifactId>
+            <groupId>org.microemu</groupId>
+            <artifactId>microemu-midpTs</artifactId>
+            <version>3.0.0-SNAPSHOT</version>
+            <optional>true</optional>
         </dependency>
         -->
 
+<!-- API 12 or higher -->
         <dependency>
-            <groupId>org.allbinary</groupId>
-            <artifactId>GameConfigurationJ2MEJavaLibraryTs</artifactId>
-            <!-- AllBinary Platform Version Start -->
-            <version>1.0.0-SNAPSHOT</version>
-            <!-- AllBinary Platform Version End -->
+            <groupId>com.google.android</groupId>
+            <artifactId>androidTs</artifactId>
+            <version>4.0.1.2</version>
+            <scope>provided</scope>
         </dependency>
-
         <dependency>
-            <groupId>org.allbinary</groupId>
-            <artifactId>GameInputPersistanceLibraryTs</artifactId>
-            <!-- AllBinary Platform Version Start -->
-            <version>1.0.0-SNAPSHOT</version>
-            <!-- AllBinary Platform Version End -->
-        </dependency>
-                                                                        
-        <dependency>
-            <groupId>org.allbinary</groupId>
-            <artifactId>GameScoresBaseJ2MELibraryTs</artifactId>
-            <!-- AllBinary Platform Version Start -->
-            <version>1.0.0-SNAPSHOT</version>
-            <!-- AllBinary Platform Version End -->
+            <groupId>com.google.android</groupId>
+            <artifactId>androidTs</artifactId>
+            <version>4.0.1.2</version>
+            <scope>provided</scope>
+            <classifier>sources</classifier>
         </dependency>
         
-        <dependency>
-            <groupId>org.allbinary.media.image</groupId>
-            <artifactId>ImageAndroidJavaLibraryTs</artifactId>
-            <!-- AllBinary Platform Version Start -->
-            <version>1.0.0-SNAPSHOT</version>
-            <!-- AllBinary Platform Version End -->
-        </dependency>
-        
-        <dependency>
-            <groupId>org.allbinary</groupId>
-            <artifactId>AndroidToAllBinaryJavaLibraryTs</artifactId>
-            <!-- AllBinary Platform Version Start -->
-            <version>1.0.0-SNAPSHOT</version>
-            <!-- AllBinary Platform Version End -->
-        </dependency>
-        <dependency>
-            <groupId>org.allbinary</groupId>
-            <artifactId>J2MEWindowingJavaLibraryTs</artifactId>
-            <!-- AllBinary Platform Version Start -->
-            <version>1.0.0-SNAPSHOT</version>
-            <!-- AllBinary Platform Version End -->
-        </dependency>                
-        
-        <dependency>
-            <groupId>org.allbinary</groupId>
-            <artifactId>GyroSensorAndroidJavaLibraryTs</artifactId>
-            <!--
-            SensorAndroidJavaLibrary
-            -->
-            <!-- AllBinary Platform Version Start -->
-            <version>1.0.0-SNAPSHOT</version>
-            <!-- AllBinary Platform Version End -->
-        </dependency>
-
-        <dependency>
-            <groupId>org.allbinary</groupId>
-            <artifactId>AndroidSystemJavaLibraryTs</artifactId>
-            <!--
-            AndroidResourceLibrary
-            -->        
-            <!-- AllBinary Platform Version Start -->
-            <version>1.0.0-SNAPSHOT</version>
-            <!-- AllBinary Platform Version End -->
-        </dependency>
-
-        <dependency>
-            <groupId>org.allbinary</groupId>
-            <artifactId>VibrateAndroidJavaLibraryTs</artifactId>
-            <!-- AllBinary Platform Version Start -->
-            <version>1.0.0-SNAPSHOT</version>
-            <!-- AllBinary Platform Version End -->
-        </dependency>
-
-        <dependency>
-            <groupId>org.allbinary</groupId>
-            <artifactId>J2MEMidletAsViewJavaLibraryTs</artifactId>
-            <!-- AllBinary Platform Version Start -->
-            <version>1.0.0-SNAPSHOT</version>
-            <!-- AllBinary Platform Version End -->
-        </dependency>
-
-<!--
-        <dependency>
-            <groupId>org.allbinary</groupId>
-            <artifactId>OpenGLESAndroidJavaLibraryKtTs</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-        </dependency>
--->
-
-        <dependency>
-            <groupId>org.allbinary</groupId>
-            <artifactId>PartnerAndroidJavaLibraryTs</artifactId>
-            <!-- AllBinary Platform Version Start -->
-            <version>1.0.0-SNAPSHOT</version>
-            <!-- AllBinary Platform Version End -->
-        </dependency>
-        
-        <!--
-        Already in dependency graph
-        <dependency>
-            <groupId>org.allbinary</groupId>
-            <artifactId>AndroidResourceLibraryTs</artifactId>
-        </dependency>        
-        -->
-            
-        <dependency>
-            <groupId>org.allbinary</groupId>
-            <artifactId>ScreenCaptureNoneJavaLibraryTs</artifactId>
-            <!-- AllBinary Platform Version Start -->
-            <version>1.0.0-SNAPSHOT</version>
-            <!-- AllBinary Platform Version End -->
-        </dependency>
-
-        <dependency>
-            <groupId>org.allbinary</groupId>
-            <artifactId>ThreadJ2MELibraryTs</artifactId>
-            <!-- AllBinary Platform Version Start -->
-            <version>1.0.0-SNAPSHOT</version>
-            <!-- AllBinary Platform Version End -->
-        </dependency>        
-
     </dependencies>
 
     <build>
@@ -241,12 +176,9 @@
             </plugin>
 
 
-
-
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-source-plugin</artifactId>
-                <version>2.1.2</version>
                 <executions>
                     <execution>
                         <id>attach-sources</id>
@@ -255,9 +187,15 @@
                         </goals>
                     </execution>
                 </executions>
+<!-- 
+                <configuration>
+                    <skipSource>true</skipSource>
+                </configuration>
+-->
             </plugin>
-
+            
         </plugins>
+
     </build>
 
 </project>
