@@ -30,7 +30,7 @@
 
     <modules>
         
-        <module>../../ProgressLazyJ2MEJavaLibraryTsM</module>
+<!--        <module>../../ProgressLazyJ2MEJavaLibraryTsM</module>-->
         <!--
                 <module>../../games/GameScoresBaseHTMLLibraryTsM</module>
                 <module>../../games/GameScoresJ2MEJavaLibraryTsM</module>
@@ -38,8 +38,8 @@
                 <module>../../games/GameScoresLocalLibraryTsM</module>
                 <module>../../games/GameScoresRemoteAndLocalLibraryTsM</module>
         -->
-        <module>../../media/graphics/ImageCacheJ2MEJavaLibraryTsM</module>
-        <module>../../media/graphics/ImageCacheLazyJ2MEJavaLibraryTsM</module>
+<!--        <module>../../media/graphics/ImageCacheJ2MEJavaLibraryTsM</module>
+        <module>../../media/graphics/ImageCacheLazyJ2MEJavaLibraryTsM</module>-->
         <!--        <module>../../media/graphics/ImageCacheOpenGLESJavaLibraryTsM</module>-->
         <module>../../media/graphics/GameResourceNoneJavaLibraryTsM</module>
         <module>../../media/graphics/LazyGameResourceNoneJavaLibraryTsM</module>
@@ -48,7 +48,7 @@
                 <module>../../../graphics/opengl/OpenGLESJavaLibraryTsM</module>
         -->
 
-        <module>../../input/JSEGyroSensorJavaLibraryTsM</module>
+<!--        <module>../../input/JSEGyroSensorJavaLibraryTsM</module>-->
         <!--        
                 <module>../../ProgressJ2MEJavaLibraryTsM</module>
         -->
@@ -65,9 +65,9 @@
         <module>../../../../work/j2me/media/graphics/FormJSEJavaLibraryTsM</module>
         -->
 
-        <module>../../media/sound/J2SEMediaMIDPMinimalJavaLibraryTsM</module>
+<!--        <module>../../media/sound/J2SEMediaMIDPMinimalJavaLibraryTsM</module>
         <module>../../media/sound/NotDeviceSpecificMIDP2JavaLibraryTsM</module>
-        <module>../../media/sound/MediaMIDP2ForHTMLJavaLibraryTsM</module>
+        <module>../../media/sound/MediaMIDP2ForHTMLJavaLibraryTsM</module>-->
 
         <!--
                 <module>../../../../work/j2me/ScreenCaptureAndroidJavaLibraryTsM</module>
