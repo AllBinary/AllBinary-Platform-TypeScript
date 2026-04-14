@@ -121,7 +121,7 @@
 
         <module>../../media/sound/OtherSoundMediaLibraryTsP</module>
 
-<!--        <module>../../../allbinary_src/licensing/ApplicationConfigurationJavaLibraryTsM</module>-->
+        <module>../../../allbinary_src/licensing/ApplicationConfigurationJavaLibraryTsM</module>
         <module>../../input/AllBinaryMagneticFieldSensorJavaLibraryTsM</module>
         <module>../../android/VirtualKeyboardJavaLibraryTsM</module>
 

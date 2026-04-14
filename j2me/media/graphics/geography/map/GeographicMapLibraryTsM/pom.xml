@@ -25,10 +25,6 @@
 
     <properties>
         <buildLabel>${project.version}</buildLabel>
-    </properties>
-
-
-    <properties>
         <yarnVersion>v1.22.22</yarnVersion>
     </properties>
 

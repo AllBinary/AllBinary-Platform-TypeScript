@@ -64,17 +64,23 @@
         </dependency>
 
         <dependency>
-            <groupId>org.microemu</groupId>
-            <artifactId>microemu-midpTs</artifactId>
-            <version>3.0.0-SNAPSHOT</version>
+            <groupId>org.allbinary</groupId>
+            <artifactId>AndroidCustomToJ2MELibraryTs</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
             <optional>true</optional>
         </dependency>
         <dependency>
             <groupId>org.microemu</groupId>
+            <artifactId>microemu-midpTs</artifactId>
+            <version>2.0.2-SPECIAL-SNAPSHOT</version>
+            <optional>true</optional>
+        </dependency>
+<!--        <dependency>
+            <groupId>org.microemu</groupId>
             <artifactId>microemu-androidTs</artifactId>
             <version>3.0.0-SNAPSHOT</version>
             <optional>true</optional>
-        </dependency>
+        </dependency>-->
 <!--            
         <dependency>
             <groupId>com.google.android</groupId>

@@ -41,7 +41,7 @@
         <module>../data/DataJavaLibraryTsM</module>
         -->
 
-        <module>../licensing/TestServiceClientInfoJavaLibraryTsM</module>        
+        <module>../licensing/TestServiceClientInfoJavaLibraryTsM</module>
 
         <module>../data/DataTableInterfacesTsM</module>
         

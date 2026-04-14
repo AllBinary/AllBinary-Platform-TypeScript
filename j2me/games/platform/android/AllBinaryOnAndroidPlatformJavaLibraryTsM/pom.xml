@@ -26,10 +26,6 @@
     <properties>
         <buildLabel>${project.version}</buildLabel>
         <assemblyPluginVersion>2.2-beta-1</assemblyPluginVersion>
-    </properties>
-
-
-    <properties>
         <yarnVersion>v1.22.22</yarnVersion>
     </properties>
 
@@ -43,13 +39,6 @@
             <!-- AllBinary Platform Version End -->
         </dependency>
 
-        <dependency>
-            <groupId>org.allbinary</groupId>
-            <artifactId>OpenGLAndroidJavaLibraryTs</artifactId>
-            <!-- AllBinary Platform Version Start -->
-            <version>1.0.0-SNAPSHOT</version>
-            <!-- AllBinary Platform Version End -->
-        </dependency>
         <dependency>
             <groupId>org.allbinary</groupId>
             <artifactId>ImageCacheAndroidJavaLibraryTs</artifactId>
@@ -292,7 +281,7 @@ input\android\MotionInputThroughAPI4AndroidJavaLibrary
                     <!-- set the path to node - make sure the version is the same as in the config-->
                     <!--   <workingDirectory>${YOUR_WORKING_DIRECTORY}</workingDirectory>-->
                     <!--                <nodeVersion>v16.14.0</nodeVersion>-->
-            <plugin>
+<!--            <plugin>
                 <groupId>com.github.eirslett</groupId>
                 <artifactId>frontend-maven-plugin</artifactId>
                 <version>2.0.0</version>
@@ -327,7 +316,7 @@ input\android\MotionInputThroughAPI4AndroidJavaLibrary
                         </configuration>
                     </execution>
                 </executions>
-            </plugin>
+            </plugin>-->
 
 
 
@@ -347,7 +336,7 @@ input\android\MotionInputThroughAPI4AndroidJavaLibrary
             </plugin>
 
             <plugin>
-                <artifactId>maven-assembly-pluginTs</artifactId>
+                <artifactId>maven-assembly-plugin</artifactId>
                 <executions>
                     <execution>
                         <phase>package</phase>

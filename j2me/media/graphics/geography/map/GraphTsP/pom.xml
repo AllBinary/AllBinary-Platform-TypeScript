@@ -26,6 +26,7 @@
     <properties>
         <buildLabel>${project.version}</buildLabel>
         <assemblyPluginVersion>2.2-beta-1</assemblyPluginVersion>
+        <yarnVersion>v1.22.22</yarnVersion>
     </properties>
 
     <modules>
@@ -70,11 +71,6 @@
         
         <module>../BasicPlatformGeographicMapJavaLibraryTsM</module>
     </modules>
-
-
-    <properties>
-        <yarnVersion>v1.22.22</yarnVersion>
-    </properties>
 
     <dependencies>
         <dependency>
