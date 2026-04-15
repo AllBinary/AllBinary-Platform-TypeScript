@@ -18,7 +18,10 @@
 
 
 
-import { HashMap } from "../../../../../../java/util/HashMap.js";
+            import HashMap from "@ohos.util.HashMap";
+        
+
+//import { HashMap } from "../../../../../../java/util/HashMap.js";
 
     
 import { PageContext } from "../../../../../../javax/servlet/jsp/PageContext.js";

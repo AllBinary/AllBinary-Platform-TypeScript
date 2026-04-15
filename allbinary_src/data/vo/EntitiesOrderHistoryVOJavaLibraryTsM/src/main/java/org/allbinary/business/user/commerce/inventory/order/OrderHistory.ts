@@ -18,11 +18,14 @@
 
 
 
+            import HashMap from "@ohos.util.HashMap";
+        
 
 //import { Date } from "../../../../../../../java/util/Date.js";
 
     
-import { HashMap } from "../../../../../../../java/util/HashMap.js";
+
+//import { HashMap } from "../../../../../../../java/util/HashMap.js";
 
     
 import { Set } from "../../../../../../../java/util/Set.js";

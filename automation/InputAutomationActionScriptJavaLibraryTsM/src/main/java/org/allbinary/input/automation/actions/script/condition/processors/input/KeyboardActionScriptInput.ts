@@ -20,12 +20,15 @@
 
             import Vector from "@ohos.util.Vector";
         
-            import { Integer } from "../../../../../java/lang/Integer.js";
+            import HashMap from "@ohos.util.HashMap";
+        
+            import { Integer } from "../../../../../../../../../java/lang/Integer.js";
         
 import { KeyEvent } from "../../../../../../../../../java/awt/event/KeyEvent.js";
 
     
-import { HashMap } from "../../../../../../../../../java/util/HashMap.js";
+
+//import { HashMap } from "../../../../../../../../../java/util/HashMap.js";
 
     
 

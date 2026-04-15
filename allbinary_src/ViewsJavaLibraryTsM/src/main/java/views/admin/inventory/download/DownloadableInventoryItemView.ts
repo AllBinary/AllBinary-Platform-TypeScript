@@ -20,10 +20,13 @@
 
             import Vector from "@ohos.util.Vector";
         
+            import HashMap from "@ohos.util.HashMap";
+        
 import { ByteArrayInputStream } from "../../../../java/io/ByteArrayInputStream.js";
 
     
-import { HashMap } from "../../../../java/util/HashMap.js";
+
+//import { HashMap } from "../../../../java/util/HashMap.js";
 
     
 

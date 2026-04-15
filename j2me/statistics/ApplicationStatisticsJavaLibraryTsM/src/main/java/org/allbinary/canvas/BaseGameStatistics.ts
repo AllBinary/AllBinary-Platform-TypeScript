@@ -18,7 +18,7 @@
 
 
 
-            import { Integer } from "../../../../../java/lang/Integer.js";
+            import { Integer } from "../../../java/lang/Integer.js";
         
 import { PrimitiveLongSingleton } from "../../../org/allbinary/logic/math/PrimitiveLongSingleton.js";
 

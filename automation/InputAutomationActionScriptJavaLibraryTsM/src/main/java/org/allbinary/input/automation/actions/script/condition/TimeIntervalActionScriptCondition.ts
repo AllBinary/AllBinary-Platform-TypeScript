@@ -18,9 +18,12 @@
 
 
 
-            import { Integer } from "../../../../../java/lang/Integer.js";
+            import HashMap from "@ohos.util.HashMap";
         
-import { HashMap } from "../../../../../../../java/util/HashMap.js";
+            import { Integer } from "../../../../../../../java/lang/Integer.js";
+        
+
+//import { HashMap } from "../../../../../../../java/util/HashMap.js";
 
     
 import { DomNodeHelper } from "../../../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js";

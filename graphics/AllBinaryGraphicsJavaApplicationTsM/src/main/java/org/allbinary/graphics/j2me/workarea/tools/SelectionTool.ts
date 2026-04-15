@@ -18,10 +18,13 @@
 
 
 
+            import HashMap from "@ohos.util.HashMap";
+        
 import { awt } from "../../../../../../java/awt.js";
 
     
-import { HashMap } from "../../../../../../java/util/HashMap.js";
+
+//import { HashMap } from "../../../../../../java/util/HashMap.js";
 
     
 import { MutableTreeNode } from "../../../../../../javax/swing/tree/MutableTreeNode.js";

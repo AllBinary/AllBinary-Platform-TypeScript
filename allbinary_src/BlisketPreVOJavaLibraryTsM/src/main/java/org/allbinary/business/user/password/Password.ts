@@ -20,9 +20,12 @@
 
             import Vector from "@ohos.util.Vector";
         
+            import HashMap from "@ohos.util.HashMap";
+        
             import { Integer } from "../../../../../java/lang/Integer.js";
         
-import { HashMap } from "../../../../../java/util/HashMap.js";
+
+//import { HashMap } from "../../../../../java/util/HashMap.js";
 
     
 import { Random } from "../../../../../java/util/Random.js";

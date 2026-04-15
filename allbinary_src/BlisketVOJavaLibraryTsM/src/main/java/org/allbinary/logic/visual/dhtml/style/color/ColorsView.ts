@@ -18,7 +18,7 @@
 
 
 
-            import { Integer } from "../../../../../java/lang/Integer.js";
+            import { Integer } from "../../../../../../../java/lang/Integer.js";
         
 import { DomNodeInterface } from "../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js";
 

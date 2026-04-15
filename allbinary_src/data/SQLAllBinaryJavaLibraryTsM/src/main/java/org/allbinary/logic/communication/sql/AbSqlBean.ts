@@ -18,10 +18,13 @@
 
 
 
+            import HashMap from "@ohos.util.HashMap";
+        
 import { ResultSet } from "../../../../../java/sql/ResultSet.js";
 
     
-import { HashMap } from "../../../../../java/util/HashMap.js";
+
+//import { HashMap } from "../../../../../java/util/HashMap.js";
 
     
 import { Set } from "../../../../../java/util/Set.js";

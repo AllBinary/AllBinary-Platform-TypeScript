@@ -18,6 +18,8 @@
 
 
 
+            import HashMap from "@ohos.util.HashMap";
+        
             import { Integer } from "../../../../../java/lang/Integer.js";
         
 import { awt } from "../../../../../java/awt.js";
@@ -26,7 +28,8 @@ import { awt } from "../../../../../java/awt.js";
 import { EventListener } from "../../../../../java/util/EventListener.js";
 
     
-import { HashMap } from "../../../../../java/util/HashMap.js";
+
+//import { HashMap } from "../../../../../java/util/HashMap.js";
 
     
 import { LinkedList } from "../../../../../java/util/LinkedList.js";

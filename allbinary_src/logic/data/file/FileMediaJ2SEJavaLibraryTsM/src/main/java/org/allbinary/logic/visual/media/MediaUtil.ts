@@ -4,13 +4,16 @@
 
 
 
+            import HashMap from "@ohos.util.HashMap";
+        
 import { BufferedImage } from "../../../../../java/awt/image/BufferedImage.js";
 
     
 import { RenderedImage } from "../../../../../java/awt/image/RenderedImage.js";
 
     
-import { HashMap } from "../../../../../java/util/HashMap.js";
+
+//import { HashMap } from "../../../../../java/util/HashMap.js";
 
     
 import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";

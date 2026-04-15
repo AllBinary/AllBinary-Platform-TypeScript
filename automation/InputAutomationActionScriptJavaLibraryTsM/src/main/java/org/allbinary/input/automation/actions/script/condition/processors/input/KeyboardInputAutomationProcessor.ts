@@ -18,7 +18,7 @@
 
 
 
-            import { Integer } from "../../../../../java/lang/Integer.js";
+            import { Integer } from "../../../../../../../../../java/lang/Integer.js";
         
 import { InputRobotInterface } from "../../../../../../../../../org/allbinary/input/automation/robot/InputRobotInterface.js";
 

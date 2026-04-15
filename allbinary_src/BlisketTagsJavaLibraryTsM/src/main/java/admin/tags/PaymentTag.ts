@@ -18,10 +18,13 @@
 
 
 
+            import HashMap from "@ohos.util.HashMap";
+        
 import { Method } from "../../java/lang/reflect/Method.js";
 
     
-import { HashMap } from "../../java/util/HashMap.js";
+
+//import { HashMap } from "../../java/util/HashMap.js";
 
     
 import { JspTagException } from "../../javax/servlet/jsp/JspTagException.js";

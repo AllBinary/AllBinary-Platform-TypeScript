@@ -18,7 +18,10 @@
 
 
 
-import { HashMap } from "../../../../../../../java/util/HashMap.js";
+            import HashMap from "@ohos.util.HashMap";
+        
+
+//import { HashMap } from "../../../../../../../java/util/HashMap.js";
 
     
 import { GLOBALS2 } from "../../../../../../../org/allbinary/globals/GLOBALS2.js";

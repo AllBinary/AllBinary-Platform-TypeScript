@@ -18,10 +18,13 @@
 
 
 
+            import HashMap from "@ohos.util.HashMap";
+        
 import { Collection } from "../../../../../java/util/Collection.js";
 
     
-import { HashMap } from "../../../../../java/util/HashMap.js";
+
+//import { HashMap } from "../../../../../java/util/HashMap.js";
 
     
 import { Iterator } from "../../../../../java/util/Iterator.js";

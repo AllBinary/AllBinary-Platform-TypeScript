@@ -18,7 +18,9 @@
 
 
 
-            import { Integer } from "../../../../../java/lang/Integer.js";
+            import HashMap from "@ohos.util.HashMap";
+        
+            import { Integer } from "../../../../../../../../../java/lang/Integer.js";
         
 import { awt } from "../../../../../../../../../java/awt.js";
 
@@ -26,7 +28,8 @@ import { awt } from "../../../../../../../../../java/awt.js";
 import { InputEvent } from "../../../../../../../../../java/awt/event/InputEvent.js";
 
     
-import { HashMap } from "../../../../../../../../../java/util/HashMap.js";
+
+//import { HashMap } from "../../../../../../../../../java/util/HashMap.js";
 
     
 import { DomNodeHelper } from "../../../../../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js";

@@ -18,7 +18,7 @@
 
 
 
-            import { Integer } from "../../../../../java/lang/Integer.js";
+            import { Integer } from "../../../../../../java/lang/Integer.js";
         
 import { BasicColor } from "../../../../../../org/allbinary/graphics/color/BasicColor.js";
 

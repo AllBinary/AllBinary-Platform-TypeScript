@@ -18,10 +18,13 @@
 
 
 
+            import HashMap from "@ohos.util.HashMap";
+        
 import { Serializable } from "../../../../java/io/Serializable.js";
 
     
-import { HashMap } from "../../../../java/util/HashMap.js";
+
+//import { HashMap } from "../../../../java/util/HashMap.js";
 
     
 

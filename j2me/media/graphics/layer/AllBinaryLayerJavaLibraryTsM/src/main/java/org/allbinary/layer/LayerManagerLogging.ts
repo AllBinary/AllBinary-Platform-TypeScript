@@ -18,7 +18,7 @@
 
 
 
-            import { Integer } from "../../../../../java/lang/Integer.js";
+            import { Integer } from "../../../java/lang/Integer.js";
         
 import { TsUtil } from "../../../org/allbinary/logic/TsUtil.js";
 

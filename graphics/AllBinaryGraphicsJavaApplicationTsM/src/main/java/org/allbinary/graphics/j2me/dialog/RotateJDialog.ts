@@ -18,12 +18,15 @@
 
 
 
+            import HashMap from "@ohos.util.HashMap";
+        
             import { Integer } from "../../../../../java/lang/Integer.js";
         
 import { ARunnable } from "../../../../../org/allbinary/thread/ARunnable.js";
 
     
-import { HashMap } from "../../../../../java/util/HashMap.js";
+
+//import { HashMap } from "../../../../../java/util/HashMap.js";
 
     
 import { HashMapJDialogListenerInterface } from "../../../../../org/allbinary/gui/dialog/HashMapJDialogListenerInterface.js";

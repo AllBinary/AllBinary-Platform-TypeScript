@@ -20,13 +20,16 @@
 
             import Vector from "@ohos.util.Vector";
         
+            import HashMap from "@ohos.util.HashMap";
+        
 import { ResultSet } from "../../../../../java/sql/ResultSet.js";
 
     
 import { ResultSetMetaData } from "../../../../../java/sql/ResultSetMetaData.js";
 
     
-import { HashMap } from "../../../../../java/util/HashMap.js";
+
+//import { HashMap } from "../../../../../java/util/HashMap.js";
 
     
 import { Set } from "../../../../../java/util/Set.js";

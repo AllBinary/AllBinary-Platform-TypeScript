@@ -20,10 +20,13 @@
 
             import Vector from "@ohos.util.Vector";
         
+            import HashMap from "@ohos.util.HashMap";
+        
 import { Calendar } from "../../../../../../../../java/util/Calendar.js";
 
     
-import { HashMap } from "../../../../../../../../java/util/HashMap.js";
+
+//import { HashMap } from "../../../../../../../../java/util/HashMap.js";
 
     
 

@@ -18,7 +18,10 @@
 
 
 
-import { HashMap } from "../../../../../../../../java/util/HashMap.js";
+            import HashMap from "@ohos.util.HashMap";
+        
+
+//import { HashMap } from "../../../../../../../../java/util/HashMap.js";
 
     
 import { PageData } from "../../../../../../../../org/allbinary/business/page/PageData.js";

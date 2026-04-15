@@ -18,13 +18,16 @@
 
 
 
+            import HashMap from "@ohos.util.HashMap";
+        
 import { FileReader } from "../../../../../../../java/io/FileReader.js";
 
     
 import { LineNumberReader } from "../../../../../../../java/io/LineNumberReader.js";
 
     
-import { HashMap } from "../../../../../../../java/util/HashMap.js";
+
+//import { HashMap } from "../../../../../../../java/util/HashMap.js";
 
     
 import { LogUtil } from "../../../../../../../org/allbinary/logic/communication/log/LogUtil.js";

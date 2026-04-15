@@ -18,7 +18,7 @@
 
 
 
-            import { Integer } from "../../../../../java/lang/Integer.js";
+            import { Integer } from "../../../../java/lang/Integer.js";
         
 import { GameFeatureEvent } from "../../../../org/allbinary/game/configuration/event/GameFeatureEvent.js";
 

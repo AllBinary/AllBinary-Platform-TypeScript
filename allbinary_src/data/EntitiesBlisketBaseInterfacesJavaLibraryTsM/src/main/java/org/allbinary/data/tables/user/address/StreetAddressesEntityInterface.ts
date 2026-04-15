@@ -18,7 +18,7 @@
 
 
 
-            import { Integer } from "../../../../../java/lang/Integer.js";
+            import { Integer } from "../../../../../../java/lang/Integer.js";
         
 import { StreetAddress } from "../../../../../../org/allbinary/business/user/address/StreetAddress.js";
 

@@ -18,9 +18,12 @@
 
 
 
-            import { Integer } from "../../../../../java/lang/Integer.js";
+            import HashMap from "@ohos.util.HashMap";
         
-import { HashMap } from "../../../../../../../java/util/HashMap.js";
+            import { Integer } from "../../../../../../../java/lang/Integer.js";
+        
+
+//import { HashMap } from "../../../../../../../java/util/HashMap.js";
 
     
 import { Set } from "../../../../../../../java/util/Set.js";

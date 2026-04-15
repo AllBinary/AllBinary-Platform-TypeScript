@@ -18,6 +18,8 @@
 
 
 
+            import hilog from '@ohos.hilog';
+        
             import { Integer } from "../../../../../java/lang/Integer.js";
         
 import { NullUtil } from "../../../../../org/allbinary/logic/NullUtil.js";
@@ -32,11 +34,20 @@ import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMak
 import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
 
     
+import { Log } from "../../../../../org/allbinary/logic/communication/log/Log.js";
+
+    
+import { LogFormatUtil } from "../../../../../org/allbinary/logic/communication/log/LogFormatUtil.js";
+
+    
 
 /*actual*/ export class LogUtil
             extends Object
          {
         
+
+            static readonly PUBLIC: string = '%{public}s';
+            
 
     private static readonly instance: LogUtil = new LogUtil();
         
@@ -47,7 +58,7 @@ import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return LogUtil.instance;
     
 }
 
@@ -115,21 +126,21 @@ this.put(specialMessage, anyType, functionName, NullUtil.getInstance()!.NULL_OBJ
 var functionName = functionName
 var exception = exception
 
-    var className: string = LABEL;
+    var className: string = this.LABEL;
         
         
 ;
     
 className= new StringMaker().
-                            append(anyType!.constructor.name.toString()!)!.append(commonSeps!.COLON)!.append(Integer.toHexString(TsUtil.getInstance()!.hashCode(anyType)))!.toString();
+                            append(anyType!.constructor.name.toString()!)!.append(this.commonSeps!.COLON)!.append(Integer.toHexString(TsUtil.getInstance()!.hashCode(anyType)))!.toString();
     
 
-    var message: string = logFormatUtil!.get(className, functionName, specialMessage, exception)!;
+    var message: string = this.logFormatUtil!.get(className, functionName, specialMessage, exception)!;
         
         
 ;
     
-android.util.Log.i(LABEL, message);
+hilog.info(0x0000, className, LogUtil.PUBLIC, message);
     
 }
 

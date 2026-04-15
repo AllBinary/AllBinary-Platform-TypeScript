@@ -18,7 +18,7 @@
 
 
 
-            import { Integer } from "../../../../../java/lang/Integer.js";
+            import { Integer } from "../../java/lang/Integer.js";
         
 import { LicenseInitInfoUtil } from "../../org/allbinary/business/init/LicenseInitInfoUtil.js";
 

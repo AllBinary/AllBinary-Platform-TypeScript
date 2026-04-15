@@ -18,9 +18,12 @@
 
 
 
-            import { Integer } from "../../../../../java/lang/Integer.js";
+            import HashMap from "@ohos.util.HashMap";
         
-import { HashMap } from "../../../java/util/HashMap.js";
+            import { Integer } from "../../../java/lang/Integer.js";
+        
+
+//import { HashMap } from "../../../java/util/HashMap.js";
 
     
 import { BasicItemData } from "../../../org/allbinary/business/user/commerce/inventory/item/BasicItemData.js";

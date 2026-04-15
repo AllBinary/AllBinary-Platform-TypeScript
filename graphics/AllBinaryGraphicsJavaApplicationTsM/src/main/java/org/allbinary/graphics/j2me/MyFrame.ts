@@ -18,7 +18,9 @@
 
 
 
-            import { Integer } from "../../../../../java/lang/Integer.js";
+            import HashMap from "@ohos.util.HashMap";
+        
+            import { Integer } from "../../../../java/lang/Integer.js";
         
 import { awt } from "../../../../java/awt.js";
 
@@ -26,7 +28,8 @@ import { awt } from "../../../../java/awt.js";
 import { File } from "../../../../java/io/File.js";
 
     
-import { HashMap } from "../../../../java/util/HashMap.js";
+
+//import { HashMap } from "../../../../java/util/HashMap.js";
 
     
 import { swing } from "../../../../javax/swing.js";

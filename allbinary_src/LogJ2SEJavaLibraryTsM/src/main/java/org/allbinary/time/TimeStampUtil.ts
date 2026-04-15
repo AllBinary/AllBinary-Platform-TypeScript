@@ -43,7 +43,7 @@ import { Calendar } from "../../../java/util/Calendar.js";
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return TimeStampUtil.instance;
     
 }
 
@@ -74,7 +74,7 @@ private constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return simpleDataFormat!.format(date);
+                        return this.simpleDataFormat!.format(date);
 
                         ;
     

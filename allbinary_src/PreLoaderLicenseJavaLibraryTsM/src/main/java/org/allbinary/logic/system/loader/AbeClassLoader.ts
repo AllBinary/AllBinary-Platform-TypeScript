@@ -18,13 +18,16 @@
 
 
 
+            import HashMap from "@ohos.util.HashMap";
+        
 import { FileInputStream } from "../../../../../java/io/FileInputStream.js";
 
     
 import { IOException } from "../../../../../java/io/IOException.js";
 
     
-import { HashMap } from "../../../../../java/util/HashMap.js";
+
+//import { HashMap } from "../../../../../java/util/HashMap.js";
 
     
 import { Map } from "../../../../../java/util/Map.js";

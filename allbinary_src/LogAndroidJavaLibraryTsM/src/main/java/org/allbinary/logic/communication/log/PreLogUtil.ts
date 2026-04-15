@@ -18,7 +18,12 @@
 
 
 
+            import hilog from '@ohos.hilog';
+        
 import { NullUtil } from "../../../../../org/allbinary/logic/NullUtil.js";
+
+    
+import { LogFormatUtil } from "../../../../../org/allbinary/logic/communication/log/LogFormatUtil.js";
 
     
 
@@ -27,11 +32,14 @@ import { NullUtil } from "../../../../../org/allbinary/logic/NullUtil.js";
          {
         
 
+            static readonly PUBLIC: string = '%{public}s';
+            
+
     /*actual*/ public static put(specialMessage: string, anyType: any = {}, functionName: string){
     //var specialMessage = specialMessage
     //var anyType = anyType
     //var functionName = functionName
-putOE(specialMessage, anyType, functionName, NullUtil.getInstance()!.NULL_OBJECT);
+PreLogUtil.putOE(specialMessage, anyType, functionName, NullUtil.getInstance()!.NULL_OBJECT);
     
 }
 
@@ -46,7 +54,7 @@ putOE(specialMessage, anyType, functionName, NullUtil.getInstance()!.NULL_OBJECT
     //var functionName = functionName
     //var exception = exception
 
-    var className: string = LABEL;
+    var className: string = PreLogUtil.LABEL;
         
         
 ;
@@ -74,7 +82,7 @@ putOE(specialMessage, anyType, functionName, NullUtil.getInstance()!.NULL_OBJECT
         
 ;
     
-android.util.Log.i(LABEL, message);
+hilog.info(0x0000, className, PreLogUtil.PUBLIC, message);
     
 }
 
@@ -83,7 +91,7 @@ android.util.Log.i(LABEL, message);
     //var specialMessage = specialMessage
     //var className = className
     //var functionName = functionName
-putSE(specialMessage, className, functionName, NullUtil.getInstance()!.NULL_OBJECT);
+PreLogUtil.putSE(specialMessage, className, functionName, NullUtil.getInstance()!.NULL_OBJECT);
     
 }
 
@@ -99,7 +107,7 @@ putSE(specialMessage, className, functionName, NullUtil.getInstance()!.NULL_OBJE
         
 ;
     
-android.util.Log.i(className, message);
+hilog.info(0x0000, className, PreLogUtil.PUBLIC, message);
     
 }
 

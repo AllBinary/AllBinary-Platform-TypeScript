@@ -18,7 +18,7 @@
 
 
 
-            import { Integer } from "../../../../../java/lang/Integer.js";
+            import { Integer } from "../../../../../../../java/lang/Integer.js";
         
 import { LogUtil } from "../../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
 

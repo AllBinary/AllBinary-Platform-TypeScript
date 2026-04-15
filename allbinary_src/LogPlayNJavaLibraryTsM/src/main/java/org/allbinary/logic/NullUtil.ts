@@ -22,7 +22,10 @@
         
             import Hashtable from "@ohos.util.HashMap";
         
-import { HashMap } from "../../../java/util/HashMap.js";
+            import HashMap from "@ohos.util.HashMap";
+        
+
+//import { HashMap } from "../../../java/util/HashMap.js";
 
     
 
@@ -48,7 +51,7 @@ import { HashMap } from "../../../java/util/HashMap.js";
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return NullUtil.instance;
     
 }
 
@@ -57,7 +60,7 @@ import { HashMap } from "../../../java/util/HashMap.js";
         
         
 
-    /*actual*/ public readonly NULL_CLASS: Function = NULL_OBJECTconstructor!;
+    /*actual*/ public readonly NULL_CLASS: Function = this.NULL_OBJECT.constructor!;
         
         
 
