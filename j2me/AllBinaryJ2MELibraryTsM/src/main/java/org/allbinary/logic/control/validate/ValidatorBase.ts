@@ -18,10 +18,7 @@
 
 
 
-            import Hashtable from "@ohos.util.HashMap";
-        
-
-//import { Hashtable } from "../../../../../java/util/Hashtable.js";
+import { Hashtable } from "../../../../../java/util/Hashtable.js";
 
     
 import { NullUtil } from "../../../../../org/allbinary/logic/NullUtil.js";

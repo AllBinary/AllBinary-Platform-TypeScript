@@ -18,10 +18,7 @@
 
 
 
-            import Hashtable from "@ohos.util.HashMap";
-        
-
-//import { Hashtable } from "../../../../../java/util/Hashtable.js";
+import { Hashtable } from "../../../../../java/util/Hashtable.js";
 
     
 import { ArtificialIntelligenceInterface } from "../../../../../org/allbinary/ai/ArtificialIntelligenceInterface.js";
@@ -39,6 +36,8 @@ import { AllBinaryLayer } from "../../../../../org/allbinary/layer/AllBinaryLaye
 import { SmallIntegerSingletonFactory } from "../../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js";
 
     
+
+import { BasePatrolAI } from "./BasePatrolAI.js";
 
 export class PacePatrolAIFactory
             extends Object

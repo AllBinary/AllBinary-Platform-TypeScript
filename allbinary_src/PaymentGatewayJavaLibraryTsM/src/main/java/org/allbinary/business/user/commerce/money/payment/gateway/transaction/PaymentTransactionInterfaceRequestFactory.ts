@@ -18,10 +18,7 @@
 
 
 
-            import HashMap from "@ohos.util.HashMap";
-        
-
-//import { HashMap } from "../../../../../../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../../../../../../java/util/HashMap.js";
 
     
 import { HttpServletRequest } from "../../../../../../../../../javax/servlet/http/HttpServletRequest.js";
@@ -96,6 +93,38 @@ import { TransformInfoInterface } from "../../../../../../../../../org/allbinary
 import { CommonStrings } from "../../../../../../../../../org/allbinary/string/CommonStrings.js";
 
     
+
+import { GLOBALS2 } from "./GLOBALS2.js";
+
+import { GLOBALS2 } from "./GLOBALS2.js";
+
+import { SALE } from "./SALE.js";
+
+import { CREDITCARD } from "./CREDITCARD.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
+
+import { PaymentTransactionInterfaceFactory } from "./PaymentTransactionInterfaceFactory.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
+
+import { NAME } from "./NAME.js";
+
+import { PaymentTransactionInterfaceFactory } from "./PaymentTransactionInterfaceFactory.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
 
 export class PaymentTransactionInterfaceRequestFactory
             extends Object

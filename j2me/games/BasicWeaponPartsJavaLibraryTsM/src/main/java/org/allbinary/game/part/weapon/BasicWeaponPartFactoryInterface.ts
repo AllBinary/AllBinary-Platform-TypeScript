@@ -19,7 +19,7 @@
 
 
 
-interface BasicWeaponPartFactoryInterface {
+export interface BasicWeaponPartFactoryInterface {
         
 
                 //@Throws(Error::class)

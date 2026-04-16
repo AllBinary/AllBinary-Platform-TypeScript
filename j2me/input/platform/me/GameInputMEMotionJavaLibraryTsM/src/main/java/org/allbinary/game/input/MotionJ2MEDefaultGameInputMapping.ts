@@ -34,6 +34,8 @@ import { TouchMotionGestureFactory } from "../../../../org/allbinary/input/motio
 
     
 
+import { GameKeyFactory } from "./GameKeyFactory.js";
+
 export class MotionJ2MEDefaultGameInputMapping extends PersistentInputMapping {
         
 public constructor ()                        

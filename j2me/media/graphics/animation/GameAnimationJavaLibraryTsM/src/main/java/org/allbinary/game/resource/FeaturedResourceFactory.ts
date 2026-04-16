@@ -49,6 +49,8 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
     
 
+import { ResourceLoadingLevelFactory } from "./ResourceLoadingLevelFactory.js";
+
 export class FeaturedResourceFactory
             extends Object
          {

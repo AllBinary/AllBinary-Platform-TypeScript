@@ -4,6 +4,8 @@
 
 
 
+            import hilog from '@ohos.hilog';
+        
 import { Activity } from "../../../android/app/Activity.js";
 
     
@@ -14,10 +16,17 @@ import { ViewGroup } from "../../../android/view/ViewGroup.js";
 
     
 
+import {  } from "./.js";
+
+import {  } from "./.js";
+
 export class ViewSwapper
             extends Object
          {
         
+
+            static readonly PUBLIC: string = '%{public}s';
+            
 
     public static readonly NULL_VIEW_ARRAY: View[] = [];
         

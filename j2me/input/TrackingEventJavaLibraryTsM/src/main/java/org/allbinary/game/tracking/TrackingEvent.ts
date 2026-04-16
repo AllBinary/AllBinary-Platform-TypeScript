@@ -28,6 +28,8 @@ import { AllBinaryEventObject } from "../../../../org/allbinary/logic/util/event
 
     
 
+import { TrackingEventHandler } from "./TrackingEventHandler.js";
+
 export class TrackingEvent extends AllBinaryEventObject {
         
 

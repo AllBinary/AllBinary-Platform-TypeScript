@@ -39,6 +39,16 @@ import { Node } from "../../../../../../../org/w3c/dom/Node.js";
 
     
 
+import { ColorData } from "./ColorData.js";
+
+import { ColorsData } from "./ColorsData.js";
+
+import { ColorData } from "./ColorData.js";
+
+import { ColorData } from "./ColorData.js";
+
+import { ColorData } from "./ColorData.js";
+
 export class ColorsView
             extends Object
         

@@ -25,6 +25,24 @@ import { AngleFactory } from "../../../org/allbinary/math/AngleFactory.js";
 
     
 
+import { DirectionFactory } from "./DirectionFactory.js";
+
+import { LEFT } from "./LEFT.js";
+
+import { RIGHT } from "./RIGHT.js";
+
+import { UP } from "./UP.js";
+
+import { DOWN } from "./DOWN.js";
+
+import { LEFT } from "./LEFT.js";
+
+import { RIGHT } from "./RIGHT.js";
+
+import { UP } from "./UP.js";
+
+import { DOWN } from "./DOWN.js";
+
 export class DirectionUtil
             extends Object
          {

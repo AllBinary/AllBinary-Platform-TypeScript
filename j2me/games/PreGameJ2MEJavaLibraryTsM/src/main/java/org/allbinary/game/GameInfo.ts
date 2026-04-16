@@ -18,12 +18,9 @@
 
 
 
-            import Hashtable from "@ohos.util.HashMap";
-        
             import { Integer } from "../../../java/lang/Integer.js";
         
-
-//import { Hashtable } from "../../../java/util/Hashtable.js";
+import { Hashtable } from "../../../java/util/Hashtable.js";
 
     
 import { LogUtil } from "../../../org/allbinary/logic/communication/log/LogUtil.js";
@@ -38,6 +35,14 @@ import { StringUtil } from "../../../org/allbinary/logic/string/StringUtil.js";
 import { CommonSeps } from "../../../org/allbinary/string/CommonSeps.js";
 
     
+
+import { GameTypeFactory } from "./GameTypeFactory.js";
+
+import { GameMode } from "./GameMode.js";
+
+import { GameInfoData } from "./GameInfoData.js";
+
+import { PlayerTypesFactory } from "./PlayerTypesFactory.js";
 
 export class GameInfo
             extends Object

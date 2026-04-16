@@ -25,6 +25,10 @@ import { BasicColorFactory } from "../../../org/allbinary/graphics/color/BasicCo
 
     
 
+import { AnimationBehaviorFactory } from "./AnimationBehaviorFactory.js";
+
+import { VectorExplosionGenerator } from "./VectorExplosionGenerator.js";
+
 export class VectorExplosionAnimationFactory
             extends Object
         

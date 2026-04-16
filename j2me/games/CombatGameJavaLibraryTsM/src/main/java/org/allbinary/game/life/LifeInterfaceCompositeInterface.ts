@@ -19,7 +19,7 @@
 
 
 
-interface LifeInterfaceCompositeInterface {
+export interface LifeInterfaceCompositeInterface {
         
 
     getLifeInterface(): Life

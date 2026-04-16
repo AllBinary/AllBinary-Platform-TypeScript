@@ -25,7 +25,7 @@ import { AdvertisementSearchInterface } from "../../../../../org/allbinary/busin
 
     
 
-interface AdvertisementCampaignInterface {
+export interface AdvertisementCampaignInterface {
         
 
     public getName(): string

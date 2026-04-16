@@ -43,6 +43,8 @@ import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil
 
     
 
+import {  } from "./.js";
+
 export class SequenceAI extends ArrayAI {
         
 

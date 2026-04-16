@@ -18,10 +18,7 @@
 
 
 
-            import Vector from "@ohos.util.Vector";
-        
-
-//import { Vector } from "../../../../../../../java/util/Vector.js";
+import { Vector } from "../../../../../../../java/util/Vector.js";
 
     
 import { UserInterface } from "../../../../../../../org/allbinary/business/user/UserInterface.js";
@@ -54,6 +51,12 @@ import { StringMaker } from "../../../../../../../org/allbinary/logic/string/Str
 import { AbeClientInformationInterface } from "../../../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js";
 
     
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
 
 export class EmailEventHandlerUtil
             extends Object

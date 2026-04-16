@@ -14,7 +14,7 @@ import { IntBuffer } from "../../../../java/nio/IntBuffer.js";
 
     
 
-interface GL10 extends GL {
+export interface GL10 extends GL {
         
 
     public static readonly GL_ADD: number = 260;

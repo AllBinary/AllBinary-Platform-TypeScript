@@ -19,7 +19,7 @@
 
 
 
-interface DirectionCompositeInterface {
+export interface DirectionCompositeInterface {
         
 
     getDirection(): Direction

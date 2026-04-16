@@ -31,6 +31,8 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
     
 
+import { LogFormatUtil } from "./LogFormatUtil.js";
+
 /*actual*/ export class LogUtil
             extends Object
          {
@@ -45,7 +47,7 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return LogUtil.instance;
     
 }
 
@@ -134,7 +136,7 @@ this.put(specialMessage, anyType, functionName, NullUtil.getInstance()!.NULL_OBJ
                                     }
                                 
 
-    var message: string = logFormatUtil!.getS(className, functionName, specialMessage)!;
+    var message: string = this.logFormatUtil!.getS(className, functionName, specialMessage)!;
         
         
 ;
@@ -145,13 +147,13 @@ this.put(specialMessage, anyType, functionName, NullUtil.getInstance()!.NULL_OBJ
                                 )
                         
                                     {
-                                    logger.log(Level.SEVERE, message, exception);
+                                    this.logger.log(Level.SEVERE, message, exception);
     
 
                                     }
                                 
                         else {
-                            logger.log(Level.INFO, message);
+                            this.logger.log(Level.INFO, message);
     
 
                         }

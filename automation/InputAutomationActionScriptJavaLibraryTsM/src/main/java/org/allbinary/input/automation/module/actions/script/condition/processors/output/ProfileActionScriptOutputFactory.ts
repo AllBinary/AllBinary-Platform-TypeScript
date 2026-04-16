@@ -25,6 +25,8 @@ import { Node } from "../../../../../../../../../../org/w3c/dom/Node.js";
 
     
 
+import { ImageActionScriptOutputData } from "./ImageActionScriptOutputData.js";
+
 export class ProfileActionScriptOutputFactory
             extends Object
          {

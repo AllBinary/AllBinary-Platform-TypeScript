@@ -18,14 +18,11 @@
 
 
 
-            import HashMap from "@ohos.util.HashMap";
-        
-
-//import { HashMap } from "../../../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../../../java/util/HashMap.js";
 
     
 
-interface RequestMapInterface {
+export interface RequestMapInterface {
         
 
     getRequestHashMap(): HashMap<any, any>

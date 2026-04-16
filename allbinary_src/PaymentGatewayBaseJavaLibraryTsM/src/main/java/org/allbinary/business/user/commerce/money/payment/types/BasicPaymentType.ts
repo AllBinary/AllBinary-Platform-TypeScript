@@ -18,16 +18,10 @@
 
 
 
-            import Vector from "@ohos.util.Vector";
-        
-            import HashMap from "@ohos.util.HashMap";
-        
-
-//import { HashMap } from "../../../../../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../../../../../java/util/HashMap.js";
 
     
-
-//import { Vector } from "../../../../../../../../java/util/Vector.js";
+import { Vector } from "../../../../../../../../java/util/Vector.js";
 
     
 import { PaymentGatewayData } from "../../../../../../../../org/allbinary/business/user/commerce/money/payment/gateway/PaymentGatewayData.js";
@@ -48,6 +42,12 @@ import { Replace } from "../../../../../../../../org/allbinary/logic/string/rege
 import { CommonSeps } from "../../../../../../../../org/allbinary/string/CommonSeps.js";
 
     
+
+import { BasicPaymentTypeUtil } from "./BasicPaymentTypeUtil.js";
+
+import { NAME } from "./NAME.js";
+
+import { VALUE } from "./VALUE.js";
 
 export class BasicPaymentType
             extends Object

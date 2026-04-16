@@ -22,7 +22,7 @@ import { BasicEventListenerInterface } from "../../../../../org/allbinary/logic/
 
     
 
-interface ImageComparisonSearchResultsListener extends BasicEventListenerInterface {
+export interface ImageComparisonSearchResultsListener extends BasicEventListenerInterface {
         
 
     public onImageComparisonResultsEvent(imageComparisonSearchResultsEvent: ImageComparisonSearchResultsEvent)

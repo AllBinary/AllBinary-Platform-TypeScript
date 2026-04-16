@@ -19,7 +19,7 @@
 
 
 
-interface ScreenListenerInterface {
+export interface ScreenListenerInterface {
         
 
     onFullScreen(isFullScreen: boolean)

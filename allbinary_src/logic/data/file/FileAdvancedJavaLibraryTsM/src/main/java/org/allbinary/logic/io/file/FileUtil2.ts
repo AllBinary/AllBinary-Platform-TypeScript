@@ -34,6 +34,8 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
     
 
+import { SimpleFileUtil } from "./SimpleFileUtil.js";
+
 export class FileUtil2
             extends Object
          {

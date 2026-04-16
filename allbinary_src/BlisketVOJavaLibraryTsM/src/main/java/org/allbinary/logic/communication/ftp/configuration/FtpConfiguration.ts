@@ -18,12 +18,17 @@
 
 
 
-            import HashMap from "@ohos.util.HashMap";
-        
-
-//import { HashMap } from "../../../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../../../java/util/HashMap.js";
 
     
+
+import { FtpConfigurationData } from "./FtpConfigurationData.js";
+
+import { FtpConfigurationData } from "./FtpConfigurationData.js";
+
+import { FtpConfigurationData } from "./FtpConfigurationData.js";
+
+import { FtpConfigurationData } from "./FtpConfigurationData.js";
 
 export class FtpConfiguration
             extends Object

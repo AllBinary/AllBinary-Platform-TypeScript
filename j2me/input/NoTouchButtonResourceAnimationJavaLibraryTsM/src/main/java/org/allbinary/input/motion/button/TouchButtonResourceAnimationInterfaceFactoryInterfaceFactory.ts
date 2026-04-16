@@ -37,6 +37,8 @@ import { ImageCacheFactory } from "../../../../../org/allbinary/image/ImageCache
 
     
 
+import { LOAD_TOUCH } from "./LOAD_TOUCH.js";
+
 export class TouchButtonResourceAnimationInterfaceFactoryInterfaceFactory extends BaseResourceAnimationInterfaceFactoryInterfaceFactory {
         
 public constructor ()                        

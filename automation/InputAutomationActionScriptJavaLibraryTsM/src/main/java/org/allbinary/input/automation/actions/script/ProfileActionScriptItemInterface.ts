@@ -19,7 +19,7 @@
 
 
 
-interface ProfileActionScriptItemInterface {
+export interface ProfileActionScriptItemInterface {
         
 
                 //@Throws(Error::class)

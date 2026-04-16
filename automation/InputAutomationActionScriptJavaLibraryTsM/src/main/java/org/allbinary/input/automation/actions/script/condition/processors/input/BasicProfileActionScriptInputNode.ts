@@ -28,6 +28,10 @@ import { Node } from "../../../../../../../../../org/w3c/dom/Node.js";
 
     
 
+import { GenericProfileActionScriptInputData } from "./GenericProfileActionScriptInputData.js";
+
+import { GenericProfileActionScriptInputData } from "./GenericProfileActionScriptInputData.js";
+
 export class BasicProfileActionScriptInputNode
             extends Object
          {

@@ -34,7 +34,7 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
     
 
-interface PathFindingLayerInterface extends WaypointLayerInterface, GameKeyEventSourceInterface, GroupInterfaceCompositeInterface, DestroyableInterface {
+export interface PathFindingLayerInterface extends WaypointLayerInterface, GameKeyEventSourceInterface, GroupInterfaceCompositeInterface, DestroyableInterface {
         
 
                 //@Throws(Error::class)

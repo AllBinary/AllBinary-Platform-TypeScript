@@ -34,6 +34,10 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
     
 
+import { DatabaseEncoder } from "./DatabaseEncoder.js";
+
+import { DatabaseEncoder } from "./DatabaseEncoder.js";
+
 export class WeakCrypt
             extends Object
          {

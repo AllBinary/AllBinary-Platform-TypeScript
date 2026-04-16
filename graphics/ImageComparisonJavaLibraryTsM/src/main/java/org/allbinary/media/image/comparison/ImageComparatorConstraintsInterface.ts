@@ -28,7 +28,7 @@ import { GPoint } from "../../../../../org/allbinary/graphics/GPoint.js";
 
     
 
-interface ImageComparatorConstraintsInterface {
+export interface ImageComparatorConstraintsInterface {
         
 
     getMaxNonMatchingPixelDeltas(): number

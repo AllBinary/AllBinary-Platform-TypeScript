@@ -22,7 +22,7 @@ import { AllBinaryTiledLayer } from "../../../../../../org/allbinary/game/layer/
 
     
 
-interface GeographicMapCellPositionFactoryInitVisitorInterface {
+export interface GeographicMapCellPositionFactoryInitVisitorInterface {
         
 
                 //@Throws(Error::class)

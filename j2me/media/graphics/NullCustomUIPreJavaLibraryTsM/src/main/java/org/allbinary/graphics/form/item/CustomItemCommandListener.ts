@@ -5,7 +5,7 @@
 
 
 
-interface CustomItemCommandListener {
+export interface CustomItemCommandListener {
         
 
 }

@@ -24,9 +24,6 @@ import { NullUtil } from "../../../../../org/allbinary/logic/NullUtil.js";
 import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil.js";
 
     
-import { Log } from "../../../../../org/allbinary/logic/communication/log/Log.js";
-
-    
 
 /*actual*/ export class LogFactory
             extends Object

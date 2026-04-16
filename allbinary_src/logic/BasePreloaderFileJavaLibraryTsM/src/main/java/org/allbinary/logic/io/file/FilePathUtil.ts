@@ -25,6 +25,8 @@ import { StringValidationUtil } from "../../../../../org/allbinary/logic/string/
 
     
 
+import { FilePathData } from "./FilePathData.js";
+
 export class FilePathUtil
             extends Object
          {

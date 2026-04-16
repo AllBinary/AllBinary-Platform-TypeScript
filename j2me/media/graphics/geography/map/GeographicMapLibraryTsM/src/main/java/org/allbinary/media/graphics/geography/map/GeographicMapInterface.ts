@@ -30,7 +30,7 @@ import { Layer } from "../../../../../../org/allbinary/layer/Layer.js";
 
     
 
-interface GeographicMapInterface {
+export interface GeographicMapInterface {
         
 
     public getId(): Integer

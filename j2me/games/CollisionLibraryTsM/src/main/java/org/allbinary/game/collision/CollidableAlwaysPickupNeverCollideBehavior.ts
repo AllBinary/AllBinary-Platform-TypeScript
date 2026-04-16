@@ -22,6 +22,8 @@ import { AllBinaryLayer } from "../../../../org/allbinary/layer/AllBinaryLayer.j
 
     
 
+import { CollisionTypeFactory } from "./CollisionTypeFactory.js";
+
 export class CollidableAlwaysPickupNeverCollideBehavior extends CollidableNeverCollideBehavior {
         
  constructor ()                        

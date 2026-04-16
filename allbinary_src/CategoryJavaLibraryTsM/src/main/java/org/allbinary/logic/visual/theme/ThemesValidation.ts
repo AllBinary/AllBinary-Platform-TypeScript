@@ -18,16 +18,10 @@
 
 
 
-            import Vector from "@ohos.util.Vector";
-        
-            import HashMap from "@ohos.util.HashMap";
-        
-
-//import { HashMap } from "../../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../../java/util/HashMap.js";
 
     
-
-//import { Vector } from "../../../../../java/util/Vector.js";
+import { Vector } from "../../../../../java/util/Vector.js";
 
     
 import { DomNodeInterface } from "../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js";
@@ -42,6 +36,10 @@ import { Document } from "../../../../../org/w3c/dom/Document.js";
 import { Node } from "../../../../../org/w3c/dom/Node.js";
 
     
+
+import { Boolean } from "./Boolean.js";
+
+import { ThemesData } from "./ThemesData.js";
 
 export class ThemesValidation extends Validation
                 , DomNodeInterface {

@@ -18,10 +18,7 @@
 
 
 
-            import HashMap from "@ohos.util.HashMap";
-        
-
-//import { HashMap } from "../../../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../../../java/util/HashMap.js";
 
     
 import { DynamicObjectData } from "../../../../../../org/allbinary/business/DynamicObjectData.js";
@@ -48,6 +45,18 @@ import { AbSqlBean } from "../../../../../../org/allbinary/logic/communication/s
 import { StringMaker } from "../../../../../../org/allbinary/logic/string/StringMaker.js";
 
     
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
 
 export class AffiliateSalesEntity extends AbSqlBean
                 , AffiliateSalesEntityInterface {

@@ -18,12 +18,9 @@
 
 
 
-            import Hashtable from "@ohos.util.HashMap";
-        
             import { Integer } from "../../../../../../java/lang/Integer.js";
         
-
-//import { Hashtable } from "../../../../../../java/util/Hashtable.js";
+import { Hashtable } from "../../../../../../java/util/Hashtable.js";
 
     
 import { FeaturedAnimationInterfaceFactoryInterfaceFactory } from "../../../../../../org/allbinary/animation/FeaturedAnimationInterfaceFactoryInterfaceFactory.js";
@@ -56,6 +53,12 @@ import { AllBinaryLayer } from "../../../../../../org/allbinary/layer/AllBinaryL
 import { SmallIntegerSingletonFactory } from "../../../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js";
 
     
+
+import { MineLayerCircularStaticPool } from "./MineLayerCircularStaticPool.js";
+
+import { MineWeaponResources } from "./MineWeaponResources.js";
+
+import { MineWeaponResources } from "./MineWeaponResources.js";
 
 export class MineCountedPickedUpLayerInterfaceFactory extends CountedPickedUpLayerInterfaceFactory {
         

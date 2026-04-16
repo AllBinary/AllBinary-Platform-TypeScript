@@ -19,7 +19,7 @@
 
 
 
-interface LifeInterface {
+export interface LifeInterface {
         
 
     get(): number

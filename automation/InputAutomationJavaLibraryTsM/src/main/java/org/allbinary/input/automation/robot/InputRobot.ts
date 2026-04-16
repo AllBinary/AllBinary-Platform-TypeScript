@@ -42,6 +42,8 @@ import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil
 
     
 
+import { MouseInfo } from "./MouseInfo.js";
+
 export class InputRobot
             extends Object
         

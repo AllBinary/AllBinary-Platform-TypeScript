@@ -37,7 +37,7 @@ import { GeographicMapCellPositionTracking } from "../../../../org/allbinary/med
 
     
 
-interface VehicleLayerInterface extends LayerInterface, VehiclePropertiesCompositeInterface {
+export interface VehicleLayerInterface extends LayerInterface, VehiclePropertiesCompositeInterface {
         
 
     getGameKeyEventList(): BasicArrayList

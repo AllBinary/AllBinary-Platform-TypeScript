@@ -22,7 +22,7 @@ import { File } from "../../../../java/io/File.js";
 
     
 
-interface FileJDialogListenerInterface {
+export interface FileJDialogListenerInterface {
         
 
     onFiles(files: File[])

@@ -18,16 +18,10 @@
 
 
 
-            import Vector from "@ohos.util.Vector";
-        
-            import HashMap from "@ohos.util.HashMap";
-        
-
-//import { HashMap } from "../../../java/util/HashMap.js";
+import { HashMap } from "../../../java/util/HashMap.js";
 
     
-
-//import { Vector } from "../../../java/util/Vector.js";
+import { Vector } from "../../../java/util/Vector.js";
 
     
 import { PageContext } from "../../../javax/servlet/jsp/PageContext.js";
@@ -48,6 +42,42 @@ import { TransformInfoHttpInterface } from "../../../org/allbinary/logic/visual/
 import { TransformInfoHttpStoreNoManipulation } from "../../../org/allbinary/logic/visual/transform/info/TransformInfoHttpStoreNoManipulation.js";
 
     
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
 
 export class TransformInfoRequestHelper extends ModifyTable {
         

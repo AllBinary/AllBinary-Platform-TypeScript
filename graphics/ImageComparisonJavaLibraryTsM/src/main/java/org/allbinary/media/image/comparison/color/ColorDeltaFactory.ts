@@ -37,6 +37,8 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
     
 
+import { ColorDelta } from "./ColorDelta.js";
+
 export class ColorDeltaFactory
             extends Object
          {

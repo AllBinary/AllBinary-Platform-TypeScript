@@ -19,7 +19,7 @@
 
 
 
-interface AutomaticCacheInterface extends CacheInterface {
+export interface AutomaticCacheInterface extends CacheInterface {
         
 
                 //@Throws(Error::class)

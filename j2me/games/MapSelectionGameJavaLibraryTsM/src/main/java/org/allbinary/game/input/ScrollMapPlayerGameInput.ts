@@ -58,6 +58,12 @@ import { BasicGeographicMap } from "../../../../org/allbinary/media/graphics/geo
 
     
 
+import { InputFactory } from "./InputFactory.js";
+
+import { GameInputProcessorUtil } from "./GameInputProcessorUtil.js";
+
+import {  } from "./.js";
+
 export class ScrollMapPlayerGameInput extends PlayerGameInput {
         
 

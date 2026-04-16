@@ -34,6 +34,8 @@ import { Node } from "../../../../../org/w3c/dom/Node.js";
 
     
 
+import { SearchData } from "./SearchData.js";
+
 export class TableSearchRequest
             extends Object
          {

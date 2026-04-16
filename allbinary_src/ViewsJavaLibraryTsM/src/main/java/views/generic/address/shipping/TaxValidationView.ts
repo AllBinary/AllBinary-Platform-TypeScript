@@ -18,10 +18,7 @@
 
 
 
-            import Vector from "@ohos.util.Vector";
-        
-
-//import { Vector } from "../../../../java/util/Vector.js";
+import { Vector } from "../../../../java/util/Vector.js";
 
     
 import { ShippingAddressData } from "../../../../org/allbinary/business/user/address/ShippingAddressData.js";
@@ -48,6 +45,12 @@ import { Document } from "../../../../org/w3c/dom/Document.js";
 import { Node } from "../../../../org/w3c/dom/Node.js";
 
     
+
+import { Boolean } from "./Boolean.js";
+
+import { Boolean } from "./Boolean.js";
+
+import { Boolean } from "./Boolean.js";
 
 export class TaxValidationView extends ShippingAddressView
                 , ValidationComponentInterface {

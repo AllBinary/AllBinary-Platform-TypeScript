@@ -66,6 +66,14 @@ import { OperatingSystemFactory } from "../../../../../../org/allbinary/logic/sy
 
     
 
+import { RESOURCE_STRING_ARRAY } from "./RESOURCE_STRING_ARRAY.js";
+
+import {  } from "./.js";
+
+import {  } from "./.js";
+
+import { RESOURCE_ARRAY } from "./RESOURCE_ARRAY.js";
+
 export class TouchButtonAndroidResources extends Init {
         
 

@@ -25,7 +25,7 @@ import { ColorRangeInterface } from "../../../../../../../org/allbinary/media/im
 
     
 
-interface ColorAtActionScriptConditionInterface {
+export interface ColorAtActionScriptConditionInterface {
         
 
     getPoint(): Point

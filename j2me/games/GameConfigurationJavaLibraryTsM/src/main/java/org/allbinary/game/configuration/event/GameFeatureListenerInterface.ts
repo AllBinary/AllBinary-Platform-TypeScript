@@ -22,7 +22,7 @@ import { EventListenerInterface } from "../../../../../org/allbinary/logic/util/
 
     
 
-interface GameFeatureListenerInterface extends EventListenerInterface {
+export interface GameFeatureListenerInterface extends EventListenerInterface {
         
 
     onGameFeatureChange(gameFeatureEvent: GameFeatureEvent)

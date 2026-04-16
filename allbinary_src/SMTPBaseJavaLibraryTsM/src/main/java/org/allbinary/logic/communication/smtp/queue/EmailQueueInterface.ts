@@ -22,7 +22,7 @@ import { EmailInterface } from "../../../../../../org/allbinary/logic/communicat
 
     
 
-interface EmailQueueInterface {
+export interface EmailQueueInterface {
         
 
                 //@Throws(Error::class)

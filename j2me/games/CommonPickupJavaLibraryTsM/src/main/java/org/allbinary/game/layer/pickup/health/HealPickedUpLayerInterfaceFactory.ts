@@ -43,6 +43,10 @@ import { AllBinaryLayer } from "../../../../../../org/allbinary/layer/AllBinaryL
 
     
 
+import { HealthResources } from "./HealthResources.js";
+
+import { HealthResources } from "./HealthResources.js";
+
 export class HealPickedUpLayerInterfaceFactory extends PickedUpLayerInterfaceFactory
                 , PickupProcessorInterface {
         

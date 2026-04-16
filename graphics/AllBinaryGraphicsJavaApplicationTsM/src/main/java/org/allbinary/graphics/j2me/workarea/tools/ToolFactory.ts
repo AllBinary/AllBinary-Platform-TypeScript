@@ -28,6 +28,8 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
     
 
+import { GraphicItemFactory } from "./GraphicItemFactory.js";
+
 export class ToolFactory
             extends Object
          {

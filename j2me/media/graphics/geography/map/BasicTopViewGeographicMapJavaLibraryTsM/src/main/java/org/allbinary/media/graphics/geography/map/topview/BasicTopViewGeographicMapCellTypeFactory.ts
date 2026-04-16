@@ -18,10 +18,7 @@
 
 
 
-            import Hashtable from "@ohos.util.HashMap";
-        
-
-//import { Hashtable } from "../../../../../../../java/util/Hashtable.js";
+import { Hashtable } from "../../../../../../../java/util/Hashtable.js";
 
     
 import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonStrings.js";
@@ -48,6 +45,28 @@ import { BasicArrayList } from "../../../../../../../org/allbinary/util/BasicArr
 import { HashtableUtil } from "../../../../../../../org/allbinary/util/HashtableUtil.js";
 
     
+
+import { BasicTopViewGeographicMapStrings } from "./BasicTopViewGeographicMapStrings.js";
+
+import { BasicTopViewGeographicMapStrings } from "./BasicTopViewGeographicMapStrings.js";
+
+import { FLOOR_CELL_TYPE } from "./FLOOR_CELL_TYPE.js";
+
+import { FLOOR_CELL_TYPE } from "./FLOOR_CELL_TYPE.js";
+
+import { BLOCK_CELL_TYPE } from "./BLOCK_CELL_TYPE.js";
+
+import { FLOOR_CELL_TYPE } from "./FLOOR_CELL_TYPE.js";
+
+import { OTHER_CELL_TYPE } from "./OTHER_CELL_TYPE.js";
+
+import { OFF_MAP_CELL_TYPE } from "./OFF_MAP_CELL_TYPE.js";
+
+import { DOOR_CELL_TYPE } from "./DOOR_CELL_TYPE.js";
+
+import { STAIRS_DOWN_CELL_TYPE } from "./STAIRS_DOWN_CELL_TYPE.js";
+
+import { STAIRS_UP_CELL_TYPE } from "./STAIRS_UP_CELL_TYPE.js";
 
 export class BasicTopViewGeographicMapCellTypeFactory extends GeographicMapCellTypeFactory {
         

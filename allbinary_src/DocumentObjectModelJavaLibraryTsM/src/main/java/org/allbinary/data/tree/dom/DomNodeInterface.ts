@@ -25,7 +25,7 @@ import { Node } from "../../../../../org/w3c/dom/Node.js";
 
     
 
-interface DomNodeInterface {
+export interface DomNodeInterface {
         
 
                 //@Throws(Error::class)

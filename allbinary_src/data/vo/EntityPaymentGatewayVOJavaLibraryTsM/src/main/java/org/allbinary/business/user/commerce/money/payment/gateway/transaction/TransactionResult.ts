@@ -18,22 +18,13 @@
 
 
 
-            import Vector from "@ohos.util.Vector";
-        
-            import Hashtable from "@ohos.util.HashMap";
-        
-            import HashMap from "@ohos.util.HashMap";
-        
-
-//import { HashMap } from "../../../../../../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../../../../../../java/util/HashMap.js";
 
     
-
-//import { Hashtable } from "../../../../../../../../../java/util/Hashtable.js";
+import { Hashtable } from "../../../../../../../../../java/util/Hashtable.js";
 
     
-
-//import { Vector } from "../../../../../../../../../java/util/Vector.js";
+import { Vector } from "../../../../../../../../../java/util/Vector.js";
 
     
 import { LogUtil } from "../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
@@ -54,6 +45,136 @@ import { CommonStrings } from "../../../../../../../../../org/allbinary/string/C
 import { BasicArrayList } from "../../../../../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+
+import { PaymentTransactionKeysFactory } from "./PaymentTransactionKeysFactory.js";
+
+import { RESULT } from "./RESULT.js";
+
+import { PNREF } from "./PNREF.js";
+
+import { RESPMSG } from "./RESPMSG.js";
+
+import { AUTHCODE } from "./AUTHCODE.js";
+
+import { AVSADDR } from "./AVSADDR.js";
+
+import { AVSZIP } from "./AVSZIP.js";
+
+import { ORIGRESULT } from "./ORIGRESULT.js";
+
+import { STATUS } from "./STATUS.js";
+
+import { FRAUDCODE } from "./FRAUDCODE.js";
+
+import { FRAUDMSG } from "./FRAUDMSG.js";
+
+import { ERRCODE } from "./ERRCODE.js";
+
+import { SCORE } from "./SCORE.js";
+
+import { REASON1 } from "./REASON1.js";
+
+import { REASON2 } from "./REASON2.js";
+
+import { REASON3 } from "./REASON3.js";
+
+import { EXCEPTION1 } from "./EXCEPTION1.js";
+
+import { EXCEPTION2 } from "./EXCEPTION2.js";
+
+import { EXCEPTION3 } from "./EXCEPTION3.js";
+
+import { EXCEPTION4 } from "./EXCEPTION4.js";
+
+import { EXCEPTION5 } from "./EXCEPTION5.js";
+
+import { EXCEPTION6 } from "./EXCEPTION6.js";
+
+import { EXCEPTION7 } from "./EXCEPTION7.js";
+
+import { PNREF } from "./PNREF.js";
+
+import { PaymentTransactionKeysFactory } from "./PaymentTransactionKeysFactory.js";
+
+import { RESPMSG } from "./RESPMSG.js";
+
+import { PaymentTransactionKeysFactory } from "./PaymentTransactionKeysFactory.js";
+
+import { RESULT } from "./RESULT.js";
+
+import { PaymentTransactionKeysFactory } from "./PaymentTransactionKeysFactory.js";
+
+import { SCORE } from "./SCORE.js";
+
+import { PaymentTransactionKeysFactory } from "./PaymentTransactionKeysFactory.js";
+
+import { STATUS } from "./STATUS.js";
+
+import { PaymentTransactionKeysFactory } from "./PaymentTransactionKeysFactory.js";
+
+import { FRAUDCODE } from "./FRAUDCODE.js";
+
+import { PaymentTransactionKeysFactory } from "./PaymentTransactionKeysFactory.js";
+
+import { FRAUDMSG } from "./FRAUDMSG.js";
+
+import { PaymentTransactionKeysFactory } from "./PaymentTransactionKeysFactory.js";
+
+import { ORIGRESULT } from "./ORIGRESULT.js";
+
+import { PaymentTransactionKeysFactory } from "./PaymentTransactionKeysFactory.js";
+
+import { AVSADDR } from "./AVSADDR.js";
+
+import { PaymentTransactionKeysFactory } from "./PaymentTransactionKeysFactory.js";
+
+import { AVSZIP } from "./AVSZIP.js";
+
+import { PaymentTransactionKeysFactory } from "./PaymentTransactionKeysFactory.js";
+
+import { ERRCODE } from "./ERRCODE.js";
+
+import { PaymentTransactionKeysFactory } from "./PaymentTransactionKeysFactory.js";
+
+import { EXCEPTION1 } from "./EXCEPTION1.js";
+
+import { PaymentTransactionKeysFactory } from "./PaymentTransactionKeysFactory.js";
+
+import { EXCEPTION2 } from "./EXCEPTION2.js";
+
+import { PaymentTransactionKeysFactory } from "./PaymentTransactionKeysFactory.js";
+
+import { EXCEPTION3 } from "./EXCEPTION3.js";
+
+import { PaymentTransactionKeysFactory } from "./PaymentTransactionKeysFactory.js";
+
+import { EXCEPTION4 } from "./EXCEPTION4.js";
+
+import { PaymentTransactionKeysFactory } from "./PaymentTransactionKeysFactory.js";
+
+import { EXCEPTION5 } from "./EXCEPTION5.js";
+
+import { PaymentTransactionKeysFactory } from "./PaymentTransactionKeysFactory.js";
+
+import { EXCEPTION6 } from "./EXCEPTION6.js";
+
+import { PaymentTransactionKeysFactory } from "./PaymentTransactionKeysFactory.js";
+
+import { EXCEPTION7 } from "./EXCEPTION7.js";
+
+import { PaymentTransactionKeysFactory } from "./PaymentTransactionKeysFactory.js";
+
+import { REASON1 } from "./REASON1.js";
+
+import { PaymentTransactionKeysFactory } from "./PaymentTransactionKeysFactory.js";
+
+import { REASON2 } from "./REASON2.js";
+
+import { PaymentTransactionKeysFactory } from "./PaymentTransactionKeysFactory.js";
+
+import { REASON3 } from "./REASON3.js";
+
+import { PaymentTransactionKeysFactory } from "./PaymentTransactionKeysFactory.js";
 
 export class TransactionResult
             extends Object

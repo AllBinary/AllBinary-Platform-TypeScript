@@ -19,6 +19,8 @@
 
 
 
+import { ScreenCaptureNoneFactory } from "./ScreenCaptureNoneFactory.js";
+
 export class ScreenCaptureFactory
             extends Object
          {

@@ -49,6 +49,10 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
     
 
+import { InputAutomationRobotUtil } from "./InputAutomationRobotUtil.js";
+
+import { InputAutomationRobotUtil } from "./InputAutomationRobotUtil.js";
+
 export class InputAutomationRobotBundleActivator
             extends Object
         

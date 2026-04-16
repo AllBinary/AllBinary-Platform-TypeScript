@@ -58,6 +58,22 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
     
 
+import { TouchMotionGestureFactory } from "./TouchMotionGestureFactory.js";
+
+import { TouchMotionGestureFactory } from "./TouchMotionGestureFactory.js";
+
+import { TouchMotionGestureFactory } from "./TouchMotionGestureFactory.js";
+
+import { Math } from "./Math.js";
+
+import { Math } from "./Math.js";
+
+import { Math } from "./Math.js";
+
+import { Math } from "./Math.js";
+
+import { TouchMotionGestureFactory } from "./TouchMotionGestureFactory.js";
+
 export class MotionGestureRecognizer
             extends Object
          {

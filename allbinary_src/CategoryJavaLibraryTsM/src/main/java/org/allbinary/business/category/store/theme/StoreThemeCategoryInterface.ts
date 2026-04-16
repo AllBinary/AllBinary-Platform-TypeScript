@@ -18,10 +18,7 @@
 
 
 
-            import Vector from "@ohos.util.Vector";
-        
-
-//import { Vector } from "../../../../../../java/util/Vector.js";
+import { Vector } from "../../../../../../java/util/Vector.js";
 
     
 import { CategoryInterface } from "../../../../../../org/allbinary/business/category/CategoryInterface.js";
@@ -40,7 +37,7 @@ import { CompositeTransformInfoInterface } from "../../../../../../org/allbinary
 
     
 
-interface StoreThemeCategoryInterface extends CategoryInterface, TableMappingInterface, ValidationInterface, CompositeTransformInfoInterface {
+export interface StoreThemeCategoryInterface extends CategoryInterface, TableMappingInterface, ValidationInterface, CompositeTransformInfoInterface {
         
 
     public addTheme(themeValidation: ThemeValidation)

@@ -22,7 +22,7 @@ import { Player } from "../../../../javax/microedition/media/Player.js";
 
     
 
-interface SoundInterface {
+export interface SoundInterface {
         
 
     getResource(): string

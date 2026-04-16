@@ -34,6 +34,12 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
     
 
+import { SCALE } from "./SCALE.js";
+
+import { SIZE } from "./SIZE.js";
+
+import { GameGraphicsResourceUtil } from "./GameGraphicsResourceUtil.js";
+
 export class BasicGameResources
             extends Object
          {

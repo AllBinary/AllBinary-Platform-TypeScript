@@ -19,7 +19,7 @@
 
 
 
-interface InputAutomationActionInterface {
+export interface InputAutomationActionInterface {
         
 
 }

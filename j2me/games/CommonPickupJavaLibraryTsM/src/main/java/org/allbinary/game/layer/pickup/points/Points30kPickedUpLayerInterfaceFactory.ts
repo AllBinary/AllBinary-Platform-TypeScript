@@ -46,6 +46,10 @@ import { AllBinaryLayer } from "../../../../../../org/allbinary/layer/AllBinaryL
 
     
 
+import { PointsResources } from "./PointsResources.js";
+
+import { PointsResources } from "./PointsResources.js";
+
 export class Points30kPickedUpLayerInterfaceFactory extends PickedUpLayerInterfaceFactory
                 , PickupProcessorInterface {
         

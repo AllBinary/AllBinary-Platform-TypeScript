@@ -53,10 +53,10 @@ private constructor (){
 
     /*actual*/ public getStackTrace(e: Error): string{
 var e = e
-        //ArkTs
+        //TypeScript
         if (e.stack) { //ArkTs
             return e.stack; //ArkTs
-        } //ArkTs
+        } //TypeScript
 
 
 

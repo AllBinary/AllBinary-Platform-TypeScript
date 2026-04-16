@@ -8,7 +8,7 @@ import { Graphics } from "../../../../../javax/microedition/lcdui/Graphics.js";
 
     
 
-interface CustomItemInterface {
+export interface CustomItemInterface {
         
 
     getMinimumWidth(): number

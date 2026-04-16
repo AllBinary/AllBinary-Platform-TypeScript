@@ -18,10 +18,7 @@
 
 
 
-            import Vector from "@ohos.util.Vector";
-        
-
-//import { Vector } from "../java/util/Vector.js";
+import { Vector } from "../java/util/Vector.js";
 
     
 import { DomNodeHelper } from "../org/allbinary/data/tree/dom/DomNodeHelper.js";
@@ -66,6 +63,24 @@ import { Document } from "../org/w3c/dom/Document.js";
 import { Node } from "../org/w3c/dom/Node.js";
 
     
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
 
 export class HttpComponentView extends TransformInfoHttpComposite
                 , TransformInterface {

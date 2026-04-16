@@ -34,6 +34,10 @@ import { AngleInfo } from "../../../../org/allbinary/math/AngleInfo.js";
 
     
 
+import {  } from "./.js";
+
+import {  } from "./.js";
+
 export class AdjustedImageArrayRotationAnimation extends ImageArrayRotationAnimation {
         
 

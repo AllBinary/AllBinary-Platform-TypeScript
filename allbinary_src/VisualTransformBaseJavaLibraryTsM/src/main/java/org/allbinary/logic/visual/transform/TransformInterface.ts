@@ -28,7 +28,7 @@ import { CompositeTransformInfoInterface } from "../../../../../org/allbinary/lo
 
     
 
-interface TransformInterface extends DomDocumentMappingInterface, CompositeTransformInfoInterface {
+export interface TransformInterface extends DomDocumentMappingInterface, CompositeTransformInfoInterface {
         
 
     public getTypeId(): number

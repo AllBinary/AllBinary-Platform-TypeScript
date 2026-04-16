@@ -31,6 +31,8 @@ import { AllBinaryEventCircularPool } from "../../../../../../org/allbinary/logi
 
     
 
+import { LAST_MOTION } from "./LAST_MOTION.js";
+
 export class MotionEventCircularPool
             extends Object
          {

@@ -4,16 +4,13 @@
 
 
 
-            import HashMap from "@ohos.util.HashMap";
-        
 import { BufferedImage } from "../../../../../java/awt/image/BufferedImage.js";
 
     
 import { RenderedImage } from "../../../../../java/awt/image/RenderedImage.js";
 
     
-
-//import { HashMap } from "../../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../../java/util/HashMap.js";
 
     
 import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
@@ -37,6 +34,14 @@ import { ImageUtil } from "../../../../../org/allbinary/media/image/ImageUtil.js
 import { CommonLabels } from "../../../../../org/allbinary/string/CommonLabels.js";
 
     
+
+import { ImageIOUtil } from "./ImageIOUtil.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { ImageIOUtil } from "./ImageIOUtil.js";
+
+import { LOGGING } from "./LOGGING.js";
 
 export class MediaUtil
             extends Object

@@ -18,10 +18,7 @@
 
 
 
-            import HashMap from "@ohos.util.HashMap";
-        
-
-//import { HashMap } from "../../../../../../../../../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../../../../../../../../../java/util/HashMap.js";
 
     
 import { DomNodeInterface } from "../../../../../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js";

@@ -28,7 +28,7 @@ import { Angle } from "../../../../../org/allbinary/math/Angle.js";
 
     
 
-interface BasicVelocityInterface {
+export interface BasicVelocityInterface {
         
 
     getVelocityXBasicDecimalP(): BasicDecimal

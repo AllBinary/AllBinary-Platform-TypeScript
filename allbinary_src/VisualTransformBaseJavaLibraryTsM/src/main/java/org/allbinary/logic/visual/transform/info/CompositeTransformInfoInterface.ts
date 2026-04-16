@@ -19,7 +19,7 @@
 
 
 
-interface CompositeTransformInfoInterface {
+export interface CompositeTransformInfoInterface {
         
 
                 //@Throws(Error::class)

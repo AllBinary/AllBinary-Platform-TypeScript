@@ -28,6 +28,20 @@ import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/Lo
 
     
 
+import { CommonButtons } from "./CommonButtons.js";
+
+import { BasicTouchInputFactory } from "./BasicTouchInputFactory.js";
+
+import { TouchButtonStrafeLeftResource } from "./TouchButtonStrafeLeftResource.js";
+
+import { BasicTouchInputFactory } from "./BasicTouchInputFactory.js";
+
+import { TouchButtonStrafeRightResource } from "./TouchButtonStrafeRightResource.js";
+
+import { BasicTouchInputFactory } from "./BasicTouchInputFactory.js";
+
+import { TouchButtonStartResource } from "./TouchButtonStartResource.js";
+
 export class PreGameScrollSelectionTouchButtonsBuilder extends BaseTouchInput {
         
 

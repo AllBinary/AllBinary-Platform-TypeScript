@@ -34,6 +34,8 @@ import { SwtMutableImage } from "../../org/microemu/device/swt/SwtMutableImage.j
 
     
 
+import { System } from "./System.js";
+
 export class DisposalUtil
             extends Object
          {

@@ -19,7 +19,7 @@
 
 
 
-interface IntermissionEnableListenerInterface {
+export interface IntermissionEnableListenerInterface {
         
 
     notifyIntermission(enable: boolean)

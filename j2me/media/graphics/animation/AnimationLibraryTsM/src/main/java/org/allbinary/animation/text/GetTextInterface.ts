@@ -19,7 +19,7 @@
 
 
 
-interface GetTextInterface {
+export interface GetTextInterface {
         
 
     getText(): string

@@ -25,7 +25,7 @@ import { AllBinaryLayer } from "../../../../org/allbinary/layer/AllBinaryLayer.j
 
     
 
-interface PartFactoryInterface {
+export interface PartFactoryInterface {
         
 
                 //@Throws(Error::class)

@@ -18,10 +18,7 @@
 
 
 
-            import HashMap from "@ohos.util.HashMap";
-        
-
-//import { HashMap } from "../../java/util/HashMap.js";
+import { HashMap } from "../../java/util/HashMap.js";
 
     
 import { PageContext } from "../../javax/servlet/jsp/PageContext.js";
@@ -36,6 +33,10 @@ import { LicensingException } from "../../org/allbinary/logic/system/security/li
 import { ServiceClientInformationInterfaceFactory } from "../../org/allbinary/logic/system/security/licensing/ServiceClientInformationInterfaceFactory.js";
 
     
+
+import { HelperFactory } from "./HelperFactory.js";
+
+import { HelperFactory } from "./HelperFactory.js";
 
 export class CustomLoaderHelperFactory
             extends Object

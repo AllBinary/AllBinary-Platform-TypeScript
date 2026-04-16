@@ -25,6 +25,8 @@ import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js
 
     
 
+import { NoPlayerGameInput } from "./NoPlayerGameInput.js";
+
 export class NullPlayerGameInputComposite
             extends Object
         

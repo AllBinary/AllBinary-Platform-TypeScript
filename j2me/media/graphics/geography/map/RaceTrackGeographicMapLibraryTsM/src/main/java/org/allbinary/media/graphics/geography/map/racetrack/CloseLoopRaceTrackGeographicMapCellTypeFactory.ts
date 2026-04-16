@@ -19,6 +19,8 @@
 
 
 
+import { EmptyRaceRaceTrackGeographicMapCellTypeFactory } from "./EmptyRaceRaceTrackGeographicMapCellTypeFactory.js";
+
 export class CloseLoopRaceTrackGeographicMapCellTypeFactory extends RaceTrackGeographicMapCellTypeFactory {
         
 

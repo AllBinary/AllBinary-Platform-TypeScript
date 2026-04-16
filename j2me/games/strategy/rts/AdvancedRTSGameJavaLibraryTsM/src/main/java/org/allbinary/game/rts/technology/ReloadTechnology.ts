@@ -22,6 +22,8 @@ import { RTSInterface } from "../../../../../org/allbinary/game/layer/RTSInterfa
 
     
 
+import { UnitTechnologySingletonFactory } from "./UnitTechnologySingletonFactory.js";
+
 export class ReloadTechnology
             extends Object
         

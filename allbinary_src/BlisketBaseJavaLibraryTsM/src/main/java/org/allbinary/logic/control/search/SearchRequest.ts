@@ -18,10 +18,7 @@
 
 
 
-            import HashMap from "@ohos.util.HashMap";
-        
-
-//import { HashMap } from "../../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../../java/util/HashMap.js";
 
     
 import { PageContext } from "../../../../../javax/servlet/jsp/PageContext.js";
@@ -42,6 +39,8 @@ import { Document } from "../../../../../org/w3c/dom/Document.js";
 import { Node } from "../../../../../org/w3c/dom/Node.js";
 
     
+
+import { SearchData } from "./SearchData.js";
 
 export class SearchRequest extends AbContext {
         

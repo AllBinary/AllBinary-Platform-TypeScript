@@ -19,7 +19,7 @@
 
 
 
-interface BridgeInterface {
+export interface BridgeInterface {
         
 
 }

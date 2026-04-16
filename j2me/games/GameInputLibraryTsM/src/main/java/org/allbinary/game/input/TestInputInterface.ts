@@ -22,7 +22,7 @@ import { PaintableInterface } from "../../../../org/allbinary/graphics/paint/Pai
 
     
 
-interface TestInputInterface extends PaintableInterface {
+export interface TestInputInterface extends PaintableInterface {
         
 
     up()

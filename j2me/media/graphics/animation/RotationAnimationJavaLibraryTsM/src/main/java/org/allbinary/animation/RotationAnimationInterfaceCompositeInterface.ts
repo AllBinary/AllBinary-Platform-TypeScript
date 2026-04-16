@@ -19,7 +19,7 @@
 
 
 
-interface RotationAnimationInterfaceCompositeInterface extends IndexedAnimationInterfaceCompositeInterface {
+export interface RotationAnimationInterfaceCompositeInterface extends IndexedAnimationInterfaceCompositeInterface {
         
 
     getRotationAnimationInterface(): RotationAnimation

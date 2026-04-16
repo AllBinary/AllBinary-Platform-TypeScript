@@ -49,6 +49,10 @@ import { J2SEMutableImage } from "../../../../org/microemu/device/j2se/J2SEMutab
 
     
 
+import { ImageUtil } from "./ImageUtil.js";
+
+import { ImageCreationUtil } from "./ImageCreationUtil.js";
+
 export class ImageModifierUtil
             extends Object
          {

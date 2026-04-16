@@ -43,6 +43,8 @@ import { CanvasSurface } from "../../../../playn/core/CanvasSurface.js";
 
     
 
+import { ImageCreationUtil } from "./ImageCreationUtil.js";
+
 export class ImageScaleUtil
             extends Object
          {

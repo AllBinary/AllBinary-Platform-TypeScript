@@ -19,7 +19,7 @@
 
 
 
-interface FullScreenInterface {
+export interface FullScreenInterface {
         
 
 }

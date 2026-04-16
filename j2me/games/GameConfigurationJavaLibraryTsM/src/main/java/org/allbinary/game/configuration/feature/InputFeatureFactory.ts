@@ -19,6 +19,8 @@
 
 
 
+import { Features } from "./Features.js";
+
 export class InputFeatureFactory
             extends Object
          {

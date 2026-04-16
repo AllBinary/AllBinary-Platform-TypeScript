@@ -34,6 +34,10 @@ import { TouchMotionGestureFactory } from "../../../../org/allbinary/input/motio
 
     
 
+import { PCKeyFactory } from "./PCKeyFactory.js";
+
+import { GameKeyFactory } from "./GameKeyFactory.js";
+
 export class DesktopDefaultGameInputMapping extends PersistentInputMapping {
         
 public constructor ()                        

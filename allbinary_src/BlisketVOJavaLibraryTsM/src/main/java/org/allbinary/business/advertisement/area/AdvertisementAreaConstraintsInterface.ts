@@ -25,7 +25,7 @@ import { TwoDimensionalConstraintInterface } from "../../../../../org/allbinary/
 
     
 
-interface AdvertisementAreaConstraintsInterface {
+export interface AdvertisementAreaConstraintsInterface {
         
 
     public getDisplayInBrowserContraints(): DisplayInBrowserContraintsInterface

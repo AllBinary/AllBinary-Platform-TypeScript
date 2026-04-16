@@ -19,7 +19,7 @@
 
 
 
-interface QueueInterface {
+export interface QueueInterface {
         
 
                 //@Throws(Error::class)

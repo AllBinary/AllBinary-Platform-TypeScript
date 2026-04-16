@@ -64,6 +64,10 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
     
 
+import { HudGraphicsPosition } from "./HudGraphicsPosition.js";
+
+import { BasicHudFactory } from "./BasicHudFactory.js";
+
 export class BasicHud_1
             extends Object
          {

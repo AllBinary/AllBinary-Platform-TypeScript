@@ -49,6 +49,18 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
     
 
+import { GameFeatureFactory } from "./GameFeatureFactory.js";
+
+import { InputFeatureFactory } from "./InputFeatureFactory.js";
+
+import { SensorFeatureFactory } from "./SensorFeatureFactory.js";
+
+import { TouchFeatureFactory } from "./TouchFeatureFactory.js";
+
+import { MainFeatureFactory } from "./MainFeatureFactory.js";
+
+import { MainFeatureFactory } from "./MainFeatureFactory.js";
+
 export class Features
             extends Object
          {

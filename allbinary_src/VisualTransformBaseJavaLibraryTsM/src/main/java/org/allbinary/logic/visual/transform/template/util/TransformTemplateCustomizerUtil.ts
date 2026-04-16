@@ -18,10 +18,7 @@
 
 
 
-            import HashMap from "@ohos.util.HashMap";
-        
-
-//import { HashMap } from "../../../../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../../../../java/util/HashMap.js";
 
     
 import { GLOBALS2 } from "../../../../../../../org/allbinary/globals/GLOBALS2.js";
@@ -51,6 +48,12 @@ import { CommonSeps } from "../../../../../../../org/allbinary/string/CommonSeps
 import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonStrings.js";
 
     
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
 
 export class TransformTemplateCustomizerUtil
             extends Object

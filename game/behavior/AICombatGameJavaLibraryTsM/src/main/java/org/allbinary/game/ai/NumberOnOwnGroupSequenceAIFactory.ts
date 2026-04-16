@@ -18,12 +18,9 @@
 
 
 
-            import Hashtable from "@ohos.util.HashMap";
-        
             import { Integer } from "../../../../java/lang/Integer.js";
         
-
-//import { Hashtable } from "../../../../java/util/Hashtable.js";
+import { Hashtable } from "../../../../java/util/Hashtable.js";
 
     
 import { ArtificialIntelligenceInterface } from "../../../../org/allbinary/ai/ArtificialIntelligenceInterface.js";
@@ -47,6 +44,8 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
 
     
+
+import { NumberInSameGroupSequence } from "./NumberInSameGroupSequence.js";
 
 export class NumberOnOwnGroupSequenceAIFactory
             extends Object

@@ -39,6 +39,8 @@ import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js
 
     
 
+import { GameConfigurationSingleton } from "./GameConfigurationSingleton.js";
+
 export class GameConfiguration
             extends Object
          {

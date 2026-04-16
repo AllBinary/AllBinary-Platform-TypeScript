@@ -18,10 +18,7 @@
 
 
 
-            import HashMap from "@ohos.util.HashMap";
-        
-
-//import { HashMap } from "../../../../../../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../../../../../../java/util/HashMap.js";
 
     
 import { UserFactoryInterface } from "../../../../../../../../../org/allbinary/business/user/UserFactoryInterface.js";

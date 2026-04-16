@@ -25,7 +25,7 @@ import { AbeClientInformationInterface } from "../../../../org/allbinary/logic/s
 
     
 
-interface GameInitializationInterface {
+export interface GameInitializationInterface {
         
 
                 //@Throws(Error::class)

@@ -18,13 +18,10 @@
 
 
 
-            import Hashtable from "@ohos.util.HashMap";
-        
 import { Enumeration } from "../../../../../java/util/Enumeration.js";
 
     
-
-//import { Hashtable } from "../../../../../java/util/Hashtable.js";
+import { Hashtable } from "../../../../../java/util/Hashtable.js";
 
     
 import { GamePersistanceStrings } from "../../../../../org/allbinary/game/configuration/persistance/GamePersistanceStrings.js";
@@ -63,6 +60,8 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+
+import { InputToGameKeyMapping } from "./InputToGameKeyMapping.js";
 
 export class PersistentInputMapping
             extends Object

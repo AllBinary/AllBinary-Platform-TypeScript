@@ -28,7 +28,7 @@ import { AllBinaryLayerManager } from "../../../../../org/allbinary/layer/AllBin
 
     
 
-interface SalvoInterface {
+export interface SalvoInterface {
         
 
                 //@Throws(Error::class)

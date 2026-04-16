@@ -18,17 +18,14 @@
 
 
 
-            import Vector from "@ohos.util.Vector";
-        
-
-//import { Vector } from "../../../../../../java/util/Vector.js";
+import { Vector } from "../../../../../../java/util/Vector.js";
 
     
 import { ShippingInterface } from "../../../../../../org/allbinary/business/user/commerce/shipping/modules/ShippingInterface.js";
 
     
 
-interface ShippingMethodsInterface {
+export interface ShippingMethodsInterface {
         
 
     public get(): Vector

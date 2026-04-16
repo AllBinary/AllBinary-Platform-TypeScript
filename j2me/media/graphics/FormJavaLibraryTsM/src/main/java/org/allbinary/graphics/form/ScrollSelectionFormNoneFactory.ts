@@ -31,6 +31,8 @@ import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js
 
     
 
+import { FormTypeFactory } from "./FormTypeFactory.js";
+
 export class ScrollSelectionFormNoneFactory
             extends Object
          {

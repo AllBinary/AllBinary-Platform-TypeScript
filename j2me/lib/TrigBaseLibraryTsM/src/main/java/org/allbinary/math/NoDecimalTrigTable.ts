@@ -36,6 +36,18 @@ import { CommonSeps } from "../../../org/allbinary/string/CommonSeps.js";
 
     
 
+import { AngleFactory } from "./AngleFactory.js";
+
+import { PositionStrings } from "./PositionStrings.js";
+
+import { PositionStrings } from "./PositionStrings.js";
+
+import { AngleFactory } from "./AngleFactory.js";
+
+import { PositionStrings } from "./PositionStrings.js";
+
+import { PositionStrings } from "./PositionStrings.js";
+
 export class NoDecimalTrigTable
             extends Object
          {

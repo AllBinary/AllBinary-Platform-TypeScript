@@ -18,10 +18,7 @@
 
 
 
-            import HashMap from "@ohos.util.HashMap";
-        
-
-//import { HashMap } from "../../../../../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../../../../../java/util/HashMap.js";
 
     
 import { DomData } from "../../../../../../../../org/allbinary/data/tree/dom/DomData.js";
@@ -66,6 +63,46 @@ import { Node } from "../../../../../../../../org/w3c/dom/Node.js";
 import { NodeList } from "../../../../../../../../org/w3c/dom/NodeList.js";
 
     
+
+import { BodyData } from "./BodyData.js";
+
+import { BodyData } from "./BodyData.js";
+
+import { Boolean } from "./Boolean.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
+
+import { BodyData } from "./BodyData.js";
+
+import { Boolean } from "./Boolean.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
+
+import { Boolean } from "./Boolean.js";
+
+import { BodyData } from "./BodyData.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
+
+import { BodyData } from "./BodyData.js";
 
 export class GenericBodyValidation extends Validation
                 , DomNodeInterface {

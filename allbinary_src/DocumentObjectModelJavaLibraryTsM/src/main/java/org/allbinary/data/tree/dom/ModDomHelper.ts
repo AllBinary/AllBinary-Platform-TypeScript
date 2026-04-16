@@ -18,21 +18,15 @@
 
 
 
-            import Vector from "@ohos.util.Vector";
-        
-            import HashMap from "@ohos.util.HashMap";
-        
             import { Integer } from "../../../../../java/lang/Integer.js";
         
-
-//import { HashMap } from "../../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../../java/util/HashMap.js";
 
     
 import { Set } from "../../../../../java/util/Set.js";
 
     
-
-//import { Vector } from "../../../../../java/util/Vector.js";
+import { Vector } from "../../../../../java/util/Vector.js";
 
     
 import { ClassUtil } from "../../../../../org/allbinary/logic/java/anyType/clazz/ClassUtil.js";
@@ -50,6 +44,12 @@ import { Document } from "../../../../../org/w3c/dom/Document.js";
 import { Node } from "../../../../../org/w3c/dom/Node.js";
 
     
+
+import { DomData } from "./DomData.js";
+
+import { DomData } from "./DomData.js";
+
+import { DomData } from "./DomData.js";
 
 export class ModDomHelper
             extends Object

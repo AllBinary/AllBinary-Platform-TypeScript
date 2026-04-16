@@ -34,6 +34,8 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
     
 
+import { BOT } from "./BOT.js";
+
 export class DemoGameBehavior
             extends Object
          {

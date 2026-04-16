@@ -151,6 +151,8 @@ import { GeographicMapCompositeInterface } from "../../../../org/allbinary/media
 
     
 
+import { RED } from "./RED.js";
+
 export class HumanRTSPlayerGameInput extends RTSPlayerGameInput
                 , BaseMotionGestureEventListener {
         

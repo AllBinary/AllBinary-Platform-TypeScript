@@ -43,6 +43,8 @@ import { NodeList } from "../../../../../org/w3c/dom/NodeList.js";
 
     
 
+import { ContextConfigurationData } from "./ContextConfigurationData.js";
+
 export class ContextConfigurationView
             extends Object
         

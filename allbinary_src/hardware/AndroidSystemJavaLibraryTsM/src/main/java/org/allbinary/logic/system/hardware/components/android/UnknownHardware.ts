@@ -18,6 +18,8 @@
 
 
 
+            import hilog from '@ohos.hilog';
+        
 import { HardwareComponentInterface } from "../../../../../../../org/allbinary/logic/system/hardware/components/interfaces/HardwareComponentInterface.js";
 
     
@@ -27,6 +29,9 @@ export class UnknownHardware
         
                 , HardwareComponentInterface {
         
+
+            static readonly PUBLIC: string = '%{public}s';
+            
 
     private data: string
 public constructor (data: string){

@@ -22,7 +22,7 @@ import { EventListenerInterface } from "../../../../../../org/allbinary/logic/ut
 
     
 
-interface GameNotificationListenerInterface extends EventListenerInterface {
+export interface GameNotificationListenerInterface extends EventListenerInterface {
         
 
                 //@Throws(Error::class)

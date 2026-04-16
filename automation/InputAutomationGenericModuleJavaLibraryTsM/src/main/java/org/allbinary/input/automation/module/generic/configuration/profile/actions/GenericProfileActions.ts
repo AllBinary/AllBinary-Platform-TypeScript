@@ -18,8 +18,6 @@
 
 
 
-            import HashMap from "@ohos.util.HashMap";
-        
 import { DataOutputStream } from "../../../../../../../../../java/io/DataOutputStream.js";
 
     
@@ -32,8 +30,7 @@ import { FileInputStream } from "../../../../../../../../../java/io/FileInputStr
 import { FileOutputStream } from "../../../../../../../../../java/io/FileOutputStream.js";
 
     
-
-//import { HashMap } from "../../../../../../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../../../../../../java/util/HashMap.js";
 
     
 import { Set } from "../../../../../../../../../java/util/Set.js";
@@ -69,6 +66,14 @@ import { Node } from "../../../../../../../../../org/w3c/dom/Node.js";
 import { NodeList } from "../../../../../../../../../org/w3c/dom/NodeList.js";
 
     
+
+import { GenericProfileActionsData } from "./GenericProfileActionsData.js";
+
+import { GenericProfileActionData } from "./GenericProfileActionData.js";
+
+import { GenericProfileActionData } from "./GenericProfileActionData.js";
+
+import { GenericProfileActionsData } from "./GenericProfileActionsData.js";
 
 export class GenericProfileActions
             extends Object

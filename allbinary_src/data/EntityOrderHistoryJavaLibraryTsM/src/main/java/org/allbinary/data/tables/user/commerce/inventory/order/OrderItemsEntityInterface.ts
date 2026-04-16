@@ -18,10 +18,7 @@
 
 
 
-            import Vector from "@ohos.util.Vector";
-        
-
-//import { Vector } from "../../../../../../../../java/util/Vector.js";
+import { Vector } from "../../../../../../../../java/util/Vector.js";
 
     
 import { BasketReview } from "../../../../../../../../org/allbinary/business/user/commerce/inventory/basket/BasketReview.js";
@@ -34,7 +31,7 @@ import { BasicDataTableInterface } from "../../../../../../../../org/allbinary/d
 
     
 
-interface OrderItemsEntityInterface extends BasicDataTableInterface {
+export interface OrderItemsEntityInterface extends BasicDataTableInterface {
         
 
     public setStatus(orderId: string, groupId: string, status: string)

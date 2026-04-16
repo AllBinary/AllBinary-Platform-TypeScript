@@ -46,6 +46,10 @@ import { LogFormatUtil } from "../../../org/allbinary/logic/communication/log/Lo
 
     
 
+import { System } from "./System.js";
+
+import { System } from "./System.js";
+
 export class FileLog
             extends Object
          {

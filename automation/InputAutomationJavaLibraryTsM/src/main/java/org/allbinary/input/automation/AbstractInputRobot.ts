@@ -30,6 +30,8 @@ import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUt
 
     
 
+import { PointHelper } from "./PointHelper.js";
+
 export class AbstractInputRobot
             extends Object
          {

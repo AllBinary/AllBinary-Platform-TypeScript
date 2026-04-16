@@ -19,7 +19,7 @@
 
 
 
-interface UpdateInterface {
+export interface UpdateInterface {
         
 
                 //@Throws(Error::class)

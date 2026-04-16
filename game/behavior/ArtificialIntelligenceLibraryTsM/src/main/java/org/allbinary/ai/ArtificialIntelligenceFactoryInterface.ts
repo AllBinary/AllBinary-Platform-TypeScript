@@ -19,7 +19,7 @@
 
 
 
-interface ArtificialIntelligenceFactoryInterface {
+export interface ArtificialIntelligenceFactoryInterface {
         
 
                 //@Throws(Error::class)

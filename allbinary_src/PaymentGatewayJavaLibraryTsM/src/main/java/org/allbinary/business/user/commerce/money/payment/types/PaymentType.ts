@@ -18,16 +18,10 @@
 
 
 
-            import Vector from "@ohos.util.Vector";
-        
-            import HashMap from "@ohos.util.HashMap";
-        
-
-//import { HashMap } from "../../../../../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../../../../../java/util/HashMap.js";
 
     
-
-//import { Vector } from "../../../../../../../../java/util/Vector.js";
+import { Vector } from "../../../../../../../../java/util/Vector.js";
 
     
 import { PaymentGatewayData } from "../../../../../../../../org/allbinary/business/user/commerce/money/payment/gateway/PaymentGatewayData.js";
@@ -39,6 +33,14 @@ import { PaymentProcessorInterfaceFactoryInterface } from "../../../../../../../
 import { PaymentTransactionInterfaceFactoryInterface } from "../../../../../../../../org/allbinary/business/user/commerce/money/payment/gateway/transaction/PaymentTransactionInterfaceFactoryInterface.js";
 
     
+
+import { PaymentTypeUtil } from "./PaymentTypeUtil.js";
+
+import { PaymentTypeUtil } from "./PaymentTypeUtil.js";
+
+import { PAYMENTTRANSACTIONINTERFACEFACTORYINTERFACE } from "./PAYMENTTRANSACTIONINTERFACEFACTORYINTERFACE.js";
+
+import { PAYMENTPROCESSORINTERFACEFACTORYINTERFACE } from "./PAYMENTPROCESSORINTERFACEFACTORYINTERFACE.js";
 
 export class PaymentType
             extends Object

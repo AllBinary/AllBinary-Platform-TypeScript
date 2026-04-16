@@ -28,7 +28,7 @@ import { ProfileActionScriptProcessorInterface } from "../../../../../../../org/
 
     
 
-interface ProfileActionScriptConditionInterface extends ProfileActionScriptNodeInterface, CustomTreeNodeInterface, ProfileActionScriptItemInterface {
+export interface ProfileActionScriptConditionInterface extends ProfileActionScriptNodeInterface, CustomTreeNodeInterface, ProfileActionScriptItemInterface {
         
 
     addProcessor(profileActionProcessorInterface: ProfileActionScriptProcessorInterface)

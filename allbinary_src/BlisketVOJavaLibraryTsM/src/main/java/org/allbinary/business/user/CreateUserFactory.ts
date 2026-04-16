@@ -18,10 +18,7 @@
 
 
 
-            import HashMap from "@ohos.util.HashMap";
-        
-
-//import { HashMap } from "../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../java/util/HashMap.js";
 
     
 import { UserRole } from "../../../../org/allbinary/business/user/role/UserRole.js";
@@ -36,6 +33,8 @@ import { UserRoleData } from "../../../../org/allbinary/business/user/role/UserR
 import { StringValidationUtil } from "../../../../org/allbinary/logic/string/StringValidationUtil.js";
 
     
+
+import { NAME } from "./NAME.js";
 
 export class CreateUserFactory
             extends Object

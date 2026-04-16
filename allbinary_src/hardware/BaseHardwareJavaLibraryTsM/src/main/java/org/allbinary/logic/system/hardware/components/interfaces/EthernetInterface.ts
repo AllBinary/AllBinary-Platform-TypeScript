@@ -19,7 +19,7 @@
 
 
 
-interface EthernetInterface {
+export interface EthernetInterface {
         
 
 }

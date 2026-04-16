@@ -19,7 +19,7 @@
 
 
 
-interface AdvertisementWebsiteInterface {
+export interface AdvertisementWebsiteInterface {
         
 
     public toString(): string

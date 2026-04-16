@@ -58,6 +58,8 @@ import { Node } from "../../../../../../../org/w3c/dom/Node.js";
 
     
 
+import { StoreFrontStatisticsData } from "./StoreFrontStatisticsData.js";
+
 export class RealTimeStoreFrontStatisticsView
             extends Object
         

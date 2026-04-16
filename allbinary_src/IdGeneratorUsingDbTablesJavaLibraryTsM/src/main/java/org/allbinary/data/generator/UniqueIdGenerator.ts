@@ -18,13 +18,10 @@
 
 
 
-            import Vector from "@ohos.util.Vector";
-        
 import { IOException } from "../../../../java/io/IOException.js";
 
     
-
-//import { Vector } from "../../../../java/util/Vector.js";
+import { Vector } from "../../../../java/util/Vector.js";
 
     
 import { IdGeneratorEntity } from "../../../../org/allbinary/data/tables/generator/IdGeneratorEntity.js";
@@ -39,6 +36,22 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
 
     
+
+import { Long } from "./Long.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
+
+import { Long } from "./Long.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
 
 export class UniqueIdGenerator
             extends Object

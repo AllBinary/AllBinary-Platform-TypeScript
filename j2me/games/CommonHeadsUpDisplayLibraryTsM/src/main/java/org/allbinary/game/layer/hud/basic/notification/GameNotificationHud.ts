@@ -51,6 +51,8 @@ import { EventStrings } from "../../../../../../../org/allbinary/logic/util/even
 
     
 
+import { GameNotification } from "./GameNotification.js";
+
 export class GameNotificationHud extends BasicHud
                 , GameNotificationListenerInterface {
         

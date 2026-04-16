@@ -22,7 +22,7 @@ import { TwoDimensionalConstraintInterface } from "../../../../../org/allbinary/
 
     
 
-interface AdvertisementImageInterface {
+export interface AdvertisementImageInterface {
         
 
     public getFileName(): string

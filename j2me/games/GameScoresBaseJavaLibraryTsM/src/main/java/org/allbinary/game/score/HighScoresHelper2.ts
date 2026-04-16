@@ -22,6 +22,10 @@ import { CircularIndexUtil } from "../../../../org/allbinary/util/CircularIndexU
 
     
 
+import { NullHighScoresSingletonFactory } from "./NullHighScoresSingletonFactory.js";
+
+import { NullHighScoresSingletonFactory } from "./NullHighScoresSingletonFactory.js";
+
 export class HighScoresHelper2 extends HighScoresHelperBase {
         
 

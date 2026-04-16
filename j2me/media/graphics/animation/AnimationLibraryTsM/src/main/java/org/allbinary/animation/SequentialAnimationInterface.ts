@@ -19,7 +19,7 @@
 
 
 
-interface SequentialAnimationInterface extends AnimationInterface, SequenceInterface {
+export interface SequentialAnimationInterface extends AnimationInterface, SequenceInterface {
         
 
     getSize(): number

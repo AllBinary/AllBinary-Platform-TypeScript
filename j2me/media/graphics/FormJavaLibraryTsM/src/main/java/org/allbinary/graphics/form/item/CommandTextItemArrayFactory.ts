@@ -18,10 +18,7 @@
 
 
 
-            import Vector from "@ohos.util.Vector";
-        
-
-//import { Vector } from "../../../../../java/util/Vector.js";
+import { Vector } from "../../../../../java/util/Vector.js";
 
     
 import { Command } from "../../../../../javax/microedition/lcdui/Command.js";

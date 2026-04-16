@@ -45,6 +45,10 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
     
 
+import { PersistanceStrings } from "./PersistanceStrings.js";
+
+import { NullRecordStore } from "./NullRecordStore.js";
+
 export class BasicPersitance
             extends Object
          {

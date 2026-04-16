@@ -52,6 +52,10 @@ import { SecondaryThreadPool } from "../../../../org/allbinary/thread/SecondaryT
 
     
 
+import { RecordStoreHighScores } from "./RecordStoreHighScores.js";
+
+import { LastFetchHighScoresFactory } from "./LastFetchHighScoresFactory.js";
+
 export class BasicHighScoresFactory extends HighScoresBase {
         
 

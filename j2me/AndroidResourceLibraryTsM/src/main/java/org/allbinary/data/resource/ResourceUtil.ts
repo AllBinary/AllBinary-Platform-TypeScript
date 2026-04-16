@@ -18,15 +18,12 @@
 
 
 
-            import Hashtable from "@ohos.util.HashMap";
-        
             import { Integer } from "../../../../java/lang/Integer.js";
         
 import { InputStream } from "../../../../java/io/InputStream.js";
 
     
-
-//import { Hashtable } from "../../../../java/util/Hashtable.js";
+import { Hashtable } from "../../../../java/util/Hashtable.js";
 
     
 import { Activity } from "../../../../android/app/Activity.js";

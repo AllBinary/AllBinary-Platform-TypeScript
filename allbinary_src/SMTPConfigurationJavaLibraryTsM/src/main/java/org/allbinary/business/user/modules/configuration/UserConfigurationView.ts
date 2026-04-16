@@ -52,6 +52,8 @@ import { NodeList } from "../../../../../../org/w3c/dom/NodeList.js";
 
     
 
+import { UserConfigurationData } from "./UserConfigurationData.js";
+
 export class UserConfigurationView
             extends Object
         

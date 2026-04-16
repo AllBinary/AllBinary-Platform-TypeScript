@@ -30,6 +30,8 @@ import { PartnerIdentifierFileUtil } from "../../org/allbinary/logic/system/secu
 
     
 
+import { AndroidResources } from "./AndroidResources.js";
+
 export class AllBinaryAndroidGameInitializationUtil
             extends Object
          {

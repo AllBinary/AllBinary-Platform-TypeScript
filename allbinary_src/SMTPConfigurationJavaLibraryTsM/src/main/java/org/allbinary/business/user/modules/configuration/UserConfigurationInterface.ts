@@ -28,7 +28,7 @@ import { UserEmailConfigurationInterface } from "../../../../../../org/allbinary
 
     
 
-interface UserConfigurationInterface {
+export interface UserConfigurationInterface {
         
 
     public getUserEmailConfigurationInterface(): UserEmailConfigurationInterface

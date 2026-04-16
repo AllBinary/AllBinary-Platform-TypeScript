@@ -19,7 +19,7 @@
 
 
 
-interface GameStateCompositeInterface {
+export interface GameStateCompositeInterface {
         
 
                 //@Throws(Error::class)

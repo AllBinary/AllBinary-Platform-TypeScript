@@ -22,7 +22,7 @@ import { EventListenerInterface } from "../../../../org/allbinary/logic/util/eve
 
     
 
-interface TerrainEventListenerInterface extends EventListenerInterface {
+export interface TerrainEventListenerInterface extends EventListenerInterface {
         
 
                 //@Throws(Error::class)

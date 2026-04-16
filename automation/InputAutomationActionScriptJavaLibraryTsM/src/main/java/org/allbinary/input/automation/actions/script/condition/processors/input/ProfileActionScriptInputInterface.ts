@@ -25,7 +25,7 @@ import { InputRobotInterface } from "../../../../../../../../../org/allbinary/in
 
     
 
-interface ProfileActionScriptInputInterface extends ProfileActionScriptProcessorInterface {
+export interface ProfileActionScriptInputInterface extends ProfileActionScriptProcessorInterface {
         
 
     setInputRobotInterface(inputRobotInterface: InputRobotInterface)

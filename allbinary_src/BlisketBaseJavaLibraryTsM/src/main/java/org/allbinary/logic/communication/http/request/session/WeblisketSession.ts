@@ -18,12 +18,9 @@
 
 
 
-            import HashMap from "@ohos.util.HashMap";
-        
             import { Integer } from "../../../../../../../java/lang/Integer.js";
         
-
-//import { HashMap } from "../../../../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../../../../java/util/HashMap.js";
 
     
 import { HttpServletRequest } from "../../../../../../../javax/servlet/http/HttpServletRequest.js";
@@ -74,6 +71,36 @@ import { BooleanFactory } from "../../../../../../../org/allbinary/logic/java/bo
 import { StringValidationUtil } from "../../../../../../../org/allbinary/logic/string/StringValidationUtil.js";
 
     
+
+import { NAME } from "./NAME.js";
+
+import { WeblisketSessionData } from "./WeblisketSessionData.js";
+
+import { NAME } from "./NAME.js";
+
+import { WeblisketSessionData } from "./WeblisketSessionData.js";
+
+import { WeblisketSessionData } from "./WeblisketSessionData.js";
+
+import { GLOBALS2 } from "./GLOBALS2.js";
+
+import { NAME } from "./NAME.js";
+
+import { WeblisketSessionData } from "./WeblisketSessionData.js";
+
+import { WeblisketSessionData } from "./WeblisketSessionData.js";
+
+import { WeblisketSessionData } from "./WeblisketSessionData.js";
+
+import { NAME } from "./NAME.js";
+
+import { WeblisketSessionData } from "./WeblisketSessionData.js";
+
+import { WeblisketSessionData } from "./WeblisketSessionData.js";
+
+import { WeblisketSessionData } from "./WeblisketSessionData.js";
+
+import { NAME } from "./NAME.js";
 
 export class WeblisketSession
             extends Object

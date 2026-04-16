@@ -37,6 +37,8 @@ import { BasicArrayList } from "../../../org/allbinary/util/BasicArrayList.js";
 
     
 
+import { VectorAnimationUtil } from "./VectorAnimationUtil.js";
+
 export class VectorMirrorGenerator
             extends Object
          {

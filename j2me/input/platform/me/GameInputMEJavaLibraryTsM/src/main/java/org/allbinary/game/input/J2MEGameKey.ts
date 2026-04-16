@@ -25,6 +25,10 @@ import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js
 
     
 
+import { InputFactory } from "./InputFactory.js";
+
+import { InputFactory } from "./InputFactory.js";
+
 export class J2MEGameKey extends Input {
         
 

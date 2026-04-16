@@ -18,16 +18,10 @@
 
 
 
-            import Vector from "@ohos.util.Vector";
-        
-            import HashMap from "@ohos.util.HashMap";
-        
-
-//import { HashMap } from "../../../../../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../../../../../java/util/HashMap.js";
 
     
-
-//import { Vector } from "../../../../../../../../java/util/Vector.js";
+import { Vector } from "../../../../../../../../java/util/Vector.js";
 
     
 import { StoreFrontData } from "../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js";
@@ -48,6 +42,290 @@ import { SuperCrypt } from "../../../../../../../../org/allbinary/logic/control/
 import { StringUtil } from "../../../../../../../../org/allbinary/logic/string/StringUtil.js";
 
     
+
+import { NAME } from "./NAME.js";
+
+import { NAME } from "./NAME.js";
+
+import { PaymentGatewayData } from "./PaymentGatewayData.js";
+
+import { ENABLE } from "./ENABLE.js";
+
+import { METHOD } from "./METHOD.js";
+
+import { MODE } from "./MODE.js";
+
+import { PaymentGatewayData } from "./PaymentGatewayData.js";
+
+import { TESTPROTOCOL } from "./TESTPROTOCOL.js";
+
+import { PaymentGatewayData } from "./PaymentGatewayData.js";
+
+import { TESTSERVER } from "./TESTSERVER.js";
+
+import { PaymentGatewayData } from "./PaymentGatewayData.js";
+
+import { TESTPORT } from "./TESTPORT.js";
+
+import { PaymentGatewayData } from "./PaymentGatewayData.js";
+
+import { TESTPATH } from "./TESTPATH.js";
+
+import { PaymentGatewayData } from "./PaymentGatewayData.js";
+
+import { SERVERPROTOCOL } from "./SERVERPROTOCOL.js";
+
+import { PaymentGatewayData } from "./PaymentGatewayData.js";
+
+import { SERVER } from "./SERVER.js";
+
+import { PaymentGatewayData } from "./PaymentGatewayData.js";
+
+import { SERVERPORT } from "./SERVERPORT.js";
+
+import { PaymentGatewayData } from "./PaymentGatewayData.js";
+
+import { SERVERPATH } from "./SERVERPATH.js";
+
+import { PaymentGatewayData } from "./PaymentGatewayData.js";
+
+import { USERNAME } from "./USERNAME.js";
+
+import { PASSWORD } from "./PASSWORD.js";
+
+import { TIMEOUT } from "./TIMEOUT.js";
+
+import { PaymentGatewayData } from "./PaymentGatewayData.js";
+
+import { PROXYPROTOCOL } from "./PROXYPROTOCOL.js";
+
+import { PaymentGatewayData } from "./PaymentGatewayData.js";
+
+import { PROXYSERVER } from "./PROXYSERVER.js";
+
+import { PaymentGatewayData } from "./PaymentGatewayData.js";
+
+import { PROXYPORT } from "./PROXYPORT.js";
+
+import { PaymentGatewayData } from "./PaymentGatewayData.js";
+
+import { PROXYPATH } from "./PROXYPATH.js";
+
+import { PaymentGatewayData } from "./PaymentGatewayData.js";
+
+import { PROXYUSERNAME } from "./PROXYUSERNAME.js";
+
+import { PaymentGatewayData } from "./PaymentGatewayData.js";
+
+import { PROXYPASSWORD } from "./PROXYPASSWORD.js";
+
+import { PaymentGatewayData } from "./PaymentGatewayData.js";
+
+import { PROXYTIMEOUT } from "./PROXYTIMEOUT.js";
+
+import { PaymentGatewayData } from "./PaymentGatewayData.js";
+
+import { SPECIAL1 } from "./SPECIAL1.js";
+
+import { PaymentGatewayData } from "./PaymentGatewayData.js";
+
+import { SPECIAL2 } from "./SPECIAL2.js";
+
+import { PaymentGatewayData } from "./PaymentGatewayData.js";
+
+import { SPECIAL3 } from "./SPECIAL3.js";
+
+import { PaymentGatewayData } from "./PaymentGatewayData.js";
+
+import { SPECIAL4 } from "./SPECIAL4.js";
+
+import { PaymentGatewayData } from "./PaymentGatewayData.js";
+
+import { SPECIAL5 } from "./SPECIAL5.js";
+
+import { PaymentGatewayData } from "./PaymentGatewayData.js";
+
+import { SPECIAL6 } from "./SPECIAL6.js";
+
+import { PaymentGatewayData } from "./PaymentGatewayData.js";
+
+import { SPECIAL7 } from "./SPECIAL7.js";
+
+import { PaymentGatewayData } from "./PaymentGatewayData.js";
+
+import { SPECIAL8 } from "./SPECIAL8.js";
+
+import { PaymentGatewayData } from "./PaymentGatewayData.js";
+
+import { SPECIAL9 } from "./SPECIAL9.js";
+
+import { PaymentGatewayData } from "./PaymentGatewayData.js";
+
+import { LASTMODIFIED } from "./LASTMODIFIED.js";
+
+import { TIMECREATED } from "./TIMECREATED.js";
+
+import { NAME } from "./NAME.js";
+
+import { NAME } from "./NAME.js";
+
+import { PaymentGatewayData } from "./PaymentGatewayData.js";
+
+import { METHOD } from "./METHOD.js";
+
+import { MODE } from "./MODE.js";
+
+import { PaymentGatewayData } from "./PaymentGatewayData.js";
+
+import { TESTPROTOCOL } from "./TESTPROTOCOL.js";
+
+import { PaymentGatewayData } from "./PaymentGatewayData.js";
+
+import { TESTSERVER } from "./TESTSERVER.js";
+
+import { PaymentGatewayData } from "./PaymentGatewayData.js";
+
+import { TESTPORT } from "./TESTPORT.js";
+
+import { PaymentGatewayData } from "./PaymentGatewayData.js";
+
+import { TESTPATH } from "./TESTPATH.js";
+
+import { PaymentGatewayData } from "./PaymentGatewayData.js";
+
+import { SERVERPROTOCOL } from "./SERVERPROTOCOL.js";
+
+import { PaymentGatewayData } from "./PaymentGatewayData.js";
+
+import { SERVER } from "./SERVER.js";
+
+import { PaymentGatewayData } from "./PaymentGatewayData.js";
+
+import { SERVERPORT } from "./SERVERPORT.js";
+
+import { PaymentGatewayData } from "./PaymentGatewayData.js";
+
+import { SERVERPATH } from "./SERVERPATH.js";
+
+import { PaymentGatewayData } from "./PaymentGatewayData.js";
+
+import { USERNAME } from "./USERNAME.js";
+
+import { PASSWORD } from "./PASSWORD.js";
+
+import { PaymentGatewayData } from "./PaymentGatewayData.js";
+
+import { USERNAME } from "./USERNAME.js";
+
+import { PASSWORD } from "./PASSWORD.js";
+
+import { TIMEOUT } from "./TIMEOUT.js";
+
+import { PaymentGatewayData } from "./PaymentGatewayData.js";
+
+import { PROXYPROTOCOL } from "./PROXYPROTOCOL.js";
+
+import { PaymentGatewayData } from "./PaymentGatewayData.js";
+
+import { PROXYSERVER } from "./PROXYSERVER.js";
+
+import { PaymentGatewayData } from "./PaymentGatewayData.js";
+
+import { PROXYPORT } from "./PROXYPORT.js";
+
+import { PaymentGatewayData } from "./PaymentGatewayData.js";
+
+import { PROXYPATH } from "./PROXYPATH.js";
+
+import { PaymentGatewayData } from "./PaymentGatewayData.js";
+
+import { PROXYUSERNAME } from "./PROXYUSERNAME.js";
+
+import { PaymentGatewayData } from "./PaymentGatewayData.js";
+
+import { PROXYPASSWORD } from "./PROXYPASSWORD.js";
+
+import { PaymentGatewayData } from "./PaymentGatewayData.js";
+
+import { PROXYTIMEOUT } from "./PROXYTIMEOUT.js";
+
+import { PaymentGatewayData } from "./PaymentGatewayData.js";
+
+import { SPECIAL1 } from "./SPECIAL1.js";
+
+import { PaymentGatewayData } from "./PaymentGatewayData.js";
+
+import { SPECIAL2 } from "./SPECIAL2.js";
+
+import { PaymentGatewayData } from "./PaymentGatewayData.js";
+
+import { SPECIAL3 } from "./SPECIAL3.js";
+
+import { PaymentGatewayData } from "./PaymentGatewayData.js";
+
+import { SPECIAL4 } from "./SPECIAL4.js";
+
+import { PaymentGatewayData } from "./PaymentGatewayData.js";
+
+import { SPECIAL5 } from "./SPECIAL5.js";
+
+import { PaymentGatewayData } from "./PaymentGatewayData.js";
+
+import { SPECIAL6 } from "./SPECIAL6.js";
+
+import { PaymentGatewayData } from "./PaymentGatewayData.js";
+
+import { SPECIAL7 } from "./SPECIAL7.js";
+
+import { PaymentGatewayData } from "./PaymentGatewayData.js";
+
+import { SPECIAL8 } from "./SPECIAL8.js";
+
+import { PaymentGatewayData } from "./PaymentGatewayData.js";
+
+import { SPECIAL9 } from "./SPECIAL9.js";
+
+import { PaymentGatewayData } from "./PaymentGatewayData.js";
+
+import { PaymentGatewayData } from "./PaymentGatewayData.js";
+
+import { SPECIAL1 } from "./SPECIAL1.js";
+
+import { PaymentGatewayData } from "./PaymentGatewayData.js";
+
+import { SPECIAL2 } from "./SPECIAL2.js";
+
+import { PaymentGatewayData } from "./PaymentGatewayData.js";
+
+import { SPECIAL3 } from "./SPECIAL3.js";
+
+import { PaymentGatewayData } from "./PaymentGatewayData.js";
+
+import { SPECIAL4 } from "./SPECIAL4.js";
+
+import { PaymentGatewayData } from "./PaymentGatewayData.js";
+
+import { SPECIAL5 } from "./SPECIAL5.js";
+
+import { PaymentGatewayData } from "./PaymentGatewayData.js";
+
+import { SPECIAL6 } from "./SPECIAL6.js";
+
+import { PaymentGatewayData } from "./PaymentGatewayData.js";
+
+import { SPECIAL7 } from "./SPECIAL7.js";
+
+import { PaymentGatewayData } from "./PaymentGatewayData.js";
+
+import { SPECIAL8 } from "./SPECIAL8.js";
+
+import { PaymentGatewayData } from "./PaymentGatewayData.js";
+
+import { LASTMODIFIED } from "./LASTMODIFIED.js";
+
+import { PaymentGatewayData } from "./PaymentGatewayData.js";
+
+import { PaymentGatewayData } from "./PaymentGatewayData.js";
 
 export class PaymentGateway
             extends Object

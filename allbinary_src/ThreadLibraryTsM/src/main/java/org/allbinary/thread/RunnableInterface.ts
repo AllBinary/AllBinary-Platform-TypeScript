@@ -19,7 +19,7 @@
 
 
 
-interface RunnableInterface extends Runnable {
+export interface RunnableInterface extends Runnable {
         
 
     public isRunning(): boolean

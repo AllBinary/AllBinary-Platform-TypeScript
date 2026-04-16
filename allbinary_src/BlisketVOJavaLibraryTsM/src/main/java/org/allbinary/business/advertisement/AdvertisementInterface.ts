@@ -34,7 +34,7 @@ import { DisplayInBrowserContraintsInterface } from "../../../../org/allbinary/l
 
     
 
-interface AdvertisementInterface {
+export interface AdvertisementInterface {
         
 
     getArtist(): string

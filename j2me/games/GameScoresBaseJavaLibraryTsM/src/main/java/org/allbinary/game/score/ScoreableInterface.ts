@@ -19,7 +19,7 @@
 
 
 
-interface ScoreableInterface {
+export interface ScoreableInterface {
         
 
     getPoints(): number

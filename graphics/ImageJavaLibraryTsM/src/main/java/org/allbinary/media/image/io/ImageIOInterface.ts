@@ -19,7 +19,7 @@
 
 
 
-interface ImageIOInterface {
+export interface ImageIOInterface {
         
 
                 //@Throws(Error::class)

@@ -67,6 +67,8 @@ import { WholesaleUserFactory } from "../../../../../org/allbinary/business/user
 
     
 
+import { BasicUserRoleFactory } from "./BasicUserRoleFactory.js";
+
 export class UserRoleFactory
             extends Object
          {

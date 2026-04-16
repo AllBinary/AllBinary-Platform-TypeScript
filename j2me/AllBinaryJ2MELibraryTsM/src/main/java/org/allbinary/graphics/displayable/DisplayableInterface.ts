@@ -25,7 +25,7 @@ import { CommandListener } from "../../../../javax/microedition/lcdui/CommandLis
 
     
 
-interface DisplayableInterface {
+export interface DisplayableInterface {
         
 
     addCommand(cmd: Command)

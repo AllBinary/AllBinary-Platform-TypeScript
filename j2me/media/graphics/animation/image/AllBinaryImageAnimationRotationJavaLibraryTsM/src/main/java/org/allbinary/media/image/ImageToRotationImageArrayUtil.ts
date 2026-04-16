@@ -22,6 +22,8 @@ import { Image } from "../../../../javax/microedition/lcdui/Image.js";
 
     
 
+import { ImageRotationUtil } from "./ImageRotationUtil.js";
+
 export class ImageToRotationImageArrayUtil
             extends Object
          {

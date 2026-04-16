@@ -40,6 +40,8 @@ import { ThreadPool } from "../../../org/allbinary/thread/ThreadPool.js";
 
     
 
+import { MidletExitProcessorFactory } from "./MidletExitProcessorFactory.js";
+
 export class ProgressMidlet extends AllBinaryMidlet {
         
 

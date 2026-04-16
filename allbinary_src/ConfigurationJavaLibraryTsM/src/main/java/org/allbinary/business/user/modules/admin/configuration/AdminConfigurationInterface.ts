@@ -22,7 +22,7 @@ import { ContextConfigurationInterface } from "../../../../../../../org/allbinar
 
     
 
-interface AdminConfigurationInterface {
+export interface AdminConfigurationInterface {
         
 
                 //@Throws(Error::class)

@@ -5,7 +5,7 @@
 
 
 
-interface ServiceRegistration {
+export interface ServiceRegistration {
         
 
     public getReference(): ServiceReference

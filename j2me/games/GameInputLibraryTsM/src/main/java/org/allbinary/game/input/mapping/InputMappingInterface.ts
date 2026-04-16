@@ -25,7 +25,7 @@ import { Input } from "../../../../../org/allbinary/game/input/Input.js";
 
     
 
-interface InputMappingInterface {
+export interface InputMappingInterface {
         
 
                 //@Throws(Error::class)

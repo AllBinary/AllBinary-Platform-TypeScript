@@ -28,6 +28,14 @@ import { NullOpenGLProcessorFactory } from "../../../../../org/allbinary/graphic
 
     
 
+import { NullOpenGLTextureProcessor } from "./NullOpenGLTextureProcessor.js";
+
+import { NullOpenGLTextureProcessor } from "./NullOpenGLTextureProcessor.js";
+
+import { NullOpenGLTextureProcessor } from "./NullOpenGLTextureProcessor.js";
+
+import { NullOpenGLTextureProcessor } from "./NullOpenGLTextureProcessor.js";
+
 export class ShaderComposite
             extends Object
          {

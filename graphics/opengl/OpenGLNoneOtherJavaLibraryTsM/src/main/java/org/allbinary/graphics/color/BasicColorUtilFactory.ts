@@ -19,6 +19,8 @@
 
 
 
+import { BasicColorUtil } from "./BasicColorUtil.js";
+
 export class BasicColorUtilFactory
             extends Object
          {

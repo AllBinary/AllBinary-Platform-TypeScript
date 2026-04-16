@@ -31,7 +31,7 @@ import { StoreFrontUsersStatisticsInterface } from "../../../../../../../org/all
 
     
 
-interface StoreFrontStatisticsInterface {
+export interface StoreFrontStatisticsInterface {
         
 
     public getAdvertisements(): StoreFrontAdvertisementsStatisticsInterface

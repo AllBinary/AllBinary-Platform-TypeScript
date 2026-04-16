@@ -19,7 +19,7 @@
 
 
 
-interface UsbInterface {
+export interface UsbInterface {
         
 
 }

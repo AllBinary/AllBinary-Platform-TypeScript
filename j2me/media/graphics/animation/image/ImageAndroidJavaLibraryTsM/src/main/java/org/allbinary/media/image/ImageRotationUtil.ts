@@ -37,6 +37,8 @@ import { AndroidImageInterface } from "../../../../org/microemu/android/device/A
 
     
 
+import { ImageCreationUtil } from "./ImageCreationUtil.js";
+
 export class ImageRotationUtil
             extends Object
          {

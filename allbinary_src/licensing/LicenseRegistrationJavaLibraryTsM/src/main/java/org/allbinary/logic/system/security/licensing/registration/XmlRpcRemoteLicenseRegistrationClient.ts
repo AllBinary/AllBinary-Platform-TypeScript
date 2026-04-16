@@ -18,19 +18,13 @@
 
 
 
-            import Vector from "@ohos.util.Vector";
-        
-            import Hashtable from "@ohos.util.HashMap";
-        
 import { IOException } from "../../../../../../../java/io/IOException.js";
 
     
-
-//import { Hashtable } from "../../../../../../../java/util/Hashtable.js";
+import { Hashtable } from "../../../../../../../java/util/Hashtable.js";
 
     
-
-//import { Vector } from "../../../../../../../java/util/Vector.js";
+import { Vector } from "../../../../../../../java/util/Vector.js";
 
     
 import { CryptInterface } from "../../../../../../../org/allbinary/init/crypt/jcehelper/CryptInterface.js";

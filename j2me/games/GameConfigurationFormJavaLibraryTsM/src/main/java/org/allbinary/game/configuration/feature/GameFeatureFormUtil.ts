@@ -18,10 +18,7 @@
 
 
 
-            import Hashtable from "@ohos.util.HashMap";
-        
-
-//import { Hashtable } from "../../../../../java/util/Hashtable.js";
+import { Hashtable } from "../../../../../java/util/Hashtable.js";
 
     
 import { ChoiceGroup } from "../../../../../javax/microedition/lcdui/ChoiceGroup.js";
@@ -54,6 +51,10 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 import { HashtableUtil } from "../../../../../org/allbinary/util/HashtableUtil.js";
 
     
+
+import { Features } from "./Features.js";
+
+import { GameFeatureUtil } from "./GameFeatureUtil.js";
 
 export class GameFeatureFormUtil
             extends Object

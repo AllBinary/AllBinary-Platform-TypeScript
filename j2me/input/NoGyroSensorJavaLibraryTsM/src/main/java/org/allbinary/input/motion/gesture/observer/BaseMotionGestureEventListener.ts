@@ -22,7 +22,7 @@ import { EventListenerInterface } from "../../../../../../org/allbinary/logic/ut
 
     
 
-interface BaseMotionGestureEventListener extends EventListenerInterface {
+export interface BaseMotionGestureEventListener extends EventListenerInterface {
         
 
     onMotionGestureEvent(motionGestureEvent: MotionGestureEvent)

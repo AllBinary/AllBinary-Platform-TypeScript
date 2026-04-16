@@ -19,7 +19,7 @@
 
 
 
-interface ImageActionScriptOutputInterface extends ProfileActionScriptOutputInterface {
+export interface ImageActionScriptOutputInterface extends ProfileActionScriptOutputInterface {
         
 
     getImageTypes(): ImageTypes

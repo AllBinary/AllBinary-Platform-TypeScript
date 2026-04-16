@@ -19,7 +19,7 @@
 
 
 
-interface DisplayInBrowserContraintsInterface {
+export interface DisplayInBrowserContraintsInterface {
         
 
     public isMountable(): boolean

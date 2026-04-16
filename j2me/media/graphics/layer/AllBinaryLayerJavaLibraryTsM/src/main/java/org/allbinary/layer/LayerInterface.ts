@@ -25,7 +25,7 @@ import { PaintableInterface } from "../../../org/allbinary/graphics/paint/Painta
 
     
 
-interface LayerInterface extends NamedInterface, PaintableInterface, GroupInterfaceCompositeInterface, PositionInterface {
+export interface LayerInterface extends NamedInterface, PaintableInterface, GroupInterfaceCompositeInterface, PositionInterface {
         
 
     getHeight(): number

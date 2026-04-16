@@ -22,7 +22,7 @@ import { EventListenerInterface } from "../../../../org/allbinary/logic/util/eve
 
     
 
-interface TrackingEventListenerInterface extends EventListenerInterface {
+export interface TrackingEventListenerInterface extends EventListenerInterface {
         
 
                 //@Throws(Error::class)

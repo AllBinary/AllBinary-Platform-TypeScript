@@ -18,8 +18,6 @@
 
 
 
-            import HashMap from "@ohos.util.HashMap";
-        
             import { Integer } from "../../../../../java/lang/Integer.js";
         
 import { awt } from "../../../../../java/awt.js";
@@ -28,8 +26,7 @@ import { awt } from "../../../../../java/awt.js";
 import { EventListener } from "../../../../../java/util/EventListener.js";
 
     
-
-//import { HashMap } from "../../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../../java/util/HashMap.js";
 
     
 import { LinkedList } from "../../../../../java/util/LinkedList.js";
@@ -83,6 +80,26 @@ import { Document } from "../../../../../org/w3c/dom/Document.js";
 import { Node } from "../../../../../org/w3c/dom/Node.js";
 
     
+
+import { GridBagConstraints } from "./GridBagConstraints.js";
+
+import { GridBagConstraints } from "./GridBagConstraints.js";
+
+import { GridBagConstraints } from "./GridBagConstraints.js";
+
+import { GridBagConstraints } from "./GridBagConstraints.js";
+
+import { WorkAreaDom } from "./WorkAreaDom.js";
+
+import { WorkAreaDom } from "./WorkAreaDom.js";
+
+import { WorkAreaDom } from "./WorkAreaDom.js";
+
+import { Thread } from "./Thread.js";
+
+import { Thread } from "./Thread.js";
+
+import { Thread } from "./Thread.js";
 
 export class WorkAreaJPanel extends JPanel
                 , WorkAreaJPanelInterface

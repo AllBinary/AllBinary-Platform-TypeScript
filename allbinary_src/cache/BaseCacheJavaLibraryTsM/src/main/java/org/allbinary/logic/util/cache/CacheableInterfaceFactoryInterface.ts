@@ -19,7 +19,7 @@
 
 
 
-interface CacheableInterfaceFactoryInterface {
+export interface CacheableInterfaceFactoryInterface {
         
 
                 //@Throws(Error::class)

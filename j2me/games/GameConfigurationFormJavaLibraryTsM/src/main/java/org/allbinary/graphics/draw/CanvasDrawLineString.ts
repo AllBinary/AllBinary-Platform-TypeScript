@@ -25,6 +25,8 @@ import { MyFont } from "../../../../org/allbinary/graphics/font/MyFont.js";
 
     
 
+import { DrawStringUtil } from "./DrawStringUtil.js";
+
 export class CanvasDrawLineString
             extends Object
          {

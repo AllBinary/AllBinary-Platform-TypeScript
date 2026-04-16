@@ -18,16 +18,10 @@
 
 
 
-            import Vector from "@ohos.util.Vector";
-        
-            import HashMap from "@ohos.util.HashMap";
-        
-
-//import { HashMap } from "../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../java/util/HashMap.js";
 
     
-
-//import { Vector } from "../../../../java/util/Vector.js";
+import { Vector } from "../../../../java/util/Vector.js";
 
     
 import { UserDbInitInfo } from "../../../../org/allbinary/business/init/db/UserDbInitInfo.js";
@@ -48,6 +42,32 @@ import { AbPathData } from "../../../../org/allbinary/logic/io/path/AbPathData.j
 import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.js";
 
     
+
+import { InitInfo } from "./InitInfo.js";
+
+import { InitInfo } from "./InitInfo.js";
+
+import { InitInfo } from "./InitInfo.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { InitInfo } from "./InitInfo.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { InitInfo } from "./InitInfo.js";
+
+import { InitInfo } from "./InitInfo.js";
+
+import { InitInfo } from "./InitInfo.js";
+
+import { InitInfo } from "./InitInfo.js";
+
+import { LOGGING } from "./LOGGING.js";
 
 export class InitInfoEntity extends InitSql {
         

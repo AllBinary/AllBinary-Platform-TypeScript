@@ -17,10 +17,7 @@
 
 
 
-            import Hashtable from "@ohos.util.HashMap";
-        
-
-//import { Hashtable } from "../../../../java/util/Hashtable.js";
+import { Hashtable } from "../../../../java/util/Hashtable.js";
 
     
 import { WorkWaypoint } from "../../../../org/allbinary/game/layer/waypoint/WorkWaypoint.js";
@@ -32,6 +29,8 @@ import { SmallIntegerSingletonFactory } from "../../../../org/allbinary/logic/ma
 import { BaseRaceTrackGeographicMap } from "../../../../org/allbinary/media/graphics/geography/map/racetrack/BaseRaceTrackGeographicMap.js";
 
     
+
+import { RTSLayerUtil } from "./RTSLayerUtil.js";
 
 export class AdvancedRTSLayerUtil
             extends Object

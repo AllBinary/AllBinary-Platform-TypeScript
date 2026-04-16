@@ -52,6 +52,8 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
     
 
+import { InputAutomationConfiguration } from "./InputAutomationConfiguration.js";
+
 export class InputAutomationConfigurationFactory
             extends Object
          {

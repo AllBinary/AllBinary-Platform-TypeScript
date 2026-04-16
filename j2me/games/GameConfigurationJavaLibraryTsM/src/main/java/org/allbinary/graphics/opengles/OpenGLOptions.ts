@@ -28,6 +28,8 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
     
 
+import { OpenGLFeatureFactory } from "./OpenGLFeatureFactory.js";
+
 export class OpenGLOptions
             extends Object
          {

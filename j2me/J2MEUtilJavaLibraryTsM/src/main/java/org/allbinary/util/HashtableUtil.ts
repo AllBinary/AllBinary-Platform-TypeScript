@@ -18,13 +18,10 @@
 
 
 
-            import Hashtable from "@ohos.util.HashMap";
-        
 import { Enumeration } from "../../../java/util/Enumeration.js";
 
     
-
-//import { Hashtable } from "../../../java/util/Hashtable.js";
+import { Hashtable } from "../../../java/util/Hashtable.js";
 
     
 

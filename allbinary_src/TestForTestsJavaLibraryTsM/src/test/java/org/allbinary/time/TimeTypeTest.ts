@@ -17,6 +17,10 @@ import { Test } from "../../../org/junit/jupiter/api/Test.js";
 
     
 
+import { TimeTypeUtil } from "./TimeTypeUtil.js";
+
+import { TimeTypeUtil } from "./TimeTypeUtil.js";
+
 export class TimeTypeTest
             extends Object
          {

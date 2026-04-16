@@ -18,13 +18,10 @@
 
 
 
-            import Vector from "@ohos.util.Vector";
-        
 import { ActionEvent } from "../../../../../../../java/awt/event/ActionEvent.js";
 
     
-
-//import { Vector } from "../../../../../../../java/util/Vector.js";
+import { Vector } from "../../../../../../../java/util/Vector.js";
 
     
 import { swing } from "../../../../../../../javax/swing.js";
@@ -81,6 +78,12 @@ import { Node } from "../../../../../../../org/w3c/dom/Node.js";
 import { NodeList } from "../../../../../../../org/w3c/dom/NodeList.js";
 
     
+
+import { GenericProfileActionScriptConditionData } from "./GenericProfileActionScriptConditionData.js";
+
+import { ProfileActionScriptConditionFactory } from "./ProfileActionScriptConditionFactory.js";
+
+import { GenericProfileActionScriptConditionData } from "./GenericProfileActionScriptConditionData.js";
 
 export class BasicProfileActionScriptCondition extends ProfileActionScriptItem
                 , ProfileActionScriptConditionInterface {

@@ -25,7 +25,7 @@ import { TimeBase } from "../../../../javax/microedition/media/TimeBase.js";
 
     
 
-interface TimeBaseInterface {
+export interface TimeBaseInterface {
         
 
     public getTimeBase(): TimeBase

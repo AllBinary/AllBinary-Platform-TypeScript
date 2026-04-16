@@ -22,7 +22,7 @@ import { EventListenerInterface } from "../../../../../org/allbinary/logic/util/
 
     
 
-interface PressGameKeyEventListenerInterface extends EventListenerInterface {
+export interface PressGameKeyEventListenerInterface extends EventListenerInterface {
         
 
                 //@Throws(Error::class)

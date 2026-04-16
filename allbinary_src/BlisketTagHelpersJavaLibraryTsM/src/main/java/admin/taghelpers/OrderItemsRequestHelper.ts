@@ -18,10 +18,7 @@
 
 
 
-            import HashMap from "@ohos.util.HashMap";
-        
-
-//import { HashMap } from "../../java/util/HashMap.js";
+import { HashMap } from "../../java/util/HashMap.js";
 
     
 import { HttpServletRequest } from "../../javax/servlet/http/HttpServletRequest.js";
@@ -45,6 +42,30 @@ import { OrderItemsEntityFactory } from "../../org/allbinary/data/tables/user/co
 import { LogUtil } from "../../org/allbinary/logic/communication/log/LogUtil.js";
 
     
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
 
 export class OrderItemsRequestHelper extends TagHelper {
         

@@ -19,6 +19,8 @@
 
 
 
+import { ShaderManager } from "./ShaderManager.js";
+
 export class ShaderManagerFactory
             extends Object
          {

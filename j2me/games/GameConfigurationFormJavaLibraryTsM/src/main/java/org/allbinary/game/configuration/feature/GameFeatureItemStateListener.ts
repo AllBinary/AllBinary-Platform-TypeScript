@@ -52,6 +52,10 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
     
 
+import { GameFeatureFactory } from "./GameFeatureFactory.js";
+
+import { GameFeatureUtil } from "./GameFeatureUtil.js";
+
 export class GameFeatureItemStateListener
             extends Object
         

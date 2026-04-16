@@ -18,10 +18,7 @@
 
 
 
-            import Hashtable from "@ohos.util.HashMap";
-        
-
-//import { Hashtable } from "../../../../../java/util/Hashtable.js";
+import { Hashtable } from "../../../../../java/util/Hashtable.js";
 
     
 import { GameInfoData } from "../../../../../org/allbinary/game/GameInfoData.js";
@@ -57,6 +54,16 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 import { HashtableUtil } from "../../../../../org/allbinary/util/HashtableUtil.js";
 
     
+
+import { RemoteHighScoresData } from "./RemoteHighScoresData.js";
+
+import { RemoteHighScoresData } from "./RemoteHighScoresData.js";
+
+import { RemoteHighScoresData } from "./RemoteHighScoresData.js";
+
+import { RemoteHighScoresData } from "./RemoteHighScoresData.js";
+
+import { Long } from "./Long.js";
 
 export class RemoteHighScoresSubmissionProcessor
             extends Object

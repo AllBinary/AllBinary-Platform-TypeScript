@@ -31,6 +31,8 @@ import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
 
     
 
+import { ShaderStrings } from "./ShaderStrings.js";
+
 export class CompositeShaderUpdater extends ShaderUpdater {
         
 

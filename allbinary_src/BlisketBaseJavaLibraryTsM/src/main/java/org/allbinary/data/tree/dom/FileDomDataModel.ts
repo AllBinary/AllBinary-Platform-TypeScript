@@ -18,10 +18,7 @@
 
 
 
-            import HashMap from "@ohos.util.HashMap";
-        
-
-//import { HashMap } from "../../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../../java/util/HashMap.js";
 
     
 import { TableMappingInterface } from "../../../../../org/allbinary/data/tables/TableMappingInterface.js";
@@ -36,6 +33,8 @@ import { Document } from "../../../../../org/w3c/dom/Document.js";
 import { Node } from "../../../../../org/w3c/dom/Node.js";
 
     
+
+import { ModDomHelper } from "./ModDomHelper.js";
 
 export class FileDomDataModel
             extends Object

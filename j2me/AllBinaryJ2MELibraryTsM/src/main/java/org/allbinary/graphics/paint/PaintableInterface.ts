@@ -22,7 +22,7 @@ import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
 
     
 
-interface PaintableInterface {
+export interface PaintableInterface {
         
 
     public paint(graphics: Graphics)

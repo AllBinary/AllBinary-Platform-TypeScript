@@ -25,6 +25,12 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 
     
 
+import { Boolean } from "./Boolean.js";
+
+import { Boolean } from "./Boolean.js";
+
+import { Boolean } from "./Boolean.js";
+
 export class ExcludeFileExtensionsBooleanFileVisitor extends BooleanFileVisitor {
         
 public constructor (filterStringBasicArrayList: BasicArrayList)                        

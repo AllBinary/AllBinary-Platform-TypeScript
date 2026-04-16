@@ -18,10 +18,7 @@
 
 
 
-            import Hashtable from "@ohos.util.HashMap";
-        
-
-//import { Hashtable } from "../../../../../../java/util/Hashtable.js";
+import { Hashtable } from "../../../../../../java/util/Hashtable.js";
 
     
 import { StringMaker } from "../../../../../../org/allbinary/logic/string/StringMaker.js";
@@ -51,6 +48,8 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 import { BasicArrayListUtil } from "../../../../../../org/allbinary/util/BasicArrayListUtil.js";
 
     
+
+import { AbeClientInformationData } from "./AbeClientInformationData.js";
 
 export class ClientInformation
             extends Object

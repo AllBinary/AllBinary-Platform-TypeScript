@@ -18,13 +18,10 @@
 
 
 
-            import Hashtable from "@ohos.util.HashMap";
-        
 import { Enumeration } from "../../../../../java/util/Enumeration.js";
 
     
-
-//import { Hashtable } from "../../../../../java/util/Hashtable.js";
+import { Hashtable } from "../../../../../java/util/Hashtable.js";
 
     
 import { ChoiceGroup } from "../../../../../javax/microedition/lcdui/ChoiceGroup.js";
@@ -45,6 +42,22 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 import { HashtableUtil } from "../../../../../org/allbinary/util/HashtableUtil.js";
 
     
+
+import { Features } from "./Features.js";
+
+import { Feature } from "./Feature.js";
+
+import { Features } from "./Features.js";
+
+import { Feature } from "./Feature.js";
+
+import { GameFeatureChoiceGroups } from "./GameFeatureChoiceGroups.js";
+
+import { Feature } from "./Feature.js";
+
+import { GameFeatureChoiceGroups } from "./GameFeatureChoiceGroups.js";
+
+import { Features } from "./Features.js";
 
 export class GameFeatureUtil
             extends Object

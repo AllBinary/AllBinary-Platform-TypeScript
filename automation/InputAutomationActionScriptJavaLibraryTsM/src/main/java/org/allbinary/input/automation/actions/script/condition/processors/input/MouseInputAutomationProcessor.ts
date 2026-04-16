@@ -31,6 +31,12 @@ import { CommonStrings } from "../../../../../../../../../org/allbinary/string/C
 
     
 
+import { Thread } from "./Thread.js";
+
+import { Thread } from "./Thread.js";
+
+import { Thread } from "./Thread.js";
+
 export class MouseInputAutomationProcessor
             extends Object
          {

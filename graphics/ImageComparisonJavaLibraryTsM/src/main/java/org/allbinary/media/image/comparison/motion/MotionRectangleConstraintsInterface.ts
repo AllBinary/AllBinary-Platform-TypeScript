@@ -25,7 +25,7 @@ import { BufferedImage } from "../../../../../../java/awt/image/BufferedImage.js
 
     
 
-interface MotionRectangleConstraintsInterface {
+export interface MotionRectangleConstraintsInterface {
         
 
     getMaxMotionRectangles(): number

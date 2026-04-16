@@ -18,10 +18,7 @@
 
 
 
-            import HashMap from "@ohos.util.HashMap";
-        
-
-//import { HashMap } from "../../../java/util/HashMap.js";
+import { HashMap } from "../../../java/util/HashMap.js";
 
     
 import { TagSupport } from "../../../javax/servlet/jsp/tagext/TagSupport.js";
@@ -33,6 +30,18 @@ import { LogUtil } from "../../../org/allbinary/logic/communication/log/LogUtil.
 import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
 
     
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
 
 export class Properties
             extends Object

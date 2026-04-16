@@ -5,7 +5,7 @@
 
 
 
-interface ChoiceItemInterface {
+export interface ChoiceItemInterface {
         
 
 }

@@ -23,6 +23,8 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
     
 
+import { AndroidMediaPlayerWrapper } from "./AndroidMediaPlayerWrapper.js";
+
 export class AndroidMediaPlayerWrapperListener
             extends Object
          {

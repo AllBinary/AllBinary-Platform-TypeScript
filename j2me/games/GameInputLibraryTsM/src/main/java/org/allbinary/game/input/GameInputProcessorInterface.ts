@@ -22,7 +22,7 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
     
 
-interface GameInputProcessorInterface {
+export interface GameInputProcessorInterface {
         
 
                 //@Throws(Error::class)

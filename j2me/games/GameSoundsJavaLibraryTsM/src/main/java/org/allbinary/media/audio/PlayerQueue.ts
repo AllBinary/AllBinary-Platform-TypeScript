@@ -34,6 +34,8 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
     
 
+import { NoSound } from "./NoSound.js";
+
 export class PlayerQueue
             extends Object
          {

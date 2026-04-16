@@ -18,10 +18,7 @@
 
 
 
-            import HashMap from "@ohos.util.HashMap";
-        
-
-//import { HashMap } from "../../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../../java/util/HashMap.js";
 
     
 import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
@@ -33,6 +30,12 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 import { Node } from "../../../../../org/w3c/dom/Node.js";
 
     
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
 
 export class CategoryPropertiesFactory
             extends Object

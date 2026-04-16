@@ -31,6 +31,8 @@ import { Node } from "../../../../../org/w3c/dom/Node.js";
 
     
 
+import { ThemeData } from "./ThemeData.js";
+
 export class ThemePropertiesView
             extends Object
         

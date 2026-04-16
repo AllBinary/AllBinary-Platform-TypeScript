@@ -18,10 +18,7 @@
 
 
 
-            import HashMap from "@ohos.util.HashMap";
-        
-
-//import { HashMap } from "../../../../../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../../../../../java/util/HashMap.js";
 
     
 import { DomNodeHelper } from "../../../../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js";
@@ -39,6 +36,16 @@ import { Document } from "../../../../../../../../org/w3c/dom/Document.js";
 import { Node } from "../../../../../../../../org/w3c/dom/Node.js";
 
     
+
+import { SavedCaptureGenericProfileDataWorkerType } from "./SavedCaptureGenericProfileDataWorkerType.js";
+
+import { CAPTURE } from "./CAPTURE.js";
+
+import { COMPARISON } from "./COMPARISON.js";
+
+import { MOTION } from "./MOTION.js";
+
+import { GenericProfileDataWorkerData } from "./GenericProfileDataWorkerData.js";
 
 export class GenericProfileDataWorkerType
             extends Object

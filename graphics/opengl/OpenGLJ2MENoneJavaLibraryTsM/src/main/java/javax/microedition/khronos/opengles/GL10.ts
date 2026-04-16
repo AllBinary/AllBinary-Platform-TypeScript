@@ -5,7 +5,7 @@
 
 
 
-interface GL10 extends GL {
+export interface GL10 extends GL {
         
 
 }

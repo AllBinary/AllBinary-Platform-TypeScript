@@ -19,7 +19,7 @@
 
 
 
-interface FireWireInterface {
+export interface FireWireInterface {
         
 
 }

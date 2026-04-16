@@ -22,6 +22,8 @@ import { TimeDelayHelper } from "../../../org/allbinary/time/TimeDelayHelper.js"
 
     
 
+import { NullIntermissionEnableListener } from "./NullIntermissionEnableListener.js";
+
 export class Intermission
             extends Object
         

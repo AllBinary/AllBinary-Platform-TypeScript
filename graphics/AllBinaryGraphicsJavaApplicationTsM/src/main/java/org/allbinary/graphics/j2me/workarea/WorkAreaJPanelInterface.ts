@@ -22,7 +22,7 @@ import { Document } from "../../../../../org/w3c/dom/Document.js";
 
     
 
-interface WorkAreaJPanelInterface extends java.awt.event.KeyListener {
+export interface WorkAreaJPanelInterface extends java.awt.event.KeyListener {
         
 
     public getName(): string

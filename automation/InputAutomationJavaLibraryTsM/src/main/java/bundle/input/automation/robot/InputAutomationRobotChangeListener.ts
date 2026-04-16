@@ -22,7 +22,7 @@ import { InputAutomationRobotChangeEvent } from "../../../../org/allbinary/input
 
     
 
-interface InputAutomationRobotChangeListener {
+export interface InputAutomationRobotChangeListener {
         
 
     onAdd(inputAutomationRobotChangeEvent: InputAutomationRobotChangeEvent)

@@ -22,7 +22,7 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
     
 
-interface LayerPlacementInterfaceBasicArrayListFactoryInterface {
+export interface LayerPlacementInterfaceBasicArrayListFactoryInterface {
         
 
     getInstance(): BasicArrayList

@@ -49,6 +49,8 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
     
 
+import { Thread } from "./Thread.js";
+
 export class DefaultGameInitializationListener
             extends Object
         

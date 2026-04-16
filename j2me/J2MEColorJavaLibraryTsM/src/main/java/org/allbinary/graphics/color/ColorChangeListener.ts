@@ -22,7 +22,7 @@ import { EventListenerInterface } from "../../../../org/allbinary/logic/util/eve
 
     
 
-interface ColorChangeListener extends EventListenerInterface {
+export interface ColorChangeListener extends EventListenerInterface {
         
 
 }

@@ -18,16 +18,13 @@
 
 
 
-            import Vector from "@ohos.util.Vector";
-        
 import { FileChannel } from "../../../../../java/nio/channels/FileChannel.js";
 
     
 import { FileLock } from "../../../../../java/nio/channels/FileLock.js";
 
     
-
-//import { Vector } from "../../../../../java/util/Vector.js";
+import { Vector } from "../../../../../java/util/Vector.js";
 
     
 import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";

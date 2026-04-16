@@ -22,7 +22,7 @@ import { EventListener } from "../../../../../java/util/EventListener.js";
 
     
 
-interface EventListenerInterface extends EventListener {
+export interface EventListenerInterface extends EventListener {
         
 
                 //@Throws(Error::class)

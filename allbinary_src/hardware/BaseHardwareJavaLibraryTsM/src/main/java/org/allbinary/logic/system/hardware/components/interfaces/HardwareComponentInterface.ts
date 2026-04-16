@@ -19,7 +19,7 @@
 
 
 
-interface HardwareComponentInterface {
+export interface HardwareComponentInterface {
         
 
     public compareTo(componentInterface: HardwareComponentInterface): boolean

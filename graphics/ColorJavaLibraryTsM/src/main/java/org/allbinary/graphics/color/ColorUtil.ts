@@ -22,6 +22,12 @@ import { awt } from "../../../../java/awt.js";
 
     
 
+import { Math } from "./Math.js";
+
+import { Math } from "./Math.js";
+
+import { Math } from "./Math.js";
+
 export class ColorUtil
             extends Object
          {

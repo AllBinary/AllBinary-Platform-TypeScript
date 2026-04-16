@@ -52,6 +52,10 @@ import { BouncyCastleProvider } from "../../../../../../../org/bouncycastle/jce/
 
     
 
+import { BaseSecretComposite } from "./BaseSecretComposite.js";
+
+import { KeySpecFactory } from "./KeySpecFactory.js";
+
 export class AbCrypt
             extends Object
         

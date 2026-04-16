@@ -34,6 +34,8 @@ import { HttpStoreComponentView } from "../../../../views/business/context/modul
 
     
 
+import { Boolean } from "./Boolean.js";
+
 export class SelectExistingValidationView extends HttpStoreComponentView
                 , ValidationComponentInterface {
         

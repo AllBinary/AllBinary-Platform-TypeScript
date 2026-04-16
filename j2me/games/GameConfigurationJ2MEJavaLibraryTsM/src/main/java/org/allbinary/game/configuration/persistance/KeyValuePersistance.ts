@@ -18,8 +18,6 @@
 
 
 
-            import Hashtable from "@ohos.util.HashMap";
-        
 import { ByteArrayInputStream } from "../../../../../java/io/ByteArrayInputStream.js";
 
     
@@ -32,8 +30,7 @@ import { DataInputStream } from "../../../../../java/io/DataInputStream.js";
 import { DataOutputStream } from "../../../../../java/io/DataOutputStream.js";
 
     
-
-//import { Hashtable } from "../../../../../java/util/Hashtable.js";
+import { Hashtable } from "../../../../../java/util/Hashtable.js";
 
     
 import { RecordEnumeration } from "../../../../../javax/microedition/rms/RecordEnumeration.js";
@@ -66,6 +63,14 @@ import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
 import { HashtableUtil } from "../../../../../org/allbinary/util/HashtableUtil.js";
 
     
+
+import { NullRecordStore } from "./NullRecordStore.js";
+
+import { NullRecordFilter } from "./NullRecordFilter.js";
+
+import { NullRecordComparator } from "./NullRecordComparator.js";
+
+import { NullRecordStore } from "./NullRecordStore.js";
 
 export class KeyValuePersistance extends BasicPersitance {
         

@@ -18,10 +18,7 @@
 
 
 
-            import Hashtable from "@ohos.util.HashMap";
-        
-
-//import { Hashtable } from "../../../../../java/util/Hashtable.js";
+import { Hashtable } from "../../../../../java/util/Hashtable.js";
 
     
 import { Set } from "../../../../../java/util/Set.js";
@@ -42,6 +39,10 @@ import { ImageComparatorConstraintsInterface } from "../../../../../org/allbinar
 import { MotionRectangleConstraintsInterface } from "../../../../../org/allbinary/media/image/comparison/motion/MotionRectangleConstraintsInterface.js";
 
     
+
+import { Thread } from "./Thread.js";
+
+import { Thread } from "./Thread.js";
 
 export class TestInputAutomationActionWorker extends AbstractInputAutomationWorker {
         

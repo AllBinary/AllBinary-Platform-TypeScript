@@ -8,6 +8,8 @@ import { Image } from "../../../../javax/microedition/lcdui/Image.js";
 
     
 
+import { DisplayInfoSingleton } from "./DisplayInfoSingleton.js";
+
 export class ScreenRelationalUtil
             extends Object
          {

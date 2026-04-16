@@ -19,7 +19,7 @@
 
 
 
-interface HealthListenerInterface {
+export interface HealthListenerInterface {
         
 
     onHealthChange()

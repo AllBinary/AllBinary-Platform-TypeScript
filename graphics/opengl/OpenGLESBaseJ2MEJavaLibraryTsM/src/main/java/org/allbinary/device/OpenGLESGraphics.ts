@@ -23,6 +23,8 @@ import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
 
     
 
+import { NullGL10 } from "./NullGL10.js";
+
 export class OpenGLESGraphics
             extends Object
         

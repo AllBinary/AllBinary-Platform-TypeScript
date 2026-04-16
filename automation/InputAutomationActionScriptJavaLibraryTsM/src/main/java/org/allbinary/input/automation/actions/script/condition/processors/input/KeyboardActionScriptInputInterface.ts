@@ -21,7 +21,7 @@
             import { Integer } from "../../../../../../../../../java/lang/Integer.js";
         
 
-interface KeyboardActionScriptInputInterface extends ProfileActionScriptInputInterface {
+export interface KeyboardActionScriptInputInterface extends ProfileActionScriptInputInterface {
         
 
     getDelayBetweenKeys(): number

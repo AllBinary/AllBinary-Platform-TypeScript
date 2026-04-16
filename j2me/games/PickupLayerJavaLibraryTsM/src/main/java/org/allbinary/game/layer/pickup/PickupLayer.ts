@@ -58,6 +58,8 @@ import { ViewPosition } from "../../../../../org/allbinary/view/ViewPosition.js"
 
     
 
+import { CountedPickedUpLayerInterfaceFactory } from "./CountedPickedUpLayerInterfaceFactory.js";
+
 export class PickupLayer extends MultiPlayerGameLayer
                 , PickedUpLayerInterface
                 , PickupableInterface {

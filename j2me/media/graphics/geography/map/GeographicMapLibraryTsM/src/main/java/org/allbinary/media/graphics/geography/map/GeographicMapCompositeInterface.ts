@@ -19,7 +19,7 @@
 
 
 
-interface GeographicMapCompositeInterface {
+export interface GeographicMapCompositeInterface {
         
 
     geographicMapCellTypeArray(): GeographicMapCellType[]

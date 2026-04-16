@@ -18,16 +18,10 @@
 
 
 
-            import Vector from "@ohos.util.Vector";
-        
-            import HashMap from "@ohos.util.HashMap";
-        
-
-//import { HashMap } from "../../../../../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../../../../../java/util/HashMap.js";
 
     
-
-//import { Vector } from "../../../../../../../../java/util/Vector.js";
+import { Vector } from "../../../../../../../../java/util/Vector.js";
 
     
 import { ValidationInterface } from "../../../../../../../../org/allbinary/logic/control/validate/ValidationInterface.js";
@@ -39,6 +33,10 @@ import { Node } from "../../../../../../../../org/w3c/dom/Node.js";
 import { NodeList } from "../../../../../../../../org/w3c/dom/NodeList.js";
 
     
+
+import { CssPropertyData } from "./CssPropertyData.js";
+
+import { CssPropertyValidationFactory } from "./CssPropertyValidationFactory.js";
 
 export class CssPropertiesValidationFactory
             extends Object

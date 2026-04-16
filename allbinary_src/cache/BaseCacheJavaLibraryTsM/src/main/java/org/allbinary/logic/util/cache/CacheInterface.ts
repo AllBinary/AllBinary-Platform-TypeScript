@@ -19,7 +19,7 @@
 
 
 
-interface CacheInterface {
+export interface CacheInterface {
         
 
                 //@Throws(Error::class)

@@ -19,7 +19,7 @@
 
 
 
-interface UserEmailEventConfigurationInterface {
+export interface UserEmailEventConfigurationInterface {
         
 
     public getName(): string

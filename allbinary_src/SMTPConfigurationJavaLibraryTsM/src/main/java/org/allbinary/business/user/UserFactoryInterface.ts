@@ -18,17 +18,14 @@
 
 
 
-            import HashMap from "@ohos.util.HashMap";
-        
 import { Serializable } from "../../../../java/io/Serializable.js";
 
     
-
-//import { HashMap } from "../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../java/util/HashMap.js";
 
     
 
-interface UserFactoryInterface extends Serializable {
+export interface UserFactoryInterface extends Serializable {
         
 
                 //@Throws(Error::class)

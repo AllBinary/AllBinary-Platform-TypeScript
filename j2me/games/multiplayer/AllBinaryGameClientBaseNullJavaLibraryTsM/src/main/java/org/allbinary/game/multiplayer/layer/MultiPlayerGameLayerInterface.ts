@@ -19,7 +19,7 @@
 
 
 
-interface MultiPlayerGameLayerInterface {
+export interface MultiPlayerGameLayerInterface {
         
 
     getMultiplayerBehavior(): MultiplayerBehavior

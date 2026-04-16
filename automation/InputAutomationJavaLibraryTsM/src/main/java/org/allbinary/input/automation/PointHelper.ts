@@ -22,6 +22,8 @@ import { awt } from "../../../../java/awt.js";
 
     
 
+import { PointFactory } from "./PointFactory.js";
+
 export class PointHelper
             extends Object
          {

@@ -18,10 +18,7 @@
 
 
 
-            import HashMap from "@ohos.util.HashMap";
-        
-
-//import { HashMap } from "../../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../../java/util/HashMap.js";
 
     
 import { AdvertisementCampaignData } from "../../../../../org/allbinary/business/advertisement/campaign/AdvertisementCampaignData.js";
@@ -36,6 +33,12 @@ import { DomDocumentHelper } from "../../../../../org/allbinary/data/tree/dom/do
 import { Document } from "../../../../../org/w3c/dom/Document.js";
 
     
+
+import { AdvertisementAreaData } from "./AdvertisementAreaData.js";
+
+import { AdvertisementAreaData } from "./AdvertisementAreaData.js";
+
+import { AdvertisementAreaData } from "./AdvertisementAreaData.js";
 
 export class AdvertisementArea
             extends Object

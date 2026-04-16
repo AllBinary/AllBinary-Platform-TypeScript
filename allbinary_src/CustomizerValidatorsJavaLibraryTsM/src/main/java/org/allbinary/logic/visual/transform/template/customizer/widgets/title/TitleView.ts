@@ -18,10 +18,7 @@
 
 
 
-            import HashMap from "@ohos.util.HashMap";
-        
-
-//import { HashMap } from "../../../../../../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../../../../../../java/util/HashMap.js";
 
     
 import { DomData } from "../../../../../../../../../org/allbinary/data/tree/dom/DomData.js";
@@ -54,6 +51,32 @@ import { Document } from "../../../../../../../../../org/w3c/dom/Document.js";
 import { Node } from "../../../../../../../../../org/w3c/dom/Node.js";
 
     
+
+import { TitleData } from "./TitleData.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
+
+import { TitleData } from "./TitleData.js";
+
+import { TitleData } from "./TitleData.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
+
+import { TitleData } from "./TitleData.js";
 
 export class TitleView
             extends Object

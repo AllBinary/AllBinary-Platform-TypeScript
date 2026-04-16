@@ -5,7 +5,7 @@
 
 
 
-interface ServiceFactory {
+export interface ServiceFactory {
         
 
 }

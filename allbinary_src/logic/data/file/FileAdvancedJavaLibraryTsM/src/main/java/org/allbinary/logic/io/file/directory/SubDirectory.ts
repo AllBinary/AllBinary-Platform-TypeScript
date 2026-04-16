@@ -34,6 +34,8 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 
     
 
+import { Directory } from "./Directory.js";
+
 export class SubDirectory
             extends Object
          {

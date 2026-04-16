@@ -18,10 +18,7 @@
 
 
 
-            import Hashtable from "@ohos.util.HashMap";
-        
-
-//import { Hashtable } from "../../../../../java/util/Hashtable.js";
+import { Hashtable } from "../../../../../java/util/Hashtable.js";
 
     
 import { Graphics } from "../../../../../javax/microedition/lcdui/Graphics.js";
@@ -156,6 +153,10 @@ import { RemoteInfo } from "../../../../../org/allbinary/game/multiplayer/layer/
 import { NullUtil } from "../../../../../org/allbinary/logic/NullUtil.js";
 
     
+
+import { BuildingInfoHudPaintable } from "./BuildingInfoHudPaintable.js";
+
+import { BuildingInfoHudPaintable } from "./BuildingInfoHudPaintable.js";
 
 export class BuildingLayer extends AdvancedRTSGameLayer
                 , RotationAnimationInterfaceCompositeInterface

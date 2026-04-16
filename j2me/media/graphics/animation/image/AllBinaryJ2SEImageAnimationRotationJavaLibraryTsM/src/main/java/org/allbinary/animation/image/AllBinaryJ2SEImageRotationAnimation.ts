@@ -49,6 +49,20 @@ import { ImageRotationUtil } from "../../../../org/allbinary/media/image/ImageRo
 
     
 
+import { ModifierBaseProcessor } from "./ModifierBaseProcessor.js";
+
+import { ModifierBaseProcessor } from "./ModifierBaseProcessor.js";
+
+import { ModifierBaseProcessor } from "./ModifierBaseProcessor.js";
+
+import { ScaleProcessor } from "./ScaleProcessor.js";
+
+import { SetColorProcessor } from "./SetColorProcessor.js";
+
+import { ChangeColorProcessor } from "./ChangeColorProcessor.js";
+
+import { AlphaProcessor } from "./AlphaProcessor.js";
+
 export class AllBinaryJ2SEImageRotationAnimation extends ImageBaseRotationAnimation {
         
 

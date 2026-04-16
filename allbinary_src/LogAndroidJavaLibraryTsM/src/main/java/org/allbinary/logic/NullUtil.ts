@@ -18,24 +18,17 @@
 
 
 
-            import Vector from "@ohos.util.Vector";
-        
-            import Hashtable from "@ohos.util.HashMap";
-        
-            import HashMap from "@ohos.util.HashMap";
-        
+import { HashMap } from "../../../java/util/HashMap.js";
 
-//import { HashMap } from "../../../java/util/HashMap.js";
+    
+import { Hashtable } from "../../../java/util/Hashtable.js";
+
+    
+import { Vector } from "../../../java/util/Vector.js";
 
     
 
-//import { Hashtable } from "../../../java/util/Hashtable.js";
-
-    
-
-//import { Vector } from "../../../java/util/Vector.js";
-
-    
+import { NULL_OBJECT } from "./NULL_OBJECT.js";
 
 /*actual*/ export class NullUtil
             extends Object

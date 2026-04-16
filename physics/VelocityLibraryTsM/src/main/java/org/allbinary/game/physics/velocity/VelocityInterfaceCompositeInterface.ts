@@ -19,7 +19,7 @@
 
 
 
-interface VelocityInterfaceCompositeInterface {
+export interface VelocityInterfaceCompositeInterface {
         
 
     getVelocityProperties(): BasicVelocityProperties

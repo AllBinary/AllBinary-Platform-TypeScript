@@ -11,6 +11,20 @@ import { BufferedImage } from "../../../../java/awt/image/BufferedImage.js";
 
     
 
+import { ImageUtil } from "./ImageUtil.js";
+
+import {  } from "./.js";
+
+import {  } from "./.js";
+
+import {  } from "./.js";
+
+import {  } from "./.js";
+
+import {  } from "./.js";
+
+import {  } from "./.js";
+
 export class BufferedImageUtil2
             extends Object
          {

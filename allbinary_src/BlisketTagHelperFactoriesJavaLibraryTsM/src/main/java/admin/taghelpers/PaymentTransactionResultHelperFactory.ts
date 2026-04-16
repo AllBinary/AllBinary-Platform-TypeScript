@@ -18,10 +18,7 @@
 
 
 
-            import HashMap from "@ohos.util.HashMap";
-        
-
-//import { HashMap } from "../../java/util/HashMap.js";
+import { HashMap } from "../../java/util/HashMap.js";
 
     
 import { PageContext } from "../../javax/servlet/jsp/PageContext.js";
@@ -33,6 +30,12 @@ import { LogUtil } from "../../org/allbinary/logic/communication/log/LogUtil.js"
 import { LicensingException } from "../../org/allbinary/logic/system/security/licensing/LicensingException.js";
 
     
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
 
 export class PaymentTransactionResultHelperFactory extends TagHelperFactory {
         

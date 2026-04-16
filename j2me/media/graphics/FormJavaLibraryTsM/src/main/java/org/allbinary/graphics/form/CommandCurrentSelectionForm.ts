@@ -58,6 +58,10 @@ import { CustomItemInterface } from "../../../../org/allbinary/graphics/form/ite
 
     
 
+import {  } from "./.js";
+
+import {  } from "./.js";
+
 export class CommandCurrentSelectionForm extends ScrollCurrentSelectionForm {
         
 

@@ -22,7 +22,7 @@ import { EventListenerInterface } from "../../../../../org/allbinary/logic/util/
 
     
 
-interface GameInitializedListenerInterface extends EventListenerInterface {
+export interface GameInitializedListenerInterface extends EventListenerInterface {
         
 
     onGameInitialized(gameInitializedEvent: GameInitializedEvent)

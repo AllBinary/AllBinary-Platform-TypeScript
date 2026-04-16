@@ -18,10 +18,7 @@
 
 
 
-            import HashMap from "@ohos.util.HashMap";
-        
-
-//import { HashMap } from "../../../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../../../java/util/HashMap.js";
 
     
 import { PageContext } from "../../../../../../javax/servlet/jsp/PageContext.js";
@@ -45,6 +42,12 @@ import { TransformInfoInterface } from "../../../../../../org/allbinary/logic/vi
 import { TransformInfoObjectFactory } from "../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoObjectFactory.js";
 
     
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
 
 export class TransformTemplateFactory
             extends Object

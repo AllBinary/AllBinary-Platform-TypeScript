@@ -25,6 +25,8 @@ import { Node } from "../../../../../../../../../org/w3c/dom/Node.js";
 
     
 
+import { FontFamilyData } from "./FontFamilyData.js";
+
 export class FontFamilyView extends CssPropertyView {
         
 public constructor ()                        

@@ -18,10 +18,7 @@
 
 
 
-            import Hashtable from "@ohos.util.HashMap";
-        
-
-//import { Hashtable } from "../../../../../java/util/Hashtable.js";
+import { Hashtable } from "../../../../../java/util/Hashtable.js";
 
     
 import { Canvas } from "../../../../../javax/microedition/lcdui/Canvas.js";
@@ -69,6 +66,10 @@ import { EventStrings } from "../../../../../org/allbinary/logic/util/event/Even
 import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+
+import { Math } from "./Math.js";
+
+import { Math } from "./Math.js";
 
 export class PacePatrolAI extends BasePatrolAI
                 , TrackingEventListenerInterface {

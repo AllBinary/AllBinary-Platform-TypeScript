@@ -36,6 +36,8 @@ import { AngleInfo } from "../../../../../org/allbinary/math/AngleInfo.js";
 
     
 
+import { Math } from "./Math.js";
+
 export class BasicDirectionAIHelper
             extends Object
          {

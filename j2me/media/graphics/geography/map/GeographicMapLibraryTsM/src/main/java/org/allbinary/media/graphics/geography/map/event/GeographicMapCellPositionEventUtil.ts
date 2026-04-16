@@ -25,6 +25,8 @@ import { GeographicMapCellPositionTracking } from "../../../../../../../org/allb
 
     
 
+import { GeographicMapCellPositionEventHandler } from "./GeographicMapCellPositionEventHandler.js";
+
 export class GeographicMapCellPositionEventUtil
             extends Object
          {

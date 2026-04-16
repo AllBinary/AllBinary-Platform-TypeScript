@@ -43,6 +43,8 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
     
 
+import { PickedUpLayerTypeFactory } from "./PickedUpLayerTypeFactory.js";
+
 export class PickupBehavior
             extends Object
         

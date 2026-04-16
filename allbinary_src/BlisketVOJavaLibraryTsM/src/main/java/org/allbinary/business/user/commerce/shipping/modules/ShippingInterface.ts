@@ -25,7 +25,7 @@ import { Money } from "../../../../../../../org/allbinary/business/user/commerce
 
     
 
-interface ShippingInterface {
+export interface ShippingInterface {
         
 
     public getCost(order: OrderInterface): Money

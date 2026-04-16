@@ -8,7 +8,7 @@ import { AllBinaryTiledLayer } from "../../../../../../../org/allbinary/game/lay
 
     
 
-interface AllBinaryTiledLayerFactoryInterface {
+export interface AllBinaryTiledLayerFactoryInterface {
         
 
                 //@Throws(Error::class)

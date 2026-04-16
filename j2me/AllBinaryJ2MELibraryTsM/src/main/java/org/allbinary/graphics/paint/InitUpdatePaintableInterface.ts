@@ -25,7 +25,7 @@ import { UpdateInterface } from "../../../../org/allbinary/init/UpdateInterface.
 
     
 
-interface InitUpdatePaintableInterface extends InitInterface, UpdateInterface, PaintableInterface {
+export interface InitUpdatePaintableInterface extends InitInterface, UpdateInterface, PaintableInterface {
         
 
 }

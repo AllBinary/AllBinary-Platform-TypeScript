@@ -25,7 +25,7 @@ import { BundleContext } from "../../../../org/osgi/framework/BundleContext.js";
 
     
 
-interface RemoteFramework {
+export interface RemoteFramework {
         
 
     public connect(host: string): BundleContext

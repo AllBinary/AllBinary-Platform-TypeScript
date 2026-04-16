@@ -25,6 +25,8 @@ import { PreLogUtil } from "../../../../../org/allbinary/logic/communication/log
 
     
 
+import { AbFile } from "./AbFile.js";
+
 export class FileWrapperUtil
             extends Object
          {

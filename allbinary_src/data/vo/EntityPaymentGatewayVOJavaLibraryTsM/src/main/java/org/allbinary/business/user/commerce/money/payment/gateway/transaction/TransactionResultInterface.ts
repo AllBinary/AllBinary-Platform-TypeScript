@@ -18,14 +18,11 @@
 
 
 
-            import Vector from "@ohos.util.Vector";
-        
-
-//import { Vector } from "../../../../../../../../../java/util/Vector.js";
+import { Vector } from "../../../../../../../../../java/util/Vector.js";
 
     
 
-interface TransactionResultInterface {
+export interface TransactionResultInterface {
         
 
     public toString(): string

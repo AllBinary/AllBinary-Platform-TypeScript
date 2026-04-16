@@ -24,6 +24,14 @@ import { DirectionFactory } from "../../../../org/allbinary/direction/DirectionF
 
     
 
+import { LEFT } from "./LEFT.js";
+
+import { DOWN } from "./DOWN.js";
+
+import { UP } from "./UP.js";
+
+import { RIGHT } from "./RIGHT.js";
+
 export class LayerPlacementTypeFactory
             extends Object
          {

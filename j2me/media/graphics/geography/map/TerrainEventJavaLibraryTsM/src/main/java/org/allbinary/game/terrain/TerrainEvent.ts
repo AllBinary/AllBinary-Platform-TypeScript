@@ -28,6 +28,8 @@ import { AllBinaryEventObject } from "../../../../org/allbinary/logic/util/event
 
     
 
+import { BasicTerrainInfo } from "./BasicTerrainInfo.js";
+
 export class TerrainEvent extends AllBinaryEventObject {
         
 

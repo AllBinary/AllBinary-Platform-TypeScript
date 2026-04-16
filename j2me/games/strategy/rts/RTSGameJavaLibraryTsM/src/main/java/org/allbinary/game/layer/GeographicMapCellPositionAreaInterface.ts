@@ -28,7 +28,7 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
     
 
-interface GeographicMapCellPositionAreaInterface {
+export interface GeographicMapCellPositionAreaInterface {
         
 
     getNextSurroundingGeographicMapCellPosition(): GeographicMapCellPosition

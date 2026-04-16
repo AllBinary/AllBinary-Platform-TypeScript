@@ -19,7 +19,7 @@
 
 
 
-interface TagHelperInterface {
+export interface TagHelperInterface {
         
 
 }

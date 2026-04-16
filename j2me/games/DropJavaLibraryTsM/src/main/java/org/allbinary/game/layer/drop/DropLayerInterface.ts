@@ -25,7 +25,7 @@ import { LayerInterface } from "../../../../../org/allbinary/layer/LayerInterfac
 
     
 
-interface DropLayerInterface extends LayerInterface {
+export interface DropLayerInterface extends LayerInterface {
         
 
                 //@Throws(Error::class)

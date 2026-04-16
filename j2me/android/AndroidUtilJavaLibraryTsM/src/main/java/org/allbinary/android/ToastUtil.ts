@@ -4,6 +4,8 @@
 
 
 
+            import hilog from '@ohos.hilog';
+        
 import { Context } from "../../../android/content/Context.js";
 
     
@@ -24,6 +26,9 @@ export class ToastUtil
             extends Object
          {
         
+
+            static readonly PUBLIC: string = '%{public}s';
+            
 
     private static readonly instance: ToastUtil = new ToastUtil();
         
@@ -54,6 +59,9 @@ class MakeToast
         
                 , Runnable {
         
+
+            static readonly PUBLIC: string = '%{public}s';
+            
 
     readonly string: string
 public constructor (string: string){

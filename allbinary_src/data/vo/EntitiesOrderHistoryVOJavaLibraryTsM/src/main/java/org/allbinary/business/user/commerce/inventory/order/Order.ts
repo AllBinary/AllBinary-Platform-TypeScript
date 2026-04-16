@@ -18,13 +18,10 @@
 
 
 
-            import HashMap from "@ohos.util.HashMap";
-        
 import { Serializable } from "../../../../../../../java/io/Serializable.js";
 
     
-
-//import { HashMap } from "../../../../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../../../../java/util/HashMap.js";
 
     
 import { Set } from "../../../../../../../java/util/Set.js";
@@ -63,6 +60,30 @@ import { Document } from "../../../../../../../org/w3c/dom/Document.js";
 import { Node } from "../../../../../../../org/w3c/dom/Node.js";
 
     
+
+import { OrderHistoryData } from "./OrderHistoryData.js";
+
+import { Boolean } from "./Boolean.js";
+
+import { Boolean } from "./Boolean.js";
+
+import { Boolean } from "./Boolean.js";
+
+import { OrderHistoryData } from "./OrderHistoryData.js";
+
+import { OrderHistoryData } from "./OrderHistoryData.js";
+
+import { OrderData } from "./OrderData.js";
+
+import { OrderData } from "./OrderData.js";
+
+import { OrderData } from "./OrderData.js";
+
+import { OrderData } from "./OrderData.js";
+
+import { OrderData } from "./OrderData.js";
+
+import { OrderData } from "./OrderData.js";
 
 export class Order
             extends Object

@@ -25,7 +25,7 @@ import { InputAutomationActionInterface } from "../../../../../../org/allbinary/
 
     
 
-interface BasicGameInputAutomationActionInterface extends InputAutomationActionInterface {
+export interface BasicGameInputAutomationActionInterface extends InputAutomationActionInterface {
         
 
                 //@Throws(Error::class)

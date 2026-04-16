@@ -40,6 +40,8 @@ import { PlayN } from "../../../../../playn/core/PlayN.js";
 
     
 
+import { AboutCommandProcessor } from "./AboutCommandProcessor.js";
+
 export class WebCommandProcessor
             extends Object
          {

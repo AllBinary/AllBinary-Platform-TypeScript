@@ -25,7 +25,7 @@ import { RunnableInterface } from "../../../../../../org/allbinary/thread/Runnab
 
     
 
-interface CaptureWorkerInterface extends RunnableInterface, BasicEventHandlerInterface {
+export interface CaptureWorkerInterface extends RunnableInterface, BasicEventHandlerInterface {
         
 
 }

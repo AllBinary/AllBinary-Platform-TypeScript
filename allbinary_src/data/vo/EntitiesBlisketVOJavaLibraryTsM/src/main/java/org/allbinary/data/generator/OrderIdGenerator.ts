@@ -28,6 +28,8 @@ import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.
 
     
 
+import { UniqueIdGenerator } from "./UniqueIdGenerator.js";
+
 export class OrderIdGenerator extends UniqueIdGenerator {
         
 

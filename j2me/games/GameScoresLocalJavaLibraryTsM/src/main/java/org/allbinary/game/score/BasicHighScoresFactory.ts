@@ -17,6 +17,8 @@ import { AbeClientInformationInterface } from "../../../../org/allbinary/logic/s
 
     
 
+import { RecordStoreHighScores } from "./RecordStoreHighScores.js";
+
 export class BasicHighScoresFactory extends HighScoresBase {
         
 

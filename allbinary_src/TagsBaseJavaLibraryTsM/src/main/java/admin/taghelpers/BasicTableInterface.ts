@@ -19,7 +19,7 @@
 
 
 
-interface BasicTableInterface {
+export interface BasicTableInterface {
         
 
                 //@Throws(Error::class)

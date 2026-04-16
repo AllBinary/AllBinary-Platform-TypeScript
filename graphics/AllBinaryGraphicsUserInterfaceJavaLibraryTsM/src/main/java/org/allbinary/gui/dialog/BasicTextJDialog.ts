@@ -22,6 +22,30 @@ import { ARunnable } from "../../../../org/allbinary/thread/ARunnable.js";
 
     
 
+import { WindowConstants } from "./WindowConstants.js";
+
+import { Alignment } from "./Alignment.js";
+
+import { GroupLayout } from "./GroupLayout.js";
+
+import { Alignment } from "./Alignment.js";
+
+import { GroupLayout } from "./GroupLayout.js";
+
+import { GroupLayout } from "./GroupLayout.js";
+
+import { Short } from "./Short.js";
+
+import { Alignment } from "./Alignment.js";
+
+import { GroupLayout } from "./GroupLayout.js";
+
+import { GroupLayout } from "./GroupLayout.js";
+
+import { GroupLayout } from "./GroupLayout.js";
+
+import { EventQueue } from "./EventQueue.js";
+
 export class BasicTextJDialog extends javax.swing.JDialog {
         
 

@@ -25,6 +25,8 @@ import { Processor } from "../../../../../org/allbinary/canvas/Processor.js";
 
     
 
+import { ScreenRepaintUtil } from "./ScreenRepaintUtil.js";
+
 export class ScreenRepaintProcessor extends Processor {
         
 

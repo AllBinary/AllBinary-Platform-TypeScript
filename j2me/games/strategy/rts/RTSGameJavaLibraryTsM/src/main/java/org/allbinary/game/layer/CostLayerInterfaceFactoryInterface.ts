@@ -22,7 +22,7 @@ import { LayerInterfaceFactoryInterface } from "../../../../org/allbinary/layer/
 
     
 
-interface CostLayerInterfaceFactoryInterface extends LayerInterfaceFactoryInterface {
+export interface CostLayerInterfaceFactoryInterface extends LayerInterfaceFactoryInterface {
         
 
                 //@Throws(Error::class)

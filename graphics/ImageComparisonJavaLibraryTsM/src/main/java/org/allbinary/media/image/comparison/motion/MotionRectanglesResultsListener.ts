@@ -22,7 +22,7 @@ import { BasicEventListenerInterface } from "../../../../../../org/allbinary/log
 
     
 
-interface MotionRectanglesResultsListener extends BasicEventListenerInterface {
+export interface MotionRectanglesResultsListener extends BasicEventListenerInterface {
         
 
     public onMotionRectanglesImageComparisonResultsEvent(motionRectanglesImageComparisonResultsEvent: MotionRectanglesResultsEvent)

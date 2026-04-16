@@ -19,7 +19,7 @@
 
 
 
-interface MultiLevelRaceTrackGeographicMapInterfaceFactoryInterface extends RaceTrackGeographicMapInterfaceFactoryInterface {
+export interface MultiLevelRaceTrackGeographicMapInterfaceFactoryInterface extends RaceTrackGeographicMapInterfaceFactoryInterface {
         
 
                 //@Throws(Error::class)

@@ -22,6 +22,12 @@ import { LogUtil } from "../../../../../../../../org/allbinary/logic/communicati
 
     
 
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
+
 export class BasicGenerator extends TransformInfoObjectConfigGenerator {
         
 

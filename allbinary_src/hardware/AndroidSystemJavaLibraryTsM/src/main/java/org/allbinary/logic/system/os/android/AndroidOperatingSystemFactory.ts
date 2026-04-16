@@ -18,6 +18,8 @@
 
 
 
+            import hilog from '@ohos.hilog';
+        
 import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
 
     
@@ -41,6 +43,9 @@ export class AndroidOperatingSystemFactory
             extends Object
          {
         
+
+            static readonly PUBLIC: string = '%{public}s';
+            
 
     private static readonly instance: AndroidOperatingSystemFactory = new AndroidOperatingSystemFactory();
         

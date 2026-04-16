@@ -22,7 +22,7 @@ import { AllBinaryLayer } from "../../../../../../org/allbinary/layer/AllBinaryL
 
     
 
-interface TrackListenerInterface {
+export interface TrackListenerInterface {
         
 
     finished(layerInterface: AllBinaryLayer)

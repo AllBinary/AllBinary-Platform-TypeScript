@@ -18,18 +18,12 @@
 
 
 
-            import Vector from "@ohos.util.Vector";
-        
-            import HashMap from "@ohos.util.HashMap";
-        
             import { Integer } from "../../../../java/lang/Integer.js";
         
-
-//import { HashMap } from "../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../java/util/HashMap.js";
 
     
-
-//import { Vector } from "../../../../java/util/Vector.js";
+import { Vector } from "../../../../java/util/Vector.js";
 
     
 import { GPoint } from "../../../../org/allbinary/graphics/GPoint.js";

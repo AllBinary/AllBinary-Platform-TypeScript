@@ -22,7 +22,7 @@ import { EventListenerInterface } from "../../../../org/allbinary/logic/util/eve
 
     
 
-interface VirtualKeyboardEventListenerInterface extends EventListenerInterface {
+export interface VirtualKeyboardEventListenerInterface extends EventListenerInterface {
         
 
                 //@Throws(Error::class)

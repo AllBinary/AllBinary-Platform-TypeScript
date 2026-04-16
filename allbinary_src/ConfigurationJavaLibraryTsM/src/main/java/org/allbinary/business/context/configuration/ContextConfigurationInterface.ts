@@ -22,7 +22,7 @@ import { EmailServerConfigurationInterface } from "../../../../../org/allbinary/
 
     
 
-interface ContextConfigurationInterface {
+export interface ContextConfigurationInterface {
         
 
     public getEmailServerConfigurationInterface(): EmailServerConfigurationInterface

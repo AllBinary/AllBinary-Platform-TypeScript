@@ -18,11 +18,16 @@
 
 
 
+            import hilog from '@ohos.hilog';
+        
 
 export class AndroidInfoFactory
             extends Object
          {
         
+
+            static readonly PUBLIC: string = '%{public}s';
+            
 
     private static readonly instance: AndroidInfoFactory = new AndroidInfoFactory();
         

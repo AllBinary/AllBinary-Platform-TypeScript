@@ -19,7 +19,7 @@
 
 
 
-interface CloseJDialogListenerInterface {
+export interface CloseJDialogListenerInterface {
         
 
     onClose()

@@ -19,7 +19,7 @@
 
 
 
-interface ProceduralAnimationInterfaceFactoryInterface extends BasicAnimationInterfaceFactoryInterface {
+export interface ProceduralAnimationInterfaceFactoryInterface extends BasicAnimationInterfaceFactoryInterface {
         
 
                 //@Throws(Error::class)

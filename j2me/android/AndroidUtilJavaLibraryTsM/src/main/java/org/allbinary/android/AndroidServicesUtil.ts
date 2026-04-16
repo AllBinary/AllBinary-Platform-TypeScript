@@ -18,6 +18,8 @@
 
 
 
+            import hilog from '@ohos.hilog';
+        
 import { List } from "../../../java/util/List.js";
 
     
@@ -47,6 +49,9 @@ export class AndroidServicesUtil
             extends Object
          {
         
+
+            static readonly PUBLIC: string = '%{public}s';
+            
 
     public static getInstance(): AndroidServicesUtil{
 

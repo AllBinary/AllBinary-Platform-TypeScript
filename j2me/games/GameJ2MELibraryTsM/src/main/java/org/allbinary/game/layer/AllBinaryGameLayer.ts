@@ -76,6 +76,10 @@ import { ViewPositionEventListenerInterface } from "../../../../org/allbinary/vi
 
     
 
+import { SWTUtil } from "./SWTUtil.js";
+
+import { GameLayerUtil } from "./GameLayerUtil.js";
+
 export class AllBinaryGameLayer extends AllBinaryLayer
                 , ViewPositionEventListenerInterface
                 , OpenGLSurfaceChangedInterface {

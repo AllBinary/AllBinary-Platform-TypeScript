@@ -18,13 +18,10 @@
 
 
 
-            import Hashtable from "@ohos.util.HashMap";
-        
 import { Enumeration } from "../../../../java/util/Enumeration.js";
 
     
-
-//import { Hashtable } from "../../../../java/util/Hashtable.js";
+import { Hashtable } from "../../../../java/util/Hashtable.js";
 
     
 import { GPoint } from "../../../../org/allbinary/graphics/GPoint.js";
@@ -45,6 +42,10 @@ import { LayerInterfaceVisitor } from "../../../../org/allbinary/layer/LayerInte
 import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
 
     
+
+import { LayerPlacementTypeFactory } from "./LayerPlacementTypeFactory.js";
+
+import { LayerPlacementTypeFactory } from "./LayerPlacementTypeFactory.js";
 
 export class LayerPlacer
             extends Object

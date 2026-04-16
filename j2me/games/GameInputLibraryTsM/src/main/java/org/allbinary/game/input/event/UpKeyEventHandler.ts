@@ -25,6 +25,12 @@ import { EventListenerInterface } from "../../../../../org/allbinary/logic/util/
 
     
 
+import {  } from "./.js";
+
+import {  } from "./.js";
+
+import {  } from "./.js";
+
 export class UpKeyEventHandler extends UpKeyEventHandlerBase {
         
 

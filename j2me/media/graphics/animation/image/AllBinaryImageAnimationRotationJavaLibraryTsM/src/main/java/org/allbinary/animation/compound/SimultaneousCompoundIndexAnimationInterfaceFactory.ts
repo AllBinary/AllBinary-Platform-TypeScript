@@ -34,6 +34,8 @@ import { ScaleProperties } from "../../../../org/allbinary/media/ScaleProperties
 
     
 
+import {  } from "./.js";
+
 export class SimultaneousCompoundIndexAnimationInterfaceFactory
             extends Object
         

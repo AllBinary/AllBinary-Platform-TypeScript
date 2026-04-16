@@ -25,7 +25,7 @@ import { OSGIServiceInterface } from "../../../../org/allbinary/osgi/OSGIService
 
     
 
-interface InputAutomationModuleServiceInterface extends OSGIServiceInterface {
+export interface InputAutomationModuleServiceInterface extends OSGIServiceInterface {
         
 
     getInputAutomationModuleInterfaceArray(): InputAutomationModuleFactoryInterface[]

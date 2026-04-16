@@ -22,7 +22,7 @@ import { NamedInterface } from "../../../../org/allbinary/layer/NamedInterface.j
 
     
 
-interface CompleteMotionGestureInputInterface extends NamedInterface {
+export interface CompleteMotionGestureInputInterface extends NamedInterface {
         
 
 }

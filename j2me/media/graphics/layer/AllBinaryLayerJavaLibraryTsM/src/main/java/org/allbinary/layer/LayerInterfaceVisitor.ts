@@ -19,7 +19,7 @@
 
 
 
-interface LayerInterfaceVisitor {
+export interface LayerInterfaceVisitor {
         
 
                 //@Throws(Error::class)

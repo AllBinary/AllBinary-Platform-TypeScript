@@ -1,0 +1,5 @@
+
+/*actual*/ export class Intent
+         {
+    
+}

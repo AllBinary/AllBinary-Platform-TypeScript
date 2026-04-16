@@ -22,6 +22,8 @@ import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js
 
     
 
+import { NoPlayer } from "./NoPlayer.js";
+
 export class NoSound extends Sound {
         
 

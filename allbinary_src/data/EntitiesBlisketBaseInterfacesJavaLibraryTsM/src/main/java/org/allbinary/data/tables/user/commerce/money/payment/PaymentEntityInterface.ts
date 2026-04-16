@@ -18,12 +18,9 @@
 
 
 
-            import Vector from "@ohos.util.Vector";
-        
             import { Integer } from "../../../../../../../../java/lang/Integer.js";
         
-
-//import { Vector } from "../../../../../../../../java/util/Vector.js";
+import { Vector } from "../../../../../../../../java/util/Vector.js";
 
     
 import { PaymentInterface } from "../../../../../../../../org/allbinary/business/user/commerce/money/payment/PaymentInterface.js";
@@ -33,7 +30,7 @@ import { BasicDataTableInterface } from "../../../../../../../../org/allbinary/d
 
     
 
-interface PaymentEntityInterface extends BasicDataTableInterface {
+export interface PaymentEntityInterface extends BasicDataTableInterface {
         
 
     public getLastId(userName: string): string

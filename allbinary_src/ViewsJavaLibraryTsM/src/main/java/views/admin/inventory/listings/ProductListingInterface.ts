@@ -19,7 +19,7 @@
 
 
 
-interface ProductListingInterface {
+export interface ProductListingInterface {
         
 
                 //@Throws(Error::class)

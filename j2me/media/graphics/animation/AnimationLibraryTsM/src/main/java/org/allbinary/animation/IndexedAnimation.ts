@@ -25,6 +25,8 @@ import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
 
     
 
+import { AnimationBehavior } from "./AnimationBehavior.js";
+
 export class IndexedAnimation extends Animation
                 , IndexedAnimationInterface {
         

@@ -19,7 +19,7 @@
 
 
 
-interface PaymentInterface {
+export interface PaymentInterface {
         
 
     public setName(value: string)

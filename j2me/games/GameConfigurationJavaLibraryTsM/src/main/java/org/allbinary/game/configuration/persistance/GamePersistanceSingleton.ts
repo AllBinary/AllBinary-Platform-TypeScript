@@ -19,6 +19,8 @@
 
 
 
+import { GamePersistanceStrings } from "./GamePersistanceStrings.js";
+
 export class GamePersistanceSingleton extends KeyValuePersistance {
         
 

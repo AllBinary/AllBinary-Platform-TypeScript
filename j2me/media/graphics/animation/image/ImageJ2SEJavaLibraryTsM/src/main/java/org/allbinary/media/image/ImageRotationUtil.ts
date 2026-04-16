@@ -34,6 +34,10 @@ import { J2SEMutableImage } from "../../../../org/microemu/device/j2se/J2SEMutab
 
     
 
+import { ImageJ2SERotationUtil } from "./ImageJ2SERotationUtil.js";
+
+import { ImageCreationUtil } from "./ImageCreationUtil.js";
+
 export class ImageRotationUtil
             extends Object
          {

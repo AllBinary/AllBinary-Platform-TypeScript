@@ -18,15 +18,12 @@
 
 
 
-            import Vector from "@ohos.util.Vector";
-        
             import { Integer } from "../../../../../java/lang/Integer.js";
         
 import { HashSet } from "../../../../../java/util/HashSet.js";
 
     
-
-//import { Vector } from "../../../../../java/util/Vector.js";
+import { Vector } from "../../../../../java/util/Vector.js";
 
     
 import { AbPathData } from "../../../../../org/allbinary/logic/io/path/AbPathData.js";

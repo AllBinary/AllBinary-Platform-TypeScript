@@ -19,7 +19,7 @@
 
 
 
-interface MovementCompositeInterface {
+export interface MovementCompositeInterface {
         
 
     getMovement(): Movement

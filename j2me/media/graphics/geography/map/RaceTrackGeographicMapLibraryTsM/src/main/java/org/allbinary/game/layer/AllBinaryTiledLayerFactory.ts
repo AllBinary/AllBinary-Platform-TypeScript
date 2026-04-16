@@ -40,6 +40,10 @@ import { TiledLayerFactory } from "../../../../org/allbinary/media/graphics/geog
 
     
 
+import { RED } from "./RED.js";
+
+import { RED } from "./RED.js";
+
 export class AllBinaryTiledLayerFactory
             extends Object
         

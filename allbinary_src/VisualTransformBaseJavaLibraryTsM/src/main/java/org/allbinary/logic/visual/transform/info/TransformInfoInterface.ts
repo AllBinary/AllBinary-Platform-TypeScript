@@ -18,10 +18,7 @@
 
 
 
-            import HashMap from "@ohos.util.HashMap";
-        
-
-//import { HashMap } from "../../../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../../../java/util/HashMap.js";
 
     
 import { TableMappingInterface } from "../../../../../../org/allbinary/data/tables/TableMappingInterface.js";
@@ -37,7 +34,7 @@ import { Document } from "../../../../../../org/w3c/dom/Document.js";
 
     
 
-interface TransformInfoInterface extends TableMappingInterface {
+export interface TransformInfoInterface extends TableMappingInterface {
         
 
     public log(): string

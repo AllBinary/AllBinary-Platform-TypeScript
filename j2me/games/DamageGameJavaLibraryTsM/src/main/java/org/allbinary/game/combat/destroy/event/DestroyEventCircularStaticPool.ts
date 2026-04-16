@@ -28,6 +28,10 @@ import { AllBinaryEventCircularPool } from "../../../../../../org/allbinary/logi
 
     
 
+import { EVENT_POOL } from "./EVENT_POOL.js";
+
+import { EVENT_POOL } from "./EVENT_POOL.js";
+
 export class DestroyEventCircularStaticPool
             extends Object
          {

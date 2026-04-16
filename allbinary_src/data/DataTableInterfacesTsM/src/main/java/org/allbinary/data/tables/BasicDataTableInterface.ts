@@ -19,7 +19,7 @@
 
 
 
-interface BasicDataTableInterface {
+export interface BasicDataTableInterface {
         
 
     createTable(): string

@@ -25,6 +25,8 @@ import { CommonStrings } from "../org/allbinary/string/CommonStrings.js";
 
     
 
+import { TagStrings } from "./TagStrings.js";
+
 export class CustomTagSupport extends TagSupport {
         
 

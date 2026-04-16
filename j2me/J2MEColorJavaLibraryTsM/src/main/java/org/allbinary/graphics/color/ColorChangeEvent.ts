@@ -22,6 +22,8 @@ import { AllBinaryEventObject } from "../../../../org/allbinary/logic/util/event
 
     
 
+import { BasicColorFactory } from "./BasicColorFactory.js";
+
 export class ColorChangeEvent extends AllBinaryEventObject {
         
 

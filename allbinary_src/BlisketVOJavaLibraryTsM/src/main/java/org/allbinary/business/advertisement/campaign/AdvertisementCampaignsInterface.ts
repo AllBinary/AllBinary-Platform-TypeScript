@@ -22,7 +22,7 @@ import { AdvertisementInterface } from "../../../../../org/allbinary/business/ad
 
     
 
-interface AdvertisementCampaignsInterface {
+export interface AdvertisementCampaignsInterface {
         
 
     public add(advertisementInterface: AdvertisementInterface)

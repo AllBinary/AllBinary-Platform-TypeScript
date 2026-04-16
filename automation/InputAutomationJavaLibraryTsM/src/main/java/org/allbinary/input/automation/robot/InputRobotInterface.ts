@@ -30,7 +30,7 @@ import { HelpSet } from "../../../../../javax/help/HelpSet.js";
 
     
 
-interface InputRobotInterface {
+export interface InputRobotInterface {
         
 
     getName(): string

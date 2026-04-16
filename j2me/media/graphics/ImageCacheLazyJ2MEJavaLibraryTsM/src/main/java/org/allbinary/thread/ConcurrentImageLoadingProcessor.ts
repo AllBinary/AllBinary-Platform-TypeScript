@@ -34,6 +34,8 @@ import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
 
     
 
+import { ImageThreadPool } from "./ImageThreadPool.js";
+
 export class ConcurrentImageLoadingProcessor extends BaseImageLoadingProcessor {
         
 

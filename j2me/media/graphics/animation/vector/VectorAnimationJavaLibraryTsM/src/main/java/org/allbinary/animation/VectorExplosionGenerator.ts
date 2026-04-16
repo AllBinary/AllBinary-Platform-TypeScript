@@ -34,6 +34,8 @@ import { BasicArrayList } from "../../../org/allbinary/util/BasicArrayList.js";
 
     
 
+import { VectorAnimationUtil } from "./VectorAnimationUtil.js";
+
 export class VectorExplosionGenerator
             extends Object
          {

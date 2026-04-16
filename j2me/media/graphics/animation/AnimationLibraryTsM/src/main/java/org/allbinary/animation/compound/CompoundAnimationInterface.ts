@@ -25,7 +25,7 @@ import { IndexedAnimation } from "../../../../org/allbinary/animation/IndexedAni
 
     
 
-interface CompoundAnimationInterface extends AnimationInterface {
+export interface CompoundAnimationInterface extends AnimationInterface {
         
 
     nextAnimation()

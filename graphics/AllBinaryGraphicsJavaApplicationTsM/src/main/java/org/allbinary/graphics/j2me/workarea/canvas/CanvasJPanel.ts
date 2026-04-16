@@ -18,21 +18,15 @@
 
 
 
-            import Vector from "@ohos.util.Vector";
-        
-            import HashMap from "@ohos.util.HashMap";
-        
             import { Integer } from "../../../../../../java/lang/Integer.js";
         
 import { awt } from "../../../../../../java/awt.js";
 
     
-
-//import { HashMap } from "../../../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../../../java/util/HashMap.js";
 
     
-
-//import { Vector } from "../../../../../../java/util/Vector.js";
+import { Vector } from "../../../../../../java/util/Vector.js";
 
     
 import { DefaultMutableTreeNode } from "../../../../../../javax/swing/tree/DefaultMutableTreeNode.js";
@@ -125,6 +119,14 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 import { Node } from "../../../../../../org/w3c/dom/Node.js";
 
     
+
+import { WHITE } from "./WHITE.js";
+
+import { CLEAR_COLOR } from "./CLEAR_COLOR.js";
+
+import { Color } from "./Color.js";
+
+import { Color } from "./Color.js";
 
 export class CanvasJPanel extends javax.swing.JPanel
                 , java.awt.event.MouseListener

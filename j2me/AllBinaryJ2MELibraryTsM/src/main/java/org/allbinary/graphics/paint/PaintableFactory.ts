@@ -19,6 +19,8 @@
 
 
 
+import { NullPaintable } from "./NullPaintable.js";
+
 export class PaintableFactory
             extends Object
          {

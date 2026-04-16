@@ -19,7 +19,7 @@
 
 
 
-interface Controllable2 {
+export interface Controllable2 {
         
 
     setVolume(leftVolume: number, rightVolume: number)

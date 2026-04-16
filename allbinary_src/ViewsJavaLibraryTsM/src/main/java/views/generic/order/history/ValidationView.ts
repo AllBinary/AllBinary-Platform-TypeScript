@@ -28,6 +28,8 @@ import { TransformInfoInterface } from "../../../../org/allbinary/logic/visual/t
 
     
 
+import { Boolean } from "./Boolean.js";
+
 export class ValidationView extends OrderHistoryView
                 , ValidationComponentInterface {
         

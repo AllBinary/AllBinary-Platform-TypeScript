@@ -36,6 +36,12 @@ import { TimeDelayHelper } from "../../../../../../../../../org/allbinary/time/T
 
     
 
+import { Thread } from "./Thread.js";
+
+import { Thread } from "./Thread.js";
+
+import { Thread } from "./Thread.js";
+
 export class KeyboardInputAutomationProcessor
             extends Object
          {

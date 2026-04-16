@@ -19,7 +19,7 @@
 
 
 
-interface PopupMenuInterface {
+export interface PopupMenuInterface {
         
 
                 //@Throws(Error::class)

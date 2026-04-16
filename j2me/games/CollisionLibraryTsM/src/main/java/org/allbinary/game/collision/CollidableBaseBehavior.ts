@@ -40,6 +40,10 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
     
 
+import { LayerCollisionUtil } from "./LayerCollisionUtil.js";
+
+import { CollisionTypeFactory } from "./CollisionTypeFactory.js";
+
 export class CollidableBaseBehavior
             extends Object
         

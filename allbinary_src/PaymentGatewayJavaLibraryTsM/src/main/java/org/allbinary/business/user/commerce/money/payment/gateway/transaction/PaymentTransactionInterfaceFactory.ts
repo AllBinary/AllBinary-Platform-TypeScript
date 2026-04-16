@@ -34,6 +34,12 @@ import { CommonStrings } from "../../../../../../../../../org/allbinary/string/C
 
     
 
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
+
 export class PaymentTransactionInterfaceFactory
             extends Object
          {

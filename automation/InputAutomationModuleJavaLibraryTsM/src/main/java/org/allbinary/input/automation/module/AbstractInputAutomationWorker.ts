@@ -43,6 +43,8 @@ import { TimeDelayHelper } from "../../../../../org/allbinary/time/TimeDelayHelp
 
     
 
+import { Thread } from "./Thread.js";
+
 export class AbstractInputAutomationWorker
             extends Object
         

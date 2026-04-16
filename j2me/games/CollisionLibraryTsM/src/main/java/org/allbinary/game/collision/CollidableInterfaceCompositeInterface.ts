@@ -19,7 +19,7 @@
 
 
 
-interface CollidableInterfaceCompositeInterface {
+export interface CollidableInterfaceCompositeInterface {
         
 
     getCollidableInferface(): CollidableBaseBehavior

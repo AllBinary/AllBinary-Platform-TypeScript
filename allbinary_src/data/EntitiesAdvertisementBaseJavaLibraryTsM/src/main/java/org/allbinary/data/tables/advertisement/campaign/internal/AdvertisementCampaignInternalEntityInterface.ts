@@ -18,23 +18,17 @@
 
 
 
-            import Vector from "@ohos.util.Vector";
-        
-            import HashMap from "@ohos.util.HashMap";
-        
-
-//import { HashMap } from "../../../../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../../../../java/util/HashMap.js";
 
     
-
-//import { Vector } from "../../../../../../../java/util/Vector.js";
+import { Vector } from "../../../../../../../java/util/Vector.js";
 
     
 import { BasicDataTableInterface } from "../../../../../../../org/allbinary/data/tables/BasicDataTableInterface.js";
 
     
 
-interface AdvertisementCampaignInternalEntityInterface extends BasicDataTableInterface {
+export interface AdvertisementCampaignInternalEntityInterface extends BasicDataTableInterface {
         
 
     public delete(value: string)

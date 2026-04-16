@@ -18,16 +18,10 @@
 
 
 
-            import Vector from "@ohos.util.Vector";
-        
-            import Hashtable from "@ohos.util.HashMap";
-        
-
-//import { Hashtable } from "../../../../../../java/util/Hashtable.js";
+import { Hashtable } from "../../../../../../java/util/Hashtable.js";
 
     
-
-//import { Vector } from "../../../../../../java/util/Vector.js";
+import { Vector } from "../../../../../../java/util/Vector.js";
 
     
 import { StringMaker } from "../../../../../../org/allbinary/logic/string/StringMaker.js";
@@ -42,6 +36,14 @@ import { StringValidationUtil } from "../../../../../../org/allbinary/logic/stri
 import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+
+import { AbeClientInformationData } from "./AbeClientInformationData.js";
+
+import { LicenseTypeFactory } from "./LicenseTypeFactory.js";
+
+import { AbeClientInformationData } from "./AbeClientInformationData.js";
+
+import { AbeClientInformationData } from "./AbeClientInformationData.js";
 
 export class AbeClientLicense
             extends Object

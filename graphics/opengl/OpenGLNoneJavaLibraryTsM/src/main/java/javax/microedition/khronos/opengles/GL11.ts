@@ -14,7 +14,7 @@ import { IntBuffer } from "../../../../java/nio/IntBuffer.js";
 
     
 
-interface GL11 extends GL10 {
+export interface GL11 extends GL10 {
         
 
     public static readonly GL_ACTIVE_TEXTURE: number = 34016;

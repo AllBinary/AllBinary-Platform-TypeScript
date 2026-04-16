@@ -19,7 +19,7 @@
 
 
 
-interface RestGameObjectInterface {
+export interface RestGameObjectInterface {
         
 
     isRestNeeded(): boolean

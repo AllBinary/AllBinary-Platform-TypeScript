@@ -18,10 +18,7 @@
 
 
 
-            import Vector from "@ohos.util.Vector";
-        
-
-//import { Vector } from "../../../../../../java/util/Vector.js";
+import { Vector } from "../../../../../../java/util/Vector.js";
 
     
 import { DomSearchHelper } from "../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js";
@@ -57,6 +54,10 @@ import { Node } from "../../../../../../org/w3c/dom/Node.js";
 import { NodeList } from "../../../../../../org/w3c/dom/NodeList.js";
 
     
+
+import { LogConfigsData } from "./LogConfigsData.js";
+
+import { LogConfigData } from "./LogConfigData.js";
 
 export class LoggingInitInfo
             extends Object

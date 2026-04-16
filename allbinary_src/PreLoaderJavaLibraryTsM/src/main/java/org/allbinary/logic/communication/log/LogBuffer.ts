@@ -18,12 +18,11 @@
 
 
 
-            import Vector from "@ohos.util.Vector";
-        
-
-//import { Vector } from "../../../../../java/util/Vector.js";
+import { Vector } from "../../../../../java/util/Vector.js";
 
     
+
+import { LogUtil } from "./LogUtil.js";
 
 export class LogBuffer
             extends Object

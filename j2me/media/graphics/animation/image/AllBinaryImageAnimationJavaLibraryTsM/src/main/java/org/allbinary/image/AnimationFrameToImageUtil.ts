@@ -28,6 +28,10 @@ import { Animation } from "../../../org/allbinary/animation/Animation.js";
 
     
 
+import { GameFeatureImageCacheFactory } from "./GameFeatureImageCacheFactory.js";
+
+import { GameFeatureImageCacheFactory } from "./GameFeatureImageCacheFactory.js";
+
 export class AnimationFrameToImageUtil
             extends Object
          {

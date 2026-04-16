@@ -34,6 +34,8 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
     
 
+import { SqlStrings } from "./SqlStrings.js";
+
 export class AbSqlTableUtil
             extends Object
          {

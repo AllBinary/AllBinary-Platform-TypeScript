@@ -31,6 +31,8 @@ import { AccelerometerSensorFactory } from "../../../../org/allbinary/input/acce
 
     
 
+import { GyroSensorFactory } from "./GyroSensorFactory.js";
+
 export class SensorGameUpdateProcessor
             extends Object
          {

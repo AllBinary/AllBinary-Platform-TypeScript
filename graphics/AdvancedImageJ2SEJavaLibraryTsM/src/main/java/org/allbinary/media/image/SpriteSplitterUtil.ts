@@ -36,6 +36,14 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
     
 
+import { ImageUtil } from "./ImageUtil.js";
+
+import { ImageUnifierUtil } from "./ImageUnifierUtil.js";
+
+import { ImageUtil } from "./ImageUtil.js";
+
+import { ImageUnifierUtil } from "./ImageUnifierUtil.js";
+
 export class SpriteSplitterUtil
             extends Object
          {

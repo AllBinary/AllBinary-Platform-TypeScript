@@ -5,7 +5,7 @@
 
 
 
-interface GL {
+export interface GL {
         
 
 }

@@ -37,6 +37,10 @@ import { BasicTopViewGeographicMapCellTypeFactory } from "../../../../../org/all
 
     
 
+import {  } from "./.js";
+
+import { BLOCK_CELL_TYPE } from "./BLOCK_CELL_TYPE.js";
+
 export class TopViewCharacterBehavior
             extends Object
          {

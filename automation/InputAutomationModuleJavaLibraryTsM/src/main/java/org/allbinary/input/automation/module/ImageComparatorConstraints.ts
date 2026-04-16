@@ -18,16 +18,13 @@
 
 
 
-            import Vector from "@ohos.util.Vector";
-        
 import { awt } from "../../../../../java/awt.js";
 
     
 import { BufferedImage } from "../../../../../java/awt/image/BufferedImage.js";
 
     
-
-//import { Vector } from "../../../../../java/util/Vector.js";
+import { Vector } from "../../../../../java/util/Vector.js";
 
     
 import { RectangleCollisionUtil } from "../../../../../org/allbinary/collision/RectangleCollisionUtil.js";

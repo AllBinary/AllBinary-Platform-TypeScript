@@ -22,6 +22,8 @@ import { TiledMap } from "../../../../../../org/mapeditor/core/TiledMap.js";
 
     
 
+import {  } from "./.js";
+
 export class AllAnimationsEverywhereTileMapPlacementVisitor extends TileMapPlacementVisitor {
         
 

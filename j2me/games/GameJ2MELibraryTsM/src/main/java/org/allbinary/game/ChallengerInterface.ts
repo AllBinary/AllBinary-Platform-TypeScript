@@ -11,7 +11,7 @@
 
 
 
-interface ChallengerInterface {
+export interface ChallengerInterface {
         
 
     setWinner(isWinner: boolean)

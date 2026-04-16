@@ -58,6 +58,8 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
     
 
+import { ScreenRepaintProcessorFactory } from "./ScreenRepaintProcessorFactory.js";
+
 export class CommandForm extends Form
                 , MyCommandInterface
                 , MenuListener {

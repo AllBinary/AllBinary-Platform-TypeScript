@@ -22,6 +22,8 @@ import { Group } from "../../../../../../org/allbinary/game/identification/Group
 
     
 
+import {  } from "./.js";
+
 export class CapitalEventHandlerFactory
             extends Object
          {

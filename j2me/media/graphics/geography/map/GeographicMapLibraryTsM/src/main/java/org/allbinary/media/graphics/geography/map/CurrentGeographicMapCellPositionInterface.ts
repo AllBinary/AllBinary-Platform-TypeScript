@@ -19,7 +19,7 @@
 
 
 
-interface CurrentGeographicMapCellPositionInterface {
+export interface CurrentGeographicMapCellPositionInterface {
         
 
     public getCurrentGeographicMapCellPosition(): GeographicMapCellPosition

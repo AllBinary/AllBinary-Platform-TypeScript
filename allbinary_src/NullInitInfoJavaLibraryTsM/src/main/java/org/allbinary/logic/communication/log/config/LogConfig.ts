@@ -37,6 +37,8 @@ import { Node } from "../../../../../../org/w3c/dom/Node.js";
 
     
 
+import { LogConfigData } from "./LogConfigData.js";
+
 export class LogConfig
             extends Object
          {

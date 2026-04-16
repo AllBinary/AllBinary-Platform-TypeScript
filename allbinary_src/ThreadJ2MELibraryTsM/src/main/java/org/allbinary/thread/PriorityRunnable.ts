@@ -19,7 +19,7 @@
 
 
 
-interface PriorityRunnable extends Runnable {
+export interface PriorityRunnable extends Runnable {
         
 
     public getPriority(): number

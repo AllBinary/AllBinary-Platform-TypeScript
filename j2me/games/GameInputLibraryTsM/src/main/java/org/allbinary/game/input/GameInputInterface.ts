@@ -25,7 +25,7 @@ import { NamedInterface } from "../../../../org/allbinary/layer/NamedInterface.j
 
     
 
-interface GameInputInterface extends NamedInterface {
+export interface GameInputInterface extends NamedInterface {
         
 
                 //@Throws(Error::class)

@@ -25,7 +25,7 @@ import { GL10 } from "../../javax/microedition/khronos/opengles/GL10.js";
 
     
 
-interface Renderer {
+export interface Renderer {
         
 
     onSurfaceCreated(gl: GL10, config: EGLConfig)

@@ -18,12 +18,9 @@
 
 
 
-            import Hashtable from "@ohos.util.HashMap";
-        
             import { Integer } from "../../../../java/lang/Integer.js";
         
-
-//import { Hashtable } from "../../../../java/util/Hashtable.js";
+import { Hashtable } from "../../../../java/util/Hashtable.js";
 
     
 import { Choice } from "../../../../javax/microedition/lcdui/Choice.js";
@@ -89,6 +86,22 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 import { HashtableUtil } from "../../../../org/allbinary/util/HashtableUtil.js";
 
     
+
+import { GameConfigurationTextInput } from "./GameConfigurationTextInput.js";
+
+import { GameConfigurationSingleton } from "./GameConfigurationSingleton.js";
+
+import { GameConfigurationTextInput } from "./GameConfigurationTextInput.js";
+
+import { GameConfigurationUtil } from "./GameConfigurationUtil.js";
+
+import { GameConfigurationUtil } from "./GameConfigurationUtil.js";
+
+import { GameConfigurationCentral } from "./GameConfigurationCentral.js";
+
+import { SCALE } from "./SCALE.js";
+
+import { SCALE } from "./SCALE.js";
 
 export class GameOptionsForm extends CommandForm {
         

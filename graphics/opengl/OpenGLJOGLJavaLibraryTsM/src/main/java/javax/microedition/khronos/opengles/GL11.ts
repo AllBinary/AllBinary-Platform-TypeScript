@@ -5,7 +5,7 @@
 
 
 
-interface GL11 extends javax.microedition.khronos.opengles.GL10 {
+export interface GL11 extends javax.microedition.khronos.opengles.GL10 {
         
 
     public static readonly GL_ACTIVE_TEXTURE: number = 34016;

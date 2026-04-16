@@ -34,6 +34,8 @@ import { Node } from "../../../../../../org/w3c/dom/Node.js";
 
     
 
+import { TransformInfoData } from "./TransformInfoData.js";
+
 export class TransformInfoDomNodeView extends TransformInfoDomNode
                 , DomNodeInterface {
         

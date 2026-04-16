@@ -63,6 +63,8 @@ import { BasicArrayListUtil } from "../../../../../../org/allbinary/util/BasicAr
 
     
 
+import { PathCacheFactory } from "./PathCacheFactory.js";
+
 export class StaticPathGenerator
             extends Object
          {

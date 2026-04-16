@@ -18,16 +18,10 @@
 
 
 
-            import Vector from "@ohos.util.Vector";
-        
-            import HashMap from "@ohos.util.HashMap";
-        
-
-//import { HashMap } from "../../../java/util/HashMap.js";
+import { HashMap } from "../../../java/util/HashMap.js";
 
     
-
-//import { Vector } from "../../../java/util/Vector.js";
+import { Vector } from "../../../java/util/Vector.js";
 
     
 import { StoreFrontInterface } from "../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js";
@@ -78,6 +72,22 @@ import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
 import { InventoryViewSearchInterface } from "../../../views/admin/inventory/listings/InventoryViewSearchInterface.js";
 
     
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
+
+import { InventorySearchUtil } from "./InventorySearchUtil.js";
+
+import { InventorySearchProductUtil } from "./InventorySearchProductUtil.js";
 
 export class InventorySearch
             extends Object

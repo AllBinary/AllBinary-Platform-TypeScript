@@ -30,6 +30,10 @@ import { KeySingletonFactory } from "../../../../../../../../../org/allbinary/in
 
     
 
+import { KeyStroke } from "./KeyStroke.js";
+
+import { Character } from "./Character.js";
+
 export class KeyCharDefaultComboBoxModelFactory
             extends Object
          {

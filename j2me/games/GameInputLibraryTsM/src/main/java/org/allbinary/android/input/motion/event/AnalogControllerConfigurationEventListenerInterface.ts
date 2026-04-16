@@ -22,7 +22,7 @@ import { EventListenerInterface } from "../../../../../../org/allbinary/logic/ut
 
     
 
-interface AnalogControllerConfigurationEventListenerInterface extends EventListenerInterface {
+export interface AnalogControllerConfigurationEventListenerInterface extends EventListenerInterface {
         
 
                 //@Throws(Error::class)

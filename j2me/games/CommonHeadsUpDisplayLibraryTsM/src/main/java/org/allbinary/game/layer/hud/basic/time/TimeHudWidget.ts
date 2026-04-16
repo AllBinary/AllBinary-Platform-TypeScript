@@ -37,6 +37,8 @@ import { PrimitiveLongSingleton } from "../../../../../../../org/allbinary/logic
 
     
 
+import { TIME_CHAR_ARRAY } from "./TIME_CHAR_ARRAY.js";
+
 export class TimeHudWidget extends BasicHud {
         
 

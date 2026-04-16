@@ -19,7 +19,7 @@
 
 
 
-interface MachineAccessControlAddressInterface {
+export interface MachineAccessControlAddressInterface {
         
 
 }

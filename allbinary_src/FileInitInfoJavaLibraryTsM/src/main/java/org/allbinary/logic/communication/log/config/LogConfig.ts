@@ -18,10 +18,7 @@
 
 
 
-            import Vector from "@ohos.util.Vector";
-        
-
-//import { Vector } from "../../../../../../java/util/Vector.js";
+import { Vector } from "../../../../../../java/util/Vector.js";
 
     
 import { EntryData } from "../../../../../../org/allbinary/business/entry/EntryData.js";
@@ -78,6 +75,8 @@ import { Node } from "../../../../../../org/w3c/dom/Node.js";
 import { NodeList } from "../../../../../../org/w3c/dom/NodeList.js";
 
     
+
+import { LogConfigData } from "./LogConfigData.js";
 
 export class LogConfig
             extends Object

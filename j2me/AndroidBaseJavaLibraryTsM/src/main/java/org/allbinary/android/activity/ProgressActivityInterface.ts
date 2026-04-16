@@ -19,7 +19,7 @@
 
 
 
-interface ProgressActivityInterface {
+export interface ProgressActivityInterface {
         
 
     runOnUiThread(action: Runnable)

@@ -19,7 +19,7 @@
 
 
 
-interface CacheableInterface {
+export interface CacheableInterface {
         
 
     getKey(): any

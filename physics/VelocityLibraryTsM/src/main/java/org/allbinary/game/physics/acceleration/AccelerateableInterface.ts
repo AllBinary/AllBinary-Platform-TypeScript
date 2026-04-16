@@ -22,7 +22,7 @@ import { BasicDecimal } from "../../../../../org/allbinary/logic/math/BasicDecim
 
     
 
-interface AccelerateableInterface {
+export interface AccelerateableInterface {
         
 
     accelerate(accelerate: BasicDecimal)

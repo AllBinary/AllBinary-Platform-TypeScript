@@ -52,6 +52,8 @@ import { SwtMutableImage } from "../../../../org/microemu/device/swt/SwtMutableI
 
     
 
+import { ImageUtil } from "./ImageUtil.js";
+
 export class ImageSwtRotationUtil
             extends Object
          {

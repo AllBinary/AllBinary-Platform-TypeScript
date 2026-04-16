@@ -34,6 +34,14 @@ import { PlayN } from "../../../../../playn/core/PlayN.js";
 
     
 
+import { LogFormatUtil } from "./LogFormatUtil.js";
+
+import { LogFormatUtil } from "./LogFormatUtil.js";
+
+import { LogFormatUtil } from "./LogFormatUtil.js";
+
+import { LogFormatUtil } from "./LogFormatUtil.js";
+
 /*actual*/ export class PreLogUtil
             extends Object
          {

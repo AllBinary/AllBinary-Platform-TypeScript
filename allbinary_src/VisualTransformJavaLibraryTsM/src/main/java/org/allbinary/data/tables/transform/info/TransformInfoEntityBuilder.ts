@@ -28,6 +28,8 @@ import { TransformInfoObjectConfigGeneratorFactory } from "../../../../../../org
 
     
 
+import { TransformInfoEntityFactory } from "./TransformInfoEntityFactory.js";
+
 export class TransformInfoEntityBuilder
             extends Object
          {

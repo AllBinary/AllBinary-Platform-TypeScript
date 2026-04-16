@@ -22,7 +22,7 @@ import { Angle } from "../../../org/allbinary/math/Angle.js";
 
     
 
-interface DirectionalInterface {
+export interface DirectionalInterface {
         
 
     setFrame(direction: Direction)

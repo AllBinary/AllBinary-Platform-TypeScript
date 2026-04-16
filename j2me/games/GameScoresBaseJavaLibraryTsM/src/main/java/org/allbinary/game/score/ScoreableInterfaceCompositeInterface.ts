@@ -19,7 +19,7 @@
 
 
 
-interface ScoreableInterfaceCompositeInterface {
+export interface ScoreableInterfaceCompositeInterface {
         
 
     getScoreableInterface(): Scoreable

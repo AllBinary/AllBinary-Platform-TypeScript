@@ -53,6 +53,8 @@ import { BasicArrayListUtil } from "../../../../../org/allbinary/util/BasicArray
 
     
 
+import { MusicStrings } from "./MusicStrings.js";
+
 export class MusicManager
             extends Object
          {

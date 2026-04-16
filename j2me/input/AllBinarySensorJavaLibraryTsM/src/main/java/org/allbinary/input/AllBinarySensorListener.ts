@@ -19,7 +19,7 @@
 
 
 
-interface AllBinarySensorListener {
+export interface AllBinarySensorListener {
         
 
     onSensorChange()

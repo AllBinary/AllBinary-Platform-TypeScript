@@ -22,7 +22,7 @@ import { EventListenerInterface } from "../../../../org/allbinary/logic/util/eve
 
     
 
-interface LayerManagerEventListenerInterface extends EventListenerInterface {
+export interface LayerManagerEventListenerInterface extends EventListenerInterface {
         
 
                 //@Throws(Error::class)

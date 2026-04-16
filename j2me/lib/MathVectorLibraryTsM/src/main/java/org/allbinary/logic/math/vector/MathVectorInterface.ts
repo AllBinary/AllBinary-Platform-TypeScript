@@ -22,7 +22,7 @@ import { BasicDecimal } from "../../../../../org/allbinary/logic/math/BasicDecim
 
     
 
-interface MathVectorInterface {
+export interface MathVectorInterface {
         
 
     getDirection(): number

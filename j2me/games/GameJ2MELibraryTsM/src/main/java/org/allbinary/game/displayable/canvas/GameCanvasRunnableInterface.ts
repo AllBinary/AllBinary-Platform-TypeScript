@@ -18,10 +18,7 @@
 
 
 
-            import Hashtable from "@ohos.util.HashMap";
-        
-
-//import { Hashtable } from "../../../../../java/util/Hashtable.js";
+import { Hashtable } from "../../../../../java/util/Hashtable.js";
 
     
 import { CommandListener } from "../../../../../javax/microedition/lcdui/CommandListener.js";
@@ -40,7 +37,7 @@ import { RunnableInterface } from "../../../../../org/allbinary/thread/RunnableI
 
     
 
-interface GameCanvasRunnableInterface extends RunnableInterface, PaintableInterface, ItemStateListener, GameStateCompositeInterface {
+export interface GameCanvasRunnableInterface extends RunnableInterface, PaintableInterface, ItemStateListener, GameStateCompositeInterface {
         
 
     getTitle(): string

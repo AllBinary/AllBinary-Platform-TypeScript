@@ -55,6 +55,10 @@ import { CanvasSurface } from "../../../../playn/core/CanvasSurface.js";
 
     
 
+import { AlphaBaseProcessor } from "./AlphaBaseProcessor.js";
+
+import { AlphaProcessor } from "./AlphaProcessor.js";
+
 export class AllBinaryHTMLImageRotationAnimation extends ImageBaseRotationAnimation {
         
 

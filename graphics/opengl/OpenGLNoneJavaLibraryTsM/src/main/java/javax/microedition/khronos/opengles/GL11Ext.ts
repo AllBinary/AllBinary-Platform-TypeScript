@@ -17,7 +17,7 @@ import { ShortBuffer } from "../../../../java/nio/ShortBuffer.js";
 
     
 
-interface GL11Ext extends GL {
+export interface GL11Ext extends GL {
         
 
     public static readonly GL_MATRIX_INDEX_ARRAY_BUFFER_BINDING_OES: number = 35742;

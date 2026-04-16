@@ -18,12 +18,9 @@
 
 
 
-            import HashMap from "@ohos.util.HashMap";
-        
             import { Integer } from "../../../../../../../java/lang/Integer.js";
         
-
-//import { HashMap } from "../../../../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../../../../java/util/HashMap.js";
 
     
 import { Set } from "../../../../../../../java/util/Set.js";
@@ -36,7 +33,7 @@ import { MoneyException } from "../../../../../../../org/allbinary/business/user
 
     
 
-interface BasketInterface {
+export interface BasketInterface {
         
 
     public addItem(id: string, num: string)

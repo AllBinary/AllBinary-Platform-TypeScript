@@ -18,13 +18,10 @@
 
 
 
-            import Vector from "@ohos.util.Vector";
-        
 import { awt } from "../../../../../../java/awt.js";
 
     
-
-//import { Vector } from "../../../../../../java/util/Vector.js";
+import { Vector } from "../../../../../../java/util/Vector.js";
 
     
 import { ImageComparisonResult } from "../../../../../../org/allbinary/media/image/comparison/ImageComparisonResult.js";

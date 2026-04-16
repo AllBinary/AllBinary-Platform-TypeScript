@@ -18,10 +18,7 @@
 
 
 
-            import Vector from "@ohos.util.Vector";
-        
-
-//import { Vector } from "../../../../../java/util/Vector.js";
+import { Vector } from "../../../../../java/util/Vector.js";
 
     
 import { CommandListener } from "../../../../../javax/microedition/lcdui/CommandListener.js";
@@ -168,6 +165,8 @@ import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
 import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+
+import { NoMenuInputProcessor } from "./NoMenuInputProcessor.js";
 
 export class GameCommandCanvas extends MyCanvas
                 , MenuListener

@@ -49,6 +49,12 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 
     
 
+import { PrintLicenseInitInfo } from "./PrintLicenseInitInfo.js";
+
+import { PrintLicenseInitInfo } from "./PrintLicenseInitInfo.js";
+
+import { AbeClientInformationInterfaceFactory } from "./AbeClientInformationInterfaceFactory.js";
+
 export class LicenseClientAndServerTest
             extends Object
          {

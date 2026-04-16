@@ -18,10 +18,7 @@
 
 
 
-            import HashMap from "@ohos.util.HashMap";
-        
-
-//import { HashMap } from "../../../../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../../../../java/util/HashMap.js";
 
     
 import { HttpServletRequest } from "../../../../../../../javax/servlet/http/HttpServletRequest.js";
@@ -57,6 +54,10 @@ import { CryptFileWriter } from "../../../../../../../org/allbinary/logic/contro
 import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonStrings.js";
 
     
+
+import { AdminConfigurationData } from "./AdminConfigurationData.js";
+
+import { AdminConfigurationData } from "./AdminConfigurationData.js";
 
 export class AdminConfiguration
             extends Object

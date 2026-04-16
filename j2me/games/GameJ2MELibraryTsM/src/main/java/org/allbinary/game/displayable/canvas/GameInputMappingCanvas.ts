@@ -87,6 +87,8 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
     
 
+import { GameInputMappingInstructionsCanvas } from "./GameInputMappingInstructionsCanvas.js";
+
 export class GameInputMappingCanvas extends GameCommandCanvas
                 , InputMappingInterface {
         

@@ -33,6 +33,8 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
     
 
+import { GeographicMapCellTypeFactory } from "./GeographicMapCellTypeFactory.js";
+
 export class SimpleGeographicMap
             extends Object
          {

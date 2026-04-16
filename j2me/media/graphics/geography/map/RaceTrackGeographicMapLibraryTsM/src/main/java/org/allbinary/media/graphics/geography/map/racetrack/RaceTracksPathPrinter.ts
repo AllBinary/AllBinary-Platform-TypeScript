@@ -31,6 +31,8 @@ import { CommonLabels } from "../../../../../../../org/allbinary/string/CommonLa
 
     
 
+import { System } from "./System.js";
+
 export class RaceTracksPathPrinter
             extends Object
          {

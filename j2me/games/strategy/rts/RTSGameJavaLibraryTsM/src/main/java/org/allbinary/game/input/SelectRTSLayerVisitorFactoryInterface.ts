@@ -22,7 +22,7 @@ import { Visitor } from "../../../../org/allbinary/logic/util/visitor/Visitor.js
 
     
 
-interface SelectRTSLayerVisitorFactoryInterface {
+export interface SelectRTSLayerVisitorFactoryInterface {
         
 
     getInstance(selectedRTSLayersPlayerGameInput: SelectedRTSLayersPlayerGameInput): Visitor

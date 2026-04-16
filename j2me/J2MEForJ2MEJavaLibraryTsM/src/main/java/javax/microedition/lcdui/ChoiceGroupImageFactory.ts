@@ -19,6 +19,14 @@
 
 
 
+import { Image } from "./Image.js";
+
+import { Image } from "./Image.js";
+
+import { Image } from "./Image.js";
+
+import { Image } from "./Image.js";
+
 export class ChoiceGroupImageFactory
             extends Object
          {

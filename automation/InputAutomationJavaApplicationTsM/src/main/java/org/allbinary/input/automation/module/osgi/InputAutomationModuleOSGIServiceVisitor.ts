@@ -43,6 +43,10 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
     
 
+import { Boolean } from "./Boolean.js";
+
+import { Boolean } from "./Boolean.js";
+
 export class InputAutomationModuleOSGIServiceVisitor
             extends Object
         

@@ -37,6 +37,10 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
     
 
+import { DemoGameMidletStateFactory } from "./DemoGameMidletStateFactory.js";
+
+import { DemoGameMidletEventHandler } from "./DemoGameMidletEventHandler.js";
+
 export class DemoRunnable
             extends Object
         

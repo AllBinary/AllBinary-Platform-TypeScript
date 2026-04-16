@@ -22,6 +22,10 @@ import { Command } from "../../../../javax/microedition/lcdui/Command.js";
 
     
 
+import { HighScoreCommands } from "./HighScoreCommands.js";
+
+import { HighScoreCommands } from "./HighScoreCommands.js";
+
 export class HighScoreCommandsFactory extends HighScoreCommandsBaseFactory {
         
 

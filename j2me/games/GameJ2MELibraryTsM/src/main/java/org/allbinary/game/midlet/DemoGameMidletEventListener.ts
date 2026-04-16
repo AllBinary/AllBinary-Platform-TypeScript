@@ -22,7 +22,7 @@ import { EventListenerInterface } from "../../../../org/allbinary/logic/util/eve
 
     
 
-interface DemoGameMidletEventListener extends EventListenerInterface {
+export interface DemoGameMidletEventListener extends EventListenerInterface {
         
 
     onDemoStart()

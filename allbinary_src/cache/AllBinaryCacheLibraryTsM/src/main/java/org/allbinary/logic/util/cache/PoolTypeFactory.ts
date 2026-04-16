@@ -5,6 +5,8 @@
 
 
 
+import { CacheTypeFactory } from "./CacheTypeFactory.js";
+
 export class PoolTypeFactory
             extends Object
          {

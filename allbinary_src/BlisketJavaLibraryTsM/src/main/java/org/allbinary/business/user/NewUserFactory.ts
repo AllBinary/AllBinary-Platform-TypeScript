@@ -18,10 +18,7 @@
 
 
 
-            import HashMap from "@ohos.util.HashMap";
-        
-
-//import { HashMap } from "../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../java/util/HashMap.js";
 
     
 import { HttpServletRequest } from "../../../../javax/servlet/http/HttpServletRequest.js";
@@ -42,6 +39,18 @@ import { TransformInfoHttpInterface } from "../../../../org/allbinary/logic/visu
 import { TransformInfoInterface } from "../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js";
 
     
+
+import { NAME } from "./NAME.js";
+
+import { NAME } from "./NAME.js";
+
+import { CreateUserFactory } from "./CreateUserFactory.js";
+
+import { NAME } from "./NAME.js";
+
+import { NAME } from "./NAME.js";
+
+import { CreateUserFactory } from "./CreateUserFactory.js";
 
 export class NewUserFactory
             extends Object

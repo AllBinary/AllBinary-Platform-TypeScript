@@ -40,6 +40,8 @@ import { Document } from "../../../../../org/w3c/dom/Document.js";
 
     
 
+import { XslHelper } from "./XslHelper.js";
+
 export class SimpleTransform
             extends Object
          {

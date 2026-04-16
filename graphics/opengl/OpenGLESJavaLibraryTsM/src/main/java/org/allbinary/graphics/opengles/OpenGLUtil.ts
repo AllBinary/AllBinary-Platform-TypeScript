@@ -62,6 +62,10 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
     
 
+import { OpenGLCapabilities } from "./OpenGLCapabilities.js";
+
+import { OpenGLLogUtil } from "./OpenGLLogUtil.js";
+
 export class OpenGLUtil
             extends Object
          {

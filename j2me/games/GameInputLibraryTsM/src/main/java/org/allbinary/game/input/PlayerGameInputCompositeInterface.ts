@@ -19,7 +19,7 @@
 
 
 
-interface PlayerGameInputCompositeInterface extends GameInputInterface {
+export interface PlayerGameInputCompositeInterface extends GameInputInterface {
         
 
     getPlayerGameInput(): PlayerGameInput

@@ -22,6 +22,8 @@ import { ScaleProperties } from "../../../org/allbinary/media/ScaleProperties.js
 
     
 
+import { NullAnimationFactory } from "./NullAnimationFactory.js";
+
 export class BaseAnimationInterfaceFactoryInterfaceComposite
             extends Object
         

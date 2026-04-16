@@ -19,7 +19,7 @@
 
 
 
-interface CpuInterface {
+export interface CpuInterface {
         
 
     public getProcessor(): string

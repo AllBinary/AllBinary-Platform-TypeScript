@@ -24,7 +24,7 @@ import { EventListenerInterface } from "../../../../../../org/allbinary/logic/ut
 
     
 
-interface WaypointEventListenerInterface extends EventListenerInterface {
+export interface WaypointEventListenerInterface extends EventListenerInterface {
         
 
                 //@Throws(Error::class)

@@ -22,7 +22,7 @@ import { InputAutomationConfigurationModuleChangeEvent } from "../../../../../or
 
     
 
-interface InputAutomationConfigurationModuleChangeListener {
+export interface InputAutomationConfigurationModuleChangeListener {
         
 
     onAdd(inputAutomationConfigurationChangeEvent: InputAutomationConfigurationModuleChangeEvent)

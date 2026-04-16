@@ -22,6 +22,8 @@ import { BasicColor } from "../../../org/allbinary/graphics/color/BasicColor.js"
 
     
 
+import { AnimationBehavior } from "./AnimationBehavior.js";
+
 export class TimedVectorAnimationFactory
             extends Object
         

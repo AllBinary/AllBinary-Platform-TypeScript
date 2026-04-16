@@ -25,7 +25,7 @@ import { BasicDecimal } from "../../../../org/allbinary/logic/math/BasicDecimal.
 
     
 
-interface MovementInterface {
+export interface MovementInterface {
         
 
     init(speedBasicDecimal: BasicDecimal, angle: number, otherAngle: number)

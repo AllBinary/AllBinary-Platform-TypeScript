@@ -19,6 +19,8 @@
 
 
 
+import { TagStrings } from "./TagStrings.js";
+
 export class CommandTag extends CustomTagSupport {
         
 

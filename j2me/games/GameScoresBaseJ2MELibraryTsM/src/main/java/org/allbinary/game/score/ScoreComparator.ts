@@ -40,6 +40,8 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
     
 
+import { Long } from "./Long.js";
+
 export class ScoreComparator
             extends Object
         

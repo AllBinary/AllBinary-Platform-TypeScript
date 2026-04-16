@@ -19,6 +19,8 @@
 
 
 
+import { Character } from "./Character.js";
+
 export class StringValidationJSEUtil
             extends Object
          {

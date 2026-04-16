@@ -18,10 +18,7 @@
 
 
 
-            import Hashtable from "@ohos.util.HashMap";
-        
-
-//import { Hashtable } from "../../../../../../java/util/Hashtable.js";
+import { Hashtable } from "../../../../../../java/util/Hashtable.js";
 
     
 import { GenericOperatingSystem } from "../../../../../../org/allbinary/logic/system/os/GenericOperatingSystem.js";
@@ -31,7 +28,7 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 
     
 
-interface AbeClientInformationInterface {
+export interface AbeClientInformationInterface {
         
 
     init()

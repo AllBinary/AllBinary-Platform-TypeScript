@@ -11,7 +11,7 @@ import { MIDlet } from "../../../javax/microedition/midlet/MIDlet.js";
 
     
 
-interface EmulatorViewInterface {
+export interface EmulatorViewInterface {
         
 
     setMidlet(midlet: MIDlet)

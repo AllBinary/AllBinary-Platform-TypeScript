@@ -28,6 +28,12 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
     
 
+import { LastFetchHighScoresFactory } from "./LastFetchHighScoresFactory.js";
+
+import { NullHighScoresSingletonFactory } from "./NullHighScoresSingletonFactory.js";
+
+import { NullHighScoresSingletonFactory } from "./NullHighScoresSingletonFactory.js";
+
 export class HighScoresHelperBase
             extends Object
         

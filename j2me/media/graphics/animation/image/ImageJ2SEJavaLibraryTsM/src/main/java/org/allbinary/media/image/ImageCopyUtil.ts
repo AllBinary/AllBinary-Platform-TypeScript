@@ -34,6 +34,10 @@ import { J2SEImmutableImage } from "../../../../org/microemu/device/j2se/J2SEImm
 
     
 
+import { ImageUtil } from "./ImageUtil.js";
+
+import { ImageCreationUtil } from "./ImageCreationUtil.js";
+
 export class ImageCopyUtil
             extends Object
          {

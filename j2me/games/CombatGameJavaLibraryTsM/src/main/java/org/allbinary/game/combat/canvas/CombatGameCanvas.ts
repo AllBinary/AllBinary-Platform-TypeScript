@@ -64,6 +64,10 @@ import { AbeClientInformationInterface } from "../../../../../org/allbinary/logi
 
     
 
+import {  } from "./.js";
+
+import {  } from "./.js";
+
 export class CombatGameCanvas extends AllBinaryGameCanvas {
         
 

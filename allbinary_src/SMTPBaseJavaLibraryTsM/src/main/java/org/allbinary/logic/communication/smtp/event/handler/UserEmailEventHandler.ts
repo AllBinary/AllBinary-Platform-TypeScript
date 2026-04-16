@@ -18,10 +18,7 @@
 
 
 
-            import Vector from "@ohos.util.Vector";
-        
-
-//import { Vector } from "../../../../../../../java/util/Vector.js";
+import { Vector } from "../../../../../../../java/util/Vector.js";
 
     
 import { EmailEvent } from "../../../../../../../org/allbinary/logic/communication/smtp/event/EmailEvent.js";

@@ -18,10 +18,7 @@
 
 
 
-            import Hashtable from "@ohos.util.HashMap";
-        
-
-//import { Hashtable } from "../../../../java/util/Hashtable.js";
+import { Hashtable } from "../../../../java/util/Hashtable.js";
 
     
 import { ProgressCanvas } from "../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvas.js";
@@ -39,6 +36,10 @@ import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUt
 import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js";
 
     
+
+import { DemoGameMidletStateFactory } from "./DemoGameMidletStateFactory.js";
+
+import { DemoGameMidletEventHandler } from "./DemoGameMidletEventHandler.js";
 
 export class CreateGameRunnable
             extends Object

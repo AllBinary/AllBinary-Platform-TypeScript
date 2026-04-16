@@ -18,8 +18,6 @@
 
 
 
-            import HashMap from "@ohos.util.HashMap";
-        
 import { DataOutputStream } from "../../../../../../../../java/io/DataOutputStream.js";
 
     
@@ -32,8 +30,7 @@ import { FileInputStream } from "../../../../../../../../java/io/FileInputStream
 import { FileOutputStream } from "../../../../../../../../java/io/FileOutputStream.js";
 
     
-
-//import { HashMap } from "../../../../../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../../../../../java/util/HashMap.js";
 
     
 import { Set } from "../../../../../../../../java/util/Set.js";
@@ -69,6 +66,12 @@ import { Node } from "../../../../../../../../org/w3c/dom/Node.js";
 import { NodeList } from "../../../../../../../../org/w3c/dom/NodeList.js";
 
     
+
+import { GenericProfilesData } from "./GenericProfilesData.js";
+
+import { GenericProfileData } from "./GenericProfileData.js";
+
+import { GenericProfilesData } from "./GenericProfilesData.js";
 
 export class GenericProfiles
             extends Object

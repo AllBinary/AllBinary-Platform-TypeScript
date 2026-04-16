@@ -46,6 +46,8 @@ import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonS
 
     
 
+import { KeySpecFactory } from "./KeySpecFactory.js";
+
 export class AbBasicCrypt
             extends Object
         

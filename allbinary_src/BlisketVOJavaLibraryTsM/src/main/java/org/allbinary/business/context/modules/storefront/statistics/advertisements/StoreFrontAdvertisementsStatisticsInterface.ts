@@ -22,7 +22,7 @@ import { TableMappingInterface } from "../../../../../../../../org/allbinary/dat
 
     
 
-interface StoreFrontAdvertisementsStatisticsInterface extends TableMappingInterface {
+export interface StoreFrontAdvertisementsStatisticsInterface extends TableMappingInterface {
         
 
 }

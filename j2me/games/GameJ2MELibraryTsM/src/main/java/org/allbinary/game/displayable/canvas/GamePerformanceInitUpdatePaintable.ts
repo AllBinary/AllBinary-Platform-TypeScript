@@ -37,6 +37,8 @@ import { InitUpdatePaintable } from "../../../../../org/allbinary/graphics/paint
 
     
 
+import { RED } from "./RED.js";
+
 export class GamePerformanceInitUpdatePaintable extends InitUpdatePaintable {
         
 

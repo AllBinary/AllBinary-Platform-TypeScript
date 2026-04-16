@@ -19,6 +19,8 @@
 
 
 
+import { AngleFactory } from "./AngleFactory.js";
+
 export class AngleIncrementInfoFactory
             extends Object
          {

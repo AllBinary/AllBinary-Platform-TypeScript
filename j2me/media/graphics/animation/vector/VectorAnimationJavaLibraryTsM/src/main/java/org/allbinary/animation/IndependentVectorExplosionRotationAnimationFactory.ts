@@ -28,6 +28,10 @@ import { VectorInfo } from "../../../org/allbinary/vector/VectorInfo.js";
 
     
 
+import { VectorRotationGenerator } from "./VectorRotationGenerator.js";
+
+import { VectorExplosionGenerator } from "./VectorExplosionGenerator.js";
+
 export class IndependentVectorExplosionRotationAnimationFactory
             extends Object
         

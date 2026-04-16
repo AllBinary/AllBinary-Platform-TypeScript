@@ -28,6 +28,8 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
     
 
+import { GameKeyFactory } from "./GameKeyFactory.js";
+
 export class PlatformFormInputMappingFactory
             extends Object
          {

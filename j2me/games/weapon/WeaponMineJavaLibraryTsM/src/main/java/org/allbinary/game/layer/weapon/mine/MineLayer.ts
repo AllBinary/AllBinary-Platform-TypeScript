@@ -49,6 +49,8 @@ import { DropWeaponSound } from "../../../../../../org/allbinary/weapon/media/au
 
     
 
+import { MineWeaponResources } from "./MineWeaponResources.js";
+
 export class MineLayer extends SimpleWeaponLayer {
         
 

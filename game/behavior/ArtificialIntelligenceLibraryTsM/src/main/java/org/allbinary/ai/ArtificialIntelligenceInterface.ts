@@ -25,7 +25,7 @@ import { AllBinaryLayerManager } from "../../../org/allbinary/layer/AllBinaryLay
 
     
 
-interface ArtificialIntelligenceInterface extends IdentifierInterface {
+export interface ArtificialIntelligenceInterface extends IdentifierInterface {
         
 
                 //@Throws(Error::class)

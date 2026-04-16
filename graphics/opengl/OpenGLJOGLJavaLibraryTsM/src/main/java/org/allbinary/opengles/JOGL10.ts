@@ -22,6 +22,10 @@ import { GLU } from "../../../com/jogamp/opengl/glu/GLU.js";
 
     
 
+import { GL2 } from "./GL2.js";
+
+import { GL2 } from "./GL2.js";
+
 export class JOGL10
             extends Object
         

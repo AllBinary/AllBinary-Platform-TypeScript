@@ -18,16 +18,13 @@
 
 
 
-            import Hashtable from "@ohos.util.HashMap";
-        
 import { awt } from "../../../../../../java/awt.js";
 
     
 import { BufferedImage } from "../../../../../../java/awt/image/BufferedImage.js";
 
     
-
-//import { Hashtable } from "../../../../../../java/util/Hashtable.js";
+import { Hashtable } from "../../../../../../java/util/Hashtable.js";
 
     
 import { InputRobotFactory } from "../../../../../../org/allbinary/input/automation/robot/InputRobotFactory.js";
@@ -42,6 +39,8 @@ import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log
 import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStrings.js";
 
     
+
+import { Toolkit } from "./Toolkit.js";
 
 export class ScreenScavangerRobot
             extends Object

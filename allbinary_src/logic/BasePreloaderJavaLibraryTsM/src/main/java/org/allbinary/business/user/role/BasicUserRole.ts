@@ -18,13 +18,10 @@
 
 
 
-            import Vector from "@ohos.util.Vector";
-        
 import { Serializable } from "../../../../../java/io/Serializable.js";
 
     
-
-//import { Vector } from "../../../../../java/util/Vector.js";
+import { Vector } from "../../../../../java/util/Vector.js";
 
     
 

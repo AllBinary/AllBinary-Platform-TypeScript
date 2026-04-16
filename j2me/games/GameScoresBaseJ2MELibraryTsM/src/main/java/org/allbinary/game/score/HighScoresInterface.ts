@@ -22,7 +22,7 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
     
 
-interface HighScoresInterface {
+export interface HighScoresInterface {
         
 
     getList(): BasicArrayList

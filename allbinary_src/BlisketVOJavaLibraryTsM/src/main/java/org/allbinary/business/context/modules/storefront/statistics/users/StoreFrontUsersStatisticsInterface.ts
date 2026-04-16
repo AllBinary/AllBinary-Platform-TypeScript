@@ -22,7 +22,7 @@ import { TableMappingInterface } from "../../../../../../../../org/allbinary/dat
 
     
 
-interface StoreFrontUsersStatisticsInterface extends TableMappingInterface {
+export interface StoreFrontUsersStatisticsInterface extends TableMappingInterface {
         
 
     public getNumberOfUsers(): Long

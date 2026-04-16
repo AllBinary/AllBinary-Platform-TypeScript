@@ -22,6 +22,8 @@ import { Image } from "../../../../javax/microedition/lcdui/Image.js";
 
     
 
+import { PlatformBitmapBase } from "./PlatformBitmapBase.js";
+
 export class PlatformBitmapBaseFactory
             extends Object
          {

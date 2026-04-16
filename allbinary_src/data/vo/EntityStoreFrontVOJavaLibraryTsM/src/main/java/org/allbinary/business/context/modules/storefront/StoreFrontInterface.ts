@@ -28,7 +28,7 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 
     
 
-interface StoreFrontInterface extends TableMappingInterface {
+export interface StoreFrontInterface extends TableMappingInterface {
         
 
     public isNameValid(): Boolean

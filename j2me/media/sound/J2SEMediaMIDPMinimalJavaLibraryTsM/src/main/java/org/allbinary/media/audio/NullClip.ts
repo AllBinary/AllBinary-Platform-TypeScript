@@ -49,6 +49,10 @@ import { LineUnavailableException } from "../../../../javax/sound/sampled/LineUn
 
     
 
+import { NullAudioFormat } from "./NullAudioFormat.js";
+
+import { NullAudioFormat } from "./NullAudioFormat.js";
+
 export class NullClip
             extends Object
         

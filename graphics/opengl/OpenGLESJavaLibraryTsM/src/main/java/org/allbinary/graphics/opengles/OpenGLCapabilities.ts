@@ -66,6 +66,8 @@ import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUt
 
     
 
+import { OpenGLFeatureFactory } from "./OpenGLFeatureFactory.js";
+
 export class OpenGLCapabilities
             extends Object
          {

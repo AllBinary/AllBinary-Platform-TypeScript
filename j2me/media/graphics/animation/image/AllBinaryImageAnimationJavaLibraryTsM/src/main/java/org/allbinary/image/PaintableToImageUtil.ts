@@ -28,6 +28,8 @@ import { PaintableInterface } from "../../../org/allbinary/graphics/paint/Painta
 
     
 
+import { GameFeatureImageCacheFactory } from "./GameFeatureImageCacheFactory.js";
+
 export class PaintableToImageUtil
             extends Object
          {

@@ -52,6 +52,8 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
     
 
+import { NullHighScoresSingletonFactory } from "./NullHighScoresSingletonFactory.js";
+
 export class HighScoresPaintable extends Paintable
                 , ColorChangeListener {
         

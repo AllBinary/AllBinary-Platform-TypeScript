@@ -19,7 +19,7 @@
 
 
 
-interface BasicColorCompositeSetterInterface {
+export interface BasicColorCompositeSetterInterface {
         
 
     setBasicColorP(basicColor: BasicColor)

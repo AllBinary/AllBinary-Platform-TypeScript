@@ -1,0 +1,7 @@
+
+/*actual*/ export class PorterDuffColorFilter
+{
+
+}
+
+

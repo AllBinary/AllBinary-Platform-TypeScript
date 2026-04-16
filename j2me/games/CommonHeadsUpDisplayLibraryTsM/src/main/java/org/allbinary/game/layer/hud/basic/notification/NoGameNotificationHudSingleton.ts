@@ -31,6 +31,8 @@ import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonS
 
     
 
+import { GameNotificationHud } from "./GameNotificationHud.js";
+
 export class NoGameNotificationHudSingleton
             extends Object
          {

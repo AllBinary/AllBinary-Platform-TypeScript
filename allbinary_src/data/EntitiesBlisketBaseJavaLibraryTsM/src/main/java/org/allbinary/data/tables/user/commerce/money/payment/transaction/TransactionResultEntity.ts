@@ -18,19 +18,13 @@
 
 
 
-            import Vector from "@ohos.util.Vector";
-        
-            import HashMap from "@ohos.util.HashMap";
-        
 import { Calendar } from "../../../../../../../../../java/util/Calendar.js";
 
     
-
-//import { HashMap } from "../../../../../../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../../../../../../java/util/HashMap.js";
 
     
-
-//import { Vector } from "../../../../../../../../../java/util/Vector.js";
+import { Vector } from "../../../../../../../../../java/util/Vector.js";
 
     
 import { EntryData } from "../../../../../../../../../org/allbinary/business/entry/EntryData.js";
@@ -63,6 +57,86 @@ import { AbSqlBean } from "../../../../../../../../../org/allbinary/logic/commun
 import { StringMaker } from "../../../../../../../../../org/allbinary/logic/string/StringMaker.js";
 
     
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
+
+import { RESULT } from "./RESULT.js";
+
+import { PNREF } from "./PNREF.js";
+
+import { RESPMSG } from "./RESPMSG.js";
+
+import { AUTHCODE } from "./AUTHCODE.js";
+
+import { AVSADDR } from "./AVSADDR.js";
+
+import { AVSZIP } from "./AVSZIP.js";
+
+import { ORIGRESULT } from "./ORIGRESULT.js";
+
+import { STATUS } from "./STATUS.js";
+
+import { FRAUDCODE } from "./FRAUDCODE.js";
+
+import { FRAUDMSG } from "./FRAUDMSG.js";
+
+import { ERRCODE } from "./ERRCODE.js";
+
+import { SCORE } from "./SCORE.js";
+
+import { REASON1 } from "./REASON1.js";
+
+import { REASON2 } from "./REASON2.js";
+
+import { REASON3 } from "./REASON3.js";
+
+import { EXCEPTION1 } from "./EXCEPTION1.js";
+
+import { EXCEPTION2 } from "./EXCEPTION2.js";
+
+import { EXCEPTION3 } from "./EXCEPTION3.js";
+
+import { EXCEPTION4 } from "./EXCEPTION4.js";
+
+import { EXCEPTION5 } from "./EXCEPTION5.js";
+
+import { EXCEPTION6 } from "./EXCEPTION6.js";
+
+import { EXCEPTION7 } from "./EXCEPTION7.js";
 
 export class TransactionResultEntity extends AbSqlBean
                 , TransactionResultEntityInterface {

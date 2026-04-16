@@ -19,7 +19,7 @@
 
 
 
-interface ModifyTableInterface {
+export interface ModifyTableInterface {
         
 
                 //@Throws(Error::class)

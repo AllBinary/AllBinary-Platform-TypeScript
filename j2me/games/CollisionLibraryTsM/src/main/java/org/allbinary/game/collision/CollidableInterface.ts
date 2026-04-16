@@ -28,7 +28,7 @@ import { NamedInterface } from "../../../../org/allbinary/layer/NamedInterface.j
 
     
 
-interface CollidableInterface extends NamedInterface {
+export interface CollidableInterface extends NamedInterface {
         
 
                 //@Throws(Error::class)

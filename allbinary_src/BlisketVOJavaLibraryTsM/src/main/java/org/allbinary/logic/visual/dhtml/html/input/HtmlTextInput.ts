@@ -21,6 +21,8 @@
             import { Integer } from "../../../../../../../java/lang/Integer.js";
         
 
+import { HtmlInputData } from "./HtmlInputData.js";
+
 export class HtmlTextInput extends HtmlLengthInput {
         
 public constructor (before: string, name: string, value: string, after: string)                        

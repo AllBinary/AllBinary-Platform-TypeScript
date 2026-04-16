@@ -40,6 +40,8 @@ import { Node } from "../../../../../org/w3c/dom/Node.js";
 
     
 
+import { AdvertisementAreaData } from "./AdvertisementAreaData.js";
+
 export class AdvertisementAreaConstraints
             extends Object
         

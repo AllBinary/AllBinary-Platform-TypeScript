@@ -18,16 +18,13 @@
 
 
 
-            import HashMap from "@ohos.util.HashMap";
-        
 import { ByteArrayOutputStream } from "../../../../../java/io/ByteArrayOutputStream.js";
 
     
 import { PrintStream } from "../../../../../java/io/PrintStream.js";
 
     
-
-//import { HashMap } from "../../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../../java/util/HashMap.js";
 
     
 import { Properties } from "../../../../../java/util/Properties.js";
@@ -84,6 +81,68 @@ import { Document } from "../../../../../org/w3c/dom/Document.js";
 import { Node } from "../../../../../org/w3c/dom/Node.js";
 
     
+
+import {  } from "./.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
+
+import { RecipientType } from "./RecipientType.js";
+
+import { RecipientType } from "./RecipientType.js";
+
+import { RecipientType } from "./RecipientType.js";
+
+import { EmailData } from "./EmailData.js";
+
+import { EmailData } from "./EmailData.js";
+
+import {  } from "./.js";
+
+import { RecipientType } from "./RecipientType.js";
+
+import { EmailData } from "./EmailData.js";
+
+import {  } from "./.js";
+
+import { RecipientType } from "./RecipientType.js";
+
+import { EmailData } from "./EmailData.js";
+
+import {  } from "./.js";
+
+import { RecipientType } from "./RecipientType.js";
+
+import { EmailData } from "./EmailData.js";
+
+import {  } from "./.js";
+
+import { EmailData } from "./EmailData.js";
+
+import { EmailData } from "./EmailData.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
+
+import { EmailData } from "./EmailData.js";
 
 export class Email
             extends Object

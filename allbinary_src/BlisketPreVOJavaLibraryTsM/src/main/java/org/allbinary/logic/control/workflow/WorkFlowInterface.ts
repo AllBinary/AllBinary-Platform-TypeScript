@@ -21,7 +21,7 @@
             import { Integer } from "../../../../../java/lang/Integer.js";
         
 
-interface WorkFlowInterface {
+export interface WorkFlowInterface {
         
 
                 //@Throws(Error::class)

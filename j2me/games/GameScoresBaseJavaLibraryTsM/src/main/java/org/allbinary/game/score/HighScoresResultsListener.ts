@@ -19,7 +19,7 @@
 
 
 
-interface HighScoresResultsListener {
+export interface HighScoresResultsListener {
         
 
     setHighScoresArray(highScoresArrayP: HighScores[])

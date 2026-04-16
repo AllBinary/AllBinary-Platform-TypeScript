@@ -25,6 +25,8 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
     
 
+import { AllBinaryMediaManager } from "./AllBinaryMediaManager.js";
+
 export class AllBinaryMediaManagerShutdown
             extends Object
          {

@@ -22,7 +22,7 @@ import { EventListenerInterface } from "../../../../org/allbinary/logic/util/eve
 
     
 
-interface CompleteMotionGestureInputEventListenerInterface extends EventListenerInterface {
+export interface CompleteMotionGestureInputEventListenerInterface extends EventListenerInterface {
         
 
     onCompleteMotionGestureInputEvent(completeMotionGestureInputEvent: CompleteMotionGestureInputEvent)

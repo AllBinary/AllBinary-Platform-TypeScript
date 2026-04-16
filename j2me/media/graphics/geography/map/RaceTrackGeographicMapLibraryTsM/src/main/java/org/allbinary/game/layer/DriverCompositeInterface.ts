@@ -19,7 +19,7 @@
 
 
 
-interface DriverCompositeInterface {
+export interface DriverCompositeInterface {
         
 
     getDriver(): Driver

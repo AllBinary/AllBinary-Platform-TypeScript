@@ -28,6 +28,8 @@ import { PersistentInputMapping } from "../../../../org/allbinary/game/input/map
 
     
 
+import { GameKeyFactory } from "./GameKeyFactory.js";
+
 export class NormalJ2MEDefaultGameInputMapping extends PersistentInputMapping {
         
 public constructor ()                        

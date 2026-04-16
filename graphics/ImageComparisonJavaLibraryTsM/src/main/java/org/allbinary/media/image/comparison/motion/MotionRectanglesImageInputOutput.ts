@@ -18,16 +18,13 @@
 
 
 
-            import Vector from "@ohos.util.Vector";
-        
 import { awt } from "../../../../../../java/awt.js";
 
     
 import { BufferedImage } from "../../../../../../java/awt/image/BufferedImage.js";
 
     
-
-//import { Vector } from "../../../../../../java/util/Vector.js";
+import { Vector } from "../../../../../../java/util/Vector.js";
 
     
 import { ImageOutputData } from "../../../../../../org/allbinary/input/automation/ImageOutputData.js";
@@ -75,6 +72,40 @@ import { ImageIOInterface } from "../../../../../../org/allbinary/media/image/io
 import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStrings.js";
 
     
+
+import { AllMotionRectanglesResultsCacheSingleton } from "./AllMotionRectanglesResultsCacheSingleton.js";
+
+import { ConsolidatedMotionRectanglesResultsCacheSingleton } from "./ConsolidatedMotionRectanglesResultsCacheSingleton.js";
+
+import { ConstrainedMotionRectanglesResultsCacheSingleton } from "./ConstrainedMotionRectanglesResultsCacheSingleton.js";
+
+import { JPG } from "./JPG.js";
+
+import { JPG } from "./JPG.js";
+
+import { JPG } from "./JPG.js";
+
+import {  } from "./.js";
+
+import {  } from "./.js";
+
+import {  } from "./.js";
+
+import {  } from "./.js";
+
+import {  } from "./.js";
+
+import {  } from "./.js";
+
+import { Color } from "./Color.js";
+
+import {  } from "./.js";
+
+import {  } from "./.js";
+
+import {  } from "./.js";
+
+import {  } from "./.js";
 
 export class MotionRectanglesImageInputOutput
             extends Object

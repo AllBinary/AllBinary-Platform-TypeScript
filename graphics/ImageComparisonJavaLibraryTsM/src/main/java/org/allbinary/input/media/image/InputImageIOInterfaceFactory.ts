@@ -31,6 +31,12 @@ import { ImageIOInterface } from "../../../../../org/allbinary/media/image/io/Im
 
     
 
+import { InputImageType } from "./InputImageType.js";
+
+import { InputImageType } from "./InputImageType.js";
+
+import { InputImageType } from "./InputImageType.js";
+
 export class InputImageIOInterfaceFactory
             extends Object
          {

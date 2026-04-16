@@ -19,7 +19,7 @@
 
 
 
-interface IndexedAnimationInterfaceCompositeInterface {
+export interface IndexedAnimationInterfaceCompositeInterface {
         
 
 }

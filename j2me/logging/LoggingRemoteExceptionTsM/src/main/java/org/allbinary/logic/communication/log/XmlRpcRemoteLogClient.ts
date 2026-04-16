@@ -18,19 +18,13 @@
 
 
 
-            import Vector from "@ohos.util.Vector";
-        
-            import Hashtable from "@ohos.util.HashMap";
-        
 import { IOException } from "../../../../../java/io/IOException.js";
 
     
-
-//import { Hashtable } from "../../../../../java/util/Hashtable.js";
+import { Hashtable } from "../../../../../java/util/Hashtable.js";
 
     
-
-//import { Vector } from "../../../../../java/util/Vector.js";
+import { Vector } from "../../../../../java/util/Vector.js";
 
     
 import { XmlRpcClient } from "../../../../../org/apache/xmlrpc/XmlRpcClient.js";
@@ -48,6 +42,10 @@ import { NoCrypt } from "../../../../../org/allbinary/logic/system/security/cryp
 import { AbeClientInformationInterface } from "../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js";
 
     
+
+import { System } from "./System.js";
+
+import { System } from "./System.js";
 
 export class XmlRpcRemoteLogClient extends XmlRpcAbeClient {
         

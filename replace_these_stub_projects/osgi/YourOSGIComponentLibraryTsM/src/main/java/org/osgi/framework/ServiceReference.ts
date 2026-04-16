@@ -5,7 +5,7 @@
 
 
 
-interface ServiceReference extends Comparable {
+export interface ServiceReference extends Comparable {
         
 
     public getProperty(key: string): any

@@ -18,6 +18,8 @@
 
 
 
+            import hilog from '@ohos.hilog';
+        
 import { Canvas } from "../../../android/graphics/Canvas.js";
 
     
@@ -29,6 +31,9 @@ export class NullAndroidCanvas
             extends Object
          {
         
+
+            static readonly PUBLIC: string = '%{public}s';
+            
 
     public static readonly NULL_CANVAS: Canvas = new Canvas();
         

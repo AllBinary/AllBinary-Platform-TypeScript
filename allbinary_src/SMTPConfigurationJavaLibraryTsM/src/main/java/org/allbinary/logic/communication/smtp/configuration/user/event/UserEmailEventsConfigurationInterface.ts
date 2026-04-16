@@ -18,10 +18,7 @@
 
 
 
-            import HashMap from "@ohos.util.HashMap";
-        
-
-//import { HashMap } from "../../../../../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../../../../../java/util/HashMap.js";
 
     
 import { UserInterface } from "../../../../../../../../org/allbinary/business/user/UserInterface.js";
@@ -37,7 +34,7 @@ import { AbeClientInformationInterface } from "../../../../../../../../org/allbi
 
     
 
-interface UserEmailEventsConfigurationInterface {
+export interface UserEmailEventsConfigurationInterface {
         
 
     public getEventConfigurationHashMap(): HashMap<any, any>

@@ -19,7 +19,7 @@
 
 
 
-interface DatabaseConnectionInfoInterface {
+export interface DatabaseConnectionInfoInterface {
         
 
     public getUrl(): string

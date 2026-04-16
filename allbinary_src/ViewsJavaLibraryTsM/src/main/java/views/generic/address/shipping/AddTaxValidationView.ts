@@ -18,10 +18,7 @@
 
 
 
-            import Vector from "@ohos.util.Vector";
-        
-
-//import { Vector } from "../../../../java/util/Vector.js";
+import { Vector } from "../../../../java/util/Vector.js";
 
     
 import { StoreFrontFactory } from "../../../../org/allbinary/business/context/modules/storefront/StoreFrontFactory.js";
@@ -63,6 +60,34 @@ import { Document } from "../../../../org/w3c/dom/Document.js";
 import { Node } from "../../../../org/w3c/dom/Node.js";
 
     
+
+import { Boolean } from "./Boolean.js";
+
+import { Boolean } from "./Boolean.js";
+
+import { Boolean } from "./Boolean.js";
+
+import { Boolean } from "./Boolean.js";
+
+import { Boolean } from "./Boolean.js";
+
+import { Boolean } from "./Boolean.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
+
+import { Boolean } from "./Boolean.js";
+
+import { Boolean } from "./Boolean.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
 
 export class AddTaxValidationView extends ShippingAddressView
                 , ValidationComponentInterface {

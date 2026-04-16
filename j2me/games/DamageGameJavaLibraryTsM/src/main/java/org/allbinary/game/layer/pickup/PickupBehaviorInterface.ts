@@ -19,7 +19,7 @@
 
 
 
-interface PickupBehaviorInterface {
+export interface PickupBehaviorInterface {
         
 
                 //@Throws(Error::class)

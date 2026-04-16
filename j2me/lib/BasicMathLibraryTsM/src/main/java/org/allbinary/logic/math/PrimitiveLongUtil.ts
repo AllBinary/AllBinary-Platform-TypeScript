@@ -25,6 +25,10 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
     
 
+import { PrimitiveLongSingleton } from "./PrimitiveLongSingleton.js";
+
+import { MathUtil } from "./MathUtil.js";
+
 export class PrimitiveLongUtil
             extends Object
          {

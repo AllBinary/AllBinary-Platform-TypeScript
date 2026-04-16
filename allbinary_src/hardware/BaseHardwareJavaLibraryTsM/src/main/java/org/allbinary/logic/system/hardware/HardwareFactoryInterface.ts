@@ -19,7 +19,7 @@
 
 
 
-interface HardwareFactoryInterface {
+export interface HardwareFactoryInterface {
         
 
 }

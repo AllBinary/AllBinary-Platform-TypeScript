@@ -34,6 +34,12 @@ import { OpenGLCapabilities } from "../../../org/allbinary/graphics/opengles/Ope
 
     
 
+import { Math } from "./Math.js";
+
+import { Math } from "./Math.js";
+
+import { Math } from "./Math.js";
+
 export class GLUtil
             extends Object
          {

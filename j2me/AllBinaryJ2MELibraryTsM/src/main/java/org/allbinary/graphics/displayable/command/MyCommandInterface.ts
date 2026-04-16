@@ -22,7 +22,7 @@ import { Command } from "../../../../../javax/microedition/lcdui/Command.js";
 
     
 
-interface MyCommandInterface {
+export interface MyCommandInterface {
         
 
     public addCommand(command: Command)

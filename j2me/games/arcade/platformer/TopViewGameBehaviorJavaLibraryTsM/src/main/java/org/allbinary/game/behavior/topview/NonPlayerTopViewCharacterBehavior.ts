@@ -58,6 +58,10 @@ import { GeographicMapCellType } from "../../../../../org/allbinary/media/graphi
 
     
 
+import {  } from "./.js";
+
+import {  } from "./.js";
+
 export class NonPlayerTopViewCharacterBehavior extends TopViewCharacterBehavior {
         
 

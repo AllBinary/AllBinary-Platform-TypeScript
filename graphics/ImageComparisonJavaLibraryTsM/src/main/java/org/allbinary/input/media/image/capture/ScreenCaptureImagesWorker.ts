@@ -40,6 +40,10 @@ import { TimeDelayHelper } from "../../../../../../org/allbinary/time/TimeDelayH
 
     
 
+import { ProcessingFrameIndexFactory } from "./ProcessingFrameIndexFactory.js";
+
+import { CapturedBufferedImagesCacheSingleton } from "./CapturedBufferedImagesCacheSingleton.js";
+
 export class ScreenCaptureImagesWorker extends BasicEventHandler
                 , CaptureWorkerInterface {
         

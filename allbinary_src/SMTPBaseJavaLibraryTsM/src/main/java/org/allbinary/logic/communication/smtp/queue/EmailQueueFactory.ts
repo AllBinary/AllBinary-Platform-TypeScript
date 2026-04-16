@@ -19,6 +19,8 @@
 
 
 
+import { BasicEmailQueue } from "./BasicEmailQueue.js";
+
 export class EmailQueueFactory
             extends Object
          {

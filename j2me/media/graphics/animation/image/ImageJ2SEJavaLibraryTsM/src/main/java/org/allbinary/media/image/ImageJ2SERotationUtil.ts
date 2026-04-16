@@ -28,6 +28,12 @@ import { BufferedImage } from "../../../../java/awt/image/BufferedImage.js";
 
     
 
+import { ImageUtil } from "./ImageUtil.js";
+
+import { ImageJ2SEUtil } from "./ImageJ2SEUtil.js";
+
+import { Math } from "./Math.js";
+
 export class ImageJ2SERotationUtil
             extends Object
          {

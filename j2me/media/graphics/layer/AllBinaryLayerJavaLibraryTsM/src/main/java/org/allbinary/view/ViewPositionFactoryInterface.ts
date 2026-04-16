@@ -19,7 +19,7 @@
 
 
 
-interface ViewPositionFactoryInterface {
+export interface ViewPositionFactoryInterface {
         
 
                 //@Throws(Error::class)

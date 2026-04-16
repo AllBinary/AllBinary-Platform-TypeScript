@@ -28,6 +28,10 @@ import { CommonSeps } from "../../../org/allbinary/string/CommonSeps.js";
 
     
 
+import { AngleIncrementInfoFactory } from "./AngleIncrementInfoFactory.js";
+
+import { FrameUtil } from "./FrameUtil.js";
+
 export class AngleInfo
             extends Object
          {

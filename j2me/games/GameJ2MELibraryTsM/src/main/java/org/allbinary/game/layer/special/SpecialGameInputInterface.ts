@@ -28,7 +28,7 @@ import { AllBinaryLayerManager } from "../../../../../org/allbinary/layer/AllBin
 
     
 
-interface SpecialGameInputInterface extends PaintableInterface {
+export interface SpecialGameInputInterface extends PaintableInterface {
         
 
                 //@Throws(Error::class)

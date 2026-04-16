@@ -22,7 +22,7 @@ import { MinMaxIntConstraintInterface } from "../../../../../../org/allbinary/lo
 
     
 
-interface SizeConstraintInterface extends MinMaxIntConstraintInterface {
+export interface SizeConstraintInterface extends MinMaxIntConstraintInterface {
         
 
 }

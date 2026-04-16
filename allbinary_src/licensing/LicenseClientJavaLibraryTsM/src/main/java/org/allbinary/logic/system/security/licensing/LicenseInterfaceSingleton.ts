@@ -19,6 +19,8 @@
 
 
 
+import { AbeNoLicense } from "./AbeNoLicense.js";
+
 export class LicenseInterfaceSingleton
             extends Object
          {

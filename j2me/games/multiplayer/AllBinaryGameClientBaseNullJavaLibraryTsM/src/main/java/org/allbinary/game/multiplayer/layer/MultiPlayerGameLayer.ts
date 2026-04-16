@@ -31,6 +31,8 @@ import { ViewPosition } from "../../../../../org/allbinary/view/ViewPosition.js"
 
     
 
+import { MultiplayerBehavior } from "./MultiplayerBehavior.js";
+
 export class MultiPlayerGameLayer extends CollidableDestroyableDamageableLayer
                 , MultiPlayerGameLayerInterface {
         

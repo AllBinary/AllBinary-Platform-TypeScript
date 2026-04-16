@@ -19,7 +19,7 @@
 
 
 
-interface SecuredNativeLibraryInterface {
+export interface SecuredNativeLibraryInterface {
         
 
                 //@Throws(Error::class)

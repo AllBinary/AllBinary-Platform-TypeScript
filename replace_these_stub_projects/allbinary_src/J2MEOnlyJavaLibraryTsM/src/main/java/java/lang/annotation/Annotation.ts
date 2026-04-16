@@ -5,7 +5,7 @@
 
 
 
-interface Annotation {
+export interface Annotation {
         
 
     annotationType(): Function

@@ -28,7 +28,7 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
     
 
-interface ResourceRelativeRelationshipFactoryInterface extends GameFeatureControlledInterface {
+export interface ResourceRelativeRelationshipFactoryInterface extends GameFeatureControlledInterface {
         
 
                 //@Throws(Error::class)

@@ -19,7 +19,7 @@
 
 
 
-interface EmailServerConfigurationInterface {
+export interface EmailServerConfigurationInterface {
         
 
     public setSmtpServer(value: string)

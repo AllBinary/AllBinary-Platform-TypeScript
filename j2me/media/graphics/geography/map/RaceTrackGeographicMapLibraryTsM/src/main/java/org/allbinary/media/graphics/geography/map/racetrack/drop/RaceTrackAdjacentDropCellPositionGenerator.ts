@@ -18,10 +18,7 @@
 
 
 
-            import Hashtable from "@ohos.util.HashMap";
-        
-
-//import { Hashtable } from "../../../../../../../../java/util/Hashtable.js";
+import { Hashtable } from "../../../../../../../../java/util/Hashtable.js";
 
     
 import { BasicArrayList } from "../../../../../../../../org/allbinary/util/BasicArrayList.js";
@@ -87,6 +84,8 @@ import { RaceTrackGeographicMapCellType } from "../../../../../../../../org/allb
 import { RaceTrackGeographicMapCellTypeFactory } from "../../../../../../../../org/allbinary/media/graphics/geography/map/racetrack/RaceTrackGeographicMapCellTypeFactory.js";
 
     
+
+import { RaceTrackAdjacentDropLayerFactory } from "./RaceTrackAdjacentDropLayerFactory.js";
 
 export class RaceTrackAdjacentDropCellPositionGenerator extends RaceTrackDropCellPositionGenerator {
         

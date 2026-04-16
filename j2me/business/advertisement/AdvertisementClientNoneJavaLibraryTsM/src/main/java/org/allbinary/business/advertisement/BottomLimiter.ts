@@ -25,6 +25,8 @@ import { DisplayInfoSingleton } from "../../../../org/allbinary/graphics/display
 
     
 
+import { GameAdStateFactory } from "./GameAdStateFactory.js";
+
 export class BottomLimiter
             extends Object
          {

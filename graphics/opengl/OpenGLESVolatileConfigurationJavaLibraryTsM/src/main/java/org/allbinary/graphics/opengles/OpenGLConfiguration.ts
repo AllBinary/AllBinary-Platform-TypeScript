@@ -46,6 +46,22 @@ import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js
 
     
 
+import { OpenGLFeatureFactory } from "./OpenGLFeatureFactory.js";
+
+import { OpenGLFeatureFactory } from "./OpenGLFeatureFactory.js";
+
+import { OpenGLFeatureFactory } from "./OpenGLFeatureFactory.js";
+
+import { OpenGLFeatureFactory } from "./OpenGLFeatureFactory.js";
+
+import { OpenGLFeatureFactory } from "./OpenGLFeatureFactory.js";
+
+import { OpenGLFeatureFactory } from "./OpenGLFeatureFactory.js";
+
+import { OpenGLFeatureFactory } from "./OpenGLFeatureFactory.js";
+
+import { OpenGLFeatureFactory } from "./OpenGLFeatureFactory.js";
+
 export class OpenGLConfiguration
             extends Object
          {

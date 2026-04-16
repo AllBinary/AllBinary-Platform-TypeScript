@@ -22,7 +22,7 @@ import { GameInfo } from "../../../../org/allbinary/game/GameInfo.js";
 
     
 
-interface HighScoresFactoryInterface {
+export interface HighScoresFactoryInterface {
         
 
     fetchHighScores(gameInfo: GameInfo, highScoresResultsListener: HighScoresResultsListener)

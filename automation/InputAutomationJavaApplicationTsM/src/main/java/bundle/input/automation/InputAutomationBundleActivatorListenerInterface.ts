@@ -19,7 +19,7 @@
 
 
 
-interface InputAutomationBundleActivatorListenerInterface {
+export interface InputAutomationBundleActivatorListenerInterface {
         
 
                 //@Throws(Error::class)

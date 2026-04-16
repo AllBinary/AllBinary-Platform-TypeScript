@@ -18,10 +18,7 @@
 
 
 
-            import HashMap from "@ohos.util.HashMap";
-        
-
-//import { HashMap } from "../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../java/util/HashMap.js";
 
     
 import { UserConfigurationInterface } from "../../../../org/allbinary/business/user/modules/configuration/UserConfigurationInterface.js";
@@ -40,7 +37,7 @@ import { ValidationInterface } from "../../../../org/allbinary/logic/control/val
 
     
 
-interface UserInterface extends TableMappingInterface, ValidationInterface {
+export interface UserInterface extends TableMappingInterface, ValidationInterface {
         
 
     public setUserName(value: string)

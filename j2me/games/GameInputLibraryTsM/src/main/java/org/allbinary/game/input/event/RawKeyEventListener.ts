@@ -19,7 +19,7 @@
 
 
 
-interface RawKeyEventListener {
+export interface RawKeyEventListener {
         
 
     onEvent(keyCode: number, deviceId: number, repeated: boolean)

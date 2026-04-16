@@ -28,6 +28,8 @@ import { GeographicMapCellPosition } from "../../../../org/allbinary/media/graph
 
     
 
+import { Thread } from "./Thread.js";
+
 export class WaypointPathRunnable extends WaypointPathRunnableBase {
         
 

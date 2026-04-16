@@ -19,7 +19,7 @@
 
 
 
-interface PingInfoCompositeInterface {
+export interface PingInfoCompositeInterface {
         
 
     setPingInfo(show: boolean)

@@ -18,13 +18,10 @@
 
 
 
-            import HashMap from "@ohos.util.HashMap";
-        
 import { ResultSet } from "../../../../../java/sql/ResultSet.js";
 
     
-
-//import { HashMap } from "../../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../../java/util/HashMap.js";
 
     
 import { Set } from "../../../../../java/util/Set.js";
@@ -39,6 +36,46 @@ import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/Lo
 import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";
 
     
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
+
+import {  } from "./.js";
+
+import {  } from "./.js";
+
+import { GLOBALS2 } from "./GLOBALS2.js";
+
+import { GLOBALS2 } from "./GLOBALS2.js";
+
+import { GLOBALS2 } from "./GLOBALS2.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
 
 export class AbSqlBean extends AbSqlRow {
         

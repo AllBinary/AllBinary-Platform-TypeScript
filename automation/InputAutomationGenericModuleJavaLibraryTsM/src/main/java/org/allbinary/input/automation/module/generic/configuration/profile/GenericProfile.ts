@@ -18,10 +18,7 @@
 
 
 
-            import Vector from "@ohos.util.Vector";
-        
-
-//import { Vector } from "../../../../../../../../java/util/Vector.js";
+import { Vector } from "../../../../../../../../java/util/Vector.js";
 
     
 import { DomNodeHelper } from "../../../../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js";
@@ -45,6 +42,12 @@ import { Node } from "../../../../../../../../org/w3c/dom/Node.js";
 import { NodeList } from "../../../../../../../../org/w3c/dom/NodeList.js";
 
     
+
+import { GenericProfileDataWorkerData } from "./GenericProfileDataWorkerData.js";
+
+import { GenericProfileDataWorkerType } from "./GenericProfileDataWorkerType.js";
+
+import { GenericProfileData } from "./GenericProfileData.js";
 
 export class GenericProfile
             extends Object

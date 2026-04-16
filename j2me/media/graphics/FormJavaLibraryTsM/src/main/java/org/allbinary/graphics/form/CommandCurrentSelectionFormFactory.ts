@@ -34,6 +34,8 @@ import { CustomItem } from "../../../../org/allbinary/graphics/form/item/CustomI
 
     
 
+import { ScrollSelectionFormNoneFactory } from "./ScrollSelectionFormNoneFactory.js";
+
 export class CommandCurrentSelectionFormFactory
             extends Object
          {

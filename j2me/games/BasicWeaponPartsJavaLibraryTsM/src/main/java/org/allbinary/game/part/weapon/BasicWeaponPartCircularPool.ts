@@ -31,6 +31,8 @@ import { AllBinaryLayer } from "../../../../../org/allbinary/layer/AllBinaryLaye
 
     
 
+import { BasicWeaponPart } from "./BasicWeaponPart.js";
+
 export class BasicWeaponPartCircularPool
             extends Object
          {

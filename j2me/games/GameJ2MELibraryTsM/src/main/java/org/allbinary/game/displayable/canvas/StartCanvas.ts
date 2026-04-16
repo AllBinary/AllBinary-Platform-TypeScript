@@ -18,10 +18,7 @@
 
 
 
-            import Hashtable from "@ohos.util.HashMap";
-        
-
-//import { Hashtable } from "../../../../../java/util/Hashtable.js";
+import { Hashtable } from "../../../../../java/util/Hashtable.js";
 
     
 import { Command } from "../../../../../javax/microedition/lcdui/Command.js";
@@ -270,6 +267,24 @@ import { TimeDelayHelper } from "../../../../../org/allbinary/time/TimeDelayHelp
 import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+
+import { NoMenuInputProcessor } from "./NoMenuInputProcessor.js";
+
+import { NullWaitGameRunnable } from "./NullWaitGameRunnable.js";
+
+import { NullWaitGameRunnable } from "./NullWaitGameRunnable.js";
+
+import { NullWaitGameRunnable } from "./NullWaitGameRunnable.js";
+
+import { FormUtil } from "./FormUtil.js";
+
+import { GameInputMappingCanvas } from "./GameInputMappingCanvas.js";
+
+import { GameInputMappingCanvas } from "./GameInputMappingCanvas.js";
+
+import { GameInputMappingCanvas } from "./GameInputMappingCanvas.js";
+
+import { NullWaitGameRunnable } from "./NullWaitGameRunnable.js";
 
 export class StartCanvas extends RunnableCanvas
                 , GameCanvasRunnableInterface

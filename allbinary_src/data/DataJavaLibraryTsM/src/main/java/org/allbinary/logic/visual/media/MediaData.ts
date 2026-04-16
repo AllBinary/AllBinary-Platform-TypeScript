@@ -18,12 +18,17 @@
 
 
 
-            import HashMap from "@ohos.util.HashMap";
-        
-
-//import { HashMap } from "../../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../../java/util/HashMap.js";
 
     
+
+import { MediaTypeData } from "./MediaTypeData.js";
+
+import { MediaDataFactory } from "./MediaDataFactory.js";
+
+import { MediaDataFactory } from "./MediaDataFactory.js";
+
+import { MediaDataFactory } from "./MediaDataFactory.js";
 
 export class MediaData
             extends Object

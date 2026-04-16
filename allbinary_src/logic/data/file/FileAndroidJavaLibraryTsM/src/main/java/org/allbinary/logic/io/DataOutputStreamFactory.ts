@@ -22,6 +22,8 @@ import { AbFile } from "../../../../org/allbinary/logic/io/file/AbFile.js";
 
     
 
+import { FileStreamFactory } from "./FileStreamFactory.js";
+
 export class DataOutputStreamFactory
             extends Object
          {

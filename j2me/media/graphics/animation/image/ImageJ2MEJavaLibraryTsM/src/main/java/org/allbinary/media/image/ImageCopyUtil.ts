@@ -40,6 +40,8 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
     
 
+import { ImageCreationUtil } from "./ImageCreationUtil.js";
+
 export class ImageCopyUtil
             extends Object
          {

@@ -5,6 +5,8 @@
 
 
 
+import { OpenGLESNullGraphicsFactory } from "./OpenGLESNullGraphicsFactory.js";
+
 export class OpenGLESGraphicsFactory
             extends Object
          {

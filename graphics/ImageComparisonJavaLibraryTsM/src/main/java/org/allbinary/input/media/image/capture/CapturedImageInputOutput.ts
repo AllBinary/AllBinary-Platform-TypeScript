@@ -55,6 +55,10 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
     
 
+import { CapturedBufferedImagesCacheSingleton } from "./CapturedBufferedImagesCacheSingleton.js";
+
+import { JPG } from "./JPG.js";
+
 export class CapturedImageInputOutput
             extends Object
         

@@ -18,10 +18,7 @@
 
 
 
-            import Vector from "@ohos.util.Vector";
-        
-
-//import { Vector } from "../../../../java/util/Vector.js";
+import { Vector } from "../../../../java/util/Vector.js";
 
     
 import { PaymentGatewayEntityFactory } from "../../../../org/allbinary/data/tables/user/commerce/money/payment/gateway/PaymentGatewayEntityFactory.js";
@@ -39,6 +36,12 @@ import { TransformInfoInterface } from "../../../../org/allbinary/logic/visual/t
 import { PaymentGatewayViewAbstract } from "../../../../views/admin/payment/gateway/PaymentGatewayViewAbstract.js";
 
     
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
 
 export class SelectExistingView extends PaymentGatewayViewAbstract {
         

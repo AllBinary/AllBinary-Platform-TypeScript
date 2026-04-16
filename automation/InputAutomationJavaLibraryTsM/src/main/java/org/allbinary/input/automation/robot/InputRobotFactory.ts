@@ -18,16 +18,13 @@
 
 
 
-            import Hashtable from "@ohos.util.HashMap";
-        
 import { awt } from "../../../../../java/awt.js";
 
     
 import { Collection } from "../../../../../java/util/Collection.js";
 
     
-
-//import { Hashtable } from "../../../../../java/util/Hashtable.js";
+import { Hashtable } from "../../../../../java/util/Hashtable.js";
 
     
 import { Iterator } from "../../../../../java/util/Iterator.js";
@@ -60,6 +57,8 @@ import { SecuredNativeLibraryInterface } from "../../../../../org/allbinary/logi
 import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings.js";
 
     
+
+import { GraphicsEnvironment } from "./GraphicsEnvironment.js";
 
 export class InputRobotFactory
             extends Object

@@ -31,6 +31,8 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
     
 
+import { TouchScreenTypesFactory } from "./TouchScreenTypesFactory.js";
+
 export class TouchScreenFactory
             extends Object
          {

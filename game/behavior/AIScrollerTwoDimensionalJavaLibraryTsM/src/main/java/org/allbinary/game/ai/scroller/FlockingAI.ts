@@ -18,12 +18,9 @@
 
 
 
-            import Hashtable from "@ohos.util.HashMap";
-        
             import { Integer } from "../../../../../java/lang/Integer.js";
         
-
-//import { Hashtable } from "../../../../../java/util/Hashtable.js";
+import { Hashtable } from "../../../../../java/util/Hashtable.js";
 
     
 import { Canvas } from "../../../../../javax/microedition/lcdui/Canvas.js";
@@ -56,6 +53,8 @@ import { MathUtil } from "../../../../../org/allbinary/logic/math/MathUtil.js";
 import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+
+import { BasePatrolAI } from "./BasePatrolAI.js";
 
 export class FlockingAI extends BasicAI {
         

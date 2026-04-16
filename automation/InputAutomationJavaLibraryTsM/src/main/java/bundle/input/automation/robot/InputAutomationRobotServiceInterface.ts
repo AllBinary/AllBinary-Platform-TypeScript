@@ -25,7 +25,7 @@ import { OSGIServiceInterface } from "../../../../org/allbinary/osgi/OSGIService
 
     
 
-interface InputAutomationRobotServiceInterface extends OSGIServiceInterface {
+export interface InputAutomationRobotServiceInterface extends OSGIServiceInterface {
         
 
     getInputRobotInterfaceArray(): InputRobotInterface[]

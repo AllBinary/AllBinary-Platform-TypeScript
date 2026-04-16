@@ -22,6 +22,8 @@ import { BooleanFactory } from "../../../../../../../org/allbinary/logic/java/bo
 
     
 
+import { HtmlInputData } from "./HtmlInputData.js";
+
 export class HtmlRadioInput extends HtmlValueInput {
         
 

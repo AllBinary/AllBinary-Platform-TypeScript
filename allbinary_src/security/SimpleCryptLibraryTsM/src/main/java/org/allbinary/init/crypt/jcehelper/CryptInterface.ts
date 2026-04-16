@@ -19,7 +19,7 @@
 
 
 
-interface CryptInterface {
+export interface CryptInterface {
         
 
     public encrypt(array: number[]): number[]

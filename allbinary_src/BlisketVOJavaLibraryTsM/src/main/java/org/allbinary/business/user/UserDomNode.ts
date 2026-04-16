@@ -18,10 +18,7 @@
 
 
 
-            import HashMap from "@ohos.util.HashMap";
-        
-
-//import { HashMap } from "../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../java/util/HashMap.js";
 
     
 import { EntryData } from "../../../../org/allbinary/business/entry/EntryData.js";
@@ -45,6 +42,10 @@ import { Document } from "../../../../org/w3c/dom/Document.js";
 import { Node } from "../../../../org/w3c/dom/Node.js";
 
     
+
+import { UserData } from "./UserData.js";
+
+import { UserData } from "./UserData.js";
 
 export class UserDomNode
             extends Object

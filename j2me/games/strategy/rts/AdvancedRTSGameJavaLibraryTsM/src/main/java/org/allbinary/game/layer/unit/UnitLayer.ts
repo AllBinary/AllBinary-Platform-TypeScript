@@ -18,12 +18,9 @@
 
 
 
-            import Hashtable from "@ohos.util.HashMap";
-        
             import { Integer } from "../../../../../java/lang/Integer.js";
         
-
-//import { Hashtable } from "../../../../../java/util/Hashtable.js";
+import { Hashtable } from "../../../../../java/util/Hashtable.js";
 
     
 import { Canvas } from "../../../../../javax/microedition/lcdui/Canvas.js";
@@ -350,6 +347,14 @@ import { ViewPosition } from "../../../../../org/allbinary/view/ViewPosition.js"
 import { ExplosionBasicSound } from "../../../../../org/allbinary/weapon/media/audio/ExplosionBasicSound.js";
 
     
+
+import {  } from "./.js";
+
+import { Math } from "./Math.js";
+
+import { Math } from "./Math.js";
+
+import { CAPITAL_EVENT } from "./CAPITAL_EVENT.js";
 
 export class UnitLayer extends AdvancedRTSGameLayer
                 , BuildingEventListenerInterface

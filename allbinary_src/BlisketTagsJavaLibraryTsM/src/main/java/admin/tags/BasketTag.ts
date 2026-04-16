@@ -18,13 +18,10 @@
 
 
 
-            import HashMap from "@ohos.util.HashMap";
-        
 import { Method } from "../../java/lang/reflect/Method.js";
 
     
-
-//import { HashMap } from "../../java/util/HashMap.js";
+import { HashMap } from "../../java/util/HashMap.js";
 
     
 import { JspTagException } from "../../javax/servlet/jsp/JspTagException.js";
@@ -54,6 +51,30 @@ import { LicensingException } from "../../org/allbinary/logic/system/security/li
 import { CustomTagSupport } from "../../tags/CustomTagSupport.js";
 
     
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
 
 export class BasketTag extends CustomTagSupport {
         

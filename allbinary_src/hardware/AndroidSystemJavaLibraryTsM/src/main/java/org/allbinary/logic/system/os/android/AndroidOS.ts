@@ -18,6 +18,8 @@
 
 
 
+            import hilog from '@ohos.hilog';
+        
 import { AndroidInfoFactory } from "../../../../../../org/allbinary/android/AndroidInfoFactory.js";
 
     
@@ -31,8 +33,15 @@ import { CommonSeps } from "../../../../../../org/allbinary/string/CommonSeps.js
 
     
 
+import { AndroidSystemProperties } from "./AndroidSystemProperties.js";
+
+import { AndroidSystemProperties } from "./AndroidSystemProperties.js";
+
 export class AndroidOS extends GenericOperatingSystem {
         
+
+            static readonly PUBLIC: string = '%{public}s';
+            
 
     private stringBuffer: StringBuilder = new StringBuilder();
         

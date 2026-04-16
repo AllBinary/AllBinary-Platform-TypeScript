@@ -18,10 +18,7 @@
 
 
 
-            import Vector from "@ohos.util.Vector";
-        
-
-//import { Vector } from "../../../java/util/Vector.js";
+import { Vector } from "../../../java/util/Vector.js";
 
     
 import { BasicItemView } from "../../../org/allbinary/business/user/commerce/inventory/item/BasicItemView.js";
@@ -66,6 +63,12 @@ import { TransformInfoInterface } from "../../../org/allbinary/logic/visual/tran
 import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
 
     
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
 
 export class InventorySearchProductUtil
             extends Object

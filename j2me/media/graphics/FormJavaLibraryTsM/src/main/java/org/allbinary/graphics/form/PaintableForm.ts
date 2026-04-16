@@ -35,6 +35,10 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
     
 
+import { FormTypeFactory } from "./FormTypeFactory.js";
+
+import { FormTypeFactory } from "./FormTypeFactory.js";
+
 export class PaintableForm extends CustomForm {
         
 

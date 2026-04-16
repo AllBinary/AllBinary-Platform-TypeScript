@@ -31,6 +31,10 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
     
 
+import { LogFormatUtil } from "./LogFormatUtil.js";
+
+import { PreLogUtil } from "./PreLogUtil.js";
+
 /*actual*/ export class LogUtil
             extends Object
          {
@@ -45,7 +49,7 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return LogUtil.instance;
     
 }
 
@@ -64,13 +68,13 @@ private constructor (){
 
 
     /*actual*/ public init(){
-PreLogUtil.put("Loggin Initialized", "LogUtil", "init()");
+PreLogUtil.put("Loggin Initialized", this, "init()");
     
 }
 
 
     /*actual*/ public putL(log: Log){
-var log = log
+    //var log = log
 
     var exception: any = log.getThrowable()!;
         
@@ -127,12 +131,12 @@ var log = log
                                     }
                                 
 
-    var message: string = logFormatUtil!.get(className, functionName, specialMessage, exception)!;
+    var message: string = this.logFormatUtil!.get(className, functionName, specialMessage, exception)!;
         
         
 ;
     
-logger.log(Level.INFO, message);
+this.logger.log(Level.INFO, message);
     
 
                                     }
@@ -177,7 +181,7 @@ logger.log(Level.INFO, message);
                                     }
                                 
 
-    var message: string = logFormatUtil!.getS(className, functionName, specialMessage)!;
+    var message: string = this.logFormatUtil!.getS(className, functionName, specialMessage)!;
         
         
 ;
@@ -188,13 +192,13 @@ logger.log(Level.INFO, message);
                                 )
                         
                                     {
-                                    logger.log(Level.SEVERE, message, exception);
+                                    this.logger.log(Level.SEVERE, message, exception);
     
 
                                     }
                                 
                         else {
-                            logger.log(Level.INFO, message);
+                            this.logger.log(Level.INFO, message);
     
 
                         }

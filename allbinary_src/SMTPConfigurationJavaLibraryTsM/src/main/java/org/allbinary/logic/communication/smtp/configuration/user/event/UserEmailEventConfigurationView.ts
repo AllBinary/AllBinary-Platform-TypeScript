@@ -18,10 +18,7 @@
 
 
 
-            import HashMap from "@ohos.util.HashMap";
-        
-
-//import { HashMap } from "../../../../../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../../../../../java/util/HashMap.js";
 
     
 import { DomNodeHelper } from "../../../../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js";
@@ -42,6 +39,16 @@ import { Node } from "../../../../../../../../org/w3c/dom/Node.js";
 import { NodeList } from "../../../../../../../../org/w3c/dom/NodeList.js";
 
     
+
+import { UserEmailEventConfigurationData } from "./UserEmailEventConfigurationData.js";
+
+import { UserEmailEventConfigurationData } from "./UserEmailEventConfigurationData.js";
+
+import { UserEmailEventConfigurationData } from "./UserEmailEventConfigurationData.js";
+
+import { UserEmailEventConfigurationData } from "./UserEmailEventConfigurationData.js";
+
+import { UserEmailEventConfigurationData } from "./UserEmailEventConfigurationData.js";
 
 export class UserEmailEventConfigurationView
             extends Object

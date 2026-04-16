@@ -19,7 +19,7 @@
 
 
 
-interface BasicEventListenerInterface extends EventListenerInterface {
+export interface BasicEventListenerInterface extends EventListenerInterface {
         
 
 }

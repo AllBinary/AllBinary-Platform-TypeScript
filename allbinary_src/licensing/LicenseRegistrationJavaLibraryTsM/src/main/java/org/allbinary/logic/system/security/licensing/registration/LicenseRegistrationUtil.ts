@@ -18,10 +18,7 @@
 
 
 
-            import Hashtable from "@ohos.util.HashMap";
-        
-
-//import { Hashtable } from "../../../../../../../java/util/Hashtable.js";
+import { Hashtable } from "../../../../../../../java/util/Hashtable.js";
 
     
 import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonStrings.js";
@@ -39,6 +36,12 @@ import { SpecialMessageUtil } from "../../../../../../../org/allbinary/canvas/Sp
 import { CommonLabels } from "../../../../../../../org/allbinary/string/CommonLabels.js";
 
     
+
+import { RegistrationConfiguration } from "./RegistrationConfiguration.js";
+
+import { RegistrationConfiguration } from "./RegistrationConfiguration.js";
+
+import { RegistrationConfiguration } from "./RegistrationConfiguration.js";
 
 export class LicenseRegistrationUtil
             extends Object

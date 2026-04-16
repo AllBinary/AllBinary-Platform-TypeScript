@@ -19,7 +19,7 @@
 
 
 
-interface InventoryViewSearchInterface {
+export interface InventoryViewSearchInterface {
         
 
                 //@Throws(Error::class)

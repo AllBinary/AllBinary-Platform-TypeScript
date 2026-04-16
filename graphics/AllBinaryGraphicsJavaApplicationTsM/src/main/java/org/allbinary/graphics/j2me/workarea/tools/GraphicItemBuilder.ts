@@ -22,6 +22,8 @@ import { Node } from "../../../../../../org/w3c/dom/Node.js";
 
     
 
+import { PointsDomUtil } from "./PointsDomUtil.js";
+
 export class GraphicItemBuilder
             extends Object
          {

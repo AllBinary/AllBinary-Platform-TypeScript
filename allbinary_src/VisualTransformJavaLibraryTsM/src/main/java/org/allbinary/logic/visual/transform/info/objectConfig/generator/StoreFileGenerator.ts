@@ -18,16 +18,13 @@
 
 
 
-            import HashMap from "@ohos.util.HashMap";
-        
 import { ByteArrayInputStream } from "../../../../../../../../java/io/ByteArrayInputStream.js";
 
     
 import { InputStream } from "../../../../../../../../java/io/InputStream.js";
 
     
-
-//import { HashMap } from "../../../../../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../../../../../java/util/HashMap.js";
 
     
 import { URLGLOBALS } from "../../../../../../../../org/allbinary/globals/URLGLOBALS.js";
@@ -84,6 +81,24 @@ import { CommonSeps } from "../../../../../../../../org/allbinary/string/CommonS
 import { CommonStrings } from "../../../../../../../../org/allbinary/string/CommonStrings.js";
 
     
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
 
 export class StoreFileGenerator extends TransformInfoObjectConfigGenerator {
         

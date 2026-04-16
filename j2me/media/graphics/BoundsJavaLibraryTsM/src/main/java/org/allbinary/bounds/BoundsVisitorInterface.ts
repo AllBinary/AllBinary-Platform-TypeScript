@@ -19,7 +19,7 @@
 
 
 
-interface BoundsVisitorInterface {
+export interface BoundsVisitorInterface {
         
 
     getX(): number

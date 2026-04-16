@@ -25,7 +25,7 @@ import { AllBinaryLayer } from "../../../../../org/allbinary/layer/AllBinaryLaye
 
     
 
-interface PickedUpLayerInterfaceFactoryInterface {
+export interface PickedUpLayerInterfaceFactoryInterface {
         
 
     getPickedUpLayerType(): PickedUpLayerType

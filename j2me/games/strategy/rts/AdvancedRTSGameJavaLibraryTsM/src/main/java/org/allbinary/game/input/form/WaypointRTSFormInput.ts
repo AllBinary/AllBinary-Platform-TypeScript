@@ -133,6 +133,10 @@ import { RaceTrackGeographicMapCellTypeFactory } from "../../../../../org/allbin
 
     
 
+import { PrimaryWaypointHelper } from "./PrimaryWaypointHelper.js";
+
+import { WAYPOINT_EVENT } from "./WAYPOINT_EVENT.js";
+
 export class WaypointRTSFormInput extends RTSFormInput {
         
 

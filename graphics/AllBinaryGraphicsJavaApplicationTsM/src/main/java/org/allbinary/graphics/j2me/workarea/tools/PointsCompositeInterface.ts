@@ -19,7 +19,7 @@
 
 
 
-interface PointsCompositeInterface {
+export interface PointsCompositeInterface {
         
 
     getPointsInterface(): PointsInterface

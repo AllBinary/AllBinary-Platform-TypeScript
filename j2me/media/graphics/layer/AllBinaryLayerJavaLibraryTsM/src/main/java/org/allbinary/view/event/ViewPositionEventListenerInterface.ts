@@ -22,7 +22,7 @@ import { EventListenerInterface } from "../../../../org/allbinary/logic/util/eve
 
     
 
-interface ViewPositionEventListenerInterface extends EventListenerInterface {
+export interface ViewPositionEventListenerInterface extends EventListenerInterface {
         
 
                 //@Throws(Error::class)

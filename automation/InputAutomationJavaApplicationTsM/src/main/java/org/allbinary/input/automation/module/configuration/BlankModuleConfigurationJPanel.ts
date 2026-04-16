@@ -19,6 +19,22 @@
 
 
 
+import { Alignment } from "./Alignment.js";
+
+import { GroupLayout } from "./GroupLayout.js";
+
+import { Alignment } from "./Alignment.js";
+
+import { GroupLayout } from "./GroupLayout.js";
+
+import { Short } from "./Short.js";
+
+import { Alignment } from "./Alignment.js";
+
+import { GroupLayout } from "./GroupLayout.js";
+
+import { Short } from "./Short.js";
+
 export class BlankModuleConfigurationJPanel extends javax.swing.JPanel {
         
 public constructor (){

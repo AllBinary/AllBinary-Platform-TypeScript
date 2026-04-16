@@ -37,6 +37,12 @@ import { Features } from "../../../org/allbinary/game/configuration/feature/Feat
 
     
 
+import { PreResourceImageUtil } from "./PreResourceImageUtil.js";
+
+import { PreResourceImageUtil } from "./PreResourceImageUtil.js";
+
+import { PreResourceImageUtil } from "./PreResourceImageUtil.js";
+
 export class ChoiceGroupImageUtil
             extends Object
          {

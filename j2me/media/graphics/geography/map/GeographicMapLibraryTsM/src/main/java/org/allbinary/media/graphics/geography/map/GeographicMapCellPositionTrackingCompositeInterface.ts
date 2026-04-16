@@ -5,7 +5,7 @@
 
 
 
-interface GeographicMapCellPositionTrackingCompositeInterface {
+export interface GeographicMapCellPositionTrackingCompositeInterface {
         
 
     getGeographicMapCellPositionTracking(): GeographicMapCellPositionTracking

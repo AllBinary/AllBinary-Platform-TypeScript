@@ -37,6 +37,8 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
     
 
+import { String } from "./String.js";
+
 export class PartnerIdentifierFileUtil
             extends Object
          {

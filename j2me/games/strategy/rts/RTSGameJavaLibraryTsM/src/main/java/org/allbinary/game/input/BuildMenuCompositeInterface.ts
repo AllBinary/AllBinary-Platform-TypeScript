@@ -22,7 +22,7 @@ import { ScrollSelectionForm } from "../../../../org/allbinary/graphics/form/Scr
 
     
 
-interface BuildMenuCompositeInterface {
+export interface BuildMenuCompositeInterface {
         
 
     getCurrentScrollSelectionForm(): ScrollSelectionForm

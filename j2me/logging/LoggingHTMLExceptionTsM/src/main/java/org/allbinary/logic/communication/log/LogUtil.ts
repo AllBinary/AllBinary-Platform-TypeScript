@@ -25,6 +25,12 @@ import { PlayN } from "../../../../../playn/core/PlayN.js";
 
     
 
+import { LogFormatUtil } from "./LogFormatUtil.js";
+
+import { PreLogUtil } from "./PreLogUtil.js";
+
+import { PreLogUtil } from "./PreLogUtil.js";
+
 /*actual*/ export class LogUtil
             extends Object
          {
@@ -39,7 +45,7 @@ import { PlayN } from "../../../../../playn/core/PlayN.js";
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return LogUtil.instance;
     
 }
 
@@ -125,12 +131,12 @@ put(specialMessage, anyType, functionName, exception);
                                     }
                                 
 
-    var message: string = logFormatUtil!.getS(className, functionName, specialMessage)!;
+    var message: string = this.logFormatUtil!.getS(className, functionName, specialMessage)!;
         
         
 ;
     
-PlayN.log()!.debug(LOG_SUCCESS +message);
+PlayN.log()!.debug(this.LOG_SUCCESS +message);
     
 }
 
@@ -158,7 +164,7 @@ PlayN.log()!.debug(LOG_SUCCESS +message);
                                     }
                                 
 
-    var message: string = logFormatUtil!.get(className, functionName, specialMessage, exception)!;
+    var message: string = this.logFormatUtil!.get(className, functionName, specialMessage, exception)!;
         
         
 ;
@@ -169,13 +175,13 @@ PlayN.log()!.debug(LOG_SUCCESS +message);
                                 )
                         
                                     {
-                                    PlayN.log()!.error(LOG_SUCCESS +message, exception as Error);
+                                    PlayN.log()!.error(this.LOG_SUCCESS +message, exception as Error);
     
 
                                     }
                                 
                         else {
-                            PlayN.log()!.debug(LOG_SUCCESS +message);
+                            PlayN.log()!.debug(this.LOG_SUCCESS +message);
     
 
                         }

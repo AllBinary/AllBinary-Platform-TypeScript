@@ -22,7 +22,7 @@ import { TimeDelayHelper } from "../../../../../../../org/allbinary/time/TimeDel
 
     
 
-interface TimeIntervalActionScriptConditionInterface {
+export interface TimeIntervalActionScriptConditionInterface {
         
 
     getTimeDelayHelper(): TimeDelayHelper

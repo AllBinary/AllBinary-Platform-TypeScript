@@ -25,6 +25,10 @@ import { AllBinaryEventCircularPool } from "../../../../org/allbinary/logic/util
 
     
 
+import { EVENT_POOL } from "./EVENT_POOL.js";
+
+import { EVENT_POOL } from "./EVENT_POOL.js";
+
 export class TrackingEventCircularStaticPool
             extends Object
          {

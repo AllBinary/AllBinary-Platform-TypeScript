@@ -40,7 +40,7 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
     
 
-interface WaypointLayerInterface {
+export interface WaypointLayerInterface {
         
 
                 //@Throws(Error::class)

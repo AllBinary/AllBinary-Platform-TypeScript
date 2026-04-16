@@ -22,6 +22,8 @@ import { InputImageType } from "../../../../../../../../org/allbinary/input/medi
 
     
 
+import { CAPTURE } from "./CAPTURE.js";
+
 export class SavedCaptureGenericProfileDataWorkerType extends GenericProfileDataWorkerType {
         
 

@@ -43,6 +43,8 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
     
 
+import { LOGGING } from "./LOGGING.js";
+
 export class SolarisOperatingSystemFactory
             extends Object
          {

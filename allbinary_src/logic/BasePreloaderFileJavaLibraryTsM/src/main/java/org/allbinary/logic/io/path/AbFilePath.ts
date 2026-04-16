@@ -19,6 +19,8 @@
 
 
 
+import { PathUtil } from "./PathUtil.js";
+
 export class AbFilePath extends AbPath {
         
 public constructor (aPath: string)                        

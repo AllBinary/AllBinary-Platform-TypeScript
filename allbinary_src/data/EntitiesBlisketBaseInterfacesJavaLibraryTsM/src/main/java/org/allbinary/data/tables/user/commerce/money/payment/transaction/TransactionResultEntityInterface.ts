@@ -25,7 +25,7 @@ import { BasicDataTableInterface } from "../../../../../../../../../org/allbinar
 
     
 
-interface TransactionResultEntityInterface extends BasicDataTableInterface {
+export interface TransactionResultEntityInterface extends BasicDataTableInterface {
         
 
     public getTransactionResultInterface(orderNumber: string): TransactionResultInterface

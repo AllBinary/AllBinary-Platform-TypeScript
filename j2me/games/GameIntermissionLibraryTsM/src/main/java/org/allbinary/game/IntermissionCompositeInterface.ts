@@ -19,7 +19,7 @@
 
 
 
-interface IntermissionCompositeInterface {
+export interface IntermissionCompositeInterface {
         
 
     getStartIntermissionInterface(): IntermissionInterface

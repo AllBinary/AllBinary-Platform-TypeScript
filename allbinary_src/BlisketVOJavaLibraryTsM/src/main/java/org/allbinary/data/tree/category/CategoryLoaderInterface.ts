@@ -25,7 +25,7 @@ import { Document } from "../../../../../org/w3c/dom/Document.js";
 
     
 
-interface CategoryLoaderInterface extends CategoryModifierTreeInterface {
+export interface CategoryLoaderInterface extends CategoryModifierTreeInterface {
         
 
     public getDoc(categoryInterface: CategoryInterface): Document

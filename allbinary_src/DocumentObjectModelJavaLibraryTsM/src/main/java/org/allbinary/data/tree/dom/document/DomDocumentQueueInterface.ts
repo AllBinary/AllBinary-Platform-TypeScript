@@ -22,7 +22,7 @@ import { DomDocumentMappingInterface } from "../../../../../../org/allbinary/dat
 
     
 
-interface DomDocumentQueueInterface {
+export interface DomDocumentQueueInterface {
         
 
                 //@Throws(Error::class)

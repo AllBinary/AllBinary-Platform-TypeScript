@@ -18,10 +18,7 @@
 
 
 
-            import HashMap from "@ohos.util.HashMap";
-        
-
-//import { HashMap } from "../../../../../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../../../../../java/util/HashMap.js";
 
     
 import { DomNodeInterface } from "../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js";
@@ -36,6 +33,8 @@ import { Document } from "../../../../../../../../org/w3c/dom/Document.js";
 import { Node } from "../../../../../../../../org/w3c/dom/Node.js";
 
     
+
+import { StoreFrontAdvertisementsStatisticsData } from "./StoreFrontAdvertisementsStatisticsData.js";
 
 export class StoreFrontAdvertisementsStatisticsView
             extends Object

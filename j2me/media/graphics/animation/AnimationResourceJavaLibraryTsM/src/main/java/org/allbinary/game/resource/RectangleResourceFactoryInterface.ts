@@ -22,7 +22,7 @@ import { Rectangle } from "../../../../org/allbinary/graphics/Rectangle.js";
 
     
 
-interface RectangleResourceFactoryInterface {
+export interface RectangleResourceFactoryInterface {
         
 
                 //@Throws(Error::class)

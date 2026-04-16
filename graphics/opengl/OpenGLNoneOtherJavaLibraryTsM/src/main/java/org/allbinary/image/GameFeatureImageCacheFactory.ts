@@ -19,6 +19,12 @@
 
 
 
+import { ImageCacheFactory } from "./ImageCacheFactory.js";
+
+import { ImageCacheFactory } from "./ImageCacheFactory.js";
+
+import { ImageCacheFactory } from "./ImageCacheFactory.js";
+
 export class GameFeatureImageCacheFactory
             extends Object
          {

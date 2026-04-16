@@ -34,6 +34,8 @@ import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
 
     
 
+import { FrameUtil } from "./FrameUtil.js";
+
 export class AngleFactory
             extends Object
          {

@@ -22,6 +22,10 @@ import { StringValidationUtil } from "../../../../../org/allbinary/logic/string/
 
     
 
+import { BooleanFactory } from "./BooleanFactory.js";
+
+import { BooleanFactory } from "./BooleanFactory.js";
+
 export class BooleanUtil
             extends Object
          {

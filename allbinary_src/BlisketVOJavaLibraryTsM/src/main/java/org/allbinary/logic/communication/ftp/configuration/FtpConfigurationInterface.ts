@@ -19,7 +19,7 @@
 
 
 
-interface FtpConfigurationInterface {
+export interface FtpConfigurationInterface {
         
 
     public getServer(): string

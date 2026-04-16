@@ -25,6 +25,8 @@ import { CommonPhoneStrings } from "../../../../org/allbinary/string/CommonPhone
 
     
 
+import { InputFactory } from "./InputFactory.js";
+
 export class GameKeyFactory
             extends Object
          {

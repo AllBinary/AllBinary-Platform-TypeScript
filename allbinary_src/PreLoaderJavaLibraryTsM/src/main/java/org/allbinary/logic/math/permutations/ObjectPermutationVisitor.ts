@@ -14,6 +14,8 @@ import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
 
     
 
+import { System } from "./System.js";
+
 export class ObjectPermutationVisitor extends Visitor {
         
 

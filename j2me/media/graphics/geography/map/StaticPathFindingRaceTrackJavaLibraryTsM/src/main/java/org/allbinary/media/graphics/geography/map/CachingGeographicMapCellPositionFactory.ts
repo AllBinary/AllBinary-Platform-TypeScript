@@ -18,15 +18,14 @@
 
 
 
-            import Hashtable from "@ohos.util.HashMap";
-        
-
-//import { Hashtable } from "../../../../../../java/util/Hashtable.js";
+import { Hashtable } from "../../../../../../java/util/Hashtable.js";
 
     
 import { CellPosition } from "../../../../../../org/allbinary/graphics/CellPosition.js";
 
     
+
+import { GeographicMapCellPositionFactory } from "./GeographicMapCellPositionFactory.js";
 
 export class CachingGeographicMapCellPositionFactory extends BasicGeographicMapCellPositionFactory {
         

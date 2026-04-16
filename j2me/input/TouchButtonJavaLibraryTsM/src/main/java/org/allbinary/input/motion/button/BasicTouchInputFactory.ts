@@ -37,6 +37,8 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
     
 
+import { CancelTouchButtonInputFactory } from "./CancelTouchButtonInputFactory.js";
+
 export class BasicTouchInputFactory
             extends Object
          {

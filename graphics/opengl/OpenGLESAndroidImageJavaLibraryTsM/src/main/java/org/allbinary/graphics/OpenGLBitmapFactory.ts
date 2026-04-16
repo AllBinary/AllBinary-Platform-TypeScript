@@ -29,6 +29,8 @@ import { AndroidImageInterface } from "../../../org/microemu/android/device/Andr
 
     
 
+import { Config } from "./Config.js";
+
 export class OpenGLBitmapFactory extends PlatformBitmapBaseFactory {
         
 

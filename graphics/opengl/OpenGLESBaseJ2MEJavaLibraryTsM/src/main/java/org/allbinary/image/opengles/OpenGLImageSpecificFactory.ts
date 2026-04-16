@@ -28,6 +28,8 @@ import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js
 
     
 
+import { OpenGLImageFactory } from "./OpenGLImageFactory.js";
+
 export class OpenGLImageSpecificFactory
             extends Object
          {

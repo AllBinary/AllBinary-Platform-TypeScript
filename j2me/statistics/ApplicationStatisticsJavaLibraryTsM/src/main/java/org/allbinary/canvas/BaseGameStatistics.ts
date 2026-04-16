@@ -45,6 +45,16 @@ import { TimeDelayHelper } from "../../../org/allbinary/time/TimeDelayHelper.js"
 
     
 
+import { Long } from "./Long.js";
+
+import { Long } from "./Long.js";
+
+import { Long } from "./Long.js";
+
+import { Long } from "./Long.js";
+
+import { Long } from "./Long.js";
+
 export class BaseGameStatistics
             extends Object
          {

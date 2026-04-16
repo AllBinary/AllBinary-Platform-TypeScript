@@ -34,6 +34,8 @@ import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
 
     
 
+import { SystemProperties } from "./SystemProperties.js";
+
 export class GenericOperatingSystem
             extends Object
         

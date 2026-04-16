@@ -19,7 +19,7 @@
 
 
 
-interface VideoInterface {
+export interface VideoInterface {
         
 
 }

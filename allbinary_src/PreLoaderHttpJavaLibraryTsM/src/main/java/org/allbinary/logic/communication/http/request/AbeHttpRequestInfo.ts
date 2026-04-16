@@ -18,21 +18,15 @@
 
 
 
-            import Vector from "@ohos.util.Vector";
-        
-            import HashMap from "@ohos.util.HashMap";
-        
             import { Integer } from "../../../../../../java/lang/Integer.js";
         
 import { Enumeration } from "../../../../../../java/util/Enumeration.js";
 
     
-
-//import { HashMap } from "../../../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../../../java/util/HashMap.js";
 
     
-
-//import { Vector } from "../../../../../../java/util/Vector.js";
+import { Vector } from "../../../../../../java/util/Vector.js";
 
     
 import { HttpServletRequest } from "../../../../../../javax/servlet/http/HttpServletRequest.js";
@@ -44,6 +38,8 @@ import { StringUtil } from "../../../../../../org/allbinary/logic/string/StringU
 import { CommonSeps } from "../../../../../../org/allbinary/string/CommonSeps.js";
 
     
+
+import { AbeHttpRequestInfoData } from "./AbeHttpRequestInfoData.js";
 
 export class AbeHttpRequestInfo
             extends Object

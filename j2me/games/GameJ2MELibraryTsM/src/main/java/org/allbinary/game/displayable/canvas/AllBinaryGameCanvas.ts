@@ -18,18 +18,12 @@
 
 
 
-            import Vector from "@ohos.util.Vector";
-        
-            import Hashtable from "@ohos.util.HashMap";
-        
             import { Integer } from "../../../../../java/lang/Integer.js";
         
-
-//import { Hashtable } from "../../../../../java/util/Hashtable.js";
+import { Hashtable } from "../../../../../java/util/Hashtable.js";
 
     
-
-//import { Vector } from "../../../../../java/util/Vector.js";
+import { Vector } from "../../../../../java/util/Vector.js";
 
     
 import { ChoiceGroup } from "../../../../../javax/microedition/lcdui/ChoiceGroup.js";
@@ -389,6 +383,64 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 import { BasicArrayListUtil } from "../../../../../org/allbinary/util/BasicArrayListUtil.js";
 
     
+
+import { NoMenuInputProcessor } from "./NoMenuInputProcessor.js";
+
+import { NoMenuInputProcessor } from "./NoMenuInputProcessor.js";
+
+import { NoMenuInputProcessor } from "./NoMenuInputProcessor.js";
+
+import { BaseGameBehavior } from "./BaseGameBehavior.js";
+
+import { DemoGameBehavior } from "./DemoGameBehavior.js";
+
+import { BaseMenuBehavior } from "./BaseMenuBehavior.js";
+
+import { BaseGameBehavior } from "./BaseGameBehavior.js";
+
+import { DemoGameBehavior } from "./DemoGameBehavior.js";
+
+import { BaseMenuBehavior } from "./BaseMenuBehavior.js";
+
+import { DemoGameBehavior } from "./DemoGameBehavior.js";
+
+import { BaseMenuBehavior } from "./BaseMenuBehavior.js";
+
+import { InGameMenuBehavior } from "./InGameMenuBehavior.js";
+
+import { FormUtil } from "./FormUtil.js";
+
+import { NoMenuInputProcessor } from "./NoMenuInputProcessor.js";
+
+import { FormUtil } from "./FormUtil.js";
+
+import { FormUtil } from "./FormUtil.js";
+
+import { GameLimitedCommandTextItemArrayFactory } from "./GameLimitedCommandTextItemArrayFactory.js";
+
+import { GameLimitedCommandTextItemArrayFactory } from "./GameLimitedCommandTextItemArrayFactory.js";
+
+import { FormUtil } from "./FormUtil.js";
+
+import { System } from "./System.js";
+
+import { System } from "./System.js";
+
+import { NullWaitGameRunnable } from "./NullWaitGameRunnable.js";
+
+import { NullDemoPaintable } from "./NullDemoPaintable.js";
+
+import { LEVEL_NAME } from "./LEVEL_NAME.js";
+
+import { Thread } from "./Thread.js";
+
+import { Thread } from "./Thread.js";
+
+import { Thread } from "./Thread.js";
+
+import { OPENGL_AND_GAME_HAVE_DIFFERENT_THREADS } from "./OPENGL_AND_GAME_HAVE_DIFFERENT_THREADS.js";
+
+import { OPENGL_AS_GAME_THREAD } from "./OPENGL_AS_GAME_THREAD.js";
 
 export class AllBinaryGameCanvas extends RunnableCanvas
                 , AllBinaryGameCanvasInterface

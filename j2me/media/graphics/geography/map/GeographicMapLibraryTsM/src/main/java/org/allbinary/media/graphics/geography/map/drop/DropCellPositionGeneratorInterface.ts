@@ -31,7 +31,7 @@ import { GeographicMapCellPosition } from "../../../../../../../org/allbinary/me
 
     
 
-interface DropCellPositionGeneratorInterface {
+export interface DropCellPositionGeneratorInterface {
         
 
     getName(): string

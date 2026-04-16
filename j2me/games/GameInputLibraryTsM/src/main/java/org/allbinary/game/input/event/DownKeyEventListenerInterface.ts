@@ -24,7 +24,7 @@ import { EventListenerInterface } from "../../../../../org/allbinary/logic/util/
 
     
 
-interface DownKeyEventListenerInterface extends EventListenerInterface {
+export interface DownKeyEventListenerInterface extends EventListenerInterface {
         
 
                 //@Throws(Error::class)

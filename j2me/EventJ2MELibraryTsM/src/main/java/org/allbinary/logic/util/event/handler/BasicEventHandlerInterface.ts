@@ -28,7 +28,7 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 
     
 
-interface BasicEventHandlerInterface {
+export interface BasicEventHandlerInterface {
         
 
     addListener(eventListenerInterface: EventListenerInterface)

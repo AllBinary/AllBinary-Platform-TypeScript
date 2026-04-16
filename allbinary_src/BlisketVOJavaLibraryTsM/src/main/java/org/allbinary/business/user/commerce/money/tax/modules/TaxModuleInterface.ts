@@ -25,7 +25,7 @@ import { StreetAddress } from "../../../../../../../../org/allbinary/business/us
 
     
 
-interface TaxModuleInterface {
+export interface TaxModuleInterface {
         
 
                 //@Throws(Error::class)

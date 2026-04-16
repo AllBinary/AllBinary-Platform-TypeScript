@@ -28,7 +28,7 @@ import { Payment } from "../../../../../../../org/allbinary/business/user/commer
 
     
 
-interface OrderHistoryInterface {
+export interface OrderHistoryInterface {
         
 
     setUserName(value: string)

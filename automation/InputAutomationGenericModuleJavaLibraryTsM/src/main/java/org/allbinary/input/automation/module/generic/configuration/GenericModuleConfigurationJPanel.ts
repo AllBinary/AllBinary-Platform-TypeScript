@@ -18,10 +18,7 @@
 
 
 
-            import Vector from "@ohos.util.Vector";
-        
-
-//import { Vector } from "../../../../../../../java/util/Vector.js";
+import { Vector } from "../../../../../../../java/util/Vector.js";
 
     
 import { GenericProfile } from "../../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/GenericProfile.js";
@@ -48,6 +45,156 @@ import { StringUtil } from "../../../../../../../org/allbinary/logic/string/Stri
 import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonStrings.js";
 
     
+
+import { Alignment } from "./Alignment.js";
+
+import { GroupLayout } from "./GroupLayout.js";
+
+import { Alignment } from "./Alignment.js";
+
+import { GroupLayout } from "./GroupLayout.js";
+
+import { GroupLayout } from "./GroupLayout.js";
+
+import { GroupLayout } from "./GroupLayout.js";
+
+import { Short } from "./Short.js";
+
+import { Alignment } from "./Alignment.js";
+
+import { GroupLayout } from "./GroupLayout.js";
+
+import { GroupLayout } from "./GroupLayout.js";
+
+import { GroupLayout } from "./GroupLayout.js";
+
+import { GroupLayout } from "./GroupLayout.js";
+
+import { BorderFactory } from "./BorderFactory.js";
+
+import { BorderFactory } from "./BorderFactory.js";
+
+import { BorderFactory } from "./BorderFactory.js";
+
+import { BorderFactory } from "./BorderFactory.js";
+
+import { Alignment } from "./Alignment.js";
+
+import { GroupLayout } from "./GroupLayout.js";
+
+import { Alignment } from "./Alignment.js";
+
+import { GroupLayout } from "./GroupLayout.js";
+
+import { Short } from "./Short.js";
+
+import { Alignment } from "./Alignment.js";
+
+import { GroupLayout } from "./GroupLayout.js";
+
+import { ComponentPlacement } from "./ComponentPlacement.js";
+
+import { LayoutStyle } from "./LayoutStyle.js";
+
+import { ComponentPlacement } from "./ComponentPlacement.js";
+
+import { LayoutStyle } from "./LayoutStyle.js";
+
+import { ComponentPlacement } from "./ComponentPlacement.js";
+
+import { LayoutStyle } from "./LayoutStyle.js";
+
+import { ComponentPlacement } from "./ComponentPlacement.js";
+
+import { LayoutStyle } from "./LayoutStyle.js";
+
+import { Short } from "./Short.js";
+
+import { Alignment } from "./Alignment.js";
+
+import { GroupLayout } from "./GroupLayout.js";
+
+import { Alignment } from "./Alignment.js";
+
+import { GroupLayout } from "./GroupLayout.js";
+
+import { ComponentPlacement } from "./ComponentPlacement.js";
+
+import { LayoutStyle } from "./LayoutStyle.js";
+
+import { GroupLayout } from "./GroupLayout.js";
+
+import { GroupLayout } from "./GroupLayout.js";
+
+import { GroupLayout } from "./GroupLayout.js";
+
+import { ComponentPlacement } from "./ComponentPlacement.js";
+
+import { LayoutStyle } from "./LayoutStyle.js";
+
+import { GroupLayout } from "./GroupLayout.js";
+
+import { Short } from "./Short.js";
+
+import { Alignment } from "./Alignment.js";
+
+import { GroupLayout } from "./GroupLayout.js";
+
+import { Alignment } from "./Alignment.js";
+
+import { GroupLayout } from "./GroupLayout.js";
+
+import { ComponentPlacement } from "./ComponentPlacement.js";
+
+import { LayoutStyle } from "./LayoutStyle.js";
+
+import { Alignment } from "./Alignment.js";
+
+import { GroupLayout } from "./GroupLayout.js";
+
+import { GroupLayout } from "./GroupLayout.js";
+
+import { Short } from "./Short.js";
+
+import { GroupLayout } from "./GroupLayout.js";
+
+import { Short } from "./Short.js";
+
+import { Alignment } from "./Alignment.js";
+
+import { GroupLayout } from "./GroupLayout.js";
+
+import { Short } from "./Short.js";
+
+import { Alignment } from "./Alignment.js";
+
+import { GroupLayout } from "./GroupLayout.js";
+
+import { Short } from "./Short.js";
+
+import { Alignment } from "./Alignment.js";
+
+import { GroupLayout } from "./GroupLayout.js";
+
+import { Short } from "./Short.js";
+
+import { GroupLayout } from "./GroupLayout.js";
+
+import { GroupLayout } from "./GroupLayout.js";
+
+import { GroupLayout } from "./GroupLayout.js";
+
+import { Alignment } from "./Alignment.js";
+
+import { GroupLayout } from "./GroupLayout.js";
+
+import { Short } from "./Short.js";
+
+import { GroupLayout } from "./GroupLayout.js";
+
+import { GroupLayout } from "./GroupLayout.js";
+
+import { GroupLayout } from "./GroupLayout.js";
 
 export class GenericModuleConfigurationJPanel extends javax.swing.JPanel
                 , GenericModuleConfigurationInterface {

@@ -19,6 +19,8 @@
 
 
 
+import { AppUrlGlobals } from "./AppUrlGlobals.js";
+
 export class URLGLOBALS
             extends Object
          {

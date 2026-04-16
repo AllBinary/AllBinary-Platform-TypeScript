@@ -79,6 +79,10 @@ import { InApplicationPurchaseFactory } from "../../../../../org/allbinary/logic
 
     
 
+import { HighScoreUtil } from "./HighScoreUtil.js";
+
+import { HighScoreUtil } from "./HighScoreUtil.js";
+
 export class HighScoreTextBox extends CustomTextBox {
         
 

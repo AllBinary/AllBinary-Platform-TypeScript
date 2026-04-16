@@ -34,6 +34,10 @@ import { CanvasSurface } from "../../../../playn/core/CanvasSurface.js";
 
     
 
+import { Math } from "./Math.js";
+
+import { ImageCreationUtil } from "./ImageCreationUtil.js";
+
 export class ImageRotationUtil
             extends Object
          {

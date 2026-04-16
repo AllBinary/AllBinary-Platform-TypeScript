@@ -22,7 +22,7 @@ import { BasicAnimationInterfaceFactoryInterface } from "../../../../org/allbina
 
     
 
-interface ResourceAnimationInterfaceFactoryInterface {
+export interface ResourceAnimationInterfaceFactoryInterface {
         
 
                 //@Throws(Error::class)

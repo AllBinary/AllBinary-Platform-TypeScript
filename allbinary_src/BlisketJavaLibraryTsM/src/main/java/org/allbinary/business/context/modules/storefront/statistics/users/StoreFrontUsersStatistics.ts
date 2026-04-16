@@ -18,19 +18,13 @@
 
 
 
-            import Vector from "@ohos.util.Vector";
-        
-            import HashMap from "@ohos.util.HashMap";
-        
-
-//import { HashMap } from "../../../../../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../../../../../java/util/HashMap.js";
 
     
 import { Set } from "../../../../../../../../java/util/Set.js";
 
     
-
-//import { Vector } from "../../../../../../../../java/util/Vector.js";
+import { Vector } from "../../../../../../../../java/util/Vector.js";
 
     
 import { StoreFrontInterface } from "../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js";
@@ -48,6 +42,8 @@ import { UserEntityFactory } from "../../../../../../../../org/allbinary/data/ta
 import { UserEntityInterface } from "../../../../../../../../org/allbinary/data/tables/user/UserEntityInterface.js";
 
     
+
+import { StoreFrontUsersStatisticsData } from "./StoreFrontUsersStatisticsData.js";
 
 export class StoreFrontUsersStatistics
             extends Object

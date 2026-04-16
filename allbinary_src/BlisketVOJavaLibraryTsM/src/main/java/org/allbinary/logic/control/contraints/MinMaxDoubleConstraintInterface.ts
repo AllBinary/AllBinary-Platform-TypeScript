@@ -19,7 +19,7 @@
 
 
 
-interface MinMaxDoubleConstraintInterface {
+export interface MinMaxDoubleConstraintInterface {
         
 
     public getMax(): number

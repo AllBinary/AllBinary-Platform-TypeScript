@@ -18,16 +18,10 @@
 
 
 
-            import Vector from "@ohos.util.Vector";
-        
-            import Hashtable from "@ohos.util.HashMap";
-        
-
-//import { Hashtable } from "../../../../../../java/util/Hashtable.js";
+import { Hashtable } from "../../../../../../java/util/Hashtable.js";
 
     
-
-//import { Vector } from "../../../../../../java/util/Vector.js";
+import { Vector } from "../../../../../../java/util/Vector.js";
 
     
 import { NullUtil } from "../../../../../../org/allbinary/logic/NullUtil.js";
@@ -81,6 +75,34 @@ import { VideoInterface } from "../../../../../../org/allbinary/logic/system/har
 import { CommonSeps } from "../../../../../../org/allbinary/string/CommonSeps.js";
 
     
+
+import { ETHERNET } from "./ETHERNET.js";
+
+import { BRIDGE } from "./BRIDGE.js";
+
+import { IDE } from "./IDE.js";
+
+import { MULTIMEDIA } from "./MULTIMEDIA.js";
+
+import { SCSI } from "./SCSI.js";
+
+import { USB } from "./USB.js";
+
+import { VGA } from "./VGA.js";
+
+import { VGA } from "./VGA.js";
+
+import { USB } from "./USB.js";
+
+import { SCSI } from "./SCSI.js";
+
+import { MULTIMEDIA } from "./MULTIMEDIA.js";
+
+import { IDE } from "./IDE.js";
+
+import { BRIDGE } from "./BRIDGE.js";
+
+import { ETHERNET } from "./ETHERNET.js";
 
 export class WindowsHardware
             extends Object

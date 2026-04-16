@@ -34,6 +34,10 @@ import { TiledMap } from "../../../../../../org/mapeditor/core/TiledMap.js";
 
     
 
+import {  } from "./.js";
+
+import {  } from "./.js";
+
 export class PropsTileMapPlacementVisitor extends TileMapPlacementVisitor {
         
 

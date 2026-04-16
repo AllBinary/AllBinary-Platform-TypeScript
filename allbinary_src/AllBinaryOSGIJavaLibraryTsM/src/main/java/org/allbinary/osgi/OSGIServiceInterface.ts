@@ -19,7 +19,7 @@
 
 
 
-interface OSGIServiceInterface {
+export interface OSGIServiceInterface {
         
 
 }

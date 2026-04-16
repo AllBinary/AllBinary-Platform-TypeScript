@@ -37,7 +37,7 @@ import { Node } from "../../../../../../org/w3c/dom/Node.js";
 
     
 
-interface GraphicItemInterface {
+export interface GraphicItemInterface {
         
 
     getName(): string

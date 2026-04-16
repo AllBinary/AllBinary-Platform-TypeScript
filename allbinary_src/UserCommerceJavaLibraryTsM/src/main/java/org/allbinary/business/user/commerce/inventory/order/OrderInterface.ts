@@ -22,7 +22,7 @@ import { BasketInterface } from "../../../../../../../org/allbinary/business/use
 
     
 
-interface OrderInterface {
+export interface OrderInterface {
         
 
     public setShippingMethod(shippingType: string)

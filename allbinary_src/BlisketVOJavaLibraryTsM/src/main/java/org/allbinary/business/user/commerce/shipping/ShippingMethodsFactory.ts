@@ -18,10 +18,7 @@
 
 
 
-            import Vector from "@ohos.util.Vector";
-        
-
-//import { Vector } from "../../../../../../java/util/Vector.js";
+import { Vector } from "../../../../../../java/util/Vector.js";
 
     
 import { DynamicObjectData } from "../../../../../../org/allbinary/business/DynamicObjectData.js";
@@ -84,6 +81,14 @@ import { Node } from "../../../../../../org/w3c/dom/Node.js";
 import { NodeList } from "../../../../../../org/w3c/dom/NodeList.js";
 
     
+
+import { ShippingMethodsData } from "./ShippingMethodsData.js";
+
+import { ShippingMethodData } from "./ShippingMethodData.js";
+
+import { ShippingMethodData } from "./ShippingMethodData.js";
+
+import { ShippingMethodData } from "./ShippingMethodData.js";
 
 export class ShippingMethodsFactory
             extends Object

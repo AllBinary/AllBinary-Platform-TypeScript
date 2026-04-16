@@ -18,10 +18,7 @@
 
 
 
-            import Vector from "@ohos.util.Vector";
-        
-
-//import { Vector } from "../../../../java/util/Vector.js";
+import { Vector } from "../../../../java/util/Vector.js";
 
     
 import { BundleContext } from "../../../../org/osgi/framework/BundleContext.js";
@@ -42,6 +39,8 @@ import { OSGIServiceVisitorInterface } from "../../../../org/allbinary/osgi/OSGI
 import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js";
 
     
+
+import { OSGIServiceUtil } from "./OSGIServiceUtil.js";
 
 export class InputAutomationServiceConsumer
             extends Object

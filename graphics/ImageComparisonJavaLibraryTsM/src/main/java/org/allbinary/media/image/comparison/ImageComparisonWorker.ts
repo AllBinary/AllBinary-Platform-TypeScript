@@ -18,10 +18,7 @@
 
 
 
-            import Vector from "@ohos.util.Vector";
-        
-
-//import { Vector } from "../../../../../java/util/Vector.js";
+import { Vector } from "../../../../../java/util/Vector.js";
 
     
 import { CapturedImageWorkerResultsEvent } from "../../../../../org/allbinary/input/media/image/capture/CapturedImageWorkerResultsEvent.js";
@@ -51,6 +48,22 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 import { TimeDelayHelper } from "../../../../../org/allbinary/time/TimeDelayHelper.js";
 
     
+
+import {  } from "./.js";
+
+import {  } from "./.js";
+
+import {  } from "./.js";
+
+import {  } from "./.js";
+
+import {  } from "./.js";
+
+import {  } from "./.js";
+
+import {  } from "./.js";
+
+import { ImageComparisonResultCacheSingleton } from "./ImageComparisonResultCacheSingleton.js";
 
 export class ImageComparisonWorker extends BasicEventHandler
                 , CapturedImageWorkerResultsListener {

@@ -19,6 +19,10 @@
 
 
 
+import { GameInputProcessor } from "./GameInputProcessor.js";
+
+import { InputFactory } from "./InputFactory.js";
+
 export class GameInputProcessorUtil
             extends Object
          {

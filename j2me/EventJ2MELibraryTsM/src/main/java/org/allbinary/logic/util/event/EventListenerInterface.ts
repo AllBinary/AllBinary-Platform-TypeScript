@@ -19,7 +19,7 @@
 
 
 
-interface EventListenerInterface {
+export interface EventListenerInterface {
         
 
     public onEvent(eventObject: AllBinaryEventObject)

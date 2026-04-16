@@ -18,10 +18,7 @@
 
 
 
-            import Hashtable from "@ohos.util.HashMap";
-        
-
-//import { Hashtable } from "../../../../java/util/Hashtable.js";
+import { Hashtable } from "../../../../java/util/Hashtable.js";
 
     
 import { BasicAnimationInterfaceFactoryInterface } from "../../../../org/allbinary/animation/BasicAnimationInterfaceFactoryInterface.js";
@@ -54,6 +51,8 @@ import { CommonSeps } from "../../../../org/allbinary/string/CommonSeps.js";
 import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js";
 
     
+
+import { LOAD_ALL } from "./LOAD_ALL.js";
 
 export class BaseResourceAnimationInterfaceFactoryInterfaceFactory
             extends Object

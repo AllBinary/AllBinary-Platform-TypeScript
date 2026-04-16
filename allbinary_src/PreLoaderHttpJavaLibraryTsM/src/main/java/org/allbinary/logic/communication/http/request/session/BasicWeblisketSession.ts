@@ -48,6 +48,36 @@ import { BooleanFactory } from "../../../../../../../org/allbinary/logic/java/bo
 
     
 
+import { NAME } from "./NAME.js";
+
+import { NAME } from "./NAME.js";
+
+import { NAME } from "./NAME.js";
+
+import { WeblisketSessionData } from "./WeblisketSessionData.js";
+
+import { WeblisketSessionData } from "./WeblisketSessionData.js";
+
+import { WeblisketSessionData } from "./WeblisketSessionData.js";
+
+import { GLOBALS2 } from "./GLOBALS2.js";
+
+import { NAME } from "./NAME.js";
+
+import { WeblisketSessionData } from "./WeblisketSessionData.js";
+
+import { WeblisketSessionData } from "./WeblisketSessionData.js";
+
+import { WeblisketSessionData } from "./WeblisketSessionData.js";
+
+import { WeblisketSessionData } from "./WeblisketSessionData.js";
+
+import { WeblisketSessionData } from "./WeblisketSessionData.js";
+
+import { WeblisketSessionData } from "./WeblisketSessionData.js";
+
+import { NAME } from "./NAME.js";
+
 export class BasicWeblisketSession
             extends Object
          {

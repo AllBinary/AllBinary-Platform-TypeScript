@@ -19,6 +19,8 @@
 
 
 
+import { AnimationBehavior } from "./AnimationBehavior.js";
+
 export class AnimationBehaviorFactory
             extends Object
          {

@@ -19,6 +19,12 @@
 
 
 
+import { GameKeyFactory } from "./GameKeyFactory.js";
+
+import { InputFactory } from "./InputFactory.js";
+
+import {  } from "./.js";
+
 export class J2MEKeyFactory
             extends Object
          {

@@ -22,6 +22,8 @@ import { NullUtil } from "../../../org/allbinary/logic/NullUtil.js";
 
     
 
+import { NullCanvas } from "./NullCanvas.js";
+
 export class PlatformImage
             extends Object
          {

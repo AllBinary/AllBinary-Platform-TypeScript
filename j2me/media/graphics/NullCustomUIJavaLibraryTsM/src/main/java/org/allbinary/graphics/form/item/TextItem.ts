@@ -11,6 +11,8 @@ import { BasicColor } from "../../../../../org/allbinary/graphics/color/BasicCol
 
     
 
+import { StringComponent } from "./StringComponent.js";
+
 export class TextItem extends CustomCustomItem
                 , CustomItemInterface {
         

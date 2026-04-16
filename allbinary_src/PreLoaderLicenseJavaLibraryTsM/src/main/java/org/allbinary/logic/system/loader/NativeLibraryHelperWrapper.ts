@@ -28,6 +28,10 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
     
 
+import { System } from "./System.js";
+
+import { System } from "./System.js";
+
 export class NativeLibraryHelperWrapper
             extends Object
          {

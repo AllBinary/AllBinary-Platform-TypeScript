@@ -19,7 +19,7 @@
 
 
 
-interface AdvertisementAreaInterface {
+export interface AdvertisementAreaInterface {
         
 
     public getName(): string

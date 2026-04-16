@@ -49,6 +49,8 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
     
 
+import { PixelDelta } from "./PixelDelta.js";
+
 export class PixelDeltaFactory
             extends Object
          {

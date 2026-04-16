@@ -31,6 +31,10 @@ import { PreLogUtil } from "../../../../../org/allbinary/logic/communication/log
 
     
 
+import { TouchScreenFactory } from "./TouchScreenFactory.js";
+
+import { TouchScreenTypesFactory } from "./TouchScreenTypesFactory.js";
+
 export class TouchScreenTypeFactory
             extends Object
          {

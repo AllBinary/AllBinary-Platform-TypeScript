@@ -28,6 +28,8 @@ import { AllBinaryLayer } from "../../../../org/allbinary/layer/AllBinaryLayer.j
 
     
 
+import { Health } from "./Health.js";
+
 export class HealthBarFactory
             extends Object
          {

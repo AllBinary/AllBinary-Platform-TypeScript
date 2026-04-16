@@ -22,7 +22,7 @@ import { TableMappingInterface } from "../../../../../org/allbinary/data/tables/
 
     
 
-interface ThemeInterface extends TableMappingInterface {
+export interface ThemeInterface extends TableMappingInterface {
         
 
     public getName(): string

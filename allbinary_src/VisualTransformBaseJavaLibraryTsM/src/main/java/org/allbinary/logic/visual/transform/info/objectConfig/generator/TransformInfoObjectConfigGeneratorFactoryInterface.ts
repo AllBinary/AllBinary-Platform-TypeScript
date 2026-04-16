@@ -22,7 +22,7 @@ import { TransformInfoInterface } from "../../../../../../../../org/allbinary/lo
 
     
 
-interface TransformInfoObjectConfigGeneratorFactoryInterface {
+export interface TransformInfoObjectConfigGeneratorFactoryInterface {
         
 
                 //@Throws(Error::class)

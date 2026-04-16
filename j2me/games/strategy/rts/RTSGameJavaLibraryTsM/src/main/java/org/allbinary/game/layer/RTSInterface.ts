@@ -19,7 +19,7 @@
 
 
 
-interface RTSInterface {
+export interface RTSInterface {
         
 
     isSelfUpgradeable(): boolean

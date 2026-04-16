@@ -19,7 +19,7 @@
 
 
 
-interface MotionGestureEventListener extends BaseMotionGestureEventListener {
+export interface MotionGestureEventListener extends BaseMotionGestureEventListener {
         
 
     onPressedMotionGestureEvent(ev: MotionGestureEvent)

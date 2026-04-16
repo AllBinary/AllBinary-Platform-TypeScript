@@ -4,8 +4,6 @@
 
 
 
-            import Vector from "@ohos.util.Vector";
-        
 import { IOException } from "../../../java/io/IOException.js";
 
     
@@ -15,8 +13,7 @@ import { MalformedURLException } from "../../../java/net/MalformedURLException.j
 import { URL } from "../../../java/net/URL.js";
 
     
-
-//import { Vector } from "../../../java/util/Vector.js";
+import { Vector } from "../../../java/util/Vector.js";
 
     
 import { CryptInterface } from "../../../org/allbinary/init/crypt/jcehelper/CryptInterface.js";

@@ -19,6 +19,8 @@
 
 
 
+import { Boolean } from "./Boolean.js";
+
 export class AffiliateSales
             extends Object
          {

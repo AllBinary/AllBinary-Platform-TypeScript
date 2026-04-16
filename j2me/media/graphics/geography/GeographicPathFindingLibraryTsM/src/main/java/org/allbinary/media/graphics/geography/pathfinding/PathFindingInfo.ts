@@ -25,6 +25,10 @@ import { BasicArrayListUtil } from "../../../../../../org/allbinary/util/BasicAr
 
     
 
+import { PathFindingNodeCostInfoFactoryBase } from "./PathFindingNodeCostInfoFactoryBase.js";
+
+import { GeographicPathFinderBase } from "./GeographicPathFinderBase.js";
+
 export class PathFindingInfo
             extends Object
         

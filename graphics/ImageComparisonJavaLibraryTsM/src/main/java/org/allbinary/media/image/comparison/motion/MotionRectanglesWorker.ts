@@ -18,10 +18,7 @@
 
 
 
-            import Vector from "@ohos.util.Vector";
-        
-
-//import { Vector } from "../../../../../../java/util/Vector.js";
+import { Vector } from "../../../../../../java/util/Vector.js";
 
     
 import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
@@ -51,6 +48,12 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 import { TimeDelayHelper } from "../../../../../../org/allbinary/time/TimeDelayHelper.js";
 
     
+
+import { AllMotionRectanglesResultsCacheSingleton } from "./AllMotionRectanglesResultsCacheSingleton.js";
+
+import { ConsolidatedMotionRectanglesResultsCacheSingleton } from "./ConsolidatedMotionRectanglesResultsCacheSingleton.js";
+
+import { ConstrainedMotionRectanglesResultsCacheSingleton } from "./ConstrainedMotionRectanglesResultsCacheSingleton.js";
 
 export class MotionRectanglesWorker extends BasicEventHandler
                 , ImageComparisonResultsListener {

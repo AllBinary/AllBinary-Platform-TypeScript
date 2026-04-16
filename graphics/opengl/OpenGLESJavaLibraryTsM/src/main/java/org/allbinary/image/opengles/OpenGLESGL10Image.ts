@@ -55,6 +55,8 @@ import { PlatformTextureBaseFactory } from "../../../../org/allbinary/platform/o
 
     
 
+import { OpenGLESImageDraw } from "./OpenGLESImageDraw.js";
+
 export class OpenGLESGL10Image extends OpenGLESImage {
         
 

@@ -25,6 +25,8 @@ import { IndexedAnimation } from "../../../org/allbinary/animation/IndexedAnimat
 
     
 
+import { AnimationFrameToImageUtil } from "./AnimationFrameToImageUtil.js";
+
 export class IndexedAnimationToImageArrayUtil
             extends Object
          {

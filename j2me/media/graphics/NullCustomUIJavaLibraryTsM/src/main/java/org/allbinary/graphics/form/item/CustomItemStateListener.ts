@@ -5,7 +5,7 @@
 
 
 
-interface CustomItemStateListener {
+export interface CustomItemStateListener {
         
 
 }

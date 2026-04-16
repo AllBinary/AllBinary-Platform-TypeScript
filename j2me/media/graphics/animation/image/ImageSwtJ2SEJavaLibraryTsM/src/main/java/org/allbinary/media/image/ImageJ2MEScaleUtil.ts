@@ -22,6 +22,8 @@ import { Image } from "../../../../javax/microedition/lcdui/Image.js";
 
     
 
+import { ImageCopyUtil } from "./ImageCopyUtil.js";
+
 export class ImageJ2MEScaleUtil
             extends Object
          {

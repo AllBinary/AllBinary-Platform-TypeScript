@@ -18,16 +18,10 @@
 
 
 
-            import Vector from "@ohos.util.Vector";
-        
-            import HashMap from "@ohos.util.HashMap";
-        
-
-//import { HashMap } from "../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../java/util/HashMap.js";
 
     
-
-//import { Vector } from "../../../../java/util/Vector.js";
+import { Vector } from "../../../../java/util/Vector.js";
 
     
 import { BasicItemData } from "../../../../org/allbinary/business/user/commerce/inventory/item/BasicItemData.js";
@@ -72,6 +66,16 @@ import { Document } from "../../../../org/w3c/dom/Document.js";
 import { Node } from "../../../../org/w3c/dom/Node.js";
 
     
+
+import { Boolean } from "./Boolean.js";
+
+import { Boolean } from "./Boolean.js";
+
+import { Boolean } from "./Boolean.js";
+
+import { Boolean } from "./Boolean.js";
+
+import { Boolean } from "./Boolean.js";
 
 export class DeleteFileValidationView extends DownloadableInventoryItemView
                 , ValidationComponentInterface {

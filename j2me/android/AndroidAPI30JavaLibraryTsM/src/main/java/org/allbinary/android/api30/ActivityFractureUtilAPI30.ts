@@ -37,6 +37,8 @@ import { ActivityFractureUtilAPI5 } from "../../../../org/allbinary/android/api5
 
     
 
+import { Type } from "./Type.js";
+
 export class ActivityFractureUtilAPI30 extends ActivityFractureUtilAPI5 {
         
 

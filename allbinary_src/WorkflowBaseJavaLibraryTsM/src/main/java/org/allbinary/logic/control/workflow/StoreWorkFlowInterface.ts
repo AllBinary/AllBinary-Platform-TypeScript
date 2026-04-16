@@ -19,7 +19,7 @@
 
 
 
-interface StoreWorkFlowInterface extends WorkFlowInterface {
+export interface StoreWorkFlowInterface extends WorkFlowInterface {
         
 
                 //@Throws(Error::class)

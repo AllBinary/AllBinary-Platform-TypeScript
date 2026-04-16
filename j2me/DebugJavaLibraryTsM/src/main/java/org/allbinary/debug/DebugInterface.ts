@@ -19,7 +19,7 @@
 
 
 
-interface DebugInterface {
+export interface DebugInterface {
         
 
     start()

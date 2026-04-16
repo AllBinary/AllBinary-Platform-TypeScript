@@ -19,6 +19,8 @@
 
 
 
+import { BaseGameInitialization } from "./BaseGameInitialization.js";
+
 export class BasicBuildGameInitializerFactory
             extends Object
         

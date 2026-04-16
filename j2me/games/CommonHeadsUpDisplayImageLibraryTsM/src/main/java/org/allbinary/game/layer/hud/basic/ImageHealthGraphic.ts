@@ -37,6 +37,8 @@ import { ImageCacheFactory } from "../../../../../../org/allbinary/image/ImageCa
 
     
 
+import {  } from "./.js";
+
 export class ImageHealthGraphic extends HealthGraphic {
         
 

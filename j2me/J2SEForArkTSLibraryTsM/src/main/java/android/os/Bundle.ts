@@ -1,0 +1,6 @@
+
+/*actual*/ export class Bundle
+{
+
+}
+

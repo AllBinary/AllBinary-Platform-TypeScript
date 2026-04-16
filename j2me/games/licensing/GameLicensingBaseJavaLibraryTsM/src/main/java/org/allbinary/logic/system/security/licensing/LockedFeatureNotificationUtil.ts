@@ -43,6 +43,8 @@ import { PrimaryPlayerQueueFactory } from "../../../../../../org/allbinary/media
 
     
 
+import { LicenseStrings } from "./LicenseStrings.js";
+
 export class LockedFeatureNotificationUtil
             extends Object
          {

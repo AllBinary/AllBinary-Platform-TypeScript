@@ -37,6 +37,14 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
     
 
+import { CommonButtons } from "./CommonButtons.js";
+
+import { BasicTouchInputFactory } from "./BasicTouchInputFactory.js";
+
+import { TouchButtonBlankResource } from "./TouchButtonBlankResource.js";
+
+import {  } from "./.js";
+
 export class TouchButtonsMappingPaintable extends Paintable {
         
 

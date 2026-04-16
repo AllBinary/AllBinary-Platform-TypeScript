@@ -37,6 +37,8 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
     
 
+import { ImageCopyUtil } from "./ImageCopyUtil.js";
+
 export class ImageScaleUtil
             extends Object
          {

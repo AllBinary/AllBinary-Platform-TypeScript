@@ -39,6 +39,10 @@ import { RemoteInfo } from "../../../../../org/allbinary/game/multiplayer/layer/
 
     
 
+import { WaypointInfoHudPaintableSingleton } from "./WaypointInfoHudPaintableSingleton.js";
+
+import { WaypointInfoHudPaintableSingleton } from "./WaypointInfoHudPaintableSingleton.js";
+
 export class VisualWaypointLayer extends WaypointLayer {
         
 public constructor (remoteInfo: RemoteInfo, parentLayer: PathFindingLayerInterface, groupInterface: Group[], rootName: string, name: string, animationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface: ProceduralAnimationInterfaceFactoryInterface, rectangle: Rectangle, x: number, y: number)                        

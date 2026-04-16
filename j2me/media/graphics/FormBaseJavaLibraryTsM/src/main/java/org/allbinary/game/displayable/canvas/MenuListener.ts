@@ -22,7 +22,7 @@ import { GameKeyEventSourceInterface } from "../../../../../org/allbinary/game/i
 
     
 
-interface MenuListener extends GameKeyEventSourceInterface {
+export interface MenuListener extends GameKeyEventSourceInterface {
         
 
     open()

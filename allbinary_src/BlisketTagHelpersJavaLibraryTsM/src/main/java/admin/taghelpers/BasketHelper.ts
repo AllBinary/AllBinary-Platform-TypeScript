@@ -18,10 +18,7 @@
 
 
 
-            import HashMap from "@ohos.util.HashMap";
-        
-
-//import { HashMap } from "../../java/util/HashMap.js";
+import { HashMap } from "../../java/util/HashMap.js";
 
     
 import { PageContext } from "../../javax/servlet/jsp/PageContext.js";
@@ -45,6 +42,18 @@ import { WeblisketSession } from "../../org/allbinary/logic/communication/http/r
 import { LogUtil } from "../../org/allbinary/logic/communication/log/LogUtil.js";
 
     
+
+import { Boolean } from "./Boolean.js";
+
+import { Boolean } from "./Boolean.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
+
+import { Boolean } from "./Boolean.js";
 
 export class BasketHelper extends TagHelper {
         

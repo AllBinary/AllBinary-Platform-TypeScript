@@ -18,14 +18,11 @@
 
 
 
-            import HashMap from "@ohos.util.HashMap";
-        
-
-//import { HashMap } from "../../../../../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../../../../../java/util/HashMap.js";
 
     
 
-interface PaymentGatewayInterfaceFactoryInterface {
+export interface PaymentGatewayInterfaceFactoryInterface {
         
 
                 //@Throws(Error::class)

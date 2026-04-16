@@ -19,7 +19,7 @@
 
 
 
-interface IdentifierInterface {
+export interface IdentifierInterface {
         
 
     getId(): number

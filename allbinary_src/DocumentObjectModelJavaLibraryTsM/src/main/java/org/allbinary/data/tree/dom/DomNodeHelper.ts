@@ -31,6 +31,8 @@ import { NodeList } from "../../../../../org/w3c/dom/NodeList.js";
 
     
 
+import { DomSearchHelper } from "./DomSearchHelper.js";
+
 export class DomNodeHelper
             extends Object
          {

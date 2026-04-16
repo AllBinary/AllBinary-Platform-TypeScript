@@ -22,7 +22,7 @@ import { CategoryInterface } from "../../../../../org/allbinary/business/categor
 
     
 
-interface CategoryHierarchyInterface {
+export interface CategoryHierarchyInterface {
         
 
     public getLevel(): number

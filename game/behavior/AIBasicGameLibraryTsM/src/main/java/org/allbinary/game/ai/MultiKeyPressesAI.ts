@@ -18,12 +18,9 @@
 
 
 
-            import Hashtable from "@ohos.util.HashMap";
-        
             import { Integer } from "../../../../java/lang/Integer.js";
         
-
-//import { Hashtable } from "../../../../java/util/Hashtable.js";
+import { Hashtable } from "../../../../java/util/Hashtable.js";
 
     
 import { GameInput } from "../../../../org/allbinary/game/input/GameInput.js";
@@ -47,6 +44,10 @@ import { GameTickTimeDelayHelperFactory } from "../../../../org/allbinary/time/G
 import { TimeDelayHelper } from "../../../../org/allbinary/time/TimeDelayHelper.js";
 
     
+
+import {  } from "./.js";
+
+import {  } from "./.js";
 
 export class MultiKeyPressesAI extends KeyPressesAI {
         

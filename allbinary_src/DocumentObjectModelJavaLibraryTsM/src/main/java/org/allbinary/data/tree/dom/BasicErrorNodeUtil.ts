@@ -28,6 +28,8 @@ import { Node } from "../../../../../org/w3c/dom/Node.js";
 
     
 
+import { ModDomHelper } from "./ModDomHelper.js";
+
 export class BasicErrorNodeUtil
             extends Object
          {

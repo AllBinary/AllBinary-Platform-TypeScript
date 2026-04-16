@@ -18,15 +18,14 @@
 
 
 
-            import Vector from "@ohos.util.Vector";
-        
-
-//import { Vector } from "../../../../../java/util/Vector.js";
+import { Vector } from "../../../../../java/util/Vector.js";
 
     
 import { NodeList } from "../../../../../org/w3c/dom/NodeList.js";
 
     
+
+import { DomNodeHelper } from "./DomNodeHelper.js";
 
 export class DomNodeListHelper
             extends Object

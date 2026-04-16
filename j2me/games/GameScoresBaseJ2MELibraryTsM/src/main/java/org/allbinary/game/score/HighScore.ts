@@ -34,6 +34,8 @@ import { CommonSeps } from "../../../../org/allbinary/string/CommonSeps.js";
 
     
 
+import { Long } from "./Long.js";
+
 export class HighScore
             extends Object
          {

@@ -31,6 +31,8 @@ import { ScaleProperties } from "../../../org/allbinary/media/ScaleProperties.js
 
     
 
+import { AnimationBehaviorFactory } from "./AnimationBehaviorFactory.js";
+
 export class VectorRotationAnimationInterfaceFactory
             extends Object
         

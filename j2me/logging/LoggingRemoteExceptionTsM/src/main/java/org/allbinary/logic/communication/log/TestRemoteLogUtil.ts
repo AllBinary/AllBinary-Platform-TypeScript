@@ -25,6 +25,8 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
     
 
+import { LogUtil } from "./LogUtil.js";
+
 export class TestRemoteLogUtil
             extends Object
          {

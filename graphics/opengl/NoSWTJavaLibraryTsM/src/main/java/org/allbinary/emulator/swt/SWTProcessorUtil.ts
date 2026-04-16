@@ -19,6 +19,8 @@
 
 
 
+import { SWTProcessor } from "./SWTProcessor.js";
+
 export class SWTProcessorUtil
             extends Object
          {

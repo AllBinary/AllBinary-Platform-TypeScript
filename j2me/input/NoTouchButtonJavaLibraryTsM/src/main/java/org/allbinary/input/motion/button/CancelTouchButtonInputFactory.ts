@@ -22,6 +22,16 @@ import { InputFactory } from "../../../../../org/allbinary/game/input/InputFacto
 
     
 
+import { BasicTouchInputFactory } from "./BasicTouchInputFactory.js";
+
+import { UP } from "./UP.js";
+
+import { DOWN } from "./DOWN.js";
+
+import { LEFT } from "./LEFT.js";
+
+import { RIGHT } from "./RIGHT.js";
+
 export class CancelTouchButtonInputFactory
             extends Object
          {

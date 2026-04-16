@@ -1,0 +1,6 @@
+
+
+/*actual*/ export class Resources
+{
+
+}

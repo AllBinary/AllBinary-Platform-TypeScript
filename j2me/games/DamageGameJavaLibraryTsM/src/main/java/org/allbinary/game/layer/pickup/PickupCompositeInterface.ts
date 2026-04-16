@@ -19,7 +19,7 @@
 
 
 
-interface PickupCompositeInterface {
+export interface PickupCompositeInterface {
         
 
     public getPickupBehavior(): PickupBehavior

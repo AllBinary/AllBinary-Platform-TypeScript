@@ -19,6 +19,8 @@
 
 
 
+import { TouchScreenTypesFactory } from "./TouchScreenTypesFactory.js";
+
 export class TouchScreenFactory
             extends Object
          {

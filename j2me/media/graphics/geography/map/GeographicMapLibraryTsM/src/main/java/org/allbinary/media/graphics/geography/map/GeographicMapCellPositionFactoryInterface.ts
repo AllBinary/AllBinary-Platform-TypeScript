@@ -19,7 +19,7 @@
 
 
 
-interface GeographicMapCellPositionFactoryInterface {
+export interface GeographicMapCellPositionFactoryInterface {
         
 
                 //@Throws(Error::class)

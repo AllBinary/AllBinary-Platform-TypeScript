@@ -19,7 +19,7 @@
 
 
 
-interface MeteredGameObjectInterface {
+export interface MeteredGameObjectInterface {
         
 
     getRatios(): Double[]

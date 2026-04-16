@@ -22,7 +22,7 @@ import { awt } from "../../../../../java/awt.js";
 
     
 
-interface ColorRangeInterface {
+export interface ColorRangeInterface {
         
 
     getMinRed(): number

@@ -18,6 +18,8 @@
 
 
 
+            import hilog from '@ohos.hilog';
+        
 import { Context } from "../../../../../../android/content/Context.js";
 
     
@@ -38,6 +40,9 @@ export class AndroidSystemProperties
             extends Object
          {
         
+
+            static readonly PUBLIC: string = '%{public}s';
+            
 
     private static readonly SINGLETON: AndroidSystemProperties = new AndroidSystemProperties(ResourceUtil.getInstance()!.getContext());
         

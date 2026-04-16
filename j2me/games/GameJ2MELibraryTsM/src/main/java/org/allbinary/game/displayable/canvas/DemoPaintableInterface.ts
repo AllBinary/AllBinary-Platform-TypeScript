@@ -19,7 +19,7 @@
 
 
 
-interface DemoPaintableInterface {
+export interface DemoPaintableInterface {
         
 
     showGamePaintable()

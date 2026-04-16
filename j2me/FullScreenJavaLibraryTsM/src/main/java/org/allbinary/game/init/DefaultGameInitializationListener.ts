@@ -49,6 +49,8 @@ import { EventStrings } from "../../../../org/allbinary/logic/util/event/EventSt
 
     
 
+import { Thread } from "./Thread.js";
+
 export class DefaultGameInitializationListener
             extends Object
         

@@ -28,6 +28,10 @@ import { PersistentInputMapping } from "../../../../org/allbinary/game/input/map
 
     
 
+import { PCKeyFactory } from "./PCKeyFactory.js";
+
+import { GameKeyFactory } from "./GameKeyFactory.js";
+
 export class LaptopDefaultGameInputMapping extends PersistentInputMapping {
         
 public constructor ()                        

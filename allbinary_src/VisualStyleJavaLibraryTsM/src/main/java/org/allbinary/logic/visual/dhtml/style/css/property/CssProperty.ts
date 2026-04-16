@@ -18,10 +18,7 @@
 
 
 
-            import HashMap from "@ohos.util.HashMap";
-        
-
-//import { HashMap } from "../../../../../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../../../../../java/util/HashMap.js";
 
     
 import { DomData } from "../../../../../../../../org/allbinary/data/tree/dom/DomData.js";
@@ -48,6 +45,24 @@ import { Document } from "../../../../../../../../org/w3c/dom/Document.js";
 import { Node } from "../../../../../../../../org/w3c/dom/Node.js";
 
     
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
+
+import { CssPropertyData } from "./CssPropertyData.js";
+
+import { CssPropertyData } from "./CssPropertyData.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
+
+import { CssPropertyData } from "./CssPropertyData.js";
 
 export class CssProperty
             extends Object

@@ -25,7 +25,7 @@ import { EventListenerInterface } from "../../../../../../org/allbinary/logic/ut
 
     
 
-interface BasicEventHandlerInterface {
+export interface BasicEventHandlerInterface {
         
 
     addListener(eventListenerInterface: EventListenerInterface)

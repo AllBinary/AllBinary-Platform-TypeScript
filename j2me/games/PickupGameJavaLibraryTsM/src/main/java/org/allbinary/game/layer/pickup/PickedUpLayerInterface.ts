@@ -22,7 +22,7 @@ import { LayerInterface } from "../../../../../org/allbinary/layer/LayerInterfac
 
     
 
-interface PickedUpLayerInterface extends LayerInterface {
+export interface PickedUpLayerInterface extends LayerInterface {
         
 
     getPickedUpLayerInterfaceFactoryInterface(): PickedUpLayerInterfaceFactoryInterface

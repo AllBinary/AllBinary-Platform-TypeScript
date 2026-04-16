@@ -33,6 +33,8 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
     
 
+import { ImageJ2SERotationUtil } from "./ImageJ2SERotationUtil.js";
+
 export class ImageArrayRotationUtil
             extends Object
          {

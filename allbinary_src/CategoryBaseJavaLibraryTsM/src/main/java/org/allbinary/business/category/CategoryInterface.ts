@@ -18,10 +18,7 @@
 
 
 
-            import Vector from "@ohos.util.Vector";
-        
-
-//import { Vector } from "../../../../java/util/Vector.js";
+import { Vector } from "../../../../java/util/Vector.js";
 
     
 import { CategoryHierarchyInterface } from "../../../../org/allbinary/business/category/hierarchy/CategoryHierarchyInterface.js";
@@ -40,7 +37,7 @@ import { AbPath } from "../../../../org/allbinary/logic/io/path/AbPath.js";
 
     
 
-interface CategoryInterface extends TableMappingInterface, ValidationInterface {
+export interface CategoryInterface extends TableMappingInterface, ValidationInterface {
         
 
     public getChildNodes(): Vector

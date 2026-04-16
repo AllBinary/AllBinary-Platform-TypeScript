@@ -25,7 +25,7 @@ import { NamedInterface } from "../../../../org/allbinary/layer/NamedInterface.j
 
     
 
-interface TickableInterface extends NamedInterface {
+export interface TickableInterface extends NamedInterface {
         
 
                 //@Throws(Error::class)

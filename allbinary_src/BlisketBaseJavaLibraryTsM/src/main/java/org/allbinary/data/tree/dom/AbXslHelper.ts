@@ -34,6 +34,8 @@ import { AbPath } from "../../../../../org/allbinary/logic/io/path/AbPath.js";
 
     
 
+import { XslHelper } from "./XslHelper.js";
+
 export class AbXslHelper
             extends Object
          {

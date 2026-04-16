@@ -43,6 +43,20 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
     
 
+import { BasicTouchInputFactory } from "./BasicTouchInputFactory.js";
+
+import { CurrentlyPressedTouchButtonSingleton } from "./CurrentlyPressedTouchButtonSingleton.js";
+
+import { CancelTouchButtonInputFactory } from "./CancelTouchButtonInputFactory.js";
+
+import { TouchScreenFactory } from "./TouchScreenFactory.js";
+
+import { TouchButtonFactory } from "./TouchButtonFactory.js";
+
+import { BasicTouchInputFactory } from "./BasicTouchInputFactory.js";
+
+import { TouchButtonFactory } from "./TouchButtonFactory.js";
+
 export class TouchButtonRecognizer
             extends Object
          {

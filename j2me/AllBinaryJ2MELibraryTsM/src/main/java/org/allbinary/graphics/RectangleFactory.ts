@@ -19,6 +19,8 @@
 
 
 
+import { PointFactory } from "./PointFactory.js";
+
 export class RectangleFactory
             extends Object
          {

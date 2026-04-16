@@ -19,7 +19,7 @@
 
 
 
-interface GameLayerPlacementInterfaceBasicArrayListFactoryInterfaceFactory {
+export interface GameLayerPlacementInterfaceBasicArrayListFactoryInterfaceFactory {
         
 
     getInstance(level: number): LayerPlacementInterfaceBasicArrayListFactoryInterface

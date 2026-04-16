@@ -48,6 +48,8 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
     
 
+import { GameInputStrings } from "./GameInputStrings.js";
+
 export class PlayerGameInput extends GameInput
                 , GameKeyEventListenerInterface {
         

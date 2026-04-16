@@ -21,7 +21,7 @@
             import { Integer } from "../../../../../../../java/lang/Integer.js";
         
 
-interface RaceTrackGeographicMapInterfaceFactoryInterface {
+export interface RaceTrackGeographicMapInterfaceFactoryInterface {
         
 
                 //@Throws(Error::class)

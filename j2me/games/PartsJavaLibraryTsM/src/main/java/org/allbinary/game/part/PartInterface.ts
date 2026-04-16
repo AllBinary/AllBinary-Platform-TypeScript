@@ -25,7 +25,7 @@ import { PaintableInterface } from "../../../../org/allbinary/graphics/paint/Pai
 
     
 
-interface PartInterface extends PaintableInterface, AnimationInterfaceCompositeInterface {
+export interface PartInterface extends PaintableInterface, AnimationInterfaceCompositeInterface {
         
 
 }

@@ -18,16 +18,13 @@
 
 
 
-            import Vector from "@ohos.util.Vector";
-        
 import { ByteArrayInputStream } from "../../../java/io/ByteArrayInputStream.js";
 
     
 import { InputStream } from "../../../java/io/InputStream.js";
 
     
-
-//import { Vector } from "../../../java/util/Vector.js";
+import { Vector } from "../../../java/util/Vector.js";
 
     
 import { DocumentToNode } from "../../../org/allbinary/data/tree/dom/document/DocumentToNode.js";
@@ -78,6 +75,30 @@ import { CommonSeps } from "../../../org/allbinary/string/CommonSeps.js";
 import { Document } from "../../../org/w3c/dom/Document.js";
 
     
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
 
 export class CompoundContextTransformInfoObjectConfig extends GenericStoreTransformInfoObjectConfig {
         

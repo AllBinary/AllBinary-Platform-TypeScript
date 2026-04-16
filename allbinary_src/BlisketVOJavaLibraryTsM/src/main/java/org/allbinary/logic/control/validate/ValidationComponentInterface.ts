@@ -22,7 +22,7 @@ import { TransformInterface } from "../../../../../org/allbinary/logic/visual/tr
 
     
 
-interface ValidationComponentInterface extends TransformInterface, ValidationInterface {
+export interface ValidationComponentInterface extends TransformInterface, ValidationInterface {
         
 
 }

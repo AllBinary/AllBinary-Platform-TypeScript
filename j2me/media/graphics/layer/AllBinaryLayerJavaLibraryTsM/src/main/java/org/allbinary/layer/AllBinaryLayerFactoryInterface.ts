@@ -19,7 +19,7 @@
 
 
 
-interface AllBinaryLayerFactoryInterface {
+export interface AllBinaryLayerFactoryInterface {
         
 
                 //@Throws(Error::class)

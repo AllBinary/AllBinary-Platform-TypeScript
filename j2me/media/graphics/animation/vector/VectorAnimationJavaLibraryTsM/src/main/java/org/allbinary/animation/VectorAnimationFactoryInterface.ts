@@ -22,7 +22,7 @@ import { BasicColor } from "../../../org/allbinary/graphics/color/BasicColor.js"
 
     
 
-interface VectorAnimationFactoryInterface {
+export interface VectorAnimationFactoryInterface {
         
 
     getInstance(points: number[][][], basicColor: BasicColor): VectorAnimation

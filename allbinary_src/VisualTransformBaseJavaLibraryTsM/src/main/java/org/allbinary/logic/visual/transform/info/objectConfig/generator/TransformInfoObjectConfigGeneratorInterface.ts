@@ -19,7 +19,7 @@
 
 
 
-interface TransformInfoObjectConfigGeneratorInterface {
+export interface TransformInfoObjectConfigGeneratorInterface {
         
 
                 //@Throws(Error::class)

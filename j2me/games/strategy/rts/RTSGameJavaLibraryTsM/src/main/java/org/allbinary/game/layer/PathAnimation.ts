@@ -55,6 +55,8 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
     
 
+import { AllBinaryGameLayerManager } from "./AllBinaryGameLayerManager.js";
+
 export class PathAnimation extends Animation {
         
 

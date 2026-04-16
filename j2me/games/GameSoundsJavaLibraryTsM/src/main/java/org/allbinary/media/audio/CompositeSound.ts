@@ -19,6 +19,8 @@
 
 
 
+import { AllBinaryMediaManager } from "./AllBinaryMediaManager.js";
+
 export class CompositeSound extends Sound {
         
 protected constructor (resource: string)                        

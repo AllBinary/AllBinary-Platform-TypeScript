@@ -19,7 +19,7 @@
 
 
 
-interface InputAutomationWorkerInterface {
+export interface InputAutomationWorkerInterface {
         
 
 }

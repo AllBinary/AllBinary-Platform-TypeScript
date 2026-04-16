@@ -22,7 +22,7 @@ import { MinMaxDoubleConstraintInterface } from "../../../../../../org/allbinary
 
     
 
-interface PriceConstraintInterface extends MinMaxDoubleConstraintInterface {
+export interface PriceConstraintInterface extends MinMaxDoubleConstraintInterface {
         
 
 }

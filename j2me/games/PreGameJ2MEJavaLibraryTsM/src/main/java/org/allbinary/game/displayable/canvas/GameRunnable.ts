@@ -22,6 +22,8 @@ import { DisplayInfoSingleton } from "../../../../../org/allbinary/graphics/disp
 
     
 
+import { Thread } from "./Thread.js";
+
 export class GameRunnable
             extends Object
         

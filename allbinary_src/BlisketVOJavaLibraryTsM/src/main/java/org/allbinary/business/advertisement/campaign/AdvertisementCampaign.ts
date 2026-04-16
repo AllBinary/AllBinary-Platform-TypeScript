@@ -18,10 +18,7 @@
 
 
 
-            import HashMap from "@ohos.util.HashMap";
-        
-
-//import { HashMap } from "../../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../../java/util/HashMap.js";
 
     
 import { DynamicObjectData } from "../../../../../org/allbinary/business/DynamicObjectData.js";
@@ -33,6 +30,10 @@ import { AdvertisementsInterface } from "../../../../../org/allbinary/business/a
 import { AdvertisementSearchInterface } from "../../../../../org/allbinary/business/advertisement/search/AdvertisementSearchInterface.js";
 
     
+
+import { AdvertisementCampaignData } from "./AdvertisementCampaignData.js";
+
+import { AdvertisementCampaignData } from "./AdvertisementCampaignData.js";
 
 export class AdvertisementCampaign
             extends Object

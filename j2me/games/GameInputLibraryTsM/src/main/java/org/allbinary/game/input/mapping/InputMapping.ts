@@ -18,10 +18,7 @@
 
 
 
-            import Hashtable from "@ohos.util.HashMap";
-        
-
-//import { Hashtable } from "../../../../../java/util/Hashtable.js";
+import { Hashtable } from "../../../../../java/util/Hashtable.js";
 
     
 import { Input } from "../../../../../org/allbinary/game/input/Input.js";
@@ -45,6 +42,8 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+
+import { InputToGameKeyMapping } from "./InputToGameKeyMapping.js";
 
 export class InputMapping
             extends Object

@@ -19,6 +19,10 @@
 
 
 
+import { Runtime } from "./Runtime.js";
+
+import { Thread } from "./Thread.js";
+
 export class JvmStatistics
             extends Object
          {

@@ -19,6 +19,8 @@
 
 
 
+import { NoHighScoresFactory } from "./NoHighScoresFactory.js";
+
 export class LastFetchHighScoresFactory
             extends Object
          {

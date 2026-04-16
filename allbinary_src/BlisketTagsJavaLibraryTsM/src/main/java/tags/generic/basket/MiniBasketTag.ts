@@ -31,6 +31,8 @@ import { StoreValidationTransformTag } from "../../../tags/StoreValidationTransf
 
     
 
+import { GLOBALS2 } from "./GLOBALS2.js";
+
 export class MiniBasketTag extends StoreValidationTransformTag {
         
 public constructor (){

@@ -19,7 +19,7 @@
 
 
 
-interface HealthInterface {
+export interface HealthInterface {
         
 
     isAlive(): boolean

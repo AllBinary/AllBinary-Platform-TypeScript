@@ -19,7 +19,7 @@
 
 
 
-interface AlwaysActionScriptConditionInterface {
+export interface AlwaysActionScriptConditionInterface {
         
 
     setIsOn(isOn: boolean)

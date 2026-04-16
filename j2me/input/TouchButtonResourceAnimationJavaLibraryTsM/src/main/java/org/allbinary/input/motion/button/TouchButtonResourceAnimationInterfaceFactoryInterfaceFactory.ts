@@ -61,6 +61,30 @@ import { ImageCompleteUtil } from "../../../../../org/allbinary/media/image/Imag
 
     
 
+import { TouchButtonBlankResource } from "./TouchButtonBlankResource.js";
+
+import { TouchButtonGenericActionResource } from "./TouchButtonGenericActionResource.js";
+
+import { TouchButtonStartResource } from "./TouchButtonStartResource.js";
+
+import { TouchButtonUpResource } from "./TouchButtonUpResource.js";
+
+import { TouchButtonDownResource } from "./TouchButtonDownResource.js";
+
+import { TouchButtonTurnLeftResource } from "./TouchButtonTurnLeftResource.js";
+
+import { TouchButtonTurnRightResource } from "./TouchButtonTurnRightResource.js";
+
+import { TouchButtonStrafeLeftResource } from "./TouchButtonStrafeLeftResource.js";
+
+import { TouchButtonStrafeRightResource } from "./TouchButtonStrafeRightResource.js";
+
+import { TouchButtonStartResource } from "./TouchButtonStartResource.js";
+
+import { TouchButtonStartResource } from "./TouchButtonStartResource.js";
+
+import { LOAD_TOUCH } from "./LOAD_TOUCH.js";
+
 export class TouchButtonResourceAnimationInterfaceFactoryInterfaceFactory extends BaseResourceAnimationInterfaceFactoryInterfaceFactory {
         
 public constructor ()                        

@@ -25,7 +25,7 @@ import { TenderType } from "../../../../../../../../../org/allbinary/business/us
 
     
 
-interface PaymentTransactionInterfaceFactoryInterface {
+export interface PaymentTransactionInterfaceFactoryInterface {
         
 
                 //@Throws(Error::class)

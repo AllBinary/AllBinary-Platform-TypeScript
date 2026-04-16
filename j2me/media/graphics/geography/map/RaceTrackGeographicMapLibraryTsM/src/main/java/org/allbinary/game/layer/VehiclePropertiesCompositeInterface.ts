@@ -19,7 +19,7 @@
 
 
 
-interface VehiclePropertiesCompositeInterface {
+export interface VehiclePropertiesCompositeInterface {
         
 
     getVehicleProperties(): VehicleProperties

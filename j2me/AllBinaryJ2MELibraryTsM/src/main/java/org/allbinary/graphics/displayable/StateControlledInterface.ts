@@ -19,7 +19,7 @@
 
 
 
-interface StateControlledInterface {
+export interface StateControlledInterface {
         
 
     setState(state: number)

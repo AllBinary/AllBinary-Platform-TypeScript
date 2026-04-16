@@ -19,7 +19,7 @@
 
 
 
-interface LayerProcessorInterface extends BasicLayerProcessorInterface {
+export interface LayerProcessorInterface extends BasicLayerProcessorInterface {
         
 
     getLayerManager(): LayerManager

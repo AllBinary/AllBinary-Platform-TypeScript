@@ -18,12 +18,9 @@
 
 
 
-            import Hashtable from "@ohos.util.HashMap";
-        
             import { Integer } from "../../../../java/lang/Integer.js";
         
-
-//import { Hashtable } from "../../../../java/util/Hashtable.js";
+import { Hashtable } from "../../../../java/util/Hashtable.js";
 
     
 import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
@@ -62,6 +59,8 @@ import { BasicGeographicMap } from "../../../../org/allbinary/media/graphics/geo
 import { BaseRaceTrackGeographicMap } from "../../../../org/allbinary/media/graphics/geography/map/racetrack/BaseRaceTrackGeographicMap.js";
 
     
+
+import { AllBinaryGameLayerManager } from "./AllBinaryGameLayerManager.js";
 
 export class RTSLayerUtil
             extends Object

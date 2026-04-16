@@ -19,7 +19,7 @@
 
 
 
-interface VelocityInterface extends BasicVelocityInterface {
+export interface VelocityInterface extends BasicVelocityInterface {
         
 
     getMaxForwardVelocity(): number

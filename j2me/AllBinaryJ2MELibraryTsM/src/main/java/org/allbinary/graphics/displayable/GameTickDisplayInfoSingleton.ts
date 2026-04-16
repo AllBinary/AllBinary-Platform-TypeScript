@@ -19,6 +19,8 @@
 
 
 
+import { DisplayInfoSingleton } from "./DisplayInfoSingleton.js";
+
 export class GameTickDisplayInfoSingleton
             extends Object
          {

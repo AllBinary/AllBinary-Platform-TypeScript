@@ -25,6 +25,10 @@ import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js
 
     
 
+import { BasicColorUtil } from "./BasicColorUtil.js";
+
+import { BasicColorUtil } from "./BasicColorUtil.js";
+
 export class BasicColor
             extends Object
          {

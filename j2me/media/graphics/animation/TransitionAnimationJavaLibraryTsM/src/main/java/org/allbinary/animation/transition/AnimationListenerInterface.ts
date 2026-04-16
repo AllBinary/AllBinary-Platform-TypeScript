@@ -19,7 +19,7 @@
 
 
 
-interface AnimationListenerInterface {
+export interface AnimationListenerInterface {
         
 
     onAnimationStart()

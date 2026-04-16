@@ -28,6 +28,14 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
     
 
+import { Math } from "./Math.js";
+
+import { Math } from "./Math.js";
+
+import { Math } from "./Math.js";
+
+import { Math } from "./Math.js";
+
 export class GraphicsPipeline extends BasicGraphicsPipeline {
         
 public constructor (points: BasicArrayList)                        

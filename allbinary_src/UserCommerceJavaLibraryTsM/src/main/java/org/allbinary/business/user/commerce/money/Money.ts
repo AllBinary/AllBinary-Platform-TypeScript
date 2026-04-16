@@ -34,6 +34,8 @@ import { CommonPhoneStrings } from "../../../../../../org/allbinary/string/Commo
 
     
 
+import { Long } from "./Long.js";
+
 export class Money
             extends Object
          {

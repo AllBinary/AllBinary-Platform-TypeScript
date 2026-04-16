@@ -22,7 +22,7 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 
     
 
-interface PathFindingInfoInterface {
+export interface PathFindingInfoInterface {
         
 
     getStartPathFindingNodeList(): BasicArrayList

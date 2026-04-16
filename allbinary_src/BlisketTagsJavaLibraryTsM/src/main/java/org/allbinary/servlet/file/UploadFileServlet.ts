@@ -18,16 +18,13 @@
 
 
 
-            import HashMap from "@ohos.util.HashMap";
-        
 import { IOException } from "../../../../java/io/IOException.js";
 
     
 import { InputStream } from "../../../../java/io/InputStream.js";
 
     
-
-//import { HashMap } from "../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../java/util/HashMap.js";
 
     
 import { ServletException } from "../../../../javax/servlet/ServletException.js";
@@ -90,6 +87,18 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 import { FileItem } from "../../../../org/apache/commons/fileupload/FileItem.js";
 
     
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
 
 export class UploadFileServlet extends HttpServlet {
         

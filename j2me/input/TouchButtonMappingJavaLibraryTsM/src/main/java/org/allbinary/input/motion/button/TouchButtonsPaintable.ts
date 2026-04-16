@@ -34,6 +34,8 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
     
 
+import { TouchButtonFactory } from "./TouchButtonFactory.js";
+
 export class TouchButtonsPaintable extends Paintable {
         
 

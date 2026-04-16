@@ -43,6 +43,10 @@ import { AllBinaryLayer } from "../../../../../../org/allbinary/layer/AllBinaryL
 
     
 
+import { LifeResources } from "./LifeResources.js";
+
+import { LifeResources } from "./LifeResources.js";
+
 export class LifePickedUpLayerInterfaceFactory extends PickedUpLayerInterfaceFactory
                 , PickupProcessorInterface {
         

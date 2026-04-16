@@ -105,6 +105,8 @@ import { TimeDelayHelper } from "../../../../../org/allbinary/time/TimeDelayHelp
 
     
 
+import { UnitWaypointStrings } from "./UnitWaypointStrings.js";
+
 export class UnitWaypointBehavior2 extends UnitWaypointBehavior {
         
 

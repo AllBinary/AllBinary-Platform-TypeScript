@@ -18,10 +18,7 @@
 
 
 
-            import Hashtable from "@ohos.util.HashMap";
-        
-
-//import { Hashtable } from "../../../../java/util/Hashtable.js";
+import { Hashtable } from "../../../../java/util/Hashtable.js";
 
     
 import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
@@ -153,6 +150,12 @@ import { GeographicMapCompositeInterface } from "../../../../org/allbinary/media
 import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
 
     
+
+import { RTSLayer2LogHelper } from "./RTSLayer2LogHelper.js";
+
+import { GeographicMapCellPositionAreaBase } from "./GeographicMapCellPositionAreaBase.js";
+
+import { RTSLayerUtil } from "./RTSLayerUtil.js";
 
 export class RTSLayer extends MultiPlayerGameLayer
                 , TickableInterface

@@ -19,6 +19,12 @@
 
 
 
+import { System } from "./System.js";
+
+import { System } from "./System.js";
+
+import { System } from "./System.js";
+
 /*actual*/ export class SystemProperties
             extends Object
          {

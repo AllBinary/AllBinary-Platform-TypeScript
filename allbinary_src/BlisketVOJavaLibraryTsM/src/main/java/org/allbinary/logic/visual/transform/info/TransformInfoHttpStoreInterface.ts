@@ -19,7 +19,7 @@
 
 
 
-interface TransformInfoHttpStoreInterface extends TransformInfoHttpInterface {
+export interface TransformInfoHttpStoreInterface extends TransformInfoHttpInterface {
         
 
     public setStoreName(value: string)

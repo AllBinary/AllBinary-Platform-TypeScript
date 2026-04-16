@@ -19,7 +19,7 @@
 
 
 
-interface SequentialAnimationInterfaceCompositeInterface extends IndexedAnimationInterfaceCompositeInterface {
+export interface SequentialAnimationInterfaceCompositeInterface extends IndexedAnimationInterfaceCompositeInterface {
         
 
 }

@@ -22,7 +22,7 @@ import { GeographicMapInterface } from "../../../../../../../org/allbinary/media
 
     
 
-interface RaceTrackGeographicMapInterface extends GeographicMapInterface {
+export interface RaceTrackGeographicMapInterface extends GeographicMapInterface {
         
 
     public getRaceTrackInfo(): RaceTrackInfo

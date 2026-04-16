@@ -22,7 +22,7 @@ import { NamedInterface } from "../../../../../org/allbinary/layer/NamedInterfac
 
     
 
-interface DestroyableInterface extends NamedInterface {
+export interface DestroyableInterface extends NamedInterface {
         
 
                 //@Throws(Error::class)

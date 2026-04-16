@@ -22,7 +22,7 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 
     
 
-interface AbeLicenseInterface {
+export interface AbeLicenseInterface {
         
 
     hasKey(): boolean

@@ -19,7 +19,7 @@
 
 
 
-interface MyCanvasEventListener {
+export interface MyCanvasEventListener {
         
 
     public delete(evt: MyCanvasEvent)

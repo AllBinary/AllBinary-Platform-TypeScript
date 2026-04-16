@@ -19,7 +19,7 @@
 
 
 
-interface CategoryLoaderFactoryInterface {
+export interface CategoryLoaderFactoryInterface {
         
 
 }

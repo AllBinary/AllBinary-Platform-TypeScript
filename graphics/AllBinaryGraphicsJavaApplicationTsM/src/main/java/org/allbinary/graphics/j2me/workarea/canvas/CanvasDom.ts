@@ -18,12 +18,9 @@
 
 
 
-            import HashMap from "@ohos.util.HashMap";
-        
             import { Integer } from "../../../../../../java/lang/Integer.js";
         
-
-//import { HashMap } from "../../../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../../../java/util/HashMap.js";
 
     
 import { VectorCenterGenerator } from "../../../../../../org/allbinary/animation/vector/VectorCenterGenerator.js";

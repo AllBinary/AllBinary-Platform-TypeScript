@@ -37,6 +37,8 @@ import { BasicArrayList } from "../../../org/allbinary/util/BasicArrayList.js";
 
     
 
+import { Character } from "./Character.js";
+
 export class CamelCaseUtil
             extends Object
          {

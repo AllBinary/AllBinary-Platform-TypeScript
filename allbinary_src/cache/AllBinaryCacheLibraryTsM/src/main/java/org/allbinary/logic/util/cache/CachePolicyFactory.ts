@@ -19,6 +19,8 @@
 
 
 
+import { Long } from "./Long.js";
+
 export class CachePolicyFactory
             extends Object
          {

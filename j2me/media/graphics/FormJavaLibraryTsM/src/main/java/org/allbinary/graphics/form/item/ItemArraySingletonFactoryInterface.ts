@@ -19,7 +19,7 @@
 
 
 
-interface ItemArraySingletonFactoryInterface {
+export interface ItemArraySingletonFactoryInterface {
         
 
                 //@Throws(Error::class)

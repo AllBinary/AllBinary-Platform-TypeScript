@@ -19,7 +19,7 @@
 
 
 
-interface SoundsFactoryInterface {
+export interface SoundsFactoryInterface {
         
 
     init()

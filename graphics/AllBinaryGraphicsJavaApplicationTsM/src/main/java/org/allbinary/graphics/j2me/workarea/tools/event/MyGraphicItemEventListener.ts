@@ -19,7 +19,7 @@
 
 
 
-interface MyGraphicItemEventListener {
+export interface MyGraphicItemEventListener {
         
 
     public delete(evt: MyGraphicItemEvent)

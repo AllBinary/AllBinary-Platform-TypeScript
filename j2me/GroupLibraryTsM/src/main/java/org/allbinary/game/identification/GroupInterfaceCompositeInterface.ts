@@ -19,7 +19,7 @@
 
 
 
-interface GroupInterfaceCompositeInterface {
+export interface GroupInterfaceCompositeInterface {
         
 
     getGroupInterface(): Group[]

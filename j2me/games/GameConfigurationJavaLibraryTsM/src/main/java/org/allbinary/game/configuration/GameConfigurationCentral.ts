@@ -18,12 +18,9 @@
 
 
 
-            import Hashtable from "@ohos.util.HashMap";
-        
             import { Integer } from "../../../../java/lang/Integer.js";
         
-
-//import { Hashtable } from "../../../../java/util/Hashtable.js";
+import { Hashtable } from "../../../../java/util/Hashtable.js";
 
     
 import { GameConfigurationPersistanceSingleton } from "../../../../org/allbinary/game/configuration/persistance/GameConfigurationPersistanceSingleton.js";
@@ -53,6 +50,62 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
 
     
+
+import { SCALE } from "./SCALE.js";
+
+import { SCALE } from "./SCALE.js";
+
+import { SCALE } from "./SCALE.js";
+
+import { SCALE } from "./SCALE.js";
+
+import { ORIENTATION } from "./ORIENTATION.js";
+
+import { ORIENTATION } from "./ORIENTATION.js";
+
+import { SENSOR_UPDATE_RATE } from "./SENSOR_UPDATE_RATE.js";
+
+import { SENSOR_UPDATE_RATE } from "./SENSOR_UPDATE_RATE.js";
+
+import { VIBRATION } from "./VIBRATION.js";
+
+import { VIBRATION } from "./VIBRATION.js";
+
+import { CHALLENGE_LEVEL } from "./CHALLENGE_LEVEL.js";
+
+import { CHALLENGE_LEVEL } from "./CHALLENGE_LEVEL.js";
+
+import { COLLIDE_DAMAGE } from "./COLLIDE_DAMAGE.js";
+
+import { COLLIDE_DAMAGE } from "./COLLIDE_DAMAGE.js";
+
+import { DURABILITY_CHALLENGE_LEVEL } from "./DURABILITY_CHALLENGE_LEVEL.js";
+
+import { DURABILITY_CHALLENGE_LEVEL } from "./DURABILITY_CHALLENGE_LEVEL.js";
+
+import { SPEED_CHALLENGE_LEVEL } from "./SPEED_CHALLENGE_LEVEL.js";
+
+import { SPEED_CHALLENGE_LEVEL } from "./SPEED_CHALLENGE_LEVEL.js";
+
+import { ATTACK_CHALLENGE_LEVEL } from "./ATTACK_CHALLENGE_LEVEL.js";
+
+import { ATTACK_CHALLENGE_LEVEL } from "./ATTACK_CHALLENGE_LEVEL.js";
+
+import { CONTROL_LEVEL } from "./CONTROL_LEVEL.js";
+
+import { CONTROL_LEVEL } from "./CONTROL_LEVEL.js";
+
+import { SPEED } from "./SPEED.js";
+
+import { SPEED } from "./SPEED.js";
+
+import { MAX_GAME_OBJECTS } from "./MAX_GAME_OBJECTS.js";
+
+import { MAX_GAME_OBJECTS } from "./MAX_GAME_OBJECTS.js";
+
+import { MAX_LAYERS } from "./MAX_LAYERS.js";
+
+import { MAX_LAYERS } from "./MAX_LAYERS.js";
 
 export class GameConfigurationCentral
             extends Object

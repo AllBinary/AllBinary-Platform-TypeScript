@@ -19,6 +19,10 @@
 
 
 
+import { SelectSound } from "./SelectSound.js";
+
+import { ErrorSound } from "./ErrorSound.js";
+
 export class EarlySoundsFactory extends BaseSoundsFactory {
         
 

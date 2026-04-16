@@ -28,6 +28,8 @@ import { TransformInfoInterface } from "../../../org/allbinary/logic/visual/tran
 
     
 
+import { Boolean } from "./Boolean.js";
+
 export class ValidationView extends ShippingMethodsView
                 , ValidationComponentInterface {
         

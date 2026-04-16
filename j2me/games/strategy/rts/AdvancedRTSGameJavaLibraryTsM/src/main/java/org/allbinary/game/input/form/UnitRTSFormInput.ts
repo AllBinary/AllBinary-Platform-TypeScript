@@ -107,6 +107,10 @@ import { GeographicMapCompositeInterface } from "../../../../../org/allbinary/me
 
     
 
+import { AssignWaypointsUtil } from "./AssignWaypointsUtil.js";
+
+import { PlayersSingletonFactory } from "./PlayersSingletonFactory.js";
+
 export class UnitRTSFormInput extends RTSFormInput {
         
 

@@ -18,13 +18,10 @@
 
 
 
-            import HashMap from "@ohos.util.HashMap";
-        
 import { awt } from "../../../../../../java/awt.js";
 
     
-
-//import { HashMap } from "../../../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../../../java/util/HashMap.js";
 
     
 import { MutableTreeNode } from "../../../../../../javax/swing/tree/MutableTreeNode.js";
@@ -60,6 +57,26 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 import { Node } from "../../../../../../org/w3c/dom/Node.js";
 
     
+
+import { Math } from "./Math.js";
+
+import { Math } from "./Math.js";
+
+import { LinesGraphicItem } from "./LinesGraphicItem.js";
+
+import { Color } from "./Color.js";
+
+import { Color } from "./Color.js";
+
+import { RED } from "./RED.js";
+
+import { Math } from "./Math.js";
+
+import { Math } from "./Math.js";
+
+import { MouseStrings } from "./MouseStrings.js";
+
+import { MouseStrings } from "./MouseStrings.js";
 
 export class SelectionTool
             extends Object

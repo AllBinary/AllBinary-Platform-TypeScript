@@ -18,7 +18,7 @@
 
 
 
-            import Hashtable from "@ohos.util.HashMap";
+            import hilog from '@ohos.hilog';
         
 import { Closeable } from "../../../../../../java/io/Closeable.js";
 
@@ -29,8 +29,7 @@ import { FileReader } from "../../../../../../java/io/FileReader.js";
 import { LineNumberReader } from "../../../../../../java/io/LineNumberReader.js";
 
     
-
-//import { Hashtable } from "../../../../../../java/util/Hashtable.js";
+import { Hashtable } from "../../../../../../java/util/Hashtable.js";
 
     
 import { NullCloseable } from "../../../../../../org/allbinary/logic/io/NullCloseable.js";
@@ -66,6 +65,9 @@ export class AndroidHardware
         
                 , HardwareInterface {
         
+
+            static readonly PUBLIC: string = '%{public}s';
+            
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
         

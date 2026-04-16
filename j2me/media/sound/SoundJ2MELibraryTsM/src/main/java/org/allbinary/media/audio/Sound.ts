@@ -28,6 +28,8 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
     
 
+import { NoPlayer } from "./NoPlayer.js";
+
 export class Sound
             extends Object
         

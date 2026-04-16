@@ -25,6 +25,8 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
     
 
+import { AcceptableResponseUtil } from "./AcceptableResponseUtil.js";
+
 export class AcceptableResponse
             extends Object
          {

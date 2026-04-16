@@ -31,6 +31,8 @@ import { Activity } from "../../../../android/app/Activity.js";
 
     
 
+import { VirtualKeyboard } from "./VirtualKeyboard.js";
+
 export class VirtualKeyboardFactory
             extends Object
          {

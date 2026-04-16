@@ -49,6 +49,24 @@ import { Node } from "../../../../../../../../../org/w3c/dom/Node.js";
 
     
 
+import { Boolean } from "./Boolean.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
+
+import { Boolean } from "./Boolean.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
+
+import { GlobalsData } from "./GlobalsData.js";
+
 export class GlobalsValidation extends Validation
                 , DomNodeInterface {
         

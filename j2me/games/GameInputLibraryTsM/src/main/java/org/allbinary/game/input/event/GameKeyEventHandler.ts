@@ -28,6 +28,12 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
     
 
+import { PressGameKeyEventHandler } from "./PressGameKeyEventHandler.js";
+
+import { UpGameKeyEventHandler } from "./UpGameKeyEventHandler.js";
+
+import { DownGameKeyEventHandler } from "./DownGameKeyEventHandler.js";
+
 export class GameKeyEventHandler
             extends Object
          {

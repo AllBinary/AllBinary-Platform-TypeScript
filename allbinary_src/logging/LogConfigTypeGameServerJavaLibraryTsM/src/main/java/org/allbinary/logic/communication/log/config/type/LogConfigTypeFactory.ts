@@ -25,6 +25,8 @@ import { LogConfigTypeFactory } from "../../../../../../../org/allbinary/logic/c
 
     
 
+import { LOGGING } from "./LOGGING.js";
+
 export class LogConfigTypeFactory
             extends Object
          {

@@ -18,8 +18,6 @@
 
 
 
-            import HashMap from "@ohos.util.HashMap";
-        
             import { Integer } from "../../../../java/lang/Integer.js";
         
 import { awt } from "../../../../java/awt.js";
@@ -28,8 +26,7 @@ import { awt } from "../../../../java/awt.js";
 import { File } from "../../../../java/io/File.js";
 
     
-
-//import { HashMap } from "../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../java/util/HashMap.js";
 
     
 import { swing } from "../../../../javax/swing.js";
@@ -95,6 +92,16 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 import { Document } from "../../../../org/w3c/dom/Document.js";
 
     
+
+import { BorderLayout } from "./BorderLayout.js";
+
+import { BorderLayout } from "./BorderLayout.js";
+
+import { BorderLayout } from "./BorderLayout.js";
+
+import { System } from "./System.js";
+
+import { System } from "./System.js";
 
 export class MyFrame extends javax.swing.JFrame
                 , FileJDialogListenerInterface

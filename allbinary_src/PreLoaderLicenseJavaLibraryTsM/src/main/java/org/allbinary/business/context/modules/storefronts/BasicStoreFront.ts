@@ -18,10 +18,7 @@
 
 
 
-            import HashMap from "@ohos.util.HashMap";
-        
-
-//import { HashMap } from "../../../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../../../java/util/HashMap.js";
 
     
 import { StoreFrontData } from "../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js";
@@ -42,6 +39,16 @@ import { CommonSeps } from "../../../../../../org/allbinary/string/CommonSeps.js
 import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+
+import { URLGLOBALS } from "./URLGLOBALS.js";
+
+import { URLGLOBALS } from "./URLGLOBALS.js";
+
+import { URLGLOBALS } from "./URLGLOBALS.js";
+
+import { URLGLOBALS } from "./URLGLOBALS.js";
+
+import { URLGLOBALS } from "./URLGLOBALS.js";
 
 export class BasicStoreFront
             extends Object

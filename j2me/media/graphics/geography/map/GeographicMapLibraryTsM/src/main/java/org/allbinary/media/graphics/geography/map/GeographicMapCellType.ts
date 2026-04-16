@@ -27,6 +27,8 @@ import { SmallIntegerSingletonFactory } from "../../../../../../org/allbinary/lo
 
     
 
+import { GeographicMapCellTypeFactory } from "./GeographicMapCellTypeFactory.js";
+
 export class GeographicMapCellType
             extends Object
          {

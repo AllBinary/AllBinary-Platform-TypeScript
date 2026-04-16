@@ -18,6 +18,8 @@
 
 
 
+            import hilog from '@ohos.hilog';
+        
 import { Bitmap } from "../../../../android/graphics/Bitmap.js";
 
     
@@ -44,6 +46,9 @@ export class AndroidImageUtil
             extends Object
          {
         
+
+            static readonly PUBLIC: string = '%{public}s';
+            
 
     private static readonly instance: AndroidImageUtil = new AndroidImageUtil();
         

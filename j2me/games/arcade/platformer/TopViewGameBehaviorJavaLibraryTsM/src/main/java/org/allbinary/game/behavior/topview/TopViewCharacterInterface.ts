@@ -28,7 +28,7 @@ import { GeographicMapCellType } from "../../../../../org/allbinary/media/graphi
 
     
 
-interface TopViewCharacterInterface {
+export interface TopViewCharacterInterface {
         
 
     terrainMove(geographicMapInterfaceArray: BasicGeographicMap[], geographicMapCellTypeArray: GeographicMapCellType[], x: number, y: number)

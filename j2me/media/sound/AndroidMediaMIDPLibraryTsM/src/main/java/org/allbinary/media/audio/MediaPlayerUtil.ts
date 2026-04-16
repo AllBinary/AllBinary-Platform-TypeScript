@@ -25,6 +25,8 @@ import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUt
 
     
 
+import { Thread } from "./Thread.js";
+
 export class MediaPlayerUtil
             extends Object
          {

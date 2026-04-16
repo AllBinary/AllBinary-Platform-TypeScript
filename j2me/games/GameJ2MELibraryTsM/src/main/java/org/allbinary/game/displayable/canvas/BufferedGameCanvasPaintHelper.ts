@@ -43,6 +43,8 @@ import { CircularIndexUtil } from "../../../../../org/allbinary/util/CircularInd
 
     
 
+import {  } from "./.js";
+
 export class BufferedGameCanvasPaintHelper extends ProcessPaintable {
         
 

@@ -19,7 +19,7 @@
 
 
 
-interface ArtificialIntelligenceCompositeInterface {
+export interface ArtificialIntelligenceCompositeInterface {
         
 
                 //@Throws(Error::class)

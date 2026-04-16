@@ -18,18 +18,12 @@
 
 
 
-            import Vector from "@ohos.util.Vector";
-        
-            import HashMap from "@ohos.util.HashMap";
-        
             import { Integer } from "../../../../../../../../java/lang/Integer.js";
         
-
-//import { HashMap } from "../../../../../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../../../../../java/util/HashMap.js";
 
     
-
-//import { Vector } from "../../../../../../../../java/util/Vector.js";
+import { Vector } from "../../../../../../../../java/util/Vector.js";
 
     
 import { StoreFrontInterface } from "../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js";
@@ -47,6 +41,10 @@ import { InventoryEntityFactory } from "../../../../../../../../org/allbinary/da
 import { InventoryEntityInterface } from "../../../../../../../../org/allbinary/data/tables/user/commerce/inventory/item/InventoryEntityInterface.js";
 
     
+
+import { StoreFrontInventoryStatisticsData } from "./StoreFrontInventoryStatisticsData.js";
+
+import { StoreFrontInventoryStatisticsData } from "./StoreFrontInventoryStatisticsData.js";
 
 export class StoreFrontInventoryStatistics
             extends Object

@@ -18,10 +18,7 @@
 
 
 
-            import HashMap from "@ohos.util.HashMap";
-        
-
-//import { HashMap } from "../../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../../java/util/HashMap.js";
 
     
 import { ServletConfig } from "../../../../../javax/servlet/ServletConfig.js";
@@ -54,6 +51,8 @@ import { AbPathData } from "../../../../../org/allbinary/logic/io/path/AbPathDat
 import { LicensingException } from "../../../../../org/allbinary/logic/system/security/licensing/LicensingException.js";
 
     
+
+import { WorkFlowData } from "./WorkFlowData.js";
 
 export class RequestWorkFlowFactory
             extends Object

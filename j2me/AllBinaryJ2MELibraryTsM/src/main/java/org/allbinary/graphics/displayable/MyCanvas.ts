@@ -61,6 +61,10 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
     
 
+import { CanvasStrings } from "./CanvasStrings.js";
+
+import { DisplayInfoSingleton } from "./DisplayInfoSingleton.js";
+
 export class MyCanvas extends Canvas
                 , DisplayableInterface
                 , MyCommandInterface {

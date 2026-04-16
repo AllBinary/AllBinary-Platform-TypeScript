@@ -19,7 +19,7 @@
 
 
 
-interface IndexedAnimationInterface extends SequentialAnimationInterface {
+export interface IndexedAnimationInterface extends SequentialAnimationInterface {
         
 
     reset()

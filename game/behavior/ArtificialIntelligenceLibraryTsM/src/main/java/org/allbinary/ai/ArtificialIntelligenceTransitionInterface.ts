@@ -19,7 +19,7 @@
 
 
 
-interface ArtificialIntelligenceTransitionInterface {
+export interface ArtificialIntelligenceTransitionInterface {
         
 
     public static readonly ID: number = 2;

@@ -31,6 +31,14 @@ import { NullPaintable } from "../../../../../org/allbinary/graphics/paint/NullP
 
     
 
+import { AllBinaryGameCanvas } from "./AllBinaryGameCanvas.js";
+
+import { AllBinaryGameCanvas } from "./AllBinaryGameCanvas.js";
+
+import { AllBinaryGameCanvas } from "./AllBinaryGameCanvas.js";
+
+import { AllBinaryGameCanvas } from "./AllBinaryGameCanvas.js";
+
 export class EndGameProcessor extends Processor {
         
 

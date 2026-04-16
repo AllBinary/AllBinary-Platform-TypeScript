@@ -28,7 +28,7 @@ import { DomDocumentMappingInterface } from "../../../../../org/allbinary/data/t
 
     
 
-interface EmailInterface extends DomNodeInterface, DomDocumentMappingInterface {
+export interface EmailInterface extends DomNodeInterface, DomDocumentMappingInterface {
         
 
     public getDebugInfo(): string

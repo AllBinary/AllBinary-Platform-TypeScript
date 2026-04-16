@@ -25,6 +25,8 @@ import { BasicArrayListUtil } from "../../../org/allbinary/util/BasicArrayListUt
 
     
 
+import { PointFactory } from "./PointFactory.js";
+
 export class RelativeRelationship
             extends Object
          {

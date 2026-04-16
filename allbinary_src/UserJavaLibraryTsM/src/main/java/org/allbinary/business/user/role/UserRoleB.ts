@@ -18,10 +18,7 @@
 
 
 
-            import Vector from "@ohos.util.Vector";
-        
-
-//import { Vector } from "../../../../../java/util/Vector.js";
+import { Vector } from "../../../../../java/util/Vector.js";
 
     
 import { UserFactoryInterface } from "../../../../../org/allbinary/business/user/UserFactoryInterface.js";
@@ -30,6 +27,10 @@ import { UserFactoryInterface } from "../../../../../org/allbinary/business/user
 import { StringValidationUtil } from "../../../../../org/allbinary/logic/string/StringValidationUtil.js";
 
     
+
+import { UserRoleFactory } from "./UserRoleFactory.js";
+
+import { UserRoleFactory } from "./UserRoleFactory.js";
 
 export class UserRoleB extends UserRole {
         

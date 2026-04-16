@@ -18,10 +18,7 @@
 
 
 
-            import HashMap from "@ohos.util.HashMap";
-        
-
-//import { HashMap } from "../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../java/util/HashMap.js";
 
     
 import { PreLogUtil } from "../../../../org/allbinary/logic/communication/log/PreLogUtil.js";
@@ -39,6 +36,22 @@ import { AbPath } from "../../../../org/allbinary/logic/io/path/AbPath.js";
 import { BooleanUtil } from "../../../../org/allbinary/logic/java/bool/BooleanUtil.js";
 
     
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LOGGING } from "./LOGGING.js";
 
 export class InitInfo
             extends Object

@@ -18,22 +18,16 @@
 
 
 
-            import Vector from "@ohos.util.Vector";
-        
-            import Hashtable from "@ohos.util.HashMap";
-        
 import { FileReader } from "../../../../../../java/io/FileReader.js";
 
     
 import { LineNumberReader } from "../../../../../../java/io/LineNumberReader.js";
 
     
-
-//import { Hashtable } from "../../../../../../java/util/Hashtable.js";
+import { Hashtable } from "../../../../../../java/util/Hashtable.js";
 
     
-
-//import { Vector } from "../../../../../../java/util/Vector.js";
+import { Vector } from "../../../../../../java/util/Vector.js";
 
     
 import { NullUtil } from "../../../../../../org/allbinary/logic/NullUtil.js";
@@ -111,6 +105,20 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { PCComponentFactory } from "./PCComponentFactory.js";
+
+import { PCComponentFactory } from "./PCComponentFactory.js";
 
 export class LinuxHardware
             extends Object

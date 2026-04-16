@@ -25,6 +25,10 @@ import { Features } from "../../../../org/allbinary/game/configuration/feature/F
 
     
 
+import { OpenGLConfiguration } from "./OpenGLConfiguration.js";
+
+import { OpenGLFeatureFactory } from "./OpenGLFeatureFactory.js";
+
 export class OpenGLFeatureUtil
             extends Object
          {

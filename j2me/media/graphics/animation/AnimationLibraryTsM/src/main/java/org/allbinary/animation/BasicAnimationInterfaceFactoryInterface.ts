@@ -19,7 +19,7 @@
 
 
 
-interface BasicAnimationInterfaceFactoryInterface {
+export interface BasicAnimationInterfaceFactoryInterface {
         
 
 }

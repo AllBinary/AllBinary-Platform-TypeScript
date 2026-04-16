@@ -46,6 +46,10 @@ import { Node } from "../../../../org/w3c/dom/Node.js";
 
     
 
+import { CategoryData } from "./CategoryData.js";
+
+import { CategoryData } from "./CategoryData.js";
+
 export class CategoryUtil
             extends Object
          {

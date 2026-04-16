@@ -19,7 +19,7 @@
 
 
 
-interface AdvertisementsInterface {
+export interface AdvertisementsInterface {
         
 
     public add(advertisementInterface: AdvertisementInterface)

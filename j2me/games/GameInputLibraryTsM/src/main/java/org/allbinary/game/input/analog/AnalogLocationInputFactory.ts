@@ -8,6 +8,10 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
     
 
+import { AnalogLocationInput } from "./AnalogLocationInput.js";
+
+import { AnalogLocationInput } from "./AnalogLocationInput.js";
+
 export class AnalogLocationInputFactory
             extends Object
          {

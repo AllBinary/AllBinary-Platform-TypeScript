@@ -46,6 +46,8 @@ import { VectorInfo } from "../../../org/allbinary/vector/VectorInfo.js";
 
     
 
+import { VectorAnimationUtil } from "./VectorAnimationUtil.js";
+
 export class VectorRotationGenerator
             extends Object
          {

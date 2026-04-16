@@ -22,7 +22,7 @@ import { AllBinaryLayer } from "../../../../../org/allbinary/layer/AllBinaryLaye
 
     
 
-interface PickupProcessorInterface {
+export interface PickupProcessorInterface {
         
 
                 //@Throws(Error::class)

@@ -43,6 +43,10 @@ import { PrimitiveLongUtil } from "../../../../org/allbinary/logic/math/Primitiv
 
     
 
+import { DOLLAR } from "./DOLLAR.js";
+
+import { LEVEL } from "./LEVEL.js";
+
 export class TechnologyRTSInterfaceImageItem extends CustomImageItem {
         
 

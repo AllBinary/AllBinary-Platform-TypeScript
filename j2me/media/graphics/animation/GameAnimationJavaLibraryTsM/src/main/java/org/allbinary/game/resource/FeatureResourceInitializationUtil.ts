@@ -28,6 +28,8 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
     
 
+import { FeaturedResourceRelativeRelationshipFactory } from "./FeaturedResourceRelativeRelationshipFactory.js";
+
 export class FeatureResourceInitializationUtil
             extends Object
          {

@@ -19,7 +19,7 @@
 
 
 
-interface MagicGameObjectInterface extends MeteredGameObjectInterface {
+export interface MagicGameObjectInterface extends MeteredGameObjectInterface {
         
 
 }

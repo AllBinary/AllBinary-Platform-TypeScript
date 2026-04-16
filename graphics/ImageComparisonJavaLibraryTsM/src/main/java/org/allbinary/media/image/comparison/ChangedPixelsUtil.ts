@@ -18,13 +18,10 @@
 
 
 
-            import Vector from "@ohos.util.Vector";
-        
 import { BufferedImage } from "../../../../../java/awt/image/BufferedImage.js";
 
     
-
-//import { Vector } from "../../../../../java/util/Vector.js";
+import { Vector } from "../../../../../java/util/Vector.js";
 
     
 import { PoolInterface } from "../../../../../org/allbinary/logic/util/cache/PoolInterface.js";
@@ -45,6 +42,16 @@ import { BufferedImagePoolSingleton } from "../../../../../org/allbinary/media/i
 import { PixelDelta } from "../../../../../org/allbinary/media/image/comparison/pixel/PixelDelta.js";
 
     
+
+import {  } from "./.js";
+
+import { System } from "./System.js";
+
+import { System } from "./System.js";
+
+import {  } from "./.js";
+
+import {  } from "./.js";
 
 export class ChangedPixelsUtil
             extends Object

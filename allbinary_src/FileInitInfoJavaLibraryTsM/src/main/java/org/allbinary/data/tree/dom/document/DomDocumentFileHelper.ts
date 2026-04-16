@@ -49,6 +49,8 @@ import { Document } from "../../../../../../org/w3c/dom/Document.js";
 
     
 
+import { DomDocumentHelper } from "./DomDocumentHelper.js";
+
 export class DomDocumentFileHelper
             extends Object
          {

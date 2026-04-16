@@ -19,7 +19,7 @@
 
 
 
-interface GameKeyEventSourceInterface {
+export interface GameKeyEventSourceInterface {
         
 
     getSourceId(): number

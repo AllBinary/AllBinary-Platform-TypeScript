@@ -18,10 +18,7 @@
 
 
 
-            import HashMap from "@ohos.util.HashMap";
-        
-
-//import { HashMap } from "../../../../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../../../../java/util/HashMap.js";
 
     
 import { LogUtil } from "../../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
@@ -36,6 +33,18 @@ import { UserEmailEventsConfigurationInterface } from "../../../../../../../org/
 import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonStrings.js";
 
     
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
 
 export class UserEmailConfiguration
             extends Object

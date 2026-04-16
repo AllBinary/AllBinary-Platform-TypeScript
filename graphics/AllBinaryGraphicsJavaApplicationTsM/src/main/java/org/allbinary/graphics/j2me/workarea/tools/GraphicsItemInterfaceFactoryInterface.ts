@@ -22,7 +22,7 @@ import { CanvasJPanel } from "../../../../../../org/allbinary/graphics/j2me/work
 
     
 
-interface GraphicsItemInterfaceFactoryInterface {
+export interface GraphicsItemInterfaceFactoryInterface {
         
 
     getInstance(canvasJPanel: CanvasJPanel): GraphicItemInterface

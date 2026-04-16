@@ -19,6 +19,12 @@
 
 
 
+import { Long } from "./Long.js";
+
+import { ScaleFactorFactory } from "./ScaleFactorFactory.js";
+
+import { ScaleFactorFactory } from "./ScaleFactorFactory.js";
+
 export class BasicDecimal
             extends Object
          {

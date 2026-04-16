@@ -28,6 +28,10 @@ import { VisitorInterface } from "../../../../../../org/allbinary/logic/util/vis
 
     
 
+import { Boolean } from "./Boolean.js";
+
+import { Boolean } from "./Boolean.js";
+
 export class DirectoryFileVisitor
             extends Object
         

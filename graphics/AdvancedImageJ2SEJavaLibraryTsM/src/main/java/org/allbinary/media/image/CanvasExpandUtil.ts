@@ -28,6 +28,8 @@ import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js
 
     
 
+import { ImageUtil } from "./ImageUtil.js";
+
 export class CanvasExpandUtil
             extends Object
          {

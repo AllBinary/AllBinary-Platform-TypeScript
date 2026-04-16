@@ -19,7 +19,7 @@
 
 
 
-interface MediaInterface {
+export interface MediaInterface {
         
 
 }

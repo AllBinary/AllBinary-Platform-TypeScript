@@ -19,7 +19,7 @@
 
 
 
-interface AnimationInterfaceCompositeInterface {
+export interface AnimationInterfaceCompositeInterface {
         
 
     getAnimationInterface(): Animation

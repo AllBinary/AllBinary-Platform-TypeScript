@@ -28,6 +28,22 @@ import { CommonSeps } from "../../../org/allbinary/string/CommonSeps.js";
 
     
 
+import { UP } from "./UP.js";
+
+import { LEFT } from "./LEFT.js";
+
+import { UP } from "./UP.js";
+
+import { RIGHT } from "./RIGHT.js";
+
+import { DOWN } from "./DOWN.js";
+
+import { LEFT } from "./LEFT.js";
+
+import { DOWN } from "./DOWN.js";
+
+import { RIGHT } from "./RIGHT.js";
+
 export class DirectionFactory
             extends Object
          {

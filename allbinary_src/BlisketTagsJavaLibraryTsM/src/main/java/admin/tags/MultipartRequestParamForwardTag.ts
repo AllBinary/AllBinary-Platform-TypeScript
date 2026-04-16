@@ -18,16 +18,10 @@
 
 
 
-            import Vector from "@ohos.util.Vector";
-        
-            import HashMap from "@ohos.util.HashMap";
-        
-
-//import { HashMap } from "../../java/util/HashMap.js";
+import { HashMap } from "../../java/util/HashMap.js";
 
     
-
-//import { Vector } from "../../java/util/Vector.js";
+import { Vector } from "../../java/util/Vector.js";
 
     
 import { JspTagException } from "../../javax/servlet/jsp/JspTagException.js";
@@ -51,6 +45,10 @@ import { CustomTagSupport } from "../../tags/CustomTagSupport.js";
 import { HelperTag } from "../../tags/HelperTag.js";
 
     
+
+import { ParentInventoryTagHelper } from "./ParentInventoryTagHelper.js";
+
+import { AbTagData } from "./AbTagData.js";
 
 export class MultipartRequestParamForwardTag extends CustomTagSupport {
         

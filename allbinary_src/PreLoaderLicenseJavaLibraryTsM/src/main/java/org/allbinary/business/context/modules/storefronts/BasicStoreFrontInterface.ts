@@ -22,7 +22,7 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 
     
 
-interface BasicStoreFrontInterface {
+export interface BasicStoreFrontInterface {
         
 
     public getTestHtmlPath(): string

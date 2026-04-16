@@ -58,6 +58,8 @@ import { SwtMutableImage } from "../../../../org/microemu/device/swt/SwtMutableI
 
     
 
+import { ImageCopyUtil } from "./ImageCopyUtil.js";
+
 export class ImageModifierUtil
             extends Object
          {

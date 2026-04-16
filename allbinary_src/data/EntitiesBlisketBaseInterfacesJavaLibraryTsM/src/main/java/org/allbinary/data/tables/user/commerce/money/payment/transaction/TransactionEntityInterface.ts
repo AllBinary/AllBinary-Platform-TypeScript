@@ -25,7 +25,7 @@ import { BasicDataTableInterface } from "../../../../../../../../../org/allbinar
 
     
 
-interface TransactionEntityInterface extends BasicDataTableInterface {
+export interface TransactionEntityInterface extends BasicDataTableInterface {
         
 
     public remove(userName: string, orderNumber: string)

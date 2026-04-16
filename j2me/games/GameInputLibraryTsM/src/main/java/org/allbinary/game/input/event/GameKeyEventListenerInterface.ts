@@ -19,7 +19,7 @@
 
 
 
-interface GameKeyEventListenerInterface extends DownGameKeyEventListenerInterface, UpGameKeyEventListenerInterface, PressGameKeyEventListenerInterface {
+export interface GameKeyEventListenerInterface extends DownGameKeyEventListenerInterface, UpGameKeyEventListenerInterface, PressGameKeyEventListenerInterface {
         
 
 }

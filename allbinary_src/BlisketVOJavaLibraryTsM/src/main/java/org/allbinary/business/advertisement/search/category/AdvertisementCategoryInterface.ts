@@ -19,7 +19,7 @@
 
 
 
-interface AdvertisementCategoryInterface {
+export interface AdvertisementCategoryInterface {
         
 
     public toString(): string

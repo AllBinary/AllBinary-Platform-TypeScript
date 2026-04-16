@@ -19,7 +19,7 @@
 
 
 
-interface VectorInterface {
+export interface VectorInterface {
         
 
     getPoints(frame: number): number[][]

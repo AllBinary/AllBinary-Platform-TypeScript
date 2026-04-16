@@ -19,7 +19,7 @@
 
 
 
-interface MonitorInterface {
+export interface MonitorInterface {
         
 
 }

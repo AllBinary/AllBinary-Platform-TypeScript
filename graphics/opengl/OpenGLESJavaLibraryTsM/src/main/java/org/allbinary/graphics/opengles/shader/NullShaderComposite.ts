@@ -31,6 +31,12 @@ import { OpenGLProcessor } from "../../../../../org/allbinary/graphics/opengles/
 
     
 
+import { CompositeShaderUpdater } from "./CompositeShaderUpdater.js";
+
+import { ShaderInitializer } from "./ShaderInitializer.js";
+
+import { ModelViewProjection } from "./ModelViewProjection.js";
+
 export class NullShaderComposite extends ShaderComposite {
         
 

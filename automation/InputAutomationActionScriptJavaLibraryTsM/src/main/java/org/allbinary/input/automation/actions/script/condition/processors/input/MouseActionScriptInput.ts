@@ -18,8 +18,6 @@
 
 
 
-            import HashMap from "@ohos.util.HashMap";
-        
             import { Integer } from "../../../../../../../../../java/lang/Integer.js";
         
 import { awt } from "../../../../../../../../../java/awt.js";
@@ -28,8 +26,7 @@ import { awt } from "../../../../../../../../../java/awt.js";
 import { InputEvent } from "../../../../../../../../../java/awt/event/InputEvent.js";
 
     
-
-//import { HashMap } from "../../../../../../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../../../../../../java/util/HashMap.js";
 
     
 import { DomNodeHelper } from "../../../../../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js";
@@ -59,6 +56,28 @@ import { Node } from "../../../../../../../../../org/w3c/dom/Node.js";
 import { NodeList } from "../../../../../../../../../org/w3c/dom/NodeList.js";
 
     
+
+import { MouseActionScriptInputData } from "./MouseActionScriptInputData.js";
+
+import { MouseActionScriptInputData } from "./MouseActionScriptInputData.js";
+
+import { MouseActionScriptInputData } from "./MouseActionScriptInputData.js";
+
+import { MouseActionScriptInputData } from "./MouseActionScriptInputData.js";
+
+import { MouseActionScriptInputData } from "./MouseActionScriptInputData.js";
+
+import { MouseActionScriptInputData } from "./MouseActionScriptInputData.js";
+
+import { MouseActionScriptInputData } from "./MouseActionScriptInputData.js";
+
+import { MouseActionScriptInputData } from "./MouseActionScriptInputData.js";
+
+import { MouseActionScriptInputData } from "./MouseActionScriptInputData.js";
+
+import { MouseActionScriptInputData } from "./MouseActionScriptInputData.js";
+
+import { MouseInputAutomationProcessor } from "./MouseInputAutomationProcessor.js";
 
 export class MouseActionScriptInput extends BasicProfileActionScriptInput
                 , MouseActionScriptInputInterface {

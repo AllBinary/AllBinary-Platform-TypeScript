@@ -58,6 +58,8 @@ import { AttackSound } from "../../../../../org/allbinary/media/audio/AttackSoun
 
     
 
+import { WaypointCellPositionHistory } from "./WaypointCellPositionHistory.js";
+
 export class WaypointLayer extends AdvancedRTSGameLayer {
         
 

@@ -18,15 +18,12 @@
 
 
 
-            import HashMap from "@ohos.util.HashMap";
-        
             import { Integer } from "../../../../../../../../java/lang/Integer.js";
         
 import { Calendar } from "../../../../../../../../java/util/Calendar.js";
 
     
-
-//import { HashMap } from "../../../../../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../../../../../java/util/HashMap.js";
 
     
 import { Set } from "../../../../../../../../java/util/Set.js";
@@ -53,6 +50,26 @@ import { Document } from "../../../../../../../../org/w3c/dom/Document.js";
 import { Node } from "../../../../../../../../org/w3c/dom/Node.js";
 
     
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
+
+import { DownloadItemData } from "./DownloadItemData.js";
+
+import { DownloadItemData } from "./DownloadItemData.js";
+
+import { DownloadItemData } from "./DownloadItemData.js";
+
+import { DownloadItemData } from "./DownloadItemData.js";
+
+import { DownloadItemData } from "./DownloadItemData.js";
+
+import { DownloadItemData } from "./DownloadItemData.js";
+
+import { DownloadItemData } from "./DownloadItemData.js";
 
 export class DownloadableItemView
             extends Object

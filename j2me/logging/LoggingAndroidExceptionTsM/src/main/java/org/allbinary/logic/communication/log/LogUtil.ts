@@ -18,11 +18,20 @@
 
 
 
+            import hilog from '@ohos.hilog';
+        
+
+import { LogFormatUtil } from "./LogFormatUtil.js";
+
+import { Log } from "./Log.js";
 
 /*actual*/ export class LogUtil
             extends Object
          {
         
+
+            static readonly PUBLIC: string = '%{public}s';
+            
 
     private static readonly instance: LogUtil = new LogUtil();
         
@@ -33,7 +42,7 @@
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return LogUtil.instance;
     
 }
 
@@ -108,7 +117,7 @@ private constructor (){
     //var functionName = functionName
     //var exception = exception
 
-    var className: string = LABEL;
+    var className: string = this.LABEL;
         
         
 ;
@@ -116,12 +125,12 @@ private constructor (){
 className= anyType!.constructor.name.toString()!;
     
 
-    var message: string = logFormatUtil!.get(className, functionName, specialMessage, exception)!;
+    var message: string = this.logFormatUtil!.get(className, functionName, specialMessage, exception)!;
         
         
 ;
     
-android.util.Log.i(LABEL, LOG_SUCCESS +message);
+android.util.Log.i(this.LABEL, this.LOG_SUCCESS +message);
     
 }
 

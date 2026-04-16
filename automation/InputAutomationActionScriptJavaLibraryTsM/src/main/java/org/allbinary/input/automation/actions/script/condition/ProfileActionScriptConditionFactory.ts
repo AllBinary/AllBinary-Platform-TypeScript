@@ -25,6 +25,12 @@ import { Node } from "../../../../../../../org/w3c/dom/Node.js";
 
     
 
+import { ColorAtActionScriptConditionData } from "./ColorAtActionScriptConditionData.js";
+
+import { TimeIntervalActionScriptConditionData } from "./TimeIntervalActionScriptConditionData.js";
+
+import { AlwaysActionScriptConditionData } from "./AlwaysActionScriptConditionData.js";
+
 export class ProfileActionScriptConditionFactory
             extends Object
          {

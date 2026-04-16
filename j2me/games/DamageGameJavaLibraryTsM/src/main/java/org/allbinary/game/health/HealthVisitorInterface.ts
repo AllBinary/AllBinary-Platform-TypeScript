@@ -19,7 +19,7 @@
 
 
 
-interface HealthVisitorInterface {
+export interface HealthVisitorInterface {
         
 
     visit(healthInterface: HealthInterface)

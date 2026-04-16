@@ -18,15 +18,14 @@
 
 
 
-            import Vector from "@ohos.util.Vector";
-        
-
-//import { Vector } from "../../../../../java/util/Vector.js";
+import { Vector } from "../../../../../java/util/Vector.js";
 
     
 import { TsUtil } from "../../../../../org/allbinary/logic/TsUtil.js";
 
     
+
+import { AcceptableResponseFactory } from "./AcceptableResponseFactory.js";
 
 export class AcceptableResponseUtil
             extends Object

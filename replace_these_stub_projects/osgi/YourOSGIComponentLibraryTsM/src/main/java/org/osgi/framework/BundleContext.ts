@@ -8,7 +8,7 @@ import { Dictionary } from "../../../java/util/Dictionary.js";
 
     
 
-interface BundleContext {
+export interface BundleContext {
         
 
     public getBundles(): Bundle[]

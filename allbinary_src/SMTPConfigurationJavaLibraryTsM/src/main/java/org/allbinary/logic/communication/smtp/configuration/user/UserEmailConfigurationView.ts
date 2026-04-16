@@ -18,10 +18,7 @@
 
 
 
-            import HashMap from "@ohos.util.HashMap";
-        
-
-//import { HashMap } from "../../../../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../../../../java/util/HashMap.js";
 
     
 import { DomNodeInterface } from "../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js";
@@ -57,6 +54,14 @@ import { Node } from "../../../../../../../org/w3c/dom/Node.js";
 import { NodeList } from "../../../../../../../org/w3c/dom/NodeList.js";
 
     
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
+
+import { UserEmailConfigurationData } from "./UserEmailConfigurationData.js";
 
 export class UserEmailConfigurationView
             extends Object

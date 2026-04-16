@@ -19,7 +19,7 @@
 
 
 
-interface AllBinaryObjectFactoryInterface {
+export interface AllBinaryObjectFactoryInterface {
         
 
     getInstance(): any

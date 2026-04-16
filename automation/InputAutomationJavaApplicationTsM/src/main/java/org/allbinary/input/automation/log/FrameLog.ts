@@ -18,16 +18,13 @@
 
 
 
-            import Vector from "@ohos.util.Vector";
-        
 import { File } from "../../../../../java/io/File.js";
 
     
 import { FileOutputStream } from "../../../../../java/io/FileOutputStream.js";
 
     
-
-//import { Vector } from "../../../../../java/util/Vector.js";
+import { Vector } from "../../../../../java/util/Vector.js";
 
     
 import { ImageOutputData } from "../../../../../org/allbinary/input/automation/ImageOutputData.js";

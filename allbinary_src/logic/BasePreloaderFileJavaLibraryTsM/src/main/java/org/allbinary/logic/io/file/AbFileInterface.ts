@@ -28,7 +28,7 @@ import { URI } from "../../../../../java/net/URI.js";
 
     
 
-interface AbFileInterface {
+export interface AbFileInterface {
         
 
     canRead(): boolean

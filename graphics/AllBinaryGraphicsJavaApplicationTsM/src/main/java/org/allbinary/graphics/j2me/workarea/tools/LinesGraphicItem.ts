@@ -18,15 +18,12 @@
 
 
 
-            import Vector from "@ohos.util.Vector";
-        
             import { Integer } from "../../../../../../java/lang/Integer.js";
         
 import { awt } from "../../../../../../java/awt.js";
 
     
-
-//import { Vector } from "../../../../../../java/util/Vector.js";
+import { Vector } from "../../../../../../java/util/Vector.js";
 
     
 import { DefaultMutableTreeNode } from "../../../../../../javax/swing/tree/DefaultMutableTreeNode.js";
@@ -80,6 +77,30 @@ import { Node } from "../../../../../../org/w3c/dom/Node.js";
 import { NodeList } from "../../../../../../org/w3c/dom/NodeList.js";
 
     
+
+import { WHITE } from "./WHITE.js";
+
+import { PointsDomUtil } from "./PointsDomUtil.js";
+
+import { PointsDomUtil } from "./PointsDomUtil.js";
+
+import { PointsDomUtil } from "./PointsDomUtil.js";
+
+import { Math } from "./Math.js";
+
+import { Math } from "./Math.js";
+
+import { Math } from "./Math.js";
+
+import { Math } from "./Math.js";
+
+import { Math } from "./Math.js";
+
+import { Math } from "./Math.js";
+
+import { PointsUtil } from "./PointsUtil.js";
+
+import { PointsDomUtil } from "./PointsDomUtil.js";
 
 export class LinesGraphicItem
             extends Object

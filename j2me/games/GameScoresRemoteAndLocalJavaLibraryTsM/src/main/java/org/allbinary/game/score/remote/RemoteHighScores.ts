@@ -18,19 +18,13 @@
 
 
 
-            import Vector from "@ohos.util.Vector";
-        
-            import Hashtable from "@ohos.util.HashMap";
-        
 import { Enumeration } from "../../../../../java/util/Enumeration.js";
 
     
-
-//import { Hashtable } from "../../../../../java/util/Hashtable.js";
+import { Hashtable } from "../../../../../java/util/Hashtable.js";
 
     
-
-//import { Vector } from "../../../../../java/util/Vector.js";
+import { Vector } from "../../../../../java/util/Vector.js";
 
     
 import { GameInfo } from "../../../../../org/allbinary/game/GameInfo.js";
@@ -57,6 +51,14 @@ import { AbeClientInformationInterface } from "../../../../../org/allbinary/logi
 import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings.js";
 
     
+
+import { RemoteHighScoresProcessorFactory } from "./RemoteHighScoresProcessorFactory.js";
+
+import { RemoteHighScoresSubmissionProcessorFactory } from "./RemoteHighScoresSubmissionProcessorFactory.js";
+
+import { RemoteHighScoresData } from "./RemoteHighScoresData.js";
+
+import { Long } from "./Long.js";
 
 export class RemoteHighScores extends HighScores {
         

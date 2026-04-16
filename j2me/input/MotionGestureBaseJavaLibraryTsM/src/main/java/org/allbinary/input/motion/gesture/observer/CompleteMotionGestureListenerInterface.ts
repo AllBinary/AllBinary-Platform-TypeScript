@@ -22,7 +22,7 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 
     
 
-interface CompleteMotionGestureListenerInterface {
+export interface CompleteMotionGestureListenerInterface {
         
 
                 //@Throws(Error::class)

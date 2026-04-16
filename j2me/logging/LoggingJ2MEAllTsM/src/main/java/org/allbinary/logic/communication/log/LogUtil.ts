@@ -32,12 +32,16 @@ import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
 import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings.js";
 
     
-import { LogFormatUtil } from "../../../../../org/allbinary/logic/communication/log/LogFormatUtil.js";
 
-    
-import { Log } from "../../../../../org/allbinary/logic/communication/log/Log.js";
+import { LogFormatUtil } from "./LogFormatUtil.js";
 
-    
+import { System } from "./System.js";
+
+import { System } from "./System.js";
+
+import { System } from "./System.js";
+
+import { System } from "./System.js";
 
 /*actual*/ export class LogUtil
             extends Object

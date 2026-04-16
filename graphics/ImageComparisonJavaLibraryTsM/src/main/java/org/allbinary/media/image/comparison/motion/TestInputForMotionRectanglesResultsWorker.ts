@@ -18,10 +18,6 @@
 
 
 
-            import Vector from "@ohos.util.Vector";
-        
-            import Hashtable from "@ohos.util.HashMap";
-        
 import { awt } from "../../../../../../java/awt.js";
 
     
@@ -31,12 +27,10 @@ import { InputEvent } from "../../../../../../java/awt/event/InputEvent.js";
 import { KeyEvent } from "../../../../../../java/awt/event/KeyEvent.js";
 
     
-
-//import { Hashtable } from "../../../../../../java/util/Hashtable.js";
+import { Hashtable } from "../../../../../../java/util/Hashtable.js";
 
     
-
-//import { Vector } from "../../../../../../java/util/Vector.js";
+import { Vector } from "../../../../../../java/util/Vector.js";
 
     
 import { InputRobotFactory } from "../../../../../../org/allbinary/input/automation/robot/InputRobotFactory.js";
@@ -63,6 +57,22 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 import { TimeDelayHelper } from "../../../../../../org/allbinary/time/TimeDelayHelper.js";
 
     
+
+import { Thread } from "./Thread.js";
+
+import { Thread } from "./Thread.js";
+
+import { Thread } from "./Thread.js";
+
+import { Thread } from "./Thread.js";
+
+import { Thread } from "./Thread.js";
+
+import { Thread } from "./Thread.js";
+
+import { Thread } from "./Thread.js";
+
+import { Thread } from "./Thread.js";
 
 export class TestInputForMotionRectanglesResultsWorker
             extends Object

@@ -49,6 +49,22 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
     
 
+import { LEVEL_DOWN } from "./LEVEL_DOWN.js";
+
+import { LEVEL_UP } from "./LEVEL_UP.js";
+
+import { LEFT } from "./LEFT.js";
+
+import { RIGHT } from "./RIGHT.js";
+
+import { UP } from "./UP.js";
+
+import { DOWN } from "./DOWN.js";
+
+import { KEY_NUM1 } from "./KEY_NUM1.js";
+
+import { KEY_NUM3 } from "./KEY_NUM3.js";
+
 export class CheatGameInputProcessor extends PlayerGameInput {
         
 

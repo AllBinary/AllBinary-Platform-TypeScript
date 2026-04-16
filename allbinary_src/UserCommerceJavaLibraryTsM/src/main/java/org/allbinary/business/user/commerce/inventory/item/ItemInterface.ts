@@ -25,7 +25,7 @@ import { TableMappingInterface } from "../../../../../../../org/allbinary/data/t
 
     
 
-interface ItemInterface extends TableMappingInterface {
+export interface ItemInterface extends TableMappingInterface {
         
 
     setId(itemId: string)

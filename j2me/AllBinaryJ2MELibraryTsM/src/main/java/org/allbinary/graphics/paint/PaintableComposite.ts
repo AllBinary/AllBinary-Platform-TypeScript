@@ -22,6 +22,10 @@ import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
 
     
 
+import {  } from "./.js";
+
+import {  } from "./.js";
+
 export class PaintableComposite extends Paintable {
         
 

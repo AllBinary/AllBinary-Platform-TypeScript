@@ -19,7 +19,7 @@
 
 
 
-interface SequenceInterface {
+export interface SequenceInterface {
         
 
     setSequence(sequence: number[])

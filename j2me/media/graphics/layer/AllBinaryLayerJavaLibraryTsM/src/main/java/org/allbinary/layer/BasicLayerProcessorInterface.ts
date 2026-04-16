@@ -19,7 +19,7 @@
 
 
 
-interface BasicLayerProcessorInterface {
+export interface BasicLayerProcessorInterface {
         
 
                 //@Throws(Error::class)

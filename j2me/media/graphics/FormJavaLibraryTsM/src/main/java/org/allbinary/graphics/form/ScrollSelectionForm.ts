@@ -61,6 +61,18 @@ import { CommonSeps } from "../../../../org/allbinary/string/CommonSeps.js";
 
     
 
+import { FormTypeFactory } from "./FormTypeFactory.js";
+
+import { ItemPaintableFactory } from "./ItemPaintableFactory.js";
+
+import { FormTypeFactory } from "./FormTypeFactory.js";
+
+import { FormTypeFactory } from "./FormTypeFactory.js";
+
+import { FormTypeFactory } from "./FormTypeFactory.js";
+
+import { FormTypeFactory } from "./FormTypeFactory.js";
+
 export class ScrollSelectionForm extends PaintableForm {
         
 

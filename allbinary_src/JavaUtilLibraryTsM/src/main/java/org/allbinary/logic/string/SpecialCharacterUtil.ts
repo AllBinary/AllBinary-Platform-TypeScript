@@ -18,10 +18,7 @@
 
 
 
-            import HashMap from "@ohos.util.HashMap";
-        
-
-//import { HashMap } from "../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../java/util/HashMap.js";
 
     
 import { AbPathData } from "../../../../org/allbinary/logic/io/path/AbPathData.js";
@@ -33,6 +30,8 @@ import { CommonPhoneStrings } from "../../../../org/allbinary/string/CommonPhone
 import { CommonSeps } from "../../../../org/allbinary/string/CommonSeps.js";
 
     
+
+import { StringUtil } from "./StringUtil.js";
 
 export class SpecialCharacterUtil
             extends Object

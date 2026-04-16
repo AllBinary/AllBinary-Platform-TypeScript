@@ -36,6 +36,8 @@ import { CommonSeps } from "../../../../org/allbinary/string/CommonSeps.js";
 
     
 
+import { Thread } from "./Thread.js";
+
 export class ResourceUtil
             extends Object
          {

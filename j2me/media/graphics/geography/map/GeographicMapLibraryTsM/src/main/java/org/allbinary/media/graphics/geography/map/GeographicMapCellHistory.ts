@@ -58,6 +58,8 @@ import { BasicDecimal } from "../../../../../../org/allbinary/logic/math/BasicDe
 
     
 
+import { RED } from "./RED.js";
+
 export class GeographicMapCellHistory
             extends Object
          {

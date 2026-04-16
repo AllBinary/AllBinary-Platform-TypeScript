@@ -22,7 +22,7 @@ import { EventListenerInterface } from "../../../../../../../org/allbinary/logic
 
     
 
-interface GeographicMapCellPositionEventListenerInterface extends EventListenerInterface {
+export interface GeographicMapCellPositionEventListenerInterface extends EventListenerInterface {
         
 
                 //@Throws(Error::class)

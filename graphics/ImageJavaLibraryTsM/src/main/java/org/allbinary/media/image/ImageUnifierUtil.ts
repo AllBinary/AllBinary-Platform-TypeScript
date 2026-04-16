@@ -31,6 +31,10 @@ import { CommonLabels } from "../../../../org/allbinary/string/CommonLabels.js";
 
     
 
+import { ImageUtil } from "./ImageUtil.js";
+
+import { GraphicsEnvironment } from "./GraphicsEnvironment.js";
+
 export class ImageUnifierUtil
             extends Object
          {

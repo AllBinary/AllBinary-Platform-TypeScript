@@ -18,10 +18,7 @@
 
 
 
-            import HashMap from "@ohos.util.HashMap";
-        
-
-//import { HashMap } from "../../../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../../../java/util/HashMap.js";
 
     
 import { PageContext } from "../../../../../../javax/servlet/jsp/PageContext.js";
@@ -31,7 +28,7 @@ import { WeblisketSessionInterface } from "../../../../../../org/allbinary/logic
 
     
 
-interface TransformInfoHttpInterface extends TransformInfoInterface {
+export interface TransformInfoHttpInterface extends TransformInfoInterface {
         
 
     public getWeblisketSession(): WeblisketSessionInterface

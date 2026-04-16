@@ -18,10 +18,7 @@
 
 
 
-            import Hashtable from "@ohos.util.HashMap";
-        
-
-//import { Hashtable } from "../../../../../java/util/Hashtable.js";
+import { Hashtable } from "../../../../../java/util/Hashtable.js";
 
     
 import { Animation } from "../../../../../org/allbinary/animation/Animation.js";
@@ -39,6 +36,12 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+
+import { PickedUpLayerTypeFactory } from "./PickedUpLayerTypeFactory.js";
+
+import { IconLayer } from "./IconLayer.js";
+
+import { CountedPickedUpLayerInterfaceFactoryPool } from "./CountedPickedUpLayerInterfaceFactoryPool.js";
 
 export class CountedPickedUpLayerInterfaceFactory extends PickedUpLayerInterfaceFactory
                 , CountedPickedUpLayerInterfaceFactoryInterface {

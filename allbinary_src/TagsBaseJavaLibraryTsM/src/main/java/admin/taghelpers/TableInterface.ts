@@ -19,7 +19,7 @@
 
 
 
-interface TableInterface extends BasicTableInterface, ModifyTableInterface {
+export interface TableInterface extends BasicTableInterface, ModifyTableInterface {
         
 
 }

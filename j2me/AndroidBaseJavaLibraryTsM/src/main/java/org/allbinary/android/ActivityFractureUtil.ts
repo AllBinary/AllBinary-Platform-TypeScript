@@ -18,6 +18,8 @@
 
 
 
+            import hilog from '@ohos.hilog';
+        
 import { Activity } from "../../../android/app/Activity.js";
 
     
@@ -26,6 +28,9 @@ export class ActivityFractureUtil
             extends Object
          {
         
+
+            static readonly PUBLIC: string = '%{public}s';
+            
 
                 //@Throws(Error::class)
             

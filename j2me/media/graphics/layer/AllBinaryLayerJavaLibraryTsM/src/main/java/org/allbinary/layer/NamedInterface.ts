@@ -19,7 +19,7 @@
 
 
 
-interface NamedInterface {
+export interface NamedInterface {
         
 
     getName(): string

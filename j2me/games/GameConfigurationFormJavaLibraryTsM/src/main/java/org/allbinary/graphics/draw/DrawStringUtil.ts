@@ -49,6 +49,8 @@ import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js
 
     
 
+import {  } from "./.js";
+
 export class DrawStringUtil
             extends Object
          {

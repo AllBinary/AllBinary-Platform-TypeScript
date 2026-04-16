@@ -22,7 +22,7 @@ import { awt } from "../../../../../../../../../java/awt.js";
 
     
 
-interface MouseActionScriptInputInterface extends ProfileActionScriptInputInterface {
+export interface MouseActionScriptInputInterface extends ProfileActionScriptInputInterface {
         
 
     setPoint(point: Point)

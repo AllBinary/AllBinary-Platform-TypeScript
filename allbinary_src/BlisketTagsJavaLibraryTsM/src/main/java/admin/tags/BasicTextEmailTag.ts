@@ -18,13 +18,10 @@
 
 
 
-            import HashMap from "@ohos.util.HashMap";
-        
 import { Method } from "../../java/lang/reflect/Method.js";
 
     
-
-//import { HashMap } from "../../java/util/HashMap.js";
+import { HashMap } from "../../java/util/HashMap.js";
 
     
 import { JspTagException } from "../../javax/servlet/jsp/JspTagException.js";
@@ -42,6 +39,12 @@ import { LogUtil } from "../../org/allbinary/logic/communication/log/LogUtil.js"
 import { CustomTagSupport } from "../../tags/CustomTagSupport.js";
 
     
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
 
 export class BasicTextEmailTag extends CustomTagSupport {
         

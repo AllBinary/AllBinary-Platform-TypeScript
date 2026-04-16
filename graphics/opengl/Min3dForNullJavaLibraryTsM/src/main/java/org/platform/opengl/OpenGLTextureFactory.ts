@@ -14,6 +14,8 @@ import { PlatformTextureBaseFactory } from "../../../org/allbinary/platform/open
 
     
 
+import { OpenGLGLUUtils } from "./OpenGLGLUUtils.js";
+
 export class OpenGLTextureFactory extends PlatformTextureBaseFactory {
         
 

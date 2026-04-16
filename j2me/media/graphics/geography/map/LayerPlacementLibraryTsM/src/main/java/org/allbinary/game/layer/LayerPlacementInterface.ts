@@ -18,14 +18,11 @@
 
 
 
-            import Hashtable from "@ohos.util.HashMap";
-        
-
-//import { Hashtable } from "../../../../java/util/Hashtable.js";
+import { Hashtable } from "../../../../java/util/Hashtable.js";
 
     
 
-interface LayerPlacementInterface {
+export interface LayerPlacementInterface {
         
 
     getWidth(): number

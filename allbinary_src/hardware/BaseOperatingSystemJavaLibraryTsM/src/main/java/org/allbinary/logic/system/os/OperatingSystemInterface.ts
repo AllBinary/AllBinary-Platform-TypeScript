@@ -22,7 +22,7 @@ import { CharacterSet } from "../../../../../org/allbinary/logic/java/character/
 
     
 
-interface OperatingSystemInterface {
+export interface OperatingSystemInterface {
         
 
     getName(): string

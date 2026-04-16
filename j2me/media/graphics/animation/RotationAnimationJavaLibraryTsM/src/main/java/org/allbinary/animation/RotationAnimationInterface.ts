@@ -25,7 +25,7 @@ import { AngleInfo } from "../../../org/allbinary/math/AngleInfo.js";
 
     
 
-interface RotationAnimationInterface extends IndexedAnimationInterface, DirectionalInterface {
+export interface RotationAnimationInterface extends IndexedAnimationInterface, DirectionalInterface {
         
 
     getAngleInfoP(): AngleInfo

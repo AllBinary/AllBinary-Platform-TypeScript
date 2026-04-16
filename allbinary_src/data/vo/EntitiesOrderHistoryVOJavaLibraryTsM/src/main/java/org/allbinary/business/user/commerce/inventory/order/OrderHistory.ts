@@ -18,14 +18,11 @@
 
 
 
-            import HashMap from "@ohos.util.HashMap";
-        
 
 //import { Date } from "../../../../../../../java/util/Date.js";
 
     
-
-//import { HashMap } from "../../../../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../../../../java/util/HashMap.js";
 
     
 import { Set } from "../../../../../../../java/util/Set.js";
@@ -79,6 +76,62 @@ import { Document } from "../../../../../../../org/w3c/dom/Document.js";
 import { Node } from "../../../../../../../org/w3c/dom/Node.js";
 
     
+
+import { OrderData } from "./OrderData.js";
+
+import { OrderHistoryData } from "./OrderHistoryData.js";
+
+import { OrderHistoryData } from "./OrderHistoryData.js";
+
+import { OrderHistoryData } from "./OrderHistoryData.js";
+
+import { OrderHistoryData } from "./OrderHistoryData.js";
+
+import { OrderHistoryData } from "./OrderHistoryData.js";
+
+import { OrderHistoryData } from "./OrderHistoryData.js";
+
+import { OrderHistoryData } from "./OrderHistoryData.js";
+
+import { OrderHistoryData } from "./OrderHistoryData.js";
+
+import { OrderHistoryData } from "./OrderHistoryData.js";
+
+import { OrderData } from "./OrderData.js";
+
+import { OrderData } from "./OrderData.js";
+
+import { OrderData } from "./OrderData.js";
+
+import { OrderData } from "./OrderData.js";
+
+import { OrderHistoryData } from "./OrderHistoryData.js";
+
+import { OrderHistoryData } from "./OrderHistoryData.js";
+
+import { OrderHistoryData } from "./OrderHistoryData.js";
+
+import { OrderHistoryData } from "./OrderHistoryData.js";
+
+import { OrderHistoryData } from "./OrderHistoryData.js";
+
+import { OrderHistoryData } from "./OrderHistoryData.js";
+
+import { OrderHistoryData } from "./OrderHistoryData.js";
+
+import { OrderHistoryData } from "./OrderHistoryData.js";
+
+import { OrderHistoryData } from "./OrderHistoryData.js";
+
+import { OrderHistoryData } from "./OrderHistoryData.js";
+
+import { OrderHistoryData } from "./OrderHistoryData.js";
+
+import { OrderHistoryData } from "./OrderHistoryData.js";
+
+import { OrderHistoryData } from "./OrderHistoryData.js";
+
+import { OrderHistoryData } from "./OrderHistoryData.js";
 
 export class OrderHistory extends Order
                 , OrderHistoryInterface {

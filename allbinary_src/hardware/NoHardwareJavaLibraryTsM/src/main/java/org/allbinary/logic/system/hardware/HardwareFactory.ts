@@ -22,6 +22,8 @@ import { OperatingSystemInterface } from "../../../../../org/allbinary/logic/sys
 
     
 
+import { NoHardware } from "./NoHardware.js";
+
 export class HardwareFactory
             extends Object
          {

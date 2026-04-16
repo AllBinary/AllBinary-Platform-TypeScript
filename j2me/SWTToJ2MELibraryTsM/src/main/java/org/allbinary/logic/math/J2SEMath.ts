@@ -19,6 +19,8 @@
 
 
 
+import { Math } from "./Math.js";
+
 export class J2SEMath
             extends Object
          {

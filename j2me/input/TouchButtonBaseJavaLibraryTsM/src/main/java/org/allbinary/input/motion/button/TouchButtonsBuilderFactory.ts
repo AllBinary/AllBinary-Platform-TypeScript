@@ -19,6 +19,8 @@
 
 
 
+import { NoButtonsTouchInputFactory } from "./NoButtonsTouchInputFactory.js";
+
 export class TouchButtonsBuilderFactory
             extends Object
          {

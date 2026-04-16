@@ -18,13 +18,10 @@
 
 
 
-            import Vector from "@ohos.util.Vector";
-        
 import { BufferedImage } from "../../../../../java/awt/image/BufferedImage.js";
 
     
-
-//import { Vector } from "../../../../../java/util/Vector.js";
+import { Vector } from "../../../../../java/util/Vector.js";
 
     
 import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";

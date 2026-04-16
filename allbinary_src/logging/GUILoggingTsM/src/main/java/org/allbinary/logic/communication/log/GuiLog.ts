@@ -28,6 +28,16 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
     
 
+import { LogFormatUtil } from "./LogFormatUtil.js";
+
+import { System } from "./System.js";
+
+import { PreLogUtil } from "./PreLogUtil.js";
+
+import { System } from "./System.js";
+
+import { PreLogUtil } from "./PreLogUtil.js";
+
 export class GuiLog
             extends Object
          {

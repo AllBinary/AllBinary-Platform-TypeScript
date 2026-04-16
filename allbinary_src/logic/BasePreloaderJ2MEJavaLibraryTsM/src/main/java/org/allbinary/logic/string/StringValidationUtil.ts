@@ -19,6 +19,8 @@
 
 
 
+import { StringUtil } from "./StringUtil.js";
+
 export class StringValidationUtil
             extends Object
          {

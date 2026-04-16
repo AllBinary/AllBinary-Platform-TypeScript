@@ -37,6 +37,12 @@ import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
 
     
 
+import { URLGLOBALS } from "./URLGLOBALS.js";
+
+import { URLGLOBALS } from "./URLGLOBALS.js";
+
+import { URLGLOBALS } from "./URLGLOBALS.js";
+
 export class Globals
             extends Object
          {

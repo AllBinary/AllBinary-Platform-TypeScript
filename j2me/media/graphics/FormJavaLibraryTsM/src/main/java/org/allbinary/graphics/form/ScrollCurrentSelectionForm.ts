@@ -37,6 +37,10 @@ import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUt
 
     
 
+import { FormTypeFactory } from "./FormTypeFactory.js";
+
+import { FormTypeFactory } from "./FormTypeFactory.js";
+
 export class ScrollCurrentSelectionForm extends ScrollSelectionForm {
         
 

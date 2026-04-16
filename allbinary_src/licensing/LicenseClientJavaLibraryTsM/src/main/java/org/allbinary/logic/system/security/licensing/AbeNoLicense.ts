@@ -25,6 +25,8 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 
     
 
+import { LicenseTypeFactory } from "./LicenseTypeFactory.js";
+
 export class AbeNoLicense
             extends Object
         

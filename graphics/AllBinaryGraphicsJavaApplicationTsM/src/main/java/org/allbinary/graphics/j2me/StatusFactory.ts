@@ -22,6 +22,8 @@ import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUt
 
     
 
+import { MyFrame } from "./MyFrame.js";
+
 export class StatusFactory
             extends Object
          {

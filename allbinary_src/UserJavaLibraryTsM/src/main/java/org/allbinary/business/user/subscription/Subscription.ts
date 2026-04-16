@@ -19,6 +19,8 @@
 
 
 
+import { Boolean } from "./Boolean.js";
+
 export class Subscription
             extends Object
          {

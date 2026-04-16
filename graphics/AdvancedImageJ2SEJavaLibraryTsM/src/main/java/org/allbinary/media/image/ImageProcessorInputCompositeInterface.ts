@@ -19,7 +19,7 @@
 
 
 
-interface ImageProcessorInputCompositeInterface {
+export interface ImageProcessorInputCompositeInterface {
         
 
     getImageProcessorInput(): ImageProcessorInput

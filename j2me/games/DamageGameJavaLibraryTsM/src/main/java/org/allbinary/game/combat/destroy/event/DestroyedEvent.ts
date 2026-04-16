@@ -37,6 +37,8 @@ import { AllBinaryEventObject } from "../../../../../../org/allbinary/logic/util
 
     
 
+import { DestroyedEventHandler } from "./DestroyedEventHandler.js";
+
 export class DestroyedEvent extends AllBinaryEventObject {
         
 

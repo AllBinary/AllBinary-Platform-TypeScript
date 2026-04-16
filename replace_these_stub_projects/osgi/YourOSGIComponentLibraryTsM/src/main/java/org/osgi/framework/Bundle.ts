@@ -5,7 +5,7 @@
 
 
 
-interface Bundle {
+export interface Bundle {
         
 
     public getSymbolicName(): string

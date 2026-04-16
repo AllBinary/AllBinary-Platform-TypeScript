@@ -34,6 +34,8 @@ import { TransformInfoInterface } from "../../../../org/allbinary/logic/visual/t
 
     
 
+import { NAME } from "./NAME.js";
+
 export class PaymentGatewayViewAbstract extends TransformInfoHttpComposite {
         
 

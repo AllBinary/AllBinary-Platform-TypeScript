@@ -5,7 +5,7 @@
 
 
 
-interface JTreeInterface {
+export interface JTreeInterface {
         
 
     public updateJTree()

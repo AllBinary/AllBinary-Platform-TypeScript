@@ -19,6 +19,8 @@
 
 
 
+import { BasicColorFactory } from "./BasicColorFactory.js";
+
 export class ColorTemperatureUtil
             extends Object
          {

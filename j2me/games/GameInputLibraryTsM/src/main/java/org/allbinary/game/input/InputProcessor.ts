@@ -22,6 +22,8 @@ import { Canvas } from "../../../../javax/microedition/lcdui/Canvas.js";
 
     
 
+import { GameInputStrings } from "./GameInputStrings.js";
+
 export class InputProcessor
             extends Object
          {

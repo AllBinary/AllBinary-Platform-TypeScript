@@ -25,7 +25,7 @@ import { DomNodeInterface } from "../../../../../../org/allbinary/data/tree/dom/
 
     
 
-interface ProfileActionScriptNodeInterface extends DomNodeInterface, MutableTreeNode {
+export interface ProfileActionScriptNodeInterface extends DomNodeInterface, MutableTreeNode {
         
 
     addCondition(profileActionConditionInterface: ProfileActionScriptNodeInterface)

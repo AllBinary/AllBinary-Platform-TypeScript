@@ -40,6 +40,10 @@ import { AngleIncrementInfo } from "../../../../org/allbinary/math/AngleIncremen
 
     
 
+import { LEFT_FRAME } from "./LEFT_FRAME.js";
+
+import { RIGHT_FRAME } from "./RIGHT_FRAME.js";
+
 export class LurchRotationAI extends LurchAI {
         
 

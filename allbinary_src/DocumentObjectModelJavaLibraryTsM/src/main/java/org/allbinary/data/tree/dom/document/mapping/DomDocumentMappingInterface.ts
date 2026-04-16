@@ -22,7 +22,7 @@ import { Document } from "../../../../../../../org/w3c/dom/Document.js";
 
     
 
-interface DomDocumentMappingInterface {
+export interface DomDocumentMappingInterface {
         
 
                 //@Throws(Error::class)

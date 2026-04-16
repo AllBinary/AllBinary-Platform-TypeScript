@@ -19,7 +19,7 @@
 
 
 
-interface TwoDimensionalConstraintInterface {
+export interface TwoDimensionalConstraintInterface {
         
 
     public getHeight(): SizeConstraintInterface

@@ -19,7 +19,7 @@
 
 
 
-interface ThirdPartyInApplicationPurchaseInterface {
+export interface ThirdPartyInApplicationPurchaseInterface {
         
 
     isPurchased(lockableFeature: LockableFeature): boolean

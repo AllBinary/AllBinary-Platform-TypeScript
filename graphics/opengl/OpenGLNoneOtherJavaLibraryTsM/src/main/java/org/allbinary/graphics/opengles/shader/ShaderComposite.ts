@@ -31,6 +31,14 @@ import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil
 
     
 
+import { NullOpenGLTextureProcessor } from "./NullOpenGLTextureProcessor.js";
+
+import { NullOpenGLTextureProcessor } from "./NullOpenGLTextureProcessor.js";
+
+import { NullOpenGLTextureProcessor } from "./NullOpenGLTextureProcessor.js";
+
+import { NullOpenGLTextureProcessor } from "./NullOpenGLTextureProcessor.js";
+
 export class ShaderComposite
             extends Object
          {

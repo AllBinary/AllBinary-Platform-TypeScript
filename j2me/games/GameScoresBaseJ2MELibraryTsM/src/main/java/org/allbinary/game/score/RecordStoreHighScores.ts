@@ -18,8 +18,6 @@
 
 
 
-            import Hashtable from "@ohos.util.HashMap";
-        
 import { ByteArrayInputStream } from "../../../../java/io/ByteArrayInputStream.js";
 
     
@@ -32,8 +30,7 @@ import { EOFException } from "../../../../java/io/EOFException.js";
 import { IOException } from "../../../../java/io/IOException.js";
 
     
-
-//import { Hashtable } from "../../../../java/util/Hashtable.js";
+import { Hashtable } from "../../../../java/util/Hashtable.js";
 
     
 import { RecordComparator } from "../../../../javax/microedition/rms/RecordComparator.js";

@@ -18,15 +18,12 @@
 
 
 
-            import HashMap from "@ohos.util.HashMap";
-        
             import { Integer } from "../../../../../java/lang/Integer.js";
         
 import { ARunnable } from "../../../../../org/allbinary/thread/ARunnable.js";
 
     
-
-//import { HashMap } from "../../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../../java/util/HashMap.js";
 
     
 import { HashMapJDialogListenerInterface } from "../../../../../org/allbinary/gui/dialog/HashMapJDialogListenerInterface.js";
@@ -38,6 +35,104 @@ import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/Lo
 import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings.js";
 
     
+
+import { WindowConstants } from "./WindowConstants.js";
+
+import { Alignment } from "./Alignment.js";
+
+import { GroupLayout } from "./GroupLayout.js";
+
+import { Short } from "./Short.js";
+
+import { Alignment } from "./Alignment.js";
+
+import { GroupLayout } from "./GroupLayout.js";
+
+import { Alignment } from "./Alignment.js";
+
+import { GroupLayout } from "./GroupLayout.js";
+
+import { Alignment } from "./Alignment.js";
+
+import { GroupLayout } from "./GroupLayout.js";
+
+import { ComponentPlacement } from "./ComponentPlacement.js";
+
+import { LayoutStyle } from "./LayoutStyle.js";
+
+import { Alignment } from "./Alignment.js";
+
+import { GroupLayout } from "./GroupLayout.js";
+
+import { Alignment } from "./Alignment.js";
+
+import { GroupLayout } from "./GroupLayout.js";
+
+import { GroupLayout } from "./GroupLayout.js";
+
+import { Short } from "./Short.js";
+
+import { Alignment } from "./Alignment.js";
+
+import { GroupLayout } from "./GroupLayout.js";
+
+import { GroupLayout } from "./GroupLayout.js";
+
+import { GroupLayout } from "./GroupLayout.js";
+
+import { Alignment } from "./Alignment.js";
+
+import { GroupLayout } from "./GroupLayout.js";
+
+import { GroupLayout } from "./GroupLayout.js";
+
+import { GroupLayout } from "./GroupLayout.js";
+
+import { Short } from "./Short.js";
+
+import { Alignment } from "./Alignment.js";
+
+import { GroupLayout } from "./GroupLayout.js";
+
+import { Alignment } from "./Alignment.js";
+
+import { GroupLayout } from "./GroupLayout.js";
+
+import { GroupLayout } from "./GroupLayout.js";
+
+import { GroupLayout } from "./GroupLayout.js";
+
+import { GroupLayout } from "./GroupLayout.js";
+
+import { ComponentPlacement } from "./ComponentPlacement.js";
+
+import { LayoutStyle } from "./LayoutStyle.js";
+
+import { Alignment } from "./Alignment.js";
+
+import { GroupLayout } from "./GroupLayout.js";
+
+import { GroupLayout } from "./GroupLayout.js";
+
+import { GroupLayout } from "./GroupLayout.js";
+
+import { GroupLayout } from "./GroupLayout.js";
+
+import { ComponentPlacement } from "./ComponentPlacement.js";
+
+import { LayoutStyle } from "./LayoutStyle.js";
+
+import { Short } from "./Short.js";
+
+import { GroupLayout } from "./GroupLayout.js";
+
+import { GroupLayout } from "./GroupLayout.js";
+
+import { GroupLayout } from "./GroupLayout.js";
+
+import { EventQueue } from "./EventQueue.js";
+
+import { System } from "./System.js";
 
 export class RotateJDialog extends javax.swing.JDialog {
         

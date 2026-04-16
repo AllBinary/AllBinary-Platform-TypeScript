@@ -18,12 +18,9 @@
 
 
 
-            import Hashtable from "@ohos.util.HashMap";
-        
             import { Integer } from "../../../../java/lang/Integer.js";
         
-
-//import { Hashtable } from "../../../../java/util/Hashtable.js";
+import { Hashtable } from "../../../../java/util/Hashtable.js";
 
     
 import { GameInput } from "../../../../org/allbinary/game/input/GameInput.js";
@@ -38,6 +35,8 @@ import { AllBinaryLayerManager } from "../../../../org/allbinary/layer/AllBinary
 import { HashtableUtil } from "../../../../org/allbinary/util/HashtableUtil.js";
 
     
+
+import {  } from "./.js";
 
 export class KeyPressesAI extends BasicAI {
         

@@ -18,18 +18,12 @@
 
 
 
-            import Vector from "@ohos.util.Vector";
-        
-            import HashMap from "@ohos.util.HashMap";
-        
             import { Integer } from "../../../../../../java/lang/Integer.js";
         
-
-//import { HashMap } from "../../../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../../../java/util/HashMap.js";
 
     
-
-//import { Vector } from "../../../../../../java/util/Vector.js";
+import { Vector } from "../../../../../../java/util/Vector.js";
 
     
 import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
@@ -47,6 +41,64 @@ import { HtmlNameMathData } from "../../../../../../org/allbinary/logic/visual/d
 import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+
+import { NameSpaceRequestParamData } from "./NameSpaceRequestParamData.js";
+
+import { NAME } from "./NAME.js";
+
+import { NameSpaceRequestParamData } from "./NameSpaceRequestParamData.js";
+
+import { SEP } from "./SEP.js";
+
+import { NameSpaceRequestParamData } from "./NameSpaceRequestParamData.js";
+
+import { NameSpaceRequestParamData } from "./NameSpaceRequestParamData.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
+
+import { NameSpaceRequestParamData } from "./NameSpaceRequestParamData.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
+
+import { NameSpaceRequestParamData } from "./NameSpaceRequestParamData.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
 
 export class NameSpaceRequestParam
             extends Object

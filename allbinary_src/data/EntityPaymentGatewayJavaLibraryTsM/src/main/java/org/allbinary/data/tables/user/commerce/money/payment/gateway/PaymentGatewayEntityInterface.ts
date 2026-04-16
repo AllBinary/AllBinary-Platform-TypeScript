@@ -18,10 +18,7 @@
 
 
 
-            import Vector from "@ohos.util.Vector";
-        
-
-//import { Vector } from "../../../../../../../../../java/util/Vector.js";
+import { Vector } from "../../../../../../../../../java/util/Vector.js";
 
     
 import { PaymentGatewayInterface } from "../../../../../../../../../org/allbinary/business/user/commerce/money/payment/gateway/PaymentGatewayInterface.js";
@@ -34,7 +31,7 @@ import { BasicDataTableInterface } from "../../../../../../../../../org/allbinar
 
     
 
-interface PaymentGatewayEntityInterface extends BasicDataTableInterface {
+export interface PaymentGatewayEntityInterface extends BasicDataTableInterface {
         
 
     public getPaymentGatewayInterface(storeName: string, paymentType: BasicPaymentType): PaymentGatewayInterface

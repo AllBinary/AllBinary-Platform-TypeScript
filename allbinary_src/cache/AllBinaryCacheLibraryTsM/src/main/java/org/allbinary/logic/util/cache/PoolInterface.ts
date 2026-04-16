@@ -19,7 +19,7 @@
 
 
 
-interface PoolInterface extends CacheInterface {
+export interface PoolInterface extends CacheInterface {
         
 
                 //@Throws(Error::class)

@@ -18,8 +18,6 @@
 
 
 
-            import HashMap from "@ohos.util.HashMap";
-        
 import { File } from "../../../../../../java/io/File.js";
 
     
@@ -32,8 +30,7 @@ import { FileInputStream } from "../../../../../../java/io/FileInputStream.js";
 import { URL } from "../../../../../../java/net/URL.js";
 
     
-
-//import { HashMap } from "../../../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../../../java/util/HashMap.js";
 
     
 import { Set } from "../../../../../../java/util/Set.js";
@@ -84,6 +81,10 @@ import { TimeDelayHelper } from "../../../../../../org/allbinary/time/TimeDelayH
 import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+
+import { System } from "./System.js";
+
+import { FILE } from "./FILE.js";
 
 export class InputAutomationNewBundleRunnable
             extends Object

@@ -18,17 +18,14 @@
 
 
 
-            import Vector from "@ohos.util.Vector";
-        
-
-//import { Vector } from "../../../../../java/util/Vector.js";
+import { Vector } from "../../../../../java/util/Vector.js";
 
     
 import { BasicDataTableInterface } from "../../../../../org/allbinary/data/tables/BasicDataTableInterface.js";
 
     
 
-interface LogTableEntityInterface extends BasicDataTableInterface {
+export interface LogTableEntityInterface extends BasicDataTableInterface {
         
 
     public deleteWhere(key: string, value: string)

@@ -19,7 +19,7 @@
 
 
 
-interface DirectionalCompositeInterface {
+export interface DirectionalCompositeInterface {
         
 
     getDirectionalInterface(): DirectionalInterface

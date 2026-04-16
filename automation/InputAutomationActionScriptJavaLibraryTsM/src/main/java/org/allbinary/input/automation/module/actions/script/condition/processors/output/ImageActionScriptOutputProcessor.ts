@@ -18,10 +18,7 @@
 
 
 
-            import Vector from "@ohos.util.Vector";
-        
-
-//import { Vector } from "../../../../../../../../../../java/util/Vector.js";
+import { Vector } from "../../../../../../../../../../java/util/Vector.js";
 
     
 import { InputImageIOInterfaceFactory } from "../../../../../../../../../../org/allbinary/input/media/image/InputImageIOInterfaceFactory.js";

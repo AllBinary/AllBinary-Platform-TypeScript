@@ -18,10 +18,7 @@
 
 
 
-            import HashMap from "@ohos.util.HashMap";
-        
-
-//import { HashMap } from "../../../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../../../java/util/HashMap.js";
 
     
 import { LOGGING } from "../../../../../../org/allbinary/log/LOGGING.js";
@@ -33,6 +30,10 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 import { Node } from "../../../../../../org/w3c/dom/Node.js";
 
     
+
+import { LinesGraphicItem } from "./LinesGraphicItem.js";
+
+import { GraphicItemBuilder } from "./GraphicItemBuilder.js";
 
 export class GraphicItemFactory
             extends Object

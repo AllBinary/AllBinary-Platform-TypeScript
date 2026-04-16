@@ -19,7 +19,7 @@
 
 
 
-interface MagicCharacterGameObjectInterface {
+export interface MagicCharacterGameObjectInterface {
         
 
     getHitPointGameObjectInterface(): HitPointGameObjectInterface

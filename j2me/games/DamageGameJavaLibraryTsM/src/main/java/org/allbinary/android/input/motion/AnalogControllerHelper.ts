@@ -25,6 +25,8 @@ import { TimeDelayHelper } from "../../../../../org/allbinary/time/TimeDelayHelp
 
     
 
+import { AnalogControllerConfigurationFactory } from "./AnalogControllerConfigurationFactory.js";
+
 export class AnalogControllerHelper
             extends Object
          {

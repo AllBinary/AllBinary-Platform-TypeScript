@@ -18,13 +18,10 @@
 
 
 
-            import Hashtable from "@ohos.util.HashMap";
-        
 import { InputStream } from "../../../java/io/InputStream.js";
 
     
-
-//import { Hashtable } from "../../../java/util/Hashtable.js";
+import { Hashtable } from "../../../java/util/Hashtable.js";
 
     
 import { Image } from "../../../javax/microedition/lcdui/Image.js";
@@ -48,6 +45,16 @@ import { CommonSeps } from "../../../org/allbinary/string/CommonSeps.js";
 import { BasicArrayList } from "../../../org/allbinary/util/BasicArrayList.js";
 
     
+
+import {  } from "./.js";
+
+import {  } from "./.js";
+
+import {  } from "./.js";
+
+import {  } from "./.js";
+
+import {  } from "./.js";
 
 export class ImageCacheBase
             extends Object

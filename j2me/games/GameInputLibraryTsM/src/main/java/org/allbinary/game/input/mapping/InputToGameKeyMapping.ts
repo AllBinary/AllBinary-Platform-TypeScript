@@ -55,6 +55,10 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
     
 
+import {  } from "./.js";
+
+import {  } from "./.js";
+
 export class InputToGameKeyMapping extends InputMapping {
         
 

@@ -37,6 +37,8 @@ import { ItemArraySingletonFactoryInterface } from "../../../../org/allbinary/gr
 
     
 
+import { RTSScrollSelectionFormFactory } from "./RTSScrollSelectionFormFactory.js";
+
 export class AdvancedRTSLayerFormFactory extends RTSLayerFormFactory {
         
 

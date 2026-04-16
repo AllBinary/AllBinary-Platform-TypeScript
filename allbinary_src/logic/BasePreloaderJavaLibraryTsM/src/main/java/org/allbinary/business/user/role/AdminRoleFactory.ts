@@ -18,12 +18,11 @@
 
 
 
-            import Vector from "@ohos.util.Vector";
-        
-
-//import { Vector } from "../../../../../java/util/Vector.js";
+import { Vector } from "../../../../../java/util/Vector.js";
 
     
+
+import { BasicUserRoleFactory } from "./BasicUserRoleFactory.js";
 
 export class AdminRoleFactory
             extends Object

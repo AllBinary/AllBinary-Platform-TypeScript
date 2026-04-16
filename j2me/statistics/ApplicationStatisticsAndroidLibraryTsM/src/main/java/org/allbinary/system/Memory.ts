@@ -22,6 +22,14 @@ import { StringMaker } from "../../../org/allbinary/logic/string/StringMaker.js"
 
     
 
+import { Runtime } from "./Runtime.js";
+
+import { Runtime } from "./Runtime.js";
+
+import { Runtime } from "./Runtime.js";
+
+import { Runtime } from "./Runtime.js";
+
 /*actual*/ export class Memory
             extends Object
          {

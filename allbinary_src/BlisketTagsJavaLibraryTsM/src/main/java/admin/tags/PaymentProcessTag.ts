@@ -40,6 +40,26 @@ import { StoreValidationTransformTag } from "../../tags/StoreValidationTransform
 
     
 
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
+
+import { GLOBALS2 } from "./GLOBALS2.js";
+
+import { GLOBALS2 } from "./GLOBALS2.js";
+
+import { GLOBALS2 } from "./GLOBALS2.js";
+
+import { GLOBALS2 } from "./GLOBALS2.js";
+
 export class PaymentProcessTag extends StoreValidationTransformTag {
         
 

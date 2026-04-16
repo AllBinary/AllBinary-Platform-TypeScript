@@ -22,7 +22,7 @@ import { ProfileActionScriptProcessorInterface } from "../../../../../../../../.
 
     
 
-interface ProfileActionScriptOutputInterface extends ProfileActionScriptProcessorInterface {
+export interface ProfileActionScriptOutputInterface extends ProfileActionScriptProcessorInterface {
         
 
 }

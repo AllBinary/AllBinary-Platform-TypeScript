@@ -19,7 +19,7 @@
 
 
 
-interface PickupableInterface {
+export interface PickupableInterface {
         
 
 }

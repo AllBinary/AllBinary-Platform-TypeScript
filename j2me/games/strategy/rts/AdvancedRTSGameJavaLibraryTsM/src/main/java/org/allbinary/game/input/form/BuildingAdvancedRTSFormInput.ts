@@ -84,6 +84,8 @@ import { DropCellPositionHistory } from "../../../../../org/allbinary/media/grap
 
     
 
+import { BUILD_BUILDING_RTS_LAYER_EVENT } from "./BUILD_BUILDING_RTS_LAYER_EVENT.js";
+
 export class BuildingAdvancedRTSFormInput extends BuildingRTSFormInput {
         
 

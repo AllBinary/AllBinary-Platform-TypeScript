@@ -25,7 +25,7 @@ import { AbeClientInformationInterface } from "../../../../../org/allbinary/logi
 
     
 
-interface RemoteHighScoresProcessorInterface {
+export interface RemoteHighScoresProcessorInterface {
         
 
                 //@Throws(Error::class)

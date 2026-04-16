@@ -22,7 +22,7 @@ import { IOException } from "../../../../java/io/IOException.js";
 
     
 
-interface IdGeneratorInterface {
+export interface IdGeneratorInterface {
         
 
                 //@Throws(IOException::class)

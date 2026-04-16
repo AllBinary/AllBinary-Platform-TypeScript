@@ -22,7 +22,7 @@ import { AbPath } from "../../../../../../org/allbinary/logic/io/path/AbPath.js"
 
     
 
-interface RootCategoryPropertiesInterface {
+export interface RootCategoryPropertiesInterface {
         
 
                 //@Throws(Error::class)

@@ -18,13 +18,10 @@
 
 
 
-            import Hashtable from "@ohos.util.HashMap";
-        
 import { IOException } from "../../../../../java/io/IOException.js";
 
     
-
-//import { Hashtable } from "../../../../../java/util/Hashtable.js";
+import { Hashtable } from "../../../../../java/util/Hashtable.js";
 
     
 import { XmlRpcException } from "../../../../../org/apache/xmlrpc/XmlRpcException.js";
@@ -49,6 +46,12 @@ import { TimeDelayHelper } from "../../../../../org/allbinary/time/TimeDelayHelp
 
     
 
+import { LogFormatUtil } from "./LogFormatUtil.js";
+
+import { System } from "./System.js";
+
+import { System } from "./System.js";
+
 /*actual*/ export class LogUtil
             extends Object
          {
@@ -63,12 +66,12 @@ import { TimeDelayHelper } from "../../../../../org/allbinary/time/TimeDelayHelp
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return LogUtil.instance;
     
 }
 
 
-    private readonly logFormatUtil: LogFormatUtil = LogFormatUtil.getInstance()!;
+    private readonly MESSAGE: string = "message";
         
         
 
@@ -217,7 +220,7 @@ this.isFirstException= false;
             console.log("Eeeek");
     
 
-                        if(abeClientInformation == 
+                        if(this.abeClientInformation == 
                                     null
                                 )
                         
@@ -230,22 +233,22 @@ this.isFirstException= false;
                                     }
                                 
 
-    var hashtable: Hashtable<any, any> = abeClientInformation!.toHashtable()!;
+    var hashtable: Hashtable<any, any> = this.abeClientInformation!.toHashtable()!;
         
         
 ;
     
-stringBuffer!.delete(0, stringBuffer!.length());
+this.stringBuffer!.delete(0, this.stringBuffer!.length());
     
-stringBuffer!.append(message);
+this.stringBuffer!.append(message);
     
-stringBuffer!.append(CommonSeps.getInstance()!.SPACE);
+this.stringBuffer!.append(CommonSeps.getInstance()!.SPACE);
     
-stringBuffer!.append(SpecialMessageUtil.getInstance()!.get());
+this.stringBuffer!.append(SpecialMessageUtil.getInstance()!.get());
     
-hashtable.put("message", stringBuffer!.toString());
+hashtable.put(MESSAGE, this.stringBuffer!.toString());
     
-new XmlRpcRemoteLogClient(abeClientInformation).
+new XmlRpcRemoteLogClient(this.abeClientInformation).
                             get(hashtable);
     
 

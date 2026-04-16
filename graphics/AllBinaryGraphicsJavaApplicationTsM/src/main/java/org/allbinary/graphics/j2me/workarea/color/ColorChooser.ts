@@ -19,6 +19,8 @@
 
 
 
+import { BorderLayout } from "./BorderLayout.js";
+
 export class ColorChooser extends javax.swing.JPanel {
         
 public constructor (){

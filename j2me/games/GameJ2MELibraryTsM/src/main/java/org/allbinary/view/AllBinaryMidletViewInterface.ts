@@ -14,7 +14,7 @@ import { MidletCompositeInterface } from "../../../org/allbinary/midlet/MidletCo
 
     
 
-interface AllBinaryMidletViewInterface extends MidletCompositeInterface, EmulatorViewInterface, DemoGameMidletEventListener, GameInitializedListenerInterface {
+export interface AllBinaryMidletViewInterface extends MidletCompositeInterface, EmulatorViewInterface, DemoGameMidletEventListener, GameInitializedListenerInterface {
         
 
     onResume()

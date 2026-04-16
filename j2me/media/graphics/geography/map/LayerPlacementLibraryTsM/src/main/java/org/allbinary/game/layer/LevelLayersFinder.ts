@@ -18,15 +18,12 @@
 
 
 
-            import Hashtable from "@ohos.util.HashMap";
-        
             import { Integer } from "../../../../java/lang/Integer.js";
         
 import { Enumeration } from "../../../../java/util/Enumeration.js";
 
     
-
-//import { Hashtable } from "../../../../java/util/Hashtable.js";
+import { Hashtable } from "../../../../java/util/Hashtable.js";
 
     
 import { Layer } from "../../../../org/allbinary/layer/Layer.js";

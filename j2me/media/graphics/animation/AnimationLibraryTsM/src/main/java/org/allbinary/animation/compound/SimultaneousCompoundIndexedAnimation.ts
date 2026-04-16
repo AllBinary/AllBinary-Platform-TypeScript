@@ -34,6 +34,12 @@ import { PrimitiveIntUtil } from "../../../../org/allbinary/logic/math/Primitive
 
     
 
+import {  } from "./.js";
+
+import {  } from "./.js";
+
+import {  } from "./.js";
+
 export class SimultaneousCompoundIndexedAnimation extends IndexedAnimation {
         
 

@@ -28,7 +28,7 @@ import { DomNodeInterface } from "../../../../../../../../../org/allbinary/data/
 
     
 
-interface PaymentTransactionInterface extends TableMappingInterface, DomNodeInterface {
+export interface PaymentTransactionInterface extends TableMappingInterface, DomNodeInterface {
         
 
     public getOrderHistory(): OrderHistory

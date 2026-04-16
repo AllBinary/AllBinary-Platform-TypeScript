@@ -25,7 +25,7 @@ import { BasicColor } from "../../../../org/allbinary/graphics/color/BasicColor.
 
     
 
-interface AdvancedRTSPlayerLayerInterface extends RTSPlayerLayerInterface {
+export interface AdvancedRTSPlayerLayerInterface extends RTSPlayerLayerInterface {
         
 
     getAdvancedPlayerOwnedRTSLayers(): AdvancedPlayerOwnedRTSLayers

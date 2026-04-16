@@ -22,7 +22,7 @@ import { AbPath } from "../../../../org/allbinary/logic/io/path/AbPath.js";
 
     
 
-interface InitInfoInterface {
+export interface InitInfoInterface {
         
 
     public isTesting(): boolean

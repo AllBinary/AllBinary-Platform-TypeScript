@@ -18,10 +18,7 @@
 
 
 
-            import Vector from "@ohos.util.Vector";
-        
-
-//import { Vector } from "../../../../../../../java/util/Vector.js";
+import { Vector } from "../../../../../../../java/util/Vector.js";
 
     
 import { DomDocumentMappingInterface } from "../../../../../../../org/allbinary/data/tree/dom/document/mapping/DomDocumentMappingInterface.js";
@@ -31,7 +28,7 @@ import { TransformInfoInterface } from "../../../../../../../org/allbinary/logic
 
     
 
-interface TransformInfoObjectConfigInterface extends DomDocumentMappingInterface {
+export interface TransformInfoObjectConfigInterface extends DomDocumentMappingInterface {
         
 
     containsView(transformInfoInterface: TransformInfoInterface): boolean

@@ -28,6 +28,8 @@ import { StringUtil } from "../../../org/allbinary/logic/string/StringUtil.js";
 
     
 
+import { System } from "./System.js";
+
 export class PrimaryThreadPool extends ThreadPool {
         
 

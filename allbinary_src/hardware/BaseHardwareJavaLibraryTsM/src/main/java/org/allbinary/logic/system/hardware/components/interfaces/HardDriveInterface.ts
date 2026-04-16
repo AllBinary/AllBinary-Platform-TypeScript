@@ -19,7 +19,7 @@
 
 
 
-interface HardDriveInterface {
+export interface HardDriveInterface {
         
 
 }

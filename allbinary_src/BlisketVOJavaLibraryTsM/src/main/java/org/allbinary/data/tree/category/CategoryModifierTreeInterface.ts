@@ -22,7 +22,7 @@ import { CategoryInterface } from "../../../../../org/allbinary/business/categor
 
     
 
-interface CategoryModifierTreeInterface {
+export interface CategoryModifierTreeInterface {
         
 
     public insert(parentCategoryInterface: CategoryInterface, newChildCategoryInterface: CategoryInterface)

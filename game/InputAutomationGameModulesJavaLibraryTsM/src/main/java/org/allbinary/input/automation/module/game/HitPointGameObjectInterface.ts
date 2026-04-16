@@ -19,7 +19,7 @@
 
 
 
-interface HitPointGameObjectInterface extends MeteredGameObjectInterface {
+export interface HitPointGameObjectInterface extends MeteredGameObjectInterface {
         
 
     isMoreThan(aFloat: number): boolean

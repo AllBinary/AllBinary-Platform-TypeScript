@@ -19,7 +19,7 @@
 
 
 
-interface LongArrayIdentifierInterface {
+export interface LongArrayIdentifierInterface {
         
 
     getLongArrayIdentifier(): number[]

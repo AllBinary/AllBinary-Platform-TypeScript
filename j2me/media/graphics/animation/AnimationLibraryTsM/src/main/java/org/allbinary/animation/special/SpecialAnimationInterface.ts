@@ -22,7 +22,7 @@ import { IndexedAnimationInterface } from "../../../../org/allbinary/animation/I
 
     
 
-interface SpecialAnimationInterface extends IndexedAnimationInterface {
+export interface SpecialAnimationInterface extends IndexedAnimationInterface {
         
 
     setLastFrame()

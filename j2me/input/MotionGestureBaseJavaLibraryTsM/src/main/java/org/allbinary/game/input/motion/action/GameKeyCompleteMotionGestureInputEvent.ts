@@ -46,6 +46,8 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
     
 
+import { GameKeyCompleteMotionGestureInputEventFactory } from "./GameKeyCompleteMotionGestureInputEventFactory.js";
+
 export class GameKeyCompleteMotionGestureInputEvent extends CompleteMotionGestureInputEvent
                 , GameKeyEventSourceInterface {
         

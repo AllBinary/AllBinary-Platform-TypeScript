@@ -18,16 +18,23 @@
 
 
 
+            import hilog from '@ohos.hilog';
+        
             import { Integer } from "../../../java/lang/Integer.js";
         
 import { Build } from "../../../android/os/Build.js";
 
     
 
+import { VERSION } from "./VERSION.js";
+
 export class AndroidInfoFactory
             extends Object
          {
         
+
+            static readonly PUBLIC: string = '%{public}s';
+            
 
     private static readonly instance: AndroidInfoFactory = new AndroidInfoFactory();
         

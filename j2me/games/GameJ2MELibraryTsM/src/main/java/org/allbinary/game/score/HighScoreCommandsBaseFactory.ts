@@ -28,6 +28,12 @@ import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUt
 
     
 
+import { HighScoreCommands } from "./HighScoreCommands.js";
+
+import { HIGH_SCORE_COMMANDS } from "./HIGH_SCORE_COMMANDS.js";
+
+import { HIGH_SCORE_COMMANDS } from "./HIGH_SCORE_COMMANDS.js";
+
 export class HighScoreCommandsBaseFactory
             extends Object
          {

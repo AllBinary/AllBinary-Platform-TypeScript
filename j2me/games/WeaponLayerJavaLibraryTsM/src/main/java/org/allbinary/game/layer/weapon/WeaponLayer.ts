@@ -88,6 +88,8 @@ import { ViewPosition } from "../../../../../org/allbinary/view/ViewPosition.js"
 
     
 
+import { CollidableWeaponBehavior } from "./CollidableWeaponBehavior.js";
+
 export class WeaponLayer extends MultiPlayerGameLayer
                 , TickableInterface {
         

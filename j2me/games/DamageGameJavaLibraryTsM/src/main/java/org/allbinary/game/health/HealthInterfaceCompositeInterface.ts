@@ -19,7 +19,7 @@
 
 
 
-interface HealthInterfaceCompositeInterface {
+export interface HealthInterfaceCompositeInterface {
         
 
     getHealthInterface(): Health

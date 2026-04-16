@@ -22,7 +22,7 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 
     
 
-interface PointsInterface {
+export interface PointsInterface {
         
 
     getPoints(): BasicArrayList

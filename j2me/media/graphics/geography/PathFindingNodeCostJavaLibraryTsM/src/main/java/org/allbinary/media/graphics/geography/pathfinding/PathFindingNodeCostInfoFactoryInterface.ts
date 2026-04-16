@@ -22,7 +22,7 @@ import { GeographicMapCellPosition } from "../../../../../../org/allbinary/media
 
     
 
-interface PathFindingNodeCostInfoFactoryInterface extends PathFindingNodeCostInfoFactoryBaseInterface {
+export interface PathFindingNodeCostInfoFactoryInterface extends PathFindingNodeCostInfoFactoryBaseInterface {
         
 
                 //@Throws(Error::class)

@@ -18,21 +18,23 @@
 
 
 
-            import Vector from "@ohos.util.Vector";
-        
-            import HashMap from "@ohos.util.HashMap";
-        
-
-//import { HashMap } from "../../../../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../../../../java/util/HashMap.js";
 
     
-
-//import { Vector } from "../../../../../../../java/util/Vector.js";
+import { Vector } from "../../../../../../../java/util/Vector.js";
 
     
 import { TableMappingInterface } from "../../../../../../../org/allbinary/data/tables/TableMappingInterface.js";
 
     
+
+import { EmailServerConfigurationData } from "./EmailServerConfigurationData.js";
+
+import { EmailServerConfigurationData } from "./EmailServerConfigurationData.js";
+
+import { EmailServerConfigurationData } from "./EmailServerConfigurationData.js";
+
+import { EmailServerConfigurationData } from "./EmailServerConfigurationData.js";
 
 export class EmailServerConfigurationMapping
             extends Object

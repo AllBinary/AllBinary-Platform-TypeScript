@@ -8,6 +8,12 @@ import { AndroidInfoFactory } from "../../../../org/allbinary/android/AndroidInf
 
     
 
+import { AndroidAPI12KeyFactory } from "./AndroidAPI12KeyFactory.js";
+
+import { AndroidAPI9KeyFactory } from "./AndroidAPI9KeyFactory.js";
+
+import { AndroidAPI1KeyFactory } from "./AndroidAPI1KeyFactory.js";
+
 export class ActivityFractureControllerUtilFactory
             extends Object
          {

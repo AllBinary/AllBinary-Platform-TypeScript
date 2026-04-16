@@ -22,7 +22,7 @@ import { AdvertisementImageInterface } from "../../../../../org/allbinary/busine
 
     
 
-interface AdvertisementThumbnailInterface extends AdvertisementImageInterface {
+export interface AdvertisementThumbnailInterface extends AdvertisementImageInterface {
         
 
 }

@@ -19,7 +19,7 @@
 
 
 
-interface ColorCompositeInterface extends BasicColorCompositeSetterInterface {
+export interface ColorCompositeInterface extends BasicColorCompositeSetterInterface {
         
 
     getBasicColorP(): BasicColor

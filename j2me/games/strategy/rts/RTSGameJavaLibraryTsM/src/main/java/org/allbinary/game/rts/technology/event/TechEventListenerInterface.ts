@@ -24,7 +24,7 @@ import { EventListenerInterface } from "../../../../../../org/allbinary/logic/ut
 
     
 
-interface TechEventListenerInterface extends EventListenerInterface {
+export interface TechEventListenerInterface extends EventListenerInterface {
         
 
     onTechEvent(event: AllBinaryEventObject)

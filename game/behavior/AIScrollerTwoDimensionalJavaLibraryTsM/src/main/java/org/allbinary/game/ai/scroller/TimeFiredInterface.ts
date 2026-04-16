@@ -19,7 +19,7 @@
 
 
 
-interface TimeFiredInterface {
+export interface TimeFiredInterface {
         
 
     getLastFireTime(): number

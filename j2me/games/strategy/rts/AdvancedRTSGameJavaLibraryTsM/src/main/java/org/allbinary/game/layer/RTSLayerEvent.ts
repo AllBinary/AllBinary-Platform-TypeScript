@@ -24,6 +24,8 @@ import { AllBinaryEventObject } from "../../../../org/allbinary/logic/util/event
 
     
 
+import { NullPathFindingLayer } from "./NullPathFindingLayer.js";
+
 export class RTSLayerEvent extends AllBinaryEventObject {
         
 

@@ -43,6 +43,10 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
     
 
+import { AboutCommandProcessor } from "./AboutCommandProcessor.js";
+
+import { Action } from "./Action.js";
+
 export class WebCommandProcessor
             extends Object
          {

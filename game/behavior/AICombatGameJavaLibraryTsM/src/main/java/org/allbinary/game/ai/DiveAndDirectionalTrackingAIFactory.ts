@@ -18,10 +18,7 @@
 
 
 
-            import Hashtable from "@ohos.util.HashMap";
-        
-
-//import { Hashtable } from "../../../../java/util/Hashtable.js";
+import { Hashtable } from "../../../../java/util/Hashtable.js";
 
     
 import { ArtificialIntelligenceInterface } from "../../../../org/allbinary/ai/ArtificialIntelligenceInterface.js";
@@ -39,6 +36,14 @@ import { AllBinaryLayer } from "../../../../org/allbinary/layer/AllBinaryLayer.j
 import { Visitor } from "../../../../org/allbinary/logic/util/visitor/Visitor.js";
 
     
+
+import { BasicAI } from "./BasicAI.js";
+
+import { ThrustAIVisitorFactory } from "./ThrustAIVisitorFactory.js";
+
+import { BasicAI } from "./BasicAI.js";
+
+import { LastKeyAIVisitorFactory } from "./LastKeyAIVisitorFactory.js";
 
 export class DiveAndDirectionalTrackingAIFactory
             extends Object

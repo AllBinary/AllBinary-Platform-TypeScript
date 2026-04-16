@@ -22,7 +22,7 @@ import { EventListenerInterface } from "../../../org/allbinary/logic/util/event/
 
     
 
-interface AnimationListener extends EventListenerInterface {
+export interface AnimationListener extends EventListenerInterface {
         
 
     onEnd()

@@ -25,7 +25,7 @@ import { TableMappingInterface } from "../../../../../../../../org/allbinary/dat
 
     
 
-interface StoreFrontInventoryStatisticsInterface extends TableMappingInterface {
+export interface StoreFrontInventoryStatisticsInterface extends TableMappingInterface {
         
 
     public getNumber(): Long

@@ -31,7 +31,7 @@ import { Document } from "../../../../../../../org/w3c/dom/Document.js";
 
     
 
-interface TransformInfoObjectConfigAndManipulatorFactoryInterface {
+export interface TransformInfoObjectConfigAndManipulatorFactoryInterface {
         
 
                 //@Throws(Error::class)

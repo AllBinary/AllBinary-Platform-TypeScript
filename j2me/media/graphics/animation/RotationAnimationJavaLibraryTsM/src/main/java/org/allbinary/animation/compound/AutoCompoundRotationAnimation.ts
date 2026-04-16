@@ -49,6 +49,36 @@ import { CircularIndexUtil } from "../../../../org/allbinary/util/CircularIndexU
 
     
 
+import {  } from "./.js";
+
+import {  } from "./.js";
+
+import {  } from "./.js";
+
+import {  } from "./.js";
+
+import {  } from "./.js";
+
+import {  } from "./.js";
+
+import {  } from "./.js";
+
+import {  } from "./.js";
+
+import {  } from "./.js";
+
+import {  } from "./.js";
+
+import {  } from "./.js";
+
+import {  } from "./.js";
+
+import {  } from "./.js";
+
+import {  } from "./.js";
+
+import {  } from "./.js";
+
 export class AutoCompoundRotationAnimation extends RotationAnimation
                 , CompoundAnimationInterface {
         

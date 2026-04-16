@@ -18,10 +18,7 @@
 
 
 
-            import HashMap from "@ohos.util.HashMap";
-        
-
-//import { HashMap } from "../../../../../../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../../../../../../java/util/HashMap.js";
 
     
 import { DomNodeHelper } from "../../../../../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js";
@@ -48,6 +45,12 @@ import { Document } from "../../../../../../../../../org/w3c/dom/Document.js";
 import { Node } from "../../../../../../../../../org/w3c/dom/Node.js";
 
     
+
+import { GenericProfileActionData } from "./GenericProfileActionData.js";
+
+import { GenericProfileActionData } from "./GenericProfileActionData.js";
+
+import { GenericProfileActionData } from "./GenericProfileActionData.js";
 
 export class GenericProfileAction
             extends Object

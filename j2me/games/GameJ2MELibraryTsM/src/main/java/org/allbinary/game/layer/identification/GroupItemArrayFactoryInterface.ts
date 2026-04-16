@@ -25,7 +25,7 @@ import { CustomItem } from "../../../../../org/allbinary/graphics/form/item/Cust
 
     
 
-interface GroupItemArrayFactoryInterface {
+export interface GroupItemArrayFactoryInterface {
         
 
                 //@Throws(Error::class)

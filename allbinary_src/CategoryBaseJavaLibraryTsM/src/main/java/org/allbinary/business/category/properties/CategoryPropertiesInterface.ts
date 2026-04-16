@@ -31,7 +31,7 @@ import { AbPath } from "../../../../../org/allbinary/logic/io/path/AbPath.js";
 
     
 
-interface CategoryPropertiesInterface extends TableMappingInterface, ValidationInterface {
+export interface CategoryPropertiesInterface extends TableMappingInterface, ValidationInterface {
         
 
     public setValue(value: string)

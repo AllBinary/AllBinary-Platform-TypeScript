@@ -18,6 +18,8 @@
 
 
 
+            import hilog from '@ohos.hilog';
+        
 import { Parcelable } from "../../../android/os/Parcelable.js";
 
     
@@ -27,6 +29,9 @@ export class NullParcelable
         
                 , Parcelable {
         
+
+            static readonly PUBLIC: string = '%{public}s';
+            
 
     public static readonly NULL_PARCELABLE: NullParcelable = new NullParcelable();
         

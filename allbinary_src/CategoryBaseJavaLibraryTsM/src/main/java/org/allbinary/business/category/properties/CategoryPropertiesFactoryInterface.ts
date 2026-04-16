@@ -19,7 +19,7 @@
 
 
 
-interface CategoryPropertiesFactoryInterface {
+export interface CategoryPropertiesFactoryInterface {
         
 
     public getInstance(): CategoryPropertiesInterface

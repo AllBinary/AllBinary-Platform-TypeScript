@@ -34,12 +34,10 @@ import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMak
 import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
 
     
-import { Log } from "../../../../../org/allbinary/logic/communication/log/Log.js";
 
-    
-import { LogFormatUtil } from "../../../../../org/allbinary/logic/communication/log/LogFormatUtil.js";
+import { LogFormatUtil } from "./LogFormatUtil.js";
 
-    
+import { Log } from "./Log.js";
 
 /*actual*/ export class LogUtil
             extends Object

@@ -19,7 +19,7 @@
 
 
 
-interface GameSkillPropertyInterface {
+export interface GameSkillPropertyInterface {
         
 
     getName(): string

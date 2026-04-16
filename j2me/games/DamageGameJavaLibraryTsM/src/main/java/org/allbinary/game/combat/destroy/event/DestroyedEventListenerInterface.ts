@@ -22,7 +22,7 @@ import { EventListenerInterface } from "../../../../../../org/allbinary/logic/ut
 
     
 
-interface DestroyedEventListenerInterface extends EventListenerInterface {
+export interface DestroyedEventListenerInterface extends EventListenerInterface {
         
 
                 //@Throws(Error::class)

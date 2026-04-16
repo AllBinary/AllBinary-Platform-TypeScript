@@ -25,6 +25,8 @@ import { ScaleProperties } from "../../../org/allbinary/media/ScaleProperties.js
 
     
 
+import { AnimationBehavior } from "./AnimationBehavior.js";
+
 export class NullRotationAnimationFactory
             extends Object
         

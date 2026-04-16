@@ -31,7 +31,7 @@ import { CompositeTransformInfoInterface } from "../../../../../org/allbinary/lo
 
     
 
-interface BasicTransformerInterface extends CompositeTransformInfoInterface {
+export interface BasicTransformerInterface extends CompositeTransformInfoInterface {
         
 
     public setInputStream(inputStream: InputStream)

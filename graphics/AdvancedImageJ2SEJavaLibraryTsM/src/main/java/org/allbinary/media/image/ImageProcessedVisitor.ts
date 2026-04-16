@@ -25,7 +25,7 @@ import { IOException } from "../../../../java/io/IOException.js";
 
     
 
-interface ImageProcessedVisitor extends ImageProcessorInputCompositeInterface {
+export interface ImageProcessedVisitor extends ImageProcessorInputCompositeInterface {
         
 
                 //@Throws(IOException::class)

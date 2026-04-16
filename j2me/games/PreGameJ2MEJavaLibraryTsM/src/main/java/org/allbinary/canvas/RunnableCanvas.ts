@@ -64,6 +64,18 @@ import { BasicArrayList } from "../../../org/allbinary/util/BasicArrayList.js";
 
     
 
+import { Processor } from "./Processor.js";
+
+import { Thread } from "./Thread.js";
+
+import { Thread } from "./Thread.js";
+
+import { Thread } from "./Thread.js";
+
+import { System } from "./System.js";
+
+import { System } from "./System.js";
+
 export class RunnableCanvas extends MyCanvas
                 , RunnableInterface {
         

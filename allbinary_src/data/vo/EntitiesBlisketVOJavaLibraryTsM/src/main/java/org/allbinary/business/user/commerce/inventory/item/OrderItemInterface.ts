@@ -22,7 +22,7 @@ import { StreetAddress } from "../../../../../../../org/allbinary/business/user/
 
     
 
-interface OrderItemInterface extends ItemInterface {
+export interface OrderItemInterface extends ItemInterface {
         
 
     setGroup(value: string)

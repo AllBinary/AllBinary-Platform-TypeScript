@@ -18,12 +18,9 @@
 
 
 
-            import HashMap from "@ohos.util.HashMap";
-        
             import { Integer } from "../../../../../../java/lang/Integer.js";
         
-
-//import { HashMap } from "../../../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../../../java/util/HashMap.js";
 
     
 import { Set } from "../../../../../../java/util/Set.js";
@@ -47,6 +44,32 @@ import { StringUtil } from "../../../../../../org/allbinary/logic/string/StringU
 import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStrings.js";
 
     
+
+import { System } from "./System.js";
+
+import {  } from "./.js";
+
+import {  } from "./.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
+
+import { System } from "./System.js";
+
+import { LOGGING } from "./LOGGING.js";
+
+import { LogConfigTypes } from "./LogConfigTypes.js";
+
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
+
+import { System } from "./System.js";
+
+import { System } from "./System.js";
+
+import { System } from "./System.js";
 
 export class Replace
             extends Object

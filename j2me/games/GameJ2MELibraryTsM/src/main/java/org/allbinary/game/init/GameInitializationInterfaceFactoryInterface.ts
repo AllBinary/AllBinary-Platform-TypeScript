@@ -19,7 +19,7 @@
 
 
 
-interface GameInitializationInterfaceFactoryInterface {
+export interface GameInitializationInterfaceFactoryInterface {
         
 
     getInstance(): GameInitializationInterface

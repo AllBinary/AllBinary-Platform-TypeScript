@@ -19,7 +19,7 @@
 
 
 
-interface GameNotificationHudCompositeInterface {
+export interface GameNotificationHudCompositeInterface {
         
 
     getGameNotificationHud(): GameNotificationHud

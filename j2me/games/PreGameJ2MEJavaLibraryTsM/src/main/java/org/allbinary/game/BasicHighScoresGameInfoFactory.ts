@@ -19,6 +19,14 @@
 
 
 
+import { GameTypeFactory } from "./GameTypeFactory.js";
+
+import { GameMode } from "./GameMode.js";
+
+import { GameTypeFactory } from "./GameTypeFactory.js";
+
+import { GameMode } from "./GameMode.js";
+
 export class BasicHighScoresGameInfoFactory
             extends Object
          {

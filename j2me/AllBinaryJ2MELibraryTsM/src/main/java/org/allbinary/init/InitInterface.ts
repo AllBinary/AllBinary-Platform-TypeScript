@@ -19,7 +19,7 @@
 
 
 
-interface InitInterface {
+export interface InitInterface {
         
 
                 //@Throws(Error::class)

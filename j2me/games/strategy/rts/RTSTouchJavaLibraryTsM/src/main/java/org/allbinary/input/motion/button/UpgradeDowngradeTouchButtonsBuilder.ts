@@ -37,6 +37,12 @@ import { CellPositionFactory } from "../../../../../org/allbinary/graphics/CellP
 
     
 
+import { CommonButtons } from "./CommonButtons.js";
+
+import { BasicTouchInputFactory } from "./BasicTouchInputFactory.js";
+
+import { BasicTouchInputFactory } from "./BasicTouchInputFactory.js";
+
 export class UpgradeDowngradeTouchButtonsBuilder extends BaseTouchInput {
         
 

@@ -19,7 +19,7 @@
 
 
 
-interface ScalableListener {
+export interface ScalableListener {
         
 
     getRatio(ratio: number): number

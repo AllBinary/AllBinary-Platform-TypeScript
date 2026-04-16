@@ -19,7 +19,7 @@
 
 
 
-interface TransformTemplateInterface {
+export interface TransformTemplateInterface {
         
 
                 //@Throws(Error::class)

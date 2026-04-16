@@ -46,6 +46,10 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
     
 
+import { OpenGLESImageProcessor } from "./OpenGLESImageProcessor.js";
+
+import { OpenGLESImageTranslate } from "./OpenGLESImageTranslate.js";
+
 export class OpenGLESImage extends Image
                 , OpenGLSurfaceChangedInterface {
         

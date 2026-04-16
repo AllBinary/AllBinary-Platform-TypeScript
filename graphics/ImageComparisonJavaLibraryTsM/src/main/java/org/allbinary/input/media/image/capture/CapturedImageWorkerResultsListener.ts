@@ -22,7 +22,7 @@ import { BasicEventListenerInterface } from "../../../../../../org/allbinary/log
 
     
 
-interface CapturedImageWorkerResultsListener extends BasicEventListenerInterface {
+export interface CapturedImageWorkerResultsListener extends BasicEventListenerInterface {
         
 
     public onCaptureEvent(capturedimageworkerresultsevent: CapturedImageWorkerResultsEvent)

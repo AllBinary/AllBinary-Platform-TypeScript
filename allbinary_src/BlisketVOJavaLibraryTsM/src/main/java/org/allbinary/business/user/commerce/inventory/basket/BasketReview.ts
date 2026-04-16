@@ -18,8 +18,6 @@
 
 
 
-            import Vector from "@ohos.util.Vector";
-        
             import { Integer } from "../../../../../../../java/lang/Integer.js";
         
 import { HashSet } from "../../../../../../../java/util/HashSet.js";
@@ -28,8 +26,7 @@ import { HashSet } from "../../../../../../../java/util/HashSet.js";
 import { Set } from "../../../../../../../java/util/Set.js";
 
     
-
-//import { Vector } from "../../../../../../../java/util/Vector.js";
+import { Vector } from "../../../../../../../java/util/Vector.js";
 
     
 import { Item } from "../../../../../../../org/allbinary/business/user/commerce/inventory/item/Item.js";
@@ -44,6 +41,10 @@ import { Document } from "../../../../../../../org/w3c/dom/Document.js";
 import { Node } from "../../../../../../../org/w3c/dom/Node.js";
 
     
+
+import { Boolean } from "./Boolean.js";
+
+import { BasketData } from "./BasketData.js";
 
 export class BasketReview
             extends Object

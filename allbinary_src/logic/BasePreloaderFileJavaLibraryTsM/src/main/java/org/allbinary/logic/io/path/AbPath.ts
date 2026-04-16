@@ -37,6 +37,10 @@ import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
 
     
 
+import { AbPathData } from "./AbPathData.js";
+
+import { PathUtil } from "./PathUtil.js";
+
 export class AbPath
             extends Object
          {

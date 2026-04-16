@@ -18,10 +18,7 @@
 
 
 
-            import HashMap from "@ohos.util.HashMap";
-        
-
-//import { HashMap } from "../../../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../../../java/util/HashMap.js";
 
     
 import { Map } from "../../../../../../java/util/Map.js";
@@ -54,6 +51,10 @@ import { Document } from "../../../../../../org/w3c/dom/Document.js";
 import { Node } from "../../../../../../org/w3c/dom/Node.js";
 
     
+
+import { RequestData } from "./RequestData.js";
+
+import { RequestData } from "./RequestData.js";
 
 export class RequestParams
             extends Object

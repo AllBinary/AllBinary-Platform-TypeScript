@@ -19,7 +19,7 @@
 
 
 
-interface BasicCompositeEventHandlerInterface {
+export interface BasicCompositeEventHandlerInterface {
         
 
     public getEventHandler(): BasicEventHandlerInterface

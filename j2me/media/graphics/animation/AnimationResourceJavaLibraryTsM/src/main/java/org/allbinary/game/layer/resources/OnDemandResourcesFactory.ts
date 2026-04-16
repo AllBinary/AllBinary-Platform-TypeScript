@@ -19,6 +19,8 @@
 
 
 
+import { OnDemandResources } from "./OnDemandResources.js";
+
 export class OnDemandResourcesFactory
             extends Object
          {

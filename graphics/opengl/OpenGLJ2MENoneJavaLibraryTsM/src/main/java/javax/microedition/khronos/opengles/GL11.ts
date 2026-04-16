@@ -5,7 +5,7 @@
 
 
 
-interface GL11 extends GL10 {
+export interface GL11 extends GL10 {
         
 
 }

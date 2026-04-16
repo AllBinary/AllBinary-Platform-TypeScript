@@ -18,18 +18,12 @@
 
 
 
-            import Hashtable from "@ohos.util.HashMap";
-        
-            import HashMap from "@ohos.util.HashMap";
-        
             import { Integer } from "../../../../../../../../../java/lang/Integer.js";
         
-
-//import { HashMap } from "../../../../../../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../../../../../../java/util/HashMap.js";
 
     
-
-//import { Hashtable } from "../../../../../../../../../java/util/Hashtable.js";
+import { Hashtable } from "../../../../../../../../../java/util/Hashtable.js";
 
     
 import { Iterator } from "../../../../../../../../../java/util/Iterator.js";
@@ -71,6 +65,16 @@ import { Document } from "../../../../../../../../../org/w3c/dom/Document.js";
 import { Node } from "../../../../../../../../../org/w3c/dom/Node.js";
 
     
+
+import { GenericProfileActionScriptInputData } from "./GenericProfileActionScriptInputData.js";
+
+import { GenericProfileActionScriptInputData } from "./GenericProfileActionScriptInputData.js";
+
+import { GenericProfileActionScriptInputData } from "./GenericProfileActionScriptInputData.js";
+
+import { GenericProfileActionScriptInputData } from "./GenericProfileActionScriptInputData.js";
+
+import { GenericProfileActionScriptInputData } from "./GenericProfileActionScriptInputData.js";
 
 export class BasicProfileActionScriptInput extends BasicProfileActionScriptProcessor
                 , ProfileActionScriptInputInterface {

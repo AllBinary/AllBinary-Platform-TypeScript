@@ -52,6 +52,8 @@ import { SynchObject } from "../../../../org/allbinary/thread/SynchObject.js";
 
     
 
+import { OpenGLESImage } from "./OpenGLESImage.js";
+
 export class OpenGLImageCache extends ImageCache {
         
 

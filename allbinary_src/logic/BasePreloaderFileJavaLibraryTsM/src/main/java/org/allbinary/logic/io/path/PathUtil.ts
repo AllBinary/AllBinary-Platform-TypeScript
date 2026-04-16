@@ -28,6 +28,8 @@ import { StringValidationUtil } from "../../../../../org/allbinary/logic/string/
 
     
 
+import { AbPathData } from "./AbPathData.js";
+
 export class PathUtil
             extends Object
          {

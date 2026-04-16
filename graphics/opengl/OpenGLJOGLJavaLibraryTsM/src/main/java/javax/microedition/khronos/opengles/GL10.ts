@@ -5,7 +5,7 @@
 
 
 
-interface GL10 extends javax.microedition.khronos.opengles.GL {
+export interface GL10 extends javax.microedition.khronos.opengles.GL {
         
 
     public static readonly GL_ADD: number = 260;

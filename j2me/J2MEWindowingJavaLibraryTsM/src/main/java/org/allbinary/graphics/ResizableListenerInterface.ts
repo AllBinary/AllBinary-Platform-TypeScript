@@ -19,7 +19,7 @@
 
 
 
-interface ResizableListenerInterface {
+export interface ResizableListenerInterface {
         
 
     onResizable(isResizable: boolean)

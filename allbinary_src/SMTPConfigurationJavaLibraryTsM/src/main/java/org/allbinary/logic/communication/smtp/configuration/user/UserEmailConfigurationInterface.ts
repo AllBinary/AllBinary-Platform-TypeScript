@@ -22,7 +22,7 @@ import { UserEmailEventsConfigurationInterface } from "../../../../../../../org/
 
     
 
-interface UserEmailConfigurationInterface {
+export interface UserEmailConfigurationInterface {
         
 
     public getUserEmailEventsConfigurationInterface(): UserEmailEventsConfigurationInterface

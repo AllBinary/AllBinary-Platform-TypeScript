@@ -5,7 +5,7 @@
 
 
 
-interface BundleActivator {
+export interface BundleActivator {
         
 
 }

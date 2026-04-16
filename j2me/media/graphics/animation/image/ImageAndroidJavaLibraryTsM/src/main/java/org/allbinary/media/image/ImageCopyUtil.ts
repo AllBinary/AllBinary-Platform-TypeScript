@@ -40,6 +40,8 @@ import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUt
 
     
 
+import { ImageCreationUtil } from "./ImageCreationUtil.js";
+
 export class ImageCopyUtil
             extends Object
          {

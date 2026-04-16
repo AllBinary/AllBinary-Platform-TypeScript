@@ -25,6 +25,10 @@ import { Node } from "../../../../../../../../../org/w3c/dom/Node.js";
 
     
 
+import { KeyboardActionScriptInputData } from "./KeyboardActionScriptInputData.js";
+
+import { MouseActionScriptInputData } from "./MouseActionScriptInputData.js";
+
 export class ProfileActionScriptInputFactory
             extends Object
          {

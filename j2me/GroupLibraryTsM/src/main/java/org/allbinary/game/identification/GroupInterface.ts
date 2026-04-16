@@ -19,7 +19,7 @@
 
 
 
-interface GroupInterface {
+export interface GroupInterface {
         
 
     getGroupName(): string

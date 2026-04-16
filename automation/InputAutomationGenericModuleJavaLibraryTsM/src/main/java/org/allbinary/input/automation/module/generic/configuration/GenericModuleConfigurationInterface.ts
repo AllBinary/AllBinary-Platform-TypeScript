@@ -22,7 +22,7 @@ import { GenericProfile } from "../../../../../../../org/allbinary/input/automat
 
     
 
-interface GenericModuleConfigurationInterface {
+export interface GenericModuleConfigurationInterface {
         
 
     getSelectedGenericProfile(): GenericProfile

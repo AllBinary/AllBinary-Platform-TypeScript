@@ -19,7 +19,7 @@
 
 
 
-interface GameFeatureControlledInterface {
+export interface GameFeatureControlledInterface {
         
 
                 //@Throws(Error::class)

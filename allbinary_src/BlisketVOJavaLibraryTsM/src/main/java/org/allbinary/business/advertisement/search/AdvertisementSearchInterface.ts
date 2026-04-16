@@ -18,10 +18,7 @@
 
 
 
-            import HashMap from "@ohos.util.HashMap";
-        
-
-//import { HashMap } from "../../../../../java/util/HashMap.js";
+import { HashMap } from "../../../../../java/util/HashMap.js";
 
     
 import { AdvertisementCategoryInterface } from "../../../../../org/allbinary/business/advertisement/search/category/AdvertisementCategoryInterface.js";
@@ -37,7 +34,7 @@ import { TwoDimensionalConstraintInterface } from "../../../../../org/allbinary/
 
     
 
-interface AdvertisementSearchInterface {
+export interface AdvertisementSearchInterface {
         
 
     public getWebSite(): AdvertisementWebsiteInterface

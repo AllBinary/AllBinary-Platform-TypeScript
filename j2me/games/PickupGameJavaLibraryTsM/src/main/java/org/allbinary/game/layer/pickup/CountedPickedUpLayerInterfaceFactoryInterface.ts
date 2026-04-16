@@ -22,7 +22,7 @@ import { LayerInterfaceFactoryInterface } from "../../../../../org/allbinary/lay
 
     
 
-interface CountedPickedUpLayerInterfaceFactoryInterface extends PickedUpLayerInterfaceFactoryInterface, LayerInterfaceFactoryInterface {
+export interface CountedPickedUpLayerInterfaceFactoryInterface extends PickedUpLayerInterfaceFactoryInterface, LayerInterfaceFactoryInterface {
         
 
     getId(): number
