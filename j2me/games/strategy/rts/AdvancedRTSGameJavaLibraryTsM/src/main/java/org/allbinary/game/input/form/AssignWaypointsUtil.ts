@@ -52,11 +52,7 @@ import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/Lo
 
     
 
-import { WAYPOINT_EVENT } from "./WAYPOINT_EVENT.js";
-
 import { PrimaryWaypointHelper } from "./PrimaryWaypointHelper.js";
-
-import { WAYPOINT_EVENT } from "./WAYPOINT_EVENT.js";
 
 export class AssignWaypointsUtil
             extends Object

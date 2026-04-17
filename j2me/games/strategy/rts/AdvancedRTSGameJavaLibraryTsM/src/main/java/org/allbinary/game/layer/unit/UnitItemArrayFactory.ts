@@ -70,8 +70,6 @@ import { LayerInterfaceFactoryInterface } from "../../../../../org/allbinary/lay
 
     
 
-import { IMAGE_CACHE } from "./IMAGE_CACHE.js";
-
 export class UnitItemArrayFactory
             extends Object
         

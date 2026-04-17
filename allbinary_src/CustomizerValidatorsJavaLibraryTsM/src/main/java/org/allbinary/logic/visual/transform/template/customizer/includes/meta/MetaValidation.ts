@@ -57,29 +57,7 @@ import { Node } from "../../../../../../../../../org/w3c/dom/Node.js";
 
 import { Boolean } from "./Boolean.js";
 
-import { LOGGING } from "./LOGGING.js";
-
-import { LogConfigTypes } from "./LogConfigTypes.js";
-
-import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
-
 import { Boolean } from "./Boolean.js";
-
-import { LOGGING } from "./LOGGING.js";
-
-import { LogConfigTypes } from "./LogConfigTypes.js";
-
-import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
-
-import { LABEL } from "./LABEL.js";
-
-import { NAME } from "./NAME.js";
-
-import { HTTP_EQUIV } from "./HTTP_EQUIV.js";
-
-import { CONTENT } from "./CONTENT.js";
-
-import { NAME } from "./NAME.js";
 
 export class MetaValidation extends Validation
                 , DomNodeInterface {

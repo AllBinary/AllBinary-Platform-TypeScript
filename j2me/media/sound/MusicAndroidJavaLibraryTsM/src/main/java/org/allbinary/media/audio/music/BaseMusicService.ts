@@ -37,8 +37,6 @@ import { ARunnable } from "../../../../../org/allbinary/thread/ARunnable.js";
 
 import { MusicStrings } from "./MusicStrings.js";
 
-import { System } from "./System.js";
-
 import { Thread } from "./Thread.js";
 
 export class BaseMusicService extends Service {

@@ -39,10 +39,6 @@ import { Node } from "../../../../../../../org/w3c/dom/Node.js";
 
 import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
 
-import { LOGGING } from "./LOGGING.js";
-
-import { LOGGING } from "./LOGGING.js";
-
 import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
 
 import { LogConfigTypeData } from "./LogConfigTypeData.js";

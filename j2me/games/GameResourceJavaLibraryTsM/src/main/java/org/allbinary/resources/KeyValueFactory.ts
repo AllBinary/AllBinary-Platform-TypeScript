@@ -22,8 +22,6 @@ import { Hashtable } from "../../../java/util/Hashtable.js";
 
     
 
-import { MAP } from "./MAP.js";
-
 export class KeyValueFactory
             extends Object
          {

@@ -30,12 +30,6 @@ import { CommonSeps } from "../../../../../../org/allbinary/string/CommonSeps.js
 
     
 
-import {  } from "./.js";
-
-import {  } from "./.js";
-
-import {  } from "./.js";
-
 export class HitPointGameObject extends MeteredGameObject
                 , HitPointGameObjectInterface {
         

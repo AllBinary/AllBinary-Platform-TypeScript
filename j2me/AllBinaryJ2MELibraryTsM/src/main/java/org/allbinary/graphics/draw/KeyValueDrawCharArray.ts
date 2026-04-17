@@ -28,8 +28,6 @@ import { CharArrayFactory } from "../../../../org/allbinary/logic/java/character
 
     
 
-import { LABEL } from "./LABEL.js";
-
 export class KeyValueDrawCharArray
             extends Object
          {

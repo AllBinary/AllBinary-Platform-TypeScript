@@ -348,13 +348,9 @@ import { ExplosionBasicSound } from "../../../../../org/allbinary/weapon/media/a
 
     
 
-import {  } from "./.js";
-
 import { Math } from "./Math.js";
 
 import { Math } from "./Math.js";
-
-import { CAPITAL_EVENT } from "./CAPITAL_EVENT.js";
 
 export class UnitLayer extends AdvancedRTSGameLayer
                 , BuildingEventListenerInterface

@@ -63,26 +63,6 @@ import { CircularIndexUtil } from "../../../../org/allbinary/util/CircularIndexU
 
     
 
-import { RIGHT_FRAME } from "./RIGHT_FRAME.js";
-
-import { RIGHT_FRAME } from "./RIGHT_FRAME.js";
-
-import { LEFT_FRAME } from "./LEFT_FRAME.js";
-
-import { RIGHT_FRAME } from "./RIGHT_FRAME.js";
-
-import { LEFT_FRAME } from "./LEFT_FRAME.js";
-
-import { RIGHT_FRAME } from "./RIGHT_FRAME.js";
-
-import { LEFT_FRAME } from "./LEFT_FRAME.js";
-
-import { RIGHT_FRAME } from "./RIGHT_FRAME.js";
-
-import { LEFT_FRAME } from "./LEFT_FRAME.js";
-
-import { RIGHT_FRAME } from "./RIGHT_FRAME.js";
-
 export class HorizontaRotationManeuverAI extends BasicAI
                 , ArtificialIntelligenceTransitionInterface {
         

@@ -31,8 +31,6 @@ import { StringMaker } from "../../../../../../org/allbinary/logic/string/String
 
     
 
-import {  } from "./.js";
-
 export class ClassUtil
             extends Object
          {

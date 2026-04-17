@@ -37,10 +37,6 @@ import { AbResponseHandler } from "../../org/allbinary/logic/communication/http/
 
     
 
-import { GLOBALS2 } from "./GLOBALS2.js";
-
-import { GLOBALS2 } from "./GLOBALS2.js";
-
 import { ParentInventoryTagHelper } from "./ParentInventoryTagHelper.js";
 
 import { AbTagData } from "./AbTagData.js";

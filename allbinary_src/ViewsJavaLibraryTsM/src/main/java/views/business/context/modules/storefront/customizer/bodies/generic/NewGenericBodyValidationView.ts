@@ -48,21 +48,7 @@ import { CustomizerUtil } from "../../../../../../../../views/business/context/m
 
 import { Boolean } from "./Boolean.js";
 
-import { LOGGING } from "./LOGGING.js";
-
-import { LogConfigTypes } from "./LogConfigTypes.js";
-
-import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
-
 import { Boolean } from "./Boolean.js";
-
-import { LOGGING } from "./LOGGING.js";
-
-import { LogConfigTypes } from "./LogConfigTypes.js";
-
-import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
-
-import { ValidationOnlyTempUtil } from "./ValidationOnlyTempUtil.js";
 
 export class NewGenericBodyValidationView extends GenericBodyCustomizerView
                 , ValidationComponentInterface {

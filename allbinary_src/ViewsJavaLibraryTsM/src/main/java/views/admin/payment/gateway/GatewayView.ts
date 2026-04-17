@@ -40,12 +40,6 @@ import { TransformInfoInterface } from "../../../../org/allbinary/logic/visual/t
 
     
 
-import { LOGGING } from "./LOGGING.js";
-
-import { LogConfigTypes } from "./LogConfigTypes.js";
-
-import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
-
 export class GatewayView extends PaymentGatewayViewAbstract {
         
 

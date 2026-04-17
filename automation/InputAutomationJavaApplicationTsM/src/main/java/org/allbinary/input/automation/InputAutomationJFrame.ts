@@ -115,83 +115,19 @@ import { RunnableInterface } from "../../../../org/allbinary/thread/RunnableInte
 
     
 
-import { Alignment } from "./Alignment.js";
-
-import { GroupLayout } from "./GroupLayout.js";
-
-import { GroupLayout } from "./GroupLayout.js";
+import { Short } from "./Short.js";
 
 import { Short } from "./Short.js";
 
-import { Alignment } from "./Alignment.js";
-
-import { GroupLayout } from "./GroupLayout.js";
-
-import { Alignment } from "./Alignment.js";
-
-import { GroupLayout } from "./GroupLayout.js";
-
-import { GroupLayout } from "./GroupLayout.js";
+import { Short } from "./Short.js";
 
 import { Short } from "./Short.js";
 
-import { WindowConstants } from "./WindowConstants.js";
-
-import { Alignment } from "./Alignment.js";
-
-import { GroupLayout } from "./GroupLayout.js";
-
-import { GroupLayout } from "./GroupLayout.js";
-
-import { GroupLayout } from "./GroupLayout.js";
+import { Short } from "./Short.js";
 
 import { Short } from "./Short.js";
 
-import { Alignment } from "./Alignment.js";
-
-import { GroupLayout } from "./GroupLayout.js";
-
-import { GroupLayout } from "./GroupLayout.js";
-
-import { GroupLayout } from "./GroupLayout.js";
-
-import { GroupLayout } from "./GroupLayout.js";
-
 import { Short } from "./Short.js";
-
-import { Alignment } from "./Alignment.js";
-
-import { GroupLayout } from "./GroupLayout.js";
-
-import { Short } from "./Short.js";
-
-import { Alignment } from "./Alignment.js";
-
-import { GroupLayout } from "./GroupLayout.js";
-
-import { Short } from "./Short.js";
-
-import { Alignment } from "./Alignment.js";
-
-import { GroupLayout } from "./GroupLayout.js";
-
-import { Alignment } from "./Alignment.js";
-
-import { GroupLayout } from "./GroupLayout.js";
-
-import { GroupLayout } from "./GroupLayout.js";
-
-import { Short } from "./Short.js";
-
-import { Alignment } from "./Alignment.js";
-
-import { GroupLayout } from "./GroupLayout.js";
-
-import { Alignment } from "./Alignment.js";
-
-import { GroupLayout } from "./GroupLayout.js";
-
-import { GroupLayout } from "./GroupLayout.js";
 
 import { Short } from "./Short.js";
 
@@ -199,37 +135,11 @@ import { Desktop } from "./Desktop.js";
 
 import { Desktop } from "./Desktop.js";
 
-import { Alignment } from "./Alignment.js";
-
-import { GroupLayout } from "./GroupLayout.js";
-
 import { Short } from "./Short.js";
 
-import { GroupLayout } from "./GroupLayout.js";
-
-import { GroupLayout } from "./GroupLayout.js";
-
-import { GroupLayout } from "./GroupLayout.js";
-
-import { Alignment } from "./Alignment.js";
-
-import { GroupLayout } from "./GroupLayout.js";
-
 import { Short } from "./Short.js";
-
-import { GroupLayout } from "./GroupLayout.js";
-
-import { GroupLayout } from "./GroupLayout.js";
-
-import { GroupLayout } from "./GroupLayout.js";
 
 import { Thread } from "./Thread.js";
-
-import { INPUTAUTOMATION_JFRAME } from "./INPUTAUTOMATION_JFRAME.js";
-
-import { EventQueue } from "./EventQueue.js";
-
-import { INPUTAUTOMATION_JFRAME } from "./INPUTAUTOMATION_JFRAME.js";
 
 export class InputAutomationJFrame extends javax.swing.JFrame
                 , InputAutomationConfigurationModuleChangeListener

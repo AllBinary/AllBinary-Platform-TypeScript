@@ -27,8 +27,6 @@ import { StringMaker } from "../../../org/allbinary/logic/string/StringMaker.js"
 
     
 
-import { System } from "./System.js";
-
 export class ProfilingRefreshHelper extends AndroidGameStatistics {
         
 

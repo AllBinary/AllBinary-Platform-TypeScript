@@ -85,21 +85,9 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
     
 
-import { DEFAULT_CHILD_NAME_LIST } from "./DEFAULT_CHILD_NAME_LIST.js";
-
-import { DEFAULT_CHILD_NAME_LIST } from "./DEFAULT_CHILD_NAME_LIST.js";
-
-import { DEFAULT_CHILD_NAME_LIST } from "./DEFAULT_CHILD_NAME_LIST.js";
-
-import { DEFAULT_CHILD_NAME_LIST } from "./DEFAULT_CHILD_NAME_LIST.js";
-
-import { DEFAULT_CHILD_NAME_LIST } from "./DEFAULT_CHILD_NAME_LIST.js";
-
 import { OpenGLFeatureFactory } from "./OpenGLFeatureFactory.js";
 
 import { OpenGLFeatureFactory } from "./OpenGLFeatureFactory.js";
-
-import { OPENGL } from "./OPENGL.js";
 
 import { OpenGLFeatureFactory } from "./OpenGLFeatureFactory.js";
 

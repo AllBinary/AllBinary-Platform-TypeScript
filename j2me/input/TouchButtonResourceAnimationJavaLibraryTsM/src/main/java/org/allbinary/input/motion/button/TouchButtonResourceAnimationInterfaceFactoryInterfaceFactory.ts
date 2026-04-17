@@ -83,8 +83,6 @@ import { TouchButtonStartResource } from "./TouchButtonStartResource.js";
 
 import { TouchButtonStartResource } from "./TouchButtonStartResource.js";
 
-import { LOAD_TOUCH } from "./LOAD_TOUCH.js";
-
 export class TouchButtonResourceAnimationInterfaceFactoryInterfaceFactory extends BaseResourceAnimationInterfaceFactoryInterfaceFactory {
         
 public constructor ()                        

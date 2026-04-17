@@ -73,8 +73,6 @@ import { TimeDelayHelper } from "../../../../../../org/allbinary/time/TimeDelayH
 
     
 
-import { JPG } from "./JPG.js";
-
 export class SavedCaptureImagesWorker extends BasicEventHandler
                 , CaptureWorkerInterface {
         

@@ -55,8 +55,6 @@ import { PrimitiveLongUtil } from "../../../../org/allbinary/logic/math/Primitiv
 
     
 
-import { GREY } from "./GREY.js";
-
 export class SelectionHudPaintable extends InitUpdatePaintable {
         
 

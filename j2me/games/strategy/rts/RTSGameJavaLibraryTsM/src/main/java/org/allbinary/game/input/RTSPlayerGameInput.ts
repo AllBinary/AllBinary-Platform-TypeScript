@@ -120,12 +120,6 @@ import { GameInputProcessorUtil } from "./GameInputProcessorUtil.js";
 
 import { GameInputProcessorUtil } from "./GameInputProcessorUtil.js";
 
-import {  } from "./.js";
-
-import {  } from "./.js";
-
-import { GREEN } from "./GREEN.js";
-
 export class RTSPlayerGameInput extends PlayerGameInput {
         
 

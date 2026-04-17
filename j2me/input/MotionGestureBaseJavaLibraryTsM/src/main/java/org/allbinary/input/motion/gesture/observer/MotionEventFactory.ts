@@ -37,8 +37,6 @@ import { AllBinaryEventObjectFactoryInterface } from "../../../../../../org/allb
 
     
 
-import { LAST_MOTION } from "./LAST_MOTION.js";
-
 export class MotionEventFactory
             extends Object
         

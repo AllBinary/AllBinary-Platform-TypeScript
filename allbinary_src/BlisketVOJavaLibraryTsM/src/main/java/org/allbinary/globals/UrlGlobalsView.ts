@@ -36,8 +36,6 @@ import { Node } from "../../../org/w3c/dom/Node.js";
 
 import { UrlGlobalsData } from "./UrlGlobalsData.js";
 
-import { URLGLOBALS } from "./URLGLOBALS.js";
-
 import { UrlGlobalsData } from "./UrlGlobalsData.js";
 
 export class UrlGlobalsView

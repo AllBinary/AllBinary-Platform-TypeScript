@@ -43,10 +43,6 @@ import { AbeClientInformationInterface } from "../../../../../org/allbinary/logi
 
     
 
-import { System } from "./System.js";
-
-import { System } from "./System.js";
-
 export class XmlRpcRemoteLogClient extends XmlRpcAbeClient {
         
 

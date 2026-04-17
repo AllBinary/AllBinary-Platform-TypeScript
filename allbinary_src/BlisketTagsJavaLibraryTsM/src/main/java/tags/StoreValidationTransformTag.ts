@@ -31,12 +31,6 @@ import { LogUtil } from "../org/allbinary/logic/communication/log/LogUtil.js";
 
     
 
-import { LOGGING } from "./LOGGING.js";
-
-import { LogConfigTypes } from "./LogConfigTypes.js";
-
-import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
-
 export class StoreValidationTransformTag extends ValidationTransformTag {
         
 

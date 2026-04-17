@@ -120,10 +120,6 @@ import { Node } from "../../../../../../org/w3c/dom/Node.js";
 
     
 
-import { WHITE } from "./WHITE.js";
-
-import { CLEAR_COLOR } from "./CLEAR_COLOR.js";
-
 import { Color } from "./Color.js";
 
 import { Color } from "./Color.js";

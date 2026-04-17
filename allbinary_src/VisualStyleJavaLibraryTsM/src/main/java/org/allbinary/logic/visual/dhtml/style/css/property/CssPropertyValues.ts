@@ -59,25 +59,7 @@ import { Node } from "../../../../../../../../org/w3c/dom/Node.js";
 
 import { CssPropertyValueData } from "./CssPropertyValueData.js";
 
-import { LOGGING } from "./LOGGING.js";
-
-import { LogConfigTypes } from "./LogConfigTypes.js";
-
-import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
-
-import { LOGGING } from "./LOGGING.js";
-
-import { LogConfigTypes } from "./LogConfigTypes.js";
-
-import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
-
 import { CssPropertyValueData } from "./CssPropertyValueData.js";
-
-import { LOGGING } from "./LOGGING.js";
-
-import { LogConfigTypes } from "./LogConfigTypes.js";
-
-import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
 
 import { CssPropertyData } from "./CssPropertyData.js";
 

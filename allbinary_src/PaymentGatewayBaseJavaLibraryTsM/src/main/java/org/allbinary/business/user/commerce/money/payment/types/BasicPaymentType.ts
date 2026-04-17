@@ -45,10 +45,6 @@ import { CommonSeps } from "../../../../../../../../org/allbinary/string/CommonS
 
 import { BasicPaymentTypeUtil } from "./BasicPaymentTypeUtil.js";
 
-import { NAME } from "./NAME.js";
-
-import { VALUE } from "./VALUE.js";
-
 export class BasicPaymentType
             extends Object
          {

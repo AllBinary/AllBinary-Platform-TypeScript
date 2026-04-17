@@ -45,32 +45,6 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
     
 
-import { System } from "./System.js";
-
-import {  } from "./.js";
-
-import {  } from "./.js";
-
-import { LOGGING } from "./LOGGING.js";
-
-import { LogConfigTypes } from "./LogConfigTypes.js";
-
-import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
-
-import { System } from "./System.js";
-
-import { LOGGING } from "./LOGGING.js";
-
-import { LogConfigTypes } from "./LogConfigTypes.js";
-
-import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
-
-import { System } from "./System.js";
-
-import { System } from "./System.js";
-
-import { System } from "./System.js";
-
 export class Replace
             extends Object
          {

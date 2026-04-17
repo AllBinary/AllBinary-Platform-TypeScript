@@ -30,8 +30,6 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 import { NoOperatingSystem } from "./NoOperatingSystem.js";
 
-import { System } from "./System.js";
-
 export class OperatingSystemFactory
             extends Object
          {

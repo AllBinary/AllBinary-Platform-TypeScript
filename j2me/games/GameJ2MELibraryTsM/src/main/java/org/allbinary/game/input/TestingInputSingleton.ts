@@ -52,8 +52,6 @@ import { GameInputProcessorUtil } from "./GameInputProcessorUtil.js";
 
 import { GameInputProcessorUtil } from "./GameInputProcessorUtil.js";
 
-import {  } from "./.js";
-
 export class TestingInputSingleton extends AllBinaryGameLayer
                 , GameInputInterface {
         

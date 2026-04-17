@@ -37,8 +37,6 @@ import { Paintable } from "../../../../../org/allbinary/graphics/paint/Paintable
 
     
 
-import {  } from "./.js";
-
 export class BasicPaintablesCanvas extends GameCommandCanvas {
         
 

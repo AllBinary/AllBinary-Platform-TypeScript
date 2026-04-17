@@ -81,14 +81,6 @@ import { Node } from "../../../../../org/w3c/dom/Node.js";
 
     
 
-import { GridBagConstraints } from "./GridBagConstraints.js";
-
-import { GridBagConstraints } from "./GridBagConstraints.js";
-
-import { GridBagConstraints } from "./GridBagConstraints.js";
-
-import { GridBagConstraints } from "./GridBagConstraints.js";
-
 import { WorkAreaDom } from "./WorkAreaDom.js";
 
 import { WorkAreaDom } from "./WorkAreaDom.js";

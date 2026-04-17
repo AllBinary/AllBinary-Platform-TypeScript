@@ -51,21 +51,7 @@ import { CssCustomizerView } from "../../../../../../../../../views/business/con
 
 import { Boolean } from "./Boolean.js";
 
-import { LOGGING } from "./LOGGING.js";
-
-import { LogConfigTypes } from "./LogConfigTypes.js";
-
-import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
-
 import { Boolean } from "./Boolean.js";
-
-import { LOGGING } from "./LOGGING.js";
-
-import { LogConfigTypes } from "./LogConfigTypes.js";
-
-import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
-
-import { ValidationOnlyTempUtil } from "./ValidationOnlyTempUtil.js";
 
 export class NewThemeValidationView extends CssCustomizerView
                 , ValidationComponentInterface {

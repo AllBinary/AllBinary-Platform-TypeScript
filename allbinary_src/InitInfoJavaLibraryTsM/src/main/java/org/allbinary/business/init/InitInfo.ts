@@ -37,22 +37,6 @@ import { BooleanUtil } from "../../../../org/allbinary/logic/java/bool/BooleanUt
 
     
 
-import { LOGGING } from "./LOGGING.js";
-
-import { LOGGING } from "./LOGGING.js";
-
-import { LOGGING } from "./LOGGING.js";
-
-import { LOGGING } from "./LOGGING.js";
-
-import { LOGGING } from "./LOGGING.js";
-
-import { LOGGING } from "./LOGGING.js";
-
-import { LOGGING } from "./LOGGING.js";
-
-import { LOGGING } from "./LOGGING.js";
-
 export class InitInfo
             extends Object
          {

@@ -76,34 +76,6 @@ import { CommonSeps } from "../../../../../../org/allbinary/string/CommonSeps.js
 
     
 
-import { ETHERNET } from "./ETHERNET.js";
-
-import { BRIDGE } from "./BRIDGE.js";
-
-import { IDE } from "./IDE.js";
-
-import { MULTIMEDIA } from "./MULTIMEDIA.js";
-
-import { SCSI } from "./SCSI.js";
-
-import { USB } from "./USB.js";
-
-import { VGA } from "./VGA.js";
-
-import { VGA } from "./VGA.js";
-
-import { USB } from "./USB.js";
-
-import { SCSI } from "./SCSI.js";
-
-import { MULTIMEDIA } from "./MULTIMEDIA.js";
-
-import { IDE } from "./IDE.js";
-
-import { BRIDGE } from "./BRIDGE.js";
-
-import { ETHERNET } from "./ETHERNET.js";
-
 export class WindowsHardware
             extends Object
         

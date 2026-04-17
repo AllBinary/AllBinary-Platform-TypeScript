@@ -55,10 +55,6 @@ import { MathUtil } from "../../../../../org/allbinary/logic/math/MathUtil.js";
 
     
 
-import { HEALTH } from "./HEALTH.js";
-
-import { HEALTH } from "./HEALTH.js";
-
 export class BuildingInfoHudPaintable extends SelectionHudPaintable {
         
 

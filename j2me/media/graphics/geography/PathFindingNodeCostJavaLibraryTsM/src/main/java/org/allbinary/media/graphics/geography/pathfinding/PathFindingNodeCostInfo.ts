@@ -27,8 +27,6 @@ import { CommonLabels } from "../../../../../../org/allbinary/string/CommonLabel
 
 import { PathFindingNodeCostInfoData } from "./PathFindingNodeCostInfoData.js";
 
-import { Long } from "./Long.js";
-
 export class PathFindingNodeCostInfo
             extends Object
         

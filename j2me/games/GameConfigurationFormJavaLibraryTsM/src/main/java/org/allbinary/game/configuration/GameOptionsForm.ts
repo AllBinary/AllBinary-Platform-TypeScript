@@ -99,10 +99,6 @@ import { GameConfigurationUtil } from "./GameConfigurationUtil.js";
 
 import { GameConfigurationCentral } from "./GameConfigurationCentral.js";
 
-import { SCALE } from "./SCALE.js";
-
-import { SCALE } from "./SCALE.js";
-
 export class GameOptionsForm extends CommandForm {
         
 public constructor (commandListener: CommandListener, title: string, backgrounBasicColor: BasicColor, foregroundBasicColor: BasicColor)                        

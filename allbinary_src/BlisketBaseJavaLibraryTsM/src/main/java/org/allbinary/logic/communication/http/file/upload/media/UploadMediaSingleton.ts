@@ -43,12 +43,6 @@ import { CommonStrings } from "../../../../../../../../org/allbinary/string/Comm
 
     
 
-import { LOGGING } from "./LOGGING.js";
-
-import { LogConfigTypes } from "./LogConfigTypes.js";
-
-import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
-
 export class UploadMediaSingleton
             extends Object
          {

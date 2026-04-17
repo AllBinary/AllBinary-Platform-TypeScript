@@ -22,8 +22,6 @@ import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMak
 
     
 
-import {  } from "./.js";
-
 export class ParamsUtil
             extends Object
          {

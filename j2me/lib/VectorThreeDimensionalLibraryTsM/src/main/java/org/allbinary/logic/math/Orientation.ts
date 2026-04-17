@@ -22,12 +22,6 @@ import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.
 
     
 
-import { SINGLETON } from "./SINGLETON.js";
-
-import { SINGLETON } from "./SINGLETON.js";
-
-import { SINGLETON } from "./SINGLETON.js";
-
 export class Orientation
             extends Object
          {

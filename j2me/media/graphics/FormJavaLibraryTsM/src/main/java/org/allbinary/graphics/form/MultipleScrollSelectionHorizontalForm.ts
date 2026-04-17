@@ -35,8 +35,6 @@ import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.
 
     
 
-import { TRANSPARENT_GREY } from "./TRANSPARENT_GREY.js";
-
 import { FormTypeFactory } from "./FormTypeFactory.js";
 
 export class MultipleScrollSelectionHorizontalForm extends ScrollSelectionForm {

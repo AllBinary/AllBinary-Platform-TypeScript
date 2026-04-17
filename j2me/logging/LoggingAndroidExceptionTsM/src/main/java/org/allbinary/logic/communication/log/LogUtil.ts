@@ -23,8 +23,6 @@
 
 import { LogFormatUtil } from "./LogFormatUtil.js";
 
-import { Log } from "./Log.js";
-
 /*actual*/ export class LogUtil
             extends Object
          {

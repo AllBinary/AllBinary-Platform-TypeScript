@@ -27,12 +27,6 @@ import { GeographicMapCellTypeFactory } from "../../../../../../../org/allbinary
 
 import { RaceTrackGeographicMapCellTypes } from "./RaceTrackGeographicMapCellTypes.js";
 
-import { START_LINE_ROAD_CELL_TYPE } from "./START_LINE_ROAD_CELL_TYPE.js";
-
-import { FINISH_LINE_ROAD_CELL_TYPE } from "./FINISH_LINE_ROAD_CELL_TYPE.js";
-
-import { EMPTY_CELL_TYPE } from "./EMPTY_CELL_TYPE.js";
-
 export class RaceTrackGeographicMapCellTypeFactory extends GeographicMapCellTypeFactory {
         
 

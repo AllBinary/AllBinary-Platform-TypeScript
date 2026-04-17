@@ -28,8 +28,6 @@ import { BasicColorFactory } from "../../../../../../org/allbinary/graphics/colo
 
     
 
-import { YELLOW } from "./YELLOW.js";
-
 export class ColorFromEventUtil
             extends Object
          {

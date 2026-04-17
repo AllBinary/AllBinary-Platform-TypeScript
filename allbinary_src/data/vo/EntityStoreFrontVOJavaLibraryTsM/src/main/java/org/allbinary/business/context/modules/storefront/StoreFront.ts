@@ -115,12 +115,6 @@ import { Document } from "../../../../../../org/w3c/dom/Document.js";
 
     
 
-import { LOGGING } from "./LOGGING.js";
-
-import { LogConfigTypes } from "./LogConfigTypes.js";
-
-import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
-
 import { StoreFrontData } from "./StoreFrontData.js";
 
 import { StoreFrontData } from "./StoreFrontData.js";
@@ -184,18 +178,6 @@ import { Boolean } from "./Boolean.js";
 import { Boolean } from "./Boolean.js";
 
 import { Boolean } from "./Boolean.js";
-
-import { LOGGING } from "./LOGGING.js";
-
-import { LogConfigTypes } from "./LogConfigTypes.js";
-
-import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
-
-import { LOGGING } from "./LOGGING.js";
-
-import { LogConfigTypes } from "./LogConfigTypes.js";
-
-import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
 
 import { StoreFrontData } from "./StoreFrontData.js";
 

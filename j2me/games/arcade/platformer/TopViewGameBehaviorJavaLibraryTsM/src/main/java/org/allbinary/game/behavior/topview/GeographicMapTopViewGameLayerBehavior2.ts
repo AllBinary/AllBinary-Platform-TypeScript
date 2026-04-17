@@ -46,24 +46,6 @@ import { GeographicMapCellType } from "../../../../../org/allbinary/media/graphi
 
     
 
-import {  } from "./.js";
-
-import {  } from "./.js";
-
-import {  } from "./.js";
-
-import {  } from "./.js";
-
-import {  } from "./.js";
-
-import {  } from "./.js";
-
-import {  } from "./.js";
-
-import {  } from "./.js";
-
-import {  } from "./.js";
-
 export class GeographicMapTopViewGameLayerBehavior2 extends GeographicMapTopViewLayerBehavior {
         
 

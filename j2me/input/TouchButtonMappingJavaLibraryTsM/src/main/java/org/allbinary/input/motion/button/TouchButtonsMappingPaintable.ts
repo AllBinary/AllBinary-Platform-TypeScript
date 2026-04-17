@@ -43,8 +43,6 @@ import { BasicTouchInputFactory } from "./BasicTouchInputFactory.js";
 
 import { TouchButtonBlankResource } from "./TouchButtonBlankResource.js";
 
-import {  } from "./.js";
-
 export class TouchButtonsMappingPaintable extends Paintable {
         
 

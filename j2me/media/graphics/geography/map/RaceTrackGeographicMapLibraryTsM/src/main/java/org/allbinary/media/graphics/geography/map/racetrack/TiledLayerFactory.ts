@@ -22,10 +22,6 @@ import { TiledLayer } from "../../../../../../../javax/microedition/lcdui/game/T
 
     
 
-import {  } from "./.js";
-
-import {  } from "./.js";
-
 export class TiledLayerFactory
             extends Object
          {

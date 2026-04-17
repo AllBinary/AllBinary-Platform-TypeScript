@@ -61,52 +61,6 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
     
 
-import { ETHERNET } from "./ETHERNET.js";
-
-import { BRIDGE } from "./BRIDGE.js";
-
-import { IDE } from "./IDE.js";
-
-import { MULTIMEDIA } from "./MULTIMEDIA.js";
-
-import { SCSI } from "./SCSI.js";
-
-import { USB } from "./USB.js";
-
-import { VGA } from "./VGA.js";
-
-import { LOGGING } from "./LOGGING.js";
-
-import { ETHERNET } from "./ETHERNET.js";
-
-import { BRIDGE } from "./BRIDGE.js";
-
-import { IDE } from "./IDE.js";
-
-import { MULTIMEDIA } from "./MULTIMEDIA.js";
-
-import { SCSI } from "./SCSI.js";
-
-import { USB } from "./USB.js";
-
-import { VGA } from "./VGA.js";
-
-import { VGA } from "./VGA.js";
-
-import { USB } from "./USB.js";
-
-import { SCSI } from "./SCSI.js";
-
-import { MULTIMEDIA } from "./MULTIMEDIA.js";
-
-import { IDE } from "./IDE.js";
-
-import { BRIDGE } from "./BRIDGE.js";
-
-import { ETHERNET } from "./ETHERNET.js";
-
-import { UNKNOWN } from "./UNKNOWN.js";
-
 export class PCComponentFactory
             extends Object
          {

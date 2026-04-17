@@ -40,8 +40,6 @@ import { PrimitiveLongUtil } from "../../../../../../../org/allbinary/logic/math
 
     
 
-import { LEVEL } from "./LEVEL.js";
-
 export class LevelHudWidget extends BasicHud
                 , PaintableInterface {
         

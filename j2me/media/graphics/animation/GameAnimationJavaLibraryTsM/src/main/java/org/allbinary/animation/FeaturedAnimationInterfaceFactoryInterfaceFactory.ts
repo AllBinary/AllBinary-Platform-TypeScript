@@ -49,8 +49,6 @@ import { BasicArrayList } from "../../../org/allbinary/util/BasicArrayList.js";
 
     
 
-import { SCALE } from "./SCALE.js";
-
 import { NullAnimationFactory } from "./NullAnimationFactory.js";
 
 export class FeaturedAnimationInterfaceFactoryInterfaceFactory extends FeaturedResourceFactory {

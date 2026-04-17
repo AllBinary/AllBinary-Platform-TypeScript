@@ -53,12 +53,6 @@ import { UserEmailEventConfigurationData } from "./UserEmailEventConfigurationDa
 
 import { UserEmailEventsConfigurationData } from "./UserEmailEventsConfigurationData.js";
 
-import { LOGGING } from "./LOGGING.js";
-
-import { LogConfigTypes } from "./LogConfigTypes.js";
-
-import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
-
 export class UserEmailEventsConfigurationView
             extends Object
         

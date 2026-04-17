@@ -93,14 +93,6 @@ import { BasicArrayList } from "../../../org/allbinary/util/BasicArrayList.js";
 
 import { Thread } from "./Thread.js";
 
-import { System } from "./System.js";
-
-import {  } from "./.js";
-
-import { System } from "./System.js";
-
-import { System } from "./System.js";
-
 import { Thread } from "./Thread.js";
 
 export class ImageCache extends ImageCacheBase {

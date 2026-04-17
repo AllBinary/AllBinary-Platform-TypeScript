@@ -61,12 +61,6 @@ import { FileItemUtil } from "../../../../../../../org/apache/commons/fileupload
 
     
 
-import { LOGGING } from "./LOGGING.js";
-
-import { LogConfigTypes } from "./LogConfigTypes.js";
-
-import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
-
 export class AbFileItem
             extends Object
         

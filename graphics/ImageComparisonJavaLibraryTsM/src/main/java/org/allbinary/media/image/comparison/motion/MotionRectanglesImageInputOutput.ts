@@ -79,33 +79,7 @@ import { ConsolidatedMotionRectanglesResultsCacheSingleton } from "./Consolidate
 
 import { ConstrainedMotionRectanglesResultsCacheSingleton } from "./ConstrainedMotionRectanglesResultsCacheSingleton.js";
 
-import { JPG } from "./JPG.js";
-
-import { JPG } from "./JPG.js";
-
-import { JPG } from "./JPG.js";
-
-import {  } from "./.js";
-
-import {  } from "./.js";
-
-import {  } from "./.js";
-
-import {  } from "./.js";
-
-import {  } from "./.js";
-
-import {  } from "./.js";
-
 import { Color } from "./Color.js";
-
-import {  } from "./.js";
-
-import {  } from "./.js";
-
-import {  } from "./.js";
-
-import {  } from "./.js";
 
 export class MotionRectanglesImageInputOutput
             extends Object

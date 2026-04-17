@@ -31,8 +31,6 @@ import { AllBinaryLayerManager } from "../../../../org/allbinary/layer/AllBinary
 
     
 
-import {  } from "./.js";
-
 export class ArrayAI extends BasicAI {
         
 

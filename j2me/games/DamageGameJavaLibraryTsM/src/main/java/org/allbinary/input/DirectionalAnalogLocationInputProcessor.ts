@@ -52,18 +52,6 @@ import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
 
     
 
-import {  } from "./.js";
-
-import {  } from "./.js";
-
-import {  } from "./.js";
-
-import {  } from "./.js";
-
-import {  } from "./.js";
-
-import {  } from "./.js";
-
 export class DirectionalAnalogLocationInputProcessor extends AnalogLocationInputProcessor
                 , GameKeyEventSourceInterface {
         

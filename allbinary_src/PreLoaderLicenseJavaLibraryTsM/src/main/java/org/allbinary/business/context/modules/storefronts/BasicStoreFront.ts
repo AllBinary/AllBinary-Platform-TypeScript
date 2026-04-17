@@ -40,16 +40,6 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 
     
 
-import { URLGLOBALS } from "./URLGLOBALS.js";
-
-import { URLGLOBALS } from "./URLGLOBALS.js";
-
-import { URLGLOBALS } from "./URLGLOBALS.js";
-
-import { URLGLOBALS } from "./URLGLOBALS.js";
-
-import { URLGLOBALS } from "./URLGLOBALS.js";
-
 export class BasicStoreFront
             extends Object
         

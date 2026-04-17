@@ -40,14 +40,6 @@ import { DropCellPositionHistory } from "../../../../../../../org/allbinary/medi
 
     
 
-import {  } from "./.js";
-
-import {  } from "./.js";
-
-import {  } from "./.js";
-
-import {  } from "./.js";
-
 export class CustomMapGenerator extends CustomMapGeneratorBase {
         
 

@@ -52,8 +52,6 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
     
 
-import { LOAD_ALL } from "./LOAD_ALL.js";
-
 export class BaseResourceAnimationInterfaceFactoryInterfaceFactory
             extends Object
         

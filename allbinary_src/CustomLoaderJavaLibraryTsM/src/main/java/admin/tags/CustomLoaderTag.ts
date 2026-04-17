@@ -43,20 +43,6 @@ import { CustomTagSupport } from "../../tags/CustomTagSupport.js";
 
     
 
-import { LOGGING } from "./LOGGING.js";
-
-import { LogConfigTypes } from "./LogConfigTypes.js";
-
-import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
-
-import { LOGGING } from "./LOGGING.js";
-
-import { LogConfigTypes } from "./LogConfigTypes.js";
-
-import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
-
-import { GLOBALS2 } from "./GLOBALS2.js";
-
 export class CustomLoaderTag extends CustomTagSupport {
         
 

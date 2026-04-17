@@ -34,8 +34,6 @@ import { InitUpdatePaintable } from "../../../../../org/allbinary/graphics/paint
 
     
 
-import { WHITE } from "./WHITE.js";
-
 export class PreGameSelectorPaintable extends InitUpdatePaintable {
         
 

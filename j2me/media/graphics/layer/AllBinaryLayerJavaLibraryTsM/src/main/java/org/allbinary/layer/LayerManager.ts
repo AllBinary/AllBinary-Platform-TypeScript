@@ -22,10 +22,6 @@ import { BasicArrayList } from "../../../org/allbinary/util/BasicArrayList.js";
 
 import { LayerManagerNoDebug } from "./LayerManagerNoDebug.js";
 
-import { System } from "./System.js";
-
-import { System } from "./System.js";
-
 export class LayerManager
             extends Object
          {

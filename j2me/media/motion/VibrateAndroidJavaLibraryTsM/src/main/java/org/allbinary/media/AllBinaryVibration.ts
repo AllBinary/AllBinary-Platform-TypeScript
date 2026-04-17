@@ -33,8 +33,6 @@ import { GameConfigurationCentral } from "../../../org/allbinary/game/configurat
 
 import { AllBinaryNoVibration } from "./AllBinaryNoVibration.js";
 
-import { VIBRATION } from "./VIBRATION.js";
-
 import { AllBinaryNoVibration } from "./AllBinaryNoVibration.js";
 
 export class AllBinaryVibration extends AllBinaryVibrationME {

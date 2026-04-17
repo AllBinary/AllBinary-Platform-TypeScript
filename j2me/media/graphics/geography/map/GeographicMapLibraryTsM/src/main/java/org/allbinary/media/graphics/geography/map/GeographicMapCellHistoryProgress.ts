@@ -24,8 +24,6 @@ import { NullUtil } from "../../../../../../org/allbinary/logic/NullUtil.js";
 
 import { GeographicMapCellHistory } from "./GeographicMapCellHistory.js";
 
-import {  } from "./.js";
-
 export class GeographicMapCellHistoryProgress extends GeographicMapCellHistoryProgressBase {
         
 

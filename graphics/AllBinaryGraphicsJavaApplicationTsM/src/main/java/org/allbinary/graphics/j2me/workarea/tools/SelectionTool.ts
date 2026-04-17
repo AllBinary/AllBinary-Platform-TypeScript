@@ -68,8 +68,6 @@ import { Color } from "./Color.js";
 
 import { Color } from "./Color.js";
 
-import { RED } from "./RED.js";
-
 import { Math } from "./Math.js";
 
 import { Math } from "./Math.js";

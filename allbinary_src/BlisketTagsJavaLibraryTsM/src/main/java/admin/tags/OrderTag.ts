@@ -52,23 +52,7 @@ import { CustomTagSupport } from "../../tags/CustomTagSupport.js";
 
     
 
-import { LOGGING } from "./LOGGING.js";
-
-import { LogConfigTypes } from "./LogConfigTypes.js";
-
-import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
-
-import { LOGGING } from "./LOGGING.js";
-
-import { LogConfigTypes } from "./LogConfigTypes.js";
-
-import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
-
 import { Boolean } from "./Boolean.js";
-
-import { GLOBALS2 } from "./GLOBALS2.js";
-
-import { NAME } from "./NAME.js";
 
 import { Boolean } from "./Boolean.js";
 

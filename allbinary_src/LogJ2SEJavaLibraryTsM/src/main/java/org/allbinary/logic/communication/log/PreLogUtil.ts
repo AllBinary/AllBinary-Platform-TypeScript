@@ -27,15 +27,7 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 import { LogFormatUtil } from "./LogFormatUtil.js";
 
-import { System } from "./System.js";
-
-import { System } from "./System.js";
-
 import { LogFormatUtil } from "./LogFormatUtil.js";
-
-import { System } from "./System.js";
-
-import { System } from "./System.js";
 
 /*actual*/ export class PreLogUtil
             extends Object

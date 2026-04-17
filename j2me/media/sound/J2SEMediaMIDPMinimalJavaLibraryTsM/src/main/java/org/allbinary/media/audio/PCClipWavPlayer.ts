@@ -72,15 +72,9 @@ import { MusicThreadPool } from "../../../../org/allbinary/thread/MusicThreadPoo
 
 import { NullAudioFormat } from "./NullAudioFormat.js";
 
-import { Type } from "./Type.js";
-
 import { Math } from "./Math.js";
 
-import { Type } from "./Type.js";
-
 import { Math } from "./Math.js";
-
-import { Type } from "./Type.js";
 
 export class PCClipWavPlayer extends BasicPlayer
                 , LineListener {

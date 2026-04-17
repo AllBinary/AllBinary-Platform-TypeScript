@@ -43,12 +43,6 @@ import { ViewPosition } from "../../../../../org/allbinary/view/ViewPosition.js"
 
     
 
-import {  } from "./.js";
-
-import {  } from "./.js";
-
-import {  } from "./.js";
-
 export class AnimationDamageFloaters extends DamageFloaters {
         
 

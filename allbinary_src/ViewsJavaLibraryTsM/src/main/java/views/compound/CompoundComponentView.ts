@@ -31,12 +31,6 @@ import { HttpStoreComponentView } from "../../views/business/context/modules/sto
 
     
 
-import { LOGGING } from "./LOGGING.js";
-
-import { LogConfigTypes } from "./LogConfigTypes.js";
-
-import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
-
 export class CompoundComponentView extends HttpStoreComponentView {
         
 

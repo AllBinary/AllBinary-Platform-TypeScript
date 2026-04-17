@@ -47,10 +47,6 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 import { SoundStrings } from "./SoundStrings.js";
 
-import {  } from "./.js";
-
-import {  } from "./.js";
-
 export class Sounds
             extends Object
          {

@@ -22,8 +22,6 @@ import { File } from "../../../../java/io/File.js";
 
     
 
-import { System } from "./System.js";
-
 export class ImageOutputData
             extends Object
          {

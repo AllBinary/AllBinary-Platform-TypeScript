@@ -22,8 +22,6 @@ import { AudioFormat } from "../../../../javax/sound/sampled/AudioFormat.js";
 
     
 
-import { Encoding } from "./Encoding.js";
-
 export class NullAudioFormat
             extends Object
          {

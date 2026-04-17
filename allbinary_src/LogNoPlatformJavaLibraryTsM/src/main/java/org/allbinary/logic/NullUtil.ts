@@ -25,8 +25,6 @@ import { Vector } from "../../../java/util/Vector.js";
 
     
 
-import { NULL_OBJECT } from "./NULL_OBJECT.js";
-
 expect export class NullUtil
             extends Object
          {

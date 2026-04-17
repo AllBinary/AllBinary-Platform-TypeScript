@@ -43,12 +43,6 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
     
 
-import { LOGGING } from "./LOGGING.js";
-
-import { LOGGING } from "./LOGGING.js";
-
-import { System } from "./System.js";
-
 export class WeblisketFinder
             extends Object
          {

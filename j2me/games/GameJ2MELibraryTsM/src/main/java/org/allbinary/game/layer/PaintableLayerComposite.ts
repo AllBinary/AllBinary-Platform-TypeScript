@@ -31,8 +31,6 @@ import { Layer } from "../../../../org/allbinary/layer/Layer.js";
 
     
 
-import {  } from "./.js";
-
 export class PaintableLayerComposite extends Paintable {
         
 

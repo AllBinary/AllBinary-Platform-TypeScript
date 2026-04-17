@@ -49,10 +49,6 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
     
 
-import { LOAD_ALL } from "./LOAD_ALL.js";
-
-import {  } from "./.js";
-
 export class CommonGameInitialization extends BaseGameInitialization {
         
 

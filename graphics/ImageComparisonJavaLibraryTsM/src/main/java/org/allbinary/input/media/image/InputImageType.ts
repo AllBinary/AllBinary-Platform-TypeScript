@@ -25,8 +25,6 @@ import { Vector } from "../../../../../java/util/Vector.js";
 
     
 
-import { TYPE_VECTOR } from "./TYPE_VECTOR.js";
-
 export class InputImageType
             extends Object
          {

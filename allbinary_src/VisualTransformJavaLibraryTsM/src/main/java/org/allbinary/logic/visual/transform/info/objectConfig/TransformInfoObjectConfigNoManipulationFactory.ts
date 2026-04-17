@@ -39,12 +39,6 @@ import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonS
 
 import { TransformInfoObjectConfigData } from "./TransformInfoObjectConfigData.js";
 
-import { LOGGING } from "./LOGGING.js";
-
-import { LogConfigTypes } from "./LogConfigTypes.js";
-
-import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
-
 export class TransformInfoObjectConfigNoManipulationFactory
             extends Object
          {

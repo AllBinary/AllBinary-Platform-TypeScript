@@ -19,10 +19,6 @@
 
 
 
-import { TRUE } from "./TRUE.js";
-
-import { FALSE } from "./FALSE.js";
-
 export class BooleanFactory
             extends Object
          {

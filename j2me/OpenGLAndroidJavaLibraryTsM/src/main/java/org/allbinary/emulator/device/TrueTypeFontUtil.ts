@@ -76,10 +76,6 @@ import { AndroidImmutableImage } from "../../../../org/microemu/android/device/A
 
     
 
-import { CompressFormat } from "./CompressFormat.js";
-
-import { Config } from "./Config.js";
-
 export class TrueTypeFontUtil extends TrueTypeFontUtilBase {
         
 

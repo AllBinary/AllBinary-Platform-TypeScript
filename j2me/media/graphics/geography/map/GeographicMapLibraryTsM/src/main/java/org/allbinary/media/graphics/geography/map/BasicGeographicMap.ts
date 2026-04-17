@@ -50,8 +50,6 @@ import { SimpleGeographicMapCellPositionFactory } from "./SimpleGeographicMapCel
 
 import { SimpleGeographicMapCellPositionFactory } from "./SimpleGeographicMapCellPositionFactory.js";
 
-import {  } from "./.js";
-
 export class BasicGeographicMap extends SimpleGeographicMap
                 , GeographicMapInterface {
         

@@ -38,10 +38,6 @@ import { PaymentTypeUtil } from "./PaymentTypeUtil.js";
 
 import { PaymentTypeUtil } from "./PaymentTypeUtil.js";
 
-import { PAYMENTTRANSACTIONINTERFACEFACTORYINTERFACE } from "./PAYMENTTRANSACTIONINTERFACEFACTORYINTERFACE.js";
-
-import { PAYMENTPROCESSORINTERFACEFACTORYINTERFACE } from "./PAYMENTPROCESSORINTERFACEFACTORYINTERFACE.js";
-
 export class PaymentType
             extends Object
          {

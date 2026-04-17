@@ -25,8 +25,6 @@ import { Processor } from "../../../org/allbinary/canvas/Processor.js";
 
     
 
-import { System } from "./System.js";
-
 export class MidletExitProcessor extends Processor {
         
 

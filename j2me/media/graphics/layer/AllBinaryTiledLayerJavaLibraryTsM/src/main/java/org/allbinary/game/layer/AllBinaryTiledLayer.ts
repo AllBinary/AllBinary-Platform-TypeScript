@@ -42,8 +42,6 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
     
 
-import {  } from "./.js";
-
 export class AllBinaryTiledLayer extends Layer
                 , NamedInterface
                 , PaintableInterface {

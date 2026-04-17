@@ -88,8 +88,6 @@ import { ViewPosition } from "../../../../../org/allbinary/view/ViewPosition.js"
 
     
 
-import {  } from "./.js";
-
 export class CollidableDestroyableDamageableLayer extends CollidableCompositeLayer
                 , DestroyableInterface
                 , DamageableInterface

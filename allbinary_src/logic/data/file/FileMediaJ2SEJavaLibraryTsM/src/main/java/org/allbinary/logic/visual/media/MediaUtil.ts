@@ -37,11 +37,7 @@ import { CommonLabels } from "../../../../../org/allbinary/string/CommonLabels.j
 
 import { ImageIOUtil } from "./ImageIOUtil.js";
 
-import { LOGGING } from "./LOGGING.js";
-
 import { ImageIOUtil } from "./ImageIOUtil.js";
-
-import { LOGGING } from "./LOGGING.js";
 
 export class MediaUtil
             extends Object

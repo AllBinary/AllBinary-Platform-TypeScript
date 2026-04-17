@@ -46,31 +46,7 @@ import { GameConfigurationSingleton } from "./GameConfigurationSingleton.js";
 
 import { GameConfigurationCentral } from "./GameConfigurationCentral.js";
 
-import { COLLIDE_DAMAGE } from "./COLLIDE_DAMAGE.js";
-
-import { ATTACK_CHALLENGE_LEVEL } from "./ATTACK_CHALLENGE_LEVEL.js";
-
-import { DURABILITY_CHALLENGE_LEVEL } from "./DURABILITY_CHALLENGE_LEVEL.js";
-
-import { SPEED_CHALLENGE_LEVEL } from "./SPEED_CHALLENGE_LEVEL.js";
-
-import { SPEED_CHALLENGE_LEVEL } from "./SPEED_CHALLENGE_LEVEL.js";
-
-import { ATTACK_CHALLENGE_LEVEL } from "./ATTACK_CHALLENGE_LEVEL.js";
-
-import { DURABILITY_CHALLENGE_LEVEL } from "./DURABILITY_CHALLENGE_LEVEL.js";
-
-import { COLLIDE_DAMAGE } from "./COLLIDE_DAMAGE.js";
-
 import { GameConfigurationCentral } from "./GameConfigurationCentral.js";
-
-import { COLLIDE_DAMAGE } from "./COLLIDE_DAMAGE.js";
-
-import { ATTACK_CHALLENGE_LEVEL } from "./ATTACK_CHALLENGE_LEVEL.js";
-
-import { DURABILITY_CHALLENGE_LEVEL } from "./DURABILITY_CHALLENGE_LEVEL.js";
-
-import { SPEED_CHALLENGE_LEVEL } from "./SPEED_CHALLENGE_LEVEL.js";
 
 export class GameConfigurationUtil
             extends Object

@@ -44,61 +44,15 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 
 import { NameSpaceRequestParamData } from "./NameSpaceRequestParamData.js";
 
-import { NAME } from "./NAME.js";
-
 import { NameSpaceRequestParamData } from "./NameSpaceRequestParamData.js";
-
-import { SEP } from "./SEP.js";
 
 import { NameSpaceRequestParamData } from "./NameSpaceRequestParamData.js";
 
 import { NameSpaceRequestParamData } from "./NameSpaceRequestParamData.js";
 
-import { LOGGING } from "./LOGGING.js";
-
-import { LogConfigTypes } from "./LogConfigTypes.js";
-
-import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
-
 import { NameSpaceRequestParamData } from "./NameSpaceRequestParamData.js";
 
-import { LOGGING } from "./LOGGING.js";
-
-import { LogConfigTypes } from "./LogConfigTypes.js";
-
-import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
-
-import { LOGGING } from "./LOGGING.js";
-
-import { LogConfigTypes } from "./LogConfigTypes.js";
-
-import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
-
-import { LOGGING } from "./LOGGING.js";
-
-import { LogConfigTypes } from "./LogConfigTypes.js";
-
-import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
-
-import { LOGGING } from "./LOGGING.js";
-
-import { LogConfigTypes } from "./LogConfigTypes.js";
-
-import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
-
-import { LOGGING } from "./LOGGING.js";
-
-import { LogConfigTypes } from "./LogConfigTypes.js";
-
-import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
-
 import { NameSpaceRequestParamData } from "./NameSpaceRequestParamData.js";
-
-import { LOGGING } from "./LOGGING.js";
-
-import { LogConfigTypes } from "./LogConfigTypes.js";
-
-import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
 
 export class NameSpaceRequestParam
             extends Object

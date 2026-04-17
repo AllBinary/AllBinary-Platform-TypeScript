@@ -48,10 +48,6 @@ import { PixelDeltaFactory } from "../../../../../org/allbinary/media/image/comp
 
     
 
-import {  } from "./.js";
-
-import {  } from "./.js";
-
 import { Math } from "./Math.js";
 
 export class ImageComparator

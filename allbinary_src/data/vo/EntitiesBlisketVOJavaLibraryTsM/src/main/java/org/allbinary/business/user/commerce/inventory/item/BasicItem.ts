@@ -57,12 +57,6 @@ import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonS
 
     
 
-import { LOGGING } from "./LOGGING.js";
-
-import { LogConfigTypes } from "./LogConfigTypes.js";
-
-import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
-
 import { BasicItemData } from "./BasicItemData.js";
 
 import { BasicItemData } from "./BasicItemData.js";
@@ -80,52 +74,6 @@ import { BasicItemData } from "./BasicItemData.js";
 import { BasicItemData } from "./BasicItemData.js";
 
 import { BasicItemData } from "./BasicItemData.js";
-
-import { BasicItemData } from "./BasicItemData.js";
-
-import { BasicItemData } from "./BasicItemData.js";
-
-import { BasicItemData } from "./BasicItemData.js";
-
-import { BasicItemData } from "./BasicItemData.js";
-
-import { BasicItemData } from "./BasicItemData.js";
-
-import { BasicItemData } from "./BasicItemData.js";
-
-import { BasicItemData } from "./BasicItemData.js";
-
-import { BasicItemData } from "./BasicItemData.js";
-
-import { BasicItemData } from "./BasicItemData.js";
-
-import { BasicItemData } from "./BasicItemData.js";
-
-import { BasicItemData } from "./BasicItemData.js";
-
-import { BasicItemData } from "./BasicItemData.js";
-
-import { BasicItemData } from "./BasicItemData.js";
-
-import { BasicItemData } from "./BasicItemData.js";
-
-import { BasicItemData } from "./BasicItemData.js";
-
-import { BasicItemData } from "./BasicItemData.js";
-
-import { BasicItemData } from "./BasicItemData.js";
-
-import { LOGGING } from "./LOGGING.js";
-
-import { LogConfigTypes } from "./LogConfigTypes.js";
-
-import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
-
-import { LOGGING } from "./LOGGING.js";
-
-import { LogConfigTypes } from "./LogConfigTypes.js";
-
-import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
 
 import { BasicItemData } from "./BasicItemData.js";
 
@@ -179,11 +127,39 @@ import { BasicItemData } from "./BasicItemData.js";
 
 import { BasicItemData } from "./BasicItemData.js";
 
-import { LOGGING } from "./LOGGING.js";
+import { BasicItemData } from "./BasicItemData.js";
 
-import { LogConfigTypes } from "./LogConfigTypes.js";
+import { BasicItemData } from "./BasicItemData.js";
 
-import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
+import { BasicItemData } from "./BasicItemData.js";
+
+import { BasicItemData } from "./BasicItemData.js";
+
+import { BasicItemData } from "./BasicItemData.js";
+
+import { BasicItemData } from "./BasicItemData.js";
+
+import { BasicItemData } from "./BasicItemData.js";
+
+import { BasicItemData } from "./BasicItemData.js";
+
+import { BasicItemData } from "./BasicItemData.js";
+
+import { BasicItemData } from "./BasicItemData.js";
+
+import { BasicItemData } from "./BasicItemData.js";
+
+import { BasicItemData } from "./BasicItemData.js";
+
+import { BasicItemData } from "./BasicItemData.js";
+
+import { BasicItemData } from "./BasicItemData.js";
+
+import { BasicItemData } from "./BasicItemData.js";
+
+import { BasicItemData } from "./BasicItemData.js";
+
+import { BasicItemData } from "./BasicItemData.js";
 
 export class BasicItem
             extends Object

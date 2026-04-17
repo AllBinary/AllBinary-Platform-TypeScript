@@ -21,12 +21,6 @@
             import { Integer } from "../../../../java/lang/Integer.js";
         
 
-import {  } from "./.js";
-
-import {  } from "./.js";
-
-import { RESOURCE_LOADING_LEVEL_ARRAY } from "./RESOURCE_LOADING_LEVEL_ARRAY.js";
-
 export class ResourceLoadingLevelFactory
             extends Object
          {

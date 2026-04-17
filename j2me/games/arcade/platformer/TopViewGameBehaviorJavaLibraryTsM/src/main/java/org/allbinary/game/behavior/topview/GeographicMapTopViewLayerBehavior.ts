@@ -40,14 +40,6 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
     
 
-import {  } from "./.js";
-
-import { BLOCK_CELL_TYPE } from "./BLOCK_CELL_TYPE.js";
-
-import {  } from "./.js";
-
-import { OFF_MAP_CELL_TYPE } from "./OFF_MAP_CELL_TYPE.js";
-
 export class GeographicMapTopViewLayerBehavior extends TopViewGameLayerBehavior {
         
 public constructor (maxGravityActionIndex: number)                        

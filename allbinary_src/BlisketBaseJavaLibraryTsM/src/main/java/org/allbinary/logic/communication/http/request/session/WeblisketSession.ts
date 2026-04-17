@@ -72,19 +72,11 @@ import { StringValidationUtil } from "../../../../../../../org/allbinary/logic/s
 
     
 
-import { NAME } from "./NAME.js";
-
-import { WeblisketSessionData } from "./WeblisketSessionData.js";
-
-import { NAME } from "./NAME.js";
-
 import { WeblisketSessionData } from "./WeblisketSessionData.js";
 
 import { WeblisketSessionData } from "./WeblisketSessionData.js";
 
-import { GLOBALS2 } from "./GLOBALS2.js";
-
-import { NAME } from "./NAME.js";
+import { WeblisketSessionData } from "./WeblisketSessionData.js";
 
 import { WeblisketSessionData } from "./WeblisketSessionData.js";
 
@@ -92,15 +84,11 @@ import { WeblisketSessionData } from "./WeblisketSessionData.js";
 
 import { WeblisketSessionData } from "./WeblisketSessionData.js";
 
-import { NAME } from "./NAME.js";
-
 import { WeblisketSessionData } from "./WeblisketSessionData.js";
 
 import { WeblisketSessionData } from "./WeblisketSessionData.js";
 
 import { WeblisketSessionData } from "./WeblisketSessionData.js";
-
-import { NAME } from "./NAME.js";
 
 export class WeblisketSession
             extends Object

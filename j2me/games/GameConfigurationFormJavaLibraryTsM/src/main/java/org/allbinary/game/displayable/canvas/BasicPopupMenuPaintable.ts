@@ -73,8 +73,6 @@ import { Paintable } from "../../../../../org/allbinary/graphics/paint/Paintable
 
     
 
-import { NAME } from "./NAME.js";
-
 export class BasicPopupMenuPaintable extends Paintable {
         
 

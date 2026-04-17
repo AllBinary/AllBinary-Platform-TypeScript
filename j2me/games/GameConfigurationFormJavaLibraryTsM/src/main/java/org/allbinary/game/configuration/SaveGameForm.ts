@@ -39,8 +39,6 @@ import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUt
 
 import { Long } from "./Long.js";
 
-import { System } from "./System.js";
-
 export class SaveGameForm extends CommandForm {
         
 

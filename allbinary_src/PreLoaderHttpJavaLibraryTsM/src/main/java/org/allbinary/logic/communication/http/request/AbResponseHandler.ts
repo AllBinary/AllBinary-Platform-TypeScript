@@ -49,22 +49,6 @@ import { LogConfigTypes } from "../../../../../../org/allbinary/logic/communicat
 
     
 
-import { LOGGING } from "./LOGGING.js";
-
-import { LOGGING } from "./LOGGING.js";
-
-import { LOGGING } from "./LOGGING.js";
-
-import { LOGGING } from "./LOGGING.js";
-
-import { LOGGING } from "./LOGGING.js";
-
-import { LOGGING } from "./LOGGING.js";
-
-import { LOGGING } from "./LOGGING.js";
-
-import { LOGGING } from "./LOGGING.js";
-
 export class AbResponseHandler
             extends Object
          {

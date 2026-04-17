@@ -48,10 +48,6 @@ import { TimeDelayHelper } from "../../../../../org/allbinary/time/TimeDelayHelp
 
 import { LogFormatUtil } from "./LogFormatUtil.js";
 
-import { System } from "./System.js";
-
-import { System } from "./System.js";
-
 /*actual*/ export class LogUtil
             extends Object
          {

@@ -34,8 +34,6 @@ import { StringUtil } from "../../../org/allbinary/logic/string/StringUtil.js";
 
     
 
-import { STRING_ARRAY } from "./STRING_ARRAY.js";
-
 import { Long } from "./Long.js";
 
 import { Long } from "./Long.js";

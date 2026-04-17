@@ -43,16 +43,6 @@ import { PixelDelta } from "../../../../../org/allbinary/media/image/comparison/
 
     
 
-import {  } from "./.js";
-
-import { System } from "./System.js";
-
-import { System } from "./System.js";
-
-import {  } from "./.js";
-
-import {  } from "./.js";
-
 export class ChangedPixelsUtil
             extends Object
          {

@@ -43,8 +43,6 @@ import { PrimitiveLongUtil } from "../../../../../../org/allbinary/logic/math/Pr
 
     
 
-import { KILOMETERS_PER_HOUR_STR } from "./KILOMETERS_PER_HOUR_STR.js";
-
 export class VelocityWidget extends BasicHud {
         
 

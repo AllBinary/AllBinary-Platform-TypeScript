@@ -43,14 +43,6 @@ import { AbeClientInformationInterface } from "../../../../org/allbinary/logic/s
 
     
 
-import { LOAD_EARLY } from "./LOAD_EARLY.js";
-
-import { EVENT } from "./EVENT.js";
-
-import { LOAD_ALL } from "./LOAD_ALL.js";
-
-import { EVENT } from "./EVENT.js";
-
 export class GameInitializationUtil
             extends Object
          {

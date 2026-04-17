@@ -28,14 +28,6 @@ import { Visitor } from "../../../../../org/allbinary/logic/util/visitor/Visitor
 
     
 
-import { System } from "./System.js";
-
-import { System } from "./System.js";
-
-import { System } from "./System.js";
-
-import { System } from "./System.js";
-
 export class OrderedObjectArrayPermutationUtil
             extends Object
          {

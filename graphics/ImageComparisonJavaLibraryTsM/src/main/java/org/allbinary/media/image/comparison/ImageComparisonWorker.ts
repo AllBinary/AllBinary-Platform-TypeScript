@@ -49,20 +49,6 @@ import { TimeDelayHelper } from "../../../../../org/allbinary/time/TimeDelayHelp
 
     
 
-import {  } from "./.js";
-
-import {  } from "./.js";
-
-import {  } from "./.js";
-
-import {  } from "./.js";
-
-import {  } from "./.js";
-
-import {  } from "./.js";
-
-import {  } from "./.js";
-
 import { ImageComparisonResultCacheSingleton } from "./ImageComparisonResultCacheSingleton.js";
 
 export class ImageComparisonWorker extends BasicEventHandler

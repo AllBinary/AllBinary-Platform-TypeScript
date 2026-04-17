@@ -56,12 +56,6 @@ import { InitializerData } from "./InitializerData.js";
 
 import { Class } from "./Class.js";
 
-import { LOGGING } from "./LOGGING.js";
-
-import { LogConfigTypes } from "./LogConfigTypes.js";
-
-import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
-
 import { InitializerData } from "./InitializerData.js";
 
 export class InitializerDatabase

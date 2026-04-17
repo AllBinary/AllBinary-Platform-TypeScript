@@ -36,10 +36,6 @@ import { Memory } from "../../../org/allbinary/system/Memory.js";
 
 import { GameStatisticsFactory } from "./GameStatisticsFactory.js";
 
-import { OPENGL_MINIMUM } from "./OPENGL_MINIMUM.js";
-
-import { OPENGL_AUTO_SELECT } from "./OPENGL_AUTO_SELECT.js";
-
 export class SpecialMessageUtil
             extends Object
          {

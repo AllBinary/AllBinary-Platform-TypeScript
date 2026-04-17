@@ -16,10 +16,6 @@ import { ViewGroup } from "../../../android/view/ViewGroup.js";
 
     
 
-import {  } from "./.js";
-
-import {  } from "./.js";
-
 export class ViewSwapper
             extends Object
          {

@@ -24,8 +24,6 @@ import { Debug } from "../../../android/os/Debug.js";
 
 import { Long } from "./Long.js";
 
-import { System } from "./System.js";
-
 import { Long } from "./Long.js";
 
 export class AndroidDebug

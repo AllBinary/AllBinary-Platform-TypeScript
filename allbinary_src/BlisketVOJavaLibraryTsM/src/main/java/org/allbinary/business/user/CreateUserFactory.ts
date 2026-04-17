@@ -34,8 +34,6 @@ import { StringValidationUtil } from "../../../../org/allbinary/logic/string/Str
 
     
 
-import { NAME } from "./NAME.js";
-
 export class CreateUserFactory
             extends Object
          {

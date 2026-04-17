@@ -93,16 +93,6 @@ import { Document } from "../../../../org/w3c/dom/Document.js";
 
     
 
-import { BorderLayout } from "./BorderLayout.js";
-
-import { BorderLayout } from "./BorderLayout.js";
-
-import { BorderLayout } from "./BorderLayout.js";
-
-import { System } from "./System.js";
-
-import { System } from "./System.js";
-
 export class MyFrame extends javax.swing.JFrame
                 , FileJDialogListenerInterface
                 , HashMapJDialogListenerInterface

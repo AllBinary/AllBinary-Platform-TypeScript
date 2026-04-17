@@ -11,8 +11,6 @@ import { Long } from "./Long.js";
 
 import { Float } from "./Float.js";
 
-import { System } from "./System.js";
-
 export class StringMaker
             extends Object
          {

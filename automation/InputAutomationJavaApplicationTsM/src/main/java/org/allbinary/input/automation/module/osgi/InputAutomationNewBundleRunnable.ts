@@ -82,10 +82,6 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 
     
 
-import { System } from "./System.js";
-
-import { FILE } from "./FILE.js";
-
 export class InputAutomationNewBundleRunnable
             extends Object
         

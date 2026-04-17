@@ -19,8 +19,6 @@
 
 
 
-import { System } from "./System.js";
-
 export class ExitCloseListener
             extends Object
         

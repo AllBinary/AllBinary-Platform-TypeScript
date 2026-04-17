@@ -27,10 +27,6 @@ import { LogFormatUtil } from "../../../../../org/allbinary/logic/communication/
 
     
 
-import { Log } from "./Log.js";
-
-import { Log } from "./Log.js";
-
 /*actual*/ export class PreLogUtil
             extends Object
          {

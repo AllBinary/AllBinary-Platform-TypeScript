@@ -60,23 +60,7 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
     
 
-import {  } from "./.js";
-
-import { System } from "./System.js";
-
-import { System } from "./System.js";
-
-import {  } from "./.js";
-
-import { Alignment } from "./Alignment.js";
-
-import { GroupLayout } from "./GroupLayout.js";
-
 import { Short } from "./Short.js";
-
-import { Alignment } from "./Alignment.js";
-
-import { GroupLayout } from "./GroupLayout.js";
 
 import { Short } from "./Short.js";
 

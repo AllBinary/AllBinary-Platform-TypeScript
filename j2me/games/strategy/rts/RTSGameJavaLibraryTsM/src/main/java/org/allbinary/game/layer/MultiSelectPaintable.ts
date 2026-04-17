@@ -43,8 +43,6 @@ import { NullUtil } from "../../../../org/allbinary/logic/NullUtil.js";
 
     
 
-import { GREY } from "./GREY.js";
-
 export class MultiSelectPaintable extends SelectionHudPaintable {
         
 

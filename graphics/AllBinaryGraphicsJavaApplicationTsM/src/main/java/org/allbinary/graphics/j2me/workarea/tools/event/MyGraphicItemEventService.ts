@@ -19,8 +19,6 @@
 
 
 
-import {  } from "./.js";
-
 export class MyGraphicItemEventService
             extends Object
          {

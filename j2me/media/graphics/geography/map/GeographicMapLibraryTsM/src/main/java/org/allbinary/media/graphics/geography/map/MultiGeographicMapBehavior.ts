@@ -21,8 +21,6 @@
 
 import { GeographicMapCellType } from "./GeographicMapCellType.js";
 
-import {  } from "./.js";
-
 export class MultiGeographicMapBehavior
             extends Object
          {

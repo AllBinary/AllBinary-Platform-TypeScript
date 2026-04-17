@@ -34,10 +34,6 @@ import { ScaleProperties } from "../../../../org/allbinary/media/ScaleProperties
 
     
 
-import {  } from "./.js";
-
-import {  } from "./.js";
-
 export class CompoundAnimationInterfaceFactory
             extends Object
         

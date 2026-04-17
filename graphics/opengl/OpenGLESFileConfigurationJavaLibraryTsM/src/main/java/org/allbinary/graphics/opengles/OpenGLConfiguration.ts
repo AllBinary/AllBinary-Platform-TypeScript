@@ -83,26 +83,6 @@ import { OpenGLFeatureFactory } from "./OpenGLFeatureFactory.js";
 
 import { OpenGLFeatureFactory } from "./OpenGLFeatureFactory.js";
 
-import { OPENGL_AUTO_SELECT } from "./OPENGL_AUTO_SELECT.js";
-
-import { OPENGL_MINIMUM } from "./OPENGL_MINIMUM.js";
-
-import { OPENGL_AS_GAME_THREAD } from "./OPENGL_AS_GAME_THREAD.js";
-
-import { OPENGL_AND_GAME_HAVE_DIFFERENT_THREADS } from "./OPENGL_AND_GAME_HAVE_DIFFERENT_THREADS.js";
-
-import { IMAGE_COLOR_DEPTH_4444 } from "./IMAGE_COLOR_DEPTH_4444.js";
-
-import { IMAGE_COLOR_DEPTH_4444 } from "./IMAGE_COLOR_DEPTH_4444.js";
-
-import { IMAGE_COLOR_DEPTH_4444 } from "./IMAGE_COLOR_DEPTH_4444.js";
-
-import { OPENGL_COLOR_DEPTH_4444 } from "./OPENGL_COLOR_DEPTH_4444.js";
-
-import { OPENGL_COLOR_DEPTH_565 } from "./OPENGL_COLOR_DEPTH_565.js";
-
-import { OPENGL_COLOR_DEPTH_8888 } from "./OPENGL_COLOR_DEPTH_8888.js";
-
 import { OpenGLFeatureFactory } from "./OpenGLFeatureFactory.js";
 
 import { OpenGLFeatureFactory } from "./OpenGLFeatureFactory.js";

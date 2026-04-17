@@ -109,10 +109,6 @@ import { SecondaryThreadPool } from "../../../../../org/allbinary/thread/Seconda
 
     
 
-import { System } from "./System.js";
-
-import { System } from "./System.js";
-
 export class HighScoresCanvas extends GameCommandCanvas
                 , HighScoresResultsListener {
         

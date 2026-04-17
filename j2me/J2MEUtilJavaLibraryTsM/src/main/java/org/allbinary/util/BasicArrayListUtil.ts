@@ -31,8 +31,6 @@ import { CommonPhoneStrings } from "../../../org/allbinary/string/CommonPhoneStr
 
     
 
-import { System } from "./System.js";
-
 export class BasicArrayListUtil
             extends Object
          {

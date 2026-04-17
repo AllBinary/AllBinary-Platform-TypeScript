@@ -34,15 +34,7 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
     
 
-import { Alignment } from "./Alignment.js";
-
-import { GroupLayout } from "./GroupLayout.js";
-
 import { Short } from "./Short.js";
-
-import { Alignment } from "./Alignment.js";
-
-import { GroupLayout } from "./GroupLayout.js";
 
 import { Short } from "./Short.js";
 

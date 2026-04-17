@@ -31,8 +31,6 @@ import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
 
     
 
-import { EventQueue } from "./EventQueue.js";
-
 export class ImageTool
             extends Object
          {

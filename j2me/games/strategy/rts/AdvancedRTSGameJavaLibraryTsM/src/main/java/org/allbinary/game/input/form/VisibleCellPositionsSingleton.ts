@@ -61,8 +61,6 @@ import { EventStrings } from "../../../../../org/allbinary/logic/util/event/Even
 
     
 
-import {  } from "./.js";
-
 export class VisibleCellPositionsSingleton
             extends Object
         

@@ -26,8 +26,6 @@ import { Build } from "../../../android/os/Build.js";
 
     
 
-import { VERSION } from "./VERSION.js";
-
 export class AndroidInfoFactory
             extends Object
          {

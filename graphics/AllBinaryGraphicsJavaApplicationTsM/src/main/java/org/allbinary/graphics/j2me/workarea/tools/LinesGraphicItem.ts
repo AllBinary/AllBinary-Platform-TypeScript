@@ -78,8 +78,6 @@ import { NodeList } from "../../../../../../org/w3c/dom/NodeList.js";
 
     
 
-import { WHITE } from "./WHITE.js";
-
 import { PointsDomUtil } from "./PointsDomUtil.js";
 
 import { PointsDomUtil } from "./PointsDomUtil.js";

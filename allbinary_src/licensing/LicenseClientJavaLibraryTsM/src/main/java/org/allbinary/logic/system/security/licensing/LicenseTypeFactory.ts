@@ -22,10 +22,6 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
     
 
-import { DEMO } from "./DEMO.js";
-
-import { NORMAL } from "./NORMAL.js";
-
 export class LicenseTypeFactory
             extends Object
          {

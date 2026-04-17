@@ -67,53 +67,25 @@ import { BasicArrayList } from "../../../../../../../org/allbinary/util/BasicArr
 
     
 
-import { LOGGING } from "./LOGGING.js";
+import { CpuInfo } from "./CpuInfo.js";
 
-import { LOGGING } from "./LOGGING.js";
-
-import { PROCESSOR } from "./PROCESSOR.js";
+import { CpuInfo } from "./CpuInfo.js";
 
 import { CpuInfo } from "./CpuInfo.js";
 
 import { CpuInfo } from "./CpuInfo.js";
 
-import { VENDORID } from "./VENDORID.js";
+import { CpuInfo } from "./CpuInfo.js";
+
+import { CpuInfo } from "./CpuInfo.js";
 
 import { CpuInfo } from "./CpuInfo.js";
 
 import { CpuInfo } from "./CpuInfo.js";
 
-import { CPUFAMILY } from "./CPUFAMILY.js";
-
 import { CpuInfo } from "./CpuInfo.js";
 
 import { CpuInfo } from "./CpuInfo.js";
-
-import { MODEL } from "./MODEL.js";
-
-import { CpuInfo } from "./CpuInfo.js";
-
-import { CpuInfo } from "./CpuInfo.js";
-
-import { MODELNAME } from "./MODELNAME.js";
-
-import { CpuInfo } from "./CpuInfo.js";
-
-import { CpuInfo } from "./CpuInfo.js";
-
-import { STEPPING } from "./STEPPING.js";
-
-import { CpuInfo } from "./CpuInfo.js";
-
-import { CpuInfo } from "./CpuInfo.js";
-
-import { CPUMHZ } from "./CPUMHZ.js";
-
-import { CpuInfo } from "./CpuInfo.js";
-
-import { CpuInfo } from "./CpuInfo.js";
-
-import { CACHESIZE } from "./CACHESIZE.js";
 
 import { CpuInfo } from "./CpuInfo.js";
 
@@ -135,35 +107,27 @@ import { CpuInfo } from "./CpuInfo.js";
 
 import { CpuInfo } from "./CpuInfo.js";
 
-import { PROCESSOR } from "./PROCESSOR.js";
+import { CpuInfo } from "./CpuInfo.js";
 
 import { CpuInfo } from "./CpuInfo.js";
 
-import { VENDORID } from "./VENDORID.js";
+import { CpuInfo } from "./CpuInfo.js";
 
 import { CpuInfo } from "./CpuInfo.js";
 
-import { CPUFAMILY } from "./CPUFAMILY.js";
+import { CpuInfo } from "./CpuInfo.js";
 
 import { CpuInfo } from "./CpuInfo.js";
 
-import { MODEL } from "./MODEL.js";
+import { CpuInfo } from "./CpuInfo.js";
 
 import { CpuInfo } from "./CpuInfo.js";
 
-import { MODELNAME } from "./MODELNAME.js";
+import { CpuInfo } from "./CpuInfo.js";
 
 import { CpuInfo } from "./CpuInfo.js";
 
-import { STEPPING } from "./STEPPING.js";
-
 import { CpuInfo } from "./CpuInfo.js";
-
-import { CPUMHZ } from "./CPUMHZ.js";
-
-import { CpuInfo } from "./CpuInfo.js";
-
-import { CACHESIZE } from "./CACHESIZE.js";
 
 import { CpuInfo } from "./CpuInfo.js";
 

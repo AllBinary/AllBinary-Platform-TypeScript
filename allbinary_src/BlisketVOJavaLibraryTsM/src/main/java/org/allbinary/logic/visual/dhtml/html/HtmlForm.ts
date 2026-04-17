@@ -31,8 +31,6 @@ import { HtmlTable } from "../../../../../../org/allbinary/logic/visual/dhtml/ht
 
     
 
-import {  } from "./.js";
-
 export class HtmlForm
             extends Object
          {

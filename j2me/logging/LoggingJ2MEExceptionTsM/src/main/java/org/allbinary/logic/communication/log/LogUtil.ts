@@ -26,10 +26,6 @@ import { LogFormatUtil } from "./LogFormatUtil.js";
 
 import { LogFactory } from "./LogFactory.js";
 
-import { System } from "./System.js";
-
-import { System } from "./System.js";
-
 /*actual*/ export class LogUtil
             extends Object
          {

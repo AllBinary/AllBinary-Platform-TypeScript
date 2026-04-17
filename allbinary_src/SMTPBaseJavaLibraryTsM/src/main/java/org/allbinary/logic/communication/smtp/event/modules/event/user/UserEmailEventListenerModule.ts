@@ -40,12 +40,6 @@ import { EmailQueueFactory } from "../../../../../../../../../org/allbinary/logi
 
     
 
-import { LOGGING } from "./LOGGING.js";
-
-import { LogConfigTypes } from "./LogConfigTypes.js";
-
-import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
-
 export class UserEmailEventListenerModule
             extends Object
         

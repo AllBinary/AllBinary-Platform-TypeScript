@@ -273,15 +273,11 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
 import { GameMidletStateFactory } from "./GameMidletStateFactory.js";
 
-import { TOGGLE_FULLSCREEN } from "./TOGGLE_FULLSCREEN.js";
-
 import { GameMidletEventHandler } from "./GameMidletEventHandler.js";
 
 import { GameMidletEventHandler } from "./GameMidletEventHandler.js";
 
 import { DemoGameMidletStateFactory } from "./DemoGameMidletStateFactory.js";
-
-import { NULL_GAME_CANVAS_RUNNABLE } from "./NULL_GAME_CANVAS_RUNNABLE.js";
 
 export class GameMidlet extends ProgressMidlet
                 , CommandListener {

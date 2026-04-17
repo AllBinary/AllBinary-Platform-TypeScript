@@ -73,18 +73,6 @@ import { InventoryViewSearchInterface } from "../../../views/admin/inventory/lis
 
     
 
-import { LOGGING } from "./LOGGING.js";
-
-import { LogConfigTypes } from "./LogConfigTypes.js";
-
-import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
-
-import { LOGGING } from "./LOGGING.js";
-
-import { LogConfigTypes } from "./LogConfigTypes.js";
-
-import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
-
 import { InventorySearchUtil } from "./InventorySearchUtil.js";
 
 import { InventorySearchProductUtil } from "./InventorySearchProductUtil.js";

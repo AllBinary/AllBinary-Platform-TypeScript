@@ -34,10 +34,6 @@ import { BasicColor } from "../../../../org/allbinary/graphics/color/BasicColor.
 
     
 
-import { Mode } from "./Mode.js";
-
-import { Mode } from "./Mode.js";
-
 export class ImageModifierUtil
             extends Object
          {

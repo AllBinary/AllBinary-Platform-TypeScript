@@ -22,8 +22,6 @@ import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.
 
     
 
-import { NUMBER_CHAR_ARRAY } from "./NUMBER_CHAR_ARRAY.js";
-
 export class PrimitiveLongSingleton
             extends Object
          {

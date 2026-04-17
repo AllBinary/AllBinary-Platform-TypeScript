@@ -48,12 +48,6 @@ import { GameTickTimeDelayHelperFactory } from "../../../../../org/allbinary/tim
 
     
 
-import {  } from "./.js";
-
-import {  } from "./.js";
-
-import {  } from "./.js";
-
 export class BasicRandomAI extends BasicAI {
         
 

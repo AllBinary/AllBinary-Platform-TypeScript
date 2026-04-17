@@ -39,19 +39,7 @@ import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUt
 
 import { Long } from "./Long.js";
 
-import { LOGGING } from "./LOGGING.js";
-
-import { LogConfigTypes } from "./LogConfigTypes.js";
-
-import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
-
 import { Long } from "./Long.js";
-
-import { LOGGING } from "./LOGGING.js";
-
-import { LogConfigTypes } from "./LogConfigTypes.js";
-
-import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
 
 export class UniqueIdGenerator
             extends Object

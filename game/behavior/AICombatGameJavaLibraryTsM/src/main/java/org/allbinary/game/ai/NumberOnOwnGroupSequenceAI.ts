@@ -39,8 +39,6 @@ import { AllBinaryLayerManager } from "../../../../org/allbinary/layer/AllBinary
 
     
 
-import {  } from "./.js";
-
 export class NumberOnOwnGroupSequenceAI extends SequenceAI {
         
 

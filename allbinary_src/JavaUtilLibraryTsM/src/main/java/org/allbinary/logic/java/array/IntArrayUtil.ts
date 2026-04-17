@@ -22,18 +22,6 @@ import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMak
 
     
 
-import {  } from "./.js";
-
-import {  } from "./.js";
-
-import {  } from "./.js";
-
-import {  } from "./.js";
-
-import {  } from "./.js";
-
-import {  } from "./.js";
-
 export class IntArrayUtil
             extends Object
          {

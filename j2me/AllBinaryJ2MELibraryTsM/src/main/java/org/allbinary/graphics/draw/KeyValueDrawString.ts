@@ -28,8 +28,6 @@ import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js
 
     
 
-import { LABEL } from "./LABEL.js";
-
 export class KeyValueDrawString
             extends Object
          {

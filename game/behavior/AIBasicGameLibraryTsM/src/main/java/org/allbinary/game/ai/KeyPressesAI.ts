@@ -36,8 +36,6 @@ import { HashtableUtil } from "../../../../org/allbinary/util/HashtableUtil.js";
 
     
 
-import {  } from "./.js";
-
 export class KeyPressesAI extends BasicAI {
         
 

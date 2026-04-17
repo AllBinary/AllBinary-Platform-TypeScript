@@ -19,13 +19,7 @@
 
 
 
-import { System } from "./System.js";
-
-import { System } from "./System.js";
-
 import { Long } from "./Long.js";
-
-import { System } from "./System.js";
 
 export class GameTickTimeDelayHelper
             extends Object

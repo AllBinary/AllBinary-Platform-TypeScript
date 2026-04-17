@@ -39,12 +39,6 @@ import { Node } from "../../../../../../../../org/w3c/dom/Node.js";
 
 import { SavedCaptureGenericProfileDataWorkerType } from "./SavedCaptureGenericProfileDataWorkerType.js";
 
-import { CAPTURE } from "./CAPTURE.js";
-
-import { COMPARISON } from "./COMPARISON.js";
-
-import { MOTION } from "./MOTION.js";
-
 import { GenericProfileDataWorkerData } from "./GenericProfileDataWorkerData.js";
 
 export class GenericProfileDataWorkerType

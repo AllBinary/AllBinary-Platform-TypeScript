@@ -37,8 +37,6 @@ import { LayerInterfaceFactoryInterface } from "../../../../../org/allbinary/lay
 
     
 
-import {  } from "./.js";
-
 export class LayerInterfaceFactoryImageItem extends CustomImageItem {
         
 

@@ -29,23 +29,7 @@ import { StringMaker } from "../../../org/allbinary/logic/string/StringMaker.js"
 
 import { AngleFactory } from "./AngleFactory.js";
 
-import { DOWN } from "./DOWN.js";
-
-import { UP } from "./UP.js";
-
-import { LEFT } from "./LEFT.js";
-
-import { RIGHT } from "./RIGHT.js";
-
 import { FrameUtil } from "./FrameUtil.js";
-
-import { UP_FRAME } from "./UP_FRAME.js";
-
-import { DOWN_FRAME } from "./DOWN_FRAME.js";
-
-import { LEFT_FRAME } from "./LEFT_FRAME.js";
-
-import { RIGHT_FRAME } from "./RIGHT_FRAME.js";
 
 export class AngleIncrementInfo
             extends Object

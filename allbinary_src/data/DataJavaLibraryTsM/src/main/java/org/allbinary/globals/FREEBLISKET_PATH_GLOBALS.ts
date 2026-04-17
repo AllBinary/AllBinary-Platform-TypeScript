@@ -25,12 +25,6 @@ import { StringMaker } from "../../../org/allbinary/logic/string/StringMaker.js"
 
     
 
-import { PATH_GLOBALS } from "./PATH_GLOBALS.js";
-
-import { PATH_GLOBALS } from "./PATH_GLOBALS.js";
-
-import { PATH_GLOBALS } from "./PATH_GLOBALS.js";
-
 export class FREEBLISKET_PATH_GLOBALS
             extends Object
          {
