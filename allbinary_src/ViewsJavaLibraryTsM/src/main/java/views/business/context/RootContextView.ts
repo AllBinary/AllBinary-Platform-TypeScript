@@ -49,8 +49,22 @@ import { NoTemplateTransformInfoObjectConfig } from "../../../views/business/con
 
     
 
-export class RootContextView extends HttpStoreComponentView
-                , TransformTemplateInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+export class RootContextView extends HttpStoreComponentView implements TransformTemplateInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

@@ -19,6 +19,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { ColorRangeInterface } from "./ColorRangeInterface.js";
+
 export class ImageColorRangeResults
             extends Object
          {

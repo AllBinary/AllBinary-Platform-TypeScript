@@ -43,18 +43,26 @@ import { NodeList } from "../../../../../../../org/w3c/dom/NodeList.js";
 
     
 
-import { AlwaysActionScriptConditionData } from "./AlwaysActionScriptConditionData.js";
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { BasicProfileActionScriptCondition } from "./BasicProfileActionScriptCondition.js";
 
 import { AlwaysActionScriptConditionData } from "./AlwaysActionScriptConditionData.js";
 
-import { AlwaysActionScriptConditionData } from "./AlwaysActionScriptConditionData.js";
-
-import { Boolean } from "./Boolean.js";
-
-import { AlwaysActionScriptConditionData } from "./AlwaysActionScriptConditionData.js";
-
-export class AlwaysActionScriptCondition extends BasicProfileActionScriptCondition
-                , AlwaysActionScriptConditionInterface {
+export class AlwaysActionScriptCondition extends BasicProfileActionScriptCondition implements AlwaysActionScriptConditionInterface {
         
 
     private static readonly NAME: string = "Always On/Off";

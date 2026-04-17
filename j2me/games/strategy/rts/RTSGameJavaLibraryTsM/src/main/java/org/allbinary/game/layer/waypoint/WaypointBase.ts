@@ -55,10 +55,24 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class WaypointBase
             extends Object
-        
-                , EventListenerInterface {
+         implements EventListenerInterface {
         
 
     public NULL_WAYPOINT_BASE: WaypointBase = new WaypointBase(NoSound.getInstance());

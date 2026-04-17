@@ -22,6 +22,23 @@ import { DbConnectionInfo } from "../../../../../org/allbinary/business/init/db/
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { AbSqlBasic } from "./AbSqlBasic.js";
+
 export class AbSqlTablePresentation extends AbSqlBasic {
         
 public constructor (databaseConnectionInfoInterface: DbConnectionInfo)                        

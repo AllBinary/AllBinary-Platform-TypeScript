@@ -91,8 +91,24 @@ import { BasicArrayListUtil } from "../../../../../org/allbinary/util/BasicArray
 
     
 
-export class Waypoint extends WaypointBase
-                , BuildingEventListenerInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { WaypointBase } from "./WaypointBase.js";
+
+export class Waypoint extends WaypointBase implements BuildingEventListenerInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

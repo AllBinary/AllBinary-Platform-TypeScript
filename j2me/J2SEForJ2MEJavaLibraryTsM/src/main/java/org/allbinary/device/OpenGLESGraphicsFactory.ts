@@ -5,7 +5,24 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { OpenGLESNullGraphicsFactory } from "./OpenGLESNullGraphicsFactory.js";
+
+import { OpenGLESGraphics } from "./OpenGLESGraphics.js";
 
 export class OpenGLESGraphicsFactory
             extends Object

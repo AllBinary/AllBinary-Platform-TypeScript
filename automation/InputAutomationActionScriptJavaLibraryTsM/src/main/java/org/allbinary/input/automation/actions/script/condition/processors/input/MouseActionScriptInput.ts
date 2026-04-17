@@ -57,30 +57,30 @@ import { NodeList } from "../../../../../../../../../org/w3c/dom/NodeList.js";
 
     
 
-import { MouseActionScriptInputData } from "./MouseActionScriptInputData.js";
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { BasicProfileActionScriptInput } from "./BasicProfileActionScriptInput.js";
 
 import { MouseActionScriptInputData } from "./MouseActionScriptInputData.js";
 
-import { MouseActionScriptInputData } from "./MouseActionScriptInputData.js";
-
-import { MouseActionScriptInputData } from "./MouseActionScriptInputData.js";
-
-import { MouseActionScriptInputData } from "./MouseActionScriptInputData.js";
-
-import { MouseActionScriptInputData } from "./MouseActionScriptInputData.js";
-
-import { MouseActionScriptInputData } from "./MouseActionScriptInputData.js";
-
-import { MouseActionScriptInputData } from "./MouseActionScriptInputData.js";
-
-import { MouseActionScriptInputData } from "./MouseActionScriptInputData.js";
-
-import { MouseActionScriptInputData } from "./MouseActionScriptInputData.js";
+import { Point } from "./Point.js";
 
 import { MouseInputAutomationProcessor } from "./MouseInputAutomationProcessor.js";
 
-export class MouseActionScriptInput extends BasicProfileActionScriptInput
-                , MouseActionScriptInputInterface {
+export class MouseActionScriptInput extends BasicProfileActionScriptInput implements MouseActionScriptInputInterface {
         
 
     private static readonly NAME: string = "Mouse";

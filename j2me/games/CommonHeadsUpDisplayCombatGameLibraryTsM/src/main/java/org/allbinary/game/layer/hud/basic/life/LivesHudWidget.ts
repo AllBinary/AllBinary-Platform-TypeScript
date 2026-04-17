@@ -37,8 +37,22 @@ import { PaintableInterface } from "../../../../../../../org/allbinary/graphics/
 
     
 
-export class LivesHudWidget extends BasicHud
-                , PaintableInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+export class LivesHudWidget extends BasicHud implements PaintableInterface {
         
 
     private readonly lifeInterface: Life

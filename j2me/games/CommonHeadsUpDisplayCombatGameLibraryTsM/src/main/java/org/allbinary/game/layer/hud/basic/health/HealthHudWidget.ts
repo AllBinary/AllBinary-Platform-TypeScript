@@ -49,9 +49,22 @@ import { TimeDelayHelper } from "../../../../../../../org/allbinary/time/TimeDel
 
     
 
-export class HealthHudWidget extends BasicHud
-                , PaintableInterface
-                , HealthListenerInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+export class HealthHudWidget extends BasicHud implements PaintableInterface, HealthListenerInterface {
         
 
     private healthScale: number

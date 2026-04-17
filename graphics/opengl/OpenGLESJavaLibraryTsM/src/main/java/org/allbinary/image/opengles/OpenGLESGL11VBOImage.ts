@@ -52,6 +52,23 @@ import { PlatformTextureBaseFactory } from "../../../../org/allbinary/platform/o
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { OpenGLESImage } from "./OpenGLESImage.js";
+
 export class OpenGLESGL11VBOImage extends OpenGLESImage {
         
 

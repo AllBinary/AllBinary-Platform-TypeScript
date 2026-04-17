@@ -31,10 +31,24 @@ import { BasicGeographicMap } from "../../../../../../../org/allbinary/media/gra
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class BaseDropCellPositionGenerator
             extends Object
-        
-                , DropCellPositionGeneratorInterface {
+         implements DropCellPositionGeneratorInterface {
         
 
     public getName(): string{

@@ -58,8 +58,22 @@ import { EventStrings } from "../../../../../org/allbinary/logic/util/event/Even
 
     
 
-export class RTSLayerCostAnimation extends Animation
-                , TechEventListenerInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+export class RTSLayerCostAnimation extends Animation implements TechEventListenerInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

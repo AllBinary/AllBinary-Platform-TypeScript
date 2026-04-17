@@ -22,6 +22,25 @@ import { GeographicMapCellPosition } from "../../../../../../org/allbinary/media
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { PathFindingNodeCostInfoFactoryBaseInterface } from "./PathFindingNodeCostInfoFactoryBaseInterface.js";
+
+import { PathFindingNodeCostInfo } from "./PathFindingNodeCostInfo.js";
+
 export interface PathFindingNodeCostInfoFactoryInterface extends PathFindingNodeCostInfoFactoryBaseInterface {
         
 

@@ -49,14 +49,30 @@ import { TimeDelayHelper } from "../../../../../../org/allbinary/time/TimeDelayH
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { MotionRectangleConstraintsInterface } from "./MotionRectangleConstraintsInterface.js";
+
 import { AllMotionRectanglesResultsCacheSingleton } from "./AllMotionRectanglesResultsCacheSingleton.js";
 
 import { ConsolidatedMotionRectanglesResultsCacheSingleton } from "./ConsolidatedMotionRectanglesResultsCacheSingleton.js";
 
 import { ConstrainedMotionRectanglesResultsCacheSingleton } from "./ConstrainedMotionRectanglesResultsCacheSingleton.js";
 
-export class MotionRectanglesWorker extends BasicEventHandler
-                , ImageComparisonResultsListener {
+export class MotionRectanglesWorker extends BasicEventHandler implements ImageComparisonResultsListener {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

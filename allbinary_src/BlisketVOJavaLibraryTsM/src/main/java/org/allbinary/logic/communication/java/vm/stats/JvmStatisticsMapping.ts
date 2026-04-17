@@ -28,30 +28,26 @@ import { TableMappingInterface } from "../../../../../../../org/allbinary/data/t
 
     
 
-import { JvmStatisticsData } from "./JvmStatisticsData.js";
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { JvmStatistics } from "./JvmStatistics.js";
 
 import { JvmStatisticsData } from "./JvmStatisticsData.js";
 
-import { JvmStatisticsData } from "./JvmStatisticsData.js";
-
-import { JvmStatisticsData } from "./JvmStatisticsData.js";
-
-import { JvmStatisticsData } from "./JvmStatisticsData.js";
-
-import { JvmStatisticsData } from "./JvmStatisticsData.js";
-
-import { JvmStatisticsData } from "./JvmStatisticsData.js";
-
-import { JvmStatisticsData } from "./JvmStatisticsData.js";
-
-import { JvmStatisticsData } from "./JvmStatisticsData.js";
-
-import { JvmStatisticsData } from "./JvmStatisticsData.js";
-
-import { JvmStatisticsData } from "./JvmStatisticsData.js";
-
-export class JvmStatisticsMapping extends JvmStatistics
-                , TableMappingInterface {
+export class JvmStatisticsMapping extends JvmStatistics implements TableMappingInterface {
         
 public constructor ()                        
 

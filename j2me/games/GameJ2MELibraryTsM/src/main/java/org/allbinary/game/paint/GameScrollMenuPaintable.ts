@@ -46,8 +46,24 @@ import { AllBinaryEventObject } from "../../../../org/allbinary/logic/util/event
 
     
 
-export class GameScrollMenuPaintable extends BasicGameDemoPaintable
-                , ColorChangeListener {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { BasicGameDemoPaintable } from "./BasicGameDemoPaintable.js";
+
+export class GameScrollMenuPaintable extends BasicGameDemoPaintable implements ColorChangeListener {
         
 public constructor (mainDemoStatePaintable: Paintable, ownershipPaintable: Paintable, helpPaintableInterface: Paintable, basicColor: BasicColor)                        
 

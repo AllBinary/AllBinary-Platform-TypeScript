@@ -20,6 +20,21 @@ import { SwtMutableImage } from "../../../org/microemu/device/swt/SwtMutableImag
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class OpenGLBitmap extends PlatformBitmapBase {
         
 

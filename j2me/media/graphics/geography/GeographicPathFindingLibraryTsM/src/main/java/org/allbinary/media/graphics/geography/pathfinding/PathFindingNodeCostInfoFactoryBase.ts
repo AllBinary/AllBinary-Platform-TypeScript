@@ -25,10 +25,24 @@ import { GeographicMapCellPosition } from "../../../../../../org/allbinary/media
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class PathFindingNodeCostInfoFactoryBase
             extends Object
-        
-                , PathFindingNodeCostInfoFactoryBaseInterface {
+         implements PathFindingNodeCostInfoFactoryBaseInterface {
         
 
     public static readonly NULL_PATH_FINDING_NODE_COST_INFO_FACTORY_BASE: PathFindingNodeCostInfoFactoryBase = new PathFindingNodeCostInfoFactoryBase();

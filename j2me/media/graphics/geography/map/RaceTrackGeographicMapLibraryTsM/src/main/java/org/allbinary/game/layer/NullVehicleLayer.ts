@@ -40,10 +40,26 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { VehicleProperties } from "./VehicleProperties.js";
+
 export class NullVehicleLayer
             extends Object
-        
-                , VehicleLayerInterface {
+         implements VehicleLayerInterface {
         
 
     public static readonly NULL_VEHICLE_LAYER: NullVehicleLayer = new NullVehicleLayer();

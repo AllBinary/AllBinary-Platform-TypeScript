@@ -52,10 +52,26 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { NullHighScoresSingletonFactory } from "./NullHighScoresSingletonFactory.js";
 
-export class HighScoresPaintable extends Paintable
-                , ColorChangeListener {
+import { HighScores } from "./HighScores.js";
+
+export class HighScoresPaintable extends Paintable implements ColorChangeListener {
         
 
     private readonly displayInfoSingleton: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;

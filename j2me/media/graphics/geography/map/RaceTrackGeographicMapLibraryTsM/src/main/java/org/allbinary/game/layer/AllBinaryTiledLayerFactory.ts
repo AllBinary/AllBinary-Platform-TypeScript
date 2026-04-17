@@ -40,10 +40,26 @@ import { TiledLayerFactory } from "../../../../org/allbinary/media/graphics/geog
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { AllBinaryTiledLayer } from "./AllBinaryTiledLayer.js";
+
 export class AllBinaryTiledLayerFactory
             extends Object
-        
-                , AllBinaryTiledLayerFactoryInterface {
+         implements AllBinaryTiledLayerFactoryInterface {
         
 
                 //@Throws(Error::class)

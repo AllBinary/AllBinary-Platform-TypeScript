@@ -43,8 +43,26 @@ import { CircularIndexUtil } from "../../../org/allbinary/util/CircularIndexUtil
 
     
 
-export class RotationAnimation extends IndexedAnimation
-                , RotationAnimationInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { IndexedAnimation } from "./IndexedAnimation.js";
+
+import { AnimationBehavior } from "./AnimationBehavior.js";
+
+export class RotationAnimation extends IndexedAnimation implements RotationAnimationInterface {
         
 
     readonly frameUtil: FrameUtil = FrameUtil.getInstance()!;

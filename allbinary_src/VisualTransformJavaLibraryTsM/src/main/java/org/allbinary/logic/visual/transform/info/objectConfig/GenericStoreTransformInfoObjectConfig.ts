@@ -70,7 +70,22 @@ import { Document } from "../../../../../../../org/w3c/dom/Document.js";
 
     
 
-import { TransformInfoObjectConfigData } from "./TransformInfoObjectConfigData.js";
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { TransformInfoObjectConfig } from "./TransformInfoObjectConfig.js";
 
 import { TransformInfoObjectConfigData } from "./TransformInfoObjectConfigData.js";
 

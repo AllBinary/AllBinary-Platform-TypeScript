@@ -37,12 +37,24 @@ import { Node } from "../../../../../org/w3c/dom/Node.js";
 
     
 
-import { Boolean } from "./Boolean.js";
 
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { ThemesData } from "./ThemesData.js";
 
-export class ThemesValidation extends Validation
-                , DomNodeInterface {
+export class ThemesValidation extends Validation implements DomNodeInterface {
         
 
     private themeVector: Vector

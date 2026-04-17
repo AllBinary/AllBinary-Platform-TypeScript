@@ -22,10 +22,24 @@ import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class LocationPaintable
             extends Object
-        
-                , LocationPaintableInterface {
+         implements LocationPaintableInterface {
         
 
     private static readonly instance: LocationPaintable = new LocationPaintable();

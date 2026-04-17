@@ -22,6 +22,23 @@ import { awt } from "../../../../../java/awt.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { Color } from "./Color.js";
+
 export interface ColorRangeInterface {
         
 

@@ -19,6 +19,25 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { CustomMapGeneratorBase } from "./CustomMapGeneratorBase.js";
+
+import { RaceTrackGeographicMap } from "./RaceTrackGeographicMap.js";
+
 export class CustomMapGeneratorBaseFactory
             extends Object
          {

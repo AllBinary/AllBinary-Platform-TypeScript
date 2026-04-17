@@ -19,6 +19,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { LocationPaintable } from "./LocationPaintable.js";
+
 export class NullLocationPaintable extends LocationPaintable {
         
 

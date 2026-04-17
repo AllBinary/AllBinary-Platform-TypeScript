@@ -73,14 +73,28 @@ import { InventoryViewSearchInterface } from "../../../views/admin/inventory/lis
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { InventorySearchUtil } from "./InventorySearchUtil.js";
 
 import { InventorySearchProductUtil } from "./InventorySearchProductUtil.js";
 
 export class InventorySearch
             extends Object
-        
-                , InventoryViewSearchInterface {
+         implements InventoryViewSearchInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

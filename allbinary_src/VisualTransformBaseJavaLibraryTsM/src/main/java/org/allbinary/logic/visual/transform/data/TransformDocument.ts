@@ -37,10 +37,24 @@ import { Node } from "../../../../../../org/w3c/dom/Node.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class TransformDocument
             extends Object
-        
-                , TransformDocumentInterface {
+         implements TransformDocumentInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

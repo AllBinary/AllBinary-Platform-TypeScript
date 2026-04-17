@@ -19,6 +19,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { Paintable } from "./Paintable.js";
+
 export class ProcessPaintable extends Paintable {
         
 

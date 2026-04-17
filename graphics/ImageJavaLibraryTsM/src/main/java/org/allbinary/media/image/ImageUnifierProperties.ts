@@ -21,6 +21,23 @@
             import { Integer } from "../../../../java/lang/Integer.js";
         
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { ImageUnifierCell } from "./ImageUnifierCell.js";
+
 export class ImageUnifierProperties
             extends Object
          {

@@ -25,8 +25,21 @@ import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js
 
     
 
-import { BasicColorUtil } from "./BasicColorUtil.js";
 
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { BasicColorUtil } from "./BasicColorUtil.js";
 
 export class BasicColor

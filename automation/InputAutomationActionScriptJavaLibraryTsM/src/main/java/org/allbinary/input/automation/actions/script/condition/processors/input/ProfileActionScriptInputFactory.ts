@@ -25,9 +25,26 @@ import { Node } from "../../../../../../../../../org/w3c/dom/Node.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { KeyboardActionScriptInputData } from "./KeyboardActionScriptInputData.js";
 
 import { MouseActionScriptInputData } from "./MouseActionScriptInputData.js";
+
+import { ProfileActionScriptInputInterface } from "./ProfileActionScriptInputInterface.js";
 
 export class ProfileActionScriptInputFactory
             extends Object

@@ -34,8 +34,21 @@ import { CommonPhoneStrings } from "../../../../../../org/allbinary/string/Commo
 
     
 
-import { Long } from "./Long.js";
 
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class Money
             extends Object
          {

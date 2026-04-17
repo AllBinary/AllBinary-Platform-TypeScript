@@ -31,6 +31,21 @@ import { MyFont } from "../../../../../../../org/allbinary/graphics/font/MyFont.
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class ScoreHudWidget extends NumberStringHud {
         
 public constructor (maxscore: number, location: number, direction: number, maxHeight: number, maxWidth: number, bufferZone: number, basicColor: BasicColor)                        

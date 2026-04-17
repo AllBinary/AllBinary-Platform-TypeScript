@@ -20,6 +20,25 @@ import { PlatformBitmapBase } from "../../../org/allbinary/platform/graphics/Pla
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { OpenGLBitmap } from "./OpenGLBitmap.js";
+
+import { Config } from "./Config.js";
+
 export class OpenGLBitmapFactory extends PlatformBitmapBaseFactory {
         
 

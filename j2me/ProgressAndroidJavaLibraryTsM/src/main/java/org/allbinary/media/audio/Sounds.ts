@@ -45,7 +45,24 @@ import { SmallIntegerSingletonFactory } from "../../../../org/allbinary/logic/ma
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { SoundStrings } from "./SoundStrings.js";
+
+import { SoundsFactoryInterface } from "./SoundsFactoryInterface.js";
 
 export class Sounds
             extends Object

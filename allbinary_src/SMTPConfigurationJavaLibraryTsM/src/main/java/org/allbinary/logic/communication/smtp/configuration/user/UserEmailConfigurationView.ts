@@ -55,12 +55,28 @@ import { NodeList } from "../../../../../../../org/w3c/dom/NodeList.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { UserEmailConfigurationInterface } from "./UserEmailConfigurationInterface.js";
+
 import { UserEmailConfigurationData } from "./UserEmailConfigurationData.js";
 
 export class UserEmailConfigurationView
             extends Object
-        
-                , DomNodeInterface {
+         implements DomNodeInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

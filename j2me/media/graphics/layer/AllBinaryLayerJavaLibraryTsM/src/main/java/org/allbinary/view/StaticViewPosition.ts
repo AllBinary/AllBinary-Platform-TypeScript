@@ -19,6 +19,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { ViewPosition } from "./ViewPosition.js";
+
 export class StaticViewPosition extends ViewPosition {
         
 public constructor (x: number, y: number, z: number)                        

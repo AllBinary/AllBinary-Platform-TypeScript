@@ -19,6 +19,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { GPoint } from "./GPoint.js";
+
 export class CustomGPoint extends GPoint {
         
 

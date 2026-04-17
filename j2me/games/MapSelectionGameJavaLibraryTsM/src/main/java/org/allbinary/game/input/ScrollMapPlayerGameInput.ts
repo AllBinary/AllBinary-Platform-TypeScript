@@ -58,6 +58,23 @@ import { BasicGeographicMap } from "../../../../org/allbinary/media/graphics/geo
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { PlayerGameInput } from "./PlayerGameInput.js";
+
 import { InputFactory } from "./InputFactory.js";
 
 import { GameInputProcessorUtil } from "./GameInputProcessorUtil.js";

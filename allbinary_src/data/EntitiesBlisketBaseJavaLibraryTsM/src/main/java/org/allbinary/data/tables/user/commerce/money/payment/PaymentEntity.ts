@@ -69,8 +69,22 @@ import { StringUtil } from "../../../../../../../../org/allbinary/logic/string/S
 
     
 
-export class PaymentEntity extends AbSqlBean
-                , PaymentEntityInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+export class PaymentEntity extends AbSqlBean implements PaymentEntityInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

@@ -25,10 +25,24 @@ import { AllBinaryEventObjectFactoryInterface } from "../../../../org/allbinary/
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class TerrainEventFactory
             extends Object
-        
-                , AllBinaryEventObjectFactoryInterface {
+         implements AllBinaryEventObjectFactoryInterface {
         
 public constructor (){
 

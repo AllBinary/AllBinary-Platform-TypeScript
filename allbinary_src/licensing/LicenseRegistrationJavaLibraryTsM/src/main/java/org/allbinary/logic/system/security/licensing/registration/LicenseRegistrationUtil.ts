@@ -37,10 +37,21 @@ import { CommonLabels } from "../../../../../../../org/allbinary/string/CommonLa
 
     
 
-import { RegistrationConfiguration } from "./RegistrationConfiguration.js";
 
-import { RegistrationConfiguration } from "./RegistrationConfiguration.js";
 
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { RegistrationConfiguration } from "./RegistrationConfiguration.js";
 
 export class LicenseRegistrationUtil

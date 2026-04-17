@@ -22,6 +22,25 @@ import { GL10 } from "../../../../../javax/microedition/khronos/opengles/GL10.js
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { OpenGLObject3dProcessor } from "./OpenGLObject3dProcessor.js";
+
+import { ShaderComposite } from "./ShaderComposite.js";
+
 export class UniformTextureOpenGLProcessor extends OpenGLObject3dProcessor {
         
 public constructor (shaderComposite: ShaderComposite, handleIndex: number){

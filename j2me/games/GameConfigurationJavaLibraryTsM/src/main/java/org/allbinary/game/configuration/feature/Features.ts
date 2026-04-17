@@ -49,6 +49,23 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { Feature } from "./Feature.js";
+
 import { GameFeatureFactory } from "./GameFeatureFactory.js";
 
 import { InputFeatureFactory } from "./InputFeatureFactory.js";
@@ -56,8 +73,6 @@ import { InputFeatureFactory } from "./InputFeatureFactory.js";
 import { SensorFeatureFactory } from "./SensorFeatureFactory.js";
 
 import { TouchFeatureFactory } from "./TouchFeatureFactory.js";
-
-import { MainFeatureFactory } from "./MainFeatureFactory.js";
 
 import { MainFeatureFactory } from "./MainFeatureFactory.js";
 

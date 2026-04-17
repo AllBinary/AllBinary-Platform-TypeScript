@@ -22,14 +22,24 @@ import { Debug } from "../../../android/os/Debug.js";
 
     
 
-import { Long } from "./Long.js";
 
-import { Long } from "./Long.js";
 
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class AndroidDebug
             extends Object
-        
-                , DebugInterface {
+         implements DebugInterface {
         
 
     private startTime: number = Long.MAX_VALUE;

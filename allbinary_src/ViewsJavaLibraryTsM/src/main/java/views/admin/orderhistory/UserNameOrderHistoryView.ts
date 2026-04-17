@@ -70,17 +70,22 @@ import { HttpStoreComponentView } from "../../../views/business/context/modules/
 
     
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
-export class UserNameOrderHistoryView extends HttpStoreComponentView
-                , ValidationComponentInterface
-                , DomNodeInterface {
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+export class UserNameOrderHistoryView extends HttpStoreComponentView implements ValidationComponentInterface, DomNodeInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

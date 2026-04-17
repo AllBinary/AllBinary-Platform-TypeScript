@@ -25,8 +25,24 @@ import { Orientation } from "../../../../../org/allbinary/logic/math/Orientation
 
     
 
-export class NoMagneticFieldSensor extends AllBinaryMagneticFieldSensor
-                , AllBinarySensorListener {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { AllBinaryMagneticFieldSensor } from "./AllBinaryMagneticFieldSensor.js";
+
+export class NoMagneticFieldSensor extends AllBinaryMagneticFieldSensor implements AllBinarySensorListener {
         
 
                 //@Throws(Error::class)

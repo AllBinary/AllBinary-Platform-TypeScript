@@ -55,12 +55,24 @@ import { StoreCustomizerComponentUtil } from "../../../../../../../../../views/b
 
     
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
-export class InsertTitleBodyValidationView extends TitleBodyCustomizerView
-                , ValidationComponentInterface {
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { TitleBodyCustomizerView } from "./TitleBodyCustomizerView.js";
+
+export class InsertTitleBodyValidationView extends TitleBodyCustomizerView implements ValidationComponentInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

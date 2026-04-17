@@ -28,6 +28,23 @@ import { AnimationBehaviorFactory } from "../../../../org/allbinary/animation/An
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { BaseImageAnimationFactory } from "./BaseImageAnimationFactory.js";
+
 export class RightToLeftImageAnimationFactory extends BaseImageAnimationFactory {
         
 public constructor (image: Image, dx: number, dy: number)                        

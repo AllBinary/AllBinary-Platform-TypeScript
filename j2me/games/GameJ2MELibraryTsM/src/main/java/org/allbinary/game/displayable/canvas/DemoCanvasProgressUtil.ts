@@ -31,6 +31,23 @@ import { PaintableInterface } from "../../../../../org/allbinary/graphics/paint/
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { DemoCanvas } from "./DemoCanvas.js";
+
 export class DemoCanvasProgressUtil
             extends Object
          {

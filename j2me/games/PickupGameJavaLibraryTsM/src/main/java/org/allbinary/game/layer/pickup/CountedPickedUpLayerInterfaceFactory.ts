@@ -37,14 +37,32 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { PickedUpLayerInterfaceFactory } from "./PickedUpLayerInterfaceFactory.js";
+
 import { PickedUpLayerTypeFactory } from "./PickedUpLayerTypeFactory.js";
 
 import { IconLayer } from "./IconLayer.js";
 
 import { CountedPickedUpLayerInterfaceFactoryPool } from "./CountedPickedUpLayerInterfaceFactoryPool.js";
 
-export class CountedPickedUpLayerInterfaceFactory extends PickedUpLayerInterfaceFactory
-                , CountedPickedUpLayerInterfaceFactoryInterface {
+import { PickedUpLayerType } from "./PickedUpLayerType.js";
+
+export class CountedPickedUpLayerInterfaceFactory extends PickedUpLayerInterfaceFactory implements CountedPickedUpLayerInterfaceFactoryInterface {
         
 
     public static readonly NULL_COUNTED_PICKUP_LAYER_FACTORY: CountedPickedUpLayerInterfaceFactory = new CountedPickedUpLayerInterfaceFactory(PickedUpLayerTypeFactory.getInstance()!.NONE, IconLayer.NULL_ICON_LAYER, NullAnimationFactory.getFactoryInstance()!.getInstance(0));

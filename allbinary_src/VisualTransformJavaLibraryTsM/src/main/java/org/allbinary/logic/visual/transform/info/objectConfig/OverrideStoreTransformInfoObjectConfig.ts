@@ -28,6 +28,23 @@ import { Document } from "../../../../../../../org/w3c/dom/Document.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { GenericStoreTransformInfoObjectConfig } from "./GenericStoreTransformInfoObjectConfig.js";
+
 export class OverrideStoreTransformInfoObjectConfig extends GenericStoreTransformInfoObjectConfig {
         
 public constructor (abeClientInformation: Object, transformInfoInterface: Object)                        

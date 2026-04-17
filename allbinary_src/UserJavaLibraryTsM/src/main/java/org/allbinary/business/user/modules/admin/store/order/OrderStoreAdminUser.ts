@@ -28,6 +28,21 @@ import { WeblisketSessionInterface } from "../../../../../../../../org/allbinary
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class OrderStoreAdminUser extends User {
         
 public constructor ()                        

@@ -19,6 +19,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { AllBinaryEventObject } from "./AllBinaryEventObject.js";
+
 export interface AllBinaryEventObjectFactoryInterface {
         
 

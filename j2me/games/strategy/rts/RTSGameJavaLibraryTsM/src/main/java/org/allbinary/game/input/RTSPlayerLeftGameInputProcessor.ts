@@ -25,6 +25,25 @@ import { AllBinaryLayerManager } from "../../../../org/allbinary/layer/AllBinary
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { RTSPlayerGameInputProcessor } from "./RTSPlayerGameInputProcessor.js";
+
+import { RTSPlayerGameInput } from "./RTSPlayerGameInput.js";
+
 export class RTSPlayerLeftGameInputProcessor extends RTSPlayerGameInputProcessor {
         
 public constructor (rtsPlayerGameInput: RTSPlayerGameInput)                        

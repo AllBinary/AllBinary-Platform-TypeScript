@@ -115,76 +115,26 @@ import { Document } from "../../../../../../org/w3c/dom/Document.js";
 
     
 
-import { StoreFrontData } from "./StoreFrontData.js";
 
-import { StoreFrontData } from "./StoreFrontData.js";
 
-import { StoreFrontData } from "./StoreFrontData.js";
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
+        
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
-
-import { Boolean } from "./Boolean.js";
-
-import { Boolean } from "./Boolean.js";
-
-import { Boolean } from "./Boolean.js";
-
-import { Boolean } from "./Boolean.js";
-
-import { Boolean } from "./Boolean.js";
-
-import { Boolean } from "./Boolean.js";
-
-import { Boolean } from "./Boolean.js";
-
-import { Boolean } from "./Boolean.js";
-
-import { Boolean } from "./Boolean.js";
-
-import { Boolean } from "./Boolean.js";
-
-import { Boolean } from "./Boolean.js";
-
-import { Boolean } from "./Boolean.js";
-
-import { Boolean } from "./Boolean.js";
-
-import { Boolean } from "./Boolean.js";
-
-import { Boolean } from "./Boolean.js";
-
-import { Boolean } from "./Boolean.js";
-
-import { Boolean } from "./Boolean.js";
-
-import { Boolean } from "./Boolean.js";
-
-import { Boolean } from "./Boolean.js";
-
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { StoreFrontData } from "./StoreFrontData.js";
 
 export class StoreFront
             extends Object
-        
-                , StoreFrontInterface {
+         implements StoreFrontInterface {
         
 
     private static readonly RESOURCES: string = " Resources" +AbPathData.getInstance()!.SEPARATOR;

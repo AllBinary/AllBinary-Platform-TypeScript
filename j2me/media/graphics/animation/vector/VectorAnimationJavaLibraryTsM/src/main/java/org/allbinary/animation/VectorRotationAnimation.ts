@@ -37,6 +37,25 @@ import { FrameUtil } from "../../../org/allbinary/math/FrameUtil.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { VectorBaseRotationAnimation } from "./VectorBaseRotationAnimation.js";
+
+import { AnimationBehavior } from "./AnimationBehavior.js";
+
 export class VectorRotationAnimation extends VectorBaseRotationAnimation {
         
 public constructor (currentPoints: number[][][], basicColor: BasicColor, animationBehavior: AnimationBehavior)                        

@@ -28,6 +28,23 @@ import { AllBinaryEventCircularPool } from "../../../../../../org/allbinary/logi
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { DestroyedEvent } from "./DestroyedEvent.js";
+
 export class DestroyEventCircularStaticPool
             extends Object
          {

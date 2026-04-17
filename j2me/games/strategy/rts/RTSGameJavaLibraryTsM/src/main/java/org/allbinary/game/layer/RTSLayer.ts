@@ -151,18 +151,38 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { RTSLayer2LogHelper } from "./RTSLayer2LogHelper.js";
 
 import { GeographicMapCellPositionAreaBase } from "./GeographicMapCellPositionAreaBase.js";
 
+import { AllBinaryGameLayerManager } from "./AllBinaryGameLayerManager.js";
+
+import { RTSPlayerLayerInterface } from "./RTSPlayerLayerInterface.js";
+
 import { RTSLayerUtil } from "./RTSLayerUtil.js";
 
-export class RTSLayer extends MultiPlayerGameLayer
-                , TickableInterface
-                , GameInputInterface
-                , GameKeyEventSourceInterface
-                , RTSInterface
-                , PathFindingLayerInterface {
+import { PathFindingLayerInterface } from "./PathFindingLayerInterface.js";
+
+import { SelectionHudPaintable } from "./SelectionHudPaintable.js";
+
+import { WaypointBehaviorBase } from "./WaypointBehaviorBase.js";
+
+export class RTSLayer extends MultiPlayerGameLayer implements TickableInterface, GameInputInterface, GameKeyEventSourceInterface, RTSInterface, PathFindingLayerInterface {
         
 
     private static readonly id: number = 0;

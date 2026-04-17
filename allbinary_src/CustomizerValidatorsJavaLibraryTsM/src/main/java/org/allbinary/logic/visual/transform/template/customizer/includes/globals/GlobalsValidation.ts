@@ -49,14 +49,24 @@ import { Node } from "../../../../../../../../../org/w3c/dom/Node.js";
 
     
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { GlobalsData } from "./GlobalsData.js";
 
-export class GlobalsValidation extends Validation
-                , DomNodeInterface {
+export class GlobalsValidation extends Validation implements DomNodeInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

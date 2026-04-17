@@ -37,7 +37,22 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
     
 
-import { NoPlayer } from "./NoPlayer.js";
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { SoundsFactoryInterface } from "./SoundsFactoryInterface.js";
 
 import { NoPlayer } from "./NoPlayer.js";
 

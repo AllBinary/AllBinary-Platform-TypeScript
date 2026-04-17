@@ -28,6 +28,23 @@ import { TransformInfoObjectConfigNoManipulationFactory } from "../../../../../.
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { TransformInfoHttpStore } from "./TransformInfoHttpStore.js";
+
 export class TransformInfoHttpStoreNoManipulation extends TransformInfoHttpStore {
         
 public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext)                        

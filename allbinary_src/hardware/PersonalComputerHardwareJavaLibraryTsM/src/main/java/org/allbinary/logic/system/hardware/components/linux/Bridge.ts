@@ -25,11 +25,24 @@ import { HardwareComponentInterface } from "../../../../../../../org/allbinary/l
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class Bridge
             extends Object
-        
-                , HardwareComponentInterface
-                , BridgeInterface {
+         implements HardwareComponentInterface, BridgeInterface {
         
 
     private data: string

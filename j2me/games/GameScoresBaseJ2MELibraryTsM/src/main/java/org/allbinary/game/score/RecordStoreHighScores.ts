@@ -85,6 +85,25 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { HighScores } from "./HighScores.js";
+
+import { HighScore } from "./HighScore.js";
+
 export class RecordStoreHighScores extends HighScores {
         
 

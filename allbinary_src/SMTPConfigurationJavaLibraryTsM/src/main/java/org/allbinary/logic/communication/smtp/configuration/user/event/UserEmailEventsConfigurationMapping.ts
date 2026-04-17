@@ -28,12 +28,28 @@ import { TableMappingInterface } from "../../../../../../../../org/allbinary/dat
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { UserEmailEventsConfigurationInterface } from "./UserEmailEventsConfigurationInterface.js";
+
 import { UserEmailEventsConfigurationData } from "./UserEmailEventsConfigurationData.js";
 
 export class UserEmailEventsConfigurationMapping
             extends Object
-        
-                , TableMappingInterface {
+         implements TableMappingInterface {
         
 
     private userEmailEventsConfigurationInterface: UserEmailEventsConfigurationInterface

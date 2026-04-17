@@ -31,14 +31,26 @@ import { AdvertisementSearchInterface } from "../../../../../org/allbinary/busin
 
     
 
-import { AdvertisementCampaignData } from "./AdvertisementCampaignData.js";
 
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { AdvertisementCampaignData } from "./AdvertisementCampaignData.js";
 
 export class AdvertisementCampaign
             extends Object
-        
-                , AdvertisementCampaignInterface {
+         implements AdvertisementCampaignInterface {
         
 
     private hashMap: HashMap<any, any>

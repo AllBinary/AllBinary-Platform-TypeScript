@@ -28,11 +28,24 @@ import { MachineAccessControlAddressInterface } from "../../../../../../../org/a
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class MachineAccessControlAddress
             extends Object
-        
-                , HardwareComponentInterface
-                , MachineAccessControlAddressInterface {
+         implements HardwareComponentInterface, MachineAccessControlAddressInterface {
         
 public constructor (){
 

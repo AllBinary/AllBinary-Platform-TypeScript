@@ -46,6 +46,23 @@ import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { BasicPlayer } from "./BasicPlayer.js";
+
 export class AndroidMediaPlayerWrapper extends BasicPlayer {
         
 

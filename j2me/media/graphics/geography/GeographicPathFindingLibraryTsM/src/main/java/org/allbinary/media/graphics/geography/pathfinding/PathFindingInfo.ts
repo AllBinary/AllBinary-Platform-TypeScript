@@ -25,14 +25,30 @@ import { BasicArrayListUtil } from "../../../../../../org/allbinary/util/BasicAr
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { PathFindingNodeCostInfoFactoryBase } from "./PathFindingNodeCostInfoFactoryBase.js";
 
 import { GeographicPathFinderBase } from "./GeographicPathFinderBase.js";
 
+import { PathFindingNode } from "./PathFindingNode.js";
+
 export class PathFindingInfo
             extends Object
-        
-                , PathFindingInfoInterface {
+         implements PathFindingInfoInterface {
         
 
     public static readonly NULL_PATH_FINDING_INFO: PathFindingInfo = new PathFindingInfo(PathFindingNodeCostInfoFactoryBase.NULL_PATH_FINDING_NODE_COST_INFO_FACTORY_BASE, BasicArrayListUtil.getInstance()!.getImmutableInstance(), BasicArrayListUtil.getInstance()!.getImmutableInstance());

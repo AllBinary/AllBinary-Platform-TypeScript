@@ -48,7 +48,26 @@ import { PixelDeltaFactory } from "../../../../../org/allbinary/media/image/comp
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { ImageComparatorConstraintsInterface } from "./ImageComparatorConstraintsInterface.js";
+
 import { Math } from "./Math.js";
+
+import { ImageComparisonResult } from "./ImageComparisonResult.js";
 
 export class ImageComparator
             extends Object

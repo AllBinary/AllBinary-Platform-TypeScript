@@ -31,7 +31,24 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { LogFormatUtil } from "./LogFormatUtil.js";
+
+import { Log } from "./Log.js";
 
 /*actual*/ export class LogUtil
             extends Object

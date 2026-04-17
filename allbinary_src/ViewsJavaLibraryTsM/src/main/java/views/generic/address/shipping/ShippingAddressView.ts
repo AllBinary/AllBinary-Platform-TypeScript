@@ -52,8 +52,22 @@ import { StatesView } from "../../../../views/generic/address/StatesView.js";
 
     
 
-export class ShippingAddressView extends HttpStoreComponentView
-                , DomNodeInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+export class ShippingAddressView extends HttpStoreComponentView implements DomNodeInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

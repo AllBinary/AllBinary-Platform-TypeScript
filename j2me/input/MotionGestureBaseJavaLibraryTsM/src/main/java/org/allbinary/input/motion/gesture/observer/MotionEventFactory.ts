@@ -37,10 +37,24 @@ import { AllBinaryEventObjectFactoryInterface } from "../../../../../../org/allb
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class MotionEventFactory
             extends Object
-        
-                , AllBinaryEventObjectFactoryInterface {
+         implements AllBinaryEventObjectFactoryInterface {
         
 
     private index: number = 0;

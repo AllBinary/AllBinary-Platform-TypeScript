@@ -28,10 +28,24 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class GeographicMapCellPositionAreaBase
             extends Object
-        
-                , GeographicMapCellPositionAreaInterface {
+         implements GeographicMapCellPositionAreaInterface {
         
 
     public static readonly NULL_GEOGRPAHIC_MAP_POSITION_AREA_BASE: GeographicMapCellPositionAreaBase = new GeographicMapCellPositionAreaBase();

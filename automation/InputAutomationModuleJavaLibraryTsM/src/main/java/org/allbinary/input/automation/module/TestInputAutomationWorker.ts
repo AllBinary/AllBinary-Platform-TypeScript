@@ -37,6 +37,21 @@ import { TestInputForMotionRectanglesResultsWorker } from "../../../../../org/al
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class TestInputAutomationWorker
             extends Object
          {

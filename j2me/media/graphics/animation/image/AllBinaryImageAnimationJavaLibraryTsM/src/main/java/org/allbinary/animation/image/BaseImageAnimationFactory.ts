@@ -52,10 +52,26 @@ import { CommonSeps } from "../../../../org/allbinary/string/CommonSeps.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { AnimationFactoryInitializationVisitor } from "./AnimationFactoryInitializationVisitor.js";
+
 export class BaseImageAnimationFactory
             extends Object
-        
-                , AnimationInterfaceFactoryInterface {
+         implements AnimationInterfaceFactoryInterface {
         
 
     readonly animationFactoryImageScaleUtil: AnimationFactoryImageScaleUtil = AnimationFactoryImageScaleUtil.getInstance()!;

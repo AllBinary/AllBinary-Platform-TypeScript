@@ -52,14 +52,30 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { GameFeatureFactory } from "./GameFeatureFactory.js";
+
+import { GameFeature } from "./GameFeature.js";
 
 import { GameFeatureUtil } from "./GameFeatureUtil.js";
 
 export class GameFeatureItemStateListener
             extends Object
-        
-                , ItemStateListener {
+         implements ItemStateListener {
         
 
     private toggleList: BasicArrayList = new BasicArrayList();

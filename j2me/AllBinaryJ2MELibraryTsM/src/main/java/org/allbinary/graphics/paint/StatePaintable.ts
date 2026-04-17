@@ -22,8 +22,24 @@ import { StateControlledInterface } from "../../../../org/allbinary/graphics/dis
 
     
 
-export class StatePaintable extends Paintable
-                , StateControlledInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { Paintable } from "./Paintable.js";
+
+export class StatePaintable extends Paintable implements StateControlledInterface {
         
 public constructor (){
 

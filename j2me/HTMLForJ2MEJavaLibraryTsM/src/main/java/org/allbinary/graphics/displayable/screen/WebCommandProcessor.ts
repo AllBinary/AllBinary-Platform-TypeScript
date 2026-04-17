@@ -40,6 +40,21 @@ import { PlayN } from "../../../../../playn/core/PlayN.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { AboutCommandProcessor } from "./AboutCommandProcessor.js";
 
 export class WebCommandProcessor

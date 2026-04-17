@@ -88,8 +88,22 @@ import { HttpStoreComponentView } from "../../../views/business/context/modules/
 
     
 
-export class InventoryItemView extends HttpStoreComponentView
-                , RequestMapInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+export class InventoryItemView extends HttpStoreComponentView implements RequestMapInterface {
         
 
     public TYPE_ID: number = 10;

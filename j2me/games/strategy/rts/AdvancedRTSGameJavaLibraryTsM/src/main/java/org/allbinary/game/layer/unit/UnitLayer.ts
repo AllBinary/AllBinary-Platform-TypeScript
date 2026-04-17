@@ -348,13 +348,26 @@ import { ExplosionBasicSound } from "../../../../../org/allbinary/weapon/media/a
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { Math } from "./Math.js";
 
-import { Math } from "./Math.js";
+import { UnitWaypointBehavior } from "./UnitWaypointBehavior.js";
 
-export class UnitLayer extends AdvancedRTSGameLayer
-                , BuildingEventListenerInterface
-                , TrackingEventListenerInterface {
+export class UnitLayer extends AdvancedRTSGameLayer implements BuildingEventListenerInterface, TrackingEventListenerInterface {
         
 
     private static readonly partialPositionList: BasicArrayList = new BasicArrayList(4);

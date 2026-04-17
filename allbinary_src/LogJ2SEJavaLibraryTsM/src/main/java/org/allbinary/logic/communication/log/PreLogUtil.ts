@@ -25,8 +25,21 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
     
 
-import { LogFormatUtil } from "./LogFormatUtil.js";
 
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { LogFormatUtil } from "./LogFormatUtil.js";
 
 /*actual*/ export class PreLogUtil

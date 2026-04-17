@@ -34,6 +34,21 @@ import { MidletExitProcessor } from "../../../org/allbinary/midlet/MidletExitPro
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class MidletExitProcessorFactory
             extends Object
          {

@@ -52,8 +52,22 @@ import { Node } from "../../../../../org/w3c/dom/Node.js";
 
     
 
-export class StoreCategoryFactory extends CategoryAbstractFactory
-                , CategoryFactoryInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+export class StoreCategoryFactory extends CategoryAbstractFactory implements CategoryFactoryInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

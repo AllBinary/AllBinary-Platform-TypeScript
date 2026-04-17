@@ -46,8 +46,22 @@ import { StringMaker } from "../../../../../../../../../org/allbinary/logic/stri
 
     
 
-export class PermissionItemsEntity extends AbSqlBean
-                , PermissionItemsEntityInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+export class PermissionItemsEntity extends AbSqlBean implements PermissionItemsEntityInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

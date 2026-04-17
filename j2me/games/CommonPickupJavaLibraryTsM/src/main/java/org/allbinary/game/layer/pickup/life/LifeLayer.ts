@@ -40,8 +40,22 @@ import { ViewPosition } from "../../../../../../org/allbinary/view/ViewPosition.
 
     
 
-export class LifeLayer extends AllBinaryLayer
-                , LifeVisitorInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+export class LifeLayer extends AllBinaryLayer implements LifeVisitorInterface {
         
 public constructor ()                        
 

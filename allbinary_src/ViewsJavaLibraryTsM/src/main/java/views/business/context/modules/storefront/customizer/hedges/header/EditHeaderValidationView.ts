@@ -43,10 +43,24 @@ import { CustomizerUtil } from "../../../../../../../../views/business/context/m
 
     
 
-import { Boolean } from "./Boolean.js";
 
-export class EditHeaderValidationView extends TopBarView
-                , ValidationComponentInterface {
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { TopBarView } from "./TopBarView.js";
+
+export class EditHeaderValidationView extends TopBarView implements ValidationComponentInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

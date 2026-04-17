@@ -22,12 +22,26 @@ import { RTSInterface } from "../../../../../org/allbinary/game/layer/RTSInterfa
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { UnitTechnologySingletonFactory } from "./UnitTechnologySingletonFactory.js";
 
 export class SpeedTechnology
             extends Object
-        
-                , RTSInterface {
+         implements RTSInterface {
         
 
     private level: number= 0

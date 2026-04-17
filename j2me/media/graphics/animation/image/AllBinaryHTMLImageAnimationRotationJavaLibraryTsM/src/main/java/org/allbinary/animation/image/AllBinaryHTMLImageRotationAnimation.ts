@@ -55,6 +55,23 @@ import { CanvasSurface } from "../../../../playn/core/CanvasSurface.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { ImageBaseRotationAnimation } from "./ImageBaseRotationAnimation.js";
+
 import { AlphaBaseProcessor } from "./AlphaBaseProcessor.js";
 
 import { AlphaProcessor } from "./AlphaProcessor.js";

@@ -25,10 +25,24 @@ import { CacheableInterfaceFactoryInterface } from "../../../../org/allbinary/lo
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class ColorCacheableFactory
             extends Object
-        
-                , CacheableInterfaceFactoryInterface {
+         implements CacheableInterfaceFactoryInterface {
         
 public constructor (){
 

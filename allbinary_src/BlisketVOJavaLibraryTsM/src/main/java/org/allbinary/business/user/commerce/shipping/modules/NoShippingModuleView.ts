@@ -34,8 +34,26 @@ import { Node } from "../../../../../../../org/w3c/dom/Node.js";
 
     
 
-export class NoShippingModuleView extends NoShippingModule
-                , DomNodeInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { NoShippingModule } from "./NoShippingModule.js";
+
+import { Document } from "./Document.js";
+
+export class NoShippingModuleView extends NoShippingModule implements DomNodeInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

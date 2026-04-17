@@ -43,6 +43,23 @@ import { Node } from "../../../../../../../org/w3c/dom/Node.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { OrderItemInterface } from "./OrderItemInterface.js";
+
 import { ItemData } from "./ItemData.js";
 
 export class ItemView

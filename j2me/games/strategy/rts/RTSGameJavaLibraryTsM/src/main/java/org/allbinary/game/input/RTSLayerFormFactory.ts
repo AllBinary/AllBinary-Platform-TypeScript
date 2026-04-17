@@ -25,10 +25,24 @@ import { ScrollSelectionForm } from "../../../../org/allbinary/graphics/form/Scr
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class RTSLayerFormFactory
             extends Object
-        
-                , RTSLayerFormFactoryInterface {
+         implements RTSLayerFormFactoryInterface {
         
 
     public getInstance(rtsLayer: RTSLayer): ScrollSelectionForm{

@@ -19,6 +19,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { Exception } from "./Exception.js";
+
 export class MoneyException extends Error {
         
 public constructor (){

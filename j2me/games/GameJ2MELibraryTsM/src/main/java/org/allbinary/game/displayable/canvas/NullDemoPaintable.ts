@@ -19,10 +19,24 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class NullDemoPaintable
             extends Object
-        
-                , DemoPaintableInterface {
+         implements DemoPaintableInterface {
         
 
     public static readonly NULL_DEMO_PAINTABLE: NullDemoPaintable = new NullDemoPaintable();

@@ -37,6 +37,21 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { AboutCommandProcessor } from "./AboutCommandProcessor.js";
 
 export class WebCommandProcessor

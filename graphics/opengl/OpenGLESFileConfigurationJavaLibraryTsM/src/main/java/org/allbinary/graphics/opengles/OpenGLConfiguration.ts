@@ -73,23 +73,24 @@ import { NullCloseable } from "../../../../org/allbinary/logic/io/NullCloseable.
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { OpenGLFeatureFactory } from "./OpenGLFeatureFactory.js";
 
-import { OpenGLFeatureFactory } from "./OpenGLFeatureFactory.js";
-
-import { OpenGLFeatureFactory } from "./OpenGLFeatureFactory.js";
-
-import { OpenGLFeatureFactory } from "./OpenGLFeatureFactory.js";
-
-import { OpenGLFeatureFactory } from "./OpenGLFeatureFactory.js";
-
-import { OpenGLFeatureFactory } from "./OpenGLFeatureFactory.js";
-
-import { OpenGLFeatureFactory } from "./OpenGLFeatureFactory.js";
-
-import { OpenGLFeatureFactory } from "./OpenGLFeatureFactory.js";
-
-import { OpenGLFeatureFactory } from "./OpenGLFeatureFactory.js";
+import { OpenGLFeature } from "./OpenGLFeature.js";
 
 export class OpenGLConfiguration
             extends Object

@@ -67,18 +67,24 @@ import { Node } from "../../../../org/w3c/dom/Node.js";
 
     
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
-export class DeleteFileValidationView extends DownloadableInventoryItemView
-                , ValidationComponentInterface {
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { DownloadableInventoryItemView } from "./DownloadableInventoryItemView.js";
+
+export class DeleteFileValidationView extends DownloadableInventoryItemView implements ValidationComponentInterface {
         
 
     private downloadItemId: string

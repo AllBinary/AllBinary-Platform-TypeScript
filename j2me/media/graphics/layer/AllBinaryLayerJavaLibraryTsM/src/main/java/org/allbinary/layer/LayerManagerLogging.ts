@@ -36,6 +36,27 @@ import { CommonSeps } from "../../../org/allbinary/string/CommonSeps.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { LayerManagerLoggingBase } from "./LayerManagerLoggingBase.js";
+
+import { AllBinaryLayer } from "./AllBinaryLayer.js";
+
+import { LayerManager } from "./LayerManager.js";
+
 export class LayerManagerLogging extends LayerManagerLoggingBase {
         
 

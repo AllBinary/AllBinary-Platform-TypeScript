@@ -19,10 +19,24 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class BaseServiceReference
             extends Object
-        
-                , ServiceReference {
+         implements ServiceReference {
         
 
     public getProperty(key: string): any{

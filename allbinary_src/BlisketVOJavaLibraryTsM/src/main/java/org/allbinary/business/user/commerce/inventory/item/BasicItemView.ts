@@ -49,16 +49,28 @@ import { Node } from "../../../../../../../org/w3c/dom/Node.js";
 
     
 
-import { BasicItemData } from "./BasicItemData.js";
 
-import { BasicItemData } from "./BasicItemData.js";
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { ItemInterface } from "./ItemInterface.js";
 
 import { BasicItemData } from "./BasicItemData.js";
 
 export class BasicItemView
             extends Object
-        
-                , DomNodeInterface {
+         implements DomNodeInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

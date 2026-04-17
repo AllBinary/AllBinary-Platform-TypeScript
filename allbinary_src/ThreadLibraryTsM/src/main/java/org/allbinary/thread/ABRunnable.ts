@@ -19,10 +19,24 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class ABRunnable
             extends Object
-        
-                , RunnableInterface {
+         implements RunnableInterface {
         
 
     private running: boolean = false;

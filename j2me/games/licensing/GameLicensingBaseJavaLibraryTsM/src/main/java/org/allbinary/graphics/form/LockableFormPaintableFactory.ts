@@ -19,6 +19,27 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { ItemPaintableFactory } from "./ItemPaintableFactory.js";
+
+import { ItemPaintable } from "./ItemPaintable.js";
+
+import { PaintableForm } from "./PaintableForm.js";
+
 export class LockableFormPaintableFactory extends ItemPaintableFactory {
         
 

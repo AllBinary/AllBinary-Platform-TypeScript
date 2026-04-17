@@ -25,6 +25,21 @@ import { FrictionData } from "../../../../../org/allbinary/game/physics/friction
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class CharacterFrictionProperties extends FrictionProperties {
         
 

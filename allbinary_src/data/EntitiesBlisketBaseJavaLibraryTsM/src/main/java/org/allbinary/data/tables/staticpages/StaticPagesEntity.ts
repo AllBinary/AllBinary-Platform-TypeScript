@@ -49,8 +49,22 @@ import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
 
     
 
-export class StaticPagesEntity extends AbSqlBean
-                , StaticPagesEntityInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+export class StaticPagesEntity extends AbSqlBean implements StaticPagesEntityInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

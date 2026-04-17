@@ -42,6 +42,23 @@ import { StoreTagWorkFlowHelperFactory } from "../taghelpers/StoreTagWorkFlowHel
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { HelperTag } from "./HelperTag.js";
+
 export class StoreWorkFlowTag extends HelperTag {
         
 

@@ -52,10 +52,24 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class BaseResourceAnimationInterfaceFactoryInterfaceFactory
             extends Object
-        
-                , FeatureResourceAnimationInterfaceFactoryInterface {
+         implements FeatureResourceAnimationInterfaceFactoryInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

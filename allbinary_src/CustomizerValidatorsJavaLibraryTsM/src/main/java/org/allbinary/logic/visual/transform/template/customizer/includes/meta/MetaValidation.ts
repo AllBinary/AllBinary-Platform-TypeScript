@@ -55,12 +55,22 @@ import { Node } from "../../../../../../../../../org/w3c/dom/Node.js";
 
     
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
-export class MetaValidation extends Validation
-                , DomNodeInterface {
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+export class MetaValidation extends Validation implements DomNodeInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

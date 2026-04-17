@@ -25,6 +25,23 @@ import { EventListenerInterface } from "../../../../../org/allbinary/logic/util/
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { DownKeyEventHandlerBase } from "./DownKeyEventHandlerBase.js";
+
 export class DownKeyEventHandler extends DownKeyEventHandlerBase {
         
 

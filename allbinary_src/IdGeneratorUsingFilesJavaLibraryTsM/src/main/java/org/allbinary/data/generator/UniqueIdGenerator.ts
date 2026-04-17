@@ -49,10 +49,24 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class UniqueIdGenerator
             extends Object
-        
-                , IdGeneratorInterface {
+         implements IdGeneratorInterface {
         
 
     public static readonly EXT: string = ".unq";

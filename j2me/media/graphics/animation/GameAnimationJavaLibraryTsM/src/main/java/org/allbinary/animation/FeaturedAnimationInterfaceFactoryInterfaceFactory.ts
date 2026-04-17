@@ -49,7 +49,28 @@ import { BasicArrayList } from "../../../org/allbinary/util/BasicArrayList.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { ProceduralAnimationInterfaceFactoryInterface } from "./ProceduralAnimationInterfaceFactoryInterface.js";
+
+import { AnimationInterfaceFactoryInterface } from "./AnimationInterfaceFactoryInterface.js";
+
 import { NullAnimationFactory } from "./NullAnimationFactory.js";
+
+import { BasicAnimationInterfaceFactoryInterface } from "./BasicAnimationInterfaceFactoryInterface.js";
 
 export class FeaturedAnimationInterfaceFactoryInterfaceFactory extends FeaturedResourceFactory {
         

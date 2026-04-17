@@ -28,7 +28,24 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { GraphicItemFactory } from "./GraphicItemFactory.js";
+
+import { GraphicsItemInterfaceFactoryInterface } from "./GraphicsItemInterfaceFactoryInterface.js";
 
 export class ToolFactory
             extends Object

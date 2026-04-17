@@ -40,8 +40,22 @@ import { HttpStoreComponentView } from "../../../../../../../../views/business/c
 
     
 
-export class TopBarView extends HttpStoreComponentView
-                , DomNodeInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+export class TopBarView extends HttpStoreComponentView implements DomNodeInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

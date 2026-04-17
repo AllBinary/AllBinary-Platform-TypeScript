@@ -28,6 +28,23 @@ import { HtmlTag } from "../../../../../../../org/allbinary/logic/visual/dhtml/h
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { HtmlCell } from "./HtmlCell.js";
+
 export class HtmlRow extends HtmlTag {
         
 

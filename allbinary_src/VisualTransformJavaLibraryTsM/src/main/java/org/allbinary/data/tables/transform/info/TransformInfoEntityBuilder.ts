@@ -28,7 +28,24 @@ import { TransformInfoObjectConfigGeneratorFactory } from "../../../../../../org
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { TransformInfoEntityFactory } from "./TransformInfoEntityFactory.js";
+
+import { TransformInfoEntity } from "./TransformInfoEntity.js";
 
 export class TransformInfoEntityBuilder
             extends Object

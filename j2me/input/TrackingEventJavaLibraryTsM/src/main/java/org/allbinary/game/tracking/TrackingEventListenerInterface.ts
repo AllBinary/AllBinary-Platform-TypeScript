@@ -22,6 +22,23 @@ import { EventListenerInterface } from "../../../../org/allbinary/logic/util/eve
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { TrackingEvent } from "./TrackingEvent.js";
+
 export interface TrackingEventListenerInterface extends EventListenerInterface {
         
 

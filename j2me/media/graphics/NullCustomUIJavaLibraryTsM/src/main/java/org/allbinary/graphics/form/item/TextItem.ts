@@ -11,10 +11,26 @@ import { BasicColor } from "../../../../../org/allbinary/graphics/color/BasicCol
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { CustomCustomItem } from "./CustomCustomItem.js";
+
 import { StringComponent } from "./StringComponent.js";
 
-export class TextItem extends CustomCustomItem
-                , CustomItemInterface {
+export class TextItem extends CustomCustomItem implements CustomItemInterface {
         
 public constructor (label: string, layout: number, altText: string, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor)                        
 

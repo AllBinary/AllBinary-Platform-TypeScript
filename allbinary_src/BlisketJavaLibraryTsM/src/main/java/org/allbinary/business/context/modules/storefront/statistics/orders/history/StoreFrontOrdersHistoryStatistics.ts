@@ -40,12 +40,26 @@ import { OrderHistoryEntityInterface } from "../../../../../../../../../org/allb
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { StoreFrontOrdersHistoryStatisticsData } from "./StoreFrontOrdersHistoryStatisticsData.js";
 
 export class StoreFrontOrdersHistoryStatistics
             extends Object
-        
-                , StoreFrontOrdersHistoryStatisticsInterface {
+         implements StoreFrontOrdersHistoryStatisticsInterface {
         
 
     private numberOfOrdersLong: Long

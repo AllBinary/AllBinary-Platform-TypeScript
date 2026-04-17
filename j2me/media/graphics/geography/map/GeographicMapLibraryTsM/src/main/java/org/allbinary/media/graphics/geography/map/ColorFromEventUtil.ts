@@ -28,6 +28,21 @@ import { BasicColorFactory } from "../../../../../../org/allbinary/graphics/colo
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class ColorFromEventUtil
             extends Object
          {

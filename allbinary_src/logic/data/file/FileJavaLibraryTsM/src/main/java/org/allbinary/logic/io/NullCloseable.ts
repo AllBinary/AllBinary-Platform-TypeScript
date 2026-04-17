@@ -25,10 +25,24 @@ import { IOException } from "../../../../java/io/IOException.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class NullCloseable
             extends Object
-        
-                , Closeable {
+         implements Closeable {
         
 
     public static readonly NULL_CLOSEABLE: NullCloseable = new NullCloseable();

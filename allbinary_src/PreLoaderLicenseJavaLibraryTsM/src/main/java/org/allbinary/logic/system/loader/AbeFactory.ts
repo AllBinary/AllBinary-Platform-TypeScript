@@ -43,9 +43,24 @@ import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { WebappClassLoaderInfo } from "./WebappClassLoaderInfo.js";
 
-import { WebappClassLoaderInfo } from "./WebappClassLoaderInfo.js";
+import { Class } from "./Class.js";
 
 export class AbeFactory
             extends Object

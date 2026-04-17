@@ -19,6 +19,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { TouchButtonResource } from "./TouchButtonResource.js";
+
 export class TouchButtonTurnRightResource extends TouchButtonResource {
         
 

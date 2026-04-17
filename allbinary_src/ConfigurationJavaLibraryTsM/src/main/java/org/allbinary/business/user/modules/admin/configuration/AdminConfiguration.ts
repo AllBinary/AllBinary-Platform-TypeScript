@@ -55,14 +55,26 @@ import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonS
 
     
 
-import { AdminConfigurationData } from "./AdminConfigurationData.js";
 
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { AdminConfigurationData } from "./AdminConfigurationData.js";
 
 export class AdminConfiguration
             extends Object
-        
-                , AdminConfigurationInterface {
+         implements AdminConfigurationInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

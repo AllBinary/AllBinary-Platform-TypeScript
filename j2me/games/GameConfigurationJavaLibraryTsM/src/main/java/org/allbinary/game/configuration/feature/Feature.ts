@@ -25,6 +25,21 @@ import { ChangedGameFeatureListener } from "../../../../../org/allbinary/game/co
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class Feature
             extends Object
          {

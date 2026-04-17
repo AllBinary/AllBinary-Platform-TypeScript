@@ -19,10 +19,24 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class BasicAdvertisementCategory
             extends Object
-        
-                , AdvertisementCategoryInterface {
+         implements AdvertisementCategoryInterface {
         
 
     private categoryId: string

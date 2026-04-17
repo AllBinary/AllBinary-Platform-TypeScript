@@ -22,10 +22,24 @@ import { InputAutomationModuleFactoryInterface } from "../../../../org/allbinary
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class InputAutomationModuleService
             extends Object
-        
-                , InputAutomationModuleServiceInterface {
+         implements InputAutomationModuleServiceInterface {
         
 
     private inputAutomationModuleInterfaceArray: InputAutomationModuleFactoryInterface[]

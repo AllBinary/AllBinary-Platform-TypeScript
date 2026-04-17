@@ -31,8 +31,26 @@ import { CommonLabels } from "../../../../../../org/allbinary/string/CommonLabel
 
     
 
-export class PathFindingNodeCost extends PathFindingNode
-                , Comparable<PathFindingNodeCost> {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { PathFindingNode } from "./PathFindingNode.js";
+
+import { PathFindingNodeCostInfo } from "./PathFindingNodeCostInfo.js";
+
+export class PathFindingNodeCost extends PathFindingNode implements Comparable<PathFindingNodeCost> {
         
 
     public static readonly NULL_PATH_FINDING_NODE_COST_ARRAY_ARRAY: PathFindingNodeCost[][] = Array(0) { arrayOfNulls<PathFindingNodeCost?>(0) }

@@ -22,6 +22,23 @@ import { PreLogUtil } from "../../../../../org/allbinary/logic/communication/log
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { DbConnectionInfo } from "./DbConnectionInfo.js";
+
 export class DbInitInfo extends DbConnectionInfo {
         
 public constructor (initFileName: string, read: boolean)                        

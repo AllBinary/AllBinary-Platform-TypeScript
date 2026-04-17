@@ -34,7 +34,24 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
     
 
-import { Short } from "./Short.js";
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { JPanel } from "./JPanel.js";
+
+import { Graphics } from "./Graphics.js";
 
 import { Short } from "./Short.js";
 

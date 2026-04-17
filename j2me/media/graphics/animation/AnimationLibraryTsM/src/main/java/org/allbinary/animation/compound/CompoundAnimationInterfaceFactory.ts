@@ -34,10 +34,24 @@ import { ScaleProperties } from "../../../../org/allbinary/media/ScaleProperties
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class CompoundAnimationInterfaceFactory
             extends Object
-        
-                , AnimationInterfaceFactoryInterface {
+         implements AnimationInterfaceFactoryInterface {
         
 
     readonly basicAnimationInterfaceFactoryInterfaceArrayP: AnimationInterfaceFactoryInterface[]

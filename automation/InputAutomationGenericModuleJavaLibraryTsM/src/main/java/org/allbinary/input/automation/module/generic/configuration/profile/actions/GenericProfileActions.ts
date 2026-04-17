@@ -67,19 +67,32 @@ import { NodeList } from "../../../../../../../../../org/w3c/dom/NodeList.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { GenericProfileActionsJPanel } from "./GenericProfileActionsJPanel.js";
+
 import { GenericProfileActionsData } from "./GenericProfileActionsData.js";
 
 import { GenericProfileActionData } from "./GenericProfileActionData.js";
 
-import { GenericProfileActionData } from "./GenericProfileActionData.js";
-
-import { GenericProfileActionsData } from "./GenericProfileActionsData.js";
+import { GenericProfileAction } from "./GenericProfileAction.js";
 
 export class GenericProfileActions
             extends Object
-        
-                , DomNodeInterface
-                , DomDocumentMappingInterface {
+         implements DomNodeInterface, DomDocumentMappingInterface {
         
 
     public static readonly DEFAULT_PROFILE_ACTIONS_PATH: string = GenericProfiles.DEFAULT_PROFILES_PATH +"actions/";

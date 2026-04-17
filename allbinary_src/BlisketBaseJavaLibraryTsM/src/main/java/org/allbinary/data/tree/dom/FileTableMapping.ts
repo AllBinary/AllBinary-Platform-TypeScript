@@ -37,18 +37,24 @@ import { PathUtil } from "../../../../../org/allbinary/logic/io/path/PathUtil.js
 
     
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class FileTableMapping
             extends Object
-        
-                , TableMappingInterface {
+         implements TableMappingInterface {
         
 
     private file: AbFile

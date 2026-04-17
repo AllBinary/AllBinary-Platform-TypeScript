@@ -93,10 +93,34 @@ import { Document } from "../../../../org/w3c/dom/Document.js";
 
     
 
-export class MyFrame extends javax.swing.JFrame
-                , FileJDialogListenerInterface
-                , HashMapJDialogListenerInterface
-                , java.awt.event.KeyListener {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { JFrame } from "./JFrame.js";
+
+import { MouseEvent } from "./MouseEvent.js";
+
+import { ActionEvent } from "./ActionEvent.js";
+
+import { ChangeEvent } from "./ChangeEvent.js";
+
+import { WindowEvent } from "./WindowEvent.js";
+
+import { KeyEvent } from "./KeyEvent.js";
+
+export class MyFrame extends javax.swing.JFrame implements FileJDialogListenerInterface, HashMapJDialogListenerInterface, java.awt.event.KeyListener {
         
 
     private static readonly MAXWORKAREAS: number = 10;

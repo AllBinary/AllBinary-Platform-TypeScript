@@ -19,6 +19,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { Feature } from "./Feature.js";
+
 export class GameFeature extends Feature {
         
 public constructor (name: string)                        

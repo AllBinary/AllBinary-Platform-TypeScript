@@ -40,8 +40,22 @@ import { CircularIndexUtil } from "../../../../org/allbinary/util/CircularIndexU
 
     
 
-export class CompoundIndexedAnimation extends IndexedAnimation
-                , CompoundAnimationInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+export class CompoundIndexedAnimation extends IndexedAnimation implements CompoundAnimationInterface {
         
 
     private circularIndexUtil: CircularIndexUtil

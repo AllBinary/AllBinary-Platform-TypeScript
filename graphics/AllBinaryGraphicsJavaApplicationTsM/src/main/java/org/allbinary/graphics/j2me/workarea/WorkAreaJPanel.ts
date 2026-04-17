@@ -81,23 +81,30 @@ import { Node } from "../../../../../org/w3c/dom/Node.js";
 
     
 
-import { WorkAreaDom } from "./WorkAreaDom.js";
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { JPanel } from "./JPanel.js";
+
+import { Dimension } from "./Dimension.js";
 
 import { WorkAreaDom } from "./WorkAreaDom.js";
 
-import { WorkAreaDom } from "./WorkAreaDom.js";
+import { KeyEvent } from "./KeyEvent.js";
 
-import { Thread } from "./Thread.js";
-
-import { Thread } from "./Thread.js";
-
-import { Thread } from "./Thread.js";
-
-export class WorkAreaJPanel extends JPanel
-                , WorkAreaJPanelInterface
-                , MyCanvasEventListener
-                , EventListener
-                , Runnable {
+export class WorkAreaJPanel extends JPanel implements WorkAreaJPanelInterface, MyCanvasEventListener, EventListener, Runnable {
         
 
     private document: org.w3c.dom.Document

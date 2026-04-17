@@ -29,6 +29,23 @@ import { ThreadObjectUtil } from "../../../org/allbinary/thread/ThreadObjectUtil
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { TimeDelayHelper } from "./TimeDelayHelper.js";
+
 export class StupidTimer
             extends Object
          {

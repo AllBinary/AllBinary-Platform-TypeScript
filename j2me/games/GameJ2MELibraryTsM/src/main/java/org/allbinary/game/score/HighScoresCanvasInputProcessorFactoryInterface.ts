@@ -22,6 +22,23 @@ import { HighScoresCanvas } from "../../../../org/allbinary/game/score/displayab
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { HighScoresCanvasInputProcessor } from "./HighScoresCanvasInputProcessor.js";
+
 export interface HighScoresCanvasInputProcessorFactoryInterface {
         
 

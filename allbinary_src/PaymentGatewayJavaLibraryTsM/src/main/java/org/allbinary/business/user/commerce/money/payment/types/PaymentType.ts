@@ -34,9 +34,24 @@ import { PaymentTransactionInterfaceFactoryInterface } from "../../../../../../.
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { PaymentTypeUtil } from "./PaymentTypeUtil.js";
 
-import { PaymentTypeUtil } from "./PaymentTypeUtil.js";
+import { BasicPaymentType } from "./BasicPaymentType.js";
 
 export class PaymentType
             extends Object

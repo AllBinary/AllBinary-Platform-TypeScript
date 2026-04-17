@@ -34,8 +34,26 @@ import { Document } from "../../../../org/w3c/dom/Document.js";
 
     
 
-export class CategoryComponent extends CategoryView
-                , TransformInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { CategoryView } from "./CategoryView.js";
+
+import { CategoryInterface } from "./CategoryInterface.js";
+
+export class CategoryComponent extends CategoryView implements TransformInterface {
         
 public constructor (categoryInterface: CategoryInterface)                        
 

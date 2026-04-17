@@ -22,7 +22,30 @@ import { ARunnable } from "../../../../org/allbinary/thread/ARunnable.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { JDialog } from "./JDialog.js";
+
+import { Frame } from "./Frame.js";
+
+import { CloseJDialogListenerInterface } from "./CloseJDialogListenerInterface.js";
+
 import { Short } from "./Short.js";
+
+import { ActionEvent } from "./ActionEvent.js";
 
 export class BasicTextJDialog extends javax.swing.JDialog {
         

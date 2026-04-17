@@ -28,13 +28,26 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { NoPlayer } from "./NoPlayer.js";
 
 export class Sound
             extends Object
-        
-                , SoundInterface
-                , Runnable {
+         implements SoundInterface, Runnable {
         
 
     private resource: string

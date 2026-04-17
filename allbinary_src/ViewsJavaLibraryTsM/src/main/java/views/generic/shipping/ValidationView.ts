@@ -28,10 +28,28 @@ import { TransformInfoInterface } from "../../../org/allbinary/logic/visual/tran
 
     
 
-import { Boolean } from "./Boolean.js";
 
-export class ValidationView extends ShippingMethodsView
-                , ValidationComponentInterface {
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { ShippingMethodsView } from "./ShippingMethodsView.js";
+
+import { Document } from "./Document.js";
+
+import { Node } from "./Node.js";
+
+export class ValidationView extends ShippingMethodsView implements ValidationComponentInterface {
         
 public constructor (transformInfoInterface: TransformInfoInterface)                        
 

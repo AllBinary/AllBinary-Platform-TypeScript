@@ -67,75 +67,26 @@ import { BasicArrayList } from "../../../../../../../org/allbinary/util/BasicArr
 
     
 
-import { CpuInfo } from "./CpuInfo.js";
 
-import { CpuInfo } from "./CpuInfo.js";
 
-import { CpuInfo } from "./CpuInfo.js";
 
-import { CpuInfo } from "./CpuInfo.js";
 
-import { CpuInfo } from "./CpuInfo.js";
 
-import { CpuInfo } from "./CpuInfo.js";
 
-import { CpuInfo } from "./CpuInfo.js";
 
-import { CpuInfo } from "./CpuInfo.js";
 
-import { CpuInfo } from "./CpuInfo.js";
 
-import { CpuInfo } from "./CpuInfo.js";
+        
 
-import { CpuInfo } from "./CpuInfo.js";
 
-import { CpuInfo } from "./CpuInfo.js";
 
-import { CpuInfo } from "./CpuInfo.js";
-
-import { CpuInfo } from "./CpuInfo.js";
-
-import { CpuInfo } from "./CpuInfo.js";
-
-import { CpuInfo } from "./CpuInfo.js";
-
-import { CpuInfo } from "./CpuInfo.js";
-
-import { CpuInfo } from "./CpuInfo.js";
-
-import { CpuInfo } from "./CpuInfo.js";
-
-import { CpuInfo } from "./CpuInfo.js";
-
-import { CpuInfo } from "./CpuInfo.js";
-
-import { CpuInfo } from "./CpuInfo.js";
-
-import { CpuInfo } from "./CpuInfo.js";
-
-import { CpuInfo } from "./CpuInfo.js";
-
-import { CpuInfo } from "./CpuInfo.js";
-
-import { CpuInfo } from "./CpuInfo.js";
-
-import { CpuInfo } from "./CpuInfo.js";
-
-import { CpuInfo } from "./CpuInfo.js";
-
-import { CpuInfo } from "./CpuInfo.js";
-
-import { CpuInfo } from "./CpuInfo.js";
-
-import { CpuInfo } from "./CpuInfo.js";
-
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { CpuInfo } from "./CpuInfo.js";
 
 export class Cpu
             extends Object
-        
-                , CpuInterface
-                , HardwareComponentInterface {
+         implements CpuInterface, HardwareComponentInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

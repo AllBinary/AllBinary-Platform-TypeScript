@@ -21,6 +21,21 @@
             import { Integer } from "../../../../../../java/lang/Integer.js";
         
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class GeologicalResource
             extends Object
          {

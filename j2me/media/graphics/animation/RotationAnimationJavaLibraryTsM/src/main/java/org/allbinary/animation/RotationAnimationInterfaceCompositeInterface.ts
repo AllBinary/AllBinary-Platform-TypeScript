@@ -19,6 +19,25 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { IndexedAnimationInterfaceCompositeInterface } from "./IndexedAnimationInterfaceCompositeInterface.js";
+
+import { RotationAnimation } from "./RotationAnimation.js";
+
 export interface RotationAnimationInterfaceCompositeInterface extends IndexedAnimationInterfaceCompositeInterface {
         
 

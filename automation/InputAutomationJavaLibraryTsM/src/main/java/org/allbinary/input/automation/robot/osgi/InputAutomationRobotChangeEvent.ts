@@ -19,6 +19,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { InputAutomationRobotInterfaceWrapper } from "./InputAutomationRobotInterfaceWrapper.js";
+
 export class InputAutomationRobotChangeEvent
             extends Object
          {

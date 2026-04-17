@@ -31,6 +31,21 @@ import { HtmlTable } from "../../../../../../org/allbinary/logic/visual/dhtml/ht
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class HtmlForm
             extends Object
          {

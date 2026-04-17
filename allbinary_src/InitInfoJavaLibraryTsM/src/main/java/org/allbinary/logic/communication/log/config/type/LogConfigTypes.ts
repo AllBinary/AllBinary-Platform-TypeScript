@@ -37,11 +37,22 @@ import { Node } from "../../../../../../../org/w3c/dom/Node.js";
 
     
 
-import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
 
-import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
 
-import { LogConfigTypeData } from "./LogConfigTypeData.js";
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { LogConfigTypeFactory } from "./LogConfigTypeFactory.js";
 
 import { LogConfigTypeData } from "./LogConfigTypeData.js";
 

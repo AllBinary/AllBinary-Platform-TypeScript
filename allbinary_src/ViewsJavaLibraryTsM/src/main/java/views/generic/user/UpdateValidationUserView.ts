@@ -49,20 +49,22 @@ import { HttpStoreComponentView } from "../../../views/business/context/modules/
 
     
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
-export class UpdateValidationUserView extends HttpStoreComponentView
-                , ValidationComponentInterface {
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+export class UpdateValidationUserView extends HttpStoreComponentView implements ValidationComponentInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

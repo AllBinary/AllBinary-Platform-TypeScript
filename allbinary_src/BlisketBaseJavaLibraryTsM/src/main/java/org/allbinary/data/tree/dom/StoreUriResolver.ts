@@ -61,10 +61,26 @@ import { TransformInfoTemplateData } from "../../../../../org/allbinary/logic/vi
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { BasicUriResolver } from "./BasicUriResolver.js";
+
 export class StoreUriResolver
             extends Object
-        
-                , URIResolver {
+         implements URIResolver {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

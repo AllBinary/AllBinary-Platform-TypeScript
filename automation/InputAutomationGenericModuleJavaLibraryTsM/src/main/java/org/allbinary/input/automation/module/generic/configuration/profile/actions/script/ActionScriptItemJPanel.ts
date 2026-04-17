@@ -19,19 +19,22 @@
 
 
 
-import { Short } from "./Short.js";
 
-import { Short } from "./Short.js";
 
-import { Short } from "./Short.js";
 
-import { Short } from "./Short.js";
 
-import { Short } from "./Short.js";
 
-import { Short } from "./Short.js";
 
-import { Short } from "./Short.js";
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { JPanel } from "./JPanel.js";
 
 import { Short } from "./Short.js";
 

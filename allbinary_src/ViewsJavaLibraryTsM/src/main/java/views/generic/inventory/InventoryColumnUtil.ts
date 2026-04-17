@@ -37,6 +37,21 @@ import { StringValidationUtil } from "../../../org/allbinary/logic/string/String
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class InventoryColumnUtil
             extends Object
          {

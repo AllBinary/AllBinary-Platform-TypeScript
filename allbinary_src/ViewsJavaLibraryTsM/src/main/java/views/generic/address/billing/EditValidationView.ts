@@ -39,12 +39,24 @@ import { Node } from "../../../../org/w3c/dom/Node.js";
 
     
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
-export class EditValidationView extends BillingAddressView
-                , ValidationComponentInterface {
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { BillingAddressView } from "./BillingAddressView.js";
+
+export class EditValidationView extends BillingAddressView implements ValidationComponentInterface {
         
 
     private value: string

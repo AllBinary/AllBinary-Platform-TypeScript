@@ -37,10 +37,24 @@ import { UserEmailConfigurationInterface } from "../../../../../../org/allbinary
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class UserConfiguration
             extends Object
-        
-                , UserConfigurationInterface {
+         implements UserConfigurationInterface {
         
 
     private userEmailConfigurationInterface: UserEmailConfigurationInterface

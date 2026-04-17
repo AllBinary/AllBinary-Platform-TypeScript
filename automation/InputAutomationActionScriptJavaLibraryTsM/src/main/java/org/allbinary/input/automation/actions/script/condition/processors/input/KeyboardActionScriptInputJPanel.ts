@@ -48,29 +48,34 @@ import { CommonStrings } from "../../../../../../../../../org/allbinary/string/C
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { JPanel } from "./JPanel.js";
+
 import { KeyNameDefaultComboBoxModelFactory } from "./KeyNameDefaultComboBoxModelFactory.js";
 
 import { KeyCharDefaultComboBoxModelFactory } from "./KeyCharDefaultComboBoxModelFactory.js";
 
-import { Short } from "./Short.js";
+import { KeyboardActionScriptInputInterface } from "./KeyboardActionScriptInputInterface.js";
+
+import { JDialog } from "./JDialog.js";
 
 import { Short } from "./Short.js";
 
-import { Short } from "./Short.js";
-
-import { Short } from "./Short.js";
-
-import { Short } from "./Short.js";
-
-import { Short } from "./Short.js";
-
-import { Short } from "./Short.js";
-
-import { Short } from "./Short.js";
-
-import { Short } from "./Short.js";
-
-import { Short } from "./Short.js";
+import { ActionEvent } from "./ActionEvent.js";
 
 export class KeyboardActionScriptInputJPanel extends javax.swing.JPanel {
         

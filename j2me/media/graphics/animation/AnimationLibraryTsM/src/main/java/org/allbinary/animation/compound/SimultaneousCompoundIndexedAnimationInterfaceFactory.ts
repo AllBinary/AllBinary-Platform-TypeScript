@@ -31,6 +31,23 @@ import { IndexedAnimation } from "../../../../org/allbinary/animation/IndexedAni
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { CompoundAnimationInterfaceFactory } from "./CompoundAnimationInterfaceFactory.js";
+
 export class SimultaneousCompoundIndexedAnimationInterfaceFactory extends CompoundAnimationInterfaceFactory {
         
 public constructor (basicAnimationInterfaceFactoryInterfaceArray: AnimationInterfaceFactoryInterface[])                        

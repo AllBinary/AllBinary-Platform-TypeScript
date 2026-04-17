@@ -19,6 +19,25 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { PickupProcessorInterface } from "./PickupProcessorInterface.js";
+
+import { PickedUpLayerInterface } from "./PickedUpLayerInterface.js";
+
 export interface PickupBehaviorInterface {
         
 

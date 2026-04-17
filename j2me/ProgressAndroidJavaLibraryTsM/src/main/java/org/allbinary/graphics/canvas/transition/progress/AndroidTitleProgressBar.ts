@@ -37,6 +37,23 @@ import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { ProgressCanvas } from "./ProgressCanvas.js";
+
 export class AndroidTitleProgressBar extends ProgressCanvas {
         
 
@@ -232,8 +249,7 @@ var graphics = graphics
 
 export inner class TitleProgressBarSetProgressRunnable
             extends Object
-        
-                , Runnable {
+         implements Runnable {
         
 
     public run(){
@@ -271,8 +287,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
             
 export inner class TitleProgressBarPortionSetProgressRunnable
             extends Object
-        
-                , Runnable {
+         implements Runnable {
         
 
     public run(){
@@ -308,8 +323,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
             
 export inner class ShowTitleProgressBarRunnable
             extends Object
-        
-                , Runnable {
+         implements Runnable {
         
 
     public run(){
@@ -347,8 +361,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
             
 export inner class DismissTitleProgressBarRunnable
             extends Object
-        
-                , Runnable {
+         implements Runnable {
         
 
     public run(){

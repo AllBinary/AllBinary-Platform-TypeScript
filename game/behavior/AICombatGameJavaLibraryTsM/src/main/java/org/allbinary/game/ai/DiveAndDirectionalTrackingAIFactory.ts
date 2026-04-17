@@ -37,18 +37,30 @@ import { Visitor } from "../../../../org/allbinary/logic/util/visitor/Visitor.js
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { BasicAI } from "./BasicAI.js";
 
 import { ThrustAIVisitorFactory } from "./ThrustAIVisitorFactory.js";
-
-import { BasicAI } from "./BasicAI.js";
 
 import { LastKeyAIVisitorFactory } from "./LastKeyAIVisitorFactory.js";
 
 export class DiveAndDirectionalTrackingAIFactory
             extends Object
-        
-                , ArtificialIntelligenceInterfaceFactoryInterface {
+         implements ArtificialIntelligenceInterfaceFactoryInterface {
         
 
                 //@Throws(Error::class)

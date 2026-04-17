@@ -36,6 +36,21 @@ import { AutomaticCacheInterface } from "../../../../../../org/allbinary/logic/u
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class GraphicsAnalysisUtil
             extends Object
          {

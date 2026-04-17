@@ -19,39 +19,28 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { JPanel } from "./JPanel.js";
+
 import { LinesGraphicItem } from "./LinesGraphicItem.js";
 
 import { ToolFactory } from "./ToolFactory.js";
 
-import { ToolFactory } from "./ToolFactory.js";
-
-import { ToolFactory } from "./ToolFactory.js";
-
-import { ToolFactory } from "./ToolFactory.js";
-
-import { ToolFactory } from "./ToolFactory.js";
-
-import { ToolFactory } from "./ToolFactory.js";
-
-import { ToolFactory } from "./ToolFactory.js";
-
-import { ToolFactory } from "./ToolFactory.js";
-
-import { ToolFactory } from "./ToolFactory.js";
-
-import { ToolFactory } from "./ToolFactory.js";
-
-import { ToolFactory } from "./ToolFactory.js";
-
-import { ToolFactory } from "./ToolFactory.js";
-
-import { ToolFactory } from "./ToolFactory.js";
-
-import { ToolFactory } from "./ToolFactory.js";
-
-import { ToolFactory } from "./ToolFactory.js";
-
-import { ToolFactory } from "./ToolFactory.js";
+import { MouseEvent } from "./MouseEvent.js";
 
 export class ToolJPanel extends javax.swing.JPanel {
         

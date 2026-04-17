@@ -22,6 +22,23 @@ import { GameInputProcessor } from "../../../../org/allbinary/game/input/GameInp
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { RTSPlayerGameInput } from "./RTSPlayerGameInput.js";
+
 export class RTSPlayerGameInputProcessor extends GameInputProcessor {
         
 

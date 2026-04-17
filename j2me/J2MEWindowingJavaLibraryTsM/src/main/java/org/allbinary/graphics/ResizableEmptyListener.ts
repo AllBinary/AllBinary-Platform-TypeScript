@@ -19,10 +19,24 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class ResizableEmptyListener
             extends Object
-        
-                , ResizableListenerInterface {
+         implements ResizableListenerInterface {
         
 
     public onResizable(isResizable: boolean){

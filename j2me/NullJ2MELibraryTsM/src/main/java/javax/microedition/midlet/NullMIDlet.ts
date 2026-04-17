@@ -5,6 +5,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { MIDlet } from "./MIDlet.js";
+
 export class NullMIDlet extends MIDlet {
         
 

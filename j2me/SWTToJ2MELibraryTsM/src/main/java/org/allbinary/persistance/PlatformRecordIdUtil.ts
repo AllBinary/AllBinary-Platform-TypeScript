@@ -28,6 +28,21 @@ import { AbeClientInformationInterface } from "../../../org/allbinary/logic/syst
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class PlatformRecordIdUtil
             extends Object
          {

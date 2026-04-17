@@ -25,11 +25,24 @@ import { HardwareComponentInterface } from "../../../../../../../org/allbinary/l
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class HardDriveController
             extends Object
-        
-                , HardwareComponentInterface
-                , HardDriveControllerInterface {
+         implements HardwareComponentInterface, HardDriveControllerInterface {
         
 
     private data: string

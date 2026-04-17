@@ -31,6 +31,21 @@ import { LayerProcessor } from "../../../../../org/allbinary/layer/LayerProcesso
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { AllBinaryCollisionManager } from "./AllBinaryCollisionManager.js";
 
 export class CollidableInterfaceLayerProcessor extends LayerProcessor {

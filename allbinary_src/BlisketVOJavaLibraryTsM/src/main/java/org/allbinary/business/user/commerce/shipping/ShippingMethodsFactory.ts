@@ -82,11 +82,22 @@ import { NodeList } from "../../../../../../org/w3c/dom/NodeList.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { ShippingMethodsData } from "./ShippingMethodsData.js";
-
-import { ShippingMethodData } from "./ShippingMethodData.js";
-
-import { ShippingMethodData } from "./ShippingMethodData.js";
 
 import { ShippingMethodData } from "./ShippingMethodData.js";
 

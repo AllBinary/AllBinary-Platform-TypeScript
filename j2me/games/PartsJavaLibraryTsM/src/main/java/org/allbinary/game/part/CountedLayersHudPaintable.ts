@@ -37,10 +37,24 @@ import { AllBinaryLayer } from "../../../../org/allbinary/layer/AllBinaryLayer.j
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class CountedLayersHudPaintable
             extends Object
-        
-                , PaintableInterface {
+         implements PaintableInterface {
         
 
     private static readonly XXString: string = "XX";

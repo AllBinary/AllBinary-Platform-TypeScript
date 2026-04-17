@@ -19,6 +19,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { SensorGameUpdateProcessor } from "./SensorGameUpdateProcessor.js";
+
 export class SingleSensorGameUpdateProcessor extends SensorGameUpdateProcessor {
         
 

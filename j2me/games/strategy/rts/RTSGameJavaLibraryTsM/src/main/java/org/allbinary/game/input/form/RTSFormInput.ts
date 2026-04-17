@@ -73,6 +73,21 @@ import { SimpleGeographicMapCellPositionFactory } from "../../../../../org/allbi
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class RTSFormInput
             extends Object
          {

@@ -40,20 +40,24 @@ import { Node } from "../../../org/w3c/dom/Node.js";
 
     
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
-export class DeleteValidationStoreFrontView extends StoreFrontComponent
-                , ValidationComponentInterface {
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { StoreFrontComponent } from "./StoreFrontComponent.js";
+
+export class DeleteValidationStoreFrontView extends StoreFrontComponent implements ValidationComponentInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

@@ -60,6 +60,23 @@ import { BaseRaceTrackGeographicMap } from "../../../../org/allbinary/media/grap
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { RTSLayer } from "./RTSLayer.js";
+
 import { AllBinaryGameLayerManager } from "./AllBinaryGameLayerManager.js";
 
 export class RTSLayerUtil

@@ -25,6 +25,23 @@ import { swing } from "../../../../../javax/swing.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { ListModel } from "./ListModel.js";
+
 export class DefaultListModelHelper
             extends Object
          {

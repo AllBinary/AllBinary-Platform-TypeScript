@@ -5,6 +5,25 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { IndexedAnimation } from "./IndexedAnimation.js";
+
+import { AnimationBehavior } from "./AnimationBehavior.js";
+
 export class NullIndexedAnimation extends IndexedAnimation {
         
 public constructor (animationBehavior: AnimationBehavior)                        

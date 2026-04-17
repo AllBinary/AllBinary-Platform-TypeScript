@@ -28,14 +28,26 @@ import { StringUtil } from "../../../../../../../../org/allbinary/logic/string/S
 
     
 
-import { UserEmailEventConfigurationData } from "./UserEmailEventConfigurationData.js";
 
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { UserEmailEventConfigurationData } from "./UserEmailEventConfigurationData.js";
 
 export class UserEmailEventConfiguration
             extends Object
-        
-                , UserEmailEventConfigurationInterface {
+         implements UserEmailEventConfigurationInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

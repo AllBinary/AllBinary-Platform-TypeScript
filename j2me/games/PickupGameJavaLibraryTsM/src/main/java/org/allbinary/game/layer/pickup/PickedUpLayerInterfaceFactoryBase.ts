@@ -25,10 +25,26 @@ import { AllBinaryLayer } from "../../../../../org/allbinary/layer/AllBinaryLaye
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { PickedUpLayerType } from "./PickedUpLayerType.js";
+
 export class PickedUpLayerInterfaceFactoryBase
             extends Object
-        
-                , PickedUpLayerInterfaceFactoryInterface {
+         implements PickedUpLayerInterfaceFactoryInterface {
         
 
     public static readonly NULL_PICKED_UP_LAYER_FACTORY_BASE: PickedUpLayerInterfaceFactoryBase = new PickedUpLayerInterfaceFactoryBase();

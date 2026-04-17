@@ -61,6 +61,23 @@ import { CommonLabels } from "../../../../../org/allbinary/string/CommonLabels.j
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { RTSFormInput } from "./RTSFormInput.js";
+
 export class CompositeRTSFormInput extends RTSFormInput {
         
 

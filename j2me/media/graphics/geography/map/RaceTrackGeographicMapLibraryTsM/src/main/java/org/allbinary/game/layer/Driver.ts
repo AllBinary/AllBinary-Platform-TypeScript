@@ -24,6 +24,23 @@ import { SmallIntegerSingletonFactory } from "../../../../org/allbinary/logic/ma
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { Aggression } from "./Aggression.js";
+
 export class Driver
             extends Object
          {

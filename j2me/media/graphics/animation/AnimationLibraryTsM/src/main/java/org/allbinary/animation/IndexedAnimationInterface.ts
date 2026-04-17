@@ -19,6 +19,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { SequentialAnimationInterface } from "./SequentialAnimationInterface.js";
+
 export interface IndexedAnimationInterface extends SequentialAnimationInterface {
         
 

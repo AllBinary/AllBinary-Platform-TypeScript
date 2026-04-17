@@ -46,12 +46,24 @@ import { AllBinaryLayer } from "../../../../../../org/allbinary/layer/AllBinaryL
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { PointsResources } from "./PointsResources.js";
 
-import { PointsResources } from "./PointsResources.js";
-
-export class Points30kPickedUpLayerInterfaceFactory extends PickedUpLayerInterfaceFactory
-                , PickupProcessorInterface {
+export class Points30kPickedUpLayerInterfaceFactory extends PickedUpLayerInterfaceFactory implements PickupProcessorInterface {
         
 
     private pickedUpLayerInterfaceFactoryInterface: PickedUpLayerInterfaceFactoryInterface = CountedPickedUpLayerInterfaceFactory.NULL_COUNTED_PICKUP_LAYER_FACTORY;

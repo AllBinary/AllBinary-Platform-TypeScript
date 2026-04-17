@@ -19,6 +19,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { RemoteHighScoresSubmissionProcessorInterface } from "./RemoteHighScoresSubmissionProcessorInterface.js";
+
 export class RemoteHighScoresSubmissionProcessorFactory
             extends Object
          {

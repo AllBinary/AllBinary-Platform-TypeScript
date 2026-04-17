@@ -37,6 +37,27 @@ import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/Lo
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { TouchButton } from "./TouchButton.js";
+
+import { TouchButtonInput } from "./TouchButtonInput.js";
+
+import { TouchButtonResource } from "./TouchButtonResource.js";
+
 export class FullTouchButton extends TouchButton {
         
 public constructor (touchButtonInput: TouchButtonInput, touchButtonResource: TouchButtonResource, rawRectangle: Rectangle, cellPosition: CellPosition, xBorder: number, yBorder: number)                        

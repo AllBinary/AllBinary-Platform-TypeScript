@@ -106,14 +106,26 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 
     
 
-import { PCComponentFactory } from "./PCComponentFactory.js";
 
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { PCComponentFactory } from "./PCComponentFactory.js";
 
 export class LinuxHardware
             extends Object
-        
-                , HardwareInterface {
+         implements HardwareInterface {
         
 
     private static readonly PCIFILE: string = "/proc/pci";

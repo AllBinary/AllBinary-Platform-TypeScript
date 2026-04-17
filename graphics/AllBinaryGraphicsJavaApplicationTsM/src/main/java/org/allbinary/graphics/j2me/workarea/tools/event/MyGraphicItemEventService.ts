@@ -19,6 +19,25 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { MyGraphicItemEventListener } from "./MyGraphicItemEventListener.js";
+
+import { MyGraphicItemEvent } from "./MyGraphicItemEvent.js";
+
 export class MyGraphicItemEventService
             extends Object
          {

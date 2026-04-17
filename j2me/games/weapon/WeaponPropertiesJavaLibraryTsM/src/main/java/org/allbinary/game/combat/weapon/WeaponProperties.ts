@@ -34,6 +34,23 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { SimpleWeaponProperties } from "./SimpleWeaponProperties.js";
+
 export class WeaponProperties extends SimpleWeaponProperties {
         
 

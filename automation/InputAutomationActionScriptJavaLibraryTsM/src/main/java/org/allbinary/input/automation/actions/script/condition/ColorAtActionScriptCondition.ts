@@ -78,46 +78,28 @@ import { NodeList } from "../../../../../../../org/w3c/dom/NodeList.js";
 
     
 
-import { ColorAtActionScriptConditionData } from "./ColorAtActionScriptConditionData.js";
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { BasicProfileActionScriptCondition } from "./BasicProfileActionScriptCondition.js";
 
 import { ColorAtActionScriptConditionData } from "./ColorAtActionScriptConditionData.js";
 
-import { ColorAtActionScriptConditionData } from "./ColorAtActionScriptConditionData.js";
+import { Point } from "./Point.js";
 
-import { ColorAtActionScriptConditionData } from "./ColorAtActionScriptConditionData.js";
-
-import { ColorAtActionScriptConditionData } from "./ColorAtActionScriptConditionData.js";
-
-import { ColorAtActionScriptConditionData } from "./ColorAtActionScriptConditionData.js";
-
-import { ColorAtActionScriptConditionData } from "./ColorAtActionScriptConditionData.js";
-
-import { ColorAtActionScriptConditionData } from "./ColorAtActionScriptConditionData.js";
-
-import { ColorAtActionScriptConditionData } from "./ColorAtActionScriptConditionData.js";
-
-import { ColorAtActionScriptConditionData } from "./ColorAtActionScriptConditionData.js";
-
-import { ColorAtActionScriptConditionData } from "./ColorAtActionScriptConditionData.js";
-
-import { ColorAtActionScriptConditionData } from "./ColorAtActionScriptConditionData.js";
-
-import { ColorAtActionScriptConditionData } from "./ColorAtActionScriptConditionData.js";
-
-import { ColorAtActionScriptConditionData } from "./ColorAtActionScriptConditionData.js";
-
-import { ColorAtActionScriptConditionData } from "./ColorAtActionScriptConditionData.js";
-
-import { ColorAtActionScriptConditionData } from "./ColorAtActionScriptConditionData.js";
-
-import { ColorAtActionScriptConditionData } from "./ColorAtActionScriptConditionData.js";
-
-import { ColorAtActionScriptConditionData } from "./ColorAtActionScriptConditionData.js";
-
-import { Long } from "./Long.js";
-
-export class ColorAtActionScriptCondition extends BasicProfileActionScriptCondition
-                , ColorAtActionScriptConditionInterface {
+export class ColorAtActionScriptCondition extends BasicProfileActionScriptCondition implements ColorAtActionScriptConditionInterface {
         
 
     private static readonly NAME: string = "If Color At";

@@ -36,11 +36,22 @@ import { TimeDelayHelper } from "../../../../../../../../../org/allbinary/time/T
 
     
 
-import { Thread } from "./Thread.js";
 
-import { Thread } from "./Thread.js";
 
-import { Thread } from "./Thread.js";
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { KeyboardActionScriptInputInterface } from "./KeyboardActionScriptInputInterface.js";
 
 export class KeyboardInputAutomationProcessor
             extends Object

@@ -43,10 +43,24 @@ import { CustomizerUtil } from "../../../../../../../../views/business/context/m
 
     
 
-import { Boolean } from "./Boolean.js";
 
-export class EditGenericBodyValidationView extends GenericBodyCustomizerView
-                , ValidationComponentInterface {
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { GenericBodyCustomizerView } from "./GenericBodyCustomizerView.js";
+
+export class EditGenericBodyValidationView extends GenericBodyCustomizerView implements ValidationComponentInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

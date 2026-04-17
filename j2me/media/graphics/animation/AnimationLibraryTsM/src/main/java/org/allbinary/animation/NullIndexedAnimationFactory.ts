@@ -25,13 +25,28 @@ import { ScaleProperties } from "../../../org/allbinary/media/ScaleProperties.js
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { AnimationBehavior } from "./AnimationBehavior.js";
+
+import { Animation } from "./Animation.js";
 
 export class NullIndexedAnimationFactory
             extends Object
-        
-                , AnimationInterfaceFactoryInterface
-                , ProceduralAnimationInterfaceFactoryInterface {
+         implements AnimationInterfaceFactoryInterface, ProceduralAnimationInterfaceFactoryInterface {
         
 
     public static readonly NULL_INDEXED_ANIMATION_ARRAY: IndexedAnimationInterface[] = [];

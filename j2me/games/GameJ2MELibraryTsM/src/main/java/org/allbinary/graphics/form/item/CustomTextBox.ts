@@ -58,6 +58,23 @@ import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { TextFieldItem } from "./TextFieldItem.js";
+
 export class CustomTextBox extends GameCommandCanvas {
         
 

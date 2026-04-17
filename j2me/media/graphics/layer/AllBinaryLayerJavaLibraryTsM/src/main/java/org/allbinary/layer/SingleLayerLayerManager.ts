@@ -19,6 +19,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { LayerManager } from "./LayerManager.js";
+
 export class SingleLayerLayerManager extends LayerManager {
         
 

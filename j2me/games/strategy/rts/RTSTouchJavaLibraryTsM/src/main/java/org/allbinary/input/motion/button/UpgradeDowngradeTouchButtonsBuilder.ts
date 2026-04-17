@@ -37,9 +37,24 @@ import { CellPositionFactory } from "../../../../../org/allbinary/graphics/CellP
 
     
 
-import { CommonButtons } from "./CommonButtons.js";
 
-import { BasicTouchInputFactory } from "./BasicTouchInputFactory.js";
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { BaseTouchInput } from "./BaseTouchInput.js";
+
+import { CommonButtons } from "./CommonButtons.js";
 
 import { BasicTouchInputFactory } from "./BasicTouchInputFactory.js";
 

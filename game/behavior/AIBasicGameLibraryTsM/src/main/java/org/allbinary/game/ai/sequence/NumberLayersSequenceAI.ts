@@ -31,6 +31,23 @@ import { AllBinaryLayerManager } from "../../../../../org/allbinary/layer/AllBin
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { SequenceAI } from "./SequenceAI.js";
+
 export class NumberLayersSequenceAI extends SequenceAI {
         
 

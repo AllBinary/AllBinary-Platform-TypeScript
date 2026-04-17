@@ -19,6 +19,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { CollidableAlwaysPickupNeverCollideBehavior } from "./CollidableAlwaysPickupNeverCollideBehavior.js";
+
 export class CollidableAlwaysPickupNeverCollideBehaviorFactory
             extends Object
          {

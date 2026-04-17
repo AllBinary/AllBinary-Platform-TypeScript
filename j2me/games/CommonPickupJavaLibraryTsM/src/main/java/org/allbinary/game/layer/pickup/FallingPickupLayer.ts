@@ -31,8 +31,24 @@ import { ViewPosition } from "../../../../../org/allbinary/view/ViewPosition.js"
 
     
 
-export class FallingPickupLayer extends PickupLayer
-                , TickableInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { PickupLayer } from "./PickupLayer.js";
+
+export class FallingPickupLayer extends PickupLayer implements TickableInterface {
         
 
     private static readonly NAME: string = "FallingPickupLayer";

@@ -46,8 +46,22 @@ import { StringMaker } from "../../../../../../../org/allbinary/logic/string/Str
 
     
 
-export class StoreFrontsEntity extends AbSqlBean
-                , StoreFrontsEntityInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+export class StoreFrontsEntity extends AbSqlBean implements StoreFrontsEntityInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

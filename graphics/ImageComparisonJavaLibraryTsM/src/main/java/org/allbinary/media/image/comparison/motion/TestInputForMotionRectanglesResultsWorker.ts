@@ -58,26 +58,26 @@ import { TimeDelayHelper } from "../../../../../../org/allbinary/time/TimeDelayH
 
     
 
-import { Thread } from "./Thread.js";
 
-import { Thread } from "./Thread.js";
 
-import { Thread } from "./Thread.js";
 
-import { Thread } from "./Thread.js";
 
-import { Thread } from "./Thread.js";
 
-import { Thread } from "./Thread.js";
 
-import { Thread } from "./Thread.js";
 
-import { Thread } from "./Thread.js";
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { MotionRectanglesResultsEvent } from "./MotionRectanglesResultsEvent.js";
 
 export class TestInputForMotionRectanglesResultsWorker
             extends Object
-        
-                , MotionRectanglesResultsListener {
+         implements MotionRectanglesResultsListener {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

@@ -52,14 +52,28 @@ import { BouncyCastleProvider } from "../../../../../../../org/bouncycastle/jce/
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { BaseSecretComposite } from "./BaseSecretComposite.js";
 
 import { KeySpecFactory } from "./KeySpecFactory.js";
 
 export class AbCrypt
             extends Object
-        
-                , CryptInterface {
+         implements CryptInterface {
         
 
     private secretComposite: BaseSecretComposite = BaseSecretComposite.NULL_SECRET_COMPOSITE;

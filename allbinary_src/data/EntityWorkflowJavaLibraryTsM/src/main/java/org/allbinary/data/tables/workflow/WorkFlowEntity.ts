@@ -64,8 +64,22 @@ import { ServiceClientInformationInterfaceFactory } from "../../../../../org/all
 
     
 
-export class WorkFlowEntity extends AbSqlBean
-                , WorkFlowEntityInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+export class WorkFlowEntity extends AbSqlBean implements WorkFlowEntityInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

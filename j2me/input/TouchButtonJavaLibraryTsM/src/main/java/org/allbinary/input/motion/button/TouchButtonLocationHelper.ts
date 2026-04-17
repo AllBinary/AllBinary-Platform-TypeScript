@@ -25,6 +25,21 @@ import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMak
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { CommonButtons } from "./CommonButtons.js";
 
 export class TouchButtonLocationHelper

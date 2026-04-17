@@ -58,8 +58,22 @@ import { StringValidationUtil } from "../../../../../../../../org/allbinary/logi
 
     
 
-export class InventoryEntity extends AbSqlBean
-                , InventoryEntityInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+export class InventoryEntity extends AbSqlBean implements InventoryEntityInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

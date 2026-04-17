@@ -25,10 +25,28 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { HighScoresResultsListener } from "./HighScoresResultsListener.js";
+
+import { HighScoresHelperBase } from "./HighScoresHelperBase.js";
+
 export class HighScoresBase
             extends Object
-        
-                , HighScoresFactoryInterface {
+         implements HighScoresFactoryInterface {
         
 
     commonStrings: CommonStrings = CommonStrings.getInstance()!;

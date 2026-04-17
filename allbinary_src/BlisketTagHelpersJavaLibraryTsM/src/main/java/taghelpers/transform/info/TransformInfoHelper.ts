@@ -40,6 +40,21 @@ import { AbSqlTableUtil } from "../../../org/allbinary/logic/communication/sql/A
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class TransformInfoHelper extends BasicTable {
         
 

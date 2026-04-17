@@ -55,8 +55,22 @@ import { HttpStoreComponentView } from "../../../views/business/context/modules/
 
     
 
-export class OrderView extends HttpStoreComponentView
-                , DomNodeInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+export class OrderView extends HttpStoreComponentView implements DomNodeInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

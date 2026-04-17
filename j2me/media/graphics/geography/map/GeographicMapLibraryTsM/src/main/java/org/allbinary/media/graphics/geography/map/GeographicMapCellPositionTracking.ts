@@ -28,15 +28,28 @@ import { AllBinaryLayer } from "../../../../../../org/allbinary/layer/AllBinaryL
 
     
 
-import { SimpleGeographicMapCellPositionFactory } from "./SimpleGeographicMapCellPositionFactory.js";
 
-import { SimpleGeographicMapCellPositionFactory } from "./SimpleGeographicMapCellPositionFactory.js";
 
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { SimpleGeographicMapCellPositionFactory } from "./SimpleGeographicMapCellPositionFactory.js";
 
 import { GeographicMapCellType } from "./GeographicMapCellType.js";
 
-import { SimpleGeographicMapCellPositionFactory } from "./SimpleGeographicMapCellPositionFactory.js";
+import { BasicGeographicMap } from "./BasicGeographicMap.js";
+
+import { GeographicMapCellPosition } from "./GeographicMapCellPosition.js";
 
 export class GeographicMapCellPositionTracking
             extends Object

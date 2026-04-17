@@ -22,6 +22,23 @@ import { MutableTreeNode } from "../../../../../../../javax/swing/tree/MutableTr
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { EventObject } from "./EventObject.js";
+
 export class MyCanvasEvent extends java.util.EventObject {
         
 public constructor (source: any = {})                        

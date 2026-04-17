@@ -28,6 +28,23 @@ import { CollidableDestroyableDamageableBehavior } from "../../../../org/allbina
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { CollidableCompositeLayer } from "./CollidableCompositeLayer.js";
+
 export class CollidableRTSBehavior extends CollidableDestroyableDamageableBehavior {
         
 public constructor (ownerLayer: CollidableCompositeLayer, collidable: boolean)                        

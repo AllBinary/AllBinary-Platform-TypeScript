@@ -43,8 +43,22 @@ import { AnimationFactorySpriteScaleUtil } from "../../../../../org/allbinary/im
 
     
 
-export class ColorCompositeSpriteIndexedAnimationFactory extends BaseImageAnimationFactory
-                , ProceduralAnimationInterfaceFactoryInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+export class ColorCompositeSpriteIndexedAnimationFactory extends BaseImageAnimationFactory implements ProceduralAnimationInterfaceFactoryInterface {
         
 
     private readonly animationFactorySpriteScaleUtil: AnimationFactorySpriteScaleUtil = AnimationFactorySpriteScaleUtil.getInstance()!;

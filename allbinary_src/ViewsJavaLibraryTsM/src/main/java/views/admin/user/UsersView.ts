@@ -49,8 +49,22 @@ import { HttpContextView } from "../../../views/business/context/HttpContextView
 
     
 
-export class UsersView extends HttpContextView
-                , DomNodeInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+export class UsersView extends HttpContextView implements DomNodeInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

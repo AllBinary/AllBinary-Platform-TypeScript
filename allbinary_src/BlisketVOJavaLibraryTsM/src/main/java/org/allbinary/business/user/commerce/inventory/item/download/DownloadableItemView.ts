@@ -51,24 +51,28 @@ import { Node } from "../../../../../../../../org/w3c/dom/Node.js";
 
     
 
-import { DownloadItemData } from "./DownloadItemData.js";
 
-import { DownloadItemData } from "./DownloadItemData.js";
 
-import { DownloadItemData } from "./DownloadItemData.js";
 
-import { DownloadItemData } from "./DownloadItemData.js";
 
-import { DownloadItemData } from "./DownloadItemData.js";
 
-import { DownloadItemData } from "./DownloadItemData.js";
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { DownloadableItem } from "./DownloadableItem.js";
 
 import { DownloadItemData } from "./DownloadItemData.js";
 
 export class DownloadableItemView
             extends Object
-        
-                , DomNodeInterface {
+         implements DomNodeInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

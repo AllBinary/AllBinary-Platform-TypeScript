@@ -37,6 +37,23 @@ import { AllBinaryLayerManager } from "../../../../../org/allbinary/layer/AllBin
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { BasePatrolAI } from "./BasePatrolAI.js";
+
 export class RandomPatrolAI extends BasePatrolAI {
         
 

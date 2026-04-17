@@ -31,6 +31,23 @@ import { CommonPhoneStrings } from "../../../org/allbinary/string/CommonPhoneStr
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { BasicArrayList } from "./BasicArrayList.js";
+
 export class BasicArrayListUtil
             extends Object
          {

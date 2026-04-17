@@ -34,6 +34,23 @@ import { Node } from "../../../../../org/w3c/dom/Node.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { SearchParams } from "./SearchParams.js";
+
 import { SearchData } from "./SearchData.js";
 
 export class TableSearchRequest

@@ -19,12 +19,21 @@
 
 
 
-import { Image } from "./Image.js";
 
-import { Image } from "./Image.js";
 
-import { Image } from "./Image.js";
 
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { Image } from "./Image.js";
 
 export class ChoiceGroupImageFactory

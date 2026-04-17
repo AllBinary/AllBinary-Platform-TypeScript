@@ -90,8 +90,24 @@ import { TimeDelayHelper } from "../../../../../org/allbinary/time/TimeDelayHelp
 
     
 
-export class UnitWaypointBehavior extends WaypointBehaviorBase
-                , WaypointEventListenerInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { UnitLayer } from "./UnitLayer.js";
+
+export class UnitWaypointBehavior extends WaypointBehaviorBase implements WaypointEventListenerInterface {
         
 
     private static readonly PATHING: string = "Pathing";

@@ -49,10 +49,24 @@ import { ScaleProperties } from "../../../../org/allbinary/media/ScaleProperties
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class AllBinaryFlickerAndroidImageRotationAnimationFactory
             extends Object
-        
-                , AnimationInterfaceFactoryInterface {
+         implements AnimationInterfaceFactoryInterface {
         
 
     private image: Image = NullCanvas.NULL_IMAGE;

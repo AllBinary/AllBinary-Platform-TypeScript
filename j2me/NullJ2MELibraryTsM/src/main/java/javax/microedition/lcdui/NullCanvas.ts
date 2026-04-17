@@ -11,6 +11,29 @@ import { StringUtil } from "../../../org/allbinary/logic/string/StringUtil.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { Canvas } from "./Canvas.js";
+
+import { Command } from "./Command.js";
+
+import { CommandListener } from "./CommandListener.js";
+
+import { Graphics } from "./Graphics.js";
+
 export class NullCanvas extends Canvas {
         
 

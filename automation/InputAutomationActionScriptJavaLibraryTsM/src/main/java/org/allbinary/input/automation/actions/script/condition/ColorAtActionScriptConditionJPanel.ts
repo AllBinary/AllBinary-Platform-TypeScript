@@ -33,27 +33,34 @@ import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonS
 
     
 
-import { Short } from "./Short.js";
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { JPanel } from "./JPanel.js";
+
+import { ColorAtActionScriptConditionInterface } from "./ColorAtActionScriptConditionInterface.js";
+
+import { JTextField } from "./JTextField.js";
+
+import { JLabel } from "./JLabel.js";
+
+import { JDialog } from "./JDialog.js";
 
 import { Short } from "./Short.js";
 
-import { Short } from "./Short.js";
-
-import { Short } from "./Short.js";
-
-import { Short } from "./Short.js";
-
-import { Short } from "./Short.js";
-
-import { Short } from "./Short.js";
-
-import { Short } from "./Short.js";
-
-import { Short } from "./Short.js";
-
-import { Short } from "./Short.js";
-
-import { Short } from "./Short.js";
+import { ActionEvent } from "./ActionEvent.js";
 
 export class ColorAtActionScriptConditionJPanel extends javax.swing.JPanel {
         

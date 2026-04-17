@@ -25,11 +25,28 @@ import { Node } from "../../../../../../../org/w3c/dom/Node.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { ColorAtActionScriptConditionData } from "./ColorAtActionScriptConditionData.js";
 
 import { TimeIntervalActionScriptConditionData } from "./TimeIntervalActionScriptConditionData.js";
 
 import { AlwaysActionScriptConditionData } from "./AlwaysActionScriptConditionData.js";
+
+import { ProfileActionScriptConditionInterface } from "./ProfileActionScriptConditionInterface.js";
 
 export class ProfileActionScriptConditionFactory
             extends Object

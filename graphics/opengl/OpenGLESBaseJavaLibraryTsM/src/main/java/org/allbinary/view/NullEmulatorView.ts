@@ -25,10 +25,24 @@ import { MIDlet } from "../../../javax/microedition/midlet/MIDlet.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class NullEmulatorView
             extends Object
-        
-                , EmulatorViewInterface {
+         implements EmulatorViewInterface {
         
 
     public static readonly NULL_EMULATOR_VIEW: NullEmulatorView = new NullEmulatorView();

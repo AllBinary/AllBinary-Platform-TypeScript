@@ -19,6 +19,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { BaseTouchInput } from "./BaseTouchInput.js";
+
 export class NoButtonsTouchInputFactory
             extends Object
          {

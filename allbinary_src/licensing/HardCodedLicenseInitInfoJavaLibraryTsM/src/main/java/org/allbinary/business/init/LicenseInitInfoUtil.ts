@@ -19,6 +19,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { LicenseInitInfo } from "./LicenseInitInfo.js";
+
 export class LicenseInitInfoUtil
             extends Object
          {

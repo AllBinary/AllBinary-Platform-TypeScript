@@ -88,9 +88,22 @@ import { TimeDelayHelper } from "../../../../org/allbinary/time/TimeDelayHelper.
 
     
 
-export class PreGameSelectionGameInputProcessor extends Processor
-                , GameInputProcessorInterface
-                , PlayerGameInputCompositeInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+export class PreGameSelectionGameInputProcessor extends Processor implements GameInputProcessorInterface, PlayerGameInputCompositeInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

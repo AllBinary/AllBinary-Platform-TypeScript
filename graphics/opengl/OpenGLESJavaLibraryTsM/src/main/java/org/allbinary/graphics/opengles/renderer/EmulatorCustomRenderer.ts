@@ -37,9 +37,22 @@ import { PreLogUtil } from "../../../../../org/allbinary/logic/communication/log
 
     
 
-import { RendererStrings } from "./RendererStrings.js";
 
-import { Thread } from "./Thread.js";
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { RendererStrings } from "./RendererStrings.js";
 
 export class EmulatorCustomRenderer
             extends Object

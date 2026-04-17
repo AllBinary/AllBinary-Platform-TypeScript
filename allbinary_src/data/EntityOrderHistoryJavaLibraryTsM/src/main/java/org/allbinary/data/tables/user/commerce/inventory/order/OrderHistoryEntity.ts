@@ -135,8 +135,22 @@ import { ServiceClientInformationInterfaceFactory } from "../../../../../../../.
 
     
 
-export class OrderHistoryEntity extends AbSqlBean
-                , OrderHistoryEntityInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+export class OrderHistoryEntity extends AbSqlBean implements OrderHistoryEntityInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

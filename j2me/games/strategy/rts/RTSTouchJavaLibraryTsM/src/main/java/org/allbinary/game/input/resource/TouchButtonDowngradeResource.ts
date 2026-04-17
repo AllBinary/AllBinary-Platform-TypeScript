@@ -25,6 +25,21 @@ import { TouchButtonResource } from "../../../../../org/allbinary/input/motion/b
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class TouchButtonDowngradeResource extends TouchButtonResource {
         
 

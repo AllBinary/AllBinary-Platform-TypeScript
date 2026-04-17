@@ -40,12 +40,24 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class BasicPlayer
             extends Object
-        
-                , Player
-                , TimeBaseInterface
-                , Controllable2 {
+         implements Player, TimeBaseInterface, Controllable2 {
         
 
     public CONTROL_TYPE: string = "ToneControl";

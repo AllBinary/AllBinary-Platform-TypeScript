@@ -19,6 +19,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { AllBinaryVibrationME } from "./AllBinaryVibrationME.js";
+
 export class AllBinaryNoVibration extends AllBinaryVibrationME {
         
 

@@ -22,6 +22,21 @@ import { GenericProfile } from "../../../../../../../org/allbinary/input/automat
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export interface GenericModuleConfigurationInterface {
         
 

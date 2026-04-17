@@ -28,10 +28,24 @@ import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class AllBinarySensor
             extends Object
-        
-                , AllBinarySensorListener {
+         implements AllBinarySensorListener {
         
 
     public static readonly NULL_ALLBINARY_SENSOR: AllBinarySensor = new AllBinarySensor();

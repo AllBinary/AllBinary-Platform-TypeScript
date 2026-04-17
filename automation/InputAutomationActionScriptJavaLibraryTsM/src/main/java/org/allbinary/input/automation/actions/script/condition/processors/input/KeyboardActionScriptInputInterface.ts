@@ -21,6 +21,23 @@
             import { Integer } from "../../../../../../../../../java/lang/Integer.js";
         
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { ProfileActionScriptInputInterface } from "./ProfileActionScriptInputInterface.js";
+
 export interface KeyboardActionScriptInputInterface extends ProfileActionScriptInputInterface {
         
 

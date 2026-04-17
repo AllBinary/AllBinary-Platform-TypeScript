@@ -22,6 +22,21 @@ import { Player } from "../../../../javax/microedition/media/Player.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export interface SoundInterface {
         
 

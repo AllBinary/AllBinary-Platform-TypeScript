@@ -58,28 +58,42 @@ import { Node } from "../../../../../../org/w3c/dom/Node.js";
 
     
 
-import { Math } from "./Math.js";
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { Color } from "./Color.js";
+
+import { Points } from "./Points.js";
 
 import { Math } from "./Math.js";
 
 import { LinesGraphicItem } from "./LinesGraphicItem.js";
 
-import { Color } from "./Color.js";
+import { Graphics } from "./Graphics.js";
 
-import { Color } from "./Color.js";
-
-import { Math } from "./Math.js";
-
-import { Math } from "./Math.js";
+import { MouseEvent } from "./MouseEvent.js";
 
 import { MouseStrings } from "./MouseStrings.js";
 
-import { MouseStrings } from "./MouseStrings.js";
+import { KeyEvent } from "./KeyEvent.js";
+
+import { GraphicItemInterface } from "./GraphicItemInterface.js";
 
 export class SelectionTool
             extends Object
-        
-                , GraphicItemInterface {
+         implements GraphicItemInterface {
         
 
     private static readonly NAME: string = "Selection Tool";

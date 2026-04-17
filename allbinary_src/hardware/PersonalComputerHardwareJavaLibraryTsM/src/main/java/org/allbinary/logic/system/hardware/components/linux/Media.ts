@@ -25,11 +25,24 @@ import { MediaInterface } from "../../../../../../../org/allbinary/logic/system/
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class Media
             extends Object
-        
-                , HardwareComponentInterface
-                , MediaInterface {
+         implements HardwareComponentInterface, MediaInterface {
         
 
     private data: string

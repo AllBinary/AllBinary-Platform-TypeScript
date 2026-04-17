@@ -31,6 +31,23 @@ import { AbeClientInformationInterface } from "../../../../../../../../org/allbi
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { UserEmailEventConfigurationInterface } from "./UserEmailEventConfigurationInterface.js";
+
 export class UserEmailEventListenerFactory
             extends Object
          {

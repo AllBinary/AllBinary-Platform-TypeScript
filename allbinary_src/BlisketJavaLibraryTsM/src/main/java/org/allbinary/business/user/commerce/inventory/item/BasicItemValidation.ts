@@ -40,53 +40,22 @@ import { Node } from "../../../../../../../org/w3c/dom/Node.js";
 
     
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
+        
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
-
-import { Boolean } from "./Boolean.js";
-
-import { Boolean } from "./Boolean.js";
-
-import { Boolean } from "./Boolean.js";
-
-import { Boolean } from "./Boolean.js";
-
-import { Boolean } from "./Boolean.js";
-
-import { Boolean } from "./Boolean.js";
-
-import { Boolean } from "./Boolean.js";
-
-import { Boolean } from "./Boolean.js";
-
-import { Boolean } from "./Boolean.js";
-
-import { Boolean } from "./Boolean.js";
-
-import { Boolean } from "./Boolean.js";
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { ItemInterface } from "./ItemInterface.js";
 
 export class BasicItemValidation extends Validation {
         

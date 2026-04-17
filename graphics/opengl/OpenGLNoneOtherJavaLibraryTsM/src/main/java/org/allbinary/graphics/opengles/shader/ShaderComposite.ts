@@ -31,13 +31,28 @@ import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { NullOpenGLTextureProcessor } from "./NullOpenGLTextureProcessor.js";
 
-import { NullOpenGLTextureProcessor } from "./NullOpenGLTextureProcessor.js";
+import { CompositeShaderUpdater } from "./CompositeShaderUpdater.js";
 
-import { NullOpenGLTextureProcessor } from "./NullOpenGLTextureProcessor.js";
+import { ShaderInitializer } from "./ShaderInitializer.js";
 
-import { NullOpenGLTextureProcessor } from "./NullOpenGLTextureProcessor.js";
+import { ModelViewProjection } from "./ModelViewProjection.js";
 
 export class ShaderComposite
             extends Object

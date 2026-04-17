@@ -46,6 +46,21 @@ import { VectorInfo } from "../../../org/allbinary/vector/VectorInfo.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { VectorAnimationUtil } from "./VectorAnimationUtil.js";
 
 export class VectorRotationGenerator

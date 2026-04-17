@@ -19,10 +19,26 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { ArtificialIntelligence } from "./ArtificialIntelligence.js";
+
 export class ArtificialIntelligenceFactory
             extends Object
-        
-                , ArtificialIntelligenceFactoryInterface {
+         implements ArtificialIntelligenceFactoryInterface {
         
 
                 //@Throws(Error::class)

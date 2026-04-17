@@ -28,10 +28,24 @@ import { AllBinaryGameLayerManager } from "../../../../../org/allbinary/game/lay
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class NullAllBinaryGameCanvas
             extends Object
-        
-                , AllBinaryGameCanvasInterface {
+         implements AllBinaryGameCanvasInterface {
         
 
     public static readonly NULL_ALLBINARY_GAME_CANVAS: NullAllBinaryGameCanvas = new NullAllBinaryGameCanvas();

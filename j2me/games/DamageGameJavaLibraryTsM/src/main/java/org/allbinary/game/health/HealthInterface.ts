@@ -19,6 +19,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { HealthListenerInterface } from "./HealthListenerInterface.js";
+
 export interface HealthInterface {
         
 

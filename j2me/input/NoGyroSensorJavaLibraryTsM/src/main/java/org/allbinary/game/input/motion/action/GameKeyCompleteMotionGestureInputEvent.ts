@@ -37,8 +37,22 @@ import { MotionGestureInput } from "../../../../../../org/allbinary/input/motion
 
     
 
-export class GameKeyCompleteMotionGestureInputEvent extends CompleteMotionGestureInputEvent
-                , GameKeyEventSourceInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+export class GameKeyCompleteMotionGestureInputEvent extends CompleteMotionGestureInputEvent implements GameKeyEventSourceInterface {
         
 
     private gameKey: GameKey = GameKey.NULL_GAME_KEY;

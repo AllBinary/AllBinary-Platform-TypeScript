@@ -19,10 +19,26 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { IntermissionEnableListenerInterface } from "./IntermissionEnableListenerInterface.js";
+
 export class NullIntermissionEnableListener
             extends Object
-        
-                , IntermissionEnableListenerInterface {
+         implements IntermissionEnableListenerInterface {
         
 
     private static readonly SINGLETON: IntermissionEnableListenerInterface = new NullIntermissionEnableListener();

@@ -37,6 +37,23 @@ import { Paintable } from "../../../../../org/allbinary/graphics/paint/Paintable
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { GameCommandCanvas } from "./GameCommandCanvas.js";
+
 export class BasicPaintablesCanvas extends GameCommandCanvas {
         
 

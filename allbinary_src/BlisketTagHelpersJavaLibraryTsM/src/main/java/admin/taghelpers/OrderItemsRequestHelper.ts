@@ -43,6 +43,23 @@ import { LogUtil } from "../../org/allbinary/logic/communication/log/LogUtil.js"
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { TagHelper } from "./TagHelper.js";
+
 export class OrderItemsRequestHelper extends TagHelper {
         
 

@@ -39,20 +39,28 @@ import { Node } from "../../../../../../../org/w3c/dom/Node.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { ColorData } from "./ColorData.js";
 
 import { ColorsData } from "./ColorsData.js";
 
-import { ColorData } from "./ColorData.js";
-
-import { ColorData } from "./ColorData.js";
-
-import { ColorData } from "./ColorData.js";
-
 export class ColorsView
             extends Object
-        
-                , DomNodeInterface {
+         implements DomNodeInterface {
         
 
     private readonly commonPhoneStrings: CommonPhoneStrings = CommonPhoneStrings.getInstance()!;

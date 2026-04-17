@@ -22,18 +22,26 @@ import { HashMap } from "../../../../../../java/util/HashMap.js";
 
     
 
-import { FtpConfigurationData } from "./FtpConfigurationData.js";
 
-import { FtpConfigurationData } from "./FtpConfigurationData.js";
 
-import { FtpConfigurationData } from "./FtpConfigurationData.js";
 
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { FtpConfigurationData } from "./FtpConfigurationData.js";
 
 export class FtpConfiguration
             extends Object
-        
-                , FtpConfigurationInterface {
+         implements FtpConfigurationInterface {
         
 
     private ftpServer: string

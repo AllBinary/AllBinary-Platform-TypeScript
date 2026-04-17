@@ -22,12 +22,24 @@ import { DisplayInfoSingleton } from "../../../../../org/allbinary/graphics/disp
 
     
 
-import { Thread } from "./Thread.js";
 
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class GameRunnable
             extends Object
-        
-                , Runnable {
+         implements Runnable {
         
 
     public readonly WAIT: number = 240;

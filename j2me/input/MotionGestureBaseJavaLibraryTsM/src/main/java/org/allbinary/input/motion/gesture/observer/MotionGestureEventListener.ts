@@ -19,6 +19,25 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { BaseMotionGestureEventListener } from "./BaseMotionGestureEventListener.js";
+
+import { MotionGestureEvent } from "./MotionGestureEvent.js";
+
 export interface MotionGestureEventListener extends BaseMotionGestureEventListener {
         
 

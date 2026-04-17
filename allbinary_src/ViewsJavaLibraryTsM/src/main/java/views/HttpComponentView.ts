@@ -64,8 +64,22 @@ import { Node } from "../org/w3c/dom/Node.js";
 
     
 
-export class HttpComponentView extends TransformInfoHttpComposite
-                , TransformInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+export class HttpComponentView extends TransformInfoHttpComposite implements TransformInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

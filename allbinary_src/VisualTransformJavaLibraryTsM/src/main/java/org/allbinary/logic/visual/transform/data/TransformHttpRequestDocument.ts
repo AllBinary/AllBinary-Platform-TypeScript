@@ -52,10 +52,24 @@ import { Node } from "../../../../../../org/w3c/dom/Node.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class TransformHttpRequestDocument
             extends Object
-        
-                , TransformDocumentInterface {
+         implements TransformDocumentInterface {
         
 
     private static readonly language: string = "en";

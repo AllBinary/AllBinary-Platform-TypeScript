@@ -23,6 +23,21 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { AndroidMediaPlayerWrapper } from "./AndroidMediaPlayerWrapper.js";
 
 export class AndroidMediaPlayerWrapperListener
@@ -138,8 +153,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
 
 export inner class MediaPlayerOnBufferingUpdateListener
             extends Object
-        
-                , MediaPlayer.OnBufferingUpdateListener {
+         implements MediaPlayer.OnBufferingUpdateListener {
         
 /*Static stuff is not allowed for Typescript inner classes*//**/
 
@@ -155,8 +169,7 @@ export inner class MediaPlayerOnBufferingUpdateListener
             
 export inner class MediaPlayerOnPreparedListener
             extends Object
-        
-                , MediaPlayer.OnPreparedListener {
+         implements MediaPlayer.OnPreparedListener {
         
 /*Static stuff is not allowed for Typescript inner classes*//**/
 
@@ -171,8 +184,7 @@ export inner class MediaPlayerOnPreparedListener
             
 export inner class MediaPlayerOnErrorListener
             extends Object
-        
-                , MediaPlayer.OnErrorListener {
+         implements MediaPlayer.OnErrorListener {
         
 /*Static stuff is not allowed for Typescript inner classes*//**/
 
@@ -195,8 +207,7 @@ export inner class MediaPlayerOnErrorListener
             
 export inner class MediaPlayerOnCompletionListener
             extends Object
-        
-                , MediaPlayer.OnCompletionListener {
+         implements MediaPlayer.OnCompletionListener {
         
 /*Static stuff is not allowed for Typescript inner classes*//**/
 

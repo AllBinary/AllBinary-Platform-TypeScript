@@ -22,6 +22,23 @@ import { AbFile } from "../../../../org/allbinary/logic/io/file/AbFile.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { AbDataOutputStream } from "./AbDataOutputStream.js";
+
 import { FileStreamFactory } from "./FileStreamFactory.js";
 
 export class DataOutputStreamFactory

@@ -36,13 +36,28 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
     
 
-import { Short } from "./Short.js";
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { JDialog } from "./JDialog.js";
+
+import { Frame } from "./Frame.js";
 
 import { Short } from "./Short.js";
 
-import { Short } from "./Short.js";
-
-import { Short } from "./Short.js";
+import { ActionEvent } from "./ActionEvent.js";
 
 export class RotateJDialog extends javax.swing.JDialog {
         

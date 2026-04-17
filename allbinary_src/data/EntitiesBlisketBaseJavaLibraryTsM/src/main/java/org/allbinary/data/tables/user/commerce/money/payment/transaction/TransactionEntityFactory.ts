@@ -25,6 +25,23 @@ import { CommonStrings } from "../../../../../../../../../org/allbinary/string/C
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { TransactionEntity } from "./TransactionEntity.js";
+
 export class TransactionEntityFactory
             extends Object
          {

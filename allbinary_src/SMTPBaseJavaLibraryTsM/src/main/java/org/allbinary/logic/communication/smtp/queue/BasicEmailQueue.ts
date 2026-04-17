@@ -31,8 +31,22 @@ import { BasicQueue } from "../../../../../../org/allbinary/logic/util/queue/Bas
 
     
 
-export class BasicEmailQueue extends BasicQueue
-                , EmailQueueInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+export class BasicEmailQueue extends BasicQueue implements EmailQueueInterface {
         
 
     private static readonly instance: BasicEmailQueue = new BasicEmailQueue();

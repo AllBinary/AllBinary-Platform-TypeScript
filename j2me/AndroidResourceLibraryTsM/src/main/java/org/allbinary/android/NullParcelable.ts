@@ -24,10 +24,26 @@ import { Parcelable } from "../../../android/os/Parcelable.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { Parcel } from "./Parcel.js";
+
 export class NullParcelable
             extends Object
-        
-                , Parcelable {
+         implements Parcelable {
         
 
             static readonly PUBLIC: string = '%{public}s';

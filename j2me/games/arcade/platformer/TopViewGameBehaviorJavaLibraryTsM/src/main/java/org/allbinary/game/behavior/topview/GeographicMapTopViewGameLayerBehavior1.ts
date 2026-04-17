@@ -55,6 +55,23 @@ import { BasicTopViewGeographicMapCellTypeFactory } from "../../../../../org/all
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { GeographicMapTopViewLayerBehavior } from "./GeographicMapTopViewLayerBehavior.js";
+
 export class GeographicMapTopViewGameLayerBehavior1 extends GeographicMapTopViewLayerBehavior {
         
 

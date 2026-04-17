@@ -52,9 +52,26 @@ import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
 
     
 
-import { PrimaryThreadPool } from "./PrimaryThreadPool.js";
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { ABRunnable } from "./ABRunnable.js";
 
 import { PrimaryThreadPool } from "./PrimaryThreadPool.js";
+
+import { Runnable } from "./Runnable.js";
 
 export class ThreadFactoryUtil
             extends Object

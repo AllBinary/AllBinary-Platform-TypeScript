@@ -76,26 +76,26 @@ import { NodeList } from "../../../../../../../org/w3c/dom/NodeList.js";
 
     
 
-import { TransformInfoObjectConfigData } from "./TransformInfoObjectConfigData.js";
 
-import { TransformInfoObjectConfigData } from "./TransformInfoObjectConfigData.js";
 
-import { TransformInfoObjectConfigData } from "./TransformInfoObjectConfigData.js";
 
-import { TransformInfoObjectConfigData } from "./TransformInfoObjectConfigData.js";
 
-import { TransformInfoObjectConfigData } from "./TransformInfoObjectConfigData.js";
 
-import { TransformInfoObjectConfigData } from "./TransformInfoObjectConfigData.js";
 
-import { TransformInfoObjectConfigData } from "./TransformInfoObjectConfigData.js";
 
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { TransformInfoObjectConfigData } from "./TransformInfoObjectConfigData.js";
 
 export class TransformInfoObjectConfig
             extends Object
-        
-                , TransformInfoObjectConfigInterface {
+         implements TransformInfoObjectConfigInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

@@ -25,10 +25,24 @@ import { BasicColor } from "../../../../org/allbinary/graphics/color/BasicColor.
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class Paintable
             extends Object
-        
-                , PaintableInterface {
+         implements PaintableInterface {
         
 
     public setBasicColorP(basicColor: BasicColor){

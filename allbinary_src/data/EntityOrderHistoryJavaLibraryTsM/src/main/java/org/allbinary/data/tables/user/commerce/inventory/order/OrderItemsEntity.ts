@@ -97,8 +97,22 @@ import { StringUtil } from "../../../../../../../../org/allbinary/logic/string/S
 
     
 
-export class OrderItemsEntity extends AbSqlBean
-                , OrderItemsEntityInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+export class OrderItemsEntity extends AbSqlBean implements OrderItemsEntityInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

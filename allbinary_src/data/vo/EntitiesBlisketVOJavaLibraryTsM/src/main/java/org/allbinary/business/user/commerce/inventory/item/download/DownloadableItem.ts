@@ -46,68 +46,21 @@ import { TimeUtil } from "../../../../../../../../org/allbinary/time/TimeUtil.js
 
     
 
-import { Long } from "./Long.js";
 
-import { Long } from "./Long.js";
 
-import { DownloadItemData } from "./DownloadItemData.js";
 
-import { DownloadItemData } from "./DownloadItemData.js";
 
-import { DownloadItemData } from "./DownloadItemData.js";
 
-import { DownloadItemData } from "./DownloadItemData.js";
 
-import { DownloadItemData } from "./DownloadItemData.js";
 
-import { DownloadItemData } from "./DownloadItemData.js";
 
-import { DownloadItemData } from "./DownloadItemData.js";
 
-import { DownloadItemData } from "./DownloadItemData.js";
+        
 
-import { DownloadItemData } from "./DownloadItemData.js";
 
-import { Long } from "./Long.js";
 
-import { DownloadItemData } from "./DownloadItemData.js";
-
-import { DownloadItemData } from "./DownloadItemData.js";
-
-import { DownloadItemData } from "./DownloadItemData.js";
-
-import { DownloadItemData } from "./DownloadItemData.js";
-
-import { DownloadItemData } from "./DownloadItemData.js";
-
-import { DownloadItemData } from "./DownloadItemData.js";
-
-import { DownloadItemData } from "./DownloadItemData.js";
-
-import { Long } from "./Long.js";
-
-import { DownloadItemData } from "./DownloadItemData.js";
-
-import { DownloadItemData } from "./DownloadItemData.js";
-
-import { DownloadItemData } from "./DownloadItemData.js";
-
-import { DownloadItemData } from "./DownloadItemData.js";
-
-import { DownloadItemData } from "./DownloadItemData.js";
-
-import { DownloadItemData } from "./DownloadItemData.js";
-
-import { DownloadItemData } from "./DownloadItemData.js";
-
-import { DownloadItemData } from "./DownloadItemData.js";
-
-import { DownloadItemData } from "./DownloadItemData.js";
-
-import { DownloadItemData } from "./DownloadItemData.js";
-
-import { DownloadItemData } from "./DownloadItemData.js";
-
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { DownloadItemData } from "./DownloadItemData.js";
 
 export class DownloadableItem

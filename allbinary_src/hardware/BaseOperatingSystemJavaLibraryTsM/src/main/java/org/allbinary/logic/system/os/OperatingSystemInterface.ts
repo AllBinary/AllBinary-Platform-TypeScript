@@ -22,6 +22,21 @@ import { CharacterSet } from "../../../../../org/allbinary/logic/java/character/
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export interface OperatingSystemInterface {
         
 

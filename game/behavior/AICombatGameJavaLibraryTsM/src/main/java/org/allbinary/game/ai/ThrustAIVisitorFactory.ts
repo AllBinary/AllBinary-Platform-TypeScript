@@ -19,6 +19,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { ThrustAIVisitor } from "./ThrustAIVisitor.js";
+
 export class ThrustAIVisitorFactory
             extends Object
          {

@@ -19,10 +19,24 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class BaseScalable
             extends Object
-        
-                , ScalableListener {
+         implements ScalableListener {
         
 
     public getRatio(ratio: number): number{

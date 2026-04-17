@@ -34,6 +34,23 @@ import { TransformInfoInterface } from "../../../../../org/allbinary/logic/visua
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { BasicTransformer } from "./BasicTransformer.js";
+
 export class StoreTransformer extends BasicTransformer {
         
 public constructor (abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface)                        

@@ -106,33 +106,26 @@ import { Node } from "../../../../../org/w3c/dom/Node.js";
 
     
 
-import { ThemeData } from "./ThemeData.js";
 
-import { ThemeData } from "./ThemeData.js";
 
-import { ThemeData } from "./ThemeData.js";
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
-import { ThemeData } from "./ThemeData.js";
 
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { ThemeData } from "./ThemeData.js";
 
 export class ThemeValidation
             extends Object
-        
-                , ThemeInterface
-                , ValidationInterface
-                , DomNodeInterface
-                , CompositeTransformInfoInterface {
+         implements ThemeInterface, ValidationInterface, DomNodeInterface, CompositeTransformInfoInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

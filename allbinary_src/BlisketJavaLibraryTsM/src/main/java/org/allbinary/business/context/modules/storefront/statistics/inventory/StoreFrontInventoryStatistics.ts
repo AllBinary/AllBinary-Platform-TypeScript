@@ -42,14 +42,26 @@ import { InventoryEntityInterface } from "../../../../../../../../org/allbinary/
 
     
 
-import { StoreFrontInventoryStatisticsData } from "./StoreFrontInventoryStatisticsData.js";
 
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { StoreFrontInventoryStatisticsData } from "./StoreFrontInventoryStatisticsData.js";
 
 export class StoreFrontInventoryStatistics
             extends Object
-        
-                , StoreFrontInventoryStatisticsInterface {
+         implements StoreFrontInventoryStatisticsInterface {
         
 
     private totalNumberOfItems: number= 0

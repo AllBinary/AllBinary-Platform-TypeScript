@@ -46,6 +46,23 @@ import { LogFormatUtil } from "../../../org/allbinary/logic/communication/log/Lo
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { Exception } from "./Exception.js";
+
 export class FileLog
             extends Object
          {

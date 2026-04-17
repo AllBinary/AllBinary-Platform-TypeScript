@@ -28,12 +28,28 @@ import { ScaleProperties } from "../../../org/allbinary/media/ScaleProperties.js
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { AnimationBehaviorFactory } from "./AnimationBehaviorFactory.js";
+
+import { Animation } from "./Animation.js";
 
 export class VectorAnimationInterfaceFactory
             extends Object
-        
-                , AnimationInterfaceFactoryInterface {
+         implements AnimationInterfaceFactoryInterface {
         
 
     private currentPoints: number[][][]

@@ -28,6 +28,23 @@ import { MotionGestureRecognizer } from "../../../../org/allbinary/input/motion/
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { MotionRecognizer } from "./MotionRecognizer.js";
+
 export class GestureOnlyMotionRecognizer extends MotionRecognizer {
         
 

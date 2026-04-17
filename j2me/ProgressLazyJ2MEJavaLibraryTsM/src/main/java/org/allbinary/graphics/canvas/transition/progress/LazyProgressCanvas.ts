@@ -34,6 +34,23 @@ import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { ProgressCanvas } from "./ProgressCanvas.js";
+
 export class LazyProgressCanvas extends ProgressCanvas {
         
 

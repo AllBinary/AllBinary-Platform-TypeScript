@@ -19,6 +19,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { ShaderInitializer } from "./ShaderInitializer.js";
+
 export class SimpleShaderInitializer extends ShaderInitializer {
         
 

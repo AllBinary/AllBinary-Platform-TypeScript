@@ -22,10 +22,24 @@ import { RecordComparator } from "../../../../../javax/microedition/rms/RecordCo
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class NullRecordComparator
             extends Object
-        
-                , RecordComparator {
+         implements RecordComparator {
         
 
     public static readonly NULL_RECORD_COMPARATOR: NullRecordComparator = new NullRecordComparator();

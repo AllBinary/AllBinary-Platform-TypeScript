@@ -19,6 +19,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { BaseSoundsFactory } from "./BaseSoundsFactory.js";
+
 import { SelectSound } from "./SelectSound.js";
 
 import { ErrorSound } from "./ErrorSound.js";

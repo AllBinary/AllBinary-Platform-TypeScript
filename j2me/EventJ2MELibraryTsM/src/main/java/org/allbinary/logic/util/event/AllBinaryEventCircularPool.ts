@@ -25,6 +25,23 @@ import { CircularIndexUtil } from "../../../../../org/allbinary/util/CircularInd
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { AllBinaryEventObjectFactoryInterface } from "./AllBinaryEventObjectFactoryInterface.js";
+
 export class AllBinaryEventCircularPool extends BaseCircularPool {
         
 public constructor (max: number){

@@ -34,10 +34,28 @@ import { Node } from "../../../../../../org/w3c/dom/Node.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { TransformInfoDomNode } from "./TransformInfoDomNode.js";
+
+import { TransformInfoInterface } from "./TransformInfoInterface.js";
+
 import { TransformInfoData } from "./TransformInfoData.js";
 
-export class TransformInfoDomNodeView extends TransformInfoDomNode
-                , DomNodeInterface {
+export class TransformInfoDomNodeView extends TransformInfoDomNode implements DomNodeInterface {
         
 public constructor (transformInfoInterface: TransformInfoInterface, mapping: string)                        
 

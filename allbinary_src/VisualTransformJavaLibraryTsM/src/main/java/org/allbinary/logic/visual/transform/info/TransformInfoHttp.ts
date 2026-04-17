@@ -61,10 +61,26 @@ import { TransformInfoObjectConfig } from "../../../../../../org/allbinary/logic
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { TransformInfo } from "./TransformInfo.js";
+
 import { TransformInfoData } from "./TransformInfoData.js";
 
-export class TransformInfoHttp extends TransformInfo
-                , TransformInfoHttpInterface {
+export class TransformInfoHttp extends TransformInfo implements TransformInfoHttpInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

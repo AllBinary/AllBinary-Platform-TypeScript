@@ -52,9 +52,30 @@ import { SecondaryThreadPool } from "../../../../org/allbinary/thread/SecondaryT
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { HighScoresBase } from "./HighScoresBase.js";
+
+import { HighScoresResultsListener } from "./HighScoresResultsListener.js";
+
 import { RecordStoreHighScores } from "./RecordStoreHighScores.js";
 
 import { LastFetchHighScoresFactory } from "./LastFetchHighScoresFactory.js";
+
+import { HighScoresHelperBase } from "./HighScoresHelperBase.js";
 
 export class BasicHighScoresFactory extends HighScoresBase {
         

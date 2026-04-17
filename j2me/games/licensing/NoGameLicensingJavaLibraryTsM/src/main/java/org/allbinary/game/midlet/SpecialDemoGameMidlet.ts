@@ -28,6 +28,27 @@ import { RunnableInterface } from "../../../../org/allbinary/thread/RunnableInte
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { DemoGameMidlet } from "./DemoGameMidlet.js";
+
+import { LicenseLoadingType } from "./LicenseLoadingType.js";
+
+import { DemoSetup } from "./DemoSetup.js";
+
 export class SpecialDemoGameMidlet extends DemoGameMidlet {
         
 public constructor (clientInformationFactory: ClientInformationFactory, licenseLoadingType: LicenseLoadingType)                        

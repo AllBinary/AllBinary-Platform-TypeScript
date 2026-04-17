@@ -22,10 +22,24 @@ import { AllBinaryLayerManager } from "../../../org/allbinary/layer/AllBinaryLay
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class ArtificialIntelligence
             extends Object
-        
-                , ArtificialIntelligenceInterface {
+         implements ArtificialIntelligenceInterface {
         
 
     private static readonly instance: ArtificialIntelligence = new ArtificialIntelligence();

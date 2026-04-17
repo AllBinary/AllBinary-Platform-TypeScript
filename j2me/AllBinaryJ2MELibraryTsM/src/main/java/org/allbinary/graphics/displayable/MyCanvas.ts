@@ -61,13 +61,26 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { CanvasStrings } from "./CanvasStrings.js";
 
 import { DisplayInfoSingleton } from "./DisplayInfoSingleton.js";
 
-export class MyCanvas extends Canvas
-                , DisplayableInterface
-                , MyCommandInterface {
+export class MyCanvas extends Canvas implements DisplayableInterface, MyCommandInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

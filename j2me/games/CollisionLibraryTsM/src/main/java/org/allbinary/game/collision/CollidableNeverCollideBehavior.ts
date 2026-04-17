@@ -25,6 +25,25 @@ import { RectangleFactory } from "../../../../org/allbinary/graphics/RectangleFa
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { CollidableBaseBehavior } from "./CollidableBaseBehavior.js";
+
+import { CollidableInterfaceCompositeInterface } from "./CollidableInterfaceCompositeInterface.js";
+
 export class CollidableNeverCollideBehavior extends CollidableBaseBehavior {
         
  constructor (isCollidable: boolean)                        

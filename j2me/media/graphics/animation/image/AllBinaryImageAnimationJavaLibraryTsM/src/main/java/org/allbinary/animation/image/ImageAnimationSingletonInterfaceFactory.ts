@@ -34,6 +34,21 @@ import { AnimationFrameToImageUtil } from "../../../../org/allbinary/image/Anima
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class ImageAnimationSingletonInterfaceFactory extends SingletonAnimationInterfaceFactory {
         
 private constructor (animationInterface: Animation)                        

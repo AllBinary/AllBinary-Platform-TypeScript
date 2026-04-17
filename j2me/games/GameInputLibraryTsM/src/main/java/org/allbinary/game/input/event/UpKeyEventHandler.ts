@@ -25,6 +25,23 @@ import { EventListenerInterface } from "../../../../../org/allbinary/logic/util/
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { UpKeyEventHandlerBase } from "./UpKeyEventHandlerBase.js";
+
 export class UpKeyEventHandler extends UpKeyEventHandlerBase {
         
 

@@ -5,6 +5,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { OpenGLESGraphics } from "./OpenGLESGraphics.js";
+
 export class OpenGLESGraphicsFactory
             extends Object
          {

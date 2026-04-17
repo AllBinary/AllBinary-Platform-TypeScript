@@ -25,12 +25,28 @@ import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { NoPlayerGameInput } from "./NoPlayerGameInput.js";
+
+import { PlayerGameInput } from "./PlayerGameInput.js";
 
 export class NullPlayerGameInputComposite
             extends Object
-        
-                , PlayerGameInputCompositeInterface {
+         implements PlayerGameInputCompositeInterface {
         
 
     public static readonly NULL_PLAYER_GAME_INPUT_COMPOSITE: NullPlayerGameInputComposite = new NullPlayerGameInputComposite();

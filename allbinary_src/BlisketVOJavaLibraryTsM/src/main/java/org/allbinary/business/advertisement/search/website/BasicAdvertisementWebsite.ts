@@ -19,10 +19,24 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class BasicAdvertisementWebsite
             extends Object
-        
-                , AdvertisementWebsiteInterface {
+         implements AdvertisementWebsiteInterface {
         
 
     private websiteId: string

@@ -28,6 +28,21 @@ import { TouchMotionGestureFactory } from "../../../../../../org/allbinary/input
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class DiagonalUpRightTouchInputToGameKeyEventAction extends GameKeyCompleteMotionGestureInputEvent {
         
 

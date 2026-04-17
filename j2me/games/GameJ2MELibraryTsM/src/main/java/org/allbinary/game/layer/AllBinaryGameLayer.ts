@@ -76,13 +76,26 @@ import { ViewPositionEventListenerInterface } from "../../../../org/allbinary/vi
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { SWTUtil } from "./SWTUtil.js";
 
 import { GameLayerUtil } from "./GameLayerUtil.js";
 
-export class AllBinaryGameLayer extends AllBinaryLayer
-                , ViewPositionEventListenerInterface
-                , OpenGLSurfaceChangedInterface {
+export class AllBinaryGameLayer extends AllBinaryLayer implements ViewPositionEventListenerInterface, OpenGLSurfaceChangedInterface {
         
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;

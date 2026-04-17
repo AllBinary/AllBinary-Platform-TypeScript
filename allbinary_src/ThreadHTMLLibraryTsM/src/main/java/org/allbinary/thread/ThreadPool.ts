@@ -28,11 +28,30 @@ import { BasicArrayList } from "../../../org/allbinary/util/BasicArrayList.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { NullRunnable } from "./NullRunnable.js";
 
 import { ThreadPoolStrings } from "./ThreadPoolStrings.js";
 
 import { ThreadObjectUtil } from "./ThreadObjectUtil.js";
+
+import { PriorityRunnable } from "./PriorityRunnable.js";
+
+import { Runnable } from "./Runnable.js";
 
 export class ThreadPool
             extends Object

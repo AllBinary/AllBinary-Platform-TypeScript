@@ -37,18 +37,30 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { AbeClientInformationData } from "./AbeClientInformationData.js";
 
 import { LicenseTypeFactory } from "./LicenseTypeFactory.js";
 
-import { AbeClientInformationData } from "./AbeClientInformationData.js";
-
-import { AbeClientInformationData } from "./AbeClientInformationData.js";
+import { LicenseType } from "./LicenseType.js";
 
 export class AbeClientLicense
             extends Object
-        
-                , AbeLicenseInterface {
+         implements AbeLicenseInterface {
         
 
     public static hasRequiredKeys(resultHashtable: Hashtable<any, any>): boolean{

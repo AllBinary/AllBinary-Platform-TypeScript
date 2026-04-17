@@ -69,18 +69,30 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
     
 
-import { Short } from "./Short.js";
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { JFrame } from "./JFrame.js";
 
 import { Short } from "./Short.js";
 
-import { Short } from "./Short.js";
+import { ActionEvent } from "./ActionEvent.js";
 
-import { Short } from "./Short.js";
+import { JTextField } from "./JTextField.js";
 
-import { Short } from "./Short.js";
-
-export class ImageToolJFrame extends javax.swing.JFrame
-                , FileJDialogListenerInterface {
+export class ImageToolJFrame extends javax.swing.JFrame implements FileJDialogListenerInterface {
         
 
     private imageProcessorInputCompositeInterface: ImageProcessorInputCompositeInterface

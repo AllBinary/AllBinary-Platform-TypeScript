@@ -34,10 +34,24 @@ import { Node } from "../../../../org/w3c/dom/Node.js";
 
     
 
-import { Boolean } from "./Boolean.js";
 
-export class NewValidationView extends BillingAddressView
-                , ValidationComponentInterface {
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { BillingAddressView } from "./BillingAddressView.js";
+
+export class NewValidationView extends BillingAddressView implements ValidationComponentInterface {
         
 public constructor (transformInfoInterface: TransformInfoInterface)                        
 

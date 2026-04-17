@@ -37,6 +37,21 @@ import { HttpContextView } from "../../../views/business/context/HttpContextView
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class UserView extends HttpContextView {
         
 

@@ -43,8 +43,24 @@ import { TimeDelayHelper } from "../../../../../../org/allbinary/time/TimeDelayH
 
     
 
-export class SaveCapturedImageWorker extends BasicEventHandler
-                , CapturedImageWorkerResultsListener {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { CapturedImageWorkerResultsEvent } from "./CapturedImageWorkerResultsEvent.js";
+
+export class SaveCapturedImageWorker extends BasicEventHandler implements CapturedImageWorkerResultsListener {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

@@ -46,8 +46,24 @@ import { StaticViewPosition } from "../../../../org/allbinary/view/StaticViewPos
 
     
 
-export class PlayerGameInputGameLayer extends AllBinaryGameLayer
-                , PlayerGameInputCompositeInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { AllBinaryGameLayer } from "./AllBinaryGameLayer.js";
+
+export class PlayerGameInputGameLayer extends AllBinaryGameLayer implements PlayerGameInputCompositeInterface {
         
 
     private playerGameInput: PlayerGameInput

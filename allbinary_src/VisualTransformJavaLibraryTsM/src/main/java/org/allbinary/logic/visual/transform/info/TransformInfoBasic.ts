@@ -43,8 +43,22 @@ import { Document } from "../../../../../../org/w3c/dom/Document.js";
 
     
 
-export class TransformInfoBasic extends AbContext
-                , TransformInfoHttpInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+export class TransformInfoBasic extends AbContext implements TransformInfoHttpInterface {
         
 
     private storeFrontInterface: StoreFrontInterface

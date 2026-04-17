@@ -61,6 +61,21 @@ import { ImageCompleteUtil } from "../../../../../org/allbinary/media/image/Imag
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { TouchButtonBlankResource } from "./TouchButtonBlankResource.js";
 
 import { TouchButtonGenericActionResource } from "./TouchButtonGenericActionResource.js";
@@ -78,10 +93,6 @@ import { TouchButtonTurnRightResource } from "./TouchButtonTurnRightResource.js"
 import { TouchButtonStrafeLeftResource } from "./TouchButtonStrafeLeftResource.js";
 
 import { TouchButtonStrafeRightResource } from "./TouchButtonStrafeRightResource.js";
-
-import { TouchButtonStartResource } from "./TouchButtonStartResource.js";
-
-import { TouchButtonStartResource } from "./TouchButtonStartResource.js";
 
 export class TouchButtonResourceAnimationInterfaceFactoryInterfaceFactory extends BaseResourceAnimationInterfaceFactoryInterfaceFactory {
         

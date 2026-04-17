@@ -25,6 +25,21 @@ import { LocationPaintableInterface } from "../../../org/allbinary/graphics/pain
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export interface AnimationInterface extends LocationPaintableInterface {
         
 

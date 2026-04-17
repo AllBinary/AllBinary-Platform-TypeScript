@@ -34,7 +34,26 @@ import { CustomItem } from "../../../../org/allbinary/graphics/form/item/CustomI
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { ScrollSelectionFormNoneFactory } from "./ScrollSelectionFormNoneFactory.js";
+
+import { ScrollSelectionForm } from "./ScrollSelectionForm.js";
+
+import { FormType } from "./FormType.js";
 
 export class CommandCurrentSelectionFormFactory
             extends Object

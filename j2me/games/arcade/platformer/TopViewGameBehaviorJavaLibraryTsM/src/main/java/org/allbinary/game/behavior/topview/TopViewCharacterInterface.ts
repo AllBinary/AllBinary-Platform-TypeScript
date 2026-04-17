@@ -28,6 +28,21 @@ import { GeographicMapCellType } from "../../../../../org/allbinary/media/graphi
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export interface TopViewCharacterInterface {
         
 

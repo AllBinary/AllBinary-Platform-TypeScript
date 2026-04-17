@@ -42,16 +42,21 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 
     
 
-import { NameSpaceRequestParamData } from "./NameSpaceRequestParamData.js";
 
-import { NameSpaceRequestParamData } from "./NameSpaceRequestParamData.js";
 
-import { NameSpaceRequestParamData } from "./NameSpaceRequestParamData.js";
 
-import { NameSpaceRequestParamData } from "./NameSpaceRequestParamData.js";
 
-import { NameSpaceRequestParamData } from "./NameSpaceRequestParamData.js";
 
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { NameSpaceRequestParamData } from "./NameSpaceRequestParamData.js";
 
 export class NameSpaceRequestParam

@@ -76,8 +76,22 @@ import { StringMaker } from "../../../../../../../../../org/allbinary/logic/stri
 
     
 
-export class PaymentGatewayEntity extends AbSqlBean
-                , PaymentGatewayEntityInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+export class PaymentGatewayEntity extends AbSqlBean implements PaymentGatewayEntityInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

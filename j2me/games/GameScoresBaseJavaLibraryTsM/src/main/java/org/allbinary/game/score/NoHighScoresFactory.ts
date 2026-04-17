@@ -25,6 +25,27 @@ import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUt
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { HighScoresBase } from "./HighScoresBase.js";
+
+import { HighScoresResultsListener } from "./HighScoresResultsListener.js";
+
+import { HighScoresHelperBase } from "./HighScoresHelperBase.js";
+
 export class NoHighScoresFactory extends HighScoresBase {
         
 

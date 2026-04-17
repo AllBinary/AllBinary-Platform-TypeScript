@@ -22,11 +22,22 @@ import { HashMap } from "../../../../../java/util/HashMap.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { MediaTypeData } from "./MediaTypeData.js";
-
-import { MediaDataFactory } from "./MediaDataFactory.js";
-
-import { MediaDataFactory } from "./MediaDataFactory.js";
 
 import { MediaDataFactory } from "./MediaDataFactory.js";
 

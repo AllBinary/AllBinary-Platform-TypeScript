@@ -22,6 +22,21 @@ import { TimeDelayHelper } from "../../../../../../../org/allbinary/time/TimeDel
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export interface TimeIntervalActionScriptConditionInterface {
         
 

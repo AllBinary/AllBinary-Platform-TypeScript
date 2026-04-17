@@ -25,11 +25,30 @@ import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonS
 
     
 
-import { Short } from "./Short.js";
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { JPanel } from "./JPanel.js";
+
+import { AlwaysActionScriptConditionInterface } from "./AlwaysActionScriptConditionInterface.js";
+
+import { JDialog } from "./JDialog.js";
 
 import { Short } from "./Short.js";
 
-import { Short } from "./Short.js";
+import { ActionEvent } from "./ActionEvent.js";
 
 export class AlwaysActionScriptConditionJPanel extends javax.swing.JPanel {
         

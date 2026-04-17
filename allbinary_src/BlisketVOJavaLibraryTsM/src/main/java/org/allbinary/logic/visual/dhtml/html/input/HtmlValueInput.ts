@@ -22,6 +22,23 @@ import { StringUtil } from "../../../../../../../org/allbinary/logic/string/Stri
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { HtmlInput } from "./HtmlInput.js";
+
 export class HtmlValueInput extends HtmlInput {
         
 

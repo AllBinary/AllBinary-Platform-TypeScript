@@ -19,6 +19,25 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { JPanel } from "./JPanel.js";
+
+import { JComboBox } from "./JComboBox.js";
+
 import { Short } from "./Short.js";
 
 export class InputAutomationTypeJPanel extends javax.swing.JPanel {

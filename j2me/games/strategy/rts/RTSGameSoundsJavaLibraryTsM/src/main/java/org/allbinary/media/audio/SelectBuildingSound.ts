@@ -24,6 +24,21 @@ import { Sound } from "../../../../org/allbinary/media/audio/Sound.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class SelectBuildingSound extends CompositeSound {
         
 

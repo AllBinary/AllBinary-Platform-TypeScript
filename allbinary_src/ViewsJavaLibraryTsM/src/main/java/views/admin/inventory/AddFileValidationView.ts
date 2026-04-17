@@ -85,38 +85,24 @@ import { Node } from "../../../org/w3c/dom/Node.js";
 
     
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
+        
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { InventoryItemView } from "./InventoryItemView.js";
 
-import { Boolean } from "./Boolean.js";
-
-import { Boolean } from "./Boolean.js";
-
-export class AddFileValidationView extends InventoryItemView
-                , ValidationComponentInterface {
+export class AddFileValidationView extends InventoryItemView implements ValidationComponentInterface {
         
 
     private static readonly ADDPRODUCT: string = "Add Product";

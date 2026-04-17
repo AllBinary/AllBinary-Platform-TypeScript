@@ -28,6 +28,21 @@ import { Angle } from "../../../../../org/allbinary/math/Angle.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export interface BasicVelocityInterface {
         
 

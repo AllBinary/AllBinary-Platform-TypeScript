@@ -34,6 +34,33 @@ import { GeographicMapCellTypeFactory } from "../../../../../../../org/allbinary
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { BaseRaceTrackGeographicMap } from "./BaseRaceTrackGeographicMap.js";
+
+import { RaceTrackInfo } from "./RaceTrackInfo.js";
+
+import { RaceTrackData } from "./RaceTrackData.js";
+
+import { AllBinaryTiledLayerFactoryInterface } from "./AllBinaryTiledLayerFactoryInterface.js";
+
+import { CustomMapGeneratorBaseFactory } from "./CustomMapGeneratorBaseFactory.js";
+
+import { CustomMapGeneratorBase } from "./CustomMapGeneratorBase.js";
+
 export class RaceTrackGeographicMap extends BaseRaceTrackGeographicMap {
         
 

@@ -28,6 +28,23 @@ import { RectangleResourceFactoryInterface } from "../../../../org/allbinary/gam
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { ResourceAnimationInterfaceFactoryInterface } from "./ResourceAnimationInterfaceFactoryInterface.js";
+
 export interface FeatureResourceAnimationInterfaceFactoryInterface extends ResourceAnimationInterfaceFactoryInterface, RectangleResourceFactoryInterface, GameFeatureControlledInterface {
         
 

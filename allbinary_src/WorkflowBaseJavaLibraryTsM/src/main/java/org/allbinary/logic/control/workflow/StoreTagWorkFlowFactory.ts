@@ -46,6 +46,23 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { StoreWorkFlowInterface } from "./StoreWorkFlowInterface.js";
+
 export class StoreTagWorkFlowFactory
             extends Object
          {

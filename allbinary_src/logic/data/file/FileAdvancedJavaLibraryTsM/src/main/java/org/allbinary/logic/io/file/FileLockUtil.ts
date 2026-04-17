@@ -37,6 +37,23 @@ import { StreamUtil } from "../../../../../org/allbinary/logic/io/StreamUtil.js"
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { AbFile } from "./AbFile.js";
+
 export class FileLockUtil
             extends Object
          {

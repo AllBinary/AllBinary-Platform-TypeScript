@@ -55,11 +55,24 @@ import { ViewPosition } from "../../../../../org/allbinary/view/ViewPosition.js"
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class BasicWeaponPart
             extends Object
-        
-                , PartInterface
-                , SalvoInterface {
+         implements PartInterface, SalvoInterface {
         
 
     public static readonly NULL_BASIC_WEAPON_PART: BasicWeaponPart = new BasicWeaponPart(NullAnimationFactory.getFactoryInstance()!.getInstance(0));

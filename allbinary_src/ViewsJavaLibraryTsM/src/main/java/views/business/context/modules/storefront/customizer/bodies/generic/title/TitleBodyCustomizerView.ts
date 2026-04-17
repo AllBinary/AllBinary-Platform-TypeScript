@@ -61,8 +61,22 @@ import { HttpStoreComponentView } from "../../../../../../../../../views/busines
 
     
 
-export class TitleBodyCustomizerView extends HttpStoreComponentView
-                , DomNodeInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+export class TitleBodyCustomizerView extends HttpStoreComponentView implements DomNodeInterface {
         
 
     private static readonly NAME: string = "None";

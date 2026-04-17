@@ -49,10 +49,24 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class AbTransformer
             extends Object
-        
-                , BasicTransformerInterface {
+         implements BasicTransformerInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

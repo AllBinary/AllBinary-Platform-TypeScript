@@ -34,12 +34,28 @@ import { Node } from "../../../../../../../../org/w3c/dom/Node.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { StoreFrontInventoryStatisticsInterface } from "./StoreFrontInventoryStatisticsInterface.js";
+
 import { StoreFrontInventoryStatisticsData } from "./StoreFrontInventoryStatisticsData.js";
 
 export class StoreFrontInventoryStatisticsView
             extends Object
-        
-                , DomNodeInterface {
+         implements DomNodeInterface {
         
 
     private storeFrontInventoryStatisticsInterface: StoreFrontInventoryStatisticsInterface

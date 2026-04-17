@@ -28,16 +28,30 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { LastFetchHighScoresFactory } from "./LastFetchHighScoresFactory.js";
 
 import { NullHighScoresSingletonFactory } from "./NullHighScoresSingletonFactory.js";
 
-import { NullHighScoresSingletonFactory } from "./NullHighScoresSingletonFactory.js";
+import { HighScores } from "./HighScores.js";
 
 export class HighScoresHelperBase
             extends Object
-        
-                , HighScoresResultsListener {
+         implements HighScoresResultsListener {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

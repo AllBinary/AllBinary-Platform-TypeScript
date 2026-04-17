@@ -37,14 +37,28 @@ import { Node } from "../../../../../../../../org/w3c/dom/Node.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { SavedCaptureGenericProfileDataWorkerType } from "./SavedCaptureGenericProfileDataWorkerType.js";
 
 import { GenericProfileDataWorkerData } from "./GenericProfileDataWorkerData.js";
 
 export class GenericProfileDataWorkerType
             extends Object
-        
-                , GenericProfileDataWorkerTypeInterface {
+         implements GenericProfileDataWorkerTypeInterface {
         
 
     private hashMap: HashMap<any, any> = new HashMap<any, any>();

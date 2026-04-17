@@ -19,10 +19,24 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class NullPriorityRunnable
             extends Object
-        
-                , PriorityRunnable {
+         implements PriorityRunnable {
         
 
     public getPriority(): number{

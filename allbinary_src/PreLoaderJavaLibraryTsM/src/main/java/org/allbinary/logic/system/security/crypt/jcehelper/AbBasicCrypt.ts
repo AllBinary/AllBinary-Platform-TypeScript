@@ -46,12 +46,26 @@ import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonS
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { KeySpecFactory } from "./KeySpecFactory.js";
 
 export class AbBasicCrypt
             extends Object
-        
-                , CryptInterface {
+         implements CryptInterface {
         
 
     private cipher: Cipher

@@ -34,6 +34,23 @@ import { ImageCopyUtil } from "../../../../org/allbinary/media/image/ImageCopyUt
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { BaseImageAnimationFactory } from "./BaseImageAnimationFactory.js";
+
 export class ImageAnimationFactory extends BaseImageAnimationFactory {
         
 public constructor (image: Image)                        

@@ -31,12 +31,28 @@ import { ScaleProperties } from "../../../org/allbinary/media/ScaleProperties.js
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { AnimationBehaviorFactory } from "./AnimationBehaviorFactory.js";
+
+import { Animation } from "./Animation.js";
 
 export class VectorRotationAnimationInterfaceFactory
             extends Object
-        
-                , AnimationInterfaceFactoryInterface {
+         implements AnimationInterfaceFactoryInterface {
         
 
     private currentPoints: number[][][] = NullUtil.getInstance()!.NULL_INT_ARRAY_ARRAY_ARRAY;

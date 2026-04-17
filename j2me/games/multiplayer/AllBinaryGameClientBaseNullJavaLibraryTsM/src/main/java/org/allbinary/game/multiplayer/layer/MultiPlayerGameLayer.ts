@@ -31,10 +31,26 @@ import { ViewPosition } from "../../../../../org/allbinary/view/ViewPosition.js"
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { RemoteInfo } from "./RemoteInfo.js";
+
 import { MultiplayerBehavior } from "./MultiplayerBehavior.js";
 
-export class MultiPlayerGameLayer extends CollidableDestroyableDamageableLayer
-                , MultiPlayerGameLayerInterface {
+export class MultiPlayerGameLayer extends CollidableDestroyableDamageableLayer implements MultiPlayerGameLayerInterface {
         
 public constructor (remoteInfo: RemoteInfo, groupInterface: Group[], layerInfo: Rectangle, viewPosition: ViewPosition)                        
 

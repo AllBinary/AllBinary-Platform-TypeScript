@@ -5,6 +5,29 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { GL } from "./GL.js";
+
+import { Buffer } from "./Buffer.js";
+
+import { IntBuffer } from "./IntBuffer.js";
+
+import { FloatBuffer } from "./FloatBuffer.js";
+
 export interface GL10 extends javax.microedition.khronos.opengles.GL {
         
 

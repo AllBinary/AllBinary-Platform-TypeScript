@@ -124,6 +124,23 @@ import { RaceTrackGeographicMapCellTypeFactory } from "../../../../../org/allbin
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { RTSFormInput } from "./RTSFormInput.js";
+
 export class BuildingRTSFormInput extends RTSFormInput {
         
 

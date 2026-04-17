@@ -25,9 +25,24 @@ import { PlayN } from "../../../../../playn/core/PlayN.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { LogFormatUtil } from "./LogFormatUtil.js";
 
-import { PreLogUtil } from "./PreLogUtil.js";
+import { Log } from "./Log.js";
 
 import { PreLogUtil } from "./PreLogUtil.js";
 

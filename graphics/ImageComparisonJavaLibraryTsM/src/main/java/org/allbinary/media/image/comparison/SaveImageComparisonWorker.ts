@@ -37,10 +37,26 @@ import { TimeDelayHelper } from "../../../../../org/allbinary/time/TimeDelayHelp
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { ImageComparisonResultsEvent } from "./ImageComparisonResultsEvent.js";
+
 export class SaveImageComparisonWorker
             extends Object
-        
-                , ImageComparisonResultsListener {
+         implements ImageComparisonResultsListener {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

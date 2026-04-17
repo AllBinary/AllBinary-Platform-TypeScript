@@ -28,9 +28,26 @@ import { AbeClientInformationInterface } from "../../../../org/allbinary/logic/s
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { J2MEKeyFactory } from "./J2MEKeyFactory.js";
 
 import { GameKeyFactory } from "./GameKeyFactory.js";
+
+import { Input } from "./Input.js";
 
 export class J2MEGameInputMapping extends PersistentInputMapping {
         

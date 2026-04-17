@@ -22,6 +22,21 @@ import { DomDocumentQueueInterface } from "../../../../../../org/allbinary/data/
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class FileEmailQueue
             extends Object
          {

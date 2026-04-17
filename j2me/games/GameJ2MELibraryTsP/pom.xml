@@ -59,7 +59,7 @@
         <module>../../media/graphics/PlatformNullImageJavaLibraryTsM</module>
         <module>../../media/graphics/ImageCacheBaseJavaLibraryTsM</module>
         <module>../../media/graphics/ImageCacheJ2MEJavaLibraryTsM</module>
-<!--        <module>../../../graphics/opengl/OpenGLJ2MENoneJavaLibraryTsM</module>-->
+        <module>../../../graphics/opengl/OpenGLJ2MENoneJavaLibraryTsM</module>
         <module>../../../graphics/opengl/OpenGLNoneJavaLibraryTsM</module>
         <module>../../../graphics/opengl/OpenGLNoneOtherJavaLibraryTsM</module>
         <module>../../../graphics/opengl/OpenGLESBaseJ2MEJavaLibraryTsM</module>

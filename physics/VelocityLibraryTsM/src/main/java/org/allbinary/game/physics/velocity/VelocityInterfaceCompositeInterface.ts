@@ -19,6 +19,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { BasicVelocityProperties } from "./BasicVelocityProperties.js";
+
 export interface VelocityInterfaceCompositeInterface {
         
 

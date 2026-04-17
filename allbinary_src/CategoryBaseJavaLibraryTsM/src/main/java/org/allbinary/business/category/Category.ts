@@ -60,18 +60,26 @@ import { Node } from "../../../../org/w3c/dom/Node.js";
 
     
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { CategoryInterface } from "./CategoryInterface.js";
 
 export class Category
             extends Object
-        
-                , CategoryInterface {
+         implements CategoryInterface {
         
 
     private static readonly NOT_ROOT: string = "This is not the root so it has no file path.";

@@ -43,8 +43,26 @@ import { CircularIndexUtil } from "../../../org/allbinary/util/CircularIndexUtil
 
     
 
-export class VectorBaseRotationAnimation extends RotationAnimation
-                , VectorAnimationInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { RotationAnimation } from "./RotationAnimation.js";
+
+import { AnimationBehavior } from "./AnimationBehavior.js";
+
+export class VectorBaseRotationAnimation extends RotationAnimation implements VectorAnimationInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

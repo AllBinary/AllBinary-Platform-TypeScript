@@ -22,6 +22,23 @@ import { CollidableCompositeLayer } from "../../../../../org/allbinary/game/laye
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { DestroyableBaseBehavior } from "./DestroyableBaseBehavior.js";
+
 import { DestroyedLayerProcessor } from "./DestroyedLayerProcessor.js";
 
 export class DestroyableSimpleBehavior extends DestroyableBaseBehavior {

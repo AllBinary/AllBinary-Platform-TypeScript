@@ -58,6 +58,25 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { TouchButtonInput } from "./TouchButtonInput.js";
+
+import { TouchButtonResource } from "./TouchButtonResource.js";
+
 export class TouchButton extends Paintable {
         
 

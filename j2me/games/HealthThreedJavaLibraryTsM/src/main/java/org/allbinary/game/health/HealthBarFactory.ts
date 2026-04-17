@@ -28,7 +28,24 @@ import { AllBinaryLayer } from "../../../../org/allbinary/layer/AllBinaryLayer.j
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { Health } from "./Health.js";
+
+import { HealthBar } from "./HealthBar.js";
 
 export class HealthBarFactory
             extends Object

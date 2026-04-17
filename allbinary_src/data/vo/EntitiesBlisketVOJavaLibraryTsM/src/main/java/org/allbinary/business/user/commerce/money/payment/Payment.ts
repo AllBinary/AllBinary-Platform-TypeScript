@@ -48,105 +48,26 @@ import { Node } from "../../../../../../../org/w3c/dom/Node.js";
 
     
 
-import { PaymentData } from "./PaymentData.js";
 
-import { PaymentData } from "./PaymentData.js";
 
-import { PaymentData } from "./PaymentData.js";
 
-import { PaymentData } from "./PaymentData.js";
 
-import { PaymentData } from "./PaymentData.js";
 
-import { PaymentData } from "./PaymentData.js";
 
-import { PaymentData } from "./PaymentData.js";
 
-import { PaymentData } from "./PaymentData.js";
 
-import { PaymentData } from "./PaymentData.js";
 
-import { PaymentData } from "./PaymentData.js";
+        
 
-import { PaymentData } from "./PaymentData.js";
 
-import { PaymentData } from "./PaymentData.js";
 
-import { PaymentData } from "./PaymentData.js";
-
-import { PaymentData } from "./PaymentData.js";
-
-import { PaymentData } from "./PaymentData.js";
-
-import { PaymentData } from "./PaymentData.js";
-
-import { PaymentData } from "./PaymentData.js";
-
-import { PaymentData } from "./PaymentData.js";
-
-import { PaymentData } from "./PaymentData.js";
-
-import { PaymentData } from "./PaymentData.js";
-
-import { PaymentData } from "./PaymentData.js";
-
-import { PaymentData } from "./PaymentData.js";
-
-import { PaymentData } from "./PaymentData.js";
-
-import { PaymentData } from "./PaymentData.js";
-
-import { PaymentData } from "./PaymentData.js";
-
-import { PaymentData } from "./PaymentData.js";
-
-import { PaymentData } from "./PaymentData.js";
-
-import { PaymentData } from "./PaymentData.js";
-
-import { PaymentData } from "./PaymentData.js";
-
-import { Boolean } from "./Boolean.js";
-
-import { Boolean } from "./Boolean.js";
-
-import { PaymentData } from "./PaymentData.js";
-
-import { PaymentData } from "./PaymentData.js";
-
-import { PaymentData } from "./PaymentData.js";
-
-import { PaymentData } from "./PaymentData.js";
-
-import { PaymentData } from "./PaymentData.js";
-
-import { PaymentData } from "./PaymentData.js";
-
-import { PaymentData } from "./PaymentData.js";
-
-import { PaymentData } from "./PaymentData.js";
-
-import { PaymentData } from "./PaymentData.js";
-
-import { PaymentData } from "./PaymentData.js";
-
-import { PaymentData } from "./PaymentData.js";
-
-import { PaymentData } from "./PaymentData.js";
-
-import { PaymentData } from "./PaymentData.js";
-
-import { PaymentData } from "./PaymentData.js";
-
-import { PaymentData } from "./PaymentData.js";
-
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { PaymentData } from "./PaymentData.js";
 
 export class Payment
             extends Object
-        
-                , PaymentInterface
-                , DomNodeInterface {
+         implements PaymentInterface, DomNodeInterface {
         
 
     private name: string

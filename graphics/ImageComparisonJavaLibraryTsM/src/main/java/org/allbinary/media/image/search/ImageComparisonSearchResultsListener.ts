@@ -22,6 +22,23 @@ import { BasicEventListenerInterface } from "../../../../../org/allbinary/logic/
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { ImageComparisonSearchResultsEvent } from "./ImageComparisonSearchResultsEvent.js";
+
 export interface ImageComparisonSearchResultsListener extends BasicEventListenerInterface {
         
 

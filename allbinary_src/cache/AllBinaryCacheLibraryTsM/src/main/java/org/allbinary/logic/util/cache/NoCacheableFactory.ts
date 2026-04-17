@@ -19,10 +19,26 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { CacheableInterface } from "./CacheableInterface.js";
+
 export class NoCacheableFactory
             extends Object
-        
-                , CacheableInterfaceFactoryInterface {
+         implements CacheableInterfaceFactoryInterface {
         
 public constructor (){
 

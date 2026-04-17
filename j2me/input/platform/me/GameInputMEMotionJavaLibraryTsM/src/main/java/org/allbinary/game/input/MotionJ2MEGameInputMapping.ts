@@ -22,6 +22,23 @@ import { InputToGameKeyMapping } from "../../../../org/allbinary/game/input/mapp
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { J2MEGameInputMapping } from "./J2MEGameInputMapping.js";
+
 export class MotionJ2MEGameInputMapping extends J2MEGameInputMapping {
         
 

@@ -34,10 +34,24 @@ import { Node } from "../../../org/w3c/dom/Node.js";
 
     
 
-import { Boolean } from "./Boolean.js";
 
-export class ValidationView extends BasketView
-                , ValidationComponentInterface {
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { BasketView } from "./BasketView.js";
+
+export class ValidationView extends BasketView implements ValidationComponentInterface {
         
 public constructor (transformInfoInterface: TransformInfoInterface)                        
 

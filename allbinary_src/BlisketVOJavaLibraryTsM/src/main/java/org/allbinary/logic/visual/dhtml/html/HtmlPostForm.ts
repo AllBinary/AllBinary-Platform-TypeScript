@@ -19,6 +19,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { HtmlForm } from "./HtmlForm.js";
+
 export class HtmlPostForm extends HtmlForm {
         
 public constructor (action: string)                        

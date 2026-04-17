@@ -22,6 +22,21 @@ import { InputAutomationModuleConfiguration } from "../../../../../org/allbinary
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class InputAutomationConfigurationModuleChangeEvent
             extends Object
          {

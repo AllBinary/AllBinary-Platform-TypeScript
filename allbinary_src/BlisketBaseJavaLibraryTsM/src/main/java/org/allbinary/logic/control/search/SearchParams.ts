@@ -42,34 +42,21 @@ import { Node } from "../../../../../org/w3c/dom/Node.js";
 
     
 
-import { SearchData } from "./SearchData.js";
 
-import { SearchData } from "./SearchData.js";
 
-import { SearchData } from "./SearchData.js";
 
-import { SearchData } from "./SearchData.js";
 
-import { SearchData } from "./SearchData.js";
 
-import { SearchData } from "./SearchData.js";
 
-import { SearchData } from "./SearchData.js";
 
-import { SearchData } from "./SearchData.js";
 
-import { SearchData } from "./SearchData.js";
 
-import { SearchData } from "./SearchData.js";
+        
 
-import { SearchData } from "./SearchData.js";
 
-import { SearchData } from "./SearchData.js";
 
-import { SearchData } from "./SearchData.js";
-
-import { SearchData } from "./SearchData.js";
-
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { SearchData } from "./SearchData.js";
 
 export class SearchParams

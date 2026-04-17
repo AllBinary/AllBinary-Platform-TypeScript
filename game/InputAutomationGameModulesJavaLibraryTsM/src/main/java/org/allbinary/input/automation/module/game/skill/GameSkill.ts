@@ -31,6 +31,25 @@ import { CommonSeps } from "../../../../../../../org/allbinary/string/CommonSeps
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { GameSkillType } from "./GameSkillType.js";
+
+import { GameSkillPropertyInterface } from "./GameSkillPropertyInterface.js";
+
 export class GameSkill
             extends Object
          {

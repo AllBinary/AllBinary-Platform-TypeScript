@@ -31,15 +31,28 @@ import { ScaleProperties } from "../../../org/allbinary/media/ScaleProperties.js
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { AnimationBehavior } from "./AnimationBehavior.js";
 
-import { AnimationBehavior } from "./AnimationBehavior.js";
+import { Animation } from "./Animation.js";
 
 export class RotationAnimationFactory
             extends Object
-        
-                , AnimationInterfaceFactoryInterface
-                , ProceduralAnimationInterfaceFactoryInterface {
+         implements AnimationInterfaceFactoryInterface, ProceduralAnimationInterfaceFactoryInterface {
         
 
     private totalAngle: number

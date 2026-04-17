@@ -28,6 +28,21 @@ import { VelocityProperties } from "../../../../org/allbinary/game/physics/veloc
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class FrictionProperties
             extends Object
          {

@@ -25,6 +25,21 @@ import { Features } from "../../../../org/allbinary/game/configuration/feature/F
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { OpenGLConfiguration } from "./OpenGLConfiguration.js";
 
 import { OpenGLFeatureFactory } from "./OpenGLFeatureFactory.js";

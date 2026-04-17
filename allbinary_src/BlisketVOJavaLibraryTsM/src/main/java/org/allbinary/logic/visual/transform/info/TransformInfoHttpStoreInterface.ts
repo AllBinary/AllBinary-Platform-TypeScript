@@ -19,6 +19,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { TransformInfoHttpInterface } from "./TransformInfoHttpInterface.js";
+
 export interface TransformInfoHttpStoreInterface extends TransformInfoHttpInterface {
         
 

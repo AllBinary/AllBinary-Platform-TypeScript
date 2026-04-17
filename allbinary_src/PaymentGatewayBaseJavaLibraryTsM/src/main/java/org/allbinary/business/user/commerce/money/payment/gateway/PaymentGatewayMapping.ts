@@ -28,10 +28,26 @@ import { TableMappingInterface } from "../../../../../../../../org/allbinary/dat
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { PaymentGatewayInterface } from "./PaymentGatewayInterface.js";
+
 export class PaymentGatewayMapping
             extends Object
-        
-                , TableMappingInterface {
+         implements TableMappingInterface {
         
 
     private paymentGatewayInterface: PaymentGatewayInterface

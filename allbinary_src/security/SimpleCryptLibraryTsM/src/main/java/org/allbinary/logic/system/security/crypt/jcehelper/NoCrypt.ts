@@ -22,10 +22,24 @@ import { CryptInterface } from "../../../../../../../org/allbinary/init/crypt/jc
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class NoCrypt
             extends Object
-        
-                , CryptInterface {
+         implements CryptInterface {
         
 
     public encrypt(array: number[]): number[]{

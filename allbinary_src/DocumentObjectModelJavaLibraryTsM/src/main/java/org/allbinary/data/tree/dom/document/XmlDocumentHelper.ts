@@ -64,6 +64,21 @@ import { InputSource } from "../../../../../../org/xml/sax/InputSource.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class XmlDocumentHelper
             extends Object
          {

@@ -76,18 +76,24 @@ import { NodeList } from "../../../../../../../../org/w3c/dom/NodeList.js";
 
     
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class SimpleStateTaxModule
             extends Object
-        
-                , TaxModuleInterface {
+         implements TaxModuleInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

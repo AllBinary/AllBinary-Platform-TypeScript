@@ -58,7 +58,24 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { GraphicsEnvironment } from "./GraphicsEnvironment.js";
+
+import { InputRobotInterface } from "./InputRobotInterface.js";
 
 export class InputRobotFactory
             extends Object

@@ -40,12 +40,28 @@ import { Node } from "../../../../../../../../org/w3c/dom/Node.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { PaymentGatewayInterface } from "./PaymentGatewayInterface.js";
+
 import { PaymentGatewayData } from "./PaymentGatewayData.js";
 
 export class PaymentGatewayView
             extends Object
-        
-                , DomNodeInterface {
+         implements DomNodeInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

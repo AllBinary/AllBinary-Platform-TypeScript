@@ -22,7 +22,24 @@ import { Node } from "../../../../../../org/w3c/dom/Node.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { PointsDomUtil } from "./PointsDomUtil.js";
+
+import { GraphicItemInterface } from "./GraphicItemInterface.js";
 
 export class GraphicItemBuilder
             extends Object

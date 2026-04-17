@@ -34,6 +34,21 @@ import { JarInputStream } from "../../../../../java/util/jar/JarInputStream.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class JarUtil
             extends Object
          {

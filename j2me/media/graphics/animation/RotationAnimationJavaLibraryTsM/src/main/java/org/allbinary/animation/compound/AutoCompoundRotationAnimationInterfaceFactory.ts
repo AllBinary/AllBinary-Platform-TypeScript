@@ -31,6 +31,23 @@ import { RotationAnimation } from "../../../../org/allbinary/animation/RotationA
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { CompoundAnimationInterfaceFactory } from "./CompoundAnimationInterfaceFactory.js";
+
 export class AutoCompoundRotationAnimationInterfaceFactory extends CompoundAnimationInterfaceFactory {
         
 public constructor (basicAnimationInterfaceFactoryInterfaceArray: AnimationInterfaceFactoryInterface[], animationBehaviorFactory: AnimationBehaviorFactory)                        

@@ -73,8 +73,22 @@ import { TimeDelayHelper } from "../../../../../org/allbinary/time/TimeDelayHelp
 
     
 
-export class TouchButtonsPaintableComposite extends ProcessPaintable
-                , CompleteMotionGestureInputEventListenerInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+export class TouchButtonsPaintableComposite extends ProcessPaintable implements CompleteMotionGestureInputEventListenerInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

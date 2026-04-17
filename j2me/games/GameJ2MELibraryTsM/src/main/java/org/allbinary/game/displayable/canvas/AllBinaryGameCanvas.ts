@@ -384,23 +384,24 @@ import { BasicArrayListUtil } from "../../../../../org/allbinary/util/BasicArray
 
     
 
-import { NoMenuInputProcessor } from "./NoMenuInputProcessor.js";
 
-import { NoMenuInputProcessor } from "./NoMenuInputProcessor.js";
 
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { NoMenuInputProcessor } from "./NoMenuInputProcessor.js";
 
 import { BaseGameBehavior } from "./BaseGameBehavior.js";
-
-import { DemoGameBehavior } from "./DemoGameBehavior.js";
-
-import { BaseMenuBehavior } from "./BaseMenuBehavior.js";
-
-import { BaseGameBehavior } from "./BaseGameBehavior.js";
-
-import { DemoGameBehavior } from "./DemoGameBehavior.js";
-
-import { BaseMenuBehavior } from "./BaseMenuBehavior.js";
 
 import { DemoGameBehavior } from "./DemoGameBehavior.js";
 
@@ -410,36 +411,19 @@ import { InGameMenuBehavior } from "./InGameMenuBehavior.js";
 
 import { FormUtil } from "./FormUtil.js";
 
-import { NoMenuInputProcessor } from "./NoMenuInputProcessor.js";
-
-import { FormUtil } from "./FormUtil.js";
-
-import { FormUtil } from "./FormUtil.js";
-
 import { GameLimitedCommandTextItemArrayFactory } from "./GameLimitedCommandTextItemArrayFactory.js";
-
-import { GameLimitedCommandTextItemArrayFactory } from "./GameLimitedCommandTextItemArrayFactory.js";
-
-import { FormUtil } from "./FormUtil.js";
 
 import { NullWaitGameRunnable } from "./NullWaitGameRunnable.js";
 
 import { NullDemoPaintable } from "./NullDemoPaintable.js";
 
-import { Thread } from "./Thread.js";
+import { DemoPaintableInterface } from "./DemoPaintableInterface.js";
 
-import { Thread } from "./Thread.js";
+import { EndGameInfo } from "./EndGameInfo.js";
 
-import { Thread } from "./Thread.js";
+import { BasicMenuInputProcessor } from "./BasicMenuInputProcessor.js";
 
-export class AllBinaryGameCanvas extends RunnableCanvas
-                , AllBinaryGameCanvasInterface
-                , GameCanvasRunnableInterface
-                , MenuListener
-                , IntermissionCompositeInterface
-                , IntermissionEnableListenerInterface
-                , PopupMenuInterface
-                , DisplayChangeEventListener {
+export class AllBinaryGameCanvas extends RunnableCanvas implements AllBinaryGameCanvasInterface, GameCanvasRunnableInterface, MenuListener, IntermissionCompositeInterface, IntermissionEnableListenerInterface, PopupMenuInterface, DisplayChangeEventListener {
         
 
     private static readonly id: number = 0;
@@ -3079,8 +3063,7 @@ this.gameBehavior!.setHighScore(abeClientInformation, this, name, score, autoSub
                                     
 class SaveHighScoreRunnable
             extends Object
-        
-                , Runnable {
+         implements Runnable {
         
 
     private readonly progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;

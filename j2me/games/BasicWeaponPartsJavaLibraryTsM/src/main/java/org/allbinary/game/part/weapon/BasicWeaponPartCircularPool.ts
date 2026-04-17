@@ -31,7 +31,24 @@ import { AllBinaryLayer } from "../../../../../org/allbinary/layer/AllBinaryLaye
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { BasicWeaponPart } from "./BasicWeaponPart.js";
+
+import { BasicWeaponPartFactoryInterface } from "./BasicWeaponPartFactoryInterface.js";
 
 export class BasicWeaponPartCircularPool
             extends Object

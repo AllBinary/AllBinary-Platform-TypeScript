@@ -28,10 +28,24 @@ import { GeographicMapCellPositionFactoryInitVisitorInterface } from "../../../.
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class GeologicalGeographicMapCellPositionFactoryInitVisitor
             extends Object
-        
-                , GeographicMapCellPositionFactoryInitVisitorInterface {
+         implements GeographicMapCellPositionFactoryInitVisitorInterface {
         
 
                 //@Throws(Error::class)

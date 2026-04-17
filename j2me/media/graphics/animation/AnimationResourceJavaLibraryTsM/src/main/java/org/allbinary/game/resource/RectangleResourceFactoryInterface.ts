@@ -22,6 +22,21 @@ import { Rectangle } from "../../../../org/allbinary/graphics/Rectangle.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export interface RectangleResourceFactoryInterface {
         
 

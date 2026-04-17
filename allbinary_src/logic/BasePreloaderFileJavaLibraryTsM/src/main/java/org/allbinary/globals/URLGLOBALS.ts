@@ -19,7 +19,24 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { AppUrlGlobals } from "./AppUrlGlobals.js";
+
+import { UrlGlobalsInterface } from "./UrlGlobalsInterface.js";
 
 export class URLGLOBALS
             extends Object

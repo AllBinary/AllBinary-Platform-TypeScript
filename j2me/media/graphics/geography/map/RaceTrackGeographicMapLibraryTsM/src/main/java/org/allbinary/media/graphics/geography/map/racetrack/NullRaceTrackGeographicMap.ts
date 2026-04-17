@@ -42,10 +42,28 @@ import { GeographicMapCellType } from "../../../../../../../org/allbinary/media/
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { RaceTrackInfo } from "./RaceTrackInfo.js";
+
+import { RaceTrackData } from "./RaceTrackData.js";
+
 export class NullRaceTrackGeographicMap
             extends Object
-        
-                , RaceTrackGeographicMapInterface {
+         implements RaceTrackGeographicMapInterface {
         
 
     public static readonly NULL_RACE_TRACK_GEOGRAPHIC_MAP: NullRaceTrackGeographicMap = new NullRaceTrackGeographicMap();

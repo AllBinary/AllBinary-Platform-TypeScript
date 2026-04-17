@@ -25,6 +25,23 @@ import { PathFindingNodeCostInfoData } from "../../../../../../../org/allbinary/
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { RaceTrackGeographicMapCellTypeFactory } from "./RaceTrackGeographicMapCellTypeFactory.js";
+
 export class EmptyRaceRaceTrackGeographicMapCellTypeFactory extends RaceTrackGeographicMapCellTypeFactory {
         
 

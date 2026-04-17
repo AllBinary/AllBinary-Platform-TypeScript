@@ -49,13 +49,24 @@ import { Node } from "../../../../../../org/w3c/dom/Node.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { UserConfigurationData } from "./UserConfigurationData.js";
 
-import { UserConfigurationData } from "./UserConfigurationData.js";
-
-import { UserConfigurationData } from "./UserConfigurationData.js";
-
-import { UserConfigurationData } from "./UserConfigurationData.js";
+import { UserConfigurationInterface } from "./UserConfigurationInterface.js";
 
 export class UserConfigurationInterfaceFactory
             extends Object

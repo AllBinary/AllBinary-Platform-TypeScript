@@ -19,10 +19,26 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { DebugInterface } from "./DebugInterface.js";
+
 export class NoDebug
             extends Object
-        
-                , DebugInterface {
+         implements DebugInterface {
         
 
     private SINGLETON: DebugInterface = new NoDebug();

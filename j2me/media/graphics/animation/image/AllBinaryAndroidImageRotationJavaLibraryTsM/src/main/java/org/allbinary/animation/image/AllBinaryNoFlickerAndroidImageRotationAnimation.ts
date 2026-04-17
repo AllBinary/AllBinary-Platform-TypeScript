@@ -46,6 +46,23 @@ import { ImageModifierUtil } from "../../../../org/allbinary/media/image/ImageMo
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { ImageBaseRotationAnimation } from "./ImageBaseRotationAnimation.js";
+
 export class AllBinaryNoFlickerAndroidImageRotationAnimation extends ImageBaseRotationAnimation {
         
 

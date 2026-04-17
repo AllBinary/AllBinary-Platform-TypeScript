@@ -37,9 +37,24 @@ import { AbeClientInformationInterface } from "../../../../org/allbinary/logic/s
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { PCKeyFactory } from "./PCKeyFactory.js";
 
-import { PCKeyFactory } from "./PCKeyFactory.js";
+import { Input } from "./Input.js";
 
 export class PCGameInputMapping extends PersistentInputMapping {
         

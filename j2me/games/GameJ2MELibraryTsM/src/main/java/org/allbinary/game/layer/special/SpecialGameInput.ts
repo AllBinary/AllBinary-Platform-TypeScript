@@ -28,10 +28,24 @@ import { AllBinaryLayerManager } from "../../../../../org/allbinary/layer/AllBin
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class SpecialGameInput
             extends Object
-        
-                , SpecialGameInputInterface {
+         implements SpecialGameInputInterface {
         
 
                 //@Throws(Error::class)

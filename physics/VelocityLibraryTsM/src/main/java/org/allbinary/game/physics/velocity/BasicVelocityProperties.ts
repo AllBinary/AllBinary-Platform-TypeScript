@@ -49,10 +49,24 @@ import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class BasicVelocityProperties
             extends Object
-        
-                , BasicVelocityInterface {
+         implements BasicVelocityInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

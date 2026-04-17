@@ -34,6 +34,21 @@ import { BasicTextJDialog } from "../../../../../org/allbinary/gui/dialog/BasicT
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class DesktopBundle
             extends Object
          {

@@ -22,6 +22,21 @@ import { Vector } from "../../../../../java/util/Vector.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { BasicUserRoleFactory } from "./BasicUserRoleFactory.js";
 
 export class AdminRoleFactory

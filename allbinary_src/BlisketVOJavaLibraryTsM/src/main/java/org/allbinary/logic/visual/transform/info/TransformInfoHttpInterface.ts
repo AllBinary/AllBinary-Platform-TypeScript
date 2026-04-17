@@ -28,6 +28,23 @@ import { WeblisketSessionInterface } from "../../../../../../org/allbinary/logic
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { TransformInfoInterface } from "./TransformInfoInterface.js";
+
 export interface TransformInfoHttpInterface extends TransformInfoInterface {
         
 

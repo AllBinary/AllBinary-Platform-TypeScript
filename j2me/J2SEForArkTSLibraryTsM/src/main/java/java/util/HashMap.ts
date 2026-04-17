@@ -1,7 +1,7 @@
 import ArkTsHashMap from "@ohos.util.HashMap";
 
-/*actual*/ export class HashMap
-            extends ArkTsHashMap
+/*actual*/ export class HashMap<K, V>
+            extends ArkTsHashMap<K, V>
          {
     
 

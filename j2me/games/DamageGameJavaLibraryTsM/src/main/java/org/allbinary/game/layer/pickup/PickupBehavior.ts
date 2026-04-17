@@ -43,12 +43,32 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { PickupProcessorInterface } from "./PickupProcessorInterface.js";
+
 import { PickedUpLayerTypeFactory } from "./PickedUpLayerTypeFactory.js";
+
+import { PickedUpLayerInterface } from "./PickedUpLayerInterface.js";
+
+import { CountedPickedUpLayerInterfaceFactoryInterface } from "./CountedPickedUpLayerInterfaceFactoryInterface.js";
 
 export class PickupBehavior
             extends Object
-        
-                , PickupBehaviorInterface {
+         implements PickupBehaviorInterface {
         
 
     public static readonly NULL_PICKUP_BEHAVIOR: PickupBehavior = new PickupBehavior(CollidableCompositeLayer.NULL_COLLIDABLE_COMPOSITE_LAYER, 0);

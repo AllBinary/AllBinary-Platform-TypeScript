@@ -268,11 +268,22 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { NoMenuInputProcessor } from "./NoMenuInputProcessor.js";
-
-import { NullWaitGameRunnable } from "./NullWaitGameRunnable.js";
-
-import { NullWaitGameRunnable } from "./NullWaitGameRunnable.js";
 
 import { NullWaitGameRunnable } from "./NullWaitGameRunnable.js";
 
@@ -280,16 +291,11 @@ import { FormUtil } from "./FormUtil.js";
 
 import { GameInputMappingCanvas } from "./GameInputMappingCanvas.js";
 
-import { GameInputMappingCanvas } from "./GameInputMappingCanvas.js";
+import { GameCanvasRunnableInterface } from "./GameCanvasRunnableInterface.js";
 
-import { GameInputMappingCanvas } from "./GameInputMappingCanvas.js";
+import { BasicMenuInputProcessor } from "./BasicMenuInputProcessor.js";
 
-import { NullWaitGameRunnable } from "./NullWaitGameRunnable.js";
-
-export class StartCanvas extends RunnableCanvas
-                , GameCanvasRunnableInterface
-                , MenuListener
-                , DisplayChangeEventListener {
+export class StartCanvas extends RunnableCanvas implements GameCanvasRunnableInterface, MenuListener, DisplayChangeEventListener {
         
 
     private static readonly id: number = 0;

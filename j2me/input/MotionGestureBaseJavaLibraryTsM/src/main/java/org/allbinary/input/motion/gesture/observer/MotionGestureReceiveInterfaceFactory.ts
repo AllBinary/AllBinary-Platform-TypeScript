@@ -25,6 +25,23 @@ import { MotionGestureConfigurationFactory } from "../../../../../../org/allbina
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { CompleteMotionGestureListenerInterface } from "./CompleteMotionGestureListenerInterface.js";
+
 export class MotionGestureReceiveInterfaceFactory
             extends Object
          {

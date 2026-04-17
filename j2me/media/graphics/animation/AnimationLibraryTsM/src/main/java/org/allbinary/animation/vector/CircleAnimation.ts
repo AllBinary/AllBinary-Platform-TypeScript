@@ -34,8 +34,22 @@ import { AngleFactory } from "../../../../org/allbinary/math/AngleFactory.js";
 
     
 
-export class CircleAnimation extends Animation
-                , ColorCompositeInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+export class CircleAnimation extends Animation implements ColorCompositeInterface {
         
 
     readonly TOTAL_ANGLE: number = AngleFactory.getInstance()!.TOTAL_ANGLE.toInt();

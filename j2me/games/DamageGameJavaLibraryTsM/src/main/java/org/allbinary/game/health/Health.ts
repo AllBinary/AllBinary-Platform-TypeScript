@@ -28,12 +28,28 @@ import { CommonSeps } from "../../../../org/allbinary/string/CommonSeps.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { NullHealthListener } from "./NullHealthListener.js";
+
+import { HealthListenerInterface } from "./HealthListenerInterface.js";
 
 export class Health
             extends Object
-        
-                , HealthInterface {
+         implements HealthInterface {
         
 
     public static readonly NULL_HEALTH: Health = new Health(0);

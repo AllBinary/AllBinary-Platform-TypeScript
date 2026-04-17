@@ -43,10 +43,24 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class BasicEventHandler
             extends Object
-        
-                , BasicEventHandlerInterface {
+         implements BasicEventHandlerInterface {
         
 
     public static readonly PERFORMANCE_MESSAGE: string = "Use Custom onEvent Methods for needed optimization";

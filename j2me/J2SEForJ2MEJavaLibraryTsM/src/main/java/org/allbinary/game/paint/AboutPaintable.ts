@@ -40,6 +40,21 @@ import { Paintable } from "../../../../org/allbinary/graphics/paint/Paintable.js
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class AboutPaintable extends Paintable {
         
 

@@ -55,11 +55,24 @@ import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class InputAutomationBundleActivator
             extends Object
-        
-                , BundleActivator
-                , InputAutomationBundleActivatorListenerInterface {
+         implements BundleActivator, InputAutomationBundleActivatorListenerInterface {
         
 
     private moduleManagementThread: Thread

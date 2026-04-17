@@ -40,8 +40,22 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
     
 
-export class BasicMenuInputProcessor extends PlayerGameInput
-                , BaseMotionGestureEventListener {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+export class BasicMenuInputProcessor extends PlayerGameInput implements BaseMotionGestureEventListener {
         
 
     public readonly motionGestureEventList: BasicArrayList = new BasicArrayList();

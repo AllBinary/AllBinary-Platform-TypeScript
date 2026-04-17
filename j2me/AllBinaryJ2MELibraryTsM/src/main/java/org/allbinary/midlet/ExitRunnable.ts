@@ -31,10 +31,26 @@ import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { AllBinaryMidlet } from "./AllBinaryMidlet.js";
+
 export class ExitRunnable
             extends Object
-        
-                , Runnable {
+         implements Runnable {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

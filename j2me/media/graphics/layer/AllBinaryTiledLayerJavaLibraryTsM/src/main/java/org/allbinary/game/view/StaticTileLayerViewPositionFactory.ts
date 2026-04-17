@@ -25,10 +25,24 @@ import { ViewPositionFactoryInterface } from "../../../../org/allbinary/view/Vie
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class StaticTileLayerViewPositionFactory
             extends Object
-        
-                , ViewPositionFactoryInterface {
+         implements ViewPositionFactoryInterface {
         
 
                 //@Throws(Error::class)

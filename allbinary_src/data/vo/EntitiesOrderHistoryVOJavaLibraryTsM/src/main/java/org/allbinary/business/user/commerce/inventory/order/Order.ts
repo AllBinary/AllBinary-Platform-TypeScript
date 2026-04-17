@@ -61,35 +61,28 @@ import { Node } from "../../../../../../../org/w3c/dom/Node.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { OrderHistoryData } from "./OrderHistoryData.js";
-
-import { Boolean } from "./Boolean.js";
-
-import { Boolean } from "./Boolean.js";
-
-import { Boolean } from "./Boolean.js";
-
-import { OrderHistoryData } from "./OrderHistoryData.js";
-
-import { OrderHistoryData } from "./OrderHistoryData.js";
-
-import { OrderData } from "./OrderData.js";
-
-import { OrderData } from "./OrderData.js";
-
-import { OrderData } from "./OrderData.js";
-
-import { OrderData } from "./OrderData.js";
-
-import { OrderData } from "./OrderData.js";
 
 import { OrderData } from "./OrderData.js";
 
 export class Order
             extends Object
-        
-                , OrderInterface
-                , Serializable {
+         implements OrderInterface, Serializable {
         
 
     private readonly basket: BasketInterface

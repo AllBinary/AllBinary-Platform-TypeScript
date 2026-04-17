@@ -31,8 +31,24 @@ import { CacheableInterface } from "../../../../org/allbinary/logic/util/cache/C
 
     
 
-export class ImageArrayRotationAnimationCacheable extends AdjustedImageArrayRotationAnimation
-                , CacheableInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { AdjustedImageArrayRotationAnimation } from "./AdjustedImageArrayRotationAnimation.js";
+
+export class ImageArrayRotationAnimationCacheable extends AdjustedImageArrayRotationAnimation implements CacheableInterface {
         
 public constructor (anyType: any = {}, animationBehavior: AnimationBehavior)                        
 

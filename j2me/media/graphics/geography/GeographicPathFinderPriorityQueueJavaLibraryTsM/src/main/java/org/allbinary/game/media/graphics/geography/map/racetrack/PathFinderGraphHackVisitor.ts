@@ -25,6 +25,23 @@ import { BasicGeographicMap } from "../../../../../../../../org/allbinary/media/
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { BasePathFinderGraphVisitor } from "./BasePathFinderGraphVisitor.js";
+
 export class PathFinderGraphHackVisitor extends BasePathFinderGraphVisitor {
         
 public constructor (geographicMapInterface: BasicGeographicMap, edgeMinimum: number, minPathWeight: number, maxPathWeight: number)                        

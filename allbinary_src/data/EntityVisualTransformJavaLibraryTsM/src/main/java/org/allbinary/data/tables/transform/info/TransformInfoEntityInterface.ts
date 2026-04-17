@@ -34,6 +34,21 @@ import { TransformInfoInterface } from "../../../../../../org/allbinary/logic/vi
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export interface TransformInfoEntityInterface extends BasicDataTableInterface {
         
 

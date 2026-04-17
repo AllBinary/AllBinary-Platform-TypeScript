@@ -25,6 +25,21 @@ import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonS
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class LogConfigTypeFactory
             extends Object
          {

@@ -19,6 +19,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { BaseGameStatistics } from "./BaseGameStatistics.js";
+
 expect export class GameStatisticsFactory extends BaseGameStatistics {
         
 

@@ -31,8 +31,22 @@ import { ColorCompositeInterface } from "../../../../org/allbinary/graphics/colo
 
     
 
-export class ARectangleFilledAnimation extends Animation
-                , ColorCompositeInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+export class ARectangleFilledAnimation extends Animation implements ColorCompositeInterface {
         
 
     public x: number= 0

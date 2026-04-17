@@ -25,6 +25,23 @@ import { TenderType } from "../../../../../../../../../org/allbinary/business/us
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { PaymentTransactionInterface } from "./PaymentTransactionInterface.js";
+
 export interface PaymentTransactionInterfaceFactoryInterface {
         
 

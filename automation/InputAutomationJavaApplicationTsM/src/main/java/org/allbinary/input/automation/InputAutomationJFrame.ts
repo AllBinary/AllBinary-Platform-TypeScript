@@ -115,36 +115,38 @@ import { RunnableInterface } from "../../../../org/allbinary/thread/RunnableInte
 
     
 
-import { Short } from "./Short.js";
 
-import { Short } from "./Short.js";
 
-import { Short } from "./Short.js";
 
-import { Short } from "./Short.js";
 
-import { Short } from "./Short.js";
 
-import { Short } from "./Short.js";
 
-import { Short } from "./Short.js";
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { JFrame } from "./JFrame.js";
 
 import { Short } from "./Short.js";
 
 import { Desktop } from "./Desktop.js";
 
-import { Desktop } from "./Desktop.js";
+import { ActionEvent } from "./ActionEvent.js";
 
-import { Short } from "./Short.js";
+import { WindowEvent } from "./WindowEvent.js";
 
-import { Short } from "./Short.js";
+import { FocusEvent } from "./FocusEvent.js";
 
-import { Thread } from "./Thread.js";
+import { ListSelectionEvent } from "./ListSelectionEvent.js";
 
-export class InputAutomationJFrame extends javax.swing.JFrame
-                , InputAutomationConfigurationModuleChangeListener
-                , InputAutomationRobotChangeListener
-                , HelpSetListener {
+import { JPanel } from "./JPanel.js";
+
+export class InputAutomationJFrame extends javax.swing.JFrame implements InputAutomationConfigurationModuleChangeListener, InputAutomationRobotChangeListener, HelpSetListener {
         
 
     private INPUTAUTOMATION_JFRAME: InputAutomationJFrame

@@ -43,14 +43,26 @@ import { Node } from "../../../../org/w3c/dom/Node.js";
 
     
 
-import { UserData } from "./UserData.js";
 
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { UserData } from "./UserData.js";
 
 export class UserDomNode
             extends Object
-        
-                , DomNodeInterface {
+         implements DomNodeInterface {
         
 
     private dataMappingInterface: TableMappingInterface

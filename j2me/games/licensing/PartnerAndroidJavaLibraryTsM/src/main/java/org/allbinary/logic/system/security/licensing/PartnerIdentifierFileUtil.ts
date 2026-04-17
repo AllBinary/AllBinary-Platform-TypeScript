@@ -37,8 +37,21 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
     
 
-import { String } from "./String.js";
 
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class PartnerIdentifierFileUtil
             extends Object
          {

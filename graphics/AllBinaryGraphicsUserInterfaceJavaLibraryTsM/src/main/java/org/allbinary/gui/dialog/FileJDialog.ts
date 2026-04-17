@@ -28,9 +28,32 @@ import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUt
 
     
 
-import { Short } from "./Short.js";
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { JDialog } from "./JDialog.js";
+
+import { Frame } from "./Frame.js";
+
+import { FileJDialogListenerInterface } from "./FileJDialogListenerInterface.js";
 
 import { Short } from "./Short.js";
+
+import { ActionEvent } from "./ActionEvent.js";
+
+import { JFileChooser } from "./JFileChooser.js";
 
 export class FileJDialog extends javax.swing.JDialog {
         

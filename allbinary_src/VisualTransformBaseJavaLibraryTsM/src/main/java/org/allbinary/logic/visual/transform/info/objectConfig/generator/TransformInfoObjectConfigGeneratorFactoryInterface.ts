@@ -22,6 +22,23 @@ import { TransformInfoInterface } from "../../../../../../../../org/allbinary/lo
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { TransformInfoObjectConfigGenerator } from "./TransformInfoObjectConfigGenerator.js";
+
 export interface TransformInfoObjectConfigGeneratorFactoryInterface {
         
 

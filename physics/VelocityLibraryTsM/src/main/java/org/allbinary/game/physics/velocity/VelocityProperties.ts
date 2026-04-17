@@ -19,8 +19,24 @@
 
 
 
-export class VelocityProperties extends BasicVelocityProperties
-                , VelocityInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { BasicVelocityProperties } from "./BasicVelocityProperties.js";
+
+export class VelocityProperties extends BasicVelocityProperties implements VelocityInterface {
         
 
     public static readonly NULL_VELOCITY_PROPERTIES: VelocityProperties = new VelocityProperties(0, 0);

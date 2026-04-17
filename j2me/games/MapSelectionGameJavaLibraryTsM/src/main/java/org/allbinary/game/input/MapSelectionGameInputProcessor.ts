@@ -73,9 +73,24 @@ import { TimeDelayHelper } from "../../../../org/allbinary/time/TimeDelayHelper.
 
     
 
-export class MapSelectionGameInputProcessor extends Processor
-                , GameInputProcessorInterface
-                , PlayerGameInputCompositeInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { PlayerGameInput } from "./PlayerGameInput.js";
+
+export class MapSelectionGameInputProcessor extends Processor implements GameInputProcessorInterface, PlayerGameInputCompositeInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

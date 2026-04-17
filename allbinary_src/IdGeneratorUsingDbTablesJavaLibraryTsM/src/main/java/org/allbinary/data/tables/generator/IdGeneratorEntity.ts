@@ -40,10 +40,22 @@ import { AbSqlBean } from "../../../../../org/allbinary/logic/communication/sql/
 
     
 
-import { Long } from "./Long.js";
 
-export class IdGeneratorEntity extends AbSqlBean
-                , IdGeneratorEntityInterface {
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+export class IdGeneratorEntity extends AbSqlBean implements IdGeneratorEntityInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

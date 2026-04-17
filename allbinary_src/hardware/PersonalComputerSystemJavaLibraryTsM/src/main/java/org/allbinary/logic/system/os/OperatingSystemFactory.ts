@@ -52,13 +52,28 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { NoOperatingSystem } from "./NoOperatingSystem.js";
 
 import { OperatingSystems } from "./OperatingSystems.js";
 
 import { SystemProperties } from "./SystemProperties.js";
 
-import { NoOperatingSystem } from "./NoOperatingSystem.js";
+import { GenericOperatingSystem } from "./GenericOperatingSystem.js";
 
 export class OperatingSystemFactory
             extends Object

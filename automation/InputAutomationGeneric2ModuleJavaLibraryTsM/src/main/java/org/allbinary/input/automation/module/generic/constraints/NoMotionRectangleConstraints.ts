@@ -30,6 +30,23 @@ import { MotionRectangleConstraints } from "../../../../../../../org/allbinary/i
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { Rectangle } from "./Rectangle.js";
+
 export class NoMotionRectangleConstraints extends MotionRectangleConstraints {
         
 public constructor (){

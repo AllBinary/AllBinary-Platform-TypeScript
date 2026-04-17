@@ -37,6 +37,21 @@ import { BasicColor } from "../../../../../../org/allbinary/graphics/color/Basic
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class LapWidget extends BasicHud {
         
 

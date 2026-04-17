@@ -28,10 +28,24 @@ import { UserInterface } from "../../../../../../../../org/allbinary/business/us
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class ProductStoreAdminUserFactory
             extends Object
-        
-                , UserFactoryInterface {
+         implements UserFactoryInterface {
         
 public constructor (){
 

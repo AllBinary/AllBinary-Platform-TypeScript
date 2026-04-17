@@ -43,12 +43,26 @@ import { UserEntityInterface } from "../../../../../../../../org/allbinary/data/
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { StoreFrontUsersStatisticsData } from "./StoreFrontUsersStatisticsData.js";
 
 export class StoreFrontUsersStatistics
             extends Object
-        
-                , StoreFrontUsersStatisticsInterface {
+         implements StoreFrontUsersStatisticsInterface {
         
 
     private totalNumberOfUsers: Long

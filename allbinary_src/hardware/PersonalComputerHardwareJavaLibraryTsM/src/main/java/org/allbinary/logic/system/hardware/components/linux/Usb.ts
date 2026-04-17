@@ -25,11 +25,24 @@ import { UsbInterface } from "../../../../../../../org/allbinary/logic/system/ha
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class Usb
             extends Object
-        
-                , HardwareComponentInterface
-                , UsbInterface {
+         implements HardwareComponentInterface, UsbInterface {
         
 
     private data: string

@@ -22,6 +22,23 @@ import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { Sound } from "./Sound.js";
+
 import { NoPlayer } from "./NoPlayer.js";
 
 export class NoSound extends Sound {

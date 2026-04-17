@@ -55,98 +55,21 @@ import { Node } from "../../../../../org/w3c/dom/Node.js";
 
     
 
-import { StreetAddressData } from "./StreetAddressData.js";
 
-import { StreetAddressData } from "./StreetAddressData.js";
 
-import { StreetAddressData } from "./StreetAddressData.js";
 
-import { StreetAddressData } from "./StreetAddressData.js";
 
-import { StreetAddressData } from "./StreetAddressData.js";
 
-import { StreetAddressData } from "./StreetAddressData.js";
 
-import { StreetAddressData } from "./StreetAddressData.js";
 
-import { StreetAddressData } from "./StreetAddressData.js";
 
-import { StreetAddressData } from "./StreetAddressData.js";
 
-import { StreetAddressData } from "./StreetAddressData.js";
+        
 
-import { StreetAddressData } from "./StreetAddressData.js";
 
-import { StreetAddressData } from "./StreetAddressData.js";
 
-import { StreetAddressData } from "./StreetAddressData.js";
-
-import { StreetAddressData } from "./StreetAddressData.js";
-
-import { StreetAddressData } from "./StreetAddressData.js";
-
-import { StreetAddressData } from "./StreetAddressData.js";
-
-import { StreetAddressData } from "./StreetAddressData.js";
-
-import { StreetAddressData } from "./StreetAddressData.js";
-
-import { StreetAddressData } from "./StreetAddressData.js";
-
-import { StreetAddressData } from "./StreetAddressData.js";
-
-import { StreetAddressData } from "./StreetAddressData.js";
-
-import { StreetAddressData } from "./StreetAddressData.js";
-
-import { Boolean } from "./Boolean.js";
-
-import { Boolean } from "./Boolean.js";
-
-import { Boolean } from "./Boolean.js";
-
-import { Boolean } from "./Boolean.js";
-
-import { StreetAddressData } from "./StreetAddressData.js";
-
-import { StreetAddressData } from "./StreetAddressData.js";
-
-import { StreetAddressData } from "./StreetAddressData.js";
-
-import { StreetAddressData } from "./StreetAddressData.js";
-
-import { StreetAddressData } from "./StreetAddressData.js";
-
-import { StreetAddressData } from "./StreetAddressData.js";
-
-import { StreetAddressData } from "./StreetAddressData.js";
-
-import { StreetAddressData } from "./StreetAddressData.js";
-
-import { StreetAddressData } from "./StreetAddressData.js";
-
-import { StreetAddressData } from "./StreetAddressData.js";
-
-import { StreetAddressData } from "./StreetAddressData.js";
-
-import { StreetAddressData } from "./StreetAddressData.js";
-
-import { StreetAddressData } from "./StreetAddressData.js";
-
-import { StreetAddressData } from "./StreetAddressData.js";
-
-import { StreetAddressData } from "./StreetAddressData.js";
-
-import { StreetAddressData } from "./StreetAddressData.js";
-
-import { StreetAddressData } from "./StreetAddressData.js";
-
-import { StreetAddressData } from "./StreetAddressData.js";
-
-import { StreetAddressData } from "./StreetAddressData.js";
-
-import { StreetAddressData } from "./StreetAddressData.js";
-
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { StreetAddressData } from "./StreetAddressData.js";
 
 export class StreetAddress

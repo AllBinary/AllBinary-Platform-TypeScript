@@ -40,10 +40,24 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class BasicStoreFront
             extends Object
-        
-                , BasicStoreFrontInterface {
+         implements BasicStoreFrontInterface {
         
 
     private name: string

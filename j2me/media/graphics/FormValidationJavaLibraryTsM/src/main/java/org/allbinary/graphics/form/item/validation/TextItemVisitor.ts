@@ -25,6 +25,21 @@ import { Visitor } from "../../../../../../org/allbinary/logic/util/visitor/Visi
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class TextItemVisitor extends Visitor {
         
 public constructor (){

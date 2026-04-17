@@ -34,8 +34,26 @@ import { Node } from "../../../../../../../org/w3c/dom/Node.js";
 
     
 
-export class PickUpShippingModuleView extends PickUpShippingModule
-                , DomNodeInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { PickUpShippingModule } from "./PickUpShippingModule.js";
+
+import { Document } from "./Document.js";
+
+export class PickUpShippingModuleView extends PickUpShippingModule implements DomNodeInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

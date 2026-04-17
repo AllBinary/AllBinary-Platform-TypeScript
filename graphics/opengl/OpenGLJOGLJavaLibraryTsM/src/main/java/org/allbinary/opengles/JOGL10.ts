@@ -22,10 +22,34 @@ import { GLU } from "../../../com/jogamp/opengl/glu/GLU.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { GL } from "./GL.js";
+
+import { GL2 } from "./GL2.js";
+
+import { Buffer } from "./Buffer.js";
+
+import { IntBuffer } from "./IntBuffer.js";
+
+import { FloatBuffer } from "./FloatBuffer.js";
+
 export class JOGL10
             extends Object
-        
-                , javax.microedition.khronos.opengles.GL10 {
+         implements javax.microedition.khronos.opengles.GL10 {
         
 
     readonly RED: string = "red: ";

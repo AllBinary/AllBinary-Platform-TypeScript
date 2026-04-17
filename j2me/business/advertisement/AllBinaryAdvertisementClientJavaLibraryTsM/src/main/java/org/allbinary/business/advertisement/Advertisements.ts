@@ -28,6 +28,23 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { AdvertisementProcessorInterface } from "./AdvertisementProcessorInterface.js";
+
 export class Advertisements
             extends Object
          {

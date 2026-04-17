@@ -43,12 +43,24 @@ import { CustomizerUtil } from "../../../../../../../../views/business/context/m
 
     
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
-export class NewGlobalsValidationView extends GlobalsView
-                , ValidationComponentInterface {
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { GlobalsView } from "./GlobalsView.js";
+
+export class NewGlobalsValidationView extends GlobalsView implements ValidationComponentInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

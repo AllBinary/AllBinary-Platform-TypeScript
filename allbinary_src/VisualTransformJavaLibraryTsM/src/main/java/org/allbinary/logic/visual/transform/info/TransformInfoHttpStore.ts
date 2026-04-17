@@ -49,8 +49,24 @@ import { StringMaker } from "../../../../../../org/allbinary/logic/string/String
 
     
 
-export class TransformInfoHttpStore extends TransformInfoHttp
-                , TransformInfoHttpStoreInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { TransformInfoHttp } from "./TransformInfoHttp.js";
+
+export class TransformInfoHttpStore extends TransformInfoHttp implements TransformInfoHttpStoreInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

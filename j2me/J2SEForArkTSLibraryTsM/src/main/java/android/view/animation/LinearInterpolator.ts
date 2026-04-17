@@ -1,1 +1,6 @@
 
+/*actual*/ export class LinearInterpolator
+{
+
+}
+

@@ -37,10 +37,24 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class InputAutomationServiceFactory
             extends Object
-        
-                , ServiceFactory {
+         implements ServiceFactory {
         
 
     private static readonly inputAutomationServiceFactory: InputAutomationServiceFactory = new InputAutomationServiceFactory();

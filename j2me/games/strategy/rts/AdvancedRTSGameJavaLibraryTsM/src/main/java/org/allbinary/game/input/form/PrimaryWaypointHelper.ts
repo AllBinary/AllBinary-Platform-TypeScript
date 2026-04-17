@@ -31,6 +31,21 @@ import { WaypointLayer } from "../../../../../org/allbinary/game/layer/waypoint/
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class PrimaryWaypointHelper
             extends Object
          {

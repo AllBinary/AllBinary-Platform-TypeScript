@@ -37,8 +37,22 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
     
 
-export class CompleteMotionGestureInputEvent extends AllBinaryEventObject
-                , CompleteMotionGestureInputInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+export class CompleteMotionGestureInputEvent extends AllBinaryEventObject implements CompleteMotionGestureInputInterface {
         
 
     public static readonly NULL_COMPLETE_MOTION_GESTURE_INPUT_EVENT: CompleteMotionGestureInputEvent = new CompleteMotionGestureInputEvent(StringUtil.getInstance()!.EMPTY_STRING, TouchMotionGestureFactory.getInstance()!.NO_MOTION);

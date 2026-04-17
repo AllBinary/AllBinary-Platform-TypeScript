@@ -19,6 +19,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { StupidTimer } from "./StupidTimer.js";
+
 export class RendererInitializedStupidTimerFactory
             extends Object
          {

@@ -52,13 +52,24 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { SqlTypeStrings } from "./SqlTypeStrings.js";
 
 import { SqlStrings } from "./SqlStrings.js";
-
-import { Thread } from "./Thread.js";
-
-import { Thread } from "./Thread.js";
 
 export class AbSqlBasic
             extends Object

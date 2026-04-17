@@ -51,18 +51,28 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
     
 
-import { Float } from "./Float.js";
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { JPanel } from "./JPanel.js";
 
 import { Short } from "./Short.js";
 
-import { Short } from "./Short.js";
+import { ActionEvent } from "./ActionEvent.js";
 
-import { Short } from "./Short.js";
-
-import { Short } from "./Short.js";
-
-export class ResizeImageJPanel extends javax.swing.JPanel
-                , ImageProcessorInputCompositeInterface {
+export class ResizeImageJPanel extends javax.swing.JPanel implements ImageProcessorInputCompositeInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

@@ -19,6 +19,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { LayerPlacementInterfaceBasicArrayListFactoryInterface } from "./LayerPlacementInterfaceBasicArrayListFactoryInterface.js";
+
 export interface GameLayerPlacementInterfaceBasicArrayListFactoryInterfaceFactory {
         
 

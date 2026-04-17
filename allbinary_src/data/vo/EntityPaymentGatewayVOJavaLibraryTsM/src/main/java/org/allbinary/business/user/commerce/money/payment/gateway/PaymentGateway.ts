@@ -43,142 +43,26 @@ import { StringUtil } from "../../../../../../../../org/allbinary/logic/string/S
 
     
 
-import { PaymentGatewayData } from "./PaymentGatewayData.js";
 
-import { PaymentGatewayData } from "./PaymentGatewayData.js";
 
-import { PaymentGatewayData } from "./PaymentGatewayData.js";
 
-import { PaymentGatewayData } from "./PaymentGatewayData.js";
 
-import { PaymentGatewayData } from "./PaymentGatewayData.js";
 
-import { PaymentGatewayData } from "./PaymentGatewayData.js";
 
-import { PaymentGatewayData } from "./PaymentGatewayData.js";
 
-import { PaymentGatewayData } from "./PaymentGatewayData.js";
 
-import { PaymentGatewayData } from "./PaymentGatewayData.js";
 
-import { PaymentGatewayData } from "./PaymentGatewayData.js";
+        
 
-import { PaymentGatewayData } from "./PaymentGatewayData.js";
 
-import { PaymentGatewayData } from "./PaymentGatewayData.js";
 
-import { PaymentGatewayData } from "./PaymentGatewayData.js";
-
-import { PaymentGatewayData } from "./PaymentGatewayData.js";
-
-import { PaymentGatewayData } from "./PaymentGatewayData.js";
-
-import { PaymentGatewayData } from "./PaymentGatewayData.js";
-
-import { PaymentGatewayData } from "./PaymentGatewayData.js";
-
-import { PaymentGatewayData } from "./PaymentGatewayData.js";
-
-import { PaymentGatewayData } from "./PaymentGatewayData.js";
-
-import { PaymentGatewayData } from "./PaymentGatewayData.js";
-
-import { PaymentGatewayData } from "./PaymentGatewayData.js";
-
-import { PaymentGatewayData } from "./PaymentGatewayData.js";
-
-import { PaymentGatewayData } from "./PaymentGatewayData.js";
-
-import { PaymentGatewayData } from "./PaymentGatewayData.js";
-
-import { PaymentGatewayData } from "./PaymentGatewayData.js";
-
-import { PaymentGatewayData } from "./PaymentGatewayData.js";
-
-import { PaymentGatewayData } from "./PaymentGatewayData.js";
-
-import { PaymentGatewayData } from "./PaymentGatewayData.js";
-
-import { PaymentGatewayData } from "./PaymentGatewayData.js";
-
-import { PaymentGatewayData } from "./PaymentGatewayData.js";
-
-import { PaymentGatewayData } from "./PaymentGatewayData.js";
-
-import { PaymentGatewayData } from "./PaymentGatewayData.js";
-
-import { PaymentGatewayData } from "./PaymentGatewayData.js";
-
-import { PaymentGatewayData } from "./PaymentGatewayData.js";
-
-import { PaymentGatewayData } from "./PaymentGatewayData.js";
-
-import { PaymentGatewayData } from "./PaymentGatewayData.js";
-
-import { PaymentGatewayData } from "./PaymentGatewayData.js";
-
-import { PaymentGatewayData } from "./PaymentGatewayData.js";
-
-import { PaymentGatewayData } from "./PaymentGatewayData.js";
-
-import { PaymentGatewayData } from "./PaymentGatewayData.js";
-
-import { PaymentGatewayData } from "./PaymentGatewayData.js";
-
-import { PaymentGatewayData } from "./PaymentGatewayData.js";
-
-import { PaymentGatewayData } from "./PaymentGatewayData.js";
-
-import { PaymentGatewayData } from "./PaymentGatewayData.js";
-
-import { PaymentGatewayData } from "./PaymentGatewayData.js";
-
-import { PaymentGatewayData } from "./PaymentGatewayData.js";
-
-import { PaymentGatewayData } from "./PaymentGatewayData.js";
-
-import { PaymentGatewayData } from "./PaymentGatewayData.js";
-
-import { PaymentGatewayData } from "./PaymentGatewayData.js";
-
-import { PaymentGatewayData } from "./PaymentGatewayData.js";
-
-import { PaymentGatewayData } from "./PaymentGatewayData.js";
-
-import { PaymentGatewayData } from "./PaymentGatewayData.js";
-
-import { PaymentGatewayData } from "./PaymentGatewayData.js";
-
-import { PaymentGatewayData } from "./PaymentGatewayData.js";
-
-import { PaymentGatewayData } from "./PaymentGatewayData.js";
-
-import { PaymentGatewayData } from "./PaymentGatewayData.js";
-
-import { PaymentGatewayData } from "./PaymentGatewayData.js";
-
-import { PaymentGatewayData } from "./PaymentGatewayData.js";
-
-import { PaymentGatewayData } from "./PaymentGatewayData.js";
-
-import { PaymentGatewayData } from "./PaymentGatewayData.js";
-
-import { PaymentGatewayData } from "./PaymentGatewayData.js";
-
-import { PaymentGatewayData } from "./PaymentGatewayData.js";
-
-import { PaymentGatewayData } from "./PaymentGatewayData.js";
-
-import { PaymentGatewayData } from "./PaymentGatewayData.js";
-
-import { PaymentGatewayData } from "./PaymentGatewayData.js";
-
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { PaymentGatewayData } from "./PaymentGatewayData.js";
 
 export class PaymentGateway
             extends Object
-        
-                , PaymentGatewayInterface {
+         implements PaymentGatewayInterface {
         
 
     private storeName: string

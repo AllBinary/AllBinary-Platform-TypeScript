@@ -28,7 +28,22 @@ import { GeographicMapCellPosition } from "../../../../org/allbinary/media/graph
 
     
 
-import { Thread } from "./Thread.js";
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { WaypointPathRunnableBase } from "./WaypointPathRunnableBase.js";
 
 export class WaypointPathRunnable extends WaypointPathRunnableBase {
         

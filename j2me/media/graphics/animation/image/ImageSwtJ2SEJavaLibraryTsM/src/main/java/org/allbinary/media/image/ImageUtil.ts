@@ -64,6 +64,23 @@ import { BareMain } from "../../../../org/microemu/app/BareMain.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { Image } from "./Image.js";
+
 export class ImageUtil
             extends Object
          {

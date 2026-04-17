@@ -46,8 +46,28 @@ import { CommonStrings } from "../../../../../../../../../../org/allbinary/strin
 
     
 
-export class GenericProfileActionScriptJPanel extends javax.swing.JPanel
-                , JTreeInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { JPanel } from "./JPanel.js";
+
+import { GenericProfileActionScript } from "./GenericProfileActionScript.js";
+
+import { JTree } from "./JTree.js";
+
+export class GenericProfileActionScriptJPanel extends javax.swing.JPanel implements JTreeInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

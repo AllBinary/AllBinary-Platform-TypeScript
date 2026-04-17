@@ -70,14 +70,28 @@ import { MusicThreadPool } from "../../../../org/allbinary/thread/MusicThreadPoo
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { BasicPlayer } from "./BasicPlayer.js";
+
 import { NullAudioFormat } from "./NullAudioFormat.js";
 
 import { Math } from "./Math.js";
 
-import { Math } from "./Math.js";
-
-export class PCClipWavPlayer extends BasicPlayer
-                , LineListener {
+export class PCClipWavPlayer extends BasicPlayer implements LineListener {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

@@ -37,7 +37,26 @@ import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUt
 
     
 
-import { FormTypeFactory } from "./FormTypeFactory.js";
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { ScrollSelectionForm } from "./ScrollSelectionForm.js";
+
+import { ItemPaintableFactory } from "./ItemPaintableFactory.js";
+
+import { FormType } from "./FormType.js";
 
 import { FormTypeFactory } from "./FormTypeFactory.js";
 

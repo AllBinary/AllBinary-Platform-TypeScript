@@ -19,6 +19,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { TouchButtonInput } from "./TouchButtonInput.js";
+
 export class TouchButtonVisitor
             extends Object
          {

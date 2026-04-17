@@ -19,10 +19,26 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { AllBinaryEventObject } from "./AllBinaryEventObject.js";
+
 export class NullEventListener
             extends Object
-        
-                , EventListenerInterface {
+         implements EventListenerInterface {
         
 
     public static readonly NULL_EVENT_LISTENER: NullEventListener = new NullEventListener();

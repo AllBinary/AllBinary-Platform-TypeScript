@@ -166,11 +166,26 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { NoMenuInputProcessor } from "./NoMenuInputProcessor.js";
 
-export class GameCommandCanvas extends MyCanvas
-                , MenuListener
-                , DisplayChangeEventListener {
+import { BasicMenuInputProcessor } from "./BasicMenuInputProcessor.js";
+
+export class GameCommandCanvas extends MyCanvas implements MenuListener, DisplayChangeEventListener {
         
 
     private static readonly id: number = 0;

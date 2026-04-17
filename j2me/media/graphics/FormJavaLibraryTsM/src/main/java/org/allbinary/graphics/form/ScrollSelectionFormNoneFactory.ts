@@ -31,7 +31,24 @@ import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { FormTypeFactory } from "./FormTypeFactory.js";
+
+import { ScrollSelectionForm } from "./ScrollSelectionForm.js";
 
 export class ScrollSelectionFormNoneFactory
             extends Object

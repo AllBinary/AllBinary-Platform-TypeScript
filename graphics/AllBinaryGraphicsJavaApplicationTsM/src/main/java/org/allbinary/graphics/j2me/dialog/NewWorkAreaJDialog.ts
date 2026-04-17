@@ -45,6 +45,27 @@ import { WorkAreaJPanelInterface } from "../../../../../org/allbinary/graphics/j
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { JDialog } from "./JDialog.js";
+
+import { Dimension } from "./Dimension.js";
+
+import { WindowEvent } from "./WindowEvent.js";
+
 export class NewWorkAreaJDialog extends javax.swing.JDialog {
         
 

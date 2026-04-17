@@ -19,6 +19,29 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { AutomaticCacheInterface } from "./AutomaticCacheInterface.js";
+
+import { CacheableInterfaceFactoryInterface } from "./CacheableInterfaceFactoryInterface.js";
+
+import { CacheType } from "./CacheType.js";
+
+import { CachePolicy } from "./CachePolicy.js";
+
 export class AutomaticCacheInterfaceFactory
             extends Object
          {

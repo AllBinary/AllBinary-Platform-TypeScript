@@ -8,6 +8,23 @@ import { KeyEvent } from "../../../../android/view/KeyEvent.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { AndroidKeyFactory } from "./AndroidKeyFactory.js";
+
 export class AndroidAPI9KeyFactory extends AndroidKeyFactory {
         
 

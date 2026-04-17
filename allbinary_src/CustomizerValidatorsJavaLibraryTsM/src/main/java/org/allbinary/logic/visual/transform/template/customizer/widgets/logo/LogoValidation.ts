@@ -64,40 +64,24 @@ import { Node } from "../../../../../../../../../org/w3c/dom/Node.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { LogoData } from "./LogoData.js";
 
-import { LogoData } from "./LogoData.js";
-
-import { LogoData } from "./LogoData.js";
-
-import { LogoData } from "./LogoData.js";
-
-import { Boolean } from "./Boolean.js";
-
-import { Boolean } from "./Boolean.js";
-
-import { Boolean } from "./Boolean.js";
-
-import { Boolean } from "./Boolean.js";
-
-import { Boolean } from "./Boolean.js";
-
-import { Boolean } from "./Boolean.js";
-
-import { LogoData } from "./LogoData.js";
-
-import { LogoData } from "./LogoData.js";
-
-import { LogoData } from "./LogoData.js";
-
-import { LogoData } from "./LogoData.js";
-
-import { LogoData } from "./LogoData.js";
-
-import { LogoData } from "./LogoData.js";
-
-export class LogoValidation extends Validation
-                , DomNodeInterface {
+export class LogoValidation extends Validation implements DomNodeInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

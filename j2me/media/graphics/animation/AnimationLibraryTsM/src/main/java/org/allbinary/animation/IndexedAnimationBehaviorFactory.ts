@@ -19,6 +19,25 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { AnimationBehaviorFactory } from "./AnimationBehaviorFactory.js";
+
+import { AnimationBehavior } from "./AnimationBehavior.js";
+
 export class IndexedAnimationBehaviorFactory extends AnimationBehaviorFactory {
         
 

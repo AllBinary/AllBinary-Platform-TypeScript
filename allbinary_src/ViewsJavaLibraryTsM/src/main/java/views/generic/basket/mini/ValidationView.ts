@@ -28,10 +28,28 @@ import { TransformInfoInterface } from "../../../../org/allbinary/logic/visual/t
 
     
 
-import { Boolean } from "./Boolean.js";
 
-export class ValidationView extends MiniBasketView
-                , ValidationComponentInterface {
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { MiniBasketView } from "./MiniBasketView.js";
+
+import { Document } from "./Document.js";
+
+import { Node } from "./Node.js";
+
+export class ValidationView extends MiniBasketView implements ValidationComponentInterface {
         
 public constructor (transformInfoInterface: TransformInfoInterface)                        
 

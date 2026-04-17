@@ -19,8 +19,24 @@
 
 
 
-export class InitUpdatePaintable extends Paintable
-                , InitUpdatePaintableInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { Paintable } from "./Paintable.js";
+
+export class InitUpdatePaintable extends Paintable implements InitUpdatePaintableInterface {
         
 protected constructor (){
 

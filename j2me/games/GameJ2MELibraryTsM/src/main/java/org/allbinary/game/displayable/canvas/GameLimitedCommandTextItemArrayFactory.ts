@@ -25,6 +25,21 @@ import { LimitCommandsVisitor } from "../../../../../org/allbinary/graphics/form
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class GameLimitedCommandTextItemArrayFactory
             extends Object
          {

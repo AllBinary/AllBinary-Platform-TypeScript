@@ -46,14 +46,24 @@ import { StoreCustomizerComponentUtil } from "../../../../../../../../../views/b
 
     
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
-export class InsertCssValidationView extends CssCustomizerView
-                , ValidationComponentInterface {
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { CssCustomizerView } from "./CssCustomizerView.js";
+
+export class InsertCssValidationView extends CssCustomizerView implements ValidationComponentInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

@@ -37,6 +37,23 @@ import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { ClassLoader } from "./ClassLoader.js";
+
 export class Globals
             extends Object
          {

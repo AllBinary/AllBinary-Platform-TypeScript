@@ -25,6 +25,23 @@ import { CommonStrings } from "../../../../../../../../../org/allbinary/string/C
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { CustomItemsEntity } from "./CustomItemsEntity.js";
+
 export class CustomItemsEntityFactory
             extends Object
          {

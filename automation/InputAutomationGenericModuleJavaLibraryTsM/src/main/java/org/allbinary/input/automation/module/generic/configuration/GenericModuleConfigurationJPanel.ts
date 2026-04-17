@@ -46,28 +46,30 @@ import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonS
 
     
 
-import { Short } from "./Short.js";
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { JPanel } from "./JPanel.js";
 
 import { Short } from "./Short.js";
 
-import { Short } from "./Short.js";
+import { ActionEvent } from "./ActionEvent.js";
 
-import { Short } from "./Short.js";
+import { ListSelectionEvent } from "./ListSelectionEvent.js";
 
-import { Short } from "./Short.js";
-
-import { Short } from "./Short.js";
-
-import { Short } from "./Short.js";
-
-import { Short } from "./Short.js";
-
-import { Short } from "./Short.js";
-
-import { Short } from "./Short.js";
-
-export class GenericModuleConfigurationJPanel extends javax.swing.JPanel
-                , GenericModuleConfigurationInterface {
+export class GenericModuleConfigurationJPanel extends javax.swing.JPanel implements GenericModuleConfigurationInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

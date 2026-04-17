@@ -123,10 +123,24 @@ import { InventorySearchUtil } from "../../../../views/generic/inventory/Invento
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class ProductListing
             extends Object
-        
-                , ProductListingInterface {
+         implements ProductListingInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

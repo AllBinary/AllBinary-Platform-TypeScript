@@ -19,10 +19,26 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { ViewPosition } from "./ViewPosition.js";
+
 export class ViewPositionFactory
             extends Object
-        
-                , ViewPositionFactoryInterface {
+         implements ViewPositionFactoryInterface {
         
 
     public getInstance(): ViewPosition{

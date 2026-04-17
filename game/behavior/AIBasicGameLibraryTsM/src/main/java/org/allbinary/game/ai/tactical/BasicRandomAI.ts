@@ -48,6 +48,21 @@ import { GameTickTimeDelayHelperFactory } from "../../../../../org/allbinary/tim
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class BasicRandomAI extends BasicAI {
         
 

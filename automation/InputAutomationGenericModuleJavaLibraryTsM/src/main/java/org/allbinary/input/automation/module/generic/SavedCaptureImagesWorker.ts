@@ -73,8 +73,22 @@ import { TimeDelayHelper } from "../../../../../../org/allbinary/time/TimeDelayH
 
     
 
-export class SavedCaptureImagesWorker extends BasicEventHandler
-                , CaptureWorkerInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+export class SavedCaptureImagesWorker extends BasicEventHandler implements CaptureWorkerInterface {
         
 
     private index: number

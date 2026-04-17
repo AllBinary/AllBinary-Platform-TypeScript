@@ -55,20 +55,28 @@ import { HashtableUtil } from "../../../../../org/allbinary/util/HashtableUtil.j
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { RemoteHighScoresData } from "./RemoteHighScoresData.js";
 
-import { RemoteHighScoresData } from "./RemoteHighScoresData.js";
-
-import { RemoteHighScoresData } from "./RemoteHighScoresData.js";
-
-import { RemoteHighScoresData } from "./RemoteHighScoresData.js";
-
-import { Long } from "./Long.js";
+import { RemoteHighScores } from "./RemoteHighScores.js";
 
 export class RemoteHighScoresSubmissionProcessor
             extends Object
-        
-                , RemoteHighScoresSubmissionProcessorInterface {
+         implements RemoteHighScoresSubmissionProcessorInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

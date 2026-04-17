@@ -25,6 +25,23 @@ import { AnimationBehaviorFactory } from "../../../../org/allbinary/animation/An
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { AllBinaryAndroidImageRotationAnimationFactory } from "./AllBinaryAndroidImageRotationAnimationFactory.js";
+
 export class AllBinaryPlatformImageRotationAnimationFactory extends AllBinaryAndroidImageRotationAnimationFactory {
         
 public constructor (image: Image, width: number, height: number, angleIncrement: number, animationBehaviorFactory: AnimationBehaviorFactory, resizeCanvasForRotation: boolean)                        

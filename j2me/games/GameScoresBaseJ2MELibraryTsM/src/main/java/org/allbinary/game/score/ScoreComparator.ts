@@ -40,12 +40,24 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
     
 
-import { Long } from "./Long.js";
 
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class ScoreComparator
             extends Object
-        
-                , RecordComparator {
+         implements RecordComparator {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

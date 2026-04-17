@@ -19,6 +19,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { StatePaintable } from "./StatePaintable.js";
+
 export class StatePaintableFactory
             extends Object
          {

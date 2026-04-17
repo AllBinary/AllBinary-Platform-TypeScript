@@ -28,6 +28,23 @@ import { PlatformTextureBaseFactory } from "../../../../org/allbinary/platform/o
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { OpenGLImageFactory } from "./OpenGLImageFactory.js";
+
 export class OpenGLESGL11VBOImageFactory extends OpenGLImageFactory {
         
 

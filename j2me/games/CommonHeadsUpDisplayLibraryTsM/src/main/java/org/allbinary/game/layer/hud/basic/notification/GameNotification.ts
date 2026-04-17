@@ -42,6 +42,21 @@ import { BasicArrayList } from "../../../../../../../org/allbinary/util/BasicArr
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class GameNotification
             extends Object
          {

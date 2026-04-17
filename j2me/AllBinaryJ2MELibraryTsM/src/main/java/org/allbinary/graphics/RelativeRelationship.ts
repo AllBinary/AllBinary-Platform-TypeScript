@@ -25,7 +25,24 @@ import { BasicArrayListUtil } from "../../../org/allbinary/util/BasicArrayListUt
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { PointFactory } from "./PointFactory.js";
+
+import { GPoint } from "./GPoint.js";
 
 export class RelativeRelationship
             extends Object

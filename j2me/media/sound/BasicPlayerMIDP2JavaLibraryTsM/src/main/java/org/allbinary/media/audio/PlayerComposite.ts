@@ -52,11 +52,24 @@ import { TimeDelayHelper } from "../../../../org/allbinary/time/TimeDelayHelper.
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class PlayerComposite
             extends Object
-        
-                , Controllable
-                , Player {
+         implements Controllable, Player {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

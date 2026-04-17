@@ -42,12 +42,34 @@ import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { GraphicsDevice } from "./GraphicsDevice.js";
+
 import { MouseInfo } from "./MouseInfo.js";
+
+import { Point } from "./Point.js";
+
+import { Rectangle } from "./Rectangle.js";
+
+import { Color } from "./Color.js";
 
 export class InputRobot
             extends Object
-        
-                , InputRobotInterface {
+         implements InputRobotInterface {
         
 
     public static readonly NAME: string = "Java Robot";

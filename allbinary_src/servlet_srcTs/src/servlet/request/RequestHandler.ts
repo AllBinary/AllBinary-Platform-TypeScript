@@ -43,6 +43,29 @@ import { RequestWorkFlowFactory } from "../../org/allbinary/logic/control/workfl
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { HttpServlet } from "./HttpServlet.js";
+
+import { ServletConfig } from "./ServletConfig.js";
+
+import { HttpServletRequest } from "./HttpServletRequest.js";
+
+import { HttpServletResponse } from "./HttpServletResponse.js";
+
 export class RequestHandler extends HttpServlet {
         
 

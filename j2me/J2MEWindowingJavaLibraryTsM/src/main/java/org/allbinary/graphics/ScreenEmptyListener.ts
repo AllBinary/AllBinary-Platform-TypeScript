@@ -19,10 +19,24 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class ScreenEmptyListener
             extends Object
-        
-                , ScreenListenerInterface {
+         implements ScreenListenerInterface {
         
 
     public onFullScreen(isFullScreen: boolean){

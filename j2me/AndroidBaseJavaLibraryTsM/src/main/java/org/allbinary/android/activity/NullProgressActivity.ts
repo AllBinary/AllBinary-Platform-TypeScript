@@ -19,10 +19,26 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { Runnable } from "./Runnable.js";
+
 export class NullProgressActivity
             extends Object
-        
-                , ProgressActivityInterface {
+         implements ProgressActivityInterface {
         
 
     public static readonly NULL_PROGRESS_ACTIVITY: NullProgressActivity = new NullProgressActivity();

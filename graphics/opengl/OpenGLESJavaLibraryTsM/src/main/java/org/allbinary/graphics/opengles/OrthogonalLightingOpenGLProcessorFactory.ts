@@ -19,8 +19,21 @@
 
 
 
-import { NullOpenGLProcessorFactory } from "./NullOpenGLProcessorFactory.js";
 
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { NullOpenGLProcessorFactory } from "./NullOpenGLProcessorFactory.js";
 
 export class OrthogonalLightingOpenGLProcessorFactory

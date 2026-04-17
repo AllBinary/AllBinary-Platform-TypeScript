@@ -43,6 +43,23 @@ import { AllBinaryLayerManager } from "../../../../../org/allbinary/layer/AllBin
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { BasicWeaponPart } from "./BasicWeaponPart.js";
+
 export class BasicProjectileWeaponPart extends BasicWeaponPart {
         
 

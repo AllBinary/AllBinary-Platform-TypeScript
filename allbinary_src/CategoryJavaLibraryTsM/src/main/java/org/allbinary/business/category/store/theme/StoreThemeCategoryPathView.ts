@@ -40,8 +40,24 @@ import { Node } from "../../../../../../org/w3c/dom/Node.js";
 
     
 
-export class StoreThemeCategoryPathView extends CategoryView
-                , DomNodeInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { StoreThemeCategoryInterface } from "./StoreThemeCategoryInterface.js";
+
+export class StoreThemeCategoryPathView extends CategoryView implements DomNodeInterface {
         
 public constructor (categoryInterface: StoreThemeCategoryInterface)                        
 

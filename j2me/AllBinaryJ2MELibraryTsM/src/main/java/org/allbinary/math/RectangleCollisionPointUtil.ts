@@ -25,8 +25,21 @@ import { BasicArrayList } from "../../../org/allbinary/util/BasicArrayList.js";
 
     
 
-import { RectangleCollisionUtil } from "./RectangleCollisionUtil.js";
 
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { RectangleCollisionUtil } from "./RectangleCollisionUtil.js";
 
 export class RectangleCollisionPointUtil

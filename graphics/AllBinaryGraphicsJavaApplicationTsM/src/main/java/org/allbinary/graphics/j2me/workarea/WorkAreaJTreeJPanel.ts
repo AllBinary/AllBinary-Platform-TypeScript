@@ -61,6 +61,27 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { JPanel } from "./JPanel.js";
+
+import { MouseEvent } from "./MouseEvent.js";
+
+import { PopupMenuEvent } from "./PopupMenuEvent.js";
+
 export class WorkAreaJTreeJPanel extends javax.swing.JPanel {
         
 

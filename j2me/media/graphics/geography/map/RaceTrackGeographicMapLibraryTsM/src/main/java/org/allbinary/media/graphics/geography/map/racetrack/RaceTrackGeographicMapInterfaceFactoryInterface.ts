@@ -21,6 +21,23 @@
             import { Integer } from "../../../../../../../java/lang/Integer.js";
         
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { RaceTrackGeographicMap } from "./RaceTrackGeographicMap.js";
+
 export interface RaceTrackGeographicMapInterfaceFactoryInterface {
         
 

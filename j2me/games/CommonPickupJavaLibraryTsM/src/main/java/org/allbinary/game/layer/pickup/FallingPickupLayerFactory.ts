@@ -25,10 +25,24 @@ import { AllBinaryLayerFactoryInterface } from "../../../../../org/allbinary/lay
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class FallingPickupLayerFactory
             extends Object
-        
-                , AllBinaryLayerFactoryInterface {
+         implements AllBinaryLayerFactoryInterface {
         
 
                 //@Throws(Error::class)

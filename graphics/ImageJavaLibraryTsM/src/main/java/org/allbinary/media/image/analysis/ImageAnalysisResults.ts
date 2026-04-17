@@ -19,6 +19,25 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { ImageColorRangeResults } from "./ImageColorRangeResults.js";
+
+import { ImageColorResults } from "./ImageColorResults.js";
+
 export class ImageAnalysisResults
             extends Object
          {

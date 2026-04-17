@@ -46,8 +46,24 @@ import { StringUtil } from "../../../../../../../org/allbinary/logic/string/Stri
 
     
 
-export class Item extends BasicItem
-                , OrderItemInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { BasicItem } from "./BasicItem.js";
+
+export class Item extends BasicItem implements OrderItemInterface {
         
 
     private group: string

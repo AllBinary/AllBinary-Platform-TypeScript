@@ -43,6 +43,21 @@ import { CanvasSurface } from "../../../../playn/core/CanvasSurface.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class ImageJ2MEScaleUtil
             extends Object
          {

@@ -28,11 +28,26 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { LogFormatUtil } from "./LogFormatUtil.js";
 
 import { PreLogUtil } from "./PreLogUtil.js";
 
-import { PreLogUtil } from "./PreLogUtil.js";
+import { Exception } from "./Exception.js";
 
 export class GuiLog
             extends Object

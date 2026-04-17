@@ -58,12 +58,28 @@ import { Node } from "../../../../../../../org/w3c/dom/Node.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { StoreFrontStatisticsInterface } from "./StoreFrontStatisticsInterface.js";
+
 import { StoreFrontStatisticsData } from "./StoreFrontStatisticsData.js";
 
 export class RealTimeStoreFrontStatisticsView
             extends Object
-        
-                , DomNodeInterface {
+         implements DomNodeInterface {
         
 
     private readonly storeFrontStatisticsInterface: StoreFrontStatisticsInterface

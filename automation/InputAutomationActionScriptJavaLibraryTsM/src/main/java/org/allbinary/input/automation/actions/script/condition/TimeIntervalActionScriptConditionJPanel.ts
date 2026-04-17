@@ -27,11 +27,32 @@ import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonS
 
     
 
-import { Short } from "./Short.js";
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { JPanel } from "./JPanel.js";
+
+import { TimeIntervalActionScriptConditionInterface } from "./TimeIntervalActionScriptConditionInterface.js";
+
+import { JTextField } from "./JTextField.js";
+
+import { JDialog } from "./JDialog.js";
 
 import { Short } from "./Short.js";
 
-import { Short } from "./Short.js";
+import { ActionEvent } from "./ActionEvent.js";
 
 export class TimeIntervalActionScriptConditionJPanel extends javax.swing.JPanel {
         

@@ -100,8 +100,22 @@ import { ProductListingFactory } from "../../views/admin/inventory/listings/Prod
 
     
 
-export class StaticPagesRequestHelper extends AbContext
-                , TagHelperInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+export class StaticPagesRequestHelper extends AbContext implements TagHelperInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

@@ -19,12 +19,28 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { BaseGameInitialization } from "./BaseGameInitialization.js";
+
+import { GameInitializationInterface } from "./GameInitializationInterface.js";
 
 export class BasicBuildGameInitializerFactory
             extends Object
-        
-                , GameInitializationInterfaceFactoryInterface {
+         implements GameInitializationInterfaceFactoryInterface {
         
 
     public NULL_BASE_BUILD_GMAE_INITIALIZER_FACTORY: BasicBuildGameInitializerFactory = new BasicBuildGameInitializerFactory();

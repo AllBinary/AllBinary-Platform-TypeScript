@@ -91,9 +91,22 @@ import { BasicArrayList } from "../../../org/allbinary/util/BasicArrayList.js";
 
     
 
-import { Thread } from "./Thread.js";
 
-import { Thread } from "./Thread.js";
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { ImageCacheBase } from "./ImageCacheBase.js";
 
 export class ImageCache extends ImageCacheBase {
         

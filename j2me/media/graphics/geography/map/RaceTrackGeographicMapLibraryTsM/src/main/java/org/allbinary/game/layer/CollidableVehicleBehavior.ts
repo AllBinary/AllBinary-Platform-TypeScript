@@ -40,6 +40,25 @@ import { CollidableDestroyableDamageableLayer } from "../../../../org/allbinary/
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { CollidableCompositeLayer } from "./CollidableCompositeLayer.js";
+
+import { VehiclePropertiesCompositeInterface } from "./VehiclePropertiesCompositeInterface.js";
+
 export class CollidableVehicleBehavior extends CollidableDestroyableDamageableBehavior {
         
 

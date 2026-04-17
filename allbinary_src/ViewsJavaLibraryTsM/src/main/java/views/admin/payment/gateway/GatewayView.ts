@@ -40,6 +40,23 @@ import { TransformInfoInterface } from "../../../../org/allbinary/logic/visual/t
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { PaymentGatewayViewAbstract } from "./PaymentGatewayViewAbstract.js";
+
 export class GatewayView extends PaymentGatewayViewAbstract {
         
 

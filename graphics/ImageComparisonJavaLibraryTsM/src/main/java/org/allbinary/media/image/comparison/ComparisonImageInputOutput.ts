@@ -52,14 +52,30 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { ImageComparisonResultCacheSingleton } from "./ImageComparisonResultCacheSingleton.js";
 
 import { ChangedPixelsUtil } from "./ChangedPixelsUtil.js";
 
+import { ImageComparisonResult } from "./ImageComparisonResult.js";
+
 export class ComparisonImageInputOutput
             extends Object
-        
-                , ImageIOInterface {
+         implements ImageIOInterface {
         
 
     private static readonly ROOT_NAME: string = "_Changed_";

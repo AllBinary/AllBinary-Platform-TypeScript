@@ -28,18 +28,21 @@ import { CommonLabels } from "../../../org/allbinary/string/CommonLabels.js";
 
     
 
-import { Long } from "./Long.js";
 
-import { Long } from "./Long.js";
 
-import { Long } from "./Long.js";
 
-import { Long } from "./Long.js";
 
-import { Long } from "./Long.js";
 
-import { Long } from "./Long.js";
 
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class TimeDelayHelper
             extends Object
          {

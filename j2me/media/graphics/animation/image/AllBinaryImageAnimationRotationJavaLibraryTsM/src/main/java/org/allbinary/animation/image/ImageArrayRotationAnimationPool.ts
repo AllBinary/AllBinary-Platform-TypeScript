@@ -31,6 +31,21 @@ import { PoolInterface } from "../../../../org/allbinary/logic/util/cache/PoolIn
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class ImageArrayRotationAnimationPool extends BasicArrayListResetablePool {
         
 

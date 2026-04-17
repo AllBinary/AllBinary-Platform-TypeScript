@@ -148,16 +148,34 @@ import { ViewPosition } from "../../../../org/allbinary/view/ViewPosition.js";
 
     
 
-import { NullPathFindingLayer } from "./NullPathFindingLayer.js";
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { RTSLayer } from "./RTSLayer.js";
 
 import { NullPathFindingLayer } from "./NullPathFindingLayer.js";
+
+import { PathFindingLayerInterface } from "./PathFindingLayerInterface.js";
+
+import { RTSPlayerLayerInterface } from "./RTSPlayerLayerInterface.js";
 
 import { RTSLayerUtil } from "./RTSLayerUtil.js";
 
-import { NullPathFindingLayer } from "./NullPathFindingLayer.js";
+import { WaypointBehaviorBase } from "./WaypointBehaviorBase.js";
 
-export class AdvancedRTSGameLayer extends RTSLayer
-                , DestroyedEventListenerInterface {
+export class AdvancedRTSGameLayer extends RTSLayer implements DestroyedEventListenerInterface {
         
 
     readonly shakeListener: ShakeAnimationListener

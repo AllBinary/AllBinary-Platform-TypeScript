@@ -22,6 +22,23 @@ import { AllBinaryEventObject } from "../../../../../../org/allbinary/logic/util
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { MotionRectangles } from "./MotionRectangles.js";
+
 export class MotionRectanglesResultsEvent extends AllBinaryEventObject {
         
 

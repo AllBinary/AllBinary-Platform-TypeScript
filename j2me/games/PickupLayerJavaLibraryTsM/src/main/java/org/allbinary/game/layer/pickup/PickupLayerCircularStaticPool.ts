@@ -22,6 +22,25 @@ import { AllBinaryLayerCircularPool } from "../../../../../org/allbinary/layer/A
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { PickedUpLayerInterface } from "./PickedUpLayerInterface.js";
+
+import { PickedUpLayerInterfaceFactoryInterface } from "./PickedUpLayerInterfaceFactoryInterface.js";
+
 export class PickupLayerCircularStaticPool extends AllBinaryLayerCircularPool {
         
 

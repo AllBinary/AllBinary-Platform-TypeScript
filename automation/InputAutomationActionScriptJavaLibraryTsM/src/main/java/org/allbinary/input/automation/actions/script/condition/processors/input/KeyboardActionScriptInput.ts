@@ -63,40 +63,28 @@ import { NodeList } from "../../../../../../../../../org/w3c/dom/NodeList.js";
 
     
 
-import { KeyboardActionScriptInputData } from "./KeyboardActionScriptInputData.js";
 
-import { KeyboardActionScriptInputData } from "./KeyboardActionScriptInputData.js";
 
-import { KeyboardActionScriptInputData } from "./KeyboardActionScriptInputData.js";
 
-import { KeyboardActionScriptInputData } from "./KeyboardActionScriptInputData.js";
 
-import { KeyboardActionScriptInputData } from "./KeyboardActionScriptInputData.js";
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
-import { String } from "./String.js";
 
-import { KeyboardActionScriptInputData } from "./KeyboardActionScriptInputData.js";
 
-import { KeyboardActionScriptInputData } from "./KeyboardActionScriptInputData.js";
+        
 
-import { KeyboardActionScriptInputData } from "./KeyboardActionScriptInputData.js";
 
-import { Boolean } from "./Boolean.js";
 
-import { KeyboardActionScriptInputData } from "./KeyboardActionScriptInputData.js";
-
-import { Boolean } from "./Boolean.js";
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { BasicProfileActionScriptInput } from "./BasicProfileActionScriptInput.js";
 
 import { KeyboardActionScriptInputData } from "./KeyboardActionScriptInputData.js";
 
 import { KeyboardInputAutomationProcessor } from "./KeyboardInputAutomationProcessor.js";
 
-export class KeyboardActionScriptInput extends BasicProfileActionScriptInput
-                , KeyboardActionScriptInputInterface {
+export class KeyboardActionScriptInput extends BasicProfileActionScriptInput implements KeyboardActionScriptInputInterface {
         
 
     private static readonly NAME: string = "Keyboard";

@@ -39,7 +39,22 @@ import { RemoteInfo } from "../../../../../org/allbinary/game/multiplayer/layer/
 
     
 
-import { WaypointInfoHudPaintableSingleton } from "./WaypointInfoHudPaintableSingleton.js";
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { WaypointLayer } from "./WaypointLayer.js";
 
 import { WaypointInfoHudPaintableSingleton } from "./WaypointInfoHudPaintableSingleton.js";
 

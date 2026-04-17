@@ -40,20 +40,28 @@ import { NodeList } from "../../../../../../org/w3c/dom/NodeList.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { FtpConfigurationData } from "./FtpConfigurationData.js";
 
-import { FtpConfigurationData } from "./FtpConfigurationData.js";
-
-import { FtpConfigurationData } from "./FtpConfigurationData.js";
-
-import { FtpConfigurationData } from "./FtpConfigurationData.js";
-
-import { FtpConfigurationData } from "./FtpConfigurationData.js";
+import { FtpConfigurationInterface } from "./FtpConfigurationInterface.js";
 
 export class FtpConfigurationView
             extends Object
-        
-                , DomNodeInterface {
+         implements DomNodeInterface {
         
 
     private ftpConfigurationInterface: FtpConfigurationInterface

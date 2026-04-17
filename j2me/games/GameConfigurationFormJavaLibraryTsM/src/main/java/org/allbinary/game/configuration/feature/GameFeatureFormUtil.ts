@@ -52,6 +52,21 @@ import { HashtableUtil } from "../../../../../org/allbinary/util/HashtableUtil.j
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { Features } from "./Features.js";
 
 import { GameFeatureUtil } from "./GameFeatureUtil.js";

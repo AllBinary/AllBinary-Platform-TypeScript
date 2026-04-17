@@ -46,14 +46,28 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { InputFactory } from "./InputFactory.js";
 
 import { GameInputProcessorUtil } from "./GameInputProcessorUtil.js";
 
-import { GameInputProcessorUtil } from "./GameInputProcessorUtil.js";
+import { TestInputInterface } from "./TestInputInterface.js";
 
-export class TestingInputSingleton extends AllBinaryGameLayer
-                , GameInputInterface {
+export class TestingInputSingleton extends AllBinaryGameLayer implements GameInputInterface {
         
 
     private static readonly instance: TestingInputSingleton = new TestingInputSingleton();

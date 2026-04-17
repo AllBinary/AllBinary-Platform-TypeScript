@@ -31,10 +31,26 @@ import { Node } from "../../../../../../../../org/w3c/dom/Node.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { CssProperty } from "./CssProperty.js";
+
 export class CssPropertyView
             extends Object
-        
-                , DomNodeInterface {
+         implements DomNodeInterface {
         
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;

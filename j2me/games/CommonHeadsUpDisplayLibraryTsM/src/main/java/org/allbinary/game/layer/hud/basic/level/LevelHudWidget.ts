@@ -40,8 +40,22 @@ import { PrimitiveLongUtil } from "../../../../../../../org/allbinary/logic/math
 
     
 
-export class LevelHudWidget extends BasicHud
-                , PaintableInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+export class LevelHudWidget extends BasicHud implements PaintableInterface {
         
 
     private level: number

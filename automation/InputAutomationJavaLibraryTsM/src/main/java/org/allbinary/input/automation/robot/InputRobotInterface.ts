@@ -30,6 +30,27 @@ import { HelpSet } from "../../../../../javax/help/HelpSet.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { Rectangle } from "./Rectangle.js";
+
+import { Color } from "./Color.js";
+
+import { Point } from "./Point.js";
+
 export interface InputRobotInterface {
         
 

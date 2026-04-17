@@ -11,6 +11,21 @@ import { GameCommandsFactory } from "../../../../../org/allbinary/game/commands/
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class MultiPlayerGameFeatureFactory
             extends Object
          {

@@ -37,10 +37,26 @@ import { Node } from "../../../../../org/w3c/dom/Node.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { TimeLastModified } from "./TimeLastModified.js";
+
 export class TimeLastModifiedView
             extends Object
-        
-                , DomNodeInterface {
+         implements DomNodeInterface {
         
 
     private timeLastModified: TimeLastModified

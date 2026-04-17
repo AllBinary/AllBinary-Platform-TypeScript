@@ -51,17 +51,30 @@ import { CommonStrings } from "../../../../../../../../../org/allbinary/string/C
 
     
 
-import { Short } from "./Short.js";
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { JPanel } from "./JPanel.js";
+
+import { MouseActionScriptInputInterface } from "./MouseActionScriptInputInterface.js";
+
+import { JDialog } from "./JDialog.js";
 
 import { Short } from "./Short.js";
 
-import { Short } from "./Short.js";
-
-import { Short } from "./Short.js";
-
-import { Short } from "./Short.js";
-
-import { Short } from "./Short.js";
+import { ActionEvent } from "./ActionEvent.js";
 
 export class MouseActionScriptInputJPanel extends javax.swing.JPanel {
         

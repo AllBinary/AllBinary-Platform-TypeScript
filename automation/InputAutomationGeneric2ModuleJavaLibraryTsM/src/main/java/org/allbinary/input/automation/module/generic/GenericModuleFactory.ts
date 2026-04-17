@@ -43,6 +43,21 @@ import { RunnableInterface } from "../../../../../../org/allbinary/thread/Runnab
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class GenericModuleFactory extends AbstractInputAutomationFactory {
         
 

@@ -22,6 +22,23 @@ import { Gauge } from "../../../../javax/microedition/lcdui/Gauge.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { GameConfiguration } from "./GameConfiguration.js";
+
 export class GameConfigurationGauge extends Gauge {
         
 public constructor (gameConfiguration: GameConfiguration)                        

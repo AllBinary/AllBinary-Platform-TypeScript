@@ -37,6 +37,23 @@ import { GeographicMapCellPositionTracking } from "../../../../org/allbinary/med
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { VehiclePropertiesCompositeInterface } from "./VehiclePropertiesCompositeInterface.js";
+
 export interface VehicleLayerInterface extends LayerInterface, VehiclePropertiesCompositeInterface {
         
 

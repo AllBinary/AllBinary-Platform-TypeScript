@@ -37,12 +37,24 @@ import { Node } from "../../../org/w3c/dom/Node.js";
 
     
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
-export class WorkflowsValidationView extends WorkFlowsView
-                , ValidationComponentInterface {
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { WorkFlowsView } from "./WorkFlowsView.js";
+
+export class WorkflowsValidationView extends WorkFlowsView implements ValidationComponentInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

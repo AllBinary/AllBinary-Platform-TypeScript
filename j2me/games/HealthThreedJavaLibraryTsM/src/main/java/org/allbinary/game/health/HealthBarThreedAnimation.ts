@@ -55,6 +55,23 @@ import { ViewPosition } from "../../../../org/allbinary/view/ViewPosition.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { HealthBarAnimation } from "./HealthBarAnimation.js";
+
 export class HealthBarThreedAnimation extends HealthBarAnimation {
         
 

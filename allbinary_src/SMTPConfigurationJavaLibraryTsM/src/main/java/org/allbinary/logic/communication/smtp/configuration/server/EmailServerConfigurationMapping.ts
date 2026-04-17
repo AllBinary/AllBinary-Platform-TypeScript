@@ -28,18 +28,28 @@ import { TableMappingInterface } from "../../../../../../../org/allbinary/data/t
 
     
 
-import { EmailServerConfigurationData } from "./EmailServerConfigurationData.js";
 
-import { EmailServerConfigurationData } from "./EmailServerConfigurationData.js";
 
-import { EmailServerConfigurationData } from "./EmailServerConfigurationData.js";
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { EmailServerConfigurationInterface } from "./EmailServerConfigurationInterface.js";
 
 import { EmailServerConfigurationData } from "./EmailServerConfigurationData.js";
 
 export class EmailServerConfigurationMapping
             extends Object
-        
-                , TableMappingInterface {
+         implements TableMappingInterface {
         
 
     private emailServerConfigurationInterface: EmailServerConfigurationInterface

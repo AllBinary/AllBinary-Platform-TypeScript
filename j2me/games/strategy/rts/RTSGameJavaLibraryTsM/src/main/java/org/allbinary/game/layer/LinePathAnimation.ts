@@ -28,6 +28,21 @@ import { Layer } from "../../../../org/allbinary/layer/Layer.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class LinePathAnimation
             extends Object
          {

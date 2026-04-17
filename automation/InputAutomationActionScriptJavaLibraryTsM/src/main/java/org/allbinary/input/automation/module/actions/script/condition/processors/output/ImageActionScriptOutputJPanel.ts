@@ -34,13 +34,32 @@ import { CommonStrings } from "../../../../../../../../../../org/allbinary/strin
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { JPanel } from "./JPanel.js";
+
+import { ImageActionScriptOutputInterface } from "./ImageActionScriptOutputInterface.js";
+
 import { ImageTypes } from "./ImageTypes.js";
 
-import { Short } from "./Short.js";
+import { JDialog } from "./JDialog.js";
 
 import { Short } from "./Short.js";
 
-import { Short } from "./Short.js";
+import { ActionEvent } from "./ActionEvent.js";
 
 export class ImageActionScriptOutputJPanel extends javax.swing.JPanel {
         

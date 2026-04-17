@@ -28,10 +28,26 @@ import { Node } from "../../../../org/w3c/dom/Node.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { CategoryInterface } from "./CategoryInterface.js";
+
 export class CategoriesView
             extends Object
-        
-                , DomNodeInterface {
+         implements DomNodeInterface {
         
 
     private categoryInterface: CategoryInterface

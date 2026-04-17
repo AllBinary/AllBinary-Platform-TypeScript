@@ -31,8 +31,24 @@ import { StoreWorkFlowInterface } from "../../../org/allbinary/logic/control/wor
 
     
 
-export class BasicStoreWorkFlow extends BasicWorkFlow
-                , StoreWorkFlowInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { BasicWorkFlow } from "./BasicWorkFlow.js";
+
+export class BasicStoreWorkFlow extends BasicWorkFlow implements StoreWorkFlowInterface {
         
 public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext)                        
 

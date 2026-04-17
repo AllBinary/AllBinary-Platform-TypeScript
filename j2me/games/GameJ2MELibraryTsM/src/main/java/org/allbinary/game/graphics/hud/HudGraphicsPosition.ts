@@ -25,6 +25,21 @@ import { PointFactory } from "../../../../../org/allbinary/graphics/PointFactory
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class HudGraphicsPosition
             extends Object
          {

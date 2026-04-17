@@ -34,6 +34,21 @@ import { PrimitiveIntUtil } from "../../../../org/allbinary/logic/math/Primitive
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class SimultaneousCompoundIndexAnimation extends IndexedAnimation {
         
 

@@ -22,6 +22,23 @@ import { TextFieldItem } from "../../../../../../org/allbinary/graphics/form/ite
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { TextFieldItemValidator } from "./TextFieldItemValidator.js";
+
 export class PasswordValidator extends TextFieldItemValidator {
         
 public constructor (textFieldItem: TextFieldItem, min: number, max: number, allowOnEmpty: boolean)                        

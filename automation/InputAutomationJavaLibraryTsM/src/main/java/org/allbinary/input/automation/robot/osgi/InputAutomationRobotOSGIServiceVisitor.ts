@@ -40,14 +40,24 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
     
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class InputAutomationRobotOSGIServiceVisitor
             extends Object
-        
-                , OSGIServiceVisitorInterface {
+         implements OSGIServiceVisitorInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

@@ -28,6 +28,23 @@ import { BasicArrayListUtil } from "../../../../org/allbinary/util/BasicArrayLis
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { RelativeLayerRelationship } from "./RelativeLayerRelationship.js";
+
 export class MiddleRelativeLayerRelationship extends RelativeLayerRelationship {
         
 public constructor (layer: AllBinaryLayer)                        

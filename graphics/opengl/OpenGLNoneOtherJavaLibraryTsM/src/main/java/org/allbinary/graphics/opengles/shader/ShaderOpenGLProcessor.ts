@@ -11,6 +11,21 @@ import { OpenGLProcessor } from "../../../../../org/allbinary/graphics/opengles/
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class ShaderOpenGLProcessor extends OpenGLProcessor {
         
 public constructor (){

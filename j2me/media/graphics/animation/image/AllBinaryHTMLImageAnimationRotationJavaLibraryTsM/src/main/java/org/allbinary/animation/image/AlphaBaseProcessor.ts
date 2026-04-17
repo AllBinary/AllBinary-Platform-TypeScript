@@ -25,6 +25,21 @@ import { ImageModifierUtil } from "../../../../org/allbinary/media/image/ImageMo
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class AlphaBaseProcessor
             extends Object
          {

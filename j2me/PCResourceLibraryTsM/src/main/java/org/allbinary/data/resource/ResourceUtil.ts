@@ -48,6 +48,23 @@ import { CommonSeps } from "../../../../org/allbinary/string/CommonSeps.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { ClassLoader } from "./ClassLoader.js";
+
 export class ResourceUtil
             extends Object
          {

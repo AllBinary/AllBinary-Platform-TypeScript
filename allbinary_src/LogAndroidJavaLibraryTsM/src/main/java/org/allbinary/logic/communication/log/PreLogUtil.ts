@@ -27,6 +27,21 @@ import { LogFormatUtil } from "../../../../../org/allbinary/logic/communication/
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 /*actual*/ export class PreLogUtil
             extends Object
          {

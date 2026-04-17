@@ -28,8 +28,22 @@ import { IndexedAnimationBehavior } from "../../../../org/allbinary/animation/In
 
     
 
-export class SpecialAnimation extends IndexedAnimation
-                , SpecialAnimationInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+export class SpecialAnimation extends IndexedAnimation implements SpecialAnimationInterface {
         
 
     private static readonly NULL_SPECIAL_ANIMATION: SpecialAnimation = new SpecialAnimation(new IndexedAnimationBehavior(1, 250));

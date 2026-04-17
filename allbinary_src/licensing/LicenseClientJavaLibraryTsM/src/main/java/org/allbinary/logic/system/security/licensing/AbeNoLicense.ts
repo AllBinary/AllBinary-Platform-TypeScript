@@ -25,12 +25,28 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { LicenseTypeFactory } from "./LicenseTypeFactory.js";
+
+import { LicenseType } from "./LicenseType.js";
 
 export class AbeNoLicense
             extends Object
-        
-                , AbeLicenseInterface {
+         implements AbeLicenseInterface {
         
 
     private abeNoLicense: AbeNoLicense = new AbeNoLicense();

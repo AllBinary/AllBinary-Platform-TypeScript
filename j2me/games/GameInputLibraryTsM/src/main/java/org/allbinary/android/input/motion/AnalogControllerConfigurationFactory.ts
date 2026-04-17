@@ -28,6 +28,21 @@ import { ScaleFactorFactory } from "../../../../../org/allbinary/logic/math/Scal
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class AnalogControllerConfigurationFactory
             extends Object
          {

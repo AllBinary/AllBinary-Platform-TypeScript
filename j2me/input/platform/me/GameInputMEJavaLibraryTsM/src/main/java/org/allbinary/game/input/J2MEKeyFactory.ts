@@ -19,9 +19,26 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { GameKeyFactory } from "./GameKeyFactory.js";
 
 import { InputFactory } from "./InputFactory.js";
+
+import { Input } from "./Input.js";
 
 export class J2MEKeyFactory
             extends Object

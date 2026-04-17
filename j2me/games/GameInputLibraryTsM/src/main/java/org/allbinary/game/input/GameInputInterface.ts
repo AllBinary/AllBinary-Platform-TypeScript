@@ -25,6 +25,21 @@ import { NamedInterface } from "../../../../org/allbinary/layer/NamedInterface.j
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export interface GameInputInterface extends NamedInterface {
         
 

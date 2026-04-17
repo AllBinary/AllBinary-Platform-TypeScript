@@ -28,6 +28,23 @@ import { CommonSeps } from "../../../org/allbinary/string/CommonSeps.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { GPoint } from "./GPoint.js";
+
 export class Rectangle
             extends Object
          {

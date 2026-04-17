@@ -40,6 +40,23 @@ import { ThreadPool } from "../../../org/allbinary/thread/ThreadPool.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { AllBinaryMidlet } from "./AllBinaryMidlet.js";
+
 import { MidletExitProcessorFactory } from "./MidletExitProcessorFactory.js";
 
 export class ProgressMidlet extends AllBinaryMidlet {

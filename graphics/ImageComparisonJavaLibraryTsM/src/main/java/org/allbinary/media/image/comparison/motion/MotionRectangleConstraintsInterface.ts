@@ -25,6 +25,25 @@ import { BufferedImage } from "../../../../../../java/awt/image/BufferedImage.js
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { Dimension } from "./Dimension.js";
+
+import { Rectangle } from "./Rectangle.js";
+
 export interface MotionRectangleConstraintsInterface {
         
 

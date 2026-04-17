@@ -25,10 +25,26 @@ import { Vector } from "../../../../../../java/util/Vector.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { Rectangle } from "./Rectangle.js";
+
 export class MotionRectangle
             extends Object
-        
-                , Cloneable {
+         implements Cloneable {
         
 
     private rectangle: Rectangle

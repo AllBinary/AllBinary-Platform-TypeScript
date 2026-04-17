@@ -19,6 +19,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { BasicVelocityProperties } from "./BasicVelocityProperties.js";
+
 export class VelocityBehaviorBase
             extends Object
          {

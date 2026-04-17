@@ -28,27 +28,32 @@ import { CommonStrings } from "../../../../../../../../../org/allbinary/string/C
 
     
 
-import { Short } from "./Short.js";
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { JPanel } from "./JPanel.js";
 
 import { Short } from "./Short.js";
 
-import { Short } from "./Short.js";
+import { ActionEvent } from "./ActionEvent.js";
 
-import { Short } from "./Short.js";
+import { ListSelectionEvent } from "./ListSelectionEvent.js";
 
-import { Short } from "./Short.js";
+import { GenericProfileActionJPanel } from "./GenericProfileActionJPanel.js";
 
-import { Short } from "./Short.js";
-
-import { Short } from "./Short.js";
-
-import { Short } from "./Short.js";
-
-import { Short } from "./Short.js";
-
-import { Short } from "./Short.js";
-
-import { Short } from "./Short.js";
+import { GenericProfileActions } from "./GenericProfileActions.js";
 
 export class GenericProfileActionsJPanel extends javax.swing.JPanel {
         

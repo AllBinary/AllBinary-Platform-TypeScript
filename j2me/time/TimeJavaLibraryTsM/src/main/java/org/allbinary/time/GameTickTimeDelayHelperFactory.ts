@@ -19,6 +19,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { GameTickTimeDelayHelper } from "./GameTickTimeDelayHelper.js";
+
 export class GameTickTimeDelayHelperFactory
             extends Object
          {

@@ -34,16 +34,24 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 
     
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class BooleanFileVisitor
             extends Object
-        
-                , VisitorInterface {
+         implements VisitorInterface {
         
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;

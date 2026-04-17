@@ -46,6 +46,23 @@ import { BasicArrayListUtil } from "../../../../org/allbinary/util/BasicArrayLis
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { WaypointPathRunnableBase } from "./WaypointPathRunnableBase.js";
+
 export class MultipassWaypointPathRunnable extends WaypointPathRunnableBase {
         
 

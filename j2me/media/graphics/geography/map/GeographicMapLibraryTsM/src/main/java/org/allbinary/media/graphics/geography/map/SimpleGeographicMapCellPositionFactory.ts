@@ -19,10 +19,28 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { GeographicMapCellPosition } from "./GeographicMapCellPosition.js";
+
+import { BasicGeographicMap } from "./BasicGeographicMap.js";
+
 export class SimpleGeographicMapCellPositionFactory
             extends Object
-        
-                , GeographicMapCellPositionFactoryInterface {
+         implements GeographicMapCellPositionFactoryInterface {
         
 
     public static readonly NULL_GEOGRAPHIC_MAP_CELL_POSITION: GeographicMapCellPosition = new GeographicMapCellPosition( -1,  -1,  -1,  -1,  -1,  -1);

@@ -8,10 +8,26 @@ import { AllBinaryEventObject } from "../../../../org/allbinary/logic/util/event
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { CompleteMotionGestureInputEvent } from "./CompleteMotionGestureInputEvent.js";
+
 export class CompleteMotionGestureInputEventListener
             extends Object
-        
-                , CompleteMotionGestureInputEventListenerInterface {
+         implements CompleteMotionGestureInputEventListenerInterface {
         
 
     public onEvent(eventObject: AllBinaryEventObject){

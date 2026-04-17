@@ -25,12 +25,26 @@ import { CommonLabels } from "../../../../../../org/allbinary/string/CommonLabel
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { PathFindingNodeCostInfoData } from "./PathFindingNodeCostInfoData.js";
 
 export class PathFindingNodeCostInfo
             extends Object
-        
-                , Comparable<PathFindingNodeCostInfo> {
+         implements Comparable<PathFindingNodeCostInfo> {
         
 
     private readonly pathFindingNodeCostInfoData: PathFindingNodeCostInfoData = PathFindingNodeCostInfoData.getInstance()!;

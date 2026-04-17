@@ -17,10 +17,26 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { TerrainEvent } from "./TerrainEvent.js";
+
 export class TerrainEventListener
             extends Object
-        
-                , TerrainEventListenerInterface {
+         implements TerrainEventListenerInterface {
         
 
     private readonly list: BasicArrayList = new BasicArrayList();

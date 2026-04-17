@@ -37,11 +37,24 @@ import { OpenGLSurfaceChangedInterface } from "../../../org/allbinary/image/open
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class Animation
             extends Object
-        
-                , AnimationInterface
-                , OpenGLSurfaceChangedInterface {
+         implements AnimationInterface, OpenGLSurfaceChangedInterface {
         
 
     readonly basicSetColorUtil: BasicColorSetUtil = BasicColorSetUtil.getInstance()!;

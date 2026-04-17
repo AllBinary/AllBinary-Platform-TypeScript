@@ -78,32 +78,42 @@ import { NodeList } from "../../../../../../org/w3c/dom/NodeList.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { PointsDomUtil } from "./PointsDomUtil.js";
 
-import { PointsDomUtil } from "./PointsDomUtil.js";
-
-import { PointsDomUtil } from "./PointsDomUtil.js";
-
 import { Math } from "./Math.js";
 
-import { Math } from "./Math.js";
-
-import { Math } from "./Math.js";
-
-import { Math } from "./Math.js";
-
-import { Math } from "./Math.js";
-
-import { Math } from "./Math.js";
+import { GraphicItemInterface } from "./GraphicItemInterface.js";
 
 import { PointsUtil } from "./PointsUtil.js";
 
-import { PointsDomUtil } from "./PointsDomUtil.js";
+import { Graphics } from "./Graphics.js";
+
+import { Points } from "./Points.js";
+
+import { Color } from "./Color.js";
+
+import { MouseEvent } from "./MouseEvent.js";
+
+import { KeyEvent } from "./KeyEvent.js";
 
 export class LinesGraphicItem
             extends Object
-        
-                , GraphicItemInterface {
+         implements GraphicItemInterface {
         
 
     private static readonly RECT: string = "rect";

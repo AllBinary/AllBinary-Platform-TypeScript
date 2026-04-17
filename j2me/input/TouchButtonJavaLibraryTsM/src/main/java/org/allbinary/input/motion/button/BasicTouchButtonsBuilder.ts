@@ -28,21 +28,32 @@ import { BasicArrayListUtil } from "../../../../../org/allbinary/util/BasicArray
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { BaseTouchInput } from "./BaseTouchInput.js";
+
 import { CommonButtons } from "./CommonButtons.js";
 
 import { BasicTouchInputFactory } from "./BasicTouchInputFactory.js";
 
 import { TouchButtonUpResource } from "./TouchButtonUpResource.js";
 
-import { BasicTouchInputFactory } from "./BasicTouchInputFactory.js";
-
 import { TouchButtonDownResource } from "./TouchButtonDownResource.js";
 
-import { BasicTouchInputFactory } from "./BasicTouchInputFactory.js";
-
 import { TouchButtonTurnLeftResource } from "./TouchButtonTurnLeftResource.js";
-
-import { BasicTouchInputFactory } from "./BasicTouchInputFactory.js";
 
 import { TouchButtonTurnRightResource } from "./TouchButtonTurnRightResource.js";
 

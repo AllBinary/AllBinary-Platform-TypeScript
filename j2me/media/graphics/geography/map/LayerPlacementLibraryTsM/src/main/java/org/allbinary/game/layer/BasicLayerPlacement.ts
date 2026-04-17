@@ -19,6 +19,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { LayerPlacementType } from "./LayerPlacementType.js";
+
 export class BasicLayerPlacement
             extends Object
          {

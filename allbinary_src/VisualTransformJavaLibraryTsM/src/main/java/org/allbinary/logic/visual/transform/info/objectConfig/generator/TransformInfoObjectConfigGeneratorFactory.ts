@@ -31,10 +31,26 @@ import { CommonStrings } from "../../../../../../../../org/allbinary/string/Comm
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { TransformInfoObjectConfigGenerator } from "./TransformInfoObjectConfigGenerator.js";
+
 export class TransformInfoObjectConfigGeneratorFactory
             extends Object
-        
-                , TransformInfoObjectConfigGeneratorFactoryInterface {
+         implements TransformInfoObjectConfigGeneratorFactoryInterface {
         
 
     private static readonly instance: TransformInfoObjectConfigGeneratorFactory = new TransformInfoObjectConfigGeneratorFactory();

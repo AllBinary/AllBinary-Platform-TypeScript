@@ -22,6 +22,23 @@ import { Control } from "../../../../javax/sound/sampled/Control.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { Type } from "./Type.js";
+
 export class NullJ2SEControl extends Control {
         
  constructor (type: Type)                        

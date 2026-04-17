@@ -22,6 +22,23 @@ import { LayerInterface } from "../../../../../org/allbinary/layer/LayerInterfac
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { PickedUpLayerInterfaceFactoryInterface } from "./PickedUpLayerInterfaceFactoryInterface.js";
+
 export interface PickedUpLayerInterface extends LayerInterface {
         
 

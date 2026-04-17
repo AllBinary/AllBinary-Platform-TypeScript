@@ -48,6 +48,23 @@ import { SmallIntegerSingletonFactory } from "../../../../../org/allbinary/logic
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { Waypoint } from "./Waypoint.js";
+
 export class WorkWaypoint extends Waypoint {
         
 

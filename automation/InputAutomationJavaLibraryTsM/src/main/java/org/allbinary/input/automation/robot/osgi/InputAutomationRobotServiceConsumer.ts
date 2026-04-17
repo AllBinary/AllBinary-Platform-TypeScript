@@ -28,6 +28,21 @@ import { InputAutomationServiceConsumer } from "../../../../../../org/allbinary/
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class InputAutomationRobotServiceConsumer extends InputAutomationServiceConsumer {
         
 public constructor (bundleContext: BundleContext)                        

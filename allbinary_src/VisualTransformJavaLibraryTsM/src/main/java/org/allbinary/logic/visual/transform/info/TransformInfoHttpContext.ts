@@ -46,6 +46,23 @@ import { StringUtil } from "../../../../../../org/allbinary/logic/string/StringU
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { TransformInfoHttp } from "./TransformInfoHttp.js";
+
 export class TransformInfoHttpContext extends TransformInfoHttp {
         
 

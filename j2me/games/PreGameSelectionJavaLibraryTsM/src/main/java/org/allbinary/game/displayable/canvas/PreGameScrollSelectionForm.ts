@@ -37,6 +37,21 @@ import { ScrollCurrentSelectionForm } from "../../../../../org/allbinary/graphic
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class PreGameScrollSelectionForm extends ScrollCurrentSelectionForm {
         
 public constructor (title: string, items: CustomItem[], formPaintableFactory: ItemPaintableFactory, rectangle: Rectangle, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor)                        

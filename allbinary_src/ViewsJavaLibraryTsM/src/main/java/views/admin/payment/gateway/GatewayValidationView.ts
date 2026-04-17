@@ -34,10 +34,22 @@ import { HttpStoreComponentView } from "../../../../views/business/context/modul
 
     
 
-import { Boolean } from "./Boolean.js";
 
-export class GatewayValidationView extends HttpStoreComponentView
-                , ValidationComponentInterface {
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+export class GatewayValidationView extends HttpStoreComponentView implements ValidationComponentInterface {
         
 public constructor (transformInfoInterface: TransformInfoInterface)                        
 

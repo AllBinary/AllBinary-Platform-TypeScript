@@ -46,8 +46,21 @@ import { Node } from "../../../../org/w3c/dom/Node.js";
 
     
 
-import { CategoryData } from "./CategoryData.js";
 
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { CategoryData } from "./CategoryData.js";
 
 export class CategoryUtil

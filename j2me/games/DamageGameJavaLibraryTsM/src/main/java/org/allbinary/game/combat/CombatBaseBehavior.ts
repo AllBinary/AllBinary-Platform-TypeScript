@@ -25,6 +25,21 @@ import { DestroyableBaseBehavior } from "../../../../org/allbinary/game/combat/d
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class CombatBaseBehavior
             extends Object
          {

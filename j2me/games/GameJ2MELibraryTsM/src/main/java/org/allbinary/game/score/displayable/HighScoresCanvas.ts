@@ -109,8 +109,22 @@ import { SecondaryThreadPool } from "../../../../../org/allbinary/thread/Seconda
 
     
 
-export class HighScoresCanvas extends GameCommandCanvas
-                , HighScoresResultsListener {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+export class HighScoresCanvas extends GameCommandCanvas implements HighScoresResultsListener {
         
 
     public static readonly NAME: string = "HighScoresCanvas";

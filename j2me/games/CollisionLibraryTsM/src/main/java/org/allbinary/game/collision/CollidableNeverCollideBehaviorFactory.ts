@@ -19,6 +19,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { CollidableNeverCollideBehavior } from "./CollidableNeverCollideBehavior.js";
+
 export class CollidableNeverCollideBehaviorFactory
             extends Object
          {

@@ -61,6 +61,21 @@ import { XmlRpcException } from "../../../../../../../org/apache/xmlrpc/XmlRpcEx
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class XmlRpcAbeLicenseRetrievalClient extends XmlRpcAbeClient {
         
 

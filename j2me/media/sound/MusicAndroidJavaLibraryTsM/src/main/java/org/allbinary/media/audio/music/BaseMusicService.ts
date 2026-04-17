@@ -35,9 +35,22 @@ import { ARunnable } from "../../../../../org/allbinary/thread/ARunnable.js";
 
     
 
-import { MusicStrings } from "./MusicStrings.js";
 
-import { Thread } from "./Thread.js";
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { MusicStrings } from "./MusicStrings.js";
 
 export class BaseMusicService extends Service {
         

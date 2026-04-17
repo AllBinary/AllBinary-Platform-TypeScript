@@ -25,14 +25,30 @@ import { BasicColorFactory } from "../../../org/allbinary/graphics/color/BasicCo
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { AnimationBehaviorFactory } from "./AnimationBehaviorFactory.js";
 
 import { VectorExplosionGenerator } from "./VectorExplosionGenerator.js";
 
+import { Animation } from "./Animation.js";
+
 export class VectorExplosionAnimationFactory
             extends Object
-        
-                , ProceduralAnimationInterfaceFactoryInterface {
+         implements ProceduralAnimationInterfaceFactoryInterface {
         
 
     private basicColor: BasicColor = BasicColorFactory.getInstance()!.WHITE;

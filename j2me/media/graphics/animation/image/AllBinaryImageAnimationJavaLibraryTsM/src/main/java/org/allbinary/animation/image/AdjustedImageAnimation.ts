@@ -28,6 +28,23 @@ import { AnimationBehavior } from "../../../../org/allbinary/animation/Animation
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { ImageAnimation } from "./ImageAnimation.js";
+
 export class AdjustedImageAnimation extends ImageAnimation {
         
 

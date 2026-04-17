@@ -25,6 +25,21 @@ import { ImageComparisonResult } from "../../../../../../org/allbinary/media/ima
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class MotionRectangles
             extends Object
          {

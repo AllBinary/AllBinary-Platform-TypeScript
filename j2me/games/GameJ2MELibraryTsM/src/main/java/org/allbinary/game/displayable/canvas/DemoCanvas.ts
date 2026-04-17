@@ -316,61 +316,42 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { NullGameCanvas } from "./NullGameCanvas.js";
 
 import { NoMenuInputProcessor } from "./NoMenuInputProcessor.js";
 
 import { NullWaitGameRunnable } from "./NullWaitGameRunnable.js";
 
-import { NullWaitGameRunnable } from "./NullWaitGameRunnable.js";
-
-import { NullWaitGameRunnable } from "./NullWaitGameRunnable.js";
-
 import { FormUtil } from "./FormUtil.js";
-
-import { GameInputMappingCanvas } from "./GameInputMappingCanvas.js";
-
-import { GameInputMappingCanvas } from "./GameInputMappingCanvas.js";
 
 import { GameInputMappingCanvas } from "./GameInputMappingCanvas.js";
 
 import { DemoLimitedCommandTextItemArrayFactory } from "./DemoLimitedCommandTextItemArrayFactory.js";
 
-import { FormUtil } from "./FormUtil.js";
-
-import { FormUtil } from "./FormUtil.js";
-
-import { NullWaitGameRunnable } from "./NullWaitGameRunnable.js";
-
-import { NullWaitGameRunnable } from "./NullWaitGameRunnable.js";
-
-import { NullWaitGameRunnable } from "./NullWaitGameRunnable.js";
-
-import { NullGameCanvas } from "./NullGameCanvas.js";
-
-import { NullGameCanvas } from "./NullGameCanvas.js";
-
-import { NullGameCanvas } from "./NullGameCanvas.js";
+import { GameCanvasRunnableInterface } from "./GameCanvasRunnableInterface.js";
 
 import { DemoCanvasProgressUtil } from "./DemoCanvasProgressUtil.js";
 
-import { NullGameCanvas } from "./NullGameCanvas.js";
+import { AllBinaryGameCanvas } from "./AllBinaryGameCanvas.js";
 
-import { NullGameCanvas } from "./NullGameCanvas.js";
+import { BasicMenuInputProcessor } from "./BasicMenuInputProcessor.js";
 
-import { NullGameCanvas } from "./NullGameCanvas.js";
-
-import { NullWaitGameRunnable } from "./NullWaitGameRunnable.js";
-
-import { NullGameCanvas } from "./NullGameCanvas.js";
-
-import { NullGameCanvas } from "./NullGameCanvas.js";
-
-export class DemoCanvas extends RunnableCanvas
-                , GameCanvasRunnableInterface
-                , MenuListener
-                , DisplayChangeEventListener
-                , DemoPaintableInterface {
+export class DemoCanvas extends RunnableCanvas implements GameCanvasRunnableInterface, MenuListener, DisplayChangeEventListener, DemoPaintableInterface {
         
 
     private static readonly id: number = 0;

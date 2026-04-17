@@ -25,6 +25,21 @@ import { Replace } from "../../../../../../org/allbinary/logic/string/regex/repl
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class DocumentToNode
             extends Object
          {

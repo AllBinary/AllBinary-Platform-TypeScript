@@ -19,6 +19,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { EventListenerInterface } from "./EventListenerInterface.js";
+
 export interface BasicEventListenerInterface extends EventListenerInterface {
         
 

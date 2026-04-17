@@ -22,6 +22,23 @@ import { EventListenerInterface } from "../../../../../../org/allbinary/logic/ut
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { InputMappingEvent } from "./InputMappingEvent.js";
+
 export interface InputMappingEventListenerInterface extends EventListenerInterface {
         
 

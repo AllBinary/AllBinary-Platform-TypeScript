@@ -22,6 +22,21 @@ import { NamedInterface } from "../../../../../org/allbinary/layer/NamedInterfac
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export interface DamageableInterface extends NamedInterface {
         
 

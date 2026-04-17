@@ -31,10 +31,26 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { HighScore } from "./HighScore.js";
+
 export class HighScores
             extends Object
-        
-                , HighScoresInterface {
+         implements HighScoresInterface {
         
 
     private orderedHighScoresList: BasicArrayList = new BasicArrayList();

@@ -25,6 +25,21 @@ import { InputFactory } from "../../../../../org/allbinary/game/input/InputFacto
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class MotionGestureInput extends Input {
         
 public constructor (id: number, name: string)                        

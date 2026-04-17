@@ -28,6 +28,25 @@ import { AllBinaryLayerManager } from "../../../../../org/allbinary/layer/AllBin
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { AnalogControllerVisitor } from "./AnalogControllerVisitor.js";
+
+import { AnalogLocationInputProcessor } from "./AnalogLocationInputProcessor.js";
+
 export class SingleAnalogControllerVisitor extends AnalogControllerVisitor {
         
 

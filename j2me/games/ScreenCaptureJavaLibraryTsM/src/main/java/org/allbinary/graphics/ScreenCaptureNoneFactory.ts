@@ -19,6 +19,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { ScreenCapture } from "./ScreenCapture.js";
+
 export class ScreenCaptureNoneFactory
             extends Object
          {

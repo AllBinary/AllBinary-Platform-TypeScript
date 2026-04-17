@@ -55,12 +55,22 @@ import { NodeList } from "../../../../../../org/w3c/dom/NodeList.js";
 
     
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
-export class StoreThemeCategory extends Category
-                , StoreThemeCategoryInterface {
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+export class StoreThemeCategory extends Category implements StoreThemeCategoryInterface {
         
 
     private transformInfoInterface: TransformInfoInterface

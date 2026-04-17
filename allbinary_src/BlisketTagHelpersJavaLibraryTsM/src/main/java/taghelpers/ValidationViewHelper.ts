@@ -37,10 +37,24 @@ import { Node } from "../org/w3c/dom/Node.js";
 
     
 
-import { Boolean } from "./Boolean.js";
 
-export class ValidationViewHelper extends ViewHelper
-                , ValidationComponentInterface {
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { ViewHelper } from "./ViewHelper.js";
+
+export class ValidationViewHelper extends ViewHelper implements ValidationComponentInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

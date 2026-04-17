@@ -40,19 +40,28 @@ import { LogUtil } from "../../../../../../../../../org/allbinary/logic/communic
 
     
 
-import { Short } from "./Short.js";
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { JPanel } from "./JPanel.js";
 
 import { Short } from "./Short.js";
 
-import { Short } from "./Short.js";
+import { GenericProfileAction } from "./GenericProfileAction.js";
 
-import { Short } from "./Short.js";
-
-import { Short } from "./Short.js";
-
-import { Short } from "./Short.js";
-
-import { Short } from "./Short.js";
+import { ActionEvent } from "./ActionEvent.js";
 
 export class GenericProfileActionJPanel extends javax.swing.JPanel {
         

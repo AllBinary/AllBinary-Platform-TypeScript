@@ -22,6 +22,23 @@ import { LogUtil } from "../../../../../../../../org/allbinary/logic/communicati
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { TransformInfoObjectConfigGenerator } from "./TransformInfoObjectConfigGenerator.js";
+
 export class BasicGenerator extends TransformInfoObjectConfigGenerator {
         
 

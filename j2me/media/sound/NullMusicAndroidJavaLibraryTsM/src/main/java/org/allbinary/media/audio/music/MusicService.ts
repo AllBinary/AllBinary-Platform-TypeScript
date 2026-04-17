@@ -22,6 +22,21 @@ import { BaseMusicService } from "../../../../../org/allbinary/media/audio/music
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class MusicService extends BaseMusicService {
         
 

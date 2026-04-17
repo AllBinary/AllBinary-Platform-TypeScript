@@ -25,11 +25,22 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 
     
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { BooleanFileVisitor } from "./BooleanFileVisitor.js";
 
 export class IncludeFileExtensionsBooleanFileVisitor extends BooleanFileVisitor {
         

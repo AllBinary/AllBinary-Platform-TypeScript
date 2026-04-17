@@ -17,6 +17,21 @@ import { OpenGLESImage } from "../../../org/allbinary/image/opengles/OpenGLESIma
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class OpenGLGLUUtils
             extends Object
          {

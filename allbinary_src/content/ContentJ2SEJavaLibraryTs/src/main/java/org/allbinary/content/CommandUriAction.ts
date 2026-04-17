@@ -31,6 +31,23 @@ import { ResourceUtil } from "../../../org/allbinary/data/resource/ResourceUtil.
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { Intent } from "./Intent.js";
+
 export class CommandUriAction
             extends Object
          {

@@ -25,6 +25,21 @@ import { StringMaker } from "../../org/allbinary/logic/string/StringMaker.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class ParentInventoryTagHelper
             extends Object
          {

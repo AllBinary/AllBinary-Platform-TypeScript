@@ -61,11 +61,24 @@ import { EventStrings } from "../../../../../org/allbinary/logic/util/event/Even
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class VisibleCellPositionsSingleton
             extends Object
-        
-                , BuildingEventListenerInterface
-                , ScrollMapEventListenerInterface {
+         implements BuildingEventListenerInterface, ScrollMapEventListenerInterface {
         
 
     private static readonly instance: VisibleCellPositionsSingleton = new VisibleCellPositionsSingleton();

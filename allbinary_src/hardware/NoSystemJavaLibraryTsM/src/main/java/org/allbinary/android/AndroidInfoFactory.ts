@@ -21,6 +21,21 @@
             import hilog from '@ohos.hilog';
         
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class AndroidInfoFactory
             extends Object
          {

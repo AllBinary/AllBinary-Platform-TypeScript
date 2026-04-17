@@ -22,6 +22,25 @@ import { GeographicMapInterface } from "../../../../../../../org/allbinary/media
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { RaceTrackInfo } from "./RaceTrackInfo.js";
+
+import { RaceTrackData } from "./RaceTrackData.js";
+
 export interface RaceTrackGeographicMapInterface extends GeographicMapInterface {
         
 

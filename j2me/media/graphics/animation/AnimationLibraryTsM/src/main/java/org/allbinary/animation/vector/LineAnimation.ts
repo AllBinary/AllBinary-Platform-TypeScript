@@ -37,9 +37,22 @@ import { NullUtil } from "../../../../org/allbinary/logic/NullUtil.js";
 
     
 
-export class LineAnimation extends Animation
-                , ColorCompositeInterface
-                , PositionInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+export class LineAnimation extends Animation implements ColorCompositeInterface, PositionInterface {
         
 
     private newLine: number[][] = new Array(2) [2];

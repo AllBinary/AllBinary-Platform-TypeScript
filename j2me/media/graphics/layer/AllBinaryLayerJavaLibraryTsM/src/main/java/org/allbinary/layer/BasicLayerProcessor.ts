@@ -28,6 +28,25 @@ import { BasicArrayList } from "../../../org/allbinary/util/BasicArrayList.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { AllBinaryLayer } from "./AllBinaryLayer.js";
+
+import { AllBinaryLayerManager } from "./AllBinaryLayerManager.js";
+
 export class BasicLayerProcessor
             extends Object
          {

@@ -25,6 +25,21 @@ import { BasicDecimal } from "../../../../org/allbinary/logic/math/BasicDecimal.
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export interface MovementInterface {
         
 

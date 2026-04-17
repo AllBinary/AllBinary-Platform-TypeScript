@@ -22,10 +22,24 @@ import { Comparator } from "../../../../../../java/util/Comparator.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class ThemeComparator
             extends Object
-        
-                , Comparator {
+         implements Comparator {
         
 public constructor (){
 

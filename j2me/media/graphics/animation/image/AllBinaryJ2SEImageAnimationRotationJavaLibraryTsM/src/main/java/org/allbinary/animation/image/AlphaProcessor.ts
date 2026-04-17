@@ -25,6 +25,23 @@ import { ImageModifierUtil } from "../../../../org/allbinary/media/image/ImageMo
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { ModifierBaseProcessor } from "./ModifierBaseProcessor.js";
+
 export class AlphaProcessor extends ModifierBaseProcessor {
         
 

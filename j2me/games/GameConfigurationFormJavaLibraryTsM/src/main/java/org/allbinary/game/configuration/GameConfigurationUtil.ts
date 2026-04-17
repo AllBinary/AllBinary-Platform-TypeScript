@@ -36,17 +36,30 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { GameConfigurationSingleton } from "./GameConfigurationSingleton.js";
 
-import { GameConfigurationSingleton } from "./GameConfigurationSingleton.js";
+import { GameOptionsForm } from "./GameOptionsForm.js";
 
-import { GameConfigurationSingleton } from "./GameConfigurationSingleton.js";
-
-import { GameConfigurationSingleton } from "./GameConfigurationSingleton.js";
+import { GameConfigurationGauge } from "./GameConfigurationGauge.js";
 
 import { GameConfigurationCentral } from "./GameConfigurationCentral.js";
 
-import { GameConfigurationCentral } from "./GameConfigurationCentral.js";
+import { GameConfiguration } from "./GameConfiguration.js";
 
 export class GameConfigurationUtil
             extends Object

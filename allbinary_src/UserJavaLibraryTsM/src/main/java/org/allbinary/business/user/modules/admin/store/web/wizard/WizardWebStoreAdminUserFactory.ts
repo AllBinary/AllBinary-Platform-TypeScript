@@ -28,10 +28,24 @@ import { UserInterface } from "../../../../../../../../../org/allbinary/business
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class WizardWebStoreAdminUserFactory
             extends Object
-        
-                , UserFactoryInterface {
+         implements UserFactoryInterface {
         
 public constructor (){
 

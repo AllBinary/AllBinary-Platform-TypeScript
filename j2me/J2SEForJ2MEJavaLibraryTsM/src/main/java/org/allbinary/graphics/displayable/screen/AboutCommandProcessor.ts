@@ -28,6 +28,21 @@ import { CommandListener } from "../../../../../javax/microedition/lcdui/Command
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class AboutCommandProcessor
             extends Object
          {

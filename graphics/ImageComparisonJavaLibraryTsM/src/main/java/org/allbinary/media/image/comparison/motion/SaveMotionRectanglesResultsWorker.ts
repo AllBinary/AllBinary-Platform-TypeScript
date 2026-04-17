@@ -37,10 +37,26 @@ import { TimeDelayHelper } from "../../../../../../org/allbinary/time/TimeDelayH
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { MotionRectanglesResultsEvent } from "./MotionRectanglesResultsEvent.js";
+
 export class SaveMotionRectanglesResultsWorker
             extends Object
-        
-                , MotionRectanglesResultsListener {
+         implements MotionRectanglesResultsListener {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

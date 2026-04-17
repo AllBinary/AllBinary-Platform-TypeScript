@@ -22,6 +22,27 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { AbstractArrayListPool } from "./AbstractArrayListPool.js";
+
+import { CacheableInterfaceFactoryInterface } from "./CacheableInterfaceFactoryInterface.js";
+
+import { CacheableInterface } from "./CacheableInterface.js";
+
 export class BasicArrayListPool extends AbstractArrayListPool {
         
 public constructor (cacheableInterfaceFactoryInterface: CacheableInterfaceFactoryInterface)                        

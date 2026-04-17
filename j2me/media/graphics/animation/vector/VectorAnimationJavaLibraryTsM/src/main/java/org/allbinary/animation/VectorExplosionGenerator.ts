@@ -34,7 +34,24 @@ import { BasicArrayList } from "../../../org/allbinary/util/BasicArrayList.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { VectorAnimationUtil } from "./VectorAnimationUtil.js";
+
+import { VectorExplosionType } from "./VectorExplosionType.js";
 
 export class VectorExplosionGenerator
             extends Object

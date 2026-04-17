@@ -60,8 +60,22 @@ import { StringUtil } from "../../../../../../org/allbinary/logic/string/StringU
 
     
 
-export class StreetAddressesEntity extends AbSqlBean
-                , StreetAddressesEntityInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+export class StreetAddressesEntity extends AbSqlBean implements StreetAddressesEntityInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

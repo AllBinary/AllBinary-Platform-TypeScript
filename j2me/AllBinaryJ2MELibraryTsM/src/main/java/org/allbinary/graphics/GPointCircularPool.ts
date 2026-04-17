@@ -25,6 +25,21 @@ import { CircularIndexUtil } from "../../../org/allbinary/util/CircularIndexUtil
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class GPointCircularPool extends BaseCircularPool {
         
 public constructor (size: number){

@@ -22,6 +22,21 @@ import { AllBinarySensor } from "../../../../../org/allbinary/input/AllBinarySen
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class AllBinaryMagneticFieldSensor extends AllBinarySensor {
         
 protected constructor (){

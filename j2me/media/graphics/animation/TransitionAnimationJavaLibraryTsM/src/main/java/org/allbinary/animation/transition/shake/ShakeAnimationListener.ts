@@ -19,6 +19,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { ShakeEvent } from "./ShakeEvent.js";
+
 export class ShakeAnimationListener
             extends Object
          {

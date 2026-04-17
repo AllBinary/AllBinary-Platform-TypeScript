@@ -28,17 +28,30 @@ import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/Lo
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { BaseTouchInput } from "./BaseTouchInput.js";
+
 import { CommonButtons } from "./CommonButtons.js";
 
 import { BasicTouchInputFactory } from "./BasicTouchInputFactory.js";
 
 import { TouchButtonStrafeLeftResource } from "./TouchButtonStrafeLeftResource.js";
 
-import { BasicTouchInputFactory } from "./BasicTouchInputFactory.js";
-
 import { TouchButtonStrafeRightResource } from "./TouchButtonStrafeRightResource.js";
-
-import { BasicTouchInputFactory } from "./BasicTouchInputFactory.js";
 
 import { TouchButtonStartResource } from "./TouchButtonStartResource.js";
 

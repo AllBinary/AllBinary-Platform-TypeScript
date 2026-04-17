@@ -14,6 +14,23 @@ import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { CustomItem } from "./CustomItem.js";
+
 export class CustomGaugeItem extends CustomItem {
         
 

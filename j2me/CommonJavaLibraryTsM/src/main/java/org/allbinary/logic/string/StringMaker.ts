@@ -7,10 +7,21 @@
             import { Integer } from "../../../../java/lang/Integer.js";
         
 
-import { Long } from "./Long.js";
 
-import { Float } from "./Float.js";
 
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class StringMaker
             extends Object
          {

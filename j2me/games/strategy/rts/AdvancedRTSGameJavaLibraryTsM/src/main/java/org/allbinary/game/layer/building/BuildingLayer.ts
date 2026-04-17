@@ -154,13 +154,24 @@ import { NullUtil } from "../../../../../org/allbinary/logic/NullUtil.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { BuildingInfoHudPaintable } from "./BuildingInfoHudPaintable.js";
 
-import { BuildingInfoHudPaintable } from "./BuildingInfoHudPaintable.js";
-
-export class BuildingLayer extends AdvancedRTSGameLayer
-                , RotationAnimationInterfaceCompositeInterface
-                , TrackingEventListenerInterface {
+export class BuildingLayer extends AdvancedRTSGameLayer implements RotationAnimationInterfaceCompositeInterface, TrackingEventListenerInterface {
         
 
     public static getStaticType(): number{

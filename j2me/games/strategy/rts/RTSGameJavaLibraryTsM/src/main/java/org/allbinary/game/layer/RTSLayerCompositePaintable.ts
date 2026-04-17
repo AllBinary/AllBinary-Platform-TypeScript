@@ -31,6 +31,25 @@ import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { UpgradableRTSLayerHudPaintable } from "./UpgradableRTSLayerHudPaintable.js";
+
+import { RTSLayer } from "./RTSLayer.js";
+
 export class RTSLayerCompositePaintable extends Paintable {
         
 

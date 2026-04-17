@@ -19,10 +19,24 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class Life
             extends Object
-        
-                , LifeInterface {
+         implements LifeInterface {
         
 
     public static readonly NO_LIFE: Life = new Life();

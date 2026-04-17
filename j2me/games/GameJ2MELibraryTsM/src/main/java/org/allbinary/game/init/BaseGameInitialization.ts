@@ -70,10 +70,24 @@ import { AbeClientInformationInterface } from "../../../../org/allbinary/logic/s
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class BaseGameInitialization
             extends Object
-        
-                , GameInitializationInterface {
+         implements GameInitializationInterface {
         
 
     public static readonly NULL_BASE_GAME_INITIALIZATION: BaseGameInitialization = new BaseGameInitialization([], 0);

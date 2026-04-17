@@ -28,10 +28,24 @@ import { UserEmailEventListenerInterface } from "../../../../../../../../org/all
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class LogUserEmailEventListenerModule
             extends Object
-        
-                , UserEmailEventListenerInterface {
+         implements UserEmailEventListenerInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

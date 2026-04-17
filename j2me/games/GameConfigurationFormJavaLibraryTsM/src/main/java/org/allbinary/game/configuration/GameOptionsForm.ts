@@ -87,13 +87,24 @@ import { HashtableUtil } from "../../../../org/allbinary/util/HashtableUtil.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { GameConfigurationTextInput } from "./GameConfigurationTextInput.js";
 
 import { GameConfigurationSingleton } from "./GameConfigurationSingleton.js";
-
-import { GameConfigurationTextInput } from "./GameConfigurationTextInput.js";
-
-import { GameConfigurationUtil } from "./GameConfigurationUtil.js";
 
 import { GameConfigurationUtil } from "./GameConfigurationUtil.js";
 

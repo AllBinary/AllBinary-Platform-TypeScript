@@ -19,6 +19,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { Sound } from "./Sound.js";
+
 import { AllBinaryMediaManager } from "./AllBinaryMediaManager.js";
 
 export class CompositeSound extends Sound {

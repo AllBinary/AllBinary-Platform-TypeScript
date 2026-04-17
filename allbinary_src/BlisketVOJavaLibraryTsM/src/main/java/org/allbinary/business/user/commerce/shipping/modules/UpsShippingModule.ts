@@ -25,10 +25,24 @@ import { Money } from "../../../../../../../org/allbinary/business/user/commerce
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class UpsShippingModule
             extends Object
-        
-                , ShippingInterface {
+         implements ShippingInterface {
         
 
     private readonly name: string = "UPS";

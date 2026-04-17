@@ -25,6 +25,23 @@ import { CircularIndexUtil } from "../../../org/allbinary/util/CircularIndexUtil
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { AllBinaryLayerFactoryInterface } from "./AllBinaryLayerFactoryInterface.js";
+
 export class AllBinaryLayerCircularPool extends BaseCircularPool {
         
 protected constructor (){

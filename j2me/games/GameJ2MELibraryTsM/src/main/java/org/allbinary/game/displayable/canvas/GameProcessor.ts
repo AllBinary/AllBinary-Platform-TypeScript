@@ -22,6 +22,23 @@ import { Processor } from "../../../../../org/allbinary/canvas/Processor.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { AllBinaryGameCanvas } from "./AllBinaryGameCanvas.js";
+
 export class GameProcessor extends Processor {
         
 

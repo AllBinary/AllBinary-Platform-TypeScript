@@ -19,8 +19,21 @@
 
 
 
-import { LogConfigTypes } from "./LogConfigTypes.js";
 
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { LogConfigTypes } from "./LogConfigTypes.js";
 
 export class LogConfigTypeFactory

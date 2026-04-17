@@ -1,1 +1,5 @@
 
+/*actual*/ export class AlphaAnimation
+{
+
+}

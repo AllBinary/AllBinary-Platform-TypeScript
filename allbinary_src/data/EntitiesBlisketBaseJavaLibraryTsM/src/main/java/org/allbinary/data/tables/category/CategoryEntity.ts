@@ -46,8 +46,22 @@ import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMak
 
     
 
-export class CategoryEntity extends AbSqlBean
-                , CategoryEntityInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+export class CategoryEntity extends AbSqlBean implements CategoryEntityInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

@@ -48,22 +48,21 @@ import { BooleanFactory } from "../../../../../../../org/allbinary/logic/java/bo
 
     
 
-import { WeblisketSessionData } from "./WeblisketSessionData.js";
 
-import { WeblisketSessionData } from "./WeblisketSessionData.js";
 
-import { WeblisketSessionData } from "./WeblisketSessionData.js";
 
-import { WeblisketSessionData } from "./WeblisketSessionData.js";
 
-import { WeblisketSessionData } from "./WeblisketSessionData.js";
 
-import { WeblisketSessionData } from "./WeblisketSessionData.js";
 
-import { WeblisketSessionData } from "./WeblisketSessionData.js";
 
-import { WeblisketSessionData } from "./WeblisketSessionData.js";
 
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { WeblisketSessionData } from "./WeblisketSessionData.js";
 
 export class BasicWeblisketSession

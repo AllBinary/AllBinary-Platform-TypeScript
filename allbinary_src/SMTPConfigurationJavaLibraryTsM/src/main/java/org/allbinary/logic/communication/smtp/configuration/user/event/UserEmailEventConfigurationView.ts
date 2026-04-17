@@ -40,20 +40,28 @@ import { NodeList } from "../../../../../../../../org/w3c/dom/NodeList.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { UserEmailEventConfigurationData } from "./UserEmailEventConfigurationData.js";
 
-import { UserEmailEventConfigurationData } from "./UserEmailEventConfigurationData.js";
-
-import { UserEmailEventConfigurationData } from "./UserEmailEventConfigurationData.js";
-
-import { UserEmailEventConfigurationData } from "./UserEmailEventConfigurationData.js";
-
-import { UserEmailEventConfigurationData } from "./UserEmailEventConfigurationData.js";
+import { UserEmailEventConfigurationInterface } from "./UserEmailEventConfigurationInterface.js";
 
 export class UserEmailEventConfigurationView
             extends Object
-        
-                , DomNodeInterface {
+         implements DomNodeInterface {
         
 
     private userEmailEventConfigurationInterface: UserEmailEventConfigurationInterface

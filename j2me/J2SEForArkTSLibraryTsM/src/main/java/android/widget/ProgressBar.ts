@@ -1,1 +1,7 @@
 
+
+/*actual*/ export class ProgressBar
+{
+
+}
+

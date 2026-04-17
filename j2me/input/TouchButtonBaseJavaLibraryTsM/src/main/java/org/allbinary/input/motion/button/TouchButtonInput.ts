@@ -46,8 +46,22 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
     
 
-export class TouchButtonInput extends Input
-                , GameKeyEventSourceInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+export class TouchButtonInput extends Input implements GameKeyEventSourceInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

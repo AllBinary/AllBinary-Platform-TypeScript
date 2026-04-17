@@ -30,6 +30,23 @@ import { KeySingletonFactory } from "../../../../../../../../../org/allbinary/in
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { DefaultComboBoxModel } from "./DefaultComboBoxModel.js";
+
 export class KeyNameDefaultComboBoxModelFactory
             extends Object
          {

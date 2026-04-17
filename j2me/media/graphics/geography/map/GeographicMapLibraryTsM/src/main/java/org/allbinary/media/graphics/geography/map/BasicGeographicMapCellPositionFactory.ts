@@ -31,6 +31,27 @@ import { CommonSeps } from "../../../../../../org/allbinary/string/CommonSeps.js
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { BasicGeographicMap } from "./BasicGeographicMap.js";
+
+import { GeographicMapCellPositionFactoryInitVisitorInterface } from "./GeographicMapCellPositionFactoryInitVisitorInterface.js";
+
+import { GeographicMapCellPosition } from "./GeographicMapCellPosition.js";
+
 export class BasicGeographicMapCellPositionFactory
             extends Object
          {

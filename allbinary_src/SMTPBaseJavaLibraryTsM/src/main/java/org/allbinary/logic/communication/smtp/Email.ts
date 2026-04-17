@@ -82,26 +82,26 @@ import { Node } from "../../../../../org/w3c/dom/Node.js";
 
     
 
-import { EmailData } from "./EmailData.js";
 
-import { EmailData } from "./EmailData.js";
 
-import { EmailData } from "./EmailData.js";
 
-import { EmailData } from "./EmailData.js";
 
-import { EmailData } from "./EmailData.js";
 
-import { EmailData } from "./EmailData.js";
 
-import { EmailData } from "./EmailData.js";
 
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { EmailData } from "./EmailData.js";
 
 export class Email
             extends Object
-        
-                , EmailInterface {
+         implements EmailInterface {
         
 
     private static readonly DEBUG: string = "mail.debug";

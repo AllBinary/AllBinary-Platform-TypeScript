@@ -43,8 +43,22 @@ import { NullUtil } from "../../../../../org/allbinary/logic/NullUtil.js";
 
     
 
-export class AllBinarySpriteRotationAnimationFactory extends BaseImageAnimationFactory
-                , ProceduralAnimationInterfaceFactoryInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+export class AllBinarySpriteRotationAnimationFactory extends BaseImageAnimationFactory implements ProceduralAnimationInterfaceFactoryInterface {
         
 
     private readonly animationFactorySpriteScaleUtil: AnimationFactorySpriteScaleUtil = AnimationFactorySpriteScaleUtil.getInstance()!;

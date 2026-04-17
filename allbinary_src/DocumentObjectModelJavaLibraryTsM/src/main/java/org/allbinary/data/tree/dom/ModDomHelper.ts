@@ -45,10 +45,21 @@ import { Node } from "../../../../../org/w3c/dom/Node.js";
 
     
 
-import { DomData } from "./DomData.js";
 
-import { DomData } from "./DomData.js";
 
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { DomData } from "./DomData.js";
 
 export class ModDomHelper

@@ -46,6 +46,23 @@ import { InvalidContentTypeException } from "../../../../../../org/apache/common
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { RequestParams } from "./RequestParams.js";
+
 export class MultipartRequestParams extends RequestParams {
         
 

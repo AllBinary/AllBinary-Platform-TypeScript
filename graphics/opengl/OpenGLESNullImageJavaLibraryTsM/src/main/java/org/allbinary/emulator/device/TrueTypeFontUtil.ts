@@ -31,6 +31,23 @@ import { OpenGLESImage } from "../../../../org/allbinary/image/opengles/OpenGLES
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { TrueTypeFontUtilBase } from "./TrueTypeFontUtilBase.js";
+
 export class TrueTypeFontUtil extends TrueTypeFontUtilBase {
         
 

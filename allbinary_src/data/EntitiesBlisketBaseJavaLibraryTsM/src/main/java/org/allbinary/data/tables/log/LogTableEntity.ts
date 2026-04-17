@@ -34,8 +34,22 @@ import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMak
 
     
 
-export class LogTableEntity extends AbSqlBean
-                , LogTableEntityInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+export class LogTableEntity extends AbSqlBean implements LogTableEntityInterface {
         
 
     private readonly tableName: string = "log";

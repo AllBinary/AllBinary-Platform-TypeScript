@@ -28,6 +28,25 @@ import { LogUtil } from "../../../org/allbinary/logic/communication/log/LogUtil.
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { LayerManager } from "./LayerManager.js";
+
+import { AllBinaryLayer } from "./AllBinaryLayer.js";
+
 export class AllBinaryLayerManager extends LayerManager {
         
 

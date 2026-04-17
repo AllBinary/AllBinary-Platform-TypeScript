@@ -37,6 +37,21 @@ import { AnimationFactorySpriteScaleUtil } from "../../../../../org/allbinary/im
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class OneRowSpriteIndexedAnimationFactory extends BaseImageAnimationFactory {
         
 

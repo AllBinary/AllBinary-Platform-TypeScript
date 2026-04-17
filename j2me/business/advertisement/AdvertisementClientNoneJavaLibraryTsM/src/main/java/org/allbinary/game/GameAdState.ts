@@ -46,10 +46,26 @@ import { EventStrings } from "../../../org/allbinary/logic/util/event/EventStrin
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { GameType } from "./GameType.js";
+
 export class GameAdState
             extends Object
-        
-                , VirtualKeyboardEventListenerInterface {
+         implements VirtualKeyboardEventListenerInterface {
         
 
     private readonly adConfiguration: AdConfiguration

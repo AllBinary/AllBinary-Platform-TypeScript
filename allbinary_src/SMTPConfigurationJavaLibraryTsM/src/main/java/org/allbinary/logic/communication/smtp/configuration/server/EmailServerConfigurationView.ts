@@ -40,18 +40,28 @@ import { NodeList } from "../../../../../../../org/w3c/dom/NodeList.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { EmailServerConfigurationData } from "./EmailServerConfigurationData.js";
 
-import { EmailServerConfigurationData } from "./EmailServerConfigurationData.js";
-
-import { EmailServerConfigurationData } from "./EmailServerConfigurationData.js";
-
-import { EmailServerConfigurationData } from "./EmailServerConfigurationData.js";
+import { EmailServerConfigurationInterface } from "./EmailServerConfigurationInterface.js";
 
 export class EmailServerConfigurationView
             extends Object
-        
-                , DomNodeInterface {
+         implements DomNodeInterface {
         
 
     private emailServerConfigurationInterface: EmailServerConfigurationInterface

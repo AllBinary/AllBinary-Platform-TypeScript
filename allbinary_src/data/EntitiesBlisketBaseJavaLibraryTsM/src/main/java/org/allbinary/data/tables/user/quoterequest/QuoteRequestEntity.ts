@@ -51,8 +51,22 @@ import { StringMaker } from "../../../../../../org/allbinary/logic/string/String
 
     
 
-export class QuoteRequestEntity extends AbSqlBean
-                , QuoteRequestEntityInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+export class QuoteRequestEntity extends AbSqlBean implements QuoteRequestEntityInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

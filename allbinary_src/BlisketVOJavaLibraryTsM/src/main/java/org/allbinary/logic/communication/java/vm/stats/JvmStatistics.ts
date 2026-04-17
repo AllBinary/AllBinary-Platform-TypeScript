@@ -19,9 +19,22 @@
 
 
 
-import { Runtime } from "./Runtime.js";
 
-import { Thread } from "./Thread.js";
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { Runtime } from "./Runtime.js";
 
 export class JvmStatistics
             extends Object

@@ -34,7 +34,24 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { SimpleFileUtil } from "./SimpleFileUtil.js";
+
+import { AbFile } from "./AbFile.js";
 
 export class FileUtil2
             extends Object

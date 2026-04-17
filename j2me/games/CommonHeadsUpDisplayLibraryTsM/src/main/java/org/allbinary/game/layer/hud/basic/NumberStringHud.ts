@@ -49,8 +49,22 @@ import { StringUtil } from "../../../../../../org/allbinary/logic/string/StringU
 
     
 
-export class NumberStringHud extends BasicHud
-                , PaintableInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+export class NumberStringHud extends BasicHud implements PaintableInterface {
         
 
     public static readonly NULL_NUMBER_STRING_HUD: NumberStringHud = new NumberStringHud(StringUtil.getInstance()!.EMPTY_STRING, 9, BasicHudFactory.getInstance()!.ABSOLUTE, 0, 0, 0, BasicColorFactory.getInstance()!.NULL_COLOR);

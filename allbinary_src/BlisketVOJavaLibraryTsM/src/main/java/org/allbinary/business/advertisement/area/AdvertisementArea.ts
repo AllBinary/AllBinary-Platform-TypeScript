@@ -34,16 +34,28 @@ import { Document } from "../../../../../org/w3c/dom/Document.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { AdvertisementAreaData } from "./AdvertisementAreaData.js";
 
-import { AdvertisementAreaData } from "./AdvertisementAreaData.js";
-
-import { AdvertisementAreaData } from "./AdvertisementAreaData.js";
+import { AdvertisementAreaConstraintsInterface } from "./AdvertisementAreaConstraintsInterface.js";
 
 export class AdvertisementArea
             extends Object
-        
-                , AdvertisementAreaInterface {
+         implements AdvertisementAreaInterface {
         
 
     private name: string

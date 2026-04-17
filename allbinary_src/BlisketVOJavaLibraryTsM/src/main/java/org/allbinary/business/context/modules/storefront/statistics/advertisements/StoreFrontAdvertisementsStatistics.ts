@@ -28,10 +28,24 @@ import { StoreFrontInterface } from "../../../../../../../../org/allbinary/busin
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class StoreFrontAdvertisementsStatistics
             extends Object
-        
-                , StoreFrontAdvertisementsStatisticsInterface {
+         implements StoreFrontAdvertisementsStatisticsInterface {
         
 public constructor (storeFrontInterface: StoreFrontInterface){
 

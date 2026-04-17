@@ -11,6 +11,21 @@ import { ObjectThreedOpenGLProcessor } from "../../../../org/allbinary/graphics/
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class EnableFacesShaderOpenGLProcessor extends ObjectThreedOpenGLProcessor {
         
 

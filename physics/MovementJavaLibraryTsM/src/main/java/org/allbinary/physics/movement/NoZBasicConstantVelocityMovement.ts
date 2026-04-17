@@ -40,8 +40,24 @@ import { AngleFactory } from "../../../../org/allbinary/math/AngleFactory.js";
 
     
 
-export class NoZBasicConstantVelocityMovement extends Movement
-                , VelocityInterfaceCompositeInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { Movement } from "./Movement.js";
+
+export class NoZBasicConstantVelocityMovement extends Movement implements VelocityInterfaceCompositeInterface {
         
 
     private velocityProperties: BasicVelocityProperties

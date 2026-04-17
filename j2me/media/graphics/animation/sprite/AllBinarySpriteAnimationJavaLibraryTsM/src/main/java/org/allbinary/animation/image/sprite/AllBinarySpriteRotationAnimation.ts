@@ -43,6 +43,23 @@ import { FrameUtil } from "../../../../../org/allbinary/math/FrameUtil.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { HackRotationSpriteIndexedAnimation } from "./HackRotationSpriteIndexedAnimation.js";
+
 export class AllBinarySpriteRotationAnimation extends HackRotationSpriteIndexedAnimation {
         
 public constructor (sprite: Sprite, image: Image, animationBehavior: AnimationBehavior)                        

@@ -25,11 +25,24 @@ import { VideoInterface } from "../../../../../../../org/allbinary/logic/system/
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class Video
             extends Object
-        
-                , HardwareComponentInterface
-                , VideoInterface {
+         implements HardwareComponentInterface, VideoInterface {
         
 
     private data: string

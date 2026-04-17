@@ -25,10 +25,28 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { CacheableInterfaceFactoryInterface } from "./CacheableInterfaceFactoryInterface.js";
+
+import { CacheableInterface } from "./CacheableInterface.js";
+
 export class AbstractArrayListPool
             extends Object
-        
-                , PoolInterface {
+         implements PoolInterface {
         
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;

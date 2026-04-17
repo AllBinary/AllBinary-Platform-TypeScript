@@ -66,6 +66,23 @@ import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMak
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { AllBinaryGameCanvas } from "./AllBinaryGameCanvas.js";
+
 export class GameCanvasInputProcessor extends InputProcessor {
         
 

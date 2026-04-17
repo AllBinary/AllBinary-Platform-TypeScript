@@ -49,14 +49,26 @@ import { LineUnavailableException } from "../../../../javax/sound/sampled/LineUn
 
     
 
-import { NullAudioFormat } from "./NullAudioFormat.js";
 
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { NullAudioFormat } from "./NullAudioFormat.js";
 
 export class NullClip
             extends Object
-        
-                , Clip {
+         implements Clip {
         
 
     public static readonly NULL_CONTROL: NullJ2SEControl = new NullJ2SEControl(BooleanControl.Type.MUTE);

@@ -58,19 +58,22 @@ import { LogUtil } from "../../org/allbinary/logic/communication/log/LogUtil.js"
 
     
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { TagHelper } from "./TagHelper.js";
 
 export class BasketRequestHelper extends TagHelper {
         

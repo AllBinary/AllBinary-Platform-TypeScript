@@ -25,6 +25,21 @@ import { DisplayableInterface } from "../../../../../org/allbinary/graphics/disp
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export interface AllBinaryGameCanvasInterface extends DisplayableInterface {
         
 

@@ -19,6 +19,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { ClientInformation } from "./ClientInformation.js";
+
 export class ClientInformationFactory
             extends Object
          {

@@ -20,7 +20,28 @@ import { BasicArrayList } from "../../../org/allbinary/util/BasicArrayList.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { LayerManagerLogging } from "./LayerManagerLogging.js";
+
 import { LayerManagerNoDebug } from "./LayerManagerNoDebug.js";
+
+import { AllBinaryLayer } from "./AllBinaryLayer.js";
+
+import { Layer } from "./Layer.js";
 
 export class LayerManager
             extends Object

@@ -25,10 +25,24 @@ import { AllBinaryLayerFactoryInterface } from "../../../../../../org/allbinary/
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class LifeLayerFactory
             extends Object
-        
-                , AllBinaryLayerFactoryInterface {
+         implements AllBinaryLayerFactoryInterface {
         
 
                 //@Throws(Error::class)

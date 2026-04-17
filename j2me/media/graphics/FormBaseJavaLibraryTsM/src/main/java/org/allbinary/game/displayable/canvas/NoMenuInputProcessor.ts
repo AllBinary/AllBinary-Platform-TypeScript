@@ -31,6 +31,23 @@ import { BasicArrayListUtil } from "../../../../../org/allbinary/util/BasicArray
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { BasicMenuInputProcessor } from "./BasicMenuInputProcessor.js";
+
 export class NoMenuInputProcessor extends BasicMenuInputProcessor {
         
 

@@ -25,6 +25,23 @@ import { InputAutomationActionInterface } from "../../../../../../org/allbinary/
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { Rectangle } from "./Rectangle.js";
+
 export interface BasicGameInputAutomationActionInterface extends InputAutomationActionInterface {
         
 

@@ -58,6 +58,23 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { TransformInterface } from "./TransformInterface.js";
+
 export class TransformFactory
             extends Object
          {

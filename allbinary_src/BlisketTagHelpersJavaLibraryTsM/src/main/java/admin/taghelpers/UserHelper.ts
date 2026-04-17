@@ -73,6 +73,23 @@ import { StringValidationUtil } from "../../org/allbinary/logic/string/StringVal
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { Table } from "./Table.js";
+
 export class UserHelper extends Table {
         
 

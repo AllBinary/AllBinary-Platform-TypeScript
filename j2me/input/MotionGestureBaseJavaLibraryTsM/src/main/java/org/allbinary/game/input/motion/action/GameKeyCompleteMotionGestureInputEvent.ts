@@ -46,10 +46,24 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { GameKeyCompleteMotionGestureInputEventFactory } from "./GameKeyCompleteMotionGestureInputEventFactory.js";
 
-export class GameKeyCompleteMotionGestureInputEvent extends CompleteMotionGestureInputEvent
-                , GameKeyEventSourceInterface {
+export class GameKeyCompleteMotionGestureInputEvent extends CompleteMotionGestureInputEvent implements GameKeyEventSourceInterface {
         
 
     private readonly gameKeyEventFactory: GameKeyEventFactory = GameKeyEventFactory.getInstance()!;

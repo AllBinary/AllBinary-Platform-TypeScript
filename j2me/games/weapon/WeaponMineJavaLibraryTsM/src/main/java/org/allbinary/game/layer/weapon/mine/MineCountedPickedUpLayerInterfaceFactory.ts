@@ -54,9 +54,22 @@ import { SmallIntegerSingletonFactory } from "../../../../../../org/allbinary/lo
 
     
 
-import { MineLayerCircularStaticPool } from "./MineLayerCircularStaticPool.js";
 
-import { MineWeaponResources } from "./MineWeaponResources.js";
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { MineLayerCircularStaticPool } from "./MineLayerCircularStaticPool.js";
 
 import { MineWeaponResources } from "./MineWeaponResources.js";
 

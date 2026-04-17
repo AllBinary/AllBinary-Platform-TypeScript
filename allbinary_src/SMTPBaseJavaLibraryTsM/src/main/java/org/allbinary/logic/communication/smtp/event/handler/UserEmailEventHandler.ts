@@ -34,6 +34,21 @@ import { EmailInfo } from "../../../../../../../org/allbinary/logic/communicatio
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class UserEmailEventHandler
             extends Object
          {

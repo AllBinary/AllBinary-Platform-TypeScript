@@ -17,7 +17,28 @@ import { AbeClientInformationInterface } from "../../../../org/allbinary/logic/s
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { HighScoresBase } from "./HighScoresBase.js";
+
+import { HighScoresResultsListener } from "./HighScoresResultsListener.js";
+
 import { RecordStoreHighScores } from "./RecordStoreHighScores.js";
+
+import { HighScoresHelperBase } from "./HighScoresHelperBase.js";
 
 export class BasicHighScoresFactory extends HighScoresBase {
         

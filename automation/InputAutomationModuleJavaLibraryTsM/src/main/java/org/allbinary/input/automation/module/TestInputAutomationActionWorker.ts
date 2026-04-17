@@ -40,9 +40,24 @@ import { MotionRectangleConstraintsInterface } from "../../../../../org/allbinar
 
     
 
-import { Thread } from "./Thread.js";
 
-import { Thread } from "./Thread.js";
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { AbstractInputAutomationWorker } from "./AbstractInputAutomationWorker.js";
+
+import { InputAutomationActionInterface } from "./InputAutomationActionInterface.js";
 
 export class TestInputAutomationActionWorker extends AbstractInputAutomationWorker {
         

@@ -34,6 +34,25 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { CommandFormInputProcessor } from "./CommandFormInputProcessor.js";
+
+import { PopupMenuInputProcessor } from "./PopupMenuInputProcessor.js";
+
 export class PopupCommandFormInputProcessor extends CommandFormInputProcessor {
         
 public constructor (gameKeyEventList: BasicArrayList, playerInputId: number, gameCanvas: MyCanvas, form: ScrollSelectionForm, popupMenuInputProcessor: PopupMenuInputProcessor)                        

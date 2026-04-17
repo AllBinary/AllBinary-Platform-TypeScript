@@ -28,10 +28,24 @@ import { CommonSeps } from "../../../../../../../../org/allbinary/string/CommonS
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class PaymentGatewayPrimaryKey
             extends Object
-        
-                , java.io.Serializable {
+         implements java.io.Serializable {
         
 
     private storeName: string

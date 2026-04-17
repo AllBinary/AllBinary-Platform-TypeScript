@@ -79,19 +79,22 @@ import { HttpStoreComponentView } from "../../../views/business/context/modules/
 
     
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
-export class DateRangeOrderHistoryView extends HttpStoreComponentView
-                , ValidationComponentInterface
-                , DomNodeInterface {
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+export class DateRangeOrderHistoryView extends HttpStoreComponentView implements ValidationComponentInterface, DomNodeInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

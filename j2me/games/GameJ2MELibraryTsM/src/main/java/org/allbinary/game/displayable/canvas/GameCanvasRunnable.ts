@@ -34,6 +34,25 @@ import { GameTickTimeDelayHelperFactory } from "../../../../../org/allbinary/tim
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { GameRunnable } from "./GameRunnable.js";
+
+import { AllBinaryGameCanvas } from "./AllBinaryGameCanvas.js";
+
 export class GameCanvasRunnable extends GameRunnable {
         
 

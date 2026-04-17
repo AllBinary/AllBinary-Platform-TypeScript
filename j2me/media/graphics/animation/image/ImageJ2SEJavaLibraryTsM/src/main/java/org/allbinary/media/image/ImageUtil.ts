@@ -70,6 +70,21 @@ import { J2SEMutableImage } from "../../../../org/microemu/device/j2se/J2SEMutab
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class ImageUtil
             extends Object
          {

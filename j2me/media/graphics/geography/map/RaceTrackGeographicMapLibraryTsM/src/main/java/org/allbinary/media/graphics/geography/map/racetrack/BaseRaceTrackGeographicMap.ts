@@ -43,8 +43,26 @@ import { GeographicMapCellTypeFactory } from "../../../../../../../org/allbinary
 
     
 
-export class BaseRaceTrackGeographicMap extends BasicGeographicMap
-                , RaceTrackGeographicMapInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { RaceTrackInfo } from "./RaceTrackInfo.js";
+
+import { RaceTrackData } from "./RaceTrackData.js";
+
+export class BaseRaceTrackGeographicMap extends BasicGeographicMap implements RaceTrackGeographicMapInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

@@ -34,7 +34,24 @@ import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { FrameUtil } from "./FrameUtil.js";
+
+import { Angle } from "./Angle.js";
 
 export class AngleFactory
             extends Object

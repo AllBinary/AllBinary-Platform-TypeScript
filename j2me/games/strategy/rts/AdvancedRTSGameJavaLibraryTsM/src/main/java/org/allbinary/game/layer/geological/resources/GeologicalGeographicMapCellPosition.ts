@@ -22,6 +22,23 @@ import { GeographicMapCellPosition } from "../../../../../../org/allbinary/media
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { GeologicalResource } from "./GeologicalResource.js";
+
 export class GeologicalGeographicMapCellPosition extends GeographicMapCellPosition {
         
 

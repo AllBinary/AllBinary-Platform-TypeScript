@@ -58,7 +58,22 @@ import { PathFindingNode } from "../../../../../../../../org/allbinary/media/gra
 
     
 
-import { CellPositionArray } from "./CellPositionArray.js";
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { BasePathFinderGraphVisitor } from "./BasePathFinderGraphVisitor.js";
 
 import { CellPositionArray } from "./CellPositionArray.js";
 

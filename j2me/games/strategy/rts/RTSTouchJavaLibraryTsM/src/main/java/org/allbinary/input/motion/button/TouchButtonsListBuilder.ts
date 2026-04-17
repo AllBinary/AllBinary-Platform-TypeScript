@@ -22,6 +22,23 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { BaseTouchInput } from "./BaseTouchInput.js";
+
 export class TouchButtonsListBuilder extends BaseTouchInput {
         
 

@@ -25,6 +25,23 @@ import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonS
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { AdvertisementCampaignInternalEntityInterface } from "./AdvertisementCampaignInternalEntityInterface.js";
+
 export class AdvertisementCampaignInternalEntityFactory
             extends Object
          {

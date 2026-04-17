@@ -31,6 +31,21 @@ import { MainFeatureFactory } from "../../../org/allbinary/game/configuration/fe
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class FullScreenUtil
             extends Object
          {

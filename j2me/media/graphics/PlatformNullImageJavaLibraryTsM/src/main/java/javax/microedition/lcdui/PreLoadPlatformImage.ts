@@ -19,6 +19,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { PlatformImage } from "./PlatformImage.js";
+
 export class PreLoadPlatformImage extends PlatformImage {
         
 

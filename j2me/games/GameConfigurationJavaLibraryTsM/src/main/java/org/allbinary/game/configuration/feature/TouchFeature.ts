@@ -19,6 +19,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { Feature } from "./Feature.js";
+
 export class TouchFeature extends Feature {
         
  constructor (name: string)                        

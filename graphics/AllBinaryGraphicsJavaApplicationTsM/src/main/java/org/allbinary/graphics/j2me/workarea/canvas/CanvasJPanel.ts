@@ -120,15 +120,40 @@ import { Node } from "../../../../../../org/w3c/dom/Node.js";
 
     
 
-import { Color } from "./Color.js";
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { JPanel } from "./JPanel.js";
+
+import { Dimension } from "./Dimension.js";
+
+import { CanvasDom } from "./CanvasDom.js";
+
+import { Graphics } from "./Graphics.js";
+
+import { MouseEvent } from "./MouseEvent.js";
+
+import { KeyEvent } from "./KeyEvent.js";
 
 import { Color } from "./Color.js";
 
-export class CanvasJPanel extends javax.swing.JPanel
-                , java.awt.event.MouseListener
-                , java.awt.event.MouseMotionListener
-                , java.awt.event.KeyListener
-                , MyGraphicItemEventListener {
+import { IntegerDimension } from "./IntegerDimension.js";
+
+import { Grid } from "./Grid.js";
+
+export class CanvasJPanel extends javax.swing.JPanel implements java.awt.event.MouseListener, java.awt.event.MouseMotionListener, java.awt.event.KeyListener, MyGraphicItemEventListener {
         
 
     private frame: number = 0;

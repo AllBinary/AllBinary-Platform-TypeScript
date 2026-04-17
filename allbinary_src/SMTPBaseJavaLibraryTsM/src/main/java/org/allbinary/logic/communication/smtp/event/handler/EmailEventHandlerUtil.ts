@@ -52,6 +52,23 @@ import { AbeClientInformationInterface } from "../../../../../../../org/allbinar
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { UserEmailEventHandler } from "./UserEmailEventHandler.js";
+
 export class EmailEventHandlerUtil
             extends Object
          {

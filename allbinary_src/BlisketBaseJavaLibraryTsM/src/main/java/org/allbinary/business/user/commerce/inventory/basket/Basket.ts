@@ -45,11 +45,24 @@ import { InventoryEntityFactory } from "../../../../../../../org/allbinary/data/
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class Basket
             extends Object
-        
-                , BasketInterface
-                , Serializable {
+         implements BasketInterface, Serializable {
         
 
     private items: HashMap<any, any> = new HashMap<any, any>();

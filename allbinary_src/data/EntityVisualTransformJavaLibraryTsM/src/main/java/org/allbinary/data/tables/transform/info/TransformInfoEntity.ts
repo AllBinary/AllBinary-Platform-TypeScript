@@ -73,8 +73,22 @@ import { TransformInfoObjectConfigGeneratorFactoryInterface } from "../../../../
 
     
 
-export class TransformInfoEntity extends AbSqlBean
-                , TransformInfoEntityInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+export class TransformInfoEntity extends AbSqlBean implements TransformInfoEntityInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

@@ -22,6 +22,23 @@ import { InputAutomationConfigurationFactory } from "../../../../../../org/allbi
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { InputAutomationModuleConfigurations } from "./InputAutomationModuleConfigurations.js";
+
 export class InputAutomationModuleConfigurationsSingletonFactory
             extends Object
          {

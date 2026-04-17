@@ -37,8 +37,24 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
     
 
-export class CategoryModifierTree extends CategoryPrivateTree
-                , CategoryModifierTreeInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { CategoryPrivateTree } from "./CategoryPrivateTree.js";
+
+export class CategoryModifierTree extends CategoryPrivateTree implements CategoryModifierTreeInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

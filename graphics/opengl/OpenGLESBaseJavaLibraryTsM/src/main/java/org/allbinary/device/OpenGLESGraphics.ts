@@ -26,11 +26,24 @@ import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { NullGL10 } from "./NullGL10.js";
 
-export class OpenGLESGraphics extends Graphics
-                , OpenGLSurfaceChangedInterface
-                , GraphicsInterface {
+export class OpenGLESGraphics extends Graphics implements OpenGLSurfaceChangedInterface, GraphicsInterface {
         
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;

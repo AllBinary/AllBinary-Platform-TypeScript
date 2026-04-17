@@ -22,10 +22,24 @@ import { TsUtil } from "../../../../../org/allbinary/logic/TsUtil.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class ComparableObject
             extends Object
-        
-                , Comparable {
+         implements Comparable {
         
 
     public compareTo(anyType: any = {}): number{

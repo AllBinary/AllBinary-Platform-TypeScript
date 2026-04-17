@@ -57,8 +57,22 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
     
 
-export class BasicAI extends ArtificialIntelligence
-                , GameKeyEventSourceInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+export class BasicAI extends ArtificialIntelligence implements GameKeyEventSourceInterface {
         
 
     public static readonly AI_VISITOR: Integer = SmallIntegerSingletonFactory.getInstance()!.getInstance(2)!;

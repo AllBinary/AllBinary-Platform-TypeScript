@@ -55,8 +55,22 @@ import { StringMaker } from "../../../../../../../../../org/allbinary/logic/stri
 
     
 
-export class TransactionEntity extends AbSqlBean
-                , TransactionEntityInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+export class TransactionEntity extends AbSqlBean implements TransactionEntityInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

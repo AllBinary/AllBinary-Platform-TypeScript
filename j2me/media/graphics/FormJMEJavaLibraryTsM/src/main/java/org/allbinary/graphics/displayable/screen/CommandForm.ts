@@ -58,11 +58,24 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { ScreenRepaintProcessorFactory } from "./ScreenRepaintProcessorFactory.js";
 
-export class CommandForm extends Form
-                , MyCommandInterface
-                , MenuListener {
+export class CommandForm extends Form implements MyCommandInterface, MenuListener {
         
 
     public static readonly NULL_COMMAND_FORM: CommandForm = new CommandForm(NullCommandListener.NULL_COMMAND_LISTENER, StringUtil.getInstance()!.EMPTY_STRING, BasicColorFactory.getInstance()!.BLACK, BasicColorFactory.getInstance()!.WHITE);

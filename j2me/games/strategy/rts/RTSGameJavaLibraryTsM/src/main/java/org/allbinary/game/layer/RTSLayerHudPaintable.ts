@@ -34,6 +34,25 @@ import { BasicWeaponPart } from "../../../../org/allbinary/game/part/weapon/Basi
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { SelectionHudPaintable } from "./SelectionHudPaintable.js";
+
+import { RTSLayer } from "./RTSLayer.js";
+
 export class RTSLayerHudPaintable extends SelectionHudPaintable {
         
 

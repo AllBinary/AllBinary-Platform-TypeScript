@@ -40,10 +40,24 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class BasicEventHandler
             extends Object
-        
-                , BasicEventHandlerInterface {
+         implements BasicEventHandlerInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

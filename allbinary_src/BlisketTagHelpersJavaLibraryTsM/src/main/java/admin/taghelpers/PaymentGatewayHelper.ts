@@ -55,6 +55,23 @@ import { StringMaker } from "../../org/allbinary/logic/string/StringMaker.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { BasicTable } from "./BasicTable.js";
+
 export class PaymentGatewayHelper extends BasicTable {
         
 

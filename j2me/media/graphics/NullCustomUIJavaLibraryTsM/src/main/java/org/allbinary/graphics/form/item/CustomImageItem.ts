@@ -14,6 +14,23 @@ import { BasicColor } from "../../../../../org/allbinary/graphics/color/BasicCol
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { CustomItem } from "./CustomItem.js";
+
 export class CustomImageItem extends CustomItem {
         
 

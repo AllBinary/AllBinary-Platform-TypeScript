@@ -19,10 +19,24 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class DamageableBaseBehavior
             extends Object
-        
-                , DamageableInterface {
+         implements DamageableInterface {
         
 
     private static readonly instance: DamageableBaseBehavior = new DamageableBaseBehavior();

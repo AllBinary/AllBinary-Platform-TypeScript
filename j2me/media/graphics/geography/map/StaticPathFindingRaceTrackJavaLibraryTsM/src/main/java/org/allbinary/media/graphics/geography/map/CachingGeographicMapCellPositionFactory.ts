@@ -25,7 +25,28 @@ import { CellPosition } from "../../../../../../org/allbinary/graphics/CellPosit
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { BasicGeographicMapCellPositionFactory } from "./BasicGeographicMapCellPositionFactory.js";
+
+import { BasicGeographicMap } from "./BasicGeographicMap.js";
+
 import { GeographicMapCellPositionFactory } from "./GeographicMapCellPositionFactory.js";
+
+import { GeographicMapCellPosition } from "./GeographicMapCellPosition.js";
 
 export class CachingGeographicMapCellPositionFactory extends BasicGeographicMapCellPositionFactory {
         

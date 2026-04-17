@@ -57,114 +57,26 @@ import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonS
 
     
 
-import { BasicItemData } from "./BasicItemData.js";
 
-import { BasicItemData } from "./BasicItemData.js";
 
-import { BasicItemData } from "./BasicItemData.js";
 
-import { BasicItemData } from "./BasicItemData.js";
 
-import { BasicItemData } from "./BasicItemData.js";
 
-import { BasicItemData } from "./BasicItemData.js";
 
-import { BasicItemData } from "./BasicItemData.js";
 
-import { BasicItemData } from "./BasicItemData.js";
 
-import { BasicItemData } from "./BasicItemData.js";
 
-import { BasicItemData } from "./BasicItemData.js";
+        
 
-import { BasicItemData } from "./BasicItemData.js";
 
-import { BasicItemData } from "./BasicItemData.js";
 
-import { BasicItemData } from "./BasicItemData.js";
-
-import { BasicItemData } from "./BasicItemData.js";
-
-import { BasicItemData } from "./BasicItemData.js";
-
-import { BasicItemData } from "./BasicItemData.js";
-
-import { BasicItemData } from "./BasicItemData.js";
-
-import { BasicItemData } from "./BasicItemData.js";
-
-import { BasicItemData } from "./BasicItemData.js";
-
-import { BasicItemData } from "./BasicItemData.js";
-
-import { BasicItemData } from "./BasicItemData.js";
-
-import { BasicItemData } from "./BasicItemData.js";
-
-import { BasicItemData } from "./BasicItemData.js";
-
-import { BasicItemData } from "./BasicItemData.js";
-
-import { BasicItemData } from "./BasicItemData.js";
-
-import { BasicItemData } from "./BasicItemData.js";
-
-import { BasicItemData } from "./BasicItemData.js";
-
-import { BasicItemData } from "./BasicItemData.js";
-
-import { BasicItemData } from "./BasicItemData.js";
-
-import { BasicItemData } from "./BasicItemData.js";
-
-import { BasicItemData } from "./BasicItemData.js";
-
-import { BasicItemData } from "./BasicItemData.js";
-
-import { BasicItemData } from "./BasicItemData.js";
-
-import { BasicItemData } from "./BasicItemData.js";
-
-import { BasicItemData } from "./BasicItemData.js";
-
-import { BasicItemData } from "./BasicItemData.js";
-
-import { BasicItemData } from "./BasicItemData.js";
-
-import { BasicItemData } from "./BasicItemData.js";
-
-import { BasicItemData } from "./BasicItemData.js";
-
-import { BasicItemData } from "./BasicItemData.js";
-
-import { BasicItemData } from "./BasicItemData.js";
-
-import { BasicItemData } from "./BasicItemData.js";
-
-import { BasicItemData } from "./BasicItemData.js";
-
-import { BasicItemData } from "./BasicItemData.js";
-
-import { BasicItemData } from "./BasicItemData.js";
-
-import { BasicItemData } from "./BasicItemData.js";
-
-import { BasicItemData } from "./BasicItemData.js";
-
-import { BasicItemData } from "./BasicItemData.js";
-
-import { BasicItemData } from "./BasicItemData.js";
-
-import { BasicItemData } from "./BasicItemData.js";
-
-import { BasicItemData } from "./BasicItemData.js";
-
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { BasicItemData } from "./BasicItemData.js";
 
 export class BasicItem
             extends Object
-        
-                , ItemInterface {
+         implements ItemInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

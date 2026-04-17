@@ -22,6 +22,23 @@ import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUt
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { SoundsFactoryInterface } from "./SoundsFactoryInterface.js";
+
 export class AllBinaryMediaManagerShutdown
             extends Object
          {

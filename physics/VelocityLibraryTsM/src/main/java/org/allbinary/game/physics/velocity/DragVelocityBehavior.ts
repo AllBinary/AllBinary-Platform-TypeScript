@@ -22,6 +22,25 @@ import { BasicDecimal } from "../../../../../org/allbinary/logic/math/BasicDecim
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { VelocityBehaviorBase } from "./VelocityBehaviorBase.js";
+
+import { BasicVelocityProperties } from "./BasicVelocityProperties.js";
+
 export class DragVelocityBehavior extends VelocityBehaviorBase {
         
 

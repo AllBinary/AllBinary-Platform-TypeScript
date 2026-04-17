@@ -77,64 +77,28 @@ import { Node } from "../../../../../../../org/w3c/dom/Node.js";
 
     
 
-import { OrderData } from "./OrderData.js";
 
-import { OrderHistoryData } from "./OrderHistoryData.js";
 
-import { OrderHistoryData } from "./OrderHistoryData.js";
 
-import { OrderHistoryData } from "./OrderHistoryData.js";
 
-import { OrderHistoryData } from "./OrderHistoryData.js";
 
-import { OrderHistoryData } from "./OrderHistoryData.js";
 
-import { OrderHistoryData } from "./OrderHistoryData.js";
 
-import { OrderHistoryData } from "./OrderHistoryData.js";
 
-import { OrderHistoryData } from "./OrderHistoryData.js";
 
-import { OrderHistoryData } from "./OrderHistoryData.js";
+        
 
-import { OrderData } from "./OrderData.js";
 
-import { OrderData } from "./OrderData.js";
 
-import { OrderData } from "./OrderData.js";
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { Order } from "./Order.js";
 
 import { OrderData } from "./OrderData.js";
 
 import { OrderHistoryData } from "./OrderHistoryData.js";
 
-import { OrderHistoryData } from "./OrderHistoryData.js";
-
-import { OrderHistoryData } from "./OrderHistoryData.js";
-
-import { OrderHistoryData } from "./OrderHistoryData.js";
-
-import { OrderHistoryData } from "./OrderHistoryData.js";
-
-import { OrderHistoryData } from "./OrderHistoryData.js";
-
-import { OrderHistoryData } from "./OrderHistoryData.js";
-
-import { OrderHistoryData } from "./OrderHistoryData.js";
-
-import { OrderHistoryData } from "./OrderHistoryData.js";
-
-import { OrderHistoryData } from "./OrderHistoryData.js";
-
-import { OrderHistoryData } from "./OrderHistoryData.js";
-
-import { OrderHistoryData } from "./OrderHistoryData.js";
-
-import { OrderHistoryData } from "./OrderHistoryData.js";
-
-import { OrderHistoryData } from "./OrderHistoryData.js";
-
-export class OrderHistory extends Order
-                , OrderHistoryInterface {
+export class OrderHistory extends Order implements OrderHistoryInterface {
         
 
     private userName: string

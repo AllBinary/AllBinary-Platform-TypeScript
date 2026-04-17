@@ -67,10 +67,24 @@ import { VideoInterface } from "../../../../../../org/allbinary/logic/system/har
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class LinuxHardware
             extends Object
-        
-                , HardwareInterface {
+         implements HardwareInterface {
         
 public constructor (){
 

@@ -28,6 +28,23 @@ import { AllBinaryLayer } from "../../../../org/allbinary/layer/AllBinaryLayer.j
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { CollisionHelper } from "./CollisionHelper.js";
+
 export class CollidableHelperFactory
             extends Object
          {

@@ -51,10 +51,24 @@ import { EventStrings } from "../../../../../../../org/allbinary/logic/util/even
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { GameNotification } from "./GameNotification.js";
 
-export class GameNotificationHud extends BasicHud
-                , GameNotificationListenerInterface {
+export class GameNotificationHud extends BasicHud implements GameNotificationListenerInterface {
         
 
     public static readonly NULL_GAME_NOTIFICATION: GameNotificationHud = new GameNotificationHud(BasicHudFactory.getInstance()!.TOPCENTER, BasicHudFactory.getInstance()!.HORIZONTAL, 0, 0, 0, BasicColorFactory.getInstance()!.RED);

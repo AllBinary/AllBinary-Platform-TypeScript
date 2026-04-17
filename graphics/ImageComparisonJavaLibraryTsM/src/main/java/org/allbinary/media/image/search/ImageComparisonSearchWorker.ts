@@ -52,8 +52,24 @@ import { TimeDelayHelper } from "../../../../../org/allbinary/time/TimeDelayHelp
 
     
 
-export class ImageComparisonSearchWorker extends BasicEventHandler
-                , ImageComparisonResultsListener {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { ImageComparisonSearchConstraintsInterface } from "./ImageComparisonSearchConstraintsInterface.js";
+
+export class ImageComparisonSearchWorker extends BasicEventHandler implements ImageComparisonResultsListener {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

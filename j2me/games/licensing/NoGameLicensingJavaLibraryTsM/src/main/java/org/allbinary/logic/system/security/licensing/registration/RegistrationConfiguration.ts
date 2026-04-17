@@ -22,6 +22,21 @@ import { StringMaker } from "../../../../../../../org/allbinary/logic/string/Str
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class RegistrationConfiguration
             extends Object
          {

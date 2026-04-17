@@ -22,7 +22,22 @@ import { Command } from "../../../../javax/microedition/lcdui/Command.js";
 
     
 
-import { HighScoreCommands } from "./HighScoreCommands.js";
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { HighScoreCommandsBaseFactory } from "./HighScoreCommandsBaseFactory.js";
 
 import { HighScoreCommands } from "./HighScoreCommands.js";
 

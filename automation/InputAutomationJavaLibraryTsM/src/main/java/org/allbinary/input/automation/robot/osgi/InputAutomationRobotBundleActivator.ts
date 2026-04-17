@@ -49,14 +49,26 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
     
 
-import { InputAutomationRobotUtil } from "./InputAutomationRobotUtil.js";
 
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { InputAutomationRobotUtil } from "./InputAutomationRobotUtil.js";
 
 export class InputAutomationRobotBundleActivator
             extends Object
-        
-                , BundleActivator {
+         implements BundleActivator {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

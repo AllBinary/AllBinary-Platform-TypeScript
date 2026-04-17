@@ -19,6 +19,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { InputAutomationClientInformation } from "./InputAutomationClientInformation.js";
+
 export class InputAutomationClientInformationFactory
             extends Object
          {

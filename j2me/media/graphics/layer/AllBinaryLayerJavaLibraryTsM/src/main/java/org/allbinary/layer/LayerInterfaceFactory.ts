@@ -42,7 +42,26 @@ import { BasicArrayListUtil } from "../../../org/allbinary/util/BasicArrayListUt
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { Layer } from "./Layer.js";
+
+import { AllBinaryLayer } from "./AllBinaryLayer.js";
+
+import { LayerInterfaceFactoryInterface } from "./LayerInterfaceFactoryInterface.js";
 
 export class LayerInterfaceFactory
             extends Object

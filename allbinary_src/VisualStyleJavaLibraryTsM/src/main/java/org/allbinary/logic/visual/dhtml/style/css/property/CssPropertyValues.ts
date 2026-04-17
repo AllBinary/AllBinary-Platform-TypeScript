@@ -57,18 +57,28 @@ import { Node } from "../../../../../../../../org/w3c/dom/Node.js";
 
     
 
-import { CssPropertyValueData } from "./CssPropertyValueData.js";
 
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { CssPropertyValueData } from "./CssPropertyValueData.js";
 
 import { CssPropertyData } from "./CssPropertyData.js";
 
-import { CssPropertyValueData } from "./CssPropertyValueData.js";
-
 export class CssPropertyValues
             extends Object
-        
-                , DomNodeInterface {
+         implements DomNodeInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

@@ -19,10 +19,24 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class BaseSoundsFactory
             extends Object
-        
-                , SoundsFactoryInterface {
+         implements SoundsFactoryInterface {
         
 
     private initialized: boolean= false

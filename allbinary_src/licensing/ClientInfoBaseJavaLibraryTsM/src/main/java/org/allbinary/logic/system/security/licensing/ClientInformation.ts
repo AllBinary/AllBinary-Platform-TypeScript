@@ -49,12 +49,26 @@ import { BasicArrayListUtil } from "../../../../../../org/allbinary/util/BasicAr
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { AbeClientInformationData } from "./AbeClientInformationData.js";
 
 export class ClientInformation
             extends Object
-        
-                , AbeClientInformationInterface {
+         implements AbeClientInformationInterface {
         
 
     private operatingSystemInterface: GenericOperatingSystem = NoOperatingSystem.NO_OPERATING_SYSTEM;

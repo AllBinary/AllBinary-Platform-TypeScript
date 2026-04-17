@@ -8,6 +8,25 @@ import { AngleInfo } from "../../../org/allbinary/math/AngleInfo.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { RotationAnimation } from "./RotationAnimation.js";
+
+import { AnimationBehavior } from "./AnimationBehavior.js";
+
 export class NullRotationAnimation extends RotationAnimation {
         
  constructor (angleInfo: AngleInfo, totalAngle: number, animationBehavior: AnimationBehavior)                        

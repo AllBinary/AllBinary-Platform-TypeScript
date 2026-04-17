@@ -19,7 +19,24 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { GeographicMapCellType } from "./GeographicMapCellType.js";
+
+import { GeographicMapCellPosition } from "./GeographicMapCellPosition.js";
 
 export class MultiGeographicMapBehavior
             extends Object

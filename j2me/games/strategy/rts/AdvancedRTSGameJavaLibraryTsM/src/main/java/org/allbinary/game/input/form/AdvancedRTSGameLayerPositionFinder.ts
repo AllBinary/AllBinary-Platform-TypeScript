@@ -34,10 +34,24 @@ import { DropCellPositionHistory } from "../../../../../org/allbinary/media/grap
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class AdvancedRTSGameLayerPositionFinder
             extends Object
-        
-                , LayerPositionFinderInterface {
+         implements LayerPositionFinderInterface {
         
 
     private static readonly instance: AdvancedRTSGameLayerPositionFinder = new AdvancedRTSGameLayerPositionFinder();

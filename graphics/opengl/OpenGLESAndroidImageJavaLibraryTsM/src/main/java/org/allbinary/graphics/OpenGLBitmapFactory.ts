@@ -29,6 +29,25 @@ import { AndroidImageInterface } from "../../../org/microemu/android/device/Andr
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { OpenGLBitmap } from "./OpenGLBitmap.js";
+
+import { Config } from "./Config.js";
+
 export class OpenGLBitmapFactory extends PlatformBitmapBaseFactory {
         
 

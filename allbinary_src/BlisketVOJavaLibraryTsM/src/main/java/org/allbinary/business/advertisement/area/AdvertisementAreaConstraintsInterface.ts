@@ -25,6 +25,21 @@ import { TwoDimensionalConstraintInterface } from "../../../../../org/allbinary/
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export interface AdvertisementAreaConstraintsInterface {
         
 

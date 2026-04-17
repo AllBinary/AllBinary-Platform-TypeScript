@@ -64,14 +64,28 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { OpenGLESImageProcessor } from "./OpenGLESImageProcessor.js";
 
 import { OpenGLESImageTranslate } from "./OpenGLESImageTranslate.js";
 
 import { OpenGLImageCacheFactory } from "./OpenGLImageCacheFactory.js";
 
-export class OpenGLESImage extends Image
-                , OpenGLSurfaceChangedInterface {
+export class OpenGLESImage extends Image implements OpenGLSurfaceChangedInterface {
         
 
     public static readonly NULL_OPENGL_IMAGE: OpenGLESImage = new OpenGLESImage(NullCanvas.NULL_IMAGE, PlatformBitmapBaseFactory.NULL_PLATFORM_BITMAP_BASE_FACTORY, PlatformTextureBaseFactory.NULL_PLATFORM_TEXTURE_BASE_FACTORY);

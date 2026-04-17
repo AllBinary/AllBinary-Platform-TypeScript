@@ -43,6 +43,23 @@ import { TransformInfoObjectFactory } from "../../../../../../org/allbinary/logi
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { TransformTemplateInterface } from "./TransformTemplateInterface.js";
+
 export class TransformTemplateFactory
             extends Object
          {

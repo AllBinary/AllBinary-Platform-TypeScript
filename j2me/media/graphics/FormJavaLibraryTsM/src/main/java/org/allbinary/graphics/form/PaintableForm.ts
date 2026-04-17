@@ -35,9 +35,26 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
     
 
-import { FormTypeFactory } from "./FormTypeFactory.js";
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { CustomForm } from "./CustomForm.js";
 
 import { FormTypeFactory } from "./FormTypeFactory.js";
+
+import { FormType } from "./FormType.js";
 
 export class PaintableForm extends CustomForm {
         

@@ -22,6 +22,23 @@ import { Image } from "../../../../javax/microedition/lcdui/Image.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { PlatformBitmapBase } from "./PlatformBitmapBase.js";
+
 export class PlatformBitmapBaseFactory
             extends Object
          {

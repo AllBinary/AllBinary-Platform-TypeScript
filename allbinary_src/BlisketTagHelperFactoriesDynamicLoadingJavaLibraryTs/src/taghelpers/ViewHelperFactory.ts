@@ -34,10 +34,24 @@ import { TagHelperFactoryInterface } from "../admin/taghelpers/TagHelperFactoryI
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class ViewHelperFactory
             extends Object
-        
-                , TagHelperFactoryInterface {
+         implements TagHelperFactoryInterface {
         
 
     private static readonly CLASSNAME: string = "taghelpers.ViewHelper";

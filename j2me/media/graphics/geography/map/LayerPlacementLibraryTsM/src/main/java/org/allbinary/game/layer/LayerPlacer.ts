@@ -43,7 +43,22 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
     
 
-import { LayerPlacementTypeFactory } from "./LayerPlacementTypeFactory.js";
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { LayerPlacementInterface } from "./LayerPlacementInterface.js";
 
 import { LayerPlacementTypeFactory } from "./LayerPlacementTypeFactory.js";
 

@@ -28,10 +28,28 @@ import { TransformInfoInterface } from "../../../../org/allbinary/logic/visual/t
 
     
 
-import { Boolean } from "./Boolean.js";
 
-export class ValidationView extends OrderHistoryView
-                , ValidationComponentInterface {
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { OrderHistoryView } from "./OrderHistoryView.js";
+
+import { Document } from "./Document.js";
+
+import { Node } from "./Node.js";
+
+export class ValidationView extends OrderHistoryView implements ValidationComponentInterface {
         
 public constructor (transformInfoInterface: TransformInfoInterface)                        
 

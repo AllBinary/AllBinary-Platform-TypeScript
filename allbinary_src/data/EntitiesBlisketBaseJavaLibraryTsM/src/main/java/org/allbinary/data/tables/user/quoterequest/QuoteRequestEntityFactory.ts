@@ -25,6 +25,23 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { QuoteRequestEntity } from "./QuoteRequestEntity.js";
+
 export class QuoteRequestEntityFactory
             extends Object
          {

@@ -22,10 +22,24 @@ import { InputRobotInterface } from "../../../../org/allbinary/input/automation/
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class InputAutomationRobotService
             extends Object
-        
-                , InputAutomationRobotServiceInterface {
+         implements InputAutomationRobotServiceInterface {
         
 
     private inputRobotInterfaceArray: InputRobotInterface[]

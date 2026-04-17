@@ -19,6 +19,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { TimeDelayHelper } from "./TimeDelayHelper.js";
+
 export class NoTimeDelayHelper extends TimeDelayHelper {
         
 

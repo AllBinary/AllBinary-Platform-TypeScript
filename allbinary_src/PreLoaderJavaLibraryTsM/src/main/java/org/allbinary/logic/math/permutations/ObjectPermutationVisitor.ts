@@ -14,6 +14,23 @@ import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { StringBuilder } from "./StringBuilder.js";
+
 export class ObjectPermutationVisitor extends Visitor {
         
 

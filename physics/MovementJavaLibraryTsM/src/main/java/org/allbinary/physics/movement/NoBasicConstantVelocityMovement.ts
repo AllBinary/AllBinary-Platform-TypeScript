@@ -22,6 +22,23 @@ import { AllBinaryGameLayer } from "../../../../org/allbinary/game/layer/AllBina
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { BasicConstantVelocityMovement } from "./BasicConstantVelocityMovement.js";
+
 export class NoBasicConstantVelocityMovement extends BasicConstantVelocityMovement {
         
 

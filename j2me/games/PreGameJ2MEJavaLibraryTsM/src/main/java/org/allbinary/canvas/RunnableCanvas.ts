@@ -64,16 +64,24 @@ import { BasicArrayList } from "../../../org/allbinary/util/BasicArrayList.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { Processor } from "./Processor.js";
 
-import { Thread } from "./Thread.js";
-
-import { Thread } from "./Thread.js";
-
-import { Thread } from "./Thread.js";
-
-export class RunnableCanvas extends MyCanvas
-                , RunnableInterface {
+export class RunnableCanvas extends MyCanvas implements RunnableInterface {
         
 
     readonly nullUtil: NullUtil = NullUtil.getInstance()!;

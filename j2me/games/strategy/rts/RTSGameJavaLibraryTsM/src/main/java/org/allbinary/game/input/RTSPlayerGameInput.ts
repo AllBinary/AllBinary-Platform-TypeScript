@@ -112,13 +112,34 @@ import { CommonLabels } from "../../../../org/allbinary/string/CommonLabels.js";
 
     
 
-import { InputFactory } from "./InputFactory.js";
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { PlayerGameInput } from "./PlayerGameInput.js";
 
 import { InputFactory } from "./InputFactory.js";
 
-import { GameInputProcessorUtil } from "./GameInputProcessorUtil.js";
+import { LayerPositionFinderInterface } from "./LayerPositionFinderInterface.js";
+
+import { SelectRTSLayerVisitorFactoryInterface } from "./SelectRTSLayerVisitorFactoryInterface.js";
 
 import { GameInputProcessorUtil } from "./GameInputProcessorUtil.js";
+
+import { SelectedRTSLayersPlayerGameInput } from "./SelectedRTSLayersPlayerGameInput.js";
+
+import { ScrollMapPlayerGameInput } from "./ScrollMapPlayerGameInput.js";
 
 export class RTSPlayerGameInput extends PlayerGameInput {
         

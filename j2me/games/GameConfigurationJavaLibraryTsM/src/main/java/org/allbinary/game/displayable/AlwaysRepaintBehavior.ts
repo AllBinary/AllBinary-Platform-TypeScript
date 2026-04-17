@@ -43,6 +43,23 @@ import { NullRunnable } from "../../../../org/allbinary/thread/NullRunnable.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { RepaintBehavior } from "./RepaintBehavior.js";
+
 export class AlwaysRepaintBehavior extends RepaintBehavior {
         
 

@@ -61,6 +61,23 @@ import { CommonPhoneStrings } from "../../org/allbinary/string/CommonPhoneString
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { TagHelper } from "./TagHelper.js";
+
 export class OrderHistoryRequestHelper extends TagHelper {
         
 

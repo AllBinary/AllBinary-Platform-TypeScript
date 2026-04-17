@@ -31,6 +31,23 @@ import { AngleFactory } from "../../../../org/allbinary/math/AngleFactory.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { CircleAnimation } from "./CircleAnimation.js";
+
 export class AdjustedCircleAnimation extends CircleAnimation {
         
 

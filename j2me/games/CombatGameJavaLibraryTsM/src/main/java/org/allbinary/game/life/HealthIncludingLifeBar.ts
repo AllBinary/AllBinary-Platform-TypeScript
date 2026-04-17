@@ -43,8 +43,24 @@ import { AllBinaryLayer } from "../../../../org/allbinary/layer/AllBinaryLayer.j
 
     
 
-export class HealthIncludingLifeBar extends Paintable
-                , HealthListenerInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { Life } from "./Life.js";
+
+export class HealthIncludingLifeBar extends Paintable implements HealthListenerInterface {
         
 
     private readonly animationInterface: HealthBarAnimation

@@ -21,6 +21,23 @@
             import { Integer } from "../../../../../../../java/lang/Integer.js";
         
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { HtmlLengthInput } from "./HtmlLengthInput.js";
+
 import { HtmlInputData } from "./HtmlInputData.js";
 
 export class HtmlTextInput extends HtmlLengthInput {

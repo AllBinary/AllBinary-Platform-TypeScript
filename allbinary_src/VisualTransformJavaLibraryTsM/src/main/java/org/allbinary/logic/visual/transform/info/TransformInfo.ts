@@ -106,14 +106,26 @@ import { Document } from "../../../../../../org/w3c/dom/Document.js";
 
     
 
-import { TransformInfoData } from "./TransformInfoData.js";
 
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { TransformInfoData } from "./TransformInfoData.js";
 
 export class TransformInfo
             extends Object
-        
-                , TransformInfoInterface {
+         implements TransformInfoInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

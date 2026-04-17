@@ -22,7 +22,22 @@ import { GameConfigurationCentral } from "../../../org/allbinary/game/configurat
 
     
 
-import { AllBinaryNoVibration } from "./AllBinaryNoVibration.js";
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { AllBinaryVibrationME } from "./AllBinaryVibrationME.js";
 
 import { AllBinaryNoVibration } from "./AllBinaryNoVibration.js";
 

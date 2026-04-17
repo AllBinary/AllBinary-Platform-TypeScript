@@ -61,8 +61,22 @@ import { NodeList } from "../../../../../../../../../../org/w3c/dom/NodeList.js"
 
     
 
-export class GenericProfileActionScript extends DefaultMutableTreeNode
-                , ProfileActionScriptNodeInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+export class GenericProfileActionScript extends DefaultMutableTreeNode implements ProfileActionScriptNodeInterface {
         
 
     private static readonly NAME: string = "Root";

@@ -34,6 +34,23 @@ import { StringValidationUtil } from "../../../../org/allbinary/logic/string/Str
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { UserInterface } from "./UserInterface.js";
+
 export class CreateUserFactory
             extends Object
          {

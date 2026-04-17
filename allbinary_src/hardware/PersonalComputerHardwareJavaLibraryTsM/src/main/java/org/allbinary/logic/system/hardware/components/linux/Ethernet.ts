@@ -25,11 +25,24 @@ import { HardwareComponentInterface } from "../../../../../../../org/allbinary/l
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class Ethernet
             extends Object
-        
-                , HardwareComponentInterface
-                , EthernetInterface {
+         implements HardwareComponentInterface, EthernetInterface {
         
 
     private data: string

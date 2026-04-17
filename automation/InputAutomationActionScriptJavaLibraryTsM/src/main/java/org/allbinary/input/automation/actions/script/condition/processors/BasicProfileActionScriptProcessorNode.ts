@@ -28,8 +28,21 @@ import { Node } from "../../../../../../../../org/w3c/dom/Node.js";
 
     
 
-import { GenericProfileActionScriptProcessorData } from "./GenericProfileActionScriptProcessorData.js";
 
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { GenericProfileActionScriptProcessorData } from "./GenericProfileActionScriptProcessorData.js";
 
 export class BasicProfileActionScriptProcessorNode

@@ -19,6 +19,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { Life } from "./Life.js";
+
 export interface LifeInterfaceCompositeInterface {
         
 

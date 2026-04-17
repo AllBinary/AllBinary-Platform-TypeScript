@@ -33,7 +33,26 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { ImageJ2SERotationUtil } from "./ImageJ2SERotationUtil.js";
+
+import { ImageProcessorInput } from "./ImageProcessorInput.js";
+
+import { ImageProcessedVisitor } from "./ImageProcessedVisitor.js";
 
 export class ImageArrayRotationUtil
             extends Object

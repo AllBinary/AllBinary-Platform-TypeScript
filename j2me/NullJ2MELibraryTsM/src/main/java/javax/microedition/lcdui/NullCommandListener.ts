@@ -5,10 +5,28 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { Command } from "./Command.js";
+
+import { Displayable } from "./Displayable.js";
+
 export class NullCommandListener
             extends Object
-        
-                , CommandListener {
+         implements CommandListener {
         
 
     public static readonly NULL_COMMAND_LISTENER: NullCommandListener = new NullCommandListener();

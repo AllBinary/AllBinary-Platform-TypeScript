@@ -34,13 +34,22 @@ import { StringUtil } from "../../../org/allbinary/logic/string/StringUtil.js";
 
     
 
-import { Long } from "./Long.js";
 
-import { Long } from "./Long.js";
 
-import { Long } from "./Long.js";
 
-import { Long } from "./Long.js";
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { BaseGameStatistics } from "./BaseGameStatistics.js";
 
 export class AndroidGameStatistics extends BaseGameStatistics {
         

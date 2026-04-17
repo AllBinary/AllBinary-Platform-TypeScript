@@ -22,7 +22,24 @@ import { Vector } from "../../../../../java/util/Vector.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { LogUtil } from "./LogUtil.js";
+
+import { Log } from "./Log.js";
 
 export class LogBuffer
             extends Object

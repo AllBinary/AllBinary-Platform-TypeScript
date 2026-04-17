@@ -40,16 +40,26 @@ import { Node } from "../../../../../../../../../org/w3c/dom/Node.js";
 
     
 
-import { Boolean } from "./Boolean.js";
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { TitleView } from "./TitleView.js";
 
 import { TitleData } from "./TitleData.js";
 
-import { Boolean } from "./Boolean.js";
-
-import { Boolean } from "./Boolean.js";
-
-export class TitleValidation extends TitleView
-                , ValidationInterface {
+export class TitleValidation extends TitleView implements ValidationInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

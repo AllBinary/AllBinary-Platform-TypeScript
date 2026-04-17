@@ -19,6 +19,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { AbeClientInformation } from "./AbeClientInformation.js";
+
 export class TestClientInformation extends AbeClientInformation {
         
 public constructor ()                        

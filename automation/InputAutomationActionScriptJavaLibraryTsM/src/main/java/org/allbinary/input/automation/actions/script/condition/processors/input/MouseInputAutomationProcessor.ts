@@ -31,11 +31,22 @@ import { CommonStrings } from "../../../../../../../../../org/allbinary/string/C
 
     
 
-import { Thread } from "./Thread.js";
 
-import { Thread } from "./Thread.js";
 
-import { Thread } from "./Thread.js";
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { MouseActionScriptInputInterface } from "./MouseActionScriptInputInterface.js";
 
 export class MouseInputAutomationProcessor
             extends Object

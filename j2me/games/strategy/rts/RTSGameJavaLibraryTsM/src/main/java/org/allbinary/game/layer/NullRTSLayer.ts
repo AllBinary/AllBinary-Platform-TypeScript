@@ -49,8 +49,26 @@ import { Sound } from "../../../../org/allbinary/media/audio/Sound.js";
 
     
 
-export class NullRTSLayer extends NullPathFindingLayer
-                , RTSPlayerLayerInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { NullPathFindingLayer } from "./NullPathFindingLayer.js";
+
+import { PlayerOwnedRTSLayers } from "./PlayerOwnedRTSLayers.js";
+
+export class NullRTSLayer extends NullPathFindingLayer implements RTSPlayerLayerInterface {
         
 
     public static readonly NULL_RTS_LAYER: NullRTSLayer = new NullRTSLayer();

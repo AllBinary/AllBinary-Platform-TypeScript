@@ -31,6 +31,23 @@ import { OpenGLProcessor } from "../../../../../org/allbinary/graphics/opengles/
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { ShaderComposite } from "./ShaderComposite.js";
+
 import { CompositeShaderUpdater } from "./CompositeShaderUpdater.js";
 
 import { ShaderInitializer } from "./ShaderInitializer.js";

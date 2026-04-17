@@ -19,6 +19,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { AbeClientInformationInterface } from "./AbeClientInformationInterface.js";
+
 export class ServiceClientInformationInterfaceFactory
             extends Object
          {

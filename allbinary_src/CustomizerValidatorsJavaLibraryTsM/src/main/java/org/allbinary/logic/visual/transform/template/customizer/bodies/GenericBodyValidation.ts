@@ -64,24 +64,24 @@ import { NodeList } from "../../../../../../../../org/w3c/dom/NodeList.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { BodyData } from "./BodyData.js";
 
-import { BodyData } from "./BodyData.js";
-
-import { Boolean } from "./Boolean.js";
-
-import { BodyData } from "./BodyData.js";
-
-import { Boolean } from "./Boolean.js";
-
-import { Boolean } from "./Boolean.js";
-
-import { BodyData } from "./BodyData.js";
-
-import { BodyData } from "./BodyData.js";
-
-export class GenericBodyValidation extends Validation
-                , DomNodeInterface {
+export class GenericBodyValidation extends Validation implements DomNodeInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

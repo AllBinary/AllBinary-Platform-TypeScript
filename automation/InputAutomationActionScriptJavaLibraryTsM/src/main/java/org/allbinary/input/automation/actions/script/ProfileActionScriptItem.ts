@@ -40,9 +40,24 @@ import { Node } from "../../../../../../org/w3c/dom/Node.js";
 
     
 
-export class ProfileActionScriptItem extends DefaultMutableTreeNode
-                , ProfileActionScriptItemInterface
-                , ActionListener {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { JPopupMenu } from "./JPopupMenu.js";
+
+export class ProfileActionScriptItem extends DefaultMutableTreeNode implements ProfileActionScriptItemInterface, ActionListener {
         
 
     private static readonly EDIT: string = "Edit";

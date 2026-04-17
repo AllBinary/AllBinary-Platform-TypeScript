@@ -73,8 +73,22 @@ import { Memory } from "../../../org/allbinary/system/Memory.js";
 
     
 
-export class AllBinaryMidlet extends MIDlet
-                , CommandListener {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+export class AllBinaryMidlet extends MIDlet implements CommandListener {
         
 
     public static readonly NULL_ALLBINARY_MIDLET: AllBinaryMidlet = new AllBinaryMidlet();

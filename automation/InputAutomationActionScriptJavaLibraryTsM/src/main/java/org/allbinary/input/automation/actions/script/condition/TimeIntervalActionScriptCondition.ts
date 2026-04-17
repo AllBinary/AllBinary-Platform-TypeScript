@@ -48,16 +48,26 @@ import { NodeList } from "../../../../../../../org/w3c/dom/NodeList.js";
 
     
 
-import { TimeIntervalActionScriptConditionData } from "./TimeIntervalActionScriptConditionData.js";
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { BasicProfileActionScriptCondition } from "./BasicProfileActionScriptCondition.js";
 
 import { TimeIntervalActionScriptConditionData } from "./TimeIntervalActionScriptConditionData.js";
 
-import { TimeIntervalActionScriptConditionData } from "./TimeIntervalActionScriptConditionData.js";
-
-import { TimeIntervalActionScriptConditionData } from "./TimeIntervalActionScriptConditionData.js";
-
-export class TimeIntervalActionScriptCondition extends BasicProfileActionScriptCondition
-                , TimeIntervalActionScriptConditionInterface {
+export class TimeIntervalActionScriptCondition extends BasicProfileActionScriptCondition implements TimeIntervalActionScriptConditionInterface {
         
 
     private static readonly NAME: string = "Time Interval";

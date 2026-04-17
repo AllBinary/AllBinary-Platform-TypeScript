@@ -28,6 +28,23 @@ import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/Lo
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { BaseTouchInput } from "./BaseTouchInput.js";
+
 export class RTSTouchButtonsBuilder extends BaseTouchInput {
         
 

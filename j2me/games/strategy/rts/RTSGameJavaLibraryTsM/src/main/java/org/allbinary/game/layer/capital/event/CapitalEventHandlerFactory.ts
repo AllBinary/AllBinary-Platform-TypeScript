@@ -22,6 +22,23 @@ import { Group } from "../../../../../../org/allbinary/game/identification/Group
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { CapitalEventHandler } from "./CapitalEventHandler.js";
+
 export class CapitalEventHandlerFactory
             extends Object
          {

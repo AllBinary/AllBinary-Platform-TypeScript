@@ -43,10 +43,24 @@ import { ScaleProperties } from "../../../../org/allbinary/media/ScaleProperties
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class CustomTextAnimationFactory
             extends Object
-        
-                , AnimationInterfaceFactoryInterface {
+         implements AnimationInterfaceFactoryInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

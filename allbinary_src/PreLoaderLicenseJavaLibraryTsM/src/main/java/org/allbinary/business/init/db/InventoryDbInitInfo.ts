@@ -19,6 +19,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { DbInitInfo } from "./DbInitInfo.js";
+
 export class InventoryDbInitInfo extends DbInitInfo {
         
 

@@ -42,6 +42,29 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { ColorRangeInterface } from "./ColorRangeInterface.js";
+
+import { ImageAnalysisResults } from "./ImageAnalysisResults.js";
+
+import { Color } from "./Color.js";
+
+import { ImageColorResults } from "./ImageColorResults.js";
+
 export class ImageAnalysis
             extends Object
          {

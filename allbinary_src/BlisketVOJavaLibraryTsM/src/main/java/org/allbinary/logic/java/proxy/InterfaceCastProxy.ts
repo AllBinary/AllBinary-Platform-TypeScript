@@ -25,10 +25,24 @@ import { Proxy } from "../../../../../java/lang/reflect/Proxy.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class InterfaceCastProxy
             extends Object
-        
-                , java.lang.reflect.InvocationHandler {
+         implements java.lang.reflect.InvocationHandler {
         
 
     public static newInstance(anyType: any = {}): any{

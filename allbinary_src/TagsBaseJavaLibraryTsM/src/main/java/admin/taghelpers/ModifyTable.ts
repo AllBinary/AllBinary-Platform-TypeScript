@@ -25,10 +25,24 @@ import { TagStrings } from "../../tags/TagStrings.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class ModifyTable
             extends Object
-        
-                , ModifyTableInterface {
+         implements ModifyTableInterface {
         
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;

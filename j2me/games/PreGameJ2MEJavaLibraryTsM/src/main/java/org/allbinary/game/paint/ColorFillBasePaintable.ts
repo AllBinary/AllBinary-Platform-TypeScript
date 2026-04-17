@@ -34,8 +34,22 @@ import { Paintable } from "../../../../org/allbinary/graphics/paint/Paintable.js
 
     
 
-export class ColorFillBasePaintable extends Paintable
-                , ColorCompositeInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+export class ColorFillBasePaintable extends Paintable implements ColorCompositeInterface {
         
 
     basicColor: BasicColor = BasicColorFactory.getInstance()!.WHITE;

@@ -49,12 +49,24 @@ import { EventStrings } from "../../../../org/allbinary/logic/util/event/EventSt
 
     
 
-import { Thread } from "./Thread.js";
 
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class DefaultGameInitializationListener
             extends Object
-        
-                , GameInitializedListenerInterface {
+         implements GameInitializedListenerInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

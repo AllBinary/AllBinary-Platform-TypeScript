@@ -34,10 +34,24 @@ import { AllBinaryLayer } from "../../../../../org/allbinary/layer/AllBinaryLaye
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class RandomPatrolAIFactory
             extends Object
-        
-                , ArtificialIntelligenceInterfaceFactoryInterface {
+         implements ArtificialIntelligenceInterfaceFactoryInterface {
         
 
                 //@Throws(Error::class)

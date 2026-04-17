@@ -52,18 +52,26 @@ import { Node } from "../../../../../../../../../org/w3c/dom/Node.js";
 
     
 
-import { TitleData } from "./TitleData.js";
 
-import { TitleData } from "./TitleData.js";
 
-import { TitleData } from "./TitleData.js";
 
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { TitleData } from "./TitleData.js";
 
 export class TitleView
             extends Object
-        
-                , DomNodeInterface {
+         implements DomNodeInterface {
         
 
     private static readonly NAME: string = "None";

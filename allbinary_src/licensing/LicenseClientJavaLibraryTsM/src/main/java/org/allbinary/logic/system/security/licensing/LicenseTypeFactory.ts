@@ -22,6 +22,23 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { LicenseType } from "./LicenseType.js";
+
 export class LicenseTypeFactory
             extends Object
          {

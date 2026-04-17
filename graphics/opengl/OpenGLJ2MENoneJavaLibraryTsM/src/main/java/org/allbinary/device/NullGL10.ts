@@ -22,10 +22,24 @@ import { GL10 } from "../../../javax/microedition/khronos/opengles/GL10.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class NullGL10
             extends Object
-        
-                , GL10 {
+         implements GL10 {
         
 
     public static readonly NULL_GL10: NullGL10 = new NullGL10();

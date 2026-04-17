@@ -28,10 +28,26 @@ import { CacheableInterface } from "../../../../../org/allbinary/logic/util/cach
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { BufferedImageInfo } from "./BufferedImageInfo.js";
+
 export class BufferedImageCacheable
             extends Object
-        
-                , CacheableInterface {
+         implements CacheableInterface {
         
 
     private key: BufferedImageInfo

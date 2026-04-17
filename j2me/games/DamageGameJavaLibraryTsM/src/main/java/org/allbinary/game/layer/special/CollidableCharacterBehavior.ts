@@ -37,6 +37,23 @@ import { ForcedLogUtil } from "../../../../../org/allbinary/logic/communication/
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { CollidableDestroyableDamageableBehavior } from "./CollidableDestroyableDamageableBehavior.js";
+
 export class CollidableCharacterBehavior extends CollidableDestroyableDamageableBehavior {
         
 public constructor (ownerLayer: CollidableCompositeLayer, collidable: boolean)                        

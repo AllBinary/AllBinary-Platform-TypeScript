@@ -37,14 +37,30 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { DemoGameMidletStateFactory } from "./DemoGameMidletStateFactory.js";
+
+import { DemoGameMidlet } from "./DemoGameMidlet.js";
 
 import { DemoGameMidletEventHandler } from "./DemoGameMidletEventHandler.js";
 
 export class DemoRunnable
             extends Object
-        
-                , Runnable {
+         implements Runnable {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

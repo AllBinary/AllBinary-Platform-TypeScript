@@ -22,12 +22,28 @@ import { ScaleProperties } from "../../../org/allbinary/media/ScaleProperties.js
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { NullAnimationFactory } from "./NullAnimationFactory.js";
+
+import { Animation } from "./Animation.js";
 
 export class BaseAnimationInterfaceFactoryInterfaceComposite
             extends Object
-        
-                , AnimationInterfaceFactoryInterface {
+         implements AnimationInterfaceFactoryInterface {
         
 
     private basicAnimationInterfaceFactoryInterfaceArray: BasicAnimationInterfaceFactoryInterface[]

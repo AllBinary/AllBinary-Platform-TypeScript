@@ -28,6 +28,21 @@ import { DisplayInfoSingleton } from "../../../../../org/allbinary/graphics/disp
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class CommonButtons
             extends Object
          {

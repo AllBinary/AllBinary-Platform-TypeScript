@@ -39,8 +39,28 @@ import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/Lo
 
     
 
-export class NullInputRobot extends AbstractInputRobot
-                , InputRobotInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { Point } from "./Point.js";
+
+import { Rectangle } from "./Rectangle.js";
+
+import { Color } from "./Color.js";
+
+export class NullInputRobot extends AbstractInputRobot implements InputRobotInterface {
         
 
     public static readonly LIBRARY_NAME: string = "null";

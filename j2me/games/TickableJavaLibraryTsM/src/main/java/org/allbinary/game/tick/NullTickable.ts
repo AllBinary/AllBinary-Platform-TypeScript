@@ -22,10 +22,24 @@ import { AllBinaryLayerManager } from "../../../../org/allbinary/layer/AllBinary
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class NullTickable
             extends Object
-        
-                , TickableInterface {
+         implements TickableInterface {
         
 
     private static readonly SINGLETON: NullTickable = new NullTickable();

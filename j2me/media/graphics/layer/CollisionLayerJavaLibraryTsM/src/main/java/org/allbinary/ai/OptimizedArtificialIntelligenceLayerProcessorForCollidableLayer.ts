@@ -31,6 +31,21 @@ import { LayerProcessor } from "../../../org/allbinary/layer/LayerProcessor.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class OptimizedArtificialIntelligenceLayerProcessorForCollidableLayer extends LayerProcessor {
         
 public constructor ()                        

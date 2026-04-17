@@ -25,6 +25,21 @@ import { Animation } from "../../../../org/allbinary/animation/Animation.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class CaptionAnimation extends Animation {
         
 

@@ -43,10 +43,24 @@ import { CustomizerUtil } from "../../../../../../../../../views/business/contex
 
     
 
-import { Boolean } from "./Boolean.js";
 
-export class EditCssValidationView extends CssCustomizerView
-                , ValidationComponentInterface {
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { CssCustomizerView } from "./CssCustomizerView.js";
+
+export class EditCssValidationView extends CssCustomizerView implements ValidationComponentInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

@@ -46,10 +46,24 @@ import { PrimitiveLongUtil } from "../../../../org/allbinary/logic/math/Primitiv
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class CountedLayerInterfaceFactoryPart
             extends Object
-        
-                , PartInterface {
+         implements PartInterface {
         
 
     public static readonly NULL_COUNTED_LAYER_INTERFACE_FACTORY: CountedLayerInterfaceFactoryPart = new CountedLayerInterfaceFactoryPart(0, CountedPickedUpLayerInterfaceFactory.NULL_COUNTED_PICKUP_LAYER_FACTORY);

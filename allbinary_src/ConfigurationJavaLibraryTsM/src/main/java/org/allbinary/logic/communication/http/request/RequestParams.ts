@@ -52,8 +52,21 @@ import { Node } from "../../../../../../org/w3c/dom/Node.js";
 
     
 
-import { RequestData } from "./RequestData.js";
 
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { RequestData } from "./RequestData.js";
 
 export class RequestParams

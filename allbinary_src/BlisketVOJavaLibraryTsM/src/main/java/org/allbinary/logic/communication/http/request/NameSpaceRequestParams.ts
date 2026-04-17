@@ -67,13 +67,26 @@ import { Node } from "../../../../../../org/w3c/dom/Node.js";
 
     
 
-import { NameSpaceRequestParamData } from "./NameSpaceRequestParamData.js";
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { RequestParams } from "./RequestParams.js";
 
 import { NameSpaceRequestParamData } from "./NameSpaceRequestParamData.js";
 
-import { NameSpaceRequestParamData } from "./NameSpaceRequestParamData.js";
-
-import { NameSpaceRequestParamData } from "./NameSpaceRequestParamData.js";
+import { NameSpaceRequestParam } from "./NameSpaceRequestParam.js";
 
 export class NameSpaceRequestParams extends RequestParams {
         

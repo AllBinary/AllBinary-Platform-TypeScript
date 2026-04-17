@@ -37,10 +37,21 @@ import { Features } from "../../../org/allbinary/game/configuration/feature/Feat
 
     
 
-import { PreResourceImageUtil } from "./PreResourceImageUtil.js";
 
-import { PreResourceImageUtil } from "./PreResourceImageUtil.js";
 
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { PreResourceImageUtil } from "./PreResourceImageUtil.js";
 
 export class ChoiceGroupImageUtil

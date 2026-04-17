@@ -31,10 +31,24 @@ import { AllBinaryLayer } from "../../../../org/allbinary/layer/AllBinaryLayer.j
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class HorizontalRotationManeuverAIFactory
             extends Object
-        
-                , ArtificialIntelligenceInterfaceFactoryInterface {
+         implements ArtificialIntelligenceInterfaceFactoryInterface {
         
 
     public getInstance(hashtable: Hashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput): ArtificialIntelligenceInterface{

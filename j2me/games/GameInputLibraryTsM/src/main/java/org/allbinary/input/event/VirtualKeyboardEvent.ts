@@ -22,6 +22,21 @@ import { AllBinaryEventObject } from "../../../../org/allbinary/logic/util/event
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class VirtualKeyboardEvent extends AllBinaryEventObject {
         
 public constructor (anyType: any = {})                        

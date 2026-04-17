@@ -25,6 +25,21 @@ import { MotionGestureInput } from "../../../../org/allbinary/input/motion/gestu
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class OrientationMotionGestureFactory
             extends Object
          {

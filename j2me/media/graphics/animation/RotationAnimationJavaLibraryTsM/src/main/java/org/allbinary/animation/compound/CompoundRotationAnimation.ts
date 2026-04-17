@@ -49,8 +49,22 @@ import { CircularIndexUtil } from "../../../../org/allbinary/util/CircularIndexU
 
     
 
-export class CompoundRotationAnimation extends RotationAnimation
-                , CompoundAnimationInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+export class CompoundRotationAnimation extends RotationAnimation implements CompoundAnimationInterface {
         
 
     private animationInterfaceArray: RotationAnimation[]

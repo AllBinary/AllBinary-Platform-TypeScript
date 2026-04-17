@@ -56,6 +56,21 @@ import { PNGImageWriter } from "../../../../org/apache/batik/ext/awt/image/codec
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class ImagePersistanceUtil
             extends Object
          {

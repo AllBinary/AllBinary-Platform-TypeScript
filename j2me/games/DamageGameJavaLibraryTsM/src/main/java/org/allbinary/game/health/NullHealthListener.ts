@@ -19,10 +19,24 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class NullHealthListener
             extends Object
-        
-                , HealthListenerInterface {
+         implements HealthListenerInterface {
         
 
     public static readonly NULL_HEALTH_LISTENER: NullHealthListener = new NullHealthListener();

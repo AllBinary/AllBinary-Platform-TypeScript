@@ -34,11 +34,26 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
     
 
-import { NoHardware } from "./NoHardware.js";
 
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { NoHardware } from "./NoHardware.js";
 
 import { HardwareFactory } from "./HardwareFactory.js";
+
+import { HardwareInterface } from "./HardwareInterface.js";
 
 export class SystemHardwareFactory
             extends Object

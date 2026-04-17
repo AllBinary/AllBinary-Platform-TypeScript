@@ -34,10 +34,24 @@ import { HelperFactory } from "../../../admin/taghelpers/HelperFactory.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class TransformInfoHelperFactory
             extends Object
-        
-                , TagHelperFactoryInterface {
+         implements TagHelperFactoryInterface {
         
 
     private static readonly CLASSNAME: string = "taghelpers.transform.info.TransformInfoHelper";

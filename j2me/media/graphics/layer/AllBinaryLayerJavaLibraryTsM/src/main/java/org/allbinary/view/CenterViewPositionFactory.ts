@@ -19,6 +19,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { CenterStaticViewPositionFactory } from "./CenterStaticViewPositionFactory.js";
+
 export class CenterViewPositionFactory extends CenterStaticViewPositionFactory {
         
 

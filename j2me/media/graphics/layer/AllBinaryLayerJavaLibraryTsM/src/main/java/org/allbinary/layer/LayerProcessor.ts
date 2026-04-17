@@ -22,10 +22,30 @@ import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { LayerManager } from "./LayerManager.js";
+
+import { AllBinaryLayerManager } from "./AllBinaryLayerManager.js";
+
+import { AllBinaryLayer } from "./AllBinaryLayer.js";
+
 export class LayerProcessor
             extends Object
-        
-                , LayerProcessorInterface {
+         implements LayerProcessorInterface {
         
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;

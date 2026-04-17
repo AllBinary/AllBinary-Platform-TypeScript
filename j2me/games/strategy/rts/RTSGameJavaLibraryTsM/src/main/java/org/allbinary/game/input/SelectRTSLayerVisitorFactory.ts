@@ -22,10 +22,26 @@ import { Visitor } from "../../../../org/allbinary/logic/util/visitor/Visitor.js
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { SelectedRTSLayersPlayerGameInput } from "./SelectedRTSLayersPlayerGameInput.js";
+
 export class SelectRTSLayerVisitorFactory
             extends Object
-        
-                , SelectRTSLayerVisitorFactoryInterface {
+         implements SelectRTSLayerVisitorFactoryInterface {
         
 
     private static readonly instance: SelectRTSLayerVisitorFactory = new SelectRTSLayerVisitorFactory();

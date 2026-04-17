@@ -37,6 +37,21 @@ import { ValidationInterface } from "../../../../org/allbinary/logic/control/val
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export interface UserInterface extends TableMappingInterface, ValidationInterface {
         
 

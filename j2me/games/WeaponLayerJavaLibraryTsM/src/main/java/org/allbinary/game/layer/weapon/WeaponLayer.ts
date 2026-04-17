@@ -88,10 +88,24 @@ import { ViewPosition } from "../../../../../org/allbinary/view/ViewPosition.js"
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { CollidableWeaponBehavior } from "./CollidableWeaponBehavior.js";
 
-export class WeaponLayer extends MultiPlayerGameLayer
-                , TickableInterface {
+export class WeaponLayer extends MultiPlayerGameLayer implements TickableInterface {
         
 
     public static getStaticType(): number{

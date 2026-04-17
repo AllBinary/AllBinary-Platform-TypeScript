@@ -25,10 +25,26 @@ import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { Animation } from "./Animation.js";
+
 import { AnimationBehavior } from "./AnimationBehavior.js";
 
-export class IndexedAnimation extends Animation
-                , IndexedAnimationInterface {
+export class IndexedAnimation extends Animation implements IndexedAnimationInterface {
         
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;

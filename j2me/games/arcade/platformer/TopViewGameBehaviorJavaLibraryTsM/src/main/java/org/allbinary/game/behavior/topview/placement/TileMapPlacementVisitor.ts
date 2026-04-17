@@ -22,6 +22,21 @@ import { TiledMap } from "../../../../../../org/mapeditor/core/TiledMap.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class TileMapPlacementVisitor
             extends Object
          {

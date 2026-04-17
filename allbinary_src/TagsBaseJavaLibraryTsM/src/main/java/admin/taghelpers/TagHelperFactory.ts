@@ -31,10 +31,24 @@ import { CommonStrings } from "../../org/allbinary/string/CommonStrings.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class TagHelperFactory
             extends Object
-        
-                , TagHelperFactoryInterface {
+         implements TagHelperFactoryInterface {
         
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;

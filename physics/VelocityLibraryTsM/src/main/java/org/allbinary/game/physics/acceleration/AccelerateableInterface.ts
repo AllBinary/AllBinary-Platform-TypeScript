@@ -22,6 +22,21 @@ import { BasicDecimal } from "../../../../../org/allbinary/logic/math/BasicDecim
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export interface AccelerateableInterface {
         
 

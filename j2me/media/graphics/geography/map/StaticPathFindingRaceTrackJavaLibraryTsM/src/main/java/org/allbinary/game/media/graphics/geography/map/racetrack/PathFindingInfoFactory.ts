@@ -40,6 +40,21 @@ import { PathFindingNodeCostInfoFactoryBase } from "../../../../../../../../org/
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class PathFindingInfoFactory extends BasePathFindingInfoFactory {
         
 

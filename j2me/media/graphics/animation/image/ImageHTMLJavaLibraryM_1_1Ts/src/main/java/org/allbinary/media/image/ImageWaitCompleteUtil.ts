@@ -46,6 +46,23 @@ import { PlaynImage } from "../../../../org/microemu/device/playn/PlaynImage.js"
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { ImageCompleteUtil } from "./ImageCompleteUtil.js";
+
 export class ImageWaitCompleteUtil extends ImageCompleteUtil {
         
 

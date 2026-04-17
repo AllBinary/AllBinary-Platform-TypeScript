@@ -31,8 +31,22 @@ import { ColorCompositeInterface } from "../../../../org/allbinary/graphics/colo
 
     
 
-export class RectangleFilledAdjustedAnimation extends Animation
-                , ColorCompositeInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+export class RectangleFilledAdjustedAnimation extends Animation implements ColorCompositeInterface {
         
 
     private width: number

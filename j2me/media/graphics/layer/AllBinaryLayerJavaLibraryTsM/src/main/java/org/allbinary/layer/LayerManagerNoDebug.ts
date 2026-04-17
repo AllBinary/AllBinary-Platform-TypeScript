@@ -19,6 +19,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { LayerManagerLoggingBase } from "./LayerManagerLoggingBase.js";
+
 export class LayerManagerNoDebug extends LayerManagerLoggingBase {
         
 

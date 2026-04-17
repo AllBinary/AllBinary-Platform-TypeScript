@@ -46,10 +46,24 @@ import { ImageToRotationImageArrayUtil } from "../../../../org/allbinary/media/i
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class PooledImageArrayRotationAnimationFactory
             extends Object
-        
-                , AnimationInterfaceFactoryInterface {
+         implements AnimationInterfaceFactoryInterface {
         
 
     private allBinaryImageRotationAnimationInfo: any = NullUtil.getInstance()!.NULL_OBJECT;

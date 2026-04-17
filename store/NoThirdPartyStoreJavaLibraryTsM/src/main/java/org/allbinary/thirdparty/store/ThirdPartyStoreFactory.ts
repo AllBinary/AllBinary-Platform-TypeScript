@@ -19,6 +19,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { ThirdPartyStore } from "./ThirdPartyStore.js";
+
 export class ThirdPartyStoreFactory
             extends Object
          {

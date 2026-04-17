@@ -58,24 +58,28 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
     
 
-import { Short } from "./Short.js";
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { JPanel } from "./JPanel.js";
 
 import { Short } from "./Short.js";
 
-import { Short } from "./Short.js";
+import { ActionEvent } from "./ActionEvent.js";
 
-import { Short } from "./Short.js";
-
-import { Short } from "./Short.js";
-
-import { Short } from "./Short.js";
-
-import { Short } from "./Short.js";
-
-import { Short } from "./Short.js";
-
-export class RotationImageJPanel extends javax.swing.JPanel
-                , ImageProcessedVisitor {
+export class RotationImageJPanel extends javax.swing.JPanel implements ImageProcessedVisitor {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

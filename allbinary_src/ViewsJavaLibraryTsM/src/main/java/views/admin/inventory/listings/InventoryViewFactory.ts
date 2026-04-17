@@ -34,6 +34,23 @@ import { InventorySearch } from "../../../../views/generic/inventory/InventorySe
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { InventoryViewSearchInterface } from "./InventoryViewSearchInterface.js";
+
 export class InventoryViewFactory
             extends Object
          {

@@ -56,7 +56,22 @@ import { BasicArrayListUtil } from "../../../../../org/allbinary/util/BasicArray
 
     
 
-import { Thread } from "./Thread.js";
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { Class } from "./Class.js";
 
 export class MusicManager
             extends Object

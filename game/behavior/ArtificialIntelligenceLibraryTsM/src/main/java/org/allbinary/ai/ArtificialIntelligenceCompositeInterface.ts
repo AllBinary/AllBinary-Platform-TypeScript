@@ -19,6 +19,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { ArtificialIntelligenceInterface } from "./ArtificialIntelligenceInterface.js";
+
 export interface ArtificialIntelligenceCompositeInterface {
         
 

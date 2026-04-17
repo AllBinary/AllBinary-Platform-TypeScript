@@ -22,6 +22,21 @@ import { Feature } from "../../../../org/allbinary/game/configuration/feature/Fe
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class OpenGLFeature extends Feature {
         
  constructor (name: string)                        

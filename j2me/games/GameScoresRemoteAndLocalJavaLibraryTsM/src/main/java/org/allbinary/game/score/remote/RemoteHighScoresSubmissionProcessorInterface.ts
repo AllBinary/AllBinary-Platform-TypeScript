@@ -25,6 +25,23 @@ import { AbeClientInformationInterface } from "../../../../../org/allbinary/logi
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { RemoteHighScores } from "./RemoteHighScores.js";
+
 export interface RemoteHighScoresSubmissionProcessorInterface {
         
 

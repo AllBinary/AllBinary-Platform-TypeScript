@@ -73,6 +73,21 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { AllMotionRectanglesResultsCacheSingleton } from "./AllMotionRectanglesResultsCacheSingleton.js";
 
 import { ConsolidatedMotionRectanglesResultsCacheSingleton } from "./ConsolidatedMotionRectanglesResultsCacheSingleton.js";
@@ -81,10 +96,11 @@ import { ConstrainedMotionRectanglesResultsCacheSingleton } from "./ConstrainedM
 
 import { Color } from "./Color.js";
 
+import { MotionRectangles } from "./MotionRectangles.js";
+
 export class MotionRectanglesImageInputOutput
             extends Object
-        
-                , ImageIOInterface {
+         implements ImageIOInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

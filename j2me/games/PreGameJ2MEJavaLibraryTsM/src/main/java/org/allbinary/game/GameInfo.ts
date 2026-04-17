@@ -36,6 +36,21 @@ import { CommonSeps } from "../../../org/allbinary/string/CommonSeps.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { GameTypeFactory } from "./GameTypeFactory.js";
 
 import { GameMode } from "./GameMode.js";
@@ -43,6 +58,10 @@ import { GameMode } from "./GameMode.js";
 import { GameInfoData } from "./GameInfoData.js";
 
 import { PlayerTypesFactory } from "./PlayerTypesFactory.js";
+
+import { GameType } from "./GameType.js";
+
+import { PlayerType } from "./PlayerType.js";
 
 export class GameInfo
             extends Object

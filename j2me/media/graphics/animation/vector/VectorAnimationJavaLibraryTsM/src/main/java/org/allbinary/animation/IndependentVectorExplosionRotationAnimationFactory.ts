@@ -28,14 +28,32 @@ import { VectorInfo } from "../../../org/allbinary/vector/VectorInfo.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { VectorAnimationFactoryInterface } from "./VectorAnimationFactoryInterface.js";
+
 import { VectorRotationGenerator } from "./VectorRotationGenerator.js";
 
 import { VectorExplosionGenerator } from "./VectorExplosionGenerator.js";
 
+import { Animation } from "./Animation.js";
+
 export class IndependentVectorExplosionRotationAnimationFactory
             extends Object
-        
-                , ProceduralAnimationInterfaceFactoryInterface {
+         implements ProceduralAnimationInterfaceFactoryInterface {
         
 
     private framePoints: number[][][] = NullUtil.getInstance()!.NULL_INT_ARRAY_ARRAY_ARRAY;

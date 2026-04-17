@@ -28,6 +28,23 @@ import { NullInitUpdatePaintable } from "../../../../org/allbinary/graphics/pain
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { SelectionHudPaintable } from "./SelectionHudPaintable.js";
+
 export class RTSLayerInfoPaintable extends InitUpdatePaintable {
         
 

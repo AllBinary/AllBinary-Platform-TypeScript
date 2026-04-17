@@ -19,6 +19,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { CompositeShaderUpdater } from "./CompositeShaderUpdater.js";
+
 export class SimpleCompositeShaderUpdater extends CompositeShaderUpdater {
         
 public constructor (uniformBlockArray: string[], uniformArray: string[], attributeArray: string[])                        

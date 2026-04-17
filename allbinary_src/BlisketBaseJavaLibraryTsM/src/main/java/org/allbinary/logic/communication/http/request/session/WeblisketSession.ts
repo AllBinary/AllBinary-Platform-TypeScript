@@ -72,28 +72,26 @@ import { StringValidationUtil } from "../../../../../../../org/allbinary/logic/s
 
     
 
-import { WeblisketSessionData } from "./WeblisketSessionData.js";
 
-import { WeblisketSessionData } from "./WeblisketSessionData.js";
 
-import { WeblisketSessionData } from "./WeblisketSessionData.js";
 
-import { WeblisketSessionData } from "./WeblisketSessionData.js";
 
-import { WeblisketSessionData } from "./WeblisketSessionData.js";
 
-import { WeblisketSessionData } from "./WeblisketSessionData.js";
 
-import { WeblisketSessionData } from "./WeblisketSessionData.js";
 
-import { WeblisketSessionData } from "./WeblisketSessionData.js";
 
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { WeblisketSessionData } from "./WeblisketSessionData.js";
 
 export class WeblisketSession
             extends Object
-        
-                , WeblisketSessionInterface {
+         implements WeblisketSessionInterface {
         
 
     private session: HttpSession

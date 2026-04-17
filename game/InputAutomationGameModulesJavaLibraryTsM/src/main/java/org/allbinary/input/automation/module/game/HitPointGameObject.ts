@@ -30,8 +30,24 @@ import { CommonSeps } from "../../../../../../org/allbinary/string/CommonSeps.js
 
     
 
-export class HitPointGameObject extends MeteredGameObject
-                , HitPointGameObjectInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { MeteredGameObject } from "./MeteredGameObject.js";
+
+export class HitPointGameObject extends MeteredGameObject implements HitPointGameObjectInterface {
         
 
     private damaged: boolean = false;

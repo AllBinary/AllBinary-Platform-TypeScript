@@ -22,6 +22,23 @@ import { TiledLayer } from "../../../../../../../javax/microedition/lcdui/game/T
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { RaceTrackData } from "./RaceTrackData.js";
+
 export class TiledLayerFactory
             extends Object
          {

@@ -28,6 +28,23 @@ import { OperatingSystemFactory } from "../../../../org/allbinary/logic/system/o
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { ColorFillBasePaintable } from "./ColorFillBasePaintable.js";
+
 export class ColorFillPaintableFactory
             extends Object
          {

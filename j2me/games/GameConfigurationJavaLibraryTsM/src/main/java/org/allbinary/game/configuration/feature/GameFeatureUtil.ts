@@ -43,21 +43,26 @@ import { HashtableUtil } from "../../../../../org/allbinary/util/HashtableUtil.j
 
     
 
-import { Features } from "./Features.js";
 
-import { Feature } from "./Feature.js";
 
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { Features } from "./Features.js";
 
 import { Feature } from "./Feature.js";
 
 import { GameFeatureChoiceGroups } from "./GameFeatureChoiceGroups.js";
-
-import { Feature } from "./Feature.js";
-
-import { GameFeatureChoiceGroups } from "./GameFeatureChoiceGroups.js";
-
-import { Features } from "./Features.js";
 
 export class GameFeatureUtil
             extends Object

@@ -61,8 +61,22 @@ import { StringMaker } from "../../../../../../../org/allbinary/logic/string/Str
 
     
 
-export class AdvertisementCampaignInternalEntity extends AbSqlBean
-                , AdvertisementCampaignInternalEntityInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+export class AdvertisementCampaignInternalEntity extends AbSqlBean implements AdvertisementCampaignInternalEntityInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

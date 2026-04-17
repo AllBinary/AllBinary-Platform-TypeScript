@@ -46,54 +46,26 @@ import { BasicArrayList } from "../../../../../../../../../org/allbinary/util/Ba
 
     
 
-import { PaymentTransactionKeysFactory } from "./PaymentTransactionKeysFactory.js";
 
-import { PaymentTransactionKeysFactory } from "./PaymentTransactionKeysFactory.js";
 
-import { PaymentTransactionKeysFactory } from "./PaymentTransactionKeysFactory.js";
 
-import { PaymentTransactionKeysFactory } from "./PaymentTransactionKeysFactory.js";
 
-import { PaymentTransactionKeysFactory } from "./PaymentTransactionKeysFactory.js";
 
-import { PaymentTransactionKeysFactory } from "./PaymentTransactionKeysFactory.js";
 
-import { PaymentTransactionKeysFactory } from "./PaymentTransactionKeysFactory.js";
 
-import { PaymentTransactionKeysFactory } from "./PaymentTransactionKeysFactory.js";
 
-import { PaymentTransactionKeysFactory } from "./PaymentTransactionKeysFactory.js";
 
-import { PaymentTransactionKeysFactory } from "./PaymentTransactionKeysFactory.js";
+        
 
-import { PaymentTransactionKeysFactory } from "./PaymentTransactionKeysFactory.js";
 
-import { PaymentTransactionKeysFactory } from "./PaymentTransactionKeysFactory.js";
 
-import { PaymentTransactionKeysFactory } from "./PaymentTransactionKeysFactory.js";
-
-import { PaymentTransactionKeysFactory } from "./PaymentTransactionKeysFactory.js";
-
-import { PaymentTransactionKeysFactory } from "./PaymentTransactionKeysFactory.js";
-
-import { PaymentTransactionKeysFactory } from "./PaymentTransactionKeysFactory.js";
-
-import { PaymentTransactionKeysFactory } from "./PaymentTransactionKeysFactory.js";
-
-import { PaymentTransactionKeysFactory } from "./PaymentTransactionKeysFactory.js";
-
-import { PaymentTransactionKeysFactory } from "./PaymentTransactionKeysFactory.js";
-
-import { PaymentTransactionKeysFactory } from "./PaymentTransactionKeysFactory.js";
-
-import { PaymentTransactionKeysFactory } from "./PaymentTransactionKeysFactory.js";
-
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { PaymentTransactionKeysFactory } from "./PaymentTransactionKeysFactory.js";
 
 export class TransactionResult
             extends Object
-        
-                , TransactionResultInterface {
+         implements TransactionResultInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

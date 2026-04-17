@@ -19,6 +19,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { VehicleProperties } from "./VehicleProperties.js";
+
 export interface VehiclePropertiesCompositeInterface {
         
 

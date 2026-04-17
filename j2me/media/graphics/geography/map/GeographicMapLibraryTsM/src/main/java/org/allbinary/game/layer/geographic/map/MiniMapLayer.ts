@@ -82,8 +82,22 @@ import { ViewPosition } from "../../../../../../org/allbinary/view/ViewPosition.
 
     
 
-export class MiniMapLayer extends AllBinaryLayer
-                , GeographicMapCellPositionEventListenerInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+export class MiniMapLayer extends AllBinaryLayer implements GeographicMapCellPositionEventListenerInterface {
         
 
     readonly allBinaryTiledLayer: AllBinaryTiledLayer

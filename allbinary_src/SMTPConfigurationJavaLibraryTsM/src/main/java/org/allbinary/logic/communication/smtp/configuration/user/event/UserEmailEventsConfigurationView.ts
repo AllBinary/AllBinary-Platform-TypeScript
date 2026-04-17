@@ -49,14 +49,30 @@ import { NodeList } from "../../../../../../../../org/w3c/dom/NodeList.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { UserEmailEventConfigurationData } from "./UserEmailEventConfigurationData.js";
+
+import { UserEmailEventsConfigurationInterface } from "./UserEmailEventsConfigurationInterface.js";
 
 import { UserEmailEventsConfigurationData } from "./UserEmailEventsConfigurationData.js";
 
 export class UserEmailEventsConfigurationView
             extends Object
-        
-                , DomNodeInterface {
+         implements DomNodeInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

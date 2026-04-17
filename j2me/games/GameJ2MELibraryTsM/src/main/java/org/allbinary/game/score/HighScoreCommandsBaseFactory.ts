@@ -28,6 +28,21 @@ import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUt
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { HighScoreCommands } from "./HighScoreCommands.js";
 
 export class HighScoreCommandsBaseFactory

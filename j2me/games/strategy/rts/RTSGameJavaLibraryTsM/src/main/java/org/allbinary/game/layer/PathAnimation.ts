@@ -55,7 +55,26 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { AllBinaryGameLayerManager } from "./AllBinaryGameLayerManager.js";
+
+import { PathFindingLayerInterface } from "./PathFindingLayerInterface.js";
+
+import { LinePathAnimation } from "./LinePathAnimation.js";
 
 export class PathAnimation extends Animation {
         

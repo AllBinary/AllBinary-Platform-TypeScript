@@ -25,6 +25,25 @@ import { AllBinaryLayerManager } from "../../../../../org/allbinary/layer/AllBin
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { SpecialGameInputProcessor } from "./SpecialGameInputProcessor.js";
+
+import { CollidableDestroyableDamageableLayer } from "./CollidableDestroyableDamageableLayer.js";
+
 export class SpecialAnalogDownGameInputProcessor extends SpecialGameInputProcessor {
         
 public constructor (collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer)                        

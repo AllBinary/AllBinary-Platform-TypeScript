@@ -40,6 +40,23 @@ import { TransformInfoObjectConfigInterface } from "../../../../../org/allbinary
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { BasicTransformer } from "./BasicTransformer.js";
+
 export class TransformInfoCustomUriTransformer extends BasicTransformer {
         
 public constructor (abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface)                        

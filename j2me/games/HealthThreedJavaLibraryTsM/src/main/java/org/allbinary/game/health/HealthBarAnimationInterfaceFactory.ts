@@ -34,11 +34,26 @@ import { ScaleProperties } from "../../../../org/allbinary/media/ScaleProperties
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { HealthBarAnimation } from "./HealthBarAnimation.js";
+
 export class HealthBarAnimationInterfaceFactory
             extends Object
-        
-                , AnimationInterfaceFactoryInterface
-                , ProceduralAnimationInterfaceFactoryInterface {
+         implements AnimationInterfaceFactoryInterface, ProceduralAnimationInterfaceFactoryInterface {
         
 public constructor (){
 

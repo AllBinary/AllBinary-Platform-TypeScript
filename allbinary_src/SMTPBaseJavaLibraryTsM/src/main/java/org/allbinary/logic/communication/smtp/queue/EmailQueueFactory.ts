@@ -19,7 +19,24 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { BasicEmailQueue } from "./BasicEmailQueue.js";
+
+import { EmailQueueInterface } from "./EmailQueueInterface.js";
 
 export class EmailQueueFactory
             extends Object

@@ -66,8 +66,24 @@ import { ViewPositionEvent } from "../../../org/allbinary/view/event/ViewPositio
 
     
 
-export class AllBinaryLayer extends Layer
-                , LayerInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { Layer } from "./Layer.js";
+
+export class AllBinaryLayer extends Layer implements LayerInterface {
         
 
     public static readonly NULL_ALLBINARY_LAYER: AllBinaryLayer = new AllBinaryLayer(RectangleFactory.SINGLETON, ViewPosition.NULL_VIEW_POSITION);

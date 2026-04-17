@@ -31,6 +31,23 @@ import { ByteUtil } from "../../../../../../../org/allbinary/logic/java/byteutil
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { BaseSecretComposite } from "./BaseSecretComposite.js";
+
 export class SecretComposite extends BaseSecretComposite {
         
 

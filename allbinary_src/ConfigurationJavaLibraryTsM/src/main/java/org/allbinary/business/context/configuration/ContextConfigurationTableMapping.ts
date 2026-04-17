@@ -28,12 +28,28 @@ import { TableMappingInterface } from "../../../../../org/allbinary/data/tables/
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { ContextConfigurationInterface } from "./ContextConfigurationInterface.js";
+
 import { ContextConfigurationData } from "./ContextConfigurationData.js";
 
 export class ContextConfigurationTableMapping
             extends Object
-        
-                , TableMappingInterface {
+         implements TableMappingInterface {
         
 
     private contextConfigurationInterface: ContextConfigurationInterface

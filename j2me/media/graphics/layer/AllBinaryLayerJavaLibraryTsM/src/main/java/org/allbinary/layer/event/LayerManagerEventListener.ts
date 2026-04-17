@@ -22,10 +22,26 @@ import { AllBinaryEventObject } from "../../../../org/allbinary/logic/util/event
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { LayerManagerEvent } from "./LayerManagerEvent.js";
+
 export class LayerManagerEventListener
             extends Object
-        
-                , LayerManagerEventListenerInterface {
+         implements LayerManagerEventListenerInterface {
         
 
     public onEvent(eventObject: AllBinaryEventObject){

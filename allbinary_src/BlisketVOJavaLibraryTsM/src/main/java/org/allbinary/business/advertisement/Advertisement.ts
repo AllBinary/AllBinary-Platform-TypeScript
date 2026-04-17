@@ -34,10 +34,24 @@ import { DisplayInBrowserContraintsInterface } from "../../../../org/allbinary/l
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class Advertisement
             extends Object
-        
-                , AdvertisementInterface {
+         implements AdvertisementInterface {
         
 
     private artist: string

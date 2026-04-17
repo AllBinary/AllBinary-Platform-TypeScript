@@ -28,6 +28,23 @@ import { ARunnable } from "../../../../../../org/allbinary/thread/ARunnable.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { ProgressCanvas } from "./ProgressCanvas.js";
+
 export class ProgressRunnable extends ARunnable {
         
 

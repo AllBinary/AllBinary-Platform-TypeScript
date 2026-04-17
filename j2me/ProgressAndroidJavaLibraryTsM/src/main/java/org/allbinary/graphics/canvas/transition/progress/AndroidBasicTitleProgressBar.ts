@@ -102,8 +102,24 @@ import { NullRunnable } from "../../../../../../org/allbinary/thread/NullRunnabl
 
     
 
-export class AndroidBasicTitleProgressBar extends ProgressCanvas
-                , DisplayChangeEventListener {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { ProgressCanvas } from "./ProgressCanvas.js";
+
+export class AndroidBasicTitleProgressBar extends ProgressCanvas implements DisplayChangeEventListener {
         
 
     public static readonly RESOURCE: string = "ProgressImage";

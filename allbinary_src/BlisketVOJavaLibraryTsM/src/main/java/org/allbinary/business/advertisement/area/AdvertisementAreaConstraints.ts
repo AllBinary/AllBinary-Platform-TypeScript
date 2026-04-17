@@ -40,12 +40,26 @@ import { Node } from "../../../../../org/w3c/dom/Node.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { AdvertisementAreaData } from "./AdvertisementAreaData.js";
 
 export class AdvertisementAreaConstraints
             extends Object
-        
-                , AdvertisementAreaConstraintsInterface {
+         implements AdvertisementAreaConstraintsInterface {
         
 
     private displayInBrowserContraintsInterface: DisplayInBrowserContraintsInterface

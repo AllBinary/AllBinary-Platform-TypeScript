@@ -87,10 +87,26 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { GameCommandCanvas } from "./GameCommandCanvas.js";
+
 import { GameInputMappingInstructionsCanvas } from "./GameInputMappingInstructionsCanvas.js";
 
-export class GameInputMappingCanvas extends GameCommandCanvas
-                , InputMappingInterface {
+export class GameInputMappingCanvas extends GameCommandCanvas implements InputMappingInterface {
         
 
     public static readonly NAME: string = "GameInputMappingCanvas";

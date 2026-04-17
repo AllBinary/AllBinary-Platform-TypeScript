@@ -22,12 +22,28 @@ import { BasicColor } from "../../../org/allbinary/graphics/color/BasicColor.js"
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { AnimationBehavior } from "./AnimationBehavior.js";
+
+import { VectorAnimation } from "./VectorAnimation.js";
 
 export class TimedVectorAnimationFactory
             extends Object
-        
-                , VectorAnimationFactoryInterface {
+         implements VectorAnimationFactoryInterface {
         
 
     public getInstance(points: number[][][], basicColor: BasicColor): VectorAnimation{

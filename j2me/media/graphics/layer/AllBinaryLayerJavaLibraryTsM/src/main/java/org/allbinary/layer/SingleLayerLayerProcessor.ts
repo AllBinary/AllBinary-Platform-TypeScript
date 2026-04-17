@@ -19,6 +19,25 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { LayerProcessor } from "./LayerProcessor.js";
+
+import { AllBinaryLayerManager } from "./AllBinaryLayerManager.js";
+
 export class SingleLayerLayerProcessor extends LayerProcessor {
         
 public constructor ()                        

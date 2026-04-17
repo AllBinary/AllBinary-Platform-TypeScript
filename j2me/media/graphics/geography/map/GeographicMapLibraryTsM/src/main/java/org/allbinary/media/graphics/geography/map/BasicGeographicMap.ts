@@ -36,22 +36,38 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 
     
 
-import { SimpleGeographicMapCellPositionFactory } from "./SimpleGeographicMapCellPositionFactory.js";
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { SimpleGeographicMap } from "./SimpleGeographicMap.js";
+
+import { GeographicMapCellPositionFactoryInterface } from "./GeographicMapCellPositionFactoryInterface.js";
+
+import { GeographicMapCellPositionBaseFactory } from "./GeographicMapCellPositionBaseFactory.js";
+
+import { GeographicMapCellTypeFactory } from "./GeographicMapCellTypeFactory.js";
+
+import { GeographicMapCellPosition } from "./GeographicMapCellPosition.js";
 
 import { SimpleGeographicMapCellPositionFactory } from "./SimpleGeographicMapCellPositionFactory.js";
 
-import { SimpleGeographicMapCellPositionFactory } from "./SimpleGeographicMapCellPositionFactory.js";
+import { GeographicMapCellType } from "./GeographicMapCellType.js";
 
-import { SimpleGeographicMapCellPositionFactory } from "./SimpleGeographicMapCellPositionFactory.js";
+import { BasicGeographicMapCellPositionFactory } from "./BasicGeographicMapCellPositionFactory.js";
 
-import { SimpleGeographicMapCellPositionFactory } from "./SimpleGeographicMapCellPositionFactory.js";
-
-import { SimpleGeographicMapCellPositionFactory } from "./SimpleGeographicMapCellPositionFactory.js";
-
-import { SimpleGeographicMapCellPositionFactory } from "./SimpleGeographicMapCellPositionFactory.js";
-
-export class BasicGeographicMap extends SimpleGeographicMap
-                , GeographicMapInterface {
+export class BasicGeographicMap extends SimpleGeographicMap implements GeographicMapInterface {
         
 
     public static readonly NULL_BASIC_GEOGRAPHIC_MAP_ARRAY: BasicGeographicMap[] = [];

@@ -82,14 +82,22 @@ import { NoTemplateTransformInfoObjectConfig } from "../../../../../../../views/
 
     
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
-export class InsertCustomizerValidationView extends HttpStoreComponentView
-                , ValidationComponentInterface {
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+export class InsertCustomizerValidationView extends HttpStoreComponentView implements ValidationComponentInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

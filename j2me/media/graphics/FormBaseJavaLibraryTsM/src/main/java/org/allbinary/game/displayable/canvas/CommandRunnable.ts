@@ -34,10 +34,26 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { CommandFormInputProcessor } from "./CommandFormInputProcessor.js";
+
 export class CommandRunnable
             extends Object
-        
-                , Runnable {
+         implements Runnable {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

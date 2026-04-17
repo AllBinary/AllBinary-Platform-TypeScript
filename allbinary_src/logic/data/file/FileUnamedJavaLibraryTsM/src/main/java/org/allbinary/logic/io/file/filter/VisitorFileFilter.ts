@@ -34,10 +34,24 @@ import { VisitorInterface } from "../../../../../../org/allbinary/logic/util/vis
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class VisitorFileFilter
             extends Object
-        
-                , FileFilter {
+         implements FileFilter {
         
 
     private booleanVisitorInterface: VisitorInterface

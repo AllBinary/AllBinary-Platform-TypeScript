@@ -22,8 +22,24 @@ import { LongArrayIdentifierInterface } from "../../../../../../org/allbinary/th
 
     
 
-export class StoreAppClientInformation extends AbeClientInformation
-                , LongArrayIdentifierInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { AbeClientInformation } from "./AbeClientInformation.js";
+
+export class StoreAppClientInformation extends AbeClientInformation implements LongArrayIdentifierInterface {
         
 
     private readonly longArrayIdentifier: number[]

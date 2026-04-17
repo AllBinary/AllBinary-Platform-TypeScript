@@ -37,6 +37,21 @@ import { IndexedAnimationToImageArrayUtil } from "../../../../org/allbinary/imag
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class ImageArraySingletonAnimationInterfaceFactory extends SingletonAnimationInterfaceFactory {
         
 public constructor (animationInterface: Animation)                        

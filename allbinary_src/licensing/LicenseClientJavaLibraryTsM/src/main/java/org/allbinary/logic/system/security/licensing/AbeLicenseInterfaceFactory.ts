@@ -34,11 +34,28 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { AbeLicenseInterface } from "./AbeLicenseInterface.js";
+
+import { AbeClientInformationInterface } from "./AbeClientInformationInterface.js";
+
 import { AbeNoLicense } from "./AbeNoLicense.js";
 
 import { AbeClientInformationData } from "./AbeClientInformationData.js";
-
-import { AbeNoLicense } from "./AbeNoLicense.js";
 
 export class AbeLicenseInterfaceFactory
             extends Object

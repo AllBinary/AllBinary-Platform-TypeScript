@@ -26,6 +26,21 @@ import { Build } from "../../../android/os/Build.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class AndroidInfoFactory
             extends Object
          {

@@ -27,10 +27,26 @@ import { CacheableInterface } from "../../../../org/allbinary/logic/util/cache/C
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { Color } from "./Color.js";
+
 export class ColorCacheable
             extends Object
-        
-                , CacheableInterface {
+         implements CacheableInterface {
         
 
     private key: any

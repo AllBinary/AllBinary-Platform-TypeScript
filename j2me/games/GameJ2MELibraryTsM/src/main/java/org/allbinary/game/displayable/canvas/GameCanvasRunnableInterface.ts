@@ -37,6 +37,21 @@ import { RunnableInterface } from "../../../../../org/allbinary/thread/RunnableI
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export interface GameCanvasRunnableInterface extends RunnableInterface, PaintableInterface, ItemStateListener, GameStateCompositeInterface {
         
 

@@ -55,12 +55,24 @@ import { StoreCustomizerComponentUtil } from "../../../../../../../../views/busi
 
     
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
-export class InsertGenericBodyValidationView extends GenericBodyCustomizerView
-                , ValidationComponentInterface {
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { GenericBodyCustomizerView } from "./GenericBodyCustomizerView.js";
+
+export class InsertGenericBodyValidationView extends GenericBodyCustomizerView implements ValidationComponentInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

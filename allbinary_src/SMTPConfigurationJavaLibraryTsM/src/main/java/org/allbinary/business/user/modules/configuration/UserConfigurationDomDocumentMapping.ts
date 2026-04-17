@@ -31,10 +31,26 @@ import { Node } from "../../../../../../org/w3c/dom/Node.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { UserConfigurationInterface } from "./UserConfigurationInterface.js";
+
 export class UserConfigurationDomDocumentMapping
             extends Object
-        
-                , DomDocumentMappingInterface {
+         implements DomDocumentMappingInterface {
         
 
     private userConfigurationInterface: UserConfigurationInterface

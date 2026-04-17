@@ -40,6 +40,21 @@ import { AngleIncrementInfo } from "../../../../org/allbinary/math/AngleIncremen
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class LurchRotationAI extends LurchAI {
         
 

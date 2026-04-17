@@ -25,6 +25,23 @@ import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/Lo
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { AbSqlBasic } from "./AbSqlBasic.js";
+
 export class AbSqlTable extends AbSqlBasic {
         
 

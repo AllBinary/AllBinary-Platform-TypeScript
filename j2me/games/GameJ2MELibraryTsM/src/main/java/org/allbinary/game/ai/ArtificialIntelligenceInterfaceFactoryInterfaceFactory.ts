@@ -30,7 +30,24 @@ import { BasicArrayListUtil } from "../../../../org/allbinary/util/BasicArrayLis
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { BasicAI } from "./BasicAI.js";
+
+import { ArtificialIntelligenceInterfaceFactoryInterface } from "./ArtificialIntelligenceInterfaceFactoryInterface.js";
 
 export class ArtificialIntelligenceInterfaceFactoryInterfaceFactory
             extends Object

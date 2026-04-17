@@ -30,8 +30,24 @@ import { CommonSeps } from "../../../../../../org/allbinary/string/CommonSeps.js
 
     
 
-export class MagicGameObject extends MeteredGameObject
-                , MagicGameObjectInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { MeteredGameObject } from "./MeteredGameObject.js";
+
+export class MagicGameObject extends MeteredGameObject implements MagicGameObjectInterface {
         
 
     private readonly MP_LABEL: string = "MP:";

@@ -40,12 +40,28 @@ import { CommonStrings } from "../../../../../../../../org/allbinary/string/Comm
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { UserEmailEventConfigurationInterface } from "./UserEmailEventConfigurationInterface.js";
+
 import { UserEmailEventListenerFactory } from "./UserEmailEventListenerFactory.js";
 
 export class UserEmailEventsConfiguration
             extends Object
-        
-                , UserEmailEventsConfigurationInterface {
+         implements UserEmailEventsConfigurationInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

@@ -25,6 +25,23 @@ import { WeblisketSession } from "../../../../../../org/allbinary/logic/communic
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { TransformDocumentInterface } from "./TransformDocumentInterface.js";
+
 export class TransformHttpRequestDocumentFactory
             extends Object
          {

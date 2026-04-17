@@ -23,6 +23,21 @@ import { PreLogUtil } from "../../../../org/allbinary/logic/communication/log/Pr
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class OpenGLLogUtil
             extends Object
          {

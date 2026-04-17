@@ -22,6 +22,23 @@ import { StringMaker } from "../../../org/allbinary/logic/string/StringMaker.js"
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { BaseGameStatistics } from "./BaseGameStatistics.js";
+
 /*actual*/ export class GameStatisticsFactory extends BaseGameStatistics {
         
 

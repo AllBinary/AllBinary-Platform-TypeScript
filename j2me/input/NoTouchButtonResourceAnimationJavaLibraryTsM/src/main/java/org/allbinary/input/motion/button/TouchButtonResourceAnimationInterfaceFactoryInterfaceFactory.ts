@@ -37,6 +37,21 @@ import { ImageCacheFactory } from "../../../../../org/allbinary/image/ImageCache
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class TouchButtonResourceAnimationInterfaceFactoryInterfaceFactory extends BaseResourceAnimationInterfaceFactoryInterfaceFactory {
         
 public constructor ()                        

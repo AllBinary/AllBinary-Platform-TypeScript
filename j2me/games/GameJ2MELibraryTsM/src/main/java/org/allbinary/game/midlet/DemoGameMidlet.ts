@@ -43,6 +43,23 @@ import { PrimaryThreadPool } from "../../../../org/allbinary/thread/PrimaryThrea
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { GameMidlet } from "./GameMidlet.js";
+
 export class DemoGameMidlet extends GameMidlet {
         
 public constructor (clientInformationFactory: ClientInformationFactory)                        

@@ -34,6 +34,23 @@ import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { BaseImageLoadingProcessor } from "./BaseImageLoadingProcessor.js";
+
 import { ImageThreadPool } from "./ImageThreadPool.js";
 
 export class ConcurrentImageLoadingProcessor extends BaseImageLoadingProcessor {

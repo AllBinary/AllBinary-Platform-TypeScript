@@ -28,6 +28,25 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { PlayerGameInput } from "./PlayerGameInput.js";
+
+import { GameInputProcessorInterface } from "./GameInputProcessorInterface.js";
+
 export class GameInputProcessorComposite extends PlayerGameInput {
         
 

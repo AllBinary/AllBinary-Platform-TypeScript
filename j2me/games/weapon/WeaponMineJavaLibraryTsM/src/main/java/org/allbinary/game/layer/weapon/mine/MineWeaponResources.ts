@@ -22,6 +22,21 @@ import { BasicGameResources } from "../../../../../../org/allbinary/game/layer/r
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class MineWeaponResources extends BasicGameResources {
         
 

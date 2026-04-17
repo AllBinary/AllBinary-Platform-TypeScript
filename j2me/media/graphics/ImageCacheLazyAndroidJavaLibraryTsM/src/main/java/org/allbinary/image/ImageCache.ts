@@ -51,7 +51,22 @@ import { Memory } from "../../../org/allbinary/system/Memory.js";
 
     
 
-import { Thread } from "./Thread.js";
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { ImageCacheBase } from "./ImageCacheBase.js";
 
 export class ImageCache extends ImageCacheBase {
         

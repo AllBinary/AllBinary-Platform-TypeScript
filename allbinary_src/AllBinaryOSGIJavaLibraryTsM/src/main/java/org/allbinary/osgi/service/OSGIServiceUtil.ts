@@ -34,6 +34,21 @@ import { OSGIServiceInterface } from "../../../../org/allbinary/osgi/OSGIService
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class OSGIServiceUtil
             extends Object
          {

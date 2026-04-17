@@ -40,8 +40,24 @@ import { TimeDelayHelper } from "../../../../org/allbinary/time/TimeDelayHelper.
 
     
 
-export class ImageArraySpecialAnimation extends ImageArrayAnimation
-                , SpecialAnimationInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { ImageArrayAnimation } from "./ImageArrayAnimation.js";
+
+export class ImageArraySpecialAnimation extends ImageArrayAnimation implements SpecialAnimationInterface {
         
 
     private readonly timeDelayHelper: TimeDelayHelper = new TimeDelayHelper(270);

@@ -19,6 +19,25 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { AllBinaryLayer } from "./AllBinaryLayer.js";
+
+import { LayerManager } from "./LayerManager.js";
+
 export class LayerManagerLoggingBase
             extends Object
          {

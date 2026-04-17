@@ -28,8 +28,22 @@ import { Activity } from "../../../../../android/app/Activity.js";
 
     
 
-export class VirtualKeyboardAPI1 extends VirtualKeyboard
-                , VirtualKeyboardEventListenerInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+export class VirtualKeyboardAPI1 extends VirtualKeyboard implements VirtualKeyboardEventListenerInterface {
         
 
     public MIN_API: number = 1;

@@ -42,9 +42,22 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
     
 
-export class AllBinaryTiledLayer extends Layer
-                , NamedInterface
-                , PaintableInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+export class AllBinaryTiledLayer extends Layer implements NamedInterface, PaintableInterface {
         
 
     private cellWidth: number

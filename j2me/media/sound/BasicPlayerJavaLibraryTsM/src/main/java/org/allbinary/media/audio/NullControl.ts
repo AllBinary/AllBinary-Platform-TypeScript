@@ -22,10 +22,24 @@ import { Control } from "../../../../javax/microedition/media/Control.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class NullControl
             extends Object
-        
-                , Control {
+         implements Control {
         
 
 }

@@ -64,6 +64,25 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { BaseScalable } from "./BaseScalable.js";
+
+import { ScalableListener } from "./ScalableListener.js";
+
 export class DisplayInfoSingleton
             extends Object
          {

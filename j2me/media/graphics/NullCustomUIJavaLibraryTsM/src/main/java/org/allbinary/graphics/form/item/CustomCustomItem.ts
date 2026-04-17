@@ -8,6 +8,23 @@ import { BasicColor } from "../../../../../org/allbinary/graphics/color/BasicCol
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { CustomItem } from "./CustomItem.js";
+
 export class CustomCustomItem extends CustomItem {
         
 protected constructor (label: string, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor)                        

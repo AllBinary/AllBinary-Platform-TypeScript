@@ -37,14 +37,24 @@ import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUt
 
     
 
-import { Long } from "./Long.js";
 
-import { Long } from "./Long.js";
 
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class UniqueIdGenerator
             extends Object
-        
-                , IdGeneratorInterface {
+         implements IdGeneratorInterface {
         
 
     public static readonly EXT: string = ".unq";

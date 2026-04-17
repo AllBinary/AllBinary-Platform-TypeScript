@@ -46,8 +46,22 @@ import { HttpStoreComponentView } from "../../../../views/business/context/modul
 
     
 
-export class MiniBasketView extends HttpStoreComponentView
-                , DomNodeInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+export class MiniBasketView extends HttpStoreComponentView implements DomNodeInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

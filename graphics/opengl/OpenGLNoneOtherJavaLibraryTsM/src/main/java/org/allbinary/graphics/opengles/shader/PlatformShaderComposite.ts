@@ -25,6 +25,29 @@ import { OpenGLProcessor } from "../../../../../org/allbinary/graphics/opengles/
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { ShaderComposite } from "./ShaderComposite.js";
+
+import { CompositeShaderUpdater } from "./CompositeShaderUpdater.js";
+
+import { ShaderInitializer } from "./ShaderInitializer.js";
+
+import { ModelViewProjection } from "./ModelViewProjection.js";
+
 export class PlatformShaderComposite extends ShaderComposite {
         
 public constructor (requiresOpenGLVersion: string, shaderArray: Shader[], compositeShaderUpdater: CompositeShaderUpdater, shaderInitializer: ShaderInitializer, modelViewProjection: ModelViewProjection, colorOpenGLProcessor: OpenGLProcessor, vertexOpenGLProcessor: OpenGLProcessor)                        

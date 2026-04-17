@@ -25,6 +25,23 @@ import { CommonStrings } from "../../../../../../../../org/allbinary/string/Comm
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { InventoryEntity } from "./InventoryEntity.js";
+
 export class InventoryEntityFactory
             extends Object
          {

@@ -22,8 +22,26 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
     
 
-export class IndexedBasicArrayListCache extends BaseBasicArrayListCache
-                , CacheInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { BaseBasicArrayListCache } from "./BaseBasicArrayListCache.js";
+
+import { CacheableInterface } from "./CacheableInterface.js";
+
+export class IndexedBasicArrayListCache extends BaseBasicArrayListCache implements CacheInterface {
         
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;

@@ -22,6 +22,23 @@ import { awt } from "../../../../java/awt.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { Point } from "./Point.js";
+
 export class PointFactory
             extends Object
          {

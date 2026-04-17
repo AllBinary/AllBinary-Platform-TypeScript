@@ -19,10 +19,21 @@
 
 
 
-import { Long } from "./Long.js";
 
-import { ScaleFactorFactory } from "./ScaleFactorFactory.js";
 
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { ScaleFactorFactory } from "./ScaleFactorFactory.js";
 
 export class BasicDecimal

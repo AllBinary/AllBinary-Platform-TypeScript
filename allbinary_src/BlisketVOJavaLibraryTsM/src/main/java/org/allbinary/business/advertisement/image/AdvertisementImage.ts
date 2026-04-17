@@ -22,10 +22,24 @@ import { TwoDimensionalConstraintInterface } from "../../../../../org/allbinary/
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class AdvertisementImage
             extends Object
-        
-                , AdvertisementImageInterface {
+         implements AdvertisementImageInterface {
         
 
     private imageFileName: string

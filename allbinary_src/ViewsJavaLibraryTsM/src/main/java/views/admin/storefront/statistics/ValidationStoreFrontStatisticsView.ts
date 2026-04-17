@@ -40,12 +40,24 @@ import { Node } from "../../../../org/w3c/dom/Node.js";
 
     
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
-export class ValidationStoreFrontStatisticsView extends StoreFrontStatisticsComponent
-                , ValidationComponentInterface {
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { StoreFrontStatisticsComponent } from "./StoreFrontStatisticsComponent.js";
+
+export class ValidationStoreFrontStatisticsView extends StoreFrontStatisticsComponent implements ValidationComponentInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

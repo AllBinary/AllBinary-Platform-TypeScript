@@ -61,8 +61,24 @@ import { NodeList } from "../../../../../org/w3c/dom/NodeList.js";
 
     
 
-export class CategoryLoader extends CategoryModifierTree
-                , CategoryLoaderInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { CategoryModifierTree } from "./CategoryModifierTree.js";
+
+export class CategoryLoader extends CategoryModifierTree implements CategoryLoaderInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

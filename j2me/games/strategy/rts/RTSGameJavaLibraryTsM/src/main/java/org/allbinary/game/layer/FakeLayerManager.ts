@@ -33,8 +33,24 @@ import { GeographicMapCompositeInterface } from "../../../../org/allbinary/media
 
     
 
-export class FakeLayerManager extends AllBinaryGameLayerManager
-                , GeographicMapCompositeInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { AllBinaryGameLayerManager } from "./AllBinaryGameLayerManager.js";
+
+export class FakeLayerManager extends AllBinaryGameLayerManager implements GeographicMapCompositeInterface {
         
 
     private geographicMapInterfaceArray: BasicGeographicMap[] = BasicGeographicMap.NULL_BASIC_GEOGRAPHIC_MAP_ARRAY;

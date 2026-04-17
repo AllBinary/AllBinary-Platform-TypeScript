@@ -22,10 +22,26 @@ import { AllBinaryEventObject } from "../../../../../../org/allbinary/logic/util
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { InputMappingEvent } from "./InputMappingEvent.js";
+
 export class NullInputMappingEventListener
             extends Object
-        
-                , InputMappingEventListenerInterface {
+         implements InputMappingEventListenerInterface {
         
 
     public static readonly NULL_INPUT_MAPPING_EVENT_LISTENER: NullInputMappingEventListener = new NullInputMappingEventListener();

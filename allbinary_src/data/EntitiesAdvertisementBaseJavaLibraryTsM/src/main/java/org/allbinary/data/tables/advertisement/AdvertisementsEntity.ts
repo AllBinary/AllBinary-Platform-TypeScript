@@ -52,8 +52,22 @@ import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMak
 
     
 
-export class AdvertisementsEntity extends AbSqlBean
-                , AdvertisementsEntityInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+export class AdvertisementsEntity extends AbSqlBean implements AdvertisementsEntityInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

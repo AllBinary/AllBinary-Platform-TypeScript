@@ -103,9 +103,24 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
     
 
-export class DiveAndDirectionalTrackingAI extends BasicAI
-                , TrackingEventListenerInterface
-                , DestroyedEventListenerInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { BasicAI } from "./BasicAI.js";
+
+export class DiveAndDirectionalTrackingAI extends BasicAI implements TrackingEventListenerInterface, DestroyedEventListenerInterface {
         
 
     private static readonly directionToKeyMap: number[] = intArrayOf(Canvas.LEFT,Canvas.DOWN,Canvas.UP,Canvas.RIGHT);

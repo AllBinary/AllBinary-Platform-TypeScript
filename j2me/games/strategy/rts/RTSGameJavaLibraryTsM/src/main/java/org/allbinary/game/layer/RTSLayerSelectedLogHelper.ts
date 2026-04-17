@@ -52,6 +52,25 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { RTSLayerLogHelper } from "./RTSLayerLogHelper.js";
+
+import { PathFindingLayerInterface } from "./PathFindingLayerInterface.js";
+
 export class RTSLayerSelectedLogHelper extends RTSLayerLogHelper {
         
 

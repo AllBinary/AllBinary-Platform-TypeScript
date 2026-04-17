@@ -28,8 +28,24 @@ import { Orientation } from "../../../../org/allbinary/logic/math/Orientation.js
 
     
 
-export class NoGyroSensor extends AllBinaryOrientationSensor
-                , AllBinarySensorListener {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { AllBinaryOrientationSensor } from "./AllBinaryOrientationSensor.js";
+
+export class NoGyroSensor extends AllBinaryOrientationSensor implements AllBinarySensorListener {
         
 public constructor (){
 

@@ -40,10 +40,26 @@ import { GeographicMapCellPosition } from "../../../../org/allbinary/media/graph
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { PathFindingLayerInterface } from "./PathFindingLayerInterface.js";
+
 export class WaypointBehaviorBase
             extends Object
-        
-                , TickableInterface {
+         implements TickableInterface {
         
 
     private readonly ownedWaypointList: BasicArrayList

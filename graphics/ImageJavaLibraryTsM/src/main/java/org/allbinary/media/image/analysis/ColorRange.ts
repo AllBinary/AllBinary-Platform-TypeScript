@@ -28,10 +28,26 @@ import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { Color } from "./Color.js";
+
 export class ColorRange
             extends Object
-        
-                , ColorRangeInterface {
+         implements ColorRangeInterface {
         
 
     private minRed: number

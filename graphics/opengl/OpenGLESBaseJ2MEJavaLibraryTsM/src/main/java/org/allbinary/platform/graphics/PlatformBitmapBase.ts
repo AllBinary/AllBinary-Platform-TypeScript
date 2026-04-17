@@ -25,6 +25,21 @@ import { NullCanvas } from "../../../../javax/microedition/lcdui/NullCanvas.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class PlatformBitmapBase
             extends Object
          {

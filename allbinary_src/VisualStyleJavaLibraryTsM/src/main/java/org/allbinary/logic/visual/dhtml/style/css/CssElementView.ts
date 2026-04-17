@@ -64,16 +64,28 @@ import { NodeList } from "../../../../../../../org/w3c/dom/NodeList.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { CssElementData } from "./CssElementData.js";
 
 import { CssElementsValidationFactory } from "./CssElementsValidationFactory.js";
 
-import { CssElementData } from "./CssElementData.js";
-
 export class CssElementView
             extends Object
-        
-                , DomNodeInterface {
+         implements DomNodeInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

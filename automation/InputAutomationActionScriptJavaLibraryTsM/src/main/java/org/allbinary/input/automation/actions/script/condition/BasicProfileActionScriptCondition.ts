@@ -79,14 +79,28 @@ import { NodeList } from "../../../../../../../org/w3c/dom/NodeList.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { GenericProfileActionScriptConditionData } from "./GenericProfileActionScriptConditionData.js";
 
 import { ProfileActionScriptConditionFactory } from "./ProfileActionScriptConditionFactory.js";
 
-import { GenericProfileActionScriptConditionData } from "./GenericProfileActionScriptConditionData.js";
+import { JMenu } from "./JMenu.js";
 
-export class BasicProfileActionScriptCondition extends ProfileActionScriptItem
-                , ProfileActionScriptConditionInterface {
+export class BasicProfileActionScriptCondition extends ProfileActionScriptItem implements ProfileActionScriptConditionInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

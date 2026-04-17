@@ -30,12 +30,26 @@ import { CommonSeps } from "../../../../../../org/allbinary/string/CommonSeps.js
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { GraphicsAnalysisUtil } from "./GraphicsAnalysisUtil.js";
 
 export class MeteredGameObject
             extends Object
-        
-                , MeteredGameObjectInterface {
+         implements MeteredGameObjectInterface {
         
 
     private ratios: Double[]

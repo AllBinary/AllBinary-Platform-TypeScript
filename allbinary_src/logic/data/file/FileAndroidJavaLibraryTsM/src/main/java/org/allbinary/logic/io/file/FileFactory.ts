@@ -31,6 +31,23 @@ import { ResourceUtil } from "../../../../../org/allbinary/data/resource/Resourc
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { AbFile } from "./AbFile.js";
+
 export class FileFactory
             extends Object
          {

@@ -19,6 +19,25 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { MyCanvasEventListener } from "./MyCanvasEventListener.js";
+
+import { MyCanvasEvent } from "./MyCanvasEvent.js";
+
 export class MyCanvasEventService
             extends Object
          {

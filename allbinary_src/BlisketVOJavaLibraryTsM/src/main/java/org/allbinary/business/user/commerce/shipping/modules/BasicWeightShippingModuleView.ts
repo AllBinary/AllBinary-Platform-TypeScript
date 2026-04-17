@@ -40,8 +40,24 @@ import { Node } from "../../../../../../../org/w3c/dom/Node.js";
 
     
 
-export class BasicWeightShippingModuleView extends BasicWeightShippingModule
-                , DomNodeInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { BasicWeightShippingModule } from "./BasicWeightShippingModule.js";
+
+export class BasicWeightShippingModuleView extends BasicWeightShippingModule implements DomNodeInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

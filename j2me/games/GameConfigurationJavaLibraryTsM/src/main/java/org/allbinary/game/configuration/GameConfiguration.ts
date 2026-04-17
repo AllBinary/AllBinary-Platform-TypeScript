@@ -39,6 +39,21 @@ import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { GameConfigurationSingleton } from "./GameConfigurationSingleton.js";
 
 export class GameConfiguration

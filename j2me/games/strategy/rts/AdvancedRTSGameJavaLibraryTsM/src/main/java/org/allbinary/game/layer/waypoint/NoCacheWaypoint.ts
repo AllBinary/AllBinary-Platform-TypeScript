@@ -85,8 +85,24 @@ import { BasicArrayListUtil } from "../../../../../org/allbinary/util/BasicArray
 
     
 
-export class NoCacheWaypoint extends WaypointBase
-                , BuildingEventListenerInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { WaypointBase } from "./WaypointBase.js";
+
+export class NoCacheWaypoint extends WaypointBase implements BuildingEventListenerInterface {
         
 
     readonly ownerLayer: PathFindingLayerInterface

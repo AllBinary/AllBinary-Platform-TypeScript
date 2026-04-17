@@ -45,6 +45,23 @@ import { TimeDelayHelper } from "../../../../org/allbinary/time/TimeDelayHelper.
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { KeyPressesAI } from "./KeyPressesAI.js";
+
 export class MultiKeyPressesAI extends KeyPressesAI {
         
 

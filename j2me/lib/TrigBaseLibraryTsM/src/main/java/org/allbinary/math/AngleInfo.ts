@@ -28,7 +28,24 @@ import { CommonSeps } from "../../../org/allbinary/string/CommonSeps.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { AngleIncrementInfoFactory } from "./AngleIncrementInfoFactory.js";
+
+import { AngleIncrementInfo } from "./AngleIncrementInfo.js";
 
 import { FrameUtil } from "./FrameUtil.js";
 

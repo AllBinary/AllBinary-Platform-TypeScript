@@ -43,9 +43,24 @@ import { Node } from "../../../../../../../../../../../../org/w3c/dom/Node.js";
 
     
 
-export class EditCssStyleValidation extends CssStyleValidation
-                , ValidationInterface
-                , DomNodeInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { CssStyleValidation } from "./CssStyleValidation.js";
+
+export class EditCssStyleValidation extends CssStyleValidation implements ValidationInterface, DomNodeInterface {
         
 public constructor (){
 

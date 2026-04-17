@@ -271,16 +271,28 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
     
 
-import { GameMidletStateFactory } from "./GameMidletStateFactory.js";
 
-import { GameMidletEventHandler } from "./GameMidletEventHandler.js";
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { GameMidletStateFactory } from "./GameMidletStateFactory.js";
 
 import { GameMidletEventHandler } from "./GameMidletEventHandler.js";
 
 import { DemoGameMidletStateFactory } from "./DemoGameMidletStateFactory.js";
 
-export class GameMidlet extends ProgressMidlet
-                , CommandListener {
+export class GameMidlet extends ProgressMidlet implements CommandListener {
         
 
     readonly basicColorFactory: BasicColorFactory = BasicColorFactory.getInstance()!;

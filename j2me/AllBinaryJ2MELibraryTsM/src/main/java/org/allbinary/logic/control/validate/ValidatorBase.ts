@@ -37,10 +37,24 @@ import { BasicArrayListUtil } from "../../../../../org/allbinary/util/BasicArray
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class ValidatorBase
             extends Object
-        
-                , ValidatorBaseInterface {
+         implements ValidatorBaseInterface {
         
 
     private static readonly instance: ValidatorBase = new ValidatorBase();

@@ -28,6 +28,21 @@ import { LayerManager } from "../../../../../org/allbinary/layer/LayerManager.js
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class AllBinaryCollisionManager
             extends Object
          {

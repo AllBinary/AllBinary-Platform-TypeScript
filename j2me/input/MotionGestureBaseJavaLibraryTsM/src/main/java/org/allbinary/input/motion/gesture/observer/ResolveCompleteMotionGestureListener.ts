@@ -46,10 +46,24 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class ResolveCompleteMotionGestureListener
             extends Object
-        
-                , CompleteMotionGestureListenerInterface {
+         implements CompleteMotionGestureListenerInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

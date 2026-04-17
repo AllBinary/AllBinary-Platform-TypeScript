@@ -34,14 +34,26 @@ import { ServiceClientInformationInterfaceFactory } from "../../org/allbinary/lo
 
     
 
-import { HelperFactory } from "./HelperFactory.js";
 
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { HelperFactory } from "./HelperFactory.js";
 
 export class CustomLoaderHelperFactory
             extends Object
-        
-                , TagHelperFactoryInterface {
+         implements TagHelperFactoryInterface {
         
 
     private static readonly CLASSNAME: string = "admin.taghelpers.CustomLoaderHelper";

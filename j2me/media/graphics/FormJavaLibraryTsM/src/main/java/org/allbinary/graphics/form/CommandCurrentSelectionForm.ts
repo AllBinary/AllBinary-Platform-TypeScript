@@ -58,6 +58,25 @@ import { CustomItemInterface } from "../../../../org/allbinary/graphics/form/ite
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { ScrollCurrentSelectionForm } from "./ScrollCurrentSelectionForm.js";
+
+import { FormType } from "./FormType.js";
+
 export class CommandCurrentSelectionForm extends ScrollCurrentSelectionForm {
         
 

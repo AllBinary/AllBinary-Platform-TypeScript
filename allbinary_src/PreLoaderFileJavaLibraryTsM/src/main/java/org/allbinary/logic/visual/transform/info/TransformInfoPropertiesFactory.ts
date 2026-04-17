@@ -40,7 +40,24 @@ import { NodeList } from "../../../../../../org/w3c/dom/NodeList.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { TransformInfoData } from "./TransformInfoData.js";
+
+import { TransformInfoProperties } from "./TransformInfoProperties.js";
 
 export class TransformInfoPropertiesFactory
             extends Object

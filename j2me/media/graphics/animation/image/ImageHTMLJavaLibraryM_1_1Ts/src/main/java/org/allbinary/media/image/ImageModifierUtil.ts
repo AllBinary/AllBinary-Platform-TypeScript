@@ -55,6 +55,21 @@ import { ResourceCallback } from "../../../../playn/core/ResourceCallback.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class ImageModifierUtil
             extends Object
          {

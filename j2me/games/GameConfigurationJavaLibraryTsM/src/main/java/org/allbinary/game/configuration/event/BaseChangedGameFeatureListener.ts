@@ -49,10 +49,26 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { GameFeatureEvent } from "./GameFeatureEvent.js";
+
 export class BaseChangedGameFeatureListener
             extends Object
-        
-                , GameFeatureListenerInterface {
+         implements GameFeatureListenerInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

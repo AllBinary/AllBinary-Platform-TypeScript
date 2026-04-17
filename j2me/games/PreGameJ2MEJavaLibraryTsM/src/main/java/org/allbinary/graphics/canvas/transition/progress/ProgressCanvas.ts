@@ -82,8 +82,22 @@ import { ThreadPool } from "../../../../../../org/allbinary/thread/ThreadPool.js
 
     
 
-export class ProgressCanvas extends RunnableCanvas
-                , PaintableInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+export class ProgressCanvas extends RunnableCanvas implements PaintableInterface {
         
 
     hasPainted: boolean= false

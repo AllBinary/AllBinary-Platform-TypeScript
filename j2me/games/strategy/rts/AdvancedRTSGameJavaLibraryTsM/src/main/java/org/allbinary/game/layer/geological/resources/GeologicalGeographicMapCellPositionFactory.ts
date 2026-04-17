@@ -34,10 +34,24 @@ import { GeographicMapCellPositionFactoryInterface } from "../../../../../../org
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class GeologicalGeographicMapCellPositionFactory
             extends Object
-        
-                , GeographicMapCellPositionFactoryInterface {
+         implements GeographicMapCellPositionFactoryInterface {
         
 
     private readonly resourcePerMapCellType: number[]

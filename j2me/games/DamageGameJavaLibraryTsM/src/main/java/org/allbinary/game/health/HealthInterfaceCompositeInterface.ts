@@ -19,6 +19,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { Health } from "./Health.js";
+
 export interface HealthInterfaceCompositeInterface {
         
 

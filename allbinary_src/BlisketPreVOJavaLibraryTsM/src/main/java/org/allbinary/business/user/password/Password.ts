@@ -51,12 +51,21 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
     
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class Password
             extends Object
          {

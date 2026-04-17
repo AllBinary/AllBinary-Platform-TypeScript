@@ -22,6 +22,21 @@ import { AudioFormat } from "../../../../javax/sound/sampled/AudioFormat.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class NullAudioFormat
             extends Object
          {

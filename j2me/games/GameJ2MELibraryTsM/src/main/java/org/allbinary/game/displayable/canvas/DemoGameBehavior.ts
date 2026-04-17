@@ -34,6 +34,23 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { AllBinaryGameCanvas } from "./AllBinaryGameCanvas.js";
+
 export class DemoGameBehavior
             extends Object
          {

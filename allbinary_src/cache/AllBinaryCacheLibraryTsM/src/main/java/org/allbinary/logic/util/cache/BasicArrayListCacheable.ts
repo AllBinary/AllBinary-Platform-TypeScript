@@ -25,8 +25,22 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
     
 
-export class BasicArrayListCacheable extends BasicArrayList
-                , CacheableInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+export class BasicArrayListCacheable extends BasicArrayList implements CacheableInterface {
         
 
     public getKey(): any{

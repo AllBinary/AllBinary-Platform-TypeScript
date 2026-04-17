@@ -25,7 +25,24 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { AllBinaryMediaManager } from "./AllBinaryMediaManager.js";
+
+import { SoundsFactoryInterface } from "./SoundsFactoryInterface.js";
 
 export class AllBinaryMediaManagerShutdown
             extends Object

@@ -22,12 +22,21 @@ import { StringMaker } from "../../../org/allbinary/logic/string/StringMaker.js"
 
     
 
-import { Runtime } from "./Runtime.js";
 
-import { Runtime } from "./Runtime.js";
 
-import { Runtime } from "./Runtime.js";
 
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { Runtime } from "./Runtime.js";
 
 /*actual*/ export class Memory

@@ -40,14 +40,28 @@ import { CommonStrings } from "../../../../../../../../org/allbinary/string/Comm
 
     
 
-import { PaymentGatewayData } from "./PaymentGatewayData.js";
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { PaymentGatewayInterface } from "./PaymentGatewayInterface.js";
 
 import { PaymentGatewayData } from "./PaymentGatewayData.js";
 
 export class PaymentGatewayInterfaceFactory
             extends Object
-        
-                , PaymentGatewayInterfaceFactoryInterface {
+         implements PaymentGatewayInterfaceFactoryInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

@@ -31,6 +31,21 @@ import { EventStrings } from "../../../../org/allbinary/logic/util/event/EventSt
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class VirtualKeyboard
             extends Object
          {

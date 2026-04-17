@@ -46,12 +46,24 @@ import { CustomizerUtil } from "../../../../../../../../../views/business/contex
 
     
 
-import { Boolean } from "./Boolean.js";
 
-import { Boolean } from "./Boolean.js";
 
-export class NewTitleBodyValidationView extends TitleBodyCustomizerView
-                , ValidationComponentInterface {
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { TitleBodyCustomizerView } from "./TitleBodyCustomizerView.js";
+
+export class NewTitleBodyValidationView extends TitleBodyCustomizerView implements ValidationComponentInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

@@ -28,10 +28,24 @@ import { ViewPositionFactoryInterface } from "../../../../../../org/allbinary/vi
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class MineLayerFactory
             extends Object
-        
-                , AllBinaryLayerFactoryInterface {
+         implements AllBinaryLayerFactoryInterface {
         
 
     private viewPositionFactoryInterface: ViewPositionFactoryInterface

@@ -22,6 +22,23 @@ import { AllBinaryEventObject } from "../../../../../org/allbinary/logic/util/ev
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { ImageComparisonSearch } from "./ImageComparisonSearch.js";
+
 export class ImageComparisonSearchResultsEvent extends AllBinaryEventObject {
         
 

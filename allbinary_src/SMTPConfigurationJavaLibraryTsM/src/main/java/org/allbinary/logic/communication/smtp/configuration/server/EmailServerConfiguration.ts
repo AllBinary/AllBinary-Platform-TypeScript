@@ -31,16 +31,26 @@ import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonS
 
     
 
-import { EmailServerConfigurationData } from "./EmailServerConfigurationData.js";
 
-import { EmailServerConfigurationData } from "./EmailServerConfigurationData.js";
 
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { EmailServerConfigurationData } from "./EmailServerConfigurationData.js";
 
 export class EmailServerConfiguration
             extends Object
-        
-                , EmailServerConfigurationInterface {
+         implements EmailServerConfigurationInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

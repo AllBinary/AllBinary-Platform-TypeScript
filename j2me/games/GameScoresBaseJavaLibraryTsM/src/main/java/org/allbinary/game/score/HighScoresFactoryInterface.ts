@@ -22,6 +22,25 @@ import { GameInfo } from "../../../../org/allbinary/game/GameInfo.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { HighScoresResultsListener } from "./HighScoresResultsListener.js";
+
+import { HighScoresHelperBase } from "./HighScoresHelperBase.js";
+
 export interface HighScoresFactoryInterface {
         
 

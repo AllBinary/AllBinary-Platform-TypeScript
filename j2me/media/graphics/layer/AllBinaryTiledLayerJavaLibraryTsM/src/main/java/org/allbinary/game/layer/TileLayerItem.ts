@@ -34,8 +34,24 @@ import { BasicColor } from "../../../../org/allbinary/graphics/color/BasicColor.
 
     
 
-export class TileLayerItem extends CustomItem
-                , CustomItemInterface {
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { AllBinaryTiledLayer } from "./AllBinaryTiledLayer.js";
+
+export class TileLayerItem extends CustomItem implements CustomItemInterface {
         
 
     private readonly tiledLayer: AllBinaryTiledLayer

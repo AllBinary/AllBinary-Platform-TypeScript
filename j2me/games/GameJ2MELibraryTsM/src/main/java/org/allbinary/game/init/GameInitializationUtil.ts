@@ -43,6 +43,23 @@ import { AbeClientInformationInterface } from "../../../../org/allbinary/logic/s
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { BasicBuildGameInitializerFactory } from "./BasicBuildGameInitializerFactory.js";
+
 export class GameInitializationUtil
             extends Object
          {

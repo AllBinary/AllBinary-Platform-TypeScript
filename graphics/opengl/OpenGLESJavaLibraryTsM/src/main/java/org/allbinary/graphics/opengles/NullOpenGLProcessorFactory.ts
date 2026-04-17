@@ -8,6 +8,21 @@ import { OpenGLProcessor } from "../../../../org/allbinary/graphics/opengles/Ope
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class NullOpenGLProcessorFactory
             extends Object
          {

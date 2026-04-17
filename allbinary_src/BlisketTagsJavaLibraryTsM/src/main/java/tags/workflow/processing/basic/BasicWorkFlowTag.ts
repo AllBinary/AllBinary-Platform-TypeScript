@@ -34,6 +34,21 @@ import { StoreWorkFlowTag } from "../../../../tags/StoreWorkFlowTag.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class BasicWorkFlowTag extends StoreWorkFlowTag {
         
 

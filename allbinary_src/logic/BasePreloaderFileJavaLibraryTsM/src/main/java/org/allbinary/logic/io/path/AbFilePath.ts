@@ -19,6 +19,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { AbPath } from "./AbPath.js";
+
 import { PathUtil } from "./PathUtil.js";
 
 export class AbFilePath extends AbPath {

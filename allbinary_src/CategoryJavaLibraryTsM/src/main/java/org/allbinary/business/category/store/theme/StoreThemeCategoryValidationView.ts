@@ -28,10 +28,26 @@ import { Node } from "../../../../../../org/w3c/dom/Node.js";
 
     
 
-import { Boolean } from "./Boolean.js";
 
-export class StoreThemeCategoryValidationView extends StoreThemeCategoryView
-                , ValidationInterface {
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { StoreThemeCategoryView } from "./StoreThemeCategoryView.js";
+
+import { StoreThemeCategoryInterface } from "./StoreThemeCategoryInterface.js";
+
+export class StoreThemeCategoryValidationView extends StoreThemeCategoryView implements ValidationInterface {
         
 public constructor (categoryInterface: StoreThemeCategoryInterface)                        
 

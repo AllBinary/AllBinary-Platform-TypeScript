@@ -46,28 +46,32 @@ import { NodeList } from "../../../../../../../../../../org/w3c/dom/NodeList.js"
 
     
 
-import { ImageActionScriptOutputData } from "./ImageActionScriptOutputData.js";
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { BasicProfileActionScriptOutput } from "./BasicProfileActionScriptOutput.js";
 
 import { ImageActionScriptOutputData } from "./ImageActionScriptOutputData.js";
 
-import { ImageActionScriptOutputData } from "./ImageActionScriptOutputData.js";
-
-import { ImageActionScriptOutputData } from "./ImageActionScriptOutputData.js";
-
-import { ImageActionScriptOutputData } from "./ImageActionScriptOutputData.js";
-
-import { Boolean } from "./Boolean.js";
-
-import { ImageActionScriptOutputData } from "./ImageActionScriptOutputData.js";
-
-import { Boolean } from "./Boolean.js";
-
-import { ImageActionScriptOutputData } from "./ImageActionScriptOutputData.js";
+import { ImageActionScriptOutputJPanel } from "./ImageActionScriptOutputJPanel.js";
 
 import { ImageActionScriptOutputProcessor } from "./ImageActionScriptOutputProcessor.js";
 
-export class ImageActionScriptOutput extends BasicProfileActionScriptOutput
-                , ImageActionScriptOutputInterface {
+import { ImageTypes } from "./ImageTypes.js";
+
+export class ImageActionScriptOutput extends BasicProfileActionScriptOutput implements ImageActionScriptOutputInterface {
         
 
     private static readonly NAME: string = "Captures";

@@ -34,6 +34,23 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { TransformInfoEntity } from "./TransformInfoEntity.js";
+
 export class TransformInfoEntityFactory
             extends Object
          {

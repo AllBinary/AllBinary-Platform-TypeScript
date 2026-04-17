@@ -26,6 +26,25 @@ import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { FileItemStream } from "./FileItemStream.js";
+
+import { FileItem } from "./FileItem.js";
+
 export class FileItemUtil
             extends Object
          {

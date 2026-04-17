@@ -24,10 +24,24 @@ import { HardwareComponentInterface } from "../../../../../../../org/allbinary/l
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class UnknownHardware
             extends Object
-        
-                , HardwareComponentInterface {
+         implements HardwareComponentInterface {
         
 
             static readonly PUBLIC: string = '%{public}s';

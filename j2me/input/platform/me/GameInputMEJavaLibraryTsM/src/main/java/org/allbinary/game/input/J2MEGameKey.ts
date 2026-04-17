@@ -25,7 +25,22 @@ import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js
 
     
 
-import { InputFactory } from "./InputFactory.js";
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { Input } from "./Input.js";
 
 import { InputFactory } from "./InputFactory.js";
 

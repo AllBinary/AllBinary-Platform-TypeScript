@@ -31,10 +31,26 @@ import { NoHardwareComponent } from "../../../../../org/allbinary/logic/system/h
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { HardwareInterface } from "./HardwareInterface.js";
+
 export class NoHardware
             extends Object
-        
-                , HardwareInterface {
+         implements HardwareInterface {
         
 
     private static readonly instance: HardwareInterface = new NoHardware();

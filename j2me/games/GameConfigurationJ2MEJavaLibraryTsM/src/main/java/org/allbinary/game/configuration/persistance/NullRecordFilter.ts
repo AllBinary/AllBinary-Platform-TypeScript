@@ -22,10 +22,24 @@ import { RecordFilter } from "../../../../../javax/microedition/rms/RecordFilter
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class NullRecordFilter
             extends Object
-        
-                , RecordFilter {
+         implements RecordFilter {
         
 
     public NULL_RECORD_FILTER: NullRecordFilter = new NullRecordFilter();

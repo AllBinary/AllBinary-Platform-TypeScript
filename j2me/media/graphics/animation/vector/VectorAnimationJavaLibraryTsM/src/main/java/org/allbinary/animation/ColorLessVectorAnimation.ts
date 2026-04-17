@@ -25,6 +25,25 @@ import { BasicColorFactory } from "../../../org/allbinary/graphics/color/BasicCo
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { VectorAnimation } from "./VectorAnimation.js";
+
+import { AnimationBehavior } from "./AnimationBehavior.js";
+
 export class ColorLessVectorAnimation extends VectorAnimation {
         
 public constructor (currentPoints: number[][][], animationBehavior: AnimationBehavior)                        

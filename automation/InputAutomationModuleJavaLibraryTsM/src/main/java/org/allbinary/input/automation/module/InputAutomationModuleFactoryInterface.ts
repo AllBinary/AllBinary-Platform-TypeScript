@@ -28,6 +28,23 @@ import { RunnableInterface } from "../../../../../org/allbinary/thread/RunnableI
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { JPanel } from "./JPanel.js";
+
 export class InputAutomationModuleFactoryInterface
             extends Object
          {

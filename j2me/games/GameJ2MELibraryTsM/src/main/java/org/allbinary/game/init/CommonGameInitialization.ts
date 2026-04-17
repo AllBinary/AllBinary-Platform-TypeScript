@@ -49,6 +49,23 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { BaseGameInitialization } from "./BaseGameInitialization.js";
+
 export class CommonGameInitialization extends BaseGameInitialization {
         
 

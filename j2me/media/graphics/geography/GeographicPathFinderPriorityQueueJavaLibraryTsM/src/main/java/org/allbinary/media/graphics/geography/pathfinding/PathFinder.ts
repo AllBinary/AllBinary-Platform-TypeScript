@@ -61,7 +61,28 @@ import { BasicArrayListUtil } from "../../../../../../org/allbinary/util/BasicAr
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { GeographicPathFinderBase } from "./GeographicPathFinderBase.js";
+
 import { PathFindingNodeCost } from "./PathFindingNodeCost.js";
+
+import { MultipassState } from "./MultipassState.js";
+
+import { PathFindingNode } from "./PathFindingNode.js";
 
 export class PathFinder extends GeographicPathFinderBase {
         

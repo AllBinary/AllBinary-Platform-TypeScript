@@ -43,12 +43,24 @@ import { AllBinaryLayer } from "../../../../../../org/allbinary/layer/AllBinaryL
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { HealthResources } from "./HealthResources.js";
 
-import { HealthResources } from "./HealthResources.js";
-
-export class HealPickedUpLayerInterfaceFactory extends PickedUpLayerInterfaceFactory
-                , PickupProcessorInterface {
+export class HealPickedUpLayerInterfaceFactory extends PickedUpLayerInterfaceFactory implements PickupProcessorInterface {
         
 
     private pickedUpLayerInterfaceFactoryInterface: PickedUpLayerInterfaceFactoryInterface = CountedPickedUpLayerInterfaceFactory.NULL_COUNTED_PICKUP_LAYER_FACTORY;

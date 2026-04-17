@@ -14,6 +14,23 @@ import { MidletCompositeInterface } from "../../../org/allbinary/midlet/MidletCo
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+import { EmulatorViewInterface } from "./EmulatorViewInterface.js";
+
 export interface AllBinaryMidletViewInterface extends MidletCompositeInterface, EmulatorViewInterface, DemoGameMidletEventListener, GameInitializedListenerInterface {
         
 

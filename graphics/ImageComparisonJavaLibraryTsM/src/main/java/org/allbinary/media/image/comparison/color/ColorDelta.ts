@@ -33,10 +33,24 @@ import { CommonSeps } from "../../../../../../org/allbinary/string/CommonSeps.js
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class ColorDelta
             extends Object
-        
-                , CacheableInterface {
+         implements CacheableInterface {
         
 
     public static getKey(rgb1: number, rgb2: number): any{

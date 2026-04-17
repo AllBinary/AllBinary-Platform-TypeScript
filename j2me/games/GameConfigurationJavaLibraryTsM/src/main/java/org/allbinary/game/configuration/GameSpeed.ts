@@ -19,8 +19,21 @@
 
 
 
-import { GameConfigurationCentral } from "./GameConfigurationCentral.js";
 
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 import { GameConfigurationCentral } from "./GameConfigurationCentral.js";
 
 export class GameSpeed

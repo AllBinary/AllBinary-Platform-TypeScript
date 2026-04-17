@@ -22,6 +22,21 @@ import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
 
     
 
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
 export class ToastUtil
             extends Object
          {
@@ -56,8 +71,7 @@ var message = message
 
 class MakeToast
             extends Object
-        
-                , Runnable {
+         implements Runnable {
         
 
             static readonly PUBLIC: string = '%{public}s';
